@@ -1,0 +1,51 @@
+# describe('cloze') — cloze_score
+
+## WHAT IT DOES
+
+Cloze test scoring. 'Truly wonderful the mind of a child is.'An unexamined life is not worth living. — Socrates's source for the canonical
+signature and assumptions.
+
+## WHEN NOT TO USE
+
+- Inputs violate the function's assumed domain (NaN/Inf, wrong shape).
+- A more specialised version exists for your data shape — see
+  `cheatsheet()` or `_registry.py` for related callables.
+- Sample size too small for the asymptotics this estimator relies on.
+
+## ASSUMPTIONS
+
+- Inputs are real-valued and free of NaN/Inf.
+- Observations are independent unless noted.
+- See the FORMULA section in the source code for distributional
+  specifics.
+
+## FORMULA
+
+See the function's docstring `Formula:` line in
+`fn/cloze.py`.
+
+## INPUTS / OUTPUTS
+
+Inputs: documented in the function's `Parameters` block.
+Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
+`.get(...)`, `for k in result` all work alongside the multi-section
+`print(result)` render. See `moirais.fn.describe('cloze')` for guidance.
+
+## WORKED EXAMPLE
+
+```python
+from moirais.fn.cloze import *
+import numpy as np
+# See the function signature in fn/cloze.py for argument names.
+```
+
+## COMMON MISTAKES
+
+- Treating the result as a plain dict — it IS a dict (RichResult
+  inherits from dict) but `print(result)` shows the multi-section
+  render which is what you usually want.
+- Ignoring warnings/interpretation when sample sizes are small.
+
+## REFERENCES
+
+See the source file's `References` block.

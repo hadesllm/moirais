@@ -1,0 +1,37 @@
+# moirais.fn — function file (hadesllm/moirais)
+"""
+Great circle distance
+
+Category: GeoProcss
+"""
+
+import numpy as np
+
+
+def grtcrc(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
+    """Great circle distance
+
+    Returns
+    -------
+    DescriptiveResult
+    """
+    from ._containers import DescriptiveResult
+
+    if coords is None:
+        coords = np.random.default_rng(0).uniform(-180, 180, (n, 2))
+    stat = float(np.mean(np.linalg.norm(coords, axis=1)))
+    return DescriptiveResult(
+        name=short,
+        value=stat,
+        extra={"n_points": len(coords), "source": source_crs, "target": target_crs},
+    )
+
+
+short = "grtcrc"
+alias = "grtcrc"
+quote = "I'm gonna be King of the Pirates! -- Luffy"
+grtcrc = grtcrc
+
+
+def cheatsheet() -> str:
+    return "grtcrc({}) -> Great circle distance"

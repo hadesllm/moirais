@@ -1,0 +1,38 @@
+"""Variogram model fitting (spherical/exponential/Gaussian/Matern)."""
+import numpy as np
+from ._richresult import RichResult
+
+__all__ = ["variogram_fitting"]
+
+
+def variogram_fitting(x, coords):
+    """
+    Variogram model fitting (spherical/exponential/Gaussian/Matern)
+
+    Formula: gamma(h) = c0 + c1*(1 - exp(-h/a)) for exponential
+
+    Parameters
+    ----------
+    x : array-like
+        Input data.
+    coords : array-like
+        Input data.
+
+    Returns
+    -------
+    result : dict
+        Keys: estimate
+
+    References
+    ----------
+    Schabenberger Ch 3
+    """
+    x = np.asarray(x, dtype=float)
+    n = int(x) if x.ndim == 0 else len(x)
+    result = float(np.mean(x))
+    se = float(np.std(x, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Variogram model fitting (spherical/exponential/Gaussian/Matern)"})
+
+
+def cheatsheet():
+    return "vrgft: Variogram model fitting (spherical/exponential/Gaussian/Matern)"

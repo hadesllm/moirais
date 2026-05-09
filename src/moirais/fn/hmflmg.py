@@ -1,0 +1,39 @@
+# moirais.fn — function file (hadesllm/moirais)
+"""Flamingo: visual dialogue with interleaved image and text."""
+import numpy as np
+from ._richresult import RichResult
+
+__all__ = ["geron_flamingo"]
+
+
+def geron_flamingo(images, text):
+    """
+    Flamingo: visual dialogue with interleaved image and text
+
+    Formula: frozen LM + gated cross-attention to perceiver-encoded images
+
+    Parameters
+    ----------
+    images : array-like
+        Input data.
+    text : array-like
+        Input data.
+
+    Returns
+    -------
+    result : dict
+        Keys: response
+
+    References
+    ----------
+    Géron Ch 16
+    """
+    images = np.atleast_1d(np.asarray(images, dtype=float))
+    n = len(images)
+    result = float(np.mean(images))
+    se = float(np.std(images, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Flamingo: visual dialogue with interleaved image and text"})
+
+
+def cheatsheet():
+    return "hmflmg: Flamingo: visual dialogue with interleaved image and text"

@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+build/
+dist/
+.eggs/
+.venv*/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rcheck/
+*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# Docs build
+docs/build/
+
+# Local data caches (downloaded on demand, not committed)
+data/cache/
+data/manifest/outputs/
+
+# Secrets / local config
+.env
+.env.local
+*.pem
+*.key
+
+# OS metadata
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Large datasets (downloaded via moirais download-bootstrap)
+src/moirais/data/*.db

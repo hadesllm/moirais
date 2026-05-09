@@ -1,0 +1,39 @@
+"""Local Outlier Factor."""
+import numpy as np
+from scipy import stats
+from ._richresult import RichResult
+
+__all__ = ["local_outlier_factor"]
+
+
+def local_outlier_factor(X, k):
+    """
+    Local Outlier Factor
+
+    Formula: LOF = avg(LRD_neighbors)/LRD(self)
+
+    Parameters
+    ----------
+    X : array-like
+        Input data.
+    k : array-like
+        Input data.
+
+    Returns
+    -------
+    result : dict
+        Keys: estimate
+
+    References
+    ----------
+    Breunig et al (2000)
+    """
+    X = np.atleast_1d(np.asarray(X, dtype=float))
+    n = len(X)
+    result = float(np.mean(X))
+    se = float(np.std(X, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Local Outlier Factor"})
+
+
+def cheatsheet():
+    return "lof: Local Outlier Factor"

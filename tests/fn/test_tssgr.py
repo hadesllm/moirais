@@ -1,0 +1,20 @@
+"""Test tssgr."""
+import numpy as np
+import pytest
+from moirais.fn.tssgr import tssgr
+
+
+def test_tssgr_basic():
+    rng = np.random.default_rng(42)
+    data = rng.standard_normal((20, 5))
+    coords = rng.uniform(0, 100, (20, 2))
+    r = tssgr(data=data, coords=coords, n=20, t=5)
+    assert r.value is not None
+
+
+def test_tssgr_description():
+    rng = np.random.default_rng(42)
+    data = rng.standard_normal((20, 5))
+    coords = rng.uniform(0, 100, (20, 2))
+    r = tssgr(data=data, coords=coords, n=20, t=5)
+    assert r.name

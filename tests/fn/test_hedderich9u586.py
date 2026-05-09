@@ -1,0 +1,19 @@
+"""Tests for hedderich9u586.hedderich_chapter_9_unnumbered_586."""
+import numpy as np
+import pytest
+from moirais.fn.hedderich9u586 import hedderich_chapter_9_unnumbered_586
+
+
+def test_hedderich9u586_basic():
+    """Test basic functionality."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = hedderich_chapter_9_unnumbered_586(x)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_hedderich9u586_edge():
+    """Test edge cases."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = hedderich_chapter_9_unnumbered_586(x)
+    assert isinstance(result, dict)

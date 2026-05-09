@@ -1,0 +1,23 @@
+"""Tests for precK.precision_at_k."""
+import numpy as np
+import pytest
+from moirais.fn.precK import precision_at_k
+
+
+def test_precK_basic():
+    """Test basic functionality."""
+    pred_rank = np.random.default_rng(42).normal(0, 1, 100)
+    relevant = np.random.default_rng(42).normal(0, 1, 100)
+    k = 5
+    result = precision_at_k(pred_rank, relevant, k)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_precK_edge():
+    """Test edge cases."""
+    pred_rank = np.random.default_rng(42).normal(0, 1, 100)
+    relevant = np.random.default_rng(42).normal(0, 1, 100)
+    k = 5
+    result = precision_at_k(pred_rank, relevant, k)
+    assert isinstance(result, dict)

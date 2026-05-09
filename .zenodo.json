@@ -1,0 +1,58 @@
+{
+  "title": "MOIRAIS: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation",
+  "description": "MOIRAIS is an open-source Python and R package for the analysis of Canadian carceral, police, and oversight data. It implements the DLRM (Doob-Levinsky-Ruhela-Medina) framework as a set of RF modules, spanning provincial OTIS restrictive-confinement microdata, federal Structured Intervention Unit (SIU) reports, the Ontario Special Investigations Unit (Ontario SIU) automated scraper, the Toronto Police Service (TPS) open-data crime categories, the Statistics Canada Crime Severity Index (CSI), and the federal Corrections and Conditional Release Statistical Overview (CCRSO). The framework includes a 10-estimator per-individual causal ensemble (IPW, AIPW, IRM-DML, PSM, PSM-subclassification, AIPW-SuperLearner, PLR), an aggregate IRR family with a GEE clustering grid for high-cardinality groupings, a Doob chi-square family for aggregate contingency tables, a Mandela Rules classifier that operates at both federal (full operationalization) and provincial (duration-only proxy) levels, a Goffmanian institutional-churn analysis suite, a stochastic-physics-of-crime stack (Hawkes self-exciting process with exponential / gamma / Weibull / Lomax kernels, reaction-diffusion, Levy flight, urban scaling, Lotka-Volterra), and an automated scraper for the Ontario SIU director's-report corpus.",
+  "creators": [
+    {
+      "name": "Ruhela, Vansh Singh",
+      "affiliation": "Independent",
+      "orcid": ""
+    }
+  ],
+  "keywords": [
+    "causal inference",
+    "observational data",
+    "criminology",
+    "carceral analysis",
+    "Mandela Rules",
+    "solitary confinement",
+    "OTIS",
+    "Ontario Tracking Information System",
+    "SIU",
+    "Structured Intervention Unit",
+    "Special Investigations Unit",
+    "Toronto Police Service",
+    "Crime Severity Index",
+    "double machine learning",
+    "GEE",
+    "Hawkes process",
+    "Goffmanian churn",
+    "DLRM",
+    "RF modules",
+    "Python",
+    "R"
+  ],
+  "license": "GPL-2.0-only",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "communities": [],
+  "related_identifiers": [
+    {
+      "scheme": "doi",
+      "identifier": "10.5281/zenodo.PAPER_DOI_TBD",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-article"
+    }
+  ],
+  "references": [
+    "Sprott, J. B., & Doob, A. N. (2021, February). Solitary Confinement, Torture, and Canada's Structured Intervention Units. Centre for Criminology & Sociolegal Studies, University of Toronto.",
+    "Sprott, J. B., Doob, A. N., & Iftene, A. (2021, May). Do Independent External Decision Makers Ensure that 'An Inmate's Confinement in a Structured Intervention Unit Is to End as Soon as Possible'? Schulich School of Law, Dalhousie University.",
+    "Doob, A. N. (2020). Affidavit of Anthony N. Doob (Federal Court of Canada, File T-539-20).",
+    "United Nations General Assembly (2015). Standard Minimum Rules for the Treatment of Prisoners (Mandela Rules), A/Res/70/175.",
+    "Wallace, M., Turner, J., Matarazzo, A., & Babyak, C. (2009). Measuring crime in Canada: Introducing the Crime Severity Index. Statistics Canada Catalogue no. 85-004-X.",
+    "Chernozhukov, V., et al. (2018). Double/debiased machine learning for treatment and structural parameters. Econometrics Journal, 21(1), C1-C68.",
+    "VanderWeele, T. J., & Ding, P. (2017). Sensitivity analysis in observational research: Introducing the E-value. Annals of Internal Medicine, 167(4), 268-274.",
+    "Goffman, E. (1961). Asylums: Essays on the Social Situation of Mental Patients and Other Inmates. Anchor Books."
+  ],
+  "notes": "MOIRAIS is composed of distinct license tiers per memory: analytical modules MIT/Apache (clew MIT/Apache for adoption); MOIRAIS itself follows GPL-2.0-only (Linus copyleft; see LICENSE); the Ontario SIU scraper is additionally subject to the Ontario open-government licence on the source corpus."
+}

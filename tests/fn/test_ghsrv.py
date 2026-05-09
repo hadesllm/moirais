@@ -1,0 +1,22 @@
+"""Test ghsrv."""
+import numpy as np
+import pytest
+from moirais.fn.ghsrv import ghsrv
+
+
+def test_ghsrv_basic():
+    rng = np.random.default_rng(42)
+    cases = rng.poisson(10, 20)
+    controls = rng.poisson(100, 20) + 10
+    exposure = rng.uniform(0, 1, 20)
+    r = ghsrv(cases=cases, controls=controls, exposure=exposure, n=20)
+    assert r.value is not None
+
+
+def test_ghsrv_description():
+    rng = np.random.default_rng(42)
+    cases = rng.poisson(10, 20)
+    controls = rng.poisson(100, 20) + 10
+    exposure = rng.uniform(0, 1, 20)
+    r = ghsrv(cases=cases, controls=controls, exposure=exposure, n=20)
+    assert r.name

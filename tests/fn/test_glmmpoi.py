@@ -1,0 +1,31 @@
+"""Tests for glmmpoi."""
+import numpy as np
+import pytest
+from moirais.fn.glmmpoi import glmmpoi
+
+
+def test_glmmpoi_basic():
+    result = glmmpoi()
+    assert hasattr(result, "statistic")
+    assert isinstance(result.statistic, float)
+    assert result.name == "GLMM-Spatial-Poisson"
+
+
+def test_glmmpoi_with_data():
+    rng = np.random.default_rng(0)
+    data = rng.standard_normal(20)
+    coords = rng.uniform(0, 1, size=(20, 2))
+    result = glmmpoi(data=data, coords=coords, n=20, seed=0)
+    assert result.statistic == pytest.approx(float(np.mean(data)))
+    assert result.extra["n_points"] == 20
+
+
+def test_glmmpoi_no_data():
+    result = glmmpoi(n=50, seed=7)
+    assert result.statistic is not None
+    assert result.extra["n_points"] == 50
+
+
+def test_glmmpoi_alias():
+    from moirais.fn.glmmpoi import glmmpoi
+    assert glmmpoi is glmmpoi

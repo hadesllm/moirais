@@ -1,0 +1,4359 @@
+{
+  "generated_at": "2026-05-06T18:31:20.940646",
+  "books": [
+    {
+      "name": "hedderich",
+      "file": "equation_specs_hedderich.json",
+      "reference": "Hedderich, Sachs & Reynarowych (2023) Applied Statistics: Methods Using R",
+      "total": 3761,
+      "verified": 3761,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 3679
+      },
+      "by_category": {
+        "GeneralStatistics": 1712,
+        "Dispersion": 436,
+        "Regression": 290,
+        "Probability": 287,
+        "CentralTendency": 267,
+        "PowerAndDesign": 253,
+        "CountModels": 215,
+        "Correlation": 151,
+        "ContingencyTables": 36,
+        "Association": 30,
+        "Bayesian": 24,
+        "Logistic": 17,
+        "CausalInference": 14,
+        "MetaAnalysis": 13,
+        "Resampling": 6,
+        "ANOVA": 5,
+        "Spatial": 2,
+        "Multilevel": 2,
+        "Nonparametric": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "probability_and_random_processes_with_one_thousand_exercises",
+      "file": "equation_specs_probability_and_random_processes_with_one_thousand_exercises.json",
+      "reference": "Probability and Random Processes with One Thousand Exercises -- Geoffrey  Stirzaker Grimmett",
+      "total": 3745,
+      "verified": 3745,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 3745
+      },
+      "by_category": {
+        "GeneralStatistics": 2367,
+        "Probability": 384,
+        "Dispersion": 333,
+        "CentralTendency": 287,
+        "CountModels": 255,
+        "Correlation": 30,
+        "Bayesian": 19,
+        "PowerAndDesign": 16,
+        "Spatial": 16,
+        "Association": 16,
+        "ContingencyTables": 9,
+        "Regression": 6,
+        "CausalInference": 6,
+        "Nonparametric": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "guide_on_data_analysis",
+      "file": "equation_specs_guide_on_data_analysis.json",
+      "reference": "guide on data analysis",
+      "total": 1660,
+      "verified": 1660,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 1656
+      },
+      "by_category": {
+        "GeneralStatistics": 625,
+        "Regression": 324,
+        "Dispersion": 220,
+        "CentralTendency": 207,
+        "CausalInference": 61,
+        "Probability": 40,
+        "PowerAndDesign": 33,
+        "Correlation": 32,
+        "Logistic": 29,
+        "ANOVA": 23,
+        "Multilevel": 17,
+        "CountModels": 14,
+        "Association": 8,
+        "Nonparametric": 8,
+        "ContingencyTables": 7,
+        "Bayesian": 7,
+        "Resampling": 3,
+        "Spatial": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "analysis_of_categorical_data_with_r_chapman_hall_crc_christo",
+      "file": "equation_specs_analysis_of_categorical_data_with_r_chapman_hall_crc_christo.json",
+      "reference": "Analysis of Categorical Data with R (Chapman & Hall CRC -- CHRISTOPHER R   LOUGHIN BILDER (THOMAS M )",
+      "total": 1637,
+      "verified": 1637,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 89,
+        "math_density": 1538
+      },
+      "by_category": {
+        "GeneralStatistics": 480,
+        "Regression": 365,
+        "Logistic": 232,
+        "Probability": 149,
+        "CentralTendency": 146,
+        "Dispersion": 102,
+        "CountModels": 48,
+        "Correlation": 29,
+        "Bayesian": 21,
+        "ContingencyTables": 21,
+        "PowerAndDesign": 21,
+        "ANOVA": 9,
+        "Nonparametric": 5,
+        "Association": 3,
+        "Multilevel": 3,
+        "CausalInference": 2,
+        "Resampling": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "wilcox",
+      "file": "equation_specs_wilcox.json",
+      "reference": "Wilcox, R.R. (2017) Modern Statistics for the Social and Behavioral Sciences",
+      "total": 1484,
+      "verified": 1484,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 1,
+        "math_density": 1396
+      },
+      "by_category": {
+        "GeneralStatistics": 436,
+        "CentralTendency": 358,
+        "Dispersion": 207,
+        "PowerAndDesign": 142,
+        "Regression": 137,
+        "Probability": 86,
+        "Resampling": 51,
+        "Correlation": 26,
+        "ContingencyTables": 21,
+        "CountModels": 6,
+        "ANOVA": 5,
+        "Logistic": 4,
+        "Association": 3,
+        "MetaAnalysis": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bookadvanced_elementsofstatisticallearning",
+      "file": "equation_specs_bookadvanced_elementsofstatisticallearning.json",
+      "reference": "BookAdvanced elementsofstatisticallearning",
+      "total": 1308,
+      "verified": 1308,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 1,
+        "math_density": 1084
+      },
+      "by_category": {
+        "GeneralStatistics": 636,
+        "Regression": 306,
+        "Dispersion": 113,
+        "CentralTendency": 60,
+        "Bayesian": 37,
+        "Probability": 33,
+        "Nonparametric": 30,
+        "Logistic": 26,
+        "Correlation": 18,
+        "Spatial": 13,
+        "PowerAndDesign": 13,
+        "Resampling": 9,
+        "ContingencyTables": 7,
+        "CountModels": 7
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "chapman_hall_crc_handbooks_of_modern_statistical_methods_jos",
+      "file": "equation_specs_chapman_hall_crc_handbooks_of_modern_statistical_methods_jos.json",
+      "reference": "[Chapman & Hall CRC Handbooks of Modern Statistical Methods] José R. Zubizarreta, Elizabeth A. Stuart, Dylan S. Small, Paul R - Handbook of Matching and Weighting Adjustments for Causal Inference",
+      "total": 1245,
+      "verified": 1245,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 11,
+        "math_density": 1168
+      },
+      "by_category": {
+        "GeneralStatistics": 638,
+        "CausalInference": 240,
+        "Regression": 83,
+        "CentralTendency": 74,
+        "Probability": 67,
+        "Dispersion": 59,
+        "Logistic": 35,
+        "Bayesian": 14,
+        "PowerAndDesign": 9,
+        "Spatial": 6,
+        "Correlation": 6,
+        "Association": 5,
+        "Nonparametric": 5,
+        "Resampling": 3,
+        "CountModels": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "david_j_morin_probability_for_the_enthusiastic_beginner",
+      "file": "equation_specs_david_j_morin_probability_for_the_enthusiastic_beginner.json",
+      "reference": "David J. Morin - Probability  For the Enthusiastic Beginner",
+      "total": 842,
+      "verified": 842,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 525
+      },
+      "by_category": {
+        "GeneralStatistics": 328,
+        "Dispersion": 187,
+        "Probability": 114,
+        "CountModels": 79,
+        "Regression": 55,
+        "CentralTendency": 47,
+        "Correlation": 15,
+        "Bayesian": 8,
+        "PowerAndDesign": 8,
+        "CausalInference": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "design_of_observational_studies",
+      "file": "equation_specs_design_of_observational_studies.json",
+      "reference": "Design of observational studies",
+      "total": 840,
+      "verified": 840,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 824
+      },
+      "by_category": {
+        "GeneralStatistics": 469,
+        "CausalInference": 94,
+        "Probability": 84,
+        "Dispersion": 58,
+        "PowerAndDesign": 46,
+        "CentralTendency": 44,
+        "Regression": 21,
+        "Logistic": 9,
+        "Association": 5,
+        "Bayesian": 4,
+        "ContingencyTables": 3,
+        "Correlation": 1,
+        "Nonparametric": 1,
+        "CountModels": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a",
+      "file": "equation_specs_shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a.json",
+      "reference": "Shailaja R. Deshmukh, Akanksha S. Kashikar - Probability Theory  An Introduction Using R",
+      "total": 747,
+      "verified": 747,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 1,
+        "math_density": 699
+      },
+      "by_category": {
+        "GeneralStatistics": 556,
+        "Probability": 106,
+        "CentralTendency": 47,
+        "Dispersion": 10,
+        "ContingencyTables": 9,
+        "PowerAndDesign": 8,
+        "CountModels": 8,
+        "Spatial": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "spatiotemporal_methods_in_environmental_epidemiology_with_r_",
+      "file": "equation_specs_spatiotemporal_methods_in_environmental_epidemiology_with_r_.json",
+      "reference": "spatiotemporal-methods-in-environmental-epidemiology-with-r-chapman-amp-hall-crc-texts-in-statistical-science-2nbsped-1032397810-9781032397818",
+      "total": 698,
+      "verified": 698,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 54,
+        "math_density": 532
+      },
+      "by_category": {
+        "GeneralStatistics": 248,
+        "Dispersion": 138,
+        "Regression": 62,
+        "Bayesian": 61,
+        "CentralTendency": 59,
+        "Spatial": 34,
+        "Probability": 23,
+        "Correlation": 21,
+        "Logistic": 15,
+        "CountModels": 14,
+        "Multilevel": 12,
+        "Association": 10,
+        "PowerAndDesign": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit",
+      "file": "equation_specs_blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit.json",
+      "reference": "Blitzstein, Joseph K.  Hwang, Jessica - Introduction to probability",
+      "total": 546,
+      "verified": 546,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 546
+      },
+      "by_category": {
+        "GeneralStatistics": 237,
+        "Probability": 85,
+        "Dispersion": 82,
+        "CentralTendency": 48,
+        "CountModels": 46,
+        "Bayesian": 13,
+        "Association": 12,
+        "Correlation": 5,
+        "ContingencyTables": 4,
+        "PowerAndDesign": 4,
+        "Logistic": 4,
+        "Regression": 4,
+        "CausalInference": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "crimstat_advanced",
+      "file": "equation_specs_crimstat_advanced.json",
+      "reference": "Advanced Statistics in Criminology and Criminal Justice (Weisburd, Wilson, Wooditch & Britt, 5th ed, Springer 2022)",
+      "total": 516,
+      "verified": 516,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 150,
+        "math_density": 366
+      },
+      "by_category": {
+        "Regression": 191,
+        "GeneralStatistics": 119,
+        "CentralTendency": 42,
+        "Dispersion": 31,
+        "PowerAndDesign": 27,
+        "Logistic": 20,
+        "MetaAnalysis": 20,
+        "Inference": 18,
+        "CountModels": 10,
+        "Correlation": 9,
+        "Multilevel": 8,
+        "Probability": 5,
+        "ContingencyTables": 5,
+        "ANOVA": 5,
+        "CausalInference": 4,
+        "Spatial": 2
+      },
+      "wired_to_callable": 9
+    },
+    {
+      "name": "springer_texts_in_statistics_series_gareth_james_daniela_wit",
+      "file": "equation_specs_springer_texts_in_statistics_series_gareth_james_daniela_wit.json",
+      "reference": "[Springer Texts in Statistics Series] Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani - An Introduction To Statistical Learning  With Applications In R",
+      "total": 424,
+      "verified": 424,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 10,
+        "math_density": 352
+      },
+      "by_category": {
+        "GeneralStatistics": 154,
+        "Regression": 149,
+        "Dispersion": 40,
+        "CentralTendency": 32,
+        "Bayesian": 12,
+        "Probability": 11,
+        "Nonparametric": 8,
+        "Association": 5,
+        "Logistic": 4,
+        "PowerAndDesign": 3,
+        "Resampling": 2,
+        "Correlation": 2,
+        "ANOVA": 1,
+        "Multilevel": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_exhaustive",
+      "file": "equation_specs_geron_exhaustive.json",
+      "reference": "Géron Ch 1",
+      "total": 345,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Transformer": 32,
+        "RL": 21,
+        "DimensionalityReduction": 18,
+        "Optimization": 17,
+        "VisionTransformer": 17,
+        "Quantization": 17,
+        "Generative": 16,
+        "Classification": 15,
+        "Ensemble": 12,
+        "Clustering": 12,
+        "NeuralNetwork": 12,
+        "NLP": 12,
+        "ActivationFunction": 11,
+        "PyTorch": 10,
+        "ModelSelection": 9,
+        "Metrics": 9,
+        "DecisionTree": 9,
+        "RNN": 9,
+        "CNN": 8,
+        "CNNArchitecture": 8,
+        "FeatureEngineering": 6,
+        "Regularization": 6,
+        "MLTaxonomy": 5,
+        "ModelDiagnostics": 5,
+        "AnomalyDetection": 5,
+        "TrainingDeepNN": 5,
+        "ObjectDetection": 5,
+        "Autodiff": 5,
+        "MLParadigm": 4,
+        "LinearRegression": 4,
+        "RegularizedRegression": 4,
+        "Boosting": 4,
+        "TimeSeries": 3,
+        "Sampling": 2,
+        "DensityModel": 2,
+        "Initialization": 2,
+        "Normalization": 2,
+        "MLPipeline": 1,
+        "Attention": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "mvsml",
+      "file": "equation_specs_mvsml.json",
+      "reference": "MVSML, Eq. (1.1) [Multivariate Statistical Machine Learnin [Pages 1-34] [2026-04-16].pdf]",
+      "total": 334,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "MultivariateRegression": 225,
+        "Statistical": 97,
+        "KernelMethods": 12
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bivand2013",
+      "file": "equation_specs_bivand2013.json",
+      "reference": "bivand2013",
+      "total": 305,
+      "verified": 305,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 301
+      },
+      "by_category": {
+        "GeneralStatistics": 89,
+        "Spatial": 84,
+        "Dispersion": 39,
+        "Regression": 28,
+        "CentralTendency": 26,
+        "CountModels": 18,
+        "Correlation": 6,
+        "Multilevel": 6,
+        "Association": 2,
+        "Bayesian": 2,
+        "ContingencyTables": 2,
+        "CausalInference": 1,
+        "Logistic": 1,
+        "Probability": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "ghosal_exhaustive_verified",
+      "file": "equation_specs_ghosal_exhaustive_verified.json",
+      "reference": "Ghosal Ch 1 §1.3",
+      "total": 285,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "NonparametricBayes": 59,
+        "DirichletProcess": 36,
+        "PosteriorConsistency": 31,
+        "PosteriorContraction": 31,
+        "GaussianProcess": 25,
+        "Adaptation": 15,
+        "BernsteinVonMises": 14,
+        "PitmanYor": 14,
+        "Prior": 14,
+        "PolyaTree": 8,
+        "Posterior": 8,
+        "Sieve": 6,
+        "DensityEstimation": 6,
+        "MCMC": 5,
+        "NeutralRight": 4,
+        "VariationalBayes": 2,
+        "HierarchicalBayes": 2,
+        "NonparametricRegression": 2,
+        "EmpiricalBayes": 1,
+        "BayesianInference": 1,
+        "Convergence": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "information_theory_mackay",
+      "file": "equation_specs_information_theory_mackay.json",
+      "reference": "Information theory MacKay",
+      "total": 279,
+      "verified": 279,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 3,
+        "math_density": 231
+      },
+      "by_category": {
+        "GeneralStatistics": 133,
+        "Probability": 89,
+        "CentralTendency": 17,
+        "Bayesian": 16,
+        "Dispersion": 13,
+        "PowerAndDesign": 3,
+        "Association": 3,
+        "CountModels": 2,
+        "Regression": 2,
+        "ContingencyTables": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "rangayyan_exhaustive",
+      "file": "equation_specs_rangayyan_exhaustive.json",
+      "reference": "Rangayyan Ch 1",
+      "total": 278,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "BiomedSignal": 72,
+        "DeepLearning": 34,
+        "Filtering": 32,
+        "SpectralAnalysis": 21,
+        "Wavelets": 18,
+        "Decomposition": 17,
+        "LPC": 15,
+        "ECG": 14,
+        "Detection": 13,
+        "EEG": 9,
+        "TimeFrequency": 9,
+        "AdaptiveFilter": 7,
+        "EMG": 6,
+        "HRV": 6,
+        "Cepstrum": 5
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "rangayyan_exhaustive_verified",
+      "file": "equation_specs_rangayyan_exhaustive_verified.json",
+      "reference": "Rangayyan Ch 1",
+      "total": 276,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "BiomedSignal": 72,
+        "DeepLearning": 34,
+        "Filtering": 32,
+        "SpectralAnalysis": 21,
+        "Wavelets": 18,
+        "Decomposition": 16,
+        "ECG": 14,
+        "LPC": 14,
+        "Detection": 13,
+        "EEG": 9,
+        "TimeFrequency": 9,
+        "AdaptiveFilter": 7,
+        "EMG": 6,
+        "HRV": 6,
+        "Cepstrum": 5
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "use_r",
+      "file": "equation_specs_use_r.json",
+      "reference": "Use R",
+      "total": 272,
+      "verified": 272,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 269
+      },
+      "by_category": {
+        "GeneralStatistics": 80,
+        "Spatial": 79,
+        "Dispersion": 31,
+        "Regression": 28,
+        "CentralTendency": 15,
+        "Correlation": 12,
+        "CountModels": 11,
+        "Bayesian": 6,
+        "ANOVA": 2,
+        "ContingencyTables": 2,
+        "CausalInference": 1,
+        "Probability": 1,
+        "Logistic": 1,
+        "Multilevel": 1,
+        "Nonparametric": 1,
+        "Association": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "rangayyan_ch3_4_numbered",
+      "file": "equation_specs_rangayyan_ch3_4_numbered.json",
+      "reference": "Rangayyan (2024), Ch 3, Eq 3.1, p. 94",
+      "total": 257,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "FilterDesign": 115,
+        "Statistical": 40,
+        "AdaptiveFilter": 39,
+        "FourierAnalysis": 30,
+        "ECGProcessing": 22,
+        "BiomedicalSignal": 7,
+        "EEGProcessing": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "ghosal_exhaustive",
+      "file": "equation_specs_ghosal_exhaustive.json",
+      "reference": "Ghosal Ch 1 §1.3",
+      "total": 253,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "NonparametricBayes": 59,
+        "DirichletProcess": 35,
+        "PosteriorConsistency": 31,
+        "PosteriorContraction": 31,
+        "GaussianProcess": 25,
+        "Adaptation": 15,
+        "BernsteinVonMises": 14,
+        "PitmanYor": 14,
+        "PolyaTree": 8,
+        "MCMC": 6,
+        "Sieve": 6,
+        "NeutralRight": 4,
+        "VariationalBayes": 2,
+        "HierarchicalBayes": 2,
+        "EmpiricalBayes": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "the_r_series_dick_j_brus_spatial_sampling_with_r",
+      "file": "equation_specs_the_r_series_dick_j_brus_spatial_sampling_with_r.json",
+      "reference": "[The R Series] Dick J. Brus - Spatial Sampling with R",
+      "total": 233,
+      "verified": 233,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 131
+      },
+      "by_category": {
+        "Dispersion": 64,
+        "GeneralStatistics": 59,
+        "CentralTendency": 52,
+        "Regression": 26,
+        "PowerAndDesign": 9,
+        "Probability": 6,
+        "CountModels": 6,
+        "Spatial": 5,
+        "Correlation": 5,
+        "Bayesian": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "gibbons_exhaustive",
+      "file": "equation_specs_gibbons_exhaustive.json",
+      "reference": "Gibbons Theorem 2.2.1",
+      "total": 219,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "TwoSample": 26,
+        "OrderStatistics": 24,
+        "Association": 23,
+        "GoodnessOfFit": 21,
+        "KSample": 21,
+        "RankTest": 20,
+        "Randomness": 19,
+        "EfficiencyARE": 17,
+        "ScaleTest": 10,
+        "Independence": 10,
+        "NonparametricInference": 9,
+        "SignTest": 9,
+        "LocationTest": 8,
+        "OneSample": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "gibbons_exhaustive_verified",
+      "file": "equation_specs_gibbons_exhaustive_verified.json",
+      "reference": "Gibbons Theorem 2.2.1",
+      "total": 218,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "TwoSample": 26,
+        "OrderStatistics": 24,
+        "Association": 22,
+        "GoodnessOfFit": 21,
+        "KSample": 21,
+        "RankTest": 20,
+        "Randomness": 19,
+        "EfficiencyARE": 17,
+        "ScaleTest": 10,
+        "Independence": 10,
+        "NonparametricInference": 9,
+        "SignTest": 9,
+        "LocationTest": 8,
+        "OneSample": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "statistics_fourth_edition_david_freeman_robert_pisani_and_ro",
+      "file": "equation_specs_statistics_fourth_edition_david_freeman_robert_pisani_and_ro.json",
+      "reference": "Statistics, Fourth Edition -- David Freeman, Robert Pisani, and Roger Purves -- 2018",
+      "total": 193,
+      "verified": 193,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 193
+      },
+      "by_category": {
+        "GeneralStatistics": 123,
+        "Regression": 27,
+        "Dispersion": 14,
+        "CentralTendency": 8,
+        "CountModels": 8,
+        "Correlation": 5,
+        "ContingencyTables": 4,
+        "PowerAndDesign": 2,
+        "Probability": 1,
+        "Bayesian": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "kamath_llm_deep_dive",
+      "file": "equation_specs_kamath_llm_deep_dive.json",
+      "reference": "Kamath et al (2024), Ch 2, Eq 2.1, p. 30",
+      "total": 150,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "LanguageModel": 43,
+        "Statistical": 31,
+        "Optimization": 27,
+        "Probability": 13,
+        "RLHF": 10,
+        "Attention": 9,
+        "Embedding": 9,
+        "LinearAlgebra": 6,
+        "Information": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th",
+      "file": "equation_specs_advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th.json",
+      "reference": "Advanced R (Second Edition) -- Hadley Wickham -- Chapman & Hall CRC the R",
+      "total": 130,
+      "verified": 130,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 130
+      },
+      "by_category": {
+        "GeneralStatistics": 95,
+        "CentralTendency": 22,
+        "Regression": 5,
+        "PowerAndDesign": 4,
+        "Association": 3,
+        "Probability": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "andrew_b_lawson_using_r_for_bayesian_spatial_and_spatio_temp",
+      "file": "equation_specs_andrew_b_lawson_using_r_for_bayesian_spatial_and_spatio_temp.json",
+      "reference": "Andrew B Lawson - Using R for Bayesian Spatial and Spatio-Temporal Health Modeling",
+      "total": 115,
+      "verified": 115,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 97
+      },
+      "by_category": {
+        "Spatial": 24,
+        "GeneralStatistics": 24,
+        "CountModels": 14,
+        "CentralTendency": 12,
+        "Multilevel": 10,
+        "Logistic": 10,
+        "Bayesian": 9,
+        "Regression": 4,
+        "Association": 3,
+        "Correlation": 2,
+        "ANOVA": 2,
+        "Probability": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "montesinos_exhaustive",
+      "file": "equation_specs_montesinos_exhaustive.json",
+      "reference": "Montesinos Lopez Ch 2 Eq 2.1",
+      "total": 108,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DeepLearningGP": 20,
+        "GenomicSelection": 18,
+        "BLUP": 15,
+        "BayesianAlphabet": 15,
+        "CrossValCV1CV2": 12,
+        "RKHS": 11,
+        "RelationshipMatrix": 9,
+        "MultiTrait": 3,
+        "GxE": 3,
+        "rrBLUP": 1,
+        "GenomicPrediction": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "montesinos_exhaustive_verified",
+      "file": "equation_specs_montesinos_exhaustive_verified.json",
+      "reference": "Montesinos Lopez Ch 2 Eq 2.1",
+      "total": 108,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DeepLearningGP": 20,
+        "GenomicSelection": 18,
+        "BLUP": 15,
+        "BayesianAlphabet": 15,
+        "CrossValCV1CV2": 12,
+        "RKHS": 11,
+        "RelationshipMatrix": 9,
+        "MultiTrait": 3,
+        "GxE": 3,
+        "rrBLUP": 1,
+        "GenomicPrediction": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "density_estimation_for_statistics_and_data_analysis_silverma",
+      "file": "equation_specs_density_estimation_for_statistics_and_data_analysis_silverma.json",
+      "reference": "Density estimation for statistics and data analysis -- Silverman, B  W -- Monographs on statistics and applied probability",
+      "total": 104,
+      "verified": 104,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 2,
+        "math_density": 90
+      },
+      "by_category": {
+        "Nonparametric": 52,
+        "GeneralStatistics": 30,
+        "CentralTendency": 7,
+        "Dispersion": 7,
+        "Probability": 6,
+        "Regression": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "schabenberger_exhaustive",
+      "file": "equation_specs_schabenberger_exhaustive.json",
+      "reference": "Schabenberger Ch 1, Sec 1.3.1",
+      "total": 103,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Variogram": 33,
+        "Kriging": 17,
+        "PointPattern": 15,
+        "MoranGeary": 10,
+        "SAR": 9,
+        "Spatial": 8,
+        "SpatialGLM": 4,
+        "GWR": 4,
+        "CAR": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "schabenberger_exhaustive_verified",
+      "file": "equation_specs_schabenberger_exhaustive_verified.json",
+      "reference": "Schabenberger Ch 1, Sec 1.3.1",
+      "total": 102,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Variogram": 33,
+        "Kriging": 17,
+        "PointPattern": 15,
+        "MoranGeary": 10,
+        "SAR": 9,
+        "Spatial": 7,
+        "SpatialGLM": 4,
+        "GWR": 4,
+        "CAR": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "edward_frenkel_love_and_math_the_heart_of_hidden_reality",
+      "file": "equation_specs_edward_frenkel_love_and_math_the_heart_of_hidden_reality.json",
+      "reference": "Edward Frenkel - Love and Math  The Heart of Hidden Reality",
+      "total": 100,
+      "verified": 100,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 100
+      },
+      "by_category": {
+        "GeneralStatistics": 89,
+        "CentralTendency": 5,
+        "PowerAndDesign": 4,
+        "Association": 1,
+        "Probability": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "fauzi_exhaustive",
+      "file": "equation_specs_fauzi_exhaustive.json",
+      "reference": "Fauzi Ch 1, Eq 1.1",
+      "total": 90,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "KDFE": 35,
+        "MRL": 22,
+        "QuantileEstimation": 15,
+        "KSTest": 7,
+        "Smoothed": 7,
+        "CvMTest": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "fauzi_exhaustive_verified",
+      "file": "equation_specs_fauzi_exhaustive_verified.json",
+      "reference": "Fauzi Ch 1, Eq 1.1",
+      "total": 90,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "KDFE": 35,
+        "MRL": 22,
+        "QuantileEstimation": 15,
+        "KSTest": 7,
+        "Smoothed": 7,
+        "CvMTest": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "horowitz_exhaustive",
+      "file": "equation_specs_horowitz_exhaustive.json",
+      "reference": "Horowitz Ch 2, Eq 2.1",
+      "total": 85,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SingleIndex": 18,
+        "NPIV": 18,
+        "Transformation": 15,
+        "SemiparEcon": 11,
+        "PartialLinear": 10,
+        "BinaryResponse": 10,
+        "QuantileReg": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "horowitz_exhaustive_verified",
+      "file": "equation_specs_horowitz_exhaustive_verified.json",
+      "reference": "Horowitz Ch 2, Eq 2.1",
+      "total": 85,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SingleIndex": 18,
+        "NPIV": 18,
+        "Transformation": 15,
+        "SemiparEcon": 11,
+        "PartialLinear": 10,
+        "BinaryResponse": 10,
+        "QuantileReg": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "wasserman",
+      "file": "equation_specs_wasserman.json",
+      "reference": "Wasserman (2004), Ch 7",
+      "total": 78,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Wasserman": 78
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "hastie_esl",
+      "file": "equation_specs_hastie_esl.json",
+      "reference": "Hastie ESL Ch 3",
+      "total": 74,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "ESL": 74
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "kosorok",
+      "file": "equation_specs_kosorok.json",
+      "reference": "Kosorok (2008), Ch 2",
+      "total": 74,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Semiparametric": 19,
+        "EmpiricalProcess": 17,
+        "Convergence": 14,
+        "MEstimation": 8,
+        "ZEstimation": 7,
+        "Survival": 4,
+        "Bootstrapping": 3,
+        "AsymptoticTheory": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "molak_exhaustive",
+      "file": "equation_specs_molak_exhaustive.json",
+      "reference": "Molak Ch 1",
+      "total": 66,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Causal": 17,
+        "DAG": 11,
+        "MetaLearner": 9,
+        "DoublyRobust": 5,
+        "InstrumentalVariable": 4,
+        "CATEHTE": 4,
+        "LiNGAM": 4,
+        "NoTears": 3,
+        "DoCalculus": 2,
+        "BackdoorCriterion": 2,
+        "FrontdoorCriterion": 2,
+        "GES": 2,
+        "FCI": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "molak_exhaustive_verified",
+      "file": "equation_specs_molak_exhaustive_verified.json",
+      "reference": "Molak Ch 1",
+      "total": 66,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Causal": 17,
+        "DAG": 11,
+        "MetaLearner": 9,
+        "DoublyRobust": 5,
+        "InstrumentalVariable": 4,
+        "CATEHTE": 4,
+        "LiNGAM": 4,
+        "NoTears": 3,
+        "DoCalculus": 2,
+        "BackdoorCriterion": 2,
+        "FrontdoorCriterion": 2,
+        "GES": 2,
+        "FCI": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "armstrong_exhaustive",
+      "file": "equation_specs_armstrong_exhaustive.json",
+      "reference": "Armstrong Ch 1",
+      "total": 65,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SpatialVoting": 20,
+        "MDS": 11,
+        "IRT": 10,
+        "Wnominate": 9,
+        "Bayesian": 6,
+        "Unfolding": 5,
+        "OptimalClassification": 3,
+        "Polarization": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "armstrong_exhaustive_verified",
+      "file": "equation_specs_armstrong_exhaustive_verified.json",
+      "reference": "Armstrong Ch 1",
+      "total": 65,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SpatialVoting": 20,
+        "MDS": 11,
+        "IRT": 10,
+        "Wnominate": 9,
+        "Bayesian": 6,
+        "Unfolding": 5,
+        "OptimalClassification": 3,
+        "Polarization": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon",
+      "file": "equation_specs_jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon.json",
+      "reference": "Jay Cummings - Proofs  A Long-Form Mathematics Textbook (The Long-Form Math Textbook Series)-Independently published (2021)",
+      "total": 63,
+      "verified": 63,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 63
+      },
+      "by_category": {
+        "GeneralStatistics": 55,
+        "CentralTendency": 8
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "tmle50",
+      "file": "equation_specs_tmle50.json",
+      "reference": "Zheng & vdL (2011)",
+      "total": 61,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalML": 61
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "boyd_convex",
+      "file": "equation_specs_boyd_convex.json",
+      "reference": "Boyd CVX Ch 4",
+      "total": 58,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Convex Optimization": 58
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "drug_discovery",
+      "file": "equation_specs_drug_discovery.json",
+      "reference": "Rogers & Hahn (2010) ECFP",
+      "total": 55,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DrugDiscovery": 55
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "alphago50",
+      "file": "equation_specs_alphago50.json",
+      "reference": "Silver et al (2017)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DeepRL": 31,
+        "DeepLearning": 23
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "genomics50",
+      "file": "equation_specs_genomics50.json",
+      "reference": "VanRaden (2008)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Genomics": 54
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "psychometrics50",
+      "file": "equation_specs_psychometrics50.json",
+      "reference": "Cronbach (1951)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Psychometric": 54
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "timeseries50",
+      "file": "equation_specs_timeseries50.json",
+      "reference": "Box-Jenkins-Reinsel (1994)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "TimeSeries": 54
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "vision50",
+      "file": "equation_specs_vision50.json",
+      "reference": "Dosovitskiy et al (2020)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DeepLearning": 54
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "epidemiology50",
+      "file": "equation_specs_epidemiology50.json",
+      "reference": "Kermack-McKendrick (1927)",
+      "total": 53,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Epidemiology": 53
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "infotheory50",
+      "file": "equation_specs_infotheory50.json",
+      "reference": "Shannon (1948)",
+      "total": 53,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "InformationTheory": 53
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "optim50",
+      "file": "equation_specs_optim50.json",
+      "reference": "Cauchy (1847)",
+      "total": 53,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Optimization": 53
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "survival50",
+      "file": "equation_specs_survival50.json",
+      "reference": "Kalbfleisch-Prentice (2002)",
+      "total": 53,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Survival": 53
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bnp50",
+      "file": "equation_specs_bnp50.json",
+      "reference": "Pitman (2006)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "BayesianNonparametric": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bounds50",
+      "file": "equation_specs_bounds50.json",
+      "reference": "Manski (1990)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalBounds": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "drdid50",
+      "file": "equation_specs_drdid50.json",
+      "reference": "Roth-Sant'Anna (2023)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalDID": 29,
+        "CausalML": 23
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "msm50",
+      "file": "equation_specs_msm50.json",
+      "reference": "Robins (1999); Hernán et al (2000)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalLongitudinal": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "network50",
+      "file": "equation_specs_network50.json",
+      "reference": "Freeman (1979)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "NetworkScience": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "spatial50",
+      "file": "equation_specs_spatial50.json",
+      "reference": "Moran (1950)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Spatial": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "survey50",
+      "file": "equation_specs_survey50.json",
+      "reference": "Horvitz-Thompson (1952)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Survey": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bioinformatics50",
+      "file": "equation_specs_bioinformatics50.json",
+      "reference": "Needleman-Wunsch (1970)",
+      "total": 51,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Bioinformatics": 51
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "rl50",
+      "file": "equation_specs_rl50.json",
+      "reference": "Puterman (1994); Bellman (1957)",
+      "total": 51,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "RL": 51
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "robust50",
+      "file": "equation_specs_robust50.json",
+      "reference": "Huber (1964)",
+      "total": 51,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Robust": 51
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "anomaly50",
+      "file": "equation_specs_anomaly50.json",
+      "reference": "Liu-Ting-Zhou (2008)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Anomaly": 37,
+        "ChangePoint": 13
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bayesian50",
+      "file": "equation_specs_bayesian50.json",
+      "reference": "Metropolis et al (1953); Hastings (1970)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Bayesian": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "boot50",
+      "file": "equation_specs_boot50.json",
+      "reference": "Efron (1979)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Bootstrap": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "caus50",
+      "file": "equation_specs_caus50.json",
+      "reference": "Abadie-Diamond-Hainmueller (2010)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Causal": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "climate50",
+      "file": "equation_specs_climate50.json",
+      "reference": "Coles (2001) book",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Climate": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "coda50",
+      "file": "equation_specs_coda50.json",
+      "reference": "Aitchison (1986) §4",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Compositional": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "dp50",
+      "file": "equation_specs_dp50.json",
+      "reference": "Dwork-McSherry-Nissim-Smith (2006)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DP": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "evt50",
+      "file": "equation_specs_evt50.json",
+      "reference": "Coles (2001) §3",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "ExtremeValue": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "fda50",
+      "file": "equation_specs_fda50.json",
+      "reference": "de Boor (1978)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "FDA": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "forecast50",
+      "file": "equation_specs_forecast50.json",
+      "reference": "Box-Jenkins (1970)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Forecast": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "gnn50",
+      "file": "equation_specs_gnn50.json",
+      "reference": "Gilmer et al (2017) MPNN",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "GNN": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "ma50",
+      "file": "equation_specs_ma50.json",
+      "reference": "Borenstein et al. (2009) §11",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "MetaAnalysis": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "mediation50",
+      "file": "equation_specs_mediation50.json",
+      "reference": "Baron-Kenny (1986)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Mediation": 39,
+        "Sensitivity": 11
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "nlp50",
+      "file": "equation_specs_nlp50.json",
+      "reference": "Sennrich et al (2016) BPE",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "NLP": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "ot50",
+      "file": "equation_specs_ot50.json",
+      "reference": "Rubner-Tomasi-Guibas (2000)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "OptimalTransport": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "paper90_sweep",
+      "file": "equation_specs_paper90_sweep.json",
+      "reference": "Tóth & vdL (2014); Ogburn-Rotnitzky-Robins (2015)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DeepRL": 8,
+        "DeepLearning": 8,
+        "CausalML": 7,
+        "CausalLongitudinal": 5,
+        "BayesianNonparametric": 5,
+        "Compression": 5,
+        "Security": 5,
+        "CausalBounds": 4,
+        "CausalDID": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "recsys50",
+      "file": "equation_specs_recsys50.json",
+      "reference": "Resnick et al (1994) GroupLens",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "RecSys": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "sgt50",
+      "file": "equation_specs_sgt50.json",
+      "reference": "Chung (1997)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SpectralGraph": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "symb50",
+      "file": "equation_specs_symb50.json",
+      "reference": "SymPy team (2017)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Symbolic": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "vol50",
+      "file": "equation_specs_vol50.json",
+      "reference": "Bollerslev (1986)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Volatility": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "christopher_gandrud_author_reproducible_research_with_r_and_",
+      "file": "equation_specs_christopher_gandrud_author_reproducible_research_with_r_and_.json",
+      "reference": "Christopher Gandrud (Author) - Reproducible Research with R and RStudio",
+      "total": 47,
+      "verified": 47,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 42
+      },
+      "by_category": {
+        "GeneralStatistics": 37,
+        "CentralTendency": 9,
+        "Regression": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "franz_kronthaler_statistics_applied_with_the_r_commander_dat",
+      "file": "equation_specs_franz_kronthaler_statistics_applied_with_the_r_commander_dat.json",
+      "reference": "Franz Kronthaler - Statistics Applied with the R Commander  Data Analysis Is (Not) an Art-Springer (2024)",
+      "total": 43,
+      "verified": 43,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 43
+      },
+      "by_category": {
+        "GeneralStatistics": 27,
+        "Dispersion": 7,
+        "CentralTendency": 3,
+        "Correlation": 3,
+        "MetaAnalysis": 2,
+        "Probability": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "legal_ontology",
+      "file": "equation_specs_legal_ontology.json",
+      "reference": "Legal Ontology",
+      "total": 42,
+      "verified": 42,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 42
+      },
+      "by_category": {
+        "GeneralStatistics": 32,
+        "CentralTendency": 8,
+        "CausalInference": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "spatial_data_analysis_with_r",
+      "file": "equation_specs_spatial_data_analysis_with_r.json",
+      "reference": "spatial data analysis with R",
+      "total": 39,
+      "verified": 39,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 39
+      },
+      "by_category": {
+        "GeneralStatistics": 23,
+        "Spatial": 8,
+        "Regression": 4,
+        "Correlation": 2,
+        "CentralTendency": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bayesian_diagnostics",
+      "file": "equation_specs_bayesian_diagnostics.json",
+      "reference": "Watanabe (2010); Gelman et al. BDA3 §7",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "BayesianDiagnostic": 30
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "causal_modern",
+      "file": "equation_specs_causal_modern.json",
+      "reference": "Card-Krueger (1994); Bertrand-Duflo-Mullainathan (2004)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalDID": 10,
+        "CausalSyntheticControl": 5,
+        "CausalRDD": 5,
+        "CausalML": 5,
+        "CausalSensitivity": 5
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "copulas_networks",
+      "file": "equation_specs_copulas_networks.json",
+      "reference": "Sklar (1959); Nelsen (2006) §4",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Copula": 15,
+        "NetworkCentrality": 8,
+        "NetworkStructure": 7
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "dlops",
+      "file": "equation_specs_dlops.json",
+      "reference": "Vaswani et al. (2017)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DLAttention": 9,
+        "DLActivation": 6,
+        "DLPositional": 5,
+        "DLNorm": 4,
+        "DLMoE": 3,
+        "DLSSM": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch5_8",
+      "file": "equation_specs_geron_ch5_8.json",
+      "reference": "Géron Ch 5, Eq 5-1 (Gini Impurity)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Ensembles": 9,
+        "DecisionTrees": 6,
+        "DimensionalityReduction": 6,
+        "Clustering": 6,
+        "ClusteringSelection": 2,
+        "AnomalyDetection": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "infotheory_dp",
+      "file": "equation_specs_infotheory_dp.json",
+      "reference": "Shannon (1948)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DifferentialPrivacy": 18,
+        "InformationTheory": 12
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "irt",
+      "file": "equation_specs_irt.json",
+      "reference": "Rasch (1960); Birnbaum (1968)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "IRTPolytomous": 5,
+        "IRTEquating": 5,
+        "IRTUnidim": 4,
+        "IRTDIF": 4,
+        "IRTInfo": 4,
+        "IRTAbility": 4,
+        "IRTMulti": 3,
+        "IRTDim": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "mediation",
+      "file": "equation_specs_mediation.json",
+      "reference": "Sobel (1982)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalMediation": 18,
+        "Mediation": 12
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "multilevel",
+      "file": "equation_specs_multilevel.json",
+      "reference": "Shrout & Fleiss (1979)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "MultilevelICC": 9,
+        "MultilevelRandom": 7,
+        "MultilevelR2": 5,
+        "MultilevelFit": 4,
+        "MultilevelCenter": 3,
+        "MultilevelTest": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "robust",
+      "file": "equation_specs_robust.json",
+      "reference": "Huber (1964)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "RobustRegression": 11,
+        "RobustWeight": 7,
+        "RobustInfluence": 6,
+        "RobustScale": 3,
+        "RobustCovariance": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "spatial",
+      "file": "equation_specs_spatial.json",
+      "reference": "Anselin (1995)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SpatialAutocorrelation": 10,
+        "SpatialGeostatistics": 8,
+        "SpatialPointProcess": 6,
+        "SpatialEconometrics": 6
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "survey",
+      "file": "equation_specs_survey.json",
+      "reference": "Kish (1965)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SurveyDesign": 9,
+        "SurveyEstimator": 9,
+        "SurveyVariance": 5,
+        "SurveyCalibration": 3,
+        "SurveyAdjust": 3,
+        "SurveyCausal": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "survival_residuals",
+      "file": "equation_specs_survival_residuals.json",
+      "reference": "Therneau, Grambsch, Fleming (1990)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SurvivalFrailty": 6,
+        "SurvivalResidual": 5,
+        "SurvivalCompetingRisk": 5,
+        "SurvivalRecurrent": 3,
+        "SurvivalParametric": 2,
+        "SurvivalSummary": 2,
+        "SurvivalEstimation": 2,
+        "SurvivalAdvanced": 2,
+        "SurvivalMultistate": 1,
+        "SurvivalCausal": 1,
+        "SurvivalIPCW": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "timeseries",
+      "file": "equation_specs_timeseries.json",
+      "reference": "Phillips & Perron (1988)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "TimeSeriesGARCH": 7,
+        "TimeSeriesCointegration": 7,
+        "TimeSeriesBreaks": 5,
+        "TimeSeriesUnitRoot": 3,
+        "TimeSeriesDiagnostic": 3,
+        "TimeSeriesHAC": 3,
+        "TimeSeriesOrderSelection": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch9_11",
+      "file": "equation_specs_geron_ch9_11.json",
+      "reference": "Géron Ch 9, Threshold Logic Unit section",
+      "total": 28,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Optimization": 8,
+        "NeuralNetworks": 7,
+        "LearningRateSchedule": 3,
+        "Regularization": 3,
+        "ActivationFunction": 2,
+        "Initialization": 2,
+        "NormalizationLayers": 2,
+        "Autodiff": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "joseph_ch13_20",
+      "file": "equation_specs_joseph_ch13_20.json",
+      "reference": "Joseph Ch 16, N-HiTS section",
+      "total": 26,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DLForecasting": 7,
+        "ForecastMetrics": 5,
+        "ProbabilisticForecast": 3,
+        "MultiStepForecast": 3,
+        "TimeSeriesValidation": 3,
+        "ConformalPrediction": 2,
+        "HierarchicalForecast": 2,
+        "IntermittentDemand": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch1_3",
+      "file": "equation_specs_geron_ch1_3.json",
+      "reference": "Géron Ch 2, Eq 2-1 (Root Mean Squared Error)",
+      "total": 25,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "ClassificationMetrics": 7,
+        "ModelSelection": 4,
+        "FeatureEngineering": 4,
+        "Metrics": 2,
+        "ModelDiagnostics": 2,
+        "DataSplitting": 2,
+        "MulticlassClassification": 2,
+        "DataCleaning": 1,
+        "MultilabelClassification": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "neighborhood_structures_and_crime_a_spatial_analysis_george_",
+      "file": "equation_specs_neighborhood_structures_and_crime_a_spatial_analysis_george_.json",
+      "reference": "Neighborhood Structures And Crime A Spatial Analysis George Kikuchi",
+      "total": 25,
+      "verified": 25,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 25
+      },
+      "by_category": {
+        "Spatial": 8,
+        "Regression": 5,
+        "GeneralStatistics": 4,
+        "Multilevel": 3,
+        "CentralTendency": 3,
+        "Association": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch12_14",
+      "file": "equation_specs_geron_ch12_14.json",
+      "reference": "Géron Ch 12, Convolutional Layers section",
+      "total": 24,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CNN": 8,
+        "RNN": 7,
+        "NLP": 6,
+        "ObjectDetection": 1,
+        "TimeSeries": 1,
+        "Attention": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "alammar_ch4_9",
+      "file": "equation_specs_alammar_ch4_9.json",
+      "reference": "Alammar Ch 4, Zero-Shot Classification section",
+      "total": 23,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "TextClassification": 4,
+        "RetrievalMetrics": 4,
+        "TopicModeling": 3,
+        "LLMPrompting": 2,
+        "LLMAgents": 2,
+        "RAG": 2,
+        "MultimodalLearning": 2,
+        "Clustering": 1,
+        "DimensionalityReduction": 1,
+        "VectorSearch": 1,
+        "VisionTransformers": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "kamath_ch1_2",
+      "file": "equation_specs_kamath_ch1_2.json",
+      "reference": "Kamath Ch 1, N-gram Language Models section",
+      "total": 23,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "MixtureOfExperts": 4,
+        "LLMPretraining": 4,
+        "WordEmbeddings": 3,
+        "ScalingLaws": 3,
+        "PositionalEncodings": 2,
+        "Transformers": 2,
+        "Tokenization": 2,
+        "LanguageModels": 1,
+        "NormalizationLayers": 1,
+        "ActivationFunction": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch19_appendix",
+      "file": "equation_specs_geron_ch19_appendix.json",
+      "reference": "Géron Ch 19, Discounted Return section",
+      "total": 22,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "ReinforcementLearning": 8,
+        "DeepRL": 6,
+        "Autodiff": 4,
+        "Quantization": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "kamath_ch3_4",
+      "file": "equation_specs_kamath_ch3_4.json",
+      "reference": "Kamath Ch 3, In-Context Learning section",
+      "total": 22,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "LLMPrompting": 9,
+        "PEFT": 7,
+        "Quantization": 3,
+        "LLMSampling": 2,
+        "LLMFineTuning": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "kamath_ch7_8",
+      "file": "equation_specs_kamath_ch7_8.json",
+      "reference": "Kamath Ch 7, Dense Retrieval (DPR) section",
+      "total": 21,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "RAG": 9,
+        "LLMEval": 8,
+        "RAGEval": 3,
+        "LLMInference": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "stochastic_physics_crime",
+      "file": "equation_specs_stochastic_physics_crime.json",
+      "reference": "D'Orsogna & Perc (2015) Statistical physics of crime: A review",
+      "total": 21,
+      "verified": 21,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 4,
+        "math_density": 17
+      },
+      "by_category": {
+        "GeneralStochastic": 18,
+        "Spatial": 2,
+        "Stochastic": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "turboquant",
+      "file": "equation_specs_turboquant.json",
+      "reference": "Zandieh et al. 2024 Eq 3 (QJL definition 3.1)",
+      "total": 21,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Quantization": 21
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "armstrong",
+      "file": "equation_specs_armstrong.json",
+      "reference": "Armstrong Ch 2",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SpatialVoting": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "deep_learning",
+      "file": "equation_specs_deep_learning.json",
+      "reference": "Geron (2026), Ch 10",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "DeepLearning": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch4",
+      "file": "equation_specs_geron_ch4.json",
+      "reference": "Géron Ch 4, Eq 4-4 (Normal Equation)",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Classification": 7,
+        "RegularizedRegression": 4,
+        "Optimization": 3,
+        "LinearRegression": 2,
+        "FeatureEngineering": 1,
+        "ModelDiagnostics": 1,
+        "Regularization": 1,
+        "ActivationFunction": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "ghosal",
+      "file": "equation_specs_ghosal.json",
+      "reference": "Ghosal Ch 3",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "NonparametricBayes": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "gibbons_remaining",
+      "file": "equation_specs_gibbons_remaining.json",
+      "reference": "Gibbons Ch 2.11",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "NonparametricInference": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "horowitz",
+      "file": "equation_specs_horowitz.json",
+      "reference": "Horowitz (2009), Ch 2",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Semiparametric": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "joseph_ch1_7",
+      "file": "equation_specs_joseph_ch1_7.json",
+      "reference": "Joseph Ch 4, Naive Forecast baseline",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "FeatureEngineering": 4,
+        "TimeSeriesBaseline": 3,
+        "ExponentialSmoothing": 3,
+        "TimeSeriesAnalysis": 3,
+        "TargetTransform": 3,
+        "TimeSeriesProcessing": 2,
+        "TimeSeriesDecomp": 1,
+        "TimeSeriesML": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "llm_arch",
+      "file": "equation_specs_llm_arch.json",
+      "reference": "Sennrich et al. (2016)",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "LLMArchitecture": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "missing_stats",
+      "file": "equation_specs_missing_stats.json",
+      "reference": "Efron & Tibshirani (1993)",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "NumericalMethods": 7,
+        "NonparametricRegression": 5,
+        "Resampling": 3,
+        "ExtremeValue": 3,
+        "DependenceModeling": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "ml_foundations",
+      "file": "equation_specs_ml_foundations.json",
+      "reference": "Geron (2026), Ch 4",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "MLFoundation": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "montesinos",
+      "file": "equation_specs_montesinos.json",
+      "reference": "Montesinos Lopez Ch 3",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "GenomicPrediction": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "rangayyan",
+      "file": "equation_specs_rangayyan.json",
+      "reference": "Rangayyan Ch 3",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "BiomedSignal": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "schabenberger",
+      "file": "equation_specs_schabenberger.json",
+      "reference": "Schabenberger Ch 1",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "SpatialStatistics": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "time_series_advanced",
+      "file": "equation_specs_time_series_advanced.json",
+      "reference": "Bollerslev (1986)",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "TimeSeries": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "from_impact_to_action_final_report_into_anti_black_racism_by",
+      "file": "equation_specs_from_impact_to_action_final_report_into_anti_black_racism_by.json",
+      "reference": "From Impact to Action- Final report into anti-Black racism by the Toronto Police Service",
+      "total": 19,
+      "verified": 19,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 19
+      },
+      "by_category": {
+        "GeneralStatistics": 13,
+        "PowerAndDesign": 5,
+        "CentralTendency": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "kamath_ch6_9_10",
+      "file": "equation_specs_kamath_ch6_9_10.json",
+      "reference": "Kamath Ch 6, FactScore section",
+      "total": 19,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "MultimodalLearning": 6,
+        "BiasEval": 3,
+        "StateSpaceModels": 3,
+        "PrivacyEval": 2,
+        "LLMEval": 1,
+        "ToxicityEval": 1,
+        "PrivacyMitigation": 1,
+        "LongContext": 1,
+        "LLMInference": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "alammar_ch10_12",
+      "file": "equation_specs_alammar_ch10_12.json",
+      "reference": "Alammar Ch 10, Triplet Loss section",
+      "total": 18,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "EmbeddingTraining": 7,
+        "LLMFineTuning": 3,
+        "FineTuning": 2,
+        "SequenceLabeling": 2,
+        "EmbeddingEval": 1,
+        "FewShotFineTuning": 1,
+        "LLMEval": 1,
+        "RLHF": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "burkov",
+      "file": "equation_specs_burkov.json",
+      "reference": "Burkov Ch 1, Dot Product section",
+      "total": 18,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "LanguageModels": 6,
+        "LinearAlgebra": 3,
+        "TextRepresentation": 2,
+        "WordEmbeddings": 2,
+        "Autodiff": 1,
+        "LMEval": 1,
+        "RNN": 1,
+        "Transformers": 1,
+        "LLMSampling": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch16_17",
+      "file": "equation_specs_geron_ch16_17.json",
+      "reference": "Géron Ch 16, Vision Transformer (ViT) section",
+      "total": 18,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "VisionTransformers": 5,
+        "MultimodalLearning": 5,
+        "SelfSupervised": 2,
+        "Quantization": 2,
+        "ModelCompression": 2,
+        "Attention": 1,
+        "LLMInference": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch15",
+      "file": "equation_specs_geron_ch15.json",
+      "reference": "Géron Ch 15, Positional Encodings section",
+      "total": 17,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Transformers": 4,
+        "Attention": 4,
+        "LLMPretraining": 3,
+        "LLMFineTuning": 3,
+        "LLMSampling": 2,
+        "LLMPrompting": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch18",
+      "file": "equation_specs_geron_ch18.json",
+      "reference": "Géron Ch 18, Autoencoders section",
+      "total": 17,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Generative": 17
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "burkov_lm",
+      "file": "equation_specs_burkov_lm.json",
+      "reference": "Burkov LM (2025), Ch 1, Eq 1.1, p. 20",
+      "total": 16,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Information": 4,
+        "Optimization": 3,
+        "Statistical": 2,
+        "LinearAlgebra": 2,
+        "Transformer": 2,
+        "LanguageModel": 2,
+        "Probability": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "fauzi",
+      "file": "equation_specs_fauzi.json",
+      "reference": "Fauzi Ch 2",
+      "total": 15,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "KernelInference": 15
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "kamath_ch5",
+      "file": "equation_specs_kamath_ch5.json",
+      "reference": "Kamath Ch 5, Bradley-Terry Preference Model section",
+      "total": 14,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "PreferenceLearning": 5,
+        "RLHF": 5,
+        "AIAlignment": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "alammar_ch1_3",
+      "file": "equation_specs_alammar_ch1_3.json",
+      "reference": "Alammar Ch 1, Bag-of-Words section",
+      "total": 13,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "Embeddings": 3,
+        "Attention": 3,
+        "Tokenization": 2,
+        "LLMSampling": 2,
+        "TextRepresentation": 1,
+        "WordEmbeddings": 1,
+        "LLMInference": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "crimstat_beginner",
+      "file": "equation_specs_crimstat_beginner.json",
+      "reference": "Beginner's Guide to Statistics for Criminology and Criminal Justice using R (Wooditch et al., Springer 2021)",
+      "total": 13,
+      "verified": 13,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 10,
+        "math_density": 3
+      },
+      "by_category": {
+        "CentralTendency": 5,
+        "GeneralStatistics": 4,
+        "Regression": 2,
+        "CountModels": 1,
+        "Association": 1
+      },
+      "wired_to_callable": 1
+    },
+    {
+      "name": "jason_brownlee_machine_learning_mastery_with_r",
+      "file": "equation_specs_jason_brownlee_machine_learning_mastery_with_r.json",
+      "reference": "Jason Brownlee - Machine Learning Mastery with R",
+      "total": 12,
+      "verified": 12,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 11
+      },
+      "by_category": {
+        "GeneralStatistics": 10,
+        "Probability": 1,
+        "Spatial": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "law_and_economics_6th_edition_robert_b_cooter_thomas_ulen_pe",
+      "file": "equation_specs_law_and_economics_6th_edition_robert_b_cooter_thomas_ulen_pe.json",
+      "reference": "Law and Economics, 6th Edition -- Robert B. Cooter, Thomas Ulen -- Pearson Series in Economics, 6th Edition, 2011 -- Prentice Hall -- 9780132540650 -- 4bc55da23884b7603280fecc527f4743 -- Anna’s Archive",
+      "total": 12,
+      "verified": 12,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 2,
+        "math_density": 9
+      },
+      "by_category": {
+        "GeneralStatistics": 9,
+        "Probability": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "cornelius_llewellyn_j_harrington_donna_a_social_justice_appr",
+      "file": "equation_specs_cornelius_llewellyn_j_harrington_donna_a_social_justice_appr.json",
+      "reference": "Cornelius, Llewellyn J., Harrington, Donna - A Social Justice Approach to Survey Design and Analysis (2015)",
+      "total": 11,
+      "verified": 11,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 11
+      },
+      "by_category": {
+        "GeneralStatistics": 11
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "geron_ch4_eq1_24",
+      "file": "equation_specs_geron_ch4_eq1_24.json",
+      "reference": "Geron (2026), Ch 4, Eq 4-1, p. 136",
+      "total": 9,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "LinearRegression": 2,
+        "Regularization": 2,
+        "SoftmaxRegression": 2,
+        "NormalEquation": 1,
+        "GradientDescent": 1,
+        "LogisticRegression": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bounds",
+      "file": "equation_specs_bounds.json",
+      "reference": "Manski (1990); Manski (2003) Partial Identification",
+      "total": 8,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalBounds": 8
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bnp",
+      "file": "equation_specs_bnp.json",
+      "reference": "Antoniak (1974); Escobar-West (1995); Neal (2000)",
+      "total": 7,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "BayesianNonparametric": 7
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "drdid_csforest",
+      "file": "equation_specs_drdid_csforest.json",
+      "reference": "Sant'Anna & Zhao (2020) JoE",
+      "total": 6,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalDID": 3,
+        "CausalML": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "msm_gcomp",
+      "file": "equation_specs_msm_gcomp.json",
+      "reference": "Robins (2000); Robins-Hernán-Brumback (2000)",
+      "total": 6,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalLongitudinal": 6
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "tmle_extensions",
+      "file": "equation_specs_tmle_extensions.json",
+      "reference": "Moore & van der Laan (2009); Stitelman & van der Laan (2010)",
+      "total": 5,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "CausalML": 5
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "benjamin_j_lovett_practical_psychometrics_a_guide_for_test_u",
+      "file": "equation_specs_benjamin_j_lovett_practical_psychometrics_a_guide_for_test_u.json",
+      "reference": "Benjamin J. Lovett - Practical Psychometrics  A Guide for Test Users",
+      "total": 2,
+      "verified": 2,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 2
+      },
+      "by_category": {
+        "Correlation": 1,
+        "GeneralStatistics": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "kent_roach_benjamin_l_berger_emma_cunliffe_asad_g_kiyani_cri",
+      "file": "equation_specs_kent_roach_benjamin_l_berger_emma_cunliffe_asad_g_kiyani_cri.json",
+      "reference": "Kent Roach, Benjamin L. Berger, Emma Cunliffe, Asad G. Kiyani - Criminal law and procedure   cases and materials 12th edition-Emond Montgomery Publications Limited (2020)",
+      "total": 1,
+      "verified": 1,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 1
+      },
+      "by_category": {
+        "GeneralStatistics": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "misconduct_mismanagement_independent_oversight_accountabilit",
+      "file": "equation_specs_misconduct_mismanagement_independent_oversight_accountabilit.json",
+      "reference": "Misconduct Mismanagement: Independent Oversight, Accountability, and the Rule of Law by Jihyun Kwon",
+      "total": 1,
+      "verified": 1,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 1
+      },
+      "by_category": {
+        "GeneralStatistics": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "policing_the_police_public_perceptions_of_civilian_oversight",
+      "file": "equation_specs_policing_the_police_public_perceptions_of_civilian_oversight.json",
+      "reference": "Policing the Police: Public Perceptions of Civilian Oversight in Canada",
+      "total": 1,
+      "verified": 1,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "GeneralStatistics": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "ssc2009_cbabyak",
+      "file": "equation_specs_ssc2009_cbabyak.json",
+      "reference": "SSC2009 CBabyak",
+      "total": 1,
+      "verified": 1,
+      "verified_pct": 100.0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {
+        "GeneralStatistics": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "name": "15_year_old_boy_ozama_shaw_murdered_by_peel_police_in_missis",
+      "file": "equation_specs_15_year_old_boy_ozama_shaw_murdered_by_peel_police_in_missis.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "20212022_cpads_pumf_user_guide",
+      "file": "equation_specs_20212022_cpads_pumf_user_guide.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "2023_coroner_s_inquests_verdicts_and_recommendations_ontario",
+      "file": "equation_specs_2023_coroner_s_inquests_verdicts_and_recommendations_ontario.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "2023_csus_pumf_user_guide_en_10172025",
+      "file": "equation_specs_2023_csus_pumf_user_guide_en_10172025.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "6_the_siu_is_blatantly_biased_in_favour_of_police_officers_t",
+      "file": "equation_specs_6_the_siu_is_blatantly_biased_in_favour_of_police_officers_t.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "a_collective_impact_interim_report_on_the_inquiry_into_racia",
+      "file": "equation_specs_a_collective_impact_interim_report_on_the_inquiry_into_racia.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "africancanadianclinicipperwashproject_siustudybyscotwortley",
+      "file": "equation_specs_africancanadianclinicipperwashproject_siustudybyscotwortley.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "alr_23_3_11_welsh",
+      "file": "equation_specs_alr_23_3_11_welsh.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "analysis_to_action_model_roadmap_to_equity_strip_searches_me",
+      "file": "equation_specs_analysis_to_action_model_roadmap_to_equity_strip_searches_me.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "analysis_to_action_model_roadmap_to_equity_use_of_force_meas",
+      "file": "equation_specs_analysis_to_action_model_roadmap_to_equity_use_of_force_meas.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "andrew_gallimore_reality_switch_technologies_psychedelics_as",
+      "file": "equation_specs_andrew_gallimore_reality_switch_technologies_psychedelics_as.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "beiter_kaylin_author_danos_denise_author_conrad_erich_ptsd_t",
+      "file": "equation_specs_beiter_kaylin_author_danos_denise_author_conrad_erich_ptsd_t.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bittner_florence_nightengale_in_pursuit_of_willy_sutton",
+      "file": "equation_specs_bittner_florence_nightengale_in_pursuit_of_willy_sutton.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "bittner_the_police_on_skid_row",
+      "file": "equation_specs_bittner_the_police_on_skid_row.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "braun_clarke_2006_using_thematic_analysis_1",
+      "file": "equation_specs_braun_clarke_2006_using_thematic_analysis_1.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "cads2019_pumf_cdbk",
+      "file": "equation_specs_cads2019_pumf_cdbk.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "cads2019_pumf_cdbk_zerofreq",
+      "file": "equation_specs_cads2019_pumf_cdbk_zerofreq.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "cads2019_questionnaire_e",
+      "file": "equation_specs_cads2019_questionnaire_e.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "cads2019_uge",
+      "file": "equation_specs_cads2019_uge.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "criminal_ai_paper_final_oct_28_2020",
+      "file": "equation_specs_criminal_ai_paper_final_oct_28_2020.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "csi_frequently_asked_questions_2022",
+      "file": "equation_specs_csi_frequently_asked_questions_2022.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "csus_2025_questionnaire",
+      "file": "equation_specs_csus_2025_questionnaire.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "epicrim",
+      "file": "equation_specs_epicrim.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "essentials_of_canadian_law_kent_roach_criminal_law_7th_ed_ir",
+      "file": "equation_specs_essentials_of_canadian_law_kent_roach_criminal_law_7th_ed_ir.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "eterno_count_crime",
+      "file": "equation_specs_eterno_count_crime.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "haned_forenism",
+      "file": "equation_specs_haned_forenism.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "how_to_cite_cads2019_comment_citer_ecad2019",
+      "file": "equation_specs_how_to_cite_cads2019_comment_citer_ecad2019.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "independent_expert_assessment_report_toronto_police_service_",
+      "file": "equation_specs_independent_expert_assessment_report_toronto_police_service_.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "jihyun_kwon_s_syllabus",
+      "file": "equation_specs_jihyun_kwon_s_syllabus.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "key_findings_from_the_ohrc_s_inquiry_into_anti_black_racism_",
+      "file": "equation_specs_key_findings_from_the_ohrc_s_inquiry_into_anti_black_racism_.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "knowledge_on_tap_police_science_and_common_knowledge_in_the_",
+      "file": "equation_specs_knowledge_on_tap_police_science_and_common_knowledge_in_the_.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "latour_and_the_passage_of_law_pages_93_121_2023_11_12",
+      "file": "equation_specs_latour_and_the_passage_of_law_pages_93_121_2023_11_12.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "mafia",
+      "file": "equation_specs_mafia.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "misracialization",
+      "file": "equation_specs_misracialization.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "nelson_biology_12_edited_v4",
+      "file": "equation_specs_nelson_biology_12_edited_v4.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "neurotech_in_law",
+      "file": "equation_specs_neurotech_in_law.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "oversight_unseen_ontario_ombudsman",
+      "file": "equation_specs_oversight_unseen_ontario_ombudsman.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "ozama_shaw_inquest_doc",
+      "file": "equation_specs_ozama_shaw_inquest_doc.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "point_analysis_spatial_r",
+      "file": "equation_specs_point_analysis_spatial_r.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "police_interactions_with_people_in_crisis_and_use_of_force_s",
+      "file": "equation_specs_police_interactions_with_people_in_crisis_and_use_of_force_s.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "police_use_of_force_in_canada_a_review_of_data_expert_opinio",
+      "file": "equation_specs_police_use_of_force_in_canada_a_review_of_data_expert_opinio.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "psdp_glossary_of_terms",
+      "file": "equation_specs_psdp_glossary_of_terms.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "psdp_open_data_documentation",
+      "file": "equation_specs_psdp_open_data_documentation.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "psdp_rbdc_open_data_documentation",
+      "file": "equation_specs_psdp_rbdc_open_data_documentation.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "psdp_tps_action_plan",
+      "file": "equation_specs_psdp_tps_action_plan.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "puisa_montewka_krata_maritime_riskanalysis",
+      "file": "equation_specs_puisa_montewka_krata_maritime_riskanalysis.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "qjl_zandieh_daliri_han",
+      "file": "equation_specs_qjl_zandieh_daliri_han.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "r_v_le_scc_cases",
+      "file": "equation_specs_r_v_le_scc_cases.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "r_v_therens_scc_cases",
+      "file": "equation_specs_r_v_therens_scc_cases.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "race_police_stops_and_perceptions_of_anti_black_police_discr",
+      "file": "equation_specs_race_police_stops_and_perceptions_of_anti_black_police_discr.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "researching_public_law_in_common_law_systems",
+      "file": "equation_specs_researching_public_law_in_common_law_systems.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "semi_annual_report_publication_of_expenses_july_1_to_decembe",
+      "file": "equation_specs_semi_annual_report_publication_of_expenses_july_1_to_decembe.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "solgen_cree_verdict_fny_inquest",
+      "file": "equation_specs_solgen_cree_verdict_fny_inquest.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "stochastic_physics_of_crime",
+      "file": "equation_specs_stochastic_physics_of_crime.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "stolzenberg_et_al_race_crim",
+      "file": "equation_specs_stolzenberg_et_al_race_crim.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "strip_searches_measurement_outcomes_rbdc_video_5_transcript",
+      "file": "equation_specs_strip_searches_measurement_outcomes_rbdc_video_5_transcript.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "toronto_police_services_board_de_escalation_and_appropriate_",
+      "file": "equation_specs_toronto_police_services_board_de_escalation_and_appropriate_.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "toronto_police_services_board_policing_reform_implementation",
+      "file": "equation_specs_toronto_police_services_board_policing_reform_implementation.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "tps_2021_operating_budget",
+      "file": "equation_specs_tps_2021_operating_budget.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "tps_use_of_force_policy_and_procedure_oiprd_response_july_8_",
+      "file": "equation_specs_tps_use_of_force_policy_and_procedure_oiprd_response_july_8_.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "understanding_arrests_and_arrest_outcomes_in_2021_context_pr",
+      "file": "equation_specs_understanding_arrests_and_arrest_outcomes_in_2021_context_pr.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "understanding_arrests_arrest_outcomes_in_2021_2nd_public_rel",
+      "file": "equation_specs_understanding_arrests_arrest_outcomes_in_2021_2nd_public_rel.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "understanding_mental_health_apprehensions_in_2021_context_pr",
+      "file": "equation_specs_understanding_mental_health_apprehensions_in_2021_context_pr.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "understanding_strip_searches_in_2020_methodological_report",
+      "file": "equation_specs_understanding_strip_searches_in_2020_methodological_report.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "understanding_use_of_force_in_2020_methodological_report",
+      "file": "equation_specs_understanding_use_of_force_in_2020_methodological_report.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "understanding_use_of_force_strip_searches_in_2020_detailed_r",
+      "file": "equation_specs_understanding_use_of_force_strip_searches_in_2020_detailed_r.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "urbanik_and_greene_2020_ive_never_been_straight_up_robbed_li",
+      "file": "equation_specs_urbanik_and_greene_2020_ive_never_been_straight_up_robbed_li.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "use_of_force_by_the_toronto_police_service_final_report_2",
+      "file": "equation_specs_use_of_force_by_the_toronto_police_service_final_report_2.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "use_of_force_measurement_outcomes",
+      "file": "equation_specs_use_of_force_measurement_outcomes.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "watson_and_meehan_interpreting_videos_of_police_violence",
+      "file": "equation_specs_watson_and_meehan_interpreting_videos_of_police_violence.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "watson_gestalt_contexture_and_contested_motives",
+      "file": "equation_specs_watson_gestalt_contexture_and_contested_motives.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "watson_the_documentary_method_of_video_interpretation",
+      "file": "equation_specs_watson_the_documentary_method_of_video_interpretation.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "when_the_police_break_the_law_the_investigation_prosecution_",
+      "file": "equation_specs_when_the_police_break_the_law_the_investigation_prosecution_.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    },
+    {
+      "name": "zou_regularizationvariableselection_2005",
+      "file": "equation_specs_zou_regularizationvariableselection_2005.json",
+      "reference": null,
+      "total": 0,
+      "verified": 0,
+      "verified_pct": 0,
+      "by_method": {
+        "label": 0,
+        "math_density": 0
+      },
+      "by_category": {},
+      "wired_to_callable": 0
+    }
+  ],
+  "grand_total": 28725,
+  "grand_confirmed": 21537,
+  "verified_pct": 75.0
+}

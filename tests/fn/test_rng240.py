@@ -1,0 +1,39 @@
+"""Tests for rng240.rangayyan_ch4_complex_log_x_z."""
+import numpy as np
+import pytest
+from moirais.fn.rng240 import rangayyan_ch4_complex_log_x_z
+
+
+def test_rng240_basic():
+    """Test basic functionality."""
+    A = np.random.default_rng(42).normal(0, 1, (10, 10))
+    z = np.random.default_rng(44).normal(0, 1, 100)
+    r = 10
+    a_k = np.random.default_rng(42).normal(0, 1, 100)
+    b_k = np.random.default_rng(42).normal(0, 1, 100)
+    c_k = np.random.default_rng(42).normal(0, 1, 100)
+    d_k = np.random.default_rng(42).normal(0, 1, 100)
+    M_I = np.random.default_rng(42).normal(0, 1, 100)
+    M_O = np.random.default_rng(42).normal(0, 1, 100)
+    N_I = np.random.default_rng(42).normal(0, 1, 100)
+    N_O = np.random.default_rng(42).normal(0, 1, 100)
+    result = rangayyan_ch4_complex_log_x_z(A, z, r, a_k, b_k, c_k, d_k, M_I, M_O, N_I, N_O)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_rng240_edge():
+    """Test edge cases."""
+    A = np.random.default_rng(42).normal(0, 1, (10, 10))
+    z = np.random.default_rng(44).normal(0, 1, 100)
+    r = 10
+    a_k = np.random.default_rng(42).normal(0, 1, 100)
+    b_k = np.random.default_rng(42).normal(0, 1, 100)
+    c_k = np.random.default_rng(42).normal(0, 1, 100)
+    d_k = np.random.default_rng(42).normal(0, 1, 100)
+    M_I = np.random.default_rng(42).normal(0, 1, 100)
+    M_O = np.random.default_rng(42).normal(0, 1, 100)
+    N_I = np.random.default_rng(42).normal(0, 1, 100)
+    N_O = np.random.default_rng(42).normal(0, 1, 100)
+    result = rangayyan_ch4_complex_log_x_z(A, z, r, a_k, b_k, c_k, d_k, M_I, M_O, N_I, N_O)
+    assert isinstance(result, dict)

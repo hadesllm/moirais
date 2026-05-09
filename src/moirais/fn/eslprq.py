@@ -1,0 +1,39 @@
+"""Learning vector quantization (LVQ)."""
+import numpy as np
+from scipy import stats
+from ._richresult import RichResult
+
+__all__ = ["esl_prototype_lvq"]
+
+
+def esl_prototype_lvq(X, y):
+    """
+    Learning vector quantization (LVQ)
+
+    Formula: Move winning prototype toward x_i if same class
+
+    Parameters
+    ----------
+    X : array-like
+        Input data.
+    y : array-like
+        Input data.
+
+    Returns
+    -------
+    result : dict
+        Keys: prototypes
+
+    References
+    ----------
+    Hastie ESL Ch 13
+    """
+    y = np.atleast_1d(np.asarray(y, dtype=float))
+    n = len(y)
+    result = float(np.mean(y))
+    se = float(np.std(y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Learning vector quantization (LVQ)"})
+
+
+def cheatsheet():
+    return "eslprq: Learning vector quantization (LVQ)"

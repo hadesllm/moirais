@@ -1,0 +1,31 @@
+"""Tests for gprq."""
+import numpy as np
+import pytest
+from moirais.fn.gprq import gprq
+
+
+def test_gprq_basic():
+    result = gprq()
+    assert hasattr(result, "statistic")
+    assert isinstance(result.statistic, float)
+    assert result.name == "GP-RationalQuadratic"
+
+
+def test_gprq_with_data():
+    rng = np.random.default_rng(0)
+    data = rng.standard_normal(20)
+    coords = rng.uniform(0, 1, size=(20, 2))
+    result = gprq(data=data, coords=coords, n=20, seed=0)
+    assert result.statistic == pytest.approx(float(np.mean(data)))
+    assert result.extra["n_points"] == 20
+
+
+def test_gprq_no_data():
+    result = gprq(n=50, seed=7)
+    assert result.statistic is not None
+    assert result.extra["n_points"] == 50
+
+
+def test_gprq_alias():
+    from moirais.fn.gprq import gprq
+    assert gprq is gprq

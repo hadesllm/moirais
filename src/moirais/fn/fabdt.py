@@ -1,0 +1,56 @@
+# moirais.fn — function file (hadesllm/moirais)
+"""Freund-Ansari-Bradley-David test for scale equality."""
+
+import numpy as np
+from scipy import stats as sp_stats
+
+__all__ = ["fabdt"]
+
+
+def fabdt(x, y, axis=0, cdf=None):
+    r"""
+    Freund-Ansari-Bradley-David test for equality of scale parameters.
+
+    Tests H0: two samples have equal dispersion (more general than Mood's test).
+    Uses scores based on ranks in combined sample.
+    """
+    x = np.asarray(x, dtype=np.float64)
+    y = np.asarray(y, dtype=np.float64)
+
+    if x.ndim == 2:
+        x = np.take(x, 0, axis=axis)
+    if y.ndim == 2:
+        y = np.take(y, 0, axis=axis)
+
+    n_x = len(x)
+    n_y = len(y)
+
+    if n_x < 1 or n_y < 1:
+        raise ValueError("Both samples must have ≥1 observation")
+
+    combined = np.concatenate([x, y])
+    n = len(combined)
+
+    # Rank combined sample
+    ranks = sp_stats.rankdata(combined)
+
+    # FABD scores: c_i = |rank_i - (n+1)/2|
+    scores = np.abs(ranks - (n + 1) / 2)
+
+    # Sum of scores for x
+    T = np.sum(scores[:n_x])
+
+    # Expected value and variance under null
+    E_T = n_x * (n + 1) / 4
+    Var_T = (n_x * n_y * (n**2 - 4)) / (4 * 3 * (n - 1))
+
+    # Standardized statistic
+    z_stat = (T - E_T) / np.sqrt(Var_T)
+    p_value = 2 * (1 - sp_stats.norm.cdf(np.abs(z_stat)))
+
+    return {
+        "statistic": float(T),
+        "z_stat": float(z_stat),
+        "p_value": float(p_value),
+        "interpretation": "reject" if p_value < 0.05 else "not reject",
+    }

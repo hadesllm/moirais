@@ -1,0 +1,18 @@
+"""Test rsknn."""
+import numpy as np
+import pytest
+from moirais.fn.rsknn import rsknn
+
+
+def test_rsknn_basic():
+    rng = np.random.default_rng(42)
+    pixels = rng.uniform(0, 10000, (40, 4))
+    r = rsknn(pixels=pixels, n=40)
+    assert r.value is not None
+
+
+def test_rsknn_description():
+    rng = np.random.default_rng(42)
+    pixels = rng.uniform(0, 10000, (40, 4))
+    r = rsknn(pixels=pixels, n=40)
+    assert r.name

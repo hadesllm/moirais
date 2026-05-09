@@ -1,0 +1,3195 @@
+{
+  "generated_at": "2026-05-06T18:52:20.891279",
+  "deduped_total_equations": 27516,
+  "deduped_total_verified": 21586,
+  "verified_pct": 78.4,
+  "deduped_total_books": 142,
+  "books": [
+    {
+      "book": "hedderich",
+      "reference": "Hedderich, Sachs & Reynarowych (2023) Applied Statistics: Methods Using R",
+      "total": 3761,
+      "verified": 3761,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 1712,
+        "Dispersion": 436,
+        "Regression": 290,
+        "Probability": 287,
+        "CentralTendency": 267,
+        "PowerAndDesign": 253,
+        "CountModels": 215,
+        "Correlation": 151,
+        "ContingencyTables": 36,
+        "Association": 30,
+        "Bayesian": 24,
+        "Logistic": 17,
+        "CausalInference": 14,
+        "MetaAnalysis": 13,
+        "Resampling": 6,
+        "ANOVA": 5,
+        "Spatial": 2,
+        "Multilevel": 2,
+        "Nonparametric": 1
+      },
+      "by_chapter": {
+        "ch2": 5,
+        "ch3": 2,
+        "ch4": 1,
+        "ch5": 7,
+        "ch6": 2,
+        "ch7": 9,
+        "ch8": 56,
+        "ch9": 3679
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "probability_and_random_processes_with_one_thousand_exercises",
+      "reference": "Probability and Random Processes with One Thousand Exercises -- Geoffrey  Stirzaker Grimmett",
+      "total": 3745,
+      "verified": 3745,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 2367,
+        "Probability": 384,
+        "Dispersion": 333,
+        "CentralTendency": 287,
+        "CountModels": 255,
+        "Correlation": 30,
+        "Bayesian": 19,
+        "PowerAndDesign": 16,
+        "Spatial": 16,
+        "Association": 16,
+        "ContingencyTables": 9,
+        "Regression": 6,
+        "CausalInference": 6,
+        "Nonparametric": 1
+      },
+      "by_chapter": {
+        "ch11": 940,
+        "ch2": 1923,
+        "ch5": 669,
+        "ch7": 210,
+        "ch8": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "guide_on_data_analysis",
+      "reference": "guide on data analysis",
+      "total": 1660,
+      "verified": 1660,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 625,
+        "Regression": 324,
+        "Dispersion": 220,
+        "CentralTendency": 207,
+        "CausalInference": 61,
+        "Probability": 40,
+        "PowerAndDesign": 33,
+        "Correlation": 32,
+        "Logistic": 29,
+        "ANOVA": 23,
+        "Multilevel": 17,
+        "CountModels": 14,
+        "Association": 8,
+        "Nonparametric": 8,
+        "ContingencyTables": 7,
+        "Bayesian": 7,
+        "Resampling": 3,
+        "Spatial": 2
+      },
+      "by_chapter": {
+        "ch1": 2,
+        "ch10": 77,
+        "ch11": 78,
+        "ch12": 16,
+        "ch13": 7,
+        "ch14": 39,
+        "ch15": 9,
+        "ch16": 31,
+        "ch17": 16,
+        "ch18": 5,
+        "ch19": 19,
+        "ch2": 105,
+        "ch20": 6,
+        "ch21": 22,
+        "ch22": 54,
+        "ch23": 3,
+        "ch24": 151,
+        "ch25": 85,
+        "ch26": 13,
+        "ch27": 61,
+        "ch28": 33,
+        "ch29": 19,
+        "ch3": 29,
+        "ch30": 225,
+        "ch4": 111,
+        "ch5": 198,
+        "ch6": 97,
+        "ch7": 68,
+        "ch8": 70,
+        "ch9": 11
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "analysis_of_categorical_data_with_r_chapman_hall_crc_christo",
+      "reference": "Analysis of Categorical Data with R (Chapman & Hall CRC -- CHRISTOPHER R   LOUGHIN BILDER (THOMAS M )",
+      "total": 1637,
+      "verified": 1637,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 480,
+        "Regression": 365,
+        "Logistic": 232,
+        "Probability": 149,
+        "CentralTendency": 146,
+        "Dispersion": 102,
+        "CountModels": 48,
+        "Correlation": 29,
+        "Bayesian": 21,
+        "ContingencyTables": 21,
+        "PowerAndDesign": 21,
+        "ANOVA": 9,
+        "Nonparametric": 5,
+        "Association": 3,
+        "Multilevel": 3,
+        "CausalInference": 2,
+        "Resampling": 1
+      },
+      "by_chapter": {
+        "ch1": 141,
+        "ch2": 304,
+        "ch3": 270,
+        "ch4": 166,
+        "ch5": 720,
+        "ch6": 36
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "wilcox",
+      "reference": "Wilcox, R.R. (2017) Modern Statistics for the Social and Behavioral Sciences",
+      "total": 1484,
+      "verified": 1484,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 436,
+        "CentralTendency": 358,
+        "Dispersion": 207,
+        "PowerAndDesign": 142,
+        "Regression": 137,
+        "Probability": 86,
+        "Resampling": 51,
+        "Correlation": 26,
+        "ContingencyTables": 21,
+        "CountModels": 6,
+        "ANOVA": 5,
+        "Logistic": 4,
+        "Association": 3,
+        "MetaAnalysis": 2
+      },
+      "by_chapter": {
+        "ch10": 189,
+        "ch11": 5,
+        "ch12": 13,
+        "ch13": 296,
+        "ch14": 380,
+        "ch15": 18,
+        "ch2": 91,
+        "ch3": 14,
+        "ch4": 220,
+        "ch5": 81,
+        "ch6": 13,
+        "ch7": 69,
+        "ch8": 68,
+        "ch9": 27
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "bookadvanced_elementsofstatisticallearning",
+      "reference": "BookAdvanced elementsofstatisticallearning",
+      "total": 1308,
+      "verified": 1308,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 636,
+        "Regression": 306,
+        "Dispersion": 113,
+        "CentralTendency": 60,
+        "Bayesian": 37,
+        "Probability": 33,
+        "Nonparametric": 30,
+        "Logistic": 26,
+        "Correlation": 18,
+        "Spatial": 13,
+        "PowerAndDesign": 13,
+        "Resampling": 9,
+        "ContingencyTables": 7,
+        "CountModels": 7
+      },
+      "by_chapter": {
+        "ch1": 39,
+        "ch10": 12,
+        "ch11": 9,
+        "ch12": 14,
+        "ch13": 1,
+        "ch14": 12,
+        "ch15": 1,
+        "ch16": 6,
+        "ch17": 21,
+        "ch18": 9,
+        "ch2": 18,
+        "ch3": 125,
+        "ch4": 536,
+        "ch5": 183,
+        "ch6": 239,
+        "ch7": 19,
+        "ch8": 45,
+        "ch9": 19
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "chapman_hall_crc_handbooks_of_modern_statistical_methods_jos",
+      "reference": "[Chapman & Hall CRC Handbooks of Modern Statistical Methods] José R. Zubizarreta, Elizabeth A. Stuart, Dylan S. Small, ",
+      "total": 1245,
+      "verified": 1245,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 638,
+        "CausalInference": 240,
+        "Regression": 83,
+        "CentralTendency": 74,
+        "Probability": 67,
+        "Dispersion": 59,
+        "Logistic": 35,
+        "Bayesian": 14,
+        "PowerAndDesign": 9,
+        "Spatial": 6,
+        "Correlation": 6,
+        "Association": 5,
+        "Nonparametric": 5,
+        "Resampling": 3,
+        "CountModels": 1
+      },
+      "by_chapter": {
+        "ch10": 998,
+        "ch14": 1,
+        "ch15": 12,
+        "ch16": 9,
+        "ch17": 6,
+        "ch18": 6,
+        "ch19": 6,
+        "ch2": 1,
+        "ch20": 2,
+        "ch21": 16,
+        "ch23": 3,
+        "ch25": 180,
+        "ch3": 1,
+        "ch5": 2,
+        "ch7": 1,
+        "ch9": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "david_j_morin_probability_for_the_enthusiastic_beginner",
+      "reference": "David J. Morin - Probability  For the Enthusiastic Beginner",
+      "total": 842,
+      "verified": 842,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 328,
+        "Dispersion": 187,
+        "Probability": 114,
+        "CountModels": 79,
+        "Regression": 55,
+        "CentralTendency": 47,
+        "Correlation": 15,
+        "Bayesian": 8,
+        "PowerAndDesign": 8,
+        "CausalInference": 1
+      },
+      "by_chapter": {
+        "ch1": 30,
+        "ch10": 1,
+        "ch19": 1,
+        "ch2": 356,
+        "ch3": 71,
+        "ch4": 65,
+        "ch5": 221,
+        "ch6": 64,
+        "ch7": 33
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "design_of_observational_studies",
+      "reference": "Design of observational studies",
+      "total": 840,
+      "verified": 840,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 469,
+        "CausalInference": 94,
+        "Probability": 84,
+        "Dispersion": 58,
+        "PowerAndDesign": 46,
+        "CentralTendency": 44,
+        "Regression": 21,
+        "Logistic": 9,
+        "Association": 5,
+        "Bayesian": 4,
+        "ContingencyTables": 3,
+        "Correlation": 1,
+        "Nonparametric": 1,
+        "CountModels": 1
+      },
+      "by_chapter": {
+        "ch12": 11,
+        "ch15": 246,
+        "ch17": 7,
+        "ch2": 176,
+        "ch20": 150,
+        "ch3": 71,
+        "ch4": 115,
+        "ch5": 1,
+        "ch6": 39,
+        "ch8": 23,
+        "ch9": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a",
+      "reference": "Shailaja R. Deshmukh, Akanksha S. Kashikar - Probability Theory  An Introduction Using R",
+      "total": 747,
+      "verified": 747,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 556,
+        "Probability": 106,
+        "CentralTendency": 47,
+        "Dispersion": 10,
+        "ContingencyTables": 9,
+        "PowerAndDesign": 8,
+        "CountModels": 8,
+        "Spatial": 3
+      },
+      "by_chapter": {
+        "ch1": 81,
+        "ch10": 121,
+        "ch11": 1,
+        "ch2": 64,
+        "ch3": 40,
+        "ch4": 69,
+        "ch5": 49,
+        "ch6": 16,
+        "ch7": 237,
+        "ch8": 52,
+        "ch9": 17
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "spatiotemporal_methods_in_environmental_epidemiology_with_r_",
+      "reference": "spatiotemporal-methods-in-environmental-epidemiology-with-r-chapman-amp-hall-crc-texts-in-statistical-science-2nbsped-10",
+      "total": 698,
+      "verified": 698,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 248,
+        "Dispersion": 138,
+        "Regression": 62,
+        "Bayesian": 61,
+        "CentralTendency": 59,
+        "Spatial": 34,
+        "Probability": 23,
+        "Correlation": 21,
+        "Logistic": 15,
+        "CountModels": 14,
+        "Multilevel": 12,
+        "Association": 10,
+        "PowerAndDesign": 1
+      },
+      "by_chapter": {
+        "ch10": 13,
+        "ch11": 94,
+        "ch12": 22,
+        "ch13": 96,
+        "ch14": 17,
+        "ch15": 17,
+        "ch2": 33,
+        "ch3": 66,
+        "ch5": 1,
+        "ch6": 173,
+        "ch7": 39,
+        "ch8": 11,
+        "ch9": 116
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "rangayyan",
+      "reference": "Rangayyan Ch 3",
+      "total": 555,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "FilterDesign": 115,
+        "BiomedSignal": 92,
+        "AdaptiveFilter": 46,
+        "Statistical": 40,
+        "DeepLearning": 34,
+        "Filtering": 32,
+        "FourierAnalysis": 30,
+        "ECGProcessing": 22,
+        "SpectralAnalysis": 21,
+        "Wavelets": 18,
+        "Decomposition": 17,
+        "LPC": 15,
+        "ECG": 14,
+        "Detection": 13,
+        "EEG": 9,
+        "TimeFrequency": 9,
+        "BiomedicalSignal": 7,
+        "EMG": 6,
+        "HRV": 6,
+        "Cepstrum": 5,
+        "EEGProcessing": 4
+      },
+      "by_chapter": {
+        "ch1": 20,
+        "ch10": 46,
+        "ch11": 1,
+        "ch2": 11,
+        "ch3": 211,
+        "ch4": 106,
+        "ch5": 22,
+        "ch6": 27,
+        "ch7": 35,
+        "ch8": 45,
+        "ch9": 31
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit",
+      "reference": "Blitzstein, Joseph K.  Hwang, Jessica - Introduction to probability",
+      "total": 546,
+      "verified": 546,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 237,
+        "Probability": 85,
+        "Dispersion": 82,
+        "CentralTendency": 48,
+        "CountModels": 46,
+        "Bayesian": 13,
+        "Association": 12,
+        "Correlation": 5,
+        "ContingencyTables": 4,
+        "PowerAndDesign": 4,
+        "Logistic": 4,
+        "Regression": 4,
+        "CausalInference": 2
+      },
+      "by_chapter": {
+        "ch10": 506,
+        "ch8": 40
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "crimstat_advanced",
+      "reference": "Advanced Statistics in Criminology and Criminal Justice (Weisburd, Wilson, Wooditch & Britt, 5th ed, Springer 2022)",
+      "total": 516,
+      "verified": 516,
+      "verified_pct": 100.0,
+      "by_category": {
+        "Regression": 191,
+        "GeneralStatistics": 119,
+        "CentralTendency": 42,
+        "Dispersion": 31,
+        "PowerAndDesign": 27,
+        "Logistic": 20,
+        "MetaAnalysis": 20,
+        "Inference": 18,
+        "CountModels": 10,
+        "Correlation": 9,
+        "Multilevel": 8,
+        "Probability": 5,
+        "ContingencyTables": 5,
+        "ANOVA": 5,
+        "CausalInference": 4,
+        "Spatial": 2
+      },
+      "by_chapter": {
+        "ch1": 18,
+        "ch10": 11,
+        "ch11": 61,
+        "ch12": 13,
+        "ch2": 50,
+        "ch3": 63,
+        "ch4": 52,
+        "ch5": 61,
+        "ch6": 33,
+        "ch7": 63,
+        "ch8": 71,
+        "ch9": 20
+      },
+      "wired_to_callable": 9
+    },
+    {
+      "book": "springer_texts_in_statistics_series_gareth_james_daniela_wit",
+      "reference": "[Springer Texts in Statistics Series] Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani - An Introduction T",
+      "total": 424,
+      "verified": 424,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 154,
+        "Regression": 149,
+        "Dispersion": 40,
+        "CentralTendency": 32,
+        "Bayesian": 12,
+        "Probability": 11,
+        "Nonparametric": 8,
+        "Association": 5,
+        "Logistic": 4,
+        "PowerAndDesign": 3,
+        "Resampling": 2,
+        "Correlation": 2,
+        "ANOVA": 1,
+        "Multilevel": 1
+      },
+      "by_chapter": {
+        "ch10": 2,
+        "ch2": 96,
+        "ch3": 172,
+        "ch4": 7,
+        "ch5": 2,
+        "ch6": 121,
+        "ch7": 13,
+        "ch8": 7,
+        "ch9": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron",
+      "reference": "Géron Ch 2, Eq 2-1 (Root Mean Squared Error)",
+      "total": 370,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Transformer": 32,
+        "RL": 21,
+        "DimensionalityReduction": 18,
+        "Optimization": 17,
+        "VisionTransformer": 17,
+        "Quantization": 17,
+        "Generative": 16,
+        "Classification": 15,
+        "ModelSelection": 13,
+        "Ensemble": 12,
+        "Clustering": 12,
+        "NeuralNetwork": 12,
+        "NLP": 12,
+        "Metrics": 11,
+        "ActivationFunction": 11,
+        "FeatureEngineering": 10,
+        "PyTorch": 10,
+        "DecisionTree": 9,
+        "RNN": 9,
+        "CNN": 8,
+        "CNNArchitecture": 8,
+        "ModelDiagnostics": 7,
+        "ClassificationMetrics": 7,
+        "Regularization": 6,
+        "MLTaxonomy": 5,
+        "AnomalyDetection": 5,
+        "TrainingDeepNN": 5,
+        "ObjectDetection": 5,
+        "Autodiff": 5,
+        "MLParadigm": 4,
+        "LinearRegression": 4,
+        "RegularizedRegression": 4,
+        "Boosting": 4,
+        "TimeSeries": 3,
+        "DataSplitting": 2,
+        "MulticlassClassification": 2,
+        "Sampling": 2,
+        "DensityModel": 2,
+        "Initialization": 2,
+        "Normalization": 2,
+        "DataCleaning": 1,
+        "MultilabelClassification": 1,
+        "MLPipeline": 1,
+        "Attention": 1
+      },
+      "by_chapter": {
+        "(other)": 12,
+        "ch1": 19,
+        "ch10": 10,
+        "ch11": 34,
+        "ch12": 20,
+        "ch13": 13,
+        "ch14": 13,
+        "ch15": 32,
+        "ch16": 17,
+        "ch17": 10,
+        "ch18": 16,
+        "ch19": 21,
+        "ch2": 26,
+        "ch3": 24,
+        "ch4": 24,
+        "ch5": 9,
+        "ch6": 15,
+        "ch7": 18,
+        "ch8": 22,
+        "ch9": 15
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "mvsml",
+      "reference": "MVSML, Eq. (1.1) [Multivariate Statistical Machine Learnin [Pages 1-34] [2026-04-16].pdf]",
+      "total": 330,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "MultivariateRegression": 225,
+        "Statistical": 93,
+        "KernelMethods": 12
+      },
+      "by_chapter": {
+        "(other)": 330
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "ghosal",
+      "reference": "Ghosal Ch 3",
+      "total": 306,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "NonparametricBayes": 79,
+        "DirichletProcess": 36,
+        "PosteriorConsistency": 31,
+        "PosteriorContraction": 31,
+        "GaussianProcess": 25,
+        "Adaptation": 15,
+        "BernsteinVonMises": 14,
+        "PitmanYor": 14,
+        "Prior": 14,
+        "PolyaTree": 8,
+        "Posterior": 8,
+        "MCMC": 6,
+        "Sieve": 6,
+        "DensityEstimation": 6,
+        "NeutralRight": 4,
+        "VariationalBayes": 2,
+        "HierarchicalBayes": 2,
+        "NonparametricRegression": 2,
+        "EmpiricalBayes": 1,
+        "BayesianInference": 1,
+        "Convergence": 1
+      },
+      "by_chapter": {
+        "(other)": 32,
+        "ch1": 4,
+        "ch10": 16,
+        "ch11": 21,
+        "ch12": 15,
+        "ch13": 17,
+        "ch14": 30,
+        "ch15": 2,
+        "ch16": 1,
+        "ch2": 16,
+        "ch3": 45,
+        "ch4": 29,
+        "ch5": 12,
+        "ch6": 18,
+        "ch7": 16,
+        "ch8": 18,
+        "ch9": 14
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "bivand2013",
+      "reference": "bivand2013",
+      "total": 305,
+      "verified": 305,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 89,
+        "Spatial": 84,
+        "Dispersion": 39,
+        "Regression": 28,
+        "CentralTendency": 26,
+        "CountModels": 18,
+        "Correlation": 6,
+        "Multilevel": 6,
+        "Association": 2,
+        "Bayesian": 2,
+        "ContingencyTables": 2,
+        "CausalInference": 1,
+        "Logistic": 1,
+        "Probability": 1
+      },
+      "by_chapter": {
+        "ch10": 1,
+        "ch2": 78,
+        "ch7": 224,
+        "ch8": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "information_theory_mackay",
+      "reference": "Information theory MacKay",
+      "total": 279,
+      "verified": 279,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 133,
+        "Probability": 89,
+        "CentralTendency": 17,
+        "Bayesian": 16,
+        "Dispersion": 13,
+        "PowerAndDesign": 3,
+        "Association": 3,
+        "CountModels": 2,
+        "Regression": 2,
+        "ContingencyTables": 1
+      },
+      "by_chapter": {
+        "ch1": 10,
+        "ch10": 7,
+        "ch11": 1,
+        "ch13": 3,
+        "ch17": 1,
+        "ch19": 3,
+        "ch2": 2,
+        "ch22": 1,
+        "ch24": 3,
+        "ch26": 17,
+        "ch28": 5,
+        "ch29": 1,
+        "ch3": 7,
+        "ch30": 2,
+        "ch4": 10,
+        "ch5": 2,
+        "ch6": 201,
+        "ch8": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "use_r",
+      "reference": "Use R",
+      "total": 272,
+      "verified": 272,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 80,
+        "Spatial": 79,
+        "Dispersion": 31,
+        "Regression": 28,
+        "CentralTendency": 15,
+        "Correlation": 12,
+        "CountModels": 11,
+        "Bayesian": 6,
+        "ANOVA": 2,
+        "ContingencyTables": 2,
+        "CausalInference": 1,
+        "Probability": 1,
+        "Logistic": 1,
+        "Multilevel": 1,
+        "Nonparametric": 1,
+        "Association": 1
+      },
+      "by_chapter": {
+        "ch11": 1,
+        "ch2": 269,
+        "ch8": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "the_r_series_dick_j_brus_spatial_sampling_with_r",
+      "reference": "[The R Series] Dick J. Brus - Spatial Sampling with R",
+      "total": 233,
+      "verified": 233,
+      "verified_pct": 100.0,
+      "by_category": {
+        "Dispersion": 64,
+        "GeneralStatistics": 59,
+        "CentralTendency": 52,
+        "Regression": 26,
+        "PowerAndDesign": 9,
+        "Probability": 6,
+        "CountModels": 6,
+        "Spatial": 5,
+        "Correlation": 5,
+        "Bayesian": 1
+      },
+      "by_chapter": {
+        "ch10": 23,
+        "ch11": 83,
+        "ch12": 25,
+        "ch13": 8,
+        "ch14": 1,
+        "ch15": 2,
+        "ch16": 1,
+        "ch2": 3,
+        "ch20": 2,
+        "ch21": 10,
+        "ch24": 6,
+        "ch25": 2,
+        "ch26": 42,
+        "ch3": 5,
+        "ch4": 4,
+        "ch6": 3,
+        "ch7": 9,
+        "ch8": 1,
+        "ch9": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "gibbons",
+      "reference": "Gibbons Theorem 2.2.1",
+      "total": 219,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "TwoSample": 26,
+        "OrderStatistics": 24,
+        "Association": 23,
+        "GoodnessOfFit": 21,
+        "KSample": 21,
+        "RankTest": 20,
+        "Randomness": 19,
+        "EfficiencyARE": 17,
+        "ScaleTest": 10,
+        "Independence": 10,
+        "NonparametricInference": 9,
+        "SignTest": 9,
+        "LocationTest": 8,
+        "OneSample": 2
+      },
+      "by_chapter": {
+        "(other)": 58,
+        "ch1": 6,
+        "ch10": 12,
+        "ch11": 14,
+        "ch12": 17,
+        "ch13": 9,
+        "ch14": 13,
+        "ch2": 11,
+        "ch3": 6,
+        "ch4": 9,
+        "ch5": 23,
+        "ch6": 24,
+        "ch8": 7,
+        "ch9": 10
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "statistics_fourth_edition_david_freeman_robert_pisani_and_ro",
+      "reference": "Statistics, Fourth Edition -- David Freeman, Robert Pisani, and Roger Purves -- 2018",
+      "total": 193,
+      "verified": 193,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 123,
+        "Regression": 27,
+        "Dispersion": 14,
+        "CentralTendency": 8,
+        "CountModels": 8,
+        "Correlation": 5,
+        "ContingencyTables": 4,
+        "PowerAndDesign": 2,
+        "Probability": 1,
+        "Bayesian": 1
+      },
+      "by_chapter": {
+        "ch10": 73,
+        "ch12": 2,
+        "ch14": 1,
+        "ch16": 6,
+        "ch17": 3,
+        "ch18": 1,
+        "ch2": 1,
+        "ch27": 31,
+        "ch29": 12,
+        "ch7": 62,
+        "ch9": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "kamath_llm_deep_dive",
+      "reference": "Kamath et al (2024), Ch 2, Eq 2.1, p. 30",
+      "total": 150,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "LanguageModel": 43,
+        "Statistical": 31,
+        "Optimization": 27,
+        "Probability": 13,
+        "RLHF": 10,
+        "Attention": 9,
+        "Embedding": 9,
+        "LinearAlgebra": 6,
+        "Information": 2
+      },
+      "by_chapter": {
+        "ch2": 41,
+        "ch3": 12,
+        "ch4": 11,
+        "ch5": 12,
+        "ch6": 33,
+        "ch7": 3,
+        "ch8": 16,
+        "ch9": 22
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th",
+      "reference": "Advanced R (Second Edition) -- Hadley Wickham -- Chapman & Hall CRC the R",
+      "total": 130,
+      "verified": 130,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 95,
+        "CentralTendency": 22,
+        "Regression": 5,
+        "PowerAndDesign": 4,
+        "Association": 3,
+        "Probability": 1
+      },
+      "by_chapter": {
+        "ch10": 91,
+        "ch13": 11,
+        "ch2": 4,
+        "ch25": 24
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "montesinos",
+      "reference": "Montesinos Lopez Ch 3",
+      "total": 128,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "GenomicPrediction": 21,
+        "DeepLearningGP": 20,
+        "GenomicSelection": 18,
+        "BLUP": 15,
+        "BayesianAlphabet": 15,
+        "CrossValCV1CV2": 12,
+        "RKHS": 11,
+        "RelationshipMatrix": 9,
+        "MultiTrait": 3,
+        "GxE": 3,
+        "rrBLUP": 1
+      },
+      "by_chapter": {
+        "ch1": 1,
+        "ch10": 11,
+        "ch11": 6,
+        "ch12": 4,
+        "ch13": 4,
+        "ch14": 6,
+        "ch15": 8,
+        "ch2": 15,
+        "ch3": 12,
+        "ch4": 15,
+        "ch5": 11,
+        "ch6": 11,
+        "ch7": 7,
+        "ch8": 12,
+        "ch9": 5
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "schabenberger",
+      "reference": "Schabenberger Ch 1",
+      "total": 123,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Variogram": 33,
+        "SpatialStatistics": 20,
+        "Kriging": 17,
+        "PointPattern": 15,
+        "MoranGeary": 10,
+        "SAR": 9,
+        "Spatial": 8,
+        "SpatialGLM": 4,
+        "GWR": 4,
+        "CAR": 3
+      },
+      "by_chapter": {
+        "(other)": 1,
+        "ch1": 15,
+        "ch2": 8,
+        "ch3": 17,
+        "ch4": 25,
+        "ch5": 19,
+        "ch6": 21,
+        "ch7": 6,
+        "ch8": 7,
+        "ch9": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "andrew_b_lawson_using_r_for_bayesian_spatial_and_spatio_temp",
+      "reference": "Andrew B Lawson - Using R for Bayesian Spatial and Spatio-Temporal Health Modeling",
+      "total": 115,
+      "verified": 115,
+      "verified_pct": 100.0,
+      "by_category": {
+        "Spatial": 24,
+        "GeneralStatistics": 24,
+        "CountModels": 14,
+        "CentralTendency": 12,
+        "Multilevel": 10,
+        "Logistic": 10,
+        "Bayesian": 9,
+        "Regression": 4,
+        "Association": 3,
+        "Correlation": 2,
+        "ANOVA": 2,
+        "Probability": 1
+      },
+      "by_chapter": {
+        "ch11": 1,
+        "ch14": 99,
+        "ch15": 2,
+        "ch16": 1,
+        "ch17": 1,
+        "ch18": 2,
+        "ch3": 2,
+        "ch5": 1,
+        "ch6": 6
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "fauzi",
+      "reference": "Fauzi Ch 2",
+      "total": 105,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "KDFE": 35,
+        "MRL": 22,
+        "KernelInference": 15,
+        "QuantileEstimation": 15,
+        "KSTest": 7,
+        "Smoothed": 7,
+        "CvMTest": 4
+      },
+      "by_chapter": {
+        "ch1": 13,
+        "ch2": 18,
+        "ch3": 18,
+        "ch4": 25,
+        "ch5": 31
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "horowitz",
+      "reference": "Horowitz (2009), Ch 2",
+      "total": 105,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Semiparametric": 20,
+        "SingleIndex": 18,
+        "NPIV": 18,
+        "Transformation": 15,
+        "SemiparEcon": 11,
+        "PartialLinear": 10,
+        "BinaryResponse": 10,
+        "QuantileReg": 3
+      },
+      "by_chapter": {
+        "(other)": 11,
+        "ch1": 1,
+        "ch10": 1,
+        "ch11": 1,
+        "ch12": 2,
+        "ch13": 2,
+        "ch2": 23,
+        "ch3": 12,
+        "ch4": 12,
+        "ch5": 20,
+        "ch6": 16,
+        "ch7": 1,
+        "ch8": 1,
+        "ch9": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "density_estimation_for_statistics_and_data_analysis_silverma",
+      "reference": "Density estimation for statistics and data analysis -- Silverman, B  W -- Monographs on statistics and applied probabili",
+      "total": 104,
+      "verified": 104,
+      "verified_pct": 100.0,
+      "by_category": {
+        "Nonparametric": 52,
+        "GeneralStatistics": 30,
+        "CentralTendency": 7,
+        "Dispersion": 7,
+        "Probability": 6,
+        "Regression": 2
+      },
+      "by_chapter": {
+        "ch2": 65,
+        "ch3": 32,
+        "ch4": 1,
+        "ch5": 6
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "edward_frenkel_love_and_math_the_heart_of_hidden_reality",
+      "reference": "Edward Frenkel - Love and Math  The Heart of Hidden Reality",
+      "total": 100,
+      "verified": 100,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 89,
+        "CentralTendency": 5,
+        "PowerAndDesign": 4,
+        "Association": 1,
+        "Probability": 1
+      },
+      "by_chapter": {
+        "ch14": 1,
+        "ch15": 2,
+        "ch18": 69,
+        "ch2": 1,
+        "ch5": 3,
+        "ch7": 4,
+        "ch8": 14,
+        "ch9": 6
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "armstrong",
+      "reference": "Armstrong Ch 2",
+      "total": 85,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "SpatialVoting": 40,
+        "MDS": 11,
+        "IRT": 10,
+        "Wnominate": 9,
+        "Bayesian": 6,
+        "Unfolding": 5,
+        "OptimalClassification": 3,
+        "Polarization": 1
+      },
+      "by_chapter": {
+        "ch1": 6,
+        "ch10": 2,
+        "ch2": 12,
+        "ch3": 16,
+        "ch4": 6,
+        "ch5": 17,
+        "ch6": 19,
+        "ch7": 3,
+        "ch8": 3,
+        "ch9": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "wasserman",
+      "reference": "Wasserman (2004), Ch 7",
+      "total": 78,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Wasserman": 78
+      },
+      "by_chapter": {
+        "ch10": 7,
+        "ch11": 3,
+        "ch12": 2,
+        "ch13": 8,
+        "ch14": 1,
+        "ch16": 2,
+        "ch17": 4,
+        "ch19": 2,
+        "ch20": 6,
+        "ch21": 1,
+        "ch22": 2,
+        "ch23": 5,
+        "ch24": 3,
+        "ch3": 4,
+        "ch4": 6,
+        "ch5": 3,
+        "ch7": 5,
+        "ch8": 5,
+        "ch9": 9
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "hastie_esl",
+      "reference": "Hastie ESL Ch 3",
+      "total": 74,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "ESL": 74
+      },
+      "by_chapter": {
+        "ch10": 5,
+        "ch11": 6,
+        "ch12": 2,
+        "ch13": 2,
+        "ch14": 9,
+        "ch15": 1,
+        "ch17": 3,
+        "ch18": 3,
+        "ch3": 15,
+        "ch4": 5,
+        "ch5": 5,
+        "ch6": 4,
+        "ch7": 9,
+        "ch8": 3,
+        "ch9": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "kosorok",
+      "reference": "Kosorok (2008), Ch 2",
+      "total": 74,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Semiparametric": 19,
+        "EmpiricalProcess": 17,
+        "Convergence": 14,
+        "MEstimation": 8,
+        "ZEstimation": 7,
+        "Survival": 4,
+        "Bootstrapping": 3,
+        "AsymptoticTheory": 2
+      },
+      "by_chapter": {
+        "(other)": 13,
+        "ch1": 6,
+        "ch2": 30,
+        "ch3": 13,
+        "ch5": 2,
+        "ch6": 3,
+        "ch7": 3,
+        "ch8": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "molak",
+      "reference": "Molak Ch 1",
+      "total": 74,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Causal": 18,
+        "DAG": 14,
+        "MetaLearner": 10,
+        "InstrumentalVariable": 5,
+        "DoublyRobust": 5,
+        "LiNGAM": 5,
+        "CATEHTE": 4,
+        "DoCalculus": 3,
+        "NoTears": 3,
+        "BackdoorCriterion": 2,
+        "FrontdoorCriterion": 2,
+        "GES": 2,
+        "FCI": 1
+      },
+      "by_chapter": {
+        "ch1": 3,
+        "ch10": 11,
+        "ch11": 3,
+        "ch13": 10,
+        "ch14": 2,
+        "ch2": 6,
+        "ch4": 1,
+        "ch5": 9,
+        "ch6": 12,
+        "ch7": 7,
+        "ch8": 3,
+        "ch9": 7
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon",
+      "reference": "Jay Cummings - Proofs  A Long-Form Mathematics Textbook (The Long-Form Math Textbook Series)-Independently published (20",
+      "total": 63,
+      "verified": 63,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 55,
+        "CentralTendency": 8
+      },
+      "by_chapter": {
+        "ch7": 63
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "tmle50",
+      "reference": "Zheng & vdL (2011)",
+      "total": 61,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalML": 61
+      },
+      "by_chapter": {
+        "(other)": 58,
+        "ch12": 1,
+        "ch5": 1,
+        "ch6": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "boyd_convex",
+      "reference": "Boyd CVX Ch 4",
+      "total": 58,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Convex Optimization": 58
+      },
+      "by_chapter": {
+        "(other)": 1,
+        "ch11": 4,
+        "ch2": 5,
+        "ch3": 9,
+        "ch4": 12,
+        "ch5": 9,
+        "ch6": 7,
+        "ch8": 3,
+        "ch9": 8
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "drug_discovery",
+      "reference": "Rogers & Hahn (2010) ECFP",
+      "total": 55,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "DrugDiscovery": 55
+      },
+      "by_chapter": {
+        "(other)": 55
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "alammar",
+      "reference": "Alammar Ch 10, Triplet Loss section",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "EmbeddingTraining": 7,
+        "TextClassification": 4,
+        "RetrievalMetrics": 4,
+        "LLMFineTuning": 3,
+        "Embeddings": 3,
+        "Attention": 3,
+        "TopicModeling": 3,
+        "FineTuning": 2,
+        "SequenceLabeling": 2,
+        "Tokenization": 2,
+        "LLMSampling": 2,
+        "LLMPrompting": 2,
+        "LLMAgents": 2,
+        "RAG": 2,
+        "MultimodalLearning": 2,
+        "EmbeddingEval": 1,
+        "FewShotFineTuning": 1,
+        "LLMEval": 1,
+        "RLHF": 1,
+        "TextRepresentation": 1,
+        "WordEmbeddings": 1,
+        "LLMInference": 1,
+        "Clustering": 1,
+        "DimensionalityReduction": 1,
+        "VectorSearch": 1,
+        "VisionTransformers": 1
+      },
+      "by_chapter": {
+        "ch1": 1,
+        "ch10": 8,
+        "ch11": 5,
+        "ch12": 5,
+        "ch2": 6,
+        "ch3": 6,
+        "ch4": 4,
+        "ch5": 5,
+        "ch6": 2,
+        "ch7": 2,
+        "ch8": 7,
+        "ch9": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "alphago50",
+      "reference": "Silver et al (2017)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "DeepRL": 31,
+        "DeepLearning": 23
+      },
+      "by_chapter": {
+        "(other)": 54
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "genomics50",
+      "reference": "VanRaden (2008)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Genomics": 54
+      },
+      "by_chapter": {
+        "(other)": 54
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "psychometrics50",
+      "reference": "Cronbach (1951)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Psychometric": 54
+      },
+      "by_chapter": {
+        "(other)": 54
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "timeseries50",
+      "reference": "Box-Jenkins-Reinsel (1994)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "TimeSeries": 54
+      },
+      "by_chapter": {
+        "(other)": 54
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "vision50",
+      "reference": "Dosovitskiy et al (2020)",
+      "total": 54,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "DeepLearning": 54
+      },
+      "by_chapter": {
+        "(other)": 54
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "epidemiology50",
+      "reference": "Kermack-McKendrick (1927)",
+      "total": 53,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Epidemiology": 53
+      },
+      "by_chapter": {
+        "(other)": 53
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "infotheory50",
+      "reference": "Shannon (1948)",
+      "total": 53,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "InformationTheory": 53
+      },
+      "by_chapter": {
+        "(other)": 53
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "optim50",
+      "reference": "Cauchy (1847)",
+      "total": 53,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Optimization": 53
+      },
+      "by_chapter": {
+        "(other)": 53
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "survival50",
+      "reference": "Kalbfleisch-Prentice (2002)",
+      "total": 53,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Survival": 53
+      },
+      "by_chapter": {
+        "(other)": 53
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "bnp50",
+      "reference": "Pitman (2006)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "BayesianNonparametric": 52
+      },
+      "by_chapter": {
+        "(other)": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "bounds50",
+      "reference": "Manski (1990)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalBounds": 52
+      },
+      "by_chapter": {
+        "(other)": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "drdid50",
+      "reference": "Roth-Sant'Anna (2023)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalDID": 29,
+        "CausalML": 23
+      },
+      "by_chapter": {
+        "(other)": 51,
+        "§3": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "msm50",
+      "reference": "Robins (1999); Hernán et al (2000)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalLongitudinal": 52
+      },
+      "by_chapter": {
+        "(other)": 49,
+        "ch12": 1,
+        "ch13": 1,
+        "ch21": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "network50",
+      "reference": "Freeman (1979)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "NetworkScience": 52
+      },
+      "by_chapter": {
+        "(other)": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "spatial50",
+      "reference": "Moran (1950)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Spatial": 52
+      },
+      "by_chapter": {
+        "(other)": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "survey50",
+      "reference": "Horvitz-Thompson (1952)",
+      "total": 52,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Survey": 52
+      },
+      "by_chapter": {
+        "(other)": 52
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "bioinformatics50",
+      "reference": "Needleman-Wunsch (1970)",
+      "total": 51,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Bioinformatics": 51
+      },
+      "by_chapter": {
+        "(other)": 51
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "rl50",
+      "reference": "Puterman (1994); Bellman (1957)",
+      "total": 51,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "RL": 51
+      },
+      "by_chapter": {
+        "(other)": 51
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "robust50",
+      "reference": "Huber (1964)",
+      "total": 51,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Robust": 51
+      },
+      "by_chapter": {
+        "(other)": 51
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "anomaly50",
+      "reference": "Liu-Ting-Zhou (2008)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Anomaly": 37,
+        "ChangePoint": 13
+      },
+      "by_chapter": {
+        "(other)": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "bayesian50",
+      "reference": "Metropolis et al (1953); Hastings (1970)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Bayesian": 50
+      },
+      "by_chapter": {
+        "(other)": 47,
+        "ch16": 1,
+        "ch5": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "boot50",
+      "reference": "Efron (1979)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Bootstrap": 50
+      },
+      "by_chapter": {
+        "(other)": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "caus50",
+      "reference": "Abadie-Diamond-Hainmueller (2010)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Causal": 50
+      },
+      "by_chapter": {
+        "(other)": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "climate50",
+      "reference": "Coles (2001) book",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Climate": 50
+      },
+      "by_chapter": {
+        "(other)": 48,
+        "ch6": 1,
+        "ch7": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "coda50",
+      "reference": "Aitchison (1986) §4",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Compositional": 50
+      },
+      "by_chapter": {
+        "(other)": 46,
+        "§4": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "dp50",
+      "reference": "Dwork-McSherry-Nissim-Smith (2006)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "DP": 50
+      },
+      "by_chapter": {
+        "(other)": 49,
+        "§3": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "evt50",
+      "reference": "Coles (2001) §3",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "ExtremeValue": 50
+      },
+      "by_chapter": {
+        "(other)": 44,
+        "§3": 4,
+        "§4": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "fda50",
+      "reference": "de Boor (1978)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "FDA": 50
+      },
+      "by_chapter": {
+        "(other)": 49,
+        "ch13": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "forecast50",
+      "reference": "Box-Jenkins (1970)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Forecast": 50
+      },
+      "by_chapter": {
+        "(other)": 44,
+        "§11": 3,
+        "§3": 2,
+        "§9": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "gnn50",
+      "reference": "Gilmer et al (2017) MPNN",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "GNN": 50
+      },
+      "by_chapter": {
+        "(other)": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "ma50",
+      "reference": "Borenstein et al. (2009) §11",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "MetaAnalysis": 50
+      },
+      "by_chapter": {
+        "(other)": 49,
+        "§11": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "mediation50",
+      "reference": "Baron-Kenny (1986)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Mediation": 39,
+        "Sensitivity": 11
+      },
+      "by_chapter": {
+        "(other)": 48,
+        "ch2": 1,
+        "§6": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "nlp50",
+      "reference": "Sennrich et al (2016) BPE",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "NLP": 50
+      },
+      "by_chapter": {
+        "(other)": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "ot50",
+      "reference": "Rubner-Tomasi-Guibas (2000)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "OptimalTransport": 50
+      },
+      "by_chapter": {
+        "(other)": 49,
+        "§4": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "paper90_sweep",
+      "reference": "Tóth & vdL (2014); Ogburn-Rotnitzky-Robins (2015)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "DeepRL": 8,
+        "DeepLearning": 8,
+        "CausalML": 7,
+        "CausalLongitudinal": 5,
+        "BayesianNonparametric": 5,
+        "Compression": 5,
+        "Security": 5,
+        "CausalBounds": 4,
+        "CausalDID": 3
+      },
+      "by_chapter": {
+        "(other)": 49,
+        "§1": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "recsys50",
+      "reference": "Resnick et al (1994) GroupLens",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "RecSys": 50
+      },
+      "by_chapter": {
+        "(other)": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "sgt50",
+      "reference": "Chung (1997)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "SpectralGraph": 50
+      },
+      "by_chapter": {
+        "(other)": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "symb50",
+      "reference": "SymPy team (2017)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Symbolic": 50
+      },
+      "by_chapter": {
+        "(other)": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "vol50",
+      "reference": "Bollerslev (1986)",
+      "total": 50,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Volatility": 50
+      },
+      "by_chapter": {
+        "(other)": 50
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "treatment_effects_1",
+      "reference": "Treatment effects 1",
+      "total": 49,
+      "verified": 49,
+      "verified_pct": 100.0,
+      "by_category": {
+        "Regression": 20,
+        "GeneralStatistics": 13,
+        "CausalInference": 7,
+        "Dispersion": 6,
+        "CentralTendency": 3
+      },
+      "by_chapter": {
+        "ch1": 49
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "christopher_gandrud_author_reproducible_research_with_r_and_",
+      "reference": "Christopher Gandrud (Author) - Reproducible Research with R and RStudio",
+      "total": 47,
+      "verified": 47,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 37,
+        "CentralTendency": 9,
+        "Regression": 1
+      },
+      "by_chapter": {
+        "ch1": 1,
+        "ch2": 1,
+        "ch3": 1,
+        "ch4": 42,
+        "ch5": 1,
+        "ch8": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "franz_kronthaler_statistics_applied_with_the_r_commander_dat",
+      "reference": "Franz Kronthaler - Statistics Applied with the R Commander  Data Analysis Is (Not) an Art-Springer (2024)",
+      "total": 43,
+      "verified": 43,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 27,
+        "Dispersion": 7,
+        "CentralTendency": 3,
+        "Correlation": 3,
+        "MetaAnalysis": 2,
+        "Probability": 1
+      },
+      "by_chapter": {
+        "ch3": 43
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "legal_ontology",
+      "reference": "Legal Ontology",
+      "total": 42,
+      "verified": 42,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 32,
+        "CentralTendency": 8,
+        "CausalInference": 2
+      },
+      "by_chapter": {
+        "ch10": 39,
+        "ch12": 2,
+        "ch13": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "spatial_data_analysis_with_r",
+      "reference": "spatial data analysis with R",
+      "total": 39,
+      "verified": 39,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 23,
+        "Spatial": 8,
+        "Regression": 4,
+        "Correlation": 2,
+        "CentralTendency": 2
+      },
+      "by_chapter": {
+        "ch2": 8,
+        "ch3": 4,
+        "ch4": 6,
+        "ch5": 2,
+        "ch6": 3,
+        "ch7": 3,
+        "ch8": 13
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "bayesian_diagnostics",
+      "reference": "Watanabe (2010); Gelman et al. BDA3 §7",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "BayesianDiagnostic": 30
+      },
+      "by_chapter": {
+        "(other)": 26,
+        "§6": 2,
+        "§7": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "causal_modern",
+      "reference": "Card-Krueger (1994); Bertrand-Duflo-Mullainathan (2004)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalDID": 10,
+        "CausalSyntheticControl": 5,
+        "CausalRDD": 5,
+        "CausalML": 5,
+        "CausalSensitivity": 5
+      },
+      "by_chapter": {
+        "(other)": 29,
+        "§4": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "copulas_networks",
+      "reference": "Sklar (1959); Nelsen (2006) §4",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Copula": 15,
+        "NetworkCentrality": 8,
+        "NetworkStructure": 7
+      },
+      "by_chapter": {
+        "(other)": 26,
+        "§4": 2,
+        "§5": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "dlops",
+      "reference": "Vaswani et al. (2017)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "DLAttention": 9,
+        "DLActivation": 6,
+        "DLPositional": 5,
+        "DLNorm": 4,
+        "DLMoE": 3,
+        "DLSSM": 3
+      },
+      "by_chapter": {
+        "(other)": 30
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron_ch5_8",
+      "reference": "Géron Ch 5, Eq 5-1 (Gini Impurity)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Ensembles": 9,
+        "DecisionTrees": 6,
+        "DimensionalityReduction": 6,
+        "Clustering": 6,
+        "ClusteringSelection": 2,
+        "AnomalyDetection": 1
+      },
+      "by_chapter": {
+        "ch5": 6,
+        "ch6": 9,
+        "ch7": 6,
+        "ch8": 9
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "infotheory_dp",
+      "reference": "Shannon (1948)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "DifferentialPrivacy": 18,
+        "InformationTheory": 12
+      },
+      "by_chapter": {
+        "(other)": 27,
+        "§2": 1,
+        "§3": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "irt",
+      "reference": "Rasch (1960); Birnbaum (1968)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "IRTPolytomous": 5,
+        "IRTEquating": 5,
+        "IRTUnidim": 4,
+        "IRTDIF": 4,
+        "IRTInfo": 4,
+        "IRTAbility": 4,
+        "IRTMulti": 3,
+        "IRTDim": 1
+      },
+      "by_chapter": {
+        "(other)": 27,
+        "§14": 1,
+        "§3": 1,
+        "§4": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "mediation",
+      "reference": "Sobel (1982)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalMediation": 18,
+        "Mediation": 12
+      },
+      "by_chapter": {
+        "(other)": 27,
+        "ch3": 1,
+        "§4": 1,
+        "§5": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "multilevel",
+      "reference": "Shrout & Fleiss (1979)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "MultilevelICC": 9,
+        "MultilevelRandom": 7,
+        "MultilevelR2": 5,
+        "MultilevelFit": 4,
+        "MultilevelCenter": 3,
+        "MultilevelTest": 2
+      },
+      "by_chapter": {
+        "(other)": 25,
+        "§3": 1,
+        "§4": 1,
+        "§5": 1,
+        "§7": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "robust",
+      "reference": "Huber (1964)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "RobustRegression": 11,
+        "RobustWeight": 7,
+        "RobustInfluence": 6,
+        "RobustScale": 3,
+        "RobustCovariance": 3
+      },
+      "by_chapter": {
+        "(other)": 30
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "spatial",
+      "reference": "Anselin (1995)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "SpatialAutocorrelation": 10,
+        "SpatialGeostatistics": 8,
+        "SpatialPointProcess": 6,
+        "SpatialEconometrics": 6
+      },
+      "by_chapter": {
+        "(other)": 21,
+        "§2": 6,
+        "§22": 1,
+        "§3": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "survey",
+      "reference": "Kish (1965)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "SurveyDesign": 9,
+        "SurveyEstimator": 9,
+        "SurveyVariance": 5,
+        "SurveyCalibration": 3,
+        "SurveyAdjust": 3,
+        "SurveyCausal": 1
+      },
+      "by_chapter": {
+        "(other)": 11,
+        "§10": 1,
+        "§15": 2,
+        "§2": 1,
+        "§3": 2,
+        "§4": 1,
+        "§5": 3,
+        "§6": 2,
+        "§7": 2,
+        "§8": 3,
+        "§9": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "survival_residuals",
+      "reference": "Therneau, Grambsch, Fleming (1990)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "SurvivalFrailty": 6,
+        "SurvivalResidual": 5,
+        "SurvivalCompetingRisk": 5,
+        "SurvivalRecurrent": 3,
+        "SurvivalParametric": 2,
+        "SurvivalSummary": 2,
+        "SurvivalEstimation": 2,
+        "SurvivalAdvanced": 2,
+        "SurvivalMultistate": 1,
+        "SurvivalCausal": 1,
+        "SurvivalIPCW": 1
+      },
+      "by_chapter": {
+        "(other)": 26,
+        "ch5": 1,
+        "§2": 1,
+        "§5": 1,
+        "§9": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "timeseries",
+      "reference": "Phillips & Perron (1988)",
+      "total": 30,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "TimeSeriesGARCH": 7,
+        "TimeSeriesCointegration": 7,
+        "TimeSeriesBreaks": 5,
+        "TimeSeriesUnitRoot": 3,
+        "TimeSeriesDiagnostic": 3,
+        "TimeSeriesHAC": 3,
+        "TimeSeriesOrderSelection": 2
+      },
+      "by_chapter": {
+        "(other)": 29,
+        "§22": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron_ch9_11",
+      "reference": "Géron Ch 9, Threshold Logic Unit section",
+      "total": 28,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Optimization": 8,
+        "NeuralNetworks": 7,
+        "LearningRateSchedule": 3,
+        "Regularization": 3,
+        "ActivationFunction": 2,
+        "Initialization": 2,
+        "NormalizationLayers": 2,
+        "Autodiff": 1
+      },
+      "by_chapter": {
+        "ch10": 3,
+        "ch11": 17,
+        "ch9": 8
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "joseph_ch13_20",
+      "reference": "Joseph Ch 16, N-HiTS section",
+      "total": 26,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "DLForecasting": 7,
+        "ForecastMetrics": 5,
+        "ProbabilisticForecast": 3,
+        "MultiStepForecast": 3,
+        "TimeSeriesValidation": 3,
+        "ConformalPrediction": 2,
+        "HierarchicalForecast": 2,
+        "IntermittentDemand": 1
+      },
+      "by_chapter": {
+        "ch16": 7,
+        "ch17": 8,
+        "ch18": 3,
+        "ch19": 5,
+        "ch20": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "neighborhood_structures_and_crime_a_spatial_analysis_george_",
+      "reference": "Neighborhood Structures And Crime A Spatial Analysis George Kikuchi",
+      "total": 25,
+      "verified": 25,
+      "verified_pct": 100.0,
+      "by_category": {
+        "Spatial": 8,
+        "Regression": 5,
+        "GeneralStatistics": 4,
+        "Multilevel": 3,
+        "CentralTendency": 3,
+        "Association": 2
+      },
+      "by_chapter": {
+        "ch2": 22,
+        "ch3": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron_ch12_14",
+      "reference": "Géron Ch 12, Convolutional Layers section",
+      "total": 24,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CNN": 8,
+        "RNN": 7,
+        "NLP": 6,
+        "ObjectDetection": 1,
+        "TimeSeries": 1,
+        "Attention": 1
+      },
+      "by_chapter": {
+        "ch12": 9,
+        "ch13": 7,
+        "ch14": 8
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "kamath_ch1_2",
+      "reference": "Kamath Ch 1, N-gram Language Models section",
+      "total": 23,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "MixtureOfExperts": 4,
+        "LLMPretraining": 4,
+        "WordEmbeddings": 3,
+        "ScalingLaws": 3,
+        "PositionalEncodings": 2,
+        "Transformers": 2,
+        "Tokenization": 2,
+        "LanguageModels": 1,
+        "NormalizationLayers": 1,
+        "ActivationFunction": 1
+      },
+      "by_chapter": {
+        "ch1": 7,
+        "ch2": 16
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron_ch19_appendix",
+      "reference": "Géron Ch 19, Discounted Return section",
+      "total": 22,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "ReinforcementLearning": 8,
+        "DeepRL": 6,
+        "Autodiff": 4,
+        "Quantization": 4
+      },
+      "by_chapter": {
+        "(other)": 8,
+        "ch19": 14
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "kamath_ch3_4",
+      "reference": "Kamath Ch 3, In-Context Learning section",
+      "total": 22,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "LLMPrompting": 9,
+        "PEFT": 7,
+        "Quantization": 3,
+        "LLMSampling": 2,
+        "LLMFineTuning": 1
+      },
+      "by_chapter": {
+        "ch3": 6,
+        "ch4": 16
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "kamath_ch7_8",
+      "reference": "Kamath Ch 7, Dense Retrieval (DPR) section",
+      "total": 21,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "RAG": 9,
+        "LLMEval": 8,
+        "RAGEval": 3,
+        "LLMInference": 1
+      },
+      "by_chapter": {
+        "ch7": 12,
+        "ch8": 9
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "stochastic_physics_crime",
+      "reference": "D'Orsogna & Perc (2015) Statistical physics of crime: A review",
+      "total": 21,
+      "verified": 21,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStochastic": 18,
+        "Spatial": 2,
+        "Stochastic": 1
+      },
+      "by_chapter": {
+        "§2": 9,
+        "§3": 10,
+        "§6": 2
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "turboquant",
+      "reference": "Zandieh et al. 2024 Eq 3 (QJL definition 3.1)",
+      "total": 21,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Quantization": 21
+      },
+      "by_chapter": {
+        "(other)": 21
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "deep_learning",
+      "reference": "Geron (2026), Ch 10",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "DeepLearning": 20
+      },
+      "by_chapter": {
+        "(other)": 15,
+        "ch10": 2,
+        "ch14": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron_ch4",
+      "reference": "Géron Ch 4, Eq 4-4 (Normal Equation)",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Classification": 7,
+        "RegularizedRegression": 4,
+        "Optimization": 3,
+        "LinearRegression": 2,
+        "FeatureEngineering": 1,
+        "ModelDiagnostics": 1,
+        "Regularization": 1,
+        "ActivationFunction": 1
+      },
+      "by_chapter": {
+        "ch4": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "gibbons_remaining",
+      "reference": "Gibbons Ch 2.11",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "NonparametricInference": 20
+      },
+      "by_chapter": {
+        "ch10": 2,
+        "ch12": 2,
+        "ch14": 2,
+        "ch2": 4,
+        "ch3": 1,
+        "ch5": 4,
+        "ch6": 1,
+        "ch8": 3,
+        "ch9": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "joseph_ch1_7",
+      "reference": "Joseph Ch 4, Naive Forecast baseline",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "FeatureEngineering": 4,
+        "TimeSeriesBaseline": 3,
+        "ExponentialSmoothing": 3,
+        "TimeSeriesAnalysis": 3,
+        "TargetTransform": 3,
+        "TimeSeriesProcessing": 2,
+        "TimeSeriesDecomp": 1,
+        "TimeSeriesML": 1
+      },
+      "by_chapter": {
+        "ch2": 2,
+        "ch3": 4,
+        "ch4": 6,
+        "ch5": 1,
+        "ch6": 4,
+        "ch7": 3
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "llm_arch",
+      "reference": "Sennrich et al. (2016)",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "LLMArchitecture": 20
+      },
+      "by_chapter": {
+        "(other)": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "missing_stats",
+      "reference": "Efron & Tibshirani (1993)",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "NumericalMethods": 7,
+        "NonparametricRegression": 5,
+        "Resampling": 3,
+        "ExtremeValue": 3,
+        "DependenceModeling": 2
+      },
+      "by_chapter": {
+        "(other)": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "ml_foundations",
+      "reference": "Geron (2026), Ch 4",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "MLFoundation": 20
+      },
+      "by_chapter": {
+        "(other)": 4,
+        "ch2": 1,
+        "ch3": 2,
+        "ch4": 6,
+        "ch5": 2,
+        "ch6": 1,
+        "ch7": 2,
+        "ch8": 1,
+        "ch9": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "time_series_advanced",
+      "reference": "Bollerslev (1986)",
+      "total": 20,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "TimeSeries": 20
+      },
+      "by_chapter": {
+        "(other)": 20
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "from_impact_to_action_final_report_into_anti_black_racism_by",
+      "reference": "From Impact to Action- Final report into anti-Black racism by the Toronto Police Service",
+      "total": 19,
+      "verified": 19,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 13,
+        "PowerAndDesign": 5,
+        "CentralTendency": 1
+      },
+      "by_chapter": {
+        "ch6": 1,
+        "ch7": 2,
+        "ch8": 2,
+        "ch9": 14
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "kamath_ch6_9_10",
+      "reference": "Kamath Ch 6, FactScore section",
+      "total": 19,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "MultimodalLearning": 6,
+        "BiasEval": 3,
+        "StateSpaceModels": 3,
+        "PrivacyEval": 2,
+        "LLMEval": 1,
+        "ToxicityEval": 1,
+        "PrivacyMitigation": 1,
+        "LongContext": 1,
+        "LLMInference": 1
+      },
+      "by_chapter": {
+        "ch10": 5,
+        "ch6": 8,
+        "ch9": 6
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "burkov",
+      "reference": "Burkov Ch 1, Dot Product section",
+      "total": 18,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "LanguageModels": 6,
+        "LinearAlgebra": 3,
+        "TextRepresentation": 2,
+        "WordEmbeddings": 2,
+        "Autodiff": 1,
+        "LMEval": 1,
+        "RNN": 1,
+        "Transformers": 1,
+        "LLMSampling": 1
+      },
+      "by_chapter": {
+        "ch1": 4,
+        "ch2": 11,
+        "ch3": 1,
+        "ch4": 1,
+        "ch5": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron_ch16_17",
+      "reference": "Géron Ch 16, Vision Transformer (ViT) section",
+      "total": 18,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "VisionTransformers": 5,
+        "MultimodalLearning": 5,
+        "SelfSupervised": 2,
+        "Quantization": 2,
+        "ModelCompression": 2,
+        "Attention": 1,
+        "LLMInference": 1
+      },
+      "by_chapter": {
+        "ch16": 12,
+        "ch17": 6
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron_ch15",
+      "reference": "Géron Ch 15, Positional Encodings section",
+      "total": 17,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Transformers": 4,
+        "Attention": 4,
+        "LLMPretraining": 3,
+        "LLMFineTuning": 3,
+        "LLMSampling": 2,
+        "LLMPrompting": 1
+      },
+      "by_chapter": {
+        "ch15": 17
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron_ch18",
+      "reference": "Géron Ch 18, Autoencoders section",
+      "total": 17,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Generative": 17
+      },
+      "by_chapter": {
+        "ch18": 17
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "burkov_lm",
+      "reference": "Burkov LM (2025), Ch 1, Eq 1.1, p. 20",
+      "total": 16,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "Information": 4,
+        "Optimization": 3,
+        "Statistical": 2,
+        "LinearAlgebra": 2,
+        "Transformer": 2,
+        "LanguageModel": 2,
+        "Probability": 1
+      },
+      "by_chapter": {
+        "ch1": 11,
+        "ch2": 5
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "kamath_ch5",
+      "reference": "Kamath Ch 5, Bradley-Terry Preference Model section",
+      "total": 14,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "PreferenceLearning": 5,
+        "RLHF": 5,
+        "AIAlignment": 4
+      },
+      "by_chapter": {
+        "ch5": 14
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "crimstat_beginner",
+      "reference": "Beginner's Guide to Statistics for Criminology and Criminal Justice using R (Wooditch et al., Springer 2021)",
+      "total": 13,
+      "verified": 13,
+      "verified_pct": 100.0,
+      "by_category": {
+        "CentralTendency": 5,
+        "GeneralStatistics": 4,
+        "Regression": 2,
+        "CountModels": 1,
+        "Association": 1
+      },
+      "by_chapter": {
+        "ch10": 2,
+        "ch12": 1,
+        "ch13": 1,
+        "ch14": 2,
+        "ch15": 4,
+        "ch5": 1,
+        "ch7": 2
+      },
+      "wired_to_callable": 1
+    },
+    {
+      "book": "jason_brownlee_machine_learning_mastery_with_r",
+      "reference": "Jason Brownlee - Machine Learning Mastery with R",
+      "total": 12,
+      "verified": 12,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 10,
+        "Probability": 1,
+        "Spatial": 1
+      },
+      "by_chapter": {
+        "ch1": 1,
+        "ch5": 11
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "law_and_economics_6th_edition_robert_b_cooter_thomas_ulen_pe",
+      "reference": "Law and Economics, 6th Edition -- Robert B. Cooter, Thomas Ulen -- Pearson Series in Economics, 6th Edition, 2011 -- Pre",
+      "total": 12,
+      "verified": 12,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 9,
+        "Probability": 3
+      },
+      "by_chapter": {
+        "ch10": 7,
+        "ch3": 1,
+        "ch4": 1,
+        "ch6": 2,
+        "ch9": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "cornelius_llewellyn_j_harrington_donna_a_social_justice_appr",
+      "reference": "Cornelius, Llewellyn J., Harrington, Donna - A Social Justice Approach to Survey Design and Analysis (2015)",
+      "total": 11,
+      "verified": 11,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 11
+      },
+      "by_chapter": {
+        "ch6": 7,
+        "ch7": 4
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "geron_ch4_eq1_24",
+      "reference": "Geron (2026), Ch 4, Eq 4-1, p. 136",
+      "total": 9,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "LinearRegression": 2,
+        "Regularization": 2,
+        "SoftmaxRegression": 2,
+        "NormalEquation": 1,
+        "GradientDescent": 1,
+        "LogisticRegression": 1
+      },
+      "by_chapter": {
+        "ch4": 9
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "bounds",
+      "reference": "Manski (1990); Manski (2003) Partial Identification",
+      "total": 8,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalBounds": 8
+      },
+      "by_chapter": {
+        "(other)": 8
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "bnp",
+      "reference": "Antoniak (1974); Escobar-West (1995); Neal (2000)",
+      "total": 7,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "BayesianNonparametric": 7
+      },
+      "by_chapter": {
+        "(other)": 6,
+        "ch3": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "drdid_csforest",
+      "reference": "Sant'Anna & Zhao (2020) JoE",
+      "total": 6,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalDID": 3,
+        "CausalML": 3
+      },
+      "by_chapter": {
+        "(other)": 6
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "msm_gcomp",
+      "reference": "Robins (2000); Robins-Hernán-Brumback (2000)",
+      "total": 6,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalLongitudinal": 6
+      },
+      "by_chapter": {
+        "(other)": 6
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "tmle_extensions",
+      "reference": "Moore & van der Laan (2009); Stitelman & van der Laan (2010)",
+      "total": 5,
+      "verified": 0,
+      "verified_pct": 0.0,
+      "by_category": {
+        "CausalML": 5
+      },
+      "by_chapter": {
+        "(other)": 5
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "benjamin_j_lovett_practical_psychometrics_a_guide_for_test_u",
+      "reference": "Benjamin J. Lovett - Practical Psychometrics  A Guide for Test Users",
+      "total": 2,
+      "verified": 2,
+      "verified_pct": 100.0,
+      "by_category": {
+        "Correlation": 1,
+        "GeneralStatistics": 1
+      },
+      "by_chapter": {
+        "ch2": 1,
+        "ch6": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "kent_roach_benjamin_l_berger_emma_cunliffe_asad_g_kiyani_cri",
+      "reference": "Kent Roach, Benjamin L. Berger, Emma Cunliffe, Asad G. Kiyani - Criminal law and procedure   cases and materials 12th ed",
+      "total": 1,
+      "verified": 1,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 1
+      },
+      "by_chapter": {
+        "ch7": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "misconduct_mismanagement_independent_oversight_accountabilit",
+      "reference": "Misconduct Mismanagement: Independent Oversight, Accountability, and the Rule of Law by Jihyun Kwon",
+      "total": 1,
+      "verified": 1,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 1
+      },
+      "by_chapter": {
+        "ch4": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "policing_the_police_public_perceptions_of_civilian_oversight",
+      "reference": "Policing the Police: Public Perceptions of Civilian Oversight in Canada",
+      "total": 1,
+      "verified": 1,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 1
+      },
+      "by_chapter": {
+        "ch1": 1
+      },
+      "wired_to_callable": 0
+    },
+    {
+      "book": "ssc2009_cbabyak",
+      "reference": "SSC2009 CBabyak",
+      "total": 1,
+      "verified": 1,
+      "verified_pct": 100.0,
+      "by_category": {
+        "GeneralStatistics": 1
+      },
+      "by_chapter": {
+        "ch2": 1
+      },
+      "wired_to_callable": 0
+    }
+  ]
+}

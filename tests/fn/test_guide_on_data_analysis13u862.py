@@ -1,0 +1,19 @@
+"""Tests for guide_on_data_analysis13u862.guide_on_data_analysis_chapter_13_unnumbered_862."""
+import numpy as np
+import pytest
+from moirais.fn.guide_on_data_analysis13u862 import guide_on_data_analysis_chapter_13_unnumbered_862
+
+
+def test_guide_on_data_analysis13u862_basic():
+    """Test basic functionality."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = guide_on_data_analysis_chapter_13_unnumbered_862(x)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_guide_on_data_analysis13u862_edge():
+    """Test edge cases."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = guide_on_data_analysis_chapter_13_unnumbered_862(x)
+    assert isinstance(result, dict)

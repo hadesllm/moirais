@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use MOIRAIS in your research, please cite the software DOI together with the package paper and (where applicable) the DLRM framework paper."
+title: "MOIRAIS: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation"
+authors:
+  - family-names: "Ruhela"
+    given-names: "Vansh Singh"
+    orcid: "https://orcid.org/0009-0004-1750-3592"
+version: "0.1.0"
+date-released: "2026-05-09"
+url: "https://github.com/hadesllm/moirais"
+repository-code: "https://github.com/hadesllm/moirais"
+license: "GPL-2.0-only"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20096350"
+    description: "MOIRAIS package paper (preprint)."
+preferred-citation:
+  type: generic
+  title: "MOIRAIS: A Multi-Domain Scientific Computing Toolkit for Observational Inference, with Sociolegal, Signal-Processing, Cryptographic, and Spatial-Statistics Modules"
+  authors:
+    - family-names: "Ruhela"
+      given-names: "Vansh Singh"
+      orcid: "https://orcid.org/0009-0004-1750-3592"
+  year: "2026"
+  doi: "10.5281/zenodo.20096350"
+  url: "https://doi.org/10.5281/zenodo.20096350"
+references:
+  - type: generic
+    title: "The DLRM Framework: A Multi-Source Mathematical Foundation for Canadian Carceral, Police, and Oversight Data, Implemented as RF Modules in MOIRAIS"
+    authors:
+      - family-names: "Ruhela"
+        given-names: "Vansh Singh"
+        orcid: "https://orcid.org/0009-0004-1750-3592"
+    year: "2026"
+    doi: "10.5281/zenodo.20096075"
+    url: "https://doi.org/10.5281/zenodo.20096075"

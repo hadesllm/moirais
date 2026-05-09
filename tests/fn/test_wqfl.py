@@ -1,0 +1,20 @@
+"""Test wqfl."""
+import numpy as np
+import pytest
+from moirais.fn.wqfl import wqfl
+
+
+def test_wqfl_basic():
+    rng = np.random.default_rng(42)
+    data = rng.uniform(0, 14, 20)
+    coords = rng.uniform(0, 100, (20, 2))
+    r = wqfl(data=data, coords=coords, n=20)
+    assert r.value is not None
+
+
+def test_wqfl_description():
+    rng = np.random.default_rng(42)
+    data = rng.uniform(0, 14, 20)
+    coords = rng.uniform(0, 100, (20, 2))
+    r = wqfl(data=data, coords=coords, n=20)
+    assert r.name

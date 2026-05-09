@@ -1,0 +1,25 @@
+"""Tests for gpsfn.gp_sparse_inducing."""
+import numpy as np
+import pytest
+from moirais.fn.gpsfn import gp_sparse_inducing
+
+
+def test_gpsfn_basic():
+    """Test basic functionality."""
+    X = np.random.default_rng(42).normal(0, 1, (100, 5))
+    y = np.random.default_rng(43).normal(0, 1, 100)
+    X_test = np.random.default_rng(43).normal(0, 1, 30)
+    inducing = np.random.default_rng(42).normal(0, 1, 100)
+    result = gp_sparse_inducing(X, y, X_test, inducing)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_gpsfn_edge():
+    """Test edge cases."""
+    X = np.random.default_rng(42).normal(0, 1, (100, 5))
+    y = np.random.default_rng(43).normal(0, 1, 100)
+    X_test = np.random.default_rng(43).normal(0, 1, 30)
+    inducing = np.random.default_rng(42).normal(0, 1, 100)
+    result = gp_sparse_inducing(X, y, X_test, inducing)
+    assert isinstance(result, dict)

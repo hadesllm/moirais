@@ -1,0 +1,52 @@
+{
+  "fn": "pt",
+  "callable": "moirais.fn.pt.pt",
+  "source": "scipy.stats.t.cdf",
+  "cases": [
+    {
+      "inputs": {
+        "x": 0.0,
+        "df": 1
+      },
+      "expected": 0.5,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 1.96,
+        "df": 30
+      },
+      "expected": 0.9703288435519748,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": -1.96,
+        "df": 30
+      },
+      "expected": 0.029671156448025246,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 2.776,
+        "df": 4
+      },
+      "expected": 0.9749886108400118,
+      "rtol": 1e-10,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 0.5,
+        "df": 100
+      },
+      "expected": 0.6909132170845567,
+      "rtol": 1e-12,
+      "atol": 0.0
+    }
+  ]
+}

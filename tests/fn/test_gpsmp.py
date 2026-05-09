@@ -1,0 +1,31 @@
+"""Tests for gpsmp."""
+import numpy as np
+import pytest
+from moirais.fn.gpsmp import gpsmp
+
+
+def test_gpsmp_basic():
+    result = gpsmp()
+    assert hasattr(result, "statistic")
+    assert isinstance(result.statistic, float)
+    assert result.name == "GP-PriorSample"
+
+
+def test_gpsmp_with_data():
+    rng = np.random.default_rng(0)
+    data = rng.standard_normal(20)
+    coords = rng.uniform(0, 1, size=(20, 2))
+    result = gpsmp(data=data, coords=coords, n=20, seed=0)
+    assert result.statistic == pytest.approx(float(np.mean(data)))
+    assert result.extra["n_points"] == 20
+
+
+def test_gpsmp_no_data():
+    result = gpsmp(n=50, seed=7)
+    assert result.statistic is not None
+    assert result.extra["n_points"] == 50
+
+
+def test_gpsmp_alias():
+    from moirais.fn.gpsmp import gpsmp
+    assert gpsmp is gpsmp

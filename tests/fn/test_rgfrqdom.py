@@ -1,0 +1,21 @@
+"""Tests for rgfrqdom.rangayyan_freq_domain_feat."""
+import numpy as np
+import pytest
+from moirais.fn.rgfrqdom import rangayyan_freq_domain_feat
+
+
+def test_rgfrqdom_basic():
+    """Test basic functionality."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    fs = 100.0
+    result = rangayyan_freq_domain_feat(x, fs)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_rgfrqdom_edge():
+    """Test edge cases."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    fs = 100.0
+    result = rangayyan_freq_domain_feat(x, fs)
+    assert isinstance(result, dict)

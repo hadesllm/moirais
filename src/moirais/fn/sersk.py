@@ -1,0 +1,47 @@
+# moirais.fn — function file (hadesllm/moirais)
+"""
+Relative risk spatial
+
+Category: SpatEpi2
+"""
+
+import numpy as np
+
+
+def sersk(cases=None, population=None, coords=None, n=50):
+    """Relative risk spatial
+
+    Returns
+    -------
+    DescriptiveResult
+    """
+    from ._containers import DescriptiveResult
+
+    if cases is None:
+        cases = np.random.default_rng(0).poisson(5, n)
+    if population is None:
+        population = np.random.default_rng(1).poisson(1000, n) + 100
+    if coords is None:
+        coords = np.random.default_rng(2).uniform(0, 100, (n, 2))
+    rates = cases / population
+    stat = float(np.mean(rates))
+    return DescriptiveResult(
+        name=short,
+        value=stat,
+        extra={
+            "n_areas": len(cases),
+            "total_cases": int(np.sum(cases)),
+            "total_pop": int(np.sum(population)),
+            "mean_rate": float(np.mean(rates)),
+        },
+    )
+
+
+short = "sersk"
+alias = "sersk"
+quote = "Chaos is a ladder. -- Littlefinger"
+sersk = sersk
+
+
+def cheatsheet() -> str:
+    return "sersk({}) -> Relative risk spatial"

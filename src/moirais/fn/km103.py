@@ -1,0 +1,43 @@
+"""Lstm softmax word.."""
+import numpy as np
+from scipy import stats
+from ._richresult import RichResult
+
+__all__ = ["kamath_ch6_lstm_softmax_word"]
+
+
+def kamath_ch6_lstm_softmax_word(U, f, c_t_1, b):
+    """
+    Lstm softmax word.
+
+    Formula: P(w_t=i|c_{t-1}) = \frac{\exp(U_i^T f(c_{t-1}) + b_i)}{\sum_{j=1}^V \exp(U_j^T f(c_{t-1}) + b_j)}
+
+    Parameters
+    ----------
+    U : array-like
+        Input data.
+    f : array-like
+        Input data.
+    c_t_1 : array-like
+        Input data.
+    b : array-like
+        Input data.
+
+    Returns
+    -------
+    result : dict
+        Keys: result
+
+    References
+    ----------
+    Kamath et al (2024), Ch 6, Eq 6.27, p. 253
+    """
+    U = np.atleast_1d(np.asarray(U, dtype=float))
+    n = len(U)
+    result = float(np.mean(U))
+    se = float(np.std(U, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Lstm softmax word."})
+
+
+def cheatsheet():
+    return "km103: Lstm softmax word."

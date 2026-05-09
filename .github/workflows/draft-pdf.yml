@@ -1,0 +1,39 @@
+name: Draft JOSS paper PDF
+
+# Render paper.md (the JOSS submission) to PDF on
+# every push that touches the paper or its bibliography. The rendered
+# PDF is uploaded as a workflow artifact so we can preview the JOSS
+# layout before submitting.
+
+on:
+  push:
+    paths:
+      - 'paper.md'
+      - 'paper.bib'
+      - '.github/workflows/draft-pdf.yml'
+  pull_request:
+    paths:
+      - 'paper.md'
+      - 'paper.bib'
+  workflow_dispatch:
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    name: Render JOSS paper preview
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build draft PDF
+        uses: openjournals/openjournals-draft-action@master
+        with:
+          journal: joss
+          paper-path: paper.md
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: joss-paper-pdf
+          path: paper.pdf
+          if-no-files-found: error

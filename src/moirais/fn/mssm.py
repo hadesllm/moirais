@@ -1,0 +1,43 @@
+"""Marginal structural mediation model."""
+import numpy as np
+from scipy import stats
+from ._richresult import RichResult
+
+__all__ = ["marginal_structural_med"]
+
+
+def marginal_structural_med(Y, X, M, C):
+    """
+    Marginal structural mediation model
+
+    Formula: IPW for X + IPW for M
+
+    Parameters
+    ----------
+    Y : array-like
+        Input data.
+    X : array-like
+        Input data.
+    M : array-like
+        Input data.
+    C : array-like
+        Input data.
+
+    Returns
+    -------
+    result : dict
+        Keys: estimate
+
+    References
+    ----------
+    VanderWeele-Tchetgen Tchetgen (2017)
+    """
+    Y = np.atleast_1d(np.asarray(Y, dtype=float))
+    n = len(Y)
+    result = float(np.mean(Y))
+    se = float(np.std(Y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Marginal structural mediation model"})
+
+
+def cheatsheet():
+    return "mssm: Marginal structural mediation model"

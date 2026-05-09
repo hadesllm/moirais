@@ -1,0 +1,11 @@
+{#-
+    Override of alabaster's default navigation.html.
+
+    Default ships an `<h3>Navigation</h3>` that stacks visually with our
+    toctree's `:caption: Navigation` — readers see the word twice in a
+    row.  Renaming the sidebar header to "Table of Contents" (which is
+    what it actually is) keeps "Navigation" as the *first section name*
+    inside the TOC, where it's correct + non-redundant.
+-#}
+<h3>{{ _('Table of Contents') }}</h3>
+{{ toctree(includehidden=theme_sidebar_includehidden) }}

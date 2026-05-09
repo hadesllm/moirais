@@ -1,0 +1,88 @@
+/* Smart clipboard button + toast for code blocks.
+ *
+ * The button sits in the top-right corner of every <pre> code block
+ * and copies the block's text minus `# comment` lines (so new users
+ * can paste shell + Python snippets without choking on annotations).
+ *
+ * Design follows the same amber/cream palette as the docs hub strip
+ * so the affordance reads as part of MOIRAIS, not a generic Sphinx
+ * widget.  No JS framework, no extra fonts. */
+
+div.highlight, pre.literal-block {
+    position: relative;
+}
+
+.hl-copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 5;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(8, 8, 8, 0.78);
+    color: #cfc7a8;
+    border: 1px solid rgba(201, 163, 106, 0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.18s, border-color 0.18s, background 0.18s, color 0.18s;
+}
+
+div.highlight:hover .hl-copy-btn,
+pre.literal-block:hover .hl-copy-btn,
+.hl-copy-btn:focus-visible {
+    opacity: 1;
+}
+
+.hl-copy-btn:hover {
+    border-color: #c9a36a;
+    background: rgba(201, 163, 106, 0.14);
+    color: #ffd17a;
+}
+
+/* Light theme — keep the button readable on white code blocks. */
+html:not([data-theme="dark"]) .hl-copy-btn {
+    background: rgba(255, 255, 255, 0.92);
+    color: #555;
+    border-color: rgba(0, 0, 0, 0.18);
+}
+html:not([data-theme="dark"]) .hl-copy-btn:hover {
+    border-color: #2980B9;
+    background: rgba(41, 128, 185, 0.10);
+    color: #2980B9;
+}
+
+/* Toast that announces "comments stripped" so the user knows what
+ * happened.  Floats bottom-center, fades after 1.6s. */
+.hl-clipboard-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    padding: 8px 14px;
+    background: rgba(8, 8, 8, 0.92);
+    color: #ffd17a;
+    border: 1px solid #c9a36a;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.18s, transform 0.18s;
+    z-index: 1200;
+}
+
+.hl-clipboard-toast.is-visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+html:not([data-theme="dark"]) .hl-clipboard-toast {
+    background: rgba(255, 255, 255, 0.96);
+    color: #2980B9;
+    border-color: #2980B9;
+}

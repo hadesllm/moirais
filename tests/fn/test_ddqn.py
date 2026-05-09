@@ -1,0 +1,21 @@
+"""Tests for ddqn.double_dqn."""
+import numpy as np
+import pytest
+from moirais.fn.ddqn import double_dqn
+
+
+def test_ddqn_basic():
+    """Test basic functionality."""
+    env = np.random.default_rng(42).normal(0, 1, 100)
+    net = np.random.default_rng(42).normal(0, 1, 100)
+    result = double_dqn(env, net)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_ddqn_edge():
+    """Test edge cases."""
+    env = np.random.default_rng(42).normal(0, 1, 100)
+    net = np.random.default_rng(42).normal(0, 1, 100)
+    result = double_dqn(env, net)
+    assert isinstance(result, dict)

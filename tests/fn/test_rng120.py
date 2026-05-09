@@ -1,0 +1,21 @@
+"""Tests for rng120.rangayyan_ch3_baseline_wander_filter_z_form_a."""
+import numpy as np
+import pytest
+from moirais.fn.rng120 import rangayyan_ch3_baseline_wander_filter_z_form_a
+
+
+def test_rng120_basic():
+    """Test basic functionality."""
+    z = np.random.default_rng(44).normal(0, 1, 100)
+    T = np.random.default_rng(43).integers(0, 2, 100)
+    result = rangayyan_ch3_baseline_wander_filter_z_form_a(z, T)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_rng120_edge():
+    """Test edge cases."""
+    z = np.random.default_rng(44).normal(0, 1, 100)
+    T = np.random.default_rng(43).integers(0, 2, 100)
+    result = rangayyan_ch3_baseline_wander_filter_z_form_a(z, T)
+    assert isinstance(result, dict)

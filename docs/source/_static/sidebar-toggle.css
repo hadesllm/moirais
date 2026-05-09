@@ -1,0 +1,227 @@
+/* Sidebar toggle for the alabaster left nav.
+ *
+ * Two render modes:
+ *   .is-in-hub  — inserted into the docs-hydrate hub strip alongside
+ *                 the menu + theme buttons.  Mirrors their styling
+ *                 (30x30 round, amber border, transparent background)
+ *                 so all three icon buttons read as one row.
+ *   .is-fixed   — fallback when no hub strip is present on the page.
+ *                 Translucent rounded square at top-left, 32x32.
+ */
+
+/* ── In-hub mode (matches .hl-docs-hub-menu / .hl-docs-hub-toggle) ── */
+#hl-sidebar-toggle.is-in-hub {
+    background: transparent;
+    border: 1px solid rgba(201, 163, 106, 0.4);
+    color: #cfc7a8;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    flex: none;
+    /* Order anchors it before menu (which sits at order:1 on mobile),
+       so on narrow widths the row reads sidebar / menu / theme. */
+    order: 0;
+}
+
+#hl-sidebar-toggle.is-in-hub:hover {
+    border-color: #c9a36a;
+    background: rgba(201, 163, 106, 0.10);
+    color: #ffd17a;
+}
+
+@media (max-width: 600px) {
+    #hl-sidebar-toggle.is-in-hub {
+        width: 26px;
+        height: 26px;
+        font-size: 12px;
+    }
+}
+
+/* ── Fallback fixed-position mode (only when no hub strip) ── */
+#hl-sidebar-toggle.is-fixed {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 1100;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(201, 163, 106, 0.4);
+    background: rgba(8, 8, 8, 0.92);
+    color: #cfc7a8;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+#hl-sidebar-toggle.is-fixed:hover {
+    border-color: #c9a36a;
+    background: rgba(201, 163, 106, 0.10);
+    color: #ffd17a;
+}
+
+html:not([data-theme="dark"]) #hl-sidebar-toggle.is-fixed {
+    background: rgba(255, 255, 255, 0.92);
+    color: #555;
+    border-color: rgba(0, 0, 0, 0.18);
+}
+html:not([data-theme="dark"]) #hl-sidebar-toggle.is-fixed:hover {
+    border-color: #2980B9;
+    background: rgba(41, 128, 185, 0.08);
+    color: #2980B9;
+}
+
+/* ── Force-hide / force-show layout (independent of placement mode) ── */
+
+body.hl-sidebar-hidden div.sphinxsidebar {
+    display: none !important;
+}
+body.hl-sidebar-hidden div.documentwrapper {
+    float: none !important;
+    width: 100% !important;
+}
+body.hl-sidebar-hidden div.bodywrapper {
+    margin: 0 auto !important;
+    max-width: 1080px;
+}
+
+body.hl-sidebar-shown div.sphinxsidebar {
+    display: block !important;
+}
+
+/* Auto-collapse below 1180px (≈ 105% zoom on a 1280-wide laptop) so
+   the alabaster fixed sidebar doesn't overlap the prose.  Toggle to
+   bring it back. */
+@media (max-width: 1180px) {
+    body:not(.hl-sidebar-shown) div.sphinxsidebar {
+        display: none !important;
+    }
+    body:not(.hl-sidebar-shown) div.documentwrapper {
+        float: none !important;
+        width: 100% !important;
+    }
+    body:not(.hl-sidebar-shown) div.bodywrapper {
+        margin: 0 auto !important;
+        max-width: 1080px;
+    }
+}
+
+/* Mobile (≤ 600px): toggled-on sidebar becomes a full-screen drawer.
+   Alabaster's default has .sphinxsidebarwrapper > h1.logo / p.blurb
+   / p.caption / h3 with negative horizontal margins — fine for the
+   desktop sidebar's narrow gutter, but it pushes content off-screen
+   when the wrapper becomes a full-width drawer.  Two-layer fix:
+   outer .sphinxsidebar = container with no padding, inner
+   .sphinxsidebarwrapper = padded content, with negative margins
+   reset on each child element type. */
+@media (max-width: 600px) {
+    /* Backdrop — click to close.  Sits BELOW the drawer but ABOVE
+       the body. */
+    body.hl-sidebar-shown::before {
+        content: '';
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1040;
+        animation: sb-fade 0.15s ease-out;
+    }
+    @keyframes sb-fade {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    body.hl-sidebar-shown div.sphinxsidebar {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-y: auto !important;
+        z-index: 1050;
+        background: #fff;
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.4);
+    }
+    /* Inline close button rendered into the drawer by our JS so the
+       user has an obvious way out (the hub-strip toggle gets buried
+       behind the drawer when shown).  Top-right corner, prominent. */
+    #hl-sidebar-close {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        z-index: 1110;
+        width: 40px;
+        height: 40px;
+        background: var(--bg, #050a08);
+        color: var(--accent, #c9a36a);
+        border: 1px solid var(--accent, #c9a36a);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 22px;
+        line-height: 1;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+    }
+    body.hl-sidebar-shown #hl-sidebar-close { display: inline-flex; }
+    html:not([data-theme="dark"]) #hl-sidebar-close {
+        background: #fff;
+        color: #2980B9;
+        border-color: #2980B9;
+    }
+    html[data-theme="dark"] body.hl-sidebar-shown div.sphinxsidebar {
+        background: #06080a;
+    }
+    body.hl-sidebar-shown div.sphinxsidebarwrapper {
+        padding: 56px 20px 24px !important;
+        margin: 0 !important;
+        width: auto !important;
+        max-width: none !important;
+    }
+    body.hl-sidebar-shown div.sphinxsidebarwrapper > *,
+    body.hl-sidebar-shown div.sphinxsidebarwrapper p.caption,
+    body.hl-sidebar-shown div.sphinxsidebarwrapper h1.logo,
+    body.hl-sidebar-shown div.sphinxsidebarwrapper p.blurb,
+    body.hl-sidebar-shown div.sphinxsidebarwrapper h3,
+    body.hl-sidebar-shown div.sphinxsidebarwrapper ul {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+/* Alabaster narrow-mode rescue (light theme): below ~875px alabaster
+   collapses the sidebar into the body but keeps its dark-mode-only
+   text colors, leaving descriptions/captions white-on-white in the
+   light theme.  Force dark text. */
+@media (max-width: 875px) {
+    html:not([data-theme="dark"]) div.sphinxsidebar p.description,
+    html:not([data-theme="dark"]) div.sphinxsidebar p.blurb,
+    html:not([data-theme="dark"]) div.sphinxsidebar p.caption,
+    html:not([data-theme="dark"]) div.sphinxsidebar h1.logo,
+    html:not([data-theme="dark"]) div.sphinxsidebar h1.logo a,
+    html:not([data-theme="dark"]) div.sphinxsidebar h3 {
+        color: #3E4349 !important;
+    }
+    html:not([data-theme="dark"]) div.sphinxsidebar a,
+    html:not([data-theme="dark"]) div.sphinxsidebar a:visited {
+        color: #2980B9 !important;
+    }
+}

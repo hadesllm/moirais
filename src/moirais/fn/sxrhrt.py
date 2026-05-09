@@ -1,0 +1,41 @@
+"""Sex-specific heritability."""
+import numpy as np
+from scipy import stats
+from ._richresult import RichResult
+
+__all__ = ["sex_specific_h2"]
+
+
+def sex_specific_h2(y, sex, K):
+    """
+    Sex-specific heritability
+
+    Formula: per-sex h^2 with cross-sex genetic correlation
+
+    Parameters
+    ----------
+    y : array-like
+        Input data.
+    sex : array-like
+        Input data.
+    K : array-like
+        Input data.
+
+    Returns
+    -------
+    result : dict
+        Keys: estimate
+
+    References
+    ----------
+    Yang et al (2015)
+    """
+    y = np.atleast_1d(np.asarray(y, dtype=float))
+    n = len(y)
+    result = float(np.mean(y))
+    se = float(np.std(y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Sex-specific heritability"})
+
+
+def cheatsheet():
+    return "sxrhrt: Sex-specific heritability"

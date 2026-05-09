@@ -1,0 +1,159 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moirais"
+version = "0.1.0"
+description = "Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation. Multi-domain scientific computing toolkit hosting the DLRM framework for Canadian carceral, police, and oversight data, with general-purpose causal inference, signal processing, cryptography, spatial statistics, statistical physics, and psychometrics modules."
+authors = [
+  { name="Vansh Singh Ruhela", email="hadesllm@proton.me" }
+]
+license = "GPL-2.0-only"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "DLRM",
+    "RF modules",
+    "causal inference",
+    "observational inference",
+    "criminology",
+    "Mandela Rules",
+    "OTIS",
+    "Special Investigations Unit",
+    "Structured Intervention Unit",
+    "Toronto Police Service",
+    "Crime Severity Index",
+    "Hawkes process",
+    "spatial statistics",
+    "signal processing",
+    "psychometrics",
+    "double machine learning",
+    "MOIRAIS",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Legal Industry",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: R",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Sociology",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/hadesllm/moirais"
+Repository = "https://github.com/hadesllm/moirais"
+Issues = "https://github.com/hadesllm/moirais/issues"
+Documentation = "https://github.com/hadesllm/moirais#readme"
+Changelog = "https://github.com/hadesllm/moirais/releases"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+    "statsmodels>=0.14",
+    "DoubleML>=0.7.1",
+    "matplotlib>=3.7.0",
+    "openpyxl>=3.1.0",
+    "httpx>=0.27",
+    "rich>=13.0",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "tenacity>=8.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-cov",
+    "psutil",
+    "pypdf>=4.0",
+]
+ai = [
+    # LLM chat uses the vendored moirais.fam module (OllamaFreeAPI client, no Rust deps).
+    # No external AI SDK dependencies needed — OllamaFreeAPI is vendored in-tree.
+]
+interactive = [
+    "textual>=0.85,<1.0",
+
+    "dashing>=0.1.0",
+    "enlighten>=1.12",
+]
+ml = [
+    # SMOTE oversampling for sensitivity analysis.
+    "imbalanced-learn>=0.11",
+]
+carbon = [
+    # CodeCarbon — track CO2 emissions from analysis runs.
+    # Requires pydantic (Rust/PyO3) — not installable on Python 3.15+ until
+    # PyO3 adds support.  MOIRAIS degrades gracefully: emissions tracking is
+    # simply disabled when codecarbon is absent (--no-carbon is implicit).
+    "codecarbon>=2.3"
+]
+docs = [
+    "sphinx>=7.0",
+    "furo",
+    "myst-parser",
+    "sphinx-gallery",
+    "jupyter"
+]
+
+[project.scripts]
+moirais = "moirais.runner:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["moirais*"]
+
+[tool.setuptools.package-data]
+moirais = ["data/*.db", "data/*.json", "data/2016/*.json", "data/2023/*.json", "ollama_json/*.json"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+src = ["src"]
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "UP",     # pyupgrade
+    "B",      # flake8-bugbear
+    "SIM",    # flake8-simplify
+    "N",      # pep8-naming
+]
+ignore = [
+    "E501",   # line too long (we use 120 but some docstrings exceed)
+    "N802",   # function name should be lowercase (we have R-style names like dnorm, pnorm)
+    "N803",   # argument name should be lowercase (stats conventions: X, Y, N)
+    "N806",   # variable in function should be lowercase (matrix names: A, B, Q, R, X)
+    "B905",   # zip without strict (Python 3.10 compat)
+    "UP007",  # use X | Y for union (Python 3.10 compat)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["N", "B"]  # relaxed naming in tests
+"src/moirais/fn/**" = ["N"]  # short names are intentional
+
+[tool.ruff.lint.isort]
+known-first-party = ["moirais"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

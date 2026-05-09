@@ -1,0 +1,19 @@
+"""Tests for advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th25u113.advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th_chapter_25_unnumbered_113."""
+import numpy as np
+import pytest
+from moirais.fn.advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th25u113 import advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th_chapter_25_unnumbered_113
+
+
+def test_advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th25u113_basic():
+    """Test basic functionality."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th_chapter_25_unnumbered_113(x)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th25u113_edge():
+    """Test edge cases."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th_chapter_25_unnumbered_113(x)
+    assert isinstance(result, dict)

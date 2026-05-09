@@ -1,0 +1,22 @@
+"""Tests for moirais.fn.sunst -- surface roughness."""
+
+import numpy as np
+from moirais.fn.sunst import surface_roughness, sunst
+from moirais.fn._containers import DescriptiveResult
+
+
+class TestSunst:
+    def test_alias(self):
+        assert sunst is surface_roughness
+
+    def test_flat_surface(self):
+        profile = np.zeros(100)
+        r = surface_roughness(profile)
+        assert isinstance(r, DescriptiveResult)
+        assert r.value == 0.0
+
+    def test_sinusoidal(self):
+        x = np.sin(np.linspace(0, 4 * np.pi, 200))
+        r = surface_roughness(x)
+        assert r.value > 0
+        assert r.extra["Rz"] > 0

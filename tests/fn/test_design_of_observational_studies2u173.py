@@ -1,0 +1,19 @@
+"""Tests for design_of_observational_studies2u173.design_of_observational_studies_chapter_2_unnumbered_173."""
+import numpy as np
+import pytest
+from moirais.fn.design_of_observational_studies2u173 import design_of_observational_studies_chapter_2_unnumbered_173
+
+
+def test_design_of_observational_studies2u173_basic():
+    """Test basic functionality."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = design_of_observational_studies_chapter_2_unnumbered_173(x)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_design_of_observational_studies2u173_edge():
+    """Test edge cases."""
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = design_of_observational_studies_chapter_2_unnumbered_173(x)
+    assert isinstance(result, dict)

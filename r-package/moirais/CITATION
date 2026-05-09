@@ -1,0 +1,13 @@
+citHeader("To cite the moirais R package, please use:")
+
+bibentry(
+  bibtype = "Manual",
+  key     = "ruhela_moirais_2026",
+  title   = "moirais: Multi-Domain Methods for Observational Inference and Robust Analysis",
+  author  = person("Vansh Singh", "Ruhela",
+                   comment = c(ORCID = "0009-0004-1750-3592")),
+  year    = "2026",
+  note    = "R package version 0.1.0",
+  doi     = "10.5281/zenodo.20096350",
+  url     = "https://github.com/hadesllm/moirais"
+)

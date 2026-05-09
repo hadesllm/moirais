@@ -1,0 +1,68 @@
+{
+  "fn": "dnorm",
+  "callable": "moirais.fn.dnorm.dnorm",
+  "source": "scipy.stats.norm.pdf / logpdf",
+  "cases": [
+    {
+      "inputs": {
+        "x": 0.0,
+        "mean": 0.0,
+        "sd": 1.0
+      },
+      "expected": 0.3989422804014327,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 1.0,
+        "mean": 0.0,
+        "sd": 1.0
+      },
+      "expected": 0.24197072451914337,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 1.96,
+        "mean": 0.0,
+        "sd": 1.0
+      },
+      "expected": 0.058440944333451476,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 0.0,
+        "mean": 0.0,
+        "sd": 2.0
+      },
+      "expected": 0.19947114020071635,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": -3.0,
+        "mean": 1.0,
+        "sd": 2.5
+      },
+      "expected": 0.04436833387178222,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 2.0,
+        "mean": 0.0,
+        "sd": 1.0,
+        "log": true
+      },
+      "expected": -2.9189385332046727,
+      "rtol": 1e-12,
+      "atol": 0.0
+    }
+  ]
+}

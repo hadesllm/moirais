@@ -1,0 +1,25 @@
+"""Tests for tmltrt.tmle_truncation."""
+import numpy as np
+import pytest
+from moirais.fn.tmltrt import tmle_truncation
+
+
+def test_tmltrt_basic():
+    """Test basic functionality."""
+    y = np.random.default_rng(43).normal(0, 1, 100)
+    D = np.random.default_rng(42).normal(0, 1, 100)
+    X = np.random.default_rng(42).normal(0, 1, (100, 5))
+    eps = np.random.default_rng(42).normal(0, 1, 100)
+    result = tmle_truncation(y, D, X, eps)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_tmltrt_edge():
+    """Test edge cases."""
+    y = np.random.default_rng(43).normal(0, 1, 100)
+    D = np.random.default_rng(42).normal(0, 1, 100)
+    X = np.random.default_rng(42).normal(0, 1, (100, 5))
+    eps = np.random.default_rng(42).normal(0, 1, 100)
+    result = tmle_truncation(y, D, X, eps)
+    assert isinstance(result, dict)

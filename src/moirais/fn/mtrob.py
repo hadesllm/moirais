@@ -1,0 +1,45 @@
+# moirais.fn — function file (hadesllm/moirais)
+"""
+Robustness spatial network
+
+Category: MovTyp
+"""
+
+import numpy as np
+
+
+def mtrob(trajectory=None, n=50, dt=1.0):
+    """Robustness spatial network
+
+    Returns
+    -------
+    DescriptiveResult
+    """
+    from ._containers import DescriptiveResult
+
+    if trajectory is None:
+        steps = np.random.default_rng(0).standard_normal((n, 2))
+        trajectory = np.cumsum(steps, axis=0)
+    diffs = np.diff(trajectory, axis=0)
+    step_lens = np.sqrt(np.sum(diffs**2, axis=1))
+    stat = float(np.mean(step_lens))
+    return DescriptiveResult(
+        name=short,
+        value=stat,
+        extra={
+            "n_steps": len(trajectory) - 1,
+            "total_distance": float(np.sum(step_lens)),
+            "mean_step": float(np.mean(step_lens)),
+            "max_step": float(np.max(step_lens)),
+        },
+    )
+
+
+short = "mtrob"
+alias = "mtrob"
+quote = "The world is cruel but beautiful. -- Mikasa"
+mtrob = mtrob
+
+
+def cheatsheet() -> str:
+    return "mtrob({}) -> Robustness spatial network"

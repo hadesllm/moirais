@@ -1,0 +1,27 @@
+"""Tests for hmsgdu.geron_sgd_update."""
+import numpy as np
+import pytest
+from moirais.fn.hmsgdu import geron_sgd_update
+
+
+def test_hmsgdu_basic():
+    """Test basic functionality."""
+    X = np.random.default_rng(42).normal(0, 1, (100, 5))
+    y = np.random.default_rng(43).normal(0, 1, 100)
+    theta = 0.0
+    eta = np.random.default_rng(42).normal(0, 1, 100)
+    seed = 42
+    result = geron_sgd_update(X, y, theta, eta, seed)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
+
+
+def test_hmsgdu_edge():
+    """Test edge cases."""
+    X = np.random.default_rng(42).normal(0, 1, (100, 5))
+    y = np.random.default_rng(43).normal(0, 1, 100)
+    theta = 0.0
+    eta = np.random.default_rng(42).normal(0, 1, 100)
+    seed = 42
+    result = geron_sgd_update(X, y, theta, eta, seed)
+    assert isinstance(result, dict)

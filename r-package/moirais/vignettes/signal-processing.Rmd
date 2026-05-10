@@ -1,0 +1,69 @@
+---
+title: "Signal processing primitives"
+output:
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{Signal processing primitives}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  eval     = requireNamespace("moirais", quietly = TRUE)
+)
+```
+
+# Overview
+
+Beyond its causal-inference and survey-statistics surfaces, MOIRAIS
+exposes a small collection of signal-processing primitives. These
+are useful for forensic-audio work, biomedical signals, and any
+analysis that needs spectral or time-frequency methods adjacent to
+the causal pipeline (e.g.\ inter-incident time series in
+criminological data).
+
+The R surface is intentionally thin --- the heavy lifting lives in
+the Python `moirais.signal_processing` and
+`moirais.homomorphic_deconvolution` modules. The R wrappers cover
+the most commonly needed primitives.
+
+# A synthetic two-tone signal
+
+```{r setup}
+library(moirais)
+
+set.seed(42)
+fs <- 1000                           # sampling rate (Hz)
+t  <- seq(0, 1, by = 1 / fs)
+sig <- sin(2 * pi * 50 * t) +
+       0.5 * sin(2 * pi * 120 * t) +
+       0.3 * rnorm(length(t))
+```
+
+# Basic FFT
+
+```{r fft}
+spec <- stats::fft(sig)
+n    <- length(sig)
+freq <- (0:(n / 2 - 1)) * fs / n
+mag  <- Mod(spec)[1:(n / 2)]
+peak_freqs <- freq[order(mag, decreasing = TRUE)[1:5]]
+peak_freqs
+```
+
+The two largest peaks should sit near 50 Hz and 120 Hz, recovering
+the synthetic signal's components.
+
+# Where to go next
+
+- Spectral analysis with windowing, multitaper estimation, and
+  short-time Fourier transforms is implemented in the Python
+  `moirais.signal_processing` module --- with the same RichResult
+  return convention --- and is documented in the package paper.
+- Homomorphic deconvolution and cepstral methods (used in forensic
+  audio and biomedical-signal applications) live in
+  `moirais.homomorphic_deconvolution`.

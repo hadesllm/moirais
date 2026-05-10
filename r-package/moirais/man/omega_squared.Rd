@@ -3,17 +3,21 @@
 \alias{omega_squared}
 \title{Omega-squared (less biased than eta-squared)}
 \description{
-  Omega-squared (less biased than eta-squared)
+Compute omega-squared as a less-biased effect-size estimator than
+eta-squared for one-way ANOVA designs.
 }
 \usage{
-  omega_squared(n)
+omega_squared(f_stat, df_between, df_within, n)
 }
 \arguments{
-  \item{n}{Total sample size.}
+\item{f_stat}{The F statistic from the one-way ANOVA.}
+\item{df_between}{Between-groups degrees of freedom.}
+\item{df_within}{Within-groups (residual) degrees of freedom.}
+\item{n}{Total sample size.}
 }
 \value{
-  Numeric omega-squared.
+Numeric omega-squared.
 }
 \examples{
-  omega_squared(f_stat = 5.2, df_between = 2, df_within = 87, n = 90)
+omega_squared(f_stat = 5.2, df_between = 2, df_within = 87, n = 90)
 }

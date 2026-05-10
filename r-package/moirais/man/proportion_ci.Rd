@@ -7,7 +7,8 @@ Compute a confidence interval for a binomial proportion using the Wilson
 score method (default), exact Clopper-Pearson, or Wald method.
 }
 \usage{
-proportion_ci(successes, n, alpha = 0.05, method = "wilson")
+proportion_ci(successes, n, alpha = 0.05,
+              method = c("wilson", "exact", "wald"))
 }
 \arguments{
 \item{successes}{Number of successes.}

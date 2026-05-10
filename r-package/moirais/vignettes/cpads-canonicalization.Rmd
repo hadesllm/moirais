@@ -1,0 +1,83 @@
+---
+title: "CPADS canonicalization and analysis"
+output:
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{CPADS canonicalization and analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  eval     = requireNamespace("moirais", quietly = TRUE)
+)
+```
+
+# Overview
+
+The Canadian Postsecondary Education Alcohol and Drug Use Survey
+(CPADS) is one of the Statistics Canada PUMFs that MOIRAIS supports
+out of the box. Variable names, value codes, and survey weights
+differ across cycles, so MOIRAIS provides a *canonical* column
+contract and a `canonicalize_cpads_data()` helper to harmonise
+cycles into a single analysis-ready tibble.
+
+# The CPADS column contract
+
+```{r contract, eval = FALSE}
+library(moirais)
+contract <- cpads_contract()
+str(contract, max.level = 2)
+```
+
+`cpads_contract()` returns the canonical names, value-code maps,
+and survey-weight columns. Using the contract is opt-in --- the
+estimators in MOIRAIS do not require it --- but it lets you write
+analysis code once and run it across cycles unchanged.
+
+# Loading + canonicalising
+
+```{r load, eval = FALSE}
+raw_2122 <- moirais_load_dataset("cpads-2122")
+df       <- canonicalize_cpads_data(raw_2122)
+
+# Validates that all canonical columns are present + correctly
+# typed. Returns silently if OK, or stops with a clear message
+# pointing at the offending column.
+validate_cpads_data(df)
+```
+
+# A simple analysis with weights
+
+```{r analysis, eval = FALSE}
+# CPADS ships PUMF weights in a column the contract surfaces.
+weighted_freq <- mean(df$heavy_drinking_30d * df$pumf_weight,
+                      na.rm = TRUE)
+weighted_freq
+```
+
+# Survey-weighted causal estimate
+
+```{r causal, eval = FALSE}
+# Estimate ATE of (canonical-treatment) on
+# (canonical-outcome), passing CPADS PUMF weights:
+ate <- estimate_ate(df,
+                    outcome    = "heavy_drinking_30d",
+                    treatment  = "treat_canonical",
+                    covariates = c("age", "sex", "region"),
+                    weights    = "pumf_weight")
+ate$estimate
+```
+
+# Where to go next
+
+- The `survey-weighted` vignette covers complex-sample sampling
+  (stratified, cluster, PPS), bootstrap CIs, and design effects.
+- The `causal-inference` vignette covers the full ATE / ATT / ATC /
+  AIPW / CATE / GATE estimator family.
+- For Statistics Canada citation requirements, see the README's
+  data-acknowledgment block.

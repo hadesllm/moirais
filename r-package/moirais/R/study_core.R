@@ -630,7 +630,7 @@
   counter0$cannabis_any_use <- 0
   mu1 <- stats::predict(out_model, newdata = counter1, type = "response")
   mu0 <- stats::predict(out_model, newdata = counter0, type = "response")
-  ate_or <- weighted.mean(mu1 - mu0, frame$weight)
+  ate_or <- stats::weighted.mean(mu1 - mu0, frame$weight)
   ps <- prop_out$analysis_frame$ps
   y <- prop_out$analysis_frame$heavy_drinking_30d
   a <- prop_out$analysis_frame$cannabis_any_use
@@ -666,9 +666,9 @@
   frame$w_atc <- ifelse(frame$cannabis_any_use == 1, (1 - frame$ps) / frame$ps, 1)
   treated <- frame[frame$cannabis_any_use == 1, ]
   control <- frame[frame$cannabis_any_use == 0, ]
-  ate <- weighted.mean(treated$heavy_drinking_30d, treated$w_ate) - weighted.mean(control$heavy_drinking_30d, control$w_ate)
-  att <- mean(treated$heavy_drinking_30d) - weighted.mean(control$heavy_drinking_30d, control$w_att)
-  atc <- weighted.mean(treated$heavy_drinking_30d, treated$w_atc) - mean(control$heavy_drinking_30d)
+  ate <- stats::weighted.mean(treated$heavy_drinking_30d, treated$w_ate) - stats::weighted.mean(control$heavy_drinking_30d, control$w_ate)
+  att <- mean(treated$heavy_drinking_30d) - stats::weighted.mean(control$heavy_drinking_30d, control$w_att)
+  atc <- stats::weighted.mean(treated$heavy_drinking_30d, treated$w_atc) - mean(control$heavy_drinking_30d)
   summary_tbl <- data.frame(
     estimand = c("ATE", "ATT", "ATC"),
     method = c("IPW", "IPW", "IPW"),
@@ -961,7 +961,7 @@
     for (lvl in levs) {
       target_prop <- mean(eligible[[var]] == lvl, na.rm = TRUE)
       obs_unadj <- mean(observed[[var]] == lvl, na.rm = TRUE)
-      obs_ipw <- weighted.mean(observed[[var]] == lvl, observed$weight, na.rm = TRUE)
+      obs_ipw <- stats::weighted.mean(observed[[var]] == lvl, observed$weight, na.rm = TRUE)
       cov_balance[[length(cov_balance) + 1L]] <- data.frame(
         variable = var,
         level = as.character(lvl),

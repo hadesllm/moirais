@@ -1,0 +1,91 @@
+---
+title: "Chi-square tests and one-way ANOVA"
+output:
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{Chi-square tests and one-way ANOVA}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  eval     = requireNamespace("moirais", quietly = TRUE)
+)
+```
+
+# Overview
+
+For aggregate contingency tables --- the kind that sit behind the
+Doob $\chi^{2}$ family in the MRM framework --- MOIRAIS exposes
+`chi_square_test()` and the companion effect-size helpers (Cramer's
+V, omega-squared) as first-class functions.
+
+# A 2x3 contingency table
+
+```{r chi-square}
+library(moirais)
+tab <- matrix(c(20, 10, 30,
+                15, 25, 35), nrow = 2, byrow = TRUE,
+              dimnames = list(group = c("treated", "control"),
+                              outcome = c("A", "B", "C")))
+
+result <- chi_square_test(tab)
+result$statistic
+result$p_value
+result$df
+```
+
+`chi_square_test()` returns the Pearson $\chi^{2}$, the asymptotic
+p-value, and the degrees of freedom in a tidy list.
+
+# Effect size: Cramer's V
+
+```{r cramers-v}
+v <- cramers_v(tab)
+v
+```
+
+Cramer's V scales the chi-square statistic to a 0--1 association
+measure that is more interpretable than the raw statistic.
+
+# One-way ANOVA + omega-squared
+
+For continuous outcomes across more than two groups, the one-way
+ANOVA pattern in R is `aov(y ~ g, data = ...)`. MOIRAIS exposes
+`omega_squared()` as the less-biased counterpart to eta-squared:
+
+```{r anova}
+set.seed(2)
+n      <- 90
+group  <- rep(c("A", "B", "C"), each = n / 3)
+y      <- rnorm(n) + ifelse(group == "C", 0.6, 0)
+
+fit  <- stats::aov(y ~ group)
+fsum <- summary(fit)[[1]]
+fstat   <- fsum$`F value`[1]
+df_b    <- fsum$Df[1]
+df_w    <- fsum$Df[2]
+
+omega_squared(f_stat = fstat, df_between = df_b, df_within = df_w, n = n)
+```
+
+# Doob $\chi^{2}$ family
+
+The MRM framework's "Doob $\chi^{2}$ family" is a coordinated set of
+chi-square tests on the published Sprott / Doob / Iftene
+contingency tables (federal SIU operation, COVID-period operation,
+torture-classification rates, IEDM analyses). MOIRAIS reproduces
+all five published statistics to within $0.01$ of the printed
+values; details are in the MRM paper
+(`citation("moirais")`).
+
+# Where to go next
+
+- The `effect-sizes` vignette covers Cohen's d, Cramer's V,
+  omega-squared, proportion-CI, and the E-value in one place.
+- The `mrm-otis-walkthrough` vignette shows the chi-square family
+  applied to OTIS provincial data.

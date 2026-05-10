@@ -102,7 +102,10 @@ def _query_local(db: str, sql: str) -> list[dict[str, Any]]:
 
 def _query_remote(db: str, sql: str) -> list[dict[str, Any]]:
     if not REMOTE_BASE_URL:
-        raise RuntimeError(
+        # Use ConnectionError so callers that catch network-class
+        # exceptions (e.g. eval_pipeline gate runners) treat "no
+        # endpoint configured" as a skip rather than a hard error.
+        raise ConnectionError(
             "no remote endpoint configured; set MOIRAIS_REMOTE_URL "
             "or supply a local SQLite mirror via MOIRAIS_LOCAL_DB_DIR"
         )

@@ -62,7 +62,10 @@ jobs:
         env:
           SKIP_ROXYGEN: "1"   # CI runner has no R/devtools; bypass r_autodoc subprocess
         run: |
-          sphinx-build -b html -j auto -d .sphinx-doctrees docs/source docs/build/html
+          # Serial build — Sphinx -j auto hits a known parallel-pool
+          # teardown race (KeyError in sphinx/util/parallel.py) on
+          # Linux Py3.12. Serial is ~30s slower but reliably exits 0.
+          sphinx-build -b html -d .sphinx-doctrees docs/source docs/build/html
           touch docs/build/html/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3

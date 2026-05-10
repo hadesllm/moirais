@@ -14,13 +14,25 @@ MOIRAIS — Methods for Observational Inference and Robust Analysis of Intervent
    :target: https://pypi.org/project/moirais/
    :alt: PyPI version
 
+.. image:: https://img.shields.io/badge/r--universe-hadesllm-276DC3
+   :target: https://hadesllm.r-universe.dev/moirais
+   :alt: r-universe
+
 .. image:: https://img.shields.io/badge/Software_DOI-10.5281%2Fzenodo.20111233-blue
    :target: https://doi.org/10.5281/zenodo.20111233
    :alt: Software DOI 10.5281/zenodo.20111233
 
-.. image:: https://img.shields.io/badge/Paper_DOI-10.5281%2Fzenodo.20096350-blue
+.. image:: https://img.shields.io/badge/MOIRAIS_paper_DOI-10.5281%2Fzenodo.20096350-blue
    :target: https://doi.org/10.5281/zenodo.20096350
-   :alt: Paper DOI 10.5281/zenodo.20096350
+   :alt: MOIRAIS paper DOI 10.5281/zenodo.20096350
+
+.. image:: https://img.shields.io/badge/MRM_paper_DOI-10.5281%2Fzenodo.20096075-blue
+   :target: https://doi.org/10.5281/zenodo.20096075
+   :alt: MRM paper DOI 10.5281/zenodo.20096075
+
+.. image:: https://img.shields.io/badge/Hawkes_paper_DOI-10.5281%2Fzenodo.20102198-blue
+   :target: https://doi.org/10.5281/zenodo.20102198
+   :alt: Hawkes paper DOI 10.5281/zenodo.20102198
 
 A dual-language (Python + R) multi-domain scientific computing toolkit for
 observational inference, with sociolegal, signal-processing, cryptographic,

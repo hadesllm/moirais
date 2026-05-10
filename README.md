@@ -6,9 +6,12 @@ A multi-domain scientific computing toolkit (Python and R) for observational inf
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://github.com/hadesllm/moirais/blob/main/LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/moirais.svg)](https://pypi.org/project/moirais/)
+[![r-universe](https://img.shields.io/badge/r--universe-hadesllm-276DC3)](https://hadesllm.r-universe.dev/moirais)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Software DOI](https://img.shields.io/badge/Software_DOI-10.5281%2Fzenodo.20111233-blue)](https://doi.org/10.5281/zenodo.20111233)
-[![Paper DOI](https://img.shields.io/badge/Paper_DOI-10.5281%2Fzenodo.20096350-blue)](https://doi.org/10.5281/zenodo.20096350)
+[![MOIRAIS paper DOI](https://img.shields.io/badge/MOIRAIS_paper_DOI-10.5281%2Fzenodo.20096350-blue)](https://doi.org/10.5281/zenodo.20096350)
+[![MRM paper DOI](https://img.shields.io/badge/MRM_paper_DOI-10.5281%2Fzenodo.20096075-blue)](https://doi.org/10.5281/zenodo.20096075)
+[![Hawkes paper DOI](https://img.shields.io/badge/Hawkes_paper_DOI-10.5281%2Fzenodo.20102198-blue)](https://doi.org/10.5281/zenodo.20102198)
 
 ## Installation
 
@@ -64,7 +67,7 @@ also cite the MRM framework paper and the Hawkes-process methodology paper.
 # Software (the toolkit itself)
 Ruhela, V. S. (2026). MOIRAIS Toolkit: Methods for Observational Inference
 and Robust Analysis of Interventions in Scientific Experimentation
-(v0.1.0.post3) [Software]. Zenodo.
+(v0.1.2) [Software]. Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Companion paper (introduces the toolkit)

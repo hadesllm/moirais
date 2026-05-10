@@ -1,30 +1,44 @@
 cff-version: 1.2.0
-message: "If you use MOIRAIS in your research, please cite the software DOI together with the package paper, the MRM framework paper, and (where applicable to your work) the Hawkes-process methodology paper."
-title: "MOIRAIS: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation"
+message: "If you use MOIRAIS in your research, please cite BOTH the software (DOI 10.5281/zenodo.20111233) and the companion paper (DOI 10.5281/zenodo.20096350). Where applicable to your work, also cite the MRM framework paper and the Hawkes-process methodology paper."
+title: "MOIRAIS Toolkit: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation"
 authors:
   - family-names: "Ruhela"
     given-names: "Vansh Singh"
     orcid: "https://orcid.org/0009-0004-1750-3592"
-version: "0.1.0"
+version: "0.1.0.post3"
 date-released: "2026-05-10"
 url: "https://github.com/hadesllm/moirais"
 repository-code: "https://github.com/hadesllm/moirais"
 license: "GPL-2.0-only"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.20111233"
+    description: "MOIRAIS Toolkit software (this release)."
+  - type: doi
     value: "10.5281/zenodo.20096350"
-    description: "MOIRAIS package paper (preprint)."
+    description: "MOIRAIS companion paper (preprint)."
 preferred-citation:
-  type: generic
-  title: "MOIRAIS: A Multi-Domain Scientific Computing Toolkit for Observational Inference, with Sociolegal, Signal-Processing, Cryptographic, and Spatial-Statistics Modules"
+  type: software
+  title: "MOIRAIS Toolkit: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation"
   authors:
     - family-names: "Ruhela"
       given-names: "Vansh Singh"
       orcid: "https://orcid.org/0009-0004-1750-3592"
   year: "2026"
-  doi: "10.5281/zenodo.20096350"
-  url: "https://doi.org/10.5281/zenodo.20096350"
+  version: "0.1.0.post3"
+  doi: "10.5281/zenodo.20111233"
+  url: "https://doi.org/10.5281/zenodo.20111233"
 references:
+  - type: generic
+    title: "MOIRAIS: A Multi-Domain Scientific Computing Toolkit for Observational Inference, with Sociolegal, Signal-Processing, Cryptographic, and Spatial-Statistics Modules"
+    authors:
+      - family-names: "Ruhela"
+        given-names: "Vansh Singh"
+        orcid: "https://orcid.org/0009-0004-1750-3592"
+    year: "2026"
+    doi: "10.5281/zenodo.20096350"
+    url: "https://doi.org/10.5281/zenodo.20096350"
+    notes: "Companion paper that introduces the toolkit."
   - type: generic
     title: "The MRM Framework: A Multi-Source Statistical Foundation for Canadian Carceral, Police, and Oversight Data, Implemented as MRM Modules in MOIRAIS"
     authors:

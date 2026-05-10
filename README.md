@@ -7,7 +7,8 @@ A multi-domain scientific computing toolkit (Python and R) for observational inf
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://github.com/hadesllm/moirais/blob/main/LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/moirais.svg)](https://pypi.org/project/moirais/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20096350-blue)](https://doi.org/10.5281/zenodo.20096350)
+[![Software DOI](https://img.shields.io/badge/Software_DOI-10.5281%2Fzenodo.20111233-blue)](https://doi.org/10.5281/zenodo.20111233)
+[![Paper DOI](https://img.shields.io/badge/Paper_DOI-10.5281%2Fzenodo.20096350-blue)](https://doi.org/10.5281/zenodo.20096350)
 
 ## Installation
 
@@ -55,19 +56,30 @@ Full documentation is at [hadesllm.github.io/moirais](https://hadesllm.github.io
 
 ## Citation
 
-If you use MOIRAIS in your research, please cite the package paper, the MRM framework paper, and (where applicable to your work) the Hawkes-process methodology paper:
+If you use MOIRAIS in your research, please cite **the software** and
+**the companion paper** that describes it. Where applicable to your work,
+also cite the MRM framework paper and the Hawkes-process methodology paper.
 
 ```
+# Software (the toolkit itself)
+Ruhela, V. S. (2026). MOIRAIS Toolkit: Methods for Observational Inference
+and Robust Analysis of Interventions in Scientific Experimentation
+(v0.1.0.post3) [Software]. Zenodo.
+https://doi.org/10.5281/zenodo.20111233
+
+# Companion paper (introduces the toolkit)
 Ruhela, V. S. (2026). MOIRAIS: A Multi-Domain Scientific Computing
 Toolkit for Observational Inference, with Sociolegal, Signal-Processing,
 Cryptographic, and Spatial-Statistics Modules. Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
+# MRM framework paper
 Ruhela, V. S. (2026). The MRM Framework: A Multi-Source Statistical
 Foundation for Canadian Carceral, Police, and Oversight Data, Implemented
 as MRM Modules in MOIRAIS. Zenodo.
 https://doi.org/10.5281/zenodo.20096075
 
+# Hawkes-process methodology paper
 Ruhela, V. S. (2026). Criminological Hawkes Process via MOIRAIS:
 Markovian and Non-Markovian Self-Exciting Point Processes for Toronto
 Crime. Zenodo.

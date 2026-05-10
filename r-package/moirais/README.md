@@ -75,17 +75,25 @@ dat <- generate_synthetic_data(
 
 ## Citation
 
-Use `citation("moirais")` after installation.
-
-BibTeX:
+Use `citation("moirais")` after installation. Please cite **both**
+the software and the companion paper.
 
 ```bibtex
-@Manual{ruhela_moirais_2026,
-  title   = {MOIRAIS: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation},
+@Manual{ruhela_moirais_software_2026,
+  title   = {MOIRAIS Toolkit: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation},
   author  = {Ruhela, Vansh Singh},
   year    = {2026},
-  note    = {R package version 0.1.0-3},
-  doi     = {10.5281/zenodo.20096350},
+  note    = {R package version 0.1.0-4},
+  doi     = {10.5281/zenodo.20111233},
   url     = {https://github.com/hadesllm/moirais}
+}
+
+@Misc{ruhela_moirais_paper_2026,
+  title     = {MOIRAIS: A Multi-Domain Scientific Computing Toolkit for Observational Inference, with Sociolegal, Signal-Processing, Cryptographic, and Spatial-Statistics Modules},
+  author    = {Ruhela, Vansh Singh},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.20096350},
+  url       = {https://doi.org/10.5281/zenodo.20096350}
 }
 ```

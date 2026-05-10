@@ -1,4 +1,4 @@
-# dataset_catalog.R — MOIRAIS dataset catalog (short keys)
+# dataset_catalog.R -- MOIRAIS dataset catalog (short keys)
 #
 # Mirrors the Python DATASET_CATALOG in data.py exactly. Both languages
 # share the same SQLite cache (data/cache/moirais.db) via DBI.
@@ -215,7 +215,7 @@ moirais_dataset_catalog <- function() {
   do.call(rbind, lapply(entries, as.data.frame, stringsAsFactors = FALSE))
 }
 
-# Backward-compatible mapping: old long keys → new short keys
+# Backward-compatible mapping: old long keys -> new short keys
 .OLD_TO_SHORT <- c(
   opencanada_cpads_2021 = "ocp21",
   opencanada_ccs_2018 = "occ22",

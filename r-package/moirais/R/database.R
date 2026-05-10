@@ -1,4 +1,4 @@
-# database.R — DBI/RSQLite data layer for MOIRAIS
+# database.R -- DBI/RSQLite data layer for MOIRAIS
 #
 # Built-in database: inst/extdata/moirais.db ships with the package.
 # User cache: data/cache/moirais.db for additional data or bootstrap weights.

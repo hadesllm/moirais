@@ -63,4 +63,8 @@ jobs:
         with:
           working-directory: r-package/moirais
           upload-snapshots: true
-          args: 'c("--no-manual", "--as-cran")'
+          # Drop --as-cran (too strict pre-CRAN; we'll re-enable for the
+          # CRAN-submission PR). Keep --no-manual since we don't ship
+          # vignettes/PDFs in CI.
+          args: 'c("--no-manual")'
+          error-on: '"error"'

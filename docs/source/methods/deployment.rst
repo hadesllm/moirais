@@ -5,31 +5,8 @@ MOIRAIS supports deployment across consumer hardware, single-board computers,
 and containers. The target is a single-command install that auto-detects
 and configures all dependencies.
 
-Raspberry Pi 5
---------------
-
-MOIRAIS runs on Raspberry Pi 5 with the following reference configuration:
-
-.. list-table::
-   :header-rows: 1
-   :widths: 25 45
-
-   * - Component
-     - Specification
-   * - Board
-     - Raspberry Pi 5, 16 GB RAM
-   * - Storage
-     - 1 TB NVMe SSD (PCIe HAT)
-   * - NPU
-     - Hailo-10H (26 TOPS, PCIe)
-   * - OS
-     - Raspberry Pi OS (64-bit, Debian Bookworm)
-   * - Python
-     - 3.15 (uv venv)
-   * - Ollama
-     - ARM64 build, ``perseus:e2b`` model
-
-**Setup:**
+From source
+-----------
 
 .. code-block:: bash
 
@@ -38,21 +15,10 @@ MOIRAIS runs on Raspberry Pi 5 with the following reference configuration:
    python -m venv .venv && source .venv/bin/activate
    pip install -e ".[interactive]"
 
-**NVMe boot configuration** (Pi 5 EEPROM):
-
-.. code-block:: bash
-
-   sudo rpi-eeprom-config --edit
-   # BOOT_ORDER is RIGHT-TO-LEFT: 0xf416 = NVMe first, then SD
-   BOOT_ORDER=0xf416
-   # If NVMe causes boot hang:
-   PCIE_PROBE=0
-
-**Performance:**
-
-- Perseus inference: ~4 tok/s (CPU, Q4_K_M)
-- Full test suite (15976+ tests): ~8 minutes
-- SQLite dataset queries: < 100ms for 60+ datasets
+The package is pure Python at runtime; the only platform-specific
+notes are: NumPy / SciPy / scikit-learn / matplotlib must build (or
+download wheels) for your architecture. ``moirais doctor`` reports
+any missing optional dependencies.
 
 Docker
 ------
@@ -177,6 +143,6 @@ Cross-Platform Notes
   ``PKG_CONFIG_PATH="/opt/homebrew/opt/openblas/lib/pkgconfig"``.
 - **Linux (x86_64)**: Fully supported. Docker is the recommended
   deployment method for production.
-- **Linux (arm64)**: Pi 5 tested. Ollama ARM64 builds work natively.
+- **Linux (arm64)**: ARM64 Linux supported. Ollama ARM64 builds work natively.
 - **Windows**: WSL2 with Ubuntu is the supported path. Native Windows
   is not tested.

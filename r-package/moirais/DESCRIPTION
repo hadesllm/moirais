@@ -49,6 +49,9 @@ Suggests:
   jsonlite,
   data.table,
   readxl,
+  pracma,
+  signal,
+  smotefamily,
   testthat (>= 3.0.0)
 URL: https://github.com/hadesllm/moirais
 BugReports: https://github.com/hadesllm/moirais/issues

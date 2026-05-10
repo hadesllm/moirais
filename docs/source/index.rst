@@ -205,7 +205,6 @@ navigation, every page on this site is listed below — top to bottom:
    :hidden:
 
    methods/index
-   howto/index
 
 .. toctree::
    :maxdepth: 1
@@ -223,5 +222,4 @@ navigation, every page on this site is listed below — top to bottom:
    install
    cli
    methods/index
-   howto/index
    contributing

@@ -62,12 +62,12 @@ estimate_propensity_scores <- function(data, treatment, covariates,
 
 
 # ---------------------------------------------------------------------------
-# ATE — Hájek IPW
+# ATE -- Hajek IPW
 # ---------------------------------------------------------------------------
 
-#' Estimate the Average Treatment Effect (ATE) via Hájek IPW
+#' Estimate the Average Treatment Effect (ATE) via Hajek IPW
 #'
-#' The Hájek estimator uses stabilised IPW weights:
+#' The Hajek estimator uses stabilised IPW weights:
 #' \deqn{\widehat{ATE} = \bar{y}_1^{w} - \bar{y}_0^{w}}
 #' where \eqn{\bar{y}_t^{w} = \sum_{T_i=t} w_i Y_i / \sum_{T_i=t} w_i}
 #' and \eqn{w_i = T_i/\hat{e}(X_i) + (1-T_i)/(1-\hat{e}(X_i))}.
@@ -109,7 +109,7 @@ estimate_ate <- function(data, treatment, outcome, covariates,
 
 
 # ---------------------------------------------------------------------------
-# ATT — Average Treatment Effect on the Treated
+# ATT -- Average Treatment Effect on the Treated
 # ---------------------------------------------------------------------------
 
 #' Estimate the Average Treatment Effect on the Treated (ATT)
@@ -151,7 +151,7 @@ estimate_att <- function(data, treatment, outcome, covariates,
 
 
 # ---------------------------------------------------------------------------
-# ATC — Average Treatment Effect on the Controls
+# ATC -- Average Treatment Effect on the Controls
 # ---------------------------------------------------------------------------
 
 #' Estimate the Average Treatment Effect on the Controls (ATC)
@@ -187,7 +187,7 @@ estimate_atc <- function(data, treatment, outcome, covariates,
 
 
 # ---------------------------------------------------------------------------
-# AIPW — Doubly Robust ATE
+# AIPW -- Doubly Robust ATE
 # ---------------------------------------------------------------------------
 
 #' Augmented IPW (AIPW) doubly-robust ATE estimator
@@ -232,7 +232,7 @@ estimate_aipw <- function(data, treatment, outcome, covariates,
 
 
 # ---------------------------------------------------------------------------
-# GATE — Group Average Treatment Effect
+# GATE -- Group Average Treatment Effect
 # ---------------------------------------------------------------------------
 
 #' Estimate Group Average Treatment Effects (GATE)
@@ -288,7 +288,7 @@ estimate_gate <- function(data, treatment, outcome, covariates,
 
 
 # ---------------------------------------------------------------------------
-# CATE — Conditional (per-unit) treatment effects via T-learner
+# CATE -- Conditional (per-unit) treatment effects via T-learner
 # ---------------------------------------------------------------------------
 
 #' Estimate per-unit Conditional Average Treatment Effects (CATE)
@@ -336,7 +336,7 @@ estimate_cate <- function(data, treatment, outcome, covariates,
 
 
 # ---------------------------------------------------------------------------
-# LATE — Local Average Treatment Effect via 2SLS (Wald estimator)
+# LATE -- Local Average Treatment Effect via 2SLS (Wald estimator)
 # ---------------------------------------------------------------------------
 
 #' Estimate the Local Average Treatment Effect (LATE) via 2SLS / Wald
@@ -358,7 +358,7 @@ estimate_cate <- function(data, treatment, outcome, covariates,
 #' @export
 #' @references
 #'   Imbens GW, Angrist JD (1994). Identification and estimation of local
-#'   average treatment effects. *Econometrica*, 62(2), 467–475.
+#'   average treatment effects. *Econometrica*, 62(2), 467-475.
 estimate_late <- function(data, treatment, outcome, instrument,
                           covariates = NULL) {
   t <- as.numeric(data[[treatment]])
@@ -377,7 +377,7 @@ estimate_late <- function(data, treatment, outcome, instrument,
   if (is.null(covariates)) {
     num <- stats::cov(y, z)
     den <- stats::cov(t, z)
-    if (abs(den) < 1e-10) stop("Weak instrument: Cov(T, Z) ≈ 0")
+    if (abs(den) < 1e-10) stop("Weak instrument: Cov(T, Z) ~= 0")
     late <- num / den
     # Delta-method SE
     n <- length(y)
@@ -436,7 +436,7 @@ estimate_late <- function(data, treatment, outcome, instrument,
 #' @references
 #'   VanderWeele TJ, Ding P (2017). Sensitivity analysis in observational
 #'   research: introducing the E-value. *Annals of Internal Medicine*,
-#'   167(4):268–274.
+#'   167(4):268-274.
 #' @examples
 #' e_value(rr = 3.9, rr_lower = 2.4)
 e_value <- function(rr, rr_lower = NULL) {
@@ -448,7 +448,7 @@ e_value <- function(rr, rr_lower = NULL) {
 
 
 # ---------------------------------------------------------------------------
-# Sensitivity analysis — Rosenbaum bounds
+# Sensitivity analysis -- Rosenbaum bounds
 # ---------------------------------------------------------------------------
 
 #' Rosenbaum bounds sensitivity analysis
@@ -475,7 +475,7 @@ sensitivity_rosenbaum <- function(treated, control,
 
   results <- lapply(gamma_range, function(gamma) {
     # Sign score bounds (Rosenbaum 2002, Section 4.3)
-    # Under null, each unit has outcome contribution ±1
+    # Under null, each unit has outcome contribution +/-1
     y_diff <- outer(treated, control, "-")
     signs <- sign(y_diff)
     n_pairs <- n1 * n0

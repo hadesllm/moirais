@@ -23,15 +23,17 @@ Alcohol/Drug Survey) primary analysis context.
    siuiap
    sprott_doob
    doob_trends
+   tps
+   hawkes
+   spatial
+   statphysics
    quantization
    inference_engine
    signal_processing
    homomorphic_deconvolution
    crypto
-   spatial
    genomics
    polyglot
-   sensors
    deployment
 
 Quick reference

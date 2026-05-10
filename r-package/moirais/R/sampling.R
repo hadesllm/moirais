@@ -230,7 +230,7 @@ design_effect <- function(weights) {
 #'
 #' @param df A data frame.
 #' @param strata_col Name of the stratification column.
-#' @param population_sizes Named integer vector: stratum level → population size.
+#' @param population_sizes Named integer vector: stratum level -> population size.
 #' @return Numeric vector of design weights (same length as `nrow(df)`).
 #' @export
 compute_design_weights <- function(df, strata_col, population_sizes) {
@@ -253,7 +253,7 @@ compute_design_weights <- function(df, strata_col, population_sizes) {
 #'
 #' @param df A data frame.
 #' @param aux_vars Character vector of categorical auxiliary variable names.
-#' @param population_totals Named list: `"var_level"` → population count.
+#' @param population_totals Named list: `"var_level"` -> population count.
 #'   Keys should be `"varname_level"` (e.g. `"gender_female"`).
 #' @param initial_weights Optional numeric vector of starting weights.
 #' @param max_iter Maximum IPF iterations.

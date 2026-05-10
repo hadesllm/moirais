@@ -3,18 +3,26 @@
 \alias{estimate_aipw}
 \title{Augmented IPW (AIPW) doubly-robust ATE estimator}
 \description{
-  Augmented IPW (AIPW) doubly-robust ATE estimator
+  Augmented IPW (AIPW) doubly-robust ATE estimator.
 
-Combines IPW and outcome regression corrections. Consistent if
-**either** the propensity model **or** the outcome model is correctly
-specified.
+  Combines IPW and outcome regression corrections. Consistent if
+  \strong{either} the propensity model \strong{or} the outcome model
+  is correctly specified.
 }
 \usage{
-  estimate_aipw(outcome_model)
+  estimate_aipw(data, treatment, outcome, covariates,
+                propensity_col = NULL,
+                outcome_model = c("linear", "logistic"))
 }
 \arguments{
-  \item{outcome_model}{Family for the outcome model: '"linear"' or '"logistic"'.}
+  \item{data}{A data frame containing treatment, outcome, and covariate columns.}
+  \item{treatment}{Name of the binary treatment column (0/1).}
+  \item{outcome}{Name of the outcome column.}
+  \item{covariates}{Character vector of covariate column names.}
+  \item{propensity_col}{Optional name of a pre-computed propensity column.
+    If NULL, propensity is fit via logistic regression on \code{covariates}.}
+  \item{outcome_model}{Family for the outcome model: \code{"linear"} or \code{"logistic"}.}
 }
 \value{
-  Named list: 'ate', 'se', 'ci_lower', 'ci_upper', 'n'.
+  Named list: \code{ate}, \code{se}, \code{ci_lower}, \code{ci_upper}, \code{n}.
 }

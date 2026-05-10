@@ -195,7 +195,7 @@ TurboQuant was validated end-to-end on a 50.3M parameter autoresearch GPT model
 (Karpathy's `autoresearch <https://github.com/karpathy/autoresearch>`_,
 depth=4, d_model=256, 4 heads, vocab=8192) using post-training quantization
 of all 2D weight matrices. The model was trained on Apple M2 (MPS) and
-quantized/evaluated on Raspberry Pi 5 (16GB, ARM64 CPU).
+quantized/evaluated on a 16GB ARM64 system.
 
 .. list-table:: Post-Training Quantization — autoresearch 50.3M GPT
    :header-rows: 1
@@ -236,7 +236,7 @@ quantized/evaluated on Raspberry Pi 5 (16GB, ARM64 CPU).
      - **+0.0004 (+0.02%)**
      - **0.999**
      - **6.2x**
-     - **Pi 5**
+     - **ARM64**
 
 .. note::
 
@@ -377,7 +377,7 @@ finer centroid placement, reducing quantization MSE by approximately 15% at
 Reproduce
 ---------
 
-**5-bit model compression (Pi 5):**
+**5-bit model compression (ARM64 reference):**
 
 .. code-block:: bash
 

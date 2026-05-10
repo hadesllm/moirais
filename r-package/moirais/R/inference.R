@@ -101,9 +101,9 @@ chi_square_test <- function(observed, expected = NULL) {
   )
 }
 
-#' Fisher's exact test for 2×2 tables
+#' Fisher's exact test for 2x2 tables
 #'
-#' @param table_2x2 A 2×2 matrix or data frame of counts.
+#' @param table_2x2 A 2x2 matrix or data frame of counts.
 #' @param alternative `"two.sided"`, `"greater"`, or `"less"`.
 #' @return Named list: `odds_ratio`, `ci`, `p_value`.
 #' @export
@@ -239,7 +239,7 @@ levene_test <- function(...) {
 #'
 #' @param successes Number of successes.
 #' @param n Total observations.
-#' @param alpha Significance level (default 0.05 → 95% CI).
+#' @param alpha Significance level (default 0.05 -> 95% CI).
 #' @param method `"wilson"` (default), `"exact"` (Clopper-Pearson),
 #'   or `"wald"`.
 #' @return Named list: `p_hat`, `ci_lower`, `ci_upper`.
@@ -269,9 +269,9 @@ proportion_ci <- function(successes, n, alpha = 0.05,
   list(p_hat = p, ci_lower = pmax(0, ci[1]), ci_upper = pmin(1, ci[2]))
 }
 
-#' Odds ratio and 95% CI from a 2×2 contingency table
+#' Odds ratio and 95% CI from a 2x2 contingency table
 #'
-#' @param table_2x2 A 2×2 matrix: rows are treatment, columns are outcome.
+#' @param table_2x2 A 2x2 matrix: rows are treatment, columns are outcome.
 #' @param alpha Significance level.
 #' @return Named list: `or`, `ci_lower`, `ci_upper`, `p_value`.
 #' @export
@@ -288,7 +288,7 @@ odds_ratio_ci <- function(table_2x2, alpha = 0.05) {
 
 #' Risk ratio (relative risk) with log-normal CI
 #'
-#' @param table_2x2 A 2×2 matrix: rows are exposure, columns are outcome (disease = col 1).
+#' @param table_2x2 A 2x2 matrix: rows are exposure, columns are outcome (disease = col 1).
 #' @param alpha Significance level.
 #' @return Named list: `rr`, `ci_lower`, `ci_upper`.
 #' @export
@@ -309,7 +309,7 @@ risk_ratio_ci <- function(table_2x2, alpha = 0.05) {
 
 #' Risk difference (ARD) with Newcombe CI
 #'
-#' @param table_2x2 A 2×2 matrix: rows are exposure, columns are outcome.
+#' @param table_2x2 A 2x2 matrix: rows are exposure, columns are outcome.
 #' @param alpha Significance level.
 #' @return Named list: `rd`, `ci_lower`, `ci_upper`.
 #' @export
@@ -388,10 +388,10 @@ omega_squared <- function(f_stat, df_between, df_within, n) {
   (df_between * (f_stat - 1)) / (df_between * (f_stat - 1) + n)
 }
 
-#' Cramér's V for categorical association
+#' Cramer's V for categorical association
 #'
 #' @param contingency_table A numeric matrix of observed counts.
-#' @return Numeric Cramér's V in [0, 1].
+#' @return Numeric Cramer's V in [0, 1].
 #' @export
 cramers_v <- function(contingency_table) {
   m <- as.matrix(contingency_table)
@@ -509,7 +509,7 @@ power_prop_test <- function(n = NULL, p1 = NULL, p2 = NULL,
 #' @references
 #'   Hsieh FY, Bloch DA, Larsen MD (1998). A simple method of sample size
 #'   calculation for linear and logistic regression.
-#'   *Statistics in Medicine*, 17(14):1623–1634.
+#'   *Statistics in Medicine*, 17(14):1623-1634.
 sample_size_logistic <- function(p0, or, alpha = 0.05, power = 0.80,
                                   two_sided = TRUE) {
   p1 <- (or * p0) / (1 - p0 + or * p0)

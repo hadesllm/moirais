@@ -1,4 +1,4 @@
-# data.R — roxygen2 documentation for package data objects
+# data.R -- roxygen2 documentation for package data objects
 
 #' MOIRAIS Dataset Catalog
 #'

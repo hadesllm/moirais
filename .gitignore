@@ -32,6 +32,7 @@ Thumbs.db
 
 # Docs build
 docs/build/
+.sphinx-doctrees/
 
 # Local data caches (downloaded on demand, not committed)
 data/cache/

@@ -39,11 +39,11 @@ df <- data.frame(
 )
 
 # Stratified random sample within region.
-strat <- stratified_sample(df, strata = "region", n_per_stratum = 50)
+strat <- stratified_sample(df, strata_col = "region", n_per_stratum = 50)
 
 # Single-stage cluster sample on region (all units in sampled
 # clusters are kept).
-clust <- cluster_sample(df, cluster = "region", n_clusters = 2)
+clust <- cluster_sample(df, cluster_col = "region", n_clusters = 2)
 
 dim(strat)
 dim(clust)
@@ -56,8 +56,14 @@ weights consistent with a known sampling scheme and known
 population marginals.
 
 ```{r weights, eval = exists("compute_design_weights")}
-# Design weights from inclusion probabilities.
-design <- compute_design_weights(df, prob = pmin(df$weight / 2, 1))
+# Design weights from a stratified scheme.
+# Treat `region` as the stratum; supply known population sizes per stratum.
+pop_sizes <- c(ON = 14000000, QC = 8500000, BC = 5200000, AB = 4400000)
+design <- compute_design_weights(
+  df,
+  strata_col       = "region",
+  population_sizes = pop_sizes
+)
 head(design)
 ```
 
@@ -81,8 +87,12 @@ and complex-sample variances.
 # Bootstrap variance with weights
 
 ```{r bootstrap}
-# Resample with weights to compute a bootstrap CI.
-boot <- bootstrap_sample(df, n_boot = 100, weights = df$weight)
+# Bootstrap a weighted statistic --- here, the weighted mean of `age`.
+boot <- bootstrap_sample(
+  df,
+  statistic   = function(x) stats::weighted.mean(x$age, x$weight),
+  n_bootstrap = 100
+)
 str(boot, max.level = 1)
 ```
 

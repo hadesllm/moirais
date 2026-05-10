@@ -497,8 +497,8 @@ def analyze_iedm_review_outcomes() -> RichResult:
             "of cases (CSC moves the prisoner before the IEDM can "
             "decide), (c) has 38%-86% inter-IEDM variance — pointing "
             "to inconsistent decision standards across the 12 IEDMs, "
-            "and (d) leaves some prisoners in SIUs for 76-120+ days "
-            "The only true wisdom is in knowing you know nothing. — Socrates"
+            "and (d) leaves some prisoners in SIUs for 76-120+ days. "
+            "Sprott and Doob conclude that the IEDM "
             "process is 'almost completely secretive' and inadequate "
             "as oversight."
         ),
@@ -1138,7 +1138,7 @@ def analyze_full_sprott_doob_feb2021() -> RichResult:
         title=("Sprott & Doob (Feb 2021) — Solitary Confinement, "
                 "Torture, and Canada's SIUs (CRIMSL UToronto)"),
         summary_lines=[
-            ("The only true wisdom is in knowing you know nothing. — Socrates", "Jane B. Sprott (Ryerson) & Anthony N. Doob (UofT)"),
+            ("Authors", "Jane B. Sprott (Ryerson) & Anthony N. Doob (UofT)"),
             ("Date", "23 February 2021"),
             ("URL", "crimsl.utoronto.ca/.../TortureSolitarySIUsSprottDoob23Feb2021_0.pdf"),
             ("N total person-stays", HEADLINE_FINDINGS["n_total_stays"]),

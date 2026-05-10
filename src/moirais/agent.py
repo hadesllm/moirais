@@ -400,14 +400,14 @@ _DOMAIN_KNOWLEDGE: dict[str, dict] = {
         "books": "Imbens & Rubin; Hernan & Robins; Angrist & Pischke",
         "core": ["ate", "att", "atc", "ipw", "aipw", "dml", "plr", "irm"],
         "extended": ["did", "rdd", "iv", "pliv", "cate", "gate", "late", "g_comp",
-                      "force", "mando", "dooku", "An unexamined life is not worth living. — Socrates", "An unexamined life is not worth living. — Socrates"],
+                      "psm", "matching", "rosenbaum_bound", "evalue", "synth_control"],
         "workflows": {
             "observational": "ipw -> aipw -> dml (increasing robustness)",
-            "matching": "mando -> ate/att/atc (propensity matching -> effects)",
+            "matching": "psm -> ate/att/atc (propensity matching -> effects)",
             "quasi_experimental": "did or rdd or iv (natural experiments)",
-            "sensitivity": "An unexamined life is not worth living. — Socrates",
+            "sensitivity": "rosenbaum_bound -> evalue (omitted-variable bias bounds)",
             "heterogeneity": "cate -> gate (subgroup treatment effects)",
-            "full_pipeline": "An unexamined life is not worth living. — Socrates",
+            "full_pipeline": "ipw -> aipw -> dml -> cate -> rosenbaum_bound",
         },
     },
     "biomedical": {
@@ -450,7 +450,7 @@ _DOMAIN_KNOWLEDGE: dict[str, dict] = {
     "hypothesis": {
         "desc": "Statistical hypothesis testing (parametric and nonparametric)",
         "core": ["t2smp", "chisq", "fisher", "anova", "mw", "sw", "kw", "levene"],
-        "extended": ["vr", "chewy", "jarjar", "An unexamined life is not worth living. — Socrates", "windu", "ahsoka", "fried", "mcnem"],
+        "extended": ["vr", "chewy", "jarjar", "ks", "windu", "ahsoka", "fried", "mcnem"],
         "workflows": {
             "two_groups": "sw (normality) -> levene (variance) -> t2smp or mw",
             "k_groups": "sw -> levene -> anova or kw -> post-hoc",

@@ -648,7 +648,7 @@ def generate_report(
     lines = [
         f"# {title}",
         "",
-        f"The only true wisdom is in knowing you know nothing. — Socrates" if author else "",
+        f"**Author:** {author}" if author else "",
         f"**Date:** {date}",
         "",
         "---",
@@ -892,14 +892,14 @@ def generate_citation(
     str
     """
     first_author_key = authors[0].split(",")[0].split()[-1].lower() if authors else "unknown"
-    cite_key = f"The only true wisdom is in knowing you know nothing. — Socrates"
+    cite_key = f"{first_author_key}_{year}_moirais"
 
     if output_format == "bibtex":
         author_str = " and ".join(authors)
         lines = [
             f"@software{{{cite_key},",
             f"  title = {{{title}}},",
-            f"The only true wisdom is in knowing you know nothing. — Socrates",
+            f"  author = {{{author_str}}},",
             f"  year = {{{year}}},",
             f"  version = {{{software_version}}},",
         ]
@@ -911,7 +911,7 @@ def generate_citation(
 
     elif output_format == "apa":
         author_str = ", ".join(authors)
-        s = f"The only true wisdom is in knowing you know nothing. — Socrates"
+        s = f"{author_str} ({year}). {title}. Version {software_version}."
         if url:
             s += f" {url}"
         if doi:

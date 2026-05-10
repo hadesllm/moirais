@@ -81,10 +81,10 @@ BibTeX:
 
 ```bibtex
 @Manual{ruhela_moirais_2026,
-  title   = {moirais: Multi-Domain Methods for Observational Inference and Robust Analysis},
+  title   = {MOIRAIS: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation},
   author  = {Ruhela, Vansh Singh},
   year    = {2026},
-  note    = {R package version 0.1.0},
+  note    = {R package version 0.1.0-2},
   doi     = {10.5281/zenodo.20096350},
   url     = {https://github.com/hadesllm/moirais}
 }

@@ -295,6 +295,7 @@ navigation, every page on this site is listed below — top to bottom:
    :caption: Documentation
    :hidden:
 
+   architecture
    methods/index
    api/index
 

@@ -46,6 +46,8 @@ extensions = [
     "sphinx.ext.mathjax",
     # Markdown support
     "myst_parser",
+    # Mermaid class / flow diagrams (architecture page)
+    "sphinxcontrib.mermaid",
     # R autodoc bridge (local extension)
     "_ext.r_autodoc",
 ]

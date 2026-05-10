@@ -4,7 +4,7 @@
 
 A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the MRM framework as a primary application for Canadian carceral, police, and oversight data analysis.
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](LICENSE)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://github.com/hadesllm/moirais/blob/main/LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/moirais.svg)](https://pypi.org/project/moirais/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20096350-blue)](https://doi.org/10.5281/zenodo.20096350)
@@ -74,7 +74,7 @@ Crime. Zenodo.
 https://doi.org/10.5281/zenodo.20102198
 ```
 
-See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.
+See [`CITATION.cff`](https://github.com/hadesllm/moirais/blob/main/CITATION.cff) for machine-readable citation metadata.
 
 ## Acknowledgments
 
@@ -143,9 +143,9 @@ under the same standard disclaimer.
 
 ## License
 
-MOIRAIS is released under the GNU General Public License v2 (`GPL-2.0-only`); see [`LICENSE`](LICENSE). The licensing matrix for individual components is documented in [`LICENSING.md`](LICENSING.md).
+MOIRAIS is released under the GNU General Public License v2 (`GPL-2.0-only`); see [`LICENSE`](https://github.com/hadesllm/moirais/blob/main/LICENSE). The licensing matrix for individual components is documented in [`LICENSING.md`](https://github.com/hadesllm/moirais/blob/main/LICENSING.md).
 
 ## Reporting issues / security
 
 - General issues: [GitHub Issues](https://github.com/hadesllm/moirais/issues)
-- Security vulnerabilities: see [`SECURITY.md`](.github/SECURITY.md)
+- Security vulnerabilities: see [`SECURITY.md`](https://github.com/hadesllm/moirais/blob/main/.github/SECURITY.md)

@@ -37,6 +37,7 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "Intended Audience :: Legal Industry",
     "Intended Audience :: Education",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.12",
@@ -70,11 +71,17 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/hadesllm/moirais"
-Repository = "https://github.com/hadesllm/moirais"
-Issues = "https://github.com/hadesllm/moirais/issues"
-Documentation = "https://github.com/hadesllm/moirais#readme"
-Changelog = "https://github.com/hadesllm/moirais/releases"
+Homepage      = "https://hadesllm.github.io/moirais/"
+Documentation = "https://hadesllm.github.io/moirais/"
+"Source code" = "https://github.com/hadesllm/moirais"
+"Issue tracker" = "https://github.com/hadesllm/moirais/issues"
+Changelog     = "https://github.com/hadesllm/moirais/releases"
+"Download"    = "https://pypi.org/project/moirais/#files"
+"R package"   = "https://hadesllm.r-universe.dev/moirais"
+"Container (GHCR)" = "https://github.com/hadesllm/moirais/pkgs/container/moirais"
+"MOIRAIS paper (Zenodo)"          = "https://doi.org/10.5281/zenodo.20096350"
+"MRM framework paper (Zenodo)"    = "https://doi.org/10.5281/zenodo.20096075"
+"Hawkes process paper (Zenodo)"   = "https://doi.org/10.5281/zenodo.20102198"
 
 [project.optional-dependencies]
 test = [
@@ -107,6 +114,7 @@ carbon = [
 docs = [
     "sphinx>=7.0",
     "myst-parser",
+    "sphinxcontrib-mermaid",
 ]
 
 [project.scripts]

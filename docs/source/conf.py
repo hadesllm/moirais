@@ -3,14 +3,17 @@
 from pathlib import Path
 import sys
 
+try:
+    import tomllib  # Python 3.11+
+except ModuleNotFoundError:  # pragma: no cover
+    import tomli as tomllib
+
 # ---------------------------------------------------------------------------
 # Paths (industry-standard src-layout)
 # ---------------------------------------------------------------------------
-# conf.py lives at docs/source/conf.py
-# parents[1] resolves to docs/, parents[2] resolves to repo root.
 _HERE = Path(__file__).resolve().parent
 _REPO = _HERE.parents[1]
-_PY_PKG = _REPO / "src"                       # contains src/moirais/
+_PY_PKG = _REPO / "src"
 _R_PKG = _REPO / "r-package" / "moirais"
 
 # Python package on sys.path for autodoc
@@ -20,12 +23,15 @@ sys.path.insert(0, str(_PY_PKG))
 sys.path.insert(0, str(_HERE))
 
 # ---------------------------------------------------------------------------
-# Project metadata
+# Project metadata — version read dynamically from pyproject.toml
+# (single source of truth; no manual sync needed)
 # ---------------------------------------------------------------------------
 project = "MOIRAIS"
 copyright = "2026, Vansh Singh Ruhela"
 author = "Vansh Singh Ruhela"
-release = "0.1.1"
+with (_REPO / "pyproject.toml").open("rb") as _fh:
+    release = tomllib.load(_fh)["project"]["version"]
+version = ".".join(release.split(".")[:2])  # short X.Y form
 
 # ---------------------------------------------------------------------------
 # Extensions

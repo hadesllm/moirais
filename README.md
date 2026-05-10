@@ -2,7 +2,7 @@
 
 **Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation**
 
-A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the DLRM framework as a flagship application for Canadian carceral, police, and oversight data analysis.
+A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the DLRM framework as a primary application for Canadian carceral, police, and oversight data analysis.
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/moirais.svg)](https://pypi.org/project/moirais/)
@@ -43,7 +43,7 @@ import moirais
 # Load a built-in dataset
 df = moirais.load_dataset("otis-2025")
 
-# Run a Ruhela formulation (DLRM flagship)
+# Run a Ruhela formulation (DLRM primary)
 from moirais.otis_all_analyze import analyze_a01_ruhela_formulations
 result = analyze_a01_ruhela_formulations(df)
 print(result)

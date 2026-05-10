@@ -10,8 +10,9 @@ MOIRAIS — Methods for Observational Inference and Robust Analysis of Intervent
 .. image:: https://img.shields.io/badge/R-4.3%2B-276DC3.svg
    :alt: R 4.3+
 
-.. image:: https://img.shields.io/badge/version-0.1.1-green.svg
-   :alt: Version 0.1.1
+.. image:: https://img.shields.io/pypi/v/moirais.svg
+   :target: https://pypi.org/project/moirais/
+   :alt: PyPI version
 
 .. image:: https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20096350-blue
    :target: https://doi.org/10.5281/zenodo.20096350
@@ -20,7 +21,7 @@ MOIRAIS — Methods for Observational Inference and Robust Analysis of Intervent
 A dual-language (Python + R) multi-domain scientific computing toolkit for
 observational inference, with sociolegal, signal-processing, cryptographic,
 spatial-statistics, statistical-physics, and psychometrics modules. Hosts
-the DLRM (Doob–Levinsky–Ruhela–Medina) framework as a flagship application
+the DLRM (Doob–Levinsky–Ruhela–Medina) framework as a primary application
 for Canadian carceral, police, and oversight data analysis.
 
 ----

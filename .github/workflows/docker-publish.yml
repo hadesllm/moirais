@@ -17,6 +17,19 @@ on:
       - main
     tags:
       - 'v*'
+    # Don't fire the 28-min multi-arch rebuild for docs-only or
+    # workflow-only changes that don't affect the runtime image.
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+      - 'paper.md'
+      - 'paper.bib'
+      - 'CITATION.cff'
+      - '.github/workflows/pages.yml'
+      - '.github/workflows/pypi-publish.yml'
+      - '.github/workflows/draft-pdf.yml'
+      - '.github/workflows/r-cmd-check.yml'
+      - 'r-package/**'
   workflow_dispatch:
 
 env:

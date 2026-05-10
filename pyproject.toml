@@ -105,10 +105,7 @@ carbon = [
 ]
 docs = [
     "sphinx>=7.0",
-    "furo",
     "myst-parser",
-    "sphinx-gallery",
-    "jupyter"
 ]
 
 [project.scripts]

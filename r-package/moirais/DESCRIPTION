@@ -16,7 +16,7 @@ Maintainer: Vansh Singh Ruhela <hadesllm@proton.me>
 Description: Multi-domain scientific computing toolkit for observational
   inference and intervention analysis across scientific-experimentation
   contexts, hosting the DLRM (Doob-Levinsky-Ruhela-Medina) framework for
-  Canadian carceral, police, and oversight data as its flagship application.
+  Canadian carceral, police, and oversight data as its primary application.
   Provides general-purpose causal estimators (ATE, ATT, ATC, GATE, CATE,
   LATE, AIPW, G-computation), survey sampling methods (stratified, cluster,
   PPS, bootstrap, calibration weights), propensity-score and doubly-robust

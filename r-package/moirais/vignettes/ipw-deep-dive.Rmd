@@ -59,7 +59,7 @@ stabilises the estimator under finite samples even when the
 propensity tails are heavy:
 
 ```{r hajek}
-ate_hajek <- estimate_ate(df, "y", "treat", c("X1", "X2"),
+ate_hajek <- estimate_ate(df, treatment = "treat", outcome = "y", covariates = c("X1", "X2"),
                           propensity_col = "ps")
 ate_hajek$estimate
 ate_hajek$se
@@ -89,7 +89,7 @@ should consider:
 # AIPW for protection against IPW failure
 
 ```{r aipw}
-aipw <- estimate_aipw(df, "y", "treat", c("X1", "X2"))
+aipw <- estimate_aipw(df, treatment = "treat", outcome = "y", covariates = c("X1", "X2"))
 aipw$estimate
 ```
 

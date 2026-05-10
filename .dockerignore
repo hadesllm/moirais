@@ -1,0 +1,86 @@
+# Keep build context minimal. Only pyproject.toml + src/ + README.md is
+# strictly required; everything else here is excluded so layer caches stay
+# tight and the context upload is small.
+
+# Version control and CI metadata
+.git
+.github
+.gitignore
+.gitattributes
+
+# Editor / OS
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Python build artefacts
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.egg-info
+*.egg
+.eggs
+build
+dist
+.venv
+venv
+env
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.tox
+htmlcov
+.coverage
+coverage.xml
+.hypothesis
+
+# R package — not shipped in the Python container
+r-package
+*.Rproj
+.Rhistory
+.Rdata
+.Rapp.history
+
+# Documentation and papers — not needed at runtime
+docs
+paper.md
+paper.bib
+paper.pdf
+*.md
+!README.md
+
+# Tests — runtime image is production, not test
+tests
+test
+.benchmarks
+
+# Large data binaries — distributed via `moirais download-bootstrap`
+*.db
+*.sqlite
+*.sqlite3
+src/moirais/data/*.db
+src/moirais/data/*.sqlite
+
+# Build/CI tooling
+Makefile
+docker-compose*.yml
+.dockerignore
+Dockerfile
+
+# Notebooks
+*.ipynb
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# Secrets — defence in depth (none should be in repo, but enforce here)
+*.pem
+*.key
+.env
+.env.*
+!.env.example

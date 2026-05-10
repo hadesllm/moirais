@@ -169,7 +169,10 @@ public health researchers who need:
 - Carbon-aware computing for responsible public health AI
 - Canadian public health datasets (CPADS, CIHI) as first-class inputs
 
-The package is licensed GPL-2.0-or-later.  Per-component license map (clew dual MIT/Apache, MOIRAIS GPL-2.0, keyserver proprietary) + full acknowledgments live in ``LICENSING.md`` at the repo root.
+MOIRAIS is licensed under GPL-2.0-only (Linus copyleft, deliberately
+chosen over GPL-3.0 for compatibility with the broader Linux-kernel-style
+ecosystem). See ``LICENSE`` for the full text and ``LICENSING.md`` for
+the rationale.
 
 ----
 

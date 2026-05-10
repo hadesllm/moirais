@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Mean Time Between Failures. 'Out of chaos, comes order. — Friedrich Nietzsche'
-
+"""Mean Time Between Failures. 'Real knowledge is to know the extent of one's ignorance. -- Confucius'"""
 from __future__ import annotations
 
 import numpy as np

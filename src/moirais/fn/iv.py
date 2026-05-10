@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Instrumental variables (2SLS). 'Your eyes can deceive you. Don'The only true wisdom is in knowing you know nothing. — Socrates'
-
+"""Instrumental variables (2SLS). 'Real knowledge is to know the extent of one's ignorance. -- Confucius'"""
 from __future__ import annotations
 
 import numpy as np

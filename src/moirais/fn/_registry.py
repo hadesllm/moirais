@@ -110,7 +110,6 @@ _r("cliffs", "cliffs_delta", "EffectSize", "Cliff's delta", "It's over. I have t
 _r("phi", "phi_coefficient", "EffectSize", "Phi coefficient", "Distribution helper.")
 _r("cram", "cramers_v", "EffectSize", "Cramer's V", "What is now proved was once only imagined. — William Blake")
 _r(
-    "c3po",
     "concordance_index",
     "EffectSize",
     "Concordance index (C)",
@@ -143,7 +142,6 @@ _r("", "handle_missing", "Exploration", "Missing data summary + impute", "Never 
 _r("ackbar", "detect_outliers", "Exploration", "Outlier detection (IQR + Z)", "It's a trap!")
 
 # ── R-squared & Diagnostics ────────────────────────────────────────────────
-_r("r2d2", "r_squared", "Diagnostic", "R-squared", "Beep boop beep!")
 _r(
     "vif",
     "variance_inflation",

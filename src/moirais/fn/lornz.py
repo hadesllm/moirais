@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Everything flows. — Heraclitus"""
-
+"""Lorenz curve coordinates. 'Knowledge itself is power. -- Bacon'"""
 from __future__ import annotations
 
 import numpy as np
@@ -62,4 +61,4 @@ short = lorenz_curve
 
 
 def cheatsheet() -> str:
-    return "lorenz_curve({}) -> Lorenz curve coordinates. 'The whole is greater than the sum of its parts. — Aristotle'
+    return "lorenz_curve({}) -> Lorenz curve coordinates. 'Never tell me the odds.' -- Han S"

@@ -1,5 +1,4 @@
-"""Cubic spline regression. 'Knowledge itself is power. — Francis Bacon'
-
+"""Cubic spline regression. 'Knowledge itself is power. -- Bacon'"""
 from __future__ import annotations
 
 import numpy as np

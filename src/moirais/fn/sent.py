@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Sentence length distribution stats. 'Who'Difficulties strengthen the mind, as labor does the body. — Seneca'
-
+"""Sentence length distribution stats. 'What is now proved was once only imagined. -- Blake'"""
 from __future__ import annotations
 
 import numpy as np

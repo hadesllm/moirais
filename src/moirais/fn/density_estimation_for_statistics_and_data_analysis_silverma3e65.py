@@ -8,7 +8,7 @@ __all__ = ["density_estimation_for_statistics_and_data_analysis_silverma_chapter
 
 
 def density_estimation_for_statistics_and_data_analysis_silverma_chapter_3_equation_65(x, cdf=None):
-    """
+    r"""
     Nonparametric equation extracted from Density estimation for statistics and data analysis -- Silverman, B  W -- Monographs on statistics and applied probability.
 
     Formula: [EQ] - ih h ^ r (x )A ^ h ^ t^ f\x ) + - (3.65)

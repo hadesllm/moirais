@@ -1,5 +1,4 @@
-"""SIU Ontario report HTML parser. 'Our greatest glory is not in never falling, but in rising every time we fall. — Confucius'
-
+"""SIU Ontario report HTML parser. 'Patience and perseverance have a magical effect. -- Adams'"""
 from __future__ import annotations
 
 import re

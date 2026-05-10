@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Nature does not hurry, yet everything is accomplished. — Lao Tzu"""
-
+"""ATE difference-in-means. 'We suffer more often in imagination than in reality. -- Seneca'"""
 from __future__ import annotations
 
 import numpy as np
@@ -38,4 +37,12 @@ def ate_diff(
         ci_upper=ate + t_crit * se,
         se=se,
         n=len(df),
-        extra={"n1": len(y1), "n0": len(y0), "df"You have power over your mind — not outside events. Realize this, and you will find strength. — Marcus Aurelius"Nature does not hurry, yet everything is accomplished. — Lao Tzu"
+        extra={"n1": len(y1), "n0": len(y0), "df": df_w},
+    )
+
+
+force = ate_diff
+
+
+def cheatsheet() -> str:
+    return "ate_diff({}) -> ATE difference-in-means. 'The Force is strong with this one."

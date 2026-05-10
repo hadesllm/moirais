@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Patience is bitter, but its fruit is sweet. — Aristotle"""
-
+"""Haversine great-circle distance. 'Knowing yourself is true wisdom. -- Lao Tzu'"""
 from __future__ import annotations
 
 import numpy as np
@@ -73,4 +72,4 @@ havsn = haversine_distance
 
 
 def cheatsheet() -> str:
-    return "haversine_distance({}) -> Haversine great-circle distance. 'Time discovers truth. — Seneca'
+    return "haversine_distance({}) -> Haversine great-circle distance. 'Punch it, Chewie!' -- Han "

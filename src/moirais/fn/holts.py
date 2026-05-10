@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Holt's linear trend method. 'I love you.' 'Real knowledge is to know the extent of one's ignorance. — Confucius'
-
+"""Holt. 'Patience and perseverance have a magical effect. -- Adams'"""
 from __future__ import annotations
 
 import numpy as np
@@ -70,4 +69,4 @@ holts = holts_method
 
 
 def cheatsheet() -> str:
-    return "holts_method({}) -> Holt's linear trend method. 'I love you.' 'Real knowledge is to know the extent of one's ignorance. — Confucius'
+    return "holts_method({}) -> Holt's linear trend method. 'I love you.' 'I know.' -- Leia "

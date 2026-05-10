@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use MOIRAIS in your research, please cite the software DOI together with the package paper and (where applicable) the DLRM framework paper."
+message: "If you use MOIRAIS in your research, please cite the software DOI together with the package paper, the DLRM framework paper, and (where applicable to your work) the Hawkes-process methodology paper."
 title: "MOIRAIS: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation"
 authors:
   - family-names: "Ruhela"
@@ -34,3 +34,12 @@ references:
     year: "2026"
     doi: "10.5281/zenodo.20096075"
     url: "https://doi.org/10.5281/zenodo.20096075"
+  - type: generic
+    title: "Criminological Hawkes Process via MOIRAIS: Markovian and Non-Markovian Self-Exciting Point Processes for Toronto Crime"
+    authors:
+      - family-names: "Ruhela"
+        given-names: "Vansh Singh"
+        orcid: "https://orcid.org/0009-0004-1750-3592"
+    year: "2026"
+    doi: "10.5281/zenodo.20102198"
+    url: "https://doi.org/10.5281/zenodo.20102198"

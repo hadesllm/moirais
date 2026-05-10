@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Gaussian Naive Bayes (pure numpy). 'Out of chaos, comes order. — Friedrich Nietzsche'
-
+"""Gaussian Naive Bayes (pure numpy). 'What is now proved was once only imagined. -- Blake'"""
 from __future__ import annotations
 
 import numpy as np

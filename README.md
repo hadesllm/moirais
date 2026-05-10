@@ -55,7 +55,7 @@ Full documentation is at [hadesllm.github.io/moirais](https://hadesllm.github.io
 
 ## Citation
 
-If you use MOIRAIS in your research, please cite both the package paper and the DLRM framework paper:
+If you use MOIRAIS in your research, please cite the package paper, the DLRM framework paper, and (where applicable to your work) the Hawkes-process methodology paper:
 
 ```
 Ruhela, V. S. (2026). MOIRAIS: A Multi-Domain Scientific Computing
@@ -67,6 +67,11 @@ Ruhela, V. S. (2026). The DLRM Framework: A Multi-Source Mathematical
 Foundation for Canadian Carceral, Police, and Oversight Data, Implemented
 as RF Modules in MOIRAIS. Zenodo.
 https://doi.org/10.5281/zenodo.20096075
+
+Ruhela, V. S. (2026). Criminological Hawkes Process via MOIRAIS:
+Markovian and Non-Markovian Self-Exciting Point Processes for Toronto
+Crime. Zenodo.
+https://doi.org/10.5281/zenodo.20102198
 ```
 
 See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.

@@ -8,7 +8,7 @@ __all__ = ["density_estimation_for_statistics_and_data_analysis_silverma_chapter
 
 
 def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnumbered_22(x):
-    """
+    r"""
     Dispersion expression (auto-extracted; see ref).
 
     Formula: [EQ] /(x fd x =Y ,n-^h-^K {h~\x-X i)}

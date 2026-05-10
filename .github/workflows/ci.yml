@@ -61,9 +61,16 @@ jobs:
       - uses: r-lib/actions/setup-r@v2
         with:
           r-version: "release"
+          use-public-rspm: true
 
-      - name: Install R deps
-        run: Rscript -e "install.packages(c('testthat','survey','DBI','RSQLite','jsonlite'), repos='https://cloud.r-project.org/', quiet=TRUE)"
+      # setup-r-dependencies@v2 installs DESCRIPTION's Imports/Suggests
+      # AND any extra-packages list, into the right user library so
+      # later library() / Rscript calls find them.
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          working-directory: r-package/moirais
+          extra-packages: any::testthat any::survey any::DBI any::RSQLite any::jsonlite
+          needs: check
 
       - name: Install moirais
         run: R CMD INSTALL r-package/moirais

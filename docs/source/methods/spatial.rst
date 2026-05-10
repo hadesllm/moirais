@@ -172,6 +172,64 @@ Point Pattern Analysis
 - ``stkde`` -- Spatio-temporal kernel density estimation
 - ``stscan`` -- Space-time scan statistic (Kulldorff)
 
+Density-Based Clustering
+------------------------
+
+- ``stdbs`` -- DBSCAN with spatio-temporal distance metric. Used in
+  ``moirais.tps_spatial_advanced`` to find connected hot clusters
+  across the TPS incident feed and produce yearly small-multiples
+  with a four-crime overlay (Assault / Robbery / Auto Theft /
+  Break-and-Enter).
+- ``hdbsc`` -- HDBSCAN hierarchical variant for density-varying data.
+
+Kulldorff Space-Time Scan
+-------------------------
+
+The Kulldorff scan statistic detects significant spatio-temporal
+clusters by maximising a likelihood ratio over candidate cylindrical
+windows in space-time. Implementation in ``stscan`` returns the most
+likely cluster, its log-likelihood ratio, the Monte-Carlo p-value, and
+the included neighbourhoods + time window. The Hohl-style
+"panel d" visualisation is rendered by
+``moirais.tps_render.render_satscan_panel`` -- it draws the
+significant cluster polygons over a base choropleth.
+
+Reference: Kulldorff, M. (1997). *A spatial scan statistic.*
+Communications in Statistics 26(6):1481--1496.
+
+Visualization Helpers
+---------------------
+
+The ``moirais.tps_render`` and ``moirais.tps_spatial_advanced``
+modules expose publication-style plot helpers commonly paired with
+the spatial estimators above:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 38 62
+
+   * - Plot type
+     - Function
+   * - Choropleth (per 100k, 9 categories)
+     - ``moirais.tps_render.render_choropleth``
+   * - District proportional-symbol map (6 former-borough divisions)
+     - ``moirais.tps_render.render_district_proportional``
+   * - 4-panel quad (density / rate / LISA / Gi*)
+     - ``moirais.tps_render.render_quad``
+   * - Yearly small-multiples (4-crime overlay + DBSCAN clusters)
+     - ``moirais.tps_render.render_yearly_grid``
+   * - DBSCAN cluster overlay
+     - ``moirais.tps_render.render_dbscan``
+   * - Bivariate Moran scatter
+     - ``moirais.tps_spatial_advanced.bivariate_moran``
+   * - Moran sweep heatmap (categories x years)
+     - ``moirais.tps_spatial_advanced.moran_sweep_heatmap``
+   * - Kulldorff panel d (Hohl-style)
+     - ``moirais.tps_render.render_satscan_panel``
+
+Style follows Hohl, A. *Geographic visualization of disease cluster
+detection results.*
+
 Spatio-Temporal Extensions
 --------------------------
 

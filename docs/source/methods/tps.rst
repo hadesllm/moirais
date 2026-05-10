@@ -72,10 +72,10 @@ Quick start
 
 .. code-block:: python
 
-   from moirais.tps_io import load_tps_category
+   from moirais.tps_io import load_tps
    from moirais.tps_hawkes_advanced import compare_hawkes_kernels
 
-   df = load_tps_category("Assault")
+   df = load_tps("Assault")
    results = compare_hawkes_kernels(df)
    print(results)  # ranks 8 (kernel x baseline) combinations by AIC
 

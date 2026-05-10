@@ -396,3 +396,146 @@ def polygon_morans_i(*, ds_name: str = "NeighbourhoodCrimeRates",
                  "p_value": float(p) if math.isfinite(p) else None,
                  "n": int(n), "var_I": float(var_I)},
     )
+
+
+# ── Bivariate Moran's I ────────────────────────────────────────────
+
+
+def bivariate_moran(*, ds_name: str = "NeighbourhoodCrimeRates",
+                    x_col_prefix: str = "ASSAULT_RATE",
+                    y_col_prefix: str = "HOMICIDE_RATE",
+                    year: int = 2024,
+                    k_neighbours: int = 5) -> RichResult:
+    """Bivariate Moran's I between two crime-rate columns.
+
+    Generalises ``polygon_morans_i`` to two attributes:
+    measures the cross-correlation between attribute X at location i
+    and attribute Y at neighbouring locations j. Polygon centroids +
+    k-nearest-neighbour weights, same construction as
+    ``polygon_morans_i``.
+
+    .. math::
+
+        I_{xy} = \\frac{n}{S_0}\\,
+                 \\frac{\\sum_i \\sum_j w_{ij}\\, z^x_i\\, z^y_j}
+                      {\\sqrt{\\sum_i (z^x_i)^2 \\cdot \\sum_i (z^y_i)^2}}
+
+    where :math:`z^x` and :math:`z^y` are z-scored attributes.
+    """
+    from .tps_io import load_tps
+    df = load_tps("NeighbourhoodCrimeRates", format="geojson")
+    x_col = f"{x_col_prefix}_{year}"
+    y_col = f"{y_col_prefix}_{year}"
+    missing = [c for c in (x_col, y_col) if c not in df.columns]
+    if missing:
+        return RichResult(
+            title=f"Bivariate Moran's I — {ds_name}",
+            warnings=[f"missing column(s): {missing}"],
+        )
+    cents, xs, ys = [], [], []
+    for _, row in df.iterrows():
+        c = _polygon_centroid(row.get("geometry"))
+        x, y = row.get(x_col), row.get(y_col)
+        if c and pd.notna(x) and pd.notna(y):
+            cents.append(c)
+            xs.append(float(x))
+            ys.append(float(y))
+    n = len(cents)
+    if n < 5:
+        return RichResult(
+            title=f"Bivariate Moran's I — {ds_name}",
+            warnings=[f"only {n} valid (centroid, x, y) triples; need >=5"],
+        )
+    coords = np.asarray(cents, dtype=float)
+    x_arr = np.asarray(xs, dtype=float)
+    y_arr = np.asarray(ys, dtype=float)
+    zx = (x_arr - x_arr.mean()) / x_arr.std(ddof=0)
+    zy = (y_arr - y_arr.mean()) / y_arr.std(ddof=0)
+    k = min(k_neighbours, n - 1)
+    W = np.zeros((n, n), dtype=float)
+    for i in range(n):
+        d = np.array([_haversine_km(coords[i, 0], coords[i, 1],
+                                     coords[j, 0], coords[j, 1])
+                       for j in range(n)])
+        d[i] = np.inf
+        nn = np.argsort(d)[:k]
+        W[i, nn] = 1.0
+    rs = W.sum(axis=1, keepdims=True)
+    rs[rs == 0] = 1.0
+    Wn = W / rs
+    S0 = float(Wn.sum())
+    cross = float((Wn * np.outer(zx, zy)).sum())
+    norm = math.sqrt(float((zx ** 2).sum() * (zy ** 2).sum()))
+    I_xy = (n / S0) * cross / norm if norm > 0 else float("nan")
+    return RichResult(
+        title=f"Bivariate Moran's I — {x_col} vs {y_col}",
+        summary_lines=[
+            ("X column", x_col),
+            ("Y column", y_col),
+            ("Year", year),
+            ("Hoods", n),
+            ("k-NN", k),
+            ("Bivariate I_xy", round(float(I_xy), 4)),
+        ],
+        interpretation=(
+            f"I_xy = {I_xy:+.3f}. Positive => high X at i tends to occur "
+            f"near high Y at neighbours j; negative => spatial mismatch."
+        ),
+        payload={"I_xy": float(I_xy), "n": int(n),
+                 "x_col": x_col, "y_col": y_col, "year": int(year)},
+    )
+
+
+# ── Moran sweep heatmap (univariate I across categories x years) ───
+
+
+def moran_sweep_heatmap(*, ds_name: str = "NeighbourhoodCrimeRates",
+                        category_prefixes: tuple[str, ...] | None = None,
+                        years: tuple[int, ...] | None = None,
+                        k_neighbours: int = 5) -> RichResult:
+    """Run univariate Moran's I across (category x year) and return
+    the resulting matrix as a RichResult payload.
+
+    Parameters
+    ----------
+    category_prefixes : tuple of str, optional
+        Crime-rate column prefixes to sweep. Defaults to the 9
+        published TPS categories.
+    years : tuple of int, optional
+        Years to sweep. Defaults to (2014, 2015, ..., 2024).
+    """
+    if category_prefixes is None:
+        category_prefixes = (
+            "ASSAULT_RATE", "AUTOTHEFT_RATE", "BIKETHEFT_RATE",
+            "BREAKENTER_RATE", "HOMICIDE_RATE", "ROBBERY_RATE",
+            "SHOOTING_RATE", "THEFTFROMMV_RATE", "THEFTOVER_RATE",
+        )
+    if years is None:
+        years = tuple(range(2014, 2025))
+    matrix = np.full((len(category_prefixes), len(years)), np.nan)
+    for i, prefix in enumerate(category_prefixes):
+        for j, year in enumerate(years):
+            try:
+                r = polygon_morans_i(
+                    ds_name=ds_name,
+                    value_col_prefix=prefix,
+                    year=year,
+                    k_neighbours=k_neighbours,
+                )
+                matrix[i, j] = r.get("I", np.nan) if isinstance(r, dict) else np.nan
+            except Exception:
+                matrix[i, j] = np.nan
+    return RichResult(
+        title=f"Moran's I sweep — {len(category_prefixes)} categories x {len(years)} years",
+        summary_lines=[
+            ("Categories", len(category_prefixes)),
+            ("Years", f"{years[0]}--{years[-1]}"),
+            ("Min I", round(float(np.nanmin(matrix)), 3) if np.isfinite(matrix).any() else "n/a"),
+            ("Max I", round(float(np.nanmax(matrix)), 3) if np.isfinite(matrix).any() else "n/a"),
+        ],
+        payload={
+            "matrix": matrix.tolist(),
+            "category_prefixes": list(category_prefixes),
+            "years": list(years),
+        },
+    )

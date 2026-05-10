@@ -3,14 +3,19 @@
 # MOIRAIS container — 3-stage Python + R build, single-arch (linux/amd64).
 #
 # Optimisations:
-#   1. Dependency files (pyproject.toml) copied BEFORE source — the
-#      heavy pip-install layer is cached while pyproject doesn't change.
-#   2. Aggressive .dockerignore keeps the build context small.
-#   3. Cache mounts for pip and apt — package downloads reuse host
-#      cache across builds.
-#   4. Multi-stage: fat builder stages assemble Python + R, then a slim
-#      runtime stage copies only the installed trees forward.
-#   5. R libs built in their own stage and copied as a flat tree —
+#   1. Dummy package shim before deps install — heavy pip layer is
+#      cached while pyproject doesn't change. The second `pip install`
+#      simply overwrites the dummy files with the real source; the
+#      __pycache__/*.pyc cleanup keeps the install tree tidy.
+#   2. --prefix=/install in the builder + COPY /install /usr/local in
+#      the runtime — clean multi-stage merge into Debian system Python.
+#   3. Cache mounts on apt + pip — package downloads reuse host cache
+#      across builds. NOTE: do not `rm -rf /var/lib/apt/lists/*` when
+#      the same RUN has `--mount=type=cache,target=/var/lib/apt`
+#      because the cache mount is excluded from the committed image
+#      layer anyway, and removing the lists wipes the host-side cache
+#      for the next build.
+#   4. R libs built in their own stage and copied as a flat tree —
 #      skips ~200 MB of apt metadata in the runtime image.
 
 ARG PYTHON_VERSION=3.12
@@ -33,7 +38,8 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
 WORKDIR /build
 
 # Deps layer: pyproject.toml + minimal package shim — cached while
-# pyproject.toml is unchanged.
+# pyproject is unchanged. The shim is overwritten by the source-layer
+# pip install below; its .pyc cache is cleaned up.
 COPY pyproject.toml README.md ./
 
 RUN --mount=type=cache,target=/root/.cache/pip,sharing=locked \
@@ -62,7 +68,6 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
         r-base-dev \
     && Rscript -e "install.packages(c('survey','testthat','DBI','RSQLite','jsonlite'), repos='https://cloud.r-project.org', quiet=TRUE, Ncpus=parallel::detectCores())"
 
-# Build + install the moirais R package itself.
 COPY r-package/ /build/r-package/
 RUN R CMD INSTALL --library=/usr/local/lib/R/site-library /build/r-package/moirais
 
@@ -89,8 +94,11 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1
 
-# Runtime: only the R *runtime* library and ca-certificates + tini.
-# No build-essential, no r-base-dev, no apt metadata.
+# Runtime apt deps. Cache mounts on /var/cache/apt + /var/lib/apt
+# stay across builds (their contents are never committed to image
+# layers). Do NOT `rm -rf /var/lib/apt/lists/*` here — the rm would
+# wipe the cache mount, defeating its purpose, while not changing the
+# committed image since cache contents aren't in the layer anyway.
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     rm -f /etc/apt/apt.conf.d/docker-clean \
@@ -98,8 +106,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     && apt-get install -y --no-install-recommends \
         ca-certificates \
         tini \
-        r-base-core \
-    && rm -rf /var/lib/apt/lists/*
+        r-base-core
 
 RUN groupadd -r moiraisapp -g 1000 \
     && useradd -r -u 1000 -g moiraisapp -m -d /home/moiraisapp -s /usr/sbin/nologin moiraisapp
@@ -107,7 +114,7 @@ RUN groupadd -r moiraisapp -g 1000 \
 # Pull in the installed Python tree from py-builder.
 COPY --from=py-builder /install /usr/local
 
-# Pull in the R site-library (incl. moirais and its CRAN deps) from r-builder.
+# Pull in the R site-library (incl. moirais and its CRAN deps).
 COPY --from=r-builder /usr/local/lib/R/site-library /usr/local/lib/R/site-library
 
 USER moiraisapp

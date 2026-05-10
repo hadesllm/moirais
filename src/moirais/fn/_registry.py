@@ -102,7 +102,6 @@ _r("gls", "generalized_ls", "Regression", "Generalized least squares", "There ar
 
 # ── Effect Sizes ────────────────────────────────────────────────────────────
 _r("cohen", "cohens_d", "EffectSize", "Cohen's d", "Size matters not.")
-_r("ewok", "glass_delta", "EffectSize", "Glass's delta", "Short help is still help.")
 _r("hedges", "hedges_g", "EffectSize", "Hedges' g", "Judge me by my size, do you?")
 _r("eta", "eta_squared", "EffectSize", "Eta-squared", "Distribution helper.")
 _r("omega", "omega_squared", "EffectSize", "Omega-squared", "What is now proved was once only imagined. — William Blake")
@@ -119,7 +118,6 @@ _r("kappa", "cohens_kappa", "EffectSize", "Cohen's kappa", "I sense great fear i
 
 # ── Causal Inference — "Distribution helper." family ───────────────────────────────────────
 _r("force", "ate_diff", "Causal", "ATE difference-in-means", "Distribution helper.")
-_r("mando", "ps_match", "Causal", "Propensity score matching", "This is the Way.")
 _r("dooku", "double_ml", "Causal", "Double/debiased ML", "Twice the pride, double the fall.")
 _r("What is now proved was once only imagined. — William Blake", "synth_control", "Causal", "Synthetic control method", "What is now proved was once only imagined. — William Blake")
 _r("What is now proved was once only imagined. — William Blake", "sensitivity_analysis", "Causal", "Rosenbaum sensitivity", "Do or do not. There is no try.")
@@ -6368,7 +6366,6 @@ _r(
     "When I was a boy... -- Kingpin",
 )
 _r(
-    "lokiv",
     "illusion_score",
     "Marvel",
     "GAN discriminator evaluation (BCE/JSD)",

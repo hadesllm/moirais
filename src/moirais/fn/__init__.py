@@ -1286,7 +1286,6 @@ from .evtrt import event_rate
 from .ewma import ewma_detect
 from .ewmav import ewma_volatility
 from .ewmdt import ewma_detect
-from .ewok import glass_delta
 from .exact import exact_perm_test
 from .expfrq import expfrq
 from .expns import exponential_smooth
@@ -1912,7 +1911,6 @@ from .htidx import heat_index
 from .htmap import heatmap_issue_weights
 from .huber import huber
 from .hubrl import hubrl
-from .hulkm import lot_acceptance
 from .hullar import hullar
 from .hullel import hullel
 from .hullfr import hullfr
@@ -2380,7 +2378,6 @@ from .logmg import log_magnitude_spectrum
 from .logodds import logodds
 from .logrnk import logrank_test, logrnk
 from .logsc import logit_softcap
-from .lokiv import illusion_score
 from .lonlat import lonlat
 from .loo import compute_loo
 from .loocv import loocv_fn
@@ -2468,7 +2465,6 @@ from .major import majorize_step
 from .maklp import maklp
 from .mamar import mamar
 from .mamng import mamng
-from .mando import ps_match
 from .manh4 import manh4
 from .manhdst import manhdst
 from .manht import manhattan_data
@@ -5040,7 +5036,6 @@ from .thndm import mach_shock
 from .thnsm import snap_estimator
 from .thom import torus_homology
 from .thopf import hopf_fibration
-from .thorm import bonferroni_correction
 from .thrdt import threshold_detect
 from .ticmp import total_information_content
 from .tjfun import j_invariant
@@ -5333,7 +5328,6 @@ from .vacef import vaccine_efficacy
 from .vachrd import vaccine_herd
 from .vacnnt import vaccine_nnt
 from .vacve import vaccine_effectiveness
-from .vader import vader
 from .valfn import value_at_risk
 from .varfit import var_fit
 from .varfp import varfp
@@ -5736,7 +5730,6 @@ from .xvrig import xavier_init
 from .xwvlt import _morlet
 from .yindex import yindex
 from .yll import years_of_life_lost
-from .yoda_s import sensitivity_analysis
 from .youden import youdens_j
 from .youdn import youden_index
 from .ypll import years_potential_life_lost

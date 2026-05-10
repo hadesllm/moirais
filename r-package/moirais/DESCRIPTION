@@ -1,7 +1,7 @@
 Package: moirais
 Type: Package
 Title: Multi-Domain Methods for Observational Inference and Robust Analysis
-Version: 0.1.0-1
+Version: 0.1.0-2
 Authors@R: c(
   person(
     given = "Vansh Singh",

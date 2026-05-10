@@ -67,3 +67,9 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           skip-existing: true
+          # PEP 740 attestations — generates Sigstore signatures for the
+          # uploaded artifacts and lets PyPI verify the project URLs
+          # (Homepage / Repository / Issues / Documentation / Changelog),
+          # which removes the "Unverified details" banner on the project
+          # page once the upload is processed.
+          attestations: true

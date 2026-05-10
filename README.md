@@ -76,6 +76,35 @@ https://doi.org/10.5281/zenodo.20102198
 
 See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.
 
+## Acknowledgments
+
+### AI assistance
+
+MOIRAIS was developed with substantial assistance from frontier AI
+assistants. The author retains full responsibility for the code, the
+methods, and the scientific claims; AI assistance accelerated
+implementation but does not change the attribution of the work.
+
+- **Claude — Anthropic.** Anthropic's Claude family (Opus, Sonnet, and
+  Haiku across the 4.x generation) was used extensively throughout
+  development for code generation, refactoring, documentation, code
+  review, and design discussions. Use was supported by Anthropic
+  research-credit programs.
+
+- **Gemini and Vertex AI — Google.** Google's Gemini 2.5 models (Pro and
+  Flash) on the Vertex AI platform were used extensively for additional
+  code generation, cross-checking Claude-generated code, multi-modal
+  data analysis, and prototype evaluation. Use was supported by Google
+  research-credit programs.
+
+### Funding and infrastructure
+
+- Anthropic — Claude API research credits.
+- Google — Gemini / Vertex AI research credits.
+- The author thanks Glenn McNamara (retired Ontario Provincial Police
+  HQ statistician, ~30 years; previously Statistics Canada) for ongoing
+  methodological mentorship since Summer 2025.
+
 ## License
 
 MOIRAIS is released under the GNU General Public License v2 (`GPL-2.0-only`); see [`LICENSE`](LICENSE). The licensing matrix for individual components is documented in [`LICENSING.md`](LICENSING.md).

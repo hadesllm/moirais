@@ -43,3 +43,25 @@ references:
     year: "2026"
     doi: "10.5281/zenodo.20102198"
     url: "https://doi.org/10.5281/zenodo.20102198"
+  # AI assistants used during development. Listed for transparency;
+  # the author retains full responsibility for the code, the methods,
+  # and the scientific claims. AI use was supported by research-credit
+  # programs from Anthropic and Google respectively.
+  - type: software
+    title: "Claude"
+    authors:
+      - name: "Anthropic"
+    url: "https://www.anthropic.com/claude"
+    notes: "Anthropic Claude (Opus, Sonnet, Haiku — 4.x generation) was used extensively for code generation, refactoring, documentation, and code review."
+  - type: software
+    title: "Gemini"
+    authors:
+      - name: "Google DeepMind"
+    url: "https://deepmind.google/technologies/gemini/"
+    notes: "Google Gemini 2.5 (Pro and Flash) was used extensively for additional code generation, cross-checking, and prototype evaluation."
+  - type: software
+    title: "Vertex AI"
+    authors:
+      - name: "Google Cloud"
+    url: "https://cloud.google.com/vertex-ai"
+    notes: "Google Vertex AI was used as the platform hosting the Gemini 2.5 models invoked during development."

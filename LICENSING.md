@@ -48,6 +48,32 @@ released under **Creative Commons Attribution 4.0 International**
 Each dependency carries its own licence; see `pyproject.toml`
 (Python) and `r-package/moirais/DESCRIPTION` (R) for the chain.
 
+## AI assistance and third-party tools
+
+The MOIRAIS source was developed with substantial assistance from
+frontier AI assistants. This is disclosed for transparency; it does
+not transfer authorship, copyright, or licensing obligations away
+from the human author. The author retains full responsibility for
+the code, the methods, and the scientific claims.
+
+- **Anthropic Claude.** Anthropic's Claude family (Opus, Sonnet, and
+  Haiku across the 4.x generation) was used extensively for code
+  generation, refactoring, documentation, code review, and design
+  discussions. Use was supported by Anthropic research-credit
+  programs.
+
+- **Google Gemini and Vertex AI.** Google's Gemini 2.5 models (Pro and
+  Flash) on the Vertex AI platform were used extensively for additional
+  code generation, cross-checking Claude-generated code, multi-modal
+  data analysis, and prototype evaluation. Use was supported by Google
+  research-credit programs.
+
+The Anthropic and Google research-credit programs are compute-
+allocation programs; they do not constitute endorsement of MOIRAIS
+by either company. Where AI-generated code reproduces material from
+training data verbatim, the upstream licence governs that material.
+The author has reviewed the source for any such cases.
+
 ## Contributing
 
 Contributions to MOIRAIS are accepted under `GPL-2.0-only`. By

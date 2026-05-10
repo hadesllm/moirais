@@ -304,3 +304,4 @@ navigation, every page on this site is listed below — top to bottom:
    :hidden:
 
    contributing
+   acknowledgments

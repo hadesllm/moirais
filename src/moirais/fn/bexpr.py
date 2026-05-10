@@ -1,6 +1,5 @@
 # moirais.fn — function file from book-equation translation pipeline (hadesllm/moirais)
-"""Boolean expression evaluator. 'An unexamined life is not worth living. — Socrates'
-
+"""Boolean expression evaluator. 'Knowledge itself is power. -- Bacon'"""
 from __future__ import annotations
 
 from ._containers import DescriptiveResult

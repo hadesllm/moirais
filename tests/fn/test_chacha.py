@@ -12,7 +12,7 @@ class TestChaCha20Poly1305:
     def test_roundtrip(self):
         key = os.urandom(32)
         nonce = os.urandom(12)
-        plaintext = b"Without music, life would be a mistake. — Friedrich Nietzsche"
+        plaintext = b"Without music, life would be a mistake. -- Friedrich Nietzsche"
         ct, tag = chacha20_poly1305_encrypt(key, nonce, plaintext)
         recovered = chacha20_poly1305_decrypt(key, nonce, ct, tag)
         assert recovered == plaintext

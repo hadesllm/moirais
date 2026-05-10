@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Elastic net regression. 'You have power over your mind. — Marcus Aurelius'
-
+"""Elastic net regression. 'Everything flows. -- Heraclitus'"""
 from __future__ import annotations
 
 import numpy as np

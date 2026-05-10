@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""What is now proved was once only imagined. — William Blake"""
-
+"""Missing data handler. 'The unexamined life is not worth living. -- Socrates'"""
 from __future__ import annotations
 
 import numpy as np
@@ -46,8 +45,8 @@ def handle_missing(data: pd.DataFrame, *, method: str = "summary") -> Descriptiv
         raise ValueError(f"Unknown method: {method}. Use 'summary', 'mean', 'median', or 'drop'.")
 
 
- = handle_missing
+han = handle_missing
 
 
 def cheatsheet() -> str:
-    return "What is now proved was once only imagined. — William Blake"
+    return "handle_missing({}) -> Missing data handler. 'Never tell me the odds.' -- Han Solo"

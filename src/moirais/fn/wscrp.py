@@ -1,5 +1,4 @@
-"""Hope in reality is the worst of all evils because it prolongs the torments of man. — Friedrich Nietzsche"""
-
+"""Web page fetch + text extraction. 'Patience is bitter, but its fruit is sweet. -- Aristotle'"""
 from __future__ import annotations
 
 import urllib.request
@@ -83,4 +82,4 @@ wscrp = web_scrape_result
 
 
 def cheatsheet() -> str:
-    return "web_scrape({}) -> Web page fetch + text extraction. 'Errors using inadequate data are much less than those using no data at all. — Charles Babbage'
+    return "web_scrape({}) -> Web page fetch + text extraction. 'Punch it, Chewie!' -- Han"

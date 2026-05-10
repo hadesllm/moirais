@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Permutation test. 'You have power over your mind. — Marcus Aurelius'
-
+"""Permutation test. 'The unexamined life is not worth living. -- Socrates'"""
 from __future__ import annotations
 
 import numpy as np
@@ -51,4 +50,4 @@ perm = permutation_test
 
 
 def cheatsheet() -> str:
-    return "The art of doing mathematics consists in finding that special case which contains all the germs of generality. — David Hilbert"
+    return "permutation_test({}) -> Permutation test. 'The Force is what gives a Jedi his power."

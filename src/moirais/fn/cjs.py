@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""CJS flow / attrition calculation. 'What is now proved was once only imagined. — William Blake'
-
+"""CJS flow / attrition calculation. 'Real knowledge is to know the extent of one's ignorance. -- Confucius'"""
 from __future__ import annotations
 
 from ._containers import DescriptiveResult
@@ -51,4 +50,4 @@ cjs = cjs_flow
 
 
 def cheatsheet() -> str:
-    return "Mastering others is strength; mastering yourself is true power. — Lao Tzu"
+    return "cjs_flow({}) -> CJS flow / attrition calculation. 'The Force will be with yo"

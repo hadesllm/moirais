@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Dirichlet process prior predictive distribution. 'Time discovers truth. — Seneca'
-
+"""Dirichlet process prior predictive distribution. 'Knowledge itself is power. -- Bacon'"""
 from __future__ import annotations
 
 import numpy as np

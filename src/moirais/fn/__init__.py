@@ -293,7 +293,7 @@ from .bane import structural_break
 from .barcd import csp_backtrack
 from .bart import bart
 from .batchn import batch_norm
-from . import robust_m_estimator
+from .batman import robust_m_estimator
 from .bayes import bayes_theorem
 from .bayesf import bayesf
 from .bayic import bayic
@@ -431,7 +431,6 @@ from .bwflt import butterworth_filter
 from .bwlmt import bandwidth_limit
 from .bwt import rdd_bandwidth
 from .bypvl import bayesian_p_value
-from .c3po import concordance_index
 from .cal_wg import calibration_weights
 from .calib import calibration_curve
 from .calpl import calibration_plot
@@ -541,7 +540,6 @@ from .chbf2 import chebyshev2_filter
 from .chbyd import chebyshev_dist
 from .chcrit import chcrit
 from .cheby import chebyshev_dist
-from . import
 from .chird import chirp_detect
 from .chirg import chirp_generate
 from .chisq import chi_square_test
@@ -1806,7 +1804,7 @@ from .hajek import hajek
 from .hamam import brownian_motion
 from .hamcd import hamming_code
 from .hamrm import impact_energy
-from . import handle_missing
+from .han import handle_missing
 from .hankl import hankel_matrix_fn
 from .hannf import hann_filter
 from .harmean import harmean
@@ -2178,7 +2176,7 @@ from .jllem import jl_lemma_bound
 from .jnckh import jonckheere_terpstra
 from .jnent import joint_entropy
 from .jntnt import joint_entropy
-from . import permutation_two_sample
+from .joker import permutation_two_sample
 from .jrich import formant_extract
 from .jsdcm import joint_sparse_decompose
 from .jsdiv import js_divergence
@@ -2326,7 +2324,6 @@ from .lds import lds
 from .le import life_expectancy
 from .learn import learning_curve
 from .legal import is_over_legal_limit
-from . import profile
 from .lev import lev
 from .levene import levene_test
 from .lexis import lexis_diagram_data
@@ -3531,7 +3528,6 @@ from .qweib import qweib
 from .r0 import basic_reproduction_number
 from .r2 import r_squared
 from .r2d import r_to_d
-from .r2d2 import r2d2
 from .r2or import r_to_or
 from .r_eff import effective_rt
 from .r_es import r_effect_size
@@ -5337,6 +5333,7 @@ from .vacef import vaccine_efficacy
 from .vachrd import vaccine_herd
 from .vacnnt import vaccine_nnt
 from .vacve import vaccine_effectiveness
+from .vader import vader
 from .valfn import value_at_risk
 from .varfit import var_fit
 from .varfp import varfp

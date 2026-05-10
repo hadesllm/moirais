@@ -42,90 +42,65 @@ from typing import Iterable
 
 CATEGORY_QUOTES: dict[str, list[str]] = {
     "Multilevel": [
-        'Study the past if you would define the future. — Confucius',
-        'Study the past if you would define the future. — Confucius'Challa  (your cluster\'s identity persists beyond its mean)',
-        'Study the past if you would define the future. — Confucius't exist, only variance components)',
+        "The unexamined life is not worth living. -- Socrates",
+        "Knowing yourself is true wisdom. -- Lao Tzu (clusters know themselves; that is what variance components measure).",
     ],
     "Robust": [
-        'Study the past if you would define the future. — Confucius',
-        '"This is the way." — The Mandalorian  (the way is M-estimation)',
-        'Study the past if you would define the future. — Confucius',
+        "Patience is bitter, but its fruit is sweet. -- Aristotle (M-estimation, in one line).",
+        "We suffer more often in imagination than in reality. -- Seneca (and your outliers are usually that).",
     ],
     "DL": [
-        '"I have to go save the world (again)." — Doctor Strange  (and so does attention)',
-        '"There is no try" — when fitting a model, either it converged or it did not (Adam optimiser: also yes)',
-        '"I see dead neurons." — paraphrased ReLU',
+        "What is now proved was once only imagined. -- William Blake (back-propagation included).",
+        "Out of chaos comes order. -- Heraclitus (also: Adam optimiser).",
     ],
     "IRT": [
-        'Study the past if you would define the future. — Confucius',
-        '"You\'re the chosen one, Harry." — Dumbledore  (only if your information curve agrees)',
+        "Real knowledge is to know the extent of one's ignorance. -- Confucius (so does an information curve).",
     ],
     "Copula": [
-        '"My precious." — Gollum  (about a perfectly fitted Gaussian copula)',
-        '"You shall not pass!" — Gandalf  (to that 0/0 in the tail-dependence formula)',
+        "All things change to something new, and that new is itself changing. -- Marcus Aurelius (the dependence structure, in one line).",
     ],
     "Network": [
-        '"All for one and one for all." — The Three Musketeers  (community detection in one line)',
-        '"Friends close. Enemies closer." — Michael Corleone  (centrality in one line)',
-        '"We are Groot." — Groot  (the connected component, in one line)',
+        "The whole is greater than the sum of its parts. -- Aristotle (community detection, in one line).",
     ],
     "Causal": [
-        '"You either die a confounder, or you live long enough to become a mediator." — paraphrased Two-Face',
-        'Study the past if you would define the future. — Confucius',
+        "Time discovers truth. -- Seneca (so does a longer panel).",
     ],
     "Bayesian": [
-        '"I am the Doctor." — Doctor Who  (and your prior is regenerative)',
-        '"Inconceivable!" — Vizzini  (about your posterior, before you saw the data)',
+        "Knowledge itself is power. -- Francis Bacon (and your prior is part of it).",
     ],
     "Spatial": [
-        '"Hodor." — Hodor  (every neighbour, repeatedly)',
-        '"Winter is coming." — Ned Stark  (and so is spatial autocorrelation)',
+        "Everything flows. -- Heraclitus (and so does spatial autocorrelation).",
     ],
     "TimeSeries": [
-        '"It\'s a long story." — every Marvel character, ever  (so is your AR(p))',
-        '"I am Groot. I am Groot. I am Groot." — Groot  (an AR(1) process, basically)',
+        "We can know more than we can tell. -- Polanyi (an AR(p) is mostly what we cannot tell).",
     ],
-    # New 2026-04-30 — sub-Causal granularities for the modern wave
     "CausalDID": [
-        '"How did we get here?" — Talking Heads / paraphrased Goodman-Bacon',
-        '"There are no two-way fixed effects, only the choices we make to compare what." — Nobody, but they should',
+        "There are no two-way fixed effects, only the choices we make about what to compare to what.",
     ],
     "CausalSyntheticControl": [
-        '"You are not the controls you compare yourself to." — paraphrased Brené Brown',
-        '"Build the version of you that nobody else got to be." — Abadie\'s synthetic counterfactual',
+        "Build the counterfactual that the data refused to give you. -- paraphrased Abadie.",
     ],
     "CausalRDD": [
-        '"Mind the gap." — every London Tube announcement, also every RD bandwidth selector',
-        '"This far, no further." — Gandalf at the cutoff',
+        "This far, no further. -- the regression discontinuity, in one line.",
     ],
     "CausalML": [
-        '"Forests are like people — they thrive in groups." — paraphrased; cf. Wager-Athey',
-        '"Three rings for the Elven-kings under the sky." — Tolkien, also DML\'s three-fold cross-fitting',
+        "He who has a why to live can bear almost any how. -- Nietzsche (also: cross-fitting).",
     ],
     "CausalSensitivity": [
-        '"Trust, but verify." — Reagan / Russian proverb / e-value',
-        'Study the past if you would define the future. — Confucius',
+        "Trust, but verify. -- proverb (and e-values).",
     ],
-    # Information theory
     "Information": [
-        '"To know the answer, you must know what surprises you." — Shannon, paraphrased',
-        '"There is no information without surprise." — closer to Shannon\'s actual point',
+        "To know the answer, you must first know what surprises you. -- after Shannon.",
     ],
-    # Differential privacy
     "Differential": [
-        '"What happens in your data, stays in your data." — paraphrased Vegas, with calibrated noise',
-        '"Privacy is the new oil." — paraphrased Tim Cook (and Cynthia Dwork would agree)',
+        "Privacy is the calibrated noise that lets the truth still be heard.",
     ],
-    # Survey methodology
     "Survey": [
-        '"Don\'t weight what you can\'t measure." — paraphrased every survey methodologist',
-        '"The sample is the territory." — almost. Read Sarndal-Swensson-Wretman.',
+        "Do not weight what you cannot measure. -- every survey methodologist, paraphrased.",
     ],
-    # Fallback when no category matches — keep the encouragement fresh.
     "_default": [
-        '"You\'re a wizard, Harry." — Hagrid',
-        '"With great power comes great responsibility." — Uncle Ben',
-        '"I am the storm." — Ororo Munroe (Storm)',
+        "Patience and perseverance have a magical effect. -- John Quincy Adams.",
+        "What we cannot speak about we must pass over in silence. -- Wittgenstein.",
     ],
 }
 

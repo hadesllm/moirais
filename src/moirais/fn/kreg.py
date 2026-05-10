@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Nadaraya-Watson kernel regression. 'You have power over your mind. — Marcus Aurelius'
-
+"""Nadaraya-Watson kernel regression. 'Knowing yourself is true wisdom. -- Lao Tzu'"""
 from __future__ import annotations
 
 import numpy as np

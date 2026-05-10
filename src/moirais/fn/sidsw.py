@@ -1,5 +1,4 @@
-"""Impact force modeling. 'Let me at em!' -- Sideswipe"""
-
+"""Impact force modeling. 'What is now proved was once only imagined. -- Blake'"""
 from __future__ import annotations
 
 from ._containers import DescriptiveResult
@@ -39,12 +38,23 @@ def impact_force(
     if mass <= 0:
         raise ValueError("mass must be positive")
     if velocity < 0:
-        raise ValueError("velocity must be non-negative"The more you know, the more you realize you don't know. — Aristotle"impulse-momentum"The more you know, the more you realize you don't know. — Aristotle"energy-deformation"
+        raise ValueError("velocity must be non-negative")
+
+    ke = 0.5 * mass * velocity**2
+
+    if duration is not None and duration > 0:
+        force = mass * abs(velocity) * (1 + restitution) / duration
+        method = "impulse-momentum"
+    elif deformation is not None and deformation > 0:
+        force = mass * velocity**2 / (2 * deformation)
+        method = "energy-deformation"
     else:
         raise ValueError("Provide either duration > 0 or deformation > 0")
 
     return DescriptiveResult(
-        name="impact_force"The more you know, the more you realize you don't know. — Aristotle"method": method, "kinetic_energy_J": ke, "mass_kg": mass, "velocity_ms": velocity},
+        name="impact_force",
+        value=float(force),
+        extra={"method": method, "kinetic_energy_J": ke, "mass_kg": mass, "velocity_ms": velocity},
     )
 
 

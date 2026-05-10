@@ -8,7 +8,7 @@ __all__ = ["density_estimation_for_statistics_and_data_analysis_silverma_chapter
 
 
 def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnumbered_34(x):
-    """
+    r"""
     Nonparametric expression (auto-extracted; see ref).
 
     Formula: [EQ] k = k\x^K(x) d x ||(K'Ydx/K^dx

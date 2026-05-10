@@ -1,6 +1,5 @@
 # moirais.fn — function file (hadesllm/moirais)
-"""Chinese restaurant process simulation. 'Real knowledge is to know the extent of one's ignorance. — Confucius'
-
+"""Chinese restaurant process simulation. 'What we cannot speak about we must pass over in silence. -- Wittgenstein'"""
 from __future__ import annotations
 
 import numpy as np

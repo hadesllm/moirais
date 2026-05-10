@@ -83,7 +83,7 @@ the software and the companion paper.
   title   = {MOIRAIS Toolkit: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation},
   author  = {Ruhela, Vansh Singh},
   year    = {2026},
-  note    = {R package version 0.1.1},
+  note    = {R package version 0.1.2},
   doi     = {10.5281/zenodo.20111233},
   url     = {https://github.com/hadesllm/moirais}
 }

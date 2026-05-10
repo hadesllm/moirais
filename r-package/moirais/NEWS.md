@@ -1,4 +1,4 @@
-# moirais 0.1.1
+# moirais 0.1.2
 
 * Initial CRAN submission.
 * Twelve new R wrappers bring the curated public API to functional parity

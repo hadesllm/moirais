@@ -5,7 +5,7 @@ authors:
   - family-names: "Ruhela"
     given-names: "Vansh Singh"
     orcid: "https://orcid.org/0009-0004-1750-3592"
-version: "0.1.1"
+version: "0.1.2"
 date-released: "2026-05-10"
 url: "https://github.com/hadesllm/moirais"
 repository-code: "https://github.com/hadesllm/moirais"
@@ -25,7 +25,7 @@ preferred-citation:
       given-names: "Vansh Singh"
       orcid: "https://orcid.org/0009-0004-1750-3592"
   year: "2026"
-  version: "0.1.1"
+  version: "0.1.2"
   doi: "10.5281/zenodo.20111233"
   url: "https://doi.org/10.5281/zenodo.20111233"
 references:

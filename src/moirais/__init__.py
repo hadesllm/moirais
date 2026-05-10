@@ -6,7 +6,7 @@ autoresearch venv) without requiring sklearn, httpx, textual, or other
 optional dependencies.
 """
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 # --- Guarded eager imports — fail gracefully in minimal envs ---
 # In a full moirais install these all succeed and populate the namespace.

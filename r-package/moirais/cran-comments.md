@@ -12,8 +12,8 @@
   passes with 0 errors / 0 warnings / 2 notes (one is the new-submission flag,
   one is the local HTML Tidy/V8 environmental note that does not occur on CRAN
   infrastructure)
-* win-builder R-release (Windows) — uploaded for verification
-* win-builder R-devel (Windows) — uploaded for verification
+* win-builder R-release (Windows) — uploaded; result email pending
+* win-builder R-devel (Windows) — uploaded; result email pending
 
 ## Submission notes
 

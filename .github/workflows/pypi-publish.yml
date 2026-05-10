@@ -1,15 +1,14 @@
 name: Publish to PyPI
 
 # Publishes the moirais Python package to PyPI on every tag of the
-# form v*.*.* (e.g., v0.2.0, v0.3.0). Uses Trusted Publisher OIDC —
-# no API token in GitHub secrets. The PyPI side requires a one-time
-# Trusted Publisher configuration at:
-#   https://pypi.org/manage/project/moirais/settings/publishing/
-# with:
-#   Owner            = hadesllm
-#   Repository name  = moirais
-#   Workflow filename = pypi-publish.yml
-#   Environment       = pypi  (matches the environment: name below)
+# form v*.*.* (e.g., v0.2.0, v0.3.0). Uses an API token stored in the
+# repo-level secret PYPI_API_TOKEN (account: hadesllm).
+#
+# (We tried Trusted Publisher OIDC first; the GitHub-account / PyPI-
+# account linkage is on a different GitHub username than the host
+# repo, so the OIDC claims didn't match a configured publisher. Token
+# auth is the supported alternative and is fine — the secret never
+# leaves GitHub Actions.)
 
 on:
   push:
@@ -57,8 +56,6 @@ jobs:
     environment:
       name: pypi
       url: https://pypi.org/project/moirais/
-    permissions:
-      id-token: write
     steps:
       - name: Download distribution artifact
         uses: actions/download-artifact@v4
@@ -68,3 +65,5 @@ jobs:
 
       - name: Publish package distributions
         uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}

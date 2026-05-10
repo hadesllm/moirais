@@ -101,14 +101,12 @@ implementation but does not change the attribution of the work.
 
 - Anthropic — Claude API research credits.
 - Google — Gemini / Vertex AI research credits.
-- The author thanks **Glenn McNamara** — ~30 years as the
-  statistician at Ontario Provincial Police headquarters, preceded by
-  tenure at Statistics Canada, with a Mathematics and Linguistics
-  background from the University of Toronto — for weekly methodological
-  mentorship over the past six months. He brings distribution theory,
-  applied-statistics intuition for administrative data, and the
-  judgment that grounds much of this framework. Glenn is the **M** in
-  **MRM (McNamara-Ruhela-Medina)** (catalyst).
+- The author thanks **Glenn McNamara** — a 35-year career with the
+  Ontario Government — for weekly methodological mentorship over the
+  past six months. He brings distribution theory, applied-statistics
+  intuition for administrative data, and the judgment that grounds
+  much of this framework. Glenn is the **M** in **MRM
+  (McNamara-Ruhela-Medina)** (catalyst).
 
 - The author thanks **Prof. Angela Zorro Medina**, Centre for
   Criminology and Sociolegal Studies, University of Toronto, for

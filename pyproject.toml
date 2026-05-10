@@ -36,7 +36,6 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "Intended Audience :: Legal Industry",
     "Intended Audience :: Education",
-    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.12",
@@ -53,13 +52,6 @@ classifiers = [
     "Topic :: Sociology",
     "Operating System :: OS Independent",
 ]
-
-[project.urls]
-Homepage = "https://github.com/hadesllm/moirais"
-Repository = "https://github.com/hadesllm/moirais"
-Issues = "https://github.com/hadesllm/moirais/issues"
-Documentation = "https://github.com/hadesllm/moirais#readme"
-Changelog = "https://github.com/hadesllm/moirais/releases"
 dependencies = [
     "pandas>=2.0",
     "numpy>=1.24",
@@ -75,6 +67,13 @@ dependencies = [
     "lxml>=5.0",
     "tenacity>=8.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/hadesllm/moirais"
+Repository = "https://github.com/hadesllm/moirais"
+Issues = "https://github.com/hadesllm/moirais/issues"
+Documentation = "https://github.com/hadesllm/moirais#readme"
+Changelog = "https://github.com/hadesllm/moirais/releases"
 
 [project.optional-dependencies]
 test = [

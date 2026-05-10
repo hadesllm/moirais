@@ -52,11 +52,13 @@ Editable install from source (development):
    Python ≤ 3.14 due to pydantic-core Rust dependencies. On Python 3.15+,
    MOIRAIS uses the built-in ``moirais.emissions`` tracker instead.
 
-Bootstrap script (creates ``.venv``, installs Python + R deps):
+Editable install with all extras (creates ``.venv``, installs Python deps):
 
 .. code-block:: bash
 
-   libexec/config/tests/rtests/bootstrap_moirais.sh
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -e ".[test,interactive]"
 
 R
 -
@@ -116,7 +118,7 @@ Verifying the install
 
 .. code-block:: bash
 
-   moirais list-modules          # prints the 21 CPADS analysis modules
+   moirais list-modules          # prints the registered analysis modules
    moirais doctor                # checks LLM providers, datasets, R, Docker
    moirais --help
 

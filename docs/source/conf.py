@@ -4,14 +4,14 @@ from pathlib import Path
 import sys
 
 # ---------------------------------------------------------------------------
-# Paths
+# Paths (industry-standard src-layout)
 # ---------------------------------------------------------------------------
 # conf.py lives at docs/source/conf.py
-# parents[1] resolves to dev/sphinx/project/
+# parents[1] resolves to docs/, parents[2] resolves to repo root.
 _HERE = Path(__file__).resolve().parent
-_PROJECT = _HERE.parents[1]                                   # dev/sphinx/project/
-_PY_PKG = _PROJECT / "libexec" / "config" / "tools" / "py-package"
-_R_PKG = _PROJECT / "libexec" / "config" / "tools" / "r-package" / "moirais"
+_REPO = _HERE.parents[1]
+_PY_PKG = _REPO / "src"                       # contains src/moirais/
+_R_PKG = _REPO / "r-package" / "moirais"
 
 # Python package on sys.path for autodoc
 sys.path.insert(0, str(_PY_PKG))
@@ -25,7 +25,7 @@ sys.path.insert(0, str(_HERE))
 project = "MOIRAIS"
 copyright = "2026, Vansh Singh Ruhela"
 author = "Vansh Singh Ruhela"
-release = "0.2.0"
+release = "0.1.1"
 
 # ---------------------------------------------------------------------------
 # Extensions

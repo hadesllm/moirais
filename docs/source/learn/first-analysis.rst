@@ -137,8 +137,6 @@ Where to go next
 
 - :doc:`../methods/causal` — once your question is causal ("did X
   cause Y?") and not just correlational.
-- :doc:`../tui/index` — the terminal IDE, which lets you build all
-  of the above without writing the imports yourself.
 - :doc:`../methods/index` — full methods reference, sorted by question.
 
 ----

@@ -33,10 +33,10 @@ MOIRAIS runs on Raspberry Pi 5 with the following reference configuration:
 
 .. code-block:: bash
 
-   git clone git@github.com:hadesllm/moirais-dev.git
-   cd moirais-dev/dev/sphinx/project
-   bash scripts/bootstrap_moirais.sh
-   ollama create perseus:e2b -f libexec/config/tools/py-package/moirais/Modelfile
+   git clone https://github.com/hadesllm/moirais.git
+   cd moirais
+   python -m venv .venv && source .venv/bin/activate
+   pip install -e ".[interactive]"
 
 **NVMe boot configuration** (Pi 5 EEPROM):
 

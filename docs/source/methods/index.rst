@@ -23,21 +23,13 @@ Alcohol/Drug Survey) primary analysis context.
    siuiap
    sprott_doob
    doob_trends
-   otis_tps
-   tps_formulas
-   paper_205
-   function_individualization_plan
    quantization
    inference_engine
-   rag_evaluation
-   autoresearch_replication
-   audit_20260331
    signal_processing
    homomorphic_deconvolution
    crypto
    spatial
    genomics
-   perseus
    polyglot
    sensors
    deployment

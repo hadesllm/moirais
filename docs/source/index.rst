@@ -10,13 +10,18 @@ MOIRAIS — Methods for Observational Inference and Robust Analysis of Intervent
 .. image:: https://img.shields.io/badge/R-4.3%2B-276DC3.svg
    :alt: R 4.3+
 
-.. image:: https://img.shields.io/badge/version-0.2.0-green.svg
-   :alt: Version 0.2.0
+.. image:: https://img.shields.io/badge/version-0.1.1-green.svg
+   :alt: Version 0.1.1
 
-A dual-language (Python + R) enterprise scientific computing toolkit for
-epidemiological causal inference, double machine learning, and public health
-analytics. Built for researchers who need statistical rigour, reproducibility,
-and a first-class terminal experience — not a small replication script.
+.. image:: https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20096350-blue
+   :target: https://doi.org/10.5281/zenodo.20096350
+   :alt: DOI 10.5281/zenodo.20096350
+
+A dual-language (Python + R) multi-domain scientific computing toolkit for
+observational inference, with sociolegal, signal-processing, cryptographic,
+spatial-statistics, statistical-physics, and psychometrics modules. Hosts
+the DLRM (Doob–Levinsky–Ruhela–Medina) framework as a flagship application
+for Canadian carceral, police, and oversight data analysis.
 
 ----
 
@@ -198,9 +203,6 @@ navigation, every page on this site is listed below — top to bottom:
    :caption: Documentation
    :hidden:
 
-   tui/index
-   api/index
-   api/r
    methods/index
    howto/index
 
@@ -210,13 +212,8 @@ navigation, every page on this site is listed below — top to bottom:
    :hidden:
 
    contributing
-   development/languages
-   development/numerical_stability
 
-.. Visible-in-body site index — restored after the author flagged that the
-   list/index after the license vanished when we added :hidden: to all
-   the toctrees above.  This one has no caption + no :hidden:, so it
-   renders as a plain bullet list inline.
+.. Visible-in-body site index — renders as a plain bullet list inline.
 
 .. toctree::
    :maxdepth: 2
@@ -224,11 +221,6 @@ navigation, every page on this site is listed below — top to bottom:
    learn/index
    install
    cli
-   tui/index
-   api/index
-   api/r
    methods/index
    howto/index
    contributing
-   development/languages
-   development/numerical_stability

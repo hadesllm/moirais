@@ -8,7 +8,7 @@ measurement invariance, reliability variants, validity evidence, network
 psychometrics, Bayesian psychometrics, scale construction, and scoring.
 
 These methods are implemented as individual function files in ``moirais.fn/``
-(Star Wars-themed, ≤7-char names) and the parent module ``moirais.psymet``.
+(short ≤7-char names) and the parent module ``moirais.psymet``.
 All functions are dataset-agnostic — they work on any Likert-scale data,
 not just the MAPQII questionnaire.
 

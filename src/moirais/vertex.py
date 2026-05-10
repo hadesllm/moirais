@@ -1,21 +1,20 @@
 """Vertex AI client — Gemini via Google Cloud with service-account auth.
 
-Lightweight pure-httpx path: gets an access token via `gcloud auth
-print-access-token` (works when `GOOGLE_APPLICATION_CREDENTIALS`
-points at a valid SA JSON), then POSTs to the Vertex AI REST API.
+Lightweight pure-httpx path: gets an access token via ``gcloud auth
+print-access-token`` (works when ``GOOGLE_APPLICATION_CREDENTIALS``
+points at a valid service-account JSON), then POSTs to the Vertex AI
+REST API.
 
-No dependency on `google-cloud-aiplatform` or `google-genai` — which
-would add ~50 MB of deps. Users who want the full SDK can install
-it in the venv; this module gives the small-dep path that fits on
-the Pi without extra install.
+No dependency on ``google-cloud-aiplatform`` or ``google-genai`` —
+those would add ~50 MB of transitive deps. Users who want the full
+SDK can install it separately; this module gives the small-dep path.
 
-Smoke-tested end-to-end from zeus 2026-04-17 ~06:50 EDT:
-Gemini 2.5 Flash replied "OK" to a trivial prompt using the SA
-`moirais-dev@appspot.gserviceaccount.com` at project `moirais-dev` in
-region us-central1.
+Compatible with Vertex AI Gemini 2.5 Flash / Pro models on
+``us-central1``. Configure with:
 
-See the project documentation for the Vertex integration setup +
-troubleshooting guide.
+  - ``GOOGLE_APPLICATION_CREDENTIALS`` — path to service-account JSON
+  - ``GOOGLE_CLOUD_PROJECT`` — project id
+  - ``MOIRAIS_VERTEX_REGION`` (optional) — default ``us-central1``
 """
 
 from __future__ import annotations

@@ -31,11 +31,12 @@
  *   1. macOS  → Accelerate.framework (NEON + AMX matrix unit, hand-tuned).
  *      Selected via HAVE_ACCELERATE = 1; not changed by this pass.
  *
- *   2. Linux ARM (Raspberry Pi 5, AWS Graviton, Apple Silicon Asahi)
+ *   2. Linux ARM (AWS Graviton, ARMv8 SBCs, Apple Silicon Asahi)
  *      → ARM NEON intrinsics via <arm_neon.h> (ACLE).
  *      Selected via HAVE_NEON_NATIVE when __ARM_NEON is defined and
- *      Accelerate is unavailable. Pi 5's Cortex-A76 supports NEON
- *      with FMA (fused multiply-accumulate) — vfmaq_f32 in 1 cycle.
+ *      Accelerate is unavailable. Cortex-A76 / Neoverse-N1 cores
+ *      support NEON with FMA (fused multiply-accumulate) —
+ *      vfmaq_f32 in 1 cycle.
  *
  *   3. Linux x86_64 (HADES LLM GCP n2-standard, AWS, Azure)
  *      → AVX2 intrinsics via <immintrin.h>, requires -mavx2 -mfma.

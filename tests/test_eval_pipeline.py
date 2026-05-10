@@ -4,15 +4,16 @@ has registered).
 
 Behaviour:
     pass  -> assertion succeeds.
-    skip  -> pytest.skip (datasette unreachable in the env, e.g.
-             CI without tailnet — treated as inconclusive, not red).
+    skip  -> pytest.skip (remote endpoint unreachable in the env,
+             e.g. offline CI — treated as inconclusive, not red).
     fail  -> hard fail, with the per-key failure list.
     error -> hard fail, with the exception type + message.
 
-Strict mode is governed by env var MOIRAIS_PIPELINE_STRICT=1 — when
-set, "skip" also becomes a hard failure (so an offline CI run is
-flagged rather than silently treated as green). Off by default
-because most contributors won't have the wlp tailnet handy.
+Strict mode is governed by env var ``MOIRAIS_PIPELINE_STRICT=1`` —
+when set, "skip" also becomes a hard failure (so an offline CI run
+is flagged rather than silently treated as green). Off by default
+because most contributors won't have a configured remote endpoint
+or the bundled local SQLite mirrors.
 """
 from __future__ import annotations
 

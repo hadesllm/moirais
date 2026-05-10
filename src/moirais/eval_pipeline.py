@@ -1,29 +1,29 @@
-"""Higher-level eval pipeline — moirais runs end-to-end analyses on
-the wlp BigQuery-derived datasets and gates each on a published
-ground-truth claim about a headline coefficient.
+"""Higher-level eval pipeline — end-to-end integration gates over
+BigQuery-mirrored datasets, each pinned to a published ground-truth
+claim about a headline coefficient or shape statistic.
 
-Why this exists alongside moirais.eval:
+Why this exists alongside ``moirais.eval``:
 
-    moirais.eval (per-fn goldens) catches drift in *one function* —
+    ``moirais.eval`` (per-fn goldens) catches drift in *one function* —
     "did dnorm(0) change from 0.3989… last week?". That is correctness
-    at the leaf.  But nothing today catches the kind of bug where a
-    fn change quietly breaks an *integration* — e.g., a switch from
-    HC1 to HC3 SEs in the OLS path that flips a published coefficient
-    from significant to insignificant on a real-world dataset.
+    at the leaf.  But nothing there catches the kind of bug where a
+    function change quietly breaks an *integration* — e.g., a switch
+    from HC1 to HC3 SEs in the OLS path that flips a published
+    coefficient from significant to insignificant on a real-world
+    dataset.
 
-    moirais.eval_pipeline catches *that*: each gate is a claim of the
-    form "this analysis on this dataset should produce a headline
-    coefficient in range X" — sourced from a peer-reviewed paper,
-    a government report, or a published wlp blog post.  When a gate
-    fails, the bug is somewhere in the chain (data loading,
-    canonicalisation, the model fit, the SE formula); the eval
-    points at the broken integration even when every per-fn unit
-    test still passes.
+    ``moirais.eval_pipeline`` catches *that*: each gate is a claim of
+    the form "this analysis on this dataset should produce a headline
+    coefficient in range X" — sourced from a peer-reviewed paper or a
+    government report. When a gate fails, the bug is somewhere in the
+    chain (data loading, canonicalisation, the model fit, the SE
+    formula); the eval points at the broken integration even when
+    every per-fn unit test still passes.
 
-v0 ships the harness + 3 seed gates against the wlp datasette
-catalogue. New gates land as `DatasetGate(...)` entries in
-`SEED_GATES` below, OR via `moirais.eval_pipeline.register(...)`
-from anywhere downstream.
+The harness ships seed gates against well-known public datasets. New
+gates land as ``DatasetGate(...)`` entries in ``SEED_GATES`` below,
+or via ``moirais.eval_pipeline.register(...)`` from anywhere
+downstream.
 """
 from __future__ import annotations
 
@@ -40,7 +40,8 @@ class DatasetGate:
     """One end-to-end claim about an analysis result.
 
     name        : short ID, used in test parametrize and reports.
-    slug        : datasette slug under /data/ (or local sqlite path).
+    slug        : database slug (under the configured remote endpoint
+                  or matching a local SQLite mirror).
     description : the *claim* being verified, in plain English.
     citation    : URL or publication this claim is sourced from.
     runner      : callable(slug) -> dict of computed coefficients.
@@ -103,9 +104,9 @@ def run_gate(g: DatasetGate) -> GateResult:
 # Tiny adaptors over moirais.bq so each runner is one expression.
 
 def _primary_table(slug: str) -> str:
-    """Pick the first non-_meta table.  Datasette mirrors typically
-    have a `_meta` companion table for column descriptions; the
-    actual data lives in a sibling table named after the slug."""
+    """Pick the first non-_meta table. Public mirrors typically have
+    a ``_meta`` companion table for column descriptions; the actual
+    data lives in a sibling table named after the slug."""
     tables = [t for t in bq.bq_tables(slug) if not t.startswith("_")]
     if not tables:
         raise ValueError(f"no user tables in {slug!r}")
@@ -113,17 +114,16 @@ def _primary_table(slug: str) -> str:
 
 
 def _row_count(slug: str) -> dict[str, Any]:
-    """Row count via SELECT count(*) — works against datasette
-    (which blocks PRAGMA but allows SELECT)."""
+    """Row count via SELECT count(*) — works against any SQL endpoint
+    that allows simple SELECT."""
     table = _primary_table(slug)
     rows = bq.bq_query(slug, f'SELECT count(*) AS n FROM "{table}"')
     return {"row_count": float(rows[0]["n"])}
 
 
 def _column_count(slug: str) -> dict[str, Any]:
-    """Column count via a 1-row SELECT *.  Datasette's JSON envelope
-    returns the column list separately; we read len() of the first
-    row's keys."""
+    """Column count via a 1-row SELECT * — read ``len()`` of the first
+    returned row's keys."""
     table = _primary_table(slug)
     rows = bq.bq_query(slug, f'SELECT * FROM "{table}" LIMIT 1')
     if not rows:
@@ -132,10 +132,10 @@ def _column_count(slug: str) -> dict[str, Any]:
 
 
 # ── seed gates (the registry) ────────────────────────────────────────────────
-# Conservative claims for the v0 — "this dataset has at least N rows
-# and at least M columns" is enough to catch a regression where the
-# datasette mirror dropped tables or schemas changed shape.  Real
-# coefficient gates land as the runners get richer.
+# Conservative claims for v0 — "this dataset has at least N rows and
+# at least M columns" is enough to catch a regression where a mirror
+# dropped tables or schemas changed shape.  Real coefficient gates
+# land as the runners get richer.
 
 SEED_GATES: list[DatasetGate] = [
     # Canonical reference dataset — Fisher iris is 150 rows × 5 cols
@@ -162,17 +162,17 @@ SEED_GATES: list[DatasetGate] = [
         runner=_column_count,
         expected={"column_count": (5.0, 5.0)},
     ),
-    # Lower-bound integrity gates — the wlp mirrors are sampled,
-    # so we don't pin exact counts (they drift on each refresh-bq-*
-    # run), but a sudden 10x drop signals a broken ingest.
+    # Lower-bound integrity gates — sampled mirrors of public
+    # BigQuery datasets. We don't pin exact counts (they drift on
+    # each refresh), but a sudden 10x drop signals a broken ingest.
     DatasetGate(
         name="austin_311_min_rows",
         slug="austin_311",
         description=(
             "Austin 311 service requests sample mirror should have "
-            "at least 100k rows.  Live count ~200k as of 2026-04-29."
+            "at least 100k rows."
         ),
-        citation="https://hadesllm.com/data/austin_311 (wlp datasette)",
+        citation="bigquery-public-data.austin_311.311_service_requests",
         runner=_row_count,
         expected={"row_count": (100_000.0, None)},
     ),
@@ -181,10 +181,9 @@ SEED_GATES: list[DatasetGate] = [
         slug="noaa_ghcn",
         description=(
             "NOAA Global Historical Climatology Network observations "
-            "mirror should have >=200k rows.  Live count ~321k as of "
-            "2026-04-29."
+            "mirror should have >=200k rows."
         ),
-        citation="https://hadesllm.com/data/noaa_ghcn (wlp datasette)",
+        citation="bigquery-public-data.noaa_ghcn_d.ghcnd_*",
         runner=_row_count,
         expected={"row_count": (200_000.0, None)},
     ),
@@ -192,28 +191,20 @@ SEED_GATES: list[DatasetGate] = [
         name="worldbank_min_rows",
         slug="worldbank",
         description=(
-            "World Bank indicators mirror should have >=10k rows. "
-            "Live count ~11k as of 2026-04-29."
+            "World Bank indicators mirror should have >=10k rows."
         ),
-        citation="https://hadesllm.com/data/worldbank (wlp datasette)",
+        citation="bigquery-public-data.worldbank_wdi.indicators_data",
         runner=_row_count,
         expected={"row_count": (10_000.0, None)},
     ),
-    # Originally landed as `chicago_crime_known_empty` on 2026-04-29 —
-    # the eval pipeline surfaced an empty mirror caused by an empty
-    # BQ result wiping the populated table.  After patching the
-    # ingest to refuse-to-overwrite-on-empty + a successful re-pull
-    # (8,541,030 rows), the gate was promoted to a real lower-bound
-    # threshold.  See refresh-bq-chicago-crime.py for the fix.
     DatasetGate(
         name="chicago_crime_min_rows",
         slug="chicago_crime",
         description=(
             "Chicago Police Department incidents mirror should have "
-            ">=1M rows (live count ~8.5M as of 2026-04-29).  Sudden "
-            "drop signals the ingest pipeline is broken again."
+            ">=1M rows. Sudden drop signals a broken ingest."
         ),
-        citation="https://hadesllm.com/data/chicago_crime (wlp datasette)",
+        citation="bigquery-public-data.chicago_crime.crime",
         runner=_row_count,
         expected={"row_count": (1_000_000.0, None)},
     ),

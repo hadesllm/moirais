@@ -5,7 +5,7 @@ authors:
   - family-names: "Ruhela"
     given-names: "Vansh Singh"
     orcid: "https://orcid.org/0009-0004-1750-3592"
-version: "0.1.2"
+version: "0.1.0"
 date-released: "2026-05-10"
 url: "https://github.com/hadesllm/moirais"
 repository-code: "https://github.com/hadesllm/moirais"

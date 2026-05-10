@@ -44,7 +44,7 @@ COPY pyproject.toml README.md ./
 
 RUN --mount=type=cache,target=/root/.cache/pip,sharing=locked \
     mkdir -p src/moirais \
-    && echo '__version__ = "0.1.2"' > src/moirais/__init__.py \
+    && echo '__version__ = "0.1.0.post1"' > src/moirais/__init__.py \
     && pip install --root-user-action=ignore setuptools wheel \
     && pip install --root-user-action=ignore --prefix=/install .
 
@@ -74,7 +74,7 @@ RUN R CMD INSTALL --library=/usr/local/lib/R/site-library /build/r-package/moira
 # ─── Stage 3: Runtime ────────────────────────────────────────────────────────
 FROM python:${PYTHON_VERSION}-slim AS runtime
 
-ARG VERSION=0.1.2
+ARG VERSION=0.1.0.post1
 ARG VCS_REF=unknown
 ARG BUILD_DATE=unknown
 

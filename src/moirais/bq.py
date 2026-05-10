@@ -1,28 +1,27 @@
-"""BigQuery-derived dataset analysis (wlp/datasette catalog).
+"""BigQuery-derived dataset analysis over a local SQLite catalog.
 
-The wlp deployment hosts ~161 SQLite databases at hadesllm.com
-under datasette — each one a slice of a BigQuery public dataset that
-was sampled, schema-coerced (NUMERIC → STRING, GEOGRAPHY → WKT), and
-materialised so the browser doesn't need a Google login to query
-public data. This module gives the moirais analytics surface a
-typed entry point into those databases.
+This module gives the moirais analytics surface a typed entry point
+into a SQLite-mirrored slice of public BigQuery datasets — useful for
+local, network-free exploration and CI work.
 
 Two access paths:
 
     1. Local — point at the on-disk SQLite file directly. Fast, no
-       network. Works against the bundled `moirais_datasets.db` plus
-       any of the 161 wlp databases the user has rsynced locally.
+       network. Works against the bundled ``moirais_datasets.db`` plus
+       any user-supplied SQLite mirrors of public BigQuery slices.
 
-    2. Remote — datasette JSON API at
-       `http://hadesllm.com/data/<slug>.json?sql=…`.
-       Useful for exploration without copying GBs of SQLite locally.
+    2. Remote — a SQL-over-HTTP endpoint configured via the
+       ``MOIRAIS_REMOTE_URL`` env var. Useful for exploration without
+       copying GBs of SQLite locally.
 
-The high-level helpers (`bq_describe`, `bq_columns`, `bq_summary`,
-`bq_correlate`) auto-pick local first, fall through to remote.
+The high-level helpers (``bq_describe``, ``bq_columns``, ``bq_summary``,
+``bq_correlate``) auto-pick local first, fall through to remote when
+configured.
 """
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 import urllib.parse
 import urllib.request
@@ -30,17 +29,14 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-# Tailscale-internal hostname — datasette serves on port 80 via Caddy.
-# Override with MOIRAIS_DATASETTE env var for testing.
-import os
+# Optional remote SQL-over-HTTP endpoint. Unset by default — set
+# ``MOIRAIS_REMOTE_URL`` to a base URL (e.g. ``https://example.org/data``)
+# to enable the remote fallback path.
+REMOTE_BASE_URL = os.environ.get("MOIRAIS_REMOTE_URL", "")
 
-DATASETTE_BASE_URL = os.environ.get(
-    "MOIRAIS_DATASETTE", "https://hadesllm.com/data"
-)
-
-# Where rsynced wlp SQLite files live locally (if the user has them).
-WLP_LOCAL_DIR = Path(
-    os.environ.get("MOIRAIS_WLP_DIR", str(Path.home() / "wlp" / "data"))
+# Where any user-supplied SQLite mirrors live locally.
+LOCAL_DB_DIR = Path(
+    os.environ.get("MOIRAIS_LOCAL_DB_DIR", str(Path.home() / "moirais_data"))
 )
 
 
@@ -51,7 +47,7 @@ WLP_LOCAL_DIR = Path(
 
 @dataclass
 class TableInfo:
-    """High-level summary of one table inside a wlp/BigQuery database."""
+    """High-level summary of one table inside a BigQuery-mirror database."""
 
     db: str
     table: str
@@ -84,9 +80,8 @@ class ColumnSummary:
 def _local_path(db: str) -> Path | None:
     """Return the path to a local copy of `db.sqlite` if it exists."""
     for candidate in (
-        WLP_LOCAL_DIR / f"{db}.sqlite",
-        WLP_LOCAL_DIR / f"{db}.db",
-        Path("/path/to/workspace/wlp-data") / f"{db}.sqlite",
+        LOCAL_DB_DIR / f"{db}.sqlite",
+        LOCAL_DB_DIR / f"{db}.db",
     ):
         if candidate.exists():
             return candidate
@@ -97,7 +92,7 @@ def _query_local(db: str, sql: str) -> list[dict[str, Any]]:
     path = _local_path(db)
     if path is None:
         raise FileNotFoundError(
-            f"no local copy of {db!r}; set MOIRAIS_WLP_DIR or use bq_query_remote"
+            f"no local copy of {db!r}; set MOIRAIS_LOCAL_DB_DIR or use bq_query_remote"
         )
     with sqlite3.connect(path) as conn:
         conn.row_factory = sqlite3.Row
@@ -106,8 +101,13 @@ def _query_local(db: str, sql: str) -> list[dict[str, Any]]:
 
 
 def _query_remote(db: str, sql: str) -> list[dict[str, Any]]:
+    if not REMOTE_BASE_URL:
+        raise RuntimeError(
+            "no remote endpoint configured; set MOIRAIS_REMOTE_URL "
+            "or supply a local SQLite mirror via MOIRAIS_LOCAL_DB_DIR"
+        )
     qs = urllib.parse.urlencode({"sql": sql, "_shape": "objects"})
-    url = f"{DATASETTE_BASE_URL}/{db}.json?{qs}"
+    url = f"{REMOTE_BASE_URL}/{db}.json?{qs}"
     req = urllib.request.Request(url, headers={"User-Agent": "moirais.bq/1.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         payload = json.loads(resp.read().decode("utf-8"))
@@ -115,7 +115,7 @@ def _query_remote(db: str, sql: str) -> list[dict[str, Any]]:
 
 
 def _query(db: str, sql: str) -> list[dict[str, Any]]:
-    """Try local SQLite, fall through to datasette."""
+    """Try local SQLite, fall through to the configured remote endpoint."""
     if _local_path(db) is not None:
         return _query_local(db, sql)
     return _query_remote(db, sql)
@@ -127,10 +127,10 @@ def _query(db: str, sql: str) -> list[dict[str, Any]]:
 
 
 def bq_query(db: str, sql: str) -> list[dict[str, Any]]:
-    """Run an arbitrary SQL query against the wlp/BigQuery database `db`.
+    """Run an arbitrary SQL query against the BigQuery-mirror database ``db``.
 
     Auto-picks local SQLite if available; falls through to the
-    datasette JSON API otherwise. Returns a list of row dicts.
+    configured remote endpoint otherwise. Returns a list of row dicts.
 
     Examples
     --------
@@ -252,8 +252,8 @@ def _quote_ident(name: str) -> str:
 __all__ = [
     "TableInfo",
     "ColumnSummary",
-    "DATASETTE_BASE_URL",
-    "WLP_LOCAL_DIR",
+    "REMOTE_BASE_URL",
+    "LOCAL_DB_DIR",
     "bq_query",
     "bq_tables",
     "bq_columns",

@@ -109,13 +109,13 @@ individuals; different Mandela operationalization — federal full
 hours-out-of-cell + duration vs provincial duration-only). Use the
 cross-comparison analyzer for an interpretation-aware view.
 
-## Position in the Ruhela formulations stack
+## Position in the MRM stack
 
 The Sprott-Doob analyses sit at the **federal national-aggregate**
 level, complementing:
 
 - **Provincial individual-level** evidence on Ontario OTIS data via
-  the Ruhela formulations ensemble (a01/b01/b02 per-row analyzers).
+  the MRM modules ensemble (a01/b01/b02 per-row analyzers).
 - **Provincial aggregate** evidence via the b03-b09, c01-c12,
   d02-d05 RF analyzers + Doob χ² family on c-series + d-series.
 

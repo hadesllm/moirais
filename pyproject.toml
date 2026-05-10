@@ -14,7 +14,8 @@ readme = "README.md"
 requires-python = ">=3.10"
 keywords = [
     "MRM",
-    "RF modules",
+    "MRM modules",
+    "McNamara-Ruhela-Medina",
     "causal inference",
     "observational inference",
     "criminology",

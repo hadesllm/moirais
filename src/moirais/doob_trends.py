@@ -6,9 +6,9 @@ v. The Attorney General of Canada* (Federal Court file T-539-20,
 Application Record Vol. 3 of 5, pp. 778-795).
 
 Doob's national-aggregate analyses (Figures 1-4 + Tables 1-3) sit
-ALONGSIDE the per-row Ruhela formulations on OTIS provincial data and
+ALONGSIDE the per-row MRM modules on OTIS provincial data and
 the Doob chi-square family on aggregate contingency tables. Where
-the Ruhela formulations test causal contrasts at the individual level
+the MRM modules test causal contrasts at the individual level
 on Ontario provincial data, Doob's affidavit work tests *decoupling*
 of imprisonment rates from crime rates at the Canadian and US
 national-aggregate level over 50+ years.
@@ -437,7 +437,7 @@ def analyze_doob_full_affidavit() -> RichResult:
                 "require StatsCan CANSIM data; "
                 "use decoupling_test(crime, imp) once series available"),
             ("Companion analyses in moirais",
-                "Ruhela formulations on OTIS provincial data; "
+                "MRM modules on OTIS provincial data; "
                 "Doob chi² on c/d-series; SIU IAP federal context"),
         ],
         tables=sections,
@@ -447,7 +447,7 @@ def analyze_doob_full_affidavit() -> RichResult:
             "(b) prisoner flow is steady-state (~427 statutory "
             "releases/month), and (c) older adults are under-"
             "represented in CSC custody. These national-aggregate "
-            "analyses sit alongside the Ruhela formulations on OTIS "
+            "analyses sit alongside the MRM modules on OTIS "
             "That which does not kill us makes us stronger. — Friedrich Nietzsche"
             "from federal aggregates down to provincial individual-"
             "level evidence."

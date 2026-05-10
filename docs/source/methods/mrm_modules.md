@@ -1,27 +1,30 @@
-# Ruhela Formulations
+# MRM modules
 
 *Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
 
-A **Ruhela formulation** is a (treatment, outcome, covariates) design
-choice for a specific OTIS dataset, paired with the full **MRM** —
-the 10-estimator McNamara-Ruhela-Medina framework — applied to
-it. See the attribution block at the head of `moirais.otis_causal`
-for the full lineage.
+An **MRM module** pairs a (treatment, outcome, covariates) design
+choice for a specific OTIS dataset with the full **MRM**
+(McNamara-Ruhela-Medina) ten-estimator framework, applied to that
+design. See the attribution block at the head of
+`moirais.otis_causal` for the framework's lineage.
 
 ## Vocabulary
 
-- **RF** — Ruhela formulation: one (T, Y, covariates) design choice
-  for a dataset.
-- **RDF** — Ruhela Dual Formulation: an RF paired with a Naive-arm
-  sensitivity contrast.
-- **MRM** — McNamara-Ruhela-Medina: the 10-estimator framework
-  applied to any RF. The umbrella name for the full causal-method
-  ensemble described below.
+- **MRM** — McNamara-Ruhela-Medina: the ten-estimator framework
+  applied to any design. The umbrella name for the full
+  causal-estimator ensemble described below.
+- **RF** — *formulation*, one (T, Y, covariates) design choice for a
+  dataset. Used as a code-level abbreviation
+  (`rf_*` callables and `*_ruhela_formulations` analyzers) and
+  aliased under MRM-prefixed names (`mrm_*`).
+- **RDF** — *dual formulation*: a formulation paired with a
+  naive-arm sensitivity contrast. Code-level: `rdf_*` and the
+  matching MRM-prefixed alias.
 
 ## MRM (10 estimators)
 
-For every RF that resolves to per-row panel data with a binary T and
-numeric Y, MRM runs:
+For every formulation that resolves to per-row panel data with a
+binary T and numeric Y, MRM runs:
 
 1. **IPW (Hájek)** — single-robust on propensity, Lunceford-Davidian sandwich SE
 2. **AIPW (RRZ doubly-robust)** — cross-fitted IF plug-in
@@ -44,20 +47,24 @@ diagnostic.
 
 ## Per-row formulations (panel data)
 
-For a01 and b01 the canonical RF is `T_high_ac → Y_vm_count` paired
-with a Naive arm (`any-flag → vm-binary`).
+For a01 and b01 the canonical formulation is
+`T_high_ac → Y_vm_count` paired with a naive arm
+(`any-flag → vm-binary`).
 
 ```python
+# MRM-prefixed names (preferred going forward)
 from moirais.otis_all_analyze import (
-    analyze_a01_ruhela_formulations,
-    analyze_b01_ruhela_formulations,
-    analyze_b02_ruhela_formulations,
-    analyze_a01_ruhela_alt_gender,
-    analyze_a01_ruhela_alt_age,
-    analyze_a01_ruhela_alt_toronto,
-    analyze_a01_ruhela_per_year,
-    analyze_b01_ruhela_per_year,
+    analyze_a01_mrm,
+    analyze_b01_mrm,
+    analyze_b02_mrm,
+    analyze_a01_mrm_alt_gender,
+    analyze_a01_mrm_alt_age,
+    analyze_a01_mrm_alt_toronto,
+    analyze_a01_mrm_per_year,
+    analyze_b01_mrm_per_year,
 )
+# Original names remain as aliases:
+#   analyze_a01_ruhela_formulations == analyze_a01_mrm   (etc.)
 ```
 
 ## Aggregate formulations (count outcomes)
@@ -66,16 +73,17 @@ For aggregate datasets the analog is Poisson + NB GLM with IRR.
 
 ```python
 from moirais.otis_all_analyze import (
-    analyze_b03_ruhela_aggregate,
-    analyze_b06_ruhela_aggregate,
-    analyze_b07_ruhela_aggregate,
-    analyze_c01_ruhela_aggregate,
-    analyze_c03_ruhela_aggregate,
-    analyze_c04_ruhela_aggregate,
-    analyze_c06_ruhela_aggregate,
-    analyze_c07_ruhela_aggregate,
-    analyze_c09_ruhela_aggregate,
+    analyze_b03_mrm_aggregate,
+    analyze_b06_mrm_aggregate,
+    analyze_b07_mrm_aggregate,
+    analyze_c01_mrm_aggregate,
+    analyze_c03_mrm_aggregate,
+    analyze_c04_mrm_aggregate,
+    analyze_c06_mrm_aggregate,
+    analyze_c07_mrm_aggregate,
+    analyze_c09_mrm_aggregate,
 )
+# Original `*_ruhela_aggregate` names remain as aliases.
 ```
 
 ## Doob chi-square companion

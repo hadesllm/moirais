@@ -26,7 +26,7 @@ preferred-citation:
   url: "https://doi.org/10.5281/zenodo.20096350"
 references:
   - type: generic
-    title: "The MRM Framework: A Multi-Source Mathematical Foundation for Canadian Carceral, Police, and Oversight Data, Implemented as RF Modules in MOIRAIS"
+    title: "The MRM Framework: A Multi-Source Statistical Foundation for Canadian Carceral, Police, and Oversight Data, Implemented as MRM Modules in MOIRAIS"
     authors:
       - family-names: "Ruhela"
         given-names: "Vansh Singh"

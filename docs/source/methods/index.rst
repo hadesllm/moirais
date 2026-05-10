@@ -21,7 +21,7 @@ matches the estimator's signature.
    psymet
    otis
    otis_linkage
-   ruhela_formulations
+   mrm_modules
    siuiap
    sprott_doob
    doob_trends

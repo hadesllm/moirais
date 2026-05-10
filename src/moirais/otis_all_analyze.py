@@ -4318,3 +4318,53 @@ def analyze_all(out_dir: Path | None = None) -> dict[str, RichResult]:
                 warnings=[f"{type(e).__name__}: {e}"],
             )
     return results
+
+# ----------------------------------------------------------------------
+# MRM-prefixed aliases
+# ----------------------------------------------------------------------
+#
+# Same callables, MRM-prefixed names. Prefer the *_mrm form in new
+# code; the *_ruhela_* form remains as an alias for backward
+# compatibility with existing notebooks and scripts.
+
+analyze_a01_mrm_alt_age = analyze_a01_ruhela_alt_age
+analyze_a01_mrm_alt_gender = analyze_a01_ruhela_alt_gender
+analyze_a01_mrm_alt_toronto = analyze_a01_ruhela_alt_toronto
+analyze_a01_mrm = analyze_a01_ruhela_formulations
+analyze_a01_mrm_per_year = analyze_a01_ruhela_per_year
+analyze_a01_mrm_subgroup_female = analyze_a01_ruhela_subgroup_female
+analyze_a01_mrm_subgroup_male = analyze_a01_ruhela_subgroup_male
+analyze_b01_mrm_alt_age = analyze_b01_ruhela_alt_age
+analyze_b01_mrm_alt_gender = analyze_b01_ruhela_alt_gender
+analyze_b01_mrm_alt_toronto = analyze_b01_ruhela_alt_toronto
+analyze_b01_mrm = analyze_b01_ruhela_formulations
+analyze_b01_mrm_per_year = analyze_b01_ruhela_per_year
+analyze_b01_mrm_subgroup_female = analyze_b01_ruhela_subgroup_female
+analyze_b01_mrm_subgroup_male = analyze_b01_ruhela_subgroup_male
+analyze_b02_mrm_alt_age = analyze_b02_ruhela_alt_age
+analyze_b02_mrm_alt_region = analyze_b02_ruhela_alt_region
+analyze_b02_mrm = analyze_b02_ruhela_formulations
+analyze_b03_mrm_aggregate = analyze_b03_ruhela_aggregate
+analyze_b04_mrm_aggregate = analyze_b04_ruhela_aggregate
+analyze_b06_mrm_aggregate = analyze_b06_ruhela_aggregate
+analyze_b07_mrm_aggregate = analyze_b07_ruhela_aggregate
+analyze_b08_mrm_aggregate = analyze_b08_ruhela_aggregate
+analyze_b09_mrm_aggregate = analyze_b09_ruhela_aggregate
+analyze_c01_mrm_aggregate = analyze_c01_ruhela_aggregate
+analyze_c01_mrm_aggregate_region_cluster = analyze_c01_ruhela_aggregate_region_cluster
+analyze_c02_mrm_aggregate = analyze_c02_ruhela_aggregate
+analyze_c03_mrm_aggregate = analyze_c03_ruhela_aggregate
+analyze_c04_mrm_aggregate = analyze_c04_ruhela_aggregate
+analyze_c04_mrm_aggregate_region_cluster = analyze_c04_ruhela_aggregate_region_cluster
+analyze_c05_mrm_aggregate = analyze_c05_ruhela_aggregate
+analyze_c06_mrm_aggregate = analyze_c06_ruhela_aggregate
+analyze_c07_mrm_aggregate = analyze_c07_ruhela_aggregate
+analyze_c08_mrm_aggregate = analyze_c08_ruhela_aggregate
+analyze_c09_mrm_aggregate = analyze_c09_ruhela_aggregate
+analyze_c10_mrm_aggregate = analyze_c10_ruhela_aggregate
+analyze_c11_mrm_aggregate = analyze_c11_ruhela_aggregate
+analyze_c12_mrm_aggregate = analyze_c12_ruhela_aggregate
+analyze_d02_mrm_aggregate = analyze_d02_ruhela_aggregate
+analyze_d03_mrm_aggregate = analyze_d03_ruhela_aggregate
+analyze_d04_mrm_aggregate = analyze_d04_ruhela_aggregate
+analyze_d05_mrm_aggregate = analyze_d05_ruhela_aggregate

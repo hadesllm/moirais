@@ -70,7 +70,7 @@ of Criminal Justice Statistics. The data series themselves are not
 bundled with moirais; users supply their own time-series for use
 with `decoupling_test()`.
 
-## Position in the Ruhela formulations stack
+## Position in the MRM stack
 
 The Doob national-aggregate analyses complement the OTIS provincial
 evidence:

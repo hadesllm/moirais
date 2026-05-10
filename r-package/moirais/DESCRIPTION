@@ -52,7 +52,10 @@ Suggests:
   pracma,
   signal,
   smotefamily,
-  testthat (>= 3.0.0)
+  testthat (>= 3.0.0),
+  knitr,
+  rmarkdown
+VignetteBuilder: knitr
 URL: https://github.com/hadesllm/moirais
 BugReports: https://github.com/hadesllm/moirais/issues
 Config/testthat/edition: 3

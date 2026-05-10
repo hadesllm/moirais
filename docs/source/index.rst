@@ -105,11 +105,11 @@ for auto-generated function reference.
   isotonic) on IPW / AIPW / SuperLearner-AIPW with Brier score.
 
 **The MRM framework**
-  McNamara-Ruhela-Medina — a 10-estimator framework applied to
-  every Ruhela formulation on OTIS / SIU / TPS data. Per-row
-  individual-level + aggregate (Poisson, NB GLM) modes. Mandela-RF
-  classifier (UN Mandela Rules 43 + 44) + provincial-vs-federal
-  cross-comparison.
+  McNamara-Ruhela-Medina — a 10-estimator framework applied to OTIS
+  / SIU / TPS data over a coordinated set of (treatment, outcome,
+  covariates) designs. Per-row individual-level + aggregate (Poisson,
+  NB GLM) modes. Mandela classifier (UN Mandela Rules 43 + 44) +
+  provincial-vs-federal cross-comparison.
 
 **Spatial statistics**
   Moran's :math:`I`, Geary's :math:`C`, Getis-Ord general :math:`G`,

@@ -50,8 +50,8 @@ Funding and infrastructure
 - Anthropic — Claude API research credits.
 - Google — Gemini / Vertex AI research credits.
 
-Mentorship
-----------
+Mentorship and expert review
+----------------------------
 
 The author thanks **Glenn McNamara** — ~30 years as the statistician
 at Ontario Provincial Police headquarters, preceded by tenure at
@@ -60,5 +60,69 @@ the University of Toronto — for weekly methodological mentorship over
 the past six months. Glenn introduced the author to foundational
 distribution theory and the applied-statistics intuition for
 administrative data that grounds much of this framework. He is the
-**M** in **MRM (McNamara-Ruhela-Medina)** — the framework that
-powers the OTIS / SIU / TPS analyses across this package.
+**M** (catalyst) in **MRM (McNamara-Ruhela-Medina)** — the framework
+that powers the OTIS / SIU / TPS analyses across this package.
+
+The author thanks **Prof. Angela Zorro Medina**, Centre for
+Criminology and Sociolegal Studies, University of Toronto, for expert
+review of the framework. Prof. Medina is the **M** (reviewer) in
+MRM. The methodological lineage MRM follows is established in her
+work on anti-gang legislation:
+
+   Zorro Medina, Á. (2023). *The Effect of Anti-Gang Laws on Crime
+   and Social Control.* University of Chicago Job Market Paper.
+   https://azorromedina.com/wp-content/uploads/2023/08/JMP_ZorroMedina_28_08_23H.pdf
+
+Specifically, MRM inherits from her JMP:
+
+- a **staggered two-way-fixed-effects** identification strategy
+  with formal **leads-and-lags Granger-causality** diagnostics for
+  the parallel-trends assumption (Athey & Imbens, 2022;
+  Callaway & Sant'Anna, 2021; Goodman-Bacon, 2021);
+- an explicitly **multi-source data-integration** pattern — her
+  five U.S. sources (FBI SRS/NIBRS, BJS BJSPS, FBI UCR, BLS, state
+  annotated criminal codes) are structurally analogous to MRM's
+  five Canadian sources (OTIS / SIU IAP / Ontario SIU / TPS / CCRSO);
+- the **deterrence / routine-activities / certainty** mechanism
+  categorisation that grounds individual estimands in sociolegal
+  theory rather than statistical fit alone;
+- the **inequality-effects-of-criminal-law-expansions** framing
+  (§2.3 of the JMP) that connects empirical estimands to racial
+  and social inequality in carceral outcomes.
+
+Her substantive review of the OTIS Major Research Paper insisted on
+quantitatively-grounded sociolegal mechanism, on a negative-binomial
+mixed model with regional-cluster random intercepts as the principal
+aggregate-level estimator, and on a disciplined empirical structure
+(a focused introduction, a four-part policy and literature section,
+a four-part data and measures section, and the removal of
+philosophical digressions in favour of statistical rigour on the
+existing sample). That review directly shapes the methodological
+spine reported here.
+
+Data acknowledgments
+--------------------
+
+Several MRM analyses use Statistics Canada and Health Canada Public
+Use Microdata Files (PUMFs):
+
+- **CCS** — Canadian Cannabis Survey (Health Canada, annual since
+  2018; multiple cycles 2018-2024).
+- **CSADS** — Canadian Student Alcohol and Drugs Survey
+  (2021-22, 2023-24; previously *Canadian Student Tobacco, Alcohol
+  and Drugs Survey* / CSTADS, 2014-2022; previously *Youth Smoking
+  Survey* / YSS, before 2014).
+- **CSUS** — Canadian Substance Use Survey (2023, 2025).
+- **CADS** — Canadian Alcohol and Drugs Survey
+  (2019; https://doi.org/10.25318/132500052021001-eng).
+- **CPADS** — Canadian Postsecondary Education Alcohol and Drug
+  Use Survey (2019-20, 2021-22).
+
+Although the analyses use Statistics Canada data, the analyses,
+interpretations, and conclusions are those of the author and do
+not represent the views of Statistics Canada. Public Health Agency
+of Canada (PHAC) and Canadian Institute for Health Information
+(CIHI) aggregates are used under the same standard disclaimer.
+Ontario open data (OTIS, A01-RCDD release; via
+``data.ontario.ca``) and Toronto Police Service open data are
+acknowledged with the same standard disclaimer.

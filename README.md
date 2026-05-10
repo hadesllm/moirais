@@ -43,15 +43,15 @@ import moirais
 # Load a built-in dataset
 df = moirais.load_dataset("otis-2025")
 
-# Run a Ruhela formulation (MRM primary)
-from moirais.otis_all_analyze import analyze_a01_ruhela_formulations
-result = analyze_a01_ruhela_formulations(df)
+# Run an MRM module on OTIS data
+from moirais.otis_all_analyze import analyze_a01_mrm
+result = analyze_a01_mrm(df)
 print(result)
 ```
 
 ## Documentation
 
-Full documentation is at [hadesllm.github.io/moirais](https://hadesllm.github.io/moirais/) (auto-built from `docs/source/`).
+Full documentation is at [hadesllm.github.io/moirais](https://hadesllm.github.io/moirais/).
 
 ## Citation
 
@@ -63,9 +63,9 @@ Toolkit for Observational Inference, with Sociolegal, Signal-Processing,
 Cryptographic, and Spatial-Statistics Modules. Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
-Ruhela, V. S. (2026). The MRM Framework: A Multi-Source Mathematical
+Ruhela, V. S. (2026). The MRM Framework: A Multi-Source Statistical
 Foundation for Canadian Carceral, Police, and Oversight Data, Implemented
-as RF Modules in MOIRAIS. Zenodo.
+as MRM Modules in MOIRAIS. Zenodo.
 https://doi.org/10.5281/zenodo.20096075
 
 Ruhela, V. S. (2026). Criminological Hawkes Process via MOIRAIS:
@@ -103,11 +103,43 @@ implementation but does not change the attribution of the work.
 - Google — Gemini / Vertex AI research credits.
 - The author thanks **Glenn McNamara** — ~30 years as the
   statistician at Ontario Provincial Police headquarters, preceded by
-  tenure at Statistics Canada — for weekly methodological mentorship
-  over the past six months. He brings distribution theory,
+  tenure at Statistics Canada, with a Mathematics and Linguistics
+  background from the University of Toronto — for weekly methodological
+  mentorship over the past six months. He brings distribution theory,
   applied-statistics intuition for administrative data, and the
   judgment that grounds much of this framework. Glenn is the **M** in
-  **MRM (McNamara-Ruhela-Medina)**.
+  **MRM (McNamara-Ruhela-Medina)** (catalyst).
+
+- The author thanks **Prof. Angela Zorro Medina**, Centre for
+  Criminology and Sociolegal Studies, University of Toronto, for
+  expert review of the framework and for the methodological lineage
+  established by her work on anti-gang legislation (Zorro Medina,
+  2023, *The Effect of Anti-Gang Laws on Crime and Social
+  Control*) — staggered two-way-fixed-effects identification,
+  formal leads-and-lags Granger-causality diagnostics for parallel
+  trends, multi-source data-integration over five jurisdictional
+  sources, deterrence / routine-activities / certainty mechanism
+  categorisation, and the inequality-effects-of-criminal-law
+  framing — all of which directly shape MRM's empirical-statistical
+  spine. Prof. Medina is the **M** in MRM (reviewer).
+
+### Data acknowledgments
+
+Several MRM analyses use Statistics Canada and Health Canada Public
+Use Microdata Files (PUMFs) — including the **Canadian Cannabis
+Survey (CCS)**, the **Canadian Student Alcohol and Drugs Survey
+(CSADS)**, the **Canadian Substance Use Survey (CSUS)**, the
+**Canadian Alcohol and Drugs Survey (CADS, 2019;
+[doi.org/10.25318/132500052021001-eng](https://doi.org/10.25318/132500052021001-eng))**,
+and the **Canadian Postsecondary Education Alcohol and Drug Use
+Survey (CPADS)** — along with Public Health Agency of Canada (PHAC)
+and Canadian Institute for Health Information (CIHI) aggregates.
+Although the analyses use Statistics Canada and Health Canada data,
+the analyses, interpretations, and conclusions are those of the
+author and do not represent the views of Statistics Canada or
+Health Canada. Ontario open data (OTIS, A01-RCDD release; via
+`data.ontario.ca`) and Toronto Police Service open data are used
+under the same standard disclaimer.
 
 ## License
 

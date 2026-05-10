@@ -36,7 +36,7 @@ scientific-experimentation contexts, with sociolegal data
 analysis (carceral, police, and oversight) as its named
 flagship domain. The package is
 home to the MRM (McNamara-Ruhela-Medina) framework, a
-unified mathematical foundation that integrates five distinct
+multi-source mathematical foundation that integrates five distinct
 Canadian carceral, police, and oversight data streams under one
 set of estimators [@ruhela2026dlrm]: provincial Ontario
 restrictive-confinement microdata (OTIS), federal Structured
@@ -48,7 +48,7 @@ open-data crime categories with the Statistics Canada Crime
 Severity Index [@wallace2009csi], and federal Corrections and
 Conditional Release Statistical Overview tables introduced via
 Doob's *T-539-20* affidavit [@doob2020affidavit]. MRM is
-implemented in MOIRAIS as a set of RF modules — a 10-estimator
+implemented in MOIRAIS as a set of MRM modules — a 10-estimator
 per-individual causal ensemble paired with a GEE
 clustering grid, a Doob $\chi^{2}$ family for aggregate
 contingency tables, a Goffmanian institutional-churn analysis
@@ -123,10 +123,10 @@ consumer hardware.
 
 # Key features
 
-## MRM framework (the RF modules)
+## MRM framework (the MRM modules)
 
 The carceral, police, and oversight analyses are organised
-around the MRM framework. The RF modules, MOIRAIS's
+around the MRM framework. The MRM modules, MOIRAIS's
 implementation of MRM, cover:
 
 - An **aggregate IRR family** for Poisson- and

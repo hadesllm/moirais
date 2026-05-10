@@ -36,7 +36,7 @@ estimator on inter-event spatial displacements between consecutive
 crime incidents diagnoses whether offenders' movement is Brownian
 (:math:`\alpha \ge 2`) or Lévy (:math:`\alpha < 2`).
 
-- ``moirais.tps_statphysics.levy_tail_index`` --- Hill estimator on
+- ``moirais.tps_statphysics.levy_flight_alpha`` --- Hill estimator on
   inter-event displacements with bootstrap CI.
 - Reference: Brockmann, Hufnagel, Geisel (2006). *The scaling laws of
   human travel.* Nature 439:462--465.
@@ -71,7 +71,7 @@ predators. The fit recovers the four classical parameters
 (:math:`\alpha, \beta, \gamma, \delta`) plus their stability
 classification (stable focus / spiral / saddle).
 
-- ``moirais.tps_statphysics.lotka_volterra_fit`` --- nonlinear
+- ``moirais.tps_statphysics.lotka_volterra_police_crime`` --- nonlinear
   least-squares on annual paired police / crime time series.
 - Reference: D'Orsogna, Perc (2015). *Statistical physics of crime: A
   review.* Physics of Life Reviews 12:1--21, §3.4.

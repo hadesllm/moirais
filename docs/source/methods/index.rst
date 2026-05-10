@@ -27,6 +27,7 @@ Alcohol/Drug Survey) primary analysis context.
    hawkes
    spatial
    statphysics
+   findings
    quantization
    inference_engine
    signal_processing

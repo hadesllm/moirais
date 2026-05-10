@@ -38,8 +38,8 @@ htmlcov
 coverage.xml
 .hypothesis
 
-# R package — not shipped in the Python container
-r-package
+# R package — IS shipped in the container (3-stage Python+R build) so
+# we DO need it in the build context. Just exclude editor cruft.
 *.Rproj
 .Rhistory
 .Rdata

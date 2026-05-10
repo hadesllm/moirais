@@ -1,5 +1,7 @@
 # Sprott-Doob CRIMSL + Schulich Law SIU analyses
 
+*Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
+
 `moirais.sprott_doob` replicates the analytical contribution of four
 research reports authored by **Prof. Jane B. Sprott** (Toronto
 Metropolitan University, formerly Ryerson) and **Prof. Anthony N.
@@ -12,22 +14,26 @@ academic analysis of Canada's federal SIU system through 2021.
 
 ## The four reports
 
-| Date | Title | Authors | Source |
-|---|---|---|---|
-| 2020-10 | *Understanding the Operation of CSC's SIUs* | Sprott & Doob | CRIMSL UToronto |
-| 2020-11 | *Is there Clear Evidence COVID-19 Was the Cause of Problems with the SIUs?* | Sprott & Doob | CRIMSL UToronto |
-| 2021-02-23 | *Solitary Confinement, Torture, and Canada's SIUs* | Sprott & Doob | CRIMSL UToronto |
-| 2021-05-09 | *Do Independent External Decision Makers Ensure...?* | Sprott, Doob & Iftene | Schulich Law Dalhousie |
+- **2020-10** — *Understanding the Operation of CSC's SIUs.* Sprott
+  & Doob; CRIMSL, University of Toronto.
+- **2020-11** — *Is there Clear Evidence COVID-19 Was the Cause of
+  Problems with the SIUs?* Sprott & Doob; CRIMSL, University of
+  Toronto.
+- **2021-02-23** — *Solitary Confinement, Torture, and Canada's
+  SIUs.* Sprott & Doob; CRIMSL, University of Toronto.
+- **2021-05-09** — *Do Independent External Decision Makers
+  Ensure ... ?* Sprott, Doob & Iftene; Schulich School of Law,
+  Dalhousie University.
 
 ## Headline replicated findings
 
-**February 2021 paper (Mandela classifier on N=1,960 SIU stays):**
+**February 2021 paper (Mandela classifier on N = 1,960 SIU stays):**
 
-| Category | Mandela Rule | % | N |
-|---|---|---|---|
-| Solitary Confinement | Rule 44 (≤2 hrs out, ≤15 days) | 28.4% | 556 |
-| Torture | Rules 43+44 (same conditions, ≥16 days) | 9.9% | 195 |
-| All other | — | 61.7% | 1,209 |
+- **Solitary Confinement** (Mandela Rule 44, ≤ 2 hrs out, ≤ 15 days):
+  28.4 %, N = 556.
+- **Torture** (Mandela Rules 43 + 44, same conditions, ≥ 16 days):
+  9.9 %, N = 195.
+- **All other**: 61.7 %, N = 1,209.
 
 Pacific region's torture rate (39.1 per 1000 prisoners) is **22.6×**
 Ontario's (1.73 per 1000).
@@ -109,7 +115,7 @@ The Sprott-Doob analyses sit at the **federal national-aggregate**
 level, complementing:
 
 - **Provincial individual-level** evidence on Ontario OTIS data via
-  the Ruhela formulations battery (a01/b01/b02 per-row analyzers).
+  the Ruhela formulations ensemble (a01/b01/b02 per-row analyzers).
 - **Provincial aggregate** evidence via the b03-b09, c01-c12,
   d02-d05 RF analyzers + Doob χ² family on c-series + d-series.
 

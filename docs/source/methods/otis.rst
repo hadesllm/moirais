@@ -1,6 +1,8 @@
 Ontario Restrictive Confinement (OTIS)
 ======================================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS provides **250+ correctional/sociolegal functions** for Ontario
 correctional system data — restrictive confinement placements, alert
 statuses, regional movement patterns, recidivism, risk assessment,
@@ -34,96 +36,49 @@ Data
 - **Records**: ~1.9M expanded placement records
 - **Unit**: Individual × fiscal year × placement event
 
-.. list-table:: Key Variables
-   :header-rows: 1
-   :widths: 20 30 30
+Key variables:
 
-   * - Variable
-     - Description
-     - Values
-   * - gender
-     - Sex/gender
-     - Male, Female
-   * - age_category
-     - Age group
-     - 18-24, 25-49, 50+
-   * - region
-     - Ontario region
-     - Central, Eastern, Northern, Toronto, Western
-   * - mental_health_alert
-     - Mental health flag
-     - Yes/No
-   * - suicide_risk_alert
-     - Suicide risk flag
-     - Yes/No
-   * - suicide_watch_alert
-     - Suicide watch flag
-     - Yes/No
-   * - number_of_placements
-     - Count of placements
-     - Integer
+- ``gender`` — sex / gender (Male, Female).
+- ``age_category`` — age group (18-24, 25-49, 50+).
+- ``region`` — Ontario region (Central, Eastern, Northern, Toronto,
+  Western).
+- ``mental_health_alert`` — mental-health flag (Yes / No).
+- ``suicide_risk_alert`` — suicide-risk flag (Yes / No).
+- ``suicide_watch_alert`` — suicide-watch flag (Yes / No).
+- ``number_of_placements`` — count of placements (integer).
 
 Alert-State Encoding
 --------------------
 
-Three binary alerts produce 8 possible combinations:
+Three binary alerts (mental health, suicide risk, suicide watch)
+produce 8 possible combinations. The codes used in the package:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 10 15 15 15 20
+- ``a1`` — mental health only (1, 0, 0).
+- ``a4`` — mental health + suicide risk (1, 1, 0).
+- ``a5`` — suicide risk + suicide watch (0, 1, 1).
+- ``a7`` — all three alerts (1, 1, 1).
+- ``a8`` — no alerts (0, 0, 0).
 
-   * - Code
-     - Mental Health
-     - Suicide Risk
-     - Suicide Watch
-     - Interpretation
-   * - a1
-     - 1
-     - 0
-     - 0
-     - Mental health only
-   * - a4
-     - 1
-     - 1
-     - 0
-     - MH + suicide risk
-   * - a5
-     - 0
-     - 1
-     - 1
-     - Suicide risk + watch
-   * - a7
-     - 1
-     - 1
-     - 1
-     - All three alerts
-   * - a8
-     - 0
-     - 0
-     - 0
-     - No alerts
+(Vector entries are ``mental_health, suicide_risk, suicide_watch`` in
+that order. Codes ``a2, a3, a6`` cover the remaining permutations.)
 
-The **complexity index** (``ac``) counts how many distinct alert states
-a person experienced across their placement events. Higher complexity
-indicates more variable alert status over time.
+The **complexity index** (``ac``) counts how many distinct alert
+states a person experienced across their placement events. Higher
+complexity indicates more variable alert status over time.
 
 Methods
 -------
 
-.. csv-table::
-   :header: "Method", "Python function", "R equivalent"
-   :widths: 30, 25, 25
-
-   "Regional placement analysis", "``rplace``", "``get_region_by_age()``"
-   "Alert-state encoding", "``astcmb``", "``dt_unbiased`` block"
-   "Regional volatility", "``volat``", "volatility section"
-   "Trends over time", "``rctrnd``", "temporal analysis"
-   "Descriptive statistics", "``otdesc``", "sections 1-4"
-   "DML IRM (ATE/ATT)", "``otdml``", "``run_dml_analysis()``"
-   "Propensity score matching", "``moirais.matching``", "MatchIt"
-   "AIPW (doubly robust)", "``moirais.causal``", "WeightIt + lm_robust"
-   "Mixed effects (GLMM)", "R only", "lme4, glmmTMB"
-   "DHARMa diagnostics", "R only", "DHARMa"
+- **Regional placement analysis** — Python ``rplace``, R ``get_region_by_age()``.
+- **Alert-state encoding** — Python ``astcmb``, R ``dt_unbiased`` block.
+- **Regional volatility** — Python ``volat``, R volatility section.
+- **Trends over time** — Python ``rctrnd``, R temporal analysis.
+- **Descriptive statistics** — Python ``otdesc``, R sections 1-4.
+- **DML IRM (ATE / ATT)** — Python ``otdml``, R ``run_dml_analysis()``.
+- **Propensity score matching** — Python ``moirais.matching``, R ``MatchIt``.
+- **AIPW (doubly robust)** — Python ``moirais.causal``, R ``WeightIt`` + ``lm_robust``.
+- **Mixed effects (GLMM)** — R only (``lme4``, ``glmmTMB``).
+- **DHARMa diagnostics** — R only (``DHARMa``).
 
 Usage
 -----

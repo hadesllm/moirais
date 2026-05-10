@@ -1,6 +1,8 @@
 Polyglot REPL
 =============
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS includes a polyglot REPL that bridges multiple programming languages
 within a single session. Variables, DataFrames, and scalars flow
 bidirectionally between Python, R, and Shell, with additional support for
@@ -20,58 +22,21 @@ Language Detection
 The REPL auto-detects the language of each input line. Explicit prefixes
 override auto-detection:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 15 15 40
-
-   * - Prefix
-     - Language
-     - Display Label
-   * - (none)
-     - Python (default)
-     - ``[P]``
-   * - ``R>``
-     - R
-     - ``[R]``
-   * - ``J>``
-     - Julia
-     - ``[J]``
-   * - ``Q>``
-     - SQL
-     - ``[Q]``
-   * - ``N>``
-     - Node.js
-     - ``[N]``
-   * - ``Go>``
-     - Go
-     - ``[Go]``
-   * - ``Rs>``
-     - Rust
-     - ``[Rs]``
-   * - ``C>``
-     - C
-     - ``[C]``
-   * - ``C+>``
-     - C++
-     - ``[C+]``
-   * - ``ML>``
-     - OCaml
-     - ``[ML]``
-   * - ``Lu>``
-     - Lua
-     - ``[Lu]``
-   * - ``TS>``
-     - TypeScript
-     - ``[TS]``
-   * - ``TX>``
-     - LaTeX
-     - ``[TX]``
-   * - ``PG>``
-     - PostgreSQL
-     - ``[PG]``
-   * - ``$`` or ``!``
-     - Shell
-     - ``[Z]`` (zsh), ``[B]`` (bash), ``[S]`` (sh)
+- (no prefix) — Python (default), label ``[P]``.
+- ``R>`` — R, label ``[R]``.
+- ``J>`` — Julia, label ``[J]``.
+- ``Q>`` — SQL, label ``[Q]``.
+- ``N>`` — Node.js, label ``[N]``.
+- ``Go>`` — Go, label ``[Go]``.
+- ``Rs>`` — Rust, label ``[Rs]``.
+- ``C>`` — C, label ``[C]``.
+- ``C+>`` — C++, label ``[C+]``.
+- ``ML>`` — OCaml, label ``[ML]``.
+- ``Lu>`` — Lua, label ``[Lu]``.
+- ``TS>`` — TypeScript, label ``[TS]``.
+- ``TX>`` — LaTeX, label ``[TX]``.
+- ``PG>`` — PostgreSQL, label ``[PG]``.
+- ``$`` or ``!`` — shell, label ``[Z]`` (zsh) / ``[B]`` (bash) / ``[S]`` (sh).
 
 Auto-detection heuristics:
 
@@ -143,28 +108,11 @@ language boundaries automatically.
 
 Supported types for bridging:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 25 25 25
-
-   * - Type
-     - Python
-     - R
-   * - Scalar (int/float)
-     - ``int``, ``float``
-     - ``numeric``
-   * - String
-     - ``str``
-     - ``character``
-   * - Boolean
-     - ``bool``
-     - ``logical``
-   * - Vector/List
-     - ``list``, ``np.array``
-     - ``c()``, ``vector``
-   * - DataFrame
-     - ``pd.DataFrame``
-     - ``data.frame``
+- **Scalar (int / float)** — Python ``int``, ``float`` ↔ R ``numeric``.
+- **String** — Python ``str`` ↔ R ``character``.
+- **Boolean** — Python ``bool`` ↔ R ``logical``.
+- **Vector / list** — Python ``list``, ``np.array`` ↔ R ``c()``, ``vector``.
+- **DataFrame** — Python ``pd.DataFrame`` ↔ R ``data.frame``.
 
 Modes
 -----

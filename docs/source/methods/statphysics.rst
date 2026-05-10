@@ -1,6 +1,8 @@
 Statistical Physics of Crime
 =============================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 The ``moirais.tps_statphysics`` module collects four
 statistical-physics models of urban crime that are routinely fit on
 Toronto Police Service open-data feeds. The framing follows the

@@ -1,6 +1,8 @@
 Signal Processing & Biomedical Analysis
 ========================================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS provides 25 biomedical signal processing functions via ``moirais.signal``
 and individual ``moirais.fn.*`` modules. All functions are dataset-agnostic:
 numpy arrays in, result objects out.

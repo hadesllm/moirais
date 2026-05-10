@@ -1,5 +1,7 @@
 # Doob T-539-20 Federal Court affidavit replication
 
+*Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
+
 `moirais.doob_trends` replicates the analytical contribution of
 Prof. Anthony N. Doob's expert-witness affidavit in *Canadian Civil
 Liberties Association et al. v. The Attorney General of Canada*,
@@ -17,11 +19,12 @@ The module hardcodes the three numerical tables from Doob's
 affidavit, sourced from Public Safety Canada's *Corrections and
 Conditional Release Statistical Overview 2018*:
 
-| Constant | Source | Content |
-|---|---|---|
-| `CCRSO_TABLE1_RELEASES` | Affidavit Table 1 | 5-yr avg annual conditional releases by type |
-| `CCRSO_TABLE2_FLOW` | Affidavit Table 2 | Annual prisoner counts, admissions, deaths, releases (2013/14-2017/18) |
-| `CCRSO_TABLE3_AGE` | Affidavit Table 3 | Age distribution: Canada adult pop vs CSC custody |
+- `CCRSO_TABLE1_RELEASES` — affidavit Table 1: 5-year average
+  annual conditional releases by type.
+- `CCRSO_TABLE2_FLOW` — affidavit Table 2: annual prisoner counts,
+  admissions, deaths, releases (2013/14-2017/18).
+- `CCRSO_TABLE3_AGE` — affidavit Table 3: age distribution
+  (Canada adult population vs CSC custody).
 
 ```python
 from moirais.doob_trends import (
@@ -76,7 +79,7 @@ evidence:
 - **Federal SIU regional** (`moirais.sprott_doob`): Mandela
   classifier + regional Pacific-vs-Ontario disparities.
 - **Provincial individual + aggregate** (`moirais.otis_*`): Ruhela
-  formulations battery on OTIS Ontario data.
+  formulations ensemble on OTIS Ontario data.
 
 `analyze_ruhela_master()` §5 surfaces key rows from this module.
 

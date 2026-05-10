@@ -1,6 +1,8 @@
 Psychometric Methods
 ====================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS provides **250+ psychometric functions** for Likert-scale questionnaire
 validation, covering Classical Test Theory (CTT), Item Response Theory (IRT),
 Differential Item Functioning (DIF), Confirmatory Factor Analysis (CFA),
@@ -120,50 +122,10 @@ The Modified Attitudes on Psychedelics Questionnaire (MAPQ) is a
 - **UA**: Utilitarian Assessment (UA1-UA5)
 - **ER**: Existential Reflection (ER1-ER5)
 
-.. list-table::
-   :header-rows: 1
-   :widths: 25 15 15 15
-
-   * - Metric
-     - Full Scale
-     - EE
-     - EA
-   * - Cronbach's alpha
-     - 0.943
-     - 0.832
-     - 0.749
-   * - Omega total
-     - 0.962
-     - 0.836
-     - 0.758
-   * - CR (CFA)
-     - —
-     - 0.838
-     - 0.755
-   * - AVE
-     - —
-     - 0.509
-     - 0.398
-
-.. list-table::
-   :header-rows: 1
-   :widths: 25 15 15
-
-   * - Metric
-     - UA
-     - ER
-   * - Cronbach's alpha
-     - 0.772
-     - 0.822
-   * - Omega total
-     - 0.778
-     - 0.832
-   * - CR (CFA)
-     - 0.773
-     - 0.830
-   * - AVE
-     - 0.416
-     - 0.510
+- **Cronbach's α** — full scale 0.943; EE 0.832; EA 0.749; UA 0.772; ER 0.822.
+- **Omega total** — full scale 0.962; EE 0.836; EA 0.758; UA 0.778; ER 0.832.
+- **CR (CFA)** — EE 0.838; EA 0.755; UA 0.773; ER 0.830 (full scale not modelled).
+- **AVE** — EE 0.509; EA 0.398; UA 0.416; ER 0.510 (full scale not modelled).
 
 KMO overall MSA: 0.787. Bartlett's :math:`\chi^2`: 612.22, df=190, p < 2.2e-16.
 

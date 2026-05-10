@@ -1,6 +1,8 @@
 TurboQuant — Vector Quantization
 =================================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS implements the TurboQuant algorithm as a **standalone vector compression library** (``moirais.quant``). It is validated against the paper's theoretical bounds and achieves near-optimal distortion rates.
 
 .. important::
@@ -16,28 +18,11 @@ Weight Quantization vs KV-Cache Quantization
 
 These are **different techniques** that solve different problems:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 20 40 40
-
-   * - Aspect
-     - Weight Quantization (GGUF Q4_K_M)
-     - KV-Cache Quantization (TurboQuant)
-   * - Compresses
-     - Model parameters (permanent, on disk)
-     - Runtime attention scratchpad (ephemeral, in RAM)
-   * - Reduces
-     - Model file size + VRAM to load weights
-     - Context memory during generation
-   * - Best for
-     - Fitting larger models on GPU (8B → 5GB file)
-     - Longer contexts on same hardware
-   * - Calibration
-     - Per-model tuning needed
-     - Data-oblivious (no calibration)
-   * - In Ollama
-     - Yes (automatic via GGUF)
-     - q8_0/q4_0 available, TurboQuant pending
+- **Compresses** — weights compress model parameters (permanent, on disk); KV-cache compresses the runtime attention scratchpad (ephemeral, in RAM).
+- **Reduces** — weights reduce model file size + VRAM to load; KV-cache reduces context memory during generation.
+- **Best for** — weights help fit larger models on GPU (8B → 5GB file); KV-cache helps fit longer contexts on the same hardware.
+- **Calibration** — weights need per-model tuning; KV-cache is data-oblivious (no calibration data required).
+- **Status in Ollama** — weights handled automatically via GGUF; KV-cache supports ``q8_0`` / ``q4_0`` today, TurboQuant integration pending.
 
 Both can be combined: a Q4_K_M model with q8_0 KV-cache is the practical sweet spot for consumer hardware.
 
@@ -112,79 +97,21 @@ Synthetic Validation
 
 Validated on random Gaussian vectors (d=128 and d=256):
 
-.. list-table:: Python path (``moirais.quant``)
-   :header-rows: 1
-   :widths: 10 10 15 15 15 15
+**Python path** (``moirais.quant``):
 
-   * - Bits
-     - Dim
-     - MSE
-     - Bound
-     - Cosine Sim
-     - Compression
-   * - 2
-     - 128
-     - 0.096
-     - 0.170
-     - 0.946
-     - 7.1x
-   * - 3
-     - 128
-     - 0.030
-     - 0.043
-     - 0.984
-     - 4.9x
-   * - 4
-     - 128
-     - 0.007
-     - 0.011
-     - 0.996
-     - 3.8x
-   * - 5
-     - 256
-     - 0.002
-     - 0.003
-     - 0.999
-     - 3.2x
-   * - 2
-     - 256
-     - 0.093
-     - 0.170
-     - 0.955
-     - 7.5x
-   * - 3
-     - 256
-     - 0.028
-     - 0.043
-     - 0.987
-     - 5.1x
-   * - 4
-     - 256
-     - 0.009
-     - 0.011
-     - 0.996
-     - 3.9x
+- **2-bit, d=128** — MSE 0.096 (bound 0.170), cosine 0.946, 7.1× compression.
+- **3-bit, d=128** — MSE 0.030 (bound 0.043), cosine 0.984, 4.9× compression.
+- **4-bit, d=128** — MSE 0.007 (bound 0.011), cosine 0.996, 3.8× compression.
+- **5-bit, d=256** — MSE 0.002 (bound 0.003), cosine 0.999, 3.2× compression.
+- **2-bit, d=256** — MSE 0.093 (bound 0.170), cosine 0.955, 7.5× compression.
+- **3-bit, d=256** — MSE 0.028 (bound 0.043), cosine 0.987, 5.1× compression.
+- **4-bit, d=256** — MSE 0.009 (bound 0.011), cosine 0.996, 3.9× compression.
 
-.. list-table:: C path (``quant_ggml.dylib``)
-   :header-rows: 1
-   :widths: 10 15 15 15
+**C path** (``quant_ggml.dylib``):
 
-   * - Bits
-     - MSE
-     - Cosine Sim
-     - Compression
-   * - 2
-     - 0.110
-     - 0.935
-     - 7.5x
-   * - 3
-     - 0.028
-     - 0.984
-     - 5.1x
-   * - 4
-     - 0.008
-     - 0.995
-     - 3.9x
+- **2-bit** — MSE 0.110, cosine 0.935, 7.5× compression.
+- **3-bit** — MSE 0.028, cosine 0.984, 5.1× compression.
+- **4-bit** — MSE 0.008, cosine 0.995, 3.9× compression.
 
 All 3-bit and 4-bit results are within the paper's theoretical MSE bounds. The C path uses Walsh-Hadamard Transform (WHT) with :math:`1/\sqrt{d}` normalization instead of full QR decomposition.
 
@@ -197,46 +124,13 @@ depth=4, d_model=256, 4 heads, vocab=8192) using post-training quantization
 of all 2D weight matrices. The model was trained on Apple M2 (MPS) and
 quantized/evaluated on a 16GB ARM64 system.
 
-.. list-table:: Post-Training Quantization — autoresearch 50.3M GPT
-   :header-rows: 1
-   :widths: 10 15 20 15 15 15
+Post-training quantization on autoresearch 50.3M GPT:
 
-   * - Bits
-     - val_bpb
-     - Δ bpb (% loss)
-     - Cosine
-     - Compression
-     - Hardware
-   * - fp32
-     - 1.614
-     - —
-     - 1.000
-     - 1.0x
-     - M2
-   * - 2
-     - 2.019
-     - +0.405 (+25.1%)
-     - 0.940
-     - 14.6x
-     - M2
-   * - 3
-     - 2.001
-     - +0.387 (+24.0%)
-     - 0.983
-     - 10.0x
-     - M2
-   * - 4
-     - 2.002
-     - +0.388 (+24.0%)
-     - 0.995
-     - 7.6x
-     - M2
-   * - **5**
-     - **2.028**
-     - **+0.0004 (+0.02%)**
-     - **0.999**
-     - **6.2x**
-     - **ARM64**
+- **fp32 baseline** — val_bpb 1.614, cosine 1.000, 1.0× (M2).
+- **2-bit** — val_bpb 2.019 (Δ +0.405, +25.1%), cosine 0.940, 14.6× (M2).
+- **3-bit** — val_bpb 2.001 (Δ +0.387, +24.0%), cosine 0.983, 10.0× (M2).
+- **4-bit** — val_bpb 2.002 (Δ +0.388, +24.0%), cosine 0.995, 7.6× (M2).
+- **5-bit** — val_bpb 2.028 (Δ +0.0004, +0.02%), cosine 0.999, 6.2× (ARM64).
 
 .. note::
 
@@ -256,38 +150,12 @@ Per-Parameter Analysis (5-bit)
 
 All 28 quantized weight tensors achieved cosine > 0.998:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 40 15 15 15
-
-   * - Layer
-     - Shape
-     - MSE
-     - Cosine
-   * - transformer.wte.weight
-     - [8192, 256]
-     - 0.1799
-     - 0.9986
-   * - transformer.h.*.attn.c_{q,k,v,proj}
-     - [256, 256]
-     - 0.0001
-     - 0.9985
-   * - transformer.h.*.mlp.c_fc
-     - [1024, 256]
-     - 0.0001
-     - 0.9986
-   * - transformer.h.*.mlp.c_proj
-     - [256, 1024]
-     - 0.0000
-     - 0.9985
-   * - lm_head.weight
-     - [8192, 256]
-     - 0.0000
-     - 0.9986
-   * - value_embeds.{1,3}.weight
-     - [8192, 256]
-     - 0.1672
-     - 0.9986
+- ``transformer.wte.weight`` [8192, 256] — MSE 0.1799, cosine 0.9986.
+- ``transformer.h.*.attn.c_{q,k,v,proj}`` [256, 256] — MSE 0.0001, cosine 0.9985.
+- ``transformer.h.*.mlp.c_fc`` [1024, 256] — MSE 0.0001, cosine 0.9986.
+- ``transformer.h.*.mlp.c_proj`` [256, 1024] — MSE 0.0000, cosine 0.9985.
+- ``lm_head.weight`` [8192, 256] — MSE 0.0000, cosine 0.9986.
+- ``value_embeds.{1,3}.weight`` [8192, 256] — MSE 0.1672, cosine 0.9986.
 
 The embedding tables (wte, value_embeds) have the highest absolute MSE due to
 their large magnitudes, but still achieve > 0.998 cosine because the error is
@@ -356,19 +224,8 @@ Lloyd-Max codebook quality is controlled by the grid resolution parameter in
 ``moirais.quant``. The codebook is built by discretizing the Beta distribution PDF
 on a uniform grid and running the Lloyd-Max iteration.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 20 20 30
-
-   * - Grid Points
-     - Centroid Precision
-     - Effect on Cosine
-   * - 10,000
-     - ~1e-4
-     - 0.995 at 4-bit
-   * - **50,000**
-     - **~2e-5**
-     - **0.999 at 5-bit**
+- **10,000-point grid** — centroid precision ~1e-4, cosine 0.995 at 4-bit.
+- **50,000-point grid** (default) — centroid precision ~2e-5, cosine 0.999 at 5-bit.
 
 The 5x increase in grid resolution (``np.linspace(lo, hi, 50000)``) provides
 finer centroid placement, reducing quantization MSE by approximately 15% at

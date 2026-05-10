@@ -1,25 +1,23 @@
 Causal Estimands
 =================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS provides a full suite of causal estimands. This page defines each
 estimand and maps it to the corresponding Python function.
 
-Summary table
--------------
+Summary
+-------
 
-.. csv-table::
-   :header: "Estimand", "Acronym", "Target population", "Python function"
-   :widths: 30, 10, 30, 30
-
-   "Average Treatment Effect", "ATE", "All units", ":func:`moirais.causal.run_propensity_ipw_analysis`"
-   "Average Treatment Effect on the Treated", "ATT / ATTE", "Treated units only", ":func:`moirais.causal.estimate_att`"
-   "Average Treatment Effect on the Controls", "ATC", "Control units only", ":func:`moirais.causal.estimate_atc`"
-   "Group Average Treatment Effect", "GATE", "Subgroups (e.g. gender)", ":func:`moirais.causal.estimate_gate`"
-   "Conditional Average Treatment Effect", "CATE", "Each individual unit", ":func:`moirais.causal.estimate_cate`"
-   "Local Average Treatment Effect", "LATE", "Compliers (IV context)", ":func:`moirais.causal.estimate_late`"
-   "DML–PLR (ATE)", "PLR-ATE", "All units", ":func:`moirais.effects.estimate_ate`"
-   "DML–IRM (ATE, heterogeneous)", "IRM-ATE", "All units", ":func:`moirais.causal.estimate_irm`"
-   "AIPW (doubly robust ATE)", "DR-ATE", "All units", ":func:`moirais.causal.estimate_aipw`"
+- **ATE** — Average Treatment Effect (all units): :func:`moirais.causal.run_propensity_ipw_analysis`.
+- **ATT / ATTE** — Average Treatment Effect on the Treated (treated units only): :func:`moirais.causal.estimate_att`.
+- **ATC** — Average Treatment Effect on the Controls (control units only): :func:`moirais.causal.estimate_atc`.
+- **GATE** — Group Average Treatment Effect (subgroups, e.g. gender): :func:`moirais.causal.estimate_gate`.
+- **CATE** — Conditional Average Treatment Effect (each individual unit): :func:`moirais.causal.estimate_cate`.
+- **LATE** — Local Average Treatment Effect (compliers, IV context): :func:`moirais.causal.estimate_late`.
+- **PLR-ATE** — DML--PLR ATE (all units): :func:`moirais.effects.estimate_ate`.
+- **IRM-ATE** — DML--IRM ATE, heterogeneous (all units): :func:`moirais.causal.estimate_irm`.
+- **DR-ATE** — AIPW doubly robust ATE (all units): :func:`moirais.causal.estimate_aipw`.
 
 ---
 

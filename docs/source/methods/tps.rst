@@ -1,6 +1,8 @@
 Toronto Police Service (TPS) Statistics
 =======================================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS provides a dedicated module set for analysing Toronto Police
 Service open-data incident feeds. The data are fetched from
 ``data.torontopolice.on.ca`` and are public domain. All TPS analyses
@@ -9,44 +11,33 @@ are exposed under the ``moirais.tps_*`` namespace.
 Modules
 -------
 
-.. list-table::
-   :header-rows: 1
-   :widths: 30 70
-
-   * - Module
-     - Purpose
-   * - ``moirais.tps_io``
-     - Fetch, cache, and parse the TPS open-data feeds.
-   * - ``moirais.tps_datasets``
-     - Built-in TPS datasets (Assault, Auto Theft, Robbery, etc.).
-   * - ``moirais.tps_crime``
-     - Top-line crime totals and incident-rate computations.
-   * - ``moirais.tps_csi``
-     - Statistics Canada Crime Severity Index calculations on TPS data.
-   * - ``moirais.tps_temporal``
-     - Daily / weekly / monthly / yearly aggregations and trend tests.
-   * - ``moirais.tps_spatial``
-     - Moran's I, Geary's C, Getis-Ord G* on TPS neighbourhood-level
-       counts.
-   * - ``moirais.tps_spatial_advanced``
-     - LISA, bivariate Moran, DBSCAN clustering, Kulldorff space-time
-       scan, choropleths, proportional-symbol district maps.
-   * - ``moirais.tps_stochastic``
-     - Markovian Hawkes self-exciting process (constant baseline,
-       exponential kernel) — the classical Mohler-Bertozzi-Brantingham
-       fit.
-   * - ``moirais.tps_hawkes_advanced``
-     - Non-stationary, non-Markovian Hawkes (Gamma / Weibull / Lomax
-       kernels and sinusoidal baselines). See :doc:`hawkes` for the
-       full treatment.
-   * - ``moirais.tps_statphysics``
-     - Statistical physics of crime: Short-Brantingham reaction-
-       diffusion PDE, Lévy-flight tail index, Bettencourt urban
-       scaling, Lotka-Volterra predator-prey.
-   * - ``moirais.tps_render``
-     - Plotting helpers shared across the TPS surface.
-   * - ``moirais.tps_all_analyze``
-     - Orchestrator that runs the full TPS analysis pipeline.
+- ``moirais.tps_io`` — fetch, cache, and parse the TPS open-data feeds.
+- ``moirais.tps_datasets`` — built-in TPS datasets (Assault, Auto
+  Theft, Robbery, etc.).
+- ``moirais.tps_crime`` — top-line crime totals and incident-rate
+  computations.
+- ``moirais.tps_csi`` — Statistics Canada Crime Severity Index
+  calculations on TPS data.
+- ``moirais.tps_temporal`` — daily / weekly / monthly / yearly
+  aggregations and trend tests.
+- ``moirais.tps_spatial`` — Moran's I, Geary's C, Getis-Ord G* on
+  TPS neighbourhood-level counts.
+- ``moirais.tps_spatial_advanced`` — LISA, bivariate Moran, DBSCAN
+  clustering, Kulldorff space-time scan, choropleths,
+  proportional-symbol district maps.
+- ``moirais.tps_stochastic`` — Markovian Hawkes self-exciting process
+  (constant baseline, exponential kernel) — the classical
+  Mohler-Bertozzi-Brantingham fit.
+- ``moirais.tps_hawkes_advanced`` — non-stationary, non-Markovian
+  Hawkes (Gamma / Weibull / Lomax kernels and sinusoidal baselines).
+  See :doc:`hawkes` for the full treatment.
+- ``moirais.tps_statphysics`` — statistical physics of crime:
+  Short-Brantingham reaction-diffusion PDE, Lévy-flight tail index,
+  Bettencourt urban scaling, Lotka-Volterra predator-prey.
+- ``moirais.tps_render`` — plotting helpers shared across the TPS
+  surface.
+- ``moirais.tps_all_analyze`` — orchestrator that runs the full TPS
+  analysis pipeline.
 
 Datasets
 --------

@@ -1,6 +1,8 @@
 Double Machine Learning (DML)
 ==============================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS implements the Partially Linear Regression (PLR) model from
 Chernozhukov et al. (2018) via the :pypi:`DoubleML` package.
 
@@ -136,31 +138,12 @@ estimating :math:`\hat{m}_0(Z, X)`.
 Nuisance learner defaults
 --------------------------
 
-.. list-table::
-   :header-rows: 1
-   :widths: 20 30 50
-
-   * - Model
-     - Nuisance
-     - Default learner
-   * - PLR
-     - :math:`g_0` (outcome)
-     - :class:`sklearn.ensemble.RandomForestRegressor` (100 trees, max_depth=5)
-   * - PLR
-     - :math:`m_0` (propensity)
-     - :class:`sklearn.ensemble.RandomForestClassifier` (100 trees, max_depth=5)
-   * - IRM
-     - :math:`g_0(d, X)` (outcome × treatment)
-     - :class:`sklearn.ensemble.RandomForestRegressor`
-   * - IRM
-     - :math:`m_0(X)` (propensity)
-     - :class:`sklearn.ensemble.RandomForestClassifier`
-   * - PLIV
-     - :math:`g_0(X)` (outcome residual)
-     - :class:`sklearn.ensemble.RandomForestRegressor`
-   * - PLIV
-     - :math:`m_0(Z, X)` (first stage)
-     - :class:`sklearn.ensemble.RandomForestRegressor`
+- **PLR**, :math:`g_0` (outcome): :class:`sklearn.ensemble.RandomForestRegressor` (100 trees, max_depth=5).
+- **PLR**, :math:`m_0` (propensity): :class:`sklearn.ensemble.RandomForestClassifier` (100 trees, max_depth=5).
+- **IRM**, :math:`g_0(d, X)` (outcome × treatment): :class:`sklearn.ensemble.RandomForestRegressor`.
+- **IRM**, :math:`m_0(X)` (propensity): :class:`sklearn.ensemble.RandomForestClassifier`.
+- **PLIV**, :math:`g_0(X)` (outcome residual): :class:`sklearn.ensemble.RandomForestRegressor`.
+- **PLIV**, :math:`m_0(Z, X)` (first stage): :class:`sklearn.ensemble.RandomForestRegressor`.
 
 References
 ----------

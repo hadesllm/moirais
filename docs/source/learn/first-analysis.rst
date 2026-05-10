@@ -135,9 +135,11 @@ The ``cheatsheet`` for any of them tells you when to reach for it.
 Where to go next
 ----------------
 
+- :doc:`../methods/index` — full statistical-methods reference,
+  sorted by question. Start here for the catalogue of estimators
+  and which one fits which design.
 - :doc:`../methods/causal` — once your question is causal ("did X
   cause Y?") and not just correlational.
-- :doc:`../methods/index` — full methods reference, sorted by question.
 
 ----
 

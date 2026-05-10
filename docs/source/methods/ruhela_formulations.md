@@ -1,24 +1,27 @@
 # Ruhela Formulations
 
+*Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
+
 A **Ruhela formulation** is a (treatment, outcome, covariates) design
-choice for a specific OTIS dataset, paired with the full causal-method
-battery applied to it. The framework was designed end-to-end by
-**Vansh Singh Ruhela** (hadesllm); see the attribution block at
-the head of `moirais.otis_causal` for the full lineage.
+choice for a specific OTIS dataset, paired with the full **DLRM** —
+the 10-estimator Doob-Levinsky-Ruhela-Medina framework — applied to
+it. See the attribution block at the head of `moirais.otis_causal`
+for the full lineage.
 
 ## Vocabulary
 
-| Term | Meaning |
-|---|---|
-| **RF** | Ruhela formulation: one (T, Y, covariates) design choice for a dataset |
-| **RDF** | Ruhela Dual Formulation: an RF paired with a Naive-arm sensitivity contrast |
-| **DLRM** | Doob-Levinsky-Ruhela-Medina (methodology attribution acronym, narrow) |
-| **Ruhela method battery** | The 10-estimator suite applied to any RF |
+- **RF** — Ruhela formulation: one (T, Y, covariates) design choice
+  for a dataset.
+- **RDF** — Ruhela Dual Formulation: an RF paired with a Naive-arm
+  sensitivity contrast.
+- **DLRM** — Doob-Levinsky-Ruhela-Medina: the 10-estimator framework
+  applied to any RF. The umbrella name for the full causal-method
+  ensemble described below.
 
-## Method battery (10 estimators)
+## DLRM (10 estimators)
 
 For every RF that resolves to per-row panel data with a binary T and
-numeric Y, the battery runs:
+numeric Y, DLRM runs:
 
 1. **IPW (Hájek)** — single-robust on propensity, Lunceford-Davidian sandwich SE
 2. **AIPW (RRZ doubly-robust)** — cross-fitted IF plug-in

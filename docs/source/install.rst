@@ -134,25 +134,16 @@ LLM provider setup
 MOIRAIS supports LLM providers tried in priority order. The FreeAPI client is
 vendored (``moirais.freeapi``) — no external SDK or API key required.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 15 30 55
+Providers, in priority order:
 
-   * - Priority
-     - Provider
-     - How to enable
-   * - 1
-     - **Ollama** (local, private)
-     - ``curl -fsSL https://ollama.com/install.sh | sh && ollama pull qwen2.5:7b``
-   * - 2
-     - **OllamaFreeAPI** (free, no key)
-     - Built-in. No setup needed. Uses ``gpt-oss:20b`` (Gemma3) by default.
-   * - 3
-     - **Gemini** (free tier)
-     - ``export GEMINI_API_KEY=...`` (free key at `aistudio.google.com <https://aistudio.google.com>`_)
-   * - 4
-     - **Local fallback**
-     - Automatic. Keyword-matched help text, no network required.
+1. **Ollama** (local, private) — install with
+   ``curl -fsSL https://ollama.com/install.sh | sh && ollama pull qwen2.5:7b``.
+2. **OllamaFreeAPI** (free, no key) — built-in. No setup needed; uses
+   ``gpt-oss:20b`` (Gemma3) by default.
+3. **Gemini** (free tier) — ``export GEMINI_API_KEY=...`` (free key
+   at `aistudio.google.com <https://aistudio.google.com>`_).
+4. **Local fallback** — automatic. Keyword-matched help text, no
+   network required.
 
 If no provider is configured, ``moirais ask`` returns a static help response.
 Run ``moirais doctor`` to see which providers are currently available.

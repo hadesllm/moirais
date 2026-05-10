@@ -86,51 +86,110 @@ From R:
 ----
 
 What MOIRAIS does
---------------
+-----------------
 
-MOIRAIS provides a unified, enterprise-grade interface across Python and R for:
+A unified Python + R interface across the following surfaces. See
+:doc:`methods/index` for methodology details and :doc:`api/index`
+for auto-generated function reference.
 
-**Causal inference estimators**
-  ATE, ATT, ATC, GATE, CATE (T/S-learner), LATE (2SLS/Wald), AIPW, IPW,
-  G-computation, Rosenbaum sensitivity bounds, E-value.
+**Causal estimators**
+  ATE, ATT, ATC, GATE, CATE (T- / S-learner), LATE (2SLS / Wald),
+  AIPW, IPW (Hájek), G-computation, propensity-score matching
+  (1:1 NN, 5-strata subclass), Rosenbaum sensitivity bounds, E-value.
 
-**Double Machine Learning (DML)**
-  Partially Linear Regression (PLR), Interactive Regression Model (IRM),
-  Partially Linear IV (PLIV). Full cross-fitting with pluggable nuisance
-  learners (Random Forest, Gradient Boosting, any scikit-learn estimator).
+**Double machine learning**
+  Partially linear regression (PLR), interactive regression model
+  (IRM), partially linear IV (PLIV); cross-fitted with pluggable
+  nuisance learners. Multi-SE comparison (pooled, cluster, multi-way)
+  on the IRM-DML primary estimate. Propensity calibration (Platt /
+  isotonic) on IPW / AIPW / SuperLearner-AIPW with Brier score.
 
-**Propensity scores & weighting**
-  Logistic regression PS estimation, overlap/positivity checks, weight
-  diagnostics, stabilised IPW, SMOTE sensitivity analysis.
+**The DLRM framework**
+  Doob-Levinsky-Ruhela-Medina — a 10-estimator framework applied to
+  every Ruhela formulation on OTIS / SIU / TPS data. Per-row
+  individual-level + aggregate (Poisson, NB GLM) modes. Mandela-RF
+  classifier (UN Mandela Rules 43 + 44) + provincial-vs-federal
+  cross-comparison.
 
-**Survey-weighted statistics**
-  Horvitz-Thompson totals, Hajek means, ratio estimators, calibration
-  weights (raking/IPF), complex survey GLM, subpopulation estimates.
+**Spatial statistics**
+  Moran's :math:`I`, Geary's :math:`C`, Getis-Ord general :math:`G`,
+  join count, LISA, Getis-Ord :math:`G_i^{*}`, local Geary, Ripley's
+  K / L, geostatistical kriging (ordinary, universal, IDW,
+  co-kriging), variogram fitting, GWR (basic, GW-PCA, ST-GWR),
+  bivariate Moran, Moran sweep heatmap, DBSCAN / HDBSCAN, Kulldorff
+  space-time scan.
 
-**Sampling design**
-  SRS, stratified, cluster, PPS, bootstrap, jackknife, design-effect
-  calculations, effective sample size.
+**Hawkes self-exciting point processes**
+  Markovian Mohler-Bertozzi-Brantingham fit (exponential kernel +
+  constant baseline) plus the non-stationary, non-Markovian
+  Kwan-Chen-Dunsmuir (2024) family — Gamma, Weibull, Lomax kernels
+  with sinusoidal baselines. Eight (kernel × baseline) combinations
+  ranked by AIC and time-rescaling Kolmogorov-Smirnov goodness-of-fit.
 
-**eBAC — Estimated Blood Alcohol Concentration**
-  Legal-limit checks, sex-stratified eBAC formulas, IPW-adjusted eBAC models.
+**Statistical physics of crime**
+  Short-Brantingham reaction-diffusion PDE, Brockmann-Hufnagel-Geisel
+  Lévy-flight tail (Hill estimator), Bettencourt urban-scaling
+  exponent (HC3-OLS), D'Orsogna-Perc Lotka-Volterra predator-prey,
+  SDB Turing-pattern demo, Helbing-Szolnoki inspection-game phase
+  diagram, criminal-role co-occurrence networks.
 
-**Bayesian inference**
-  Prior-posterior updating, Bayes factors, 26 distribution functions
-  (dnorm, dbinom, dpois, dbeta, …), credible intervals.
+**Survey-weighted inference**
+  Horvitz-Thompson totals, Hájek means, ratio estimators, calibration
+  weights (raking / IPF), complex-survey GLM, subpopulation estimates,
+  stratified / cluster / PPS sampling, bootstrap + jackknife variance,
+  design-effect computations, effective-sample-size diagnostics.
 
-**Frequentist inference**
-  11 hypothesis tests, 5 confidence interval methods, 9 effect size measures,
-  4 power analysis functions.
+**Psychometrics**
+  Cronbach's :math:`\alpha`, McDonald's :math:`\omega_t` /
+  :math:`\omega_h`, KMO sampling adequacy, Bartlett's sphericity,
+  parallel analysis, composite reliability, AVE, item-response-theory
+  fits (1PL / 2PL / 3PL / GRM / PCM), differential item functioning
+  (Mantel-Haenszel, logistic, generalised), measurement invariance,
+  network psychometrics, Bayesian psychometrics. 250+ functions.
+
+**Signal processing + cryptography**
+  Spectral analysis, biomedical-signal helpers, homomorphic
+  deconvolution, classical and modern crypto primitives
+  (ChaCha20-Poly1305, etc.), TurboQuant vector quantization with
+  near-optimal distortion (Zandieh et al. 2026 ICLR).
+
+**Datasets**
+  60+ built-in datasets in a portable SQLite layer (Canadian
+  carceral, police, and oversight + epidemiological reference data).
+  Auto dataset-profiling for arbitrary tabular input
+  (``moirais.dataset.profile_dataset``).
+
+**Function namespace ``moirais.fn``**
+  36,000+ individual function files indexed by a registry, exposing
+  short stable names for every estimator, every kernel,
+  every weight matrix, every test. Use ``moirais.fn.cheatsheet(name)``
+  for a per-function help card.
+
+**Federal SIU + Doob T-539-20 replication**
+  Mandela classifier (Rules 43 + 44) with χ² verification, Sprott /
+  Doob (± Iftene) IEDM analyses, full replication of Doob's CCRSO 2018
+  Tables 1--3 and the imprisonment-vs-crime decoupling Pettitt
+  change-point test. See :doc:`methods/sprott_doob`,
+  :doc:`methods/doob_trends`, :doc:`methods/siuiap`.
+
+**Toronto Police Service surface**
+  ``moirais.tps_*`` modules: incident I/O, CSI, neighbourhood
+  spatial / temporal analyses, Hawkes (basic + advanced),
+  statistical physics, Hohl-style choropleths and proportional-symbol
+  district maps. Companion paper at 10.5281/zenodo.20102198.
+
+**LLM + assistant**
+  Ollama (local, private) → vendored OllamaFreeAPI (no key) → Gemini
+  free tier → local-keyword fallback. Zero cloud dependency at the
+  default tier. Vendored TurboQuant KV-cache compression. Polyglot
+  REPL bridges variables across Python ↔ R ↔ shell ↔ 12 other
+  languages.
 
 **Carbon-aware computing**
-  Built-in emissions tracker (``moirais.emissions``): per-module and pipeline-wide
-  CO₂ tracking with 213-country IEA carbon intensity data. Pure Python — no
-  Rust dependencies. CodeCarbon fallback on Python ≤3.14.
-
-**LLM agent**
-  Ollama (local) → OllamaFreeAPI (vendored, no API key) → Gemini → local
-  fallback. Zero cloud dependency. 1296 interactive REPL helpers. Polyglot
-  mode bridges R↔Python variables.
+  Built-in pure-Python emissions tracker
+  (``moirais.emissions``) with 213-country IEA carbon-intensity
+  data, per-module and pipeline-wide CO₂ accounting. CodeCarbon
+  fallback on Python ≤ 3.14.
 
 ----
 
@@ -165,20 +224,40 @@ Key design principles
 Background
 ----------
 
-MOIRAIS was built to fill a gap between academic one-off scripts and enterprise
-health analytics platforms. It targets epidemiologists, biostatisticians, and
-public health researchers who need:
+MOIRAIS is a multi-domain scientific computing toolkit for
+observational inference. It sits between one-off research scripts
+and heavy enterprise analytics platforms, and is aimed at
+researchers who need:
 
-- Causal methods that go beyond basic logistic regression
-- Reproducible pipelines that run in CI/CD without manual intervention
-- A unified Python + R surface (not choosing one or the other)
-- Carbon-aware computing for responsible public health AI
-- Canadian public health datasets (CPADS, CIHI) as first-class inputs
+- A unified Python + R surface across the same estimators (no
+  language-choice tax).
+- Causal estimators (ATE / ATT / ATC / GATE / CATE / LATE, AIPW,
+  G-computation, DML--PLR, DML--IRM, propensity-score matching,
+  E-value and Rosenbaum-bound sensitivity) with explicit estimands.
+- Survey-weighted inference (Horvitz-Thompson, Hájek, raking,
+  cluster + stratified design) on top of the same DataFrame as the
+  causal layer.
+- Spatial statistics (Moran's :math:`I`, LISA, Getis-Ord
+  :math:`G^{*}`, DBSCAN, Kulldorff space-time scan), Hawkes
+  self-exciting point processes (Markovian and non-Markovian), and
+  the statistical-physics-of-crime models (Short-Brantingham
+  reaction-diffusion, Lévy-flight tail, Bettencourt urban scaling,
+  Lotka-Volterra) — applied as first-class methods on the
+  Toronto Police Service open-data feeds.
+- Reproducible pipelines that run unattended in CI / CD — outputs
+  carry provenance manifests; synthetic data is labelled as such.
+- The DLRM (Doob-Levinsky-Ruhela-Medina) framework as a primary
+  application for Canadian carceral, police, and oversight data
+  (Ontario OTIS, federal SIU, TPS).
+
+The package ships 60+ built-in datasets (Canadian carceral, police,
+and oversight + epidemiological reference data) in a portable SQLite
+layer.
 
 MOIRAIS is licensed under GPL-2.0-only (Linus copyleft, deliberately
-chosen over GPL-3.0 for compatibility with the broader Linux-kernel-style
-ecosystem). See ``LICENSE`` for the full text and ``LICENSING.md`` for
-the rationale.
+chosen over GPL-3.0 for compatibility with the broader
+Linux-kernel-style ecosystem). See ``LICENSE`` for the full text and
+``LICENSING.md`` for the rationale.
 
 ----
 
@@ -188,7 +267,19 @@ Documentation index
 If you prefer a single linear walkthrough rather than the sidebar
 navigation, every page on this site is listed below — top to bottom:
 
-----
+- :doc:`learn/index` — From-zero tutorial track. Start here if you
+  have never opened a Python or R console before.
+- :doc:`install` — Installation instructions for Python, R, macOS,
+  Linux, Windows, plus LLM provider setup.
+- :doc:`cli` — Reference for every ``moirais …`` subcommand.
+- :doc:`methods/index` — Statistical-methods reference. Estimands,
+  causal estimators, survey statistics, spatial methods, Hawkes
+  processes, statistical physics of crime, OTIS / TPS / SIU
+  pipelines, the DLRM framework, key empirical findings.
+- :doc:`api/index` — Auto-generated Python and R API reference
+  (function signatures and docstrings).
+- :doc:`contributing` — Development setup, test conventions,
+  module-addition guide.
 
 .. toctree::
    :maxdepth: 1
@@ -205,21 +296,11 @@ navigation, every page on this site is listed below — top to bottom:
    :hidden:
 
    methods/index
+   api/index
 
 .. toctree::
    :maxdepth: 1
    :caption: Development
    :hidden:
 
-   contributing
-
-.. Visible-in-body site index — renders as a plain bullet list inline.
-
-.. toctree::
-   :maxdepth: 2
-
-   learn/index
-   install
-   cli
-   methods/index
    contributing

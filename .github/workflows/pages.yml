@@ -47,11 +47,22 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -e ".[docs]"
 
+      # Cache Sphinx's incremental doctrees so unchanged pages skip
+      # re-parsing on the next run. Key on docs/source + src/moirais
+      # + the R man pages — anything that affects the rendered HTML.
+      - name: Cache Sphinx doctrees
+        uses: actions/cache@v4
+        with:
+          path: .sphinx-doctrees
+          key: sphinx-doctrees-${{ hashFiles('docs/source/**', 'src/moirais/**', 'r-package/moirais/man/**') }}
+          restore-keys: |
+            sphinx-doctrees-
+
       - name: Build documentation
         env:
           SKIP_ROXYGEN: "1"   # CI runner has no R/devtools; bypass r_autodoc subprocess
         run: |
-          sphinx-build -b html -j auto docs/source docs/build/html
+          sphinx-build -b html -j auto -d .sphinx-doctrees docs/source docs/build/html
           touch docs/build/html/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3

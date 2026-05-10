@@ -1,6 +1,8 @@
 eBAC — Estimated Blood Alcohol Concentration
 =============================================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 eBAC is a continuous outcome derived from self-reported alcohol consumption
 data in CPADS. MOIRAIS computes two eBAC variants.
 

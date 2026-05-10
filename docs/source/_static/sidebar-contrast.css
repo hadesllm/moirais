@@ -1,0 +1,44 @@
+/* Sidebar contrast fix (alabaster theme).
+ *
+ * At >=150% zoom the responsive `.sphinxsidebar` switches to narrow mode
+ * and alabaster's defaults render the description, the "Table of
+ * Contents" heading, and every `p.caption` (Navigation /
+ * Documentation / Development) in near-white on a light-blue strip —
+ * effectively invisible. Force readable colours on every state. */
+
+/* Description block (the moirais tagline) */
+div.sphinxsidebar p.blurb,
+div.sphinxsidebar p.logo,
+div.sphinxsidebarwrapper p.blurb {
+    color: #3E4349 !important;
+    background: transparent;
+}
+
+/* "Table of Contents" heading + caption headings ("Navigation",
+   "Documentation", "Development") */
+div.sphinxsidebar h3,
+div.sphinxsidebar h1.logo-name,
+div.sphinxsidebarwrapper h3,
+div.sphinxsidebar p.caption,
+div.sphinxsidebar p.caption .caption-text,
+div.sphinxsidebarwrapper p.caption,
+div.sphinxsidebarwrapper p.caption .caption-text {
+    color: #1a1a1a !important;
+    font-weight: 600;
+    background: transparent;
+}
+
+/* Sidebar links — keep contrast on link state too */
+div.sphinxsidebar a,
+div.sphinxsidebarwrapper a {
+    color: #2980B9 !important;
+}
+div.sphinxsidebar a:hover,
+div.sphinxsidebarwrapper a:hover {
+    color: #1a5e8a !important;
+    text-decoration: underline;
+}
+
+/* The above-1024px sidebar still gets the same contrast (alabaster
+   re-uses `.sphinxsidebar` for both narrow and desktop, so this
+   covers both modes). */

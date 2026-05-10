@@ -1,6 +1,8 @@
 Hawkes Self-Exciting Point Processes
 =====================================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS implements both the classical Markovian Hawkes process
 (constant baseline, exponential excitation kernel) and the
 non-stationary, non-Markovian generalisation of Kwan-Chen-Dunsmuir

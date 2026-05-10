@@ -1,6 +1,8 @@
 Post-Quantum Cryptography (Research)
 =====================================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 .. warning::
 
    MOIRAIS crypto is a **teaching/research implementation** of NIST-standardized

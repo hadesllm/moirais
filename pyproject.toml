@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "moirais"
-version = "0.1.1"
+version = "0.1.2"
 description = "Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation. Multi-domain scientific computing toolkit hosting the DLRM framework for Canadian carceral, police, and oversight data, with general-purpose causal inference, signal processing, cryptography, spatial statistics, statistical physics, and psychometrics modules."
 authors = [
   { name="Vansh Singh Ruhela", email="hadesllm@proton.me" }

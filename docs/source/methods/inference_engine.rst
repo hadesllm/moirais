@@ -1,5 +1,7 @@
 MOIRAIS Inference Engine
-=====================
+========================
+
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
 
 MOIRAIS includes its own LLM inference engine — independent of Ollama,
 llama.cpp, or HuggingFace. This gives full control over the inference
@@ -11,56 +13,33 @@ Architecture
 
 .. code-block:: text
 
-   ┌──────────────────────────────────────────────────┐
-   │                   MOIRAISEngine                      │
-   │                                                   │
-   │  ┌──────────┐  ┌──────────┐  ┌───────────┐       │
-   │  │ GGUFModel │  │Tokenizer │  │ TurboQuant│       │
-   │  │ (loader)  │  │ (BPE)    │  │ KV-Cache  │       │
-   │  └────┬─────┘  └────┬─────┘  └─────┬─────┘       │
-   │       │              │              │              │
-   │  ┌────┴──────────────┴──────────────┴───────────┐  │
-   │  │       Transformer Forward Pass               │  │
-   │  │  RMSNorm → RoPE → GQA → SwiGLU → Sampling   │  │
+   ┌────────────────────────────────────────────────────┐
+   │                   MOIRAISEngine                    │
+   │                                                    │
+   │  ┌──────────┐   ┌──────────┐   ┌───────────┐       │
+   │  │ GGUFModel│   │ Tokenizer│   │ TurboQuant│       │
+   │  │ (loader) │   │  (BPE)   │   │ KV-Cache  │       │
+   │  └────┬─────┘   └────┬─────┘   └─────┬─────┘       │
+   │       │              │               │             │
+   │  ┌────┴──────────────┴───────────────┴──────────┐  │
+   │  │           Transformer Forward Pass           │  │
+   │  │   RMSNorm → RoPE → GQA → SwiGLU → Sampling   │  │
    │  │                                              │  │
-   │  │  Backend: MLX (Metal GPU) or NumPy (CPU)     │  │
+   │  │   Backend: MLX (Metal GPU) or NumPy (CPU)    │  │
    │  └──────────────────────────────────────────────┘  │
-   └──────────────────────────────────────────────────┘
+   └────────────────────────────────────────────────────┘
 
 Components
 ----------
 
-.. list-table::
-   :header-rows: 1
-   :widths: 20 15 40
-
-   * - Module
-     - Lines
-     - Purpose
-   * - ``engine.py``
-     - 310
-     - Transformer forward pass with MLX/NumPy dual backend, text generation
-   * - ``tokenizer.py``
-     - 180
-     - BPE tokenizer from GGUF metadata or SentencePiece ``.model`` files
-   * - ``gguf_loader.py``
-     - 400
-     - GGUF v2/v3 parser, mmap tensors, dequantize Q4_K/Q8_0/F16/F32
-   * - ``kv_cache.py``
-     - 216
-     - TurboQuant-compressed KV cache with per-layer block storage
-   * - ``quant.py``
-     - 872
-     - TurboQuant MSE + QJL quantization (Python path)
-   * - ``quant_ggml.c``
-     - 548
-     - TurboQuant C acceleration (WHT + Lloyd-Max + QJL)
-   * - ``engine_kernels.c``
-     - 260
-     - C hot-path kernels: RMSNorm, RoPE, matvec, SiLU, softmax (Accelerate.framework)
-   * - ``engine_bridge.py``
-     - 190
-     - ctypes bridge for C kernels, NumPy fallback
+- ``engine.py`` — transformer forward pass with MLX / NumPy dual backend, text generation.
+- ``tokenizer.py`` — BPE tokenizer from GGUF metadata or SentencePiece ``.model`` files.
+- ``gguf_loader.py`` — GGUF v2 / v3 parser, mmap tensors, dequantize Q4_K / Q8_0 / F16 / F32.
+- ``kv_cache.py`` — TurboQuant-compressed KV cache with per-layer block storage.
+- ``quant.py`` — TurboQuant MSE + QJL quantization (Python path).
+- ``quant_ggml.c`` — TurboQuant C acceleration (WHT + Lloyd-Max + QJL).
+- ``engine_kernels.c`` — C hot-path kernels: RMSNorm, RoPE, matvec, SiLU, softmax (Accelerate.framework).
+- ``engine_bridge.py`` — ctypes bridge for C kernels, NumPy fallback.
 
 MLX Integration — Apple Silicon GPU
 ------------------------------------
@@ -92,28 +71,11 @@ This follows the same pattern as the vendored modules (``moirais.fam``,
 
 Five integration paths for TurboQuant on macOS (per Hannecke 2026):
 
-.. list-table::
-   :header-rows: 1
-   :widths: 15 30 20
-
-   * - Path
-     - Description
-     - Status in MOIRAIS
-   * - A: mlx-optiq
-     - Drop-in ``TurboQuantKVCache`` for mlx-lm
-     - Informed our design
-   * - B: tqkv benchmark
-     - CLI benchmarking tool
-     - Referenced for validation
-   * - C: llama.cpp TBQ
-     - Native GGML types (PR #21089)
-     - Pending upstream merge
-   * - D: oMLX
-     - Menu bar inference server
-     - Not applicable
-   * - E: QJL 1-bit PoC
-     - Outlier tracking + sign quantization
-     - Implemented in ``quant.py``
+- **Path A: mlx-optiq** — drop-in ``TurboQuantKVCache`` for mlx-lm. Informed our design.
+- **Path B: tqkv benchmark** — CLI benchmarking tool. Referenced for validation.
+- **Path C: llama.cpp TBQ** — native GGML types (PR #21089). Pending upstream merge.
+- **Path D: oMLX** — menu-bar inference server. Not applicable to MOIRAIS.
+- **Path E: QJL 1-bit PoC** — outlier tracking + sign quantization. Implemented in ``quant.py``.
 
 C Kernel Acceleration
 ---------------------
@@ -225,30 +187,9 @@ KV-Cache Compression — Benchmark Results
 
 Tested with Llama 3.1 8B dimensions (32 layers, head_dim=128, 64 tokens):
 
-.. list-table::
-   :header-rows: 1
-   :widths: 10 15 15 15 15
-
-   * - Bits
-     - Compression
-     - Cosine Sim
-     - FP16 Size
-     - TQ Size
-   * - 2-bit
-     - 7.1x
-     - 0.938
-     - 1.00 MB
-     - 0.14 MB
-   * - 3-bit
-     - 4.9x
-     - 0.983
-     - 1.00 MB
-     - 0.20 MB
-   * - 4-bit
-     - 3.8x
-     - 0.996
-     - 1.00 MB
-     - 0.27 MB
+- **2-bit** — 7.1× compression, cosine similarity 0.938 (FP16 1.00 MB → TQ 0.14 MB).
+- **3-bit** — 4.9× compression, cosine similarity 0.983 (FP16 1.00 MB → TQ 0.20 MB).
+- **4-bit** — 3.8× compression, cosine similarity 0.996 (FP16 1.00 MB → TQ 0.27 MB).
 
 At scale (128K context, 32 layers):
 

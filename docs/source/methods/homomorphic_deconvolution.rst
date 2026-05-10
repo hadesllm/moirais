@@ -1,6 +1,8 @@
 Homomorphic Deconvolution & Cepstral Analysis
 ==============================================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 Cepstral analysis transforms convolution into addition via the log domain,
 enabling separation of mixed signals (e.g., excitation from impulse response
 in PCG recordings).

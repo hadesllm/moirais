@@ -362,8 +362,8 @@ def _register_all_backend_modules() -> int:
             "ks_test_one_sample": ["ks1"],
             "ks_test_two_sample": ["ks2"],
             "shapiro_wilk": ["sw_test"],
-            "normality_battery": ["norm_tests"],
-            "variance_equality_battery": ["var_tests"],
+            "normality_ensemble": ["norm_tests"],
+            "variance_equality_ensemble": ["var_tests"],
             "auto_test": ["autotest"],
             "pearson_correlation": ["pearson"],
             "spearman_correlation": ["spearman"],
@@ -1410,18 +1410,18 @@ def _register_compound() -> int:
             ["fixed_effects_meta", "random_effects_meta", "i_squared", "prediction_interval"],
         ),
         # Testing workflows
-        "full_normality": ("Full normality battery", ["normality_battery"]),
-        "full_variance": ("Full variance equality battery", ["variance_equality_battery"]),
-        "nonparametric_suite": (
-            "Non-parametric test suite",
+        "full_normality": ("Full normality ensemble", ["normality_ensemble"]),
+        "full_variance": ("Full variance equality ensemble", ["variance_equality_ensemble"]),
+        "nonparametric_ensemble": (
+            "Non-parametric test ensemble",
             ["mann_whitney_u", "wilcoxon_signed_rank", "kruskal_wallis", "friedman_test"],
         ),
-        "parametric_suite": (
-            "Parametric test suite",
+        "parametric_ensemble": (
+            "Parametric test ensemble",
             ["one_sample_ttest", "two_sample_ttest", "paired_ttest", "one_way_anova"],
         ),
-        "association_suite": (
-            "Association test suite",
+        "association_ensemble": (
+            "Association test ensemble",
             ["pearson_correlation", "spearman_correlation", "kendall_correlation", "chi2_independence"],
         ),
         # Diagnostic workflows
@@ -1431,7 +1431,7 @@ def _register_compound() -> int:
         ),
         "collinearity_check": ("Collinearity assessment", ["compute_vif", "collinearity_diagnostics"]),
         "specification_tests": (
-            "Specification test battery",
+            "Specification test ensemble",
             ["ramsey_reset_test", "link_test", "wald_test", "score_test"],
         ),
         # Sensitivity workflows
@@ -1440,7 +1440,7 @@ def _register_compound() -> int:
             ["e_value_rr", "rosenbaum_bounds", "omitted_variable_bias"],
         ),
         "bias_assessment": (
-            "Bias assessment battery",
+            "Bias assessment ensemble",
             ["manski_bounds", "bias_adjusted_estimate", "probabilistic_bias_analysis"],
         ),
         # Reporting workflows
@@ -1457,7 +1457,7 @@ def _register_compound() -> int:
         "strobe_audit": ("STROBE compliance audit", ["check_strobe_compliance", "audit_statistical_reporting"]),
         "reproducibility_check": ("Reproducibility assessment", ["create_reproducibility_manifest"]),
         # Multiple testing workflows
-        "p_correction_suite": (
+        "p_correction_ensemble": (
             "All p-value corrections",
             ["bonferroni", "holm", "hochberg", "benjamini_hochberg", "storey_q"],
         ),
@@ -1472,8 +1472,8 @@ def _register_compound() -> int:
         ),
         "overfitting_check": ("Overfitting assessment", ["detect_overfitting", "bootstrap_validate"]),
         # Bootstrap workflows
-        "bootstrap_suite": ("Bootstrap methods comparison", ["bootstrap", "parametric_bootstrap", "wild_bootstrap"]),
-        "resampling_suite": (
+        "bootstrap_ensemble": ("Bootstrap methods comparison", ["bootstrap", "parametric_bootstrap", "wild_bootstrap"]),
+        "resampling_ensemble": (
             "Resampling method comparison",
             ["bootstrap", "jackknife", "permutation_test", "cross_validate"],
         ),
@@ -1501,9 +1501,9 @@ def _register_compound() -> int:
             ["export_results_bundle", "generate_citation", "create_reproducibility_manifest"],
         ),
         # Distribution workflows
-        "distribution_suite": ("Distribution function suite", ["dnorm", "pnorm", "qnorm", "rnorm"]),
+        "distribution_ensemble": ("Distribution function ensemble", ["dnorm", "pnorm", "qnorm", "rnorm"]),
         # Power analysis workflows
-        "power_suite": ("Power analysis suite", ["power_t_test", "power_prop_test", "power_anova"]),
+        "power_ensemble": ("Power analysis ensemble", ["power_t_test", "power_prop_test", "power_anova"]),
         # Sampling workflows
         "sampling_comparison": (
             "Compare sampling methods",
@@ -1534,7 +1534,7 @@ def _register_compound() -> int:
             ["bootstrap", "parametric_bootstrap", "wild_bootstrap", "block_bootstrap"],
         ),
         # Quick analysis templates
-        "quick_eda": ("Quick exploratory data analysis", ["missing_profile", "normality_battery"]),
+        "quick_eda": ("Quick exploratory data analysis", ["missing_profile", "normality_ensemble"]),
         "quick_ttest": ("Quick t-test with effect size", ["two_sample_ttest", "cohens_d"]),
         "quick_anova": ("Quick ANOVA with effect size", ["one_way_anova", "eta_squared"]),
         "quick_chi2": ("Quick chi-square with effect size", ["chi2_independence", "cramers_v"]),

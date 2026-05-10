@@ -1,6 +1,8 @@
 Survey Sampling
 ================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS provides a complete probabilistic sampling toolkit for epidemiological
 surveys. All methods are implemented in :mod:`moirais.sampling`.
 

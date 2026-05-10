@@ -1,6 +1,8 @@
 Population Genetics
 ===================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS provides population genetics functions for analyzing genetic variation,
 population structure, and genotype-phenotype associations. All functions are
 dataset-agnostic with column names as keyword parameters.
@@ -8,22 +10,9 @@ dataset-agnostic with column names as keyword parameters.
 Sequence-Level Metrics
 ----------------------
 
-.. list-table::
-   :header-rows: 1
-   :widths: 15 25 40
-
-   * - Function
-     - Statistic
-     - Description
-   * - ``gc``
-     - GC content
-     - Proportion of guanine + cytosine in a DNA sequence
-   * - ``maf``
-     - Minor allele frequency
-     - Frequency of the less common allele at a locus
-   * - ``hw``
-     - Hardy-Weinberg equilibrium
-     - Chi-squared test for HWE departure (observed vs expected genotype counts)
+- ``gc`` — GC content. Proportion of guanine + cytosine in a DNA sequence.
+- ``maf`` — minor allele frequency. Frequency of the less common allele at a locus.
+- ``hw`` — Hardy-Weinberg equilibrium. Chi-squared test for HWE departure (observed vs expected genotype counts).
 
 .. code-block:: python
 
@@ -41,19 +30,8 @@ Sequence-Level Metrics
 Population Differentiation
 --------------------------
 
-.. list-table::
-   :header-rows: 1
-   :widths: 15 25 40
-
-   * - Function
-     - Statistic
-     - Description
-   * - ``fst``
-     - Fixation index (Fst)
-     - Weir-Cockerham Fst estimator for population differentiation
-   * - ``tajd``
-     - Tajima's D
-     - Neutrality test comparing pairwise diversity to segregating sites
+- ``fst`` — fixation index. Weir-Cockerham :math:`F_{ST}` estimator for population differentiation.
+- ``tajd`` — Tajima's D. Neutrality test comparing pairwise diversity to segregating sites.
 
 .. code-block:: python
 
@@ -70,19 +48,8 @@ Population Differentiation
 Linkage Disequilibrium
 ----------------------
 
-.. list-table::
-   :header-rows: 1
-   :widths: 15 25 40
-
-   * - Function
-     - Statistic
-     - Description
-   * - ``ld``
-     - Linkage disequilibrium
-     - D, D', and r-squared between two loci
-   * - ``ldmat``
-     - LD matrix
-     - Pairwise r-squared matrix for a set of SNPs
+- ``ld`` — linkage disequilibrium. D, D', and r-squared between two loci.
+- ``ldmat`` — LD matrix. Pairwise r-squared matrix for a set of SNPs.
 
 .. code-block:: python
 
@@ -94,19 +61,8 @@ Linkage Disequilibrium
 Genome-Wide Association Studies
 -------------------------------
 
-.. list-table::
-   :header-rows: 1
-   :widths: 15 25 40
-
-   * - Function
-     - Method
-     - Description
-   * - ``gwas``
-     - GWAS scan
-     - Per-SNP association test (linear or logistic) with multiple testing correction
-   * - ``prs``
-     - Polygenic risk score
-     - Weighted sum of risk alleles using GWAS summary statistics
+- ``gwas`` — GWAS scan. Per-SNP association test (linear or logistic) with multiple-testing correction.
+- ``prs`` — polygenic risk score. Weighted sum of risk alleles using GWAS summary statistics.
 
 .. code-block:: python
 

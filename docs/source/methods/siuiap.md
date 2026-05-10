@@ -1,5 +1,7 @@
 # SIU IAP — Federal Structured Intervention Unit Implementation Advisory Panel
 
+*Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
+
 The Ontario Tracking Information System (OTIS) provides **provincial**
 restrictive-confinement data analysed in `moirais.otis_*` modules. The
 **federal** counterpart is Canada's Structured Intervention Unit (SIU)
@@ -13,11 +15,12 @@ body — its outputs are qualitative reports.
 
 ## Panel composition (relevant to moirais)
 
-| Member | Role | Affiliation |
-|---|---|---|
-| **Howard Sapers** | Chair | Former Correctional Investigator of Canada |
-| **Prof. Emeritus Anthony N. Doob** | Member | Centre for Criminology & Sociolegal Studies, U. of Toronto |
-| **Prof. Jane B. Sprott** | Member | Department of Criminology, Toronto Metropolitan University |
+- **Howard Sapers** — Chair. Former Correctional Investigator of
+  Canada.
+- **Prof. Emeritus Anthony N. Doob** — Member. Centre for Criminology
+  & Sociolegal Studies, University of Toronto.
+- **Prof. Jane B. Sprott** — Member. Department of Criminology,
+  Toronto Metropolitan University.
 
 Prof. Doob's membership is the proximate reason why moirais analyses
 of OTIS aggregate data are framed under the **Doob chi-square** name
@@ -29,10 +32,11 @@ of OTIS aggregate data are framed under the **Doob chi-square** name
 There were actually **two** Implementation Advisory Panels — the
 distinction matters for citation:
 
-| Panel | Years | Chair | Status in moirais |
-|---|---|---|---|
-| **Original SIU-IAP** | 2019 → mid-2020 | Anthony N. Doob | `siuiap.ORIGINAL_PANEL_2019_2020` |
-| **Re-launched SIU IAP** | 2021-04 → 2024-12 | Howard Sapers | `siuiap.PANEL_MEMBERS` + `REPORTS` |
+- **Original SIU-IAP** (2019 → mid-2020) — chaired by Anthony N. Doob;
+  exposed in moirais as `siuiap.ORIGINAL_PANEL_2019_2020`.
+- **Re-launched SIU IAP** (2021-04 → 2024-12) — chaired by Howard
+  Sapers; exposed in moirais as `siuiap.PANEL_MEMBERS` and
+  `REPORTS`.
 
 The original Doob-chaired panel "died a natural death after the
 1-year terms of its members expired in mid-2020" (Sprott & Doob,

@@ -1,6 +1,8 @@
 Dataset-Agnostic Analysis
 ==========================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS can profile and analyse *any* tabular dataset without prior knowledge
 of its schema via the :mod:`moirais.dataset` module. This capability is essential
 when working with novel administrative health data, new survey waves, or
@@ -11,30 +13,10 @@ Levels of Measurement
 
 MOIRAIS follows Stevens (1946) four-level typology when classifying columns:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 15 25 20 40
-
-   * - Level
-     - Properties
-     - Operations
-     - Examples
-   * - **Nominal**
-     - Categories, no order
-     - =, ≠
-     - Sex, province, ethnicity
-   * - **Ordinal**
-     - Ordered categories
-     - =, ≠, <, >
-     - Likert scale (1–5), severity grade
-   * - **Interval**
-     - Equal intervals, no true zero
-     - +, −, mean
-     - Year, temperature (°C), index score
-   * - **Ratio**
-     - Equal intervals + true zero
-     - +, −, ×, ÷, geometric mean
-     - Income, age, count, weight
+- **Nominal** — categories, no order. Operations: =, ≠. Examples: sex, province, ethnicity.
+- **Ordinal** — ordered categories. Operations: =, ≠, <, >. Examples: Likert scale (1--5), severity grade.
+- **Interval** — equal intervals, no true zero. Operations: +, −, mean. Examples: year, temperature (°C), index score.
+- **Ratio** — equal intervals + true zero. Operations: +, −, ×, ÷, geometric mean. Examples: income, age, count, weight.
 
 Inference rules used by :func:`moirais.dataset.infer_measurement_level`:
 

@@ -1,6 +1,8 @@
 Propensity Scores
 =================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 The propensity score :math:`e(X) = P(T=1 \mid X)` summarizes confounding
 information into a single scalar, allowing balancing without direct covariate
 matching (Rosenbaum & Rubin 1983).

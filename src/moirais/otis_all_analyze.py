@@ -18,9 +18,9 @@ which runs every dataset's analysis, writes per-dataset .txt and .json
 under data/manifest/outputs/otis/, and returns the in-memory results.
 
 Plus the Ruhela-formulation (RF) high-level entry points:
-    analyze_a01_ruhela_formulations(df=None)   — full RF battery on a01
+    analyze_a01_ruhela_formulations(df=None)   — full DLRM on a01
         — alias: analyze_a01_dlrm
-    analyze_b01_ruhela_formulations(df=None)   — full RF battery on b01
+    analyze_b01_ruhela_formulations(df=None)   — full DLRM on b01
         — alias: analyze_b01_dlrm
     analyze_b02_ruhela_formulations(df=None)   — gender → seg days on b02
         — alias: analyze_b02_dlrm
@@ -817,7 +817,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                       include_superlearner: bool = True,
                       propensity_calibration: str = "none",
                       ) -> RichResult:
-    """Ruhela formulations (full causal-method battery, alias DLRM).
+    """Ruhela formulations (full DLRM).
 
     Runs the complete OTIS-RC methodology arc on a Ruhela formulation —
     a (treatment, outcome, covariates) design choice for a specific
@@ -826,7 +826,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
     explicit ``treatment``/``outcome``/``covariates`` for dataset-
     specific Ruhela formulations on b02-b09 / c-series / d-series.
 
-    Method battery (each estimator runs on the Ruhela arm):
+    DLRM (each estimator runs on the Ruhela arm):
 
       1. IPW (Hájek)               — single-robust; Lunceford-Davidian SE
       2. AIPW                       — doubly-robust; RRZ 1994 IF, cross-fit
@@ -858,13 +858,13 @@ def _ruhela_formulations_on(df: pd.DataFrame,
         If supplied, runs Naive-arm sensitivity (e.g. any-flag, vm-binary).
         Default None: skip Naive arm (used for b02+/c/d formulations).
     include_atc / include_plr / include_multi_se / include_superlearner :
-        Toggles for the extended battery.
+        Toggles for the extended ensemble.
     propensity_calibration : "none" | "platt" | "isotonic"
         Calibration of propensity scores in IPW/AIPW.
     """
     from . import otis_causal as oc
 
-    payloads: dict = {"battery": [], "match_first": None,
+    payloads: dict = {"ensemble": [], "match_first": None,
                        "ds_id": ds_id, "cluster_col": cluster_col,
                        "propensity_calibration": propensity_calibration}
 
@@ -916,7 +916,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                            covariates=cov_r,
                            propensity_calibration=propensity_calibration)
         rows.append(_row("1. IPW (Hájek)", ipw))
-        payloads["battery"].append({"estimator": "IPW",
+        payloads["ensemble"].append({"estimator": "IPW",
                                      "ate": float(ipw.ate),
                                      "se": float(ipw.ate_se),
                                      "p": float(ipw.ate_pval),
@@ -930,7 +930,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                              covariates=cov_r,
                              propensity_calibration=propensity_calibration)
         rows.append(_row("2. AIPW (RRZ DR)", aipw))
-        payloads["battery"].append({"estimator": "AIPW",
+        payloads["ensemble"].append({"estimator": "AIPW",
                                      "ate": float(aipw.ate),
                                      "se": float(aipw.ate_se),
                                      "p": float(aipw.ate_pval),
@@ -943,7 +943,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
         gc = oc.otis_gcomputation(data_r, treatment=T_r, outcome=Y_r,
                                     covariates=cov_r, n_bootstrap=200)
         rows.append(_row("3. g-computation", gc))
-        payloads["battery"].append({"estimator": "g-computation",
+        payloads["ensemble"].append({"estimator": "g-computation",
                                      "ate": float(gc.ate),
                                      "se": float(gc.ate_se),
                                      "p": float(gc.ate_pval),
@@ -956,7 +956,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
         psm = oc.otis_psm(data_r, treatment=T_r, outcome=Y_r,
                            covariates=cov_r, k=1)
         rows.append(_row("4. PSM 1:1 NN", psm, estimand="ATT"))
-        payloads["battery"].append({"estimator": "PSM-NN",
+        payloads["ensemble"].append({"estimator": "PSM-NN",
                                      "att": float(psm.ate),
                                      "se": float(psm.ate_se),
                                      "p": float(psm.ate_pval),
@@ -969,7 +969,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
         psm_sc = oc.otis_psm_subclass(data_r, treatment=T_r, outcome=Y_r,
                                         covariates=cov_r, n_strata=5)
         rows.append(_row("5. PSM subclass (5)", psm_sc))
-        payloads["battery"].append({"estimator": "PSM-subclass",
+        payloads["ensemble"].append({"estimator": "PSM-subclass",
                                      "ate": float(psm_sc.ate),
                                      "se": float(psm_sc.ate_se),
                                      "p": float(psm_sc.ate_pval),
@@ -1005,7 +1005,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                             if dml.get("atc_pval") is not None else "—"),
                           "—"])
         irm_results = dml
-        payloads["battery"].append({"estimator": "IRM-DML",
+        payloads["ensemble"].append({"estimator": "IRM-DML",
                                      "ate": float(dml["ate"]),
                                      "ate_se": float(dml["ate_se"]),
                                      "atte": float(dml["atte"]),
@@ -1041,7 +1041,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
             atc = oc.otis_atc(data_r, treatment=T_r, outcome=Y_r,
                                 covariates=cov_r)
             rows.append(_row("8. ATC (AIPW)", atc, estimand="ATC"))
-            payloads["battery"].append({"estimator": "ATC-AIPW",
+            payloads["ensemble"].append({"estimator": "ATC-AIPW",
                                          "atc": float(atc.ate),
                                          "se": float(atc.ate_se),
                                          "p": float(atc.ate_pval),
@@ -1057,7 +1057,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                 covariates=cov_r)
             rows.append(_row("9. PLR (Chernozhukov 2018)", plr,
                               estimand="θ"))
-            payloads["battery"].append({"estimator": "PLR",
+            payloads["ensemble"].append({"estimator": "PLR",
                                          "theta": float(plr.ate),
                                          "se": float(plr.ate_se),
                                          "p": float(plr.ate_pval),
@@ -1072,7 +1072,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                              outcome=Y_r, covariates=cov_r,
                                              propensity_calibration=propensity_calibration)
             rows.append(_row("10. SuperLearner AIPW", sl))
-            payloads["battery"].append({"estimator": "SuperLearner-AIPW",
+            payloads["ensemble"].append({"estimator": "SuperLearner-AIPW",
                                          "ate": float(sl.ate),
                                          "se": float(sl.ate_se),
                                          "p": float(sl.ate_pval),
@@ -1168,7 +1168,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
     ]
 
     tables = [{
-        "title": (f"Ruhela formulations (full causal-method battery, "
+        "title": (f"Ruhela formulations (full DLRM, "
                    f"alias DLRM) on {ds_id} — {formulation_label}:"),
         "headers": ["Estimator", "Estimand",
                      "Estimate", "SE", "95% CI", "p-value", "Notes"],
@@ -1203,7 +1203,7 @@ def analyze_a01_ruhela_formulations(df: pd.DataFrame | None = None,
                             *,
                             cluster_col: str = "EndFiscalYear",
                             ) -> RichResult:
-    """Ruhela formulations (full causal-method battery, alias DLRM) on a01 — the canonical
+    """Ruhela formulations (full DLRM) on a01 — the canonical
     OTIS-RC dataset.
 
     Runs the complete OTIS-RC methodology arc on the author's Ruhela
@@ -1233,7 +1233,7 @@ def analyze_a01_ruhela_formulations(df: pd.DataFrame | None = None,
         df,
         ds_id="a01",
         source_label="a01_restrictive_confinement_detailed_dataset.csv",
-        title=("OTIS a01 — Ruhela formulations (full causal-method battery, alias DLRM) on the "
+        title=("OTIS a01 — Ruhela formulations (full DLRM) on the "
                 "canonical formulation (T = ac ≥ 2 → Y = vm count)"),
         interpretation=(
             "Ruhela formulations on the canonical OTIS-RC dataset (a01). The "
@@ -1265,7 +1265,7 @@ def analyze_b01_ruhela_formulations(df: pd.DataFrame | None = None,
                             *,
                             cluster_col: str = "EndFiscalYear",
                             ) -> RichResult:
-    """Ruhela formulations (full causal-method battery, alias DLRM) on b01 (Segregation Detailed).
+    """Ruhela formulations (full DLRM) on b01 (Segregation Detailed).
 
     Per-placement segregation complement to a01's per-day RC records.
     Same Ruhela alert-complexity → regional-volatility contrast,
@@ -1282,12 +1282,12 @@ def analyze_b01_ruhela_formulations(df: pd.DataFrame | None = None,
         df,
         ds_id="b01",
         source_label="b01_segregation_detailed_dataset.csv",
-        title=("OTIS b01 — Ruhela formulations (full causal-method battery, alias DLRM) "
+        title=("OTIS b01 — Ruhela formulations (full DLRM) "
                 "(segregation-detailed complement)"),
         interpretation=(
             "Ruhela formulations on b01 segregation-placement records, "
             "complementing the a01 RC analysis. Same Ruhela formulation "
-            "and method battery; the larger ATE magnitude (~3× a01) "
+            "and DLRM ensemble; the larger ATE magnitude (~3× a01) "
             "reflects segregation being a stronger institutional "
             "contrast than restrictive confinement, and per-placement "
             "rather than per-day units of analysis."
@@ -1335,7 +1335,7 @@ def analyze_b02_ruhela_formulations(df: "pd.DataFrame | None" = None,
       Y = TotalAggregatedDays_Segregation (count, person-year)
       covariates = [Region_MostRecentPlacement, Age_Category, EndFiscalYear]
 
-    Same method battery as the canonical formulation. Sister
+    Same DLRM ensemble as the canonical formulation. Sister
     formulations on the same b02 data could swap T for region or age.
     """
     from .otis_datasets import load_otis_dataset
@@ -1355,7 +1355,7 @@ def analyze_b02_ruhela_formulations(df: "pd.DataFrame | None" = None,
             "Ruhela formulation on b02 testing gender disparity in "
             "segregation-day burden. Per-person-year aggregated days "
             "in segregation as the count outcome; Female indicator as "
-            "the treatment. Same method battery as a01/b01; no Naive "
+            "the treatment. Same DLRM ensemble as a01/b01; no Naive "
             "arm because b02 lacks the alert columns to construct one."
         ),
         cluster_col=cluster_col,
@@ -1377,9 +1377,9 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
                               cluster_col: str | None = "EndFiscalYear",
                               propensity_calibration: str = "none",
                               ) -> RichResult:
-    """Per-fiscal-year full Ruhela formulation battery.
+    """Per-fiscal-year full DLRM on each Ruhela formulation.
 
-    Runs the complete RF battery (IPW + AIPW + g-comp + PSM-NN +
+    Runs the complete DLRM (IPW + AIPW + g-comp + PSM-NN +
     PSM-subclass + IRM-DML + match_first + ATC + PLR + SuperLearner)
     separately on each fiscal year. ~7× the standard per-year IRM-DML
     runtime. Mirrors a per-year extension of the author's ``res_by_year``.
@@ -1390,7 +1390,7 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
     by_year = oc.otis_per_year_irm_dml(
         df, treatment=treatment, outcome=outcome,
         covariates=covariates, year_col=year_col,
-        cluster_cols=cl, full_battery=True,
+        cluster_cols=cl, full_ensemble=True,
         propensity_calibration=propensity_calibration,
     )
 
@@ -1466,8 +1466,8 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
         ("Estimators per year", 10),
     ]
     return RichResult(
-        title=(f"OTIS {ds_id} — per-fiscal-year full Ruhela formulations "
-                "battery (10 estimators × N years)"),
+        title=(f"OTIS {ds_id} — per-fiscal-year full DLRM-on-Ruhela-formulations "
+                "suite (10 estimators × N years)"),
         summary_lines=summary,
         tables=[{
             "title": ("Per-year × estimator: ATE / SE / 95% CI / p / n. "
@@ -1495,7 +1495,7 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
 
 def analyze_a01_ruhela_per_year(df: "pd.DataFrame | None" = None,
                                   ) -> RichResult:
-    """Per-year full Ruhela formulations battery on a01."""
+    """Per-year full DLRM on Ruhela formulations on a01."""
     from . import otis_causal as oc
     from .otis_datasets import load_otis_dataset
     if df is None:
@@ -1508,7 +1508,7 @@ def analyze_a01_ruhela_per_year(df: "pd.DataFrame | None" = None,
 
 def analyze_b01_ruhela_per_year(df: "pd.DataFrame | None" = None,
                                   ) -> RichResult:
-    """Per-year full Ruhela formulations battery on b01."""
+    """Per-year full DLRM on Ruhela formulations on b01."""
     from . import otis_causal as oc
     from .otis_datasets import load_otis_dataset
     if df is None:
@@ -2107,7 +2107,7 @@ def analyze_c09_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 # The canonical a01 Ruhela formulation is T_high_ac → Y_vm_count
 # (alert-complexity → regional-volatility). The framework also supports
 # alternative treatments on the same panel data: gender, age, region.
-# Each runs the full 10-estimator Ruhela battery on the a01 cell-level
+# Each runs the full 10-estimator Ruhela suite on the a01 cell-level
 # frame, with the alternative T while keeping Y = vm count and the
 # usual demographic covariates (excluding the variable being treated).
 
@@ -2127,7 +2127,7 @@ def analyze_a01_ruhela_alt_gender(df: "pd.DataFrame | None" = None,
 
     Same per-row Ruhela cell frame as the canonical formulation, but
     T = Female indicator → Y = vm count. Covariates exclude Gender
-    (the variable being treated). Runs the full 10-estimator battery.
+    (the variable being treated). Runs the full 10-estimator DLRM ensemble.
     Tests whether women experience more or fewer regional transfers
     within a fiscal year of restrictive confinement.
     """
@@ -3208,7 +3208,7 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
     ----------
     include_per_row : bool
         If True, also runs the slow per-row RFs on a01/b01/b02 (full
-        10-estimator battery). Default False — runs in ~1 second from
+        10-estimator DLRM). Default False — runs in ~1 second from
         cached aggregates only.
     """
     sections: list = []

@@ -1,6 +1,8 @@
 Deployment
 ==========
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 MOIRAIS supports deployment across consumer hardware, single-board computers,
 and containers. The target is a single-command install that auto-detects
 and configures all dependencies.
@@ -109,28 +111,11 @@ Install Methods
 
 Current and planned installation paths:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 25 20 35
-
-   * - Method
-     - Status
-     - Command
-   * - pip (editable)
-     - Active
-     - ``pip install -e ".[test,docs]"``
-   * - pip (PyPI)
-     - Planned
-     - ``pip install moirais``
-   * - brew
-     - Planned
-     - ``brew install moirais``
-   * - curl installer
-     - Planned
-     - ``curl -fsSL https://moirais.dev/install | sh``
-   * - Docker
-     - Active (private package, auth required)
-     - ``docker run ghcr.io/hadesllm/moirais:dev``
+- **pip (editable)** — active. ``pip install -e ".[test,docs]"``.
+- **pip (PyPI)** — active. ``pip install moirais``.
+- **brew** — planned. ``brew install moirais``.
+- **curl installer** — planned. ``curl -fsSL https://moirais.dev/install | sh``.
+- **Docker** — active. ``docker pull ghcr.io/hadesllm/moirais:latest``.
 
 The curl installer will auto-detect the platform (macOS/Linux/WSL),
 install R, Python, and Quarto as needed, and configure the environment.

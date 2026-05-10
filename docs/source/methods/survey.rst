@@ -1,6 +1,8 @@
 Survey-Weighted Statistics
 ===========================
 
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
 CPADS is a complex survey with design weights (``wtpumf``). All prevalence,
 mean, and proportion estimates must account for survey design to produce
 nationally-representative results.

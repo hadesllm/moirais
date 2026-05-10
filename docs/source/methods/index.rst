@@ -1,9 +1,11 @@
 Statistical Methods
 ===================
 
-This section documents the mathematical foundations behind MOIRAIS's estimators.
-All methods are implemented for the CPADS (Canadian Postsecondary and
-Alcohol/Drug Survey) primary analysis context.
+This section documents the mathematical foundations behind MOIRAIS's
+estimators. The methods are dataset-agnostic — they apply to any
+suitably-shaped tabular input, including the OTIS placement records,
+TPS incident feeds, CPADS survey data, and any other dataset that
+matches the estimator's signature.
 
 .. toctree::
    :maxdepth: 2
@@ -40,39 +42,61 @@ Alcohol/Drug Survey) primary analysis context.
 Quick reference
 ---------------
 
-.. csv-table::
-   :header: "Method", "Estimand", "Python function", "Module"
-   :widths: 25, 25, 30, 20
+Each entry below names the estimator, the estimand it targets, and
+the Python function that produces it.
 
-   "IPW (Hájek)", "ATE", "``run_propensity_ipw_analysis``", "propensity-scores"
-   "IPW (Hájek)", "ATT", "``estimate_att``", "causal-estimators"
-   "IPW (Hájek)", "ATC", "``estimate_atc``", "causal-estimators"
-   "AIPW (doubly robust)", "ATE", "``estimate_aipw``", "causal-estimators"
-   "GATE (AIPW per group)", "GATE", "``estimate_gate``", "causal-estimators"
-   "T-learner / S-learner", "CATE (per unit)", "``estimate_cate``", "causal-estimators"
-   "2SLS / Wald IV", "LATE", "``estimate_late``", "causal-estimators"
-   "DML–PLR", "ATE", "``estimate_ate``", "treatment-effects"
-   "DML–IRM", "ATE (heterogeneous)", "``estimate_irm``", "causal-estimators"
-   "DML–PLIV", "LATE", "``estimate_pliv``", "treatment-effects"
-   "G-computation", "ATE", "``estimate_ate_gcomputation``", "treatment-effects"
-   "Weighted logistic", "OR", "``run_weighted_logistic_analysis``", "logistic-models"
-   "Nested model LRT", "model fit", "``compare_nested_logistic_models``", "model-comparison"
-   "eBAC-IPW", "selection-adjusted ATE", "``run_ebac_selection_ipw_analysis``", "ebac-selection-adjustment-ipw"
-   "Survey-weighted CI", "prevalence CI", "``survey.py`` helpers", "descriptive-statistics"
-   "HT estimator", "population total", "``horvitz_thompson_total``", "descriptive-statistics"
-   "Hájek estimator", "population mean", "``hajek_mean``", "descriptive-statistics"
-   "Beta-binomial Bayes", "posterior mean / CI", "—", "bayesian-inference"
-   "Power analysis", "N required", "``run_power_design_module``", "power-design"
-   "E-value", "sensitivity bound", "``e_value``", "causal-estimators"
-   "Rosenbaum bounds", "sensitivity", "``sensitivity_rosenbaum``", "causal-estimators"
-   "Cronbach's alpha", "internal consistency", "``crba``", "psymet"
-   "McDonald's omega", "reliability", "``mcdo``", "psymet"
-   "KMO", "sampling adequacy", "``kmo``", "psymet"
-   "Bartlett's sphericity", "factorability", "``bart``", "psymet"
-   "Parallel analysis", "factor retention", "``paran``", "psymet"
-   "Composite reliability", "CR", "``crel``", "psymet"
-   "AVE", "convergent validity", "``ave``", "psymet"
-   "Regional placement", "counts/proportions", "``rplace``", "otis"
-   "Alert-state complexity", "combo encoding", "``astcmb``", "otis"
-   "Regional volatility", "movement metric", "``volat``", "otis"
-   "DML IRM (correctional)", "ATE/ATT", "``otdml``", "otis"
+Causal estimators
+~~~~~~~~~~~~~~~~~
+
+- ``run_propensity_ipw_analysis`` — IPW (Hájek), ATE
+- ``estimate_att`` — IPW (Hájek), ATT
+- ``estimate_atc`` — IPW (Hájek), ATC
+- ``estimate_aipw`` — AIPW (doubly robust), ATE
+- ``estimate_gate`` — GATE (AIPW per group)
+- ``estimate_cate`` — T-learner / S-learner, CATE (per unit)
+- ``estimate_late`` — 2SLS / Wald IV, LATE
+- ``estimate_ate`` — DML--PLR, ATE
+- ``estimate_irm`` — DML--IRM, heterogeneous ATE
+- ``estimate_pliv`` — DML--PLIV, LATE
+- ``estimate_ate_gcomputation`` — G-computation, ATE
+- ``run_ebac_selection_ipw_analysis`` — eBAC-IPW, selection-adjusted ATE
+- ``e_value`` — E-value sensitivity bound
+- ``sensitivity_rosenbaum`` — Rosenbaum bounds
+
+Logistic / model comparison
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- ``run_weighted_logistic_analysis`` — weighted logistic, OR
+- ``compare_nested_logistic_models`` — nested-model LRT
+
+Survey + descriptive statistics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- ``moirais.survey`` helpers — survey-weighted CIs and prevalence
+- ``horvitz_thompson_total`` — HT estimator, population total
+- ``hajek_mean`` — Hájek estimator, population mean
+
+Power + Bayes
+~~~~~~~~~~~~~
+
+- ``run_power_design_module`` — N required for a given design
+- Beta-binomial Bayes — posterior mean / CI (see ``moirais.causal``)
+
+Psychometrics
+~~~~~~~~~~~~~
+
+- ``crba`` — Cronbach's α (internal consistency)
+- ``mcdo`` — McDonald's ω (reliability)
+- ``kmo`` — KMO sampling adequacy
+- ``bart`` — Bartlett's sphericity (factorability)
+- ``paran`` — Parallel analysis (factor retention)
+- ``crel`` — Composite reliability
+- ``ave`` — Average Variance Extracted (convergent validity)
+
+OTIS-specific
+~~~~~~~~~~~~~
+
+- ``rplace`` — Regional placement counts / proportions
+- ``astcmb`` — Alert-state combination encoding
+- ``volat`` — Regional volatility (movement metric)
+- ``otdml`` — DML IRM on correctional data, ATE / ATT

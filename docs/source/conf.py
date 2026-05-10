@@ -62,7 +62,16 @@ r_man_dir = str(_R_PKG / "man")
 # ---------------------------------------------------------------------------
 # autodoc / autosummary (Python)
 # ---------------------------------------------------------------------------
-autodoc_mock_imports = ["doubleml", "codecarbon"]
+autodoc_mock_imports = [
+    # Mock ONLY heavy deps that a stripped local environment is
+    # likely to be missing. NEVER mock pandas / numpy / scipy —
+    # those are real classes that participate in `|` type-unions
+    # (`pd.DataFrame | None`), and Sphinx's MockObject doesn't
+    # implement `__or__`, so the import fails at function-def time.
+    "doubleml", "DoubleML", "codecarbon",
+    "sklearn", "statsmodels", "matplotlib",
+    "openpyxl", "lxml",
+]
 autodoc_default_options = {
     "members": True,
     "undoc-members": False,
@@ -133,6 +142,7 @@ html_title = "MOIRAIS"
 html_css_files = [
     "sidebar-toggle.css",
     "clipboard-strip-comments.css",
+    "sidebar-contrast.css",
 ]
 html_js_files = [
     "sidebar-toggle.js",
@@ -160,6 +170,13 @@ html_theme_options = {
     "sidebar_header": "#333",
     "anchor": "#888",
     "anchor_hover_fg": "#333",
+    # Narrow-sidebar (mobile / zoomed-in viewport) colours — explicit so
+    # captions like "Table of Contents", "Navigation", "Documentation",
+    # "Development" stay readable. Alabaster's defaults render them
+    # near-white on a light-blue strip and disappear at >=150% zoom.
+    "narrow_sidebar_bg": "#e8eef0",
+    "narrow_sidebar_fg": "#3E4349",
+    "narrow_sidebar_link": "#2980B9",
     "code_bg": "#f5f5f5",
     "pre_bg": "#fafafa",
     "narrow_sidebar_bg": "#eee",

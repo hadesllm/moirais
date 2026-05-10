@@ -1,9 +1,12 @@
 Causal Inference
 ================
 
-MOIRAIS implements a layered causal-inference workflow for studying the
-effects of cannabis use on alcohol-related outcomes in CPADS.
-For the full estimand taxonomy see :doc:`estimands`.
+Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+
+MOIRAIS implements a layered causal-inference workflow. For the full
+estimand taxonomy see :doc:`estimands`; for the broader catalogue of
+methods (causal, survey, spatial, Hawkes, statistical physics,
+psychometrics, etc.) see :doc:`index`.
 
 Potential outcomes framework
 -----------------------------

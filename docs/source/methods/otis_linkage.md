@@ -1,5 +1,7 @@
 # OTIS Linkage Constraints — Read Before Doing Any Individual-Level Analysis
 
+*Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
+
 **TL;DR**: OTIS `UniqueIndividual_ID` is **NOT** a stable person identifier. It is randomly re-assigned per fiscal year **and** per dataset file. Any analysis claiming individual-level linkage across years, or across datasets within the same year, is artifactual.
 
 ## What the official dictionary says (verified 2026-05-08)
@@ -14,14 +16,19 @@ From the Ontario MCSCS data dictionary v2.0 (resource `d83fe893-9634-4794-a0c1-c
 
 ## What this means in practice
 
-| Claim | Status |
-|---|---|
-| "Person X had N placements in fiscal year Y" | ✅ Valid (within one dataset, one fiscal year) |
-| "Same person was in segregation in 2023 and again in 2024" | 🔴 **NOT MEASURABLE** — IDs don't carry over |
-| "Same person appears in both a01 (RC) and b01 (Segregation) within FY 2024" | 🔴 **NOT MEASURABLE** — IDs are also re-randomized between files |
-| "% of person-years involving multiple regions" | ✅ Valid (intra-year Goffmanian mobility) |
-| "Aggregate placements per region per year" | ✅ Valid (no individual linkage required) |
-| "Distribution of placements per individual within a fiscal year" | ✅ Valid |
+- ✅ **"Person X had N placements in fiscal year Y"** — valid (within
+  one dataset, one fiscal year).
+- 🔴 **"Same person was in segregation in 2023 and again in 2024"** —
+  not measurable: IDs don't carry over.
+- 🔴 **"Same person appears in both a01 (RC) and b01 (Segregation)
+  within FY 2024"** — not measurable: IDs are also re-randomized
+  between files.
+- ✅ **"% of person-years involving multiple regions"** — valid
+  (intra-year Goffmanian mobility).
+- ✅ **"Aggregate placements per region per year"** — valid (no
+  individual linkage required).
+- ✅ **"Distribution of placements per individual within a fiscal
+  year"** — valid.
 
 ## Empirical confirmation
 

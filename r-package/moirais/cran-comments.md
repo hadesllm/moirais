@@ -4,7 +4,18 @@
 
 0 errors | 0 warnings | 1 note
 
-* This is a new release.
+* This is a new submission.
+* The "possibly misspelled words" sub-note flags 11 terms in DESCRIPTION that
+  are all correctly spelled domain vocabulary, not typos:
+  - **Statistical-method acronyms**: `AIPW` (augmented inverse-probability
+    weighting), `ATT` (average treatment effect on the treated), `ATC` (on
+    the controls), `CATE` (conditional average treatment effect),
+    `MRM` (the McNamara-Ruhela-Medina framework, named after its three
+    contributors).
+  - **Proper nouns**: `Hawkes` (Alan G. Hawkes, originator of the self-exciting
+    point process), `Rosenbaum` (Paul Rosenbaum, sensitivity-analysis
+    methodology), `Ruhela` (the package author's family name).
+  - **Domain-standard terms**: `carceral`, `cryptographic`, `psychometrics`.
 
 ## Test environments
 

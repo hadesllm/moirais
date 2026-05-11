@@ -1,0 +1,1001 @@
+EndFiscalYear,UniqueIndividual_ID,Gender,Region_AtTimeOfPlacement,Region_MostRecentPlacement,Age_Category,NumberConsecutiveDays_Segregation,SegReason_SecurityOfInstitution_SafetyOfOthers,SegReason_InmateNeedsProtection,SegReason_InmateNeedsProtection_Medical,SegReason_SecurityOfInstitution_SafetyOfOthers_Medical,SegReason_Disciplinary_Segregation,SegReason_InmateRefuseSearch_Scan,MentalHealth_Alert,SuicideRisk_Alert,SuicideWatch_Alert,SegReason_Other,Number_Of_Placements
+2025,2025-08960-SG,Male,Eastern,Eastern,25 to 49,4,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-11152-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,No,No,,8
+2023,2023-08955-SG,Female,Central,Central,25 to 49,6,No,No,No,Yes,No,No,Yes,Yes,Yes,,1
+2023,2023-11360-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-10288-SG,Male,Central,Western,18 to 24,2,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2024,2024-06364-SG,Male,Toronto,Toronto,18 to 24,1,Yes,No,No,No,No,No,No,No,No,No,2
+2025,2025-08451-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,2
+2025,2025-00523-SG,Male,Eastern,Eastern,50+,1,No,Yes,No,No,No,No,No,Yes,Yes,No,1
+2024,2024-02326-SG,Female,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,2
+2023,2023-08401-SG,Male,Central,Central,25 to 49,3,No,No,No,No,Yes,No,Yes,No,No,,1
+2025,2025-08140-SG,Female,Central,Central,25 to 49,108,No,No,No,No,No,No,No,No,No,Yes,1
+2024,2024-05110-SG,Male,Toronto,Toronto,25 to 49,3,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-08773-SG,Female,Central,Central,18 to 24,3,Yes,No,No,No,No,No,Yes,Yes,No,,1
+2024,2024-06682-SG,Male,Central,Central,18 to 24,2,No,Yes,No,No,No,No,No,No,No,No,1
+2024,2024-02713-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,No,3
+2024,2024-03395-SG,Male,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,5
+2025,2025-00983-SG,Male,Western,Western,50+,2,No,No,No,Yes,No,No,No,Yes,No,No,1
+2023,2023-06610-SG,Male,Toronto,Toronto,18 to 24,1,No,Yes,No,No,No,No,No,No,No,,1
+2023,2023-01896-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,Yes,Yes,Yes,,1
+2024,2024-06391-SG,Male,Toronto,Toronto,50+,4,No,No,No,Yes,No,No,Yes,Yes,Yes,No,2
+2024,2024-06192-SG,Female,Central,Central,25 to 49,8,Yes,No,No,No,No,No,No,No,No,Yes,1
+2023,2023-10226-SG,Male,Central,Central,18 to 24,6,No,No,No,Yes,No,No,Yes,Yes,No,,1
+2023,2023-07315-SG,Female,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-08333-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-03468-SG,Male,Northern,Northern,25 to 49,1,Yes,No,No,No,No,No,Yes,Yes,No,No,2
+2024,2024-01925-SG,Male,Central,Central,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,No,1
+2024,2024-09337-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-01108-SG,Male,Northern,Northern,25 to 49,1,Yes,No,No,No,No,No,Yes,Yes,No,No,1
+2024,2024-08399-SG,Male,Northern,Northern,18 to 24,1,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-05120-SG,Male,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,3
+2025,2025-02146-SG,Male,Central,Central,50+,1,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-03801-SG,Female,Central,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,3
+2023,2023-07266-SG,Male,Toronto,Toronto,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-10470-SG,Male,Central,Central,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,2
+2025,2025-00620-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,No,No,No,No,3
+2025,2025-02722-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,4
+2025,2025-06812-SG,Male,Central,Central,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-05832-SG,Male,Eastern,Eastern,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,2
+2023,2023-02955-SG,Male,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,,8
+2023,2023-05625-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,Yes,No,No,No,No,,1
+2024,2024-03085-SG,Male,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,Yes,No,4
+2023,2023-03410-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,Yes,No,No,,2
+2023,2023-00193-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,,1
+2025,2025-07965-SG,Male,Central,Central,50+,3,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-04224-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,,1
+2025,2025-06847-SG,Male,Eastern,Eastern,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,1
+2023,2023-04225-SG,Male,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,Yes,No,,3
+2025,2025-00044-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2023,2023-04599-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,3
+2025,2025-09124-SG,Male,Western,Western,18 to 24,4,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-00304-SG,Female,Central,Central,50+,2,No,No,No,Yes,No,No,Yes,No,No,,3
+2025,2025-07667-SG,Male,Western,Western,25 to 49,5,Yes,No,No,No,No,No,Yes,No,No,No,1
+2024,2024-09885-SG,Male,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,7
+2024,2024-09267-SG,Male,Toronto,Toronto,18 to 24,6,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-10171-SG,Male,Eastern,Eastern,18 to 24,1,No,No,Yes,No,No,No,No,No,No,,1
+2023,2023-06916-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,4
+2024,2024-00926-SG,Male,Western,Western,50+,1,Yes,No,No,No,No,No,No,No,No,Yes,1
+2025,2025-05743-SG,Male,Eastern,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,5
+2025,2025-02561-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-00025-SG,Male,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,No,2
+2024,2024-02041-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-02031-SG,Male,Western,Western,25 to 49,6,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-05876-SG,Male,Northern,Northern,25 to 49,2,Yes,No,No,No,No,No,No,Yes,No,,2
+2023,2023-06390-SG,Male,Western,Western,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,4
+2024,2024-08569-SG,Male,Eastern,Eastern,18 to 24,2,No,No,Yes,No,No,No,Yes,No,No,No,2
+2025,2025-02307-SG,Male,Toronto,Toronto,25 to 49,5,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-08091-SG,Female,Western,Western,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,9
+2024,2024-06215-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-08356-SG,Male,Western,Western,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-03010-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-02217-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-09175-SG,Female,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,,2
+2023,2023-04279-SG,Female,Central,Central,25 to 49,2,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-02853-SG,Female,Toronto,Toronto,25 to 49,4,Yes,No,No,No,No,No,No,No,No,,1
+2024,2024-02508-SG,Male,Western,Western,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-06585-SG,Male,Western,Western,25 to 49,2,Yes,No,No,No,No,No,No,No,No,,1
+2024,2024-01877-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,No,3
+2023,2023-00787-SG,Male,Toronto,Toronto,50+,3,No,No,No,Yes,No,No,Yes,Yes,Yes,,1
+2025,2025-06633-SG,Male,Toronto,Toronto,18 to 24,3,No,No,No,Yes,No,No,Yes,No,No,No,1
+2025,2025-03005-SG,Female,Northern,Northern,25 to 49,5,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-00356-SG,Male,Central,Central,50+,1,No,Yes,No,No,No,No,Yes,Yes,No,No,2
+2023,2023-00752-SG,Male,Central,Central,25 to 49,4,No,Yes,No,No,No,No,No,No,No,,18
+2024,2024-01946-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,No,Yes,Yes,No,1
+2025,2025-08395-SG,Female,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-09044-SG,Male,Toronto,Toronto,25 to 49,6,No,No,No,Yes,No,No,Yes,No,No,No,1
+2025,2025-04594-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-01460-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,Yes,No,,5
+2023,2023-03829-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,Yes,No,,1
+2023,2023-11379-SG,Male,Western,Western,18 to 24,1,No,No,Yes,No,No,No,Yes,No,No,,3
+2024,2024-09230-SG,Male,Toronto,Toronto,18 to 24,1,No,No,Yes,No,No,No,Yes,No,No,No,3
+2024,2024-00353-SG,Female,Central,Central,50+,1,No,No,No,Yes,No,No,Yes,No,No,No,2
+2023,2023-08015-SG,Male,Toronto,Toronto,25 to 49,5,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2025,2025-04855-SG,Male,Eastern,Eastern,18 to 24,3,No,No,Yes,No,No,No,Yes,Yes,No,No,2
+2025,2025-02697-SG,Male,Northern,Northern,25 to 49,8,No,Yes,No,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-00650-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,,1
+2024,2024-02647-SG,Male,Western,Western,25 to 49,4,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-01985-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,,8
+2024,2024-10256-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-00605-SG,Female,Western,Western,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,1
+2024,2024-01203-SG,Male,Central,Central,50+,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2025,2025-07385-SG,Female,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,No,3
+2024,2024-07463-SG,Female,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,4
+2025,2025-02837-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,Yes,Yes,Yes,No,3
+2025,2025-05808-SG,Male,Toronto,Toronto,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-04946-SG,Male,Central,Central,25 to 49,3,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2025,2025-04843-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-04844-SG,Male,Western,Western,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-09370-SG,Female,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,No,1
+2024,2024-01780-SG,Male,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,No,1
+2025,2025-08473-SG,Male,Toronto,Toronto,50+,3,No,Yes,No,No,No,No,Yes,No,No,No,5
+2024,2024-07056-SG,Male,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-03760-SG,Female,Eastern,Eastern,25 to 49,3,No,Yes,No,No,No,No,Yes,No,No,,1
+2023,2023-05949-SG,Male,Toronto,Toronto,18 to 24,6,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-01439-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-06134-SG,Male,Central,Central,25 to 49,29,Yes,No,No,No,No,No,Yes,Yes,No,Yes,1
+2025,2025-05375-SG,Male,Toronto,Toronto,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2024,2024-06772-SG,Male,Toronto,Toronto,25 to 49,2,No,Yes,No,No,No,No,Yes,Yes,No,No,1
+2025,2025-03016-SG,Female,Eastern,Eastern,25 to 49,3,Yes,No,No,No,No,No,No,Yes,No,No,1
+2025,2025-05807-SG,Male,Northern,Northern,18 to 24,1,No,Yes,No,No,No,No,No,Yes,No,No,1
+2024,2024-00505-SG,Male,Toronto,Toronto,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-06322-SG,Male,Eastern,Eastern,18 to 24,4,No,No,Yes,No,No,No,No,No,No,No,2
+2025,2025-00031-SG,Male,Central,Central,50+,3,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2025,2025-07090-SG,Female,Central,Central,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,2
+2025,2025-02659-SG,Male,Toronto,Toronto,50+,3,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-00871-SG,Male,Central,Central,50+,1,No,No,Yes,No,No,No,Yes,No,No,No,11
+2023,2023-03045-SG,Female,Western,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,Yes,No,,2
+2023,2023-11636-SG,Female,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,Yes,No,,1
+2023,2023-01608-SG,Male,Central,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,,7
+2023,2023-02826-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-11700-SG,Female,Central,Central,18 to 24,2,Yes,No,No,No,No,No,Yes,No,No,,1
+2023,2023-08266-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2023,2023-04094-SG,Male,Central,Central,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,,1
+2025,2025-01887-SG,Male,Central,Central,25 to 49,2,No,Yes,No,No,No,No,No,No,No,No,2
+2025,2025-05744-SG,Female,Central,Central,50+,3,No,No,No,No,No,No,Yes,No,No,Yes,1
+2023,2023-09753-SG,Male,Toronto,Toronto,18 to 24,3,No,No,Yes,No,No,No,No,No,No,,6
+2024,2024-02995-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,No,1
+2023,2023-06753-SG,Female,Eastern,Eastern,25 to 49,2,No,Yes,No,No,No,No,Yes,Yes,No,,1
+2023,2023-02482-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2025,2025-05183-SG,Male,Central,Western,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,2
+2023,2023-04986-SG,Male,Toronto,Central,25 to 49,4,No,No,Yes,No,No,No,Yes,No,No,,1
+2025,2025-00451-SG,Male,Northern,Northern,25 to 49,6,No,Yes,No,No,No,No,Yes,Yes,No,No,1
+2025,2025-02462-SG,Female,Central,Central,25 to 49,6,No,No,No,No,No,No,Yes,No,No,Yes,1
+2023,2023-11328-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,,1
+2025,2025-00966-SG,Male,Northern,Northern,50+,1,No,Yes,No,No,No,No,No,No,No,No,2
+2024,2024-10499-SG,Male,Central,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,1
+2025,2025-06964-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-08477-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-09678-SG,Male,Central,Toronto,25 to 49,2,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-08504-SG,Male,Central,Central,50+,4,No,Yes,No,No,No,No,Yes,No,No,,1
+2024,2024-04783-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,Yes,No,No,2
+2024,2024-01758-SG,Male,Northern,Northern,25 to 49,2,No,No,No,Yes,No,No,Yes,Yes,No,No,1
+2023,2023-09738-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-01127-SG,Female,Central,Central,50+,3,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-12600-SG,Male,Toronto,Toronto,25 to 49,3,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-06573-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,3
+2023,2023-05198-SG,Male,Central,Central,25 to 49,1,Yes,No,No,No,No,No,Yes,Yes,Yes,,3
+2023,2023-11122-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-00832-SG,Male,Eastern,Eastern,50+,1,No,Yes,No,No,No,No,Yes,Yes,Yes,,1
+2023,2023-02855-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,No,No,,3
+2024,2024-02571-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,1
+2024,2024-00015-SG,Male,Toronto,Toronto,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,1
+2024,2024-10416-SG,Female,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-08840-SG,Male,Northern,Northern,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-03855-SG,Female,Northern,Northern,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,No,No,2
+2025,2025-09431-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2025,2025-02040-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,4
+2025,2025-06277-SG,Male,Central,Central,18 to 24,2,No,No,Yes,No,No,No,Yes,Yes,Yes,No,2
+2024,2024-02647-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,3
+2024,2024-02463-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-02692-SG,Female,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-06480-SG,Male,Eastern,Eastern,18 to 24,1,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-02432-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2024,2024-06302-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,Yes,Yes,No,5
+2025,2025-00829-SG,Male,Central,Central,50+,3,No,No,No,Yes,No,No,Yes,No,No,No,3
+2023,2023-11443-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,4
+2024,2024-08451-SG,Female,Central,Central,25 to 49,54,Yes,No,No,No,No,No,Yes,No,No,Yes,1
+2024,2024-00123-SG,Male,Western,Western,25 to 49,6,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-02836-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-07197-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,Yes,Yes,No,3
+2024,2024-04320-SG,Male,Western,Toronto,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-07545-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-05617-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,4
+2023,2023-05471-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-09544-SG,Male,Northern,Northern,18 to 24,1,Yes,No,No,No,No,No,Yes,Yes,No,,1
+2024,2024-00565-SG,Male,Toronto,Toronto,25 to 49,2,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-09723-SG,Male,Northern,Western,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-05191-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-05922-SG,Male,Northern,Northern,25 to 49,2,No,Yes,No,No,No,No,Yes,No,No,No,2
+2023,2023-06938-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,Yes,,3
+2024,2024-10316-SG,Female,Central,Central,18 to 24,4,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-06362-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,6
+2025,2025-02990-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,Yes,Yes,No,No,2
+2023,2023-11665-SG,Male,Toronto,Toronto,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2023,2023-00183-SG,Male,Toronto,Toronto,25 to 49,5,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-02227-SG,Male,Toronto,Toronto,25 to 49,2,No,Yes,No,No,No,No,No,No,No,No,3
+2024,2024-10269-SG,Male,Western,Western,25 to 49,2,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-03493-SG,Male,Eastern,Western,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-05611-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,7
+2023,2023-00582-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,3
+2023,2023-05157-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,7
+2023,2023-04527-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2023,2023-00569-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,3
+2025,2025-07152-SG,Male,Toronto,Toronto,50+,2,No,Yes,No,No,No,No,Yes,No,No,No,2
+2024,2024-04174-SG,Female,Northern,Northern,25 to 49,2,Yes,No,No,No,No,No,Yes,Yes,No,No,2
+2023,2023-00321-SG,Male,Western,Western,25 to 49,6,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-11845-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-08765-SG,Female,Eastern,Eastern,25 to 49,5,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-04900-SG,Male,Toronto,Toronto,25 to 49,4,Yes,No,No,No,No,No,Yes,Yes,No,No,2
+2024,2024-04440-SG,Male,Western,Northern,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,No,2
+2025,2025-08140-SG,Female,Western,Central,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-02256-SG,Male,Western,Western,25 to 49,4,No,No,No,Yes,No,No,Yes,Yes,No,,1
+2024,2024-05336-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-11209-SG,Female,Western,Western,50+,2,Yes,No,No,No,No,No,Yes,No,No,,1
+2024,2024-04730-SG,Male,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2023,2023-02278-SG,Male,Central,Western,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,,5
+2025,2025-02973-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-07265-SG,Male,Toronto,Toronto,25 to 49,4,No,No,No,Yes,No,No,No,Yes,Yes,No,1
+2025,2025-01670-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-08178-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-01466-SG,Male,Central,Central,50+,3,No,Yes,No,No,No,No,Yes,No,No,,1
+2025,2025-07065-SG,Male,Toronto,Toronto,18 to 24,3,No,No,Yes,No,No,No,No,Yes,No,No,5
+2024,2024-04719-SG,Male,Toronto,Toronto,25 to 49,3,Yes,No,No,No,No,No,No,Yes,No,No,1
+2025,2025-02674-SG,Male,Toronto,Toronto,25 to 49,4,No,No,No,Yes,No,No,Yes,Yes,No,No,2
+2024,2024-01769-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,Yes,No,No,No,2
+2023,2023-10473-SG,Male,Eastern,Eastern,18 to 24,1,Yes,No,No,No,No,No,No,No,No,,1
+2025,2025-00091-SG,Female,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-10522-SG,Female,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-02927-SG,Male,Central,Central,25 to 49,5,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-02706-SG,Male,Northern,Northern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2024,2024-04258-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,Yes,No,No,1
+2023,2023-01115-SG,Female,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-04111-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-03901-SG,Male,Western,Central,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-05722-SG,Female,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2023,2023-07765-SG,Female,Eastern,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,,1
+2025,2025-03186-SG,Male,Toronto,Toronto,25 to 49,4,No,Yes,No,No,No,No,No,No,No,No,1
+2024,2024-06976-SG,Female,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-05856-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,4
+2023,2023-03131-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,Yes,Yes,Yes,,2
+2023,2023-04245-SG,Male,Western,Western,25 to 49,5,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-00486-SG,Male,Toronto,Toronto,25 to 49,1,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2025,2025-07896-SG,Male,Toronto,Toronto,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-01434-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2025,2025-08421-SG,Male,Western,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-05867-SG,Male,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,2
+2025,2025-00257-SG,Female,Central,Central,50+,5,No,Yes,No,No,No,No,Yes,No,No,No,1
+2025,2025-05330-SG,Male,Northern,Northern,25 to 49,4,Yes,No,No,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-03806-SG,Male,Central,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,5
+2024,2024-03291-SG,Male,Western,Western,25 to 49,3,No,No,No,No,Yes,No,Yes,Yes,No,No,1
+2024,2024-06628-SG,Male,Central,Central,18 to 24,2,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-06613-SG,Male,Eastern,Toronto,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-07467-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-02004-SG,Female,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-03851-SG,Male,Central,Central,25 to 49,4,No,Yes,No,No,No,No,Yes,Yes,Yes,,3
+2025,2025-02202-SG,Male,Western,Western,25 to 49,3,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2023,2023-00596-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2023,2023-12540-SG,Male,Toronto,Toronto,25 to 49,4,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-10640-SG,Male,Eastern,Eastern,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-08104-SG,Female,Toronto,Toronto,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-01874-SG,Male,Toronto,Toronto,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,2
+2024,2024-02170-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,5
+2023,2023-07986-SG,Female,Central,Central,25 to 49,2,Yes,No,No,No,No,No,Yes,No,No,,1
+2025,2025-03088-SG,Female,Eastern,Eastern,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,2
+2024,2024-01925-SG,Male,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,2
+2023,2023-07687-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,2
+2025,2025-00998-SG,Female,Central,Central,50+,2,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-04880-SG,Male,Central,Central,18 to 24,2,No,Yes,No,No,No,No,Yes,Yes,No,No,2
+2025,2025-00101-SG,Male,Northern,Northern,25 to 49,4,No,Yes,No,No,No,No,Yes,Yes,No,No,1
+2024,2024-00766-SG,Male,Toronto,Toronto,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-05929-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,,1
+2023,2023-04467-SG,Female,Central,Central,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,,2
+2024,2024-00533-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,8
+2025,2025-01878-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,2
+2024,2024-00996-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-07835-SG,Male,Central,Toronto,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,4
+2024,2024-08862-SG,Male,Northern,Western,18 to 24,12,No,Yes,No,No,No,No,Yes,No,No,No,1
+2025,2025-03006-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,Yes,No,No,1
+2025,2025-01741-SG,Male,Toronto,Eastern,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,2
+2024,2024-03982-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-09697-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,Yes,No,,4
+2024,2024-04789-SG,Female,Central,Central,25 to 49,10,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-03494-SG,Male,Central,Central,25 to 49,4,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-04838-SG,Male,Central,Central,25 to 49,2,Yes,No,No,No,No,No,No,No,No,,1
+2024,2024-01861-SG,Male,Western,Western,50+,2,Yes,No,No,No,No,No,No,No,No,Yes,1
+2023,2023-10948-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2024,2024-07222-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2024,2024-08412-SG,Male,Central,Central,50+,4,No,Yes,No,No,No,No,No,No,No,No,4
+2023,2023-03328-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,Yes,No,,1
+2025,2025-06594-SG,Male,Western,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-08338-SG,Female,Central,Central,18 to 24,4,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-03062-SG,Male,Eastern,Eastern,50+,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-07293-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,4
+2023,2023-10094-SG,Male,Central,Central,18 to 24,3,No,No,Yes,No,No,No,Yes,No,No,,3
+2025,2025-02952-SG,Male,Central,Central,25 to 49,4,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2024,2024-02255-SG,Male,Central,Central,25 to 49,5,No,Yes,No,No,No,No,Yes,Yes,No,No,1
+2025,2025-00549-SG,Male,Toronto,Toronto,50+,4,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-05628-SG,Male,Toronto,Toronto,18 to 24,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-08103-SG,Female,Eastern,Eastern,18 to 24,1,No,No,Yes,No,No,No,No,Yes,No,No,18
+2025,2025-04288-SG,Male,Eastern,Eastern,25 to 49,2,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-08373-SG,Male,Central,Central,18 to 24,2,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-07834-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2023,2023-02633-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,,10
+2024,2024-09592-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-04012-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2023,2023-07933-SG,Male,Northern,Northern,18 to 24,2,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-04797-SG,Male,Toronto,Toronto,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-08716-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-03569-SG,Male,Eastern,Eastern,25 to 49,2,No,No,No,Yes,No,No,Yes,Yes,No,No,3
+2024,2024-02023-SG,Male,Toronto,Toronto,25 to 49,5,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-06629-SG,Male,Western,Western,18 to 24,3,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-00169-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2023,2023-07901-SG,Male,Central,Central,18 to 24,2,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2025,2025-01647-SG,Male,Western,Western,25 to 49,4,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-02574-SG,Male,Central,Central,25 to 49,5,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-04355-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,,3
+2025,2025-04454-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,2
+2023,2023-04493-SG,Female,Central,Central,25 to 49,6,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-03082-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-05685-SG,Male,Toronto,Toronto,18 to 24,2,No,No,Yes,No,No,No,No,Yes,No,No,1
+2023,2023-00308-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,2
+2023,2023-00921-SG,Male,Central,Central,50+,4,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2025,2025-09227-SG,Female,Central,Central,18 to 24,3,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-09678-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-07613-SG,Male,Northern,Northern,25 to 49,3,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-09056-SG,Female,Central,Central,25 to 49,4,No,No,Yes,No,No,No,Yes,Yes,No,,1
+2023,2023-08898-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,,8
+2025,2025-05601-SG,Male,Eastern,Eastern,18 to 24,1,No,No,Yes,No,No,No,No,No,No,No,2
+2024,2024-10850-SG,Female,Central,Central,25 to 49,6,Yes,No,No,No,No,No,No,No,No,Yes,1
+2023,2023-11791-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,3
+2025,2025-02880-SG,Male,Western,Western,25 to 49,1,No,Yes,No,No,No,No,Yes,Yes,Yes,No,2
+2023,2023-10058-SG,Female,Central,Central,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,,1
+2023,2023-08341-SG,Female,Central,Central,25 to 49,9,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-09201-SG,Male,Toronto,Toronto,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-03201-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-03551-SG,Male,Western,Western,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-01037-SG,Male,Toronto,Toronto,50+,3,No,No,Yes,No,No,No,Yes,No,No,,6
+2023,2023-01265-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,30
+2024,2024-04819-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2023,2023-03345-SG,Male,Northern,Northern,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2025,2025-03055-SG,Female,Northern,Northern,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-04192-SG,Male,Toronto,Toronto,25 to 49,3,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-02275-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-05267-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,7
+2024,2024-03324-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-02083-SG,Male,Western,Western,25 to 49,5,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-01375-SG,Male,Toronto,Toronto,50+,1,No,No,Yes,No,No,No,No,No,No,No,2
+2024,2024-10243-SG,Female,Central,Central,25 to 49,3,No,No,Yes,No,No,No,No,Yes,No,No,1
+2023,2023-02436-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,2
+2025,2025-00492-SG,Male,Eastern,Eastern,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-09378-SG,Male,Toronto,Toronto,25 to 49,7,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-06579-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,10
+2023,2023-03002-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2024,2024-01402-SG,Female,Central,Central,25 to 49,9,No,No,Yes,No,No,No,Yes,No,No,No,2
+2023,2023-02574-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,67
+2024,2024-03395-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,8
+2025,2025-04234-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,2
+2024,2024-10629-SG,Female,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2023,2023-03947-SG,Male,Western,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2024,2024-00185-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2024,2024-04850-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-01980-SG,Male,Central,Central,50+,5,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-02246-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-04493-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-07974-SG,Male,Toronto,Toronto,18 to 24,3,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-08402-SG,Male,Central,Central,25 to 49,4,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-10388-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-09019-SG,Female,Central,Central,18 to 24,1,No,No,No,Yes,No,No,Yes,No,No,No,2
+2024,2024-03095-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,2
+2023,2023-02555-SG,Female,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,,2
+2023,2023-09659-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-01993-SG,Male,Central,Central,25 to 49,10,No,No,No,Yes,No,No,Yes,Yes,No,No,1
+2023,2023-01576-SG,Male,Toronto,Toronto,25 to 49,9,No,No,No,Yes,No,No,Yes,No,No,,1
+2025,2025-05284-SG,Male,Northern,Northern,25 to 49,4,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2023,2023-04244-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,,5
+2023,2023-07419-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,No,No,No,,1
+2024,2024-08005-SG,Female,Central,Central,25 to 49,1,Yes,No,No,No,No,No,No,No,No,Yes,1
+2025,2025-02492-SG,Male,Central,Western,25 to 49,4,No,Yes,No,No,No,No,No,No,No,No,2
+2024,2024-05789-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,No,2
+2024,2024-07097-SG,Male,Toronto,Toronto,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2025,2025-04388-SG,Male,Central,Central,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-07773-SG,Male,Toronto,Toronto,18 to 24,3,No,No,Yes,No,No,No,No,No,No,No,3
+2025,2025-05696-SG,Male,Toronto,Toronto,18 to 24,4,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-08514-SG,Male,Eastern,Eastern,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,1
+2024,2024-07181-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,4
+2023,2023-11952-SG,Female,Central,Central,25 to 49,4,No,No,Yes,No,No,No,Yes,No,No,,2
+2024,2024-09450-SG,Male,Eastern,Eastern,18 to 24,2,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2023,2023-02809-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,Yes,No,,1
+2025,2025-02902-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,10
+2023,2023-04580-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-01989-SG,Female,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,No,2
+2024,2024-05152-SG,Male,Central,Central,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-01554-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,4
+2025,2025-03245-SG,Female,Western,Western,25 to 49,1,Yes,No,No,No,No,No,Yes,Yes,No,No,1
+2024,2024-09149-SG,Male,Toronto,Toronto,18 to 24,4,Yes,No,No,No,No,No,Yes,No,No,No,6
+2024,2024-02184-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,Yes,No,No,No,3
+2023,2023-12283-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,2
+2023,2023-04914-SG,Male,Western,Western,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,,1
+2023,2023-02376-SG,Male,Western,Western,25 to 49,4,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-00369-SG,Male,Western,Western,25 to 49,19,No,No,No,Yes,No,No,No,Yes,Yes,No,1
+2024,2024-05357-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-05184-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,3
+2023,2023-08655-SG,Male,Toronto,Toronto,18 to 24,2,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-01632-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2023,2023-07686-SG,Male,Western,Western,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,4
+2024,2024-04305-SG,Female,Northern,Northern,25 to 49,7,No,No,No,Yes,No,No,No,Yes,No,No,1
+2023,2023-10198-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-08933-SG,Male,Toronto,Toronto,25 to 49,6,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-01587-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2025,2025-02089-SG,Male,Central,Central,25 to 49,7,No,Yes,No,No,No,No,Yes,Yes,No,No,1
+2025,2025-05023-SG,Male,Western,Western,25 to 49,2,Yes,No,No,No,No,No,Yes,No,No,No,5
+2023,2023-05634-SG,Male,Western,Western,18 to 24,1,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-11519-SG,Male,Northern,Northern,18 to 24,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2023,2023-03712-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,No,Yes,Yes,,3
+2024,2024-02880-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,No,Yes,No,No,1
+2025,2025-02655-SG,Female,Central,Central,25 to 49,14,No,No,No,No,No,No,Yes,No,No,Yes,1
+2025,2025-06736-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-06350-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-08471-SG,Female,Eastern,Eastern,18 to 24,1,No,No,No,Yes,No,No,No,Yes,No,,1
+2024,2024-01091-SG,Male,Western,Western,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2025,2025-08377-SG,Female,Western,Western,18 to 24,5,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-06341-SG,Female,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,2
+2024,2024-00505-SG,Male,Toronto,Toronto,25 to 49,3,Yes,No,No,No,No,No,No,No,No,No,3
+2025,2025-02728-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,Yes,No,No,No,2
+2024,2024-05945-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,No,2
+2024,2024-03375-SG,Male,Western,Western,25 to 49,2,Yes,No,No,No,No,No,No,Yes,No,No,1
+2023,2023-05390-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2025,2025-05366-SG,Male,Eastern,Eastern,25 to 49,1,No,Yes,No,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-00977-SG,Male,Western,Western,50+,1,No,No,No,Yes,No,No,No,No,No,,8
+2024,2024-10340-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,Yes,No,2
+2025,2025-02438-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,No,5
+2023,2023-01594-SG,Male,Northern,Northern,25 to 49,4,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-03087-SG,Male,Central,Toronto,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,,1
+2023,2023-01305-SG,Female,Central,Central,50+,1,No,No,No,Yes,No,No,Yes,No,No,,2
+2025,2025-02916-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,11
+2024,2024-10660-SG,Female,Central,Central,25 to 49,2,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-06703-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,Yes,No,No,1
+2024,2024-01383-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-08301-SG,Male,Western,Western,25 to 49,2,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-06118-SG,Male,Northern,Northern,25 to 49,3,No,Yes,No,No,No,No,No,No,No,No,1
+2024,2024-09377-SG,Male,Toronto,Toronto,25 to 49,6,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-00864-SG,Male,Western,Western,25 to 49,2,Yes,No,No,No,No,No,No,No,No,,2
+2023,2023-00372-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2023,2023-11119-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2025,2025-03247-SG,Male,Toronto,Toronto,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2024,2024-02511-SG,Male,Toronto,Toronto,25 to 49,5,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-01820-SG,Male,Eastern,Eastern,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2023,2023-05005-SG,Male,Western,Western,25 to 49,1,No,No,No,No,Yes,No,No,No,No,,1
+2023,2023-10430-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2023,2023-07001-SG,Female,Eastern,Central,25 to 49,7,No,No,No,No,Yes,No,No,No,No,,1
+2023,2023-09214-SG,Male,Western,Western,18 to 24,3,Yes,No,No,No,No,No,Yes,Yes,Yes,,2
+2024,2024-05033-SG,Male,Western,Western,25 to 49,4,Yes,No,No,No,No,No,Yes,No,No,No,1
+2024,2024-04787-SG,Male,Western,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-02339-SG,Male,Western,Western,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-05290-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-08202-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,3
+2023,2023-05030-SG,Male,Toronto,Toronto,25 to 49,2,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2025,2025-08330-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,44
+2025,2025-07649-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,3
+2025,2025-03582-SG,Female,Western,Western,25 to 49,2,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-02008-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-03330-SG,Male,Toronto,Toronto,25 to 49,5,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-07270-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-00819-SG,Male,Central,Central,50+,1,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2025,2025-00240-SG,Male,Toronto,Toronto,50+,4,No,No,Yes,No,No,No,Yes,No,No,No,6
+2023,2023-10799-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2023,2023-01681-SG,Male,Eastern,Eastern,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-10174-SG,Male,Central,Central,18 to 24,3,No,No,No,Yes,No,No,No,No,No,No,1
+2024,2024-02290-SG,Female,Northern,Northern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2024,2024-10000-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,2
+2024,2024-10304-SG,Male,Western,Western,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-05609-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-07696-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-09803-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-07379-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,No,,1
+2024,2024-00362-SG,Male,Northern,Northern,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-02681-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,,23
+2024,2024-07055-SG,Male,Central,Western,25 to 49,4,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-03844-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-09047-SG,Female,Central,Central,50+,2,No,No,Yes,No,No,No,Yes,No,No,No,3
+2025,2025-09274-SG,Female,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,2
+2025,2025-04493-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-04167-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-02858-SG,Male,Toronto,Toronto,50+,2,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-03564-SG,Male,Western,Western,25 to 49,4,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-02608-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,2
+2024,2024-02894-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-00459-SG,Male,Northern,Northern,25 to 49,4,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2024,2024-00939-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-00903-SG,Male,Central,Central,50+,8,No,No,Yes,No,No,No,Yes,Yes,No,No,2
+2024,2024-09250-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,1
+2024,2024-08680-SG,Male,Eastern,Eastern,18 to 24,1,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2025,2025-00877-SG,Male,Western,Western,25 to 49,1,No,No,No,No,No,No,No,No,No,Yes,1
+2023,2023-09143-SG,Male,Central,Central,25 to 49,4,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2024,2024-04109-SG,Male,Central,Central,25 to 49,2,Yes,No,No,No,No,No,No,No,No,No,2
+2025,2025-07602-SG,Male,Western,Western,18 to 24,5,Yes,No,No,No,No,No,No,No,No,No,1
+2024,2024-04107-SG,Male,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-00751-SG,Male,Western,Western,25 to 49,4,Yes,No,No,No,No,No,Yes,No,No,No,1
+2024,2024-05947-SG,Female,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-04296-SG,Male,Eastern,Eastern,25 to 49,3,No,Yes,No,No,No,No,Yes,No,No,,3
+2025,2025-04030-SG,Male,Central,Central,25 to 49,4,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2025,2025-05569-SG,Female,Central,Central,18 to 24,13,No,No,No,No,No,No,Yes,No,No,Yes,1
+2023,2023-07217-SG,Female,Central,Central,25 to 49,5,No,No,Yes,No,No,No,Yes,Yes,No,,1
+2024,2024-03216-SG,Male,Northern,Northern,25 to 49,2,Yes,No,No,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-05267-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,2
+2025,2025-02968-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-01812-SG,Male,Central,Central,25 to 49,4,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-08182-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,No,Yes,No,No,1
+2024,2024-08409-SG,Male,Central,Central,25 to 49,2,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-04200-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,5
+2023,2023-05590-SG,Female,Central,Central,25 to 49,8,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2023,2023-09323-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-01118-SG,Female,Central,Central,25 to 49,3,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-01005-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-02669-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,3
+2025,2025-06776-SG,Male,Central,Central,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-04536-SG,Female,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-12248-SG,Female,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-00332-SG,Male,Toronto,Toronto,50+,4,No,No,No,Yes,No,No,Yes,No,No,No,2
+2024,2024-09628-SG,Male,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-07284-SG,Male,Central,Central,50+,1,No,Yes,No,No,No,No,No,No,No,,1
+2024,2024-07581-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,No,5
+2023,2023-10332-SG,Male,Western,Western,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2023,2023-03912-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2023,2023-11090-SG,Male,Western,Western,18 to 24,1,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-01358-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,2
+2023,2023-04041-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,4
+2024,2024-01773-SG,Male,Central,Central,50+,2,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-00102-SG,Male,Western,Western,25 to 49,4,No,No,Yes,No,No,No,Yes,No,No,No,6
+2025,2025-02472-SG,Male,Western,Western,50+,11,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2025,2025-08481-SG,Female,Central,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-03852-SG,Male,Toronto,Northern,25 to 49,4,No,Yes,No,No,No,No,No,No,No,No,1
+2024,2024-04481-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,Yes,No,2
+2024,2024-07858-SG,Male,Western,Western,18 to 24,2,Yes,No,No,No,No,No,No,No,No,Yes,1
+2025,2025-01425-SG,Male,Northern,Northern,50+,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-07259-SG,Female,Toronto,Toronto,18 to 24,3,No,Yes,No,No,No,No,Yes,No,No,No,7
+2023,2023-02821-SG,Male,Central,Central,25 to 49,5,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-10578-SG,Female,Central,Central,18 to 24,4,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-00627-SG,Male,Northern,Northern,50+,1,Yes,No,No,No,No,No,No,No,No,,5
+2023,2023-08819-SG,Female,Central,Central,50+,1,Yes,No,No,No,No,No,No,No,No,,1
+2025,2025-04065-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,No,6
+2023,2023-10154-SG,Female,Western,Western,25 to 49,9,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-06902-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,,30
+2024,2024-08519-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-08143-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,No,No,No,,2
+2023,2023-11041-SG,Female,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-02114-SG,Female,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-10499-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2025,2025-04399-SG,Female,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2024,2024-04202-SG,Male,Central,Western,25 to 49,6,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2024,2024-10180-SG,Male,Central,Central,18 to 24,3,No,Yes,No,No,No,No,Yes,No,No,No,2
+2023,2023-01002-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,6
+2025,2025-02395-SG,Male,Western,Western,25 to 49,5,Yes,No,No,No,No,No,Yes,No,No,No,1
+2024,2024-07042-SG,Male,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,No,2
+2023,2023-04746-SG,Female,Eastern,Central,25 to 49,3,No,Yes,No,No,No,No,Yes,No,No,,1
+2023,2023-07359-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,4
+2024,2024-05501-SG,Male,Central,Toronto,18 to 24,3,No,Yes,No,No,No,No,No,No,No,No,3
+2024,2024-09713-SG,Male,Central,Central,25 to 49,4,No,Yes,No,No,No,No,Yes,No,No,No,1
+2025,2025-02177-SG,Male,Eastern,Eastern,50+,1,No,No,Yes,No,No,No,No,No,No,No,6
+2023,2023-11993-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-04098-SG,Male,Central,Central,25 to 49,5,No,No,Yes,No,No,No,Yes,No,No,No,5
+2025,2025-07691-SG,Female,Central,Central,25 to 49,3,No,No,No,No,No,No,No,No,No,Yes,1
+2024,2024-05498-SG,Female,Western,Western,25 to 49,2,No,No,No,Yes,No,No,No,No,No,No,2
+2024,2024-03713-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-05840-SG,Male,Central,Central,25 to 49,3,No,Yes,No,No,No,No,Yes,Yes,No,No,2
+2024,2024-02923-SG,Male,Toronto,Toronto,50+,7,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-05491-SG,Male,Eastern,Toronto,25 to 49,6,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2025,2025-00664-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,5
+2023,2023-04911-SG,Male,Central,Central,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,,1
+2024,2024-02898-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-01448-SG,Male,Toronto,Toronto,50+,3,Yes,No,No,No,No,No,No,No,No,No,2
+2025,2025-08144-SG,Male,Eastern,Eastern,50+,2,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2024,2024-07846-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,2
+2023,2023-02694-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,,3
+2025,2025-02303-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,4
+2024,2024-05803-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,5
+2023,2023-11855-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-09063-SG,Female,Northern,Northern,25 to 49,4,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-07343-SG,Male,Western,Western,25 to 49,4,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-08129-SG,Male,Toronto,Toronto,18 to 24,3,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-09996-SG,Male,Western,Western,50+,1,Yes,No,No,No,No,No,No,No,No,,10
+2025,2025-03243-SG,Male,Central,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,Yes,Yes,No,2
+2023,2023-02033-SG,Male,Central,Central,25 to 49,3,No,Yes,No,No,No,No,No,No,No,,2
+2024,2024-03170-SG,Male,Northern,Northern,25 to 49,3,No,Yes,No,No,No,No,No,No,No,No,4
+2024,2024-04243-SG,Male,Central,Central,25 to 49,6,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-11742-SG,Male,Eastern,Eastern,18 to 24,1,No,Yes,No,No,No,No,No,Yes,No,,2
+2024,2024-09739-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,No,No,No,No,3
+2025,2025-00745-SG,Male,Central,Central,50+,2,No,Yes,No,No,No,No,Yes,No,No,No,5
+2025,2025-00454-SG,Male,Eastern,Eastern,50+,2,No,No,Yes,No,No,No,Yes,No,No,No,6
+2024,2024-04263-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-05463-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-07067-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-01814-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,,3
+2023,2023-09540-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,,1
+2024,2024-02824-SG,Male,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-09623-SG,Female,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,,1
+2025,2025-06387-SG,Male,Toronto,Toronto,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,2
+2024,2024-03787-SG,Female,Central,Central,25 to 49,54,Yes,No,No,No,No,No,No,No,No,Yes,1
+2025,2025-07071-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-01860-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,,2
+2025,2025-04576-SG,Male,Northern,Northern,25 to 49,11,Yes,No,No,No,Yes,No,Yes,Yes,No,No,1
+2024,2024-01581-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,2
+2025,2025-09237-SG,Male,Eastern,Eastern,25 to 49,3,Yes,No,No,No,No,No,No,No,No,No,1
+2024,2024-03672-SG,Female,Northern,Northern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2023,2023-03524-SG,Male,Western,Western,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-07135-SG,Male,Western,Western,25 to 49,2,Yes,No,No,No,No,No,No,No,No,No,2
+2024,2024-04176-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2025,2025-05815-SG,Male,Toronto,Toronto,18 to 24,4,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-02668-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-05251-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-00258-SG,Male,Toronto,Toronto,50+,4,Yes,No,No,No,No,No,No,No,No,No,2
+2024,2024-01114-SG,Male,Northern,Northern,25 to 49,9,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-05271-SG,Male,Central,Central,25 to 49,6,No,Yes,No,No,No,No,No,No,No,,1
+2025,2025-08403-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-12555-SG,Male,Toronto,Toronto,18 to 24,4,No,No,No,Yes,No,No,No,Yes,Yes,,1
+2024,2024-01985-SG,Male,Toronto,Toronto,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-02463-SG,Male,Northern,Northern,25 to 49,3,No,Yes,No,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-03932-SG,Male,Western,Western,25 to 49,1,No,No,No,No,Yes,No,No,No,No,No,1
+2023,2023-02369-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-06074-SG,Male,Central,Central,25 to 49,2,No,Yes,No,No,No,No,Yes,No,No,No,1
+2023,2023-01433-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2023,2023-09496-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,No,No,No,,2
+2023,2023-06528-SG,Male,Central,Central,18 to 24,3,No,No,Yes,No,No,No,No,No,No,,3
+2024,2024-06728-SG,Male,Toronto,Toronto,18 to 24,4,Yes,No,No,No,No,No,No,No,No,No,2
+2023,2023-04355-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-05531-SG,Male,Toronto,Toronto,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-01033-SG,Female,Northern,Northern,50+,1,No,Yes,No,No,No,No,No,No,No,No,34
+2023,2023-09662-SG,Female,Central,Central,18 to 24,2,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-08479-SG,Female,Central,Central,18 to 24,2,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2023,2023-07531-SG,Male,Toronto,Toronto,18 to 24,6,Yes,No,No,No,No,No,No,No,No,,1
+2024,2024-08121-SG,Female,Central,Central,18 to 24,7,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2025,2025-07829-SG,Male,Western,Western,18 to 24,1,Yes,No,No,No,No,No,No,No,No,No,3
+2024,2024-07606-SG,Male,Toronto,Toronto,25 to 49,3,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-08456-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,2
+2024,2024-04524-SG,Male,Western,Western,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-06804-SG,Female,Central,Central,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,,1
+2024,2024-08003-SG,Male,Northern,Northern,18 to 24,1,Yes,No,No,No,No,No,Yes,Yes,No,No,3
+2023,2023-08962-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2025,2025-05025-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,Yes,No,No,2
+2025,2025-02383-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,3
+2023,2023-08019-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-02488-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2025,2025-05006-SG,Female,Central,Central,25 to 49,6,No,No,No,No,No,No,No,No,No,Yes,1
+2023,2023-02263-SG,Male,Toronto,Eastern,25 to 49,3,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-00877-SG,Male,Toronto,Toronto,50+,2,Yes,No,No,No,No,No,No,No,No,No,1
+2024,2024-00560-SG,Male,Northern,Northern,25 to 49,2,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-05974-SG,Male,Central,Western,18 to 24,4,No,No,Yes,No,No,No,Yes,Yes,Yes,No,2
+2024,2024-02426-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-11766-SG,Female,Western,Western,18 to 24,4,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2024,2024-03702-SG,Male,Central,Western,25 to 49,3,No,No,No,Yes,No,No,Yes,Yes,No,No,3
+2023,2023-05936-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2025,2025-04155-SG,Male,Western,Western,25 to 49,1,No,No,No,No,No,No,No,No,No,Yes,1
+2025,2025-05969-SG,Female,Eastern,Eastern,25 to 49,5,No,Yes,No,No,No,No,Yes,Yes,No,No,1
+2024,2024-01270-SG,Male,Western,Western,25 to 49,6,No,No,No,No,Yes,No,No,No,No,No,1
+2023,2023-00953-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,No,No,No,,2
+2025,2025-03382-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-01769-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,14
+2024,2024-00251-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,9
+2025,2025-06531-SG,Male,Western,Western,25 to 49,3,No,No,No,Yes,No,No,Yes,Yes,No,No,1
+2025,2025-00838-SG,Male,Toronto,Toronto,25 to 49,3,No,Yes,Yes,No,No,No,No,Yes,Yes,No,1
+2023,2023-08917-SG,Male,Central,Central,25 to 49,6,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2023,2023-00638-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2025,2025-07197-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,No,Yes,Yes,No,2
+2023,2023-01086-SG,Male,Central,Central,50+,1,No,No,Yes,No,No,No,No,No,No,,2
+2024,2024-01998-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,Yes,Yes,No,1
+2024,2024-07845-SG,Male,Central,Central,50+,2,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-04813-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-07478-SG,Male,Northern,Northern,25 to 49,3,No,Yes,No,No,No,No,No,No,No,No,3
+2024,2024-01295-SG,Female,Northern,Northern,50+,4,No,Yes,No,No,No,No,No,No,No,No,5
+2024,2024-07669-SG,Male,Toronto,Toronto,25 to 49,2,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-02023-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-02679-SG,Male,Western,Western,25 to 49,2,Yes,No,No,No,No,No,Yes,Yes,Yes,No,5
+2025,2025-03724-SG,Male,Toronto,Central,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-03801-SG,Female,Central,Central,25 to 49,6,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-06604-SG,Male,Western,Central,18 to 24,1,No,No,No,No,Yes,No,No,No,No,,1
+2024,2024-10249-SG,Female,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,2
+2025,2025-03333-SG,Male,Western,Western,25 to 49,7,No,No,No,Yes,No,No,No,No,No,No,1
+2024,2024-08592-SG,Male,Toronto,Toronto,25 to 49,5,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-01890-SG,Female,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-02977-SG,Male,Toronto,Toronto,25 to 49,7,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-06985-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2024,2024-06495-SG,Male,Toronto,Toronto,18 to 24,1,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-01433-SG,Male,Northern,Northern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-10997-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-05795-SG,Male,Toronto,Toronto,25 to 49,7,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2024,2024-07323-SG,Male,Toronto,Toronto,18 to 24,1,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-07677-SG,Female,Central,Central,18 to 24,1,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-07488-SG,Female,Central,Central,25 to 49,4,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-02931-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2024,2024-04538-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,1
+2024,2024-00294-SG,Male,Toronto,Toronto,25 to 49,4,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-05597-SG,Male,Western,Toronto,18 to 24,1,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2023,2023-03649-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-04948-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2025,2025-07960-SG,Male,Central,Central,25 to 49,11,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-02326-SG,Male,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-07208-SG,Male,Northern,Northern,25 to 49,10,No,Yes,No,No,No,No,No,Yes,No,No,1
+2024,2024-02992-SG,Male,Central,Toronto,25 to 49,3,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-08636-SG,Female,Eastern,Eastern,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-02559-SG,Male,Northern,Northern,25 to 49,2,No,Yes,No,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-10169-SG,Male,Toronto,Toronto,25 to 49,4,Yes,No,No,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-06864-SG,Male,Northern,Northern,18 to 24,1,No,Yes,No,No,No,No,Yes,No,No,No,1
+2025,2025-06197-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,2
+2024,2024-00004-SG,Male,Central,Central,50+,2,No,No,No,Yes,No,No,No,No,No,No,1
+2024,2024-04910-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,3
+2023,2023-08353-SG,Male,Central,Central,25 to 49,8,No,No,Yes,No,No,No,Yes,Yes,Yes,,2
+2023,2023-05522-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2025,2025-00277-SG,Male,Eastern,Eastern,50+,1,No,Yes,No,No,No,No,Yes,Yes,No,No,1
+2023,2023-11067-SG,Female,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-04055-SG,Male,Eastern,Toronto,25 to 49,1,No,No,No,Yes,No,No,No,Yes,No,No,1
+2023,2023-09045-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,,2
+2025,2025-07813-SG,Male,Toronto,Toronto,50+,4,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-08104-SG,Male,Central,Central,18 to 24,1,No,Yes,No,No,No,No,No,No,No,No,2
+2024,2024-02542-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,3
+2024,2024-00433-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-08896-SG,Male,Western,Western,25 to 49,4,No,Yes,No,No,No,No,Yes,No,No,,1
+2025,2025-09371-SG,Male,Central,Central,18 to 24,1,No,No,Yes,No,No,No,No,Yes,Yes,No,2
+2024,2024-03207-SG,Male,Northern,Northern,25 to 49,2,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-08618-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2025,2025-03043-SG,Male,Central,Central,25 to 49,4,No,Yes,No,No,No,No,Yes,No,No,No,5
+2023,2023-06654-SG,Male,Northern,Northern,18 to 24,1,No,No,No,No,Yes,No,No,No,No,,1
+2024,2024-01441-SG,Male,Northern,Northern,50+,2,No,No,No,Yes,No,No,No,Yes,No,No,1
+2024,2024-07243-SG,Male,Toronto,Toronto,25 to 49,2,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-01645-SG,Male,Central,Central,50+,4,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2024,2024-09730-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,2
+2025,2025-05360-SG,Female,Western,Western,25 to 49,7,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2024,2024-02529-SG,Male,Western,Western,25 to 49,3,No,No,No,No,Yes,No,No,No,No,No,1
+2024,2024-08702-SG,Male,Toronto,Toronto,18 to 24,4,Yes,No,No,No,No,No,No,No,No,No,1
+2024,2024-06078-SG,Male,Eastern,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2023,2023-01996-SG,Male,Western,Western,25 to 49,2,Yes,No,No,No,No,No,No,No,No,,1
+2024,2024-08706-SG,Female,Eastern,Eastern,25 to 49,3,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-09009-SG,Male,Central,Central,50+,3,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-09993-SG,Male,Toronto,Toronto,25 to 49,3,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-04830-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2023,2023-10204-SG,Male,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2025,2025-05287-SG,Male,Toronto,Toronto,25 to 49,6,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-02795-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-05148-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-09768-SG,Male,Central,Central,18 to 24,2,No,No,No,Yes,No,No,No,No,No,No,2
+2023,2023-04955-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,Yes,No,,1
+2024,2024-03680-SG,Male,Western,Western,25 to 49,4,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-03960-SG,Male,Toronto,Toronto,25 to 49,4,Yes,No,No,No,No,No,No,No,No,,1
+2025,2025-08021-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-07116-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,3
+2025,2025-00337-SG,Male,Northern,Northern,50+,8,No,Yes,No,No,No,No,Yes,No,No,No,1
+2023,2023-04120-SG,Female,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,,1
+2025,2025-02998-SG,Male,Toronto,Toronto,25 to 49,2,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2024,2024-03645-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,Yes,Yes,No,8
+2024,2024-01368-SG,Male,Toronto,Toronto,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-07705-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,Yes,Yes,Yes,,7
+2024,2024-01379-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-02584-SG,Male,Western,Western,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2024,2024-01572-SG,Male,Central,Central,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,No,1
+2024,2024-00610-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-09441-SG,Male,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,,3
+2024,2024-04695-SG,Male,Toronto,Toronto,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,1
+2024,2024-06840-SG,Male,Central,Central,18 to 24,2,No,Yes,No,No,No,No,Yes,No,No,No,1
+2025,2025-04845-SG,Male,Eastern,Eastern,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-01709-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,3
+2024,2024-04874-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-04735-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,No,1
+2024,2024-08880-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,No,Yes,No,No,1
+2024,2024-09058-SG,Female,Eastern,Eastern,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-01366-SG,Female,Eastern,Eastern,50+,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-04165-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2023,2023-10957-SG,Female,Northern,Northern,25 to 49,4,No,No,No,Yes,No,No,Yes,Yes,Yes,,1
+2023,2023-00640-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,3
+2025,2025-02812-SG,Male,Western,Western,25 to 49,10,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-10162-SG,Male,Central,Central,18 to 24,3,No,No,No,Yes,No,No,Yes,Yes,Yes,,1
+2024,2024-03777-SG,Female,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,No,Yes,No,No,1
+2024,2024-01611-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-02406-SG,Male,Western,Western,25 to 49,3,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-06578-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,2
+2025,2025-05757-SG,Male,Northern,Northern,18 to 24,1,No,No,No,No,No,No,Yes,No,No,Yes,2
+2024,2024-04233-SG,Male,Northern,Northern,25 to 49,5,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-08447-SG,Male,Central,Central,25 to 49,4,No,Yes,No,No,No,No,Yes,No,No,,1
+2025,2025-02185-SG,Male,Central,Central,25 to 49,5,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2024,2024-04492-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,2
+2024,2024-00001-SG,Male,Toronto,Toronto,25 to 49,3,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-06411-SG,Female,Central,Central,25 to 49,140,No,No,No,No,No,No,Yes,No,No,Yes,1
+2025,2025-01670-SG,Male,Western,Western,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,No,1
+2024,2024-09619-SG,Male,Eastern,Eastern,18 to 24,3,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-10250-SG,Male,Toronto,Toronto,25 to 49,4,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-04518-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-00057-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2024,2024-07299-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-07749-SG,Male,Central,Central,18 to 24,1,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2025,2025-08858-SG,Male,Eastern,Eastern,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,11
+2024,2024-04907-SG,Female,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,1
+2025,2025-08572-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-08902-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2024,2024-05214-SG,Male,Central,Central,18 to 24,2,No,Yes,No,No,No,No,No,Yes,No,No,1
+2023,2023-08584-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,5
+2023,2023-09852-SG,Male,Central,Central,18 to 24,5,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2024,2024-06273-SG,Female,Central,Western,25 to 49,4,No,No,Yes,No,No,No,Yes,Yes,No,No,2
+2023,2023-12182-SG,Female,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,2
+2024,2024-06293-SG,Male,Toronto,Toronto,25 to 49,7,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-09368-SG,Female,Central,Central,18 to 24,2,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-09963-SG,Female,Central,Central,50+,12,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-07238-SG,Male,Northern,Northern,25 to 49,1,No,No,No,No,No,No,No,No,No,Yes,2
+2025,2025-00642-SG,Male,Toronto,Toronto,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,15
+2023,2023-08722-SG,Male,Central,Central,18 to 24,5,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-02969-SG,Female,Eastern,Eastern,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-09892-SG,Male,Central,Central,25 to 49,4,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2025,2025-01705-SG,Female,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,Yes,Yes,No,1
+2024,2024-05128-SG,Male,Northern,Northern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,2
+2025,2025-03658-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,4
+2025,2025-08208-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,1
+2024,2024-02975-SG,Male,Western,Western,50+,4,No,No,Yes,No,No,No,Yes,Yes,No,No,1
+2023,2023-00894-SG,Male,Toronto,Toronto,50+,4,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-02694-SG,Male,Toronto,Western,25 to 49,8,No,No,Yes,No,No,No,No,No,No,,1
+2023,2023-11826-SG,Female,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-03930-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,,4
+2023,2023-09715-SG,Male,Central,Central,25 to 49,9,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-06590-SG,Female,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-12044-SG,Male,Toronto,Toronto,25 to 49,2,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2023,2023-02681-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,,3
+2024,2024-06384-SG,Male,Western,Western,18 to 24,2,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-05801-SG,Male,Central,Central,18 to 24,4,No,Yes,No,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-02623-SG,Male,Eastern,Eastern,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,No,1
+2024,2024-00611-SG,Female,Central,Central,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-01814-SG,Male,Central,Central,25 to 49,10,No,No,Yes,No,No,No,Yes,Yes,No,No,2
+2025,2025-07625-SG,Female,Central,Central,25 to 49,6,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-05808-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,2
+2023,2023-02723-SG,Female,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,,4
+2023,2023-07472-SG,Male,Toronto,Toronto,25 to 49,5,Yes,No,No,No,No,No,No,No,No,,1
+2025,2025-00855-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2025,2025-09603-SG,Female,Eastern,Eastern,25 to 49,3,No,Yes,No,No,No,No,Yes,No,No,No,1
+2025,2025-08728-SG,Female,Central,Central,25 to 49,1,No,No,No,No,No,No,No,No,No,Yes,1
+2023,2023-05087-SG,Female,Central,Central,25 to 49,3,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-01633-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-07670-SG,Male,Western,Western,18 to 24,3,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-09860-SG,Male,Central,Central,18 to 24,2,No,Yes,No,No,No,No,No,Yes,Yes,No,1
+2025,2025-02916-SG,Male,Toronto,Toronto,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,2
+2023,2023-12423-SG,Male,Western,Western,25 to 49,2,No,No,No,Yes,No,No,No,No,No,,2
+2023,2023-08617-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2025,2025-02946-SG,Male,Western,Western,25 to 49,11,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-09669-SG,Female,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-08205-SG,Male,Western,Western,18 to 24,2,Yes,No,No,No,No,No,Yes,No,No,,1
+2023,2023-08971-SG,Male,Central,Central,18 to 24,4,No,No,Yes,No,No,No,Yes,No,No,,1
+2025,2025-04550-SG,Female,Central,Central,25 to 49,2,Yes,No,No,No,No,No,No,No,No,No,1
+2025,2025-07103-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,3
+2023,2023-07222-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-06653-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,,4
+2024,2024-07649-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-00229-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2025,2025-00034-SG,Male,Toronto,Toronto,50+,2,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-06535-SG,Male,Northern,Northern,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,2
+2025,2025-03762-SG,Male,Western,Western,25 to 49,4,No,Yes,No,No,No,No,Yes,No,No,No,1
+2025,2025-01107-SG,Male,Central,Central,25 to 49,5,No,No,Yes,No,No,No,No,No,No,No,2
+2025,2025-04548-SG,Male,Western,Western,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,No,No,3
+2024,2024-03876-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-11611-SG,Female,Western,Western,25 to 49,3,Yes,No,No,No,No,No,No,No,No,,1
+2025,2025-02775-SG,Male,Toronto,Toronto,25 to 49,3,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-02875-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-09849-SG,Female,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,No,,1
+2023,2023-02706-SG,Male,Northern,Northern,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-02164-SG,Male,Central,Central,25 to 49,5,No,No,No,Yes,No,No,Yes,No,No,No,1
+2025,2025-09172-SG,Male,Central,Central,25 to 49,7,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-01450-SG,Male,Central,Central,50+,2,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2023,2023-04030-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-00091-SG,Female,Central,Central,25 to 49,4,No,Yes,No,No,No,No,Yes,No,No,No,1
+2025,2025-04671-SG,Male,Toronto,Toronto,18 to 24,7,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-05711-SG,Female,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-01292-SG,Male,Eastern,Eastern,50+,2,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-00417-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,No,Yes,No,No,1
+2025,2025-05459-SG,Female,Central,Central,25 to 49,13,No,No,No,No,No,No,No,No,No,Yes,1
+2024,2024-08532-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2023,2023-02028-SG,Male,Western,Western,25 to 49,6,Yes,No,No,No,No,No,Yes,No,No,,1
+2023,2023-05254-SG,Female,Central,Central,25 to 49,3,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-06583-SG,Male,Toronto,Toronto,18 to 24,4,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-02946-SG,Female,Central,Central,50+,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-03377-SG,Male,Central,Central,50+,3,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2023,2023-01419-SG,Male,Toronto,Toronto,50+,5,No,No,Yes,No,No,No,No,Yes,Yes,,1
+2024,2024-00818-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,2
+2024,2024-10129-SG,Male,Central,Central,18 to 24,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-02629-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,3
+2024,2024-04022-SG,Male,Western,Western,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-07565-SG,Male,Central,Northern,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,5
+2025,2025-01856-SG,Male,Northern,Northern,25 to 49,6,No,Yes,No,No,No,No,No,No,No,No,1
+2023,2023-06376-SG,Male,Western,Western,18 to 24,4,No,Yes,No,No,No,No,Yes,No,No,,1
+2025,2025-00523-SG,Male,Eastern,Eastern,50+,2,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2023,2023-00560-SG,Male,Western,Western,25 to 49,4,Yes,No,No,No,Yes,No,No,No,No,,1
+2025,2025-07027-SG,Male,Eastern,Eastern,25 to 49,1,No,Yes,No,No,No,No,No,Yes,Yes,No,1
+2025,2025-02130-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,1
+2024,2024-08377-SG,Male,Toronto,Toronto,25 to 49,5,Yes,No,No,No,No,No,No,No,No,No,1
+2024,2024-02647-SG,Male,Western,Western,25 to 49,5,Yes,No,No,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-06492-SG,Female,Central,Western,18 to 24,4,No,No,No,Yes,No,No,Yes,Yes,No,,1
+2025,2025-01579-SG,Female,Eastern,Eastern,50+,2,Yes,No,No,No,No,No,Yes,No,No,No,1
+2023,2023-02817-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,3
+2023,2023-07928-SG,Male,Northern,Northern,18 to 24,1,No,Yes,No,No,No,No,No,No,No,,1
+2023,2023-00995-SG,Male,Western,Western,50+,1,No,No,No,Yes,No,No,No,No,No,,5
+2025,2025-00635-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,1
+2024,2024-00886-SG,Male,Toronto,Toronto,50+,4,No,No,Yes,No,No,No,Yes,No,No,No,1
+2024,2024-02179-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,Yes,Yes,No,2
+2024,2024-04499-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,No,No,1
+2024,2024-08748-SG,Male,Central,Central,18 to 24,3,No,No,No,Yes,No,No,No,No,No,No,4
+2025,2025-03493-SG,Male,Toronto,Western,25 to 49,3,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-05230-SG,Male,Western,Western,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-09582-SG,Female,Eastern,Eastern,18 to 24,4,No,No,Yes,No,No,No,Yes,No,No,,1
+2023,2023-04436-SG,Female,Central,Central,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,,1
+2024,2024-06121-SG,Male,Northern,Northern,25 to 49,1,No,No,No,Yes,No,No,Yes,Yes,Yes,No,1
+2025,2025-08419-SG,Male,Eastern,Eastern,18 to 24,1,No,No,Yes,No,No,No,No,No,No,No,2
+2024,2024-02678-SG,Male,Toronto,Toronto,25 to 49,4,Yes,No,No,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-04996-SG,Male,Toronto,Toronto,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,No,3
+2025,2025-02539-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-02577-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,6
+2024,2024-02512-SG,Male,Western,Western,25 to 49,4,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-00147-SG,Male,Central,Central,25 to 49,1,No,No,No,Yes,No,No,Yes,No,No,,2
+2024,2024-08961-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,No,No,No,Yes,1
+2024,2024-01094-SG,Male,Eastern,Eastern,50+,1,No,No,Yes,No,No,No,Yes,No,No,No,6
+2025,2025-02205-SG,Male,Toronto,Toronto,25 to 49,3,No,Yes,No,No,No,No,No,Yes,No,No,1
+2024,2024-03623-SG,Male,Western,Western,25 to 49,4,Yes,No,No,No,No,No,No,No,No,Yes,1
+2024,2024-03550-SG,Female,Eastern,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,No,4
+2024,2024-02015-SG,Male,Eastern,Eastern,25 to 49,3,No,No,No,No,Yes,No,No,No,No,No,1
+2023,2023-01649-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,,7
+2025,2025-00187-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-09587-SG,Male,Central,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-08717-SG,Male,Western,Western,25 to 49,3,No,No,No,No,Yes,No,No,No,No,No,1
+2023,2023-08264-SG,Male,Central,Central,18 to 24,2,No,No,No,Yes,No,No,Yes,No,No,,2
+2023,2023-10008-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,,1
+2024,2024-07621-SG,Female,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-04650-SG,Male,Central,Central,25 to 49,1,Yes,No,No,No,No,No,Yes,No,No,,2
+2025,2025-05342-SG,Male,Western,Western,25 to 49,3,No,No,Yes,No,No,No,No,No,No,No,2
+2024,2024-00056-SG,Male,Central,Central,50+,2,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2025,2025-00399-SG,Male,Central,Central,50+,3,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2024,2024-00454-SG,Male,Western,Western,50+,4,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-06987-SG,Male,Eastern,Eastern,25 to 49,3,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-09210-SG,Male,Northern,Northern,25 to 49,12,No,No,Yes,No,No,No,No,Yes,Yes,No,1
+2025,2025-02973-SG,Male,Western,Western,25 to 49,10,Yes,No,No,No,No,No,Yes,Yes,No,No,1
+2023,2023-05085-SG,Female,Central,Central,25 to 49,9,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-10123-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-00118-SG,Male,Central,Central,25 to 49,3,No,Yes,No,No,No,No,Yes,No,No,No,1
+2023,2023-04820-SG,Female,Central,Central,25 to 49,7,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-03727-SG,Male,Central,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,,1
+2023,2023-01563-SG,Male,Toronto,Toronto,50+,4,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2023,2023-05186-SG,Male,Toronto,Toronto,25 to 49,5,No,No,Yes,No,No,No,No,No,No,,1
+2023,2023-00215-SG,Male,Central,Central,50+,1,No,No,No,Yes,No,No,Yes,No,No,,1
+2023,2023-09403-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,Yes,,2
+2023,2023-07511-SG,Female,Western,Western,18 to 24,9,No,No,No,Yes,No,No,Yes,No,No,,1
+2025,2025-02340-SG,Male,Toronto,Toronto,50+,11,No,No,Yes,No,No,No,No,No,No,No,1
+2023,2023-09075-SG,Male,Western,Western,18 to 24,4,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-04305-SG,Female,Northern,Northern,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,,2
+2025,2025-04691-SG,Male,Toronto,Toronto,25 to 49,4,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-04338-SG,Male,Central,Central,25 to 49,3,No,No,No,Yes,No,No,No,No,No,No,2
+2023,2023-10312-SG,Female,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,No,No,,1
+2024,2024-08748-SG,Male,Central,Central,18 to 24,2,No,No,No,Yes,No,No,No,Yes,Yes,No,1
+2025,2025-00262-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,No,No,No,No,1
+2024,2024-01945-SG,Male,Northern,Northern,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-07567-SG,Male,Western,Western,25 to 49,1,Yes,No,No,No,No,No,No,Yes,No,Yes,1
+2024,2024-02331-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,No,7
+2023,2023-09934-SG,Male,Central,Western,25 to 49,3,No,Yes,No,No,No,No,Yes,No,No,,1
+2024,2024-05721-SG,Male,Western,Western,25 to 49,3,Yes,No,No,No,No,No,No,Yes,Yes,No,1
+2023,2023-10084-SG,Male,Central,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,Yes,Yes,,1
+2023,2023-10978-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,Yes,Yes,,1
+2025,2025-01736-SG,Male,Central,Central,25 to 49,4,No,No,Yes,No,No,No,Yes,No,No,No,1
+2025,2025-02797-SG,Male,Eastern,Eastern,25 to 49,1,No,Yes,No,No,No,No,Yes,No,No,No,8
+2025,2025-08474-SG,Male,Northern,Northern,18 to 24,2,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2024,2024-05543-SG,Male,Western,Western,18 to 24,4,Yes,No,No,No,No,No,Yes,Yes,No,Yes,1
+2023,2023-07724-SG,Male,Western,Western,25 to 49,4,No,No,Yes,No,No,No,Yes,Yes,Yes,,1
+2025,2025-01280-SG,Male,Central,Central,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,9
+2024,2024-07465-SG,Male,Toronto,Toronto,25 to 49,3,No,Yes,No,No,No,No,Yes,No,No,No,1
+2023,2023-11414-SG,Male,Western,Western,25 to 49,1,No,No,No,Yes,No,No,No,No,No,,7
+2025,2025-00435-SG,Male,Northern,Northern,25 to 49,9,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-02973-SG,Male,Western,Western,25 to 49,4,No,No,Yes,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-08769-SG,Male,Central,Central,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-00335-SG,Male,Central,Central,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,No,1
+2023,2023-01407-SG,Male,Western,Western,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-04924-SG,Male,Central,Toronto,25 to 49,4,No,No,No,Yes,No,No,Yes,No,No,No,2
+2023,2023-09697-SG,Male,Toronto,Toronto,25 to 49,2,No,No,Yes,No,No,No,No,No,No,,1
+2023,2023-03856-SG,Male,Western,Western,25 to 49,10,Yes,No,No,No,No,No,Yes,No,No,,1
+2023,2023-01470-SG,Male,Central,Central,50+,1,No,No,Yes,No,No,No,No,No,No,,1
+2025,2025-00513-SG,Male,Western,Western,25 to 49,8,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-11360-SG,Male,Central,Central,25 to 49,4,No,No,Yes,No,No,No,Yes,No,No,,1
+2024,2024-07112-SG,Male,Western,Western,25 to 49,3,No,No,No,Yes,No,No,No,Yes,No,No,2
+2023,2023-11343-SG,Female,Central,Central,18 to 24,3,No,No,No,Yes,No,No,No,No,No,,1
+2024,2024-06330-SG,Male,Central,Toronto,18 to 24,4,No,No,No,Yes,No,No,No,No,No,No,1
+2023,2023-06944-SG,Male,Western,Western,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-01960-SG,Male,Toronto,Toronto,25 to 49,1,Yes,No,No,No,No,No,No,No,No,No,1
+2023,2023-05204-SG,Male,Central,Central,25 to 49,1,No,Yes,No,No,No,No,Yes,Yes,No,,4
+2023,2023-07600-SG,Female,Central,Central,25 to 49,3,No,No,No,Yes,No,No,Yes,No,No,,1
+2024,2024-08531-SG,Male,Northern,Northern,50+,4,No,Yes,No,No,No,No,Yes,No,No,No,1
+2024,2024-04479-SG,Female,Central,Central,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,2
+2023,2023-08092-SG,Male,Western,Western,18 to 24,4,Yes,No,No,No,No,No,No,No,No,,1
+2023,2023-06330-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-01546-SG,Male,Western,Western,25 to 49,2,Yes,No,No,No,No,No,No,No,No,Yes,1
+2023,2023-06702-SG,Male,Central,Central,18 to 24,1,No,No,No,Yes,No,No,No,No,No,,2
+2024,2024-03930-SG,Male,Eastern,Eastern,25 to 49,1,No,No,Yes,No,No,No,No,Yes,No,No,2
+2025,2025-04098-SG,Male,Central,Central,25 to 49,16,No,No,Yes,No,No,No,Yes,No,No,No,1
+2023,2023-09509-SG,Female,Central,Central,25 to 49,2,No,No,No,Yes,No,No,Yes,No,No,,2
+2025,2025-03883-SG,Male,Toronto,Central,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,5
+2024,2024-06892-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,No,1
+2025,2025-05895-SG,Male,Northern,Northern,18 to 24,3,No,Yes,No,No,No,No,Yes,Yes,Yes,No,1
+2023,2023-03271-SG,Male,Central,Central,25 to 49,2,No,No,No,Yes,No,No,No,No,No,,1
+2023,2023-11821-SG,Male,Central,Central,50+,3,No,No,Yes,No,No,No,No,No,No,,1
+2024,2024-00439-SG,Male,Eastern,Western,25 to 49,1,No,No,Yes,No,No,No,Yes,Yes,No,No,2
+2024,2024-07546-SG,Female,Eastern,Eastern,25 to 49,2,Yes,No,No,No,No,No,Yes,No,No,No,1
+2025,2025-07486-SG,Male,Central,Central,25 to 49,1,No,Yes,No,No,No,No,No,No,No,No,1
+2025,2025-03429-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,Yes,No,No,3
+2023,2023-04171-SG,Male,Eastern,Eastern,25 to 49,2,No,No,Yes,No,No,No,Yes,No,No,,1
+2025,2025-07126-SG,Male,Toronto,Toronto,25 to 49,3,No,No,Yes,No,No,No,Yes,No,No,No,1

@@ -87,6 +87,45 @@ except ImportError:
     pass
 
 try:
+    from .tps_fetch import (
+        TPS_LAYER_URLS,
+        fetch_tps_category,
+        list_tps_categories,
+    )
+except ImportError:
+    pass
+
+try:
+    from .siu_fetch import (
+        SIU_INDEX_URL,
+        fetch_siu_cases,
+        siu_cache_path,
+    )
+except ImportError:
+    pass
+
+
+def load_sample(name: str):
+    """Load a bundled reference sample CSV by name.
+
+    Available samples: 'otis_b01', 'otis_b09', 'otis_c11', 'tps_assault'.
+    The OTIS samples are taken from the public Ontario Data Catalogue
+    release; the TPS sample is taken from Toronto Police Open Data.
+    """
+    import pandas as pd
+    from pathlib import Path
+    here = Path(__file__).parent / "data" / "samples"
+    files = {
+        "otis_b01": "otis_b01_sample.csv",
+        "otis_b09": "otis_b09_sample.csv",
+        "otis_c11": "otis_c11_sample.csv",
+        "tps_assault": "tps_assault_sample.csv",
+    }
+    if name not in files:
+        raise KeyError(f"Unknown sample {name!r}; choices: {list(files)}")
+    return pd.read_csv(here / files[name])
+
+try:
     from .effects import estimate_ate
 except ImportError:
     pass
@@ -252,6 +291,14 @@ __all__ = [
     "mrm_siu_case_to_decision_km",
     "mrm_siu_per_service_rate",
     "mrm_siu_outcome_classifier",
+    # Dataset fetchers (on-demand download/scrape)
+    "TPS_LAYER_URLS",
+    "fetch_tps_category",
+    "list_tps_categories",
+    "SIU_INDEX_URL",
+    "fetch_siu_cases",
+    "siu_cache_path",
+    "load_sample",
     # New modules (import via morie.viz, morie.tables_pub, etc.)
     "viz",
     "tables_pub",

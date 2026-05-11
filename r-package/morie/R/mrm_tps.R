@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 #' MRM-framework analyses on Toronto Police Service (TPS) open data
 #'
 #' Four callables for TPS public-release crime-incident CSVs, used in

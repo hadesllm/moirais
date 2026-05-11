@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 #' MRM-framework analyses on Ontario OTIS data
 #'
 #' Five callables for the OTIS public-release datasets, used in the MRM

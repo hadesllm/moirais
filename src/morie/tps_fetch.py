@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """TPS (Toronto Police Service) Open Data ArcGIS REST fetcher.
 
 The Toronto Police Service publishes per-category crime-incident GeoJSON

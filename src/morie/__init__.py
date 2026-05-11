@@ -105,6 +105,33 @@ except ImportError:
     pass
 
 
+
+try:
+    from .longitudinal_sim import (
+        sync_rng,
+        generate_ar_coefficients,
+        generate_var_coefficients,
+        mvn_with_covariance,
+        simulate_longitudinal_panel,
+        LongitudinalSimSpec,
+    )
+except ImportError:
+    pass
+
+try:
+    from .mrm_kulldorff import mrm_tps_kulldorff_scan, ScanCluster
+except ImportError:
+    pass
+
+try:
+    from ._license_check import (
+        GPL_COMPATIBLE_LICENSES,
+        check_plugin_license,
+        morie_license_metadata,
+    )
+except ImportError:
+    pass
+
 def load_sample(name: str):
     """Load a bundled reference sample CSV by name.
 
@@ -299,6 +326,18 @@ __all__ = [
     "fetch_siu_cases",
     "siu_cache_path",
     "load_sample",
+    "sync_rng",
+    "generate_ar_coefficients",
+    "generate_var_coefficients",
+    "mvn_with_covariance",
+    "simulate_longitudinal_panel",
+    "LongitudinalSimSpec",
+    "mrm_tps_kulldorff_scan",
+    "ScanCluster",
+    "GPL_COMPATIBLE_LICENSES",
+    "check_plugin_license",
+    "morie_license_metadata",
+
     # New modules (import via morie.viz, morie.tables_pub, etc.)
     "viz",
     "tables_pub",

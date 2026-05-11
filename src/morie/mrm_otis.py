@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
 """MRM-framework analyses on Ontario OTIS data.
 
 Five Python callables that mirror the R `mrm_otis_*` family in

@@ -67,12 +67,12 @@ and, where applicable, the **MRM framework paper** and the **Hawkes methodology 
 ```
 # Software paper — R (also the R package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in R (v0.1.14). Zenodo.
+Estimation in R (v0.1.15). Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Software paper — Python (also the Python package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in Python (v0.1.14). Zenodo.
+Estimation in Python (v0.1.15). Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
 # MRM framework paper (theoretical foundations)

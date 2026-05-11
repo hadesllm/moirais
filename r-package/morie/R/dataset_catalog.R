@@ -210,7 +210,45 @@ morie_dataset_catalog <- function() {
          source = "vsr", survey = "otis", year = "2023-2025",
          format = "rdata", type = "correctional", large_file = TRUE,
          local_path = "data/cache/finne_env.RData",
-         table_name = "otisfin", ckan_resource_id = "")
+         table_name = "otisfin", ckan_resource_id = ""),
+    # -- OTIS public release per-table CSVs (b01/b09/c11 used by mrm_otis_*) --
+    list(key = "otisb01", name = "OTIS b01: segregation placement records",
+         source = "otis", survey = "b01", year = "2023-2025",
+         format = "csv", type = "correctional", large_file = FALSE,
+         local_path = "data/datasets/OTIS/b01_segregation_detailed_dataset.csv",
+         table_name = "otisb01", ckan_resource_id = ""),
+    list(key = "otisb09", name = "OTIS b09: individuals by placement count",
+         source = "otis", survey = "b09", year = "2023-2025",
+         format = "csv", type = "correctional", large_file = FALSE,
+         local_path = "data/datasets/OTIS/b09_individuals_in_segregation_number_of_times_in_segregation.csv",
+         table_name = "otisb09", ckan_resource_id = ""),
+    list(key = "otisc11", name = "OTIS c11: aggregate-duration individual counts",
+         source = "otis", survey = "c11", year = "2023-2025",
+         format = "csv", type = "correctional", large_file = FALSE,
+         local_path = "data/datasets/OTIS/c11_individuals_in_segregation_and_restrictive_confinement_aggregate_lengths.csv",
+         table_name = "otisc11", ckan_resource_id = ""),
+    # -- SIU public case-level data (used by mrm_siu_*) --
+    list(key = "siu", name = "Ontario SIU: case-level investigations (2014-present)",
+         source = "vsr", survey = "siu", year = "2014-present",
+         format = "csv", type = "oversight", large_file = FALSE,
+         local_path = "data/datasets/vsr/SIU.csv",
+         table_name = "siu", ckan_resource_id = ""),
+    # -- TPS per-category public crime events (used by mrm_tps_*) --
+    list(key = "tpsassault", name = "TPS Assault open-data events 2014-present",
+         source = "tps", survey = "assault", year = "2014-present",
+         format = "csv", type = "crime", large_file = TRUE,
+         local_path = "data/datasets/TPS/Assault/CSV",
+         table_name = "tpsassault", ckan_resource_id = ""),
+    list(key = "tpshomicides", name = "TPS Homicides open-data events 2014-present",
+         source = "tps", survey = "homicides", year = "2014-present",
+         format = "csv", type = "crime", large_file = FALSE,
+         local_path = "data/datasets/TPS/Homicides/CSV",
+         table_name = "tpshomicides", ckan_resource_id = ""),
+    list(key = "tpsshootings", name = "TPS Shootings and Firearm Discharges 2014-present",
+         source = "tps", survey = "shootings", year = "2014-present",
+         format = "csv", type = "crime", large_file = TRUE,
+         local_path = "data/datasets/TPS/ShootingAndFirearmDiscarges/CSV",
+         table_name = "tpsshootings", ckan_resource_id = "")
   )
   do.call(rbind, lapply(entries, as.data.frame, stringsAsFactors = FALSE))
 }

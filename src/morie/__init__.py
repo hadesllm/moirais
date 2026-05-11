@@ -6,7 +6,7 @@ autoresearch venv) without requiring sklearn, httpx, textual, or other
 optional dependencies.
 """
 
-__version__ = "0.1.14"
+__version__ = "0.1.15"
 
 # --- Guarded eager imports — fail gracefully in minimal envs ---
 # In a full morie install these all succeed and populate the namespace.
@@ -54,6 +54,35 @@ except ImportError:
 
 try:
     from .ebac import calculate_ebac, is_over_legal_limit
+except ImportError:
+    pass
+
+try:
+    from .mrm_otis import (
+        mrm_otis_placement_concentration,
+        mrm_otis_seg_duration_km,
+        mrm_otis_mortification_cooccurrence,
+        mrm_otis_region_locality,
+    )
+except ImportError:
+    pass
+
+try:
+    from .mrm_tps import (
+        mrm_tps_levy_scaling,
+        mrm_tps_moran_clustering,
+        mrm_tps_neighbourhood_recurrence_km,
+        mrm_tps_load_hawkes_refit,
+    )
+except ImportError:
+    pass
+
+try:
+    from .mrm_siu import (
+        mrm_siu_case_to_decision_km,
+        mrm_siu_per_service_rate,
+        mrm_siu_outcome_classifier,
+    )
 except ImportError:
     pass
 
@@ -211,6 +240,18 @@ __all__ = [
     "suggest_analysis_plan",
     "validate_cpads_frame",
     "verify_statistical_output",
+    # MRM-framework empirical analyses
+    "mrm_otis_placement_concentration",
+    "mrm_otis_seg_duration_km",
+    "mrm_otis_mortification_cooccurrence",
+    "mrm_otis_region_locality",
+    "mrm_tps_levy_scaling",
+    "mrm_tps_moran_clustering",
+    "mrm_tps_neighbourhood_recurrence_km",
+    "mrm_tps_load_hawkes_refit",
+    "mrm_siu_case_to_decision_km",
+    "mrm_siu_per_service_rate",
+    "mrm_siu_outcome_classifier",
     # New modules (import via morie.viz, morie.tables_pub, etc.)
     "viz",
     "tables_pub",

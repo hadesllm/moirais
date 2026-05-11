@@ -48,7 +48,7 @@
 #'     \item{denominator}{Total denominator under the chosen convention.}
 #'     \item{n_mandela}{Numerator: count of records (or individuals)
 #'       classified as Mandela-prolonged.}
-#'     \item{rate}{Proportion `n_mandela / denominator` in $[0, 1]$.}
+#'     \item{rate}{Proportion `n_mandela / denominator`, in the unit interval.}
 #'     \item{pct}{Same as `rate` expressed as percentage.}
 #'     \item{n_broader_rc}{Broader-rate numerator (if `broader_rc`).}
 #'     \item{rate_broader}{Broader-rate proportion (if `broader_rc`).}

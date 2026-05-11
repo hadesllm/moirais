@@ -55,6 +55,8 @@ Suggests:
   DoubleML,
   mlr3,
   mlr3learners,
+  dbscan,
+  reticulate,
   testthat (>= 3.0.0),
   knitr,
   rmarkdown

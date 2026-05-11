@@ -230,7 +230,13 @@ mrm_tps_neighbourhood_recurrence_km <- function(
 ) {
   stopifnot(is.data.frame(data))
   stopifnot(all(c(date_col, hood_col) %in% names(data)))
-  d <- as.Date(data[[date_col]])
+  # Tolerant date parser: TPS Open Data emits "M/D/YYYY HH:MM:SS AM/PM";
+  # ArcGIS GeoJSON emits ISO; try a few formats before giving up.
+  raw <- data[[date_col]]
+  d <- suppressWarnings(as.POSIXct(raw, format = "%m/%d/%Y %I:%M:%S %p", tz = "UTC"))
+  if (all(is.na(d))) d <- suppressWarnings(as.POSIXct(raw, format = "%Y-%m-%d %H:%M:%S", tz = "UTC"))
+  if (all(is.na(d))) d <- suppressWarnings(as.POSIXct(raw, tz = "UTC"))
+  d <- as.Date(d)
   h <- data[[hood_col]]
   ok <- !is.na(d) & !is.na(h)
   d <- d[ok]; h <- h[ok]

@@ -340,16 +340,6 @@ morie_dataset_info <- function(key) {
   as.list(entry)
 }
 
-#' Download bootstrap weight files from CKAN API
-#'
-#' Downloads large bootstrap weight CSVs that are too big to ship with the
-#' package. Data is cached in the user cache database for future use.
-#'
-#' @param survey One of \code{"csads_2021"}, \code{"csads_2023"},
-#'   \code{"csus_2019"}, \code{"csus_2023"}, or \code{"all"} (default).
-#' @param limit Max records per CKAN request (default 32000).
-#' @param db_path Optional override for cache database path.
-#' @export
 #' Get path to an MORIE userguide
 #'
 #' Lists or retrieves bundled userguide PDF files. These are the official
@@ -367,6 +357,18 @@ morie_userguide <- function(name = NULL) {
   }
 }
 
+
+#' Download bootstrap weight files from CKAN API
+#'
+#' Downloads large bootstrap weight CSVs that are too big to ship with the
+#' package. Data is cached in the user cache database for future use.
+#'
+#' @param survey One of \code{"csads_2021"}, \code{"csads_2023"},
+#'   \code{"csus_2019"}, \code{"csus_2023"}, or \code{"all"} (default).
+#' @param limit Max records per CKAN request (default 32000).
+#' @param db_path Optional override for cache database path.
+#' @return Invisibly, the number of CSV files successfully downloaded.
+#' @export
 morie_download_bootstrap <- function(survey = "all", limit = 32000L, db_path = NULL) {
   bootstrap_keys <- list(
     csads_2021 = "oc_csads_2021_bootstrap",

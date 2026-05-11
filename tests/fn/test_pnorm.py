@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pnorm — normal CDF."""
+"""Tests for morie.fn.pnorm — normal CDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pnorm import pnorm
+from morie.fn.pnorm import pnorm
 
 
 class TestPnorm:

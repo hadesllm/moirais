@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxw84 -- WGS84 to local tangent plane"""
+"""Tests for morie.fn.zxw84 -- WGS84 to local tangent plane"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxw84 import wgs84_to_local
+from morie.fn.zxw84 import wgs84_to_local
 
 
 class TestWgs84ToLocal:

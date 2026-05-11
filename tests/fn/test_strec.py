@@ -1,7 +1,7 @@
 """Tests for strec.stamp."""
 import numpy as np
 import pytest
-from moirais.fn.strec import stamp
+from morie.fn.strec import stamp
 
 
 def test_strec_basic():

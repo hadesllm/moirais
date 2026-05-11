@@ -1,7 +1,7 @@
 """Tests for rgfracv.rangayyan_fractal_vag."""
 import numpy as np
 import pytest
-from moirais.fn.rgfracv import rangayyan_fractal_vag
+from morie.fn.rgfracv import rangayyan_fractal_vag
 
 
 def test_rgfracv_basic():

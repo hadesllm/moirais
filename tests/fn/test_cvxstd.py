@@ -1,7 +1,7 @@
 """Tests for cvxstd.boyd_steepest_desc."""
 import numpy as np
 import pytest
-from moirais.fn.cvxstd import boyd_steepest_desc
+from morie.fn.cvxstd import boyd_steepest_desc
 
 
 def test_cvxstd_basic():

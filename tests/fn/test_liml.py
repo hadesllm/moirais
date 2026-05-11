@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.liml -- LIML estimator."""
+"""Tests for morie.fn.liml -- LIML estimator."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.liml import liml_estimator, liml
-from moirais.fn._containers import RegressionResult
+from morie.fn.liml import liml_estimator, liml
+from morie.fn._containers import RegressionResult
 
 
 class TestLIML:

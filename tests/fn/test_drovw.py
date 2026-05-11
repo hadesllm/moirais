@@ -1,7 +1,7 @@
 """Tests for drovw.dr_overlap_weighted."""
 import numpy as np
 import pytest
-from moirais.fn.drovw import dr_overlap_weighted
+from morie.fn.drovw import dr_overlap_weighted
 
 
 def test_drovw_basic():

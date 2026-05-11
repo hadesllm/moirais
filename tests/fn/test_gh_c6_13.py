@@ -1,7 +1,7 @@
 """Tests for gh_c6_13.ghosal_lecam_consist."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c6_13 import ghosal_lecam_consist
+from morie.fn.gh_c6_13 import ghosal_lecam_consist
 
 
 def test_gh_c6_13_basic():

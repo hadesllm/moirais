@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.clndn -- Concordance index."""
+"""Tests for morie.fn.clndn -- Concordance index."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.clndn import clndn
+from morie.fn.clndn import clndn
 
 
 @pytest.fixture()
@@ -39,5 +39,5 @@ def test_perfect_discrimination():
 
 
 def test_cheatsheet():
-    from moirais.fn.clndn import cheatsheet
+    from morie.fn.clndn import cheatsheet
     assert "concordance" in cheatsheet().lower()

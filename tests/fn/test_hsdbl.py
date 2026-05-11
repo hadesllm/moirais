@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hsdbl."""
+"""Tests for morie.fn.hsdbl."""
 
 import numpy as np
 import pytest
-from moirais.fn.hsdbl import hsdbl
+from morie.fn.hsdbl import hsdbl
 
 
 class TestHsdbl:

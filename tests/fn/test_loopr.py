@@ -1,7 +1,7 @@
 """Tests for loopr.loo_pareto_smooth."""
 import numpy as np
 import pytest
-from moirais.fn.loopr import loo_pareto_smooth
+from morie.fn.loopr import loo_pareto_smooth
 
 
 def test_loopr_basic():

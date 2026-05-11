@@ -1,7 +1,7 @@
 """Tests for spackf.schabenberger_autocorrelation_function."""
 import numpy as np
 import pytest
-from moirais.fn.spackf import schabenberger_autocorrelation_function
+from morie.fn.spackf import schabenberger_autocorrelation_function
 
 
 def test_spackf_basic():

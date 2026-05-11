@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zefhr -- Fay-Herriot small area estimator"""
+"""Tests for morie.fn.zefhr -- Fay-Herriot small area estimator"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zefhr import fay_herriot
+from morie.fn.zefhr import fay_herriot
 
 
 class TestFayHerriot:

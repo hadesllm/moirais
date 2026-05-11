@@ -1,6 +1,6 @@
 """Tests for min_distance_classify."""
 import numpy as np
-from moirais.fn.minnr import min_distance_classify, minnr
+from morie.fn.minnr import min_distance_classify, minnr
 
 
 def test_basic():

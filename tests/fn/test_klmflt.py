@@ -1,7 +1,7 @@
 """Tests for klmflt.kalman_filter."""
 import numpy as np
 import pytest
-from moirais.fn.klmflt import kalman_filter
+from morie.fn.klmflt import kalman_filter
 
 
 def test_klmflt_basic():

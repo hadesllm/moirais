@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.evals — E-value."""
+"""Tests for morie.fn.evals — E-value."""
 
 import pytest
 
-from moirais.fn.evals import e_value
+from morie.fn.evals import e_value
 
 
 class TestEValue:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.w -- Cohen's w for chi-squared."""
+"""Tests for morie.fn.w -- Cohen's w for chi-squared."""
 
 import pytest
-from moirais.fn.w import cohens_w
-from moirais.fn._containers import ESRes
+from morie.fn.w import cohens_w
+from morie.fn._containers import ESRes
 
 
 class TestCohensW:

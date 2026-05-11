@@ -1,6 +1,6 @@
 """Test adscf."""
 import pytest
-from moirais.fn.adscf import ads_cft_dictionary
+from morie.fn.adscf import ads_cft_dictionary
 
 
 def test_adscf_from_delta():

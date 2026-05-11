@@ -1,7 +1,7 @@
 """Tests for cluseq.sequence_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.cluseq import sequence_clustering
+from morie.fn.cluseq import sequence_clustering
 
 
 def test_cluseq_basic():

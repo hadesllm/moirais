@@ -1,6 +1,6 @@
 """Tests for lda_features."""
 import numpy as np
-from moirais.fn.ldafd import lda_features, ldafd
+from morie.fn.ldafd import lda_features, ldafd
 
 
 def test_basic():

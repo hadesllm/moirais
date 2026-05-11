@@ -1,7 +1,7 @@
 """Tests for sgnpw.sign_test_power."""
 import numpy as np
 import pytest
-from moirais.fn.sgnpw import sign_test_power
+from morie.fn.sgnpw import sign_test_power
 
 
 def test_sgnpw_basic():

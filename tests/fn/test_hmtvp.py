@@ -1,7 +1,7 @@
 """Tests for hmtvp.geron_torchvision_pretrained."""
 import numpy as np
 import pytest
-from moirais.fn.hmtvp import geron_torchvision_pretrained
+from morie.fn.hmtvp import geron_torchvision_pretrained
 
 
 def test_hmtvp_basic():

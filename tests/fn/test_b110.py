@@ -1,7 +1,7 @@
 """Tests for b110.burkov_lm_ch1_dataset_bce."""
 import numpy as np
 import pytest
-from moirais.fn.b110 import burkov_lm_ch1_dataset_bce
+from morie.fn.b110 import burkov_lm_ch1_dataset_bce
 
 
 def test_b110_basic():

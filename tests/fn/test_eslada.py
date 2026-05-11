@@ -1,7 +1,7 @@
 """Tests for eslada.esl_adaboost."""
 import numpy as np
 import pytest
-from moirais.fn.eslada import esl_adaboost
+from morie.fn.eslada import esl_adaboost
 
 
 def test_eslada_basic():

@@ -1,7 +1,7 @@
 """Tests for tmlqlc.tmle_qlearning."""
 import numpy as np
 import pytest
-from moirais.fn.tmlqlc import tmle_qlearning
+from morie.fn.tmlqlc import tmle_qlearning
 
 
 def test_tmlqlc_basic():

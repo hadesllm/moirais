@@ -1,7 +1,7 @@
 """Test pfsim."""
 import numpy as np
 import pytest
-from moirais.fn.pfsim import pfsim
+from morie.fn.pfsim import pfsim
 
 
 def test_pfsim_basic():

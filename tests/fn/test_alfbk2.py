@@ -1,7 +1,7 @@
 """Tests for alfbk2.alphafold_backbone."""
 import numpy as np
 import pytest
-from moirais.fn.alfbk2 import alphafold_backbone
+from morie.fn.alfbk2 import alphafold_backbone
 
 
 def test_alfbk2_basic():

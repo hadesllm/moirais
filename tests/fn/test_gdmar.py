@@ -1,7 +1,7 @@
 """Test gdmar."""
 import numpy as np
 import pytest
-from moirais.fn.gdmar import gdmar
+from morie.fn.gdmar import gdmar
 
 
 def test_gdmar_basic():

@@ -1,7 +1,7 @@
 """Tests for tqval.turboquant_value_cache_quantization."""
 import numpy as np
 import pytest
-from moirais.fn.tqval import turboquant_value_cache_quantization
+from morie.fn.tqval import turboquant_value_cache_quantization
 
 
 def test_tqval_basic():

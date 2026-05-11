@@ -1,7 +1,7 @@
 """Tests for tpspn.thin_plate_spline."""
 import numpy as np
 import pytest
-from moirais.fn.tpspn import thin_plate_spline
+from morie.fn.tpspn import thin_plate_spline
 
 
 def test_tpspn_basic():

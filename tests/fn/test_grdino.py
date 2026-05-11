@@ -1,7 +1,7 @@
 """Tests for grdino.geron_dino_self_distillation."""
 import numpy as np
 import pytest
-from moirais.fn.grdino import geron_dino_self_distillation
+from morie.fn.grdino import geron_dino_self_distillation
 
 
 def test_grdino_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.prdnt — Bootstrap prediction intervals."""
+"""Tests for morie.fn.prdnt — Bootstrap prediction intervals."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.prdnt import prediction_intervals, prdnt
+from morie.fn.prdnt import prediction_intervals, prdnt
 
 
 def test_returns_descriptive_result():

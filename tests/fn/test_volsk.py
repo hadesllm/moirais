@@ -1,7 +1,7 @@
 """Tests for volsk.vol_stochastic_kalman."""
 import numpy as np
 import pytest
-from moirais.fn.volsk import vol_stochastic_kalman
+from morie.fn.volsk import vol_stochastic_kalman
 
 
 def test_volsk_basic():

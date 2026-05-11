@@ -1,7 +1,7 @@
 """Test enpuf."""
 import numpy as np
 import pytest
-from moirais.fn.enpuf import enpuf
+from morie.fn.enpuf import enpuf
 
 
 def test_enpuf_basic():

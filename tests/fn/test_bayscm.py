@@ -1,7 +1,7 @@
 """Tests for bayscm.bayes_c_pi."""
 import numpy as np
 import pytest
-from moirais.fn.bayscm import bayes_c_pi
+from morie.fn.bayscm import bayes_c_pi
 
 
 def test_bayscm_basic():

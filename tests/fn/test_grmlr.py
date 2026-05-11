@@ -1,7 +1,7 @@
 """Tests for grmlr.geron_regression_mlp_output."""
 import numpy as np
 import pytest
-from moirais.fn.grmlr import geron_regression_mlp_output
+from morie.fn.grmlr import geron_regression_mlp_output
 
 
 def test_grmlr_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pssim."""
+"""Tests for morie.fn.pssim."""
 
 import numpy as np
 import pytest
-from moirais.fn.pssim import pssim
+from morie.fn.pssim import pssim
 
 
 class TestPssim:

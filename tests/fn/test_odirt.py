@@ -1,6 +1,6 @@
 """Test odirt."""
 import numpy as np
-from moirais.fn.odirt import ordinal_irt_estimate
+from morie.fn.odirt import ordinal_irt_estimate
 
 
 def test_odirt_basic():

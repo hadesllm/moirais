@@ -1,7 +1,7 @@
 """Tests for zaurts.zivot_andrews_unit_root."""
 import numpy as np
 import pytest
-from moirais.fn.zaurts import zivot_andrews_unit_root
+from morie.fn.zaurts import zivot_andrews_unit_root
 
 
 def test_zaurts_basic():

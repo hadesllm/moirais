@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svchy -- Cauchy kernel spatial voting"""
+"""Tests for morie.fn.svchy -- Cauchy kernel spatial voting"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svchy import cauchy_vote
+from morie.fn.svchy import cauchy_vote
 
 
 class TestCauchyVote:

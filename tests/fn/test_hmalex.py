@@ -1,7 +1,7 @@
 """Tests for hmalex.geron_alexnet."""
 import numpy as np
 import pytest
-from moirais.fn.hmalex import geron_alexnet
+from morie.fn.hmalex import geron_alexnet
 
 
 def test_hmalex_basic():

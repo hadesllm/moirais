@@ -1,7 +1,7 @@
 """Tests for agalfsy.alphazero_alphafold_synergy."""
 import numpy as np
 import pytest
-from moirais.fn.agalfsy import alphazero_alphafold_synergy
+from morie.fn.agalfsy import alphazero_alphafold_synergy
 
 
 def test_agalfsy_basic():

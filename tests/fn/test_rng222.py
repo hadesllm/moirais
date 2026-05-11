@@ -1,7 +1,7 @@
 """Tests for rng222.rangayyan_ch4_matched_filter_output_acf."""
 import numpy as np
 import pytest
-from moirais.fn.rng222 import rangayyan_ch4_matched_filter_output_acf
+from morie.fn.rng222 import rangayyan_ch4_matched_filter_output_acf
 
 
 def test_rng222_basic():

@@ -1,7 +1,7 @@
 """Tests for smcopt.sequential_mc."""
 import numpy as np
 import pytest
-from moirais.fn.smcopt import sequential_mc
+from morie.fn.smcopt import sequential_mc
 
 
 def test_smcopt_basic():

@@ -1,7 +1,7 @@
 """Test clcmp."""
 import numpy as np
 import pytest
-from moirais.fn.clcmp import clcmp
+from morie.fn.clcmp import clcmp
 
 
 def test_clcmp_basic():

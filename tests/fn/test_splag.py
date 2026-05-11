@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.splag — spatial lag model."""
+"""Tests for morie.fn.splag — spatial lag model."""
 import numpy as np
 import pytest
-from moirais.fn.splag import spatial_lag
+from morie.fn.splag import spatial_lag
 
 
 class TestSpatialLag:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptkfn -- Ripley's K-function"""
+"""Tests for morie.fn.ptkfn -- Ripley's K-function"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptkfn import k_function
+from morie.fn.ptkfn import k_function
 
 
 class TestKFunction:

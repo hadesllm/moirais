@@ -1,7 +1,7 @@
 """Tests for heinz.he_initialization."""
 import numpy as np
 import pytest
-from moirais.fn.heinz import he_initialization
+from morie.fn.heinz import he_initialization
 
 
 def test_heinz_basic():

@@ -1,7 +1,7 @@
 """Tests for grsil.geron_silhouette_score."""
 import numpy as np
 import pytest
-from moirais.fn.grsil import geron_silhouette_score
+from morie.fn.grsil import geron_silhouette_score
 
 
 def test_grsil_basic():

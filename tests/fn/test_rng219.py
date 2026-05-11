@@ -1,7 +1,7 @@
 """Tests for rng219.rangayyan_ch4_triangle_inequality_vectors."""
 import numpy as np
 import pytest
-from moirais.fn.rng219 import rangayyan_ch4_triangle_inequality_vectors
+from morie.fn.rng219 import rangayyan_ch4_triangle_inequality_vectors
 
 
 def test_rng219_basic():

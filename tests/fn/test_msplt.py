@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msplt -- MDS polarity detection"""
+"""Tests for morie.fn.msplt -- MDS polarity detection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msplt import mds_polarity
+from morie.fn.msplt import mds_polarity
 
 
 class TestMdsPolarity:

@@ -1,7 +1,7 @@
 """Test trped."""
 import numpy as np
 import pytest
-from moirais.fn.trped import trped
+from morie.fn.trped import trped
 
 
 def test_trped_basic():

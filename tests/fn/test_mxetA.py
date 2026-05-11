@@ -1,7 +1,7 @@
 """Tests for mxetA.max_exceedance_curve."""
 import numpy as np
 import pytest
-from moirais.fn.mxetA import max_exceedance_curve
+from morie.fn.mxetA import max_exceedance_curve
 
 
 def test_mxetA_basic():

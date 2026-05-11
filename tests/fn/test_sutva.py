@@ -1,7 +1,7 @@
 """Tests for sutva.sutva_assumption."""
 import numpy as np
 import pytest
-from moirais.fn.sutva import sutva_assumption
+from morie.fn.sutva import sutva_assumption
 
 
 def test_sutva_basic():

@@ -1,7 +1,7 @@
 """Tests for hedderich9u869.hedderich_chapter_9_unnumbered_869."""
 import numpy as np
 import pytest
-from moirais.fn.hedderich9u869 import hedderich_chapter_9_unnumbered_869
+from morie.fn.hedderich9u869 import hedderich_chapter_9_unnumbered_869
 
 
 def test_hedderich9u869_basic():

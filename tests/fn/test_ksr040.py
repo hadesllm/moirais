@@ -1,7 +1,7 @@
 """Tests for ksr040.kosorok_ch2_bootstrap_donsker_iff."""
 import numpy as np
 import pytest
-from moirais.fn.ksr040 import kosorok_ch2_bootstrap_donsker_iff
+from morie.fn.ksr040 import kosorok_ch2_bootstrap_donsker_iff
 
 
 def test_ksr040_basic():

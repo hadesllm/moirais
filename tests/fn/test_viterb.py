@@ -1,7 +1,7 @@
 """Tests for viterb.viterbi."""
 import numpy as np
 import pytest
-from moirais.fn.viterb import viterbi
+from morie.fn.viterb import viterbi
 
 
 def test_viterb_basic():

@@ -1,7 +1,7 @@
 """Tests for sigpep.signal_peptide."""
 import numpy as np
 import pytest
-from moirais.fn.sigpep import signal_peptide
+from morie.fn.sigpep import signal_peptide
 
 
 def test_sigpep_basic():

@@ -1,7 +1,7 @@
 """Tests for hmrsc.geron_randomized_search."""
 import numpy as np
 import pytest
-from moirais.fn.hmrsc import geron_randomized_search
+from morie.fn.hmrsc import geron_randomized_search
 
 
 def test_hmrsc_basic():

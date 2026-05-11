@@ -1,7 +1,7 @@
 """Tests for tmlsur.tmle_survival."""
 import numpy as np
 import pytest
-from moirais.fn.tmlsur import tmle_survival
+from morie.fn.tmlsur import tmle_survival
 
 
 def test_tmlsur_basic():

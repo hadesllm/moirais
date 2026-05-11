@@ -1,7 +1,7 @@
 """Tests for tcls.t_closeness."""
 import numpy as np
 import pytest
-from moirais.fn.tcls import t_closeness
+from morie.fn.tcls import t_closeness
 
 
 def test_tcls_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netcr — Partial correlation network."""
+"""Tests for morie.fn.netcr — Partial correlation network."""
 
 import numpy as np
 import pytest
-from moirais.fn.netcr import network_correlation
+from morie.fn.netcr import network_correlation
 
 
 class TestNetworkCorrelation:

@@ -1,7 +1,7 @@
 """Tests for dpexpm.dp_exponential_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.dpexpm import dp_exponential_mechanism
+from morie.fn.dpexpm import dp_exponential_mechanism
 
 
 def test_dpexpm_basic():

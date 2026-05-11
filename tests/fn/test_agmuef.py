@@ -1,7 +1,7 @@
 """Tests for agmuef.muzero_efficient_exploration."""
 import numpy as np
 import pytest
-from moirais.fn.agmuef import muzero_efficient_exploration
+from morie.fn.agmuef import muzero_efficient_exploration
 
 
 def test_agmuef_basic():

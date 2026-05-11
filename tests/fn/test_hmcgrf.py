@@ -1,7 +1,7 @@
 """Tests for hmcgrf.geron_computational_graph."""
 import numpy as np
 import pytest
-from moirais.fn.hmcgrf import geron_computational_graph
+from morie.fn.hmcgrf import geron_computational_graph
 
 
 def test_hmcgrf_basic():

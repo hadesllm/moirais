@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgind -- Indicator kriging"""
+"""Tests for morie.fn.kgind -- Indicator kriging"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgind import indicator_kriging
+from morie.fn.kgind import indicator_kriging
 
 
 class TestIndicatorKriging:

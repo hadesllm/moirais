@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zecon -- Concentration index spatial"""
+"""Tests for morie.fn.zecon -- Concentration index spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zecon import concentration_idx
+from morie.fn.zecon import concentration_idx
 
 
 class TestConcentrationIdx:

@@ -1,7 +1,7 @@
 """Tests for svdd.svdd."""
 import numpy as np
 import pytest
-from moirais.fn.svdd import svdd
+from morie.fn.svdd import svdd
 
 
 def test_svdd_basic():

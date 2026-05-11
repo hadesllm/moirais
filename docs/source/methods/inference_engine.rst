@@ -1,9 +1,9 @@
-MOIRAIS Inference Engine
+MORIE Inference Engine
 ========================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS includes its own LLM inference engine — independent of Ollama,
+MORIE includes its own LLM inference engine — independent of Ollama,
 llama.cpp, or HuggingFace. This gives full control over the inference
 pipeline, including TurboQuant KV-cache compression and MLX GPU
 acceleration on Apple Silicon.
@@ -14,7 +14,7 @@ Architecture
 .. code-block:: text
 
    ┌────────────────────────────────────────────────────┐
-   │                   MOIRAISEngine                    │
+   │                   MORIEEngine                    │
    │                                                    │
    │  ┌──────────┐   ┌──────────┐   ┌───────────┐       │
    │  │ GGUFModel│   │ Tokenizer│   │ TurboQuant│       │
@@ -44,12 +44,12 @@ Components
 MLX Integration — Apple Silicon GPU
 ------------------------------------
 
-MOIRAIS's inference engine detects MLX at import time and uses it for
+MORIE's inference engine detects MLX at import time and uses it for
 GPU-accelerated matrix operations on Apple Silicon (M1/M2/M3/M4):
 
 .. code-block:: python
 
-   from moirais.engine import backend
+   from morie.engine import backend
    print(backend())  # 'mlx' on Python 3.14 with MLX, 'numpy' otherwise
 
 **Setup:**
@@ -66,15 +66,15 @@ GPU-accelerated matrix operations on Apple Silicon (M1/M2/M3/M4):
 - **NumPy path** (``.venv/``): CPU fallback, works on Python 3.15 and all platforms.
 - KV-cache compression always uses NumPy (TurboQuant is NumPy-based).
 
-This follows the same pattern as the vendored modules (``moirais.fam``,
-``moirais.emissions``) — optional acceleration with zero-dependency fallback.
+This follows the same pattern as the vendored modules (``morie.fam``,
+``morie.emissions``) — optional acceleration with zero-dependency fallback.
 
 Five integration paths for TurboQuant on macOS (per Hannecke 2026):
 
 - **Path A: mlx-optiq** — drop-in ``TurboQuantKVCache`` for mlx-lm. Informed our design.
 - **Path B: tqkv benchmark** — CLI benchmarking tool. Referenced for validation.
 - **Path C: llama.cpp TBQ** — native GGML types (PR #21089). Pending upstream merge.
-- **Path D: oMLX** — menu-bar inference server. Not applicable to MOIRAIS.
+- **Path D: oMLX** — menu-bar inference server. Not applicable to MORIE.
 - **Path E: QJL 1-bit PoC** — outlier tracking + sign quantization. Implemented in ``quant.py``.
 
 C Kernel Acceleration
@@ -94,7 +94,7 @@ on macOS for hardware-tuned SIMD:
 
 .. code-block:: python
 
-   from moirais.engine_bridge import is_available, matvec, rmsnorm
+   from morie.engine_bridge import is_available, matvec, rmsnorm
    print(is_available())  # True if .dylib/.so compiled
 
    # Accelerate.framework BLAS for matmul
@@ -121,7 +121,7 @@ Successfully parses real Ollama model files, now with Q4_K dequantization:
 
 .. code-block:: python
 
-   from moirais.gguf_loader import GGUFModel
+   from morie.gguf_loader import GGUFModel
 
    model = GGUFModel("~/.ollama/models/blobs/sha256-...")
    print(model.config)
@@ -149,8 +149,8 @@ without requiring SentencePiece at runtime:
 
 .. code-block:: python
 
-   from moirais.tokenizer import Tokenizer
-   from moirais.gguf_loader import GGUFModel
+   from morie.tokenizer import Tokenizer
+   from morie.gguf_loader import GGUFModel
 
    model = GGUFModel("path/to/model.gguf")
    tok = Tokenizer(gguf_model=model)
@@ -165,9 +165,9 @@ Engine — Forward Pass
 
 .. code-block:: python
 
-   from moirais.engine import MOIRAISEngine
+   from morie.engine import MORIEEngine
 
-   engine = MOIRAISEngine("path/to/model.gguf", kv_bits=3)
+   engine = MORIEEngine("path/to/model.gguf", kv_bits=3)
    result = engine.generate("The capital of France is", max_tokens=20)
    print(result.text)
    print(f"{result.tokens_per_second:.1f} tok/s")

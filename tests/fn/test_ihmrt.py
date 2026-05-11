@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ihmrt -- indigenous mortality."""
+"""Tests for morie.fn.ihmrt -- indigenous mortality."""
 
 import pytest
-from moirais.fn.ihmrt import indigenous_mortality
+from morie.fn.ihmrt import indigenous_mortality
 
 
 class TestIndigenousMortality:

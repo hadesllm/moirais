@@ -1,7 +1,7 @@
 """Tests for rbfreg."""
 import numpy as np
 import pytest
-from moirais.fn.rbfreg import rbfreg
+from morie.fn.rbfreg import rbfreg
 
 
 def test_rbfreg_basic():
@@ -27,5 +27,5 @@ def test_rbfreg_no_data():
 
 
 def test_rbfreg_alias():
-    from moirais.fn.rbfreg import rbfreg
+    from morie.fn.rbfreg import rbfreg
     assert rbfreg is rbfreg

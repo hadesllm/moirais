@@ -1,7 +1,7 @@
 """Test afwndb."""
 import numpy as np
 import pytest
-from moirais.fn.afwndb import afwndb
+from morie.fn.afwndb import afwndb
 
 
 def test_afwndb_basic():

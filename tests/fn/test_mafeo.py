@@ -1,7 +1,7 @@
 """Test mafeo."""
 import numpy as np
 import pytest
-from moirais.fn.mafeo import mafeo
+from morie.fn.mafeo import mafeo
 
 
 def test_mafeo_basic():

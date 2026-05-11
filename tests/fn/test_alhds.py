@@ -1,7 +1,7 @@
 """Tests for alhds.alammar_hdbscan_cluster."""
 import numpy as np
 import pytest
-from moirais.fn.alhds import alammar_hdbscan_cluster
+from morie.fn.alhds import alammar_hdbscan_cluster
 
 
 def test_alhds_basic():

@@ -1,7 +1,7 @@
 """Tests for mlwz.multilevel_within_cluster_z."""
 import numpy as np
 import pytest
-from moirais.fn.mlwz import multilevel_within_cluster_z
+from morie.fn.mlwz import multilevel_within_cluster_z
 
 
 def test_mlwz_basic():

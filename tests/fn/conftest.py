@@ -1,4 +1,4 @@
-"""Shared fixtures for moirais.fn tests.
+"""Shared fixtures for morie.fn tests.
 
 'He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche'
 """

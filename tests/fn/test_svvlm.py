@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svvlm -- Valence advantage model (Groseclose)"""
+"""Tests for morie.fn.svvlm -- Valence advantage model (Groseclose)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svvlm import valence_model
+from morie.fn.svvlm import valence_model
 
 
 class TestValenceModel:

@@ -1,7 +1,7 @@
 """Tests for rgswtden.rangayyan_swt_denoise."""
 import numpy as np
 import pytest
-from moirais.fn.rgswtden import rangayyan_swt_denoise
+from morie.fn.rgswtden import rangayyan_swt_denoise
 
 
 def test_rgswtden_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzkd2.horowitz_multivariate_kde."""
 import numpy as np
 import pytest
-from moirais.fn.hrzkd2 import horowitz_multivariate_kde
+from morie.fn.hrzkd2 import horowitz_multivariate_kde
 
 
 def test_hrzkd2_basic():

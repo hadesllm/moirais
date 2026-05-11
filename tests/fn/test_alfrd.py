@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.alfrd -- Cook's distance."""
+"""Tests for morie.fn.alfrd -- Cook's distance."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.alfrd import cooks_distance, alfrd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.alfrd import cooks_distance, alfrd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAlfrd:

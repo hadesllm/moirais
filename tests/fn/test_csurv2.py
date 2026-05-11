@@ -1,7 +1,7 @@
 """Tests for csurv2.causal_survival_blp."""
 import numpy as np
 import pytest
-from moirais.fn.csurv2 import causal_survival_blp
+from morie.fn.csurv2 import causal_survival_blp
 
 
 def test_csurv2_basic():

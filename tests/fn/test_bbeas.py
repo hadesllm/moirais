@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bbeas -- Procrustes shape analysis."""
+"""Tests for morie.fn.bbeas -- Procrustes shape analysis."""
 
 import numpy as np
-from moirais.fn.bbeas import procrustes_shape, bbeas
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bbeas import procrustes_shape, bbeas
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBbeas:

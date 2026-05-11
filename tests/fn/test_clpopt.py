@@ -1,7 +1,7 @@
 """Tests for clpopt.clp_lp."""
 import numpy as np
 import pytest
-from moirais.fn.clpopt import clp_lp
+from morie.fn.clpopt import clp_lp
 
 
 def test_clpopt_basic():

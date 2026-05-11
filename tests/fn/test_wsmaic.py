@@ -1,7 +1,7 @@
 """Tests for wsmaic.wasserman_aic."""
 import numpy as np
 import pytest
-from moirais.fn.wsmaic import wasserman_aic
+from morie.fn.wsmaic import wasserman_aic
 
 
 def test_wsmaic_basic():

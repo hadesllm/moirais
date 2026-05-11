@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.epkrn — Epanechnikov kernel."""
+"""Tests for morie.fn.epkrn — Epanechnikov kernel."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.epkrn import epkrn
+from morie.fn.epkrn import epkrn
 
 
 class TestEpkrn:

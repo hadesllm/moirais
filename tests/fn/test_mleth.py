@@ -1,7 +1,7 @@
 """Tests for mleth.mle_theta_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.mleth import mle_theta_estimator
+from morie.fn.mleth import mle_theta_estimator
 
 
 def test_mleth_basic():

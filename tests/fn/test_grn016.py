@@ -1,7 +1,7 @@
 """Tests for grn016.geron_ch4_logistic_regression_prediction."""
 import numpy as np
 import pytest
-from moirais.fn.grn016 import geron_ch4_logistic_regression_prediction
+from morie.fn.grn016 import geron_ch4_logistic_regression_prediction
 
 
 def test_grn016_basic():

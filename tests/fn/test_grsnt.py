@@ -1,7 +1,7 @@
 """Tests for grsnt.geron_sentiment_binary."""
 import numpy as np
 import pytest
-from moirais.fn.grsnt import geron_sentiment_binary
+from morie.fn.grsnt import geron_sentiment_binary
 
 
 def test_grsnt_basic():

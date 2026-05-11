@@ -1,7 +1,7 @@
 """Test mtres."""
 import numpy as np
 import pytest
-from moirais.fn.mtres import mtres
+from morie.fn.mtres import mtres
 
 
 def test_mtres_basic():

@@ -1,7 +1,7 @@
 """Tests for voljmp.vol_jump_test_bnshep."""
 import numpy as np
 import pytest
-from moirais.fn.voljmp import vol_jump_test_bnshep
+from morie.fn.voljmp import vol_jump_test_bnshep
 
 
 def test_voljmp_basic():

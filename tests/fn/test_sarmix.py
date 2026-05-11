@@ -1,7 +1,7 @@
 """Tests for sarmix.spatial_ar_combined."""
 import numpy as np
 import pytest
-from moirais.fn.sarmix import spatial_ar_combined
+from morie.fn.sarmix import spatial_ar_combined
 
 
 def test_sarmix_basic():

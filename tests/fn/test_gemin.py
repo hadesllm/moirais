@@ -1,7 +1,7 @@
 """Test gemin."""
 import numpy as np
 import pytest
-from moirais.fn.gemin import gemin
+from morie.fn.gemin import gemin
 
 
 def test_gemin_basic():

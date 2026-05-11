@@ -1,7 +1,7 @@
 """Tests for sgtegap.sgt_eigengap_heuristic."""
 import numpy as np
 import pytest
-from moirais.fn.sgtegap import sgt_eigengap_heuristic
+from morie.fn.sgtegap import sgt_eigengap_heuristic
 
 
 def test_sgtegap_basic():

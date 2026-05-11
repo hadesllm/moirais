@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zefhu -- Unit-level Fay-Herriot"""
+"""Tests for morie.fn.zefhu -- Unit-level Fay-Herriot"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zefhu import fay_herriot_unit
+from morie.fn.zefhu import fay_herriot_unit
 
 
 class TestFayHerriotUnit:

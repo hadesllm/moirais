@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.elimp."""
+"""Tests for morie.fn.elimp."""
 
 import numpy as np
 import pytest
-from moirais.fn.elimp import elimp
+from morie.fn.elimp import elimp
 
 
 class TestElimp:

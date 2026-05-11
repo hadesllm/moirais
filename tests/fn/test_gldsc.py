@@ -3,7 +3,7 @@ Tests for golden section search.
 """
 
 import numpy as np
-from moirais.fn.gldsc import gldsc
+from morie.fn.gldsc import gldsc
 
 
 class TestGldsc:

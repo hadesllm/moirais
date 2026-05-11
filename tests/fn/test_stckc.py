@@ -1,7 +1,7 @@
 """Test stacking_classify (stckc)."""
 import numpy as np
-from moirais.fn.stckc import stacking_classify, stckc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.stckc import stacking_classify, stckc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStckc:

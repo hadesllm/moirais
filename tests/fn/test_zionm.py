@@ -1,8 +1,8 @@
 """Nature does not hurry, yet everything is accomplished. — Lao Tzu"""
 
 import numpy as np
-from moirais.fn.zionm import defense_allocation, zionm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.zionm import defense_allocation, zionm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestZionm:

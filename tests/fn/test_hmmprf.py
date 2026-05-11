@@ -1,7 +1,7 @@
 """Tests for hmmprf.hmm_profile."""
 import numpy as np
 import pytest
-from moirais.fn.hmmprf import hmm_profile
+from morie.fn.hmmprf import hmm_profile
 
 
 def test_hmmprf_basic():

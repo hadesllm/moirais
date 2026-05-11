@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dtaic."""
+"""Tests for morie.fn.dtaic."""
 
 import numpy as np
 import pytest
-from moirais.fn.dtaic import dtaic
+from morie.fn.dtaic import dtaic
 
 
 class TestDtaic:

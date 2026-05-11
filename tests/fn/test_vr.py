@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vr -- variance ratio (F-test)."""
+"""Tests for morie.fn.vr -- variance ratio (F-test)."""
 
 import numpy as np
 import pytest
-from moirais.fn.vr import variance_ratio
+from morie.fn.vr import variance_ratio
 
 
 class TestVarianceRatio:

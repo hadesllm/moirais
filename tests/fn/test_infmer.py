@@ -1,7 +1,7 @@
 """Tests for infmer.informer."""
 import numpy as np
 import pytest
-from moirais.fn.infmer import informer
+from morie.fn.infmer import informer
 
 
 def test_infmer_basic():

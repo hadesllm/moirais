@@ -1,7 +1,7 @@
 """Tests for km014.kamath_ch2_positional_encoding_cos."""
 import numpy as np
 import pytest
-from moirais.fn.km014 import kamath_ch2_positional_encoding_cos
+from morie.fn.km014 import kamath_ch2_positional_encoding_cos
 
 
 def test_km014_basic():

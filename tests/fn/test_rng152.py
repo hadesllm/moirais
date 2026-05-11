@@ -1,7 +1,7 @@
 """Tests for rng152.rangayyan_ch3_wiener_frequency_response_snr_form."""
 import numpy as np
 import pytest
-from moirais.fn.rng152 import rangayyan_ch3_wiener_frequency_response_snr_form
+from morie.fn.rng152 import rangayyan_ch3_wiener_frequency_response_snr_form
 
 
 def test_rng152_basic():

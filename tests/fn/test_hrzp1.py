@@ -1,7 +1,7 @@
 """Tests for hrzp1.horowitz_plr_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.hrzp1 import horowitz_plr_estimator
+from morie.fn.hrzp1 import horowitz_plr_estimator
 
 
 def test_hrzp1_basic():

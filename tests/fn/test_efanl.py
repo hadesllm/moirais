@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.efanl -- Exploratory factor analysis (PAF)."""
+"""Tests for morie.fn.efanl -- Exploratory factor analysis (PAF)."""
 
 import numpy as np
-from moirais.fn.efanl import efa_principal_axis, efanl
-from moirais.fn._containers import FaRes
+from morie.fn.efanl import efa_principal_axis, efanl
+from morie.fn._containers import FaRes
 
 
 class TestEfaPrincipalAxis:

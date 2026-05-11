@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptrpl -- Ripley edge correction"""
+"""Tests for morie.fn.ptrpl -- Ripley edge correction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptrpl import ripley_correction
+from morie.fn.ptrpl import ripley_correction
 
 
 class TestRipleyCorrection:

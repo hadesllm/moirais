@@ -1,7 +1,7 @@
 """Test matched_filter_bank (mtchb)."""
 import numpy as np
-from moirais.fn.mtchb import matched_filter_bank, mtchb
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtchb import matched_filter_bank, mtchb
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMatchedFilterBank:

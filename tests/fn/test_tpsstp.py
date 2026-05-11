@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tpsstp — stop and search."""
+"""Tests for morie.fn.tpsstp — stop and search."""
 
 import pytest
-from moirais.fn.tpsstp import tps_stop_and_search
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tpsstp import tps_stop_and_search
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStopAndSearch:

@@ -1,7 +1,7 @@
 """Tests for otcw.ot_cyclical_weight."""
 import numpy as np
 import pytest
-from moirais.fn.otcw import ot_cyclical_weight
+from morie.fn.otcw import ot_cyclical_weight
 
 
 def test_otcw_basic():

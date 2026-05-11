@@ -1,7 +1,7 @@
 """Tests for socpts.second_order_cone."""
 import numpy as np
 import pytest
-from moirais.fn.socpts import second_order_cone
+from morie.fn.socpts import second_order_cone
 
 
 def test_socpts_basic():

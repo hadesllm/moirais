@@ -1,7 +1,7 @@
 """Tests for luvR.louvain."""
 import numpy as np
 import pytest
-from moirais.fn.luvR import louvain
+from morie.fn.luvR import louvain
 
 
 def test_luvR_basic():

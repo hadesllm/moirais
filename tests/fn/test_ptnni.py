@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptnni -- Nearest neighbor index (Clark-Evans)"""
+"""Tests for morie.fn.ptnni -- Nearest neighbor index (Clark-Evans)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptnni import nn_index
+from morie.fn.ptnni import nn_index
 
 
 class TestNnIndex:

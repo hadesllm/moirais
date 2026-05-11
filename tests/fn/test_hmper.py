@@ -1,7 +1,7 @@
 """Tests for hmper.geron_prioritized_replay."""
 import numpy as np
 import pytest
-from moirais.fn.hmper import geron_prioritized_replay
+from morie.fn.hmper import geron_prioritized_replay
 
 
 def test_hmper_basic():

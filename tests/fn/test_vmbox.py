@@ -1,7 +1,7 @@
 """Test vmbox."""
 import numpy as np
 import pytest
-from moirais.fn.vmbox import vmbox
+from morie.fn.vmbox import vmbox
 
 
 def test_vmbox_basic():

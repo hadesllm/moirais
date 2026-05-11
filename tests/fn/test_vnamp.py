@@ -1,6 +1,6 @@
 """Test vnamp."""
 import pytest
-from moirais.fn.vnamp import veneziano_amplitude
+from morie.fn.vnamp import veneziano_amplitude
 
 
 def test_vnamp_basic():

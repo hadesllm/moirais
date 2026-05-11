@@ -1,7 +1,7 @@
 """Tests for rng215.rangayyan_ch4_snr_normalized_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.rng215 import rangayyan_ch4_snr_normalized_ratio
+from morie.fn.rng215 import rangayyan_ch4_snr_normalized_ratio
 
 
 def test_rng215_basic():

@@ -1,7 +1,7 @@
 """Tests for pacsam.sample_partial_autocorr."""
 import numpy as np
 import pytest
-from moirais.fn.pacsam import sample_partial_autocorr
+from morie.fn.pacsam import sample_partial_autocorr
 
 
 def test_pacsam_basic():

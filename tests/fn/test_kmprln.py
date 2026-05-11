@@ -1,7 +1,7 @@
 """Tests for kmprln.kamath_pre_ln_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.kmprln import kamath_pre_ln_transformer
+from morie.fn.kmprln import kamath_pre_ln_transformer
 
 
 def test_kmprln_basic():

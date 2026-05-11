@@ -1,7 +1,7 @@
 """Tests for kmgrnd.kamath_groundedness_reward."""
 import numpy as np
 import pytest
-from moirais.fn.kmgrnd import kamath_groundedness_reward
+from morie.fn.kmgrnd import kamath_groundedness_reward
 
 
 def test_kmgrnd_basic():

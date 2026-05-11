@@ -1,7 +1,7 @@
 """Test folcsc."""
 import numpy as np
 import pytest
-from moirais.fn.folcsc import folcsc
+from morie.fn.folcsc import folcsc
 
 
 def test_folcsc_basic():

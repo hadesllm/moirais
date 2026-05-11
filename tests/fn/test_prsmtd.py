@@ -1,7 +1,7 @@
 """Tests for prsmtd.propensity_score_method."""
 import numpy as np
 import pytest
-from moirais.fn.prsmtd import propensity_score_method
+from morie.fn.prsmtd import propensity_score_method
 
 
 def test_prsmtd_basic():

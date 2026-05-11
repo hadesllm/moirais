@@ -1,7 +1,7 @@
 """Tests for wsmcrl.wasserman_cramer_rao."""
 import numpy as np
 import pytest
-from moirais.fn.wsmcrl import wasserman_cramer_rao
+from morie.fn.wsmcrl import wasserman_cramer_rao
 
 
 def test_wsmcrl_basic():

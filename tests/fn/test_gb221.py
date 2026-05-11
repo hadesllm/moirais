@@ -1,7 +1,7 @@
 """Tests for gb221.gibbons_quantile_deriv."""
 import numpy as np
 import pytest
-from moirais.fn.gb221 import gibbons_quantile_deriv
+from morie.fn.gb221 import gibbons_quantile_deriv
 
 
 def test_gb221_basic():

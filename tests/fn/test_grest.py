@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.grest -- Gehan-Breslow test."""
+"""Tests for morie.fn.grest -- Gehan-Breslow test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.grest import grest
+from morie.fn.grest import grest
 
 
 @pytest.fixture()
@@ -44,5 +44,5 @@ def test_wrong_groups():
 
 
 def test_cheatsheet():
-    from moirais.fn.grest import cheatsheet
+    from morie.fn.grest import cheatsheet
     assert "gehan" in cheatsheet().lower()

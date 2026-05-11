@@ -1,7 +1,7 @@
 """Tests for use_r11e3.use_r_chapter_11_equation_3."""
 import numpy as np
 import pytest
-from moirais.fn.use_r11e3 import use_r_chapter_11_equation_3
+from morie.fn.use_r11e3 import use_r_chapter_11_equation_3
 
 
 def test_use_r11e3_basic():

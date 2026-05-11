@@ -1,7 +1,7 @@
 """Tests for msmpoi.msm_poisson."""
 import numpy as np
 import pytest
-from moirais.fn.msmpoi import msm_poisson
+from morie.fn.msmpoi import msm_poisson
 
 
 def test_msmpoi_basic():

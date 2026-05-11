@@ -1,7 +1,7 @@
 """Test folidr."""
 import numpy as np
 import pytest
-from moirais.fn.folidr import folidr
+from morie.fn.folidr import folidr
 
 
 def test_folidr_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.chcap — channel capacity."""
+"""Tests for morie.fn.chcap — channel capacity."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.chcap import chcap
+from morie.fn.chcap import chcap
 
 
 class TestChcap:

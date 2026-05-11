@@ -1,7 +1,7 @@
 """Test tsstg2."""
 import numpy as np
 import pytest
-from moirais.fn.tsstg2 import tsstg2
+from morie.fn.tsstg2 import tsstg2
 
 
 def test_tsstg2_basic():

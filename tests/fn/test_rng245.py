@@ -1,7 +1,7 @@
 """Tests for rng245.rangayyan_ch4_complex_cepstrum_decay_bound."""
 import numpy as np
 import pytest
-from moirais.fn.rng245 import rangayyan_ch4_complex_cepstrum_decay_bound
+from morie.fn.rng245 import rangayyan_ch4_complex_cepstrum_decay_bound
 
 
 def test_rng245_basic():

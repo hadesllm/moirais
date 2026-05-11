@@ -1,7 +1,7 @@
 """Tests for sgflrt.spatial_glmm_fit."""
 import numpy as np
 import pytest
-from moirais.fn.sgflrt import spatial_glmm_fit
+from morie.fn.sgflrt import spatial_glmm_fit
 
 
 def test_sgflrt_basic():

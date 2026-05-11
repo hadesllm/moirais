@@ -1,7 +1,7 @@
 """Test vmlin."""
 import numpy as np
 import pytest
-from moirais.fn.vmlin import vmlin
+from morie.fn.vmlin import vmlin
 
 
 def test_vmlin_basic():

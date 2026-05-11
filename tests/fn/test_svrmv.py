@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svrmv -- Rabinowitz-Macdonald intensity component"""
+"""Tests for morie.fn.svrmv -- Rabinowitz-Macdonald intensity component"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svrmv import rm_intensity
+from morie.fn.svrmv import rm_intensity
 
 
 class TestRmIntensity:

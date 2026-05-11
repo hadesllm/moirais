@@ -1,7 +1,7 @@
 """Tests for volmsg.vol_markov_switching_garch."""
 import numpy as np
 import pytest
-from moirais.fn.volmsg import vol_markov_switching_garch
+from morie.fn.volmsg import vol_markov_switching_garch
 
 
 def test_volmsg_basic():

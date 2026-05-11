@@ -1,7 +1,7 @@
 """Test srbtb."""
 import numpy as np
 import pytest
-from moirais.fn.srbtb import srbtb
+from morie.fn.srbtb import srbtb
 
 
 def test_srbtb_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgaic -- Variogram model AIC"""
+"""Tests for morie.fn.vgaic -- Variogram model AIC"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgaic import vario_aic
+from morie.fn.vgaic import vario_aic
 
 
 class TestVarioAic:

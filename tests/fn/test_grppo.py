@@ -1,7 +1,7 @@
 """Tests for grppo.geron_ppo_clipped_objective."""
 import numpy as np
 import pytest
-from moirais.fn.grppo import geron_ppo_clipped_objective
+from morie.fn.grppo import geron_ppo_clipped_objective
 
 
 def test_grppo_basic():

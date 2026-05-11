@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dbind -- Davies-Bouldin index."""
+"""Tests for morie.fn.dbind -- Davies-Bouldin index."""
 
 import numpy as np
-from moirais.fn.dbind import davies_bouldin, dbind
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dbind import davies_bouldin, dbind
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDaviesBouldin:

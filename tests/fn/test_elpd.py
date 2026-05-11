@@ -1,7 +1,7 @@
 """Test elpd."""
 import numpy as np
 import pytest
-from moirais.fn.elpd import expected_log_pred
+from morie.fn.elpd import expected_log_pred
 
 
 def test_elpd_basic():

@@ -1,7 +1,7 @@
 """Tests for ascmcl.augmented_synthetic_control."""
 import numpy as np
 import pytest
-from moirais.fn.ascmcl import augmented_synthetic_control
+from morie.fn.ascmcl import augmented_synthetic_control
 
 
 def test_ascmcl_basic():

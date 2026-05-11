@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.grwrt -- population growth rate."""
+"""Tests for morie.fn.grwrt -- population growth rate."""
 
 import pytest
-from moirais.fn.grwrt import population_growth_rate
+from morie.fn.grwrt import population_growth_rate
 
 
 class TestPopGrowthRate:

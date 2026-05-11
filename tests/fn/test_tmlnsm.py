@@ -1,7 +1,7 @@
 """Tests for tmlnsm.tmle_non_smooth."""
 import numpy as np
 import pytest
-from moirais.fn.tmlnsm import tmle_non_smooth
+from morie.fn.tmlnsm import tmle_non_smooth
 
 
 def test_tmlnsm_basic():

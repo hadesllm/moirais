@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.otrd — OTIS trend summary."""
+"""Tests for morie.fn.otrd — OTIS trend summary."""
 
 import pandas as pd
-from moirais.fn.otrd import otis_trend_summary
+from morie.fn.otrd import otis_trend_summary
 
 
 class TestOtisTrendSummary:

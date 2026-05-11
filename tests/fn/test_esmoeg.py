@@ -1,7 +1,7 @@
 """Tests for esmoeg.esem_target_rotation."""
 import numpy as np
 import pytest
-from moirais.fn.esmoeg import esem_target_rotation
+from morie.fn.esmoeg import esem_target_rotation
 
 
 def test_esmoeg_basic():

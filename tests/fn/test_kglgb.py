@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kglgb -- Lognormal kriging back-transform"""
+"""Tests for morie.fn.kglgb -- Lognormal kriging back-transform"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kglgb import lk_backtransform
+from morie.fn.kglgb import lk_backtransform
 
 
 class TestLkBacktransform:

@@ -1,7 +1,7 @@
 """Tests for hmrnfc.geron_reinforce."""
 import numpy as np
 import pytest
-from moirais.fn.hmrnfc import geron_reinforce
+from morie.fn.hmrnfc import geron_reinforce
 
 
 def test_hmrnfc_basic():

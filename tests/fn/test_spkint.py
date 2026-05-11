@@ -1,7 +1,7 @@
 """Tests for spkint.spike_information."""
 import numpy as np
 import pytest
-from moirais.fn.spkint import spike_information
+from morie.fn.spkint import spike_information
 
 
 def test_spkint_basic():

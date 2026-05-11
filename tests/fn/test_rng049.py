@@ -1,7 +1,7 @@
 """Tests for rng049.rangayyan_ch3_laplace_transform_causal_finite."""
 import numpy as np
 import pytest
-from moirais.fn.rng049 import rangayyan_ch3_laplace_transform_causal_finite
+from morie.fn.rng049 import rangayyan_ch3_laplace_transform_causal_finite
 
 
 def test_rng049_basic():

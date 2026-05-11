@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.youdj — Youden's J statistic."""
+"""Tests for morie.fn.youdj — Youden's J statistic."""
 import numpy as np
 import pytest
-from moirais.fn.youdj import youdens_j, youdj
+from morie.fn.youdj import youdens_j, youdj
 
 
 def test_perfect():

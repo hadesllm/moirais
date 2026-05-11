@@ -1,7 +1,7 @@
 """Tests for ridgrg.ridge_regression."""
 import numpy as np
 import pytest
-from moirais.fn.ridgrg import ridge_regression
+from morie.fn.ridgrg import ridge_regression
 
 
 def test_ridgrg_basic():

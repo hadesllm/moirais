@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.lglbl -- label legislators."""
+"""Tests for morie.fn.lglbl -- label legislators."""
 import numpy as np
-from moirais.fn.lglbl import label_legislators, lglbl
+from morie.fn.lglbl import label_legislators, lglbl
 
 
 def test_alias():

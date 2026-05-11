@@ -1,7 +1,7 @@
 """Test mhsim."""
 import numpy as np
 import pytest
-from moirais.fn.mhsim import mhsim
+from morie.fn.mhsim import mhsim
 
 
 def test_mhsim_basic():

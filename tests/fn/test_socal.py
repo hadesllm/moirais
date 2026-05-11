@@ -1,7 +1,7 @@
 """Test socal."""
 import numpy as np
 import pytest
-from moirais.fn.socal import socal
+from morie.fn.socal import socal
 
 
 def test_socal_basic():

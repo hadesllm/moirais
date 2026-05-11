@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msflp -- MDS configuration flip check"""
+"""Tests for morie.fn.msflp -- MDS configuration flip check"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msflp import mds_flip
+from morie.fn.msflp import mds_flip
 
 
 class TestMdsFlip:

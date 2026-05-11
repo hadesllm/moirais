@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 
-from moirais.fn.jksmp import jksmp, jackknife_estimate
+from morie.fn.jksmp import jksmp, jackknife_estimate
 
 
 def test_jksmp_returns_dict():

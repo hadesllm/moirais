@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.plam — plot A-M summary."""
+"""Tests for morie.fn.plam — plot A-M summary."""
 import numpy as np
-from moirais.fn.plam import plam
+from morie.fn.plam import plam
 
 
 def test_plam_smoke():

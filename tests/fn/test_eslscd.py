@@ -1,7 +1,7 @@
 """Tests for eslscd.esl_sparse_pca."""
 import numpy as np
 import pytest
-from moirais.fn.eslscd import esl_sparse_pca
+from morie.fn.eslscd import esl_sparse_pca
 
 
 def test_eslscd_basic():

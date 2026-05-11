@@ -1,7 +1,7 @@
 """Tests for rgwav.rangayyan_wavelet_denoise."""
 import numpy as np
 import pytest
-from moirais.fn.rgwav import rangayyan_wavelet_denoise
+from morie.fn.rgwav import rangayyan_wavelet_denoise
 
 
 def test_rgwav_basic():

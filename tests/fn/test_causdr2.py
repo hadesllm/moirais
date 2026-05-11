@@ -1,7 +1,7 @@
 """Tests for causdr2.causal_dr_orthogonal."""
 import numpy as np
 import pytest
-from moirais.fn.causdr2 import causal_dr_orthogonal
+from morie.fn.causdr2 import causal_dr_orthogonal
 
 
 def test_causdr2_basic():

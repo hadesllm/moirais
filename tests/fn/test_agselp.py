@@ -1,7 +1,7 @@
 """Tests for agselp.alphazero_self_play_eval."""
 import numpy as np
 import pytest
-from moirais.fn.agselp import alphazero_self_play_eval
+from morie.fn.agselp import alphazero_self_play_eval
 
 
 def test_agselp_basic():

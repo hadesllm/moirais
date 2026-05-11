@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sisls — Single-index via iterative SLS."""
+"""Tests for morie.fn.sisls — Single-index via iterative SLS."""
 
 import numpy as np
 import pytest
-from moirais.fn.sisls import sisls
+from morie.fn.sisls import sisls
 
 
 def test_returns_dict():

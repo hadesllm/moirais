@@ -1,7 +1,7 @@
 """Test lonlat."""
 import numpy as np
 import pytest
-from moirais.fn.lonlat import lonlat
+from morie.fn.lonlat import lonlat
 
 
 def test_lonlat_basic():

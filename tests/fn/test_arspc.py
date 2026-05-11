@@ -1,7 +1,7 @@
 """Tests for arspc.py - AR model spectrum."""
 import numpy as np
 import pytest
-from moirais.fn.arspc import ar_spectrum_fn, arspc
+from morie.fn.arspc import ar_spectrum_fn, arspc
 
 
 def test_ar_spectrum_returns_descriptive_result():

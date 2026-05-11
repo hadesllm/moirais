@@ -1,7 +1,7 @@
 """Test ubseg."""
 import numpy as np
 import pytest
-from moirais.fn.ubseg import ubseg
+from morie.fn.ubseg import ubseg
 
 
 def test_ubseg_basic():

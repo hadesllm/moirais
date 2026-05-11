@@ -1,7 +1,7 @@
 """Tests for hmjl.geron_johnson_lindenstrauss."""
 import numpy as np
 import pytest
-from moirais.fn.hmjl import geron_johnson_lindenstrauss
+from morie.fn.hmjl import geron_johnson_lindenstrauss
 
 
 def test_hmjl_basic():

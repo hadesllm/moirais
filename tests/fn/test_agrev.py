@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.agrev."""
+"""Tests for morie.fn.agrev."""
 
 import numpy as np
 import pytest
-from moirais.fn.agrev import agrev
+from morie.fn.agrev import agrev
 
 
 class TestAgrev:

@@ -1,7 +1,7 @@
 """Tests for smt.semiparametric_max."""
 import numpy as np
 import pytest
-from moirais.fn.smt import semiparametric_max
+from morie.fn.smt import semiparametric_max
 
 
 def test_smt_basic():

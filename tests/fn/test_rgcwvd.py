@@ -1,7 +1,7 @@
 """Tests for rgcwvd.rangayyan_cohen_class."""
 import numpy as np
 import pytest
-from moirais.fn.rgcwvd import rangayyan_cohen_class
+from morie.fn.rgcwvd import rangayyan_cohen_class
 
 
 def test_rgcwvd_basic():

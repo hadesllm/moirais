@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.describe — the pedagogical guide loader."""
+"""Tests for morie.fn.describe — the pedagogical guide loader."""
 
 from __future__ import annotations
 
 import pytest
 
-from moirais.fn import describe
+from morie.fn import describe
 
 
 def test_describe_loads_full_md_for_welcht():

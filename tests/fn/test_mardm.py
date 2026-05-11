@@ -1,7 +1,7 @@
 """Test mardm."""
 import numpy as np
 import pytest
-from moirais.fn.mardm import mardia_test
+from morie.fn.mardm import mardia_test
 
 
 def test_mardm_basic():

@@ -1,7 +1,7 @@
 """Test dlauae."""
 import numpy as np
 import pytest
-from moirais.fn.dlauae import dlauae
+from morie.fn.dlauae import dlauae
 
 
 def test_dlauae_basic():

@@ -1,7 +1,7 @@
 """Tests for gb2111.gibbons_tolerance_beta."""
 import numpy as np
 import pytest
-from moirais.fn.gb2111 import gibbons_tolerance_beta
+from morie.fn.gb2111 import gibbons_tolerance_beta
 
 
 def test_gb2111_basic():

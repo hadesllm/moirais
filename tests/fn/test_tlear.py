@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.tlear — T-learner CATE."""
+"""Tests for morie.fn.tlear — T-learner CATE."""
 import numpy as np
 import pytest
-from moirais.fn.tlear import tlear
+from morie.fn.tlear import tlear
 
 
 @pytest.fixture()
@@ -60,5 +60,5 @@ def test_logistic_model(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.tlear import cheatsheet
+    from morie.fn.tlear import cheatsheet
     assert len(cheatsheet()) > 0

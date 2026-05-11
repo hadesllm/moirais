@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.holo_w -- funnel plot."""
+"""Tests for morie.fn.holo_w -- funnel plot."""
 
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.holo_w import holo_funnel
+from morie.fn.holo_w import holo_funnel
 
 
 class TestHoloFunnel:

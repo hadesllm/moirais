@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.rnkci import rnkci
+from morie.fn.rnkci import rnkci
 
 
 class TestRnkci:

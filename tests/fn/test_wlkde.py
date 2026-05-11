@@ -1,7 +1,7 @@
 """Test wlkde."""
 import numpy as np
 import pytest
-from moirais.fn.wlkde import wlkde
+from morie.fn.wlkde import wlkde
 
 
 def test_wlkde_basic():

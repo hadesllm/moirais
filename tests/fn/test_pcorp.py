@@ -1,7 +1,7 @@
 """Test pcorp."""
 import numpy as np
 import pytest
-from moirais.fn.pcorp import partial_correlation
+from morie.fn.pcorp import partial_correlation
 
 
 def test_pcorp_basic():

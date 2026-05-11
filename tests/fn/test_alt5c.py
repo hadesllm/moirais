@@ -1,7 +1,7 @@
 """Tests for alt5c.alammar_t5_text_to_text_classify."""
 import numpy as np
 import pytest
-from moirais.fn.alt5c import alammar_t5_text_to_text_classify
+from morie.fn.alt5c import alammar_t5_text_to_text_classify
 
 
 def test_alt5c_basic():

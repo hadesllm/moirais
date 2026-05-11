@@ -1,4 +1,4 @@
-"""Tests for moirais.progress — pipeline progress tracking."""
+"""Tests for morie.progress — pipeline progress tracking."""
 
 from __future__ import annotations
 
@@ -6,7 +6,7 @@ from unittest.mock import patch, MagicMock
 
 import pytest
 
-from moirais.progress import ModuleResult, PipelineTracker, execute_pipeline_with_progress
+from morie.progress import ModuleResult, PipelineTracker, execute_pipeline_with_progress
 
 
 # ---------------------------------------------------------------------------
@@ -43,7 +43,7 @@ class TestModuleResult:
 
 
 class TestPipelineTrackerPlain:
-    @patch("moirais.progress.run_module")
+    @patch("morie.progress.run_module")
     def test_run_all_success(self, mock_run):
         mock_run.return_value = {"table1": MagicMock(), "table2": MagicMock()}
 
@@ -63,7 +63,7 @@ class TestPipelineTrackerPlain:
             "power-design", cpads_csv="fake.csv", output_dir=None
         )
 
-    @patch("moirais.progress.run_module", side_effect=RuntimeError("bad data"))
+    @patch("morie.progress.run_module", side_effect=RuntimeError("bad data"))
     def test_run_handles_error(self, mock_run):
         tracker = PipelineTracker(
             ["power-design"],
@@ -77,7 +77,7 @@ class TestPipelineTrackerPlain:
         assert results[0].status == "error"
         assert "bad data" in results[0].error_message
 
-    @patch("moirais.progress.run_module")
+    @patch("morie.progress.run_module")
     def test_run_multiple_modules(self, mock_run):
         mock_run.return_value = {"out": MagicMock()}
 
@@ -93,7 +93,7 @@ class TestPipelineTrackerPlain:
         assert all(r.status == "success" for r in results)
         assert mock_run.call_count == 2
 
-    @patch("moirais.progress.run_module")
+    @patch("morie.progress.run_module")
     def test_run_single(self, mock_run):
         mock_run.return_value = {"t": MagicMock()}
 
@@ -108,7 +108,7 @@ class TestPipelineTrackerPlain:
         assert result.status == "success"
         assert result.output_files_actual == 1
 
-    @patch("moirais.progress.run_module")
+    @patch("morie.progress.run_module")
     def test_output_dir_passed_through(self, mock_run):
         mock_run.return_value = {}
 
@@ -132,7 +132,7 @@ class TestPipelineTrackerPlain:
 
 
 class TestSummaryTable:
-    @patch("moirais.progress.run_module")
+    @patch("morie.progress.run_module")
     def test_summary_table_builds(self, mock_run):
         mock_run.return_value = {"out": MagicMock()}
 
@@ -156,7 +156,7 @@ class TestSummaryTable:
 
 
 class TestExecutePipelineWithProgress:
-    @patch("moirais.progress.run_module")
+    @patch("morie.progress.run_module")
     def test_returns_zero_on_success(self, mock_run, monkeypatch):
         mock_run.return_value = {"out": MagicMock()}
         # Force non-TTY to avoid rich Live display
@@ -170,7 +170,7 @@ class TestExecutePipelineWithProgress:
         )
         assert code == 0
 
-    @patch("moirais.progress.run_module", side_effect=RuntimeError("fail"))
+    @patch("morie.progress.run_module", side_effect=RuntimeError("fail"))
     def test_returns_one_on_failure(self, mock_run, monkeypatch):
         monkeypatch.setattr("sys.stdout.isatty", lambda: False)
 
@@ -182,7 +182,7 @@ class TestExecutePipelineWithProgress:
         )
         assert code == 1
 
-    @patch("moirais.progress.run_module")
+    @patch("morie.progress.run_module")
     def test_abort_on_no_confirm(self, mock_run, monkeypatch):
         monkeypatch.setattr("builtins.input", lambda _: "n")
 

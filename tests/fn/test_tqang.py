@@ -1,7 +1,7 @@
 """Tests for tqang.turboquant_angle_quantization."""
 import numpy as np
 import pytest
-from moirais.fn.tqang import turboquant_angle_quantization
+from morie.fn.tqang import turboquant_angle_quantization
 
 
 def test_tqang_basic():

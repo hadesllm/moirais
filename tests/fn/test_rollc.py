@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rollc — Roll call analysis."""
+"""Tests for morie.fn.rollc — Roll call analysis."""
 import numpy as np
-from moirais.fn.rollc import rollc
+from morie.fn.rollc import rollc
 
 
 def test_rollc_basic():

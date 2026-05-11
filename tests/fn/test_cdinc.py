@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cdinc -- incidence rate."""
+"""Tests for morie.fn.cdinc -- incidence rate."""
 
 import pytest
-from moirais.fn.cdinc import incidence_rate
+from morie.fn.cdinc import incidence_rate
 
 
 class TestIncidenceRate:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.heqly -- QALY."""
+"""Tests for morie.fn.heqly -- QALY."""
 
 import pytest
-from moirais.fn.heqly import quality_adjusted_ly
+from morie.fn.heqly import quality_adjusted_ly
 
 
 class TestQALY:

@@ -1,7 +1,7 @@
 """Tests for volopn.vol_implied_volatility_bs."""
 import numpy as np
 import pytest
-from moirais.fn.volopn import vol_implied_volatility_bs
+from morie.fn.volopn import vol_implied_volatility_bs
 
 
 def test_volopn_basic():

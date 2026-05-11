@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ackbar -- Outlier detection."""
+"""Tests for morie.fn.ackbar -- Outlier detection."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.ackbar import detect_outliers, ackbar
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ackbar import detect_outliers, ackbar
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAckbar:

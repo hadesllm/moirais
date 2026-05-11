@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.srcod -- AST depth analysis."""
+"""Tests for morie.fn.srcod -- AST depth analysis."""
 
-from moirais.fn.srcod import ast_depth, srcod
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.srcod import ast_depth, srcod
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSrcod:

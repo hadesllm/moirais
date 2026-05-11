@@ -1,4 +1,4 @@
-"""Tests for moirais.tui — Textual terminal IDE application.
+"""Tests for morie.tui — Textual terminal IDE application.
 
 Tests are skipped when textual is not installed.
 Uses Textual's App.run_test() for headless async testing.
@@ -17,7 +17,7 @@ except ImportError:
 
 pytestmark = pytest.mark.skipif(
     not _TEXTUAL_AVAILABLE,
-    reason="textual not installed (pip install moirais[interactive])",
+    reason="textual not installed (pip install morie[interactive])",
 )
 
 
@@ -28,19 +28,19 @@ pytestmark = pytest.mark.skipif(
 
 class TestImportGuards:
     def test_textual_available_flag(self):
-        from moirais.tui import _TEXTUAL_AVAILABLE as flag
+        from morie.tui import _TEXTUAL_AVAILABLE as flag
 
         assert flag is True
 
     def test_launch_tui_importable(self):
-        from moirais.tui import launch_tui
+        from morie.tui import launch_tui
 
         assert callable(launch_tui)
 
-    def test_moirais_app_importable(self):
-        from moirais.tui import MOIRAISApp
+    def test_morie_app_importable(self):
+        from morie.tui import MORIEApp
 
-        assert MOIRAISApp is not None
+        assert MORIEApp is not None
 
 
 # ---------------------------------------------------------------------------
@@ -48,21 +48,21 @@ class TestImportGuards:
 # ---------------------------------------------------------------------------
 
 
-class TestMOIRAISApp:
+class TestMORIEApp:
     def test_app_attributes(self):
-        from moirais.tui import MOIRAISApp
+        from morie.tui import MORIEApp
 
-        app = MOIRAISApp()
-        assert app.TITLE == "MOIRAIS"
+        app = MORIEApp()
+        assert app.TITLE == "MORIE"
         assert "chat" in app.SCREENS
         assert "pipeline" in app.SCREENS
         assert "doctor" in app.SCREENS
         assert "dataset" in app.SCREENS
 
     def test_app_has_bindings(self):
-        from moirais.tui import MOIRAISApp, HomeScreen
+        from morie.tui import MORIEApp, HomeScreen
 
-        app = MOIRAISApp()
+        app = MORIEApp()
         app_keys = [b.key for b in app.BINDINGS]
         assert "q" in app_keys
 
@@ -81,46 +81,46 @@ class TestMOIRAISApp:
 
 class TestScreenClasses:
     def test_chat_screen_exists(self):
-        from moirais.tui import ChatScreen
+        from morie.tui import ChatScreen
 
         assert ChatScreen is not None
 
     def test_pipeline_screen_exists(self):
-        from moirais.tui import PipelineScreen
+        from morie.tui import PipelineScreen
 
         assert PipelineScreen is not None
 
     def test_doctor_screen_exists(self):
-        from moirais.tui import DoctorScreen
+        from morie.tui import DoctorScreen
 
         assert DoctorScreen is not None
 
     def test_dataset_screen_exists(self):
-        from moirais.tui import DatasetScreen
+        from morie.tui import DatasetScreen
 
         assert DatasetScreen is not None
 
     def test_chat_screen_accepts_agent(self):
-        from moirais.tui import ChatScreen
+        from morie.tui import ChatScreen
 
-        screen = ChatScreen(agent="moirais-architect")
-        assert screen._agent == "moirais-architect"
+        screen = ChatScreen(agent="morie-architect")
+        assert screen._agent == "morie-architect"
 
     def test_chat_screen_default_no_agent(self):
-        from moirais.tui import ChatScreen
+        from morie.tui import ChatScreen
 
         screen = ChatScreen()
         assert screen._agent is None
 
     def test_repl_screen_auto_detect_mode(self):
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen(lang="auto")
         assert screen._auto_detect is True
         assert screen._lang == "python"  # default when auto
 
     def test_repl_screen_locked_mode(self):
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen(lang="r")
         assert screen._auto_detect is False
@@ -128,7 +128,7 @@ class TestScreenClasses:
 
     def test_repl_screen_user_shell(self):
         import os
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen(lang="auto")
         expected = os.environ.get("SHELL", "/bin/bash")
@@ -142,7 +142,7 @@ class TestScreenClasses:
 
 class TestLanguageDetection:
     def test_unambiguous_r_patterns(self):
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen(lang="auto")
         assert screen._detect_language("x <- 5") == "r"
@@ -153,7 +153,7 @@ class TestLanguageDetection:
         assert screen._detect_language("dplyr::mutate(df, z=1)") == "r"
 
     def test_shell_patterns(self):
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen(lang="auto")
         assert screen._detect_language("git status") == "shell"
@@ -163,7 +163,7 @@ class TestLanguageDetection:
 
     def test_ambiguous_stays_python(self):
         """Patterns that exist in both R and Python should stay Python."""
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen(lang="auto")
         assert screen._detect_language("2 + 2") == "python"
@@ -179,7 +179,7 @@ class TestLanguageDetection:
 
     def test_no_ambiguous_patterns_in_r_set(self):
         """Verify _R_PATTERNS contains no ambiguous patterns."""
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         ambiguous = {
             "c(", "TRUE", "FALSE", "NULL", "NA", "function(",
@@ -200,7 +200,7 @@ class TestLanguageDetection:
 class TestReplHelpers:
     def test_helper_functions_injected(self):
         import code as code_module
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen(lang="auto")
         screen._py_console_ns = {
@@ -225,7 +225,7 @@ class TestNoOffensiveTerms:
     def test_no_slave_flag(self):
         from pathlib import Path
 
-        tui_path = Path(__file__).resolve().parents[2] / "tools" / "py-package" / "moirais" / "tui.py"
+        tui_path = Path(__file__).resolve().parents[2] / "tools" / "py-package" / "morie" / "tui.py"
         content = tui_path.read_text()
         assert "--slave" not in content, "R --slave flag must be replaced with --no-echo"
 
@@ -237,7 +237,7 @@ class TestNoOffensiveTerms:
 
 class TestStatScreen:
     def test_show_help_method_exists(self):
-        from moirais.tui import StatScreen
+        from morie.tui import StatScreen
 
         screen = StatScreen()
         assert hasattr(screen, "_show_help")
@@ -252,10 +252,10 @@ class TestStatScreen:
 class TestReplScreenAsync:
     def test_python_execution(self):
         import asyncio
-        from moirais.tui import MOIRAISApp
+        from morie.tui import MORIEApp
 
         async def _test():
-            app = MOIRAISApp()
+            app = MORIEApp()
             async with app.run_test(size=(120, 40)) as pilot:
                 await pilot.pause()
                 await pilot.press("e")
@@ -272,10 +272,10 @@ class TestReplScreenAsync:
 
     def test_shell_via_bang_prefix(self):
         import asyncio
-        from moirais.tui import MOIRAISApp
+        from morie.tui import MORIEApp
 
         async def _test():
-            app = MOIRAISApp()
+            app = MORIEApp()
             async with app.run_test(size=(120, 40)) as pilot:
                 await pilot.pause()
                 await pilot.press("e")
@@ -291,10 +291,10 @@ class TestReplScreenAsync:
 
     def test_mode_switch_and_history(self):
         import asyncio
-        from moirais.tui import MOIRAISApp
+        from morie.tui import MORIEApp
 
         async def _test():
-            app = MOIRAISApp()
+            app = MORIEApp()
             async with app.run_test(size=(120, 40)) as pilot:
                 await pilot.pause()
                 await pilot.press("e")
@@ -312,10 +312,10 @@ class TestReplScreenAsync:
 
     def test_view_helper_works(self):
         import asyncio
-        from moirais.tui import MOIRAISApp
+        from morie.tui import MORIEApp
 
         async def _test():
-            app = MOIRAISApp()
+            app = MORIEApp()
             async with app.run_test(size=(120, 40)) as pilot:
                 await pilot.pause()
                 await pilot.press("e")
@@ -336,10 +336,10 @@ class TestReplScreenAsync:
 
     def test_ls_helper_works(self):
         import asyncio
-        from moirais.tui import MOIRAISApp
+        from morie.tui import MORIEApp
 
         async def _test():
-            app = MOIRAISApp()
+            app = MORIEApp()
             async with app.run_test(size=(120, 40)) as pilot:
                 await pilot.pause()
                 await pilot.press("e")
@@ -359,10 +359,10 @@ class TestReplScreenAsync:
 
     def test_r_autodetect(self):
         import asyncio
-        from moirais.tui import MOIRAISApp
+        from morie.tui import MORIEApp
 
         async def _test():
-            app = MOIRAISApp()
+            app = MORIEApp()
             async with app.run_test(size=(120, 40)) as pilot:
                 await pilot.pause()
                 await pilot.press("e")
@@ -379,10 +379,10 @@ class TestReplScreenAsync:
 
     def test_ambiguous_stays_python(self):
         import asyncio
-        from moirais.tui import MOIRAISApp
+        from morie.tui import MORIEApp
 
         async def _test():
-            app = MOIRAISApp()
+            app = MORIEApp()
             async with app.run_test(size=(120, 40)) as pilot:
                 await pilot.pause()
                 await pilot.press("e")
@@ -414,7 +414,7 @@ class TestSummaryHelper:
     def test_summary_with_dataframe_arg(self):
         """summary(df) should not raise ValueError about truth value."""
         import pandas as pd
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen()
         screen._inject_repl_helpers()
@@ -425,7 +425,7 @@ class TestSummaryHelper:
 
     def test_summary_with_string_arg(self):
         import pandas as pd
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen()
         screen._inject_repl_helpers()
@@ -434,7 +434,7 @@ class TestSummaryHelper:
         ns["summary"]("age")
 
     def test_summary_no_data(self):
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen()
         screen._inject_repl_helpers()
@@ -450,22 +450,22 @@ class TestSummaryHelper:
 
 class TestAliases:
     def test_alias_map_populated(self):
-        from moirais.stat_commands import ALIAS_MAP
+        from morie.stat_commands import ALIAS_MAP
         assert len(ALIAS_MAP) > 50
 
     def test_resolve_by_alias(self):
-        from moirais.stat_commands import resolve
+        from morie.stat_commands import resolve
         cmd = resolve("ttest1")
         assert cmd is not None
         assert cmd.name == "one_sample_ttest"
 
     def test_all_aliases_have_valid_canonical(self):
-        from moirais.stat_commands import ALIAS_MAP, COMMAND_REGISTRY
+        from morie.stat_commands import ALIAS_MAP, COMMAND_REGISTRY
         for alias, canonical in ALIAS_MAP.items():
             assert canonical in COMMAND_REGISTRY, f"Alias '{alias}' → '{canonical}' missing"
 
     def test_handler_repl_callable(self):
-        from moirais.stat_commands import COMMAND_REGISTRY
+        from morie.stat_commands import COMMAND_REGISTRY
         for name, cmd in list(COMMAND_REGISTRY.items())[:20]:
             assert callable(cmd.handler_repl), f"'{name}' handler_repl not callable"
 
@@ -477,15 +477,15 @@ class TestAliases:
 
 class TestStatCommandsRegistry:
     def test_registry_has_600_plus_commands(self):
-        from moirais.stat_commands import COMMAND_REGISTRY
+        from morie.stat_commands import COMMAND_REGISTRY
         assert len(COMMAND_REGISTRY) >= 600
 
     def test_all_categories_populated(self):
-        from moirais.stat_commands import CATEGORIES
+        from morie.stat_commands import CATEGORIES
         assert len(CATEGORIES) >= 10
 
     def test_commands_by_category_works(self):
-        from moirais.stat_commands import commands_by_category
+        from morie.stat_commands import commands_by_category
         cats = commands_by_category()
         total = sum(len(cmds) for cmds in cats.values())
         assert total >= 600
@@ -498,28 +498,28 @@ class TestStatCommandsRegistry:
 
 class TestVendoredFreeAPI:
     def test_import(self):
-        from moirais.fam import OllamaFreeAPI
+        from morie.fam import OllamaFreeAPI
         client = OllamaFreeAPI()
         assert hasattr(client, "chat")
         assert hasattr(client, "stream_chat")
         assert hasattr(client, "list_models")
 
     def test_list_models_returns_list(self):
-        from moirais.fam import OllamaFreeAPI
+        from morie.fam import OllamaFreeAPI
         client = OllamaFreeAPI()
         models = client.list_models()
         assert isinstance(models, list)
         assert len(models) > 0
 
     def test_list_families(self):
-        from moirais.fam import OllamaFreeAPI
+        from morie.fam import OllamaFreeAPI
         client = OllamaFreeAPI()
         families = client.list_families()
         assert isinstance(families, list)
         assert len(families) >= 1
 
     def test_build_payload_structure(self):
-        from moirais.fam import OllamaFreeAPI
+        from morie.fam import OllamaFreeAPI
         client = OllamaFreeAPI()
         payload = client._build_payload("gpt-oss:20b", "test prompt", num_predict=10000)
         assert payload["model"] == "gpt-oss:20b"
@@ -528,7 +528,7 @@ class TestVendoredFreeAPI:
         assert "temperature" in payload["options"]
 
     def test_get_model_servers_returns_list(self):
-        from moirais.fam import OllamaFreeAPI
+        from morie.fam import OllamaFreeAPI
         client = OllamaFreeAPI()
         models = client.list_models()
         if models:
@@ -546,13 +546,13 @@ class TestAllCommandsValid:
 
     def test_all_commands_have_backend_functions(self):
         import importlib
-        from moirais.stat_commands import COMMAND_REGISTRY
+        from morie.stat_commands import COMMAND_REGISTRY
         broken = []
         for name, cmd in COMMAND_REGISTRY.items():
             if not cmd.module:
                 continue
             try:
-                mod = importlib.import_module(f"moirais.{cmd.module}")
+                mod = importlib.import_module(f"morie.{cmd.module}")
                 fn_name = getattr(cmd.handler_repl, "__name__", name)
                 if not hasattr(mod, fn_name) and not hasattr(mod, name):
                     broken.append(f"{name} (module={cmd.module})")
@@ -561,7 +561,7 @@ class TestAllCommandsValid:
         assert not broken, f"Broken commands: {broken[:10]}"
 
     def test_all_handlers_callable(self):
-        from moirais.stat_commands import COMMAND_REGISTRY
+        from morie.stat_commands import COMMAND_REGISTRY
         not_callable = [
             name for name, cmd in COMMAND_REGISTRY.items()
             if not callable(cmd.handler_repl) or not callable(cmd.handler_stat)
@@ -578,7 +578,7 @@ class TestReplNamespaceInjection:
     """Converted from standalone verify_repl_injection.py into pytest."""
 
     def test_hardcoded_helpers_injected(self):
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
         screen = ReplScreen()
         screen._inject_repl_helpers()
         ns = screen._py_console_ns
@@ -592,8 +592,8 @@ class TestReplNamespaceInjection:
         assert not missing, f"Missing helpers: {missing}"
 
     def test_registry_commands_injected(self):
-        from moirais.tui import ReplScreen
-        from moirais.stat_commands import COMMAND_REGISTRY
+        from morie.tui import ReplScreen
+        from morie.stat_commands import COMMAND_REGISTRY
         screen = ReplScreen()
         screen._inject_repl_helpers()
         ns = screen._py_console_ns
@@ -602,8 +602,8 @@ class TestReplNamespaceInjection:
         assert not missing, f"Missing registry commands: {missing[:10]}"
 
     def test_aliases_injected(self):
-        from moirais.tui import ReplScreen
-        from moirais.stat_commands import ALIAS_MAP
+        from morie.tui import ReplScreen
+        from morie.stat_commands import ALIAS_MAP
         screen = ReplScreen()
         screen._inject_repl_helpers()
         ns = screen._py_console_ns
@@ -612,7 +612,7 @@ class TestReplNamespaceInjection:
         assert not missing, f"Missing aliases: {missing[:10]}"
 
     def test_total_callable_count(self):
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
         screen = ReplScreen()
         screen._inject_repl_helpers()
         ns = screen._py_console_ns
@@ -632,7 +632,7 @@ class TestAliasExecution:
         """All helpers with required args should show usage when called with none."""
         import numpy as np
         import pandas as pd
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
 
         screen = ReplScreen()
         screen._inject_repl_helpers()
@@ -668,7 +668,7 @@ class TestAliasExecution:
 
     def test_registry_aliases_show_usage_not_crash(self):
         """Registry aliases should gracefully handle no-arg calls."""
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
         screen = ReplScreen()
         screen._inject_repl_helpers()
         ns = screen._py_console_ns
@@ -706,6 +706,6 @@ class TestPolyglotBridge:
         assert pattern.findall("x <- 1; y <- 2") == ["x", "y"]
 
     def test_polyglot_flag_default_off(self):
-        from moirais.tui import ReplScreen
+        from morie.tui import ReplScreen
         screen = ReplScreen()
         assert screen._polyglot is False

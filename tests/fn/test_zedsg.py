@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zedsg -- Poisson-Gamma disease mapping"""
+"""Tests for morie.fn.zedsg -- Poisson-Gamma disease mapping"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zedsg import disease_map_gamma
+from morie.fn.zedsg import disease_map_gamma
 
 
 class TestDiseaseMapGamma:

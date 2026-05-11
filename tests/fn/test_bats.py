@@ -1,7 +1,7 @@
 """Tests for bats.bats."""
 import numpy as np
 import pytest
-from moirais.fn.bats import bats
+from morie.fn.bats import bats
 
 
 def test_bats_basic():

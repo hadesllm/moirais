@@ -1,7 +1,7 @@
 """Tests for chlrng."""
 import numpy as np
 import pytest
-from moirais.fn.chlrng import chlrng
+from morie.fn.chlrng import chlrng
 
 
 def test_chlrng_basic():
@@ -27,5 +27,5 @@ def test_chlrng_no_data():
 
 
 def test_chlrng_alias():
-    from moirais.fn.chlrng import chlrng
+    from morie.fn.chlrng import chlrng
     assert chlrng is chlrng

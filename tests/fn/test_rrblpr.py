@@ -1,7 +1,7 @@
 """Tests for rrblpr.rr_blup."""
 import numpy as np
 import pytest
-from moirais.fn.rrblpr import rr_blup
+from morie.fn.rrblpr import rr_blup
 
 
 def test_rrblpr_basic():

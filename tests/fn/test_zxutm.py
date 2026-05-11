@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxutm -- UTM coordinate conversion"""
+"""Tests for morie.fn.zxutm -- UTM coordinate conversion"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxutm import utm_convert
+from morie.fn.zxutm import utm_convert
 
 
 class TestUtmConvert:

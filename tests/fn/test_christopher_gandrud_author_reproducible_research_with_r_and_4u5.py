@@ -1,7 +1,7 @@
 """Look well into thyself; there is a source which will always spring up. — Marcus Aurelius"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u5 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_5
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u5 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_5
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u5_basic():

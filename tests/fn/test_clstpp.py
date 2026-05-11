@@ -1,7 +1,7 @@
 """Tests for clstpp.clark_evans."""
 import numpy as np
 import pytest
-from moirais.fn.clstpp import clark_evans
+from morie.fn.clstpp import clark_evans
 
 
 def test_clstpp_basic():

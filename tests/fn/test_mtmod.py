@@ -1,7 +1,7 @@
 """Test mtmod."""
 import numpy as np
 import pytest
-from moirais.fn.mtmod import mtmod
+from morie.fn.mtmod import mtmod
 
 
 def test_mtmod_basic():

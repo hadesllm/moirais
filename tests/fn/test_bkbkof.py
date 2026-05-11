@@ -1,7 +1,7 @@
 """Tests for bkbkof.burkov_ngram_backoff."""
 import numpy as np
 import pytest
-from moirais.fn.bkbkof import burkov_ngram_backoff
+from morie.fn.bkbkof import burkov_ngram_backoff
 
 
 def test_bkbkof_basic():

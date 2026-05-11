@@ -1,7 +1,7 @@
 """Tests for hmgan.geron_gan."""
 import numpy as np
 import pytest
-from moirais.fn.hmgan import geron_gan
+from morie.fn.hmgan import geron_gan
 
 
 def test_hmgan_basic():

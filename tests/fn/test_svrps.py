@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svrps -- Ranked probability score spatial"""
+"""Tests for morie.fn.svrps -- Ranked probability score spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svrps import rank_prob_score
+from morie.fn.svrps import rank_prob_score
 
 
 class TestRankProbScore:

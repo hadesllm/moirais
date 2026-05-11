@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msink -- Three-way INDSCAL"""
+"""Tests for morie.fn.msink -- Three-way INDSCAL"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msink import indscal_3way
+from morie.fn.msink import indscal_3way
 
 
 class TestIndscal3way:

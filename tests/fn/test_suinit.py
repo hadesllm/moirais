@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.suinit -- initiation age."""
+"""Tests for morie.fn.suinit -- initiation age."""
 
 import pytest
-from moirais.fn.suinit import initiation_age
+from morie.fn.suinit import initiation_age
 
 
 class TestInitiationAge:

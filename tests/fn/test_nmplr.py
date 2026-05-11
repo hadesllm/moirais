@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmplr -- Legislative polarization"""
+"""Tests for morie.fn.nmplr -- Legislative polarization"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmplr import leg_polarize
+from morie.fn.nmplr import leg_polarize
 
 
 class TestLegPolarize:

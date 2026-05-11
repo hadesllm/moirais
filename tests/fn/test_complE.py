@@ -1,7 +1,7 @@
 """Tests for complE.complex."""
 import numpy as np
 import pytest
-from moirais.fn.complE import complex
+from morie.fn.complE import complex
 
 
 def test_complE_basic():

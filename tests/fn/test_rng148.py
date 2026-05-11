@@ -1,7 +1,7 @@
 """Tests for rng148.rangayyan_ch3_wiener_convolution_relationship."""
 import numpy as np
 import pytest
-from moirais.fn.rng148 import rangayyan_ch3_wiener_convolution_relationship
+from morie.fn.rng148 import rangayyan_ch3_wiener_convolution_relationship
 
 
 def test_rng148_basic():

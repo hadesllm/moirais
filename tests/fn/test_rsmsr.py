@@ -1,7 +1,7 @@
 """Test rsmsr."""
 import numpy as np
 import pytest
-from moirais.fn.rsmsr import rsmsr
+from morie.fn.rsmsr import rsmsr
 
 
 def test_rsmsr_basic():

@@ -1,7 +1,7 @@
 """Tests for dprrep.randomized_response_dp."""
 import numpy as np
 import pytest
-from moirais.fn.dprrep import randomized_response_dp
+from morie.fn.dprrep import randomized_response_dp
 
 
 def test_dprrep_basic():

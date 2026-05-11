@@ -1,7 +1,7 @@
 """Tests for mcconv."""
 import numpy as np
 import pytest
-from moirais.fn.mcconv import mcconv
+from morie.fn.mcconv import mcconv
 
 
 def test_mcconv_basic():
@@ -27,5 +27,5 @@ def test_mcconv_no_data():
 
 
 def test_mcconv_alias():
-    from moirais.fn.mcconv import mcconv
+    from morie.fn.mcconv import mcconv
     assert mcconv is mcconv

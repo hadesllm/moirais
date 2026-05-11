@@ -1,7 +1,7 @@
 """Test rwsim."""
 import numpy as np
 import pytest
-from moirais.fn.rwsim import rwsim
+from morie.fn.rwsim import rwsim
 
 
 def test_rwsim_basic():

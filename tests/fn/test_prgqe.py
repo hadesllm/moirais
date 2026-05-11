@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.prgqe — program quasi-experimental."""
+"""Tests for morie.fn.prgqe — program quasi-experimental."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.prgqe import program_quasi_exp
-from moirais.fn._containers import ESRes
+from morie.fn.prgqe import program_quasi_exp
+from morie.fn._containers import ESRes
 
 
 class TestProgramQuasiExp:

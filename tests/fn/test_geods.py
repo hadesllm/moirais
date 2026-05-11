@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.geods -- geodesic equation solver."""
+"""Tests for morie.fn.geods -- geodesic equation solver."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.geods import geods
+from morie.fn.geods import geods
 
 
 def flat_metric(x):

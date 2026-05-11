@@ -1,7 +1,7 @@
 """Test mtvrp."""
 import numpy as np
 import pytest
-from moirais.fn.mtvrp import mtvrp
+from morie.fn.mtvrp import mtvrp
 
 
 def test_mtvrp_basic():

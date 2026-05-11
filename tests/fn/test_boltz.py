@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.boltz -- Boltzmann distribution."""
+"""Tests for morie.fn.boltz -- Boltzmann distribution."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.boltz import boltz
+from morie.fn.boltz import boltz
 
 
 def test_returns_dict():

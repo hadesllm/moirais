@@ -1,7 +1,7 @@
 """Tests for bayoptr.bayesian_optimization."""
 import numpy as np
 import pytest
-from moirais.fn.bayoptr import bayesian_optimization
+from morie.fn.bayoptr import bayesian_optimization
 
 
 def test_bayoptr_basic():

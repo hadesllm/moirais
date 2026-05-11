@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.mednt import mednt
+from morie.fn.mednt import mednt
 
 
 class TestMednt:

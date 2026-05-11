@@ -1,7 +1,7 @@
 """Tests for riskdf.risk_difference."""
 import numpy as np
 import pytest
-from moirais.fn.riskdf import risk_difference
+from morie.fn.riskdf import risk_difference
 
 
 def test_riskdf_basic():

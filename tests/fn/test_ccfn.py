@@ -1,7 +1,7 @@
 """Test ccf_normalized (ccfn)."""
 import numpy as np
-from moirais.fn.ccfn import ccf_normalized, ccfn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ccfn import ccf_normalized, ccfn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCcfn:

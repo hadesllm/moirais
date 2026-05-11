@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.aft — Accelerated Failure Time model."""
+"""Tests for morie.fn.aft — Accelerated Failure Time model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.aft import aft
+from morie.fn.aft import aft
 
 
 class TestAft:

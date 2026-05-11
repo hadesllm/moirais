@@ -1,7 +1,7 @@
 """Test trcrp."""
 import numpy as np
 import pytest
-from moirais.fn.trcrp import trcrp
+from morie.fn.trcrp import trcrp
 
 
 def test_trcrp_basic():

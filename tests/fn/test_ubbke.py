@@ -1,7 +1,7 @@
 """Test ubbke."""
 import numpy as np
 import pytest
-from moirais.fn.ubbke import ubbke
+from morie.fn.ubbke import ubbke
 
 
 def test_ubbke_basic():

@@ -1,7 +1,7 @@
 """Tests for spanis.schabenberger_geometric_anisotropy."""
 import numpy as np
 import pytest
-from moirais.fn.spanis import schabenberger_geometric_anisotropy
+from morie.fn.spanis import schabenberger_geometric_anisotropy
 
 
 def test_spanis_basic():

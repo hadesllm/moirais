@@ -1,7 +1,7 @@
 """Tests for luvar."""
 import numpy as np
 import pytest
-from moirais.fn.luvar import luvar
+from morie.fn.luvar import luvar
 
 
 def test_luvar_basic():
@@ -27,5 +27,5 @@ def test_luvar_no_data():
 
 
 def test_luvar_alias():
-    from moirais.fn.luvar import luvar
+    from morie.fn.luvar import luvar
     assert luvar is luvar

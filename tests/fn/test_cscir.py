@@ -1,7 +1,7 @@
 """Test cscir."""
 import numpy as np
 import pytest
-from moirais.fn.cscir import cscir
+from morie.fn.cscir import cscir
 
 
 def test_cscir_basic():

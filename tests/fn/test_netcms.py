@@ -1,7 +1,7 @@
 """Tests for netcms.network_psychometrics."""
 import numpy as np
 import pytest
-from moirais.fn.netcms import network_psychometrics
+from morie.fn.netcms import network_psychometrics
 
 
 def test_netcms_basic():

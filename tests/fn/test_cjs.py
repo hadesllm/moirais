@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cjs -- CJS flow calculation."""
+"""Tests for morie.fn.cjs -- CJS flow calculation."""
 
 import pytest
-from moirais.fn.cjs import cjs_flow, cjs
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cjs import cjs_flow, cjs
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCjs:

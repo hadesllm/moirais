@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.odml2 — DML for alert treatment effect."""
+"""Tests for morie.fn.odml2 — DML for alert treatment effect."""
 
 import numpy as np
-from moirais.fn.odml2 import otis_dml_alert
+from morie.fn.odml2 import otis_dml_alert
 
 
 class TestOtisDmlAlert:

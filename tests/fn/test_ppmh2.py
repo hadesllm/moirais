@@ -1,7 +1,7 @@
 """Test ppmh2."""
 import numpy as np
 import pytest
-from moirais.fn.ppmh2 import ppmh2
+from morie.fn.ppmh2 import ppmh2
 
 
 def test_ppmh2_basic():

@@ -1,7 +1,7 @@
 """Tests for grphmr.graphormer."""
 import numpy as np
 import pytest
-from moirais.fn.grphmr import graphormer
+from morie.fn.grphmr import graphormer
 
 
 def test_grphmr_basic():

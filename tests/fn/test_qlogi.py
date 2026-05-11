@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.qlogi -- Logistic quantile."""
+"""Tests for morie.fn.qlogi -- Logistic quantile."""
 
 import numpy as np
 import pytest
-from moirais.fn.qlogi import qlogi
+from morie.fn.qlogi import qlogi
 
 
 class TestQlogi:

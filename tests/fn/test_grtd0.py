@@ -1,7 +1,7 @@
 """Tests for grtd0.geron_td_zero_update."""
 import numpy as np
 import pytest
-from moirais.fn.grtd0 import geron_td_zero_update
+from morie.fn.grtd0 import geron_td_zero_update
 
 
 def test_grtd0_basic():

@@ -1,7 +1,7 @@
 """Tests for kabsch.kabsch_superpose."""
 import numpy as np
 import pytest
-from moirais.fn.kabsch import kabsch_superpose
+from morie.fn.kabsch import kabsch_superpose
 
 
 def test_kabsch_basic():

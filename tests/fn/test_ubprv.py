@@ -1,7 +1,7 @@
 """Test ubprv."""
 import numpy as np
 import pytest
-from moirais.fn.ubprv import ubprv
+from morie.fn.ubprv import ubprv
 
 
 def test_ubprv_basic():

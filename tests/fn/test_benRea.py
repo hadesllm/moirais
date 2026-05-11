@@ -1,7 +1,7 @@
 """Tests for benRea.named_entity."""
 import numpy as np
 import pytest
-from moirais.fn.benRea import named_entity
+from morie.fn.benRea import named_entity
 
 
 def test_benRea_basic():

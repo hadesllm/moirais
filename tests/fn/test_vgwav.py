@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgwav -- Wave (hole-effect) variogram"""
+"""Tests for morie.fn.vgwav -- Wave (hole-effect) variogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgwav import vario_wave
+from morie.fn.vgwav import vario_wave
 
 
 class TestVarioWave:

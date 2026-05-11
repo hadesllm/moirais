@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrsdm -- Spatial Durbin model ML"""
+"""Tests for morie.fn.xrsdm -- Spatial Durbin model ML"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrsdm import sdm_ml
+from morie.fn.xrsdm import sdm_ml
 
 
 class TestSdmMl:

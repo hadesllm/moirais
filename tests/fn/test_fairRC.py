@@ -1,7 +1,7 @@
 """Tests for fairRC.fairness_rec."""
 import numpy as np
 import pytest
-from moirais.fn.fairRC import fairness_rec
+from morie.fn.fairRC import fairness_rec
 
 
 def test_fairRC_basic():

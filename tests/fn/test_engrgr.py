@@ -1,7 +1,7 @@
 """Tests for engrgr.engle_granger."""
 import numpy as np
 import pytest
-from moirais.fn.engrgr import engle_granger
+from morie.fn.engrgr import engle_granger
 
 
 def test_engrgr_basic():

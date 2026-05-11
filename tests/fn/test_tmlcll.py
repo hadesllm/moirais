@@ -1,7 +1,7 @@
 """Tests for tmlcll.tmle_cross_lagged."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcll import tmle_cross_lagged
+from morie.fn.tmlcll import tmle_cross_lagged
 
 
 def test_tmlcll_basic():

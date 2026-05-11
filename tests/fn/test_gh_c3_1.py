@@ -1,7 +1,7 @@
 """Tests for gh_c3_1.ghosal_random_measure_def."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c3_1 import ghosal_random_measure_def
+from morie.fn.gh_c3_1 import ghosal_random_measure_def
 
 
 def test_gh_c3_1_basic():

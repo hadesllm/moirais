@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgcrf -- Correlogram function"""
+"""Tests for morie.fn.vgcrf -- Correlogram function"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgcrf import correlogram
+from morie.fn.vgcrf import correlogram
 
 
 class TestCorrelogram:

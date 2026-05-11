@@ -1,7 +1,7 @@
 """Tests for rng234.rangayyan_ch4_fourier_convolution_property."""
 import numpy as np
 import pytest
-from moirais.fn.rng234 import rangayyan_ch4_fourier_convolution_property
+from morie.fn.rng234 import rangayyan_ch4_fourier_convolution_property
 
 
 def test_rng234_basic():

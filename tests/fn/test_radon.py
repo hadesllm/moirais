@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.radon import radon, radon_cancer_risk
+from morie.fn.radon import radon, radon_cancer_risk
 
 
 def test_radon_never_smoker_per_pcil():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgbkd -- Block kriging discretization"""
+"""Tests for morie.fn.kgbkd -- Block kriging discretization"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgbkd import bk_discretize
+from morie.fn.kgbkd import bk_discretize
 
 
 class TestBkDiscretize:

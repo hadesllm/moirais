@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.gcthm — Glivenko-Cantelli test."""
+"""Tests for morie.fn.gcthm — Glivenko-Cantelli test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.gcthm import gcthm
+from morie.fn.gcthm import gcthm
 
 
 def test_normal_converges():

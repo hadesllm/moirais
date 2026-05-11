@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.cal_wg — Raking calibration weights."""
+"""Tests for morie.fn.cal_wg — Raking calibration weights."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.cal_wg import calibration_weights
+from morie.fn.cal_wg import calibration_weights
 
 
 @pytest.fixture()

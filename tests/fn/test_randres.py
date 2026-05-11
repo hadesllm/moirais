@@ -1,7 +1,7 @@
 """Tests for randres.randomized_response."""
 import numpy as np
 import pytest
-from moirais.fn.randres import randomized_response
+from morie.fn.randres import randomized_response
 
 
 def test_randres_basic():

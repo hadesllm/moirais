@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bdif — Bayesian DIF detection."""
+"""Tests for morie.fn.bdif — Bayesian DIF detection."""
 
 import numpy as np
 import pytest
-from moirais.fn.bdif import bayesian_dif
+from morie.fn.bdif import bayesian_dif
 
 
 class TestBayesianDif:

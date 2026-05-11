@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msnm2 -- Nonmetric MDS 2D"""
+"""Tests for morie.fn.msnm2 -- Nonmetric MDS 2D"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msnm2 import nonmetric_2d
+from morie.fn.msnm2 import nonmetric_2d
 
 
 class TestNonmetric2d:

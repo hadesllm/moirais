@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxhrs -- Hierarchical spatial (nested)"""
+"""Tests for morie.fn.zxhrs -- Hierarchical spatial (nested)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxhrs import hier_spatial_fe
+from morie.fn.zxhrs import hier_spatial_fe
 
 
 class TestHierSpatialFe:

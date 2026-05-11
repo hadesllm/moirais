@@ -1,7 +1,7 @@
 """Tests for cb7e2.cb_chapter_7_equation_2."""
 import numpy as np
 import pytest
-from moirais.fn.cb7e2 import cb_chapter_7_equation_2
+from morie.fn.cb7e2 import cb_chapter_7_equation_2
 
 
 def test_cb7e2_basic():

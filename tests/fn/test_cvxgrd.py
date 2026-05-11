@@ -1,7 +1,7 @@
 """Tests for cvxgrd.boyd_gradient_descent."""
 import numpy as np
 import pytest
-from moirais.fn.cvxgrd import boyd_gradient_descent
+from morie.fn.cvxgrd import boyd_gradient_descent
 
 
 def test_cvxgrd_basic():

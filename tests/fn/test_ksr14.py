@@ -1,7 +1,7 @@
 """Tests for ksr14.kosorok_profile_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.ksr14 import kosorok_profile_likelihood
+from morie.fn.ksr14 import kosorok_profile_likelihood
 
 
 def test_ksr14_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wznrr — Wyner-Ziv bound."""
+"""Tests for morie.fn.wznrr — Wyner-Ziv bound."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.wznrr import wznrr
+from morie.fn.wznrr import wznrr
 
 
 class TestWznrr:

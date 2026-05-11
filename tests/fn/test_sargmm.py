@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sargmm."""
+"""Tests for morie.fn.sargmm."""
 import numpy as np
 import pytest
-from moirais.fn.sargmm import sargmm
+from morie.fn.sargmm import sargmm
 
 
 class TestSargmm:

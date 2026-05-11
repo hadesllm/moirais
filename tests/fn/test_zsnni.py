@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsnni -- Natural neighbor interpolation"""
+"""Tests for morie.fn.zsnni -- Natural neighbor interpolation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsnni import natural_neighbor
+from morie.fn.zsnni import natural_neighbor
 
 
 class TestNaturalNeighbor:

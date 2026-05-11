@@ -1,7 +1,7 @@
 """Tests for gb1461.gibbons_multinomial_gof."""
 import numpy as np
 import pytest
-from moirais.fn.gb1461 import gibbons_multinomial_gof
+from morie.fn.gb1461 import gibbons_multinomial_gof
 
 
 def test_gb1461_basic():

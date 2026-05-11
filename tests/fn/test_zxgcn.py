@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxgcn -- Graph convolution spatial"""
+"""Tests for morie.fn.zxgcn -- Graph convolution spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxgcn import graph_conv_sp
+from morie.fn.zxgcn import graph_conv_sp
 
 
 class TestGraphConvSp:

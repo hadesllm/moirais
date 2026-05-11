@@ -1,7 +1,7 @@
 """Tests for hrzdiscd.horowitz_direct_discrete_x."""
 import numpy as np
 import pytest
-from moirais.fn.hrzdiscd import horowitz_direct_discrete_x
+from morie.fn.hrzdiscd import horowitz_direct_discrete_x
 
 
 def test_hrzdiscd_basic():

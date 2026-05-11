@@ -1,7 +1,7 @@
 """Tests for louv.louvain_communities."""
 import numpy as np
 import pytest
-from moirais.fn.louv import louvain_communities
+from morie.fn.louv import louvain_communities
 
 
 def test_louv_basic():

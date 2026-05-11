@@ -1,7 +1,7 @@
 """Tests for buttbp — Butterworth bandpass filter."""
 import numpy as np
-from moirais.fn.buttbp import butter_bandpass
-from moirais.fn._containers import SignalResult
+from morie.fn.buttbp import butter_bandpass
+from morie.fn._containers import SignalResult
 
 
 def test_buttbp_basic(signal_1khz):

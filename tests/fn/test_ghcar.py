@@ -1,7 +1,7 @@
 """Test ghcar."""
 import numpy as np
 import pytest
-from moirais.fn.ghcar import ghcar
+from morie.fn.ghcar import ghcar
 
 
 def test_ghcar_basic():

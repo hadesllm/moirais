@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kmsrv -- Kaplan-Meier survival curve."""
+"""Tests for morie.fn.kmsrv -- Kaplan-Meier survival curve."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kmsrv import kmsrv
+from morie.fn.kmsrv import kmsrv
 
 
 @pytest.fixture()
@@ -54,5 +54,5 @@ def test_length_mismatch():
 
 
 def test_cheatsheet():
-    from moirais.fn.kmsrv import cheatsheet
+    from morie.fn.kmsrv import cheatsheet
     assert "kaplan" in cheatsheet().lower()

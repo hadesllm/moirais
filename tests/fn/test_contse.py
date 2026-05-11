@@ -1,7 +1,7 @@
 """Tests for contse.contrastive_sent."""
 import numpy as np
 import pytest
-from moirais.fn.contse import contrastive_sent
+from morie.fn.contse import contrastive_sent
 
 
 def test_contse_basic():

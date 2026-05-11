@@ -1,7 +1,7 @@
 """Tests for alvit.alammar_vit_patch_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.alvit import alammar_vit_patch_embedding
+from morie.fn.alvit import alammar_vit_patch_embedding
 
 
 def test_alvit_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.klgrd -- Klein-Gordon equation."""
+"""Tests for morie.fn.klgrd -- Klein-Gordon equation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.klgrd import klgrd
+from morie.fn.klgrd import klgrd
 
 
 def test_returns_dict():

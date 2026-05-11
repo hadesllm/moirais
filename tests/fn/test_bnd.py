@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bnd -- Manski partial identification bounds."""
+"""Tests for morie.fn.bnd -- Manski partial identification bounds."""
 
 import numpy as np
 import pytest
-from moirais.fn.bnd import manski_bounds
+from morie.fn.bnd import manski_bounds
 
 
 class TestManskiBounds:

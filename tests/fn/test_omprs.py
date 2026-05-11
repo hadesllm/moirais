@@ -1,7 +1,7 @@
 """Tests for omprs.py - Orthogonal Matching Pursuit decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.omprs import omp_fn, omprs
+from morie.fn.omprs import omp_fn, omprs
 
 
 def test_omp_returns_descriptive_result():

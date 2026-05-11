@@ -1,7 +1,7 @@
 """Tests for hmrwd.geron_reward_function."""
 import numpy as np
 import pytest
-from moirais.fn.hmrwd import geron_reward_function
+from morie.fn.hmrwd import geron_reward_function
 
 
 def test_hmrwd_basic():

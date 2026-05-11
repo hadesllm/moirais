@@ -1,7 +1,7 @@
 """Test dktpr."""
 import numpy as np
 import pytest
-from moirais.fn.dktpr import dktpr
+from morie.fn.dktpr import dktpr
 
 
 def test_dktpr_basic():

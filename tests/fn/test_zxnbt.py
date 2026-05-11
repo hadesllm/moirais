@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxnbt -- Network betweenness spatial"""
+"""Tests for morie.fn.zxnbt -- Network betweenness spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxnbt import network_between
+from morie.fn.zxnbt import network_between
 
 
 class TestNetworkBetween:

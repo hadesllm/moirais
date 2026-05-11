@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hamrm -- impact energy."""
+"""Tests for morie.fn.hamrm -- impact energy."""
 
 import pytest
-from moirais.fn.hamrm import impact_energy, hamrm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hamrm import impact_energy, hamrm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHamrm:

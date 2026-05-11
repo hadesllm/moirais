@@ -1,7 +1,7 @@
 """Tests for kr20cr.kuder_richardson_20."""
 import numpy as np
 import pytest
-from moirais.fn.kr20cr import kuder_richardson_20
+from morie.fn.kr20cr import kuder_richardson_20
 
 
 def test_kr20cr_basic():

@@ -1,7 +1,7 @@
 """Tests for b111.burkov_lm_ch1_bce_gradients."""
 import numpy as np
 import pytest
-from moirais.fn.b111 import burkov_lm_ch1_bce_gradients
+from morie.fn.b111 import burkov_lm_ch1_bce_gradients
 
 
 def test_b111_basic():

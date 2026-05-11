@@ -1,7 +1,7 @@
 """Tests for rgpzp.rangayyan_pole_zero_plot."""
 import numpy as np
 import pytest
-from moirais.fn.rgpzp import rangayyan_pole_zero_plot
+from morie.fn.rgpzp import rangayyan_pole_zero_plot
 
 
 def test_rgpzp_basic():

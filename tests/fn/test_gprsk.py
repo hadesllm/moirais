@@ -1,7 +1,7 @@
 """Tests for gprsk.gp_residual_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.gprsk import gp_residual_kernel
+from morie.fn.gprsk import gp_residual_kernel
 
 
 def test_gprsk_basic():

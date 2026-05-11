@@ -1,7 +1,7 @@
 """Tests for spcpow."""
 import numpy as np
 import pytest
-from moirais.fn.spcpow import spcpow
+from morie.fn.spcpow import spcpow
 
 
 def test_spcpow_basic():
@@ -27,5 +27,5 @@ def test_spcpow_no_data():
 
 
 def test_spcpow_alias():
-    from moirais.fn.spcpow import spcpow
+    from morie.fn.spcpow import spcpow
     assert spcpow is spcpow

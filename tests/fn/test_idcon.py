@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.idcon — ideological constraint."""
+"""Tests for morie.fn.idcon — ideological constraint."""
 import numpy as np
-from moirais.fn.idcon import idcon
+from morie.fn.idcon import idcon
 
 
 def test_idcon_smoke():
@@ -13,7 +13,7 @@ def test_idcon_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.idcon import cheatsheet
+    from morie.fn.idcon import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

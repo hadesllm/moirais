@@ -1,7 +1,7 @@
 """Tests for eqhae.equating_haebara."""
 import numpy as np
 import pytest
-from moirais.fn.eqhae import equating_haebara
+from morie.fn.eqhae import equating_haebara
 
 
 def test_eqhae_basic():

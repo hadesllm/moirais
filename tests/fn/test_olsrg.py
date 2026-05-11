@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.olsrg — OLS regression."""
+"""Tests for morie.fn.olsrg — OLS regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.olsrg import ols_regression
+from morie.fn.olsrg import ols_regression
 
 
 @pytest.fixture()

@@ -1,7 +1,7 @@
 """Tests for htpfn.htp_functional_predictor."""
 import numpy as np
 import pytest
-from moirais.fn.htpfn import htp_functional_predictor
+from morie.fn.htpfn import htp_functional_predictor
 
 
 def test_htpfn_basic():

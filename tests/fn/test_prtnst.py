@@ -1,7 +1,7 @@
 """Tests for prtnst.partition_test."""
 import numpy as np
 import pytest
-from moirais.fn.prtnst import partition_test
+from morie.fn.prtnst import partition_test
 
 
 def test_prtnst_basic():

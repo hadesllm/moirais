@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhstg -- stigma index."""
+"""Tests for morie.fn.mhstg -- stigma index."""
 
 import pytest
-from moirais.fn.mhstg import stigma_index
+from morie.fn.mhstg import stigma_index
 
 
 class TestStigmaIndex:

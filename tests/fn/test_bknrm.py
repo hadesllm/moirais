@@ -1,7 +1,7 @@
 """Tests for bknrm.burkov_vector_norm."""
 import numpy as np
 import pytest
-from moirais.fn.bknrm import burkov_vector_norm
+from morie.fn.bknrm import burkov_vector_norm
 
 
 def test_bknrm_basic():

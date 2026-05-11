@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.grwth -- exponential growth rate."""
+"""Tests for morie.fn.grwth -- exponential growth rate."""
 
 import numpy as np
 import pytest
-from moirais.fn.grwth import exponential_growth_rate
+from morie.fn.grwth import exponential_growth_rate
 
 
 class TestGrowthRate:

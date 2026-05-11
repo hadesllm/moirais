@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rweib — Weibull random sample."""
+"""Tests for morie.fn.rweib — Weibull random sample."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rweib import rweib
+from morie.fn.rweib import rweib
 
 
 class TestRweib:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bivrt -- Bayesian IV regression."""
+"""Tests for morie.fn.bivrt -- Bayesian IV regression."""
 
 import numpy as np
-from moirais.fn.bivrt import bayesian_iv
+from morie.fn.bivrt import bayesian_iv
 
 
 def test_returns_dict():

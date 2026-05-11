@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sarjac."""
+"""Tests for morie.fn.sarjac."""
 import numpy as np
 import pytest
-from moirais.fn.sarjac import sarjac
+from morie.fn.sarjac import sarjac
 
 
 class TestSarjac:

@@ -1,7 +1,7 @@
 """Tests for survnls.nonlinear_least_squares_surv."""
 import numpy as np
 import pytest
-from moirais.fn.survnls import nonlinear_least_squares_surv
+from morie.fn.survnls import nonlinear_least_squares_surv
 
 
 def test_survnls_basic():

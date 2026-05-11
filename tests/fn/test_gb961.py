@@ -1,7 +1,7 @@
 """Tests for gb961.gibbons_pct_mod_rank_sc."""
 import numpy as np
 import pytest
-from moirais.fn.gb961 import gibbons_pct_mod_rank_sc
+from morie.fn.gb961 import gibbons_pct_mod_rank_sc
 
 
 def test_gb961_basic():

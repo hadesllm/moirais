@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.knear — K-nearest neighbors spatial weights."""
+"""Tests for morie.fn.knear — K-nearest neighbors spatial weights."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.knear import knn_weights
+from morie.fn.knear import knn_weights
 
 
 class TestKNNWeights:

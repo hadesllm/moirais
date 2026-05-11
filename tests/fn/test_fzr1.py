@@ -1,7 +1,7 @@
 """Tests for fzr1.fauzi_r1_integral."""
 import numpy as np
 import pytest
-from moirais.fn.fzr1 import fauzi_r1_integral
+from morie.fn.fzr1 import fauzi_r1_integral
 
 
 def test_fzr1_basic():

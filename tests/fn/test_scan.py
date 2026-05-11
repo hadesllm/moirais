@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.scan — spatial scan statistic."""
+"""Tests for morie.fn.scan — spatial scan statistic."""
 import numpy as np
-from moirais.fn.scan import spatial_scan
+from morie.fn.scan import spatial_scan
 
 
 class TestSpatialScan:

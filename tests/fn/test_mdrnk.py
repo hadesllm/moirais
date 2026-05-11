@@ -1,7 +1,7 @@
 """Tests for mdrnk.midranks."""
 import numpy as np
 import pytest
-from moirais.fn.mdrnk import midranks
+from morie.fn.mdrnk import midranks
 
 
 def test_mdrnk_basic():

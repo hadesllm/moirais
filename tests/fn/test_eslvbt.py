@@ -1,7 +1,7 @@
 """Tests for eslvbt.esl_var_beta_hat."""
 import numpy as np
 import pytest
-from moirais.fn.eslvbt import esl_var_beta_hat
+from morie.fn.eslvbt import esl_var_beta_hat
 
 
 def test_eslvbt_basic():

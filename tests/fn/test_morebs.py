@@ -1,7 +1,7 @@
 """Tests for morebs.empirical_bayes_moran."""
 import numpy as np
 import pytest
-from moirais.fn.morebs import empirical_bayes_moran
+from morie.fn.morebs import empirical_bayes_moran
 
 
 def test_morebs_basic():

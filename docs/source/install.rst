@@ -1,7 +1,7 @@
 Installation
 ============
 
-MOIRAIS targets Python ≥ 3.14 and R ≥ 4.3. Both languages are supported
+MORIE targets Python ≥ 3.14 and R ≥ 4.3. Both languages are supported
 independently; you do not need both unless you are running the full dual-language
 pipeline. Python 3.15 is the recommended primary version.
 
@@ -24,14 +24,14 @@ From PyPI (forthcoming public release):
 
 .. code-block:: bash
 
-   pip install moirais
+   pip install morie
 
 Editable install from source (development):
 
 .. code-block:: bash
 
    git clone <repo>
-   cd moirais/dev/sphinx/project
+   cd morie/dev/sphinx/project
 
    # Primary: Python 3.15 (recommended)
    python3.15 -m venv .venv
@@ -50,7 +50,7 @@ Editable install from source (development):
 
    The ``[carbon]`` extra (CodeCarbon emissions tracking) requires
    Python ≤ 3.14 due to pydantic-core Rust dependencies. On Python 3.15+,
-   MOIRAIS uses the built-in ``moirais.emissions`` tracker instead.
+   MORIE uses the built-in ``morie.emissions`` tracker instead.
 
 Editable install with all extras (creates ``.venv``, installs Python deps):
 
@@ -67,7 +67,7 @@ Install from local source:
 
 .. code-block:: r
 
-   install.packages("r-package/moirais", repos = NULL, type = "source")
+   install.packages("r-package/morie", repos = NULL, type = "source")
 
 Required R packages (installed automatically):
 
@@ -93,7 +93,7 @@ macOS
 
    # Python 3.15
    brew install python@3.15
-   pip install moirais
+   pip install morie
 
 Linux
 -----
@@ -102,7 +102,7 @@ Linux
 
    # Debian/Ubuntu
    sudo apt-get install r-base python3 python3-pip
-   pip3 install moirais
+   pip3 install morie
 
 Windows
 -------
@@ -111,28 +111,28 @@ Windows
 
    winget install -e --id RProject.R
    winget install -e --id Python.Python.3.14
-   pip install moirais
+   pip install morie
 
 Verifying the install
 ---------------------
 
 .. code-block:: bash
 
-   moirais list-modules          # prints the registered analysis modules
-   moirais doctor                # checks LLM providers, datasets, R, Docker
-   moirais --help
+   morie list-modules          # prints the registered analysis modules
+   morie doctor                # checks LLM providers, datasets, R, Docker
+   morie --help
 
 .. code-block:: r
 
-   library(moirais)
-   list_moirais_modules()
+   library(morie)
+   list_morie_modules()
 
 
 LLM provider setup
 ------------------
 
-MOIRAIS supports LLM providers tried in priority order. The FreeAPI client is
-vendored (``moirais.freeapi``) — no external SDK or API key required.
+MORIE supports LLM providers tried in priority order. The FreeAPI client is
+vendored (``morie.freeapi``) — no external SDK or API key required.
 
 Providers, in priority order:
 
@@ -145,5 +145,5 @@ Providers, in priority order:
 4. **Local fallback** — automatic. Keyword-matched help text, no
    network required.
 
-If no provider is configured, ``moirais ask`` returns a static help response.
-Run ``moirais doctor`` to see which providers are currently available.
+If no provider is configured, ``morie ask`` returns a static help response.
+Run ``morie doctor`` to see which providers are currently available.

@@ -1,7 +1,7 @@
 """Tests for hmsup.geron_supervised_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmsup import geron_supervised_learning
+from morie.fn.hmsup import geron_supervised_learning
 
 
 def test_hmsup_basic():

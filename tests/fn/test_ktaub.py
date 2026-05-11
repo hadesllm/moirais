@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.ktaub import ktaub
+from morie.fn.ktaub import ktaub
 
 
 class TestKtaub:

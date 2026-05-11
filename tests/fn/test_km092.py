@@ -1,7 +1,7 @@
 """Tests for km092.kamath_ch6_stereotypical_assoc."""
 import numpy as np
 import pytest
-from moirais.fn.km092 import kamath_ch6_stereotypical_assoc
+from morie.fn.km092 import kamath_ch6_stereotypical_assoc
 
 
 def test_km092_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.becch — BEC capacity."""
+"""Tests for morie.fn.becch — BEC capacity."""
 
 import pytest
 
-from moirais.fn.becch import becch
+from morie.fn.becch import becch
 
 
 class TestBecch:

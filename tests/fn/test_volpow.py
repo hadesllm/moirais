@@ -1,7 +1,7 @@
 """Tests for volpow.vol_power_variation."""
 import numpy as np
 import pytest
-from moirais.fn.volpow import vol_power_variation
+from morie.fn.volpow import vol_power_variation
 
 
 def test_volpow_basic():

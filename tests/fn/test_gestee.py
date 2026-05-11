@@ -1,7 +1,7 @@
 """Tests for gestee.gauss_subgaussian_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.gestee import gauss_subgaussian_estimator
+from morie.fn.gestee import gauss_subgaussian_estimator
 
 
 def test_gestee_basic():

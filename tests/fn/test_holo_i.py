@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.holo_i -- ROC curve."""
+"""Tests for morie.fn.holo_i -- ROC curve."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.holo_i import holo_roc
+from morie.fn.holo_i import holo_roc
 
 
 class TestHoloRoc:

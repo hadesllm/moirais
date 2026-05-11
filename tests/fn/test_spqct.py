@@ -1,7 +1,7 @@
 """Tests for spqct.schabenberger_quadrat_count_test."""
 import numpy as np
 import pytest
-from moirais.fn.spqct import schabenberger_quadrat_count_test
+from morie.fn.spqct import schabenberger_quadrat_count_test
 
 
 def test_spqct_basic():

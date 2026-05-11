@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.kmean — K-means clustering."""
+"""Tests for morie.fn.kmean — K-means clustering."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.kmean import kmean
-from moirais.fn._containers import KmeansRes
+from morie.fn.kmean import kmean
+from morie.fn._containers import KmeansRes
 
 
 class TestKmean:

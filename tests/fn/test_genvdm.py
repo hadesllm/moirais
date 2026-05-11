@@ -1,7 +1,7 @@
 """Tests for genvdm.d_study_decision."""
 import numpy as np
 import pytest
-from moirais.fn.genvdm import d_study_decision
+from morie.fn.genvdm import d_study_decision
 
 
 def test_genvdm_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pskde."""
+"""Tests for morie.fn.pskde."""
 
 import numpy as np
 import pytest
-from moirais.fn.pskde import pskde
+from morie.fn.pskde import pskde
 
 
 class TestPskde:

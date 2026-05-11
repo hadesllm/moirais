@@ -1,6 +1,6 @@
 """Tests for argen.py - AR process generation."""
 import numpy as np
-from moirais.fn.argen import ar_generate_fn, argen
+from morie.fn.argen import ar_generate_fn, argen
 
 
 def test_argen_returns_result():

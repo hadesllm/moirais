@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.isdyn."""
+"""Tests for morie.fn.isdyn."""
 
 import numpy as np
 import pytest
-from moirais.fn.isdyn import isdyn
+from morie.fn.isdyn import isdyn
 
 
 class TestIsdyn:

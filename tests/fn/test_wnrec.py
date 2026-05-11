@@ -1,7 +1,7 @@
 """Test rectangular_window (wnrec)."""
 import numpy as np
-from moirais.fn.wnrec import rectangular_window, wnrec
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wnrec import rectangular_window, wnrec
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWnrec:

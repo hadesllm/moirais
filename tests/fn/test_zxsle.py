@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsle -- Spatial elastic net"""
+"""Tests for morie.fn.zxsle -- Spatial elastic net"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsle import spatial_elastic
+from morie.fn.zxsle import spatial_elastic
 
 
 class TestSpatialElastic:

@@ -1,7 +1,7 @@
 """Tests for hmprio.geron_perceiver_io."""
 import numpy as np
 import pytest
-from moirais.fn.hmprio import geron_perceiver_io
+from morie.fn.hmprio import geron_perceiver_io
 
 
 def test_hmprio_basic():

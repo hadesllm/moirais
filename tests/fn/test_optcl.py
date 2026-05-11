@@ -1,7 +1,7 @@
 """Tests for optcl.optimal_classification."""
 import numpy as np
 import pytest
-from moirais.fn.optcl import optimal_classification
+from morie.fn.optcl import optimal_classification
 
 
 def test_optcl_basic():

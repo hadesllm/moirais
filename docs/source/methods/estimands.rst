@@ -1,23 +1,23 @@
 Causal Estimands
 =================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS provides a full suite of causal estimands. This page defines each
+MORIE provides a full suite of causal estimands. This page defines each
 estimand and maps it to the corresponding Python function.
 
 Summary
 -------
 
-- **ATE** — Average Treatment Effect (all units): :func:`moirais.causal.run_propensity_ipw_analysis`.
-- **ATT / ATTE** — Average Treatment Effect on the Treated (treated units only): :func:`moirais.causal.estimate_att`.
-- **ATC** — Average Treatment Effect on the Controls (control units only): :func:`moirais.causal.estimate_atc`.
-- **GATE** — Group Average Treatment Effect (subgroups, e.g. gender): :func:`moirais.causal.estimate_gate`.
-- **CATE** — Conditional Average Treatment Effect (each individual unit): :func:`moirais.causal.estimate_cate`.
-- **LATE** — Local Average Treatment Effect (compliers, IV context): :func:`moirais.causal.estimate_late`.
-- **PLR-ATE** — DML--PLR ATE (all units): :func:`moirais.effects.estimate_ate`.
-- **IRM-ATE** — DML--IRM ATE, heterogeneous (all units): :func:`moirais.causal.estimate_irm`.
-- **DR-ATE** — AIPW doubly robust ATE (all units): :func:`moirais.causal.estimate_aipw`.
+- **ATE** — Average Treatment Effect (all units): :func:`morie.causal.run_propensity_ipw_analysis`.
+- **ATT / ATTE** — Average Treatment Effect on the Treated (treated units only): :func:`morie.causal.estimate_att`.
+- **ATC** — Average Treatment Effect on the Controls (control units only): :func:`morie.causal.estimate_atc`.
+- **GATE** — Group Average Treatment Effect (subgroups, e.g. gender): :func:`morie.causal.estimate_gate`.
+- **CATE** — Conditional Average Treatment Effect (each individual unit): :func:`morie.causal.estimate_cate`.
+- **LATE** — Local Average Treatment Effect (compliers, IV context): :func:`morie.causal.estimate_late`.
+- **PLR-ATE** — DML--PLR ATE (all units): :func:`morie.effects.estimate_ate`.
+- **IRM-ATE** — DML--IRM ATE, heterogeneous (all units): :func:`morie.causal.estimate_irm`.
+- **DR-ATE** — AIPW doubly robust ATE (all units): :func:`morie.causal.estimate_aipw`.
 
 ---
 
@@ -60,7 +60,7 @@ treated units receive weight 1 and controls receive weight
 The ATT is the relevant estimand when the treated group is the primary
 policy target (e.g. cannabis users in CPADS).
 
-**Python entry point**: :func:`moirais.causal.estimate_att`
+**Python entry point**: :func:`morie.causal.estimate_att`
 
 ---
 
@@ -77,7 +77,7 @@ Identification uses reversed weights: control units receive weight 1;
 treated units receive weight
 :math:`(1 - \hat{e}(X_i)) / \hat{e}(X_i)`.
 
-**Python entry point**: :func:`moirais.causal.estimate_atc`
+**Python entry point**: :func:`morie.causal.estimate_atc`
 
 ---
 
@@ -91,14 +91,14 @@ group variable :math:`G \in \{g_1, \ldots, g_K\}`:
 
    \text{GATE}_k = \mathbb{E}[Y_i(1) - Y_i(0) \mid G_i = g_k]
 
-MOIRAIS computes GATE by applying the AIPW doubly-robust influence function
+MORIE computes GATE by applying the AIPW doubly-robust influence function
 within each stratum of :math:`G`.  The result is a DataFrame with one row
 per group, including AIPW ATE estimate, SE, 95% CI, and sample size.
 
 GATE is useful for examining heterogeneity by gender, age group, province,
 or any other subgroup of substantive interest.
 
-**Python entry point**: :func:`moirais.causal.estimate_gate`
+**Python entry point**: :func:`morie.causal.estimate_gate`
 
 ---
 
@@ -112,7 +112,7 @@ covariates :math:`X`:
 
    \tau(x) = \mathbb{E}[Y_i(1) - Y_i(0) \mid X_i = x]
 
-MOIRAIS implements the **T-learner** (two separate outcome models):
+MORIE implements the **T-learner** (two separate outcome models):
 
 1. Fit :math:`\hat{\mu}_1(X)` on treated units :math:`\{i : T_i = 1\}`.
 2. Fit :math:`\hat{\mu}_0(X)` on control units :math:`\{i : T_i = 0\}`.
@@ -125,7 +125,7 @@ And the **S-learner** (single model with treatment as feature):
 
 Both learners use :class:`sklearn.ensemble.RandomForestRegressor` by default.
 
-**Python entry point**: :func:`moirais.causal.estimate_cate`
+**Python entry point**: :func:`morie.causal.estimate_cate`
 
 ---
 
@@ -150,12 +150,12 @@ identifies the LATE (also called the **Complier Average Causal Effect**):
 This is the ATE for **compliers** — units who take up treatment when
 :math:`Z=1` and do not when :math:`Z=0`.
 
-With covariates, MOIRAIS uses **2SLS** (two-stage least squares):
+With covariates, MORIE uses **2SLS** (two-stage least squares):
 
 - Stage 1: :math:`\hat{T}_i = \hat{\gamma}_0 + \hat{\gamma}_1 Z_i + \hat{\gamma}_2 X_i`
 - Stage 2: :math:`Y_i = \theta \hat{T}_i + \beta X_i + \varepsilon_i`
 
-**Python entry point**: :func:`moirais.causal.estimate_late`
+**Python entry point**: :func:`morie.causal.estimate_late`
 
 ---
 

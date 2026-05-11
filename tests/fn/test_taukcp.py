@@ -1,7 +1,7 @@
 """Tests for taukcp.kendalls_tau_copula."""
 import numpy as np
 import pytest
-from moirais.fn.taukcp import kendalls_tau_copula
+from morie.fn.taukcp import kendalls_tau_copula
 
 
 def test_taukcp_basic():

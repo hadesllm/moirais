@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.fzinf."""
+"""Tests for morie.fn.fzinf."""
 import numpy as np
 import pytest
-from moirais.fn.fzinf import fzinf
+from morie.fn.fzinf import fzinf
 
 
 @pytest.mark.xfail(reason="np.trapz removed in numpy 2.x", strict=False)
@@ -14,7 +14,7 @@ def test_fzinf_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.fzinf import cheatsheet
+    from morie.fn.fzinf import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

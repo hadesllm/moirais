@@ -1,7 +1,7 @@
 """Tests for jodif.joseph_differencing."""
 import numpy as np
 import pytest
-from moirais.fn.jodif import joseph_differencing
+from morie.fn.jodif import joseph_differencing
 
 
 def test_jodif_basic():

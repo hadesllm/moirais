@@ -1,7 +1,7 @@
 """Tests for hrzsmsci.horowitz_sms_confidence."""
 import numpy as np
 import pytest
-from moirais.fn.hrzsmsci import horowitz_sms_confidence
+from morie.fn.hrzsmsci import horowitz_sms_confidence
 
 
 def test_hrzsmsci_basic():

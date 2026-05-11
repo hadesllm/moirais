@@ -1,7 +1,7 @@
 """Test geexp."""
 import numpy as np
 import pytest
-from moirais.fn.geexp import geexp
+from morie.fn.geexp import geexp
 
 
 def test_geexp_basic():

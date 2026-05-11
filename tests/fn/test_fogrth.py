@@ -1,7 +1,7 @@
 """Test fogrth."""
 import numpy as np
 import pytest
-from moirais.fn.fogrth import fogrth
+from morie.fn.fogrth import fogrth
 
 
 def test_fogrth_basic():

@@ -1,7 +1,7 @@
 """Tests for rmsef.rmse_metric."""
 import numpy as np
 import pytest
-from moirais.fn.rmsef import rmse_metric
+from morie.fn.rmsef import rmse_metric
 
 
 def test_rmsef_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxclr -- Centered log-ratio spatial"""
+"""Tests for morie.fn.zxclr -- Centered log-ratio spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxclr import clr_spatial
+from morie.fn.zxclr import clr_spatial
 
 
 class TestClrSpatial:

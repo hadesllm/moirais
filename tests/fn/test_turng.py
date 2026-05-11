@@ -1,7 +1,7 @@
 """Test turng."""
 import numpy as np
 import pytest
-from moirais.fn.turng import turng
+from morie.fn.turng import turng
 
 
 def test_turng_basic():

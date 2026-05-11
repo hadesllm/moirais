@@ -1,7 +1,7 @@
 """Tests for hyplc.harmonic_mean_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.hyplc import harmonic_mean_estimator
+from morie.fn.hyplc import harmonic_mean_estimator
 
 
 def test_hyplc_basic():

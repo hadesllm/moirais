@@ -1,7 +1,7 @@
 """Tests for bdintp.bound_intersection."""
 import numpy as np
 import pytest
-from moirais.fn.bdintp import bound_intersection
+from morie.fn.bdintp import bound_intersection
 
 
 def test_bdintp_basic():

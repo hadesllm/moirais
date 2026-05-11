@@ -1,7 +1,7 @@
 """Test entan."""
 import pytest
 import numpy as np
-from moirais.fn.entan import entanglement_entropy
+from morie.fn.entan import entanglement_entropy
 
 
 def test_entan_maximally_entangled():

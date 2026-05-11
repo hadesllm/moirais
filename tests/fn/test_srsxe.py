@@ -1,7 +1,7 @@
 """Test srsxe."""
 import numpy as np
 import pytest
-from moirais.fn.srsxe import srsxe
+from morie.fn.srsxe import srsxe
 
 
 def test_srsxe_basic():

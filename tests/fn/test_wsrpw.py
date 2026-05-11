@@ -1,7 +1,7 @@
 """Tests for wsrpw.wilcoxon_power."""
 import numpy as np
 import pytest
-from moirais.fn.wsrpw import wilcoxon_power
+from morie.fn.wsrpw import wilcoxon_power
 
 
 def test_wsrpw_basic():

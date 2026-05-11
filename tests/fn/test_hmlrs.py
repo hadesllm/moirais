@@ -1,7 +1,7 @@
 """Tests for hmlrs.geron_learning_rate_schedule."""
 import numpy as np
 import pytest
-from moirais.fn.hmlrs import geron_learning_rate_schedule
+from morie.fn.hmlrs import geron_learning_rate_schedule
 
 
 def test_hmlrs_basic():

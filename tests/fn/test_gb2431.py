@@ -1,7 +1,7 @@
 """Tests for gb2431.gibbons_binomial_beta_link."""
 import numpy as np
 import pytest
-from moirais.fn.gb2431 import gibbons_binomial_beta_link
+from morie.fn.gb2431 import gibbons_binomial_beta_link
 
 
 def test_gb2431_basic():

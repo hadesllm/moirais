@@ -1,7 +1,7 @@
 """Tests for studres.studentized_residual."""
 import numpy as np
 import pytest
-from moirais.fn.studres import studres as studentized_residual
+from morie.fn.studres import studres as studentized_residual
 
 
 def test_studres_basic():

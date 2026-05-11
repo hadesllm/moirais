@@ -1,7 +1,7 @@
 """Tests for volharm.vol_harmonic_volatility."""
 import numpy as np
 import pytest
-from moirais.fn.volharm import vol_harmonic_volatility
+from morie.fn.volharm import vol_harmonic_volatility
 
 
 def test_volharm_basic():

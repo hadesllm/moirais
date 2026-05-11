@@ -1,7 +1,7 @@
 """Tests for tqdist.turboquant_distortion_bound."""
 import numpy as np
 import pytest
-from moirais.fn.tqdist import turboquant_distortion_bound
+from morie.fn.tqdist import turboquant_distortion_bound
 
 
 def test_tqdist_basic():

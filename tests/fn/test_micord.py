@@ -1,7 +1,7 @@
 """Tests for micord.mi_pmm."""
 import numpy as np
 import pytest
-from moirais.fn.micord import mi_pmm
+from morie.fn.micord import mi_pmm
 
 
 def test_micord_basic():

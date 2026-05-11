@@ -1,7 +1,7 @@
 """Tests for cvxqp.boyd_quadratic_program."""
 import numpy as np
 import pytest
-from moirais.fn.cvxqp import boyd_quadratic_program
+from morie.fn.cvxqp import boyd_quadratic_program
 
 
 def test_cvxqp_basic():

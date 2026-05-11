@@ -1,7 +1,7 @@
 """Tests for magsd.ma_glass_delta."""
 import numpy as np
 import pytest
-from moirais.fn.magsd import ma_glass_delta
+from morie.fn.magsd import ma_glass_delta
 
 
 def test_magsd_basic():

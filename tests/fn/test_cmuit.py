@@ -1,7 +1,7 @@
 """Tests for cmuit.conditional_mutual_information."""
 import numpy as np
 import pytest
-from moirais.fn.cmuit import conditional_mutual_information
+from morie.fn.cmuit import conditional_mutual_information
 
 
 def test_cmuit_basic():

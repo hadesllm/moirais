@@ -1,7 +1,7 @@
 """Tests for icc3.icc_two_way_mixed."""
 import numpy as np
 import pytest
-from moirais.fn.icc3 import icc_two_way_mixed
+from morie.fn.icc3 import icc_two_way_mixed
 
 
 def test_icc3_basic():

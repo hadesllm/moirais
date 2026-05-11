@@ -1,7 +1,7 @@
 """Tests for otmsw.ot_max_sliced_w."""
 import numpy as np
 import pytest
-from moirais.fn.otmsw import ot_max_sliced_w
+from morie.fn.otmsw import ot_max_sliced_w
 
 
 def test_otmsw_basic():

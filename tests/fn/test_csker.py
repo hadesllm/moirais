@@ -1,7 +1,7 @@
 """Test csker."""
 import numpy as np
 import pytest
-from moirais.fn.csker import csker
+from morie.fn.csker import csker
 
 
 def test_csker_basic():

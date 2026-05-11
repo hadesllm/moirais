@@ -1,7 +1,7 @@
 """Tests for evvarpot.evt_pot_var."""
 import numpy as np
 import pytest
-from moirais.fn.evvarpot import evt_pot_var
+from morie.fn.evvarpot import evt_pot_var
 
 
 def test_evvarpot_basic():

@@ -1,7 +1,7 @@
 """Tests for jason_brownlee_machine_learning_mastery_with_r5u5.jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_5."""
 import numpy as np
 import pytest
-from moirais.fn.jason_brownlee_machine_learning_mastery_with_r5u5 import jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_5
+from morie.fn.jason_brownlee_machine_learning_mastery_with_r5u5 import jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_5
 
 
 def test_jason_brownlee_machine_learning_mastery_with_r5u5_basic():

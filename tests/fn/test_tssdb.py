@@ -1,7 +1,7 @@
 """Test tssdb."""
 import numpy as np
 import pytest
-from moirais.fn.tssdb import tssdb
+from morie.fn.tssdb import tssdb
 
 
 def test_tssdb_basic():

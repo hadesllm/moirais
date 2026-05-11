@@ -1,7 +1,7 @@
 """Tests for stkprd."""
 import numpy as np
 import pytest
-from moirais.fn.stkprd import stkprd
+from morie.fn.stkprd import stkprd
 
 
 def test_stkprd_basic():
@@ -27,5 +27,5 @@ def test_stkprd_no_data():
 
 
 def test_stkprd_alias():
-    from moirais.fn.stkprd import stkprd
+    from morie.fn.stkprd import stkprd
     assert stkprd is stkprd

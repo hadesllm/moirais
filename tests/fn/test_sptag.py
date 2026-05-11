@@ -1,7 +1,7 @@
 """Tests for sptag.spatial_agreement."""
 import numpy as np
 import pytest
-from moirais.fn.sptag import spatial_agreement
+from morie.fn.sptag import spatial_agreement
 
 
 def test_sptag_basic():

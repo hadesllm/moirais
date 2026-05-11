@@ -1,7 +1,7 @@
 """Test rwksp."""
 import numpy as np
 import pytest
-from moirais.fn.rwksp import rwksp
+from morie.fn.rwksp import rwksp
 
 
 def test_rwksp_basic():

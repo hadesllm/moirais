@@ -1,7 +1,7 @@
 """Tests for orfgrf.orthogonal_random_forest."""
 import numpy as np
 import pytest
-from moirais.fn.orfgrf import orthogonal_random_forest
+from morie.fn.orfgrf import orthogonal_random_forest
 
 
 def test_orfgrf_basic():

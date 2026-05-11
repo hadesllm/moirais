@@ -1,7 +1,7 @@
 """Tests for sptau.spatial_autocorrelation."""
 import numpy as np
 import pytest
-from moirais.fn.sptau import spatial_autocorrelation
+from morie.fn.sptau import spatial_autocorrelation
 
 
 def test_sptau_basic():

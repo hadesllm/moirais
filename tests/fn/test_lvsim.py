@@ -1,7 +1,7 @@
 """Test lvsim."""
 import numpy as np
 import pytest
-from moirais.fn.lvsim import lvsim
+from morie.fn.lvsim import lvsim
 
 
 def test_lvsim_basic():

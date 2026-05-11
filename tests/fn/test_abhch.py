@@ -1,7 +1,7 @@
 """Test abhch."""
 import numpy as np
 import pytest
-from moirais.fn.abhch import abhch
+from morie.fn.abhch import abhch
 
 
 def test_abhch_basic():

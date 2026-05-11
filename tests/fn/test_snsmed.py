@@ -1,7 +1,7 @@
 """Tests for snsmed.sensitivity_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.snsmed import sensitivity_mediation
+from morie.fn.snsmed import sensitivity_mediation
 
 
 def test_snsmed_basic():

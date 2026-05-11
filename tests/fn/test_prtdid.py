@@ -1,7 +1,7 @@
 """Tests for prtdid.partition_did."""
 import numpy as np
 import pytest
-from moirais.fn.prtdid import partition_did
+from morie.fn.prtdid import partition_did
 
 
 def test_prtdid_basic():

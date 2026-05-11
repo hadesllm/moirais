@@ -1,7 +1,7 @@
 """Tests for cvxnch.boyd_nuclear_norm."""
 import numpy as np
 import pytest
-from moirais.fn.cvxnch import boyd_nuclear_norm
+from morie.fn.cvxnch import boyd_nuclear_norm
 
 
 def test_cvxnch_basic():

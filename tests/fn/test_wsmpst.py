@@ -1,7 +1,7 @@
 """Tests for wsmpst.wasserman_plug_in_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.wsmpst import wasserman_plug_in_estimator
+from morie.fn.wsmpst import wasserman_plug_in_estimator
 
 
 def test_wsmpst_basic():

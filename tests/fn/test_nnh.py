@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.nnh -- number needed to harm."""
+"""Tests for morie.fn.nnh -- number needed to harm."""
 
 import pytest
-from moirais.fn.nnh import number_needed_to_harm
+from morie.fn.nnh import number_needed_to_harm
 
 
 class TestNNH:
@@ -14,7 +14,7 @@ class TestNNH:
 
     def test_same_as_nnt_magnitude(self):
         """NNH magnitude should match NNT for same inputs."""
-        from moirais.fn.nnt import number_needed_to_treat
+        from morie.fn.nnt import number_needed_to_treat
         nnt = number_needed_to_treat(a=20, b=80, c=10, d=90)
         nnh = number_needed_to_harm(a=20, b=80, c=10, d=90)
         assert nnh.estimate == pytest.approx(nnt.estimate, rel=1e-10)

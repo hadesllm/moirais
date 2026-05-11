@@ -1,7 +1,7 @@
 """Tests for hmauxpt.geron_auxiliary_task_pretraining."""
 import numpy as np
 import pytest
-from moirais.fn.hmauxpt import geron_auxiliary_task_pretraining
+from morie.fn.hmauxpt import geron_auxiliary_task_pretraining
 
 
 def test_hmauxpt_basic():

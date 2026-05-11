@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sw -- Shapiro-Wilk test for normality."""
+"""Tests for morie.fn.sw -- Shapiro-Wilk test for normality."""
 
 import numpy as np
 import pytest
-from moirais.fn.sw import shapiro_wilk_test
+from morie.fn.sw import shapiro_wilk_test
 
 
 class TestShapiroWilk:

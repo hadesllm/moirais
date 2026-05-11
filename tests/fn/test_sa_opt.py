@@ -1,7 +1,7 @@
 """Tests for sa_opt.simulated_annealing."""
 import numpy as np
 import pytest
-from moirais.fn.sa_opt import simulated_annealing
+from morie.fn.sa_opt import simulated_annealing
 
 
 def test_sa_opt_basic():

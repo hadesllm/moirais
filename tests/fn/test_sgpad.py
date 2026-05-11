@@ -1,7 +1,7 @@
 """Test pad_signal (sgpad)."""
 import numpy as np
-from moirais.fn.sgpad import pad_signal, sgpad
-from moirais.fn._containers import SignalResult
+from morie.fn.sgpad import pad_signal, sgpad
+from morie.fn._containers import SignalResult
 
 
 class TestPadSignal:

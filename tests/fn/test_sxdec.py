@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sxdec -- Sex-specific effect decomposition."""
+"""Tests for morie.fn.sxdec -- Sex-specific effect decomposition."""
 
 import numpy as np
 import pytest
-from moirais.fn.sxdec import sxdec
+from morie.fn.sxdec import sxdec
 
 
 class TestSxdec:

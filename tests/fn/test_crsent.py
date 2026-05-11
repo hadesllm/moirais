@@ -1,7 +1,7 @@
 """Tests for crsent.cross_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.crsent import cross_entropy
+from morie.fn.crsent import cross_entropy
 
 
 def test_crsent_basic():

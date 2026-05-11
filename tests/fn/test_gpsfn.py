@@ -1,7 +1,7 @@
 """Tests for gpsfn.gp_sparse_inducing."""
 import numpy as np
 import pytest
-from moirais.fn.gpsfn import gp_sparse_inducing
+from morie.fn.gpsfn import gp_sparse_inducing
 
 
 def test_gpsfn_basic():

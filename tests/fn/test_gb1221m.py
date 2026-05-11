@@ -1,7 +1,7 @@
 """Tests for gb1221m.gibbons_friedman_mult."""
 import numpy as np
 import pytest
-from moirais.fn.gb1221m import gibbons_friedman_mult
+from morie.fn.gb1221m import gibbons_friedman_mult
 
 
 def test_gb1221m_basic():

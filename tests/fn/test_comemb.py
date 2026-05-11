@@ -1,7 +1,7 @@
 """Tests for comemb.node2vec."""
 import numpy as np
 import pytest
-from moirais.fn.comemb import node2vec
+from morie.fn.comemb import node2vec
 
 
 def test_comemb_basic():

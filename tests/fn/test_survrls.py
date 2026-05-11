@@ -1,7 +1,7 @@
 """Tests for survrls.restricted_lifetime."""
 import numpy as np
 import pytest
-from moirais.fn.survrls import restricted_lifetime
+from morie.fn.survrls import restricted_lifetime
 
 
 def test_survrls_basic():

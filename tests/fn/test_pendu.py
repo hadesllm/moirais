@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.pendu."""
+"""Tests for morie.fn.pendu."""
 import numpy as np
-from moirais.fn.pendu import pendulum
+from morie.fn.pendu import pendulum
 
 
 def test_pendu_smoke():
@@ -12,7 +12,7 @@ def test_pendu_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.pendu import cheatsheet
+    from morie.fn.pendu import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for aitdrf.dirichlet_fit_mom."""
 import numpy as np
 import pytest
-from moirais.fn.aitdrf import dirichlet_fit_mom
+from morie.fn.aitdrf import dirichlet_fit_mom
 
 
 def test_aitdrf_basic():

@@ -1,7 +1,7 @@
 """Tests for niccgg.nakagawa_marginal_r2."""
 import numpy as np
 import pytest
-from moirais.fn.niccgg import nakagawa_marginal_r2
+from morie.fn.niccgg import nakagawa_marginal_r2
 
 
 def test_niccgg_basic():

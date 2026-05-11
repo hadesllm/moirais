@@ -1,7 +1,7 @@
 """Tests for reidR.reidentification_risk."""
 import numpy as np
 import pytest
-from moirais.fn.reidR import reidentification_risk
+from morie.fn.reidR import reidentification_risk
 
 
 def test_reidR_basic():

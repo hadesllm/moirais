@@ -1,7 +1,7 @@
 """Test fosimp."""
 import numpy as np
 import pytest
-from moirais.fn.fosimp import fosimp
+from morie.fn.fosimp import fosimp
 
 
 def test_fosimp_basic():

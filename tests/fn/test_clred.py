@@ -1,7 +1,7 @@
 """Test clred."""
 import numpy as np
 import pytest
-from moirais.fn.clred import clred
+from morie.fn.clred import clred
 
 
 def test_clred_basic():

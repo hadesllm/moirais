@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ljbxt -- Ljung-Box test."""
+"""Tests for morie.fn.ljbxt -- Ljung-Box test."""
 import numpy as np
 import pytest
-from moirais.fn.ljbxt import ljung_box
+from morie.fn.ljbxt import ljung_box
 
 
 class TestLjungBox:
@@ -21,5 +21,5 @@ class TestLjungBox:
         assert res.extra["Q"] > 0
 
     def test_cheatsheet(self):
-        from moirais.fn.ljbxt import cheatsheet
+        from morie.fn.ljbxt import cheatsheet
         assert isinstance(cheatsheet(), str)

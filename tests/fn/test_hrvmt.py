@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hrvmt -- HRV metrics."""
+"""Tests for morie.fn.hrvmt -- HRV metrics."""
 
 import numpy as np
 
-from moirais.fn.hrvmt import hrvmt
+from morie.fn.hrvmt import hrvmt
 
 
 class TestHrvMt:

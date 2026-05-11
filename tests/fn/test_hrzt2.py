@@ -1,7 +1,7 @@
 """Tests for hrzt2.horowitz_local_ate."""
 import numpy as np
 import pytest
-from moirais.fn.hrzt2 import horowitz_local_ate
+from morie.fn.hrzt2 import horowitz_local_ate
 
 
 def test_hrzt2_basic():

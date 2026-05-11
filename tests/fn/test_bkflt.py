@@ -1,7 +1,7 @@
 """Test bkflt."""
 import numpy as np
 import pytest
-from moirais.fn.bkflt import bkflt
+from morie.fn.bkflt import bkflt
 
 
 def test_bkflt_basic():

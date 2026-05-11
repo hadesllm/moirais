@@ -1,7 +1,7 @@
 """Test fotrsg."""
 import numpy as np
 import pytest
-from moirais.fn.fotrsg import fotrsg
+from morie.fn.fotrsg import fotrsg
 
 
 def test_fotrsg_basic():

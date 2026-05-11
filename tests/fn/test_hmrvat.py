@@ -1,7 +1,7 @@
 """Tests for hmrvat.geron_rnn_visual_attention."""
 import numpy as np
 import pytest
-from moirais.fn.hmrvat import geron_rnn_visual_attention
+from morie.fn.hmrvat import geron_rnn_visual_attention
 
 
 def test_hmrvat_basic():

@@ -1,7 +1,7 @@
 """Tests for eslprq.esl_prototype_lvq."""
 import numpy as np
 import pytest
-from moirais.fn.eslprq import esl_prototype_lvq
+from morie.fn.eslprq import esl_prototype_lvq
 
 
 def test_eslprq_basic():

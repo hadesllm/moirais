@@ -1,7 +1,7 @@
 """Test ppmkd."""
 import numpy as np
 import pytest
-from moirais.fn.ppmkd import ppmkd
+from morie.fn.ppmkd import ppmkd
 
 
 def test_ppmkd_basic():

@@ -1,7 +1,7 @@
 """Test clspc."""
 import numpy as np
 import pytest
-from moirais.fn.clspc import clspc
+from morie.fn.clspc import clspc
 
 
 def test_clspc_basic():

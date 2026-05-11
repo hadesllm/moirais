@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmala -- Alpha-NOMINATE acceptance rate"""
+"""Tests for morie.fn.nmala -- Alpha-NOMINATE acceptance rate"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmala import alpha_nom_accept
+from morie.fn.nmala import alpha_nom_accept
 
 
 class TestAlphaNomAccept:

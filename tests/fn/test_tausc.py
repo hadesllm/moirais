@@ -1,6 +1,6 @@
 """Tests for tau_scale."""
 import numpy as np, pytest
-from moirais.fn.tausc import tau_scale
+from morie.fn.tausc import tau_scale
 
 
 class TestTauScale:

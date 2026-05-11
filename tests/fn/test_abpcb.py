@@ -1,7 +1,7 @@
 """Test abpcb."""
 import numpy as np
 import pytest
-from moirais.fn.abpcb import abpcb
+from morie.fn.abpcb import abpcb
 
 
 def test_abpcb_basic():

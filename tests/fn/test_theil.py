@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.theil — Theil-Sen estimator."""
+"""Tests for morie.fn.theil — Theil-Sen estimator."""
 import numpy as np
 import pytest
-from moirais.fn.theil import theil_sen
+from morie.fn.theil import theil_sen
 
 
 class TestTheilSen:

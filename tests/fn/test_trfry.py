@@ -1,7 +1,7 @@
 """Test trfry."""
 import numpy as np
 import pytest
-from moirais.fn.trfry import trfry
+from morie.fn.trfry import trfry
 
 
 def test_trfry_basic():

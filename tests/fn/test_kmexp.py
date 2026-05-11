@@ -1,7 +1,7 @@
 """Tests for kmexp.kamath_memorization_exposure."""
 import numpy as np
 import pytest
-from moirais.fn.kmexp import kamath_memorization_exposure
+from morie.fn.kmexp import kamath_memorization_exposure
 
 
 def test_kmexp_basic():

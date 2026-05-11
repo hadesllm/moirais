@@ -1,7 +1,7 @@
 """Tests for remlf.reml_log_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.remlf import reml_log_likelihood
+from morie.fn.remlf import reml_log_likelihood
 
 
 def test_remlf_basic():

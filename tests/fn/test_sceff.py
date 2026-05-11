@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sceff — score-based efficient estimation."""
+"""Tests for morie.fn.sceff — score-based efficient estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sceff import sceff
+from morie.fn.sceff import sceff
 
 
 def test_normal_mean():

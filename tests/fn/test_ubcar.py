@@ -1,7 +1,7 @@
 """Test ubcar."""
 import numpy as np
 import pytest
-from moirais.fn.ubcar import ubcar
+from morie.fn.ubcar import ubcar
 
 
 def test_ubcar_basic():

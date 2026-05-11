@@ -1,7 +1,7 @@
 """Test hytss."""
 import numpy as np
 import pytest
-from moirais.fn.hytss import hytss
+from morie.fn.hytss import hytss
 
 
 def test_hytss_basic():

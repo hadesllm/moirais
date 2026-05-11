@@ -1,7 +1,7 @@
 """Tests for mtpath.meta_path."""
 import numpy as np
 import pytest
-from moirais.fn.mtpath import meta_path
+from morie.fn.mtpath import meta_path
 
 
 def test_mtpath_basic():

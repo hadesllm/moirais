@@ -1,7 +1,7 @@
 """Tests for rgelbow.rangayyan_kmeans_elbow."""
 import numpy as np
 import pytest
-from moirais.fn.rgelbow import rangayyan_kmeans_elbow
+from morie.fn.rgelbow import rangayyan_kmeans_elbow
 
 
 def test_rgelbow_basic():

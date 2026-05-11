@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeby2 -- BYM2 reparameterized model"""
+"""Tests for morie.fn.zeby2 -- BYM2 reparameterized model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeby2 import bym2_model
+from morie.fn.zeby2 import bym2_model
 
 
 class TestBym2Model:

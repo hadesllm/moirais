@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.stk — space-time K."""
+"""Tests for morie.fn.stk — space-time K."""
 import numpy as np
-from moirais.fn.stk import space_time_k
+from morie.fn.stk import space_time_k
 
 
 class TestSpaceTimeK:

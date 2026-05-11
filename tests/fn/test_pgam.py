@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pgam — gamma CDF."""
+"""Tests for morie.fn.pgam — gamma CDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pgam import pgamma
+from morie.fn.pgam import pgamma
 
 
 class TestPgamma:

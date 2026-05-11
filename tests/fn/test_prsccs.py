@@ -1,7 +1,7 @@
 """Tests for prsccs.prs_cs."""
 import numpy as np
 import pytest
-from moirais.fn.prsccs import prs_cs
+from morie.fn.prsccs import prs_cs
 
 
 def test_prsccs_basic():

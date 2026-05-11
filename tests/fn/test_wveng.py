@@ -1,6 +1,6 @@
 """Tests for wveng.py - Wavelet energy distribution."""
 import numpy as np
-from moirais.fn.wveng import wavelet_energy, wveng
+from morie.fn.wveng import wavelet_energy, wveng
 
 
 def test_wveng_returns_descriptive_result():

@@ -1,7 +1,7 @@
 """Tests for cfahi -- Higher-order CFA."""
 import numpy as np
-from moirais.fn.cfahi import cfa_hierarchical
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cfahi import cfa_hierarchical
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCfaHierarchical:

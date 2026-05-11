@@ -1,6 +1,6 @@
 """Tests for bootstrap_two_sample."""
 import numpy as np, pytest
-from moirais.fn.boot2 import bootstrap_two_sample
+from morie.fn.boot2 import bootstrap_two_sample
 
 
 class TestBootstrapTwoSample:

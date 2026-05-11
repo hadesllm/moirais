@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cvmsv -- Cramer-von Mises test."""
+"""Tests for morie.fn.cvmsv -- Cramer-von Mises test."""
 
 import numpy as np
 import pytest
-from moirais.fn.cvmsv import cramer_von_mises
+from morie.fn.cvmsv import cramer_von_mises
 
 
 class TestCramerVonMises:

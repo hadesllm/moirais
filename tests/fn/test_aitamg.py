@@ -1,7 +1,7 @@
 """Tests for aitamg.aitchison_amalgamation."""
 import numpy as np
 import pytest
-from moirais.fn.aitamg import aitchison_amalgamation
+from morie.fn.aitamg import aitchison_amalgamation
 
 
 def test_aitamg_basic():

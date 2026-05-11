@@ -1,7 +1,7 @@
 """Tests for sppql.schabenberger_pql_glmm."""
 import numpy as np
 import pytest
-from moirais.fn.sppql import schabenberger_pql_glmm
+from morie.fn.sppql import schabenberger_pql_glmm
 
 
 def test_sppql_basic():

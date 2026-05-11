@@ -1,7 +1,7 @@
 """Tests for gtrf.graph_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.gtrf import graph_transformer
+from morie.fn.gtrf import graph_transformer
 
 
 def test_gtrf_basic():

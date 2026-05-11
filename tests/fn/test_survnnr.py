@@ -1,7 +1,7 @@
 """Tests for survnnr.survival_neural_net."""
 import numpy as np
 import pytest
-from moirais.fn.survnnr import survival_neural_net
+from morie.fn.survnnr import survival_neural_net
 
 
 def test_survnnr_basic():

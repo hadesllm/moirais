@@ -1,7 +1,7 @@
 """Tests for rghier.rangayyan_hierarchical_clust."""
 import numpy as np
 import pytest
-from moirais.fn.rghier import rangayyan_hierarchical_clust
+from morie.fn.rghier import rangayyan_hierarchical_clust
 
 
 def test_rghier_basic():

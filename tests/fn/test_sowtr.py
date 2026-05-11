@@ -1,7 +1,7 @@
 """Test sowtr."""
 import numpy as np
 import pytest
-from moirais.fn.sowtr import sowtr
+from morie.fn.sowtr import sowtr
 
 
 def test_sowtr_basic():

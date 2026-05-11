@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.oipw1 — IPW for placement effect."""
+"""Tests for morie.fn.oipw1 — IPW for placement effect."""
 
 import numpy as np
-from moirais.fn.oipw1 import otis_ipw_placement
+from morie.fn.oipw1 import otis_ipw_placement
 
 
 class TestOtisIpwPlacement:

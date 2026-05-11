@@ -1,7 +1,7 @@
 """Tests for ssc2009_cbabyak2e1.ssc2009_cbabyak_chapter_2_equation_1."""
 import numpy as np
 import pytest
-from moirais.fn.ssc2009_cbabyak2e1 import ssc2009_cbabyak_chapter_2_equation_1
+from morie.fn.ssc2009_cbabyak2e1 import ssc2009_cbabyak_chapter_2_equation_1
 
 
 def test_ssc2009_cbabyak2e1_basic():

@@ -1,7 +1,7 @@
 """Tests for stahdo.stahel_donoho."""
 import numpy as np
 import pytest
-from moirais.fn.stahdo import stahel_donoho
+from morie.fn.stahdo import stahel_donoho
 
 
 def test_stahdo_basic():

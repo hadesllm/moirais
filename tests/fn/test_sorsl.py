@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sorsl -- SOR solver."""
+"""Tests for morie.fn.sorsl -- SOR solver."""
 
 import numpy as np
-from moirais.fn.sorsl import sor_solve, sorsl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sorsl import sor_solve, sorsl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSorsl:

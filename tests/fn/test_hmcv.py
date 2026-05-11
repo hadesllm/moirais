@@ -1,7 +1,7 @@
 """Tests for hmcv.geron_cross_validation."""
 import numpy as np
 import pytest
-from moirais.fn.hmcv import geron_cross_validation
+from morie.fn.hmcv import geron_cross_validation
 
 
 def test_hmcv_basic():

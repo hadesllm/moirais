@@ -1,7 +1,7 @@
 """Tests for colMet.recall_at_k."""
 import numpy as np
 import pytest
-from moirais.fn.colMet import recall_at_k
+from morie.fn.colMet import recall_at_k
 
 
 def test_colMet_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.npqnt — Nonparametric quantile regression."""
+"""Tests for morie.fn.npqnt — Nonparametric quantile regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.npqnt import npqnt
+from morie.fn.npqnt import npqnt
 
 
 @pytest.fixture()

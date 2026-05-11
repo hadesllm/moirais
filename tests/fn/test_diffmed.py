@@ -1,7 +1,7 @@
 """Tests for diffmed.difference_in_coefficients."""
 import numpy as np
 import pytest
-from moirais.fn.diffmed import difference_in_coefficients
+from morie.fn.diffmed import difference_in_coefficients
 
 
 def test_diffmed_basic():

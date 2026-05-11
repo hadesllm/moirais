@@ -1,7 +1,7 @@
 """Tests for brdgf.bayes_ridge_gibbs."""
 import numpy as np
 import pytest
-from moirais.fn.brdgf import bayes_ridge_gibbs
+from morie.fn.brdgf import bayes_ridge_gibbs
 
 
 def test_brdgf_basic():

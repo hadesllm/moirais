@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sitdl -- per-item detail within subscale."""
+"""Tests for morie.fn.sitdl -- per-item detail within subscale."""
 
 import pandas as pd
-from moirais.fn.sitdl import subscale_item_detail
+from morie.fn.sitdl import subscale_item_detail
 
 
 class TestSubscaleItemDetail:

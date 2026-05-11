@@ -1,7 +1,7 @@
 """Tests for mtlmm.multi_trait_lmm."""
 import numpy as np
 import pytest
-from moirais.fn.mtlmm import multi_trait_lmm
+from morie.fn.mtlmm import multi_trait_lmm
 
 
 def test_mtlmm_basic():

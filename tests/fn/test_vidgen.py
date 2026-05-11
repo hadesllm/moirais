@@ -1,7 +1,7 @@
 """Tests for vidgen.video_diffusion."""
 import numpy as np
 import pytest
-from moirais.fn.vidgen import video_diffusion
+from morie.fn.vidgen import video_diffusion
 
 
 def test_vidgen_basic():

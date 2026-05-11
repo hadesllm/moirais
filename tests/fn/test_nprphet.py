@@ -1,7 +1,7 @@
 """Tests for nprphet.neural_prophet."""
 import numpy as np
 import pytest
-from moirais.fn.nprphet import neural_prophet
+from morie.fn.nprphet import neural_prophet
 
 
 def test_nprphet_basic():

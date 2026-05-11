@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.lowes -- LOWESS smoother."""
+"""Tests for morie.fn.lowes -- LOWESS smoother."""
 
 import numpy as np
-from moirais.fn.lowes import lowess, lowes
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lowes import lowess, lowes
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLowes:

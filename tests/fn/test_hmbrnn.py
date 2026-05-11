@@ -1,7 +1,7 @@
 """Tests for hmbrnn.geron_bidirectional_rnn."""
 import numpy as np
 import pytest
-from moirais.fn.hmbrnn import geron_bidirectional_rnn
+from morie.fn.hmbrnn import geron_bidirectional_rnn
 
 
 def test_hmbrnn_basic():

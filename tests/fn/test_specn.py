@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.specn -- Periodogram."""
+"""Tests for morie.fn.specn -- Periodogram."""
 import numpy as np
 import pytest
-from moirais.fn.specn import periodogram
+from morie.fn.specn import periodogram
 
 
 class TestPeriodogram:
@@ -16,5 +16,5 @@ class TestPeriodogram:
             periodogram(np.ones(2))
 
     def test_cheatsheet(self):
-        from moirais.fn.specn import cheatsheet
+        from morie.fn.specn import cheatsheet
         assert isinstance(cheatsheet(), str)

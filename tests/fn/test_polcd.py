@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.polcd — polar code construction."""
+"""Tests for morie.fn.polcd — polar code construction."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.polcd import polcd
+from morie.fn.polcd import polcd
 
 
 class TestPolcd:

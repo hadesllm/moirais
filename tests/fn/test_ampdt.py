@@ -1,7 +1,7 @@
 """Test amplitude_detect (ampdt)."""
 import numpy as np
-from moirais.fn.ampdt import amplitude_detect, ampdt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ampdt import amplitude_detect, ampdt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAmplitudeDetect:

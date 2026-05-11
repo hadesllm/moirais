@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.efart -- factor rotation."""
+"""Tests for morie.fn.efart -- factor rotation."""
 
 import numpy as np
-from moirais.fn.efart import efa_rotate
+from morie.fn.efart import efa_rotate
 
 
 class TestEfaRotate:

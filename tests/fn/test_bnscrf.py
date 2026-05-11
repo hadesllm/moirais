@@ -1,7 +1,7 @@
 """Tests for bnscrf.bound_credible_interval."""
 import numpy as np
 import pytest
-from moirais.fn.bnscrf import bound_credible_interval
+from morie.fn.bnscrf import bound_credible_interval
 
 
 def test_bnscrf_basic():

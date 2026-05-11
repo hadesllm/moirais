@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zscnt -- Contour line generation"""
+"""Tests for morie.fn.zscnt -- Contour line generation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zscnt import contour_lines
+from morie.fn.zscnt import contour_lines
 
 
 class TestContourLines:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.tblxt -- HTML table extractor."""
+"""Tests for morie.fn.tblxt -- HTML table extractor."""
 
-from moirais.fn.tblxt import extract_tables, tblxt
+from morie.fn.tblxt import extract_tables, tblxt
 
 
 class TestTblxt:

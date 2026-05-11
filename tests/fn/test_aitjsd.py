@@ -1,7 +1,7 @@
 """Tests for aitjsd.compositional_jsd."""
 import numpy as np
 import pytest
-from moirais.fn.aitjsd import compositional_jsd
+from morie.fn.aitjsd import compositional_jsd
 
 
 def test_aitjsd_basic():

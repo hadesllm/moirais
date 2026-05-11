@@ -1,7 +1,7 @@
 """Tests for gwrcal.gwr_bandwidth_select."""
 import numpy as np
 import pytest
-from moirais.fn.gwrcal import gwr_bandwidth_select
+from morie.fn.gwrcal import gwr_bandwidth_select
 
 
 def test_gwrcal_basic():

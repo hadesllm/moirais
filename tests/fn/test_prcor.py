@@ -1,7 +1,7 @@
 """Tests for prcor.py - partial autocorrelation coefficients."""
 import numpy as np
 import pytest
-from moirais.fn.prcor import parcor_fn, prcor
+from morie.fn.prcor import parcor_fn, prcor
 
 
 def test_parcor_returns_descriptive_result():

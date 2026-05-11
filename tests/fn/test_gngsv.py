@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.gngsv -- Generalized gamma survival."""
+"""Tests for morie.fn.gngsv -- Generalized gamma survival."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.gngsv import gngsv
+from morie.fn.gngsv import gngsv
 
 
 @pytest.fixture()
@@ -38,5 +38,5 @@ def test_n_events_correct(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.gngsv import cheatsheet
+    from morie.fn.gngsv import cheatsheet
     assert "gamma" in cheatsheet().lower()

@@ -1,7 +1,7 @@
 """Tests for sbpiv."""
 import numpy as np
 import pytest
-from moirais.fn.sbpiv import sbpiv
+from morie.fn.sbpiv import sbpiv
 
 
 def test_sbpiv_basic():
@@ -27,5 +27,5 @@ def test_sbpiv_no_data():
 
 
 def test_sbpiv_alias():
-    from moirais.fn.sbpiv import sbpiv
+    from morie.fn.sbpiv import sbpiv
     assert sbpiv is sbpiv

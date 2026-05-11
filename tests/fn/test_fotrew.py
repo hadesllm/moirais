@@ -1,7 +1,7 @@
 """Test fotrew."""
 import numpy as np
 import pytest
-from moirais.fn.fotrew import fotrew
+from morie.fn.fotrew import fotrew
 
 
 def test_fotrew_basic():

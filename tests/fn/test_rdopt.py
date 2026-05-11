@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rdopt -- RD optimal bandwidth."""
+"""Tests for morie.fn.rdopt -- RD optimal bandwidth."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.rdopt import rd_bandwidth, rdopt
+from morie.fn.rdopt import rd_bandwidth, rdopt
 
 
 class TestRDBandwidth:

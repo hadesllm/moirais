@@ -1,7 +1,7 @@
 """Tests for ksr053.kosorok_ch2_kaplan_meier_inverse."""
 import numpy as np
 import pytest
-from moirais.fn.ksr053 import kosorok_ch2_kaplan_meier_inverse
+from morie.fn.ksr053 import kosorok_ch2_kaplan_meier_inverse
 
 
 def test_ksr053_basic():

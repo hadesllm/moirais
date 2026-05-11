@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.isssb — issue subset extract."""
+"""Tests for morie.fn.isssb — issue subset extract."""
 import numpy as np
-from moirais.fn.isssb import isssb
+from morie.fn.isssb import isssb
 
 
 def test_isssb_smoke():
@@ -12,7 +12,7 @@ def test_isssb_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.isssb import cheatsheet
+    from morie.fn.isssb import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

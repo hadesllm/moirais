@@ -1,7 +1,7 @@
 """Tests for wsmqtl.wasserman_empirical_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.wsmqtl import wasserman_empirical_quantile
+from morie.fn.wsmqtl import wasserman_empirical_quantile
 
 
 def test_wsmqtl_basic():

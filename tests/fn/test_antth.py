@@ -1,7 +1,7 @@
 """Tests for antth.antithetic_variates."""
 import numpy as np
 import pytest
-from moirais.fn.antth import antithetic_variates
+from morie.fn.antth import antithetic_variates
 
 
 def test_antth_basic():

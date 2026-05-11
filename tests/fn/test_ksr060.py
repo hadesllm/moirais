@@ -1,7 +1,7 @@
 """Tests for ksr060.kosorok_ch2_u_process_measure."""
 import numpy as np
 import pytest
-from moirais.fn.ksr060 import kosorok_ch2_u_process_measure
+from morie.fn.ksr060 import kosorok_ch2_u_process_measure
 
 
 def test_ksr060_basic():

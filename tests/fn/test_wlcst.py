@@ -1,7 +1,7 @@
 """Tests for wlcst: Wilcoxon (Breslow) survival test."""
 import numpy as np
 import pytest
-from moirais.fn.wlcst import wlcst
+from morie.fn.wlcst import wlcst
 
 
 def _make_two_group(n_per_group=100, hr=2.0, seed=0):

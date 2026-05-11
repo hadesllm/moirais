@@ -1,7 +1,7 @@
 """Tests for grwdc.geron_adamw_decoupled_weight_decay."""
 import numpy as np
 import pytest
-from moirais.fn.grwdc import geron_adamw_decoupled_weight_decay
+from morie.fn.grwdc import geron_adamw_decoupled_weight_decay
 
 
 def test_grwdc_basic():

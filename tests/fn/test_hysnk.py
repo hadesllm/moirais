@@ -1,7 +1,7 @@
 """Test hysnk."""
 import numpy as np
 import pytest
-from moirais.fn.hysnk import hysnk
+from morie.fn.hysnk import hysnk
 
 
 def test_hysnk_basic():

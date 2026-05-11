@@ -1,7 +1,7 @@
 """Tests for lglog: log-logistic AFT survival model."""
 import numpy as np
 import pytest
-from moirais.fn.lglog import lglog
+from morie.fn.lglog import lglog
 
 
 def _sim_loglogistic(n=150, mu_true=1.0, sigma_true=0.5, seed=0):

@@ -2,7 +2,7 @@
 
 import pytest
 
-from moirais.fn.pfashi import pfashi, pfas_hazard_index
+from morie.fn.pfashi import pfashi, pfas_hazard_index
 
 
 def test_pfashi_clean_sample_is_compliant():

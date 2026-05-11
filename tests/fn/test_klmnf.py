@@ -1,7 +1,7 @@
 """Tests for klmnf.py - Kalman filter."""
 import numpy as np
 import pytest
-from moirais.fn.klmnf import kalman_fn, klmnf
+from morie.fn.klmnf import kalman_fn, klmnf
 
 
 def test_kalman_returns_signal_result():

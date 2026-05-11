@@ -1,7 +1,7 @@
 """Tests for satDP.dpll."""
 import numpy as np
 import pytest
-from moirais.fn.satDP import dpll
+from morie.fn.satDP import dpll
 
 
 def test_satDP_basic():

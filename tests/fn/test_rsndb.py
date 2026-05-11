@@ -1,7 +1,7 @@
 """Test rsndb."""
 import numpy as np
 import pytest
-from moirais.fn.rsndb import rsndb
+from morie.fn.rsndb import rsndb
 
 
 def test_rsndb_basic():

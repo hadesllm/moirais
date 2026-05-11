@@ -1,8 +1,8 @@
 """Test gf2m_arithmetic."""
 import numpy as np
 import pytest
-from moirais.fn.gf2m import gf2m_arithmetic
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.gf2m import gf2m_arithmetic
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGf2mArithmetic:

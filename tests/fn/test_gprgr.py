@@ -1,7 +1,7 @@
 """Tests for gprgr.gp_regression_test."""
 import numpy as np
 import pytest
-from moirais.fn.gprgr import gaussian_process_regression as gp_regression_test
+from morie.fn.gprgr import gaussian_process_regression as gp_regression_test
 
 
 def test_gprgr_basic():

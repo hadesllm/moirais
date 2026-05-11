@@ -1,7 +1,7 @@
 """Tests for nnwgt."""
 import numpy as np
 import pytest
-from moirais.fn.nnwgt import nnwgt
+from morie.fn.nnwgt import nnwgt
 
 
 def test_nnwgt_basic():
@@ -27,5 +27,5 @@ def test_nnwgt_no_data():
 
 
 def test_nnwgt_alias():
-    from moirais.fn.nnwgt import nnwgt
+    from morie.fn.nnwgt import nnwgt
     assert nnwgt is nnwgt

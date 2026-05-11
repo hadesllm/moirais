@@ -1,6 +1,6 @@
 """Tests for least_trimmed_squares."""
 import numpy as np, pytest
-from moirais.fn.ltses import least_trimmed_squares
+from morie.fn.ltses import least_trimmed_squares
 
 
 class TestLTS:

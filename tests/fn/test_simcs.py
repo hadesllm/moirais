@@ -1,7 +1,7 @@
 """Tests for simcs."""
 import numpy as np
 import pytest
-from moirais.fn.simcs import simcs
+from morie.fn.simcs import simcs
 
 
 def test_simcs_basic():
@@ -27,5 +27,5 @@ def test_simcs_no_data():
 
 
 def test_simcs_alias():
-    from moirais.fn.simcs import simcs
+    from morie.fn.simcs import simcs
     assert simcs is simcs

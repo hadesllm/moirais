@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.r_eff -- effective reproduction number."""
+"""Tests for morie.fn.r_eff -- effective reproduction number."""
 
 import numpy as np
 import pytest
-from moirais.fn.r_eff import effective_rt
+from morie.fn.r_eff import effective_rt
 
 
 class TestReff:

@@ -1,6 +1,6 @@
 """Tests for pisrl.py - Pisarenko harmonic decomposition."""
 import numpy as np
-from moirais.fn.pisrl import pisarenko_fn, pisrl
+from morie.fn.pisrl import pisarenko_fn, pisrl
 
 
 def test_pisrl_returns_result():

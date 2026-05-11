@@ -1,7 +1,7 @@
 """Tests for snpblr.snp_blup."""
 import numpy as np
 import pytest
-from moirais.fn.snpblr import snp_blup
+from morie.fn.snpblr import snp_blup
 
 
 def test_snpblr_basic():

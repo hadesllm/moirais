@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.abcr -- ABC rejection."""
+"""Tests for morie.fn.abcr -- ABC rejection."""
 
 import numpy as np
-from moirais.fn.abcr import abc_rejection
+from morie.fn.abcr import abc_rejection
 
 
 def _simulator(theta):

@@ -1,7 +1,7 @@
 """Tests for hrzlrtt.horowitz_likelihood_ratio_test."""
 import numpy as np
 import pytest
-from moirais.fn.hrzlrtt import horowitz_likelihood_ratio_test
+from morie.fn.hrzlrtt import horowitz_likelihood_ratio_test
 
 
 def test_hrzlrtt_basic():

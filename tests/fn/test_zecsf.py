@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zecsf -- Concentration surface estimation"""
+"""Tests for morie.fn.zecsf -- Concentration surface estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zecsf import concentration_srf
+from morie.fn.zecsf import concentration_srf
 
 
 class TestConcentrationSrf:

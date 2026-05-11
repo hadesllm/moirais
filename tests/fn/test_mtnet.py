@@ -1,7 +1,7 @@
 """Test mtnet."""
 import numpy as np
 import pytest
-from moirais.fn.mtnet import mtnet
+from morie.fn.mtnet import mtnet
 
 
 def test_mtnet_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzw2.horowitz_bandwidth_bootstrap."""
 import numpy as np
 import pytest
-from moirais.fn.hrzw2 import horowitz_bandwidth_bootstrap
+from morie.fn.hrzw2 import horowitz_bandwidth_bootstrap
 
 
 def test_hrzw2_basic():

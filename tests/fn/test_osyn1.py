@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.osyn1 — OTIS synthetic control."""
+"""Tests for morie.fn.osyn1 — OTIS synthetic control."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.osyn1 import otis_synth_region
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.osyn1 import otis_synth_region
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOtisSynthRegion:

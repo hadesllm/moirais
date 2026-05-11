@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rbnd — Rosenbaum bounds sensitivity analysis."""
+"""Tests for morie.fn.rbnd — Rosenbaum bounds sensitivity analysis."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.rbnd import sensitivity_rosenbaum
+from morie.fn.rbnd import sensitivity_rosenbaum
 
 
 @pytest.fixture()

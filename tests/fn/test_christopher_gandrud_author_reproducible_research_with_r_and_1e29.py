@@ -1,7 +1,7 @@
 """An unexamined life is not worth living. — Socrates"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_1e29 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_1_equation_29
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_1e29 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_1_equation_29
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_1e29_basic():

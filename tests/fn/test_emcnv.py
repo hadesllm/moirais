@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.emcnv -- EM convergence check."""
-from moirais.fn.emcnv import em_convergence_check, emcnv
+"""Tests for morie.fn.emcnv -- EM convergence check."""
+from morie.fn.emcnv import em_convergence_check, emcnv
 
 
 def test_alias():

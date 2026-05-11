@@ -1,7 +1,7 @@
 """Test nbcog."""
 import numpy as np
 import pytest
-from moirais.fn.nbcog import nbcog
+from morie.fn.nbcog import nbcog
 
 
 def test_nbcog_basic():

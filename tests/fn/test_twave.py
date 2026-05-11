@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.twave import t_wave_detect, twave
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.twave import t_wave_detect, twave
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTWaveDetect:

@@ -1,7 +1,7 @@
 """Tests for rng065.rangayyan_ch3_fourier_transform_f."""
 import numpy as np
 import pytest
-from moirais.fn.rng065 import rangayyan_ch3_fourier_transform_f
+from morie.fn.rng065 import rangayyan_ch3_fourier_transform_f
 
 
 def test_rng065_basic():

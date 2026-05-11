@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxgrc -- Great circle distance"""
+"""Tests for morie.fn.zxgrc -- Great circle distance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxgrc import great_circle
+from morie.fn.zxgrc import great_circle
 
 
 class TestGreatCircle:

@@ -1,7 +1,7 @@
 """Tests for ebmZD.zonal_ebm."""
 import numpy as np
 import pytest
-from moirais.fn.ebmZD import zonal_ebm
+from morie.fn.ebmZD import zonal_ebm
 
 
 def test_ebmZD_basic():

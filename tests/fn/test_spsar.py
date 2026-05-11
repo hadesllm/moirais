@@ -1,7 +1,7 @@
 """Tests for spsar.schabenberger_sar_model."""
 import numpy as np
 import pytest
-from moirais.fn.spsar import schabenberger_sar_model
+from morie.fn.spsar import schabenberger_sar_model
 
 
 def test_spsar_basic():

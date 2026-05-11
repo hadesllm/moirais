@@ -1,7 +1,7 @@
 """Tests for garchm.garch_model."""
 import numpy as np
 import pytest
-from moirais.fn.garchm import garch_model
+from morie.fn.garchm import garch_model
 
 
 def test_garchm_basic():

@@ -1,7 +1,7 @@
 """Tests for sprto.py - spectral power ratio."""
 import numpy as np
 import pytest
-from moirais.fn.sprto import spectral_ratio, sprto
+from morie.fn.sprto import spectral_ratio, sprto
 
 
 def test_spectral_ratio_returns_descriptive_result():

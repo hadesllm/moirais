@@ -1,7 +1,7 @@
 """Tests for bayfac.bayes_factor."""
 import numpy as np
 import pytest
-from moirais.fn.bayfac import bayes_factor
+from morie.fn.bayfac import bayes_factor
 
 
 def test_bayfac_basic():

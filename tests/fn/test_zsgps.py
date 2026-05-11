@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsgps -- Gaussian process spatial"""
+"""Tests for morie.fn.zsgps -- Gaussian process spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsgps import gp_spatial
+from morie.fn.zsgps import gp_spatial
 
 
 class TestGpSpatial:

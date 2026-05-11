@@ -1,7 +1,7 @@
 """Tests for tmllng.tmle_longitudinal."""
 import numpy as np
 import pytest
-from moirais.fn.tmllng import tmle_longitudinal
+from morie.fn.tmllng import tmle_longitudinal
 
 
 def test_tmllng_basic():

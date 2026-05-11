@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.emexp -- EM expectation step."""
+"""Tests for morie.fn.emexp -- EM expectation step."""
 import numpy as np
-from moirais.fn.emexp import em_expectation_step, emexp
+from morie.fn.emexp import em_expectation_step, emexp
 
 
 def test_alias():

@@ -1,7 +1,7 @@
 """Tests for difnb -- Non-uniform DIF."""
 import numpy as np
-from moirais.fn.difnb import dif_nonuniform
-from moirais.fn._containers import DIFResult
+from morie.fn.difnb import dif_nonuniform
+from morie.fn._containers import DIFResult
 
 
 class TestDifNonuniform:

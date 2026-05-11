@@ -1,7 +1,7 @@
 """Tests for hrzmim.horowitz_multiple_index_model."""
 import numpy as np
 import pytest
-from moirais.fn.hrzmim import horowitz_multiple_index_model
+from morie.fn.hrzmim import horowitz_multiple_index_model
 
 
 def test_hrzmim_basic():

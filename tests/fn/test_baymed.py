@@ -1,7 +1,7 @@
 """Tests for baymed.bayes_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.baymed import bayes_mediation
+from morie.fn.baymed import bayes_mediation
 
 
 def test_baymed_basic():

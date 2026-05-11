@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ginii."""
+"""Tests for morie.fn.ginii."""
 import numpy as np
-from moirais.fn.ginii import gini_coefficient
+from morie.fn.ginii import gini_coefficient
 
 
 def test_ginii_smoke():
@@ -12,7 +12,7 @@ def test_ginii_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ginii import cheatsheet
+    from morie.fn.ginii import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Test mtodm."""
 import numpy as np
 import pytest
-from moirais.fn.mtodm import mtodm
+from morie.fn.mtodm import mtodm
 
 
 def test_mtodm_basic():

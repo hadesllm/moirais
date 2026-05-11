@@ -1,6 +1,6 @@
 """Tests for ks_test."""
 import numpy as np, pytest
-from moirais.fn.kstst import ks_test
+from morie.fn.kstst import ks_test
 
 
 class TestKSTest:

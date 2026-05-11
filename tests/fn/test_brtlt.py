@@ -1,7 +1,7 @@
 """Tests for brtlt.py - Bartlett PSD estimate."""
 import numpy as np
 import pytest
-from moirais.fn.brtlt import bartlett_psd_fn, brtlt
+from morie.fn.brtlt import bartlett_psd_fn, brtlt
 
 
 def test_bartlett_psd_returns_descriptive_result():

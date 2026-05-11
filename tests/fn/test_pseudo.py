@@ -1,7 +1,7 @@
 """Tests for pseudo.path_specific_effect."""
 import numpy as np
 import pytest
-from moirais.fn.pseudo import path_specific_effect
+from morie.fn.pseudo import path_specific_effect
 
 
 def test_pseudo_basic():

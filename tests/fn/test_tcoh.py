@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tcoh — torus cohomology."""
+"""Tests for morie.fn.tcoh — torus cohomology."""
 
 import pytest
 
-from moirais.fn.tcoh import torus_cohomology
+from morie.fn.tcoh import torus_cohomology
 
 
 class TestTorusCohomology:

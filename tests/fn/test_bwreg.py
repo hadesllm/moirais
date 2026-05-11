@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bwreg — bandwidth-selected regression."""
+"""Tests for morie.fn.bwreg — bandwidth-selected regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bwreg import bwreg
+from morie.fn.bwreg import bwreg
 
 
 def test_basic_output():

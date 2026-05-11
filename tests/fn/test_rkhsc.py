@@ -1,7 +1,7 @@
 """Tests for rkhsc.rkhs_kernel_regression."""
 import numpy as np
 import pytest
-from moirais.fn.rkhsc import rkhs_kernel_regression
+from morie.fn.rkhsc import rkhs_kernel_regression
 
 
 def test_rkhsc_basic():

@@ -1,7 +1,7 @@
 """Tests for rbfcomp."""
 import numpy as np
 import pytest
-from moirais.fn.rbfcomp import rbfcomp
+from morie.fn.rbfcomp import rbfcomp
 
 
 def test_rbfcomp_basic():
@@ -27,5 +27,5 @@ def test_rbfcomp_no_data():
 
 
 def test_rbfcomp_alias():
-    from moirais.fn.rbfcomp import rbfcomp
+    from morie.fn.rbfcomp import rbfcomp
     assert rbfcomp is rbfcomp

@@ -1,6 +1,6 @@
 """Tests for wvmra.py - Wavelet multiresolution analysis."""
 import numpy as np
-from moirais.fn.wvmra import wavelet_mra, wvmra
+from morie.fn.wvmra import wavelet_mra, wvmra
 
 
 def test_wvmra_returns_descriptive_result():

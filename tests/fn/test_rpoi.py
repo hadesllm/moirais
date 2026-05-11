@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rpoi — Poisson random sample."""
+"""Tests for morie.fn.rpoi — Poisson random sample."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rpoi import rpois
+from morie.fn.rpoi import rpois
 
 
 class TestRpois:

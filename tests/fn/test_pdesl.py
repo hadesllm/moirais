@@ -1,7 +1,7 @@
 """Tests for pdesl.pde_separation."""
 import numpy as np
 import pytest
-from moirais.fn.pdesl import pde_separation
+from morie.fn.pdesl import pde_separation
 
 
 def test_pdesl_basic():

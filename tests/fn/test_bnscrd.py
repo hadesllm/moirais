@@ -1,7 +1,7 @@
 """Tests for bnscrd.bound_causal_rd."""
 import numpy as np
 import pytest
-from moirais.fn.bnscrd import bound_causal_rd
+from morie.fn.bnscrd import bound_causal_rd
 
 
 def test_bnscrd_basic():

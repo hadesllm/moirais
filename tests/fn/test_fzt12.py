@@ -1,7 +1,7 @@
 """Tests for fzt12.fauzi_thm1_2_var_mgkde."""
 import numpy as np
 import pytest
-from moirais.fn.fzt12 import fauzi_thm1_2_var_mgkde
+from morie.fn.fzt12 import fauzi_thm1_2_var_mgkde
 
 
 def test_fzt12_basic():

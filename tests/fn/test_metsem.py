@@ -1,7 +1,7 @@
 """Tests for metsem.metagenome_assembly."""
 import numpy as np
 import pytest
-from moirais.fn.metsem import metagenome_assembly
+from morie.fn.metsem import metagenome_assembly
 
 
 def test_metsem_basic():

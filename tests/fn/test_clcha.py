@@ -1,7 +1,7 @@
 """Test clcha."""
 import numpy as np
 import pytest
-from moirais.fn.clcha import clcha
+from morie.fn.clcha import clcha
 
 
 def test_clcha_basic():

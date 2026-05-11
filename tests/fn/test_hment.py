@@ -1,7 +1,7 @@
 """Tests for hment.geron_entropy_impurity."""
 import numpy as np
 import pytest
-from moirais.fn.hment import geron_entropy_impurity
+from morie.fn.hment import geron_entropy_impurity
 
 
 def test_hment_basic():

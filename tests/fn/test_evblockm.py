@@ -1,7 +1,7 @@
 """Tests for evblockm.evt_block_maxima_fit."""
 import numpy as np
 import pytest
-from moirais.fn.evblockm import evt_block_maxima_fit
+from morie.fn.evblockm import evt_block_maxima_fit
 
 
 def test_evblockm_basic():

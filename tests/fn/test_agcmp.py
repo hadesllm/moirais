@@ -1,7 +1,7 @@
 """Test agcmp."""
 import numpy as np
 import pytest
-from moirais.fn.agcmp import agcmp
+from morie.fn.agcmp import agcmp
 
 
 def test_agcmp_basic():

@@ -1,7 +1,7 @@
 """Tests for svmdu.svm_dual_wolfe."""
 import numpy as np
 import pytest
-from moirais.fn.svmdu import svm_dual_wolfe
+from morie.fn.svmdu import svm_dual_wolfe
 
 
 def test_svmdu_basic():

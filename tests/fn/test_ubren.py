@@ -1,7 +1,7 @@
 """Test ubren."""
 import numpy as np
 import pytest
-from moirais.fn.ubren import ubren
+from morie.fn.ubren import ubren
 
 
 def test_ubren_basic():

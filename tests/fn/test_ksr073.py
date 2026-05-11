@@ -1,7 +1,7 @@
 """Tests for ksr073.kosorok_ch3_max_likelihood_efficiency_corollary."""
 import numpy as np
 import pytest
-from moirais.fn.ksr073 import kosorok_ch3_max_likelihood_efficiency_corollary
+from morie.fn.ksr073 import kosorok_ch3_max_likelihood_efficiency_corollary
 
 
 def test_ksr073_basic():

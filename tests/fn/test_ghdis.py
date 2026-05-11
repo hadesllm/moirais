@@ -1,7 +1,7 @@
 """Test ghdis."""
 import numpy as np
 import pytest
-from moirais.fn.ghdis import ghdis
+from morie.fn.ghdis import ghdis
 
 
 def test_ghdis_basic():

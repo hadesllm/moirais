@@ -1,7 +1,7 @@
 """Tests for alocv.alammar_output_verification."""
 import numpy as np
 import pytest
-from moirais.fn.alocv import alammar_output_verification
+from morie.fn.alocv import alammar_output_verification
 
 
 def test_alocv_basic():

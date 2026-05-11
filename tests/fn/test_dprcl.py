@@ -1,7 +1,7 @@
 """Tests for dprcl.dp_release_calibration."""
 import numpy as np
 import pytest
-from moirais.fn.dprcl import dp_release_calibration
+from morie.fn.dprcl import dp_release_calibration
 
 
 def test_dprcl_basic():

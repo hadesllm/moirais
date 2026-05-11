@@ -1,7 +1,7 @@
 """Tests for svyrcq.survey_quantile_reg."""
 import numpy as np
 import pytest
-from moirais.fn.svyrcq import survey_quantile_reg
+from morie.fn.svyrcq import survey_quantile_reg
 
 
 def test_svyrcq_basic():

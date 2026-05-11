@@ -1,7 +1,7 @@
 """Tests for wvltdb.db_wavelet."""
 import numpy as np
 import pytest
-from moirais.fn.wvltdb import db_wavelet
+from morie.fn.wvltdb import db_wavelet
 
 
 def test_wvltdb_basic():

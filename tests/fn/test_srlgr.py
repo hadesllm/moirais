@@ -1,7 +1,7 @@
 """Test srlgr."""
 import numpy as np
 import pytest
-from moirais.fn.srlgr import srlgr
+from morie.fn.srlgr import srlgr
 
 
 def test_srlgr_basic():

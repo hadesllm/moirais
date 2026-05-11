@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svhtd -- Hotelling-Downs convergence equilibrium"""
+"""Tests for morie.fn.svhtd -- Hotelling-Downs convergence equilibrium"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svhtd import hotelling_downs
+from morie.fn.svhtd import hotelling_downs
 
 
 class TestHotellingDowns:

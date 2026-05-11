@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.tm — melting temperature."""
+"""Tests for morie.fn.tm — melting temperature."""
 import pytest
-from moirais.fn.tm import melting_temperature
+from morie.fn.tm import melting_temperature
 
 
 class TestMeltingTemp:

@@ -1,7 +1,7 @@
 """Tests for km124.kamath_ch8_ngram_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.km124 import kamath_ch8_ngram_embedding
+from morie.fn.km124 import kamath_ch8_ngram_embedding
 
 
 def test_km124_basic():

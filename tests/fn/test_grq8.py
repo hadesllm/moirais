@@ -1,7 +1,7 @@
 """Tests for grq8.geron_int8_quantization."""
 import numpy as np
 import pytest
-from moirais.fn.grq8 import geron_int8_quantization
+from morie.fn.grq8 import geron_int8_quantization
 
 
 def test_grq8_basic():

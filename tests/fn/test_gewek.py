@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gewek -- Geweke diagnostic."""
+"""Tests for morie.fn.gewek -- Geweke diagnostic."""
 
 import numpy as np
-from moirais.fn.gewek import geweke_diagnostic
+from morie.fn.gewek import geweke_diagnostic
 
 
 def test_returns_dict():

@@ -1,7 +1,7 @@
 """Tests for hmxcpt.geron_xception."""
 import numpy as np
 import pytest
-from moirais.fn.hmxcpt import geron_xception
+from morie.fn.hmxcpt import geron_xception
 
 
 def test_hmxcpt_basic():

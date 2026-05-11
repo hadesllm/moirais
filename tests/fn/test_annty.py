@@ -1,5 +1,5 @@
 """Tests for annty (annuity present value)."""
-from moirais.fn.annty import annuity_value
+from morie.fn.annty import annuity_value
 
 
 def test_annuity_ordinary():

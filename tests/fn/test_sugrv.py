@@ -1,6 +1,6 @@
 """Test sugrv."""
 import pytest
-from moirais.fn.sugrv import supergravity_action
+from morie.fn.sugrv import supergravity_action
 
 
 def test_sugrv_11d():

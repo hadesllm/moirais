@@ -1,7 +1,7 @@
 """Tests for spblkk.schabenberger_block_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.spblkk import schabenberger_block_kriging
+from morie.fn.spblkk import schabenberger_block_kriging
 
 
 def test_spblkk_basic():

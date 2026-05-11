@@ -1,7 +1,7 @@
 """Test dtsas."""
 import numpy as np
 import pytest
-from moirais.fn.dtsas import dtsas
+from morie.fn.dtsas import dtsas
 
 
 def test_dtsas_basic():

@@ -1,7 +1,7 @@
 """Test gcacd."""
 import numpy as np
 import pytest
-from moirais.fn.gcacd import gcacd
+from morie.fn.gcacd import gcacd
 
 
 def test_gcacd_basic():

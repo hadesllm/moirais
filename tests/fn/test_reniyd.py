@@ -1,7 +1,7 @@
 """Tests for reniyd.renyi_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.reniyd import renyi_entropy
+from morie.fn.reniyd import renyi_entropy
 
 
 def test_reniyd_basic():

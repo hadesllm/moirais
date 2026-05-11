@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.neom -- decision tree split criterion."""
+"""Tests for morie.fn.neom -- decision tree split criterion."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.neom import decision_split, neom
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.neom import decision_split, neom
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNeom:

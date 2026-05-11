@@ -1,7 +1,7 @@
 """Tests for rgerp.rangayyan_erp_features."""
 import numpy as np
 import pytest
-from moirais.fn.rgerp import rangayyan_erp_features
+from morie.fn.rgerp import rangayyan_erp_features
 
 
 def test_rgerp_basic():

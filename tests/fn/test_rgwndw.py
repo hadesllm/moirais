@@ -1,7 +1,7 @@
 """Tests for rgwndw.rangayyan_window_functions."""
 import numpy as np
 import pytest
-from moirais.fn.rgwndw import rangayyan_window_functions
+from morie.fn.rgwndw import rangayyan_window_functions
 
 
 def test_rgwndw_basic():

@@ -1,7 +1,7 @@
 """Test cokfl."""
 import numpy as np
 import pytest
-from moirais.fn.cokfl import cokfl
+from morie.fn.cokfl import cokfl
 
 
 def test_cokfl_basic():

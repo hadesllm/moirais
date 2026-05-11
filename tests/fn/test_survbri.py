@@ -1,7 +1,7 @@
 """Tests for survbri.brier_score."""
 import numpy as np
 import pytest
-from moirais.fn.survbri import brier_score
+from morie.fn.survbri import brier_score
 
 
 def test_survbri_basic():

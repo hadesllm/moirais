@@ -1,7 +1,7 @@
 """Tests for rgrls_mon.rangayyan_rls_monitor."""
 import numpy as np
 import pytest
-from moirais.fn.rgrls_mon import rangayyan_rls_monitor
+from morie.fn.rgrls_mon import rangayyan_rls_monitor
 
 
 def test_rgrls_mon_basic():

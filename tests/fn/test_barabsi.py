@@ -1,7 +1,7 @@
 """Tests for barabsi.barabasi_albert."""
 import numpy as np
 import pytest
-from moirais.fn.barabsi import barabasi_albert
+from morie.fn.barabsi import barabasi_albert
 
 
 def test_barabsi_basic():

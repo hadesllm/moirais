@@ -1,7 +1,7 @@
 """Tests for sbmest.stochastic_block_model."""
 import numpy as np
 import pytest
-from moirais.fn.sbmest import stochastic_block_model
+from morie.fn.sbmest import stochastic_block_model
 
 
 def test_sbmest_basic():

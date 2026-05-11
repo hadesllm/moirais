@@ -1,7 +1,7 @@
 """Tests for sgtlap2.sgt_laplacian_eigenmaps."""
 import numpy as np
 import pytest
-from moirais.fn.sgtlap2 import sgt_laplacian_eigenmaps
+from morie.fn.sgtlap2 import sgt_laplacian_eigenmaps
 
 
 def test_sgtlap2_basic():

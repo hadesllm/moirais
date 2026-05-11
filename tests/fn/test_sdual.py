@@ -1,6 +1,6 @@
 """Test sdual."""
 import pytest
-from moirais.fn.sdual import s_duality
+from morie.fn.sdual import s_duality
 
 
 def test_sdual_basic():

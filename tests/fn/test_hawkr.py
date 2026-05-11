@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.hawkr -- Hawking radiation temperature."""
+"""Tests for morie.fn.hawkr -- Hawking radiation temperature."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.hawkr import hawkr
+from morie.fn.hawkr import hawkr
 
 
 def test_returns_dict():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bwrot — Bandwidth selection via rule-of-thumb."""
+"""Tests for morie.fn.bwrot — Bandwidth selection via rule-of-thumb."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bwrot import bwrot
+from morie.fn.bwrot import bwrot
 
 
 @pytest.fixture()

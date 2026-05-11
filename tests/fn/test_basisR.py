@@ -1,7 +1,7 @@
 """Tests for basisR.basis_representation."""
 import numpy as np
 import pytest
-from moirais.fn.basisR import basis_representation
+from morie.fn.basisR import basis_representation
 
 
 def test_basisR_basic():

@@ -1,7 +1,7 @@
 """Tests for banditRS.contextual_bandit_rec."""
 import numpy as np
 import pytest
-from moirais.fn.banditRS import contextual_bandit_rec
+from morie.fn.banditRS import contextual_bandit_rec
 
 
 def test_banditRS_basic():

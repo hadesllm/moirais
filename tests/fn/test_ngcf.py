@@ -1,7 +1,7 @@
 """Tests for ngcf.ngcf."""
 import numpy as np
 import pytest
-from moirais.fn.ngcf import ngcf
+from morie.fn.ngcf import ngcf
 
 
 def test_ngcf_basic():

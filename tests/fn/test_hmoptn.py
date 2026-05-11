@@ -1,7 +1,7 @@
 """Tests for hmoptn.geron_optuna."""
 import numpy as np
 import pytest
-from moirais.fn.hmoptn import geron_optuna
+from morie.fn.hmoptn import geron_optuna
 
 
 def test_hmoptn_basic():

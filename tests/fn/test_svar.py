@@ -1,7 +1,7 @@
 """Test sample_variance (svar)."""
 import numpy as np
-from moirais.fn.svar import sample_variance, svar
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.svar import sample_variance, svar
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSampleVariance:

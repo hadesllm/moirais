@@ -1,7 +1,7 @@
 """Tests for rgpsync.rangayyan_pcg_sync_avg."""
 import numpy as np
 import pytest
-from moirais.fn.rgpsync import rangayyan_pcg_sync_avg
+from morie.fn.rgpsync import rangayyan_pcg_sync_avg
 
 
 def test_rgpsync_basic():

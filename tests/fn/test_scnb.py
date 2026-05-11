@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.scnb."""
+"""Tests for morie.fn.scnb."""
 import numpy as np
 import pytest
-from moirais.fn.scnb import scnb
+from morie.fn.scnb import scnb
 
 
 class TestScnb:

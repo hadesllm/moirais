@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.prc — Precision-recall curve."""
+"""Tests for morie.fn.prc — Precision-recall curve."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.prc import pr_curve
+from morie.fn.prc import pr_curve
 
 
 class TestPRCurve:

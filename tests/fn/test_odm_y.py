@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.odm_y — Demographic profile per year."""
+"""Tests for morie.fn.odm_y — Demographic profile per year."""
 
 import pandas as pd
-from moirais.fn.odm_y import otis_demo_year
+from morie.fn.odm_y import otis_demo_year
 
 
 class TestOtisDemoYear:

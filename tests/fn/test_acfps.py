@@ -1,7 +1,7 @@
 """Tests for acfps.py - ACF from PSD."""
 import numpy as np
 import pytest
-from moirais.fn.acfps import acf_from_psd_fn, acfps
+from morie.fn.acfps import acf_from_psd_fn, acfps
 
 
 def test_acf_from_psd_returns_descriptive_result():

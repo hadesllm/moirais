@@ -1,7 +1,7 @@
 """Tests for mac3.ma_centered_predictors."""
 import numpy as np
 import pytest
-from moirais.fn.mac3 import ma_centered_predictors
+from morie.fn.mac3 import ma_centered_predictors
 
 
 def test_mac3_basic():

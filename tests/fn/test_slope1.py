@@ -1,7 +1,7 @@
 """Tests for slope1.slope_one."""
 import numpy as np
 import pytest
-from moirais.fn.slope1 import slope_one
+from morie.fn.slope1 import slope_one
 
 
 def test_slope1_basic():

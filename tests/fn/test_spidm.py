@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.spidm -- web graph community detection."""
+"""Tests for morie.fn.spidm -- web graph community detection."""
 
 import numpy as np
-from moirais.fn.spidm import web_graph_communities, spidm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.spidm import web_graph_communities, spidm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSpidm:

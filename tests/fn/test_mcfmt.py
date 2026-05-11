@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mcfmt — multi-class confusion matrix."""
+"""Tests for morie.fn.mcfmt — multi-class confusion matrix."""
 import numpy as np
 import pytest
-from moirais.fn.mcfmt import multiclass_confusion_matrix, mcfmt
+from morie.fn.mcfmt import multiclass_confusion_matrix, mcfmt
 
 
 def test_perfect_3class():

@@ -1,7 +1,7 @@
 """Tests for rgztn.regularization_path."""
 import numpy as np
 import pytest
-from moirais.fn.rgztn import regularization_path
+from morie.fn.rgztn import regularization_path
 
 
 def test_rgztn_basic():

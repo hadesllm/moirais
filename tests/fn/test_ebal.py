@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ebal -- Entropy balancing."""
+"""Tests for morie.fn.ebal -- Entropy balancing."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.ebal import entropy_balance, ebal
+from morie.fn.ebal import entropy_balance, ebal
 
 
 class TestEntropyBalance:

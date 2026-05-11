@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.brtrf -- Brent's method."""
+"""Tests for morie.fn.brtrf -- Brent's method."""
 
 import numpy as np
 import pytest
-from moirais.fn.brtrf import brent_root, brtrf
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.brtrf import brent_root, brtrf
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBrtrf:

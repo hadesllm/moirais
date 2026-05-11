@@ -1,7 +1,7 @@
 """Tests for wsmkbw.wasserman_kde_bandwidth."""
 import numpy as np
 import pytest
-from moirais.fn.wsmkbw import wasserman_kde_bandwidth
+from morie.fn.wsmkbw import wasserman_kde_bandwidth
 
 
 def test_wsmkbw_basic():

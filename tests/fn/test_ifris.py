@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ifris -- infection fatality rate."""
+"""Tests for morie.fn.ifris -- infection fatality rate."""
 
 import numpy as np
 import pytest
-from moirais.fn.ifris import infection_fatality_rate
+from morie.fn.ifris import infection_fatality_rate
 
 
 class TestIFR:

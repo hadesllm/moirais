@@ -1,7 +1,7 @@
 """Tests for levdis.levenshtein."""
 import numpy as np
 import pytest
-from moirais.fn.levdis import levenshtein
+from morie.fn.levdis import levenshtein
 
 
 def test_levdis_basic():

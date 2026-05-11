@@ -1,7 +1,7 @@
 """Tests for mtrbnd.monotone_treatment_response."""
 import numpy as np
 import pytest
-from moirais.fn.mtrbnd import monotone_treatment_response
+from morie.fn.mtrbnd import monotone_treatment_response
 
 
 def test_mtrbnd_basic():

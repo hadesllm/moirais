@@ -1,7 +1,7 @@
 """Tests for edgrn.edger_diff."""
 import numpy as np
 import pytest
-from moirais.fn.edgrn import edger_diff
+from morie.fn.edgrn import edger_diff
 
 
 def test_edgrn_basic():

@@ -1,7 +1,7 @@
 """Tests for hwadd.holt_winters_additive."""
 import numpy as np
 import pytest
-from moirais.fn.hwadd import holt_winters_additive
+from morie.fn.hwadd import holt_winters_additive
 
 
 def test_hwadd_basic():

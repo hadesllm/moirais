@@ -1,7 +1,7 @@
 """Test nbwnd."""
 import numpy as np
 import pytest
-from moirais.fn.nbwnd import nbwnd
+from morie.fn.nbwnd import nbwnd
 
 
 def test_nbwnd_basic():

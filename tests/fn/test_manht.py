@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.manht — Manhattan plot data."""
+"""Tests for morie.fn.manht — Manhattan plot data."""
 import numpy as np
 import pytest
-from moirais.fn.manht import manhattan_data
+from morie.fn.manht import manhattan_data
 
 
 class TestManhattan:

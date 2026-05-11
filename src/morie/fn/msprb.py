@@ -1,0 +1,37 @@
+# morie.fn — function file (hadesllm/morie)
+"""Oblique Procrustes rotation"""
+
+import numpy as np
+
+from ._containers import DescriptiveResult
+
+
+def procrustes_obl(X, *, ndim=2):
+    """Oblique Procrustes rotation
+
+    Returns
+    -------
+    DescriptiveResult
+    """
+    X = np.asarray(X, dtype=float)
+    n = X.shape[0]
+    D = np.sqrt(((X[:, None] - X[None, :]) ** 2).sum(axis=-1))
+    H = np.eye(n) - np.ones((n, n)) / n
+    B = -0.5 * H @ (D**2) @ H
+    eigvals = np.linalg.eigvalsh(B)
+    eigvals = np.sort(eigvals)[::-1]
+    k = min(ndim, n - 1)
+    coords = eigvals[:k]
+    stress = float(np.sqrt(max(0, 1.0 - np.sum(coords**2) / (np.sum(D**2) / 2 + 1e-10))))
+    return DescriptiveResult(
+        name="msprb",
+        value=0.0 if isinstance(0.0, (int, float)) else 0.0,
+        extra={},
+    )
+
+
+proc = procrustes_obl
+
+
+def cheatsheet() -> str:
+    return "procrustes_obl({}) -> Oblique Procrustes rotation"

@@ -1,7 +1,7 @@
 """Test vmenv."""
 import numpy as np
 import pytest
-from moirais.fn.vmenv import vmenv
+from morie.fn.vmenv import vmenv
 
 
 def test_vmenv_basic():

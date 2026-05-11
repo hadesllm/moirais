@@ -1,8 +1,8 @@
 """Test gauss_quadrature (gqadr)."""
 import numpy as np
 
-from moirais.fn.gqadr import gauss_quadrature, gqadr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.gqadr import gauss_quadrature, gqadr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGaussQuadrature:

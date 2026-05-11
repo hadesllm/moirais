@@ -1,7 +1,7 @@
 """Tests for impFB.implicit_feedback_loss."""
 import numpy as np
 import pytest
-from moirais.fn.impFB import implicit_feedback_loss
+from morie.fn.impFB import implicit_feedback_loss
 
 
 def test_impFB_basic():

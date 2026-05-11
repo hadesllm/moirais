@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lda_ — Linear Discriminant Analysis."""
+"""Tests for morie.fn.lda_ — Linear Discriminant Analysis."""
 
 import numpy as np
 import pytest
-from moirais.fn.lda_ import lda_
-from moirais.fn._containers import LdaRes
+from morie.fn.lda_ import lda_
+from morie.fn._containers import LdaRes
 
 
 class TestLda:

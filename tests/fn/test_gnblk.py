@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gnblk -- Genomic block bootstrap."""
+"""Tests for morie.fn.gnblk -- Genomic block bootstrap."""
 
 import numpy as np
 import pytest
-from moirais.fn.gnblk import gnblk
+from morie.fn.gnblk import gnblk
 
 
 class TestGnblk:

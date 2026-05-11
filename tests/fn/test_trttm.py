@@ -1,7 +1,7 @@
 """Test trttm."""
 import numpy as np
 import pytest
-from moirais.fn.trttm import trttm
+from morie.fn.trttm import trttm
 
 
 def test_trttm_basic():

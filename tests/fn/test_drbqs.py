@@ -1,7 +1,7 @@
 """Tests for drbqs.dr_did_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.drbqs import dr_did_quantile
+from morie.fn.drbqs import dr_did_quantile
 
 
 def test_drbqs_basic():

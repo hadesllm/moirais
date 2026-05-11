@@ -1,7 +1,7 @@
 """Tests for rgeegsp.rangayyan_eeg_spectral."""
 import numpy as np
 import pytest
-from moirais.fn.rgeegsp import rangayyan_eeg_spectral
+from morie.fn.rgeegsp import rangayyan_eeg_spectral
 
 
 def test_rgeegsp_basic():

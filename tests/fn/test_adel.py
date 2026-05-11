@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.adel — alpha if item deleted."""
+"""Tests for morie.fn.adel — alpha if item deleted."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn import adel
+from morie.fn import adel
 
 
 @pytest.fixture()

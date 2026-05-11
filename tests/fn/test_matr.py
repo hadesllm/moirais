@@ -1,7 +1,7 @@
 """Tests for matr.ma_two_step_dl_he."""
 import numpy as np
 import pytest
-from moirais.fn.matr import ma_two_step_dl_he
+from morie.fn.matr import ma_two_step_dl_he
 
 
 def test_matr_basic():

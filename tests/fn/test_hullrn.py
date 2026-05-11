@@ -1,7 +1,7 @@
 """Test hullrn."""
 import numpy as np
 import pytest
-from moirais.fn.hullrn import hullrn
+from morie.fn.hullrn import hullrn
 
 
 def test_hullrn_basic():

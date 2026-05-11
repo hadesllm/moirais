@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rey -- OLS linear regression."""
+"""Tests for morie.fn.rey -- OLS linear regression."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.rey import linear_regression, rey
-from moirais.fn._containers import RegressionResult
+from morie.fn.rey import linear_regression, rey
+from morie.fn._containers import RegressionResult
 
 
 @pytest.fixture()

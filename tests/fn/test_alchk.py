@@ -1,7 +1,7 @@
 """Tests for alchk.alammar_recursive_chunking."""
 import numpy as np
 import pytest
-from moirais.fn.alchk import alammar_recursive_chunking
+from morie.fn.alchk import alammar_recursive_chunking
 
 
 def test_alchk_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.psafs -- Population attributable fraction."""
+"""Tests for morie.fn.psafs -- Population attributable fraction."""
 
 import pytest
-from moirais.fn.psafs import population_attributable_fraction
+from morie.fn.psafs import population_attributable_fraction
 
 
 class TestPAF:

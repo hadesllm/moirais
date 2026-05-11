@@ -1,6 +1,6 @@
 """Tests for arlin (areal interpolation)."""
 import numpy as np
-from moirais.fn.arlin import areal_interpolation
+from morie.fn.arlin import areal_interpolation
 
 
 def test_areal_interpolation_basic():
@@ -15,7 +15,7 @@ def test_areal_interpolation_basic():
 
 
 def test_cheatsheet():
-    from moirais.fn.arlin import cheatsheet
+    from morie.fn.arlin import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

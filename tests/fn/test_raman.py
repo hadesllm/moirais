@@ -1,6 +1,6 @@
 """Test raman."""
 import pytest
-from moirais.fn.raman import ramanujan_tau
+from morie.fn.raman import ramanujan_tau
 
 
 def test_raman_tau1():

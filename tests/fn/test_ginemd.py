@@ -1,7 +1,7 @@
 """Tests for ginemd.graph_isomorphism_net."""
 import numpy as np
 import pytest
-from moirais.fn.ginemd import graph_isomorphism_net
+from morie.fn.ginemd import graph_isomorphism_net
 
 
 def test_ginemd_basic():

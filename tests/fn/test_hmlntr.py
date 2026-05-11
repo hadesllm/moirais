@@ -1,7 +1,7 @@
 """Tests for hmlntr.geron_layer_normalization."""
 import numpy as np
 import pytest
-from moirais.fn.hmlntr import geron_layer_normalization
+from morie.fn.hmlntr import geron_layer_normalization
 
 
 def test_hmlntr_basic():

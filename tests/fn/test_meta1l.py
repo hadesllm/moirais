@@ -1,7 +1,7 @@
 """Tests for meta1l.meta_learner_ensemble."""
 import numpy as np
 import pytest
-from moirais.fn.meta1l import meta_learner_ensemble
+from morie.fn.meta1l import meta_learner_ensemble
 
 
 def test_meta1l_basic():

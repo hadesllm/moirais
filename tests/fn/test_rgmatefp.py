@@ -1,7 +1,7 @@
 """Tests for rgmatefp.rangayyan_maternal_ecg_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rgmatefp import rangayyan_maternal_ecg_filter
+from morie.fn.rgmatefp import rangayyan_maternal_ecg_filter
 
 
 def test_rgmatefp_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.cstgp — custody gender parity index."""
+"""Tests for morie.fn.cstgp — custody gender parity index."""
 
-from moirais.fn.cstgp import custody_gender_parity
+from morie.fn.cstgp import custody_gender_parity
 
 
 class TestCustodyGenderParity:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dunf — uniform PDF."""
+"""Tests for morie.fn.dunf — uniform PDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dunf import dunif
+from morie.fn.dunf import dunif
 
 
 class TestDunif:

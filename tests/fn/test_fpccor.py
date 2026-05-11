@@ -1,7 +1,7 @@
 """Tests for fpccor.functional_correlation."""
 import numpy as np
 import pytest
-from moirais.fn.fpccor import functional_correlation
+from morie.fn.fpccor import functional_correlation
 
 
 def test_fpccor_basic():

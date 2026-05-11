@@ -1,7 +1,7 @@
 """Tests for tqmom.turboquant_normal_moment."""
 import numpy as np
 import pytest
-from moirais.fn.tqmom import turboquant_normal_moment
+from morie.fn.tqmom import turboquant_normal_moment
 
 
 def test_tqmom_basic():

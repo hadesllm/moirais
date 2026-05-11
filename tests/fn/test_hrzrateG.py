@@ -1,7 +1,7 @@
 """Tests for hrzrateG.horowitz_rate_G_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.hrzrateG import horowitz_rate_G_estimation
+from morie.fn.hrzrateG import horowitz_rate_G_estimation
 
 
 def test_hrzrateG_basic():

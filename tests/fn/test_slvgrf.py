@@ -1,7 +1,7 @@
 """Tests for slvgrf.sliced_grf."""
 import numpy as np
 import pytest
-from moirais.fn.slvgrf import sliced_grf
+from morie.fn.slvgrf import sliced_grf
 
 
 def test_slvgrf_basic():

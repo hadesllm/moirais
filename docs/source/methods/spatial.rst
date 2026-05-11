@@ -1,15 +1,15 @@
 Spatial Statistics
 ==================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS provides a comprehensive spatial statistics library covering
+MORIE provides a comprehensive spatial statistics library covering
 global and local autocorrelation, geostatistical interpolation,
 geographically weighted regression, and point pattern analysis. The
 implementation achieves **100% chapter coverage** of Schabenberger &
 Gotway (2005) across all 9 chapters.
 
-All spatial functions live in ``moirais/fn/`` as individual files and
+All spatial functions live in ``morie/fn/`` as individual files and
 accept arbitrary column names via keyword parameters.
 
 Global Autocorrelation
@@ -28,7 +28,7 @@ Measures of spatial dependence across the entire study region.
 
 .. code-block:: python
 
-   from moirais.fn import morai, geary
+   from morie.fn import morai, geary
    import numpy as np
 
    values = np.array([2.5, 3.1, 2.8, 4.0, 3.7])
@@ -81,7 +81,7 @@ structure.
 
 .. code-block:: python
 
-   from moirais.fn import krige, svari
+   from morie.fn import krige, svari
 
    gamma = svari(x, y, values, n_lags=15, model="spherical")
    predictions = krige(x, y, values, grid_x, grid_y,
@@ -121,7 +121,7 @@ Density-Based Clustering
 ------------------------
 
 - ``stdbs`` — DBSCAN with spatio-temporal distance metric. Used in
-  ``moirais.tps_spatial_advanced`` to find connected hot clusters
+  ``morie.tps_spatial_advanced`` to find connected hot clusters
   across the TPS incident feed and produce yearly small-multiples
   with a four-crime overlay (Assault / Robbery / Auto Theft /
   Break-and-Enter).
@@ -136,7 +136,7 @@ windows in space-time. Implementation in ``stscan`` returns the most
 likely cluster, its log-likelihood ratio, the Monte-Carlo p-value, and
 the included neighbourhoods + time window. The Hohl-style
 "panel d" visualisation is rendered by
-``moirais.tps_render.render_satscan_panel`` — it draws the
+``morie.tps_render.render_satscan_panel`` — it draws the
 significant cluster polygons over a base choropleth.
 
 Reference: Kulldorff, M. (1997). *A spatial scan statistic.*
@@ -145,24 +145,24 @@ Communications in Statistics 26(6):1481--1496.
 Visualisation Helpers
 ---------------------
 
-The ``moirais.tps_render`` and ``moirais.tps_spatial_advanced``
+The ``morie.tps_render`` and ``morie.tps_spatial_advanced``
 modules expose publication-style plot helpers commonly paired with
 the spatial estimators above:
 
-- ``moirais.tps_render.render_choropleth`` — choropleth (per 100k,
+- ``morie.tps_render.render_choropleth`` — choropleth (per 100k,
   9 categories).
-- ``moirais.tps_render.render_district_proportional`` — district
+- ``morie.tps_render.render_district_proportional`` — district
   proportional-symbol map (6 former-borough divisions).
-- ``moirais.tps_render.render_quad`` — 4-panel quad
+- ``morie.tps_render.render_quad`` — 4-panel quad
   (density / rate / LISA / :math:`G_i^{*}`).
-- ``moirais.tps_render.render_yearly_grid`` — yearly small-multiples
+- ``morie.tps_render.render_yearly_grid`` — yearly small-multiples
   (4-crime overlay + DBSCAN clusters).
-- ``moirais.tps_render.render_dbscan`` — DBSCAN cluster overlay.
-- ``moirais.tps_spatial_advanced.bivariate_moran`` — bivariate Moran
+- ``morie.tps_render.render_dbscan`` — DBSCAN cluster overlay.
+- ``morie.tps_spatial_advanced.bivariate_moran`` — bivariate Moran
   scatter.
-- ``moirais.tps_spatial_advanced.moran_sweep_heatmap`` — Moran sweep
+- ``morie.tps_spatial_advanced.moran_sweep_heatmap`` — Moran sweep
   heatmap (categories × years).
-- ``moirais.tps_render.render_satscan_panel`` — Kulldorff panel d
+- ``morie.tps_render.render_satscan_panel`` — Kulldorff panel d
   (Hohl-style).
 
 Style follows Hohl, A. *Geographic visualisation of disease cluster
@@ -182,7 +182,7 @@ References
 
 .. [Schabenberger2005] Schabenberger, O. & Gotway, C.A. (2005).
    *Statistical Methods for Spatial Data Analysis*. Chapman & Hall /
-   CRC. 9 chapters, 100% coverage in MOIRAIS fn/ files.
+   CRC. 9 chapters, 100% coverage in MORIE fn/ files.
 
 .. [Armstrong2000] Armstrong, M.P. et al. (2000). Spatial voting
    analysis. 28/28 backends implemented.

@@ -1,4 +1,4 @@
-"""Tests for ``moirais verify-pollution`` CLI (Workstream 6)."""
+"""Tests for ``morie verify-pollution`` CLI (Workstream 6)."""
 
 import json
 import subprocess
@@ -10,7 +10,7 @@ import pytest
 def _run_cli(*extra_args: str) -> subprocess.CompletedProcess:
     """Invoke the installed entrypoint as a subprocess to exercise argparse."""
     return subprocess.run(
-        [sys.executable, "-m", "moirais.runner", "verify-pollution", *extra_args],
+        [sys.executable, "-m", "morie.runner", "verify-pollution", *extra_args],
         capture_output=True, text=True,
     )
 
@@ -116,7 +116,7 @@ def test_verify_pollution_unknown_pollutant_argparse_error():
 
 def test_verify_pollution_help_lists_command():
     r = subprocess.run(
-        [sys.executable, "-m", "moirais.runner", "--help"],
+        [sys.executable, "-m", "morie.runner", "--help"],
         capture_output=True, text=True,
     )
     assert r.returncode == 0

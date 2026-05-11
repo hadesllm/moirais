@@ -1,7 +1,7 @@
 """Tests for bpc.bits_per_character."""
 import numpy as np
 import pytest
-from moirais.fn.bpc import bits_per_character
+from morie.fn.bpc import bits_per_character
 
 
 def test_bpc_basic():

@@ -1,7 +1,7 @@
 """Tests for fmrset.familial_mr_set."""
 import numpy as np
 import pytest
-from moirais.fn.fmrset import familial_mr_set
+from morie.fn.fmrset import familial_mr_set
 
 
 def test_fmrset_basic():

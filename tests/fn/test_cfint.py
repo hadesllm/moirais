@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cfint — Counterfactual explanation."""
+"""Tests for morie.fn.cfint — Counterfactual explanation."""
 import numpy as np
 import pytest
-from moirais.fn.cfint import cfint
+from morie.fn.cfint import cfint
 
 
 @pytest.fixture()
@@ -62,5 +62,5 @@ def test_p_correct(setup):
 
 
 def test_cheatsheet():
-    from moirais.fn.cfint import cheatsheet
+    from morie.fn.cfint import cheatsheet
     assert len(cheatsheet()) > 0

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.quadu — quadratic utility."""
+"""Tests for morie.fn.quadu — quadratic utility."""
 import numpy as np
-from moirais.fn.quadu import quadu
+from morie.fn.quadu import quadu
 
 
 def test_quadu_smoke():

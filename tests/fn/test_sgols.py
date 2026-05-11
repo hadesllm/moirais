@@ -1,6 +1,6 @@
 """Tests for OLS spatial diagnostics."""
 import numpy as np
-from moirais.fn.sgols import sgols
+from morie.fn.sgols import sgols
 
 
 def test_sgols_smoke():
@@ -16,7 +16,7 @@ def test_sgols_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgols import cheatsheet
+    from morie.fn.sgols import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

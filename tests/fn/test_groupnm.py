@@ -1,7 +1,7 @@
 """Tests for groupnm.group_norm."""
 import numpy as np
 import pytest
-from moirais.fn.groupnm import group_norm
+from morie.fn.groupnm import group_norm
 
 
 def test_groupnm_basic():

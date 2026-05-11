@@ -1,7 +1,7 @@
 """Tests for hrzsier.horowitz_series_regression."""
 import numpy as np
 import pytest
-from moirais.fn.hrzsier import horowitz_series_regression
+from morie.fn.hrzsier import horowitz_series_regression
 
 
 def test_hrzsier_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kbwcv — LSCV bandwidth selection."""
+"""Tests for morie.fn.kbwcv — LSCV bandwidth selection."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kbwcv import kbwcv
+from morie.fn.kbwcv import kbwcv
 
 
 class TestKbwcv:

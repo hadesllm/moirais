@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ogate — GATE by age group."""
+"""Tests for morie.fn.ogate — GATE by age group."""
 
 import pandas as pd
-from moirais.fn.ogate import otis_gate_age
+from morie.fn.ogate import otis_gate_age
 
 
 class TestOtisGateAge:

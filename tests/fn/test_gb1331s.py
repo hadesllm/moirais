@@ -1,7 +1,7 @@
 """Tests for gb1331s.gibbons_sign_efficacy."""
 import numpy as np
 import pytest
-from moirais.fn.gb1331s import gibbons_sign_efficacy
+from morie.fn.gb1331s import gibbons_sign_efficacy
 
 
 def test_gb1331s_basic():

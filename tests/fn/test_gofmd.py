@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gofmd -- MDS goodness of fit."""
+"""Tests for morie.fn.gofmd -- MDS goodness of fit."""
 
-from moirais.fn.gofmd import gof_mds_interpret, gofmd
+from morie.fn.gofmd import gof_mds_interpret, gofmd
 
 
 def test_gofmd_excellent():

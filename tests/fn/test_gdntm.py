@@ -1,7 +1,7 @@
 """Test gdntm."""
 import numpy as np
 import pytest
-from moirais.fn.gdntm import gdntm
+from morie.fn.gdntm import gdntm
 
 
 def test_gdntm_basic():

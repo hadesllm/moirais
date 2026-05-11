@@ -1,7 +1,7 @@
 """Tests for gradmo.geron_adam_update."""
 import numpy as np
 import pytest
-from moirais.fn.gradmo import geron_adam_update
+from morie.fn.gradmo import geron_adam_update
 
 
 def test_gradmo_basic():

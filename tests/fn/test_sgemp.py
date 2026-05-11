@@ -1,6 +1,6 @@
 """Tests for empirical semivariogram."""
 import numpy as np
-from moirais.fn.sgemp import sgemp
+from morie.fn.sgemp import sgemp
 
 
 def test_sgemp_smoke():

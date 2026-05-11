@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsstc -- Separable space-time covariance"""
+"""Tests for morie.fn.zsstc -- Separable space-time covariance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsstc import st_cov_sep
+from morie.fn.zsstc import st_cov_sep
 
 
 class TestStCovSep:

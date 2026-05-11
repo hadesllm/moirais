@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.chows -- Chow test."""
+"""Tests for morie.fn.chows -- Chow test."""
 import numpy as np
 import pytest
-from moirais.fn.chows import chow_test
+from morie.fn.chows import chow_test
 
 
 class TestChow:
@@ -18,5 +18,5 @@ class TestChow:
             chow_test(np.ones(10), np.ones((10, 5)), break_point=1)
 
     def test_cheatsheet(self):
-        from moirais.fn.chows import cheatsheet
+        from morie.fn.chows import cheatsheet
         assert isinstance(cheatsheet(), str)

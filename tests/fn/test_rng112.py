@@ -1,7 +1,7 @@
 """Tests for rng112.rangayyan_ch3_first_difference_transfer_function."""
 import numpy as np
 import pytest
-from moirais.fn.rng112 import rangayyan_ch3_first_difference_transfer_function
+from morie.fn.rng112 import rangayyan_ch3_first_difference_transfer_function
 
 
 def test_rng112_basic():

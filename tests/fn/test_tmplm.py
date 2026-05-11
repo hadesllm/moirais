@@ -1,7 +1,7 @@
 """Test template_match_detect."""
 import numpy as np
-from moirais.fn.tmplm import template_match_detect, alias
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tmplm import template_match_detect, alias
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTemplateMatchDetect:

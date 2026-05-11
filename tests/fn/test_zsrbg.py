@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsrbg -- Gaussian RBF interpolation"""
+"""Tests for morie.fn.zsrbg -- Gaussian RBF interpolation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsrbg import rbf_gaussian
+from morie.fn.zsrbg import rbf_gaussian
 
 
 class TestRbfGaussian:

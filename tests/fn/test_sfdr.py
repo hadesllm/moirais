@@ -1,7 +1,7 @@
 """Test sfdr_compute (sfdr)."""
 import numpy as np
-from moirais.fn.sfdr import sfdr_compute, sfdr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sfdr import sfdr_compute, sfdr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSfdr:

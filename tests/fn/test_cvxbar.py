@@ -1,7 +1,7 @@
 """Tests for cvxbar.boyd_log_barrier."""
 import numpy as np
 import pytest
-from moirais.fn.cvxbar import boyd_log_barrier
+from morie.fn.cvxbar import boyd_log_barrier
 
 
 def test_cvxbar_basic():

@@ -1,7 +1,7 @@
 """Tests for rgmdl.rangayyan_ar_order_mdl."""
 import numpy as np
 import pytest
-from moirais.fn.rgmdl import rangayyan_ar_order_mdl
+from morie.fn.rgmdl import rangayyan_ar_order_mdl
 
 
 def test_rgmdl_basic():

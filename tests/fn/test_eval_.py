@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.eval_ — E-value for unmeasured confounding."""
+"""Tests for morie.fn.eval_ — E-value for unmeasured confounding."""
 
 import math
 
 import pytest
 
-from moirais.fn.eval_ import e_value
+from morie.fn.eval_ import e_value
 
 
 def test_significant_effect_gt_one():

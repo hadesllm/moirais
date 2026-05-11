@@ -1,7 +1,7 @@
 """Test rsrtx."""
 import numpy as np
 import pytest
-from moirais.fn.rsrtx import rsrtx
+from morie.fn.rsrtx import rsrtx
 
 
 def test_rsrtx_basic():

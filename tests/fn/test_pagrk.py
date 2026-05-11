@@ -1,7 +1,7 @@
 """Tests for pagrk.pagerank."""
 import numpy as np
 import pytest
-from moirais.fn.pagrk import pagerank
+from morie.fn.pagrk import pagerank
 
 
 def test_pagrk_basic():

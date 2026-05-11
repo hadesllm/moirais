@@ -1,7 +1,7 @@
 """Tests for bndmnt.bound_monotone_test."""
 import numpy as np
 import pytest
-from moirais.fn.bndmnt import bound_monotone_test
+from morie.fn.bndmnt import bound_monotone_test
 
 
 def test_bndmnt_basic():

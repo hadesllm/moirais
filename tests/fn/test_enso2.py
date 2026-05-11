@@ -1,7 +1,7 @@
 """Test enso2."""
 import numpy as np
 import pytest
-from moirais.fn.enso2 import enso2
+from morie.fn.enso2 import enso2
 
 
 def test_enso2_basic():

@@ -1,7 +1,7 @@
 """Tests for vtpwr.voting_power_index."""
 import numpy as np
 import pytest
-from moirais.fn.vtpwr import voting_power_index
+from morie.fn.vtpwr import voting_power_index
 
 
 def test_vtpwr_basic():

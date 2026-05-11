@@ -1,6 +1,6 @@
 """Tests for mcc_score."""
 import pytest
-from moirais.fn.mccrr import mcc_score, mccrr
+from morie.fn.mccrr import mcc_score, mccrr
 
 
 def test_perfect():

@@ -1,7 +1,7 @@
 """Tests for tmbw."""
 import numpy as np
 import pytest
-from moirais.fn.tmbw import tmbw
+from morie.fn.tmbw import tmbw
 
 
 def test_tmbw_basic():
@@ -27,5 +27,5 @@ def test_tmbw_no_data():
 
 
 def test_tmbw_alias():
-    from moirais.fn.tmbw import tmbw
+    from morie.fn.tmbw import tmbw
     assert tmbw is tmbw

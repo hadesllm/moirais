@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsrbt -- Thin plate spline RBF"""
+"""Tests for morie.fn.zsrbt -- Thin plate spline RBF"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsrbt import rbf_thinplate
+from morie.fn.zsrbt import rbf_thinplate
 
 
 class TestRbfThinplate:

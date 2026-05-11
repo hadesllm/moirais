@@ -1,7 +1,7 @@
 """Tests for rgrlsl.rangayyan_rls_lattice."""
 import numpy as np
 import pytest
-from moirais.fn.rgrlsl import rangayyan_rls_lattice
+from morie.fn.rgrlsl import rangayyan_rls_lattice
 
 
 def test_rgrlsl_basic():

@@ -1,7 +1,7 @@
 """Tests for ghgpm.ghosal_gp_matern."""
 import numpy as np
 import pytest
-from moirais.fn.ghgpm import ghosal_gp_matern
+from morie.fn.ghgpm import ghosal_gp_matern
 
 
 def test_ghgpm_basic():

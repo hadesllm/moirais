@@ -1,7 +1,7 @@
 """Tests for robpca.robust_pca."""
 import numpy as np
 import pytest
-from moirais.fn.robpca import robust_pca
+from morie.fn.robpca import robust_pca
 
 
 def test_robpca_basic():

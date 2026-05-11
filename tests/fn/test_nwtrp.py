@@ -4,7 +4,7 @@ Tests for Newton-Raphson root finding.
 
 import numpy as np
 import pytest
-from moirais.fn.nwtrp import nwtrp
+from morie.fn.nwtrp import nwtrp
 
 
 class TestNwtrp:

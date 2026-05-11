@@ -1,7 +1,7 @@
 """Tests for pace.pace."""
 import numpy as np
 import pytest
-from moirais.fn.pace import pace
+from morie.fn.pace import pace
 
 
 def test_pace_basic():

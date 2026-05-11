@@ -1,7 +1,7 @@
 """Tests for covbal.covariate_balance_check."""
 import numpy as np
 import pytest
-from moirais.fn.covbal import covariate_balance_check
+from morie.fn.covbal import covariate_balance_check
 
 
 def test_covbal_basic():

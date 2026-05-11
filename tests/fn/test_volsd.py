@@ -1,7 +1,7 @@
 """Tests for volsd.vol_simple_diff."""
 import numpy as np
 import pytest
-from moirais.fn.volsd import vol_simple_diff
+from morie.fn.volsd import vol_simple_diff
 
 
 def test_volsd_basic():

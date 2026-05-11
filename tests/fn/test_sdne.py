@@ -1,7 +1,7 @@
 """Tests for sdne.sdne."""
 import numpy as np
 import pytest
-from moirais.fn.sdne import sdne
+from morie.fn.sdne import sdne
 
 
 def test_sdne_basic():

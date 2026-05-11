@@ -1,6 +1,6 @@
 """Test sgspd."""
 import numpy as np
-from moirais.fn.sgspd import space_deformation
+from morie.fn.sgspd import space_deformation
 
 
 def test_sgspd_basic():

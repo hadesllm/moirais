@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.irtli — IRT log-likelihood."""
+"""Tests for morie.fn.irtli — IRT log-likelihood."""
 
 import numpy as np
 import pytest
-from moirais.fn.irtli import irt_likelihood
+from morie.fn.irtli import irt_likelihood
 
 
 class TestIrtLikelihood:

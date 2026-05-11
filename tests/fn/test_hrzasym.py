@@ -1,7 +1,7 @@
 """Tests for hrzasym.horowitz_one_step_efficient."""
 import numpy as np
 import pytest
-from moirais.fn.hrzasym import horowitz_one_step_efficient
+from morie.fn.hrzasym import horowitz_one_step_efficient
 
 
 def test_hrzasym_basic():

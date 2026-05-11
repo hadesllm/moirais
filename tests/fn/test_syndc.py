@@ -1,8 +1,8 @@
 """Test syndrome_compute."""
 import numpy as np
 
-from moirais.fn._containers import DescriptiveResult
-from moirais.fn.syndc import syndc, syndrome_compute
+from morie.fn._containers import DescriptiveResult
+from morie.fn.syndc import syndc, syndrome_compute
 
 
 class TestSyndromeCompute:

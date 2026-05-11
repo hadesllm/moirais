@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ppmov."""
+"""Tests for morie.fn.ppmov."""
 
 import numpy as np
 import pytest
-from moirais.fn.ppmov import ppmov
+from morie.fn.ppmov import ppmov
 
 
 class TestPpmov:

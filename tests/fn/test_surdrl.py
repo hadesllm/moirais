@@ -1,7 +1,7 @@
 """Tests for surdrl.survey_dr_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.surdrl import survey_dr_estimator
+from morie.fn.surdrl import survey_dr_estimator
 
 
 def test_surdrl_basic():

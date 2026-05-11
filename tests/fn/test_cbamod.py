@@ -1,7 +1,7 @@
 """Tests for cbamod.cbam_attention."""
 import numpy as np
 import pytest
-from moirais.fn.cbamod import cbam_attention
+from morie.fn.cbamod import cbam_attention
 
 
 def test_cbamod_basic():

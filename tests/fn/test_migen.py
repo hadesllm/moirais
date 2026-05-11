@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.migen -- MI by gender."""
+"""Tests for morie.fn.migen -- MI by gender."""
 
-from moirais.fn.migen import mi_by_gender
+from morie.fn.migen import mi_by_gender
 
 
 class TestMiByGender:

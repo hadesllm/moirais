@@ -1,7 +1,7 @@
 """Tests for fznkc.fauzi_naive_kernel_cvm."""
 import numpy as np
 import pytest
-from moirais.fn.fznkc import fauzi_naive_kernel_cvm
+from morie.fn.fznkc import fauzi_naive_kernel_cvm
 
 
 def test_fznkc_basic():

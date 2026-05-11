@@ -1,7 +1,7 @@
 """Tests for infgnt.information_geometry."""
 import numpy as np
 import pytest
-from moirais.fn.infgnt import information_geometry
+from morie.fn.infgnt import information_geometry
 
 
 def test_infgnt_basic():

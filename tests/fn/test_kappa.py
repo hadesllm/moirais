@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.kappa — Cohen's kappa."""
+"""Tests for morie.fn.kappa — Cohen's kappa."""
 import numpy as np
 import pytest
 
-from moirais.fn.kappa import cohens_kappa, kappa
+from morie.fn.kappa import cohens_kappa, kappa
 
 
 def test_perfect_agreement():

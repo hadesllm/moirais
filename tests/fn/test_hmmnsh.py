@@ -1,7 +1,7 @@
 """Tests for hmmnsh.geron_mean_shift."""
 import numpy as np
 import pytest
-from moirais.fn.hmmnsh import geron_mean_shift
+from morie.fn.hmmnsh import geron_mean_shift
 
 
 def test_hmmnsh_basic():

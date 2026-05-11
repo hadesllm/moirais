@@ -1,7 +1,7 @@
 """Tests for drhtg.dr_did_heterogeneity."""
 import numpy as np
 import pytest
-from moirais.fn.drhtg import dr_did_heterogeneity
+from morie.fn.drhtg import dr_did_heterogeneity
 
 
 def test_drhtg_basic():

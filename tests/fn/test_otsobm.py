@@ -1,7 +1,7 @@
 """Tests for otsobm.ot_sobolev_w1."""
 import numpy as np
 import pytest
-from moirais.fn.otsobm import ot_sobolev_w1
+from morie.fn.otsobm import ot_sobolev_w1
 
 
 def test_otsobm_basic():

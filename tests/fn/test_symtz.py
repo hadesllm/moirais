@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.symtz -- Symmetrization via Rademacher complexity."""
+"""Tests for morie.fn.symtz -- Symmetrization via Rademacher complexity."""
 
 import numpy as np
 import pytest
-from moirais.fn.symtz import symmetrization_bound
+from morie.fn.symtz import symmetrization_bound
 
 
 class TestSymmetrization:

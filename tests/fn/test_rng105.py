@@ -1,7 +1,7 @@
 """Tests for rng105.rangayyan_ch3_integrator_frequency_response."""
 import numpy as np
 import pytest
-from moirais.fn.rng105 import rangayyan_ch3_integrator_frequency_response
+from morie.fn.rng105 import rangayyan_ch3_integrator_frequency_response
 
 
 def test_rng105_basic():

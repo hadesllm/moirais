@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.windu -- Wald test ('This party is over.')."""
+"""Tests for morie.fn.windu -- Wald test ('This party is over.')."""
 
 import pytest
-from moirais.fn.windu import wald_test, windu
-from moirais.fn._containers import TestResult
+from morie.fn.windu import wald_test, windu
+from morie.fn._containers import TestResult
 
 
 class TestWindu:

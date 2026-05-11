@@ -1,7 +1,7 @@
 """Tests for agnnbk.alphazero_resnet_block."""
 import numpy as np
 import pytest
-from moirais.fn.agnnbk import alphazero_resnet_block
+from morie.fn.agnnbk import alphazero_resnet_block
 
 
 def test_agnnbk_basic():

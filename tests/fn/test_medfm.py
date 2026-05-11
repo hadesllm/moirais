@@ -1,7 +1,7 @@
 """Tests for medfm.mediation_formula."""
 import numpy as np
 import pytest
-from moirais.fn.medfm import mediation_formula
+from morie.fn.medfm import mediation_formula
 
 
 def test_medfm_basic():

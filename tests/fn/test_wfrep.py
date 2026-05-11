@@ -1,7 +1,7 @@
 """Tests for wfrep.weighted_frequency."""
 import numpy as np
 import pytest
-from moirais.fn.wfrep import weighted_frequency
+from morie.fn.wfrep import weighted_frequency
 
 
 def test_wfrep_basic():

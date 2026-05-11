@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.csted — custody education."""
+"""Tests for morie.fn.csted — custody education."""
 
 import pytest
 import pandas as pd
-from moirais.fn.csted import custody_education
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.csted import custody_education
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCustodyEducation:

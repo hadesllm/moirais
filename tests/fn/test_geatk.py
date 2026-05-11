@@ -1,7 +1,7 @@
 """Test geatk."""
 import numpy as np
 import pytest
-from moirais.fn.geatk import geatk
+from morie.fn.geatk import geatk
 
 
 def test_geatk_basic():

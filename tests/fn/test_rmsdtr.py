@@ -1,7 +1,7 @@
 """Tests for rmsdtr.rmsd."""
 import numpy as np
 import pytest
-from moirais.fn.rmsdtr import rmsd
+from morie.fn.rmsdtr import rmsd
 
 
 def test_rmsdtr_basic():

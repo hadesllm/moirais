@@ -1,7 +1,7 @@
 """Tests for km005.kamath_ch2_decoder_token_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.km005 import kamath_ch2_decoder_token_distribution
+from morie.fn.km005 import kamath_ch2_decoder_token_distribution
 
 
 def test_km005_basic():

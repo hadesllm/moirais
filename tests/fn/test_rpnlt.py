@@ -1,7 +1,7 @@
 """Tests for rpnlt.roughness_penalty."""
 import numpy as np
 import pytest
-from moirais.fn.rpnlt import roughness_penalty
+from morie.fn.rpnlt import roughness_penalty
 
 
 def test_rpnlt_basic():

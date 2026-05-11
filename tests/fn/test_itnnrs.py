@@ -1,7 +1,7 @@
 """Tests for itnnrs.item_nonresponse."""
 import numpy as np
 import pytest
-from moirais.fn.itnnrs import item_nonresponse
+from morie.fn.itnnrs import item_nonresponse
 
 
 def test_itnnrs_basic():

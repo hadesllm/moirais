@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.stag -- Staggered DiD estimator."""
+"""Tests for morie.fn.stag -- Staggered DiD estimator."""
 
 import numpy as np
 import pytest
-from moirais.fn.stag import staggered_did
+from morie.fn.stag import staggered_did
 
 
 class TestStaggeredDiD:

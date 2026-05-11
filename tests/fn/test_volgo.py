@@ -1,7 +1,7 @@
 """Tests for volgo.vol_garch_orthogonal."""
 import numpy as np
 import pytest
-from moirais.fn.volgo import vol_garch_orthogonal
+from morie.fn.volgo import vol_garch_orthogonal
 
 
 def test_volgo_basic():

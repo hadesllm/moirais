@@ -1,7 +1,7 @@
 """Tests for tbaniso."""
 import numpy as np
 import pytest
-from moirais.fn.tbaniso import tbaniso
+from morie.fn.tbaniso import tbaniso
 
 
 def test_tbaniso_basic():
@@ -27,5 +27,5 @@ def test_tbaniso_no_data():
 
 
 def test_tbaniso_alias():
-    from moirais.fn.tbaniso import tbaniso
+    from morie.fn.tbaniso import tbaniso
     assert tbaniso is tbaniso

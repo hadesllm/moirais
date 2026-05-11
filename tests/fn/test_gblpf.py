@@ -1,7 +1,7 @@
 """Tests for gblpf.gblup_full."""
 import numpy as np
 import pytest
-from moirais.fn.gblpf import gblup_full
+from morie.fn.gblpf import gblup_full
 
 
 def test_gblpf_basic():

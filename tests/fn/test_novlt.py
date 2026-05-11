@@ -1,7 +1,7 @@
 """Tests for novlt.novelty."""
 import numpy as np
 import pytest
-from moirais.fn.novlt import novelty
+from morie.fn.novlt import novelty
 
 
 def test_novlt_basic():

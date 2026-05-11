@@ -1,6 +1,6 @@
 """Tests for intensity estimation."""
 import numpy as np
-from moirais.fn.sgint import sgint
+from morie.fn.sgint import sgint
 
 
 def test_sgint_kernel():

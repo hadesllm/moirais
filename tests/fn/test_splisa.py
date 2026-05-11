@@ -1,7 +1,7 @@
 """Tests for splisa.schabenberger_lisa."""
 import numpy as np
 import pytest
-from moirais.fn.splisa import schabenberger_lisa
+from morie.fn.splisa import schabenberger_lisa
 
 
 def test_splisa_basic():

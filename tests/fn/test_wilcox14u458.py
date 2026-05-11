@@ -1,7 +1,7 @@
 """Tests for wilcox14u458.wilcox_chapter_14_unnumbered_458."""
 import numpy as np
 import pytest
-from moirais.fn.wilcox14u458 import wilcox_chapter_14_unnumbered_458
+from morie.fn.wilcox14u458 import wilcox_chapter_14_unnumbered_458
 
 
 def test_wilcox14u458_basic():

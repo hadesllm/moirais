@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sutrn -- substance use trend."""
+"""Tests for morie.fn.sutrn -- substance use trend."""
 
 import pytest
-from moirais.fn.sutrn import substance_trend
+from morie.fn.sutrn import substance_trend
 
 
 class TestSubstanceTrend:

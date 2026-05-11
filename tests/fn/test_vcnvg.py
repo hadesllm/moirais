@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vcnvg — Convergent validity."""
+"""Tests for morie.fn.vcnvg — Convergent validity."""
 
 import numpy as np
 import pytest
-from moirais.fn.vcnvg import validity_convergent
+from morie.fn.vcnvg import validity_convergent
 
 
 class TestValidityConvergent:

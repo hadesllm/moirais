@@ -1,7 +1,7 @@
 """Test sopor."""
 import numpy as np
 import pytest
-from moirais.fn.sopor import sopor
+from morie.fn.sopor import sopor
 
 
 def test_sopor_basic():

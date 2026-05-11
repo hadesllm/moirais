@@ -1,8 +1,8 @@
-"""Tests for moirais._parity — verify migration parity is complete."""
+"""Tests for morie._parity — verify migration parity is complete."""
 
 from pathlib import Path
 
-from moirais._parity import build_parity_matrix, summarize_parity_matrix
+from morie._parity import build_parity_matrix, summarize_parity_matrix
 
 _RTESTS_DIR = Path(__file__).resolve().parents[1] / "rtests"
 

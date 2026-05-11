@@ -1,7 +1,7 @@
 """Tests for powsrv.power_survey."""
 import numpy as np
 import pytest
-from moirais.fn.powsrv import power_survey
+from morie.fn.powsrv import power_survey
 
 
 def test_powsrv_basic():

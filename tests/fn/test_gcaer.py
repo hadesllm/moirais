@@ -1,7 +1,7 @@
 """Test gcaer."""
 import numpy as np
 import pytest
-from moirais.fn.gcaer import gcaer
+from morie.fn.gcaer import gcaer
 
 
 def test_gcaer_basic():

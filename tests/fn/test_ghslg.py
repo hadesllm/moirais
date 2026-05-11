@@ -1,7 +1,7 @@
 """Test ghslg."""
 import numpy as np
 import pytest
-from moirais.fn.ghslg import ghslg
+from morie.fn.ghslg import ghslg
 
 
 def test_ghslg_basic():

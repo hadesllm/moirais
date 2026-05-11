@@ -1,7 +1,7 @@
 """Tests for gb551.gibbons_rank_order_stat."""
 import numpy as np
 import pytest
-from moirais.fn.gb551 import gibbons_rank_order_stat
+from morie.fn.gb551 import gibbons_rank_order_stat
 
 
 def test_gb551_basic():

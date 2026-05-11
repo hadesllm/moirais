@@ -1,7 +1,7 @@
 """Tests for rcall.roll_call_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.rcall import roll_call_analysis
+from morie.fn.rcall import roll_call_analysis
 
 
 def test_rcall_basic():

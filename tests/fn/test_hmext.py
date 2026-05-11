@@ -1,7 +1,7 @@
 """Tests for hmext.geron_extra_trees."""
 import numpy as np
 import pytest
-from moirais.fn.hmext import geron_extra_trees
+from morie.fn.hmext import geron_extra_trees
 
 
 def test_hmext_basic():

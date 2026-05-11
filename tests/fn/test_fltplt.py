@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.fltplt -- filter I/O plot."""
+"""Tests for morie.fn.fltplt -- filter I/O plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.fltplt import fltplt
+from morie.fn.fltplt import fltplt
 
 
 class TestFltPlt:

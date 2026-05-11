@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.holo_m -- mosaic plot."""
+"""Tests for morie.fn.holo_m -- mosaic plot."""
 
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 pd = pytest.importorskip("pandas")
 
-from moirais.fn.holo_m import holo_mosaic
+from morie.fn.holo_m import holo_mosaic
 
 
 class TestHoloMosaic:

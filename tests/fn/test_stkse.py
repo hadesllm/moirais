@@ -1,7 +1,7 @@
 """Tests for stkse."""
 import numpy as np
 import pytest
-from moirais.fn.stkse import stkse
+from morie.fn.stkse import stkse
 
 
 def test_stkse_basic():
@@ -27,5 +27,5 @@ def test_stkse_no_data():
 
 
 def test_stkse_alias():
-    from moirais.fn.stkse import stkse
+    from morie.fn.stkse import stkse
     assert stkse is stkse

@@ -1,7 +1,7 @@
 """Tests for km106.kamath_ch6_self_diagnosis_prob."""
 import numpy as np
 import pytest
-from moirais.fn.km106 import kamath_ch6_self_diagnosis_prob
+from morie.fn.km106 import kamath_ch6_self_diagnosis_prob
 
 
 def test_km106_basic():

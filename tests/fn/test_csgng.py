@@ -1,7 +1,7 @@
 """Test csgng."""
 import numpy as np
 import pytest
-from moirais.fn.csgng import csgng
+from morie.fn.csgng import csgng
 
 
 def test_csgng_basic():

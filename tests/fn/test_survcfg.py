@@ -1,7 +1,7 @@
 """Tests for survcfg.causal_survival_forest_grf."""
 import numpy as np
 import pytest
-from moirais.fn.survcfg import causal_survival_forest_grf
+from morie.fn.survcfg import causal_survival_forest_grf
 
 
 def test_survcfg_basic():

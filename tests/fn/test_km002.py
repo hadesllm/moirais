@@ -1,7 +1,7 @@
 """Tests for km002.kamath_ch2_context_vector."""
 import numpy as np
 import pytest
-from moirais.fn.km002 import kamath_ch2_context_vector
+from morie.fn.km002 import kamath_ch2_context_vector
 
 
 def test_km002_basic():

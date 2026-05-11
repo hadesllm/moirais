@@ -1,7 +1,7 @@
 """Tests for jopacf.joseph_partial_autocorrelation."""
 import numpy as np
 import pytest
-from moirais.fn.jopacf import joseph_partial_autocorrelation
+from morie.fn.jopacf import joseph_partial_autocorrelation
 
 
 def test_jopacf_basic():

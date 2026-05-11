@@ -1,6 +1,6 @@
 """Tests for overlap_weight."""
 import numpy as np, pytest
-from moirais.fn.ovrla import overlap_weight
+from morie.fn.ovrla import overlap_weight
 
 class TestOverlap:
     def test_ate_direction(self):

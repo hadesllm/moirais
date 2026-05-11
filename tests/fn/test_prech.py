@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.prech — Proportional reduction in error."""
+"""Tests for morie.fn.prech — Proportional reduction in error."""
 import numpy as np
-from moirais.fn.prech import prech
+from morie.fn.prech import prech
 
 
 def test_prech_perfect():

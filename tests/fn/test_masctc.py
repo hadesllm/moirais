@@ -1,7 +1,7 @@
 """Test masctc."""
 import numpy as np
 import pytest
-from moirais.fn.masctc import masctc
+from morie.fn.masctc import masctc
 
 
 def test_masctc_basic():

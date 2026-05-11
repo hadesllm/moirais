@@ -1,7 +1,7 @@
 """Tests for msdef.mse_metric."""
 import numpy as np
 import pytest
-from moirais.fn.msdef import mse_metric
+from morie.fn.msdef import mse_metric
 
 
 def test_msdef_basic():

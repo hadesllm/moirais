@@ -1,7 +1,7 @@
 """Tests for evmrlp.evt_mean_residual_life."""
 import numpy as np
 import pytest
-from moirais.fn.evmrlp import evt_mean_residual_life
+from morie.fn.evmrlp import evt_mean_residual_life
 
 
 def test_evmrlp_basic():

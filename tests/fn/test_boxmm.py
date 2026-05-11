@@ -1,7 +1,7 @@
 """Test boxmm."""
 import numpy as np
 import pytest
-from moirais.fn.boxmm import box_m_test
+from morie.fn.boxmm import box_m_test
 
 
 def test_boxmm_basic():

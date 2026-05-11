@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dblng -- doubling time."""
+"""Tests for morie.fn.dblng -- doubling time."""
 
 import numpy as np
 import pytest
-from moirais.fn.dblng import doubling_time
+from morie.fn.dblng import doubling_time
 
 
 class TestDoublingTime:

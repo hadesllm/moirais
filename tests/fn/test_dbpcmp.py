@@ -2,7 +2,7 @@
 
 import pytest
 
-from moirais.fn.dbpcmp import dbp_compliance, dbpcmp
+from morie.fn.dbpcmp import dbp_compliance, dbpcmp
 
 
 def test_dbpcmp_us_clean_sample():

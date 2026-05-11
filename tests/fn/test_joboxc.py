@@ -1,7 +1,7 @@
 """Tests for joboxc.joseph_box_cox_transform."""
 import numpy as np
 import pytest
-from moirais.fn.joboxc import joseph_box_cox_transform
+from morie.fn.joboxc import joseph_box_cox_transform
 
 
 def test_joboxc_basic():

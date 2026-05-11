@@ -1,7 +1,7 @@
 """Tests for cluseff.intracluster_correlation_rho."""
 import numpy as np
 import pytest
-from moirais.fn.cluseff import intracluster_correlation_rho
+from morie.fn.cluseff import intracluster_correlation_rho
 
 
 def test_cluseff_basic():

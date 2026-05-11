@@ -1,7 +1,7 @@
 """Tests for gb_cvo.gibbons_order_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.gb_cvo import gibbons_order_covariance
+from morie.fn.gb_cvo import gibbons_order_covariance
 
 
 def test_gb_cvo_basic():

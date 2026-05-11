@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.xcorr import cross_correlation, xcorr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.xcorr import cross_correlation, xcorr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCrossCorrelation:

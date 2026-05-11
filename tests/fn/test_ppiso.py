@@ -1,7 +1,7 @@
 """Test ppiso."""
 import numpy as np
 import pytest
-from moirais.fn.ppiso import ppiso
+from morie.fn.ppiso import ppiso
 
 
 def test_ppiso_basic():

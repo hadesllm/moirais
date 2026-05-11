@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.wlog — weighted logistic analysis with interaction and SMOTE."""
+"""Tests for morie.fn.wlog — weighted logistic analysis with interaction and SMOTE."""
 
 import math
 from unittest.mock import patch
@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.wlog import run_weighted_logistic_analysis
+from morie.fn.wlog import run_weighted_logistic_analysis
 
 
 def _make_cpads_frame(rng, n=200):

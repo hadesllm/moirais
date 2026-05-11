@@ -1,7 +1,7 @@
 """Tests for kmemer.kamath_emergent_abilities."""
 import numpy as np
 import pytest
-from moirais.fn.kmemer import kamath_emergent_abilities
+from morie.fn.kmemer import kamath_emergent_abilities
 
 
 def test_kmemer_basic():

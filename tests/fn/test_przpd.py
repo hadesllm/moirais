@@ -1,7 +1,7 @@
 """Test parzen_pdf."""
 import numpy as np
-from moirais.fn.przpd import parzen_pdf, przpd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.przpd import parzen_pdf, przpd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestParzenPDF:

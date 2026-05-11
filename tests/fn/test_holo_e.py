@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.holo_e -- effect size plot."""
+"""Tests for morie.fn.holo_e -- effect size plot."""
 
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.holo_e import holo_effect
+from morie.fn.holo_e import holo_effect
 
 
 class TestHoloEffect:

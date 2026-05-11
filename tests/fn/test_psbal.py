@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.psbal -- Propensity score balancing weights."""
+"""Tests for morie.fn.psbal -- Propensity score balancing weights."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.psbal import ps_balance, psbal
+from morie.fn.psbal import ps_balance, psbal
 
 
 class TestPSBalance:

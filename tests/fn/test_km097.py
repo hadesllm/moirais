@@ -1,7 +1,7 @@
 """Tests for km097.kamath_ch6_ear_entropy_reg."""
 import numpy as np
 import pytest
-from moirais.fn.km097 import kamath_ch6_ear_entropy_reg
+from morie.fn.km097 import kamath_ch6_ear_entropy_reg
 
 
 def test_km097_basic():

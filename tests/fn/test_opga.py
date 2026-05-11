@@ -1,7 +1,7 @@
 """Test opga."""
 import numpy as np
 import pytest
-from moirais.fn.opga import opga
+from morie.fn.opga import opga
 
 
 def test_opga_basic():

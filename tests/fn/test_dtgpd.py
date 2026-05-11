@@ -1,7 +1,7 @@
 """Test dtgpd."""
 import numpy as np
 import pytest
-from moirais.fn.dtgpd import dtgpd
+from morie.fn.dtgpd import dtgpd
 
 
 def test_dtgpd_basic():

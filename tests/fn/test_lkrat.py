@@ -1,7 +1,7 @@
 """Tests for likelihood_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.lkrat import likelihood_ratio, lkrat
+from morie.fn.lkrat import likelihood_ratio, lkrat
 
 
 def test_same_params():

@@ -1,7 +1,7 @@
 """Tests for irtsp.irt_spatial."""
 import numpy as np
 import pytest
-from moirais.fn.irtsp import irt_spatial
+from morie.fn.irtsp import irt_spatial
 
 
 def test_irtsp_basic():

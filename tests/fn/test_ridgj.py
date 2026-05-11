@@ -1,7 +1,7 @@
 """Tests for ridgj.ridge_objective."""
 import numpy as np
 import pytest
-from moirais.fn.ridgj import ridge_objective
+from morie.fn.ridgj import ridge_objective
 
 
 def test_ridgj_basic():

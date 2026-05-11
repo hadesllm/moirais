@@ -1,7 +1,7 @@
 """Test opbat."""
 import numpy as np
 import pytest
-from moirais.fn.opbat import opbat
+from morie.fn.opbat import opbat
 
 
 def test_opbat_basic():

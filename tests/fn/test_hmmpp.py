@@ -1,7 +1,7 @@
 """Tests for hmmpp.geron_model_parallelism."""
 import numpy as np
 import pytest
-from moirais.fn.hmmpp import geron_model_parallelism
+from morie.fn.hmmpp import geron_model_parallelism
 
 
 def test_hmmpp_basic():

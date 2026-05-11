@@ -1,7 +1,7 @@
 """Test dtfsk."""
 import numpy as np
 import pytest
-from moirais.fn.dtfsk import dtfsk
+from morie.fn.dtfsk import dtfsk
 
 
 def test_dtfsk_basic():

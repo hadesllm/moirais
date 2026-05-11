@@ -1,7 +1,7 @@
 """Tests for samseg.sam_segment."""
 import numpy as np
 import pytest
-from moirais.fn.samseg import sam_segment
+from morie.fn.samseg import sam_segment
 
 
 def test_samseg_basic():

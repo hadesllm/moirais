@@ -1,7 +1,7 @@
 """Tests for latnh.latin_hypercube."""
 import numpy as np
 import pytest
-from moirais.fn.latnh import latin_hypercube
+from morie.fn.latnh import latin_hypercube
 
 
 def test_latnh_basic():

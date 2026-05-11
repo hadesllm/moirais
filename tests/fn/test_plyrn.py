@@ -1,8 +1,8 @@
 """Test poly_ring_op."""
 import numpy as np
 import pytest
-from moirais.fn.plyrn import poly_ring_op
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.plyrn import poly_ring_op
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPolyRingOp:

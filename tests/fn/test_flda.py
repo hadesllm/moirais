@@ -1,7 +1,7 @@
 """Tests for flda.py - Fisher Linear Discriminant Analysis."""
 import numpy as np
 import pytest
-from moirais.fn.flda import flda_fn, flda
+from morie.fn.flda import flda_fn, flda
 
 
 def _two_class_data():

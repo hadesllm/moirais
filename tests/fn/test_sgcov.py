@@ -1,6 +1,6 @@
 """Tests for spatial covariance function."""
 import numpy as np
-from moirais.fn.sgcov import sgcov
+from morie.fn.sgcov import sgcov
 
 
 def test_sgcov_smoke():

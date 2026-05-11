@@ -1,7 +1,7 @@
 """Test contour."""
 import numpy as np
 import pytest
-from moirais.fn.contour import contour
+from morie.fn.contour import contour
 
 
 def test_contour_basic():

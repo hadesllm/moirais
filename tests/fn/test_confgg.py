@@ -1,7 +1,7 @@
 """Tests for confgg.configuration_model."""
 import numpy as np
 import pytest
-from moirais.fn.confgg import configuration_model
+from morie.fn.confgg import configuration_model
 
 
 def test_confgg_basic():

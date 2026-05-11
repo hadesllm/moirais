@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dstcm -- distance comparison."""
+"""Tests for morie.fn.dstcm -- distance comparison."""
 
 import numpy as np
-from moirais.fn.dstcm import distance_comparison, dstcm
+from morie.fn.dstcm import distance_comparison, dstcm
 
 
 def test_dstcm_perfect():

@@ -1,7 +1,7 @@
 """Tests for evrlci.evt_return_level_ci."""
 import numpy as np
 import pytest
-from moirais.fn.evrlci import evt_return_level_ci
+from morie.fn.evrlci import evt_return_level_ci
 
 
 def test_evrlci_basic():

@@ -1,7 +1,7 @@
 """Tests for tmlsl.tmle_super_learner."""
 import numpy as np
 import pytest
-from moirais.fn.tmlsl import tmle_super_learner
+from morie.fn.tmlsl import tmle_super_learner
 
 
 def test_tmlsl_basic():

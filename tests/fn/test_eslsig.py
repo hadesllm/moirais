@@ -1,7 +1,7 @@
 """Tests for eslsig.esl_residual_variance."""
 import numpy as np
 import pytest
-from moirais.fn.eslsig import esl_residual_variance
+from morie.fn.eslsig import esl_residual_variance
 
 
 def test_eslsig_basic():

@@ -1,7 +1,7 @@
 """Test gdemg."""
 import numpy as np
 import pytest
-from moirais.fn.gdemg import gdemg
+from morie.fn.gdemg import gdemg
 
 
 def test_gdemg_basic():

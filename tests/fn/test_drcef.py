@@ -1,7 +1,7 @@
 """Tests for drcef.dr_callaway_event_study."""
 import numpy as np
 import pytest
-from moirais.fn.drcef import dr_callaway_event_study
+from morie.fn.drcef import dr_callaway_event_study
 
 
 def test_drcef_basic():

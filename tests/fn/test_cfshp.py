@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfshp."""
+"""Tests for morie.fn.cfshp."""
 
 import numpy as np
 import pytest
-from moirais.fn.cfshp import cfshp
+from morie.fn.cfshp import cfshp
 
 
 class TestCfshp:

@@ -1,7 +1,7 @@
 """Tests for gwPot.global_warming_potential."""
 import numpy as np
 import pytest
-from moirais.fn.gwPot import global_warming_potential
+from morie.fn.gwPot import global_warming_potential
 
 
 def test_gwPot_basic():

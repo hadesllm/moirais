@@ -1,7 +1,7 @@
 """Test upsample (upsmp)."""
 import numpy as np
-from moirais.fn.upsmp import upsample, upsmp
-from moirais.fn._containers import SignalResult
+from morie.fn.upsmp import upsample, upsmp
+from morie.fn._containers import SignalResult
 
 
 class TestUpsample:

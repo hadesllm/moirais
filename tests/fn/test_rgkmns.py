@@ -1,7 +1,7 @@
 """Tests for rgkmns.rangayyan_kmeans."""
 import numpy as np
 import pytest
-from moirais.fn.rgkmns import rangayyan_kmeans
+from morie.fn.rgkmns import rangayyan_kmeans
 
 
 def test_rgkmns_basic():

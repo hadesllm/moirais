@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrgwt -- GWR local t-values"""
+"""Tests for morie.fn.xrgwt -- GWR local t-values"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrgwt import gwr_tvalues
+from morie.fn.xrgwt import gwr_tvalues
 
 
 class TestGwrTvalues:

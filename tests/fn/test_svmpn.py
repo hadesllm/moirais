@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svmpn -- Multi-party Nash equilibrium"""
+"""Tests for morie.fn.svmpn -- Multi-party Nash equilibrium"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svmpn import multiparty_nash
+from morie.fn.svmpn import multiparty_nash
 
 
 class TestMultipartyNash:

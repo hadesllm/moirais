@@ -1,7 +1,7 @@
 """Tests for sirepi.sir_compartmental."""
 import numpy as np
 import pytest
-from moirais.fn.sirepi import sir_compartmental
+from morie.fn.sirepi import sir_compartmental
 
 
 def test_sirepi_basic():

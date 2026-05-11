@@ -1,7 +1,7 @@
 """Test vmmat."""
 import numpy as np
 import pytest
-from moirais.fn.vmmat import vmmat
+from morie.fn.vmmat import vmmat
 
 
 def test_vmmat_basic():

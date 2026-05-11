@@ -1,7 +1,7 @@
 """Tests for qsarh.hansch_qsar."""
 import numpy as np
 import pytest
-from moirais.fn.qsarh import hansch_qsar
+from morie.fn.qsarh import hansch_qsar
 
 
 def test_qsarh_basic():

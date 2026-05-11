@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ldscr -- LD score regression."""
+"""Tests for morie.fn.ldscr -- LD score regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.ldscr import ldscr
+from morie.fn.ldscr import ldscr
 
 
 class TestLdscr:

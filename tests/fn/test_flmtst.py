@@ -1,7 +1,7 @@
 """Tests for flmtst.fleming_harrington."""
 import numpy as np
 import pytest
-from moirais.fn.flmtst import fleming_harrington
+from morie.fn.flmtst import fleming_harrington
 
 
 def test_flmtst_basic():

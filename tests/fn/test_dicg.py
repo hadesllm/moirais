@@ -1,7 +1,7 @@
 """Tests for dicg.deviance_information_criterion."""
 import numpy as np
 import pytest
-from moirais.fn.dicg import deviance_information_criterion
+from morie.fn.dicg import deviance_information_criterion
 
 
 def test_dicg_basic():

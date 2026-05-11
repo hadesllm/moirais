@@ -1,6 +1,6 @@
 """Tests for manova_one."""
 import numpy as np, pytest
-from moirais.fn.manova import manova_one
+from morie.fn.manova import manova_one
 
 class TestManova:
     def test_different(self):

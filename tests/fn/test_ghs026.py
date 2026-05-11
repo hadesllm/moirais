@@ -1,7 +1,7 @@
 """Tests for ghs026.ghosal_ch3_tailfree_finite_density_pm."""
 import numpy as np
 import pytest
-from moirais.fn.ghs026 import ghosal_ch3_tailfree_finite_density_pm
+from morie.fn.ghs026 import ghosal_ch3_tailfree_finite_density_pm
 
 
 def test_ghs026_basic():

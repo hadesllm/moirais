@@ -1,7 +1,7 @@
 """Test confusion_plot (cmxpl)."""
 import numpy as np
-from moirais.fn.cmxpl import confusion_plot, cmxpl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cmxpl import confusion_plot, cmxpl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCmxpl:

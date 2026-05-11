@@ -1,7 +1,7 @@
 """Tests for integration (neural complexity)."""
 import numpy as np
 import pytest
-from moirais.fn.intgn import integration, intgn
+from morie.fn.intgn import integration, intgn
 
 
 def test_diagonal():

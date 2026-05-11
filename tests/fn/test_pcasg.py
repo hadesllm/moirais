@@ -1,8 +1,8 @@
 """Tests for pcasg -- PCA signal decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.pcasg import pcasg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.pcasg import pcasg
+from morie.fn._containers import DescriptiveResult
 
 
 def test_pcasg_basic():

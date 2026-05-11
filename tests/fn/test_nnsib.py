@@ -1,7 +1,7 @@
 """Tests for nnsib."""
 import numpy as np
 import pytest
-from moirais.fn.nnsib import nnsib
+from morie.fn.nnsib import nnsib
 
 
 def test_nnsib_basic():
@@ -27,5 +27,5 @@ def test_nnsib_no_data():
 
 
 def test_nnsib_alias():
-    from moirais.fn.nnsib import nnsib
+    from morie.fn.nnsib import nnsib
     assert nnsib is nnsib

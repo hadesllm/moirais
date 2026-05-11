@@ -1,7 +1,7 @@
 """Tests for gstarl.local_g_star."""
 import numpy as np
 import pytest
-from moirais.fn.gstarl import local_g_star
+from morie.fn.gstarl import local_g_star
 
 
 def test_gstarl_basic():

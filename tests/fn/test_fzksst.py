@@ -1,7 +1,7 @@
 """Tests for fzksst.fauzi_ks_statistic."""
 import numpy as np
 import pytest
-from moirais.fn.fzksst import fauzi_ks_statistic
+from morie.fn.fzksst import fauzi_ks_statistic
 
 
 def test_fzksst_basic():

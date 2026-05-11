@@ -1,6 +1,6 @@
 """Tests for fizzbuzz_stats."""
 import pytest
-from moirais.fn.fizz import fizzbuzz_stats
+from morie.fn.fizz import fizzbuzz_stats
 
 class TestFizz:
     def test_15(self):

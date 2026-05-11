@@ -1,7 +1,7 @@
 """Tests for hmdtst.geron_tree_sensitivity_scale."""
 import numpy as np
 import pytest
-from moirais.fn.hmdtst import geron_tree_sensitivity_scale
+from morie.fn.hmdtst import geron_tree_sensitivity_scale
 
 
 def test_hmdtst_basic():

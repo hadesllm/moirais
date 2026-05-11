@@ -1,7 +1,7 @@
 """Tests for stmet."""
 import numpy as np
 import pytest
-from moirais.fn.stmet import stmet
+from morie.fn.stmet import stmet
 
 
 def test_stmet_basic():
@@ -27,5 +27,5 @@ def test_stmet_no_data():
 
 
 def test_stmet_alias():
-    from moirais.fn.stmet import stmet
+    from morie.fn.stmet import stmet
     assert stmet is stmet

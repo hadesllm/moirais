@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.baysl -- Bayesian LASSO."""
+"""Tests for morie.fn.baysl -- Bayesian LASSO."""
 
 import numpy as np
 import pytest
-from moirais.fn.baysl import baysl
+from morie.fn.baysl import baysl
 
 
 def _sim(n=60, p=10, seed=42):

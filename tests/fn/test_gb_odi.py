@@ -1,7 +1,7 @@
 """Tests for gb_odi.gibbons_odds_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.gb_odi import gibbons_odds_ratio
+from morie.fn.gb_odi import gibbons_odds_ratio
 
 
 def test_gb_odi_basic():

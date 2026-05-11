@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptkde -- Spatial kernel density estimation"""
+"""Tests for morie.fn.ptkde -- Spatial kernel density estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptkde import spatial_kde
+from morie.fn.ptkde import spatial_kde
 
 
 class TestSpatialKde:

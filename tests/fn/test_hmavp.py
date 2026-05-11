@@ -1,7 +1,7 @@
 """Tests for hmavp.geron_average_pool."""
 import numpy as np
 import pytest
-from moirais.fn.hmavp import geron_average_pool
+from morie.fn.hmavp import geron_average_pool
 
 
 def test_hmavp_basic():

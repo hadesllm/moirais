@@ -1,7 +1,7 @@
 """Test mtcps."""
 import numpy as np
 import pytest
-from moirais.fn.mtcps import mtcps
+from morie.fn.mtcps import mtcps
 
 
 def test_mtcps_basic():

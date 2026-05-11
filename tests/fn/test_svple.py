@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svple -- Esteban-Ray polarization index"""
+"""Tests for morie.fn.svple -- Esteban-Ray polarization index"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svple import polarization_er
+from morie.fn.svple import polarization_er
 
 
 class TestPolarizationEr:

@@ -1,7 +1,7 @@
 """Tests for grrnd.geron_randomized_search_cv."""
 import numpy as np
 import pytest
-from moirais.fn.grrnd import geron_randomized_search_cv
+from morie.fn.grrnd import geron_randomized_search_cv
 
 
 def test_grrnd_basic():

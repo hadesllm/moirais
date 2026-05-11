@@ -1,7 +1,7 @@
 """Tests for sgtspc.sgt_spectrum."""
 import numpy as np
 import pytest
-from moirais.fn.sgtspc import sgt_spectrum
+from morie.fn.sgtspc import sgt_spectrum
 
 
 def test_sgtspc_basic():

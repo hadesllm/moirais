@@ -1,7 +1,7 @@
 """What is now proved was once only imagined. — William Blake"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u39 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_39
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u39 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_39
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u39_basic():

@@ -1,4 +1,4 @@
-"""Tests for moirais.inspector — output inspection and statistical verification."""
+"""Tests for morie.inspector — output inspection and statistical verification."""
 
 from __future__ import annotations
 
@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import pytest
 
-from moirais.inspector import (
+from morie.inspector import (
     InspectionResult,
     VerificationCheck,
     VerificationReport,

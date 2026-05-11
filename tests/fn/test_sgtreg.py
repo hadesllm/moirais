@@ -1,7 +1,7 @@
 """Tests for sgtreg.sgt_resistance_distance_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.sgtreg import sgt_resistance_distance_matrix
+from morie.fn.sgtreg import sgt_resistance_distance_matrix
 
 
 def test_sgtreg_basic():

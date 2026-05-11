@@ -1,7 +1,7 @@
 """Tests for vdedge."""
 import numpy as np
 import pytest
-from moirais.fn.vdedge import vdedge
+from morie.fn.vdedge import vdedge
 
 
 def test_vdedge_basic():
@@ -27,5 +27,5 @@ def test_vdedge_no_data():
 
 
 def test_vdedge_alias():
-    from moirais.fn.vdedge import vdedge
+    from morie.fn.vdedge import vdedge
     assert vdedge is vdedge

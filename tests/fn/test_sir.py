@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sir -- Standardized Incidence Ratio."""
+"""Tests for morie.fn.sir -- Standardized Incidence Ratio."""
 
 import pytest
-from moirais.fn.sir import standardized_incidence_ratio
+from morie.fn.sir import standardized_incidence_ratio
 
 
 class TestSIR:

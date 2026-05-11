@@ -1,7 +1,7 @@
 """Tests for dualtc.dual_total_correlation."""
 import numpy as np
 import pytest
-from moirais.fn.dualtc import dual_total_correlation
+from morie.fn.dualtc import dual_total_correlation
 
 
 def test_dualtc_basic():

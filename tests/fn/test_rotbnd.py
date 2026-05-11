@@ -1,7 +1,7 @@
 """Tests for rotbnd.rotatable_bond_count."""
 import numpy as np
 import pytest
-from moirais.fn.rotbnd import rotatable_bond_count
+from morie.fn.rotbnd import rotatable_bond_count
 
 
 def test_rotbnd_basic():

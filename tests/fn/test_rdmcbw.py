@@ -1,7 +1,7 @@
 """Tests for rdmcbw.mse_optimal_bandwidth_rdd."""
 import numpy as np
 import pytest
-from moirais.fn.rdmcbw import mse_optimal_bandwidth_rdd
+from morie.fn.rdmcbw import mse_optimal_bandwidth_rdd
 
 
 def test_rdmcbw_basic():

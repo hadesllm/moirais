@@ -1,7 +1,7 @@
 """Test itakura_dist (itknf)."""
 import numpy as np
-from moirais.fn.itknf import itakura_dist, itknf
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.itknf import itakura_dist, itknf
+from morie.fn._containers import DescriptiveResult
 
 
 class TestItknf:

@@ -1,7 +1,7 @@
 """Test exponential_ma (emavg)."""
 import numpy as np
-from moirais.fn.emavg import exponential_ma, emavg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.emavg import exponential_ma, emavg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestExponentialMA:

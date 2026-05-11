@@ -1,7 +1,7 @@
 """Tests for sdcdis.spatial_data_distortion."""
 import numpy as np
 import pytest
-from moirais.fn.sdcdis import spatial_data_distortion
+from morie.fn.sdcdis import spatial_data_distortion
 
 
 def test_sdcdis_basic():

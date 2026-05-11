@@ -1,7 +1,7 @@
 Statistical Methods
 ===================
 
-This section documents the mathematical foundations behind MOIRAIS's
+This section documents the mathematical foundations behind MORIE's
 estimators. The methods are dataset-agnostic — they apply to any
 suitably-shaped tabular input, including the OTIS placement records,
 TPS incident feeds, CPADS survey data, and any other dataset that
@@ -72,7 +72,7 @@ Logistic / model comparison
 Survey + descriptive statistics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- ``moirais.survey`` helpers — survey-weighted CIs and prevalence
+- ``morie.survey`` helpers — survey-weighted CIs and prevalence
 - ``horvitz_thompson_total`` — HT estimator, population total
 - ``hajek_mean`` — Hájek estimator, population mean
 
@@ -80,7 +80,7 @@ Power + Bayes
 ~~~~~~~~~~~~~
 
 - ``run_power_design_module`` — N required for a given design
-- Beta-binomial Bayes — posterior mean / CI (see ``moirais.causal``)
+- Beta-binomial Bayes — posterior mean / CI (see ``morie.causal``)
 
 Psychometrics
 ~~~~~~~~~~~~~

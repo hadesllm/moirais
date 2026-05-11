@@ -1,7 +1,7 @@
 """Tests for gpkrr.gp_kernel_ridge_reg."""
 import numpy as np
 import pytest
-from moirais.fn.gpkrr import gp_kernel_ridge_reg
+from morie.fn.gpkrr import gp_kernel_ridge_reg
 
 
 def test_gpkrr_basic():

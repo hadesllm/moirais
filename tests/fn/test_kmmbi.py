@@ -1,7 +1,7 @@
 """Tests for kmmbi.kamath_membership_inference."""
 import numpy as np
 import pytest
-from moirais.fn.kmmbi import kamath_membership_inference
+from morie.fn.kmmbi import kamath_membership_inference
 
 
 def test_kmmbi_basic():

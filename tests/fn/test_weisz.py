@@ -1,7 +1,7 @@
 """Tests for weisz.weiszfeld."""
 import numpy as np
 import pytest
-from moirais.fn.weisz import weiszfeld
+from morie.fn.weisz import weiszfeld
 
 
 def test_weisz_basic():

@@ -1,7 +1,7 @@
 """Tests for grmha.geron_multi_head_attention."""
 import numpy as np
 import pytest
-from moirais.fn.grmha import geron_multi_head_attention
+from morie.fn.grmha import geron_multi_head_attention
 
 
 def test_grmha_basic():

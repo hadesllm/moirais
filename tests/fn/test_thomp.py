@@ -1,7 +1,7 @@
 """Tests for thomp.thompson_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.thomp import thompson_sampling
+from morie.fn.thomp import thompson_sampling
 
 
 def test_thomp_basic():

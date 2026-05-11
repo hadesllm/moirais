@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bosed -- Bose-Einstein distribution."""
+"""Tests for morie.fn.bosed -- Bose-Einstein distribution."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bosed import bosed
+from morie.fn.bosed import bosed
 
 
 def test_returns_dict():

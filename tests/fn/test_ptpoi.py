@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptpoi -- Homogeneous Poisson point process"""
+"""Tests for morie.fn.ptpoi -- Homogeneous Poisson point process"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptpoi import poisson_process
+from morie.fn.ptpoi import poisson_process
 
 
 class TestPoissonProcess:

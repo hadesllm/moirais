@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.heboi -- burden of illness."""
+"""Tests for morie.fn.heboi -- burden of illness."""
 
 import pytest
-from moirais.fn.heboi import burden_of_illness
+from morie.fn.heboi import burden_of_illness
 
 
 class TestBurdenOfIllness:

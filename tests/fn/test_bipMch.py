@@ -1,7 +1,7 @@
 """Tests for bipMch.bipartite_matching."""
 import numpy as np
 import pytest
-from moirais.fn.bipMch import bipartite_matching
+from morie.fn.bipMch import bipartite_matching
 
 
 def test_bipMch_basic():

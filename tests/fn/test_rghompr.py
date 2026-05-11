@@ -1,7 +1,7 @@
 """Tests for rghompr.rangayyan_homomorphic_pred."""
 import numpy as np
 import pytest
-from moirais.fn.rghompr import rangayyan_homomorphic_pred
+from morie.fn.rghompr import rangayyan_homomorphic_pred
 
 
 def test_rghompr_basic():

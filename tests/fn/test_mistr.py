@@ -1,7 +1,7 @@
 """Tests for mistr.mistral."""
 import numpy as np
 import pytest
-from moirais.fn.mistr import mistral
+from morie.fn.mistr import mistral
 
 
 def test_mistr_basic():

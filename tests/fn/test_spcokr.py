@@ -1,7 +1,7 @@
 """Tests for spcokr.schabenberger_cokriging."""
 import numpy as np
 import pytest
-from moirais.fn.spcokr import schabenberger_cokriging
+from morie.fn.spcokr import schabenberger_cokriging
 
 
 def test_spcokr_basic():

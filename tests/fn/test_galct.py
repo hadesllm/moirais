@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.galct -- resource depletion model."""
+"""Tests for morie.fn.galct -- resource depletion model."""
 
 import numpy as np
-from moirais.fn.galct import depletion_model, galct
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.galct import depletion_model, galct
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGalct:

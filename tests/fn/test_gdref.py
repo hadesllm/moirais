@@ -1,7 +1,7 @@
 """Test gdref."""
 import numpy as np
 import pytest
-from moirais.fn.gdref import gdref
+from morie.fn.gdref import gdref
 
 
 def test_gdref_basic():

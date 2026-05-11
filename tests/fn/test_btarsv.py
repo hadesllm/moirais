@@ -1,7 +1,7 @@
 """Tests for btarsv.boot_ar_sieve."""
 import numpy as np
 import pytest
-from moirais.fn.btarsv import boot_ar_sieve
+from morie.fn.btarsv import boot_ar_sieve
 
 
 def test_btarsv_basic():

@@ -1,7 +1,7 @@
 """Tests for snaivf.seasonal_naive."""
 import numpy as np
 import pytest
-from moirais.fn.snaivf import seasonal_naive
+from morie.fn.snaivf import seasonal_naive
 
 
 def test_snaivf_basic():

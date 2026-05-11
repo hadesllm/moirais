@@ -1,7 +1,7 @@
 """Tests for msm253.mvsml_reproducing_kernel_eq_10_14."""
 import numpy as np
 import pytest
-from moirais.fn.msm253 import mvsml_reproducing_kernel_eq_10_14
+from morie.fn.msm253 import mvsml_reproducing_kernel_eq_10_14
 
 
 def test_msm253_basic():

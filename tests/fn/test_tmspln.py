@@ -1,7 +1,7 @@
 """Tests for tmspln."""
 import numpy as np
 import pytest
-from moirais.fn.tmspln import tmspln
+from morie.fn.tmspln import tmspln
 
 
 def test_tmspln_basic():
@@ -27,5 +27,5 @@ def test_tmspln_no_data():
 
 
 def test_tmspln_alias():
-    from moirais.fn.tmspln import tmspln
+    from morie.fn.tmspln import tmspln
     assert tmspln is tmspln

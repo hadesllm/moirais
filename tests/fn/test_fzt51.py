@@ -1,7 +1,7 @@
 """Tests for fzt51.fauzi_thm5_1_naive_kernel_equiv."""
 import numpy as np
 import pytest
-from moirais.fn.fzt51 import fauzi_thm5_1_naive_kernel_equiv
+from morie.fn.fzt51 import fauzi_thm5_1_naive_kernel_equiv
 
 
 def test_fzt51_basic():

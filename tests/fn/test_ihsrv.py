@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ihsrv -- indigenous service access."""
+"""Tests for morie.fn.ihsrv -- indigenous service access."""
 
 import pytest
-from moirais.fn.ihsrv import indigenous_service_access
+from morie.fn.ihsrv import indigenous_service_access
 
 
 class TestIndigenousServiceAccess:

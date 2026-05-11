@@ -1,7 +1,7 @@
 """Tests for catep.cate_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.catep import cate_estimation
+from morie.fn.catep import cate_estimation
 
 
 def test_catep_basic():

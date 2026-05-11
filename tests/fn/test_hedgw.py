@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.hedgw — Edgeworth expansion for KDE."""
+"""Tests for morie.fn.hedgw — Edgeworth expansion for KDE."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.hedgw import hedgw
+from morie.fn.hedgw import hedgw
 
 
 class TestHedgw:

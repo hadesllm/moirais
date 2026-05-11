@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.blogt -- Bayesian logistic regression."""
+"""Tests for morie.fn.blogt -- Bayesian logistic regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.blogt import bayesian_logistic
+from morie.fn.blogt import bayesian_logistic
 
 
 @pytest.fixture()

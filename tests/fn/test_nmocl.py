@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmocl -- Optimal Classification cutting line"""
+"""Tests for morie.fn.nmocl -- Optimal Classification cutting line"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmocl import oc_cutline
+from morie.fn.nmocl import oc_cutline
 
 
 class TestOcCutline:

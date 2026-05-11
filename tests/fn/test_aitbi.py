@@ -1,7 +1,7 @@
 """Tests for aitbi.aitchison_biplot."""
 import numpy as np
 import pytest
-from moirais.fn.aitbi import aitchison_biplot
+from morie.fn.aitbi import aitchison_biplot
 
 
 def test_aitbi_basic():

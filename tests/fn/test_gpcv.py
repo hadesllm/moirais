@@ -1,7 +1,7 @@
 """Tests for gpcv."""
 import numpy as np
 import pytest
-from moirais.fn.gpcv import gpcv
+from morie.fn.gpcv import gpcv
 
 
 def test_gpcv_basic():
@@ -27,5 +27,5 @@ def test_gpcv_no_data():
 
 
 def test_gpcv_alias():
-    from moirais.fn.gpcv import gpcv
+    from morie.fn.gpcv import gpcv
     assert gpcv is gpcv

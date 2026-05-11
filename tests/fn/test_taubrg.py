@@ -1,7 +1,7 @@
 """Tests for taubrg.tau_estimator_regression."""
 import numpy as np
 import pytest
-from moirais.fn.taubrg import tau_estimator_regression
+from morie.fn.taubrg import tau_estimator_regression
 
 
 def test_taubrg_basic():

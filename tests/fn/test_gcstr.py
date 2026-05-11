@@ -1,7 +1,7 @@
 """Test gcstr."""
 import numpy as np
 import pytest
-from moirais.fn.gcstr import gcstr
+from morie.fn.gcstr import gcstr
 
 
 def test_gcstr_basic():

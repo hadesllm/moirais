@@ -1,7 +1,7 @@
 """Tests for grgs.geron_grid_search_cv."""
 import numpy as np
 import pytest
-from moirais.fn.grgs import geron_grid_search_cv
+from morie.fn.grgs import geron_grid_search_cv
 
 
 def test_grgs_basic():

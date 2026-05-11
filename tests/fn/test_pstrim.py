@@ -1,6 +1,6 @@
 """Tests for propensity_trim."""
 import numpy as np, pytest
-from moirais.fn.pstrim import propensity_trim
+from morie.fn.pstrim import propensity_trim
 
 class TestPSTrim:
     def test_basic(self):

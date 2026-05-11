@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dlnrm — lognormal PDF."""
+"""Tests for morie.fn.dlnrm — lognormal PDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dlnrm import dlnrm
+from morie.fn.dlnrm import dlnrm
 
 
 class TestDlnrm:

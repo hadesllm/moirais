@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kqant — kernel quantile estimator."""
+"""Tests for morie.fn.kqant — kernel quantile estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kqant import kqant
+from morie.fn.kqant import kqant
 
 
 class TestKqant:

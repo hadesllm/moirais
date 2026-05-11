@@ -1,7 +1,7 @@
 """Tests for spwgts.spline_weights."""
 import numpy as np
 import pytest
-from moirais.fn.spwgts import spline_weights
+from morie.fn.spwgts import spline_weights
 
 
 def test_spwgts_basic():

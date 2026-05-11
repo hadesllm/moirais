@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.emvbs -- Evidence maximization."""
+"""Tests for morie.fn.emvbs -- Evidence maximization."""
 
 import numpy as np
-from moirais.fn.emvbs import evidence_maximization
+from morie.fn.emvbs import evidence_maximization
 
 
 def test_returns_dict():

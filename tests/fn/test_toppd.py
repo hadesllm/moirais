@@ -1,7 +1,7 @@
 """Tests for toppd.top_p_nucleus."""
 import numpy as np
 import pytest
-from moirais.fn.toppd import top_p_nucleus
+from morie.fn.toppd import top_p_nucleus
 
 
 def test_toppd_basic():

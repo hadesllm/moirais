@@ -1,7 +1,7 @@
 """Tests for unitl.unit_length_normalization."""
 import numpy as np
 import pytest
-from moirais.fn.unitl import unit_length_normalization
+from morie.fn.unitl import unit_length_normalization
 
 
 def test_unitl_basic():

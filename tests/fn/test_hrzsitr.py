@@ -1,7 +1,7 @@
 """Tests for hrzsitr.horowitz_sieve_npiv."""
 import numpy as np
 import pytest
-from moirais.fn.hrzsitr import horowitz_sieve_npiv
+from morie.fn.hrzsitr import horowitz_sieve_npiv
 
 
 def test_hrzsitr_basic():

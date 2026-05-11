@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svjhn -- Johnston power index"""
+"""Tests for morie.fn.svjhn -- Johnston power index"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svjhn import johnston_power
+from morie.fn.svjhn import johnston_power
 
 
 class TestJohnstonPower:

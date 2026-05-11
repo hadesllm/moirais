@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bsynt -- Bayesian synthetic control."""
+"""Tests for morie.fn.bsynt -- Bayesian synthetic control."""
 
 import numpy as np
-from moirais.fn.bsynt import bayesian_synthetic_control
+from morie.fn.bsynt import bayesian_synthetic_control
 
 
 def test_returns_dict():

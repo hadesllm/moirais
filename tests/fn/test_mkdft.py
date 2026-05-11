@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mkdft — multivariate product kernel density."""
+"""Tests for morie.fn.mkdft — multivariate product kernel density."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mkdft import mkdft
+from morie.fn.mkdft import mkdft
 
 
 class TestMkdft:

@@ -1,7 +1,7 @@
 """Test mtktz."""
 import numpy as np
 import pytest
-from moirais.fn.mtktz import mtktz
+from morie.fn.mtktz import mtktz
 
 
 def test_mtktz_basic():

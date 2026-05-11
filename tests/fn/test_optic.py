@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.optic -- OPTICS clustering."""
+"""Tests for morie.fn.optic -- OPTICS clustering."""
 
 import numpy as np
-from moirais.fn.optic import optics
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.optic import optics
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOptics:

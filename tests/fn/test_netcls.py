@@ -1,7 +1,7 @@
 """Tests for netcls.closeness_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.netcls import closeness_centrality
+from morie.fn.netcls import closeness_centrality
 
 
 def test_netcls_basic():

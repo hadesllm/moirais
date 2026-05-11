@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.birtp — Bayesian IRT posterior summary."""
+"""Tests for morie.fn.birtp — Bayesian IRT posterior summary."""
 import numpy as np
 import pytest
 
-from moirais.fn.birtp import birtp
+from morie.fn.birtp import birtp
 
 
 def test_birtp_smoke():
@@ -12,7 +12,7 @@ def test_birtp_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.birtp import cheatsheet
+    from morie.fn.birtp import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

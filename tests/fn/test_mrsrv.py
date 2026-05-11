@@ -1,7 +1,7 @@
 """Tests for mrsrv: martingale residuals for Cox model."""
 import numpy as np
 import pytest
-from moirais.fn.mrsrv import mrsrv
+from morie.fn.mrsrv import mrsrv
 
 
 def _make_data(n=150, beta=0.5, seed=0):

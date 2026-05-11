@@ -1,7 +1,7 @@
 """Tests for tqscr.turboquant_score_distortion."""
 import numpy as np
 import pytest
-from moirais.fn.tqscr import turboquant_score_distortion
+from morie.fn.tqscr import turboquant_score_distortion
 
 
 def test_tqscr_basic():

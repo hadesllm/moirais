@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.odml3 — DML ATE by age group."""
+"""Tests for morie.fn.odml3 — DML ATE by age group."""
 
 import pandas as pd
-from moirais.fn.odml3 import otis_dml_age
+from morie.fn.odml3 import otis_dml_age
 
 
 class TestOtisDmlAge:

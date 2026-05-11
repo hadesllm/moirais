@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mnksb — Manski bounds."""
+"""Tests for morie.fn.mnksb — Manski bounds."""
 import numpy as np
 import pytest
-from moirais.fn.mnksb import mnksb
+from morie.fn.mnksb import mnksb
 
 
 @pytest.fixture()
@@ -52,5 +52,5 @@ def test_width_nonneg(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.mnksb import cheatsheet
+    from morie.fn.mnksb import cheatsheet
     assert len(cheatsheet()) > 0

@@ -1,7 +1,7 @@
 """Test sontg."""
 import numpy as np
 import pytest
-from moirais.fn.sontg import sontg
+from morie.fn.sontg import sontg
 
 
 def test_sontg_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hedges — alias for Hedges' g."""
+"""Tests for morie.fn.hedges — alias for Hedges' g."""
 import numpy as np
 
-from moirais.fn.hedges import hedges
+from morie.fn.hedges import hedges
 
 
 def test_hedges_is_callable():
@@ -13,7 +13,7 @@ def test_hedges_is_callable():
 
 
 def test_hedges_same_as_g():
-    from moirais.fn.g import hedges_g
+    from morie.fn.g import hedges_g
     rng = np.random.default_rng(42)
     x = rng.standard_normal(30)
     y = rng.standard_normal(30)

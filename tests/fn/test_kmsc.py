@@ -1,7 +1,7 @@
 """Tests for kmsc.kamath_self_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.kmsc import kamath_self_consistency
+from morie.fn.kmsc import kamath_self_consistency
 
 
 def test_kmsc_basic():

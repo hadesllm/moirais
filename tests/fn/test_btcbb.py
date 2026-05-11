@@ -1,7 +1,7 @@
 """Tests for btcbb.boot_circular_block."""
 import numpy as np
 import pytest
-from moirais.fn.btcbb import boot_circular_block
+from morie.fn.btcbb import boot_circular_block
 
 
 def test_btcbb_basic():

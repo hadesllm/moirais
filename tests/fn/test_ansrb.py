@@ -1,6 +1,6 @@
 """Tests for ansari_bradley."""
 import numpy as np, pytest
-from moirais.fn.ansrb import ansari_bradley
+from morie.fn.ansrb import ansari_bradley
 
 class TestAnsari:
     def test_equal_scale(self):

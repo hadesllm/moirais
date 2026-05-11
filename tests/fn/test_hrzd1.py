@@ -1,7 +1,7 @@
 """Tests for hrzd1.horowitz_duration_model."""
 import numpy as np
 import pytest
-from moirais.fn.hrzd1 import horowitz_duration_model
+from morie.fn.hrzd1 import horowitz_duration_model
 
 
 def test_hrzd1_basic():

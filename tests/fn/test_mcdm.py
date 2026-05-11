@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mcdm — TOPSIS."""
+"""Tests for morie.fn.mcdm — TOPSIS."""
 import numpy as np
 import pytest
-from moirais.fn.mcdm import topsis
+from morie.fn.mcdm import topsis
 
 
 class TestTOPSIS:

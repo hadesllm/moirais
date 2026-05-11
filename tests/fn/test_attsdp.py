@@ -1,7 +1,7 @@
 """Tests for attsdp.scaled_dot_product_attention."""
 import numpy as np
 import pytest
-from moirais.fn.attsdp import scaled_dot_product_attention
+from morie.fn.attsdp import scaled_dot_product_attention
 
 
 def test_attsdp_basic():

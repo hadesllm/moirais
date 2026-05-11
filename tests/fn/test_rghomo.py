@@ -1,7 +1,7 @@
 """Tests for rghomo.rangayyan_homomorphic."""
 import numpy as np
 import pytest
-from moirais.fn.rghomo import rangayyan_homomorphic
+from morie.fn.rghomo import rangayyan_homomorphic
 
 
 def test_rghomo_basic():

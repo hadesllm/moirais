@@ -1,7 +1,7 @@
 """Tests for btci2g.boot_ci_two_groups."""
 import numpy as np
 import pytest
-from moirais.fn.btci2g import boot_ci_two_groups
+from morie.fn.btci2g import boot_ci_two_groups
 
 
 def test_btci2g_basic():

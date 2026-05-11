@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptthm -- Thomas cluster process"""
+"""Tests for morie.fn.ptthm -- Thomas cluster process"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptthm import thomas_process
+from morie.fn.ptthm import thomas_process
 
 
 class TestThomasProcess:

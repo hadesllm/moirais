@@ -1,7 +1,7 @@
 """Tests for rfcomp.robust_factor_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.rfcomp import robust_factor_analysis
+from morie.fn.rfcomp import robust_factor_analysis
 
 
 def test_rfcomp_basic():

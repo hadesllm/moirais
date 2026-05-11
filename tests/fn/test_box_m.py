@@ -1,6 +1,6 @@
 """Tests for box_m_test."""
 import numpy as np, pytest
-from moirais.fn.box_m import box_m_test
+from morie.fn.box_m import box_m_test
 
 class TestBoxM:
     def test_equal_cov(self):

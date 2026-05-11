@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmrcy -- Roll call yea/nay summary"""
+"""Tests for morie.fn.nmrcy -- Roll call yea/nay summary"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmrcy import roll_call_yea_nay
+from morie.fn.nmrcy import roll_call_yea_nay
 
 
 class TestRollCallYeaNay:

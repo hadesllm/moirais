@@ -1,7 +1,7 @@
 """Tests for gb732.gibbons_linrank_mean_var."""
 import numpy as np
 import pytest
-from moirais.fn.gb732 import gibbons_linrank_mean_var
+from morie.fn.gb732 import gibbons_linrank_mean_var
 
 
 def test_gb732_basic():

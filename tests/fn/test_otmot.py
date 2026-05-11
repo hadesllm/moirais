@@ -1,7 +1,7 @@
 """Tests for otmot.ot_multimarginal_iter."""
 import numpy as np
 import pytest
-from moirais.fn.otmot import ot_multimarginal_iter
+from morie.fn.otmot import ot_multimarginal_iter
 
 
 def test_otmot_basic():

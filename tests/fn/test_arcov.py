@@ -1,7 +1,7 @@
 """Tests for arcov.py - AR covariance estimation."""
 import numpy as np
 import pytest
-from moirais.fn.arcov import ar_covariance_fn, arcov
+from morie.fn.arcov import ar_covariance_fn, arcov
 
 
 def test_ar_covariance_returns_descriptive_result():

@@ -1,7 +1,7 @@
 """Test ghinl."""
 import numpy as np
 import pytest
-from moirais.fn.ghinl import ghinl
+from morie.fn.ghinl import ghinl
 
 
 def test_ghinl_basic():

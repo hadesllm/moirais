@@ -1,7 +1,7 @@
 """Tests for grnag.geron_nesterov_accelerated_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.grnag import geron_nesterov_accelerated_gradient
+from morie.fn.grnag import geron_nesterov_accelerated_gradient
 
 
 def test_grnag_basic():

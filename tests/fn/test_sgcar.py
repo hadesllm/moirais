@@ -1,6 +1,6 @@
 """Tests for CAR model."""
 import numpy as np
-from moirais.fn.sgcar import sgcar
+from morie.fn.sgcar import sgcar
 
 
 def test_sgcar_smoke():
@@ -20,7 +20,7 @@ def test_sgcar_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgcar import cheatsheet
+    from morie.fn.sgcar import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

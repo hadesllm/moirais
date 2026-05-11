@@ -1,7 +1,7 @@
 """Tests for alnsmp.alammar_negative_sampling_skipgram."""
 import numpy as np
 import pytest
-from moirais.fn.alnsmp import alammar_negative_sampling_skipgram
+from morie.fn.alnsmp import alammar_negative_sampling_skipgram
 
 
 def test_alnsmp_basic():

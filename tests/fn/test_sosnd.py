@@ -1,7 +1,7 @@
 """Test sosnd."""
 import numpy as np
 import pytest
-from moirais.fn.sosnd import sosnd
+from morie.fn.sosnd import sosnd
 
 
 def test_sosnd_basic():

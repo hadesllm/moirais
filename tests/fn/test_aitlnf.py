@@ -1,7 +1,7 @@
 """Tests for aitlnf.logistic_normal_fit."""
 import numpy as np
 import pytest
-from moirais.fn.aitlnf import logistic_normal_fit
+from morie.fn.aitlnf import logistic_normal_fit
 
 
 def test_aitlnf_basic():

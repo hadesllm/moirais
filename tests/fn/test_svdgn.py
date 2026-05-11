@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svdgn -- Deegan-Packel power index"""
+"""Tests for morie.fn.svdgn -- Deegan-Packel power index"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svdgn import deegan_packel
+from morie.fn.svdgn import deegan_packel
 
 
 class TestDeeganPackel:

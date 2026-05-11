@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.areff import areff
+from morie.fn.areff import areff
 
 
 class TestAreff:

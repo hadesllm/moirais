@@ -1,7 +1,7 @@
 """Test rssvm."""
 import numpy as np
 import pytest
-from moirais.fn.rssvm import rssvm
+from morie.fn.rssvm import rssvm
 
 
 def test_rssvm_basic():

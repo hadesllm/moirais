@@ -1,7 +1,7 @@
 """Test gernt."""
 import numpy as np
 import pytest
-from moirais.fn.gernt import gernt
+from morie.fn.gernt import gernt
 
 
 def test_gernt_basic():

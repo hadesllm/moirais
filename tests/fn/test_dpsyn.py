@@ -1,7 +1,7 @@
 """Tests for dpsyn.dp_synthetic_data."""
 import numpy as np
 import pytest
-from moirais.fn.dpsyn import dp_synthetic_data
+from morie.fn.dpsyn import dp_synthetic_data
 
 
 def test_dpsyn_basic():

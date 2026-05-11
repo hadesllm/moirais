@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cbgen — codebook generation."""
+"""Tests for morie.fn.cbgen — codebook generation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cbgen import codebook_generate
+from morie.fn.cbgen import codebook_generate
 
 
 class TestCodebookGenerate:

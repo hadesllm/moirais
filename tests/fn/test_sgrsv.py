@@ -1,5 +1,5 @@
 """Tests for relative structured variability."""
-from moirais.fn.sgrsv import sgrsv
+from morie.fn.sgrsv import sgrsv
 
 
 def test_sgrsv_strong():

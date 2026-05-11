@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.catw -- Catenary curve fitting."""
+"""Tests for morie.fn.catw -- Catenary curve fitting."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.catw import catenary_fit, catw
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.catw import catenary_fit, catw
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCatw:

@@ -1,7 +1,7 @@
 """Test pca_overlap (pcaov)."""
 import numpy as np
-from moirais.fn.pcaov import pca_overlap, pcaov
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.pcaov import pca_overlap, pcaov
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPcaov:

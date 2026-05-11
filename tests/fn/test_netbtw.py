@@ -1,7 +1,7 @@
 """Tests for netbtw.betweenness_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.netbtw import betweenness_centrality
+from morie.fn.netbtw import betweenness_centrality
 
 
 def test_netbtw_basic():

@@ -1,7 +1,7 @@
 """Test gcprc."""
 import numpy as np
 import pytest
-from moirais.fn.gcprc import gcprc
+from morie.fn.gcprc import gcprc
 
 
 def test_gcprc_basic():

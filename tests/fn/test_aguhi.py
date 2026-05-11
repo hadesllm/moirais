@@ -1,7 +1,7 @@
 """Test aguhi."""
 import numpy as np
 import pytest
-from moirais.fn.aguhi import aguhi
+from morie.fn.aguhi import aguhi
 
 
 def test_aguhi_basic():

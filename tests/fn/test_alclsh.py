@@ -1,7 +1,7 @@
 """Tests for alclsh.alammar_classification_head."""
 import numpy as np
 import pytest
-from moirais.fn.alclsh import alammar_classification_head
+from morie.fn.alclsh import alammar_classification_head
 
 
 def test_alclsh_basic():

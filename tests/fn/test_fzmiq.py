@@ -1,7 +1,7 @@
 """Tests for fzmiq.fauzi_moment_ineq_ustat."""
 import numpy as np
 import pytest
-from moirais.fn.fzmiq import fauzi_moment_ineq_ustat
+from morie.fn.fzmiq import fauzi_moment_ineq_ustat
 
 
 def test_fzmiq_basic():

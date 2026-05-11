@@ -1,7 +1,7 @@
 """Tests for cssant.callaway_santanna."""
 import numpy as np
 import pytest
-from moirais.fn.cssant import callaway_santanna
+from morie.fn.cssant import callaway_santanna
 
 
 def test_cssant_basic():

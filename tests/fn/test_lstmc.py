@@ -1,7 +1,7 @@
 """Tests for lstmc.lstm_cell."""
 import numpy as np
 import pytest
-from moirais.fn.lstmc import lstm_cell
+from morie.fn.lstmc import lstm_cell
 
 
 def test_lstmc_basic():

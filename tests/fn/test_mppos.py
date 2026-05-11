@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mppos."""
+"""Tests for morie.fn.mppos."""
 
 import numpy as np
 import pytest
-from moirais.fn.mppos import mppos
+from morie.fn.mppos import mppos
 
 
 class TestMppos:

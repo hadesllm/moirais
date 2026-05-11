@@ -1,7 +1,7 @@
 """Tests for bnskmt.bound_kernel_moment."""
 import numpy as np
 import pytest
-from moirais.fn.bnskmt import bound_kernel_moment
+from morie.fn.bnskmt import bound_kernel_moment
 
 
 def test_bnskmt_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzt1.horowitz_treatment_effect."""
 import numpy as np
 import pytest
-from moirais.fn.hrzt1 import horowitz_treatment_effect
+from morie.fn.hrzt1 import horowitz_treatment_effect
 
 
 def test_hrzt1_basic():

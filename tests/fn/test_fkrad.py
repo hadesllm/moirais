@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.fkrad."""
+"""Tests for morie.fn.fkrad."""
 import numpy as np
-from moirais.fn.fkrad import fkrad
+from morie.fn.fkrad import fkrad
 
 
 def test_fkrad_smoke():
@@ -12,7 +12,7 @@ def test_fkrad_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.fkrad import cheatsheet
+    from morie.fn.fkrad import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

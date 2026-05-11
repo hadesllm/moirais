@@ -1,9 +1,9 @@
 Population Genetics
 ===================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS provides population genetics functions for analyzing genetic variation,
+MORIE provides population genetics functions for analyzing genetic variation,
 population structure, and genotype-phenotype associations. All functions are
 dataset-agnostic with column names as keyword parameters.
 
@@ -16,7 +16,7 @@ Sequence-Level Metrics
 
 .. code-block:: python
 
-   from moirais.fn import gc, maf, hw
+   from morie.fn import gc, maf, hw
 
    gc_ratio = gc("ATGCGCTATGCGC")
    print(f"GC content: {gc_ratio:.3f}")   # 0.615
@@ -35,7 +35,7 @@ Population Differentiation
 
 .. code-block:: python
 
-   from moirais.fn import fst, tajd
+   from morie.fn import fst, tajd
 
    result = fst(allele_freqs_pop1, allele_freqs_pop2,
                 n_pop1=100, n_pop2=120)
@@ -53,7 +53,7 @@ Linkage Disequilibrium
 
 .. code-block:: python
 
-   from moirais.fn import ld
+   from morie.fn import ld
 
    result = ld(genotypes_snp1, genotypes_snp2)
    print(f"D' = {result.d_prime:.3f}, r2 = {result.r_squared:.3f}")
@@ -66,7 +66,7 @@ Genome-Wide Association Studies
 
 .. code-block:: python
 
-   from moirais.fn import gwas, prs
+   from morie.fn import gwas, prs
 
    results = gwas(genotype_matrix, phenotype, covariates=None,
                   model="linear", correction="bonferroni")
@@ -87,7 +87,7 @@ Genome-Wide Association Studies
 Epidemiological Applications
 ----------------------------
 
-Population genetics functions integrate with MOIRAIS's epidemiological
+Population genetics functions integrate with MORIE's epidemiological
 toolkit for public health genomics:
 
 - **Pharmacogenomics**: MAF and HWE checks for drug-metabolizing enzyme

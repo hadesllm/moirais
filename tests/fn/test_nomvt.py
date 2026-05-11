@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.nomvt — NOMINATE vote probability."""
+"""Tests for morie.fn.nomvt — NOMINATE vote probability."""
 import numpy as np
 import pytest
 
-from moirais.fn.nomvt import nomvt
+from morie.fn.nomvt import nomvt
 
 
 def test_nomvt_smoke():
@@ -11,7 +11,7 @@ def test_nomvt_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.nomvt import cheatsheet
+    from morie.fn.nomvt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

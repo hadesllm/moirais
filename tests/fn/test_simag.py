@@ -3,7 +3,7 @@ Tests for simulated annealing.
 """
 
 import numpy as np
-from moirais.fn.simag import simag
+from morie.fn.simag import simag
 
 
 class TestSimag:

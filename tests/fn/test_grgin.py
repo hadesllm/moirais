@@ -1,7 +1,7 @@
 """Tests for grgin.geron_gini_impurity."""
 import numpy as np
 import pytest
-from moirais.fn.grgin import geron_gini_impurity
+from morie.fn.grgin import geron_gini_impurity
 
 
 def test_grgin_basic():

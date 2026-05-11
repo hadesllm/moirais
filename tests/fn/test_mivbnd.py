@@ -1,7 +1,7 @@
 """Tests for mivbnd.monotone_iv_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.mivbnd import monotone_iv_bounds
+from morie.fn.mivbnd import monotone_iv_bounds
 
 
 def test_mivbnd_basic():

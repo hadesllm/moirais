@@ -1,7 +1,7 @@
 """Tests for cov2s.two_sample_coverage."""
 import numpy as np
 import pytest
-from moirais.fn.cov2s import two_sample_coverage
+from morie.fn.cov2s import two_sample_coverage
 
 
 def test_cov2s_basic():

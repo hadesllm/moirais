@@ -1,7 +1,7 @@
 """Test nbrwy."""
 import numpy as np
 import pytest
-from moirais.fn.nbrwy import nbrwy
+from morie.fn.nbrwy import nbrwy
 
 
 def test_nbrwy_basic():

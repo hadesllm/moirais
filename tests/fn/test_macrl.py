@@ -1,7 +1,7 @@
 """Test macrl."""
 import numpy as np
 import pytest
-from moirais.fn.macrl import macrl
+from morie.fn.macrl import macrl
 
 
 def test_macrl_basic():

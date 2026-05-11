@@ -1,7 +1,7 @@
 """Tests for vardec.var_variance_decomp."""
 import numpy as np
 import pytest
-from moirais.fn.vardec import var_variance_decomp
+from morie.fn.vardec import var_variance_decomp
 
 
 def test_vardec_basic():

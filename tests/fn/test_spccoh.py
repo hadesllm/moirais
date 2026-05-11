@@ -1,7 +1,7 @@
 """Tests for spccoh."""
 import numpy as np
 import pytest
-from moirais.fn.spccoh import spccoh
+from morie.fn.spccoh import spccoh
 
 
 def test_spccoh_basic():
@@ -27,5 +27,5 @@ def test_spccoh_no_data():
 
 
 def test_spccoh_alias():
-    from moirais.fn.spccoh import spccoh
+    from morie.fn.spccoh import spccoh
     assert spccoh is spccoh

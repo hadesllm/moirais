@@ -1,7 +1,7 @@
 """Tests for mrkvr.marker_variance."""
 import numpy as np
 import pytest
-from moirais.fn.mrkvr import marker_variance
+from morie.fn.mrkvr import marker_variance
 
 
 def test_mrkvr_basic():

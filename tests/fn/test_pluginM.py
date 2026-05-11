@@ -1,7 +1,7 @@
 """Tests for pluginM.plug_in_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.pluginM import plug_in_mediation
+from morie.fn.pluginM import plug_in_mediation
 
 
 def test_pluginM_basic():

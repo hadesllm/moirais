@@ -1,7 +1,7 @@
 """Tests for grac.geron_actor_critic_advantage."""
 import numpy as np
 import pytest
-from moirais.fn.grac import geron_actor_critic_advantage
+from morie.fn.grac import geron_actor_critic_advantage
 
 
 def test_grac_basic():

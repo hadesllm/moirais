@@ -1,7 +1,7 @@
 """Tests for convdv.convex_divergence."""
 import numpy as np
 import pytest
-from moirais.fn.convdv import convex_divergence
+from morie.fn.convdv import convex_divergence
 
 
 def test_convdv_basic():

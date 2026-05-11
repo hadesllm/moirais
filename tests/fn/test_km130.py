@@ -1,7 +1,7 @@
 """Tests for km130.kamath_ch9_input_alignment_loss."""
 import numpy as np
 import pytest
-from moirais.fn.km130 import kamath_ch9_input_alignment_loss
+from morie.fn.km130 import kamath_ch9_input_alignment_loss
 
 
 def test_km130_basic():

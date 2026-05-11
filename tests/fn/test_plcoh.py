@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.plcoh."""
+"""Tests for morie.fn.plcoh."""
 
 import numpy as np
 import pytest
-from moirais.fn.plcoh import plcoh
+from morie.fn.plcoh import plcoh
 
 
 class TestPlcoh:

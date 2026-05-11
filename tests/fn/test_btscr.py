@@ -1,7 +1,7 @@
 """Tests for btscr.boot_score_test."""
 import numpy as np
 import pytest
-from moirais.fn.btscr import boot_score_test
+from morie.fn.btscr import boot_score_test
 
 
 def test_btscr_basic():

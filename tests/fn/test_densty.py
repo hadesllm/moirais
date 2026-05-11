@@ -1,7 +1,7 @@
 """Tests for densty.density."""
 import numpy as np
 import pytest
-from moirais.fn.densty import density
+from morie.fn.densty import density
 
 
 def test_densty_basic():

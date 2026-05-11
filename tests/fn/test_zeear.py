@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeear -- Ecological regression (Poisson)"""
+"""Tests for morie.fn.zeear -- Ecological regression (Poisson)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeear import ecological_reg
+from morie.fn.zeear import ecological_reg
 
 
 class TestEcologicalReg:

@@ -1,7 +1,7 @@
 """Tests for bkdot.burkov_dot_product."""
 import numpy as np
 import pytest
-from moirais.fn.bkdot import burkov_dot_product
+from morie.fn.bkdot import burkov_dot_product
 
 
 def test_bkdot_basic():

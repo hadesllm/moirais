@@ -1,7 +1,7 @@
 """Tests for wsmbic.wasserman_bic."""
 import numpy as np
 import pytest
-from moirais.fn.wsmbic import wasserman_bic
+from morie.fn.wsmbic import wasserman_bic
 
 
 def test_wsmbic_basic():

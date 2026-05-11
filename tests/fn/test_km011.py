@@ -1,7 +1,7 @@
 """Tests for km011.kamath_ch2_scaled_dot_score."""
 import numpy as np
 import pytest
-from moirais.fn.km011 import kamath_ch2_scaled_dot_score
+from morie.fn.km011 import kamath_ch2_scaled_dot_score
 
 
 def test_km011_basic():

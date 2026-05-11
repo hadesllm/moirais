@@ -1,7 +1,7 @@
 """Tests for matrim.ma_trim_fill."""
 import numpy as np
 import pytest
-from moirais.fn.matrim import ma_trim_fill
+from morie.fn.matrim import ma_trim_fill
 
 
 def test_matrim_basic():

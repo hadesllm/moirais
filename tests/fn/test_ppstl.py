@@ -1,7 +1,7 @@
 """Test ppstl."""
 import numpy as np
 import pytest
-from moirais.fn.ppstl import ppstl
+from morie.fn.ppstl import ppstl
 
 
 def test_ppstl_basic():

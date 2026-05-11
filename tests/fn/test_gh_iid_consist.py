@@ -1,7 +1,7 @@
 """Tests for gh_iid_consist.ghosal_iid_posterior_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.gh_iid_consist import ghosal_iid_posterior_consistency
+from morie.fn.gh_iid_consist import ghosal_iid_posterior_consistency
 
 
 def test_gh_iid_consist_basic():

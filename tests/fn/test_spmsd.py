@@ -1,7 +1,7 @@
 """Tests for spmsd.schabenberger_ms_differentiability."""
 import numpy as np
 import pytest
-from moirais.fn.spmsd import schabenberger_ms_differentiability
+from morie.fn.spmsd import schabenberger_ms_differentiability
 
 
 def test_spmsd_basic():

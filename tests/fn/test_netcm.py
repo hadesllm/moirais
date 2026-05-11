@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netcm — Community detection."""
+"""Tests for morie.fn.netcm — Community detection."""
 
 import numpy as np
 import pytest
-from moirais.fn.netcm import network_communities
+from morie.fn.netcm import network_communities
 
 
 class TestNetworkCommunities:

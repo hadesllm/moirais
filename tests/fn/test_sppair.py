@@ -1,7 +1,7 @@
 """Tests for sppair.schabenberger_pair_correlation."""
 import numpy as np
 import pytest
-from moirais.fn.sppair import schabenberger_pair_correlation
+from morie.fn.sppair import schabenberger_pair_correlation
 
 
 def test_sppair_basic():

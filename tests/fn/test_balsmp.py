@@ -1,7 +1,7 @@
 """Test balsmp."""
 import numpy as np
 import pytest
-from moirais.fn.balsmp import balsmp
+from morie.fn.balsmp import balsmp
 
 
 def test_balsmp_basic():

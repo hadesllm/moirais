@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.train -- MMD distance."""
+"""Tests for morie.fn.train -- MMD distance."""
 
 import numpy as np
-from moirais.fn.train import mmd_distance, train
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.train import mmd_distance, train
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTrain:

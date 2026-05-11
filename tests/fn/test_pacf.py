@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pacf — Partial ACF."""
+"""Tests for morie.fn.pacf — Partial ACF."""
 import numpy as np
 
-from moirais.fn.pacf import partial_acf, pacf
+from morie.fn.pacf import partial_acf, pacf
 
 
 def test_pacf_lag0_is_one():

@@ -1,7 +1,7 @@
 """Tests for wsmrgr.wasserman_ridge."""
 import numpy as np
 import pytest
-from moirais.fn.wsmrgr import wasserman_ridge
+from morie.fn.wsmrgr import wasserman_ridge
 
 
 def test_wsmrgr_basic():

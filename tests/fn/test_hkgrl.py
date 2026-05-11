@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hkgrl -- Hawking radiation temperature."""
+"""Tests for morie.fn.hkgrl -- Hawking radiation temperature."""
 
-from moirais.fn.hkgrl import hawking_temperature, hkgrl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hkgrl import hawking_temperature, hkgrl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHkgrl:

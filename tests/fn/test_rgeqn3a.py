@@ -1,7 +1,7 @@
 """Tests for rgeqn3a.rangayyan_ch3_convolution_sum."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn3a import rangayyan_ch3_convolution_sum
+from morie.fn.rgeqn3a import rangayyan_ch3_convolution_sum
 
 
 def test_rgeqn3a_basic():

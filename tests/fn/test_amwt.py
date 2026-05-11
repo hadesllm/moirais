@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.amwt — A-M weight estimation."""
+"""Tests for morie.fn.amwt — A-M weight estimation."""
 import numpy as np
-from moirais.fn.amwt import amwt
+from morie.fn.amwt import amwt
 
 
 def test_amwt_smoke():
@@ -13,7 +13,7 @@ def test_amwt_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.amwt import cheatsheet
+    from morie.fn.amwt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

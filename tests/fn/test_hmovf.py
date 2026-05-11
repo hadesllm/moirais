@@ -1,7 +1,7 @@
 """Tests for hmovf.geron_overfitting."""
 import numpy as np
 import pytest
-from moirais.fn.hmovf import geron_overfitting
+from morie.fn.hmovf import geron_overfitting
 
 
 def test_hmovf_basic():

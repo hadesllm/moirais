@@ -1,7 +1,7 @@
 """Tests for npstm.nonparametric_tmle_survival."""
 import numpy as np
 import pytest
-from moirais.fn.npstm import nonparametric_tmle_survival
+from morie.fn.npstm import nonparametric_tmle_survival
 
 
 def test_npstm_basic():

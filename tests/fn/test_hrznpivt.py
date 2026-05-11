@@ -1,7 +1,7 @@
 """Tests for hrznpivt.horowitz_npiv_unknown_T."""
 import numpy as np
 import pytest
-from moirais.fn.hrznpivt import horowitz_npiv_unknown_T
+from morie.fn.hrznpivt import horowitz_npiv_unknown_T
 
 
 def test_hrznpivt_basic():

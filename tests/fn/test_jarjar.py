@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.jarjar -- Jarque-Bera normality test ('How wude!')."""
+"""Tests for morie.fn.jarjar -- Jarque-Bera normality test ('How wude!')."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.jarjar import jarque_bera, jarjar
-from moirais.fn._containers import TestResult
+from morie.fn.jarjar import jarque_bera, jarjar
+from morie.fn._containers import TestResult
 
 
 class TestJarJar:

@@ -1,7 +1,7 @@
 """Tests for design_of_observational_studies2u69.design_of_observational_studies_chapter_2_unnumbered_69."""
 import numpy as np
 import pytest
-from moirais.fn.design_of_observational_studies2u69 import design_of_observational_studies_chapter_2_unnumbered_69
+from morie.fn.design_of_observational_studies2u69 import design_of_observational_studies_chapter_2_unnumbered_69
 
 
 def test_design_of_observational_studies2u69_basic():

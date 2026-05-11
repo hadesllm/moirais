@@ -1,7 +1,7 @@
 """Tests for jrqbst.jarque_bera."""
 import numpy as np
 import pytest
-from moirais.fn.jrqbst import jarque_bera
+from morie.fn.jrqbst import jarque_bera
 
 
 def test_jrqbst_basic():

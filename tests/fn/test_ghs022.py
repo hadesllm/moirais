@@ -1,7 +1,7 @@
 """Tests for ghs022.ghosal_ch3_tailfree_cell_counts."""
 import numpy as np
 import pytest
-from moirais.fn.ghs022 import ghosal_ch3_tailfree_cell_counts
+from morie.fn.ghs022 import ghosal_ch3_tailfree_cell_counts
 
 
 def test_ghs022_basic():

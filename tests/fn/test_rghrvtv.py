@@ -1,7 +1,7 @@
 """Tests for rghrvtv.rangayyan_hrv_time_varying."""
 import numpy as np
 import pytest
-from moirais.fn.rghrvtv import rangayyan_hrv_time_varying
+from morie.fn.rghrvtv import rangayyan_hrv_time_varying
 
 
 def test_rghrvtv_basic():

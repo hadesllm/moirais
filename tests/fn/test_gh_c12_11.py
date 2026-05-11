@@ -1,7 +1,7 @@
 """Tests for gh_c12_11.ghosal_cred_set_cov."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c12_11 import ghosal_cred_set_cov
+from morie.fn.gh_c12_11 import ghosal_cred_set_cov
 
 
 def test_gh_c12_11_basic():

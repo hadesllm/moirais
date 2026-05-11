@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itval — item validity index."""
+"""Tests for morie.fn.itval — item validity index."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.itval import item_validity_index
+from morie.fn.itval import item_validity_index
 
 
 class TestItemValidityIndex:

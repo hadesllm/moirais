@@ -1,7 +1,7 @@
 """Tests for singgw.single_step_gblup."""
 import numpy as np
 import pytest
-from moirais.fn.singgw import single_step_gblup
+from morie.fn.singgw import single_step_gblup
 
 
 def test_singgw_basic():

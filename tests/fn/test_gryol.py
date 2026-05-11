@@ -1,7 +1,7 @@
 """Tests for gryol.geron_yolo_grid_loss."""
 import numpy as np
 import pytest
-from moirais.fn.gryol import geron_yolo_grid_loss
+from morie.fn.gryol import geron_yolo_grid_loss
 
 
 def test_gryol_basic():

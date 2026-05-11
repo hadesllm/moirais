@@ -1,7 +1,7 @@
 """Tests for grpio.geron_perceiver_io."""
 import numpy as np
 import pytest
-from moirais.fn.grpio import geron_perceiver_io
+from morie.fn.grpio import geron_perceiver_io
 
 
 def test_grpio_basic():

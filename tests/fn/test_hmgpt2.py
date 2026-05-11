@@ -1,7 +1,7 @@
 """Tests for hmgpt2.geron_gpt2."""
 import numpy as np
 import pytest
-from moirais.fn.hmgpt2 import geron_gpt2
+from morie.fn.hmgpt2 import geron_gpt2
 
 
 def test_hmgpt2_basic():

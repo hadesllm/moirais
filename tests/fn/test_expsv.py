@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.expsv -- Exponential survival model."""
+"""Tests for morie.fn.expsv -- Exponential survival model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.expsv import expsv
+from morie.fn.expsv import expsv
 
 
 @pytest.fixture()
@@ -38,5 +38,5 @@ def test_with_covariates(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.expsv import cheatsheet
+    from morie.fn.expsv import cheatsheet
     assert "exponential" in cheatsheet().lower()

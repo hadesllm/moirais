@@ -1,7 +1,7 @@
 """Tests for evbgpd.evt_bayes_gpd."""
 import numpy as np
 import pytest
-from moirais.fn.evbgpd import evt_bayes_gpd
+from morie.fn.evbgpd import evt_bayes_gpd
 
 
 def test_evbgpd_basic():

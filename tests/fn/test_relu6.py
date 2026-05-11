@@ -1,6 +1,6 @@
 """Test ReLU6 activation."""
 import numpy as np
-from moirais.fn.relu6 import relu6
+from morie.fn.relu6 import relu6
 
 
 def test_relu6_forward():

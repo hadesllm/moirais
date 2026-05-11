@@ -1,7 +1,7 @@
 """Tests for macohd.ma_cohens_d."""
 import numpy as np
 import pytest
-from moirais.fn.macohd import ma_cohens_d
+from morie.fn.macohd import ma_cohens_d
 
 
 def test_macohd_basic():

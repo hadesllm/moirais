@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.crtdv — diversion rate."""
+"""Tests for morie.fn.crtdv — diversion rate."""
 
 import pytest
-from moirais.fn.crtdv import court_diversion
-from moirais.fn._containers import CrimeResult
+from morie.fn.crtdv import court_diversion
+from morie.fn._containers import CrimeResult
 
 
 class TestDiversion:

@@ -1,7 +1,7 @@
 """Test dtwrn."""
 import numpy as np
 import pytest
-from moirais.fn.dtwrn import dtwrn
+from morie.fn.dtwrn import dtwrn
 
 
 def test_dtwrn_basic():

@@ -1,7 +1,7 @@
 """Tests for causivft.causal_iv_first_stage."""
 import numpy as np
 import pytest
-from moirais.fn.causivft import causal_iv_first_stage
+from morie.fn.causivft import causal_iv_first_stage
 
 
 def test_causivft_basic():

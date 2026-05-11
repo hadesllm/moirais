@@ -1,7 +1,7 @@
 """Test vmpow."""
 import numpy as np
 import pytest
-from moirais.fn.vmpow import vmpow
+from morie.fn.vmpow import vmpow
 
 
 def test_vmpow_basic():

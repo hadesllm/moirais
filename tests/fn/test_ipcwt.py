@@ -1,7 +1,7 @@
 """Tests for ipcwt: IPCW weights."""
 import numpy as np
 import pytest
-from moirais.fn.ipcwt import ipcwt
+from morie.fn.ipcwt import ipcwt
 
 
 def _make_data(n=200, seed=0):

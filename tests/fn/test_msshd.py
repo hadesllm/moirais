@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msshd -- Shepard disparities"""
+"""Tests for morie.fn.msshd -- Shepard disparities"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msshd import shepard_dist
+from morie.fn.msshd import shepard_dist
 
 
 class TestShepardDist:

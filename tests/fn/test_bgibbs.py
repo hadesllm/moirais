@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bgibbs — Gibbs sampler for normal."""
+"""Tests for morie.fn.bgibbs — Gibbs sampler for normal."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bgibbs import gibbs_normal
+from morie.fn.bgibbs import gibbs_normal
 
 
 class TestGibbsNormal:

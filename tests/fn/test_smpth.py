@@ -1,7 +1,7 @@
 """Test sampling_theorem_check (smpth)."""
 import numpy as np
-from moirais.fn.smpth import sampling_theorem_check, smpth
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.smpth import sampling_theorem_check, smpth
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSamplingTheoremCheck:

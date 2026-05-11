@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.lds — load dataset by catalog key."""
+"""Tests for morie.fn.lds — load dataset by catalog key."""
 
 import pytest
 
-from moirais.fn.lds import lds, load_dataset
+from morie.fn.lds import lds, load_dataset
 
 
 def test_alias_is_same_function():

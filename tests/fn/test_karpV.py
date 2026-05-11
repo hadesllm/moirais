@@ -1,7 +1,7 @@
 """Tests for karpV.genetic_programming."""
 import numpy as np
 import pytest
-from moirais.fn.karpV import genetic_programming
+from morie.fn.karpV import genetic_programming
 
 
 def test_karpV_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tgscr — Tangent space projection."""
+"""Tests for morie.fn.tgscr — Tangent space projection."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tgscr import tgscr
+from morie.fn.tgscr import tgscr
 
 
 @pytest.fixture()

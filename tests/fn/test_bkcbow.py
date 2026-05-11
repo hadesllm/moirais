@@ -1,7 +1,7 @@
 """Tests for bkcbow.burkov_cbow."""
 import numpy as np
 import pytest
-from moirais.fn.bkcbow import burkov_cbow
+from morie.fn.bkcbow import burkov_cbow
 
 
 def test_bkcbow_basic():

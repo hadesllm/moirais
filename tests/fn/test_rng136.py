@@ -1,7 +1,7 @@
 """Tests for rng136.rangayyan_ch3_notch_filter_60Hz."""
 import numpy as np
 import pytest
-from moirais.fn.rng136 import rangayyan_ch3_notch_filter_60Hz
+from morie.fn.rng136 import rangayyan_ch3_notch_filter_60Hz
 
 
 def test_rng136_basic():

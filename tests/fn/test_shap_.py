@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.shap_ -- Permutation-based SHAP values."""
+"""Tests for morie.fn.shap_ -- Permutation-based SHAP values."""
 
 import numpy as np
-from moirais.fn.shap_ import shap_values
+from morie.fn.shap_ import shap_values
 
 
 class TestShapValues:

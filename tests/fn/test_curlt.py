@@ -1,7 +1,7 @@
 """Test curvelet (curlt)."""
 import numpy as np
-from moirais.fn.curlt import curvelet, curlt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.curlt import curvelet, curlt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCurlt:

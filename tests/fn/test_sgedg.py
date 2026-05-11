@@ -1,6 +1,6 @@
 """Tests for edge correction."""
 import numpy as np
-from moirais.fn.sgedg import sgedg
+from morie.fn.sgedg import sgedg
 
 
 def test_sgedg_ripley():

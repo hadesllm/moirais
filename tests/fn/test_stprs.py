@@ -1,7 +1,7 @@
 """Test step_response (stprs)."""
 import numpy as np
-from moirais.fn.stprs import step_response, stprs
-from moirais.fn._containers import SignalResult
+from morie.fn.stprs import step_response, stprs
+from morie.fn._containers import SignalResult
 
 
 class TestStepResponse:

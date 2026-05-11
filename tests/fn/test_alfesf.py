@@ -1,7 +1,7 @@
 """Tests for alfesf.esmfold_lm_only."""
 import numpy as np
 import pytest
-from moirais.fn.alfesf import esmfold_lm_only
+from morie.fn.alfesf import esmfold_lm_only
 
 
 def test_alfesf_basic():

@@ -6,7 +6,7 @@ import pytest
 
 def test_all_bnp_functions_importable():
     """Test that all 30 BNP functions can be imported."""
-    from moirais.fn import (
+    from morie.fn import (
         dpgen, dpprr, dpmix, pyprr, crpst, ibprc, stbrk, polya,
         bferg, bbstr, dpkde, gprgr, gpclf, gpkrn, gphyp, bspln,
         bwavl, lddst, bnpht, polyt, brnst, dpmdn, crppr, ewens,
@@ -28,7 +28,7 @@ def test_all_bnp_functions_importable():
 
 def test_dpgen_returns_dict():
     """Test DP stick-breaking."""
-    from moirais.fn.dpgen import dirichlet_process_gen
+    from morie.fn.dpgen import dirichlet_process_gen
 
     result = dirichlet_process_gen(alpha=1.0, n_clusters=10)
 
@@ -39,7 +39,7 @@ def test_dpgen_returns_dict():
 
 def test_crpst_returns_dict():
     """Test Chinese Restaurant Process."""
-    from moirais.fn.crpst import chinese_restaurant_process
+    from morie.fn.crpst import chinese_restaurant_process
 
     result = chinese_restaurant_process(n=50, alpha=1.0)
 
@@ -50,7 +50,7 @@ def test_crpst_returns_dict():
 
 def test_bbstr_returns_dict():
     """Test Bayesian bootstrap."""
-    from moirais.fn.bbstr import bayesian_bootstrap
+    from morie.fn.bbstr import bayesian_bootstrap
 
     x = np.random.normal(0, 1, 30)
     result = bayesian_bootstrap(x, n_boot=50)
@@ -63,7 +63,7 @@ def test_bbstr_returns_dict():
 
 def test_postc_basic():
     """Test posterior consistency rate."""
-    from moirais.fn.postc import posterior_consistency_rate
+    from morie.fn.postc import posterior_consistency_rate
 
     rate = posterior_consistency_rate(n=100, dimension=1, smoothness=2.0)
 
@@ -73,7 +73,7 @@ def test_postc_basic():
 
 def test_bcntr_basic():
     """Test Bayesian contraction rate."""
-    from moirais.fn.bcntr import bayesian_contraction_rate
+    from morie.fn.bcntr import bayesian_contraction_rate
 
     result = bayesian_contraction_rate(n=100, dimension=1)
 
@@ -84,7 +84,7 @@ def test_bcntr_basic():
 
 def test_gprgr_basic():
     """Test Gaussian process regression."""
-    from moirais.fn.gprgr import gaussian_process_regression
+    from morie.fn.gprgr import gaussian_process_regression
 
     x = np.linspace(0, 10, 50).reshape(-1, 1)
     y = np.sin(x.ravel()) + np.random.normal(0, 0.1, 50)
@@ -98,7 +98,7 @@ def test_gprgr_basic():
 
 def test_dpmix_basic():
     """Test DP mixture model."""
-    from moirais.fn.dpmix import dirichlet_process_mixture
+    from morie.fn.dpmix import dirichlet_process_mixture
 
     x = np.concatenate([
         np.random.normal(-3, 1, 25),
@@ -114,7 +114,7 @@ def test_dpmix_basic():
 
 def test_polya_basic():
     """Test Pólya urn."""
-    from moirais.fn.polya import polya_urn
+    from morie.fn.polya import polya_urn
 
     result = polya_urn(
         n_draws=100,
@@ -128,7 +128,7 @@ def test_polya_basic():
 
 def test_ibprc_basic():
     """Test Indian buffet process."""
-    from moirais.fn.ibprc import indian_buffet_process
+    from morie.fn.ibprc import indian_buffet_process
 
     result = indian_buffet_process(n=30, alpha=1.0)
 
@@ -139,7 +139,7 @@ def test_ibprc_basic():
 
 def test_ewens_basic():
     """Test Ewens sampling."""
-    from moirais.fn.ewens import ewens_partition
+    from morie.fn.ewens import ewens_partition
 
     result = ewens_partition(n=50, theta=1.0)
 
@@ -149,7 +149,7 @@ def test_ewens_basic():
 
 def test_neale_basic():
     """Test Neal's Algorithm 8."""
-    from moirais.fn.neale import neal_algorithm_8
+    from morie.fn.neale import neal_algorithm_8
 
     x = np.concatenate([
         np.random.normal(-2, 1, 20),
@@ -164,7 +164,7 @@ def test_neale_basic():
 
 def test_bnpqs_basic():
     """Test Bayesian nonparametric quantiles."""
-    from moirais.fn.bnpqs import bayesian_nonparametric_quantiles
+    from morie.fn.bnpqs import bayesian_nonparametric_quantiles
 
     x = np.random.exponential(2, 100)
     result = bayesian_nonparametric_quantiles(

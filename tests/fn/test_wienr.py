@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.wienr import wiener_filter, wienr
-from moirais.fn._containers import SignalResult
+from morie.fn.wienr import wiener_filter, wienr
+from morie.fn._containers import SignalResult
 
 
 class TestWienerFilter:

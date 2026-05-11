@@ -1,7 +1,7 @@
 """Test tsstc."""
 import numpy as np
 import pytest
-from moirais.fn.tsstc import tsstc
+from morie.fn.tsstc import tsstc
 
 
 def test_tsstc_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.svgmp."""
+"""Tests for morie.fn.svgmp."""
 
 import numpy as np
 import pytest
-from moirais.fn.svgmp import svgmp
+from morie.fn.svgmp import svgmp
 
 
 class TestSvgmp:

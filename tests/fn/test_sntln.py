@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.sntln — sentence length distribution."""
+"""Tests for morie.fn.sntln — sentence length distribution."""
 
-from moirais.fn.sntln import sentence_length, sntln
+from morie.fn.sntln import sentence_length, sntln
 
 
 class TestSentenceLength:

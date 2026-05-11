@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.simin — Single-index minimum distance."""
+"""Tests for morie.fn.simin — Single-index minimum distance."""
 
 import numpy as np
 import pytest
-from moirais.fn.simin import simin
+from morie.fn.simin import simin
 
 
 def test_returns_dict():

@@ -3,7 +3,7 @@
 import pandas as pd
 import pytest
 
-from moirais.fn.envjust import envjust, environmental_justice_index
+from morie.fn.envjust import envjust, environmental_justice_index
 
 
 def test_envjust_equal_exposure_gives_ratio_one():

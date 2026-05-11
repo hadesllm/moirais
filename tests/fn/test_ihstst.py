@@ -1,7 +1,7 @@
 """Tests for ihstst.ihs_test."""
 import numpy as np
 import pytest
-from moirais.fn.ihstst import ihs_test
+from morie.fn.ihstst import ihs_test
 
 
 def test_ihstst_basic():

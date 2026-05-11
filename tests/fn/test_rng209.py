@@ -1,7 +1,7 @@
 """Tests for rng209.rangayyan_ch4_white_noise_psd_input."""
 import numpy as np
 import pytest
-from moirais.fn.rng209 import rangayyan_ch4_white_noise_psd_input
+from morie.fn.rng209 import rangayyan_ch4_white_noise_psd_input
 
 
 def test_rng209_basic():

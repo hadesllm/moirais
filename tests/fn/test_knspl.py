@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.knspl — Kernel non-stationary spatial prediction."""
+"""Tests for morie.fn.knspl — Kernel non-stationary spatial prediction."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.knspl import knspl
+from morie.fn.knspl import knspl
 
 
 class TestKnspl:

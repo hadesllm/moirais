@@ -1,7 +1,7 @@
 """Tests for moeswt.moe_switch_routing."""
 import numpy as np
 import pytest
-from moirais.fn.moeswt import moe_switch_routing
+from morie.fn.moeswt import moe_switch_routing
 
 
 def test_moeswt_basic():

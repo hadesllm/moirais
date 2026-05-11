@@ -1,7 +1,7 @@
 """Tests for sgpr.sparse_gp."""
 import numpy as np
 import pytest
-from moirais.fn.sgpr import sparse_gp
+from morie.fn.sgpr import sparse_gp
 
 
 def test_sgpr_basic():

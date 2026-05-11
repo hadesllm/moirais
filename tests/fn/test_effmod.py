@@ -1,7 +1,7 @@
 """Tests for effmod.effect_modification."""
 import numpy as np
 import pytest
-from moirais.fn.effmod import effect_modification
+from morie.fn.effmod import effect_modification
 
 
 def test_effmod_basic():

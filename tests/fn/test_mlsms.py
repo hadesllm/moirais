@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mlsms -- MLSMU6 missing impute."""
+"""Tests for morie.fn.mlsms -- MLSMU6 missing impute."""
 
 import numpy as np
-from moirais.fn.mlsms import mlsmu6_missing_impute, mlsms
+from morie.fn.mlsms import mlsmu6_missing_impute, mlsms
 
 
 def test_mlsms_mean():

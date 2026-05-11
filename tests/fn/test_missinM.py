@@ -1,7 +1,7 @@
 """Tests for missinM.missing_mechanism_sensitivity."""
 import numpy as np
 import pytest
-from moirais.fn.missinM import missing_mechanism_sensitivity
+from morie.fn.missinM import missing_mechanism_sensitivity
 
 
 def test_missinM_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lacgetg."""
+"""Tests for morie.fn.lacgetg."""
 import numpy as np
 import pytest
-from moirais.fn.lacgetg import lacgetg
+from morie.fn.lacgetg import lacgetg
 
 
 class TestLacgetg:

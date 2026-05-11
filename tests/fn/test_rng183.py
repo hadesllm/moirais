@@ -1,7 +1,7 @@
 """Tests for rng183.rangayyan_ch4_pan_tompkins_highpass_lp_component."""
 import numpy as np
 import pytest
-from moirais.fn.rng183 import rangayyan_ch4_pan_tompkins_highpass_lp_component
+from morie.fn.rng183 import rangayyan_ch4_pan_tompkins_highpass_lp_component
 
 
 def test_rng183_basic():

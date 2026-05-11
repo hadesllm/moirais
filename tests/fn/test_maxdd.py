@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.maxdd."""
+"""Tests for morie.fn.maxdd."""
 import numpy as np
-from moirais.fn.maxdd import maxdd
+from morie.fn.maxdd import maxdd
 
 
 def test_maxdd_smoke():
@@ -12,7 +12,7 @@ def test_maxdd_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.maxdd import cheatsheet
+    from morie.fn.maxdd import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

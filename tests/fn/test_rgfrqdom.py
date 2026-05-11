@@ -1,7 +1,7 @@
 """Tests for rgfrqdom.rangayyan_freq_domain_feat."""
 import numpy as np
 import pytest
-from moirais.fn.rgfrqdom import rangayyan_freq_domain_feat
+from morie.fn.rgfrqdom import rangayyan_freq_domain_feat
 
 
 def test_rgfrqdom_basic():

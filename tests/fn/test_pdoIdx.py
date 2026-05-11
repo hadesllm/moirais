@@ -1,7 +1,7 @@
 """Tests for pdoIdx.pdo."""
 import numpy as np
 import pytest
-from moirais.fn.pdoIdx import pdo
+from morie.fn.pdoIdx import pdo
 
 
 def test_pdoIdx_basic():

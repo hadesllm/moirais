@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cvgen -- Cross-validation for genomic prediction."""
+"""Tests for morie.fn.cvgen -- Cross-validation for genomic prediction."""
 
 import numpy as np
 import pytest
-from moirais.fn.cvgen import cvgen
+from morie.fn.cvgen import cvgen
 
 
 def _make_data(n=40, p=30, seed=42):

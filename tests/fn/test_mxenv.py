@@ -1,7 +1,7 @@
 """Tests for mxenv.multi_env_model."""
 import numpy as np
 import pytest
-from moirais.fn.mxenv import multi_env_model
+from morie.fn.mxenv import multi_env_model
 
 
 def test_mxenv_basic():

@@ -1,7 +1,7 @@
 """Tests for aldocemb.alammar_document_embedding_pool."""
 import numpy as np
 import pytest
-from moirais.fn.aldocemb import alammar_document_embedding_pool
+from morie.fn.aldocemb import alammar_document_embedding_pool
 
 
 def test_aldocemb_basic():

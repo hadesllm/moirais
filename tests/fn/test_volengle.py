@@ -1,7 +1,7 @@
 """Tests for volengle.vol_engle_lagrange."""
 import numpy as np
 import pytest
-from moirais.fn.volengle import vol_engle_lagrange
+from morie.fn.volengle import vol_engle_lagrange
 
 
 def test_volengle_basic():

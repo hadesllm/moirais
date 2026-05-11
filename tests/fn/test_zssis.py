@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zssis -- Sequential indicator simulation"""
+"""Tests for morie.fn.zssis -- Sequential indicator simulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zssis import seq_ind_sim
+from morie.fn.zssis import seq_ind_sim
 
 
 class TestSeqIndSim:

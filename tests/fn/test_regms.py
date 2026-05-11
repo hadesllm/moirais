@@ -1,7 +1,7 @@
 """Tests for regms.regime_switching."""
 import numpy as np
 import pytest
-from moirais.fn.regms import regime_switching
+from morie.fn.regms import regime_switching
 
 
 def test_regms_basic():

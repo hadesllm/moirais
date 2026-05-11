@@ -1,7 +1,7 @@
 """Tests for km054.kamath_ch4_series_adapter."""
 import numpy as np
 import pytest
-from moirais.fn.km054 import kamath_ch4_series_adapter
+from morie.fn.km054 import kamath_ch4_series_adapter
 
 
 def test_km054_basic():

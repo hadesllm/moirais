@@ -1,7 +1,7 @@
 """Tests for scmaba.synthetic_control_method."""
 import numpy as np
 import pytest
-from moirais.fn.scmaba import synthetic_control_method
+from morie.fn.scmaba import synthetic_control_method
 
 
 def test_scmaba_basic():

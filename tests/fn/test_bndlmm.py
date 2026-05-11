@@ -1,7 +1,7 @@
 """Tests for bndlmm.bound_linear_min_max."""
 import numpy as np
 import pytest
-from moirais.fn.bndlmm import bound_linear_min_max
+from morie.fn.bndlmm import bound_linear_min_max
 
 
 def test_bndlmm_basic():

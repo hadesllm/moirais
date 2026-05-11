@@ -1,7 +1,7 @@
 """Test foreld."""
 import numpy as np
 import pytest
-from moirais.fn.foreld import foreld
+from morie.fn.foreld import foreld
 
 
 def test_foreld_basic():

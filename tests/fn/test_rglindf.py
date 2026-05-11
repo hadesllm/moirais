@@ -1,7 +1,7 @@
 """Tests for rglindf.rangayyan_linear_discrim."""
 import numpy as np
 import pytest
-from moirais.fn.rglindf import rangayyan_linear_discrim
+from morie.fn.rglindf import rangayyan_linear_discrim
 
 
 def test_rglindf_basic():

@@ -1,7 +1,7 @@
 """Tests for hmkvc.geron_kv_cache_compress."""
 import numpy as np
 import pytest
-from moirais.fn.hmkvc import geron_kv_cache_compress
+from morie.fn.hmkvc import geron_kv_cache_compress
 
 
 def test_hmkvc_basic():

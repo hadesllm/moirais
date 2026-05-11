@@ -1,7 +1,7 @@
 """Tests for chtchg.changeover_dr."""
 import numpy as np
 import pytest
-from moirais.fn.chtchg import changeover_dr
+from morie.fn.chtchg import changeover_dr
 
 
 def test_chtchg_basic():

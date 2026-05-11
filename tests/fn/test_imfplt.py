@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.imfplt -- IMF decomposition plot."""
+"""Tests for morie.fn.imfplt -- IMF decomposition plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.imfplt import imfplt
+from morie.fn.imfplt import imfplt
 
 
 class TestImfPlt:

@@ -1,7 +1,7 @@
 """Tests for rgsapdet.rangayyan_sleep_apnea_detect."""
 import numpy as np
 import pytest
-from moirais.fn.rgsapdet import rangayyan_sleep_apnea_detect
+from morie.fn.rgsapdet import rangayyan_sleep_apnea_detect
 
 
 def test_rgsapdet_basic():

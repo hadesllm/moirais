@@ -1,7 +1,7 @@
 """Test hilbert_envelope_fn."""
 import numpy as np
-from moirais.fn.hlbrt import hilbert_envelope_fn, alias
-from moirais.fn._containers import SignalResult
+from morie.fn.hlbrt import hilbert_envelope_fn, alias
+from morie.fn._containers import SignalResult
 
 
 class TestHilbertEnvelopeFn:

@@ -1,7 +1,7 @@
 """Tests for grgmll.geron_gmm_log_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.grgmll import geron_gmm_log_likelihood
+from morie.fn.grgmll import geron_gmm_log_likelihood
 
 
 def test_grgmll_basic():

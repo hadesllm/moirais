@@ -1,7 +1,7 @@
 """Tests for hapblk.haplotype_block."""
 import numpy as np
 import pytest
-from moirais.fn.hapblk import haplotype_block
+from morie.fn.hapblk import haplotype_block
 
 
 def test_hapblk_basic():

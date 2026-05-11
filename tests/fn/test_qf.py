@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.qf — F-distribution quantile."""
+"""Tests for morie.fn.qf — F-distribution quantile."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qf import qf
-from moirais.fn.pf import pf
+from morie.fn.qf import qf
+from morie.fn.pf import pf
 
 
 class TestQf:

@@ -1,7 +1,7 @@
 """Test opagg."""
 import numpy as np
 import pytest
-from moirais.fn.opagg import opagg
+from morie.fn.opagg import opagg
 
 
 def test_opagg_basic():

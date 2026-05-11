@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.panel — Panel data regression."""
+"""Tests for morie.fn.panel — Panel data regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.panel import panel_regression
+from morie.fn.panel import panel_regression
 
 
 @pytest.fixture()

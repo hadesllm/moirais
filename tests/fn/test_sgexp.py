@@ -1,6 +1,6 @@
 """Tests for exponential variogram."""
 import numpy as np
-from moirais.fn.sgexp import sgexp
+from morie.fn.sgexp import sgexp
 
 
 def test_sgexp_smoke():

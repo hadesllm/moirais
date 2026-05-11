@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.wilcox -- Wilcoxon signed-rank test."""
+"""Tests for morie.fn.wilcox -- Wilcoxon signed-rank test."""
 
 import pytest
-from moirais.fn.wilcox import wilcoxon_signed_rank_test
+from morie.fn.wilcox import wilcoxon_signed_rank_test
 
 
 class TestWilcoxonSignedRank:

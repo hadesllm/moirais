@@ -1,7 +1,7 @@
 """Tests for sumP.sum_pool."""
 import numpy as np
 import pytest
-from moirais.fn.sumP import sum_pool
+from morie.fn.sumP import sum_pool
 
 
 def test_sumP_basic():

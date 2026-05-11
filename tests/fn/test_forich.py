@@ -1,7 +1,7 @@
 """Test forich."""
 import numpy as np
 import pytest
-from moirais.fn.forich import forich
+from morie.fn.forich import forich
 
 
 def test_forich_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzlam.horowitz_baseline_hazard_est."""
 import numpy as np
 import pytest
-from moirais.fn.hrzlam import horowitz_baseline_hazard_est
+from morie.fn.hrzlam import horowitz_baseline_hazard_est
 
 
 def test_hrzlam_basic():

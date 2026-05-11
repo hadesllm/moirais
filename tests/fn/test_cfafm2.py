@@ -1,7 +1,7 @@
 """Tests for cfafm2.cfa_multifactor."""
 import numpy as np
 import pytest
-from moirais.fn.cfafm2 import cfa_multifactor
+from morie.fn.cfafm2 import cfa_multifactor
 
 
 def test_cfafm2_basic():

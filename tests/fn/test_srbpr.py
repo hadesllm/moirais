@@ -1,7 +1,7 @@
 """Test srbpr."""
 import numpy as np
 import pytest
-from moirais.fn.srbpr import srbpr
+from morie.fn.srbpr import srbpr
 
 
 def test_srbpr_basic():

@@ -1,7 +1,7 @@
 """Tests for hmdctr.geron_decoder_only."""
 import numpy as np
 import pytest
-from moirais.fn.hmdctr import geron_decoder_only
+from morie.fn.hmdctr import geron_decoder_only
 
 
 def test_hmdctr_basic():

@@ -1,7 +1,7 @@
 """Tests for grxent.geron_softmax_cross_entropy_cost."""
 import numpy as np
 import pytest
-from moirais.fn.grxent import geron_softmax_cross_entropy_cost
+from morie.fn.grxent import geron_softmax_cross_entropy_cost
 
 
 def test_grxent_basic():

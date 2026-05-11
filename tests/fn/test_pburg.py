@@ -1,7 +1,7 @@
 """Tests for pburg — Burg AR power spectral density."""
 import numpy as np
-from moirais.fn.pburg import burg_psd
-from moirais.fn._containers import SignalResult
+from morie.fn.pburg import burg_psd
+from morie.fn._containers import SignalResult
 
 
 def test_pburg_basic(signal_1khz):

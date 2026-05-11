@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmpre -- Proportional Reduction in Error"""
+"""Tests for morie.fn.nmpre -- Proportional Reduction in Error"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmpre import pre_stat
+from morie.fn.nmpre import pre_stat
 
 
 class TestPreStat:

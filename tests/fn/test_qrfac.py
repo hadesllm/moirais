@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.qrfac."""
+"""Tests for morie.fn.qrfac."""
 import numpy as np
-from moirais.fn.qrfac import qr_factorize
+from morie.fn.qrfac import qr_factorize
 
 
 def test_qrfac_smoke():
@@ -12,7 +12,7 @@ def test_qrfac_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.qrfac import cheatsheet
+    from morie.fn.qrfac import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

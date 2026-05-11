@@ -1,7 +1,7 @@
 """Tests for rgeqn10a.rangayyan_ch10_cost_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn10a import rangayyan_ch10_cost_matrix
+from morie.fn.rgeqn10a import rangayyan_ch10_cost_matrix
 
 
 def test_rgeqn10a_basic():

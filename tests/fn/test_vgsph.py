@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgsph -- Spherical variogram model"""
+"""Tests for morie.fn.vgsph -- Spherical variogram model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgsph import vario_spherical
+from morie.fn.vgsph import vario_spherical
 
 
 class TestVarioSpherical:

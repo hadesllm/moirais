@@ -1,7 +1,7 @@
 """Tests for ctta1c.ctt_alpha_classic."""
 import numpy as np
 import pytest
-from moirais.fn.ctta1c import ctt_alpha_classic
+from morie.fn.ctta1c import ctt_alpha_classic
 
 
 def test_ctta1c_basic():

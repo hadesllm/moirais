@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cic -- Changes-in-Changes estimator."""
+"""Tests for morie.fn.cic -- Changes-in-Changes estimator."""
 
 import numpy as np
 import pytest
-from moirais.fn.cic import changes_in_changes
+from morie.fn.cic import changes_in_changes
 
 
 class TestCIC:

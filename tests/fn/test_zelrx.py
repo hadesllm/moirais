@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zelrx -- Leroux CAR model"""
+"""Tests for morie.fn.zelrx -- Leroux CAR model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zelrx import leroux_model
+from morie.fn.zelrx import leroux_model
 
 
 class TestLerouxModel:

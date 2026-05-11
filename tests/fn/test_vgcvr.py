@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgcvr -- Covariance matrix from variogram"""
+"""Tests for morie.fn.vgcvr -- Covariance matrix from variogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgcvr import covario_matrix
+from morie.fn.vgcvr import covario_matrix
 
 
 class TestCovarioMatrix:

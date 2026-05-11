@@ -1,7 +1,7 @@
 """Tests for spreml.schabenberger_reml_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.spreml import schabenberger_reml_variogram
+from morie.fn.spreml import schabenberger_reml_variogram
 
 
 def test_spreml_basic():

@@ -1,7 +1,7 @@
 """Tests for survroc.time_dep_roc."""
 import numpy as np
 import pytest
-from moirais.fn.survroc import time_dep_roc
+from morie.fn.survroc import time_dep_roc
 
 
 def test_survroc_basic():

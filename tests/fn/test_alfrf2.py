@@ -1,7 +1,7 @@
 """Tests for alfrf2.rfdiffusion_protein."""
 import numpy as np
 import pytest
-from moirais.fn.alfrf2 import rfdiffusion_protein
+from morie.fn.alfrf2 import rfdiffusion_protein
 
 
 def test_alfrf2_basic():

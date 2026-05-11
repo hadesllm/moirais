@@ -1,7 +1,7 @@
 """Tests for wsmmrk.wasserman_markov_ineq."""
 import numpy as np
 import pytest
-from moirais.fn.wsmmrk import wasserman_markov_ineq
+from morie.fn.wsmmrk import wasserman_markov_ineq
 
 
 def test_wsmmrk_basic():

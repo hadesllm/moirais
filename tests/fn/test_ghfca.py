@@ -1,7 +1,7 @@
 """Test ghfca."""
 import numpy as np
 import pytest
-from moirais.fn.ghfca import ghfca
+from morie.fn.ghfca import ghfca
 
 
 def test_ghfca_basic():

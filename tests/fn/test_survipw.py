@@ -1,7 +1,7 @@
 """Tests for survipw.ipcw_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.survipw import ipcw_estimator
+from morie.fn.survipw import ipcw_estimator
 
 
 def test_survipw_basic():

@@ -1,7 +1,7 @@
 """Test filsm."""
 import numpy as np
 import pytest
-from moirais.fn.filsm import filsm
+from morie.fn.filsm import filsm
 
 
 def test_filsm_basic():

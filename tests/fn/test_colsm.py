@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.colsm -- stress-strain curve analysis."""
+"""Tests for morie.fn.colsm -- stress-strain curve analysis."""
 
 import numpy as np
-from moirais.fn.colsm import stress_strain, colsm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.colsm import stress_strain, colsm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestColsm:

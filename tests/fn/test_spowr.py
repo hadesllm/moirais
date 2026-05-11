@@ -1,7 +1,7 @@
 """Test signal_power (spowr)."""
 import numpy as np
-from moirais.fn.spowr import signal_power, spowr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.spowr import signal_power, spowr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSignalPower:

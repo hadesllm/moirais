@@ -1,7 +1,7 @@
 """Tests for rescor.rescore_consensus."""
 import numpy as np
 import pytest
-from moirais.fn.rescor import rescore_consensus
+from morie.fn.rescor import rescore_consensus
 
 
 def test_rescor_basic():

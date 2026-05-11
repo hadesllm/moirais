@@ -1,7 +1,7 @@
 """Tests for rbfcv."""
 import numpy as np
 import pytest
-from moirais.fn.rbfcv import rbfcv
+from morie.fn.rbfcv import rbfcv
 
 
 def test_rbfcv_basic():
@@ -27,5 +27,5 @@ def test_rbfcv_no_data():
 
 
 def test_rbfcv_alias():
-    from moirais.fn.rbfcv import rbfcv
+    from morie.fn.rbfcv import rbfcv
     assert rbfcv is rbfcv

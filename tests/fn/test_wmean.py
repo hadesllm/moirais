@@ -1,6 +1,6 @@
 """Tests for winsorized_mean."""
 import numpy as np, pytest
-from moirais.fn.wmean import winsorized_mean
+from morie.fn.wmean import winsorized_mean
 
 
 class TestWinsorizedMean:

@@ -1,7 +1,7 @@
 """Tests for grrep.geron_reparameterization_trick."""
 import numpy as np
 import pytest
-from moirais.fn.grrep import geron_reparameterization_trick
+from morie.fn.grrep import geron_reparameterization_trick
 
 
 def test_grrep_basic():

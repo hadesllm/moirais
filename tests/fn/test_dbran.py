@@ -1,7 +1,7 @@
 """Test dbran."""
 import pytest
 import numpy as np
-from moirais.fn.dbran import d_brane_tension
+from morie.fn.dbran import d_brane_tension
 
 
 def test_dbran_d3():

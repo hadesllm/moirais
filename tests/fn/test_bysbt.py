@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bysbt — Bayesian bootstrap."""
+"""Tests for morie.fn.bysbt — Bayesian bootstrap."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bysbt import bysbt
+from morie.fn.bysbt import bysbt
 
 
 def test_mean_close_to_sample():

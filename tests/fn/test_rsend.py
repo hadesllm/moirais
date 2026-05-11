@@ -1,7 +1,7 @@
 """Test rsend."""
 import numpy as np
 import pytest
-from moirais.fn.rsend import rsend
+from morie.fn.rsend import rsend
 
 
 def test_rsend_basic():

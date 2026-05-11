@@ -1,7 +1,7 @@
 """Tests for hma2c.geron_a2c."""
 import numpy as np
 import pytest
-from moirais.fn.hma2c import geron_a2c
+from morie.fn.hma2c import geron_a2c
 
 
 def test_hma2c_basic():

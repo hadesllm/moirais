@@ -1,7 +1,7 @@
 """Tests for gatemd.graph_attention_net."""
 import numpy as np
 import pytest
-from moirais.fn.gatemd import graph_attention_net
+from morie.fn.gatemd import graph_attention_net
 
 
 def test_gatemd_basic():

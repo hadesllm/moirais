@@ -1,7 +1,7 @@
 """Tests for nnstln."""
 import numpy as np
 import pytest
-from moirais.fn.nnstln import nnstln
+from morie.fn.nnstln import nnstln
 
 
 def test_nnstln_basic():
@@ -27,5 +27,5 @@ def test_nnstln_no_data():
 
 
 def test_nnstln_alias():
-    from moirais.fn.nnstln import nnstln
+    from morie.fn.nnstln import nnstln
     assert nnstln is nnstln

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.reset -- Ramsey RESET test."""
+"""Tests for morie.fn.reset -- Ramsey RESET test."""
 
 import numpy as np
 import pytest
-from moirais.fn.reset import ramsey_reset_test
-from moirais.fn._containers import TestResult
+from morie.fn.reset import ramsey_reset_test
+from morie.fn._containers import TestResult
 
 
 class TestReset:

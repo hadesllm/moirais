@@ -1,46 +1,46 @@
 Python API
 ==========
 
-Part of :doc:`index` — MOIRAIS API reference.
+Part of :doc:`index` — MORIE API reference.
 
-Auto-generated reference for every public ``moirais.*`` module.
+Auto-generated reference for every public ``morie.*`` module.
 Signatures and docstrings come from ``sphinx.ext.autodoc``; see
 :doc:`../methods/index` for the methodology behind each function.
 
 Causal inference
 ----------------
 
-.. automodule:: moirais.causal
+.. automodule:: morie.causal
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.effects
+.. automodule:: morie.effects
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.matching
+.. automodule:: morie.matching
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.iv
+.. automodule:: morie.iv
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.rdd
+.. automodule:: morie.rdd
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.did
+.. automodule:: morie.did
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.sensitivity
+.. automodule:: morie.sensitivity
    :members:
    :undoc-members:
    :show-inheritance:
@@ -48,37 +48,37 @@ Causal inference
 Survey + descriptive statistics
 -------------------------------
 
-.. automodule:: moirais.survey
+.. automodule:: morie.survey
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.sampling
+.. automodule:: morie.sampling
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.survival
+.. automodule:: morie.survival
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.statistics
+.. automodule:: morie.statistics
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.bootstrap_methods
+.. automodule:: morie.bootstrap_methods
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.multiple_testing
+.. automodule:: morie.multiple_testing
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.effect_sizes
+.. automodule:: morie.effect_sizes
    :members:
    :undoc-members:
    :show-inheritance:
@@ -86,17 +86,17 @@ Survey + descriptive statistics
 Datasets
 --------
 
-.. automodule:: moirais.dataset
+.. automodule:: morie.dataset
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.data
+.. automodule:: morie.data
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.bq
+.. automodule:: morie.bq
    :members:
    :undoc-members:
    :show-inheritance:
@@ -104,37 +104,37 @@ Datasets
 OTIS — Ontario Tracking and Information System
 ----------------------------------------------
 
-.. automodule:: moirais.otis
+.. automodule:: morie.otis
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.otis_analyze
+.. automodule:: morie.otis_analyze
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.otis_all_analyze
+.. automodule:: morie.otis_all_analyze
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.otis_causal
+.. automodule:: morie.otis_causal
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.otis_churn
+.. automodule:: morie.otis_churn
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.otis_datasets
+.. automodule:: morie.otis_datasets
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.otis_tps_overlay
+.. automodule:: morie.otis_tps_overlay
    :members:
    :undoc-members:
    :show-inheritance:
@@ -142,62 +142,62 @@ OTIS — Ontario Tracking and Information System
 TPS — Toronto Police Service
 ----------------------------
 
-.. automodule:: moirais.tps_io
+.. automodule:: morie.tps_io
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_datasets
+.. automodule:: morie.tps_datasets
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_crime
+.. automodule:: morie.tps_crime
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_csi
+.. automodule:: morie.tps_csi
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_temporal
+.. automodule:: morie.tps_temporal
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_spatial
+.. automodule:: morie.tps_spatial
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_spatial_advanced
+.. automodule:: morie.tps_spatial_advanced
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_stochastic
+.. automodule:: morie.tps_stochastic
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_hawkes_advanced
+.. automodule:: morie.tps_hawkes_advanced
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_statphysics
+.. automodule:: morie.tps_statphysics
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_render
+.. automodule:: morie.tps_render
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.tps_all_analyze
+.. automodule:: morie.tps_all_analyze
    :members:
    :undoc-members:
    :show-inheritance:
@@ -205,17 +205,17 @@ TPS — Toronto Police Service
 Federal SIU — Sprott / Doob / Iftene replication
 ------------------------------------------------
 
-.. automodule:: moirais.sprott_doob
+.. automodule:: morie.sprott_doob
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.siuiap
+.. automodule:: morie.siuiap
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: moirais.doob_trends
+.. automodule:: morie.doob_trends
    :members:
    :undoc-members:
    :show-inheritance:
@@ -223,28 +223,28 @@ Federal SIU — Sprott / Doob / Iftene replication
 Psychometrics
 -------------
 
-.. automodule:: moirais.psymet
+.. automodule:: morie.psymet
    :members:
    :undoc-members:
    :show-inheritance:
 
-Function namespace ``moirais.fn``
+Function namespace ``morie.fn``
 ---------------------------------
 
-The ``moirais.fn`` namespace exposes 36,000+ individual function
+The ``morie.fn`` namespace exposes 36,000+ individual function
 files, indexed by a registry. The full registry is the canonical
 catalogue:
 
-.. automodule:: moirais.fn._registry
+.. automodule:: morie.fn._registry
    :members:
    :undoc-members:
 
 Result containers shared across the package:
 
-.. automodule:: moirais.fn._containers
+.. automodule:: morie.fn._containers
    :members:
    :undoc-members:
 
-.. automodule:: moirais.fn._richresult
+.. automodule:: morie.fn._richresult
    :members:
    :undoc-members:

@@ -1,7 +1,7 @@
 """Tests for dnvtwo.dinov2_repr."""
 import numpy as np
 import pytest
-from moirais.fn.dnvtwo import dinov2_repr
+from morie.fn.dnvtwo import dinov2_repr
 
 
 def test_dnvtwo_basic():

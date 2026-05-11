@@ -1,7 +1,7 @@
 """Test ubgnf."""
 import numpy as np
 import pytest
-from moirais.fn.ubgnf import ubgnf
+from morie.fn.ubgnf import ubgnf
 
 
 def test_ubgnf_basic():

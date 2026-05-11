@@ -1,7 +1,7 @@
 """Tests for cvxqsv.boyd_qcqp_relaxation."""
 import numpy as np
 import pytest
-from moirais.fn.cvxqsv import boyd_qcqp_relaxation
+from morie.fn.cvxqsv import boyd_qcqp_relaxation
 
 
 def test_cvxqsv_basic():

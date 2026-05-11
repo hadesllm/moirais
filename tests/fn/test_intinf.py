@@ -1,7 +1,7 @@
 """Tests for intinf.interaction_information."""
 import numpy as np
 import pytest
-from moirais.fn.intinf import interaction_information
+from morie.fn.intinf import interaction_information
 
 
 def test_intinf_basic():

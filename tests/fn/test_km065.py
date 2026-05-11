@@ -1,7 +1,7 @@
 """Tests for km065.kamath_ch5_reward_loss_pairwise."""
 import numpy as np
 import pytest
-from moirais.fn.km065 import kamath_ch5_reward_loss_pairwise
+from morie.fn.km065 import kamath_ch5_reward_loss_pairwise
 
 
 def test_km065_basic():

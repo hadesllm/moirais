@@ -1,7 +1,7 @@
 """Tests for diflrt.dif_likelihood_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.diflrt import dif_likelihood_ratio
+from morie.fn.diflrt import dif_likelihood_ratio
 
 
 def test_diflrt_basic():

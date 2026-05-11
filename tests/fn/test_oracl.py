@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.oracl — oracle inequality verification."""
+"""Tests for morie.fn.oracl — oracle inequality verification."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.oracl import oracl
+from morie.fn.oracl import oracl
 
 
 def test_basic_output():

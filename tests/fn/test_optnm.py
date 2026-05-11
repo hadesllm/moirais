@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.optnm -- Nelder-Mead MDS."""
+"""Tests for morie.fn.optnm -- Nelder-Mead MDS."""
 
 import numpy as np
-from moirais.fn.optnm import nelder_mead_mds, optnm
+from morie.fn.optnm import nelder_mead_mds, optnm
 
 
 def test_optnm_smoke():

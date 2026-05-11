@@ -1,7 +1,7 @@
 """Tests for rng123.rangayyan_ch3_butterworth_lowpass_squared_magnitude."""
 import numpy as np
 import pytest
-from moirais.fn.rng123 import rangayyan_ch3_butterworth_lowpass_squared_magnitude
+from morie.fn.rng123 import rangayyan_ch3_butterworth_lowpass_squared_magnitude
 
 
 def test_rng123_basic():

@@ -1,7 +1,7 @@
 """Test mstld."""
 import numpy as np
 import pytest
-from moirais.fn.mstld import mstld
+from morie.fn.mstld import mstld
 
 
 def test_mstld_basic():

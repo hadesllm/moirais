@@ -1,7 +1,7 @@
 """Tests for ecsTCR.ecs_tcr."""
 import numpy as np
 import pytest
-from moirais.fn.ecsTCR import ecs_tcr
+from morie.fn.ecsTCR import ecs_tcr
 
 
 def test_ecsTCR_basic():

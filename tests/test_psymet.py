@@ -1,4 +1,4 @@
-"""Tests for moirais.psymet — psychometric analysis functions."""
+"""Tests for morie.psymet — psychometric analysis functions."""
 
 import os
 
@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.psymet import (
+from morie.psymet import (
     RlbRes, OmgRes, KmoRes, BrtRes,
     crba, mcdo, kmo, bart, paran, splhf, itcor, adel, idisc, crel, ave,
 )
@@ -14,9 +14,9 @@ from moirais.psymet import (
 
 @pytest.fixture
 def mapq():
-    """Load MAPQII from moirais.db (works in CI) or xlsx fallback."""
+    """Load MAPQII from morie.db (works in CI) or xlsx fallback."""
     try:
-        from moirais.data import load_dataset
+        from morie.data import load_dataset
         df = load_dataset("mapq")
         # load_dataset returns the full survey — filter to MAPQII 20 items
         mapq_cols = [f"{s}{i}" for s in ("EE","EA","UA","ER") for i in range(1,6)]

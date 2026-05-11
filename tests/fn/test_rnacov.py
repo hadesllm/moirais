@@ -1,7 +1,7 @@
 """Tests for rnacov.rna_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.rnacov import rna_covariance
+from morie.fn.rnacov import rna_covariance
 
 
 def test_rnacov_basic():

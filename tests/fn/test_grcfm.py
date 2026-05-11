@@ -1,7 +1,7 @@
 """Tests for grcfm.geron_confusion_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.grcfm import geron_confusion_matrix
+from morie.fn.grcfm import geron_confusion_matrix
 
 
 def test_grcfm_basic():

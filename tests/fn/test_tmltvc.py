@@ -1,7 +1,7 @@
 """Tests for tmltvc.tmle_time_varying_confound."""
 import numpy as np
 import pytest
-from moirais.fn.tmltvc import tmle_time_varying_confound
+from morie.fn.tmltvc import tmle_time_varying_confound
 
 
 def test_tmltvc_basic():

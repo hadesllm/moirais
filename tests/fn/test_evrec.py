@@ -1,7 +1,7 @@
 """Tests for evrec.evt_record_count."""
 import numpy as np
 import pytest
-from moirais.fn.evrec import evt_record_count
+from morie.fn.evrec import evt_record_count
 
 
 def test_evrec_basic():

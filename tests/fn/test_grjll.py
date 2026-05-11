@@ -1,7 +1,7 @@
 """Tests for grjll.geron_johnson_lindenstrauss_bound."""
 import numpy as np
 import pytest
-from moirais.fn.grjll import geron_johnson_lindenstrauss_bound
+from morie.fn.grjll import geron_johnson_lindenstrauss_bound
 
 
 def test_grjll_basic():

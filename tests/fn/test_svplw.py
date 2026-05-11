@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svplw -- Wolfson bipolarization index"""
+"""Tests for morie.fn.svplw -- Wolfson bipolarization index"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svplw import polarization_wolf
+from morie.fn.svplw import polarization_wolf
 
 
 class TestPolarizationWolf:

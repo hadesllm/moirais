@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bootm — Bootstrap for M-estimators."""
+"""Tests for morie.fn.bootm — Bootstrap for M-estimators."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bootm import bootm
+from morie.fn.bootm import bootm
 
 
 @pytest.fixture()

@@ -1,6 +1,6 @@
 """Tests for haarf.py - Haar wavelet transform."""
 import numpy as np
-from moirais.fn.haarf import haar_transform, haarf
+from morie.fn.haarf import haar_transform, haarf
 
 
 def test_haarf_returns_descriptive_result():

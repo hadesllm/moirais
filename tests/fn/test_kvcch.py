@@ -1,6 +1,6 @@
 """Test KV-cache."""
 import numpy as np
-from moirais.fn.kvcch import kvcch
+from morie.fn.kvcch import kvcch
 
 
 def test_kvcch_new_cache():

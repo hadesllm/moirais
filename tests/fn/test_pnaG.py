@@ -1,7 +1,7 @@
 """Tests for pnaG.pna."""
 import numpy as np
 import pytest
-from moirais.fn.pnaG import pna
+from morie.fn.pnaG import pna
 
 
 def test_pnaG_basic():

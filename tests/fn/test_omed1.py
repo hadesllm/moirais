@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.omed1 — Mediation analysis."""
+"""Tests for morie.fn.omed1 — Mediation analysis."""
 
 import numpy as np
-from moirais.fn.omed1 import otis_mediation
+from morie.fn.omed1 import otis_mediation
 
 
 class TestOtisMediation:

@@ -1,7 +1,7 @@
 """Tests for alinfn.alammar_infonce_loss."""
 import numpy as np
 import pytest
-from moirais.fn.alinfn import alammar_infonce_loss
+from morie.fn.alinfn import alammar_infonce_loss
 
 
 def test_alinfn_basic():

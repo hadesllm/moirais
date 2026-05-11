@@ -1,5 +1,5 @@
 """Tests for asymptotic z-test."""
-from moirais.fn.sgzts import sgzts
+from morie.fn.sgzts import sgzts
 
 
 def test_sgzts_smoke():

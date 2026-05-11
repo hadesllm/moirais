@@ -1,7 +1,7 @@
 """Tests for depthS.simplicial_depth."""
 import numpy as np
 import pytest
-from moirais.fn.depthS import simplicial_depth
+from morie.fn.depthS import simplicial_depth
 
 
 def test_depthS_basic():

@@ -1,7 +1,7 @@
 """Tests for grbrnn.geron_bidirectional_rnn."""
 import numpy as np
 import pytest
-from moirais.fn.grbrnn import geron_bidirectional_rnn
+from morie.fn.grbrnn import geron_bidirectional_rnn
 
 
 def test_grbrnn_basic():

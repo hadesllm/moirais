@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.eegbd -- EEG band decomposition plot."""
+"""Tests for morie.fn.eegbd -- EEG band decomposition plot."""
 
 import numpy as np
 import pytest
@@ -6,7 +6,7 @@ import pytest
 plt = pytest.importorskip("matplotlib.pyplot")
 pytest.importorskip("scipy")
 
-from moirais.fn.eegbd import eegbd
+from morie.fn.eegbd import eegbd
 
 
 class TestEegBd:
@@ -21,7 +21,7 @@ class TestEegBd:
 
 
 def test_cheatsheet():
-    from moirais.fn.eegbd import cheatsheet
+    from morie.fn.eegbd import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

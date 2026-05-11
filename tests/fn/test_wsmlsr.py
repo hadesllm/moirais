@@ -1,7 +1,7 @@
 """Tests for wsmlsr.wasserman_least_squares."""
 import numpy as np
 import pytest
-from moirais.fn.wsmlsr import wasserman_least_squares
+from morie.fn.wsmlsr import wasserman_least_squares
 
 
 def test_wsmlsr_basic():

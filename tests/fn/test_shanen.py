@@ -1,7 +1,7 @@
 """Tests for shanen.shannon_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.shanen import shannon_entropy
+from morie.fn.shanen import shannon_entropy
 
 
 def test_shanen_basic():

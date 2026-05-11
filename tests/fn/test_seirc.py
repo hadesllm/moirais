@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.seirc -- SEIR with compartmental dynamics."""
+"""Tests for morie.fn.seirc -- SEIR with compartmental dynamics."""
 
 import pytest
-from moirais.fn.seirc import seir_compartmental
+from morie.fn.seirc import seir_compartmental
 
 
 class TestSEIRC:

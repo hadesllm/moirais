@@ -1,7 +1,7 @@
 """Tests for rgconv.rangayyan_linear_convolution."""
 import numpy as np
 import pytest
-from moirais.fn.rgconv import rangayyan_linear_convolution
+from morie.fn.rgconv import rangayyan_linear_convolution
 
 
 def test_rgconv_basic():

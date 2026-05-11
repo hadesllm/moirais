@@ -1,7 +1,7 @@
 """Test wlgam."""
 import numpy as np
 import pytest
-from moirais.fn.wlgam import wlgam
+from morie.fn.wlgam import wlgam
 
 
 def test_wlgam_basic():

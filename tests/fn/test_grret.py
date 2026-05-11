@@ -1,7 +1,7 @@
 """Tests for grret.geron_discounted_return."""
 import numpy as np
 import pytest
-from moirais.fn.grret import geron_discounted_return
+from morie.fn.grret import geron_discounted_return
 
 
 def test_grret_basic():

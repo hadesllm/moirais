@@ -1,7 +1,7 @@
 """Tests for strdis.structural_distance."""
 import numpy as np
 import pytest
-from moirais.fn.strdis import structural_distance
+from morie.fn.strdis import structural_distance
 
 
 def test_strdis_basic():

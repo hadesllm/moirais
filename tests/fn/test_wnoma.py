@@ -1,7 +1,7 @@
 """Tests for wnoma.wnominate_alternating."""
 import numpy as np
 import pytest
-from moirais.fn.wnoma import wnominate_alternating
+from morie.fn.wnoma import wnominate_alternating
 
 
 def test_wnoma_basic():

@@ -1,7 +1,7 @@
 """Tests for ate_d.ate_definition."""
 import numpy as np
 import pytest
-from moirais.fn.ate_d import ate_definition
+from morie.fn.ate_d import ate_definition
 
 
 def test_ate_d_basic():

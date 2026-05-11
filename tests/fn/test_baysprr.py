@@ -1,7 +1,7 @@
 """Tests for baysprr.sparsity_horseshoe."""
 import numpy as np
 import pytest
-from moirais.fn.baysprr import sparsity_horseshoe
+from morie.fn.baysprr import sparsity_horseshoe
 
 
 def test_baysprr_basic():

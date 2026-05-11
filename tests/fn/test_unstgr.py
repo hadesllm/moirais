@@ -1,7 +1,7 @@
 """Test unstgr."""
 import numpy as np
 import pytest
-from moirais.fn.unstgr import unstgr
+from morie.fn.unstgr import unstgr
 
 
 def test_unstgr_basic():

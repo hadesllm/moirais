@@ -1,7 +1,7 @@
 """Tests for wsmkbk.wasserman_kullback_leibler."""
 import numpy as np
 import pytest
-from moirais.fn.wsmkbk import wasserman_kullback_leibler
+from morie.fn.wsmkbk import wasserman_kullback_leibler
 
 
 def test_wsmkbk_basic():

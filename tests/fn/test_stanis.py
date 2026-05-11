@@ -1,7 +1,7 @@
 """Tests for stanis."""
 import numpy as np
 import pytest
-from moirais.fn.stanis import stanis
+from morie.fn.stanis import stanis
 
 
 def test_stanis_basic():
@@ -27,5 +27,5 @@ def test_stanis_no_data():
 
 
 def test_stanis_alias():
-    from moirais.fn.stanis import stanis
+    from morie.fn.stanis import stanis
     assert stanis is stanis

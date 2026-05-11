@@ -1,7 +1,7 @@
 """Tests for hmumap.geron_umap."""
 import numpy as np
 import pytest
-from moirais.fn.hmumap import geron_umap
+from morie.fn.hmumap import geron_umap
 
 
 def test_hmumap_basic():

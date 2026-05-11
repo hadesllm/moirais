@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sudast -- DAST score."""
+"""Tests for morie.fn.sudast -- DAST score."""
 
 import pytest
-from moirais.fn.sudast import dast_score
+from morie.fn.sudast import dast_score
 
 
 class TestDASTScore:

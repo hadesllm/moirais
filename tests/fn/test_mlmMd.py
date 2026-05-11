@@ -1,7 +1,7 @@
 """Tests for mlmMd.multilevel_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.mlmMd import multilevel_mediation
+from morie.fn.mlmMd import multilevel_mediation
 
 
 def test_mlmMd_basic():

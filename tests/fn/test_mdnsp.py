@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mdnsp."""
+"""Tests for morie.fn.mdnsp."""
 
 import numpy as np
 import pytest
-from moirais.fn.mdnsp import mdnsp
+from morie.fn.mdnsp import mdnsp
 
 
 class TestMdnsp:

@@ -1,7 +1,7 @@
 """Tests for clausC.clausius_clapeyron."""
 import numpy as np
 import pytest
-from moirais.fn.clausC import clausius_clapeyron
+from morie.fn.clausC import clausius_clapeyron
 
 
 def test_clausC_basic():

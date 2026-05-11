@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.odm_i — OTIS demo diversity index."""
+"""Tests for morie.fn.odm_i — OTIS demo diversity index."""
 
 import pytest
 import numpy as np
-from moirais.fn.odm_i import otis_demo_index
-from moirais.fn._containers import ESRes
+from morie.fn.odm_i import otis_demo_index
+from morie.fn._containers import ESRes
 
 
 class TestOtisDemoIndex:

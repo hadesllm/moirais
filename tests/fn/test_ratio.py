@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.ratio — Survey ratio estimator."""
+"""Tests for morie.fn.ratio — Survey ratio estimator."""
 
 import math
 
 import numpy as np
 import pytest
 
-from moirais.fn.ratio import ratio_estimator
+from morie.fn.ratio import ratio_estimator
 
 
 def test_returns_dict_with_keys():

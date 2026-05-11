@@ -1,7 +1,7 @@
 """Test afcntr."""
 import numpy as np
 import pytest
-from moirais.fn.afcntr import afcntr
+from morie.fn.afcntr import afcntr
 
 
 def test_afcntr_basic():

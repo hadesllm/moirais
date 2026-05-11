@@ -1,7 +1,7 @@
 """Tests for tmar."""
 import numpy as np
 import pytest
-from moirais.fn.tmar import tmar
+from morie.fn.tmar import tmar
 
 
 def test_tmar_basic():
@@ -27,5 +27,5 @@ def test_tmar_no_data():
 
 
 def test_tmar_alias():
-    from moirais.fn.tmar import tmar
+    from morie.fn.tmar import tmar
     assert tmar is tmar

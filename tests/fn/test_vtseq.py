@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vtseq."""
+"""Tests for morie.fn.vtseq."""
 
 import numpy as np
 import pytest
-from moirais.fn.vtseq import vtseq
+from morie.fn.vtseq import vtseq
 
 
 class TestVtseq:

@@ -1,7 +1,7 @@
 """Tests for hampel.hampel_redescend."""
 import numpy as np
 import pytest
-from moirais.fn.hampel import hampel_redescend
+from morie.fn.hampel import hampel_redescend
 
 
 def test_hampel_basic():

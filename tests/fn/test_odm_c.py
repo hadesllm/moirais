@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.odm_c — OTIS demo cross-tab."""
+"""Tests for morie.fn.odm_c — OTIS demo cross-tab."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.odm_c import otis_demo_cross
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.odm_c import otis_demo_cross
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOtisDemoCross:

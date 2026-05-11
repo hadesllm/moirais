@@ -1,7 +1,7 @@
 """Tests for spcflt."""
 import numpy as np
 import pytest
-from moirais.fn.spcflt import spcflt
+from morie.fn.spcflt import spcflt
 
 
 def test_spcflt_basic():
@@ -27,5 +27,5 @@ def test_spcflt_no_data():
 
 
 def test_spcflt_alias():
-    from moirais.fn.spcflt import spcflt
+    from morie.fn.spcflt import spcflt
     assert spcflt is spcflt

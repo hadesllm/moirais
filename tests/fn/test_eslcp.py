@@ -1,7 +1,7 @@
 """Tests for eslcp.esl_mallows_cp."""
 import numpy as np
 import pytest
-from moirais.fn.eslcp import esl_mallows_cp
+from morie.fn.eslcp import esl_mallows_cp
 
 
 def test_eslcp_basic():

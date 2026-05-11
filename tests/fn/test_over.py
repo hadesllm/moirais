@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.over -- Overlap diagnostics."""
+"""Tests for morie.fn.over -- Overlap diagnostics."""
 
 import numpy as np
 import pytest
-from moirais.fn.over import overlap_diagnostics
+from morie.fn.over import overlap_diagnostics
 
 
 class TestOverlapDiagnostics:

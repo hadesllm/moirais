@@ -1,7 +1,7 @@
 """Test sozin."""
 import numpy as np
 import pytest
-from moirais.fn.sozin import sozin
+from morie.fn.sozin import sozin
 
 
 def test_sozin_basic():

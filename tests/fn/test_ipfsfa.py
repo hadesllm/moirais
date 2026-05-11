@@ -1,7 +1,7 @@
 """Tests for ipfsfa.ipopt_solver."""
 import numpy as np
 import pytest
-from moirais.fn.ipfsfa import ipopt_solver
+from morie.fn.ipfsfa import ipopt_solver
 
 
 def test_ipfsfa_basic():

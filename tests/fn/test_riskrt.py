@@ -1,7 +1,7 @@
 """Tests for riskrt.risk_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.riskrt import risk_ratio
+from morie.fn.riskrt import risk_ratio
 
 
 def test_riskrt_basic():

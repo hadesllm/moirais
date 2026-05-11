@@ -1,7 +1,7 @@
 """Tests for gb_kcp.gibbons_ks_conf_band."""
 import numpy as np
 import pytest
-from moirais.fn.gb_kcp import gibbons_ks_conf_band
+from morie.fn.gb_kcp import gibbons_ks_conf_band
 
 
 def test_gb_kcp_basic():

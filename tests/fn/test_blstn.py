@@ -1,7 +1,7 @@
 """Tests for blstn.blast_nucleotide."""
 import numpy as np
 import pytest
-from moirais.fn.blstn import blast_nucleotide
+from morie.fn.blstn import blast_nucleotide
 
 
 def test_blstn_basic():

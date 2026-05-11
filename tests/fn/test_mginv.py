@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mginv -- Moore-Penrose pseudoinverse."""
+"""Tests for morie.fn.mginv -- Moore-Penrose pseudoinverse."""
 
 import numpy as np
-from moirais.fn.mginv import pseudoinverse, mginv
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mginv import pseudoinverse, mginv
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMginv:

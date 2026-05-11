@@ -1,7 +1,7 @@
 """Tests for grstra.geron_stratified_split."""
 import numpy as np
 import pytest
-from moirais.fn.grstra import geron_stratified_split
+from morie.fn.grstra import geron_stratified_split
 
 
 def test_grstra_basic():

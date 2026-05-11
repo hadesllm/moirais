@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wht — Walsh-Hadamard Transform."""
+"""Tests for morie.fn.wht — Walsh-Hadamard Transform."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.wht import walsh_hadamard
+from morie.fn.wht import walsh_hadamard
 
 
 class TestWalshHadamard:

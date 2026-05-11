@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmalp -- Alpha-NOMINATE posterior"""
+"""Tests for morie.fn.nmalp -- Alpha-NOMINATE posterior"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmalp import alpha_nom_post
+from morie.fn.nmalp import alpha_nom_post
 
 
 class TestAlphaNomPost:

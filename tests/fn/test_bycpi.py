@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bycpi -- BayesCpi genomic prediction."""
+"""Tests for morie.fn.bycpi -- BayesCpi genomic prediction."""
 
 import numpy as np
 import pytest
-from moirais.fn.bycpi import bycpi
+from morie.fn.bycpi import bycpi
 
 
 def _sim(n=60, p=10, seed=42):

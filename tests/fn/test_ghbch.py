@@ -1,7 +1,7 @@
 """Test ghbch."""
 import numpy as np
 import pytest
-from moirais.fn.ghbch import ghbch
+from morie.fn.ghbch import ghbch
 
 
 def test_ghbch_basic():

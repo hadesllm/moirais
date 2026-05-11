@@ -1,7 +1,7 @@
 """Tests for ksr049.kosorok_ch2_z_master_linearization."""
 import numpy as np
 import pytest
-from moirais.fn.ksr049 import kosorok_ch2_z_master_linearization
+from morie.fn.ksr049 import kosorok_ch2_z_master_linearization
 
 
 def test_ksr049_basic():

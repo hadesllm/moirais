@@ -1,7 +1,7 @@
 """Tests for evangia.evt_angular_measure."""
 import numpy as np
 import pytest
-from moirais.fn.evangia import evt_angular_measure
+from morie.fn.evangia import evt_angular_measure
 
 
 def test_evangia_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgikp -- Indicator kriging probability"""
+"""Tests for morie.fn.kgikp -- Indicator kriging probability"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgikp import ik_probability
+from morie.fn.kgikp import ik_probability
 
 
 class TestIkProbability:

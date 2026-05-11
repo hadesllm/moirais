@@ -1,7 +1,7 @@
 """Test wqso4."""
 import numpy as np
 import pytest
-from moirais.fn.wqso4 import wqso4
+from morie.fn.wqso4 import wqso4
 
 
 def test_wqso4_basic():

@@ -1,7 +1,7 @@
 """Tests for tldepl.lower_tail_dependence."""
 import numpy as np
 import pytest
-from moirais.fn.tldepl import lower_tail_dependence
+from morie.fn.tldepl import lower_tail_dependence
 
 
 def test_tldepl_basic():

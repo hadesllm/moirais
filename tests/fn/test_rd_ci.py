@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rd_ci -- risk difference with confidence interval."""
+"""Tests for morie.fn.rd_ci -- risk difference with confidence interval."""
 
 import pytest
-from moirais.fn.rd_ci import risk_difference_ci
+from morie.fn.rd_ci import risk_difference_ci
 
 
 class TestRiskDifferenceCI:

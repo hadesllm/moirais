@@ -1,7 +1,7 @@
 """Tests for btciqua.boot_ci_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.btciqua import boot_ci_quantile
+from morie.fn.btciqua import boot_ci_quantile
 
 
 def test_btciqua_basic():

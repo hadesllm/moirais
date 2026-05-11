@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.cstre — custody readmission rate."""
+"""Tests for morie.fn.cstre — custody readmission rate."""
 
-from moirais.fn.cstre import custody_readmit
+from morie.fn.cstre import custody_readmit
 
 
 class TestCustodyReadmit:

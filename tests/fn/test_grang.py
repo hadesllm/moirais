@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.grang -- Granger causality."""
+"""Tests for morie.fn.grang -- Granger causality."""
 import numpy as np
 import pytest
-from moirais.fn.grang import granger_test
+from morie.fn.grang import granger_test
 
 
 class TestGranger:
@@ -17,5 +17,5 @@ class TestGranger:
             granger_test(np.ones(10), np.ones(15))
 
     def test_cheatsheet(self):
-        from moirais.fn.grang import cheatsheet
+        from morie.fn.grang import cheatsheet
         assert isinstance(cheatsheet(), str)

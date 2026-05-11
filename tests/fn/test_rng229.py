@@ -1,7 +1,7 @@
 """Tests for rng229.rangayyan_ch4_matched_filter_output_psd."""
 import numpy as np
 import pytest
-from moirais.fn.rng229 import rangayyan_ch4_matched_filter_output_psd
+from morie.fn.rng229 import rangayyan_ch4_matched_filter_output_psd
 
 
 def test_rng229_basic():

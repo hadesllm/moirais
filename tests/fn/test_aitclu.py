@@ -1,7 +1,7 @@
 """Tests for aitclu.compositional_kmeans."""
 import numpy as np
 import pytest
-from moirais.fn.aitclu import compositional_kmeans
+from morie.fn.aitclu import compositional_kmeans
 
 
 def test_aitclu_basic():

@@ -1,7 +1,7 @@
 """Tests for tmlrct.tmle_rct_assisted."""
 import numpy as np
 import pytest
-from moirais.fn.tmlrct import tmle_rct_assisted
+from morie.fn.tmlrct import tmle_rct_assisted
 
 
 def test_tmlrct_basic():

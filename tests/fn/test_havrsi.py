@@ -1,7 +1,7 @@
 """Test havrsi."""
 import numpy as np
 import pytest
-from moirais.fn.havrsi import havrsi
+from morie.fn.havrsi import havrsi
 
 
 def test_havrsi_basic():

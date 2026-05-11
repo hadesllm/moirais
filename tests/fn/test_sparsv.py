@@ -1,7 +1,7 @@
 """Tests for sparsv.sparse_vector."""
 import numpy as np
 import pytest
-from moirais.fn.sparsv import sparse_vector
+from morie.fn.sparsv import sparse_vector
 
 
 def test_sparsv_basic():

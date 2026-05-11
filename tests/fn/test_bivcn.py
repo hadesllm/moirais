@@ -1,7 +1,7 @@
 """Tests for bivcn.bivariate_causal_test."""
 import numpy as np
 import pytest
-from moirais.fn.bivcn import bivariate_causal_test
+from morie.fn.bivcn import bivariate_causal_test
 
 
 def test_bivcn_basic():

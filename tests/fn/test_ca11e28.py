@@ -1,7 +1,7 @@
 """Tests for ca11e28.ca_chapter_11_equation_28."""
 import numpy as np
 import pytest
-from moirais.fn.ca11e28 import ca_chapter_11_equation_28
+from morie.fn.ca11e28 import ca_chapter_11_equation_28
 
 
 def test_ca11e28_basic():

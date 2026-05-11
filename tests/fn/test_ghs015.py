@@ -1,7 +1,7 @@
 """Tests for ghs015.ghosal_ch3_dirichlet_posterior_var."""
 import numpy as np
 import pytest
-from moirais.fn.ghs015 import ghosal_ch3_dirichlet_posterior_var
+from morie.fn.ghs015 import ghosal_ch3_dirichlet_posterior_var
 
 
 def test_ghs015_basic():

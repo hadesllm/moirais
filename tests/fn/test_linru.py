@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.linru — linear utility."""
-from moirais.fn.linru import linru
+"""Tests for morie.fn.linru — linear utility."""
+from morie.fn.linru import linru
 
 
 def test_linru_smoke():

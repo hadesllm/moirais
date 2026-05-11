@@ -1,7 +1,7 @@
 """Test maph."""
 import numpy as np
 import pytest
-from moirais.fn.maph import maph
+from morie.fn.maph import maph
 
 
 def test_maph_basic():

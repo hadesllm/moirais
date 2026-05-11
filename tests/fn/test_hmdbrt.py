@@ -1,7 +1,7 @@
 """Tests for hmdbrt.geron_distilbert."""
 import numpy as np
 import pytest
-from moirais.fn.hmdbrt import geron_distilbert
+from morie.fn.hmdbrt import geron_distilbert
 
 
 def test_hmdbrt_basic():

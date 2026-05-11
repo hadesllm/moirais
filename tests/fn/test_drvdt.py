@@ -1,7 +1,7 @@
 """Test derivative_detect."""
 import numpy as np
-from moirais.fn.drvdt import derivative_detect, alias
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.drvdt import derivative_detect, alias
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDerivativeDetect:

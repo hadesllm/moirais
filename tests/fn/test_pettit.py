@@ -1,7 +1,7 @@
 """Tests for pettit.pettitt_test."""
 import numpy as np
 import pytest
-from moirais.fn.pettit import pettitt_test
+from morie.fn.pettit import pettitt_test
 
 
 def test_pettit_basic():

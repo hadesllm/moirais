@@ -1,7 +1,7 @@
 """Tests for grfim.geron_feature_importance_mdi."""
 import numpy as np
 import pytest
-from moirais.fn.grfim import geron_feature_importance_mdi
+from morie.fn.grfim import geron_feature_importance_mdi
 
 
 def test_grfim_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bp_ts — Bai-Perron structural break test."""
+"""Tests for morie.fn.bp_ts — Bai-Perron structural break test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bp_ts import bp_ts
+from morie.fn.bp_ts import bp_ts
 
 
 class TestBpTs:

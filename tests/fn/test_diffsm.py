@@ -1,7 +1,7 @@
 """Tests for diffsm.diffusion_score_matching."""
 import numpy as np
 import pytest
-from moirais.fn.diffsm import diffusion_score_matching
+from morie.fn.diffsm import diffusion_score_matching
 
 
 def test_diffsm_basic():

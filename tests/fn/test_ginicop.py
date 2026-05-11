@@ -1,7 +1,7 @@
 """Tests for ginicop.ginis_gamma_copula."""
 import numpy as np
 import pytest
-from moirais.fn.ginicop import ginis_gamma_copula
+from morie.fn.ginicop import ginis_gamma_copula
 
 
 def test_ginicop_basic():

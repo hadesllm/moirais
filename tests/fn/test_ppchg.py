@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ppchg."""
+"""Tests for morie.fn.ppchg."""
 
 import numpy as np
 import pytest
-from moirais.fn.ppchg import ppchg
+from morie.fn.ppchg import ppchg
 
 
 class TestPpchg:

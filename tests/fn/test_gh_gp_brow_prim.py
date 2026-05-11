@@ -1,7 +1,7 @@
 """Tests for gh_gp_brow_prim.ghosal_gp_brownian_primitive."""
 import numpy as np
 import pytest
-from moirais.fn.gh_gp_brow_prim import ghosal_gp_brownian_primitive
+from morie.fn.gh_gp_brow_prim import ghosal_gp_brownian_primitive
 
 
 def test_gh_gp_brow_prim_basic():

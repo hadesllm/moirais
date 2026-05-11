@@ -1,7 +1,7 @@
 """Tests for nrmprc.normalized_inverse_gauss."""
 import numpy as np
 import pytest
-from moirais.fn.nrmprc import normalized_inverse_gauss
+from morie.fn.nrmprc import normalized_inverse_gauss
 
 
 def test_nrmprc_basic():

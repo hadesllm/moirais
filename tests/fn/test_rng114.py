@@ -1,7 +1,7 @@
 """Tests for rng114.rangayyan_ch3_first_difference_magnitude."""
 import numpy as np
 import pytest
-from moirais.fn.rng114 import rangayyan_ch3_first_difference_magnitude
+from morie.fn.rng114 import rangayyan_ch3_first_difference_magnitude
 
 
 def test_rng114_basic():

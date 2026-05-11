@@ -1,7 +1,7 @@
 """Tests for hrzctrl.horowitz_control_function."""
 import numpy as np
 import pytest
-from moirais.fn.hrzctrl import horowitz_control_function
+from morie.fn.hrzctrl import horowitz_control_function
 
 
 def test_hrzctrl_basic():

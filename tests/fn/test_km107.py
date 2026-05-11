@@ -1,7 +1,7 @@
 """Tests for km107.kamath_ch6_pii_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.km107 import kamath_ch6_pii_likelihood
+from morie.fn.km107 import kamath_ch6_pii_likelihood
 
 
 def test_km107_basic():

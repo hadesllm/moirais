@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.tajd -- Tajima's D."""
+"""Tests for morie.fn.tajd -- Tajima's D."""
 
 import pytest
-from moirais.fn.tajd import tajimas_d
+from morie.fn.tajd import tajimas_d
 
 
 class TestTajimasD:

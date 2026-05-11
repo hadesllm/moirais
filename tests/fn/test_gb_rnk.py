@@ -1,7 +1,7 @@
 """Tests for gb_rnk.gibbons_rank_def."""
 import numpy as np
 import pytest
-from moirais.fn.gb_rnk import gibbons_rank_def
+from morie.fn.gb_rnk import gibbons_rank_def
 
 
 def test_gb_rnk_basic():

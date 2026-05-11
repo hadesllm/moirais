@@ -1,9 +1,9 @@
-"""Tests for moirais.kv_cache — TurboQuant-compressed KV cache."""
+"""Tests for morie.kv_cache — TurboQuant-compressed KV cache."""
 
 import numpy as np
 import pytest
 
-from moirais.kv_cache import CacheStats, TurboQuantKVCache, UncompressedKVCache
+from morie.kv_cache import CacheStats, TurboQuantKVCache, UncompressedKVCache
 
 
 RNG = np.random.default_rng(42)

@@ -1,7 +1,7 @@
 """Tests for bert4r.bert4rec."""
 import numpy as np
 import pytest
-from moirais.fn.bert4r import bert4rec
+from morie.fn.bert4r import bert4rec
 
 
 def test_bert4r_basic():

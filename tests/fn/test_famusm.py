@@ -1,7 +1,7 @@
 """Tests for famusm.family_based_assoc."""
 import numpy as np
 import pytest
-from moirais.fn.famusm import family_based_assoc
+from morie.fn.famusm import family_based_assoc
 
 
 def test_famusm_basic():

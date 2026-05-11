@@ -1,7 +1,7 @@
 """Tests for xdeep.xdeepfm."""
 import numpy as np
 import pytest
-from moirais.fn.xdeep import xdeepfm
+from morie.fn.xdeep import xdeepfm
 
 
 def test_xdeep_basic():

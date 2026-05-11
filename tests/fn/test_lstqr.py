@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.lstqr -- Least squares via QR."""
+"""Tests for morie.fn.lstqr -- Least squares via QR."""
 
 import numpy as np
-from moirais.fn.lstqr import lstsq_qr, lstqr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lstqr import lstsq_qr, lstqr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLstqr:

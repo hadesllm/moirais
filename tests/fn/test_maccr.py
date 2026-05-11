@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.maccr — multi-class precision."""
+"""Tests for morie.fn.maccr — multi-class precision."""
 import numpy as np
 import pytest
-from moirais.fn.maccr import multiclass_precision, maccr
+from morie.fn.maccr import multiclass_precision, maccr
 
 
 def test_perfect_macro():

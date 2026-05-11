@@ -1,7 +1,7 @@
 """Tests for spmds.schabenberger_multidim_scaling."""
 import numpy as np
 import pytest
-from moirais.fn.spmds import schabenberger_multidim_scaling
+from morie.fn.spmds import schabenberger_multidim_scaling
 
 
 def test_spmds_basic():

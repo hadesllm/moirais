@@ -1,7 +1,7 @@
 """Tests for apre.oc_apre."""
 import numpy as np
 import pytest
-from moirais.fn.apre import oc_apre
+from morie.fn.apre import oc_apre
 
 
 def test_apre_basic():

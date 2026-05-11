@@ -1,7 +1,7 @@
 """Test gdgin."""
 import numpy as np
 import pytest
-from moirais.fn.gdgin import gdgin
+from morie.fn.gdgin import gdgin
 
 
 def test_gdgin_basic():

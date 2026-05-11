@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svmvt -- Median voter theorem test"""
+"""Tests for morie.fn.svmvt -- Median voter theorem test"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svmvt import median_voter
+from morie.fn.svmvt import median_voter
 
 
 class TestMedianVoter:

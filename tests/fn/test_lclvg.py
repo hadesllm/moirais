@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lclvg — Local variogram estimation."""
+"""Tests for morie.fn.lclvg — Local variogram estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lclvg import lclvg
+from morie.fn.lclvg import lclvg
 
 
 class TestLclvg:

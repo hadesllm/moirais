@@ -1,7 +1,7 @@
 """Tests for use_r8e5.use_r_chapter_8_equation_5."""
 import numpy as np
 import pytest
-from moirais.fn.use_r8e5 import use_r_chapter_8_equation_5
+from morie.fn.use_r8e5 import use_r_chapter_8_equation_5
 
 
 def test_use_r8e5_basic():

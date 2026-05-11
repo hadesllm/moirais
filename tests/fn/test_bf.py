@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bf -- Brown-Forsythe test for equality of variances."""
+"""Tests for morie.fn.bf -- Brown-Forsythe test for equality of variances."""
 
 import numpy as np
 import pytest
-from moirais.fn.bf import brown_forsythe, bf
-from moirais.fn._containers import TestResult
+from morie.fn.bf import brown_forsythe, bf
+from morie.fn._containers import TestResult
 
 
 class TestBF:

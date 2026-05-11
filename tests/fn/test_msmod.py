@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.msmod — Marginal structural model."""
+"""Tests for morie.fn.msmod — Marginal structural model."""
 import numpy as np
 import pytest
-from moirais.fn.msmod import msmod
+from morie.fn.msmod import msmod
 
 
 @pytest.fixture()
@@ -52,5 +52,5 @@ def test_ci_valid(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.msmod import cheatsheet
+    from morie.fn.msmod import cheatsheet
     assert len(cheatsheet()) > 0

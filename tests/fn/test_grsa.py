@@ -1,7 +1,7 @@
 """Tests for grsa.geron_self_attention."""
 import numpy as np
 import pytest
-from moirais.fn.grsa import geron_self_attention
+from morie.fn.grsa import geron_self_attention
 
 
 def test_grsa_basic():

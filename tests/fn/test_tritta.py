@@ -1,7 +1,7 @@
 """Tests for tritta.alphafold_triangle_attn."""
 import numpy as np
 import pytest
-from moirais.fn.tritta import alphafold_triangle_attn
+from morie.fn.tritta import alphafold_triangle_attn
 
 
 def test_tritta_basic():

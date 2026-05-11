@@ -1,7 +1,7 @@
 """Tests for crrcim.cumulative_incidence."""
 import numpy as np
 import pytest
-from moirais.fn.crrcim import cumulative_incidence
+from morie.fn.crrcim import cumulative_incidence
 
 
 def test_crrcim_basic():

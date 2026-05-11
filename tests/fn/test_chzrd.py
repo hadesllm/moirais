@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.chzrd -- Cause-specific hazard ratio."""
+"""Tests for morie.fn.chzrd -- Cause-specific hazard ratio."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.chzrd import chzrd
+from morie.fn.chzrd import chzrd
 
 
 @pytest.fixture()
@@ -37,5 +37,5 @@ def test_hr_positive(cr_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.chzrd import cheatsheet
+    from morie.fn.chzrd import cheatsheet
     assert "cause" in cheatsheet().lower()

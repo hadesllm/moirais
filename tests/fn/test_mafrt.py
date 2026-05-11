@@ -1,7 +1,7 @@
 """Tests for mafrt.ma_freeman_tukey."""
 import numpy as np
 import pytest
-from moirais.fn.mafrt import ma_freeman_tukey
+from morie.fn.mafrt import ma_freeman_tukey
 
 
 def test_mafrt_basic():

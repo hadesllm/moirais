@@ -1,7 +1,7 @@
 """Test aggrn."""
 import numpy as np
 import pytest
-from moirais.fn.aggrn import aggrn
+from morie.fn.aggrn import aggrn
 
 
 def test_aggrn_basic():

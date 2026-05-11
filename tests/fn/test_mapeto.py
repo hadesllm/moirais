@@ -1,7 +1,7 @@
 """Tests for mapeto.ma_peto_or."""
 import numpy as np
 import pytest
-from moirais.fn.mapeto import ma_peto_or
+from morie.fn.mapeto import ma_peto_or
 
 
 def test_mapeto_basic():

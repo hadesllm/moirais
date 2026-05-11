@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.nnsls -- Non-negative least squares."""
+"""Tests for morie.fn.nnsls -- Non-negative least squares."""
 
 import numpy as np
-from moirais.fn.nnsls import nnls, nnsls
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nnsls import nnls, nnsls
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNnsls:

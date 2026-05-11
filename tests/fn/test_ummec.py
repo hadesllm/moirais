@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ummec."""
+"""Tests for morie.fn.ummec."""
 
 import numpy as np
 import pytest
-from moirais.fn.ummec import ummec
+from morie.fn.ummec import ummec
 
 
 class TestUmmec:

@@ -1,7 +1,7 @@
 """Tests for spkce.schabenberger_cov_param_estimation_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.spkce import schabenberger_cov_param_estimation_kriging
+from morie.fn.spkce import schabenberger_cov_param_estimation_kriging
 
 
 def test_spkce_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxcpc -- Clayton copula spatial"""
+"""Tests for morie.fn.zxcpc -- Clayton copula spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxcpc import copula_clayton_sp
+from morie.fn.zxcpc import copula_clayton_sp
 
 
 class TestCopulaClaytonSp:

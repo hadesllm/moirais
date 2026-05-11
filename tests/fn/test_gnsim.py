@@ -1,7 +1,7 @@
 """Test gnsim."""
 import numpy as np
 import pytest
-from moirais.fn.gnsim import gnsim
+from morie.fn.gnsim import gnsim
 
 
 def test_gnsim_basic():

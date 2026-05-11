@@ -1,7 +1,7 @@
 """Tests for siprob."""
 import numpy as np
 import pytest
-from moirais.fn.siprob import siprob
+from morie.fn.siprob import siprob
 
 
 def test_siprob_basic():
@@ -27,5 +27,5 @@ def test_siprob_no_data():
 
 
 def test_siprob_alias():
-    from moirais.fn.siprob import siprob
+    from morie.fn.siprob import siprob
     assert siprob is siprob

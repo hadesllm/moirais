@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scsum — sum score."""
+"""Tests for morie.fn.scsum — sum score."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.scsum import score_sum
+from morie.fn.scsum import score_sum
 
 
 class TestScoreSum:

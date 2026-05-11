@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sbnsh."""
+"""Tests for morie.fn.sbnsh."""
 
 import numpy as np
 import pytest
-from moirais.fn.sbnsh import sbnsh
+from morie.fn.sbnsh import sbnsh
 
 
 class TestSbnsh:

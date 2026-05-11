@@ -1,7 +1,7 @@
 """Tests for rng151.rangayyan_ch3_wiener_optimal_for_noise_removal."""
 import numpy as np
 import pytest
-from moirais.fn.rng151 import rangayyan_ch3_wiener_optimal_for_noise_removal
+from morie.fn.rng151 import rangayyan_ch3_wiener_optimal_for_noise_removal
 
 
 def test_rng151_basic():

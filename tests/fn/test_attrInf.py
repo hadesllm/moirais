@@ -1,7 +1,7 @@
 """Tests for attrInf.attribute_inference."""
 import numpy as np
 import pytest
-from moirais.fn.attrInf import attribute_inference
+from morie.fn.attrInf import attribute_inference
 
 
 def test_attrInf_basic():

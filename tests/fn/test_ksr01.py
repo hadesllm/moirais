@@ -1,7 +1,7 @@
 """Tests for ksr01.kosorok_empirical_process."""
 import numpy as np
 import pytest
-from moirais.fn.ksr01 import kosorok_empirical_process
+from morie.fn.ksr01 import kosorok_empirical_process
 
 
 def test_ksr01_basic():

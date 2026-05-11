@@ -1,7 +1,7 @@
 """Tests for stsmm."""
 import numpy as np
 import pytest
-from moirais.fn.stsmm import stsmm
+from morie.fn.stsmm import stsmm
 
 
 def test_stsmm_basic():
@@ -27,5 +27,5 @@ def test_stsmm_no_data():
 
 
 def test_stsmm_alias():
-    from moirais.fn.stsmm import stsmm
+    from morie.fn.stsmm import stsmm
     assert stsmm is stsmm

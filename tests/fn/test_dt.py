@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dt — Student's t PDF."""
+"""Tests for morie.fn.dt — Student's t PDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dt import dt
+from morie.fn.dt import dt
 
 
 class TestDt:

@@ -1,7 +1,7 @@
 """Tests for gbtcom.goodman_bacon_3way."""
 import numpy as np
 import pytest
-from moirais.fn.gbtcom import goodman_bacon_3way
+from morie.fn.gbtcom import goodman_bacon_3way
 
 
 def test_gbtcom_basic():

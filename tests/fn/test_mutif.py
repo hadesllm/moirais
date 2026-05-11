@@ -1,7 +1,7 @@
 """Tests for mutual_information."""
 import numpy as np
 import pytest
-from moirais.fn.mutif import mutual_information, mutif
+from morie.fn.mutif import mutual_information, mutif
 
 
 def test_independent():

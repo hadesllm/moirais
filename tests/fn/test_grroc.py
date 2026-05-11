@@ -1,7 +1,7 @@
 """Tests for grroc.geron_roc_curve."""
 import numpy as np
 import pytest
-from moirais.fn.grroc import geron_roc_curve
+from morie.fn.grroc import geron_roc_curve
 
 
 def test_grroc_basic():

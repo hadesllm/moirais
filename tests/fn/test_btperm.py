@@ -1,7 +1,7 @@
 """Tests for btperm.boot_permutation_test."""
 import numpy as np
 import pytest
-from moirais.fn.btperm import boot_permutation_test
+from morie.fn.btperm import boot_permutation_test
 
 
 def test_btperm_basic():

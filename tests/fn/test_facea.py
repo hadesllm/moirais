@@ -1,7 +1,7 @@
 """Tests for facea.face_smooth."""
 import numpy as np
 import pytest
-from moirais.fn.facea import face_smooth
+from morie.fn.facea import face_smooth
 
 
 def test_facea_basic():

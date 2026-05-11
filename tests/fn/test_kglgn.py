@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kglgn -- Lognormal kriging"""
+"""Tests for morie.fn.kglgn -- Lognormal kriging"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kglgn import lognormal_kriging
+from morie.fn.kglgn import lognormal_kriging
 
 
 class TestLognormalKriging:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.siurcm — SIU recommendation."""
+"""Tests for morie.fn.siurcm — SIU recommendation."""
 
 import pytest
-from moirais.fn.siurcm import siu_recommendation
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.siurcm import siu_recommendation
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSiuRecommendation:

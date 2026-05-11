@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.kmoid -- K-medoids (PAM)."""
+"""Tests for morie.fn.kmoid -- K-medoids (PAM)."""
 
 import numpy as np
-from moirais.fn.kmoid import kmedoids, kmoid
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.kmoid import kmedoids, kmoid
+from morie.fn._containers import DescriptiveResult
 
 
 class TestKmedoids:

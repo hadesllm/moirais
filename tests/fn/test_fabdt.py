@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.fabdt import fabdt
+from morie.fn.fabdt import fabdt
 
 
 class TestFabdt:

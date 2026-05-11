@@ -1,7 +1,7 @@
 """Tests for hmigr.geron_information_gain."""
 import numpy as np
 import pytest
-from moirais.fn.hmigr import geron_information_gain
+from morie.fn.hmigr import geron_information_gain
 
 
 def test_hmigr_basic():

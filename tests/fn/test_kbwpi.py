@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kbwpi — Sheather-Jones plug-in bandwidth."""
+"""Tests for morie.fn.kbwpi — Sheather-Jones plug-in bandwidth."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kbwpi import kbwpi
+from morie.fn.kbwpi import kbwpi
 
 
 class TestKbwpi:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.plest — profile likelihood estimation."""
+"""Tests for morie.fn.plest — profile likelihood estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.plest import plest
+from morie.fn.plest import plest
 
 
 def test_normal_mean():

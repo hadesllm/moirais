@@ -1,7 +1,7 @@
 """Test clkmd."""
 import numpy as np
 import pytest
-from moirais.fn.clkmd import clkmd
+from morie.fn.clkmd import clkmd
 
 
 def test_clkmd_basic():

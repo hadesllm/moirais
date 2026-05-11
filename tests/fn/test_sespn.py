@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sespn -- Simple exponential smoothing."""
+"""Tests for morie.fn.sespn -- Simple exponential smoothing."""
 import numpy as np
 import pytest
-from moirais.fn.sespn import ses
+from morie.fn.sespn import ses
 
 
 class TestSES:
@@ -16,5 +16,5 @@ class TestSES:
             ses(np.ones(10), alpha=1.5)
 
     def test_cheatsheet(self):
-        from moirais.fn.sespn import cheatsheet
+        from morie.fn.sespn import cheatsheet
         assert isinstance(cheatsheet(), str)

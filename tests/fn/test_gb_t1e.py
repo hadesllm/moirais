@@ -1,7 +1,7 @@
 """Tests for gb_t1e.gibbons_type1_error."""
 import numpy as np
 import pytest
-from moirais.fn.gb_t1e import gibbons_type1_error
+from morie.fn.gb_t1e import gibbons_type1_error
 
 
 def test_gb_t1e_basic():

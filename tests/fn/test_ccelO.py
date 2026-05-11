@@ -1,7 +1,7 @@
 """Tests for ccelO.categorical_crossentropy_loss."""
 import numpy as np
 import pytest
-from moirais.fn.ccelO import categorical_crossentropy_loss
+from morie.fn.ccelO import categorical_crossentropy_loss
 
 
 def test_ccelO_basic():

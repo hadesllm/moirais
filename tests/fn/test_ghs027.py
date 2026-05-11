@@ -1,7 +1,7 @@
 """Tests for ghs027.ghosal_ch3_tailfree_strong_support_event."""
 import numpy as np
 import pytest
-from moirais.fn.ghs027 import ghosal_ch3_tailfree_strong_support_event
+from morie.fn.ghs027 import ghosal_ch3_tailfree_strong_support_event
 
 
 def test_ghs027_basic():

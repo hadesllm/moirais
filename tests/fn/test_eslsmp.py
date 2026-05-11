@@ -1,7 +1,7 @@
 """Tests for eslsmp.esl_subsampling."""
 import numpy as np
 import pytest
-from moirais.fn.eslsmp import esl_subsampling
+from morie.fn.eslsmp import esl_subsampling
 
 
 def test_eslsmp_basic():

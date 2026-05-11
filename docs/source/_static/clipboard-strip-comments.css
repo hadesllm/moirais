@@ -5,7 +5,7 @@
  * can paste shell + Python snippets without choking on annotations).
  *
  * Design follows the same amber/cream palette as the docs hub strip
- * so the affordance reads as part of MOIRAIS, not a generic Sphinx
+ * so the affordance reads as part of MORIE, not a generic Sphinx
  * widget.  No JS framework, no extra fonts. */
 
 div.highlight, pre.literal-block {

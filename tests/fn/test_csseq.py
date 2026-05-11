@@ -1,7 +1,7 @@
 """Test csseq."""
 import numpy as np
 import pytest
-from moirais.fn.csseq import csseq
+from morie.fn.csseq import csseq
 
 
 def test_csseq_basic():

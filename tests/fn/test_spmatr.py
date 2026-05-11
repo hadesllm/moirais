@@ -1,7 +1,7 @@
 """Tests for spmatr.schabenberger_matern_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.spmatr import schabenberger_matern_covariance
+from morie.fn.spmatr import schabenberger_matern_covariance
 
 
 def test_spmatr_basic():

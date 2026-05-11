@@ -1,7 +1,7 @@
 """Tests for mdspl.mds_spatial_map."""
 import numpy as np
 import pytest
-from moirais.fn.mdspl import mds_spatial_map
+from morie.fn.mdspl import mds_spatial_map
 
 
 def test_mdspl_basic():

@@ -1,7 +1,7 @@
 """Tests for volrls.vol_recursive_least_sq."""
 import numpy as np
 import pytest
-from moirais.fn.volrls import vol_recursive_least_sq
+from morie.fn.volrls import vol_recursive_least_sq
 
 
 def test_volrls_basic():

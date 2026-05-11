@@ -1,7 +1,7 @@
 """Test sawis."""
 import numpy as np
 import pytest
-from moirais.fn.sawis import sawis
+from morie.fn.sawis import sawis
 
 
 def test_sawis_basic():

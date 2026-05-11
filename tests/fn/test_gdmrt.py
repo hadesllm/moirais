@@ -1,7 +1,7 @@
 """Test gdmrt."""
 import numpy as np
 import pytest
-from moirais.fn.gdmrt import gdmrt
+from morie.fn.gdmrt import gdmrt
 
 
 def test_gdmrt_basic():

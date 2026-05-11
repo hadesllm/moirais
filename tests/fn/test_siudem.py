@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.siudem — SIU demographics."""
+"""Tests for morie.fn.siudem — SIU demographics."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.siudem import siu_demographics
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.siudem import siu_demographics
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSiuDemographics:

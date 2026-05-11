@@ -1,7 +1,7 @@
 """Test samoe."""
 import numpy as np
 import pytest
-from moirais.fn.samoe import samoe
+from morie.fn.samoe import samoe
 
 
 def test_samoe_basic():

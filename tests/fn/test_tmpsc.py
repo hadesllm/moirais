@@ -1,7 +1,7 @@
 """Tests for tmpsc.temperature_scaling."""
 import numpy as np
 import pytest
-from moirais.fn.tmpsc import temperature_scaling
+from morie.fn.tmpsc import temperature_scaling
 
 
 def test_tmpsc_basic():

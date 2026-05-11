@@ -1,7 +1,7 @@
 """Tests for gh_inf_dim_cr.ghosal_inf_dim_credible."""
 import numpy as np
 import pytest
-from moirais.fn.gh_inf_dim_cr import ghosal_inf_dim_credible
+from morie.fn.gh_inf_dim_cr import ghosal_inf_dim_credible
 
 
 def test_gh_inf_dim_cr_basic():

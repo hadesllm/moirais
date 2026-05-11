@@ -1,7 +1,7 @@
 """Tests for kchnls.k_l_divergence_chain."""
 import numpy as np
 import pytest
-from moirais.fn.kchnls import k_l_divergence_chain
+from morie.fn.kchnls import k_l_divergence_chain
 
 
 def test_kchnls_basic():

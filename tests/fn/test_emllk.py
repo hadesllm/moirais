@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.emllk -- EM log-likelihood."""
+"""Tests for morie.fn.emllk -- EM log-likelihood."""
 import numpy as np
-from moirais.fn.emllk import em_log_likelihood, emllk
+from morie.fn.emllk import em_log_likelihood, emllk
 
 
 def test_alias():

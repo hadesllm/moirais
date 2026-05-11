@@ -1,7 +1,7 @@
 """Tests for euclP.polynomial_gcd."""
 import numpy as np
 import pytest
-from moirais.fn.euclP import polynomial_gcd
+from morie.fn.euclP import polynomial_gcd
 
 
 def test_euclP_basic():

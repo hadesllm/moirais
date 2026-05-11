@@ -1,7 +1,7 @@
 """Tests for rgwhann.rangayyan_hann_window."""
 import numpy as np
 import pytest
-from moirais.fn.rgwhann import rangayyan_hann_window
+from morie.fn.rgwhann import rangayyan_hann_window
 
 
 def test_rgwhann_basic():

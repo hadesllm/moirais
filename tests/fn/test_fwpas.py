@@ -1,7 +1,7 @@
 """Tests for fwpas.forward_pass_dense."""
 import numpy as np
 import pytest
-from moirais.fn.fwpas import forward_pass_dense
+from morie.fn.fwpas import forward_pass_dense
 
 
 def test_fwpas_basic():

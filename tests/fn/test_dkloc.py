@@ -1,7 +1,7 @@
 """Test dkloc."""
 import numpy as np
 import pytest
-from moirais.fn.dkloc import dkloc
+from morie.fn.dkloc import dkloc
 
 
 def test_dkloc_basic():

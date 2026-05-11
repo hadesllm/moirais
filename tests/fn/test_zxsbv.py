@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsbv -- Spatial block cross-validation"""
+"""Tests for morie.fn.zxsbv -- Spatial block cross-validation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsbv import spatial_cv_block
+from morie.fn.zxsbv import spatial_cv_block
 
 
 class TestSpatialCvBlock:

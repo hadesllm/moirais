@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.te_ana — treatment effects analysis (ATE/ATT/ATC/CATE)."""
+"""Tests for morie.fn.te_ana — treatment effects analysis (ATE/ATT/ATC/CATE)."""
 
 import math
 
@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.te_ana import run_treatment_effects_analysis
+from morie.fn.te_ana import run_treatment_effects_analysis
 
 
 def _make_cpads_frame(rng, n=200):

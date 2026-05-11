@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hotsp -- Hot-spot analysis."""
+"""Tests for morie.fn.hotsp -- Hot-spot analysis."""
 
 import numpy as np
-from moirais.fn.hotsp import hot_spots, hotsp
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hotsp import hot_spots, hotsp
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHotsp:

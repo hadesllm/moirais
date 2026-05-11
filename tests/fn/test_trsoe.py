@@ -1,7 +1,7 @@
 """Test trsoe."""
 import numpy as np
 import pytest
-from moirais.fn.trsoe import trsoe
+from morie.fn.trsoe import trsoe
 
 
 def test_trsoe_basic():

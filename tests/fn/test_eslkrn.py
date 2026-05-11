@@ -1,7 +1,7 @@
 """Tests for eslkrn.esl_kernel_density."""
 import numpy as np
 import pytest
-from moirais.fn.eslkrn import esl_kernel_density
+from morie.fn.eslkrn import esl_kernel_density
 
 
 def test_eslkrn_basic():

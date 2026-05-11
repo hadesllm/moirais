@@ -1,7 +1,7 @@
 """Tests for grdqnl.geron_dqn_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grdqnl import geron_dqn_loss
+from morie.fn.grdqnl import geron_dqn_loss
 
 
 def test_grdqnl_basic():

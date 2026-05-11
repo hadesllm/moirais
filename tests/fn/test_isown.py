@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.isown."""
+"""Tests for morie.fn.isown."""
 
 import numpy as np
 import pytest
-from moirais.fn.isown import isown
+from morie.fn.isown import isown
 
 
 class TestIsown:

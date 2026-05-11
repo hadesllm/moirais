@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scdly -- Surveillance case delay."""
+"""Tests for morie.fn.scdly -- Surveillance case delay."""
 
 import pytest
 import numpy as np
-from moirais.fn.scdly import case_delay
+from morie.fn.scdly import case_delay
 
 
 class TestCaseDelay:

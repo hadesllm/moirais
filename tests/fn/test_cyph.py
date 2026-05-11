@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cyph -- data leakage detection."""
+"""Tests for morie.fn.cyph -- data leakage detection."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.cyph import detect_leakage, cyph
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cyph import detect_leakage, cyph
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCyph:

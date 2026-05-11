@@ -1,7 +1,7 @@
 """Tests for gradaw.geron_adaboost_weight_update."""
 import numpy as np
 import pytest
-from moirais.fn.gradaw import geron_adaboost_weight_update
+from morie.fn.gradaw import geron_adaboost_weight_update
 
 
 def test_gradaw_basic():

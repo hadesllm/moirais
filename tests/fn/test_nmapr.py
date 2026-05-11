@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmapr -- Aggregate PRE"""
+"""Tests for morie.fn.nmapr -- Aggregate PRE"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmapr import apre_stat
+from morie.fn.nmapr import apre_stat
 
 
 class TestApreStat:

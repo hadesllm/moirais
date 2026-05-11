@@ -1,7 +1,7 @@
 """Tests for jzdiff.jenson_zhang_disparity."""
 import numpy as np
 import pytest
-from moirais.fn.jzdiff import jenson_zhang_disparity
+from morie.fn.jzdiff import jenson_zhang_disparity
 
 
 def test_jzdiff_basic():

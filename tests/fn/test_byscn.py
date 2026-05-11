@@ -1,7 +1,7 @@
 """Tests for byscn.bayes_cpi_prior."""
 import numpy as np
 import pytest
-from moirais.fn.byscn import bayes_cpi_prior
+from morie.fn.byscn import bayes_cpi_prior
 
 
 def test_byscn_basic():

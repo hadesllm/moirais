@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.cstsg — custody segregation."""
+"""Tests for morie.fn.cstsg — custody segregation."""
 
-from moirais.fn.cstsg import custody_segregation
+from morie.fn.cstsg import custody_segregation
 
 
 class TestCustodySegregation:

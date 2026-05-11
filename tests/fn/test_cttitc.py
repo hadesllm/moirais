@@ -1,7 +1,7 @@
 """Tests for cttitc.ctt_item_total_corr."""
 import numpy as np
 import pytest
-from moirais.fn.cttitc import ctt_item_total_corr
+from morie.fn.cttitc import ctt_item_total_corr
 
 
 def test_cttitc_basic():

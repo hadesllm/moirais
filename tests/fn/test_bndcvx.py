@@ -1,7 +1,7 @@
 """Tests for bndcvx.bound_convex_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.bndcvx import bound_convex_estimator
+from morie.fn.bndcvx import bound_convex_estimator
 
 
 def test_bndcvx_basic():

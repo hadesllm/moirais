@@ -1,7 +1,7 @@
 """Tests for breakd.breakdown_point."""
 import numpy as np
 import pytest
-from moirais.fn.breakd import breakdown_point
+from morie.fn.breakd import breakdown_point
 
 
 def test_breakd_basic():

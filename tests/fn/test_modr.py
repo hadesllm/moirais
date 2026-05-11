@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.modr — moderation analysis."""
+"""Tests for morie.fn.modr — moderation analysis."""
 import numpy as np
 import pytest
-from moirais.fn.modr import moderation_analysis
+from morie.fn.modr import moderation_analysis
 
 
 class TestModerationAnalysis:

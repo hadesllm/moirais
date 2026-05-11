@@ -1,6 +1,6 @@
 """Tests for temperature schedule."""
 import numpy as np
-from moirais.fn.sgtmp import sgtmp
+from morie.fn.sgtmp import sgtmp
 
 
 def test_sgtmp_smoke():

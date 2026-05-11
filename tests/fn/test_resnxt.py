@@ -1,7 +1,7 @@
 """Tests for resnxt.resnext_block."""
 import numpy as np
 import pytest
-from moirais.fn.resnxt import resnext_block
+from morie.fn.resnxt import resnext_block
 
 
 def test_resnxt_basic():

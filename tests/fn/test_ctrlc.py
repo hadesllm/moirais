@@ -1,7 +1,7 @@
 """Tests for ctrlc.control_comparison."""
 import numpy as np
 import pytest
-from moirais.fn.ctrlc import control_comparison
+from morie.fn.ctrlc import control_comparison
 
 
 def test_ctrlc_basic():

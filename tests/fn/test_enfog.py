@@ -1,7 +1,7 @@
 """Test enfog."""
 import numpy as np
 import pytest
-from moirais.fn.enfog import enfog
+from morie.fn.enfog import enfog
 
 
 def test_enfog_basic():

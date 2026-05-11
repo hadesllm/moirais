@@ -1,7 +1,7 @@
 """Tests for drctf.dr_continuous_treatment."""
 import numpy as np
 import pytest
-from moirais.fn.drctf import dr_continuous_treatment
+from morie.fn.drctf import dr_continuous_treatment
 
 
 def test_drctf_basic():

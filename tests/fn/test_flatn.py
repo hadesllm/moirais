@@ -1,6 +1,6 @@
 """Test flatten layer."""
 import numpy as np
-from moirais.fn.flatn import flatn
+from morie.fn.flatn import flatn
 
 
 def test_flatn_basic():

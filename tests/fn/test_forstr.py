@@ -1,7 +1,7 @@
 """Test forstr."""
 import numpy as np
 import pytest
-from moirais.fn.forstr import forstr
+from morie.fn.forstr import forstr
 
 
 def test_forstr_basic():

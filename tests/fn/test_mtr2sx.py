@@ -1,7 +1,7 @@
 """Tests for mtr2sx.sex_specific_mr."""
 import numpy as np
 import pytest
-from moirais.fn.mtr2sx import sex_specific_mr
+from morie.fn.mtr2sx import sex_specific_mr
 
 
 def test_mtr2sx_basic():

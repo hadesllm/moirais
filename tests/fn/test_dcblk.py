@@ -1,7 +1,7 @@
 """Tests for dcblk -- DC blocker."""
 import numpy as np
-from moirais.fn.dcblk import dcblk
-from moirais.fn._containers import SignalResult
+from morie.fn.dcblk import dcblk
+from morie.fn._containers import SignalResult
 
 
 def test_dcblk_mean_removal():

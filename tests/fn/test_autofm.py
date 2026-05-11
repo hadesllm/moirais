@@ -1,7 +1,7 @@
 """Tests for autofm.autoformer."""
 import numpy as np
 import pytest
-from moirais.fn.autofm import autoformer
+from morie.fn.autofm import autoformer
 
 
 def test_autofm_basic():

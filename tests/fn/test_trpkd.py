@@ -1,7 +1,7 @@
 """Test trpkd."""
 import numpy as np
 import pytest
-from moirais.fn.trpkd import trpkd
+from morie.fn.trpkd import trpkd
 
 
 def test_trpkd_basic():

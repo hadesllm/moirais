@@ -1,7 +1,7 @@
 """Tests for drblr.doubly_robust_learner."""
 import numpy as np
 import pytest
-from moirais.fn.drblr import doubly_robust_learner
+from morie.fn.drblr import doubly_robust_learner
 
 
 def test_drblr_basic():

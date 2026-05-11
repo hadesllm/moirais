@@ -1,7 +1,7 @@
 """Tests for albtm.alammar_bertopic_pipeline."""
 import numpy as np
 import pytest
-from moirais.fn.albtm import alammar_bertopic_pipeline
+from morie.fn.albtm import alammar_bertopic_pipeline
 
 
 def test_albtm_basic():

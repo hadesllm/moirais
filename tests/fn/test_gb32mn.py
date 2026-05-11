@@ -1,7 +1,7 @@
 """Tests for gb32mn.gibbons_runs_mean."""
 import numpy as np
 import pytest
-from moirais.fn.gb32mn import gibbons_runs_mean
+from morie.fn.gb32mn import gibbons_runs_mean
 
 
 def test_gb32mn_basic():

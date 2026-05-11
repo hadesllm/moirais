@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sucost -- substance cost."""
+"""Tests for morie.fn.sucost -- substance cost."""
 
 import pytest
-from moirais.fn.sucost import substance_cost
+from morie.fn.sucost import substance_cost
 
 
 class TestSubstanceCost:

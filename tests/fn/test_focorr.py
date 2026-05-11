@@ -1,7 +1,7 @@
 """Test focorr."""
 import numpy as np
 import pytest
-from moirais.fn.focorr import focorr
+from morie.fn.focorr import focorr
 
 
 def test_focorr_basic():

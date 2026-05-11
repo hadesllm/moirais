@@ -1,7 +1,7 @@
 """Test morphological_ca (mca)."""
 import numpy as np
-from moirais.fn.mca import morphological_ca, mca
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mca import morphological_ca, mca
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMca:

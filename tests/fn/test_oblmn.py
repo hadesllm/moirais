@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.oblmn -- Oblimin rotation."""
+"""Tests for morie.fn.oblmn -- Oblimin rotation."""
 
 import numpy as np
-from moirais.fn.oblmn import oblimin, oblmn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.oblmn import oblimin, oblmn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOblimin:

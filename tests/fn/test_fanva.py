@@ -1,7 +1,7 @@
 """Tests for fanva.fanova."""
 import numpy as np
 import pytest
-from moirais.fn.fanva import fanova
+from morie.fn.fanva import fanova
 
 
 def test_fanva_basic():

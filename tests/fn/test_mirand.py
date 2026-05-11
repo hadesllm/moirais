@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mirand."""
+"""Tests for morie.fn.mirand."""
 import numpy as np
 import pytest
-from moirais.fn.mirand import mirand
+from morie.fn.mirand import mirand
 
 
 class TestMirand:

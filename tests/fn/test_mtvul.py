@@ -1,7 +1,7 @@
 """Test mtvul."""
 import numpy as np
 import pytest
-from moirais.fn.mtvul import mtvul
+from morie.fn.mtvul import mtvul
 
 
 def test_mtvul_basic():

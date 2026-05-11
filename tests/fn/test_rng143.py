@@ -1,7 +1,7 @@
 """Tests for rng143.rangayyan_ch3_autocorrelation_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.rng143 import rangayyan_ch3_autocorrelation_matrix
+from morie.fn.rng143 import rangayyan_ch3_autocorrelation_matrix
 
 
 def test_rng143_basic():

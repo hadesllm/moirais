@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.eproc — empirical process."""
+"""Tests for morie.fn.eproc — empirical process."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.eproc import eproc
+from morie.fn.eproc import eproc
 
 
 def test_basic_output():

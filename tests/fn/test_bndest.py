@@ -1,7 +1,7 @@
 """Tests for bndest.bound_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.bndest import bound_estimation
+from morie.fn.bndest import bound_estimation
 
 
 def test_bndest_basic():

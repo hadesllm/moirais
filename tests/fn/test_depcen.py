@@ -1,7 +1,7 @@
 """Tests for depcen.dependent_censoring_hazard."""
 import numpy as np
 import pytest
-from moirais.fn.depcen import dependent_censoring_hazard
+from morie.fn.depcen import dependent_censoring_hazard
 
 
 def test_depcen_basic():

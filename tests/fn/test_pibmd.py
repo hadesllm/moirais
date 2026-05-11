@@ -1,7 +1,7 @@
 """Tests for pibmd.prior_informativeness_bias_diagnostic."""
 import numpy as np
 import pytest
-from moirais.fn.pibmd import prior_informativeness_bias_diagnostic
+from morie.fn.pibmd import prior_informativeness_bias_diagnostic
 
 
 def test_pibmd_basic():

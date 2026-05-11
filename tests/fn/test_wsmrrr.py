@@ -1,7 +1,7 @@
 """Tests for wsmrrr.wasserman_relative_risk."""
 import numpy as np
 import pytest
-from moirais.fn.wsmrrr import wasserman_relative_risk
+from morie.fn.wsmrrr import wasserman_relative_risk
 
 
 def test_wsmrrr_basic():

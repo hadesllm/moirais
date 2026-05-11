@@ -1,7 +1,7 @@
 """Test gdtrb."""
 import numpy as np
 import pytest
-from moirais.fn.gdtrb import gdtrb
+from morie.fn.gdtrb import gdtrb
 
 
 def test_gdtrb_basic():

@@ -1,7 +1,7 @@
 """Tests for dinopr.dino_self_distill."""
 import numpy as np
 import pytest
-from moirais.fn.dinopr import dino_self_distill
+from morie.fn.dinopr import dino_self_distill
 
 
 def test_dinopr_basic():

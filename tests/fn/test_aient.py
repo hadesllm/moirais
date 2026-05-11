@@ -1,6 +1,6 @@
 """Tests for AIC from entropy."""
 import pytest
-from moirais.fn.aient import aic_entropy, aient
+from morie.fn.aient import aic_entropy, aient
 
 
 def test_basic():

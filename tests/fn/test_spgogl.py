@@ -1,7 +1,7 @@
 """Tests for spgogl.schabenberger_getis_ord_gstar."""
 import numpy as np
 import pytest
-from moirais.fn.spgogl import schabenberger_getis_ord_gstar
+from morie.fn.spgogl import schabenberger_getis_ord_gstar
 
 
 def test_spgogl_basic():

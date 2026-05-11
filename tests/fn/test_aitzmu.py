@@ -1,7 +1,7 @@
 """Tests for aitzmu.compositional_zero_multreplace."""
 import numpy as np
 import pytest
-from moirais.fn.aitzmu import compositional_zero_multreplace
+from morie.fn.aitzmu import compositional_zero_multreplace
 
 
 def test_aitzmu_basic():

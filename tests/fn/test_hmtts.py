@@ -1,7 +1,7 @@
 """Tests for hmtts.geron_train_test_split."""
 import numpy as np
 import pytest
-from moirais.fn.hmtts import geron_train_test_split
+from morie.fn.hmtts import geron_train_test_split
 
 
 def test_hmtts_basic():

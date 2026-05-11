@@ -1,7 +1,7 @@
 """Tests for ghtst.ghosal_np_testing."""
 import numpy as np
 import pytest
-from moirais.fn.ghtst import ghosal_np_testing
+from morie.fn.ghtst import ghosal_np_testing
 
 
 def test_ghtst_basic():

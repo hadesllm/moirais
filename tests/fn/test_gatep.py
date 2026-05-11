@@ -1,7 +1,7 @@
 """Tests for gatep.gate_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.gatep import gate_estimation
+from morie.fn.gatep import gate_estimation
 
 
 def test_gatep_basic():

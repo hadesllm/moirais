@@ -1,7 +1,7 @@
 """Tests for macn.ma_cochran_q."""
 import numpy as np
 import pytest
-from moirais.fn.macn import ma_cochran_q
+from morie.fn.macn import ma_cochran_q
 
 
 def test_macn_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzseriu.horowitz_series_unknown_T."""
 import numpy as np
 import pytest
-from moirais.fn.hrzseriu import horowitz_series_unknown_T
+from morie.fn.hrzseriu import horowitz_series_unknown_T
 
 
 def test_hrzseriu_basic():

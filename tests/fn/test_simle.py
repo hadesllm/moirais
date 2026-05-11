@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.simle — Single-index MLE."""
+"""Tests for morie.fn.simle — Single-index MLE."""
 
 import numpy as np
 import pytest
-from moirais.fn.simle import simle
+from morie.fn.simle import simle
 
 
 def test_returns_dict():

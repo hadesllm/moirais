@@ -1,6 +1,6 @@
 """Tests for arspd.py - AR spectrum."""
 import numpy as np
-from moirais.fn.arspd import ar_spectrum_fn, arspd
+from morie.fn.arspd import ar_spectrum_fn, arspd
 
 
 def test_arspd_returns_result():

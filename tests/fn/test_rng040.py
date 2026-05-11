@@ -1,7 +1,7 @@
 """Tests for rng040.rangayyan_ch3_linear_ramp_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rng040 import rangayyan_ch3_linear_ramp_filter
+from morie.fn.rng040 import rangayyan_ch3_linear_ramp_filter
 
 
 def test_rng040_basic():

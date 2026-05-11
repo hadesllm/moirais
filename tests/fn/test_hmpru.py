@@ -1,7 +1,7 @@
 """Tests for hmpru.geron_weight_pruning."""
 import numpy as np
 import pytest
-from moirais.fn.hmpru import geron_weight_pruning
+from morie.fn.hmpru import geron_weight_pruning
 
 
 def test_hmpru_basic():

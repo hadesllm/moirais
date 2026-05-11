@@ -1,7 +1,7 @@
 """Test mtpkp."""
 import numpy as np
 import pytest
-from moirais.fn.mtpkp import mtpkp
+from morie.fn.mtpkp import mtpkp
 
 
 def test_mtpkp_basic():

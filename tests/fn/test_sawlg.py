@@ -1,7 +1,7 @@
 """Test sawlg."""
 import numpy as np
 import pytest
-from moirais.fn.sawlg import sawlg
+from morie.fn.sawlg import sawlg
 
 
 def test_sawlg_basic():

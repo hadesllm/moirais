@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.fisher -- Fisher's exact test."""
+"""Tests for morie.fn.fisher -- Fisher's exact test."""
 
 import pytest
-from moirais.fn.fisher import fisher_exact_test
+from morie.fn.fisher import fisher_exact_test
 
 
 class TestFisherExact:

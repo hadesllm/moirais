@@ -1,7 +1,7 @@
 """Tests for grent.geron_shannon_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.grent import geron_shannon_entropy
+from morie.fn.grent import geron_shannon_entropy
 
 
 def test_grent_basic():

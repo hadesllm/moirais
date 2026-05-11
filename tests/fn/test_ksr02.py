@@ -1,7 +1,7 @@
 """Tests for ksr02.kosorok_donsker_class."""
 import numpy as np
 import pytest
-from moirais.fn.ksr02 import kosorok_donsker_class
+from morie.fn.ksr02 import kosorok_donsker_class
 
 
 def test_ksr02_basic():

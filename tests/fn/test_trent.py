@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.trent -- Trend test for survival."""
+"""Tests for morie.fn.trent -- Trend test for survival."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.trent import trent
+from morie.fn.trent import trent
 
 
 @pytest.fixture()
@@ -43,5 +43,5 @@ def test_single_group_raises():
 
 
 def test_cheatsheet():
-    from moirais.fn.trent import cheatsheet
+    from morie.fn.trent import cheatsheet
     assert "trend" in cheatsheet().lower()

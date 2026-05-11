@@ -1,7 +1,7 @@
 """Tests for rgexecg.rangayyan_exercise_ecg."""
 import numpy as np
 import pytest
-from moirais.fn.rgexecg import rangayyan_exercise_ecg
+from morie.fn.rgexecg import rangayyan_exercise_ecg
 
 
 def test_rgexecg_basic():

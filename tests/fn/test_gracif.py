@@ -1,7 +1,7 @@
 """Tests for gracif.gray_cif_test."""
 import numpy as np
 import pytest
-from moirais.fn.gracif import gray_cif_test
+from morie.fn.gracif import gray_cif_test
 
 
 def test_gracif_basic():

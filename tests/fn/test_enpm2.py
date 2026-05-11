@@ -1,7 +1,7 @@
 """Test enpm2."""
 import numpy as np
 import pytest
-from moirais.fn.enpm2 import enpm2
+from morie.fn.enpm2 import enpm2
 
 
 def test_enpm2_basic():

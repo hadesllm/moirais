@@ -1,7 +1,7 @@
 """Tests for goldsc.gold_score."""
 import numpy as np
 import pytest
-from moirais.fn.goldsc import gold_score
+from morie.fn.goldsc import gold_score
 
 
 def test_goldsc_basic():

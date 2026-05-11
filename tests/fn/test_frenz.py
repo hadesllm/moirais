@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.frenz -- Lyapunov exponent."""
+"""Tests for morie.fn.frenz -- Lyapunov exponent."""
 
 import numpy as np
-from moirais.fn.frenz import lyapunov_exponent, frenz
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.frenz import lyapunov_exponent, frenz
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFrenz:

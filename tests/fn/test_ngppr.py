@@ -1,7 +1,7 @@
 """Tests for ngppr.normalized_gamma_process."""
 import numpy as np
 import pytest
-from moirais.fn.ngppr import normalized_gamma_process
+from morie.fn.ngppr import normalized_gamma_process
 
 
 def test_ngppr_basic():

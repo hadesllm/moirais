@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.loo -- LOO-CV via PSIS."""
+"""Tests for morie.fn.loo -- LOO-CV via PSIS."""
 
 import numpy as np
 import pytest
-from moirais.fn.loo import compute_loo
+from morie.fn.loo import compute_loo
 
 
 class TestLOO:

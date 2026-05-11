@@ -1,7 +1,7 @@
 """Tests for swiglu.swiglu_activation."""
 import numpy as np
 import pytest
-from moirais.fn.swiglu import swiglu_activation
+from morie.fn.swiglu import swiglu_activation
 
 
 def test_swiglu_basic():

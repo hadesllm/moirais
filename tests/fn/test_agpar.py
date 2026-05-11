@@ -1,7 +1,7 @@
 """Tests for agpar.party_unity_score."""
 import numpy as np
 import pytest
-from moirais.fn.agpar import party_unity_score
+from morie.fn.agpar import party_unity_score
 
 
 def test_agpar_basic():

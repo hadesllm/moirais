@@ -1,7 +1,7 @@
 """Test sawcn."""
 import numpy as np
 import pytest
-from moirais.fn.sawcn import sawcn
+from morie.fn.sawcn import sawcn
 
 
 def test_sawcn_basic():

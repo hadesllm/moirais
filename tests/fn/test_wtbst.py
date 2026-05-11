@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wtbst — weighted bootstrap."""
+"""Tests for morie.fn.wtbst — weighted bootstrap."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.wtbst import wtbst
+from morie.fn.wtbst import wtbst
 
 
 def test_basic_output():

@@ -1,7 +1,7 @@
 """Tests for sbci."""
 import numpy as np
 import pytest
-from moirais.fn.sbci import sbci
+from morie.fn.sbci import sbci
 
 
 def test_sbci_basic():
@@ -27,5 +27,5 @@ def test_sbci_no_data():
 
 
 def test_sbci_alias():
-    from moirais.fn.sbci import sbci
+    from morie.fn.sbci import sbci
     assert sbci is sbci

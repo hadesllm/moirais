@@ -1,7 +1,7 @@
 """Tests for glmsT.linear_trend."""
 import numpy as np
 import pytest
-from moirais.fn.glmsT import linear_trend
+from morie.fn.glmsT import linear_trend
 
 
 def test_glmsT_basic():

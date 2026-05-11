@@ -1,7 +1,7 @@
 """Tests for layrnm.layer_norm."""
 import numpy as np
 import pytest
-from moirais.fn.layrnm import layer_norm
+from morie.fn.layrnm import layer_norm
 
 
 def test_layrnm_basic():

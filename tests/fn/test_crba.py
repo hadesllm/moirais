@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.crba — Cronbach's coefficient alpha."""
+"""Tests for morie.fn.crba — Cronbach's coefficient alpha."""
 
 import pytest
 import numpy as np
-from moirais.fn import crba
-from moirais.fn._containers import RlbRes
+from morie.fn import crba
+from morie.fn._containers import RlbRes
 
 
 @pytest.fixture()

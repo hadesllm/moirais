@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.expns — exponential smoothing."""
+"""Tests for morie.fn.expns — exponential smoothing."""
 import numpy as np
 import pytest
-from moirais.fn.expns import exponential_smooth
+from morie.fn.expns import exponential_smooth
 
 
 class TestExponentialSmooth:

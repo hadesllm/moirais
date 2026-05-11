@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgorm -- Ordinary kriging matrix system"""
+"""Tests for morie.fn.kgorm -- Ordinary kriging matrix system"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgorm import ok_matrix
+from morie.fn.kgorm import ok_matrix
 
 
 class TestOkMatrix:

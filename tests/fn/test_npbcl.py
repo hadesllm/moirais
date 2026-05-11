@@ -1,7 +1,7 @@
 """Tests for npbcl.np_bayes_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.npbcl import np_bayes_clustering
+from morie.fn.npbcl import np_bayes_clustering
 
 
 def test_npbcl_basic():

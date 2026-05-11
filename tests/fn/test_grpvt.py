@@ -1,7 +1,7 @@
 """Tests for grpvt.geron_pyramid_vit_stage."""
 import numpy as np
 import pytest
-from moirais.fn.grpvt import geron_pyramid_vit_stage
+from morie.fn.grpvt import geron_pyramid_vit_stage
 
 
 def test_grpvt_basic():

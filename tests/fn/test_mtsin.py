@@ -1,7 +1,7 @@
 """Test mtsin."""
 import numpy as np
 import pytest
-from moirais.fn.mtsin import mtsin
+from morie.fn.mtsin import mtsin
 
 
 def test_mtsin_basic():

@@ -1,7 +1,7 @@
 """Tests for rocau.roc_auc_score."""
 import numpy as np
 import pytest
-from moirais.fn.rocau import roc_auc_score
+from morie.fn.rocau import roc_auc_score
 
 
 def test_rocau_basic():

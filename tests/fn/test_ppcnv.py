@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ppcnv."""
+"""Tests for morie.fn.ppcnv."""
 
 import numpy as np
 import pytest
-from moirais.fn.ppcnv import ppcnv
+from morie.fn.ppcnv import ppcnv
 
 
 class TestPpcnv:

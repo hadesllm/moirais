@@ -1,7 +1,7 @@
 """Test tsmnl."""
 import numpy as np
 import pytest
-from moirais.fn.tsmnl import tsmnl
+from morie.fn.tsmnl import tsmnl
 
 
 def test_tsmnl_basic():

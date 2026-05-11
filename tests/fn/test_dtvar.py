@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dtvar."""
+"""Tests for morie.fn.dtvar."""
 
 import numpy as np
 import pytest
-from moirais.fn.dtvar import dtvar
+from morie.fn.dtvar import dtvar
 
 
 class TestDtvar:

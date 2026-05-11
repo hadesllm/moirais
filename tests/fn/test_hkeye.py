@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hkeye -- precision-recall at top-k."""
+"""Tests for morie.fn.hkeye -- precision-recall at top-k."""
 
 import numpy as np
-from moirais.fn.hkeye import precision_recall_at_k, hkeye
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hkeye import precision_recall_at_k, hkeye
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHkeye:

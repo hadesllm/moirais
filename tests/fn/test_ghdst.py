@@ -1,7 +1,7 @@
 """Test ghdst."""
 import numpy as np
 import pytest
-from moirais.fn.ghdst import ghdst
+from morie.fn.ghdst import ghdst
 
 
 def test_ghdst_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rskbr — risk base rate."""
+"""Tests for morie.fn.rskbr — risk base rate."""
 
 import pandas as pd
-from moirais.fn.rskbr import risk_base_rate, rskbr
+from morie.fn.rskbr import risk_base_rate, rskbr
 
 
 class TestRiskBaseRate:

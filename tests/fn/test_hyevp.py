@@ -1,7 +1,7 @@
 """Test hyevp."""
 import numpy as np
 import pytest
-from moirais.fn.hyevp import hyevp
+from morie.fn.hyevp import hyevp
 
 
 def test_hyevp_basic():

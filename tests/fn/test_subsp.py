@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.subsp -- Subsampling inference."""
+"""Tests for morie.fn.subsp -- Subsampling inference."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.subsp import subsp
+from morie.fn.subsp import subsp
 
 
 @pytest.fixture()
@@ -51,5 +51,5 @@ def test_invalid_alpha(sample_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.subsp import cheatsheet
+    from morie.fn.subsp import cheatsheet
     assert "subsampling" in cheatsheet().lower()

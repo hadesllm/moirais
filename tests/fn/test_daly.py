@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.daly -- Disability-Adjusted Life Years."""
+"""Tests for morie.fn.daly -- Disability-Adjusted Life Years."""
 
 import pytest
-from moirais.fn.daly import disability_adjusted_life_years
+from morie.fn.daly import disability_adjusted_life_years
 
 
 class TestDALY:

@@ -1,7 +1,7 @@
 """Tests for bayisr.importance_resample."""
 import numpy as np
 import pytest
-from moirais.fn.bayisr import importance_resample
+from morie.fn.bayisr import importance_resample
 
 
 def test_bayisr_basic():

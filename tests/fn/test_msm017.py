@@ -1,7 +1,7 @@
 """Tests for msm017.mvsml_linear_mixed_models_eq_5_3."""
 import numpy as np
 import pytest
-from moirais.fn.msm017 import mvsml_linear_mixed_models_eq_5_3
+from morie.fn.msm017 import mvsml_linear_mixed_models_eq_5_3
 
 
 def test_msm017_basic():

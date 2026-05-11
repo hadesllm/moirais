@@ -1,7 +1,7 @@
 """Tests for hmsdp.geron_scaled_dot_product."""
 import numpy as np
 import pytest
-from moirais.fn.hmsdp import geron_scaled_dot_product
+from morie.fn.hmsdp import geron_scaled_dot_product
 
 
 def test_hmsdp_basic():

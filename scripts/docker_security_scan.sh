@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-IMAGE="${1:-moirais:latest}"
+IMAGE="${1:-morie:latest}"
 PASS=0
 FAIL=0
 TOTAL=0
@@ -17,7 +17,7 @@ result() {
     fi
 }
 
-printf "\n=== MOIRAIS Docker Security Scan ===\n"
+printf "\n=== MORIE Docker Security Scan ===\n"
 printf "Image: %s\n\n" "$IMAGE"
 
 printf "--- 1. CIS Docker Benchmark Checks ---\n"

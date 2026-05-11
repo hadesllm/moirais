@@ -1,7 +1,7 @@
 """Tests for bayreg.bayes_linear."""
 import numpy as np
 import pytest
-from moirais.fn.bayreg import bayes_linear
+from morie.fn.bayreg import bayes_linear
 
 
 def test_bayreg_basic():

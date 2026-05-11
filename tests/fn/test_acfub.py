@@ -1,7 +1,7 @@
 """Test acf_unbiased (acfub)."""
 import numpy as np
-from moirais.fn.acfub import acf_unbiased, acfub
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.acfub import acf_unbiased, acfub
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAcfub:

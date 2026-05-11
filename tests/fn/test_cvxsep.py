@@ -1,7 +1,7 @@
 """Tests for cvxsep.boyd_separating_hyperplane."""
 import numpy as np
 import pytest
-from moirais.fn.cvxsep import boyd_separating_hyperplane
+from morie.fn.cvxsep import boyd_separating_hyperplane
 
 
 def test_cvxsep_basic():

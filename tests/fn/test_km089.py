@@ -1,7 +1,7 @@
 """Tests for km089.kamath_ch6_sgs_invariance."""
 import numpy as np
 import pytest
-from moirais.fn.km089 import kamath_ch6_sgs_invariance
+from morie.fn.km089 import kamath_ch6_sgs_invariance
 
 
 def test_km089_basic():

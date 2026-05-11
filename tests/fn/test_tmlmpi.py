@@ -1,7 +1,7 @@
 """Tests for tmlmpi.tmle_marginal_pim."""
 import numpy as np
 import pytest
-from moirais.fn.tmlmpi import tmle_marginal_pim
+from morie.fn.tmlmpi import tmle_marginal_pim
 
 
 def test_tmlmpi_basic():

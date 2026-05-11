@@ -1,7 +1,7 @@
 """Test wapef."""
 import numpy as np
 import pytest
-from moirais.fn.wapef import wapef
+from morie.fn.wapef import wapef
 
 
 def test_wapef_basic():

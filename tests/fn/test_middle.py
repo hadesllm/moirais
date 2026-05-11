@@ -1,7 +1,7 @@
 """Tests for middle.middle_out."""
 import numpy as np
 import pytest
-from moirais.fn.middle import middle_out
+from morie.fn.middle import middle_out
 
 
 def test_middle_basic():

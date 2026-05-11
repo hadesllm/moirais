@@ -1,7 +1,7 @@
 """Test csevd."""
 import numpy as np
 import pytest
-from moirais.fn.csevd import csevd
+from morie.fn.csevd import csevd
 
 
 def test_csevd_basic():

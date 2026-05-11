@@ -1,7 +1,7 @@
 """Tests for copgmb.gumbel_copula."""
 import numpy as np
 import pytest
-from moirais.fn.copgmb import gumbel_copula
+from morie.fn.copgmb import gumbel_copula
 
 
 def test_copgmb_basic():

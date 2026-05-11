@@ -1,7 +1,7 @@
 """Tests for spconv.schabenberger_convolution_representation."""
 import numpy as np
 import pytest
-from moirais.fn.spconv import schabenberger_convolution_representation
+from morie.fn.spconv import schabenberger_convolution_representation
 
 
 def test_spconv_basic():

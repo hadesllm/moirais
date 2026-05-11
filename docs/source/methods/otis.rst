@@ -1,9 +1,9 @@
 Ontario Restrictive Confinement (OTIS)
 ======================================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS provides **250+ correctional/sociolegal functions** for Ontario
+MORIE provides **250+ correctional/sociolegal functions** for Ontario
 correctional system data — restrictive confinement placements, alert
 statuses, regional movement patterns, recidivism, risk assessment,
 sentence analytics, custody metrics, compliance monitoring, and
@@ -12,7 +12,7 @@ causal inference across fiscal years 2023-2025.
 This module bridges **criminology**, **sociolegal studies**, and
 **epidemiological methods** using the same DML/IPW/AIPW infrastructure
 as the CPADS public health analysis. All functions are dataset-agnostic
-and implemented as individual files in ``moirais.fn/`` (≤7-char names).
+and implemented as individual files in ``morie.fn/`` (≤7-char names).
 
 Key function families:
 
@@ -75,8 +75,8 @@ Methods
 - **Trends over time** — Python ``rctrnd``, R temporal analysis.
 - **Descriptive statistics** — Python ``otdesc``, R sections 1-4.
 - **DML IRM (ATE / ATT)** — Python ``otdml``, R ``run_dml_analysis()``.
-- **Propensity score matching** — Python ``moirais.matching``, R ``MatchIt``.
-- **AIPW (doubly robust)** — Python ``moirais.causal``, R ``WeightIt`` + ``lm_robust``.
+- **Propensity score matching** — Python ``morie.matching``, R ``MatchIt``.
+- **AIPW (doubly robust)** — Python ``morie.causal``, R ``WeightIt`` + ``lm_robust``.
 - **Mixed effects (GLMM)** — R only (``lme4``, ``glmmTMB``).
 - **DHARMa diagnostics** — R only (``DHARMa``).
 
@@ -85,7 +85,7 @@ Usage
 
 .. code-block:: python
 
-   from moirais.otis import rplace, astcmb, otdml
+   from morie.otis import rplace, astcmb, otdml
    import pandas as pd
 
    # Load expanded placement data (via R bridge or direct)

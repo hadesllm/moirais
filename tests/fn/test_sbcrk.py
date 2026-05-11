@@ -1,7 +1,7 @@
 """Tests for sbcrk.simulation_based_calibration_rank."""
 import numpy as np
 import pytest
-from moirais.fn.sbcrk import simulation_based_calibration_rank
+from morie.fn.sbcrk import simulation_based_calibration_rank
 
 
 def test_sbcrk_basic():

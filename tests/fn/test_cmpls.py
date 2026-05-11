@@ -1,6 +1,6 @@
 """Tests for computable complexity."""
 import pytest
-from moirais.fn.cmpls import computable_complexity, cmpls
+from morie.fn.cmpls import computable_complexity, cmpls
 
 
 def test_repetitive():

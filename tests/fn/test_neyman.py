@@ -1,7 +1,7 @@
 """Tests for neyman.neyman_allocation."""
 import numpy as np
 import pytest
-from moirais.fn.neyman import neyman_allocation
+from morie.fn.neyman import neyman_allocation
 
 
 def test_neyman_basic():

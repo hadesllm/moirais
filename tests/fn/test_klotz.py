@@ -1,7 +1,7 @@
 """Tests for klotz (Klotz normal-scores test)."""
 
 import numpy as np
-from moirais.fn.klotz import klotz
+from morie.fn.klotz import klotz
 
 
 class TestKlotz:

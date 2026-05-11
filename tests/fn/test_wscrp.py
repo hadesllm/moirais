@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wscrp -- Web scrape + text extraction."""
+"""Tests for morie.fn.wscrp -- Web scrape + text extraction."""
 
 from io import BytesIO
 from unittest.mock import patch, MagicMock
 
-from moirais.fn.wscrp import web_scrape, extract_text, wscrp
+from morie.fn.wscrp import web_scrape, extract_text, wscrp
 
 
 class TestWscrp:
@@ -22,6 +22,6 @@ class TestWscrp:
         mock_resp.read.return_value = b"<html><body>OK</body></html>"
         mock_resp.__enter__ = lambda s: s
         mock_resp.__exit__ = MagicMock(return_value=False)
-        with patch("moirais.fn.wscrp.urllib.request.urlopen", return_value=mock_resp):
+        with patch("morie.fn.wscrp.urllib.request.urlopen", return_value=mock_resp):
             html = web_scrape("http://example.com")
             assert "OK" in html

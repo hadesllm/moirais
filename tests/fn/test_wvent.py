@@ -1,6 +1,6 @@
 """Tests for wvent.py - Wavelet entropy."""
 import numpy as np
-from moirais.fn.wvent import wavelet_entropy, wvent
+from morie.fn.wvent import wavelet_entropy, wvent
 
 
 def test_wvent_returns_descriptive_result():

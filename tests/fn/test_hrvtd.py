@@ -1,7 +1,7 @@
 """Tests for hrvtd — HRV time-domain metrics."""
 import numpy as np
-from moirais.fn.hrvtd import hrv_time_domain
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hrvtd import hrv_time_domain
+from morie.fn._containers import DescriptiveResult
 
 
 def test_hrvtd_basic(rng):

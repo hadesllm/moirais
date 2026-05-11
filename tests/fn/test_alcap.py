@@ -1,7 +1,7 @@
 """Tests for alcap.alammar_image_captioning_pipeline."""
 import numpy as np
 import pytest
-from moirais.fn.alcap import alammar_image_captioning_pipeline
+from morie.fn.alcap import alammar_image_captioning_pipeline
 
 
 def test_alcap_basic():

@@ -1,7 +1,7 @@
 """Test gccwv."""
 import numpy as np
 import pytest
-from moirais.fn.gccwv import gccwv
+from morie.fn.gccwv import gccwv
 
 
 def test_gccwv_basic():

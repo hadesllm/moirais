@@ -1,7 +1,7 @@
 """Tests for grgptl.geron_gpt_autoregressive_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grgptl import geron_gpt_autoregressive_loss
+from morie.fn.grgptl import geron_gpt_autoregressive_loss
 
 
 def test_grgptl_basic():

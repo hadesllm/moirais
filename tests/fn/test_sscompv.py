@@ -1,7 +1,7 @@
 """Tests for sscompv.survival_competing_validation."""
 import numpy as np
 import pytest
-from moirais.fn.sscompv import survival_competing_validation
+from morie.fn.sscompv import survival_competing_validation
 
 
 def test_sscompv_basic():

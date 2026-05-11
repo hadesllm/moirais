@@ -1,7 +1,7 @@
 """Tests for chronos.chronos_foundation_ts."""
 import numpy as np
 import pytest
-from moirais.fn.chronos import chronos_foundation_ts
+from morie.fn.chronos import chronos_foundation_ts
 
 
 def test_chronos_basic():

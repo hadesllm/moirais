@@ -1,7 +1,7 @@
 """Tests for grsmxp.geron_softmax_probability."""
 import numpy as np
 import pytest
-from moirais.fn.grsmxp import geron_softmax_probability
+from morie.fn.grsmxp import geron_softmax_probability
 
 
 def test_grsmxp_basic():

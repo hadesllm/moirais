@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.portm -- Portmanteau (Ljung-Box) test."""
+"""Tests for morie.fn.portm -- Portmanteau (Ljung-Box) test."""
 
 import numpy as np
 import pytest
-from moirais.fn.portm import portmanteau_test
+from morie.fn.portm import portmanteau_test
 
 
 class TestPortmanteau:

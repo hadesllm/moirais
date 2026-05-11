@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxvnc -- Vincenty geodesic distance"""
+"""Tests for morie.fn.zxvnc -- Vincenty geodesic distance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxvnc import vincenty_dist
+from morie.fn.zxvnc import vincenty_dist
 
 
 class TestVincentyDist:

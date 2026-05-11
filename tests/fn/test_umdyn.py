@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.umdyn."""
+"""Tests for morie.fn.umdyn."""
 
 import numpy as np
 import pytest
-from moirais.fn.umdyn import umdyn
+from morie.fn.umdyn import umdyn
 
 
 class TestUmdyn:

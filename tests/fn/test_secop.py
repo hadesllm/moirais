@@ -1,7 +1,7 @@
 """Test secop."""
 import numpy as np
 import pytest
-from moirais.fn.secop import secop
+from morie.fn.secop import secop
 
 
 def test_secop_basic():

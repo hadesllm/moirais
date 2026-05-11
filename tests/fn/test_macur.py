@@ -1,7 +1,7 @@
 """Test macur."""
 import numpy as np
 import pytest
-from moirais.fn.macur import macur
+from morie.fn.macur import macur
 
 
 def test_macur_basic():

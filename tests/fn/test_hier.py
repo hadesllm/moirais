@@ -1,7 +1,7 @@
 """Tests for hier.hierarchical_rl."""
 import numpy as np
 import pytest
-from moirais.fn.hier import hierarchical_rl
+from morie.fn.hier import hierarchical_rl
 
 
 def test_hier_basic():

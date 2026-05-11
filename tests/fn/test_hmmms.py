@@ -1,7 +1,7 @@
 """Tests for hmmms.geron_min_max_scaling."""
 import numpy as np
 import pytest
-from moirais.fn.hmmms import geron_min_max_scaling
+from morie.fn.hmmms import geron_min_max_scaling
 
 
 def test_hmmms_basic():

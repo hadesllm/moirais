@@ -1,7 +1,7 @@
 """Tests for kmitc.kamath_image_text_contrastive."""
 import numpy as np
 import pytest
-from moirais.fn.kmitc import kamath_image_text_contrastive
+from morie.fn.kmitc import kamath_image_text_contrastive
 
 
 def test_kmitc_basic():

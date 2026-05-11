@@ -1,7 +1,7 @@
 """Tests for km010.kamath_ch2_attention_output."""
 import numpy as np
 import pytest
-from moirais.fn.km010 import kamath_ch2_attention_output
+from morie.fn.km010 import kamath_ch2_attention_output
 
 
 def test_km010_basic():

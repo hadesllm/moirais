@@ -1,7 +1,7 @@
 """Tests for bayslo.bayes_lasso."""
 import numpy as np
 import pytest
-from moirais.fn.bayslo import bayes_lasso
+from morie.fn.bayslo import bayes_lasso
 
 
 def test_bayslo_basic():

@@ -1,7 +1,7 @@
 """Test mteff."""
 import numpy as np
 import pytest
-from moirais.fn.mteff import mteff
+from morie.fn.mteff import mteff
 
 
 def test_mteff_basic():

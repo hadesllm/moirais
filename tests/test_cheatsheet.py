@@ -1,7 +1,7 @@
-"""Tests for moirais.cheatsheet — enriched per-fn help cards."""
+"""Tests for morie.cheatsheet — enriched per-fn help cards."""
 from __future__ import annotations
 
-from moirais import cheatsheet as cs
+from morie import cheatsheet as cs
 
 
 def test_returns_multiline_block_for_known_fn():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tpsgis — geo analysis."""
+"""Tests for morie.fn.tpsgis — geo analysis."""
 
 import pytest
 import numpy as np
-from moirais.fn.tpsgis import tps_geo_analysis
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tpsgis import tps_geo_analysis
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGeoAnalysis:

@@ -1,7 +1,7 @@
 """Tests for deepwk.deepwalk."""
 import numpy as np
 import pytest
-from moirais.fn.deepwk import deepwalk
+from morie.fn.deepwk import deepwalk
 
 
 def test_deepwk_basic():

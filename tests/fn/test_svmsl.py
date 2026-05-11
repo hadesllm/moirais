@@ -1,7 +1,7 @@
 """Tests for svmsl.svm_soft_margin."""
 import numpy as np
 import pytest
-from moirais.fn.svmsl import svm_soft_margin
+from morie.fn.svmsl import svm_soft_margin
 
 
 def test_svmsl_basic():

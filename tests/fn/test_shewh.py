@@ -1,7 +1,7 @@
 """Tests for shewh.shewhart."""
 import numpy as np
 import pytest
-from moirais.fn.shewh import shewhart
+from morie.fn.shewh import shewhart
 
 
 def test_shewh_basic():

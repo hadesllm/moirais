@@ -1,7 +1,7 @@
 """Tests for kpmnci.km_pointwise_ci."""
 import numpy as np
 import pytest
-from moirais.fn.kpmnci import km_pointwise_ci
+from morie.fn.kpmnci import km_pointwise_ci
 
 
 def test_kpmnci_basic():

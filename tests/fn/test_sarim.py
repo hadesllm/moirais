@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sarim -- Seasonal ARIMA."""
+"""Tests for morie.fn.sarim -- Seasonal ARIMA."""
 import numpy as np
 import pytest
-from moirais.fn.sarim import sarima_fit
+from morie.fn.sarim import sarima_fit
 
 
 class TestSARIMA:
@@ -18,5 +18,5 @@ class TestSARIMA:
             sarima_fit(np.ones(10), m=12)
 
     def test_cheatsheet(self):
-        from moirais.fn.sarim import cheatsheet
+        from morie.fn.sarim import cheatsheet
         assert isinstance(cheatsheet(), str)

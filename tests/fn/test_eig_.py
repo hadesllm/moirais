@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.eig_ — eigenvalue analysis."""
+"""Tests for morie.fn.eig_ — eigenvalue analysis."""
 import numpy as np
 import pytest
-from moirais.fn.eig_ import eigen_analysis
+from morie.fn.eig_ import eigen_analysis
 
 
 class TestEigen:

@@ -1,6 +1,6 @@
 """Test cymnf."""
 import pytest
-from moirais.fn.cymnf import calabi_yau_hodge
+from morie.fn.cymnf import calabi_yau_hodge
 
 
 def test_cymnf_quintic():

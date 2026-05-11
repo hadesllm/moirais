@@ -1,7 +1,7 @@
 """Tests for rbfk.rbf_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.rbfk import rbf_kernel
+from morie.fn.rbfk import rbf_kernel
 
 
 def test_rbfk_basic():

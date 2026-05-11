@@ -1,8 +1,8 @@
 """Tests for corrn -- Correlation dimension."""
 import numpy as np
 import pytest
-from moirais.fn.corrn import corrn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.corrn import corrn
+from morie.fn._containers import DescriptiveResult
 
 
 def test_corrn_basic():

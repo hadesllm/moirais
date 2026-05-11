@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.simth -- simulate thermometer."""
+"""Tests for morie.fn.simth -- simulate thermometer."""
 
 import numpy as np
-from moirais.fn.simth import simulate_thermometer, simth
+from morie.fn.simth import simulate_thermometer, simth
 
 
 def test_simth_smoke():

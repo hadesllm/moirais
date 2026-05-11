@@ -1,7 +1,7 @@
 """Tests for bsmed.bootstrap_mediation_ci."""
 import numpy as np
 import pytest
-from moirais.fn.bsmed import bootstrap_mediation_ci
+from morie.fn.bsmed import bootstrap_mediation_ci
 
 
 def test_bsmed_basic():

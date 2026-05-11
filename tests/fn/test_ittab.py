@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ittab — full item analysis table."""
+"""Tests for morie.fn.ittab — full item analysis table."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.ittab import item_table
+from morie.fn.ittab import item_table
 
 
 class TestItemTable:

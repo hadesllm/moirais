@@ -1,7 +1,7 @@
 """Tests for line.line."""
 import numpy as np
 import pytest
-from moirais.fn.line import line
+from morie.fn.line import line
 
 
 def test_line_basic():

@@ -1,7 +1,7 @@
 """Tests for prtMK.prewhitening_mk."""
 import numpy as np
 import pytest
-from moirais.fn.prtMK import prewhitening_mk
+from morie.fn.prtMK import prewhitening_mk
 
 
 def test_prtMK_basic():

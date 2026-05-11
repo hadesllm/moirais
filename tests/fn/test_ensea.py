@@ -1,7 +1,7 @@
 """Test ensea."""
 import numpy as np
 import pytest
-from moirais.fn.ensea import ensea
+from morie.fn.ensea import ensea
 
 
 def test_ensea_basic():

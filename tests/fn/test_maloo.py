@@ -1,7 +1,7 @@
 """Tests for maloo.ma_leave_one_out."""
 import numpy as np
 import pytest
-from moirais.fn.maloo import ma_leave_one_out
+from morie.fn.maloo import ma_leave_one_out
 
 
 def test_maloo_basic():

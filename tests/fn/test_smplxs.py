@@ -1,7 +1,7 @@
 """Tests for smplxs.simplex_lp."""
 import numpy as np
 import pytest
-from moirais.fn.smplxs import simplex_lp
+from morie.fn.smplxs import simplex_lp
 
 
 def test_smplxs_basic():

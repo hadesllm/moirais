@@ -1,7 +1,7 @@
 """Tests for spmani.schabenberger_mantel_standard."""
 import numpy as np
 import pytest
-from moirais.fn.spmani import schabenberger_mantel_standard
+from morie.fn.spmani import schabenberger_mantel_standard
 
 
 def test_spmani_basic():

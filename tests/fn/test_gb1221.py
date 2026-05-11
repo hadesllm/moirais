@@ -1,7 +1,7 @@
 """Tests for gb1221.gibbons_friedman."""
 import numpy as np
 import pytest
-from moirais.fn.gb1221 import gibbons_friedman
+from morie.fn.gb1221 import gibbons_friedman
 
 
 def test_gb1221_basic():

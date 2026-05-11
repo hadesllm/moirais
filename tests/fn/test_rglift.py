@@ -1,7 +1,7 @@
 """Tests for rglift.rangayyan_liftering."""
 import numpy as np
 import pytest
-from moirais.fn.rglift import rangayyan_liftering
+from morie.fn.rglift import rangayyan_liftering
 
 
 def test_rglift_basic():

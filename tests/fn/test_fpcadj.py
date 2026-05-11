@@ -1,7 +1,7 @@
 """Tests for fpcadj.finite_population_corr."""
 import numpy as np
 import pytest
-from moirais.fn.fpcadj import finite_population_corr
+from morie.fn.fpcadj import finite_population_corr
 
 
 def test_fpcadj_basic():

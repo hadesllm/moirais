@@ -1,7 +1,7 @@
 """Tests for xgbst.xgboost_objective."""
 import numpy as np
 import pytest
-from moirais.fn.xgbst import xgboost_objective
+from morie.fn.xgbst import xgboost_objective
 
 
 def test_xgbst_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.psbay."""
+"""Tests for morie.fn.psbay."""
 
 import numpy as np
 import pytest
-from moirais.fn.psbay import psbay
+from morie.fn.psbay import psbay
 
 
 class TestPsbay:

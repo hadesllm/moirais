@@ -1,7 +1,7 @@
 """Test enstr."""
 import numpy as np
 import pytest
-from moirais.fn.enstr import enstr
+from morie.fn.enstr import enstr
 
 
 def test_enstr_basic():

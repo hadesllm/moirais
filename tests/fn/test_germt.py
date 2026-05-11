@@ -1,7 +1,7 @@
 """Test germt."""
 import numpy as np
 import pytest
-from moirais.fn.germt import germt
+from morie.fn.germt import germt
 
 
 def test_germt_basic():

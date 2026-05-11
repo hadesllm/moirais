@@ -1,7 +1,7 @@
 """Test soaws."""
 import numpy as np
 import pytest
-from moirais.fn.soaws import soaws
+from morie.fn.soaws import soaws
 
 
 def test_soaws_basic():

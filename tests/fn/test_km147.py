@@ -1,7 +1,7 @@
 """Tests for km147.kamath_ch9_output_alignment."""
 import numpy as np
 import pytest
-from moirais.fn.km147 import kamath_ch9_output_alignment
+from morie.fn.km147 import kamath_ch9_output_alignment
 
 
 def test_km147_basic():

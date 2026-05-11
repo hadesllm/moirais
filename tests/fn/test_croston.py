@@ -1,7 +1,7 @@
 """Tests for croston.croston."""
 import numpy as np
 import pytest
-from moirais.fn.croston import croston
+from morie.fn.croston import croston
 
 
 def test_croston_basic():

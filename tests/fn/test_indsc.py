@@ -1,6 +1,6 @@
 """Test indsc."""
 import numpy as np
-from moirais.fn.indsc import indscal_mds
+from morie.fn.indsc import indscal_mds
 
 
 def test_indsc_basic():

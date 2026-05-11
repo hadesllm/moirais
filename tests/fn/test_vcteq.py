@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vcteq — victim equity."""
+"""Tests for morie.fn.vcteq — victim equity."""
 
 import pytest
-from moirais.fn.vcteq import victim_equity
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.vcteq import victim_equity
+from morie.fn._containers import DescriptiveResult
 
 
 class TestVictimEquity:

@@ -1,7 +1,7 @@
 """Tests for alfldz.alphafold_loss_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.alfldz import alphafold_loss_decomposition
+from morie.fn.alfldz import alphafold_loss_decomposition
 
 
 def test_alfldz_basic():

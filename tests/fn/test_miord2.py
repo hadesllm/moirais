@@ -1,7 +1,7 @@
 """Tests for miord2.mi_chained_eq."""
 import numpy as np
 import pytest
-from moirais.fn.miord2 import mi_chained_eq
+from morie.fn.miord2 import mi_chained_eq
 
 
 def test_miord2_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzich.horowitz_ichimura_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.hrzich import horowitz_ichimura_estimator
+from morie.fn.hrzich import horowitz_ichimura_estimator
 
 
 def test_hrzich_basic():

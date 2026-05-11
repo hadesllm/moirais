@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zegin -- Spatial Gini coefficient"""
+"""Tests for morie.fn.zegin -- Spatial Gini coefficient"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zegin import gini_spatial
+from morie.fn.zegin import gini_spatial
 
 
 class TestGiniSpatial:

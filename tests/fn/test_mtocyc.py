@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mtocyc — cyclist."""
+"""Tests for morie.fn.mtocyc — cyclist."""
 
 import pytest
 import pandas as pd
-from moirais.fn.mtocyc import mto_cyclist
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtocyc import mto_cyclist
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCyclist:

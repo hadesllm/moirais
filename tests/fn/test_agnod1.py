@@ -1,7 +1,7 @@
 """Tests for agnod1.alphazero_node_init."""
 import numpy as np
 import pytest
-from moirais.fn.agnod1 import alphazero_node_init
+from morie.fn.agnod1 import alphazero_node_init
 
 
 def test_agnod1_basic():

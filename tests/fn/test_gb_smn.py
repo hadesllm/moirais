@@ -1,7 +1,7 @@
 """Tests for gb_smn.gibbons_smirnov_2sided."""
 import numpy as np
 import pytest
-from moirais.fn.gb_smn import gibbons_smirnov_2sided
+from morie.fn.gb_smn import gibbons_smirnov_2sided
 
 
 def test_gb_smn_basic():

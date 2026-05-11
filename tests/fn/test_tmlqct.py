@@ -1,7 +1,7 @@
 """Tests for tmlqct.tmle_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.tmlqct import tmle_quantile
+from morie.fn.tmlqct import tmle_quantile
 
 
 def test_tmlqct_basic():

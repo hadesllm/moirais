@@ -1,7 +1,7 @@
 """Test ubthr."""
 import numpy as np
 import pytest
-from moirais.fn.ubthr import ubthr
+from morie.fn.ubthr import ubthr
 
 
 def test_ubthr_basic():

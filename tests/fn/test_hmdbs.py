@@ -1,7 +1,7 @@
 """Tests for hmdbs.geron_dbscan."""
 import numpy as np
 import pytest
-from moirais.fn.hmdbs import geron_dbscan
+from morie.fn.hmdbs import geron_dbscan
 
 
 def test_hmdbs_basic():

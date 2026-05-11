@@ -1,7 +1,7 @@
 """Test gcwlf."""
 import numpy as np
 import pytest
-from moirais.fn.gcwlf import gcwlf
+from morie.fn.gcwlf import gcwlf
 
 
 def test_gcwlf_basic():

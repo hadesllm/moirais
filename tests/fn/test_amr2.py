@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.amr2 — A-M R-squared."""
+"""Tests for morie.fn.amr2 — A-M R-squared."""
 import numpy as np
-from moirais.fn.amr2 import amr2
+from morie.fn.amr2 import amr2
 
 
 def test_amr2_perfect():

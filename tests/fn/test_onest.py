@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.onest — One-step semiparametric ATE estimator."""
+"""Tests for morie.fn.onest — One-step semiparametric ATE estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.onest import onest
+from morie.fn.onest import onest
 
 
 @pytest.fixture()

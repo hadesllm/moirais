@@ -1,7 +1,7 @@
 """Test sepvl."""
 import numpy as np
 import pytest
-from moirais.fn.sepvl import sepvl
+from morie.fn.sepvl import sepvl
 
 
 def test_sepvl_basic():

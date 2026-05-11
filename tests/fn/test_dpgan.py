@@ -1,7 +1,7 @@
 """Tests for dpgan.dp_gan."""
 import numpy as np
 import pytest
-from moirais.fn.dpgan import dp_gan
+from morie.fn.dpgan import dp_gan
 
 
 def test_dpgan_basic():

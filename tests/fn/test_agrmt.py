@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.agrmt — Agreement score."""
+"""Tests for morie.fn.agrmt — Agreement score."""
 import numpy as np
-from moirais.fn.agrmt import agrmt
+from morie.fn.agrmt import agrmt
 
 
 def test_agrmt_perfect():

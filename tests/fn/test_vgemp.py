@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgemp -- Empirical semivariogram"""
+"""Tests for morie.fn.vgemp -- Empirical semivariogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgemp import empirical_vario
+from morie.fn.vgemp import empirical_vario
 
 
 class TestEmpiricalVario:

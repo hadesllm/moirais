@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vtmar."""
+"""Tests for morie.fn.vtmar."""
 
 import numpy as np
 import pytest
-from moirais.fn.vtmar import vtmar
+from morie.fn.vtmar import vtmar
 
 
 class TestVtmar:

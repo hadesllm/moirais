@@ -1,7 +1,7 @@
 """Test oos_predict."""
 import numpy as np
-from moirais.fn.oospr import oos_predict, oospr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.oospr import oos_predict, oospr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOosPredict:

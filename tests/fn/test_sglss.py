@@ -1,6 +1,6 @@
 """Tests for squared error loss."""
 import numpy as np
-from moirais.fn.sglss import sglss
+from morie.fn.sglss import sglss
 
 
 def test_sglss_smoke():
@@ -14,7 +14,7 @@ def test_sglss_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sglss import cheatsheet
+    from morie.fn.sglss import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

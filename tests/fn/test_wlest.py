@@ -1,7 +1,7 @@
 """Test wlest."""
 import numpy as np
 import pytest
-from moirais.fn.wlest import wlest
+from morie.fn.wlest import wlest
 
 
 def test_wlest_basic():

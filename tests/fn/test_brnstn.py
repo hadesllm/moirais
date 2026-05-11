@@ -1,7 +1,7 @@
 """Tests for brnstn.bernstein_inequality."""
 import numpy as np
 import pytest
-from moirais.fn.brnstn import bernstein_inequality
+from morie.fn.brnstn import bernstein_inequality
 
 
 def test_brnstn_basic():

@@ -1,7 +1,7 @@
 """Real knowledge is to know the extent of one's ignorance. — Confucius"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u22 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_22
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u22 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_22
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u22_basic():

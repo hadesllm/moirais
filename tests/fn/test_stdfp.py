@@ -1,7 +1,7 @@
 """Test stdfp."""
 import numpy as np
 import pytest
-from moirais.fn.stdfp import stdfp
+from morie.fn.stdfp import stdfp
 
 
 def test_stdfp_basic():

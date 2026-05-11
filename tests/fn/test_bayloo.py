@@ -1,7 +1,7 @@
 """Tests for bayloo.loo_psi."""
 import numpy as np
 import pytest
-from moirais.fn.bayloo import loo_psi
+from morie.fn.bayloo import loo_psi
 
 
 def test_bayloo_basic():

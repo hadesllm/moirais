@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.elrun."""
+"""Tests for morie.fn.elrun."""
 
 import numpy as np
 import pytest
-from moirais.fn.elrun import elrun
+from morie.fn.elrun import elrun
 
 
 class TestElrun:

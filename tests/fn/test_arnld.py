@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.arnld -- Arnoldi iteration."""
+"""Tests for morie.fn.arnld -- Arnoldi iteration."""
 
 import numpy as np
-from moirais.fn.arnld import arnoldi, arnld
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.arnld import arnoldi, arnld
+from morie.fn._containers import DescriptiveResult
 
 
 class TestArnld:

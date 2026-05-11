@@ -1,7 +1,7 @@
 """Tests for kmlora.kamath_lora_weight_update."""
 import numpy as np
 import pytest
-from moirais.fn.kmlora import kamath_lora_weight_update
+from morie.fn.kmlora import kamath_lora_weight_update
 
 
 def test_kmlora_basic():

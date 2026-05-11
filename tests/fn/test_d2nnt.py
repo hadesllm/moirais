@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.d2nnt -- Convert Cohen's d to NNT."""
+"""Tests for morie.fn.d2nnt -- Convert Cohen's d to NNT."""
 
 import numpy as np
 import pytest
-from moirais.fn.d2nnt import d_to_nnt
+from morie.fn.d2nnt import d_to_nnt
 
 
 class TestDToNNT:

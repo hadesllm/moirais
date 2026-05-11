@@ -1,7 +1,7 @@
 """Test vmcir."""
 import numpy as np
 import pytest
-from moirais.fn.vmcir import vmcir
+from morie.fn.vmcir import vmcir
 
 
 def test_vmcir_basic():

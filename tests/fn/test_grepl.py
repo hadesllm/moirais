@@ -1,7 +1,7 @@
 """Tests for grepl.geron_epsilon_greedy."""
 import numpy as np
 import pytest
-from moirais.fn.grepl import geron_epsilon_greedy
+from morie.fn.grepl import geron_epsilon_greedy
 
 
 def test_grepl_basic():

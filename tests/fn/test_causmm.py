@@ -1,7 +1,7 @@
 """Tests for causmm.causal_mahalanobis_match."""
 import numpy as np
 import pytest
-from moirais.fn.causmm import causal_mahalanobis_match
+from morie.fn.causmm import causal_mahalanobis_match
 
 
 def test_causmm_basic():

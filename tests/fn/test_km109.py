@@ -1,7 +1,7 @@
 """Tests for km109.kamath_ch6_perplexity_leakage."""
 import numpy as np
 import pytest
-from moirais.fn.km109 import kamath_ch6_perplexity_leakage
+from morie.fn.km109 import kamath_ch6_perplexity_leakage
 
 
 def test_km109_basic():

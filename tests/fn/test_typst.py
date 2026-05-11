@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.typst — typical set."""
+"""Tests for morie.fn.typst — typical set."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.typst import typst
+from morie.fn.typst import typst
 
 
 class TestTypst:

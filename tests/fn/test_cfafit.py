@@ -1,7 +1,7 @@
 """Tests for cfafit.cfa_fit_indices."""
 import numpy as np
 import pytest
-from moirais.fn.cfafit import cfa_fit_indices
+from morie.fn.cfafit import cfa_fit_indices
 
 
 def test_cfafit_basic():

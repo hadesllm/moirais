@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cltrn -- Cluster trial sample size."""
+"""Tests for morie.fn.cltrn -- Cluster trial sample size."""
 
 import pytest
-from moirais.fn.cltrn import cluster_trial_size
+from morie.fn.cltrn import cluster_trial_size
 
 
 class TestClusterTrial:

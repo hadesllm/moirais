@@ -1,7 +1,7 @@
 """Test wlrst."""
 import numpy as np
 import pytest
-from moirais.fn.wlrst import wlrst
+from morie.fn.wlrst import wlrst
 
 
 def test_wlrst_basic():

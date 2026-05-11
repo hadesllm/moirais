@@ -1,7 +1,7 @@
 """Tests for fzse.fauzi_sign_moments."""
 import numpy as np
 import pytest
-from moirais.fn.fzse import fauzi_sign_moments
+from morie.fn.fzse import fauzi_sign_moments
 
 
 def test_fzse_basic():

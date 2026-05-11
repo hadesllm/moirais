@@ -1,7 +1,7 @@
 """Tests for h2est.heritability_lmm."""
 import numpy as np
 import pytest
-from moirais.fn.h2est import heritability_lmm
+from morie.fn.h2est import heritability_lmm
 
 
 def test_h2est_basic():

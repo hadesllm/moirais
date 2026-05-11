@@ -1,7 +1,7 @@
 """Test soagg."""
 import numpy as np
 import pytest
-from moirais.fn.soagg import soagg
+from morie.fn.soagg import soagg
 
 
 def test_soagg_basic():

@@ -1,7 +1,7 @@
 """Tests for hmphp.geron_peephole_lstm."""
 import numpy as np
 import pytest
-from moirais.fn.hmphp import geron_peephole_lstm
+from morie.fn.hmphp import geron_peephole_lstm
 
 
 def test_hmphp_basic():

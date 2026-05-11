@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.gtime — Generation time distribution."""
+"""Tests for morie.fn.gtime — Generation time distribution."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.gtime import generation_time
+from morie.fn.gtime import generation_time
 
 
 class TestGenerationTime:

@@ -1,7 +1,7 @@
 """Tests for rng227.rangayyan_ch4_matched_filter_optimal_H_eeg."""
 import numpy as np
 import pytest
-from moirais.fn.rng227 import rangayyan_ch4_matched_filter_optimal_H_eeg
+from morie.fn.rng227 import rangayyan_ch4_matched_filter_optimal_H_eeg
 
 
 def test_rng227_basic():

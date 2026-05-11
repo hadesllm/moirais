@@ -1,7 +1,7 @@
 """Test ppclp."""
 import numpy as np
 import pytest
-from moirais.fn.ppclp import ppclp
+from morie.fn.ppclp import ppclp
 
 
 def test_ppclp_basic():

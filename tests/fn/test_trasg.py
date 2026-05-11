@@ -1,7 +1,7 @@
 """Test trasg."""
 import numpy as np
 import pytest
-from moirais.fn.trasg import trasg
+from morie.fn.trasg import trasg
 
 
 def test_trasg_basic():

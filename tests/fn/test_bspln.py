@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bspln -- Bayesian spline."""
+"""Tests for morie.fn.bspln -- Bayesian spline."""
 
 import numpy as np
-from moirais.fn.bspln import bayesian_spline
+from morie.fn.bspln import bayesian_spline
 
 
 def test_returns_dict():

@@ -1,7 +1,7 @@
 """Tests for bkprp.backpropagation."""
 import numpy as np
 import pytest
-from moirais.fn.bkprp import backpropagation
+from morie.fn.bkprp import backpropagation
 
 
 def test_bkprp_basic():

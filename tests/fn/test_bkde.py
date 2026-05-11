@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bkde — Boundary-corrected KDE."""
+"""Tests for morie.fn.bkde — Boundary-corrected KDE."""
 
 import numpy as np
 import pytest
-from moirais.fn.bkde import bkde
+from morie.fn.bkde import bkde
 
 
 def test_returns_dict():

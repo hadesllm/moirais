@@ -1,7 +1,7 @@
 """Tests for wsmasm.wasserman_mle_asymptotic."""
 import numpy as np
 import pytest
-from moirais.fn.wsmasm import wasserman_mle_asymptotic
+from morie.fn.wsmasm import wasserman_mle_asymptotic
 
 
 def test_wsmasm_basic():

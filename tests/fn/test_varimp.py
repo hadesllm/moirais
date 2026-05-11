@@ -1,7 +1,7 @@
 """Tests for varimp.var_impulse_response."""
 import numpy as np
 import pytest
-from moirais.fn.varimp import var_impulse_response
+from morie.fn.varimp import var_impulse_response
 
 
 def test_varimp_basic():

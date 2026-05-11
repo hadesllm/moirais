@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgmdr -- Madogram estimator"""
+"""Tests for morie.fn.vgmdr -- Madogram estimator"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgmdr import madogram
+from morie.fn.vgmdr import madogram
 
 
 class TestMadogram:

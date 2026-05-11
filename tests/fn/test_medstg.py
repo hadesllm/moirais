@@ -1,7 +1,7 @@
 """Tests for medstg.sequential_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.medstg import sequential_mediation
+from morie.fn.medstg import sequential_mediation
 
 
 def test_medstg_basic():

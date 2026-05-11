@@ -1,7 +1,7 @@
 """Tests for kmnf4.kamath_nf4_datatype."""
 import numpy as np
 import pytest
-from moirais.fn.kmnf4 import kamath_nf4_datatype
+from morie.fn.kmnf4 import kamath_nf4_datatype
 
 
 def test_kmnf4_basic():

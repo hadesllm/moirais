@@ -1,7 +1,7 @@
 """Tests for km110.kamath_ch7_rrf_score."""
 import numpy as np
 import pytest
-from moirais.fn.km110 import kamath_ch7_rrf_score
+from morie.fn.km110 import kamath_ch7_rrf_score
 
 
 def test_km110_basic():

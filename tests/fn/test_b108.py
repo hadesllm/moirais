@@ -1,7 +1,7 @@
 """Tests for b108.burkov_lm_ch1_logistic_regression."""
 import numpy as np
 import pytest
-from moirais.fn.b108 import burkov_lm_ch1_logistic_regression
+from morie.fn.b108 import burkov_lm_ch1_logistic_regression
 
 
 def test_b108_basic():

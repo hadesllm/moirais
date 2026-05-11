@@ -1,7 +1,7 @@
 """Tests for hmelu.geron_elu."""
 import numpy as np
 import pytest
-from moirais.fn.hmelu import geron_elu
+from morie.fn.hmelu import geron_elu
 
 
 def test_hmelu_basic():

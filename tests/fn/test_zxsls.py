@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsls -- Spatial LASSO"""
+"""Tests for morie.fn.zxsls -- Spatial LASSO"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsls import spatial_lasso
+from morie.fn.zxsls import spatial_lasso
 
 
 class TestSpatialLasso:

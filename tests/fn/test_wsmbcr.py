@@ -1,7 +1,7 @@
 """Tests for wsmbcr.wasserman_credible_interval."""
 import numpy as np
 import pytest
-from moirais.fn.wsmbcr import wasserman_credible_interval
+from morie.fn.wsmbcr import wasserman_credible_interval
 
 
 def test_wsmbcr_basic():

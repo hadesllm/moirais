@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.md_pat -- missing data pattern analysis."""
+"""Tests for morie.fn.md_pat -- missing data pattern analysis."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.md_pat import missing_data_patterns
+from morie.fn.md_pat import missing_data_patterns
 
 
 class TestMissingDataPatterns:

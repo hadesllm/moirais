@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cmpvl — compliance violation."""
+"""Tests for morie.fn.cmpvl — compliance violation."""
 
 import pytest
 import numpy as np
-from moirais.fn.cmpvl import compliance_violation
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cmpvl import compliance_violation
+from morie.fn._containers import DescriptiveResult
 
 
 class TestComplianceViolation:

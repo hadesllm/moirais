@@ -1,7 +1,7 @@
 """Tests for hrznqiv.horowitz_nonpar_quantile_iv."""
 import numpy as np
 import pytest
-from moirais.fn.hrznqiv import horowitz_nonpar_quantile_iv
+from morie.fn.hrznqiv import horowitz_nonpar_quantile_iv
 
 
 def test_hrznqiv_basic():

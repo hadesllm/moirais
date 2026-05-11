@@ -1,7 +1,7 @@
 """Tests for fzhok.fauzi_higher_order_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.fzhok import fauzi_higher_order_kernel
+from morie.fn.fzhok import fauzi_higher_order_kernel
 
 
 def test_fzhok_basic():

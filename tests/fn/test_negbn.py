@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.negbn import negative_binomial_reg
+from morie.fn.negbn import negative_binomial_reg
 
 
 def test_negbn_basic():

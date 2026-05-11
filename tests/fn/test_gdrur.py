@@ -1,7 +1,7 @@
 """Test gdrur."""
 import numpy as np
 import pytest
-from moirais.fn.gdrur import gdrur
+from morie.fn.gdrur import gdrur
 
 
 def test_gdrur_basic():

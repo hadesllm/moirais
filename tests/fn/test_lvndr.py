@@ -1,7 +1,7 @@
 """Tests for lvndr.py - Levinson-Durbin recursion."""
 import numpy as np
 import pytest
-from moirais.fn.lvndr import levinson_durbin_fn, lvndr
+from morie.fn.lvndr import levinson_durbin_fn, lvndr
 
 
 def test_levinson_durbin_returns_descriptive_result():

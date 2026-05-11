@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.sigmd."""
+"""Tests for morie.fn.sigmd."""
 import numpy as np
-from moirais.fn.sigmd import sigmoid
+from morie.fn.sigmd import sigmoid
 
 
 def test_sigmd_smoke():
@@ -12,7 +12,7 @@ def test_sigmd_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sigmd import cheatsheet
+    from morie.fn.sigmd import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

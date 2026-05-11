@@ -1,7 +1,7 @@
 """Tests for acrt.actor_critic."""
 import numpy as np
 import pytest
-from moirais.fn.acrt import actor_critic
+from morie.fn.acrt import actor_critic
 
 
 def test_acrt_basic():

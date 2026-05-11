@@ -1,7 +1,7 @@
 """Test voroni."""
 import numpy as np
 import pytest
-from moirais.fn.voroni import voroni
+from morie.fn.voroni import voroni
 
 
 def test_voroni_basic():

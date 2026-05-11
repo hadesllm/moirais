@@ -1,7 +1,7 @@
 """Tests for gb1461o.gibbons_ordered_categories."""
 import numpy as np
 import pytest
-from moirais.fn.gb1461o import gibbons_ordered_categories
+from morie.fn.gb1461o import gibbons_ordered_categories
 
 
 def test_gb1461o_basic():

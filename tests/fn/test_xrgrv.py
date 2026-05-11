@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrgrv -- Gravity spatial interaction"""
+"""Tests for morie.fn.xrgrv -- Gravity spatial interaction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrgrv import gravity_model
+from morie.fn.xrgrv import gravity_model
 
 
 class TestGravityModel:

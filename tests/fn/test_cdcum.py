@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cdcum -- cumulative incidence."""
+"""Tests for morie.fn.cdcum -- cumulative incidence."""
 
 import pytest
-from moirais.fn.cdcum import cumulative_incidence
+from morie.fn.cdcum import cumulative_incidence
 
 
 class TestCumulativeIncidence:

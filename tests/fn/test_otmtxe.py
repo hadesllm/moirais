@@ -1,7 +1,7 @@
 """Tests for otmtxe.ot_matrix_scaling."""
 import numpy as np
 import pytest
-from moirais.fn.otmtxe import ot_matrix_scaling
+from morie.fn.otmtxe import ot_matrix_scaling
 
 
 def test_otmtxe_basic():

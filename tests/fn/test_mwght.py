@@ -1,7 +1,7 @@
 """Tests for mwght.molecular_weight."""
 import numpy as np
 import pytest
-from moirais.fn.mwght import molecular_weight
+from morie.fn.mwght import molecular_weight
 
 
 def test_mwght_basic():

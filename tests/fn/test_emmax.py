@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.emmax -- EM maximization step."""
+"""Tests for morie.fn.emmax -- EM maximization step."""
 import numpy as np
-from moirais.fn.emmax import em_maximization_step, emmax
+from morie.fn.emmax import em_maximization_step, emmax
 
 
 def test_alias():

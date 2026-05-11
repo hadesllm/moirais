@@ -1,7 +1,7 @@
 """Tests for cqtmpl.cim_qtl."""
 import numpy as np
 import pytest
-from moirais.fn.cqtmpl import cim_qtl
+from morie.fn.cqtmpl import cim_qtl
 
 
 def test_cqtmpl_basic():

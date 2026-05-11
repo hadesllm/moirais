@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.elbow -- Elbow method for optimal k."""
+"""Tests for morie.fn.elbow -- Elbow method for optimal k."""
 
 import numpy as np
-from moirais.fn.elbow import elbow_method
+from morie.fn.elbow import elbow_method
 
 
 class TestElbowMethod:

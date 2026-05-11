@@ -1,7 +1,7 @@
 """Test ubedu."""
 import numpy as np
 import pytest
-from moirais.fn.ubedu import ubedu
+from morie.fn.ubedu import ubedu
 
 
 def test_ubedu_basic():

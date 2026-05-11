@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gmrss -- GMRES solver."""
+"""Tests for morie.fn.gmrss -- GMRES solver."""
 
 import numpy as np
-from moirais.fn.gmrss import gmres_solve, gmrss
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.gmrss import gmres_solve, gmrss
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGmrss:

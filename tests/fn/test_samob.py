@@ -1,7 +1,7 @@
 """Test samob."""
 import numpy as np
 import pytest
-from moirais.fn.samob import samob
+from morie.fn.samob import samob
 
 
 def test_samob_basic():

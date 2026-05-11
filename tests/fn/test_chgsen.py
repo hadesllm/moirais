@@ -1,7 +1,7 @@
 """Tests for chgsen.change_of_variance."""
 import numpy as np
 import pytest
-from moirais.fn.chgsen import change_of_variance
+from morie.fn.chgsen import change_of_variance
 
 
 def test_chgsen_basic():

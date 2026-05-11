@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.schwz -- Schwarzschild metric."""
+"""Tests for morie.fn.schwz -- Schwarzschild metric."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.schwz import schwz
+from morie.fn.schwz import schwz
 
 
 def test_returns_dict():

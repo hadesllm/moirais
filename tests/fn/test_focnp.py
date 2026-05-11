@@ -1,7 +1,7 @@
 """Test focnp."""
 import numpy as np
 import pytest
-from moirais.fn.focnp import focnp
+from morie.fn.focnp import focnp
 
 
 def test_focnp_basic():

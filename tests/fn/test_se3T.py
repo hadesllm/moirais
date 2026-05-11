@@ -1,7 +1,7 @@
 """Tests for se3T.se3_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.se3T import se3_transformer
+from morie.fn.se3T import se3_transformer
 
 
 def test_se3T_basic():

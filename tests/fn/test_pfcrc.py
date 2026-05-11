@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pfcrc -- preference circles."""
+"""Tests for morie.fn.pfcrc -- preference circles."""
 
 import numpy as np
-from moirais.fn.pfcrc import preference_circles, pfcrc
+from morie.fn.pfcrc import preference_circles, pfcrc
 
 
 def test_pfcrc_smoke():

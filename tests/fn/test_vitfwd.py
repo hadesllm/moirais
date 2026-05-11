@@ -1,7 +1,7 @@
 """Tests for vitfwd.vit_forward."""
 import numpy as np
 import pytest
-from moirais.fn.vitfwd import vit_forward
+from morie.fn.vitfwd import vit_forward
 
 
 def test_vitfwd_basic():

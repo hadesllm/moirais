@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ppurs -- Projection pursuit."""
+"""Tests for morie.fn.ppurs -- Projection pursuit."""
 
 import numpy as np
-from moirais.fn.ppurs import projection_pursuit, ppurs
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ppurs import projection_pursuit, ppurs
+from morie.fn._containers import DescriptiveResult
 
 
 class TestProjectionPursuit:

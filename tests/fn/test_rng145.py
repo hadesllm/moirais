@@ -1,7 +1,7 @@
 """Tests for rng145.rangayyan_ch3_wiener_hopf_normal_equation."""
 import numpy as np
 import pytest
-from moirais.fn.rng145 import rangayyan_ch3_wiener_hopf_normal_equation
+from morie.fn.rng145 import rangayyan_ch3_wiener_hopf_normal_equation
 
 
 def test_rng145_basic():

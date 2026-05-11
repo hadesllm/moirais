@@ -1,10 +1,10 @@
 Survey Sampling
 ================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS provides a complete probabilistic sampling toolkit for epidemiological
-surveys. All methods are implemented in :mod:`moirais.sampling`.
+MORIE provides a complete probabilistic sampling toolkit for epidemiological
+surveys. All methods are implemented in :mod:`morie.sampling`.
 
 Simple Random Sampling
 -----------------------
@@ -16,7 +16,7 @@ unweighted sample mean :math:`\bar{y}`.
 With replacement (SRS WR), finite-population correction
 :math:`\text{fpc} = 1 - n/N` applies to the variance estimate.
 
-**Python**: :func:`moirais.sampling.simple_random_sample`
+**Python**: :func:`morie.sampling.simple_random_sample`
 
 Stratified Random Sampling
 ----------------------------
@@ -36,7 +36,7 @@ variance for equal within-stratum variances.
 variance given a fixed :math:`n`, where :math:`S_h` is the stratum standard
 deviation.
 
-**Python**: :func:`moirais.sampling.stratified_sample`
+**Python**: :func:`morie.sampling.stratified_sample`
 
 Cluster Sampling
 -----------------
@@ -59,7 +59,7 @@ variance relative to SRS.  The design effect (DEFF) measures this inflation:
 where :math:`\bar{m}` is the mean cluster size and :math:`\rho_{\text{ICC}}`
 is the intra-class correlation.
 
-**Python**: :func:`moirais.sampling.cluster_sample`
+**Python**: :func:`morie.sampling.cluster_sample`
 
 Probability Proportional to Size (PPS)
 ----------------------------------------
@@ -73,7 +73,7 @@ measure :math:`x_i` (e.g. enrolment count):
 
 PPS is more efficient than SRS when the outcome is correlated with size.
 
-**Python**: :func:`moirais.sampling.pps_sample`
+**Python**: :func:`morie.sampling.pps_sample`
 
 Horvitz-Thompson and Hájek Estimators
 ---------------------------------------
@@ -92,8 +92,8 @@ For any probability sample with known inclusion probabilities :math:`\pi_i`:
 
    \bar{y}_H = \frac{\sum_{i \in s} y_i / \pi_i}{\sum_{i \in s} 1 / \pi_i}
 
-**Python**: :func:`moirais.sampling.horvitz_thompson_total`,
-:func:`moirais.survey.hajek_mean`
+**Python**: :func:`morie.sampling.horvitz_thompson_total`,
+:func:`morie.survey.hajek_mean`
 
 Bootstrap and Jackknife Variance Estimation
 ---------------------------------------------
@@ -116,8 +116,8 @@ analytic variances are unavailable:
    \frac{n-1}{n} \sum_{i=1}^{n}
    \bigl(\hat{\theta}_{(-i)} - \bar{\theta}_{(.)} \bigr)^2
 
-**Python**: :func:`moirais.sampling.bootstrap_sample`,
-:func:`moirais.sampling.jackknife_estimate`
+**Python**: :func:`morie.sampling.bootstrap_sample`,
+:func:`morie.sampling.jackknife_estimate`
 
 Effective Sample Size
 ----------------------
@@ -132,8 +132,8 @@ effective sample size (ESS) quantifies the equivalent SRS size:
 The design effect :math:`\text{DEFF} = n / \text{ESS}` measures variance
 inflation relative to a simple random sample of the same size.
 
-**Python**: :func:`moirais.sampling.effective_sample_size`,
-:func:`moirais.sampling.design_effect`
+**Python**: :func:`morie.sampling.effective_sample_size`,
+:func:`morie.sampling.design_effect`
 
 Calibration / Raking
 ---------------------
@@ -148,10 +148,10 @@ Post-stratification and raking calibrate sample weights so that
    \sum_i w_i x_{ij} = T_j \; \forall j
 
 where :math:`d(\cdot)` is a distance function (chi-squared → linear
-calibration; multiplicative → raking).  MOIRAIS uses iterative proportional
+calibration; multiplicative → raking).  MORIE uses iterative proportional
 fitting (IPF).
 
-**Python**: :func:`moirais.survey.calibration_weights`
+**Python**: :func:`morie.survey.calibration_weights`
 
 References
 ----------

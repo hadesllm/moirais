@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dicon -- DIC."""
+"""Tests for morie.fn.dicon -- DIC."""
 
 import numpy as np
-from moirais.fn.dicon import compute_dic
+from morie.fn.dicon import compute_dic
 
 
 def test_returns_dict():

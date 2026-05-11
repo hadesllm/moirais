@@ -1,7 +1,7 @@
 """Tests for agrec.andersen_gill_recurrent."""
 import numpy as np
 import pytest
-from moirais.fn.agrec import andersen_gill_recurrent
+from morie.fn.agrec import andersen_gill_recurrent
 
 
 def test_agrec_basic():

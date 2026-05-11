@@ -1,7 +1,7 @@
 """Tests for rng075.rangayyan_ch3_idft_real_imag."""
 import numpy as np
 import pytest
-from moirais.fn.rng075 import rangayyan_ch3_idft_real_imag
+from morie.fn.rng075 import rangayyan_ch3_idft_real_imag
 
 
 def test_rng075_basic():

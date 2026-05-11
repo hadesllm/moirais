@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.holo_a -- ACF/PACF plot."""
+"""Tests for morie.fn.holo_a -- ACF/PACF plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.holo_a import holo_acf
+from morie.fn.holo_a import holo_acf
 
 
 class TestHoloAcf:

@@ -1,7 +1,7 @@
 """Test agbui."""
 import numpy as np
 import pytest
-from moirais.fn.agbui import agbui
+from morie.fn.agbui import agbui
 
 
 def test_agbui_basic():

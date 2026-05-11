@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgprd -- Kriging prediction surface"""
+"""Tests for morie.fn.kgprd -- Kriging prediction surface"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgprd import kriging_predict
+from morie.fn.kgprd import kriging_predict
 
 
 class TestKrigingPredict:

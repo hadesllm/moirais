@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qbnm — binomial quantile function."""
+"""Tests for morie.fn.qbnm — binomial quantile function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qbnm import qbinom
+from morie.fn.qbnm import qbinom
 
 
 class TestQbinom:

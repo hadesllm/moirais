@@ -1,7 +1,7 @@
 """Tests for grsen.geron_senet_squeeze_excite."""
 import numpy as np
 import pytest
-from moirais.fn.grsen import geron_senet_squeeze_excite
+from morie.fn.grsen import geron_senet_squeeze_excite
 
 
 def test_grsen_basic():

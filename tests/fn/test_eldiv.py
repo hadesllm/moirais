@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.eldiv."""
+"""Tests for morie.fn.eldiv."""
 
 import numpy as np
 import pytest
-from moirais.fn.eldiv import eldiv
+from morie.fn.eldiv import eldiv
 
 
 class TestEldiv:

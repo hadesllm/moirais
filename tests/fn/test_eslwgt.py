@@ -1,7 +1,7 @@
 """Tests for eslwgt.esl_weight_decay."""
 import numpy as np
 import pytest
-from moirais.fn.eslwgt import esl_weight_decay
+from morie.fn.eslwgt import esl_weight_decay
 
 
 def test_eslwgt_basic():

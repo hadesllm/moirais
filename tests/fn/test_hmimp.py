@@ -1,7 +1,7 @@
 """Tests for hmimp.geron_imputation_median."""
 import numpy as np
 import pytest
-from moirais.fn.hmimp import geron_imputation_median
+from morie.fn.hmimp import geron_imputation_median
 
 
 def test_hmimp_basic():

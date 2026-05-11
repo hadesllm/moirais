@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rchisq — chi-squared random variates."""
+"""Tests for morie.fn.rchisq — chi-squared random variates."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rchisq import rchisq
+from morie.fn.rchisq import rchisq
 
 
 class TestRchisq:

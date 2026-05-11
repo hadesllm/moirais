@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.raven -- Raven's Progressive Matrices scoring."""
+"""Tests for morie.fn.raven -- Raven's Progressive Matrices scoring."""
 
 import numpy as np
-from moirais.fn.raven import raven_score, raven
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.raven import raven_score, raven
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRaven:

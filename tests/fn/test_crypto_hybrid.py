@@ -1,10 +1,10 @@
-"""Tests for moirais.crypto.hybrid — Hybrid KEM-DEM encryption."""
+"""Tests for morie.crypto.hybrid — Hybrid KEM-DEM encryption."""
 
 import os
 
 import pytest
 
-from moirais.crypto.hybrid import hybrid_decrypt, hybrid_encrypt, keygen
+from morie.crypto.hybrid import hybrid_decrypt, hybrid_encrypt, keygen
 
 
 class TestHybridEncryption:

@@ -1,7 +1,7 @@
 """Test cldiv."""
 import numpy as np
 import pytest
-from moirais.fn.cldiv import cldiv
+from morie.fn.cldiv import cldiv
 
 
 def test_cldiv_basic():

@@ -1,7 +1,7 @@
 """Tests for bkrep.burkov_repetition_penalty."""
 import numpy as np
 import pytest
-from moirais.fn.bkrep import burkov_repetition_penalty
+from morie.fn.bkrep import burkov_repetition_penalty
 
 
 def test_bkrep_basic():

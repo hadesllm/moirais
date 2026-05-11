@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgcir -- Circular variogram model"""
+"""Tests for morie.fn.vgcir -- Circular variogram model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgcir import vario_circular
+from morie.fn.vgcir import vario_circular
 
 
 class TestVarioCircular:

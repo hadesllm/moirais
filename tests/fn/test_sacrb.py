@@ -1,7 +1,7 @@
 """Tests for sacrb.sacrebleu."""
 import numpy as np
 import pytest
-from moirais.fn.sacrb import sacrebleu
+from morie.fn.sacrb import sacrebleu
 
 
 def test_sacrb_basic():

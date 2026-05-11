@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bypvl -- Bayesian p-value."""
+"""Tests for morie.fn.bypvl -- Bayesian p-value."""
 import numpy as np
-from moirais.fn.bypvl import bayesian_p_value, bypvl
+from morie.fn.bypvl import bayesian_p_value, bypvl
 
 
 def test_alias():

@@ -1,7 +1,7 @@
 """Test white_noise_gen (whtns)."""
 import numpy as np
-from moirais.fn.whtns import white_noise_gen, whtns
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.whtns import white_noise_gen, whtns
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWhiteNoise:

@@ -1,7 +1,7 @@
 """Tests for km129.kamath_ch9_modality_encoder."""
 import numpy as np
 import pytest
-from moirais.fn.km129 import kamath_ch9_modality_encoder
+from morie.fn.km129 import kamath_ch9_modality_encoder
 
 
 def test_km129_basic():

@@ -1,7 +1,7 @@
 """Tests for ppoc.ppo."""
 import numpy as np
 import pytest
-from moirais.fn.ppoc import ppo
+from morie.fn.ppoc import ppo
 
 
 def test_ppoc_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tankg -- neural network training."""
+"""Tests for morie.fn.tankg -- neural network training."""
 
 import numpy as np
-from moirais.fn.tankg import nn_train, tankg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tankg import nn_train, tankg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTankg:

@@ -1,7 +1,7 @@
 """Tests for avtdid.avg_treatment_did."""
 import numpy as np
 import pytest
-from moirais.fn.avtdid import avg_treatment_did
+from morie.fn.avtdid import avg_treatment_did
 
 
 def test_avtdid_basic():

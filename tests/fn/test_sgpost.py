@@ -1,7 +1,7 @@
 """Tests for sgpost."""
 import numpy as np
 import pytest
-from moirais.fn.sgpost import sgpost
+from morie.fn.sgpost import sgpost
 
 
 def test_sgpost_basic():
@@ -27,5 +27,5 @@ def test_sgpost_no_data():
 
 
 def test_sgpost_alias():
-    from moirais.fn.sgpost import sgpost
+    from morie.fn.sgpost import sgpost
     assert sgpost is sgpost

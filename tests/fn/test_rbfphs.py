@@ -1,7 +1,7 @@
 """Tests for rbfphs."""
 import numpy as np
 import pytest
-from moirais.fn.rbfphs import rbfphs
+from morie.fn.rbfphs import rbfphs
 
 
 def test_rbfphs_basic():
@@ -27,5 +27,5 @@ def test_rbfphs_no_data():
 
 
 def test_rbfphs_alias():
-    from moirais.fn.rbfphs import rbfphs
+    from morie.fn.rbfphs import rbfphs
     assert rbfphs is rbfphs

@@ -1,7 +1,7 @@
 """Luck is what happens when preparation meets opportunity. — Seneca"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u41 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_41
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u41 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_41
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u41_basic():

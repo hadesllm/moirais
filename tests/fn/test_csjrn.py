@@ -1,7 +1,7 @@
 """Test csjrn."""
 import numpy as np
 import pytest
-from moirais.fn.csjrn import csjrn
+from morie.fn.csjrn import csjrn
 
 
 def test_csjrn_basic():

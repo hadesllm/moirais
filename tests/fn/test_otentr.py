@@ -1,7 +1,7 @@
 """Tests for otentr.ot_entropy_regulariser."""
 import numpy as np
 import pytest
-from moirais.fn.otentr import ot_entropy_regulariser
+from morie.fn.otentr import ot_entropy_regulariser
 
 
 def test_otentr_basic():

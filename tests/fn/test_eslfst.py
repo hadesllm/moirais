@@ -1,7 +1,7 @@
 """Tests for eslfst.esl_f_test."""
 import numpy as np
 import pytest
-from moirais.fn.eslfst import esl_f_test
+from morie.fn.eslfst import esl_f_test
 
 
 def test_eslfst_basic():

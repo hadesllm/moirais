@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.mlscv -- MLSMU6 convergence check."""
+"""Tests for morie.fn.mlscv -- MLSMU6 convergence check."""
 
-from moirais.fn.mlscv import mlsmu6_convergence_check, mlscv
+from morie.fn.mlscv import mlsmu6_convergence_check, mlscv
 
 
 def test_mlscv_converged():

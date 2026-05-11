@@ -1,7 +1,7 @@
 """Tests for ehhdec.ehh_decay."""
 import numpy as np
 import pytest
-from moirais.fn.ehhdec import ehh_decay
+from morie.fn.ehhdec import ehh_decay
 
 
 def test_ehhdec_basic():

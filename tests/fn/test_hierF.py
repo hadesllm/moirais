@@ -1,7 +1,7 @@
 """Tests for hierF.hierarchical_forecast."""
 import numpy as np
 import pytest
-from moirais.fn.hierF import hierarchical_forecast
+from morie.fn.hierF import hierarchical_forecast
 
 
 def test_hierF_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.csttm — custody time served distribution."""
+"""Tests for morie.fn.csttm — custody time served distribution."""
 
-from moirais.fn.csttm import custody_time_served
+from morie.fn.csttm import custody_time_served
 
 
 class TestCustodyTimeServed:

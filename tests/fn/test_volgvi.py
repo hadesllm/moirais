@@ -1,7 +1,7 @@
 """Tests for volgvi.vol_garch_var_impl."""
 import numpy as np
 import pytest
-from moirais.fn.volgvi import vol_garch_var_impl
+from morie.fn.volgvi import vol_garch_var_impl
 
 
 def test_volgvi_basic():

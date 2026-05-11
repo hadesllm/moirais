@@ -1,7 +1,7 @@
 """Tests for mqtmpl.multi_qtl."""
 import numpy as np
 import pytest
-from moirais.fn.mqtmpl import multi_qtl
+from morie.fn.mqtmpl import multi_qtl
 
 
 def test_mqtmpl_basic():

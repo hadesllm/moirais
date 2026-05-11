@@ -1,7 +1,7 @@
 """Tests for ambtc.am_bootstrap_se."""
 import numpy as np
 import pytest
-from moirais.fn.ambtc import am_bootstrap_se
+from morie.fn.ambtc import am_bootstrap_se
 
 
 def test_ambtc_basic():

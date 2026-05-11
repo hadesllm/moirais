@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.stprd — Spatio-temporal prediction intervals."""
+"""Tests for morie.fn.stprd — Spatio-temporal prediction intervals."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.stprd import stprd
+from morie.fn.stprd import stprd
 
 
 class TestStprd:

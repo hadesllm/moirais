@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.obund — OTIS Manski bounds."""
+"""Tests for morie.fn.obund — OTIS Manski bounds."""
 
 import pytest
-from moirais.fn.obund import otis_bounds
-from moirais.fn._containers import ESRes
+from morie.fn.obund import otis_bounds
+from morie.fn._containers import ESRes
 
 
 class TestOtisBounds:

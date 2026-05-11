@@ -1,7 +1,7 @@
 """Test wqbod."""
 import numpy as np
 import pytest
-from moirais.fn.wqbod import wqbod
+from morie.fn.wqbod import wqbod
 
 
 def test_wqbod_basic():

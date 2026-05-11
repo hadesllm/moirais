@@ -1,7 +1,7 @@
 """Tests for gb_are2.gibbons_are_normal_case."""
 import numpy as np
 import pytest
-from moirais.fn.gb_are2 import gibbons_are_normal_case
+from morie.fn.gb_are2 import gibbons_are_normal_case
 
 
 def test_gb_are2_basic():

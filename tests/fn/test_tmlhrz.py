@@ -1,7 +1,7 @@
 """Tests for tmlhrz.tmle_hazard_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.tmlhrz import tmle_hazard_ratio
+from morie.fn.tmlhrz import tmle_hazard_ratio
 
 
 def test_tmlhrz_basic():

@@ -1,7 +1,7 @@
 """Tests for hmtpp.geron_tensor_parallelism."""
 import numpy as np
 import pytest
-from moirais.fn.hmtpp import geron_tensor_parallelism
+from morie.fn.hmtpp import geron_tensor_parallelism
 
 
 def test_hmtpp_basic():

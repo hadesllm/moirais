@@ -1,7 +1,7 @@
 """Test hydsl."""
 import numpy as np
 import pytest
-from moirais.fn.hydsl import hydsl
+from morie.fn.hydsl import hydsl
 
 
 def test_hydsl_basic():

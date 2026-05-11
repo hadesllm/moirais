@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.scpwld."""
+"""Tests for morie.fn.scpwld."""
 import numpy as np
 import pytest
-from moirais.fn.scpwld import scpwld
+from morie.fn.scpwld import scpwld
 
 
 class TestScpwld:

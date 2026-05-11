@@ -1,6 +1,6 @@
 """Tests for hidden_markov."""
 import numpy as np, pytest
-from moirais.fn.hmm import hidden_markov
+from morie.fn.hmm import hidden_markov
 
 class TestHMM:
     def test_basic(self):

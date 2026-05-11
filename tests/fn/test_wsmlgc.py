@@ -1,7 +1,7 @@
 """Tests for wsmlgc.wasserman_log_linear."""
 import numpy as np
 import pytest
-from moirais.fn.wsmlgc import wasserman_log_linear
+from morie.fn.wsmlgc import wasserman_log_linear
 
 
 def test_wsmlgc_basic():

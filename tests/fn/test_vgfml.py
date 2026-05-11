@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgfml -- Variogram ML fitting"""
+"""Tests for morie.fn.vgfml -- Variogram ML fitting"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgfml import vario_fit_ml
+from morie.fn.vgfml import vario_fit_ml
 
 
 class TestVarioFitMl:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.laapx -- Laplace approximation."""
+"""Tests for morie.fn.laapx -- Laplace approximation."""
 
 import numpy as np
-from moirais.fn.laapx import laplace_approximation
+from morie.fn.laapx import laplace_approximation
 
 
 def test_returns_dict():

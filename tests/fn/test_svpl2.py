@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svpl2 -- 2D spatial polarization"""
+"""Tests for morie.fn.svpl2 -- 2D spatial polarization"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svpl2 import polarization_2d
+from morie.fn.svpl2 import polarization_2d
 
 
 class TestPolarization2d:

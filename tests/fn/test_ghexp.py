@@ -1,7 +1,7 @@
 """Test ghexp."""
 import numpy as np
 import pytest
-from moirais.fn.ghexp import ghexp
+from morie.fn.ghexp import ghexp
 
 
 def test_ghexp_basic():

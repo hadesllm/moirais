@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cmplt -- Capture-recapture."""
+"""Tests for morie.fn.cmplt -- Capture-recapture."""
 
 import pytest
-from moirais.fn.cmplt import capture_recapture
+from morie.fn.cmplt import capture_recapture
 
 
 class TestCaptureRecapture:

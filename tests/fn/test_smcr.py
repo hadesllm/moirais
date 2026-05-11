@@ -1,7 +1,7 @@
 """Test mean_crossing_rate (smcr)."""
 import numpy as np
-from moirais.fn.smcr import mean_crossing_rate, smcr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.smcr import mean_crossing_rate, smcr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMCR:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kmo — Kaiser-Meyer-Olkin sampling adequacy."""
+"""Tests for morie.fn.kmo — Kaiser-Meyer-Olkin sampling adequacy."""
 
 import pytest
 import numpy as np
-from moirais.fn import kmo
-from moirais.fn._containers import KmoRes
+from morie.fn import kmo
+from morie.fn._containers import KmoRes
 
 
 @pytest.fixture()

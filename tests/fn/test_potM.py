@@ -1,7 +1,7 @@
 """Tests for potM.peaks_over_threshold."""
 import numpy as np
 import pytest
-from moirais.fn.potM import peaks_over_threshold
+from morie.fn.potM import peaks_over_threshold
 
 
 def test_potM_basic():

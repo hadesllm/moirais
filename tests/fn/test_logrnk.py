@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.logrnk — Log-rank test."""
+"""Tests for morie.fn.logrnk — Log-rank test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.logrnk import logrank_test
+from morie.fn.logrnk import logrank_test
 
 
 class TestLogRank:

@@ -1,7 +1,7 @@
 """Tests for bndnmt.bound_no_monotonicity."""
 import numpy as np
 import pytest
-from moirais.fn.bndnmt import bound_no_monotonicity
+from morie.fn.bndnmt import bound_no_monotonicity
 
 
 def test_bndnmt_basic():

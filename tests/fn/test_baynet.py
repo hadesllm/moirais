@@ -1,7 +1,7 @@
 """Tests for baynet.bayes_network."""
 import numpy as np
 import pytest
-from moirais.fn.baynet import bayes_network
+from morie.fn.baynet import bayes_network
 
 
 def test_baynet_basic():

@@ -1,7 +1,7 @@
 """Test grdgen."""
 import numpy as np
 import pytest
-from moirais.fn.grdgen import grdgen
+from morie.fn.grdgen import grdgen
 
 
 def test_grdgen_basic():

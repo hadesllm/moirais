@@ -1,7 +1,7 @@
 """Tests for kmswig.kamath_swiglu_activation."""
 import numpy as np
 import pytest
-from moirais.fn.kmswig import kamath_swiglu_activation
+from morie.fn.kmswig import kamath_swiglu_activation
 
 
 def test_kmswig_basic():

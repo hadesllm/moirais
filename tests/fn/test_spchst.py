@@ -1,7 +1,7 @@
 """Tests for spchst."""
 import numpy as np
 import pytest
-from moirais.fn.spchst import spchst
+from morie.fn.spchst import spchst
 
 
 def test_spchst_basic():
@@ -27,5 +27,5 @@ def test_spchst_no_data():
 
 
 def test_spchst_alias():
-    from moirais.fn.spchst import spchst
+    from morie.fn.spchst import spchst
     assert spchst is spchst

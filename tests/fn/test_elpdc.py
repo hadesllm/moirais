@@ -1,7 +1,7 @@
 """Tests for elpdc.expected_log_predictive_density."""
 import numpy as np
 import pytest
-from moirais.fn.elpdc import expected_log_predictive_density
+from morie.fn.elpdc import expected_log_predictive_density
 
 
 def test_elpdc_basic():

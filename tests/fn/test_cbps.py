@@ -1,6 +1,6 @@
 """Tests for covariate_balance_ps."""
 import numpy as np, pytest
-from moirais.fn.cbps import covariate_balance_ps
+from morie.fn.cbps import covariate_balance_ps
 
 class TestCBPS:
     def test_basic(self):

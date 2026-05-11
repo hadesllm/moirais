@@ -1,7 +1,7 @@
 """Tests for seqM.sequential_mediators."""
 import numpy as np
 import pytest
-from moirais.fn.seqM import sequential_mediators
+from morie.fn.seqM import sequential_mediators
 
 
 def test_seqM_basic():

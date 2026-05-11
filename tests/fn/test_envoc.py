@@ -1,7 +1,7 @@
 """Test envoc."""
 import numpy as np
 import pytest
-from moirais.fn.envoc import envoc
+from morie.fn.envoc import envoc
 
 
 def test_envoc_basic():

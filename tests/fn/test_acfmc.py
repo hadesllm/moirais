@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.acfmc -- MCMC autocorrelation."""
+"""Tests for morie.fn.acfmc -- MCMC autocorrelation."""
 import numpy as np
-from moirais.fn.acfmc import autocorrelation_mcmc, acfmc
+from morie.fn.acfmc import autocorrelation_mcmc, acfmc
 
 
 def test_alias():

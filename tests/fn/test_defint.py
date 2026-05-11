@@ -1,7 +1,7 @@
 """Tests for defint.definite_integral."""
 import numpy as np
 import pytest
-from moirais.fn.defint import definite_integral
+from morie.fn.defint import definite_integral
 
 
 def test_defint_basic():

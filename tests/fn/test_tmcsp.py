@@ -1,7 +1,7 @@
 """Test tmcsp."""
 import numpy as np
 import pytest
-from moirais.fn.tmcsp import tmcsp
+from morie.fn.tmcsp import tmcsp
 
 
 def test_tmcsp_basic():

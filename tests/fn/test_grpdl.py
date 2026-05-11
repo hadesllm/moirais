@@ -1,7 +1,7 @@
 """Test group_delay (grpdl)."""
 import numpy as np
-from moirais.fn.grpdl import group_delay, grpdl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.grpdl import group_delay, grpdl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGroupDelay:

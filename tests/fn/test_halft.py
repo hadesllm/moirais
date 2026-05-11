@@ -1,7 +1,7 @@
 """Tests for halft.half_life."""
 import numpy as np
 import pytest
-from moirais.fn.halft import half_life
+from morie.fn.halft import half_life
 
 
 def test_halft_basic():

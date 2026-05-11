@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.agopn."""
+"""Tests for morie.fn.agopn."""
 
 import numpy as np
 import pytest
-from moirais.fn.agopn import agopn
+from morie.fn.agopn import agopn
 
 
 class TestAgopn:

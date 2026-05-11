@@ -1,7 +1,7 @@
 """Tests for bayfin.finite_mixture."""
 import numpy as np
 import pytest
-from moirais.fn.bayfin import finite_mixture
+from morie.fn.bayfin import finite_mixture
 
 
 def test_bayfin_basic():

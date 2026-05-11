@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netcl — Node closeness centrality."""
+"""Tests for morie.fn.netcl — Node closeness centrality."""
 
 import numpy as np
 import pytest
-from moirais.fn.netcl import network_closeness
+from morie.fn.netcl import network_closeness
 
 
 class TestNetworkCloseness:

@@ -1,7 +1,7 @@
 """Tests for otentf.ot_free_energy."""
 import numpy as np
 import pytest
-from moirais.fn.otentf import ot_free_energy
+from morie.fn.otentf import ot_free_energy
 
 
 def test_otentf_basic():

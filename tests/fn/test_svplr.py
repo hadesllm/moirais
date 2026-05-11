@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svplr -- 1D ideological polarization index"""
+"""Tests for morie.fn.svplr -- 1D ideological polarization index"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svplr import polarization_1d
+from morie.fn.svplr import polarization_1d
 
 
 class TestPolarization1d:

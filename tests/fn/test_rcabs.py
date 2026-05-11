@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rcabs."""
+"""Tests for morie.fn.rcabs."""
 
 import numpy as np
 import pytest
-from moirais.fn.rcabs import rcabs
+from morie.fn.rcabs import rcabs
 
 
 class TestRcabs:

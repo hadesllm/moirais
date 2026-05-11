@@ -1,7 +1,7 @@
 """Tests for spcsim."""
 import numpy as np
 import pytest
-from moirais.fn.spcsim import spcsim
+from morie.fn.spcsim import spcsim
 
 
 def test_spcsim_basic():
@@ -27,5 +27,5 @@ def test_spcsim_no_data():
 
 
 def test_spcsim_alias():
-    from moirais.fn.spcsim import spcsim
+    from morie.fn.spcsim import spcsim
     assert spcsim is spcsim

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.idpem."""
+"""Tests for morie.fn.idpem."""
 
 import numpy as np
 import pytest
-from moirais.fn.idpem import idpem
+from morie.fn.idpem import idpem
 
 
 class TestIdpem:

@@ -1,7 +1,7 @@
 """Tests for gb1421c.gibbons_contingency_coeff."""
 import numpy as np
 import pytest
-from moirais.fn.gb1421c import gibbons_contingency_coeff
+from morie.fn.gb1421c import gibbons_contingency_coeff
 
 
 def test_gb1421c_basic():

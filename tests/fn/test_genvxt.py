@@ -1,7 +1,7 @@
 """Tests for genvxt.generalizability_theory."""
 import numpy as np
 import pytest
-from moirais.fn.genvxt import generalizability_theory
+from morie.fn.genvxt import generalizability_theory
 
 
 def test_genvxt_basic():

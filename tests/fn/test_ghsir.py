@@ -1,7 +1,7 @@
 """Test ghsir."""
 import numpy as np
 import pytest
-from moirais.fn.ghsir import ghsir
+from morie.fn.ghsir import ghsir
 
 
 def test_ghsir_basic():

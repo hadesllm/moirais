@@ -1,7 +1,7 @@
 """Test datumx."""
 import numpy as np
 import pytest
-from moirais.fn.datumx import datumx
+from morie.fn.datumx import datumx
 
 
 def test_datumx_basic():

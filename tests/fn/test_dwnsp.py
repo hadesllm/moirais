@@ -1,7 +1,7 @@
 """Test downsample (dwnsp)."""
 import numpy as np
-from moirais.fn.dwnsp import downsample, dwnsp
-from moirais.fn._containers import SignalResult
+from morie.fn.dwnsp import downsample, dwnsp
+from morie.fn._containers import SignalResult
 
 
 class TestDownsample:

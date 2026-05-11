@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mtrpr -- Multi-trait genomic prediction."""
+"""Tests for morie.fn.mtrpr -- Multi-trait genomic prediction."""
 
 import numpy as np
 import pytest
-from moirais.fn.mtrpr import mtrpr
+from morie.fn.mtrpr import mtrpr
 
 
 def _make_data(n=30, p=20, t=2, seed=42):

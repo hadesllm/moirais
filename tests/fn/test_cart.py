@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cart — CART decision tree."""
+"""Tests for morie.fn.cart — CART decision tree."""
 import numpy as np
 import pytest
-from moirais.fn.cart import decision_tree
+from morie.fn.cart import decision_tree
 
 
 class TestCART:

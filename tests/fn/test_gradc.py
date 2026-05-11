@@ -1,7 +1,7 @@
 """Test gradient_clip."""
 import numpy as np
-from moirais.fn.gradc import gradient_clip, gradc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.gradc import gradient_clip, gradc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGradientClip:

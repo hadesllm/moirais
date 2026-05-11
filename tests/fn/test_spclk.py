@@ -1,7 +1,7 @@
 """Tests for spclk.schabenberger_composite_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.spclk import schabenberger_composite_likelihood
+from morie.fn.spclk import schabenberger_composite_likelihood
 
 
 def test_spclk_basic():

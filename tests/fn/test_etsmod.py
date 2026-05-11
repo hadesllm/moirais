@@ -1,7 +1,7 @@
 """Tests for etsmod.ets."""
 import numpy as np
 import pytest
-from moirais.fn.etsmod import ets
+from morie.fn.etsmod import ets
 
 
 def test_etsmod_basic():

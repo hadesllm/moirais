@@ -1,6 +1,6 @@
 """Tests for convolution representation."""
 import numpy as np
-from moirais.fn.sgcnv import sgcnv
+from morie.fn.sgcnv import sgcnv
 
 
 def test_sgcnv_smoke():
@@ -15,7 +15,7 @@ def test_sgcnv_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgcnv import cheatsheet
+    from morie.fn.sgcnv import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.evtcl — event clustering."""
+"""Tests for morie.fn.evtcl — event clustering."""
 import numpy as np
 import pytest
 
-from moirais.fn.evtcl import event_cluster, evtcl
+from morie.fn.evtcl import event_cluster, evtcl
 
 
 def test_basic_clustering():

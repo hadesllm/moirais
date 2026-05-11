@@ -1,7 +1,7 @@
 """Tests for desigeff.design_effect."""
 import numpy as np
 import pytest
-from moirais.fn.desigeff import design_effect
+from morie.fn.desigeff import design_effect
 
 
 def test_desigeff_basic():

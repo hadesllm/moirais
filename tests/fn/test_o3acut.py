@@ -5,7 +5,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.fn.o3acut import o3_acute_rr, o3acut
+from morie.fn.o3acut import o3_acute_rr, o3acut
 
 
 def test_o3acut_reference_gives_rr_one():

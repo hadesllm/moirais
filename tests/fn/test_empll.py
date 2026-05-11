@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.empll — empirical likelihood ratio."""
+"""Tests for morie.fn.empll — empirical likelihood ratio."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.empll import empll
+from morie.fn.empll import empll
 
 
 def test_true_mean_not_rejected():

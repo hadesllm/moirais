@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.odesc — OTIS demographic summary."""
+"""Tests for morie.fn.odesc — OTIS demographic summary."""
 
 import pandas as pd
-from moirais.fn.odesc import otis_demographic_summary
+from morie.fn.odesc import otis_demographic_summary
 
 
 class TestOtisDemographicSummary:

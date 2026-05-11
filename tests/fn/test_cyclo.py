@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cyclo -- Gaussian beam optics."""
+"""Tests for morie.fn.cyclo -- Gaussian beam optics."""
 
 import numpy as np
-from moirais.fn.cyclo import gaussian_beam, cyclo
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cyclo import gaussian_beam, cyclo
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCyclo:

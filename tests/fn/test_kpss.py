@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.kpss — KPSS stationarity test."""
+"""Tests for morie.fn.kpss — KPSS stationarity test."""
 import numpy as np
 import pytest
 
-from moirais.fn.kpss import kpss_test, kpss
+from morie.fn.kpss import kpss_test, kpss
 
 
 def test_stationary_series():

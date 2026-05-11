@@ -1,7 +1,7 @@
 """Tests for barerp.barrier_method."""
 import numpy as np
 import pytest
-from moirais.fn.barerp import barrier_method
+from morie.fn.barerp import barrier_method
 
 
 def test_barerp_basic():

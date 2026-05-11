@@ -1,7 +1,7 @@
 """Tests for grig.geron_information_gain."""
 import numpy as np
 import pytest
-from moirais.fn.grig import geron_information_gain
+from morie.fn.grig import geron_information_gain
 
 
 def test_grig_basic():

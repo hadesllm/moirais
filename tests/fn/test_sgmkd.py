@@ -1,6 +1,6 @@
 """Tests for marked point summary."""
 import numpy as np
-from moirais.fn.sgmkd import sgmkd
+from morie.fn.sgmkd import sgmkd
 
 
 def test_sgmkd_smoke():
@@ -14,7 +14,7 @@ def test_sgmkd_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgmkd import cheatsheet
+    from morie.fn.sgmkd import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

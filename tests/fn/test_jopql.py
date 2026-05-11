@@ -1,7 +1,7 @@
 """Tests for jopql.joseph_pinball_quantile_loss."""
 import numpy as np
 import pytest
-from moirais.fn.jopql import joseph_pinball_quantile_loss
+from morie.fn.jopql import joseph_pinball_quantile_loss
 
 
 def test_jopql_basic():

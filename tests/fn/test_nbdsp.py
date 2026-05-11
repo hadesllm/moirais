@@ -1,7 +1,7 @@
 """Tests for nbdsp.negative_binomial_dispersion."""
 import numpy as np
 import pytest
-from moirais.fn.nbdsp import negative_binomial_dispersion
+from morie.fn.nbdsp import negative_binomial_dispersion
 
 
 def test_nbdsp_basic():

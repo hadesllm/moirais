@@ -1,11 +1,11 @@
 R API
 =====
 
-Part of :doc:`index` — MOIRAIS API reference.
+Part of :doc:`index` — MORIE API reference.
 
 Auto-generated reference for every public function exported by the
-``moirais`` R package. Signatures and descriptions come from the
-Roxygen2 ``.Rd`` files in ``r-package/moirais/man/``; see
+``morie`` R package. Signatures and descriptions come from the
+Roxygen2 ``.Rd`` files in ``r-package/morie/man/``; see
 :doc:`../methods/index` for the methodology behind each function.
 
 Causal estimators
@@ -57,22 +57,22 @@ Datasets + I/O
 
 .. r:function:: canonicalize_cpads_data
 .. r:function:: load_cpads_data
-.. r:function:: moirais_assistant_query
-.. r:function:: moirais_builtin_db
-.. r:function:: moirais_cache_file
-.. r:function:: moirais_cache_list
-.. r:function:: moirais_cache_load
-.. r:function:: moirais_cache_store
-.. r:function:: moirais_dataset_catalog
-.. r:function:: moirais_dataset_info
-.. r:function:: moirais_db_connect
-.. r:function:: moirais_download_bootstrap
-.. r:function:: moirais_fetch_ckan
-.. r:function:: moirais_list_datasets
-.. r:function:: moirais_load_cpads
-.. r:function:: moirais_load_dataset
-.. r:function:: moirais_paths
-.. r:function:: moirais_userguide
+.. r:function:: morie_assistant_query
+.. r:function:: morie_builtin_db
+.. r:function:: morie_cache_file
+.. r:function:: morie_cache_list
+.. r:function:: morie_cache_load
+.. r:function:: morie_cache_store
+.. r:function:: morie_dataset_catalog
+.. r:function:: morie_dataset_info
+.. r:function:: morie_db_connect
+.. r:function:: morie_download_bootstrap
+.. r:function:: morie_fetch_ckan
+.. r:function:: morie_list_datasets
+.. r:function:: morie_load_cpads
+.. r:function:: morie_load_dataset
+.. r:function:: morie_paths
+.. r:function:: morie_userguide
 
 Workflow + audit
 ----------------
@@ -86,7 +86,7 @@ Workflow + audit
 .. r:function:: default_synthetic_name_map
 .. r:function:: default_workflow_map
 .. r:function:: find_project_root
-.. r:function:: list_moirais_modules
+.. r:function:: list_morie_modules
 
 Other
 -----
@@ -101,8 +101,8 @@ Other
 .. r:function:: risk_difference_ci
 .. r:function:: risk_ratio_ci
 .. r:function:: run_ebac_selection_ipw_analysis
-.. r:function:: run_moirais_module
-.. r:function:: run_moirais_modules
+.. r:function:: run_morie_module
+.. r:function:: run_morie_modules
 .. r:function:: run_pipeline
 .. r:function:: run_propensity_ipw_analysis
 .. r:function:: run_workflow_step

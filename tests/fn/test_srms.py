@@ -1,7 +1,7 @@
 """Test rms_value (srms)."""
 import numpy as np
-from moirais.fn.srms import rms_value, srms
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.srms import rms_value, srms
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRMS:

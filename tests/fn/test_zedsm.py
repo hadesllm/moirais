@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zedsm -- Poisson disease mapping"""
+"""Tests for morie.fn.zedsm -- Poisson disease mapping"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zedsm import disease_map_pois
+from morie.fn.zedsm import disease_map_pois
 
 
 class TestDiseaseMapPois:

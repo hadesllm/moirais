@@ -1,7 +1,7 @@
 """Tests for rgcry.rangayyan_infant_cry."""
 import numpy as np
 import pytest
-from moirais.fn.rgcry import rangayyan_infant_cry
+from morie.fn.rgcry import rangayyan_infant_cry
 
 
 def test_rgcry_basic():

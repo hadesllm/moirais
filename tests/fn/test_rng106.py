@@ -1,7 +1,7 @@
 """Tests for rng106.rangayyan_ch3_integrator_magnitude_response."""
 import numpy as np
 import pytest
-from moirais.fn.rng106 import rangayyan_ch3_integrator_magnitude_response
+from morie.fn.rng106 import rangayyan_ch3_integrator_magnitude_response
 
 
 def test_rng106_basic():

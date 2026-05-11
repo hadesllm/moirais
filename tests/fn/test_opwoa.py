@@ -1,7 +1,7 @@
 """Test opwoa."""
 import numpy as np
 import pytest
-from moirais.fn.opwoa import opwoa
+from morie.fn.opwoa import opwoa
 
 
 def test_opwoa_basic():

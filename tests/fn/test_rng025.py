@@ -1,7 +1,7 @@
 """Tests for rng025.rangayyan_ch3_dirac_delta_unit_area."""
 import numpy as np
 import pytest
-from moirais.fn.rng025 import rangayyan_ch3_dirac_delta_unit_area
+from morie.fn.rng025 import rangayyan_ch3_dirac_delta_unit_area
 
 
 def test_rng025_basic():

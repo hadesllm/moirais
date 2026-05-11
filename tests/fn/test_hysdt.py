@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hysdt — hysteresis detector."""
+"""Tests for morie.fn.hysdt — hysteresis detector."""
 import numpy as np
 import pytest
 
-from moirais.fn.hysdt import hysteresis_detect, hysdt
+from morie.fn.hysdt import hysteresis_detect, hysdt
 
 
 def test_single_event():

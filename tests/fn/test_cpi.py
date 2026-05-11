@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cpi."""
+"""Tests for morie.fn.cpi."""
 import numpy as np
 import pytest
-from moirais.fn.cpi import cpi_inflation
+from morie.fn.cpi import cpi_inflation
 
 
 def test_cpi_no_change():
@@ -33,7 +33,7 @@ def test_cpi_positive():
 
 
 def test_cheatsheet():
-    from moirais.fn.cpi import cheatsheet
+    from morie.fn.cpi import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

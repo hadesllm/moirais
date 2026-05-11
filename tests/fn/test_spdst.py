@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.spdst — spatial distance."""
-from moirais.fn.spdst import spdst
+"""Tests for morie.fn.spdst — spatial distance."""
+from morie.fn.spdst import spdst
 
 
 def test_spdst_euclidean():

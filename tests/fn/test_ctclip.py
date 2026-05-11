@@ -1,7 +1,7 @@
 """Tests for ctclip."""
 import numpy as np
 import pytest
-from moirais.fn.ctclip import ctclip
+from morie.fn.ctclip import ctclip
 
 
 def test_ctclip_basic():
@@ -27,5 +27,5 @@ def test_ctclip_no_data():
 
 
 def test_ctclip_alias():
-    from moirais.fn.ctclip import ctclip
+    from morie.fn.ctclip import ctclip
     assert ctclip is ctclip

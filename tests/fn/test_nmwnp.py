@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmwnp -- W-NOMINATE vote probability"""
+"""Tests for morie.fn.nmwnp -- W-NOMINATE vote probability"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmwnp import wnominate_prob
+from morie.fn.nmwnp import wnominate_prob
 
 
 class TestWnominateProb:

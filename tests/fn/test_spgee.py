@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.spgee — Spatial GEE."""
+"""Tests for morie.fn.spgee — Spatial GEE."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.spgee import spgee
+from morie.fn.spgee import spgee
 
 
 class TestSpgee:

@@ -1,7 +1,7 @@
 """Tests for gh_c4_13.ghosal_dp_weak_conv."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c4_13 import ghosal_dp_weak_conv
+from morie.fn.gh_c4_13 import ghosal_dp_weak_conv
 
 
 def test_gh_c4_13_basic():

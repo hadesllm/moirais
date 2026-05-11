@@ -1,7 +1,7 @@
 """Test sownd."""
 import numpy as np
 import pytest
-from moirais.fn.sownd import sownd
+from morie.fn.sownd import sownd
 
 
 def test_sownd_basic():

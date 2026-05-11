@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.holo_f -- forest plot."""
+"""Tests for morie.fn.holo_f -- forest plot."""
 
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.holo_f import holo_forest
+from morie.fn.holo_f import holo_forest
 
 
 class TestHoloForest:

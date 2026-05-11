@@ -1,7 +1,7 @@
 """Tests for rfkrn.random_fourier_features."""
 import numpy as np
 import pytest
-from moirais.fn.rfkrn import random_fourier_features
+from morie.fn.rfkrn import random_fourier_features
 
 
 def test_rfkrn_basic():

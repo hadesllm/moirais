@@ -1,6 +1,6 @@
 """Tests for breusch_pagan_test."""
 import numpy as np, pytest
-from moirais.fn.bpgtr import breusch_pagan_test
+from morie.fn.bpgtr import breusch_pagan_test
 
 
 class TestBreuschPagan:

@@ -1,7 +1,7 @@
 """Tests for rgwvcor.rangayyan_wavelet_corr."""
 import numpy as np
 import pytest
-from moirais.fn.rgwvcor import rangayyan_wavelet_corr
+from morie.fn.rgwvcor import rangayyan_wavelet_corr
 
 
 def test_rgwvcor_basic():

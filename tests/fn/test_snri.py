@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.snri import snr_improvement_fn, snri
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.snri import snr_improvement_fn, snri
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSnrImprovement:

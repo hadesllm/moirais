@@ -1,6 +1,6 @@
 """Tests for intraclass_correlation."""
 import numpy as np, pytest
-from moirais.fn.icc_ import intraclass_correlation
+from morie.fn.icc_ import intraclass_correlation
 
 class TestICC:
     def test_perfect_agreement(self):

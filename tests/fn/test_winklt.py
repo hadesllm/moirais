@@ -1,7 +1,7 @@
 """Test winklt."""
 import numpy as np
 import pytest
-from moirais.fn.winklt import winklt
+from morie.fn.winklt import winklt
 
 
 def test_winklt_basic():

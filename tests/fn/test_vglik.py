@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vglik -- Variogram log-likelihood"""
+"""Tests for morie.fn.vglik -- Variogram log-likelihood"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vglik import vario_loglik
+from morie.fn.vglik import vario_loglik
 
 
 class TestVarioLoglik:

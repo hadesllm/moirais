@@ -1,7 +1,7 @@
 """Tests for joitran.joseph_itransformer."""
 import numpy as np
 import pytest
-from moirais.fn.joitran import joseph_itransformer
+from morie.fn.joitran import joseph_itransformer
 
 
 def test_joitran_basic():

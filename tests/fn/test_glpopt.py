@@ -1,7 +1,7 @@
 """Tests for glpopt.glpk_lp."""
 import numpy as np
 import pytest
-from moirais.fn.glpopt import glpk_lp
+from morie.fn.glpopt import glpk_lp
 
 
 def test_glpopt_basic():

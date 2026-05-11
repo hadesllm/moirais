@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.betag — Beta regression."""
+"""Tests for morie.fn.betag — Beta regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.betag import beta_regression
+from morie.fn.betag import beta_regression
 
 
 def test_beta_regression_recovers_direction():

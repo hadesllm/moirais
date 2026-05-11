@@ -1,7 +1,7 @@
 """Tests for paa.paa."""
 import numpy as np
 import pytest
-from moirais.fn.paa import paa
+from morie.fn.paa import paa
 
 
 def test_paa_basic():

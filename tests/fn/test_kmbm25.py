@@ -1,7 +1,7 @@
 """Tests for kmbm25.kamath_bm25_score."""
 import numpy as np
 import pytest
-from moirais.fn.kmbm25 import kamath_bm25_score
+from morie.fn.kmbm25 import kamath_bm25_score
 
 
 def test_kmbm25_basic():

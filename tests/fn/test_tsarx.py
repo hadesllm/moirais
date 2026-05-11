@@ -1,7 +1,7 @@
 """Test tsarx."""
 import numpy as np
 import pytest
-from moirais.fn.tsarx import tsarx
+from morie.fn.tsarx import tsarx
 
 
 def test_tsarx_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itopt — item option frequencies."""
+"""Tests for morie.fn.itopt — item option frequencies."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.itopt import item_option_freq
+from morie.fn.itopt import item_option_freq
 
 
 class TestItemOptionFreq:

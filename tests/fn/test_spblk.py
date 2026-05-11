@@ -1,7 +1,7 @@
 """Tests for spblk.spatial_block_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.spblk import spatial_block_kriging
+from morie.fn.spblk import spatial_block_kriging
 
 
 def test_spblk_basic():

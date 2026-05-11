@@ -1,7 +1,7 @@
 """Tests for gprq."""
 import numpy as np
 import pytest
-from moirais.fn.gprq import gprq
+from morie.fn.gprq import gprq
 
 
 def test_gprq_basic():
@@ -27,5 +27,5 @@ def test_gprq_no_data():
 
 
 def test_gprq_alias():
-    from moirais.fn.gprq import gprq
+    from morie.fn.gprq import gprq
     assert gprq is gprq

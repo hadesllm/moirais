@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsgb -- Spatial gradient boosting"""
+"""Tests for morie.fn.zxsgb -- Spatial gradient boosting"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsgb import spatial_gbm
+from morie.fn.zxsgb import spatial_gbm
 
 
 class TestSpatialGbm:

@@ -1,7 +1,7 @@
 """Tests for otpr.ot_partial_ot."""
 import numpy as np
 import pytest
-from moirais.fn.otpr import ot_partial_ot
+from morie.fn.otpr import ot_partial_ot
 
 
 def test_otpr_basic():

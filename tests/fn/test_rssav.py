@@ -1,7 +1,7 @@
 """Test rssav."""
 import numpy as np
 import pytest
-from moirais.fn.rssav import rssav
+from morie.fn.rssav import rssav
 
 
 def test_rssav_basic():

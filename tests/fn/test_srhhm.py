@@ -1,7 +1,7 @@
 """Test srhhm."""
 import numpy as np
 import pytest
-from moirais.fn.srhhm import srhhm
+from morie.fn.srhhm import srhhm
 
 
 def test_srhhm_basic():

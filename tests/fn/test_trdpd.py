@@ -1,7 +1,7 @@
 """Tests for trdpd.tree_depth_saturation."""
 import numpy as np
 import pytest
-from moirais.fn.trdpd import tree_depth_saturation
+from morie.fn.trdpd import tree_depth_saturation
 
 
 def test_trdpd_basic():

@@ -1,7 +1,7 @@
 """Tests for alfemb.alphafold_embedding_init."""
 import numpy as np
 import pytest
-from moirais.fn.alfemb import alphafold_embedding_init
+from morie.fn.alfemb import alphafold_embedding_init
 
 
 def test_alfemb_basic():

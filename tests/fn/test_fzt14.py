@@ -1,7 +1,7 @@
 """Tests for fzt14.fauzi_thm1_4_asympnorm_mgkde."""
 import numpy as np
 import pytest
-from moirais.fn.fzt14 import fauzi_thm1_4_asympnorm_mgkde
+from morie.fn.fzt14 import fauzi_thm1_4_asympnorm_mgkde
 
 
 def test_fzt14_basic():

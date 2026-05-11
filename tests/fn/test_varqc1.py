@@ -1,7 +1,7 @@
 """Tests for varqc1.vcf_filter."""
 import numpy as np
 import pytest
-from moirais.fn.varqc1 import vcf_filter
+from morie.fn.varqc1 import vcf_filter
 
 
 def test_varqc1_basic():

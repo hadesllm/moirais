@@ -1,6 +1,6 @@
 """Tests for conditional_prob."""
 import pytest
-from moirais.fn.condp import conditional_prob, condp
+from morie.fn.condp import conditional_prob, condp
 
 
 def test_basic():

@@ -1,7 +1,7 @@
 """Tests for hmgrs.geron_grid_search."""
 import numpy as np
 import pytest
-from moirais.fn.hmgrs import geron_grid_search
+from morie.fn.hmgrs import geron_grid_search
 
 
 def test_hmgrs_basic():

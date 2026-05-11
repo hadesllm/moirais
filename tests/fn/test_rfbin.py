@@ -1,7 +1,7 @@
 """Tests for rfbin."""
 import numpy as np
 import pytest
-from moirais.fn.rfbin import rfbin
+from morie.fn.rfbin import rfbin
 
 
 def test_rfbin_basic():
@@ -27,5 +27,5 @@ def test_rfbin_no_data():
 
 
 def test_rfbin_alias():
-    from moirais.fn.rfbin import rfbin
+    from morie.fn.rfbin import rfbin
     assert rfbin is rfbin

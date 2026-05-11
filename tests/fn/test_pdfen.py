@@ -1,7 +1,7 @@
 """Tests for pdf_estimate."""
 import numpy as np
 import pytest
-from moirais.fn.pdfen import pdf_estimate, pdfen
+from morie.fn.pdfen import pdf_estimate, pdfen
 
 
 def test_basic():

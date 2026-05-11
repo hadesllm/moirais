@@ -1,7 +1,7 @@
 """Tests for gh_c11_11.ghosal_rescal_gp."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c11_11 import ghosal_rescal_gp
+from morie.fn.gh_c11_11 import ghosal_rescal_gp
 
 
 def test_gh_c11_11_basic():

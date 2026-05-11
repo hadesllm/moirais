@@ -1,7 +1,7 @@
 """Tests for bnnipw.bound_no_iv_proxy."""
 import numpy as np
 import pytest
-from moirais.fn.bnnipw import bound_no_iv_proxy
+from morie.fn.bnnipw import bound_no_iv_proxy
 
 
 def test_bnnipw_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrlml -- LM test for spatial lag"""
+"""Tests for morie.fn.xrlml -- LM test for spatial lag"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrlml import lm_lag
+from morie.fn.xrlml import lm_lag
 
 
 class TestLmLag:

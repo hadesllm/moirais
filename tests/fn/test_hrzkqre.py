@@ -1,7 +1,7 @@
 """Tests for hrzkqre.horowitz_kernel_quantile_reg."""
 import numpy as np
 import pytest
-from moirais.fn.hrzkqre import horowitz_kernel_quantile_reg
+from morie.fn.hrzkqre import horowitz_kernel_quantile_reg
 
 
 def test_hrzkqre_basic():

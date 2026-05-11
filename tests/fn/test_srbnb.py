@@ -1,7 +1,7 @@
 """Test srbnb."""
 import numpy as np
 import pytest
-from moirais.fn.srbnb import srbnb
+from morie.fn.srbnb import srbnb
 
 
 def test_srbnb_basic():

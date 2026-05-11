@@ -1,7 +1,7 @@
 """Tests for rng124.rangayyan_ch3_butterworth_squared_laplace."""
 import numpy as np
 import pytest
-from moirais.fn.rng124 import rangayyan_ch3_butterworth_squared_laplace
+from morie.fn.rng124 import rangayyan_ch3_butterworth_squared_laplace
 
 
 def test_rng124_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kvcmp — KV-cache compression."""
+"""Tests for morie.fn.kvcmp — KV-cache compression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kvcmp import kv_cache_compress
+from morie.fn.kvcmp import kv_cache_compress
 
 
 class TestKvCacheCompress:

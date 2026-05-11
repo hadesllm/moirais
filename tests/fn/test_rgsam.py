@@ -1,7 +1,7 @@
 """Tests for rgsam.rangayyan_sample_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.rgsam import rangayyan_sample_entropy
+from morie.fn.rgsam import rangayyan_sample_entropy
 
 
 def test_rgsam_basic():

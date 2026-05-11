@@ -1,7 +1,7 @@
 """Test hexsmp."""
 import numpy as np
 import pytest
-from moirais.fn.hexsmp import hexsmp
+from morie.fn.hexsmp import hexsmp
 
 
 def test_hexsmp_basic():

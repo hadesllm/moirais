@@ -1,7 +1,7 @@
 """Tests for archm.arch_in_mean."""
 import numpy as np
 import pytest
-from moirais.fn.archm import arch_in_mean
+from morie.fn.archm import arch_in_mean
 
 
 def test_archm_basic():

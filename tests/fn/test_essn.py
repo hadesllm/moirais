@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.essn -- Effective sample size."""
+"""Tests for morie.fn.essn -- Effective sample size."""
 
 import numpy as np
-from moirais.fn.essn import effective_sample_size
+from morie.fn.essn import effective_sample_size
 
 
 def test_returns_dict():

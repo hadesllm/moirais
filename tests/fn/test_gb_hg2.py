@@ -1,7 +1,7 @@
 """Tests for gb_hg2.gibbons_hodges_lehmann_2."""
 import numpy as np
 import pytest
-from moirais.fn.gb_hg2 import gibbons_hodges_lehmann_2
+from morie.fn.gb_hg2 import gibbons_hodges_lehmann_2
 
 
 def test_gb_hg2_basic():

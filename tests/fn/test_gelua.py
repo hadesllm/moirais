@@ -1,6 +1,6 @@
 """Test GELU activation."""
 import numpy as np
-from moirais.fn.gelua import gelua
+from morie.fn.gelua import gelua
 
 
 def test_gelua_exact():

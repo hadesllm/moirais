@@ -1,7 +1,7 @@
 """Tests for sbreli.spearman_brown."""
 import numpy as np
 import pytest
-from moirais.fn.sbreli import spearman_brown
+from morie.fn.sbreli import spearman_brown
 
 
 def test_sbreli_basic():

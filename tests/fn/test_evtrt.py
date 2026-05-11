@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.evtrt — event rate."""
+"""Tests for morie.fn.evtrt — event rate."""
 import numpy as np
 import pytest
 
-from moirais.fn.evtrt import event_rate, evtrt
+from morie.fn.evtrt import event_rate, evtrt
 
 
 def test_overall_rate():

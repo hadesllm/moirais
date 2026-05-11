@@ -1,7 +1,7 @@
 """Test saldf."""
 import numpy as np
 import pytest
-from moirais.fn.saldf import saldf
+from morie.fn.saldf import saldf
 
 
 def test_saldf_basic():

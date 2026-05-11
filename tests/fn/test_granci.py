@@ -1,7 +1,7 @@
 """Tests for granci.granger_causality_info."""
 import numpy as np
 import pytest
-from moirais.fn.granci import granger_causality_info
+from morie.fn.granci import granger_causality_info
 
 
 def test_granci_basic():

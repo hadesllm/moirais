@@ -1,7 +1,7 @@
 """Tests for mabegg.ma_begg_test."""
 import numpy as np
 import pytest
-from moirais.fn.mabegg import ma_begg_test
+from morie.fn.mabegg import ma_begg_test
 
 
 def test_mabegg_basic():

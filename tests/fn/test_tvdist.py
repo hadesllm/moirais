@@ -1,7 +1,7 @@
 """Tests for tvdist.total_variation_distance."""
 import numpy as np
 import pytest
-from moirais.fn.tvdist import total_variation_distance
+from morie.fn.tvdist import total_variation_distance
 
 
 def test_tvdist_basic():

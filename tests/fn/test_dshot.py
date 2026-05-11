@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dshot -- Precision at K."""
+"""Tests for morie.fn.dshot -- Precision at K."""
 
 import numpy as np
-from moirais.fn.dshot import precision_at_k, dshot
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dshot import precision_at_k, dshot
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDshot:

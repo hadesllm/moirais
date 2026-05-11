@@ -1,7 +1,7 @@
 """Tests for defdtr.deformable_detr."""
 import numpy as np
 import pytest
-from moirais.fn.defdtr import deformable_detr
+from morie.fn.defdtr import deformable_detr
 
 
 def test_defdtr_basic():

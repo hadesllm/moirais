@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ihsoc -- social determinants."""
+"""Tests for morie.fn.ihsoc -- social determinants."""
 
 import pytest
-from moirais.fn.ihsoc import social_determinants
+from morie.fn.ihsoc import social_determinants
 
 
 class TestSocialDeterminants:

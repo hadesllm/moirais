@@ -1,7 +1,7 @@
 """Tests for hmxav.geron_glorot_init."""
 import numpy as np
 import pytest
-from moirais.fn.hmxav import geron_glorot_init
+from morie.fn.hmxav import geron_glorot_init
 
 
 def test_hmxav_basic():

@@ -1,7 +1,7 @@
 """Test trpkn."""
 import numpy as np
 import pytest
-from moirais.fn.trpkn import trpkn
+from morie.fn.trpkn import trpkn
 
 
 def test_trpkn_basic():

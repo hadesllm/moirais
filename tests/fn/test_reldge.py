@@ -1,7 +1,7 @@
 """Tests for reldge.reliability_gebv."""
 import numpy as np
 import pytest
-from moirais.fn.reldge import reliability_gebv
+from morie.fn.reldge import reliability_gebv
 
 
 def test_reldge_basic():

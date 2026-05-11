@@ -1,7 +1,7 @@
 """Tests for tmlsbs.tmle_subset_selection."""
 import numpy as np
 import pytest
-from moirais.fn.tmlsbs import tmle_subset_selection
+from morie.fn.tmlsbs import tmle_subset_selection
 
 
 def test_tmlsbs_basic():

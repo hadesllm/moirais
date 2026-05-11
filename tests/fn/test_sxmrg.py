@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sxmrg -- Sex-stratified meta-regression."""
+"""Tests for morie.fn.sxmrg -- Sex-stratified meta-regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.sxmrg import sxmrg
+from morie.fn.sxmrg import sxmrg
 
 
 class TestSxmrg:

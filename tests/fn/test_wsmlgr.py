@@ -1,7 +1,7 @@
 """Tests for wsmlgr.wasserman_logistic_regression."""
 import numpy as np
 import pytest
-from moirais.fn.wsmlgr import wasserman_logistic_regression
+from morie.fn.wsmlgr import wasserman_logistic_regression
 
 
 def test_wsmlgr_basic():

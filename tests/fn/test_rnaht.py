@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rnaht -- R0 from next-generation matrix."""
+"""Tests for morie.fn.rnaht -- R0 from next-generation matrix."""
 
 import numpy as np
 import pytest
-from moirais.fn.rnaht import r_naught_ngm
+from morie.fn.rnaht import r_naught_ngm
 
 
 class TestRNaught:

@@ -1,7 +1,7 @@
 """Tests for kpmsmp.km_simultaneous_band."""
 import numpy as np
 import pytest
-from moirais.fn.kpmsmp import km_simultaneous_band
+from morie.fn.kpmsmp import km_simultaneous_band
 
 
 def test_kpmsmp_basic():

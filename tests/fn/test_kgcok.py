@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgcok -- Co-kriging multivariate"""
+"""Tests for morie.fn.kgcok -- Co-kriging multivariate"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgcok import cokriging
+from morie.fn.kgcok import cokriging
 
 
 class TestCokriging:

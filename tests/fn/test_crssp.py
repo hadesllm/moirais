@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.crssp."""
+"""Tests for morie.fn.crssp."""
 import numpy as np
-from moirais.fn.crssp import crssp
+from morie.fn.crssp import crssp
 
 
 def test_crssp_smoke():
@@ -12,7 +12,7 @@ def test_crssp_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.crssp import cheatsheet
+    from morie.fn.crssp import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

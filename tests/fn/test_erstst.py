@@ -1,7 +1,7 @@
 """Tests for erstst.ers_unit_root."""
 import numpy as np
 import pytest
-from moirais.fn.erstst import ers_unit_root
+from morie.fn.erstst import ers_unit_root
 
 
 def test_erstst_basic():

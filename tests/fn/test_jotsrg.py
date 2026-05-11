@@ -1,7 +1,7 @@
 """Tests for jotsrg.joseph_ts_as_regression."""
 import numpy as np
 import pytest
-from moirais.fn.jotsrg import joseph_ts_as_regression
+from morie.fn.jotsrg import joseph_ts_as_regression
 
 
 def test_jotsrg_basic():

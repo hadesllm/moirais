@@ -1,7 +1,7 @@
 """Tests for icfR.item_cf."""
 import numpy as np
 import pytest
-from moirais.fn.icfR import item_cf
+from morie.fn.icfR import item_cf
 
 
 def test_icfR_basic():

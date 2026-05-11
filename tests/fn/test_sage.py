@@ -1,7 +1,7 @@
 """Tests for sage.graphsage."""
 import numpy as np
 import pytest
-from moirais.fn.sage import graphsage
+from morie.fn.sage import graphsage
 
 
 def test_sage_basic():

@@ -1,7 +1,7 @@
 """Tests for gb_are4.gibbons_are_kw."""
 import numpy as np
 import pytest
-from moirais.fn.gb_are4 import gibbons_are_kw
+from morie.fn.gb_are4 import gibbons_are_kw
 
 
 def test_gb_are4_basic():

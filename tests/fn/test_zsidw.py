@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsidw -- IDW interpolation"""
+"""Tests for morie.fn.zsidw -- IDW interpolation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsidw import idw_interp
+from morie.fn.zsidw import idw_interp
 
 
 class TestIdwInterp:

@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.oml — DML IRM (ATE/ATT) for OTIS data."""
+"""Tests for morie.fn.oml — DML IRM (ATE/ATT) for OTIS data."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.oml import otdml as oml
-from moirais.fn._containers import OtDmlR
+from morie.fn.oml import otdml as oml
+from morie.fn._containers import OtDmlR
 
 
 @pytest.fixture()

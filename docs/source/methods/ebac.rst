@@ -1,10 +1,10 @@
 eBAC — Estimated Blood Alcohol Concentration
 =============================================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
 eBAC is a continuous outcome derived from self-reported alcohol consumption
-data in CPADS. MOIRAIS computes two eBAC variants.
+data in CPADS. MORIE computes two eBAC variants.
 
 Widmark formula
 ---------------
@@ -23,7 +23,7 @@ where
 - :math:`\beta` = elimination rate (≈ 0.15 g/dL/hr)
 - :math:`t` = hours since drinking began
 
-MOIRAIS variants
+MORIE variants
 -------------
 
 ``ebac_tot``
@@ -41,7 +41,7 @@ Python API
 
 .. code-block:: python
 
-   from moirais import calculate_ebac, is_over_legal_limit
+   from morie import calculate_ebac, is_over_legal_limit
 
    ebac = calculate_ebac(drinks=5, weight_kg=70, gender="male", hours=2.0)
    over = is_over_legal_limit(ebac)

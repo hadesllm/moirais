@@ -1,7 +1,7 @@
 """Test aglsm."""
 import numpy as np
 import pytest
-from moirais.fn.aglsm import aglsm
+from morie.fn.aglsm import aglsm
 
 
 def test_aglsm_basic():

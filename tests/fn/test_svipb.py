@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svipb -- Bayesian ideal point posterior"""
+"""Tests for morie.fn.svipb -- Bayesian ideal point posterior"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svipb import ideal_point_bayes
+from morie.fn.svipb import ideal_point_bayes
 
 
 class TestIdealPointBayes:

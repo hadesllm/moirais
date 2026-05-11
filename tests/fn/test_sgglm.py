@@ -1,6 +1,6 @@
 """Tests for spatial GLM Poisson."""
 import numpy as np
-from moirais.fn.sgglm import sgglm
+from morie.fn.sgglm import sgglm
 
 
 def test_sgglm_smoke():
@@ -16,7 +16,7 @@ def test_sgglm_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgglm import cheatsheet
+    from morie.fn.sgglm import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for rgacfd.rangayyan_acf_distance."""
 import numpy as np
 import pytest
-from moirais.fn.rgacfd import rangayyan_acf_distance
+from morie.fn.rgacfd import rangayyan_acf_distance
 
 
 def test_rgacfd_basic():

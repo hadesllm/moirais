@@ -1,7 +1,7 @@
 """Tests for ghdpm.ghosal_dpmixture_density."""
 import numpy as np
 import pytest
-from moirais.fn.ghdpm import ghosal_dpmixture_density
+from morie.fn.ghdpm import ghosal_dpmixture_density
 
 
 def test_ghdpm_basic():

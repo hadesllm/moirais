@@ -1,7 +1,7 @@
 """Tests for mfomf.model_based_rl."""
 import numpy as np
 import pytest
-from moirais.fn.mfomf import model_based_rl
+from morie.fn.mfomf import model_based_rl
 
 
 def test_mfomf_basic():

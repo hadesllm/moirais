@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.chnvg -- chain convergence test."""
+"""Tests for morie.fn.chnvg -- chain convergence test."""
 import numpy as np
-from moirais.fn.chnvg import chain_convergence_test, chnvg
+from morie.fn.chnvg import chain_convergence_test, chnvg
 
 
 def test_alias():

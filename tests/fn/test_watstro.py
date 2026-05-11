@@ -1,7 +1,7 @@
 """Tests for watstro.watts_strogatz."""
 import numpy as np
 import pytest
-from moirais.fn.watstro import watts_strogatz
+from morie.fn.watstro import watts_strogatz
 
 
 def test_watstro_basic():

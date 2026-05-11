@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.tost — TOST equivalence test."""
+"""Tests for morie.fn.tost — TOST equivalence test."""
 import numpy as np
 import pytest
-from moirais.fn.tost import tost_test
+from morie.fn.tost import tost_test
 
 
 class TestTOST:

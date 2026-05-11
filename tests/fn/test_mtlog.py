@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mtlog -- Matrix logarithm."""
+"""Tests for morie.fn.mtlog -- Matrix logarithm."""
 
 import numpy as np
-from moirais.fn.mtlog import matrix_log, mtlog
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtlog import matrix_log, mtlog
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMtlog:

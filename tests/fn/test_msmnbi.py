@@ -1,7 +1,7 @@
 """Tests for msmnbi.msm_negative_binomial."""
 import numpy as np
 import pytest
-from moirais.fn.msmnbi import msm_negative_binomial
+from morie.fn.msmnbi import msm_negative_binomial
 
 
 def test_msmnbi_basic():

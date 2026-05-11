@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.venmm -- co-occurrence matrix analysis."""
+"""Tests for morie.fn.venmm -- co-occurrence matrix analysis."""
 
 import numpy as np
-from moirais.fn.venmm import cooccurrence_matrix, venmm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.venmm import cooccurrence_matrix, venmm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestVenmm:

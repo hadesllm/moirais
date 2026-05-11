@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sntcn — sentence concurrency."""
+"""Tests for morie.fn.sntcn — sentence concurrency."""
 
 import pytest
 import pandas as pd
-from moirais.fn.sntcn import sentence_concurrency
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sntcn import sentence_concurrency
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSentenceConcurrency:

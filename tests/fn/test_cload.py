@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.cload — cache load."""
+"""Tests for morie.fn.cload — cache load."""
 
 import pandas as pd
 import pytest
 
-from moirais.fn.cload import cload, cache_load
-from moirais.fn.cstor import cstor
+from morie.fn.cload import cload, cache_load
+from morie.fn.cstor import cstor
 
 
 def test_alias_is_same_function():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.apres -- aggregate PRE."""
+"""Tests for morie.fn.apres -- aggregate PRE."""
 import numpy as np
-from moirais.fn.apres import apre_statistic, apres
+from morie.fn.apres import apre_statistic, apres
 
 
 def test_alias():

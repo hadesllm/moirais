@@ -1,7 +1,7 @@
 """Tests for fzbfkde2.fauzi_bdfree_density_from_cdf."""
 import numpy as np
 import pytest
-from moirais.fn.fzbfkde2 import fauzi_bdfree_density_from_cdf
+from morie.fn.fzbfkde2 import fauzi_bdfree_density_from_cdf
 
 
 def test_fzbfkde2_basic():

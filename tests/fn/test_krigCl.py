@@ -1,7 +1,7 @@
 """Tests for krigCl.ordinary_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.krigCl import ordinary_kriging
+from morie.fn.krigCl import ordinary_kriging
 
 
 def test_krigCl_basic():

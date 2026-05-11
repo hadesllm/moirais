@@ -1,7 +1,7 @@
 """Tests for snpeff.variant_effect."""
 import numpy as np
 import pytest
-from moirais.fn.snpeff import variant_effect
+from morie.fn.snpeff import variant_effect
 
 
 def test_snpeff_basic():

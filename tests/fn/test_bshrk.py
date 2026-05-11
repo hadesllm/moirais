@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bshrk -- Bayesian horseshoe."""
+"""Tests for morie.fn.bshrk -- Bayesian horseshoe."""
 
 import numpy as np
-from moirais.fn.bshrk import bayesian_horseshoe
+from morie.fn.bshrk import bayesian_horseshoe
 
 
 def test_returns_dict():

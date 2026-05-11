@@ -1,7 +1,7 @@
 """Tests for lpdwc.log_pointwise_predictive_density."""
 import numpy as np
 import pytest
-from moirais.fn.lpdwc import log_pointwise_predictive_density
+from morie.fn.lpdwc import log_pointwise_predictive_density
 
 
 def test_lpdwc_basic():

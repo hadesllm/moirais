@@ -1,7 +1,7 @@
 Propensity Scores
 =================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
 The propensity score :math:`e(X) = P(T=1 \mid X)` summarizes confounding
 information into a single scalar, allowing balancing without direct covariate
@@ -10,7 +10,7 @@ matching (Rosenbaum & Rubin 1983).
 Estimation
 ----------
 
-MOIRAIS estimates propensity scores via logistic regression (default) or random
+MORIE estimates propensity scores via logistic regression (default) or random
 forest, depending on the module configuration.
 
 **Logistic regression**:
@@ -19,7 +19,7 @@ forest, depending on the module configuration.
 
    \log \frac{e(X_i)}{1 - e(X_i)} = \beta_0 + \beta^\top X_i
 
-Implemented in :func:`moirais.causal.compute_propensity_scores` using
+Implemented in :func:`morie.causal.compute_propensity_scores` using
 :class:`sklearn.linear_model.LogisticRegression` with ``max_iter=1000``.
 
 Diagnostics

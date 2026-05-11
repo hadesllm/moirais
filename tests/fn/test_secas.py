@@ -1,7 +1,7 @@
 """Test secas."""
 import numpy as np
 import pytest
-from moirais.fn.secas import secas
+from morie.fn.secas import secas
 
 
 def test_secas_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.learn -- Learning curve."""
+"""Tests for morie.fn.learn -- Learning curve."""
 
 import numpy as np
-from moirais.fn.learn import learning_curve
+from morie.fn.learn import learning_curve
 
 
 class TestLearningCurve:

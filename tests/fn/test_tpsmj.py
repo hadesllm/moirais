@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tpsmj — major crime."""
+"""Tests for morie.fn.tpsmj — major crime."""
 
 import pytest
 import pandas as pd
-from moirais.fn.tpsmj import tps_major_crime
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tpsmj import tps_major_crime
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMajorCrime:

@@ -1,7 +1,7 @@
 """Test hyrch."""
 import numpy as np
 import pytest
-from moirais.fn.hyrch import hyrch
+from morie.fn.hyrch import hyrch
 
 
 def test_hyrch_basic():

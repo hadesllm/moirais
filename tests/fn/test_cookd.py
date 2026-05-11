@@ -1,7 +1,7 @@
 """Tests for cookd.cooks_distance."""
 import numpy as np
 import pytest
-from moirais.fn.cookd import cooks_distance
+from morie.fn.cookd import cooks_distance
 
 
 def test_cookd_basic():

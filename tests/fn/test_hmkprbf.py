@@ -1,7 +1,7 @@
 """Tests for hmkprbf.geron_kernel_pca_rbf."""
 import numpy as np
 import pytest
-from moirais.fn.hmkprbf import geron_kernel_pca_rbf
+from morie.fn.hmkprbf import geron_kernel_pca_rbf
 
 
 def test_hmkprbf_basic():

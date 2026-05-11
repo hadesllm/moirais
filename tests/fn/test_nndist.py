@@ -1,7 +1,7 @@
 """Tests for nndist.nearest_neighbor_distance."""
 import numpy as np
 import pytest
-from moirais.fn.nndist import nearest_neighbor_distance
+from morie.fn.nndist import nearest_neighbor_distance
 
 
 def test_nndist_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxdps -- Dirichlet process spatial"""
+"""Tests for morie.fn.zxdps -- Dirichlet process spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxdps import dirichlet_proc_sp
+from morie.fn.zxdps import dirichlet_proc_sp
 
 
 class TestDirichletProcSp:

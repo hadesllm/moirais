@@ -1,7 +1,7 @@
 """Tests for ksr071.kosorok_ch3_log_profile_expansion."""
 import numpy as np
 import pytest
-from moirais.fn.ksr071 import kosorok_ch3_log_profile_expansion
+from morie.fn.ksr071 import kosorok_ch3_log_profile_expansion
 
 
 def test_ksr071_basic():

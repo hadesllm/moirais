@@ -1,7 +1,7 @@
 """Tests for grpcap.geron_pca_projection."""
 import numpy as np
 import pytest
-from moirais.fn.grpcap import geron_pca_projection
+from morie.fn.grpcap import geron_pca_projection
 
 
 def test_grpcap_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pwr_t -- power analysis for t-tests."""
+"""Tests for morie.fn.pwr_t -- power analysis for t-tests."""
 
 import pytest
-from moirais.fn.pwr_t import power_t_test
+from morie.fn.pwr_t import power_t_test
 
 
 class TestPowerTTest:

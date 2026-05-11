@@ -1,5 +1,5 @@
 ---
-title: 'MOIRAIS: A Multi-Domain Scientific Computing Toolkit, with the MRM Framework for Canadian Carceral, Police, and Oversight Data'
+title: 'MORIE: A Multi-Domain Scientific Computing Toolkit, with the MRM Framework for Canadian Carceral, Police, and Oversight Data'
 tags:
   - Python
   - R
@@ -27,7 +27,7 @@ bibliography: paper.bib
 
 # Summary
 
-MOIRAIS (**M**ethods for **O**bservational **I**nference and
+MORIE (**M**ethods for **O**bservational **I**nference and
 **R**obust **A**nalysis of **I**nterventions in **S**cientific
 **E**xperimentation) is an open-source, dual-language (Python and R)
 scientific-computing toolkit that supports observational
@@ -48,14 +48,14 @@ open-data crime categories with the Statistics Canada Crime
 Severity Index [@wallace2009csi], and federal Corrections and
 Conditional Release Statistical Overview tables introduced via
 Doob's *T-539-20* affidavit [@doob2020affidavit]. MRM is
-implemented in MOIRAIS as a set of MRM modules — a 10-estimator
+implemented in MORIE as a set of MRM modules — a 10-estimator
 per-individual causal ensemble paired with a GEE
 clustering grid, a Doob $\chi^{2}$ family for aggregate
 contingency tables, a Goffmanian institutional-churn analysis
 suite [@goffman1961asylums], and a Mandela Rules classifier
 [@un2015mandela] that operates at both the federal level (full
 out-of-cell-hour operationalization) and the provincial level
-(duration-only proxy). Beyond the sociolegal flagship domain, MOIRAIS provides
+(duration-only proxy). Beyond the sociolegal flagship domain, MORIE provides
 general-purpose causal-inference estimators (IPW, AIPW,
 double machine learning [@chernozhukov2018double],
 propensity-score matching, sensitivity analysis), survey-weighted
@@ -85,7 +85,7 @@ Service open data must currently stitch together five separate
 data dictionaries, five release cadences, and five formats
 (microdata CSV, PDF report, HTML director's report, GeoJSON,
 JSON). No primary key joins these sources, and most existing
-software targets one of them in isolation. MOIRAIS addresses this
+software targets one of them in isolation. MORIE addresses this
 gap by providing a single namespace and a single set of
 estimators that span all five sources, with MRM/RF as the
 unifying mathematical layer.
@@ -97,7 +97,7 @@ flagship into adjacent scientific-experimentation contexts:
   needing IPW, AIPW, double-machine learning, propensity-score
   matching, instrumental variables, regression discontinuity, or
   E-value sensitivity analysis [@vanderweele2017evalue] can use
-  MOIRAIS without engaging the carceral / oversight modules.
+  MORIE without engaging the carceral / oversight modules.
 - **Forensics and biomedical signals.** The
   `signal_processing` and `homomorphic_deconvolution` modules
   expose spectral analysis, cepstral methods, wavelets, and the
@@ -110,11 +110,11 @@ flagship into adjacent scientific-experimentation contexts:
   psychometrics.** Each is a self-contained module that can be
   used independently.
 
-MOIRAIS is terminal-first by design. Public-sector analysts and
+MORIE is terminal-first by design. Public-sector analysts and
 researchers in secure or air-gapped environments often lack a
 graphical desktop or stable internet, and most existing causal-
 inference and observational-analysis tools assume a browser-based
-notebook front end. MOIRAIS's Textual TUI provides interactive
+notebook front end. MORIE's Textual TUI provides interactive
 data exploration, pipeline execution, polyglot REPL (Python / R /
 Shell with bidirectional variable bridging), and LLM-assisted
 analysis without a web browser, and the vendored TurboQuant
@@ -126,7 +126,7 @@ consumer hardware.
 ## MRM framework (the MRM modules)
 
 The carceral, police, and oversight analyses are organised
-around the MRM framework. The MRM modules, MOIRAIS's
+around the MRM framework. The MRM modules, MORIE's
 implementation of MRM, cover:
 
 - An **aggregate IRR family** for Poisson- and

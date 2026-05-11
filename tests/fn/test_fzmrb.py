@@ -1,7 +1,7 @@
 """Tests for fzmrb.fauzi_mrl_boundary_free."""
 import numpy as np
 import pytest
-from moirais.fn.fzmrb import fauzi_mrl_boundary_free
+from morie.fn.fzmrb import fauzi_mrl_boundary_free
 
 
 def test_fzmrb_basic():

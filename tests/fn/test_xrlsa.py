@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrlsa -- Local Moran's I (LISA)"""
+"""Tests for morie.fn.xrlsa -- Local Moran's I (LISA)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrlsa import lisa_local
+from morie.fn.xrlsa import lisa_local
 
 
 class TestLisaLocal:

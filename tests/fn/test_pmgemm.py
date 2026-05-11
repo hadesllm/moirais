@@ -5,7 +5,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.fn.pmgemm import pm_gemm_rr, pmgemm
+from morie.fn.pmgemm import pm_gemm_rr, pmgemm
 
 
 def test_pmgemm_at_tmrel_returns_rr_one():

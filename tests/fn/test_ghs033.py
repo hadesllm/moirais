@@ -1,7 +1,7 @@
 """Tests for ghs033.ghosal_ch3_polya_tree_mixture_second_kind."""
 import numpy as np
 import pytest
-from moirais.fn.ghs033 import ghosal_ch3_polya_tree_mixture_second_kind
+from morie.fn.ghs033 import ghosal_ch3_polya_tree_mixture_second_kind
 
 
 def test_ghs033_basic():

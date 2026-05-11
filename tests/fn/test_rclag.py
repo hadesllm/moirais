@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rclag."""
+"""Tests for morie.fn.rclag."""
 
 import numpy as np
 import pytest
-from moirais.fn.rclag import rclag
+from morie.fn.rclag import rclag
 
 
 class TestRclag:

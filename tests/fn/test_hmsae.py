@@ -1,7 +1,7 @@
 """Tests for hmsae.geron_stacked_autoencoder."""
 import numpy as np
 import pytest
-from moirais.fn.hmsae import geron_stacked_autoencoder
+from morie.fn.hmsae import geron_stacked_autoencoder
 
 
 def test_hmsae_basic():

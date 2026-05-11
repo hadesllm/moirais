@@ -1,7 +1,7 @@
 """Tests for ctomeg.omega_total."""
 import numpy as np
 import pytest
-from moirais.fn.ctomeg import omega_total
+from morie.fn.ctomeg import omega_total
 
 
 def test_ctomeg_basic():

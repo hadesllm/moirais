@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.varmd — VAR(p) model fitting."""
+"""Tests for morie.fn.varmd — VAR(p) model fitting."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.varmd import var_model, varmd
+from morie.fn.varmd import var_model, varmd
 
 
 def test_returns_descriptive_result():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mdcwd."""
+"""Tests for morie.fn.mdcwd."""
 
 import numpy as np
 import pytest
-from moirais.fn.mdcwd import mdcwd
+from morie.fn.mdcwd import mdcwd
 
 
 class TestMdcwd:

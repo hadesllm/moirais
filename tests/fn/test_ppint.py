@@ -1,7 +1,7 @@
 """Test pp_interval (ppint)."""
 import numpy as np
-from moirais.fn.ppint import pp_interval, ppint
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ppint import pp_interval, ppint
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPpInterval:

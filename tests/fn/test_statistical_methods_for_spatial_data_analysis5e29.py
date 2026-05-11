@@ -1,7 +1,7 @@
 """Tests for statistical_methods_for_spatial_data_analysis5e29.statistical_methods_for_spatial_data_analysis_chapter_5_equation_29."""
 import numpy as np
 import pytest
-from moirais.fn.statistical_methods_for_spatial_data_analysis5e29 import statistical_methods_for_spatial_data_analysis_chapter_5_equation_29
+from morie.fn.statistical_methods_for_spatial_data_analysis5e29 import statistical_methods_for_spatial_data_analysis_chapter_5_equation_29
 
 
 def test_statistical_methods_for_spatial_data_analysis5e29_basic():

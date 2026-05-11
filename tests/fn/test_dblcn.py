@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dblcn — Double centering."""
+"""Tests for morie.fn.dblcn — Double centering."""
 import numpy as np
 import pytest
 
-from moirais.fn.dblcn import dblcn
+from morie.fn.dblcn import dblcn
 
 
 def test_dblcn_smoke():
@@ -13,7 +13,7 @@ def test_dblcn_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.dblcn import cheatsheet
+    from morie.fn.dblcn import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

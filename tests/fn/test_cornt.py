@@ -1,6 +1,6 @@
 """Tests for correlation entropy."""
 import numpy as np
-from moirais.fn.cornt import correlation_entropy, cornt
+from morie.fn.cornt import correlation_entropy, cornt
 
 
 def test_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.yangm -- Yang-Mills action."""
+"""Tests for morie.fn.yangm -- Yang-Mills action."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.yangm import yangm
+from morie.fn.yangm import yangm
 
 
 def test_returns_dict():

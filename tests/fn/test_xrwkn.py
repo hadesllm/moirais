@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwkn -- K-nearest neighbors weights"""
+"""Tests for morie.fn.xrwkn -- K-nearest neighbors weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwkn import w_knn
+from morie.fn.xrwkn import w_knn
 
 
 class TestWKnn:

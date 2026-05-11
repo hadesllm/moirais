@@ -1,7 +1,7 @@
 """Tests for zipmd.zero_inflated_poisson."""
 import numpy as np
 import pytest
-from moirais.fn.zipmd import zero_inflated_poisson
+from morie.fn.zipmd import zero_inflated_poisson
 
 
 def test_zipmd_basic():

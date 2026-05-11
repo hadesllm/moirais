@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.srdur -- Survival duration statistics."""
+"""Tests for morie.fn.srdur -- Survival duration statistics."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.srdur import srdur
+from morie.fn.srdur import srdur
 
 
 @pytest.fixture()
@@ -40,5 +40,5 @@ def test_mean_restricted_positive(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.srdur import cheatsheet
+    from morie.fn.srdur import cheatsheet
     assert "duration" in cheatsheet().lower()

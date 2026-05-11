@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kdens — Kernel density estimation."""
+"""Tests for morie.fn.kdens — Kernel density estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kdens import kdens
+from morie.fn.kdens import kdens
 
 
 @pytest.fixture()

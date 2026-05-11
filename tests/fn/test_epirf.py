@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.epirf -- effective Rt (Wallinga-Teunis)."""
+"""Tests for morie.fn.epirf -- effective Rt (Wallinga-Teunis)."""
 
 import numpy as np
 import pytest
-from moirais.fn.epirf import effective_rt
+from morie.fn.epirf import effective_rt
 
 
 class TestEffectiveRt:

@@ -1,7 +1,7 @@
 """Tests for chzlt.cinelli_hazlett."""
 import numpy as np
 import pytest
-from moirais.fn.chzlt import cinelli_hazlett
+from morie.fn.chzlt import cinelli_hazlett
 
 
 def test_chzlt_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sacml."""
+"""Tests for morie.fn.sacml."""
 import numpy as np
 import pytest
-from moirais.fn.sacml import sacml
+from morie.fn.sacml import sacml
 
 
 class TestSacml:

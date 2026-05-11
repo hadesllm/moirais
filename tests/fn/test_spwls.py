@@ -1,7 +1,7 @@
 """Tests for spwls.schabenberger_wls_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.spwls import schabenberger_wls_variogram
+from morie.fn.spwls import schabenberger_wls_variogram
 
 
 def test_spwls_basic():

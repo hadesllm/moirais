@@ -1,7 +1,7 @@
 """Tests for rng130.rangayyan_ch3_bilinear_warping_Omega_to_omega."""
 import numpy as np
 import pytest
-from moirais.fn.rng130 import rangayyan_ch3_bilinear_warping_Omega_to_omega
+from morie.fn.rng130 import rangayyan_ch3_bilinear_warping_Omega_to_omega
 
 
 def test_rng130_basic():

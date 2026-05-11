@@ -1,7 +1,7 @@
 """Tests for gb_ksn.gibbons_ks_sample_size."""
 import numpy as np
 import pytest
-from moirais.fn.gb_ksn import gibbons_ks_sample_size
+from morie.fn.gb_ksn import gibbons_ks_sample_size
 
 
 def test_gb_ksn_basic():

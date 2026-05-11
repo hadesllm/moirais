@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dtmap."""
+"""Tests for morie.fn.dtmap."""
 
 import numpy as np
 import pytest
-from moirais.fn.dtmap import dtmap
+from morie.fn.dtmap import dtmap
 
 
 class TestDtmap:

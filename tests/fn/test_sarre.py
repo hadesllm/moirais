@@ -1,7 +1,7 @@
 """Tests for sarre.spatial_ar_error."""
 import numpy as np
 import pytest
-from moirais.fn.sarre import spatial_ar_error
+from morie.fn.sarre import spatial_ar_error
 
 
 def test_sarre_basic():

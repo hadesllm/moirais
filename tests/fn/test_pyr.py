@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pyr -- person-years at risk."""
+"""Tests for morie.fn.pyr -- person-years at risk."""
 
 import numpy as np
 import pytest
-from moirais.fn.pyr import person_years_at_risk
+from morie.fn.pyr import person_years_at_risk
 
 
 class TestPersonYears:

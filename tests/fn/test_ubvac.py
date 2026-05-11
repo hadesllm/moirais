@@ -1,7 +1,7 @@
 """Test ubvac."""
 import numpy as np
 import pytest
-from moirais.fn.ubvac import ubvac
+from morie.fn.ubvac import ubvac
 
 
 def test_ubvac_basic():

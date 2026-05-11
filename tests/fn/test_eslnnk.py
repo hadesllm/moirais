@@ -1,7 +1,7 @@
 """Tests for eslnnk.esl_nadaraya_watson."""
 import numpy as np
 import pytest
-from moirais.fn.eslnnk import esl_nadaraya_watson
+from morie.fn.eslnnk import esl_nadaraya_watson
 
 
 def test_eslnnk_basic():

@@ -1,7 +1,7 @@
 """Tests for mcdcv.min_covariance_determinant."""
 import numpy as np
 import pytest
-from moirais.fn.mcdcv import min_covariance_determinant
+from morie.fn.mcdcv import min_covariance_determinant
 
 
 def test_mcdcv_basic():

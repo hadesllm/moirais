@@ -1,7 +1,7 @@
 """Tests for causivkm.causal_iv_kleibergen_moreira."""
 import numpy as np
 import pytest
-from moirais.fn.causivkm import causal_iv_kleibergen_moreira
+from morie.fn.causivkm import causal_iv_kleibergen_moreira
 
 
 def test_causivkm_basic():

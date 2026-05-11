@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.optsa -- simulated annealing MDS."""
+"""Tests for morie.fn.optsa -- simulated annealing MDS."""
 
 import numpy as np
-from moirais.fn.optsa import simulated_anneal_mds, optsa
+from morie.fn.optsa import simulated_anneal_mds, optsa
 
 
 def test_optsa_smoke():

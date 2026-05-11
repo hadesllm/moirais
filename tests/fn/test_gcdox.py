@@ -1,7 +1,7 @@
 """Test gcdox."""
 import numpy as np
 import pytest
-from moirais.fn.gcdox import gcdox
+from morie.fn.gcdox import gcdox
 
 
 def test_gcdox_basic():

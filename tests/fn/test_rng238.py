@@ -1,7 +1,7 @@
 """Tests for rng238.rangayyan_ch4_complex_cepstra_sum."""
 import numpy as np
 import pytest
-from moirais.fn.rng238 import rangayyan_ch4_complex_cepstra_sum
+from morie.fn.rng238 import rangayyan_ch4_complex_cepstra_sum
 
 
 def test_rng238_basic():

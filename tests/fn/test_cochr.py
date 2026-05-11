@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.cochr import cochr
+from morie.fn.cochr import cochr
 
 
 class TestCochr:

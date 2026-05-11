@@ -1,7 +1,7 @@
 """Tests for hmbnm.geron_biological_neuron."""
 import numpy as np
 import pytest
-from moirais.fn.hmbnm import geron_biological_neuron
+from morie.fn.hmbnm import geron_biological_neuron
 
 
 def test_hmbnm_basic():

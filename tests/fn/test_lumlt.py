@@ -1,7 +1,7 @@
 """Tests for lumlt."""
 import numpy as np
 import pytest
-from moirais.fn.lumlt import lumlt
+from morie.fn.lumlt import lumlt
 
 
 def test_lumlt_basic():
@@ -27,5 +27,5 @@ def test_lumlt_no_data():
 
 
 def test_lumlt_alias():
-    from moirais.fn.lumlt import lumlt
+    from morie.fn.lumlt import lumlt
     assert lumlt is lumlt

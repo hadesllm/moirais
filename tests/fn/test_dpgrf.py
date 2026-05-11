@@ -1,7 +1,7 @@
 """Tests for dpgrf.dp_grouped_random_field."""
 import numpy as np
 import pytest
-from moirais.fn.dpgrf import dp_grouped_random_field
+from morie.fn.dpgrf import dp_grouped_random_field
 
 
 def test_dpgrf_basic():

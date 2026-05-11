@@ -1,7 +1,7 @@
 """Tests for cmaopt.cma_es."""
 import numpy as np
 import pytest
-from moirais.fn.cmaopt import cma_es
+from morie.fn.cmaopt import cma_es
 
 
 def test_cmaopt_basic():

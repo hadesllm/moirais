@@ -1,7 +1,7 @@
 """Shared test fixtures — generates synthetic CPADS data for CI.
 
 Real CPADS PUMF microdata lives in data/private/ and is never committed.
-These fixtures create a synthetic dataset with canonical MOIRAIS columns
+These fixtures create a synthetic dataset with canonical MORIE columns
 so module tests run on CI without private data.
 """
 from __future__ import annotations

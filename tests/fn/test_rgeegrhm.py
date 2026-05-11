@@ -1,7 +1,7 @@
 """Tests for rgeegrhm.rangayyan_eeg_rhythm_detect."""
 import numpy as np
 import pytest
-from moirais.fn.rgeegrhm import rangayyan_eeg_rhythm_detect
+from morie.fn.rgeegrhm import rangayyan_eeg_rhythm_detect
 
 
 def test_rgeegrhm_basic():

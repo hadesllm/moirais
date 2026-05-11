@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cdmrt -- cause-specific mortality."""
+"""Tests for morie.fn.cdmrt -- cause-specific mortality."""
 
 import pytest
-from moirais.fn.cdmrt import cause_specific_mortality
+from morie.fn.cdmrt import cause_specific_mortality
 
 
 class TestCauseSpecificMortality:

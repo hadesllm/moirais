@@ -1,7 +1,7 @@
 """Tests for brier: Brier score for survival models."""
 import numpy as np
 import pytest
-from moirais.fn.brier import brier
+from morie.fn.brier import brier
 
 
 def _make_data(n=200, seed=0):

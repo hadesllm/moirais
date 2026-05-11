@@ -1,7 +1,7 @@
 """Test serhm."""
 import numpy as np
 import pytest
-from moirais.fn.serhm import serhm
+from morie.fn.serhm import serhm
 
 
 def test_serhm_basic():

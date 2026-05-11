@@ -1,7 +1,7 @@
 """Tests for rdksrn.sharp_rdd."""
 import numpy as np
 import pytest
-from moirais.fn.rdksrn import sharp_rdd
+from morie.fn.rdksrn import sharp_rdd
 
 
 def test_rdksrn_basic():

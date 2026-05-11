@@ -1,7 +1,7 @@
 """Test focnph."""
 import numpy as np
 import pytest
-from moirais.fn.focnph import focnph
+from morie.fn.focnph import focnph
 
 
 def test_focnph_basic():

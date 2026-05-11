@@ -1,7 +1,7 @@
 """Tests for wsmsgn.wasserman_sign_test."""
 import numpy as np
 import pytest
-from moirais.fn.wsmsgn import wasserman_sign_test
+from morie.fn.wsmsgn import wasserman_sign_test
 
 
 def test_wsmsgn_basic():

@@ -1,7 +1,7 @@
 """Tests for sam2vd.sam2_video_propagation."""
 import numpy as np
 import pytest
-from moirais.fn.sam2vd import sam2_video_propagation
+from morie.fn.sam2vd import sam2_video_propagation
 
 
 def test_sam2vd_basic():

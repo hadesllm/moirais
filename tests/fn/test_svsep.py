@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svsep -- Separating hyperplane"""
+"""Tests for morie.fn.svsep -- Separating hyperplane"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svsep import separating_hyp
+from morie.fn.svsep import separating_hyp
 
 
 class TestSeparatingHyp:

@@ -1,7 +1,7 @@
 """Test masss."""
 import numpy as np
 import pytest
-from moirais.fn.masss import masss
+from morie.fn.masss import masss
 
 
 def test_masss_basic():

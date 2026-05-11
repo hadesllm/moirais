@@ -1,7 +1,7 @@
 """Tests for aE_an.autoencoder_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.aE_an import autoencoder_anomaly
+from morie.fn.aE_an import autoencoder_anomaly
 
 
 def test_aE_an_basic():

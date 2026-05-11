@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ufstr — Unfolding stress."""
+"""Tests for morie.fn.ufstr — Unfolding stress."""
 import numpy as np
 import pytest
 
-from moirais.fn.ufstr import ufstr
+from morie.fn.ufstr import ufstr
 
 
 def test_ufstr_smoke():
@@ -14,7 +14,7 @@ def test_ufstr_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ufstr import cheatsheet
+    from morie.fn.ufstr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

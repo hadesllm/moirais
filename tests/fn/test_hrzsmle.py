@@ -1,7 +1,7 @@
 """Tests for hrzsmle.horowitz_semipar_mle_binary."""
 import numpy as np
 import pytest
-from moirais.fn.hrzsmle import horowitz_semipar_mle_binary
+from morie.fn.hrzsmle import horowitz_semipar_mle_binary
 
 
 def test_hrzsmle_basic():

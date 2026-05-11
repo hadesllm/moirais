@@ -1,7 +1,7 @@
 """Tests for cmlmer.compressed_lmm."""
 import numpy as np
 import pytest
-from moirais.fn.cmlmer import compressed_lmm
+from morie.fn.cmlmer import compressed_lmm
 
 
 def test_cmlmer_basic():

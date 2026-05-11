@@ -1,7 +1,7 @@
 """Tests for linprm.linear_programming."""
 import numpy as np
 import pytest
-from moirais.fn.linprm import linear_programming
+from morie.fn.linprm import linear_programming
 
 
 def test_linprm_basic():

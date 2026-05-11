@@ -1,7 +1,7 @@
 """Tests for rgbp.rangayyan_basis_pursuit."""
 import numpy as np
 import pytest
-from moirais.fn.rgbp import rangayyan_basis_pursuit
+from morie.fn.rgbp import rangayyan_basis_pursuit
 
 
 def test_rgbp_basic():

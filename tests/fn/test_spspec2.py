@@ -1,7 +1,7 @@
 """Tests for spspec2.schabenberger_spectral_sim."""
 import numpy as np
 import pytest
-from moirais.fn.spspec2 import schabenberger_spectral_sim
+from morie.fn.spspec2 import schabenberger_spectral_sim
 
 
 def test_spspec2_basic():

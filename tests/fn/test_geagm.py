@@ -1,7 +1,7 @@
 """Test geagm."""
 import numpy as np
 import pytest
-from moirais.fn.geagm import geagm
+from morie.fn.geagm import geagm
 
 
 def test_geagm_basic():

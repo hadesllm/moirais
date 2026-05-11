@@ -1,7 +1,7 @@
 """Tests for sirstn.sir_stochastic."""
 import numpy as np
 import pytest
-from moirais.fn.sirstn import sir_stochastic
+from morie.fn.sirstn import sir_stochastic
 
 
 def test_sirstn_basic():

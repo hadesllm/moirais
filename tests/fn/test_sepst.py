@@ -1,7 +1,7 @@
 """Tests for sepst.separation_set."""
 import numpy as np
 import pytest
-from moirais.fn.sepst import separation_set
+from morie.fn.sepst import separation_set
 
 
 def test_sepst_basic():

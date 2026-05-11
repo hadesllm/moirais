@@ -1,7 +1,7 @@
 """Tests for aitbcp.compositional_bray_curtis."""
 import numpy as np
 import pytest
-from moirais.fn.aitbcp import compositional_bray_curtis
+from morie.fn.aitbcp import compositional_bray_curtis
 
 
 def test_aitbcp_basic():

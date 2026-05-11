@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zectr -- Spatial contact tracing"""
+"""Tests for morie.fn.zectr -- Spatial contact tracing"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zectr import contact_trace_sp
+from morie.fn.zectr import contact_trace_sp
 
 
 class TestContactTraceSp:

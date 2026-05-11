@@ -1,7 +1,7 @@
 """Tests for gru4r.gru4rec."""
 import numpy as np
 import pytest
-from moirais.fn.gru4r import gru4rec
+from morie.fn.gru4r import gru4rec
 
 
 def test_gru4r_basic():

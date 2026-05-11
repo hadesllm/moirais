@@ -1,7 +1,7 @@
 """Tests for phyltr.phylogenetic_tree_nj."""
 import numpy as np
 import pytest
-from moirais.fn.phyltr import phylogenetic_tree_nj
+from morie.fn.phyltr import phylogenetic_tree_nj
 
 
 def test_phyltr_basic():

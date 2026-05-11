@@ -1,7 +1,7 @@
 """Tests for ksr051.kosorok_ch2_continuous_invertibility."""
 import numpy as np
 import pytest
-from moirais.fn.ksr051 import kosorok_ch2_continuous_invertibility
+from morie.fn.ksr051 import kosorok_ch2_continuous_invertibility
 
 
 def test_ksr051_basic():

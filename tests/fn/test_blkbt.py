@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.blkbt — Blackbox scaling."""
+"""Tests for morie.fn.blkbt — Blackbox scaling."""
 import numpy as np
-from moirais.fn.blkbt import blkbt
+from morie.fn.blkbt import blkbt
 
 
 def test_blkbt_basic():

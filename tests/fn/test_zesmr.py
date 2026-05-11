@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zesmr -- Standardized Morbidity Ratio"""
+"""Tests for morie.fn.zesmr -- Standardized Morbidity Ratio"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zesmr import smr_compute
+from morie.fn.zesmr import smr_compute
 
 
 class TestSmrCompute:

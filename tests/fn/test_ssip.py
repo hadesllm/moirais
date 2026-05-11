@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ssip — Sample size for proportions."""
+"""Tests for morie.fn.ssip — Sample size for proportions."""
 
 import pytest
 
-from moirais.fn.ssip import sample_size_proportions
+from morie.fn.ssip import sample_size_proportions
 
 
 class TestSampleSizeProportions:

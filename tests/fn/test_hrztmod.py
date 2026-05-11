@@ -1,7 +1,7 @@
 """Tests for hrztmod.horowitz_transformation_model."""
 import numpy as np
 import pytest
-from moirais.fn.hrztmod import horowitz_transformation_model
+from morie.fn.hrztmod import horowitz_transformation_model
 
 
 def test_hrztmod_basic():

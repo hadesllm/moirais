@@ -1,7 +1,7 @@
 """Test trksp."""
 import numpy as np
 import pytest
-from moirais.fn.trksp import trksp
+from morie.fn.trksp import trksp
 
 
 def test_trksp_basic():

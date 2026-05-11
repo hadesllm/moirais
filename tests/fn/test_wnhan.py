@@ -1,7 +1,7 @@
 """Test hanning_window (wnhan)."""
 import numpy as np
-from moirais.fn.wnhan import hanning_window, wnhan
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wnhan import hanning_window, wnhan
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWnhan:

@@ -1,7 +1,7 @@
 """Tests for msm243.mvsml_preprocessing_eq_2_4."""
 import numpy as np
 import pytest
-from moirais.fn.msm243 import mvsml_preprocessing_eq_2_4
+from morie.fn.msm243 import mvsml_preprocessing_eq_2_4
 
 
 def test_msm243_basic():

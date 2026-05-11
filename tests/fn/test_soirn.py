@@ -1,7 +1,7 @@
 """Test soirn."""
 import numpy as np
 import pytest
-from moirais.fn.soirn import soirn
+from morie.fn.soirn import soirn
 
 
 def test_soirn_basic():

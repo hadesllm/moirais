@@ -1,7 +1,7 @@
 """Tests for dinmlt.dino_multicrop."""
 import numpy as np
 import pytest
-from moirais.fn.dinmlt import dino_multicrop
+from morie.fn.dinmlt import dino_multicrop
 
 
 def test_dinmlt_basic():

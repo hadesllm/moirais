@@ -1,7 +1,7 @@
 """Test opmfo."""
 import numpy as np
 import pytest
-from moirais.fn.opmfo import opmfo
+from morie.fn.opmfo import opmfo
 
 
 def test_opmfo_basic():

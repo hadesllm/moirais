@@ -1,7 +1,7 @@
 """Tests for gb_pgl.gibbons_page_exact."""
 import numpy as np
 import pytest
-from moirais.fn.gb_pgl import gibbons_page_exact
+from morie.fn.gb_pgl import gibbons_page_exact
 
 
 def test_gb_pgl_basic():

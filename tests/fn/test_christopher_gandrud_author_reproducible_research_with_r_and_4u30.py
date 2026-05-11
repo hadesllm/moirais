@@ -1,7 +1,7 @@
 """Errors using inadequate data are much less than those using no data at all. — Charles Babbage"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u30 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_30
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u30 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_30
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u30_basic():

@@ -1,7 +1,7 @@
 """Tests for kmw2v.kamath_word2vec_skipgram."""
 import numpy as np
 import pytest
-from moirais.fn.kmw2v import kamath_word2vec_skipgram
+from morie.fn.kmw2v import kamath_word2vec_skipgram
 
 
 def test_kmw2v_basic():

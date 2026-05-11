@@ -1,7 +1,7 @@
 """Tests for frkst.fork_structure."""
 import numpy as np
 import pytest
-from moirais.fn.frkst import fork_structure
+from morie.fn.frkst import fork_structure
 
 
 def test_frkst_basic():

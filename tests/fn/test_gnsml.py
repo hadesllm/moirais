@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gnsml."""
+"""Tests for morie.fn.gnsml."""
 import numpy as np
 import pytest
-from moirais.fn.gnsml import gnsml
+from morie.fn.gnsml import gnsml
 
 
 class TestGnsml:

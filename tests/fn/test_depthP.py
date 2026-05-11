@@ -1,7 +1,7 @@
 """Tests for depthP.projection_depth."""
 import numpy as np
 import pytest
-from moirais.fn.depthP import projection_depth
+from morie.fn.depthP import projection_depth
 
 
 def test_depthP_basic():

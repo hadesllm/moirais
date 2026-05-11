@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.chrnf -- Chernoff distribution."""
+"""Tests for morie.fn.chrnf -- Chernoff distribution."""
 
 import numpy as np
 import pytest
-from moirais.fn.chrnf import chernoff_distribution
+from morie.fn.chrnf import chernoff_distribution
 
 
 class TestChernoffDistribution:

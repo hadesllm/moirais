@@ -1,7 +1,7 @@
 """Tests for hmgrp.geron_gaussian_rand_projection."""
 import numpy as np
 import pytest
-from moirais.fn.hmgrp import geron_gaussian_rand_projection
+from morie.fn.hmgrp import geron_gaussian_rand_projection
 
 
 def test_hmgrp_basic():

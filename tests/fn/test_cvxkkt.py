@@ -1,7 +1,7 @@
 """Tests for cvxkkt.boyd_kkt."""
 import numpy as np
 import pytest
-from moirais.fn.cvxkkt import boyd_kkt
+from morie.fn.cvxkkt import boyd_kkt
 
 
 def test_cvxkkt_basic():

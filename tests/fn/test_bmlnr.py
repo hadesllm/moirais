@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bmlnr -- Bayesian linear regression."""
+"""Tests for morie.fn.bmlnr -- Bayesian linear regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.bmlnr import bayesian_linear_regression
+from morie.fn.bmlnr import bayesian_linear_regression
 
 
 @pytest.fixture()

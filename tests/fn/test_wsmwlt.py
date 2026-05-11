@@ -1,7 +1,7 @@
 """Tests for wsmwlt.wasserman_wavelet_smooth."""
 import numpy as np
 import pytest
-from moirais.fn.wsmwlt import wasserman_wavelet_smooth
+from morie.fn.wsmwlt import wasserman_wavelet_smooth
 
 
 def test_wsmwlt_basic():

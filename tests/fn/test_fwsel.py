@@ -1,7 +1,7 @@
 """Test forward_select (fwsel)."""
 import numpy as np
-from moirais.fn.fwsel import forward_select, fwsel
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.fwsel import forward_select, fwsel
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFwsel:

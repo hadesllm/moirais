@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.sntdp — sentence disparity."""
+"""Tests for morie.fn.sntdp — sentence disparity."""
 
-from moirais.fn.sntdp import sentence_disparity, sntdp
+from morie.fn.sntdp import sentence_disparity, sntdp
 
 
 class TestSentenceDisparity:

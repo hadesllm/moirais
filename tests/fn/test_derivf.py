@@ -1,7 +1,7 @@
 """Tests for derivf.derivative_function."""
 import numpy as np
 import pytest
-from moirais.fn.derivf import derivative_function
+from morie.fn.derivf import derivative_function
 
 
 def test_derivf_basic():

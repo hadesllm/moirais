@@ -1,7 +1,7 @@
 """Tests for hrzinst.horowitz_instruments_transformation."""
 import numpy as np
 import pytest
-from moirais.fn.hrzinst import horowitz_instruments_transformation
+from morie.fn.hrzinst import horowitz_instruments_transformation
 
 
 def test_hrzinst_basic():

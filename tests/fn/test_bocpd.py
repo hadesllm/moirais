@@ -1,7 +1,7 @@
 """Tests for bocpd.bocpd."""
 import numpy as np
 import pytest
-from moirais.fn.bocpd import bocpd
+from morie.fn.bocpd import bocpd
 
 
 def test_bocpd_basic():

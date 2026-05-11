@@ -1,7 +1,7 @@
 """Tests for alfcnf.alphafold_confidence."""
 import numpy as np
 import pytest
-from moirais.fn.alfcnf import alphafold_confidence
+from morie.fn.alfcnf import alphafold_confidence
 
 
 def test_alfcnf_basic():

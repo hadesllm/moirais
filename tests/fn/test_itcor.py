@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.itcor — corrected item-total correlations."""
+"""Tests for morie.fn.itcor — corrected item-total correlations."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn import itcor
+from morie.fn import itcor
 
 
 @pytest.fixture()

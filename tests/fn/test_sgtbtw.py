@@ -1,7 +1,7 @@
 """Tests for sgtbtw.sgt_betweenness_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.sgtbtw import sgt_betweenness_centrality
+from morie.fn.sgtbtw import sgt_betweenness_centrality
 
 
 def test_sgtbtw_basic():

@@ -1,7 +1,7 @@
 """Test geimp."""
 import numpy as np
 import pytest
-from moirais.fn.geimp import geimp
+from morie.fn.geimp import geimp
 
 
 def test_geimp_basic():

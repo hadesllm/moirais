@@ -1,7 +1,7 @@
 """Tests for kmnuc.kamath_nucleus_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.kmnuc import kamath_nucleus_sampling
+from morie.fn.kmnuc import kamath_nucleus_sampling
 
 
 def test_kmnuc_basic():

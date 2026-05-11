@@ -1,7 +1,7 @@
 """Test ophdb."""
 import numpy as np
 import pytest
-from moirais.fn.ophdb import ophdb
+from morie.fn.ophdb import ophdb
 
 
 def test_ophdb_basic():

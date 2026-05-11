@@ -1,7 +1,7 @@
 """Tests for intvse.interventional_effect."""
 import numpy as np
 import pytest
-from moirais.fn.intvse import interventional_effect
+from morie.fn.intvse import interventional_effect
 
 
 def test_intvse_basic():

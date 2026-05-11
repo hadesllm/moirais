@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ocmsh -- OC Coombs mesh."""
+"""Tests for morie.fn.ocmsh -- OC Coombs mesh."""
 import numpy as np
-from moirais.fn.ocmsh import oc_coombs_mesh, ocmsh
+from morie.fn.ocmsh import oc_coombs_mesh, ocmsh
 
 
 def test_alias():

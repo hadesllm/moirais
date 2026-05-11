@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.levene -- Levene's test for equality of variances."""
+"""Tests for morie.fn.levene -- Levene's test for equality of variances."""
 
 import numpy as np
 import pytest
-from moirais.fn.levene import levene_test
+from morie.fn.levene import levene_test
 
 
 class TestLevene:

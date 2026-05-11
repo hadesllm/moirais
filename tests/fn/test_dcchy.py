@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dcchy -- Cauchy PDF."""
+"""Tests for morie.fn.dcchy -- Cauchy PDF."""
 
 import numpy as np
 import pytest
-from moirais.fn.dcchy import dcchy
+from morie.fn.dcchy import dcchy
 
 
 class TestDcchy:

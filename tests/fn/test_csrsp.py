@@ -1,7 +1,7 @@
 """Test csrsp."""
 import numpy as np
 import pytest
-from moirais.fn.csrsp import csrsp
+from morie.fn.csrsp import csrsp
 
 
 def test_csrsp_basic():

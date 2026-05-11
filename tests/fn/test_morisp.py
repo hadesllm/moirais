@@ -1,7 +1,7 @@
 """Tests for morisp.morans_i."""
 import numpy as np
 import pytest
-from moirais.fn.morisp import morans_i
+from morie.fn.morisp import morans_i
 
 
 def test_morisp_basic():

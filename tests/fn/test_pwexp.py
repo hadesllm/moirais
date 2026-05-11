@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pwexp — Piecewise exponential model."""
+"""Tests for morie.fn.pwexp — Piecewise exponential model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pwexp import piecewise_exponential
+from morie.fn.pwexp import piecewise_exponential
 
 
 class TestPiecewiseExponential:

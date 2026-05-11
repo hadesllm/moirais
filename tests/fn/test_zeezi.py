@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeezi -- Ecological zero-inflated"""
+"""Tests for morie.fn.zeezi -- Ecological zero-inflated"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeezi import ecological_zip
+from morie.fn.zeezi import ecological_zip
 
 
 class TestEcologicalZip:

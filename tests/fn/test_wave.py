@@ -1,7 +1,7 @@
 """Tests for wave.wavelet_basis."""
 import numpy as np
 import pytest
-from moirais.fn.wave import wavelet_basis
+from morie.fn.wave import wavelet_basis
 
 
 def test_wave_basic():

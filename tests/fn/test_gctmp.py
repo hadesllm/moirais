@@ -1,7 +1,7 @@
 """Test gctmp."""
 import numpy as np
 import pytest
-from moirais.fn.gctmp import gctmp
+from morie.fn.gctmp import gctmp
 
 
 def test_gctmp_basic():

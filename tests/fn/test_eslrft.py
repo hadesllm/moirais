@@ -1,7 +1,7 @@
 """Tests for eslrft.esl_random_forest."""
 import numpy as np
 import pytest
-from moirais.fn.eslrft import esl_random_forest
+from morie.fn.eslrft import esl_random_forest
 
 
 def test_eslrft_basic():

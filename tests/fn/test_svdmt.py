@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svdmt -- Dimensionality test for spatial data"""
+"""Tests for morie.fn.svdmt -- Dimensionality test for spatial data"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svdmt import dim_test
+from morie.fn.svdmt import dim_test
 
 
 class TestDimTest:

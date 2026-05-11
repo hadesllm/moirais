@@ -1,7 +1,7 @@
 """Tests for matau2pi.ma_tau2_predict_interval."""
 import numpy as np
 import pytest
-from moirais.fn.matau2pi import ma_tau2_predict_interval
+from morie.fn.matau2pi import ma_tau2_predict_interval
 
 
 def test_matau2pi_basic():

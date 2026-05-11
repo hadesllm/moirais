@@ -1,7 +1,7 @@
 """Tests for qjlcrn.qjl_compression."""
 import numpy as np
 import pytest
-from moirais.fn.qjlcrn import qjl_compression
+from morie.fn.qjlcrn import qjl_compression
 
 
 def test_qjlcrn_basic():

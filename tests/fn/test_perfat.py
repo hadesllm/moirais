@@ -1,7 +1,7 @@
 """Tests for perfat.performer_favor_attention."""
 import numpy as np
 import pytest
-from moirais.fn.perfat import performer_favor_attention
+from morie.fn.perfat import performer_favor_attention
 
 
 def test_perfat_basic():

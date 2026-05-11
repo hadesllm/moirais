@@ -1,7 +1,7 @@
 """Tests for rnflwdr."""
 import numpy as np
 import pytest
-from moirais.fn.rnflwdr import rnflwdr
+from morie.fn.rnflwdr import rnflwdr
 
 
 def test_rnflwdr_basic():
@@ -27,5 +27,5 @@ def test_rnflwdr_no_data():
 
 
 def test_rnflwdr_alias():
-    from moirais.fn.rnflwdr import rnflwdr
+    from morie.fn.rnflwdr import rnflwdr
     assert rnflwdr is rnflwdr

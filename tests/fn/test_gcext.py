@@ -1,7 +1,7 @@
 """Test gcext."""
 import numpy as np
 import pytest
-from moirais.fn.gcext import gcext
+from morie.fn.gcext import gcext
 
 
 def test_gcext_basic():

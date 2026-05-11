@@ -1,6 +1,6 @@
 """Tests for mlkem — ML-KEM-768 post-quantum key encapsulation."""
-from moirais.fn.mlkem import mlkem768_keygen, mlkem768_encaps, mlkem768_decaps
-from moirais.fn._containers import CryptoResult
+from morie.fn.mlkem import mlkem768_keygen, mlkem768_encaps, mlkem768_decaps
+from morie.fn._containers import CryptoResult
 
 
 def test_mlkem_keygen():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.stdb -- standardized regression coefficients."""
+"""Tests for morie.fn.stdb -- standardized regression coefficients."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.stdb import standardized_coefficients
+from morie.fn.stdb import standardized_coefficients
 
 
 class TestStandardizedCoefficients:

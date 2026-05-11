@@ -1,7 +1,7 @@
 """Tests for gibbsm.gibbs_sampler."""
 import numpy as np
 import pytest
-from moirais.fn.gibbsm import gibbs_sampler
+from morie.fn.gibbsm import gibbs_sampler
 
 
 def test_gibbsm_basic():

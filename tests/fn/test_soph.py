@@ -1,7 +1,7 @@
 """Test soph."""
 import numpy as np
 import pytest
-from moirais.fn.soph import soph
+from morie.fn.soph import soph
 
 
 def test_soph_basic():

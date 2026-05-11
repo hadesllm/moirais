@@ -1,7 +1,7 @@
 """Test cshts."""
 import numpy as np
 import pytest
-from moirais.fn.cshts import cshts
+from morie.fn.cshts import cshts
 
 
 def test_cshts_basic():

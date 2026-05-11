@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dalyc -- DALY computation."""
+"""Tests for morie.fn.dalyc -- DALY computation."""
 
 import pytest
-from moirais.fn.dalyc import daly_computation
+from morie.fn.dalyc import daly_computation
 
 
 class TestDALYC:

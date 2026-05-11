@@ -1,7 +1,7 @@
 """Tests for mwem.mwem."""
 import numpy as np
 import pytest
-from moirais.fn.mwem import mwem
+from morie.fn.mwem import mwem
 
 
 def test_mwem_basic():

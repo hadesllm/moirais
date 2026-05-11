@@ -1,7 +1,7 @@
 """Tests for alfsts.alphafold_structure_transition."""
 import numpy as np
 import pytest
-from moirais.fn.alfsts import alphafold_structure_transition
+from morie.fn.alfsts import alphafold_structure_transition
 
 
 def test_alfsts_basic():

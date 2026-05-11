@@ -1,7 +1,7 @@
 """Tests for jkest.jackknife_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.jkest import jackknife_estimator
+from morie.fn.jkest import jackknife_estimator
 
 
 def test_jkest_basic():

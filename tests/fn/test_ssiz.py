@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ssiz — Sample size for means."""
+"""Tests for morie.fn.ssiz — Sample size for means."""
 
 import pytest
 
-from moirais.fn.ssiz import sample_size_means
+from morie.fn.ssiz import sample_size_means
 
 
 class TestSampleSizeMeans:

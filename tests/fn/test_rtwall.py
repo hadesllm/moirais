@@ -1,7 +1,7 @@
 """Tests for rtwall.rt_wallinga_teunis."""
 import numpy as np
 import pytest
-from moirais.fn.rtwall import rt_wallinga_teunis
+from morie.fn.rtwall import rt_wallinga_teunis
 
 
 def test_rtwall_basic():

@@ -1,7 +1,7 @@
 """Tests for bnsadt.bound_adversarial."""
 import numpy as np
 import pytest
-from moirais.fn.bnsadt import bound_adversarial
+from morie.fn.bnsadt import bound_adversarial
 
 
 def test_bnsadt_basic():

@@ -1,7 +1,7 @@
 """Tests for esllpr.esl_local_linear."""
 import numpy as np
 import pytest
-from moirais.fn.esllpr import esl_local_linear
+from morie.fn.esllpr import esl_local_linear
 
 
 def test_esllpr_basic():

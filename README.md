@@ -1,15 +1,17 @@
-# MOIRAIS
+# MORIE
 
-**Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation**
+**Multi-domain Open Research and Inferential Estimation**
+
+> *Renamed from MOIRAIS in v0.1.3. The `moirais` Python module and the `moirais` R package remain available as deprecated aliases — `import morie` / `library(morie)` is the canonical entry point going forward.*
 
 A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the MRM framework as a primary application for Canadian carceral, police, and oversight data analysis.
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://github.com/hadesllm/moirais/blob/main/LICENSE)
-[![PyPI version](https://img.shields.io/pypi/v/moirais.svg)](https://pypi.org/project/moirais/)
-[![r-universe](https://img.shields.io/badge/r--universe-hadesllm-276DC3)](https://hadesllm.r-universe.dev/moirais)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/morie.svg)](https://pypi.org/project/morie/)
+[![r-universe](https://img.shields.io/badge/r--universe-hadesllm-276DC3)](https://hadesllm.r-universe.dev/morie)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Software DOI](https://img.shields.io/badge/Software_DOI-10.5281%2Fzenodo.20111233-blue)](https://doi.org/10.5281/zenodo.20111233)
-[![MOIRAIS paper DOI](https://img.shields.io/badge/MOIRAIS_paper_DOI-10.5281%2Fzenodo.20096350-blue)](https://doi.org/10.5281/zenodo.20096350)
+[![MORIE paper DOI](https://img.shields.io/badge/MORIE_paper_DOI-10.5281%2Fzenodo.20096350-blue)](https://doi.org/10.5281/zenodo.20096350)
 [![MRM paper DOI](https://img.shields.io/badge/MRM_paper_DOI-10.5281%2Fzenodo.20096075-blue)](https://doi.org/10.5281/zenodo.20096075)
 [![Hawkes paper DOI](https://img.shields.io/badge/Hawkes_paper_DOI-10.5281%2Fzenodo.20102198-blue)](https://doi.org/10.5281/zenodo.20102198)
 
@@ -18,20 +20,20 @@ A multi-domain scientific computing toolkit (Python and R) for observational inf
 ### Python (PyPI)
 
 ```bash
-pip install moirais
+pip install morie
 ```
 
 ### R (CRAN)
 
 ```r
-install.packages("moirais")
+install.packages("morie")
 ```
 
 ### R (r-universe; nightly binary builds)
 
 ```r
 install.packages(
-  "moirais",
+  "morie",
   repos = c(
     hadesllm = "https://hadesllm.r-universe.dev",
     CRAN     = "https://cloud.r-project.org"
@@ -42,36 +44,36 @@ install.packages(
 ## Quick start
 
 ```python
-import moirais
+import morie
 
 # Load a built-in dataset
-df = moirais.load_dataset("otis-2025")
+df = morie.load_dataset("otis-2025")
 
 # Run an MRM module on OTIS data
-from moirais.otis_all_analyze import analyze_a01_mrm
+from morie.otis_all_analyze import analyze_a01_mrm
 result = analyze_a01_mrm(df)
 print(result)
 ```
 
 ## Documentation
 
-Full documentation is at [hadesllm.github.io/moirais](https://hadesllm.github.io/moirais/).
+Full documentation is at [hadesllm.github.io/morie](https://hadesllm.github.io/morie/).
 
 ## Citation
 
-If you use MOIRAIS in your research, please cite **the software** and
+If you use MORIE in your research, please cite **the software** and
 **the companion paper** that describes it. Where applicable to your work,
 also cite the MRM framework paper and the Hawkes-process methodology paper.
 
 ```
 # Software (the toolkit itself)
-Ruhela, V. S. (2026). MOIRAIS Toolkit: Methods for Observational Inference
+Ruhela, V. S. (2026). MORIE Toolkit: Methods for Observational Inference
 and Robust Analysis of Interventions in Scientific Experimentation
 (v0.1.2) [Software]. Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Companion paper (introduces the toolkit)
-Ruhela, V. S. (2026). MOIRAIS: A Multi-Domain Scientific Computing
+Ruhela, V. S. (2026). MORIE: A Multi-Domain Scientific Computing
 Toolkit for Observational Inference, with Sociolegal, Signal-Processing,
 Cryptographic, and Spatial-Statistics Modules. Zenodo.
 https://doi.org/10.5281/zenodo.20096350
@@ -79,23 +81,23 @@ https://doi.org/10.5281/zenodo.20096350
 # MRM framework paper
 Ruhela, V. S. (2026). The MRM Framework: A Multi-Source Statistical
 Foundation for Canadian Carceral, Police, and Oversight Data, Implemented
-as MRM Modules in MOIRAIS. Zenodo.
+as MRM Modules in MORIE. Zenodo.
 https://doi.org/10.5281/zenodo.20096075
 
 # Hawkes-process methodology paper
-Ruhela, V. S. (2026). Criminological Hawkes Process via MOIRAIS:
+Ruhela, V. S. (2026). Criminological Hawkes Process via MORIE:
 Markovian and Non-Markovian Self-Exciting Point Processes for Toronto
 Crime. Zenodo.
 https://doi.org/10.5281/zenodo.20102198
 ```
 
-See [`CITATION.cff`](https://github.com/hadesllm/moirais/blob/main/CITATION.cff) for machine-readable citation metadata.
+See [`CITATION.cff`](https://github.com/hadesllm/morie/blob/main/CITATION.cff) for machine-readable citation metadata.
 
 ## Acknowledgments
 
 ### AI assistance
 
-MOIRAIS was developed with substantial assistance from frontier AI
+MORIE was developed with substantial assistance from frontier AI
 assistants. The author retains full responsibility for the code, the
 methods, and the scientific claims; AI assistance accelerated
 implementation but does not change the attribution of the work.
@@ -158,9 +160,9 @@ under the same standard disclaimer.
 
 ## License
 
-MOIRAIS is released under the GNU General Public License v2 (`GPL-2.0-only`); see [`LICENSE`](https://github.com/hadesllm/moirais/blob/main/LICENSE). The licensing matrix for individual components is documented in [`LICENSING.md`](https://github.com/hadesllm/moirais/blob/main/LICENSING.md).
+MORIE is released under the GNU General Public License v2 (`GPL-2.0-only`); see [`LICENSE`](https://github.com/hadesllm/morie/blob/main/LICENSE). The licensing matrix for individual components is documented in [`LICENSING.md`](https://github.com/hadesllm/morie/blob/main/LICENSING.md).
 
 ## Reporting issues / security
 
-- General issues: [GitHub Issues](https://github.com/hadesllm/moirais/issues)
-- Security vulnerabilities: see [`SECURITY.md`](https://github.com/hadesllm/moirais/blob/main/.github/SECURITY.md)
+- General issues: [GitHub Issues](https://github.com/hadesllm/morie/issues)
+- Security vulnerabilities: see [`SECURITY.md`](https://github.com/hadesllm/morie/blob/main/.github/SECURITY.md)

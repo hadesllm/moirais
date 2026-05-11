@@ -1,7 +1,7 @@
 """Tests for smtZ3.smt_solver."""
 import numpy as np
 import pytest
-from moirais.fn.smtZ3 import smt_solver
+from morie.fn.smtZ3 import smt_solver
 
 
 def test_smtZ3_basic():

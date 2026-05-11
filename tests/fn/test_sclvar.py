@@ -1,7 +1,7 @@
 """Tests for sclvar.selection_coefficient."""
 import numpy as np
 import pytest
-from moirais.fn.sclvar import selection_coefficient
+from morie.fn.sclvar import selection_coefficient
 
 
 def test_sclvar_basic():

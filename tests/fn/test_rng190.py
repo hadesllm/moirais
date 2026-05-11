@@ -1,7 +1,7 @@
 """Tests for rng190.rangayyan_ch4_pan_tompkins_peak_classification."""
 import numpy as np
 import pytest
-from moirais.fn.rng190 import rangayyan_ch4_pan_tompkins_peak_classification
+from morie.fn.rng190 import rangayyan_ch4_pan_tompkins_peak_classification
 
 
 def test_rng190_basic():

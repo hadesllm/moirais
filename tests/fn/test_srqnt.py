@@ -1,7 +1,7 @@
 """Test srqnt."""
 import numpy as np
 import pytest
-from moirais.fn.srqnt import srqnt
+from morie.fn.srqnt import srqnt
 
 
 def test_srqnt_basic():

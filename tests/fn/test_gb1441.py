@@ -1,7 +1,7 @@
 """Tests for gb1441.gibbons_fisher_exact."""
 import numpy as np
 import pytest
-from moirais.fn.gb1441 import gibbons_fisher_exact
+from morie.fn.gb1441 import gibbons_fisher_exact
 
 
 def test_gb1441_basic():

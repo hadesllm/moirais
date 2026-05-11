@@ -1,7 +1,7 @@
 """Tests for bcq.bcq."""
 import numpy as np
 import pytest
-from moirais.fn.bcq import bcq
+from morie.fn.bcq import bcq
 
 
 def test_bcq_basic():

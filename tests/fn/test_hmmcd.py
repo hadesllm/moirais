@@ -1,7 +1,7 @@
 """Tests for hmmcd.geron_mc_dropout."""
 import numpy as np
 import pytest
-from moirais.fn.hmmcd import geron_mc_dropout
+from morie.fn.hmmcd import geron_mc_dropout
 
 
 def test_hmmcd_basic():

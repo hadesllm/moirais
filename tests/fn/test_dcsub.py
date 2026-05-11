@@ -1,7 +1,7 @@
 """Test dc_removal (dcsub)."""
 import numpy as np
-from moirais.fn.dcsub import dc_removal, dcsub
-from moirais.fn._containers import SignalResult
+from morie.fn.dcsub import dc_removal, dcsub
+from morie.fn._containers import SignalResult
 
 
 class TestDcRemoval:

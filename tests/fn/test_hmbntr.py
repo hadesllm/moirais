@@ -1,7 +1,7 @@
 """Tests for hmbntr.geron_batch_normalization."""
 import numpy as np
 import pytest
-from moirais.fn.hmbntr import geron_batch_normalization
+from morie.fn.hmbntr import geron_batch_normalization
 
 
 def test_hmbntr_basic():

@@ -1,7 +1,7 @@
 """Tests for besagl.besag_York_Mollie."""
 import numpy as np
 import pytest
-from moirais.fn.besagl import besag_York_Mollie
+from morie.fn.besagl import besag_York_Mollie
 
 
 def test_besagl_basic():

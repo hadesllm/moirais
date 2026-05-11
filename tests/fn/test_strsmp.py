@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.strsmp import strsmp, stratified_sample
+from morie.fn.strsmp import strsmp, stratified_sample
 
 
 def test_strsmp_fixed_allocation():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vtmod."""
+"""Tests for morie.fn.vtmod."""
 
 import numpy as np
 import pytest
-from moirais.fn.vtmod import vtmod
+from morie.fn.vtmod import vtmod
 
 
 class TestVtmod:

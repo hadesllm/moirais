@@ -1,7 +1,7 @@
 """Tests for bdcrt.backdoor_criterion."""
 import numpy as np
 import pytest
-from moirais.fn.bdcrt import backdoor_criterion
+from morie.fn.bdcrt import backdoor_criterion
 
 
 def test_bdcrt_basic():

@@ -1,7 +1,7 @@
 """Test opsca."""
 import numpy as np
 import pytest
-from moirais.fn.opsca import opsca
+from morie.fn.opsca import opsca
 
 
 def test_opsca_basic():

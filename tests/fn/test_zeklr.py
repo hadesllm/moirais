@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeklr -- Retrospective space-time scan"""
+"""Tests for morie.fn.zeklr -- Retrospective space-time scan"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeklr import scan_retrospective
+from morie.fn.zeklr import scan_retrospective
 
 
 class TestScanRetrospective:

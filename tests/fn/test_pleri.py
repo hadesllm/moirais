@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pleri."""
+"""Tests for morie.fn.pleri."""
 
 import numpy as np
 import pytest
-from moirais.fn.pleri import pleri
+from morie.fn.pleri import pleri
 
 
 class TestPleri:

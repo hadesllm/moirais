@@ -1,7 +1,7 @@
 """Tests for marba.ma_smd_var_correlated_designs."""
 import numpy as np
 import pytest
-from moirais.fn.marba import ma_smd_var_correlated_designs
+from morie.fn.marba import ma_smd_var_correlated_designs
 
 
 def test_marba_basic():

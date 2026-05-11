@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.fmea."""
+"""Tests for morie.fn.fmea."""
 import numpy as np
-from moirais.fn.fmea import fmea
+from morie.fn.fmea import fmea
 
 
 def test_fmea_smoke():
@@ -16,7 +16,7 @@ def test_fmea_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.fmea import cheatsheet
+    from morie.fn.fmea import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

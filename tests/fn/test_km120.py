@@ -1,7 +1,7 @@
 """Tests for km120.kamath_ch8_bertscore_precision."""
 import numpy as np
 import pytest
-from moirais.fn.km120 import kamath_ch8_bertscore_precision
+from morie.fn.km120 import kamath_ch8_bertscore_precision
 
 
 def test_km120_basic():

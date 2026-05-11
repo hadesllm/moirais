@@ -1,7 +1,7 @@
 """Tests for retnet.retnet_retention."""
 import numpy as np
 import pytest
-from moirais.fn.retnet import retnet_retention
+from morie.fn.retnet import retnet_retention
 
 
 def test_retnet_basic():

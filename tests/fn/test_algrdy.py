@@ -1,7 +1,7 @@
 """Tests for algrdy.alammar_greedy_decoding."""
 import numpy as np
 import pytest
-from moirais.fn.algrdy import alammar_greedy_decoding
+from morie.fn.algrdy import alammar_greedy_decoding
 
 
 def test_algrdy_basic():

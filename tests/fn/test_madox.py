@@ -1,7 +1,7 @@
 """Test madox."""
 import numpy as np
 import pytest
-from moirais.fn.madox import madox
+from morie.fn.madox import madox
 
 
 def test_madox_basic():

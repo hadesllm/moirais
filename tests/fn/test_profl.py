@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.profl -- Procrustes rotation."""
+"""Tests for morie.fn.profl -- Procrustes rotation."""
 
 import numpy as np
-from moirais.fn.profl import procrustes, profl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.profl import procrustes, profl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestProcrustes:

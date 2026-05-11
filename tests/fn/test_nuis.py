@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nuis -- Nuisance parameter estimation."""
+"""Tests for morie.fn.nuis -- Nuisance parameter estimation."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.nuis import nuisance_estimate, nuis
+from morie.fn.nuis import nuisance_estimate, nuis
 
 
 class TestNuisance:

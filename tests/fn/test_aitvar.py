@@ -1,7 +1,7 @@
 """Tests for aitvar.aitchison_variation."""
 import numpy as np
 import pytest
-from moirais.fn.aitvar import aitchison_variation
+from morie.fn.aitvar import aitchison_variation
 
 
 def test_aitvar_basic():

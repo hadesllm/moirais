@@ -1,7 +1,7 @@
 """Tests for naoIdx.nao_index."""
 import numpy as np
 import pytest
-from moirais.fn.naoIdx import nao_index
+from morie.fn.naoIdx import nao_index
 
 
 def test_naoIdx_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.appvl — Approval voting."""
+"""Tests for morie.fn.appvl — Approval voting."""
 import numpy as np
-from moirais.fn.appvl import appvl
+from morie.fn.appvl import appvl
 
 
 def test_appvl_basic():

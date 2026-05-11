@@ -1,7 +1,7 @@
 """Tests for gptas.gpt_assistant_decode."""
 import numpy as np
 import pytest
-from moirais.fn.gptas import gpt_assistant_decode
+from morie.fn.gptas import gpt_assistant_decode
 
 
 def test_gptas_basic():

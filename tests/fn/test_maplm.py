@@ -1,7 +1,7 @@
 """Test maplm."""
 import numpy as np
 import pytest
-from moirais.fn.maplm import maplm
+from morie.fn.maplm import maplm
 
 
 def test_maplm_basic():

@@ -1,7 +1,7 @@
 """Tests for coxstr.cox_stratified."""
 import numpy as np
 import pytest
-from moirais.fn.coxstr import cox_stratified
+from morie.fn.coxstr import cox_stratified
 
 
 def test_coxstr_basic():

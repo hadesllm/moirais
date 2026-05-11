@@ -1,7 +1,7 @@
 """Tests for dpsgd.dp_sgd."""
 import numpy as np
 import pytest
-from moirais.fn.dpsgd import dp_sgd
+from morie.fn.dpsgd import dp_sgd
 
 
 def test_dpsgd_basic():

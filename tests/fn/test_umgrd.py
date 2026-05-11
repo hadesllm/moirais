@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.umgrd."""
+"""Tests for morie.fn.umgrd."""
 
 import numpy as np
 import pytest
-from moirais.fn.umgrd import umgrd
+from morie.fn.umgrd import umgrd
 
 
 class TestUmgrd:

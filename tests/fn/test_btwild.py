@@ -1,7 +1,7 @@
 """Tests for btwild.boot_wild_regression."""
 import numpy as np
 import pytest
-from moirais.fn.btwild import boot_wild_regression
+from morie.fn.btwild import boot_wild_regression
 
 
 def test_btwild_basic():

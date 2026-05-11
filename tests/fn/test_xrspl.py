@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrspl -- Spatial logit model"""
+"""Tests for morie.fn.xrspl -- Spatial logit model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrspl import spatial_logit
+from morie.fn.xrspl import spatial_logit
 
 
 class TestSpatialLogit:

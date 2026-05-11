@@ -1,6 +1,6 @@
 """Test learning rate scheduler."""
 import numpy as np
-from moirais.fn.lradp import lradp
+from morie.fn.lradp import lradp
 
 
 def test_lradp_start():

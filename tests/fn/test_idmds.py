@@ -1,6 +1,6 @@
 """Tests for INDSCAL."""
 import numpy as np
-from moirais.fn.idmds import idmds
+from morie.fn.idmds import idmds
 
 
 def test_idmds_smoke():
@@ -20,7 +20,7 @@ def test_idmds_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.idmds import cheatsheet
+    from morie.fn.idmds import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

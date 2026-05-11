@@ -1,7 +1,7 @@
 """Tests for mvedet.mve."""
 import numpy as np
 import pytest
-from moirais.fn.mvedet import mve
+from morie.fn.mvedet import mve
 
 
 def test_mvedet_basic():

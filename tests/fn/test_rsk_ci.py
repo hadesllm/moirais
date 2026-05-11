@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rsk_ci -- risk ratio with CI."""
+"""Tests for morie.fn.rsk_ci -- risk ratio with CI."""
 
 import pytest
-from moirais.fn.rsk_ci import risk_ratio_ci
+from morie.fn.rsk_ci import risk_ratio_ci
 
 
 class TestRiskRatioCI:

@@ -1,7 +1,7 @@
 """Tests for svmge.svm_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.svmge import svm_genomic
+from morie.fn.svmge import svm_genomic
 
 
 def test_svmge_basic():

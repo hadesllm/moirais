@@ -1,7 +1,7 @@
 """Tests for alnsw.smith_waterman."""
 import numpy as np
 import pytest
-from moirais.fn.alnsw import smith_waterman
+from morie.fn.alnsw import smith_waterman
 
 
 def test_alnsw_basic():

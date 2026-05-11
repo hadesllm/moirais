@@ -1,7 +1,7 @@
 """Tests for gb_pp.gibbons_pp_plot."""
 import numpy as np
 import pytest
-from moirais.fn.gb_pp import gibbons_pp_plot
+from morie.fn.gb_pp import gibbons_pp_plot
 
 
 def test_gb_pp_basic():

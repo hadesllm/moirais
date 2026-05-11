@@ -1,6 +1,6 @@
 """Tests for erdos_renyi."""
 import numpy as np, pytest
-from moirais.fn.neter import erdos_renyi
+from morie.fn.neter import erdos_renyi
 
 class TestER:
     def test_basic(self):

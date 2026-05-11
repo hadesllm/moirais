@@ -1,7 +1,7 @@
 """Tests for hmdpo.geron_dpo."""
 import numpy as np
 import pytest
-from moirais.fn.hmdpo import geron_dpo
+from morie.fn.hmdpo import geron_dpo
 
 
 def test_hmdpo_basic():

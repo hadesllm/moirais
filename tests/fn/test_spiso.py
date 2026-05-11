@@ -1,7 +1,7 @@
 """Tests for spiso.schabenberger_isotropy_condition."""
 import numpy as np
 import pytest
-from moirais.fn.spiso import schabenberger_isotropy_condition
+from morie.fn.spiso import schabenberger_isotropy_condition
 
 
 def test_spiso_basic():

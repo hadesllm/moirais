@@ -1,7 +1,7 @@
 """Tests for irtdq.irt_quadratic_utility."""
 import numpy as np
 import pytest
-from moirais.fn.irtdq import irt_quadratic_utility
+from morie.fn.irtdq import irt_quadratic_utility
 
 
 def test_irtdq_basic():

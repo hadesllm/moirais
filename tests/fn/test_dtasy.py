@@ -1,7 +1,7 @@
 """Test dtasy."""
 import numpy as np
 import pytest
-from moirais.fn.dtasy import dtasy
+from morie.fn.dtasy import dtasy
 
 
 def test_dtasy_basic():

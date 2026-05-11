@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svrrd -- Roemer party unanimity model"""
+"""Tests for morie.fn.svrrd -- Roemer party unanimity model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svrrd import roemer_model
+from morie.fn.svrrd import roemer_model
 
 
 class TestRoemerModel:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.xavir."""
+"""Tests for morie.fn.xavir."""
 import numpy as np
-from moirais.fn.xavir import xavier_init
+from morie.fn.xavir import xavier_init
 
 
 def test_xavir_smoke():
@@ -12,7 +12,7 @@ def test_xavir_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.xavir import cheatsheet
+    from morie.fn.xavir import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

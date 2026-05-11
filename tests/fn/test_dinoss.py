@@ -1,7 +1,7 @@
 """Tests for dinoss.dino_centering."""
 import numpy as np
 import pytest
-from moirais.fn.dinoss import dino_centering
+from morie.fn.dinoss import dino_centering
 
 
 def test_dinoss_basic():

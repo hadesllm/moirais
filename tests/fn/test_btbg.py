@@ -1,7 +1,7 @@
 """Tests for btbg.boot_bagging_predict."""
 import numpy as np
 import pytest
-from moirais.fn.btbg import boot_bagging_predict
+from morie.fn.btbg import boot_bagging_predict
 
 
 def test_btbg_basic():

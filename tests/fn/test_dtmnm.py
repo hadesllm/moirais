@@ -1,7 +1,7 @@
 """Test dtmnm."""
 import numpy as np
 import pytest
-from moirais.fn.dtmnm import dtmnm
+from morie.fn.dtmnm import dtmnm
 
 
 def test_dtmnm_basic():

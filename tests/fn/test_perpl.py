@@ -1,7 +1,7 @@
 """Tests for perplexity."""
 import numpy as np
 import pytest
-from moirais.fn.perpl import perplexity, perpl
+from morie.fn.perpl import perplexity, perpl
 
 
 def test_uniform():

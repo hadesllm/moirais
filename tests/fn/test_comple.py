@@ -1,7 +1,7 @@
 """Tests for comple.complete_case."""
 import numpy as np
 import pytest
-from moirais.fn.comple import complete_case
+from morie.fn.comple import complete_case
 
 
 def test_comple_basic():

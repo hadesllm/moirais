@@ -1,7 +1,7 @@
 """Tests for recapTOA.toa_radiation_balance."""
 import numpy as np
 import pytest
-from moirais.fn.recapTOA import toa_radiation_balance
+from morie.fn.recapTOA import toa_radiation_balance
 
 
 def test_recapTOA_basic():

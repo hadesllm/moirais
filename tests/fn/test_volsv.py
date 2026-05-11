@@ -1,7 +1,7 @@
 """Tests for volsv.vol_sv_quasi_lik."""
 import numpy as np
 import pytest
-from moirais.fn.volsv import vol_sv_quasi_lik
+from morie.fn.volsv import vol_sv_quasi_lik
 
 
 def test_volsv_basic():

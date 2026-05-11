@@ -1,7 +1,7 @@
 """Tests for grpoly.geron_polynomial_features."""
 import numpy as np
 import pytest
-from moirais.fn.grpoly import geron_polynomial_features
+from morie.fn.grpoly import geron_polynomial_features
 
 
 def test_grpoly_basic():

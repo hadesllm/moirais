@@ -1,7 +1,7 @@
 """Tests for statistical_methods_for_spatial_data_analysis1u818.statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_818."""
 import numpy as np
 import pytest
-from moirais.fn.statistical_methods_for_spatial_data_analysis1u818 import statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_818
+from morie.fn.statistical_methods_for_spatial_data_analysis1u818 import statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_818
 
 
 def test_statistical_methods_for_spatial_data_analysis1u818_basic():

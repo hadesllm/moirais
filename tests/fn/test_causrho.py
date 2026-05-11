@@ -1,7 +1,7 @@
 """Tests for causrho.causal_proximal_proxy."""
 import numpy as np
 import pytest
-from moirais.fn.causrho import causal_proximal_proxy
+from morie.fn.causrho import causal_proximal_proxy
 
 
 def test_causrho_basic():

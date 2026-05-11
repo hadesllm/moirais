@@ -1,7 +1,7 @@
 """Tests for chiDep.chi_dependence."""
 import numpy as np
 import pytest
-from moirais.fn.chiDep import chi_dependence
+from morie.fn.chiDep import chi_dependence
 
 
 def test_chiDep_basic():

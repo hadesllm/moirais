@@ -1,7 +1,7 @@
 """Tests for rbftps."""
 import numpy as np
 import pytest
-from moirais.fn.rbftps import rbftps
+from morie.fn.rbftps import rbftps
 
 
 def test_rbftps_basic():
@@ -27,5 +27,5 @@ def test_rbftps_no_data():
 
 
 def test_rbftps_alias():
-    from moirais.fn.rbftps import rbftps
+    from morie.fn.rbftps import rbftps
     assert rbftps is rbftps

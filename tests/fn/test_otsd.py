@@ -1,7 +1,7 @@
 """Tests for otsd.ot_sliced_distance_quant."""
 import numpy as np
 import pytest
-from moirais.fn.otsd import ot_sliced_distance_quant
+from morie.fn.otsd import ot_sliced_distance_quant
 
 
 def test_otsd_basic():

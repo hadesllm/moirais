@@ -1,8 +1,8 @@
 """Test tensor_decompose (tndcm)."""
 import numpy as np
 import pytest
-from moirais.fn.tndcm import tensor_decompose, tndcm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tndcm import tensor_decompose, tndcm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTndcm:

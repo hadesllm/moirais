@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.kstwo import kstwo
+from morie.fn.kstwo import kstwo
 
 
 class TestKstwo:

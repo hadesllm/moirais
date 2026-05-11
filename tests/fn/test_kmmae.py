@@ -1,7 +1,7 @@
 """Tests for kmmae.kamath_multimodal_mae."""
 import numpy as np
 import pytest
-from moirais.fn.kmmae import kamath_multimodal_mae
+from morie.fn.kmmae import kamath_multimodal_mae
 
 
 def test_kmmae_basic():

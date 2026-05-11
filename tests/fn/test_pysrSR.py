@@ -1,7 +1,7 @@
 """Tests for pysrSR.pysr_regression."""
 import numpy as np
 import pytest
-from moirais.fn.pysrSR import pysr_regression
+from morie.fn.pysrSR import pysr_regression
 
 
 def test_pysrSR_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svpxv -- Proximity voting model probability"""
+"""Tests for morie.fn.svpxv -- Proximity voting model probability"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svpxv import proximity_vote
+from morie.fn.svpxv import proximity_vote
 
 
 class TestProximityVote:

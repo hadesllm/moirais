@@ -1,7 +1,7 @@
 """Tests for fzt53.fauzi_thm5_3_bdfree_normality."""
 import numpy as np
 import pytest
-from moirais.fn.fzt53 import fauzi_thm5_3_bdfree_normality
+from morie.fn.fzt53 import fauzi_thm5_3_bdfree_normality
 
 
 def test_fzt53_basic():

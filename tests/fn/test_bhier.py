@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bhier -- Bayesian hierarchical model."""
+"""Tests for morie.fn.bhier -- Bayesian hierarchical model."""
 
 import numpy as np
-from moirais.fn.bhier import bayesian_hierarchical
+from morie.fn.bhier import bayesian_hierarchical
 
 
 def test_returns_dict():

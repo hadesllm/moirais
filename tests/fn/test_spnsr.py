@@ -1,7 +1,7 @@
 """Tests for spnsr.schabenberger_nugget_sill_range_effect."""
 import numpy as np
 import pytest
-from moirais.fn.spnsr import schabenberger_nugget_sill_range_effect
+from morie.fn.spnsr import schabenberger_nugget_sill_range_effect
 
 
 def test_spnsr_basic():

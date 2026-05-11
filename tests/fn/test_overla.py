@@ -1,7 +1,7 @@
 """Test overla."""
 import numpy as np
 import pytest
-from moirais.fn.overla import overla
+from morie.fn.overla import overla
 
 
 def test_overla_basic():

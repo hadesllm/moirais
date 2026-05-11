@@ -1,7 +1,7 @@
 """Tests for evaltw.e_value_unmeasured_confounding."""
 import numpy as np
 import pytest
-from moirais.fn.evaltw import e_value_unmeasured_confounding
+from morie.fn.evaltw import e_value_unmeasured_confounding
 
 
 def test_evaltw_basic():

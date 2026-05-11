@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.holo_p -- pair plot."""
+"""Tests for morie.fn.holo_p -- pair plot."""
 
 import numpy as np
 import pytest
@@ -6,7 +6,7 @@ import pytest
 plt = pytest.importorskip("matplotlib.pyplot")
 pd = pytest.importorskip("pandas")
 
-from moirais.fn.holo_p import holo_pair
+from morie.fn.holo_p import holo_pair
 
 
 class TestHoloPair:

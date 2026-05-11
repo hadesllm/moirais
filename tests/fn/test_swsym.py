@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.swsym."""
+"""Tests for morie.fn.swsym."""
 import numpy as np
 import pytest
-from moirais.fn.swsym import swsym
+from morie.fn.swsym import swsym
 
 
 class TestSwsym:

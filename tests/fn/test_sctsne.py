@@ -1,7 +1,7 @@
 """Tests for sctsne.tsne_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.sctsne import tsne_embedding
+from morie.fn.sctsne import tsne_embedding
 
 
 def test_sctsne_basic():

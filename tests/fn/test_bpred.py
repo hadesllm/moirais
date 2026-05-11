@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bpred -- Bayesian predictive distribution."""
+"""Tests for morie.fn.bpred -- Bayesian predictive distribution."""
 
 import numpy as np
-from moirais.fn.bpred import bayesian_predictive
+from morie.fn.bpred import bayesian_predictive
 
 
 def test_returns_dict():

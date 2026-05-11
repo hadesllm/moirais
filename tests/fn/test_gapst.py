@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gapst."""
+"""Tests for morie.fn.gapst."""
 import numpy as np
-from moirais.fn.gapst import gapst
+from morie.fn.gapst import gapst
 
 
 def test_gapst_smoke():
@@ -12,7 +12,7 @@ def test_gapst_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.gapst import cheatsheet
+    from morie.fn.gapst import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for rgccep.rangayyan_complex_cepstrum."""
 import numpy as np
 import pytest
-from moirais.fn.rgccep import rangayyan_complex_cepstrum
+from morie.fn.rgccep import rangayyan_complex_cepstrum
 
 
 def test_rgccep_basic():

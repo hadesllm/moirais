@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.odm_s — OTIS demo standardize."""
+"""Tests for morie.fn.odm_s — OTIS demo standardize."""
 
 import pytest
 import numpy as np
-from moirais.fn.odm_s import otis_demo_standardize
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.odm_s import otis_demo_standardize
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOtisDemoStandardize:

@@ -1,7 +1,7 @@
 """Tests for altkemb.alammar_token_embedding_lookup."""
 import numpy as np
 import pytest
-from moirais.fn.altkemb import alammar_token_embedding_lookup
+from morie.fn.altkemb import alammar_token_embedding_lookup
 
 
 def test_altkemb_basic():

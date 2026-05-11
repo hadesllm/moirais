@@ -1,7 +1,7 @@
 """Tests for sdpwts.semidefinite_program."""
 import numpy as np
 import pytest
-from moirais.fn.sdpwts import semidefinite_program
+from morie.fn.sdpwts import semidefinite_program
 
 
 def test_sdpwts_basic():

@@ -1,7 +1,7 @@
 """Test kaiming_init."""
 import numpy as np
-from moirais.fn.kaimg import kaiming_init, kaimg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.kaimg import kaiming_init, kaimg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestKaimingInit:

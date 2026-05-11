@@ -1,7 +1,7 @@
 """Test gcmjo."""
 import numpy as np
 import pytest
-from moirais.fn.gcmjo import gcmjo
+from morie.fn.gcmjo import gcmjo
 
 
 def test_gcmjo_basic():

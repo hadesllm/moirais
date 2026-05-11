@@ -1,7 +1,7 @@
 """Tests for alrmt.alammar_reward_model_training_bt."""
 import numpy as np
 import pytest
-from moirais.fn.alrmt import alammar_reward_model_training_bt
+from morie.fn.alrmt import alammar_reward_model_training_bt
 
 
 def test_alrmt_basic():

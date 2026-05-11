@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.heceac -- CEAC."""
+"""Tests for morie.fn.heceac -- CEAC."""
 
 import numpy as np
-from moirais.fn.heceac import ceac
+from morie.fn.heceac import ceac
 
 
 class TestCEAC:

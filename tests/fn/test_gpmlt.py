@@ -1,7 +1,7 @@
 """Tests for gpmlt.gp_multitask."""
 import numpy as np
 import pytest
-from moirais.fn.gpmlt import gp_multitask
+from morie.fn.gpmlt import gp_multitask
 
 
 def test_gpmlt_basic():

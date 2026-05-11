@@ -1,7 +1,7 @@
 """Tests for legal_ontology10u11.legal_ontology_chapter_10_unnumbered_11."""
 import numpy as np
 import pytest
-from moirais.fn.legal_ontology10u11 import legal_ontology_chapter_10_unnumbered_11
+from morie.fn.legal_ontology10u11 import legal_ontology_chapter_10_unnumbered_11
 
 
 def test_legal_ontology10u11_basic():

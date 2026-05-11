@@ -1,7 +1,7 @@
 """Tests for sasimi.tanimoto_similarity."""
 import numpy as np
 import pytest
-from moirais.fn.sasimi import tanimoto_similarity
+from morie.fn.sasimi import tanimoto_similarity
 
 
 def test_sasimi_basic():

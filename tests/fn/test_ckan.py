@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ckan — CKAN fetch wrapper."""
+"""Tests for morie.fn.ckan — CKAN fetch wrapper."""
 
 import pytest
 
-from moirais.fn.ckan import ckan, fetch_ckan_to_cache
+from morie.fn.ckan import ckan, fetch_ckan_to_cache
 
 
 def test_alias_is_same_function():

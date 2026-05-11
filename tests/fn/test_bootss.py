@@ -1,7 +1,7 @@
 """Tests for bootss.bootstrap_survey."""
 import numpy as np
 import pytest
-from moirais.fn.bootss import bootstrap_survey
+from morie.fn.bootss import bootstrap_survey
 
 
 def test_bootss_basic():

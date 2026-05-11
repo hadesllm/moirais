@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vface — Content validity index."""
+"""Tests for morie.fn.vface — Content validity index."""
 
 import numpy as np
 import pytest
-from moirais.fn.vface import validity_face_content
+from morie.fn.vface import validity_face_content
 
 
 class TestValidityFaceContent:

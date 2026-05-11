@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.prmxr -- Promax rotation."""
+"""Tests for morie.fn.prmxr -- Promax rotation."""
 
 import numpy as np
-from moirais.fn.prmxr import promax, prmxr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prmxr import promax, prmxr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPromax:

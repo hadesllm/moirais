@@ -1,7 +1,7 @@
 """Tests for msm235.mvsml_ridge_lasso_elastic_eq_9_47."""
 import numpy as np
 import pytest
-from moirais.fn.msm235 import mvsml_ridge_lasso_elastic_eq_9_47
+from morie.fn.msm235 import mvsml_ridge_lasso_elastic_eq_9_47
 
 
 def test_msm235_basic():

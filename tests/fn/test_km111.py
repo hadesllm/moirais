@@ -1,7 +1,7 @@
 """Tests for km111.kamath_ch7_faithfulness_metric."""
 import numpy as np
 import pytest
-from moirais.fn.km111 import kamath_ch7_faithfulness_metric
+from morie.fn.km111 import kamath_ch7_faithfulness_metric
 
 
 def test_km111_basic():

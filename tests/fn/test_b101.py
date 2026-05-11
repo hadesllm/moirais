@@ -1,7 +1,7 @@
 """Tests for b101.burkov_lm_ch1_linear_function."""
 import numpy as np
 import pytest
-from moirais.fn.b101 import burkov_lm_ch1_linear_function
+from morie.fn.b101 import burkov_lm_ch1_linear_function
 
 
 def test_b101_basic():

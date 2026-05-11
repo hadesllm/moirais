@@ -1,7 +1,7 @@
 """Tests for bridgs.bridge_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.bridgs import bridge_sampling
+from morie.fn.bridgs import bridge_sampling
 
 
 def test_bridgs_basic():

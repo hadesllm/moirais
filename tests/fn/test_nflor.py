@@ -1,7 +1,7 @@
 """Test noise_floor (nflor)."""
 import numpy as np
-from moirais.fn.nflor import noise_floor, nflor
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nflor import noise_floor, nflor
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNflor:

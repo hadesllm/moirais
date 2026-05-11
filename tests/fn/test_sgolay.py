@@ -1,7 +1,7 @@
 """Tests for sgolay — Savitzky-Golay smoothing."""
 import numpy as np
-from moirais.fn.sgolay import savgol_smooth
-from moirais.fn._containers import SignalResult
+from morie.fn.sgolay import savgol_smooth
+from morie.fn._containers import SignalResult
 
 
 def test_sgolay_basic(rng):

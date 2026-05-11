@@ -1,7 +1,7 @@
 """Tests for netsts.neural_ts_lstm."""
 import numpy as np
 import pytest
-from moirais.fn.netsts import neural_ts_lstm
+from morie.fn.netsts import neural_ts_lstm
 
 
 def test_netsts_basic():

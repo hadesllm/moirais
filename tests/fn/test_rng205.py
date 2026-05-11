@@ -1,7 +1,7 @@
 """Tests for rng205.rangayyan_ch4_csd_from_ccf."""
 import numpy as np
 import pytest
-from moirais.fn.rng205 import rangayyan_ch4_csd_from_ccf
+from morie.fn.rng205 import rangayyan_ch4_csd_from_ccf
 
 
 def test_rng205_basic():

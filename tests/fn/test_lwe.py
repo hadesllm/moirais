@@ -1,8 +1,8 @@
 """Test lwe_sample."""
 import numpy as np
 import pytest
-from moirais.fn.lwe import lwe_sample
-from moirais.fn._containers import CryptoResult
+from morie.fn.lwe import lwe_sample
+from morie.fn._containers import CryptoResult
 
 
 class TestLweSample:

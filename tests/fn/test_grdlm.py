@@ -1,7 +1,7 @@
 """Tests for grdlm.geron_dataloader_minibatch."""
 import numpy as np
 import pytest
-from moirais.fn.grdlm import geron_dataloader_minibatch
+from morie.fn.grdlm import geron_dataloader_minibatch
 
 
 def test_grdlm_basic():

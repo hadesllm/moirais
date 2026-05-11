@@ -1,7 +1,7 @@
 """Tests for wsmcdf.wasserman_empirical_cdf."""
 import numpy as np
 import pytest
-from moirais.fn.wsmcdf import wasserman_empirical_cdf
+from morie.fn.wsmcdf import wasserman_empirical_cdf
 
 
 def test_wsmcdf_basic():

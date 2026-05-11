@@ -1,7 +1,7 @@
 """Test opvhc."""
 import numpy as np
 import pytest
-from moirais.fn.opvhc import opvhc
+from morie.fn.opvhc import opvhc
 
 
 def test_opvhc_basic():

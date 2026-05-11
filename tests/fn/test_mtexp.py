@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mtexp -- Matrix exponential."""
+"""Tests for morie.fn.mtexp -- Matrix exponential."""
 
 import numpy as np
-from moirais.fn.mtexp import matrix_exp, mtexp
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtexp import matrix_exp, mtexp
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMtexp:

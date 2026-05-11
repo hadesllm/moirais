@@ -1,7 +1,7 @@
 """Test sohc."""
 import numpy as np
 import pytest
-from moirais.fn.sohc import sohc
+from morie.fn.sohc import sohc
 
 
 def test_sohc_basic():

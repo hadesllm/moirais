@@ -1,7 +1,7 @@
 """Tests for clyfr.clayton_copula_frailty."""
 import numpy as np
 import pytest
-from moirais.fn.clyfr import clayton_copula_frailty
+from morie.fn.clyfr import clayton_copula_frailty
 
 
 def test_clyfr_basic():

@@ -1,7 +1,7 @@
 """Test ppedg."""
 import numpy as np
 import pytest
-from moirais.fn.ppedg import ppedg
+from morie.fn.ppedg import ppedg
 
 
 def test_ppedg_basic():

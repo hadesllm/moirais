@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.crent — cross-entropy."""
+"""Tests for morie.fn.crent — cross-entropy."""
 import numpy as np
 import pytest
-from moirais.fn.crent import cross_entropy
+from morie.fn.crent import cross_entropy
 
 
 class TestCrossEntropy:

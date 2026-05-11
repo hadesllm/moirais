@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.ipw — Inverse Probability of Treatment Weighting."""
+"""Tests for morie.fn.ipw — Inverse Probability of Treatment Weighting."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.ipw import calculate_ipw_weights
+from morie.fn.ipw import calculate_ipw_weights
 
 
 @pytest.fixture()

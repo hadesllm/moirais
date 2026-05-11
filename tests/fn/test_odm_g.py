@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.odm_g — Demographic profile per gender."""
+"""Tests for morie.fn.odm_g — Demographic profile per gender."""
 
 import pandas as pd
-from moirais.fn.odm_g import otis_demo_gender
+from morie.fn.odm_g import otis_demo_gender
 
 
 class TestOtisDemoGender:

@@ -1,7 +1,7 @@
 """Test mamng."""
 import numpy as np
 import pytest
-from moirais.fn.mamng import mamng
+from morie.fn.mamng import mamng
 
 
 def test_mamng_basic():

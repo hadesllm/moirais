@@ -1,7 +1,7 @@
 """Test power_to_db (pwrdb)."""
 import numpy as np
-from moirais.fn.pwrdb import power_to_db, pwrdb
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.pwrdb import power_to_db, pwrdb
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPwrdb:

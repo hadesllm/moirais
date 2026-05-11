@@ -1,7 +1,7 @@
 """Tests for clusca.clustering_coefficient."""
 import numpy as np
 import pytest
-from moirais.fn.clusca import clustering_coefficient
+from morie.fn.clusca import clustering_coefficient
 
 
 def test_clusca_basic():

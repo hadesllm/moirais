@@ -1,7 +1,7 @@
 """Tests for transfen.transfer_entropy_te."""
 import numpy as np
 import pytest
-from moirais.fn.transfen import transfer_entropy_te
+from morie.fn.transfen import transfer_entropy_te
 
 
 def test_transfen_basic():

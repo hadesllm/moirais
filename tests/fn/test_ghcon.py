@@ -1,7 +1,7 @@
 """Tests for ghcon.ghosal_posterior_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.ghcon import ghosal_posterior_consistency
+from morie.fn.ghcon import ghosal_posterior_consistency
 
 
 def test_ghcon_basic():

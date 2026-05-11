@@ -1,7 +1,7 @@
 """Tests for cvxdul.boyd_lagrangian."""
 import numpy as np
 import pytest
-from moirais.fn.cvxdul import boyd_lagrangian
+from morie.fn.cvxdul import boyd_lagrangian
 
 
 def test_cvxdul_basic():

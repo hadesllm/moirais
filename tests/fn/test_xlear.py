@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.xlear — X-learner CATE."""
+"""Tests for morie.fn.xlear — X-learner CATE."""
 import numpy as np
 import pytest
-from moirais.fn.xlear import xlear
+from morie.fn.xlear import xlear
 
 
 @pytest.fixture()
@@ -51,5 +51,5 @@ def test_finite(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.xlear import cheatsheet
+    from morie.fn.xlear import cheatsheet
     assert len(cheatsheet()) > 0

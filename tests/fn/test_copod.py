@@ -1,7 +1,7 @@
 """Tests for copod.copod."""
 import numpy as np
 import pytest
-from moirais.fn.copod import copod
+from morie.fn.copod import copod
 
 
 def test_copod_basic():

@@ -1,7 +1,7 @@
 """Tests for rgbartl.rangayyan_bartlett_psd."""
 import numpy as np
 import pytest
-from moirais.fn.rgbartl import rangayyan_bartlett_psd
+from morie.fn.rgbartl import rangayyan_bartlett_psd
 
 
 def test_rgbartl_basic():

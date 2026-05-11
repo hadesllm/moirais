@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dormm -- recurrence quantification analysis."""
+"""Tests for morie.fn.dormm -- recurrence quantification analysis."""
 
 import numpy as np
-from moirais.fn.dormm import recurrence_quantification, dormm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dormm import recurrence_quantification, dormm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDormm:

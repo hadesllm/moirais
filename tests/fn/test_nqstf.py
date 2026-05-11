@@ -1,6 +1,6 @@
 """Test nyquist_freq (nqstf)."""
-from moirais.fn.nqstf import nyquist_freq, nqstf
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nqstf import nyquist_freq, nqstf
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNqstf:

@@ -1,7 +1,7 @@
 """Tests for eigcen.eigenvector_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.eigcen import eigenvector_centrality
+from morie.fn.eigcen import eigenvector_centrality
 
 
 def test_eigcen_basic():

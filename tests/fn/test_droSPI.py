@@ -1,7 +1,7 @@
 """Tests for droSPI.spi."""
 import numpy as np
 import pytest
-from moirais.fn.droSPI import spi
+from morie.fn.droSPI import spi
 
 
 def test_droSPI_basic():

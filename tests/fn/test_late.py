@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.late — Local Average Treatment Effect via instrumental variables."""
+"""Tests for morie.fn.late — Local Average Treatment Effect via instrumental variables."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.late import estimate_late
+from morie.fn.late import estimate_late
 
 
 @pytest.fixture()

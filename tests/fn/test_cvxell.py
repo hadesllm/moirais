@@ -1,7 +1,7 @@
 """Tests for cvxell.boyd_minvol_ellipsoid."""
 import numpy as np
 import pytest
-from moirais.fn.cvxell import boyd_minvol_ellipsoid
+from morie.fn.cvxell import boyd_minvol_ellipsoid
 
 
 def test_cvxell_basic():

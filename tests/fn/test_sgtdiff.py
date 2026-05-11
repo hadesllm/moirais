@@ -1,7 +1,7 @@
 """Tests for sgtdiff.sgt_diffusion_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.sgtdiff import sgt_diffusion_kernel
+from morie.fn.sgtdiff import sgt_diffusion_kernel
 
 
 def test_sgtdiff_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mavar -- Moving average smoother."""
+"""Tests for morie.fn.mavar -- Moving average smoother."""
 import numpy as np
 import pytest
-from moirais.fn.mavar import moving_average
+from morie.fn.mavar import moving_average
 
 
 class TestMovingAverage:
@@ -20,5 +20,5 @@ class TestMovingAverage:
             moving_average(np.ones(10), method="bad")
 
     def test_cheatsheet(self):
-        from moirais.fn.mavar import cheatsheet
+        from morie.fn.mavar import cheatsheet
         assert isinstance(cheatsheet(), str)

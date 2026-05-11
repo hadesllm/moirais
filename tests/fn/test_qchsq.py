@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qchsq — chi-squared quantile function."""
+"""Tests for morie.fn.qchsq — chi-squared quantile function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qchsq import qchisq
+from morie.fn.qchsq import qchisq
 
 
 class TestQchisq:

@@ -1,6 +1,6 @@
 """Tests for bcaci (BCa bootstrap CI)."""
 import numpy as np
-from moirais.fn.bcaci import bca_ci
+from morie.fn.bcaci import bca_ci
 
 
 def test_bca_ci_basic():
@@ -12,7 +12,7 @@ def test_bca_ci_basic():
 
 
 def test_cheatsheet():
-    from moirais.fn.bcaci import cheatsheet
+    from morie.fn.bcaci import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

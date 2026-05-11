@@ -1,7 +1,7 @@
 """Tests for evprmstab.evt_param_stability."""
 import numpy as np
 import pytest
-from moirais.fn.evprmstab import evt_param_stability
+from morie.fn.evprmstab import evt_param_stability
 
 
 def test_evprmstab_basic():

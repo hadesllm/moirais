@@ -1,7 +1,7 @@
 """Tests for cvxsdp.boyd_sdp."""
 import numpy as np
 import pytest
-from moirais.fn.cvxsdp import boyd_sdp
+from morie.fn.cvxsdp import boyd_sdp
 
 
 def test_cvxsdp_basic():

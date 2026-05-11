@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mpdom."""
+"""Tests for morie.fn.mpdom."""
 
 import numpy as np
 import pytest
-from moirais.fn.mpdom import mpdom
+from morie.fn.mpdom import mpdom
 
 
 class TestMpdom:

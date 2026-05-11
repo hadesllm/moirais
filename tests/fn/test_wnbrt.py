@@ -1,7 +1,7 @@
 """Test bartlett_window (wnbrt)."""
 import numpy as np
-from moirais.fn.wnbrt import bartlett_window, wnbrt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wnbrt import bartlett_window, wnbrt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWnbrt:

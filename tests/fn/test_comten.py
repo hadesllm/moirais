@@ -1,7 +1,7 @@
 """Tests for comten.community_modularity."""
 import numpy as np
 import pytest
-from moirais.fn.comten import community_modularity
+from morie.fn.comten import community_modularity
 
 
 def test_comten_basic():

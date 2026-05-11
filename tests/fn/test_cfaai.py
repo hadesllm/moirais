@@ -1,6 +1,6 @@
 """Tests for cfaai -- AIC."""
-from moirais.fn.cfaai import cfa_aic
-from moirais.fn._containers import ESRes
+from morie.fn.cfaai import cfa_aic
+from morie.fn._containers import ESRes
 
 
 class TestCfaAic:

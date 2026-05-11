@@ -1,7 +1,7 @@
 """Test cstpp."""
 import numpy as np
 import pytest
-from moirais.fn.cstpp import cstpp
+from morie.fn.cstpp import cstpp
 
 
 def test_cstpp_basic():

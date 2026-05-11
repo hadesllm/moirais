@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.r0est -- R0 via next-generation matrix."""
+"""Tests for morie.fn.r0est -- R0 via next-generation matrix."""
 
 import pytest
-from moirais.fn.r0est import r0_next_generation
+from morie.fn.r0est import r0_next_generation
 
 
 class TestR0Est:

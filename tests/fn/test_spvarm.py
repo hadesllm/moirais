@@ -1,7 +1,7 @@
 """Tests for spvarm.spherical_variogram_model."""
 import numpy as np
 import pytest
-from moirais.fn.spvarm import spherical_variogram_model
+from morie.fn.spvarm import spherical_variogram_model
 
 
 def test_spvarm_basic():

@@ -1,7 +1,7 @@
 """Tests for gsrch.grid_search_cv."""
 import numpy as np
 import pytest
-from moirais.fn.gsrch import grid_search_cv
+from morie.fn.gsrch import grid_search_cv
 
 
 def test_gsrch_basic():

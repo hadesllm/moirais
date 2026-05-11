@@ -1,7 +1,7 @@
 """Tests for rgegg.rangayyan_egg."""
 import numpy as np
 import pytest
-from moirais.fn.rgegg import rangayyan_egg
+from morie.fn.rgegg import rangayyan_egg
 
 
 def test_rgegg_basic():

@@ -1,7 +1,7 @@
 """Tests for hmrlhf.geron_rlhf."""
 import numpy as np
 import pytest
-from moirais.fn.hmrlhf import geron_rlhf
+from morie.fn.hmrlhf import geron_rlhf
 
 
 def test_hmrlhf_basic():

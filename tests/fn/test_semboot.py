@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.semboot."""
+"""Tests for morie.fn.semboot."""
 import numpy as np
 import pytest
-from moirais.fn.semboot import semboot
+from morie.fn.semboot import semboot
 
 
 class TestSemboot:

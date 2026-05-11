@@ -1,7 +1,7 @@
 """Tests for bndinf.bound_inference."""
 import numpy as np
 import pytest
-from moirais.fn.bndinf import bound_inference
+from morie.fn.bndinf import bound_inference
 
 
 def test_bndinf_basic():

@@ -1,7 +1,7 @@
 """Tests for grmms.geron_minmax_scaler."""
 import numpy as np
 import pytest
-from moirais.fn.grmms import geron_minmax_scaler
+from morie.fn.grmms import geron_minmax_scaler
 
 
 def test_grmms_basic():

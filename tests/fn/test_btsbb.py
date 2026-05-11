@@ -1,7 +1,7 @@
 """Tests for btsbb.boot_stationary_block."""
 import numpy as np
 import pytest
-from moirais.fn.btsbb import boot_stationary_block
+from morie.fn.btsbb import boot_stationary_block
 
 
 def test_btsbb_basic():

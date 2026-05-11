@@ -1,7 +1,7 @@
 """Tests for bglup.bayes_cpi_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.bglup import bayes_cpi_genomic
+from morie.fn.bglup import bayes_cpi_genomic
 
 
 def test_bglup_basic():

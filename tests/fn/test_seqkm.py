@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.seqkm."""
+"""Tests for morie.fn.seqkm."""
 import numpy as np
-from moirais.fn.seqkm import kmer_frequency
+from morie.fn.seqkm import kmer_frequency
 
 
 def test_seqkm_smoke():
@@ -12,7 +12,7 @@ def test_seqkm_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.seqkm import cheatsheet
+    from morie.fn.seqkm import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

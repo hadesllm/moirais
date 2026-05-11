@@ -1,6 +1,6 @@
 """Test positional encoding."""
 import numpy as np
-from moirais.fn.posem import posem
+from morie.fn.posem import posem
 
 
 def test_posem_shape():

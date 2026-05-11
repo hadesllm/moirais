@@ -1,7 +1,7 @@
 """Test krgsm."""
 import numpy as np
 import pytest
-from moirais.fn.krgsm import krgsm
+from morie.fn.krgsm import krgsm
 
 
 def test_krgsm_basic():

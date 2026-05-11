@@ -1,7 +1,7 @@
 """Tests for stqft -- Short-time quadratic frequency transform."""
 import numpy as np
-from moirais.fn.stqft import stqft
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.stqft import stqft
+from morie.fn._containers import DescriptiveResult
 
 
 def test_stqft_basic():

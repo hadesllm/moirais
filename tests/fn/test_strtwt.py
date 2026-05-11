@@ -1,7 +1,7 @@
 """Tests for strtwt.stratified_weights."""
 import numpy as np
 import pytest
-from moirais.fn.strtwt import stratified_weights
+from morie.fn.strtwt import stratified_weights
 
 
 def test_strtwt_basic():

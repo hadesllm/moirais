@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sarsc."""
+"""Tests for morie.fn.sarsc."""
 import numpy as np
 import pytest
-from moirais.fn.sarsc import sarsc
+from morie.fn.sarsc import sarsc
 
 
 class TestSarsc:

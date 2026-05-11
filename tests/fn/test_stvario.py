@@ -1,7 +1,7 @@
 """Tests for stvario."""
 import numpy as np
 import pytest
-from moirais.fn.stvario import stvario
+from morie.fn.stvario import stvario
 
 
 def test_stvario_basic():
@@ -27,5 +27,5 @@ def test_stvario_no_data():
 
 
 def test_stvario_alias():
-    from moirais.fn.stvario import stvario
+    from morie.fn.stvario import stvario
     assert stvario is stvario

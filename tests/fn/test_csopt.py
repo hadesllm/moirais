@@ -1,7 +1,7 @@
 """Test csopt."""
 import numpy as np
 import pytest
-from moirais.fn.csopt import csopt
+from morie.fn.csopt import csopt
 
 
 def test_csopt_basic():

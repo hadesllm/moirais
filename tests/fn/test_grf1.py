@@ -1,7 +1,7 @@
 """Tests for grf1.geron_f1_score."""
 import numpy as np
 import pytest
-from moirais.fn.grf1 import geron_f1_score
+from morie.fn.grf1 import geron_f1_score
 
 
 def test_grf1_basic():

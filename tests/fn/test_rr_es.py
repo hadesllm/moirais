@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rr_es -- risk ratio effect size."""
+"""Tests for morie.fn.rr_es -- risk ratio effect size."""
 
 import pytest
-from moirais.fn.rr_es import risk_ratio
+from morie.fn.rr_es import risk_ratio
 
 
 class TestRiskRatio:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rf_i -- iterative OLS regression imputation."""
+"""Tests for morie.fn.rf_i -- iterative OLS regression imputation."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.rf_i import rf_impute
+from morie.fn.rf_i import rf_impute
 
 
 class TestRFImpute:

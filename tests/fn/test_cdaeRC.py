@@ -1,7 +1,7 @@
 """Tests for cdaeRC.cdae."""
 import numpy as np
 import pytest
-from moirais.fn.cdaeRC import cdae
+from morie.fn.cdaeRC import cdae
 
 
 def test_cdaeRC_basic():

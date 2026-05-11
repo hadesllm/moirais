@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pca_g — genotype PCA."""
+"""Tests for morie.fn.pca_g — genotype PCA."""
 import numpy as np
 import pytest
-from moirais.fn.pca_g import pca_genotype
+from morie.fn.pca_g import pca_genotype
 
 
 class TestPcaGenotype:

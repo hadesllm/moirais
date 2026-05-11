@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ld -- Linkage disequilibrium."""
+"""Tests for morie.fn.ld -- Linkage disequilibrium."""
 
 import numpy as np
 import pytest
-from moirais.fn.ld import linkage_disequilibrium
+from morie.fn.ld import linkage_disequilibrium
 
 
 class TestLD:

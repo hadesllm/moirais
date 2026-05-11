@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.semaic."""
+"""Tests for morie.fn.semaic."""
 import numpy as np
 import pytest
-from moirais.fn.semaic import semaic
+from morie.fn.semaic import semaic
 
 
 class TestSemaic:

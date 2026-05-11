@@ -1,6 +1,6 @@
 """Test Huber loss."""
 import numpy as np
-from moirais.fn.huber import huber
+from morie.fn.huber import huber
 
 
 def test_huber_basic():

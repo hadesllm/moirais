@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.chles -- Cholesky decomposition."""
+"""Tests for morie.fn.chles -- Cholesky decomposition."""
 
 import numpy as np
 import pytest
-from moirais.fn.chles import cholesky_solve, chles
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.chles import cholesky_solve, chles
+from morie.fn._containers import DescriptiveResult
 
 
 class TestChles:

@@ -1,7 +1,7 @@
 """Test splbi."""
 import numpy as np
 import pytest
-from moirais.fn.splbi import splbi
+from morie.fn.splbi import splbi
 
 
 def test_splbi_basic():

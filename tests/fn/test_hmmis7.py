@@ -1,7 +1,7 @@
 """Tests for hmmis7.geron_mistral7b."""
 import numpy as np
 import pytest
-from moirais.fn.hmmis7 import geron_mistral7b
+from morie.fn.hmmis7 import geron_mistral7b
 
 
 def test_hmmis7_basic():

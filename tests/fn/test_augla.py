@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.augla -- Augmented Lagrangian."""
+"""Tests for morie.fn.augla -- Augmented Lagrangian."""
 
 import numpy as np
-from moirais.fn.augla import augmented_lagrangian, augla
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.augla import augmented_lagrangian, augla
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAugla:

@@ -1,7 +1,7 @@
 """Tests for cttdis.ctt_discrimination."""
 import numpy as np
 import pytest
-from moirais.fn.cttdis import ctt_discrimination
+from morie.fn.cttdis import ctt_discrimination
 
 
 def test_cttdis_basic():

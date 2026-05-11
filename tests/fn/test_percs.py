@@ -1,7 +1,7 @@
 """Test percs."""
 import numpy as np
 import pytest
-from moirais.fn.percs import percs
+from morie.fn.percs import percs
 
 
 def test_percs_basic():

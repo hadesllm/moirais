@@ -1,7 +1,7 @@
 """Test ghgrv."""
 import numpy as np
 import pytest
-from moirais.fn.ghgrv import ghgrv
+from morie.fn.ghgrv import ghgrv
 
 
 def test_ghgrv_basic():

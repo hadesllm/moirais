@@ -1,7 +1,7 @@
 """Tests for masrcn.mask_rcnn_segmentation."""
 import numpy as np
 import pytest
-from moirais.fn.masrcn import mask_rcnn_segmentation
+from morie.fn.masrcn import mask_rcnn_segmentation
 
 
 def test_masrcn_basic():

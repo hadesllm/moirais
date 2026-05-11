@@ -1,14 +1,14 @@
-# MOIRAIS architecture
+# MORIE architecture
 
 *Part of {doc}`index` — high-level structural overview of the package.*
 
-This page gives a single-glance map of MOIRAIS's class structure and
+This page gives a single-glance map of MORIE's class structure and
 the contracts between components. It complements the prose in the
 {doc}`methods/index` reference and the auto-generated {doc}`api/index`.
 
 ## The result-container spine
 
-Every analysis function in MOIRAIS returns a `RichResult`. Estimator
+Every analysis function in MORIE returns a `RichResult`. Estimator
 hierarchies are organised around a `BaseEstimator` abstract class that
 declares the call contract; concrete estimators specialise it for
 particular causal / survey / spectral methods.

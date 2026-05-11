@@ -1,7 +1,7 @@
 """Test gcedn."""
 import numpy as np
 import pytest
-from moirais.fn.gcedn import gcedn
+from morie.fn.gcedn import gcedn
 
 
 def test_gcedn_basic():

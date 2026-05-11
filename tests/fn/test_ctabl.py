@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ctabl."""
+"""Tests for morie.fn.ctabl."""
 import numpy as np
-from moirais.fn.ctabl import ctabl
+from morie.fn.ctabl import ctabl
 
 
 def test_ctabl_smoke():
@@ -12,7 +12,7 @@ def test_ctabl_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ctabl import cheatsheet
+    from morie.fn.ctabl import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

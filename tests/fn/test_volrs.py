@@ -1,7 +1,7 @@
 """Tests for volrs.vol_rogers_satchell."""
 import numpy as np
 import pytest
-from moirais.fn.volrs import vol_rogers_satchell
+from morie.fn.volrs import vol_rogers_satchell
 
 
 def test_volrs_basic():

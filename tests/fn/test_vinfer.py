@@ -1,7 +1,7 @@
 """Tests for vinfer.variational_inference."""
 import numpy as np
 import pytest
-from moirais.fn.vinfer import variational_inference
+from morie.fn.vinfer import variational_inference
 
 
 def test_vinfer_basic():

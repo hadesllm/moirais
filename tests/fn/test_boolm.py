@@ -1,6 +1,6 @@
 """Tests for boolm (boolean minimization)."""
 import numpy as np
-from moirais.fn.boolm import boolean_minimize
+from morie.fn.boolm import boolean_minimize
 
 
 def test_boolean_minimize_basic():
@@ -15,7 +15,7 @@ def test_boolean_minimize_basic():
 
 
 def test_cheatsheet():
-    from moirais.fn.boolm import cheatsheet
+    from morie.fn.boolm import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

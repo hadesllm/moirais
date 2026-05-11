@@ -1,7 +1,7 @@
 """Tests for eslzst.esl_z_score."""
 import numpy as np
 import pytest
-from moirais.fn.eslzst import esl_z_score
+from morie.fn.eslzst import esl_z_score
 
 
 def test_eslzst_basic():

@@ -1,7 +1,7 @@
 """Test mablc."""
 import numpy as np
 import pytest
-from moirais.fn.mablc import mablc
+from morie.fn.mablc import mablc
 
 
 def test_mablc_basic():

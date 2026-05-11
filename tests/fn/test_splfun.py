@@ -1,7 +1,7 @@
 """Tests for splfun.schabenberger_l_function."""
 import numpy as np
 import pytest
-from moirais.fn.splfun import schabenberger_l_function
+from morie.fn.splfun import schabenberger_l_function
 
 
 def test_splfun_basic():

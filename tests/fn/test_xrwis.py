@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwis -- Weights islands detection"""
+"""Tests for morie.fn.xrwis -- Weights islands detection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwis import w_islands
+from morie.fn.xrwis import w_islands
 
 
 class TestWIslands:

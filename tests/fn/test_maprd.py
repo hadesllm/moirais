@@ -1,7 +1,7 @@
 """Test maprd."""
 import numpy as np
 import pytest
-from moirais.fn.maprd import maprd
+from morie.fn.maprd import maprd
 
 
 def test_maprd_basic():

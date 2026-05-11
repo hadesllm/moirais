@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.logls -- Log loss."""
+"""Tests for morie.fn.logls -- Log loss."""
 
 import numpy as np
 import pytest
-from moirais.fn.logls import log_loss
+from morie.fn.logls import log_loss
 
 
 class TestLogLoss:

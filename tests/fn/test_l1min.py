@@ -1,7 +1,7 @@
 """Test l1_minimize (l1min)."""
 import numpy as np
-from moirais.fn.l1min import l1_minimize, l1min
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.l1min import l1_minimize, l1min
+from morie.fn._containers import DescriptiveResult
 
 
 class TestL1min:

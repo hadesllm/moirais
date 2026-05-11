@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgunt -- Universal kriging trend"""
+"""Tests for morie.fn.kgunt -- Universal kriging trend"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgunt import uk_trend
+from morie.fn.kgunt import uk_trend
 
 
 class TestUkTrend:

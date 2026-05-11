@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rey_mx — mixed-effects model."""
+"""Tests for morie.fn.rey_mx — mixed-effects model."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.rey_mx import rey_mx
+from morie.fn.rey_mx import rey_mx
 
 
 class TestReyMx:

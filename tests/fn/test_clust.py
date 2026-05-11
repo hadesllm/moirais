@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.clust."""
+"""Tests for morie.fn.clust."""
 import numpy as np
-from moirais.fn.clust import clust
+from morie.fn.clust import clust
 
 
 def test_clust_smoke():
@@ -12,7 +12,7 @@ def test_clust_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.clust import cheatsheet
+    from morie.fn.clust import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

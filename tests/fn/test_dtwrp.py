@@ -1,7 +1,7 @@
 """Test dtwrp."""
 import numpy as np
 import pytest
-from moirais.fn.dtwrp import dtwrp
+from morie.fn.dtwrp import dtwrp
 
 
 def test_dtwrp_basic():

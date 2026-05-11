@@ -1,7 +1,7 @@
 """Test sebpf."""
 import numpy as np
 import pytest
-from moirais.fn.sebpf import sebpf
+from morie.fn.sebpf import sebpf
 
 
 def test_sebpf_basic():

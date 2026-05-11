@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.plnet."""
+"""Tests for morie.fn.plnet."""
 
 import numpy as np
 import pytest
-from moirais.fn.plnet import plnet
+from morie.fn.plnet import plnet
 
 
 class TestPlnet:

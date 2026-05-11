@@ -1,7 +1,7 @@
 """Test teager_energy (tkeo)."""
 import numpy as np
-from moirais.fn.tkeo import teager_energy, tkeo
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tkeo import teager_energy, tkeo
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTeagerEnergy:

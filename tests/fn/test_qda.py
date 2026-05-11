@@ -1,7 +1,7 @@
 """Tests for qda.py - Quadratic Discriminant Analysis."""
 import numpy as np
 import pytest
-from moirais.fn.qda import qda_fn, qda
+from morie.fn.qda import qda_fn, qda
 
 
 def _two_class_data():

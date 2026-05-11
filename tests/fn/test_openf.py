@@ -1,7 +1,7 @@
 """Test openf."""
 import numpy as np
 import pytest
-from moirais.fn.openf import openf
+from morie.fn.openf import openf
 
 
 def test_openf_basic():

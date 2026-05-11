@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rpl — regional placement analysis."""
+"""Tests for morie.fn.rpl — regional placement analysis."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.rpl import rplace as rpl
-from moirais.fn._containers import RplRes
+from morie.fn.rpl import rplace as rpl
+from morie.fn._containers import RplRes
 
 
 @pytest.fixture()

@@ -1,7 +1,7 @@
 """Tests for sgthits.sgt_hits_kleinberg."""
 import numpy as np
 import pytest
-from moirais.fn.sgthits import sgt_hits_kleinberg
+from morie.fn.sgthits import sgt_hits_kleinberg
 
 
 def test_sgthits_basic():

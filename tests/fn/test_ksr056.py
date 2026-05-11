@@ -1,7 +1,7 @@
 """Tests for ksr056.kosorok_ch2_lad_lipschitz_bound."""
 import numpy as np
 import pytest
-from moirais.fn.ksr056 import kosorok_ch2_lad_lipschitz_bound
+from morie.fn.ksr056 import kosorok_ch2_lad_lipschitz_bound
 
 
 def test_ksr056_basic():

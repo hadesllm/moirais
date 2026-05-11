@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.wcoef import wcoef
+from morie.fn.wcoef import wcoef
 
 
 class TestWcoef:

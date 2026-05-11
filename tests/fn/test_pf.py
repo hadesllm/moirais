@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pf — F-distribution CDF."""
+"""Tests for morie.fn.pf — F-distribution CDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pf import pf
+from morie.fn.pf import pf
 
 
 class TestPf:

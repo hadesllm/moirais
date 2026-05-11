@@ -1,7 +1,7 @@
 """Tests for bknce.burkov_noise_contrastive_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.bknce import burkov_noise_contrastive_estimation
+from morie.fn.bknce import burkov_noise_contrastive_estimation
 
 
 def test_bknce_basic():

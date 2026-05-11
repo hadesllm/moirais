@@ -1,7 +1,7 @@
 """Tests for krrFDA.kernel_ridge_regression."""
 import numpy as np
 import pytest
-from moirais.fn.krrFDA import kernel_ridge_regression
+from morie.fn.krrFDA import kernel_ridge_regression
 
 
 def test_krrFDA_basic():

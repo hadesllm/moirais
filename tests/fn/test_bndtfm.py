@@ -1,7 +1,7 @@
 """Tests for bndtfm.bound_transform."""
 import numpy as np
 import pytest
-from moirais.fn.bndtfm import bound_transform
+from morie.fn.bndtfm import bound_transform
 
 
 def test_bndtfm_basic():

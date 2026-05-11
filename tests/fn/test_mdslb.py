@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mdslb -- label MDS points."""
+"""Tests for morie.fn.mdslb -- label MDS points."""
 
 import numpy as np
-from moirais.fn.mdslb import label_mds_points, mdslb
+from morie.fn.mdslb import label_mds_points, mdslb
 
 
 def test_mdslb_smoke():

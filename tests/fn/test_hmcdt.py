@@ -1,7 +1,7 @@
 """Tests for hmcdt.geron_classification_tree."""
 import numpy as np
 import pytest
-from moirais.fn.hmcdt import geron_classification_tree
+from morie.fn.hmcdt import geron_classification_tree
 
 
 def test_hmcdt_basic():

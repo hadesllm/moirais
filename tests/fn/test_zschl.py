@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zschl -- Cholesky spatial simulation"""
+"""Tests for morie.fn.zschl -- Cholesky spatial simulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zschl import chol_sim
+from morie.fn.zschl import chol_sim
 
 
 class TestCholSim:

@@ -1,7 +1,7 @@
 """Test gaslop."""
 import numpy as np
 import pytest
-from moirais.fn.gaslop import gaslop
+from morie.fn.gaslop import gaslop
 
 
 def test_gaslop_basic():

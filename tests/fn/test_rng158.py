@@ -1,7 +1,7 @@
 """Tests for rng158.rangayyan_ch3_lms_steepest_descent."""
 import numpy as np
 import pytest
-from moirais.fn.rng158 import rangayyan_ch3_lms_steepest_descent
+from morie.fn.rng158 import rangayyan_ch3_lms_steepest_descent
 
 
 def test_rng158_basic():

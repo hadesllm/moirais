@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svlss -- Spatial loss function (quadratic/city-block)"""
+"""Tests for morie.fn.svlss -- Spatial loss function (quadratic/city-block)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svlss import loss_function
+from morie.fn.svlss import loss_function
 
 
 class TestLossFunction:

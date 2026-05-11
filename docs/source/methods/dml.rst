@@ -1,9 +1,9 @@
 Double Machine Learning (DML)
 ==============================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS implements the Partially Linear Regression (PLR) model from
+MORIE implements the Partially Linear Regression (PLR) model from
 Chernozhukov et al. (2018) via the :pypi:`DoubleML` package.
 
 Partially Linear Regression
@@ -52,10 +52,10 @@ The score function :math:`\psi(W; \theta, \eta)` satisfies
 ensuring that first-order errors in :math:`\hat{\eta}` do not bias
 :math:`\hat{\theta}`.
 
-MOIRAIS implementation
+MORIE implementation
 --------------------
 
-**Python entry point**: :func:`moirais.effects.estimate_ate`
+**Python entry point**: :func:`morie.effects.estimate_ate`
 
 Default nuisance learners:
 
@@ -66,7 +66,7 @@ Default: ``n_folds=5``, ``n_rep=1``.
 
 .. code-block:: python
 
-   from moirais import estimate_ate
+   from morie import estimate_ate
 
    result = estimate_ate(
        df,
@@ -107,7 +107,7 @@ with the doubly-robust score:
      + \frac{D_i \bigl(Y_i - \hat{g}_0(1, X_i)\bigr)}{\hat{m}_0(X_i)}
      - \frac{(1-D_i)\bigl(Y_i - \hat{g}_0(0, X_i)\bigr)}{1 - \hat{m}_0(X_i)}
 
-**Python entry point**: :func:`moirais.causal.estimate_irm`
+**Python entry point**: :func:`morie.causal.estimate_irm`
 
 Partially Linear IV (PLIV) — LATE estimation
 ----------------------------------------------
@@ -133,7 +133,7 @@ The Partially Linear IV model is:
 Cross-fitting proceeds as in PLR, with the additional first stage
 estimating :math:`\hat{m}_0(Z, X)`.
 
-**Python entry point**: :func:`moirais.effects.estimate_pliv`
+**Python entry point**: :func:`morie.effects.estimate_pliv`
 
 Nuisance learner defaults
 --------------------------

@@ -1,7 +1,7 @@
 """Test fosucc."""
 import numpy as np
 import pytest
-from moirais.fn.fosucc import fosucc
+from morie.fn.fosucc import fosucc
 
 
 def test_fosucc_basic():

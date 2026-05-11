@@ -1,7 +1,7 @@
 """Tests for mscmcl.matrix_completion_scm."""
 import numpy as np
 import pytest
-from moirais.fn.mscmcl import matrix_completion_scm
+from morie.fn.mscmcl import matrix_completion_scm
 
 
 def test_mscmcl_basic():

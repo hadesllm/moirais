@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ammat — A-M matrix setup."""
+"""Tests for morie.fn.ammat — A-M matrix setup."""
 import numpy as np
-from moirais.fn.ammat import ammat
+from morie.fn.ammat import ammat
 
 
 def test_ammat_smoke():
@@ -12,7 +12,7 @@ def test_ammat_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ammat import cheatsheet
+    from morie.fn.ammat import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

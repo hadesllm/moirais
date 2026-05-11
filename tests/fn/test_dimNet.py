@@ -1,7 +1,7 @@
 """Tests for dimNet.dimenet."""
 import numpy as np
 import pytest
-from moirais.fn.dimNet import dimenet
+from morie.fn.dimNet import dimenet
 
 
 def test_dimNet_basic():

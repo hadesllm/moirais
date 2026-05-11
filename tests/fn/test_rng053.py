@@ -1,7 +1,7 @@
 """Tests for rng053.rangayyan_ch3_z_transform_fir."""
 import numpy as np
 import pytest
-from moirais.fn.rng053 import rangayyan_ch3_z_transform_fir
+from morie.fn.rng053 import rangayyan_ch3_z_transform_fir
 
 
 def test_rng053_basic():

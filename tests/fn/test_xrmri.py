@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrmri -- Moran's I on regression residuals"""
+"""Tests for morie.fn.xrmri -- Moran's I on regression residuals"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrmri import moran_resid
+from morie.fn.xrmri import moran_resid
 
 
 class TestMoranResid:

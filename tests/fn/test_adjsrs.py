@@ -1,7 +1,7 @@
 """Tests for adjsrs.effective_srs."""
 import numpy as np
 import pytest
-from moirais.fn.adjsrs import effective_srs
+from morie.fn.adjsrs import effective_srs
 
 
 def test_adjsrs_basic():

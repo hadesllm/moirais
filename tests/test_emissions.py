@@ -1,4 +1,4 @@
-"""Tests for moirais.emissions — pure-Python emissions tracker.
+"""Tests for morie.emissions — pure-Python emissions tracker.
 
 No hardcoded column counts or magic numbers — all expectations are derived
 from the actual EmissionsData.csv_header property so tests stay in sync
@@ -17,7 +17,7 @@ import pytest
 class TestCarbonIntensity:
     def test_known_countries_relative_ordering(self):
         """Countries with known energy mixes should have plausible relative ordering."""
-        from moirais.emissions import _get_carbon_intensity, _load_energy_data
+        from morie.emissions import _get_carbon_intensity, _load_energy_data
         _load_energy_data()
         fra = _get_carbon_intensity("FRA")  # nuclear-heavy, low carbon
         usa = _get_carbon_intensity("USA")  # mixed grid
@@ -26,14 +26,14 @@ class TestCarbonIntensity:
         assert usa > 0, "Intensity must be positive"
 
     def test_unknown_country_returns_world_average(self):
-        from moirais.emissions import _get_carbon_intensity, _WORLD_AVERAGE_G_KWH, _G_TO_KG
+        from morie.emissions import _get_carbon_intensity, _WORLD_AVERAGE_G_KWH, _G_TO_KG
         val = _get_carbon_intensity("ZZZ")
         expected = _WORLD_AVERAGE_G_KWH * _G_TO_KG
         assert abs(val - expected) < 0.001, f"Unknown should use world average, got {val}"
 
     def test_canada_with_and_without_region(self):
         """CAN with region should differ from CAN without (if regional data exists)."""
-        from moirais.emissions import _get_carbon_intensity
+        from morie.emissions import _get_carbon_intensity
         can_national = _get_carbon_intensity("CAN")
         can_region = _get_carbon_intensity("CAN", "ontario")
         # Both must be positive; they may or may not differ depending on data
@@ -41,7 +41,7 @@ class TestCarbonIntensity:
         assert can_region > 0
 
     def test_all_positive(self):
-        from moirais.emissions import _get_carbon_intensity
+        from morie.emissions import _get_carbon_intensity
         for iso in ["USA", "CAN", "GBR", "DEU", "CHN", "IND", "AUS", "BRA", "JPN", "FRA"]:
             val = _get_carbon_intensity(iso)
             assert val > 0, f"{iso} must have positive carbon intensity"
@@ -49,19 +49,19 @@ class TestCarbonIntensity:
 
 class TestRamPower:
     def test_returns_positive(self):
-        from moirais.emissions import _estimate_ram_power
+        from morie.emissions import _estimate_ram_power
         assert _estimate_ram_power() > 0
 
     def test_within_physical_bounds(self):
         """RAM power should be between 1W and 200W for any real machine."""
-        from moirais.emissions import _estimate_ram_power
+        from morie.emissions import _estimate_ram_power
         power = _estimate_ram_power()
         assert 1.0 <= power <= 200.0, f"RAM power {power}W outside physical bounds"
 
 
 class TestEmissionsTracker:
     def test_start_stop_returns_float(self):
-        from moirais.emissions import EmissionsTracker
+        from morie.emissions import EmissionsTracker
         with tempfile.TemporaryDirectory() as d:
             t = EmissionsTracker(
                 project_name="test", output_dir=d,
@@ -75,7 +75,7 @@ class TestEmissionsTracker:
             assert emissions >= 0
 
     def test_context_manager_does_not_raise(self):
-        from moirais.emissions import EmissionsTracker
+        from morie.emissions import EmissionsTracker
         with tempfile.TemporaryDirectory() as d:
             with EmissionsTracker(
                 project_name="ctx", output_dir=d,
@@ -89,7 +89,7 @@ class TestEmissionsTracker:
 
         Derived from EmissionsData.csv_header — no hardcoded number.
         """
-        from moirais.emissions import EmissionsTracker, EmissionsData
+        from morie.emissions import EmissionsTracker, EmissionsData
         expected_cols = len(EmissionsData().csv_header.split(","))
 
         with tempfile.TemporaryDirectory() as d:
@@ -120,7 +120,7 @@ class TestEmissionsTracker:
 
     def test_emissions_data_has_required_fields(self):
         """EmissionsData must have all fields needed for codecarbon-compatible output."""
-        from moirais.emissions import EmissionsData
+        from morie.emissions import EmissionsData
         data = EmissionsData()
         required = [
             "emissions", "cpu_energy", "gpu_energy", "ram_energy",
@@ -132,7 +132,7 @@ class TestEmissionsTracker:
 
     def test_csv_row_col_count_matches_header(self):
         """csv_row() must produce same number of fields as csv_header."""
-        from moirais.emissions import EmissionsData
+        from morie.emissions import EmissionsData
         data = EmissionsData(project_name="test", country_iso_code="USA")
         header_count = len(data.csv_header.split(","))
         row_count = len(data.csv_row().split(","))

@@ -1,7 +1,7 @@
 """Test wlmcp."""
 import numpy as np
 import pytest
-from moirais.fn.wlmcp import wlmcp
+from morie.fn.wlmcp import wlmcp
 
 
 def test_wlmcp_basic():

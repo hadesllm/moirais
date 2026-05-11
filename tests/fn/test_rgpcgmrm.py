@@ -1,7 +1,7 @@
 """Tests for rgpcgmrm.rangayyan_pcg_murmur_detect."""
 import numpy as np
 import pytest
-from moirais.fn.rgpcgmrm import rangayyan_pcg_murmur_detect
+from morie.fn.rgpcgmrm import rangayyan_pcg_murmur_detect
 
 
 def test_rgpcgmrm_basic():

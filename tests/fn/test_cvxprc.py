@@ -1,7 +1,7 @@
 """Tests for cvxprc.boyd_projection."""
 import numpy as np
 import pytest
-from moirais.fn.cvxprc import boyd_projection
+from morie.fn.cvxprc import boyd_projection
 
 
 def test_cvxprc_basic():

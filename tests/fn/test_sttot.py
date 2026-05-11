@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.sttot -- subscale-total correlations."""
+"""Tests for morie.fn.sttot -- subscale-total correlations."""
 
-from moirais.fn.sttot import subscale_total_corr
+from morie.fn.sttot import subscale_total_corr
 
 
 class TestSubscaleTotalCorr:

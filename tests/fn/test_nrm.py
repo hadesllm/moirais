@@ -1,7 +1,7 @@
 """Tests for nrm.nominal_response_bock."""
 import numpy as np
 import pytest
-from moirais.fn.nrm import nominal_response_bock
+from morie.fn.nrm import nominal_response_bock
 
 
 def test_nrm_basic():

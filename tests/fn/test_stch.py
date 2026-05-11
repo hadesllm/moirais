@@ -1,7 +1,7 @@
 """Tests for stch."""
 import numpy as np
 import pytest
-from moirais.fn.stch import stch
+from morie.fn.stch import stch
 
 
 def test_stch_basic():
@@ -27,5 +27,5 @@ def test_stch_no_data():
 
 
 def test_stch_alias():
-    from moirais.fn.stch import stch
+    from morie.fn.stch import stch
     assert stch is stch

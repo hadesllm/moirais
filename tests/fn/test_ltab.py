@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ltab -- Abridged life table."""
+"""Tests for morie.fn.ltab -- Abridged life table."""
 
 import numpy as np
 import pytest
-from moirais.fn.ltab import life_table
+from morie.fn.ltab import life_table
 
 
 class TestLifeTable:

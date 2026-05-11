@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.tfplt -- time-frequency distribution plot."""
+"""Tests for morie.fn.tfplt -- time-frequency distribution plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.tfplt import tfplt
+from morie.fn.tfplt import tfplt
 
 
 class TestTfPlt:
@@ -21,7 +21,7 @@ class TestTfPlt:
 
 
 def test_cheatsheet():
-    from moirais.fn.tfplt import cheatsheet
+    from morie.fn.tfplt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

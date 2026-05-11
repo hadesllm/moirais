@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.splhf — Spearman-Brown split-half reliability."""
+"""Tests for morie.fn.splhf — Spearman-Brown split-half reliability."""
 
 import pytest
 import numpy as np
-from moirais.fn import splhf
+from morie.fn import splhf
 
 
 @pytest.fixture()

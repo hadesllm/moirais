@@ -1,7 +1,7 @@
 """Tests for gb_are5.gibbons_are_scale_tests."""
 import numpy as np
 import pytest
-from moirais.fn.gb_are5 import gibbons_are_scale_tests
+from morie.fn.gb_are5 import gibbons_are_scale_tests
 
 
 def test_gb_are5_basic():

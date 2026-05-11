@@ -1,7 +1,7 @@
 """Tests for volcorpst.vol_corradi_swan_persistence."""
 import numpy as np
 import pytest
-from moirais.fn.volcorpst import vol_corradi_swan_persistence
+from morie.fn.volcorpst import vol_corradi_swan_persistence
 
 
 def test_volcorpst_basic():

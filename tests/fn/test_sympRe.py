@@ -1,7 +1,7 @@
 """Tests for sympRe.sympy_simplify."""
 import numpy as np
 import pytest
-from moirais.fn.sympRe import sympy_simplify
+from morie.fn.sympRe import sympy_simplify
 
 
 def test_sympRe_basic():

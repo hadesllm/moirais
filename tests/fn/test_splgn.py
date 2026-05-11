@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.splgn -- NASA-TLX."""
+"""Tests for morie.fn.splgn -- NASA-TLX."""
 
-from moirais.fn.splgn import nasa_tlx, splgn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.splgn import nasa_tlx, splgn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSplgn:

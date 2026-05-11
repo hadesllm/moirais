@@ -1,7 +1,7 @@
 """Tests for otlowrk.ot_low_rank_sinkhorn."""
 import numpy as np
 import pytest
-from moirais.fn.otlowrk import ot_low_rank_sinkhorn
+from morie.fn.otlowrk import ot_low_rank_sinkhorn
 
 
 def test_otlowrk_basic():

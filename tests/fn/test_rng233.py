@@ -1,7 +1,7 @@
 """Tests for rng233.rangayyan_ch4_convolution_model."""
 import numpy as np
 import pytest
-from moirais.fn.rng233 import rangayyan_ch4_convolution_model
+from morie.fn.rng233 import rangayyan_ch4_convolution_model
 
 
 def test_rng233_basic():

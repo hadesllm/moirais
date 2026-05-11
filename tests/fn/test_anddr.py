@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.anddr -- Anderson-Darling test."""
+"""Tests for morie.fn.anddr -- Anderson-Darling test."""
 
 import numpy as np
 import pytest
-from moirais.fn.anddr import anderson_darling
+from morie.fn.anddr import anderson_darling
 
 
 class TestAndersonDarling:

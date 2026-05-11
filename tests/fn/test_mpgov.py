@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mpgov."""
+"""Tests for morie.fn.mpgov."""
 
 import numpy as np
 import pytest
-from moirais.fn.mpgov import mpgov
+from morie.fn.mpgov import mpgov
 
 
 class TestMpgov:

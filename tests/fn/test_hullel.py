@@ -1,7 +1,7 @@
 """Test hullel."""
 import numpy as np
 import pytest
-from moirais.fn.hullel import hullel
+from morie.fn.hullel import hullel
 
 
 def test_hullel_basic():

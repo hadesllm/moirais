@@ -1,7 +1,7 @@
 """Tests for glmmpred."""
 import numpy as np
 import pytest
-from moirais.fn.glmmpred import glmmpred
+from morie.fn.glmmpred import glmmpred
 
 
 def test_glmmpred_basic():
@@ -27,5 +27,5 @@ def test_glmmpred_no_data():
 
 
 def test_glmmpred_alias():
-    from moirais.fn.glmmpred import glmmpred
+    from morie.fn.glmmpred import glmmpred
     assert glmmpred is glmmpred

@@ -1,7 +1,7 @@
 """Test getrs."""
 import numpy as np
 import pytest
-from moirais.fn.getrs import getrs
+from morie.fn.getrs import getrs
 
 
 def test_getrs_basic():

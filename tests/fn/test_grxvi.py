@@ -1,7 +1,7 @@
 """Tests for grxvi.geron_glorot_xavier_init."""
 import numpy as np
 import pytest
-from moirais.fn.grxvi import geron_glorot_xavier_init
+from morie.fn.grxvi import geron_glorot_xavier_init
 
 
 def test_grxvi_basic():

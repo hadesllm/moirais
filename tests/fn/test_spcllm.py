@@ -1,7 +1,7 @@
 """Tests for spcllm.spatial_cluster_lisa."""
 import numpy as np
 import pytest
-from moirais.fn.spcllm import spatial_cluster_lisa
+from morie.fn.spcllm import spatial_cluster_lisa
 
 
 def test_spcllm_basic():

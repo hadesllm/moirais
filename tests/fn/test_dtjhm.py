@@ -1,7 +1,7 @@
 """Test dtjhm."""
 import numpy as np
 import pytest
-from moirais.fn.dtjhm import dtjhm
+from morie.fn.dtjhm import dtjhm
 
 
 def test_dtjhm_basic():

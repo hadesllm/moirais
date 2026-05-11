@@ -1,7 +1,7 @@
 """Tests for t5enc.t5."""
 import numpy as np
 import pytest
-from moirais.fn.t5enc import t5
+from morie.fn.t5enc import t5
 
 
 def test_t5enc_basic():

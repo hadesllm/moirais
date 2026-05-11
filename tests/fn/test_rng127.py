@@ -1,7 +1,7 @@
 """Tests for rng127.rangayyan_ch3_bilinear_transformation."""
 import numpy as np
 import pytest
-from moirais.fn.rng127 import rangayyan_ch3_bilinear_transformation
+from morie.fn.rng127 import rangayyan_ch3_bilinear_transformation
 
 
 def test_rng127_basic():

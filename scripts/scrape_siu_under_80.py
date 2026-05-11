@@ -7,10 +7,10 @@ import sys
 import time
 from pathlib import Path
 
-PROJECT = Path("/path/to/moirais/dev/sphinx/project")
+PROJECT = Path("/path/to/morie/dev/sphinx/project")
 sys.path.insert(0, str(PROJECT / "libexec/config/tools/py-package"))
 
-from moirais.siu import scrape_drid  # noqa: E402
+from morie.siu import scrape_drid  # noqa: E402
 
 OUT = PROJECT / "data/datasets/vsr/SIU_rows_stream_under80.jsonl"
 OUT.parent.mkdir(parents=True, exist_ok=True)

@@ -1,7 +1,7 @@
 """Tests for gb_kw2.gibbons_kw_alt_form."""
 import numpy as np
 import pytest
-from moirais.fn.gb_kw2 import gibbons_kw_alt_form
+from morie.fn.gb_kw2 import gibbons_kw_alt_form
 
 
 def test_gb_kw2_basic():

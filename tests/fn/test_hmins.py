@@ -1,7 +1,7 @@
 """Tests for hmins.geron_instance_based."""
 import numpy as np
 import pytest
-from moirais.fn.hmins import geron_instance_based
+from morie.fn.hmins import geron_instance_based
 
 
 def test_hmins_basic():

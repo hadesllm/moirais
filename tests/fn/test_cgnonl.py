@@ -1,7 +1,7 @@
 """Tests for cgnonl.nonlinear_cg."""
 import numpy as np
 import pytest
-from moirais.fn.cgnonl import nonlinear_cg
+from morie.fn.cgnonl import nonlinear_cg
 
 
 def test_cgnonl_basic():

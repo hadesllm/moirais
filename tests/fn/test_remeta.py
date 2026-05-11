@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.remeta -- random-effects meta-analysis."""
+"""Tests for morie.fn.remeta -- random-effects meta-analysis."""
 
 import pytest
-from moirais.fn.remeta import random_effects_meta
+from morie.fn.remeta import random_effects_meta
 
 
 class TestRandomEffectsMeta:

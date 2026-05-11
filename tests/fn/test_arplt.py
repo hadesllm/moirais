@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.arplt -- AR model poles plot."""
+"""Tests for morie.fn.arplt -- AR model poles plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.arplt import arplt
+from morie.fn.arplt import arplt
 
 
 class TestArPlt:

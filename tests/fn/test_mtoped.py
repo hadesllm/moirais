@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mtoped — pedestrian."""
+"""Tests for morie.fn.mtoped — pedestrian."""
 
 import pytest
 import pandas as pd
-from moirais.fn.mtoped import mto_pedestrian
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtoped import mto_pedestrian
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPedestrian:

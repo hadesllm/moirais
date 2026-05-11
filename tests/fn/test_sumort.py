@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sumort -- substance mortality."""
+"""Tests for morie.fn.sumort -- substance mortality."""
 
 import pytest
-from moirais.fn.sumort import substance_mortality
+from morie.fn.sumort import substance_mortality
 
 
 class TestSubstanceMortality:

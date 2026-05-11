@@ -1,7 +1,7 @@
 """Tests for tcc._test_characteristic_curve."""
 import numpy as np
 import pytest
-from moirais.fn.tcc import test_characteristic_curve as _test_characteristic_curve
+from morie.fn.tcc import test_characteristic_curve as _test_characteristic_curve
 
 
 def test_tcc_basic():

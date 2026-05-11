@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svprv -- Probit spatial voting probability"""
+"""Tests for morie.fn.svprv -- Probit spatial voting probability"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svprv import probit_vote
+from morie.fn.svprv import probit_vote
 
 
 class TestProbitVote:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bbss — Blackbox sum of squares."""
+"""Tests for morie.fn.bbss — Blackbox sum of squares."""
 import numpy as np
-from moirais.fn.bbss import bbss
+from morie.fn.bbss import bbss
 
 
 def test_bbss_smoke():
@@ -12,7 +12,7 @@ def test_bbss_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.bbss import cheatsheet
+    from morie.fn.bbss import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

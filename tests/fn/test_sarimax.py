@@ -1,7 +1,7 @@
 """Tests for sarimax.sarimax."""
 import numpy as np
 import pytest
-from moirais.fn.sarimax import sarimax
+from morie.fn.sarimax import sarimax
 
 
 def test_sarimax_basic():

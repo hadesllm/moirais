@@ -1,7 +1,7 @@
 """Tests for grtrc.geron_tree_classification_leaf."""
 import numpy as np
 import pytest
-from moirais.fn.grtrc import geron_tree_classification_leaf
+from morie.fn.grtrc import geron_tree_classification_leaf
 
 
 def test_grtrc_basic():

@@ -1,7 +1,7 @@
 """Tests for rgepiksv.rangayyan_epilepsy_ksvd."""
 import numpy as np
 import pytest
-from moirais.fn.rgepiksv import rangayyan_epilepsy_ksvd
+from morie.fn.rgepiksv import rangayyan_epilepsy_ksvd
 
 
 def test_rgepiksv_basic():

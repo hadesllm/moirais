@@ -1,7 +1,7 @@
 """Tests for spcont.schabenberger_spatial_continuity."""
 import numpy as np
 import pytest
-from moirais.fn.spcont import schabenberger_spatial_continuity
+from morie.fn.spcont import schabenberger_spatial_continuity
 
 
 def test_spcont_basic():

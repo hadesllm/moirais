@@ -1,7 +1,7 @@
 """Tests for rghhtsp.rangayyan_hht_spectrum."""
 import numpy as np
 import pytest
-from moirais.fn.rghhtsp import rangayyan_hht_spectrum
+from morie.fn.rghhtsp import rangayyan_hht_spectrum
 
 
 def test_rghhtsp_basic():

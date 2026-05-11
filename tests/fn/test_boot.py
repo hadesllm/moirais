@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.boot -- bootstrap confidence intervals."""
+"""Tests for morie.fn.boot -- bootstrap confidence intervals."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.boot import bootstrap_ci
+from morie.fn.boot import bootstrap_ci
 
 
 class TestBootstrapCI:

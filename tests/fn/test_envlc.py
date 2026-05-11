@@ -1,7 +1,7 @@
 """Test envlc."""
 import numpy as np
 import pytest
-from moirais.fn.envlc import envlc
+from morie.fn.envlc import envlc
 
 
 def test_envlc_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dr_ -- Doubly-robust ATE estimator."""
+"""Tests for morie.fn.dr_ -- Doubly-robust ATE estimator."""
 
 import numpy as np
 import pytest
-from moirais.fn.dr_ import doubly_robust_ate
+from morie.fn.dr_ import doubly_robust_ate
 
 
 class TestDoublyRobust:

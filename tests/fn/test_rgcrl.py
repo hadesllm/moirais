@@ -1,7 +1,7 @@
 """Tests for rgcrl.rangayyan_correlation_dimension."""
 import numpy as np
 import pytest
-from moirais.fn.rgcrl import rangayyan_correlation_dimension
+from morie.fn.rgcrl import rangayyan_correlation_dimension
 
 
 def test_rgcrl_basic():

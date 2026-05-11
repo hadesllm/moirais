@@ -1,7 +1,7 @@
 """Tests for wsmdir.wasserman_directed_graph."""
 import numpy as np
 import pytest
-from moirais.fn.wsmdir import wasserman_directed_graph
+from morie.fn.wsmdir import wasserman_directed_graph
 
 
 def test_wsmdir_basic():

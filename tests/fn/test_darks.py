@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.darks -- Dark energy equation of state."""
+"""Tests for morie.fn.darks -- Dark energy equation of state."""
 
 import numpy as np
-from moirais.fn.darks import dark_energy_eos, darks
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.darks import dark_energy_eos, darks
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDarks:

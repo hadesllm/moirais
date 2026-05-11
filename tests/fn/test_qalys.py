@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.qalys -- QALY computation."""
+"""Tests for morie.fn.qalys -- QALY computation."""
 
 import pytest
-from moirais.fn.qalys import qaly_computation
+from morie.fn.qalys import qaly_computation
 
 
 class TestQALY:

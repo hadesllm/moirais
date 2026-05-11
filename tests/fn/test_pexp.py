@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pexp — exponential CDF."""
+"""Tests for morie.fn.pexp — exponential CDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pexp import pexp
+from morie.fn.pexp import pexp
 
 
 class TestPexp:

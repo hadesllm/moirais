@@ -1,7 +1,7 @@
 """Tests for abcgp.abc_gp_emulator."""
 import numpy as np
 import pytest
-from moirais.fn.abcgp import abc_gp_emulator
+from morie.fn.abcgp import abc_gp_emulator
 
 
 def test_abcgp_basic():

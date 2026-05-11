@@ -1,7 +1,7 @@
 """Tests for hrzphvnp.horowitz_ph_frailty_nonpar."""
 import numpy as np
 import pytest
-from moirais.fn.hrzphvnp import horowitz_ph_frailty_nonpar
+from morie.fn.hrzphvnp import horowitz_ph_frailty_nonpar
 
 
 def test_hrzphvnp_basic():

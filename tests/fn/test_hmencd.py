@@ -1,7 +1,7 @@
 """Tests for hmencd.geron_encoder_decoder_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.hmencd import geron_encoder_decoder_transformer
+from morie.fn.hmencd import geron_encoder_decoder_transformer
 
 
 def test_hmencd_basic():

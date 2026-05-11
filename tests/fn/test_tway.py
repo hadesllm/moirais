@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.tway -- Two-way fixed effects."""
+"""Tests for morie.fn.tway -- Two-way fixed effects."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.tway import twfe, tway
-from moirais.fn._containers import RegressionResult
+from morie.fn.tway import twfe, tway
+from morie.fn._containers import RegressionResult
 
 
 class TestTWFE:

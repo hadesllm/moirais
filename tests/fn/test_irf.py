@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.irf — Impulse Response Function."""
+"""Tests for morie.fn.irf — Impulse Response Function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.irf import irf
+from morie.fn.irf import irf
 
 
 class TestIrf:

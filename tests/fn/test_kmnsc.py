@@ -1,7 +1,7 @@
 """Tests for kmnsc.kmeans_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.kmnsc import kmeans_clustering
+from morie.fn.kmnsc import kmeans_clustering
 
 
 def test_kmnsc_basic():

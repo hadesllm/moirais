@@ -1,7 +1,7 @@
 """Test madpt."""
 import numpy as np
 import pytest
-from moirais.fn.madpt import madpt
+from morie.fn.madpt import madpt
 
 
 def test_madpt_basic():

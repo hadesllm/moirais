@@ -1,7 +1,7 @@
 """Tests for epbias.exposure_misclass_bias."""
 import numpy as np
 import pytest
-from moirais.fn.epbias import exposure_misclass_bias
+from morie.fn.epbias import exposure_misclass_bias
 
 
 def test_epbias_basic():

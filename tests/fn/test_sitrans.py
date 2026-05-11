@@ -1,7 +1,7 @@
 """Tests for sitrans."""
 import numpy as np
 import pytest
-from moirais.fn.sitrans import sitrans
+from morie.fn.sitrans import sitrans
 
 
 def test_sitrans_basic():
@@ -27,5 +27,5 @@ def test_sitrans_no_data():
 
 
 def test_sitrans_alias():
-    from moirais.fn.sitrans import sitrans
+    from morie.fn.sitrans import sitrans
     assert sitrans is sitrans

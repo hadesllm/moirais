@@ -1,6 +1,6 @@
 """Tests for NOMINATE bootstrap."""
 import numpy as np
-from moirais.fn.nombs import nombs
+from morie.fn.nombs import nombs
 
 
 def test_nombs_smoke():
@@ -18,7 +18,7 @@ def test_nombs_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.nombs import cheatsheet
+    from morie.fn.nombs import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

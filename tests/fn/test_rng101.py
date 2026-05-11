@@ -1,7 +1,7 @@
 """Tests for rng101.rangayyan_ch3_running_integral_window."""
 import numpy as np
 import pytest
-from moirais.fn.rng101 import rangayyan_ch3_running_integral_window
+from morie.fn.rng101 import rangayyan_ch3_running_integral_window
 
 
 def test_rng101_basic():

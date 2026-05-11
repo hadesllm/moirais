@@ -1,7 +1,7 @@
 """Tests for cslat.causal_attention_mask."""
 import numpy as np
 import pytest
-from moirais.fn.cslat import causal_attention_mask
+from morie.fn.cslat import causal_attention_mask
 
 
 def test_cslat_basic():

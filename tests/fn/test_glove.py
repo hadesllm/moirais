@@ -1,7 +1,7 @@
 """Tests for glove.glove."""
 import numpy as np
 import pytest
-from moirais.fn.glove import glove
+from morie.fn.glove import glove
 
 
 def test_glove_basic():

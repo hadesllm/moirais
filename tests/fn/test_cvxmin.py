@@ -1,7 +1,7 @@
 """Tests for cvxmin.boyd_minimum_norm."""
 import numpy as np
 import pytest
-from moirais.fn.cvxmin import boyd_minimum_norm
+from morie.fn.cvxmin import boyd_minimum_norm
 
 
 def test_cvxmin_basic():

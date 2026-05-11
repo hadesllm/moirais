@@ -1,7 +1,7 @@
 """Test overlap_add (oladd)."""
 import numpy as np
-from moirais.fn.oladd import overlap_add, oladd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.oladd import overlap_add, oladd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOladd:

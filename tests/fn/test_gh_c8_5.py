@@ -1,7 +1,7 @@
 """Tests for gh_c8_5.ghosal_entropy_cnd."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c8_5 import ghosal_entropy_cnd
+from morie.fn.gh_c8_5 import ghosal_entropy_cnd
 
 
 def test_gh_c8_5_basic():

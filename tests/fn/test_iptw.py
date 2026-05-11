@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.iptw -- Stabilized IPTW."""
+"""Tests for morie.fn.iptw -- Stabilized IPTW."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.iptw import stabilized_iptw, iptw
-from moirais.fn._containers import ESRes
+from morie.fn.iptw import stabilized_iptw, iptw
+from morie.fn._containers import ESRes
 
 
 class TestStabilizedIPTW:

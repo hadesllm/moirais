@@ -1,7 +1,7 @@
 """Tests for isotr.isotonic_regression_disparity."""
 import numpy as np
 import pytest
-from moirais.fn.isotr import isotonic_regression_disparity
+from morie.fn.isotr import isotonic_regression_disparity
 
 
 def test_isotr_basic():

@@ -1,7 +1,7 @@
 """Tests for km123.kamath_ch8_moverscore_distance."""
 import numpy as np
 import pytest
-from moirais.fn.km123 import kamath_ch8_moverscore_distance
+from morie.fn.km123 import kamath_ch8_moverscore_distance
 
 
 def test_km123_basic():

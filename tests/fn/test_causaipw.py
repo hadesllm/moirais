@@ -1,7 +1,7 @@
 """Tests for causaipw.causal_aipw."""
 import numpy as np
 import pytest
-from moirais.fn.causaipw import causal_aipw
+from morie.fn.causaipw import causal_aipw
 
 
 def test_causaipw_basic():

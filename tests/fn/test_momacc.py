@@ -1,7 +1,7 @@
 """Tests for momacc.moments_accountant."""
 import numpy as np
 import pytest
-from moirais.fn.momacc import moments_accountant
+from morie.fn.momacc import moments_accountant
 
 
 def test_momacc_basic():

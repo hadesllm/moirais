@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxcmn -- Spatial circular mean"""
+"""Tests for morie.fn.zxcmn -- Spatial circular mean"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxcmn import circular_mean_sp
+from morie.fn.zxcmn import circular_mean_sp
 
 
 class TestCircularMeanSp:

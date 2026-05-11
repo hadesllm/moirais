@@ -1,7 +1,7 @@
 """Tests for sechsh.hash_chain_audit."""
 import numpy as np
 import pytest
-from moirais.fn.sechsh import hash_chain_audit
+from morie.fn.sechsh import hash_chain_audit
 
 
 def test_sechsh_basic():

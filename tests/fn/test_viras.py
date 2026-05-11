@@ -1,6 +1,6 @@
 """Test viras."""
 import pytest
-from moirais.fn.viras import virasoro_algebra
+from morie.fn.viras import virasoro_algebra
 
 
 def test_viras_basic():

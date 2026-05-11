@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfars -- CFA residual matrix."""
+"""Tests for morie.fn.cfars -- CFA residual matrix."""
 
 import numpy as np
-from moirais.fn.cfars import cfa_residuals
-from moirais.fn._mapq_const import SUBSCALES
+from morie.fn.cfars import cfa_residuals
+from morie.fn._mapq_const import SUBSCALES
 
 
 class TestCfaResiduals:

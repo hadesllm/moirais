@@ -1,7 +1,7 @@
 """Tests for rng203.rangayyan_ch4_ccf_outer_product_random_signals."""
 import numpy as np
 import pytest
-from moirais.fn.rng203 import rangayyan_ch4_ccf_outer_product_random_signals
+from morie.fn.rng203 import rangayyan_ch4_ccf_outer_product_random_signals
 
 
 def test_rng203_basic():

@@ -1,6 +1,6 @@
 """Test db_to_power (db2pw)."""
-from moirais.fn.db2pw import db_to_power, db2pw
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.db2pw import db_to_power, db2pw
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDb2pw:

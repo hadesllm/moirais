@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.agame."""
+"""Tests for morie.fn.agame."""
 
 import numpy as np
 import pytest
-from moirais.fn.agame import agame
+from morie.fn.agame import agame
 
 
 class TestAgame:

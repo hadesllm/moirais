@@ -1,7 +1,7 @@
 """Test samsp."""
 import numpy as np
 import pytest
-from moirais.fn.samsp import samsp
+from morie.fn.samsp import samsp
 
 
 def test_samsp_basic():

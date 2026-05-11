@@ -1,7 +1,7 @@
 """Tests for rgcoh.rangayyan_coherence."""
 import numpy as np
 import pytest
-from moirais.fn.rgcoh import rangayyan_coherence
+from morie.fn.rgcoh import rangayyan_coherence
 
 
 def test_rgcoh_basic():

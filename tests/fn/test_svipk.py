@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svipk -- Kernel smoothed ideal point"""
+"""Tests for morie.fn.svipk -- Kernel smoothed ideal point"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svipk import ideal_point_kernel
+from morie.fn.svipk import ideal_point_kernel
 
 
 class TestIdealPointKernel:

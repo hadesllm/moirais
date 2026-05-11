@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.probt — Probit regression."""
+"""Tests for morie.fn.probt — Probit regression."""
 
 import numpy as np
 import pytest
 from scipy import stats
 
-from moirais.fn.probt import probit_regression
+from morie.fn.probt import probit_regression
 
 
 def test_probit_positive_coef():

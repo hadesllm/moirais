@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cmstr."""
+"""Tests for morie.fn.cmstr."""
 
 import numpy as np
 import pytest
-from moirais.fn.cmstr import cmstr
+from morie.fn.cmstr import cmstr
 
 
 class TestCmstr:

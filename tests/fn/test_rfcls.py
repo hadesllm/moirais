@@ -1,7 +1,7 @@
 """Test rf_classify_bio (rfcls)."""
 import numpy as np
-from moirais.fn.rfcls import rf_classify_bio, rfcls
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rfcls import rf_classify_bio, rfcls
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRfcls:

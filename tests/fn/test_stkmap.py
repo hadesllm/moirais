@@ -1,7 +1,7 @@
 """Tests for stkmap."""
 import numpy as np
 import pytest
-from moirais.fn.stkmap import stkmap
+from morie.fn.stkmap import stkmap
 
 
 def test_stkmap_basic():
@@ -27,5 +27,5 @@ def test_stkmap_no_data():
 
 
 def test_stkmap_alias():
-    from moirais.fn.stkmap import stkmap
+    from morie.fn.stkmap import stkmap
     assert stkmap is stkmap

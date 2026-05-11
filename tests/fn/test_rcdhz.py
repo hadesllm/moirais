@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rcdhz — hazard rate."""
+"""Tests for morie.fn.rcdhz — hazard rate."""
 
 import pandas as pd
-from moirais.fn.rcdhz import recidivism_hazard, rcdhz
+from morie.fn.rcdhz import recidivism_hazard, rcdhz
 
 
 class TestRecidivismHazard:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wdist — Wasserstein distance."""
+"""Tests for morie.fn.wdist — Wasserstein distance."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.wdist import wdist
+from morie.fn.wdist import wdist
 
 
 class TestWdist:

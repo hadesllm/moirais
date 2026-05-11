@@ -1,7 +1,7 @@
 """Tests for hmbms.geron_beam_search."""
 import numpy as np
 import pytest
-from moirais.fn.hmbms import geron_beam_search
+from morie.fn.hmbms import geron_beam_search
 
 
 def test_hmbms_basic():

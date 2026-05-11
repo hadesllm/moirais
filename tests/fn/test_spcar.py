@@ -1,7 +1,7 @@
 """Tests for spcar.schabenberger_car_model."""
 import numpy as np
 import pytest
-from moirais.fn.spcar import schabenberger_car_model
+from morie.fn.spcar import schabenberger_car_model
 
 
 def test_spcar_basic():

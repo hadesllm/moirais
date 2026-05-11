@@ -1,7 +1,7 @@
 """Test rotary_embed."""
 import numpy as np
-from moirais.fn.rpemb import rotary_embed, rpemb
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rpemb import rotary_embed, rpemb
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRotaryEmbed:

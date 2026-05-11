@@ -1,7 +1,7 @@
 """Tests for gb5416.gibbons_sign_sampsize."""
 import numpy as np
 import pytest
-from moirais.fn.gb5416 import gibbons_sign_sampsize
+from morie.fn.gb5416 import gibbons_sign_sampsize
 
 
 def test_gb5416_basic():

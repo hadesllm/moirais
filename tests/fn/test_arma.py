@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.arma — ARIMA model fitting."""
+"""Tests for morie.fn.arma — ARIMA model fitting."""
 import numpy as np
 
-from moirais.fn.arma import arima_fit, arma
+from morie.fn.arma import arima_fit, arma
 
 
 def test_ar1_coefficient_recovered():

@@ -1,7 +1,7 @@
 """Tests for sipath."""
 import numpy as np
 import pytest
-from moirais.fn.sipath import sipath
+from morie.fn.sipath import sipath
 
 
 def test_sipath_basic():
@@ -27,5 +27,5 @@ def test_sipath_no_data():
 
 
 def test_sipath_alias():
-    from moirais.fn.sipath import sipath
+    from morie.fn.sipath import sipath
     assert sipath is sipath

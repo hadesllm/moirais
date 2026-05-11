@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zscnf -- Filled contour generation"""
+"""Tests for morie.fn.zscnf -- Filled contour generation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zscnf import contour_fill
+from morie.fn.zscnf import contour_fill
 
 
 class TestContourFill:

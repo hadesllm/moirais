@@ -1,6 +1,6 @@
 """Tests for isotropy test."""
 import numpy as np
-from moirais.fn.sgiso import sgiso
+from morie.fn.sgiso import sgiso
 
 
 def test_sgiso_smoke():

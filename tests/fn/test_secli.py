@@ -1,7 +1,7 @@
 """Test secli."""
 import numpy as np
 import pytest
-from moirais.fn.secli import secli
+from morie.fn.secli import secli
 
 
 def test_secli_basic():

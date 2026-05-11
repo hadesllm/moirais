@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxfcm -- Fuzzy C-means spatial"""
+"""Tests for morie.fn.zxfcm -- Fuzzy C-means spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxfcm import fuzzy_cmeans_sp
+from morie.fn.zxfcm import fuzzy_cmeans_sp
 
 
 class TestFuzzyCmeansSp:

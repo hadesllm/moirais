@@ -1,7 +1,7 @@
 """Tests for gpregF.gp_regression."""
 import numpy as np
 import pytest
-from moirais.fn.gpregF import gp_regression
+from morie.fn.gpregF import gp_regression
 
 
 def test_gpregF_basic():

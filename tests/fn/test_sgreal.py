@@ -1,7 +1,7 @@
 """Tests for sgreal."""
 import numpy as np
 import pytest
-from moirais.fn.sgreal import sgreal
+from morie.fn.sgreal import sgreal
 
 
 def test_sgreal_basic():
@@ -27,5 +27,5 @@ def test_sgreal_no_data():
 
 
 def test_sgreal_alias():
-    from moirais.fn.sgreal import sgreal
+    from morie.fn.sgreal import sgreal
     assert sgreal is sgreal

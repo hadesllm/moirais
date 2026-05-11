@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rnbm — negative binomial random sample."""
+"""Tests for morie.fn.rnbm — negative binomial random sample."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rnbm import rnbm
+from morie.fn.rnbm import rnbm
 
 
 class TestRnbm:

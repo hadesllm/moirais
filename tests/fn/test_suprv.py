@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.suprv -- substance use prevalence."""
+"""Tests for morie.fn.suprv -- substance use prevalence."""
 
 import pytest
-from moirais.fn.suprv import substance_prevalence
+from morie.fn.suprv import substance_prevalence
 
 
 class TestSubstancePrevalence:

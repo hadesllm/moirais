@@ -1,7 +1,7 @@
 """Tests for tmlcde.tmle_controlled_direct."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcde import tmle_controlled_direct
+from morie.fn.tmlcde import tmle_controlled_direct
 
 
 def test_tmlcde_basic():

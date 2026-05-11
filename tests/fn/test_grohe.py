@@ -1,7 +1,7 @@
 """Tests for grohe.geron_one_hot_encoding."""
 import numpy as np
 import pytest
-from moirais.fn.grohe import geron_one_hot_encoding
+from morie.fn.grohe import geron_one_hot_encoding
 
 
 def test_grohe_basic():

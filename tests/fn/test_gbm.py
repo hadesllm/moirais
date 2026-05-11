@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gbm -- Gradient boosting machine."""
+"""Tests for morie.fn.gbm -- Gradient boosting machine."""
 
 import numpy as np
 import pytest
-from moirais.fn.gbm import gradient_boosting
+from morie.fn.gbm import gradient_boosting
 
 
 class TestGradientBoosting:

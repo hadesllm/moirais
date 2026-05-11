@@ -1,7 +1,7 @@
 """Tests for coxmgr.cox_martingale_residuals."""
 import numpy as np
 import pytest
-from moirais.fn.coxmgr import cox_martingale_residuals
+from morie.fn.coxmgr import cox_martingale_residuals
 
 
 def test_coxmgr_basic():

@@ -1,7 +1,7 @@
 """Tests for km038.kamath_ch2_gpt2_task_conditioning."""
 import numpy as np
 import pytest
-from moirais.fn.km038 import kamath_ch2_gpt2_task_conditioning
+from morie.fn.km038 import kamath_ch2_gpt2_task_conditioning
 
 
 def test_km038_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzllqr.horowitz_local_linear_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.hrzllqr import horowitz_local_linear_quantile
+from morie.fn.hrzllqr import horowitz_local_linear_quantile
 
 
 def test_hrzllqr_basic():

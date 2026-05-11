@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.isof -- Isolation Forest."""
+"""Tests for morie.fn.isof -- Isolation Forest."""
 
 import numpy as np
-from moirais.fn.isof import isolation_forest, isof
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.isof import isolation_forest, isof
+from morie.fn._containers import DescriptiveResult
 
 
 class TestIsof:

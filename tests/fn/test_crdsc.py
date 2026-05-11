@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.crdsc -- scale coordinates."""
+"""Tests for morie.fn.crdsc -- scale coordinates."""
 
 import numpy as np
-from moirais.fn.crdsc import scale_coordinates, crdsc
+from morie.fn.crdsc import scale_coordinates, crdsc
 
 
 def test_crdsc_smoke():

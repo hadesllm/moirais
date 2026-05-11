@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lftrt -- Left truncation adjustment."""
+"""Tests for morie.fn.lftrt -- Left truncation adjustment."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lftrt import lftrt
+from morie.fn.lftrt import lftrt
 
 
 @pytest.fixture()
@@ -40,5 +40,5 @@ def test_survival_bounded(trunc_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.lftrt import cheatsheet
+    from morie.fn.lftrt import cheatsheet
     assert "truncat" in cheatsheet().lower()

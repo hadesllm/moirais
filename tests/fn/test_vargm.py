@@ -1,7 +1,7 @@
 """Tests for vargm.empirical_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.vargm import empirical_variogram
+from morie.fn.vargm import empirical_variogram
 
 
 def test_vargm_basic():

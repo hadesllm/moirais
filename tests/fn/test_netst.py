@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netst — Node strength centrality."""
+"""Tests for morie.fn.netst — Node strength centrality."""
 
 import numpy as np
 import pytest
-from moirais.fn.netst import network_strength
+from morie.fn.netst import network_strength
 
 
 class TestNetworkStrength:

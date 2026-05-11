@@ -1,7 +1,7 @@
 """Tests for pmfsc.pmf_potential."""
 import numpy as np
 import pytest
-from moirais.fn.pmfsc import pmf_potential
+from morie.fn.pmfsc import pmf_potential
 
 
 def test_pmfsc_basic():

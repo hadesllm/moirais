@@ -1,7 +1,7 @@
 """Tests for prehay.preacher_hayes_indirect."""
 import numpy as np
 import pytest
-from moirais.fn.prehay import preacher_hayes_indirect
+from morie.fn.prehay import preacher_hayes_indirect
 
 
 def test_prehay_basic():

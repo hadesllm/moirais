@@ -1,7 +1,7 @@
 """Tests for efrnt.efron_tie_correction."""
 import numpy as np
 import pytest
-from moirais.fn.efrnt import efron_tie_correction
+from morie.fn.efrnt import efron_tie_correction
 
 
 def test_efrnt_basic():

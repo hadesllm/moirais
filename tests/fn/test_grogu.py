@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.grogu -- Grouped summary statistics."""
+"""Tests for morie.fn.grogu -- Grouped summary statistics."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.grogu import grouped_stats, grogu
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.grogu import grouped_stats, grogu
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGrogu:

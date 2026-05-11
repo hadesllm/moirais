@@ -1,7 +1,7 @@
 """Tests for the_r_series_dick_j_brus_spatial_sampling_with_r6e9.the_r_series_dick_j_brus_spatial_sampling_with_r_chapter_6_equation_9."""
 import numpy as np
 import pytest
-from moirais.fn.the_r_series_dick_j_brus_spatial_sampling_with_r6e9 import the_r_series_dick_j_brus_spatial_sampling_with_r_chapter_6_equation_9
+from morie.fn.the_r_series_dick_j_brus_spatial_sampling_with_r6e9 import the_r_series_dick_j_brus_spatial_sampling_with_r_chapter_6_equation_9
 
 
 def test_the_r_series_dick_j_brus_spatial_sampling_with_r6e9_basic():

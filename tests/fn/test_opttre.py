@@ -1,7 +1,7 @@
 """Tests for opttre.optimal_tree_regime."""
 import numpy as np
 import pytest
-from moirais.fn.opttre import optimal_tree_regime
+from morie.fn.opttre import optimal_tree_regime
 
 
 def test_opttre_basic():

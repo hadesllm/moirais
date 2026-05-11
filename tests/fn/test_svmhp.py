@@ -1,7 +1,7 @@
 """Tests for svmhp.svm_hyperplane."""
 import numpy as np
 import pytest
-from moirais.fn.svmhp import svm_hyperplane
+from morie.fn.svmhp import svm_hyperplane
 
 
 def test_svmhp_basic():

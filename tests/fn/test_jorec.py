@@ -1,7 +1,7 @@
 """Tests for jorec.joseph_recursive_multistep."""
 import numpy as np
 import pytest
-from moirais.fn.jorec import joseph_recursive_multistep
+from morie.fn.jorec import joseph_recursive_multistep
 
 
 def test_jorec_basic():

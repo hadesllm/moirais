@@ -1,7 +1,7 @@
 """Tests for avalon.avalon_fingerprint."""
 import numpy as np
 import pytest
-from moirais.fn.avalon import avalon_fingerprint
+from morie.fn.avalon import avalon_fingerprint
 
 
 def test_avalon_basic():

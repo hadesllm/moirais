@@ -1,7 +1,7 @@
 """Tests for rgperio.rangayyan_periodogram."""
 import numpy as np
 import pytest
-from moirais.fn.rgperio import rangayyan_periodogram
+from morie.fn.rgperio import rangayyan_periodogram
 
 
 def test_rgperio_basic():

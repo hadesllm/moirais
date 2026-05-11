@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.inpnt -- Interior point method."""
+"""Tests for morie.fn.inpnt -- Interior point method."""
 
 import numpy as np
-from moirais.fn.inpnt import interior_point_lp, inpnt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.inpnt import interior_point_lp, inpnt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestInpnt:

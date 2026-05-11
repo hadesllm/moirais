@@ -1,7 +1,7 @@
 """Tests for rng004.rangayyan_ch3_skewness."""
 import numpy as np
 import pytest
-from moirais.fn.rng004 import rangayyan_ch3_skewness
+from morie.fn.rng004 import rangayyan_ch3_skewness
 
 
 def test_rng004_basic():

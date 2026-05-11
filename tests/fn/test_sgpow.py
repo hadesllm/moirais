@@ -1,6 +1,6 @@
 """Tests for power variogram."""
 import numpy as np
-from moirais.fn.sgpow import sgpow
+from morie.fn.sgpow import sgpow
 
 
 def test_sgpow_smoke():

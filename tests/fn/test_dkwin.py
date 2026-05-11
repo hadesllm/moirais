@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dkwin -- DKW inequality test."""
+"""Tests for morie.fn.dkwin -- DKW inequality test."""
 
 import numpy as np
 import pytest
-from moirais.fn.dkwin import dkw_test
+from morie.fn.dkwin import dkw_test
 
 
 class TestDKW:

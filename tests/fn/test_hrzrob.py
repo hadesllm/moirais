@@ -1,7 +1,7 @@
 """Tests for hrzrob.horowitz_rate_beta_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.hrzrob import horowitz_rate_beta_estimation
+from morie.fn.hrzrob import horowitz_rate_beta_estimation
 
 
 def test_hrzrob_basic():

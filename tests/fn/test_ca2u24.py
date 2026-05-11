@@ -1,7 +1,7 @@
 """Tests for ca2u24.ca_chapter_2_unnumbered_24."""
 import numpy as np
 import pytest
-from moirais.fn.ca2u24 import ca_chapter_2_unnumbered_24
+from morie.fn.ca2u24 import ca_chapter_2_unnumbered_24
 
 
 def test_ca2u24_basic():

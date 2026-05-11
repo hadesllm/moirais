@@ -1,7 +1,7 @@
 """Test aflch."""
 import numpy as np
 import pytest
-from moirais.fn.aflch import aflch
+from morie.fn.aflch import aflch
 
 
 def test_aflch_basic():

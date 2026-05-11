@@ -1,7 +1,7 @@
 """Tests for svycox.survey_cox."""
 import numpy as np
 import pytest
-from moirais.fn.svycox import survey_cox
+from morie.fn.svycox import survey_cox
 
 
 def test_svycox_basic():

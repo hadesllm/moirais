@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dcnvl — Deconvolution density estimation."""
+"""Tests for morie.fn.dcnvl — Deconvolution density estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dcnvl import dcnvl
+from morie.fn.dcnvl import dcnvl
 
 
 @pytest.fixture()

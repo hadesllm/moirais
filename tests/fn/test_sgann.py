@@ -1,7 +1,7 @@
 """Tests for sgann."""
 import numpy as np
 import pytest
-from moirais.fn.sgann import sgann
+from morie.fn.sgann import sgann
 
 
 def test_sgann_basic():
@@ -27,5 +27,5 @@ def test_sgann_no_data():
 
 
 def test_sgann_alias():
-    from moirais.fn.sgann import sgann
+    from morie.fn.sgann import sgann
     assert sgann is sgann

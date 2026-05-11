@@ -1,7 +1,7 @@
 """Tests for sschin.chained_imputation."""
 import numpy as np
 import pytest
-from moirais.fn.sschin import chained_imputation
+from morie.fn.sschin import chained_imputation
 
 
 def test_sschin_basic():

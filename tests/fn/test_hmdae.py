@@ -1,7 +1,7 @@
 """Tests for hmdae.geron_denoising_autoencoder."""
 import numpy as np
 import pytest
-from moirais.fn.hmdae import geron_denoising_autoencoder
+from morie.fn.hmdae import geron_denoising_autoencoder
 
 
 def test_hmdae_basic():

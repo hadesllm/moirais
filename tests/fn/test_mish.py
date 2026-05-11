@@ -1,6 +1,6 @@
 """Test Mish activation."""
 import numpy as np
-from moirais.fn.mish import mish
+from morie.fn.mish import mish
 
 
 def test_mish_forward():

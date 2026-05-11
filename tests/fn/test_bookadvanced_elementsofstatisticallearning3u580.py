@@ -1,7 +1,7 @@
 """Tests for bookadvanced_elementsofstatisticallearning3u580.bookadvanced_elementsofstatisticallearning_chapter_3_unnumbered_580."""
 import numpy as np
 import pytest
-from moirais.fn.bookadvanced_elementsofstatisticallearning3u580 import bookadvanced_elementsofstatisticallearning_chapter_3_unnumbered_580
+from morie.fn.bookadvanced_elementsofstatisticallearning3u580 import bookadvanced_elementsofstatisticallearning_chapter_3_unnumbered_580
 
 
 def test_bookadvanced_elementsofstatisticallearning3u580_basic():

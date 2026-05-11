@@ -1,7 +1,7 @@
 """Tests for dppca.dp_pca."""
 import numpy as np
 import pytest
-from moirais.fn.dppca import dp_pca
+from morie.fn.dppca import dp_pca
 
 
 def test_dppca_basic():

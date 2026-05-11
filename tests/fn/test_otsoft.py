@@ -1,7 +1,7 @@
 """Tests for otsoft.ot_softassignment."""
 import numpy as np
 import pytest
-from moirais.fn.otsoft import ot_softassignment
+from morie.fn.otsoft import ot_softassignment
 
 
 def test_otsoft_basic():

@@ -1,7 +1,7 @@
 """Tests for information_theory_mackay6u50.information_theory_mackay_chapter_6_unnumbered_50."""
 import numpy as np
 import pytest
-from moirais.fn.information_theory_mackay6u50 import information_theory_mackay_chapter_6_unnumbered_50
+from morie.fn.information_theory_mackay6u50 import information_theory_mackay_chapter_6_unnumbered_50
 
 
 def test_information_theory_mackay6u50_basic():

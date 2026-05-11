@@ -1,7 +1,7 @@
 """Tests for farsig.farrington_signal."""
 import numpy as np
 import pytest
-from moirais.fn.farsig import farrington_signal
+from morie.fn.farsig import farrington_signal
 
 
 def test_farsig_basic():

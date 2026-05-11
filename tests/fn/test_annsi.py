@@ -1,7 +1,7 @@
 """Test annsi."""
 import numpy as np
 import pytest
-from moirais.fn.annsi import annsi
+from morie.fn.annsi import annsi
 
 
 def test_annsi_basic():

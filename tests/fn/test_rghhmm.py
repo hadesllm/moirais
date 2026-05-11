@@ -1,7 +1,7 @@
 """Tests for rghhmm.rangayyan_hodgkin_huxley."""
 import numpy as np
 import pytest
-from moirais.fn.rghhmm import rangayyan_hodgkin_huxley
+from morie.fn.rghhmm import rangayyan_hodgkin_huxley
 
 
 def test_rghhmm_basic():

@@ -1,7 +1,7 @@
 """Tests for hmbf16.geron_bf16."""
 import numpy as np
 import pytest
-from moirais.fn.hmbf16 import geron_bf16
+from morie.fn.hmbf16 import geron_bf16
 
 
 def test_hmbf16_basic():

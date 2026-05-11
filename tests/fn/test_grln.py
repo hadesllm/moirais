@@ -1,7 +1,7 @@
 """Tests for grln.geron_layer_normalization."""
 import numpy as np
 import pytest
-from moirais.fn.grln import geron_layer_normalization
+from morie.fn.grln import geron_layer_normalization
 
 
 def test_grln_basic():

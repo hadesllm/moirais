@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vknwn — Known-groups validity."""
+"""Tests for morie.fn.vknwn — Known-groups validity."""
 
 import numpy as np
 import pytest
-from moirais.fn.vknwn import validity_known_groups
+from morie.fn.vknwn import validity_known_groups
 
 
 class TestValidityKnownGroups:

@@ -1,7 +1,7 @@
 """Tests for gb_rng.gibbons_range_dist."""
 import numpy as np
 import pytest
-from moirais.fn.gb_rng import gibbons_range_dist
+from morie.fn.gb_rng import gibbons_range_dist
 
 
 def test_gb_rng_basic():

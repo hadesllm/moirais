@@ -1,6 +1,6 @@
 """Tests for wvdec.py - Wavelet decompose."""
 import numpy as np
-from moirais.fn.wvdec import wavelet_decompose, wvdec
+from morie.fn.wvdec import wavelet_decompose, wvdec
 
 
 def test_decompose_returns_result():

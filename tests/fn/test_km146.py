@@ -1,7 +1,7 @@
 """Tests for km146.kamath_ch9_output_projector_mse."""
 import numpy as np
 import pytest
-from moirais.fn.km146 import kamath_ch9_output_projector_mse
+from morie.fn.km146 import kamath_ch9_output_projector_mse
 
 
 def test_km146_basic():

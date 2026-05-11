@@ -1,7 +1,7 @@
 """Tests for clcrp.clustered_crp."""
 import numpy as np
 import pytest
-from moirais.fn.clcrp import clustered_crp
+from morie.fn.clcrp import clustered_crp
 
 
 def test_clcrp_basic():

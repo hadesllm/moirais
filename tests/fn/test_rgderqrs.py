@@ -1,7 +1,7 @@
 """Tests for rgderqrs.rangayyan_deriv_qrs."""
 import numpy as np
 import pytest
-from moirais.fn.rgderqrs import rangayyan_deriv_qrs
+from morie.fn.rgderqrs import rangayyan_deriv_qrs
 
 
 def test_rgderqrs_basic():

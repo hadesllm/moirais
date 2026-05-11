@@ -1,7 +1,7 @@
 """Tests for kmhyb.kamath_hybrid_retrieval_fusion."""
 import numpy as np
 import pytest
-from moirais.fn.kmhyb import kamath_hybrid_retrieval_fusion
+from morie.fn.kmhyb import kamath_hybrid_retrieval_fusion
 
 
 def test_kmhyb_basic():

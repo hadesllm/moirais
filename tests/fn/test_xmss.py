@@ -1,6 +1,6 @@
 """Test xmss_sign."""
-from moirais.fn._containers import CryptoResult
-from moirais.fn.xmss import xmss, xmss_sign
+from morie.fn._containers import CryptoResult
+from morie.fn.xmss import xmss, xmss_sign
 
 
 class TestXmssSign:

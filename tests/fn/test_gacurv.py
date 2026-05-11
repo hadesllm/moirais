@@ -1,7 +1,7 @@
 """Test gacurv."""
 import numpy as np
 import pytest
-from moirais.fn.gacurv import gacurv
+from morie.fn.gacurv import gacurv
 
 
 def test_gacurv_basic():

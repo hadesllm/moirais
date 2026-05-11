@@ -1,7 +1,7 @@
 """Tests for arprd.py - AR model prediction."""
 import numpy as np
 import pytest
-from moirais.fn.arprd import ar_predict_fn, arprd
+from morie.fn.arprd import ar_predict_fn, arprd
 
 
 def test_ar_predict_returns_descriptive_result():

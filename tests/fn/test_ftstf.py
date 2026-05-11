@@ -1,7 +1,7 @@
 """Tests for f_test_features."""
 import numpy as np
 import pytest
-from moirais.fn.ftstf import f_test_features, ftstf
+from morie.fn.ftstf import f_test_features, ftstf
 
 
 def test_basic():

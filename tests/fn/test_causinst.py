@@ -1,7 +1,7 @@
 """Tests for causinst.causal_iv_instrumental_dag."""
 import numpy as np
 import pytest
-from moirais.fn.causinst import causal_iv_instrumental_dag
+from morie.fn.causinst import causal_iv_instrumental_dag
 
 
 def test_causinst_basic():

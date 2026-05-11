@@ -1,7 +1,7 @@
 """Tests for hellie.hellinger_distance."""
 import numpy as np
 import pytest
-from moirais.fn.hellie import hellinger_distance
+from morie.fn.hellie import hellinger_distance
 
 
 def test_hellie_basic():

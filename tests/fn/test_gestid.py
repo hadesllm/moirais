@@ -1,7 +1,7 @@
 """Tests for gestid.g_estimation_snm."""
 import numpy as np
 import pytest
-from moirais.fn.gestid import g_estimation_snm
+from morie.fn.gestid import g_estimation_snm
 
 
 def test_gestid_basic():

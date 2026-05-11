@@ -1,7 +1,7 @@
 """Tests for acfds.py - ACF distance between signals."""
 import numpy as np
 import pytest
-from moirais.fn.acfds import acf_dist, acfds
+from morie.fn.acfds import acf_dist, acfds
 
 
 def test_acf_dist_returns_descriptive_result():

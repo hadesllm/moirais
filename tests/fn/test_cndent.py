@@ -1,7 +1,7 @@
 """Tests for cndent.conditional_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.cndent import conditional_entropy
+from morie.fn.cndent import conditional_entropy
 
 
 def test_cndent_basic():

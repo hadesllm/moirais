@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxlam -- Lambert conformal conic projection"""
+"""Tests for morie.fn.zxlam -- Lambert conformal conic projection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxlam import lambert_proj
+from morie.fn.zxlam import lambert_proj
 
 
 class TestLambertProj:

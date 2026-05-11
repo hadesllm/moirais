@@ -1,7 +1,7 @@
 """Tests for gearyl.local_gearys_c."""
 import numpy as np
 import pytest
-from moirais.fn.gearyl import local_gearys_c
+from morie.fn.gearyl import local_gearys_c
 
 
 def test_gearyl_basic():

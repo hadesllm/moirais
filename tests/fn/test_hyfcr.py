@@ -1,7 +1,7 @@
 """Test hyfcr."""
 import numpy as np
 import pytest
-from moirais.fn.hyfcr import hyfcr
+from morie.fn.hyfcr import hyfcr
 
 
 def test_hyfcr_basic():

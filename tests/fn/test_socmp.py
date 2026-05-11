@@ -1,7 +1,7 @@
 """Test socmp."""
 import numpy as np
 import pytest
-from moirais.fn.socmp import socmp
+from morie.fn.socmp import socmp
 
 
 def test_socmp_basic():

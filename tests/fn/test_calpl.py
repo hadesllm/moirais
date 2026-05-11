@@ -1,7 +1,7 @@
 """Test calibration_plot (calpl)."""
 import numpy as np
-from moirais.fn.calpl import calibration_plot, calpl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.calpl import calibration_plot, calpl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCalpl:

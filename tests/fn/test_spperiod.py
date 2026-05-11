@@ -1,7 +1,7 @@
 """Tests for spperiod.schabenberger_periodogram."""
 import numpy as np
 import pytest
-from moirais.fn.spperiod import schabenberger_periodogram
+from morie.fn.spperiod import schabenberger_periodogram
 
 
 def test_spperiod_basic():

@@ -1,7 +1,7 @@
 """Tests for gb321c.gibbons_marginal_r1."""
 import numpy as np
 import pytest
-from moirais.fn.gb321c import gibbons_marginal_r1
+from morie.fn.gb321c import gibbons_marginal_r1
 
 
 def test_gb321c_basic():

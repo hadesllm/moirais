@@ -1,7 +1,7 @@
 """Tests for kmmsc.kamath_moverscore."""
 import numpy as np
 import pytest
-from moirais.fn.kmmsc import kamath_moverscore
+from morie.fn.kmmsc import kamath_moverscore
 
 
 def test_kmmsc_basic():

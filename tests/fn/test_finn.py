@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.finn -- Correlation pattern finder."""
+"""Tests for morie.fn.finn -- Correlation pattern finder."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.finn import find_patterns, finn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.finn import find_patterns, finn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFinn:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.htmap — heatmap issue weights."""
+"""Tests for morie.fn.htmap — heatmap issue weights."""
 import numpy as np
-from moirais.fn.htmap import htmap
+from morie.fn.htmap import htmap
 
 
 def test_htmap_smoke():
@@ -12,7 +12,7 @@ def test_htmap_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.htmap import cheatsheet
+    from morie.fn.htmap import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

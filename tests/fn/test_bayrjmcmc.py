@@ -1,7 +1,7 @@
 """Tests for bayrjmcmc.reversible_jump_mcmc."""
 import numpy as np
 import pytest
-from moirais.fn.bayrjmcmc import reversible_jump_mcmc
+from morie.fn.bayrjmcmc import reversible_jump_mcmc
 
 
 def test_bayrjmcmc_basic():

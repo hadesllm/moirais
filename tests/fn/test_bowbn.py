@@ -1,7 +1,7 @@
 """Tests for bowbn.bow_ban_theorem."""
 import numpy as np
 import pytest
-from moirais.fn.bowbn import bow_ban_theorem
+from morie.fn.bowbn import bow_ban_theorem
 
 
 def test_bowbn_basic():

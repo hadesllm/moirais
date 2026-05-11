@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bdiag — MCMC diagnostics."""
+"""Tests for morie.fn.bdiag — MCMC diagnostics."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bdiag import mcmc_diagnostics
+from morie.fn.bdiag import mcmc_diagnostics
 
 
 class TestMCMCDiagnostics:

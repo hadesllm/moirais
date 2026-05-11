@@ -1,7 +1,7 @@
 """Test vmfit."""
 import numpy as np
 import pytest
-from moirais.fn.vmfit import vmfit
+from morie.fn.vmfit import vmfit
 
 
 def test_vmfit_basic():

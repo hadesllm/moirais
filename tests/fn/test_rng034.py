@@ -1,7 +1,7 @@
 """Tests for rng034.rangayyan_ch3_discrete_delta."""
 import numpy as np
 import pytest
-from moirais.fn.rng034 import rangayyan_ch3_discrete_delta
+from morie.fn.rng034 import rangayyan_ch3_discrete_delta
 
 
 def test_rng034_basic():

@@ -1,7 +1,7 @@
 """Tests for msm333.mvsml_elements_lin_reg_eq_3_1."""
 import numpy as np
 import pytest
-from moirais.fn.msm333 import mvsml_elements_lin_reg_eq_3_1
+from morie.fn.msm333 import mvsml_elements_lin_reg_eq_3_1
 
 
 def test_msm333_basic():

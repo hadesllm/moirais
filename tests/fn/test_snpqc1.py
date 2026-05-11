@@ -1,7 +1,7 @@
 """Tests for snpqc1.snp_qc."""
 import numpy as np
 import pytest
-from moirais.fn.snpqc1 import snp_qc
+from morie.fn.snpqc1 import snp_qc
 
 
 def test_snpqc1_basic():

@@ -1,7 +1,7 @@
 """Tests for sgtcom2.sgt_communicability_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.sgtcom2 import sgt_communicability_matrix
+from morie.fn.sgtcom2 import sgt_communicability_matrix
 
 
 def test_sgtcom2_basic():

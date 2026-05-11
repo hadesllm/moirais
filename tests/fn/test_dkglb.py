@@ -1,7 +1,7 @@
 """Test dkglb."""
 import numpy as np
 import pytest
-from moirais.fn.dkglb import dkglb
+from morie.fn.dkglb import dkglb
 
 
 def test_dkglb_basic():

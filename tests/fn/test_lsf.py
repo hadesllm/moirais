@@ -1,6 +1,6 @@
 """Tests for lsf.py - Line Spectral Frequencies."""
 import numpy as np
-from moirais.fn.lsf import line_spectral_freq_fn, lsf
+from morie.fn.lsf import line_spectral_freq_fn, lsf
 
 
 def test_lsf_returns_result():

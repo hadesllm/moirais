@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.recid -- Recidivism rate."""
+"""Tests for morie.fn.recid -- Recidivism rate."""
 
 import pytest
-from moirais.fn.recid import recidivism_rate, recid
-from moirais.fn._containers import CrimeResult
+from morie.fn.recid import recidivism_rate, recid
+from morie.fn._containers import CrimeResult
 
 
 class TestRecid:

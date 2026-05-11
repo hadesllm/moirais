@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmoc2 -- Optimal Classification 2D"""
+"""Tests for morie.fn.nmoc2 -- Optimal Classification 2D"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmoc2 import oc_2d
+from morie.fn.nmoc2 import oc_2d
 
 
 class TestOc2d:

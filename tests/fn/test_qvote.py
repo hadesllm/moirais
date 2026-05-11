@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.qvote — Quadratic voting."""
+"""Tests for morie.fn.qvote — Quadratic voting."""
 import numpy as np
-from moirais.fn.qvote import qvote
+from morie.fn.qvote import qvote
 
 
 def test_qvote_basic():

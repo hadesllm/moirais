@@ -1,7 +1,7 @@
 """Tests for itr2dd.itr_optimal_did."""
 import numpy as np
 import pytest
-from moirais.fn.itr2dd import itr_optimal_did
+from morie.fn.itr2dd import itr_optimal_did
 
 
 def test_itr2dd_basic():

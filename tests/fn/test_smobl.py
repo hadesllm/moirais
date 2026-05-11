@@ -1,7 +1,7 @@
 """Test mobility (smobl)."""
 import numpy as np
-from moirais.fn.smobl import mobility, smobl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.smobl import mobility, smobl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMobility:

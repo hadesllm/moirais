@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.lotka."""
+"""Tests for morie.fn.lotka."""
 import numpy as np
-from moirais.fn.lotka import lotka
+from morie.fn.lotka import lotka
 
 
 def test_lotka_smoke():
@@ -12,7 +12,7 @@ def test_lotka_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.lotka import cheatsheet
+    from morie.fn.lotka import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

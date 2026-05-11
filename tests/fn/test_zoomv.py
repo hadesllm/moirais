@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zoomv -- Velocity profile."""
+"""Tests for morie.fn.zoomv -- Velocity profile."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.zoomv import velocity_profile, zoomv
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.zoomv import velocity_profile, zoomv
+from morie.fn._containers import DescriptiveResult
 
 
 class TestZoomv:

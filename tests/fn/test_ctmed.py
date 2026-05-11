@@ -1,7 +1,7 @@
 """Tests for ctmed.control_median_test."""
 import numpy as np
 import pytest
-from moirais.fn.ctmed import control_median_test
+from morie.fn.ctmed import control_median_test
 
 
 def test_ctmed_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsgrz -- Zonal grid statistics"""
+"""Tests for morie.fn.zsgrz -- Zonal grid statistics"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsgrz import grid_zonal
+from morie.fn.zsgrz import grid_zonal
 
 
 class TestGridZonal:

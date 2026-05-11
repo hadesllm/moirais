@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ssie — Sample size for equivalence."""
+"""Tests for morie.fn.ssie — Sample size for equivalence."""
 
 import pytest
 
-from moirais.fn.ssie import sample_size_equivalence
+from morie.fn.ssie import sample_size_equivalence
 
 
 class TestSampleSizeEquivalence:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.negct — Negative control test."""
+"""Tests for morie.fn.negct — Negative control test."""
 
 import pytest
 
-from moirais.fn.negct import negative_control
+from morie.fn.negct import negative_control
 
 
 class TestNegativeControl:

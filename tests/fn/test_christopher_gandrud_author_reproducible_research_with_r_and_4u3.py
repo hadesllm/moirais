@@ -1,7 +1,7 @@
 """Life is really simple, but we insist on making it complicated. — Confucius"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u3 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_3
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u3 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_3
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u3_basic():

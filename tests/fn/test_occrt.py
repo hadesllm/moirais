@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.occrt -- occupational injury rate."""
+"""Tests for morie.fn.occrt -- occupational injury rate."""
 
 import pytest
-from moirais.fn.occrt import occupational_injury_rate
+from morie.fn.occrt import occupational_injury_rate
 
 
 class TestOccupationalInjuryRate:

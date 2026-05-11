@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.anova -- One-way ANOVA F-test."""
+"""Tests for morie.fn.anova -- One-way ANOVA F-test."""
 
 import numpy as np
 import pytest
-from moirais.fn.anova import anova_one_way
+from morie.fn.anova import anova_one_way
 
 
 class TestAnovaOneWay:

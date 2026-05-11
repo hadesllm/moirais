@@ -1,7 +1,7 @@
 """Tests for causipsw0.causal_iptw_atoweights."""
 import numpy as np
 import pytest
-from moirais.fn.causipsw0 import causal_iptw_atoweights
+from morie.fn.causipsw0 import causal_iptw_atoweights
 
 
 def test_causipsw0_basic():

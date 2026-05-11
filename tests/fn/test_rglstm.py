@@ -1,7 +1,7 @@
 """Tests for rglstm.rangayyan_lstm_signal."""
 import numpy as np
 import pytest
-from moirais.fn.rglstm import rangayyan_lstm_signal
+from morie.fn.rglstm import rangayyan_lstm_signal
 
 
 def test_rglstm_basic():

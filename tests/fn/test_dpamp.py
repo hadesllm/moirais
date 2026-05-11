@@ -1,7 +1,7 @@
 """Tests for dpamp.privacy_amplification."""
 import numpy as np
 import pytest
-from moirais.fn.dpamp import privacy_amplification
+from morie.fn.dpamp import privacy_amplification
 
 
 def test_dpamp_basic():

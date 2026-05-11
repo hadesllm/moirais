@@ -1,7 +1,7 @@
 """Tests for bndsbs.bound_subset_inference."""
 import numpy as np
 import pytest
-from moirais.fn.bndsbs import bound_subset_inference
+from morie.fn.bndsbs import bound_subset_inference
 
 
 def test_bndsbs_basic():

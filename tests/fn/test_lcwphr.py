@@ -1,7 +1,7 @@
 """Tests for lcwphr.latent_class_weighted."""
 import numpy as np
 import pytest
-from moirais.fn.lcwphr import latent_class_weighted
+from morie.fn.lcwphr import latent_class_weighted
 
 
 def test_lcwphr_basic():

@@ -1,7 +1,7 @@
 """Tests for theils.theil_sen."""
 import numpy as np
 import pytest
-from moirais.fn.theils import theil_sen
+from morie.fn.theils import theil_sen
 
 
 def test_theils_basic():

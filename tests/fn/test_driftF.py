@@ -1,7 +1,7 @@
 """Tests for driftF.drift_forecast."""
 import numpy as np
 import pytest
-from moirais.fn.driftF import drift_forecast
+from morie.fn.driftF import drift_forecast
 
 
 def test_driftF_basic():

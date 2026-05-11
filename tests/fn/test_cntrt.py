@@ -1,7 +1,7 @@
 """Test centroidal_time."""
 import numpy as np
-from moirais.fn.cntrt import centroidal_time, cntrt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cntrt import centroidal_time, cntrt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCentroidalTime:

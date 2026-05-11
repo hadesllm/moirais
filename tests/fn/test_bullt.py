@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bullt -- time stretching."""
+"""Tests for morie.fn.bullt -- time stretching."""
 
 import numpy as np
-from moirais.fn.bullt import time_stretch, bullt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bullt import time_stretch, bullt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBullt:

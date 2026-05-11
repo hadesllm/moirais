@@ -1,7 +1,7 @@
 """Test afrotf."""
 import numpy as np
 import pytest
-from moirais.fn.afrotf import afrotf
+from morie.fn.afrotf import afrotf
 
 
 def test_afrotf_basic():

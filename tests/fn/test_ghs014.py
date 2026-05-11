@@ -1,7 +1,7 @@
 """Tests for ghs014.ghosal_ch3_dirichlet_posterior_mean."""
 import numpy as np
 import pytest
-from moirais.fn.ghs014 import ghosal_ch3_dirichlet_posterior_mean
+from morie.fn.ghs014 import ghosal_ch3_dirichlet_posterior_mean
 
 
 def test_ghs014_basic():

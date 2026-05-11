@@ -1,7 +1,7 @@
 """Tests for hmmcp.geron_model_context_protocol."""
 import numpy as np
 import pytest
-from moirais.fn.hmmcp import geron_model_context_protocol
+from morie.fn.hmmcp import geron_model_context_protocol
 
 
 def test_hmmcp_basic():

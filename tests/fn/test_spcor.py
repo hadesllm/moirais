@@ -1,6 +1,6 @@
 """Tests for semipartial_corr."""
 import numpy as np, pytest
-from moirais.fn.spcor import semipartial_corr
+from morie.fn.spcor import semipartial_corr
 
 class TestSpcor:
     def test_basic(self):

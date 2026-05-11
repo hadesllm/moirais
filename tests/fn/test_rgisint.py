@@ -1,7 +1,7 @@
 """Tests for rgisint.rangayyan_isometric_contraction."""
 import numpy as np
 import pytest
-from moirais.fn.rgisint import rangayyan_isometric_contraction
+from morie.fn.rgisint import rangayyan_isometric_contraction
 
 
 def test_rgisint_basic():

@@ -1,6 +1,6 @@
 """Tests for shannon_entropy."""
 import numpy as np
-from moirais.fn.shent import shannon_entropy, shent
+from morie.fn.shent import shannon_entropy, shent
 
 
 def test_uniform():

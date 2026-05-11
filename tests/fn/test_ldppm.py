@@ -1,7 +1,7 @@
 """Tests for ldppm.local_dp_planar_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.ldppm import local_dp_planar_mechanism
+from morie.fn.ldppm import local_dp_planar_mechanism
 
 
 def test_ldppm_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.brscr -- Brier score for survival."""
+"""Tests for morie.fn.brscr -- Brier score for survival."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.brscr import brscr
+from morie.fn.brscr import brscr
 
 
 @pytest.fixture()
@@ -39,5 +39,5 @@ def test_perfect_prediction():
 
 
 def test_cheatsheet():
-    from moirais.fn.brscr import cheatsheet
+    from morie.fn.brscr import cheatsheet
     assert "brier" in cheatsheet().lower()

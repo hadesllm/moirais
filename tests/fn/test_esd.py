@@ -1,7 +1,7 @@
 """Tests for esd.generalized_esd."""
 import numpy as np
 import pytest
-from moirais.fn.esd import generalized_esd
+from morie.fn.esd import generalized_esd
 
 
 def test_esd_basic():

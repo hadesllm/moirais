@@ -1,7 +1,7 @@
 """Tests for rng193.rangayyan_ch4_heart_rate_from_count."""
 import numpy as np
 import pytest
-from moirais.fn.rng193 import rangayyan_ch4_heart_rate_from_count
+from morie.fn.rng193 import rangayyan_ch4_heart_rate_from_count
 
 
 def test_rng193_basic():

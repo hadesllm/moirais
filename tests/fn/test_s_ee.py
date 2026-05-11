@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.s_ee -- EE subscale reliability."""
+"""Tests for morie.fn.s_ee -- EE subscale reliability."""
 
 import numpy as np
-from moirais.fn.s_ee import subscale_ee
+from morie.fn.s_ee import subscale_ee
 
 
 class TestSubscaleEE:

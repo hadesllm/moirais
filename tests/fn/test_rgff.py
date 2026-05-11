@@ -1,7 +1,7 @@
 """Tests for rgff.rangayyan_form_factor."""
 import numpy as np
 import pytest
-from moirais.fn.rgff import rangayyan_form_factor
+from morie.fn.rgff import rangayyan_form_factor
 
 
 def test_rgff_basic():

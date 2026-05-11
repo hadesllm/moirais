@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sntpl — sentence by plea."""
+"""Tests for morie.fn.sntpl — sentence by plea."""
 
 import pytest
 import pandas as pd
-from moirais.fn.sntpl import sentence_plea
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sntpl import sentence_plea
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSentencePlea:

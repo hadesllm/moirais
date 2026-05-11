@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svnrm -- Normal kernel vote probability"""
+"""Tests for morie.fn.svnrm -- Normal kernel vote probability"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svnrm import normal_vote
+from morie.fn.svnrm import normal_vote
 
 
 class TestNormalVote:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.asr -- age-standardized rate."""
+"""Tests for morie.fn.asr -- age-standardized rate."""
 
 import numpy as np
 import pytest
-from moirais.fn.asr import age_standardized_rate
+from morie.fn.asr import age_standardized_rate
 
 
 class TestASR:

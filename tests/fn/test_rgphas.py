@@ -1,7 +1,7 @@
 """Tests for rgphas.rangayyan_phase_response."""
 import numpy as np
 import pytest
-from moirais.fn.rgphas import rangayyan_phase_response
+from morie.fn.rgphas import rangayyan_phase_response
 
 
 def test_rgphas_basic():

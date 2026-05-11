@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mtoint — intersection."""
+"""Tests for morie.fn.mtoint — intersection."""
 
 import pytest
-from moirais.fn.mtoint import mto_intersection
-from moirais.fn._containers import CrimeResult
+from morie.fn.mtoint import mto_intersection
+from morie.fn._containers import CrimeResult
 
 
 class TestIntersection:

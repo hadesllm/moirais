@@ -1,7 +1,7 @@
 """Tests for xlrnir.x_learner."""
 import numpy as np
 import pytest
-from moirais.fn.xlrnir import x_learner
+from morie.fn.xlrnir import x_learner
 
 
 def test_xlrnir_basic():

@@ -1,6 +1,6 @@
 """Test mldsa_keygen."""
-from moirais.fn._containers import CryptoResult
-from moirais.fn.mldsa import mldsa, mldsa_keygen
+from morie.fn._containers import CryptoResult
+from morie.fn.mldsa import mldsa, mldsa_keygen
 
 
 class TestMldsaKeygen:

@@ -1,7 +1,7 @@
 """Tests for aikarp.aic_ar_order."""
 import numpy as np
 import pytest
-from moirais.fn.aikarp import aic_ar_order
+from morie.fn.aikarp import aic_ar_order
 
 
 def test_aikarp_basic():

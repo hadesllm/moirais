@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.kron — Kronecker product."""
+"""Tests for morie.fn.kron — Kronecker product."""
 import numpy as np
-from moirais.fn.kron import kronecker_product
+from morie.fn.kron import kronecker_product
 
 
 class TestKronecker:

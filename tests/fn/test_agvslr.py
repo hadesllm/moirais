@@ -1,7 +1,7 @@
 """Tests for agvslr.alphazero_value_lr."""
 import numpy as np
 import pytest
-from moirais.fn.agvslr import alphazero_value_lr
+from morie.fn.agvslr import alphazero_value_lr
 
 
 def test_agvslr_basic():

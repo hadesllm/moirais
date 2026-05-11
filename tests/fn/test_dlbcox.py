@@ -1,7 +1,7 @@
 """Tests for dlbcox.dfbeta_cox."""
 import numpy as np
 import pytest
-from moirais.fn.dlbcox import dfbeta_cox
+from morie.fn.dlbcox import dfbeta_cox
 
 
 def test_dlbcox_basic():

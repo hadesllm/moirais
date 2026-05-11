@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.manov -- MANOVA."""
+"""Tests for morie.fn.manov -- MANOVA."""
 
 import numpy as np
-from moirais.fn.manov import manova, manov
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.manov import manova, manov
+from morie.fn._containers import DescriptiveResult
 
 
 class TestManova:

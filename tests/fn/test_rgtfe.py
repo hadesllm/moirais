@@ -1,7 +1,7 @@
 """Tests for rgtfe.rangayyan_transfer_func_est."""
 import numpy as np
 import pytest
-from moirais.fn.rgtfe import rangayyan_transfer_func_est
+from morie.fn.rgtfe import rangayyan_transfer_func_est
 
 
 def test_rgtfe_basic():

@@ -1,7 +1,7 @@
 """Tests for effsiz.effective_sample_size."""
 import numpy as np
 import pytest
-from moirais.fn.effsiz import effective_sample_size
+from morie.fn.effsiz import effective_sample_size
 
 
 def test_effsiz_basic():

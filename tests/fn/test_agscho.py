@@ -1,7 +1,7 @@
 """Tests for agscho.alphazero_search_horizon."""
 import numpy as np
 import pytest
-from moirais.fn.agscho import alphazero_search_horizon
+from morie.fn.agscho import alphazero_search_horizon
 
 
 def test_agscho_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bonec -- Weibull failure analysis."""
+"""Tests for morie.fn.bonec -- Weibull failure analysis."""
 
 import numpy as np
-from moirais.fn.bonec import weibull_analysis, bonec
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bonec import weibull_analysis, bonec
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBonec:

@@ -1,7 +1,7 @@
 """Tests for dbscl.dbscan_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.dbscl import dbscan_clustering
+from morie.fn.dbscl import dbscan_clustering
 
 
 def test_dbscl_basic():

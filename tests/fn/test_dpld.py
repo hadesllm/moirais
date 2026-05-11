@@ -1,7 +1,7 @@
 """Tests for dpld.l_diversity."""
 import numpy as np
 import pytest
-from moirais.fn.dpld import l_diversity
+from morie.fn.dpld import l_diversity
 
 
 def test_dpld_basic():

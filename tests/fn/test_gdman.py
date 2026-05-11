@@ -1,6 +1,6 @@
 """Tests for goodman_kruskal_gamma."""
 import numpy as np, pytest
-from moirais.fn.gdman import goodman_kruskal_gamma
+from morie.fn.gdman import goodman_kruskal_gamma
 
 
 class TestGoodmanKruskalGamma:

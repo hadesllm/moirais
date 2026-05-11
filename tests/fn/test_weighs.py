@@ -1,7 +1,7 @@
 """Test weighs."""
 import numpy as np
 import pytest
-from moirais.fn.weighs import weighs
+from morie.fn.weighs import weighs
 
 
 def test_weighs_basic():

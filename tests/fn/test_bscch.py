@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bscch — BSC capacity."""
+"""Tests for morie.fn.bscch — BSC capacity."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bscch import bscch
+from morie.fn.bscch import bscch
 
 
 class TestBscch:

@@ -1,7 +1,7 @@
 """Test mtpdr."""
 import numpy as np
 import pytest
-from moirais.fn.mtpdr import mtpdr
+from morie.fn.mtpdr import mtpdr
 
 
 def test_mtpdr_basic():

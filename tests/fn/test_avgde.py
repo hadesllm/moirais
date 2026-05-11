@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.avgde — Average derivative estimation."""
+"""Tests for morie.fn.avgde — Average derivative estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.avgde import avgde
+from morie.fn.avgde import avgde
 
 
 @pytest.fixture()

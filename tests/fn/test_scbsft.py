@@ -1,7 +1,7 @@
 """Tests for scbsft.sc_with_baseline_shift."""
 import numpy as np
 import pytest
-from moirais.fn.scbsft import sc_with_baseline_shift
+from morie.fn.scbsft import sc_with_baseline_shift
 
 
 def test_scbsft_basic():

@@ -1,7 +1,7 @@
 """Tests for gb571z.gibbons_wsrt_ties_zeros."""
 import numpy as np
 import pytest
-from moirais.fn.gb571z import gibbons_wsrt_ties_zeros
+from morie.fn.gb571z import gibbons_wsrt_ties_zeros
 
 
 def test_gb571z_basic():

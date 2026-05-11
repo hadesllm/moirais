@@ -1,7 +1,7 @@
 """Tests for hmmds.geron_mds."""
 import numpy as np
 import pytest
-from moirais.fn.hmmds import geron_mds
+from morie.fn.hmmds import geron_mds
 
 
 def test_hmmds_basic():

@@ -1,7 +1,7 @@
 """Tests for grmse.geron_linreg_mse_cost."""
 import numpy as np
 import pytest
-from moirais.fn.grmse import geron_linreg_mse_cost
+from morie.fn.grmse import geron_linreg_mse_cost
 
 
 def test_grmse_basic():

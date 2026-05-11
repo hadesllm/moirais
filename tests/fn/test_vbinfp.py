@@ -1,7 +1,7 @@
 """Tests for vbinfp.variational_bound."""
 import numpy as np
 import pytest
-from moirais.fn.vbinfp import variational_bound
+from morie.fn.vbinfp import variational_bound
 
 
 def test_vbinfp_basic():

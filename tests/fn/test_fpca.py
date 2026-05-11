@@ -1,7 +1,7 @@
 """Tests for fpca.functional_pca."""
 import numpy as np
 import pytest
-from moirais.fn.fpca import functional_pca
+from morie.fn.fpca import functional_pca
 
 
 def test_fpca_basic():

@@ -1,7 +1,7 @@
 """Tests for rng045.rangayyan_ch3_lsi_parallel_branch_2."""
 import numpy as np
 import pytest
-from moirais.fn.rng045 import rangayyan_ch3_lsi_parallel_branch_2
+from morie.fn.rng045 import rangayyan_ch3_lsi_parallel_branch_2
 
 
 def test_rng045_basic():

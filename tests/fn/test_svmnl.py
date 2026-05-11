@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svmnl -- Multinomial spatial choice model"""
+"""Tests for morie.fn.svmnl -- Multinomial spatial choice model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svmnl import multinomial_spatial
+from morie.fn.svmnl import multinomial_spatial
 
 
 class TestMultinomialSpatial:

@@ -1,7 +1,7 @@
 """Tests for hmvgr.geron_vanishing_gradients."""
 import numpy as np
 import pytest
-from moirais.fn.hmvgr import geron_vanishing_gradients
+from morie.fn.hmvgr import geron_vanishing_gradients
 
 
 def test_hmvgr_basic():

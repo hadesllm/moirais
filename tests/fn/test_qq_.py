@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.qq_ — QQ plot data."""
+"""Tests for morie.fn.qq_ — QQ plot data."""
 import numpy as np
 import pytest
-from moirais.fn.qq_ import qq_plot_data
+from morie.fn.qq_ import qq_plot_data
 
 
 class TestQQPlot:

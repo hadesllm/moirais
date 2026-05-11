@@ -1,7 +1,7 @@
 """Tests for rdfzzy.fuzzy_rdd."""
 import numpy as np
 import pytest
-from moirais.fn.rdfzzy import fuzzy_rdd
+from morie.fn.rdfzzy import fuzzy_rdd
 
 
 def test_rdfzzy_basic():

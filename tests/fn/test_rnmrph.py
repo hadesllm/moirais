@@ -1,7 +1,7 @@
 """Tests for rnmrph."""
 import numpy as np
 import pytest
-from moirais.fn.rnmrph import rnmrph
+from morie.fn.rnmrph import rnmrph
 
 
 def test_rnmrph_basic():
@@ -27,5 +27,5 @@ def test_rnmrph_no_data():
 
 
 def test_rnmrph_alias():
-    from moirais.fn.rnmrph import rnmrph
+    from morie.fn.rnmrph import rnmrph
     assert rnmrph is rnmrph

@@ -1,7 +1,7 @@
 """Tests for ksr069.kosorok_ch3_cox_likelihood_breslow."""
 import numpy as np
 import pytest
-from moirais.fn.ksr069 import kosorok_ch3_cox_likelihood_breslow
+from morie.fn.ksr069 import kosorok_ch3_cox_likelihood_breslow
 
 
 def test_ksr069_basic():

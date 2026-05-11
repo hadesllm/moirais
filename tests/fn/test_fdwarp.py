@@ -1,7 +1,7 @@
 """Tests for fdwarp.functional_warping."""
 import numpy as np
 import pytest
-from moirais.fn.fdwarp import functional_warping
+from morie.fn.fdwarp import functional_warping
 
 
 def test_fdwarp_basic():

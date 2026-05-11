@@ -1,7 +1,7 @@
 """Tests for gb32asy.gibbons_runs_asymp_normal."""
 import numpy as np
 import pytest
-from moirais.fn.gb32asy import gibbons_runs_asymp_normal
+from morie.fn.gb32asy import gibbons_runs_asymp_normal
 
 
 def test_gb32asy_basic():

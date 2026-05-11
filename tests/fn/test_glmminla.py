@@ -1,7 +1,7 @@
 """Tests for glmminla."""
 import numpy as np
 import pytest
-from moirais.fn.glmminla import glmminla
+from morie.fn.glmminla import glmminla
 
 
 def test_glmminla_basic():
@@ -27,5 +27,5 @@ def test_glmminla_no_data():
 
 
 def test_glmminla_alias():
-    from moirais.fn.glmminla import glmminla
+    from morie.fn.glmminla import glmminla
     assert glmminla is glmminla

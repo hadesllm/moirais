@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mdang."""
+"""Tests for morie.fn.mdang."""
 
 import numpy as np
 import pytest
-from moirais.fn.mdang import mdang
+from morie.fn.mdang import mdang
 
 
 class TestMdang:

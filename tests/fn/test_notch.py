@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.notch import notch_filter_signal, notch
-from moirais.fn._containers import SignalResult
+from morie.fn.notch import notch_filter_signal, notch
+from morie.fn._containers import SignalResult
 
 
 class TestNotchFilter:

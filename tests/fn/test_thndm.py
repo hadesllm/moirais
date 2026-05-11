@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.thndm -- Mach shock wave."""
+"""Tests for morie.fn.thndm -- Mach shock wave."""
 
-from moirais.fn.thndm import mach_shock, thndm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.thndm import mach_shock, thndm
+from morie.fn._containers import DescriptiveResult
 import pytest
 
 

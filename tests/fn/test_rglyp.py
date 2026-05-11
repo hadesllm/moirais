@@ -1,7 +1,7 @@
 """Tests for rglyp.rangayyan_lyapunov."""
 import numpy as np
 import pytest
-from moirais.fn.rglyp import rangayyan_lyapunov
+from morie.fn.rglyp import rangayyan_lyapunov
 
 
 def test_rglyp_basic():

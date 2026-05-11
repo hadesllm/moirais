@@ -1,6 +1,6 @@
 """Tests for catsc.py - CAT score."""
 import numpy as np
-from moirais.fn.catsc import cat_score_fn, catsc
+from morie.fn.catsc import cat_score_fn, catsc
 
 
 def test_catsc_returns_result():

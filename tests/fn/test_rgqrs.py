@@ -1,7 +1,7 @@
 """Tests for rgqrs.rangayyan_qrs_detect."""
 import numpy as np
 import pytest
-from moirais.fn.rgqrs import rangayyan_qrs_detect
+from morie.fn.rgqrs import rangayyan_qrs_detect
 
 
 def test_rgqrs_basic():

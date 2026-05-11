@@ -1,7 +1,7 @@
 """Tests for grlogg.geron_logistic_cost_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.grlogg import geron_logistic_cost_gradient
+from morie.fn.grlogg import geron_logistic_cost_gradient
 
 
 def test_grlogg_basic():

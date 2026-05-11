@@ -1,6 +1,6 @@
 """Tests for vcltr.py - Vocal tract tube model."""
 import numpy as np
-from moirais.fn.vcltr import vocal_tract_model_fn, vcltr
+from morie.fn.vcltr import vocal_tract_model_fn, vcltr
 
 
 def test_vcltr_returns_signal_result():

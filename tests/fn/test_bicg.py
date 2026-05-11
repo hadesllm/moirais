@@ -1,7 +1,7 @@
 """Tests for bicg.bayesian_information_criterion."""
 import numpy as np
 import pytest
-from moirais.fn.bicg import bayesian_information_criterion
+from morie.fn.bicg import bayesian_information_criterion
 
 
 def test_bicg_basic():

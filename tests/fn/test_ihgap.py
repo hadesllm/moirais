@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ihgap -- health gap."""
+"""Tests for morie.fn.ihgap -- health gap."""
 
 import pytest
-from moirais.fn.ihgap import health_gap
+from morie.fn.ihgap import health_gap
 
 
 class TestHealthGap:

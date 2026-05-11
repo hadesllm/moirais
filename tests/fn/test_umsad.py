@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.umsad."""
+"""Tests for morie.fn.umsad."""
 
 import numpy as np
 import pytest
-from moirais.fn.umsad import umsad
+from morie.fn.umsad import umsad
 
 
 class TestUmsad:

@@ -1,7 +1,7 @@
 """Tests for wvrec.py - Wavelet reconstruct."""
 import numpy as np
-from moirais.fn.wvdec import wavelet_decompose
-from moirais.fn.wvrec import wavelet_reconstruct, wvrec
+from morie.fn.wvdec import wavelet_decompose
+from morie.fn.wvrec import wavelet_reconstruct, wvrec
 
 
 def test_reconstruct_returns_result():

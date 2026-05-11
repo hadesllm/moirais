@@ -1,7 +1,7 @@
 """Tests for irtmh1.dif_mantel_haenszel."""
 import numpy as np
 import pytest
-from moirais.fn.irtmh1 import dif_mantel_haenszel
+from morie.fn.irtmh1 import dif_mantel_haenszel
 
 
 def test_irtmh1_basic():

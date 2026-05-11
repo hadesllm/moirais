@@ -1,7 +1,7 @@
 """Tests for rng228.rangayyan_ch4_matched_filter_impulse_response_eeg."""
 import numpy as np
 import pytest
-from moirais.fn.rng228 import rangayyan_ch4_matched_filter_impulse_response_eeg
+from morie.fn.rng228 import rangayyan_ch4_matched_filter_impulse_response_eeg
 
 
 def test_rng228_basic():

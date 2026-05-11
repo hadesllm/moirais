@@ -1,6 +1,6 @@
 """Tests for stflt.py - Subband filter."""
 import numpy as np
-from moirais.fn.stflt import subband_filter, stflt
+from morie.fn.stflt import subband_filter, stflt
 
 
 def test_subband_returns_result():

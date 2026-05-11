@@ -1,7 +1,7 @@
 """Tests for rfvon."""
 import numpy as np
 import pytest
-from moirais.fn.rfvon import rfvon
+from morie.fn.rfvon import rfvon
 
 
 def test_rfvon_basic():
@@ -27,5 +27,5 @@ def test_rfvon_no_data():
 
 
 def test_rfvon_alias():
-    from moirais.fn.rfvon import rfvon
+    from morie.fn.rfvon import rfvon
     assert rfvon is rfvon

@@ -1,7 +1,7 @@
 """Tests for hmrmsp.geron_rmsprop."""
 import numpy as np
 import pytest
-from moirais.fn.hmrmsp import geron_rmsprop
+from morie.fn.hmrmsp import geron_rmsprop
 
 
 def test_hmrmsp_basic():

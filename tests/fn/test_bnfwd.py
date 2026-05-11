@@ -1,7 +1,7 @@
 """Tests for bnfwd.batch_norm_forward."""
 import numpy as np
 import pytest
-from moirais.fn.bnfwd import batch_norm_forward
+from morie.fn.bnfwd import batch_norm_forward
 
 
 def test_bnfwd_basic():

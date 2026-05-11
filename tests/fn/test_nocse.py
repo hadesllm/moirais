@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.nocse -- NOMINATE confidence intervals."""
+"""Tests for morie.fn.nocse -- NOMINATE confidence intervals."""
 import numpy as np
-from moirais.fn.nocse import nominate_confidence_interval, nocse
+from morie.fn.nocse import nominate_confidence_interval, nocse
 
 
 def test_alias():

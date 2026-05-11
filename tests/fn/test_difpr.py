@@ -1,7 +1,7 @@
 """Tests for difpr -- DIF purification."""
 import numpy as np
-from moirais.fn.difpr import dif_purification
-from moirais.fn._containers import DIFResult
+from morie.fn.difpr import dif_purification
+from morie.fn._containers import DIFResult
 
 
 class TestDifPurification:

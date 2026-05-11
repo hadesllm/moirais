@@ -1,7 +1,7 @@
 """Test wqwqi."""
 import numpy as np
 import pytest
-from moirais.fn.wqwqi import wqwqi
+from morie.fn.wqwqi import wqwqi
 
 
 def test_wqwqi_basic():

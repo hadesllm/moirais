@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zslu -- LU decomposition simulation"""
+"""Tests for morie.fn.zslu -- LU decomposition simulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zslu import lu_sim
+from morie.fn.zslu import lu_sim
 
 
 class TestLuSim:

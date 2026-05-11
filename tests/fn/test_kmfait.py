@@ -1,7 +1,7 @@
 """Tests for kmfait.kamath_ragas_faithfulness."""
 import numpy as np
 import pytest
-from moirais.fn.kmfait import kamath_ragas_faithfulness
+from morie.fn.kmfait import kamath_ragas_faithfulness
 
 
 def test_kmfait_basic():

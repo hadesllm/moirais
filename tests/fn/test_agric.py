@@ -1,7 +1,7 @@
 """Test agric."""
 import numpy as np
 import pytest
-from moirais.fn.agric import agric
+from morie.fn.agric import agric
 
 
 def test_agric_basic():

@@ -1,7 +1,7 @@
 """Test foptch."""
 import numpy as np
 import pytest
-from moirais.fn.foptch import foptch
+from morie.fn.foptch import foptch
 
 
 def test_foptch_basic():

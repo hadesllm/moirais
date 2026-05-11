@@ -1,7 +1,7 @@
 """Tests for agbtnm.alphazero_batch_norm."""
 import numpy as np
 import pytest
-from moirais.fn.agbtnm import alphazero_batch_norm
+from morie.fn.agbtnm import alphazero_batch_norm
 
 
 def test_agbtnm_basic():

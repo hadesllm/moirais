@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cskrn — cosine kernel."""
+"""Tests for morie.fn.cskrn — cosine kernel."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cskrn import cskrn
+from morie.fn.cskrn import cskrn
 
 
 class TestCskrn:

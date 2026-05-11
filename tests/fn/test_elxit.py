@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.elxit."""
+"""Tests for morie.fn.elxit."""
 
 import numpy as np
 import pytest
-from moirais.fn.elxit import elxit
+from morie.fn.elxit import elxit
 
 
 class TestElxit:

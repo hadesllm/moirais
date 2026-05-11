@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.exchw — exchangeable bootstrap weights."""
+"""Tests for morie.fn.exchw — exchangeable bootstrap weights."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.exchw import exchw
+from morie.fn.exchw import exchw
 
 
 def test_dirichlet_shape():

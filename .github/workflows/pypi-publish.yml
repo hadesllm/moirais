@@ -1,11 +1,11 @@
 name: Publish to PyPI
 
-# Publishes the moirais Python package to PyPI on every tag of the
+# Publishes the morie Python package to PyPI on every tag of the
 # form v*.*.* (e.g., v0.1.1, v0.2.0). Uses Trusted Publisher OIDC —
 # no API token in GitHub secrets. The PyPI side has a Trusted
 # Publisher configured at:
-#   https://pypi.org/manage/project/moirais/settings/publishing/
-# with: Owner=hadesllm Repository=moirais Workflow=pypi-publish.yml
+#   https://pypi.org/manage/project/morie/settings/publishing/
+# with: Owner=hadesllm Repository=morie Workflow=pypi-publish.yml
 # Environment=pypi.
 
 on:
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/project/moirais/
+      url: https://pypi.org/project/morie/
     permissions:
       id-token: write
     steps:

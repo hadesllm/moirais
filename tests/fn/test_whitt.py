@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.whitt — White's test."""
+"""Tests for morie.fn.whitt — White's test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.whitt import white_test
+from morie.fn.whitt import white_test
 
 
 def test_white_detects_heteroskedasticity():

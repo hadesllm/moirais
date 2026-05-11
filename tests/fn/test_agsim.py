@@ -1,7 +1,7 @@
 """Test agsim."""
 import numpy as np
 import pytest
-from moirais.fn.agsim import agsim
+from morie.fn.agsim import agsim
 
 
 def test_agsim_basic():

@@ -1,7 +1,7 @@
 """Test tssag."""
 import numpy as np
 import pytest
-from moirais.fn.tssag import tssag
+from morie.fn.tssag import tssag
 
 
 def test_tssag_basic():

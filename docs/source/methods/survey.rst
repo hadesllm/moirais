@@ -1,7 +1,7 @@
 Survey-Weighted Statistics
 ===========================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
 CPADS is a complex survey with design weights (``wtpumf``). All prevalence,
 mean, and proportion estimates must account for survey design to produce
@@ -35,7 +35,7 @@ For a binary outcome (prevalence):
 Linearization variance
 ----------------------
 
-MOIRAIS uses the Taylor linearization (delta method) approach for variance
+MORIE uses the Taylor linearization (delta method) approach for variance
 estimation via the R ``survey`` package.
 
 R usage

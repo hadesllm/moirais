@@ -1,7 +1,7 @@
 """Tests for rgpros.rangayyan_prosthetic_valve."""
 import numpy as np
 import pytest
-from moirais.fn.rgpros import rangayyan_prosthetic_valve
+from morie.fn.rgpros import rangayyan_prosthetic_valve
 
 
 def test_rgpros_basic():

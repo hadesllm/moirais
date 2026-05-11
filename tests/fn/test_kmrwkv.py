@@ -1,7 +1,7 @@
 """Tests for kmrwkv.kamath_rwkv_time_mix."""
 import numpy as np
 import pytest
-from moirais.fn.kmrwkv import kamath_rwkv_time_mix
+from morie.fn.kmrwkv import kamath_rwkv_time_mix
 
 
 def test_kmrwkv_basic():

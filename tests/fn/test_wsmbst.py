@@ -1,7 +1,7 @@
 """Tests for wsmbst.wasserman_boosting."""
 import numpy as np
 import pytest
-from moirais.fn.wsmbst import wasserman_boosting
+from morie.fn.wsmbst import wasserman_boosting
 
 
 def test_wsmbst_basic():

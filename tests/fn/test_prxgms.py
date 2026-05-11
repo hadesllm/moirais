@@ -1,7 +1,7 @@
 """Tests for prxgms.proximal_gradient_method."""
 import numpy as np
 import pytest
-from moirais.fn.prxgms import proximal_gradient_method
+from morie.fn.prxgms import proximal_gradient_method
 
 
 def test_prxgms_basic():

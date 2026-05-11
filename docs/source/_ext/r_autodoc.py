@@ -393,14 +393,14 @@ _CATEGORY_RULES: List[Tuple[re.Pattern, str]] = [
     (re.compile(r"^(cohens_d|hedges_g|eta_squared|omega_squared|cramers_v|spearman|kendall|point_biserial)"), "Frequentist Inference"),
     (re.compile(r"^(power_|sample_size_)"), "Frequentist Inference"),
     (re.compile(r"^(simple_random|stratified_sample|cluster_sample|pps_sample|bootstrap|jackknife|effective_sample|design_effect|compute_design|calibration)"), "Sampling Design"),
-    (re.compile(r"^(list_moirais|run_moirais|run_pipeline|canonicalize_cpads|load_cpads)"), "Module Runners"),
+    (re.compile(r"^(list_morie|run_morie|run_pipeline|canonicalize_cpads|load_cpads)"), "Module Runners"),
     (re.compile(r"^(read_outputs|build_outputs|validate_outputs|audit_public|summarize_output)"), "Manifest and Audit"),
     (re.compile(r"^(run_workflow|default_workflow)"), "Workflow"),
     (re.compile(r"^(validate_cpads|cpads_contract)"), "CPADS Data"),
     (re.compile(r"^(generate_synthetic|write_synthetic|default_synthetic)"), "Synthetic Data"),
     (re.compile(r"^run_(propensity_ipw|ebac_selection)"), "IPW Helpers"),
-    (re.compile(r"^(moirais_paths|epiml_paths|find_project)"), "Paths and Project"),
-    (re.compile(r"^(moirais_assistant|build_assistant)"), "Assistant Bridge"),
+    (re.compile(r"^(morie_paths|epiml_paths|find_project)"), "Paths and Project"),
+    (re.compile(r"^(morie_assistant|build_assistant)"), "Assistant Bridge"),
 ]
 
 # Preferred display order for categories.

@@ -1,7 +1,7 @@
 """Tests for speccs.cross_spectrum."""
 import numpy as np
 import pytest
-from moirais.fn.speccs import cross_spectrum
+from morie.fn.speccs import cross_spectrum
 
 
 def test_speccs_basic():

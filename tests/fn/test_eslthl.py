@@ -1,7 +1,7 @@
 """Tests for eslthl.esl_thin_plate_spline."""
 import numpy as np
 import pytest
-from moirais.fn.eslthl import esl_thin_plate_spline
+from morie.fn.eslthl import esl_thin_plate_spline
 
 
 def test_eslthl_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pwr_p -- power for two-proportion z-test."""
+"""Tests for morie.fn.pwr_p -- power for two-proportion z-test."""
 
 import pytest
-from moirais.fn.pwr_p import power_prop_test
+from morie.fn.pwr_p import power_prop_test
 
 
 class TestPowerPropTest:

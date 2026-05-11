@@ -1,7 +1,7 @@
 """Tests for kmrhf.kamath_rlhf_pipeline."""
 import numpy as np
 import pytest
-from moirais.fn.kmrhf import kamath_rlhf_pipeline
+from morie.fn.kmrhf import kamath_rlhf_pipeline
 
 
 def test_kmrhf_basic():

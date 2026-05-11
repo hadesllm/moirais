@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rcpiv."""
+"""Tests for morie.fn.rcpiv."""
 
 import numpy as np
 import pytest
-from moirais.fn.rcpiv import rcpiv
+from morie.fn.rcpiv import rcpiv
 
 
 class TestRcpiv:

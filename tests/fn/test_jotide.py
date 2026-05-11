@@ -1,7 +1,7 @@
 """Tests for jotide.joseph_tide_encoder."""
 import numpy as np
 import pytest
-from moirais.fn.jotide import joseph_tide_encoder
+from morie.fn.jotide import joseph_tide_encoder
 
 
 def test_jotide_basic():

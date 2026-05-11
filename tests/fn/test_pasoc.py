@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pasoc."""
+"""Tests for morie.fn.pasoc."""
 
 import numpy as np
 import pytest
-from moirais.fn.pasoc import pasoc
+from morie.fn.pasoc import pasoc
 
 
 class TestPasoc:

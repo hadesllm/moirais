@@ -1,7 +1,7 @@
 """Test hyprm."""
 import numpy as np
 import pytest
-from moirais.fn.hyprm import hyprm
+from morie.fn.hyprm import hyprm
 
 
 def test_hyprm_basic():

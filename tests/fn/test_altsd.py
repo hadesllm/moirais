@@ -1,7 +1,7 @@
 """Tests for altsd.alammar_tsdae_objective."""
 import numpy as np
 import pytest
-from moirais.fn.altsd import alammar_tsdae_objective
+from morie.fn.altsd import alammar_tsdae_objective
 
 
 def test_altsd_basic():

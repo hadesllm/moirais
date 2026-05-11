@@ -1,7 +1,7 @@
 """Tests for stkdiag."""
 import numpy as np
 import pytest
-from moirais.fn.stkdiag import stkdiag
+from morie.fn.stkdiag import stkdiag
 
 
 def test_stkdiag_basic():
@@ -27,5 +27,5 @@ def test_stkdiag_no_data():
 
 
 def test_stkdiag_alias():
-    from moirais.fn.stkdiag import stkdiag
+    from morie.fn.stkdiag import stkdiag
     assert stkdiag is stkdiag

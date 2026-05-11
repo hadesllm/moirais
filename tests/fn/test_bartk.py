@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bartk — Bartik/shift-share IV."""
+"""Tests for morie.fn.bartk — Bartik/shift-share IV."""
 import numpy as np
 import pytest
-from moirais.fn.bartk import bartk
+from morie.fn.bartk import bartk
 
 
 @pytest.fixture()
@@ -55,5 +55,5 @@ def test_method(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.bartk import cheatsheet
+    from morie.fn.bartk import cheatsheet
     assert len(cheatsheet()) > 0

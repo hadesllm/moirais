@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.plgcv — PLM GCV bandwidth selection."""
+"""Tests for morie.fn.plgcv — PLM GCV bandwidth selection."""
 
 import numpy as np
 import pytest
-from moirais.fn.plgcv import plgcv
+from morie.fn.plgcv import plgcv
 
 
 def test_returns_dict():

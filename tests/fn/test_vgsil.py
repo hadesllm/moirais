@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgsil -- Sill estimation"""
+"""Tests for morie.fn.vgsil -- Sill estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgsil import sill_est
+from morie.fn.vgsil import sill_est
 
 
 class TestSillEst:

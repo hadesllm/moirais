@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bci -- Bayesian credible interval."""
+"""Tests for morie.fn.bci -- Bayesian credible interval."""
 
 import numpy as np
 import pytest
-from moirais.fn.bci import bayesian_credible_interval
+from morie.fn.bci import bayesian_credible_interval
 
 
 class TestBayesianCI:

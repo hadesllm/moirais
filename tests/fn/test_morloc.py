@@ -1,7 +1,7 @@
 """Tests for morloc.local_morans_i."""
 import numpy as np
 import pytest
-from moirais.fn.morloc import local_morans_i
+from morie.fn.morloc import local_morans_i
 
 
 def test_morloc_basic():

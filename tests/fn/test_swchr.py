@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.swchr -- Star Wars character summary."""
+"""Tests for morie.fn.swchr -- Star Wars character summary."""
 
 import pandas as pd
-from moirais.fn.swchr import sw_character_summary, swchr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.swchr import sw_character_summary, swchr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSwchr:

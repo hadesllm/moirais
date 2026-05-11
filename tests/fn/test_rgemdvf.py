@@ -1,7 +1,7 @@
 """Tests for rgemdvf.rangayyan_emd_vf_detect."""
 import numpy as np
 import pytest
-from moirais.fn.rgemdvf import rangayyan_emd_vf_detect
+from morie.fn.rgemdvf import rangayyan_emd_vf_detect
 
 
 def test_rgemdvf_basic():

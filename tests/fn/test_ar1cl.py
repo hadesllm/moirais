@@ -1,7 +1,7 @@
 """Tests for ar1cl.ar1_climate."""
 import numpy as np
 import pytest
-from moirais.fn.ar1cl import ar1_climate
+from morie.fn.ar1cl import ar1_climate
 
 
 def test_ar1cl_basic():

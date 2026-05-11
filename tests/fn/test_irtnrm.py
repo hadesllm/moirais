@@ -1,7 +1,7 @@
 """Tests for irtnrm.nominal_response."""
 import numpy as np
 import pytest
-from moirais.fn.irtnrm import nominal_response
+from morie.fn.irtnrm import nominal_response
 
 
 def test_irtnrm_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.henb -- net monetary benefit."""
+"""Tests for morie.fn.henb -- net monetary benefit."""
 
 import pytest
-from moirais.fn.henb import net_monetary_benefit
+from morie.fn.henb import net_monetary_benefit
 
 
 class TestNMB:

@@ -1,7 +1,7 @@
 """Tests for tmlcen.tmle_censoring."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcen import tmle_censoring
+from morie.fn.tmlcen import tmle_censoring
 
 
 def test_tmlcen_basic():

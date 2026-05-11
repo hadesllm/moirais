@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vda -- Vargha-Delaney A statistic."""
+"""Tests for morie.fn.vda -- Vargha-Delaney A statistic."""
 
 import pytest
-from moirais.fn.vda import vargha_delaney_a
-from moirais.fn._containers import ESRes
+from morie.fn.vda import vargha_delaney_a
+from morie.fn._containers import ESRes
 
 
 class TestVarghaDelaneyA:

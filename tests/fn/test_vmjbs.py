@@ -1,7 +1,7 @@
 """Test vmjbs."""
 import numpy as np
 import pytest
-from moirais.fn.vmjbs import vmjbs
+from morie.fn.vmjbs import vmjbs
 
 
 def test_vmjbs_basic():

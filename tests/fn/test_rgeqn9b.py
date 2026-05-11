@@ -1,7 +1,7 @@
 """Tests for rgeqn9b.rangayyan_ch9_ica_ambiguity."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn9b import rangayyan_ch9_ica_ambiguity
+from morie.fn.rgeqn9b import rangayyan_ch9_ica_ambiguity
 
 
 def test_rgeqn9b_basic():

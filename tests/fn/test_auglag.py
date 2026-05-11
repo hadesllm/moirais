@@ -1,7 +1,7 @@
 """Tests for auglag.augmented_lagrangian."""
 import numpy as np
 import pytest
-from moirais.fn.auglag import augmented_lagrangian
+from morie.fn.auglag import augmented_lagrangian
 
 
 def test_auglag_basic():

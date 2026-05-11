@@ -1,7 +1,7 @@
 """Tests for regest.regression_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.regest import regression_estimator
+from morie.fn.regest import regression_estimator
 
 
 def test_regest_basic():

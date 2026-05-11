@@ -1,7 +1,7 @@
 """Tests for dphis.dp_histogram."""
 import numpy as np
 import pytest
-from moirais.fn.dphis import dp_histogram
+from morie.fn.dphis import dp_histogram
 
 
 def test_dphis_basic():

@@ -1,7 +1,7 @@
 """Tests for statistical_methods_for_spatial_data_analysis6e60.statistical_methods_for_spatial_data_analysis_chapter_6_equation_60."""
 import numpy as np
 import pytest
-from moirais.fn.statistical_methods_for_spatial_data_analysis6e60 import statistical_methods_for_spatial_data_analysis_chapter_6_equation_60
+from morie.fn.statistical_methods_for_spatial_data_analysis6e60 import statistical_methods_for_spatial_data_analysis_chapter_6_equation_60
 
 
 def test_statistical_methods_for_spatial_data_analysis6e60_basic():

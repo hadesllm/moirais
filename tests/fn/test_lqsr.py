@@ -1,7 +1,7 @@
 """Tests for lqsr.l1_regression."""
 import numpy as np
 import pytest
-from moirais.fn.lqsr import l1_regression
+from morie.fn.lqsr import l1_regression
 
 
 def test_lqsr_basic():

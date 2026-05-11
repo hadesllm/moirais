@@ -1,7 +1,7 @@
 """Tests for bndpw.py - band power."""
 import numpy as np
 import pytest
-from moirais.fn.bndpw import band_power_fn, bndpw
+from morie.fn.bndpw import band_power_fn, bndpw
 
 
 def test_band_power_returns_descriptive_result():

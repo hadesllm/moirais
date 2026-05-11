@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.smpsl — Semiparametric sample selection."""
+"""Tests for morie.fn.smpsl — Semiparametric sample selection."""
 
 import numpy as np
 import pytest
-from moirais.fn.smpsl import smpsl
+from morie.fn.smpsl import smpsl
 
 
 def test_returns_dict():

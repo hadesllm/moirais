@@ -1,7 +1,7 @@
 """Tests for perK.periodic_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.perK import periodic_kernel
+from morie.fn.perK import periodic_kernel
 
 
 def test_perK_basic():

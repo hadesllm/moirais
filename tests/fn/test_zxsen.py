@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsen -- Spatial stacking ensemble"""
+"""Tests for morie.fn.zxsen -- Spatial stacking ensemble"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsen import spatial_stacking
+from morie.fn.zxsen import spatial_stacking
 
 
 class TestSpatialStacking:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svvtr -- Vote trading (logrolling) model"""
+"""Tests for morie.fn.svvtr -- Vote trading (logrolling) model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svvtr import vote_trading
+from morie.fn.svvtr import vote_trading
 
 
 class TestVoteTrading:

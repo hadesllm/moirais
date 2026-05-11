@@ -1,7 +1,7 @@
 """Tests for betbnm.beta_binomial."""
 import numpy as np
 import pytest
-from moirais.fn.betbnm import beta_binomial
+from morie.fn.betbnm import beta_binomial
 
 
 def test_betbnm_basic():

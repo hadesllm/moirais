@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgunr -- Universal kriging residual"""
+"""Tests for morie.fn.kgunr -- Universal kriging residual"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgunr import uk_residual
+from morie.fn.kgunr import uk_residual
 
 
 class TestUkResidual:

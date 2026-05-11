@@ -1,7 +1,7 @@
 """Test dkpsm."""
 import numpy as np
 import pytest
-from moirais.fn.dkpsm import dkpsm
+from morie.fn.dkpsm import dkpsm
 
 
 def test_dkpsm_basic():

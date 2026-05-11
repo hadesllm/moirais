@@ -1,6 +1,6 @@
 """Tests for wvmom.py - Wavelet moments."""
 import numpy as np
-from moirais.fn.wvmom import wavelet_moments, wvmom
+from morie.fn.wvmom import wavelet_moments, wvmom
 
 
 def test_moments_returns_result():

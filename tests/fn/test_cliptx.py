@@ -1,7 +1,7 @@
 """Tests for cliptx.clip_image_text."""
 import numpy as np
 import pytest
-from moirais.fn.cliptx import clip_image_text
+from morie.fn.cliptx import clip_image_text
 
 
 def test_cliptx_basic():

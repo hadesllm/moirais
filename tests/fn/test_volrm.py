@@ -1,7 +1,7 @@
 """Tests for volrm.vol_riskmetrics."""
 import numpy as np
 import pytest
-from moirais.fn.volrm import vol_riskmetrics
+from morie.fn.volrm import vol_riskmetrics
 
 
 def test_volrm_basic():

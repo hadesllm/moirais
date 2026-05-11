@@ -1,7 +1,7 @@
 """Tests for eslsis.esl_sis_screening."""
 import numpy as np
 import pytest
-from moirais.fn.eslsis import esl_sis_screening
+from morie.fn.eslsis import esl_sis_screening
 
 
 def test_eslsis_basic():

@@ -1,7 +1,7 @@
 """Tests for hmmbgd.geron_minibatch_gd."""
 import numpy as np
 import pytest
-from moirais.fn.hmmbgd import geron_minibatch_gd
+from morie.fn.hmmbgd import geron_minibatch_gd
 
 
 def test_hmmbgd_basic():

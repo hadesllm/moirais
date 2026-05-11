@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxpos -- Possibilistic spatial clustering"""
+"""Tests for morie.fn.zxpos -- Possibilistic spatial clustering"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxpos import possibilistic_sp
+from morie.fn.zxpos import possibilistic_sp
 
 
 class TestPossibilisticSp:

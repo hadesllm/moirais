@@ -1,7 +1,7 @@
 """Tests for grmpl.geron_max_pooling."""
 import numpy as np
 import pytest
-from moirais.fn.grmpl import geron_max_pooling
+from morie.fn.grmpl import geron_max_pooling
 
 
 def test_grmpl_basic():

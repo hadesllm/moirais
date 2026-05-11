@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ameig — A-M eigensolve."""
+"""Tests for morie.fn.ameig — A-M eigensolve."""
 import numpy as np
-from moirais.fn.ameig import ameig
+from morie.fn.ameig import ameig
 
 
 def test_ameig_smoke():
@@ -12,7 +12,7 @@ def test_ameig_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ameig import cheatsheet
+    from morie.fn.ameig import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

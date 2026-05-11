@@ -1,7 +1,7 @@
 """Tests for gphtr.gp_heteroscedastic."""
 import numpy as np
 import pytest
-from moirais.fn.gphtr import gp_heteroscedastic
+from morie.fn.gphtr import gp_heteroscedastic
 
 
 def test_gphtr_basic():

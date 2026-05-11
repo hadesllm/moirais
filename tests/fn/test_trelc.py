@@ -1,7 +1,7 @@
 """Test trelc."""
 import numpy as np
 import pytest
-from moirais.fn.trelc import trelc
+from morie.fn.trelc import trelc
 
 
 def test_trelc_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwcn -- Weights connectivity check"""
+"""Tests for morie.fn.xrwcn -- Weights connectivity check"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwcn import w_connected
+from morie.fn.xrwcn import w_connected
 
 
 class TestWConnected:

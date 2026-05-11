@@ -1,7 +1,7 @@
 """Tests for crsfit.cross_fit_one_step."""
 import numpy as np
 import pytest
-from moirais.fn.crsfit import cross_fit_one_step
+from morie.fn.crsfit import cross_fit_one_step
 
 
 def test_crsfit_basic():

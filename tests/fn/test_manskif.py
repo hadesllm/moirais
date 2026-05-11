@@ -1,7 +1,7 @@
 """Tests for manskif.manski_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.manskif import manski_bounds
+from morie.fn.manskif import manski_bounds
 
 
 def test_manskif_basic():

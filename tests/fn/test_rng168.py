@@ -1,7 +1,7 @@
 """Tests for rng168.rangayyan_ch3_rls_theta_recursion."""
 import numpy as np
 import pytest
-from moirais.fn.rng168 import rangayyan_ch3_rls_theta_recursion
+from morie.fn.rng168 import rangayyan_ch3_rls_theta_recursion
 
 
 def test_rng168_basic():

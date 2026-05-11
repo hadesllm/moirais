@@ -1,7 +1,7 @@
 """Tests for propMd.proportion_mediated."""
 import numpy as np
 import pytest
-from moirais.fn.propMd import proportion_mediated
+from morie.fn.propMd import proportion_mediated
 
 
 def test_propMd_basic():

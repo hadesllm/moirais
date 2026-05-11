@@ -1,7 +1,7 @@
 """Tests for groverS.grover_search."""
 import numpy as np
 import pytest
-from moirais.fn.groverS import grover_search
+from morie.fn.groverS import grover_search
 
 
 def test_groverS_basic():

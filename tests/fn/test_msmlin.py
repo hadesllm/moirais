@@ -1,7 +1,7 @@
 """Tests for msmlin.msm_linear."""
 import numpy as np
 import pytest
-from moirais.fn.msmlin import msm_linear
+from morie.fn.msmlin import msm_linear
 
 
 def test_msmlin_basic():

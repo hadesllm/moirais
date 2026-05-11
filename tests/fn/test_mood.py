@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mood -- Mood's median test."""
+"""Tests for morie.fn.mood -- Mood's median test."""
 
 import numpy as np
 import pytest
-from moirais.fn.mood import mood_median_test
-from moirais.fn._containers import TestResult
+from morie.fn.mood import mood_median_test
+from morie.fn._containers import TestResult
 
 
 class TestMoodMedian:

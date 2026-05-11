@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.r0 -- basic reproduction number."""
+"""Tests for morie.fn.r0 -- basic reproduction number."""
 
 import pytest
-from moirais.fn.r0 import basic_reproduction_number
+from morie.fn.r0 import basic_reproduction_number
 
 
 class TestR0:

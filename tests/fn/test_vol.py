@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.vol — regional volatility metric."""
+"""Tests for morie.fn.vol — regional volatility metric."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.vol import volat as vol
-from moirais.fn._containers import VolRes
+from morie.fn.vol import volat as vol
+from morie.fn._containers import VolRes
 
 
 @pytest.fixture()

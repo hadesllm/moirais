@@ -1,7 +1,7 @@
 """Tests for gb_cq.gibbons_cramers_contingency."""
 import numpy as np
 import pytest
-from moirais.fn.gb_cq import gibbons_cramers_contingency
+from morie.fn.gb_cq import gibbons_cramers_contingency
 
 
 def test_gb_cq_basic():

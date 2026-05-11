@@ -1,7 +1,7 @@
 """Tests for essbk.effective_sample_size_bulk."""
 import numpy as np
 import pytest
-from moirais.fn.essbk import effective_sample_size_bulk
+from morie.fn.essbk import effective_sample_size_bulk
 
 
 def test_essbk_basic():

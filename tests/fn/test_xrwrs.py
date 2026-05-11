@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwrs -- Row-standardize weights"""
+"""Tests for morie.fn.xrwrs -- Row-standardize weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwrs import w_row_std
+from morie.fn.xrwrs import w_row_std
 
 
 class TestWRowStd:

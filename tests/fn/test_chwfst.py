@@ -1,7 +1,7 @@
 """Tests for chwfst.chow_forecast_test."""
 import numpy as np
 import pytest
-from moirais.fn.chwfst import chow_forecast_test
+from morie.fn.chwfst import chow_forecast_test
 
 
 def test_chwfst_basic():

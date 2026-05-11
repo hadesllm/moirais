@@ -1,6 +1,6 @@
 import pandas as pd
 
-from moirais.investigation import (
+from morie.investigation import (
     compare_nested_logistic_models,
     run_treatment_effects_analysis,
     run_weighted_logistic_analysis,

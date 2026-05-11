@@ -1,7 +1,7 @@
 """Tests for hmhev.geron_heaviside."""
 import numpy as np
 import pytest
-from moirais.fn.hmhev import geron_heaviside
+from morie.fn.hmhev import geron_heaviside
 
 
 def test_hmhev_basic():

@@ -1,7 +1,7 @@
 """Tests for grcvs.geron_cross_validation_score."""
 import numpy as np
 import pytest
-from moirais.fn.grcvs import geron_cross_validation_score
+from morie.fn.grcvs import geron_cross_validation_score
 
 
 def test_grcvs_basic():

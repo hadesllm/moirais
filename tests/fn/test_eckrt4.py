@@ -1,7 +1,7 @@
 """Test eckrt4."""
 import numpy as np
 import pytest
-from moirais.fn.eckrt4 import eckrt4
+from morie.fn.eckrt4 import eckrt4
 
 
 def test_eckrt4_basic():

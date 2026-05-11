@@ -1,7 +1,7 @@
 """Tests for glmmcov."""
 import numpy as np
 import pytest
-from moirais.fn.glmmcov import glmmcov
+from morie.fn.glmmcov import glmmcov
 
 
 def test_glmmcov_basic():
@@ -27,5 +27,5 @@ def test_glmmcov_no_data():
 
 
 def test_glmmcov_alias():
-    from moirais.fn.glmmcov import glmmcov
+    from morie.fn.glmmcov import glmmcov
     assert glmmcov is glmmcov

@@ -1,7 +1,7 @@
 """Test vorper."""
 import numpy as np
 import pytest
-from moirais.fn.vorper import vorper
+from morie.fn.vorper import vorper
 
 
 def test_vorper_basic():

@@ -1,7 +1,7 @@
 """Tests for grscm.geron_score_matching_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grscm import geron_score_matching_loss
+from morie.fn.grscm import geron_score_matching_loss
 
 
 def test_grscm_basic():

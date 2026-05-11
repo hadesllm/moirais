@@ -1,7 +1,7 @@
 """Tests for wsmhmm.wasserman_hmm_forward."""
 import numpy as np
 import pytest
-from moirais.fn.wsmhmm import wasserman_hmm_forward
+from morie.fn.wsmhmm import wasserman_hmm_forward
 
 
 def test_wsmhmm_basic():

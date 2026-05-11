@@ -1,7 +1,7 @@
 """Tests for sdxlcd.sdxl_unet."""
 import numpy as np
 import pytest
-from moirais.fn.sdxlcd import sdxl_unet
+from morie.fn.sdxlcd import sdxl_unet
 
 
 def test_sdxlcd_basic():

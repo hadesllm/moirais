@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rcsim."""
+"""Tests for morie.fn.rcsim."""
 
 import numpy as np
 import pytest
-from moirais.fn.rcsim import rcsim
+from morie.fn.rcsim import rcsim
 
 
 class TestRcsim:

@@ -1,7 +1,7 @@
 """Tests for medmsm.msm_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.medmsm import msm_mediation
+from morie.fn.medmsm import msm_mediation
 
 
 def test_medmsm_basic():

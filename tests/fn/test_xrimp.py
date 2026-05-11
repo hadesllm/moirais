@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrimp -- SAR direct/indirect/total impacts"""
+"""Tests for morie.fn.xrimp -- SAR direct/indirect/total impacts"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrimp import sar_impacts
+from morie.fn.xrimp import sar_impacts
 
 
 class TestSarImpacts:

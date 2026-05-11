@@ -1,7 +1,7 @@
 """Tests for entest.entropy_knn."""
 import numpy as np
 import pytest
-from moirais.fn.entest import entropy_knn
+from morie.fn.entest import entropy_knn
 
 
 def test_entest_basic():

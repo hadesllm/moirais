@@ -1,7 +1,7 @@
 """Tests for mlfit.ml_loglik."""
 import numpy as np
 import pytest
-from moirais.fn.mlfit import ml_loglik
+from morie.fn.mlfit import ml_loglik
 
 
 def test_mlfit_basic():

@@ -1,7 +1,7 @@
 """Tests for hmlcos.geron_cosine_annealing."""
 import numpy as np
 import pytest
-from moirais.fn.hmlcos import geron_cosine_annealing
+from morie.fn.hmlcos import geron_cosine_annealing
 
 
 def test_hmlcos_basic():

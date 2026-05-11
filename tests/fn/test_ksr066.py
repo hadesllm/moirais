@@ -1,7 +1,7 @@
 """Tests for ksr066.kosorok_ch3_z_estimator_no_bias."""
 import numpy as np
 import pytest
-from moirais.fn.ksr066 import kosorok_ch3_z_estimator_no_bias
+from morie.fn.ksr066 import kosorok_ch3_z_estimator_no_bias
 
 
 def test_ksr066_basic():

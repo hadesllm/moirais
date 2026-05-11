@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pchzr -- Piecewise constant hazard rate."""
+"""Tests for morie.fn.pchzr -- Piecewise constant hazard rate."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pchzr import pchzr
+from morie.fn.pchzr import pchzr
 
 
 @pytest.fixture()
@@ -38,5 +38,5 @@ def test_events_sum(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.pchzr import cheatsheet
+    from morie.fn.pchzr import cheatsheet
     assert "piecewise" in cheatsheet().lower()

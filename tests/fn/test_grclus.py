@@ -1,7 +1,7 @@
 """Tests for grclus.graph_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.grclus import graph_clustering
+from morie.fn.grclus import graph_clustering
 
 
 def test_grclus_basic():

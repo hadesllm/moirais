@@ -1,7 +1,7 @@
 """Tests for hmsgdc.geron_sgd_classifier."""
 import numpy as np
 import pytest
-from moirais.fn.hmsgdc import geron_sgd_classifier
+from morie.fn.hmsgdc import geron_sgd_classifier
 
 
 def test_hmsgdc_basic():

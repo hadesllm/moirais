@@ -1,7 +1,7 @@
 """Tests for rgann.rangayyan_ann_mlp."""
 import numpy as np
 import pytest
-from moirais.fn.rgann import rangayyan_ann_mlp
+from morie.fn.rgann import rangayyan_ann_mlp
 
 
 def test_rgann_basic():

@@ -1,7 +1,7 @@
 """Tests for emgrm -- EMG RMS envelope."""
 import numpy as np
-from moirais.fn.emgrm import emgrm
-from moirais.fn._containers import SignalResult
+from morie.fn.emgrm import emgrm
+from morie.fn._containers import SignalResult
 
 
 def test_emgrm_basic():

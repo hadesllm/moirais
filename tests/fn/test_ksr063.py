@@ -1,7 +1,7 @@
 """Tests for ksr063.kosorok_ch3_cox_efficient_score_beta."""
 import numpy as np
 import pytest
-from moirais.fn.ksr063 import kosorok_ch3_cox_efficient_score_beta
+from morie.fn.ksr063 import kosorok_ch3_cox_efficient_score_beta
 
 
 def test_ksr063_basic():

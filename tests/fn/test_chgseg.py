@@ -1,7 +1,7 @@
 """Tests for chgseg.changepoint_segmentation."""
 import numpy as np
 import pytest
-from moirais.fn.chgseg import changepoint_segmentation
+from morie.fn.chgseg import changepoint_segmentation
 
 
 def test_chgseg_basic():

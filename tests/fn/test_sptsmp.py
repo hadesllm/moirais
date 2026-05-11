@@ -1,7 +1,7 @@
 """Test sptsmp."""
 import numpy as np
 import pytest
-from moirais.fn.sptsmp import sptsmp
+from morie.fn.sptsmp import sptsmp
 
 
 def test_sptsmp_basic():

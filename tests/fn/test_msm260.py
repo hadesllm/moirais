@@ -1,7 +1,7 @@
 """Tests for msm260.mvsml_deep_learning_eq_13_2."""
 import numpy as np
 import pytest
-from moirais.fn.msm260 import mvsml_deep_learning_eq_13_2
+from morie.fn.msm260 import mvsml_deep_learning_eq_13_2
 
 
 def test_msm260_basic():

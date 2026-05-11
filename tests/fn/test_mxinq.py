@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mxinq — maximal inequality bound."""
+"""Tests for morie.fn.mxinq — maximal inequality bound."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mxinq import mxinq
+from morie.fn.mxinq import mxinq
 
 
 def test_basic_output():

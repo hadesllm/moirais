@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sveln -- Elbow method for dimensions"""
+"""Tests for morie.fn.sveln -- Elbow method for dimensions"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sveln import elbow_spatial
+from morie.fn.sveln import elbow_spatial
 
 
 class TestElbowSpatial:

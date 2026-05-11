@@ -1,7 +1,7 @@
 """Tests for ghs025.ghosal_ch3_tailfree_density_product."""
 import numpy as np
 import pytest
-from moirais.fn.ghs025 import ghosal_ch3_tailfree_density_product
+from morie.fn.ghs025 import ghosal_ch3_tailfree_density_product
 
 
 def test_ghs025_basic():

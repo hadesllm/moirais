@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrgr2 -- Poisson gravity model"""
+"""Tests for morie.fn.xrgr2 -- Poisson gravity model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrgr2 import gravity_poisson
+from morie.fn.xrgr2 import gravity_poisson
 
 
 class TestGravityPoisson:

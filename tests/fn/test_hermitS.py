@@ -1,7 +1,7 @@
 """Tests for hermitS.hermite_basis."""
 import numpy as np
 import pytest
-from moirais.fn.hermitS import hermite_basis
+from morie.fn.hermitS import hermite_basis
 
 
 def test_hermitS_basic():

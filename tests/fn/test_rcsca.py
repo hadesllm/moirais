@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rcsca."""
+"""Tests for morie.fn.rcsca."""
 
 import numpy as np
 import pytest
-from moirais.fn.rcsca import rcsca
+from morie.fn.rcsca import rcsca
 
 
 class TestRcsca:

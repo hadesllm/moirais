@@ -1,7 +1,7 @@
 """Tests for spgwrb.schabenberger_gwr_bandwidth."""
 import numpy as np
 import pytest
-from moirais.fn.spgwrb import schabenberger_gwr_bandwidth
+from morie.fn.spgwrb import schabenberger_gwr_bandwidth
 
 
 def test_spgwrb_basic():

@@ -1,7 +1,7 @@
 """Tests for secrtt.rotating_token_envelope."""
 import numpy as np
 import pytest
-from moirais.fn.secrtt import rotating_token_envelope
+from morie.fn.secrtt import rotating_token_envelope
 
 
 def test_secrtt_basic():

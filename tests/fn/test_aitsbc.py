@@ -1,7 +1,7 @@
 """Tests for aitsbc.aitchison_subcomposition."""
 import numpy as np
 import pytest
-from moirais.fn.aitsbc import aitchison_subcomposition
+from morie.fn.aitsbc import aitchison_subcomposition
 
 
 def test_aitsbc_basic():

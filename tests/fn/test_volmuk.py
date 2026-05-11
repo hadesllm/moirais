@@ -1,7 +1,7 @@
 """Tests for volmuk.vol_multi_kernel_rk."""
 import numpy as np
 import pytest
-from moirais.fn.volmuk import vol_multi_kernel_rk
+from morie.fn.volmuk import vol_multi_kernel_rk
 
 
 def test_volmuk_basic():

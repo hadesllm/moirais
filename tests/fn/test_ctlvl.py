@@ -1,7 +1,7 @@
 """Tests for ctlvl."""
 import numpy as np
 import pytest
-from moirais.fn.ctlvl import ctlvl
+from morie.fn.ctlvl import ctlvl
 
 
 def test_ctlvl_basic():
@@ -27,5 +27,5 @@ def test_ctlvl_no_data():
 
 
 def test_ctlvl_alias():
-    from moirais.fn.ctlvl import ctlvl
+    from morie.fn.ctlvl import ctlvl
     assert ctlvl is ctlvl

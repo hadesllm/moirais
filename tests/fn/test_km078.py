@@ -1,7 +1,7 @@
 """Tests for km078.kamath_ch6_alignment_function."""
 import numpy as np
 import pytest
-from moirais.fn.km078 import kamath_ch6_alignment_function
+from morie.fn.km078 import kamath_ch6_alignment_function
 
 
 def test_km078_basic():

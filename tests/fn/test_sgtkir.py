@@ -1,7 +1,7 @@
 """Tests for sgtkir.sgt_kirchhoff_index."""
 import numpy as np
 import pytest
-from moirais.fn.sgtkir import sgt_kirchhoff_index
+from morie.fn.sgtkir import sgt_kirchhoff_index
 
 
 def test_sgtkir_basic():

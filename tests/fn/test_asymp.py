@@ -1,7 +1,7 @@
 """Tests for asymp.asymptotic_expansion."""
 import numpy as np
 import pytest
-from moirais.fn.asymp import asymptotic_expansion
+from morie.fn.asymp import asymptotic_expansion
 
 
 def test_asymp_basic():

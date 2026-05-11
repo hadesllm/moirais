@@ -1,7 +1,7 @@
 """Tests for hmrgpt.geron_regression_mlp_pytorch."""
 import numpy as np
 import pytest
-from moirais.fn.hmrgpt import geron_regression_mlp_pytorch
+from morie.fn.hmrgpt import geron_regression_mlp_pytorch
 
 
 def test_hmrgpt_basic():

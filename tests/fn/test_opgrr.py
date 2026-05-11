@@ -1,7 +1,7 @@
 """Test opgrr."""
 import numpy as np
 import pytest
-from moirais.fn.opgrr import opgrr
+from morie.fn.opgrr import opgrr
 
 
 def test_opgrr_basic():

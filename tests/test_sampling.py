@@ -1,10 +1,10 @@
-"""Tests for moirais.sampling — survey sampling and resampling utilities."""
+"""Tests for morie.sampling — survey sampling and resampling utilities."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.sampling import (
+from morie.sampling import (
     bootstrap_sample,
     cluster_sample,
     compute_design_weights,

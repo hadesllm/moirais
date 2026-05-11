@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwrk -- Rook contiguity weights"""
+"""Tests for morie.fn.xrwrk -- Rook contiguity weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwrk import w_rook
+from morie.fn.xrwrk import w_rook
 
 
 class TestWRook:

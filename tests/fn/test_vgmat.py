@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgmat -- Matern variogram model"""
+"""Tests for morie.fn.vgmat -- Matern variogram model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgmat import vario_matern
+from morie.fn.vgmat import vario_matern
 
 
 class TestVarioMatern:

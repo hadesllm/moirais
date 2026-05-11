@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.stck -- Model stacking."""
+"""Tests for morie.fn.stck -- Model stacking."""
 
 import numpy as np
-from moirais.fn.stck import stacking, stck
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.stck import stacking, stck
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStck:

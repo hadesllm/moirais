@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.antmn -- allometric regression."""
+"""Tests for morie.fn.antmn -- allometric regression."""
 
 import numpy as np
-from moirais.fn.antmn import allometric_regression, antmn
-from moirais.fn._containers import RegressionResult
+from morie.fn.antmn import allometric_regression, antmn
+from morie.fn._containers import RegressionResult
 
 
 class TestAntmn:

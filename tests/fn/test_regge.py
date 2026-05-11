@@ -1,6 +1,6 @@
 """Test regge."""
 import pytest
-from moirais.fn.regge import regge_trajectory
+from morie.fn.regge import regge_trajectory
 
 
 def test_regge_basic():

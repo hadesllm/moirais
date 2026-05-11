@@ -1,7 +1,7 @@
 """Tests for dits16.dit_diffusion_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.dits16 import dit_diffusion_transformer
+from morie.fn.dits16 import dit_diffusion_transformer
 
 
 def test_dits16_basic():

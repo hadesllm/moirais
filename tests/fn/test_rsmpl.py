@@ -1,7 +1,7 @@
 """Test resample_signal (rsmpl)."""
 import numpy as np
-from moirais.fn.rsmpl import resample_signal, rsmpl
-from moirais.fn._containers import SignalResult
+from morie.fn.rsmpl import resample_signal, rsmpl
+from morie.fn._containers import SignalResult
 
 
 class TestResampleSignal:

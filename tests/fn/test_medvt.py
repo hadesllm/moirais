@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.medvt — median voter."""
+"""Tests for morie.fn.medvt — median voter."""
 import numpy as np
-from moirais.fn.medvt import medvt
+from morie.fn.medvt import medvt
 
 
 def test_medvt_smoke():
@@ -11,7 +11,7 @@ def test_medvt_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.medvt import cheatsheet
+    from morie.fn.medvt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

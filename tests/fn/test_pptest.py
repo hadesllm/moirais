@@ -1,7 +1,7 @@
 """Tests for pptest.phillips_perron_unit_root."""
 import numpy as np
 import pytest
-from moirais.fn.pptest import phillips_perron_unit_root
+from morie.fn.pptest import phillips_perron_unit_root
 
 
 def test_pptest_basic():

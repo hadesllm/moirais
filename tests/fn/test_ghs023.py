@@ -1,7 +1,7 @@
 """Tests for ghs023.ghosal_ch3_tailfree_abs_continuity_cond."""
 import numpy as np
 import pytest
-from moirais.fn.ghs023 import ghosal_ch3_tailfree_abs_continuity_cond
+from morie.fn.ghs023 import ghosal_ch3_tailfree_abs_continuity_cond
 
 
 def test_ghs023_basic():

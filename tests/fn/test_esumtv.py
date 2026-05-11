@@ -1,7 +1,7 @@
 """Tests for esumtv.effective_resistance."""
 import numpy as np
 import pytest
-from moirais.fn.esumtv import effective_resistance
+from morie.fn.esumtv import effective_resistance
 
 
 def test_esumtv_basic():

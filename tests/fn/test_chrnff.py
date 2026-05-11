@@ -1,7 +1,7 @@
 """Tests for chrnff.chernoff_bound."""
 import numpy as np
 import pytest
-from moirais.fn.chrnff import chernoff_bound
+from morie.fn.chrnff import chernoff_bound
 
 
 def test_chrnff_basic():

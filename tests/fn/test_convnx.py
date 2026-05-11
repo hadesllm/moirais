@@ -1,7 +1,7 @@
 """Tests for convnx.convnext_block."""
 import numpy as np
 import pytest
-from moirais.fn.convnx import convnext_block
+from morie.fn.convnx import convnext_block
 
 
 def test_convnx_basic():

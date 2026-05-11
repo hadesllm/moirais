@@ -1,7 +1,7 @@
 """Tests for hrzk3.horowitz_local_linear."""
 import numpy as np
 import pytest
-from moirais.fn.hrzk3 import horowitz_local_linear
+from morie.fn.hrzk3 import horowitz_local_linear
 
 
 def test_hrzk3_basic():

@@ -1,6 +1,6 @@
 """Tests for fibonacci_ratio."""
 import numpy as np, pytest
-from moirais.fn.fib import fibonacci_ratio
+from morie.fn.fib import fibonacci_ratio
 
 class TestFib:
     def test_convergence(self):

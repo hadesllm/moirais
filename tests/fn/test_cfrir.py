@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cfrir -- case fatality rate."""
+"""Tests for morie.fn.cfrir -- case fatality rate."""
 
 import pytest
-from moirais.fn.cfrir import case_fatality_rate
+from morie.fn.cfrir import case_fatality_rate
 
 
 class TestCFR:

@@ -1,7 +1,7 @@
 """Tests for lvrgh.hat_matrix_diagonal."""
 import numpy as np
 import pytest
-from moirais.fn.lvrgh import hat_matrix_diagonal
+from morie.fn.lvrgh import hat_matrix_diagonal
 
 
 def test_lvrgh_basic():

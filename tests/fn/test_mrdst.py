@@ -1,6 +1,6 @@
 """Tests for mahalanobis_distance."""
 import numpy as np, pytest
-from moirais.fn.mrdst import mahalanobis_distance
+from morie.fn.mrdst import mahalanobis_distance
 
 class TestMahalanobis:
     def test_identity_cov(self):

@@ -1,7 +1,7 @@
 """Tests for gredsq.geron_encoder_decoder_seq2seq."""
 import numpy as np
 import pytest
-from moirais.fn.gredsq import geron_encoder_decoder_seq2seq
+from morie.fn.gredsq import geron_encoder_decoder_seq2seq
 
 
 def test_gredsq_basic():

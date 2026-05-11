@@ -1,7 +1,7 @@
 """Tests for rmrl.reward_machine."""
 import numpy as np
 import pytest
-from moirais.fn.rmrl import reward_machine
+from morie.fn.rmrl import reward_machine
 
 
 def test_rmrl_basic():

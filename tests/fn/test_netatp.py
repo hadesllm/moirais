@@ -1,7 +1,7 @@
 """Tests for netatp.network_attack_tolerance."""
 import numpy as np
 import pytest
-from moirais.fn.netatp import network_attack_tolerance
+from morie.fn.netatp import network_attack_tolerance
 
 
 def test_netatp_basic():

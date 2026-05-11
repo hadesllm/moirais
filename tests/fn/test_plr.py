@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.plr — Partially Linear Regression ATE via DoubleML."""
+"""Tests for morie.fn.plr — Partially Linear Regression ATE via DoubleML."""
 
 import numpy as np
 import pandas as pd
@@ -12,7 +12,7 @@ except ImportError:
 
 pytestmark = pytest.mark.skipif(not HAS_DML, reason="doubleml not installed")
 
-from moirais.fn.plr import estimate_plr
+from morie.fn.plr import estimate_plr
 
 
 @pytest.fixture()

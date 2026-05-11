@@ -1,7 +1,7 @@
 """Tests for eslspc.esl_spectral_cluster."""
 import numpy as np
 import pytest
-from moirais.fn.eslspc import esl_spectral_cluster
+from morie.fn.eslspc import esl_spectral_cluster
 
 
 def test_eslspc_basic():

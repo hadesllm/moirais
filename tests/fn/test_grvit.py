@@ -1,7 +1,7 @@
 """Tests for grvit.geron_vit_patch_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.grvit import geron_vit_patch_embedding
+from morie.fn.grvit import geron_vit_patch_embedding
 
 
 def test_grvit_basic():

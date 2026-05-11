@@ -1,7 +1,7 @@
 """Test ubcrs."""
 import numpy as np
 import pytest
-from moirais.fn.ubcrs import ubcrs
+from morie.fn.ubcrs import ubcrs
 
 
 def test_ubcrs_basic():

@@ -1,7 +1,7 @@
 """Test geinq."""
 import numpy as np
 import pytest
-from moirais.fn.geinq import geinq
+from morie.fn.geinq import geinq
 
 
 def test_geinq_basic():

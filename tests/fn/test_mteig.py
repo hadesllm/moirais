@@ -1,7 +1,7 @@
 """Test mteig."""
 import numpy as np
 import pytest
-from moirais.fn.mteig import mteig
+from morie.fn.mteig import mteig
 
 
 def test_mteig_basic():

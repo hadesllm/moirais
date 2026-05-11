@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.phoen -- structural break detection."""
+"""Tests for morie.fn.phoen -- structural break detection."""
 
 import numpy as np
-from moirais.fn.phoen import phoenix_break, phoen
-from moirais.fn._containers import TimeSeriesResult
+from morie.fn.phoen import phoenix_break, phoen
+from morie.fn._containers import TimeSeriesResult
 
 
 class TestPhoen:

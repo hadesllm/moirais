@@ -1,7 +1,7 @@
 """Test form_factor (sfrmf)."""
 import numpy as np
-from moirais.fn.sfrmf import form_factor, sfrmf
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sfrmf import form_factor, sfrmf
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFormFactor:

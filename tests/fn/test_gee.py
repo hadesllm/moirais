@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.gee — Generalized estimating equations."""
+"""Tests for morie.fn.gee — Generalized estimating equations."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.gee import gee_regression
+from morie.fn.gee import gee_regression
 
 
 def test_gee_gaussian_recovers_coef():

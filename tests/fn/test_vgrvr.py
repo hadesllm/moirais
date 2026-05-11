@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgrvr -- Relative variogram"""
+"""Tests for morie.fn.vgrvr -- Relative variogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgrvr import relative_vario
+from morie.fn.vgrvr import relative_vario
 
 
 class TestRelativeVario:

@@ -1,7 +1,7 @@
 """Tests for crfath.causal_forest_wager_athey."""
 import numpy as np
 import pytest
-from moirais.fn.crfath import causal_forest_wager_athey
+from morie.fn.crfath import causal_forest_wager_athey
 
 
 def test_crfath_basic():

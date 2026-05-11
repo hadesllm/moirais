@@ -1,7 +1,7 @@
 """Tests for sirtdy.sir_age_structured."""
 import numpy as np
 import pytest
-from moirais.fn.sirtdy import sir_age_structured
+from morie.fn.sirtdy import sir_age_structured
 
 
 def test_sirtdy_basic():

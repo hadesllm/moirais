@@ -1,7 +1,7 @@
 """Tests for km018.kamath_ch2_layer_norm."""
 import numpy as np
 import pytest
-from moirais.fn.km018 import kamath_ch2_layer_norm
+from morie.fn.km018 import kamath_ch2_layer_norm
 
 
 def test_km018_basic():

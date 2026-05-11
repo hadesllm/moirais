@@ -1,6 +1,6 @@
 """Tests for index of dispersion."""
 import numpy as np
-from moirais.fn.sgidx import sgidx
+from morie.fn.sgidx import sgidx
 
 
 def test_sgidx_smoke():

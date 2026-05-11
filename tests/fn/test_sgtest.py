@@ -1,7 +1,7 @@
 """Tests for sgtest.sgt_estrada_index."""
 import numpy as np
 import pytest
-from moirais.fn.sgtest import sgt_estrada_index
+from morie.fn.sgtest import sgt_estrada_index
 
 
 def test_sgtest_basic():

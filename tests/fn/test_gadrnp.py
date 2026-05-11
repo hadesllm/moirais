@@ -1,7 +1,7 @@
 """Test gadrnp."""
 import numpy as np
 import pytest
-from moirais.fn.gadrnp import gadrnp
+from morie.fn.gadrnp import gadrnp
 
 
 def test_gadrnp_basic():

@@ -1,7 +1,7 @@
 """Test transfer_function (trfnc)."""
 import numpy as np
-from moirais.fn.trfnc import transfer_function, trfnc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.trfnc import transfer_function, trfnc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTransferFunction:

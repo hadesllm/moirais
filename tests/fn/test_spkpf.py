@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.spkpf -- single-peaked check."""
+"""Tests for morie.fn.spkpf -- single-peaked check."""
 
 import numpy as np
-from moirais.fn.spkpf import single_peaked_check, spkpf
+from morie.fn.spkpf import single_peaked_check, spkpf
 
 
 def test_spkpf_true():

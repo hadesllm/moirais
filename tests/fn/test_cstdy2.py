@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cstdy2 — custody days credit."""
+"""Tests for morie.fn.cstdy2 — custody days credit."""
 
 import pytest
 import numpy as np
-from moirais.fn.cstdy2 import custody_days_credit
-from moirais.fn._containers import ESRes
+from morie.fn.cstdy2 import custody_days_credit
+from morie.fn._containers import ESRes
 
 
 class TestCustodyDaysCredit:

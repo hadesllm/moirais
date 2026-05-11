@@ -1,7 +1,7 @@
 """Tests for rng172.rangayyan_ch3_rls_p_recursion."""
 import numpy as np
 import pytest
-from moirais.fn.rng172 import rangayyan_ch3_rls_p_recursion
+from morie.fn.rng172 import rangayyan_ch3_rls_p_recursion
 
 
 def test_rng172_basic():

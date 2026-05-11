@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.osumm — Full summary table."""
+"""Tests for morie.fn.osumm — Full summary table."""
 
 import pandas as pd
-from moirais.fn.osumm import otis_summary_table
+from morie.fn.osumm import otis_summary_table
 
 
 class TestOtisSummaryTable:

@@ -1,7 +1,7 @@
 """Tests for tldepu.upper_tail_dependence."""
 import numpy as np
 import pytest
-from moirais.fn.tldepu import upper_tail_dependence
+from morie.fn.tldepu import upper_tail_dependence
 
 
 def test_tldepu_basic():

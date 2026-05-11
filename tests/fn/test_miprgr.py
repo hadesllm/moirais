@@ -1,7 +1,7 @@
 """Tests for miprgr.mip_branch_bound."""
 import numpy as np
 import pytest
-from moirais.fn.miprgr import mip_branch_bound
+from morie.fn.miprgr import mip_branch_bound
 
 
 def test_miprgr_basic():

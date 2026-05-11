@@ -1,7 +1,7 @@
 """Tests for esleff.esl_effective_dof."""
 import numpy as np
 import pytest
-from moirais.fn.esleff import esl_effective_dof
+from morie.fn.esleff import esl_effective_dof
 
 
 def test_esleff_basic():

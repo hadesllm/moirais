@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.dceof."""
+"""Tests for morie.fn.dceof."""
 import numpy as np
-from moirais.fn.dceof import dceof
+from morie.fn.dceof import dceof
 
 
 def test_dceof_smoke():
@@ -12,7 +12,7 @@ def test_dceof_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.dceof import cheatsheet
+    from morie.fn.dceof import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for fzt46.fauzi_thm4_6_mean_value."""
 import numpy as np
 import pytest
-from moirais.fn.fzt46 import fauzi_thm4_6_mean_value
+from morie.fn.fzt46 import fauzi_thm4_6_mean_value
 
 
 def test_fzt46_basic():

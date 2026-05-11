@@ -1,7 +1,7 @@
 """Tests for hmlnet.geron_lenet5."""
 import numpy as np
 import pytest
-from moirais.fn.hmlnet import geron_lenet5
+from morie.fn.hmlnet import geron_lenet5
 
 
 def test_hmlnet_basic():

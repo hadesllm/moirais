@@ -1,7 +1,7 @@
 """Test ubfir."""
 import numpy as np
 import pytest
-from moirais.fn.ubfir import ubfir
+from morie.fn.ubfir import ubfir
 
 
 def test_ubfir_basic():

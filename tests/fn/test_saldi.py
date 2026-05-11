@@ -1,7 +1,7 @@
 """Test saldi."""
 import numpy as np
 import pytest
-from moirais.fn.saldi import saldi
+from morie.fn.saldi import saldi
 
 
 def test_saldi_basic():

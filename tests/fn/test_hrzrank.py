@@ -1,7 +1,7 @@
 """Tests for hrzrank.horowitz_semipar_rank."""
 import numpy as np
 import pytest
-from moirais.fn.hrzrank import horowitz_semipar_rank
+from morie.fn.hrzrank import horowitz_semipar_rank
 
 
 def test_hrzrank_basic():

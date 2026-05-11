@@ -1,7 +1,7 @@
 """Tests for prsclm.prs_cs_clump."""
 import numpy as np
 import pytest
-from moirais.fn.prsclm import prs_cs_clump
+from morie.fn.prsclm import prs_cs_clump
 
 
 def test_prsclm_basic():

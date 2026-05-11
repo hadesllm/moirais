@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hedsa -- DSA."""
+"""Tests for morie.fn.hedsa -- DSA."""
 
 import pytest
-from moirais.fn.hedsa import deterministic_sensitivity
+from morie.fn.hedsa import deterministic_sensitivity
 
 
 class TestDSA:
@@ -17,7 +17,7 @@ class TestDSA:
 
 
 def test_cheatsheet():
-    from moirais.fn.hedsa import cheatsheet
+    from morie.fn.hedsa import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

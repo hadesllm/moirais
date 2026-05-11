@@ -1,7 +1,7 @@
 """Tests for km004.kamath_ch2_decoder_hidden_state."""
 import numpy as np
 import pytest
-from moirais.fn.km004 import kamath_ch2_decoder_hidden_state
+from morie.fn.km004 import kamath_ch2_decoder_hidden_state
 
 
 def test_km004_basic():

@@ -1,7 +1,7 @@
 """Tests for gpsmp."""
 import numpy as np
 import pytest
-from moirais.fn.gpsmp import gpsmp
+from morie.fn.gpsmp import gpsmp
 
 
 def test_gpsmp_basic():
@@ -27,5 +27,5 @@ def test_gpsmp_no_data():
 
 
 def test_gpsmp_alias():
-    from moirais.fn.gpsmp import gpsmp
+    from morie.fn.gpsmp import gpsmp
     assert gpsmp is gpsmp

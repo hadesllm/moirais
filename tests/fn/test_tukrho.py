@@ -1,7 +1,7 @@
 """Tests for tukrho.tukey_biweight."""
 import numpy as np
 import pytest
-from moirais.fn.tukrho import tukey_biweight
+from morie.fn.tukrho import tukey_biweight
 
 
 def test_tukrho_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrslx -- SLX model OLS estimation"""
+"""Tests for morie.fn.xrslx -- SLX model OLS estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrslx import slx_ols
+from morie.fn.xrslx import slx_ols
 
 
 class TestSlxOls:

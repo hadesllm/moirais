@@ -1,7 +1,7 @@
 """Tests for sdcfst.semi_doubly_robust_forest."""
 import numpy as np
 import pytest
-from moirais.fn.sdcfst import semi_doubly_robust_forest
+from morie.fn.sdcfst import semi_doubly_robust_forest
 
 
 def test_sdcfst_basic():

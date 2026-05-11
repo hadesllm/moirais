@@ -1,6 +1,6 @@
 """Tests for SAR lag model."""
 import numpy as np
-from moirais.fn.sgsar import sgsar
+from morie.fn.sgsar import sgsar
 
 
 def test_sgsar_smoke():
@@ -23,7 +23,7 @@ def test_sgsar_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgsar import cheatsheet
+    from morie.fn.sgsar import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

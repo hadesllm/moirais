@@ -1,7 +1,7 @@
 """Tests for hmmlm.geron_masked_lm."""
 import numpy as np
 import pytest
-from moirais.fn.hmmlm import geron_masked_lm
+from morie.fn.hmmlm import geron_masked_lm
 
 
 def test_hmmlm_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.blkrg — Block kriging."""
+"""Tests for morie.fn.blkrg — Block kriging."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.blkrg import blkrg
+from morie.fn.blkrg import blkrg
 
 
 class TestBlkrg:

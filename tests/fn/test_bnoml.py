@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bnoml -- Bayesian binomial."""
+"""Tests for morie.fn.bnoml -- Bayesian binomial."""
 
-from moirais.fn.bnoml import bayesian_binomial
+from morie.fn.bnoml import bayesian_binomial
 
 
 def test_returns_dict():

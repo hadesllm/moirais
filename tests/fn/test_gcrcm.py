@@ -1,7 +1,7 @@
 """Test gcrcm."""
 import numpy as np
 import pytest
-from moirais.fn.gcrcm import gcrcm
+from morie.fn.gcrcm import gcrcm
 
 
 def test_gcrcm_basic():

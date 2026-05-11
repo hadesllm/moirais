@@ -1,7 +1,7 @@
 """Tests for gb_jcd.gibbons_jt_cd_form."""
 import numpy as np
 import pytest
-from moirais.fn.gb_jcd import gibbons_jt_cd_form
+from morie.fn.gb_jcd import gibbons_jt_cd_form
 
 
 def test_gb_jcd_basic():

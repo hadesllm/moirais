@@ -1,7 +1,7 @@
 """Tests for ordct.ordered_categories."""
 import numpy as np
 import pytest
-from moirais.fn.ordct import ordered_categories
+from morie.fn.ordct import ordered_categories
 
 
 def test_ordct_basic():

@@ -1,7 +1,7 @@
 """Test srmns."""
 import numpy as np
 import pytest
-from moirais.fn.srmns import srmns
+from morie.fn.srmns import srmns
 
 
 def test_srmns_basic():

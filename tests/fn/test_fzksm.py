@@ -1,7 +1,7 @@
 """Tests for fzksm.fauzi_ks_smoothed."""
 import numpy as np
 import pytest
-from moirais.fn.fzksm import fauzi_ks_smoothed
+from morie.fn.fzksm import fauzi_ks_smoothed
 
 
 def test_fzksm_basic():

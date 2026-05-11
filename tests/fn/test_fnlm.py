@@ -1,7 +1,7 @@
 """Tests for fnlm.function_on_function."""
 import numpy as np
 import pytest
-from moirais.fn.fnlm import function_on_function
+from morie.fn.fnlm import function_on_function
 
 
 def test_fnlm_basic():

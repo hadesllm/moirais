@@ -1,7 +1,7 @@
 """Tests for kmcchr.kamath_christiano_deep_rl_feedback."""
 import numpy as np
 import pytest
-from moirais.fn.kmcchr import kamath_christiano_deep_rl_feedback
+from morie.fn.kmcchr import kamath_christiano_deep_rl_feedback
 
 
 def test_kmcchr_basic():

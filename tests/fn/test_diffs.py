@@ -1,7 +1,7 @@
 """Test differentiate_signal (diffs)."""
 import numpy as np
-from moirais.fn.diffs import differentiate_signal, diffs
-from moirais.fn._containers import SignalResult
+from morie.fn.diffs import differentiate_signal, diffs
+from morie.fn._containers import SignalResult
 
 
 class TestDifferentiateSignal:

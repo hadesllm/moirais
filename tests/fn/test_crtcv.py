@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.crtcv — civil liberties."""
+"""Tests for morie.fn.crtcv — civil liberties."""
 
 import pytest
-from moirais.fn.crtcv import court_civil_liberties
-from moirais.fn._containers import CrimeResult
+from morie.fn.crtcv import court_civil_liberties
+from morie.fn._containers import CrimeResult
 
 
 class TestCivilLiberties:

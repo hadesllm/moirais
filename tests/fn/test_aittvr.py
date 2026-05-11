@@ -1,7 +1,7 @@
 """Tests for aittvr.aitchison_total_variance."""
 import numpy as np
 import pytest
-from moirais.fn.aittvr import aitchison_total_variance
+from morie.fn.aittvr import aitchison_total_variance
 
 
 def test_aittvr_basic():

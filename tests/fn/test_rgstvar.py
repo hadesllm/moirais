@@ -1,7 +1,7 @@
 """Tests for rgstvar.rangayyan_tvlsi."""
 import numpy as np
 import pytest
-from moirais.fn.rgstvar import rangayyan_tvlsi
+from morie.fn.rgstvar import rangayyan_tvlsi
 
 
 def test_rgstvar_basic():

@@ -1,7 +1,7 @@
 """Test gcrcp."""
 import numpy as np
 import pytest
-from moirais.fn.gcrcp import gcrcp
+from morie.fn.gcrcp import gcrcp
 
 
 def test_gcrcp_basic():

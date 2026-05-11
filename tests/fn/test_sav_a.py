@@ -1,7 +1,7 @@
 """Tests for sav_a -- EA AVE."""
 import numpy as np
-from moirais.fn.sav_a import subscale_ea_ave
-from moirais.fn._containers import ESRes
+from morie.fn.sav_a import subscale_ea_ave
+from morie.fn._containers import ESRes
 
 
 class TestSavA:

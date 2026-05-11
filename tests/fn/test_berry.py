@@ -1,6 +1,6 @@
 """Test berry."""
 import numpy as np
-from moirais.fn.berry import berry_phase
+from morie.fn.berry import berry_phase
 
 
 def test_berry_basic():

@@ -1,7 +1,7 @@
 """Test krgdg."""
 import numpy as np
 import pytest
-from moirais.fn.krgdg import krgdg
+from morie.fn.krgdg import krgdg
 
 
 def test_krgdg_basic():

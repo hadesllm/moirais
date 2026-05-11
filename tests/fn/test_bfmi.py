@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bfmi -- BFMI diagnostic."""
+"""Tests for morie.fn.bfmi -- BFMI diagnostic."""
 
 import numpy as np
-from moirais.fn.bfmi import bayesian_fmi
+from morie.fn.bfmi import bayesian_fmi
 
 
 def test_returns_dict():

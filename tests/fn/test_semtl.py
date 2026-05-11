@@ -1,7 +1,7 @@
 """Test semtl."""
 import numpy as np
 import pytest
-from moirais.fn.semtl import semtl
+from morie.fn.semtl import semtl
 
 
 def test_semtl_basic():

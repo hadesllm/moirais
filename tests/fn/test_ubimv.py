@@ -1,7 +1,7 @@
 """Test ubimv."""
 import numpy as np
 import pytest
-from moirais.fn.ubimv import ubimv
+from morie.fn.ubimv import ubimv
 
 
 def test_ubimv_basic():

@@ -1,7 +1,7 @@
 """Test vmpnt."""
 import numpy as np
 import pytest
-from moirais.fn.vmpnt import vmpnt
+from morie.fn.vmpnt import vmpnt
 
 
 def test_vmpnt_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vmtmm — MTMM matrix analysis."""
+"""Tests for morie.fn.vmtmm — MTMM matrix analysis."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.vmtmm import validity_mtmm
+from morie.fn.vmtmm import validity_mtmm
 
 
 class TestValidityMtmm:

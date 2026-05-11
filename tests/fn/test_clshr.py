@@ -1,7 +1,7 @@
 """Test clshr."""
 import numpy as np
 import pytest
-from moirais.fn.clshr import clshr
+from morie.fn.clshr import clshr
 
 
 def test_clshr_basic():

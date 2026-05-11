@@ -1,7 +1,7 @@
 """Tests for spkfnn.schabenberger_cross_validation_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.spkfnn import schabenberger_cross_validation_kriging
+from morie.fn.spkfnn import schabenberger_cross_validation_kriging
 
 
 def test_spkfnn_basic():

@@ -1,7 +1,7 @@
 """Tests for qpdual.quadratic_program."""
 import numpy as np
 import pytest
-from moirais.fn.qpdual import quadratic_program
+from morie.fn.qpdual import quadratic_program
 
 
 def test_qpdual_basic():

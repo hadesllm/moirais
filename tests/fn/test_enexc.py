@@ -1,7 +1,7 @@
 """Test enexc."""
 import numpy as np
 import pytest
-from moirais.fn.enexc import enexc
+from morie.fn.enexc import enexc
 
 
 def test_enexc_basic():

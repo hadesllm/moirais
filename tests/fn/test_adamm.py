@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.adamm -- Adam optimizer."""
+"""Tests for morie.fn.adamm -- Adam optimizer."""
 
 import numpy as np
-from moirais.fn.adamm import adam_optimize, adamm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.adamm import adam_optimize, adamm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAdamm:

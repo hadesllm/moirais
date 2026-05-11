@@ -1,7 +1,7 @@
 """Test rspan."""
 import numpy as np
 import pytest
-from moirais.fn.rspan import rspan
+from morie.fn.rspan import rspan
 
 
 def test_rspan_basic():

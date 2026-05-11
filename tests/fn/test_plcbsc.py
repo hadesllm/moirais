@@ -1,7 +1,7 @@
 """Tests for plcbsc.placebo_scm_inference."""
 import numpy as np
 import pytest
-from moirais.fn.plcbsc import placebo_scm_inference
+from morie.fn.plcbsc import placebo_scm_inference
 
 
 def test_plcbsc_basic():

@@ -1,7 +1,7 @@
 """Tests for otmtest.ot_mmd_two_sample."""
 import numpy as np
 import pytest
-from moirais.fn.otmtest import ot_mmd_two_sample
+from morie.fn.otmtest import ot_mmd_two_sample
 
 
 def test_otmtest_basic():

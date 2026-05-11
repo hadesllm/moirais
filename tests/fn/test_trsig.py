@@ -1,7 +1,7 @@
 """Test trsig."""
 import numpy as np
 import pytest
-from moirais.fn.trsig import trsig
+from morie.fn.trsig import trsig
 
 
 def test_trsig_basic():

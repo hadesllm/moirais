@@ -1,7 +1,7 @@
 """Tests for rng161.rangayyan_ch3_lms_variable_step."""
 import numpy as np
 import pytest
-from moirais.fn.rng161 import rangayyan_ch3_lms_variable_step
+from morie.fn.rng161 import rangayyan_ch3_lms_variable_step
 
 
 def test_rng161_basic():

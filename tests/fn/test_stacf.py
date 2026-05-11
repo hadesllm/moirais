@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.stacf."""
+"""Tests for morie.fn.stacf."""
 import numpy as np
-from moirais.fn.stacf import st_autocorrelation
+from morie.fn.stacf import st_autocorrelation
 
 
 def test_stacf_smoke():
@@ -16,7 +16,7 @@ def test_stacf_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.stacf import cheatsheet
+    from morie.fn.stacf import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

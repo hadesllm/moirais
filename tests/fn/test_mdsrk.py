@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mdsrk -- reconstruct distances."""
+"""Tests for morie.fn.mdsrk -- reconstruct distances."""
 
 import numpy as np
-from moirais.fn.mdsrk import mds_reconstruct_distances, mdsrk
+from morie.fn.mdsrk import mds_reconstruct_distances, mdsrk
 
 
 def test_mdsrk_smoke():

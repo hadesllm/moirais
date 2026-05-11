@@ -1,7 +1,7 @@
 """Tests for cvxnda.boyd_newton_decrement."""
 import numpy as np
 import pytest
-from moirais.fn.cvxnda import boyd_newton_decrement
+from morie.fn.cvxnda import boyd_newton_decrement
 
 
 def test_cvxnda_basic():

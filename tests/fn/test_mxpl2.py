@@ -1,6 +1,6 @@
 """Test 2D max pooling."""
 import numpy as np
-from moirais.fn.mxpl2 import mxpl2
+from morie.fn.mxpl2 import mxpl2
 
 
 def test_mxpl2_basic():

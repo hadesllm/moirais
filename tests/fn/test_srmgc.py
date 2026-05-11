@@ -1,7 +1,7 @@
 """Test srmgc."""
 import numpy as np
 import pytest
-from moirais.fn.srmgc import srmgc
+from morie.fn.srmgc import srmgc
 
 
 def test_srmgc_basic():

@@ -1,7 +1,7 @@
 """Tests for rfnst."""
 import numpy as np
 import pytest
-from moirais.fn.rfnst import rfnst
+from morie.fn.rfnst import rfnst
 
 
 def test_rfnst_basic():
@@ -27,5 +27,5 @@ def test_rfnst_no_data():
 
 
 def test_rfnst_alias():
-    from moirais.fn.rfnst import rfnst
+    from morie.fn.rfnst import rfnst
     assert rfnst is rfnst

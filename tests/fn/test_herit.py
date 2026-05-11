@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.herit -- GREML heritability."""
+"""Tests for morie.fn.herit -- GREML heritability."""
 
 import numpy as np
 import pytest
-from moirais.fn.herit import herit
+from morie.fn.herit import herit
 
 
 def _make_data(h2_true=0.5, n=50, p=100, seed=42):

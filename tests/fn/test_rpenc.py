@@ -1,6 +1,6 @@
 """Test rotary positional encoding."""
 import numpy as np
-from moirais.fn.rpenc import rpenc
+from morie.fn.rpenc import rpenc
 
 
 def test_rpenc_shape():

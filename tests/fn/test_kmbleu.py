@@ -1,7 +1,7 @@
 """Tests for kmbleu.kamath_bleu_score."""
 import numpy as np
 import pytest
-from moirais.fn.kmbleu import kamath_bleu_score
+from morie.fn.kmbleu import kamath_bleu_score
 
 
 def test_kmbleu_basic():

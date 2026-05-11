@@ -1,7 +1,7 @@
 """Test manh4."""
 import numpy as np
 import pytest
-from moirais.fn.manh4 import manh4
+from morie.fn.manh4 import manh4
 
 
 def test_manh4_basic():

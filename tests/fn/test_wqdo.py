@@ -1,7 +1,7 @@
 """Test wqdo."""
 import numpy as np
 import pytest
-from moirais.fn.wqdo import wqdo
+from morie.fn.wqdo import wqdo
 
 
 def test_wqdo_basic():

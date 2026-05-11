@@ -1,7 +1,7 @@
 """Test aftrr."""
 import numpy as np
 import pytest
-from moirais.fn.aftrr import aftrr
+from morie.fn.aftrr import aftrr
 
 
 def test_aftrr_basic():

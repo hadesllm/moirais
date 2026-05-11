@@ -1,7 +1,7 @@
 """Tests for rng231.rangayyan_ch4_homomorphic_log_separation."""
 import numpy as np
 import pytest
-from moirais.fn.rng231 import rangayyan_ch4_homomorphic_log_separation
+from morie.fn.rng231 import rangayyan_ch4_homomorphic_log_separation
 
 
 def test_rng231_basic():

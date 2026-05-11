@@ -1,7 +1,7 @@
 """Test ghopt."""
 import numpy as np
 import pytest
-from moirais.fn.ghopt import ghopt
+from morie.fn.ghopt import ghopt
 
 
 def test_ghopt_basic():

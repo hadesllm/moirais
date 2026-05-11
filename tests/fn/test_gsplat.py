@@ -1,7 +1,7 @@
 """Tests for gsplat.gaussian_splatting."""
 import numpy as np
 import pytest
-from moirais.fn.gsplat import gaussian_splatting
+from morie.fn.gsplat import gaussian_splatting
 
 
 def test_gsplat_basic():

@@ -1,7 +1,7 @@
 """Test gcglc."""
 import numpy as np
 import pytest
-from moirais.fn.gcglc import gcglc
+from morie.fn.gcglc import gcglc
 
 
 def test_gcglc_basic():

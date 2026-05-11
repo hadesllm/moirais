@@ -1,7 +1,7 @@
 """Tests for jkrand.jackknife_repl."""
 import numpy as np
 import pytest
-from moirais.fn.jkrand import jackknife_repl
+from morie.fn.jkrand import jackknife_repl
 
 
 def test_jkrand_basic():

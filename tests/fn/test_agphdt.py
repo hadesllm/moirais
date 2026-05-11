@@ -1,7 +1,7 @@
 """Tests for agphdt.alphazero_policy_head."""
 import numpy as np
 import pytest
-from moirais.fn.agphdt import alphazero_policy_head
+from morie.fn.agphdt import alphazero_policy_head
 
 
 def test_agphdt_basic():

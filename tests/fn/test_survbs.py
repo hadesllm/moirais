@@ -1,7 +1,7 @@
 """Tests for survbs.survival_bootstrap_se."""
 import numpy as np
 import pytest
-from moirais.fn.survbs import survival_bootstrap_se
+from morie.fn.survbs import survival_bootstrap_se
 
 
 def test_survbs_basic():

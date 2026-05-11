@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rnorm — normal random sample."""
+"""Tests for morie.fn.rnorm — normal random sample."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rnorm import rnorm
+from morie.fn.rnorm import rnorm
 
 
 class TestRnorm:

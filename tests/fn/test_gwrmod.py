@@ -1,7 +1,7 @@
 """Tests for gwrmod.geographically_weighted_regression."""
 import numpy as np
 import pytest
-from moirais.fn.gwrmod import geographically_weighted_regression
+from morie.fn.gwrmod import geographically_weighted_regression
 
 
 def test_gwrmod_basic():

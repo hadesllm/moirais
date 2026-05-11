@@ -1,7 +1,7 @@
 """Tests for alnnw.needleman_wunsch."""
 import numpy as np
 import pytest
-from moirais.fn.alnnw import needleman_wunsch
+from morie.fn.alnnw import needleman_wunsch
 
 
 def test_alnnw_basic():

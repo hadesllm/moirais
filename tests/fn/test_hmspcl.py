@@ -1,7 +1,7 @@
 """Tests for hmspcl.geron_spectral_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.hmspcl import geron_spectral_clustering
+from morie.fn.hmspcl import geron_spectral_clustering
 
 
 def test_hmspcl_basic():

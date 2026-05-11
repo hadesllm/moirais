@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhtrn -- mental health trend."""
+"""Tests for morie.fn.mhtrn -- mental health trend."""
 
 import pytest
-from moirais.fn.mhtrn import mental_health_trend
+from morie.fn.mhtrn import mental_health_trend
 
 
 class TestMentalHealthTrend:

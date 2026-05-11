@@ -1,7 +1,7 @@
 """Tests for nwcor -- partial correlation network."""
 import numpy as np
-from moirais.fn.nwcor import network_correlation
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nwcor import network_correlation
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNetworkCorrelation:

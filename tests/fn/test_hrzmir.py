@@ -1,7 +1,7 @@
 """Tests for hrzmir.horowitz_marginal_integration."""
 import numpy as np
 import pytest
-from moirais.fn.hrzmir import horowitz_marginal_integration
+from morie.fn.hrzmir import horowitz_marginal_integration
 
 
 def test_hrzmir_basic():

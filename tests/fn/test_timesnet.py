@@ -1,7 +1,7 @@
 """Tests for timesnet.timesnet."""
 import numpy as np
 import pytest
-from moirais.fn.timesnet import timesnet
+from morie.fn.timesnet import timesnet
 
 
 def test_timesnet_basic():

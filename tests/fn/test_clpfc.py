@@ -1,7 +1,7 @@
 """Test clpfc."""
 import numpy as np
 import pytest
-from moirais.fn.clpfc import clpfc
+from morie.fn.clpfc import clpfc
 
 
 def test_clpfc_basic():

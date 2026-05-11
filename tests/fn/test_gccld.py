@@ -1,7 +1,7 @@
 """Test gccld."""
 import numpy as np
 import pytest
-from moirais.fn.gccld import gccld
+from morie.fn.gccld import gccld
 
 
 def test_gccld_basic():

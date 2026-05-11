@@ -1,7 +1,7 @@
 """Tests for admmop.admm."""
 import numpy as np
 import pytest
-from moirais.fn.admmop import admm
+from morie.fn.admmop import admm
 
 
 def test_admmop_basic():

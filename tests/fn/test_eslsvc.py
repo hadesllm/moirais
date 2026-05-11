@@ -1,7 +1,7 @@
 """Tests for eslsvc.esl_svc."""
 import numpy as np
 import pytest
-from moirais.fn.eslsvc import esl_svc
+from morie.fn.eslsvc import esl_svc
 
 
 def test_eslsvc_basic():

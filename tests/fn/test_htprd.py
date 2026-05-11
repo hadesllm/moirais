@@ -1,7 +1,7 @@
 """Tests for htprd.hyperparameter_tuning_grid."""
 import numpy as np
 import pytest
-from moirais.fn.htprd import hyperparameter_tuning_grid
+from morie.fn.htprd import hyperparameter_tuning_grid
 
 
 def test_htprd_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cstgv — custody grievance rate."""
+"""Tests for morie.fn.cstgv — custody grievance rate."""
 
 import pandas as pd
-from moirais.fn.cstgv import custody_grievance_rate
+from morie.fn.cstgv import custody_grievance_rate
 
 
 class TestCustodyGrievanceRate:

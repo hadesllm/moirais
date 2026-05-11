@@ -1,7 +1,7 @@
 """Tests for kmroug.kamath_rouge_n."""
 import numpy as np
 import pytest
-from moirais.fn.kmroug import kamath_rouge_n
+from morie.fn.kmroug import kamath_rouge_n
 
 
 def test_kmroug_basic():

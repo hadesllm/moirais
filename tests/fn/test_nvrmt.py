@@ -1,6 +1,6 @@
 """Tests for normal_var_ratio_test."""
 import numpy as np, pytest
-from moirais.fn.nvrmt import normal_var_ratio_test
+from morie.fn.nvrmt import normal_var_ratio_test
 
 
 class TestNormalVarRatio:

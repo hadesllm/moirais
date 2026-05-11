@@ -1,7 +1,7 @@
 """Tests for grdeit.geron_deit_distillation_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grdeit import geron_deit_distillation_loss
+from morie.fn.grdeit import geron_deit_distillation_loss
 
 
 def test_grdeit_basic():

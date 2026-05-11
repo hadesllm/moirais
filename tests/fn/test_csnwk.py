@@ -1,7 +1,7 @@
 """Test csnwk."""
 import numpy as np
 import pytest
-from moirais.fn.csnwk import csnwk
+from morie.fn.csnwk import csnwk
 
 
 def test_csnwk_basic():

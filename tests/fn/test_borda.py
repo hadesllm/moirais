@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.borda — Borda count."""
+"""Tests for morie.fn.borda — Borda count."""
 import numpy as np
-from moirais.fn.borda import borda
+from morie.fn.borda import borda
 
 
 def test_borda_simple():

@@ -1,7 +1,7 @@
 """Test emg_rms_threshold (emgrt)."""
 import numpy as np
-from moirais.fn.emgrt import emg_rms_threshold, emgrt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.emgrt import emg_rms_threshold, emgrt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestEmgRmsThreshold:

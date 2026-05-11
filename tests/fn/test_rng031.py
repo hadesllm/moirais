@@ -1,7 +1,7 @@
 """Tests for rng031.rangayyan_ch3_continuous_convolution_alt."""
 import numpy as np
 import pytest
-from moirais.fn.rng031 import rangayyan_ch3_continuous_convolution_alt
+from morie.fn.rng031 import rangayyan_ch3_continuous_convolution_alt
 
 
 def test_rng031_basic():

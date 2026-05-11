@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.crtap — appeal rate."""
+"""Tests for morie.fn.crtap — appeal rate."""
 
 import pytest
-from moirais.fn.crtap import court_appeal_rate
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.crtap import court_appeal_rate
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAppealRate:

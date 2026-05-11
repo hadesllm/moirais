@@ -1,7 +1,7 @@
 """Tests for smplep.sample_overlap."""
 import numpy as np
 import pytest
-from moirais.fn.smplep import sample_overlap
+from morie.fn.smplep import sample_overlap
 
 
 def test_smplep_basic():

@@ -1,7 +1,7 @@
 """Test rsreg."""
 import numpy as np
 import pytest
-from moirais.fn.rsreg import rsreg
+from morie.fn.rsreg import rsreg
 
 
 def test_rsreg_basic():

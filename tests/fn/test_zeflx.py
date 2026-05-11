@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeflx -- Flexible spatial scan (Tango)"""
+"""Tests for morie.fn.zeflx -- Flexible spatial scan (Tango)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeflx import flexible_scan
+from morie.fn.zeflx import flexible_scan
 
 
 class TestFlexibleScan:

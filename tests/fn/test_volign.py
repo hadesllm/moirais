@@ -1,7 +1,7 @@
 """Tests for volign.vol_igarch_fit."""
 import numpy as np
 import pytest
-from moirais.fn.volign import vol_igarch_fit
+from morie.fn.volign import vol_igarch_fit
 
 
 def test_volign_basic():

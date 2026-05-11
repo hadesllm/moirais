@@ -1,7 +1,7 @@
 """Tests for ksr05.kosorok_bracketing_number."""
 import numpy as np
 import pytest
-from moirais.fn.ksr05 import kosorok_bracketing_number
+from morie.fn.ksr05 import kosorok_bracketing_number
 
 
 def test_ksr05_basic():

@@ -1,7 +1,7 @@
 """Tests for slowdp.slow_dp_truncate."""
 import numpy as np
 import pytest
-from moirais.fn.slowdp import slow_dp_truncate
+from morie.fn.slowdp import slow_dp_truncate
 
 
 def test_slowdp_basic():

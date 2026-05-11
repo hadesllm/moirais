@@ -1,7 +1,7 @@
 """Tests for rng087.rangayyan_ch3_ma_filter_general."""
 import numpy as np
 import pytest
-from moirais.fn.rng087 import rangayyan_ch3_ma_filter_general
+from morie.fn.rng087 import rangayyan_ch3_ma_filter_general
 
 
 def test_rng087_basic():

@@ -1,7 +1,7 @@
 """Test dtlpl."""
 import numpy as np
 import pytest
-from moirais.fn.dtlpl import dtlpl
+from morie.fn.dtlpl import dtlpl
 
 
 def test_dtlpl_basic():

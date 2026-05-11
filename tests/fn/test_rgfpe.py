@@ -1,7 +1,7 @@
 """Tests for rgfpe.rangayyan_ar_order_fpe."""
 import numpy as np
 import pytest
-from moirais.fn.rgfpe import rangayyan_ar_order_fpe
+from morie.fn.rgfpe import rangayyan_ar_order_fpe
 
 
 def test_rgfpe_basic():

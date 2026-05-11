@@ -1,7 +1,7 @@
 """Tests for taxass.taxonomic_assignment."""
 import numpy as np
 import pytest
-from moirais.fn.taxass import taxonomic_assignment
+from morie.fn.taxass import taxonomic_assignment
 
 
 def test_taxass_basic():

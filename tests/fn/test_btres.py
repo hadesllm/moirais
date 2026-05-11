@@ -1,7 +1,7 @@
 """Tests for btres.boot_residual_regression."""
 import numpy as np
 import pytest
-from moirais.fn.btres import boot_residual_regression
+from morie.fn.btres import boot_residual_regression
 
 
 def test_btres_basic():

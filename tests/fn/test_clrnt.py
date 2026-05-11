@@ -1,7 +1,7 @@
 """Tests for clrnt.clearance_intrinsic."""
 import numpy as np
 import pytest
-from moirais.fn.clrnt import clearance_intrinsic
+from morie.fn.clrnt import clearance_intrinsic
 
 
 def test_clrnt_basic():

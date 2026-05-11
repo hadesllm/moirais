@@ -1,7 +1,7 @@
 """Tests for rgmfcc.rangayyan_mfcc."""
 import numpy as np
 import pytest
-from moirais.fn.rgmfcc import rangayyan_mfcc
+from morie.fn.rgmfcc import rangayyan_mfcc
 
 
 def test_rgmfcc_basic():

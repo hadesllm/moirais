@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tdcox -- Time-dependent covariates Cox."""
+"""Tests for morie.fn.tdcox -- Time-dependent covariates Cox."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tdcox import tdcox
+from morie.fn.tdcox import tdcox
 
 
 @pytest.fixture()
@@ -38,5 +38,5 @@ def test_hr_positive(td_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.tdcox import cheatsheet
+    from morie.fn.tdcox import cheatsheet
     assert "time-dependent" in cheatsheet().lower()

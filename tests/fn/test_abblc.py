@@ -1,7 +1,7 @@
 """Test abblc."""
 import numpy as np
 import pytest
-from moirais.fn.abblc import abblc
+from morie.fn.abblc import abblc
 
 
 def test_abblc_basic():

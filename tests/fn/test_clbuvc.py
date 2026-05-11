@@ -1,7 +1,7 @@
 """Tests for clbuvc.club_upper_bound."""
 import numpy as np
 import pytest
-from moirais.fn.clbuvc import club_upper_bound
+from morie.fn.clbuvc import club_upper_bound
 
 
 def test_clbuvc_basic():

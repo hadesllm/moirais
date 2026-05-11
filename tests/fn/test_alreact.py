@@ -1,7 +1,7 @@
 """Tests for alreact.alammar_react_agent_loop."""
 import numpy as np
 import pytest
-from moirais.fn.alreact import alammar_react_agent_loop
+from morie.fn.alreact import alammar_react_agent_loop
 
 
 def test_alreact_basic():

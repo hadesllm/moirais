@@ -1,7 +1,7 @@
 """Tests for km134.kamath_ch9_clip_text_to_image."""
 import numpy as np
 import pytest
-from moirais.fn.km134 import kamath_ch9_clip_text_to_image
+from morie.fn.km134 import kamath_ch9_clip_text_to_image
 
 
 def test_km134_basic():

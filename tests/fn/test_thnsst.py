@@ -1,7 +1,7 @@
 """Tests for thnsst.thiessen_polygons."""
 import numpy as np
 import pytest
-from moirais.fn.thnsst import thiessen_polygons
+from morie.fn.thnsst import thiessen_polygons
 
 
 def test_thnsst_basic():

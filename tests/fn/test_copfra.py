@@ -1,7 +1,7 @@
 """Tests for copfra.frank_copula."""
 import numpy as np
 import pytest
-from moirais.fn.copfra import frank_copula
+from morie.fn.copfra import frank_copula
 
 
 def test_copfra_basic():

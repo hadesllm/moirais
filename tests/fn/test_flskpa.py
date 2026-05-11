@@ -1,7 +1,7 @@
 """Tests for flskpa.fleiss_kappa."""
 import numpy as np
 import pytest
-from moirais.fn.flskpa import fleiss_kappa
+from morie.fn.flskpa import fleiss_kappa
 
 
 def test_flskpa_basic():

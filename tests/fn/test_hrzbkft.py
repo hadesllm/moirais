@@ -1,7 +1,7 @@
 """Tests for hrzbkft.horowitz_backfitting."""
 import numpy as np
 import pytest
-from moirais.fn.hrzbkft import horowitz_backfitting
+from morie.fn.hrzbkft import horowitz_backfitting
 
 
 def test_hrzbkft_basic():

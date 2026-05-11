@@ -1,7 +1,7 @@
 """Tests for comet.comet."""
 import numpy as np
 import pytest
-from moirais.fn.comet import comet
+from morie.fn.comet import comet
 
 
 def test_comet_basic():

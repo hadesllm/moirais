@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ctrfn — Control function approach."""
+"""Tests for morie.fn.ctrfn — Control function approach."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ctrfn import ctrfn
+from morie.fn.ctrfn import ctrfn
 
 
 @pytest.fixture()

@@ -1,7 +1,7 @@
 """Tests for ppswrs.pps_with_replacement."""
 import numpy as np
 import pytest
-from moirais.fn.ppswrs import pps_with_replacement
+from morie.fn.ppswrs import pps_with_replacement
 
 
 def test_ppswrs_basic():

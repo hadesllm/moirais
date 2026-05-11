@@ -1,7 +1,7 @@
 """Tests for gpmoe.gp_mixture_of_experts."""
 import numpy as np
 import pytest
-from moirais.fn.gpmoe import gp_mixture_of_experts
+from morie.fn.gpmoe import gp_mixture_of_experts
 
 
 def test_gpmoe_basic():

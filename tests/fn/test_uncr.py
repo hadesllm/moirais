@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.uncr -- entropy production."""
+"""Tests for morie.fn.uncr -- entropy production."""
 
 import numpy as np
-from moirais.fn.uncr import entropy_production, uncr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.uncr import entropy_production, uncr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestUncr:

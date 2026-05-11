@@ -1,7 +1,7 @@
 """Tests for rgrbf.rangayyan_rbf_network."""
 import numpy as np
 import pytest
-from moirais.fn.rgrbf import rangayyan_rbf_network
+from morie.fn.rgrbf import rangayyan_rbf_network
 
 
 def test_rgrbf_basic():

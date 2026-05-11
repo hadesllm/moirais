@@ -1,7 +1,7 @@
 """Tests for kmtemp.kamath_temperature_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.kmtemp import kamath_temperature_sampling
+from morie.fn.kmtemp import kamath_temperature_sampling
 
 
 def test_kmtemp_basic():

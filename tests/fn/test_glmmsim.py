@@ -1,7 +1,7 @@
 """Tests for glmmsim."""
 import numpy as np
 import pytest
-from moirais.fn.glmmsim import glmmsim
+from morie.fn.glmmsim import glmmsim
 
 
 def test_glmmsim_basic():
@@ -27,5 +27,5 @@ def test_glmmsim_no_data():
 
 
 def test_glmmsim_alias():
-    from moirais.fn.glmmsim import glmmsim
+    from morie.fn.glmmsim import glmmsim
     assert glmmsim is glmmsim

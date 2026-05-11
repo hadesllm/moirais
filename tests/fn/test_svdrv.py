@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svdrv -- Directional voting model (Rabinowitz-Macdonald)"""
+"""Tests for morie.fn.svdrv -- Directional voting model (Rabinowitz-Macdonald)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svdrv import directional_vote
+from morie.fn.svdrv import directional_vote
 
 
 class TestDirectionalVote:

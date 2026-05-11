@@ -1,7 +1,7 @@
 """Tests for sbert.sbert."""
 import numpy as np
 import pytest
-from moirais.fn.sbert import sbert
+from morie.fn.sbert import sbert
 
 
 def test_sbert_basic():

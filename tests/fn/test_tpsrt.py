@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.tpsrt."""
-from moirais.fn.tpsrt import tpsrt
+"""Tests for morie.fn.tpsrt."""
+from morie.fn.tpsrt import tpsrt
 
 
 def test_tpsrt_smoke():
@@ -10,7 +10,7 @@ def test_tpsrt_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.tpsrt import cheatsheet
+    from morie.fn.tpsrt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

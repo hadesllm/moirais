@@ -1,7 +1,7 @@
 """Tests for getisg.getis_ord_g."""
 import numpy as np
 import pytest
-from moirais.fn.getisg import getis_ord_g
+from morie.fn.getisg import getis_ord_g
 
 
 def test_getisg_basic():

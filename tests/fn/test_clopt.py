@@ -1,7 +1,7 @@
 """Test clopt."""
 import numpy as np
 import pytest
-from moirais.fn.clopt import clopt
+from morie.fn.clopt import clopt
 
 
 def test_clopt_basic():

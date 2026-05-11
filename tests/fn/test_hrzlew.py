@@ -1,7 +1,7 @@
 """Tests for hrzlew.horowitz_lewbel_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.hrzlew import horowitz_lewbel_estimator
+from morie.fn.hrzlew import horowitz_lewbel_estimator
 
 
 def test_hrzlew_basic():

@@ -1,7 +1,7 @@
 """Tests for confm.confusion_matrix_metrics."""
 import numpy as np
 import pytest
-from moirais.fn.confm import confusion_matrix_metrics
+from morie.fn.confm import confusion_matrix_metrics
 
 
 def test_confm_basic():

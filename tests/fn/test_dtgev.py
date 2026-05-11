@@ -1,7 +1,7 @@
 """Test dtgev."""
 import numpy as np
 import pytest
-from moirais.fn.dtgev import dtgev
+from morie.fn.dtgev import dtgev
 
 
 def test_dtgev_basic():

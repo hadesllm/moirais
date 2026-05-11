@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptkda -- Adaptive kernel density"""
+"""Tests for morie.fn.ptkda -- Adaptive kernel density"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptkda import kde_adaptive
+from morie.fn.ptkda import kde_adaptive
 
 
 class TestKdeAdaptive:

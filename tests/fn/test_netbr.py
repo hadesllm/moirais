@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netbr — Bridge centrality."""
+"""Tests for morie.fn.netbr — Bridge centrality."""
 
 import numpy as np
 import pytest
-from moirais.fn.netbr import network_bridge
+from morie.fn.netbr import network_bridge
 
 
 class TestNetworkBridge:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgamm — gamma kernel density."""
+"""Tests for morie.fn.kgamm — gamma kernel density."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgamm import kgamm
+from morie.fn.kgamm import kgamm
 
 
 class TestKgamm:

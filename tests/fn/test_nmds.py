@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.nmds -- Non-metric MDS."""
+"""Tests for morie.fn.nmds -- Non-metric MDS."""
 
 import numpy as np
-from moirais.fn.nmds import nmds
-from moirais.fn._containers import MdsRes
+from morie.fn.nmds import nmds
+from morie.fn._containers import MdsRes
 
 
 class TestNmds:

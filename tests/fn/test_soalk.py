@@ -1,7 +1,7 @@
 """Test soalk."""
 import numpy as np
 import pytest
-from moirais.fn.soalk import soalk
+from morie.fn.soalk import soalk
 
 
 def test_soalk_basic():

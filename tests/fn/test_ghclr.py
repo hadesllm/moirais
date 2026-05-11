@@ -1,7 +1,7 @@
 """Test ghclr."""
 import numpy as np
 import pytest
-from moirais.fn.ghclr import ghclr
+from morie.fn.ghclr import ghclr
 
 
 def test_ghclr_basic():

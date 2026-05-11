@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.odm_p — OTIS demo proportion."""
+"""Tests for morie.fn.odm_p — OTIS demo proportion."""
 
 import pytest
 import pandas as pd
-from moirais.fn.odm_p import otis_demo_proportion
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.odm_p import otis_demo_proportion
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOtisDemoProportion:

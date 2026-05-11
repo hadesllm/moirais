@@ -1,7 +1,7 @@
 """Tests for cttamx.ctt_alpha_max."""
 import numpy as np
 import pytest
-from moirais.fn.cttamx import ctt_alpha_max
+from morie.fn.cttamx import ctt_alpha_max
 
 
 def test_cttamx_basic():

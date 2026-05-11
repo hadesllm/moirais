@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.umnsh."""
+"""Tests for morie.fn.umnsh."""
 
 import numpy as np
 import pytest
-from moirais.fn.umnsh import umnsh
+from morie.fn.umnsh import umnsh
 
 
 class TestUmnsh:

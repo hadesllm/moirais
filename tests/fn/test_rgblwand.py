@@ -1,7 +1,7 @@
 """Tests for rgblwand.rangayyan_baseline_wander."""
 import numpy as np
 import pytest
-from moirais.fn.rgblwand import rangayyan_baseline_wander
+from morie.fn.rgblwand import rangayyan_baseline_wander
 
 
 def test_rgblwand_basic():

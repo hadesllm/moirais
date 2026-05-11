@@ -1,7 +1,7 @@
 """Tests for hrzdimr.horowitz_dimension_reduction."""
 import numpy as np
 import pytest
-from moirais.fn.hrzdimr import horowitz_dimension_reduction
+from morie.fn.hrzdimr import horowitz_dimension_reduction
 
 
 def test_hrzdimr_basic():

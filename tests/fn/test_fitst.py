@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.fitst -- correct classification rate."""
+"""Tests for morie.fn.fitst -- correct classification rate."""
 import numpy as np
-from moirais.fn.fitst import fit_statistic_correct, fitst
+from morie.fn.fitst import fit_statistic_correct, fitst
 
 
 def test_alias():

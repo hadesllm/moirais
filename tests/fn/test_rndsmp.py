@@ -1,7 +1,7 @@
 """Test rndsmp."""
 import numpy as np
 import pytest
-from moirais.fn.rndsmp import rndsmp
+from morie.fn.rndsmp import rndsmp
 
 
 def test_rndsmp_basic():

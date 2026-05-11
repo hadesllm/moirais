@@ -1,7 +1,7 @@
 """Test manit."""
 import numpy as np
 import pytest
-from moirais.fn.manit import manit
+from morie.fn.manit import manit
 
 
 def test_manit_basic():

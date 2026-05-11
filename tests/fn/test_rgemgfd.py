@@ -1,7 +1,7 @@
 """Tests for rgemgfd.rangayyan_emg_fractal_dim."""
 import numpy as np
 import pytest
-from moirais.fn.rgemgfd import rangayyan_emg_fractal_dim
+from morie.fn.rgemgfd import rangayyan_emg_fractal_dim
 
 
 def test_rgemgfd_basic():

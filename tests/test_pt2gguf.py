@@ -1,9 +1,9 @@
-"""Tests for moirais.pt2gguf — PyTorch checkpoint to GGUF converter."""
+"""Tests for morie.pt2gguf — PyTorch checkpoint to GGUF converter."""
 
 import numpy as np
 import pytest
 
-from moirais.pt2gguf import _map_tensor_name
+from morie.pt2gguf import _map_tensor_name
 
 
 # ---------------------------------------------------------------------------
@@ -158,7 +158,7 @@ class TestGGUFRoundTrip:
         gguf_path = tmp_path / "test_f32.gguf"
 
         # Mock tokenizer loading to avoid needing a real pickle
-        import moirais.pt2gguf as pt2gguf_mod
+        import morie.pt2gguf as pt2gguf_mod
         monkeypatch.setattr(pt2gguf_mod, "_load_autoresearch_tokenizer",
                             lambda _dir: _fake_tokenizer_info())
 
@@ -169,7 +169,7 @@ class TestGGUFRoundTrip:
             turbo_bits=0,
         )
 
-        from moirais.gguf_loader import GGUFModel
+        from morie.gguf_loader import GGUFModel
         model = GGUFModel(gguf_path)
 
         yield model, config, np_dict
@@ -178,7 +178,7 @@ class TestGGUFRoundTrip:
 
     def test_metadata_architecture(self, roundtrip_data):
         model, config, _ = roundtrip_data
-        assert model.config["architecture"] == "moirais_gpt"
+        assert model.config["architecture"] == "morie_gpt"
 
     def test_metadata_block_count(self, roundtrip_data):
         model, config, _ = roundtrip_data
@@ -283,7 +283,7 @@ class TestGGUFRoundTrip:
 
 
 # ---------------------------------------------------------------------------
-# TestTurboQuantRoundTrip — requires torch + moirais.quant
+# TestTurboQuantRoundTrip — requires torch + morie.quant
 # ---------------------------------------------------------------------------
 
 
@@ -302,7 +302,7 @@ class TestTurboQuantRoundTrip:
         )
         gguf_path = tmp_path / "test_tq3.gguf"
 
-        import moirais.pt2gguf as pt2gguf_mod
+        import morie.pt2gguf as pt2gguf_mod
         monkeypatch.setattr(pt2gguf_mod, "_load_autoresearch_tokenizer",
                             lambda _dir: _fake_tokenizer_info())
 
@@ -313,7 +313,7 @@ class TestTurboQuantRoundTrip:
             turbo_bits=3,
         )
 
-        from moirais.gguf_loader import GGUFModel
+        from morie.gguf_loader import GGUFModel
         model = GGUFModel(gguf_path)
 
         yield model, config, np_dict
@@ -375,5 +375,5 @@ class TestTurboQuantRoundTrip:
         """TQ3-compressed file should exist and be loadable (size check is implicit)."""
         model, config, _ = tq_roundtrip
         # If we got here, the file was created and loaded successfully.
-        assert model.config["architecture"] == "moirais_gpt"
+        assert model.config["architecture"] == "morie_gpt"
         assert len(model.tensor_names()) > 0

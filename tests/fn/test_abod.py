@@ -1,7 +1,7 @@
 """Tests for abod.abod."""
 import numpy as np
 import pytest
-from moirais.fn.abod import abod
+from morie.fn.abod import abod
 
 
 def test_abod_basic():

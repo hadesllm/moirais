@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.siuot — SIU outcome."""
+"""Tests for morie.fn.siuot — SIU outcome."""
 
 import pytest
-from moirais.fn.siuot import siu_outcome
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.siuot import siu_outcome
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSiuOutcome:

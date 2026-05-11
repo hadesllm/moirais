@@ -1,7 +1,7 @@
 """Test vmexp."""
 import numpy as np
 import pytest
-from moirais.fn.vmexp import vmexp
+from morie.fn.vmexp import vmexp
 
 
 def test_vmexp_basic():

@@ -1,7 +1,7 @@
 """Test rsfcv."""
 import numpy as np
 import pytest
-from moirais.fn.rsfcv import rsfcv
+from morie.fn.rsfcv import rsfcv
 
 
 def test_rsfcv_basic():

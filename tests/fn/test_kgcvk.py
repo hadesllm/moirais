@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgcvk -- Kriging k-fold cross-validation"""
+"""Tests for morie.fn.kgcvk -- Kriging k-fold cross-validation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgcvk import kriging_cv_kfold
+from morie.fn.kgcvk import kriging_cv_kfold
 
 
 class TestKrigingCvKfold:

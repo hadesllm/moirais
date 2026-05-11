@@ -1,7 +1,7 @@
 """Tests for zscoreA.zscore_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.zscoreA import zscore_anomaly
+from morie.fn.zscoreA import zscore_anomaly
 
 
 def test_zscoreA_basic():

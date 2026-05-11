@@ -1,7 +1,7 @@
 """Tests for svdpp.svdpp."""
 import numpy as np
 import pytest
-from moirais.fn.svdpp import svdpp
+from morie.fn.svdpp import svdpp
 
 
 def test_svdpp_basic():

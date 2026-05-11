@@ -1,7 +1,7 @@
 """Tests for hmcod.geron_curse_dimensionality."""
 import numpy as np
 import pytest
-from moirais.fn.hmcod import geron_curse_dimensionality
+from morie.fn.hmcod import geron_curse_dimensionality
 
 
 def test_hmcod_basic():

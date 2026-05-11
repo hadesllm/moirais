@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.causal import (
+from morie.causal import (
     estimate_att,
     estimate_atc,
     estimate_cate,
@@ -316,7 +316,7 @@ class TestEstimateLATE:
 @pytest.mark.skipif(not HAS_DOUBLEML, reason="DoubleML not installed")
 class TestEstimateIRM:
     def test_irm_returns_dict(self, causal_df):
-        from moirais.causal import estimate_irm
+        from morie.causal import estimate_irm
         result = estimate_irm(
             causal_df, treatment="treatment", outcome="outcome",
             covariates=["x1", "x2"], n_folds=2,
@@ -326,7 +326,7 @@ class TestEstimateIRM:
         assert result["method"] == "IRM (DoubleML)"
 
     def test_irm_positive_effect(self, causal_df):
-        from moirais.causal import estimate_irm
+        from morie.causal import estimate_irm
         result = estimate_irm(
             causal_df, treatment="treatment", outcome="outcome",
             covariates=["x1", "x2"], n_folds=2,

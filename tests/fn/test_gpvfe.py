@@ -1,7 +1,7 @@
 """Tests for gpvfe."""
 import numpy as np
 import pytest
-from moirais.fn.gpvfe import gpvfe
+from morie.fn.gpvfe import gpvfe
 
 
 def test_gpvfe_basic():
@@ -27,5 +27,5 @@ def test_gpvfe_no_data():
 
 
 def test_gpvfe_alias():
-    from moirais.fn.gpvfe import gpvfe
+    from morie.fn.gpvfe import gpvfe
     assert gpvfe is gpvfe

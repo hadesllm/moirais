@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxtnd -- Spatial tensor decomposition"""
+"""Tests for morie.fn.zxtnd -- Spatial tensor decomposition"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxtnd import tensor_decomp_sp
+from morie.fn.zxtnd import tensor_decomp_sp
 
 
 class TestTensorDecompSp:

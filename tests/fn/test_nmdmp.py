@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmdmp -- Party divergence measure"""
+"""Tests for morie.fn.nmdmp -- Party divergence measure"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmdmp import party_diverge
+from morie.fn.nmdmp import party_diverge
 
 
 class TestPartyDiverge:

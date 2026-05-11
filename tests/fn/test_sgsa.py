@@ -1,6 +1,6 @@
 """Tests for simulated annealing spatial."""
 import numpy as np
-from moirais.fn.sgsa import sgsa
+from morie.fn.sgsa import sgsa
 
 
 def test_sgsa_smoke():
@@ -15,7 +15,7 @@ def test_sgsa_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgsa import cheatsheet
+    from morie.fn.sgsa import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

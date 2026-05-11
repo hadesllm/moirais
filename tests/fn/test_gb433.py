@@ -1,7 +1,7 @@
 """Tests for gb433.gibbons_ks_kolmogorov_limit."""
 import numpy as np
 import pytest
-from moirais.fn.gb433 import gibbons_ks_kolmogorov_limit
+from morie.fn.gb433 import gibbons_ks_kolmogorov_limit
 
 
 def test_gb433_basic():

@@ -1,7 +1,7 @@
 """Tests for posvt.positivity_assumption."""
 import numpy as np
 import pytest
-from moirais.fn.posvt import positivity_assumption
+from morie.fn.posvt import positivity_assumption
 
 
 def test_posvt_basic():

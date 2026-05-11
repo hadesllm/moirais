@@ -1,7 +1,7 @@
 """Tests for prratio.prevalence_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.prratio import prevalence_ratio
+from morie.fn.prratio import prevalence_ratio
 
 
 def test_prratio_basic():

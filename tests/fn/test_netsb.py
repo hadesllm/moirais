@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netsb — Network stability (CS coefficient)."""
+"""Tests for morie.fn.netsb — Network stability (CS coefficient)."""
 
 import numpy as np
 import pytest
-from moirais.fn.netsb import network_stability
+from morie.fn.netsb import network_stability
 
 
 class TestNetworkStability:

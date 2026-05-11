@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfpwr."""
+"""Tests for morie.fn.cfpwr."""
 
 import numpy as np
 import pytest
-from moirais.fn.cfpwr import cfpwr
+from morie.fn.cfpwr import cfpwr
 
 
 class TestCfpwr:

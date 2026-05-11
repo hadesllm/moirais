@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.sncav import sync_avg, sncav
-from moirais.fn._containers import SignalResult
+from morie.fn.sncav import sync_avg, sncav
+from morie.fn._containers import SignalResult
 
 
 class TestSyncAvg:

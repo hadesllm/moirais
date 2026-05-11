@@ -1,7 +1,7 @@
 """Tests for divgvs.discriminant_validity."""
 import numpy as np
 import pytest
-from moirais.fn.divgvs import discriminant_validity
+from morie.fn.divgvs import discriminant_validity
 
 
 def test_divgvs_basic():

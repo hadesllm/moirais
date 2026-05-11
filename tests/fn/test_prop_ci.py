@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.prop_ci -- proportion confidence interval."""
+"""Tests for morie.fn.prop_ci -- proportion confidence interval."""
 
 import pytest
-from moirais.fn.prop_ci import proportion_ci
+from morie.fn.prop_ci import proportion_ci
 
 
 class TestProportionCI:

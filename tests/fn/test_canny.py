@@ -1,7 +1,7 @@
 """Test canny."""
 import numpy as np
 import pytest
-from moirais.fn.canny import canny
+from morie.fn.canny import canny
 
 
 def test_canny_basic():

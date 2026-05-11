@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zecss -- Spatial CUSUM aberration detection"""
+"""Tests for morie.fn.zecss -- Spatial CUSUM aberration detection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zecss import cusum_spatial
+from morie.fn.zecss import cusum_spatial
 
 
 class TestCusumSpatial:

@@ -1,6 +1,6 @@
 """Tests for irtab — ability estimation."""
 import numpy as np
-from moirais.fn.irtab import irtab
+from morie.fn.irtab import irtab
 
 def test_irtab_basic():
     responses = np.array([1, 0, 1, 1, 0])
@@ -10,7 +10,7 @@ def test_irtab_basic():
 
 
 def test_cheatsheet():
-    from moirais.fn.irtab import cheatsheet
+    from morie.fn.irtab import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

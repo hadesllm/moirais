@@ -1,6 +1,6 @@
 """Tests for BLUP spatial."""
 import numpy as np
-from moirais.fn.sgblp import sgblp
+from morie.fn.sgblp import sgblp
 
 
 def test_sgblp_smoke():
@@ -16,7 +16,7 @@ def test_sgblp_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgblp import cheatsheet
+    from morie.fn.sgblp import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

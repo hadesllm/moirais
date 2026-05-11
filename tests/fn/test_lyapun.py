@@ -1,7 +1,7 @@
 """Tests for lyapun.lyapunov_exponent."""
 import numpy as np
 import pytest
-from moirais.fn.lyapun import lyapunov_exponent
+from morie.fn.lyapun import lyapunov_exponent
 
 
 def test_lyapun_basic():

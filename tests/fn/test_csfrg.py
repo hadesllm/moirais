@@ -1,7 +1,7 @@
 """Test csfrg."""
 import numpy as np
 import pytest
-from moirais.fn.csfrg import csfrg
+from morie.fn.csfrg import csfrg
 
 
 def test_csfrg_basic():

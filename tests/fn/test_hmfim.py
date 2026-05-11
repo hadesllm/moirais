@@ -1,7 +1,7 @@
 """Tests for hmfim.geron_feature_importance."""
 import numpy as np
 import pytest
-from moirais.fn.hmfim import geron_feature_importance
+from morie.fn.hmfim import geron_feature_importance
 
 
 def test_hmfim_basic():

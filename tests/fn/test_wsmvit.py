@@ -1,7 +1,7 @@
 """Tests for wsmvit.wasserman_viterbi."""
 import numpy as np
 import pytest
-from moirais.fn.wsmvit import wasserman_viterbi
+from morie.fn.wsmvit import wasserman_viterbi
 
 
 def test_wsmvit_basic():

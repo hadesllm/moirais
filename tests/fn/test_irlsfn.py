@@ -1,7 +1,7 @@
 """Tests for irlsfn.irls_solver."""
 import numpy as np
 import pytest
-from moirais.fn.irlsfn import irls_solver
+from morie.fn.irlsfn import irls_solver
 
 
 def test_irlsfn_basic():

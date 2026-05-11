@@ -1,7 +1,7 @@
 """Tests for hrzfnu.horowitz_deconv_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.hrzfnu import horowitz_deconv_estimator
+from morie.fn.hrzfnu import horowitz_deconv_estimator
 
 
 def test_hrzfnu_basic():

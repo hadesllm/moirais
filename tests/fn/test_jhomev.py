@@ -1,7 +1,7 @@
 """Tests for jhomev.johansen_max_eigen."""
 import numpy as np
 import pytest
-from moirais.fn.jhomev import johansen_max_eigen
+from morie.fn.jhomev import johansen_max_eigen
 
 
 def test_jhomev_basic():

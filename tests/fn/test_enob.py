@@ -1,6 +1,6 @@
 """Test enob_compute (enob)."""
-from moirais.fn.enob import enob_compute, enob
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.enob import enob_compute, enob
+from morie.fn._containers import DescriptiveResult
 
 
 class TestEnob:

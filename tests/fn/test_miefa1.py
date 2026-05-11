@@ -1,7 +1,7 @@
 """Tests for miefa1.mi_fmi."""
 import numpy as np
 import pytest
-from moirais.fn.miefa1 import mi_fmi
+from morie.fn.miefa1 import mi_fmi
 
 
 def test_miefa1_basic():

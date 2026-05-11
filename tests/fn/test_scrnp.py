@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.scrnp -- Screening test properties."""
+"""Tests for morie.fn.scrnp -- Screening test properties."""
 
 import pytest
-from moirais.fn.scrnp import screening_properties
+from morie.fn.scrnp import screening_properties
 
 
 class TestScreening:

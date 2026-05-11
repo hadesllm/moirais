@@ -1,7 +1,7 @@
 """Test gaelev."""
 import numpy as np
 import pytest
-from moirais.fn.gaelev import gaelev
+from morie.fn.gaelev import gaelev
 
 
 def test_gaelev_basic():

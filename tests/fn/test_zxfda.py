@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxfda -- Functional data analysis spatial"""
+"""Tests for morie.fn.zxfda -- Functional data analysis spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxfda import fda_spatial
+from morie.fn.zxfda import fda_spatial
 
 
 class TestFdaSpatial:

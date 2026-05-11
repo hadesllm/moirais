@@ -1,7 +1,7 @@
 """Tests for mhmcmc.metropolis_hastings."""
 import numpy as np
 import pytest
-from moirais.fn.mhmcmc import metropolis_hastings
+from morie.fn.mhmcmc import metropolis_hastings
 
 
 def test_mhmcmc_basic():

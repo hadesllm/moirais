@@ -1,7 +1,7 @@
 """Tests for penmth.penalty_method."""
 import numpy as np
 import pytest
-from moirais.fn.penmth import penalty_method
+from morie.fn.penmth import penalty_method
 
 
 def test_penmth_basic():

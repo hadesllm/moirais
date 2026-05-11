@@ -1,7 +1,7 @@
 """Tests for gb_wcin.gibbons_concordance_incomplete."""
 import numpy as np
 import pytest
-from moirais.fn.gb_wcin import gibbons_concordance_incomplete
+from morie.fn.gb_wcin import gibbons_concordance_incomplete
 
 
 def test_gb_wcin_basic():

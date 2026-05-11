@@ -1,7 +1,7 @@
 """Tests for pate.pate."""
 import numpy as np
 import pytest
-from moirais.fn.pate import pate
+from morie.fn.pate import pate
 
 
 def test_pate_basic():

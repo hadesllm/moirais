@@ -1,7 +1,7 @@
 """Tests for hmfmn.geron_fashion_mnist."""
 import numpy as np
 import pytest
-from moirais.fn.hmfmn import geron_fashion_mnist
+from morie.fn.hmfmn import geron_fashion_mnist
 
 
 def test_hmfmn_basic():

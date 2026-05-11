@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cdsmr -- standardized mortality ratio."""
+"""Tests for morie.fn.cdsmr -- standardized mortality ratio."""
 
 import pytest
-from moirais.fn.cdsmr import standardized_mortality_ratio
+from morie.fn.cdsmr import standardized_mortality_ratio
 
 
 class TestSMR:

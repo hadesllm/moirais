@@ -1,7 +1,7 @@
 """Tests for countMd.count_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.countMd import count_mediation
+from morie.fn.countMd import count_mediation
 
 
 def test_countMd_basic():

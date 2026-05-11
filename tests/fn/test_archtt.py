@@ -1,7 +1,7 @@
 """Tests for archtt.arch_test."""
 import numpy as np
 import pytest
-from moirais.fn.archtt import arch_test
+from morie.fn.archtt import arch_test
 
 
 def test_archtt_basic():

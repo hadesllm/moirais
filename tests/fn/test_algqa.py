@@ -1,7 +1,7 @@
 """Tests for algqa.alammar_grouped_query_attention."""
 import numpy as np
 import pytest
-from moirais.fn.algqa import alammar_grouped_query_attention
+from morie.fn.algqa import alammar_grouped_query_attention
 
 
 def test_algqa_basic():

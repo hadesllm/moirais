@@ -1,7 +1,7 @@
 """Tests for msm137.mvsml_categorical_count_eq_8_7."""
 import numpy as np
 import pytest
-from moirais.fn.msm137 import mvsml_categorical_count_eq_8_7
+from morie.fn.msm137 import mvsml_categorical_count_eq_8_7
 
 
 def test_msm137_basic():

@@ -3,7 +3,7 @@ Tests for particle swarm optimization.
 """
 
 import numpy as np
-from moirais.fn.psopt import psopt
+from morie.fn.psopt import psopt
 
 
 class TestPsopt:

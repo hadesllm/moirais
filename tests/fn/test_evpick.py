@@ -1,7 +1,7 @@
 """Tests for evpick.evt_pickands_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.evpick import evt_pickands_estimator
+from morie.fn.evpick import evt_pickands_estimator
 
 
 def test_evpick_basic():

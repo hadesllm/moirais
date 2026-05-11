@@ -1,7 +1,7 @@
 """Tests for tqmsb.turboquant_mse_distortion_bound."""
 import numpy as np
 import pytest
-from moirais.fn.tqmsb import turboquant_mse_distortion_bound
+from morie.fn.tqmsb import turboquant_mse_distortion_bound
 
 
 def test_tqmsb_basic():

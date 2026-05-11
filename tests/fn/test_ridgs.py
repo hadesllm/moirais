@@ -1,7 +1,7 @@
 """Tests for ridgs.ridge_solution."""
 import numpy as np
 import pytest
-from moirais.fn.ridgs import ridge_solution
+from morie.fn.ridgs import ridge_solution
 
 
 def test_ridgs_basic():

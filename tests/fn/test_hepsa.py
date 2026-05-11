@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hepsa -- PSA."""
+"""Tests for morie.fn.hepsa -- PSA."""
 
 import pytest
-from moirais.fn.hepsa import probabilistic_sensitivity
+from morie.fn.hepsa import probabilistic_sensitivity
 
 
 class TestPSA:

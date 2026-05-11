@@ -1,6 +1,6 @@
 """Test cross-entropy loss."""
 import numpy as np
-from moirais.fn.xenty import xenty
+from morie.fn.xenty import xenty
 
 
 def test_xenty_binary():

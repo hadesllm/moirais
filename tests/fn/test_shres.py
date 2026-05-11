@@ -1,7 +1,7 @@
 """Tests for shres.schoenfeld_residual."""
 import numpy as np
 import pytest
-from moirais.fn.shres import schoenfeld_residual
+from morie.fn.shres import schoenfeld_residual
 
 
 def test_shres_basic():

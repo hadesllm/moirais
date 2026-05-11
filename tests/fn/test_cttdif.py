@@ -1,7 +1,7 @@
 """Tests for cttdif.ctt_difficulty."""
 import numpy as np
 import pytest
-from moirais.fn.cttdif import ctt_difficulty
+from morie.fn.cttdif import ctt_difficulty
 
 
 def test_cttdif_basic():

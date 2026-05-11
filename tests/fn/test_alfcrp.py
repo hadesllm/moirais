@@ -1,7 +1,7 @@
 """Tests for alfcrp.alphafold_cropping."""
 import numpy as np
 import pytest
-from moirais.fn.alfcrp import alphafold_cropping
+from morie.fn.alfcrp import alphafold_cropping
 
 
 def test_alfcrp_basic():

@@ -1,6 +1,6 @@
 """Tests for network_path_length."""
 import numpy as np, pytest
-from moirais.fn.netpl import network_path_length
+from morie.fn.netpl import network_path_length
 
 class TestNetPath:
     def test_complete(self):

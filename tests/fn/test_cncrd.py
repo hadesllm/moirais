@@ -1,7 +1,7 @@
 """Tests for cncrd.concordance_incomplete."""
 import numpy as np
 import pytest
-from moirais.fn.cncrd import concordance_incomplete
+from morie.fn.cncrd import concordance_incomplete
 
 
 def test_cncrd_basic():

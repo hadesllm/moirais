@@ -1,7 +1,7 @@
 """Tests for km035.kamath_ch2_gpt_supervised_softmax."""
 import numpy as np
 import pytest
-from moirais.fn.km035 import kamath_ch2_gpt_supervised_softmax
+from morie.fn.km035 import kamath_ch2_gpt_supervised_softmax
 
 
 def test_km035_basic():

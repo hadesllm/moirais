@@ -1,7 +1,7 @@
 """Tests for hrzq1.horowitz_quantile_regression."""
 import numpy as np
 import pytest
-from moirais.fn.hrzq1 import horowitz_quantile_regression
+from morie.fn.hrzq1 import horowitz_quantile_regression
 
 
 def test_hrzq1_basic():

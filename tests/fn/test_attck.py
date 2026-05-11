@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.attck -- attack rate and secondary attack rate."""
+"""Tests for morie.fn.attck -- attack rate and secondary attack rate."""
 
 import numpy as np
 import pytest
-from moirais.fn.attck import attack_rate, secondary_attack_rate
+from morie.fn.attck import attack_rate, secondary_attack_rate
 
 
 class TestAttackRate:

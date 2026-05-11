@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tpsdep — deployment."""
+"""Tests for morie.fn.tpsdep — deployment."""
 
 import pytest
 import pandas as pd
-from moirais.fn.tpsdep import tps_deployment
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tpsdep import tps_deployment
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDeployment:

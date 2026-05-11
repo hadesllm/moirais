@@ -1,7 +1,7 @@
 """Tests for cvxbgm.boyd_basis_pursuit."""
 import numpy as np
 import pytest
-from moirais.fn.cvxbgm import boyd_basis_pursuit
+from morie.fn.cvxbgm import boyd_basis_pursuit
 
 
 def test_cvxbgm_basic():

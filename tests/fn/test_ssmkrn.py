@@ -1,7 +1,7 @@
 """Tests for ssmkrn.s4_ssm_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.ssmkrn import s4_ssm_kernel
+from morie.fn.ssmkrn import s4_ssm_kernel
 
 
 def test_ssmkrn_basic():

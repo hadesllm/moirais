@@ -1,7 +1,7 @@
 """Tests for grsdpa.geron_scaled_dot_product_attention."""
 import numpy as np
 import pytest
-from moirais.fn.grsdpa import geron_scaled_dot_product_attention
+from morie.fn.grsdpa import geron_scaled_dot_product_attention
 
 
 def test_grsdpa_basic():

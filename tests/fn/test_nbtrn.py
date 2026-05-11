@@ -1,7 +1,7 @@
 """Test nbtrn."""
 import numpy as np
 import pytest
-from moirais.fn.nbtrn import nbtrn
+from morie.fn.nbtrn import nbtrn
 
 
 def test_nbtrn_basic():

@@ -1,7 +1,7 @@
 """Test gcjet."""
 import numpy as np
 import pytest
-from moirais.fn.gcjet import gcjet
+from morie.fn.gcjet import gcjet
 
 
 def test_gcjet_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sspace — state-space model via Kalman filter."""
+"""Tests for morie.fn.sspace — state-space model via Kalman filter."""
 import numpy as np
 import pytest
-from moirais.fn.sspace import state_space
+from morie.fn.sspace import state_space
 
 
 class TestStateSpace:

@@ -1,7 +1,7 @@
 """Tests for epimet.epinow2."""
 import numpy as np
 import pytest
-from moirais.fn.epimet import epinow2
+from morie.fn.epimet import epinow2
 
 
 def test_epimet_basic():

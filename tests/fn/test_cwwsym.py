@@ -1,7 +1,7 @@
 """Tests for cwwsym.cwt_morlet."""
 import numpy as np
 import pytest
-from moirais.fn.cwwsym import cwt_morlet
+from morie.fn.cwwsym import cwt_morlet
 
 
 def test_cwwsym_basic():

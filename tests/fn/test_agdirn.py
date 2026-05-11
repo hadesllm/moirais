@@ -1,7 +1,7 @@
 """Tests for agdirn.alphazero_dirichlet_noise."""
 import numpy as np
 import pytest
-from moirais.fn.agdirn import alphazero_dirichlet_noise
+from morie.fn.agdirn import alphazero_dirichlet_noise
 
 
 def test_agdirn_basic():

@@ -1,7 +1,7 @@
 """Test gehlc."""
 import numpy as np
 import pytest
-from moirais.fn.gehlc import gehlc
+from morie.fn.gehlc import gehlc
 
 
 def test_gehlc_basic():

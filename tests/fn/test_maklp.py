@@ -1,7 +1,7 @@
 """Test maklp."""
 import numpy as np
 import pytest
-from moirais.fn.maklp import maklp
+from morie.fn.maklp import maklp
 
 
 def test_maklp_basic():

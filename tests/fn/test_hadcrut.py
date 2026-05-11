@@ -1,7 +1,7 @@
 """Tests for hadcrut.hadcrut."""
 import numpy as np
 import pytest
-from moirais.fn.hadcrut import hadcrut
+from morie.fn.hadcrut import hadcrut
 
 
 def test_hadcrut_basic():

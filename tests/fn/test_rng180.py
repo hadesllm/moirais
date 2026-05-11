@@ -1,7 +1,7 @@
 """Tests for rng180.rangayyan_ch4_qrs_smoothing_ma_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rng180 import rangayyan_ch4_qrs_smoothing_ma_filter
+from morie.fn.rng180 import rangayyan_ch4_qrs_smoothing_ma_filter
 
 
 def test_rng180_basic():

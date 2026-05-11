@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svgau -- Gaussian spatial utility function"""
+"""Tests for morie.fn.svgau -- Gaussian spatial utility function"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svgau import gauss_utility
+from morie.fn.svgau import gauss_utility
 
 
 class TestGaussUtility:

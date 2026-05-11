@@ -1,7 +1,7 @@
 """Test gemnf."""
 import numpy as np
 import pytest
-from moirais.fn.gemnf import gemnf
+from morie.fn.gemnf import gemnf
 
 
 def test_gemnf_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.brkts — Bracketing number estimation."""
+"""Tests for morie.fn.brkts — Bracketing number estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.brkts import brkts, BracketingResult
+from morie.fn.brkts import brkts, BracketingResult
 
 
 def test_returns_result_type():

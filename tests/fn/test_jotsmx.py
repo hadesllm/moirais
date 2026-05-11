@@ -1,7 +1,7 @@
 """Tests for jotsmx.joseph_tsmixer."""
 import numpy as np
 import pytest
-from moirais.fn.jotsmx import joseph_tsmixer
+from morie.fn.jotsmx import joseph_tsmixer
 
 
 def test_jotsmx_basic():

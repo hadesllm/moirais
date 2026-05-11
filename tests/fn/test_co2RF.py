@@ -1,7 +1,7 @@
 """Tests for co2RF.radiative_forcing_co2."""
 import numpy as np
 import pytest
-from moirais.fn.co2RF import radiative_forcing_co2
+from morie.fn.co2RF import radiative_forcing_co2
 
 
 def test_co2RF_basic():

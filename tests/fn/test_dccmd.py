@@ -1,7 +1,7 @@
 """Tests for dccmd.dcc_multivariate_garch."""
 import numpy as np
 import pytest
-from moirais.fn.dccmd import dcc_multivariate_garch
+from morie.fn.dccmd import dcc_multivariate_garch
 
 
 def test_dccmd_basic():

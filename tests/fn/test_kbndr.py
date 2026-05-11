@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kbndr — boundary-corrected KDE."""
+"""Tests for morie.fn.kbndr — boundary-corrected KDE."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kbndr import kbndr
+from morie.fn.kbndr import kbndr
 
 
 class TestKbndr:

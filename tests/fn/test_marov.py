@@ -1,7 +1,7 @@
 """Test marov."""
 import numpy as np
 import pytest
-from moirais.fn.marov import marov
+from morie.fn.marov import marov
 
 
 def test_marov_basic():

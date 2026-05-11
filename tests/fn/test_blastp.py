@@ -1,7 +1,7 @@
 """Tests for blastp.blast_protein."""
 import numpy as np
 import pytest
-from moirais.fn.blastp import blast_protein
+from morie.fn.blastp import blast_protein
 
 
 def test_blastp_basic():

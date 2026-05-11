@@ -1,6 +1,6 @@
 """Test bbtrs."""
 import numpy as np
-from moirais.fn.bbtrs import blackbox_transpose
+from morie.fn.bbtrs import blackbox_transpose
 
 
 def test_bbtrs_basic():

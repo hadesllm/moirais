@@ -1,7 +1,7 @@
 """Test fomort."""
 import numpy as np
 import pytest
-from moirais.fn.fomort import fomort
+from morie.fn.fomort import fomort
 
 
 def test_fomort_basic():

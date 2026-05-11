@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cv -- coefficient of variation."""
+"""Tests for morie.fn.cv -- coefficient of variation."""
 
 import numpy as np
 import pytest
-from moirais.fn.cv import coefficient_of_variation
+from morie.fn.cv import coefficient_of_variation
 
 
 class TestCoefficientOfVariation:

@@ -1,7 +1,7 @@
 """Tests for grpex.geron_prioritized_experience_weight."""
 import numpy as np
 import pytest
-from moirais.fn.grpex import geron_prioritized_experience_weight
+from morie.fn.grpex import geron_prioritized_experience_weight
 
 
 def test_grpex_basic():

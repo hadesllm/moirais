@@ -1,7 +1,7 @@
 """Tests for rgomp.rangayyan_omp."""
 import numpy as np
 import pytest
-from moirais.fn.rgomp import rangayyan_omp
+from morie.fn.rgomp import rangayyan_omp
 
 
 def test_rgomp_basic():

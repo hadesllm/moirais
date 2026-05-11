@@ -1,7 +1,7 @@
 """Tests for pcgxe.pc_gxe_reduction."""
 import numpy as np
 import pytest
-from moirais.fn.pcgxe import pc_gxe_reduction
+from morie.fn.pcgxe import pc_gxe_reduction
 
 
 def test_pcgxe_basic():

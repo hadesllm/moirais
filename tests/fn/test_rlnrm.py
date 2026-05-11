@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rlnrm — lognormal random sample."""
+"""Tests for morie.fn.rlnrm — lognormal random sample."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rlnrm import rlnrm
+from morie.fn.rlnrm import rlnrm
 
 
 class TestRlnrm:

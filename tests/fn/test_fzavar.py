@@ -1,7 +1,7 @@
 """Tests for fzavar.fauzi_quantile_asymp_var."""
 import numpy as np
 import pytest
-from moirais.fn.fzavar import fauzi_quantile_asymp_var
+from morie.fn.fzavar import fauzi_quantile_asymp_var
 
 
 def test_fzavar_basic():

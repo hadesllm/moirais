@@ -1,7 +1,7 @@
 """Test wqsec."""
 import numpy as np
 import pytest
-from moirais.fn.wqsec import wqsec
+from morie.fn.wqsec import wqsec
 
 
 def test_wqsec_basic():

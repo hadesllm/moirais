@@ -1,7 +1,7 @@
 """Tests for rng244.rangayyan_ch4_complex_cepstrum_closed_form."""
 import numpy as np
 import pytest
-from moirais.fn.rng244 import rangayyan_ch4_complex_cepstrum_closed_form
+from morie.fn.rng244 import rangayyan_ch4_complex_cepstrum_closed_form
 
 
 def test_rng244_basic():

@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.ps_fit — propensity score estimation via logistic regression."""
+"""Tests for morie.fn.ps_fit — propensity score estimation via logistic regression."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.ps_fit import compute_propensity_scores
+from morie.fn.ps_fit import compute_propensity_scores
 
 
 @pytest.fixture()

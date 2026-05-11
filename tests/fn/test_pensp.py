@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pensp -- Penalized spline regression."""
+"""Tests for morie.fn.pensp -- Penalized spline regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pensp import pensp
+from morie.fn.pensp import pensp
 
 
 @pytest.fixture()
@@ -65,5 +65,5 @@ def test_gcv_score_finite(smooth_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.pensp import cheatsheet
+    from morie.fn.pensp import cheatsheet
     assert "spline" in cheatsheet().lower()

@@ -1,7 +1,7 @@
 """Tests for motiff.motif_count."""
 import numpy as np
 import pytest
-from moirais.fn.motiff import motif_count
+from morie.fn.motiff import motif_count
 
 
 def test_motiff_basic():

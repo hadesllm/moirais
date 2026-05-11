@@ -1,7 +1,7 @@
 """Tests for rgkneecl.rangayyan_knee_classify."""
 import numpy as np
 import pytest
-from moirais.fn.rgkneecl import rangayyan_knee_classify
+from morie.fn.rgkneecl import rangayyan_knee_classify
 
 
 def test_rgkneecl_basic():

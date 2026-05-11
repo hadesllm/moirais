@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.emprc — Empirical process (centered, scaled)."""
+"""Tests for morie.fn.emprc — Empirical process (centered, scaled)."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.emprc import emprc, EmpiricalProcessResult
+from morie.fn.emprc import emprc, EmpiricalProcessResult
 
 
 @pytest.fixture()

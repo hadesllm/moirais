@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.brktm -- Berkson's bias test."""
+"""Tests for morie.fn.brktm -- Berkson's bias test."""
 
 import pytest
-from moirais.fn.brktm import berkson_bias_test
+from morie.fn.brktm import berkson_bias_test
 
 
 class TestBerksonBias:

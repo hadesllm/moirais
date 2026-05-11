@@ -1,7 +1,7 @@
 """Tests for grfcn.geron_fcn_upsample."""
 import numpy as np
 import pytest
-from moirais.fn.grfcn import geron_fcn_upsample
+from morie.fn.grfcn import geron_fcn_upsample
 
 
 def test_grfcn_basic():

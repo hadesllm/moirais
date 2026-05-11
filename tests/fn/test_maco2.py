@@ -1,7 +1,7 @@
 """Test maco2."""
 import numpy as np
 import pytest
-from moirais.fn.maco2 import maco2
+from morie.fn.maco2 import maco2
 
 
 def test_maco2_basic():

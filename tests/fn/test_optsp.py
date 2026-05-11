@@ -1,7 +1,7 @@
 """Test optsp."""
 import numpy as np
 import pytest
-from moirais.fn.optsp import optsp
+from morie.fn.optsp import optsp
 
 
 def test_optsp_basic():

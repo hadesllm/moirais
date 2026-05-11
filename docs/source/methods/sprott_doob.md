@@ -1,8 +1,8 @@
 # Sprott-Doob CRIMSL + Schulich Law SIU analyses
 
-*Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
+*Part of {doc}`index` — MORIE's statistical-methods reference.*
 
-`moirais.sprott_doob` replicates the analytical contribution of four
+`morie.sprott_doob` replicates the analytical contribution of four
 research reports authored by **Prof. Jane B. Sprott** (Toronto
 Metropolitan University, formerly Ryerson) and **Prof. Anthony N.
 Doob** (University of Toronto), with **Prof. Adelina Iftene**
@@ -57,7 +57,7 @@ Ontario's (1.73 per 1000).
 The classifier operationalizes UN Mandela Rules 43 and 44:
 
 ```python
-from moirais.sprott_doob import classify_mandela
+from morie.sprott_doob import classify_mandela
 
 classify_mandela(days_in_siu=20, hrs_out_of_cell_avg=1.5,
                   missed_full_4hrs_pct_of_days=100)
@@ -75,7 +75,7 @@ counts. All five tested χ² statistics (Tables 11, 15, 22 from Feb
 2021 plus Tables 5, 10 from May 2021) reproduce to within 0.01:
 
 ```python
-from moirais.sprott_doob import verify_published_chi_squares
+from morie.sprott_doob import verify_published_chi_squares
 r = verify_published_chi_squares()
 # 5/5 pass
 ```
@@ -86,10 +86,10 @@ Use `verify_chi2(observed_table)` to recompute χ² + p-value for any
 ## Mandela-RF — applying the classifier to OTIS provincial data
 
 The Mandela 15-day threshold also applies to Ontario provincial OTIS
-data via three analyzers in `moirais.otis_all_analyze`:
+data via three analyzers in `morie.otis_all_analyze`:
 
 ```python
-from moirais.otis_all_analyze import (
+from morie.otis_all_analyze import (
     analyze_b05_mandela_classification,           # per-placement
     analyze_c11_mandela_classification,           # per-individual
     analyze_otis_mandela_provincial_vs_federal,   # cross-comparison
@@ -126,7 +126,7 @@ report.
 ## Citations
 
 ```python
-from moirais.siuiap import cite
+from morie.siuiap import cite
 
 cite("sprott_doob_torture_solitary_2021")
 # Jane B. Sprott, Anthony N. Doob (2021). Solitary Confinement,

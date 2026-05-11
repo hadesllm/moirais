@@ -1,7 +1,7 @@
 """Tests for precK.precision_at_k."""
 import numpy as np
 import pytest
-from moirais.fn.precK import precision_at_k
+from morie.fn.precK import precision_at_k
 
 
 def test_precK_basic():

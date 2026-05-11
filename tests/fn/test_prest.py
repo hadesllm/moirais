@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.prest -- PRE statistic."""
+"""Tests for morie.fn.prest -- PRE statistic."""
 import numpy as np
-from moirais.fn.prest import pre_statistic, prest
+from morie.fn.prest import pre_statistic, prest
 
 
 def test_alias():

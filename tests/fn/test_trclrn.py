@@ -1,7 +1,7 @@
 """Tests for trclrn.tree_based_regime."""
 import numpy as np
 import pytest
-from moirais.fn.trclrn import tree_based_regime
+from morie.fn.trclrn import tree_based_regime
 
 
 def test_trclrn_basic():

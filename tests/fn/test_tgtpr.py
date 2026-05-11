@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tgtpr — targeting parameter."""
+"""Tests for morie.fn.tgtpr — targeting parameter."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tgtpr import tgtpr
+from morie.fn.tgtpr import tgtpr
 
 
 def test_logit_link():

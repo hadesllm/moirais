@@ -1,7 +1,7 @@
 """Test clsom."""
 import numpy as np
 import pytest
-from moirais.fn.clsom import clsom
+from morie.fn.clsom import clsom
 
 
 def test_clsom_basic():

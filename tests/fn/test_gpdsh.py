@@ -1,7 +1,7 @@
 """Tests for gpdsh.gp_density_shift."""
 import numpy as np
 import pytest
-from moirais.fn.gpdsh import gp_density_shift
+from morie.fn.gpdsh import gp_density_shift
 
 
 def test_gpdsh_basic():

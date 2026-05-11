@@ -1,7 +1,7 @@
 """Tests for otsinkit.ot_sinkhorn_iter_count."""
 import numpy as np
 import pytest
-from moirais.fn.otsinkit import ot_sinkhorn_iter_count
+from morie.fn.otsinkit import ot_sinkhorn_iter_count
 
 
 def test_otsinkit_basic():

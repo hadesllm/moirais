@@ -1,6 +1,6 @@
 """Tests for Matern variogram."""
 import numpy as np
-from moirais.fn.sgmat import sgmat
+from morie.fn.sgmat import sgmat
 
 
 def test_sgmat_smoke():

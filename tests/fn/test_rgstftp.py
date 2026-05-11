@@ -1,7 +1,7 @@
 """Tests for rgstftp.rangayyan_stft_params."""
 import numpy as np
 import pytest
-from moirais.fn.rgstftp import rangayyan_stft_params
+from morie.fn.rgstftp import rangayyan_stft_params
 
 
 def test_rgstftp_basic():

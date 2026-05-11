@@ -1,7 +1,7 @@
 """Tests for gh_c1_2.ghosal_absolute_continuity."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c1_2 import ghosal_absolute_continuity
+from morie.fn.gh_c1_2 import ghosal_absolute_continuity
 
 
 def test_gh_c1_2_basic():

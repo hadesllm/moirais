@@ -1,7 +1,7 @@
 """Tests for krigFDA.kriging."""
 import numpy as np
 import pytest
-from moirais.fn.krigFDA import kriging
+from morie.fn.krigFDA import kriging
 
 
 def test_krigFDA_basic():

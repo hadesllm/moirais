@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.isisz — inter-spike interval analysis."""
+"""Tests for morie.fn.isisz — inter-spike interval analysis."""
 import numpy as np
 import pytest
 
-from moirais.fn.isisz import isi_analyze, isisz
+from morie.fn.isisz import isi_analyze, isisz
 
 
 def test_regular_spikes():

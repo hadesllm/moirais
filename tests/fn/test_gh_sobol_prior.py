@@ -1,7 +1,7 @@
 """Tests for gh_sobol_prior.ghosal_sobolev_prior."""
 import numpy as np
 import pytest
-from moirais.fn.gh_sobol_prior import ghosal_sobolev_prior
+from morie.fn.gh_sobol_prior import ghosal_sobolev_prior
 
 
 def test_gh_sobol_prior_basic():

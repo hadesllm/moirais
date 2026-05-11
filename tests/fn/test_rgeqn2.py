@@ -1,7 +1,7 @@
 """Tests for rgeqn2.rangayyan_ch2_multivariate."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn2 import rangayyan_ch2_multivariate
+from morie.fn.rgeqn2 import rangayyan_ch2_multivariate
 
 
 def test_rgeqn2_basic():

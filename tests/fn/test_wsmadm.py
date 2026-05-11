@@ -1,7 +1,7 @@
 """Tests for wsmadm.wasserman_admissible."""
 import numpy as np
 import pytest
-from moirais.fn.wsmadm import wasserman_admissible
+from morie.fn.wsmadm import wasserman_admissible
 
 
 def test_wsmadm_basic():

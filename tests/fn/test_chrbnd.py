@@ -1,7 +1,7 @@
 """Tests for chrbnd.chernozhukov_rosen_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.chrbnd import chernozhukov_rosen_bounds
+from morie.fn.chrbnd import chernozhukov_rosen_bounds
 
 
 def test_chrbnd_basic():

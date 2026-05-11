@@ -1,7 +1,7 @@
 """Tests for pseudo_inverse."""
 import numpy as np
 import pytest
-from moirais.fn.psinv import pseudo_inverse, psinv
+from morie.fn.psinv import pseudo_inverse, psinv
 
 
 def test_identity():

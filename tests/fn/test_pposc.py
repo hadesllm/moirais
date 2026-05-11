@@ -1,7 +1,7 @@
 """Tests for pposc.posterior_predictive_check."""
 import numpy as np
 import pytest
-from moirais.fn.pposc import posterior_predictive_check
+from morie.fn.pposc import posterior_predictive_check
 
 
 def test_pposc_basic():

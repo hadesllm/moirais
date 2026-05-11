@@ -1,7 +1,7 @@
 """Test gdhdv."""
 import numpy as np
 import pytest
-from moirais.fn.gdhdv import gdhdv
+from morie.fn.gdhdv import gdhdv
 
 
 def test_gdhdv_basic():

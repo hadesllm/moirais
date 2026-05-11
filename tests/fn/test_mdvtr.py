@@ -1,7 +1,7 @@
 """Tests for mdvtr.median_voter."""
 import numpy as np
 import pytest
-from moirais.fn.mdvtr import median_voter
+from morie.fn.mdvtr import median_voter
 
 
 def test_mdvtr_basic():

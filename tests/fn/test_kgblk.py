@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgblk -- Block kriging prediction"""
+"""Tests for morie.fn.kgblk -- Block kriging prediction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgblk import block_kriging
+from morie.fn.kgblk import block_kriging
 
 
 class TestBlockKriging:

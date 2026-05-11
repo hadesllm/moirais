@@ -1,7 +1,7 @@
 """Test qt_interval (qtint)."""
 import numpy as np
-from moirais.fn.qtint import qt_interval, qtint
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.qtint import qt_interval, qtint
+from morie.fn._containers import DescriptiveResult
 
 
 class TestQtInterval:

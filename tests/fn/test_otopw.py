@@ -1,7 +1,7 @@
 """Tests for otopw.ot_optimised_potentials_warm."""
 import numpy as np
 import pytest
-from moirais.fn.otopw import ot_optimised_potentials_warm
+from morie.fn.otopw import ot_optimised_potentials_warm
 
 
 def test_otopw_basic():

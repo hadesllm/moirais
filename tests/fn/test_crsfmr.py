@@ -1,7 +1,7 @@
 """Tests for crsfmr.crossformer."""
 import numpy as np
 import pytest
-from moirais.fn.crsfmr import crossformer
+from morie.fn.crsfmr import crossformer
 
 
 def test_crsfmr_basic():

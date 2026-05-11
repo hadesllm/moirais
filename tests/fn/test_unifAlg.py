@@ -1,7 +1,7 @@
 """Tests for unifAlg.unification."""
 import numpy as np
 import pytest
-from moirais.fn.unifAlg import unification
+from morie.fn.unifAlg import unification
 
 
 def test_unifAlg_basic():

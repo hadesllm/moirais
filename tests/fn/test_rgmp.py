@@ -1,7 +1,7 @@
 """Tests for rgmp.rangayyan_matching_pursuit."""
 import numpy as np
 import pytest
-from moirais.fn.rgmp import rangayyan_matching_pursuit
+from morie.fn.rgmp import rangayyan_matching_pursuit
 
 
 def test_rgmp_basic():

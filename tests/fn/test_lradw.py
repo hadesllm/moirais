@@ -1,7 +1,7 @@
 """Tests for lradw.lr_warmup."""
 import numpy as np
 import pytest
-from moirais.fn.lradw import lr_warmup
+from morie.fn.lradw import lr_warmup
 
 
 def test_lradw_basic():

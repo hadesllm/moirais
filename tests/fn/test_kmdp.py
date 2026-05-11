@@ -1,7 +1,7 @@
 """Tests for kmdp.kamath_differential_privacy."""
 import numpy as np
 import pytest
-from moirais.fn.kmdp import kamath_differential_privacy
+from morie.fn.kmdp import kamath_differential_privacy
 
 
 def test_kmdp_basic():

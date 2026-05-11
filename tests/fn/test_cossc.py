@@ -1,7 +1,7 @@
 """Test cost_sensitive (cossc)."""
 import numpy as np
-from moirais.fn.cossc import cost_sensitive, cossc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cossc import cost_sensitive, cossc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCossc:

@@ -1,7 +1,7 @@
 """Tests for gb2111c.gibbons_elementary_coverage_beta."""
 import numpy as np
 import pytest
-from moirais.fn.gb2111c import gibbons_elementary_coverage_beta
+from morie.fn.gb2111c import gibbons_elementary_coverage_beta
 
 
 def test_gb2111c_basic():

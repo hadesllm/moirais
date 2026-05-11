@@ -1,7 +1,7 @@
 """Tests for alfevf.alphafold_evoformer."""
 import numpy as np
 import pytest
-from moirais.fn.alfevf import alphafold_evoformer
+from morie.fn.alfevf import alphafold_evoformer
 
 
 def test_alfevf_basic():

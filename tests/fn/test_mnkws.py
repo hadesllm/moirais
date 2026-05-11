@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mnkws -- Minkowski metric."""
+"""Tests for morie.fn.mnkws -- Minkowski metric."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mnkws import mnkws
+from morie.fn.mnkws import mnkws
 
 
 def test_returns_dict():

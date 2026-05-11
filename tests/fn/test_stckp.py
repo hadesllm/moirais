@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.stckp -- Stick-breaking."""
+"""Tests for morie.fn.stckp -- Stick-breaking."""
 
-from moirais.fn.stckp import stick_breaking
+from morie.fn.stckp import stick_breaking
 
 
 def test_returns_dict():

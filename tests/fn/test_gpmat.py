@@ -1,7 +1,7 @@
 """Tests for gpmat."""
 import numpy as np
 import pytest
-from moirais.fn.gpmat import gpmat
+from morie.fn.gpmat import gpmat
 
 
 def test_gpmat_basic():
@@ -27,5 +27,5 @@ def test_gpmat_no_data():
 
 
 def test_gpmat_alias():
-    from moirais.fn.gpmat import gpmat
+    from morie.fn.gpmat import gpmat
     assert gpmat is gpmat

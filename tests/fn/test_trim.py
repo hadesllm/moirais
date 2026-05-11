@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.trim -- Propensity score trimming."""
+"""Tests for morie.fn.trim -- Propensity score trimming."""
 
 import numpy as np
 import pytest
-from moirais.fn.trim import ps_trim
+from morie.fn.trim import ps_trim
 
 
 class TestPSTrim:

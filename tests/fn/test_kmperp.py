@@ -1,7 +1,7 @@
 """Tests for kmperp.kamath_perplexity."""
 import numpy as np
 import pytest
-from moirais.fn.kmperp import kamath_perplexity
+from morie.fn.kmperp import kamath_perplexity
 
 
 def test_kmperp_basic():

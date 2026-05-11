@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svmxl -- Mixed logit spatial vote"""
+"""Tests for morie.fn.svmxl -- Mixed logit spatial vote"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svmxl import mixed_logit_vote
+from morie.fn.svmxl import mixed_logit_vote
 
 
 class TestMixedLogitVote:

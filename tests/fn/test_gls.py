@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.gls -- Generalized least squares (Cochrane-Orcutt)."""
+"""Tests for morie.fn.gls -- Generalized least squares (Cochrane-Orcutt)."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.gls import generalized_ls, gls
-from moirais.fn._containers import RegressionResult
+from morie.fn.gls import generalized_ls, gls
+from morie.fn._containers import RegressionResult
 
 
 @pytest.fixture()

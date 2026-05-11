@@ -1,7 +1,7 @@
 """Test isngm."""
 import numpy as np
 import pytest
-from moirais.fn.isngm import isngm
+from morie.fn.isngm import isngm
 
 
 def test_isngm_basic():

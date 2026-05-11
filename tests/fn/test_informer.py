@@ -1,7 +1,7 @@
 """Tests for informer.informer_long_horizon."""
 import numpy as np
 import pytest
-from moirais.fn.informer import informer_long_horizon
+from morie.fn.informer import informer_long_horizon
 
 
 def test_informer_basic():

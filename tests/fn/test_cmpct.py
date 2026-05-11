@@ -1,7 +1,7 @@
 """Test cmpct."""
 import pytest
 import numpy as np
-from moirais.fn.cmpct import compactify_torus
+from morie.fn.cmpct import compactify_torus
 
 
 def test_cmpct_basic():

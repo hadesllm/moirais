@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.suffx — sufficient statistic test."""
+"""Tests for morie.fn.suffx — sufficient statistic test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.suffx import suffx
+from morie.fn.suffx import suffx
 
 
 class TestSuffx:

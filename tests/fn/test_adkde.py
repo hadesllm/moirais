@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.adkde — Adaptive KDE."""
+"""Tests for morie.fn.adkde — Adaptive KDE."""
 
 import numpy as np
 import pytest
-from moirais.fn.adkde import adkde
+from morie.fn.adkde import adkde
 
 
 def test_returns_dict():

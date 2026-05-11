@@ -1,7 +1,7 @@
 """Tests for gb_wci.gibbons_concordance_signif."""
 import numpy as np
 import pytest
-from moirais.fn.gb_wci import gibbons_concordance_signif
+from morie.fn.gb_wci import gibbons_concordance_signif
 
 
 def test_gb_wci_basic():

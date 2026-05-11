@@ -1,7 +1,7 @@
 """Tests for cb15e3.cb_chapter_15_equation_3."""
 import numpy as np
 import pytest
-from moirais.fn.cb15e3 import cb_chapter_15_equation_3
+from morie.fn.cb15e3 import cb_chapter_15_equation_3
 
 
 def test_cb15e3_basic():

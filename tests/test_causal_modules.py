@@ -1,13 +1,13 @@
 """
-Comprehensive tests for six MOIRAIS causal inference modules.
+Comprehensive tests for six MORIE causal inference modules.
 
 Modules tested:
-    1. moirais.did        — Difference-in-Differences
-    2. moirais.iv         — Instrumental Variables
-    3. moirais.rdd        — Regression Discontinuity Design
-    4. moirais.matching   — Matching estimators
-    5. moirais.sensitivity — Sensitivity analysis
-    6. moirais.survival   — Survival analysis
+    1. morie.did        — Difference-in-Differences
+    2. morie.iv         — Instrumental Variables
+    3. morie.rdd        — Regression Discontinuity Design
+    4. morie.matching   — Matching estimators
+    5. morie.sensitivity — Sensitivity analysis
+    6. morie.survival   — Survival analysis
 
 All tests use synthetic data generated with np.random.default_rng(42).
 No external files or CPADS data are required.
@@ -28,7 +28,7 @@ import pytest
 # ---------------------------------------------------------------------------
 # Module imports
 # ---------------------------------------------------------------------------
-from moirais.did import (
+from morie.did import (
     did_2x2,
     event_study,
     bacon_decomposition,
@@ -39,7 +39,7 @@ from moirais.did import (
     EventStudyResult,
     BaconDecomposition,
 )
-from moirais.iv import (
+from morie.iv import (
     tsls,
     wald_estimator,
     first_stage_diagnostics,
@@ -48,7 +48,7 @@ from moirais.iv import (
     IVResult,
     DiagnosticResult,
 )
-from moirais.rdd import (
+from morie.rdd import (
     sharp_rdd,
     fuzzy_rdd,
     mccrary_test,
@@ -58,7 +58,7 @@ from moirais.rdd import (
     BandwidthResult,
     DensityTestResult,
 )
-from moirais.matching import (
+from morie.matching import (
     match_nearest_neighbor,
     estimate_propensity_score,
     balance_diagnostics,
@@ -68,7 +68,7 @@ from moirais.matching import (
     BalanceResult,
     TreatmentEffectResult,
 )
-from moirais.sensitivity import (
+from morie.sensitivity import (
     e_value_rr,
     e_value_or,
     rosenbaum_bounds as sensitivity_rosenbaum_bounds,
@@ -80,7 +80,7 @@ from moirais.sensitivity import (
     tipping_point_analysis,
     TippingPointResult,
 )
-from moirais.survival import (
+from morie.survival import (
     kaplan_meier,
     cox_ph,
     logrank_test,
@@ -108,12 +108,12 @@ def rng():
 
 
 # ===================================================================
-# 1. moirais.did — Difference-in-Differences
+# 1. morie.did — Difference-in-Differences
 # ===================================================================
 
 
 class TestDiD:
-    """Tests for the moirais.did module."""
+    """Tests for the morie.did module."""
 
     @staticmethod
     def _make_did_data(rng, n=400, true_effect=2.0):
@@ -279,12 +279,12 @@ class TestDiD:
 
 
 # ===================================================================
-# 2. moirais.iv — Instrumental Variables
+# 2. morie.iv — Instrumental Variables
 # ===================================================================
 
 
 class TestIV:
-    """Tests for the moirais.iv module."""
+    """Tests for the morie.iv module."""
 
     @staticmethod
     def _make_iv_data(rng, n=500, true_beta=1.5):
@@ -393,12 +393,12 @@ class TestIV:
 
 
 # ===================================================================
-# 3. moirais.rdd — Regression Discontinuity Design
+# 3. morie.rdd — Regression Discontinuity Design
 # ===================================================================
 
 
 class TestRDD:
-    """Tests for the moirais.rdd module."""
+    """Tests for the morie.rdd module."""
 
     @staticmethod
     def _make_rdd_data(rng, n=500, true_jump=3.0, cutoff=0.0):
@@ -485,12 +485,12 @@ class TestRDD:
 
 
 # ===================================================================
-# 4. moirais.matching — Matching estimators
+# 4. morie.matching — Matching estimators
 # ===================================================================
 
 
 class TestMatching:
-    """Tests for the moirais.matching module."""
+    """Tests for the morie.matching module."""
 
     @staticmethod
     def _make_matching_data(rng, n=300):
@@ -576,12 +576,12 @@ class TestMatching:
 
 
 # ===================================================================
-# 5. moirais.sensitivity — Sensitivity analysis
+# 5. morie.sensitivity — Sensitivity analysis
 # ===================================================================
 
 
 class TestSensitivity:
-    """Tests for the moirais.sensitivity module."""
+    """Tests for the morie.sensitivity module."""
 
     def test_e_value_rr_basic(self):
         res = e_value_rr(2.0)
@@ -687,12 +687,12 @@ class TestSensitivity:
 
 
 # ===================================================================
-# 6. moirais.survival — Survival analysis
+# 6. morie.survival — Survival analysis
 # ===================================================================
 
 
 class TestSurvival:
-    """Tests for the moirais.survival module."""
+    """Tests for the morie.survival module."""
 
     @staticmethod
     def _make_survival_data(rng, n=200, lam=0.1, censor_rate=0.3):

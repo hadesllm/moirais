@@ -1,6 +1,6 @@
 """Test tdual."""
 import pytest
-from moirais.fn.tdual import t_duality
+from morie.fn.tdual import t_duality
 
 
 def test_tdual_basic():

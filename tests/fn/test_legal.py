@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.legal — legal BAC limit check."""
+"""Tests for morie.fn.legal — legal BAC limit check."""
 
 import pytest
-from moirais.fn.legal import is_over_legal_limit as legal
+from morie.fn.legal import is_over_legal_limit as legal
 
 
 class TestIsOverLegalLimit:

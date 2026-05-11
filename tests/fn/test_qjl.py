@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qjl — QJL random projection."""
+"""Tests for morie.fn.qjl — QJL random projection."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qjl import qjl_project
+from morie.fn.qjl import qjl_project
 
 
 class TestQjlProject:

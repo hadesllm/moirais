@@ -1,7 +1,7 @@
 """Tests for rng128.rangayyan_ch3_bilinear_unit_circle_relation."""
 import numpy as np
 import pytest
-from moirais.fn.rng128 import rangayyan_ch3_bilinear_unit_circle_relation
+from morie.fn.rng128 import rangayyan_ch3_bilinear_unit_circle_relation
 
 
 def test_rng128_basic():

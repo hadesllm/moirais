@@ -1,7 +1,7 @@
 """Test lamport_verify."""
-from moirais.fn._containers import CryptoResult
-from moirais.fn.lamp import lamport_sign
-from moirais.fn.lampv import lamport_verify, lampv
+from morie.fn._containers import CryptoResult
+from morie.fn.lamp import lamport_sign
+from morie.fn.lampv import lamport_verify, lampv
 
 
 class TestLamportVerify:

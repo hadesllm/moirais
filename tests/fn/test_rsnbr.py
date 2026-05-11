@@ -1,7 +1,7 @@
 """Test rsnbr."""
 import numpy as np
 import pytest
-from moirais.fn.rsnbr import rsnbr
+from morie.fn.rsnbr import rsnbr
 
 
 def test_rsnbr_basic():

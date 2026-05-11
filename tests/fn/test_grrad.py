@@ -1,7 +1,7 @@
 """Tests for grrad.geron_reverse_mode_autodiff."""
 import numpy as np
 import pytest
-from moirais.fn.grrad import geron_reverse_mode_autodiff
+from morie.fn.grrad import geron_reverse_mode_autodiff
 
 
 def test_grrad_basic():

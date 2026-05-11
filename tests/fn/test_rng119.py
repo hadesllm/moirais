@@ -1,7 +1,7 @@
 """Tests for rng119.rangayyan_ch3_three_point_central_diff_phase."""
 import numpy as np
 import pytest
-from moirais.fn.rng119 import rangayyan_ch3_three_point_central_diff_phase
+from morie.fn.rng119 import rangayyan_ch3_three_point_central_diff_phase
 
 
 def test_rng119_basic():

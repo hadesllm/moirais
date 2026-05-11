@@ -1,7 +1,7 @@
 """Tests for hmbic.geron_bic."""
 import numpy as np
 import pytest
-from moirais.fn.hmbic import geron_bic
+from morie.fn.hmbic import geron_bic
 
 
 def test_hmbic_basic():

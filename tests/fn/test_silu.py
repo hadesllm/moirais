@@ -1,7 +1,7 @@
 """Tests for silu.silu_swish."""
 import numpy as np
 import pytest
-from moirais.fn.silu import silu_swish
+from morie.fn.silu import silu_swish
 
 
 def test_silu_basic():

@@ -1,7 +1,7 @@
 """Tests for otmxh.ot_mixture_w2."""
 import numpy as np
 import pytest
-from moirais.fn.otmxh import ot_mixture_w2
+from morie.fn.otmxh import ot_mixture_w2
 
 
 def test_otmxh_basic():

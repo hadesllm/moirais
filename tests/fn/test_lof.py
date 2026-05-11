@@ -1,7 +1,7 @@
 """Tests for lof.local_outlier_factor."""
 import numpy as np
 import pytest
-from moirais.fn.lof import local_outlier_factor
+from morie.fn.lof import local_outlier_factor
 
 
 def test_lof_basic():

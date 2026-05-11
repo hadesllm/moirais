@@ -1,7 +1,7 @@
 """Test ruler_fd."""
 import numpy as np
-from moirais.fn.rulfd import ruler_fd, rulfd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rulfd import ruler_fd, rulfd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRulerFD:

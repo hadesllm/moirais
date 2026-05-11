@@ -1,7 +1,7 @@
 """Tests for ctband."""
 import numpy as np
 import pytest
-from moirais.fn.ctband import ctband
+from morie.fn.ctband import ctband
 
 
 def test_ctband_basic():
@@ -27,5 +27,5 @@ def test_ctband_no_data():
 
 
 def test_ctband_alias():
-    from moirais.fn.ctband import ctband
+    from morie.fn.ctband import ctband
     assert ctband is ctband

@@ -1,7 +1,7 @@
 """Tests for hmrsp.geron_random_subspaces."""
 import numpy as np
 import pytest
-from moirais.fn.hmrsp import geron_random_subspaces
+from morie.fn.hmrsp import geron_random_subspaces
 
 
 def test_hmrsp_basic():

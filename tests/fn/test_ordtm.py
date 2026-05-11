@@ -1,7 +1,7 @@
 """Tests for ordtm.ordinal_threshold_model."""
 import numpy as np
 import pytest
-from moirais.fn.ordtm import ordinal_threshold_model
+from morie.fn.ordtm import ordinal_threshold_model
 
 
 def test_ordtm_basic():

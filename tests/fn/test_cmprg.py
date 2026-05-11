@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cmprg — compliance by region."""
+"""Tests for morie.fn.cmprg — compliance by region."""
 
 import pandas as pd
-from moirais.fn.cmprg import compliance_by_region
+from morie.fn.cmprg import compliance_by_region
 
 
 class TestComplianceByRegion:

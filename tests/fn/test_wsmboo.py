@@ -1,7 +1,7 @@
 """Tests for wsmboo.wasserman_bootstrap."""
 import numpy as np
 import pytest
-from moirais.fn.wsmboo import wasserman_bootstrap
+from morie.fn.wsmboo import wasserman_bootstrap
 
 
 def test_wsmboo_basic():

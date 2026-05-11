@@ -1,7 +1,7 @@
 """Tests for cnvlfc.convergent_cross_mapping."""
 import numpy as np
 import pytest
-from moirais.fn.cnvlfc import convergent_cross_mapping
+from morie.fn.cnvlfc import convergent_cross_mapping
 
 
 def test_cnvlfc_basic():

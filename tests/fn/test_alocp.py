@@ -1,7 +1,7 @@
 """Tests for alocp.alammar_openclip_contrastive."""
 import numpy as np
 import pytest
-from moirais.fn.alocp import alammar_openclip_contrastive
+from morie.fn.alocp import alammar_openclip_contrastive
 
 
 def test_alocp_basic():

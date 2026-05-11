@@ -1,7 +1,7 @@
 """Tests for genrgr.calibration_greg."""
 import numpy as np
 import pytest
-from moirais.fn.genrgr import calibration_greg
+from morie.fn.genrgr import calibration_greg
 
 
 def test_genrgr_basic():

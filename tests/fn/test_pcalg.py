@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pcalg — PC algorithm."""
+"""Tests for morie.fn.pcalg — PC algorithm."""
 import numpy as np
 import pytest
-from moirais.fn.pcalg import pcalg
+from morie.fn.pcalg import pcalg
 
 
 @pytest.fixture()
@@ -52,5 +52,5 @@ def test_n_tests_positive(linear_dag):
 
 
 def test_cheatsheet():
-    from moirais.fn.pcalg import cheatsheet
+    from morie.fn.pcalg import cheatsheet
     assert len(cheatsheet()) > 0

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rdd -- Regression discontinuity design."""
+"""Tests for morie.fn.rdd -- Regression discontinuity design."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.rdd import reg_discontinuity, rdd
-from moirais.fn._containers import RegressionResult
+from morie.fn.rdd import reg_discontinuity, rdd
+from morie.fn._containers import RegressionResult
 
 
 class TestRDD:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.reedm — Reed-Muller codes."""
+"""Tests for morie.fn.reedm — Reed-Muller codes."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.reedm import reedm
+from morie.fn.reedm import reedm
 
 
 class TestReedm:

@@ -1,7 +1,7 @@
 """Tests for explor.intrinsic_motivation."""
 import numpy as np
 import pytest
-from moirais.fn.explor import intrinsic_motivation
+from morie.fn.explor import intrinsic_motivation
 
 
 def test_explor_basic():

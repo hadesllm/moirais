@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pshid."""
+"""Tests for morie.fn.pshid."""
 
 import numpy as np
 import pytest
-from moirais.fn.pshid import pshid
+from morie.fn.pshid import pshid
 
 
 class TestPshid:

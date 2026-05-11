@@ -1,7 +1,7 @@
 """Test seprf."""
 import numpy as np
 import pytest
-from moirais.fn.seprf import seprf
+from morie.fn.seprf import seprf
 
 
 def test_seprf_basic():

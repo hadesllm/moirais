@@ -1,7 +1,7 @@
 """Tests for larspec.lars_optimizer."""
 import numpy as np
 import pytest
-from moirais.fn.larspec import lars_optimizer
+from morie.fn.larspec import lars_optimizer
 
 
 def test_larspec_basic():

@@ -1,7 +1,7 @@
 """Tests for glm.glr_test."""
 import numpy as np
 import pytest
-from moirais.fn.glm import glr_test
+from morie.fn.glm import glr_test
 
 
 def test_glm_basic():

@@ -1,7 +1,7 @@
 """Tests for snht.snht."""
 import numpy as np
 import pytest
-from moirais.fn.snht import snht
+from morie.fn.snht import snht
 
 
 def test_snht_basic():

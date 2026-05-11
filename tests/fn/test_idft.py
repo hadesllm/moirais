@@ -1,7 +1,7 @@
 """Test idft_compute (idft)."""
 import numpy as np
-from moirais.fn.idft import idft_compute, idft
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.idft import idft_compute, idft
+from morie.fn._containers import DescriptiveResult
 
 
 class TestIdft:

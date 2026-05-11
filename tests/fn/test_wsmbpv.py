@@ -1,7 +1,7 @@
 """Tests for wsmbpv.wasserman_bootstrap_pivotal."""
 import numpy as np
 import pytest
-from moirais.fn.wsmbpv import wasserman_bootstrap_pivotal
+from morie.fn.wsmbpv import wasserman_bootstrap_pivotal
 
 
 def test_wsmbpv_basic():

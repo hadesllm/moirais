@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrlmr -- Robust LM test for lag"""
+"""Tests for morie.fn.xrlmr -- Robust LM test for lag"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrlmr import lm_robust_lag
+from morie.fn.xrlmr import lm_robust_lag
 
 
 class TestLmRobustLag:

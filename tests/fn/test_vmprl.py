@@ -1,7 +1,7 @@
 """Test vmprl."""
 import numpy as np
 import pytest
-from moirais.fn.vmprl import vmprl
+from morie.fn.vmprl import vmprl
 
 
 def test_vmprl_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzadm.horowitz_additive_model."""
 import numpy as np
 import pytest
-from moirais.fn.hrzadm import horowitz_additive_model
+from morie.fn.hrzadm import horowitz_additive_model
 
 
 def test_hrzadm_basic():

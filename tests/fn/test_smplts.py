@@ -1,7 +1,7 @@
 """Tests for smplts.sample_lifetable."""
 import numpy as np
 import pytest
-from moirais.fn.smplts import sample_lifetable
+from morie.fn.smplts import sample_lifetable
 
 
 def test_smplts_basic():

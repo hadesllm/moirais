@@ -1,7 +1,7 @@
 """Tests for ksr04.kosorok_vc_dimension."""
 import numpy as np
 import pytest
-from moirais.fn.ksr04 import kosorok_vc_dimension
+from morie.fn.ksr04 import kosorok_vc_dimension
 
 
 def test_ksr04_basic():

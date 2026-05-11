@@ -1,7 +1,7 @@
 """Tests for baylog.bayes_logistic."""
 import numpy as np
 import pytest
-from moirais.fn.baylog import bayes_logistic
+from morie.fn.baylog import bayes_logistic
 
 
 def test_baylog_basic():

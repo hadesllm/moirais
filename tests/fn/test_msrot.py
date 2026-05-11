@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msrot -- Rotation of configuration"""
+"""Tests for morie.fn.msrot -- Rotation of configuration"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msrot import rotate_config
+from morie.fn.msrot import rotate_config
 
 
 class TestRotateConfig:

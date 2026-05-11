@@ -1,7 +1,7 @@
 """Tests for rgvag.rangayyan_vag_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.rgvag import rangayyan_vag_analysis
+from morie.fn.rgvag import rangayyan_vag_analysis
 
 
 def test_rgvag_basic():

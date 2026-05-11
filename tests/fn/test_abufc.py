@@ -1,7 +1,7 @@
 """Test abufc."""
 import numpy as np
 import pytest
-from moirais.fn.abufc import abufc
+from morie.fn.abufc import abufc
 
 
 def test_abufc_basic():

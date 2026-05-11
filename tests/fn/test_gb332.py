@@ -1,7 +1,7 @@
 """Tests for gb332.gibbons_type1_run_lengths."""
 import numpy as np
 import pytest
-from moirais.fn.gb332 import gibbons_type1_run_lengths
+from morie.fn.gb332 import gibbons_type1_run_lengths
 
 
 def test_gb332_basic():

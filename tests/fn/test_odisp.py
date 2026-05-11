@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.odisp — OTIS disparity index."""
+"""Tests for morie.fn.odisp — OTIS disparity index."""
 
-from moirais.fn.odisp import otis_disparity_index
+from morie.fn.odisp import otis_disparity_index
 
 
 class TestOtisDisparityIndex:

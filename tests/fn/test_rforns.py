@@ -1,7 +1,7 @@
 """Tests for rforns."""
 import numpy as np
 import pytest
-from moirais.fn.rforns import rforns
+from morie.fn.rforns import rforns
 
 
 def test_rforns_basic():
@@ -27,5 +27,5 @@ def test_rforns_no_data():
 
 
 def test_rforns_alias():
-    from moirais.fn.rforns import rforns
+    from morie.fn.rforns import rforns
     assert rforns is rforns

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nels — Nelson-Aalen cumulative hazard."""
+"""Tests for morie.fn.nels — Nelson-Aalen cumulative hazard."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nels import nels
+from morie.fn.nels import nels
 
 
 class TestNels:

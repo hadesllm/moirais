@@ -1,7 +1,7 @@
 """Tests for ali.ali_mikhail_haq_copula."""
 import numpy as np
 import pytest
-from moirais.fn.ali import ali_mikhail_haq_copula
+from morie.fn.ali import ali_mikhail_haq_copula
 
 
 def test_ali_basic():

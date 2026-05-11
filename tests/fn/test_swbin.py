@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.swbin."""
+"""Tests for morie.fn.swbin."""
 import numpy as np
 import pytest
-from moirais.fn.swbin import swbin
+from morie.fn.swbin import swbin
 
 
 class TestSwbin:

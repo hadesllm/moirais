@@ -1,6 +1,6 @@
 """Tests for Hermite polynomials."""
 import numpy as np
-from moirais.fn.sghrmt import sghrmt
+from morie.fn.sghrmt import sghrmt
 
 
 def test_sghrmt_degree0():

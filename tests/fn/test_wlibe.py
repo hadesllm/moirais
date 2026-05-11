@@ -1,7 +1,7 @@
 """Test wlibe."""
 import numpy as np
 import pytest
-from moirais.fn.wlibe import wlibe
+from morie.fn.wlibe import wlibe
 
 
 def test_wlibe_basic():

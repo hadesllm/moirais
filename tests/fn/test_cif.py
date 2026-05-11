@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cif — cumulative incidence function."""
+"""Tests for morie.fn.cif — cumulative incidence function."""
 import numpy as np
 import pytest
-from moirais.fn.cif import cumulative_incidence
+from morie.fn.cif import cumulative_incidence
 
 
 class TestCumulativeIncidence:

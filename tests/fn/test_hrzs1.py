@@ -1,7 +1,7 @@
 """Tests for hrzs1.horowitz_sample_selection."""
 import numpy as np
 import pytest
-from moirais.fn.hrzs1 import horowitz_sample_selection
+from morie.fn.hrzs1 import horowitz_sample_selection
 
 
 def test_hrzs1_basic():

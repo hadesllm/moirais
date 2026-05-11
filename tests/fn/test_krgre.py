@@ -1,7 +1,7 @@
 """Test krgre."""
 import numpy as np
 import pytest
-from moirais.fn.krgre import krgre
+from morie.fn.krgre import krgre
 
 
 def test_krgre_basic():

@@ -1,7 +1,7 @@
 """Tests for gh_c10_3.ghosal_param_rate."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c10_3 import ghosal_param_rate
+from morie.fn.gh_c10_3 import ghosal_param_rate
 
 
 def test_gh_c10_3_basic():

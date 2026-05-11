@@ -1,4 +1,4 @@
-# MOIRAIS release checklist
+# MORIE release checklist
 
 Three distribution channels: **PyPI** (Python), **CRAN** (R), and
 **r-universe** (R, daily-built binaries from GitHub source).
@@ -7,7 +7,7 @@ Three distribution channels: **PyPI** (Python), **CRAN** (R), and
 
 1. Bump the version number in two places (must match):
    - `dev/sphinx/project/pyproject.toml` → `[project] version`
-   - `dev/sphinx/project/libexec/config/tools/r-package/moirais/DESCRIPTION` → `Version:`
+   - `dev/sphinx/project/libexec/config/tools/r-package/morie/DESCRIPTION` → `Version:`
 2. Update `CHANGELOG.md` (or release notes in the GitHub Release).
 3. Run the local test suites and confirm green.
 4. Commit, push to main, wait for CI to go green.
@@ -27,19 +27,19 @@ Three distribution channels: **PyPI** (Python), **CRAN** (R), and
 
 ### One-time PyPI Trusted Publisher config (already done)
 
-At https://pypi.org/manage/project/moirais/settings/publishing/:
+At https://pypi.org/manage/project/morie/settings/publishing/:
 
 | Field             | Value                  |
 |-------------------|------------------------|
 | Owner             | hadesllm               |
-| Repository name   | moirais                |
+| Repository name   | morie                |
 | Workflow filename | pypi-publish.yml       |
 | Environment       | pypi                   |
 
 End users install with:
 
 ```bash
-pip install moirais
+pip install morie
 ```
 
 ## CRAN release
@@ -49,13 +49,13 @@ pip install moirais
   submitting.
 - Submission is **manual** (CRAN policy):
   1. From the R package directory, run
-     `R CMD build .` to produce `moirais_<version>.tar.gz`.
+     `R CMD build .` to produce `morie_<version>.tar.gz`.
   2. Upload the tarball at https://cran.r-project.org/submit.html.
   3. Respond to the maintainer-confirmation email within 24 h.
 - Common CRAN gotchas:
   - DESCRIPTION Title ≤ 65 chars, in title case, no period.
   - DESCRIPTION Description must end in a period; 4-8 sentences;
-    no leading "MOIRAIS provides..." (start with content).
+    no leading "MORIE provides..." (start with content).
   - All URLs in DESCRIPTION must resolve (200 OK).
   - No `library()` calls in package code; use `requireNamespace()`.
   - All `tests/` must complete in < 10 min on CRAN servers.
@@ -63,7 +63,7 @@ pip install moirais
 End users install with:
 
 ```r
-install.packages("moirais")
+install.packages("morie")
 ```
 
 ## r-universe release
@@ -75,7 +75,7 @@ install.packages("moirais")
 
 ```r
 install.packages(
-  "moirais",
+  "morie",
   repos = c(
     hadesllm = "https://hadesllm.r-universe.dev",
     CRAN     = "https://cloud.r-project.org"

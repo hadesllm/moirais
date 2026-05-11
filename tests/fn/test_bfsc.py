@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bfsc — Bayesian factor scores."""
+"""Tests for morie.fn.bfsc — Bayesian factor scores."""
 
 import numpy as np
 import pytest
-from moirais.fn.bfsc import bayesian_factor_scores
+from morie.fn.bfsc import bayesian_factor_scores
 
 
 class TestBayesianFactorScores:

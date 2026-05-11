@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.oate1 — Simple ATE by region."""
+"""Tests for morie.fn.oate1 — Simple ATE by region."""
 
 import pandas as pd
-from moirais.fn.oate1 import otis_ate_region
+from morie.fn.oate1 import otis_ate_region
 
 
 class TestOtisAteRegion:

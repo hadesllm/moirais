@@ -1,7 +1,7 @@
 """Tests for copcla.clayton_copula."""
 import numpy as np
 import pytest
-from moirais.fn.copcla import clayton_copula
+from morie.fn.copcla import clayton_copula
 
 
 def test_copcla_basic():

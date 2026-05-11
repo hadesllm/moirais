@@ -1,7 +1,7 @@
 """Tests for aftwbl.aft_weibull."""
 import numpy as np
 import pytest
-from moirais.fn.aftwbl import aft_weibull
+from morie.fn.aftwbl import aft_weibull
 
 
 def test_aftwbl_basic():

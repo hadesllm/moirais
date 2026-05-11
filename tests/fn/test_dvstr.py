@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dvstr -- ensemble stacking."""
+"""Tests for morie.fn.dvstr -- ensemble stacking."""
 
 import numpy as np
-from moirais.fn.dvstr import ensemble_stack, dvstr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dvstr import ensemble_stack, dvstr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDvstr:

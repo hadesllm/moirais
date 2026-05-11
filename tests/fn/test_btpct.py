@@ -1,7 +1,7 @@
 """Tests for btpct.boot_percentile_ci."""
 import numpy as np
 import pytest
-from moirais.fn.btpct import boot_percentile_ci
+from morie.fn.btpct import boot_percentile_ci
 
 
 def test_btpct_basic():

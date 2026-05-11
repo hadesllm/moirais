@@ -1,7 +1,7 @@
 """Test gatri."""
 import numpy as np
 import pytest
-from moirais.fn.gatri import gatri
+from morie.fn.gatri import gatri
 
 
 def test_gatri_basic():

@@ -1,7 +1,7 @@
 """Tests for loocv.py - Leave-One-Out Cross-Validation."""
 import numpy as np
 import pytest
-from moirais.fn.loocv import loocv_fn, loocv_fn_alias
+from morie.fn.loocv import loocv_fn, loocv_fn_alias
 
 
 def _two_class_data():

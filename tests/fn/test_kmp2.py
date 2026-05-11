@@ -1,7 +1,7 @@
 """Tests for kmp2.kamath_p_tuning_v2."""
 import numpy as np
 import pytest
-from moirais.fn.kmp2 import kamath_p_tuning_v2
+from morie.fn.kmp2 import kamath_p_tuning_v2
 
 
 def test_kmp2_basic():

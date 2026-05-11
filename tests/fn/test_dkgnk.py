@@ -1,7 +1,7 @@
 """Test dkgnk."""
 import numpy as np
 import pytest
-from moirais.fn.dkgnk import dkgnk
+from morie.fn.dkgnk import dkgnk
 
 
 def test_dkgnk_basic():

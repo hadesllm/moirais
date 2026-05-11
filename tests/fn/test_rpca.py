@@ -1,7 +1,7 @@
 """Test robust_pca (rpca)."""
 import numpy as np
-from moirais.fn.rpca import robust_pca, rpca
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rpca import robust_pca, rpca
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRpca:

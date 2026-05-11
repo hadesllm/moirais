@@ -1,7 +1,7 @@
 """Tests for sasc1.synthetic_accessibility."""
 import numpy as np
 import pytest
-from moirais.fn.sasc1 import synthetic_accessibility
+from morie.fn.sasc1 import synthetic_accessibility
 
 
 def test_sasc1_basic():

@@ -1,7 +1,7 @@
 """Tests for btrnd.boot_rng_seeded."""
 import numpy as np
 import pytest
-from moirais.fn.btrnd import boot_rng_seeded
+from morie.fn.btrnd import boot_rng_seeded
 
 
 def test_btrnd_basic():

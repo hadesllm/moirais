@@ -1,6 +1,6 @@
 """Tests for bootstrap scaling."""
 import numpy as np
-from moirais.fn.btsca import btsca
+from morie.fn.btsca import btsca
 
 
 def test_btsca_smoke():
@@ -13,7 +13,7 @@ def test_btsca_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.btsca import cheatsheet
+    from morie.fn.btsca import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

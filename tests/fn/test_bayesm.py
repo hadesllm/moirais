@@ -1,7 +1,7 @@
 """Tests for bayesm.dp_bayesian_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.bayesm import dp_bayesian_mechanism
+from morie.fn.bayesm import dp_bayesian_mechanism
 
 
 def test_bayesm_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zegrn -- Spatial gradient estimation"""
+"""Tests for morie.fn.zegrn -- Spatial gradient estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zegrn import gradient_spatial
+from morie.fn.zegrn import gradient_spatial
 
 
 class TestGradientSpatial:

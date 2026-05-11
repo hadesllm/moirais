@@ -1,7 +1,7 @@
 """Tests for hmgini.geron_gini_impurity."""
 import numpy as np
 import pytest
-from moirais.fn.hmgini import geron_gini_impurity
+from morie.fn.hmgini import geron_gini_impurity
 
 
 def test_hmgini_basic():

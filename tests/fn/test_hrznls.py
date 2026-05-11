@@ -1,7 +1,7 @@
 """Tests for hrznls.horowitz_nls_sim."""
 import numpy as np
 import pytest
-from moirais.fn.hrznls import horowitz_nls_sim
+from morie.fn.hrznls import horowitz_nls_sim
 
 
 def test_hrznls_basic():

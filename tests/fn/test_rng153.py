@@ -1,7 +1,7 @@
 """Tests for rng153.rangayyan_ch3_anc_primary_input_model."""
 import numpy as np
 import pytest
-from moirais.fn.rng153 import rangayyan_ch3_anc_primary_input_model
+from morie.fn.rng153 import rangayyan_ch3_anc_primary_input_model
 
 
 def test_rng153_basic():

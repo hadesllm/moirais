@@ -1,7 +1,7 @@
 """Test csrac."""
 import numpy as np
 import pytest
-from moirais.fn.csrac import csrac
+from morie.fn.csrac import csrac
 
 
 def test_csrac_basic():

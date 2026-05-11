@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.blr -- Bayesian linear regression."""
+"""Tests for morie.fn.blr -- Bayesian linear regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.blr import bayesian_linear_regression
+from morie.fn.blr import bayesian_linear_regression
 
 
 class TestBayesianLinearRegression:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsstv -- Space-time kriging variance"""
+"""Tests for morie.fn.zsstv -- Space-time kriging variance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsstv import st_kriging_var
+from morie.fn.zsstv import st_kriging_var
 
 
 class TestStKrigingVar:

@@ -1,7 +1,7 @@
 """Test nbind."""
 import numpy as np
 import pytest
-from moirais.fn.nbind import nbind
+from morie.fn.nbind import nbind
 
 
 def test_nbind_basic():

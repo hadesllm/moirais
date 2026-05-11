@@ -1,7 +1,7 @@
 """Tests for johsn.johansen_cointegration."""
 import numpy as np
 import pytest
-from moirais.fn.johsn import johansen_cointegration
+from morie.fn.johsn import johansen_cointegration
 
 
 def test_johsn_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ccf — cross-correlation function."""
+"""Tests for morie.fn.ccf — cross-correlation function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ccf import ccf
+from morie.fn.ccf import ccf
 
 
 class TestCcf:

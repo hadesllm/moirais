@@ -1,7 +1,7 @@
 """Tests for vdwrd.van_der_waerden_test."""
 import numpy as np
 import pytest
-from moirais.fn.vdwrd import van_der_waerden_test
+from morie.fn.vdwrd import van_der_waerden_test
 
 
 def test_vdwrd_basic():

@@ -1,7 +1,7 @@
 """Tests for ktaup.kendall_tau_partial."""
 import numpy as np
 import pytest
-from moirais.fn.ktaup import kendall_tau_partial
+from morie.fn.ktaup import kendall_tau_partial
 
 
 def test_ktaup_basic():

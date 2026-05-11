@@ -1,7 +1,7 @@
 """Tests for smatch.sccs_design."""
 import numpy as np
 import pytest
-from moirais.fn.smatch import sccs_design
+from morie.fn.smatch import sccs_design
 
 
 def test_smatch_basic():

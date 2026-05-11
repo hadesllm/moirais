@@ -1,7 +1,7 @@
 """Tests for vrtest.variance_component_lr_boundary."""
 import numpy as np
 import pytest
-from moirais.fn.vrtest import variance_component_lr_boundary
+from morie.fn.vrtest import variance_component_lr_boundary
 
 
 def test_vrtest_basic():

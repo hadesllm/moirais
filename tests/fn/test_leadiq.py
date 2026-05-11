@@ -5,7 +5,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.fn.leadiq import leadiq, lead_iq_loss
+from morie.fn.leadiq import leadiq, lead_iq_loss
 
 
 def test_leadiq_zero_loss_at_reference():

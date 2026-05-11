@@ -1,7 +1,7 @@
 """Test ubdis."""
 import numpy as np
 import pytest
-from moirais.fn.ubdis import ubdis
+from morie.fn.ubdis import ubdis
 
 
 def test_ubdis_basic():

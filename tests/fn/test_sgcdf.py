@@ -1,7 +1,7 @@
 """Tests for sgcdf."""
 import numpy as np
 import pytest
-from moirais.fn.sgcdf import sgcdf
+from morie.fn.sgcdf import sgcdf
 
 
 def test_sgcdf_basic():
@@ -27,5 +27,5 @@ def test_sgcdf_no_data():
 
 
 def test_sgcdf_alias():
-    from moirais.fn.sgcdf import sgcdf
+    from morie.fn.sgcdf import sgcdf
     assert sgcdf is sgcdf

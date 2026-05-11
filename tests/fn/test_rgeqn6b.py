@@ -1,7 +1,7 @@
 """Tests for rgeqn6b.rangayyan_ch6_median_freq."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn6b import rangayyan_ch6_median_freq
+from morie.fn.rgeqn6b import rangayyan_ch6_median_freq
 
 
 def test_rgeqn6b_basic():

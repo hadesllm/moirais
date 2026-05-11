@@ -1,7 +1,7 @@
 """Tests for leid.leiden_communities."""
 import numpy as np
 import pytest
-from moirais.fn.leid import leiden_communities
+from morie.fn.leid import leiden_communities
 
 
 def test_leid_basic():

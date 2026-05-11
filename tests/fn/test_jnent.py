@@ -1,7 +1,7 @@
 """Tests for joint_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.jnent import joint_entropy, jnent
+from morie.fn.jnent import joint_entropy, jnent
 
 
 def test_basic():

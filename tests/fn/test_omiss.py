@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.omiss — Missing data report."""
+"""Tests for morie.fn.omiss — Missing data report."""
 
 import pandas as pd
-from moirais.fn.omiss import otis_missing_report
+from morie.fn.omiss import otis_missing_report
 
 
 class TestOtisMissingReport:

@@ -1,7 +1,7 @@
 """Test wlhsi."""
 import numpy as np
 import pytest
-from moirais.fn.wlhsi import wlhsi
+from morie.fn.wlhsi import wlhsi
 
 
 def test_wlhsi_basic():

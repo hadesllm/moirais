@@ -1,7 +1,7 @@
 """Tests for emdfn.py - Empirical Mode Decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.emdfn import emd_fn, emdfn
+from morie.fn.emdfn import emd_fn, emdfn
 
 
 def test_emd_returns_descriptive_result():

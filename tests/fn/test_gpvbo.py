@@ -1,7 +1,7 @@
 """Tests for gpvbo.gp_variational_bayes_opt."""
 import numpy as np
 import pytest
-from moirais.fn.gpvbo import gp_variational_bayes_opt
+from morie.fn.gpvbo import gp_variational_bayes_opt
 
 
 def test_gpvbo_basic():

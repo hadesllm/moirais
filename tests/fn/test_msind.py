@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msind -- INDSCAL individual differences MDS"""
+"""Tests for morie.fn.msind -- INDSCAL individual differences MDS"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msind import indscal
+from morie.fn.msind import indscal
 
 
 class TestIndscal:

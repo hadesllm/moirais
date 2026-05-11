@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgfct -- Factorial kriging"""
+"""Tests for morie.fn.kgfct -- Factorial kriging"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgfct import factorial_kriging
+from morie.fn.kgfct import factorial_kriging
 
 
 class TestFactorialKriging:

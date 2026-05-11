@@ -1,7 +1,7 @@
 """Tests for dpqua.dp_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.dpqua import dp_quantile
+from morie.fn.dpqua import dp_quantile
 
 
 def test_dpqua_basic():

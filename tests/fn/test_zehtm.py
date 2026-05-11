@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zehtm -- Hotspot detection map"""
+"""Tests for morie.fn.zehtm -- Hotspot detection map"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zehtm import hotspot_map
+from morie.fn.zehtm import hotspot_map
 
 
 class TestHotspotMap:

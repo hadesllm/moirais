@@ -1,7 +1,7 @@
 """Test dtknt."""
 import numpy as np
 import pytest
-from moirais.fn.dtknt import dtknt
+from morie.fn.dtknt import dtknt
 
 
 def test_dtknt_basic():

@@ -1,7 +1,7 @@
 """Tests for scfhop.scaffold_hop."""
 import numpy as np
 import pytest
-from moirais.fn.scfhop import scaffold_hop
+from morie.fn.scfhop import scaffold_hop
 
 
 def test_scfhop_basic():

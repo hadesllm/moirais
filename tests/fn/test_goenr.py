@@ -1,7 +1,7 @@
 """Tests for goenr.go_enrichment."""
 import numpy as np
 import pytest
-from moirais.fn.goenr import go_enrichment
+from morie.fn.goenr import go_enrichment
 
 
 def test_goenr_basic():

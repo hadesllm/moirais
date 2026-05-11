@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.jllem — JL lemma dimension bound."""
+"""Tests for morie.fn.jllem — JL lemma dimension bound."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.jllem import jl_lemma_bound
+from morie.fn.jllem import jl_lemma_bound
 
 
 class TestJlLemmaBound:

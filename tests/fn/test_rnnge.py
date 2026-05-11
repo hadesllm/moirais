@@ -1,7 +1,7 @@
 """Tests for rnnge.rnn_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.rnnge import rnn_genomic
+from morie.fn.rnnge import rnn_genomic
 
 
 def test_rnnge_basic():

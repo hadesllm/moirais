@@ -1,7 +1,7 @@
 """Test rstcw."""
 import numpy as np
 import pytest
-from moirais.fn.rstcw import rstcw
+from morie.fn.rstcw import rstcw
 
 
 def test_rstcw_basic():

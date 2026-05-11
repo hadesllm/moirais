@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rcmat -- rectangular matrix."""
+"""Tests for morie.fn.rcmat -- rectangular matrix."""
 
 import numpy as np
-from moirais.fn.rcmat import rectangular_matrix, rcmat
+from morie.fn.rcmat import rectangular_matrix, rcmat
 
 
 def test_rcmat_smoke():

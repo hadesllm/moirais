@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cfa4 -- 4-factor CFA."""
+"""Tests for morie.fn.cfa4 -- 4-factor CFA."""
 
 import numpy as np
-from moirais.fn.cfa4 import cfa_4factor
+from morie.fn.cfa4 import cfa_4factor
 
 
 class TestCfa4Factor:

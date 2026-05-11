@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scor -- inter-subscale correlations."""
+"""Tests for morie.fn.scor -- inter-subscale correlations."""
 
 import pandas as pd
 import numpy as np
-from moirais.fn.scor import subscale_correlations
+from morie.fn.scor import subscale_correlations
 
 
 class TestSubscaleCorrelations:

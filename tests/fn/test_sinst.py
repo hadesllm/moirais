@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sinst -- Volatility of volatility."""
+"""Tests for morie.fn.sinst -- Volatility of volatility."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.sinst import vol_of_vol, sinst
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sinst import vol_of_vol, sinst
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSinst:

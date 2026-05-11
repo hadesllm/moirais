@@ -1,7 +1,7 @@
 """Tests for gamfr.gamma_frailty_cox."""
 import numpy as np
 import pytest
-from moirais.fn.gamfr import gamma_frailty_cox
+from morie.fn.gamfr import gamma_frailty_cox
 
 
 def test_gamfr_basic():

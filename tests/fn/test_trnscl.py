@@ -1,7 +1,7 @@
 """Tests for trnscl.transitivity."""
 import numpy as np
 import pytest
-from moirais.fn.trnscl import transitivity
+from morie.fn.trnscl import transitivity
 
 
 def test_trnscl_basic():

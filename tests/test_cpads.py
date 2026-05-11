@@ -1,10 +1,10 @@
-"""Tests for moirais.cpads — CPADS data contract and canonicalization."""
+"""Tests for morie.cpads — CPADS data contract and canonicalization."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.cpads import (
+from morie.cpads import (
     CPADS_RAW_COLUMN_MAP,
     CPADS_REQUIRED_VARIABLES,
     canonicalize_cpads_frame,

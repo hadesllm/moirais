@@ -1,7 +1,7 @@
 """Tests for gh_c5_4.ghosal_splitmerge."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c5_4 import ghosal_splitmerge
+from morie.fn.gh_c5_4 import ghosal_splitmerge
 
 
 def test_gh_c5_4_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.snphw -- SNP Hardy-Weinberg exact test."""
+"""Tests for morie.fn.snphw -- SNP Hardy-Weinberg exact test."""
 
 import numpy as np
 import pytest
-from moirais.fn.snphw import snphw
+from morie.fn.snphw import snphw
 
 
 class TestSnphw:

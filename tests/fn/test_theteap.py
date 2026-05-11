@@ -1,7 +1,7 @@
 """Tests for theteap.theta_eap."""
 import numpy as np
 import pytest
-from moirais.fn.theteap import theta_eap
+from morie.fn.theteap import theta_eap
 
 
 def test_theteap_basic():

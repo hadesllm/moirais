@@ -1,7 +1,7 @@
 """Tests for frfgrf.forest_fit_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.frfgrf import forest_fit_consistency
+from morie.fn.frfgrf import forest_fit_consistency
 
 
 def test_frfgrf_basic():

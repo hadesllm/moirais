@@ -1,7 +1,7 @@
 """Test manut."""
 import numpy as np
 import pytest
-from moirais.fn.manut import manut
+from morie.fn.manut import manut
 
 
 def test_manut_basic():

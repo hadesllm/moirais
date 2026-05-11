@@ -1,7 +1,7 @@
 """Tests for hbdon.hbond_donor_count."""
 import numpy as np
 import pytest
-from moirais.fn.hbdon import hbond_donor_count
+from morie.fn.hbdon import hbond_donor_count
 
 
 def test_hbdon_basic():

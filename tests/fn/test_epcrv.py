@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.epcrv -- Epidemic curve analysis."""
+"""Tests for morie.fn.epcrv -- Epidemic curve analysis."""
 
 import pytest
-from moirais.fn.epcrv import epidemic_curve_analysis
+from morie.fn.epcrv import epidemic_curve_analysis
 
 
 class TestEpidemicCurveAnalysis:

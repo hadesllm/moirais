@@ -1,7 +1,7 @@
 """Tests for msmiv2.msm_iv."""
 import numpy as np
 import pytest
-from moirais.fn.msmiv2 import msm_iv
+from morie.fn.msmiv2 import msm_iv
 
 
 def test_msmiv2_basic():

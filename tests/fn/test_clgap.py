@@ -1,7 +1,7 @@
 """Test clgap."""
 import numpy as np
 import pytest
-from moirais.fn.clgap import clgap
+from morie.fn.clgap import clgap
 
 
 def test_clgap_basic():

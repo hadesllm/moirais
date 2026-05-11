@@ -1,7 +1,7 @@
 """Tests for riskr.risch_integration."""
 import numpy as np
 import pytest
-from moirais.fn.riskr import risch_integration
+from morie.fn.riskr import risch_integration
 
 
 def test_riskr_basic():

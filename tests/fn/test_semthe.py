@@ -1,7 +1,7 @@
 """Tests for semthe.sem_theta."""
 import numpy as np
 import pytest
-from moirais.fn.semthe import sem_theta
+from morie.fn.semthe import sem_theta
 
 
 def test_semthe_basic():

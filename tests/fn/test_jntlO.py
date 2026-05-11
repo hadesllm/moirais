@@ -1,7 +1,7 @@
 """Tests for jntlO.joint_loss_mixed_outcomes."""
 import numpy as np
 import pytest
-from moirais.fn.jntlO import joint_loss_mixed_outcomes
+from morie.fn.jntlO import joint_loss_mixed_outcomes
 
 
 def test_jntlO_basic():

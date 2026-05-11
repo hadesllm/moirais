@@ -1,7 +1,7 @@
 """Tests for kalmn.kalman_filter."""
 import numpy as np
 import pytest
-from moirais.fn.kalmn import kalman_filter
+from morie.fn.kalmn import kalman_filter
 
 
 def test_kalmn_basic():

@@ -1,7 +1,7 @@
 """Tests for netparf.network_paf."""
 import numpy as np
 import pytest
-from moirais.fn.netparf import network_paf
+from morie.fn.netparf import network_paf
 
 
 def test_netparf_basic():

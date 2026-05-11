@@ -1,7 +1,7 @@
 """Tests for kmpens.kamath_prompt_ensemble."""
 import numpy as np
 import pytest
-from moirais.fn.kmpens import kamath_prompt_ensemble
+from morie.fn.kmpens import kamath_prompt_ensemble
 
 
 def test_kmpens_basic():

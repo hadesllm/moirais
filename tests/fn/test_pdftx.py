@@ -6,8 +6,8 @@ import pytest
 
 pypdf = pytest.importorskip("pypdf")
 
-from moirais.fn.pdftx import pdf_to_text, pdftx
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.pdftx import pdf_to_text, pdftx
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPdfToText:

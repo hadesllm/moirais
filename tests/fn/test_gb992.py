@@ -1,7 +1,7 @@
 """Tests for gb992.gibbons_fligner_killeen."""
 import numpy as np
 import pytest
-from moirais.fn.gb992 import gibbons_fligner_killeen
+from morie.fn.gb992 import gibbons_fligner_killeen
 
 
 def test_gb992_basic():

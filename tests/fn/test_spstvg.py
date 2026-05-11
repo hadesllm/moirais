@@ -1,7 +1,7 @@
 """Tests for spstvg.schabenberger_st_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.spstvg import schabenberger_st_variogram
+from morie.fn.spstvg import schabenberger_st_variogram
 
 
 def test_spstvg_basic():

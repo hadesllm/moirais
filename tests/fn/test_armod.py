@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.armod -- AR(p) model."""
+"""Tests for morie.fn.armod -- AR(p) model."""
 import numpy as np
 import pytest
-from moirais.fn.armod import ar_fit
+from morie.fn.armod import ar_fit
 
 
 class TestARFit:
@@ -24,5 +24,5 @@ class TestARFit:
             ar_fit(np.ones(2), p=1)
 
     def test_cheatsheet(self):
-        from moirais.fn.armod import cheatsheet
+        from morie.fn.armod import cheatsheet
         assert isinstance(cheatsheet(), str)

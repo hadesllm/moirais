@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vcthp — victim help seeking."""
+"""Tests for morie.fn.vcthp — victim help seeking."""
 
 import pytest
-from moirais.fn.vcthp import victim_help_seeking
-from moirais.fn._containers import CrimeResult
+from morie.fn.vcthp import victim_help_seeking
+from morie.fn._containers import CrimeResult
 
 
 class TestVictimHelpSeeking:

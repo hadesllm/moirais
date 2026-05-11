@@ -1,7 +1,7 @@
 """Tests for smpa.smooth_sensitivity."""
 import numpy as np
 import pytest
-from moirais.fn.smpa import smooth_sensitivity
+from morie.fn.smpa import smooth_sensitivity
 
 
 def test_smpa_basic():

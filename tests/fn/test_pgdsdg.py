@@ -1,7 +1,7 @@
 """Tests for pgdsdg.projected_gd."""
 import numpy as np
 import pytest
-from moirais.fn.pgdsdg import projected_gd
+from morie.fn.pgdsdg import projected_gd
 
 
 def test_pgdsdg_basic():

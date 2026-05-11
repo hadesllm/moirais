@@ -1,7 +1,7 @@
 """Tests for gb432.gibbons_ks_exact_dist."""
 import numpy as np
 import pytest
-from moirais.fn.gb432 import gibbons_ks_exact_dist
+from morie.fn.gb432 import gibbons_ks_exact_dist
 
 
 def test_gb432_basic():

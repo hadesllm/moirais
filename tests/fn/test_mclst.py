@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mclst -- Model-based clustering."""
+"""Tests for morie.fn.mclst -- Model-based clustering."""
 
 import numpy as np
-from moirais.fn.mclst import model_based_cluster, mclst
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mclst import model_based_cluster, mclst
+from morie.fn._containers import DescriptiveResult
 
 
 class TestModelBasedCluster:

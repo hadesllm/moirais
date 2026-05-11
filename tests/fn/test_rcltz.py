@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rcltz."""
+"""Tests for morie.fn.rcltz."""
 
 import numpy as np
 import pytest
-from moirais.fn.rcltz import rcltz
+from morie.fn.rcltz import rcltz
 
 
 class TestRcltz:

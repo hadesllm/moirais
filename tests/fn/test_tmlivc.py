@@ -1,7 +1,7 @@
 """Tests for tmlivc.tmle_iv."""
 import numpy as np
 import pytest
-from moirais.fn.tmlivc import tmle_iv
+from morie.fn.tmlivc import tmle_iv
 
 
 def test_tmlivc_basic():

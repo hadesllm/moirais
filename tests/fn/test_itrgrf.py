@@ -1,7 +1,7 @@
 """Tests for itrgrf.itr_forest."""
 import numpy as np
 import pytest
-from moirais.fn.itrgrf import itr_forest
+from morie.fn.itrgrf import itr_forest
 
 
 def test_itrgrf_basic():

@@ -1,7 +1,7 @@
 """Tests for lstmb.py - LSTM for biosignals."""
 import numpy as np
 import pytest
-from moirais.fn.lstmb import lstmb_fn, lstmb
+from morie.fn.lstmb import lstmb_fn, lstmb
 
 
 def test_lstmb_returns_descriptive_result():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mddim."""
+"""Tests for morie.fn.mddim."""
 
 import numpy as np
 import pytest
-from moirais.fn.mddim import mddim
+from morie.fn.mddim import mddim
 
 
 class TestMddim:

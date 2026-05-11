@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.cmplr -- Complier Average Causal Effect."""
+"""Tests for morie.fn.cmplr -- Complier Average Causal Effect."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.cmplr import complier_ate, cmplr
-from moirais.fn._containers import ESRes
+from morie.fn.cmplr import complier_ate, cmplr
+from morie.fn._containers import ESRes
 
 
 class TestCACE:

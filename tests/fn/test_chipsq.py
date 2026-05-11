@@ -1,7 +1,7 @@
 """Tests for chipsq.chip_seq_peak."""
 import numpy as np
 import pytest
-from moirais.fn.chipsq import chip_seq_peak
+from morie.fn.chipsq import chip_seq_peak
 
 
 def test_chipsq_basic():

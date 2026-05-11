@@ -1,7 +1,7 @@
 """Tests for baipv.bai_perron_multiple_breaks."""
 import numpy as np
 import pytest
-from moirais.fn.baipv import bai_perron_multiple_breaks
+from morie.fn.baipv import bai_perron_multiple_breaks
 
 
 def test_baipv_basic():

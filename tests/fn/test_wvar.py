@@ -1,7 +1,7 @@
 """Tests for wvar.weighted_variance."""
 import numpy as np
 import pytest
-from moirais.fn.wvar import weighted_variance
+from morie.fn.wvar import weighted_variance
 
 
 def test_wvar_basic():

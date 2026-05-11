@@ -1,7 +1,7 @@
 """Tests for cnffvw.cinelli_hazlett_robust."""
 import numpy as np
 import pytest
-from moirais.fn.cnffvw import cinelli_hazlett_robust
+from morie.fn.cnffvw import cinelli_hazlett_robust
 
 
 def test_cnffvw_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dexp — exponential PDF."""
+"""Tests for morie.fn.dexp — exponential PDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dexp import dexp
+from morie.fn.dexp import dexp
 
 
 class TestDexp:

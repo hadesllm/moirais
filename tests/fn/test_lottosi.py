@@ -1,7 +1,7 @@
 """Tests for lottosi.lottery_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.lottosi import lottery_sampling
+from morie.fn.lottosi import lottery_sampling
 
 
 def test_lottosi_basic():

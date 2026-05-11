@@ -1,7 +1,7 @@
 """Tests for ksr042.kosorok_ch2_functional_delta_method."""
 import numpy as np
 import pytest
-from moirais.fn.ksr042 import kosorok_ch2_functional_delta_method
+from morie.fn.ksr042 import kosorok_ch2_functional_delta_method
 
 
 def test_ksr042_basic():

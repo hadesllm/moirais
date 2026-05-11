@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ochi2 — Chi-squared test of independence."""
+"""Tests for morie.fn.ochi2 — Chi-squared test of independence."""
 
-from moirais.fn.ochi2 import otis_chi2_test
+from morie.fn.ochi2 import otis_chi2_test
 
 
 class TestOtisChi2Test:

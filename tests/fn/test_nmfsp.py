@@ -1,7 +1,7 @@
 """Test nmf_sparse (nmfsp)."""
 import numpy as np
-from moirais.fn.nmfsp import nmf_sparse, nmfsp
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nmfsp import nmf_sparse, nmfsp
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNmfsp:

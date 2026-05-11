@@ -1,7 +1,7 @@
 """Tests for rkhsn.rkhs_norm."""
 import numpy as np
 import pytest
-from moirais.fn.rkhsn import rkhs_norm
+from morie.fn.rkhsn import rkhs_norm
 
 
 def test_rkhsn_basic():

@@ -1,7 +1,7 @@
 """Tests for spglmm.schabenberger_spatial_glmm."""
 import numpy as np
 import pytest
-from moirais.fn.spglmm import schabenberger_spatial_glmm
+from morie.fn.spglmm import schabenberger_spatial_glmm
 
 
 def test_spglmm_basic():

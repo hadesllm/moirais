@@ -1,7 +1,7 @@
 """Tests for ldcmpr.ld_r2."""
 import numpy as np
 import pytest
-from moirais.fn.ldcmpr import ld_r2
+from morie.fn.ldcmpr import ld_r2
 
 
 def test_ldcmpr_basic():

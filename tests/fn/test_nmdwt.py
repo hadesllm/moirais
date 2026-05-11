@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmdwt -- DW-NOMINATE trend analysis"""
+"""Tests for morie.fn.nmdwt -- DW-NOMINATE trend analysis"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmdwt import dwnominate_trend
+from morie.fn.nmdwt import dwnominate_trend
 
 
 class TestDwnominateTrend:

@@ -1,6 +1,6 @@
 """Tests for klmfn.py - Kalman filter wrapper."""
 import numpy as np
-from moirais.fn.klmfn import kalman_filter_fn, klmfn
+from morie.fn.klmfn import kalman_filter_fn, klmfn
 
 
 def test_klmfn_returns_signal_result():

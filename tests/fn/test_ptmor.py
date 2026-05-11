@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptmor -- Morisita index of dispersion"""
+"""Tests for morie.fn.ptmor -- Morisita index of dispersion"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptmor import pp_morisita
+from morie.fn.ptmor import pp_morisita
 
 
 class TestPpMorisita:

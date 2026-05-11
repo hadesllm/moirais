@@ -1,7 +1,7 @@
 """Test eneqk."""
 import numpy as np
 import pytest
-from moirais.fn.eneqk import eneqk
+from morie.fn.eneqk import eneqk
 
 
 def test_eneqk_basic():

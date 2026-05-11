@@ -1,7 +1,7 @@
 """Tests for hergp.herg_inhibition."""
 import numpy as np
 import pytest
-from moirais.fn.hergp import herg_inhibition
+from morie.fn.hergp import herg_inhibition
 
 
 def test_hergp_basic():

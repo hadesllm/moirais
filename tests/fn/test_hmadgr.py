@@ -1,7 +1,7 @@
 """Tests for hmadgr.geron_adagrad."""
 import numpy as np
 import pytest
-from moirais.fn.hmadgr import geron_adagrad
+from morie.fn.hmadgr import geron_adagrad
 
 
 def test_hmadgr_basic():

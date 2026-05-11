@@ -1,7 +1,7 @@
 """Tests for aithil.compositional_hill."""
 import numpy as np
 import pytest
-from moirais.fn.aithil import compositional_hill
+from morie.fn.aithil import compositional_hill
 
 
 def test_aithil_basic():

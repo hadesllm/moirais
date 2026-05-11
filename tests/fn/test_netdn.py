@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netdn — Network density."""
+"""Tests for morie.fn.netdn — Network density."""
 
 import numpy as np
 import pytest
-from moirais.fn.netdn import network_density
+from morie.fn.netdn import network_density
 
 
 class TestNetworkDensity:

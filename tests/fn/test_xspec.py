@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.xspec import cross_spectral_density, xspec
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.xspec import cross_spectral_density, xspec
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCrossSpectralDensity:

@@ -1,7 +1,7 @@
 """Tests for drpdid.placebo_dr_did."""
 import numpy as np
 import pytest
-from moirais.fn.drpdid import placebo_dr_did
+from morie.fn.drpdid import placebo_dr_did
 
 
 def test_drpdid_basic():

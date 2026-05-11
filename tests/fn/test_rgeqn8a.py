@@ -1,7 +1,7 @@
 """Tests for rgeqn8a.rangayyan_ch8_sem_threshold."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn8a import rangayyan_ch8_sem_threshold
+from morie.fn.rgeqn8a import rangayyan_ch8_sem_threshold
 
 
 def test_rgeqn8a_basic():

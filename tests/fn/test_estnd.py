@@ -1,7 +1,7 @@
 """Tests for estnd.estimand_framework."""
 import numpy as np
 import pytest
-from moirais.fn.estnd import estimand_framework
+from morie.fn.estnd import estimand_framework
 
 
 def test_estnd_basic():

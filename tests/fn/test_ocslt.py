@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ocslt — OC scaling."""
+"""Tests for morie.fn.ocslt — OC scaling."""
 import numpy as np
-from moirais.fn.ocslt import ocslt
+from morie.fn.ocslt import ocslt
 
 
 def test_ocslt_basic():

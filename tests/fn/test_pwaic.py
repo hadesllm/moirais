@@ -1,7 +1,7 @@
 """Tests for pwaic.effective_parameters_waic."""
 import numpy as np
 import pytest
-from moirais.fn.pwaic import effective_parameters_waic
+from morie.fn.pwaic import effective_parameters_waic
 
 
 def test_pwaic_basic():

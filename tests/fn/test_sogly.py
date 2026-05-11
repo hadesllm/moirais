@@ -1,7 +1,7 @@
 """Test sogly."""
 import numpy as np
 import pytest
-from moirais.fn.sogly import sogly
+from morie.fn.sogly import sogly
 
 
 def test_sogly_basic():

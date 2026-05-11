@@ -1,7 +1,7 @@
 """Tests for egrgrf.egregious_loss_forest."""
 import numpy as np
 import pytest
-from moirais.fn.egrgrf import egregious_loss_forest
+from morie.fn.egrgrf import egregious_loss_forest
 
 
 def test_egrgrf_basic():

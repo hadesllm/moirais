@@ -1,7 +1,7 @@
 """Test gcsnw."""
 import numpy as np
 import pytest
-from moirais.fn.gcsnw import gcsnw
+from morie.fn.gcsnw import gcsnw
 
 
 def test_gcsnw_basic():

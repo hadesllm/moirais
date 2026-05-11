@@ -1,7 +1,7 @@
 """Test rsknn."""
 import numpy as np
 import pytest
-from moirais.fn.rsknn import rsknn
+from morie.fn.rsknn import rsknn
 
 
 def test_rsknn_basic():

@@ -1,7 +1,7 @@
 """Tests for l2reg.l2_weight_regularization."""
 import numpy as np
 import pytest
-from moirais.fn.l2reg import l2_weight_regularization
+from morie.fn.l2reg import l2_weight_regularization
 
 
 def test_l2reg_basic():

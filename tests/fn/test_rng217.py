@@ -1,7 +1,7 @@
 """Tests for rng217.rangayyan_ch4_schwarz_inequality_real."""
 import numpy as np
 import pytest
-from moirais.fn.rng217 import rangayyan_ch4_schwarz_inequality_real
+from morie.fn.rng217 import rangayyan_ch4_schwarz_inequality_real
 
 
 def test_rng217_basic():

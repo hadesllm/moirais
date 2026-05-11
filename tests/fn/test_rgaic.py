@@ -1,7 +1,7 @@
 """Tests for rgaic.rangayyan_ar_order_aic."""
 import numpy as np
 import pytest
-from moirais.fn.rgaic import rangayyan_ar_order_aic
+from morie.fn.rgaic import rangayyan_ar_order_aic
 
 
 def test_rgaic_basic():

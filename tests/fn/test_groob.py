@@ -1,7 +1,7 @@
 """Tests for groob.geron_oob_error."""
 import numpy as np
 import pytest
-from moirais.fn.groob import geron_oob_error
+from morie.fn.groob import geron_oob_error
 
 
 def test_groob_basic():

@@ -1,7 +1,7 @@
 """Tests for igarcm.igarch_integrated."""
 import numpy as np
 import pytest
-from moirais.fn.igarcm import igarch_integrated
+from morie.fn.igarcm import igarch_integrated
 
 
 def test_igarcm_basic():

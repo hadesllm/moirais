@@ -1,7 +1,7 @@
 """Tests for eslo63.esl_oob_632."""
 import numpy as np
 import pytest
-from moirais.fn.eslo63 import esl_oob_632
+from morie.fn.eslo63 import esl_oob_632
 
 
 def test_eslo63_basic():

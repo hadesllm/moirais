@@ -1,7 +1,7 @@
 """Tests for km081.kamath_ch6_weat_similarity."""
 import numpy as np
 import pytest
-from moirais.fn.km081 import kamath_ch6_weat_similarity
+from morie.fn.km081 import kamath_ch6_weat_similarity
 
 
 def test_km081_basic():

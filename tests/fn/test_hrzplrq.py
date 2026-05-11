@@ -1,7 +1,7 @@
 """Tests for hrzplrq.horowitz_plr_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.hrzplrq import horowitz_plr_quantile
+from morie.fn.hrzplrq import horowitz_plr_quantile
 
 
 def test_hrzplrq_basic():

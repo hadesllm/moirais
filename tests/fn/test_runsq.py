@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.runsq import runsq
+from morie.fn.runsq import runsq
 
 
 class TestRunsq:

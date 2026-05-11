@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ocnrm -- OC normal vector."""
+"""Tests for morie.fn.ocnrm -- OC normal vector."""
 import numpy as np
-from moirais.fn.ocnrm import oc_normal_vector, ocnrm
+from morie.fn.ocnrm import oc_normal_vector, ocnrm
 
 
 def test_alias():

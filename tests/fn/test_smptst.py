@@ -1,7 +1,7 @@
 """Tests for smptst.sample_test_msm."""
 import numpy as np
 import pytest
-from moirais.fn.smptst import sample_test_msm
+from morie.fn.smptst import sample_test_msm
 
 
 def test_smptst_basic():

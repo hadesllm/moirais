@@ -1,7 +1,7 @@
 """Tests for gpper."""
 import numpy as np
 import pytest
-from moirais.fn.gpper import gpper
+from morie.fn.gpper import gpper
 
 
 def test_gpper_basic():
@@ -27,5 +27,5 @@ def test_gpper_no_data():
 
 
 def test_gpper_alias():
-    from moirais.fn.gpper import gpper
+    from morie.fn.gpper import gpper
     assert gpper is gpper

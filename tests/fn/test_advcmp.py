@@ -1,7 +1,7 @@
 """Tests for advcmp.advanced_composition."""
 import numpy as np
 import pytest
-from moirais.fn.advcmp import advanced_composition
+from morie.fn.advcmp import advanced_composition
 
 
 def test_advcmp_basic():

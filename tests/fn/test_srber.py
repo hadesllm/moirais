@@ -1,7 +1,7 @@
 """Test srber."""
 import numpy as np
 import pytest
-from moirais.fn.srber import srber
+from morie.fn.srber import srber
 
 
 def test_srber_basic():

@@ -1,7 +1,7 @@
 """Tests for slcmc.slice_sampler."""
 import numpy as np
 import pytest
-from moirais.fn.slcmc import slice_sampler
+from morie.fn.slcmc import slice_sampler
 
 
 def test_slcmc_basic():

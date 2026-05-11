@@ -1,6 +1,6 @@
 """Tests for ordinal IRT."""
 import numpy as np
-from moirais.fn.oirt import oirt
+from morie.fn.oirt import oirt
 
 
 def test_oirt_smoke():
@@ -13,7 +13,7 @@ def test_oirt_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.oirt import cheatsheet
+    from morie.fn.oirt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

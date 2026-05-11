@@ -1,7 +1,7 @@
 """Test encrl."""
 import numpy as np
 import pytest
-from moirais.fn.encrl import encrl
+from morie.fn.encrl import encrl
 
 
 def test_encrl_basic():

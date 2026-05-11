@@ -1,7 +1,7 @@
 """Test fobark."""
 import numpy as np
 import pytest
-from moirais.fn.fobark import fobark
+from morie.fn.fobark import fobark
 
 
 def test_fobark_basic():

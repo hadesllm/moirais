@@ -1,7 +1,7 @@
 """Tests for smfd.smooth_functional_data."""
 import numpy as np
 import pytest
-from moirais.fn.smfd import smooth_functional_data
+from morie.fn.smfd import smooth_functional_data
 
 
 def test_smfd_basic():

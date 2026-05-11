@@ -1,7 +1,7 @@
 """Tests for causivla.causal_iv_late."""
 import numpy as np
 import pytest
-from moirais.fn.causivla import causal_iv_late
+from morie.fn.causivla import causal_iv_late
 
 
 def test_causivla_basic():

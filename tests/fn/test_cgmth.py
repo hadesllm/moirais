@@ -1,7 +1,7 @@
 """Tests for cgmth.conjugate_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.cgmth import cgmth as conjugate_gradient
+from morie.fn.cgmth import cgmth as conjugate_gradient
 
 
 def test_cgmth_basic():

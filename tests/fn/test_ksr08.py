@@ -1,7 +1,7 @@
 """Tests for ksr08.kosorok_multiplier_bootstrap."""
 import numpy as np
 import pytest
-from moirais.fn.ksr08 import kosorok_multiplier_bootstrap
+from morie.fn.ksr08 import kosorok_multiplier_bootstrap
 
 
 def test_ksr08_basic():

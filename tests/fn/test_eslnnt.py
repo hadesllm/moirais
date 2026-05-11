@@ -1,7 +1,7 @@
 """Tests for eslnnt.esl_neural_net."""
 import numpy as np
 import pytest
-from moirais.fn.eslnnt import esl_neural_net
+from morie.fn.eslnnt import esl_neural_net
 
 
 def test_eslnnt_basic():

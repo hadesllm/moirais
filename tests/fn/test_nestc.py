@@ -1,7 +1,7 @@
 """Test nested_cv."""
 import numpy as np
-from moirais.fn.nestc import nested_cv, nestc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nestc import nested_cv, nestc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNestedCv:

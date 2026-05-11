@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.waic -- WAIC."""
+"""Tests for morie.fn.waic -- WAIC."""
 
 import numpy as np
-from moirais.fn.waic import compute_waic
+from morie.fn.waic import compute_waic
 
 
 def test_returns_dict():

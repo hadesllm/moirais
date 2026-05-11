@@ -1,7 +1,7 @@
 """Tests for rgfm.rangayyan_fm_signal."""
 import numpy as np
 import pytest
-from moirais.fn.rgfm import rangayyan_fm_signal
+from morie.fn.rgfm import rangayyan_fm_signal
 
 
 def test_rgfm_basic():

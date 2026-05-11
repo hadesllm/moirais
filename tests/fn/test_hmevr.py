@@ -1,7 +1,7 @@
 """Tests for hmevr.geron_explained_variance_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.hmevr import geron_explained_variance_ratio
+from morie.fn.hmevr import geron_explained_variance_ratio
 
 
 def test_hmevr_basic():

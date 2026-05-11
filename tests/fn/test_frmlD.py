@@ -1,7 +1,7 @@
 """Tests for frmlD.formal_derivative."""
 import numpy as np
 import pytest
-from moirais.fn.frmlD import formal_derivative
+from morie.fn.frmlD import formal_derivative
 
 
 def test_frmlD_basic():

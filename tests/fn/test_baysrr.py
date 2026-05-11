@@ -1,7 +1,7 @@
 """Tests for baysrr.bayes_ridge."""
 import numpy as np
 import pytest
-from moirais.fn.baysrr import bayes_ridge
+from morie.fn.baysrr import bayes_ridge
 
 
 def test_baysrr_basic():

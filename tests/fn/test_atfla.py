@@ -1,7 +1,7 @@
 """I cannot teach anybody anything. I can only make them think. — Socrates"""
 import numpy as np
 import pytest
-from moirais.fn.atfla import flash_attention_block
+from morie.fn.atfla import flash_attention_block
 
 
 def test_atfla_basic():

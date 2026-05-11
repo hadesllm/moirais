@@ -1,7 +1,7 @@
 """Tests for micomp.mi_compare_models."""
 import numpy as np
 import pytest
-from moirais.fn.micomp import mi_compare_models
+from morie.fn.micomp import mi_compare_models
 
 
 def test_micomp_basic():

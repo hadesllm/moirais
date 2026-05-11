@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.cvar."""
+"""Tests for morie.fn.cvar."""
 import numpy as np
-from moirais.fn.cvar import cvar
+from morie.fn.cvar import cvar
 
 
 def test_cvar_smoke():
@@ -12,7 +12,7 @@ def test_cvar_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.cvar import cheatsheet
+    from morie.fn.cvar import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

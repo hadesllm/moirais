@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tjfun — j-invariant."""
+"""Tests for morie.fn.tjfun — j-invariant."""
 
 import pytest
 
-from moirais.fn.tjfun import j_invariant
+from morie.fn.tjfun import j_invariant
 
 
 class TestJInvariant:

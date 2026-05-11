@@ -1,7 +1,7 @@
 """Test nbair."""
 import numpy as np
 import pytest
-from moirais.fn.nbair import nbair
+from morie.fn.nbair import nbair
 
 
 def test_nbair_basic():

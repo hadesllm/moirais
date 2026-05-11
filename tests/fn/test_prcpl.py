@@ -1,7 +1,7 @@
 """Test precision_recall_curve (prcpl)."""
 import numpy as np
-from moirais.fn.prcpl import precision_recall_curve, prcpl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prcpl import precision_recall_curve, prcpl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPrcpl:

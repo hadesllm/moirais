@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gwpca."""
+"""Tests for morie.fn.gwpca."""
 import numpy as np
-from moirais.fn.gwpca import gw_pca
+from morie.fn.gwpca import gw_pca
 
 
 def test_gwpca_smoke():
@@ -12,7 +12,7 @@ def test_gwpca_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.gwpca import cheatsheet
+    from morie.fn.gwpca import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

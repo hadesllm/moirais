@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmdwn -- DW-NOMINATE dynamic estimation"""
+"""Tests for morie.fn.nmdwn -- DW-NOMINATE dynamic estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmdwn import dwnominate
+from morie.fn.nmdwn import dwnominate
 
 
 class TestDwnominate:

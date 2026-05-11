@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgfit -- Variogram WLS fitting"""
+"""Tests for morie.fn.vgfit -- Variogram WLS fitting"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgfit import vario_fit_wls
+from morie.fn.vgfit import vario_fit_wls
 
 
 class TestVarioFitWls:

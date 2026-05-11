@@ -1,7 +1,7 @@
 """Tests for depthM.mahalanobis_depth."""
 import numpy as np
 import pytest
-from moirais.fn.depthM import mahalanobis_depth
+from morie.fn.depthM import mahalanobis_depth
 
 
 def test_depthM_basic():

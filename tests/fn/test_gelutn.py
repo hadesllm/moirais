@@ -1,7 +1,7 @@
 """Tests for gelutn.gelu_tanh_approx."""
 import numpy as np
 import pytest
-from moirais.fn.gelutn import gelu_tanh_approx
+from morie.fn.gelutn import gelu_tanh_approx
 
 
 def test_gelutn_basic():

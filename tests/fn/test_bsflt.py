@@ -1,7 +1,7 @@
 """Test bandstop_filter (bsflt)."""
 import numpy as np
-from moirais.fn.bsflt import bandstop_filter, bsflt
-from moirais.fn._containers import SignalResult
+from morie.fn.bsflt import bandstop_filter, bsflt
+from morie.fn._containers import SignalResult
 
 
 class TestBandstopFilter:

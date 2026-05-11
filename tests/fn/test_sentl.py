@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sentl -- detection metrics."""
+"""Tests for morie.fn.sentl -- detection metrics."""
 
 import numpy as np
-from moirais.fn.sentl import detection_metrics, sentl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sentl import detection_metrics, sentl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSentl:

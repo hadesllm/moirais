@@ -1,7 +1,7 @@
 """Tests for aitdir.dirichlet_density."""
 import numpy as np
 import pytest
-from moirais.fn.aitdir import dirichlet_density
+from morie.fn.aitdir import dirichlet_density
 
 
 def test_aitdir_basic():

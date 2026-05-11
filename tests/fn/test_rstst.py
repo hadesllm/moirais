@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rstst -- Restricted survival time test."""
+"""Tests for morie.fn.rstst -- Restricted survival time test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rstst import rstst
+from morie.fn.rstst import rstst
 
 
 @pytest.fixture()
@@ -39,5 +39,5 @@ def test_wrong_groups():
 
 
 def test_cheatsheet():
-    from moirais.fn.rstst import cheatsheet
+    from morie.fn.rstst import cheatsheet
     assert "restricted" in cheatsheet().lower()

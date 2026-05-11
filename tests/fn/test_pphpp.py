@@ -1,7 +1,7 @@
 """Test pphpp."""
 import numpy as np
 import pytest
-from moirais.fn.pphpp import pphpp
+from morie.fn.pphpp import pphpp
 
 
 def test_pphpp_basic():

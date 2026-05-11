@@ -1,7 +1,7 @@
 """Tests for giniI.gini_impurity."""
 import numpy as np
 import pytest
-from moirais.fn.giniI import gini_impurity
+from morie.fn.giniI import gini_impurity
 
 
 def test_giniI_basic():

@@ -1,7 +1,7 @@
 """Test rsfpr."""
 import numpy as np
 import pytest
-from moirais.fn.rsfpr import rsfpr
+from morie.fn.rsfpr import rsfpr
 
 
 def test_rsfpr_basic():

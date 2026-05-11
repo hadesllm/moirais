@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ypll -- years of potential life lost."""
+"""Tests for morie.fn.ypll -- years of potential life lost."""
 
 import numpy as np
 import pytest
-from moirais.fn.ypll import years_potential_life_lost
+from morie.fn.ypll import years_potential_life_lost
 
 
 class TestYPLL:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptffn -- Empty space F-function"""
+"""Tests for morie.fn.ptffn -- Empty space F-function"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptffn import f_function
+from morie.fn.ptffn import f_function
 
 
 class TestFFunction:

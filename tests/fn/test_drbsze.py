@@ -1,7 +1,7 @@
 """Tests for drbsze.dr_did_size_correction."""
 import numpy as np
 import pytest
-from moirais.fn.drbsze import dr_did_size_correction
+from morie.fn.drbsze import dr_did_size_correction
 
 
 def test_drbsze_basic():

@@ -1,7 +1,7 @@
 """Tests for gb434.gibbons_ks_one_sided_dist."""
 import numpy as np
 import pytest
-from moirais.fn.gb434 import gibbons_ks_one_sided_dist
+from morie.fn.gb434 import gibbons_ks_one_sided_dist
 
 
 def test_gb434_basic():

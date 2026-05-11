@@ -1,7 +1,7 @@
 """Tests for midegf.mi_degrees_of_freedom."""
 import numpy as np
 import pytest
-from moirais.fn.midegf import mi_degrees_of_freedom
+from morie.fn.midegf import mi_degrees_of_freedom
 
 
 def test_midegf_basic():

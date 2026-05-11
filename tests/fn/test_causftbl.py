@@ -1,7 +1,7 @@
 """Tests for causftbl.causal_frontdoor_adjustment."""
 import numpy as np
 import pytest
-from moirais.fn.causftbl import causal_frontdoor_adjustment
+from morie.fn.causftbl import causal_frontdoor_adjustment
 
 
 def test_causftbl_basic():

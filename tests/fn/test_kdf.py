@@ -1,8 +1,8 @@
-"""Tests for moirais.crypto._kdf — HKDF-SHA256."""
+"""Tests for morie.crypto._kdf — HKDF-SHA256."""
 
 import pytest
 
-from moirais.crypto._kdf import hkdf_sha256
+from morie.crypto._kdf import hkdf_sha256
 
 
 class TestHKDF:

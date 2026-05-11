@@ -1,7 +1,7 @@
 """Tests for gb_ktv.gibbons_kendall_tau_var."""
 import numpy as np
 import pytest
-from moirais.fn.gb_ktv import gibbons_kendall_tau_var
+from morie.fn.gb_ktv import gibbons_kendall_tau_var
 
 
 def test_gb_ktv_basic():

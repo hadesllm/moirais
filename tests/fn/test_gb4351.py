@@ -1,7 +1,7 @@
 """Tests for gb4351.gibbons_ks_chi2_approx."""
 import numpy as np
 import pytest
-from moirais.fn.gb4351 import gibbons_ks_chi2_approx
+from morie.fn.gb4351 import gibbons_ks_chi2_approx
 
 
 def test_gb4351_basic():

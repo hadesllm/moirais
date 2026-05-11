@@ -1,7 +1,7 @@
 """Tests for otpot.ot_pot_log_potentials."""
 import numpy as np
 import pytest
-from moirais.fn.otpot import ot_pot_log_potentials
+from morie.fn.otpot import ot_pot_log_potentials
 
 
 def test_otpot_basic():

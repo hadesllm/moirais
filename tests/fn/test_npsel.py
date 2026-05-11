@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.npsel -- Nonparametric model selection."""
+"""Tests for morie.fn.npsel -- Nonparametric model selection."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.npsel import npsel
+from morie.fn.npsel import npsel
 
 
 @pytest.fixture()
@@ -65,5 +65,5 @@ def test_dimension_mismatch():
 
 
 def test_cheatsheet():
-    from moirais.fn.npsel import cheatsheet
+    from morie.fn.npsel import cheatsheet
     assert "model selection" in cheatsheet().lower()

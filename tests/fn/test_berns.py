@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.berns -- Bernstein concentration inequality."""
+"""Tests for morie.fn.berns -- Bernstein concentration inequality."""
 
 import pytest
-from moirais.fn.berns import bernstein_bound
+from morie.fn.berns import bernstein_bound
 
 
 class TestBernstein:

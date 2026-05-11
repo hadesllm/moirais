@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.lstds — list datasets."""
+"""Tests for morie.fn.lstds — list datasets."""
 
 import pytest
 
-from moirais.fn.lstds import lstds, list_datasets
+from morie.fn.lstds import lstds, list_datasets
 
 
 def test_alias_is_same_function():

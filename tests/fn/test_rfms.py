@@ -1,7 +1,7 @@
 """Tests for rfms."""
 import numpy as np
 import pytest
-from moirais.fn.rfms import rfms
+from morie.fn.rfms import rfms
 
 
 def test_rfms_basic():
@@ -27,5 +27,5 @@ def test_rfms_no_data():
 
 
 def test_rfms_alias():
-    from moirais.fn.rfms import rfms
+    from morie.fn.rfms import rfms
     assert rfms is rfms

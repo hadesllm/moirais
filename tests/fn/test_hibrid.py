@@ -1,7 +1,7 @@
 """Tests for hibrid.hibrid_prediction."""
 import numpy as np
 import pytest
-from moirais.fn.hibrid import hibrid_prediction
+from morie.fn.hibrid import hibrid_prediction
 
 
 def test_hibrid_basic():

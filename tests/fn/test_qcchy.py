@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.qcchy -- Cauchy quantile."""
+"""Tests for morie.fn.qcchy -- Cauchy quantile."""
 
 import numpy as np
 import pytest
-from moirais.fn.qcchy import qcchy
+from morie.fn.qcchy import qcchy
 
 
 class TestQcchy:

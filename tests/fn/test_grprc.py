@@ -1,7 +1,7 @@
 """Tests for grprc.geron_precision_recall_curve."""
 import numpy as np
 import pytest
-from moirais.fn.grprc import geron_precision_recall_curve
+from morie.fn.grprc import geron_precision_recall_curve
 
 
 def test_grprc_basic():

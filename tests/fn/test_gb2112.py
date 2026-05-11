@@ -1,7 +1,7 @@
 """Tests for gb2112.gibbons_block_freq_dist."""
 import numpy as np
 import pytest
-from moirais.fn.gb2112 import gibbons_block_freq_dist
+from morie.fn.gb2112 import gibbons_block_freq_dist
 
 
 def test_gb2112_basic():

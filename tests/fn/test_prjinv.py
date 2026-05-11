@@ -1,7 +1,7 @@
 """Test prjinv."""
 import numpy as np
 import pytest
-from moirais.fn.prjinv import prjinv
+from morie.fn.prjinv import prjinv
 
 
 def test_prjinv_basic():

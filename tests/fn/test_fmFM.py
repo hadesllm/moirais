@@ -1,7 +1,7 @@
 """Tests for fmFM.factorization_machines."""
 import numpy as np
 import pytest
-from moirais.fn.fmFM import factorization_machines
+from morie.fn.fmFM import factorization_machines
 
 
 def test_fmFM_basic():

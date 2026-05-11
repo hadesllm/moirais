@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.km — Kaplan-Meier estimator."""
+"""Tests for morie.fn.km — Kaplan-Meier estimator."""
 import numpy as np
 
-from moirais.fn.km import kaplan_meier, km
+from morie.fn.km import kaplan_meier, km
 
 
 def test_km_starts_at_one():

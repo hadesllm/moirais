@@ -1,7 +1,7 @@
 """Tests for agdrcn.alphazero_dirichlet_concentration."""
 import numpy as np
 import pytest
-from moirais.fn.agdrcn import alphazero_dirichlet_concentration
+from morie.fn.agdrcn import alphazero_dirichlet_concentration
 
 
 def test_agdrcn_basic():

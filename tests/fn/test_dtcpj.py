@@ -1,7 +1,7 @@
 """Test dtcpj."""
 import numpy as np
 import pytest
-from moirais.fn.dtcpj import dtcpj
+from morie.fn.dtcpj import dtcpj
 
 
 def test_dtcpj_basic():

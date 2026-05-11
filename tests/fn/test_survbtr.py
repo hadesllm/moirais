@@ -1,7 +1,7 @@
 """Tests for survbtr.bart_survival."""
 import numpy as np
 import pytest
-from moirais.fn.survbtr import bart_survival
+from morie.fn.survbtr import bart_survival
 
 
 def test_survbtr_basic():

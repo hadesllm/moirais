@@ -1,7 +1,7 @@
 """Tests for chlblk."""
 import numpy as np
 import pytest
-from moirais.fn.chlblk import chlblk
+from morie.fn.chlblk import chlblk
 
 
 def test_chlblk_basic():
@@ -27,5 +27,5 @@ def test_chlblk_no_data():
 
 
 def test_chlblk_alias():
-    from moirais.fn.chlblk import chlblk
+    from morie.fn.chlblk import chlblk
     assert chlblk is chlblk

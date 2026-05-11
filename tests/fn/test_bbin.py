@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bbin — Bayesian binomial."""
+"""Tests for morie.fn.bbin — Bayesian binomial."""
 
 import pytest
 
-from moirais.fn.bbin import bayesian_binomial
+from morie.fn.bbin import bayesian_binomial
 
 
 class TestBayesianBinomial:

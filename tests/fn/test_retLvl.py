@@ -1,7 +1,7 @@
 """Tests for retLvl.return_level."""
 import numpy as np
 import pytest
-from moirais.fn.retLvl import return_level
+from morie.fn.retLvl import return_level
 
 
 def test_retLvl_basic():

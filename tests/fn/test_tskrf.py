@@ -1,7 +1,7 @@
 """Test tskrf."""
 import numpy as np
 import pytest
-from moirais.fn.tskrf import tskrf
+from morie.fn.tskrf import tskrf
 
 
 def test_tskrf_basic():

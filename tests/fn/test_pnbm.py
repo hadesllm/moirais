@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pnbm — negative binomial CDF."""
+"""Tests for morie.fn.pnbm — negative binomial CDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pnbm import pnbm
+from morie.fn.pnbm import pnbm
 
 
 class TestPnbm:

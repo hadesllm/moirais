@@ -1,7 +1,7 @@
 """Tests for vitcls.vit_cls_token."""
 import numpy as np
 import pytest
-from moirais.fn.vitcls import vit_cls_token
+from morie.fn.vitcls import vit_cls_token
 
 
 def test_vitcls_basic():

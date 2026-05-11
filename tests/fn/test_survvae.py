@@ -1,7 +1,7 @@
 """Tests for survvae.vae_survival."""
 import numpy as np
 import pytest
-from moirais.fn.survvae import vae_survival
+from morie.fn.survvae import vae_survival
 
 
 def test_survvae_basic():

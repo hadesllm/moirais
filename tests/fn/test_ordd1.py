@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.ordd1 — OTIS RDD age."""
+"""Tests for morie.fn.ordd1 — OTIS RDD age."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.ordd1 import otis_rdd_age
-from moirais.fn._containers import ESRes
+from morie.fn.ordd1 import otis_rdd_age
+from morie.fn._containers import ESRes
 
 
 class TestOtisRddAge:

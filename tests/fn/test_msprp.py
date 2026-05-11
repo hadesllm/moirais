@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msprp -- Partial Procrustes"""
+"""Tests for morie.fn.msprp -- Partial Procrustes"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msprp import procrustes_part
+from morie.fn.msprp import procrustes_part
 
 
 class TestProcrustesPart:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ipcw -- Inverse probability of censoring weights."""
+"""Tests for morie.fn.ipcw -- Inverse probability of censoring weights."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ipcw import ipcw
+from morie.fn.ipcw import ipcw
 
 
 @pytest.fixture()
@@ -45,5 +45,5 @@ def test_censoring_bounded(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.ipcw import cheatsheet
+    from morie.fn.ipcw import cheatsheet
     assert "censoring" in cheatsheet().lower()

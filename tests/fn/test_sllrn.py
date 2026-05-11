@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sllrn — super learner."""
+"""Tests for morie.fn.sllrn — super learner."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sllrn import sllrn
+from morie.fn.sllrn import sllrn
 
 
 def test_basic_output():

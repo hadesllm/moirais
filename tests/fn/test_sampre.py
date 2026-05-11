@@ -1,7 +1,7 @@
 """Tests for sampre.sam_prompt_encoder."""
 import numpy as np
 import pytest
-from moirais.fn.sampre import sam_prompt_encoder
+from morie.fn.sampre import sam_prompt_encoder
 
 
 def test_sampre_basic():

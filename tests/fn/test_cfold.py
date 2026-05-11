@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfold -- Cross-fitting for DML."""
+"""Tests for morie.fn.cfold -- Cross-fitting for DML."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.cfold import cross_fit, cfold
+from morie.fn.cfold import cross_fit, cfold
 
 
 class TestCrossFit:

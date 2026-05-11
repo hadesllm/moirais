@@ -1,7 +1,7 @@
 """Tests for sdurbm.spatial_durbin_model."""
 import numpy as np
 import pytest
-from moirais.fn.sdurbm import spatial_durbin_model
+from morie.fn.sdurbm import spatial_durbin_model
 
 
 def test_sdurbm_basic():

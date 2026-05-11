@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgdsj -- Disjunctive kriging"""
+"""Tests for morie.fn.kgdsj -- Disjunctive kriging"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgdsj import disjunctive_kriging
+from morie.fn.kgdsj import disjunctive_kriging
 
 
 class TestDisjunctiveKriging:

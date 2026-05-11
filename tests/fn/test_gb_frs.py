@@ -1,7 +1,7 @@
 """Tests for gb_frs.gibbons_friedman_chi2_approp."""
 import numpy as np
 import pytest
-from moirais.fn.gb_frs import gibbons_friedman_chi2_approp
+from morie.fn.gb_frs import gibbons_friedman_chi2_approp
 
 
 def test_gb_frs_basic():

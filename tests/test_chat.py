@@ -1,4 +1,4 @@
-"""Tests for moirais.chat — interactive chat REPL and session management."""
+"""Tests for morie.chat — interactive chat REPL and session management."""
 
 from __future__ import annotations
 
@@ -6,7 +6,7 @@ from unittest.mock import patch, MagicMock
 
 import pytest
 
-from moirais.chat import (
+from morie.chat import (
     ChatMessage,
     ChatSession,
     SlashCommand,
@@ -61,7 +61,7 @@ class TestChatSessionSlashCommands:
     def test_doctor_command(self):
         result = self.session.send("/doctor", stream=False)
         assert isinstance(result, str)
-        assert "MOIRAIS Doctor" in result
+        assert "MORIE Doctor" in result
 
     def test_agents_command(self):
         result = self.session.send("/agents", stream=False)
@@ -113,8 +113,8 @@ class TestChatSessionSlashCommands:
 
 
 class TestChatSessionLLM:
-    @patch("moirais.chat.ask_multi", return_value="Test response")
-    @patch("moirais.chat.detect_available_provider", return_value="local")
+    @patch("morie.chat.ask_multi", return_value="Test response")
+    @patch("morie.chat.detect_available_provider", return_value="local")
     def test_send_message_non_stream(self, mock_provider, mock_ask):
         session = ChatSession()
         result = session.send("What is ATE?", stream=False)
@@ -126,8 +126,8 @@ class TestChatSessionLLM:
         assert session.history[1].role == "assistant"
         assert session.history[1].content == "Test response"
 
-    @patch("moirais.chat.ask_multi", return_value=iter(["chunk1", "chunk2"]))
-    @patch("moirais.chat.detect_available_provider", return_value="local")
+    @patch("morie.chat.ask_multi", return_value=iter(["chunk1", "chunk2"]))
+    @patch("morie.chat.detect_available_provider", return_value="local")
     def test_send_message_stream(self, mock_provider, mock_ask):
         session = ChatSession()
         result = session.send("What is ATE?", stream=True)
@@ -139,8 +139,8 @@ class TestChatSessionLLM:
         assert len(session.history) == 2
         assert session.history[1].content == "chunk1chunk2"
 
-    @patch("moirais.chat.ask_multi", return_value="Response 2")
-    @patch("moirais.chat.detect_available_provider", return_value="local")
+    @patch("morie.chat.ask_multi", return_value="Response 2")
+    @patch("morie.chat.detect_available_provider", return_value="local")
     def test_multi_turn_history(self, mock_provider, mock_ask):
         session = ChatSession()
 

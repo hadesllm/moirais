@@ -1,7 +1,7 @@
 """Test geapt."""
 import numpy as np
 import pytest
-from moirais.fn.geapt import geapt
+from morie.fn.geapt import geapt
 
 
 def test_geapt_basic():

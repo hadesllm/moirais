@@ -1,7 +1,7 @@
 """Tests for rmsoptm.rmsprop."""
 import numpy as np
 import pytest
-from moirais.fn.rmsoptm import rmsprop
+from morie.fn.rmsoptm import rmsprop
 
 
 def test_rmsoptm_basic():

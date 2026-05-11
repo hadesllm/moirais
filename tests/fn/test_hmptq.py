@@ -1,7 +1,7 @@
 """Tests for hmptq.geron_static_quantization_ptq."""
 import numpy as np
 import pytest
-from moirais.fn.hmptq import geron_static_quantization_ptq
+from morie.fn.hmptq import geron_static_quantization_ptq
 
 
 def test_hmptq_basic():

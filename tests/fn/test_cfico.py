@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfico."""
+"""Tests for morie.fn.cfico."""
 
 import numpy as np
 import pytest
-from moirais.fn.cfico import cfico
+from morie.fn.cfico import cfico
 
 
 class TestCfico:

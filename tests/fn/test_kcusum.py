@@ -1,7 +1,7 @@
 """Tests for kcusum.kernel_cusum."""
 import numpy as np
 import pytest
-from moirais.fn.kcusum import kernel_cusum
+from morie.fn.kcusum import kernel_cusum
 
 
 def test_kcusum_basic():

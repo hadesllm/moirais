@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.swoop -- lift-drag polar."""
+"""Tests for morie.fn.swoop -- lift-drag polar."""
 
 import numpy as np
-from moirais.fn.swoop import lift_drag_polar, swoop
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.swoop import lift_drag_polar, swoop
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSwoop:

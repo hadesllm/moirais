@@ -1,9 +1,9 @@
 Polyglot REPL
 =============
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS includes a polyglot REPL that bridges multiple programming languages
+MORIE includes a polyglot REPL that bridges multiple programming languages
 within a single session. Variables, DataFrames, and scalars flow
 bidirectionally between Python, R, and Shell, with additional support for
 Julia, SQL, Node.js, Go, Rust, C, C++, OCaml, Lua, TypeScript, LaTeX, and
@@ -13,8 +13,8 @@ Access the REPL via the TUI (``e`` key) or the CLI:
 
 .. code-block:: bash
 
-   moirais repl
-   moirais repl --headless    # non-interactive, reads from stdin
+   morie repl
+   morie repl --headless    # non-interactive, reads from stdin
 
 Language Detection
 ------------------
@@ -156,8 +156,8 @@ For scripting and CI pipelines, the REPL runs in headless mode:
 
 .. code-block:: bash
 
-   echo 'print(2+2)' | moirais repl --headless
-   cat analysis_script.txt | moirais repl --headless
+   echo 'print(2+2)' | morie repl --headless
+   cat analysis_script.txt | morie repl --headless
 
 Headless mode reads from stdin, executes each line, prints output to
 stdout, and exits when input is exhausted. All language detection and

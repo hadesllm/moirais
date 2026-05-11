@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ewma — EWMA control chart."""
+"""Tests for morie.fn.ewma — EWMA control chart."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ewma import ewma_detect
+from morie.fn.ewma import ewma_detect
 
 
 class TestEWMA:

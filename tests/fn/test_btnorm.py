@@ -1,7 +1,7 @@
 """Tests for btnorm.boot_normal_ci."""
 import numpy as np
 import pytest
-from moirais.fn.btnorm import boot_normal_ci
+from morie.fn.btnorm import boot_normal_ci
 
 
 def test_btnorm_basic():

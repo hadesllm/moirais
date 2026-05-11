@@ -1,7 +1,7 @@
 """Tests for wrd2v.word2vec."""
 import numpy as np
 import pytest
-from moirais.fn.wrd2v import word2vec
+from morie.fn.wrd2v import word2vec
 
 
 def test_wrd2v_basic():

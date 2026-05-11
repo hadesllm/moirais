@@ -1,7 +1,7 @@
 """Tests for iccA.icc_absolute_agreement."""
 import numpy as np
 import pytest
-from moirais.fn.iccA import icc_absolute_agreement
+from morie.fn.iccA import icc_absolute_agreement
 
 
 def test_iccA_basic():

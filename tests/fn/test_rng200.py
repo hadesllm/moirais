@@ -1,7 +1,7 @@
 """Tests for rng200.rangayyan_ch4_continuous_dot_product."""
 import numpy as np
 import pytest
-from moirais.fn.rng200 import rangayyan_ch4_continuous_dot_product
+from morie.fn.rng200 import rangayyan_ch4_continuous_dot_product
 
 
 def test_rng200_basic():

@@ -1,7 +1,7 @@
 """Test foplts."""
 import numpy as np
 import pytest
-from moirais.fn.foplts import foplts
+from morie.fn.foplts import foplts
 
 
 def test_foplts_basic():

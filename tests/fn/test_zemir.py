@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zemir -- Migration flow model"""
+"""Tests for morie.fn.zemir -- Migration flow model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zemir import migration_flow
+from morie.fn.zemir import migration_flow
 
 
 class TestMigrationFlow:

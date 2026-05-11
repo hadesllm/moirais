@@ -1,7 +1,7 @@
 """Tests for plkt.plackett_copula."""
 import numpy as np
 import pytest
-from moirais.fn.plkt import plackett_copula
+from morie.fn.plkt import plackett_copula
 
 
 def test_plkt_basic():

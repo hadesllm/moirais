@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bench — Benchmark dose."""
+"""Tests for morie.fn.bench — Benchmark dose."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bench import benchmark_dose
+from morie.fn.bench import benchmark_dose
 
 
 class TestBenchmarkDose:

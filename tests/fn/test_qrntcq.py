@@ -1,7 +1,7 @@
 """Tests for qrntcq.quarantine_efficacy."""
 import numpy as np
 import pytest
-from moirais.fn.qrntcq import quarantine_efficacy
+from morie.fn.qrntcq import quarantine_efficacy
 
 
 def test_qrntcq_basic():

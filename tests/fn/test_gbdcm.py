@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gbdcm -- GBD compare."""
+"""Tests for morie.fn.gbdcm -- GBD compare."""
 
 import pytest
-from moirais.fn.gbdcm import gbd_compare
+from morie.fn.gbdcm import gbd_compare
 
 
 class TestGBDCompare:

@@ -1,7 +1,7 @@
 """Tests for fzsgn.fauzi_smoothed_sign."""
 import numpy as np
 import pytest
-from moirais.fn.fzsgn import fauzi_smoothed_sign
+from morie.fn.fzsgn import fauzi_smoothed_sign
 
 
 def test_fzsgn_basic():

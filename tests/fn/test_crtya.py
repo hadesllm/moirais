@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.crtya — youth court."""
+"""Tests for morie.fn.crtya — youth court."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.crtya import court_youth
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.crtya import court_youth
+from morie.fn._containers import DescriptiveResult
 
 
 class TestYouthCourt:

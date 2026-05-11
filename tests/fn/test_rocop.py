@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rocop -- ROC optimal cutoff."""
+"""Tests for morie.fn.rocop -- ROC optimal cutoff."""
 
 import numpy as np
 import pytest
-from moirais.fn.rocop import roc_optimal_cutoff
+from morie.fn.rocop import roc_optimal_cutoff
 
 
 class TestROCOptimal:

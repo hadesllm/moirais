@@ -1,7 +1,7 @@
 """Tests for eslism.esl_isomap."""
 import numpy as np
 import pytest
-from moirais.fn.eslism import esl_isomap
+from morie.fn.eslism import esl_isomap
 
 
 def test_eslism_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzplri.horowitz_plr_identification."""
 import numpy as np
 import pytest
-from moirais.fn.hrzplri import horowitz_plr_identification
+from morie.fn.hrzplri import horowitz_plr_identification
 
 
 def test_hrzplri_basic():

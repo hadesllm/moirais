@@ -1,7 +1,7 @@
 """Tests for whtnse.white_noise_test."""
 import numpy as np
 import pytest
-from moirais.fn.whtnse import white_noise_test
+from morie.fn.whtnse import white_noise_test
 
 
 def test_whtnse_basic():

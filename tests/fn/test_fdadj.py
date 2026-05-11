@@ -1,7 +1,7 @@
 """Tests for fdadj.frontdoor_adjustment."""
 import numpy as np
 import pytest
-from moirais.fn.fdadj import frontdoor_adjustment
+from morie.fn.fdadj import frontdoor_adjustment
 
 
 def test_fdadj_basic():

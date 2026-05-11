@@ -1,7 +1,7 @@
 """Tests for matrix_trace_norm."""
 import numpy as np
 import pytest
-from moirais.fn.mxtrn import matrix_trace_norm, mxtrn
+from morie.fn.mxtrn import matrix_trace_norm, mxtrn
 
 
 def test_identity():

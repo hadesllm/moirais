@@ -1,7 +1,7 @@
 """Test vmspc."""
 import numpy as np
 import pytest
-from moirais.fn.vmspc import vmspc
+from morie.fn.vmspc import vmspc
 
 
 def test_vmspc_basic():

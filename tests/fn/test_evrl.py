@@ -1,7 +1,7 @@
 """Tests for evrl.evt_return_level."""
 import numpy as np
 import pytest
-from moirais.fn.evrl import evt_return_level
+from morie.fn.evrl import evt_return_level
 
 
 def test_evrl_basic():

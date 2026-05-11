@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.stscm -- Byzantine fault detection."""
+"""Tests for morie.fn.stscm -- Byzantine fault detection."""
 
 import numpy as np
-from moirais.fn.stscm import byzantine_detect, stscm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.stscm import byzantine_detect, stscm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStscm:

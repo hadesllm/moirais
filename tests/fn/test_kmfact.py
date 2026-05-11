@@ -1,7 +1,7 @@
 """Tests for kmfact.kamath_factscore."""
 import numpy as np
 import pytest
-from moirais.fn.kmfact import kamath_factscore
+from morie.fn.kmfact import kamath_factscore
 
 
 def test_kmfact_basic():

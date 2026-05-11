@@ -1,7 +1,7 @@
 """Tests for ksr11.kosorok_efficient_score."""
 import numpy as np
 import pytest
-from moirais.fn.ksr11 import kosorok_efficient_score
+from morie.fn.ksr11 import kosorok_efficient_score
 
 
 def test_ksr11_basic():

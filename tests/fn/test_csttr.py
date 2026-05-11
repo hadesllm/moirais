@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.csttr — custody transfer rate."""
+"""Tests for morie.fn.csttr — custody transfer rate."""
 
 import pandas as pd
-from moirais.fn.csttr import custody_transfer_rate
+from morie.fn.csttr import custody_transfer_rate
 
 
 class TestCustodyTransferRate:

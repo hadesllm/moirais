@@ -1,7 +1,7 @@
 """Tests for stbciw.stabilized_censoring_weights."""
 import numpy as np
 import pytest
-from moirais.fn.stbciw import stabilized_censoring_weights
+from morie.fn.stbciw import stabilized_censoring_weights
 
 
 def test_stbciw_basic():

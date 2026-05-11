@@ -1,7 +1,7 @@
 """Tests for emaxr.em_step_random_effects."""
 import numpy as np
 import pytest
-from moirais.fn.emaxr import em_step_random_effects
+from morie.fn.emaxr import em_step_random_effects
 
 
 def test_emaxr_basic():

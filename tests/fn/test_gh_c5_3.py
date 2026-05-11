@@ -1,7 +1,7 @@
 """Tests for gh_c5_3.ghosal_cgibbs."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c5_3 import ghosal_cgibbs
+from morie.fn.gh_c5_3 import ghosal_cgibbs
 
 
 def test_gh_c5_3_basic():

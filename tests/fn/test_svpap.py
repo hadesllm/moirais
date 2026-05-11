@@ -1,8 +1,8 @@
 """Test svp_approx."""
 import numpy as np
 import pytest
-from moirais.fn.svpap import svp_approx
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.svpap import svp_approx
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSvpApprox:

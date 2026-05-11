@@ -1,7 +1,7 @@
 """Tests for mavi.ma_var_inflation_correlated."""
 import numpy as np
 import pytest
-from moirais.fn.mavi import ma_var_inflation_correlated
+from morie.fn.mavi import ma_var_inflation_correlated
 
 
 def test_mavi_basic():

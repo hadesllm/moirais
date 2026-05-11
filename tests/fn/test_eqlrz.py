@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.eqlrz — Lorenz curve."""
+"""Tests for morie.fn.eqlrz — Lorenz curve."""
 
 import pytest
-from moirais.fn.eqlrz import lorenz_curve
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.eqlrz import lorenz_curve
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLorenz:

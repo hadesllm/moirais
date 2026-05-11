@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cvtml — cross-validated TMLE."""
+"""Tests for morie.fn.cvtml — cross-validated TMLE."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cvtml import cvtml
+from morie.fn.cvtml import cvtml
 
 
 @pytest.fixture()

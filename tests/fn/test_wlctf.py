@@ -1,7 +1,7 @@
 """Test wlctf."""
 import numpy as np
 import pytest
-from moirais.fn.wlctf import wlctf
+from morie.fn.wlctf import wlctf
 
 
 def test_wlctf_basic():

@@ -1,7 +1,7 @@
 """Tests for acsamp.sample_autocorrelation."""
 import numpy as np
 import pytest
-from moirais.fn.acsamp import sample_autocorrelation
+from morie.fn.acsamp import sample_autocorrelation
 
 
 def test_acsamp_basic():

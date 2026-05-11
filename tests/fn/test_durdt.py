@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.durdt — duration-based event filtering."""
+"""Tests for morie.fn.durdt — duration-based event filtering."""
 import numpy as np
 import pytest
 
-from moirais.fn.durdt import duration_detect, durdt
+from morie.fn.durdt import duration_detect, durdt
 
 
 def test_filter_short():

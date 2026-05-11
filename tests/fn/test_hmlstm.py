@@ -1,7 +1,7 @@
 """Tests for hmlstm.geron_lstm."""
 import numpy as np
 import pytest
-from moirais.fn.hmlstm import geron_lstm
+from morie.fn.hmlstm import geron_lstm
 
 
 def test_hmlstm_basic():

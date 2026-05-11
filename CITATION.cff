@@ -1,36 +1,36 @@
 cff-version: 1.2.0
-message: "If you use MOIRAIS in your research, please cite BOTH the software (DOI 10.5281/zenodo.20111233) and the companion paper (DOI 10.5281/zenodo.20096350). Where applicable to your work, also cite the MRM framework paper and the Hawkes-process methodology paper."
-title: "MOIRAIS Toolkit: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation"
+message: "If you use MORIE in your research, please cite BOTH the software (DOI 10.5281/zenodo.20111233) and the companion paper (DOI 10.5281/zenodo.20096350). Where applicable to your work, also cite the MRM framework paper and the Hawkes-process methodology paper."
+title: "MORIE Toolkit: Multi-domain Open Research and Inferential Estimation"
 authors:
   - family-names: "Ruhela"
     given-names: "Vansh Singh"
     orcid: "https://orcid.org/0009-0004-1750-3592"
-version: "0.1.2"
-date-released: "2026-05-10"
-url: "https://github.com/hadesllm/moirais"
-repository-code: "https://github.com/hadesllm/moirais"
+version: "0.1.3"
+date-released: "2026-05-11"
+url: "https://github.com/hadesllm/morie"
+repository-code: "https://github.com/hadesllm/morie"
 license: "GPL-2.0-only"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20111233"
-    description: "MOIRAIS Toolkit software (this release)."
+    description: "MORIE Toolkit software (this release)."
   - type: doi
     value: "10.5281/zenodo.20096350"
-    description: "MOIRAIS companion paper (preprint)."
+    description: "MORIE companion paper (preprint)."
 preferred-citation:
   type: software
-  title: "MOIRAIS Toolkit: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation"
+  title: "MORIE Toolkit: Multi-domain Open Research and Inferential Estimation"
   authors:
     - family-names: "Ruhela"
       given-names: "Vansh Singh"
       orcid: "https://orcid.org/0009-0004-1750-3592"
   year: "2026"
-  version: "0.1.2"
+  version: "0.1.3"
   doi: "10.5281/zenodo.20111233"
   url: "https://doi.org/10.5281/zenodo.20111233"
 references:
   - type: generic
-    title: "MOIRAIS: A Multi-Domain Scientific Computing Toolkit for Observational Inference, with Sociolegal, Signal-Processing, Cryptographic, and Spatial-Statistics Modules"
+    title: "MORIE: A Multi-Domain Scientific Computing Toolkit for Observational Inference, with Sociolegal, Signal-Processing, Cryptographic, and Spatial-Statistics Modules"
     authors:
       - family-names: "Ruhela"
         given-names: "Vansh Singh"
@@ -40,7 +40,7 @@ references:
     url: "https://doi.org/10.5281/zenodo.20096350"
     notes: "Companion paper that introduces the toolkit."
   - type: generic
-    title: "The MRM Framework: A Multi-Source Statistical Foundation for Canadian Carceral, Police, and Oversight Data, Implemented as MRM Modules in MOIRAIS"
+    title: "The MRM Framework: A Multi-Source Statistical Foundation for Canadian Carceral, Police, and Oversight Data, Implemented as MRM Modules in MORIE"
     authors:
       - family-names: "Ruhela"
         given-names: "Vansh Singh"
@@ -49,7 +49,7 @@ references:
     doi: "10.5281/zenodo.20096075"
     url: "https://doi.org/10.5281/zenodo.20096075"
   - type: generic
-    title: "Criminological Hawkes Process via MOIRAIS: Markovian and Non-Markovian Self-Exciting Point Processes for Toronto Crime"
+    title: "Criminological Hawkes Process via MORIE: Markovian and Non-Markovian Self-Exciting Point Processes for Toronto Crime"
     authors:
       - family-names: "Ruhela"
         given-names: "Vansh Singh"

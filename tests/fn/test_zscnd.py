@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zscnd -- Conditional simulation"""
+"""Tests for morie.fn.zscnd -- Conditional simulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zscnd import conditional_sim
+from morie.fn.zscnd import conditional_sim
 
 
 class TestConditionalSim:

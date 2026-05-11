@@ -1,7 +1,7 @@
 """Tests for volccc.vol_ccc_garch."""
 import numpy as np
 import pytest
-from moirais.fn.volccc import vol_ccc_garch
+from morie.fn.volccc import vol_ccc_garch
 
 
 def test_volccc_basic():

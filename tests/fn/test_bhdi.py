@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bhdi — Highest density interval."""
+"""Tests for morie.fn.bhdi — Highest density interval."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bhdi import bayesian_hdi
+from morie.fn.bhdi import bayesian_hdi
 
 
 class TestBayesianHDI:

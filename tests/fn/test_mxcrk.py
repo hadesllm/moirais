@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mxcrk -- Mixture cure model."""
+"""Tests for morie.fn.mxcrk -- Mixture cure model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mxcrk import mxcrk
+from morie.fn.mxcrk import mxcrk
 
 
 @pytest.fixture()
@@ -40,5 +40,5 @@ def test_shape_positive(cure_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.mxcrk import cheatsheet
+    from morie.fn.mxcrk import cheatsheet
     assert "cure" in cheatsheet().lower()

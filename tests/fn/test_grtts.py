@@ -1,7 +1,7 @@
 """Tests for grtts.geron_train_test_split."""
 import numpy as np
 import pytest
-from moirais.fn.grtts import geron_train_test_split
+from morie.fn.grtts import geron_train_test_split
 
 
 def test_grtts_basic():

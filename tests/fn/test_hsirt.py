@@ -1,7 +1,7 @@
 """Tests for hsirt.heteroskedastic_irt."""
 import numpy as np
 import pytest
-from moirais.fn.hsirt import heteroskedastic_irt
+from morie.fn.hsirt import heteroskedastic_irt
 
 
 def test_hsirt_basic():

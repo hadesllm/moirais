@@ -1,8 +1,8 @@
 """Test framelet_decompose (frmlt)."""
 import numpy as np
 import pytest
-from moirais.fn.frmlt import framelet_decompose, frmlt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.frmlt import framelet_decompose, frmlt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFrmlt:

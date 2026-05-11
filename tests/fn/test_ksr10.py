@@ -1,7 +1,7 @@
 """Tests for ksr10.kosorok_m_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.ksr10 import kosorok_m_estimator
+from morie.fn.ksr10 import kosorok_m_estimator
 
 
 def test_ksr10_basic():

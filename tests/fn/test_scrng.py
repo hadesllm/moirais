@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scrng — score range check."""
+"""Tests for morie.fn.scrng — score range check."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.scrng import score_range_check
+from morie.fn.scrng import score_range_check
 
 
 class TestScoreRangeCheck:

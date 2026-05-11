@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mtowd — weather factor."""
+"""Tests for morie.fn.mtowd — weather factor."""
 
 import pytest
-from moirais.fn.mtowd import mto_weather_factor
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtowd import mto_weather_factor
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWeatherFactor:

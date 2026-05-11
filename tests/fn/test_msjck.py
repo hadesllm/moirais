@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msjck -- MDS jackknife stability"""
+"""Tests for morie.fn.msjck -- MDS jackknife stability"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msjck import mds_jackknife
+from morie.fn.msjck import mds_jackknife
 
 
 class TestMdsJackknife:

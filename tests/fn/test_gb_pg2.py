@@ -1,7 +1,7 @@
 """Tests for gb_pg2.gibbons_page_asymp."""
 import numpy as np
 import pytest
-from moirais.fn.gb_pg2 import gibbons_page_asymp
+from morie.fn.gb_pg2 import gibbons_page_asymp
 
 
 def test_gb_pg2_basic():

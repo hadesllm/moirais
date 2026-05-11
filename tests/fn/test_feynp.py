@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.feynp -- Feynman path integral."""
+"""Tests for morie.fn.feynp -- Feynman path integral."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.feynp import feynp
+from morie.fn.feynp import feynp
 
 
 def test_returns_dict():

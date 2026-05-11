@@ -1,6 +1,6 @@
 """Test freq_resolution (rsltn)."""
-from moirais.fn.rsltn import freq_resolution, rsltn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rsltn import freq_resolution, rsltn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRsltn:

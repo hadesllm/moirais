@@ -1,7 +1,7 @@
 """Tests for tmlric.tmle_rare_outcome."""
 import numpy as np
 import pytest
-from moirais.fn.tmlric import tmle_rare_outcome
+from morie.fn.tmlric import tmle_rare_outcome
 
 
 def test_tmlric_basic():

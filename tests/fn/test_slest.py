@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.slest — sieve likelihood estimation."""
+"""Tests for morie.fn.slest — sieve likelihood estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.slest import slest
+from morie.fn.slest import slest
 
 
 def test_basic_output():

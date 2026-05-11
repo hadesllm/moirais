@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tpsrs — response time."""
+"""Tests for morie.fn.tpsrs — response time."""
 
 import pytest
 import numpy as np
-from moirais.fn.tpsrs import tps_response_time
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tpsrs import tps_response_time
+from morie.fn._containers import DescriptiveResult
 
 
 class TestResponseTime:

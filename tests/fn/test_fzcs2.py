@@ -1,7 +1,7 @@
 """Tests for fzcs2.fauzi_cum_surv_est2."""
 import numpy as np
 import pytest
-from moirais.fn.fzcs2 import fauzi_cum_surv_est2
+from morie.fn.fzcs2 import fauzi_cum_surv_est2
 
 
 def test_fzcs2_basic():

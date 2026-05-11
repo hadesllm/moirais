@@ -1,7 +1,7 @@
 """Tests for bhatt.py - Bhattacharyya divergence."""
 import numpy as np
 import pytest
-from moirais.fn.bhatt import bhatt_fn, bhatt
+from morie.fn.bhatt import bhatt_fn, bhatt
 
 
 def test_bhatt_returns_descriptive_result():

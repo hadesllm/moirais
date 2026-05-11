@@ -1,7 +1,7 @@
 """Test normalized_xcorr (nxcor)."""
 import numpy as np
-from moirais.fn.nxcor import normalized_xcorr, nxcor
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nxcor import normalized_xcorr, nxcor
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNormalizedXcorr:

@@ -1,7 +1,7 @@
 """Test vmwht."""
 import numpy as np
 import pytest
-from moirais.fn.vmwht import vmwht
+from morie.fn.vmwht import vmwht
 
 
 def test_vmwht_basic():

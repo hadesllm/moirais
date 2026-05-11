@@ -1,7 +1,7 @@
 """Tests for gatV2.gat_v2."""
 import numpy as np
 import pytest
-from moirais.fn.gatV2 import gat_v2
+from morie.fn.gatV2 import gat_v2
 
 
 def test_gatV2_basic():

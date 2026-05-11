@@ -1,7 +1,7 @@
 """Tests for adamO.adam_optimizer."""
 import numpy as np
 import pytest
-from moirais.fn.adamO import adam_optimizer
+from morie.fn.adamO import adam_optimizer
 
 
 def test_adamO_basic():

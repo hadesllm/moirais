@@ -1,7 +1,7 @@
 """Tests for gxemd.gxe_interaction_model."""
 import numpy as np
 import pytest
-from moirais.fn.gxemd import gxe_interaction_model
+from morie.fn.gxemd import gxe_interaction_model
 
 
 def test_gxemd_basic():

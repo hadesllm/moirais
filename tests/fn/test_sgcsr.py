@@ -1,6 +1,6 @@
 """Tests for CSR test."""
 import numpy as np
-from moirais.fn.sgcsr import sgcsr
+from morie.fn.sgcsr import sgcsr
 
 
 def test_sgcsr_smoke():
@@ -13,7 +13,7 @@ def test_sgcsr_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgcsr import cheatsheet
+    from morie.fn.sgcsr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

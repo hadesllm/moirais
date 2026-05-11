@@ -1,6 +1,6 @@
 """Tests for recurrence quantification entropy."""
 import numpy as np
-from moirais.fn.rqent import recurrence_entropy, rqent
+from morie.fn.rqent import recurrence_entropy, rqent
 
 
 def test_sine():

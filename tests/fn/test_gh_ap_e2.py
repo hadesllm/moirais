@@ -1,7 +1,7 @@
 """Tests for gh_ap_e2.ghosal_spline_space."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_e2 import ghosal_spline_space
+from morie.fn.gh_ap_e2 import ghosal_spline_space
 
 
 def test_gh_ap_e2_basic():

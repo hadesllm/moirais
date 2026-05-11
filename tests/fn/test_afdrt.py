@@ -1,7 +1,7 @@
 """Test afdrt."""
 import numpy as np
 import pytest
-from moirais.fn.afdrt import afdrt
+from morie.fn.afdrt import afdrt
 
 
 def test_afdrt_basic():

@@ -1,7 +1,7 @@
 """Tests for rdkkin.kink_rdd."""
 import numpy as np
 import pytest
-from moirais.fn.rdkkin import kink_rdd
+from morie.fn.rdkkin import kink_rdd
 
 
 def test_rdkkin_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptrng -- Point pattern intensity"""
+"""Tests for morie.fn.ptrng -- Point pattern intensity"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptrng import pp_intensity
+from morie.fn.ptrng import pp_intensity
 
 
 class TestPpIntensity:

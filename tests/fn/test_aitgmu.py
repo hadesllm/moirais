@@ -1,7 +1,7 @@
 """Tests for aitgmu.aitchison_geomean."""
 import numpy as np
 import pytest
-from moirais.fn.aitgmu import aitchison_geomean
+from morie.fn.aitgmu import aitchison_geomean
 
 
 def test_aitgmu_basic():

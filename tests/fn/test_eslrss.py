@@ -1,7 +1,7 @@
 """Tests for eslrss.esl_residual_sum_squares."""
 import numpy as np
 import pytest
-from moirais.fn.eslrss import esl_residual_sum_squares
+from morie.fn.eslrss import esl_residual_sum_squares
 
 
 def test_eslrss_basic():

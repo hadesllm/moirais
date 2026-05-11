@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rcsub -- subset roll calls."""
+"""Tests for morie.fn.rcsub -- subset roll calls."""
 import numpy as np
-from moirais.fn.rcsub import subset_roll_calls, rcsub
+from morie.fn.rcsub import subset_roll_calls, rcsub
 
 
 def test_alias():

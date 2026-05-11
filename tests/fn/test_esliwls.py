@@ -1,7 +1,7 @@
 """Tests for esliwls.esl_iwls."""
 import numpy as np
 import pytest
-from moirais.fn.esliwls import esl_iwls
+from morie.fn.esliwls import esl_iwls
 
 
 def test_esliwls_basic():

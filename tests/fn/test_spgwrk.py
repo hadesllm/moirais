@@ -1,7 +1,7 @@
 """Tests for spgwrk.schabenberger_gwr_kernels."""
 import numpy as np
 import pytest
-from moirais.fn.spgwrk import schabenberger_gwr_kernels
+from morie.fn.spgwrk import schabenberger_gwr_kernels
 
 
 def test_spgwrk_basic():

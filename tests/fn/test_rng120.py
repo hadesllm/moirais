@@ -1,7 +1,7 @@
 """Tests for rng120.rangayyan_ch3_baseline_wander_filter_z_form_a."""
 import numpy as np
 import pytest
-from moirais.fn.rng120 import rangayyan_ch3_baseline_wander_filter_z_form_a
+from morie.fn.rng120 import rangayyan_ch3_baseline_wander_filter_z_form_a
 
 
 def test_rng120_basic():

@@ -1,7 +1,7 @@
 """Tests for spwkth.schabenberger_wiener_khinchin."""
 import numpy as np
 import pytest
-from moirais.fn.spwkth import schabenberger_wiener_khinchin
+from morie.fn.spwkth import schabenberger_wiener_khinchin
 
 
 def test_spwkth_basic():

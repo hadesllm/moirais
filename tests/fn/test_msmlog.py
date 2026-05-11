@@ -1,7 +1,7 @@
 """Tests for msmlog.msm_logistic."""
 import numpy as np
 import pytest
-from moirais.fn.msmlog import msm_logistic
+from morie.fn.msmlog import msm_logistic
 
 
 def test_msmlog_basic():

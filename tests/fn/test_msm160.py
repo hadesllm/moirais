@@ -1,7 +1,7 @@
 """Tests for msm160.mvsml_general_eq_1_2."""
 import numpy as np
 import pytest
-from moirais.fn.msm160 import mvsml_general_eq_1_2
+from morie.fn.msm160 import mvsml_general_eq_1_2
 
 
 def test_msm160_basic():

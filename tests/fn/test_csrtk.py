@@ -1,7 +1,7 @@
 """Test csrtk."""
 import numpy as np
 import pytest
-from moirais.fn.csrtk import csrtk
+from morie.fn.csrtk import csrtk
 
 
 def test_csrtk_basic():

@@ -1,7 +1,7 @@
 """Tests for siconn."""
 import numpy as np
 import pytest
-from moirais.fn.siconn import siconn
+from morie.fn.siconn import siconn
 
 
 def test_siconn_basic():
@@ -27,5 +27,5 @@ def test_siconn_no_data():
 
 
 def test_siconn_alias():
-    from moirais.fn.siconn import siconn
+    from morie.fn.siconn import siconn
     assert siconn is siconn

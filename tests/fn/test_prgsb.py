@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.prgsb — program subgroup."""
+"""Tests for morie.fn.prgsb — program subgroup."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.prgsb import program_subgroup
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prgsb import program_subgroup
+from morie.fn._containers import DescriptiveResult
 
 
 class TestProgramSubgroup:

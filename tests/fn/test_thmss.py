@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.thmss -- record linkage."""
+"""Tests for morie.fn.thmss -- record linkage."""
 
 import pandas as pd
-from moirais.fn.thmss import record_linkage, thmss
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.thmss import record_linkage, thmss
+from morie.fn._containers import DescriptiveResult
 
 
 class TestThmss:

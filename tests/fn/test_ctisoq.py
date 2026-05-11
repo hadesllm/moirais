@@ -1,7 +1,7 @@
 """Tests for ctisoq."""
 import numpy as np
 import pytest
-from moirais.fn.ctisoq import ctisoq
+from morie.fn.ctisoq import ctisoq
 
 
 def test_ctisoq_basic():
@@ -27,5 +27,5 @@ def test_ctisoq_no_data():
 
 
 def test_ctisoq_alias():
-    from moirais.fn.ctisoq import ctisoq
+    from morie.fn.ctisoq import ctisoq
     assert ctisoq is ctisoq

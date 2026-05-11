@@ -1,7 +1,7 @@
 """Test concav."""
 import numpy as np
 import pytest
-from moirais.fn.concav import concav
+from morie.fn.concav import concav
 
 
 def test_concav_basic():

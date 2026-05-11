@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mscls -- Classical MDS (Torgerson)"""
+"""Tests for morie.fn.mscls -- Classical MDS (Torgerson)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mscls import classical_mds
+from morie.fn.mscls import classical_mds
 
 
 class TestClassicalMds:

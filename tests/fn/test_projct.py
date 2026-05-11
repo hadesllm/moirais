@@ -1,7 +1,7 @@
 """Test projct."""
 import numpy as np
 import pytest
-from moirais.fn.projct import projct
+from morie.fn.projct import projct
 
 
 def test_projct_basic():

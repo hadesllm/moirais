@@ -1,7 +1,7 @@
 """Tests for tukrr.tukey_regression."""
 import numpy as np
 import pytest
-from moirais.fn.tukrr import tukey_regression
+from morie.fn.tukrr import tukey_regression
 
 
 def test_tukrr_basic():

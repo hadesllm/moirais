@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sarma — seasonal ARMA."""
+"""Tests for morie.fn.sarma — seasonal ARMA."""
 import numpy as np
 import pytest
-from moirais.fn.sarma import seasonal_arma
+from morie.fn.sarma import seasonal_arma
 
 
 class TestSeasonalARMA:

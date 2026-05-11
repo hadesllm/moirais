@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rlogi -- Logistic random variates."""
+"""Tests for morie.fn.rlogi -- Logistic random variates."""
 
 import numpy as np
 import pytest
-from moirais.fn.rlogi import rlogi
+from morie.fn.rlogi import rlogi
 
 
 class TestRlogi:

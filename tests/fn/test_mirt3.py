@@ -1,7 +1,7 @@
 """Tests for mirt3.mirt_3d_compensatory."""
 import numpy as np
 import pytest
-from moirais.fn.mirt3 import mirt_3d_compensatory
+from morie.fn.mirt3 import mirt_3d_compensatory
 
 
 def test_mirt3_basic():

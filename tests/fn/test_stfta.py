@@ -1,7 +1,7 @@
 """Tests for stfta.py - STFT analysis."""
 import numpy as np
 import pytest
-from moirais.fn.stfta import stft_analysis, stfta
+from morie.fn.stfta import stft_analysis, stfta
 
 
 def test_stft_returns_descriptive_result():

@@ -1,7 +1,7 @@
 """Tests for nhits.n_hits."""
 import numpy as np
 import pytest
-from moirais.fn.nhits import n_hits
+from morie.fn.nhits import n_hits
 
 
 def test_nhits_basic():

@@ -1,7 +1,7 @@
 """Tests for gh_c3_9.ghosal_quantile_prior."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c3_9 import ghosal_quantile_prior
+from morie.fn.gh_c3_9 import ghosal_quantile_prior
 
 
 def test_gh_c3_9_basic():

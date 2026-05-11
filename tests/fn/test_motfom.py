@@ -1,7 +1,7 @@
 """Tests for motfom.motif_fimo."""
 import numpy as np
 import pytest
-from moirais.fn.motfom import motif_fimo
+from morie.fn.motfom import motif_fimo
 
 
 def test_motfom_basic():

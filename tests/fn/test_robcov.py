@@ -1,7 +1,7 @@
 """Tests for robcov.sandwich_robust_se."""
 import numpy as np
 import pytest
-from moirais.fn.robcov import sandwich_robust_se
+from morie.fn.robcov import sandwich_robust_se
 
 
 def test_robcov_basic():

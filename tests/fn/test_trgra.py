@@ -1,7 +1,7 @@
 """Test trgra."""
 import numpy as np
 import pytest
-from moirais.fn.trgra import trgra
+from morie.fn.trgra import trgra
 
 
 def test_trgra_basic():

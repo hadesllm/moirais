@@ -1,7 +1,7 @@
 """Tests for scumap.umap_singlecell."""
 import numpy as np
 import pytest
-from moirais.fn.scumap import umap_singlecell
+from morie.fn.scumap import umap_singlecell
 
 
 def test_scumap_basic():

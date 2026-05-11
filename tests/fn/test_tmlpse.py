@@ -1,7 +1,7 @@
 """Tests for tmlpse.tmle_path_specific."""
 import numpy as np
 import pytest
-from moirais.fn.tmlpse import tmle_path_specific
+from morie.fn.tmlpse import tmle_path_specific
 
 
 def test_tmlpse_basic():

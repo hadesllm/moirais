@@ -1,7 +1,7 @@
 """Tests for taulep.tau_leap_sim."""
 import numpy as np
 import pytest
-from moirais.fn.taulep import tau_leap_sim
+from morie.fn.taulep import tau_leap_sim
 
 
 def test_taulep_basic():

@@ -1,7 +1,7 @@
 """Tests for information_theory_mackay13e43.information_theory_mackay_chapter_13_equation_43."""
 import numpy as np
 import pytest
-from moirais.fn.information_theory_mackay13e43 import information_theory_mackay_chapter_13_equation_43
+from morie.fn.information_theory_mackay13e43 import information_theory_mackay_chapter_13_equation_43
 
 
 def test_information_theory_mackay13e43_basic():

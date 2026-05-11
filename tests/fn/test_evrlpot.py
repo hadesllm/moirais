@@ -1,7 +1,7 @@
 """Tests for evrlpot.evt_return_level_pot."""
 import numpy as np
 import pytest
-from moirais.fn.evrlpot import evt_return_level_pot
+from morie.fn.evrlpot import evt_return_level_pot
 
 
 def test_evrlpot_basic():

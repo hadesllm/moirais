@@ -1,7 +1,7 @@
 """Tests for bndngt.bound_neg_treatment."""
 import numpy as np
 import pytest
-from moirais.fn.bndngt import bound_neg_treatment
+from morie.fn.bndngt import bound_neg_treatment
 
 
 def test_bndngt_basic():

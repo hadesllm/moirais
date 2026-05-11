@@ -1,7 +1,7 @@
 """Tests for dpgmm.dp_gaussian_mixture."""
 import numpy as np
 import pytest
-from moirais.fn.dpgmm import dp_gaussian_mixture
+from morie.fn.dpgmm import dp_gaussian_mixture
 
 
 def test_dpgmm_basic():

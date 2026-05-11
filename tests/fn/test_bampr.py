@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bampr -- posterior summary."""
+"""Tests for morie.fn.bampr -- posterior summary."""
 import numpy as np
-from moirais.fn.bampr import bayesian_am_posterior_summary, bampr
+from morie.fn.bampr import bayesian_am_posterior_summary, bampr
 
 
 def test_alias():

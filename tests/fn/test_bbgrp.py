@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bbgrp — Blackbox group color."""
+"""Tests for morie.fn.bbgrp — Blackbox group color."""
 import numpy as np
-from moirais.fn.bbgrp import bbgrp
+from morie.fn.bbgrp import bbgrp
 
 
 def test_bbgrp_smoke():
@@ -12,7 +12,7 @@ def test_bbgrp_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.bbgrp import cheatsheet
+    from morie.fn.bbgrp import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

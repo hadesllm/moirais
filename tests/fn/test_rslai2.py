@@ -1,7 +1,7 @@
 """Test rslai2."""
 import numpy as np
 import pytest
-from moirais.fn.rslai2 import rslai2
+from morie.fn.rslai2 import rslai2
 
 
 def test_rslai2_basic():

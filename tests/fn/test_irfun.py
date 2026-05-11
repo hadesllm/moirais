@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.irfun — Impulse response function."""
+"""Tests for morie.fn.irfun — Impulse response function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.irfun import impulse_response, irfun
+from morie.fn.irfun import impulse_response, irfun
 
 
 def _var1_params(m: int = 2, diag_coef: float = 0.5) -> tuple:

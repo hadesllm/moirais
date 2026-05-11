@@ -1,7 +1,7 @@
 """Tests for fzl31.fauzi_lem3_1_asymp_rep."""
 import numpy as np
 import pytest
-from moirais.fn.fzl31 import fauzi_lem3_1_asymp_rep
+from morie.fn.fzl31 import fauzi_lem3_1_asymp_rep
 
 
 def test_fzl31_basic():

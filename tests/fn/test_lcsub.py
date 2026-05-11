@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.lcsub."""
+"""Tests for morie.fn.lcsub."""
 import numpy as np
-from moirais.fn.lcsub import longest_common_subseq
+from morie.fn.lcsub import longest_common_subseq
 
 
 def test_lcsub_smoke():
@@ -12,7 +12,7 @@ def test_lcsub_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.lcsub import cheatsheet
+    from morie.fn.lcsub import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

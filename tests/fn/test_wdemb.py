@@ -1,7 +1,7 @@
 """Tests for wdemb.word_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.wdemb import word_embedding
+from morie.fn.wdemb import word_embedding
 
 
 def test_wdemb_basic():

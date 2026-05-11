@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sieve -- Sieve estimation."""
+"""Tests for morie.fn.sieve -- Sieve estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sieve import sieve
+from morie.fn.sieve import sieve
 
 
 @pytest.fixture()
@@ -72,5 +72,5 @@ def test_dimension_mismatch():
 
 
 def test_cheatsheet():
-    from moirais.fn.sieve import cheatsheet
+    from morie.fn.sieve import cheatsheet
     assert "sieve" in cheatsheet().lower()

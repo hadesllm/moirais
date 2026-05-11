@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mmort -- maternal mortality."""
+"""Tests for morie.fn.mmort -- maternal mortality."""
 
 import pytest
-from moirais.fn.mmort import maternal_mortality
+from morie.fn.mmort import maternal_mortality
 
 
 class TestMaternalMortality:

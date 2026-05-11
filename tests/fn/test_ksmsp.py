@@ -1,7 +1,7 @@
 """Test ksmsp."""
 import numpy as np
 import pytest
-from moirais.fn.ksmsp import ksmsp
+from morie.fn.ksmsp import ksmsp
 
 
 def test_ksmsp_basic():

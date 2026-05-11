@@ -1,7 +1,7 @@
 """Tests for tstinf.test_information."""
 import numpy as np
 import pytest
-from moirais.fn.tstinf import test_information as _test_information
+from morie.fn.tstinf import test_information as _test_information
 
 
 def test_tstinf_basic():

@@ -1,7 +1,7 @@
 """Test sremr."""
 import numpy as np
 import pytest
-from moirais.fn.sremr import sremr
+from morie.fn.sremr import sremr
 
 
 def test_sremr_basic():

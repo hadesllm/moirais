@@ -1,7 +1,7 @@
 """Tests for safrl.safe_rl."""
 import numpy as np
 import pytest
-from moirais.fn.safrl import safe_rl
+from morie.fn.safrl import safe_rl
 
 
 def test_safrl_basic():

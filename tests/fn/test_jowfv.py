@@ -1,7 +1,7 @@
 """Tests for jowfv.joseph_walk_forward_validation."""
 import numpy as np
 import pytest
-from moirais.fn.jowfv import joseph_walk_forward_validation
+from morie.fn.jowfv import joseph_walk_forward_validation
 
 
 def test_jowfv_basic():

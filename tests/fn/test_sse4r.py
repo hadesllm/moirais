@@ -1,7 +1,7 @@
 """Tests for sse4r.ssepta_seq."""
 import numpy as np
 import pytest
-from moirais.fn.sse4r import ssepta_seq
+from morie.fn.sse4r import ssepta_seq
 
 
 def test_sse4r_basic():

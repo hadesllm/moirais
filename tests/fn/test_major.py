@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.major -- SMACOF majorize step."""
+"""Tests for morie.fn.major -- SMACOF majorize step."""
 
 import numpy as np
-from moirais.fn.major import majorize_step, major
+from morie.fn.major import majorize_step, major
 
 
 def test_major_smoke():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scpmp — percent of maximum possible score."""
+"""Tests for morie.fn.scpmp — percent of maximum possible score."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.scpmp import score_pmp
+from morie.fn.scpmp import score_pmp
 
 
 class TestScorePmp:

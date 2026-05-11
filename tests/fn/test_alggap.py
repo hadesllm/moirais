@@ -1,7 +1,7 @@
 """Tests for alggap.algebraic_connectivity."""
 import numpy as np
 import pytest
-from moirais.fn.alggap import algebraic_connectivity
+from morie.fn.alggap import algebraic_connectivity
 
 
 def test_alggap_basic():

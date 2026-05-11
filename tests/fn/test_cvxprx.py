@@ -1,7 +1,7 @@
 """Tests for cvxprx.boyd_proximal."""
 import numpy as np
 import pytest
-from moirais.fn.cvxprx import boyd_proximal
+from morie.fn.cvxprx import boyd_proximal
 
 
 def test_cvxprx_basic():

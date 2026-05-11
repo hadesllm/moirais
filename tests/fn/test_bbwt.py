@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bbwt — Blackbox weight matrix."""
+"""Tests for morie.fn.bbwt — Blackbox weight matrix."""
 import numpy as np
-from moirais.fn.bbwt import bbwt
+from morie.fn.bbwt import bbwt
 
 
 def test_bbwt_smoke():
@@ -13,7 +13,7 @@ def test_bbwt_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.bbwt import cheatsheet
+    from morie.fn.bbwt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

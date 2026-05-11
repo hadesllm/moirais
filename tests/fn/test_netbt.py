@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netbt — Node betweenness centrality."""
+"""Tests for morie.fn.netbt — Node betweenness centrality."""
 
 import numpy as np
 import pytest
-from moirais.fn.netbt import network_betweenness
+from morie.fn.netbt import network_betweenness
 
 
 class TestNetworkBetweenness:

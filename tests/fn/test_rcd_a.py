@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rcd_a — recidivism by age group."""
+"""Tests for morie.fn.rcd_a — recidivism by age group."""
 
 import pandas as pd
-from moirais.fn.rcd_a import recidivism_by_age, rcd_a
+from morie.fn.rcd_a import recidivism_by_age, rcd_a
 
 
 class TestRecidivismByAge:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svucs -- Uncovered set in 2D"""
+"""Tests for morie.fn.svucs -- Uncovered set in 2D"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svucs import uncovered_set
+from morie.fn.svucs import uncovered_set
 
 
 class TestUncoveredSet:

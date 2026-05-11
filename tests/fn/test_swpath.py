@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.swpath."""
+"""Tests for morie.fn.swpath."""
 import numpy as np
 import pytest
-from moirais.fn.swpath import swpath
+from morie.fn.swpath import swpath
 
 
 class TestSwpath:

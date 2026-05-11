@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ocros — OTIS cross-tabulation."""
+"""Tests for morie.fn.ocros — OTIS cross-tabulation."""
 
 import pandas as pd
-from moirais.fn.ocros import otis_crosstab
+from morie.fn.ocros import otis_crosstab
 
 
 class TestOtisCrosstab:

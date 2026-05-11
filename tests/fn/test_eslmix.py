@@ -1,7 +1,7 @@
 """Tests for eslmix.esl_gaussian_mixture."""
 import numpy as np
 import pytest
-from moirais.fn.eslmix import esl_gaussian_mixture
+from morie.fn.eslmix import esl_gaussian_mixture
 
 
 def test_eslmix_basic():

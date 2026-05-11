@@ -1,7 +1,7 @@
 """Test multiclass_avg (mcavg)."""
 import numpy as np
-from moirais.fn.mcavg import multiclass_avg, mcavg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mcavg import multiclass_avg, mcavg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMcavg:

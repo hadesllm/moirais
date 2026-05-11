@@ -1,8 +1,8 @@
 """Test hamming_code."""
 import numpy as np
 
-from moirais.fn._containers import CryptoResult
-from moirais.fn.hamcd import hamcd, hamming_code
+from morie.fn._containers import CryptoResult
+from morie.fn.hamcd import hamcd, hamming_code
 
 
 class TestHammingCode:

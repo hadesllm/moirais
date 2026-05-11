@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kscvs — kernel-smoothed KS test."""
+"""Tests for morie.fn.kscvs — kernel-smoothed KS test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kscvs import kscvs
+from morie.fn.kscvs import kscvs
 
 
 class TestKscvs:

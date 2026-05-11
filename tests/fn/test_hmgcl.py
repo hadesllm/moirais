@@ -1,7 +1,7 @@
 """Tests for hmgcl.geron_gradient_clipping."""
 import numpy as np
 import pytest
-from moirais.fn.hmgcl import geron_gradient_clipping
+from morie.fn.hmgcl import geron_gradient_clipping
 
 
 def test_hmgcl_basic():

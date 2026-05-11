@@ -1,7 +1,7 @@
 """Tests for hmstr.geron_stratified_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.hmstr import geron_stratified_sampling
+from morie.fn.hmstr import geron_stratified_sampling
 
 
 def test_hmstr_basic():

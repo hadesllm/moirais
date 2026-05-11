@@ -1,7 +1,7 @@
 """Tests for qmDS.quantile_mapping."""
 import numpy as np
 import pytest
-from moirais.fn.qmDS import quantile_mapping
+from morie.fn.qmDS import quantile_mapping
 
 
 def test_qmDS_basic():

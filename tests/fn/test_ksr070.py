@@ -1,7 +1,7 @@
 """Tests for ksr070.kosorok_ch3_score_operator_path."""
 import numpy as np
 import pytest
-from moirais.fn.ksr070 import kosorok_ch3_score_operator_path
+from morie.fn.ksr070 import kosorok_ch3_score_operator_path
 
 
 def test_ksr070_basic():

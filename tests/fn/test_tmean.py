@@ -1,6 +1,6 @@
 """Tests for trimmed_mean."""
 import numpy as np, pytest
-from moirais.fn.tmean import trimmed_mean
+from morie.fn.tmean import trimmed_mean
 
 
 class TestTrimmedMean:

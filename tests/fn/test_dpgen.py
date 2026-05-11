@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.dpgen import dirichlet_process_gen
+from morie.fn.dpgen import dirichlet_process_gen
 
 
 def test_dpgen_basic():

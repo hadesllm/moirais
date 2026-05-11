@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tlag — Time-lag cross-correlation."""
+"""Tests for morie.fn.tlag — Time-lag cross-correlation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tlag import time_lag_analysis
+from morie.fn.tlag import time_lag_analysis
 
 
 class TestTimeLag:

@@ -1,7 +1,7 @@
 """Test gestrt."""
 import numpy as np
 import pytest
-from moirais.fn.gestrt import gestrt
+from morie.fn.gestrt import gestrt
 
 
 def test_gestrt_basic():

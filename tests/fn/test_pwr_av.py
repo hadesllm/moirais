@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pwr_av -- power for one-way ANOVA."""
+"""Tests for morie.fn.pwr_av -- power for one-way ANOVA."""
 
 import pytest
-from moirais.fn.pwr_av import power_anova
+from morie.fn.pwr_av import power_anova
 
 
 class TestPowerAnova:

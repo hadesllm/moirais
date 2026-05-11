@@ -1,7 +1,7 @@
 """Tests for penls.penalized_regression."""
 import numpy as np
 import pytest
-from moirais.fn.penls import penalized_regression
+from morie.fn.penls import penalized_regression
 
 
 def test_penls_basic():

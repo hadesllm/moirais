@@ -1,7 +1,7 @@
 """Test agimv."""
 import numpy as np
 import pytest
-from moirais.fn.agimv import agimv
+from morie.fn.agimv import agimv
 
 
 def test_agimv_basic():

@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.bbvar — Blackbox variance explained."""
-from moirais.fn.bbvar import bbvar
+"""Tests for morie.fn.bbvar — Blackbox variance explained."""
+from morie.fn.bbvar import bbvar
 
 
 def test_bbvar_smoke():
@@ -10,7 +10,7 @@ def test_bbvar_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.bbvar import cheatsheet
+    from morie.fn.bbvar import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

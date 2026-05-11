@@ -1,6 +1,6 @@
 """Tests for sn_estimator."""
 import numpy as np, pytest
-from moirais.fn.sn_es import sn_estimator
+from morie.fn.sn_es import sn_estimator
 
 
 class TestSnEstimator:

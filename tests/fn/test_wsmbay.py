@@ -1,7 +1,7 @@
 """Tests for wsmbay.wasserman_posterior."""
 import numpy as np
 import pytest
-from moirais.fn.wsmbay import wasserman_posterior
+from morie.fn.wsmbay import wasserman_posterior
 
 
 def test_wsmbay_basic():

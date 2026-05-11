@@ -1,7 +1,7 @@
 """Tests for tncomp.compound_diversity."""
 import numpy as np
 import pytest
-from moirais.fn.tncomp import compound_diversity
+from morie.fn.tncomp import compound_diversity
 
 
 def test_tncomp_basic():

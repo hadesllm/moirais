@@ -1,7 +1,7 @@
 """Tests for sgtmodul.sgt_modularity_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.sgtmodul import sgt_modularity_matrix
+from morie.fn.sgtmodul import sgt_modularity_matrix
 
 
 def test_sgtmodul_basic():

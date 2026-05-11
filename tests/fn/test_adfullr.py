@@ -1,7 +1,7 @@
 """Tests for adfullr.adf_unit_root."""
 import numpy as np
 import pytest
-from moirais.fn.adfullr import adf_unit_root
+from morie.fn.adfullr import adf_unit_root
 
 
 def test_adfullr_basic():

@@ -1,7 +1,7 @@
 """Test trrdb."""
 import numpy as np
 import pytest
-from moirais.fn.trrdb import trrdb
+from morie.fn.trrdb import trrdb
 
 
 def test_trrdb_basic():

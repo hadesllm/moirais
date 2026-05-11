@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cstmh — custody mental health trend."""
+"""Tests for morie.fn.cstmh — custody mental health trend."""
 
 import pandas as pd
-from moirais.fn.cstmh import custody_mental_health
+from morie.fn.cstmh import custody_mental_health
 
 
 class TestCustodyMentalHealth:

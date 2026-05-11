@@ -1,7 +1,7 @@
 """Tests for rgcorart.rangayyan_coronary_sound."""
 import numpy as np
 import pytest
-from moirais.fn.rgcorart import rangayyan_coronary_sound
+from morie.fn.rgcorart import rangayyan_coronary_sound
 
 
 def test_rgcorart_basic():

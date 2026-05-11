@@ -1,7 +1,7 @@
 """Tests for alcsl.alammar_cosine_similarity_loss."""
 import numpy as np
 import pytest
-from moirais.fn.alcsl import alammar_cosine_similarity_loss
+from morie.fn.alcsl import alammar_cosine_similarity_loss
 
 
 def test_alcsl_basic():

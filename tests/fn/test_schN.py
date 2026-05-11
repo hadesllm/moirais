@@ -1,7 +1,7 @@
 """Tests for schN.schnet."""
 import numpy as np
 import pytest
-from moirais.fn.schN import schnet
+from morie.fn.schN import schnet
 
 
 def test_schN_basic():

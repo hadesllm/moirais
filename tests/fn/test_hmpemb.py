@@ -1,7 +1,7 @@
 """Tests for hmpemb.geron_pretrained_embeddings."""
 import numpy as np
 import pytest
-from moirais.fn.hmpemb import geron_pretrained_embeddings
+from morie.fn.hmpemb import geron_pretrained_embeddings
 
 
 def test_hmpemb_basic():

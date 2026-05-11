@@ -1,7 +1,7 @@
 """Test cscyb."""
 import numpy as np
 import pytest
-from moirais.fn.cscyb import cscyb
+from morie.fn.cscyb import cscyb
 
 
 def test_cscyb_basic():

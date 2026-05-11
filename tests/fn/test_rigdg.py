@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rigdg — Ridge regression."""
+"""Tests for morie.fn.rigdg — Ridge regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rigdg import ridge_regression
+from morie.fn.rigdg import ridge_regression
 
 
 def test_ridge_shrinks_coefficients():
@@ -23,7 +23,7 @@ def test_ridge_lam_zero_near_ols():
     n = 100
     X = rng.standard_normal((n, 1))
     y = 2.0 * X[:, 0] + rng.standard_normal(n) * 0.1
-    from moirais.fn.olsrg import ols_regression
+    from morie.fn.olsrg import ols_regression
     ols = ols_regression(y, X)
     ridge = ridge_regression(y, X, lam=1e-10)
     assert abs(ols.coefficients["x0"] - ridge.coefficients["x0"]) < 0.01

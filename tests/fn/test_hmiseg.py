@@ -1,7 +1,7 @@
 """Tests for hmiseg.geron_image_segmentation."""
 import numpy as np
 import pytest
-from moirais.fn.hmiseg import geron_image_segmentation
+from morie.fn.hmiseg import geron_image_segmentation
 
 
 def test_hmiseg_basic():

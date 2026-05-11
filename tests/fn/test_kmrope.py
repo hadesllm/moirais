@@ -1,7 +1,7 @@
 """Tests for kmrope.kamath_rotary_positional_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.kmrope import kamath_rotary_positional_embedding
+from morie.fn.kmrope import kamath_rotary_positional_embedding
 
 
 def test_kmrope_basic():

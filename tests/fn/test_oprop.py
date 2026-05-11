@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.oprop — OTIS proportion test."""
+"""Tests for morie.fn.oprop — OTIS proportion test."""
 
-from moirais.fn.oprop import otis_proportions
+from morie.fn.oprop import otis_proportions
 
 
 class TestOtisProportions:

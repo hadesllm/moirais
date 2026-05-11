@@ -1,7 +1,7 @@
 """Tests for taroni.taroni_ware."""
 import numpy as np
 import pytest
-from moirais.fn.taroni import taroni_ware
+from morie.fn.taroni import taroni_ware
 
 
 def test_taroni_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.odml1 — DML ATE by region."""
+"""Tests for morie.fn.odml1 — DML ATE by region."""
 
 import pandas as pd
-from moirais.fn.odml1 import otis_dml_region
+from morie.fn.odml1 import otis_dml_region
 
 
 class TestOtisDmlRegion:

@@ -1,7 +1,7 @@
 """Test foinv."""
 import numpy as np
 import pytest
-from moirais.fn.foinv import foinv
+from morie.fn.foinv import foinv
 
 
 def test_foinv_basic():

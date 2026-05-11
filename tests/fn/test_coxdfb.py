@@ -1,7 +1,7 @@
 """Tests for coxdfb.cox_dfbeta_influence."""
 import numpy as np
 import pytest
-from moirais.fn.coxdfb import cox_dfbeta_influence
+from morie.fn.coxdfb import cox_dfbeta_influence
 
 
 def test_coxdfb_basic():

@@ -1,7 +1,7 @@
 """Tests for bdgmm2.bound_gmm_alt."""
 import numpy as np
 import pytest
-from moirais.fn.bdgmm2 import bound_gmm_alt
+from morie.fn.bdgmm2 import bound_gmm_alt
 
 
 def test_bdgmm2_basic():

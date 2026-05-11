@@ -1,7 +1,7 @@
 """Tests for rgeegadp.rangayyan_eeg_adaptive_seg."""
 import numpy as np
 import pytest
-from moirais.fn.rgeegadp import rangayyan_eeg_adaptive_seg
+from morie.fn.rgeegadp import rangayyan_eeg_adaptive_seg
 
 
 def test_rgeegadp_basic():

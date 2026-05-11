@@ -1,7 +1,7 @@
 """Tests for flmgcr.flamingo_gated_cross."""
 import numpy as np
 import pytest
-from moirais.fn.flmgcr import flamingo_gated_cross
+from morie.fn.flmgcr import flamingo_gated_cross
 
 
 def test_flmgcr_basic():

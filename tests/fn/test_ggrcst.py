@@ -1,7 +1,7 @@
 """Tests for ggrcst.granger_causality."""
 import numpy as np
 import pytest
-from moirais.fn.ggrcst import granger_causality
+from morie.fn.ggrcst import granger_causality
 
 
 def test_ggrcst_basic():

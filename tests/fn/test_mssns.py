@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mssns -- missing sensitivity analysis."""
+"""Tests for morie.fn.mssns -- missing sensitivity analysis."""
 
 import numpy as np
-from moirais.fn.mssns import missing_sensitivity_analysis, mssns
+from morie.fn.mssns import missing_sensitivity_analysis, mssns
 
 
 def test_mssns_smoke():

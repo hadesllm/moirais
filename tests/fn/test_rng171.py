@@ -1,7 +1,7 @@
 """Tests for rng171.rangayyan_ch3_rls_kalman_gain."""
 import numpy as np
 import pytest
-from moirais.fn.rng171 import rangayyan_ch3_rls_kalman_gain
+from morie.fn.rng171 import rangayyan_ch3_rls_kalman_gain
 
 
 def test_rng171_basic():

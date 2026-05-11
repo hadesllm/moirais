@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.orisk — Univariate risk factor table."""
+"""Tests for morie.fn.orisk — Univariate risk factor table."""
 
 import pandas as pd
-from moirais.fn.orisk import otis_risk_table
+from morie.fn.orisk import otis_risk_table
 
 
 class TestOtisRiskTable:

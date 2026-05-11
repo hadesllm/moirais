@@ -1,4 +1,4 @@
-"""Tests for the MOIRAIS LLM integration layer (moirais.llm).
+"""Tests for the MORIE LLM integration layer (morie.llm).
 
 Covers:
 - Provider detection fallback logic
@@ -15,7 +15,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from moirais.llm import (
+from morie.llm import (
     _PROVIDER_API,
     _PROVIDER_LOCAL,
     _PROVIDER_OLLAMA,
@@ -26,7 +26,7 @@ from moirais.llm import (
     ask,
     agent_available,
     assistant_available,
-    build_moirais_context,
+    build_morie_context,
     detect_available_provider,
 )
 
@@ -45,7 +45,7 @@ class TestDetectAvailableProvider:
         monkeypatch.delenv("LLM_API_KEY", raising=False)
         monkeypatch.delenv("OPENAI_API_KEY", raising=False)
 
-        with patch("moirais.llm._probe_ollama", return_value=True):
+        with patch("morie.llm._probe_ollama", return_value=True):
             assert detect_available_provider() == _PROVIDER_OLLAMA
 
     def test_api_detected_when_configured(self, monkeypatch):
@@ -54,8 +54,8 @@ class TestDetectAvailableProvider:
         monkeypatch.setenv("LLM_API_KEY", "test-key-123")
         monkeypatch.delenv("OPENAI_API_KEY", raising=False)
 
-        with patch("moirais.llm._probe_ollama", return_value=False), \
-             patch("moirais.llm._probe_freeapi", return_value=False):
+        with patch("morie.llm._probe_ollama", return_value=False), \
+             patch("morie.llm._probe_freeapi", return_value=False):
             assert detect_available_provider() == _PROVIDER_API
 
     def test_openai_detected_when_key_set(self, monkeypatch):
@@ -64,8 +64,8 @@ class TestDetectAvailableProvider:
         monkeypatch.delenv("LLM_API_KEY", raising=False)
         monkeypatch.setenv("OPENAI_API_KEY", "sk-test-key")
 
-        with patch("moirais.llm._probe_ollama", return_value=False), \
-             patch("moirais.llm._probe_freeapi", return_value=False):
+        with patch("morie.llm._probe_ollama", return_value=False), \
+             patch("morie.llm._probe_freeapi", return_value=False):
             assert detect_available_provider() == _PROVIDER_OPENAI
 
     def test_local_when_nothing_configured(self, monkeypatch):
@@ -75,8 +75,8 @@ class TestDetectAvailableProvider:
         monkeypatch.delenv("OPENAI_API_KEY", raising=False)
         monkeypatch.delenv("OLLAMA_BASE_URL", raising=False)
 
-        with patch("moirais.llm._probe_ollama", return_value=False), \
-             patch("moirais.llm._probe_freeapi", return_value=False):
+        with patch("morie.llm._probe_ollama", return_value=False), \
+             patch("morie.llm._probe_freeapi", return_value=False):
             assert detect_available_provider() == _PROVIDER_LOCAL
 
     def test_ollama_takes_priority_over_api(self, monkeypatch):
@@ -85,7 +85,7 @@ class TestDetectAvailableProvider:
         monkeypatch.setenv("LLM_API_KEY", "test-key")
         monkeypatch.setenv("OPENAI_API_KEY", "sk-test")
 
-        with patch("moirais.llm._probe_ollama", return_value=True):
+        with patch("morie.llm._probe_ollama", return_value=True):
             assert detect_available_provider() == _PROVIDER_OLLAMA
 
     def test_api_takes_priority_over_openai(self, monkeypatch):
@@ -94,8 +94,8 @@ class TestDetectAvailableProvider:
         monkeypatch.setenv("LLM_API_KEY", "test-key")
         monkeypatch.setenv("OPENAI_API_KEY", "sk-test")
 
-        with patch("moirais.llm._probe_ollama", return_value=False), \
-             patch("moirais.llm._probe_freeapi", return_value=False):
+        with patch("morie.llm._probe_ollama", return_value=False), \
+             patch("morie.llm._probe_freeapi", return_value=False):
             assert detect_available_provider() == _PROVIDER_API
 
     def test_empty_string_env_vars_ignored(self, monkeypatch):
@@ -104,8 +104,8 @@ class TestDetectAvailableProvider:
         monkeypatch.setenv("LLM_API_KEY", "")
         monkeypatch.setenv("OPENAI_API_KEY", "  ")
 
-        with patch("moirais.llm._probe_ollama", return_value=False), \
-             patch("moirais.llm._probe_freeapi", return_value=False):
+        with patch("morie.llm._probe_ollama", return_value=False), \
+             patch("morie.llm._probe_freeapi", return_value=False):
             assert detect_available_provider() == _PROVIDER_LOCAL
 
 
@@ -114,35 +114,35 @@ class TestDetectAvailableProvider:
 # ---------------------------------------------------------------------------
 
 
-class TestBuildMoiraisContext:
+class TestBuildMorieContext:
     """Test the context dictionary builder."""
 
     def test_returns_required_keys(self):
-        ctx = build_moirais_context()
+        ctx = build_morie_context()
         assert "module_list" in ctx
         assert "cpads_schema" in ctx
         assert "cwd" in ctx
         assert "repo_root" in ctx
 
     def test_module_list_is_nonempty(self):
-        ctx = build_moirais_context()
+        ctx = build_morie_context()
         assert len(ctx["module_list"]) > 0
         first = ctx["module_list"][0]
         assert "name" in first
         assert "description" in first
 
     def test_cpads_schema_has_required_variables(self):
-        ctx = build_moirais_context()
+        ctx = build_morie_context()
         schema = ctx["cpads_schema"]
         assert "required_variables" in schema
         assert "weight" in schema["required_variables"]
 
     def test_custom_repo_root(self, tmp_path):
-        ctx = build_moirais_context(repo_root=str(tmp_path))
+        ctx = build_morie_context(repo_root=str(tmp_path))
         assert ctx["repo_root"] == str(tmp_path)
 
     def test_cwd_is_current_directory(self):
-        ctx = build_moirais_context()
+        ctx = build_morie_context()
         assert ctx["cwd"] == os.getcwd()
 
 
@@ -183,9 +183,9 @@ class TestFormatContextBlock:
 class TestLocalFallback:
     """Test the static local fallback response."""
 
-    def test_basic_fallback_contains_moirais(self):
+    def test_basic_fallback_contains_morie(self):
         result = _local_fallback("Hello")
-        assert "MOIRAIS" in result
+        assert "MORIE" in result
         assert "local-only mode" in result
 
     def test_cpads_keyword_enriches_response(self):
@@ -247,11 +247,11 @@ class TestAsk:
         monkeypatch.delenv("LLM_API_KEY", raising=False)
         monkeypatch.delenv("OPENAI_API_KEY", raising=False)
 
-        with patch("moirais.llm._probe_ollama", return_value=False), \
-             patch("moirais.llm._probe_freeapi", return_value=False):
+        with patch("morie.llm._probe_ollama", return_value=False), \
+             patch("morie.llm._probe_freeapi", return_value=False):
             result = ask("What is TMLE?")
             assert isinstance(result, str)
-            assert "MOIRAIS" in result
+            assert "MORIE" in result
             assert "local-only mode" in result
 
     def test_local_fallback_stream_returns_iterator(self, monkeypatch):
@@ -259,17 +259,17 @@ class TestAsk:
         monkeypatch.delenv("LLM_API_KEY", raising=False)
         monkeypatch.delenv("OPENAI_API_KEY", raising=False)
 
-        with patch("moirais.llm._probe_ollama", return_value=False), \
-             patch("moirais.llm._probe_freeapi", return_value=False):
+        with patch("morie.llm._probe_ollama", return_value=False), \
+             patch("morie.llm._probe_freeapi", return_value=False):
             result = ask("What is TMLE?", stream=True)
             chunks = list(result)
             assert len(chunks) == 1
-            assert "MOIRAIS" in chunks[0]
+            assert "MORIE" in chunks[0]
 
     def test_forced_local_provider(self):
         result = ask("test", provider="local")
         assert isinstance(result, str)
-        assert "MOIRAIS" in result
+        assert "MORIE" in result
 
     def test_ollama_request_made_when_detected(self, monkeypatch):
         """Verify that ask() calls the Ollama endpoint when detected."""
@@ -287,8 +287,8 @@ class TestAsk:
         }
 
         with (
-            patch("moirais.llm._probe_ollama", return_value=True),
-            patch("moirais.llm._request_completion", return_value=mock_response) as mock_req,
+            patch("morie.llm._probe_ollama", return_value=True),
+            patch("morie.llm._request_completion", return_value=mock_response) as mock_req,
         ):
             result = ask("What is TMLE?")
             assert result == "TMLE is a semiparametric estimator."
@@ -321,8 +321,8 @@ class TestAsk:
             return mock_response_ok
 
         with (
-            patch("moirais.llm._probe_ollama", return_value=True),
-            patch("moirais.llm._request_completion", side_effect=side_effect),
+            patch("morie.llm._probe_ollama", return_value=True),
+            patch("morie.llm._request_completion", side_effect=side_effect),
         ):
             result = ask("What is AIPW?")
             assert result == "Answer from API"
@@ -342,8 +342,8 @@ class TestAgentAvailable:
         monkeypatch.delenv("LLM_API_KEY", raising=False)
         monkeypatch.delenv("OPENAI_API_KEY", raising=False)
 
-        with patch("moirais.llm._probe_ollama", return_value=False), \
-             patch("moirais.llm._probe_freeapi", return_value=False):
+        with patch("morie.llm._probe_ollama", return_value=False), \
+             patch("morie.llm._probe_freeapi", return_value=False):
             assert agent_available() is False
             assert assistant_available() is False
 
@@ -352,7 +352,7 @@ class TestAgentAvailable:
         monkeypatch.delenv("LLM_API_KEY", raising=False)
         monkeypatch.delenv("OPENAI_API_KEY", raising=False)
 
-        with patch("moirais.llm._probe_ollama", return_value=True):
+        with patch("morie.llm._probe_ollama", return_value=True):
             assert agent_available() is True
 
     def test_true_when_openai_key_set(self, monkeypatch):
@@ -360,6 +360,6 @@ class TestAgentAvailable:
         monkeypatch.delenv("LLM_API_KEY", raising=False)
         monkeypatch.setenv("OPENAI_API_KEY", "sk-test")
 
-        with patch("moirais.llm._probe_ollama", return_value=False), \
-             patch("moirais.llm._probe_freeapi", return_value=False):
+        with patch("morie.llm._probe_ollama", return_value=False), \
+             patch("morie.llm._probe_freeapi", return_value=False):
             assert agent_available() is True

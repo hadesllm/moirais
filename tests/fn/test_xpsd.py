@@ -1,7 +1,7 @@
 """Test cross_psd (xpsd)."""
 import numpy as np
-from moirais.fn.xpsd import cross_psd, xpsd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.xpsd import cross_psd, xpsd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestXpsd:

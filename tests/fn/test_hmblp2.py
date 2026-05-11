@@ -1,7 +1,7 @@
 """Tests for hmblp2.geron_blip2."""
 import numpy as np
 import pytest
-from moirais.fn.hmblp2 import geron_blip2
+from morie.fn.hmblp2 import geron_blip2
 
 
 def test_hmblp2_basic():

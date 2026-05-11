@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.plnrm — lognormal CDF."""
+"""Tests for morie.fn.plnrm — lognormal CDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.plnrm import plnrm
+from morie.fn.plnrm import plnrm
 
 
 class TestPlnrm:

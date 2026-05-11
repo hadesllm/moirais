@@ -1,7 +1,7 @@
 """Tests for fdcrt.frontdoor_criterion."""
 import numpy as np
 import pytest
-from moirais.fn.fdcrt import frontdoor_criterion
+from morie.fn.fdcrt import frontdoor_criterion
 
 
 def test_fdcrt_basic():

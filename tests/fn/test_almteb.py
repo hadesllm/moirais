@@ -1,7 +1,7 @@
 """Tests for almteb.alammar_mteb_benchmark_score."""
 import numpy as np
 import pytest
-from moirais.fn.almteb import alammar_mteb_benchmark_score
+from morie.fn.almteb import alammar_mteb_benchmark_score
 
 
 def test_almteb_basic():

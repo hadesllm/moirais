@@ -1,7 +1,7 @@
 """Tests for kmpask.kamath_pass_at_k."""
 import numpy as np
 import pytest
-from moirais.fn.kmpask import kamath_pass_at_k
+from morie.fn.kmpask import kamath_pass_at_k
 
 
 def test_kmpask_basic():

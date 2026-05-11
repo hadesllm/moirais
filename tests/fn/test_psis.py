@@ -1,7 +1,7 @@
 """Tests for psis.pareto_smoothed_importance_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.psis import pareto_smoothed_importance_sampling
+from morie.fn.psis import pareto_smoothed_importance_sampling
 
 
 def test_psis_basic():

@@ -1,7 +1,7 @@
 """Tests for rgerrbd.rangayyan_bayes_error_bound."""
 import numpy as np
 import pytest
-from moirais.fn.rgerrbd import rangayyan_bayes_error_bound
+from morie.fn.rgerrbd import rangayyan_bayes_error_bound
 
 
 def test_rgerrbd_basic():

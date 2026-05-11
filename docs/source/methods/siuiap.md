@@ -1,9 +1,9 @@
 # SIU IAP — Federal Structured Intervention Unit Implementation Advisory Panel
 
-*Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
+*Part of {doc}`index` — MORIE's statistical-methods reference.*
 
 The Ontario Tracking Information System (OTIS) provides **provincial**
-restrictive-confinement data analysed in `moirais.otis_*` modules. The
+restrictive-confinement data analysed in `morie.otis_*` modules. The
 **federal** counterpart is Canada's Structured Intervention Unit (SIU)
 system, which replaced administrative segregation in federal
 penitentiaries in 2019.
@@ -13,7 +13,7 @@ Implementation Advisory Panel (SIU IAP)** monitored federal SIU
 implementation. The panel was an oversight body, not a data-producing
 body — its outputs are qualitative reports.
 
-## Panel composition (relevant to moirais)
+## Panel composition (relevant to morie)
 
 - **Howard Sapers** — Chair. Former Correctional Investigator of
   Canada.
@@ -22,9 +22,9 @@ body — its outputs are qualitative reports.
 - **Prof. Jane B. Sprott** — Member. Department of Criminology,
   Toronto Metropolitan University.
 
-Prof. Doob's membership is the proximate reason why moirais analyses
+Prof. Doob's membership is the proximate reason why morie analyses
 of OTIS aggregate data are framed under the **Doob chi-square** name
-— see `moirais.otis_all_analyze.analyze_c_doob_chi2` and
+— see `morie.otis_all_analyze.analyze_c_doob_chi2` and
 `analyze_d_doob_chi2`.
 
 ## Two distinct panels
@@ -33,9 +33,9 @@ There were actually **two** Implementation Advisory Panels — the
 distinction matters for citation:
 
 - **Original SIU-IAP** (2019 → mid-2020) — chaired by Anthony N. Doob;
-  exposed in moirais as `siuiap.ORIGINAL_PANEL_2019_2020`.
+  exposed in morie as `siuiap.ORIGINAL_PANEL_2019_2020`.
 - **Re-launched SIU IAP** (2021-04 → 2024-12) — chaired by Howard
-  Sapers; exposed in moirais as `siuiap.PANEL_MEMBERS` and
+  Sapers; exposed in morie as `siuiap.PANEL_MEMBERS` and
   `REPORTS`.
 
 The original Doob-chaired panel "died a natural death after the
@@ -45,7 +45,7 @@ appointment in April 2021.
 
 ## Reports indexed
 
-`moirais.siuiap` indexes three categories of documents:
+`morie.siuiap` indexes three categories of documents:
 
 - `REPORTS` — the **5 Sapers-chaired SIU IAP panel reports** (2021-2024).
 - `CRIMSL_REPORTS` — the **4 Sprott / Doob ± Iftene independent academic
@@ -57,12 +57,12 @@ appointment in April 2021.
 - `AFFIDAVITS` — Doob's 2020 Federal Court affidavit (T-539-20).
 
 The four CRIMSL reports + the Doob affidavit are the source data for
-[`moirais.sprott_doob`](sprott_doob.md) and [`moirais.doob_trends`](doob_trends.md).
+[`morie.sprott_doob`](sprott_doob.md) and [`morie.doob_trends`](doob_trends.md).
 
 ## Programmatic access
 
 ```python
-from moirais.siuiap import cite, panel_summary, REPORTS, CRIMSL_REPORTS
+from morie.siuiap import cite, panel_summary, REPORTS, CRIMSL_REPORTS
 
 # SIU IAP panel reports
 print(cite("final_2024"))

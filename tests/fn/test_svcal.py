@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svcal -- Calvert uncertainty model"""
+"""Tests for morie.fn.svcal -- Calvert uncertainty model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svcal import calvert_model
+from morie.fn.svcal import calvert_model
 
 
 class TestCalvertModel:

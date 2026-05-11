@@ -1,7 +1,7 @@
 """Tests for msebl.mse_loss_continuous."""
 import numpy as np
 import pytest
-from moirais.fn.msebl import mse_loss_continuous
+from morie.fn.msebl import mse_loss_continuous
 
 
 def test_msebl_basic():

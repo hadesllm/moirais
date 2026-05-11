@@ -1,7 +1,7 @@
 """Test wlcrr."""
 import numpy as np
 import pytest
-from moirais.fn.wlcrr import wlcrr
+from morie.fn.wlcrr import wlcrr
 
 
 def test_wlcrr_basic():

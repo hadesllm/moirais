@@ -1,7 +1,7 @@
 """Tests for km064.kamath_ch4_loftq_objective."""
 import numpy as np
 import pytest
-from moirais.fn.km064 import kamath_ch4_loftq_objective
+from morie.fn.km064 import kamath_ch4_loftq_objective
 
 
 def test_km064_basic():

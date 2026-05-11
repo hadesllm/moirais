@@ -1,7 +1,7 @@
 """Tests for msm307.mvsml_convolutional_nn_eq_14_13."""
 import numpy as np
 import pytest
-from moirais.fn.msm307 import mvsml_convolutional_nn_eq_14_13
+from morie.fn.msm307 import mvsml_convolutional_nn_eq_14_13
 
 
 def test_msm307_basic():

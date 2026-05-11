@@ -1,7 +1,7 @@
 """Test soclm."""
 import numpy as np
 import pytest
-from moirais.fn.soclm import soclm
+from morie.fn.soclm import soclm
 
 
 def test_soclm_basic():

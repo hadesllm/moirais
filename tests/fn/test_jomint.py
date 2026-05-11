@@ -1,7 +1,7 @@
 """Tests for jomint.joseph_mint_reconciliation."""
 import numpy as np
 import pytest
-from moirais.fn.jomint import joseph_mint_reconciliation
+from morie.fn.jomint import joseph_mint_reconciliation
 
 
 def test_jomint_basic():

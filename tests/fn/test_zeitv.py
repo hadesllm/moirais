@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeitv -- Travel time catchment"""
+"""Tests for morie.fn.zeitv -- Travel time catchment"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeitv import travel_time_catch
+from morie.fn.zeitv import travel_time_catch
 
 
 class TestTravelTimeCatch:

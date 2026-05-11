@@ -1,7 +1,7 @@
 """Tests for rgchoi.rangayyan_choi_williams."""
 import numpy as np
 import pytest
-from moirais.fn.rgchoi import rangayyan_choi_williams
+from morie.fn.rgchoi import rangayyan_choi_williams
 
 
 def test_rgchoi_basic():

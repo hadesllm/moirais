@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rct — restrictive confinement trends."""
+"""Tests for morie.fn.rct — restrictive confinement trends."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.rct import rctrnd as rct
+from morie.fn.rct import rctrnd as rct
 
 
 @pytest.fixture()

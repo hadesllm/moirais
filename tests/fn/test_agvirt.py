@@ -1,7 +1,7 @@
 """Tests for agvirt.alphazero_virtual_loss."""
 import numpy as np
 import pytest
-from moirais.fn.agvirt import alphazero_virtual_loss
+from morie.fn.agvirt import alphazero_virtual_loss
 
 
 def test_agvirt_basic():

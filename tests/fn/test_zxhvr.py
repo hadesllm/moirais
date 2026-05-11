@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxhvr -- Haversine distance"""
+"""Tests for morie.fn.zxhvr -- Haversine distance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxhvr import haversine_dist
+from morie.fn.zxhvr import haversine_dist
 
 
 class TestHaversineDist:

@@ -1,4 +1,4 @@
-"""Tests for moirais.semipar_bridge — both C and NumPy backends.
+"""Tests for morie.semipar_bridge — both C and NumPy backends.
 
 Tests verify mathematical correctness of:
 - Nadaraya-Watson kernel regression
@@ -15,7 +15,7 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from moirais.semipar_bridge import (
+from morie.semipar_bridge import (
     KERNEL_BIWEIGHT,
     KERNEL_EPANECHNIKOV,
     KERNEL_GAUSSIAN,

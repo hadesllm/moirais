@@ -1,7 +1,7 @@
 """Tests for sarsa.sarsa."""
 import numpy as np
 import pytest
-from moirais.fn.sarsa import sarsa
+from morie.fn.sarsa import sarsa
 
 
 def test_sarsa_basic():

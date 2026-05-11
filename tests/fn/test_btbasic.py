@@ -1,7 +1,7 @@
 """Tests for btbasic.boot_basic_ci."""
 import numpy as np
 import pytest
-from moirais.fn.btbasic import boot_basic_ci
+from morie.fn.btbasic import boot_basic_ci
 
 
 def test_btbasic_basic():

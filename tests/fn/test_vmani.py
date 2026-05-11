@@ -1,7 +1,7 @@
 """Test vmani."""
 import numpy as np
 import pytest
-from moirais.fn.vmani import vmani
+from morie.fn.vmani import vmani
 
 
 def test_vmani_basic():

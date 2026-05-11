@@ -1,7 +1,7 @@
 """Test gdlit."""
 import numpy as np
 import pytest
-from moirais.fn.gdlit import gdlit
+from morie.fn.gdlit import gdlit
 
 
 def test_gdlit_basic():

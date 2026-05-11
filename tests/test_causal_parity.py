@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from moirais.causal import (
+from morie.causal import (
     effective_sample_size,
     run_ebac_selection_ipw_analysis,
     run_propensity_ipw_analysis,

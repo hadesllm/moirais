@@ -1,7 +1,7 @@
 """Tests for ddpest.dependent_dp."""
 import numpy as np
 import pytest
-from moirais.fn.ddpest import dependent_dp
+from morie.fn.ddpest import dependent_dp
 
 
 def test_ddpest_basic():

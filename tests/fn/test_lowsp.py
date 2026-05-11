@@ -1,7 +1,7 @@
 """Test lowsp."""
 import numpy as np
 import pytest
-from moirais.fn.lowsp import lowsp
+from morie.fn.lowsp import lowsp
 
 
 def test_lowsp_basic():

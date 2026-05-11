@@ -1,7 +1,7 @@
 """Tests for hmddpg.geron_ddpg."""
 import numpy as np
 import pytest
-from moirais.fn.hmddpg import geron_ddpg
+from morie.fn.hmddpg import geron_ddpg
 
 
 def test_hmddpg_basic():

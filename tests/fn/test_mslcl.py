@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mslcl -- Local continuity meta-criterion"""
+"""Tests for morie.fn.mslcl -- Local continuity meta-criterion"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mslcl import lcmc
+from morie.fn.mslcl import lcmc
 
 
 class TestLcmc:

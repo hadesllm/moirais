@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.holo_v -- violin plot."""
+"""Tests for morie.fn.holo_v -- violin plot."""
 
 import numpy as np
 import pytest
@@ -6,7 +6,7 @@ import pytest
 plt = pytest.importorskip("matplotlib.pyplot")
 pd = pytest.importorskip("pandas")
 
-from moirais.fn.holo_v import holo_violin
+from morie.fn.holo_v import holo_violin
 
 
 class TestHoloViolin:

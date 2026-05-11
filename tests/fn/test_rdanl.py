@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rdanl -- Regularized discriminant analysis."""
+"""Tests for morie.fn.rdanl -- Regularized discriminant analysis."""
 
 import numpy as np
-from moirais.fn.rdanl import rda, rdanl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rdanl import rda, rdanl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRda:

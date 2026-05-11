@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cmds — Classical multidimensional scaling."""
+"""Tests for morie.fn.cmds — Classical multidimensional scaling."""
 import numpy as np
 import pytest
 
-from moirais.fn.cmds import cmds
+from morie.fn.cmds import cmds
 
 
 def test_cmds_smoke():
@@ -13,7 +13,7 @@ def test_cmds_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.cmds import cheatsheet
+    from morie.fn.cmds import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

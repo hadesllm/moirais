@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.roccv — ROC curve."""
+"""Tests for morie.fn.roccv — ROC curve."""
 import numpy as np
 import pytest
-from moirais.fn.roccv import roc_curve, roccv
+from morie.fn.roccv import roc_curve, roccv
 
 
 def test_basic():

@@ -1,7 +1,7 @@
 """Tests for otsktol.ot_sinkhorn_tol."""
 import numpy as np
 import pytest
-from moirais.fn.otsktol import ot_sinkhorn_tol
+from morie.fn.otsktol import ot_sinkhorn_tol
 
 
 def test_otsktol_basic():

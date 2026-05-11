@@ -1,7 +1,7 @@
 """Tests for eslbpr.esl_backprop."""
 import numpy as np
 import pytest
-from moirais.fn.eslbpr import esl_backprop
+from morie.fn.eslbpr import esl_backprop
 
 
 def test_eslbpr_basic():

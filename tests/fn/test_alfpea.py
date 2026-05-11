@@ -1,7 +1,7 @@
 """Tests for alfpea.alphafold_pae_predict."""
 import numpy as np
 import pytest
-from moirais.fn.alfpea import alphafold_pae_predict
+from morie.fn.alfpea import alphafold_pae_predict
 
 
 def test_alfpea_basic():

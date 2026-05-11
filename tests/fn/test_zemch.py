@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zemch -- Maternal-child health mapping"""
+"""Tests for morie.fn.zemch -- Maternal-child health mapping"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zemch import maternal_child_map
+from morie.fn.zemch import maternal_child_map
 
 
 class TestMaternalChildMap:

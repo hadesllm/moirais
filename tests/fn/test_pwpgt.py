@@ -1,7 +1,7 @@
 """Tests for pwpgt.pwp_gap_time."""
 import numpy as np
 import pytest
-from moirais.fn.pwpgt import pwp_gap_time
+from morie.fn.pwpgt import pwp_gap_time
 
 
 def test_pwpgt_basic():

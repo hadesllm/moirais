@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kcvms — kernel Cramer-von Mises test."""
+"""Tests for morie.fn.kcvms — kernel Cramer-von Mises test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kcvms import kcvms
+from morie.fn.kcvms import kcvms
 
 
 class TestKcvms:

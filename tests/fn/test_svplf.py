@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svplf -- Affective polarization measure"""
+"""Tests for morie.fn.svplf -- Affective polarization measure"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svplf import polarization_aff
+from morie.fn.svplf import polarization_aff
 
 
 class TestPolarizationAff:

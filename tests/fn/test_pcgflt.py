@@ -1,6 +1,6 @@
 """Tests for pcg_filter."""
 import numpy as np, pytest
-from moirais.fn.pcgflt import pcg_filter
+from morie.fn.pcgflt import pcg_filter
 
 
 class TestPcgFilter:

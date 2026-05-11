@@ -1,7 +1,7 @@
 """Test cszon."""
 import numpy as np
 import pytest
-from moirais.fn.cszon import cszon
+from morie.fn.cszon import cszon
 
 
 def test_cszon_basic():

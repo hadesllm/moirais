@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pqenc — PolarQuant encoder."""
+"""Tests for morie.fn.pqenc — PolarQuant encoder."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pqenc import polarquant_encode
+from morie.fn.pqenc import polarquant_encode
 
 
 class TestPolarquantEncode:

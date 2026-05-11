@@ -1,7 +1,7 @@
 """Tests for rng080.rangayyan_ch3_parseval_theorem."""
 import numpy as np
 import pytest
-from moirais.fn.rng080 import rangayyan_ch3_parseval_theorem
+from morie.fn.rng080 import rangayyan_ch3_parseval_theorem
 
 
 def test_rng080_basic():

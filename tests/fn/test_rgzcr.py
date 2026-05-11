@@ -1,7 +1,7 @@
 """Tests for rgzcr.rangayyan_zero_crossing."""
 import numpy as np
 import pytest
-from moirais.fn.rgzcr import rangayyan_zero_crossing
+from morie.fn.rgzcr import rangayyan_zero_crossing
 
 
 def test_rgzcr_basic():

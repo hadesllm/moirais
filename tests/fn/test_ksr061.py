@@ -1,7 +1,7 @@
 """Tests for ksr061.kosorok_ch3_differentiable_quadratic_mean."""
 import numpy as np
 import pytest
-from moirais.fn.ksr061 import kosorok_ch3_differentiable_quadratic_mean
+from morie.fn.ksr061 import kosorok_ch3_differentiable_quadratic_mean
 
 
 def test_ksr061_basic():

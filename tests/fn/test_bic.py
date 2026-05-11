@@ -1,7 +1,7 @@
 """Test bic."""
 import numpy as np
 import pytest
-from moirais.fn.bic import bayesian_info_criterion
+from morie.fn.bic import bayesian_info_criterion
 
 
 def test_bic_basic():

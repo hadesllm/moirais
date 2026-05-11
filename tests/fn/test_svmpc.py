@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svmpc -- Multi-party spatial competition"""
+"""Tests for morie.fn.svmpc -- Multi-party spatial competition"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svmpc import multiparty_comp
+from morie.fn.svmpc import multiparty_comp
 
 
 class TestMultipartyComp:

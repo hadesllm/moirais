@@ -1,7 +1,7 @@
 """Tests for wsmmin.wasserman_minimax."""
 import numpy as np
 import pytest
-from moirais.fn.wsmmin import wasserman_minimax
+from morie.fn.wsmmin import wasserman_minimax
 
 
 def test_wsmmin_basic():

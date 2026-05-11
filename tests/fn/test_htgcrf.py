@@ -1,7 +1,7 @@
 """Tests for htgcrf.hetero_causal_forest."""
 import numpy as np
 import pytest
-from moirais.fn.htgcrf import hetero_causal_forest
+from morie.fn.htgcrf import hetero_causal_forest
 
 
 def test_htgcrf_basic():

@@ -1,7 +1,7 @@
 """Tests for grlof.geron_local_outlier_factor."""
 import numpy as np
 import pytest
-from moirais.fn.grlof import geron_local_outlier_factor
+from morie.fn.grlof import geron_local_outlier_factor
 
 
 def test_grlof_basic():

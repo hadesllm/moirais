@@ -1,7 +1,7 @@
 """Test gcupw."""
 import numpy as np
 import pytest
-from moirais.fn.gcupw import gcupw
+from morie.fn.gcupw import gcupw
 
 
 def test_gcupw_basic():

@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.pntmp import pan_tompkins_qrs, pntmp
-from moirais.fn._containers import SignalResult
+from morie.fn.pntmp import pan_tompkins_qrs, pntmp
+from morie.fn._containers import SignalResult
 
 
 class TestPanTompkinsQRS:

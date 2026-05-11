@@ -1,7 +1,7 @@
 """Tests for rng214.rangayyan_ch4_signal_total_energy."""
 import numpy as np
 import pytest
-from moirais.fn.rng214 import rangayyan_ch4_signal_total_energy
+from morie.fn.rng214 import rangayyan_ch4_signal_total_energy
 
 
 def test_rng214_basic():

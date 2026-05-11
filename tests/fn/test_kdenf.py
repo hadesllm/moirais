@@ -1,7 +1,7 @@
 """Test kdenf."""
 import numpy as np
 import pytest
-from moirais.fn.kdenf import kdenf
+from morie.fn.kdenf import kdenf
 
 
 def test_kdenf_basic():

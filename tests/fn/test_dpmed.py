@@ -1,7 +1,7 @@
 """Tests for dpmed.dp_median."""
 import numpy as np
 import pytest
-from moirais.fn.dpmed import dp_median
+from morie.fn.dpmed import dp_median
 
 
 def test_dpmed_basic():

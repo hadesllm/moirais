@@ -1,7 +1,7 @@
 """Test gebal."""
 import numpy as np
 import pytest
-from moirais.fn.gebal import gebal
+from morie.fn.gebal import gebal
 
 
 def test_gebal_basic():

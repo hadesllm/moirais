@@ -1,7 +1,7 @@
 """Tests for sgtcg.sgt_commute_distance."""
 import numpy as np
 import pytest
-from moirais.fn.sgtcg import sgt_commute_distance
+from morie.fn.sgtcg import sgt_commute_distance
 
 
 def test_sgtcg_basic():

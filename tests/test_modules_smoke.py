@@ -34,7 +34,7 @@ def synthetic_df():
 
 class TestDiD:
     def test_did_2x2_returns_result(self, synthetic_df):
-        from moirais.did import did_2x2
+        from morie.did import did_2x2
         result = did_2x2(synthetic_df, "outcome", "treatment", "post")
         # Check actual attributes from DiDResult dataclass
         assert hasattr(result, "estimate"), "DiDResult must have estimate"
@@ -45,7 +45,7 @@ class TestDiD:
 
 class TestRDD:
     def test_sharp_rdd_returns_result(self, synthetic_df):
-        from moirais.rdd import sharp_rdd
+        from morie.rdd import sharp_rdd
         result = sharp_rdd(synthetic_df, "outcome", "running", cutoff=0.0)
         assert hasattr(result, "estimate"), "RDDResult must have estimate"
         assert isinstance(result.estimate, float)
@@ -53,7 +53,7 @@ class TestRDD:
 
 class TestSurvival:
     def test_kaplan_meier_returns_result(self, synthetic_df):
-        from moirais.survival import kaplan_meier
+        from morie.survival import kaplan_meier
         time_vals = np.abs(synthetic_df["running"].values) + 0.1
         event_vals = synthetic_df["event"].values
         result = kaplan_meier(time_vals, event_vals)
@@ -64,7 +64,7 @@ class TestSurvival:
 
 class TestMatching:
     def test_nearest_neighbor_matching_runs(self, synthetic_df):
-        from moirais.matching import match_nearest_neighbor
+        from morie.matching import match_nearest_neighbor
         result = match_nearest_neighbor(
             synthetic_df, "treatment", ["x1", "x2"]
         )
@@ -74,7 +74,7 @@ class TestMatching:
 
 class TestMissing:
     def test_littles_mcar_returns_result(self, synthetic_df):
-        from moirais.missing import littles_mcar_test
+        from morie.missing import littles_mcar_test
         df = synthetic_df[["x1", "x2", "x3"]].copy()
         # Introduce some missing values
         mask = np.random.random(len(df)) < 0.1
@@ -87,7 +87,7 @@ class TestMissing:
 
 class TestBootstrapMethods:
     def test_bootstrap_ci_bounds(self):
-        from moirais.bootstrap_methods import bootstrap
+        from morie.bootstrap_methods import bootstrap
         np.random.seed(42)
         data = np.random.randn(100)
         result = bootstrap(data, np.mean, n_boot=500, ci_method="percentile")
@@ -99,7 +99,7 @@ class TestBootstrapMethods:
 
 class TestMultipleTesting:
     def test_bh_correction_output(self):
-        from moirais.multiple_testing import benjamini_hochberg
+        from morie.multiple_testing import benjamini_hochberg
         p_values = np.array([0.01, 0.04, 0.03, 0.20, 0.50])
         result = benjamini_hochberg(p_values)
         assert hasattr(result, "adjusted")
@@ -112,7 +112,7 @@ class TestMultipleTesting:
 
 class TestEffectSizes:
     def test_cohens_d_returns_estimate(self):
-        from moirais.effect_sizes import cohens_d
+        from morie.effect_sizes import cohens_d
         np.random.seed(42)
         x = np.random.randn(50)
         y = np.random.randn(50) + 0.5
@@ -121,7 +121,7 @@ class TestEffectSizes:
         assert isinstance(result.estimate, float)
 
     def test_hedges_g_returns_estimate(self):
-        from moirais.effect_sizes import hedges_g
+        from morie.effect_sizes import hedges_g
         np.random.seed(42)
         x = np.random.randn(50)
         y = np.random.randn(50) + 0.5
@@ -131,7 +131,7 @@ class TestEffectSizes:
 
 class TestSensitivity:
     def test_e_value_positive(self):
-        from moirais.sensitivity import e_value_rr
+        from morie.sensitivity import e_value_rr
         result = e_value_rr(2.5, ci_lower=1.1)
         assert hasattr(result, "e_value_point")
         assert result.e_value_point > 1.0, "E-value must exceed 1 for RR > 1"
@@ -140,7 +140,7 @@ class TestSensitivity:
 
 class TestDiagnostics:
     def test_collinearity_diagnostics_runs(self, synthetic_df):
-        from moirais.diagnostics import collinearity_diagnostics
+        from morie.diagnostics import collinearity_diagnostics
         X = synthetic_df[["x1", "x2", "x3"]].values
         result = collinearity_diagnostics(X, column_names=["x1", "x2", "x3"])
         assert hasattr(result, "vif")
@@ -149,7 +149,7 @@ class TestDiagnostics:
 
 class TestStatistics:
     def test_one_sample_ttest_detects_shift(self):
-        from moirais.statistics import one_sample_ttest
+        from morie.statistics import one_sample_ttest
         np.random.seed(42)
         data = np.random.randn(50) + 1.0  # shifted mean
         result = one_sample_ttest(data, mu0=0)
@@ -158,7 +158,7 @@ class TestStatistics:
         assert result.p_value < 0.05, "Should reject H0 (mean ≠ 0)"
 
     def test_pearson_detects_correlation(self):
-        from moirais.statistics import pearson_correlation
+        from morie.statistics import pearson_correlation
         np.random.seed(42)
         x = np.random.randn(100)
         y = x + np.random.randn(100) * 0.5  # strong positive correlation

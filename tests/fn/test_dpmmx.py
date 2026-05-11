@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dpmmx -- DP mixture model."""
+"""Tests for morie.fn.dpmmx -- DP mixture model."""
 
 import numpy as np
-from moirais.fn.dpmmx import dp_mixture_model
+from morie.fn.dpmmx import dp_mixture_model
 
 
 def test_returns_dict():

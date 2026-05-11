@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.insprt — inspection score by facility."""
+"""Tests for morie.fn.insprt — inspection score by facility."""
 
 import pandas as pd
-from moirais.fn.insprt import inspection_score
+from morie.fn.insprt import inspection_score
 
 
 class TestInspectionScore:

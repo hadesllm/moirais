@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mnmx — minimax."""
+"""Tests for morie.fn.mnmx — minimax."""
 import numpy as np
 import pytest
-from moirais.fn.mnmx import minimax
+from morie.fn.mnmx import minimax
 
 
 class TestMinimax:

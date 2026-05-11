@@ -1,7 +1,7 @@
 """Tests for kmstst.kamath_stereoset_bias."""
 import numpy as np
 import pytest
-from moirais.fn.kmstst import kamath_stereoset_bias
+from morie.fn.kmstst import kamath_stereoset_bias
 
 
 def test_kmstst_basic():

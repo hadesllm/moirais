@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgrdr -- Rodogram estimator"""
+"""Tests for morie.fn.vgrdr -- Rodogram estimator"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgrdr import rodogram
+from morie.fn.vgrdr import rodogram
 
 
 class TestRodogram:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.npivt — Nonparametric IV via Tikhonov."""
+"""Tests for morie.fn.npivt — Nonparametric IV via Tikhonov."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.npivt import npivt
+from morie.fn.npivt import npivt
 
 
 @pytest.fixture()

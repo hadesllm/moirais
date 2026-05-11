@@ -1,7 +1,7 @@
 """Tests for mmestr.mm_estimator_regression."""
 import numpy as np
 import pytest
-from moirais.fn.mmestr import mm_estimator_regression
+from morie.fn.mmestr import mm_estimator_regression
 
 
 def test_mmestr_basic():

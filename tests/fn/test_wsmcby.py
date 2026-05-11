@@ -1,7 +1,7 @@
 """Tests for wsmcby.wasserman_chebyshev_ineq."""
 import numpy as np
 import pytest
-from moirais.fn.wsmcby import wasserman_chebyshev_ineq
+from morie.fn.wsmcby import wasserman_chebyshev_ineq
 
 
 def test_wsmcby_basic():

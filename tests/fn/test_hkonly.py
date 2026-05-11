@@ -1,7 +1,7 @@
 """Tests for hkonly.hadamard_response."""
 import numpy as np
 import pytest
-from moirais.fn.hkonly import hadamard_response
+from morie.fn.hkonly import hadamard_response
 
 
 def test_hkonly_basic():

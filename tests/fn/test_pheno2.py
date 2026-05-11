@@ -1,7 +1,7 @@
 """Tests for pheno2.phenotype_qc."""
 import numpy as np
 import pytest
-from moirais.fn.pheno2 import phenotype_qc
+from morie.fn.pheno2 import phenotype_qc
 
 
 def test_pheno2_basic():

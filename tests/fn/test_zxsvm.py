@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsvm -- Spatial SVM"""
+"""Tests for morie.fn.zxsvm -- Spatial SVM"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsvm import spatial_svm
+from morie.fn.zxsvm import spatial_svm
 
 
 class TestSpatialSvm:

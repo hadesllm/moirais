@@ -1,7 +1,7 @@
 """Test trlvl."""
 import numpy as np
 import pytest
-from moirais.fn.trlvl import trlvl
+from morie.fn.trlvl import trlvl
 
 
 def test_trlvl_basic():

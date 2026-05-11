@@ -1,7 +1,7 @@
 """Tests for gb_sp2.gibbons_spearman_exact."""
 import numpy as np
 import pytest
-from moirais.fn.gb_sp2 import gibbons_spearman_exact
+from morie.fn.gb_sp2 import gibbons_spearman_exact
 
 
 def test_gb_sp2_basic():

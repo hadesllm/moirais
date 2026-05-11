@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.punsh -- elastic net regularization."""
+"""Tests for morie.fn.punsh -- elastic net regularization."""
 
 import numpy as np
-from moirais.fn.punsh import penalty_regression, punsh
-from moirais.fn._containers import RegressionResult
+from morie.fn.punsh import penalty_regression, punsh
+from morie.fn._containers import RegressionResult
 
 
 class TestPunsh:

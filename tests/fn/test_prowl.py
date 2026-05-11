@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.prowl -- isolation forest anomaly detection."""
+"""Tests for morie.fn.prowl -- isolation forest anomaly detection."""
 
 import numpy as np
-from moirais.fn.prowl import anomaly_isolation, prowl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prowl import anomaly_isolation, prowl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestProwl:

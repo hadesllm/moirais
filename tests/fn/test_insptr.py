@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.insptr — inspection score trend."""
+"""Tests for morie.fn.insptr — inspection score trend."""
 
 import pandas as pd
-from moirais.fn.insptr import inspection_trend
+from morie.fn.insptr import inspection_trend
 
 
 class TestInspectionTrend:

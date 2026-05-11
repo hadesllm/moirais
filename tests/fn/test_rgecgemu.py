@@ -1,7 +1,7 @@
 """Tests for rgecgemu.rangayyan_ecg_emg_coupling."""
 import numpy as np
 import pytest
-from moirais.fn.rgecgemu import rangayyan_ecg_emg_coupling
+from morie.fn.rgecgemu import rangayyan_ecg_emg_coupling
 
 
 def test_rgecgemu_basic():

@@ -1,7 +1,7 @@
 """Tests for hepatx.hepatotoxicity."""
 import numpy as np
 import pytest
-from moirais.fn.hepatx import hepatotoxicity
+from morie.fn.hepatx import hepatotoxicity
 
 
 def test_hepatx_basic():

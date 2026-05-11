@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.biccg -- BiCGSTAB solver."""
+"""Tests for morie.fn.biccg -- BiCGSTAB solver."""
 
 import numpy as np
-from moirais.fn.biccg import bicgstab, biccg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.biccg import bicgstab, biccg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBiccg:

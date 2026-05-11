@@ -1,7 +1,7 @@
 """Tests for rng196.rangayyan_ch4_dicrotic_notch_second_derivative."""
 import numpy as np
 import pytest
-from moirais.fn.rng196 import rangayyan_ch4_dicrotic_notch_second_derivative
+from morie.fn.rng196 import rangayyan_ch4_dicrotic_notch_second_derivative
 
 
 def test_rng196_basic():

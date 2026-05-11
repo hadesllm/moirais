@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kbeta — beta kernel density."""
+"""Tests for morie.fn.kbeta — beta kernel density."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kbeta import kbeta
+from morie.fn.kbeta import kbeta
 
 
 class TestKbeta:

@@ -1,7 +1,7 @@
 """Tests for spstp.schabenberger_st_point_process."""
 import numpy as np
 import pytest
-from moirais.fn.spstp import schabenberger_st_point_process
+from morie.fn.spstp import schabenberger_st_point_process
 
 
 def test_spstp_basic():

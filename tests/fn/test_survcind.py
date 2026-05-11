@@ -1,7 +1,7 @@
 """Tests for survcind.survival_concordance."""
 import numpy as np
 import pytest
-from moirais.fn.survcind import survival_concordance
+from morie.fn.survcind import survival_concordance
 
 
 def test_survcind_basic():

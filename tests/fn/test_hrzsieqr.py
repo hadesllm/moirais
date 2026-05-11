@@ -1,7 +1,7 @@
 """Tests for hrzsieqr.horowitz_series_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.hrzsieqr import horowitz_series_quantile
+from morie.fn.hrzsieqr import horowitz_series_quantile
 
 
 def test_hrzsieqr_basic():

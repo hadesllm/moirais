@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.miage -- MI by age group."""
+"""Tests for morie.fn.miage -- MI by age group."""
 
-from moirais.fn.miage import mi_by_age
+from morie.fn.miage import mi_by_age
 
 
 class TestMiByAge:

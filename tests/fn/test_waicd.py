@@ -1,7 +1,7 @@
 """Tests for waicd.waic_diagnostic."""
 import numpy as np
 import pytest
-from moirais.fn.waicd import waic_diagnostic
+from morie.fn.waicd import waic_diagnostic
 
 
 def test_waicd_basic():

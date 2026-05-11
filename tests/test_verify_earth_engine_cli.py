@@ -1,4 +1,4 @@
-"""Tests for ``moirais verify-earth-engine`` CLI smoke-check."""
+"""Tests for ``morie verify-earth-engine`` CLI smoke-check."""
 
 import json
 import os
@@ -20,20 +20,20 @@ def _run_cli(*extra_args: str, env_overrides: dict | None = None):
     env = os.environ.copy()
     # Purge any inherited EE env so tests are deterministic
     for k in (
-        "MOIRAIS_EE_SERVICE_ACCOUNT",
-        "MOIRAIS_EE_KEY_PATH",
-        "MOIRAIS_EE_PROJECT",
+        "MORIE_EE_SERVICE_ACCOUNT",
+        "MORIE_EE_KEY_PATH",
+        "MORIE_EE_PROJECT",
         "GOOGLE_APPLICATION_CREDENTIALS",
         "GOOGLE_CLOUD_PROJECT",
     ):
         env.pop(k, None)
     # Block runner's auto .env loader — otherwise a dev .env
     # with real Vertex/EE keys re-populates what we just purged.
-    env["MOIRAIS_SKIP_DOTENV"] = "1"
+    env["MORIE_SKIP_DOTENV"] = "1"
     if env_overrides:
         env.update(env_overrides)
     return subprocess.run(
-        [sys.executable, "-m", "moirais.runner", "verify-earth-engine", *extra_args],
+        [sys.executable, "-m", "morie.runner", "verify-earth-engine", *extra_args],
         capture_output=True, text=True, env=env,
     )
 
@@ -56,9 +56,9 @@ def test_verify_ee_library_stage_passes_when_installed():
 
 def test_verify_ee_bad_keypath_exit_1():
     r = _run_cli(env_overrides={
-        "MOIRAIS_EE_SERVICE_ACCOUNT": "fake@example.iam.gserviceaccount.com",
-        "MOIRAIS_EE_KEY_PATH": "/no/such/file.json",
-        "MOIRAIS_EE_PROJECT": "test-project",
+        "MORIE_EE_SERVICE_ACCOUNT": "fake@example.iam.gserviceaccount.com",
+        "MORIE_EE_KEY_PATH": "/no/such/file.json",
+        "MORIE_EE_PROJECT": "test-project",
     })
     assert r.returncode == 1
     assert "points at missing file" in r.stdout
@@ -88,7 +88,7 @@ def test_verify_ee_skip_query_passes_when_initialize_would():
 
 def test_verify_ee_appears_in_help():
     r = subprocess.run(
-        [sys.executable, "-m", "moirais.runner", "--help"],
+        [sys.executable, "-m", "morie.runner", "--help"],
         capture_output=True, text=True,
     )
     assert r.returncode == 0

@@ -1,7 +1,7 @@
 """Tests for alfgom.alphago_montecarlo."""
 import numpy as np
 import pytest
-from moirais.fn.alfgom import alphago_montecarlo
+from morie.fn.alfgom import alphago_montecarlo
 
 
 def test_alfgom_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rvrfy — render verification."""
+"""Tests for morie.fn.rvrfy — render verification."""
 
 import pytest
 
-from moirais.fn.rvrfy import rvrfy, render_verification
-from moirais.inspector import VerificationReport, VerificationCheck
+from morie.fn.rvrfy import rvrfy, render_verification
+from morie.inspector import VerificationReport, VerificationCheck
 
 
 def test_alias_is_same_function():

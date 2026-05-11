@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gcd_."""
+"""Tests for morie.fn.gcd_."""
 import numpy as np
-from moirais.fn.gcd_ import gcd_
+from morie.fn.gcd_ import gcd_
 
 
 def test_gcd__smoke():
@@ -12,7 +12,7 @@ def test_gcd__smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.gcd_ import cheatsheet
+    from morie.fn.gcd_ import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

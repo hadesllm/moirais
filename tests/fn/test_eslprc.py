@@ -1,7 +1,7 @@
 """Tests for eslprc.esl_perceptron."""
 import numpy as np
 import pytest
-from moirais.fn.eslprc import esl_perceptron
+from morie.fn.eslprc import esl_perceptron
 
 
 def test_eslprc_basic():

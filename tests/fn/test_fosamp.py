@@ -1,7 +1,7 @@
 """Test fosamp."""
 import numpy as np
 import pytest
-from moirais.fn.fosamp import fosamp
+from morie.fn.fosamp import fosamp
 
 
 def test_fosamp_basic():

@@ -1,7 +1,7 @@
 """Tests for protdis.protein_disorder."""
 import numpy as np
 import pytest
-from moirais.fn.protdis import protein_disorder
+from morie.fn.protdis import protein_disorder
 
 
 def test_protdis_basic():

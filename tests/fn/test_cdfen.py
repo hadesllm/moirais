@@ -1,6 +1,6 @@
 """Tests for cdf_estimate."""
 import numpy as np
-from moirais.fn.cdfen import cdf_estimate, cdfen
+from morie.fn.cdfen import cdf_estimate, cdfen
 
 
 def test_basic():

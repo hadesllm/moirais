@@ -1,8 +1,8 @@
 """Test central_difference (cntdf)."""
 import numpy as np
 
-from moirais.fn.cntdf import central_difference, cntdf
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cntdf import central_difference, cntdf
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCentralDifference:

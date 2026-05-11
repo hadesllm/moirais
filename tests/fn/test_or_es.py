@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.or_es -- odds ratio effect size."""
+"""Tests for morie.fn.or_es -- odds ratio effect size."""
 
 import pytest
-from moirais.fn.or_es import odds_ratio
+from morie.fn.or_es import odds_ratio
 
 
 class TestOddsRatio:

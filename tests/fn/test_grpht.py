@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.grpht."""
+"""Tests for morie.fn.grpht."""
 import numpy as np
-from moirais.fn.grpht import graph_from_edges
+from morie.fn.grpht import graph_from_edges
 
 
 def test_grpht_smoke():
@@ -12,7 +12,7 @@ def test_grpht_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.grpht import cheatsheet
+    from morie.fn.grpht import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

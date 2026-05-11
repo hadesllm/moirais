@@ -1,7 +1,7 @@
 """Test wqeut."""
 import numpy as np
 import pytest
-from moirais.fn.wqeut import wqeut
+from morie.fn.wqeut import wqeut
 
 
 def test_wqeut_basic():

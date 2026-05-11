@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svpp2 -- Party position 2D (Laver-Hunt)"""
+"""Tests for morie.fn.svpp2 -- Party position 2D (Laver-Hunt)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svpp2 import party_pos_2d
+from morie.fn.svpp2 import party_pos_2d
 
 
 class TestPartyPos2d:

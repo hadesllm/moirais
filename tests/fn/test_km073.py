@@ -1,7 +1,7 @@
 """Tests for km073.kamath_ch5_pref_sigmoid_form."""
 import numpy as np
 import pytest
-from moirais.fn.km073 import kamath_ch5_pref_sigmoid_form
+from morie.fn.km073 import kamath_ch5_pref_sigmoid_form
 
 
 def test_km073_basic():

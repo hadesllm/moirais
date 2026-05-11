@@ -1,7 +1,7 @@
 """Tests for eegar -- EEG autoregressive modeling."""
 import numpy as np
-from moirais.fn.eegar import eegar
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.eegar import eegar
+from morie.fn._containers import DescriptiveResult
 
 
 def test_eegar_basic():

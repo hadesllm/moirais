@@ -1,7 +1,7 @@
 """Tests for rgpolysg.rangayyan_polysomnography."""
 import numpy as np
 import pytest
-from moirais.fn.rgpolysg import rangayyan_polysomnography
+from morie.fn.rgpolysg import rangayyan_polysomnography
 
 
 def test_rgpolysg_basic():

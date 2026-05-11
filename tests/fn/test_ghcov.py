@@ -1,7 +1,7 @@
 """Test ghcov."""
 import numpy as np
 import pytest
-from moirais.fn.ghcov import ghcov
+from morie.fn.ghcov import ghcov
 
 
 def test_ghcov_basic():

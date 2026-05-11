@@ -1,7 +1,7 @@
 """Tests for rbfmsv."""
 import numpy as np
 import pytest
-from moirais.fn.rbfmsv import rbfmsv
+from morie.fn.rbfmsv import rbfmsv
 
 
 def test_rbfmsv_basic():
@@ -27,5 +27,5 @@ def test_rbfmsv_no_data():
 
 
 def test_rbfmsv_alias():
-    from moirais.fn.rbfmsv import rbfmsv
+    from morie.fn.rbfmsv import rbfmsv
     assert rbfmsv is rbfmsv

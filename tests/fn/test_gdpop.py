@@ -1,7 +1,7 @@
 """Test gdpop."""
 import numpy as np
 import pytest
-from moirais.fn.gdpop import gdpop
+from morie.fn.gdpop import gdpop
 
 
 def test_gdpop_basic():

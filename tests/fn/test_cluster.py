@@ -1,7 +1,7 @@
 """Tests for cluster.one_stage_cluster."""
 import numpy as np
 import pytest
-from moirais.fn.cluster import one_stage_cluster
+from morie.fn.cluster import one_stage_cluster
 
 
 def test_cluster_basic():

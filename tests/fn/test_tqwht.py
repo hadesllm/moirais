@@ -1,7 +1,7 @@
 """Tests for tqwht.turboquant_walsh_hadamard_transform."""
 import numpy as np
 import pytest
-from moirais.fn.tqwht import turboquant_walsh_hadamard_transform
+from morie.fn.tqwht import turboquant_walsh_hadamard_transform
 
 
 def test_tqwht_basic():

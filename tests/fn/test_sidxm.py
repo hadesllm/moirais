@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sidxm — Single-index maximum score estimator."""
+"""Tests for morie.fn.sidxm — Single-index maximum score estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sidxm import sidxm
+from morie.fn.sidxm import sidxm
 
 
 @pytest.fixture()

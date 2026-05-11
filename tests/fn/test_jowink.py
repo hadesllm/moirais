@@ -1,7 +1,7 @@
 """Tests for jowink.joseph_winkler_interval_score."""
 import numpy as np
 import pytest
-from moirais.fn.jowink import joseph_winkler_interval_score
+from morie.fn.jowink import joseph_winkler_interval_score
 
 
 def test_jowink_basic():

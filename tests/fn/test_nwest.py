@@ -1,7 +1,7 @@
 """Tests for nwest.newey_west_hac."""
 import numpy as np
 import pytest
-from moirais.fn.nwest import newey_west_hac
+from morie.fn.nwest import newey_west_hac
 
 
 def test_nwest_basic():

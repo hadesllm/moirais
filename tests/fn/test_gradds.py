@@ -1,7 +1,7 @@
 """Tests for gradds.gradient_descent."""
 import numpy as np
 import pytest
-from moirais.fn.gradds import gradient_descent
+from morie.fn.gradds import gradient_descent
 
 
 def test_gradds_basic():

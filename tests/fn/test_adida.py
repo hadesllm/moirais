@@ -1,7 +1,7 @@
 """Tests for adida.adida."""
 import numpy as np
 import pytest
-from moirais.fn.adida import adida
+from morie.fn.adida import adida
 
 
 def test_adida_basic():

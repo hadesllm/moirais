@@ -1,7 +1,7 @@
 """Tests for liouB.liouville_test."""
 import numpy as np
 import pytest
-from moirais.fn.liouB import liouville_test
+from morie.fn.liouB import liouville_test
 
 
 def test_liouB_basic():

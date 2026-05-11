@@ -1,6 +1,6 @@
 """Tests for durbw.py - Durbin-Watson statistic."""
 import numpy as np
-from moirais.fn.durbw import durbin_watson_stat_fn, durbw
+from morie.fn.durbw import durbin_watson_stat_fn, durbw
 
 
 def test_durbw_returns_result():

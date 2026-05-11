@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pptst — Phillips-Perron unit root test."""
+"""Tests for morie.fn.pptst — Phillips-Perron unit root test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pptst import pp_test, pptst
+from morie.fn.pptst import pp_test, pptst
 
 
 def _ar1(phi: float, n: int, seed: int = 0) -> np.ndarray:

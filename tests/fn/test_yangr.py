@@ -1,7 +1,7 @@
 """Tests for yangr.yang_realized_relationship."""
 import numpy as np
 import pytest
-from moirais.fn.yangr import yang_realized_relationship
+from morie.fn.yangr import yang_realized_relationship
 
 
 def test_yangr_basic():

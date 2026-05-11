@@ -1,7 +1,7 @@
 """Tests for micrR.microsoft_sr."""
 import numpy as np
 import pytest
-from moirais.fn.micrR import microsoft_sr
+from morie.fn.micrR import microsoft_sr
 
 
 def test_micrR_basic():

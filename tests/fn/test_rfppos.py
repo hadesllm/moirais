@@ -1,7 +1,7 @@
 """Tests for rfppos.reactive_pose_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rfppos import reactive_pose_filter
+from morie.fn.rfppos import reactive_pose_filter
 
 
 def test_rfppos_basic():

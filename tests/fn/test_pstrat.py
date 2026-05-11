@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.pstrat import pstrat, poststratification_weights
+from morie.fn.pstrat import pstrat, poststratification_weights
 
 
 def test_pstrat_returns_series():

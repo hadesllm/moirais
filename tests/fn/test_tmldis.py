@@ -1,7 +1,7 @@
 """Tests for tmldis.tmle_disparity."""
 import numpy as np
 import pytest
-from moirais.fn.tmldis import tmle_disparity
+from morie.fn.tmldis import tmle_disparity
 
 
 def test_tmldis_basic():

@@ -1,7 +1,7 @@
 """Tests for dqnv.deep_q_network."""
 import numpy as np
 import pytest
-from moirais.fn.dqnv import deep_q_network
+from morie.fn.dqnv import deep_q_network
 
 
 def test_dqnv_basic():

@@ -1,7 +1,7 @@
 """Tests for gb_clt.gibbons_clt."""
 import numpy as np
 import pytest
-from moirais.fn.gb_clt import gibbons_clt
+from morie.fn.gb_clt import gibbons_clt
 
 
 def test_gb_clt_basic():

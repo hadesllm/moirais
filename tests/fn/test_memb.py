@@ -1,7 +1,7 @@
 """Tests for memb.membership_inference."""
 import numpy as np
 import pytest
-from moirais.fn.memb import membership_inference
+from morie.fn.memb import membership_inference
 
 
 def test_memb_basic():

@@ -1,7 +1,7 @@
 """Tests for km044.kamath_ch3_prompt_search_argmax."""
 import numpy as np
 import pytest
-from moirais.fn.km044 import kamath_ch3_prompt_search_argmax
+from morie.fn.km044 import kamath_ch3_prompt_search_argmax
 
 
 def test_km044_basic():

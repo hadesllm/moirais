@@ -1,7 +1,7 @@
 """Tests for rng050.rangayyan_ch3_frequency_response_from_laplace."""
 import numpy as np
 import pytest
-from moirais.fn.rng050 import rangayyan_ch3_frequency_response_from_laplace
+from morie.fn.rng050 import rangayyan_ch3_frequency_response_from_laplace
 
 
 def test_rng050_basic():

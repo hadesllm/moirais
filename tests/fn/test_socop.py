@@ -1,7 +1,7 @@
 """Test socop."""
 import numpy as np
 import pytest
-from moirais.fn.socop import socop
+from morie.fn.socop import socop
 
 
 def test_socop_basic():

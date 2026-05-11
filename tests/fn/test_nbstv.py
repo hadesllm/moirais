@@ -1,7 +1,7 @@
 """Test nbstv."""
 import numpy as np
 import pytest
-from moirais.fn.nbstv import nbstv
+from morie.fn.nbstv import nbstv
 
 
 def test_nbstv_basic():

@@ -1,5 +1,5 @@
 """Tests for bexpr (boolean expression evaluator)."""
-from moirais.fn.bexpr import boolean_eval
+from morie.fn.bexpr import boolean_eval
 
 
 def test_boolean_eval_and():

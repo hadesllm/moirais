@@ -1,7 +1,7 @@
 """Tests for plncF.planck_function."""
 import numpy as np
 import pytest
-from moirais.fn.plncF import planck_function
+from morie.fn.plncF import planck_function
 
 
 def test_plncF_basic():

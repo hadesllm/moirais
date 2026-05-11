@@ -1,7 +1,7 @@
 """Tests for vpc.variance_partition_coefficient."""
 import numpy as np
 import pytest
-from moirais.fn.vpc import variance_partition_coefficient
+from morie.fn.vpc import variance_partition_coefficient
 
 
 def test_vpc_basic():

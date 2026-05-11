@@ -1,7 +1,7 @@
 """Test sagcr."""
 import numpy as np
 import pytest
-from moirais.fn.sagcr import sagcr
+from morie.fn.sagcr import sagcr
 
 
 def test_sagcr_basic():

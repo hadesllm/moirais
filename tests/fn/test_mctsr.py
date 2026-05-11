@@ -1,7 +1,7 @@
 """Tests for mctsr.mcts_rollout."""
 import numpy as np
 import pytest
-from moirais.fn.mctsr import mcts_rollout
+from morie.fn.mctsr import mcts_rollout
 
 
 def test_mctsr_basic():

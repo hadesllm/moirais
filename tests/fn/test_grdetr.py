@@ -1,7 +1,7 @@
 """Tests for grdetr.geron_detr_hungarian_matching."""
 import numpy as np
 import pytest
-from moirais.fn.grdetr import geron_detr_hungarian_matching
+from morie.fn.grdetr import geron_detr_hungarian_matching
 
 
 def test_grdetr_basic():

@@ -1,7 +1,7 @@
 """Tests for lnfrm.lognormal_frailty."""
 import numpy as np
 import pytest
-from moirais.fn.lnfrm import lognormal_frailty
+from morie.fn.lnfrm import lognormal_frailty
 
 
 def test_lnfrm_basic():

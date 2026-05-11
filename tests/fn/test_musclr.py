@@ -1,7 +1,7 @@
 """Tests for musclr.muscle_msa."""
 import numpy as np
 import pytest
-from moirais.fn.musclr import muscle_msa
+from morie.fn.musclr import muscle_msa
 
 
 def test_musclr_basic():

@@ -1,7 +1,7 @@
 """Tests for tmlinf.tmle_inference."""
 import numpy as np
 import pytest
-from moirais.fn.tmlinf import tmle_inference
+from morie.fn.tmlinf import tmle_inference
 
 
 def test_tmlinf_basic():

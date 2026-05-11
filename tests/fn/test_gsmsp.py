@@ -1,7 +1,7 @@
 """Test gsmsp."""
 import numpy as np
 import pytest
-from moirais.fn.gsmsp import gsmsp
+from morie.fn.gsmsp import gsmsp
 
 
 def test_gsmsp_basic():

@@ -1,7 +1,7 @@
 """Test fowndf."""
 import numpy as np
 import pytest
-from moirais.fn.fowndf import fowndf
+from morie.fn.fowndf import fowndf
 
 
 def test_fowndf_basic():

@@ -1,7 +1,7 @@
 """Test gibsp."""
 import numpy as np
 import pytest
-from moirais.fn.gibsp import gibsp
+from morie.fn.gibsp import gibsp
 
 
 def test_gibsp_basic():

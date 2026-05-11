@@ -1,7 +1,7 @@
 """Tests for bayth.bayes_theorem_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.bayth import bayes_theorem_genomic
+from morie.fn.bayth import bayes_theorem_genomic
 
 
 def test_bayth_basic():

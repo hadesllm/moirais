@@ -1,7 +1,7 @@
 """Tests for coxbsk.cox_breslow_step."""
 import numpy as np
 import pytest
-from moirais.fn.coxbsk import cox_breslow_step
+from morie.fn.coxbsk import cox_breslow_step
 
 
 def test_coxbsk_basic():

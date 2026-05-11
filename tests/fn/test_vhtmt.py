@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vhtmt — HTMT ratio."""
+"""Tests for morie.fn.vhtmt — HTMT ratio."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.vhtmt import validity_htmt
+from morie.fn.vhtmt import validity_htmt
 
 
 class TestValidityHtmt:

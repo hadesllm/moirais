@@ -1,7 +1,7 @@
 """Tests for gb_wrc.gibbons_runs_critical."""
 import numpy as np
 import pytest
-from moirais.fn.gb_wrc import gibbons_runs_critical
+from morie.fn.gb_wrc import gibbons_runs_critical
 
 
 def test_gb_wrc_basic():

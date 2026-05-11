@@ -1,7 +1,7 @@
 """Tests for hmcrd.geron_credit_assignment."""
 import numpy as np
 import pytest
-from moirais.fn.hmcrd import geron_credit_assignment
+from morie.fn.hmcrd import geron_credit_assignment
 
 
 def test_hmcrd_basic():

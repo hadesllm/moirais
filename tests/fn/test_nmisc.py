@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.nmisc -- Normalized mutual information."""
+"""Tests for morie.fn.nmisc -- Normalized mutual information."""
 
 import numpy as np
-from moirais.fn.nmisc import nmi, nmisc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nmisc import nmi, nmisc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNmi:

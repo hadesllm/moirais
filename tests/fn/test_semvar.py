@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.semvar."""
+"""Tests for morie.fn.semvar."""
 import numpy as np
 import pytest
-from moirais.fn.semvar import semvar
+from morie.fn.semvar import semvar
 
 
 class TestSemvar:

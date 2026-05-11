@@ -1,7 +1,7 @@
 """Tests for esllar.esl_least_angle_reg."""
 import numpy as np
 import pytest
-from moirais.fn.esllar import esl_least_angle_reg
+from morie.fn.esllar import esl_least_angle_reg
 
 
 def test_esllar_basic():

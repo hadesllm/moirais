@@ -1,7 +1,7 @@
 """Tests for lisgst.local_getis_g."""
 import numpy as np
 import pytest
-from moirais.fn.lisgst import local_getis_g
+from morie.fn.lisgst import local_getis_g
 
 
 def test_lisgst_basic():

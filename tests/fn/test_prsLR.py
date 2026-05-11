@@ -1,7 +1,7 @@
 """Tests for prsLR.lr_parser."""
 import numpy as np
 import pytest
-from moirais.fn.prsLR import lr_parser
+from morie.fn.prsLR import lr_parser
 
 
 def test_prsLR_basic():

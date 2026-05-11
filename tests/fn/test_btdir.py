@@ -1,7 +1,7 @@
 """Tests for btdir.boot_dirichlet_weights."""
 import numpy as np
 import pytest
-from moirais.fn.btdir import boot_dirichlet_weights
+from morie.fn.btdir import boot_dirichlet_weights
 
 
 def test_btdir_basic():

@@ -1,7 +1,7 @@
 """Tests for sbpst.stick_breaking_post."""
 import numpy as np
 import pytest
-from moirais.fn.sbpst import stick_breaking_post
+from morie.fn.sbpst import stick_breaking_post
 
 
 def test_sbpst_basic():

@@ -1,7 +1,7 @@
 """Tests for gb733.gibbons_linrank_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.gb733 import gibbons_linrank_covariance
+from morie.fn.gb733 import gibbons_linrank_covariance
 
 
 def test_gb733_basic():

@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.ortho -- Neyman-orthogonal score."""
+"""Tests for morie.fn.ortho -- Neyman-orthogonal score."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.ortho import orthogonal_score, ortho
-from moirais.fn._containers import ESRes
+from morie.fn.ortho import orthogonal_score, ortho
+from morie.fn._containers import ESRes
 
 
 class TestOrthogonalScore:

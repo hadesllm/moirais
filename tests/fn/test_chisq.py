@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.chisq -- Chi-square test."""
+"""Tests for morie.fn.chisq -- Chi-square test."""
 
 import numpy as np
 import pytest
-from moirais.fn.chisq import chi_square_test
+from morie.fn.chisq import chi_square_test
 
 
 class TestChiSquareTest:

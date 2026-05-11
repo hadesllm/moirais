@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.svd_ — truncated SVD."""
+"""Tests for morie.fn.svd_ — truncated SVD."""
 import numpy as np
 import pytest
-from moirais.fn.svd_ import truncated_svd
+from morie.fn.svd_ import truncated_svd
 
 
 class TestTruncatedSVD:

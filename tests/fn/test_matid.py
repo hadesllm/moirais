@@ -1,7 +1,7 @@
 """Test matid."""
 import numpy as np
 import pytest
-from moirais.fn.matid import matid
+from morie.fn.matid import matid
 
 
 def test_matid_basic():

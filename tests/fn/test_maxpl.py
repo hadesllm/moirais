@@ -1,7 +1,7 @@
 """Tests for maxpl.max_pooling."""
 import numpy as np
 import pytest
-from moirais.fn.maxpl import max_pooling
+from morie.fn.maxpl import max_pooling
 
 
 def test_maxpl_basic():

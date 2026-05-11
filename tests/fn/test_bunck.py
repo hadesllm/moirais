@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bunck -- Bunching estimator."""
+"""Tests for morie.fn.bunck -- Bunching estimator."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.bunck import bunching, bunck
-from moirais.fn._containers import ESRes
+from morie.fn.bunck import bunching, bunck
+from morie.fn._containers import ESRes
 
 
 class TestBunching:

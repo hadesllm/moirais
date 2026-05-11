@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sir_d — SIR with demography."""
+"""Tests for morie.fn.sir_d — SIR with demography."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sir_d import sir_demography
+from morie.fn.sir_d import sir_demography
 
 
 class TestSIRDemography:

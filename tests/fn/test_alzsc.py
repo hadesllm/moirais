@@ -1,7 +1,7 @@
 """Tests for alzsc.alammar_zero_shot_classification."""
 import numpy as np
 import pytest
-from moirais.fn.alzsc import alammar_zero_shot_classification
+from morie.fn.alzsc import alammar_zero_shot_classification
 
 
 def test_alzsc_basic():

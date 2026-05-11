@@ -1,7 +1,7 @@
 """Tests for rng146.rangayyan_ch3_optimal_wiener_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rng146 import rangayyan_ch3_optimal_wiener_filter
+from morie.fn.rng146 import rangayyan_ch3_optimal_wiener_filter
 
 
 def test_rng146_basic():

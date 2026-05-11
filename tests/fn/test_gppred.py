@@ -1,7 +1,7 @@
 """Tests for gppred."""
 import numpy as np
 import pytest
-from moirais.fn.gppred import gppred
+from morie.fn.gppred import gppred
 
 
 def test_gppred_basic():
@@ -27,5 +27,5 @@ def test_gppred_no_data():
 
 
 def test_gppred_alias():
-    from moirais.fn.gppred import gppred
+    from morie.fn.gppred import gppred
     assert gppred is gppred

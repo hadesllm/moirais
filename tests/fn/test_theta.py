@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.theta — Watterson's theta."""
+"""Tests for morie.fn.theta — Watterson's theta."""
 import pytest
-from moirais.fn.theta import watterson_theta
+from morie.fn.theta import watterson_theta
 
 
 class TestWattersonTheta:

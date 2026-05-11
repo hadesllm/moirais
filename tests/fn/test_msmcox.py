@@ -1,7 +1,7 @@
 """Tests for msmcox.msm_cox_marginal."""
 import numpy as np
 import pytest
-from moirais.fn.msmcox import msm_cox_marginal
+from morie.fn.msmcox import msm_cox_marginal
 
 
 def test_msmcox_basic():

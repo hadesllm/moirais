@@ -1,7 +1,7 @@
 """Test cscld."""
 import numpy as np
 import pytest
-from moirais.fn.cscld import cscld
+from morie.fn.cscld import cscld
 
 
 def test_cscld_basic():

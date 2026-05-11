@@ -1,7 +1,7 @@
 """Tests for esllso.esl_lasso."""
 import numpy as np
 import pytest
-from moirais.fn.esllso import esl_lasso
+from morie.fn.esllso import esl_lasso
 
 
 def test_esllso_basic():

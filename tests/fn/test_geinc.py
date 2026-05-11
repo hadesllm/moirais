@@ -1,7 +1,7 @@
 """Test geinc."""
 import numpy as np
 import pytest
-from moirais.fn.geinc import geinc
+from morie.fn.geinc import geinc
 
 
 def test_geinc_basic():

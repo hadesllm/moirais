@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.firth import firth_logistic
+from morie.fn.firth import firth_logistic
 
 
 def test_firth_basic():

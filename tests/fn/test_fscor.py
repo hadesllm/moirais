@@ -1,6 +1,6 @@
 """Tests for f_score."""
 import pytest
-from moirais.fn.fscor import f_score, fscor
+from morie.fn.fscor import f_score, fscor
 
 
 def test_beta1():

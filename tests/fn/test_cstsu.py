@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cstsu — custody substance flag by age."""
+"""Tests for morie.fn.cstsu — custody substance flag by age."""
 
 import pandas as pd
-from moirais.fn.cstsu import custody_substance
+from morie.fn.cstsu import custody_substance
 
 
 class TestCustodySubstance:

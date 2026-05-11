@@ -1,7 +1,7 @@
 """Tests for voldoc.vol_decomposed_realised."""
 import numpy as np
 import pytest
-from moirais.fn.voldoc import vol_decomposed_realised
+from morie.fn.voldoc import vol_decomposed_realised
 
 
 def test_voldoc_basic():

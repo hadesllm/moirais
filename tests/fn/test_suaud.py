@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.suaud -- AUDIT score."""
+"""Tests for morie.fn.suaud -- AUDIT score."""
 
 import pytest
-from moirais.fn.suaud import audit_score
+from morie.fn.suaud import audit_score
 
 
 class TestAuditScore:

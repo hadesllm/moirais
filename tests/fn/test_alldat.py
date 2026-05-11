@@ -1,7 +1,7 @@
 """Tests for alldat.alammar_lda_topic_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.alldat import alammar_lda_topic_distribution
+from morie.fn.alldat import alammar_lda_topic_distribution
 
 
 def test_alldat_basic():

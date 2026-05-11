@@ -1,7 +1,7 @@
 """Tests for kpmnsv.kaplan_meier_survival."""
 import numpy as np
 import pytest
-from moirais.fn.kpmnsv import kaplan_meier_survival
+from morie.fn.kpmnsv import kaplan_meier_survival
 
 
 def test_kpmnsv_basic():

@@ -1,7 +1,7 @@
 """Tests for wsdt2d.wasserstein_p_d."""
 import numpy as np
 import pytest
-from moirais.fn.wsdt2d import wasserstein_p_d
+from morie.fn.wsdt2d import wasserstein_p_d
 
 
 def test_wsdt2d_basic():

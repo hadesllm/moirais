@@ -1,7 +1,7 @@
 """Test vmcub."""
 import numpy as np
 import pytest
-from moirais.fn.vmcub import vmcub
+from morie.fn.vmcub import vmcub
 
 
 def test_vmcub_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.prgef — program effect."""
+"""Tests for morie.fn.prgef — program effect."""
 
 import pytest
 import numpy as np
-from moirais.fn.prgef import program_effect
-from moirais.fn._containers import ESRes
+from morie.fn.prgef import program_effect
+from morie.fn._containers import ESRes
 
 
 class TestProgramEffect:

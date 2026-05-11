@@ -1,7 +1,7 @@
 """Tests for ptmcmc.parallel_tempering."""
 import numpy as np
 import pytest
-from moirais.fn.ptmcmc import parallel_tempering
+from morie.fn.ptmcmc import parallel_tempering
 
 
 def test_ptmcmc_basic():

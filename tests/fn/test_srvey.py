@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.srvey -- survey prevalence."""
+"""Tests for morie.fn.srvey -- survey prevalence."""
 
 import numpy as np
 import pytest
-from moirais.fn.srvey import survey_prevalence
+from morie.fn.srvey import survey_prevalence
 
 
 class TestSurveyPrevalence:

@@ -1,7 +1,7 @@
 """Tests for volgar.vol_garch11_fit."""
 import numpy as np
 import pytest
-from moirais.fn.volgar import vol_garch11_fit
+from morie.fn.volgar import vol_garch11_fit
 
 
 def test_volgar_basic():

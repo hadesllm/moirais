@@ -1,7 +1,7 @@
 """Tests for topDn.top_down."""
 import numpy as np
 import pytest
-from moirais.fn.topDn import top_down
+from morie.fn.topDn import top_down
 
 
 def test_topDn_basic():

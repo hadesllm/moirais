@@ -1,7 +1,7 @@
 """Tests for nesterv.nesterov_accelerated."""
 import numpy as np
 import pytest
-from moirais.fn.nesterv import nesterov_accelerated
+from morie.fn.nesterv import nesterov_accelerated
 
 
 def test_nesterv_basic():

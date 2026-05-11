@@ -1,7 +1,7 @@
 """Tests for ukfF.unscented_kalman."""
 import numpy as np
 import pytest
-from moirais.fn.ukfF import unscented_kalman
+from morie.fn.ukfF import unscented_kalman
 
 
 def test_ukfF_basic():

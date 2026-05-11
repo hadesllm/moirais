@@ -1,7 +1,7 @@
 """Test fosdx."""
 import numpy as np
 import pytest
-from moirais.fn.fosdx import fosdx
+from morie.fn.fosdx import fosdx
 
 
 def test_fosdx_basic():

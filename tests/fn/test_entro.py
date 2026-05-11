@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.entro — Shannon entropy."""
+"""Tests for morie.fn.entro — Shannon entropy."""
 import numpy as np
 import pytest
-from moirais.fn.entro import entropy
+from morie.fn.entro import entropy
 
 
 class TestEntropy:

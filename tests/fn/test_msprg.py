@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msprg -- Generalized Procrustes analysis"""
+"""Tests for morie.fn.msprg -- Generalized Procrustes analysis"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msprg import procrustes_gen
+from morie.fn.msprg import procrustes_gen
 
 
 class TestProcrustesGen:

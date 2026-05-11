@@ -1,7 +1,7 @@
 """Tests for bezout.bezout."""
 import numpy as np
 import pytest
-from moirais.fn.bezout import bezout
+from morie.fn.bezout import bezout
 
 
 def test_bezout_basic():

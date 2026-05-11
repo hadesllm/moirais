@@ -1,7 +1,7 @@
 """Test gdpty."""
 import numpy as np
 import pytest
-from moirais.fn.gdpty import gdpty
+from morie.fn.gdpty import gdpty
 
 
 def test_gdpty_basic():

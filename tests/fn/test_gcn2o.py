@@ -1,7 +1,7 @@
 """Test gcn2o."""
 import numpy as np
 import pytest
-from moirais.fn.gcn2o import gcn2o
+from morie.fn.gcn2o import gcn2o
 
 
 def test_gcn2o_basic():

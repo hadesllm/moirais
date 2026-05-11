@@ -1,7 +1,7 @@
 """Tests for mafcl.maf_calculation."""
 import numpy as np
 import pytest
-from moirais.fn.mafcl import maf_calculation
+from morie.fn.mafcl import maf_calculation
 
 
 def test_mafcl_basic():

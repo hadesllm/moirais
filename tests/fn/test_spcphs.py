@@ -1,7 +1,7 @@
 """Tests for spcphs."""
 import numpy as np
 import pytest
-from moirais.fn.spcphs import spcphs
+from morie.fn.spcphs import spcphs
 
 
 def test_spcphs_basic():
@@ -27,5 +27,5 @@ def test_spcphs_no_data():
 
 
 def test_spcphs_alias():
-    from moirais.fn.spcphs import spcphs
+    from morie.fn.spcphs import spcphs
     assert spcphs is spcphs

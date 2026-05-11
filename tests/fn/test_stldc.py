@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.stldc -- STL decomposition."""
+"""Tests for morie.fn.stldc -- STL decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.stldc import stl_decompose
+from morie.fn.stldc import stl_decompose
 
 
 class TestSTL:
@@ -18,5 +18,5 @@ class TestSTL:
             stl_decompose(np.ones(10), period=12)
 
     def test_cheatsheet(self):
-        from moirais.fn.stldc import cheatsheet
+        from morie.fn.stldc import cheatsheet
         assert isinstance(cheatsheet(), str)

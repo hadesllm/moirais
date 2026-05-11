@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.efa2 -- optimal number of factors."""
+"""Tests for morie.fn.efa2 -- optimal number of factors."""
 
-from moirais.fn.efa2 import efa_nfactors
+from morie.fn.efa2 import efa_nfactors
 
 
 class TestEfaNfactors:

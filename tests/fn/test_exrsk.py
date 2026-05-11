@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.exrsk — Excess risk."""
+"""Tests for morie.fn.exrsk — Excess risk."""
 
 import pytest
 
-from moirais.fn.exrsk import excess_risk
+from morie.fn.exrsk import excess_risk
 
 
 class TestExcessRisk:

@@ -1,7 +1,7 @@
 """Tests for otdiv.ot_sinkhorn_divergence."""
 import numpy as np
 import pytest
-from moirais.fn.otdiv import ot_sinkhorn_divergence
+from morie.fn.otdiv import ot_sinkhorn_divergence
 
 
 def test_otdiv_basic():

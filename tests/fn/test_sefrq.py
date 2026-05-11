@@ -1,7 +1,7 @@
 """Tests for sefrq.py - spectral edge frequency."""
 import numpy as np
 import pytest
-from moirais.fn.sefrq import spectral_edge_freq, sefrq
+from morie.fn.sefrq import spectral_edge_freq, sefrq
 
 
 def test_spectral_edge_freq_returns_descriptive_result():

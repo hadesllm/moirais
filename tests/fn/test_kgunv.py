@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgunv -- Universal kriging variance"""
+"""Tests for morie.fn.kgunv -- Universal kriging variance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgunv import uk_variance
+from morie.fn.kgunv import uk_variance
 
 
 class TestUkVariance:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsids -- Modified Shepard interpolation"""
+"""Tests for morie.fn.zsids -- Modified Shepard interpolation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsids import idw_shepard
+from morie.fn.zsids import idw_shepard
 
 
 class TestIdwShepard:

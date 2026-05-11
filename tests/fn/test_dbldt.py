@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dbldt — double-threshold detection."""
+"""Tests for morie.fn.dbldt — double-threshold detection."""
 import numpy as np
 import pytest
 
-from moirais.fn.dbldt import double_threshold, dbldt
+from morie.fn.dbldt import double_threshold, dbldt
 
 
 def test_single_event():

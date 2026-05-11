@@ -1,7 +1,7 @@
 """Tests for gh_py_univ_seq.ghosal_py_universal_sequence."""
 import numpy as np
 import pytest
-from moirais.fn.gh_py_univ_seq import ghosal_py_universal_sequence
+from morie.fn.gh_py_univ_seq import ghosal_py_universal_sequence
 
 
 def test_gh_py_univ_seq_basic():

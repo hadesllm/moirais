@@ -1,7 +1,7 @@
 """Tests for meplt.mean_excess."""
 import numpy as np
 import pytest
-from moirais.fn.meplt import mean_excess
+from morie.fn.meplt import mean_excess
 
 
 def test_meplt_basic():

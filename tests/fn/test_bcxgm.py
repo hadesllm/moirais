@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bcxgm — Box-Cox transformation model via GMM."""
+"""Tests for morie.fn.bcxgm — Box-Cox transformation model via GMM."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bcxgm import bcxgm
+from morie.fn.bcxgm import bcxgm
 
 
 @pytest.fixture()

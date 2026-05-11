@@ -1,7 +1,7 @@
 """Tests for ipwsrv.ipw_with_survey_weights."""
 import numpy as np
 import pytest
-from moirais.fn.ipwsrv import ipw_with_survey_weights
+from morie.fn.ipwsrv import ipw_with_survey_weights
 
 
 def test_ipwsrv_basic():

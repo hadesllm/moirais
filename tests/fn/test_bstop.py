@@ -1,6 +1,6 @@
 """Tests for bstop (BST operations)."""
 import numpy as np
-from moirais.fn.bstop import bst_operations
+from morie.fn.bstop import bst_operations
 
 
 def test_bst_inorder():

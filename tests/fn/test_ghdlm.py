@@ -1,7 +1,7 @@
 """Test ghdlm."""
 import numpy as np
 import pytest
-from moirais.fn.ghdlm import ghdlm
+from morie.fn.ghdlm import ghdlm
 
 
 def test_ghdlm_basic():

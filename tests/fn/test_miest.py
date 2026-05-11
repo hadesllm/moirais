@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.miest -- MI effect sizes."""
+"""Tests for morie.fn.miest -- MI effect sizes."""
 
 import pandas as pd
-from moirais.fn.miest import mi_effect_size
+from morie.fn.miest import mi_effect_size
 
 
 class TestMiEffectSize:

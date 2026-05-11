@@ -1,7 +1,7 @@
 """Tests for hmpg.geron_policy_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.hmpg import geron_policy_gradient
+from morie.fn.hmpg import geron_policy_gradient
 
 
 def test_hmpg_basic():

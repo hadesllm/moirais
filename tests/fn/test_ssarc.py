@@ -1,6 +1,6 @@
 """Tests for ssarc.py - SSA reconstruction."""
 import numpy as np
-from moirais.fn.ssarc import ssa_reconstruct_fn, ssarc
+from morie.fn.ssarc import ssa_reconstruct_fn, ssarc
 
 
 def test_ssarc_returns_result():

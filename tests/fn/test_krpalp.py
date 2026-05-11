@@ -1,7 +1,7 @@
 """Tests for krpalp.krippendorff_alpha."""
 import numpy as np
 import pytest
-from moirais.fn.krpalp import krippendorff_alpha
+from morie.fn.krpalp import krippendorff_alpha
 
 
 def test_krpalp_basic():

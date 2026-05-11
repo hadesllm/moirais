@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pakmd."""
+"""Tests for morie.fn.pakmd."""
 
 import numpy as np
 import pytest
-from moirais.fn.pakmd import pakmd
+from morie.fn.pakmd import pakmd
 
 
 class TestPakmd:

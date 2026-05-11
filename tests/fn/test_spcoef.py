@@ -1,7 +1,7 @@
 """Tests for spcoef.spearmans_rho_copula."""
 import numpy as np
 import pytest
-from moirais.fn.spcoef import spearmans_rho_copula
+from morie.fn.spcoef import spearmans_rho_copula
 
 
 def test_spcoef_basic():

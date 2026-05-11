@@ -1,7 +1,7 @@
 """Test kaiser_window (wnksr)."""
 import numpy as np
-from moirais.fn.wnksr import kaiser_window, wnksr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wnksr import kaiser_window, wnksr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWnksr:

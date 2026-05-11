@@ -4,7 +4,7 @@ Tests for bisection method.
 
 import numpy as np
 import pytest
-from moirais.fn.bsctn import bsctn
+from morie.fn.bsctn import bsctn
 
 
 class TestBsctn:

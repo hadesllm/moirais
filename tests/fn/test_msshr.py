@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msshr -- Shepard residuals"""
+"""Tests for morie.fn.msshr -- Shepard residuals"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msshr import shepard_resid
+from morie.fn.msshr import shepard_resid
 
 
 class TestShepardResid:

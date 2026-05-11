@@ -1,7 +1,7 @@
 """Test gtest."""
 import numpy as np
 import pytest
-from moirais.fn.gtest import gtest
+from morie.fn.gtest import gtest
 
 
 def test_gtest_basic():

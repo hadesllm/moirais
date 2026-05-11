@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gwreg — GWR."""
+"""Tests for morie.fn.gwreg — GWR."""
 import numpy as np
-from moirais.fn.gwreg import gwr
+from morie.fn.gwreg import gwr
 
 
 class TestGWR:

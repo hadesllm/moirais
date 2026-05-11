@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.poppyr -- population pyramid."""
+"""Tests for morie.fn.poppyr -- population pyramid."""
 
 import numpy as np
-from moirais.fn.poppyr import population_pyramid
+from morie.fn.poppyr import population_pyramid
 
 
 class TestPopulationPyramid:

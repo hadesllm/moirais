@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.srd -- Sharp RDD."""
+"""Tests for morie.fn.srd -- Sharp RDD."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.srd import sharp_rd, srd
-from moirais.fn._containers import RegressionResult
+from morie.fn.srd import sharp_rd, srd
+from morie.fn._containers import RegressionResult
 
 
 class TestSharpRD:

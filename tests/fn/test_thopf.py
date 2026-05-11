@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.thopf — Hopf fibration."""
+"""Tests for morie.fn.thopf — Hopf fibration."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.thopf import hopf_fibration
+from morie.fn.thopf import hopf_fibration
 
 
 class TestHopfFibration:

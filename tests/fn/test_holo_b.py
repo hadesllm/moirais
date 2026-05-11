@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.holo_b -- box plot."""
+"""Tests for morie.fn.holo_b -- box plot."""
 
 import numpy as np
 import pytest
@@ -6,7 +6,7 @@ import pytest
 plt = pytest.importorskip("matplotlib.pyplot")
 pd = pytest.importorskip("pandas")
 
-from moirais.fn.holo_b import holo_box
+from morie.fn.holo_b import holo_box
 
 
 class TestHoloBox:

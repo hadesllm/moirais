@@ -1,7 +1,7 @@
 """Test vmnug."""
 import numpy as np
 import pytest
-from moirais.fn.vmnug import vmnug
+from morie.fn.vmnug import vmnug
 
 
 def test_vmnug_basic():

@@ -1,7 +1,7 @@
 """Test rdsim."""
 import numpy as np
 import pytest
-from moirais.fn.rdsim import rdsim
+from morie.fn.rdsim import rdsim
 
 
 def test_rdsim_basic():

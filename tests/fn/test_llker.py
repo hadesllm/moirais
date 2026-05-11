@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.llker — Local linear kernel regression."""
+"""Tests for morie.fn.llker — Local linear kernel regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.llker import llker
+from morie.fn.llker import llker
 
 
 @pytest.fixture()
@@ -63,7 +63,7 @@ def test_boundary_bias_less_than_nw():
     x = rng.uniform(0, 5, 150)
     y = x ** 2 + rng.normal(0, 0.5, 150)
     x_boundary = np.array([0.1, 4.9])
-    from moirais.fn.nwker import nwker
+    from morie.fn.nwker import nwker
     nw = nwker(x, y, x_eval=x_boundary, bandwidth=0.5)
     ll = llker(x, y, x_eval=x_boundary, bandwidth=0.5)
     true_vals = x_boundary ** 2

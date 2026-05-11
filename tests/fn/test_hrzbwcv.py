@@ -1,7 +1,7 @@
 """Tests for hrzbwcv.horowitz_bw_cv_sim."""
 import numpy as np
 import pytest
-from moirais.fn.hrzbwcv import horowitz_bw_cv_sim
+from morie.fn.hrzbwcv import horowitz_bw_cv_sim
 
 
 def test_hrzbwcv_basic():

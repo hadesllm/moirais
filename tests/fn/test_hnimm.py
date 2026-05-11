@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hnimm -- herd immunity threshold."""
+"""Tests for morie.fn.hnimm -- herd immunity threshold."""
 
 import pytest
-from moirais.fn.hnimm import herd_immunity_threshold
+from morie.fn.hnimm import herd_immunity_threshold
 
 
 class TestHerdImmunity:

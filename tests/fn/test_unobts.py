@@ -1,7 +1,7 @@
 """Tests for unobts.unobserved_components."""
 import numpy as np
 import pytest
-from moirais.fn.unobts import unobserved_components
+from morie.fn.unobts import unobserved_components
 
 
 def test_unobts_basic():

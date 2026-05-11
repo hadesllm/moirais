@@ -1,7 +1,7 @@
 """Tests for survrsf.random_survival_forest."""
 import numpy as np
 import pytest
-from moirais.fn.survrsf import random_survival_forest
+from morie.fn.survrsf import random_survival_forest
 
 
 def test_survrsf_basic():

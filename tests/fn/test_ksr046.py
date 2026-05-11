@@ -1,7 +1,7 @@
 """Tests for ksr046.kosorok_ch2_z_estimator_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.ksr046 import kosorok_ch2_z_estimator_consistency
+from morie.fn.ksr046 import kosorok_ch2_z_estimator_consistency
 
 
 def test_ksr046_basic():

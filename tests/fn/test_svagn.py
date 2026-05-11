@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svagn -- 1D agenda setting equilibrium"""
+"""Tests for morie.fn.svagn -- 1D agenda setting equilibrium"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svagn import agenda_1d
+from morie.fn.svagn import agenda_1d
 
 
 class TestAgenda1d:

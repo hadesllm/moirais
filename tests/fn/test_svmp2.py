@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svmp2 -- Multi-party 2D equilibrium"""
+"""Tests for morie.fn.svmp2 -- Multi-party 2D equilibrium"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svmp2 import multiparty_2d
+from morie.fn.svmp2 import multiparty_2d
 
 
 class TestMultiparty2d:

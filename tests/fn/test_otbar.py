@@ -1,7 +1,7 @@
 """Tests for otbar.ot_barycenter_fixed."""
 import numpy as np
 import pytest
-from moirais.fn.otbar import ot_barycenter_fixed
+from morie.fn.otbar import ot_barycenter_fixed
 
 
 def test_otbar_basic():

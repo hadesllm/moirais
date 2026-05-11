@@ -1,7 +1,7 @@
 """Test mtpgr."""
 import numpy as np
 import pytest
-from moirais.fn.mtpgr import mtpgr
+from morie.fn.mtpgr import mtpgr
 
 
 def test_mtpgr_basic():

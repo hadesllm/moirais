@@ -1,7 +1,7 @@
 """Tests for baygsl.gibbs_slice."""
 import numpy as np
 import pytest
-from moirais.fn.baygsl import gibbs_slice
+from morie.fn.baygsl import gibbs_slice
 
 
 def test_baygsl_basic():

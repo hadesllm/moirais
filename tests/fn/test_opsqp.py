@@ -1,7 +1,7 @@
 """Test opsqp."""
 import numpy as np
 import pytest
-from moirais.fn.opsqp import opsqp
+from morie.fn.opsqp import opsqp
 
 
 def test_opsqp_basic():

@@ -1,7 +1,7 @@
 """Tests for rngnrm.qk_norm."""
 import numpy as np
 import pytest
-from moirais.fn.rngnrm import rngnrm as qk_norm
+from morie.fn.rngnrm import rngnrm as qk_norm
 
 
 def test_rngnrm_basic():

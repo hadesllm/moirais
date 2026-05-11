@@ -1,7 +1,7 @@
 """Tests for gh_gp_orn_uhl.ghosal_gp_ornstein_uhlenbeck."""
 import numpy as np
 import pytest
-from moirais.fn.gh_gp_orn_uhl import ghosal_gp_ornstein_uhlenbeck
+from morie.fn.gh_gp_orn_uhl import ghosal_gp_ornstein_uhlenbeck
 
 
 def test_gh_gp_orn_uhl_basic():

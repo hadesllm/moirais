@@ -1,7 +1,7 @@
 """I cannot teach anybody anything. I can only make them think. — Socrates"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_5e84 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_5_equation_84
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_5e84 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_5_equation_84
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_5e84_basic():

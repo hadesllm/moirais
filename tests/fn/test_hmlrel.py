@@ -1,7 +1,7 @@
 """Tests for hmlrel.geron_leaky_relu."""
 import numpy as np
 import pytest
-from moirais.fn.hmlrel import geron_leaky_relu
+from morie.fn.hmlrel import geron_leaky_relu
 
 
 def test_hmlrel_basic():

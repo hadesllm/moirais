@@ -1,7 +1,7 @@
 """Tests for vitptm.vit_patch_embed."""
 import numpy as np
 import pytest
-from moirais.fn.vitptm import vit_patch_embed
+from morie.fn.vitptm import vit_patch_embed
 
 
 def test_vitptm_basic():

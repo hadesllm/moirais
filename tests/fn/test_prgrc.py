@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.prgrc — program recidivism."""
+"""Tests for morie.fn.prgrc — program recidivism."""
 
 import pytest
 import numpy as np
-from moirais.fn.prgrc import program_recidivism
-from moirais.fn._containers import ESRes
+from morie.fn.prgrc import program_recidivism
+from morie.fn._containers import ESRes
 
 
 class TestProgramRecidivism:

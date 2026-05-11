@@ -1,7 +1,7 @@
 """Test median_frequency (mdfrq)."""
 import numpy as np
-from moirais.fn.mdfrq import median_frequency, mdfrq
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mdfrq import median_frequency, mdfrq
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMdfrq:

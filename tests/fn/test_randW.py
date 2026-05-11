@@ -1,7 +1,7 @@
 """Tests for randW.random_walk_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.randW import random_walk_kernel
+from morie.fn.randW import random_walk_kernel
 
 
 def test_randW_basic():

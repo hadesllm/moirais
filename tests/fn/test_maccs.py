@@ -1,7 +1,7 @@
 """Tests for maccs.maccs_keys."""
 import numpy as np
 import pytest
-from moirais.fn.maccs import maccs_keys
+from morie.fn.maccs import maccs_keys
 
 
 def test_maccs_basic():

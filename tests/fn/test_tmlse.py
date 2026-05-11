@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tmlse — TMLE standard error."""
+"""Tests for morie.fn.tmlse — TMLE standard error."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tmlse import tmlse
+from morie.fn.tmlse import tmlse
 
 
 @pytest.fixture()

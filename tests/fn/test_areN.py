@@ -1,7 +1,7 @@
 """Tests for areN.asymptotic_relative_efficiency."""
 import numpy as np
 import pytest
-from moirais.fn.areN import asymptotic_relative_efficiency
+from morie.fn.areN import asymptotic_relative_efficiency
 
 
 def test_areN_basic():

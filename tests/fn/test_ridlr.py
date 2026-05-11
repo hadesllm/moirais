@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ridlr -- Cipher frequency analysis."""
+"""Tests for morie.fn.ridlr -- Cipher frequency analysis."""
 
-from moirais.fn.ridlr import cipher_frequency, ridlr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ridlr import cipher_frequency, ridlr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRidlr:

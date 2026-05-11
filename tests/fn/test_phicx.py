@@ -1,6 +1,6 @@
 """Tests for phi complexity."""
 import numpy as np
-from moirais.fn.phicx import phi_complexity, phicx
+from morie.fn.phicx import phi_complexity, phicx
 
 
 def test_diagonal():

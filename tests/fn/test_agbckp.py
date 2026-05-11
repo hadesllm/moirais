@@ -1,7 +1,7 @@
 """Tests for agbckp.alphazero_backup."""
 import numpy as np
 import pytest
-from moirais.fn.agbckp import alphazero_backup
+from morie.fn.agbckp import alphazero_backup
 
 
 def test_agbckp_basic():

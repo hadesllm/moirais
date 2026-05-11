@@ -1,4 +1,4 @@
-"""Sphinx configuration for MOIRAIS developer documentation."""
+"""Sphinx configuration for MORIE developer documentation."""
 
 from pathlib import Path
 import sys
@@ -14,7 +14,7 @@ except ModuleNotFoundError:  # pragma: no cover
 _HERE = Path(__file__).resolve().parent
 _REPO = _HERE.parents[1]
 _PY_PKG = _REPO / "src"
-_R_PKG = _REPO / "r-package" / "moirais"
+_R_PKG = _REPO / "r-package" / "morie"
 
 # Python package on sys.path for autodoc
 sys.path.insert(0, str(_PY_PKG))
@@ -26,7 +26,7 @@ sys.path.insert(0, str(_HERE))
 # Project metadata — version read dynamically from pyproject.toml
 # (single source of truth; no manual sync needed)
 # ---------------------------------------------------------------------------
-project = "MOIRAIS"
+project = "MORIE"
 copyright = "2026, Vansh Singh Ruhela"
 author = "Vansh Singh Ruhela"
 with (_REPO / "pyproject.toml").open("rb") as _fh:
@@ -136,7 +136,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # ---------------------------------------------------------------------------
 html_theme = "alabaster"
 html_static_path = ["_static"]
-html_title = "MOIRAIS"
+html_title = "MORIE"
 
 # Sidebar toggle — alabaster doesn't ship a collapse button; this
 # adds a small fixed-position button at the top-left that hides /
@@ -157,7 +157,7 @@ html_js_files = [
 html_theme_options = {
     "description": "Reproducible scientific computing — 36k+ registered callables, 60+ built-in datasets (plus ~160 BigQuery-derived via Datasette), Python + R.",
     "github_user": "hadesllm",
-    "github_repo": "moirais",
+    "github_repo": "morie",
     "github_button": False,
     "fixed_sidebar": True,
     "sidebar_collapse": True,

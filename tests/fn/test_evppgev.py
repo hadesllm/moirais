@@ -1,7 +1,7 @@
 """Tests for evppgev.evt_gev_pp_plot."""
 import numpy as np
 import pytest
-from moirais.fn.evppgev import evt_gev_pp_plot
+from morie.fn.evppgev import evt_gev_pp_plot
 
 
 def test_evppgev_basic():

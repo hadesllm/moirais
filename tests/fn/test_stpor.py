@@ -1,7 +1,7 @@
 """Tests for stpor."""
 import numpy as np
 import pytest
-from moirais.fn.stpor import stpor
+from morie.fn.stpor import stpor
 
 
 def test_stpor_basic():
@@ -27,5 +27,5 @@ def test_stpor_no_data():
 
 
 def test_stpor_alias():
-    from moirais.fn.stpor import stpor
+    from morie.fn.stpor import stpor
     assert stpor is stpor

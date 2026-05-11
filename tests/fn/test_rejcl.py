@@ -1,7 +1,7 @@
 """Test reject_option (rejcl)."""
 import numpy as np
-from moirais.fn.rejcl import reject_option, rejcl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rejcl import reject_option, rejcl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRejcl:

@@ -1,7 +1,7 @@
 """Tests for hertbg.heritability."""
 import numpy as np
 import pytest
-from moirais.fn.hertbg import heritability
+from morie.fn.hertbg import heritability
 
 
 def test_hertbg_basic():

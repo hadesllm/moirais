@@ -1,7 +1,7 @@
 """Tests for gb_cvmc.gibbons_cramer_von_mises."""
 import numpy as np
 import pytest
-from moirais.fn.gb_cvmc import gibbons_cramer_von_mises
+from morie.fn.gb_cvmc import gibbons_cramer_von_mises
 
 
 def test_gb_cvmc_basic():

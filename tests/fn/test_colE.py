@@ -1,7 +1,7 @@
 """Tests for colE.cold_start_user."""
 import numpy as np
 import pytest
-from moirais.fn.colE import cold_start_user
+from morie.fn.colE import cold_start_user
 
 
 def test_colE_basic():

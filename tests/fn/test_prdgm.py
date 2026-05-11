@@ -1,7 +1,7 @@
 """Tests for prdgm.py - periodogram PSD estimate."""
 import numpy as np
 import pytest
-from moirais.fn.prdgm import periodogram_estimate, prdgm
+from morie.fn.prdgm import periodogram_estimate, prdgm
 
 
 def test_periodogram_estimate_returns_descriptive_result():

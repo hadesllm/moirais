@@ -1,7 +1,7 @@
 """Tests for jntfr.joint_frailty."""
 import numpy as np
 import pytest
-from moirais.fn.jntfr import joint_frailty
+from morie.fn.jntfr import joint_frailty
 
 
 def test_jntfr_basic():

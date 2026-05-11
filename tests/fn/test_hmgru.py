@@ -1,7 +1,7 @@
 """Tests for hmgru.geron_gru."""
 import numpy as np
 import pytest
-from moirais.fn.hmgru import geron_gru
+from morie.fn.hmgru import geron_gru
 
 
 def test_hmgru_basic():

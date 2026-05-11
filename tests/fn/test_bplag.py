@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bplag — Breusch-Pagan LM test."""
+"""Tests for morie.fn.bplag — Breusch-Pagan LM test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bplag import breusch_pagan_lm
+from morie.fn.bplag import breusch_pagan_lm
 
 
 def test_bp_detects_random_effects():

@@ -1,7 +1,7 @@
 """Tests for fzamse.fauzi_quantile_amse."""
 import numpy as np
 import pytest
-from moirais.fn.fzamse import fauzi_quantile_amse
+from morie.fn.fzamse import fauzi_quantile_amse
 
 
 def test_fzamse_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gcplx -- Gaussian complexity computation."""
+"""Tests for morie.fn.gcplx -- Gaussian complexity computation."""
 
 import numpy as np
 import pytest
-from moirais.fn.gcplx import gaussian_complexity
+from morie.fn.gcplx import gaussian_complexity
 
 
 class TestGaussianComplexity:

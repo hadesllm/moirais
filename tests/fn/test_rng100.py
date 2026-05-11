@@ -1,7 +1,7 @@
 """Tests for rng100.rangayyan_ch3_ma_8point_frequency_response."""
 import numpy as np
 import pytest
-from moirais.fn.rng100 import rangayyan_ch3_ma_8point_frequency_response
+from morie.fn.rng100 import rangayyan_ch3_ma_8point_frequency_response
 
 
 def test_rng100_basic():

@@ -1,7 +1,7 @@
 """Tests for ghwav.ghosal_wavelet_prior."""
 import numpy as np
 import pytest
-from moirais.fn.ghwav import ghosal_wavelet_prior
+from morie.fn.ghwav import ghosal_wavelet_prior
 
 
 def test_ghwav_basic():

@@ -1,6 +1,6 @@
 """Tests for poisson_regression."""
 import numpy as np, pytest
-from moirais.fn.pois import poisson_regression
+from morie.fn.pois import poisson_regression
 
 class TestPoisson:
     def test_basic(self):

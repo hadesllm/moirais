@@ -1,7 +1,7 @@
 """Tests for eslaic.esl_aic_score."""
 import numpy as np
 import pytest
-from moirais.fn.eslaic import esl_aic_score
+from morie.fn.eslaic import esl_aic_score
 
 
 def test_eslaic_basic():

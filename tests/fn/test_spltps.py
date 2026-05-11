@@ -1,7 +1,7 @@
 """Test spltps."""
 import numpy as np
 import pytest
-from moirais.fn.spltps import spltps
+from morie.fn.spltps import spltps
 
 
 def test_spltps_basic():

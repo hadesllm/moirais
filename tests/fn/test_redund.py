@@ -1,7 +1,7 @@
 """Tests for redund.redundancy."""
 import numpy as np
 import pytest
-from moirais.fn.redund import redundancy
+from morie.fn.redund import redundancy
 
 
 def test_redund_basic():

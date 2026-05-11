@@ -1,7 +1,7 @@
 """Tests for mgrch.bekk_garch_multivariate."""
 import numpy as np
 import pytest
-from moirais.fn.mgrch import bekk_garch_multivariate
+from morie.fn.mgrch import bekk_garch_multivariate
 
 
 def test_mgrch_basic():

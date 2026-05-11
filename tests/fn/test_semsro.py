@@ -1,7 +1,7 @@
 """Tests for semsro.sem_residual."""
 import numpy as np
 import pytest
-from moirais.fn.semsro import sem_residual
+from morie.fn.semsro import sem_residual
 
 
 def test_semsro_basic():

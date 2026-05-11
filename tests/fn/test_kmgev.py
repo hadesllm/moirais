@@ -1,7 +1,7 @@
 """Tests for kmgev.kamath_g_eval."""
 import numpy as np
 import pytest
-from moirais.fn.kmgev import kamath_g_eval
+from morie.fn.kmgev import kamath_g_eval
 
 
 def test_kmgev_basic():

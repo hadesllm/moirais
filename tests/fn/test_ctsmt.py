@@ -1,7 +1,7 @@
 """Tests for ctsmt."""
 import numpy as np
 import pytest
-from moirais.fn.ctsmt import ctsmt
+from morie.fn.ctsmt import ctsmt
 
 
 def test_ctsmt_basic():
@@ -27,5 +27,5 @@ def test_ctsmt_no_data():
 
 
 def test_ctsmt_alias():
-    from moirais.fn.ctsmt import ctsmt
+    from morie.fn.ctsmt import ctsmt
     assert ctsmt is ctsmt

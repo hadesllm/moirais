@@ -1,7 +1,7 @@
 """Tests for alkvc2.alammar_kv_cache_lookup."""
 import numpy as np
 import pytest
-from moirais.fn.alkvc2 import alammar_kv_cache_lookup
+from morie.fn.alkvc2 import alammar_kv_cache_lookup
 
 
 def test_alkvc2_basic():

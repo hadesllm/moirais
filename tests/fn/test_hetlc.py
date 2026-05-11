@@ -1,7 +1,7 @@
 """Tests for hetlc.heterozygosity_locus."""
 import numpy as np
 import pytest
-from moirais.fn.hetlc import heterozygosity_locus
+from morie.fn.hetlc import heterozygosity_locus
 
 
 def test_hetlc_basic():

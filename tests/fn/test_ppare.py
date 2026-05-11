@@ -1,7 +1,7 @@
 """Test ppare."""
 import numpy as np
 import pytest
-from moirais.fn.ppare import ppare
+from morie.fn.ppare import ppare
 
 
 def test_ppare_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ludc -- LU decomposition."""
+"""Tests for morie.fn.ludc -- LU decomposition."""
 
 import numpy as np
-from moirais.fn.ludc import lu_decomposition, ludc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ludc import lu_decomposition, ludc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLudc:

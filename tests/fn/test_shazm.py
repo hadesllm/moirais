@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.shazm -- Simultaneous hypothesis test."""
+"""Tests for morie.fn.shazm -- Simultaneous hypothesis test."""
 
 import numpy as np
-from moirais.fn.shazm import simultaneous_test, shazm
-from moirais.fn._containers import TestResult
+from morie.fn.shazm import simultaneous_test, shazm
+from morie.fn._containers import TestResult
 
 
 class TestShazm:

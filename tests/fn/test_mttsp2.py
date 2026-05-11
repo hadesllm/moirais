@@ -1,7 +1,7 @@
 """Test mttsp2."""
 import numpy as np
 import pytest
-from moirais.fn.mttsp2 import mttsp2
+from morie.fn.mttsp2 import mttsp2
 
 
 def test_mttsp2_basic():

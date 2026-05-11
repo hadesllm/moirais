@@ -1,7 +1,7 @@
 """Tests for hmvit.geron_vision_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.hmvit import geron_vision_transformer
+from morie.fn.hmvit import geron_vision_transformer
 
 
 def test_hmvit_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zebuf -- Buffer-based exposure assessment"""
+"""Tests for morie.fn.zebuf -- Buffer-based exposure assessment"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zebuf import buffer_exposure
+from morie.fn.zebuf import buffer_exposure
 
 
 class TestBufferExposure:

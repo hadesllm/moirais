@@ -1,7 +1,7 @@
 """Tests for hrzweib.horowitz_weibull_heterogeneity."""
 import numpy as np
 import pytest
-from moirais.fn.hrzweib import horowitz_weibull_heterogeneity
+from morie.fn.hrzweib import horowitz_weibull_heterogeneity
 
 
 def test_hrzweib_basic():

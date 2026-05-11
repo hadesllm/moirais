@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxnsp -- Network shortest path spatial"""
+"""Tests for morie.fn.zxnsp -- Network shortest path spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxnsp import network_shortest
+from morie.fn.zxnsp import network_shortest
 
 
 class TestNetworkShortest:

@@ -1,7 +1,7 @@
 """Tests for jotft.joseph_temporal_fusion_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.jotft import joseph_temporal_fusion_transformer
+from morie.fn.jotft import joseph_temporal_fusion_transformer
 
 
 def test_jotft_basic():

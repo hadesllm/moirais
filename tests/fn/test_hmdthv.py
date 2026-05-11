@@ -1,7 +1,7 @@
 """Tests for hmdthv.geron_tree_high_variance."""
 import numpy as np
 import pytest
-from moirais.fn.hmdthv import geron_tree_high_variance
+from morie.fn.hmdthv import geron_tree_high_variance
 
 
 def test_hmdthv_basic():

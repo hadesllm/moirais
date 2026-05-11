@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.nsccd — new-user active-comparator cohort."""
+"""Tests for morie.fn.nsccd — new-user active-comparator cohort."""
 import numpy as np
 import pytest
-from moirais.fn.nsccd import new_user_cohort
+from morie.fn.nsccd import new_user_cohort
 
 
 class TestNewUserCohort:

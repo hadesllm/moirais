@@ -1,7 +1,7 @@
 """Tests for gh_ap_j2.ghosal_crm_laplace."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_j2 import ghosal_crm_laplace
+from morie.fn.gh_ap_j2 import ghosal_crm_laplace
 
 
 def test_gh_ap_j2_basic():

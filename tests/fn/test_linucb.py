@@ -1,7 +1,7 @@
 """Tests for linucb.linucb."""
 import numpy as np
 import pytest
-from moirais.fn.linucb import linucb
+from morie.fn.linucb import linucb
 
 
 def test_linucb_basic():

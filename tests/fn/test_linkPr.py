@@ -1,7 +1,7 @@
 """Tests for linkPr.link_prediction."""
 import numpy as np
 import pytest
-from moirais.fn.linkPr import link_prediction
+from morie.fn.linkPr import link_prediction
 
 
 def test_linkPr_basic():

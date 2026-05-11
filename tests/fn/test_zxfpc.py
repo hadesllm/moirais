@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxfpc -- Spatial functional PCA"""
+"""Tests for morie.fn.zxfpc -- Spatial functional PCA"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxfpc import fpca_spatial
+from morie.fn.zxfpc import fpca_spatial
 
 
 class TestFpcaSpatial:

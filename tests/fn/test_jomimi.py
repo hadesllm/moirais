@@ -1,7 +1,7 @@
 """Tests for jomimi.joseph_missing_data_imputation_ts."""
 import numpy as np
 import pytest
-from moirais.fn.jomimi import joseph_missing_data_imputation_ts
+from morie.fn.jomimi import joseph_missing_data_imputation_ts
 
 
 def test_jomimi_basic():

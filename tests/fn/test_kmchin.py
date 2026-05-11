@@ -1,7 +1,7 @@
 """Tests for kmchin.kamath_chinchilla_compute_optimal."""
 import numpy as np
 import pytest
-from moirais.fn.kmchin import kamath_chinchilla_compute_optimal
+from morie.fn.kmchin import kamath_chinchilla_compute_optimal
 
 
 def test_kmchin_basic():

@@ -1,7 +1,7 @@
 """Test ubhos."""
 import numpy as np
 import pytest
-from moirais.fn.ubhos import ubhos
+from morie.fn.ubhos import ubhos
 
 
 def test_ubhos_basic():

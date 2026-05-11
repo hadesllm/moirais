@@ -1,7 +1,7 @@
 """Test fostrm."""
 import numpy as np
 import pytest
-from moirais.fn.fostrm import fostrm
+from morie.fn.fostrm import fostrm
 
 
 def test_fostrm_basic():

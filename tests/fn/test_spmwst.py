@@ -1,7 +1,7 @@
 """Tests for spmwst.schabenberger_moving_window."""
 import numpy as np
 import pytest
-from moirais.fn.spmwst import schabenberger_moving_window
+from morie.fn.spmwst import schabenberger_moving_window
 
 
 def test_spmwst_basic():

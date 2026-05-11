@@ -1,7 +1,7 @@
 """Tests for grn013.geron_ch4_elastic_net_cost_function."""
 import numpy as np
 import pytest
-from moirais.fn.grn013 import geron_ch4_elastic_net_cost_function
+from morie.fn.grn013 import geron_ch4_elastic_net_cost_function
 
 
 def test_grn013_basic():

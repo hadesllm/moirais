@@ -1,7 +1,7 @@
 """Tests for almnrl.alammar_multiple_negatives_ranking."""
 import numpy as np
 import pytest
-from moirais.fn.almnrl import alammar_multiple_negatives_ranking
+from morie.fn.almnrl import alammar_multiple_negatives_ranking
 
 
 def test_almnrl_basic():

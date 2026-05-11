@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.chrsf -- Christoffel symbols."""
+"""Tests for morie.fn.chrsf -- Christoffel symbols."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.chrsf import chrsf
+from morie.fn.chrsf import chrsf
 
 
 def test_returns_dict():

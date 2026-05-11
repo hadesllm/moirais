@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pacop."""
+"""Tests for morie.fn.pacop."""
 
 import numpy as np
 import pytest
-from moirais.fn.pacop import pacop
+from morie.fn.pacop import pacop
 
 
 class TestPacop:

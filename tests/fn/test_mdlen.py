@@ -1,6 +1,6 @@
 """Tests for minimum description length."""
 import pytest
-from moirais.fn.mdlen import mdl, mdlen
+from morie.fn.mdlen import mdl, mdlen
 
 
 def test_basic():

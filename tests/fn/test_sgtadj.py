@@ -1,7 +1,7 @@
 """Tests for sgtadj.sgt_adjacency_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.sgtadj import sgt_adjacency_matrix
+from morie.fn.sgtadj import sgt_adjacency_matrix
 
 
 def test_sgtadj_basic():

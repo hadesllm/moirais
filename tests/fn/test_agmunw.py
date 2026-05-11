@@ -1,7 +1,7 @@
 """Tests for agmunw.muzero_n_step_value."""
 import numpy as np
 import pytest
-from moirais.fn.agmunw import muzero_n_step_value
+from morie.fn.agmunw import muzero_n_step_value
 
 
 def test_agmunw_basic():

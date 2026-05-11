@@ -1,7 +1,7 @@
 """Tests for lmsreg.least_median_squares."""
 import numpy as np
 import pytest
-from moirais.fn.lmsreg import least_median_squares
+from morie.fn.lmsreg import least_median_squares
 
 
 def test_lmsreg_basic():

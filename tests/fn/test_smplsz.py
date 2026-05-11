@@ -1,7 +1,7 @@
 """Tests for smplsz.sample_size_calc."""
 import numpy as np
 import pytest
-from moirais.fn.smplsz import sample_size_calc
+from morie.fn.smplsz import sample_size_calc
 
 
 def test_smplsz_basic():

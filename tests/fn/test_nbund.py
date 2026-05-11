@@ -1,7 +1,7 @@
 """Test nbund."""
 import numpy as np
 import pytest
-from moirais.fn.nbund import nbund
+from morie.fn.nbund import nbund
 
 
 def test_nbund_basic():

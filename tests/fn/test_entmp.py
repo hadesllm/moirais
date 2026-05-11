@@ -1,7 +1,7 @@
 """Test entmp."""
 import numpy as np
 import pytest
-from moirais.fn.entmp import entmp
+from morie.fn.entmp import entmp
 
 
 def test_entmp_basic():

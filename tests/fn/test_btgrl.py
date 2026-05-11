@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.btgrl -- Bagplot bivariate outliers."""
+"""Tests for morie.fn.btgrl -- Bagplot bivariate outliers."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.btgrl import bagplot_outliers, btgrl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.btgrl import bagplot_outliers, btgrl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBtgrl:

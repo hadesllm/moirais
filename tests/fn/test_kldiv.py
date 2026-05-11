@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.kldiv — KL divergence."""
+"""Tests for morie.fn.kldiv — KL divergence."""
 import numpy as np
 import pytest
-from moirais.fn.kldiv import kl_divergence
+from morie.fn.kldiv import kl_divergence
 
 
 class TestKLDivergence:

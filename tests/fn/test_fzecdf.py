@@ -1,7 +1,7 @@
 """Tests for fzecdf.fauzi_ecdf."""
 import numpy as np
 import pytest
-from moirais.fn.fzecdf import fauzi_ecdf
+from morie.fn.fzecdf import fauzi_ecdf
 
 
 def test_fzecdf_basic():

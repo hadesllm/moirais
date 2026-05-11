@@ -1,7 +1,7 @@
 """Tests for hindsr.her."""
 import numpy as np
 import pytest
-from moirais.fn.hindsr import her
+from morie.fn.hindsr import her
 
 
 def test_hindsr_basic():

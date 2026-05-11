@@ -1,6 +1,6 @@
 """Tests for ridgx.py - Ridge extraction."""
 import numpy as np
-from moirais.fn.ridgx import ridge_extract, ridgx
+from morie.fn.ridgx import ridge_extract, ridgx
 
 
 def test_ridgx_returns_descriptive_result():

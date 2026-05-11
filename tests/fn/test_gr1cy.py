@@ -1,7 +1,7 @@
 """Tests for gr1cy.geron_1cycle_schedule."""
 import numpy as np
 import pytest
-from moirais.fn.gr1cy import geron_1cycle_schedule
+from morie.fn.gr1cy import geron_1cycle_schedule
 
 
 def test_gr1cy_basic():

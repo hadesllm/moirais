@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.npmle — Nonparametric MLE."""
+"""Tests for morie.fn.npmle — Nonparametric MLE."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.npmle import npmle
+from morie.fn.npmle import npmle
 
 
 @pytest.fixture()

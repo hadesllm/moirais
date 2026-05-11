@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.qsim."""
+"""Tests for morie.fn.qsim."""
 import numpy as np
-from moirais.fn.qsim import qsim
+from morie.fn.qsim import qsim
 
 
 def test_qsim_smoke():
@@ -12,7 +12,7 @@ def test_qsim_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.qsim import cheatsheet
+    from morie.fn.qsim import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.visnm -- spectral clustering."""
+"""Tests for morie.fn.visnm -- spectral clustering."""
 
 import numpy as np
-from moirais.fn.visnm import mind_stone_cluster, visnm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.visnm import mind_stone_cluster, visnm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestVisnm:

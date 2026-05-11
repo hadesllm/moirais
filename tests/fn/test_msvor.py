@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msvor -- 2D Voronoi diagram"""
+"""Tests for morie.fn.msvor -- 2D Voronoi diagram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msvor import voronoi_2d
+from morie.fn.msvor import voronoi_2d
 
 
 class TestVoronoi2d:

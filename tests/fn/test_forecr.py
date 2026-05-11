@@ -1,7 +1,7 @@
 """Test forecr."""
 import numpy as np
 import pytest
-from moirais.fn.forecr import forecr
+from morie.fn.forecr import forecr
 
 
 def test_forecr_basic():

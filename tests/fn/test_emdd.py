@@ -1,6 +1,6 @@
 """Tests for earth_mover_dist."""
 import pytest
-from moirais.fn.emdd import earth_mover_dist, emdd
+from morie.fn.emdd import earth_mover_dist, emdd
 
 
 def test_same():

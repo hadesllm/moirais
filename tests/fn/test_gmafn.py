@@ -1,14 +1,14 @@
-"""Tests for moirais.fn.gmafn — Gemma 4 native function calling."""
+"""Tests for morie.fn.gmafn — Gemma 4 native function calling."""
 
 from __future__ import annotations
 
 from unittest.mock import MagicMock, patch
 
-from moirais.fn.gmafn import gemma_function_call, _default_moirais_tools, _execute_moirais_function
+from morie.fn.gmafn import gemma_function_call, _default_morie_tools, _execute_morie_function
 
 
 def test_default_tools_structure():
-    tools = _default_moirais_tools()
+    tools = _default_morie_tools()
     assert isinstance(tools, list)
     assert len(tools) >= 5
     for t in tools:
@@ -18,7 +18,7 @@ def test_default_tools_structure():
 
 
 def test_default_tools_contain_expected_functions():
-    tools = _default_moirais_tools()
+    tools = _default_morie_tools()
     names = {t["function"]["name"] for t in tools}
     assert "dnorm" in names
     assert "ate" in names
@@ -57,7 +57,7 @@ def test_successful_chat_with_tool_call():
         }
     }
     with patch("httpx.post", return_value=mock_resp):
-        with patch("moirais.fn.gmafn._execute_moirais_function", return_value=0.3989):
+        with patch("morie.fn.gmafn._execute_morie_function", return_value=0.3989):
             r = gemma_function_call("compute dnorm(0)")
     assert r.name == "Function call(s) returned"
     assert len(r.extra["executed_results"]) == 1
@@ -88,16 +88,16 @@ def test_custom_model_and_url():
 
 
 def test_execute_unknown_function():
-    result = _execute_moirais_function("nonexistent_fn_xyz", {})
+    result = _execute_morie_function("nonexistent_fn_xyz", {})
     assert "error" in result
 
 
 def test_registry_entry():
-    from moirais.fn._registry import REGISTRY
+    from morie.fn._registry import REGISTRY
     assert "gmafn" in REGISTRY
     assert REGISTRY["gmafn"].category == "LLM"
 
 
 def test_import_from_fn():
-    from moirais.fn.gmafn import gemma_function_call
+    from morie.fn.gmafn import gemma_function_call
     assert callable(gemma_function_call)

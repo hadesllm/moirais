@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msref -- Reflection of configuration"""
+"""Tests for morie.fn.msref -- Reflection of configuration"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msref import reflect_config
+from morie.fn.msref import reflect_config
 
 
 class TestReflectConfig:

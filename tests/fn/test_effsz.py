@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.effsz -- effective sample size."""
+"""Tests for morie.fn.effsz -- effective sample size."""
 import numpy as np
-from moirais.fn.effsz import effective_sample_size, effsz
+from morie.fn.effsz import effective_sample_size, effsz
 
 
 def test_alias():

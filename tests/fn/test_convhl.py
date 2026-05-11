@@ -1,7 +1,7 @@
 """Test convhl."""
 import numpy as np
 import pytest
-from moirais.fn.convhl import convhl
+from morie.fn.convhl import convhl
 
 
 def test_convhl_basic():

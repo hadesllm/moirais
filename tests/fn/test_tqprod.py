@@ -1,7 +1,7 @@
 """Tests for tqprod.turboquant_qjl_product_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.tqprod import turboquant_qjl_product_estimator
+from morie.fn.tqprod import turboquant_qjl_product_estimator
 
 
 def test_tqprod_basic():

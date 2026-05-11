@@ -1,7 +1,7 @@
 """Tests for rnmask."""
 import numpy as np
 import pytest
-from moirais.fn.rnmask import rnmask
+from morie.fn.rnmask import rnmask
 
 
 def test_rnmask_basic():
@@ -27,5 +27,5 @@ def test_rnmask_no_data():
 
 
 def test_rnmask_alias():
-    from moirais.fn.rnmask import rnmask
+    from morie.fn.rnmask import rnmask
     assert rnmask is rnmask

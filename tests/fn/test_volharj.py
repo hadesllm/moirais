@@ -1,7 +1,7 @@
 """Tests for volharj.vol_har_rv_jump."""
 import numpy as np
 import pytest
-from moirais.fn.volharj import vol_har_rv_jump
+from morie.fn.volharj import vol_har_rv_jump
 
 
 def test_volharj_basic():

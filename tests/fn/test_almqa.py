@@ -1,7 +1,7 @@
 """Tests for almqa.alammar_multi_query_attention."""
 import numpy as np
 import pytest
-from moirais.fn.almqa import alammar_multi_query_attention
+from morie.fn.almqa import alammar_multi_query_attention
 
 
 def test_almqa_basic():

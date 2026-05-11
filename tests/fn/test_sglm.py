@@ -1,7 +1,7 @@
 """Tests for sglm.spatial_glm."""
 import numpy as np
 import pytest
-from moirais.fn.sglm import spatial_glm
+from morie.fn.sglm import spatial_glm
 
 
 def test_sglm_basic():

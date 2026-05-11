@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vcrit — Criterion validity."""
+"""Tests for morie.fn.vcrit — Criterion validity."""
 
 import numpy as np
 import pytest
-from moirais.fn.vcrit import validity_criterion
+from morie.fn.vcrit import validity_criterion
 
 
 class TestValidityCriterion:

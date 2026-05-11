@@ -1,7 +1,7 @@
 """Tests for ghs006.ghosal_ch2_feller_density_approximation."""
 import numpy as np
 import pytest
-from moirais.fn.ghs006 import ghosal_ch2_feller_density_approximation
+from morie.fn.ghs006 import ghosal_ch2_feller_density_approximation
 
 
 def test_ghs006_basic():

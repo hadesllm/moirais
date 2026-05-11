@@ -1,7 +1,7 @@
 """Tests for tbcnd."""
 import numpy as np
 import pytest
-from moirais.fn.tbcnd import tbcnd
+from morie.fn.tbcnd import tbcnd
 
 
 def test_tbcnd_basic():
@@ -27,5 +27,5 @@ def test_tbcnd_no_data():
 
 
 def test_tbcnd_alias():
-    from moirais.fn.tbcnd import tbcnd
+    from morie.fn.tbcnd import tbcnd
     assert tbcnd is tbcnd

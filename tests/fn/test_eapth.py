@@ -1,7 +1,7 @@
 """Tests for eapth.eap_theta_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.eapth import eap_theta_estimator
+from morie.fn.eapth import eap_theta_estimator
 
 
 def test_eapth_basic():

@@ -1,5 +1,5 @@
 """Tests for agci (Agresti-Coull interval)."""
-from moirais.fn.agci import agresti_coull
+from morie.fn.agci import agresti_coull
 
 
 def test_agresti_coull_basic():

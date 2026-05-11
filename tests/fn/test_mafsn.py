@@ -1,7 +1,7 @@
 """Tests for mafsn.ma_fail_safe_n."""
 import numpy as np
 import pytest
-from moirais.fn.mafsn import ma_fail_safe_n
+from morie.fn.mafsn import ma_fail_safe_n
 
 
 def test_mafsn_basic():

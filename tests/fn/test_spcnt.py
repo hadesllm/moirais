@@ -1,7 +1,7 @@
 """Test spectral_centroid (spcnt)."""
 import numpy as np
-from moirais.fn.spcnt import spectral_centroid, spcnt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.spcnt import spectral_centroid, spcnt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSpcnt:

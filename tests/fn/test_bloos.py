@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bloos -- PSIS-LOO."""
+"""Tests for morie.fn.bloos -- PSIS-LOO."""
 
 import numpy as np
-from moirais.fn.bloos import psis_loo
+from morie.fn.bloos import psis_loo
 
 
 def test_returns_dict():

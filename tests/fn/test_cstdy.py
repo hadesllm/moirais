@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cstdy — custody days per individual."""
+"""Tests for morie.fn.cstdy — custody days per individual."""
 
 import pandas as pd
-from moirais.fn.cstdy import custody_days
+from morie.fn.cstdy import custody_days
 
 
 class TestCustodyDays:

@@ -1,7 +1,7 @@
 """Tests for gb1141.gibbons_tau_rho_relation."""
 import numpy as np
 import pytest
-from moirais.fn.gb1141 import gibbons_tau_rho_relation
+from morie.fn.gb1141 import gibbons_tau_rho_relation
 
 
 def test_gb1141_basic():

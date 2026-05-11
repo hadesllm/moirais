@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.spmxd — Spatial mixed model."""
+"""Tests for morie.fn.spmxd — Spatial mixed model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.spmxd import spmxd
+from morie.fn.spmxd import spmxd
 
 
 class TestSpmxd:

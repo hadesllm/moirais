@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.arisc -- Adjusted Rand index."""
+"""Tests for morie.fn.arisc -- Adjusted Rand index."""
 
 import numpy as np
-from moirais.fn.arisc import adjusted_rand_index, arisc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.arisc import adjusted_rand_index, arisc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAdjustedRandIndex:

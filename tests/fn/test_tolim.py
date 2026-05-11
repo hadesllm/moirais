@@ -1,7 +1,7 @@
 """Tests for tolim.tolerance_limits."""
 import numpy as np
 import pytest
-from moirais.fn.tolim import tolerance_limits
+from morie.fn.tolim import tolerance_limits
 
 
 def test_tolim_basic():

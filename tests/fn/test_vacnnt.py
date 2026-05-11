@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.vacnnt -- vaccine NNV."""
+"""Tests for morie.fn.vacnnt -- vaccine NNV."""
 
 import pytest
-from moirais.fn.vacnnt import vaccine_nnt
+from morie.fn.vacnnt import vaccine_nnt
 
 
 class TestVaccineNNT:

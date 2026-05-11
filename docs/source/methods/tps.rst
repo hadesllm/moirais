@@ -1,42 +1,42 @@
 Toronto Police Service (TPS) Statistics
 =======================================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS provides a dedicated module set for analysing Toronto Police
+MORIE provides a dedicated module set for analysing Toronto Police
 Service open-data incident feeds. The data are fetched from
 ``data.torontopolice.on.ca`` and are public domain. All TPS analyses
-are exposed under the ``moirais.tps_*`` namespace.
+are exposed under the ``morie.tps_*`` namespace.
 
 Modules
 -------
 
-- ``moirais.tps_io`` — fetch, cache, and parse the TPS open-data feeds.
-- ``moirais.tps_datasets`` — built-in TPS datasets (Assault, Auto
+- ``morie.tps_io`` — fetch, cache, and parse the TPS open-data feeds.
+- ``morie.tps_datasets`` — built-in TPS datasets (Assault, Auto
   Theft, Robbery, etc.).
-- ``moirais.tps_crime`` — top-line crime totals and incident-rate
+- ``morie.tps_crime`` — top-line crime totals and incident-rate
   computations.
-- ``moirais.tps_csi`` — Statistics Canada Crime Severity Index
+- ``morie.tps_csi`` — Statistics Canada Crime Severity Index
   calculations on TPS data.
-- ``moirais.tps_temporal`` — daily / weekly / monthly / yearly
+- ``morie.tps_temporal`` — daily / weekly / monthly / yearly
   aggregations and trend tests.
-- ``moirais.tps_spatial`` — Moran's I, Geary's C, Getis-Ord G* on
+- ``morie.tps_spatial`` — Moran's I, Geary's C, Getis-Ord G* on
   TPS neighbourhood-level counts.
-- ``moirais.tps_spatial_advanced`` — LISA, bivariate Moran, DBSCAN
+- ``morie.tps_spatial_advanced`` — LISA, bivariate Moran, DBSCAN
   clustering, Kulldorff space-time scan, choropleths,
   proportional-symbol district maps.
-- ``moirais.tps_stochastic`` — Markovian Hawkes self-exciting process
+- ``morie.tps_stochastic`` — Markovian Hawkes self-exciting process
   (constant baseline, exponential kernel) — the classical
   Mohler-Bertozzi-Brantingham fit.
-- ``moirais.tps_hawkes_advanced`` — non-stationary, non-Markovian
+- ``morie.tps_hawkes_advanced`` — non-stationary, non-Markovian
   Hawkes (Gamma / Weibull / Lomax kernels and sinusoidal baselines).
   See :doc:`hawkes` for the full treatment.
-- ``moirais.tps_statphysics`` — statistical physics of crime:
+- ``morie.tps_statphysics`` — statistical physics of crime:
   Short-Brantingham reaction-diffusion PDE, Lévy-flight tail index,
   Bettencourt urban scaling, Lotka-Volterra predator-prey.
-- ``moirais.tps_render`` — plotting helpers shared across the TPS
+- ``morie.tps_render`` — plotting helpers shared across the TPS
   surface.
-- ``moirais.tps_all_analyze`` — orchestrator that runs the full TPS
+- ``morie.tps_all_analyze`` — orchestrator that runs the full TPS
   analysis pipeline.
 
 Datasets
@@ -63,8 +63,8 @@ Quick start
 
 .. code-block:: python
 
-   from moirais.tps_io import load_tps
-   from moirais.tps_hawkes_advanced import compare_hawkes_kernels
+   from morie.tps_io import load_tps
+   from morie.tps_hawkes_advanced import compare_hawkes_kernels
 
    df = load_tps("Assault")
    results = compare_hawkes_kernels(df)
@@ -76,7 +76,7 @@ References
 The Hawkes-process methodology applied to these data is developed in
 detail in the companion paper:
 
-- Ruhela, V. S. (2026). *Criminological Hawkes Process via MOIRAIS:
+- Ruhela, V. S. (2026). *Criminological Hawkes Process via MORIE:
   Markovian and Non-Markovian Self-Exciting Point Processes for
   Toronto Crime.* Zenodo. https://doi.org/10.5281/zenodo.20102198
 

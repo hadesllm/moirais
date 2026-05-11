@@ -1,7 +1,7 @@
 """Tests for spmidw.schabenberger_idw."""
 import numpy as np
 import pytest
-from moirais.fn.spmidw import schabenberger_idw
+from morie.fn.spmidw import schabenberger_idw
 
 
 def test_spmidw_basic():

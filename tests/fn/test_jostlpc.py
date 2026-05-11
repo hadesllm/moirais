@@ -1,7 +1,7 @@
 """Tests for jostlpc.joseph_stl_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.jostlpc import joseph_stl_decomposition
+from morie.fn.jostlpc import joseph_stl_decomposition
 
 
 def test_jostlpc_basic():

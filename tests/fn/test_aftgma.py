@@ -1,7 +1,7 @@
 """Tests for aftgma.aft_generalized_gamma."""
 import numpy as np
 import pytest
-from moirais.fn.aftgma import aft_generalized_gamma
+from morie.fn.aftgma import aft_generalized_gamma
 
 
 def test_aftgma_basic():

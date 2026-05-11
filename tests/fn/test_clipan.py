@@ -1,7 +1,7 @@
 """Test clipan."""
 import numpy as np
 import pytest
-from moirais.fn.clipan import clipan
+from morie.fn.clipan import clipan
 
 
 def test_clipan_basic():

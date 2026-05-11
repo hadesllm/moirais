@@ -1,7 +1,7 @@
 """Tests for rng141.rangayyan_ch3_mse_cost_function."""
 import numpy as np
 import pytest
-from moirais.fn.rng141 import rangayyan_ch3_mse_cost_function
+from morie.fn.rng141 import rangayyan_ch3_mse_cost_function
 
 
 def test_rng141_basic():

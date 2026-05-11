@@ -1,7 +1,7 @@
 """Tests for lassrg.lasso_regression."""
 import numpy as np
 import pytest
-from moirais.fn.lassrg import lasso_regression
+from morie.fn.lassrg import lasso_regression
 
 
 def test_lassrg_basic():

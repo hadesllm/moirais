@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.agcyc."""
+"""Tests for morie.fn.agcyc."""
 
 import numpy as np
 import pytest
-from moirais.fn.agcyc import agcyc
+from morie.fn.agcyc import agcyc
 
 
 class TestAgcyc:

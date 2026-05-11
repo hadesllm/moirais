@@ -1,7 +1,7 @@
 """Tests for dlgen.deep_learning_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.dlgen import deep_learning_genomic
+from morie.fn.dlgen import deep_learning_genomic
 
 
 def test_dlgen_basic():

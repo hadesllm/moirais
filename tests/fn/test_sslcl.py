@@ -1,7 +1,7 @@
 """Test semi_supervised (sslcl)."""
 import numpy as np
-from moirais.fn.sslcl import semi_supervised, sslcl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sslcl import semi_supervised, sslcl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSslcl:

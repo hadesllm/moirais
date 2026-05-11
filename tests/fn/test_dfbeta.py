@@ -1,7 +1,7 @@
 """Tests for dfbeta.dfbetas."""
 import numpy as np
 import pytest
-from moirais.fn.dfbeta import dfbetas
+from morie.fn.dfbeta import dfbetas
 
 
 def test_dfbeta_basic():

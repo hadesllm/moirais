@@ -1,7 +1,7 @@
 """Tests for hmonl.geron_online_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmonl import geron_online_learning
+from morie.fn.hmonl import geron_online_learning
 
 
 def test_hmonl_basic():

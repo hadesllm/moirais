@@ -1,7 +1,7 @@
 """Tests for rgenvgm.rangayyan_envelogram."""
 import numpy as np
 import pytest
-from moirais.fn.rgenvgm import rangayyan_envelogram
+from morie.fn.rgenvgm import rangayyan_envelogram
 
 
 def test_rgenvgm_basic():

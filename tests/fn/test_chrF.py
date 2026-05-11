@@ -1,7 +1,7 @@
 """Tests for chrF.chrf."""
 import numpy as np
 import pytest
-from moirais.fn.chrF import chrf
+from morie.fn.chrF import chrf
 
 
 def test_chrF_basic():

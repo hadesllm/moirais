@@ -1,7 +1,7 @@
 """Tests for pareff.population_attributable."""
 import numpy as np
 import pytest
-from moirais.fn.pareff import population_attributable
+from morie.fn.pareff import population_attributable
 
 
 def test_pareff_basic():

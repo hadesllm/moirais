@@ -1,7 +1,7 @@
 """Test pearson_corr (prsn)."""
 import numpy as np
-from moirais.fn.prsn import pearson_corr, prsn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prsn import pearson_corr, prsn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPearsonCorr:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ravag -- LSB steganography."""
+"""Tests for morie.fn.ravag -- LSB steganography."""
 
 import numpy as np
-from moirais.fn.ravag import lsb_embed, lsb_extract, ravag
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ravag import lsb_embed, lsb_extract, ravag
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRavag:

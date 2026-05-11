@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.gamma — Gamma GLM."""
+"""Tests for morie.fn.gamma — Gamma GLM."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.gamma import gamma_glm
+from morie.fn.gamma import gamma_glm
 
 
 def test_gamma_glm_positive_coef():

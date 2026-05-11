@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.llreg — Local linear regression."""
+"""Tests for morie.fn.llreg — Local linear regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.llreg import llreg
+from morie.fn.llreg import llreg
 
 
 def test_returns_dict():

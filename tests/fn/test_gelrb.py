@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gelrb -- Gelman-Rubin R-hat."""
+"""Tests for morie.fn.gelrb -- Gelman-Rubin R-hat."""
 import numpy as np
-from moirais.fn.gelrb import gelman_rubin_rhat, gelrb
+from morie.fn.gelrb import gelman_rubin_rhat, gelrb
 
 
 def test_alias():

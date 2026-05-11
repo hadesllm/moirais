@@ -1,7 +1,7 @@
 """Tests for grdbs.geron_dbscan_core_point."""
 import numpy as np
 import pytest
-from moirais.fn.grdbs import geron_dbscan_core_point
+from morie.fn.grdbs import geron_dbscan_core_point
 
 
 def test_grdbs_basic():

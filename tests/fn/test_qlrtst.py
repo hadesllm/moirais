@@ -1,7 +1,7 @@
 """Tests for qlrtst.quandt_likelihood_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.qlrtst import quandt_likelihood_ratio
+from morie.fn.qlrtst import quandt_likelihood_ratio
 
 
 def test_qlrtst_basic():

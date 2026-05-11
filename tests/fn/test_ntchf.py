@@ -1,7 +1,7 @@
 """Test notch_filter (ntchf)."""
 import numpy as np
-from moirais.fn.ntchf import notch_filter, ntchf
-from moirais.fn._containers import SignalResult
+from morie.fn.ntchf import notch_filter, ntchf
+from morie.fn._containers import SignalResult
 
 
 class TestNotchFilter:

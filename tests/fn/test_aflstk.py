@@ -1,7 +1,7 @@
 """Test aflstk."""
 import numpy as np
 import pytest
-from moirais.fn.aflstk import aflstk
+from morie.fn.aflstk import aflstk
 
 
 def test_aflstk_basic():

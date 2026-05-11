@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wlcxn — Wilcoxon survival test."""
+"""Tests for morie.fn.wlcxn — Wilcoxon survival test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.wlcxn import wilcoxon_survival
+from morie.fn.wlcxn import wilcoxon_survival
 
 
 class TestWilcoxonSurvival:

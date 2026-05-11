@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.pi_ — nucleotide diversity."""
+"""Tests for morie.fn.pi_ — nucleotide diversity."""
 import pytest
-from moirais.fn.pi_ import nucleotide_diversity
+from morie.fn.pi_ import nucleotide_diversity
 
 
 class TestNucleotideDiversity:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeklf -- Kulldorff spatial scan statistic"""
+"""Tests for morie.fn.zeklf -- Kulldorff spatial scan statistic"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeklf import kulldorff_scan
+from morie.fn.zeklf import kulldorff_scan
 
 
 class TestKulldorffScan:

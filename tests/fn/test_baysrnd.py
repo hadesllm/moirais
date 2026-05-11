@@ -1,7 +1,7 @@
 """Tests for baysrnd.shrinkage_random."""
 import numpy as np
 import pytest
-from moirais.fn.baysrnd import shrinkage_random
+from morie.fn.baysrnd import shrinkage_random
 
 
 def test_baysrnd_basic():

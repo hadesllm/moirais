@@ -1,7 +1,7 @@
 """Tests for grlogc.geron_logistic_cross_entropy_cost."""
 import numpy as np
 import pytest
-from moirais.fn.grlogc import geron_logistic_cross_entropy_cost
+from morie.fn.grlogc import geron_logistic_cross_entropy_cost
 
 
 def test_grlogc_basic():

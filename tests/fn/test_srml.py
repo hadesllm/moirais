@@ -1,7 +1,7 @@
 """Test srml."""
 import numpy as np
 import pytest
-from moirais.fn.srml import srml
+from morie.fn.srml import srml
 
 
 def test_srml_basic():

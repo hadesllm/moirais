@@ -1,7 +1,7 @@
 """Tests for ghs003.ghosal_ch2_basis_truncation_error."""
 import numpy as np
 import pytest
-from moirais.fn.ghs003 import ghosal_ch2_basis_truncation_error
+from morie.fn.ghs003 import ghosal_ch2_basis_truncation_error
 
 
 def test_ghs003_basic():

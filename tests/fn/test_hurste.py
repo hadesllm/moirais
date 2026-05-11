@@ -1,7 +1,7 @@
 """Tests for hurste.hurst_exponent."""
 import numpy as np
 import pytest
-from moirais.fn.hurste import hurst_exponent
+from morie.fn.hurste import hurst_exponent
 
 
 def test_hurste_basic():

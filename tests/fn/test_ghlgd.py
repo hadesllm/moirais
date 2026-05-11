@@ -1,7 +1,7 @@
 """Tests for ghlgd.ghosal_log_density."""
 import numpy as np
 import pytest
-from moirais.fn.ghlgd import ghosal_log_density
+from morie.fn.ghlgd import ghosal_log_density
 
 
 def test_ghlgd_basic():

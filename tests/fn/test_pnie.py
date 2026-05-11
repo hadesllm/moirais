@@ -1,7 +1,7 @@
 """Tests for pnie.pure_natural_indirect_effect."""
 import numpy as np
 import pytest
-from moirais.fn.pnie import pure_natural_indirect_effect
+from morie.fn.pnie import pure_natural_indirect_effect
 
 
 def test_pnie_basic():

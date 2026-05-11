@@ -1,7 +1,7 @@
 """Tests for hmtsne.geron_tsne."""
 import numpy as np
 import pytest
-from moirais.fn.hmtsne import geron_tsne
+from morie.fn.hmtsne import geron_tsne
 
 
 def test_hmtsne_basic():

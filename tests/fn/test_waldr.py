@@ -1,7 +1,7 @@
 """Tests for waldr.wald_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.waldr import wald_estimator
+from morie.fn.waldr import wald_estimator
 
 
 def test_waldr_basic():

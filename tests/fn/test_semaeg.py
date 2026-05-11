@@ -1,7 +1,7 @@
 """Tests for semaeg.sam_image_encoder."""
 import numpy as np
 import pytest
-from moirais.fn.semaeg import sam_image_encoder
+from morie.fn.semaeg import sam_image_encoder
 
 
 def test_semaeg_basic():

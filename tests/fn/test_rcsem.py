@@ -1,6 +1,6 @@
 """Tests for rcsem — conditional SEM."""
 import pandas as pd
-from moirais.fn.rcsem import rcsem
+from morie.fn.rcsem import rcsem
 
 def test_rcsem_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -9,7 +9,7 @@ def test_rcsem_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.rcsem import cheatsheet
+    from morie.fn.rcsem import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

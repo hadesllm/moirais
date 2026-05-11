@@ -1,7 +1,7 @@
 """Tests for hmlrh.geron_learning_rate_heuristic."""
 import numpy as np
 import pytest
-from moirais.fn.hmlrh import geron_learning_rate_heuristic
+from morie.fn.hmlrh import geron_learning_rate_heuristic
 
 
 def test_hmlrh_basic():

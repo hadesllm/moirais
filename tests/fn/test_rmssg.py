@@ -1,7 +1,7 @@
 """Test rms_signal."""
 import numpy as np
-from moirais.fn.rmssg import rms_signal, alias
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rmssg import rms_signal, alias
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRmsSignal:

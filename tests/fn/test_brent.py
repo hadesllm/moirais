@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.brent — bracketing entropy."""
+"""Tests for morie.fn.brent — bracketing entropy."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.brent import brent
+from morie.fn.brent import brent
 
 
 def test_basic_output():

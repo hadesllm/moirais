@@ -1,7 +1,7 @@
 """Tests for glmmdiag."""
 import numpy as np
 import pytest
-from moirais.fn.glmmdiag import glmmdiag
+from morie.fn.glmmdiag import glmmdiag
 
 
 def test_glmmdiag_basic():
@@ -27,5 +27,5 @@ def test_glmmdiag_no_data():
 
 
 def test_glmmdiag_alias():
-    from moirais.fn.glmmdiag import glmmdiag
+    from morie.fn.glmmdiag import glmmdiag
     assert glmmdiag is glmmdiag

@@ -1,7 +1,7 @@
 """Tests for bluerg.blue_gls."""
 import numpy as np
 import pytest
-from moirais.fn.bluerg import blue_gls
+from morie.fn.bluerg import blue_gls
 
 
 def test_bluerg_basic():

@@ -1,6 +1,6 @@
 import pandas as pd
 
-from moirais.effects import estimate_ate
+from morie.effects import estimate_ate
 
 
 def test_estimate_ate_returns_float_estimate_and_standard_error():

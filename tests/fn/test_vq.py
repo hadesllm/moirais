@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vq — vector quantization."""
+"""Tests for morie.fn.vq — vector quantization."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vq import vector_quantize
+from morie.fn.vq import vector_quantize
 
 
 class TestVectorQuantize:

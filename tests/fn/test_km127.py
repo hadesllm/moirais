@@ -1,7 +1,7 @@
 """Tests for km127.kamath_ch8_geval_score."""
 import numpy as np
 import pytest
-from moirais.fn.km127 import kamath_ch8_geval_score
+from morie.fn.km127 import kamath_ch8_geval_score
 
 
 def test_km127_basic():

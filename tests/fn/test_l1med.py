@@ -1,7 +1,7 @@
 """Tests for l1med.l1_median."""
 import numpy as np
 import pytest
-from moirais.fn.l1med import l1_median
+from morie.fn.l1med import l1_median
 
 
 def test_l1med_basic():

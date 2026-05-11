@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.drstr -- multiverse bootstrap."""
+"""Tests for morie.fn.drstr -- multiverse bootstrap."""
 
 import numpy as np
-from moirais.fn.drstr import multiverse_bootstrap, drstr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.drstr import multiverse_bootstrap, drstr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDrstr:

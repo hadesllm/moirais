@@ -1,7 +1,7 @@
 """Tests for sstrlf.surv_truncation_left."""
 import numpy as np
 import pytest
-from moirais.fn.sstrlf import surv_truncation_left
+from morie.fn.sstrlf import surv_truncation_left
 
 
 def test_sstrlf_basic():

@@ -1,7 +1,7 @@
 """Tests for b205.burkov_lm_ch2_perplexity."""
 import numpy as np
 import pytest
-from moirais.fn.b205 import burkov_lm_ch2_perplexity
+from morie.fn.b205 import burkov_lm_ch2_perplexity
 
 
 def test_b205_basic():

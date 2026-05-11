@@ -1,7 +1,7 @@
 """Test cstrr."""
 import numpy as np
 import pytest
-from moirais.fn.cstrr import cstrr
+from morie.fn.cstrr import cstrr
 
 
 def test_cstrr_basic():

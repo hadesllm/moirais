@@ -1,7 +1,7 @@
 """Tests for gb232.gibbons_glivenko_cantelli."""
 import numpy as np
 import pytest
-from moirais.fn.gb232 import gibbons_glivenko_cantelli
+from morie.fn.gb232 import gibbons_glivenko_cantelli
 
 
 def test_gb232_basic():

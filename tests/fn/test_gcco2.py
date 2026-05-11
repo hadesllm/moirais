@@ -1,7 +1,7 @@
 """Test gcco2."""
 import numpy as np
 import pytest
-from moirais.fn.gcco2 import gcco2
+from morie.fn.gcco2 import gcco2
 
 
 def test_gcco2_basic():

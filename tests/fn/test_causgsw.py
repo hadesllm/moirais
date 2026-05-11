@@ -1,7 +1,7 @@
 """Tests for causgsw.causal_generalisability_smd."""
 import numpy as np
 import pytest
-from moirais.fn.causgsw import causal_generalisability_smd
+from morie.fn.causgsw import causal_generalisability_smd
 
 
 def test_causgsw_basic():

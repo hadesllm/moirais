@@ -1,7 +1,7 @@
 """Tests for locdp.local_dp."""
 import numpy as np
 import pytest
-from moirais.fn.locdp import local_dp
+from morie.fn.locdp import local_dp
 
 
 def test_locdp_basic():

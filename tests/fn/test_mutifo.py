@@ -1,7 +1,7 @@
 """Tests for mutifo.mutual_information."""
 import numpy as np
 import pytest
-from moirais.fn.mutifo import mutual_information
+from morie.fn.mutifo import mutual_information
 
 
 def test_mutifo_basic():

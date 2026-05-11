@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ngram."""
+"""Tests for morie.fn.ngram."""
 import numpy as np
-from moirais.fn.ngram import ngram_freq
+from morie.fn.ngram import ngram_freq
 
 
 def test_ngram_smoke():
@@ -12,7 +12,7 @@ def test_ngram_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ngram import cheatsheet
+    from morie.fn.ngram import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

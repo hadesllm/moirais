@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ar_ -- Attack rate (cumulative incidence)."""
+"""Tests for morie.fn.ar_ -- Attack rate (cumulative incidence)."""
 
 import pytest
-from moirais.fn.ar_ import attack_rate
+from morie.fn.ar_ import attack_rate
 
 
 class TestAttackRate:

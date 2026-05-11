@@ -1,7 +1,7 @@
 """Tests for causmtch.causal_pair_matching."""
 import numpy as np
 import pytest
-from moirais.fn.causmtch import causal_pair_matching
+from morie.fn.causmtch import causal_pair_matching
 
 
 def test_causmtch_basic():

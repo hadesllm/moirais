@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cnsrd — Semiparametric censored regression."""
+"""Tests for morie.fn.cnsrd — Semiparametric censored regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.cnsrd import cnsrd
+from morie.fn.cnsrd import cnsrd
 
 
 def test_returns_dict():

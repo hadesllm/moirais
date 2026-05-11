@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.crosd — Croston's intermittent demand method."""
+"""Tests for morie.fn.crosd — Croston's intermittent demand method."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.crosd import croston_method, crosd
+from morie.fn.crosd import croston_method, crosd
 
 
 def test_returns_descriptive_result():

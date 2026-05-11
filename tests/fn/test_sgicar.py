@@ -1,6 +1,6 @@
 """Tests for intrinsic CAR model."""
 import numpy as np
-from moirais.fn.sgicar import sgicar
+from morie.fn.sgicar import sgicar
 
 
 def test_sgicar_smoke():
@@ -18,7 +18,7 @@ def test_sgicar_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgicar import cheatsheet
+    from morie.fn.sgicar import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

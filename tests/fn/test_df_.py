@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.df_ — F-distribution PDF."""
+"""Tests for morie.fn.df_ — F-distribution PDF."""
 
 import numpy as np
 import pytest
 from scipy.stats import f as f_dist
 
-from moirais.fn.df_ import df_dist, df_
+from morie.fn.df_ import df_dist, df_
 
 
 class TestDfDist:

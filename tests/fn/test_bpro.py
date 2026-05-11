@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bpro — Brownian bridge simulation."""
+"""Tests for morie.fn.bpro — Brownian bridge simulation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bpro import bpro
+from morie.fn.bpro import bpro
 
 
 def test_endpoints_zero():

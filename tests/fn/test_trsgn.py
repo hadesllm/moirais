@@ -1,7 +1,7 @@
 """Test trsgn."""
 import numpy as np
 import pytest
-from moirais.fn.trsgn import trsgn
+from morie.fn.trsgn import trsgn
 
 
 def test_trsgn_basic():

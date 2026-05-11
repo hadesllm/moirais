@@ -1,7 +1,7 @@
 """Tests for mcimp."""
 import numpy as np
 import pytest
-from moirais.fn.mcimp import mcimp
+from morie.fn.mcimp import mcimp
 
 
 def test_mcimp_basic():
@@ -27,5 +27,5 @@ def test_mcimp_no_data():
 
 
 def test_mcimp_alias():
-    from moirais.fn.mcimp import mcimp
+    from morie.fn.mcimp import mcimp
     assert mcimp is mcimp

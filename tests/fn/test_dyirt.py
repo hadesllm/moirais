@@ -1,6 +1,6 @@
 """Test dyirt."""
 import numpy as np
-from moirais.fn.dyirt import dynamic_irt_estimate
+from morie.fn.dyirt import dynamic_irt_estimate
 
 
 def test_dyirt_basic():

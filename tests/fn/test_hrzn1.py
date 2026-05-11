@@ -1,7 +1,7 @@
 """Tests for hrzn1.horowitz_nonparametric_iv."""
 import numpy as np
 import pytest
-from moirais.fn.hrzn1 import horowitz_nonparametric_iv
+from morie.fn.hrzn1 import horowitz_nonparametric_iv
 
 
 def test_hrzn1_basic():

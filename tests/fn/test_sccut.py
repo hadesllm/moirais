@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sccut — score cutoffs."""
+"""Tests for morie.fn.sccut — score cutoffs."""
 
 import numpy as np
 import pytest
-from moirais.fn.sccut import score_cutoffs
+from morie.fn.sccut import score_cutoffs
 
 
 class TestScoreCutoffs:

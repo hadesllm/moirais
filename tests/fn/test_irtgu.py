@@ -1,7 +1,7 @@
 """Tests for irtgu -- guessing parameter analysis."""
 import numpy as np
-from moirais.fn.irtgu import irt_guessing
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.irtgu import irt_guessing
+from morie.fn._containers import DescriptiveResult
 
 
 class TestIrtGuessing:

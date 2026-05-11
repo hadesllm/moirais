@@ -1,6 +1,6 @@
 """Tests for cutting lines."""
 import numpy as np
-from moirais.fn.cutln import cutln
+from morie.fn.cutln import cutln
 
 
 def test_cutln_smoke():
@@ -14,7 +14,7 @@ def test_cutln_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.cutln import cheatsheet
+    from morie.fn.cutln import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cstrl — custody release type."""
+"""Tests for morie.fn.cstrl — custody release type."""
 
 import pytest
 import numpy as np
-from moirais.fn.cstrl import custody_release_type
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cstrl import custody_release_type
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCustodyReleaseType:

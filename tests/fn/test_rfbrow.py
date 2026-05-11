@@ -1,7 +1,7 @@
 """Tests for rfbrow."""
 import numpy as np
 import pytest
-from moirais.fn.rfbrow import rfbrow
+from morie.fn.rfbrow import rfbrow
 
 
 def test_rfbrow_basic():
@@ -27,5 +27,5 @@ def test_rfbrow_no_data():
 
 
 def test_rfbrow_alias():
-    from moirais.fn.rfbrow import rfbrow
+    from morie.fn.rfbrow import rfbrow
     assert rfbrow is rfbrow

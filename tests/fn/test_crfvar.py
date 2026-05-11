@@ -1,7 +1,7 @@
 """Tests for crfvar.causal_forest_variance."""
 import numpy as np
 import pytest
-from moirais.fn.crfvar import causal_forest_variance
+from morie.fn.crfvar import causal_forest_variance
 
 
 def test_crfvar_basic():

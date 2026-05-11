@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rcomp -- Rademacher complexity computation."""
+"""Tests for morie.fn.rcomp -- Rademacher complexity computation."""
 
 import numpy as np
 import pytest
-from moirais.fn.rcomp import rademacher_complexity
+from morie.fn.rcomp import rademacher_complexity
 
 
 class TestRademacherComplexity:

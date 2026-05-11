@@ -1,7 +1,7 @@
 """Tests for rng042.rangayyan_ch3_lsi_series_total."""
 import numpy as np
 import pytest
-from moirais.fn.rng042 import rangayyan_ch3_lsi_series_total
+from morie.fn.rng042 import rangayyan_ch3_lsi_series_total
 
 
 def test_rng042_basic():

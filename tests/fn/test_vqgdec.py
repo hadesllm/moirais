@@ -1,7 +1,7 @@
 """Tests for vqgdec.vqgan_decode."""
 import numpy as np
 import pytest
-from moirais.fn.vqgdec import vqgan_decode
+from morie.fn.vqgdec import vqgan_decode
 
 
 def test_vqgdec_basic():

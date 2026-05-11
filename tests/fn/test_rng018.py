@@ -1,7 +1,7 @@
 """Tests for rng018.rangayyan_ch3_ensemble_average_function."""
 import numpy as np
 import pytest
-from moirais.fn.rng018 import rangayyan_ch3_ensemble_average_function
+from morie.fn.rng018 import rangayyan_ch3_ensemble_average_function
 
 
 def test_rng018_basic():

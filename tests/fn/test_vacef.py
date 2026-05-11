@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.vacef -- vaccine efficacy."""
+"""Tests for morie.fn.vacef -- vaccine efficacy."""
 
 import pytest
-from moirais.fn.vacef import vaccine_efficacy
+from morie.fn.vacef import vaccine_efficacy
 
 
 class TestVaccineEfficacy:

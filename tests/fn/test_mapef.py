@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mapef -- MAPE."""
+"""Tests for morie.fn.mapef -- MAPE."""
 import numpy as np
 import pytest
-from moirais.fn.mapef import mape
+from morie.fn.mapef import mape
 
 
 class TestMAPE:
@@ -21,5 +21,5 @@ class TestMAPE:
             mape(np.zeros(5), np.ones(5))
 
     def test_cheatsheet(self):
-        from moirais.fn.mapef import cheatsheet
+        from morie.fn.mapef import cheatsheet
         assert isinstance(cheatsheet(), str)

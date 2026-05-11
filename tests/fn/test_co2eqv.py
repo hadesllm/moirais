@@ -2,7 +2,7 @@
 
 import pytest
 
-from moirais.fn.co2eqv import co2_equivalent, co2eqv
+from morie.fn.co2eqv import co2_equivalent, co2eqv
 
 
 def test_co2eqv_scalar_co2_identity():

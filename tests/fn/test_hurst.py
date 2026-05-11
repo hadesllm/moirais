@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.hurst — Hurst exponent."""
+"""Tests for morie.fn.hurst — Hurst exponent."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.hurst import hurst
+from morie.fn.hurst import hurst
 
 
 class TestHurst:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.histip — histogram ideal points."""
+"""Tests for morie.fn.histip — histogram ideal points."""
 import numpy as np
-from moirais.fn.histip import histip
+from morie.fn.histip import histip
 
 
 def test_histip_smoke():
@@ -11,7 +11,7 @@ def test_histip_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.histip import cheatsheet
+    from morie.fn.histip import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

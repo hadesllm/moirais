@@ -1,7 +1,7 @@
 """Tests for cvxdle.boyd_dual_norm."""
 import numpy as np
 import pytest
-from moirais.fn.cvxdle import boyd_dual_norm
+from morie.fn.cvxdle import boyd_dual_norm
 
 
 def test_cvxdle_basic():

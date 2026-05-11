@@ -1,7 +1,7 @@
 """Test opmxm."""
 import numpy as np
 import pytest
-from moirais.fn.opmxm import opmxm
+from morie.fn.opmxm import opmxm
 
 
 def test_opmxm_basic():

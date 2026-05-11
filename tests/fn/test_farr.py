@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.farr — Farrington algorithm."""
+"""Tests for morie.fn.farr — Farrington algorithm."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.farr import farrington_detect
+from morie.fn.farr import farrington_detect
 
 
 class TestFarrington:

@@ -1,7 +1,7 @@
 """Tests for spcrng."""
 import numpy as np
 import pytest
-from moirais.fn.spcrng import spcrng
+from morie.fn.spcrng import spcrng
 
 
 def test_spcrng_basic():
@@ -27,5 +27,5 @@ def test_spcrng_no_data():
 
 
 def test_spcrng_alias():
-    from moirais.fn.spcrng import spcrng
+    from morie.fn.spcrng import spcrng
     assert spcrng is spcrng

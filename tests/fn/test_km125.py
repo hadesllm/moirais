@@ -1,7 +1,7 @@
 """Tests for km125.kamath_ch8_ngram_weight."""
 import numpy as np
 import pytest
-from moirais.fn.km125 import kamath_ch8_ngram_weight
+from morie.fn.km125 import kamath_ch8_ngram_weight
 
 
 def test_km125_basic():

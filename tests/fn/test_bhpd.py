@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bhpd -- HPD interval."""
+"""Tests for morie.fn.bhpd -- HPD interval."""
 
 import numpy as np
-from moirais.fn.bhpd import hpd_interval
+from morie.fn.bhpd import hpd_interval
 
 
 def test_returns_dict():

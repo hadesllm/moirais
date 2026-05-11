@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svclv -- Coalition value in spatial game"""
+"""Tests for morie.fn.svclv -- Coalition value in spatial game"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svclv import coalition_value
+from morie.fn.svclv import coalition_value
 
 
 class TestCoalitionValue:

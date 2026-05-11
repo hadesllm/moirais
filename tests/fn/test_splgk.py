@@ -1,7 +1,7 @@
 """Tests for splgk.schabenberger_lognormal_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.splgk import schabenberger_lognormal_kriging
+from morie.fn.splgk import schabenberger_lognormal_kriging
 
 
 def test_splgk_basic():

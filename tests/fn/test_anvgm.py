@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.anvgm — Anisotropic variogram."""
+"""Tests for morie.fn.anvgm — Anisotropic variogram."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.anvgm import anvgm
+from morie.fn.anvgm import anvgm
 
 
 class TestAnvgm:

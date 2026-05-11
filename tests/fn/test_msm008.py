@@ -1,7 +1,7 @@
 """Tests for msm008.mvsml_overfitting_resampling_eq_4_10."""
 import numpy as np
 import pytest
-from moirais.fn.msm008 import mvsml_overfitting_resampling_eq_4_10
+from morie.fn.msm008 import mvsml_overfitting_resampling_eq_4_10
 
 
 def test_msm008_basic():

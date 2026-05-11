@@ -1,7 +1,7 @@
 """Tests for hdbsc.hdbscan."""
 import numpy as np
 import pytest
-from moirais.fn.hdbsc import hdbscan
+from morie.fn.hdbsc import hdbscan
 
 
 def test_hdbsc_basic():

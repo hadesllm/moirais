@@ -1,7 +1,7 @@
 """Tests for mcmpp.mcmcpack_irt."""
 import numpy as np
 import pytest
-from moirais.fn.mcmpp import mcmcpack_irt
+from morie.fn.mcmpp import mcmcpack_irt
 
 
 def test_mcmpp_basic():

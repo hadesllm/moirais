@@ -1,7 +1,7 @@
 """Test hydhl."""
 import numpy as np
 import pytest
-from moirais.fn.hydhl import hydhl
+from morie.fn.hydhl import hydhl
 
 
 def test_hydhl_basic():

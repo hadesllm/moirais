@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.scpois."""
+"""Tests for morie.fn.scpois."""
 import numpy as np
 import pytest
-from moirais.fn.scpois import scpois
+from morie.fn.scpois import scpois
 
 
 class TestScpois:

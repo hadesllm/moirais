@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tmapn — torus mapping class group."""
+"""Tests for morie.fn.tmapn — torus mapping class group."""
 
 import pytest
 
-from moirais.fn.tmapn import torus_mapping_class
+from morie.fn.tmapn import torus_mapping_class
 
 
 class TestTorusMappingClass:

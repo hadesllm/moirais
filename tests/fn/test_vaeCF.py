@@ -1,7 +1,7 @@
 """Tests for vaeCF.vae_cf."""
 import numpy as np
 import pytest
-from moirais.fn.vaeCF import vae_cf
+from morie.fn.vaeCF import vae_cf
 
 
 def test_vaeCF_basic():

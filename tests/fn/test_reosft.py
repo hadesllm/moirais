@@ -1,7 +1,7 @@
 """Tests for reosft.reos_filter."""
 import numpy as np
 import pytest
-from moirais.fn.reosft import reos_filter
+from morie.fn.reosft import reos_filter
 
 
 def test_reosft_basic():

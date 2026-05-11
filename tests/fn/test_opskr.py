@@ -1,7 +1,7 @@
 """Test opskr."""
 import numpy as np
 import pytest
-from moirais.fn.opskr import opskr
+from morie.fn.opskr import opskr
 
 
 def test_opskr_basic():

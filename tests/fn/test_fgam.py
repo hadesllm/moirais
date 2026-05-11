@@ -1,7 +1,7 @@
 """Tests for fgam.functional_gam."""
 import numpy as np
 import pytest
-from moirais.fn.fgam import functional_gam
+from morie.fn.fgam import functional_gam
 
 
 def test_fgam_basic():

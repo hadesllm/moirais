@@ -1,7 +1,7 @@
 """Test trtwd."""
 import numpy as np
 import pytest
-from moirais.fn.trtwd import trtwd
+from morie.fn.trtwd import trtwd
 
 
 def test_trtwd_basic():

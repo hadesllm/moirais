@@ -1,7 +1,7 @@
 """Test afhrv."""
 import numpy as np
 import pytest
-from moirais.fn.afhrv import afhrv
+from morie.fn.afhrv import afhrv
 
 
 def test_afhrv_basic():

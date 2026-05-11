@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.oqntl — Quantiles for a numeric column."""
+"""Tests for morie.fn.oqntl — Quantiles for a numeric column."""
 
-from moirais.fn.oqntl import otis_quantiles
+from morie.fn.oqntl import otis_quantiles
 
 
 class TestOtisQuantiles:

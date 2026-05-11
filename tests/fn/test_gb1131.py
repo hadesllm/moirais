@@ -1,7 +1,7 @@
 """Tests for gb1131.gibbons_spearman_rho."""
 import numpy as np
 import pytest
-from moirais.fn.gb1131 import gibbons_spearman_rho
+from morie.fn.gb1131 import gibbons_spearman_rho
 
 
 def test_gb1131_basic():

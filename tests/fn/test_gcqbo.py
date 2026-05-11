@@ -1,7 +1,7 @@
 """Test gcqbo."""
 import numpy as np
 import pytest
-from moirais.fn.gcqbo import gcqbo
+from morie.fn.gcqbo import gcqbo
 
 
 def test_gcqbo_basic():

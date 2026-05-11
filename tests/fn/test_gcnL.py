@@ -1,7 +1,7 @@
 """Tests for gcnL.gcn."""
 import numpy as np
 import pytest
-from moirais.fn.gcnL import gcn
+from morie.fn.gcnL import gcn
 
 
 def test_gcnL_basic():

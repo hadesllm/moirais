@@ -1,7 +1,7 @@
 """Tests for farmlmm.farm_cpu."""
 import numpy as np
 import pytest
-from moirais.fn.farmlmm import farm_cpu
+from morie.fn.farmlmm import farm_cpu
 
 
 def test_farmlmm_basic():

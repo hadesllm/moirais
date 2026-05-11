@@ -1,6 +1,6 @@
 """Test beam search."""
 import numpy as np
-from moirais.fn.beams import beams
+from morie.fn.beams import beams
 
 
 def test_beams_basic():

@@ -1,7 +1,7 @@
 """Tests for kmtot.kamath_tree_of_thoughts."""
 import numpy as np
 import pytest
-from moirais.fn.kmtot import kamath_tree_of_thoughts
+from morie.fn.kmtot import kamath_tree_of_thoughts
 
 
 def test_kmtot_basic():

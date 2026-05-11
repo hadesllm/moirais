@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.noidl -- extract ideal points."""
+"""Tests for morie.fn.noidl -- extract ideal points."""
 import numpy as np
-from moirais.fn.noidl import nominate_ideal_extract, noidl
+from morie.fn.noidl import nominate_ideal_extract, noidl
 
 
 def test_alias():

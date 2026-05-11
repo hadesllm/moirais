@@ -1,7 +1,7 @@
 """Test ubtrn."""
 import numpy as np
 import pytest
-from moirais.fn.ubtrn import ubtrn
+from morie.fn.ubtrn import ubtrn
 
 
 def test_ubtrn_basic():

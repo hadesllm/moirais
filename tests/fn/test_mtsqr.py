@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mtsqr -- Matrix square root."""
+"""Tests for morie.fn.mtsqr -- Matrix square root."""
 
 import numpy as np
-from moirais.fn.mtsqr import matrix_sqrt, mtsqr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtsqr import matrix_sqrt, mtsqr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMtsqr:

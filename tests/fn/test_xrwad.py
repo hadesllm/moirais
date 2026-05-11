@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwad -- Adaptive bandwidth weights"""
+"""Tests for morie.fn.xrwad -- Adaptive bandwidth weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwad import w_adaptive
+from morie.fn.xrwad import w_adaptive
 
 
 class TestWAdaptive:

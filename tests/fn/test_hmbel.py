@@ -1,7 +1,7 @@
 """Tests for hmbel.geron_bellman_optimality."""
 import numpy as np
 import pytest
-from moirais.fn.hmbel import geron_bellman_optimality
+from morie.fn.hmbel import geron_bellman_optimality
 
 
 def test_hmbel_basic():

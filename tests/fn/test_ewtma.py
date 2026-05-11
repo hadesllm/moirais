@@ -1,7 +1,7 @@
 """Tests for ewtma.ewma_volatility."""
 import numpy as np
 import pytest
-from moirais.fn.ewtma import ewma_volatility
+from morie.fn.ewtma import ewma_volatility
 
 
 def test_ewtma_basic():

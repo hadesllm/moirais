@@ -1,7 +1,7 @@
 """Tests for stlAn.stl_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.stlAn import stl_anomaly
+from morie.fn.stlAn import stl_anomaly
 
 
 def test_stlAn_basic():

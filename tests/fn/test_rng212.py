@@ -1,7 +1,7 @@
 """Tests for rng212.rangayyan_ch4_matched_filter_instantaneous_signal."""
 import numpy as np
 import pytest
-from moirais.fn.rng212 import rangayyan_ch4_matched_filter_instantaneous_signal
+from morie.fn.rng212 import rangayyan_ch4_matched_filter_instantaneous_signal
 
 
 def test_rng212_basic():

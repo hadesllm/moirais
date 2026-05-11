@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsrbf -- Multiquadric RBF interpolation"""
+"""Tests for morie.fn.zsrbf -- Multiquadric RBF interpolation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsrbf import rbf_multiquad
+from morie.fn.zsrbf import rbf_multiquad
 
 
 class TestRbfMultiquad:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.grnln -- Green's function convolution."""
+"""Tests for morie.fn.grnln -- Green's function convolution."""
 
 import numpy as np
-from moirais.fn.grnln import greens_convolve, grnln
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.grnln import greens_convolve, grnln
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGrnln:

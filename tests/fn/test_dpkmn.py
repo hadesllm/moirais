@@ -1,7 +1,7 @@
 """Tests for dpkmn.dp_kmeans."""
 import numpy as np
 import pytest
-from moirais.fn.dpkmn import dp_kmeans
+from morie.fn.dpkmn import dp_kmeans
 
 
 def test_dpkmn_basic():

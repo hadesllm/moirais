@@ -1,7 +1,7 @@
 """Tests for rgft.rangayyan_fourier_transform."""
 import numpy as np
 import pytest
-from moirais.fn.rgft import rangayyan_fourier_transform
+from morie.fn.rgft import rangayyan_fourier_transform
 
 
 def test_rgft_basic():

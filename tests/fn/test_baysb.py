@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.baysb -- BayesB genomic prediction."""
+"""Tests for morie.fn.baysb -- BayesB genomic prediction."""
 
 import numpy as np
 import pytest
-from moirais.fn.baysb import baysb
+from morie.fn.baysb import baysb
 
 
 def _sim(n=60, p=10, seed=42):

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svcli -- Optimal cutting line"""
+"""Tests for morie.fn.svcli -- Optimal cutting line"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svcli import cut_line
+from morie.fn.svcli import cut_line
 
 
 class TestCutLine:

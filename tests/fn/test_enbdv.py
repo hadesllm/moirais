@@ -1,7 +1,7 @@
 """Test enbdv."""
 import numpy as np
 import pytest
-from moirais.fn.enbdv import enbdv
+from morie.fn.enbdv import enbdv
 
 
 def test_enbdv_basic():

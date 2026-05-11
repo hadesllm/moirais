@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sird -- SIR compartmental model."""
+"""Tests for morie.fn.sird -- SIR compartmental model."""
 
 import numpy as np
 import pytest
-from moirais.fn.sird import sir_model
+from morie.fn.sird import sir_model
 
 
 class TestSIRModel:

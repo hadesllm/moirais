@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.mcnem import mcnem
+from morie.fn.mcnem import mcnem
 
 
 class TestMcnem:

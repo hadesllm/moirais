@@ -1,7 +1,7 @@
 """Test gcice."""
 import numpy as np
 import pytest
-from moirais.fn.gcice import gcice
+from morie.fn.gcice import gcice
 
 
 def test_gcice_basic():

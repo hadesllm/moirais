@@ -1,7 +1,7 @@
 """Tests for matransi.ma_logit_inverse."""
 import numpy as np
 import pytest
-from moirais.fn.matransi import ma_logit_inverse
+from morie.fn.matransi import ma_logit_inverse
 
 
 def test_matransi_basic():

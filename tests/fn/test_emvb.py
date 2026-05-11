@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.emvb -- EM variational Bayes."""
+"""Tests for morie.fn.emvb -- EM variational Bayes."""
 
 import numpy as np
-from moirais.fn.emvb import em_variational_bayes
+from morie.fn.emvb import em_variational_bayes
 
 
 def test_returns_dict():

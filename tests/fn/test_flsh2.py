@@ -1,7 +1,7 @@
 """Real knowledge is to know the extent of one's ignorance. — Confucius"""
 import numpy as np
 import pytest
-from moirais.fn.flsh2 import flash_attention
+from morie.fn.flsh2 import flash_attention
 
 
 def test_flsh2_basic():

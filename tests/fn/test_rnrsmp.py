@@ -1,7 +1,7 @@
 """Tests for rnrsmp."""
 import numpy as np
 import pytest
-from moirais.fn.rnrsmp import rnrsmp
+from morie.fn.rnrsmp import rnrsmp
 
 
 def test_rnrsmp_basic():
@@ -27,5 +27,5 @@ def test_rnrsmp_no_data():
 
 
 def test_rnrsmp_alias():
-    from moirais.fn.rnrsmp import rnrsmp
+    from morie.fn.rnrsmp import rnrsmp
     assert rnrsmp is rnrsmp

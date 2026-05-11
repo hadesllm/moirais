@@ -1,7 +1,7 @@
 """Tests for gh_c3_13.ghosal_polya_urn_pt."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c3_13 import ghosal_polya_urn_pt
+from morie.fn.gh_c3_13 import ghosal_polya_urn_pt
 
 
 def test_gh_c3_13_basic():

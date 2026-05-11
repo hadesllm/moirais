@@ -1,6 +1,6 @@
 """Tests for maest.py - MA estimation."""
 import numpy as np
-from moirais.fn.maest import ma_estimate_fn, maest
+from morie.fn.maest import ma_estimate_fn, maest
 
 
 def test_maest_returns_result():

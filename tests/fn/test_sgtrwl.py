@@ -1,7 +1,7 @@
 """Tests for sgtrwl.sgt_random_walk_laplacian."""
 import numpy as np
 import pytest
-from moirais.fn.sgtrwl import sgt_random_walk_laplacian
+from morie.fn.sgtrwl import sgt_random_walk_laplacian
 
 
 def test_sgtrwl_basic():

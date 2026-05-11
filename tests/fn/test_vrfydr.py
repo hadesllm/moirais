@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.vrfydr — verify directory."""
+"""Tests for morie.fn.vrfydr — verify directory."""
 
 import pandas as pd
 import pytest
 
-from moirais.fn.vrfydr import vrfydr, verify_directory
-from moirais.inspector import VerificationReport
+from morie.fn.vrfydr import vrfydr, verify_directory
+from morie.inspector import VerificationReport
 
 
 def test_alias_is_same_function():

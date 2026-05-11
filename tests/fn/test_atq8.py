@@ -1,7 +1,7 @@
 """Tests for atq8.int8_attention."""
 import numpy as np
 import pytest
-from moirais.fn.atq8 import int8_attention
+from morie.fn.atq8 import int8_attention
 
 
 def test_atq8_basic():

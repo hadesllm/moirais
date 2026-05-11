@@ -1,7 +1,7 @@
 """Tests for reffec.effective_reproduction."""
 import numpy as np
 import pytest
-from moirais.fn.reffec import effective_reproduction
+from morie.fn.reffec import effective_reproduction
 
 
 def test_reffec_basic():

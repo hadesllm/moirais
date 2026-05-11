@@ -1,7 +1,7 @@
 """Tests for cwcm.centering_within_cluster_mean."""
 import numpy as np
 import pytest
-from moirais.fn.cwcm import centering_within_cluster_mean
+from morie.fn.cwcm import centering_within_cluster_mean
 
 
 def test_cwcm_basic():

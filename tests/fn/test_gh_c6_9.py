@@ -1,7 +1,7 @@
 """Tests for gh_c6_9.ghosal_kl_perm."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c6_9 import ghosal_kl_perm
+from morie.fn.gh_c6_9 import ghosal_kl_perm
 
 
 def test_gh_c6_9_basic():

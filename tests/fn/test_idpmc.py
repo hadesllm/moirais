@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.idpmc."""
+"""Tests for morie.fn.idpmc."""
 
 import numpy as np
 import pytest
-from moirais.fn.idpmc import idpmc
+from morie.fn.idpmc import idpmc
 
 
 class TestIdpmc:

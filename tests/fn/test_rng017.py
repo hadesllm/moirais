@@ -1,7 +1,7 @@
 """Tests for rng017.rangayyan_ch3_acf_ensemble_estimate."""
 import numpy as np
 import pytest
-from moirais.fn.rng017 import rangayyan_ch3_acf_ensemble_estimate
+from morie.fn.rng017 import rangayyan_ch3_acf_ensemble_estimate
 
 
 def test_rng017_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.arcee -- arc length computation."""
+"""Tests for morie.fn.arcee -- arc length computation."""
 
 import numpy as np
-from moirais.fn.arcee import arc_length, arcee
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.arcee import arc_length, arcee
+from morie.fn._containers import DescriptiveResult
 
 
 class TestArcee:

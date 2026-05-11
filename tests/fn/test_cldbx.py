@@ -1,7 +1,7 @@
 """Test cldbx."""
 import numpy as np
 import pytest
-from moirais.fn.cldbx import cldbx
+from morie.fn.cldbx import cldbx
 
 
 def test_cldbx_basic():

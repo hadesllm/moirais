@@ -1,6 +1,6 @@
 """Tests for spatial error model."""
 import numpy as np
-from moirais.fn.sgsem import sgsem
+from morie.fn.sgsem import sgsem
 
 
 def test_sgsem_smoke():
@@ -23,7 +23,7 @@ def test_sgsem_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgsem import cheatsheet
+    from morie.fn.sgsem import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

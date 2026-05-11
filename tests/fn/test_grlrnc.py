@@ -1,7 +1,7 @@
 """Tests for grlrnc.geron_learning_curves."""
 import numpy as np
 import pytest
-from moirais.fn.grlrnc import geron_learning_curves
+from morie.fn.grlrnc import geron_learning_curves
 
 
 def test_grlrnc_basic():

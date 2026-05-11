@@ -1,7 +1,7 @@
 """Tests for vime.empirical_orthogonal_func."""
 import numpy as np
 import pytest
-from moirais.fn.vime import empirical_orthogonal_func
+from morie.fn.vime import empirical_orthogonal_func
 
 
 def test_vime_basic():

@@ -1,7 +1,7 @@
 """Tests for msm047.mvsml_bayesian_regression_eq_6_2."""
 import numpy as np
 import pytest
-from moirais.fn.msm047 import mvsml_bayesian_regression_eq_6_2
+from morie.fn.msm047 import mvsml_bayesian_regression_eq_6_2
 
 
 def test_msm047_basic():

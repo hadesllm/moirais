@@ -1,7 +1,7 @@
 """Tests for siglip.siglip_pairwise."""
 import numpy as np
 import pytest
-from moirais.fn.siglip import siglip_pairwise
+from morie.fn.siglip import siglip_pairwise
 
 
 def test_siglip_basic():

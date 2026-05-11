@@ -1,7 +1,7 @@
 """Tests for otbreg.ot_bregman_proj."""
 import numpy as np
 import pytest
-from moirais.fn.otbreg import ot_bregman_proj
+from morie.fn.otbreg import ot_bregman_proj
 
 
 def test_otbreg_basic():

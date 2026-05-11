@@ -1,7 +1,7 @@
 """Test gdinm."""
 import numpy as np
 import pytest
-from moirais.fn.gdinm import gdinm
+from morie.fn.gdinm import gdinm
 
 
 def test_gdinm_basic():

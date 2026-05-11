@@ -1,7 +1,7 @@
 """Tests for voltsr.vol_two_scale_rv."""
 import numpy as np
 import pytest
-from moirais.fn.voltsr import vol_two_scale_rv
+from morie.fn.voltsr import vol_two_scale_rv
 
 
 def test_voltsr_basic():

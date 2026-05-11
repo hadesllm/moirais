@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ssefn -- SSE for MDS."""
+"""Tests for morie.fn.ssefn -- SSE for MDS."""
 
 import numpy as np
-from moirais.fn.ssefn import sse_mds, ssefn
+from morie.fn.ssefn import sse_mds, ssefn
 
 
 def test_ssefn_perfect():

@@ -1,6 +1,6 @@
 """Tests for difag — DIF by age group."""
 import numpy as np
-from moirais.fn.difag import difag
+from morie.fn.difag import difag
 
 def test_difag_basic(mapq_df):
     # Need binary age groups for MH DIF
@@ -11,7 +11,7 @@ def test_difag_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.difag import cheatsheet
+    from morie.fn.difag import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

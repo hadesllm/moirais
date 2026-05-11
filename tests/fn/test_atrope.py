@@ -1,7 +1,7 @@
 """Tests for atrope.rotary_position_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.atrope import rotary_position_embedding
+from morie.fn.atrope import rotary_position_embedding
 
 
 def test_atrope_basic():

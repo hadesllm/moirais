@@ -1,7 +1,7 @@
 """Test closf."""
 import numpy as np
 import pytest
-from moirais.fn.closf import closf
+from morie.fn.closf import closf
 
 
 def test_closf_basic():

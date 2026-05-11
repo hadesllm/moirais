@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vginv -- Indicator variogram"""
+"""Tests for morie.fn.vginv -- Indicator variogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vginv import indicator_vario
+from morie.fn.vginv import indicator_vario
 
 
 class TestIndicatorVario:

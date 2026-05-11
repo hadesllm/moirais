@@ -1,7 +1,7 @@
 """Test mazop."""
 import numpy as np
 import pytest
-from moirais.fn.mazop import mazop
+from morie.fn.mazop import mazop
 
 
 def test_mazop_basic():

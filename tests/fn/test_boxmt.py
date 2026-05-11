@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.boxmt -- Box's M test."""
+"""Tests for morie.fn.boxmt -- Box's M test."""
 
 import numpy as np
-from moirais.fn.boxmt import box_m_test, boxmt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.boxmt import box_m_test, boxmt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBoxMTest:

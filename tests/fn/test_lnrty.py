@@ -1,8 +1,8 @@
 """Test linearity_test (lnrty)."""
 import numpy as np
 
-from moirais.fn.lnrty import linearity_test, lnrty
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lnrty import linearity_test, lnrty
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLinearityTest:

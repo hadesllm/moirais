@@ -1,7 +1,7 @@
 """Tests for sgtsbm.sgt_spectral_clustering_2."""
 import numpy as np
 import pytest
-from moirais.fn.sgtsbm import sgt_spectral_clustering_2
+from morie.fn.sgtsbm import sgt_spectral_clustering_2
 
 
 def test_sgtsbm_basic():

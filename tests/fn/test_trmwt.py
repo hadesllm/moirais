@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.trmwt -- Trimmed weights."""
+"""Tests for morie.fn.trmwt -- Trimmed weights."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.trmwt import trimmed_weights, trmwt
+from morie.fn.trmwt import trimmed_weights, trmwt
 
 
 class TestTrimmedWeights:

@@ -1,6 +1,6 @@
 """Test dic."""
 import pytest
-from moirais.fn.dic import deviance_info_criterion
+from morie.fn.dic import deviance_info_criterion
 
 
 def test_dic_basic():

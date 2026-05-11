@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.mi_sc -- scalar invariance."""
+"""Tests for morie.fn.mi_sc -- scalar invariance."""
 
-from moirais.fn.mi_sc import mi_scalar
+from morie.fn.mi_sc import mi_scalar
 
 
 class TestMiScalar:

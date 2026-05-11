@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pptet -- Phillips-Perron test."""
+"""Tests for morie.fn.pptet -- Phillips-Perron test."""
 import numpy as np
 import pytest
-from moirais.fn.pptet import pp_test
+from morie.fn.pptet import pp_test
 
 
 class TestPP:
@@ -16,5 +16,5 @@ class TestPP:
             pp_test(np.ones(5))
 
     def test_cheatsheet(self):
-        from moirais.fn.pptet import cheatsheet
+        from morie.fn.pptet import cheatsheet
         assert isinstance(cheatsheet(), str)

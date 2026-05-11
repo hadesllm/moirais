@@ -1,7 +1,7 @@
 """Tests for km116.kamath_ch8_brevity_penalty."""
 import numpy as np
 import pytest
-from moirais.fn.km116 import kamath_ch8_brevity_penalty
+from morie.fn.km116 import kamath_ch8_brevity_penalty
 
 
 def test_km116_basic():

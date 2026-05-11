@@ -1,7 +1,7 @@
 """Tests for grnsp.geron_bert_nsp_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grnsp import geron_bert_nsp_loss
+from morie.fn.grnsp import geron_bert_nsp_loss
 
 
 def test_grnsp_basic():

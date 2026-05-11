@@ -1,7 +1,7 @@
 """Tests for rgrespsnd.rangayyan_respiratory_sound."""
 import numpy as np
 import pytest
-from moirais.fn.rgrespsnd import rangayyan_respiratory_sound
+from morie.fn.rgrespsnd import rangayyan_respiratory_sound
 
 
 def test_rgrespsnd_basic():

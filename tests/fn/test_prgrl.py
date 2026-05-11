@@ -1,7 +1,7 @@
 """Tests for prgrl.prog_rl."""
 import numpy as np
 import pytest
-from moirais.fn.prgrl import prog_rl
+from morie.fn.prgrl import prog_rl
 
 
 def test_prgrl_basic():

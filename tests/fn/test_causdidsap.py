@@ -1,7 +1,7 @@
 """Tests for causdidsap.causal_did_sun_abraham."""
 import numpy as np
 import pytest
-from moirais.fn.causdidsap import causal_did_sun_abraham
+from morie.fn.causdidsap import causal_did_sun_abraham
 
 
 def test_causdidsap_basic():

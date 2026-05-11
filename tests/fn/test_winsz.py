@@ -1,6 +1,6 @@
 """Tests for winsorize."""
 import numpy as np, pytest
-from moirais.fn.winsz import winsorize
+from morie.fn.winsz import winsorize
 
 class TestWinsorize:
     def test_basic(self):

@@ -1,7 +1,7 @@
 """Tests for appnp.appnp."""
 import numpy as np
 import pytest
-from moirais.fn.appnp import appnp
+from morie.fn.appnp import appnp
 
 
 def test_appnp_basic():

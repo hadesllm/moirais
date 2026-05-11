@@ -1,7 +1,7 @@
 """Tests for llama.llama."""
 import numpy as np
 import pytest
-from moirais.fn.llama import llama
+from morie.fn.llama import llama
 
 
 def test_llama_basic():

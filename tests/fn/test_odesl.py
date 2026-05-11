@@ -1,7 +1,7 @@
 """Tests for odesl.ode_symbolic."""
 import numpy as np
 import pytest
-from moirais.fn.odesl import ode_symbolic
+from morie.fn.odesl import ode_symbolic
 
 
 def test_odesl_basic():

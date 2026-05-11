@@ -1,7 +1,7 @@
 """Tests for itinft.item_information_function."""
 import numpy as np
 import pytest
-from moirais.fn.itinft import item_information_function
+from morie.fn.itinft import item_information_function
 
 
 def test_itinft_basic():

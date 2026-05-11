@@ -1,7 +1,7 @@
 """Tests for mambss.mamba_ssm_step."""
 import numpy as np
 import pytest
-from moirais.fn.mambss import mamba_ssm_step
+from morie.fn.mambss import mamba_ssm_step
 
 
 def test_mambss_basic():

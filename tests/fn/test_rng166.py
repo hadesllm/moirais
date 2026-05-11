@@ -1,7 +1,7 @@
 """Tests for rng166.rangayyan_ch3_rls_theta_vector."""
 import numpy as np
 import pytest
-from moirais.fn.rng166 import rangayyan_ch3_rls_theta_vector
+from morie.fn.rng166 import rangayyan_ch3_rls_theta_vector
 
 
 def test_rng166_basic():

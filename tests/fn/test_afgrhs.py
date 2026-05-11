@@ -1,7 +1,7 @@
 """Test afgrhs."""
 import numpy as np
 import pytest
-from moirais.fn.afgrhs import afgrhs
+from morie.fn.afgrhs import afgrhs
 
 
 def test_afgrhs_basic():

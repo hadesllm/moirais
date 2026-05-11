@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgmtx -- Kriging system matrix"""
+"""Tests for morie.fn.kgmtx -- Kriging system matrix"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgmtx import kriging_matrix
+from morie.fn.kgmtx import kriging_matrix
 
 
 class TestKrigingMatrix:

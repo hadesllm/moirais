@@ -1,6 +1,6 @@
 """Tests for wvvar.py - Wavelet variance."""
 import numpy as np
-from moirais.fn.wvvar import wavelet_variance, wvvar
+from morie.fn.wvvar import wavelet_variance, wvvar
 
 
 def test_wvvar_returns_descriptive_result():

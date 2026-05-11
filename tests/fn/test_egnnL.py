@@ -1,7 +1,7 @@
 """Tests for egnnL.egnn_layer."""
 import numpy as np
 import pytest
-from moirais.fn.egnnL import egnn_layer
+from morie.fn.egnnL import egnn_layer
 
 
 def test_egnnL_basic():

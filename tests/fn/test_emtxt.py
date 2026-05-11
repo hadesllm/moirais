@@ -1,7 +1,7 @@
 """Tests for emtxt.em_irt_text."""
 import numpy as np
 import pytest
-from moirais.fn.emtxt import em_irt_text
+from morie.fn.emtxt import em_irt_text
 
 
 def test_emtxt_basic():

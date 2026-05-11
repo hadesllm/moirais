@@ -1,7 +1,7 @@
 """Tests for alphas.alphazero_self_play."""
 import numpy as np
 import pytest
-from moirais.fn.alphas import alphazero_self_play
+from morie.fn.alphas import alphazero_self_play
 
 
 def test_alphas_basic():

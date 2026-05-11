@@ -1,7 +1,7 @@
 """Test myogram_onset (myodt)."""
 import numpy as np
-from moirais.fn.myodt import myogram_onset, myodt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.myodt import myogram_onset, myodt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMyogramOnset:

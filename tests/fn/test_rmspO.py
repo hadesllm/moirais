@@ -1,7 +1,7 @@
 """Tests for rmspO.rmsprop_optimizer."""
 import numpy as np
 import pytest
-from moirais.fn.rmspO import rmsprop_optimizer
+from morie.fn.rmspO import rmsprop_optimizer
 
 
 def test_rmspO_basic():

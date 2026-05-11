@@ -1,7 +1,7 @@
 """Tests for otfgw.ot_fused_gromov_wasserstein."""
 import numpy as np
 import pytest
-from moirais.fn.otfgw import ot_fused_gromov_wasserstein
+from morie.fn.otfgw import ot_fused_gromov_wasserstein
 
 
 def test_otfgw_basic():

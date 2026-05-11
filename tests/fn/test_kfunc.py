@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.kfunc — Ripley's K."""
+"""Tests for morie.fn.kfunc — Ripley's K."""
 import numpy as np
-from moirais.fn.kfunc import ripley_k
+from morie.fn.kfunc import ripley_k
 
 
 class TestRipleyK:

@@ -1,7 +1,7 @@
 """Tests for merck.mercer_theorem."""
 import numpy as np
 import pytest
-from moirais.fn.merck import mercer_theorem
+from morie.fn.merck import mercer_theorem
 
 
 def test_merck_basic():

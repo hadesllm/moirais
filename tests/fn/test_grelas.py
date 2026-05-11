@@ -1,7 +1,7 @@
 """Tests for grelas.geron_elastic_net_cost."""
 import numpy as np
 import pytest
-from moirais.fn.grelas import geron_elastic_net_cost
+from morie.fn.grelas import geron_elastic_net_cost
 
 
 def test_grelas_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgros -- Variogram rose diagram"""
+"""Tests for morie.fn.vgros -- Variogram rose diagram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgros import vario_rose
+from morie.fn.vgros import vario_rose
 
 
 class TestVarioRose:

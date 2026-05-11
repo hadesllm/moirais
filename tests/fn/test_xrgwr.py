@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrgwr -- GWR basic estimation"""
+"""Tests for morie.fn.xrgwr -- GWR basic estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrgwr import gwr_basic
+from morie.fn.xrgwr import gwr_basic
 
 
 class TestGwrBasic:

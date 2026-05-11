@@ -1,6 +1,6 @@
 """Tests for metric_mds."""
 import numpy as np, pytest
-from moirais.fn.mds_ import metric_mds
+from morie.fn.mds_ import metric_mds
 
 class TestMDS:
     def test_basic(self):

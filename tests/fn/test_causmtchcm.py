@@ -1,7 +1,7 @@
 """Tests for causmtchcm.causal_caliper_matching."""
 import numpy as np
 import pytest
-from moirais.fn.causmtchcm import causal_caliper_matching
+from morie.fn.causmtchcm import causal_caliper_matching
 
 
 def test_causmtchcm_basic():

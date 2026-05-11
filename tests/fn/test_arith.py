@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.arith — arithmetic coding."""
+"""Tests for morie.fn.arith — arithmetic coding."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.arith import arith
+from morie.fn.arith import arith
 
 
 class TestArith:

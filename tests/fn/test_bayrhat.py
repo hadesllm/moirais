@@ -1,7 +1,7 @@
 """Tests for bayrhat.r_hat."""
 import numpy as np
 import pytest
-from moirais.fn.bayrhat import r_hat
+from morie.fn.bayrhat import r_hat
 
 
 def test_bayrhat_basic():

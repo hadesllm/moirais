@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ecdf — Empirical CDF with DKW confidence bands."""
+"""Tests for morie.fn.ecdf — Empirical CDF with DKW confidence bands."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ecdf import ecdf, ECDFResult
+from morie.fn.ecdf import ecdf, ECDFResult
 
 
 @pytest.fixture()

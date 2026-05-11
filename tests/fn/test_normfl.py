@@ -1,7 +1,7 @@
 """Tests for normfl.normalizing_flow."""
 import numpy as np
 import pytest
-from moirais.fn.normfl import normalizing_flow
+from morie.fn.normfl import normalizing_flow
 
 
 def test_normfl_basic():

@@ -1,7 +1,7 @@
 """Tests for gb738.gibbons_chernoff_savage."""
 import numpy as np
 import pytest
-from moirais.fn.gb738 import gibbons_chernoff_savage
+from morie.fn.gb738 import gibbons_chernoff_savage
 
 
 def test_gb738_basic():

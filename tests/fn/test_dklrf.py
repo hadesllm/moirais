@@ -1,7 +1,7 @@
 """Test dklrf."""
 import numpy as np
 import pytest
-from moirais.fn.dklrf import dklrf
+from morie.fn.dklrf import dklrf
 
 
 def test_dklrf_basic():

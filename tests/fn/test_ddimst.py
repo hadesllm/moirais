@@ -1,7 +1,7 @@
 """Tests for ddimst.ddim_step."""
 import numpy as np
 import pytest
-from moirais.fn.ddimst import ddim_step
+from morie.fn.ddimst import ddim_step
 
 
 def test_ddimst_basic():

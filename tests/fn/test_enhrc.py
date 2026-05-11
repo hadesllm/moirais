@@ -1,7 +1,7 @@
 """Test enhrc."""
 import numpy as np
 import pytest
-from moirais.fn.enhrc import enhrc
+from morie.fn.enhrc import enhrc
 
 
 def test_enhrc_basic():

@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.wndchl import wind_chill, wndchl
+from morie.fn.wndchl import wind_chill, wndchl
 
 
 def test_wndchl_environment_canada_reference():

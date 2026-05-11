@@ -1,6 +1,6 @@
 """Test softmax activation."""
 import numpy as np
-from moirais.fn.softm import softm
+from morie.fn.softm import softm
 
 
 def test_softm_basic():

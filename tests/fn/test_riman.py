@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.riman -- Riemann curvature tensor."""
+"""Tests for morie.fn.riman -- Riemann curvature tensor."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.riman import riman
+from morie.fn.riman import riman
 
 
 def test_returns_dict():

@@ -1,7 +1,7 @@
 """Tests for gb651p.gibbons_ctrl_median_power."""
 import numpy as np
 import pytest
-from moirais.fn.gb651p import gibbons_ctrl_median_power
+from morie.fn.gb651p import gibbons_ctrl_median_power
 
 
 def test_gb651p_basic():

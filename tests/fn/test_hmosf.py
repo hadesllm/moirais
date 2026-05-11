@@ -1,7 +1,7 @@
 """Tests for hmosf.geron_one_shot."""
 import numpy as np
 import pytest
-from moirais.fn.hmosf import geron_one_shot
+from morie.fn.hmosf import geron_one_shot
 
 
 def test_hmosf_basic():

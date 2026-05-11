@@ -1,7 +1,7 @@
 """Tests for sgtwh.sgt_wiener_index."""
 import numpy as np
 import pytest
-from moirais.fn.sgtwh import sgt_wiener_index
+from morie.fn.sgtwh import sgt_wiener_index
 
 
 def test_sgtwh_basic():

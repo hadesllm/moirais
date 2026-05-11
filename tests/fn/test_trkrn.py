@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.trkrn — triweight kernel."""
+"""Tests for morie.fn.trkrn — triweight kernel."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.trkrn import trkrn
+from morie.fn.trkrn import trkrn
 
 
 class TestTrkrn:

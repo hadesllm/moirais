@@ -1,7 +1,7 @@
 """Tests for ddpmst.ddpm_step."""
 import numpy as np
 import pytest
-from moirais.fn.ddpmst import ddpm_step
+from morie.fn.ddpmst import ddpm_step
 
 
 def test_ddpmst_basic():

@@ -1,7 +1,7 @@
 """Tests for fzchsp.fauzi_chung_smirnov."""
 import numpy as np
 import pytest
-from moirais.fn.fzchsp import fauzi_chung_smirnov
+from morie.fn.fzchsp import fauzi_chung_smirnov
 
 
 def test_fzchsp_basic():

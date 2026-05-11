@@ -1,7 +1,7 @@
 """Tests for tqorth.turboquant_orthogonalized_jl."""
 import numpy as np
 import pytest
-from moirais.fn.tqorth import turboquant_orthogonalized_jl
+from morie.fn.tqorth import turboquant_orthogonalized_jl
 
 
 def test_tqorth_basic():

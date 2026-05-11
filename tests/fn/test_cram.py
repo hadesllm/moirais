@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cram — alias for Cramer's V."""
+"""Tests for morie.fn.cram — alias for Cramer's V."""
 import numpy as np
 
-from moirais.fn.cram import cram
+from morie.fn.cram import cram
 
 
 def test_cram_is_callable():
@@ -12,6 +12,6 @@ def test_cram_is_callable():
 
 
 def test_cram_same_as_cramv():
-    from moirais.fn.cramv import cramers_v
+    from morie.fn.cramv import cramers_v
     table = [[5, 15], [25, 35]]
     assert cram(table) == cramers_v(table)

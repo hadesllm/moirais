@@ -1,7 +1,7 @@
 """Test ppmnl."""
 import numpy as np
 import pytest
-from moirais.fn.ppmnl import ppmnl
+from morie.fn.ppmnl import ppmnl
 
 
 def test_ppmnl_basic():

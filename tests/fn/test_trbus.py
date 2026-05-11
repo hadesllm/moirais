@@ -1,7 +1,7 @@
 """Test trbus."""
 import numpy as np
 import pytest
-from moirais.fn.trbus import trbus
+from morie.fn.trbus import trbus
 
 
 def test_trbus_basic():

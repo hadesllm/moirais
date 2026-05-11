@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dtrot."""
+"""Tests for morie.fn.dtrot."""
 
 import numpy as np
 import pytest
-from moirais.fn.dtrot import dtrot
+from morie.fn.dtrot import dtrot
 
 
 class TestDtrot:

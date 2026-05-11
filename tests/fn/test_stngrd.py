@@ -1,7 +1,7 @@
 """Tests for stngrd.stn_spatial_transform."""
 import numpy as np
 import pytest
-from moirais.fn.stngrd import stn_spatial_transform
+from morie.fn.stngrd import stn_spatial_transform
 
 
 def test_stngrd_basic():

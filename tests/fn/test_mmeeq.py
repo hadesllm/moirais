@@ -1,7 +1,7 @@
 """Tests for mmeeq.henderson_mme_eq2_2."""
 import numpy as np
 import pytest
-from moirais.fn.mmeeq import henderson_mme_eq2_2
+from morie.fn.mmeeq import henderson_mme_eq2_2
 
 
 def test_mmeeq_basic():

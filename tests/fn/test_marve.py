@@ -1,7 +1,7 @@
 """Tests for marve.ma_robust_variance_est."""
 import numpy as np
 import pytest
-from moirais.fn.marve import ma_robust_variance_est
+from morie.fn.marve import ma_robust_variance_est
 
 
 def test_marve_basic():

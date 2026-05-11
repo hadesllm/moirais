@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rmpob -- Random match probability."""
+"""Tests for morie.fn.rmpob -- Random match probability."""
 
 import numpy as np
 import pytest
-from moirais.fn.rmpob import rmpob
+from morie.fn.rmpob import rmpob
 
 
 class TestRmpob:

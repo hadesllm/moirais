@@ -1,13 +1,13 @@
 TurboQuant — Vector Quantization
 =================================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS implements the TurboQuant algorithm as a **standalone vector compression library** (``moirais.quant``). It is validated against the paper's theoretical bounds and achieves near-optimal distortion rates.
+MORIE implements the TurboQuant algorithm as a **standalone vector compression library** (``morie.quant``). It is validated against the paper's theoretical bounds and achieves near-optimal distortion rates.
 
 .. important::
 
-   ``moirais.quant`` compresses arbitrary vectors — it is **not** integrated into Ollama's inference pipeline. For runtime KV-cache compression during LLM inference, use Ollama's built-in support::
+   ``morie.quant`` compresses arbitrary vectors — it is **not** integrated into Ollama's inference pipeline. For runtime KV-cache compression during LLM inference, use Ollama's built-in support::
 
        OLLAMA_KV_CACHE_TYPE="q8_0" ollama serve
 
@@ -97,7 +97,7 @@ Synthetic Validation
 
 Validated on random Gaussian vectors (d=128 and d=256):
 
-**Python path** (``moirais.quant``):
+**Python path** (``morie.quant``):
 
 - **2-bit, d=128** — MSE 0.096 (bound 0.170), cosine 0.946, 7.1× compression.
 - **3-bit, d=128** — MSE 0.030 (bound 0.043), cosine 0.984, 4.9× compression.
@@ -193,11 +193,11 @@ is safe for any dataset without risk of overfitting to calibration distributions
 Implementation
 --------------
 
-**Python** (``moirais.quant``):
+**Python** (``morie.quant``):
 
 .. code-block:: python
 
-   from moirais.quant import turboquant_mse, turboquant_mse_decode
+   from morie.quant import turboquant_mse, turboquant_mse_decode
    import numpy as np
    x = np.random.default_rng(42).standard_normal(256)
    block = turboquant_mse(x, bits=3)       # 5.1x compression
@@ -212,7 +212,7 @@ Implementation
 
 .. code-block:: python
 
-   from moirais.quant_bridge import GGMLTurboQuant
+   from morie.quant_bridge import GGMLTurboQuant
    tq = GGMLTurboQuant()  # auto-loads .dylib
    block = tq.quantize(x.astype(np.float32), bits=3)
    x_hat = tq.dequantize(block, bits=3)
@@ -221,7 +221,7 @@ Codebook Resolution
 -------------------
 
 Lloyd-Max codebook quality is controlled by the grid resolution parameter in
-``moirais.quant``. The codebook is built by discretizing the Beta distribution PDF
+``morie.quant``. The codebook is built by discretizing the Beta distribution PDF
 on a uniform grid and running the Lloyd-Max iteration.
 
 - **10,000-point grid** — centroid precision ~1e-4, cosine 0.995 at 4-bit.

@@ -1,7 +1,7 @@
 """Tests for aitpie.compositional_pielou."""
 import numpy as np
 import pytest
-from moirais.fn.aitpie import compositional_pielou
+from morie.fn.aitpie import compositional_pielou
 
 
 def test_aitpie_basic():

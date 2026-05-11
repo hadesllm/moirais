@@ -1,6 +1,6 @@
 """Tests for aicsc.py - AIC score."""
 import numpy as np
-from moirais.fn.aicsc import aic_score_fn, aicsc
+from morie.fn.aicsc import aic_score_fn, aicsc
 
 
 def test_aicsc_returns_result():

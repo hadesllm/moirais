@@ -1,7 +1,7 @@
 """Tests for sgtclo.sgt_closeness_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.sgtclo import sgt_closeness_centrality
+from morie.fn.sgtclo import sgt_closeness_centrality
 
 
 def test_sgtclo_basic():

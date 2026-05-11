@@ -1,7 +1,7 @@
 """Test dtrlg."""
 import numpy as np
 import pytest
-from moirais.fn.dtrlg import dtrlg
+from morie.fn.dtrlg import dtrlg
 
 
 def test_dtrlg_basic():

@@ -1,7 +1,7 @@
 """Test maalk."""
 import numpy as np
 import pytest
-from moirais.fn.maalk import maalk
+from morie.fn.maalk import maalk
 
 
 def test_maalk_basic():

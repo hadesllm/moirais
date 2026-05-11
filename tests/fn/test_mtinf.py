@@ -1,7 +1,7 @@
 """Test mtinf."""
 import numpy as np
 import pytest
-from moirais.fn.mtinf import mtinf
+from morie.fn.mtinf import mtinf
 
 
 def test_mtinf_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzw1.horowitz_wild_bootstrap."""
 import numpy as np
 import pytest
-from moirais.fn.hrzw1 import horowitz_wild_bootstrap
+from morie.fn.hrzw1 import horowitz_wild_bootstrap
 
 
 def test_hrzw1_basic():

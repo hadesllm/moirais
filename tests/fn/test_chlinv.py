@@ -1,7 +1,7 @@
 """Tests for chlinv."""
 import numpy as np
 import pytest
-from moirais.fn.chlinv import chlinv
+from morie.fn.chlinv import chlinv
 
 
 def test_chlinv_basic():
@@ -27,5 +27,5 @@ def test_chlinv_no_data():
 
 
 def test_chlinv_alias():
-    from moirais.fn.chlinv import chlinv
+    from morie.fn.chlinv import chlinv
     assert chlinv is chlinv

@@ -1,7 +1,7 @@
 """Tests for wilcox14u443.wilcox_chapter_14_unnumbered_443."""
 import numpy as np
 import pytest
-from moirais.fn.wilcox14u443 import wilcox_chapter_14_unnumbered_443
+from morie.fn.wilcox14u443 import wilcox_chapter_14_unnumbered_443
 
 
 def test_wilcox14u443_basic():

@@ -1,7 +1,7 @@
 """Tests for tmlsen.tmle_sensitivity_unmeasured."""
 import numpy as np
 import pytest
-from moirais.fn.tmlsen import tmle_sensitivity_unmeasured
+from morie.fn.tmlsen import tmle_sensitivity_unmeasured
 
 
 def test_tmlsen_basic():

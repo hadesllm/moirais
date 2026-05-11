@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.holo_q -- QQ plot."""
+"""Tests for morie.fn.holo_q -- QQ plot."""
 
 import numpy as np
 import pytest
@@ -6,7 +6,7 @@ import pytest
 plt = pytest.importorskip("matplotlib.pyplot")
 pytest.importorskip("scipy")
 
-from moirais.fn.holo_q import holo_qq
+from morie.fn.holo_q import holo_qq
 
 
 class TestHoloQQ:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.chng — changepoint detection."""
+"""Tests for morie.fn.chng — changepoint detection."""
 import numpy as np
 import pytest
-from moirais.fn.chng import changepoint_detect
+from morie.fn.chng import changepoint_detect
 
 
 class TestChangepoint:

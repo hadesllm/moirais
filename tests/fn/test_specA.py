@@ -1,7 +1,7 @@
 """Tests for specA.spectral_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.specA import spectral_anomaly
+from morie.fn.specA import spectral_anomaly
 
 
 def test_specA_basic():

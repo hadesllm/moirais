@@ -1,7 +1,7 @@
 """Tests for hmstz.geron_standardization."""
 import numpy as np
 import pytest
-from moirais.fn.hmstz import geron_standardization
+from morie.fn.hmstz import geron_standardization
 
 
 def test_hmstz_basic():

@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.vrfy — verify statistical output."""
+"""Tests for morie.fn.vrfy — verify statistical output."""
 
 import pandas as pd
 import pytest
 
-from moirais.fn.vrfy import vrfy, verify_statistical_output
-from moirais.inspector import VerificationReport
+from morie.fn.vrfy import vrfy, verify_statistical_output
+from morie.inspector import VerificationReport
 
 
 def test_alias_is_same_function():

@@ -1,7 +1,7 @@
 """Tests for trfbl.transformer_block."""
 import numpy as np
 import pytest
-from moirais.fn.trfbl import transformer_block
+from morie.fn.trfbl import transformer_block
 
 
 def test_trfbl_basic():

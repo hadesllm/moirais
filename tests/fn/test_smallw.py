@@ -1,7 +1,7 @@
 """Tests for smallw.small_world_sigma."""
 import numpy as np
 import pytest
-from moirais.fn.smallw import small_world_sigma
+from morie.fn.smallw import small_world_sigma
 
 
 def test_smallw_basic():

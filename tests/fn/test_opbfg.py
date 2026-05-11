@@ -1,7 +1,7 @@
 """Test opbfg."""
 import numpy as np
 import pytest
-from moirais.fn.opbfg import opbfg
+from morie.fn.opbfg import opbfg
 
 
 def test_opbfg_basic():

@@ -1,7 +1,7 @@
 """Tests for kmglv.kamath_glove_cost."""
 import numpy as np
 import pytest
-from moirais.fn.kmglv import kamath_glove_cost
+from morie.fn.kmglv import kamath_glove_cost
 
 
 def test_kmglv_basic():

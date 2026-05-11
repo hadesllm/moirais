@@ -1,7 +1,7 @@
 """Tests for cfaes -- ESEM."""
 import numpy as np
-from moirais.fn.cfaes import cfa_esem
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cfaes import cfa_esem
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCfaEsem:

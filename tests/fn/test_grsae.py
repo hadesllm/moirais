@@ -1,7 +1,7 @@
 """Tests for grsae.geron_sparse_autoencoder."""
 import numpy as np
 import pytest
-from moirais.fn.grsae import geron_sparse_autoencoder
+from morie.fn.grsae import geron_sparse_autoencoder
 
 
 def test_grsae_basic():

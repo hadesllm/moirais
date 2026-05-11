@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zestm — Z-estimator (estimating equations)."""
+"""Tests for morie.fn.zestm — Z-estimator (estimating equations)."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zestm import zestm, ZEstimatorResult
+from morie.fn.zestm import zestm, ZEstimatorResult
 
 
 def _mean_psi(xi, theta):

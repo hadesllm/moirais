@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.icerr -- ICER."""
+"""Tests for morie.fn.icerr -- ICER."""
 
 import numpy as np
 import pytest
-from moirais.fn.icerr import incremental_cost_effectiveness_ratio
+from morie.fn.icerr import incremental_cost_effectiveness_ratio
 
 
 class TestICER:

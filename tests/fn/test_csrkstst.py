@@ -1,7 +1,7 @@
 """Tests for csrkstst.kstest_csr."""
 import numpy as np
 import pytest
-from moirais.fn.csrkstst import kstest_csr
+from morie.fn.csrkstst import kstest_csr
 
 
 def test_csrkstst_basic():

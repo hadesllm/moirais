@@ -1,7 +1,7 @@
 """Test trfst."""
 import numpy as np
 import pytest
-from moirais.fn.trfst import trfst
+from morie.fn.trfst import trfst
 
 
 def test_trfst_basic():

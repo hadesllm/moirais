@@ -1,7 +1,7 @@
 """Test ppnyn."""
 import numpy as np
 import pytest
-from moirais.fn.ppnyn import ppnyn
+from morie.fn.ppnyn import ppnyn
 
 
 def test_ppnyn_basic():

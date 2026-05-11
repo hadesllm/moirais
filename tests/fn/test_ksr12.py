@@ -1,7 +1,7 @@
 """Tests for ksr12.kosorok_information_bound."""
 import numpy as np
 import pytest
-from moirais.fn.ksr12 import kosorok_information_bound
+from morie.fn.ksr12 import kosorok_information_bound
 
 
 def test_ksr12_basic():

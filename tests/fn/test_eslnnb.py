@@ -1,7 +1,7 @@
 """Tests for eslnnb.esl_naive_bayes."""
 import numpy as np
 import pytest
-from moirais.fn.eslnnb import esl_naive_bayes
+from morie.fn.eslnnb import esl_naive_bayes
 
 
 def test_eslnnb_basic():

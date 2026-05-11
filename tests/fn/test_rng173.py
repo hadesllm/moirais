@@ -1,7 +1,7 @@
 """Tests for rng173.rangayyan_ch3_rls_gain_identity."""
 import numpy as np
 import pytest
-from moirais.fn.rng173 import rangayyan_ch3_rls_gain_identity
+from morie.fn.rng173 import rangayyan_ch3_rls_gain_identity
 
 
 def test_rng173_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.tscls — 1-NN DTW classifier."""
+"""Tests for morie.fn.tscls — 1-NN DTW classifier."""
 import numpy as np
-from moirais.fn.tscls import ts_classify
+from morie.fn.tscls import ts_classify
 
 
 class TestTSClassify:

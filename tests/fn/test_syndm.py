@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.syndm — Syndromic surveillance score."""
+"""Tests for morie.fn.syndm — Syndromic surveillance score."""
 
 import pytest
 
-from moirais.fn.syndm import syndromic_score
+from morie.fn.syndm import syndromic_score
 
 
 class TestSyndromicScore:

@@ -1,7 +1,7 @@
 """Tests for eslpcr.esl_pcr."""
 import numpy as np
 import pytest
-from moirais.fn.eslpcr import esl_pcr
+from morie.fn.eslpcr import esl_pcr
 
 
 def test_eslpcr_basic():

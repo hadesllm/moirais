@@ -1,7 +1,7 @@
 """Tests for fzmis.fauzi_mise_computation."""
 import numpy as np
 import pytest
-from moirais.fn.fzmis import fauzi_mise_computation
+from morie.fn.fzmis import fauzi_mise_computation
 
 
 def test_fzmis_basic():

@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.medf import median_filter_signal, medf
-from moirais.fn._containers import SignalResult
+from morie.fn.medf import median_filter_signal, medf
+from morie.fn._containers import SignalResult
 
 
 class TestMedianFilter:

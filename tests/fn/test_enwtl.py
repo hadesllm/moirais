@@ -1,7 +1,7 @@
 """Test enwtl."""
 import numpy as np
 import pytest
-from moirais.fn.enwtl import enwtl
+from morie.fn.enwtl import enwtl
 
 
 def test_enwtl_basic():

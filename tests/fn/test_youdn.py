@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.youdn — Youden's J index."""
+"""Tests for morie.fn.youdn — Youden's J index."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.youdn import youden_index
+from morie.fn.youdn import youden_index
 
 
 class TestYoudenIndex:

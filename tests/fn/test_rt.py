@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rt — Student t random variates."""
+"""Tests for morie.fn.rt — Student t random variates."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rt import rt
+from morie.fn.rt import rt
 
 
 class TestRt:

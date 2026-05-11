@@ -1,7 +1,7 @@
 """Tests for gh_c6_7.ghosal_kl_diverge."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c6_7 import ghosal_kl_diverge
+from morie.fn.gh_c6_7 import ghosal_kl_diverge
 
 
 def test_gh_c6_7_basic():

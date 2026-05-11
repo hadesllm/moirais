@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.inspdr — inspect directory."""
+"""Tests for morie.fn.inspdr — inspect directory."""
 
 import pandas as pd
 import pytest
 
-from moirais.fn.inspdr import inspdr, inspect_directory
-from moirais.inspector import InspectionResult
+from morie.fn.inspdr import inspdr, inspect_directory
+from morie.inspector import InspectionResult
 
 
 def test_alias_is_same_function():

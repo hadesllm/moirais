@@ -1,6 +1,6 @@
 """Tests for multi-scale quadrat aggregation."""
 import numpy as np
-from moirais.fn.sgqag import sgqag
+from morie.fn.sgqag import sgqag
 
 
 def test_sgqag_smoke():
@@ -13,7 +13,7 @@ def test_sgqag_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgqag import cheatsheet
+    from morie.fn.sgqag import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for mcvar."""
 import numpy as np
 import pytest
-from moirais.fn.mcvar import mcvar
+from morie.fn.mcvar import mcvar
 
 
 def test_mcvar_basic():
@@ -27,5 +27,5 @@ def test_mcvar_no_data():
 
 
 def test_mcvar_alias():
-    from moirais.fn.mcvar import mcvar
+    from morie.fn.mcvar import mcvar
     assert mcvar is mcvar

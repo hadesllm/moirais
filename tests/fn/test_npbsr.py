@@ -1,7 +1,7 @@
 """Tests for npbsr.np_bayes_survival."""
 import numpy as np
 import pytest
-from moirais.fn.npbsr import np_bayes_survival
+from morie.fn.npbsr import np_bayes_survival
 
 
 def test_npbsr_basic():

@@ -1,7 +1,7 @@
 """Tests for jopatt.joseph_patchtst."""
 import numpy as np
 import pytest
-from moirais.fn.jopatt import joseph_patchtst
+from morie.fn.jopatt import joseph_patchtst
 
 
 def test_jopatt_basic():

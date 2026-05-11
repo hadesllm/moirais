@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msprb -- Oblique Procrustes rotation"""
+"""Tests for morie.fn.msprb -- Oblique Procrustes rotation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msprb import procrustes_obl
+from morie.fn.msprb import procrustes_obl
 
 
 class TestProcrustesObl:

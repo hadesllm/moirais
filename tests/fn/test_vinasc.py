@@ -1,7 +1,7 @@
 """Tests for vinasc.autodock_vina_score."""
 import numpy as np
 import pytest
-from moirais.fn.vinasc import autodock_vina_score
+from morie.fn.vinasc import autodock_vina_score
 
 
 def test_vinasc_basic():

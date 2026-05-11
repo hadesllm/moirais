@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.d -- Cohen's d effect size."""
+"""Tests for morie.fn.d -- Cohen's d effect size."""
 
 import numpy as np
 import pytest
-from moirais.fn.d import cohens_d
+from morie.fn.d import cohens_d
 
 
 class TestCohensD:

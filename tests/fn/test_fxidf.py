@@ -1,7 +1,7 @@
 """Tests for fxidf.effect_modification."""
 import numpy as np
 import pytest
-from moirais.fn.fxidf import effect_modification
+from morie.fn.fxidf import effect_modification
 
 
 def test_fxidf_basic():

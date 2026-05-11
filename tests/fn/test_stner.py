@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.stner import stationarity_test, stner
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.stner import stationarity_test, stner
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStationarityTest:

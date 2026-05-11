@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sftmx — softmax with temperature scaling."""
+"""Tests for morie.fn.sftmx — softmax with temperature scaling."""
 import numpy as np
 import pytest
-from moirais.fn.sftmx import softmax
+from morie.fn.sftmx import softmax
 
 
 class TestSoftmax:

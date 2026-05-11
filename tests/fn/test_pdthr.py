@@ -1,7 +1,7 @@
 """Test peak_detect_threshold (pdthr)."""
 import numpy as np
-from moirais.fn.pdthr import peak_detect_threshold, pdthr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.pdthr import peak_detect_threshold, pdthr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPeakDetectThreshold:

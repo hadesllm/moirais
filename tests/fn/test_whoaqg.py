@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.whoaqg import who_aqg_compliance, whoaqg
+from morie.fn.whoaqg import who_aqg_compliance, whoaqg
 
 
 def test_whoaqg_pm25_at_or_below_5_is_aqg():

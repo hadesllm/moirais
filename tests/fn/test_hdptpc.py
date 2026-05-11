@@ -1,7 +1,7 @@
 """Tests for hdptpc.hdp_topic_model."""
 import numpy as np
 import pytest
-from moirais.fn.hdptpc import hdp_topic_model
+from morie.fn.hdptpc import hdp_topic_model
 
 
 def test_hdptpc_basic():

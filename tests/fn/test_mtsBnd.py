@@ -1,7 +1,7 @@
 """Tests for mtsBnd.mts_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.mtsBnd import mts_bounds
+from morie.fn.mtsBnd import mts_bounds
 
 
 def test_mtsBnd_basic():

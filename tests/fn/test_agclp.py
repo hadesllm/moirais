@@ -1,7 +1,7 @@
 """Test agclp."""
 import numpy as np
 import pytest
-from moirais.fn.agclp import agclp
+from morie.fn.agclp import agclp
 
 
 def test_agclp_basic():

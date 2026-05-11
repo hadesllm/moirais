@@ -1,7 +1,7 @@
 """Tests for tmses."""
 import numpy as np
 import pytest
-from moirais.fn.tmses import tmses
+from morie.fn.tmses import tmses
 
 
 def test_tmses_basic():
@@ -27,5 +27,5 @@ def test_tmses_no_data():
 
 
 def test_tmses_alias():
-    from moirais.fn.tmses import tmses
+    from morie.fn.tmses import tmses
     assert tmses is tmses

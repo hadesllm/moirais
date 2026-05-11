@@ -1,7 +1,7 @@
 """Tests for ddpgc.ddpg."""
 import numpy as np
 import pytest
-from moirais.fn.ddpgc import ddpg
+from morie.fn.ddpgc import ddpg
 
 
 def test_ddpgc_basic():

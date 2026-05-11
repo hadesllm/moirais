@@ -1,7 +1,7 @@
 """Tests for smacf.smacof_algorithm."""
 import numpy as np
 import pytest
-from moirais.fn.smacf import smacof_algorithm
+from morie.fn.smacf import smacof_algorithm
 
 
 def test_smacf_basic():

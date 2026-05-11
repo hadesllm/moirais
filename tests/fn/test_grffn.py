@@ -1,7 +1,7 @@
 """Tests for grffn.geron_transformer_feedforward."""
 import numpy as np
 import pytest
-from moirais.fn.grffn import geron_transformer_feedforward
+from morie.fn.grffn import geron_transformer_feedforward
 
 
 def test_grffn_basic():

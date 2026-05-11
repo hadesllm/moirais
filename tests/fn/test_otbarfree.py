@@ -1,7 +1,7 @@
 """Tests for otbarfree.ot_barycenter_free."""
 import numpy as np
 import pytest
-from moirais.fn.otbarfree import ot_barycenter_free
+from morie.fn.otbarfree import ot_barycenter_free
 
 
 def test_otbarfree_basic():

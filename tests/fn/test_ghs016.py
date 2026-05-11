@@ -1,7 +1,7 @@
 """Tests for ghs016.ghosal_ch3_dirichlet_posterior_cov."""
 import numpy as np
 import pytest
-from moirais.fn.ghs016 import ghosal_ch3_dirichlet_posterior_cov
+from morie.fn.ghs016 import ghosal_ch3_dirichlet_posterior_cov
 
 
 def test_ghs016_basic():

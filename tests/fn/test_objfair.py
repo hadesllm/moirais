@@ -1,7 +1,7 @@
 """Tests for objfair.individual_fairness_lipschitz."""
 import numpy as np
 import pytest
-from moirais.fn.objfair import individual_fairness_lipschitz
+from morie.fn.objfair import individual_fairness_lipschitz
 
 
 def test_objfair_basic():

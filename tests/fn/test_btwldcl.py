@@ -1,7 +1,7 @@
 """Tests for btwldcl.boot_wild_cluster."""
 import numpy as np
 import pytest
-from moirais.fn.btwldcl import boot_wild_cluster
+from morie.fn.btwldcl import boot_wild_cluster
 
 
 def test_btwldcl_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rcred -- read roll-call vote matrix."""
+"""Tests for morie.fn.rcred -- read roll-call vote matrix."""
 import numpy as np
-from moirais.fn.rcred import read_roll_call, rcred
+from morie.fn.rcred import read_roll_call, rcred
 
 
 def test_alias():

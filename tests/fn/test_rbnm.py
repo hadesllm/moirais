@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rbnm — binomial random sample."""
+"""Tests for morie.fn.rbnm — binomial random sample."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rbnm import rbinom
+from morie.fn.rbnm import rbinom
 
 
 class TestRbinom:

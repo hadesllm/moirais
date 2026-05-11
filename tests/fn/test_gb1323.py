@@ -1,7 +1,7 @@
 """Tests for gb1323.gibbons_are_twosided."""
 import numpy as np
 import pytest
-from moirais.fn.gb1323 import gibbons_are_twosided
+from morie.fn.gb1323 import gibbons_are_twosided
 
 
 def test_gb1323_basic():

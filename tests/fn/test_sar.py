@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sar -- Secondary Attack Rate."""
+"""Tests for morie.fn.sar -- Secondary Attack Rate."""
 
 import pytest
-from moirais.fn.sar import secondary_attack_rate
+from morie.fn.sar import secondary_attack_rate
 
 
 class TestSAR:

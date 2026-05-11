@@ -1,7 +1,7 @@
 """Tests for causrddm.causal_rdd_manipulation."""
 import numpy as np
 import pytest
-from moirais.fn.causrddm import causal_rdd_manipulation
+from morie.fn.causrddm import causal_rdd_manipulation
 
 
 def test_causrddm_basic():

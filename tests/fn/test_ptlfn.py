@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptlfn -- L-function (variance-stabilized K)"""
+"""Tests for morie.fn.ptlfn -- L-function (variance-stabilized K)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptlfn import l_function
+from morie.fn.ptlfn import l_function
 
 
 class TestLFunction:

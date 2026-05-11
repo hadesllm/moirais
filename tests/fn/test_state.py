@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.state -- Kalman filter."""
+"""Tests for morie.fn.state -- Kalman filter."""
 import numpy as np
 import pytest
-from moirais.fn.state import kalman_filter
+from morie.fn.state import kalman_filter
 
 
 class TestKalman:
@@ -22,5 +22,5 @@ class TestKalman:
             kalman_filter(np.ones(10), np.eye(2), np.ones((1, 3)), np.eye(2), np.eye(1))
 
     def test_cheatsheet(self):
-        from moirais.fn.state import cheatsheet
+        from morie.fn.state import cheatsheet
         assert isinstance(cheatsheet(), str)

@@ -1,7 +1,7 @@
 """Tests for gpvarF.gp_variance."""
 import numpy as np
 import pytest
-from moirais.fn.gpvarF import gp_variance
+from morie.fn.gpvarF import gp_variance
 
 
 def test_gpvarF_basic():

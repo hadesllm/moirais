@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mtxop -- matrix function."""
+"""Tests for morie.fn.mtxop -- matrix function."""
 
 import numpy as np
-from moirais.fn.mtxop import matrix_function, mtxop
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtxop import matrix_function, mtxop
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMtxop:

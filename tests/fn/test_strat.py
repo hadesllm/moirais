@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.strat — Stratified mean estimator."""
+"""Tests for morie.fn.strat — Stratified mean estimator."""
 import numpy as np
 import pandas as pd
 
-from moirais.fn.strat import stratified_mean, strat
+from morie.fn.strat import stratified_mean, strat
 
 
 def test_equal_strata():

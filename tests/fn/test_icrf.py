@@ -1,7 +1,7 @@
 """Tests for icrf.item_characteristic_curve."""
 import numpy as np
 import pytest
-from moirais.fn.icrf import item_characteristic_curve
+from morie.fn.icrf import item_characteristic_curve
 
 
 def test_icrf_basic():

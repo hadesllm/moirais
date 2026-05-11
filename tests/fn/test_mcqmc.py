@@ -1,7 +1,7 @@
 """Tests for mcqmc."""
 import numpy as np
 import pytest
-from moirais.fn.mcqmc import mcqmc
+from morie.fn.mcqmc import mcqmc
 
 
 def test_mcqmc_basic():
@@ -27,5 +27,5 @@ def test_mcqmc_no_data():
 
 
 def test_mcqmc_alias():
-    from moirais.fn.mcqmc import mcqmc
+    from morie.fn.mcqmc import mcqmc
     assert mcqmc is mcqmc

@@ -1,7 +1,7 @@
 """Tests for idwbar."""
 import numpy as np
 import pytest
-from moirais.fn.idwbar import idwbar
+from morie.fn.idwbar import idwbar
 
 
 def test_idwbar_basic():
@@ -27,5 +27,5 @@ def test_idwbar_no_data():
 
 
 def test_idwbar_alias():
-    from moirais.fn.idwbar import idwbar
+    from morie.fn.idwbar import idwbar
     assert idwbar is idwbar

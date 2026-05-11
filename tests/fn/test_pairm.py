@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.pairm — Pairwise matrix."""
+"""Tests for morie.fn.pairm — Pairwise matrix."""
 import numpy as np
-from moirais.fn.pairm import pairm
+from morie.fn.pairm import pairm
 
 
 def test_pairm_basic():

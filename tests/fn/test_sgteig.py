@@ -1,7 +1,7 @@
 """Tests for sgteig.sgt_eigenvector_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.sgteig import sgt_eigenvector_centrality
+from morie.fn.sgteig import sgt_eigenvector_centrality
 
 
 def test_sgteig_basic():

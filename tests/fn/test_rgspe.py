@@ -1,7 +1,7 @@
 """Tests for rgspe.rangayyan_specificity."""
 import numpy as np
 import pytest
-from moirais.fn.rgspe import rangayyan_specificity
+from morie.fn.rgspe import rangayyan_specificity
 
 
 def test_rgspe_basic():

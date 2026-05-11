@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.groot -- logistic growth model."""
+"""Tests for morie.fn.groot -- logistic growth model."""
 
 import numpy as np
-from moirais.fn.groot import logistic_growth, groot
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.groot import logistic_growth, groot
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGroot:

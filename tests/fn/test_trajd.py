@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.trajd."""
+"""Tests for morie.fn.trajd."""
 import numpy as np
-from moirais.fn.trajd import trajectory_distance
+from morie.fn.trajd import trajectory_distance
 
 
 def test_trajd_smoke():
@@ -12,7 +12,7 @@ def test_trajd_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.trajd import cheatsheet
+    from morie.fn.trajd import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

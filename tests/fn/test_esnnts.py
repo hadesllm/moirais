@@ -1,7 +1,7 @@
 """Tests for esnnts.echo_state_network."""
 import numpy as np
 import pytest
-from moirais.fn.esnnts import echo_state_network
+from morie.fn.esnnts import echo_state_network
 
 
 def test_esnnts_basic():

@@ -1,7 +1,7 @@
 """Tests for gb921m.gibbons_mood_moments."""
 import numpy as np
 import pytest
-from moirais.fn.gb921m import gibbons_mood_moments
+from morie.fn.gb921m import gibbons_mood_moments
 
 
 def test_gb921m_basic():

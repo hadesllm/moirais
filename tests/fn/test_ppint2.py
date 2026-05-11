@@ -1,7 +1,7 @@
 """Test ppint2."""
 import numpy as np
 import pytest
-from moirais.fn.ppint2 import ppint2
+from morie.fn.ppint2 import ppint2
 
 
 def test_ppint2_basic():

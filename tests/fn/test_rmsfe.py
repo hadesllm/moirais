@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rmsfe -- RMSFE."""
+"""Tests for morie.fn.rmsfe -- RMSFE."""
 import numpy as np
 import pytest
-from moirais.fn.rmsfe import rmsfe_calc
+from morie.fn.rmsfe import rmsfe_calc
 
 
 class TestRMSFE:
@@ -21,5 +21,5 @@ class TestRMSFE:
             rmsfe_calc(np.ones(3), np.ones(5))
 
     def test_cheatsheet(self):
-        from moirais.fn.rmsfe import cheatsheet
+        from morie.fn.rmsfe import cheatsheet
         assert isinstance(cheatsheet(), str)

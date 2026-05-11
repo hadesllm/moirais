@@ -1,7 +1,7 @@
 """Tests for adwin.adwin."""
 import numpy as np
 import pytest
-from moirais.fn.adwin import adwin
+from morie.fn.adwin import adwin
 
 
 def test_adwin_basic():

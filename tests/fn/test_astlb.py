@@ -1,7 +1,7 @@
 """Tests for astlb.astle_balding_grm."""
 import numpy as np
 import pytest
-from moirais.fn.astlb import astle_balding_grm
+from morie.fn.astlb import astle_balding_grm
 
 
 def test_astlb_basic():

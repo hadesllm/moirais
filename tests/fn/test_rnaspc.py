@@ -1,7 +1,7 @@
 """Tests for rnaspc."""
 import numpy as np
 import pytest
-from moirais.fn.rnaspc import rnaspc
+from morie.fn.rnaspc import rnaspc
 
 
 def test_rnaspc_basic():
@@ -27,5 +27,5 @@ def test_rnaspc_no_data():
 
 
 def test_rnaspc_alias():
-    from moirais.fn.rnaspc import rnaspc
+    from morie.fn.rnaspc import rnaspc
     assert rnaspc is rnaspc

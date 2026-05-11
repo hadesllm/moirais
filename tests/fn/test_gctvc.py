@@ -1,7 +1,7 @@
 """Tests for gctvc.g_computation_time_varying."""
 import numpy as np
 import pytest
-from moirais.fn.gctvc import g_computation_time_varying
+from morie.fn.gctvc import g_computation_time_varying
 
 
 def test_gctvc_basic():

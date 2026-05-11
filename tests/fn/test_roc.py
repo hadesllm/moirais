@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.roc — ROC curve and AUC."""
+"""Tests for morie.fn.roc — ROC curve and AUC."""
 import numpy as np
 
-from moirais.fn.roc import roc_auc, roc
+from morie.fn.roc import roc_auc, roc
 
 
 def test_perfect_auc():

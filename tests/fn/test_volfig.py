@@ -1,7 +1,7 @@
 """Tests for volfig.vol_figarch_fit."""
 import numpy as np
 import pytest
-from moirais.fn.volfig import vol_figarch_fit
+from morie.fn.volfig import vol_figarch_fit
 
 
 def test_volfig_basic():

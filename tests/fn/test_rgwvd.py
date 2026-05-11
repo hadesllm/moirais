@@ -1,7 +1,7 @@
 """Tests for rgwvd.rangayyan_wigner_ville."""
 import numpy as np
 import pytest
-from moirais.fn.rgwvd import rangayyan_wigner_ville
+from morie.fn.rgwvd import rangayyan_wigner_ville
 
 
 def test_rgwvd_basic():

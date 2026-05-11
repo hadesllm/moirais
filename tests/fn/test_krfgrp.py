@@ -1,7 +1,7 @@
 """Tests for krfgrp.kronecker_graph."""
 import numpy as np
 import pytest
-from moirais.fn.krfgrp import kronecker_graph
+from morie.fn.krfgrp import kronecker_graph
 
 
 def test_krfgrp_basic():

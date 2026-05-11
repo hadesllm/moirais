@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.dml — Double Machine Learning (Partially Linear Regression)."""
+"""Tests for morie.fn.dml — Double Machine Learning (Partially Linear Regression)."""
 
 import numpy as np
 import pandas as pd
@@ -10,7 +10,7 @@ try:
 except ImportError:
     _HAS_DOUBLEML = False
 
-from moirais.fn.dml import estimate_double_ml
+from morie.fn.dml import estimate_double_ml
 
 pytestmark = pytest.mark.skipif(not _HAS_DOUBLEML, reason="DoubleML not installed")
 

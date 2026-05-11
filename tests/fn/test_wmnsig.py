@@ -1,7 +1,7 @@
 """Tests for wmnsig.weighted_mean_test."""
 import numpy as np
 import pytest
-from moirais.fn.wmnsig import weighted_mean_test
+from morie.fn.wmnsig import weighted_mean_test
 
 
 def test_wmnsig_basic():

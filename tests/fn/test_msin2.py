@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msin2 -- INDSCAL subject weights"""
+"""Tests for morie.fn.msin2 -- INDSCAL subject weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msin2 import indscal_weights
+from morie.fn.msin2 import indscal_weights
 
 
 class TestIndscalWeights:

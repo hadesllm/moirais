@@ -1,7 +1,7 @@
 """Tests for gross.gross_error_sensitivity."""
 import numpy as np
 import pytest
-from moirais.fn.gross import gross_error_sensitivity
+from morie.fn.gross import gross_error_sensitivity
 
 
 def test_gross_basic():

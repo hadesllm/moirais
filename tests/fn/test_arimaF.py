@@ -1,7 +1,7 @@
 """Tests for arimaF.arima."""
 import numpy as np
 import pytest
-from moirais.fn.arimaF import arima
+from morie.fn.arimaF import arima
 
 
 def test_arimaF_basic():

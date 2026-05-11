@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.t2smp -- Two-sample t-test."""
+"""Tests for morie.fn.t2smp -- Two-sample t-test."""
 
 import pytest
-from moirais.fn.t2smp import two_sample_t_test
+from morie.fn.t2smp import two_sample_t_test
 
 
 class TestTwoSampleTTest:

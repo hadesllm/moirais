@@ -1,7 +1,7 @@
 """Tests for rng144.rangayyan_ch3_mse_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.rng144 import rangayyan_ch3_mse_gradient
+from morie.fn.rng144 import rangayyan_ch3_mse_gradient
 
 
 def test_rng144_basic():

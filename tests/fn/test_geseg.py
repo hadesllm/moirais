@@ -1,7 +1,7 @@
 """Test geseg."""
 import numpy as np
 import pytest
-from moirais.fn.geseg import geseg
+from morie.fn.geseg import geseg
 
 
 def test_geseg_basic():

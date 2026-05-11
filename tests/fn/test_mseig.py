@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mseig -- MDS eigendecomposition"""
+"""Tests for morie.fn.mseig -- MDS eigendecomposition"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mseig import mds_eigen
+from morie.fn.mseig import mds_eigen
 
 
 class TestMdsEigen:

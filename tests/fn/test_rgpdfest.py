@@ -1,7 +1,7 @@
 """Tests for rgpdfest.rangayyan_pdf_estimate."""
 import numpy as np
 import pytest
-from moirais.fn.rgpdfest import rangayyan_pdf_estimate
+from morie.fn.rgpdfest import rangayyan_pdf_estimate
 
 
 def test_rgpdfest_basic():

@@ -1,7 +1,7 @@
 """Tests for brreg.bayesian_ridge_regression."""
 import numpy as np
 import pytest
-from moirais.fn.brreg import bayesian_ridge_regression
+from morie.fn.brreg import bayesian_ridge_regression
 
 
 def test_brreg_basic():

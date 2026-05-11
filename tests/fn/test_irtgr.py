@@ -1,6 +1,6 @@
 """Tests for irtgr — graded response model."""
 import numpy as np
-from moirais.fn.irtgr import irtgr
+from morie.fn.irtgr import irtgr
 
 def test_irtgr_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -9,7 +9,7 @@ def test_irtgr_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.irtgr import cheatsheet
+    from morie.fn.irtgr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

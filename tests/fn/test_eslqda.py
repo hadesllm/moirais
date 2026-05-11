@@ -1,7 +1,7 @@
 """Tests for eslqda.esl_qda."""
 import numpy as np
 import pytest
-from moirais.fn.eslqda import esl_qda
+from morie.fn.eslqda import esl_qda
 
 
 def test_eslqda_basic():

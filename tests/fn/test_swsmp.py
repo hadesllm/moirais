@@ -1,7 +1,7 @@
 """Tests for swsmp.systematic_with_random_start."""
 import numpy as np
 import pytest
-from moirais.fn.swsmp import systematic_with_random_start
+from morie.fn.swsmp import systematic_with_random_start
 
 
 def test_swsmp_basic():

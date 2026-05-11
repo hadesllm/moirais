@@ -1,7 +1,7 @@
 """Tests for esl1se.esl_one_se_rule."""
 import numpy as np
 import pytest
-from moirais.fn.esl1se import esl_one_se_rule
+from morie.fn.esl1se import esl_one_se_rule
 
 
 def test_esl1se_basic():

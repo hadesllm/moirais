@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.trcpl -- trace plot data."""
+"""Tests for morie.fn.trcpl -- trace plot data."""
 import numpy as np
-from moirais.fn.trcpl import trace_plot_data, trcpl
+from morie.fn.trcpl import trace_plot_data, trcpl
 
 
 def test_alias():

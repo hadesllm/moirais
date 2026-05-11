@@ -1,7 +1,7 @@
 """Tests for bnppvl.bnp_predictive_value."""
 import numpy as np
 import pytest
-from moirais.fn.bnppvl import bnp_predictive_value
+from morie.fn.bnppvl import bnp_predictive_value
 
 
 def test_bnppvl_basic():

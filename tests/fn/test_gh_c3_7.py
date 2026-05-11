@@ -1,7 +1,7 @@
 """Tests for gh_c3_7.ghosal_rect_partition."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c3_7 import ghosal_rect_partition
+from morie.fn.gh_c3_7 import ghosal_rect_partition
 
 
 def test_gh_c3_7_basic():

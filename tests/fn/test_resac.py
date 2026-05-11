@@ -1,6 +1,6 @@
 """Tests for resac.py - Residual ACF."""
 import numpy as np
-from moirais.fn.resac import residual_acf_fn, resac
+from morie.fn.resac import residual_acf_fn, resac
 
 
 def test_resac_returns_result():

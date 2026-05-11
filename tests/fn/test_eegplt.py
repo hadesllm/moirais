@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.eegplt -- EEG montage plot."""
+"""Tests for morie.fn.eegplt -- EEG montage plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.eegplt import eegplt
+from morie.fn.eegplt import eegplt
 
 
 class TestEegPlt:

@@ -1,6 +1,6 @@
 """Tests for rirr — inter-rater reliability."""
 import numpy as np
-from moirais.fn.rirr import rirr
+from morie.fn.rirr import rirr
 
 def test_rirr_basic(rng):
     r1 = rng.integers(1, 6, 50)
@@ -12,7 +12,7 @@ def test_rirr_basic(rng):
 
 
 def test_cheatsheet():
-    from moirais.fn.rirr import cheatsheet
+    from morie.fn.rirr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for hexgrd.hexagonal_grid."""
 import numpy as np
 import pytest
-from moirais.fn.hexgrd import hexagonal_grid
+from morie.fn.hexgrd import hexagonal_grid
 
 
 def test_hexgrd_basic():

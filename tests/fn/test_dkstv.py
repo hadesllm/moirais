@@ -1,7 +1,7 @@
 """Test dkstv."""
 import numpy as np
 import pytest
-from moirais.fn.dkstv import dkstv
+from morie.fn.dkstv import dkstv
 
 
 def test_dkstv_basic():

@@ -1,7 +1,7 @@
 """Tests for genemt.gene_meta_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.genemt import gene_meta_analysis
+from morie.fn.genemt import gene_meta_analysis
 
 
 def test_genemt_basic():

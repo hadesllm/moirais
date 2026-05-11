@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.stkey import stkey
+from morie.fn.stkey import stkey
 
 
 class TestStkey:

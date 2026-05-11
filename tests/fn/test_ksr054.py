@@ -1,7 +1,7 @@
 """Tests for ksr054.kosorok_ch2_m_estimator_lipschitz_envelope."""
 import numpy as np
 import pytest
-from moirais.fn.ksr054 import kosorok_ch2_m_estimator_lipschitz_envelope
+from morie.fn.ksr054 import kosorok_ch2_m_estimator_lipschitz_envelope
 
 
 def test_ksr054_basic():

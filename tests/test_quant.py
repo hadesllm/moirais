@@ -1,4 +1,4 @@
-"""Tests for moirais.quant — TurboQuant/PolarQuant/QJL implementation.
+"""Tests for morie.quant — TurboQuant/PolarQuant/QJL implementation.
 
 Validates mathematical correctness against paper bounds:
     - Rotation matrix orthogonality (Π^T·Π = I)
@@ -16,7 +16,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.quant import (
+from morie.quant import (
     TQBlock,
     compress_kv_cache,
     decompress_kv_cache,
@@ -386,7 +386,7 @@ class TestKVCache:
 
 class TestGGMLBridge:
     def test_quantize_dequantize(self):
-        from moirais.quant_bridge import GGMLTurboQuant
+        from morie.quant_bridge import GGMLTurboQuant
 
         tq = GGMLTurboQuant()
         # Works with either C lib or NumPy fallback

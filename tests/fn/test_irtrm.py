@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.irtrm — Rasch model residuals."""
+"""Tests for morie.fn.irtrm — Rasch model residuals."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.irtrm import irt_rasch_residuals
+from morie.fn.irtrm import irt_rasch_residuals
 
 
 class TestIrtRaschResiduals:

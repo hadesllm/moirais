@@ -1,7 +1,7 @@
 """Tests for limT.symbolic_limit."""
 import numpy as np
 import pytest
-from moirais.fn.limT import symbolic_limit
+from morie.fn.limT import symbolic_limit
 
 
 def test_limT_basic():

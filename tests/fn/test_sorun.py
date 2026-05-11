@@ -1,7 +1,7 @@
 """Test sorun."""
 import numpy as np
 import pytest
-from moirais.fn.sorun import sorun
+from morie.fn.sorun import sorun
 
 
 def test_sorun_basic():

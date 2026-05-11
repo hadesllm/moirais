@@ -1,6 +1,6 @@
 """Tests for cross-validation variogram."""
 import numpy as np
-from moirais.fn.sgcvg import sgcvg
+from morie.fn.sgcvg import sgcvg
 
 
 def test_sgcvg_smoke():
@@ -15,7 +15,7 @@ def test_sgcvg_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgcvg import cheatsheet
+    from morie.fn.sgcvg import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

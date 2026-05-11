@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msalc -- Alienation coefficient"""
+"""Tests for morie.fn.msalc -- Alienation coefficient"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msalc import alienation
+from morie.fn.msalc import alienation
 
 
 class TestAlienation:

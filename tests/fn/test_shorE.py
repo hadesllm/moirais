@@ -1,7 +1,7 @@
 """Tests for shorE.shor_factoring."""
 import numpy as np
 import pytest
-from moirais.fn.shorE import shor_factoring
+from morie.fn.shorE import shor_factoring
 
 
 def test_shorE_basic():

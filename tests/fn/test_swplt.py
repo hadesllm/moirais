@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.swplt -- Star Wars planet summary."""
+"""Tests for morie.fn.swplt -- Star Wars planet summary."""
 
 import pandas as pd
-from moirais.fn.swplt import sw_planet_summary, swplt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.swplt import sw_planet_summary, swplt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSwplt:

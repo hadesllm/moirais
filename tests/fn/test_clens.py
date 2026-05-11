@@ -1,7 +1,7 @@
 """Test clens."""
 import numpy as np
 import pytest
-from moirais.fn.clens import clens
+from morie.fn.clens import clens
 
 
 def test_clens_basic():

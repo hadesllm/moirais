@@ -1,7 +1,7 @@
 """Tests for grvpi.geron_state_value_function."""
 import numpy as np
 import pytest
-from moirais.fn.grvpi import geron_state_value_function
+from morie.fn.grvpi import geron_state_value_function
 
 
 def test_grvpi_basic():

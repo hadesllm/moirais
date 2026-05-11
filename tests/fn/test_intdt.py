@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.intdt — inter-event interval detection."""
+"""Tests for morie.fn.intdt — inter-event interval detection."""
 import numpy as np
 import pytest
 
-from moirais.fn.intdt import interval_detect, intdt
+from morie.fn.intdt import interval_detect, intdt
 
 
 def test_regular_intervals():

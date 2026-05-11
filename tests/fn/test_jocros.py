@@ -1,7 +1,7 @@
 """Tests for jocros.joseph_croston_intermittent."""
 import numpy as np
 import pytest
-from moirais.fn.jocros import joseph_croston_intermittent
+from morie.fn.jocros import joseph_croston_intermittent
 
 
 def test_jocros_basic():

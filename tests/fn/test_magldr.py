@@ -1,7 +1,7 @@
 """Test magldr."""
 import numpy as np
 import pytest
-from moirais.fn.magldr import magldr
+from morie.fn.magldr import magldr
 
 
 def test_magldr_basic():

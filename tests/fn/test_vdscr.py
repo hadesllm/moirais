@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vdscr — Discriminant validity (Fornell-Larcker)."""
+"""Tests for morie.fn.vdscr — Discriminant validity (Fornell-Larcker)."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.vdscr import validity_discriminant
+from morie.fn.vdscr import validity_discriminant
 
 
 class TestValidityDiscriminant:

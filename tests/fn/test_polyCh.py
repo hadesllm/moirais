@@ -1,7 +1,7 @@
 """Tests for polyCh.chebyshev_basis."""
 import numpy as np
 import pytest
-from moirais.fn.polyCh import chebyshev_basis
+from morie.fn.polyCh import chebyshev_basis
 
 
 def test_polyCh_basic():

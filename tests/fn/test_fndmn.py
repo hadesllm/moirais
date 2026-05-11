@@ -1,7 +1,7 @@
 """Test fundamental_freq (fndmn)."""
 import numpy as np
-from moirais.fn.fndmn import fundamental_freq, fndmn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.fndmn import fundamental_freq, fndmn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFndmn:

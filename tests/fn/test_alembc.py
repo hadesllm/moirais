@@ -1,7 +1,7 @@
 """Tests for alembc.alammar_embedding_classifier."""
 import numpy as np
 import pytest
-from moirais.fn.alembc import alammar_embedding_classifier
+from morie.fn.alembc import alammar_embedding_classifier
 
 
 def test_alembc_basic():

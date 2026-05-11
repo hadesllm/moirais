@@ -1,7 +1,7 @@
 """Test agurb."""
 import numpy as np
 import pytest
-from moirais.fn.agurb import agurb
+from morie.fn.agurb import agurb
 
 
 def test_agurb_basic():

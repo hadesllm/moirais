@@ -1,7 +1,7 @@
 """Test abvir."""
 import numpy as np
 import pytest
-from moirais.fn.abvir import abvir
+from morie.fn.abvir import abvir
 
 
 def test_abvir_basic():

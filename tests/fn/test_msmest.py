@@ -1,7 +1,7 @@
 """Tests for msmest.marginal_structural_model."""
 import numpy as np
 import pytest
-from moirais.fn.msmest import marginal_structural_model
+from morie.fn.msmest import marginal_structural_model
 
 
 def test_msmest_basic():

@@ -1,7 +1,7 @@
 """Tests for grxeng.geron_softmax_cost_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.grxeng import geron_softmax_cost_gradient
+from morie.fn.grxeng import geron_softmax_cost_gradient
 
 
 def test_grxeng_basic():

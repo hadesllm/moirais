@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.profk — Profile likelihood."""
+"""Tests for morie.fn.profk — Profile likelihood."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.profk import profk
+from morie.fn.profk import profk
 
 
 @pytest.fixture()

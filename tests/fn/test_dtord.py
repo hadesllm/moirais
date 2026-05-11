@@ -1,7 +1,7 @@
 """Test dtord."""
 import numpy as np
 import pytest
-from moirais.fn.dtord import dtord
+from morie.fn.dtord import dtord
 
 
 def test_dtord_basic():

@@ -1,7 +1,7 @@
 """Test mtcls."""
 import numpy as np
 import pytest
-from moirais.fn.mtcls import mtcls
+from morie.fn.mtcls import mtcls
 
 
 def test_mtcls_basic():

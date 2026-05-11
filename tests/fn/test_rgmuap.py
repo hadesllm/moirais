@@ -1,7 +1,7 @@
 """Tests for rgmuap.rangayyan_muap."""
 import numpy as np
 import pytest
-from moirais.fn.rgmuap import rangayyan_muap
+from morie.fn.rgmuap import rangayyan_muap
 
 
 def test_rgmuap_basic():

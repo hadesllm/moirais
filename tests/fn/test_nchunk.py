@@ -1,7 +1,7 @@
 """Tests for nchunk.causal_chunked_attention."""
 import numpy as np
 import pytest
-from moirais.fn.nchunk import causal_chunked_attention
+from morie.fn.nchunk import causal_chunked_attention
 
 
 def test_nchunk_basic():

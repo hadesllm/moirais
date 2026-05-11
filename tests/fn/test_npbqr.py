@@ -1,7 +1,7 @@
 """Tests for npbqr.np_bayes_quant_reg."""
 import numpy as np
 import pytest
-from moirais.fn.npbqr import np_bayes_quant_reg
+from morie.fn.npbqr import np_bayes_quant_reg
 
 
 def test_npbqr_basic():

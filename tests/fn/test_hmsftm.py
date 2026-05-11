@@ -1,7 +1,7 @@
 """Tests for hmsftm.geron_softmax_function."""
 import numpy as np
 import pytest
-from moirais.fn.hmsftm import geron_softmax_function
+from morie.fn.hmsftm import geron_softmax_function
 
 
 def test_hmsftm_basic():

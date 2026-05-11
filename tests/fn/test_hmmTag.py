@@ -1,7 +1,7 @@
 """Tests for hmmTag.hmm_pos."""
 import numpy as np
 import pytest
-from moirais.fn.hmmTag import hmm_pos
+from morie.fn.hmmTag import hmm_pos
 
 
 def test_hmmTag_basic():

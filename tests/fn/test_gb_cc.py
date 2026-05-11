@@ -1,7 +1,7 @@
 """Tests for gb_cc.gibbons_continuity_corr."""
 import numpy as np
 import pytest
-from moirais.fn.gb_cc import gibbons_continuity_corr
+from morie.fn.gb_cc import gibbons_continuity_corr
 
 
 def test_gb_cc_basic():

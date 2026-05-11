@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.snr import snr_estimate_fn, snr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.snr import snr_estimate_fn, snr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSnrEstimate:

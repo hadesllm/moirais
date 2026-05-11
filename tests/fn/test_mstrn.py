@@ -1,7 +1,7 @@
 """Tests for mstrn.multistate_transition_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.mstrn import multistate_transition_matrix
+from morie.fn.mstrn import multistate_transition_matrix
 
 
 def test_mstrn_basic():

@@ -1,7 +1,7 @@
 """Test agevi."""
 import numpy as np
 import pytest
-from moirais.fn.agevi import agevi
+from morie.fn.agevi import agevi
 
 
 def test_agevi_basic():

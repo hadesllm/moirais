@@ -1,7 +1,7 @@
 """Tests for msm258.mvsml_elements_lin_reg_eq_3_5."""
 import numpy as np
 import pytest
-from moirais.fn.msm258 import mvsml_elements_lin_reg_eq_3_5
+from morie.fn.msm258 import mvsml_elements_lin_reg_eq_3_5
 
 
 def test_msm258_basic():

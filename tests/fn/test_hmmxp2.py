@@ -1,7 +1,7 @@
 """Tests for hmmxp2.geron_mixed_precision."""
 import numpy as np
 import pytest
-from moirais.fn.hmmxp2 import geron_mixed_precision
+from morie.fn.hmmxp2 import geron_mixed_precision
 
 
 def test_hmmxp2_basic():

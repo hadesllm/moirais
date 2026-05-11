@@ -1,7 +1,7 @@
 """Tests for rgbayng.rangayyan_bayes_gaussian."""
 import numpy as np
 import pytest
-from moirais.fn.rgbayng import rangayyan_bayes_gaussian
+from morie.fn.rgbayng import rangayyan_bayes_gaussian
 
 
 def test_rgbayng_basic():

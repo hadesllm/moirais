@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.prbit — ordinal probit coefficients."""
+"""Tests for morie.fn.prbit — ordinal probit coefficients."""
 import numpy as np
-from moirais.fn.prbit import prbit
+from morie.fn.prbit import prbit
 
 
 def test_prbit_smoke():
@@ -14,7 +14,7 @@ def test_prbit_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.prbit import cheatsheet
+    from morie.fn.prbit import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

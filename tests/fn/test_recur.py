@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.recur -- Recurrent event (Andersen-Gill)."""
+"""Tests for morie.fn.recur -- Recurrent event (Andersen-Gill)."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.recur import recur
+from morie.fn.recur import recur
 
 
 @pytest.fixture()
@@ -38,5 +38,5 @@ def test_hr_positive(recur_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.recur import cheatsheet
+    from morie.fn.recur import cheatsheet
     assert "andersen" in cheatsheet().lower()

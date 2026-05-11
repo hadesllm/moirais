@@ -1,7 +1,7 @@
 """Tests for vitscn.vit_scaled_cosine."""
 import numpy as np
 import pytest
-from moirais.fn.vitscn import vit_scaled_cosine
+from morie.fn.vitscn import vit_scaled_cosine
 
 
 def test_vitscn_basic():

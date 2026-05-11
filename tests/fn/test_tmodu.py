@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tmodu — torus modular parameter."""
+"""Tests for morie.fn.tmodu — torus modular parameter."""
 
 import pytest
 
-from moirais.fn.tmodu import torus_modular
+from morie.fn.tmodu import torus_modular
 
 
 class TestTorusModular:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgrob -- Robust semivariogram (Cressie-Hawkins)"""
+"""Tests for morie.fn.vgrob -- Robust semivariogram (Cressie-Hawkins)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgrob import vario_robust
+from morie.fn.vgrob import vario_robust
 
 
 class TestVarioRobust:

@@ -1,7 +1,7 @@
 """Tests for spspec.schabenberger_spectral_representation."""
 import numpy as np
 import pytest
-from moirais.fn.spspec import schabenberger_spectral_representation
+from morie.fn.spspec import schabenberger_spectral_representation
 
 
 def test_spspec_basic():

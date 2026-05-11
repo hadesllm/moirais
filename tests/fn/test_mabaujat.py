@@ -1,7 +1,7 @@
 """Tests for mabaujat.ma_baujat_plot_data."""
 import numpy as np
 import pytest
-from moirais.fn.mabaujat import ma_baujat_plot_data
+from morie.fn.mabaujat import ma_baujat_plot_data
 
 
 def test_mabaujat_basic():

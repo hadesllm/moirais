@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.shpvl — Kernel SHAP values."""
+"""Tests for morie.fn.shpvl — Kernel SHAP values."""
 import numpy as np
 import pytest
-from moirais.fn.shpvl import shpvl
+from morie.fn.shpvl import shpvl
 
 
 @pytest.fixture()
@@ -61,5 +61,5 @@ def test_most_important_feature(setup):
 
 
 def test_cheatsheet():
-    from moirais.fn.shpvl import cheatsheet
+    from morie.fn.shpvl import cheatsheet
     assert len(cheatsheet()) > 0

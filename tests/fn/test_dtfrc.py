@@ -1,7 +1,7 @@
 """Test dtfrc."""
 import numpy as np
 import pytest
-from moirais.fn.dtfrc import dtfrc
+from morie.fn.dtfrc import dtfrc
 
 
 def test_dtfrc_basic():

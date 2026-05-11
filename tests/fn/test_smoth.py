@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.smoth -- epidemic smoothing."""
+"""Tests for morie.fn.smoth -- epidemic smoothing."""
 
 import numpy as np
 import pytest
-from moirais.fn.smoth import epidemic_smooth
+from morie.fn.smoth import epidemic_smooth
 
 
 class TestEpiSmooth:

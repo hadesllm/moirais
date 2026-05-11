@@ -1,7 +1,7 @@
 """Tests for b204.burkov_lm_ch2_trigram_count."""
 import numpy as np
 import pytest
-from moirais.fn.b204 import burkov_lm_ch2_trigram_count
+from morie.fn.b204 import burkov_lm_ch2_trigram_count
 
 
 def test_b204_basic():

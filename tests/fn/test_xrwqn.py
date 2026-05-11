@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwqn -- Queen contiguity weights"""
+"""Tests for morie.fn.xrwqn -- Queen contiguity weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwqn import w_queen
+from morie.fn.xrwqn import w_queen
 
 
 class TestWQueen:

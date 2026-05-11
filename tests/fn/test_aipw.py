@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.aipw — Augmented IPW doubly-robust ATE estimator."""
+"""Tests for morie.fn.aipw — Augmented IPW doubly-robust ATE estimator."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.aipw import estimate_aipw
+from morie.fn.aipw import estimate_aipw
 
 
 @pytest.fixture()

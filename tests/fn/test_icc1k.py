@@ -1,7 +1,7 @@
 """Tests for icc1k.icc_one_way_average."""
 import numpy as np
 import pytest
-from moirais.fn.icc1k import icc_one_way_average
+from morie.fn.icc1k import icc_one_way_average
 
 
 def test_icc1k_basic():

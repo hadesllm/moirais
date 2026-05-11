@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tgenu — genus computation."""
+"""Tests for morie.fn.tgenu — genus computation."""
 
 import pytest
 
-from moirais.fn.tgenu import torus_genus
+from morie.fn.tgenu import torus_genus
 
 
 class TestTorusGenus:

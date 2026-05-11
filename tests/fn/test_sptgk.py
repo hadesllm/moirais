@@ -1,7 +1,7 @@
 """Tests for sptgk.schabenberger_trans_gaussian_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.sptgk import schabenberger_trans_gaussian_kriging
+from morie.fn.sptgk import schabenberger_trans_gaussian_kriging
 
 
 def test_sptgk_basic():

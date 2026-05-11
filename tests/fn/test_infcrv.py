@@ -1,7 +1,7 @@
 """Tests for infcrv.influence_function."""
 import numpy as np
 import pytest
-from moirais.fn.infcrv import influence_function
+from morie.fn.infcrv import influence_function
 
 
 def test_infcrv_basic():

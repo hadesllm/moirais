@@ -1,7 +1,7 @@
 """Tests for aitsbm.compositional_simbias."""
 import numpy as np
 import pytest
-from moirais.fn.aitsbm import compositional_simbias
+from morie.fn.aitsbm import compositional_simbias
 
 
 def test_aitsbm_basic():

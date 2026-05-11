@@ -1,7 +1,7 @@
 """Tests for hmfth.geron_finetune_lm."""
 import numpy as np
 import pytest
-from moirais.fn.hmfth import geron_finetune_lm
+from morie.fn.hmfth import geron_finetune_lm
 
 
 def test_hmfth_basic():

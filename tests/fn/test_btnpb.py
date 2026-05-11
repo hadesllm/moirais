@@ -1,7 +1,7 @@
 """Tests for btnpb.boot_nonoverlap_block."""
 import numpy as np
 import pytest
-from moirais.fn.btnpb import boot_nonoverlap_block
+from morie.fn.btnpb import boot_nonoverlap_block
 
 
 def test_btnpb_basic():

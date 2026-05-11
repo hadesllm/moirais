@@ -1,7 +1,7 @@
 """Tests for fn/ess_s.py -- Effective sample size (survey/sampling)."""
 import numpy as np
 
-from moirais.fn.ess_s import ess_s, effective_sample_size
+from morie.fn.ess_s import ess_s, effective_sample_size
 
 
 def test_ess_s_equal_weights():

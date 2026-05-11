@@ -1,7 +1,7 @@
 """Test clfc."""
 import numpy as np
 import pytest
-from moirais.fn.clfc import clfc
+from morie.fn.clfc import clfc
 
 
 def test_clfc_basic():

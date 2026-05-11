@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tsne — t-SNE."""
+"""Tests for morie.fn.tsne — t-SNE."""
 
 import numpy as np
 import pytest
-from moirais.fn.tsne import tsne
-from moirais.fn._containers import TsneRes
+from morie.fn.tsne import tsne
+from morie.fn._containers import TsneRes
 
 
 class TestTsne:

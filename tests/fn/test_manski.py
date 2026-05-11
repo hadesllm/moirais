@@ -1,7 +1,7 @@
 """Tests for manski.manski_no_assumption_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.manski import manski_no_assumption_bounds
+from morie.fn.manski import manski_no_assumption_bounds
 
 
 def test_manski_basic():

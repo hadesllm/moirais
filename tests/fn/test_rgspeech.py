@@ -1,7 +1,7 @@
 """Tests for rgspeech.rangayyan_speech_features."""
 import numpy as np
 import pytest
-from moirais.fn.rgspeech import rangayyan_speech_features
+from morie.fn.rgspeech import rangayyan_speech_features
 
 
 def test_rgspeech_basic():

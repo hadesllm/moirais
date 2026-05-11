@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.penrs -- Penrose diagram coordinates."""
+"""Tests for morie.fn.penrs -- Penrose diagram coordinates."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.penrs import penrs
+from morie.fn.penrs import penrs
 
 
 def test_returns_dict():

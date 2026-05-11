@@ -1,7 +1,7 @@
 """Tests for ghs021.ghosal_ch3_tailfree_max_bound."""
 import numpy as np
 import pytest
-from moirais.fn.ghs021 import ghosal_ch3_tailfree_max_bound
+from morie.fn.ghs021 import ghosal_ch3_tailfree_max_bound
 
 
 def test_ghs021_basic():

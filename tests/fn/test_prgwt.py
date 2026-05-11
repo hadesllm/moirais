@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.prgwt — program waitlist IV."""
+"""Tests for morie.fn.prgwt — program waitlist IV."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.prgwt import program_waitlist
-from moirais.fn._containers import ESRes
+from morie.fn.prgwt import program_waitlist
+from morie.fn._containers import ESRes
 
 
 class TestProgramWaitlist:

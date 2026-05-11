@@ -1,7 +1,7 @@
 """Test afrnf."""
 import numpy as np
 import pytest
-from moirais.fn.afrnf import afrnf
+from morie.fn.afrnf import afrnf
 
 
 def test_afrnf_basic():

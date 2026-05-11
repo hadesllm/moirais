@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.prev -- Point prevalence."""
+"""Tests for morie.fn.prev -- Point prevalence."""
 
 import pytest
-from moirais.fn.prev import point_prevalence
+from morie.fn.prev import point_prevalence
 
 
 class TestPointPrevalence:

@@ -1,7 +1,7 @@
 """Tests for grdro.geron_dropout."""
 import numpy as np
 import pytest
-from moirais.fn.grdro import geron_dropout
+from morie.fn.grdro import geron_dropout
 
 
 def test_grdro_basic():

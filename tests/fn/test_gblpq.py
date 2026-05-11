@@ -1,7 +1,7 @@
 """Tests for gblpq.gblup_equivalence."""
 import numpy as np
 import pytest
-from moirais.fn.gblpq import gblup_equivalence
+from morie.fn.gblpq import gblup_equivalence
 
 
 def test_gblpq_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cdccm -- Charlson comorbidity index."""
+"""Tests for morie.fn.cdccm -- Charlson comorbidity index."""
 
 import pytest
-from moirais.fn.cdccm import charlson_comorbidity
+from morie.fn.cdccm import charlson_comorbidity
 
 
 class TestCharlsonComorbidity:

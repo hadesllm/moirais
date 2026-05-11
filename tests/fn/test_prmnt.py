@@ -1,7 +1,7 @@
 """Tests for permutation entropy."""
 import numpy as np
 import pytest
-from moirais.fn.prmnt import permutation_entropy, prmnt
+from morie.fn.prmnt import permutation_entropy, prmnt
 
 
 def test_sorted():

@@ -1,7 +1,7 @@
 """Tests for stbkrg."""
 import numpy as np
 import pytest
-from moirais.fn.stbkrg import stbkrg
+from morie.fn.stbkrg import stbkrg
 
 
 def test_stbkrg_basic():
@@ -27,5 +27,5 @@ def test_stbkrg_no_data():
 
 
 def test_stbkrg_alias():
-    from moirais.fn.stbkrg import stbkrg
+    from morie.fn.stbkrg import stbkrg
     assert stbkrg is stbkrg

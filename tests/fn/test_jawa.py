@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.jawa -- Jackknife estimator."""
+"""Tests for morie.fn.jawa -- Jackknife estimator."""
 
 import numpy as np
-from moirais.fn.jawa import jackknife, jawa
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.jawa import jackknife, jawa
+from morie.fn._containers import DescriptiveResult
 
 
 class TestJawa:

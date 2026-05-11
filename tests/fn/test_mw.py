@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mw -- Mann-Whitney U test."""
+"""Tests for morie.fn.mw -- Mann-Whitney U test."""
 
 import pytest
-from moirais.fn.mw import mann_whitney_test
+from morie.fn.mw import mann_whitney_test
 
 
 class TestMannWhitneyTest:

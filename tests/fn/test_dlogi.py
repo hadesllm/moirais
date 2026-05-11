@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dlogi -- Logistic PDF."""
+"""Tests for morie.fn.dlogi -- Logistic PDF."""
 
 import numpy as np
 import pytest
-from moirais.fn.dlogi import dlogi
+from morie.fn.dlogi import dlogi
 
 
 class TestDlogi:

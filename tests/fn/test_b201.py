@@ -1,7 +1,7 @@
 """Tests for b201.burkov_lm_ch2_categorical_cross_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.b201 import burkov_lm_ch2_categorical_cross_entropy
+from morie.fn.b201 import burkov_lm_ch2_categorical_cross_entropy
 
 
 def test_b201_basic():

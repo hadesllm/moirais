@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ibs — identity by state."""
+"""Tests for morie.fn.ibs — identity by state."""
 import numpy as np
 import pytest
-from moirais.fn.ibs import identity_by_state
+from morie.fn.ibs import identity_by_state
 
 
 class TestIBS:

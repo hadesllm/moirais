@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.g -- Hedges' g effect size."""
+"""Tests for morie.fn.g -- Hedges' g effect size."""
 
 import numpy as np
 import pytest
-from moirais.fn.g import hedges_g
-from moirais.fn.d import cohens_d
+from morie.fn.g import hedges_g
+from morie.fn.d import cohens_d
 
 
 class TestHedgesG:

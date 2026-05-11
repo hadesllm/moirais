@@ -1,7 +1,7 @@
 """Tests for rgmra.rangayyan_mra."""
 import numpy as np
 import pytest
-from moirais.fn.rgmra import rangayyan_mra
+from morie.fn.rgmra import rangayyan_mra
 
 
 def test_rgmra_basic():

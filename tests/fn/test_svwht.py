@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svwht -- Wittman divergence model (policy-motivated)"""
+"""Tests for morie.fn.svwht -- Wittman divergence model (policy-motivated)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svwht import wittman_model
+from morie.fn.svwht import wittman_model
 
 
 class TestWittmanModel:

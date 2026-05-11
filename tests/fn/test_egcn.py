@@ -1,7 +1,7 @@
 """Tests for egcn.e_gcn."""
 import numpy as np
 import pytest
-from moirais.fn.egcn import e_gcn
+from morie.fn.egcn import e_gcn
 
 
 def test_egcn_basic():

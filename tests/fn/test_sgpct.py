@@ -1,7 +1,7 @@
 """Tests for sgpct."""
 import numpy as np
 import pytest
-from moirais.fn.sgpct import sgpct
+from morie.fn.sgpct import sgpct
 
 
 def test_sgpct_basic():
@@ -27,5 +27,5 @@ def test_sgpct_no_data():
 
 
 def test_sgpct_alias():
-    from moirais.fn.sgpct import sgpct
+    from morie.fn.sgpct import sgpct
     assert sgpct is sgpct

@@ -1,7 +1,7 @@
 """Test blackman_window (wnblk)."""
 import numpy as np
-from moirais.fn.wnblk import blackman_window, wnblk
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wnblk import blackman_window, wnblk
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWnblk:

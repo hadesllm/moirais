@@ -1,7 +1,7 @@
 """Tests for bartkw.bartlett_kernel_weights."""
 import numpy as np
 import pytest
-from moirais.fn.bartkw import bartlett_kernel_weights
+from morie.fn.bartkw import bartlett_kernel_weights
 
 
 def test_bartkw_basic():

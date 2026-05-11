@@ -1,7 +1,7 @@
 """Tests for grtmp.geron_temperature_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.grtmp import geron_temperature_sampling
+from morie.fn.grtmp import geron_temperature_sampling
 
 
 def test_grtmp_basic():

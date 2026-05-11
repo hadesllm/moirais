@@ -1,7 +1,7 @@
 """Test central_moment (smom2)."""
 import numpy as np
-from moirais.fn.smom2 import central_moment, smom2
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.smom2 import central_moment, smom2
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCentralMoment:

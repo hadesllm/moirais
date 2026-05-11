@@ -1,7 +1,7 @@
 """Tests for caltbR.calibrated_rec."""
 import numpy as np
 import pytest
-from moirais.fn.caltbR import calibrated_rec
+from morie.fn.caltbR import calibrated_rec
 
 
 def test_caltbR_basic():

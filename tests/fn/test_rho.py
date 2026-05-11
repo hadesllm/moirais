@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rho -- Spearman rank correlation."""
+"""Tests for morie.fn.rho -- Spearman rank correlation."""
 
 import numpy as np
 import pytest
-from moirais.fn.rho import spearman_rho
+from morie.fn.rho import spearman_rho
 
 
 class TestSpearmanRho:

@@ -1,7 +1,7 @@
 """Test csbrg."""
 import numpy as np
 import pytest
-from moirais.fn.csbrg import csbrg
+from morie.fn.csbrg import csbrg
 
 
 def test_csbrg_basic():

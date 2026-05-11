@@ -1,7 +1,7 @@
 """Tests for rfmdi.rf_mdi_importance."""
 import numpy as np
 import pytest
-from moirais.fn.rfmdi import rf_mdi_importance
+from morie.fn.rfmdi import rf_mdi_importance
 
 
 def test_rfmdi_basic():

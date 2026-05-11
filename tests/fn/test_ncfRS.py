@@ -1,7 +1,7 @@
 """Tests for ncfRS.ncf."""
 import numpy as np
 import pytest
-from moirais.fn.ncfRS import ncf
+from morie.fn.ncfRS import ncf
 
 
 def test_ncfRS_basic():

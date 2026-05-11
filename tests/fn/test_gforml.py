@@ -1,7 +1,7 @@
 """Tests for gforml.robins_g_formula."""
 import numpy as np
 import pytest
-from moirais.fn.gforml import robins_g_formula
+from morie.fn.gforml import robins_g_formula
 
 
 def test_gforml_basic():

@@ -1,7 +1,7 @@
 """Test gcdrg."""
 import numpy as np
 import pytest
-from moirais.fn.gcdrg import gcdrg
+from morie.fn.gcdrg import gcdrg
 
 
 def test_gcdrg_basic():

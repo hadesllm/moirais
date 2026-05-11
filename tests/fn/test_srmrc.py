@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.srmrc import srmrc
+from morie.fn.srmrc import srmrc
 
 
 class TestSrmrc:

@@ -3,7 +3,7 @@ Tests for Nesterov accelerated gradient.
 """
 
 import numpy as np
-from moirais.fn.nadmf import nadmf
+from morie.fn.nadmf import nadmf
 
 
 class TestNadmf:

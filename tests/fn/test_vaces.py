@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vaces -- vaccine efficacy (Greenwood/exact)."""
+"""Tests for morie.fn.vaces -- vaccine efficacy (Greenwood/exact)."""
 
 import numpy as np
 import pytest
-from moirais.fn.vaces import vaccine_efficacy_exact
+from morie.fn.vaces import vaccine_efficacy_exact
 
 
 class TestVaccineEfficacyExact:

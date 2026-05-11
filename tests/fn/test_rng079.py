@@ -1,7 +1,7 @@
 """Tests for rng079.rangayyan_ch3_periodic_convolution."""
 import numpy as np
 import pytest
-from moirais.fn.rng079 import rangayyan_ch3_periodic_convolution
+from morie.fn.rng079 import rangayyan_ch3_periodic_convolution
 
 
 def test_rng079_basic():

@@ -1,7 +1,7 @@
 """Tests for gb1241.gibbons_concordance_w."""
 import numpy as np
 import pytest
-from moirais.fn.gb1241 import gibbons_concordance_w
+from morie.fn.gb1241 import gibbons_concordance_w
 
 
 def test_gb1241_basic():

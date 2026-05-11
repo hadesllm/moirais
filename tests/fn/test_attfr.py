@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.attfr — Attributable fraction."""
+"""Tests for morie.fn.attfr — Attributable fraction."""
 
 import pytest
 
-from moirais.fn.attfr import attributable_fraction
+from morie.fn.attfr import attributable_fraction
 
 
 class TestAttributableFraction:

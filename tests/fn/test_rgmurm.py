@@ -1,7 +1,7 @@
 """Tests for rgmurm.rangayyan_murmur_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.rgmurm import rangayyan_murmur_analysis
+from morie.fn.rgmurm import rangayyan_murmur_analysis
 
 
 def test_rgmurm_basic():

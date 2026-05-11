@@ -1,7 +1,7 @@
 """Tests for wsmpsr.wasserman_poisson_regression."""
 import numpy as np
 import pytest
-from moirais.fn.wsmpsr import wasserman_poisson_regression
+from morie.fn.wsmpsr import wasserman_poisson_regression
 
 
 def test_wsmpsr_basic():

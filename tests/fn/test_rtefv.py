@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rtefv -- Effective Rt."""
+"""Tests for morie.fn.rtefv -- Effective Rt."""
 
 import numpy as np
-from moirais.fn.rtefv import rt_effective
+from morie.fn.rtefv import rt_effective
 
 
 class TestRtEffective:

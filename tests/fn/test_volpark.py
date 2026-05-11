@@ -1,7 +1,7 @@
 """Tests for volpark.vol_parkinson_range."""
 import numpy as np
 import pytest
-from moirais.fn.volpark import vol_parkinson_range
+from morie.fn.volpark import vol_parkinson_range
 
 
 def test_volpark_basic():

@@ -1,7 +1,7 @@
 """Tests for copt.t_copula."""
 import numpy as np
 import pytest
-from moirais.fn.copt import t_copula
+from morie.fn.copt import t_copula
 
 
 def test_copt_basic():

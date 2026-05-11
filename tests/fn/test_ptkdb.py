@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptkdb -- KDE bandwidth selection (spatial)"""
+"""Tests for morie.fn.ptkdb -- KDE bandwidth selection (spatial)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptkdb import kde_bandwidth
+from morie.fn.ptkdb import kde_bandwidth
 
 
 class TestKdeBandwidth:

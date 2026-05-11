@@ -1,7 +1,7 @@
 """Tests for mrgdrv.martingale_concentration."""
 import numpy as np
 import pytest
-from moirais.fn.mrgdrv import martingale_concentration
+from morie.fn.mrgdrv import martingale_concentration
 
 
 def test_mrgdrv_basic():

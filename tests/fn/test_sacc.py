@@ -1,7 +1,7 @@
 """Tests for sacc.sac."""
 import numpy as np
 import pytest
-from moirais.fn.sacc import sac
+from morie.fn.sacc import sac
 
 
 def test_sacc_basic():

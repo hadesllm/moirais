@@ -1,7 +1,7 @@
 """Tests for kmyarn.kamath_yarn_context_extrapolation."""
 import numpy as np
 import pytest
-from moirais.fn.kmyarn import kamath_yarn_context_extrapolation
+from morie.fn.kmyarn import kamath_yarn_context_extrapolation
 
 
 def test_kmyarn_basic():

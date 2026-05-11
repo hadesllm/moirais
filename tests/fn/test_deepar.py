@@ -1,7 +1,7 @@
 """Tests for deepar.deepar."""
 import numpy as np
 import pytest
-from moirais.fn.deepar import deepar
+from morie.fn.deepar import deepar
 
 
 def test_deepar_basic():

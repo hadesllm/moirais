@@ -1,7 +1,7 @@
 """Tests for hmvf.geron_value_function."""
 import numpy as np
 import pytest
-from moirais.fn.hmvf import geron_value_function
+from morie.fn.hmvf import geron_value_function
 
 
 def test_hmvf_basic():

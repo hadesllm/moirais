@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.arima — ARIMA fitting."""
+"""Tests for morie.fn.arima — ARIMA fitting."""
 import numpy as np
 import pytest
-from moirais.fn.arima import arima_fit
+from morie.fn.arima import arima_fit
 
 
 class TestARIMA:

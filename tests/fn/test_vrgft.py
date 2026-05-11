@@ -1,7 +1,7 @@
 """Tests for vrgft.variogram_fitting."""
 import numpy as np
 import pytest
-from moirais.fn.vrgft import variogram_fitting
+from morie.fn.vrgft import variogram_fitting
 
 
 def test_vrgft_basic():

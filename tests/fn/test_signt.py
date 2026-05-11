@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.signt import signt
+from morie.fn.signt import signt
 
 
 class TestSignt:

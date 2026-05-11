@@ -1,7 +1,7 @@
 """Test opred."""
 import numpy as np
 import pytest
-from moirais.fn.opred import opred
+from morie.fn.opred import opred
 
 
 def test_opred_basic():

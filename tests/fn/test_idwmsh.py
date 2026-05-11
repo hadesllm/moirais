@@ -1,7 +1,7 @@
 """Tests for idwmsh."""
 import numpy as np
 import pytest
-from moirais.fn.idwmsh import idwmsh
+from morie.fn.idwmsh import idwmsh
 
 
 def test_idwmsh_basic():
@@ -27,5 +27,5 @@ def test_idwmsh_no_data():
 
 
 def test_idwmsh_alias():
-    from moirais.fn.idwmsh import idwmsh
+    from morie.fn.idwmsh import idwmsh
     assert idwmsh is idwmsh

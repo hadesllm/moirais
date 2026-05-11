@@ -1,7 +1,7 @@
 """Tests for huberw.huber_weight."""
 import numpy as np
 import pytest
-from moirais.fn.huberw import huber_weight
+from morie.fn.huberw import huber_weight
 
 
 def test_huberw_basic():

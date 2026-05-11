@@ -1,7 +1,7 @@
 """Tests for ssmpar.ssm_parallel_scan."""
 import numpy as np
 import pytest
-from moirais.fn.ssmpar import ssm_parallel_scan
+from morie.fn.ssmpar import ssm_parallel_scan
 
 
 def test_ssmpar_basic():

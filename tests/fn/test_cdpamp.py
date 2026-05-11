@@ -1,7 +1,7 @@
 """Tests for cdpamp.cdp_subgaussian_amplification."""
 import numpy as np
 import pytest
-from moirais.fn.cdpamp import cdp_subgaussian_amplification
+from morie.fn.cdpamp import cdp_subgaussian_amplification
 
 
 def test_cdpamp_basic():

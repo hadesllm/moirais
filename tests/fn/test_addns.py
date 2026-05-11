@@ -1,7 +1,7 @@
 """Test add_noise (addns)."""
 import numpy as np
-from moirais.fn.addns import add_noise, addns
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.addns import add_noise, addns
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAddNoise:

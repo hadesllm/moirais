@@ -3,8 +3,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.pmgbrd import pm_gemm_burden, pmgbrd
-from moirais.fn.pmgemm import pm_gemm_rr
+from morie.fn.pmgbrd import pm_gemm_burden, pmgbrd
+from morie.fn.pmgemm import pm_gemm_rr
 
 
 def test_pmgbrd_at_tmrel_zero_deaths():

@@ -1,7 +1,7 @@
 """Test markg."""
 import numpy as np
 import pytest
-from moirais.fn.markg import markg
+from morie.fn.markg import markg
 
 
 def test_markg_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msdel -- 2D Delaunay triangulation"""
+"""Tests for morie.fn.msdel -- 2D Delaunay triangulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msdel import delaunay_2d
+from morie.fn.msdel import delaunay_2d
 
 
 class TestDelaunay2d:

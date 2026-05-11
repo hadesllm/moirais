@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svamn -- Sequential amendment procedure"""
+"""Tests for morie.fn.svamn -- Sequential amendment procedure"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svamn import amendment_seq
+from morie.fn.svamn import amendment_seq
 
 
 class TestAmendmentSeq:

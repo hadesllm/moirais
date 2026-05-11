@@ -1,6 +1,6 @@
 """Tests for ljbx.py - Ljung-Box test."""
 import numpy as np
-from moirais.fn.ljbx import ljung_box_test_fn, ljbx
+from morie.fn.ljbx import ljung_box_test_fn, ljbx
 
 
 def test_ljbx_returns_result():

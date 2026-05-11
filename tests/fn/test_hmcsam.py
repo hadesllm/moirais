@@ -1,7 +1,7 @@
 """Tests for hmcsam.hamiltonian_mc."""
 import numpy as np
 import pytest
-from moirais.fn.hmcsam import hamiltonian_mc
+from morie.fn.hmcsam import hamiltonian_mc
 
 
 def test_hmcsam_basic():

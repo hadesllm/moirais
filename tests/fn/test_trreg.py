@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.trreg — transformation regression."""
+"""Tests for morie.fn.trreg — transformation regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.trreg import trreg
+from morie.fn.trreg import trreg
 
 
 def test_log_transform():

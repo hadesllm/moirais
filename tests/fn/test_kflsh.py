@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kflsh -- Acceleration profile."""
+"""Tests for morie.fn.kflsh -- Acceleration profile."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.kflsh import acceleration_profile, kflsh
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.kflsh import acceleration_profile, kflsh
+from morie.fn._containers import DescriptiveResult
 
 
 class TestKflsh:

@@ -1,7 +1,7 @@
 """Test dtwsh."""
 import numpy as np
 import pytest
-from moirais.fn.dtwsh import dtwsh
+from morie.fn.dtwsh import dtwsh
 
 
 def test_dtwsh_basic():

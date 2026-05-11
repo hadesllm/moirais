@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pswrm -- Particle swarm optimization."""
+"""Tests for morie.fn.pswrm -- Particle swarm optimization."""
 
 import numpy as np
-from moirais.fn.pswrm import particle_swarm, pswrm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.pswrm import particle_swarm, pswrm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPswrm:

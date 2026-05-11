@@ -1,7 +1,7 @@
 """Tests for matccd.matched_case_control."""
 import numpy as np
 import pytest
-from moirais.fn.matccd import matched_case_control
+from morie.fn.matccd import matched_case_control
 
 
 def test_matccd_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cross — Crossover trial analysis."""
+"""Tests for morie.fn.cross — Crossover trial analysis."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cross import crossover_analysis
+from morie.fn.cross import crossover_analysis
 
 
 class TestCrossoverAnalysis:

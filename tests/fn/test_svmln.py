@@ -1,7 +1,7 @@
 """Test svm_linear (svmln)."""
 import numpy as np
-from moirais.fn.svmln import svm_linear, svmln
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.svmln import svm_linear, svmln
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSvmln:

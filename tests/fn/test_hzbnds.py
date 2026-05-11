@@ -1,7 +1,7 @@
 """Tests for hzbnds.horowitz_manski_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.hzbnds import horowitz_manski_bounds
+from morie.fn.hzbnds import horowitz_manski_bounds
 
 
 def test_hzbnds_basic():

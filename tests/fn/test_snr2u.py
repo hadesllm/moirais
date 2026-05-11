@@ -1,7 +1,7 @@
 """Tests for snr2u.snijders_bosker_r2_level2."""
 import numpy as np
 import pytest
-from moirais.fn.snr2u import snijders_bosker_r2_level2
+from morie.fn.snr2u import snijders_bosker_r2_level2
 
 
 def test_snr2u_basic():

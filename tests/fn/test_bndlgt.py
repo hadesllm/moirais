@@ -1,7 +1,7 @@
 """Tests for bndlgt.bound_logistic."""
 import numpy as np
 import pytest
-from moirais.fn.bndlgt import bound_logistic
+from morie.fn.bndlgt import bound_logistic
 
 
 def test_bndlgt_basic():

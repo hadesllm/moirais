@@ -1,6 +1,6 @@
 """Test dropout."""
 import numpy as np
-from moirais.fn.drupt import drupt
+from morie.fn.drupt import drupt
 
 
 def test_drupt_training():

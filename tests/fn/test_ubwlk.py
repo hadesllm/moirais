@@ -1,7 +1,7 @@
 """Test ubwlk."""
 import numpy as np
 import pytest
-from moirais.fn.ubwlk import ubwlk
+from morie.fn.ubwlk import ubwlk
 
 
 def test_ubwlk_basic():

@@ -1,6 +1,6 @@
 """Tests for imfex.py - IMF extraction."""
 import numpy as np
-from moirais.fn.imfex import imf_extract, imfex
+from morie.fn.imfex import imf_extract, imfex
 
 
 def test_imf_extract_returns_result():

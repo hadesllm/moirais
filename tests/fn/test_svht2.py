@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svht2 -- Two-party Hotelling spatial competition"""
+"""Tests for morie.fn.svht2 -- Two-party Hotelling spatial competition"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svht2 import hotelling_2party
+from morie.fn.svht2 import hotelling_2party
 
 
 class TestHotelling2party:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.xgb -- XGBoost/gradient boosting wrapper."""
+"""Tests for morie.fn.xgb -- XGBoost/gradient boosting wrapper."""
 
 import numpy as np
 import pytest
-from moirais.fn.xgb import xgb_classify
+from morie.fn.xgb import xgb_classify
 
 
 class TestXgbClassify:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.lrfor -- Forensic likelihood ratio."""
+"""Tests for morie.fn.lrfor -- Forensic likelihood ratio."""
 
 import numpy as np
 import pytest
-from moirais.fn.lrfor import lrfor
+from morie.fn.lrfor import lrfor
 
 
 class TestLrfor:

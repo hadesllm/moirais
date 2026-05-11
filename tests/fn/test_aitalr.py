@@ -1,7 +1,7 @@
 """Tests for aitalr.aitchison_alr."""
 import numpy as np
 import pytest
-from moirais.fn.aitalr import aitchison_alr
+from morie.fn.aitalr import aitchison_alr
 
 
 def test_aitalr_basic():

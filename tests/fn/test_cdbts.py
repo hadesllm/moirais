@@ -1,7 +1,7 @@
 """Tests for cdbts."""
 import numpy as np
 import pytest
-from moirais.fn.cdbts import cdbts
+from morie.fn.cdbts import cdbts
 
 
 def test_cdbts_basic():
@@ -27,5 +27,5 @@ def test_cdbts_no_data():
 
 
 def test_cdbts_alias():
-    from moirais.fn.cdbts import cdbts
+    from morie.fn.cdbts import cdbts
     assert cdbts is cdbts

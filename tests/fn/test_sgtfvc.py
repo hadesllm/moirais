@@ -1,7 +1,7 @@
 """Tests for sgtfvc.sgt_fiedler_vector."""
 import numpy as np
 import pytest
-from moirais.fn.sgtfvc import sgt_fiedler_vector
+from morie.fn.sgtfvc import sgt_fiedler_vector
 
 
 def test_sgtfvc_basic():

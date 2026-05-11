@@ -1,7 +1,7 @@
 """Tests for gmprl: Gompertz survival model."""
 import numpy as np
 import pytest
-from moirais.fn.gmprl import gmprl
+from morie.fn.gmprl import gmprl
 
 
 def _sim_gompertz(n=200, log_lam=-1.0, gamma=0.3, seed=0):

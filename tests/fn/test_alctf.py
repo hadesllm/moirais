@@ -1,7 +1,7 @@
 """Tests for alctf.alammar_c_tfidf."""
 import numpy as np
 import pytest
-from moirais.fn.alctf import alammar_c_tfidf
+from morie.fn.alctf import alammar_c_tfidf
 
 
 def test_alctf_basic():

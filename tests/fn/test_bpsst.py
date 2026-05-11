@@ -1,6 +1,6 @@
 """Test bpsst."""
 import pytest
-from moirais.fn.bpsst import bps_state
+from morie.fn.bpsst import bps_state
 
 
 def test_bpsst_basic():

@@ -1,7 +1,7 @@
 """Tests for gpdD.gpd_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.gpdD import gpd_distribution
+from morie.fn.gpdD import gpd_distribution
 
 
 def test_gpdD_basic():

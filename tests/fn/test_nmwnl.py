@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmwnl -- W-NOMINATE log-likelihood"""
+"""Tests for morie.fn.nmwnl -- W-NOMINATE log-likelihood"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmwnl import wnominate_loglik
+from morie.fn.nmwnl import wnominate_loglik
 
 
 class TestWnominateLoglik:

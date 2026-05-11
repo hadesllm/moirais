@@ -1,7 +1,7 @@
 """Tests for rgsen.rangayyan_sensitivity."""
 import numpy as np
 import pytest
-from moirais.fn.rgsen import rangayyan_sensitivity
+from morie.fn.rgsen import rangayyan_sensitivity
 
 
 def test_rgsen_basic():

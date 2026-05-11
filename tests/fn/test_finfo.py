@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.finfo — Fisher information matrix."""
+"""Tests for morie.fn.finfo — Fisher information matrix."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.finfo import finfo
+from morie.fn.finfo import finfo
 
 
 class TestFinfo:

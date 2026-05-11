@@ -1,7 +1,7 @@
 """Tests for eslshk.esl_shrinkage."""
 import numpy as np
 import pytest
-from moirais.fn.eslshk import esl_shrinkage
+from morie.fn.eslshk import esl_shrinkage
 
 
 def test_eslshk_basic():

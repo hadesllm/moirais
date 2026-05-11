@@ -1,6 +1,6 @@
 """Tests for cmorw.py - Complex Morlet wavelet."""
 import numpy as np
-from moirais.fn.cmorw import cmor_wavelet, cmorw
+from morie.fn.cmorw import cmor_wavelet, cmorw
 
 
 def test_cmorw_returns_descriptive_result():

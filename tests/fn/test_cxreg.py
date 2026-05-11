@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cxreg — Cox regression."""
+"""Tests for morie.fn.cxreg — Cox regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cxreg import cxreg
+from morie.fn.cxreg import cxreg
 
 
 @pytest.fixture()

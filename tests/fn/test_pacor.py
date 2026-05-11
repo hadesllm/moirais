@@ -1,7 +1,7 @@
 """Tests for pacor.predictive_ability_pearson."""
 import numpy as np
 import pytest
-from moirais.fn.pacor import predictive_ability_pearson
+from morie.fn.pacor import predictive_ability_pearson
 
 
 def test_pacor_basic():

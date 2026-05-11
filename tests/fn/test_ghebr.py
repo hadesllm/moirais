@@ -1,7 +1,7 @@
 """Test ghebr."""
 import numpy as np
 import pytest
-from moirais.fn.ghebr import ghebr
+from morie.fn.ghebr import ghebr
 
 
 def test_ghebr_basic():

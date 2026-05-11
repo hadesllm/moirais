@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sqnr — signal-to-quantization-noise ratio."""
+"""Tests for morie.fn.sqnr — signal-to-quantization-noise ratio."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sqnr import signal_quant_noise_ratio
+from morie.fn.sqnr import signal_quant_noise_ratio
 
 
 class TestSqnr:

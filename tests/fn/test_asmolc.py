@@ -1,7 +1,7 @@
 """Tests for asmolc.olc_assembly."""
 import numpy as np
 import pytest
-from moirais.fn.asmolc import olc_assembly
+from morie.fn.asmolc import olc_assembly
 
 
 def test_asmolc_basic():

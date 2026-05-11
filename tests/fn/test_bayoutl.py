@@ -1,7 +1,7 @@
 """Tests for bayoutl.bayes_outlier."""
 import numpy as np
 import pytest
-from moirais.fn.bayoutl import bayes_outlier
+from morie.fn.bayoutl import bayes_outlier
 
 
 def test_bayoutl_basic():

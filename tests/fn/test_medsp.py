@@ -1,7 +1,7 @@
 """Test medsp."""
 import numpy as np
 import pytest
-from moirais.fn.medsp import medsp
+from morie.fn.medsp import medsp
 
 
 def test_medsp_basic():

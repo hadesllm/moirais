@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mstar -- Markov-switching AR."""
+"""Tests for morie.fn.mstar -- Markov-switching AR."""
 import numpy as np
 import pytest
-from moirais.fn.mstar import ms_ar
+from morie.fn.mstar import ms_ar
 
 
 class TestMSAR:
@@ -19,5 +19,5 @@ class TestMSAR:
             ms_ar(np.ones(5), p=1)
 
     def test_cheatsheet(self):
-        from moirais.fn.mstar import cheatsheet
+        from morie.fn.mstar import cheatsheet
         assert isinstance(cheatsheet(), str)

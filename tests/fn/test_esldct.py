@@ -1,7 +1,7 @@
 """Tests for esldct.esl_decision_tree."""
 import numpy as np
 import pytest
-from moirais.fn.esldct import esl_decision_tree
+from morie.fn.esldct import esl_decision_tree
 
 
 def test_esldct_basic():

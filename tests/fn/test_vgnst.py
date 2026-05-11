@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgnst -- Nested (composite) variogram"""
+"""Tests for morie.fn.vgnst -- Nested (composite) variogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgnst import vario_nested
+from morie.fn.vgnst import vario_nested
 
 
 class TestVarioNested:

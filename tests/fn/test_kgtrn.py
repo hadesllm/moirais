@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgtrn -- Kriging trend surface"""
+"""Tests for morie.fn.kgtrn -- Kriging trend surface"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgtrn import kriging_trend_surface
+from morie.fn.kgtrn import kriging_trend_surface
 
 
 class TestKrigingTrendSurface:

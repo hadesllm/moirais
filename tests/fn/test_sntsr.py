@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.sntsr — proportion of sentence served."""
+"""Tests for morie.fn.sntsr — proportion of sentence served."""
 
-from moirais.fn.sntsr import sentence_served, sntsr
+from morie.fn.sntsr import sentence_served, sntsr
 import numpy as np
 
 

@@ -1,7 +1,7 @@
 """Tests for btnpqr.boot_quantile_regression."""
 import numpy as np
 import pytest
-from moirais.fn.btnpqr import boot_quantile_regression
+from morie.fn.btnpqr import boot_quantile_regression
 
 
 def test_btnpqr_basic():

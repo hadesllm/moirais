@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svrcp -- Roll call vote probability model"""
+"""Tests for morie.fn.svrcp -- Roll call vote probability model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svrcp import roll_call_prob
+from morie.fn.svrcp import roll_call_prob
 
 
 class TestRollCallProb:

@@ -1,7 +1,7 @@
 """Test dk4dr."""
 import numpy as np
 import pytest
-from moirais.fn.dk4dr import dk4dr
+from morie.fn.dk4dr import dk4dr
 
 
 def test_dk4dr_basic():

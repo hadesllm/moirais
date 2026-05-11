@@ -1,7 +1,7 @@
 """Tests for kmdpr.kamath_dense_passage_retrieval."""
 import numpy as np
 import pytest
-from moirais.fn.kmdpr import kamath_dense_passage_retrieval
+from morie.fn.kmdpr import kamath_dense_passage_retrieval
 
 
 def test_kmdpr_basic():

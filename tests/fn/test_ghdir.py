@@ -1,7 +1,7 @@
 """Tests for ghdir.ghosal_dirichlet_posterior."""
 import numpy as np
 import pytest
-from moirais.fn.ghdir import ghosal_dirichlet_posterior
+from morie.fn.ghdir import ghosal_dirichlet_posterior
 
 
 def test_ghdir_basic():

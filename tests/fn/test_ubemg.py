@@ -1,7 +1,7 @@
 """Test ubemg."""
 import numpy as np
 import pytest
-from moirais.fn.ubemg import ubemg
+from morie.fn.ubemg import ubemg
 
 
 def test_ubemg_basic():

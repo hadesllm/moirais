@@ -1,7 +1,7 @@
 """Tests for nonresp.nonresponse_adjustment."""
 import numpy as np
 import pytest
-from moirais.fn.nonresp import nonresponse_adjustment
+from morie.fn.nonresp import nonresponse_adjustment
 
 
 def test_nonresp_basic():

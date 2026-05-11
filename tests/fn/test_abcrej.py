@@ -1,7 +1,7 @@
 """Tests for abcrej.abc_rejection."""
 import numpy as np
 import pytest
-from moirais.fn.abcrej import abc_rejection
+from morie.fn.abcrej import abc_rejection
 
 
 def test_abcrej_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.trnty -- CVSS v3.1 base score."""
+"""Tests for morie.fn.trnty -- CVSS v3.1 base score."""
 
-from moirais.fn.trnty import cvss_base, trnty
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.trnty import cvss_base, trnty
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTrnty:

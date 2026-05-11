@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tmplb — template library matching."""
+"""Tests for morie.fn.tmplb — template library matching."""
 import numpy as np
 import pytest
 
-from moirais.fn.tmplb import template_library, tmplb
+from morie.fn.tmplb import template_library, tmplb
 
 
 def test_exact_match():

@@ -1,7 +1,7 @@
 """Tests for rgeemd.rangayyan_eemd."""
 import numpy as np
 import pytest
-from moirais.fn.rgeemd import rangayyan_eemd
+from morie.fn.rgeemd import rangayyan_eemd
 
 
 def test_rgeemd_basic():

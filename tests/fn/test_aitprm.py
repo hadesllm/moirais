@@ -1,7 +1,7 @@
 """Tests for aitprm.compositional_permanova."""
 import numpy as np
 import pytest
-from moirais.fn.aitprm import compositional_permanova
+from morie.fn.aitprm import compositional_permanova
 
 
 def test_aitprm_basic():

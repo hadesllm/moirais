@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tqmse — TurboQuant MSE-optimal quantization."""
+"""Tests for morie.fn.tqmse — TurboQuant MSE-optimal quantization."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tqmse import turboquant_mse
+from morie.fn.tqmse import turboquant_mse
 
 
 class TestTurboquantMse:

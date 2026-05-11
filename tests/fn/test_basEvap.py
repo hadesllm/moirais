@@ -1,7 +1,7 @@
 """Tests for basEvap.penman_monteith."""
 import numpy as np
 import pytest
-from moirais.fn.basEvap import penman_monteith
+from morie.fn.basEvap import penman_monteith
 
 
 def test_basEvap_basic():

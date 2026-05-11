@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgenv -- Variogram Monte Carlo envelope"""
+"""Tests for morie.fn.vgenv -- Variogram Monte Carlo envelope"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgenv import vario_envelope
+from morie.fn.vgenv import vario_envelope
 
 
 class TestVarioEnvelope:

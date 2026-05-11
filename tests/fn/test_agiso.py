@@ -1,7 +1,7 @@
 """Test agiso."""
 import numpy as np
 import pytest
-from moirais.fn.agiso import agiso
+from morie.fn.agiso import agiso
 
 
 def test_agiso_basic():

@@ -1,7 +1,7 @@
 """Tests for shscl.scaled_schoenfeld_residual."""
 import numpy as np
 import pytest
-from moirais.fn.shscl import scaled_schoenfeld_residual
+from morie.fn.shscl import scaled_schoenfeld_residual
 
 
 def test_shscl_basic():

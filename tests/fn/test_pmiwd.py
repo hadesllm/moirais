@@ -1,7 +1,7 @@
 """Tests for pmiwd.pointwise_mutual_info."""
 import numpy as np
 import pytest
-from moirais.fn.pmiwd import pointwise_mutual_info
+from morie.fn.pmiwd import pointwise_mutual_info
 
 
 def test_pmiwd_basic():

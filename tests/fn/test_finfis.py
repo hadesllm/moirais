@@ -1,7 +1,7 @@
 """Tests for finfis.fisher_information."""
 import numpy as np
 import pytest
-from moirais.fn.finfis import fisher_information
+from morie.fn.finfis import fisher_information
 
 
 def test_finfis_basic():

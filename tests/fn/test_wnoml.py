@@ -1,7 +1,7 @@
 """Tests for wnoml.wnominate_logit."""
 import numpy as np
 import pytest
-from moirais.fn.wnoml import wnominate_logit
+from morie.fn.wnoml import wnominate_logit
 
 
 def test_wnoml_basic():

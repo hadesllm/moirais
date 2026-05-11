@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.plbb — plot Blackbox result."""
+"""Tests for morie.fn.plbb — plot Blackbox result."""
 import numpy as np
-from moirais.fn.plbb import plbb
+from morie.fn.plbb import plbb
 
 
 def test_plbb_smoke():
@@ -12,7 +12,7 @@ def test_plbb_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.plbb import cheatsheet
+    from morie.fn.plbb import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

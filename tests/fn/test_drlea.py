@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.drlea — DR-learner CATE."""
+"""Tests for morie.fn.drlea — DR-learner CATE."""
 import numpy as np
 import pytest
-from moirais.fn.drlea import drlea
+from morie.fn.drlea import drlea
 
 
 @pytest.fixture()
@@ -57,5 +57,5 @@ def test_method(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.drlea import cheatsheet
+    from morie.fn.drlea import cheatsheet
     assert len(cheatsheet()) > 0

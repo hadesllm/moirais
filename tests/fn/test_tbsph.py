@@ -1,7 +1,7 @@
 """Tests for tbsph."""
 import numpy as np
 import pytest
-from moirais.fn.tbsph import tbsph
+from morie.fn.tbsph import tbsph
 
 
 def test_tbsph_basic():
@@ -27,5 +27,5 @@ def test_tbsph_no_data():
 
 
 def test_tbsph_alias():
-    from moirais.fn.tbsph import tbsph
+    from morie.fn.tbsph import tbsph
     assert tbsph is tbsph

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svlin -- Linear spatial utility function"""
+"""Tests for morie.fn.svlin -- Linear spatial utility function"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svlin import linear_utility
+from morie.fn.svlin import linear_utility
 
 
 class TestLinearUtility:

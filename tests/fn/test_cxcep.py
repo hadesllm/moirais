@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.cxcep import complex_cepstrum, cxcep
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cxcep import complex_cepstrum, cxcep
+from morie.fn._containers import DescriptiveResult
 
 
 class TestComplexCepstrum:

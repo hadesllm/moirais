@@ -1,7 +1,7 @@
 """Tests for kmscal.kamath_scaling_laws."""
 import numpy as np
 import pytest
-from moirais.fn.kmscal import kamath_scaling_laws
+from morie.fn.kmscal import kamath_scaling_laws
 
 
 def test_kmscal_basic():

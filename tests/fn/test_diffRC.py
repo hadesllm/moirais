@@ -1,7 +1,7 @@
 """Tests for diffRC.diffusion_rec."""
 import numpy as np
 import pytest
-from moirais.fn.diffRC import diffusion_rec
+from morie.fn.diffRC import diffusion_rec
 
 
 def test_diffRC_basic():

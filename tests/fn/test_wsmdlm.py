@@ -1,7 +1,7 @@
 """Tests for wsmdlm.wasserman_delta_method."""
 import numpy as np
 import pytest
-from moirais.fn.wsmdlm import wasserman_delta_method
+from morie.fn.wsmdlm import wasserman_delta_method
 
 
 def test_wsmdlm_basic():

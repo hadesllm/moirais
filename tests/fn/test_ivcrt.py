@@ -1,7 +1,7 @@
 """Tests for ivcrt.iv_conditions."""
 import numpy as np
 import pytest
-from moirais.fn.ivcrt import iv_conditions
+from morie.fn.ivcrt import iv_conditions
 
 
 def test_ivcrt_basic():

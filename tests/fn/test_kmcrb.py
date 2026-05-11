@@ -1,7 +1,7 @@
 """Tests for kmcrb.kamath_cross_encoder_rerank."""
 import numpy as np
 import pytest
-from moirais.fn.kmcrb import kamath_cross_encoder_rerank
+from morie.fn.kmcrb import kamath_cross_encoder_rerank
 
 
 def test_kmcrb_basic():

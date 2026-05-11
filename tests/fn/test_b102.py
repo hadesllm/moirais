@@ -1,7 +1,7 @@
 """Tests for b102.burkov_lm_ch1_squared_error."""
 import numpy as np
 import pytest
-from moirais.fn.b102 import burkov_lm_ch1_squared_error
+from morie.fn.b102 import burkov_lm_ch1_squared_error
 
 
 def test_b102_basic():

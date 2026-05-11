@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bp -- Breusch-Pagan test."""
+"""Tests for morie.fn.bp -- Breusch-Pagan test."""
 
 import numpy as np
 import pytest
-from moirais.fn.bp import breusch_pagan_test
-from moirais.fn._containers import TestResult
+from morie.fn.bp import breusch_pagan_test
+from morie.fn._containers import TestResult
 
 
 class TestBreuschPagan:

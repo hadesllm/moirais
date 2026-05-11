@@ -1,7 +1,7 @@
 """Tests for joavg.joseph_average_forecast."""
 import numpy as np
 import pytest
-from moirais.fn.joavg import joseph_average_forecast
+from morie.fn.joavg import joseph_average_forecast
 
 
 def test_joavg_basic():

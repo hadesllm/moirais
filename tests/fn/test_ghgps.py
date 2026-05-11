@@ -1,7 +1,7 @@
 """Tests for ghgps.ghosal_gp_squared_exponential."""
 import numpy as np
 import pytest
-from moirais.fn.ghgps import ghosal_gp_squared_exponential
+from morie.fn.ghgps import ghosal_gp_squared_exponential
 
 
 def test_ghgps_basic():

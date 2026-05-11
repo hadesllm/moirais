@@ -1,7 +1,7 @@
 """Tests for chstr.chain_structure."""
 import numpy as np
 import pytest
-from moirais.fn.chstr import chain_structure
+from morie.fn.chstr import chain_structure
 
 
 def test_chstr_basic():

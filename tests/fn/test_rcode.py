@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rcode — recode responses."""
+"""Tests for morie.fn.rcode — recode responses."""
 import numpy as np
-from moirais.fn.rcode import rcode
+from morie.fn.rcode import rcode
 
 
 def test_rcode_smoke():
@@ -13,7 +13,7 @@ def test_rcode_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.rcode import cheatsheet
+    from morie.fn.rcode import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

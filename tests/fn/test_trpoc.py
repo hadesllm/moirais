@@ -1,7 +1,7 @@
 """Tests for trpoc.trpo."""
 import numpy as np
 import pytest
-from moirais.fn.trpoc import trpo
+from morie.fn.trpoc import trpo
 
 
 def test_trpoc_basic():

@@ -1,7 +1,7 @@
 """Tests for rgpca.rangayyan_pca_signals."""
 import numpy as np
 import pytest
-from moirais.fn.rgpca import rangayyan_pca_signals
+from morie.fn.rgpca import rangayyan_pca_signals
 
 
 def test_rgpca_basic():

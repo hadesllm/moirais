@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bstep -- Bayesian change-point."""
+"""Tests for morie.fn.bstep -- Bayesian change-point."""
 
 import numpy as np
-from moirais.fn.bstep import bayesian_changepoint
+from morie.fn.bstep import bayesian_changepoint
 
 
 def test_returns_dict():

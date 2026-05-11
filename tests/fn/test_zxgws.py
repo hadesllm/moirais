@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxgws -- Geographically weighted summary stats"""
+"""Tests for morie.fn.zxgws -- Geographically weighted summary stats"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxgws import gw_summary
+from morie.fn.zxgws import gw_summary
 
 
 class TestGwSummary:

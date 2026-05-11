@@ -1,7 +1,7 @@
 """Tests for pmedex.proportion_te_explained."""
 import numpy as np
 import pytest
-from moirais.fn.pmedex import proportion_te_explained
+from morie.fn.pmedex import proportion_te_explained
 
 
 def test_pmedex_basic():

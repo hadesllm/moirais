@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dfts — power spectral density."""
+"""Tests for morie.fn.dfts — power spectral density."""
 import numpy as np
 import pytest
-from moirais.fn.dfts import dft_spectrum
+from morie.fn.dfts import dft_spectrum
 
 
 class TestDFTSpectrum:

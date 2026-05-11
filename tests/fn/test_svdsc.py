@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svdsc -- Discounted directional utility"""
+"""Tests for morie.fn.svdsc -- Discounted directional utility"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svdsc import discount_utility
+from morie.fn.svdsc import discount_utility
 
 
 class TestDiscountUtility:

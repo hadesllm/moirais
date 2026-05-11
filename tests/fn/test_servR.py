@@ -1,7 +1,7 @@
 """Tests for servR.serendipity."""
 import numpy as np
 import pytest
-from moirais.fn.servR import serendipity
+from morie.fn.servR import serendipity
 
 
 def test_servR_basic():

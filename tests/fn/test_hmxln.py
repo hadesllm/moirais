@@ -1,7 +1,7 @@
 """Tests for hmxln.geron_xlnet."""
 import numpy as np
 import pytest
-from moirais.fn.hmxln import geron_xlnet
+from morie.fn.hmxln import geron_xlnet
 
 
 def test_hmxln_basic():

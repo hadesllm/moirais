@@ -1,7 +1,7 @@
 """Tests for egan2.egan_filter."""
 import numpy as np
 import pytest
-from moirais.fn.egan2 import egan_filter
+from morie.fn.egan2 import egan_filter
 
 
 def test_egan2_basic():

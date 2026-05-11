@@ -1,7 +1,7 @@
 """Test madic."""
 import numpy as np
 import pytest
-from moirais.fn.madic import madic
+from morie.fn.madic import madic
 
 
 def test_madic_basic():

@@ -1,7 +1,7 @@
 """Tests for cvxlsq.boyd_least_squares."""
 import numpy as np
 import pytest
-from moirais.fn.cvxlsq import boyd_least_squares
+from morie.fn.cvxlsq import boyd_least_squares
 
 
 def test_cvxlsq_basic():

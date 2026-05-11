@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.plpen — Partially linear penalized."""
+"""Tests for morie.fn.plpen — Partially linear penalized."""
 
 import numpy as np
 import pytest
-from moirais.fn.plpen import plpen
+from morie.fn.plpen import plpen
 
 
 def test_returns_dict():

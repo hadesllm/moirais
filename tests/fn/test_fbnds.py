@@ -1,8 +1,8 @@
 """Test filter_bounds (fbnds)."""
 import pytest
 
-from moirais.fn.fbnds import filter_bounds, fbnds
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.fbnds import filter_bounds, fbnds
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFilterBounds:

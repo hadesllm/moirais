@@ -1,7 +1,7 @@
 """Test loss_curve_analysis."""
 import numpy as np
-from moirais.fn.lscur import loss_curve_analysis, lscur
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lscur import loss_curve_analysis, lscur
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLossCurveAnalysis:

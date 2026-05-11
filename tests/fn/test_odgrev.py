@@ -1,7 +1,7 @@
 """Tests for odgrev.outbreak_detection."""
 import numpy as np
 import pytest
-from moirais.fn.odgrev import outbreak_detection
+from morie.fn.odgrev import outbreak_detection
 
 
 def test_odgrev_basic():

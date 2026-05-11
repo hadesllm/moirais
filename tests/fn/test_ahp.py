@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ahp — AHP weights."""
+"""Tests for morie.fn.ahp — AHP weights."""
 import numpy as np
 import pytest
-from moirais.fn.ahp import ahp_weights
+from morie.fn.ahp import ahp_weights
 
 
 class TestAHP:

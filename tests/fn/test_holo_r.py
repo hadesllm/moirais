@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.holo_r -- residual plot."""
+"""Tests for morie.fn.holo_r -- residual plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.holo_r import holo_resid
+from morie.fn.holo_r import holo_resid
 
 
 class TestHoloResid:

@@ -1,7 +1,7 @@
 """Tests for sppois.schabenberger_poisson_process."""
 import numpy as np
 import pytest
-from moirais.fn.sppois import schabenberger_poisson_process
+from morie.fn.sppois import schabenberger_poisson_process
 
 
 def test_sppois_basic():

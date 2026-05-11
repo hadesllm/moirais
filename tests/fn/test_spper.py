@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.spper — Spatial periodogram."""
+"""Tests for morie.fn.spper — Spatial periodogram."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.spper import spper
+from morie.fn.spper import spper
 
 
 class TestSpper:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.hasht."""
+"""Tests for morie.fn.hasht."""
 import numpy as np
-from moirais.fn.hasht import hash_table
+from morie.fn.hasht import hash_table
 
 
 def test_hasht_smoke():
@@ -12,7 +12,7 @@ def test_hasht_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.hasht import cheatsheet
+    from morie.fn.hasht import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

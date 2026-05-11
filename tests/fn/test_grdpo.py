@@ -1,7 +1,7 @@
 """Tests for grdpo.geron_dpo_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grdpo import geron_dpo_loss
+from morie.fn.grdpo import geron_dpo_loss
 
 
 def test_grdpo_basic():

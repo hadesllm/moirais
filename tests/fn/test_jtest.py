@@ -1,7 +1,7 @@
 """Test jtest."""
 import numpy as np
 import pytest
-from moirais.fn.jtest import jtest
+from morie.fn.jtest import jtest
 
 
 def test_jtest_basic():

@@ -1,6 +1,6 @@
 """Tests for difef — DIF effect size."""
 import numpy as np
-from moirais.fn.difef import difef
+from morie.fn.difef import difef
 
 def test_difef_basic():
     mh_or = np.array([1.0, 1.5, 0.8, 2.0, 0.6])
@@ -9,7 +9,7 @@ def test_difef_basic():
 
 
 def test_cheatsheet():
-    from moirais.fn.difef import cheatsheet
+    from morie.fn.difef import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

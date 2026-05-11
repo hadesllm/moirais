@@ -1,7 +1,7 @@
 """Tests for volrlmt.vol_realised_log_vol_ar."""
 import numpy as np
 import pytest
-from moirais.fn.volrlmt import vol_realised_log_vol_ar
+from morie.fn.volrlmt import vol_realised_log_vol_ar
 
 
 def test_volrlmt_basic():

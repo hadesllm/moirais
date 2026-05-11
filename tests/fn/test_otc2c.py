@@ -1,7 +1,7 @@
 """Tests for otc2c.ot_cost_pairwise."""
 import numpy as np
 import pytest
-from moirais.fn.otc2c import ot_cost_pairwise
+from morie.fn.otc2c import ot_cost_pairwise
 
 
 def test_otc2c_basic():

@@ -1,7 +1,7 @@
 """Tests for eslrdg.esl_ridge."""
 import numpy as np
 import pytest
-from moirais.fn.eslrdg import esl_ridge
+from morie.fn.eslrdg import esl_ridge
 
 
 def test_eslrdg_basic():

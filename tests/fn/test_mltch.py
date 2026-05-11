@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.mltch -- combine multiple chains."""
+"""Tests for morie.fn.mltch -- combine multiple chains."""
 import numpy as np
-from moirais.fn.mltch import multiple_chains_combine, mltch
+from morie.fn.mltch import multiple_chains_combine, mltch
 
 
 def test_alias():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.umadp."""
+"""Tests for morie.fn.umadp."""
 
 import numpy as np
 import pytest
-from moirais.fn.umadp import umadp
+from morie.fn.umadp import umadp
 
 
 class TestUmadp:

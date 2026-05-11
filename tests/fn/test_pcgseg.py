@@ -1,6 +1,6 @@
 """Tests for pcg_segment."""
 import numpy as np, pytest
-from moirais.fn.pcgseg import pcg_segment
+from morie.fn.pcgseg import pcg_segment
 
 
 class TestPcgSegment:

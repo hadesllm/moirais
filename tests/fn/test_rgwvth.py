@@ -1,7 +1,7 @@
 """Tests for rgwvth.rangayyan_wavelet_threshold."""
 import numpy as np
 import pytest
-from moirais.fn.rgwvth import rangayyan_wavelet_threshold
+from morie.fn.rgwvth import rangayyan_wavelet_threshold
 
 
 def test_rgwvth_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mdrad."""
+"""Tests for morie.fn.mdrad."""
 
 import numpy as np
 import pytest
-from moirais.fn.mdrad import mdrad
+from morie.fn.mdrad import mdrad
 
 
 class TestMdrad:

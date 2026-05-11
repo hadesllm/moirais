@@ -1,7 +1,7 @@
 """Tests for rghrvmod.rangayyan_hrv_ar_model."""
 import numpy as np
 import pytest
-from moirais.fn.rghrvmod import rangayyan_hrv_ar_model
+from morie.fn.rghrvmod import rangayyan_hrv_ar_model
 
 
 def test_rghrvmod_basic():

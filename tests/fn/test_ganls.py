@@ -1,7 +1,7 @@
 """Tests for ganls.gan_loss."""
 import numpy as np
 import pytest
-from moirais.fn.ganls import gan_loss
+from morie.fn.ganls import gan_loss
 
 
 def test_ganls_basic():

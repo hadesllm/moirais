@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dpoi — Poisson PMF."""
+"""Tests for morie.fn.dpoi — Poisson PMF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dpoi import dpois
+from morie.fn.dpoi import dpois
 
 
 class TestDpois:

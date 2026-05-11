@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svnbg -- Nash bargaining in spatial game"""
+"""Tests for morie.fn.svnbg -- Nash bargaining in spatial game"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svnbg import nash_bargain_sp
+from morie.fn.svnbg import nash_bargain_sp
 
 
 class TestNashBargainSp:

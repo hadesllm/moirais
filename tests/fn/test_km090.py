@@ -1,7 +1,7 @@
 """Tests for km090.kamath_ch6_co_occurrence_bias."""
 import numpy as np
 import pytest
-from moirais.fn.km090 import kamath_ch6_co_occurrence_bias
+from morie.fn.km090 import kamath_ch6_co_occurrence_bias
 
 
 def test_km090_basic():

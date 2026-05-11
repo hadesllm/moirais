@@ -1,0 +1,64 @@
+Package: morie
+Type: Package
+Title: Multi-domain Open Research and Inferential Estimation
+Version: 0.1.3
+Authors@R: c(
+  person(
+    given = "Vansh Singh",
+    family = "Ruhela",
+    email = "hadesllm@proton.me",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0009-0004-1750-3592")
+  )
+ )
+Author: Vansh Singh Ruhela [aut, cre] (<https://orcid.org/0009-0004-1750-3592>)
+Maintainer: Vansh Singh Ruhela <hadesllm@proton.me>
+Description: Multi-domain scientific computing toolkit for observational
+  inference and intervention analysis across scientific-experimentation
+  contexts, hosting the MRM (McNamara-Ruhela-Medina) framework for
+  Canadian carceral, police, and oversight data as its primary application.
+  Provides general-purpose causal estimators (ATE, ATT, ATC, GATE, CATE,
+  LATE, AIPW, G-computation), survey sampling methods (stratified, cluster,
+  PPS, bootstrap, calibration weights), propensity-score and doubly-robust
+  estimators, and sensitivity analyses (E-value, Rosenbaum bounds).
+  Companion modules support signal processing and spectral analysis,
+  cryptographic primitives, spatial statistics, statistical physics of
+  crime (Hawkes self-exciting processes, reaction-diffusion, Levy flight,
+  urban scaling), and classical-test-theory and item-response-theory
+  psychometrics, alongside ingestion utilities for officially published
+  Ontario Special Investigations Unit (police-oversight) and federal
+  Structured Intervention Unit reports.
+License: GPL-2 | file LICENSE
+LazyData: true
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends:
+  R (>= 4.3.0)
+Note: Tested on R 4.3.0, 4.4.x, 4.5.2, 4.5.3 (CRAN). Use CRAN R on Apple
+  Silicon (Homebrew R may segfault with RSQLite).
+Imports:
+  stats,
+  utils
+Suggests:
+  survey,
+  ivreg,
+  MatchIt,
+  DBI,
+  RSQLite,
+  jsonlite,
+  data.table,
+  readxl,
+  pracma,
+  signal,
+  smotefamily,
+  DoubleML,
+  mlr3,
+  mlr3learners,
+  testthat (>= 3.0.0),
+  knitr,
+  rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/hadesllm/morie
+BugReports: https://github.com/hadesllm/morie/issues
+Config/testthat/edition: 3

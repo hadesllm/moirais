@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.i_pwr -- interaction power (ANOVA F-test)."""
+"""Tests for morie.fn.i_pwr -- interaction power (ANOVA F-test)."""
 
 import pytest
-from moirais.fn.i_pwr import calculate_interaction_power
+from morie.fn.i_pwr import calculate_interaction_power
 
 
 class TestInteractionPower:

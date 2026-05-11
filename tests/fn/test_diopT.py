@@ -1,7 +1,7 @@
 """Tests for diopT.farey_seq."""
 import numpy as np
 import pytest
-from moirais.fn.diopT import farey_seq
+from morie.fn.diopT import farey_seq
 
 
 def test_diopT_basic():

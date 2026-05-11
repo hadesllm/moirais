@@ -1,7 +1,7 @@
 """Tests for hmddpm.geron_ddpm."""
 import numpy as np
 import pytest
-from moirais.fn.hmddpm import geron_ddpm
+from morie.fn.hmddpm import geron_ddpm
 
 
 def test_hmddpm_basic():

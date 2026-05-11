@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dispr -- disparity fit."""
+"""Tests for morie.fn.dispr -- disparity fit."""
 
 import numpy as np
-from moirais.fn.dispr import disparity_fit, dispr
+from morie.fn.dispr import disparity_fit, dispr
 
 
 def test_dispr_smoke():

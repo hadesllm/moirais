@@ -1,7 +1,7 @@
 """Tests for allktmpl.alammar_instruction_data_template."""
 import numpy as np
 import pytest
-from moirais.fn.allktmpl import alammar_instruction_data_template
+from morie.fn.allktmpl import alammar_instruction_data_template
 
 
 def test_allktmpl_basic():

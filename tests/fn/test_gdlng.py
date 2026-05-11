@@ -1,7 +1,7 @@
 """Test gdlng."""
 import numpy as np
 import pytest
-from moirais.fn.gdlng import gdlng
+from morie.fn.gdlng import gdlng
 
 
 def test_gdlng_basic():

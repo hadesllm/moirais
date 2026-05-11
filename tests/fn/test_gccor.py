@@ -1,7 +1,7 @@
 """Test gccor."""
 import numpy as np
 import pytest
-from moirais.fn.gccor import gccor
+from morie.fn.gccor import gccor
 
 
 def test_gccor_basic():

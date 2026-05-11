@@ -1,7 +1,7 @@
 """Tests for volbekk.vol_bekk_garch."""
 import numpy as np
 import pytest
-from moirais.fn.volbekk import vol_bekk_garch
+from morie.fn.volbekk import vol_bekk_garch
 
 
 def test_volbekk_basic():

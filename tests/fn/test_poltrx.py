@@ -1,7 +1,7 @@
 """Tests for poltrx.polya_tree_extended."""
 import numpy as np
 import pytest
-from moirais.fn.poltrx import polya_tree_extended
+from morie.fn.poltrx import polya_tree_extended
 
 
 def test_poltrx_basic():

@@ -1,7 +1,7 @@
 """Tests for rrblp.rrblup_marker_effects."""
 import numpy as np
 import pytest
-from moirais.fn.rrblp import rrblup_marker_effects
+from morie.fn.rrblp import rrblup_marker_effects
 
 
 def test_rrblp_basic():

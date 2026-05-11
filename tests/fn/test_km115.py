@@ -1,7 +1,7 @@
 """Tests for km115.kamath_ch8_bleu_n_geom_mean."""
 import numpy as np
 import pytest
-from moirais.fn.km115 import kamath_ch8_bleu_n_geom_mean
+from morie.fn.km115 import kamath_ch8_bleu_n_geom_mean
 
 
 def test_km115_basic():

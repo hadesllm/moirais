@@ -1,8 +1,8 @@
 """Test ldpc_decode."""
 import numpy as np
 
-from moirais.fn._containers import CryptoResult
-from moirais.fn.ldpcd import ldpc_decode, ldpcd
+from morie.fn._containers import CryptoResult
+from morie.fn.ldpcd import ldpc_decode, ldpcd
 
 
 class TestLdpcDecode:

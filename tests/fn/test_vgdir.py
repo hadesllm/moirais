@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgdir -- Directional variogram"""
+"""Tests for morie.fn.vgdir -- Directional variogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgdir import directional_vario
+from morie.fn.vgdir import directional_vario
 
 
 class TestDirectionalVario:

@@ -1,7 +1,7 @@
 """Test dtcir."""
 import numpy as np
 import pytest
-from moirais.fn.dtcir import dtcir
+from morie.fn.dtcir import dtcir
 
 
 def test_dtcir_basic():

@@ -1,7 +1,7 @@
 """Test opall."""
 import numpy as np
 import pytest
-from moirais.fn.opall import opall
+from morie.fn.opall import opall
 
 
 def test_opall_basic():

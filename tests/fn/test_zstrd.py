@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zstrd -- Temporal trend estimation"""
+"""Tests for morie.fn.zstrd -- Temporal trend estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zstrd import trend_temporal
+from morie.fn.zstrd import trend_temporal
 
 
 class TestTrendTemporal:

@@ -1,7 +1,7 @@
 """Nature does not hurry, yet everything is accomplished. — Lao Tzu"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u27 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_27
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u27 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_27
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u27_basic():

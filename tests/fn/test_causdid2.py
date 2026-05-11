@@ -1,7 +1,7 @@
 """Tests for causdid2.causal_did_2x2."""
 import numpy as np
 import pytest
-from moirais.fn.causdid2 import causal_did_2x2
+from morie.fn.causdid2 import causal_did_2x2
 
 
 def test_causdid2_basic():

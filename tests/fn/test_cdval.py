@@ -1,7 +1,7 @@
 """Tests for cdval."""
 import numpy as np
 import pytest
-from moirais.fn.cdval import cdval
+from morie.fn.cdval import cdval
 
 
 def test_cdval_basic():
@@ -27,5 +27,5 @@ def test_cdval_no_data():
 
 
 def test_cdval_alias():
-    from moirais.fn.cdval import cdval
+    from morie.fn.cdval import cdval
     assert cdval is cdval

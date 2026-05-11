@@ -1,7 +1,7 @@
 """Tests for kmcrel.kamath_ragas_context_relevance."""
 import numpy as np
 import pytest
-from moirais.fn.kmcrel import kamath_ragas_context_relevance
+from morie.fn.kmcrel import kamath_ragas_context_relevance
 
 
 def test_kmcrel_basic():

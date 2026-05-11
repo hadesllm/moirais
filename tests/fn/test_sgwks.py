@@ -1,6 +1,6 @@
 """Tests for weak stationarity test."""
 import numpy as np
-from moirais.fn.sgwks import sgwks
+from morie.fn.sgwks import sgwks
 
 
 def test_sgwks_smoke():

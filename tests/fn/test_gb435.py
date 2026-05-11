@@ -1,7 +1,7 @@
 """Tests for gb435.gibbons_ks_onesided_asymp."""
 import numpy as np
 import pytest
-from moirais.fn.gb435 import gibbons_ks_onesided_asymp
+from morie.fn.gb435 import gibbons_ks_onesided_asymp
 
 
 def test_gb435_basic():

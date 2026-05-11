@@ -1,7 +1,7 @@
 """Test difsp."""
 import numpy as np
 import pytest
-from moirais.fn.difsp import difsp
+from morie.fn.difsp import difsp
 
 
 def test_difsp_basic():

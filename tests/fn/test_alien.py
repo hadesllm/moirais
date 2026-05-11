@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.alien — alienation index."""
-from moirais.fn.alien import alien
+"""Tests for morie.fn.alien — alienation index."""
+from morie.fn.alien import alien
 
 
 def test_alien_smoke():
@@ -10,7 +10,7 @@ def test_alien_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.alien import cheatsheet
+    from morie.fn.alien import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

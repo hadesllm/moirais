@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfmdc."""
+"""Tests for morie.fn.cfmdc."""
 
 import numpy as np
 import pytest
-from moirais.fn.cfmdc import cfmdc
+from morie.fn.cfmdc import cfmdc
 
 
 class TestCfmdc:

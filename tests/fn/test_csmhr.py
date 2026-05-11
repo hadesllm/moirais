@@ -1,7 +1,7 @@
 """Test csmhr."""
 import numpy as np
 import pytest
-from moirais.fn.csmhr import csmhr
+from morie.fn.csmhr import csmhr
 
 
 def test_csmhr_basic():

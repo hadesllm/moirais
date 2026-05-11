@@ -1,10 +1,10 @@
-"""Tests for moirais.otis — Ontario Restrictive Confinement analysis."""
+"""Tests for morie.otis — Ontario Restrictive Confinement analysis."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.otis import (
+from morie.otis import (
     RplRes, AstRes, VolRes, OtDmlR,
     rplace, astcmb, volat, rctrnd, otdesc, otdml,
     REGIONS, AGE_GROUPS, ALERT_COMBOS,

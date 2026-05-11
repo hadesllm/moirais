@@ -1,7 +1,7 @@
 """Tests for hmsent.geron_sentiment_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.hmsent import geron_sentiment_analysis
+from morie.fn.hmsent import geron_sentiment_analysis
 
 
 def test_hmsent_basic():

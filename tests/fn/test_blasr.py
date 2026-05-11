@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.blasr -- Bayesian LASSO."""
+"""Tests for morie.fn.blasr -- Bayesian LASSO."""
 
 import numpy as np
-from moirais.fn.blasr import bayesian_lasso
+from morie.fn.blasr import bayesian_lasso
 
 
 def test_returns_dict():

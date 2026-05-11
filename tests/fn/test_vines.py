@@ -1,7 +1,7 @@
 """Tests for vines.vine_copula."""
 import numpy as np
 import pytest
-from moirais.fn.vines import vine_copula
+from morie.fn.vines import vine_copula
 
 
 def test_vines_basic():

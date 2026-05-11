@@ -1,7 +1,7 @@
 """Tests for mafix.ma_fixed_effect."""
 import numpy as np
 import pytest
-from moirais.fn.mafix import ma_fixed_effect
+from morie.fn.mafix import ma_fixed_effect
 
 
 def test_mafix_basic():

@@ -1,7 +1,7 @@
 """Test snsim."""
 import numpy as np
 import pytest
-from moirais.fn.snsim import snsim
+from morie.fn.snsim import snsim
 
 
 def test_snsim_basic():

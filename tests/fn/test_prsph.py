@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.prsph -- SSIM."""
+"""Tests for morie.fn.prsph -- SSIM."""
 
 import numpy as np
-from moirais.fn.prsph import ssim, prsph
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prsph import ssim, prsph
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPrsph:

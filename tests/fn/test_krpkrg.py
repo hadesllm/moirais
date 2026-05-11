@@ -1,7 +1,7 @@
 """Tests for krpkrg.poisson_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.krpkrg import poisson_kriging
+from morie.fn.krpkrg import poisson_kriging
 
 
 def test_krpkrg_basic():

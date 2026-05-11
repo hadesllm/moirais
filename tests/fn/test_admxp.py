@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.admxp -- Admixture proportions."""
+"""Tests for morie.fn.admxp -- Admixture proportions."""
 
 import numpy as np
 import pytest
-from moirais.fn.admxp import admxp
+from morie.fn.admxp import admxp
 
 
 class TestAdmxp:

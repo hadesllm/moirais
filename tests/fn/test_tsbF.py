@@ -1,7 +1,7 @@
 """Tests for tsbF.tsb."""
 import numpy as np
 import pytest
-from moirais.fn.tsbF import tsb
+from morie.fn.tsbF import tsb
 
 
 def test_tsbF_basic():

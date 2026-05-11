@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bkent -- Bekenstein-Hawking entropy."""
+"""Tests for morie.fn.bkent -- Bekenstein-Hawking entropy."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bkent import bkent
+from morie.fn.bkent import bkent
 
 
 def test_returns_dict():

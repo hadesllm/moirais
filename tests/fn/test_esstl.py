@@ -1,7 +1,7 @@
 """Tests for esstl.effective_sample_size_tail."""
 import numpy as np
 import pytest
-from moirais.fn.esstl import effective_sample_size_tail
+from morie.fn.esstl import effective_sample_size_tail
 
 
 def test_esstl_basic():

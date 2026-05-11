@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gld -- Glass's delta effect size."""
+"""Tests for morie.fn.gld -- Glass's delta effect size."""
 
 import pytest
-from moirais.fn.gld import glass_delta
-from moirais.fn._containers import ESRes
+from morie.fn.gld import glass_delta
+from morie.fn._containers import ESRes
 
 
 class TestGlassDelta:

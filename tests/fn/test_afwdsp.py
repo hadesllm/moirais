@@ -1,7 +1,7 @@
 """Test afwdsp."""
 import numpy as np
 import pytest
-from moirais.fn.afwdsp import afwdsp
+from morie.fn.afwdsp import afwdsp
 
 
 def test_afwdsp_basic():

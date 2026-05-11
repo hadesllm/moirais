@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.einsf -- Einstein field equation tensor."""
+"""Tests for morie.fn.einsf -- Einstein field equation tensor."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.einsf import einsf
+from morie.fn.einsf import einsf
 
 
 def test_returns_dict():

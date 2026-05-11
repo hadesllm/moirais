@@ -1,6 +1,6 @@
 """Tests for rflcf.py - Reflection coefficients."""
 import numpy as np
-from moirais.fn.rflcf import reflection_coefficients_fn, rflcf
+from morie.fn.rflcf import reflection_coefficients_fn, rflcf
 
 
 def test_rflcf_returns_result():

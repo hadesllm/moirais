@@ -1,7 +1,7 @@
 """Tests for grpels.geron_peephole_lstm_cell."""
 import numpy as np
 import pytest
-from moirais.fn.grpels import geron_peephole_lstm_cell
+from morie.fn.grpels import geron_peephole_lstm_cell
 
 
 def test_grpels_basic():

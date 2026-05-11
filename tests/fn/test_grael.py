@@ -1,7 +1,7 @@
 """Tests for grael.geron_autoencoder_reconstruction_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grael import geron_autoencoder_reconstruction_loss
+from morie.fn.grael import geron_autoencoder_reconstruction_loss
 
 
 def test_grael_basic():

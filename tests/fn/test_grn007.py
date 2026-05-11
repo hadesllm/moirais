@@ -1,7 +1,7 @@
 """Tests for grn007.geron_ch4_mse_gradient_vector."""
 import numpy as np
 import pytest
-from moirais.fn.grn007 import geron_ch4_mse_gradient_vector
+from morie.fn.grn007 import geron_ch4_mse_gradient_vector
 
 
 def test_grn007_basic():

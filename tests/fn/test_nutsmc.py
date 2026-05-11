@@ -1,7 +1,7 @@
 """Tests for nutsmc.nuts_sampler."""
 import numpy as np
 import pytest
-from moirais.fn.nutsmc import nuts_sampler
+from morie.fn.nutsmc import nuts_sampler
 
 
 def test_nutsmc_basic():

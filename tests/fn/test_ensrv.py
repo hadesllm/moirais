@@ -1,7 +1,7 @@
 """Test ensemble_variance (ensrv)."""
 import numpy as np
-from moirais.fn.ensrv import ensemble_variance, ensrv
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ensrv import ensemble_variance, ensrv
+from morie.fn._containers import DescriptiveResult
 
 
 class TestEnsembleVariance:

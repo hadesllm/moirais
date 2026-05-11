@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.elcnv."""
+"""Tests for morie.fn.elcnv."""
 
 import numpy as np
 import pytest
-from moirais.fn.elcnv import elcnv
+from morie.fn.elcnv import elcnv
 
 
 class TestElcnv:

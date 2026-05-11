@@ -1,7 +1,7 @@
 """Tests for funcal.functional_annotation."""
 import numpy as np
 import pytest
-from moirais.fn.funcal import functional_annotation
+from morie.fn.funcal import functional_annotation
 
 
 def test_funcal_basic():

@@ -1,7 +1,7 @@
 """Tests for hmmod.geron_model_based."""
 import numpy as np
 import pytest
-from moirais.fn.hmmod import geron_model_based
+from morie.fn.hmmod import geron_model_based
 
 
 def test_hmmod_basic():

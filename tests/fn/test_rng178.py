@@ -1,7 +1,7 @@
 """Tests for rng178.rangayyan_ch4_qrs_combined_balda."""
 import numpy as np
 import pytest
-from moirais.fn.rng178 import rangayyan_ch4_qrs_combined_balda
+from morie.fn.rng178 import rangayyan_ch4_qrs_combined_balda
 
 
 def test_rng178_basic():

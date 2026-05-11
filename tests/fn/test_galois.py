@@ -1,7 +1,7 @@
 """Tests for galois.galois_group."""
 import numpy as np
 import pytest
-from moirais.fn.galois import galois_group
+from morie.fn.galois import galois_group
 
 
 def test_galois_basic():

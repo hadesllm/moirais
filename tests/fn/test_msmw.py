@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.msmw — Marginal structural model weights."""
+"""Tests for morie.fn.msmw — Marginal structural model weights."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.msmw import marginal_structural
+from morie.fn.msmw import marginal_structural
 
 
 class TestMarginalStructural:

@@ -1,7 +1,7 @@
 """Test ghqly."""
 import numpy as np
 import pytest
-from moirais.fn.ghqly import ghqly
+from morie.fn.ghqly import ghqly
 
 
 def test_ghqly_basic():

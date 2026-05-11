@@ -1,6 +1,6 @@
 """Tests for polychoric_corr."""
 import numpy as np, pytest
-from moirais.fn.polyc import polychoric_corr
+from morie.fn.polyc import polychoric_corr
 
 class TestPolychoric:
     def test_positive(self):

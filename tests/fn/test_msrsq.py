@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msrsq -- MDS R-squared goodness of fit"""
+"""Tests for morie.fn.msrsq -- MDS R-squared goodness of fit"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msrsq import mds_rsq
+from morie.fn.msrsq import mds_rsq
 
 
 class TestMdsRsq:

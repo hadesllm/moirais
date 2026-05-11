@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgpsr -- Partial sill ratio"""
+"""Tests for morie.fn.vgpsr -- Partial sill ratio"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgpsr import partial_sill_ratio
+from morie.fn.vgpsr import partial_sill_ratio
 
 
 class TestPartialSillRatio:

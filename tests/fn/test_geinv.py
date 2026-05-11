@@ -1,7 +1,7 @@
 """Test geinv."""
 import numpy as np
 import pytest
-from moirais.fn.geinv import geinv
+from morie.fn.geinv import geinv
 
 
 def test_geinv_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kglam -- Kriging weights (lambda)"""
+"""Tests for morie.fn.kglam -- Kriging weights (lambda)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kglam import kriging_lambda
+from morie.fn.kglam import kriging_lambda
 
 
 class TestKrigingLambda:

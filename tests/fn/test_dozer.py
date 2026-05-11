@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dozer -- PID controller."""
+"""Tests for morie.fn.dozer -- PID controller."""
 
 import numpy as np
-from moirais.fn.dozer import pid_tune, dozer
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dozer import pid_tune, dozer
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDozer:

@@ -1,7 +1,7 @@
 """Tests for clogp2.clogp_estimate."""
 import numpy as np
 import pytest
-from moirais.fn.clogp2 import clogp_estimate
+from morie.fn.clogp2 import clogp_estimate
 
 
 def test_clogp2_basic():

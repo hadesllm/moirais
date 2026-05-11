@@ -1,7 +1,7 @@
 """Tests for rng211.rangayyan_ch4_average_output_noise_power."""
 import numpy as np
 import pytest
-from moirais.fn.rng211 import rangayyan_ch4_average_output_noise_power
+from morie.fn.rng211 import rangayyan_ch4_average_output_noise_power
 
 
 def test_rng211_basic():

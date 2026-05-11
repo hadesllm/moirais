@@ -1,7 +1,7 @@
 """Test ppbay."""
 import numpy as np
 import pytest
-from moirais.fn.ppbay import ppbay
+from morie.fn.ppbay import ppbay
 
 
 def test_ppbay_basic():

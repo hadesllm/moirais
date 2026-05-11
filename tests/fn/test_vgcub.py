@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgcub -- Cubic variogram model"""
+"""Tests for morie.fn.vgcub -- Cubic variogram model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgcub import vario_cubic
+from morie.fn.vgcub import vario_cubic
 
 
 class TestVarioCubic:

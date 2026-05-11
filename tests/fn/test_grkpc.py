@@ -1,7 +1,7 @@
 """Tests for grkpc.geron_kernel_pca_rbf."""
 import numpy as np
 import pytest
-from moirais.fn.grkpc import geron_kernel_pca_rbf
+from morie.fn.grkpc import geron_kernel_pca_rbf
 
 
 def test_grkpc_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.krreg — Kernel ridge regression."""
+"""Tests for morie.fn.krreg — Kernel ridge regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.krreg import krreg
+from morie.fn.krreg import krreg
 
 
 def test_returns_dict():

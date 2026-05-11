@@ -1,7 +1,7 @@
 """Tests for rgbwbnd.rangayyan_bandwidth."""
 import numpy as np
 import pytest
-from moirais.fn.rgbwbnd import rangayyan_bandwidth
+from morie.fn.rgbwbnd import rangayyan_bandwidth
 
 
 def test_rgbwbnd_basic():

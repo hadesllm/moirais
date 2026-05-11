@@ -1,7 +1,7 @@
 """Tests for hrztikr.horowitz_tikhonov_npiv."""
 import numpy as np
 import pytest
-from moirais.fn.hrztikr import horowitz_tikhonov_npiv
+from morie.fn.hrztikr import horowitz_tikhonov_npiv
 
 
 def test_hrztikr_basic():

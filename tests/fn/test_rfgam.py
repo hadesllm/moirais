@@ -1,7 +1,7 @@
 """Tests for rfgam."""
 import numpy as np
 import pytest
-from moirais.fn.rfgam import rfgam
+from morie.fn.rfgam import rfgam
 
 
 def test_rfgam_basic():
@@ -27,5 +27,5 @@ def test_rfgam_no_data():
 
 
 def test_rfgam_alias():
-    from moirais.fn.rfgam import rfgam
+    from morie.fn.rfgam import rfgam
     assert rfgam is rfgam

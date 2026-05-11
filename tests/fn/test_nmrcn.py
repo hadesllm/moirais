@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmrcn -- Roll call normalization"""
+"""Tests for morie.fn.nmrcn -- Roll call normalization"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmrcn import roll_call_normalize
+from morie.fn.nmrcn import roll_call_normalize
 
 
 class TestRollCallNormalize:

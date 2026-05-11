@@ -1,7 +1,7 @@
 """Tests for spmath.schabenberger_matheron_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.spmath import schabenberger_matheron_estimator
+from morie.fn.spmath import schabenberger_matheron_estimator
 
 
 def test_spmath_basic():

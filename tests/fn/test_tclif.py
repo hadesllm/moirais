@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tclif — Clifford torus."""
+"""Tests for morie.fn.tclif — Clifford torus."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tclif import clifford_torus
+from morie.fn.tclif import clifford_torus
 
 
 class TestCliffordTorus:

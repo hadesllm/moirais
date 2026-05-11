@@ -1,7 +1,7 @@
 """Tests for gentmt.generalized_treatment_msm."""
 import numpy as np
 import pytest
-from moirais.fn.gentmt import generalized_treatment_msm
+from morie.fn.gentmt import generalized_treatment_msm
 
 
 def test_gentmt_basic():

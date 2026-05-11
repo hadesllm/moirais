@@ -1,7 +1,7 @@
 """Test clcph."""
 import numpy as np
 import pytest
-from moirais.fn.clcph import clcph
+from morie.fn.clcph import clcph
 
 
 def test_clcph_basic():

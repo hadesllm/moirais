@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.eac_ipw — eBAC selection-adjusted IPW analysis."""
+"""Tests for morie.fn.eac_ipw — eBAC selection-adjusted IPW analysis."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.eac_ipw import run_ebac_selection_ipw_analysis
+from morie.fn.eac_ipw import run_ebac_selection_ipw_analysis
 
 
 @pytest.fixture()

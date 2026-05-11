@@ -1,7 +1,7 @@
 """Tests for fanmd.fanova_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.fanmd import fanova_decomposition
+from morie.fn.fanmd import fanova_decomposition
 
 
 def test_fanmd_basic():

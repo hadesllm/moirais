@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.svdot."""
+"""Tests for morie.fn.svdot."""
 
 import numpy as np
 import pytest
-from moirais.fn.svdot import svdot
+from morie.fn.svdot import svdot
 
 
 class TestSvdot:

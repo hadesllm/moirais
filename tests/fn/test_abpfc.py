@@ -1,7 +1,7 @@
 """Test abpfc."""
 import numpy as np
 import pytest
-from moirais.fn.abpfc import abpfc
+from morie.fn.abpfc import abpfc
 
 
 def test_abpfc_basic():

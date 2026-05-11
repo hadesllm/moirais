@@ -1,7 +1,7 @@
 """Tests for chasym.check_asymptote_msm."""
 import numpy as np
 import pytest
-from moirais.fn.chasym import check_asymptote_msm
+from morie.fn.chasym import check_asymptote_msm
 
 
 def test_chasym_basic():

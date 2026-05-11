@@ -1,7 +1,7 @@
 """Test entrd2."""
 import numpy as np
 import pytest
-from moirais.fn.entrd2 import entrd2
+from morie.fn.entrd2 import entrd2
 
 
 def test_entrd2_basic():

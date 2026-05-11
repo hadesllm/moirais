@@ -1,7 +1,7 @@
 """Tests for alcnp.alammar_chain_prompting."""
 import numpy as np
 import pytest
-from moirais.fn.alcnp import alammar_chain_prompting
+from morie.fn.alcnp import alammar_chain_prompting
 
 
 def test_alcnp_basic():

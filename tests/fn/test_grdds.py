@@ -1,7 +1,7 @@
 """Tests for grdds.gradient_descent_vanilla."""
 import numpy as np
 import pytest
-from moirais.fn.grdds import gradient_descent_vanilla
+from morie.fn.grdds import gradient_descent_vanilla
 
 
 def test_grdds_basic():

@@ -1,7 +1,7 @@
 """Tests for km048.kamath_ch3_cloze_prompt_template."""
 import numpy as np
 import pytest
-from moirais.fn.km048 import kamath_ch3_cloze_prompt_template
+from morie.fn.km048 import kamath_ch3_cloze_prompt_template
 
 
 def test_km048_basic():

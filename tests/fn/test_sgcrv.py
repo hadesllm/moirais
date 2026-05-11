@@ -1,6 +1,6 @@
 """Tests for cross-variogram."""
 import numpy as np
-from moirais.fn.sgcrv import sgcrv
+from morie.fn.sgcrv import sgcrv
 
 
 def test_sgcrv_smoke():

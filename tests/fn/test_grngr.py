@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.grngr — Granger causality test."""
+"""Tests for morie.fn.grngr — Granger causality test."""
 import numpy as np
 
-from moirais.fn.grngr import granger_cause, grngr
+from morie.fn.grngr import granger_cause, grngr
 
 
 def test_x_causes_y():

@@ -1,7 +1,7 @@
 """Tests for kmpet.kamath_pet_loss."""
 import numpy as np
 import pytest
-from moirais.fn.kmpet import kamath_pet_loss
+from morie.fn.kmpet import kamath_pet_loss
 
 
 def test_kmpet_basic():

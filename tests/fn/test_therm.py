@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.therm -- feeling thermometer."""
+"""Tests for morie.fn.therm -- feeling thermometer."""
 
 import numpy as np
-from moirais.fn.therm import feeling_thermometer_scale, therm
+from morie.fn.therm import feeling_thermometer_scale, therm
 
 
 def test_therm_smoke():

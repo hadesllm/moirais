@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gdsct -- Gradient descent."""
+"""Tests for morie.fn.gdsct -- Gradient descent."""
 
 import numpy as np
-from moirais.fn.gdsct import gradient_descent, gdsct
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.gdsct import gradient_descent, gdsct
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGdsct:

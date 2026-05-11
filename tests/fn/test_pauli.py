@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pauli -- Pauli matrices."""
+"""Tests for morie.fn.pauli -- Pauli matrices."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pauli import pauli
+from morie.fn.pauli import pauli
 
 
 def test_all_returns_six():

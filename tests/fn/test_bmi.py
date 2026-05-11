@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bmi — Bayesian measurement invariance."""
+"""Tests for morie.fn.bmi — Bayesian measurement invariance."""
 
 import numpy as np
 import pytest
-from moirais.fn.bmi import bayesian_mi
+from morie.fn.bmi import bayesian_mi
 
 
 class TestBayesianMi:

@@ -1,7 +1,7 @@
 """Tests for gh_c2_6.ghosal_mixture_basis_prior."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c2_6 import ghosal_mixture_basis_prior
+from morie.fn.gh_c2_6 import ghosal_mixture_basis_prior
 
 
 def test_gh_c2_6_basic():

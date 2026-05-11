@@ -1,7 +1,7 @@
 """Tests for cepst — Real cepstrum."""
 import numpy as np
-from moirais.fn.cepst import real_cepstrum
-from moirais.fn._containers import SignalResult
+from morie.fn.cepst import real_cepstrum
+from morie.fn._containers import SignalResult
 
 
 def test_cepst_basic(rng):

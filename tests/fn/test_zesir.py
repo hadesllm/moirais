@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zesir -- Spatial SIR diffusion"""
+"""Tests for morie.fn.zesir -- Spatial SIR diffusion"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zesir import spatial_sir
+from morie.fn.zesir import spatial_sir
 
 
 class TestSpatialSir:

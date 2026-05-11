@@ -1,7 +1,7 @@
 """Tests for hmhplm.geron_hidden_layers_heuristic."""
 import numpy as np
 import pytest
-from moirais.fn.hmhplm import geron_hidden_layers_heuristic
+from morie.fn.hmhplm import geron_hidden_layers_heuristic
 
 
 def test_hmhplm_basic():

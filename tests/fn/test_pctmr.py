@@ -1,7 +1,7 @@
 """Tests for pctmr.percentile_modified_rank."""
 import numpy as np
 import pytest
-from moirais.fn.pctmr import percentile_modified_rank
+from morie.fn.pctmr import percentile_modified_rank
 
 
 def test_pctmr_basic():

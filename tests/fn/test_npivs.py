@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.npivs — Nonparametric IV via sieve estimation."""
+"""Tests for morie.fn.npivs — Nonparametric IV via sieve estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.npivs import npivs
+from morie.fn.npivs import npivs
 
 
 @pytest.fixture()

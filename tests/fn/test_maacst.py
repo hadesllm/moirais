@@ -1,7 +1,7 @@
 """Test maacst."""
 import numpy as np
 import pytest
-from moirais.fn.maacst import maacst
+from morie.fn.maacst import maacst
 
 
 def test_maacst_basic():

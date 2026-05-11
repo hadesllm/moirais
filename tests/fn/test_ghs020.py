@@ -1,7 +1,7 @@
 """Tests for ghs020.ghosal_ch3_tree_countable_additivity."""
 import numpy as np
 import pytest
-from moirais.fn.ghs020 import ghosal_ch3_tree_countable_additivity
+from morie.fn.ghs020 import ghosal_ch3_tree_countable_additivity
 
 
 def test_ghs020_basic():

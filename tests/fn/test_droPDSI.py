@@ -1,7 +1,7 @@
 """Tests for droPDSI.pdsi."""
 import numpy as np
 import pytest
-from moirais.fn.droPDSI import pdsi
+from morie.fn.droPDSI import pdsi
 
 
 def test_droPDSI_basic():

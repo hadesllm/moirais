@@ -1,6 +1,6 @@
 """Tests for amgen.py - ARMA process generation."""
 import numpy as np
-from moirais.fn.amgen import arma_generate_fn, amgen
+from morie.fn.amgen import arma_generate_fn, amgen
 
 
 def test_amgen_returns_result():

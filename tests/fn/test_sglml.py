@@ -1,6 +1,6 @@
 """Tests for LM spatial tests."""
 import numpy as np
-from moirais.fn.sglml import sglml
+from morie.fn.sglml import sglml
 
 
 def test_sglml_smoke():
@@ -20,7 +20,7 @@ def test_sglml_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sglml import cheatsheet
+    from morie.fn.sglml import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

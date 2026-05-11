@@ -1,7 +1,7 @@
 """Tests for tmlmpc.tmle_multi_state_phc."""
 import numpy as np
 import pytest
-from moirais.fn.tmlmpc import tmle_multi_state_phc
+from morie.fn.tmlmpc import tmle_multi_state_phc
 
 
 def test_tmlmpc_basic():

@@ -1,7 +1,7 @@
 """Tests for isoF.isolation_forest."""
 import numpy as np
 import pytest
-from moirais.fn.isoF import isolation_forest
+from morie.fn.isoF import isolation_forest
 
 
 def test_isoF_basic():

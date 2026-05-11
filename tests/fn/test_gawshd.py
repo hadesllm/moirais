@@ -1,7 +1,7 @@
 """Test gawshd."""
 import numpy as np
 import pytest
-from moirais.fn.gawshd import gawshd
+from morie.fn.gawshd import gawshd
 
 
 def test_gawshd_basic():

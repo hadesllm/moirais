@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.orank — OTIS rank regions."""
+"""Tests for morie.fn.orank — OTIS rank regions."""
 
 import pandas as pd
-from moirais.fn.orank import otis_rank_regions
+from morie.fn.orank import otis_rank_regions
 
 
 class TestOtisRankRegions:

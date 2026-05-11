@@ -1,7 +1,7 @@
 """Tests for assort.degree_assortativity."""
 import numpy as np
 import pytest
-from moirais.fn.assort import degree_assortativity
+from morie.fn.assort import degree_assortativity
 
 
 def test_assort_basic():

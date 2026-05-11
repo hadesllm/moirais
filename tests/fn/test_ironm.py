@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ironm -- constrained LP optimization."""
+"""Tests for morie.fn.ironm -- constrained LP optimization."""
 
 import numpy as np
-from moirais.fn.ironm import armor_optimize, ironm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ironm import armor_optimize, ironm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestIronm:

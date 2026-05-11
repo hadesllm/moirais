@@ -1,6 +1,6 @@
 """Tests for dijks (Dijkstra shortest paths)."""
 import numpy as np
-from moirais.fn.dijks import dijkstra
+from morie.fn.dijks import dijkstra
 
 
 def test_dijkstra_basic():
@@ -19,7 +19,7 @@ def test_dijkstra_basic():
 
 
 def test_cheatsheet():
-    from moirais.fn.dijks import cheatsheet
+    from morie.fn.dijks import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

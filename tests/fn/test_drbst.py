@@ -1,7 +1,7 @@
 """Tests for drbst.dr_did_bootstrap."""
 import numpy as np
 import pytest
-from moirais.fn.drbst import dr_did_bootstrap
+from morie.fn.drbst import dr_did_bootstrap
 
 
 def test_drbst_basic():

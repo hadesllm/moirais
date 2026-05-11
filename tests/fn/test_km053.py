@@ -1,7 +1,7 @@
 """Tests for km053.kamath_ch3_prefix_tuning_obj."""
 import numpy as np
 import pytest
-from moirais.fn.km053 import kamath_ch3_prefix_tuning_obj
+from morie.fn.km053 import kamath_ch3_prefix_tuning_obj
 
 
 def test_km053_basic():

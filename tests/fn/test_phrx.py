@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.phrx — prescription pattern analysis."""
+"""Tests for morie.fn.phrx — prescription pattern analysis."""
 import numpy as np
 import pytest
-from moirais.fn.phrx import prescription_patterns
+from morie.fn.phrx import prescription_patterns
 
 
 class TestPrescriptionPatterns:

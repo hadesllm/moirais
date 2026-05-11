@@ -1,7 +1,7 @@
 """Tests for stkrgv."""
 import numpy as np
 import pytest
-from moirais.fn.stkrgv import stkrgv
+from morie.fn.stkrgv import stkrgv
 
 
 def test_stkrgv_basic():
@@ -27,5 +27,5 @@ def test_stkrgv_no_data():
 
 
 def test_stkrgv_alias():
-    from moirais.fn.stkrgv import stkrgv
+    from morie.fn.stkrgv import stkrgv
     assert stkrgv is stkrgv

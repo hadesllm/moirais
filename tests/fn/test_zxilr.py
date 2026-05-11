@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxilr -- Isometric log-ratio spatial"""
+"""Tests for morie.fn.zxilr -- Isometric log-ratio spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxilr import ilr_spatial
+from morie.fn.zxilr import ilr_spatial
 
 
 class TestIlrSpatial:

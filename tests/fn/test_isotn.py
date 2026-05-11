@@ -1,7 +1,7 @@
 """Tests for isotn.isotonic_regression."""
 import numpy as np
 import pytest
-from moirais.fn.isotn import isotonic_regression
+from morie.fn.isotn import isotonic_regression
 
 
 def test_isotn_basic():

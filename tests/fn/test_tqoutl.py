@@ -1,7 +1,7 @@
 """Tests for tqoutl.turboquant_outlier_channel_split."""
 import numpy as np
 import pytest
-from moirais.fn.tqoutl import turboquant_outlier_channel_split
+from morie.fn.tqoutl import turboquant_outlier_channel_split
 
 
 def test_tqoutl_basic():

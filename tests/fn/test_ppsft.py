@@ -1,7 +1,7 @@
 """Test ppsft."""
 import numpy as np
 import pytest
-from moirais.fn.ppsft import ppsft
+from morie.fn.ppsft import ppsft
 
 
 def test_ppsft_basic():

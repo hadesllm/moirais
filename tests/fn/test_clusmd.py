@@ -1,7 +1,7 @@
 """Tests for clusmd.butina_cluster."""
 import numpy as np
 import pytest
-from moirais.fn.clusmd import butina_cluster
+from morie.fn.clusmd import butina_cluster
 
 
 def test_clusmd_basic():

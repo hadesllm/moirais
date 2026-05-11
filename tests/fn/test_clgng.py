@@ -1,7 +1,7 @@
 """Test clgng."""
 import numpy as np
 import pytest
-from moirais.fn.clgng import clgng
+from morie.fn.clgng import clgng
 
 
 def test_clgng_basic():

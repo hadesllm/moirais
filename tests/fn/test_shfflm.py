@@ -1,7 +1,7 @@
 """Tests for shfflm.shuffle_model."""
 import numpy as np
 import pytest
-from moirais.fn.shfflm import shuffle_model
+from morie.fn.shfflm import shuffle_model
 
 
 def test_shfflm_basic():

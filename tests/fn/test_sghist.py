@@ -1,7 +1,7 @@
 """Tests for sghist."""
 import numpy as np
 import pytest
-from moirais.fn.sghist import sghist
+from morie.fn.sghist import sghist
 
 
 def test_sghist_basic():
@@ -27,5 +27,5 @@ def test_sghist_no_data():
 
 
 def test_sghist_alias():
-    from moirais.fn.sghist import sghist
+    from morie.fn.sghist import sghist
     assert sghist is sghist

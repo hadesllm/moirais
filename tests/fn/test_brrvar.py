@@ -1,7 +1,7 @@
 """Tests for brrvar.brr_variance."""
 import numpy as np
 import pytest
-from moirais.fn.brrvar import brr_variance
+from morie.fn.brrvar import brr_variance
 
 
 def test_brrvar_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ave — Average Variance Extracted."""
+"""Tests for morie.fn.ave — Average Variance Extracted."""
 
 import pytest
 import numpy as np
-from moirais.fn import ave
+from morie.fn import ave
 
 
 class TestAve:

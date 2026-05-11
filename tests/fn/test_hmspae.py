@@ -1,7 +1,7 @@
 """Tests for hmspae.geron_sparse_autoencoder."""
 import numpy as np
 import pytest
-from moirais.fn.hmspae import geron_sparse_autoencoder
+from morie.fn.hmspae import geron_sparse_autoencoder
 
 
 def test_hmspae_basic():

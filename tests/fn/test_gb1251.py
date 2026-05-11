@@ -1,7 +1,7 @@
 """Tests for gb1251.gibbons_partial_tau."""
 import numpy as np
 import pytest
-from moirais.fn.gb1251 import gibbons_partial_tau
+from morie.fn.gb1251 import gibbons_partial_tau
 
 
 def test_gb1251_basic():

@@ -1,7 +1,7 @@
 """Tests for sgtcheeg.sgt_cheeger_constant."""
 import numpy as np
 import pytest
-from moirais.fn.sgtcheeg import sgt_cheeger_constant
+from morie.fn.sgtcheeg import sgt_cheeger_constant
 
 
 def test_sgtcheeg_basic():

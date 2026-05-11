@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mrtsq -- Mauchly's sphericity test."""
+"""Tests for morie.fn.mrtsq -- Mauchly's sphericity test."""
 
 import numpy as np
-from moirais.fn.mrtsq import mauchly_test, mrtsq
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mrtsq import mauchly_test, mrtsq
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMauchlyTest:

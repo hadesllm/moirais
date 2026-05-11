@@ -1,7 +1,7 @@
 """Tests for thetaF.theta_method."""
 import numpy as np
 import pytest
-from moirais.fn.thetaF import theta_method
+from morie.fn.thetaF import theta_method
 
 
 def test_thetaF_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.r2or -- Convert Pearson r to odds ratio."""
+"""Tests for morie.fn.r2or -- Convert Pearson r to odds ratio."""
 
 import pytest
-from moirais.fn.r2or import r_to_or
+from morie.fn.r2or import r_to_or
 
 
 class TestRToOR:

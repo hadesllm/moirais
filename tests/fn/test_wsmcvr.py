@@ -1,7 +1,7 @@
 """Tests for wsmcvr.wasserman_kfold_cv."""
 import numpy as np
 import pytest
-from moirais.fn.wsmcvr import wasserman_kfold_cv
+from morie.fn.wsmcvr import wasserman_kfold_cv
 
 
 def test_wsmcvr_basic():

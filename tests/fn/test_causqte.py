@@ -1,7 +1,7 @@
 """Tests for causqte.causal_quantile_treatment_effect."""
 import numpy as np
 import pytest
-from moirais.fn.causqte import causal_quantile_treatment_effect
+from morie.fn.causqte import causal_quantile_treatment_effect
 
 
 def test_causqte_basic():

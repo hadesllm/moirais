@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.plbim."""
+"""Tests for morie.fn.plbim."""
 
 import numpy as np
 import pytest
-from moirais.fn.plbim import plbim
+from morie.fn.plbim import plbim
 
 
 class TestPlbim:

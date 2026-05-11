@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mdrcd."""
+"""Tests for morie.fn.mdrcd."""
 
 import numpy as np
 import pytest
-from moirais.fn.mdrcd import mdrcd
+from morie.fn.mdrcd import mdrcd
 
 
 class TestMdrcd:

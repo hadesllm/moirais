@@ -1,7 +1,7 @@
 """Tests for cvxrgl.boyd_regularized_ls."""
 import numpy as np
 import pytest
-from moirais.fn.cvxrgl import boyd_regularized_ls
+from morie.fn.cvxrgl import boyd_regularized_ls
 
 
 def test_cvxrgl_basic():

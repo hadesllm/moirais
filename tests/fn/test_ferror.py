@@ -1,7 +1,7 @@
 """Tests for ferror.fader_renewable."""
 import numpy as np
 import pytest
-from moirais.fn.ferror import fader_renewable
+from morie.fn.ferror import fader_renewable
 
 
 def test_ferror_basic():

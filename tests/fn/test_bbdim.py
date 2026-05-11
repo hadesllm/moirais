@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bbdim — Blackbox dimensionality."""
+"""Tests for morie.fn.bbdim — Blackbox dimensionality."""
 import numpy as np
-from moirais.fn.bbdim import bbdim
+from morie.fn.bbdim import bbdim
 
 
 def test_bbdim_smoke():
@@ -13,7 +13,7 @@ def test_bbdim_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.bbdim import cheatsheet
+    from morie.fn.bbdim import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for hrzk2.horowitz_kernel_regression."""
 import numpy as np
 import pytest
-from moirais.fn.hrzk2 import horowitz_kernel_regression
+from morie.fn.hrzk2 import horowitz_kernel_regression
 
 
 def test_hrzk2_basic():

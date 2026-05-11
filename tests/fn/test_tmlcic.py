@@ -1,7 +1,7 @@
 """Tests for tmlcic.tmle_cluster_ic."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcic import tmle_cluster_ic
+from morie.fn.tmlcic import tmle_cluster_ic
 
 
 def test_tmlcic_basic():

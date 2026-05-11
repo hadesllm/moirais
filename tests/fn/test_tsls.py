@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tsls -- Two-stage least squares."""
+"""Tests for morie.fn.tsls -- Two-stage least squares."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.tsls import two_stage_ls, tsls
-from moirais.fn._containers import RegressionResult
+from morie.fn.tsls import two_stage_ls, tsls
+from morie.fn._containers import RegressionResult
 
 
 class TestTSLS:

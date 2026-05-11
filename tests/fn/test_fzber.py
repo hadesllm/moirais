@@ -1,7 +1,7 @@
 """Tests for fzber.fauzi_berry_esseen_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.fzber import fauzi_berry_esseen_quantile
+from morie.fn.fzber import fauzi_berry_esseen_quantile
 
 
 def test_fzber_basic():

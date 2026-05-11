@@ -1,7 +1,7 @@
 """Tests for chlexp."""
 import numpy as np
 import pytest
-from moirais.fn.chlexp import chlexp
+from morie.fn.chlexp import chlexp
 
 
 def test_chlexp_basic():
@@ -27,5 +27,5 @@ def test_chlexp_no_data():
 
 
 def test_chlexp_alias():
-    from moirais.fn.chlexp import chlexp
+    from morie.fn.chlexp import chlexp
     assert chlexp is chlexp

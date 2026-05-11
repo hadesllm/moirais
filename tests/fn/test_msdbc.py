@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msdbc -- Double centering matrix B"""
+"""Tests for morie.fn.msdbc -- Double centering matrix B"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msdbc import double_center
+from morie.fn.msdbc import double_center
 
 
 class TestDoubleCenter:

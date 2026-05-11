@@ -1,6 +1,6 @@
 """Tests for huber_regression."""
 import numpy as np, pytest
-from moirais.fn.hbrrg import huber_regression
+from morie.fn.hbrrg import huber_regression
 
 
 class TestHuberRegression:

@@ -1,7 +1,7 @@
 """Tests for linkqp.linking_stocking_lord."""
 import numpy as np
 import pytest
-from moirais.fn.linkqp import linking_stocking_lord
+from morie.fn.linkqp import linking_stocking_lord
 
 
 def test_linkqp_basic():

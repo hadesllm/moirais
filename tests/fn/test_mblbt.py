@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mblbt -- Moving block bootstrap."""
+"""Tests for morie.fn.mblbt -- Moving block bootstrap."""
 
 import numpy as np
 import pytest
-from moirais.fn.mblbt import moving_block_bootstrap
+from morie.fn.mblbt import moving_block_bootstrap
 
 
 class TestMovingBlockBootstrap:

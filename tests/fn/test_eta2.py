@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.eta2 -- Eta-squared from ANOVA F-statistic."""
+"""Tests for morie.fn.eta2 -- Eta-squared from ANOVA F-statistic."""
 
 import pytest
-from moirais.fn.eta2 import eta_squared
+from morie.fn.eta2 import eta_squared
 
 
 class TestEtaSquared:

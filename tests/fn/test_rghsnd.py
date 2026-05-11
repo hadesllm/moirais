@@ -1,7 +1,7 @@
 """Tests for rghsnd.rangayyan_heart_sound_id."""
 import numpy as np
 import pytest
-from moirais.fn.rghsnd import rangayyan_heart_sound_id
+from morie.fn.rghsnd import rangayyan_heart_sound_id
 
 
 def test_rghsnd_basic():

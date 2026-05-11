@@ -1,7 +1,7 @@
 """Tests for ragRet.rag_retrieval."""
 import numpy as np
 import pytest
-from moirais.fn.ragRet import rag_retrieval
+from morie.fn.ragRet import rag_retrieval
 
 
 def test_ragRet_basic():

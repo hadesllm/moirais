@@ -1,7 +1,7 @@
 """Tests for sarima.seasonal_arima."""
 import numpy as np
 import pytest
-from moirais.fn.sarima import seasonal_arima
+from morie.fn.sarima import seasonal_arima
 
 
 def test_sarima_basic():

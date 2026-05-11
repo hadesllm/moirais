@@ -1,7 +1,7 @@
 """Test rhumbr."""
 import numpy as np
 import pytest
-from moirais.fn.rhumbr import rhumbr
+from morie.fn.rhumbr import rhumbr
 
 
 def test_rhumbr_basic():

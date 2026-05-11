@@ -1,7 +1,7 @@
 """Tests for covLst.catalog_coverage."""
 import numpy as np
 import pytest
-from moirais.fn.covLst import catalog_coverage
+from morie.fn.covLst import catalog_coverage
 
 
 def test_covLst_basic():

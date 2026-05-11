@@ -1,7 +1,7 @@
 """Tests for ksr024.kosorok_ch1_partly_linear_logistic."""
 import numpy as np
 import pytest
-from moirais.fn.ksr024 import kosorok_ch1_partly_linear_logistic
+from morie.fn.ksr024 import kosorok_ch1_partly_linear_logistic
 
 
 def test_ksr024_basic():

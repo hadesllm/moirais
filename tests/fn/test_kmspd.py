@@ -1,7 +1,7 @@
 """Tests for kmspd.kamath_speculative_decoding."""
 import numpy as np
 import pytest
-from moirais.fn.kmspd import kamath_speculative_decoding
+from morie.fn.kmspd import kamath_speculative_decoding
 
 
 def test_kmspd_basic():

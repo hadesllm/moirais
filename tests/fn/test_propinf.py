@@ -1,7 +1,7 @@
 """Tests for propinf.property_inference."""
 import numpy as np
 import pytest
-from moirais.fn.propinf import property_inference
+from morie.fn.propinf import property_inference
 
 
 def test_propinf_basic():

@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.ridge -- Ridge regression (L2)."""
+"""Tests for morie.fn.ridge -- Ridge regression (L2)."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.ridge import ridge_regression, ridge
-from moirais.fn._containers import RegressionResult
+from morie.fn.ridge import ridge_regression, ridge
+from morie.fn._containers import RegressionResult
 
 
 @pytest.fixture()
@@ -36,7 +36,7 @@ class TestRidge:
 
     def test_slope_shrunk_toward_zero(self, reg_data):
         """Ridge should shrink slope vs OLS (with large lambda)."""
-        from moirais.fn.rey import linear_regression
+        from morie.fn.rey import linear_regression
         ols = linear_regression(reg_data, y="y", x="x")
         ridge_res = ridge_regression(reg_data, y="y", x="x", lam=10.0)
         assert abs(ridge_res.coefficients["x"]) < abs(ols.coefficients["x"])

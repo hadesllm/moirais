@@ -1,7 +1,7 @@
 """Tests for rWcoxa.wilcox_change."""
 import numpy as np
 import pytest
-from moirais.fn.rWcoxa import wilcox_change
+from morie.fn.rWcoxa import wilcox_change
 
 
 def test_rWcoxa_basic():

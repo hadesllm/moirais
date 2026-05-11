@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.grubs -- Grubbs' test."""
+"""Tests for morie.fn.grubs -- Grubbs' test."""
 
 import numpy as np
 import pytest
-from moirais.fn.grubs import grubbs_test
-from moirais.fn._containers import TestResult
+from morie.fn.grubs import grubbs_test
+from morie.fn._containers import TestResult
 
 
 class TestGrubbs:

@@ -1,7 +1,7 @@
 """Tests for gb_ssj.gibbons_sign_sample_size_2."""
 import numpy as np
 import pytest
-from moirais.fn.gb_ssj import gibbons_sign_sample_size_2
+from morie.fn.gb_ssj import gibbons_sign_sample_size_2
 
 
 def test_gb_ssj_basic():

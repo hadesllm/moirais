@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.semsig."""
+"""Tests for morie.fn.semsig."""
 import numpy as np
 import pytest
-from moirais.fn.semsig import semsig
+from morie.fn.semsig import semsig
 
 
 class TestSemsig:

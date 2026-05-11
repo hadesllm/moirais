@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wlsrg — WLS regression."""
+"""Tests for morie.fn.wlsrg — WLS regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.wlsrg import wls_regression
+from morie.fn.wlsrg import wls_regression
 
 
 def test_wls_recovers_coefficients():
@@ -24,7 +24,7 @@ def test_wls_equal_weights_matches_ols():
     X = rng.standard_normal((n, 1))
     y = 2.0 + X[:, 0] + rng.standard_normal(n) * 0.5
     w = np.ones(n)
-    from moirais.fn.olsrg import ols_regression
+    from morie.fn.olsrg import ols_regression
     ols = ols_regression(y, X)
     wls = wls_regression(y, X, w)
     np.testing.assert_allclose(

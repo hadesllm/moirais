@@ -1,7 +1,7 @@
 """Tests for hmlle.geron_locally_linear_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.hmlle import geron_locally_linear_embedding
+from morie.fn.hmlle import geron_locally_linear_embedding
 
 
 def test_hmlle_basic():

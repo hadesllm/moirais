@@ -1,7 +1,7 @@
 """Test vmstb."""
 import numpy as np
 import pytest
-from moirais.fn.vmstb import vmstb
+from morie.fn.vmstb import vmstb
 
 
 def test_vmstb_basic():

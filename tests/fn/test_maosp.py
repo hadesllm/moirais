@@ -1,7 +1,7 @@
 """Test maosp."""
 import numpy as np
 import pytest
-from moirais.fn.maosp import maosp
+from morie.fn.maosp import maosp
 
 
 def test_maosp_basic():

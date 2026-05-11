@@ -1,219 +1,84 @@
-"""Top-level package for the MOIRAIS Python interface.
+"""Backwards-compatibility shim for the renamed package.
 
-All heavy imports are guarded so that lightweight submodules (moirais.quant,
-moirais.fn, moirais.ebac, etc.) can be imported in minimal environments (e.g.
-autoresearch venv) without requiring sklearn, httpx, textual, or other
-optional dependencies.
+The toolkit was renamed from ``moirais`` to ``morie`` in v0.1.3. This
+module re-exports everything from :mod:`morie` so existing code that
+does ``import moirais`` or ``from moirais import ...`` keeps working.
+
+Migration: replace ``import moirais`` with ``import morie``.
 """
 
-__version__ = "0.1.2"
+from __future__ import annotations
 
-# --- Guarded eager imports — fail gracefully in minimal envs ---
-# In a full moirais install these all succeed and populate the namespace.
-# In a minimal env (only numpy/scipy), they silently skip.
+import sys as _sys
+import warnings as _warnings
 
-try:
-    from .cpads import CPADS_REQUIRED_VARIABLES, canonicalize_cpads_frame, cpads_contract, validate_cpads_frame
-except ImportError:
-    pass
+_warnings.warn(
+    "The 'moirais' package was renamed to 'morie' in v0.1.3. "
+    "Update imports from 'moirais' to 'morie'. "
+    "This alias is provided for backwards compatibility and may be "
+    "removed in a future release.",
+    DeprecationWarning,
+    stacklevel=2,
+)
 
-try:
-    from .causal import (
-        calculate_ipw_weights,
-        compute_propensity_scores,
-        effective_sample_size,
-        estimate_atc,
-        estimate_att,
-        estimate_cate,
-        estimate_gate,
-        estimate_irm,
-        estimate_late,
-        run_ebac_selection_ipw_analysis,
-        run_propensity_ipw_analysis,
-    )
-except ImportError:
-    pass
+import morie as _morie
+from morie import __version__  # noqa: F401
 
-try:
-    from .data import DatasetRegistry
-except ImportError:
-    pass
+# Re-export everything from morie at package top level.
+from morie import *  # noqa: F401,F403
 
-try:
-    from .dataset import (
-        ColumnProfile,
-        DatasetProfile,
-        MeasurementLevel,
-        infer_measurement_level,
-        load_dataset,
-        profile_dataset,
-        suggest_analysis_plan,
-    )
-except ImportError:
-    pass
+# Alias every loaded morie submodule under the moirais. namespace so
+# imports like ``from moirais.fn.crba import crba`` resolve to the
+# corresponding morie module without duplicating module objects.
+for _name, _mod in list(_sys.modules.items()):
+    if _name == "morie" or _name.startswith("morie."):
+        _alias = "moirais" + _name[len("morie"):]
+        _sys.modules.setdefault(_alias, _mod)
 
-try:
-    from .ebac import calculate_ebac, is_over_legal_limit
-except ImportError:
-    pass
-
-try:
-    from .effects import estimate_ate
-except ImportError:
-    pass
-
-try:
-    from .investigation import (
-        compare_nested_logistic_models,
-        run_treatment_effects_analysis,
-        run_weighted_logistic_analysis,
-    )
-except ImportError:
-    pass
-
-try:
-    from .inspector import inspect_output, verify_statistical_output
-except ImportError:
-    pass
-
-try:
-    from .modules import list_modules, run_module, run_modules, run_power_design_module
-except ImportError:
-    pass
-
-try:
-    from .sampling import (
-        bootstrap_sample,
-        cluster_sample,
-        compute_design_weights,
-        design_effect,
-        jackknife_estimate,
-        pps_sample,
-        simple_random_sample,
-        stratified_sample,
-    )
-except ImportError:
-    pass
-
-try:
-    from .perseus import agent_available, ask_percy, build_prompt
-
-    assistant_available = agent_available
-    ask_moirais_assistant = ask_percy
-    build_assistant_prompt = build_prompt
-    from .llm import ask, ask_multi, build_moirais_context, detect_available_provider
-except ImportError:
-    pass
-
-# --- New modules: viz, tables_pub, validation, export ---
-# Lazy imports to avoid heavy matplotlib/sklearn load on basic usage.
+# Install an import hook so future ``moirais.X`` imports also resolve
+# to ``morie.X`` even if X hasn't been imported yet.
+from importlib import import_module as _import_module
+from importlib.abc import MetaPathFinder as _MetaPathFinder, Loader as _Loader
+from importlib.machinery import ModuleSpec as _ModuleSpec
 
 
-def _lazy_viz():
-    from . import viz as _viz
+class _MoiraisAliasLoader(_Loader):
+    def create_module(self, spec):
+        target = "morie" + spec.name[len("moirais"):]
+        return _import_module(target)
 
-    return _viz
-
-
-def _lazy_tables_pub():
-    from . import tables_pub as _tables_pub
-
-    return _tables_pub
+    def exec_module(self, module):
+        return None
 
 
-def _lazy_validation():
-    from . import validation as _validation
-
-    return _validation
-
-
-def _lazy_export():
-    from . import export as _export
-
-    return _export
-
-
-def execute_pipeline(*args, **kwargs):
-    """Lazily import the CLI runner helper to avoid module-execution warnings."""
-    from .runner import execute_pipeline as _execute_pipeline
-
-    return _execute_pipeline(*args, **kwargs)
+class _MoiraisAliasFinder(_MetaPathFinder):
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname != "moirais" and not fullname.startswith("moirais."):
+            return None
+        if fullname in _sys.modules:
+            return None
+        target = "morie" + fullname[len("moirais"):]
+        try:
+            _import_module(target)
+        except ImportError:
+            return None
+        return _ModuleSpec(fullname, _MoiraisAliasLoader(), is_package=False)
 
 
-def run_chat_repl(*args, **kwargs):
-    """Lazily import the chat REPL."""
-    from .chat import run_chat_repl as _run_chat_repl
-
-    return _run_chat_repl(*args, **kwargs)
+_sys.meta_path.append(_MoiraisAliasFinder())
 
 
-def launch_tui(*args, **kwargs):
-    """Lazily import the TUI launcher."""
-    from .tui import launch_tui as _launch_tui
+def __getattr__(name):
+    """Forward attribute access on the moirais module to morie.
 
-    return _launch_tui(*args, **kwargs)
-
-
-__all__ = [
-    "ColumnProfile",
-    "DatasetProfile",
-    "DatasetRegistry",
-    "CPADS_REQUIRED_VARIABLES",
-    "MeasurementLevel",
-    "ask",
-    "agent_available",
-    "ask_percy",
-    "ask_moirais_assistant",
-    "ask_multi",
-    "assistant_available",
-    "build_prompt",
-    "bootstrap_sample",
-    "build_assistant_prompt",
-    "build_moirais_context",
-    "calculate_ebac",
-    "calculate_ipw_weights",
-    "canonicalize_cpads_frame",
-    "cluster_sample",
-    "compare_nested_logistic_models",
-    "compute_design_weights",
-    "compute_propensity_scores",
-    "cpads_contract",
-    "design_effect",
-    "detect_available_provider",
-    "estimate_ate",
-    "estimate_att",
-    "estimate_atc",
-    "estimate_cate",
-    "estimate_gate",
-    "estimate_irm",
-    "estimate_late",
-    "effective_sample_size",
-    "execute_pipeline",
-    "inspect_output",
-    "launch_tui",
-    "infer_measurement_level",
-    "is_over_legal_limit",
-    "jackknife_estimate",
-    "list_modules",
-    "load_dataset",
-    "pps_sample",
-    "profile_dataset",
-    "run_module",
-    "run_modules",
-    "run_power_design_module",
-    "run_chat_repl",
-    "run_ebac_selection_ipw_analysis",
-    "run_propensity_ipw_analysis",
-    "run_treatment_effects_analysis",
-    "run_weighted_logistic_analysis",
-    "simple_random_sample",
-    "stratified_sample",
-    "suggest_analysis_plan",
-    "validate_cpads_frame",
-    "verify_statistical_output",
-    # New modules (import via moirais.viz, moirais.tables_pub, etc.)
-    "viz",
-    "tables_pub",
-    "validation",
-    "export",
-]
+    Required so ``import moirais.X; moirais.X`` returns the same
+    submodule as ``import morie.X; morie.X``.
+    """
+    try:
+        return getattr(_morie, name)
+    except AttributeError:
+        pass
+    try:
+        return _import_module("morie." + name)
+    except ImportError as exc:  # pragma: no cover - mirrors stdlib behaviour
+        raise AttributeError(f"module 'moirais' has no attribute {name!r}") from exc

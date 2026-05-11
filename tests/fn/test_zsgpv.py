@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsgpv -- GP predictive variance"""
+"""Tests for morie.fn.zsgpv -- GP predictive variance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsgpv import gp_variance
+from morie.fn.zsgpv import gp_variance
 
 
 class TestGpVariance:

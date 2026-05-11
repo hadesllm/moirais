@@ -1,7 +1,7 @@
 """Test saqmo."""
 import numpy as np
 import pytest
-from moirais.fn.saqmo import saqmo
+from morie.fn.saqmo import saqmo
 
 
 def test_saqmo_basic():

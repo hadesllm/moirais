@@ -1,6 +1,6 @@
 """Tests for SVD entropy."""
 import numpy as np
-from moirais.fn.svdnt import svd_entropy, svdnt
+from morie.fn.svdnt import svd_entropy, svdnt
 
 
 def test_normalised():

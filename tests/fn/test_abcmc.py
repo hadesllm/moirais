@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.abcmc -- ABC-MCMC."""
+"""Tests for morie.fn.abcmc -- ABC-MCMC."""
 
 import numpy as np
-from moirais.fn.abcmc import abc_mcmc
+from morie.fn.abcmc import abc_mcmc
 
 
 def _simulator(theta):

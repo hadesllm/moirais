@@ -1,7 +1,7 @@
 """Tests for trmRew.term_rewriting."""
 import numpy as np
 import pytest
-from moirais.fn.trmRew import term_rewriting
+from morie.fn.trmRew import term_rewriting
 
 
 def test_trmRew_basic():

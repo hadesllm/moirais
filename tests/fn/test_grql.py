@@ -1,7 +1,7 @@
 """Tests for grql.geron_q_learning_update."""
 import numpy as np
 import pytest
-from moirais.fn.grql import geron_q_learning_update
+from morie.fn.grql import geron_q_learning_update
 
 
 def test_grql_basic():

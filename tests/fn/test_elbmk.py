@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.elbmk -- Elbow method for k."""
+"""Tests for morie.fn.elbmk -- Elbow method for k."""
 
 import numpy as np
-from moirais.fn.elbmk import elbow_method, elbmk
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.elbmk import elbow_method, elbmk
+from morie.fn._containers import DescriptiveResult
 
 
 class TestElbowMethod:

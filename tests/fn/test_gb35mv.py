@@ -1,7 +1,7 @@
 """Tests for gb35mv.gibbons_rvn_moments."""
 import numpy as np
 import pytest
-from moirais.fn.gb35mv import gibbons_rvn_moments
+from morie.fn.gb35mv import gibbons_rvn_moments
 
 
 def test_gb35mv_basic():

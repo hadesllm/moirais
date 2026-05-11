@@ -1,7 +1,7 @@
 """Tests for lgnrm: log-normal AFT survival model."""
 import numpy as np
 import pytest
-from moirais.fn.lgnrm import lgnrm
+from morie.fn.lgnrm import lgnrm
 
 
 def _sim_lognormal(n=150, mu_true=1.5, sigma_true=0.5, censor_rate=0.3, seed=0):

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tq2 — 2-bit TurboQuant."""
+"""Tests for morie.fn.tq2 — 2-bit TurboQuant."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tq2 import turboquant_2bit
+from morie.fn.tq2 import turboquant_2bit
 
 
 class TestTurboquant2bit:

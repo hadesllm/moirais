@@ -1,7 +1,7 @@
 """Tests for grsig.geron_sigmoid."""
 import numpy as np
 import pytest
-from moirais.fn.grsig import geron_sigmoid
+from morie.fn.grsig import geron_sigmoid
 
 
 def test_grsig_basic():

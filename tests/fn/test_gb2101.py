@@ -1,7 +1,7 @@
 """Tests for gb2101.gibbons_asymp_order_normal."""
 import numpy as np
 import pytest
-from moirais.fn.gb2101 import gibbons_asymp_order_normal
+from morie.fn.gb2101 import gibbons_asymp_order_normal
 
 
 def test_gb2101_basic():

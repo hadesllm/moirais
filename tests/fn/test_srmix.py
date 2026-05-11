@@ -1,7 +1,7 @@
 """Test srmix."""
 import numpy as np
 import pytest
-from moirais.fn.srmix import srmix
+from morie.fn.srmix import srmix
 
 
 def test_srmix_basic():

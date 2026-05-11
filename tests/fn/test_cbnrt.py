@@ -1,7 +1,7 @@
 """Tests for cbnrt.causalbert_text."""
 import numpy as np
 import pytest
-from moirais.fn.cbnrt import causalbert_text
+from morie.fn.cbnrt import causalbert_text
 
 
 def test_cbnrt_basic():

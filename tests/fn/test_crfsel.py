@@ -1,7 +1,7 @@
 """Tests for crfsel.causal_forest_selection."""
 import numpy as np
 import pytest
-from moirais.fn.crfsel import causal_forest_selection
+from morie.fn.crfsel import causal_forest_selection
 
 
 def test_crfsel_basic():

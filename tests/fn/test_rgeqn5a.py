@@ -1,7 +1,7 @@
 """Tests for rgeqn5a.rangayyan_ch5_waveform_morph."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn5a import rangayyan_ch5_waveform_morph
+from morie.fn.rgeqn5a import rangayyan_ch5_waveform_morph
 
 
 def test_rgeqn5a_basic():

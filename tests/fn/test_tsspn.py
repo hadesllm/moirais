@@ -1,7 +1,7 @@
 """Test tsspn."""
 import numpy as np
 import pytest
-from moirais.fn.tsspn import tsspn
+from morie.fn.tsspn import tsspn
 
 
 def test_tsspn_basic():

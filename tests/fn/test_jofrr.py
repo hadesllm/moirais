@@ -1,7 +1,7 @@
 """Tests for jofrr.joseph_fourier_features."""
 import numpy as np
 import pytest
-from moirais.fn.jofrr import joseph_fourier_features
+from morie.fn.jofrr import joseph_fourier_features
 
 
 def test_jofrr_basic():

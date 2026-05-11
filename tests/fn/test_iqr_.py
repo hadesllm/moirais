@@ -1,6 +1,6 @@
 """Tests for iqr_statistic."""
 import numpy as np, pytest
-from moirais.fn.iqr_ import iqr_statistic
+from morie.fn.iqr_ import iqr_statistic
 
 class TestIQR:
     def test_known(self):

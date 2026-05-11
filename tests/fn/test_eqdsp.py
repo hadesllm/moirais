@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.eqdsp — disparity decomposition."""
+"""Tests for morie.fn.eqdsp — disparity decomposition."""
 
 import pytest
 import numpy as np
-from moirais.fn.eqdsp import disparity_decompose
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.eqdsp import disparity_decompose
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDisparityDecompose:

@@ -1,7 +1,7 @@
 """Tests for stacv.spatiotemporal_autocovariance."""
 import numpy as np
 import pytest
-from moirais.fn.stacv import spatiotemporal_autocovariance
+from morie.fn.stacv import spatiotemporal_autocovariance
 
 
 def test_stacv_basic():

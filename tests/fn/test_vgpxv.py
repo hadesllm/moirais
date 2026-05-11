@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgpxv -- Pseudo-cross-variogram"""
+"""Tests for morie.fn.vgpxv -- Pseudo-cross-variogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgpxv import pseudo_cross_vario
+from morie.fn.vgpxv import pseudo_cross_vario
 
 
 class TestPseudoCrossVario:

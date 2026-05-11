@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mscnt -- Continuity metric"""
+"""Tests for morie.fn.mscnt -- Continuity metric"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mscnt import continuity
+from morie.fn.mscnt import continuity
 
 
 class TestContinuity:

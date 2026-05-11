@@ -1,7 +1,7 @@
 """Tests for rbfsys."""
 import numpy as np
 import pytest
-from moirais.fn.rbfsys import rbfsys
+from morie.fn.rbfsys import rbfsys
 
 
 def test_rbfsys_basic():
@@ -27,5 +27,5 @@ def test_rbfsys_no_data():
 
 
 def test_rbfsys_alias():
-    from moirais.fn.rbfsys import rbfsys
+    from morie.fn.rbfsys import rbfsys
     assert rbfsys is rbfsys

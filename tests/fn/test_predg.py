@@ -1,7 +1,7 @@
 """Test prediction_gain (predg)."""
 import numpy as np
-from moirais.fn.predg import prediction_gain, predg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.predg import prediction_gain, predg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPredg:

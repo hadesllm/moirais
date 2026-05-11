@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.jnckt import jnckt
+from morie.fn.jnckt import jnckt
 
 
 class TestJnckt:

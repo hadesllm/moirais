@@ -1,7 +1,7 @@
 """Tests for jarow.jaro_winkler."""
 import numpy as np
 import pytest
-from moirais.fn.jarow import jaro_winkler
+from morie.fn.jarow import jaro_winkler
 
 
 def test_jarow_basic():

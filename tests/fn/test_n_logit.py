@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.n_logit -- minimum sample size for logistic regression."""
+"""Tests for morie.fn.n_logit -- minimum sample size for logistic regression."""
 
 import pytest
-from moirais.fn.n_logit import sample_size_logistic
+from morie.fn.n_logit import sample_size_logistic
 
 
 class TestSampleSizeLogistic:

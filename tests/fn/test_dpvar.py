@@ -1,7 +1,7 @@
 """Tests for dpvar.dp_variance."""
 import numpy as np
 import pytest
-from moirais.fn.dpvar import dp_variance
+from morie.fn.dpvar import dp_variance
 
 
 def test_dpvar_basic():

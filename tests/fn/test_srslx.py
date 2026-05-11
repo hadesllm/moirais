@@ -1,7 +1,7 @@
 """Test srslx."""
 import numpy as np
 import pytest
-from moirais.fn.srslx import srslx
+from morie.fn.srslx import srslx
 
 
 def test_srslx_basic():

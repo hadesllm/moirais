@@ -1,7 +1,7 @@
 """Tests for rgdtfd.rangayyan_decomp_tfd."""
 import numpy as np
 import pytest
-from moirais.fn.rgdtfd import rangayyan_decomp_tfd
+from morie.fn.rgdtfd import rangayyan_decomp_tfd
 
 
 def test_rgdtfd_basic():

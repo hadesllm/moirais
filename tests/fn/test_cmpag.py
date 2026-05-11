@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cmpag — compliance by age."""
+"""Tests for morie.fn.cmpag — compliance by age."""
 
 import pandas as pd
-from moirais.fn.cmpag import compliance_by_age
+from morie.fn.cmpag import compliance_by_age
 
 
 class TestComplianceByAge:

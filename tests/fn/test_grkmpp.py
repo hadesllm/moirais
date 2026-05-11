@@ -1,7 +1,7 @@
 """Tests for grkmpp.geron_kmeans_pp_seeding."""
 import numpy as np
 import pytest
-from moirais.fn.grkmpp import geron_kmeans_pp_seeding
+from morie.fn.grkmpp import geron_kmeans_pp_seeding
 
 
 def test_grkmpp_basic():

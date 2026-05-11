@@ -1,7 +1,7 @@
 """Test socrb."""
 import numpy as np
 import pytest
-from moirais.fn.socrb import socrb
+from morie.fn.socrb import socrb
 
 
 def test_socrb_basic():

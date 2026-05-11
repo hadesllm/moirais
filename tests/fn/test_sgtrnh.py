@@ -1,7 +1,7 @@
 """Tests for sgtrnh.sgt_randic_index."""
 import numpy as np
 import pytest
-from moirais.fn.sgtrnh import sgt_randic_index
+from morie.fn.sgtrnh import sgt_randic_index
 
 
 def test_sgtrnh_basic():

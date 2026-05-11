@@ -1,7 +1,7 @@
 """Tests for ksr025.kosorok_ch1_penalized_loglikelihood."""
 import numpy as np
 import pytest
-from moirais.fn.ksr025 import kosorok_ch1_penalized_loglikelihood
+from morie.fn.ksr025 import kosorok_ch1_penalized_loglikelihood
 
 
 def test_ksr025_basic():

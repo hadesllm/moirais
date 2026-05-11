@@ -1,7 +1,7 @@
 """Test ppitv."""
 import numpy as np
 import pytest
-from moirais.fn.ppitv import ppitv
+from morie.fn.ppitv import ppitv
 
 
 def test_ppitv_basic():

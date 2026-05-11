@@ -1,7 +1,7 @@
 """Tests for prphet.prophet."""
 import numpy as np
 import pytest
-from moirais.fn.prphet import prophet
+from morie.fn.prphet import prophet
 
 
 def test_prphet_basic():

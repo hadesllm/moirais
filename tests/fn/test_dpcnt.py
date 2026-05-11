@@ -1,7 +1,7 @@
 """Tests for dpcnt.dp_count."""
 import numpy as np
 import pytest
-from moirais.fn.dpcnt import dp_count
+from morie.fn.dpcnt import dp_count
 
 
 def test_dpcnt_basic():

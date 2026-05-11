@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sndwv -- cepstral analysis."""
+"""Tests for morie.fn.sndwv -- cepstral analysis."""
 
 import numpy as np
-from moirais.fn.sndwv import cepstral_analysis, sndwv
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sndwv import cepstral_analysis, sndwv
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSndwv:

@@ -1,7 +1,7 @@
 """Tests for rgksv.rangayyan_ksvd."""
 import numpy as np
 import pytest
-from moirais.fn.rgksv import rangayyan_ksvd
+from morie.fn.rgksv import rangayyan_ksvd
 
 
 def test_rgksv_basic():

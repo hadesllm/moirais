@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lilf -- Lilliefors test."""
+"""Tests for morie.fn.lilf -- Lilliefors test."""
 
 import numpy as np
 import pytest
-from moirais.fn.lilf import lilliefors_test
-from moirais.fn._containers import TestResult
+from morie.fn.lilf import lilliefors_test
+from morie.fn._containers import TestResult
 
 
 class TestLilliefors:

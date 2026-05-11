@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bmds — Bayesian multidimensional scaling."""
+"""Tests for morie.fn.bmds — Bayesian multidimensional scaling."""
 import numpy as np
 import pytest
 
-from moirais.fn.bmds import bmds
+from morie.fn.bmds import bmds
 
 
 def test_bmds_smoke():
@@ -12,7 +12,7 @@ def test_bmds_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.bmds import cheatsheet
+    from morie.fn.bmds import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

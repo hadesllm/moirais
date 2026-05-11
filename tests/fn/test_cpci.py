@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.cpci."""
-from moirais.fn.cpci import cpci
+"""Tests for morie.fn.cpci."""
+from morie.fn.cpci import cpci
 
 
 def test_cpci_smoke():
@@ -10,7 +10,7 @@ def test_cpci_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.cpci import cheatsheet
+    from morie.fn.cpci import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

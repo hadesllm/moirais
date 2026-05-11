@@ -1,7 +1,7 @@
 """Tests for alfqfn.alphazero_q_function."""
 import numpy as np
 import pytest
-from moirais.fn.alfqfn import alphazero_q_function
+from morie.fn.alfqfn import alphazero_q_function
 
 
 def test_alfqfn_basic():

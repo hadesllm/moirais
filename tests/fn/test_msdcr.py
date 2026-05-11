@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msdcr -- Correlation distance matrix"""
+"""Tests for morie.fn.msdcr -- Correlation distance matrix"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msdcr import dist_correlation
+from morie.fn.msdcr import dist_correlation
 
 
 class TestDistCorrelation:

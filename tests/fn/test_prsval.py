@@ -1,7 +1,7 @@
 """Tests for prsval.presmessick_validity."""
 import numpy as np
 import pytest
-from moirais.fn.prsval import presmessick_validity
+from morie.fn.prsval import presmessick_validity
 
 
 def test_prsval_basic():

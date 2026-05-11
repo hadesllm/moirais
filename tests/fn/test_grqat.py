@@ -1,7 +1,7 @@
 """Tests for grqat.geron_quantization_aware_training."""
 import numpy as np
 import pytest
-from moirais.fn.grqat import geron_quantization_aware_training
+from morie.fn.grqat import geron_quantization_aware_training
 
 
 def test_grqat_basic():

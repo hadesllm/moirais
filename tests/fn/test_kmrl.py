@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kmrl — kernel mean residual life."""
+"""Tests for morie.fn.kmrl — kernel mean residual life."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kmrl import kmrl
+from morie.fn.kmrl import kmrl
 
 
 class TestKmrl:

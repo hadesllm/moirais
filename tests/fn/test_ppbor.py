@@ -1,7 +1,7 @@
 """Test ppbor."""
 import numpy as np
 import pytest
-from moirais.fn.ppbor import ppbor
+from morie.fn.ppbor import ppbor
 
 
 def test_ppbor_basic():

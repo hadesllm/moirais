@@ -1,7 +1,7 @@
 """Tests for esldai.esl_dirichlet_proc."""
 import numpy as np
 import pytest
-from moirais.fn.esldai import esl_dirichlet_proc
+from morie.fn.esldai import esl_dirichlet_proc
 
 
 def test_esldai_basic():

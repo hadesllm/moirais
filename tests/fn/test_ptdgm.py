@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptdgm -- Diggle-Cressie-Loosmore test"""
+"""Tests for morie.fn.ptdgm -- Diggle-Cressie-Loosmore test"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptdgm import diggle_test
+from morie.fn.ptdgm import diggle_test
 
 
 class TestDiggleTest:

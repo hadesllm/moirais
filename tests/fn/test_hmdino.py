@@ -1,7 +1,7 @@
 """Tests for hmdino.geron_dino."""
 import numpy as np
 import pytest
-from moirais.fn.hmdino import geron_dino
+from morie.fn.hmdino import geron_dino
 
 
 def test_hmdino_basic():

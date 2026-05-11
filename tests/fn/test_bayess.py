@@ -1,7 +1,7 @@
 """Tests for bayess.effective_sample_size_bayes."""
 import numpy as np
 import pytest
-from moirais.fn.bayess import effective_sample_size_bayes
+from morie.fn.bayess import effective_sample_size_bayes
 
 
 def test_bayess_basic():

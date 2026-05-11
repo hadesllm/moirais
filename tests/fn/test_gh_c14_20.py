@@ -1,7 +1,7 @@
 """Tests for gh_c14_20.ghosal_probit_sbp."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c14_20 import ghosal_probit_sbp
+from morie.fn.gh_c14_20 import ghosal_probit_sbp
 
 
 def test_gh_c14_20_basic():

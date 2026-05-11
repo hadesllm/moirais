@@ -1,7 +1,7 @@
 """Tests for logrt: log-rank test."""
 import numpy as np
 import pytest
-from moirais.fn.logrt import logrt
+from morie.fn.logrt import logrt
 
 
 def _make_two_group_data(n_per_group=100, hr=2.0, seed=0):

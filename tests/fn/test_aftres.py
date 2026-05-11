@@ -1,7 +1,7 @@
 """Tests for aftres.aft_residuals."""
 import numpy as np
 import pytest
-from moirais.fn.aftres import aft_residuals
+from morie.fn.aftres import aft_residuals
 
 
 def test_aftres_basic():

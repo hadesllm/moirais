@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.wls -- Weighted least squares."""
+"""Tests for morie.fn.wls -- Weighted least squares."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.wls import weighted_ls, wls
-from moirais.fn._containers import RegressionResult
+from morie.fn.wls import weighted_ls, wls
+from morie.fn._containers import RegressionResult
 
 
 @pytest.fixture()

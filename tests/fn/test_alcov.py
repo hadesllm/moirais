@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.alcov — ALCOVE model."""
+"""Tests for morie.fn.alcov — ALCOVE model."""
 import numpy as np
-from moirais.fn.alcov import alcov
+from morie.fn.alcov import alcov
 
 
 def test_alcov_basic():

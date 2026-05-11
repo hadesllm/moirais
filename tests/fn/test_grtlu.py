@@ -1,7 +1,7 @@
 """Tests for grtlu.geron_threshold_logic_unit."""
 import numpy as np
 import pytest
-from moirais.fn.grtlu import geron_threshold_logic_unit
+from morie.fn.grtlu import geron_threshold_logic_unit
 
 
 def test_grtlu_basic():

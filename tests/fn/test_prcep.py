@@ -1,7 +1,7 @@
 """Test power_cepstrum (prcep)."""
 import numpy as np
-from moirais.fn.prcep import power_cepstrum, prcep
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prcep import power_cepstrum, prcep
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPrcep:

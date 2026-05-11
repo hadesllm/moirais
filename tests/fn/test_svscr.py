@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svscr -- Scree test for spatial dimensions"""
+"""Tests for morie.fn.svscr -- Scree test for spatial dimensions"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svscr import scree_spatial
+from morie.fn.svscr import scree_spatial
 
 
 class TestScreeSpatial:

@@ -1,7 +1,7 @@
 """Tests for gh_c1_1.ghosal_bayes_rule_infinite."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c1_1 import ghosal_bayes_rule_infinite
+from morie.fn.gh_c1_1 import ghosal_bayes_rule_infinite
 
 
 def test_gh_c1_1_basic():

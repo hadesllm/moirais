@@ -1,6 +1,6 @@
 """Tests for dwtfn.py - Discrete Wavelet Transform."""
 import numpy as np
-from moirais.fn.dwtfn import dwt_decompose, dwtfn
+from morie.fn.dwtfn import dwt_decompose, dwtfn
 
 
 def test_dwt_returns_descriptive_result():

@@ -1,7 +1,7 @@
 """Test maoys."""
 import numpy as np
 import pytest
-from moirais.fn.maoys import maoys
+from morie.fn.maoys import maoys
 
 
 def test_maoys_basic():

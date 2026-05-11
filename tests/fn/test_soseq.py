@@ -1,7 +1,7 @@
 """Test soseq."""
 import numpy as np
 import pytest
-from moirais.fn.soseq import soseq
+from morie.fn.soseq import soseq
 
 
 def test_soseq_basic():

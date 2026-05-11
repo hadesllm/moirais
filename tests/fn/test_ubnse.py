@@ -1,7 +1,7 @@
 """Test ubnse."""
 import numpy as np
 import pytest
-from moirais.fn.ubnse import ubnse
+from morie.fn.ubnse import ubnse
 
 
 def test_ubnse_basic():

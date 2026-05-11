@@ -1,7 +1,7 @@
 """Tests for aitdst.aitchison_distance."""
 import numpy as np
 import pytest
-from moirais.fn.aitdst import aitchison_distance
+from morie.fn.aitdst import aitchison_distance
 
 
 def test_aitdst_basic():

@@ -1,7 +1,7 @@
 """Tests for oniIdx.oni."""
 import numpy as np
 import pytest
-from moirais.fn.oniIdx import oni
+from morie.fn.oniIdx import oni
 
 
 def test_oniIdx_basic():

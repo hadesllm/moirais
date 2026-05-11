@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.dnpos — density positive weights."""
+"""Tests for morie.fn.dnpos — density positive weights."""
 import numpy as np
-from moirais.fn.dnpos import dnpos
+from morie.fn.dnpos import dnpos
 
 
 def test_dnpos_smoke():
@@ -14,7 +14,7 @@ def test_dnpos_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.dnpos import cheatsheet
+    from morie.fn.dnpos import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

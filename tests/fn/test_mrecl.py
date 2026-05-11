@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mrecl — multi-class recall."""
+"""Tests for morie.fn.mrecl — multi-class recall."""
 import numpy as np
 import pytest
-from moirais.fn.mrecl import multiclass_recall, mrecl
+from morie.fn.mrecl import multiclass_recall, mrecl
 
 
 def test_perfect_macro():

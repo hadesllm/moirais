@@ -1,7 +1,7 @@
 """Tests for hmgand.geron_anomaly_gmm."""
 import numpy as np
 import pytest
-from moirais.fn.hmgand import geron_anomaly_gmm
+from morie.fn.hmgand import geron_anomaly_gmm
 
 
 def test_hmgand_basic():

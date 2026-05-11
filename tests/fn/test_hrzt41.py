@@ -1,7 +1,7 @@
 """Tests for hrzt41.horowitz_thm4_1_id_median."""
 import numpy as np
 import pytest
-from moirais.fn.hrzt41 import horowitz_thm4_1_id_median
+from morie.fn.hrzt41 import horowitz_thm4_1_id_median
 
 
 def test_hrzt41_basic():

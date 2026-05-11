@@ -1,7 +1,7 @@
 """Tests for sgmean."""
 import numpy as np
 import pytest
-from moirais.fn.sgmean import sgmean
+from morie.fn.sgmean import sgmean
 
 
 def test_sgmean_basic():
@@ -27,5 +27,5 @@ def test_sgmean_no_data():
 
 
 def test_sgmean_alias():
-    from moirais.fn.sgmean import sgmean
+    from morie.fn.sgmean import sgmean
     assert sgmean is sgmean

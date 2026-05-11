@@ -1,7 +1,7 @@
 """Tests for algnm.party_alignment."""
 import numpy as np
 import pytest
-from moirais.fn.algnm import party_alignment
+from morie.fn.algnm import party_alignment
 
 
 def test_algnm_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.svhut."""
+"""Tests for morie.fn.svhut."""
 
 import numpy as np
 import pytest
-from moirais.fn.svhut import svhut
+from morie.fn.svhut import svhut
 
 
 class TestSvhut:

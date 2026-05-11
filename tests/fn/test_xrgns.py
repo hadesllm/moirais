@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrgns -- General Nesting Spatial model"""
+"""Tests for morie.fn.xrgns -- General Nesting Spatial model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrgns import gns_ml
+from morie.fn.xrgns import gns_ml
 
 
 class TestGnsMl:

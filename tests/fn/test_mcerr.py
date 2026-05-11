@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mcerr -- MCMC standard error."""
+"""Tests for morie.fn.mcerr -- MCMC standard error."""
 
 import numpy as np
-from moirais.fn.mcerr import mcmc_se
+from morie.fn.mcerr import mcmc_se
 
 
 def test_returns_dict():

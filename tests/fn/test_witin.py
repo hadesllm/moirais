@@ -1,6 +1,6 @@
 """Test witin."""
 import pytest
-from moirais.fn.witin import witten_index
+from morie.fn.witin import witten_index
 
 
 def test_witin_basic():

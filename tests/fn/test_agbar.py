@@ -1,7 +1,7 @@
 """Test agbar."""
 import numpy as np
 import pytest
-from moirais.fn.agbar import agbar
+from morie.fn.agbar import agbar
 
 
 def test_agbar_basic():

@@ -1,7 +1,7 @@
 """Tests for rgpsdacf.rangayyan_psd_to_acf."""
 import numpy as np
 import pytest
-from moirais.fn.rgpsdacf import rangayyan_psd_to_acf
+from morie.fn.rgpsdacf import rangayyan_psd_to_acf
 
 
 def test_rgpsdacf_basic():

@@ -1,7 +1,7 @@
 """Tests for krigsv.variogram_fit."""
 import numpy as np
 import pytest
-from moirais.fn.krigsv import variogram_fit
+from morie.fn.krigsv import variogram_fit
 
 
 def test_krigsv_basic():

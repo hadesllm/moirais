@@ -1,7 +1,7 @@
 """Tests for arord.py - AR order selection."""
 import numpy as np
 import pytest
-from moirais.fn.arord import ar_order_select, arord
+from morie.fn.arord import ar_order_select, arord
 
 
 def test_ar_order_select_returns_descriptive_result():

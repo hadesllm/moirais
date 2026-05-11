@@ -1,7 +1,7 @@
 """Tests for qrF.quantile_forecast."""
 import numpy as np
 import pytest
-from moirais.fn.qrF import quantile_forecast
+from morie.fn.qrF import quantile_forecast
 
 
 def test_qrF_basic():

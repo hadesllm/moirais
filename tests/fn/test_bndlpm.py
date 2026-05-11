@@ -1,7 +1,7 @@
 """Tests for bndlpm.bound_lp_method."""
 import numpy as np
 import pytest
-from moirais.fn.bndlpm import bound_lp_method
+from morie.fn.bndlpm import bound_lp_method
 
 
 def test_bndlpm_basic():

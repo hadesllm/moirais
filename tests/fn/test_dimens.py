@@ -1,7 +1,7 @@
 """Tests for dimens.stout_dimensionality."""
 import numpy as np
 import pytest
-from moirais.fn.dimens import stout_dimensionality
+from morie.fn.dimens import stout_dimensionality
 
 
 def test_dimens_basic():

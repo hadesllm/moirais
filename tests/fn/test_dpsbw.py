@@ -1,7 +1,7 @@
 """Tests for dpsbw.stick_breaking_weights."""
 import numpy as np
 import pytest
-from moirais.fn.dpsbw import stick_breaking_weights
+from morie.fn.dpsbw import stick_breaking_weights
 
 
 def test_dpsbw_basic():

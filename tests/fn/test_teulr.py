@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.teulr — Euler characteristic."""
+"""Tests for morie.fn.teulr — Euler characteristic."""
 
 import pytest
 
-from moirais.fn.teulr import torus_euler_char
+from morie.fn.teulr import torus_euler_char
 
 
 class TestTorusEulerChar:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.sconv -- convergent validity."""
+"""Tests for morie.fn.sconv -- convergent validity."""
 
-from moirais.fn.sconv import subscale_convergent
+from morie.fn.sconv import subscale_convergent
 
 
 class TestSubscaleConvergent:

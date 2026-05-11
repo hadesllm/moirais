@@ -1,7 +1,7 @@
 """Tests for spcrs.spatial_cross_validation."""
 import numpy as np
 import pytest
-from moirais.fn.spcrs import spatial_cross_validation
+from morie.fn.spcrs import spatial_cross_validation
 
 
 def test_spcrs_basic():

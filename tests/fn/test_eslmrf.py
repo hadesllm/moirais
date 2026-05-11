@@ -1,7 +1,7 @@
 """Tests for eslmrf.esl_markov_rf."""
 import numpy as np
 import pytest
-from moirais.fn.eslmrf import esl_markov_rf
+from morie.fn.eslmrf import esl_markov_rf
 
 
 def test_eslmrf_basic():

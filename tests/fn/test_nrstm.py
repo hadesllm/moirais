@@ -1,7 +1,7 @@
 """Test nrstm."""
 import numpy as np
 import pytest
-from moirais.fn.nrstm import nrstm
+from morie.fn.nrstm import nrstm
 
 
 def test_nrstm_basic():

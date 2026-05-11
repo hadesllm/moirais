@@ -1,7 +1,7 @@
 """Tests for narm.narm."""
 import numpy as np
 import pytest
-from moirais.fn.narm import narm
+from morie.fn.narm import narm
 
 
 def test_narm_basic():

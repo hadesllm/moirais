@@ -1,7 +1,7 @@
 """Tests for hmrdt.geron_regression_tree."""
 import numpy as np
 import pytest
-from moirais.fn.hmrdt import geron_regression_tree
+from morie.fn.hmrdt import geron_regression_tree
 
 
 def test_hmrdt_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ampcl — amplitude classification."""
+"""Tests for morie.fn.ampcl — amplitude classification."""
 import numpy as np
 import pytest
 
-from moirais.fn.ampcl import amplitude_classify, ampcl
+from morie.fn.ampcl import amplitude_classify, ampcl
 
 
 def test_default_terciles():

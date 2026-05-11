@@ -1,7 +1,7 @@
 """Test curvgr."""
 import numpy as np
 import pytest
-from moirais.fn.curvgr import curvgr
+from morie.fn.curvgr import curvgr
 
 
 def test_curvgr_basic():

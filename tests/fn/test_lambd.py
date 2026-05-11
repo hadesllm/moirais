@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lambd — genomic inflation factor."""
+"""Tests for morie.fn.lambd — genomic inflation factor."""
 import numpy as np
 import pytest
-from moirais.fn.lambd import genomic_inflation
+from morie.fn.lambd import genomic_inflation
 
 
 class TestGenomicInflation:

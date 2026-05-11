@@ -1,7 +1,7 @@
 """Tests for mnlog.multinomial_logistic_penalized."""
 import numpy as np
 import pytest
-from moirais.fn.mnlog import multinomial_logistic_penalized
+from morie.fn.mnlog import multinomial_logistic_penalized
 
 
 def test_mnlog_basic():

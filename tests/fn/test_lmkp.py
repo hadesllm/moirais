@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lmkp."""
+"""Tests for morie.fn.lmkp."""
 import numpy as np
 import pytest
-from moirais.fn.lmkp import lmkp
+from morie.fn.lmkp import lmkp
 
 
 class TestLmkp:

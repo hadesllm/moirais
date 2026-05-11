@@ -1,7 +1,7 @@
 """Tests for funBoot.functional_bootstrap."""
 import numpy as np
 import pytest
-from moirais.fn.funBoot import functional_bootstrap
+from morie.fn.funBoot import functional_bootstrap
 
 
 def test_funBoot_basic():

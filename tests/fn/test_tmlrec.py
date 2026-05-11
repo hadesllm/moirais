@@ -1,7 +1,7 @@
 """Tests for tmlrec.tmle_recurrent."""
 import numpy as np
 import pytest
-from moirais.fn.tmlrec import tmle_recurrent
+from morie.fn.tmlrec import tmle_recurrent
 
 
 def test_tmlrec_basic():

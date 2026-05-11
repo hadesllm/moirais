@@ -1,7 +1,7 @@
 """Tests for hot.hot_sax."""
 import numpy as np
 import pytest
-from moirais.fn.hot import hot_sax
+from morie.fn.hot import hot_sax
 
 
 def test_hot_basic():

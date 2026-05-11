@@ -1,7 +1,7 @@
 """Tests for hmkppl.geron_kernel_pca_poly."""
 import numpy as np
 import pytest
-from moirais.fn.hmkppl import geron_kernel_pca_poly
+from morie.fn.hmkppl import geron_kernel_pca_poly
 
 
 def test_hmkppl_basic():

@@ -1,7 +1,7 @@
 """Tests for grbptt.geron_backprop_through_time."""
 import numpy as np
 import pytest
-from moirais.fn.grbptt import geron_backprop_through_time
+from morie.fn.grbptt import geron_backprop_through_time
 
 
 def test_grbptt_basic():

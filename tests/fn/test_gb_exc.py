@@ -1,7 +1,7 @@
 """Tests for gb_exc.gibbons_exceedance_stat."""
 import numpy as np
 import pytest
-from moirais.fn.gb_exc import gibbons_exceedance_stat
+from morie.fn.gb_exc import gibbons_exceedance_stat
 
 
 def test_gb_exc_basic():

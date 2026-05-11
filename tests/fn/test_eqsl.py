@@ -1,7 +1,7 @@
 """Tests for eqsl.equating_stocking_lord."""
 import numpy as np
 import pytest
-from moirais.fn.eqsl import equating_stocking_lord
+from morie.fn.eqsl import equating_stocking_lord
 
 
 def test_eqsl_basic():

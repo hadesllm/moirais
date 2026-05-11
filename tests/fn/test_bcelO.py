@@ -1,7 +1,7 @@
 """Tests for bcelO.binary_crossentropy_loss."""
 import numpy as np
 import pytest
-from moirais.fn.bcelO import binary_crossentropy_loss
+from morie.fn.bcelO import binary_crossentropy_loss
 
 
 def test_bcelO_basic():

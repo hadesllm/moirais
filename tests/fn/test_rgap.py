@@ -1,7 +1,7 @@
 """Tests for rgap.rangayyan_action_potential."""
 import numpy as np
 import pytest
-from moirais.fn.rgap import rangayyan_action_potential
+from morie.fn.rgap import rangayyan_action_potential
 
 
 def test_rgap_basic():

@@ -1,7 +1,7 @@
 """Tests for shedmd.viral_shedding_model."""
 import numpy as np
 import pytest
-from moirais.fn.shedmd import viral_shedding_model
+from morie.fn.shedmd import viral_shedding_model
 
 
 def test_shedmd_basic():

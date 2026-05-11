@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dts -- Hartigan's dip test."""
+"""Tests for morie.fn.dts -- Hartigan's dip test."""
 
 import numpy as np
 import pytest
-from moirais.fn.dts import dip_test
-from moirais.fn._containers import TestResult
+from morie.fn.dts import dip_test
+from morie.fn._containers import TestResult
 
 
 class TestDip:

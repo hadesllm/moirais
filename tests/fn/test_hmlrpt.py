@@ -1,7 +1,7 @@
 """Tests for hmlrpt.geron_linreg_pytorch."""
 import numpy as np
 import pytest
-from moirais.fn.hmlrpt import geron_linreg_pytorch
+from morie.fn.hmlrpt import geron_linreg_pytorch
 
 
 def test_hmlrpt_basic():

@@ -1,7 +1,7 @@
 """Tests for kmfew.kamath_few_shot_exemplar_selection."""
 import numpy as np
 import pytest
-from moirais.fn.kmfew import kamath_few_shot_exemplar_selection
+from morie.fn.kmfew import kamath_few_shot_exemplar_selection
 
 
 def test_kmfew_basic():

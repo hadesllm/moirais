@@ -1,7 +1,7 @@
 """Test trair."""
 import numpy as np
 import pytest
-from moirais.fn.trair import trair
+from morie.fn.trair import trair
 
 
 def test_trair_basic():

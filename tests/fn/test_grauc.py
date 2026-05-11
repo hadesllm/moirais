@@ -1,7 +1,7 @@
 """Tests for grauc.geron_auc_roc."""
 import numpy as np
 import pytest
-from moirais.fn.grauc import geron_auc_roc
+from morie.fn.grauc import geron_auc_roc
 
 
 def test_grauc_basic():

@@ -1,7 +1,7 @@
 """Tests for slbpdg.slice_break_dp."""
 import numpy as np
 import pytest
-from moirais.fn.slbpdg import slice_break_dp
+from morie.fn.slbpdg import slice_break_dp
 
 
 def test_slbpdg_basic():

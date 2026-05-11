@@ -1,7 +1,7 @@
 """Tests for rng022.rangayyan_ch3_correlation_coefficient."""
 import numpy as np
 import pytest
-from moirais.fn.rng022 import rangayyan_ch3_correlation_coefficient
+from morie.fn.rng022 import rangayyan_ch3_correlation_coefficient
 
 
 def test_rng022_basic():

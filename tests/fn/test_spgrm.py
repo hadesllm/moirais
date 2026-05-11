@@ -1,7 +1,7 @@
 """Tests for spgrm.py - spectrogram."""
 import numpy as np
 import pytest
-from moirais.fn.spgrm import spectrogram_fn, spgrm
+from morie.fn.spgrm import spectrogram_fn, spgrm
 
 
 def test_spectrogram_returns_descriptive_result():

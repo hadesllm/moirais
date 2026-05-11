@@ -1,7 +1,7 @@
 """Tests for pspln.penalized_spline."""
 import numpy as np
 import pytest
-from moirais.fn.pspln import penalized_spline
+from morie.fn.pspln import penalized_spline
 
 
 def test_pspln_basic():

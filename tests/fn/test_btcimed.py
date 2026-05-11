@@ -1,7 +1,7 @@
 """Tests for btcimed.boot_ci_median."""
 import numpy as np
 import pytest
-from moirais.fn.btcimed import boot_ci_median
+from morie.fn.btcimed import boot_ci_median
 
 
 def test_btcimed_basic():

@@ -1,7 +1,7 @@
 """Tests for grbvd.geron_bias_variance_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.grbvd import geron_bias_variance_decomposition
+from morie.fn.grbvd import geron_bias_variance_decomposition
 
 
 def test_grbvd_basic():

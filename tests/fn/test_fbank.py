@@ -1,6 +1,6 @@
 """Tests for fbank.py - Filter bank design."""
 import numpy as np
-from moirais.fn.fbank import filter_bank_design, fbank
+from morie.fn.fbank import filter_bank_design, fbank
 
 
 def test_fbank_returns_descriptive_result():

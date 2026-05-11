@@ -1,7 +1,7 @@
 """Tests for olsnm.ols_normal_equations."""
 import numpy as np
 import pytest
-from moirais.fn.olsnm import ols_normal_equations
+from morie.fn.olsnm import ols_normal_equations
 
 
 def test_olsnm_basic():

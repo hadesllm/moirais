@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.epi_c -- epidemic curve."""
+"""Tests for morie.fn.epi_c -- epidemic curve."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.epi_c import epidemic_curve
+from morie.fn.epi_c import epidemic_curve
 
 
 class TestEpiCurve:

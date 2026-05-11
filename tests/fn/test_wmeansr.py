@@ -1,7 +1,7 @@
 """Tests for wmeansr.weighted_mean_survey."""
 import numpy as np
 import pytest
-from moirais.fn.wmeansr import weighted_mean_survey
+from morie.fn.wmeansr import weighted_mean_survey
 
 
 def test_wmeansr_basic():

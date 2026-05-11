@@ -1,7 +1,7 @@
 """Tests for rgemgpk.rangayyan_emg_peak_freq."""
 import numpy as np
 import pytest
-from moirais.fn.rgemgpk import rangayyan_emg_peak_freq
+from morie.fn.rgemgpk import rangayyan_emg_peak_freq
 
 
 def test_rgemgpk_basic():

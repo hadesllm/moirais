@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.lufac."""
+"""Tests for morie.fn.lufac."""
 import numpy as np
-from moirais.fn.lufac import lu_factorize
+from morie.fn.lufac import lu_factorize
 
 
 def test_lufac_smoke():
@@ -12,7 +12,7 @@ def test_lufac_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.lufac import cheatsheet
+    from morie.fn.lufac import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Test wqtmp."""
 import numpy as np
 import pytest
-from moirais.fn.wqtmp import wqtmp
+from morie.fn.wqtmp import wqtmp
 
 
 def test_wqtmp_basic():

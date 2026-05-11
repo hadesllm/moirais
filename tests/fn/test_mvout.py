@@ -1,6 +1,6 @@
 """Tests for multivariate_outlier."""
 import numpy as np, pytest
-from moirais.fn.mvout import multivariate_outlier
+from morie.fn.mvout import multivariate_outlier
 
 
 class TestMultivariateOutlier:

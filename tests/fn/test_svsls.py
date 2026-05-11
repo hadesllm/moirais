@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svsls -- Issue salience weighted model"""
+"""Tests for morie.fn.svsls -- Issue salience weighted model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svsls import salience_model
+from morie.fn.svsls import salience_model
 
 
 class TestSalienceModel:

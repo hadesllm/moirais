@@ -1,7 +1,7 @@
 """Test opazt."""
 import numpy as np
 import pytest
-from moirais.fn.opazt import opazt
+from morie.fn.opazt import opazt
 
 
 def test_opazt_basic():

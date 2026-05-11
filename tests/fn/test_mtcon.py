@@ -1,7 +1,7 @@
 """Test mtcon."""
 import numpy as np
 import pytest
-from moirais.fn.mtcon import mtcon
+from morie.fn.mtcon import mtcon
 
 
 def test_mtcon_basic():

@@ -1,7 +1,7 @@
 """Test sterea."""
 import numpy as np
 import pytest
-from moirais.fn.sterea import sterea
+from morie.fn.sterea import sterea
 
 
 def test_sterea_basic():

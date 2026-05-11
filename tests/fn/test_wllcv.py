@@ -1,7 +1,7 @@
 """Test wllcv."""
 import numpy as np
 import pytest
-from moirais.fn.wllcv import wllcv
+from morie.fn.wllcv import wllcv
 
 
 def test_wllcv_basic():

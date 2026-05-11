@@ -1,6 +1,6 @@
 """Test cntrl."""
 import pytest
-from moirais.fn.cntrl import central_charge
+from morie.fn.cntrl import central_charge
 
 
 def test_cntrl_bosonic():

@@ -1,7 +1,7 @@
 """Test gdswg."""
 import numpy as np
 import pytest
-from moirais.fn.gdswg import gdswg
+from morie.fn.gdswg import gdswg
 
 
 def test_gdswg_basic():

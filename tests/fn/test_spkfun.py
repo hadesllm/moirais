@@ -1,7 +1,7 @@
 """Tests for spkfun.schabenberger_k_function."""
 import numpy as np
 import pytest
-from moirais.fn.spkfun import schabenberger_k_function
+from morie.fn.spkfun import schabenberger_k_function
 
 
 def test_spkfun_basic():

@@ -1,7 +1,7 @@
 """Test wqpo4."""
 import numpy as np
 import pytest
-from moirais.fn.wqpo4 import wqpo4
+from morie.fn.wqpo4 import wqpo4
 
 
 def test_wqpo4_basic():

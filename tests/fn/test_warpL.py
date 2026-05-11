@@ -1,7 +1,7 @@
 """Tests for warpL.warp."""
 import numpy as np
 import pytest
-from moirais.fn.warpL import warp
+from morie.fn.warpL import warp
 
 
 def test_warpL_basic():

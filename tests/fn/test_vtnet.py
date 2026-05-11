@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vtnet."""
+"""Tests for morie.fn.vtnet."""
 
 import numpy as np
 import pytest
-from moirais.fn.vtnet import vtnet
+from morie.fn.vtnet import vtnet
 
 
 class TestVtnet:

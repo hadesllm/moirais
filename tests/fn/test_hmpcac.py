@@ -1,7 +1,7 @@
 """Tests for hmpcac.geron_principal_components."""
 import numpy as np
 import pytest
-from moirais.fn.hmpcac import geron_principal_components
+from morie.fn.hmpcac import geron_principal_components
 
 
 def test_hmpcac_basic():

@@ -1,7 +1,7 @@
 """Tests for gpexp."""
 import numpy as np
 import pytest
-from moirais.fn.gpexp import gpexp
+from morie.fn.gpexp import gpexp
 
 
 def test_gpexp_basic():
@@ -27,5 +27,5 @@ def test_gpexp_no_data():
 
 
 def test_gpexp_alias():
-    from moirais.fn.gpexp import gpexp
+    from morie.fn.gpexp import gpexp
     assert gpexp is gpexp

@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.pliv — Partially Linear IV / 2SLS LATE estimator."""
+"""Tests for morie.fn.pliv — Partially Linear IV / 2SLS LATE estimator."""
 
 import math
 
@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.pliv import estimate_pliv
+from morie.fn.pliv import estimate_pliv
 
 
 @pytest.fixture()

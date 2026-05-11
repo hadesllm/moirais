@@ -1,7 +1,7 @@
 """Tests for ldprun.ld_pruning."""
 import numpy as np
 import pytest
-from moirais.fn.ldprun import ld_pruning
+from morie.fn.ldprun import ld_pruning
 
 
 def test_ldprun_basic():

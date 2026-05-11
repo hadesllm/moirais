@@ -1,7 +1,7 @@
 """Test gdpvt."""
 import numpy as np
 import pytest
-from moirais.fn.gdpvt import gdpvt
+from morie.fn.gdpvt import gdpvt
 
 
 def test_gdpvt_basic():

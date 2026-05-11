@@ -1,7 +1,7 @@
 """Tests for irtprc.partial_credit."""
 import numpy as np
 import pytest
-from moirais.fn.irtprc import partial_credit
+from morie.fn.irtprc import partial_credit
 
 
 def test_irtprc_basic():

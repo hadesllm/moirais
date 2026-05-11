@@ -1,7 +1,7 @@
 """Tests for btpair.boot_pairs_regression."""
 import numpy as np
 import pytest
-from moirais.fn.btpair import boot_pairs_regression
+from morie.fn.btpair import boot_pairs_regression
 
 
 def test_btpair_basic():

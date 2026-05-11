@@ -1,7 +1,7 @@
 """Tests for rng026.rangayyan_ch3_dirac_delta_limit_form."""
 import numpy as np
 import pytest
-from moirais.fn.rng026 import rangayyan_ch3_dirac_delta_limit_form
+from morie.fn.rng026 import rangayyan_ch3_dirac_delta_limit_form
 
 
 def test_rng026_basic():

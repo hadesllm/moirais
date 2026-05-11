@@ -1,7 +1,7 @@
 """Test soec."""
 import numpy as np
 import pytest
-from moirais.fn.soec import soec
+from morie.fn.soec import soec
 
 
 def test_soec_basic():

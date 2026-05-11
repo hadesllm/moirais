@@ -1,7 +1,7 @@
 """Tests for gb_mci.gibbons_mcnemar_ci."""
 import numpy as np
 import pytest
-from moirais.fn.gb_mci import gibbons_mcnemar_ci
+from morie.fn.gb_mci import gibbons_mcnemar_ci
 
 
 def test_gb_mci_basic():

@@ -1,7 +1,7 @@
 """Tests for rnfocl."""
 import numpy as np
 import pytest
-from moirais.fn.rnfocl import rnfocl
+from morie.fn.rnfocl import rnfocl
 
 
 def test_rnfocl_basic():
@@ -27,5 +27,5 @@ def test_rnfocl_no_data():
 
 
 def test_rnfocl_alias():
-    from moirais.fn.rnfocl import rnfocl
+    from morie.fn.rnfocl import rnfocl
     assert rnfocl is rnfocl

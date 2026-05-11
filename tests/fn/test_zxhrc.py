@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxhrc -- Hierarchical spatial (crossed)"""
+"""Tests for morie.fn.zxhrc -- Hierarchical spatial (crossed)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxhrc import hier_spatial_cross
+from morie.fn.zxhrc import hier_spatial_cross
 
 
 class TestHierSpatialCross:

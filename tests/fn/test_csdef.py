@@ -1,7 +1,7 @@
 """Test csdef."""
 import numpy as np
 import pytest
-from moirais.fn.csdef import csdef
+from morie.fn.csdef import csdef
 
 
 def test_csdef_basic():

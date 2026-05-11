@@ -1,7 +1,7 @@
 """Test csp_filter (cspfn)."""
 import numpy as np
-from moirais.fn.cspfn import csp_filter, cspfn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cspfn import csp_filter, cspfn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCspfn:

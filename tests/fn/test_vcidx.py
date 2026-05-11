@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vcidx — VC index / VC dimension computation."""
+"""Tests for morie.fn.vcidx — VC index / VC dimension computation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vcidx import vcidx, VCIndexResult
+from morie.fn.vcidx import vcidx, VCIndexResult
 
 
 def test_returns_result_type():

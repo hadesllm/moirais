@@ -1,7 +1,7 @@
 """Tests for tmlcou.tmle_count_outcome."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcou import tmle_count_outcome
+from morie.fn.tmlcou import tmle_count_outcome
 
 
 def test_tmlcou_basic():

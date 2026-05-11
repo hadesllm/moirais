@@ -1,7 +1,7 @@
 """Tests for rgapn.rangayyan_approximate_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.rgapn import rangayyan_approximate_entropy
+from morie.fn.rgapn import rangayyan_approximate_entropy
 
 
 def test_rgapn_basic():

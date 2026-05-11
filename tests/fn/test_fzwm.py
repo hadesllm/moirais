@@ -1,7 +1,7 @@
 """Tests for fzwm.fauzi_wilcoxon_moments."""
 import numpy as np
 import pytest
-from moirais.fn.fzwm import fauzi_wilcoxon_moments
+from morie.fn.fzwm import fauzi_wilcoxon_moments
 
 
 def test_fzwm_basic():

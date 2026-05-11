@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itdif — item difficulty."""
+"""Tests for morie.fn.itdif — item difficulty."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.itdif import item_difficulty
+from morie.fn.itdif import item_difficulty
 
 
 class TestItemDifficulty:

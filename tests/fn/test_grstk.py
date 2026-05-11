@@ -1,7 +1,7 @@
 """Tests for grstk.geron_stacking_predictor."""
 import numpy as np
 import pytest
-from moirais.fn.grstk import geron_stacking_predictor
+from morie.fn.grstk import geron_stacking_predictor
 
 
 def test_grstk_basic():

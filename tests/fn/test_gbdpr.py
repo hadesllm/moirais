@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gbdpr -- GBD projection."""
+"""Tests for morie.fn.gbdpr -- GBD projection."""
 
 import pytest
-from moirais.fn.gbdpr import gbd_projection
+from morie.fn.gbdpr import gbd_projection
 
 
 class TestGBDProjection:

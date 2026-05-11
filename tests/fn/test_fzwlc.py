@@ -1,7 +1,7 @@
 """Tests for fzwlc.fauzi_smoothed_wilcoxon."""
 import numpy as np
 import pytest
-from moirais.fn.fzwlc import fauzi_smoothed_wilcoxon
+from morie.fn.fzwlc import fauzi_smoothed_wilcoxon
 
 
 def test_fzwlc_basic():

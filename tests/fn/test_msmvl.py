@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.msmvl -- elastic deformation field."""
+"""Tests for morie.fn.msmvl -- elastic deformation field."""
 
-from moirais.fn.msmvl import elastic_deformation, msmvl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.msmvl import elastic_deformation, msmvl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMsmvl:

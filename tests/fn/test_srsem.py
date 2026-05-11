@@ -1,7 +1,7 @@
 """Test srsem."""
 import numpy as np
 import pytest
-from moirais.fn.srsem import srsem
+from morie.fn.srsem import srsem
 
 
 def test_srsem_basic():

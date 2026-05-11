@@ -1,7 +1,7 @@
 """Tests for hmclsn.geron_classification_mlp."""
 import numpy as np
 import pytest
-from moirais.fn.hmclsn import geron_classification_mlp
+from morie.fn.hmclsn import geron_classification_mlp
 
 
 def test_hmclsn_basic():

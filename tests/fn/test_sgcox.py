@@ -1,6 +1,6 @@
 """Tests for Cox process."""
 import numpy as np
-from moirais.fn.sgcox import sgcox
+from morie.fn.sgcox import sgcox
 
 
 def test_sgcox_smoke():
@@ -13,7 +13,7 @@ def test_sgcox_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgcox import cheatsheet
+    from morie.fn.sgcox import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

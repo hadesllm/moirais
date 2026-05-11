@@ -1,7 +1,7 @@
 """Tests for bdtrns.bound_transport."""
 import numpy as np
 import pytest
-from moirais.fn.bdtrns import bound_transport
+from morie.fn.bdtrns import bound_transport
 
 
 def test_bdtrns_basic():

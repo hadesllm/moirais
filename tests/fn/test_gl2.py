@@ -1,5 +1,5 @@
 """Tests for gl2 — Guttman Lambda 2."""
-from moirais.fn.gl2 import gl2
+from morie.fn.gl2 import gl2
 
 def test_gl2_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -8,7 +8,7 @@ def test_gl2_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.gl2 import cheatsheet
+    from morie.fn.gl2 import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

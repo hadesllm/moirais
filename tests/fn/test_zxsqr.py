@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsqr -- Spatial quantile regression"""
+"""Tests for morie.fn.zxsqr -- Spatial quantile regression"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsqr import spatial_quantile
+from morie.fn.zxsqr import spatial_quantile
 
 
 class TestSpatialQuantile:

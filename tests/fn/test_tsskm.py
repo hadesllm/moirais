@@ -1,7 +1,7 @@
 """Test tsskm."""
 import numpy as np
 import pytest
-from moirais.fn.tsskm import tsskm
+from morie.fn.tsskm import tsskm
 
 
 def test_tsskm_basic():

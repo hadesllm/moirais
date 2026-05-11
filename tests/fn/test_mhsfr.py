@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhsfr -- SF-12 mental component."""
+"""Tests for morie.fn.mhsfr -- SF-12 mental component."""
 
 import pytest
-from moirais.fn.mhsfr import sf12_mental
+from morie.fn.mhsfr import sf12_mental
 
 
 class TestSF12Mental:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pawgt."""
+"""Tests for morie.fn.pawgt."""
 
 import numpy as np
 import pytest
-from moirais.fn.pawgt import pawgt
+from morie.fn.pawgt import pawgt
 
 
 class TestPawgt:

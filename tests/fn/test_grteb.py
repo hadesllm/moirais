@@ -1,7 +1,7 @@
 """Tests for grteb.geron_transformer_encoder_block."""
 import numpy as np
 import pytest
-from moirais.fn.grteb import geron_transformer_encoder_block
+from morie.fn.grteb import geron_transformer_encoder_block
 
 
 def test_grteb_basic():

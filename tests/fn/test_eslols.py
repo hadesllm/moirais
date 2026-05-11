@@ -1,7 +1,7 @@
 """Tests for eslols.esl_ols_normal_equations."""
 import numpy as np
 import pytest
-from moirais.fn.eslols import esl_ols_normal_equations
+from morie.fn.eslols import esl_ols_normal_equations
 
 
 def test_eslols_basic():

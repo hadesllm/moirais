@@ -1,7 +1,7 @@
 """Tests for advinf.advi."""
 import numpy as np
 import pytest
-from moirais.fn.advinf import advi
+from morie.fn.advinf import advi
 
 
 def test_advinf_basic():

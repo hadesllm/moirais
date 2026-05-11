@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.siurgn — SIU by region."""
+"""Tests for morie.fn.siurgn — SIU by region."""
 
 import pytest
 import pandas as pd
-from moirais.fn.siurgn import siu_by_region
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.siurgn import siu_by_region
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSiuByRegion:

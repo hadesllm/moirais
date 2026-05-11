@@ -1,7 +1,7 @@
 """Tests for prsPEG.peg_parser."""
 import numpy as np
 import pytest
-from moirais.fn.prsPEG import peg_parser
+from morie.fn.prsPEG import peg_parser
 
 
 def test_prsPEG_basic():

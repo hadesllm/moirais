@@ -1,7 +1,7 @@
 """Tests for hrzdcrc.horowitz_deconv_rate."""
 import numpy as np
 import pytest
-from moirais.fn.hrzdcrc import horowitz_deconv_rate
+from morie.fn.hrzdcrc import horowitz_deconv_rate
 
 
 def test_hrzdcrc_basic():

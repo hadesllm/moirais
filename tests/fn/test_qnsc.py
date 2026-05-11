@@ -1,7 +1,7 @@
 """Tests for qnsc.qn_scale."""
 import numpy as np
 import pytest
-from moirais.fn.qnsc import qn_scale
+from morie.fn.qnsc import qn_scale
 
 
 def test_qnsc_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgmsp -- Kriging MSPE"""
+"""Tests for morie.fn.kgmsp -- Kriging MSPE"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgmsp import kriging_mspe
+from morie.fn.kgmsp import kriging_mspe
 
 
 class TestKrigingMspe:

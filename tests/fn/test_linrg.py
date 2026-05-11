@@ -1,7 +1,7 @@
 """Tests for linrg.linear_regression_ols."""
 import numpy as np
 import pytest
-from moirais.fn.linrg import linear_regression_ols
+from morie.fn.linrg import linear_regression_ols
 
 
 def test_linrg_basic():

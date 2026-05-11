@@ -1,7 +1,7 @@
 """Tests for btlrt.boot_lr_test."""
 import numpy as np
 import pytest
-from moirais.fn.btlrt import boot_lr_test
+from morie.fn.btlrt import boot_lr_test
 
 
 def test_btlrt_basic():

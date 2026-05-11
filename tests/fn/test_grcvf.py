@@ -1,7 +1,7 @@
 """Tests for grcvf.geron_conv2d_forward."""
 import numpy as np
 import pytest
-from moirais.fn.grcvf import geron_conv2d_forward
+from morie.fn.grcvf import geron_conv2d_forward
 
 
 def test_grcvf_basic():

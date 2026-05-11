@@ -1,7 +1,7 @@
 """Test csprs."""
 import numpy as np
 import pytest
-from moirais.fn.csprs import csprs
+from morie.fn.csprs import csprs
 
 
 def test_csprs_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsmci -- Monte Carlo spatial integration"""
+"""Tests for morie.fn.zsmci -- Monte Carlo spatial integration"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsmci import mc_spatial_int
+from morie.fn.zsmci import mc_spatial_int
 
 
 class TestMcSpatialInt:

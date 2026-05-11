@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.naest -- Nelson-Aalen cumulative hazard."""
+"""Tests for morie.fn.naest -- Nelson-Aalen cumulative hazard."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.naest import naest
+from morie.fn.naest import naest
 
 
 @pytest.fixture()
@@ -42,5 +42,5 @@ def test_empty_raises():
 
 
 def test_cheatsheet():
-    from moirais.fn.naest import cheatsheet
+    from morie.fn.naest import cheatsheet
     assert "nelson" in cheatsheet().lower()

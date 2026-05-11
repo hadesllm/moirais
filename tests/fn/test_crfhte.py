@@ -1,7 +1,7 @@
 """Tests for crfhte.causal_forest_hte_test."""
 import numpy as np
 import pytest
-from moirais.fn.crfhte import causal_forest_hte_test
+from morie.fn.crfhte import causal_forest_hte_test
 
 
 def test_crfhte_basic():

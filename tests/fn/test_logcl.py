@@ -1,7 +1,7 @@
 """Tests for logcl.py - Logistic classifier."""
 import numpy as np
 import pytest
-from moirais.fn.logcl import logcl_fn, logcl
+from morie.fn.logcl import logcl_fn, logcl
 
 
 def _separable_data():

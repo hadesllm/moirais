@@ -1,7 +1,7 @@
 """Test abend."""
 import numpy as np
 import pytest
-from moirais.fn.abend import abend
+from morie.fn.abend import abend
 
 
 def test_abend_basic():

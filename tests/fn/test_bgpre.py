@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bgpre -- Bayesian GP regression."""
+"""Tests for morie.fn.bgpre -- Bayesian GP regression."""
 
 import numpy as np
-from moirais.fn.bgpre import bayesian_gp_regression
+from morie.fn.bgpre import bayesian_gp_regression
 
 
 def test_returns_dict():

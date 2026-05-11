@@ -1,7 +1,7 @@
 """Test sawsp."""
 import numpy as np
 import pytest
-from moirais.fn.sawsp import sawsp
+from morie.fn.sawsp import sawsp
 
 
 def test_sawsp_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.brcc — Bayesian reliable change index."""
+"""Tests for morie.fn.brcc — Bayesian reliable change index."""
 
 import numpy as np
 import pytest
-from moirais.fn.brcc import bayesian_rci
+from morie.fn.brcc import bayesian_rci
 
 
 class TestBayesianRci:

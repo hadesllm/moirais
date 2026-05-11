@@ -1,7 +1,7 @@
 """Tests for tsallen.tsallis_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.tsallen import tsallis_entropy
+from morie.fn.tsallen import tsallis_entropy
 
 
 def test_tsallen_basic():

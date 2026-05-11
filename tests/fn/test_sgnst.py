@@ -1,6 +1,6 @@
 """Tests for nested variogram."""
 import numpy as np
-from moirais.fn.sgnst import sgnst
+from morie.fn.sgnst import sgnst
 
 
 def test_sgnst_smoke():
@@ -16,7 +16,7 @@ def test_sgnst_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgnst import cheatsheet
+    from morie.fn.sgnst import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

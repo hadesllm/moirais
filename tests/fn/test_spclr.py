@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.spclr -- Spectral clustering."""
+"""Tests for morie.fn.spclr -- Spectral clustering."""
 
 import numpy as np
-from moirais.fn.spclr import spectral_clustering, spclr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.spclr import spectral_clustering, spclr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSpectralClustering:

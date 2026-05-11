@@ -1,7 +1,7 @@
 """Test afwtld."""
 import numpy as np
 import pytest
-from moirais.fn.afwtld import afwtld
+from morie.fn.afwtld import afwtld
 
 
 def test_afwtld_basic():

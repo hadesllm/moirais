@@ -1,7 +1,7 @@
 """Test ghbuf."""
 import numpy as np
 import pytest
-from moirais.fn.ghbuf import ghbuf
+from morie.fn.ghbuf import ghbuf
 
 
 def test_ghbuf_basic():

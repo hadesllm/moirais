@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.clvr — clever covariate."""
+"""Tests for morie.fn.clvr — clever covariate."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.clvr import clvr
+from morie.fn.clvr import clvr
 
 
 def test_basic_output():

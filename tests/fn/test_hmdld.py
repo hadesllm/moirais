@@ -1,7 +1,7 @@
 """Tests for hmdld.geron_dataloader."""
 import numpy as np
 import pytest
-from moirais.fn.hmdld import geron_dataloader
+from morie.fn.hmdld import geron_dataloader
 
 
 def test_hmdld_basic():

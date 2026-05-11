@@ -1,7 +1,7 @@
 """Tests for gb_kws.gibbons_kw_chi2_approx."""
 import numpy as np
 import pytest
-from moirais.fn.gb_kws import gibbons_kw_chi2_approx
+from morie.fn.gb_kws import gibbons_kw_chi2_approx
 
 
 def test_gb_kws_basic():

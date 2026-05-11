@@ -1,7 +1,7 @@
 """Test learning_curve_bio (lrcvb)."""
 import numpy as np
-from moirais.fn.lrcvb import learning_curve_bio, lrcvb
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lrcvb import learning_curve_bio, lrcvb
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLrcvb:

@@ -1,7 +1,7 @@
 """Tests for use_r2u232.use_r_chapter_2_unnumbered_232."""
 import numpy as np
 import pytest
-from moirais.fn.use_r2u232 import use_r_chapter_2_unnumbered_232
+from morie.fn.use_r2u232 import use_r_chapter_2_unnumbered_232
 
 
 def test_use_r2u232_basic():

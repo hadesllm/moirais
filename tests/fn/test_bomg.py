@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bomg — Bayesian McDonald's omega."""
+"""Tests for morie.fn.bomg — Bayesian McDonald's omega."""
 
 import numpy as np
 import pytest
-from moirais.fn.bomg import bayesian_omega
+from morie.fn.bomg import bayesian_omega
 
 
 class TestBayesianOmega:

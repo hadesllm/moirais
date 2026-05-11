@@ -1,7 +1,7 @@
 """Tests for eslcvr.esl_cv_score."""
 import numpy as np
 import pytest
-from moirais.fn.eslcvr import esl_cv_score
+from morie.fn.eslcvr import esl_cv_score
 
 
 def test_eslcvr_basic():

@@ -1,7 +1,7 @@
 """Tests for spcext."""
 import numpy as np
 import pytest
-from moirais.fn.spcext import spcext
+from morie.fn.spcext import spcext
 
 
 def test_spcext_basic():
@@ -27,5 +27,5 @@ def test_spcext_no_data():
 
 
 def test_spcext_alias():
-    from moirais.fn.spcext import spcext
+    from morie.fn.spcext import spcext
     assert spcext is spcext

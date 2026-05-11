@@ -1,7 +1,7 @@
 """Tests for chopit.chopit_vignette."""
 import numpy as np
 import pytest
-from moirais.fn.chopit import chopit_vignette
+from morie.fn.chopit import chopit_vignette
 
 
 def test_chopit_basic():

@@ -1,7 +1,7 @@
 """Tests for rgcomb.rangayyan_comb_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rgcomb import rangayyan_comb_filter
+from morie.fn.rgcomb import rangayyan_comb_filter
 
 
 def test_rgcomb_basic():

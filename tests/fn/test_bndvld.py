@@ -1,7 +1,7 @@
 """Tests for bndvld.bound_validity_check."""
 import numpy as np
 import pytest
-from moirais.fn.bndvld import bound_validity_check
+from morie.fn.bndvld import bound_validity_check
 
 
 def test_bndvld_basic():

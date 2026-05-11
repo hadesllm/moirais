@@ -1,7 +1,7 @@
 """Tests for hrztfap.horowitz_T_F_asymp_props."""
 import numpy as np
 import pytest
-from moirais.fn.hrztfap import horowitz_T_F_asymp_props
+from morie.fn.hrztfap import horowitz_T_F_asymp_props
 
 
 def test_hrztfap_basic():

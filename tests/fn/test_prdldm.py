@@ -1,7 +1,7 @@
 """Tests for prdldm.prox_method."""
 import numpy as np
 import pytest
-from moirais.fn.prdldm import prox_method
+from morie.fn.prdldm import prox_method
 
 
 def test_prdldm_basic():

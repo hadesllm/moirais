@@ -1,7 +1,7 @@
 """Test merctr."""
 import numpy as np
 import pytest
-from moirais.fn.merctr import merctr
+from morie.fn.merctr import merctr
 
 
 def test_merctr_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pchsq — chi-squared CDF."""
+"""Tests for morie.fn.pchsq — chi-squared CDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pchsq import pchisq
+from morie.fn.pchsq import pchisq
 
 
 class TestPchisq:

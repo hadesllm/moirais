@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.otd — OTIS descriptive statistics."""
+"""Tests for morie.fn.otd — OTIS descriptive statistics."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.otd import otdesc as otd
+from morie.fn.otd import otdesc as otd
 
 
 @pytest.fixture()

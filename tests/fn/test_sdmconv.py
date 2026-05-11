@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sdmconv."""
+"""Tests for morie.fn.sdmconv."""
 import numpy as np
 import pytest
-from moirais.fn.sdmconv import sdmconv
+from morie.fn.sdmconv import sdmconv
 
 
 class TestSdmconv:

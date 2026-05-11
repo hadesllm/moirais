@@ -1,7 +1,7 @@
 """Tests for gb_mw2.gibbons_mw_rs_equiv."""
 import numpy as np
 import pytest
-from moirais.fn.gb_mw2 import gibbons_mw_rs_equiv
+from morie.fn.gb_mw2 import gibbons_mw_rs_equiv
 
 
 def test_gb_mw2_basic():

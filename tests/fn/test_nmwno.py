@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmwno -- W-NOMINATE estimation"""
+"""Tests for morie.fn.nmwno -- W-NOMINATE estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmwno import wnominate
+from morie.fn.nmwno import wnominate
 
 
 class TestWnominate:

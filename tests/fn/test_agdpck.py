@@ -1,7 +1,7 @@
 """Tests for agdpck.alphazero_data_pickle."""
 import numpy as np
 import pytest
-from moirais.fn.agdpck import alphazero_data_pickle
+from morie.fn.agdpck import alphazero_data_pickle
 
 
 def test_agdpck_basic():

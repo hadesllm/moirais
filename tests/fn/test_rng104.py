@@ -1,7 +1,7 @@
 """Tests for rng104.rangayyan_ch3_fourier_of_integral."""
 import numpy as np
 import pytest
-from moirais.fn.rng104 import rangayyan_ch3_fourier_of_integral
+from morie.fn.rng104 import rangayyan_ch3_fourier_of_integral
 
 
 def test_rng104_basic():

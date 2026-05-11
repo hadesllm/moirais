@@ -1,7 +1,7 @@
 """Test fir_design (firds)."""
 import numpy as np
-from moirais.fn.firds import fir_design, firds
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.firds import fir_design, firds
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFirDesign:

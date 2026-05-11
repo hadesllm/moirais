@@ -1,7 +1,7 @@
 """Test gdctz."""
 import numpy as np
 import pytest
-from moirais.fn.gdctz import gdctz
+from morie.fn.gdctz import gdctz
 
 
 def test_gdctz_basic():

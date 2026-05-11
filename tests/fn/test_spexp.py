@@ -1,7 +1,7 @@
 """Tests for spexp.schabenberger_exponential_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.spexp import schabenberger_exponential_variogram
+from morie.fn.spexp import schabenberger_exponential_variogram
 
 
 def test_spexp_basic():

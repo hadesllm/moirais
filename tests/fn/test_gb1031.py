@@ -1,7 +1,7 @@
 """Tests for gb1031.gibbons_k_ctrl_median."""
 import numpy as np
 import pytest
-from moirais.fn.gb1031 import gibbons_k_ctrl_median
+from morie.fn.gb1031 import gibbons_k_ctrl_median
 
 
 def test_gb1031_basic():

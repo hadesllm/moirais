@@ -1,7 +1,7 @@
 """Tests for alfipa.alphafold_invariant_point."""
 import numpy as np
 import pytest
-from moirais.fn.alfipa import alphafold_invariant_point
+from morie.fn.alfipa import alphafold_invariant_point
 
 
 def test_alfipa_basic():

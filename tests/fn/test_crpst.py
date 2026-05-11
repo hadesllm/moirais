@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.crpst import chinese_restaurant_process
+from morie.fn.crpst import chinese_restaurant_process
 
 
 def test_crpst_basic():

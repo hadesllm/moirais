@@ -1,7 +1,7 @@
 """Tests for iccC.icc_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.iccC import icc_consistency
+from morie.fn.iccC import icc_consistency
 
 
 def test_iccC_basic():

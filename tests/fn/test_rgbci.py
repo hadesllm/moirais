@@ -1,7 +1,7 @@
 """Tests for rgbci.rangayyan_bci_nmf."""
 import numpy as np
 import pytest
-from moirais.fn.rgbci import rangayyan_bci_nmf
+from morie.fn.rgbci import rangayyan_bci_nmf
 
 
 def test_rgbci_basic():

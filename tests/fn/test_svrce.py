@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svrce -- Roll call classification error"""
+"""Tests for morie.fn.svrce -- Roll call classification error"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svrce import roll_call_error
+from morie.fn.svrce import roll_call_error
 
 
 class TestRollCallError:

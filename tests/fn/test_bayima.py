@@ -1,7 +1,7 @@
 """Tests for bayima.importance_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.bayima import importance_sampling
+from morie.fn.bayima import importance_sampling
 
 
 def test_bayima_basic():

@@ -1,7 +1,7 @@
 """Tests for wsmlrt.wasserman_lrt."""
 import numpy as np
 import pytest
-from moirais.fn.wsmlrt import wasserman_lrt
+from morie.fn.wsmlrt import wasserman_lrt
 
 
 def test_wsmlrt_basic():

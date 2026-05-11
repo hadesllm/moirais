@@ -1,7 +1,7 @@
 """Tests for cvxind.boyd_indicator."""
 import numpy as np
 import pytest
-from moirais.fn.cvxind import boyd_indicator
+from morie.fn.cvxind import boyd_indicator
 
 
 def test_cvxind_basic():

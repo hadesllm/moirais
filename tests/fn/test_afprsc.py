@@ -1,7 +1,7 @@
 """Test afprsc."""
 import numpy as np
 import pytest
-from moirais.fn.afprsc import afprsc
+from morie.fn.afprsc import afprsc
 
 
 def test_afprsc_basic():

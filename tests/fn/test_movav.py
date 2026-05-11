@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.movav import moving_average, movav
-from moirais.fn._containers import SignalResult
+from morie.fn.movav import moving_average, movav
+from morie.fn._containers import SignalResult
 
 
 class TestMovingAverage:

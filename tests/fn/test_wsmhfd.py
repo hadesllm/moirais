@@ -1,7 +1,7 @@
 """Tests for wsmhfd.wasserman_hoeffding."""
 import numpy as np
 import pytest
-from moirais.fn.wsmhfd import wasserman_hoeffding
+from morie.fn.wsmhfd import wasserman_hoeffding
 
 
 def test_wsmhfd_basic():

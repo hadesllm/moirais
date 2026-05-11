@@ -1,7 +1,7 @@
 """Tests for ccdsgn.case_control."""
 import numpy as np
 import pytest
-from moirais.fn.ccdsgn import case_control
+from morie.fn.ccdsgn import case_control
 
 
 def test_ccdsgn_basic():

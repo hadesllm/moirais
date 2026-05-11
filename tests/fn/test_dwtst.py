@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dwtst -- Durbin-Watson statistic."""
+"""Tests for morie.fn.dwtst -- Durbin-Watson statistic."""
 import numpy as np
 import pytest
-from moirais.fn.dwtst import durbin_watson
+from morie.fn.dwtst import durbin_watson
 
 
 class TestDW:
@@ -16,5 +16,5 @@ class TestDW:
             durbin_watson(np.ones(2))
 
     def test_cheatsheet(self):
-        from moirais.fn.dwtst import cheatsheet
+        from morie.fn.dwtst import cheatsheet
         assert isinstance(cheatsheet(), str)

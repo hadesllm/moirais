@@ -1,7 +1,7 @@
 """Test gaspi."""
 import numpy as np
 import pytest
-from moirais.fn.gaspi import gaspi
+from morie.fn.gaspi import gaspi
 
 
 def test_gaspi_basic():

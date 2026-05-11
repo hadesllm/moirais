@@ -1,7 +1,7 @@
 """Test frame_signal (sgfrm)."""
 import numpy as np
-from moirais.fn.sgfrm import frame_signal, sgfrm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sgfrm import frame_signal, sgfrm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFrameSignal:

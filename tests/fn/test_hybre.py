@@ -1,7 +1,7 @@
 """Test hybre."""
 import numpy as np
 import pytest
-from moirais.fn.hybre import hybre
+from morie.fn.hybre import hybre
 
 
 def test_hybre_basic():

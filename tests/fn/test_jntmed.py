@@ -1,7 +1,7 @@
 """Tests for jntmed.joint_significance_test."""
 import numpy as np
 import pytest
-from moirais.fn.jntmed import joint_significance_test
+from morie.fn.jntmed import joint_significance_test
 
 
 def test_jntmed_basic():

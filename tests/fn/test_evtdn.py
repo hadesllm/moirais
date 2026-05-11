@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.evtdn — event density."""
+"""Tests for morie.fn.evtdn — event density."""
 import numpy as np
 import pytest
 
-from moirais.fn.evtdn import event_density, evtdn
+from morie.fn.evtdn import event_density, evtdn
 
 
 def test_single_event():

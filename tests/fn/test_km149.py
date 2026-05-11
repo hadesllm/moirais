@@ -1,7 +1,7 @@
 """Tests for km149.kamath_ch9_flamingo_factorized."""
 import numpy as np
 import pytest
-from moirais.fn.km149 import kamath_ch9_flamingo_factorized
+from morie.fn.km149 import kamath_ch9_flamingo_factorized
 
 
 def test_km149_basic():

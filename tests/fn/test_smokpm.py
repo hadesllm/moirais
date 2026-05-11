@@ -5,7 +5,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.fn.smokpm import smokpm, wildfire_smoke_rr
+from morie.fn.smokpm import smokpm, wildfire_smoke_rr
 
 
 def test_smokpm_reference_level_rr_is_one():

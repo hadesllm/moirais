@@ -1,7 +1,7 @@
 """Tests for alfreq.alphafold_recycling."""
 import numpy as np
 import pytest
-from moirais.fn.alfreq import alphafold_recycling
+from morie.fn.alfreq import alphafold_recycling
 
 
 def test_alfreq_basic():

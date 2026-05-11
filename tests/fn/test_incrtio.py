@@ -1,7 +1,7 @@
 """Tests for incrtio.incidence_rate_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.incrtio import incidence_rate_ratio
+from morie.fn.incrtio import incidence_rate_ratio
 
 
 def test_incrtio_basic():

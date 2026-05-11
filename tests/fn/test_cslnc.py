@@ -1,7 +1,7 @@
 """Tests for cslnc.cosine_lr_schedule."""
 import numpy as np
 import pytest
-from moirais.fn.cslnc import cosine_lr_schedule
+from morie.fn.cslnc import cosine_lr_schedule
 
 
 def test_cslnc_basic():

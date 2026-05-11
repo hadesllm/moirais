@@ -1,6 +1,6 @@
 """Tests for bits per character."""
 import pytest
-from moirais.fn.bpenc import bits_per_char, bpenc
+from morie.fn.bpenc import bits_per_char, bpenc
 
 
 def test_single_char():

@@ -1,7 +1,7 @@
 """Test ubpol."""
 import numpy as np
 import pytest
-from moirais.fn.ubpol import ubpol
+from morie.fn.ubpol import ubpol
 
 
 def test_ubpol_basic():

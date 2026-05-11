@@ -1,7 +1,7 @@
 """Test optlb."""
 import numpy as np
 import pytest
-from moirais.fn.optlb import optlb
+from morie.fn.optlb import optlb
 
 
 def test_optlb_basic():

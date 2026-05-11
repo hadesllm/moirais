@@ -1,7 +1,7 @@
 """Tests for prophe.facebook_prophet."""
 import numpy as np
 import pytest
-from moirais.fn.prophe import facebook_prophet
+from morie.fn.prophe import facebook_prophet
 
 
 def test_prophe_basic():

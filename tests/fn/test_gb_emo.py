@@ -1,7 +1,7 @@
 """Tests for gb_emo.gibbons_order_moments."""
 import numpy as np
 import pytest
-from moirais.fn.gb_emo import gibbons_order_moments
+from morie.fn.gb_emo import gibbons_order_moments
 
 
 def test_gb_emo_basic():

@@ -1,7 +1,7 @@
 """Tests for kmverb.kamath_verbalizer_mapping."""
 import numpy as np
 import pytest
-from moirais.fn.kmverb import kamath_verbalizer_mapping
+from morie.fn.kmverb import kamath_verbalizer_mapping
 
 
 def test_kmverb_basic():

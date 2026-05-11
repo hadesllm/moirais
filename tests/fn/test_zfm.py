@@ -1,7 +1,7 @@
 """Tests for zfm.z_transform."""
 import numpy as np
 import pytest
-from moirais.fn.zfm import z_transform
+from morie.fn.zfm import z_transform
 
 
 def test_zfm_basic():

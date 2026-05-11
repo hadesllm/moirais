@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rcddl — recidivism DML."""
+"""Tests for morie.fn.rcddl — recidivism DML."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.rcddl import recidivism_dml
-from moirais.fn._containers import ESRes
+from morie.fn.rcddl import recidivism_dml
+from morie.fn._containers import ESRes
 
 
 class TestRecidivismDml:

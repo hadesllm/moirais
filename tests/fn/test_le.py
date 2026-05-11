@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.le -- life expectancy."""
+"""Tests for morie.fn.le -- life expectancy."""
 
 import numpy as np
 import pytest
-from moirais.fn.le import life_expectancy
+from morie.fn.le import life_expectancy
 
 
 class TestLifeExpectancy:

@@ -1,7 +1,7 @@
 """Tests for km101.kamath_ch6_toxic_fraction."""
 import numpy as np
 import pytest
-from moirais.fn.km101 import kamath_ch6_toxic_fraction
+from morie.fn.km101 import kamath_ch6_toxic_fraction
 
 
 def test_km101_basic():

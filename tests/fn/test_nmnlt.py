@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.nmnlt — NOMINATE scaling."""
+"""Tests for morie.fn.nmnlt — NOMINATE scaling."""
 import numpy as np
-from moirais.fn.nmnlt import nmnlt
+from morie.fn.nmnlt import nmnlt
 
 
 def test_nmnlt_basic():

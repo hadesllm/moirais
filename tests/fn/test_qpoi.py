@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qpoi — Poisson quantile function."""
+"""Tests for morie.fn.qpoi — Poisson quantile function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qpoi import qpois
+from morie.fn.qpoi import qpois
 
 
 class TestQpois:

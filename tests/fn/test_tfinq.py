@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.tfinq import time_freq_uncertainty, tfinq
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tfinq import time_freq_uncertainty, tfinq
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTimeFreqUncertainty:

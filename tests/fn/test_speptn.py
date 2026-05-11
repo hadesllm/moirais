@@ -1,7 +1,7 @@
 """Tests for speptn.spatial_pca."""
 import numpy as np
 import pytest
-from moirais.fn.speptn import spatial_pca
+from morie.fn.speptn import spatial_pca
 
 
 def test_speptn_basic():

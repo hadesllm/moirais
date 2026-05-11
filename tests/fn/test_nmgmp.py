@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmgmp -- Geometric Mean Probability"""
+"""Tests for morie.fn.nmgmp -- Geometric Mean Probability"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmgmp import gmp_stat
+from morie.fn.nmgmp import gmp_stat
 
 
 class TestGmpStat:

@@ -1,7 +1,7 @@
 """Tests for ipwgrf.ipw_grf."""
 import numpy as np
 import pytest
-from moirais.fn.ipwgrf import ipw_grf
+from morie.fn.ipwgrf import ipw_grf
 
 
 def test_ipwgrf_basic():

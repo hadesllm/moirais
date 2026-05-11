@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.anchr — Anchor explanations."""
+"""Tests for morie.fn.anchr — Anchor explanations."""
 import numpy as np
 import pytest
-from moirais.fn.anchr import anchr
+from morie.fn.anchr import anchr
 
 
 @pytest.fixture()
@@ -63,5 +63,5 @@ def test_method(setup):
 
 
 def test_cheatsheet():
-    from moirais.fn.anchr import cheatsheet
+    from morie.fn.anchr import cheatsheet
     assert len(cheatsheet()) > 0

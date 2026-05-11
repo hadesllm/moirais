@@ -1,7 +1,7 @@
 """Test qrs_duration (qrsdr)."""
 import numpy as np
-from moirais.fn.qrsdr import qrs_duration, qrsdr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.qrsdr import qrs_duration, qrsdr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestQrsDuration:

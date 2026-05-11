@@ -1,7 +1,7 @@
 """Test vmgmt."""
 import numpy as np
 import pytest
-from moirais.fn.vmgmt import vmgmt
+from morie.fn.vmgmt import vmgmt
 
 
 def test_vmgmt_basic():

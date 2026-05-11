@@ -1,7 +1,7 @@
 """Test srrob."""
 import numpy as np
 import pytest
-from moirais.fn.srrob import srrob
+from morie.fn.srrob import srrob
 
 
 def test_srrob_basic():

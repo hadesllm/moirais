@@ -1,7 +1,7 @@
 """Tests for cvxhul.boyd_convex_hull."""
 import numpy as np
 import pytest
-from moirais.fn.cvxhul import boyd_convex_hull
+from morie.fn.cvxhul import boyd_convex_hull
 
 
 def test_cvxhul_basic():

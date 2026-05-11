@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.copld — Copeland method."""
+"""Tests for morie.fn.copld — Copeland method."""
 import numpy as np
-from moirais.fn.copld import copld
+from morie.fn.copld import copld
 
 
 def test_copld_clear_winner():

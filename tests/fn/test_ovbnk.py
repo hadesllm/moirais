@@ -1,7 +1,7 @@
 """Tests for ovbnk.oster_omitted_bias_bound."""
 import numpy as np
 import pytest
-from moirais.fn.ovbnk import oster_omitted_bias_bound
+from morie.fn.ovbnk import oster_omitted_bias_bound
 
 
 def test_ovbnk_basic():

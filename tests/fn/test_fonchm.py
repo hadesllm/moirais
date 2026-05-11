@@ -1,7 +1,7 @@
 """Test fonchm."""
 import numpy as np
 import pytest
-from moirais.fn.fonchm import fonchm
+from morie.fn.fonchm import fonchm
 
 
 def test_fonchm_basic():

@@ -1,7 +1,7 @@
 """Tests for trnsfr.transfer_learning_msm."""
 import numpy as np
 import pytest
-from moirais.fn.trnsfr import transfer_learning_msm
+from morie.fn.trnsfr import transfer_learning_msm
 
 
 def test_trnsfr_basic():

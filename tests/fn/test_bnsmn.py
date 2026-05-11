@@ -1,7 +1,7 @@
 """Test bnsmn."""
 import numpy as np
 import pytest
-from moirais.fn.bnsmn import bnsmn
+from morie.fn.bnsmn import bnsmn
 
 
 def test_bnsmn_basic():

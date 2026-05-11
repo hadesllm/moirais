@@ -1,7 +1,7 @@
 """Tests for intS.symbolic_integrate."""
 import numpy as np
 import pytest
-from moirais.fn.intS import symbolic_integrate
+from morie.fn.intS import symbolic_integrate
 
 
 def test_intS_basic():

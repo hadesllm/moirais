@@ -1,7 +1,7 @@
 """Tests for specClust.spectral_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.specClust import spectral_clustering
+from morie.fn.specClust import spectral_clustering
 
 
 def test_specClust_basic():

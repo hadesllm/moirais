@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vtest — Test-retest reliability."""
+"""Tests for morie.fn.vtest — Test-retest reliability."""
 
 import numpy as np
 import pytest
-from moirais.fn.vtest import validity_test_retest
+from morie.fn.vtest import validity_test_retest
 
 
 class TestValidityTestRetest:

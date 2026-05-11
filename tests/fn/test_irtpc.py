@@ -1,6 +1,6 @@
 """Tests for irtpc — partial credit model."""
 import numpy as np
-from moirais.fn.irtpc import irtpc
+from morie.fn.irtpc import irtpc
 
 def test_irtpc_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -9,7 +9,7 @@ def test_irtpc_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.irtpc import cheatsheet
+    from morie.fn.irtpc import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

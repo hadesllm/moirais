@@ -1,7 +1,7 @@
 """Tests for drsza.dr_did_santanna_zhao."""
 import numpy as np
 import pytest
-from moirais.fn.drsza import dr_did_santanna_zhao
+from morie.fn.drsza import dr_did_santanna_zhao
 
 
 def test_drsza_basic():

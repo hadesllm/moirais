@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bppc — Posterior predictive check."""
+"""Tests for morie.fn.bppc — Posterior predictive check."""
 
 import numpy as np
 import pytest
-from moirais.fn.bppc import bayesian_ppc
+from morie.fn.bppc import bayesian_ppc
 
 
 class TestBayesianPpc:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.crime -- Crime rate per 100K."""
+"""Tests for morie.fn.crime -- Crime rate per 100K."""
 
-from moirais.fn.crime import crime_rate, crime
-from moirais.fn._containers import CrimeResult
+from morie.fn.crime import crime_rate, crime
+from morie.fn._containers import CrimeResult
 
 
 class TestCrime:

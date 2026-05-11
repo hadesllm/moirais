@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wolvn -- MICE imputation."""
+"""Tests for morie.fn.wolvn -- MICE imputation."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.wolvn import mice_impute, wolvn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wolvn import mice_impute, wolvn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWolvn:

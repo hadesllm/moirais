@@ -1,7 +1,7 @@
 """Tests for bmdul.bayesian_mds_unfolding."""
 import numpy as np
 import pytest
-from moirais.fn.bmdul import bayesian_mds_unfolding
+from morie.fn.bmdul import bayesian_mds_unfolding
 
 
 def test_bmdul_basic():

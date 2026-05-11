@@ -1,7 +1,7 @@
 """Tests for grdpml.geron_ddpm_simple_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grdpml import geron_ddpm_simple_loss
+from morie.fn.grdpml import geron_ddpm_simple_loss
 
 
 def test_grdpml_basic():

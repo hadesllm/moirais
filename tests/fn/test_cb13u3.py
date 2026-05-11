@@ -1,7 +1,7 @@
 """Tests for cb13u3.cb_chapter_13_unnumbered_3."""
 import numpy as np
 import pytest
-from moirais.fn.cb13u3 import cb_chapter_13_unnumbered_3
+from morie.fn.cb13u3 import cb_chapter_13_unnumbered_3
 
 
 def test_cb13u3_basic():

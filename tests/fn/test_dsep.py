@@ -1,7 +1,7 @@
 """Tests for dsep.d_separation."""
 import numpy as np
 import pytest
-from moirais.fn.dsep import d_separation
+from morie.fn.dsep import d_separation
 
 
 def test_dsep_basic():

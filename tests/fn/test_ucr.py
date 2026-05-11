@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ucr -- UCR offense classification."""
+"""Tests for morie.fn.ucr -- UCR offense classification."""
 
-from moirais.fn.ucr import ucr_classify, ucr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ucr import ucr_classify, ucr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestUcr:

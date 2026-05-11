@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rbfin."""
+"""Tests for morie.fn.rbfin."""
 import numpy as np
-from moirais.fn.rbfin import rbf_interp
+from morie.fn.rbfin import rbf_interp
 
 
 def test_rbfin_smoke():
@@ -16,7 +16,7 @@ def test_rbfin_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.rbfin import cheatsheet
+    from morie.fn.rbfin import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

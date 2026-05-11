@@ -1,7 +1,7 @@
 """Tests for snmtst.sensitivity_did."""
 import numpy as np
 import pytest
-from moirais.fn.snmtst import sensitivity_did
+from morie.fn.snmtst import sensitivity_did
 
 
 def test_snmtst_basic():

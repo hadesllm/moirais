@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.adf — Augmented Dickey-Fuller test."""
+"""Tests for morie.fn.adf — Augmented Dickey-Fuller test."""
 import numpy as np
 import pytest
 
-from moirais.fn.adf import adf_test, adf
+from morie.fn.adf import adf_test, adf
 
 
 def test_stationary_series():

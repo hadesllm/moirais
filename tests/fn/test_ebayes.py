@@ -1,7 +1,7 @@
 """Tests for ebayes.empirical_bayes_shrinkage."""
 import numpy as np
 import pytest
-from moirais.fn.ebayes import empirical_bayes_shrinkage
+from morie.fn.ebayes import empirical_bayes_shrinkage
 
 
 def test_ebayes_basic():

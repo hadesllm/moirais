@@ -1,7 +1,7 @@
 """Test srsac."""
 import numpy as np
 import pytest
-from moirais.fn.srsac import srsac
+from morie.fn.srsac import srsac
 
 
 def test_srsac_basic():

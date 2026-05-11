@@ -1,7 +1,7 @@
 """Tests for td3c.td3."""
 import numpy as np
 import pytest
-from moirais.fn.td3c import td3
+from morie.fn.td3c import td3
 
 
 def test_td3c_basic():

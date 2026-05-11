@@ -1,7 +1,7 @@
 """Test tsknx."""
 import numpy as np
 import pytest
-from moirais.fn.tsknx import tsknx
+from morie.fn.tsknx import tsknx
 
 
 def test_tsknx_basic():

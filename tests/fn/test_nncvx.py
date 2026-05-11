@@ -1,7 +1,7 @@
 """Tests for nncvx."""
 import numpy as np
 import pytest
-from moirais.fn.nncvx import nncvx
+from morie.fn.nncvx import nncvx
 
 
 def test_nncvx_basic():
@@ -27,5 +27,5 @@ def test_nncvx_no_data():
 
 
 def test_nncvx_alias():
-    from moirais.fn.nncvx import nncvx
+    from morie.fn.nncvx import nncvx
     assert nncvx is nncvx

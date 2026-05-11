@@ -1,7 +1,7 @@
 """Tests for ghs009.ghosal_ch3_stick_breaking_weights."""
 import numpy as np
 import pytest
-from moirais.fn.ghs009 import ghosal_ch3_stick_breaking_weights
+from morie.fn.ghs009 import ghosal_ch3_stick_breaking_weights
 
 
 def test_ghs009_basic():

@@ -1,7 +1,7 @@
 """Test fofuel."""
 import numpy as np
 import pytest
-from moirais.fn.fofuel import fofuel
+from morie.fn.fofuel import fofuel
 
 
 def test_fofuel_basic():

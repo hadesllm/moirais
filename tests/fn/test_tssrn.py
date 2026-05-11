@@ -1,7 +1,7 @@
 """Test tssrn."""
 import numpy as np
 import pytest
-from moirais.fn.tssrn import tssrn
+from morie.fn.tssrn import tssrn
 
 
 def test_tssrn_basic():

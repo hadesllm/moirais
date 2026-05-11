@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ricci -- Ricci tensor."""
+"""Tests for morie.fn.ricci -- Ricci tensor."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ricci import ricci
+from morie.fn.ricci import ricci
 
 
 def test_returns_dict():

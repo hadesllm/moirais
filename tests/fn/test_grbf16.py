@@ -1,7 +1,7 @@
 """Tests for grbf16.geron_bf16_range."""
 import numpy as np
 import pytest
-from moirais.fn.grbf16 import geron_bf16_range
+from morie.fn.grbf16 import geron_bf16_range
 
 
 def test_grbf16_basic():

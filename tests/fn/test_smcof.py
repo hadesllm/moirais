@@ -1,6 +1,6 @@
 """Test smcof."""
 import numpy as np
-from moirais.fn.smcof import smacof_scale
+from morie.fn.smcof import smacof_scale
 
 
 def test_smcof_basic():

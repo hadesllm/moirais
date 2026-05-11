@@ -1,7 +1,7 @@
 """Tests for avglen.avg_path_length."""
 import numpy as np
 import pytest
-from moirais.fn.avglen import avg_path_length
+from morie.fn.avglen import avg_path_length
 
 
 def test_avglen_basic():

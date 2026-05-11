@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.plpty -- plot by party."""
+"""Tests for morie.fn.plpty -- plot by party."""
 import numpy as np
-from moirais.fn.plpty import plot_by_party, plpty
+from morie.fn.plpty import plot_by_party, plpty
 
 
 def test_alias():

@@ -1,7 +1,7 @@
 """Test hyrcg."""
 import numpy as np
 import pytest
-from moirais.fn.hyrcg import hyrcg
+from morie.fn.hyrcg import hyrcg
 
 
 def test_hyrcg_basic():

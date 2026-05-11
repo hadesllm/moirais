@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.evstd -- Event study design."""
+"""Tests for morie.fn.evstd -- Event study design."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.evstd import event_study, evstd
+from morie.fn.evstd import event_study, evstd
 
 
 class TestEventStudy:

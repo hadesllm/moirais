@@ -1,7 +1,7 @@
 """Tests for offlrl.offline_rl_cql."""
 import numpy as np
 import pytest
-from moirais.fn.offlrl import offline_rl_cql
+from morie.fn.offlrl import offline_rl_cql
 
 
 def test_offlrl_basic():

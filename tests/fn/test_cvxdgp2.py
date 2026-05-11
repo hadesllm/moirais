@@ -1,7 +1,7 @@
 """Tests for cvxdgp2.boyd_duality_gap."""
 import numpy as np
 import pytest
-from moirais.fn.cvxdgp2 import boyd_duality_gap
+from morie.fn.cvxdgp2 import boyd_duality_gap
 
 
 def test_cvxdgp2_basic():

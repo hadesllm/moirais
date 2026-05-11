@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmalc -- Alpha-NOMINATE convergence"""
+"""Tests for morie.fn.nmalc -- Alpha-NOMINATE convergence"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmalc import alpha_nom_conv
+from morie.fn.nmalc import alpha_nom_conv
 
 
 class TestAlphaNomConv:

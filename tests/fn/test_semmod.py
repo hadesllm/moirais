@@ -1,7 +1,7 @@
 """Tests for semmod.spatial_error_model."""
 import numpy as np
 import pytest
-from moirais.fn.semmod import spatial_error_model
+from morie.fn.semmod import spatial_error_model
 
 
 def test_semmod_basic():

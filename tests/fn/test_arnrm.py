@@ -1,7 +1,7 @@
 """Test ar_normalize (arnrm)."""
 import numpy as np
-from moirais.fn.arnrm import ar_normalize, arnrm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.arnrm import ar_normalize, arnrm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestArnrm:

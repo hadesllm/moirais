@@ -1,7 +1,7 @@
 """Tests for altrip.alammar_sbert_triplet_loss."""
 import numpy as np
 import pytest
-from moirais.fn.altrip import alammar_sbert_triplet_loss
+from morie.fn.altrip import alammar_sbert_triplet_loss
 
 
 def test_altrip_basic():

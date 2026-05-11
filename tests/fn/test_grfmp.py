@@ -1,7 +1,7 @@
 """Tests for grfmp.geron_feature_map_dim."""
 import numpy as np
 import pytest
-from moirais.fn.grfmp import geron_feature_map_dim
+from morie.fn.grfmp import geron_feature_map_dim
 
 
 def test_grfmp_basic():

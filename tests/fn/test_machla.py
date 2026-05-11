@@ -1,7 +1,7 @@
 """Test machla."""
 import numpy as np
 import pytest
-from moirais.fn.machla import machla
+from morie.fn.machla import machla
 
 
 def test_machla_basic():

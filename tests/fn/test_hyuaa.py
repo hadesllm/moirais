@@ -1,7 +1,7 @@
 """Test hyuaa."""
 import numpy as np
 import pytest
-from moirais.fn.hyuaa import hyuaa
+from morie.fn.hyuaa import hyuaa
 
 
 def test_hyuaa_basic():

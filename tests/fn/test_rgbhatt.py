@@ -1,7 +1,7 @@
 """Tests for rgbhatt.rangayyan_bhattacharyya."""
 import numpy as np
 import pytest
-from moirais.fn.rgbhatt import rangayyan_bhattacharyya
+from morie.fn.rgbhatt import rangayyan_bhattacharyya
 
 
 def test_rgbhatt_basic():

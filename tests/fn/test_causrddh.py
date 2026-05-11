@@ -1,7 +1,7 @@
 """Tests for causrddh.causal_rdd_imbens_kalyanaraman."""
 import numpy as np
 import pytest
-from moirais.fn.causrddh import causal_rdd_imbens_kalyanaraman
+from morie.fn.causrddh import causal_rdd_imbens_kalyanaraman
 
 
 def test_causrddh_basic():

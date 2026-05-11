@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rcpar."""
+"""Tests for morie.fn.rcpar."""
 
 import numpy as np
 import pytest
-from moirais.fn.rcpar import rcpar
+from morie.fn.rcpar import rcpar
 
 
 class TestRcpar:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qt — Student's t quantile function."""
+"""Tests for morie.fn.qt — Student's t quantile function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qt import qt
+from morie.fn.qt import qt
 
 
 class TestQt:

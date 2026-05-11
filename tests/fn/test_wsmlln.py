@@ -1,7 +1,7 @@
 """Tests for wsmlln.wasserman_lln."""
 import numpy as np
 import pytest
-from moirais.fn.wsmlln import wasserman_lln
+from morie.fn.wsmlln import wasserman_lln
 
 
 def test_wsmlln_basic():

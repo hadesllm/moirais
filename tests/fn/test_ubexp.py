@@ -1,7 +1,7 @@
 """Test ubexp."""
 import numpy as np
 import pytest
-from moirais.fn.ubexp import ubexp
+from morie.fn.ubexp import ubexp
 
 
 def test_ubexp_basic():

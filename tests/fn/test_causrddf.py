@@ -1,7 +1,7 @@
 """Tests for causrddf.causal_rdd_fuzzy."""
 import numpy as np
 import pytest
-from moirais.fn.causrddf import causal_rdd_fuzzy
+from morie.fn.causrddf import causal_rdd_fuzzy
 
 
 def test_causrddf_basic():

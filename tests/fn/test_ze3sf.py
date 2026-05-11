@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ze3sf -- Three-step FCA"""
+"""Tests for morie.fn.ze3sf -- Three-step FCA"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ze3sf import three_step_fca
+from morie.fn.ze3sf import three_step_fca
 
 
 class TestThreeStepFca:

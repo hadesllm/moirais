@@ -1,7 +1,7 @@
 """Tests for ropedy.rope_ntk_dynamic."""
 import numpy as np
 import pytest
-from moirais.fn.ropedy import rope_ntk_dynamic
+from morie.fn.ropedy import rope_ntk_dynamic
 
 
 def test_ropedy_basic():

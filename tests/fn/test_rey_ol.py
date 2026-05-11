@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rey_ol — ordinal logistic regression."""
+"""Tests for morie.fn.rey_ol — ordinal logistic regression."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.rey_ol import rey_ol
+from morie.fn.rey_ol import rey_ol
 
 
 class TestReyOl:

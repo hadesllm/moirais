@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwid -- Inverse distance weights matrix"""
+"""Tests for morie.fn.xrwid -- Inverse distance weights matrix"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwid import w_inverse_dist
+from morie.fn.xrwid import w_inverse_dist
 
 
 class TestWInverseDist:

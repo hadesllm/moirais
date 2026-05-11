@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mdunc."""
+"""Tests for morie.fn.mdunc."""
 
 import numpy as np
 import pytest
-from moirais.fn.mdunc import mdunc
+from morie.fn.mdunc import mdunc
 
 
 class TestMdunc:

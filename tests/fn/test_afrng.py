@@ -1,7 +1,7 @@
 """Test afrng."""
 import numpy as np
 import pytest
-from moirais.fn.afrng import afrng
+from morie.fn.afrng import afrng
 
 
 def test_afrng_basic():

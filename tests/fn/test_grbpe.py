@@ -1,7 +1,7 @@
 """Tests for grbpe.geron_bpe_tokenizer_merge."""
 import numpy as np
 import pytest
-from moirais.fn.grbpe import geron_bpe_tokenizer_merge
+from morie.fn.grbpe import geron_bpe_tokenizer_merge
 
 
 def test_grbpe_basic():

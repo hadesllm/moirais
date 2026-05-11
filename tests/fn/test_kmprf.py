@@ -1,7 +1,7 @@
 """Tests for kmprf.kamath_prefix_lm_mask."""
 import numpy as np
 import pytest
-from moirais.fn.kmprf import kamath_prefix_lm_mask
+from morie.fn.kmprf import kamath_prefix_lm_mask
 
 
 def test_kmprf_basic():

@@ -1,7 +1,7 @@
 """Tests for rgpsd.rangayyan_psd."""
 import numpy as np
 import pytest
-from moirais.fn.rgpsd import rangayyan_psd
+from morie.fn.rgpsd import rangayyan_psd
 
 
 def test_rgpsd_basic():

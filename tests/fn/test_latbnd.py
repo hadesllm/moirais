@@ -1,7 +1,7 @@
 """Tests for latbnd.late_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.latbnd import late_bounds
+from morie.fn.latbnd import late_bounds
 
 
 def test_latbnd_basic():

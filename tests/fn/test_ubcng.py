@@ -1,7 +1,7 @@
 """Test ubcng."""
 import numpy as np
 import pytest
-from moirais.fn.ubcng import ubcng
+from morie.fn.ubcng import ubcng
 
 
 def test_ubcng_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wldbt -- Wild bootstrap for heteroskedastic regression."""
+"""Tests for morie.fn.wldbt -- Wild bootstrap for heteroskedastic regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.wldbt import wldbt
+from morie.fn.wldbt import wldbt
 
 
 @pytest.fixture()
@@ -63,5 +63,5 @@ def test_coef_index_range():
 
 
 def test_cheatsheet():
-    from moirais.fn.wldbt import cheatsheet
+    from morie.fn.wldbt import cheatsheet
     assert "wild" in cheatsheet().lower()

@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.sub_est — Design-based subpopulation mean estimator."""
+"""Tests for morie.fn.sub_est — Design-based subpopulation mean estimator."""
 
 import math
 
@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.sub_est import subpopulation_estimate
+from morie.fn.sub_est import subpopulation_estimate
 
 
 @pytest.fixture()

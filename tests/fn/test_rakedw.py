@@ -1,7 +1,7 @@
 """Tests for rakedw.rake_double_weights."""
 import numpy as np
 import pytest
-from moirais.fn.rakedw import rake_double_weights
+from morie.fn.rakedw import rake_double_weights
 
 
 def test_rakedw_basic():

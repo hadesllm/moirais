@@ -1,7 +1,7 @@
 """Tests for scr_u -- UA composite reliability."""
 import numpy as np
-from moirais.fn.scr_u import subscale_ua_composite_rel
-from moirais.fn._containers import ESRes
+from morie.fn.scr_u import subscale_ua_composite_rel
+from morie.fn._containers import ESRes
 
 
 class TestScrU:

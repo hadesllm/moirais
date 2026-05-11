@@ -1,7 +1,7 @@
 """Tests for jooutl.joseph_ts_outlier_detection."""
 import numpy as np
 import pytest
-from moirais.fn.jooutl import joseph_ts_outlier_detection
+from morie.fn.jooutl import joseph_ts_outlier_detection
 
 
 def test_jooutl_basic():

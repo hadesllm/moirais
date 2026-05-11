@@ -1,7 +1,7 @@
 """Tests for kmadal.kamath_adalora_rank_allocation."""
 import numpy as np
 import pytest
-from moirais.fn.kmadal import kamath_adalora_rank_allocation
+from morie.fn.kmadal import kamath_adalora_rank_allocation
 
 
 def test_kmadal_basic():

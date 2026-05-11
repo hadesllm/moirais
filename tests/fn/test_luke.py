@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.luke -- Data summary."""
+"""Tests for morie.fn.luke -- Data summary."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.luke import summarize, luke
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.luke import summarize, luke
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLuke:

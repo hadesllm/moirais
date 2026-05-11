@@ -1,7 +1,7 @@
 """Tests for gpwarp."""
 import numpy as np
 import pytest
-from moirais.fn.gpwarp import gpwarp
+from morie.fn.gpwarp import gpwarp
 
 
 def test_gpwarp_basic():
@@ -27,5 +27,5 @@ def test_gpwarp_no_data():
 
 
 def test_gpwarp_alias():
-    from moirais.fn.gpwarp import gpwarp
+    from morie.fn.gpwarp import gpwarp
     assert gpwarp is gpwarp

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svppc -- Congressional party position"""
+"""Tests for morie.fn.svppc -- Congressional party position"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svppc import party_congress
+from morie.fn.svppc import party_congress
 
 
 class TestPartyCongress:

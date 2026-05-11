@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.euclm — Euclidean spatial model."""
+"""Tests for morie.fn.euclm — Euclidean spatial model."""
 import numpy as np
-from moirais.fn.euclm import euclm
+from morie.fn.euclm import euclm
 
 
 def test_euclm_nearest():

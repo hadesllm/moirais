@@ -1,7 +1,7 @@
 """Tests for scmdf.scm_definition."""
 import numpy as np
 import pytest
-from moirais.fn.scmdf import scm_definition
+from morie.fn.scmdf import scm_definition
 
 
 def test_scmdf_basic():

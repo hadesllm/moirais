@@ -1,7 +1,7 @@
 """Tests for gb_wsp.gibbons_concordance_preference."""
 import numpy as np
 import pytest
-from moirais.fn.gb_wsp import gibbons_concordance_preference
+from morie.fn.gb_wsp import gibbons_concordance_preference
 
 
 def test_gb_wsp_basic():

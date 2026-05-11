@@ -1,7 +1,7 @@
 """Tests for tikto.tiktoken_bpe."""
 import numpy as np
 import pytest
-from moirais.fn.tikto import tiktoken_bpe
+from morie.fn.tikto import tiktoken_bpe
 
 
 def test_tikto_basic():

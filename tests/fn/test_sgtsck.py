@@ -1,7 +1,7 @@
 """Tests for sgtsck.sgt_spectral_clustering_k."""
 import numpy as np
 import pytest
-from moirais.fn.sgtsck import sgt_spectral_clustering_k
+from morie.fn.sgtsck import sgt_spectral_clustering_k
 
 
 def test_sgtsck_basic():

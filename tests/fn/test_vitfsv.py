@@ -1,7 +1,7 @@
 """Tests for vitfsv.vit_finetune."""
 import numpy as np
 import pytest
-from moirais.fn.vitfsv import vit_finetune
+from morie.fn.vitfsv import vit_finetune
 
 
 def test_vitfsv_basic():

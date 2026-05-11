@@ -1,7 +1,7 @@
 """Test nbspc."""
 import numpy as np
 import pytest
-from moirais.fn.nbspc import nbspc
+from morie.fn.nbspc import nbspc
 
 
 def test_nbspc_basic():

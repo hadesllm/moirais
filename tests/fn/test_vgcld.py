@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgcld -- Variogram cloud"""
+"""Tests for morie.fn.vgcld -- Variogram cloud"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgcld import vario_cloud
+from morie.fn.vgcld import vario_cloud
 
 
 class TestVarioCloud:

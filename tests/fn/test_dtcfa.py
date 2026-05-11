@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dtcfa."""
+"""Tests for morie.fn.dtcfa."""
 
 import numpy as np
 import pytest
-from moirais.fn.dtcfa import dtcfa
+from morie.fn.dtcfa import dtcfa
 
 
 class TestDtcfa:

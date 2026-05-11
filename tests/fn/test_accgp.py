@@ -1,7 +1,7 @@
 """Tests for accgp.prediction_accuracy."""
 import numpy as np
 import pytest
-from moirais.fn.accgp import prediction_accuracy
+from morie.fn.accgp import prediction_accuracy
 
 
 def test_accgp_basic():

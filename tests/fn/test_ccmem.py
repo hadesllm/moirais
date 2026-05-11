@@ -1,7 +1,7 @@
 """Tests for ccmem.cross_classified_membership."""
 import numpy as np
 import pytest
-from moirais.fn.ccmem import cross_classified_membership
+from morie.fn.ccmem import cross_classified_membership
 
 
 def test_ccmem_basic():

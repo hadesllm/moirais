@@ -1,7 +1,7 @@
 """Tests for contRC.content_based."""
 import numpy as np
 import pytest
-from moirais.fn.contRC import content_based
+from morie.fn.contRC import content_based
 
 
 def test_contRC_basic():

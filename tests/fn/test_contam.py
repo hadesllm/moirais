@@ -1,7 +1,7 @@
 """Tests for contam.epsilon_contamination."""
 import numpy as np
 import pytest
-from moirais.fn.contam import epsilon_contamination
+from morie.fn.contam import epsilon_contamination
 
 
 def test_contam_basic():

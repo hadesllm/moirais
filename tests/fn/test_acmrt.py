@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.acmrt -- Age-cause-specific mortality."""
+"""Tests for morie.fn.acmrt -- Age-cause-specific mortality."""
 
 import pytest
-from moirais.fn.acmrt import age_cause_mortality
+from morie.fn.acmrt import age_cause_mortality
 
 
 class TestAgeCauseMortality:

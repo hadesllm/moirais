@@ -1,7 +1,7 @@
 """Tests for tmlper.tmle_periodic."""
 import numpy as np
 import pytest
-from moirais.fn.tmlper import tmle_periodic
+from morie.fn.tmlper import tmle_periodic
 
 
 def test_tmlper_basic():

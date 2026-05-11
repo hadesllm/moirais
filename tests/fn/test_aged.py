@@ -1,7 +1,7 @@
 """Test aged."""
 import numpy as np
 import pytest
-from moirais.fn.aged import aged
+from morie.fn.aged import aged
 
 
 def test_aged_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ifunc — Influence function computation."""
+"""Tests for morie.fn.ifunc — Influence function computation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ifunc import ifunc
+from morie.fn.ifunc import ifunc
 
 
 @pytest.fixture()

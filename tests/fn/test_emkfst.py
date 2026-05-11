@@ -1,7 +1,7 @@
 """Tests for emkfst.em_state_space."""
 import numpy as np
 import pytest
-from moirais.fn.emkfst import em_state_space
+from morie.fn.emkfst import em_state_space
 
 
 def test_emkfst_basic():

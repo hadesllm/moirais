@@ -1,7 +1,7 @@
 """Tests for dpfed.dp_fedavg."""
 import numpy as np
 import pytest
-from moirais.fn.dpfed import dp_fedavg
+from morie.fn.dpfed import dp_fedavg
 
 
 def test_dpfed_basic():

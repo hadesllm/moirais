@@ -1,7 +1,7 @@
 """Tests for sgtsig.sgt_signless_laplacian."""
 import numpy as np
 import pytest
-from moirais.fn.sgtsig import sgt_signless_laplacian
+from morie.fn.sgtsig import sgt_signless_laplacian
 
 
 def test_sgtsig_basic():

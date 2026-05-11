@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.adfrr -- Augmented Dickey-Fuller test."""
+"""Tests for morie.fn.adfrr -- Augmented Dickey-Fuller test."""
 import numpy as np
 import pytest
-from moirais.fn.adfrr import adf_test
+from morie.fn.adfrr import adf_test
 
 
 class TestADF:
@@ -22,5 +22,5 @@ class TestADF:
             adf_test(np.ones(3))
 
     def test_cheatsheet(self):
-        from moirais.fn.adfrr import cheatsheet
+        from morie.fn.adfrr import cheatsheet
         assert isinstance(cheatsheet(), str)

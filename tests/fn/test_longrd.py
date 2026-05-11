@@ -1,7 +1,7 @@
 """Tests for longrd.long_read_polish."""
 import numpy as np
 import pytest
-from moirais.fn.longrd import long_read_polish
+from morie.fn.longrd import long_read_polish
 
 
 def test_longrd_basic():

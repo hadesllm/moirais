@@ -1,7 +1,7 @@
 """Tests for tmlitr.tmle_individual_regime."""
 import numpy as np
 import pytest
-from moirais.fn.tmlitr import tmle_individual_regime
+from morie.fn.tmlitr import tmle_individual_regime
 
 
 def test_tmlitr_basic():

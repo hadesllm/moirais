@@ -1,7 +1,7 @@
 """Tests for andrews.andrews_sine."""
 import numpy as np
 import pytest
-from moirais.fn.andrews import andrews_sine
+from morie.fn.andrews import andrews_sine
 
 
 def test_andrews_basic():

@@ -1,7 +1,7 @@
 """Tests for rotE.rotate."""
 import numpy as np
 import pytest
-from moirais.fn.rotE import rotate
+from morie.fn.rotE import rotate
 
 
 def test_rotE_basic():

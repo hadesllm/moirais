@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vif — Variance Inflation Factor."""
+"""Tests for morie.fn.vif — Variance Inflation Factor."""
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.vif import variance_inflation, vif
+from morie.fn.vif import variance_inflation, vif
 
 
 def test_uncorrelated_vif_near_one():

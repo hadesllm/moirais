@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.white -- White's test."""
+"""Tests for morie.fn.white -- White's test."""
 
 import numpy as np
 import pytest
-from moirais.fn.white import white_test
-from moirais.fn._containers import TestResult
+from morie.fn.white import white_test
+from morie.fn._containers import TestResult
 
 
 class TestWhite:

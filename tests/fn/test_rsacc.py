@@ -1,7 +1,7 @@
 """Test rsacc."""
 import numpy as np
 import pytest
-from moirais.fn.rsacc import rsacc
+from morie.fn.rsacc import rsacc
 
 
 def test_rsacc_basic():

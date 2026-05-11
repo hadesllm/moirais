@@ -1,7 +1,7 @@
 """Tests for co2Trnd.co2_trend."""
 import numpy as np
 import pytest
-from moirais.fn.co2Trnd import co2_trend
+from morie.fn.co2Trnd import co2_trend
 
 
 def test_co2Trnd_basic():

@@ -1,7 +1,7 @@
 """Tests for rgecgfe.rangayyan_fetal_ecg_single."""
 import numpy as np
 import pytest
-from moirais.fn.rgecgfe import rangayyan_fetal_ecg_single
+from morie.fn.rgecgfe import rangayyan_fetal_ecg_single
 
 
 def test_rgecgfe_basic():

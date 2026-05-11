@@ -1,7 +1,7 @@
 """Tests for survcox.cox_partial_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.survcox import cox_partial_likelihood
+from morie.fn.survcox import cox_partial_likelihood
 
 
 def test_survcox_basic():

@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.prgdm — program DML."""
+"""Tests for morie.fn.prgdm — program DML."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.prgdm import program_dml
-from moirais.fn._containers import ESRes
+from morie.fn.prgdm import program_dml
+from morie.fn._containers import ESRes
 
 
 class TestProgramDml:

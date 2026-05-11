@@ -1,7 +1,7 @@
 """Tests for dctest.discontinuity_test."""
 import numpy as np
 import pytest
-from moirais.fn.dctest import discontinuity_test
+from morie.fn.dctest import discontinuity_test
 
 
 def test_dctest_basic():

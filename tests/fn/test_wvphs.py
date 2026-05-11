@@ -1,6 +1,6 @@
 """Tests for wvphs.py - Wavelet phase."""
 import numpy as np
-from moirais.fn.wvphs import wavelet_phase, wvphs
+from morie.fn.wvphs import wavelet_phase, wvphs
 
 
 def test_wvphs_returns_descriptive_result():

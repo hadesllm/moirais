@@ -1,7 +1,7 @@
 """Tests for mcdv.mcd."""
 import numpy as np
 import pytest
-from moirais.fn.mcdv import mcd
+from morie.fn.mcdv import mcd
 
 
 def test_mcdv_basic():

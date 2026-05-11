@@ -1,7 +1,7 @@
 """Tests for ocrwit.ocr_wit_layout."""
 import numpy as np
 import pytest
-from moirais.fn.ocrwit import ocr_wit_layout
+from morie.fn.ocrwit import ocr_wit_layout
 
 
 def test_ocrwit_basic():

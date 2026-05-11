@@ -1,7 +1,7 @@
 """Tests for medFront.front_door."""
 import numpy as np
 import pytest
-from moirais.fn.medFront import front_door
+from morie.fn.medFront import front_door
 
 
 def test_medFront_basic():

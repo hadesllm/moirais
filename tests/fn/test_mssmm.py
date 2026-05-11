@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mssmm -- SMACOF with missing data"""
+"""Tests for morie.fn.mssmm -- SMACOF with missing data"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mssmm import smacof_missing
+from morie.fn.mssmm import smacof_missing
 
 
 class TestSmacofMissing:

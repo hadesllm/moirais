@@ -1,7 +1,7 @@
 """Tests for rboot -- bootstrap reliability."""
 import numpy as np
-from moirais.fn.rboot import bootstrap_reliability
-from moirais.fn._containers import ESRes
+from morie.fn.rboot import bootstrap_reliability
+from morie.fn._containers import ESRes
 
 
 class TestBootstrapReliability:

@@ -1,7 +1,7 @@
 """Test gdcmp."""
 import numpy as np
 import pytest
-from moirais.fn.gdcmp import gdcmp
+from morie.fn.gdcmp import gdcmp
 
 
 def test_gdcmp_basic():

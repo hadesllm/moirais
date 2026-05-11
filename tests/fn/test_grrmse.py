@@ -1,7 +1,7 @@
 """Tests for grrmse.geron_rmse."""
 import numpy as np
 import pytest
-from moirais.fn.grrmse import geron_rmse
+from morie.fn.grrmse import geron_rmse
 
 
 def test_grrmse_basic():

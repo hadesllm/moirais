@@ -1,7 +1,7 @@
 """Tests for rgs.functional_regression."""
 import numpy as np
 import pytest
-from moirais.fn.rgs import functional_regression
+from morie.fn.rgs import functional_regression
 
 
 def test_rgs_basic():

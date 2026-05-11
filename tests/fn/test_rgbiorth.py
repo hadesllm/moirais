@@ -1,7 +1,7 @@
 """Tests for rgbiorth.rangayyan_biorthogonal_wvlt."""
 import numpy as np
 import pytest
-from moirais.fn.rgbiorth import rangayyan_biorthogonal_wvlt
+from morie.fn.rgbiorth import rangayyan_biorthogonal_wvlt
 
 
 def test_rgbiorth_basic():

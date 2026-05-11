@@ -1,7 +1,7 @@
 """Tests for timesf.timesfm_foundation."""
 import numpy as np
 import pytest
-from moirais.fn.timesf import timesfm_foundation
+from morie.fn.timesf import timesfm_foundation
 
 
 def test_timesf_basic():

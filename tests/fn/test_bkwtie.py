@@ -1,7 +1,7 @@
 """Tests for bkwtie.burkov_weight_tying."""
 import numpy as np
 import pytest
-from moirais.fn.bkwtie import burkov_weight_tying
+from morie.fn.bkwtie import burkov_weight_tying
 
 
 def test_bkwtie_basic():

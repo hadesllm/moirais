@@ -1,7 +1,7 @@
 """Tests for rng023.rangayyan_ch3_ccf_continuous."""
 import numpy as np
 import pytest
-from moirais.fn.rng023 import rangayyan_ch3_ccf_continuous
+from morie.fn.rng023 import rangayyan_ch3_ccf_continuous
 
 
 def test_rng023_basic():

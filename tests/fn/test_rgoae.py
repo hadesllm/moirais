@@ -1,7 +1,7 @@
 """Tests for rgoae.rangayyan_oae."""
 import numpy as np
 import pytest
-from moirais.fn.rgoae import rangayyan_oae
+from morie.fn.rgoae import rangayyan_oae
 
 
 def test_rgoae_basic():

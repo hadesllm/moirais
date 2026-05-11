@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zescr -- Spatial cure rate model"""
+"""Tests for morie.fn.zescr -- Spatial cure rate model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zescr import spatial_cure_rate
+from morie.fn.zescr import spatial_cure_rate
 
 
 class TestSpatialCureRate:

@@ -1,7 +1,7 @@
 """Tests for ctcfl.counterfactual_notation."""
 import numpy as np
 import pytest
-from moirais.fn.ctcfl import counterfactual_notation
+from morie.fn.ctcfl import counterfactual_notation
 
 
 def test_ctcfl_basic():

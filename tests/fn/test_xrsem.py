@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrsem -- SEM (Spatial Error) model ML estimation"""
+"""Tests for morie.fn.xrsem -- SEM (Spatial Error) model ML estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrsem import sem_ml
+from morie.fn.xrsem import sem_ml
 
 
 class TestSemMl:

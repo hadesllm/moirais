@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nscov — Non-stationary covariance function."""
+"""Tests for morie.fn.nscov — Non-stationary covariance function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nscov import nscov
+from morie.fn.nscov import nscov
 
 
 class TestNscov:

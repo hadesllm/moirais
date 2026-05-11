@@ -1,7 +1,7 @@
 """Tests for cdcl.cdcl."""
 import numpy as np
 import pytest
-from moirais.fn.cdcl import cdcl
+from morie.fn.cdcl import cdcl
 
 
 def test_cdcl_basic():

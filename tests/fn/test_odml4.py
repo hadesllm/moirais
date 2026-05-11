@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.odml4 — DML ATE by gender."""
+"""Tests for morie.fn.odml4 — DML ATE by gender."""
 
 import pandas as pd
-from moirais.fn.odml4 import otis_dml_gender
+from morie.fn.odml4 import otis_dml_gender
 
 
 class TestOtisDmlGender:

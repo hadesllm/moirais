@@ -1,7 +1,7 @@
 """Tests for rgepidet.rangayyan_epilepsy_detect."""
 import numpy as np
 import pytest
-from moirais.fn.rgepidet import rangayyan_epilepsy_detect
+from morie.fn.rgepidet import rangayyan_epilepsy_detect
 
 
 def test_rgepidet_basic():

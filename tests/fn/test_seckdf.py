@@ -1,7 +1,7 @@
 """Tests for seckdf.hkdf_extract_expand."""
 import numpy as np
 import pytest
-from moirais.fn.seckdf import hkdf_extract_expand
+from morie.fn.seckdf import hkdf_extract_expand
 
 
 def test_seckdf_basic():

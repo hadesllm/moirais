@@ -1,7 +1,7 @@
 """Tests for gh_ap_a4.ghosal_hellinger_dist."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_a4 import ghosal_hellinger_dist
+from morie.fn.gh_ap_a4 import ghosal_hellinger_dist
 
 
 def test_gh_ap_a4_basic():

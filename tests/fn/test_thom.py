@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.thom — torus homology."""
+"""Tests for morie.fn.thom — torus homology."""
 
 import pytest
 
-from moirais.fn.thom import torus_homology
+from morie.fn.thom import torus_homology
 
 
 class TestTorusHomology:

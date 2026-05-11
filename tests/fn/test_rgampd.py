@@ -1,7 +1,7 @@
 """Tests for rgampd.rangayyan_amplitude_demod."""
 import numpy as np
 import pytest
-from moirais.fn.rgampd import rangayyan_amplitude_demod
+from morie.fn.rgampd import rangayyan_amplitude_demod
 
 
 def test_rgampd_basic():

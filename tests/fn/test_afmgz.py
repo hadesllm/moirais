@@ -1,7 +1,7 @@
 """Test afmgz."""
 import numpy as np
 import pytest
-from moirais.fn.afmgz import afmgz
+from morie.fn.afmgz import afmgz
 
 
 def test_afmgz_basic():

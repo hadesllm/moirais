@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.idlpt — Ideal point estimation."""
+"""Tests for morie.fn.idlpt — Ideal point estimation."""
 import numpy as np
 import pytest
 
-from moirais.fn.idlpt import idlpt
+from morie.fn.idlpt import idlpt
 
 
 def test_idlpt_smoke():
@@ -13,7 +13,7 @@ def test_idlpt_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.idlpt import cheatsheet
+    from morie.fn.idlpt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

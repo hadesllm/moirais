@@ -1,6 +1,6 @@
 """Tests for music.py - MUSIC spectral estimation."""
 import numpy as np
-from moirais.fn.music import music_spectrum_fn, music
+from morie.fn.music import music_spectrum_fn, music
 
 
 def test_music_returns_result():

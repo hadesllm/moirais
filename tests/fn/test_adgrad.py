@@ -1,7 +1,7 @@
 """Tests for adgrad.adagrad."""
 import numpy as np
 import pytest
-from moirais.fn.adgrad import adagrad
+from morie.fn.adgrad import adagrad
 
 
 def test_adgrad_basic():

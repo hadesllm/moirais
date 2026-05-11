@@ -1,7 +1,7 @@
 """Tests for gat.gat."""
 import numpy as np
 import pytest
-from moirais.fn.gat import gat
+from morie.fn.gat import gat
 
 
 def test_gat_basic():

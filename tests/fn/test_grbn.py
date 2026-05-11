@@ -1,7 +1,7 @@
 """Tests for grbn.geron_batch_normalization."""
 import numpy as np
 import pytest
-from moirais.fn.grbn import geron_batch_normalization
+from morie.fn.grbn import geron_batch_normalization
 
 
 def test_grbn_basic():

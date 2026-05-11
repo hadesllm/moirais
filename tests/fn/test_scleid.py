@@ -1,7 +1,7 @@
 """Tests for scleid.leiden_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.scleid import leiden_clustering
+from morie.fn.scleid import leiden_clustering
 
 
 def test_scleid_basic():

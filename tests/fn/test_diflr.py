@@ -1,7 +1,7 @@
 """Tests for diflr — logistic regression DIF."""
 import numpy as np
 import pandas as pd
-from moirais.fn.diflr import diflr
+from morie.fn.diflr import diflr
 
 def test_diflr_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -11,7 +11,7 @@ def test_diflr_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.diflr import cheatsheet
+    from morie.fn.diflr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

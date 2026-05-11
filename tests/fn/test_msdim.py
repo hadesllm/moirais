@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msdim -- MDS dimensionality selection"""
+"""Tests for morie.fn.msdim -- MDS dimensionality selection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msdim import mds_dims
+from morie.fn.msdim import mds_dims
 
 
 class TestMdsDims:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.inspfr — inspection fail rate."""
+"""Tests for morie.fn.inspfr — inspection fail rate."""
 
-from moirais.fn.inspfr import inspection_fail_rate
+from morie.fn.inspfr import inspection_fail_rate
 
 
 class TestInspectionFailRate:

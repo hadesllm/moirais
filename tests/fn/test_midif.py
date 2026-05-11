@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.midif -- delta-fit indices."""
+"""Tests for morie.fn.midif -- delta-fit indices."""
 
-from moirais.fn.midif import mi_delta_fit
+from morie.fn.midif import mi_delta_fit
 
 
 class TestMiDeltaFit:

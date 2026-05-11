@@ -1,7 +1,7 @@
 """Tests for rgenv.rangayyan_envelope."""
 import numpy as np
 import pytest
-from moirais.fn.rgenv import rangayyan_envelope
+from morie.fn.rgenv import rangayyan_envelope
 
 
 def test_rgenv_basic():

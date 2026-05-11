@@ -1,7 +1,7 @@
 """Tests for gh_ap_d2.ghosal_lecam_lemma."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_d2 import ghosal_lecam_lemma
+from morie.fn.gh_ap_d2 import ghosal_lecam_lemma
 
 
 def test_gh_ap_d2_basic():

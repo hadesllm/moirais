@@ -1,7 +1,7 @@
 """Tests for tmlmnl.tmle_machine_learning."""
 import numpy as np
 import pytest
-from moirais.fn.tmlmnl import tmle_machine_learning
+from morie.fn.tmlmnl import tmle_machine_learning
 
 
 def test_tmlmnl_basic():

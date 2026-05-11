@@ -1,7 +1,7 @@
 """Tests for rgentrwv.rangayyan_wavelet_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.rgentrwv import rangayyan_wavelet_entropy
+from morie.fn.rgentrwv import rangayyan_wavelet_entropy
 
 
 def test_rgentrwv_basic():

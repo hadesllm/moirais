@@ -1,8 +1,8 @@
 """Tests for hrvar -- HRV time-domain metrics."""
 import numpy as np
 import pytest
-from moirais.fn.hrvar import hrvar
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hrvar import hrvar
+from morie.fn._containers import DescriptiveResult
 
 
 def test_hrvar_basic():

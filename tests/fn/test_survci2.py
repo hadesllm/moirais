@@ -1,7 +1,7 @@
 """Tests for survci2.uno_concordance."""
 import numpy as np
 import pytest
-from moirais.fn.survci2 import uno_concordance
+from morie.fn.survci2 import uno_concordance
 
 
 def test_survci2_basic():

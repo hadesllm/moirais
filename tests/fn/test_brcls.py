@@ -1,7 +1,7 @@
 """Tests for brcls.brier_score."""
 import numpy as np
 import pytest
-from moirais.fn.brcls import brier_score
+from morie.fn.brcls import brier_score
 
 
 def test_brcls_basic():

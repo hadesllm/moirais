@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ergdc — ergodic decomposition verification."""
+"""Tests for morie.fn.ergdc — ergodic decomposition verification."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ergdc import ergdc
+from morie.fn.ergdc import ergdc
 
 
 class TestErgdc:

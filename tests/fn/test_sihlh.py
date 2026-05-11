@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sihlh -- Silhouette score."""
+"""Tests for morie.fn.sihlh -- Silhouette score."""
 
 import numpy as np
-from moirais.fn.sihlh import silhouette, sihlh
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sihlh import silhouette, sihlh
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSilhouette:

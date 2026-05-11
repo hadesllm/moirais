@@ -1,7 +1,7 @@
 """Tests for kmlv.kamath_llava_visual_instruction."""
 import numpy as np
 import pytest
-from moirais.fn.kmlv import kamath_llava_visual_instruction
+from morie.fn.kmlv import kamath_llava_visual_instruction
 
 
 def test_kmlv_basic():

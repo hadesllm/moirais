@@ -1,7 +1,7 @@
 """Tests for rgsf.rangayyan_signal_features."""
 import numpy as np
 import pytest
-from moirais.fn.rgsf import rangayyan_signal_features
+from morie.fn.rgsf import rangayyan_signal_features
 
 
 def test_rgsf_basic():

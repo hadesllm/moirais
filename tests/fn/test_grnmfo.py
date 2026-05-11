@@ -1,7 +1,7 @@
 """Tests for grnmfo.geron_nmf_objective."""
 import numpy as np
 import pytest
-from moirais.fn.grnmfo import geron_nmf_objective
+from morie.fn.grnmfo import geron_nmf_objective
 
 
 def test_grnmfo_basic():

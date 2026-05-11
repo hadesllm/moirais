@@ -1,7 +1,7 @@
 """Tests for tmlboo.tmle_bootstrap_ci."""
 import numpy as np
 import pytest
-from moirais.fn.tmlboo import tmle_bootstrap_ci
+from morie.fn.tmlboo import tmle_bootstrap_ci
 
 
 def test_tmlboo_basic():

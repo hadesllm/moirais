@@ -1,7 +1,7 @@
 """Tests for ttrace.contact_tracing_yield."""
 import numpy as np
 import pytest
-from moirais.fn.ttrace import contact_tracing_yield
+from morie.fn.ttrace import contact_tracing_yield
 
 
 def test_ttrace_basic():

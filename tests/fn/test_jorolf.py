@@ -1,7 +1,7 @@
 """Tests for jorolf.joseph_rolling_window_feature."""
 import numpy as np
 import pytest
-from moirais.fn.jorolf import joseph_rolling_window_feature
+from morie.fn.jorolf import joseph_rolling_window_feature
 
 
 def test_jorolf_basic():

@@ -1,7 +1,7 @@
 """Test afbio."""
 import numpy as np
 import pytest
-from moirais.fn.afbio import afbio
+from morie.fn.afbio import afbio
 
 
 def test_afbio_basic():

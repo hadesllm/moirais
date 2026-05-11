@@ -1,7 +1,7 @@
 """Test salgo."""
 import numpy as np
 import pytest
-from moirais.fn.salgo import salgo
+from morie.fn.salgo import salgo
 
 
 def test_salgo_basic():

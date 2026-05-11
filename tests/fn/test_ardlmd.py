@@ -1,7 +1,7 @@
 """Tests for ardlmd.ardl_bounds_test."""
 import numpy as np
 import pytest
-from moirais.fn.ardlmd import ardl_bounds_test
+from morie.fn.ardlmd import ardl_bounds_test
 
 
 def test_ardlmd_basic():

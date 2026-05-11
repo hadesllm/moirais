@@ -1,7 +1,7 @@
 """Tests for yarn.yarn_context_scaling."""
 import numpy as np
 import pytest
-from moirais.fn.yarn import yarn_context_scaling
+from morie.fn.yarn import yarn_context_scaling
 
 
 def test_yarn_basic():

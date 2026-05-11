@@ -1,7 +1,7 @@
 """Tests for colst.collider_structure."""
 import numpy as np
 import pytest
-from moirais.fn.colst import collider_structure
+from morie.fn.colst import collider_structure
 
 
 def test_colst_basic():

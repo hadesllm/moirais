@@ -1,7 +1,7 @@
 """Tests for hmhpt.geron_hyperparameter_tuning."""
 import numpy as np
 import pytest
-from moirais.fn.hmhpt import geron_hyperparameter_tuning
+from morie.fn.hmhpt import geron_hyperparameter_tuning
 
 
 def test_hmhpt_basic():

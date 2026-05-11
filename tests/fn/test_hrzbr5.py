@@ -1,7 +1,7 @@
 """Tests for hrzbr5.horowitz_bias_reduction_deconv."""
 import numpy as np
 import pytest
-from moirais.fn.hrzbr5 import horowitz_bias_reduction_deconv
+from morie.fn.hrzbr5 import horowitz_bias_reduction_deconv
 
 
 def test_hrzbr5_basic():

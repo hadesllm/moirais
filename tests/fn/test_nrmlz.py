@@ -1,7 +1,7 @@
 """Test normalize_signal (nrmlz)."""
 import numpy as np
-from moirais.fn.nrmlz import normalize_signal, nrmlz
-from moirais.fn._containers import SignalResult
+from morie.fn.nrmlz import normalize_signal, nrmlz
+from morie.fn._containers import SignalResult
 
 
 class TestNormalizeSignal:

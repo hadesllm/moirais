@@ -1,7 +1,7 @@
 """Tests for gb5411.gibbons_sign_pvalue."""
 import numpy as np
 import pytest
-from moirais.fn.gb5411 import gibbons_sign_pvalue
+from morie.fn.gb5411 import gibbons_sign_pvalue
 
 
 def test_gb5411_basic():

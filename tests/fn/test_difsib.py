@@ -1,7 +1,7 @@
 """Tests for difsib.dif_sibtest."""
 import numpy as np
 import pytest
-from moirais.fn.difsib import dif_sibtest
+from morie.fn.difsib import dif_sibtest
 
 
 def test_difsib_basic():

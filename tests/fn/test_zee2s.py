@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zee2s -- Enhanced 2SFCA"""
+"""Tests for morie.fn.zee2s -- Enhanced 2SFCA"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zee2s import enhanced_2sfca
+from morie.fn.zee2s import enhanced_2sfca
 
 
 class TestEnhanced2sfca:

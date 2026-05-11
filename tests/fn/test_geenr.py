@@ -1,7 +1,7 @@
 """Test geenr."""
 import numpy as np
 import pytest
-from moirais.fn.geenr import geenr
+from morie.fn.geenr import geenr
 
 
 def test_geenr_basic():

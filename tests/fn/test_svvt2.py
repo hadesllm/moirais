@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svvt2 -- 2D vote trading equilibrium"""
+"""Tests for morie.fn.svvt2 -- 2D vote trading equilibrium"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svvt2 import vote_trade_2d
+from morie.fn.svvt2 import vote_trade_2d
 
 
 class TestVoteTrade2d:

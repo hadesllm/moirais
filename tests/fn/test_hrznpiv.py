@@ -1,7 +1,7 @@
 """Tests for hrznpiv.horowitz_npiv_model."""
 import numpy as np
 import pytest
-from moirais.fn.hrznpiv import horowitz_npiv_model
+from morie.fn.hrznpiv import horowitz_npiv_model
 
 
 def test_hrznpiv_basic():

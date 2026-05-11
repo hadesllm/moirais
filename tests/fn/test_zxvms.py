@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxvms -- Spatial von Mises distribution"""
+"""Tests for morie.fn.zxvms -- Spatial von Mises distribution"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxvms import von_mises_sp
+from morie.fn.zxvms import von_mises_sp
 
 
 class TestVonMisesSp:

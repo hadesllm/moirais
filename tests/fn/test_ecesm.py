@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ecesm — Expected calibration error."""
+"""Tests for morie.fn.ecesm — Expected calibration error."""
 import numpy as np
 import pytest
-from moirais.fn.ecesm import ecesm
+from morie.fn.ecesm import ecesm
 
 
 @pytest.fixture()
@@ -63,5 +63,5 @@ def test_n_bins_stored(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.ecesm import cheatsheet
+    from morie.fn.ecesm import cheatsheet
     assert len(cheatsheet()) > 0

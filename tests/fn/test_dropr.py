@@ -1,7 +1,7 @@
 """Tests for dropr.dropout_regularization."""
 import numpy as np
 import pytest
-from moirais.fn.dropr import dropout_regularization
+from morie.fn.dropr import dropout_regularization
 
 
 def test_dropr_basic():

@@ -1,7 +1,7 @@
 """Tests for reinfc.reinforce."""
 import numpy as np
 import pytest
-from moirais.fn.reinfc import reinforce
+from morie.fn.reinfc import reinforce
 
 
 def test_reinfc_basic():

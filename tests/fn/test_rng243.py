@@ -1,7 +1,7 @@
 """Tests for rng243.rangayyan_ch4_log_maximum_phase_expansion."""
 import numpy as np
 import pytest
-from moirais.fn.rng243 import rangayyan_ch4_log_maximum_phase_expansion
+from morie.fn.rng243 import rangayyan_ch4_log_maximum_phase_expansion
 
 
 def test_rng243_basic():

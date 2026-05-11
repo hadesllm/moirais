@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kymkr -- information gain."""
+"""Tests for morie.fn.kymkr -- information gain."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.kymkr import information_gain, kymkr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.kymkr import information_gain, kymkr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestKymkr:

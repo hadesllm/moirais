@@ -1,7 +1,7 @@
 """We suffer more often in imagination than in reality. — Seneca"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u2 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_2
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u2 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_2
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u2_basic():

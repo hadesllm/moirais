@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.tau -- Kendall's tau-b rank correlation."""
+"""Tests for morie.fn.tau -- Kendall's tau-b rank correlation."""
 
 import pytest
-from moirais.fn.tau import kendall_tau
+from morie.fn.tau import kendall_tau
 
 
 class TestKendallTau:

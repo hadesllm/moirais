@@ -1,7 +1,7 @@
 """Tests for spgwr.schabenberger_gwr."""
 import numpy as np
 import pytest
-from moirais.fn.spgwr import schabenberger_gwr
+from morie.fn.spgwr import schabenberger_gwr
 
 
 def test_spgwr_basic():

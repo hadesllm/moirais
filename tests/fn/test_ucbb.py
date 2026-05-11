@@ -1,7 +1,7 @@
 """Tests for ucbb.ucb_bandit."""
 import numpy as np
 import pytest
-from moirais.fn.ucbb import ucb_bandit
+from morie.fn.ucbb import ucb_bandit
 
 
 def test_ucbb_basic():

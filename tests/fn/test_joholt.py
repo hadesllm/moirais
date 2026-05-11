@@ -1,7 +1,7 @@
 """Tests for joholt.joseph_holt_linear."""
 import numpy as np
 import pytest
-from moirais.fn.joholt import joseph_holt_linear
+from morie.fn.joholt import joseph_holt_linear
 
 
 def test_joholt_basic():

@@ -1,7 +1,7 @@
 """Tests for kmstgn.kamath_summarize_from_feedback."""
 import numpy as np
 import pytest
-from moirais.fn.kmstgn import kamath_summarize_from_feedback
+from morie.fn.kmstgn import kamath_summarize_from_feedback
 
 
 def test_kmstgn_basic():

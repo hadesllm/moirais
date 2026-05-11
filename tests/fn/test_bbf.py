@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bbf — Bayes factor (BIC)."""
+"""Tests for morie.fn.bbf — Bayes factor (BIC)."""
 
 import pytest
 
-from moirais.fn.bbf import bayes_factor
+from morie.fn.bbf import bayes_factor
 
 
 class TestBayesFactor:

@@ -1,7 +1,7 @@
 """Test nestgr."""
 import numpy as np
 import pytest
-from moirais.fn.nestgr import nestgr
+from morie.fn.nestgr import nestgr
 
 
 def test_nestgr_basic():

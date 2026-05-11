@@ -1,7 +1,7 @@
 """Tests for cumcif.cumulative_incidence_function."""
 import numpy as np
 import pytest
-from moirais.fn.cumcif import cumulative_incidence_function
+from morie.fn.cumcif import cumulative_incidence_function
 
 
 def test_cumcif_basic():

@@ -1,7 +1,7 @@
 """Tests for multM.multiple_mediators."""
 import numpy as np
 import pytest
-from moirais.fn.multM import multiple_mediators
+from morie.fn.multM import multiple_mediators
 
 
 def test_multM_basic():

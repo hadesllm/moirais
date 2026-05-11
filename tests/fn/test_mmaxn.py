@@ -1,7 +1,7 @@
 """Tests for mmaxn.minmax_normalization."""
 import numpy as np
 import pytest
-from moirais.fn.mmaxn import minmax_normalization
+from morie.fn.mmaxn import minmax_normalization
 
 
 def test_mmaxn_basic():

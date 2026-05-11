@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxmrc -- Mercator projection"""
+"""Tests for morie.fn.zxmrc -- Mercator projection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxmrc import mercator_proj
+from morie.fn.zxmrc import mercator_proj
 
 
 class TestMercatorProj:

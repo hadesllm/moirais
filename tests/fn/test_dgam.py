@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dgam — gamma PDF."""
+"""Tests for morie.fn.dgam — gamma PDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dgam import dgamma
+from morie.fn.dgam import dgamma
 
 
 class TestDgamma:

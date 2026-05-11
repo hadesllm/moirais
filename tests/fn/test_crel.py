@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.crel — composite reliability."""
+"""Tests for morie.fn.crel — composite reliability."""
 
 import pytest
 import numpy as np
-from moirais.fn import crel
+from morie.fn import crel
 
 
 class TestCrel:

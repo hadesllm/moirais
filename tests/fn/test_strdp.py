@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.strdp — Stratified propensity score."""
+"""Tests for morie.fn.strdp — Stratified propensity score."""
 import numpy as np
 import pytest
-from moirais.fn.strdp import strdp
+from morie.fn.strdp import strdp
 
 
 @pytest.fixture()
@@ -54,5 +54,5 @@ def test_method(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.strdp import cheatsheet
+    from morie.fn.strdp import cheatsheet
     assert len(cheatsheet()) > 0

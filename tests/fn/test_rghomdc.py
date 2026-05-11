@@ -1,7 +1,7 @@
 """Tests for rghomdc.rangayyan_homomorphic_deconv."""
 import numpy as np
 import pytest
-from moirais.fn.rghomdc import rangayyan_homomorphic_deconv
+from morie.fn.rghomdc import rangayyan_homomorphic_deconv
 
 
 def test_rghomdc_basic():

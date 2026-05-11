@@ -1,7 +1,7 @@
 """Test adaptg."""
 import numpy as np
 import pytest
-from moirais.fn.adaptg import adaptg
+from morie.fn.adaptg import adaptg
 
 
 def test_adaptg_basic():

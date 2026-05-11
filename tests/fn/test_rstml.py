@@ -1,7 +1,7 @@
 """Tests for rstml: restricted mean survival time."""
 import numpy as np
 import pytest
-from moirais.fn.rstml import rstml
+from morie.fn.rstml import rstml
 
 
 def _make_data(n=200, seed=0):

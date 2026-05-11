@@ -1,7 +1,7 @@
 """Tests for midas.midas_regression."""
 import numpy as np
 import pytest
-from moirais.fn.midas import midas_regression
+from morie.fn.midas import midas_regression
 
 
 def test_midas_basic():

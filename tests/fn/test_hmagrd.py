@@ -1,7 +1,7 @@
 """Tests for hmagrd.geron_autograd."""
 import numpy as np
 import pytest
-from moirais.fn.hmagrd import geron_autograd
+from morie.fn.hmagrd import geron_autograd
 
 
 def test_hmagrd_basic():

@@ -1,7 +1,7 @@
 """Tests for dmlMed.dml_mediation_orthogonal."""
 import numpy as np
 import pytest
-from moirais.fn.dmlMed import dml_mediation_orthogonal
+from morie.fn.dmlMed import dml_mediation_orthogonal
 
 
 def test_dmlMed_basic():

@@ -1,7 +1,7 @@
 """Tests for survipa.ipa_brier."""
 import numpy as np
 import pytest
-from moirais.fn.survipa import ipa_brier
+from morie.fn.survipa import ipa_brier
 
 
 def test_survipa_basic():

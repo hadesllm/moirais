@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.pstdn -- posterior density."""
+"""Tests for morie.fn.pstdn -- posterior density."""
 import numpy as np
-from moirais.fn.pstdn import posterior_density_data, pstdn
+from morie.fn.pstdn import posterior_density_data, pstdn
 
 
 def test_alias():

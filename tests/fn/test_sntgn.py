@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sntgn — sentence by gender."""
+"""Tests for morie.fn.sntgn — sentence by gender."""
 
 import pandas as pd
-from moirais.fn.sntgn import sentence_by_gender, sntgn
+from morie.fn.sntgn import sentence_by_gender, sntgn
 
 
 class TestSentenceByGender:

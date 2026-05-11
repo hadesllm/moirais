@@ -1,6 +1,6 @@
 """Test Swish activation."""
 import numpy as np
-from moirais.fn.swish import swish
+from morie.fn.swish import swish
 
 
 def test_swish_forward():

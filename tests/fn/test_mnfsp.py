@@ -1,7 +1,7 @@
 """Test mnfsp."""
 import numpy as np
 import pytest
-from moirais.fn.mnfsp import mnfsp
+from morie.fn.mnfsp import mnfsp
 
 
 def test_mnfsp_basic():

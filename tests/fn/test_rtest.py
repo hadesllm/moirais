@@ -1,7 +1,7 @@
 """Tests for rtest -- test-retest reliability."""
 import numpy as np
-from moirais.fn.rtest import retest_reliability
-from moirais.fn._containers import ESRes
+from morie.fn.rtest import retest_reliability
+from morie.fn._containers import ESRes
 
 
 class TestRetest:

@@ -1,6 +1,6 @@
 """Test SGD optimizer."""
 import numpy as np
-from moirais.fn.sgdop import sgdop
+from morie.fn.sgdop import sgdop
 
 
 def test_sgdop_basic():

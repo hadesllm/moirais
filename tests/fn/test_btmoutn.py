@@ -1,7 +1,7 @@
 """Tests for btmoutn.boot_m_out_of_n."""
 import numpy as np
 import pytest
-from moirais.fn.btmoutn import boot_m_out_of_n
+from morie.fn.btmoutn import boot_m_out_of_n
 
 
 def test_btmoutn_basic():

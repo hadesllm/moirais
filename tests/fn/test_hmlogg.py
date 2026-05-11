@@ -1,7 +1,7 @@
 """Tests for hmlogg.geron_logistic_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.hmlogg import geron_logistic_gradient
+from morie.fn.hmlogg import geron_logistic_gradient
 
 
 def test_hmlogg_basic():

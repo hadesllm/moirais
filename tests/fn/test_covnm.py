@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.covnm — covering number estimation."""
+"""Tests for morie.fn.covnm — covering number estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.covnm import covnm
+from morie.fn.covnm import covnm
 
 
 def test_basic_output():

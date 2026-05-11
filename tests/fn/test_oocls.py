@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.oocls — Optimal classification."""
+"""Tests for morie.fn.oocls — Optimal classification."""
 import numpy as np
 import pytest
 
-from moirais.fn.oocls import oocls
+from morie.fn.oocls import oocls
 
 
 def test_oocls_smoke():
@@ -13,7 +13,7 @@ def test_oocls_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.oocls import cheatsheet
+    from morie.fn.oocls import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

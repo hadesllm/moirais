@@ -1,7 +1,7 @@
 """Tests for ksr047.kosorok_ch2_kaplan_meier_self_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.ksr047 import kosorok_ch2_kaplan_meier_self_consistency
+from morie.fn.ksr047 import kosorok_ch2_kaplan_meier_self_consistency
 
 
 def test_ksr047_basic():

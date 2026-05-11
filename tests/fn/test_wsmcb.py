@@ -1,7 +1,7 @@
 """Tests for wsmcb.wasserman_dkw_cb."""
 import numpy as np
 import pytest
-from moirais.fn.wsmcb import wasserman_dkw_cb
+from morie.fn.wsmcb import wasserman_dkw_cb
 
 
 def test_wsmcb_basic():

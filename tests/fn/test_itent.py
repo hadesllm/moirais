@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itent — item entropy."""
+"""Tests for morie.fn.itent — item entropy."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.itent import item_entropy
+from morie.fn.itent import item_entropy
 
 
 class TestItemEntropy:

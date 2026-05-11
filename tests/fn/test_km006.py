@@ -1,7 +1,7 @@
 """Tests for km006.kamath_ch2_seq2seq_cross_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.km006 import kamath_ch2_seq2seq_cross_entropy
+from morie.fn.km006 import kamath_ch2_seq2seq_cross_entropy
 
 
 def test_km006_basic():

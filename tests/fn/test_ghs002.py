@@ -1,7 +1,7 @@
 """Tests for ghs002.ghosal_ch2_random_basis_expansion."""
 import numpy as np
 import pytest
-from moirais.fn.ghs002 import ghosal_ch2_random_basis_expansion
+from morie.fn.ghs002 import ghosal_ch2_random_basis_expansion
 
 
 def test_ghs002_basic():

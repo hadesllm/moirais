@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.plcut -- cutting lines plot data."""
+"""Tests for morie.fn.plcut -- cutting lines plot data."""
 import numpy as np
-from moirais.fn.plcut import plot_cutting_lines_data, plcut
+from morie.fn.plcut import plot_cutting_lines_data, plcut
 
 
 def test_alias():

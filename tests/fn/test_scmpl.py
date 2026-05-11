@@ -1,7 +1,7 @@
 """Test complexity (scmpl)."""
 import numpy as np
-from moirais.fn.scmpl import complexity, scmpl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.scmpl import complexity, scmpl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestComplexity:

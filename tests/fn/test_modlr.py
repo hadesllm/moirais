@@ -1,6 +1,6 @@
 """Test modlr."""
 import pytest
-from moirais.fn.modlr import modular_form
+from morie.fn.modlr import modular_form
 
 
 def test_modlr_e4():

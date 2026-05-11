@@ -1,7 +1,7 @@
 """Tests for feynAI.ai_feynman."""
 import numpy as np
 import pytest
-from moirais.fn.feynAI import ai_feynman
+from morie.fn.feynAI import ai_feynman
 
 
 def test_feynAI_basic():

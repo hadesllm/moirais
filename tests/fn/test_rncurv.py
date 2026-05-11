@@ -1,7 +1,7 @@
 """Tests for rncurv."""
 import numpy as np
 import pytest
-from moirais.fn.rncurv import rncurv
+from morie.fn.rncurv import rncurv
 
 
 def test_rncurv_basic():
@@ -27,5 +27,5 @@ def test_rncurv_no_data():
 
 
 def test_rncurv_alias():
-    from moirais.fn.rncurv import rncurv
+    from morie.fn.rncurv import rncurv
     assert rncurv is rncurv

@@ -1,7 +1,7 @@
 """Test hyret."""
 import numpy as np
 import pytest
-from moirais.fn.hyret import hyret
+from morie.fn.hyret import hyret
 
 
 def test_hyret_basic():

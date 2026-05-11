@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.eps2 -- Epsilon-squared (Kelley, 1935)."""
+"""Tests for morie.fn.eps2 -- Epsilon-squared (Kelley, 1935)."""
 
 import pytest
-from moirais.fn.eps2 import epsilon_squared
-from moirais.fn._containers import ESRes
+from morie.fn.eps2 import epsilon_squared
+from morie.fn._containers import ESRes
 
 
 class TestEpsilonSquared:

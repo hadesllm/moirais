@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsmvb -- Moving block bootstrap spatial"""
+"""Tests for morie.fn.zsmvb -- Moving block bootstrap spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsmvb import moving_block_boot
+from morie.fn.zsmvb import moving_block_boot
 
 
 class TestMovingBlockBoot:

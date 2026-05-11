@@ -1,7 +1,7 @@
 """Test seeby."""
 import numpy as np
 import pytest
-from moirais.fn.seeby import seeby
+from morie.fn.seeby import seeby
 
 
 def test_seeby_basic():

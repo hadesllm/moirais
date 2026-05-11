@@ -1,7 +1,7 @@
 """Tests for linkmm.linking_meanmean."""
 import numpy as np
 import pytest
-from moirais.fn.linkmm import linking_meanmean
+from morie.fn.linkmm import linking_meanmean
 
 
 def test_linkmm_basic():

@@ -1,7 +1,7 @@
 """Test nrstd."""
 import numpy as np
 import pytest
-from moirais.fn.nrstd import nrstd
+from morie.fn.nrstd import nrstd
 
 
 def test_nrstd_basic():

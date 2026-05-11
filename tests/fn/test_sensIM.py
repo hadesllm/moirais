@@ -1,7 +1,7 @@
 """Tests for sensIM.imai_sensitivity_rho."""
 import numpy as np
 import pytest
-from moirais.fn.sensIM import imai_sensitivity_rho
+from morie.fn.sensIM import imai_sensitivity_rho
 
 
 def test_sensIM_basic():

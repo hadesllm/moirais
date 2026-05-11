@@ -1,7 +1,7 @@
 """Test tsgwt."""
 import numpy as np
 import pytest
-from moirais.fn.tsgwt import tsgwt
+from morie.fn.tsgwt import tsgwt
 
 
 def test_tsgwt_basic():

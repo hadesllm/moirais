@@ -1,7 +1,7 @@
 """Tests for crkbsg.cokriging."""
 import numpy as np
 import pytest
-from moirais.fn.crkbsg import cokriging
+from morie.fn.crkbsg import cokriging
 
 
 def test_crkbsg_basic():

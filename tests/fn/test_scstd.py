@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scstd — score standardization."""
+"""Tests for morie.fn.scstd — score standardization."""
 
 import numpy as np
 import pytest
-from moirais.fn.scstd import score_standardize
+from morie.fn.scstd import score_standardize
 
 
 class TestScoreStandardize:

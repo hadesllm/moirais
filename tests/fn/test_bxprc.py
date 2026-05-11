@@ -1,7 +1,7 @@
 """Tests for bxprc.box_pierce_test."""
 import numpy as np
 import pytest
-from moirais.fn.bxprc import box_pierce_test
+from morie.fn.bxprc import box_pierce_test
 
 
 def test_bxprc_basic():

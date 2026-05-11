@@ -1,7 +1,7 @@
 """Tests for bkintr.burkov_ngram_interpolation."""
 import numpy as np
 import pytest
-from moirais.fn.bkintr import burkov_ngram_interpolation
+from morie.fn.bkintr import burkov_ngram_interpolation
 
 
 def test_bkintr_basic():

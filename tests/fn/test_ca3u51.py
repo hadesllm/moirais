@@ -1,7 +1,7 @@
 """Tests for ca3u51.ca_chapter_3_unnumbered_51."""
 import numpy as np
 import pytest
-from moirais.fn.ca3u51 import ca_chapter_3_unnumbered_51
+from morie.fn.ca3u51 import ca_chapter_3_unnumbered_51
 
 
 def test_ca3u51_basic():

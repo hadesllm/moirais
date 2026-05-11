@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ukrig — Universal kriging with trend."""
+"""Tests for morie.fn.ukrig — Universal kriging with trend."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ukrig import ukrig
+from morie.fn.ukrig import ukrig
 
 
 class TestUkrig:

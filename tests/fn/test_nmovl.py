@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmovl -- Party overlap index"""
+"""Tests for morie.fn.nmovl -- Party overlap index"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmovl import party_overlap
+from morie.fn.nmovl import party_overlap
 
 
 class TestPartyOverlap:

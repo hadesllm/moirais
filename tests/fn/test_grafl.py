@@ -1,7 +1,7 @@
 """Tests for grafl.graphlet_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.grafl import graphlet_kernel
+from morie.fn.grafl import graphlet_kernel
 
 
 def test_grafl_basic():

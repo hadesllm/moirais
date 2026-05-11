@@ -1,7 +1,7 @@
 """Test cusum_detect (cusdt)."""
 import numpy as np
-from moirais.fn.cusdt import cusum_detect, cusdt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cusdt import cusum_detect, cusdt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCusumDetect:

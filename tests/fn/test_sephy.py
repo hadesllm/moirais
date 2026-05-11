@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.sephy — separating hyperplane."""
+"""Tests for morie.fn.sephy — separating hyperplane."""
 import numpy as np
-from moirais.fn.sephy import sephy
+from morie.fn.sephy import sephy
 
 
 def test_sephy_smoke():
@@ -13,7 +13,7 @@ def test_sephy_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sephy import cheatsheet
+    from morie.fn.sephy import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

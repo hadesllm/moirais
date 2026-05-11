@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.hubbl -- Hubble parameter."""
+"""Tests for morie.fn.hubbl -- Hubble parameter."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.hubbl import hubbl
+from morie.fn.hubbl import hubbl
 
 
 def test_returns_dict():

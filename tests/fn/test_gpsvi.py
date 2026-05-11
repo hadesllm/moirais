@@ -1,7 +1,7 @@
 """Tests for gpsvi.gp_stochastic_vi."""
 import numpy as np
 import pytest
-from moirais.fn.gpsvi import gp_stochastic_vi
+from morie.fn.gpsvi import gp_stochastic_vi
 
 
 def test_gpsvi_basic():

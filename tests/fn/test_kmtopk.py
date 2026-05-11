@@ -1,7 +1,7 @@
 """Tests for kmtopk.kamath_moe_top_k_gating."""
 import numpy as np
 import pytest
-from moirais.fn.kmtopk import kamath_moe_top_k_gating
+from morie.fn.kmtopk import kamath_moe_top_k_gating
 
 
 def test_kmtopk_basic():

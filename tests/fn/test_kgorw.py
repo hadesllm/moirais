@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgorw -- Ordinary kriging weights"""
+"""Tests for morie.fn.kgorw -- Ordinary kriging weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgorw import ok_weights
+from morie.fn.kgorw import ok_weights
 
 
 class TestOkWeights:

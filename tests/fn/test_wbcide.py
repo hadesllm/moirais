@@ -1,7 +1,7 @@
 """Tests for wbcide.wooldridge_bjs_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.wbcide import wooldridge_bjs_estimator
+from morie.fn.wbcide import wooldridge_bjs_estimator
 
 
 def test_wbcide_basic():

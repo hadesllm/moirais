@@ -1,7 +1,7 @@
 """Tests for sptrn.spatial_trend_surface."""
 import numpy as np
 import pytest
-from moirais.fn.sptrn import spatial_trend_surface
+from morie.fn.sptrn import spatial_trend_surface
 
 
 def test_sptrn_basic():

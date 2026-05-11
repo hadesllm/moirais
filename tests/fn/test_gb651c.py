@@ -1,7 +1,7 @@
 """Tests for gb651c.gibbons_ctrl_median_curtail."""
 import numpy as np
 import pytest
-from moirais.fn.gb651c import gibbons_ctrl_median_curtail
+from morie.fn.gb651c import gibbons_ctrl_median_curtail
 
 
 def test_gb651c_basic():

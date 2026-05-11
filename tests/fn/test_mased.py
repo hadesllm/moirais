@@ -1,7 +1,7 @@
 """Test mased."""
 import numpy as np
 import pytest
-from moirais.fn.mased import mased
+from morie.fn.mased import mased
 
 
 def test_mased_basic():

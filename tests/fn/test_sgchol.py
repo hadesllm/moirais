@@ -1,6 +1,6 @@
 """Tests for Cholesky GRF simulation."""
 import numpy as np
-from moirais.fn.sgchol import sgchol
+from morie.fn.sgchol import sgchol
 
 
 def test_sgchol_smoke():

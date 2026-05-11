@@ -1,7 +1,7 @@
 """Tests for spmrit.schabenberger_moran_i_residuals."""
 import numpy as np
 import pytest
-from moirais.fn.spmrit import schabenberger_moran_i_residuals
+from morie.fn.spmrit import schabenberger_moran_i_residuals
 
 
 def test_spmrit_basic():

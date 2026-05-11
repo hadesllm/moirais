@@ -1,7 +1,7 @@
 """Tests for esttsl.theta_method."""
 import numpy as np
 import pytest
-from moirais.fn.esttsl import theta_method
+from morie.fn.esttsl import theta_method
 
 
 def test_esttsl_basic():

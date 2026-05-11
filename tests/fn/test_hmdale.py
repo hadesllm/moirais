@@ -1,7 +1,7 @@
 """Tests for hmdale.geron_dalle."""
 import numpy as np
 import pytest
-from moirais.fn.hmdale import geron_dalle
+from morie.fn.hmdale import geron_dalle
 
 
 def test_hmdale_basic():

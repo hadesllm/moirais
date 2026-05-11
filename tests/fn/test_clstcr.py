@@ -1,7 +1,7 @@
 """Tests for clstcr.cluster_causal_inference."""
 import numpy as np
 import pytest
-from moirais.fn.clstcr import cluster_causal_inference
+from morie.fn.clstcr import cluster_causal_inference
 
 
 def test_clstcr_basic():

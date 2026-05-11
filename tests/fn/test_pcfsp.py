@@ -1,7 +1,7 @@
 """Test pcfsp."""
 import numpy as np
 import pytest
-from moirais.fn.pcfsp import pcfsp
+from morie.fn.pcfsp import pcfsp
 
 
 def test_pcfsp_basic():

@@ -3,8 +3,8 @@
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.ahsoka import anova_twoway, ahsoka
-from moirais.fn._containers import TestResult
+from morie.fn.ahsoka import anova_twoway, ahsoka
+from morie.fn._containers import TestResult
 
 
 @pytest.fixture()

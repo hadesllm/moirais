@@ -1,7 +1,7 @@
 """Tests for rcov.py - Riemannian covariance."""
 import numpy as np
 import pytest
-from moirais.fn.rcov import rcov_fn, rcov
+from morie.fn.rcov import rcov_fn, rcov
 
 
 def test_rcov_returns_descriptive_result():

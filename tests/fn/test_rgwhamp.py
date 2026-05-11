@@ -1,7 +1,7 @@
 """Tests for rgwhamp.rangayyan_hamming_window."""
 import numpy as np
 import pytest
-from moirais.fn.rgwhamp import rangayyan_hamming_window
+from morie.fn.rgwhamp import rangayyan_hamming_window
 
 
 def test_rgwhamp_basic():

@@ -1,7 +1,7 @@
 """Tests for htvar1.ht_variance."""
 import numpy as np
 import pytest
-from moirais.fn.htvar1 import ht_variance
+from morie.fn.htvar1 import ht_variance
 
 
 def test_htvar1_basic():

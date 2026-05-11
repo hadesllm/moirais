@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.ht_tot — Horvitz-Thompson total estimator."""
+"""Tests for morie.fn.ht_tot — Horvitz-Thompson total estimator."""
 
 import math
 
 import numpy as np
 import pytest
 
-from moirais.fn.ht_tot import horvitz_thompson_total
+from morie.fn.ht_tot import horvitz_thompson_total
 
 
 def test_returns_dict_with_keys():

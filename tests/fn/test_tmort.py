@@ -5,7 +5,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.fn.tmort import temperature_mortality_vcurve, tmort
+from morie.fn.tmort import temperature_mortality_vcurve, tmort
 
 
 def test_tmort_at_mmt_rr_is_one():

@@ -1,7 +1,7 @@
 """Test mtsbd."""
 import numpy as np
 import pytest
-from moirais.fn.mtsbd import mtsbd
+from morie.fn.mtsbd import mtsbd
 
 
 def test_mtsbd_basic():

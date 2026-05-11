@@ -1,7 +1,7 @@
 """Tests for gb2312.gibbons_edf_consistent."""
 import numpy as np
 import pytest
-from moirais.fn.gb2312 import gibbons_edf_consistent
+from morie.fn.gb2312 import gibbons_edf_consistent
 
 
 def test_gb2312_basic():

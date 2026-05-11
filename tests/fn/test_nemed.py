@@ -1,7 +1,7 @@
 """Tests for nemed.nested_counterfactual_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.nemed import nested_counterfactual_mediation
+from morie.fn.nemed import nested_counterfactual_mediation
 
 
 def test_nemed_basic():

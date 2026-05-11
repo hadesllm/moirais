@@ -1,7 +1,7 @@
 """Tests for trimit.weight_trimming."""
 import numpy as np
 import pytest
-from moirais.fn.trimit import weight_trimming
+from morie.fn.trimit import weight_trimming
 
 
 def test_trimit_basic():

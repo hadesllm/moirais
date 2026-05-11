@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.strpp -- stress per point."""
+"""Tests for morie.fn.strpp -- stress per point."""
 
 import numpy as np
-from moirais.fn.strpp import stress_per_point, strpp
+from morie.fn.strpp import stress_per_point, strpp
 
 
 def test_strpp_smoke():

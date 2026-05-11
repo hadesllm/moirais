@@ -1,7 +1,7 @@
 """Tests for tmscore.tm_score."""
 import numpy as np
 import pytest
-from moirais.fn.tmscore import tm_score
+from morie.fn.tmscore import tm_score
 
 
 def test_tmscore_basic():

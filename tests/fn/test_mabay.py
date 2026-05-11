@@ -1,7 +1,7 @@
 """Tests for mabay.ma_bayes_random_effects."""
 import numpy as np
 import pytest
-from moirais.fn.mabay import ma_bayes_random_effects
+from morie.fn.mabay import ma_bayes_random_effects
 
 
 def test_mabay_basic():

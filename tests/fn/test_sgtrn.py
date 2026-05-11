@@ -1,6 +1,6 @@
 """Tests for trans-Gaussian kriging."""
 import numpy as np
-from moirais.fn.sgtrn import sgtrn
+from morie.fn.sgtrn import sgtrn
 
 
 def test_sgtrn_log():

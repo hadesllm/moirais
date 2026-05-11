@@ -1,6 +1,6 @@
 """Tests for correlation_matrix."""
 import numpy as np, pandas as pd, pytest
-from moirais.fn.corrm import correlation_matrix
+from morie.fn.corrm import correlation_matrix
 
 class TestCorrm:
     def test_basic(self):

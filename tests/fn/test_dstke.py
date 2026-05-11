@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dstke -- Kernel-smoothed hazard rate."""
+"""Tests for morie.fn.dstke -- Kernel-smoothed hazard rate."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.dstke import hazard_kernel, dstke
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dstke import hazard_kernel, dstke
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDstke:

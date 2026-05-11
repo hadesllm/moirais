@@ -1,7 +1,7 @@
 """Tests for hmdrp.geron_dropout."""
 import numpy as np
 import pytest
-from moirais.fn.hmdrp import geron_dropout
+from morie.fn.hmdrp import geron_dropout
 
 
 def test_hmdrp_basic():

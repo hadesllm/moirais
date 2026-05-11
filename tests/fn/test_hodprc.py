@@ -1,7 +1,7 @@
 """Tests for hodprc.hodrick_prescott."""
 import numpy as np
 import pytest
-from moirais.fn.hodprc import hodrick_prescott
+from morie.fn.hodprc import hodrick_prescott
 
 
 def test_hodprc_basic():

@@ -1,7 +1,7 @@
 """Tests for ksr035.kosorok_ch2_donsker_bracketing_integral."""
 import numpy as np
 import pytest
-from moirais.fn.ksr035 import kosorok_ch2_donsker_bracketing_integral
+from morie.fn.ksr035 import kosorok_ch2_donsker_bracketing_integral
 
 
 def test_ksr035_basic():

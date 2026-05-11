@@ -1,7 +1,7 @@
 """Tests for rgmtnart.rangayyan_motion_artifact."""
 import numpy as np
 import pytest
-from moirais.fn.rgmtnart import rangayyan_motion_artifact
+from morie.fn.rgmtnart import rangayyan_motion_artifact
 
 
 def test_rgmtnart_basic():

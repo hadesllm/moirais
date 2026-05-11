@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zerad -- Radiation model (mobility)"""
+"""Tests for morie.fn.zerad -- Radiation model (mobility)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zerad import radiation_model
+from morie.fn.zerad import radiation_model
 
 
 class TestRadiationModel:

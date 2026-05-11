@@ -1,7 +1,7 @@
 """Tests for hmelb.geron_elbo."""
 import numpy as np
 import pytest
-from moirais.fn.hmelb import geron_elbo
+from morie.fn.hmelb import geron_elbo
 
 
 def test_hmelb_basic():

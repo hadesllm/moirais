@@ -1,7 +1,7 @@
 """Test wqalg."""
 import numpy as np
 import pytest
-from moirais.fn.wqalg import wqalg
+from morie.fn.wqalg import wqalg
 
 
 def test_wqalg_basic():

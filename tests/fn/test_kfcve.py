@@ -1,7 +1,7 @@
 """Tests for kfcve.k_fold_cv_error."""
 import numpy as np
 import pytest
-from moirais.fn.kfcve import k_fold_cv_error
+from morie.fn.kfcve import k_fold_cv_error
 
 
 def test_kfcve_basic():

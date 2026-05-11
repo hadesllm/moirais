@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.scnrm — score norms."""
+"""Tests for morie.fn.scnrm — score norms."""
 
 import numpy as np
-from moirais.fn.scnrm import score_norms
+from morie.fn.scnrm import score_norms
 
 
 class TestScoreNorms:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.knn -- k-Nearest Neighbors."""
+"""Tests for morie.fn.knn -- k-Nearest Neighbors."""
 
 import numpy as np
 import pytest
-from moirais.fn.knn import knn_classify
+from morie.fn.knn import knn_classify
 
 
 class TestKnnClassify:

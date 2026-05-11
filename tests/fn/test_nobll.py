@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.nobll -- bill outcome positions."""
+"""Tests for morie.fn.nobll -- bill outcome positions."""
 import numpy as np
-from moirais.fn.nobll import nominate_bill_params, nobll
+from morie.fn.nobll import nominate_bill_params, nobll
 
 
 def test_alias():

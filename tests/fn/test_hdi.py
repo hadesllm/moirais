@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hdi -- Highest Density Interval."""
+"""Tests for morie.fn.hdi -- Highest Density Interval."""
 
 import numpy as np
 import pytest
-from moirais.fn.hdi import highest_density_interval
+from morie.fn.hdi import highest_density_interval
 
 
 class TestHDI:

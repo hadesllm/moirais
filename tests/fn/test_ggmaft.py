@@ -1,7 +1,7 @@
 """Tests for ggmaft.generalized_gamma_aft."""
 import numpy as np
 import pytest
-from moirais.fn.ggmaft import generalized_gamma_aft
+from morie.fn.ggmaft import generalized_gamma_aft
 
 
 def test_ggmaft_basic():

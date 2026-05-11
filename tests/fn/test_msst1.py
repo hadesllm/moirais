@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msst1 -- Raw stress (Kruskal stress-1)"""
+"""Tests for morie.fn.msst1 -- Raw stress (Kruskal stress-1)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msst1 import stress_raw
+from morie.fn.msst1 import stress_raw
 
 
 class TestStressRaw:

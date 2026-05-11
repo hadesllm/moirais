@@ -1,7 +1,7 @@
 """Tests for rgldsp.rangayyan_dictionary_sparse."""
 import numpy as np
 import pytest
-from moirais.fn.rgldsp import rangayyan_dictionary_sparse
+from morie.fn.rgldsp import rangayyan_dictionary_sparse
 
 
 def test_rgldsp_basic():

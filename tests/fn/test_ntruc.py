@@ -1,7 +1,7 @@
 """Test ntru_encrypt."""
-from moirais.fn._containers import CryptoResult
-from moirais.fn.ntru import ntru_keygen
-from moirais.fn.ntruc import ntru_encrypt, ntruc
+from morie.fn._containers import CryptoResult
+from morie.fn.ntru import ntru_keygen
+from morie.fn.ntruc import ntru_encrypt, ntruc
 
 
 class TestNtruEncrypt:

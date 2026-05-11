@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmwnw -- W-NOMINATE dimension weights"""
+"""Tests for morie.fn.nmwnw -- W-NOMINATE dimension weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmwnw import wnominate_weight
+from morie.fn.nmwnw import wnominate_weight
 
 
 class TestWnominateWeight:

@@ -1,7 +1,7 @@
 """Tests for kmcai.kamath_constitutional_ai_loop."""
 import numpy as np
 import pytest
-from moirais.fn.kmcai import kamath_constitutional_ai_loop
+from morie.fn.kmcai import kamath_constitutional_ai_loop
 
 
 def test_kmcai_basic():

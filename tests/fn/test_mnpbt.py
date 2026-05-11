@@ -1,7 +1,7 @@
 """Tests for mnpbt.multinomial_probit_spatial."""
 import numpy as np
 import pytest
-from moirais.fn.mnpbt import multinomial_probit_spatial
+from morie.fn.mnpbt import multinomial_probit_spatial
 
 
 def test_mnpbt_basic():

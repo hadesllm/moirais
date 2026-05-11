@@ -1,7 +1,7 @@
 """Tests for hubrho.huber_loss."""
 import numpy as np
 import pytest
-from moirais.fn.hubrho import huber_loss
+from morie.fn.hubrho import huber_loss
 
 
 def test_hubrho_basic():

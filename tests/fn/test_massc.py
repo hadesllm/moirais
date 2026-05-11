@@ -1,7 +1,7 @@
 """Test massc."""
 import numpy as np
 import pytest
-from moirais.fn.massc import massc
+from morie.fn.massc import massc
 
 
 def test_massc_basic():

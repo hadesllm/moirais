@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.nutss -- No-U-Turn Sampler."""
+"""Tests for morie.fn.nutss -- No-U-Turn Sampler."""
 
 import numpy as np
-from moirais.fn.nutss import nuts_sampler
+from morie.fn.nutss import nuts_sampler
 
 
 def _log_normal(x):

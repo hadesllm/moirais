@@ -1,7 +1,7 @@
 """Test gdmrg."""
 import numpy as np
 import pytest
-from moirais.fn.gdmrg import gdmrg
+from morie.fn.gdmrg import gdmrg
 
 
 def test_gdmrg_basic():

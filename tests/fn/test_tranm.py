@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tranm -- transmission tree reconstruction."""
+"""Tests for morie.fn.tranm -- transmission tree reconstruction."""
 
 import numpy as np
 import pytest
-from moirais.fn.tranm import transmission_tree
+from morie.fn.tranm import transmission_tree
 
 
 class TestTransmissionTree:

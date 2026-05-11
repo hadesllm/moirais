@@ -1,6 +1,6 @@
 """Tests for chird.py - Chirp detection."""
 import numpy as np
-from moirais.fn.chird import chirp_detect, chird
+from morie.fn.chird import chirp_detect, chird
 
 
 def test_chird_returns_descriptive_result():

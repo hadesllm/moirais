@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.chand -- Calinski-Harabasz index."""
+"""Tests for morie.fn.chand -- Calinski-Harabasz index."""
 
 import numpy as np
-from moirais.fn.chand import calinski_harabasz, chand
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.chand import calinski_harabasz, chand
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCalinskiHarabasz:

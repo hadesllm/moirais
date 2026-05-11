@@ -1,7 +1,7 @@
 """Tests for alf3df.af3_diffusion_step."""
 import numpy as np
 import pytest
-from moirais.fn.alf3df import af3_diffusion_step
+from morie.fn.alf3df import af3_diffusion_step
 
 
 def test_alf3df_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rsrve."""
+"""Tests for morie.fn.rsrve."""
 import numpy as np
-from moirais.fn.rsrve import rsrve
+from morie.fn.rsrve import rsrve
 
 
 def test_rsrve_smoke():
@@ -14,7 +14,7 @@ def test_rsrve_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.rsrve import cheatsheet
+    from morie.fn.rsrve import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

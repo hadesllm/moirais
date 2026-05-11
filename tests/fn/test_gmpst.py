@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gmpst -- geometric mean probability."""
+"""Tests for morie.fn.gmpst -- geometric mean probability."""
 import numpy as np
-from moirais.fn.gmpst import gmp_statistic, gmpst
+from morie.fn.gmpst import gmp_statistic, gmpst
 
 
 def test_alias():

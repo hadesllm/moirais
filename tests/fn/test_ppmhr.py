@@ -1,7 +1,7 @@
 """Test ppmhr."""
 import numpy as np
 import pytest
-from moirais.fn.ppmhr import ppmhr
+from morie.fn.ppmhr import ppmhr
 
 
 def test_ppmhr_basic():

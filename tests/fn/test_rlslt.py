@@ -1,6 +1,6 @@
 """Tests for rlslt.py - RLS lattice adaptive filter."""
 import numpy as np
-from moirais.fn.rlslt import rls_lattice_filter_fn, rlslt
+from morie.fn.rlslt import rls_lattice_filter_fn, rlslt
 
 
 def test_rlslt_returns_signal_result():

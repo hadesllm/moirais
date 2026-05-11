@@ -1,7 +1,7 @@
 """Test csaor."""
 import numpy as np
 import pytest
-from moirais.fn.csaor import csaor
+from morie.fn.csaor import csaor
 
 
 def test_csaor_basic():

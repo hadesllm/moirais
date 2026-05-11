@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.pstcp -- compare posterior parameters."""
+"""Tests for morie.fn.pstcp -- compare posterior parameters."""
 import numpy as np
-from moirais.fn.pstcp import posterior_compare_params, pstcp
+from morie.fn.pstcp import posterior_compare_params, pstcp
 
 
 def test_alias():

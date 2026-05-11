@@ -1,7 +1,7 @@
 """Tests for likemc.likelihood_mcmc_epi."""
 import numpy as np
 import pytest
-from moirais.fn.likemc import likelihood_mcmc_epi
+from morie.fn.likemc import likelihood_mcmc_epi
 
 
 def test_likemc_basic():

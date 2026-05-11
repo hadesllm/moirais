@@ -1,7 +1,7 @@
 """Tests for btsieve.boot_sieve_general."""
 import numpy as np
 import pytest
-from moirais.fn.btsieve import boot_sieve_general
+from morie.fn.btsieve import boot_sieve_general
 
 
 def test_btsieve_basic():

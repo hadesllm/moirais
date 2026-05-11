@@ -1,6 +1,6 @@
 """Tests for QQ plot kriging."""
 import numpy as np
-from moirais.fn.sgqqk import sgqqk
+from morie.fn.sgqqk import sgqqk
 
 
 def test_sgqqk_smoke():
@@ -14,7 +14,7 @@ def test_sgqqk_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgqqk import cheatsheet
+    from morie.fn.sgqqk import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

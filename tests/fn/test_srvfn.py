@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.srvfn -- Survival function from life table."""
+"""Tests for morie.fn.srvfn -- Survival function from life table."""
 
 import pytest
-from moirais.fn.srvfn import survival_function
+from morie.fn.srvfn import survival_function
 
 
 class TestSurvivalFunction:

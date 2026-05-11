@@ -1,7 +1,7 @@
 """Tests for drclt.dr_clustered_did."""
 import numpy as np
 import pytest
-from moirais.fn.drclt import dr_clustered_did
+from morie.fn.drclt import dr_clustered_did
 
 
 def test_drclt_basic():

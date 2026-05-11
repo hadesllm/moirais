@@ -1,7 +1,7 @@
 """Tests for nde.natural_direct_effect."""
 import numpy as np
 import pytest
-from moirais.fn.nde import natural_direct_effect
+from morie.fn.nde import natural_direct_effect
 
 
 def test_nde_basic():

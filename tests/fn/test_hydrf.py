@@ -1,7 +1,7 @@
 """Test hydrf."""
 import numpy as np
 import pytest
-from moirais.fn.hydrf import hydrf
+from morie.fn.hydrf import hydrf
 
 
 def test_hydrf_basic():

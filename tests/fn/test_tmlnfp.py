@@ -1,7 +1,7 @@
 """Tests for tmlnfp.tmle_non_inferiority."""
 import numpy as np
 import pytest
-from moirais.fn.tmlnfp import tmle_non_inferiority
+from morie.fn.tmlnfp import tmle_non_inferiority
 
 
 def test_tmlnfp_basic():

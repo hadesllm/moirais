@@ -1,7 +1,7 @@
 """Tests for flowmm.max_flow_min_cut."""
 import numpy as np
 import pytest
-from moirais.fn.flowmm import max_flow_min_cut
+from morie.fn.flowmm import max_flow_min_cut
 
 
 def test_flowmm_basic():

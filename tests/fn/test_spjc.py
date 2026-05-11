@@ -1,7 +1,7 @@
 """Tests for spjc.schabenberger_join_count."""
 import numpy as np
 import pytest
-from moirais.fn.spjc import schabenberger_join_count
+from morie.fn.spjc import schabenberger_join_count
 
 
 def test_spjc_basic():

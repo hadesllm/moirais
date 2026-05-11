@@ -1,7 +1,7 @@
 """Tests for agtmpd.alphazero_temp_decay."""
 import numpy as np
 import pytest
-from moirais.fn.agtmpd import alphazero_temp_decay
+from morie.fn.agtmpd import alphazero_temp_decay
 
 
 def test_agtmpd_basic():

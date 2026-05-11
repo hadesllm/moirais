@@ -1,7 +1,7 @@
 """Tests for dnnmt.dnn_multitrait."""
 import numpy as np
 import pytest
-from moirais.fn.dnnmt import dnn_multitrait
+from morie.fn.dnnmt import dnn_multitrait
 
 
 def test_dnnmt_basic():

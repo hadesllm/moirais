@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bpois -- Bayesian Poisson model."""
+"""Tests for morie.fn.bpois -- Bayesian Poisson model."""
 
 import numpy as np
-from moirais.fn.bpois import bayesian_poisson
+from morie.fn.bpois import bayesian_poisson
 
 
 def test_returns_dict():

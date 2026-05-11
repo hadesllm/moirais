@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ird -- incidence rate difference."""
+"""Tests for morie.fn.ird -- incidence rate difference."""
 
 import pytest
-from moirais.fn.ird import incidence_rate_difference
+from morie.fn.ird import incidence_rate_difference
 
 
 class TestIncidenceRateDifference:

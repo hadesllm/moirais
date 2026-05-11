@@ -1,7 +1,7 @@
 """Tests for tmlcps.tmle_continuous_treatment."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcps import tmle_continuous_treatment
+from morie.fn.tmlcps import tmle_continuous_treatment
 
 
 def test_tmlcps_basic():

@@ -1,7 +1,7 @@
 """Tests for ttsAn.twitter_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.ttsAn import twitter_anomaly
+from morie.fn.ttsAn import twitter_anomaly
 
 
 def test_ttsAn_basic():

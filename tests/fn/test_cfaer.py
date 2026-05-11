@@ -1,7 +1,7 @@
 """Tests for cfaer -- Expected parameter change."""
 import pandas as pd
-from moirais.fn.cfaer import cfa_expected_change
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cfaer import cfa_expected_change
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCfaExpectedChange:

@@ -1,7 +1,7 @@
 """Test soril."""
 import numpy as np
 import pytest
-from moirais.fn.soril import soril
+from morie.fn.soril import soril
 
 
 def test_soril_basic():

@@ -1,7 +1,7 @@
 """Tests for crrpep.pepe_mori."""
 import numpy as np
 import pytest
-from moirais.fn.crrpep import pepe_mori
+from morie.fn.crrpep import pepe_mori
 
 
 def test_crrpep_basic():

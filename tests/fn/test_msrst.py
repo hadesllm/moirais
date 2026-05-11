@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msrst -- R-stress measure"""
+"""Tests for morie.fn.msrst -- R-stress measure"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msrst import rstress
+from morie.fn.msrst import rstress
 
 
 class TestRstress:

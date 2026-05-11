@@ -1,7 +1,7 @@
 """Tests for causovlap.causal_overlap_diagnostic."""
 import numpy as np
 import pytest
-from moirais.fn.causovlap import causal_overlap_diagnostic
+from morie.fn.causovlap import causal_overlap_diagnostic
 
 
 def test_causovlap_basic():

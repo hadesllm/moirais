@@ -1,7 +1,7 @@
 """Tests for gphyp."""
 import numpy as np
 import pytest
-from moirais.fn.gphyp import gphyp
+from morie.fn.gphyp import gphyp
 
 
 def test_gphyp_basic():
@@ -27,5 +27,5 @@ def test_gphyp_no_data():
 
 
 def test_gphyp_alias():
-    from moirais.fn.gphyp import gphyp
+    from morie.fn.gphyp import gphyp
     assert gphyp is gphyp

@@ -1,7 +1,7 @@
 """Test nbcvd."""
 import numpy as np
 import pytest
-from moirais.fn.nbcvd import nbcvd
+from morie.fn.nbcvd import nbcvd
 
 
 def test_nbcvd_basic():

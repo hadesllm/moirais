@@ -1,7 +1,7 @@
 """Tests for cmark.causal_markov_condition."""
 import numpy as np
 import pytest
-from moirais.fn.cmark import causal_markov_condition
+from morie.fn.cmark import causal_markov_condition
 
 
 def test_cmark_basic():

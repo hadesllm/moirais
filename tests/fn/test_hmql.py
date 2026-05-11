@@ -1,7 +1,7 @@
 """Tests for hmql.geron_q_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmql import geron_q_learning
+from morie.fn.hmql import geron_q_learning
 
 
 def test_hmql_basic():

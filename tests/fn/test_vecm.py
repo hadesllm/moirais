@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vecm — Vector Error Correction Model."""
+"""Tests for morie.fn.vecm — Vector Error Correction Model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vecm import vecm
+from morie.fn.vecm import vecm
 
 
 class TestVecm:

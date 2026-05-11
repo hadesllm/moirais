@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svbrd -- Borda count in spatial model"""
+"""Tests for morie.fn.svbrd -- Borda count in spatial model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svbrd import borda_spatial
+from morie.fn.svbrd import borda_spatial
 
 
 class TestBordaSpatial:

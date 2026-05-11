@@ -1,7 +1,7 @@
 """Test albers."""
 import numpy as np
 import pytest
-from moirais.fn.albers import albers
+from morie.fn.albers import albers
 
 
 def test_albers_basic():

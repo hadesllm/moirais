@@ -1,13 +1,13 @@
-"""Tests for moirais.fn.dat — moirais.db path resolution."""
+"""Tests for morie.fn.dat — morie.db path resolution."""
 
 from pathlib import Path
 
-from moirais.fn.dat import dat, moirais_db
+from morie.fn.dat import dat, morie_db
 
 
 def test_alias_is_same_function():
-    """dat and moirais_db are the same object."""
-    assert dat is moirais_db
+    """dat and morie_db are the same object."""
+    assert dat is morie_db
 
 
 def test_returns_path():
@@ -16,10 +16,10 @@ def test_returns_path():
     assert isinstance(result, Path)
 
 
-def test_path_ends_with_moirais_db():
-    """The returned path ends with moirais.db."""
+def test_path_ends_with_morie_db():
+    """The returned path ends with morie.db."""
     result = dat()
-    assert result.name == "moirais.db"
+    assert result.name == "morie.db"
 
 
 def test_callable():

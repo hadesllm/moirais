@@ -1,7 +1,7 @@
 """Tests for mapMet.map_at_k."""
 import numpy as np
 import pytest
-from moirais.fn.mapMet import map_at_k
+from morie.fn.mapMet import map_at_k
 
 
 def test_mapMet_basic():

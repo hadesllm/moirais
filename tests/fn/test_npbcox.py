@@ -1,7 +1,7 @@
 """Tests for npbcox.np_bayes_cox."""
 import numpy as np
 import pytest
-from moirais.fn.npbcox import np_bayes_cox
+from morie.fn.npbcox import np_bayes_cox
 
 
 def test_npbcox_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.suebac -- eBAC distribution."""
+"""Tests for morie.fn.suebac -- eBAC distribution."""
 
 import pytest
-from moirais.fn.suebac import ebac_dist
+from morie.fn.suebac import ebac_dist
 
 
 class TestEbacDist:

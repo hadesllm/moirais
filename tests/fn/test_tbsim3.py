@@ -1,7 +1,7 @@
 """Tests for tbsim3."""
 import numpy as np
 import pytest
-from moirais.fn.tbsim3 import tbsim3
+from morie.fn.tbsim3 import tbsim3
 
 
 def test_tbsim3_basic():
@@ -27,5 +27,5 @@ def test_tbsim3_no_data():
 
 
 def test_tbsim3_alias():
-    from moirais.fn.tbsim3 import tbsim3
+    from morie.fn.tbsim3 import tbsim3
     assert tbsim3 is tbsim3

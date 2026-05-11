@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rr_ci -- incidence rate ratio with CI."""
+"""Tests for morie.fn.rr_ci -- incidence rate ratio with CI."""
 
 import pytest
-from moirais.fn.rr_ci import rate_ratio_ci
+from morie.fn.rr_ci import rate_ratio_ci
 
 
 class TestRateRatioCI:

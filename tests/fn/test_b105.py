@@ -1,7 +1,7 @@
 """Tests for b105.burkov_lm_ch1_cosine_similarity."""
 import numpy as np
 import pytest
-from moirais.fn.b105 import burkov_lm_ch1_cosine_similarity
+from morie.fn.b105 import burkov_lm_ch1_cosine_similarity
 
 
 def test_b105_basic():

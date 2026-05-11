@@ -1,6 +1,6 @@
 """Tests for lar.py - Log Area Ratios."""
 import numpy as np
-from moirais.fn.lar import log_area_ratio_fn, lar
+from morie.fn.lar import log_area_ratio_fn, lar
 
 
 def test_lar_returns_result():

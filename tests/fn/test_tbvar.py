@@ -1,7 +1,7 @@
 """Tests for tbvar."""
 import numpy as np
 import pytest
-from moirais.fn.tbvar import tbvar
+from morie.fn.tbvar import tbvar
 
 
 def test_tbvar_basic():
@@ -27,5 +27,5 @@ def test_tbvar_no_data():
 
 
 def test_tbvar_alias():
-    from moirais.fn.tbvar import tbvar
+    from morie.fn.tbvar import tbvar
     assert tbvar is tbvar

@@ -1,7 +1,7 @@
 """Test csptl."""
 import numpy as np
 import pytest
-from moirais.fn.csptl import csptl
+from morie.fn.csptl import csptl
 
 
 def test_csptl_basic():

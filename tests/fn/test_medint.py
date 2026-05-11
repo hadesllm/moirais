@@ -1,7 +1,7 @@
 """Tests for medint.mediated_interaction."""
 import numpy as np
 import pytest
-from moirais.fn.medint import mediated_interaction
+from morie.fn.medint import mediated_interaction
 
 
 def test_medint_basic():

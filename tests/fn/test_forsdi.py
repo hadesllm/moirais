@@ -1,7 +1,7 @@
 """Test forsdi."""
 import numpy as np
 import pytest
-from moirais.fn.forsdi import forsdi
+from morie.fn.forsdi import forsdi
 
 
 def test_forsdi_basic():

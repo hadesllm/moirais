@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ppval."""
+"""Tests for morie.fn.ppval."""
 
 import numpy as np
 import pytest
-from moirais.fn.ppval import ppval
+from morie.fn.ppval import ppval
 
 
 class TestPpval:

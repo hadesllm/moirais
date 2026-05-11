@@ -1,7 +1,7 @@
 """Tests for gb5413.gibbons_sign_zeros."""
 import numpy as np
 import pytest
-from moirais.fn.gb5413 import gibbons_sign_zeros
+from morie.fn.gb5413 import gibbons_sign_zeros
 
 
 def test_gb5413_basic():

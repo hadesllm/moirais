@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mmrat -- Maternal mortality ratio."""
+"""Tests for morie.fn.mmrat -- Maternal mortality ratio."""
 
 import pytest
-from moirais.fn.mmrat import maternal_mortality_ratio
+from morie.fn.mmrat import maternal_mortality_ratio
 
 
 class TestMaternalMortality:

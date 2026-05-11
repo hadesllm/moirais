@@ -1,7 +1,7 @@
 """Tests for ames3.ames_mutagenicity."""
 import numpy as np
 import pytest
-from moirais.fn.ames3 import ames_mutagenicity
+from morie.fn.ames3 import ames_mutagenicity
 
 
 def test_ames3_basic():

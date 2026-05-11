@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svcwn -- Condorcet winner test"""
+"""Tests for morie.fn.svcwn -- Condorcet winner test"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svcwn import condorcet_winner
+from morie.fn.svcwn import condorcet_winner
 
 
 class TestCondorcetWinner:

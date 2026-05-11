@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.cohsp import coherence_spectrum, cohsp
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cohsp import coherence_spectrum, cohsp
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCoherenceSpectrum:

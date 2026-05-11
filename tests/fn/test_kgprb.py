@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgprb -- Kriging probability map"""
+"""Tests for morie.fn.kgprb -- Kriging probability map"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgprb import kriging_prob_map
+from morie.fn.kgprb import kriging_prob_map
 
 
 class TestKrigingProbMap:

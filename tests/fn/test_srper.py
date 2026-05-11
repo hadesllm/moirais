@@ -1,7 +1,7 @@
 """Test srper."""
 import numpy as np
 import pytest
-from moirais.fn.srper import srper
+from morie.fn.srper import srper
 
 
 def test_srper_basic():

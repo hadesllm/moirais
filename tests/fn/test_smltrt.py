@@ -1,7 +1,7 @@
 """Tests for smltrt.survey_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.smltrt import survey_ratio
+from morie.fn.smltrt import survey_ratio
 
 
 def test_smltrt_basic():

@@ -1,7 +1,7 @@
 """Test soorg."""
 import numpy as np
 import pytest
-from moirais.fn.soorg import soorg
+from morie.fn.soorg import soorg
 
 
 def test_soorg_basic():

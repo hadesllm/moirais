@@ -1,7 +1,7 @@
 """Tests for rfpois."""
 import numpy as np
 import pytest
-from moirais.fn.rfpois import rfpois
+from morie.fn.rfpois import rfpois
 
 
 def test_rfpois_basic():
@@ -27,5 +27,5 @@ def test_rfpois_no_data():
 
 
 def test_rfpois_alias():
-    from moirais.fn.rfpois import rfpois
+    from morie.fn.rfpois import rfpois
     assert rfpois is rfpois

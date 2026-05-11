@@ -1,7 +1,7 @@
 """Tests for rnagg."""
 import numpy as np
 import pytest
-from moirais.fn.rnagg import rnagg
+from morie.fn.rnagg import rnagg
 
 
 def test_rnagg_basic():
@@ -27,5 +27,5 @@ def test_rnagg_no_data():
 
 
 def test_rnagg_alias():
-    from moirais.fn.rnagg import rnagg
+    from morie.fn.rnagg import rnagg
     assert rnagg is rnagg

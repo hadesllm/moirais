@@ -1,7 +1,7 @@
 """Tests for topkd.top_k_decoding."""
 import numpy as np
 import pytest
-from moirais.fn.topkd import top_k_decoding
+from morie.fn.topkd import top_k_decoding
 
 
 def test_topkd_basic():

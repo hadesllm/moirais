@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.futl — Futility boundary."""
+"""Tests for morie.fn.futl — Futility boundary."""
 
 import pytest
 
-from moirais.fn.futl import futility_boundary
+from morie.fn.futl import futility_boundary
 
 
 class TestFutilityBoundary:

@@ -1,7 +1,7 @@
 """Tests for sgcosm."""
 import numpy as np
 import pytest
-from moirais.fn.sgcosm import sgcosm
+from morie.fn.sgcosm import sgcosm
 
 
 def test_sgcosm_basic():
@@ -27,5 +27,5 @@ def test_sgcosm_no_data():
 
 
 def test_sgcosm_alias():
-    from moirais.fn.sgcosm import sgcosm
+    from morie.fn.sgcosm import sgcosm
     assert sgcosm is sgcosm

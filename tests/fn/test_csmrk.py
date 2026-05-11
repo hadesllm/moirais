@@ -1,7 +1,7 @@
 """Test csmrk."""
 import numpy as np
 import pytest
-from moirais.fn.csmrk import csmrk
+from morie.fn.csmrk import csmrk
 
 
 def test_csmrk_basic():

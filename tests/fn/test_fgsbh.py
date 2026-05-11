@@ -1,7 +1,7 @@
 """Tests for fgsbh.fine_gray_subdistribution_hazard."""
 import numpy as np
 import pytest
-from moirais.fn.fgsbh import fine_gray_subdistribution_hazard
+from morie.fn.fgsbh import fine_gray_subdistribution_hazard
 
 
 def test_fgsbh_basic():

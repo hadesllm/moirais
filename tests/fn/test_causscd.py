@@ -1,7 +1,7 @@
 """Tests for causscd.causal_synthetic_did."""
 import numpy as np
 import pytest
-from moirais.fn.causscd import causal_synthetic_did
+from morie.fn.causscd import causal_synthetic_did
 
 
 def test_causscd_basic():

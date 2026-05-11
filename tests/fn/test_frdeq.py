@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.frdeq -- Friedmann equations."""
+"""Tests for morie.fn.frdeq -- Friedmann equations."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.frdeq import frdeq
+from morie.fn.frdeq import frdeq
 
 
 def test_returns_dict():

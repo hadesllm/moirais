@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.auc_ -- AUC score."""
+"""Tests for morie.fn.auc_ -- AUC score."""
 
 import numpy as np
 import pytest
-from moirais.fn.auc_ import auc_score
+from morie.fn.auc_ import auc_score
 
 
 class TestAucScore:

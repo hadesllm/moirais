@@ -1,7 +1,7 @@
 """Tests for spkwt.schabenberger_kriging_weights."""
 import numpy as np
 import pytest
-from moirais.fn.spkwt import schabenberger_kriging_weights
+from morie.fn.spkwt import schabenberger_kriging_weights
 
 
 def test_spkwt_basic():

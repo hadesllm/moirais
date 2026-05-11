@@ -1,7 +1,7 @@
 """Tests for whtinv.walsh_hadamard_inverse."""
 import numpy as np
 import pytest
-from moirais.fn.whtinv import walsh_hadamard_inverse
+from morie.fn.whtinv import walsh_hadamard_inverse
 
 
 def test_whtinv_basic():

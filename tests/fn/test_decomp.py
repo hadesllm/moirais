@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.decomp — Seasonal decomposition."""
+"""Tests for morie.fn.decomp — Seasonal decomposition."""
 import numpy as np
 import pytest
 
-from moirais.fn.decomp import seasonal_decompose, decomp
+from morie.fn.decomp import seasonal_decompose, decomp
 
 
 def test_seasonal_signal():

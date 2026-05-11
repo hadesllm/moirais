@@ -1,7 +1,7 @@
 """Tests for poststs.poststratify."""
 import numpy as np
 import pytest
-from moirais.fn.poststs import poststratify
+from morie.fn.poststs import poststratify
 
 
 def test_poststs_basic():

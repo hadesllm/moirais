@@ -1,7 +1,7 @@
 """Tests for bklap.burkov_laplace_add_one."""
 import numpy as np
 import pytest
-from moirais.fn.bklap import burkov_laplace_add_one
+from morie.fn.bklap import burkov_laplace_add_one
 
 
 def test_bklap_basic():

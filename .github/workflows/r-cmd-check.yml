@@ -3,7 +3,7 @@ name: R CMD check
 # Run R CMD check across the supported OS x R-version matrix. Required
 # for CRAN submission readiness; also feeds the r-universe daily build.
 #
-# The R package source lives at r-package/moirais (alongside the
+# The R package source lives at r-package/morie (alongside the
 # Python src/ tree at the repo root); the matrix sets the
 # working-directory accordingly.
 
@@ -11,7 +11,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'r-package/moirais/**'
+      - 'r-package/morie/**'
       - '.github/workflows/r-cmd-check.yml'
   workflow_dispatch:
 
@@ -40,7 +40,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: r-package/moirais
+        working-directory: r-package/morie
 
     steps:
       - uses: actions/checkout@v4
@@ -55,13 +55,13 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          working-directory: r-package/moirais
+          working-directory: r-package/morie
           extra-packages: any::rcmdcheck
           needs: check
 
       - uses: r-lib/actions/check-r-package@v2
         with:
-          working-directory: r-package/moirais
+          working-directory: r-package/morie
           upload-snapshots: true
           # Drop --as-cran (too strict pre-CRAN; we'll re-enable for the
           # CRAN-submission PR). Keep --no-manual since we don't ship

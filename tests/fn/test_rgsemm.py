@@ -1,7 +1,7 @@
 """Tests for rgsemm.rangayyan_spec_error_meas."""
 import numpy as np
 import pytest
-from moirais.fn.rgsemm import rangayyan_spec_error_meas
+from morie.fn.rgsemm import rangayyan_spec_error_meas
 
 
 def test_rgsemm_basic():

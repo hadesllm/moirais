@@ -1,6 +1,6 @@
 """Test top-k and top-p sampling."""
 import numpy as np
-from moirais.fn.topkp import topkp
+from morie.fn.topkp import topkp
 
 
 def test_topkp_basic():

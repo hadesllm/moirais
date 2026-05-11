@@ -1,7 +1,7 @@
 """Test foedge."""
 import numpy as np
 import pytest
-from moirais.fn.foedge import foedge
+from morie.fn.foedge import foedge
 
 
 def test_foedge_basic():

@@ -1,7 +1,7 @@
 """Tests for omitV.omitted_variable_bias."""
 import numpy as np
 import pytest
-from moirais.fn.omitV import omitted_variable_bias
+from morie.fn.omitV import omitted_variable_bias
 
 
 def test_omitV_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.inits -- initial start values."""
+"""Tests for morie.fn.inits -- initial start values."""
 
 import numpy as np
-from moirais.fn.inits import initial_start_values, inits
+from morie.fn.inits import initial_start_values, inits
 
 
 def test_inits_random():

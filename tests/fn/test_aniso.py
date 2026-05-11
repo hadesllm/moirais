@@ -1,7 +1,7 @@
 """Tests for aniso.anisotropy_test."""
 import numpy as np
 import pytest
-from moirais.fn.aniso import anisotropy_test
+from morie.fn.aniso import anisotropy_test
 
 
 def test_aniso_basic():

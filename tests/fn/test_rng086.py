@@ -1,7 +1,7 @@
 """Tests for rng086.rangayyan_ch3_normalized_cross_correlation_template."""
 import numpy as np
 import pytest
-from moirais.fn.rng086 import rangayyan_ch3_normalized_cross_correlation_template
+from morie.fn.rng086 import rangayyan_ch3_normalized_cross_correlation_template
 
 
 def test_rng086_basic():

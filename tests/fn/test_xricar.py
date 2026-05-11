@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xricar -- Intrinsic CAR (ICAR)"""
+"""Tests for morie.fn.xricar -- Intrinsic CAR (ICAR)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xricar import icar_model
+from morie.fn.xricar import icar_model
 
 
 class TestIcarModel:

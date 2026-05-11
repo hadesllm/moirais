@@ -1,7 +1,7 @@
 """Test clskt."""
 import numpy as np
 import pytest
-from moirais.fn.clskt import clskt
+from morie.fn.clskt import clskt
 
 
 def test_clskt_basic():

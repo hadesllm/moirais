@@ -1,6 +1,6 @@
 """Tests for kde_smooth."""
 import numpy as np
-from moirais.fn.kdesm import kde_smooth, kdesm
+from morie.fn.kdesm import kde_smooth, kdesm
 
 
 def test_basic():

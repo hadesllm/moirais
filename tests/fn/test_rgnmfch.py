@@ -1,7 +1,7 @@
 """Tests for rgnmfch.rangayyan_nmf_channel_sel."""
 import numpy as np
 import pytest
-from moirais.fn.rgnmfch import rangayyan_nmf_channel_sel
+from morie.fn.rgnmfch import rangayyan_nmf_channel_sel
 
 
 def test_rgnmfch_basic():

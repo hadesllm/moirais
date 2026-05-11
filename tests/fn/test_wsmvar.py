@@ -1,7 +1,7 @@
 """Tests for wsmvar.wasserman_variance."""
 import numpy as np
 import pytest
-from moirais.fn.wsmvar import wasserman_variance
+from morie.fn.wsmvar import wasserman_variance
 
 
 def test_wsmvar_basic():

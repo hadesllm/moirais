@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rskth — optimal risk threshold."""
+"""Tests for morie.fn.rskth — optimal risk threshold."""
 
-from moirais.fn.rskth import risk_threshold, rskth
+from morie.fn.rskth import risk_threshold, rskth
 
 
 class TestRiskThreshold:

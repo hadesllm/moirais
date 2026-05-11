@@ -1,6 +1,6 @@
 """Test lamport_sign."""
-from moirais.fn._containers import CryptoResult
-from moirais.fn.lamp import lamp, lamport_sign
+from morie.fn._containers import CryptoResult
+from morie.fn.lamp import lamp, lamport_sign
 
 
 class TestLamportSign:

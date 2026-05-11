@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.grind -- Rosin-Rammler particle size distribution."""
+"""Tests for morie.fn.grind -- Rosin-Rammler particle size distribution."""
 
 import numpy as np
-from moirais.fn.grind import rosin_rammler, grind
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.grind import rosin_rammler, grind
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGrind:

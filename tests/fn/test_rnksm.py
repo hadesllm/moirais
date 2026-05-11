@@ -1,6 +1,6 @@
 """Tests for rank_sum_test."""
 import numpy as np, pytest
-from moirais.fn.rnksm import rank_sum_test
+from morie.fn.rnksm import rank_sum_test
 
 
 class TestRankSum:

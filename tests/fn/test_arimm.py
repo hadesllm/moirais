@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.arimm -- ARIMA(p,d,q)."""
+"""Tests for morie.fn.arimm -- ARIMA(p,d,q)."""
 import numpy as np
 import pytest
-from moirais.fn.arimm import arima_fit
+from morie.fn.arimm import arima_fit
 
 
 class TestARIMAFit:
@@ -17,5 +17,5 @@ class TestARIMAFit:
             arima_fit(np.ones(5), p=1, d=1)
 
     def test_cheatsheet(self):
-        from moirais.fn.arimm import cheatsheet
+        from morie.fn.arimm import cheatsheet
         assert isinstance(cheatsheet(), str)

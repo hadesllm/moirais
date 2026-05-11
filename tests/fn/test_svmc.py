@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.svmc — SVM classifier."""
+"""Tests for morie.fn.svmc — SVM classifier."""
 import numpy as np
 import pytest
-from moirais.fn.svmc import svm_classify
+from morie.fn.svmc import svm_classify
 
 
 class TestSVMClassify:

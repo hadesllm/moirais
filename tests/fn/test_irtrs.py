@@ -1,7 +1,7 @@
 """Tests for irtrs -- Rating Scale Model."""
 import numpy as np
-from moirais.fn.irtrs import irt_rsm
-from moirais.fn._containers import IRTResult
+from morie.fn.irtrs import irt_rsm
+from morie.fn._containers import IRTResult
 
 
 class TestIrtRsm:

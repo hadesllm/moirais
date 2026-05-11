@@ -1,7 +1,7 @@
 """Test ghnod."""
 import numpy as np
 import pytest
-from moirais.fn.ghnod import ghnod
+from morie.fn.ghnod import ghnod
 
 
 def test_ghnod_basic():

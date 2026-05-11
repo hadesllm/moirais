@@ -1,7 +1,7 @@
 """Tests for joautf.joseph_autoformer."""
 import numpy as np
 import pytest
-from moirais.fn.joautf import joseph_autoformer
+from morie.fn.joautf import joseph_autoformer
 
 
 def test_joautf_basic():

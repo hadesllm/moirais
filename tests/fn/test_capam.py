@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.capam -- circular statistics."""
+"""Tests for morie.fn.capam -- circular statistics."""
 
 import numpy as np
-from moirais.fn.capam import circular_mean, capam
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.capam import circular_mean, capam
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCapam:

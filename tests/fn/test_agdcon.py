@@ -1,7 +1,7 @@
 """Tests for agdcon.agd_constrained."""
 import numpy as np
 import pytest
-from moirais.fn.agdcon import agd_constrained
+from morie.fn.agdcon import agd_constrained
 
 
 def test_agdcon_basic():

@@ -1,7 +1,7 @@
 """Tests for expmc.exponential_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.expmc import exponential_mechanism
+from morie.fn.expmc import exponential_mechanism
 
 
 def test_expmc_basic():

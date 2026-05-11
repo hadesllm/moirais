@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svblt -- Boltzmann (softmax) spatial voting"""
+"""Tests for morie.fn.svblt -- Boltzmann (softmax) spatial voting"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svblt import boltzmann_vote
+from morie.fn.svblt import boltzmann_vote
 
 
 class TestBoltzmannVote:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gwrcv."""
+"""Tests for morie.fn.gwrcv."""
 import numpy as np
 import pytest
-from moirais.fn.gwrcv import gwrcv
+from morie.fn.gwrcv import gwrcv
 
 
 class TestGwrcv:

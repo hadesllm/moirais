@@ -1,7 +1,7 @@
 """Tests for negctc.negative_control_outcome."""
 import numpy as np
 import pytest
-from moirais.fn.negctc import negative_control_outcome
+from morie.fn.negctc import negative_control_outcome
 
 
 def test_negctc_basic():

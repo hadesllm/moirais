@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.lmsaf import lms_adaptive_filter, lmsaf
-from moirais.fn._containers import SignalResult
+from morie.fn.lmsaf import lms_adaptive_filter, lmsaf
+from morie.fn._containers import SignalResult
 
 
 class TestLmsAdaptiveFilter:

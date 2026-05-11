@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.em_i -- EM algorithm imputation."""
+"""Tests for morie.fn.em_i -- EM algorithm imputation."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.em_i import em_impute
+from morie.fn.em_i import em_impute
 
 
 class TestEMImpute:

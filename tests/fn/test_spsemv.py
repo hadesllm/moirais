@@ -1,7 +1,7 @@
 """Tests for spsemv.schabenberger_semivariogram_def."""
 import numpy as np
 import pytest
-from moirais.fn.spsemv import schabenberger_semivariogram_def
+from morie.fn.spsemv import schabenberger_semivariogram_def
 
 
 def test_spsemv_basic():

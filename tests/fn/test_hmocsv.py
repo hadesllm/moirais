@@ -1,7 +1,7 @@
 """Tests for hmocsv.geron_one_class_svm."""
 import numpy as np
 import pytest
-from moirais.fn.hmocsv import geron_one_class_svm
+from morie.fn.hmocsv import geron_one_class_svm
 
 
 def test_hmocsv_basic():

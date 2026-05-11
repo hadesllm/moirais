@@ -1,7 +1,7 @@
 """Tests for gin.gin."""
 import numpy as np
 import pytest
-from moirais.fn.gin import gin
+from morie.fn.gin import gin
 
 
 def test_gin_basic():

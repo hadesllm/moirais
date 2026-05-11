@@ -1,7 +1,7 @@
 """Tests for aftllg.aft_log_logistic."""
 import numpy as np
 import pytest
-from moirais.fn.aftllg import aft_log_logistic
+from morie.fn.aftllg import aft_log_logistic
 
 
 def test_aftllg_basic():

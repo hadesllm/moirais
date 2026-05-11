@@ -1,7 +1,7 @@
 """Tests for ghs018.ghosal_ch3_tree_splitting_variables."""
 import numpy as np
 import pytest
-from moirais.fn.ghs018 import ghosal_ch3_tree_splitting_variables
+from morie.fn.ghs018 import ghosal_ch3_tree_splitting_variables
 
 
 def test_ghs018_basic():

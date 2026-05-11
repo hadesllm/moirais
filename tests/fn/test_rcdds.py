@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rcdds — recidivism desistance."""
+"""Tests for morie.fn.rcdds — recidivism desistance."""
 
 import pytest
 import numpy as np
-from moirais.fn.rcdds import recidivism_desistance
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rcdds import recidivism_desistance
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRecidivismDesistance:

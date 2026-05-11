@@ -1,6 +1,6 @@
 """Tests for runs_test."""
 import numpy as np, pytest
-from moirais.fn.runst import runs_test
+from morie.fn.runst import runs_test
 
 
 class TestRunsTest:

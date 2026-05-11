@@ -1,7 +1,7 @@
 """Tests for almqr.alammar_multi_query_retrieval."""
 import numpy as np
 import pytest
-from moirais.fn.almqr import alammar_multi_query_retrieval
+from morie.fn.almqr import alammar_multi_query_retrieval
 
 
 def test_almqr_basic():

@@ -1,7 +1,7 @@
 """Tests for idwshp."""
 import numpy as np
 import pytest
-from moirais.fn.idwshp import idwshp
+from morie.fn.idwshp import idwshp
 
 
 def test_idwshp_basic():
@@ -27,5 +27,5 @@ def test_idwshp_no_data():
 
 
 def test_idwshp_alias():
-    from moirais.fn.idwshp import idwshp
+    from morie.fn.idwshp import idwshp
     assert idwshp is idwshp

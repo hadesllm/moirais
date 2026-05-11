@@ -1,7 +1,7 @@
 """Tests for hmprc.geron_precision_recall_curve."""
 import numpy as np
 import pytest
-from moirais.fn.hmprc import geron_precision_recall_curve
+from morie.fn.hmprc import geron_precision_recall_curve
 
 
 def test_hmprc_basic():

@@ -1,7 +1,7 @@
 """Tests for hetero.htmt_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.hetero import htmt_ratio
+from morie.fn.hetero import htmt_ratio
 
 
 def test_hetero_basic():

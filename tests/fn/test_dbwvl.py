@@ -1,6 +1,6 @@
 """Tests for dbwvl.py - Daubechies wavelet."""
 import numpy as np
-from moirais.fn.dbwvl import daubechies_wavelet, dbwvl
+from morie.fn.dbwvl import daubechies_wavelet, dbwvl
 
 
 def test_db4_returns_result():

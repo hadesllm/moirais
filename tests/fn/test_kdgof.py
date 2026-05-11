@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kdgof — kernel goodness-of-fit test."""
+"""Tests for morie.fn.kdgof — kernel goodness-of-fit test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kdgof import kdgof
+from morie.fn.kdgof import kdgof
 
 
 class TestKdgof:

@@ -1,9 +1,9 @@
 Hawkes Self-Exciting Point Processes
 =====================================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS implements both the classical Markovian Hawkes process
+MORIE implements both the classical Markovian Hawkes process
 (constant baseline, exponential excitation kernel) and the
 non-stationary, non-Markovian generalisation of Kwan-Chen-Dunsmuir
 (2024).
@@ -11,14 +11,14 @@ non-stationary, non-Markovian generalisation of Kwan-Chen-Dunsmuir
 Modules
 -------
 
-- ``moirais.tps_stochastic.hawkes_temporal_fit`` — classical Markovian
+- ``morie.tps_stochastic.hawkes_temporal_fit`` — classical Markovian
   Hawkes fit (one-parameter family, :math:`O(n)` recursive intensity).
-- ``moirais.tps_hawkes_advanced.fit_hawkes_general`` — MLE for the
+- ``morie.tps_hawkes_advanced.fit_hawkes_general`` — MLE for the
   general (kernel, baseline) pair via adaptive Nelder-Mead.
-- ``moirais.tps_hawkes_advanced.compare_hawkes_kernels`` — fits all
+- ``morie.tps_hawkes_advanced.compare_hawkes_kernels`` — fits all
   eight (kernel \times baseline) combinations and ranks by AIC and
   time-rescaling-residual Kolmogorov-Smirnov goodness-of-fit.
-- ``moirais.tps_hawkes_advanced.hawkes_markovian_vs_nonmarkovian`` —
+- ``morie.tps_hawkes_advanced.hawkes_markovian_vs_nonmarkovian`` —
   focused 2-way comparison: Markovian classical vs Gamma + sinusoidal.
 
 Mathematical content
@@ -86,6 +86,6 @@ Reference
 
 The full methodology and Toronto application are in:
 
-- Ruhela, V. S. (2026). *Criminological Hawkes Process via MOIRAIS:
+- Ruhela, V. S. (2026). *Criminological Hawkes Process via MORIE:
   Markovian and Non-Markovian Self-Exciting Point Processes for
   Toronto Crime.* Zenodo. https://doi.org/10.5281/zenodo.20102198

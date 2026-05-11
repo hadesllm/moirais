@@ -1,7 +1,7 @@
 """Tests for jolog.joseph_log_transform."""
 import numpy as np
 import pytest
-from moirais.fn.jolog import joseph_log_transform
+from morie.fn.jolog import joseph_log_transform
 
 
 def test_jolog_basic():

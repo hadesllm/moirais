@@ -1,7 +1,7 @@
 """Test gabsn."""
 import numpy as np
 import pytest
-from moirais.fn.gabsn import gabsn
+from morie.fn.gabsn import gabsn
 
 
 def test_gabsn_basic():

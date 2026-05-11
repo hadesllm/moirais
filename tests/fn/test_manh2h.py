@@ -1,7 +1,7 @@
 """Tests for manh2h.ma_network_node_split."""
 import numpy as np
 import pytest
-from moirais.fn.manh2h import ma_network_node_split
+from morie.fn.manh2h import ma_network_node_split
 
 
 def test_manh2h_basic():

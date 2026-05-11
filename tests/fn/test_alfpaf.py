@@ -1,7 +1,7 @@
 """Tests for alfpaf.alphafold_pair_repr."""
 import numpy as np
 import pytest
-from moirais.fn.alfpaf import alphafold_pair_repr
+from morie.fn.alfpaf import alphafold_pair_repr
 
 
 def test_alfpaf_basic():

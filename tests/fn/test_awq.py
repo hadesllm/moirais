@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.awq — activation-aware weight quantization."""
+"""Tests for morie.fn.awq — activation-aware weight quantization."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.awq import activation_aware_quant
+from morie.fn.awq import activation_aware_quant
 
 
 class TestActivationAwareQuant:

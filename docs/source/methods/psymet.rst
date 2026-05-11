@@ -1,16 +1,16 @@
 Psychometric Methods
 ====================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS provides **250+ psychometric functions** for Likert-scale questionnaire
+MORIE provides **250+ psychometric functions** for Likert-scale questionnaire
 validation, covering Classical Test Theory (CTT), Item Response Theory (IRT),
 Differential Item Functioning (DIF), Confirmatory Factor Analysis (CFA),
 measurement invariance, reliability variants, validity evidence, network
 psychometrics, Bayesian psychometrics, scale construction, and scoring.
 
-These methods are implemented as individual function files in ``moirais.fn/``
-(short ≤7-char names) and the parent module ``moirais.psymet``.
+These methods are implemented as individual function files in ``morie.fn/``
+(short ≤7-char names) and the parent module ``morie.psymet``.
 All functions are dataset-agnostic — they work on any Likert-scale data,
 not just the MAPQII questionnaire.
 
@@ -60,7 +60,7 @@ where :math:`\lambda_{g,i}` are first-factor loadings.
 
 .. code-block:: python
 
-   from moirais.psymet import crba, mcdo
+   from morie.psymet import crba, mcdo
    import pandas as pd
 
    data = pd.read_excel("data/datasets/vsr/TKARONTOMAPQ.xlsx", sheet_name="MAPQII")

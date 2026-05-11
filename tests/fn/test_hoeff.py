@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hoeff -- Hoeffding concentration inequality."""
+"""Tests for morie.fn.hoeff -- Hoeffding concentration inequality."""
 
 import numpy as np
 import pytest
-from moirais.fn.hoeff import hoeffding_bound
+from morie.fn.hoeff import hoeffding_bound
 
 
 class TestHoeffding:

@@ -1,7 +1,7 @@
 """Tests for crtT.chinese_remainder."""
 import numpy as np
 import pytest
-from moirais.fn.crtT import chinese_remainder
+from morie.fn.crtT import chinese_remainder
 
 
 def test_crtT_basic():

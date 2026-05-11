@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.brn — Brunner-Munzel test."""
+"""Tests for morie.fn.brn — Brunner-Munzel test."""
 import numpy as np
 import pytest
-from moirais.fn.brn import brunner_munzel
+from morie.fn.brn import brunner_munzel
 
 
 class TestBrunnerMunzel:

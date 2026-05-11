@@ -1,7 +1,7 @@
 """Tests for otreg.ot_regularised_dual."""
 import numpy as np
 import pytest
-from moirais.fn.otreg import ot_regularised_dual
+from morie.fn.otreg import ot_regularised_dual
 
 
 def test_otreg_basic():

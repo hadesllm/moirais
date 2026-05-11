@@ -1,8 +1,8 @@
 """Test sample_bound (smpbd)."""
 import pytest
 
-from moirais.fn.smpbd import sample_bound, smpbd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.smpbd import sample_bound, smpbd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSampleBound:

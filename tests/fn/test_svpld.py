@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svpld -- Dimensional polarization decomposition"""
+"""Tests for morie.fn.svpld -- Dimensional polarization decomposition"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svpld import polarization_dim
+from morie.fn.svpld import polarization_dim
 
 
 class TestPolarizationDim:

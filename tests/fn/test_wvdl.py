@@ -1,7 +1,7 @@
 """Test wavelet_dict_learn (wvdl)."""
 import numpy as np
-from moirais.fn.wvdl import wavelet_dict_learn, wvdl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wvdl import wavelet_dict_learn, wvdl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWvdl:

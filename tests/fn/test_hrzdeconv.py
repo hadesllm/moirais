@@ -1,7 +1,7 @@
 """Tests for hrzdeconv.horowitz_deconvolution_density."""
 import numpy as np
 import pytest
-from moirais.fn.hrzdeconv import horowitz_deconvolution_density
+from morie.fn.hrzdeconv import horowitz_deconvolution_density
 
 
 def test_hrzdeconv_basic():

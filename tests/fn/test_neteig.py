@@ -1,7 +1,7 @@
 """Tests for neteig.eigenvector_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.neteig import eigenvector_centrality
+from morie.fn.neteig import eigenvector_centrality
 
 
 def test_neteig_basic():

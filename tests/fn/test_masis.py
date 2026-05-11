@@ -1,7 +1,7 @@
 """Test masis."""
 import numpy as np
 import pytest
-from moirais.fn.masis import masis
+from morie.fn.masis import masis
 
 
 def test_masis_basic():

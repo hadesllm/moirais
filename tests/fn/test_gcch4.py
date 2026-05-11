@@ -1,7 +1,7 @@
 """Test gcch4."""
 import numpy as np
 import pytest
-from moirais.fn.gcch4 import gcch4
+from morie.fn.gcch4 import gcch4
 
 
 def test_gcch4_basic():

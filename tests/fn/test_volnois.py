@@ -1,7 +1,7 @@
 """Tests for volnois.vol_noise_variance_est."""
 import numpy as np
 import pytest
-from moirais.fn.volnois import vol_noise_variance_est
+from morie.fn.volnois import vol_noise_variance_est
 
 
 def test_volnois_basic():

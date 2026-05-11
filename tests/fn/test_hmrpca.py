@@ -1,7 +1,7 @@
 """Tests for hmrpca.geron_randomized_pca."""
 import numpy as np
 import pytest
-from moirais.fn.hmrpca import geron_randomized_pca
+from morie.fn.hmrpca import geron_randomized_pca
 
 
 def test_hmrpca_basic():

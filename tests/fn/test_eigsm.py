@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.eigsm -- symmetric eigenvalue decomposition."""
+"""Tests for morie.fn.eigsm -- symmetric eigenvalue decomposition."""
 
 import numpy as np
 import pytest
-from moirais.fn.eigsm import eigen_symmetric, eigsm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.eigsm import eigen_symmetric, eigsm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestEigsm:

@@ -1,7 +1,7 @@
 """Test hyfac."""
 import numpy as np
 import pytest
-from moirais.fn.hyfac import hyfac
+from morie.fn.hyfac import hyfac
 
 
 def test_hyfac_basic():

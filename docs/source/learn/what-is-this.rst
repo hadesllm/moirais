@@ -49,10 +49,10 @@ three steps:
    in *plus or minus something*.  An answer without that "plus or
    minus" is a guess wearing a hat.
 
-MOIRAIS has functions for each of those three steps.  The
+MORIE has functions for each of those three steps.  The
 ``fn/`` tree (10,000+ small files, each one a single formula) is the
-estimator vocabulary; the modules in ``moirais.causal``,
-``moirais.effects``, ``moirais.inference`` are the recipes that
+estimator vocabulary; the modules in ``morie.causal``,
+``morie.effects``, ``morie.inference`` are the recipes that
 combine them.
 
 ----
@@ -89,7 +89,7 @@ To save you time:
 - **Cleaning a dataset.**  We assume the dataset is already in the
   shape you want.  Use pandas / dplyr for the wrangling step.
 - **Predicting the future from a tweet.**  Forecasting needs
-  specific time-series tooling.  We have some (``moirais.fn``
+  specific time-series tooling.  We have some (``morie.fn``
   TimeSeries category), but Prophet / statsforecast / GluonTS are
   more focused if forecasting is your only goal.
 - **Replacing a stats degree.**  If the question is hard, the answer
@@ -103,6 +103,6 @@ What to read next
 
 - :doc:`first-analysis` — walk through one full analysis end-to-end.
   ~15 minutes.  Uses the iris dataset, no installation pain.
-- :doc:`../install` — when you're ready to install MOIRAIS for real.
+- :doc:`../install` — when you're ready to install MORIE for real.
 - :doc:`../methods/index` — the methods reference, organised by
   question rather than by function name.

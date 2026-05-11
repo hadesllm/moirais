@@ -1,7 +1,7 @@
 """Test ghchg."""
 import numpy as np
 import pytest
-from moirais.fn.ghchg import ghchg
+from morie.fn.ghchg import ghchg
 
 
 def test_ghchg_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rmspd -- RMSProp optimizer."""
+"""Tests for morie.fn.rmspd -- RMSProp optimizer."""
 
 import numpy as np
-from moirais.fn.rmspd import rmsprop_optimize, rmspd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rmspd import rmsprop_optimize, rmspd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRmspd:

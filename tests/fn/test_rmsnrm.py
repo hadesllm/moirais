@@ -1,7 +1,7 @@
 """Tests for rmsnrm.rms_norm."""
 import numpy as np
 import pytest
-from moirais.fn.rmsnrm import rms_norm
+from morie.fn.rmsnrm import rms_norm
 
 
 def test_rmsnrm_basic():

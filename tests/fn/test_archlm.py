@@ -1,7 +1,7 @@
 """Tests for archlm.arch_lm_engle."""
 import numpy as np
 import pytest
-from moirais.fn.archlm import arch_lm_engle
+from morie.fn.archlm import arch_lm_engle
 
 
 def test_archlm_basic():

@@ -1,7 +1,7 @@
 """Tests for hdpic.highest_density_credible_interval."""
 import numpy as np
 import pytest
-from moirais.fn.hdpic import highest_density_credible_interval
+from morie.fn.hdpic import highest_density_credible_interval
 
 
 def test_hdpic_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.robns — Robinson double-residual estimator."""
+"""Tests for morie.fn.robns — Robinson double-residual estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.robns import robns
+from morie.fn.robns import robns
 
 
 @pytest.fixture()

@@ -1,11 +1,11 @@
-"""Tests for moirais.engine and moirais.tokenizer."""
+"""Tests for morie.engine and morie.tokenizer."""
 
 import struct
 import numpy as np
 import pytest
 
-from moirais.engine import (
-    MOIRAISEngine,
+from morie.engine import (
+    MORIEEngine,
     GenerationResult,
     _rmsnorm,
     _softmax,
@@ -13,8 +13,8 @@ from moirais.engine import (
     _rope,
     backend,
 )
-from moirais.tokenizer import Tokenizer
-from moirais.gguf_loader import (
+from morie.tokenizer import Tokenizer
+from morie.gguf_loader import (
     GGML_TYPE_F32,
     GGUF_MAGIC,
     _GGUF_TYPE_ARRAY,
@@ -254,7 +254,7 @@ class TestGenerationResult:
 class TestSampling:
     def test_greedy(self):
         logits = np.array([0.1, 0.2, 5.0, 0.3])
-        token = MOIRAISEngine._sample(logits, temperature=0.0, top_p=1.0)
+        token = MORIEEngine._sample(logits, temperature=0.0, top_p=1.0)
         assert token == 2  # argmax
 
     def test_temperature_affects_distribution(self):
@@ -263,13 +263,13 @@ class TestSampling:
         # Low temperature -> more deterministic
         counts_low = np.zeros(3)
         for _ in range(100):
-            t = MOIRAISEngine._sample(logits, temperature=0.01, top_p=1.0)
+            t = MORIEEngine._sample(logits, temperature=0.01, top_p=1.0)
             counts_low[t] += 1
         # Should strongly prefer index 2
         assert counts_low[2] > 90
 
     def test_top_p_filtering(self):
         logits = np.array([10.0, 0.0, 0.0, 0.0])
-        token = MOIRAISEngine._sample(logits, temperature=0.5, top_p=0.5)
+        token = MORIEEngine._sample(logits, temperature=0.5, top_p=0.5)
         # With top_p=0.5, only the dominant token should be sampled
         assert token == 0

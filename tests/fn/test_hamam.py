@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hamam -- Brownian motion."""
+"""Tests for morie.fn.hamam -- Brownian motion."""
 
-from moirais.fn.hamam import brownian_motion, hamam
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hamam import brownian_motion, hamam
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHamam:

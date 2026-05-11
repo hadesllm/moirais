@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.logit — Logistic regression via IRLS."""
+"""Tests for morie.fn.logit — Logistic regression via IRLS."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.logit import logistic_regression
+from morie.fn.logit import logistic_regression
 
 
 @pytest.fixture()

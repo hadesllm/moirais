@@ -1,7 +1,7 @@
 """Tests for egarch.egarch_model."""
 import numpy as np
 import pytest
-from moirais.fn.egarch import egarch_model
+from morie.fn.egarch import egarch_model
 
 
 def test_egarch_basic():

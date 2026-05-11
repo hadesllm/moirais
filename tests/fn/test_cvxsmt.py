@@ -1,7 +1,7 @@
 """Tests for cvxsmt.boyd_smooth_min."""
 import numpy as np
 import pytest
-from moirais.fn.cvxsmt import boyd_smooth_min
+from morie.fn.cvxsmt import boyd_smooth_min
 
 
 def test_cvxsmt_basic():

@@ -1,7 +1,7 @@
 """Test wlrfc."""
 import numpy as np
 import pytest
-from moirais.fn.wlrfc import wlrfc
+from morie.fn.wlrfc import wlrfc
 
 
 def test_wlrfc_basic():

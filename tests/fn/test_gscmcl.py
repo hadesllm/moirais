@@ -1,7 +1,7 @@
 """Tests for gscmcl.generalized_synthetic_control."""
 import numpy as np
 import pytest
-from moirais.fn.gscmcl import generalized_synthetic_control
+from morie.fn.gscmcl import generalized_synthetic_control
 
 
 def test_gscmcl_basic():

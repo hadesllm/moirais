@@ -1,7 +1,7 @@
 """Tests for otmd.ot_mahalanobis_distance_ot."""
 import numpy as np
 import pytest
-from moirais.fn.otmd import ot_mahalanobis_distance_ot
+from morie.fn.otmd import ot_mahalanobis_distance_ot
 
 
 def test_otmd_basic():

@@ -1,7 +1,7 @@
 """Tests for hampw.hampel_three_part."""
 import numpy as np
 import pytest
-from moirais.fn.hampw import hampel_three_part
+from morie.fn.hampw import hampel_three_part
 
 
 def test_hampw_basic():

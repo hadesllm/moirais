@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lmjoint."""
+"""Tests for morie.fn.lmjoint."""
 import numpy as np
 import pytest
-from moirais.fn.lmjoint import lmjoint
+from morie.fn.lmjoint import lmjoint
 
 
 class TestLmjoint:

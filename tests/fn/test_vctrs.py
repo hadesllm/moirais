@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vctrs -- weight initialization."""
+"""Tests for morie.fn.vctrs -- weight initialization."""
 
 import numpy as np
-from moirais.fn.vctrs import weight_init, vctrs
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.vctrs import weight_init, vctrs
+from morie.fn._containers import DescriptiveResult
 
 
 class TestVctrs:

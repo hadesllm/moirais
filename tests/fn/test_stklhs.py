@@ -1,7 +1,7 @@
 """Tests for stklhs."""
 import numpy as np
 import pytest
-from moirais.fn.stklhs import stklhs
+from morie.fn.stklhs import stklhs
 
 
 def test_stklhs_basic():
@@ -27,5 +27,5 @@ def test_stklhs_no_data():
 
 
 def test_stklhs_alias():
-    from moirais.fn.stklhs import stklhs
+    from morie.fn.stklhs import stklhs
     assert stklhs is stklhs

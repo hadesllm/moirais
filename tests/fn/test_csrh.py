@@ -1,7 +1,7 @@
 """Tests for csrh.cause_specific_hazard."""
 import numpy as np
 import pytest
-from moirais.fn.csrh import cause_specific_hazard
+from morie.fn.csrh import cause_specific_hazard
 
 
 def test_csrh_basic():

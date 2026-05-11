@@ -1,7 +1,7 @@
 """Tests for iinfo.item_information."""
 import numpy as np
 import pytest
-from moirais.fn.iinfo import item_information
+from morie.fn.iinfo import item_information
 
 
 def test_iinfo_basic():

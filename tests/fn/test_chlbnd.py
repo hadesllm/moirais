@@ -1,7 +1,7 @@
 """Tests for chlbnd."""
 import numpy as np
 import pytest
-from moirais.fn.chlbnd import chlbnd
+from morie.fn.chlbnd import chlbnd
 
 
 def test_chlbnd_basic():
@@ -27,5 +27,5 @@ def test_chlbnd_no_data():
 
 
 def test_chlbnd_alias():
-    from moirais.fn.chlbnd import chlbnd
+    from morie.fn.chlbnd import chlbnd
     assert chlbnd is chlbnd

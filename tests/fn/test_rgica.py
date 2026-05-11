@@ -1,7 +1,7 @@
 """Tests for rgica.rangayyan_fastica."""
 import numpy as np
 import pytest
-from moirais.fn.rgica import rangayyan_fastica
+from morie.fn.rgica import rangayyan_fastica
 
 
 def test_rgica_basic():

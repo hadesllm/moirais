@@ -1,7 +1,7 @@
 """Tests for bndpos.bound_pos_treatment."""
 import numpy as np
 import pytest
-from moirais.fn.bndpos import bound_pos_treatment
+from morie.fn.bndpos import bound_pos_treatment
 
 
 def test_bndpos_basic():

@@ -1,7 +1,7 @@
 """Tests for dffits.dffits."""
 import numpy as np
 import pytest
-from moirais.fn.dffits import dffits
+from morie.fn.dffits import dffits
 
 
 def test_dffits_basic():

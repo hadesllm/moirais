@@ -1,7 +1,7 @@
 """Tests for mareml.ma_random_reml."""
 import numpy as np
 import pytest
-from moirais.fn.mareml import ma_random_reml
+from morie.fn.mareml import ma_random_reml
 
 
 def test_mareml_basic():

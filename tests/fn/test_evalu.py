@@ -1,7 +1,7 @@
 """Tests for evalu.evalue."""
 import numpy as np
 import pytest
-from moirais.fn.evalu import evalue
+from morie.fn.evalu import evalue
 
 
 def test_evalu_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.draxm -- truncated SVD decomposition."""
+"""Tests for morie.fn.draxm -- truncated SVD decomposition."""
 
 import numpy as np
-from moirais.fn.draxm import destroyer_decompose, draxm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.draxm import destroyer_decompose, draxm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDraxm:

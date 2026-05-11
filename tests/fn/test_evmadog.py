@@ -1,7 +1,7 @@
 """Tests for evmadog.evt_madogram."""
 import numpy as np
 import pytest
-from moirais.fn.evmadog import evt_madogram
+from morie.fn.evmadog import evt_madogram
 
 
 def test_evmadog_basic():

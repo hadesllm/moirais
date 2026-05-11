@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.isomp."""
+"""Tests for morie.fn.isomp."""
 import numpy as np
-from moirais.fn.isomp import isomap
+from morie.fn.isomp import isomap
 
 
 def test_isomp_smoke():
@@ -12,7 +12,7 @@ def test_isomp_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.isomp import cheatsheet
+    from morie.fn.isomp import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for hmkfd.geron_kfold."""
 import numpy as np
 import pytest
-from moirais.fn.hmkfd import geron_kfold
+from morie.fn.hmkfd import geron_kfold
 
 
 def test_hmkfd_basic():

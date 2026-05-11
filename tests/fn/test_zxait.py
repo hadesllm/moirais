@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxait -- Aitchison compositional spatial"""
+"""Tests for morie.fn.zxait -- Aitchison compositional spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxait import aitchison_sp
+from morie.fn.zxait import aitchison_sp
 
 
 class TestAitchisonSp:

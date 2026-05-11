@@ -1,7 +1,7 @@
 """Tests for bndpcb.bound_pseudo_credible."""
 import numpy as np
 import pytest
-from moirais.fn.bndpcb import bound_pseudo_credible
+from morie.fn.bndpcb import bound_pseudo_credible
 
 
 def test_bndpcb_basic():

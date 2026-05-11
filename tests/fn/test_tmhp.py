@@ -1,7 +1,7 @@
 """Tests for tmhp."""
 import numpy as np
 import pytest
-from moirais.fn.tmhp import tmhp
+from morie.fn.tmhp import tmhp
 
 
 def test_tmhp_basic():
@@ -27,5 +27,5 @@ def test_tmhp_no_data():
 
 
 def test_tmhp_alias():
-    from moirais.fn.tmhp import tmhp
+    from morie.fn.tmhp import tmhp
     assert tmhp is tmhp

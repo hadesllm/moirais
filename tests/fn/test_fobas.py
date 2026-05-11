@@ -1,7 +1,7 @@
 """Test fobas."""
 import numpy as np
 import pytest
-from moirais.fn.fobas import fobas
+from morie.fn.fobas import fobas
 
 
 def test_fobas_basic():

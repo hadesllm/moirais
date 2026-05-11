@@ -1,7 +1,7 @@
 """Tests for rgemdimf.rangayyan_emd_imf."""
 import numpy as np
 import pytest
-from moirais.fn.rgemdimf import rangayyan_emd_imf
+from morie.fn.rgemdimf import rangayyan_emd_imf
 
 
 def test_rgemdimf_basic():

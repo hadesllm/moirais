@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.deja -- near-duplicate detection."""
+"""Tests for morie.fn.deja -- near-duplicate detection."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.deja import detect_duplicates, deja
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.deja import detect_duplicates, deja
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDeja:

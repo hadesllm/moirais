@@ -1,7 +1,7 @@
 """Tests for yllyear.yll_calculation."""
 import numpy as np
 import pytest
-from moirais.fn.yllyear import yll_calculation
+from morie.fn.yllyear import yll_calculation
 
 
 def test_yllyear_basic():

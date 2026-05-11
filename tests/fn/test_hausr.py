@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.hausr — Hausman test."""
+"""Tests for morie.fn.hausr — Hausman test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.hausr import hausman_test
+from morie.fn.hausr import hausman_test
 
 
 def test_hausman_correlated_effects():

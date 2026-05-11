@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.stl — STL decomposition."""
+"""Tests for morie.fn.stl — STL decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.stl import stl_decompose
+from morie.fn.stl import stl_decompose
 
 
 class TestSTL:

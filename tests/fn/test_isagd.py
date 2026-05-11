@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.isagd."""
+"""Tests for morie.fn.isagd."""
 
 import numpy as np
 import pytest
-from moirais.fn.isagd import isagd
+from morie.fn.isagd import isagd
 
 
 class TestIsagd:

@@ -1,7 +1,7 @@
 """Tests for asorxx.assortativity."""
 import numpy as np
 import pytest
-from moirais.fn.asorxx import assortativity
+from morie.fn.asorxx import assortativity
 
 
 def test_asorxx_basic():

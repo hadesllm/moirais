@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.frcst -- renewal equation forecast."""
+"""Tests for morie.fn.frcst -- renewal equation forecast."""
 
 import numpy as np
 import pytest
-from moirais.fn.frcst import renewal_forecast
+from morie.fn.frcst import renewal_forecast
 
 
 class TestRenewalForecast:

@@ -1,7 +1,7 @@
 """Tests for hrzade.horowitz_average_derivative."""
 import numpy as np
 import pytest
-from moirais.fn.hrzade import horowitz_average_derivative
+from morie.fn.hrzade import horowitz_average_derivative
 
 
 def test_hrzade_basic():

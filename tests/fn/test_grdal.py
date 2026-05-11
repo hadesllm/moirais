@@ -1,7 +1,7 @@
 """Tests for grdal.geron_dalle_autoregressive_token."""
 import numpy as np
 import pytest
-from moirais.fn.grdal import geron_dalle_autoregressive_token
+from morie.fn.grdal import geron_dalle_autoregressive_token
 
 
 def test_grdal_basic():

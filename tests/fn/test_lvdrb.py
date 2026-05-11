@@ -1,6 +1,6 @@
 """Tests for lvdrb.py - Levinson-Durbin recursion."""
 import numpy as np
-from moirais.fn.lvdrb import levinson_durbin_fn, lvdrb
+from morie.fn.lvdrb import levinson_durbin_fn, lvdrb
 
 
 def test_lvdrb_returns_result():

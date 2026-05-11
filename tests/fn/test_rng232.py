@@ -1,7 +1,7 @@
 """Tests for rng232.rangayyan_ch4_homomorphic_log_fourier."""
 import numpy as np
 import pytest
-from moirais.fn.rng232 import rangayyan_ch4_homomorphic_log_fourier
+from morie.fn.rng232 import rangayyan_ch4_homomorphic_log_fourier
 
 
 def test_rng232_basic():

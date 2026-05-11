@@ -1,7 +1,7 @@
 """Tests for rgcfsle.rangayyan_coupled_freq_select."""
 import numpy as np
 import pytest
-from moirais.fn.rgcfsle import rangayyan_coupled_freq_select
+from morie.fn.rgcfsle import rangayyan_coupled_freq_select
 
 
 def test_rgcfsle_basic():

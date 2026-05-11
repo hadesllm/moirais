@@ -1,7 +1,7 @@
 """Tests for acwhe.private_accuracy_tradeoff."""
 import numpy as np
 import pytest
-from moirais.fn.acwhe import private_accuracy_tradeoff
+from morie.fn.acwhe import private_accuracy_tradeoff
 
 
 def test_acwhe_basic():

@@ -1,7 +1,7 @@
 """Tests for bndmoq.bound_moment_qed."""
 import numpy as np
 import pytest
-from moirais.fn.bndmoq import bound_moment_qed
+from morie.fn.bndmoq import bound_moment_qed
 
 
 def test_bndmoq_basic():

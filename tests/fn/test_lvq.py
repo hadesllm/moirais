@@ -1,7 +1,7 @@
 """Test learning_vq (lvq)."""
 import numpy as np
-from moirais.fn.lvq import learning_vq, lvq
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lvq import learning_vq, lvq
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLvq:

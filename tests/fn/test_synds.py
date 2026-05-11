@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.synds -- Syndromic surveillance."""
+"""Tests for morie.fn.synds -- Syndromic surveillance."""
 
 import pytest
 import numpy as np
-from moirais.fn.synds import syndromic_surveillance
+from morie.fn.synds import syndromic_surveillance
 
 
 class TestSyndromicSurveillance:

@@ -1,7 +1,7 @@
 """Test dkmvv."""
 import numpy as np
 import pytest
-from moirais.fn.dkmvv import dkmvv
+from morie.fn.dkmvv import dkmvv
 
 
 def test_dkmvv_basic():

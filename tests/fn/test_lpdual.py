@@ -1,7 +1,7 @@
 """Tests for lpdual.lp_dual."""
 import numpy as np
 import pytest
-from moirais.fn.lpdual import lp_dual
+from morie.fn.lpdual import lp_dual
 
 
 def test_lpdual_basic():

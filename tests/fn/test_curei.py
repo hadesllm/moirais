@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.curei — Mixture cure model."""
+"""Tests for morie.fn.curei — Mixture cure model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.curei import cure_model
+from morie.fn.curei import cure_model
 
 
 class TestCureModel:

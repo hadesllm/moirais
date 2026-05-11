@@ -1,7 +1,7 @@
 """Tests for grlogp.geron_logistic_regression_probability."""
 import numpy as np
 import pytest
-from moirais.fn.grlogp import geron_logistic_regression_probability
+from morie.fn.grlogp import geron_logistic_regression_probability
 
 
 def test_grlogp_basic():

@@ -1,7 +1,7 @@
 """Tests for drcsa.dr_callaway_santanna."""
 import numpy as np
 import pytest
-from moirais.fn.drcsa import dr_callaway_santanna
+from morie.fn.drcsa import dr_callaway_santanna
 
 
 def test_drcsa_basic():

@@ -1,7 +1,7 @@
 """Tests for bnscom.bound_compliance."""
 import numpy as np
 import pytest
-from moirais.fn.bnscom import bound_compliance
+from morie.fn.bnscom import bound_compliance
 
 
 def test_bnscom_basic():

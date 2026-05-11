@@ -1,7 +1,7 @@
 """Tests for rng237.rangayyan_ch4_log_of_convolved_signals."""
 import numpy as np
 import pytest
-from moirais.fn.rng237 import rangayyan_ch4_log_of_convolved_signals
+from morie.fn.rng237 import rangayyan_ch4_log_of_convolved_signals
 
 
 def test_rng237_basic():

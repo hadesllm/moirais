@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.incub -- Incubation period distribution."""
+"""Tests for morie.fn.incub -- Incubation period distribution."""
 
 import pytest
 import numpy as np
-from moirais.fn.incub import incubation_period
+from morie.fn.incub import incubation_period
 
 
 class TestIncubation:

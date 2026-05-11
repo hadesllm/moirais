@@ -1,7 +1,7 @@
 """Tests for mtsmtv.mts_mtr_combined."""
 import numpy as np
 import pytest
-from moirais.fn.mtsmtv import mts_mtr_combined
+from morie.fn.mtsmtv import mts_mtr_combined
 
 
 def test_mtsmtv_basic():

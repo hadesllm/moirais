@@ -1,7 +1,7 @@
 """Tests for piepar.pie_parameters."""
 import numpy as np
 import pytest
-from moirais.fn.piepar import pie_parameters
+from morie.fn.piepar import pie_parameters
 
 
 def test_piepar_basic():

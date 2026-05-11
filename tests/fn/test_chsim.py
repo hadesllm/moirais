@@ -1,6 +1,6 @@
 """Test chsim."""
 import pytest
-from moirais.fn.chsim import chern_simons
+from morie.fn.chsim import chern_simons
 
 
 def test_chsim_basic():

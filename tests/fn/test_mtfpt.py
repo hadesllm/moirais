@@ -1,7 +1,7 @@
 """Test mtfpt."""
 import numpy as np
 import pytest
-from moirais.fn.mtfpt import mtfpt
+from morie.fn.mtfpt import mtfpt
 
 
 def test_mtfpt_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.yllst -- YLL with discounting."""
+"""Tests for morie.fn.yllst -- YLL with discounting."""
 
 import pytest
-from moirais.fn.yllst import years_of_life_lost_std
+from morie.fn.yllst import years_of_life_lost_std
 
 
 class TestYLLStd:

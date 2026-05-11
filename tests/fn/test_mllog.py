@@ -1,7 +1,7 @@
 """Tests for mllog.ml_log_likelihood_regression."""
 import numpy as np
 import pytest
-from moirais.fn.mllog import ml_log_likelihood_regression
+from morie.fn.mllog import ml_log_likelihood_regression
 
 
 def test_mllog_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kmise — MISE-optimal bandwidth."""
+"""Tests for morie.fn.kmise — MISE-optimal bandwidth."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kmise import kmise
+from morie.fn.kmise import kmise
 
 
 class TestKmise:

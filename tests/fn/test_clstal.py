@@ -1,7 +1,7 @@
 """Tests for clstal.clustalo."""
 import numpy as np
 import pytest
-from moirais.fn.clstal import clustalo
+from morie.fn.clstal import clustalo
 
 
 def test_clstal_basic():

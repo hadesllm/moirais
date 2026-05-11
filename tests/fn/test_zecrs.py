@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zecrs -- Carstairs deprivation index"""
+"""Tests for morie.fn.zecrs -- Carstairs deprivation index"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zecrs import carstairs_index
+from morie.fn.zecrs import carstairs_index
 
 
 class TestCarstairsIndex:

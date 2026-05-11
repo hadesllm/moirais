@@ -1,7 +1,7 @@
 """Tests for phmmsr.profile_hmm_search."""
 import numpy as np
 import pytest
-from moirais.fn.phmmsr import profile_hmm_search
+from morie.fn.phmmsr import profile_hmm_search
 
 
 def test_phmmsr_basic():

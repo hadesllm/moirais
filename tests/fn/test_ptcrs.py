@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptcrs -- Cross-type point pattern"""
+"""Tests for morie.fn.ptcrs -- Cross-type point pattern"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptcrs import cross_pp
+from morie.fn.ptcrs import cross_pp
 
 
 class TestCrossPp:

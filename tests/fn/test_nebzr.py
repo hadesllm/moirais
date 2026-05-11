@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.nebzr -- RRT planner."""
+"""Tests for morie.fn.nebzr -- RRT planner."""
 
-from moirais.fn.nebzr import rrt_plan, nebzr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nebzr import rrt_plan, nebzr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNebzr:

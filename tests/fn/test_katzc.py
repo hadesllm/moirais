@@ -1,7 +1,7 @@
 """Tests for katzc.katz_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.katzc import katz_centrality
+from morie.fn.katzc import katz_centrality
 
 
 def test_katzc_basic():

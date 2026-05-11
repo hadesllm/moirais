@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.semkp."""
+"""Tests for morie.fn.semkp."""
 import numpy as np
 import pytest
-from moirais.fn.semkp import semkp
+from morie.fn.semkp import semkp
 
 
 class TestSemkp:

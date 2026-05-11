@@ -1,7 +1,7 @@
 """Test ghacc."""
 import numpy as np
 import pytest
-from moirais.fn.ghacc import ghacc
+from morie.fn.ghacc import ghacc
 
 
 def test_ghacc_basic():

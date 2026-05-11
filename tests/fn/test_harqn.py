@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.harqn -- Harrell's C concordance."""
+"""Tests for morie.fn.harqn -- Harrell's C concordance."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.harqn import harrells_c, harqn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.harqn import harrells_c, harqn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHarqn:

@@ -1,7 +1,7 @@
 """Tests for rgneural.rangayyan_neural_decode."""
 import numpy as np
 import pytest
-from moirais.fn.rgneural import rangayyan_neural_decode
+from morie.fn.rgneural import rangayyan_neural_decode
 
 
 def test_rgneural_basic():

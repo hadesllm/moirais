@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.stide — Spatio-temporal IDE model."""
+"""Tests for morie.fn.stide — Spatio-temporal IDE model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.stide import stide
+from morie.fn.stide import stide
 
 
 class TestStide:

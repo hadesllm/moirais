@@ -1,7 +1,7 @@
 """Tests for spmenv.schabenberger_moran_expectation."""
 import numpy as np
 import pytest
-from moirais.fn.spmenv import schabenberger_moran_expectation
+from morie.fn.spmenv import schabenberger_moran_expectation
 
 
 def test_spmenv_basic():

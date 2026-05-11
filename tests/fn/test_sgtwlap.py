@@ -1,7 +1,7 @@
 """Tests for sgtwlap.sgt_weighted_laplacian."""
 import numpy as np
 import pytest
-from moirais.fn.sgtwlap import sgt_weighted_laplacian
+from morie.fn.sgtwlap import sgt_weighted_laplacian
 
 
 def test_sgtwlap_basic():

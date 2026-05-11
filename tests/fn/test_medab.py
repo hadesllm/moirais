@@ -1,6 +1,6 @@
 """Tests for median_abs_dev."""
 import numpy as np, pytest
-from moirais.fn.medab import median_abs_dev
+from morie.fn.medab import median_abs_dev
 
 
 class TestMedianAbsDev:

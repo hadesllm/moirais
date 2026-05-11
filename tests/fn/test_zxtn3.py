@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxtn3 -- Three-way spatial tensor"""
+"""Tests for morie.fn.zxtn3 -- Three-way spatial tensor"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxtn3 import tensor_3way_sp
+from morie.fn.zxtn3 import tensor_3way_sp
 
 
 class TestTensor3waySp:

@@ -1,7 +1,7 @@
 """Tests for brrest.brr_balanced."""
 import numpy as np
 import pytest
-from moirais.fn.brrest import brr_balanced
+from morie.fn.brrest import brr_balanced
 
 
 def test_brrest_basic():

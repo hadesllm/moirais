@@ -1,7 +1,7 @@
 """Tests for tmldyk.tmle_diff_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.tmldyk import tmle_diff_kernel
+from morie.fn.tmldyk import tmle_diff_kernel
 
 
 def test_tmldyk_basic():

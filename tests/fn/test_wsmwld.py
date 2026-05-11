@@ -1,7 +1,7 @@
 """Tests for wsmwld.wasserman_wald."""
 import numpy as np
 import pytest
-from moirais.fn.wsmwld import wasserman_wald
+from morie.fn.wsmwld import wasserman_wald
 
 
 def test_wsmwld_basic():

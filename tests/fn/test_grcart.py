@@ -1,7 +1,7 @@
 """Tests for grcart.geron_cart_split_cost."""
 import numpy as np
 import pytest
-from moirais.fn.grcart import geron_cart_split_cost
+from morie.fn.grcart import geron_cart_split_cost
 
 
 def test_grcart_basic():

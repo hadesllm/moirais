@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.holo_k -- KM survival curve."""
+"""Tests for morie.fn.holo_k -- KM survival curve."""
 
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.holo_k import holo_km
+from morie.fn.holo_k import holo_km
 
 
 class TestHoloKM:

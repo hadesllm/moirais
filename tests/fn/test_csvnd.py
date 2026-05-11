@@ -1,7 +1,7 @@
 """Test csvnd."""
 import numpy as np
 import pytest
-from moirais.fn.csvnd import csvnd
+from morie.fn.csvnd import csvnd
 
 
 def test_csvnd_basic():

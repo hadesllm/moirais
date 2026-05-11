@@ -1,7 +1,7 @@
 """Test nnint."""
 import numpy as np
 import pytest
-from moirais.fn.nnint import nnint
+from morie.fn.nnint import nnint
 
 
 def test_nnint_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zethl -- Spatial Theil decomposition"""
+"""Tests for morie.fn.zethl -- Spatial Theil decomposition"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zethl import theil_spatial
+from morie.fn.zethl import theil_spatial
 
 
 class TestTheilSpatial:

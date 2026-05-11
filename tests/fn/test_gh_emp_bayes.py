@@ -1,7 +1,7 @@
 """Tests for gh_emp_bayes.ghosal_empirical_bayes_np."""
 import numpy as np
 import pytest
-from moirais.fn.gh_emp_bayes import ghosal_empirical_bayes_np
+from morie.fn.gh_emp_bayes import ghosal_empirical_bayes_np
 
 
 def test_gh_emp_bayes_basic():

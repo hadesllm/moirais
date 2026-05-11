@@ -1,7 +1,7 @@
 """Tests for gevD.gev_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.gevD import gev_distribution
+from morie.fn.gevD import gev_distribution
 
 
 def test_gevD_basic():

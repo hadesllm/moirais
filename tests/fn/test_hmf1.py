@@ -1,7 +1,7 @@
 """Tests for hmf1.geron_f1_score."""
 import numpy as np
 import pytest
-from moirais.fn.hmf1 import geron_f1_score
+from morie.fn.hmf1 import geron_f1_score
 
 
 def test_hmf1_basic():

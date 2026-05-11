@@ -1,7 +1,7 @@
 """Tests for acigls.adjusted_ipgls."""
 import numpy as np
 import pytest
-from moirais.fn.acigls import adjusted_ipgls
+from morie.fn.acigls import adjusted_ipgls
 
 
 def test_acigls_basic():

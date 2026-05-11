@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.irtdp — distractor analysis."""
+"""Tests for morie.fn.irtdp — distractor analysis."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.irtdp import irt_distractor
+from morie.fn.irtdp import irt_distractor
 
 
 class TestIrtDistractor:

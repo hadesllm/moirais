@@ -1,7 +1,7 @@
 """Test clsta."""
 import numpy as np
 import pytest
-from moirais.fn.clsta import clsta
+from morie.fn.clsta import clsta
 
 
 def test_clsta_basic():

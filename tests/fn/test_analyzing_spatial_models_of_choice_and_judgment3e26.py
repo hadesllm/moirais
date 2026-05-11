@@ -1,7 +1,7 @@
 """Tests for analyzing_spatial_models_of_choice_and_judgment3e26.analyzing_spatial_models_of_choice_and_judgment_chapter_3_equation_26."""
 import numpy as np
 import pytest
-from moirais.fn.analyzing_spatial_models_of_choice_and_judgment3e26 import analyzing_spatial_models_of_choice_and_judgment_chapter_3_equation_26
+from morie.fn.analyzing_spatial_models_of_choice_and_judgment3e26 import analyzing_spatial_models_of_choice_and_judgment_chapter_3_equation_26
 
 
 def test_analyzing_spatial_models_of_choice_and_judgment3e26_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.smhaz -- Smoothed hazard function."""
+"""Tests for morie.fn.smhaz -- Smoothed hazard function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.smhaz import smhaz
+from morie.fn.smhaz import smhaz
 
 
 @pytest.fixture()
@@ -38,5 +38,5 @@ def test_grid_length(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.smhaz import cheatsheet
+    from morie.fn.smhaz import cheatsheet
     assert "smooth" in cheatsheet().lower()

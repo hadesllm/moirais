@@ -1,7 +1,7 @@
 """Tests for cntgc.contingency_coefficient."""
 import numpy as np
 import pytest
-from moirais.fn.cntgc import contingency_coefficient
+from morie.fn.cntgc import contingency_coefficient
 
 
 def test_cntgc_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzormsc.horowitz_ordered_max_score."""
 import numpy as np
 import pytest
-from moirais.fn.hrzormsc import horowitz_ordered_max_score
+from morie.fn.hrzormsc import horowitz_ordered_max_score
 
 
 def test_hrzormsc_basic():

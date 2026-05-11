@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bnmax — Maximum score estimator."""
+"""Tests for morie.fn.bnmax — Maximum score estimator."""
 
 import numpy as np
 import pytest
-from moirais.fn.bnmax import bnmax
+from morie.fn.bnmax import bnmax
 
 
 def test_returns_dict():

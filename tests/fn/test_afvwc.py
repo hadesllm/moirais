@@ -1,7 +1,7 @@
 """Test afvwc."""
 import numpy as np
 import pytest
-from moirais.fn.afvwc import afvwc
+from morie.fn.afvwc import afvwc
 
 
 def test_afvwc_basic():

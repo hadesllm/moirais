@@ -1,7 +1,7 @@
 """Tests for km121.kamath_ch8_bertscore_f1."""
 import numpy as np
 import pytest
-from moirais.fn.km121 import kamath_ch8_bertscore_f1
+from morie.fn.km121 import kamath_ch8_bertscore_f1
 
 
 def test_km121_basic():

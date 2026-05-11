@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sceqv — score equating."""
+"""Tests for morie.fn.sceqv — score equating."""
 
 import numpy as np
 import pytest
-from moirais.fn.sceqv import score_equate
+from morie.fn.sceqv import score_equate
 
 
 class TestScoreEquate:

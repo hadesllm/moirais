@@ -1,7 +1,7 @@
 """Test agdom."""
 import numpy as np
 import pytest
-from moirais.fn.agdom import agdom
+from morie.fn.agdom import agdom
 
 
 def test_agdom_basic():

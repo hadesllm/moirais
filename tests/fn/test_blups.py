@@ -1,7 +1,7 @@
 """Tests for blups.blup_random_slope."""
 import numpy as np
 import pytest
-from moirais.fn.blups import blup_random_slope
+from morie.fn.blups import blup_random_slope
 
 
 def test_blups_basic():

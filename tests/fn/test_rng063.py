@@ -1,7 +1,7 @@
 """Tests for rng063.rangayyan_ch3_complex_exponential."""
 import numpy as np
 import pytest
-from moirais.fn.rng063 import rangayyan_ch3_complex_exponential
+from morie.fn.rng063 import rangayyan_ch3_complex_exponential
 
 
 def test_rng063_basic():

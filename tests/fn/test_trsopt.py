@@ -1,7 +1,7 @@
 """Tests for trsopt.trust_region_subproblem."""
 import numpy as np
 import pytest
-from moirais.fn.trsopt import trust_region_subproblem
+from morie.fn.trsopt import trust_region_subproblem
 
 
 def test_trsopt_basic():

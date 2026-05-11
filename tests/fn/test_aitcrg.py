@@ -1,7 +1,7 @@
 """Tests for aitcrg.compositional_regression."""
 import numpy as np
 import pytest
-from moirais.fn.aitcrg import compositional_regression
+from morie.fn.aitcrg import compositional_regression
 
 
 def test_aitcrg_basic():

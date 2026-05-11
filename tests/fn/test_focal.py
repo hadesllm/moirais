@@ -1,6 +1,6 @@
 """Test focal loss."""
 import numpy as np
-from moirais.fn.focal import focal
+from morie.fn.focal import focal
 
 
 def test_focal_basic():

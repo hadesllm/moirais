@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.idpts."""
+"""Tests for morie.fn.idpts."""
 
 import numpy as np
 import pytest
-from moirais.fn.idpts import idpts
+from morie.fn.idpts import idpts
 
 
 class TestIdpts:

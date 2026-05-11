@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.varfit — vector autoregression."""
+"""Tests for morie.fn.varfit — vector autoregression."""
 import numpy as np
 import pytest
-from moirais.fn.varfit import var_fit
+from morie.fn.varfit import var_fit
 
 
 class TestVarFit:

@@ -1,7 +1,7 @@
 """Tests for acvent.differential_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.acvent import differential_entropy
+from morie.fn.acvent import differential_entropy
 
 
 def test_acvent_basic():

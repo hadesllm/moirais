@@ -1,7 +1,7 @@
 """Test gdeth."""
 import numpy as np
 import pytest
-from moirais.fn.gdeth import gdeth
+from morie.fn.gdeth import gdeth
 
 
 def test_gdeth_basic():

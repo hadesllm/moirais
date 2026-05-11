@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxgat -- Graph attention spatial"""
+"""Tests for morie.fn.zxgat -- Graph attention spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxgat import graph_attention_sp
+from morie.fn.zxgat import graph_attention_sp
 
 
 class TestGraphAttentionSp:

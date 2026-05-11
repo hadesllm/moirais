@@ -1,7 +1,7 @@
 """Tests for polrg.polynomial_regression."""
 import numpy as np
 import pytest
-from moirais.fn.polrg import polynomial_regression
+from morie.fn.polrg import polynomial_regression
 
 
 def test_polrg_basic():

@@ -1,7 +1,7 @@
 """Tests for svd_decompose."""
 import numpy as np
 import pytest
-from moirais.fn.svddp import svd_decompose, svddp
+from morie.fn.svddp import svd_decompose, svddp
 
 
 def test_identity():

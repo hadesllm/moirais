@@ -1,7 +1,7 @@
 """Tests for painn.painn."""
 import numpy as np
 import pytest
-from moirais.fn.painn import painn
+from morie.fn.painn import painn
 
 
 def test_painn_basic():

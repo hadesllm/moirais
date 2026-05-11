@@ -1,7 +1,7 @@
 """Tests for hmstrn.history_adjusted_msm."""
 import numpy as np
 import pytest
-from moirais.fn.hmstrn import history_adjusted_msm
+from morie.fn.hmstrn import history_adjusted_msm
 
 
 def test_hmstrn_basic():

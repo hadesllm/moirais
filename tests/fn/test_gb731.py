@@ -1,7 +1,7 @@
 """Tests for gb731.gibbons_linrank_moments."""
 import numpy as np
 import pytest
-from moirais.fn.gb731 import gibbons_linrank_moments
+from morie.fn.gb731 import gibbons_linrank_moments
 
 
 def test_gb731_basic():

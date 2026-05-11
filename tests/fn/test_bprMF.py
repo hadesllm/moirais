@@ -1,7 +1,7 @@
 """Tests for bprMF.bpr_mf."""
 import numpy as np
 import pytest
-from moirais.fn.bprMF import bpr_mf
+from morie.fn.bprMF import bpr_mf
 
 
 def test_bprMF_basic():

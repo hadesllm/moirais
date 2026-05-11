@@ -1,7 +1,7 @@
 """Tests for aitdrl.dirichlet_loglik."""
 import numpy as np
 import pytest
-from moirais.fn.aitdrl import dirichlet_loglik
+from morie.fn.aitdrl import dirichlet_loglik
 
 
 def test_aitdrl_basic():

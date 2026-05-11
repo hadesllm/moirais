@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.teisr — Eisenstein series."""
+"""Tests for morie.fn.teisr — Eisenstein series."""
 
 import pytest
 
-from moirais.fn.teisr import eisenstein_series
+from morie.fn.teisr import eisenstein_series
 
 
 class TestEisensteinSeries:

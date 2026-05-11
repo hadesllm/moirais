@@ -1,7 +1,7 @@
 """Tests for aglnvr.alphazero_loss_var."""
 import numpy as np
 import pytest
-from moirais.fn.aglnvr import alphazero_loss_var
+from morie.fn.aglnvr import alphazero_loss_var
 
 
 def test_aglnvr_basic():

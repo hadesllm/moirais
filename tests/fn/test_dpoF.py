@@ -1,7 +1,7 @@
 """Tests for dpoF.dpo_loss."""
 import numpy as np
 import pytest
-from moirais.fn.dpoF import dpo_loss
+from morie.fn.dpoF import dpo_loss
 
 
 def test_dpoF_basic():

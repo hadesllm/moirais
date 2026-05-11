@@ -1,7 +1,7 @@
 """Tests for isbplr.isgp_bayes."""
 import numpy as np
 import pytest
-from moirais.fn.isbplr import isgp_bayes
+from morie.fn.isbplr import isgp_bayes
 
 
 def test_isbplr_basic():

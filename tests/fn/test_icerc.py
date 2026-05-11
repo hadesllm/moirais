@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.icerc — ICE curves."""
+"""Tests for morie.fn.icerc — ICE curves."""
 import numpy as np
 import pytest
-from moirais.fn.icerc import icerc
+from morie.fn.icerc import icerc
 
 
 @pytest.fixture()
@@ -62,5 +62,5 @@ def test_custom_grid(setup):
 
 
 def test_cheatsheet():
-    from moirais.fn.icerc import cheatsheet
+    from morie.fn.icerc import cheatsheet
     assert len(cheatsheet()) > 0

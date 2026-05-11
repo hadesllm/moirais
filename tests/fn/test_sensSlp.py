@@ -1,7 +1,7 @@
 """Tests for sensSlp.sen_slope."""
 import numpy as np
 import pytest
-from moirais.fn.sensSlp import sen_slope
+from morie.fn.sensSlp import sen_slope
 
 
 def test_sensSlp_basic():

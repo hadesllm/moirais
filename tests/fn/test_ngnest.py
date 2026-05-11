@@ -1,7 +1,7 @@
 """Tests for ngnest.n_beats."""
 import numpy as np
 import pytest
-from moirais.fn.ngnest import n_beats
+from morie.fn.ngnest import n_beats
 
 
 def test_ngnest_basic():

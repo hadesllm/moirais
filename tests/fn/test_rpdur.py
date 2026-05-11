@@ -1,6 +1,6 @@
 """Tests for rpdur — placement duration."""
 import pandas as pd
-from moirais.fn.rpdur import rplace_duration
+from morie.fn.rpdur import rplace_duration
 
 def test_rpdur_basic(otis_df):
     otis_df["end_date"] = otis_df["start_date"] + pd.to_timedelta(otis_df["sentence_days"], unit="D")
@@ -9,7 +9,7 @@ def test_rpdur_basic(otis_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.rpdur import cheatsheet
+    from morie.fn.rpdur import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ummax."""
+"""Tests for morie.fn.ummax."""
 
 import numpy as np
 import pytest
-from moirais.fn.ummax import ummax
+from morie.fn.ummax import ummax
 
 
 class TestUmmax:

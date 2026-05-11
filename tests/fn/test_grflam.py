@@ -1,7 +1,7 @@
 """Tests for grflam.geron_flamingo_cross_modal_attn."""
 import numpy as np
 import pytest
-from moirais.fn.grflam import geron_flamingo_cross_modal_attn
+from morie.fn.grflam import geron_flamingo_cross_modal_attn
 
 
 def test_grflam_basic():

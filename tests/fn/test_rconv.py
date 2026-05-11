@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.rconv import convergence_rate, rconv
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rconv import convergence_rate, rconv
+from morie.fn._containers import DescriptiveResult
 
 
 class TestConvergenceRate:

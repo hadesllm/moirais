@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bkern -- Bayesian kernel regression."""
+"""Tests for morie.fn.bkern -- Bayesian kernel regression."""
 
 import numpy as np
-from moirais.fn.bkern import bayesian_kernel_regression
+from morie.fn.bkern import bayesian_kernel_regression
 
 
 def test_returns_dict():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msitr -- MDS iteration convergence"""
+"""Tests for morie.fn.msitr -- MDS iteration convergence"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msitr import mds_iter
+from morie.fn.msitr import mds_iter
 
 
 class TestMdsIter:

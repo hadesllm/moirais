@@ -1,7 +1,7 @@
 """Tests for attsp.sparse_attention."""
 import numpy as np
 import pytest
-from moirais.fn.attsp import sparse_attention
+from morie.fn.attsp import sparse_attention
 
 
 def test_attsp_basic():

@@ -1,7 +1,7 @@
 """Test agagg."""
 import numpy as np
 import pytest
-from moirais.fn.agagg import agagg
+from morie.fn.agagg import agagg
 
 
 def test_agagg_basic():

@@ -1,7 +1,7 @@
 """Tests for taji_d.tajimas_d."""
 import numpy as np
 import pytest
-from moirais.fn.taji_d import tajimas_d
+from morie.fn.taji_d import tajimas_d
 
 
 def test_taji_d_basic():

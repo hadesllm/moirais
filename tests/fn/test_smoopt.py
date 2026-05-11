@@ -1,7 +1,7 @@
 """Tests for smoopt.smo_solver."""
 import numpy as np
 import pytest
-from moirais.fn.smoopt import smo_solver
+from morie.fn.smoopt import smo_solver
 
 
 def test_smoopt_basic():

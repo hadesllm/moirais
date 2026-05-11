@@ -1,7 +1,7 @@
 """Tests for cnsRos.rosenbaum_bound_signed."""
 import numpy as np
 import pytest
-from moirais.fn.cnsRos import rosenbaum_bound_signed
+from morie.fn.cnsRos import rosenbaum_bound_signed
 
 
 def test_cnsRos_basic():

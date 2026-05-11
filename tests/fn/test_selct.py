@@ -1,7 +1,7 @@
 """Tests for selct.genomic_selection_accuracy."""
 import numpy as np
 import pytest
-from moirais.fn.selct import genomic_selection_accuracy
+from morie.fn.selct import genomic_selection_accuracy
 
 
 def test_selct_basic():

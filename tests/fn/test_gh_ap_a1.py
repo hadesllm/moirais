@@ -1,7 +1,7 @@
 """Tests for gh_ap_a1.ghosal_weak_conv_def."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_a1 import ghosal_weak_conv_def
+from morie.fn.gh_ap_a1 import ghosal_weak_conv_def
 
 
 def test_gh_ap_a1_basic():

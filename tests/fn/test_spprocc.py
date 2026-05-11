@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.spprocc."""
+"""Tests for morie.fn.spprocc."""
 import numpy as np
 import pytest
-from moirais.fn.spprocc import spprocc
+from morie.fn.spprocc import spprocc
 
 
 class TestSpprocc:

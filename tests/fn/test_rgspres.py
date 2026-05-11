@@ -1,7 +1,7 @@
 """Tests for rgspres.rangayyan_spectral_resolution."""
 import numpy as np
 import pytest
-from moirais.fn.rgspres import rangayyan_spectral_resolution
+from morie.fn.rgspres import rangayyan_spectral_resolution
 
 
 def test_rgspres_basic():

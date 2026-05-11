@@ -1,7 +1,7 @@
 """Tests for cvxgsa.boyd_generalized_p."""
 import numpy as np
 import pytest
-from moirais.fn.cvxgsa import boyd_generalized_p
+from morie.fn.cvxgsa import boyd_generalized_p
 
 
 def test_cvxgsa_basic():

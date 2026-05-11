@@ -1,7 +1,7 @@
 """Tests for rgfd1.rangayyan_first_diff."""
 import numpy as np
 import pytest
-from moirais.fn.rgfd1 import rangayyan_first_diff
+from morie.fn.rgfd1 import rangayyan_first_diff
 
 
 def test_rgfd1_basic():

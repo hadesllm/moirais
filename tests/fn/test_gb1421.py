@@ -1,7 +1,7 @@
 """Tests for gb1421.gibbons_chisq_contingency."""
 import numpy as np
 import pytest
-from moirais.fn.gb1421 import gibbons_chisq_contingency
+from morie.fn.gb1421 import gibbons_chisq_contingency
 
 
 def test_gb1421_basic():

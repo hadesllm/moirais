@@ -1,7 +1,7 @@
 """Tests for sgtpgr.sgt_pagerank_power."""
 import numpy as np
 import pytest
-from moirais.fn.sgtpgr import sgt_pagerank_power
+from morie.fn.sgtpgr import sgt_pagerank_power
 
 
 def test_sgtpgr_basic():

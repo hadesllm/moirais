@@ -1,7 +1,7 @@
 """Tests for rng182.rangayyan_ch4_pan_tompkins_lowpass_difference_eq."""
 import numpy as np
 import pytest
-from moirais.fn.rng182 import rangayyan_ch4_pan_tompkins_lowpass_difference_eq
+from morie.fn.rng182 import rangayyan_ch4_pan_tompkins_lowpass_difference_eq
 
 
 def test_rng182_basic():

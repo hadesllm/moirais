@@ -1,7 +1,7 @@
 """Tests for agprtg.alphazero_priority_target."""
 import numpy as np
 import pytest
-from moirais.fn.agprtg import alphazero_priority_target
+from morie.fn.agprtg import alphazero_priority_target
 
 
 def test_agprtg_basic():

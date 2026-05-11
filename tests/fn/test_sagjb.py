@@ -1,7 +1,7 @@
 """Test sagjb."""
 import numpy as np
 import pytest
-from moirais.fn.sagjb import sagjb
+from morie.fn.sagjb import sagjb
 
 
 def test_sagjb_basic():

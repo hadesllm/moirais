@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svclr -- Condorcet loser identification"""
+"""Tests for morie.fn.svclr -- Condorcet loser identification"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svclr import condorcet_loser
+from morie.fn.svclr import condorcet_loser
 
 
 class TestCondorcetLoser:

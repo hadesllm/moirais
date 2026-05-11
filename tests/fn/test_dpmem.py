@@ -1,7 +1,7 @@
 """Tests for dpmem.dirichlet_process_mixture."""
 import numpy as np
 import pytest
-from moirais.fn.dpmem import dirichlet_process_mixture
+from morie.fn.dpmem import dirichlet_process_mixture
 
 
 def test_dpmem_basic():

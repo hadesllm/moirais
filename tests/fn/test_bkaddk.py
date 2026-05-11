@@ -1,7 +1,7 @@
 """Tests for bkaddk.burkov_add_k_smoothing."""
 import numpy as np
 import pytest
-from moirais.fn.bkaddk import burkov_add_k_smoothing
+from morie.fn.bkaddk import burkov_add_k_smoothing
 
 
 def test_bkaddk_basic():

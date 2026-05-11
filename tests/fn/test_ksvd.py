@@ -1,7 +1,7 @@
 """Test ksvd_dictionary (ksvd)."""
 import numpy as np
-from moirais.fn.ksvd import ksvd_dictionary, ksvd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ksvd import ksvd_dictionary, ksvd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestKsvd:

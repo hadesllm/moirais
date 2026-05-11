@@ -1,7 +1,7 @@
 """Tests for tqlld.turboquant_lloyd_max_codebook."""
 import numpy as np
 import pytest
-from moirais.fn.tqlld import turboquant_lloyd_max_codebook
+from morie.fn.tqlld import turboquant_lloyd_max_codebook
 
 
 def test_tqlld_basic():

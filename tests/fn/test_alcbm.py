@@ -1,7 +1,7 @@
 """Tests for alcbm.alammar_conversation_buffer_memory."""
 import numpy as np
 import pytest
-from moirais.fn.alcbm import alammar_conversation_buffer_memory
+from morie.fn.alcbm import alammar_conversation_buffer_memory
 
 
 def test_alcbm_basic():

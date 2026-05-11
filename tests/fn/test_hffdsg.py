@@ -1,7 +1,7 @@
 """Tests for hffdsg.hoeffding_inequality."""
 import numpy as np
 import pytest
-from moirais.fn.hffdsg import hoeffding_inequality
+from morie.fn.hffdsg import hoeffding_inequality
 
 
 def test_hffdsg_basic():

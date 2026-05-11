@@ -1,7 +1,7 @@
 """Tests for rng189.rangayyan_ch4_pan_tompkins_moving_window_integrator."""
 import numpy as np
 import pytest
-from moirais.fn.rng189 import rangayyan_ch4_pan_tompkins_moving_window_integrator
+from morie.fn.rng189 import rangayyan_ch4_pan_tompkins_moving_window_integrator
 
 
 def test_rng189_basic():

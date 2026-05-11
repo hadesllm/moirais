@@ -1,7 +1,7 @@
 """Tests for grhbb.geron_hebb_rule."""
 import numpy as np
 import pytest
-from moirais.fn.grhbb import geron_hebb_rule
+from morie.fn.grhbb import geron_hebb_rule
 
 
 def test_grhbb_basic():

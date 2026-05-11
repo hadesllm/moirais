@@ -1,7 +1,7 @@
 """Test gctrd."""
 import numpy as np
 import pytest
-from moirais.fn.gctrd import gctrd
+from morie.fn.gctrd import gctrd
 
 
 def test_gctrd_basic():

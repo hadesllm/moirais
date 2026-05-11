@@ -1,7 +1,7 @@
 """Tests for seiarp.seira_asymptomatic."""
 import numpy as np
 import pytest
-from moirais.fn.seiarp import seira_asymptomatic
+from morie.fn.seiarp import seira_asymptomatic
 
 
 def test_seiarp_basic():

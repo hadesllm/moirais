@@ -1,7 +1,7 @@
 """Tests for fzkdf.fauzi_kdfe_properties."""
 import numpy as np
 import pytest
-from moirais.fn.fzkdf import fauzi_kdfe_properties
+from morie.fn.fzkdf import fauzi_kdfe_properties
 
 
 def test_fzkdf_basic():

@@ -1,7 +1,7 @@
 """Tests for caCMIP.cmip_ensemble."""
 import numpy as np
 import pytest
-from moirais.fn.caCMIP import cmip_ensemble
+from morie.fn.caCMIP import cmip_ensemble
 
 
 def test_caCMIP_basic():

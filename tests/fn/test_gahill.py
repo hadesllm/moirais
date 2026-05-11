@@ -1,7 +1,7 @@
 """Test gahill."""
 import numpy as np
 import pytest
-from moirais.fn.gahill import gahill
+from morie.fn.gahill import gahill
 
 
 def test_gahill_basic():

@@ -1,7 +1,7 @@
 """Tests for hmearl.geron_early_stopping."""
 import numpy as np
 import pytest
-from moirais.fn.hmearl import geron_early_stopping
+from morie.fn.hmearl import geron_early_stopping
 
 
 def test_hmearl_basic():

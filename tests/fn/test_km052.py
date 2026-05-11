@@ -1,7 +1,7 @@
 """Tests for km052.kamath_ch3_t5_template_obj."""
 import numpy as np
 import pytest
-from moirais.fn.km052 import kamath_ch3_t5_template_obj
+from morie.fn.km052 import kamath_ch3_t5_template_obj
 
 
 def test_km052_basic():

@@ -1,6 +1,6 @@
 """Tests for Lagrange kriging system."""
 import numpy as np
-from moirais.fn.sglag import sglag
+from morie.fn.sglag import sglag
 
 
 def test_sglag_smoke():
@@ -14,7 +14,7 @@ def test_sglag_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sglag import cheatsheet
+    from morie.fn.sglag import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

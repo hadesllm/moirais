@@ -1,7 +1,7 @@
 """Tests for hmnpl.geron_neurons_per_layer."""
 import numpy as np
 import pytest
-from moirais.fn.hmnpl import geron_neurons_per_layer
+from morie.fn.hmnpl import geron_neurons_per_layer
 
 
 def test_hmnpl_basic():

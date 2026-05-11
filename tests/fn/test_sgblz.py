@@ -1,6 +1,6 @@
 """Tests for Boltzmann acceptance."""
 import numpy as np
-from moirais.fn.sgblz import sgblz
+from morie.fn.sgblz import sgblz
 
 
 def test_sgblz_accept_lower():

@@ -1,7 +1,7 @@
 """Tests for otmm.ot_minibatch_loss."""
 import numpy as np
 import pytest
-from moirais.fn.otmm import ot_minibatch_loss
+from morie.fn.otmm import ot_minibatch_loss
 
 
 def test_otmm_basic():

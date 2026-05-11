@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vpred — Predictive validity."""
+"""Tests for morie.fn.vpred — Predictive validity."""
 
 import numpy as np
 import pytest
-from moirais.fn.vpred import validity_predictive
+from morie.fn.vpred import validity_predictive
 
 
 class TestValidityPredictive:

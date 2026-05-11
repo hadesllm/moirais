@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.psovl."""
+"""Tests for morie.fn.psovl."""
 import numpy as np
-from moirais.fn.psovl import psovl
+from morie.fn.psovl import psovl
 
 
 def test_psovl_smoke():
@@ -15,7 +15,7 @@ def test_psovl_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.psovl import cheatsheet
+    from morie.fn.psovl import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

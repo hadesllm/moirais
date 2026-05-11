@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.densm -- density matrix operations."""
+"""Tests for morie.fn.densm -- density matrix operations."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.densm import densm
+from morie.fn.densm import densm
 
 
 def test_construct():

@@ -1,7 +1,7 @@
 """Tests for nrfrad.nerf_radiance."""
 import numpy as np
 import pytest
-from moirais.fn.nrfrad import nerf_radiance
+from morie.fn.nrfrad import nerf_radiance
 
 
 def test_nrfrad_basic():

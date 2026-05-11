@@ -1,7 +1,7 @@
 """Tests for shrinkbm.shrinkage_bayes."""
 import numpy as np
 import pytest
-from moirais.fn.shrinkbm import shrinkage_bayes
+from morie.fn.shrinkbm import shrinkage_bayes
 
 
 def test_shrinkbm_basic():

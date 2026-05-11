@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.sntjd — sentence judicial variation."""
+"""Tests for morie.fn.sntjd — sentence judicial variation."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.sntjd import sentence_judicial
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sntjd import sentence_judicial
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSentenceJudicial:

@@ -1,7 +1,7 @@
 """Test ghe2s."""
 import numpy as np
 import pytest
-from moirais.fn.ghe2s import ghe2s
+from morie.fn.ghe2s import ghe2s
 
 
 def test_ghe2s_basic():

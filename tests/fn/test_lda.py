@@ -1,7 +1,7 @@
 """Tests for lda.lda_topic."""
 import numpy as np
 import pytest
-from moirais.fn.lda import lda_topic
+from morie.fn.lda import lda_topic
 
 
 def test_lda_basic():

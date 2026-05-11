@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rcdbi — recidivism burden."""
+"""Tests for morie.fn.rcdbi — recidivism burden."""
 
 import pytest
 import numpy as np
-from moirais.fn.rcdbi import recidivism_burden
-from moirais.fn._containers import ESRes
+from morie.fn.rcdbi import recidivism_burden
+from morie.fn._containers import ESRes
 
 
 class TestRecidivismBurden:

@@ -1,7 +1,7 @@
 """Tests for gbacon.goodman_bacon_decomp."""
 import numpy as np
 import pytest
-from moirais.fn.gbacon import goodman_bacon_decomp
+from morie.fn.gbacon import goodman_bacon_decomp
 
 
 def test_gbacon_basic():

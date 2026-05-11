@@ -1,7 +1,7 @@
 """Tests for setT.set_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.setT import set_transformer
+from morie.fn.setT import set_transformer
 
 
 def test_setT_basic():

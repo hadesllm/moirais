@@ -1,7 +1,7 @@
 """Tests for kmspn.kamath_t5_span_corruption."""
 import numpy as np
 import pytest
-from moirais.fn.kmspn import kamath_t5_span_corruption
+from morie.fn.kmspn import kamath_t5_span_corruption
 
 
 def test_kmspn_basic():

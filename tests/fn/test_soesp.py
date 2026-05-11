@@ -1,7 +1,7 @@
 """Test soesp."""
 import numpy as np
 import pytest
-from moirais.fn.soesp import soesp
+from morie.fn.soesp import soesp
 
 
 def test_soesp_basic():

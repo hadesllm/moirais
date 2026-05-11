@@ -1,7 +1,7 @@
 """Tests for marndm.ma_random_dl."""
 import numpy as np
 import pytest
-from moirais.fn.marndm import ma_random_dl
+from morie.fn.marndm import ma_random_dl
 
 
 def test_marndm_basic():

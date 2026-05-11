@@ -1,7 +1,7 @@
 """Tests for divLst.diversity."""
 import numpy as np
 import pytest
-from moirais.fn.divLst import diversity
+from morie.fn.divLst import diversity
 
 
 def test_divLst_basic():

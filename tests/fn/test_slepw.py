@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.slepw — Slepian-Wolf bound."""
+"""Tests for morie.fn.slepw — Slepian-Wolf bound."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.slepw import slepw
+from morie.fn.slepw import slepw
 
 
 class TestSlepw:

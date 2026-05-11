@@ -1,7 +1,7 @@
 """Tests for voljr.vol_jump_robust_var."""
 import numpy as np
 import pytest
-from moirais.fn.voljr import vol_jump_robust_var
+from morie.fn.voljr import vol_jump_robust_var
 
 
 def test_voljr_basic():

@@ -1,5 +1,5 @@
 """
-Tests for expanded treatment effect functions in moirais.effects.
+Tests for expanded treatment effect functions in morie.effects.
 
 Covers:
 - estimate_ate_gcomputation (G-computation ATE)
@@ -22,7 +22,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.effects import estimate_ate_gcomputation, e_value
+from morie.effects import estimate_ate_gcomputation, e_value
 
 
 # ===========================================================================
@@ -322,7 +322,7 @@ class TestHypothesisTestingSmoke:
     """
 
     def test_two_sample_t_test(self):
-        from moirais.inference import two_sample_t_test
+        from morie.inference import two_sample_t_test
         rng = np.random.default_rng(0)
         x1 = rng.normal(0, 1, 50)
         x2 = rng.normal(1, 1, 50)
@@ -333,7 +333,7 @@ class TestHypothesisTestingSmoke:
         assert math.isfinite(result["t"])
 
     def test_one_sample_t_test(self):
-        from moirais.inference import one_sample_t_test
+        from morie.inference import one_sample_t_test
         rng = np.random.default_rng(1)
         x = rng.normal(5, 1, 30)
         result = one_sample_t_test(x, mu0=5.0)
@@ -341,14 +341,14 @@ class TestHypothesisTestingSmoke:
         assert result["p_value"] > 0.05  # should fail to reject for data near mu0
 
     def test_chi_square_test_1d(self):
-        from moirais.inference import chi_square_test
+        from morie.inference import chi_square_test
         observed = [10, 20, 15, 25]
         result = chi_square_test(observed)
         assert "chi2" in result
         assert result["chi2"] >= 0
 
     def test_shapiro_wilk_test(self):
-        from moirais.inference import shapiro_wilk_test
+        from morie.inference import shapiro_wilk_test
         rng = np.random.default_rng(0)
         x = rng.normal(0, 1, 100)
         result = shapiro_wilk_test(x)
@@ -361,7 +361,7 @@ class TestHypothesisTestingSmoke:
         For two groups with mean difference = 2 and pooled SD = 1,
         Cohen's d should equal 2.0 exactly.
         """
-        from moirais.inference import cohens_d
+        from morie.inference import cohens_d
         x1 = np.array([3.0, 4.0, 5.0, 6.0, 7.0])
         x2 = np.array([1.0, 2.0, 3.0, 4.0, 5.0])
         d = cohens_d(x1, x2)
@@ -371,20 +371,20 @@ class TestHypothesisTestingSmoke:
 
     def test_proportion_ci_wilson_contains_true_p(self):
         """Wilson CI should contain the true proportion for a large sample."""
-        from moirais.inference import proportion_ci
+        from morie.inference import proportion_ci
         # 500/1000 = 0.5 (true proportion)
         lo, hi = proportion_ci(500, 1000, method="wilson")
         assert lo < 0.5 < hi
 
     def test_power_t_test_solve_for_n(self):
         """power_t_test with delta=0.5, power=0.80 should give n > 1."""
-        from moirais.inference import power_t_test
+        from morie.inference import power_t_test
         n = power_t_test(delta=0.5, power=0.80)
         assert n > 1
 
     def test_power_t_test_solve_for_power(self):
         """power_t_test with n=50, delta=0.5 should give power in (0, 1)."""
-        from moirais.inference import power_t_test
+        from morie.inference import power_t_test
         power = power_t_test(n=50, delta=0.5)
         assert 0 < power < 1
 
@@ -392,7 +392,7 @@ class TestHypothesisTestingSmoke:
         """
         Two groups with large mean difference should yield a small p-value.
         """
-        from moirais.inference import anova_one_way
+        from morie.inference import anova_one_way
         rng = np.random.default_rng(0)
         g1 = rng.normal(0, 1, 30)
         g2 = rng.normal(5, 1, 30)
@@ -402,14 +402,14 @@ class TestHypothesisTestingSmoke:
 
     def test_odds_ratio_ci_2x2(self):
         """OR for a table with no association should be near 1."""
-        from moirais.inference import odds_ratio_ci
+        from morie.inference import odds_ratio_ci
         tbl = [[10, 10], [10, 10]]
         result = odds_ratio_ci(tbl)
         assert abs(result["odds_ratio"] - 1.0) < 1e-10
         assert result["ci_lower"] < 1.0 < result["ci_upper"]
 
     def test_risk_ratio_ci_2x2(self):
-        from moirais.inference import risk_ratio_ci
+        from morie.inference import risk_ratio_ci
         # Equal risks: RR should be 1
         tbl = [[50, 50], [50, 50]]
         result = risk_ratio_ci(tbl)
@@ -419,7 +419,7 @@ class TestHypothesisTestingSmoke:
         """
         A table where row and column are independent should yield V near 0.
         """
-        from moirais.inference import cramers_v
+        from morie.inference import cramers_v
         # Perfect independence: proportional rows
         tbl = [[50, 50], [50, 50]]
         v = cramers_v(tbl)
@@ -427,7 +427,7 @@ class TestHypothesisTestingSmoke:
 
     def test_spearman_rho_monotone(self):
         """Perfect monotone relationship should give rho = 1.0."""
-        from moirais.inference import spearman_rho
+        from morie.inference import spearman_rho
         x = np.arange(1, 21)
         y = x ** 2  # monotone increasing
         result = spearman_rho(x, y)
@@ -435,7 +435,7 @@ class TestHypothesisTestingSmoke:
 
     def test_kendall_tau_perfect_concordance(self):
         """Perfectly concordant ranking should give tau = 1.0."""
-        from moirais.inference import kendall_tau
+        from morie.inference import kendall_tau
         x = [1, 2, 3, 4, 5]
         y = [2, 4, 6, 8, 10]
         result = kendall_tau(x, y)

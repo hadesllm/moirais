@@ -1,7 +1,7 @@
 """Test vmind."""
 import numpy as np
 import pytest
-from moirais.fn.vmind import vmind
+from morie.fn.vmind import vmind
 
 
 def test_vmind_basic():

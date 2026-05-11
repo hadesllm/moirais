@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.siucmp — SIU comparison."""
+"""Tests for morie.fn.siucmp — SIU comparison."""
 
 import pytest
-from moirais.fn.siucmp import siu_comparison
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.siucmp import siu_comparison
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSiuComparison:

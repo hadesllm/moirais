@@ -1,7 +1,7 @@
 """Tests for rng253.rangayyan_ch4_power_cepstrum_definition."""
 import numpy as np
 import pytest
-from moirais.fn.rng253 import rangayyan_ch4_power_cepstrum_definition
+from morie.fn.rng253 import rangayyan_ch4_power_cepstrum_definition
 
 
 def test_rng253_basic():

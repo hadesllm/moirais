@@ -1,7 +1,7 @@
 """Tests for mxpol.maxpool_forward."""
 import numpy as np
 import pytest
-from moirais.fn.mxpol import maxpool_forward
+from morie.fn.mxpol import maxpool_forward
 
 
 def test_mxpol_basic():

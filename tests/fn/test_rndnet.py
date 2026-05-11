@@ -1,7 +1,7 @@
 """Tests for rndnet.random_network_distillation."""
 import numpy as np
 import pytest
-from moirais.fn.rndnet import random_network_distillation
+from morie.fn.rndnet import random_network_distillation
 
 
 def test_rndnet_basic():

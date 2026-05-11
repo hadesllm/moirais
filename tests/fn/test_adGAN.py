@@ -1,7 +1,7 @@
 """Tests for adGAN.adversarial_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.adGAN import adversarial_anomaly
+from morie.fn.adGAN import adversarial_anomaly
 
 
 def test_adGAN_basic():

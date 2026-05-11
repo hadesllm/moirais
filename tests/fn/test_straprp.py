@@ -1,7 +1,7 @@
 """Tests for straprp.stratified_proportion."""
 import numpy as np
 import pytest
-from moirais.fn.straprp import stratified_proportion
+from morie.fn.straprp import stratified_proportion
 
 
 def test_straprp_basic():

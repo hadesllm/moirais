@@ -1,7 +1,7 @@
 """Tests for rggrpd.rangayyan_group_delay."""
 import numpy as np
 import pytest
-from moirais.fn.rggrpd import rangayyan_group_delay
+from morie.fn.rggrpd import rangayyan_group_delay
 
 
 def test_rggrpd_basic():

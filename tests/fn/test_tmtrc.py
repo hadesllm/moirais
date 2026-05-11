@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.tmtrc -- trace over time."""
+"""Tests for morie.fn.tmtrc -- trace over time."""
 import numpy as np
-from moirais.fn.tmtrc import trace_over_time, tmtrc
+from morie.fn.tmtrc import trace_over_time, tmtrc
 
 
 def test_alias():

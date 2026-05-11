@@ -1,7 +1,7 @@
 """Tests for lusim."""
 import numpy as np
 import pytest
-from moirais.fn.lusim import lusim
+from morie.fn.lusim import lusim
 
 
 def test_lusim_basic():
@@ -27,5 +27,5 @@ def test_lusim_no_data():
 
 
 def test_lusim_alias():
-    from moirais.fn.lusim import lusim
+    from morie.fn.lusim import lusim
     assert lusim is lusim

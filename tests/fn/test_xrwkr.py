@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwkr -- Kernel weights"""
+"""Tests for morie.fn.xrwkr -- Kernel weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwkr import w_kernel
+from morie.fn.xrwkr import w_kernel
 
 
 class TestWKernel:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrim2 -- SDM impacts decomposition"""
+"""Tests for morie.fn.xrim2 -- SDM impacts decomposition"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrim2 import sdm_impacts
+from morie.fn.xrim2 import sdm_impacts
 
 
 class TestSdmImpacts:

@@ -1,7 +1,7 @@
 """Tests for gmccsm.g_methods_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.gmccsm import g_methods_consistency
+from morie.fn.gmccsm import g_methods_consistency
 
 
 def test_gmccsm_basic():

@@ -1,7 +1,7 @@
 """Tests for toppS.top_p_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.toppS import top_p_sampling
+from morie.fn.toppS import top_p_sampling
 
 
 def test_toppS_basic():

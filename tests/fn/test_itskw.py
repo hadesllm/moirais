@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itskw — item skewness and kurtosis."""
+"""Tests for morie.fn.itskw — item skewness and kurtosis."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.itskw import item_skew_kurt
+from morie.fn.itskw import item_skew_kurt
 
 
 class TestItemSkewKurt:

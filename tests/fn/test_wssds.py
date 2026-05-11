@@ -1,7 +1,7 @@
 """Test wss_distance (wssds)."""
 import numpy as np
-from moirais.fn.wssds import wss_distance, wssds
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wssds import wss_distance, wssds
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWssds:

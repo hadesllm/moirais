@@ -1,7 +1,7 @@
 """Test ppitj."""
 import numpy as np
 import pytest
-from moirais.fn.ppitj import ppitj
+from morie.fn.ppitj import ppitj
 
 
 def test_ppitj_basic():

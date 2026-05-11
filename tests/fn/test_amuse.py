@@ -1,7 +1,7 @@
 """Test amuse_bss (amuse)."""
 import numpy as np
-from moirais.fn.amuse import amuse_bss, amuse
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.amuse import amuse_bss, amuse
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAmuse:

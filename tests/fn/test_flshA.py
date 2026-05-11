@@ -1,7 +1,7 @@
 """A journey of a thousand miles begins with a single step. — Lao Tzu"""
 import numpy as np
 import pytest
-from moirais.fn.flshA import flash_attention
+from morie.fn.flshA import flash_attention
 
 
 def test_flshA_basic():

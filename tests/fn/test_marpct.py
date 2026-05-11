@@ -1,7 +1,7 @@
 """Tests for marpct.ma_percent_heterogeneity_R2."""
 import numpy as np
 import pytest
-from moirais.fn.marpct import ma_percent_heterogeneity_R2
+from morie.fn.marpct import ma_percent_heterogeneity_R2
 
 
 def test_marpct_basic():

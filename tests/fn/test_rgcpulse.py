@@ -1,7 +1,7 @@
 """Tests for rgcpulse.rangayyan_carotid_pulse."""
 import numpy as np
 import pytest
-from moirais.fn.rgcpulse import rangayyan_carotid_pulse
+from morie.fn.rgcpulse import rangayyan_carotid_pulse
 
 
 def test_rgcpulse_basic():

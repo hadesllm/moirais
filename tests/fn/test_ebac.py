@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ebac — Widmark eBAC calculation."""
+"""Tests for morie.fn.ebac — Widmark eBAC calculation."""
 
 import pytest
-from moirais.fn.ebac import calculate_ebac as ebac
+from morie.fn.ebac import calculate_ebac as ebac
 
 
 class TestCalculateEbac:

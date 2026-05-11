@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.page -- Page's L trend test."""
+"""Tests for morie.fn.page -- Page's L trend test."""
 
 import numpy as np
 import pytest
-from moirais.fn.page import page_trend_test
-from moirais.fn._containers import TestResult
+from morie.fn.page import page_trend_test
+from morie.fn._containers import TestResult
 
 
 class TestPage:

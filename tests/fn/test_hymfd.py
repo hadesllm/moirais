@@ -1,7 +1,7 @@
 """Test hymfd."""
 import numpy as np
 import pytest
-from moirais.fn.hymfd import hymfd
+from morie.fn.hymfd import hymfd
 
 
 def test_hymfd_basic():

@@ -1,7 +1,7 @@
 """Tests for vlfctn.value_function_eval."""
 import numpy as np
 import pytest
-from moirais.fn.vlfctn import value_function_eval
+from morie.fn.vlfctn import value_function_eval
 
 
 def test_vlfctn_basic():

@@ -1,7 +1,7 @@
 """Test clwlk."""
 import numpy as np
 import pytest
-from moirais.fn.clwlk import clwlk
+from morie.fn.clwlk import clwlk
 
 
 def test_clwlk_basic():

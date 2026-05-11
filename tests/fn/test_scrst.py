@@ -1,7 +1,7 @@
 """Test crest_factor (scrst)."""
 import numpy as np
-from moirais.fn.scrst import crest_factor, scrst
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.scrst import crest_factor, scrst
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCrestFactor:

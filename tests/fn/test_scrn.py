@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scrn — Screening test metrics."""
+"""Tests for morie.fn.scrn — Screening test metrics."""
 
 import pytest
 
-from moirais.fn.scrn import screening_metrics
+from morie.fn.scrn import screening_metrics
 
 
 class TestScreeningMetrics:

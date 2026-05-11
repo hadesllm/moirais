@@ -1,7 +1,7 @@
 """Tests for bndmsg.bound_missing_outcome."""
 import numpy as np
 import pytest
-from moirais.fn.bndmsg import bound_missing_outcome
+from morie.fn.bndmsg import bound_missing_outcome
 
 
 def test_bndmsg_basic():

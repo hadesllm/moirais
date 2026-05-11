@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.zatna -- Palindrome detection."""
+"""Tests for morie.fn.zatna -- Palindrome detection."""
 
-from moirais.fn.zatna import palindrome_detect, zatna
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.zatna import palindrome_detect, zatna
+from morie.fn._containers import DescriptiveResult
 
 
 class TestZatna:

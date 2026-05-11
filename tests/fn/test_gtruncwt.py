@@ -1,7 +1,7 @@
 """Tests for gtruncwt.truncate_weights."""
 import numpy as np
 import pytest
-from moirais.fn.gtruncwt import truncate_weights
+from morie.fn.gtruncwt import truncate_weights
 
 
 def test_gtruncwt_basic():

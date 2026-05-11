@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.fdisc — f-divergence."""
+"""Tests for morie.fn.fdisc — f-divergence."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.fdisc import fdisc
+from morie.fn.fdisc import fdisc
 
 
 class TestFdisc:

@@ -1,7 +1,7 @@
 """Test ubsch."""
 import numpy as np
 import pytest
-from moirais.fn.ubsch import ubsch
+from morie.fn.ubsch import ubsch
 
 
 def test_ubsch_basic():

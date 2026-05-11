@@ -1,7 +1,7 @@
 """Tests for rgqda.rangayyan_qda."""
 import numpy as np
 import pytest
-from moirais.fn.rgqda import rangayyan_qda
+from morie.fn.rgqda import rangayyan_qda
 
 
 def test_rgqda_basic():

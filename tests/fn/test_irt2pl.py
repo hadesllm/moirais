@@ -1,7 +1,7 @@
 """Tests for irt2pl.two_parameter_logistic."""
 import numpy as np
 import pytest
-from moirais.fn.irt2pl import two_parameter_logistic
+from morie.fn.irt2pl import two_parameter_logistic
 
 
 def test_irt2pl_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cfabi -- bifactor CFA."""
+"""Tests for morie.fn.cfabi -- bifactor CFA."""
 
 import numpy as np
-from moirais.fn.cfabi import cfa_bifactor
+from morie.fn.cfabi import cfa_bifactor
 
 
 class TestCfaBifactor:

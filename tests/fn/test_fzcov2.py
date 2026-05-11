@@ -1,7 +1,7 @@
 """Tests for fzcov2.fauzi_cov_surv_est2."""
 import numpy as np
 import pytest
-from moirais.fn.fzcov2 import fauzi_cov_surv_est2
+from morie.fn.fzcov2 import fauzi_cov_surv_est2
 
 
 def test_fzcov2_basic():

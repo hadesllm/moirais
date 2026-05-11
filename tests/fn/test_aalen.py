@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.aalen -- Aalen additive hazards model."""
+"""Tests for morie.fn.aalen -- Aalen additive hazards model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.aalen import aalen
+from morie.fn.aalen import aalen
 
 
 @pytest.fixture()
@@ -39,5 +39,5 @@ def test_cum_coef_shape(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.aalen import cheatsheet
+    from morie.fn.aalen import cheatsheet
     assert "aalen" in cheatsheet().lower()

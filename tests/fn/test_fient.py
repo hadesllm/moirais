@@ -1,7 +1,7 @@
 """Tests for Fisher information."""
 import numpy as np
 import pytest
-from moirais.fn.fient import fisher_information, fient
+from morie.fn.fient import fisher_information, fient
 
 
 def test_positive():

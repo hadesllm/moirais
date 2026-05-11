@@ -1,7 +1,7 @@
 """Tests for timeRS.timesvd."""
 import numpy as np
 import pytest
-from moirais.fn.timeRS import timesvd
+from morie.fn.timeRS import timesvd
 
 
 def test_timeRS_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mxkde — Mixture model KDE."""
+"""Tests for morie.fn.mxkde — Mixture model KDE."""
 
 import numpy as np
 import pytest
-from moirais.fn.mxkde import mxkde
+from morie.fn.mxkde import mxkde
 
 
 def test_returns_dict():

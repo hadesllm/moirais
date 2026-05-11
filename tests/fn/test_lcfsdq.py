@@ -1,7 +1,7 @@
 """Tests for lcfsdq.lc_first_sd_query."""
 import numpy as np
 import pytest
-from moirais.fn.lcfsdq import lc_first_sd_query
+from morie.fn.lcfsdq import lc_first_sd_query
 
 
 def test_lcfsdq_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pqnrm — PolarQuant unit-sphere projection."""
+"""Tests for morie.fn.pqnrm — PolarQuant unit-sphere projection."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pqnrm import polar_normalize
+from morie.fn.pqnrm import polar_normalize
 
 
 class TestPolarNormalize:

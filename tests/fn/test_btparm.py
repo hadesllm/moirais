@@ -1,7 +1,7 @@
 """Tests for btparm.boot_parametric."""
 import numpy as np
 import pytest
-from moirais.fn.btparm import boot_parametric
+from morie.fn.btparm import boot_parametric
 
 
 def test_btparm_basic():

@@ -1,7 +1,7 @@
 """Tests for sicosm."""
 import numpy as np
 import pytest
-from moirais.fn.sicosm import sicosm
+from morie.fn.sicosm import sicosm
 
 
 def test_sicosm_basic():
@@ -27,5 +27,5 @@ def test_sicosm_no_data():
 
 
 def test_sicosm_alias():
-    from moirais.fn.sicosm import sicosm
+    from morie.fn.sicosm import sicosm
     assert sicosm is sicosm

@@ -1,7 +1,7 @@
 """Tests for grsft.geron_sft_objective."""
 import numpy as np
 import pytest
-from moirais.fn.grsft import geron_sft_objective
+from morie.fn.grsft import geron_sft_objective
 
 
 def test_grsft_basic():

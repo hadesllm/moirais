@@ -1,7 +1,7 @@
 """Tests for spsph.schabenberger_spherical_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.spsph import schabenberger_spherical_variogram
+from morie.fn.spsph import schabenberger_spherical_variogram
 
 
 def test_spsph_basic():

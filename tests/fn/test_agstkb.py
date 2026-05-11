@@ -1,7 +1,7 @@
 """Tests for agstkb.alphazero_stockfish_baseline."""
 import numpy as np
 import pytest
-from moirais.fn.agstkb import alphazero_stockfish_baseline
+from morie.fn.agstkb import alphazero_stockfish_baseline
 
 
 def test_agstkb_basic():

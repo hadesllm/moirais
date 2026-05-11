@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cmptr — compliance trend."""
+"""Tests for morie.fn.cmptr — compliance trend."""
 
 import pandas as pd
-from moirais.fn.cmptr import compliance_trend
+from morie.fn.cmptr import compliance_trend
 
 
 class TestComplianceTrend:

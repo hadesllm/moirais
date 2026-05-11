@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bcred -- Bayesian credible interval."""
+"""Tests for morie.fn.bcred -- Bayesian credible interval."""
 
 import numpy as np
-from moirais.fn.bcred import credible_interval
+from morie.fn.bcred import credible_interval
 
 
 def test_returns_dict():

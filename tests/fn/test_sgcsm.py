@@ -1,6 +1,6 @@
 """Tests for conditional simulation."""
 import numpy as np
-from moirais.fn.sgcsm import sgcsm
+from morie.fn.sgcsm import sgcsm
 
 
 def test_sgcsm_smoke():
@@ -14,7 +14,7 @@ def test_sgcsm_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgcsm import cheatsheet
+    from morie.fn.sgcsm import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

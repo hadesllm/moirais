@@ -1,7 +1,7 @@
 """Test real_cepstrum (rceps)."""
 import numpy as np
-from moirais.fn.rceps import real_cepstrum, rceps
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rceps import real_cepstrum, rceps
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRceps:

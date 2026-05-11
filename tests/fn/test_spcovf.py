@@ -1,7 +1,7 @@
 """Tests for spcovf.schabenberger_covariance_function."""
 import numpy as np
 import pytest
-from moirais.fn.spcovf import schabenberger_covariance_function
+from morie.fn.spcovf import schabenberger_covariance_function
 
 
 def test_spcovf_basic():

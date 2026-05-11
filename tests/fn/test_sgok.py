@@ -1,6 +1,6 @@
 """Tests for ordinary kriging."""
 import numpy as np
-from moirais.fn.sgok import sgok
+from morie.fn.sgok import sgok
 
 
 def test_sgok_smoke():

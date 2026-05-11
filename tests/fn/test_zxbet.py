@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxbet -- Betti numbers computation"""
+"""Tests for morie.fn.zxbet -- Betti numbers computation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxbet import betti_numbers
+from morie.fn.zxbet import betti_numbers
 
 
 class TestBettiNumbers:

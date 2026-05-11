@@ -1,7 +1,7 @@
 """Tests for sgtsbms.sgt_sbm_spectral_estimate."""
 import numpy as np
 import pytest
-from moirais.fn.sgtsbms import sgt_sbm_spectral_estimate
+from morie.fn.sgtsbms import sgt_sbm_spectral_estimate
 
 
 def test_sgtsbms_basic():

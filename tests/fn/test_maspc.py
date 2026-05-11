@@ -1,7 +1,7 @@
 """Test maspc."""
 import numpy as np
 import pytest
-from moirais.fn.maspc import maspc
+from morie.fn.maspc import maspc
 
 
 def test_maspc_basic():

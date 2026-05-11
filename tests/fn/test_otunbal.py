@@ -1,7 +1,7 @@
 """Tests for otunbal.ot_unbalanced."""
 import numpy as np
 import pytest
-from moirais.fn.otunbal import ot_unbalanced
+from morie.fn.otunbal import ot_unbalanced
 
 
 def test_otunbal_basic():

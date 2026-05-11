@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.eqslp — slope inequality index."""
+"""Tests for morie.fn.eqslp — slope inequality index."""
 
 import pytest
-from moirais.fn.eqslp import slope_inequality
-from moirais.fn._containers import ESRes
+from morie.fn.eqslp import slope_inequality
+from morie.fn._containers import ESRes
 
 
 class TestSlopeInequality:

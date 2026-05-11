@@ -1,7 +1,7 @@
 """Test duty_cycle (sduty)."""
 import numpy as np
-from moirais.fn.sduty import duty_cycle, sduty
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sduty import duty_cycle, sduty
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDutyCycle:

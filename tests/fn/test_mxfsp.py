@@ -1,7 +1,7 @@
 """Test mxfsp."""
 import numpy as np
 import pytest
-from moirais.fn.mxfsp import mxfsp
+from morie.fn.mxfsp import mxfsp
 
 
 def test_mxfsp_basic():

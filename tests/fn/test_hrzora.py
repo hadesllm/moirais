@@ -1,7 +1,7 @@
 """Tests for hrzora.horowitz_two_step_oracle."""
 import numpy as np
 import pytest
-from moirais.fn.hrzora import horowitz_two_step_oracle
+from morie.fn.hrzora import horowitz_two_step_oracle
 
 
 def test_hrzora_basic():

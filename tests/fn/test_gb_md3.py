@@ -1,7 +1,7 @@
 """Tests for gb_md3.gibbons_median_ties."""
 import numpy as np
 import pytest
-from moirais.fn.gb_md3 import gibbons_median_ties
+from morie.fn.gb_md3 import gibbons_median_ties
 
 
 def test_gb_md3_basic():

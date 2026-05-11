@@ -1,7 +1,7 @@
 """Test hylen."""
 import numpy as np
 import pytest
-from moirais.fn.hylen import hylen
+from morie.fn.hylen import hylen
 
 
 def test_hylen_basic():

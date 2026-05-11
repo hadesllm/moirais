@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pproc — point process intensity."""
+"""Tests for morie.fn.pproc — point process intensity."""
 import numpy as np
 import pytest
-from moirais.fn.pproc import point_process_intensity
+from morie.fn.pproc import point_process_intensity
 
 
 class TestPointProcess:

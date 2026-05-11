@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.elsal."""
+"""Tests for morie.fn.elsal."""
 
 import numpy as np
 import pytest
-from moirais.fn.elsal import elsal
+from morie.fn.elsal import elsal
 
 
 class TestElsal:

@@ -1,7 +1,7 @@
 """Test encos."""
 import numpy as np
 import pytest
-from moirais.fn.encos import encos
+from morie.fn.encos import encos
 
 
 def test_encos_basic():

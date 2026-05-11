@@ -1,7 +1,7 @@
 """Tests for grmcol.geron_gan_mode_collapse_metric."""
 import numpy as np
 import pytest
-from moirais.fn.grmcol import geron_gan_mode_collapse_metric
+from morie.fn.grmcol import geron_gan_mode_collapse_metric
 
 
 def test_grmcol_basic():

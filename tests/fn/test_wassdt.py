@@ -1,7 +1,7 @@
 """Tests for wassdt.wasserstein_1d."""
 import numpy as np
 import pytest
-from moirais.fn.wassdt import wasserstein_1d
+from morie.fn.wassdt import wasserstein_1d
 
 
 def test_wassdt_basic():

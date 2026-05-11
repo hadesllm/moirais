@@ -1,7 +1,7 @@
 """Tests for spthom.schabenberger_thomas_process."""
 import numpy as np
 import pytest
-from moirais.fn.spthom import schabenberger_thomas_process
+from morie.fn.spthom import schabenberger_thomas_process
 
 
 def test_spthom_basic():

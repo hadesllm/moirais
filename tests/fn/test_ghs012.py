@@ -1,7 +1,7 @@
 """Tests for ghs012.ghosal_ch3_countable_dirichlet_posterior_l."""
 import numpy as np
 import pytest
-from moirais.fn.ghs012 import ghosal_ch3_countable_dirichlet_posterior_l
+from morie.fn.ghs012 import ghosal_ch3_countable_dirichlet_posterior_l
 
 
 def test_ghs012_basic():

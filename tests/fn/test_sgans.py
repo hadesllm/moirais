@@ -1,6 +1,6 @@
 """Tests for anisotropy correction."""
 import numpy as np
-from moirais.fn.sgans import sgans
+from morie.fn.sgans import sgans
 
 
 def test_sgans_smoke():

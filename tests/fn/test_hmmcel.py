@@ -1,7 +1,7 @@
 """Tests for hmmcel.geron_memory_cell."""
 import numpy as np
 import pytest
-from moirais.fn.hmmcel import geron_memory_cell
+from morie.fn.hmmcel import geron_memory_cell
 
 
 def test_hmmcel_basic():

@@ -1,7 +1,7 @@
 """Tests for bnsnig.bound_no_unobserved_inv."""
 import numpy as np
 import pytest
-from moirais.fn.bnsnig import bound_no_unobserved_inv
+from morie.fn.bnsnig import bound_no_unobserved_inv
 
 
 def test_bnsnig_basic():

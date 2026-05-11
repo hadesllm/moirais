@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.seqdt — sequential change-point detection."""
+"""Tests for morie.fn.seqdt — sequential change-point detection."""
 import numpy as np
 import pytest
 
-from moirais.fn.seqdt import sequential_detect, seqdt
+from morie.fn.seqdt import sequential_detect, seqdt
 
 
 def test_cusum_no_change():

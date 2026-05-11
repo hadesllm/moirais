@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gdpgr."""
+"""Tests for morie.fn.gdpgr."""
 import numpy as np
-from moirais.fn.gdpgr import gdp_growth
+from morie.fn.gdpgr import gdp_growth
 
 
 def test_gdpgr_smoke():
@@ -12,7 +12,7 @@ def test_gdpgr_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.gdpgr import cheatsheet
+    from morie.fn.gdpgr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

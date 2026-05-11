@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfaln -- CFA standardized loadings."""
+"""Tests for morie.fn.cfaln -- CFA standardized loadings."""
 
 import pandas as pd
-from moirais.fn.cfaln import cfa_loadings
-from moirais.fn._mapq_const import SUBSCALES
+from morie.fn.cfaln import cfa_loadings
+from morie.fn._mapq_const import SUBSCALES
 
 
 class TestCfaLoadings:

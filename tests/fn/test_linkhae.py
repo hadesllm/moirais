@@ -1,7 +1,7 @@
 """Tests for linkhae.linking_haebara."""
 import numpy as np
 import pytest
-from moirais.fn.linkhae import linking_haebara
+from morie.fn.linkhae import linking_haebara
 
 
 def test_linkhae_basic():

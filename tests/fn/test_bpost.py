@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bpost -- Conjugate posterior updating."""
+"""Tests for morie.fn.bpost -- Conjugate posterior updating."""
 
 import numpy as np
 import pytest
-from moirais.fn.bpost import conjugate_posterior
+from morie.fn.bpost import conjugate_posterior
 
 
 class TestConjugatePosterior:

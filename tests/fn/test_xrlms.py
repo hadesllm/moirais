@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrlms -- LM test SARMA"""
+"""Tests for morie.fn.xrlms -- LM test SARMA"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrlms import lm_sarma
+from morie.fn.xrlms import lm_sarma
 
 
 class TestLmSarma:

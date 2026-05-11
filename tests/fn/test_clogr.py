@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.clogr — Conditional logistic regression."""
+"""Tests for morie.fn.clogr — Conditional logistic regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.clogr import conditional_logistic
+from morie.fn.clogr import conditional_logistic
 
 
 def test_clogr_positive_coef():

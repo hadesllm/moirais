@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mcesm — Maximum calibration error."""
+"""Tests for morie.fn.mcesm — Maximum calibration error."""
 import numpy as np
 import pytest
-from moirais.fn.mcesm import mcesm
+from morie.fn.mcesm import mcesm
 
 
 @pytest.fixture()
@@ -30,7 +30,7 @@ def test_mce_geq_ece():
     p = rng.uniform(0.1, 0.9, 500)
     y = rng.binomial(1, p).astype(float)
     r_mce = mcesm(y, p)
-    from moirais.fn.ecesm import ecesm
+    from morie.fn.ecesm import ecesm
     r_ece = ecesm(y, p)
     assert r_mce["mce"] >= r_ece["ece"] - 1e-8
 
@@ -60,5 +60,5 @@ def test_n_correct(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.mcesm import cheatsheet
+    from morie.fn.mcesm import cheatsheet
     assert len(cheatsheet()) > 0

@@ -1,7 +1,7 @@
 """Tests for copul.copula_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.copul import copula_estimation
+from morie.fn.copul import copula_estimation
 
 
 def test_copul_basic():

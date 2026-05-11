@@ -1,7 +1,7 @@
 """Tests for spbp.schabenberger_breusch_pagan."""
 import numpy as np
 import pytest
-from moirais.fn.spbp import schabenberger_breusch_pagan
+from morie.fn.spbp import schabenberger_breusch_pagan
 
 
 def test_spbp_basic():

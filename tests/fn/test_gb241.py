@@ -1,7 +1,7 @@
 """Tests for gb241.gibbons_order_cdf."""
 import numpy as np
 import pytest
-from moirais.fn.gb241 import gibbons_order_cdf
+from morie.fn.gb241 import gibbons_order_cdf
 
 
 def test_gb241_basic():

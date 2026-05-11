@@ -1,6 +1,6 @@
 """Tests for mood_median_test."""
 import numpy as np, pytest
-from moirais.fn.moodm import mood_median_test
+from morie.fn.moodm import mood_median_test
 
 class TestMood:
     def test_different(self):

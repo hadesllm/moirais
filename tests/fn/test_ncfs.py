@@ -1,7 +1,7 @@
 """Tests for ncfs.py - Neighbourhood Component Feature Selection."""
 import numpy as np
 import pytest
-from moirais.fn.ncfs import ncfs_fn, ncfs
+from morie.fn.ncfs import ncfs_fn, ncfs
 
 
 def test_ncfs_returns_descriptive_result():

@@ -1,7 +1,7 @@
 """Tests for ldiff.l_diversity_check."""
 import numpy as np
 import pytest
-from moirais.fn.ldiff import l_diversity_check
+from morie.fn.ldiff import l_diversity_check
 
 
 def test_ldiff_basic():

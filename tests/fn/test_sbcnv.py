@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sbcnv — bootstrap convergence diagnostic."""
+"""Tests for morie.fn.sbcnv — bootstrap convergence diagnostic."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sbcnv import sbcnv
+from morie.fn.sbcnv import sbcnv
 
 
 def test_basic_output():

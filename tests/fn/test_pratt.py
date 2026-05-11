@@ -1,7 +1,7 @@
 """Tests for pratt.pretrained_attention."""
 import numpy as np
 import pytest
-from moirais.fn.pratt import pretrained_attention
+from morie.fn.pratt import pretrained_attention
 
 
 def test_pratt_basic():

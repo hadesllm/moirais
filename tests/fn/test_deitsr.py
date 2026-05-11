@@ -1,7 +1,7 @@
 """Tests for deitsr.deit_distill."""
 import numpy as np
 import pytest
-from moirais.fn.deitsr import deit_distill
+from morie.fn.deitsr import deit_distill
 
 
 def test_deitsr_basic():

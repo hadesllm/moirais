@@ -1,7 +1,7 @@
 """Tests for hrzcbsm.horowitz_choice_based_sms."""
 import numpy as np
 import pytest
-from moirais.fn.hrzcbsm import horowitz_choice_based_sms
+from morie.fn.hrzcbsm import horowitz_choice_based_sms
 
 
 def test_hrzcbsm_basic():

@@ -1,7 +1,7 @@
 """Tests for telmt.telemetry_drift."""
 import numpy as np
 import pytest
-from moirais.fn.telmt import telemetry_drift
+from morie.fn.telmt import telemetry_drift
 
 
 def test_telmt_basic():

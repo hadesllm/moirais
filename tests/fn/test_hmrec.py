@@ -1,7 +1,7 @@
 """Tests for hmrec.geron_recall."""
 import numpy as np
 import pytest
-from moirais.fn.hmrec import geron_recall
+from morie.fn.hmrec import geron_recall
 
 
 def test_hmrec_basic():

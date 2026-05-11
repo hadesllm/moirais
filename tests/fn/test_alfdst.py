@@ -1,7 +1,7 @@
 """Tests for alfdst.alphafold_distogram."""
 import numpy as np
 import pytest
-from moirais.fn.alfdst import alphafold_distogram
+from morie.fn.alfdst import alphafold_distogram
 
 
 def test_alfdst_basic():

@@ -1,7 +1,7 @@
 """Test reflection_to_ar (rcfcv)."""
 import numpy as np
-from moirais.fn.rcfcv import reflection_to_ar, rcfcv
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rcfcv import reflection_to_ar, rcfcv
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRcfcv:

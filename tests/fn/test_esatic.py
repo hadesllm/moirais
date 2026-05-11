@@ -1,7 +1,7 @@
 """Tests for esatic.eap_information."""
 import numpy as np
 import pytest
-from moirais.fn.esatic import eap_information
+from morie.fn.esatic import eap_information
 
 
 def test_esatic_basic():

@@ -1,7 +1,7 @@
 """Tests for siepid.si_epidemic."""
 import numpy as np
 import pytest
-from moirais.fn.siepid import si_epidemic
+from morie.fn.siepid import si_epidemic
 
 
 def test_siepid_basic():

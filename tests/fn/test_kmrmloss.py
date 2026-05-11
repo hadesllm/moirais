@@ -1,7 +1,7 @@
 """Tests for kmrmloss.kamath_reward_model_training_loss."""
 import numpy as np
 import pytest
-from moirais.fn.kmrmloss import kamath_reward_model_training_loss
+from morie.fn.kmrmloss import kamath_reward_model_training_loss
 
 
 def test_kmrmloss_basic():

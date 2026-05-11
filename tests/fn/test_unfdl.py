@@ -1,7 +1,7 @@
 """Tests for unfdl.unfolding_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.unfdl import unfolding_analysis
+from morie.fn.unfdl import unfolding_analysis
 
 
 def test_unfdl_basic():

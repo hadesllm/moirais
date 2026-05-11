@@ -1,7 +1,7 @@
 """Tests for gstabwt.stabilized_weights."""
 import numpy as np
 import pytest
-from moirais.fn.gstabwt import stabilized_weights
+from morie.fn.gstabwt import stabilized_weights
 
 
 def test_gstabwt_basic():

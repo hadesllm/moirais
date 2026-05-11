@@ -1,7 +1,7 @@
 """Tests for icarbm.icar_prior."""
 import numpy as np
 import pytest
-from moirais.fn.icarbm import icar_prior
+from morie.fn.icarbm import icar_prior
 
 
 def test_icarbm_basic():

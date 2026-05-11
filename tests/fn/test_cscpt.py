@@ -1,7 +1,7 @@
 """Test cscpt."""
 import numpy as np
 import pytest
-from moirais.fn.cscpt import cscpt
+from morie.fn.cscpt import cscpt
 
 
 def test_cscpt_basic():

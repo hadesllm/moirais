@@ -1,7 +1,7 @@
 """Tests for rgstfts.rangayyan_stft_spectrogram."""
 import numpy as np
 import pytest
-from moirais.fn.rgstfts import rangayyan_stft_spectrogram
+from morie.fn.rgstfts import rangayyan_stft_spectrogram
 
 
 def test_rgstfts_basic():

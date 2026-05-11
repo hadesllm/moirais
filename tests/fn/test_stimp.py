@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.stimp — plot stimuli positions."""
-from moirais.fn.stimp import stimp
+"""Tests for morie.fn.stimp — plot stimuli positions."""
+from morie.fn.stimp import stimp
 
 
 def test_stimp_smoke():
@@ -10,7 +10,7 @@ def test_stimp_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.stimp import cheatsheet
+    from morie.fn.stimp import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

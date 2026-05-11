@@ -1,7 +1,7 @@
 """Tests for rlhfd.rlhf_reward."""
 import numpy as np
 import pytest
-from moirais.fn.rlhfd import rlhf_reward
+from morie.fn.rlhfd import rlhf_reward
 
 
 def test_rlhfd_basic():

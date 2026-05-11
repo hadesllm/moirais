@@ -1,7 +1,7 @@
 """Tests for elmo.elmo."""
 import numpy as np
 import pytest
-from moirais.fn.elmo import elmo
+from morie.fn.elmo import elmo
 
 
 def test_elmo_basic():

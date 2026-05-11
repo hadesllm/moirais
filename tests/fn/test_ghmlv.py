@@ -1,7 +1,7 @@
 """Test ghmlv."""
 import numpy as np
 import pytest
-from moirais.fn.ghmlv import ghmlv
+from morie.fn.ghmlv import ghmlv
 
 
 def test_ghmlv_basic():

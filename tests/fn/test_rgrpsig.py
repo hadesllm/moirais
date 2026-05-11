@@ -1,7 +1,7 @@
 """Tests for rgrpsig.rangayyan_resp_signal."""
 import numpy as np
 import pytest
-from moirais.fn.rgrpsig import rangayyan_resp_signal
+from morie.fn.rgrpsig import rangayyan_resp_signal
 
 
 def test_rgrpsig_basic():

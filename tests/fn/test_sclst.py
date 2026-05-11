@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sclst -- Semiparametric censored least squares."""
+"""Tests for morie.fn.sclst -- Semiparametric censored least squares."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sclst import sclst
+from morie.fn.sclst import sclst
 
 
 @pytest.fixture()
@@ -63,5 +63,5 @@ def test_dimension_error():
 
 
 def test_cheatsheet():
-    from moirais.fn.sclst import cheatsheet
+    from morie.fn.sclst import cheatsheet
     assert "censored" in cheatsheet().lower()

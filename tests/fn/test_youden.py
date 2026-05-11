@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.youden — Youden's J index."""
+"""Tests for morie.fn.youden — Youden's J index."""
 import numpy as np
 
-from moirais.fn.youden import youdens_j, youden
+from morie.fn.youden import youdens_j, youden
 
 
 def test_perfect_youden():

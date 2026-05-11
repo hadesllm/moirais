@@ -1,7 +1,7 @@
 """Test krgtr."""
 import numpy as np
 import pytest
-from moirais.fn.krgtr import krgtr
+from morie.fn.krgtr import krgtr
 
 
 def test_krgtr_basic():

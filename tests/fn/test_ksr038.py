@@ -1,7 +1,7 @@
 """Tests for ksr038.kosorok_ch2_donsker_uniform_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.ksr038 import kosorok_ch2_donsker_uniform_entropy
+from morie.fn.ksr038 import kosorok_ch2_donsker_uniform_entropy
 
 
 def test_ksr038_basic():

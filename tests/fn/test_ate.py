@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.ate — IPW-weighted OLS ATE estimator."""
+"""Tests for morie.fn.ate — IPW-weighted OLS ATE estimator."""
 
 import math
 
@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.ate import estimate_ate
+from morie.fn.ate import estimate_ate
 
 
 @pytest.fixture()

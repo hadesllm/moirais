@@ -1,7 +1,7 @@
 """Tests for drspl.dr_did_split_sample."""
 import numpy as np
 import pytest
-from moirais.fn.drspl import dr_did_split_sample
+from morie.fn.drspl import dr_did_split_sample
 
 
 def test_drspl_basic():

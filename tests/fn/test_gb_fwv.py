@@ -1,7 +1,7 @@
 """Tests for gb_fwv.gibbons_friedman_variance."""
 import numpy as np
 import pytest
-from moirais.fn.gb_fwv import gibbons_friedman_variance
+from morie.fn.gb_fwv import gibbons_friedman_variance
 
 
 def test_gb_fwv_basic():

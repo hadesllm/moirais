@@ -1,7 +1,7 @@
 """Tests for anmod.additive_noise_model."""
 import numpy as np
 import pytest
-from moirais.fn.anmod import additive_noise_model
+from morie.fn.anmod import additive_noise_model
 
 
 def test_anmod_basic():

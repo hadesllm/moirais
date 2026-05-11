@@ -1,7 +1,7 @@
 """Tests for ibpfa.indian_buffet_factor."""
 import numpy as np
 import pytest
-from moirais.fn.ibpfa import indian_buffet_factor
+from morie.fn.ibpfa import indian_buffet_factor
 
 
 def test_ibpfa_basic():

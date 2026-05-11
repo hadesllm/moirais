@@ -1,7 +1,7 @@
 """Test encfd."""
 import numpy as np
 import pytest
-from moirais.fn.encfd import encfd
+from morie.fn.encfd import encfd
 
 
 def test_encfd_basic():

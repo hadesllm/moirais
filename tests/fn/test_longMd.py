@@ -1,7 +1,7 @@
 """Tests for longMd.longitudinal_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.longMd import longitudinal_mediation
+from morie.fn.longMd import longitudinal_mediation
 
 
 def test_longMd_basic():

@@ -1,7 +1,7 @@
 """Tests for tmlmda.tmle_missing_data."""
 import numpy as np
 import pytest
-from moirais.fn.tmlmda import tmle_missing_data
+from morie.fn.tmlmda import tmle_missing_data
 
 
 def test_tmlmda_basic():

@@ -1,7 +1,7 @@
 """Test ppmks."""
 import numpy as np
 import pytest
-from moirais.fn.ppmks import ppmks
+from morie.fn.ppmks import ppmks
 
 
 def test_ppmks_basic():

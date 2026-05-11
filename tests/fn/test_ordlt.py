@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ordlt — Ordered logit."""
+"""Tests for morie.fn.ordlt — Ordered logit."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ordlt import ordered_logit
+from morie.fn.ordlt import ordered_logit
 
 
 def test_ordered_logit_cutpoints_increasing():

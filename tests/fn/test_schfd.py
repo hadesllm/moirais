@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.schfd — Schoenfeld test for PH."""
+"""Tests for morie.fn.schfd — Schoenfeld test for PH."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.schfd import schoenfeld_test
+from morie.fn.schfd import schoenfeld_test
 
 
 class TestSchoenfeldTest:

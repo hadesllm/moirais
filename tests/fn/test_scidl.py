@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.scidl — scatter ideal points."""
+"""Tests for morie.fn.scidl — scatter ideal points."""
 import numpy as np
-from moirais.fn.scidl import scidl
+from morie.fn.scidl import scidl
 
 
 def test_scidl_smoke():
@@ -12,7 +12,7 @@ def test_scidl_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.scidl import cheatsheet
+    from morie.fn.scidl import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

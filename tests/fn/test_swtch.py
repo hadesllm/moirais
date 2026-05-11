@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.swtch -- label / one-hot encoding."""
+"""Tests for morie.fn.swtch -- label / one-hot encoding."""
 
 import pandas as pd
-from moirais.fn.swtch import encode_labels, swtch
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.swtch import encode_labels, swtch
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSwtch:

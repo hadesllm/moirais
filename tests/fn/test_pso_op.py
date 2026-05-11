@@ -1,7 +1,7 @@
 """Tests for pso_op.particle_swarm."""
 import numpy as np
 import pytest
-from moirais.fn.pso_op import particle_swarm
+from morie.fn.pso_op import particle_swarm
 
 
 def test_pso_op_basic():

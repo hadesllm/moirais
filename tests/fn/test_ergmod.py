@@ -1,7 +1,7 @@
 """Tests for ergmod.ergm."""
 import numpy as np
 import pytest
-from moirais.fn.ergmod import ergm
+from morie.fn.ergmod import ergm
 
 
 def test_ergmod_basic():

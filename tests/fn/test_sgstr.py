@@ -1,6 +1,6 @@
 """Tests for strict stationarity test."""
 import numpy as np
-from moirais.fn.sgstr import sgstr
+from morie.fn.sgstr import sgstr
 
 
 def test_sgstr_smoke():

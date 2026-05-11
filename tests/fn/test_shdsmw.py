@@ -1,7 +1,7 @@
 """Tests for shdsmw.shrinkage_msm."""
 import numpy as np
 import pytest
-from moirais.fn.shdsmw import shrinkage_msm
+from morie.fn.shdsmw import shrinkage_msm
 
 
 def test_shdsmw_basic():

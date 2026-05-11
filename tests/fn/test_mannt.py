@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.mannt import mannt
+from morie.fn.mannt import mannt
 
 
 class TestMannt:

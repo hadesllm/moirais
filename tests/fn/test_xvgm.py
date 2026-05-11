@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xvgm — Cross-variogram estimation."""
+"""Tests for morie.fn.xvgm — Cross-variogram estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xvgm import xvgm
+from morie.fn.xvgm import xvgm
 
 
 class TestXvgm:

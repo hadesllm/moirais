@@ -1,7 +1,7 @@
 """Tests for grdae.geron_denoising_autoencoder."""
 import numpy as np
 import pytest
-from moirais.fn.grdae import geron_denoising_autoencoder
+from morie.fn.grdae import geron_denoising_autoencoder
 
 
 def test_grdae_basic():

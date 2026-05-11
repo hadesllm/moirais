@@ -1,7 +1,7 @@
 """Test dkstk."""
 import numpy as np
 import pytest
-from moirais.fn.dkstk import dkstk
+from morie.fn.dkstk import dkstk
 
 
 def test_dkstk_basic():

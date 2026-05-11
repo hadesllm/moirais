@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.wnhpf import wiener_hopf_solve, wnhpf
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wnhpf import wiener_hopf_solve, wnhpf
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWienerHopfSolve:

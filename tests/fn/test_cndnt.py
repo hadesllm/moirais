@@ -1,7 +1,7 @@
 """Tests for conditional entropy."""
 import numpy as np
 import pytest
-from moirais.fn.cndnt import conditional_entropy, cndnt
+from morie.fn.cndnt import conditional_entropy, cndnt
 
 
 def test_nonnegative():

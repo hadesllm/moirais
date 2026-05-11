@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ihtrn -- indigenous health trend."""
+"""Tests for morie.fn.ihtrn -- indigenous health trend."""
 
-from moirais.fn.ihtrn import indigenous_health_trend
+from morie.fn.ihtrn import indigenous_health_trend
 
 
 class TestIndigenousHealthTrend:

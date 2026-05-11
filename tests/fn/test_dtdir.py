@@ -1,7 +1,7 @@
 """Test dtdir."""
 import numpy as np
 import pytest
-from moirais.fn.dtdir import dtdir
+from morie.fn.dtdir import dtdir
 
 
 def test_dtdir_basic():

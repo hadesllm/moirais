@@ -1,7 +1,7 @@
 """Tests for sobtst.sobel_test."""
 import numpy as np
 import pytest
-from moirais.fn.sobtst import sobel_test
+from morie.fn.sobtst import sobel_test
 
 
 def test_sobtst_basic():

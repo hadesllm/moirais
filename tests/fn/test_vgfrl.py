@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgfrl -- Variogram REML fitting"""
+"""Tests for morie.fn.vgfrl -- Variogram REML fitting"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgfrl import vario_fit_reml
+from morie.fn.vgfrl import vario_fit_reml
 
 
 class TestVarioFitReml:

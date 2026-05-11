@@ -1,7 +1,7 @@
 """Tests for hmchrn.geron_char_rnn."""
 import numpy as np
 import pytest
-from moirais.fn.hmchrn import geron_char_rnn
+from morie.fn.hmchrn import geron_char_rnn
 
 
 def test_hmchrn_basic():

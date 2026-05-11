@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.advi -- ADVI mean-field."""
+"""Tests for morie.fn.advi -- ADVI mean-field."""
 
 import numpy as np
-from moirais.fn.advi import advi_meanfield
+from morie.fn.advi import advi_meanfield
 
 
 def test_returns_dict():

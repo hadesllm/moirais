@@ -1,7 +1,7 @@
 """Tests for gb5417.gibbons_sign_median_ci."""
 import numpy as np
 import pytest
-from moirais.fn.gb5417 import gibbons_sign_median_ci
+from morie.fn.gb5417 import gibbons_sign_median_ci
 
 
 def test_gb5417_basic():

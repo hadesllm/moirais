@@ -1,7 +1,7 @@
 """Tests for pollR.pollards_rho."""
 import numpy as np
 import pytest
-from moirais.fn.pollR import pollards_rho
+from morie.fn.pollR import pollards_rho
 
 
 def test_pollR_basic():

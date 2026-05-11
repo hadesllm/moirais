@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rcdst -- distance from agreement."""
+"""Tests for morie.fn.rcdst -- distance from agreement."""
 
 import numpy as np
-from moirais.fn.rcdst import distance_from_agreement, rcdst
+from morie.fn.rcdst import distance_from_agreement, rcdst
 
 
 def test_rcdst_smoke():

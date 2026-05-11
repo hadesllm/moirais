@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svshp -- Shapley value in spatial game"""
+"""Tests for morie.fn.svshp -- Shapley value in spatial game"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svshp import shapley_spatial
+from morie.fn.svshp import shapley_spatial
 
 
 class TestShapleySpatial:

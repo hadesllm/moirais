@@ -1,7 +1,7 @@
 """Tests for grlinf.geron_linear_layer_forward."""
 import numpy as np
 import pytest
-from moirais.fn.grlinf import geron_linear_layer_forward
+from morie.fn.grlinf import geron_linear_layer_forward
 
 
 def test_grlinf_basic():

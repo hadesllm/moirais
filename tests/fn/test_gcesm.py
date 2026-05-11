@@ -1,7 +1,7 @@
 """Test gcesm."""
 import numpy as np
 import pytest
-from moirais.fn.gcesm import gcesm
+from morie.fn.gcesm import gcesm
 
 
 def test_gcesm_basic():

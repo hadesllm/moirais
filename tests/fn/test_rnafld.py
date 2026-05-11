@@ -1,7 +1,7 @@
 """Tests for rnafld.rna_fold."""
 import numpy as np
 import pytest
-from moirais.fn.rnafld import rna_fold
+from morie.fn.rnafld import rna_fold
 
 
 def test_rnafld_basic():

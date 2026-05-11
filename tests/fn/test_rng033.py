@@ -1,7 +1,7 @@
 """Tests for rng033.rangayyan_ch3_causal_convolution_alt."""
 import numpy as np
 import pytest
-from moirais.fn.rng033 import rangayyan_ch3_causal_convolution_alt
+from morie.fn.rng033 import rangayyan_ch3_causal_convolution_alt
 
 
 def test_rng033_basic():

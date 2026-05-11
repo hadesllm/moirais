@@ -1,6 +1,6 @@
 """Tests for db4fn.py - Daubechies wavelet filter coefficients."""
 import numpy as np
-from moirais.fn.db4fn import daubechies_coeffs, db4fn
+from morie.fn.db4fn import daubechies_coeffs, db4fn
 
 
 def test_db4fn_returns_descriptive_result():

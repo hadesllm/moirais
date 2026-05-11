@@ -1,7 +1,7 @@
 """Tests for wsmmcm.wasserman_mcmc_metropolis."""
 import numpy as np
 import pytest
-from moirais.fn.wsmmcm import wasserman_mcmc_metropolis
+from morie.fn.wsmmcm import wasserman_mcmc_metropolis
 
 
 def test_wsmmcm_basic():

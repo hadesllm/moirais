@@ -1,7 +1,7 @@
 """Tests for laplc.laplace_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.laplc import laplace_mechanism
+from morie.fn.laplc import laplace_mechanism
 
 
 def test_laplc_basic():

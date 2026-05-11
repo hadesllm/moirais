@@ -1,7 +1,7 @@
 """Tests for fzkoc.fauzi_kernel_order_m_condition."""
 import numpy as np
 import pytest
-from moirais.fn.fzkoc import fauzi_kernel_order_m_condition
+from morie.fn.fzkoc import fauzi_kernel_order_m_condition
 
 
 def test_fzkoc_basic():

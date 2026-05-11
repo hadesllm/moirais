@@ -1,7 +1,7 @@
 """Tests for mafrti.ma_freeman_tukey_inverse."""
 import numpy as np
 import pytest
-from moirais.fn.mafrti import ma_freeman_tukey_inverse
+from morie.fn.mafrti import ma_freeman_tukey_inverse
 
 
 def test_mafrti_basic():

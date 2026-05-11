@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ohist — Histogram bin counts."""
+"""Tests for morie.fn.ohist — Histogram bin counts."""
 
 import pandas as pd
-from moirais.fn.ohist import otis_histogram_data
+from morie.fn.ohist import otis_histogram_data
 
 
 class TestOtisHistogramData:

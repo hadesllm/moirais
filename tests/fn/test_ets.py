@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ets — exponential smoothing (Holt-Winters)."""
+"""Tests for morie.fn.ets — exponential smoothing (Holt-Winters)."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ets import ets
+from morie.fn.ets import ets
 
 
 class TestEts:

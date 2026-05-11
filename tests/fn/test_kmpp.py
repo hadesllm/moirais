@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.kmpp — k-means++."""
+"""Tests for morie.fn.kmpp — k-means++."""
 import numpy as np
-from moirais.fn.kmpp import kmeans_pp
+from morie.fn.kmpp import kmeans_pp
 
 
 class TestKMeansPP:

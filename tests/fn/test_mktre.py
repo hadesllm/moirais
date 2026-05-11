@@ -1,6 +1,6 @@
 """Test merkle_tree."""
-from moirais.fn._containers import DescriptiveResult
-from moirais.fn.mktre import merkle_tree, mktre
+from morie.fn._containers import DescriptiveResult
+from morie.fn.mktre import merkle_tree, mktre
 
 
 class TestMerkleTree:

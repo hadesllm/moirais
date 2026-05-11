@@ -1,7 +1,7 @@
 """Tests for hmdqnt.geron_dynamic_quantization."""
 import numpy as np
 import pytest
-from moirais.fn.hmdqnt import geron_dynamic_quantization
+from morie.fn.hmdqnt import geron_dynamic_quantization
 
 
 def test_hmdqnt_basic():

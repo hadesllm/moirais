@@ -1,7 +1,7 @@
 """Tests for pmpfit.pmp_fit."""
 import numpy as np
 import pytest
-from moirais.fn.pmpfit import pmp_fit
+from morie.fn.pmpfit import pmp_fit
 
 
 def test_pmpfit_basic():

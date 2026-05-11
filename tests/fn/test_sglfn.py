@@ -1,6 +1,6 @@
 """Tests for L function."""
 import numpy as np
-from moirais.fn.sglfn import sglfn
+from morie.fn.sglfn import sglfn
 
 
 def test_sglfn_smoke():
@@ -13,7 +13,7 @@ def test_sglfn_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sglfn import cheatsheet
+    from morie.fn.sglfn import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

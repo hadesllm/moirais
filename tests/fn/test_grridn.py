@@ -1,7 +1,7 @@
 """Tests for grridn.geron_ridge_normal_equation."""
 import numpy as np
 import pytest
-from moirais.fn.grridn import geron_ridge_normal_equation
+from morie.fn.grridn import geron_ridge_normal_equation
 
 
 def test_grridn_basic():

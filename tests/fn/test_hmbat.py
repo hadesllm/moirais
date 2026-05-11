@@ -1,7 +1,7 @@
 """Tests for hmbat.geron_batch_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmbat import geron_batch_learning
+from morie.fn.hmbat import geron_batch_learning
 
 
 def test_hmbat_basic():

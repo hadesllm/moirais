@@ -1,7 +1,7 @@
 """Tests for naday.nadaraya_watson."""
 import numpy as np
 import pytest
-from moirais.fn.naday import nadaraya_watson
+from morie.fn.naday import nadaraya_watson
 
 
 def test_naday_basic():

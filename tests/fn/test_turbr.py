@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.turbr — turbo code interleaver."""
+"""Tests for morie.fn.turbr — turbo code interleaver."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.turbr import turbr
+from morie.fn.turbr import turbr
 
 
 class TestTurbr:

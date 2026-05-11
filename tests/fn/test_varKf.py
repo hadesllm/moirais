@@ -1,7 +1,7 @@
 """Tests for varKf.variational_gp."""
 import numpy as np
 import pytest
-from moirais.fn.varKf import variational_gp
+from morie.fn.varKf import variational_gp
 
 
 def test_varKf_basic():

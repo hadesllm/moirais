@@ -1,7 +1,7 @@
 """Tests for gb_psi.gibbons_pitman_efficiency."""
 import numpy as np
 import pytest
-from moirais.fn.gb_psi import gibbons_pitman_efficiency
+from morie.fn.gb_psi import gibbons_pitman_efficiency
 
 
 def test_gb_psi_basic():

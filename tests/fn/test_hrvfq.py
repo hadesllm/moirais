@@ -1,8 +1,8 @@
 """Tests for hrvfq -- HRV frequency-domain metrics."""
 import numpy as np
 import pytest
-from moirais.fn.hrvfq import hrvfq
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hrvfq import hrvfq
+from morie.fn._containers import DescriptiveResult
 
 
 def test_hrvfq_basic():

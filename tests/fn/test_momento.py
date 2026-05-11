@@ -1,7 +1,7 @@
 """Tests for momento.moment_foundation."""
 import numpy as np
 import pytest
-from moirais.fn.momento import moment_foundation
+from morie.fn.momento import moment_foundation
 
 
 def test_momento_basic():

@@ -1,7 +1,7 @@
 """Tests for rgsepix.rangayyan_separability_index."""
 import numpy as np
 import pytest
-from moirais.fn.rgsepix import rangayyan_separability_index
+from morie.fn.rgsepix import rangayyan_separability_index
 
 
 def test_rgsepix_basic():

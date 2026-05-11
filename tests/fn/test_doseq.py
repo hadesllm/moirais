@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.doseq -- Dose-response analysis."""
+"""Tests for morie.fn.doseq -- Dose-response analysis."""
 
 import pytest
-from moirais.fn.doseq import dose_response
+from morie.fn.doseq import dose_response
 
 
 class TestDoseResponse:

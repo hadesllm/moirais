@@ -1,6 +1,6 @@
 """Tests for white_heterosc_test."""
 import numpy as np, pytest
-from moirais.fn.whtet import white_heterosc_test
+from morie.fn.whtet import white_heterosc_test
 
 
 class TestWhiteTest:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.iv -- Instrumental variables (2SLS)."""
+"""Tests for morie.fn.iv -- Instrumental variables (2SLS)."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.iv import iv_2sls, iv
-from moirais.fn._containers import RegressionResult
+from morie.fn.iv import iv_2sls, iv
+from morie.fn._containers import RegressionResult
 
 
 class TestIV:

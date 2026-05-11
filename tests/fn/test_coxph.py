@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.coxph -- Cox proportional hazards model."""
+"""Tests for morie.fn.coxph -- Cox proportional hazards model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.coxph import coxph
+from morie.fn.coxph import coxph
 
 
 @pytest.fixture()
@@ -67,5 +67,5 @@ def test_dimension_error():
 
 
 def test_cheatsheet():
-    from moirais.fn.coxph import cheatsheet
+    from morie.fn.coxph import cheatsheet
     assert "cox" in cheatsheet().lower()

@@ -1,7 +1,7 @@
 """Tests for wsmlpr.wasserman_local_polynomial."""
 import numpy as np
 import pytest
-from moirais.fn.wsmlpr import wasserman_local_polynomial
+from morie.fn.wsmlpr import wasserman_local_polynomial
 
 
 def test_wsmlpr_basic():

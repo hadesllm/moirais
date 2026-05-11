@@ -1,7 +1,7 @@
 """Tests for gpregb.gp_regression_bayes."""
 import numpy as np
 import pytest
-from moirais.fn.gpregb import gp_regression_bayes
+from morie.fn.gpregb import gp_regression_bayes
 
 
 def test_gpregb_basic():

@@ -1,7 +1,7 @@
 """Tests for sgtlpi.sgt_laplacian_pseudoinverse."""
 import numpy as np
 import pytest
-from moirais.fn.sgtlpi import sgt_laplacian_pseudoinverse
+from morie.fn.sgtlpi import sgt_laplacian_pseudoinverse
 
 
 def test_sgtlpi_basic():

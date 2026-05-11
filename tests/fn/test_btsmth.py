@@ -1,7 +1,7 @@
 """Tests for btsmth.boot_smoothed."""
 import numpy as np
 import pytest
-from moirais.fn.btsmth import boot_smoothed
+from morie.fn.btsmth import boot_smoothed
 
 
 def test_btsmth_basic():

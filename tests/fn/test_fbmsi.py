@@ -1,7 +1,7 @@
 """Test fbmsi."""
 import numpy as np
 import pytest
-from moirais.fn.fbmsi import fbmsi
+from morie.fn.fbmsi import fbmsi
 
 
 def test_fbmsi_basic():

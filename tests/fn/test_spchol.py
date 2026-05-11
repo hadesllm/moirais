@@ -1,7 +1,7 @@
 """Tests for spchol.schabenberger_cholesky_sim."""
 import numpy as np
 import pytest
-from moirais.fn.spchol import schabenberger_cholesky_sim
+from morie.fn.spchol import schabenberger_cholesky_sim
 
 
 def test_spchol_basic():

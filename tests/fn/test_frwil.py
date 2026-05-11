@@ -1,7 +1,7 @@
 """Tests for frwil.free_wilson_qsar."""
 import numpy as np
 import pytest
-from moirais.fn.frwil import free_wilson_qsar
+from morie.fn.frwil import free_wilson_qsar
 
 
 def test_frwil_basic():

@@ -1,7 +1,7 @@
 """Test prwfp."""
 import numpy as np
 import pytest
-from moirais.fn.prwfp import prwfp
+from morie.fn.prwfp import prwfp
 
 
 def test_prwfp_basic():

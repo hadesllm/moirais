@@ -1,7 +1,7 @@
 """Tests for mdpval.mdp_value_iteration."""
 import numpy as np
 import pytest
-from moirais.fn.mdpval import mdp_value_iteration
+from morie.fn.mdpval import mdp_value_iteration
 
 
 def test_mdpval_basic():

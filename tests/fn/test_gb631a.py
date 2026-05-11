@@ -1,7 +1,7 @@
 """Tests for gb631a.gibbons_ks2_asymp."""
 import numpy as np
 import pytest
-from moirais.fn.gb631a import gibbons_ks2_asymp
+from morie.fn.gb631a import gibbons_ks2_asymp
 
 
 def test_gb631a_basic():

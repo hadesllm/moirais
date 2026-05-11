@@ -1,7 +1,7 @@
 """Tests for rndut.random_utility_model."""
 import numpy as np
 import pytest
-from moirais.fn.rndut import random_utility_model
+from morie.fn.rndut import random_utility_model
 
 
 def test_rndut_basic():

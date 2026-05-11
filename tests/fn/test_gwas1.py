@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gwas1 — single-SNP GWAS."""
+"""Tests for morie.fn.gwas1 — single-SNP GWAS."""
 import numpy as np
 import pytest
-from moirais.fn.gwas1 import gwas_single_snp
+from morie.fn.gwas1 import gwas_single_snp
 
 
 class TestGWAS:

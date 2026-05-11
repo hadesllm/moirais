@@ -3,7 +3,7 @@ Tests for IRLS GLM fitting.
 """
 
 import numpy as np
-from moirais.fn.irlsf import irlsf
+from morie.fn.irlsf import irlsf
 
 
 class TestIrlsf:

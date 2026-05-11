@@ -1,7 +1,7 @@
 """Tests for ladrc.ladder_of_causation."""
 import numpy as np
 import pytest
-from moirais.fn.ladrc import ladder_of_causation
+from morie.fn.ladrc import ladder_of_causation
 
 
 def test_ladrc_basic():

@@ -1,7 +1,7 @@
 """Test csr."""
 import numpy as np
 import pytest
-from moirais.fn.csr import csr
+from morie.fn.csr import csr
 
 
 def test_csr_basic():

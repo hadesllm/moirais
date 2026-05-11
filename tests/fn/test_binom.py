@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.binom -- Exact binomial test."""
+"""Tests for morie.fn.binom -- Exact binomial test."""
 
 import pytest
-from moirais.fn.binom import binomial_test
-from moirais.fn._containers import TestResult
+from morie.fn.binom import binomial_test
+from morie.fn._containers import TestResult
 
 
 class TestBinomial:

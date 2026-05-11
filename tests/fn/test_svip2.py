@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svip2 -- 2D ideal point estimation"""
+"""Tests for morie.fn.svip2 -- 2D ideal point estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svip2 import ideal_point_2d
+from morie.fn.svip2 import ideal_point_2d
 
 
 class TestIdealPoint2d:

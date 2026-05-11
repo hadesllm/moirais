@@ -1,7 +1,7 @@
 """Test fobufr."""
 import numpy as np
 import pytest
-from moirais.fn.fobufr import fobufr
+from morie.fn.fobufr import fobufr
 
 
 def test_fobufr_basic():

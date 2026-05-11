@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.pid."""
+"""Tests for morie.fn.pid."""
 import numpy as np
-from moirais.fn.pid import pid
+from morie.fn.pid import pid
 
 
 def test_pid_smoke():
@@ -12,7 +12,7 @@ def test_pid_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.pid import cheatsheet
+    from morie.fn.pid import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

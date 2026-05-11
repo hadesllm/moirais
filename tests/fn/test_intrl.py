@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.intrl -- Interrupted time series."""
+"""Tests for morie.fn.intrl -- Interrupted time series."""
 
 import pytest
 import numpy as np
-from moirais.fn.intrl import interrupted_time_series
+from morie.fn.intrl import interrupted_time_series
 
 
 class TestITS:

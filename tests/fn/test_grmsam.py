@@ -1,7 +1,7 @@
 """Tests for grmsam.graded_response_samejima."""
 import numpy as np
 import pytest
-from moirais.fn.grmsam import graded_response_samejima
+from morie.fn.grmsam import graded_response_samejima
 
 
 def test_grmsam_basic():

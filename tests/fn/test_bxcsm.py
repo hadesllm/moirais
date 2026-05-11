@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bxcsm — Semiparametric Box-Cox transformation."""
+"""Tests for morie.fn.bxcsm — Semiparametric Box-Cox transformation."""
 
 import numpy as np
 import pytest
-from moirais.fn.bxcsm import bxcsm
+from morie.fn.bxcsm import bxcsm
 
 
 def test_returns_dict():

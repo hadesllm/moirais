@@ -1,7 +1,7 @@
 """Tests for spicar.schabenberger_icar_prior."""
 import numpy as np
 import pytest
-from moirais.fn.spicar import schabenberger_icar_prior
+from morie.fn.spicar import schabenberger_icar_prior
 
 
 def test_spicar_basic():

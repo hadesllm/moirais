@@ -1,7 +1,7 @@
 """Test dknry."""
 import numpy as np
 import pytest
-from moirais.fn.dknry import dknry
+from morie.fn.dknry import dknry
 
 
 def test_dknry_basic():

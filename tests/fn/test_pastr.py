@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pastr."""
+"""Tests for morie.fn.pastr."""
 
 import numpy as np
 import pytest
-from moirais.fn.pastr import pastr
+from morie.fn.pastr import pastr
 
 
 class TestPastr:

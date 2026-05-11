@@ -1,7 +1,7 @@
 """Tests for grvqv.geron_vq_vae_codebook_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grvqv import geron_vq_vae_codebook_loss
+from morie.fn.grvqv import geron_vq_vae_codebook_loss
 
 
 def test_grvqv_basic():

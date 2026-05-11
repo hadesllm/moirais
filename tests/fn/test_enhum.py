@@ -1,7 +1,7 @@
 """Test enhum."""
 import numpy as np
 import pytest
-from moirais.fn.enhum import enhum
+from morie.fn.enhum import enhum
 
 
 def test_enhum_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bdd -- Bunching DiD."""
+"""Tests for morie.fn.bdd -- Bunching DiD."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.bdd import bunching_did, bdd
-from moirais.fn._containers import ESRes
+from morie.fn.bdd import bunching_did, bdd
+from morie.fn._containers import ESRes
 
 
 class TestBunchingDiD:

@@ -1,7 +1,7 @@
 """Test edgfp."""
 import numpy as np
 import pytest
-from moirais.fn.edgfp import edgfp
+from morie.fn.edgfp import edgfp
 
 
 def test_edgfp_basic():

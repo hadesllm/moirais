@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.ps_ana — propensity score IPW analysis pipeline."""
+"""Tests for morie.fn.ps_ana — propensity score IPW analysis pipeline."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.ps_ana import run_propensity_ipw_analysis
+from morie.fn.ps_ana import run_propensity_ipw_analysis
 
 
 @pytest.fixture()

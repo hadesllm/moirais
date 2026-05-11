@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bbeta -- Bayesian beta-binomial model."""
+"""Tests for morie.fn.bbeta -- Bayesian beta-binomial model."""
 
 import numpy as np
-from moirais.fn.bbeta import bayesian_beta_binomial
+from morie.fn.bbeta import bayesian_beta_binomial
 
 
 def test_returns_dict():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.gompr -- Gompertz survival model."""
+"""Tests for morie.fn.gompr -- Gompertz survival model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.gompr import gompr
+from morie.fn.gompr import gompr
 
 
 @pytest.fixture()
@@ -38,5 +38,5 @@ def test_n_events(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.gompr import cheatsheet
+    from morie.fn.gompr import cheatsheet
     assert "gompertz" in cheatsheet().lower()

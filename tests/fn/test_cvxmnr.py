@@ -1,7 +1,7 @@
 """Tests for cvxmnr.boyd_minimax."""
 import numpy as np
 import pytest
-from moirais.fn.cvxmnr import boyd_minimax
+from morie.fn.cvxmnr import boyd_minimax
 
 
 def test_cvxmnr_basic():

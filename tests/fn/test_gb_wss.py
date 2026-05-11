@@ -1,7 +1,7 @@
 """Tests for gb_wss.gibbons_wrs_normal_approx."""
 import numpy as np
 import pytest
-from moirais.fn.gb_wss import gibbons_wrs_normal_approx
+from morie.fn.gb_wss import gibbons_wrs_normal_approx
 
 
 def test_gb_wss_basic():

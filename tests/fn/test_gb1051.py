@@ -1,7 +1,7 @@
 """Tests for gb1051.gibbons_k_rank_alt."""
 import numpy as np
 import pytest
-from moirais.fn.gb1051 import gibbons_k_rank_alt
+from morie.fn.gb1051 import gibbons_k_rank_alt
 
 
 def test_gb1051_basic():

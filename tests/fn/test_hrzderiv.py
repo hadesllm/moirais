@@ -1,7 +1,7 @@
 """Tests for hrzderiv.horowitz_density_derivative."""
 import numpy as np
 import pytest
-from moirais.fn.hrzderiv import horowitz_density_derivative
+from morie.fn.hrzderiv import horowitz_density_derivative
 
 
 def test_hrzderiv_basic():

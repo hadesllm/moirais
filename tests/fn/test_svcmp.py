@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svcmp -- Committee median voter model"""
+"""Tests for morie.fn.svcmp -- Committee median voter model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svcmp import committee_med
+from morie.fn.svcmp import committee_med
 
 
 class TestCommitteeMed:

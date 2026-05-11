@@ -1,7 +1,7 @@
 """Tests for dpsng.dp_singularity_test."""
 import numpy as np
 import pytest
-from moirais.fn.dpsng import dp_singularity_test
+from morie.fn.dpsng import dp_singularity_test
 
 
 def test_dpsng_basic():

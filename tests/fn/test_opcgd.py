@@ -1,7 +1,7 @@
 """Test opcgd."""
 import numpy as np
 import pytest
-from moirais.fn.opcgd import opcgd
+from morie.fn.opcgd import opcgd
 
 
 def test_opcgd_basic():

@@ -1,7 +1,7 @@
 """Test seecl."""
 import numpy as np
 import pytest
-from moirais.fn.seecl import seecl
+from morie.fn.seecl import seecl
 
 
 def test_seecl_basic():

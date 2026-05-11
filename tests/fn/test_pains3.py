@@ -1,7 +1,7 @@
 """Tests for pains3.pains_filter."""
 import numpy as np
 import pytest
-from moirais.fn.pains3 import pains_filter
+from morie.fn.pains3 import pains_filter
 
 
 def test_pains3_basic():

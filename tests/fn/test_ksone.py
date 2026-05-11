@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.ksone import ksone
+from morie.fn.ksone import ksone
 
 
 class TestKsone:

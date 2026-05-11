@@ -1,7 +1,7 @@
 """Tests for rng247.rangayyan_ch4_signal_with_echo_output."""
 import numpy as np
 import pytest
-from moirais.fn.rng247 import rangayyan_ch4_signal_with_echo_output
+from morie.fn.rng247 import rangayyan_ch4_signal_with_echo_output
 
 
 def test_rng247_basic():

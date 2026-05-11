@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrfgt -- Getis spatial filtering"""
+"""Tests for morie.fn.xrfgt -- Getis spatial filtering"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrfgt import getis_filter
+from morie.fn.xrfgt import getis_filter
 
 
 class TestGetisFilter:

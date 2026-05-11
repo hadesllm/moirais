@@ -1,7 +1,7 @@
 """Test hycti."""
 import numpy as np
 import pytest
-from moirais.fn.hycti import hycti
+from morie.fn.hycti import hycti
 
 
 def test_hycti_basic():

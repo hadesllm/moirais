@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svpls -- Party sorting index (Levendusky)"""
+"""Tests for morie.fn.svpls -- Party sorting index (Levendusky)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svpls import party_sorting
+from morie.fn.svpls import party_sorting
 
 
 class TestPartySorting:

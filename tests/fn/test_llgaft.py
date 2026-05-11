@@ -1,7 +1,7 @@
 """Tests for llgaft.log_logistic_aft."""
 import numpy as np
 import pytest
-from moirais.fn.llgaft import log_logistic_aft
+from morie.fn.llgaft import log_logistic_aft
 
 
 def test_llgaft_basic():

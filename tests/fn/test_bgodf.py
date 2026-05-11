@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bgodf — Breusch-Godfrey serial correlation LM test."""
+"""Tests for morie.fn.bgodf — Breusch-Godfrey serial correlation LM test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bgodf import bg_test, bgodf
+from morie.fn.bgodf import bg_test, bgodf
 
 
 def _ar1_resid(phi: float, n: int, seed: int = 0) -> tuple:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.recal — recall (sensitivity / TPR)."""
+"""Tests for morie.fn.recal — recall (sensitivity / TPR)."""
 import numpy as np
 import pytest
-from moirais.fn.recal import recall, recal
+from morie.fn.recal import recall, recal
 
 
 def test_perfect():

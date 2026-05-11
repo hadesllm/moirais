@@ -1,8 +1,8 @@
 """Test backward_difference (bkdif)."""
 import numpy as np
 
-from moirais.fn.bkdif import backward_difference, bkdif
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bkdif import backward_difference, bkdif
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBackwardDifference:

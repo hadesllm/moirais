@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.atoms -- James-Stein shrinkage."""
+"""Tests for morie.fn.atoms -- James-Stein shrinkage."""
 
 import numpy as np
-from moirais.fn.atoms import james_stein, atoms
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.atoms import james_stein, atoms
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAtoms:

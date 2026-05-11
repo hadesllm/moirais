@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.apoc -- graph articulation points."""
+"""Tests for morie.fn.apoc -- graph articulation points."""
 
 import numpy as np
-from moirais.fn.apoc import articulation_points, apoc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.apoc import articulation_points, apoc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestApoc:

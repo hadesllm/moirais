@@ -1,7 +1,7 @@
 """Tests for bnstst.bound_test_inference."""
 import numpy as np
 import pytest
-from moirais.fn.bnstst import bound_test_inference
+from morie.fn.bnstst import bound_test_inference
 
 
 def test_bnstst_basic():

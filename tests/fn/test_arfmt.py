@@ -1,6 +1,6 @@
 """Tests for arfmt.py - AR formant extraction."""
 import numpy as np
-from moirais.fn.arfmt import ar_formant_extraction_fn, arfmt
+from morie.fn.arfmt import ar_formant_extraction_fn, arfmt
 
 
 def test_arfmt_returns_descriptive_result():

@@ -1,7 +1,7 @@
 """Tests for greast.geron_early_stopping."""
 import numpy as np
 import pytest
-from moirais.fn.greast import geron_early_stopping
+from morie.fn.greast import geron_early_stopping
 
 
 def test_greast_basic():

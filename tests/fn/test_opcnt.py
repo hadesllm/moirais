@@ -1,7 +1,7 @@
 """Test opcnt."""
 import numpy as np
 import pytest
-from moirais.fn.opcnt import opcnt
+from morie.fn.opcnt import opcnt
 
 
 def test_opcnt_basic():

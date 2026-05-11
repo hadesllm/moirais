@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mpmnt."""
+"""Tests for morie.fn.mpmnt."""
 
 import numpy as np
 import pytest
-from moirais.fn.mpmnt import mpmnt
+from morie.fn.mpmnt import mpmnt
 
 
 class TestMpmnt:

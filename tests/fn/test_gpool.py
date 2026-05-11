@@ -1,6 +1,6 @@
 """Test global average pooling."""
 import numpy as np
-from moirais.fn.gpool import gpool
+from morie.fn.gpool import gpool
 
 
 def test_gpool_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svipa -- Adaptive ideal point estimation"""
+"""Tests for morie.fn.svipa -- Adaptive ideal point estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svipa import ideal_point_adapt
+from morie.fn.svipa import ideal_point_adapt
 
 
 class TestIdealPointAdapt:

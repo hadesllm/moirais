@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.csdid -- Callaway-Sant'Anna DiD."""
+"""Tests for morie.fn.csdid -- Callaway-Sant'Anna DiD."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.csdid import cs_did, csdid
+from morie.fn.csdid import cs_did, csdid
 
 
 def _make_cs_panel(n_units=30, n_times=8, effect=2.0, seed=42):

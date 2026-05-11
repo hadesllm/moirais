@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.srmdc -- Survival model discrimination."""
+"""Tests for morie.fn.srmdc -- Survival model discrimination."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.srmdc import srmdc
+from morie.fn.srmdc import srmdc
 
 
 @pytest.fixture()
@@ -38,5 +38,5 @@ def test_auc_bounded(disc_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.srmdc import cheatsheet
+    from morie.fn.srmdc import cheatsheet
     assert "discrimination" in cheatsheet().lower()

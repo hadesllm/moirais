@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.lrp — Likelihood ratios."""
+"""Tests for morie.fn.lrp — Likelihood ratios."""
 
 import pytest
 
-from moirais.fn.lrp import likelihood_ratios
+from morie.fn.lrp import likelihood_ratios
 
 
 class TestLikelihoodRatios:

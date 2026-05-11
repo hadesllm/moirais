@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.iview -- Image viewer and info."""
+"""Tests for morie.fn.iview -- Image viewer and info."""
 
 import struct
 import tempfile
 import os
 from unittest.mock import patch, MagicMock
 
-from moirais.fn.iview import view_image, image_info, iview
+from morie.fn.iview import view_image, image_info, iview
 
 
 def _make_minimal_png(path: str) -> None:
@@ -27,8 +27,8 @@ def _make_minimal_png(path: str) -> None:
 
 class TestIview:
     def test_view_image_calls_open(self):
-        with patch("moirais.fn.iview.subprocess.run") as mock_run, \
-             patch("moirais.fn.iview.os.path.isfile", return_value=True):
+        with patch("morie.fn.iview.subprocess.run") as mock_run, \
+             patch("morie.fn.iview.os.path.isfile", return_value=True):
             view_image("/tmp/fake.png")
             mock_run.assert_called_once()
 

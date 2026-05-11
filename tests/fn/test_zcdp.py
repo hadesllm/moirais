@@ -1,7 +1,7 @@
 """Tests for zcdp.zcdp."""
 import numpy as np
 import pytest
-from moirais.fn.zcdp import zcdp
+from morie.fn.zcdp import zcdp
 
 
 def test_zcdp_basic():

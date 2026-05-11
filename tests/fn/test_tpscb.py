@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tpscb — cost benefit."""
+"""Tests for morie.fn.tpscb — cost benefit."""
 
 import pytest
-from moirais.fn.tpscb import tps_cost_benefit
-from moirais.fn._containers import ESRes
+from morie.fn.tpscb import tps_cost_benefit
+from morie.fn._containers import ESRes
 
 
 class TestCostBenefit:

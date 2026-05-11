@@ -1,7 +1,7 @@
 """Tests for hmmdc.geron_mode_collapse."""
 import numpy as np
 import pytest
-from moirais.fn.hmmdc import geron_mode_collapse
+from morie.fn.hmmdc import geron_mode_collapse
 
 
 def test_hmmdc_basic():

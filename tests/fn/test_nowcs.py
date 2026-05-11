@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.nowcs -- nowcasting."""
+"""Tests for morie.fn.nowcs -- nowcasting."""
 
 import numpy as np
 import pytest
-from moirais.fn.nowcs import nowcast
+from morie.fn.nowcs import nowcast
 
 
 class TestNowcast:

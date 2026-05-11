@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.niobi -- A* pathfinding."""
+"""Tests for morie.fn.niobi -- A* pathfinding."""
 
 import numpy as np
-from moirais.fn.niobi import astar_path, niobi
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.niobi import astar_path, niobi
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNiobi:

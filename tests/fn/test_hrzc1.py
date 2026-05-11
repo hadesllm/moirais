@@ -1,7 +1,7 @@
 """Tests for hrzc1.horowitz_censored_regression."""
 import numpy as np
 import pytest
-from moirais.fn.hrzc1 import horowitz_censored_regression
+from morie.fn.hrzc1 import horowitz_censored_regression
 
 
 def test_hrzc1_basic():

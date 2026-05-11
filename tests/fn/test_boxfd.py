@@ -1,7 +1,7 @@
 """Test box_counting_fd."""
 import numpy as np
-from moirais.fn.boxfd import box_counting_fd, boxfd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.boxfd import box_counting_fd, boxfd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBoxCountingFD:

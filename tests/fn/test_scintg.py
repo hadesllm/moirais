@@ -1,7 +1,7 @@
 """Tests for scintg.singlecell_integration."""
 import numpy as np
 import pytest
-from moirais.fn.scintg import singlecell_integration
+from morie.fn.scintg import singlecell_integration
 
 
 def test_scintg_basic():

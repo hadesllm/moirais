@@ -1,7 +1,7 @@
 """Tests for hmohe.geron_one_hot_encoding."""
 import numpy as np
 import pytest
-from moirais.fn.hmohe import geron_one_hot_encoding
+from morie.fn.hmohe import geron_one_hot_encoding
 
 
 def test_hmohe_basic():

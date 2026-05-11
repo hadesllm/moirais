@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dbscn — DBSCAN clustering."""
+"""Tests for morie.fn.dbscn — DBSCAN clustering."""
 
 import numpy as np
 import pytest
-from moirais.fn.dbscn import dbscn
-from moirais.fn._containers import DbscnRes
+from morie.fn.dbscn import dbscn
+from morie.fn._containers import DbscnRes
 
 
 class TestDbscn:

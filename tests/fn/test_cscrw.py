@@ -1,7 +1,7 @@
 """Test cscrw."""
 import numpy as np
 import pytest
-from moirais.fn.cscrw import cscrw
+from morie.fn.cscrw import cscrw
 
 
 def test_cscrw_basic():

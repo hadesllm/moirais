@@ -1,7 +1,7 @@
 """Tests for tmmk."""
 import numpy as np
 import pytest
-from moirais.fn.tmmk import tmmk
+from morie.fn.tmmk import tmmk
 
 
 def test_tmmk_basic():
@@ -27,5 +27,5 @@ def test_tmmk_no_data():
 
 
 def test_tmmk_alias():
-    from moirais.fn.tmmk import tmmk
+    from morie.fn.tmmk import tmmk
     assert tmmk is tmmk

@@ -1,7 +1,7 @@
 """Tests for malab.ma_labbe_plot."""
 import numpy as np
 import pytest
-from moirais.fn.malab import ma_labbe_plot
+from morie.fn.malab import ma_labbe_plot
 
 
 def test_malab_basic():

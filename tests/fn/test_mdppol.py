@@ -1,7 +1,7 @@
 """Tests for mdppol.mdp_policy_iteration."""
 import numpy as np
 import pytest
-from moirais.fn.mdppol import mdp_policy_iteration
+from morie.fn.mdppol import mdp_policy_iteration
 
 
 def test_mdppol_basic():

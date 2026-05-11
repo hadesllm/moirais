@@ -1,7 +1,7 @@
 """Tests for rgemdtwa.rangayyan_emd_twa."""
 import numpy as np
 import pytest
-from moirais.fn.rgemdtwa import rangayyan_emd_twa
+from morie.fn.rgemdtwa import rangayyan_emd_twa
 
 
 def test_rgemdtwa_basic():

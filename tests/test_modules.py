@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from moirais.modules import list_modules, run_module
+from morie.modules import list_modules, run_module
 
 
 def test_list_modules_includes_core_cpads_steps():
@@ -42,7 +42,7 @@ def _mock_cpads_df():
 
 def _mock_db(tmp_path):
     """Build a tiny SQLite DB with a CPADS-like table."""
-    db_path = tmp_path / "mock_moirais.db"
+    db_path = tmp_path / "mock_morie.db"
     conn = sqlite3.connect(str(db_path))
     _mock_cpads_df().to_sql("ocp21_cpads_2021_pumf", conn, index=False)
     conn.close()
@@ -51,10 +51,10 @@ def _mock_db(tmp_path):
 
 def test_load_cpads_from_mock_db(tmp_path, monkeypatch):
     """Load CPADS from a mock SQLite DB (no LFS needed)."""
-    from moirais.data import load_dataset
+    from morie.data import load_dataset
     db_path = _mock_db(tmp_path)
     monkeypatch.setattr(
-        "moirais.data._builtin_db_connect",
+        "morie.data._builtin_db_connect",
         lambda: sqlite3.connect(str(db_path)),
     )
     try:
@@ -67,10 +67,10 @@ def test_load_cpads_from_mock_db(tmp_path, monkeypatch):
 
 def test_load_multiple_datasets_mock(tmp_path, monkeypatch):
     """Verify dataset load works with mock DB."""
-    from moirais.data import load_dataset
+    from morie.data import load_dataset
     db_path = _mock_db(tmp_path)
     conn_factory = lambda: sqlite3.connect(str(db_path))
-    monkeypatch.setattr("moirais.data._builtin_db_connect", conn_factory)
+    monkeypatch.setattr("morie.data._builtin_db_connect", conn_factory)
     try:
         df = load_dataset("ocp21")
     except (ValueError, KeyError):

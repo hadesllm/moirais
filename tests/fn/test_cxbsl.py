@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cxbsl — Breslow baseline hazard."""
+"""Tests for morie.fn.cxbsl — Breslow baseline hazard."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cxbsl import cxbsl
+from morie.fn.cxbsl import cxbsl
 
 
 def test_basic_output():

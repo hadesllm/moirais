@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.profds — dataset profiling."""
+"""Tests for morie.fn.profds — dataset profiling."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.profds import profds, profile_dataset
-from moirais.dataset import DatasetProfile
+from morie.fn.profds import profds, profile_dataset
+from morie.dataset import DatasetProfile
 
 
 def test_alias_is_same_function():

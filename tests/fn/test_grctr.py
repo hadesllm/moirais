@@ -1,7 +1,7 @@
 """Tests for grctr.geron_contrastive_infonce."""
 import numpy as np
 import pytest
-from moirais.fn.grctr import geron_contrastive_infonce
+from morie.fn.grctr import geron_contrastive_infonce
 
 
 def test_grctr_basic():

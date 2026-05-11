@@ -1,7 +1,7 @@
 """Tests for grddqn.geron_double_dqn_target."""
 import numpy as np
 import pytest
-from moirais.fn.grddqn import geron_double_dqn_target
+from morie.fn.grddqn import geron_double_dqn_target
 
 
 def test_grddqn_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.isorg -- isotonic regression."""
+"""Tests for morie.fn.isorg -- isotonic regression."""
 
 import numpy as np
-from moirais.fn.isorg import isotonic_regression, isorg
+from morie.fn.isorg import isotonic_regression, isorg
 
 
 def test_isorg_monotone():

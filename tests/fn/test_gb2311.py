@@ -1,7 +1,7 @@
 """Tests for gb2311.gibbons_edf_mean_var."""
 import numpy as np
 import pytest
-from moirais.fn.gb2311 import gibbons_edf_mean_var
+from morie.fn.gb2311 import gibbons_edf_mean_var
 
 
 def test_gb2311_basic():

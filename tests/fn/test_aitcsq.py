@@ -1,7 +1,7 @@
 """Tests for aitcsq.compositional_chisq."""
 import numpy as np
 import pytest
-from moirais.fn.aitcsq import compositional_chisq
+from morie.fn.aitcsq import compositional_chisq
 
 
 def test_aitcsq_basic():

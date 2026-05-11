@@ -1,7 +1,7 @@
 """Tests for rgcdft.rangayyan_circular_conv_dft."""
 import numpy as np
 import pytest
-from moirais.fn.rgcdft import rangayyan_circular_conv_dft
+from morie.fn.rgcdft import rangayyan_circular_conv_dft
 
 
 def test_rgcdft_basic():

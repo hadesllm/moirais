@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.clsmp import clsmp, cluster_sample
+from morie.fn.clsmp import clsmp, cluster_sample
 
 
 def test_clsmp_selects_correct_clusters():

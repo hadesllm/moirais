@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.ppssmp import ppssmp, pps_sample
+from morie.fn.ppssmp import ppssmp, pps_sample
 
 
 def test_ppssmp_correct_size():

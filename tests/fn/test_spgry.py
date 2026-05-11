@@ -1,7 +1,7 @@
 """Tests for spgry.schabenberger_geary_c."""
 import numpy as np
 import pytest
-from moirais.fn.spgry import schabenberger_geary_c
+from morie.fn.spgry import schabenberger_geary_c
 
 
 def test_spgry_basic():

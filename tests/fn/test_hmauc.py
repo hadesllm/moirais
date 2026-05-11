@@ -1,7 +1,7 @@
 """Tests for hmauc.geron_auc_roc."""
 import numpy as np
 import pytest
-from moirais.fn.hmauc import geron_auc_roc
+from morie.fn.hmauc import geron_auc_roc
 
 
 def test_hmauc_basic():

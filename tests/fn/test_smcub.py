@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.smcub — SMACOF unfolding."""
+"""Tests for morie.fn.smcub — SMACOF unfolding."""
 import numpy as np
-from moirais.fn.smcub import smcub
+from morie.fn.smcub import smcub
 
 
 def test_smcub_basic():

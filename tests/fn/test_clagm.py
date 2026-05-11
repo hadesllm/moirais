@@ -1,7 +1,7 @@
 """Test clagm."""
 import numpy as np
 import pytest
-from moirais.fn.clagm import clagm
+from morie.fn.clagm import clagm
 
 
 def test_clagm_basic():

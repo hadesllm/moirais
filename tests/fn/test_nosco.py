@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.nosco -- compare W vs DW scores."""
+"""Tests for morie.fn.nosco -- compare W vs DW scores."""
 import numpy as np
-from moirais.fn.nosco import nominate_score_types, nosco
+from morie.fn.nosco import nominate_score_types, nosco
 
 
 def test_alias():

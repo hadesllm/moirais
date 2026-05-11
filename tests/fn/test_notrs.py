@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.notrs — NOTEARS DAG learning."""
+"""Tests for morie.fn.notrs — NOTEARS DAG learning."""
 import numpy as np
 import pytest
-from moirais.fn.notrs import notrs
+from morie.fn.notrs import notrs
 
 
 @pytest.fixture()
@@ -51,5 +51,5 @@ def test_sparser_with_higher_lambda(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.notrs import cheatsheet
+    from morie.fn.notrs import cheatsheet
     assert len(cheatsheet()) > 0

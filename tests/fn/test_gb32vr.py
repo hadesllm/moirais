@@ -1,7 +1,7 @@
 """Tests for gb32vr.gibbons_runs_var."""
 import numpy as np
 import pytest
-from moirais.fn.gb32vr import gibbons_runs_var
+from morie.fn.gb32vr import gibbons_runs_var
 
 
 def test_gb32vr_basic():

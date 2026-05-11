@@ -1,7 +1,7 @@
 """Tests for gpcla.gp_classification."""
 import numpy as np
 import pytest
-from moirais.fn.gpcla import gp_classification
+from morie.fn.gpcla import gp_classification
 
 
 def test_gpcla_basic():

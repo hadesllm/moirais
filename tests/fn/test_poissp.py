@@ -1,7 +1,7 @@
 """Tests for poissp.poisson_spatial_glm."""
 import numpy as np
 import pytest
-from moirais.fn.poissp import poisson_spatial_glm
+from morie.fn.poissp import poisson_spatial_glm
 
 
 def test_poissp_basic():

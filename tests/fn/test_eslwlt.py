@@ -1,7 +1,7 @@
 """Tests for eslwlt.esl_wavelet_smooth."""
 import numpy as np
 import pytest
-from moirais.fn.eslwlt import esl_wavelet_smooth
+from morie.fn.eslwlt import esl_wavelet_smooth
 
 
 def test_eslwlt_basic():

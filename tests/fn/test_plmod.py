@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.plmod — Partially linear model (Robinson 1988)."""
+"""Tests for morie.fn.plmod — Partially linear model (Robinson 1988)."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.plmod import plmod
+from morie.fn.plmod import plmod
 
 
 @pytest.fixture()

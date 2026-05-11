@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zest — Z-estimator."""
+"""Tests for morie.fn.zest — Z-estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zest import zest
+from morie.fn.zest import zest
 
 
 def test_mean_estimation():

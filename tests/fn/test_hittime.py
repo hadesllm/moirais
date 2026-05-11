@@ -1,7 +1,7 @@
 """Tests for hittime.hitting_time."""
 import numpy as np
 import pytest
-from moirais.fn.hittime import hitting_time
+from morie.fn.hittime import hitting_time
 
 
 def test_hittime_basic():

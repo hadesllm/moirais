@@ -1,7 +1,7 @@
 """Tests for dpkb.k_anonymity."""
 import numpy as np
 import pytest
-from moirais.fn.dpkb import k_anonymity
+from morie.fn.dpkb import k_anonymity
 
 
 def test_dpkb_basic():

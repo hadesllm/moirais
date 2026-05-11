@@ -1,7 +1,7 @@
 """Tests for vebr3.veber_rule."""
 import numpy as np
 import pytest
-from moirais.fn.vebr3 import veber_rule
+from morie.fn.vebr3 import veber_rule
 
 
 def test_vebr3_basic():

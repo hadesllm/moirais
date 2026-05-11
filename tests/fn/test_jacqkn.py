@@ -1,7 +1,7 @@
 """Tests for jacqkn.jacquez_k_nn_test."""
 import numpy as np
 import pytest
-from moirais.fn.jacqkn import jacquez_k_nn_test
+from morie.fn.jacqkn import jacquez_k_nn_test
 
 
 def test_jacqkn_basic():

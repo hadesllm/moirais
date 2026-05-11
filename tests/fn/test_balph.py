@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.balph — Bayesian Cronbach's alpha."""
+"""Tests for morie.fn.balph — Bayesian Cronbach's alpha."""
 
 import numpy as np
 import pytest
-from moirais.fn.balph import bayesian_alpha
+from morie.fn.balph import bayesian_alpha
 
 
 class TestBayesianAlpha:

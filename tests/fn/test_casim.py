@@ -1,7 +1,7 @@
 """Test casim."""
 import numpy as np
 import pytest
-from moirais.fn.casim import casim
+from morie.fn.casim import casim
 
 
 def test_casim_basic():

@@ -1,7 +1,7 @@
 """Tests for sgtkpc.sgt_kernel_pca."""
 import numpy as np
 import pytest
-from moirais.fn.sgtkpc import sgt_kernel_pca
+from morie.fn.sgtkpc import sgt_kernel_pca
 
 
 def test_sgtkpc_basic():

@@ -1,7 +1,7 @@
 """Tests for rng202.rangayyan_ch4_ccf_discrete_with_delay."""
 import numpy as np
 import pytest
-from moirais.fn.rng202 import rangayyan_ch4_ccf_discrete_with_delay
+from morie.fn.rng202 import rangayyan_ch4_ccf_discrete_with_delay
 
 
 def test_rng202_basic():

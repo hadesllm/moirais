@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.cate — Conditional Average Treatment Effect via meta-learners."""
+"""Tests for morie.fn.cate — Conditional Average Treatment Effect via meta-learners."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.cate import estimate_cate
+from morie.fn.cate import estimate_cate
 
 
 @pytest.fixture()

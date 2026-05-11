@@ -1,7 +1,7 @@
 """Test biwtm."""
 import numpy as np
 import pytest
-from moirais.fn.biwtm import biweight_midcorrelation
+from morie.fn.biwtm import biweight_midcorrelation
 
 
 def test_biwtm_basic():

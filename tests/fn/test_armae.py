@@ -1,6 +1,6 @@
 """Tests for armae.py - ARMA estimation."""
 import numpy as np
-from moirais.fn.armae import arma_estimate_fn, armae
+from morie.fn.armae import arma_estimate_fn, armae
 
 
 def test_armae_returns_result():

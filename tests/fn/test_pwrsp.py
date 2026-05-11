@@ -1,7 +1,7 @@
 """Test power_spectrum (pwrsp)."""
 import numpy as np
-from moirais.fn.pwrsp import power_spectrum, pwrsp
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.pwrsp import power_spectrum, pwrsp
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPwrsp:

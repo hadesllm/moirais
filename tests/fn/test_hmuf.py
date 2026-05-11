@@ -1,7 +1,7 @@
 """Tests for hmuf.geron_underfitting."""
 import numpy as np
 import pytest
-from moirais.fn.hmuf import geron_underfitting
+from morie.fn.hmuf import geron_underfitting
 
 
 def test_hmuf_basic():

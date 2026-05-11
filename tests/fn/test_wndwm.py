@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.wndwm -- Window functions."""
+"""Tests for morie.fn.wndwm -- Window functions."""
 
-from moirais.fn.wndwm import window_function, wndwm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wndwm import window_function, wndwm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWndwm:

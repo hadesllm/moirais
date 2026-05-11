@@ -1,6 +1,6 @@
 """Tests for canbs (Canberra distance)."""
 import numpy as np
-from moirais.fn.canbs import canberra_dist
+from morie.fn.canbs import canberra_dist
 
 
 def test_canberra_identical():

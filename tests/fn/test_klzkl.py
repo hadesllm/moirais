@@ -1,6 +1,6 @@
 """Test klzkl."""
 import pytest
-from moirais.fn.klzkl import kaluza_klein_spectrum
+from morie.fn.klzkl import kaluza_klein_spectrum
 
 
 def test_klzkl_basic():

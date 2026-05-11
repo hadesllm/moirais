@@ -1,7 +1,7 @@
 """Test ppdgr."""
 import numpy as np
 import pytest
-from moirais.fn.ppdgr import ppdgr
+from morie.fn.ppdgr import ppdgr
 
 
 def test_ppdgr_basic():

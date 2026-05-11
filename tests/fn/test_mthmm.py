@@ -1,7 +1,7 @@
 """Test mthmm."""
 import numpy as np
 import pytest
-from moirais.fn.mthmm import mthmm
+from morie.fn.mthmm import mthmm
 
 
 def test_mthmm_basic():

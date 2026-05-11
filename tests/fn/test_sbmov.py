@@ -1,7 +1,7 @@
 """Tests for sbmov."""
 import numpy as np
 import pytest
-from moirais.fn.sbmov import sbmov
+from morie.fn.sbmov import sbmov
 
 
 def test_sbmov_basic():
@@ -27,5 +27,5 @@ def test_sbmov_no_data():
 
 
 def test_sbmov_alias():
-    from moirais.fn.sbmov import sbmov
+    from morie.fn.sbmov import sbmov
     assert sbmov is sbmov

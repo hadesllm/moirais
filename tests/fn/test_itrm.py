@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itrm — Interim analysis boundaries."""
+"""Tests for morie.fn.itrm — Interim analysis boundaries."""
 
 import pytest
 
-from moirais.fn.itrm import interim_analysis
+from morie.fn.itrm import interim_analysis
 
 
 class TestInterimAnalysis:

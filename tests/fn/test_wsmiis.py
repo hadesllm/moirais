@@ -1,7 +1,7 @@
 """Tests for wsmiis.wasserman_importance_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.wsmiis import wasserman_importance_sampling
+from morie.fn.wsmiis import wasserman_importance_sampling
 
 
 def test_wsmiis_basic():

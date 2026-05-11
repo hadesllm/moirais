@@ -1,7 +1,7 @@
 """Tests for rgvmd.rangayyan_vmd."""
 import numpy as np
 import pytest
-from moirais.fn.rgvmd import rangayyan_vmd
+from morie.fn.rgvmd import rangayyan_vmd
 
 
 def test_rgvmd_basic():

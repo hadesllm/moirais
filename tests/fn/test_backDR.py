@@ -1,7 +1,7 @@
 """Tests for backDR.back_door."""
 import numpy as np
 import pytest
-from moirais.fn.backDR import back_door
+from morie.fn.backDR import back_door
 
 
 def test_backDR_basic():

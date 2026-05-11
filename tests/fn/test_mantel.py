@@ -1,6 +1,6 @@
 """Tests for mantel_test."""
 import numpy as np, pytest
-from moirais.fn.mantel import mantel_test
+from morie.fn.mantel import mantel_test
 
 class TestMantel:
     def test_identical(self):

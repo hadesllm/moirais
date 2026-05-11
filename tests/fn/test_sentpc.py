@@ -1,7 +1,7 @@
 """Tests for sentpc.sentencepiece."""
 import numpy as np
 import pytest
-from moirais.fn.sentpc import sentencepiece
+from morie.fn.sentpc import sentencepiece
 
 
 def test_sentpc_basic():

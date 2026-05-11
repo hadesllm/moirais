@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptenv -- Point pattern Monte Carlo envelope"""
+"""Tests for morie.fn.ptenv -- Point pattern Monte Carlo envelope"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptenv import pp_envelope
+from morie.fn.ptenv import pp_envelope
 
 
 class TestPpEnvelope:

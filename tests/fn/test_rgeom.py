@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rgeom — geometric random sample."""
+"""Tests for morie.fn.rgeom — geometric random sample."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rgeom import rgeom
+from morie.fn.rgeom import rgeom
 
 
 class TestRgeom:

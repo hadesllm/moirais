@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ufres -- unfolding residuals."""
+"""Tests for morie.fn.ufres -- unfolding residuals."""
 
 import numpy as np
-from moirais.fn.ufres import unfolding_residuals, ufres
+from morie.fn.ufres import unfolding_residuals, ufres
 
 
 def test_ufres_smoke():

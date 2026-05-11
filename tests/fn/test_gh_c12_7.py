@@ -1,7 +1,7 @@
 """Tests for gh_c12_7.ghosal_strict_sbvm."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c12_7 import ghosal_strict_sbvm
+from morie.fn.gh_c12_7 import ghosal_strict_sbvm
 
 
 def test_gh_c12_7_basic():

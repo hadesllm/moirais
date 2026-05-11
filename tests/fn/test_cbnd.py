@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cbnd — causal bounds (Manski)."""
+"""Tests for morie.fn.cbnd — causal bounds (Manski)."""
 import numpy as np
 import pytest
-from moirais.fn.cbnd import causal_bounds
+from morie.fn.cbnd import causal_bounds
 
 
 class TestCausalBounds:

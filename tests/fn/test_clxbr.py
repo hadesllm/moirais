@@ -1,7 +1,7 @@
 """Test clxbr."""
 import numpy as np
 import pytest
-from moirais.fn.clxbr import clxbr
+from morie.fn.clxbr import clxbr
 
 
 def test_clxbr_basic():

@@ -1,7 +1,7 @@
 """Test roc_det_curve (rocdt)."""
 import numpy as np
-from moirais.fn.rocdt import roc_det_curve, rocdt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rocdt import roc_det_curve, rocdt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRocdt:

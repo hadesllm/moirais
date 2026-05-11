@@ -1,7 +1,7 @@
 """Test model_distance (mdist)."""
 import numpy as np
-from moirais.fn.mdist import model_distance, mdist
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mdist import model_distance, mdist
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMdist:

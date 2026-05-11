@@ -1,7 +1,7 @@
 """Tests for bxprfl.baxter_king."""
 import numpy as np
 import pytest
-from moirais.fn.bxprfl import baxter_king
+from morie.fn.bxprfl import baxter_king
 
 
 def test_bxprfl_basic():

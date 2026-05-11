@@ -1,7 +1,7 @@
 """Tests for aitcap.compositional_classifyAP."""
 import numpy as np
 import pytest
-from moirais.fn.aitcap import compositional_classifyAP
+from morie.fn.aitcap import compositional_classifyAP
 
 
 def test_aitcap_basic():

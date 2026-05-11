@@ -1,7 +1,7 @@
 """Tests for phlpr.phillips_perron."""
 import numpy as np
 import pytest
-from moirais.fn.phlpr import phillips_perron
+from morie.fn.phlpr import phillips_perron
 
 
 def test_phlpr_basic():

@@ -1,6 +1,6 @@
 """Tests for wvbas.py - Wavelet basis."""
 import numpy as np
-from moirais.fn.wvbas import wavelet_basis, wvbas
+from morie.fn.wvbas import wavelet_basis, wvbas
 
 
 def test_basis_returns_result():

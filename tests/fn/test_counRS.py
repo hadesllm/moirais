@@ -1,7 +1,7 @@
 """Tests for counRS.counterfactual_rec."""
 import numpy as np
 import pytest
-from moirais.fn.counRS import counterfactual_rec
+from morie.fn.counRS import counterfactual_rec
 
 
 def test_counRS_basic():

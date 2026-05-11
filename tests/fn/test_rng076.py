@@ -1,7 +1,7 @@
 """Tests for rng076.rangayyan_ch3_dft_convolution_property."""
 import numpy as np
 import pytest
-from moirais.fn.rng076 import rangayyan_ch3_dft_convolution_property
+from morie.fn.rng076 import rangayyan_ch3_dft_convolution_property
 
 
 def test_rng076_basic():

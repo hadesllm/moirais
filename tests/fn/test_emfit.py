@@ -3,7 +3,7 @@ Tests for EM algorithm.
 """
 
 import numpy as np
-from moirais.fn.emfit import emfit
+from morie.fn.emfit import emfit
 
 
 class TestEmfit:

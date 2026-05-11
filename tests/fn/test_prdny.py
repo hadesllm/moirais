@@ -1,6 +1,6 @@
 """Tests for prdny.py - Prony's method."""
 import numpy as np
-from moirais.fn.prdny import prony_method_fn, prdny
+from morie.fn.prdny import prony_method_fn, prdny
 
 
 def test_prdny_returns_result():

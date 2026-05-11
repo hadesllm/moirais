@@ -1,7 +1,7 @@
 """Test st_segment (stsgm)."""
 import numpy as np
-from moirais.fn.stsgm import st_segment, stsgm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.stsgm import st_segment, stsgm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStSegment:

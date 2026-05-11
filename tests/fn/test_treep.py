@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.treep -- TPE optimizer."""
+"""Tests for morie.fn.treep -- TPE optimizer."""
 
 import numpy as np
-from moirais.fn.treep import tpe_minimize
+from morie.fn.treep import tpe_minimize
 
 
 def _sphere(x):

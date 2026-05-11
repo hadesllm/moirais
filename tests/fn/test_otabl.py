@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.otabl — Table 1 (baseline characteristics)."""
+"""Tests for morie.fn.otabl — Table 1 (baseline characteristics)."""
 
 import pandas as pd
-from moirais.fn.otabl import otis_table1
+from morie.fn.otabl import otis_table1
 
 
 class TestOtisTable1:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrlsg -- Local Getis-Ord Gi*"""
+"""Tests for morie.fn.xrlsg -- Local Getis-Ord Gi*"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrlsg import lisa_getis
+from morie.fn.xrlsg import lisa_getis
 
 
 class TestLisaGetis:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.grm — genomic relationship matrix."""
+"""Tests for morie.fn.grm — genomic relationship matrix."""
 import numpy as np
 import pytest
-from moirais.fn.grm import genetic_relatedness
+from morie.fn.grm import genetic_relatedness
 
 
 class TestGRM:

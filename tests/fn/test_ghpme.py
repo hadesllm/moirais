@@ -1,7 +1,7 @@
 """Test ghpme."""
 import numpy as np
 import pytest
-from moirais.fn.ghpme import ghpme
+from morie.fn.ghpme import ghpme
 
 
 def test_ghpme_basic():

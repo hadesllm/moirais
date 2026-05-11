@@ -1,7 +1,7 @@
 """Tests for sympFa.sympy_factor."""
 import numpy as np
 import pytest
-from moirais.fn.sympFa import sympy_factor
+from morie.fn.sympFa import sympy_factor
 
 
 def test_sympFa_basic():

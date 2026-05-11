@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.tobit import tobit_model
+from morie.fn.tobit import tobit_model
 
 
 def test_tobit_basic():

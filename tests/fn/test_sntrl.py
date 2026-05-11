@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sntrl — sentence trends over years."""
+"""Tests for morie.fn.sntrl — sentence trends over years."""
 
 import pandas as pd
-from moirais.fn.sntrl import sentence_by_year, sntrl
+from morie.fn.sntrl import sentence_by_year, sntrl
 
 
 class TestSentenceByYear:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sttrn — Spatio-temporal trend surface."""
+"""Tests for morie.fn.sttrn — Spatio-temporal trend surface."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sttrn import sttrn
+from morie.fn.sttrn import sttrn
 
 
 class TestSttrn:

@@ -1,7 +1,7 @@
 """Tests for ksr13.kosorok_tangent_space."""
 import numpy as np
 import pytest
-from moirais.fn.ksr13 import kosorok_tangent_space
+from morie.fn.ksr13 import kosorok_tangent_space
 
 
 def test_ksr13_basic():

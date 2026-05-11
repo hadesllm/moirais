@@ -1,7 +1,7 @@
 """Tests for mvecv.min_volume_ellipsoid."""
 import numpy as np
 import pytest
-from moirais.fn.mvecv import min_volume_ellipsoid
+from morie.fn.mvecv import min_volume_ellipsoid
 
 
 def test_mvecv_basic():

@@ -1,7 +1,7 @@
 """Tests for bt632.boot_632_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.bt632 import boot_632_estimator
+from morie.fn.bt632 import boot_632_estimator
 
 
 def test_bt632_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.medtn -- Causal mediation analysis."""
+"""Tests for morie.fn.medtn -- Causal mediation analysis."""
 
 import numpy as np
 import pytest
-from moirais.fn.medtn import causal_mediation
+from morie.fn.medtn import causal_mediation
 
 
 class TestCausalMediation:

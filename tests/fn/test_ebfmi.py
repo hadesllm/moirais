@@ -1,7 +1,7 @@
 """Tests for ebfmi.energy_bayesian_fmi."""
 import numpy as np
 import pytest
-from moirais.fn.ebfmi import energy_bayesian_fmi
+from morie.fn.ebfmi import energy_bayesian_fmi
 
 
 def test_ebfmi_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.plsev — Partially linear sieve estimator."""
+"""Tests for morie.fn.plsev — Partially linear sieve estimator."""
 
 import numpy as np
 import pytest
-from moirais.fn.plsev import plsev
+from morie.fn.plsev import plsev
 
 
 def test_returns_dict():

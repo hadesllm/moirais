@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.tpair -- Paired samples t-test."""
+"""Tests for morie.fn.tpair -- Paired samples t-test."""
 
 import pytest
-from moirais.fn.tpair import paired_t_test
+from morie.fn.tpair import paired_t_test
 
 
 class TestPairedTTest:

@@ -1,7 +1,7 @@
 """Tests for agstds.age_standardize."""
 import numpy as np
 import pytest
-from moirais.fn.agstds import age_standardize
+from morie.fn.agstds import age_standardize
 
 
 def test_agstds_basic():

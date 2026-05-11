@@ -1,7 +1,7 @@
 """Test truer."""
 import numpy as np
 import pytest
-from moirais.fn.truer import truer
+from morie.fn.truer import truer
 
 
 def test_truer_basic():

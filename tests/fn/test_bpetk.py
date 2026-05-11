@@ -1,7 +1,7 @@
 """Tests for bpetk.bpe_tokenizer."""
 import numpy as np
 import pytest
-from moirais.fn.bpetk import bpe_tokenizer
+from morie.fn.bpetk import bpe_tokenizer
 
 
 def test_bpetk_basic():

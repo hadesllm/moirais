@@ -1,7 +1,7 @@
 """Tests for wsmpst1.wasserman_posterior_mean."""
 import numpy as np
 import pytest
-from moirais.fn.wsmpst1 import wasserman_posterior_mean
+from morie.fn.wsmpst1 import wasserman_posterior_mean
 
 
 def test_wsmpst1_basic():

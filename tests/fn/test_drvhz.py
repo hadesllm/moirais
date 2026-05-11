@@ -1,8 +1,8 @@
 """Test derivative_hz (drvhz)."""
 import numpy as np
 
-from moirais.fn.drvhz import derivative_hz, drvhz
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.drvhz import derivative_hz, drvhz
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDerivativeHz:

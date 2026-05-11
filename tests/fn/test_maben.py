@@ -1,7 +1,7 @@
 """Test maben."""
 import numpy as np
 import pytest
-from moirais.fn.maben import maben
+from morie.fn.maben import maben
 
 
 def test_maben_basic():

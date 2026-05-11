@@ -1,7 +1,7 @@
 """Tests for rng140.rangayyan_ch3_estimation_error_vector_form."""
 import numpy as np
 import pytest
-from moirais.fn.rng140 import rangayyan_ch3_estimation_error_vector_form
+from morie.fn.rng140 import rangayyan_ch3_estimation_error_vector_form
 
 
 def test_rng140_basic():

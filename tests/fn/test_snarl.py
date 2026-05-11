@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.snarl -- resonance Q-factor."""
+"""Tests for morie.fn.snarl -- resonance Q-factor."""
 
 import numpy as np
-from moirais.fn.snarl import resonance_q, snarl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.snarl import resonance_q, snarl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSnarl:

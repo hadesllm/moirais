@@ -1,7 +1,7 @@
 """Tests for evchitd.evt_chi_tail_dependence."""
 import numpy as np
 import pytest
-from moirais.fn.evchitd import evt_chi_tail_dependence
+from morie.fn.evchitd import evt_chi_tail_dependence
 
 
 def test_evchitd_basic():

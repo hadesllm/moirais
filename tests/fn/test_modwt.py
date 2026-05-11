@@ -1,6 +1,6 @@
 """Tests for modwt.py - MODWT."""
 import numpy as np
-from moirais.fn.modwt import modwt_decompose, modwt
+from morie.fn.modwt import modwt_decompose, modwt
 
 
 def test_modwt_returns_descriptive_result():

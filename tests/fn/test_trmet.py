@@ -1,7 +1,7 @@
 """Test trmet."""
 import numpy as np
 import pytest
-from moirais.fn.trmet import trmet
+from morie.fn.trmet import trmet
 
 
 def test_trmet_basic():

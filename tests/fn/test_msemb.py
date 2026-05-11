@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msemb -- Embedding quality measure"""
+"""Tests for morie.fn.msemb -- Embedding quality measure"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msemb import embedding_qual
+from morie.fn.msemb import embedding_qual
 
 
 class TestEmbeddingQual:

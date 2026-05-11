@@ -1,7 +1,7 @@
 """Test gemrn."""
 import numpy as np
 import pytest
-from moirais.fn.gemrn import gemrn
+from morie.fn.gemrn import gemrn
 
 
 def test_gemrn_basic():

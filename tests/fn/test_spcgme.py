@@ -1,7 +1,7 @@
 """Tests for spcgme.spatial_concordance_kappa."""
 import numpy as np
 import pytest
-from moirais.fn.spcgme import spatial_concordance_kappa
+from morie.fn.spcgme import spatial_concordance_kappa
 
 
 def test_spcgme_basic():

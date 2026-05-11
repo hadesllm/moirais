@@ -1,7 +1,7 @@
 """Tests for evextsl.evt_extremal_index_slidblk."""
 import numpy as np
 import pytest
-from moirais.fn.evextsl import evt_extremal_index_slidblk
+from morie.fn.evextsl import evt_extremal_index_slidblk
 
 
 def test_evextsl_basic():

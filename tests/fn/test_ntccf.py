@@ -1,6 +1,6 @@
 """Tests for network_clustering_coeff."""
 import numpy as np, pytest
-from moirais.fn.ntccf import network_clustering_coeff
+from morie.fn.ntccf import network_clustering_coeff
 
 class TestNetClust:
     def test_complete(self):

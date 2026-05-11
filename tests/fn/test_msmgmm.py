@@ -1,7 +1,7 @@
 """Tests for msmgmm.msm_gmm_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.msmgmm import msm_gmm_estimator
+from morie.fn.msmgmm import msm_gmm_estimator
 
 
 def test_msmgmm_basic():

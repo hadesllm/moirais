@@ -1,7 +1,7 @@
 """Test sinad_compute (sinad)."""
 import numpy as np
-from moirais.fn.sinad import sinad_compute, sinad
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sinad import sinad_compute, sinad
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSinad:

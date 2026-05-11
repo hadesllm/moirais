@@ -1,7 +1,7 @@
 """Test spectral_kurtosis."""
 import numpy as np
-from moirais.fn.spkrt import spectral_kurtosis, spkrt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.spkrt import spectral_kurtosis, spkrt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSpectralKurtosis:

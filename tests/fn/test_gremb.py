@@ -1,7 +1,7 @@
 """Tests for gremb.geron_embedding_lookup."""
 import numpy as np
 import pytest
-from moirais.fn.gremb import geron_embedding_lookup
+from morie.fn.gremb import geron_embedding_lookup
 
 
 def test_gremb_basic():

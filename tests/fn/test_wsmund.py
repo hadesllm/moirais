@@ -1,7 +1,7 @@
 """Tests for wsmund.wasserman_undirected_graph."""
 import numpy as np
 import pytest
-from moirais.fn.wsmund import wasserman_undirected_graph
+from morie.fn.wsmund import wasserman_undirected_graph
 
 
 def test_wsmund_basic():

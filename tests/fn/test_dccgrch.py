@@ -1,7 +1,7 @@
 """Tests for dccgrch.dcc_garch."""
 import numpy as np
 import pytest
-from moirais.fn.dccgrch import dcc_garch
+from morie.fn.dccgrch import dcc_garch
 
 
 def test_dccgrch_basic():

@@ -1,7 +1,7 @@
 """Tests for rform -- parallel forms reliability."""
 import numpy as np
-from moirais.fn.rform import parallel_form_reliability
-from moirais.fn._containers import ESRes
+from morie.fn.rform import parallel_form_reliability
+from morie.fn._containers import ESRes
 
 
 class TestParallelForms:

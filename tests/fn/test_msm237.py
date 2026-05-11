@@ -1,7 +1,7 @@
 """Tests for msm237.mvsml_general_eq_1_3."""
 import numpy as np
 import pytest
-from moirais.fn.msm237 import mvsml_general_eq_1_3
+from morie.fn.msm237 import mvsml_general_eq_1_3
 
 
 def test_msm237_basic():

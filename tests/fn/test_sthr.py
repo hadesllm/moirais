@@ -1,7 +1,7 @@
 """Test soft_threshold (sthr)."""
 import numpy as np
-from moirais.fn.sthr import soft_threshold, sthr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sthr import soft_threshold, sthr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSthr:

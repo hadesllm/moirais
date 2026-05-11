@@ -1,7 +1,7 @@
 """Tests for stquo.status_quo_spatial."""
 import numpy as np
 import pytest
-from moirais.fn.stquo import status_quo_spatial
+from morie.fn.stquo import status_quo_spatial
 
 
 def test_stquo_basic():

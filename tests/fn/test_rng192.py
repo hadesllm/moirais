@@ -1,7 +1,7 @@
 """Tests for rng192.rangayyan_ch4_pan_tompkins_searchback_update."""
 import numpy as np
 import pytest
-from moirais.fn.rng192 import rangayyan_ch4_pan_tompkins_searchback_update
+from morie.fn.rng192 import rangayyan_ch4_pan_tompkins_searchback_update
 
 
 def test_rng192_basic():

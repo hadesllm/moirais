@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptmat -- Matern cluster process"""
+"""Tests for morie.fn.ptmat -- Matern cluster process"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptmat import matern_process
+from morie.fn.ptmat import matern_process
 
 
 class TestMaternProcess:

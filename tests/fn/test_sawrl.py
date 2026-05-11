@@ -1,7 +1,7 @@
 """Test sawrl."""
 import numpy as np
 import pytest
-from moirais.fn.sawrl import sawrl
+from morie.fn.sawrl import sawrl
 
 
 def test_sawrl_basic():

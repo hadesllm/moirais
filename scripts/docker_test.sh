@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-IMAGE="${1:-moirais:latest}"
+IMAGE="${1:-morie:latest}"
 CONTEXT="$(cd "$(dirname "$0")/.." && pwd)"
 PASS=0
 FAIL=0
@@ -18,7 +18,7 @@ result() {
     fi
 }
 
-printf "\n=== MOIRAIS Docker Test Suite ===\n"
+printf "\n=== MORIE Docker Test Suite ===\n"
 printf "Image:   %s\n" "$IMAGE"
 printf "Context: %s\n\n" "$CONTEXT"
 
@@ -34,7 +34,7 @@ fi
 printf "\n--- Phase 2: Security Audit ---\n"
 
 WHOAMI=$(docker run --rm "$IMAGE" whoami 2>/dev/null || echo "root")
-if [ "$WHOAMI" = "moiraisapp" ]; then
+if [ "$WHOAMI" = "morieapp" ]; then
     result pass "Non-root user: $WHOAMI"
 else
     result fail "Running as root (got: $WHOAMI)"
@@ -63,33 +63,33 @@ fi
 
 printf "\n--- Phase 3: Functional Tests ---\n"
 
-if docker run --rm "$IMAGE" python3 -c "import moirais; print('moirais imported')" 2>/dev/null | grep -q "moirais imported"; then
-    result pass "moirais package importable"
+if docker run --rm "$IMAGE" python3 -c "import morie; print('morie imported')" 2>/dev/null | grep -q "morie imported"; then
+    result pass "morie package importable"
 else
-    result fail "moirais package import failed"
+    result fail "morie package import failed"
 fi
 
-REG_COUNT=$(docker run --rm "$IMAGE" python3 -c "from moirais.fn._registry import REGISTRY; print(len(REGISTRY))" 2>/dev/null || echo "0")
+REG_COUNT=$(docker run --rm "$IMAGE" python3 -c "from morie.fn._registry import REGISTRY; print(len(REGISTRY))" 2>/dev/null || echo "0")
 if [ "$REG_COUNT" -gt 2100 ] 2>/dev/null; then
     result pass "Registry has $REG_COUNT entries (>2100)"
 else
     result fail "Registry has $REG_COUNT entries (expected >2100)"
 fi
 
-if docker run --rm "$IMAGE" moirais list-modules 2>/dev/null | grep -q "data-wrangling"; then
-    result pass "moirais list-modules works"
+if docker run --rm "$IMAGE" morie list-modules 2>/dev/null | grep -q "data-wrangling"; then
+    result pass "morie list-modules works"
 else
-    result fail "moirais list-modules failed"
+    result fail "morie list-modules failed"
 fi
 
-if docker run --rm "$IMAGE" python3 -c "from moirais.fn import dnorm, ate, batman, spidm, optms, neom; print('imports ok')" 2>/dev/null | grep -q "imports ok"; then
+if docker run --rm "$IMAGE" python3 -c "from morie.fn import dnorm, ate, batman, spidm, optms, neom; print('imports ok')" 2>/dev/null | grep -q "imports ok"; then
     result pass "Pop-culture fn/ imports (SW/DC/Marvel/TF/Matrix)"
 else
     result fail "Pop-culture fn/ imports failed"
 fi
 
 if docker run --rm "$IMAGE" python3 -c "
-from moirais.fn import dnorm
+from morie.fn import dnorm
 r = dnorm(0.0)
 assert r.success, 'dnorm failed'
 print('dnorm ok')
@@ -100,7 +100,7 @@ else
 fi
 
 if docker run --rm "$IMAGE" python3 -c "
-from moirais.fn._registry import REGISTRY
+from morie.fn._registry import REGISTRY
 cats = set(e.category for e in REGISTRY.values())
 assert len(cats) > 80, f'Only {len(cats)} categories'
 print(f'{len(cats)} categories ok')

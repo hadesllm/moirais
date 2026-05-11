@@ -1,7 +1,7 @@
 """Tests for fzmgkd.fauzi_modified_gamma_kde."""
 import numpy as np
 import pytest
-from moirais.fn.fzmgkd import fauzi_modified_gamma_kde
+from morie.fn.fzmgkd import fauzi_modified_gamma_kde
 
 
 def test_fzmgkd_basic():

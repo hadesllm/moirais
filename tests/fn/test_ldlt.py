@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ldlt."""
+"""Tests for morie.fn.ldlt."""
 import numpy as np
-from moirais.fn.ldlt import ldlt_factorize
+from morie.fn.ldlt import ldlt_factorize
 
 
 def test_ldlt_smoke():
@@ -14,7 +14,7 @@ def test_ldlt_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ldlt import cheatsheet
+    from morie.fn.ldlt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

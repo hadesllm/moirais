@@ -1,7 +1,7 @@
 """Tests for rgiir.rangayyan_iir_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rgiir import rangayyan_iir_filter
+from morie.fn.rgiir import rangayyan_iir_filter
 
 
 def test_rgiir_basic():

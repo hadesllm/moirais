@@ -1,7 +1,7 @@
 """Tests for sgtgrn.sgt_graph_neural_propagation."""
 import numpy as np
 import pytest
-from moirais.fn.sgtgrn import sgt_graph_neural_propagation
+from morie.fn.sgtgrn import sgt_graph_neural_propagation
 
 
 def test_sgtgrn_basic():

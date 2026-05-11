@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bfsdm -- Bayes factor Savage-Dickey."""
+"""Tests for morie.fn.bfsdm -- Bayes factor Savage-Dickey."""
 
 import numpy as np
-from moirais.fn.bfsdm import bayes_factor_savage_dickey
+from morie.fn.bfsdm import bayes_factor_savage_dickey
 
 
 def test_returns_dict():

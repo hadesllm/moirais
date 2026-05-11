@@ -1,7 +1,7 @@
 """Tests for km026.kamath_ch2_slm_loss."""
 import numpy as np
 import pytest
-from moirais.fn.km026 import kamath_ch2_slm_loss
+from morie.fn.km026 import kamath_ch2_slm_loss
 
 
 def test_km026_basic():

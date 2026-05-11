@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cumhz — cumulative hazard from KM."""
+"""Tests for morie.fn.cumhz — cumulative hazard from KM."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cumhz import cumhz
+from morie.fn.cumhz import cumhz
 
 
 class TestCumhz:

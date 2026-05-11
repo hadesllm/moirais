@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cusum — CUSUM change detection."""
+"""Tests for morie.fn.cusum — CUSUM change detection."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cusum import cusum
+from morie.fn.cusum import cusum
 
 
 class TestCusum:

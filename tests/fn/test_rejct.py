@@ -1,7 +1,7 @@
 """Tests for rejct.rejection_point."""
 import numpy as np
 import pytest
-from moirais.fn.rejct import rejection_point
+from morie.fn.rejct import rejection_point
 
 
 def test_rejct_basic():

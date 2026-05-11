@@ -1,7 +1,7 @@
 """Tests for krust.kruskal_stress."""
 import numpy as np
 import pytest
-from moirais.fn.krust import kruskal_stress
+from morie.fn.krust import kruskal_stress
 
 
 def test_krust_basic():

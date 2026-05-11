@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ultra -- ensemble aggregation."""
+"""Tests for morie.fn.ultra -- ensemble aggregation."""
 
 import numpy as np
-from moirais.fn.ultra import ensemble_aggregate, ultra
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ultra import ensemble_aggregate, ultra
+from morie.fn._containers import DescriptiveResult
 
 
 class TestUltra:

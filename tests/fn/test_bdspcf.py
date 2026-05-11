@@ -1,7 +1,7 @@
 """Tests for bdspcf.bound_specification."""
 import numpy as np
 import pytest
-from moirais.fn.bdspcf import bound_specification
+from morie.fn.bdspcf import bound_specification
 
 
 def test_bdspcf_basic():

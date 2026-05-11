@@ -1,7 +1,7 @@
 """Tests for bayam.bayesian_am_scaling."""
 import numpy as np
 import pytest
-from moirais.fn.bayam import bayesian_am_scaling
+from morie.fn.bayam import bayesian_am_scaling
 
 
 def test_bayam_basic():

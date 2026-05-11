@@ -1,6 +1,6 @@
 """Tests for universal kriging variance."""
 import numpy as np
-from moirais.fn.sgukv import sgukv
+from morie.fn.sgukv import sgukv
 
 
 def test_sgukv_smoke():
@@ -12,7 +12,7 @@ def test_sgukv_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgukv import cheatsheet
+    from morie.fn.sgukv import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

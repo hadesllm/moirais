@@ -1,7 +1,7 @@
 """Tests for rgadp.rangayyan_adaptive_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rgadp import rangayyan_adaptive_filter
+from morie.fn.rgadp import rangayyan_adaptive_filter
 
 
 def test_rgadp_basic():

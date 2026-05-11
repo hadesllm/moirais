@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mcc -- Matthews Correlation Coefficient."""
+"""Tests for morie.fn.mcc -- Matthews Correlation Coefficient."""
 
 import numpy as np
 import pytest
-from moirais.fn.mcc import matthews_corrcoef
+from morie.fn.mcc import matthews_corrcoef
 
 
 class TestMCC:

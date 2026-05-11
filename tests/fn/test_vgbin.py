@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgbin -- Binned semivariogram"""
+"""Tests for morie.fn.vgbin -- Binned semivariogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgbin import vario_binned
+from morie.fn.vgbin import vario_binned
 
 
 class TestVarioBinned:

@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 # Export the canonical OTIS data frames from the cached RData
-# environment to CSV mirrors that moirais.otis_analyze can read in
+# environment to CSV mirrors that morie.otis_analyze can read in
 # Python. Idempotent — re-run any time the .RData fixture refreshes.
 
 suppressWarnings({

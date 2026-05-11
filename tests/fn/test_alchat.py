@@ -1,7 +1,7 @@
 """Tests for alchat.alammar_chat_template."""
 import numpy as np
 import pytest
-from moirais.fn.alchat import alammar_chat_template
+from morie.fn.alchat import alammar_chat_template
 
 
 def test_alchat_basic():

@@ -1,7 +1,7 @@
 """Tests for mareg.ma_meta_regression."""
 import numpy as np
 import pytest
-from moirais.fn.mareg import ma_meta_regression
+from morie.fn.mareg import ma_meta_regression
 
 
 def test_mareg_basic():

@@ -1,7 +1,7 @@
 """Tests for tmlrbt.tmle_robust."""
 import numpy as np
 import pytest
-from moirais.fn.tmlrbt import tmle_robust
+from morie.fn.tmlrbt import tmle_robust
 
 
 def test_tmlrbt_basic():

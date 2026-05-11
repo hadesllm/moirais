@@ -1,7 +1,7 @@
 """Tests for hmmsec.geron_linreg_mse_cost."""
 import numpy as np
 import pytest
-from moirais.fn.hmmsec import geron_linreg_mse_cost
+from morie.fn.hmmsec import geron_linreg_mse_cost
 
 
 def test_hmmsec_basic():

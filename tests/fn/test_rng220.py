@@ -1,7 +1,7 @@
 """Tests for rng220.rangayyan_ch4_matched_filter_optimal_transfer_function."""
 import numpy as np
 import pytest
-from moirais.fn.rng220 import rangayyan_ch4_matched_filter_optimal_transfer_function
+from morie.fn.rng220 import rangayyan_ch4_matched_filter_optimal_transfer_function
 
 
 def test_rng220_basic():

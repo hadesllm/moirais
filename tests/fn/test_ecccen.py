@@ -1,7 +1,7 @@
 """Tests for ecccen.eccentricity_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.ecccen import eccentricity_centrality
+from morie.fn.ecccen import eccentricity_centrality
 
 
 def test_ecccen_basic():

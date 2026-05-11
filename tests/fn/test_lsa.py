@@ -1,7 +1,7 @@
 """Tests for lsa.lsa."""
 import numpy as np
 import pytest
-from moirais.fn.lsa import lsa
+from morie.fn.lsa import lsa
 
 
 def test_lsa_basic():

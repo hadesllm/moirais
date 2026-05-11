@@ -1,6 +1,6 @@
 """Tests for sign_rank_test."""
 import numpy as np, pytest
-from moirais.fn.sigrn import sign_rank_test
+from morie.fn.sigrn import sign_rank_test
 
 
 class TestSignRank:

@@ -1,7 +1,7 @@
 """Tests for shrtgr.shrinkage_propensity."""
 import numpy as np
 import pytest
-from moirais.fn.shrtgr import shrinkage_propensity
+from morie.fn.shrtgr import shrinkage_propensity
 
 
 def test_shrtgr_basic():

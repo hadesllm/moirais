@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cohrc -- Coherence function."""
+"""Tests for morie.fn.cohrc -- Coherence function."""
 import numpy as np
 import pytest
-from moirais.fn.cohrc import coherence
+from morie.fn.cohrc import coherence
 
 
 class TestCoherence:
@@ -16,5 +16,5 @@ class TestCoherence:
             coherence(np.ones(10), np.ones(15))
 
     def test_cheatsheet(self):
-        from moirais.fn.cohrc import cheatsheet
+        from morie.fn.cohrc import cheatsheet
         assert isinstance(cheatsheet(), str)

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.strta -- Stratified 2x2xK analysis."""
+"""Tests for morie.fn.strta -- Stratified 2x2xK analysis."""
 
 import pytest
-from moirais.fn.strta import stratified_analysis
+from morie.fn.strta import stratified_analysis
 
 
 class TestStratifiedAnalysis:

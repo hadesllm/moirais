@@ -1,7 +1,7 @@
 """Tests for magal.ma_galbraith."""
 import numpy as np
 import pytest
-from moirais.fn.magal import ma_galbraith
+from morie.fn.magal import ma_galbraith
 
 
 def test_magal_basic():

@@ -1,7 +1,7 @@
 """Tests for wilcox15e12.wilcox_chapter_15_equation_12."""
 import numpy as np
 import pytest
-from moirais.fn.wilcox15e12 import wilcox_chapter_15_equation_12
+from morie.fn.wilcox15e12 import wilcox_chapter_15_equation_12
 
 
 def test_wilcox15e12_basic():

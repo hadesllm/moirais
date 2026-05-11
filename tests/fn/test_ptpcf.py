@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptpcf -- Pair correlation function g(r)"""
+"""Tests for morie.fn.ptpcf -- Pair correlation function g(r)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptpcf import pair_corr_fn
+from morie.fn.ptpcf import pair_corr_fn
 
 
 class TestPairCorrFn:

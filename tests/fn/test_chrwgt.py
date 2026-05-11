@@ -1,7 +1,7 @@
 """Tests for chrwgt.censoring_at_risk_weight."""
 import numpy as np
 import pytest
-from moirais.fn.chrwgt import censoring_at_risk_weight
+from morie.fn.chrwgt import censoring_at_risk_weight
 
 
 def test_chrwgt_basic():

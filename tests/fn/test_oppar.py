@@ -1,7 +1,7 @@
 """Test oppar."""
 import numpy as np
 import pytest
-from moirais.fn.oppar import oppar
+from morie.fn.oppar import oppar
 
 
 def test_oppar_basic():

@@ -1,7 +1,7 @@
 """Tests for rng103.rangayyan_ch3_integral_causal."""
 import numpy as np
 import pytest
-from moirais.fn.rng103 import rangayyan_ch3_integral_causal
+from morie.fn.rng103 import rangayyan_ch3_integral_causal
 
 
 def test_rng103_basic():

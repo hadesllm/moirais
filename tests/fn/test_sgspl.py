@@ -1,7 +1,7 @@
 """Test split_signal (sgspl)."""
 import numpy as np
-from moirais.fn.sgspl import split_signal, sgspl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sgspl import split_signal, sgspl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSplitSignal:

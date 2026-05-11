@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msdch -- Chebyshev distance matrix"""
+"""Tests for morie.fn.msdch -- Chebyshev distance matrix"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msdch import dist_chebyshev
+from morie.fn.msdch import dist_chebyshev
 
 
 class TestDistChebyshev:

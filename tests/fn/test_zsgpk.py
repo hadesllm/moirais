@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsgpk -- GP kernel selection"""
+"""Tests for morie.fn.zsgpk -- GP kernel selection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsgpk import gp_kernel
+from morie.fn.zsgpk import gp_kernel
 
 
 class TestGpKernel:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhsmp -- Metropolis-Hastings sampler."""
+"""Tests for morie.fn.mhsmp -- Metropolis-Hastings sampler."""
 
 import numpy as np
-from moirais.fn.mhsmp import metropolis_hastings
+from morie.fn.mhsmp import metropolis_hastings
 
 
 def test_returns_dict():

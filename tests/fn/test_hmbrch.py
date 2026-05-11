@@ -1,7 +1,7 @@
 """Tests for hmbrch.geron_birch."""
 import numpy as np
 import pytest
-from moirais.fn.hmbrch import geron_birch
+from morie.fn.hmbrch import geron_birch
 
 
 def test_hmbrch_basic():

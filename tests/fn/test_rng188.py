@@ -1,7 +1,7 @@
 """Tests for rng188.rangayyan_ch4_pan_tompkins_derivative_operator."""
 import numpy as np
 import pytest
-from moirais.fn.rng188 import rangayyan_ch4_pan_tompkins_derivative_operator
+from morie.fn.rng188 import rangayyan_ch4_pan_tompkins_derivative_operator
 
 
 def test_rng188_basic():

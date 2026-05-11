@@ -1,7 +1,7 @@
 """Test fofrag."""
 import numpy as np
 import pytest
-from moirais.fn.fofrag import fofrag
+from morie.fn.fofrag import fofrag
 
 
 def test_fofrag_basic():

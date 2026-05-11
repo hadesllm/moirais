@@ -1,7 +1,7 @@
 """Tests for dpcov.dp_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.dpcov import dp_covariance
+from morie.fn.dpcov import dp_covariance
 
 
 def test_dpcov_basic():

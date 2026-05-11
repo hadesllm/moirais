@@ -1,7 +1,7 @@
 """Tests for alsmc.alammar_simcse_dropout_aug."""
 import numpy as np
 import pytest
-from moirais.fn.alsmc import alammar_simcse_dropout_aug
+from morie.fn.alsmc import alammar_simcse_dropout_aug
 
 
 def test_alsmc_basic():

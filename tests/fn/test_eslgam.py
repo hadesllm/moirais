@@ -1,7 +1,7 @@
 """Tests for eslgam.esl_gam."""
 import numpy as np
 import pytest
-from moirais.fn.eslgam import esl_gam
+from morie.fn.eslgam import esl_gam
 
 
 def test_eslgam_basic():

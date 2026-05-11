@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsgrr -- Grid resampling"""
+"""Tests for morie.fn.zsgrr -- Grid resampling"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsgrr import grid_resample
+from morie.fn.zsgrr import grid_resample
 
 
 class TestGridResample:

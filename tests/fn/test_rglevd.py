@@ -1,7 +1,7 @@
 """Tests for rglevd.rangayyan_levinson_durbin."""
 import numpy as np
 import pytest
-from moirais.fn.rglevd import rangayyan_levinson_durbin
+from morie.fn.rglevd import rangayyan_levinson_durbin
 
 
 def test_rglevd_basic():

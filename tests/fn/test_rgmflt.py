@@ -1,7 +1,7 @@
 """Tests for rgmflt.rangayyan_matched_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rgmflt import rangayyan_matched_filter
+from morie.fn.rgmflt import rangayyan_matched_filter
 
 
 def test_rgmflt_basic():

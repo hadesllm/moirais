@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.polck — polarity check."""
-from moirais.fn.polck import polck
+"""Tests for morie.fn.polck — polarity check."""
+from morie.fn.polck import polck
 
 
 def test_polck_no_flip():

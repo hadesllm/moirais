@@ -1,7 +1,7 @@
 """Tests for rgwnr.rangayyan_wiener_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rgwnr import rangayyan_wiener_filter
+from morie.fn.rgwnr import rangayyan_wiener_filter
 
 
 def test_rgwnr_basic():

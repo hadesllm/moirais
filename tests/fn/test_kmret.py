@@ -1,7 +1,7 @@
 """Tests for kmret.kamath_retnet_retention."""
 import numpy as np
 import pytest
-from moirais.fn.kmret import kamath_retnet_retention
+from morie.fn.kmret import kamath_retnet_retention
 
 
 def test_kmret_basic():

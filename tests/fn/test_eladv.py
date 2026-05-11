@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.eladv."""
+"""Tests for morie.fn.eladv."""
 
 import numpy as np
 import pytest
-from moirais.fn.eladv import eladv
+from morie.fn.eladv import eladv
 
 
 class TestEladv:

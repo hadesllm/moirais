@@ -1,7 +1,7 @@
 """Tests for gh_c9_1.ghosal_logspline_crt."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c9_1 import ghosal_logspline_crt
+from morie.fn.gh_c9_1 import ghosal_logspline_crt
 
 
 def test_gh_c9_1_basic():

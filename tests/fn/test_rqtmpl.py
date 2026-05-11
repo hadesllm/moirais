@@ -1,7 +1,7 @@
 """Tests for rqtmpl.qtl_mapping."""
 import numpy as np
 import pytest
-from moirais.fn.rqtmpl import qtl_mapping
+from morie.fn.rqtmpl import qtl_mapping
 
 
 def test_rqtmpl_basic():

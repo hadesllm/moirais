@@ -1,7 +1,7 @@
 """Tests for grmlb.geron_multilabel_classification."""
 import numpy as np
 import pytest
-from moirais.fn.grmlb import geron_multilabel_classification
+from morie.fn.grmlb import geron_multilabel_classification
 
 
 def test_grmlb_basic():

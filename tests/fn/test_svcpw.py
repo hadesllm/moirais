@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svcpw -- Copeland spatial winner"""
+"""Tests for morie.fn.svcpw -- Copeland spatial winner"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svcpw import copeland_winner
+from morie.fn.svcpw import copeland_winner
 
 
 class TestCopelandWinner:

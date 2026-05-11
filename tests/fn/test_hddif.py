@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hddif -- Hadamard differentiability check."""
+"""Tests for morie.fn.hddif -- Hadamard differentiability check."""
 
 import numpy as np
 import pytest
-from moirais.fn.hddif import hadamard_differentiability
+from morie.fn.hddif import hadamard_differentiability
 
 
 class TestHadamardDifferentiability:

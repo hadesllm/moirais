@@ -1,7 +1,7 @@
 """Test gdsex."""
 import numpy as np
 import pytest
-from moirais.fn.gdsex import gdsex
+from morie.fn.gdsex import gdsex
 
 
 def test_gdsex_basic():

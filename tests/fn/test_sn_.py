@@ -1,6 +1,6 @@
 """Tests for sn_estimator."""
 import numpy as np, pytest
-from moirais.fn.sn_ import sn_estimator
+from morie.fn.sn_ import sn_estimator
 
 class TestSn:
     def test_normal(self):

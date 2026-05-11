@@ -1,7 +1,7 @@
 """Tests for cvxdwl.boyd_dual_function."""
 import numpy as np
 import pytest
-from moirais.fn.cvxdwl import boyd_dual_function
+from morie.fn.cvxdwl import boyd_dual_function
 
 
 def test_cvxdwl_basic():

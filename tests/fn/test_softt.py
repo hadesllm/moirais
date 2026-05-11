@@ -1,7 +1,7 @@
 """Test soft_threshold_fn (softt)."""
 import numpy as np
-from moirais.fn.softt import soft_threshold_fn, softt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.softt import soft_threshold_fn, softt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSoftt:

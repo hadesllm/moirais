@@ -1,7 +1,7 @@
 """Tests for replwt.replicate_weights."""
 import numpy as np
 import pytest
-from moirais.fn.replwt import replicate_weights
+from morie.fn.replwt import replicate_weights
 
 
 def test_replwt_basic():

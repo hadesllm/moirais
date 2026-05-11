@@ -1,7 +1,7 @@
 """Tests for baysbm.bayes_b_marker."""
 import numpy as np
 import pytest
-from moirais.fn.baysbm import bayes_b_marker
+from morie.fn.baysbm import bayes_b_marker
 
 
 def test_baysbm_basic():

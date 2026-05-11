@@ -1,7 +1,7 @@
 """Tests for kldivg.kl_divergence."""
 import numpy as np
 import pytest
-from moirais.fn.kldivg import kldivg as kl_divergence
+from morie.fn.kldivg import kldivg as kl_divergence
 
 
 def test_kldivg_basic():

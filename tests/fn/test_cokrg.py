@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cokrg — Co-kriging."""
+"""Tests for morie.fn.cokrg — Co-kriging."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cokrg import cokrg
+from morie.fn.cokrg import cokrg
 
 
 class TestCokrg:

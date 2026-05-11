@@ -1,7 +1,7 @@
 """Tests for shYa.shunting_yard."""
 import numpy as np
 import pytest
-from moirais.fn.shYa import shunting_yard
+from morie.fn.shYa import shunting_yard
 
 
 def test_shYa_basic():

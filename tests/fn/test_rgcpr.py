@@ -1,7 +1,7 @@
 """Tests for rgcpr.rangayyan_cpr_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.rgcpr import rangayyan_cpr_analysis
+from morie.fn.rgcpr import rangayyan_cpr_analysis
 
 
 def test_rgcpr_basic():

@@ -1,7 +1,7 @@
 """Tests for dmlqs.deepml_qsar."""
 import numpy as np
 import pytest
-from moirais.fn.dmlqs import deepml_qsar
+from morie.fn.dmlqs import deepml_qsar
 
 
 def test_dmlqs_basic():

@@ -1,7 +1,7 @@
 """Tests for grkmo.geron_kmeans_objective."""
 import numpy as np
 import pytest
-from moirais.fn.grkmo import geron_kmeans_objective
+from morie.fn.grkmo import geron_kmeans_objective
 
 
 def test_grkmo_basic():

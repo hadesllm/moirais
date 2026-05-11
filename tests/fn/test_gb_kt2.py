@@ -1,7 +1,7 @@
 """Tests for gb_kt2.gibbons_kendall_exact."""
 import numpy as np
 import pytest
-from moirais.fn.gb_kt2 import gibbons_kendall_exact
+from morie.fn.gb_kt2 import gibbons_kendall_exact
 
 
 def test_gb_kt2_basic():

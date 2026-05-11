@@ -1,6 +1,6 @@
 """Tests for sign_change_test."""
 import numpy as np, pytest
-from moirais.fn.sgchg import sign_change_test
+from morie.fn.sgchg import sign_change_test
 
 
 class TestSignChange:

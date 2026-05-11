@@ -1,6 +1,6 @@
 """Test orbfd."""
 import pytest
-from moirais.fn.orbfd import orbifold_spectrum
+from morie.fn.orbfd import orbifold_spectrum
 
 
 def test_orbfd_z3():

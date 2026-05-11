@@ -1,6 +1,6 @@
 """Tests for sqztf.py - Synchrosqueezed CWT."""
 import numpy as np
-from moirais.fn.sqztf import synchrosqueeze, sqztf
+from morie.fn.sqztf import synchrosqueeze, sqztf
 
 
 def test_sqztf_returns_descriptive_result():

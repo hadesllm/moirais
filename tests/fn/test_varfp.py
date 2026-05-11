@@ -1,7 +1,7 @@
 """Test varfp."""
 import numpy as np
 import pytest
-from moirais.fn.varfp import varfp
+from morie.fn.varfp import varfp
 
 
 def test_varfp_basic():

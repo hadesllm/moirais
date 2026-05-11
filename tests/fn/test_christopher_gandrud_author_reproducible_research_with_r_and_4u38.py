@@ -1,7 +1,7 @@
 """Knowledge itself is power. — Francis Bacon"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u38 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_38
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u38 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_38
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u38_basic():

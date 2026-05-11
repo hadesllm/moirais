@@ -1,7 +1,7 @@
 """Tests for cthrgr.causal_three_layer_grf."""
 import numpy as np
 import pytest
-from moirais.fn.cthrgr import causal_three_layer_grf
+from morie.fn.cthrgr import causal_three_layer_grf
 
 
 def test_cthrgr_basic():

@@ -1,7 +1,7 @@
 """Tests for otmaprc.ot_map_recovery_brenier."""
 import numpy as np
 import pytest
-from moirais.fn.otmaprc import ot_map_recovery_brenier
+from morie.fn.otmaprc import ot_map_recovery_brenier
 
 
 def test_otmaprc_basic():

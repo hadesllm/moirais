@@ -1,7 +1,7 @@
 """Tests for hmssg.geron_semantic_segmentation."""
 import numpy as np
 import pytest
-from moirais.fn.hmssg import geron_semantic_segmentation
+from morie.fn.hmssg import geron_semantic_segmentation
 
 
 def test_hmssg_basic():

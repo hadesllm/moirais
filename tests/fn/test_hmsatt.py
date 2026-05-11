@@ -1,7 +1,7 @@
 """Tests for hmsatt.geron_self_attention."""
 import numpy as np
 import pytest
-from moirais.fn.hmsatt import geron_self_attention
+from morie.fn.hmsatt import geron_self_attention
 
 
 def test_hmsatt_basic():

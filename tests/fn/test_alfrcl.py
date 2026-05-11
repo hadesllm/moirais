@@ -1,7 +1,7 @@
 """Tests for alfrcl.alphafold_recycle_loss."""
 import numpy as np
 import pytest
-from moirais.fn.alfrcl import alphafold_recycle_loss
+from morie.fn.alfrcl import alphafold_recycle_loss
 
 
 def test_alfrcl_basic():

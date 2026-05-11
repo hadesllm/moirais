@@ -1,7 +1,7 @@
 """Tests for grovr.geron_one_vs_rest."""
 import numpy as np
 import pytest
-from moirais.fn.grovr import geron_one_vs_rest
+from morie.fn.grovr import geron_one_vs_rest
 
 
 def test_grovr_basic():

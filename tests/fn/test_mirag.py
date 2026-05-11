@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mirag -- differential privacy Laplace mechanism."""
+"""Tests for morie.fn.mirag -- differential privacy Laplace mechanism."""
 
 import numpy as np
-from moirais.fn.mirag import dp_laplace, mirag
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mirag import dp_laplace, mirag
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMirag:

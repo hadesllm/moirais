@@ -1,7 +1,7 @@
 """Tests for hrzpanms.horowitz_panel_max_score."""
 import numpy as np
 import pytest
-from moirais.fn.hrzpanms import horowitz_panel_max_score
+from morie.fn.hrzpanms import horowitz_panel_max_score
 
 
 def test_hrzpanms_basic():

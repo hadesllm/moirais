@@ -1,7 +1,7 @@
 """Tests for genmol.generative_chemistry."""
 import numpy as np
 import pytest
-from moirais.fn.genmol import generative_chemistry
+from morie.fn.genmol import generative_chemistry
 
 
 def test_genmol_basic():

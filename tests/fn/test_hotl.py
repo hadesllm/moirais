@@ -1,6 +1,6 @@
 """Tests for hotelling_t2."""
 import numpy as np, pytest
-from moirais.fn.hotl import hotelling_t2
+from morie.fn.hotl import hotelling_t2
 
 class TestHotelling:
     def test_different(self):

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ktwos — kernel two-sample test (MMD)."""
+"""Tests for morie.fn.ktwos — kernel two-sample test (MMD)."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ktwos import ktwos
+from morie.fn.ktwos import ktwos
 
 
 class TestKtwos:

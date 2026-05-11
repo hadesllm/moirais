@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.hurds — Hurdle model."""
+"""Tests for morie.fn.hurds — Hurdle model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.hurds import hurdle_model
+from morie.fn.hurds import hurdle_model
 
 
 def test_hurdle_separates_parts():

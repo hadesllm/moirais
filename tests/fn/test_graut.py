@@ -1,7 +1,7 @@
 """Tests for graut.geron_autograd_chain_rule."""
 import numpy as np
 import pytest
-from moirais.fn.graut import geron_autograd_chain_rule
+from morie.fn.graut import geron_autograd_chain_rule
 
 
 def test_graut_basic():

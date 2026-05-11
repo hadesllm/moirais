@@ -1,7 +1,7 @@
 """Tests for legpb.legendre_basis."""
 import numpy as np
 import pytest
-from moirais.fn.legpb import legendre_basis
+from morie.fn.legpb import legendre_basis
 
 
 def test_legpb_basic():

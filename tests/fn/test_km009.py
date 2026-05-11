@@ -1,7 +1,7 @@
 """Tests for km009.kamath_ch2_softmax_element."""
 import numpy as np
 import pytest
-from moirais.fn.km009 import kamath_ch2_softmax_element
+from morie.fn.km009 import kamath_ch2_softmax_element
 
 
 def test_km009_basic():

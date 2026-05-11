@@ -1,5 +1,5 @@
 """Tests for gl1 — Guttman Lambda 1."""
-from moirais.fn.gl1 import gl1
+from morie.fn.gl1 import gl1
 
 def test_gl1_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -9,7 +9,7 @@ def test_gl1_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.gl1 import cheatsheet
+    from morie.fn.gl1 import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

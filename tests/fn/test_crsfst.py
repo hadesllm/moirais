@@ -1,7 +1,7 @@
 """Tests for crsfst.crs_forest."""
 import numpy as np
 import pytest
-from moirais.fn.crsfst import crs_forest
+from morie.fn.crsfst import crs_forest
 
 
 def test_crsfst_basic():

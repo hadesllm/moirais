@@ -1,7 +1,7 @@
 """Tests for trmwgt.trim_weights."""
 import numpy as np
 import pytest
-from moirais.fn.trmwgt import trim_weights
+from morie.fn.trmwgt import trim_weights
 
 
 def test_trmwgt_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhors -- Mantel-Haenszel OR."""
+"""Tests for morie.fn.mhors -- Mantel-Haenszel OR."""
 
 import pytest
-from moirais.fn.mhors import mantel_haenszel_or
+from morie.fn.mhors import mantel_haenszel_or
 
 
 class TestMHOR:

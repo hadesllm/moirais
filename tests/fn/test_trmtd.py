@@ -1,7 +1,7 @@
 """Test trmtd."""
 import numpy as np
 import pytest
-from moirais.fn.trmtd import trmtd
+from morie.fn.trmtd import trmtd
 
 
 def test_trmtd_basic():

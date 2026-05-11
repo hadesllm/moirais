@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.spcbd import spectral_bound, spcbd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.spcbd import spectral_bound, spcbd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSpectralBound:

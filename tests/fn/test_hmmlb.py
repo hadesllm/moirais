@@ -1,7 +1,7 @@
 """Tests for hmmlb.geron_multilabel."""
 import numpy as np
 import pytest
-from moirais.fn.hmmlb import geron_multilabel
+from morie.fn.hmmlb import geron_multilabel
 
 
 def test_hmmlb_basic():

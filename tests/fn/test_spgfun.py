@@ -1,7 +1,7 @@
 """Tests for spgfun.schabenberger_g_function."""
 import numpy as np
 import pytest
-from moirais.fn.spgfun import schabenberger_g_function
+from morie.fn.spgfun import schabenberger_g_function
 
 
 def test_spgfun_basic():

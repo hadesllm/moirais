@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scren -- screening test performance."""
+"""Tests for morie.fn.scren -- screening test performance."""
 
 import numpy as np
 import pytest
-from moirais.fn.scren import screening_performance
+from morie.fn.scren import screening_performance
 
 
 class TestScreening:

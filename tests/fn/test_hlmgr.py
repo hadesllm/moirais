@@ -1,7 +1,7 @@
 """Tests for hlmgr.hlm_gamma_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.hlmgr import hlm_gamma_matrix
+from morie.fn.hlmgr import hlm_gamma_matrix
 
 
 def test_hlmgr_basic():

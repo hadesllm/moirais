@@ -1,7 +1,7 @@
 """Test sersk."""
 import numpy as np
 import pytest
-from moirais.fn.sersk import sersk
+from morie.fn.sersk import sersk
 
 
 def test_sersk_basic():

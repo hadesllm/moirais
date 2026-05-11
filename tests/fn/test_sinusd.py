@@ -1,7 +1,7 @@
 """Test sinusd."""
 import numpy as np
 import pytest
-from moirais.fn.sinusd import sinusd
+from morie.fn.sinusd import sinusd
 
 
 def test_sinusd_basic():

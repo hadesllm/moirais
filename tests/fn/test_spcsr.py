@@ -1,7 +1,7 @@
 """Tests for spcsr.schabenberger_csr_def."""
 import numpy as np
 import pytest
-from moirais.fn.spcsr import schabenberger_csr_def
+from morie.fn.spcsr import schabenberger_csr_def
 
 
 def test_spcsr_basic():

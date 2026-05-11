@@ -1,7 +1,7 @@
 """Test enuvb."""
 import numpy as np
 import pytest
-from moirais.fn.enuvb import enuvb
+from morie.fn.enuvb import enuvb
 
 
 def test_enuvb_basic():

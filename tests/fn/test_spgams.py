@@ -1,7 +1,7 @@
 """Tests for spgams.spatial_gams."""
 import numpy as np
 import pytest
-from moirais.fn.spgams import spatial_gams
+from morie.fn.spgams import spatial_gams
 
 
 def test_spgams_basic():

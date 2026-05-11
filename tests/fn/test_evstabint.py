@@ -1,7 +1,7 @@
 """Tests for evstabint.evt_xi_ci_profile."""
 import numpy as np
 import pytest
-from moirais.fn.evstabint import evt_xi_ci_profile
+from morie.fn.evstabint import evt_xi_ci_profile
 
 
 def test_evstabint_basic():

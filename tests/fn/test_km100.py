@@ -1,7 +1,7 @@
 """Tests for km100.kamath_ch6_toxicity_probability."""
 import numpy as np
 import pytest
-from moirais.fn.km100 import kamath_ch6_toxicity_probability
+from morie.fn.km100 import kamath_ch6_toxicity_probability
 
 
 def test_km100_basic():

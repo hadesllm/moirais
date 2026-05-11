@@ -1,7 +1,7 @@
 """Tests for mafft.mafft_alignment."""
 import numpy as np
 import pytest
-from moirais.fn.mafft import mafft_alignment
+from morie.fn.mafft import mafft_alignment
 
 
 def test_mafft_basic():

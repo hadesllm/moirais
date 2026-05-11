@@ -1,7 +1,7 @@
 """Test pptra."""
 import numpy as np
 import pytest
-from moirais.fn.pptra import pptra
+from morie.fn.pptra import pptra
 
 
 def test_pptra_basic():

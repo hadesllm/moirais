@@ -1,7 +1,7 @@
 """Test rsatm."""
 import numpy as np
 import pytest
-from moirais.fn.rsatm import rsatm
+from morie.fn.rsatm import rsatm
 
 
 def test_rsatm_basic():

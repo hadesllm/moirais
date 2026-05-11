@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.csint."""
+"""Tests for morie.fn.csint."""
 import numpy as np
-from moirais.fn.csint import cubic_spline_interp
+from morie.fn.csint import cubic_spline_interp
 
 
 def test_csint_smoke():
@@ -16,7 +16,7 @@ def test_csint_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.csint import cheatsheet
+    from morie.fn.csint import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

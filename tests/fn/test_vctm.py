@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vctm -- Victimization survey rate."""
+"""Tests for morie.fn.vctm -- Victimization survey rate."""
 
 import pytest
-from moirais.fn.vctm import victimization_rate, vctm
-from moirais.fn._containers import CrimeResult
+from morie.fn.vctm import victimization_rate, vctm
+from morie.fn._containers import CrimeResult
 
 
 class TestVctm:

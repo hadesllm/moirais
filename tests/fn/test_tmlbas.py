@@ -1,7 +1,7 @@
 """Tests for tmlbas.tmle_baseline_adj."""
 import numpy as np
 import pytest
-from moirais.fn.tmlbas import tmle_baseline_adj
+from morie.fn.tmlbas import tmle_baseline_adj
 
 
 def test_tmlbas_basic():

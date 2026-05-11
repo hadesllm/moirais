@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rspln."""
+"""Tests for morie.fn.rspln."""
 import numpy as np
-from moirais.fn.rspln import restricted_cubic_spline
+from morie.fn.rspln import restricted_cubic_spline
 
 
 def test_rspln_smoke():
@@ -12,7 +12,7 @@ def test_rspln_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.rspln import cheatsheet
+    from morie.fn.rspln import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

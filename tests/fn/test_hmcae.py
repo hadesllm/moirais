@@ -1,7 +1,7 @@
 """Tests for hmcae.geron_convolutional_autoencoder."""
 import numpy as np
 import pytest
-from moirais.fn.hmcae import geron_convolutional_autoencoder
+from morie.fn.hmcae import geron_convolutional_autoencoder
 
 
 def test_hmcae_basic():

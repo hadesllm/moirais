@@ -1,7 +1,7 @@
 """Tests for macum.ma_cumulative."""
 import numpy as np
 import pytest
-from moirais.fn.macum import ma_cumulative
+from morie.fn.macum import ma_cumulative
 
 
 def test_macum_basic():

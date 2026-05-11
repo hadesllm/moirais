@@ -1,7 +1,7 @@
 """Tests for aitqld.compositional_quantile_dist."""
 import numpy as np
 import pytest
-from moirais.fn.aitqld import compositional_quantile_dist
+from morie.fn.aitqld import compositional_quantile_dist
 
 
 def test_aitqld_basic():

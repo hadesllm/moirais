@@ -26,10 +26,10 @@ import time
 from collections import Counter
 from pathlib import Path
 
-PROJECT = Path("/path/to/moirais/dev/sphinx/project")
+PROJECT = Path("/path/to/morie/dev/sphinx/project")
 sys.path.insert(0, str(PROJECT / "libexec/config/tools/py-package"))
 
-from moirais.siu import scrape_range, write_csv, write_jsonl, SIU_COLUMNS  # noqa: E402
+from morie.siu import scrape_range, write_csv, write_jsonl, SIU_COLUMNS  # noqa: E402
 
 DRID_MIN = 80
 DRID_MAX = 5074
@@ -66,7 +66,7 @@ def main() -> int:
             try:
                 # Use scrape_range's gen for free politeness, but at single-drid
                 # granularity so we can stream to disk per row.
-                from moirais.siu import scrape_drid as _sd
+                from morie.siu import scrape_drid as _sd
                 row = _sd(drid)
                 rows.append(row)
                 fout.write(json.dumps(row, ensure_ascii=False, default=str) + "\n")

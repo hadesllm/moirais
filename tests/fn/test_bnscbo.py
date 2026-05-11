@@ -1,7 +1,7 @@
 """Tests for bnscbo.bound_compound_outcome."""
 import numpy as np
 import pytest
-from moirais.fn.bnscbo import bound_compound_outcome
+from morie.fn.bnscbo import bound_compound_outcome
 
 
 def test_bnscbo_basic():

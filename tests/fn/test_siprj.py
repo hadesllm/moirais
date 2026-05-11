@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.siprj — Single-index projection pursuit."""
+"""Tests for morie.fn.siprj — Single-index projection pursuit."""
 
 import numpy as np
 import pytest
-from moirais.fn.siprj import siprj
+from morie.fn.siprj import siprj
 
 
 def test_returns_dict():

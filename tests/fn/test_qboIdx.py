@@ -1,7 +1,7 @@
 """Tests for qboIdx.qbo."""
 import numpy as np
 import pytest
-from moirais.fn.qboIdx import qbo
+from morie.fn.qboIdx import qbo
 
 
 def test_qboIdx_basic():

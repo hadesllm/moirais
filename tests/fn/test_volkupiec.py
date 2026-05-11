@@ -1,7 +1,7 @@
 """Tests for volkupiec.vol_kupiec_var_test."""
 import numpy as np
 import pytest
-from moirais.fn.volkupiec import vol_kupiec_var_test
+from morie.fn.volkupiec import vol_kupiec_var_test
 
 
 def test_volkupiec_basic():

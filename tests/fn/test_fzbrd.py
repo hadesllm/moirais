@@ -1,7 +1,7 @@
 """Tests for fzbrd.fauzi_bias_reduced_kdfe."""
 import numpy as np
 import pytest
-from moirais.fn.fzbrd import fauzi_bias_reduced_kdfe
+from morie.fn.fzbrd import fauzi_bias_reduced_kdfe
 
 
 def test_fzbrd_basic():

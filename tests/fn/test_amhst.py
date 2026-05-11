@@ -1,7 +1,7 @@
 """Test amplitude_hist."""
 import numpy as np
-from moirais.fn.amhst import amplitude_hist, alias
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.amhst import amplitude_hist, alias
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAmplitudeHist:

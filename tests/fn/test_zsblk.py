@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsblk -- Spatial block bootstrap"""
+"""Tests for morie.fn.zsblk -- Spatial block bootstrap"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsblk import block_bootstrap
+from morie.fn.zsblk import block_bootstrap
 
 
 class TestBlockBootstrap:

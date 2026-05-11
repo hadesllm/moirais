@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.maxwl -- Maxwell equations."""
+"""Tests for morie.fn.maxwl -- Maxwell equations."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.maxwl import maxwl
+from morie.fn.maxwl import maxwl
 
 
 def test_returns_dict():

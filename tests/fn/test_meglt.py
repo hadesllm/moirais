@@ -1,7 +1,7 @@
 """Tests for meglt.matrix_completion_low_rank."""
 import numpy as np
 import pytest
-from moirais.fn.meglt import matrix_completion_low_rank
+from morie.fn.meglt import matrix_completion_low_rank
 
 
 def test_meglt_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.tarlg -- Threshold AR."""
+"""Tests for morie.fn.tarlg -- Threshold AR."""
 import numpy as np
 import pytest
-from moirais.fn.tarlg import tar_fit
+from morie.fn.tarlg import tar_fit
 
 
 class TestTAR:
@@ -17,5 +17,5 @@ class TestTAR:
             tar_fit(np.ones(5), p=1)
 
     def test_cheatsheet(self):
-        from moirais.fn.tarlg import cheatsheet
+        from morie.fn.tarlg import cheatsheet
         assert isinstance(cheatsheet(), str)

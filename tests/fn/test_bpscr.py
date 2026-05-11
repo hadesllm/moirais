@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bpscr -- Bayesian propensity score."""
+"""Tests for morie.fn.bpscr -- Bayesian propensity score."""
 
 import numpy as np
-from moirais.fn.bpscr import bayesian_propensity
+from morie.fn.bpscr import bayesian_propensity
 
 
 def test_returns_dict():

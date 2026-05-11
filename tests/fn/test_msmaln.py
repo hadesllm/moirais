@@ -1,7 +1,7 @@
 """Tests for msmaln.aalen_johansen."""
 import numpy as np
 import pytest
-from moirais.fn.msmaln import aalen_johansen
+from morie.fn.msmaln import aalen_johansen
 
 
 def test_msmaln_basic():

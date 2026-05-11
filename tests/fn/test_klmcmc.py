@@ -1,7 +1,7 @@
 """Tests for klmcmc.kl_mcmc_diagnostic."""
 import numpy as np
 import pytest
-from moirais.fn.klmcmc import kl_mcmc_diagnostic
+from morie.fn.klmcmc import kl_mcmc_diagnostic
 
 
 def test_klmcmc_basic():

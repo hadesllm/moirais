@@ -1,5 +1,5 @@
 """Tests for rmdc — minimal detectable change."""
-from moirais.fn.rmdc import rmdc
+from morie.fn.rmdc import rmdc
 
 def test_rmdc_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -9,7 +9,7 @@ def test_rmdc_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.rmdc import cheatsheet
+    from morie.fn.rmdc import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

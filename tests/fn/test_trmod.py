@@ -1,7 +1,7 @@
 """Test trmod."""
 import numpy as np
 import pytest
-from moirais.fn.trmod import trmod
+from morie.fn.trmod import trmod
 
 
 def test_trmod_basic():

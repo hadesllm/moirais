@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pabay."""
+"""Tests for morie.fn.pabay."""
 
 import numpy as np
 import pytest
-from moirais.fn.pabay import pabay
+from morie.fn.pabay import pabay
 
 
 class TestPabay:

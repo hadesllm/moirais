@@ -1,7 +1,7 @@
 """Tests for rng163.rangayyan_ch3_rls_objective."""
 import numpy as np
 import pytest
-from moirais.fn.rng163 import rangayyan_ch3_rls_objective
+from morie.fn.rng163 import rangayyan_ch3_rls_objective
 
 
 def test_rng163_basic():

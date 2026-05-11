@@ -1,7 +1,7 @@
 """Tests for grgbm.geron_gradient_boosting_residual."""
 import numpy as np
 import pytest
-from moirais.fn.grgbm import geron_gradient_boosting_residual
+from morie.fn.grgbm import geron_gradient_boosting_residual
 
 
 def test_grgbm_basic():

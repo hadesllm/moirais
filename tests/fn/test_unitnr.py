@@ -1,7 +1,7 @@
 """Tests for unitnr.unit_nonresponse."""
 import numpy as np
 import pytest
-from moirais.fn.unitnr import unit_nonresponse
+from morie.fn.unitnr import unit_nonresponse
 
 
 def test_unitnr_basic():

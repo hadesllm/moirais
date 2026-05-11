@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.astc — alert-state combination encoding."""
+"""Tests for morie.fn.astc — alert-state combination encoding."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.astc import astcmb as astc
-from moirais.fn._containers import AstRes
+from morie.fn.astc import astcmb as astc
+from morie.fn._containers import AstRes
 
 
 @pytest.fixture()

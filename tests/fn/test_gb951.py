@@ -1,7 +1,7 @@
 """Tests for gb951.gibbons_klotz_scale."""
 import numpy as np
 import pytest
-from moirais.fn.gb951 import gibbons_klotz_scale
+from morie.fn.gb951 import gibbons_klotz_scale
 
 
 def test_gb951_basic():

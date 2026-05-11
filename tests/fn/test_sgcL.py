@@ -1,7 +1,7 @@
 """Tests for sgcL.sgc."""
 import numpy as np
 import pytest
-from moirais.fn.sgcL import sgc
+from morie.fn.sgcL import sgc
 
 
 def test_sgcL_basic():

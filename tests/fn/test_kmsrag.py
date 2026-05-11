@@ -1,7 +1,7 @@
 """Tests for kmsrag.kamath_self_rag."""
 import numpy as np
 import pytest
-from moirais.fn.kmsrag import kamath_self_rag
+from morie.fn.kmsrag import kamath_self_rag
 
 
 def test_kmsrag_basic():

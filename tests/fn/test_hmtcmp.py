@@ -1,7 +1,7 @@
 """Tests for hmtcmp.geron_torch_compile."""
 import numpy as np
 import pytest
-from moirais.fn.hmtcmp import geron_torch_compile
+from morie.fn.hmtcmp import geron_torch_compile
 
 
 def test_hmtcmp_basic():

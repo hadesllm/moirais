@@ -1,7 +1,7 @@
 """Test trigen."""
 import numpy as np
 import pytest
-from moirais.fn.trigen import trigen
+from morie.fn.trigen import trigen
 
 
 def test_trigen_basic():

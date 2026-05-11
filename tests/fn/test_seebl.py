@@ -1,7 +1,7 @@
 """Test seebl."""
 import numpy as np
 import pytest
-from moirais.fn.seebl import seebl
+from morie.fn.seebl import seebl
 
 
 def test_seebl_basic():

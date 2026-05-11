@@ -1,7 +1,7 @@
 """Tests for bkfour.baron_kenny_four_step."""
 import numpy as np
 import pytest
-from moirais.fn.bkfour import baron_kenny_four_step
+from morie.fn.bkfour import baron_kenny_four_step
 
 
 def test_bkfour_basic():

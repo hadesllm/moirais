@@ -1,7 +1,7 @@
 """Tests for welshw.welsch_weight."""
 import numpy as np
 import pytest
-from moirais.fn.welshw import welsch_weight
+from morie.fn.welshw import welsch_weight
 
 
 def test_welshw_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sfloc."""
+"""Tests for morie.fn.sfloc."""
 import numpy as np
 import pytest
-from moirais.fn.sfloc import sfloc
+from morie.fn.sfloc import sfloc
 
 
 class TestSfloc:

@@ -1,7 +1,7 @@
 """Tests for augmn.albert_chib_augmentation."""
 import numpy as np
 import pytest
-from moirais.fn.augmn import albert_chib_augmentation
+from morie.fn.augmn import albert_chib_augmentation
 
 
 def test_augmn_basic():

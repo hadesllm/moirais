@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.kpsst -- KPSS stationarity test."""
+"""Tests for morie.fn.kpsst -- KPSS stationarity test."""
 import numpy as np
 import pytest
-from moirais.fn.kpsst import kpss_test
+from morie.fn.kpsst import kpss_test
 
 
 class TestKPSS:
@@ -22,5 +22,5 @@ class TestKPSS:
             kpss_test(np.ones(5))
 
     def test_cheatsheet(self):
-        from moirais.fn.kpsst import cheatsheet
+        from morie.fn.kpsst import cheatsheet
         assert isinstance(cheatsheet(), str)

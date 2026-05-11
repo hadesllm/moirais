@@ -1,7 +1,7 @@
 """Tests for rkhsmt.rkhs_multitrait."""
 import numpy as np
 import pytest
-from moirais.fn.rkhsmt import rkhs_multitrait
+from morie.fn.rkhsmt import rkhs_multitrait
 
 
 def test_rkhsmt_basic():

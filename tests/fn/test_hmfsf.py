@@ -1,7 +1,7 @@
 """Tests for hmfsf.geron_few_shot."""
 import numpy as np
 import pytest
-from moirais.fn.hmfsf import geron_few_shot
+from morie.fn.hmfsf import geron_few_shot
 
 
 def test_hmfsf_basic():

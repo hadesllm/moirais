@@ -1,7 +1,7 @@
 """Test circular_convolution (crcon)."""
 import numpy as np
-from moirais.fn.crcon import circular_convolution, crcon
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.crcon import circular_convolution, crcon
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCrcon:

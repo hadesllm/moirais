@@ -1,7 +1,7 @@
 """Tests for alctxemb.alammar_contextualized_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.alctxemb import alammar_contextualized_embedding
+from morie.fn.alctxemb import alammar_contextualized_embedding
 
 
 def test_alctxemb_basic():

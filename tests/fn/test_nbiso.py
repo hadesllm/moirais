@@ -1,7 +1,7 @@
 """Test nbiso."""
 import numpy as np
 import pytest
-from moirais.fn.nbiso import nbiso
+from morie.fn.nbiso import nbiso
 
 
 def test_nbiso_basic():

@@ -1,7 +1,7 @@
 """Tests for causrosen.causal_rosenbaum_bound."""
 import numpy as np
 import pytest
-from moirais.fn.causrosen import causal_rosenbaum_bound
+from morie.fn.causrosen import causal_rosenbaum_bound
 
 
 def test_causrosen_basic():

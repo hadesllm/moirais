@@ -1,7 +1,7 @@
 """Tests for btbias.boot_bias_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.btbias import boot_bias_estimator
+from morie.fn.btbias import boot_bias_estimator
 
 
 def test_btbias_basic():

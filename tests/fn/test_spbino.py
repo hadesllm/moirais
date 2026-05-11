@@ -1,7 +1,7 @@
 """Tests for spbino.schabenberger_binomial_process."""
 import numpy as np
 import pytest
-from moirais.fn.spbino import schabenberger_binomial_process
+from morie.fn.spbino import schabenberger_binomial_process
 
 
 def test_spbino_basic():

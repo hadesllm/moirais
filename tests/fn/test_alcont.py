@@ -1,7 +1,7 @@
 """Tests for alcont.alammar_continued_pretraining_mlm."""
 import numpy as np
 import pytest
-from moirais.fn.alcont import alammar_continued_pretraining_mlm
+from morie.fn.alcont import alammar_continued_pretraining_mlm
 
 
 def test_alcont_basic():

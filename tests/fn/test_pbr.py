@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pbr -- Point-biserial correlation."""
+"""Tests for morie.fn.pbr -- Point-biserial correlation."""
 
 import numpy as np
 import pytest
-from moirais.fn.pbr import point_biserial_r
+from morie.fn.pbr import point_biserial_r
 
 
 class TestPointBiserialR:

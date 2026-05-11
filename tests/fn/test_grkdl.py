@@ -1,7 +1,7 @@
 """Tests for grkdl.geron_knowledge_distillation_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grkdl import geron_knowledge_distillation_loss
+from morie.fn.grkdl import geron_knowledge_distillation_loss
 
 
 def test_grkdl_basic():

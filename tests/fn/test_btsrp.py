@@ -1,7 +1,7 @@
 """Tests for btsrp.bootstrap_ci."""
 import numpy as np
 import pytest
-from moirais.fn.btsrp import bootstrap_ci
+from morie.fn.btsrp import bootstrap_ci
 
 
 def test_btsrp_basic():

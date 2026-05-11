@@ -1,7 +1,7 @@
 """Tests for kmrrf.kamath_reciprocal_rank_fusion."""
 import numpy as np
 import pytest
-from moirais.fn.kmrrf import kamath_reciprocal_rank_fusion
+from morie.fn.kmrrf import kamath_reciprocal_rank_fusion
 
 
 def test_kmrrf_basic():

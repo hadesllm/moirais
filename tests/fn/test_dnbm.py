@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dnbm — negative binomial PMF."""
+"""Tests for morie.fn.dnbm — negative binomial PMF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dnbm import dnbm
+from morie.fn.dnbm import dnbm
 
 
 class TestDnbm:

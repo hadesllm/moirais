@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kguni -- Universal kriging prediction"""
+"""Tests for morie.fn.kguni -- Universal kriging prediction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kguni import universal_kriging
+from morie.fn.kguni import universal_kriging
 
 
 class TestUniversalKriging:

@@ -1,7 +1,7 @@
 """Tests for spmor.schabenberger_moran_i."""
 import numpy as np
 import pytest
-from moirais.fn.spmor import schabenberger_moran_i
+from morie.fn.spmor import schabenberger_moran_i
 
 
 def test_spmor_basic():

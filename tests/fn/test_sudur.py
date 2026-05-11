@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sudur -- substance duration."""
+"""Tests for morie.fn.sudur -- substance duration."""
 
 import pytest
-from moirais.fn.sudur import substance_duration
+from morie.fn.sudur import substance_duration
 
 
 class TestSubstanceDuration:

@@ -1,7 +1,7 @@
 """Tests for rslnk.residual_connection."""
 import numpy as np
 import pytest
-from moirais.fn.rslnk import residual_connection
+from morie.fn.rslnk import residual_connection
 
 
 def test_rslnk_basic():

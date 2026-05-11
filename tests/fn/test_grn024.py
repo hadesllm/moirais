@@ -1,7 +1,7 @@
 """Tests for grn024.geron_ch4_cross_entropy_gradient_vector."""
 import numpy as np
 import pytest
-from moirais.fn.grn024 import geron_ch4_cross_entropy_gradient_vector
+from morie.fn.grn024 import geron_ch4_cross_entropy_gradient_vector
 
 
 def test_grn024_basic():

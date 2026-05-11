@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rcvot."""
+"""Tests for morie.fn.rcvot."""
 
 import numpy as np
 import pytest
-from moirais.fn.rcvot import rcvot
+from morie.fn.rcvot import rcvot
 
 
 class TestRcvot:

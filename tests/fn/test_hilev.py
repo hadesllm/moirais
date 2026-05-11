@@ -1,7 +1,7 @@
 """Test hilbert_envelope (hilev)."""
 import numpy as np
-from moirais.fn.hilev import hilbert_envelope, hilev
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hilev import hilbert_envelope, hilev
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHilbertEnvelope:

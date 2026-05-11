@@ -1,7 +1,7 @@
 """Tests for spkpe.schabenberger_kriging_pred_error."""
 import numpy as np
 import pytest
-from moirais.fn.spkpe import schabenberger_kriging_pred_error
+from morie.fn.spkpe import schabenberger_kriging_pred_error
 
 
 def test_spkpe_basic():

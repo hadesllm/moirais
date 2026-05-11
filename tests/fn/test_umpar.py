@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.umpar."""
+"""Tests for morie.fn.umpar."""
 
 import numpy as np
 import pytest
-from moirais.fn.umpar import umpar
+from morie.fn.umpar import umpar
 
 
 class TestUmpar:

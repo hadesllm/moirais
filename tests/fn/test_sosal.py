@@ -1,7 +1,7 @@
 """Test sosal."""
 import numpy as np
 import pytest
-from moirais.fn.sosal import sosal
+from morie.fn.sosal import sosal
 
 
 def test_sosal_basic():

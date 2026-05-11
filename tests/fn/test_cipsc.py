@@ -1,7 +1,7 @@
 """Tests for cipsc.caliper_psm."""
 import numpy as np
 import pytest
-from moirais.fn.cipsc import caliper_psm
+from morie.fn.cipsc import caliper_psm
 
 
 def test_cipsc_basic():

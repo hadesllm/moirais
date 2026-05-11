@@ -1,7 +1,7 @@
 """Tests for km102.kamath_ch6_lstm_chain_rule."""
 import numpy as np
 import pytest
-from moirais.fn.km102 import kamath_ch6_lstm_chain_rule
+from morie.fn.km102 import kamath_ch6_lstm_chain_rule
 
 
 def test_km102_basic():

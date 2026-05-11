@@ -1,7 +1,7 @@
 """Tests for rng239.rangayyan_ch4_rational_z_transform_form."""
 import numpy as np
 import pytest
-from moirais.fn.rng239 import rangayyan_ch4_rational_z_transform_form
+from morie.fn.rng239 import rangayyan_ch4_rational_z_transform_form
 
 
 def test_rng239_basic():

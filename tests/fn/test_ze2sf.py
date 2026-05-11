@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ze2sf -- Two-step floating catchment area"""
+"""Tests for morie.fn.ze2sf -- Two-step floating catchment area"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ze2sf import two_step_fca
+from morie.fn.ze2sf import two_step_fca
 
 
 class TestTwoStepFca:

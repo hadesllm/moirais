@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cstag — custody age profile."""
+"""Tests for morie.fn.cstag — custody age profile."""
 
 import pytest
 import pandas as pd
-from moirais.fn.cstag import custody_age_profile
+from morie.fn.cstag import custody_age_profile
 
 
 class TestCustodyAgeProfile:

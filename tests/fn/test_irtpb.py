@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.irtpb -- IRT probability."""
+"""Tests for morie.fn.irtpb -- IRT probability."""
 import numpy as np
-from moirais.fn.irtpb import irt_probability, irtpb
+from morie.fn.irtpb import irt_probability, irtpb
 
 
 def test_alias():

@@ -1,7 +1,7 @@
 """Tests for gh_c3_4.ghosal_stick_break_def."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c3_4 import ghosal_stick_break_def
+from morie.fn.gh_c3_4 import ghosal_stick_break_def
 
 
 def test_gh_c3_4_basic():

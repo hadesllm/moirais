@@ -1,7 +1,7 @@
 """Tests for cnsint.concurrent_calibration."""
 import numpy as np
 import pytest
-from moirais.fn.cnsint import concurrent_calibration
+from morie.fn.cnsint import concurrent_calibration
 
 
 def test_cnsint_basic():

@@ -1,7 +1,7 @@
 """Tests for sukht.sukhatme_test."""
 import numpy as np
 import pytest
-from moirais.fn.sukht import sukhatme_test
+from morie.fn.sukht import sukhatme_test
 
 
 def test_sukht_basic():

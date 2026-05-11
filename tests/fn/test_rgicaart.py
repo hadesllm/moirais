@@ -1,7 +1,7 @@
 """Tests for rgicaart.rangayyan_ica_artifact."""
 import numpy as np
 import pytest
-from moirais.fn.rgicaart import rangayyan_ica_artifact
+from morie.fn.rgicaart import rangayyan_ica_artifact
 
 
 def test_rgicaart_basic():

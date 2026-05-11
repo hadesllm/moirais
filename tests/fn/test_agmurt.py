@@ -1,7 +1,7 @@
 """Tests for agmurt.muzero_reanalyze_target."""
 import numpy as np
 import pytest
-from moirais.fn.agmurt import muzero_reanalyze_target
+from morie.fn.agmurt import muzero_reanalyze_target
 
 
 def test_agmurt_basic():

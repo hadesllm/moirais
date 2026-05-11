@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gbdrf -- GBD risk factor."""
+"""Tests for morie.fn.gbdrf -- GBD risk factor."""
 
 import pytest
-from moirais.fn.gbdrf import gbd_risk_factor
+from morie.fn.gbdrf import gbd_risk_factor
 
 
 class TestGBDRiskFactor:

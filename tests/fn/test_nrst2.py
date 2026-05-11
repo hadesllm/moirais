@@ -1,7 +1,7 @@
 """Test nrst2."""
 import numpy as np
 import pytest
-from moirais.fn.nrst2 import nrst2
+from morie.fn.nrst2 import nrst2
 
 
 def test_nrst2_basic():

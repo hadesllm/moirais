@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dhyp — hypergeometric PMF."""
+"""Tests for morie.fn.dhyp — hypergeometric PMF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dhyp import dhyp
+from morie.fn.dhyp import dhyp
 
 
 class TestDhyp:

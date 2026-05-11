@@ -1,7 +1,7 @@
 """Tests for km083.kamath_ch6_ceat_random_effects."""
 import numpy as np
 import pytest
-from moirais.fn.km083 import kamath_ch6_ceat_random_effects
+from morie.fn.km083 import kamath_ch6_ceat_random_effects
 
 
 def test_km083_basic():

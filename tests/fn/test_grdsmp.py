@@ -1,7 +1,7 @@
 """Test grdsmp."""
 import numpy as np
 import pytest
-from moirais.fn.grdsmp import grdsmp
+from morie.fn.grdsmp import grdsmp
 
 
 def test_grdsmp_basic():

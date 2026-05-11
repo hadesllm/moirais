@@ -1,7 +1,7 @@
 """Tests for spdetr.spatial_detrending."""
 import numpy as np
 import pytest
-from moirais.fn.spdetr import spatial_detrending
+from morie.fn.spdetr import spatial_detrending
 
 
 def test_spdetr_basic():

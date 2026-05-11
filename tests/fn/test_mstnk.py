@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mstnk -- Trustworthiness metric"""
+"""Tests for morie.fn.mstnk -- Trustworthiness metric"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mstnk import trustworthiness
+from morie.fn.mstnk import trustworthiness
 
 
 class TestTrustworthiness:

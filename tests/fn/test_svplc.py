@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svplc -- Plott radial symmetry condition check"""
+"""Tests for morie.fn.svplc -- Plott radial symmetry condition check"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svplc import plott_condition
+from morie.fn.svplc import plott_condition
 
 
 class TestPlottCondition:

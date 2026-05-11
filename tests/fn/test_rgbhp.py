@@ -1,7 +1,7 @@
 """Tests for rgbhp.rangayyan_butterworth_hp."""
 import numpy as np
 import pytest
-from moirais.fn.rgbhp import rangayyan_butterworth_hp
+from morie.fn.rgbhp import rangayyan_butterworth_hp
 
 
 def test_rgbhp_basic():

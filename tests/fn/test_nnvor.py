@@ -1,7 +1,7 @@
 """Tests for nnvor."""
 import numpy as np
 import pytest
-from moirais.fn.nnvor import nnvor
+from morie.fn.nnvor import nnvor
 
 
 def test_nnvor_basic():
@@ -27,5 +27,5 @@ def test_nnvor_no_data():
 
 
 def test_nnvor_alias():
-    from moirais.fn.nnvor import nnvor
+    from morie.fn.nnvor import nnvor
     assert nnvor is nnvor

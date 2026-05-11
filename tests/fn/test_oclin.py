@@ -1,7 +1,7 @@
 """Tests for oclin.oc_cutting_line."""
 import numpy as np
 import pytest
-from moirais.fn.oclin import oc_cutting_line
+from morie.fn.oclin import oc_cutting_line
 
 
 def test_oclin_basic():

@@ -1,9 +1,9 @@
 Key Empirical Findings
 =======================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-Headline numerical results that the MOIRAIS analysis surface produces
+Headline numerical results that the MORIE analysis surface produces
 on the public Toronto Police Service and Ontario Tracking and
 Information System (OTIS) data. Each item is the output of a specific
 module call.
@@ -18,7 +18,7 @@ Spatial autocorrelation (Toronto Police Service, 2024)
   (z = 0.4). Spatially random — Toronto homicides do not cluster at
   the neighbourhood polygon scale.
 
-Computed via ``moirais.tps_spatial.morai`` over the TPS neighbourhood
+Computed via ``morie.tps_spatial.morai`` over the TPS neighbourhood
 shapefile.
 
 Hawkes self-exciting point processes (post-2014 TPS)
@@ -33,7 +33,7 @@ Hawkes self-exciting point processes (post-2014 TPS)
   Mohler-Bertozzi-Brantingham exponential + constant model under
   Kwan-Chen-Dunsmuir (2024).
 
-Computed via ``moirais.tps_hawkes_advanced.compare_hawkes_kernels``;
+Computed via ``morie.tps_hawkes_advanced.compare_hawkes_kernels``;
 see :doc:`hawkes` for the methodology and the companion paper at
 `10.5281/zenodo.20102198
 <https://doi.org/10.5281/zenodo.20102198>`__.
@@ -52,16 +52,16 @@ OTIS placements (Ontario Tracking and Information System)
   :math:`\times` confinement breakdown. Versus 42.4 % for
   "Unknown / Not Reported".
 
-Computed via ``moirais.otis_analyze`` and ``moirais.otis_causal``
+Computed via ``morie.otis_analyze`` and ``morie.otis_causal``
 modules; the OTIS-RC OU diagnostic quads (residuals / Q-Q /
 scale-location / leverage) are produced by
-``moirais.otis_all_analyze.otis_rc_diagnostics``.
+``morie.otis_all_analyze.otis_rc_diagnostics``.
 
 How to reproduce
 ----------------
 
-Each of the values above is the output of a single MOIRAIS function
-call against the corresponding open-data feed. The ``moirais
+Each of the values above is the output of a single MORIE function
+call against the corresponding open-data feed. The ``morie
 run-module`` CLI subcommand executes any of the registered analysis
 modules end-to-end and writes a results table to ``--output-dir``;
 the headline numbers are extracted from those tables.

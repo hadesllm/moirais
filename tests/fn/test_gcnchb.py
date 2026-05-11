@@ -1,7 +1,7 @@
 """Tests for gcnchb.chebnet."""
 import numpy as np
 import pytest
-from moirais.fn.gcnchb import chebnet
+from morie.fn.gcnchb import chebnet
 
 
 def test_gcnchb_basic():

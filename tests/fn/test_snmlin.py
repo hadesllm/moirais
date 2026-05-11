@@ -1,7 +1,7 @@
 """Tests for snmlin.snm_linear."""
 import numpy as np
 import pytest
-from moirais.fn.snmlin import snm_linear
+from morie.fn.snmlin import snm_linear
 
 
 def test_snmlin_basic():

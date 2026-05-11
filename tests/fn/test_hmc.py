@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hmc -- Hamiltonian Monte Carlo."""
+"""Tests for morie.fn.hmc -- Hamiltonian Monte Carlo."""
 
 import numpy as np
-from moirais.fn.hmc import hamiltonian_mc
+from morie.fn.hmc import hamiltonian_mc
 
 
 def _log_normal(x):

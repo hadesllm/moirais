@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.amci — A-M confidence intervals."""
+"""Tests for morie.fn.amci — A-M confidence intervals."""
 import numpy as np
-from moirais.fn.amci import amci
+from morie.fn.amci import amci
 
 
 def test_amci_smoke():
@@ -14,7 +14,7 @@ def test_amci_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.amci import cheatsheet
+    from morie.fn.amci import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

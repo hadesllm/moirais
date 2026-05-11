@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mssmw -- Weighted SMACOF MDS"""
+"""Tests for morie.fn.mssmw -- Weighted SMACOF MDS"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mssmw import smacof_weight
+from morie.fn.mssmw import smacof_weight
 
 
 class TestSmacofWeight:

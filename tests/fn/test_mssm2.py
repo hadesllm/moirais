@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mssm2 -- SMACOF 2D MDS"""
+"""Tests for morie.fn.mssm2 -- SMACOF 2D MDS"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mssm2 import smacof_2d
+from morie.fn.mssm2 import smacof_2d
 
 
 class TestSmacof2d:

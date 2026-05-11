@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.qdanl -- Quadratic discriminant analysis."""
+"""Tests for morie.fn.qdanl -- Quadratic discriminant analysis."""
 
 import numpy as np
-from moirais.fn.qdanl import qda, qdanl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.qdanl import qda, qdanl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestQda:

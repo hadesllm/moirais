@@ -1,7 +1,7 @@
 """Tests for gmatv.grm_vanraden."""
 import numpy as np
 import pytest
-from moirais.fn.gmatv import grm_vanraden
+from morie.fn.gmatv import grm_vanraden
 
 
 def test_gmatv_basic():

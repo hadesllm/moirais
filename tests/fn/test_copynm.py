@@ -1,7 +1,7 @@
 """Tests for copynm.copy_number_variant."""
 import numpy as np
 import pytest
-from moirais.fn.copynm import copy_number_variant
+from morie.fn.copynm import copy_number_variant
 
 
 def test_copynm_basic():

@@ -1,7 +1,7 @@
 """Test ppkno."""
 import numpy as np
 import pytest
-from moirais.fn.ppkno import ppkno
+from morie.fn.ppkno import ppkno
 
 
 def test_ppkno_basic():

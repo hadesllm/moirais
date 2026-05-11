@@ -1,6 +1,6 @@
 """Test 2D convolution."""
 import numpy as np
-from moirais.fn.conv2 import conv2
+from morie.fn.conv2 import conv2
 
 
 def test_conv2_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svrcs -- Roll call simulation"""
+"""Tests for morie.fn.svrcs -- Roll call simulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svrcs import roll_call_sim
+from morie.fn.svrcs import roll_call_sim
 
 
 class TestRollCallSim:

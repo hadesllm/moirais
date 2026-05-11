@@ -1,7 +1,7 @@
 """Without music, life would be a mistake. — Friedrich Nietzsche"""
 import numpy as np
 import pytest
-from moirais.fn.hmfa import geron_flash_attention
+from morie.fn.hmfa import geron_flash_attention
 
 
 def test_hmfa_basic():

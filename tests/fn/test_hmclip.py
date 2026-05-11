@@ -1,7 +1,7 @@
 """Tests for hmclip.geron_clip."""
 import numpy as np
 import pytest
-from moirais.fn.hmclip import geron_clip
+from morie.fn.hmclip import geron_clip
 
 
 def test_hmclip_basic():

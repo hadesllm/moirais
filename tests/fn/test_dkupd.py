@@ -1,7 +1,7 @@
 """Test dkupd."""
 import numpy as np
 import pytest
-from moirais.fn.dkupd import dkupd
+from morie.fn.dkupd import dkupd
 
 
 def test_dkupd_basic():

@@ -1,7 +1,7 @@
 """Tests for volraq.vol_realised_quadratic_var."""
 import numpy as np
 import pytest
-from moirais.fn.volraq import vol_realised_quadratic_var
+from morie.fn.volraq import vol_realised_quadratic_var
 
 
 def test_volraq_basic():

@@ -1,7 +1,7 @@
 """Tests for rgcxy.rangayyan_coherence_cxy."""
 import numpy as np
 import pytest
-from moirais.fn.rgcxy import rangayyan_coherence_cxy
+from morie.fn.rgcxy import rangayyan_coherence_cxy
 
 
 def test_rgcxy_basic():

@@ -1,7 +1,7 @@
 """Tests for specdn.spectral_density."""
 import numpy as np
 import pytest
-from moirais.fn.specdn import spectral_density
+from morie.fn.specdn import spectral_density
 
 
 def test_specdn_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.eqrid — racial disparity index."""
+"""Tests for morie.fn.eqrid — racial disparity index."""
 
 import pytest
-from moirais.fn.eqrid import racial_disparity_index
-from moirais.fn._containers import ESRes
+from morie.fn.eqrid import racial_disparity_index
+from morie.fn._containers import ESRes
 
 
 class TestRdi:

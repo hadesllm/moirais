@@ -1,7 +1,7 @@
 """Tests for klmsm1.kl_molecular_smooth."""
 import numpy as np
 import pytest
-from moirais.fn.klmsm1 import kl_molecular_smooth
+from morie.fn.klmsm1 import kl_molecular_smooth
 
 
 def test_klmsm1_basic():

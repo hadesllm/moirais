@@ -1,7 +1,7 @@
 """Tests for irtgrm.graded_response."""
 import numpy as np
 import pytest
-from moirais.fn.irtgrm import graded_response
+from morie.fn.irtgrm import graded_response
 
 
 def test_irtgrm_basic():

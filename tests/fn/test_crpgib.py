@@ -1,7 +1,7 @@
 """Tests for crpgib.crp_gibbs."""
 import numpy as np
 import pytest
-from moirais.fn.crpgib import crp_gibbs
+from morie.fn.crpgib import crp_gibbs
 
 
 def test_crpgib_basic():

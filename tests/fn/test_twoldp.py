@@ -1,7 +1,7 @@
 """Tests for twoldp.two_locus_dprime."""
 import numpy as np
 import pytest
-from moirais.fn.twoldp import two_locus_dprime
+from morie.fn.twoldp import two_locus_dprime
 
 
 def test_twoldp_basic():

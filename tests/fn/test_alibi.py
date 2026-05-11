@@ -1,7 +1,7 @@
 """Tests for alibi.alibi."""
 import numpy as np
 import pytest
-from moirais.fn.alibi import alibi
+from morie.fn.alibi import alibi
 
 
 def test_alibi_basic():

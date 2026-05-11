@@ -1,7 +1,7 @@
 """Tests for bnppct.bnp_percent_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.bnppct import bnp_percent_quantile
+from morie.fn.bnppct import bnp_percent_quantile
 
 
 def test_bnppct_basic():

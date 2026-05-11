@@ -1,7 +1,7 @@
 """Tests for specS.speculative_decoding."""
 import numpy as np
 import pytest
-from moirais.fn.specS import speculative_decoding
+from morie.fn.specS import speculative_decoding
 
 
 def test_specS_basic():

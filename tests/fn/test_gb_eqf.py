@@ -1,7 +1,7 @@
 """Tests for gb_eqf.gibbons_emp_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.gb_eqf import gibbons_emp_quantile
+from morie.fn.gb_eqf import gibbons_emp_quantile
 
 
 def test_gb_eqf_basic():

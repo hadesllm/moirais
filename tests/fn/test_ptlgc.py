@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptlgc -- Log-Gaussian Cox process"""
+"""Tests for morie.fn.ptlgc -- Log-Gaussian Cox process"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptlgc import log_gaussian_cox
+from morie.fn.ptlgc import log_gaussian_cox
 
 
 class TestLogGaussianCox:

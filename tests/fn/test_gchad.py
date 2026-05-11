@@ -1,7 +1,7 @@
 """Test gchad."""
 import numpy as np
 import pytest
-from moirais.fn.gchad import gchad
+from morie.fn.gchad import gchad
 
 
 def test_gchad_basic():

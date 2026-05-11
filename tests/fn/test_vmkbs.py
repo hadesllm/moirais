@@ -1,7 +1,7 @@
 """Test vmkbs."""
 import numpy as np
 import pytest
-from moirais.fn.vmkbs import vmkbs
+from morie.fn.vmkbs import vmkbs
 
 
 def test_vmkbs_basic():

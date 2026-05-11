@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.strs1 -- Kruskal stress-1."""
+"""Tests for morie.fn.strs1 -- Kruskal stress-1."""
 
 import numpy as np
-from moirais.fn.strs1 import stress1_measure, strs1
+from morie.fn.strs1 import stress1_measure, strs1
 
 
 def test_strs1_perfect():

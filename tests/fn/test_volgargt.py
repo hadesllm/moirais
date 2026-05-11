@@ -1,7 +1,7 @@
 """Tests for volgargt.vol_garch_t."""
 import numpy as np
 import pytest
-from moirais.fn.volgargt import vol_garch_t
+from morie.fn.volgargt import vol_garch_t
 
 
 def test_volgargt_basic():

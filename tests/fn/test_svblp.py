@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svblp -- Bliss point estimation"""
+"""Tests for morie.fn.svblp -- Bliss point estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svblp import bliss_point
+from morie.fn.svblp import bliss_point
 
 
 class TestBlissPoint:

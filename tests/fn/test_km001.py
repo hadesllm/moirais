@@ -1,7 +1,7 @@
 """Tests for km001.kamath_ch2_unidirectional_encoder_state."""
 import numpy as np
 import pytest
-from moirais.fn.km001 import kamath_ch2_unidirectional_encoder_state
+from morie.fn.km001 import kamath_ch2_unidirectional_encoder_state
 
 
 def test_km001_basic():

@@ -1,7 +1,7 @@
 """Tests for ksr16.kosorok_influence_function."""
 import numpy as np
 import pytest
-from moirais.fn.ksr16 import kosorok_influence_function
+from morie.fn.ksr16 import kosorok_influence_function
 
 
 def test_ksr16_basic():

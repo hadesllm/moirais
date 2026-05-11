@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.stvar."""
+"""Tests for morie.fn.stvar."""
 import numpy as np
-from moirais.fn.stvar import st_variogram
+from morie.fn.stvar import st_variogram
 
 
 def test_stvar_smoke():
@@ -16,7 +16,7 @@ def test_stvar_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.stvar import cheatsheet
+    from morie.fn.stvar import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for strmkr.strauss_process."""
 import numpy as np
 import pytest
-from moirais.fn.strmkr import strauss_process
+from morie.fn.strmkr import strauss_process
 
 
 def test_strmkr_basic():

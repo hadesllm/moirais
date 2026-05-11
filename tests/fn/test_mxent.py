@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mxent — maximum entropy distribution."""
+"""Tests for morie.fn.mxent — maximum entropy distribution."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mxent import mxent
+from morie.fn.mxent import mxent
 
 
 class TestMxent:

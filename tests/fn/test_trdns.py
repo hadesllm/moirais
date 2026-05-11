@@ -1,7 +1,7 @@
 """Test trdns."""
 import numpy as np
 import pytest
-from moirais.fn.trdns import trdns
+from morie.fn.trdns import trdns
 
 
 def test_trdns_basic():

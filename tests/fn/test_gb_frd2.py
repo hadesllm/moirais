@@ -1,7 +1,7 @@
 """Tests for gb_frd2.gibbons_friedman_ties."""
 import numpy as np
 import pytest
-from moirais.fn.gb_frd2 import gibbons_friedman_ties
+from morie.fn.gb_frd2 import gibbons_friedman_ties
 
 
 def test_gb_frd2_basic():

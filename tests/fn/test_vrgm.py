@@ -1,7 +1,7 @@
 """Tests for vrgm.variogram_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.vrgm import variogram_estimation
+from morie.fn.vrgm import variogram_estimation
 
 
 def test_vrgm_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gnsres."""
+"""Tests for morie.fn.gnsres."""
 import numpy as np
 import pytest
-from moirais.fn.gnsres import gnsres
+from morie.fn.gnsres import gnsres
 
 
 class TestGnsres:

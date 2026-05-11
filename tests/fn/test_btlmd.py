@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.btlmd — Bradley-Terry-Luce model."""
+"""Tests for morie.fn.btlmd — Bradley-Terry-Luce model."""
 import numpy as np
-from moirais.fn.btlmd import btlmd
+from morie.fn.btlmd import btlmd
 
 
 def test_btlmd_basic():

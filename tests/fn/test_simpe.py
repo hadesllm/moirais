@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.simpe — simulate perceptions."""
+"""Tests for morie.fn.simpe — simulate perceptions."""
 import numpy as np
-from moirais.fn.simpe import simpe
+from morie.fn.simpe import simpe
 
 
 def test_simpe_smoke():
@@ -12,7 +12,7 @@ def test_simpe_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.simpe import cheatsheet
+    from morie.fn.simpe import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

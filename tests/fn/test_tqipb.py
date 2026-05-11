@@ -1,7 +1,7 @@
 """Tests for tqipb.turboquant_inner_product_distortion_bound."""
 import numpy as np
 import pytest
-from moirais.fn.tqipb import turboquant_inner_product_distortion_bound
+from morie.fn.tqipb import turboquant_inner_product_distortion_bound
 
 
 def test_tqipb_basic():

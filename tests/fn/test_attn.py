@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.attn — scaled dot-product attention."""
+"""Tests for morie.fn.attn — scaled dot-product attention."""
 import numpy as np
 import pytest
-from moirais.fn.attn import attention
+from morie.fn.attn import attention
 
 
 class TestAttention:

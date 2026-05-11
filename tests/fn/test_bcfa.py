@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bcfa — Bayesian CFA."""
+"""Tests for morie.fn.bcfa — Bayesian CFA."""
 
 import numpy as np
 import pytest
-from moirais.fn.bcfa import bayesian_cfa
+from morie.fn.bcfa import bayesian_cfa
 
 
 class TestBayesianCfa:

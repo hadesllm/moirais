@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gauu — gaussian utility."""
+"""Tests for morie.fn.gauu — gaussian utility."""
 import numpy as np
-from moirais.fn.gauu import gauu
+from morie.fn.gauu import gauu
 
 
 def test_gauu_smoke():

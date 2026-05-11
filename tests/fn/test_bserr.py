@@ -1,8 +1,8 @@
 """Test bias_error (bserr)."""
 import numpy as np
 
-from moirais.fn.bserr import bias_error, bserr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bserr import bias_error, bserr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBiasError:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptisg -- Isotropic edge correction"""
+"""Tests for morie.fn.ptisg -- Isotropic edge correction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptisg import isotropic_guard
+from morie.fn.ptisg import isotropic_guard
 
 
 class TestIsotropicGuard:

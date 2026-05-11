@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.embd — embedding similarity."""
+"""Tests for morie.fn.embd — embedding similarity."""
 import numpy as np
 import pytest
-from moirais.fn.embd import embedding_similarity
+from morie.fn.embd import embedding_similarity
 
 
 class TestEmbeddingSimilarity:

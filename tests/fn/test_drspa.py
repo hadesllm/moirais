@@ -1,7 +1,7 @@
 """Tests for drspa.dr_spatial_did."""
 import numpy as np
 import pytest
-from moirais.fn.drspa import dr_spatial_did
+from morie.fn.drspa import dr_spatial_did
 
 
 def test_drspa_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.limex — LIME explanations."""
+"""Tests for morie.fn.limex — LIME explanations."""
 import numpy as np
 import pytest
-from moirais.fn.limex import limex
+from morie.fn.limex import limex
 
 
 @pytest.fixture()
@@ -62,5 +62,5 @@ def test_weights_positive(setup):
 
 
 def test_cheatsheet():
-    from moirais.fn.limex import cheatsheet
+    from morie.fn.limex import cheatsheet
     assert len(cheatsheet()) > 0

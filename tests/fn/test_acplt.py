@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.acplt -- Autocorrelation data."""
+"""Tests for morie.fn.acplt -- Autocorrelation data."""
 
 import numpy as np
-from moirais.fn.acplt import autocorrelation_data
+from morie.fn.acplt import autocorrelation_data
 
 
 def test_returns_dict():

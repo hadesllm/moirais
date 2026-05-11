@@ -1,7 +1,7 @@
 """Tests for hmpol.geron_policy."""
 import numpy as np
 import pytest
-from moirais.fn.hmpol import geron_policy
+from morie.fn.hmpol import geron_policy
 
 
 def test_hmpol_basic():

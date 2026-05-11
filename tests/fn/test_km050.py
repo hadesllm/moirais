@@ -1,7 +1,7 @@
 """Tests for km050.kamath_ch3_back_translation_prob."""
 import numpy as np
 import pytest
-from moirais.fn.km050 import kamath_ch3_back_translation_prob
+from morie.fn.km050 import kamath_ch3_back_translation_prob
 
 
 def test_km050_basic():

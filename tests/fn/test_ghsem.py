@@ -1,7 +1,7 @@
 """Test ghsem."""
 import numpy as np
 import pytest
-from moirais.fn.ghsem import ghsem
+from morie.fn.ghsem import ghsem
 
 
 def test_ghsem_basic():

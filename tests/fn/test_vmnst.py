@@ -1,7 +1,7 @@
 """Test vmnst."""
 import numpy as np
 import pytest
-from moirais.fn.vmnst import vmnst
+from morie.fn.vmnst import vmnst
 
 
 def test_vmnst_basic():

@@ -1,7 +1,7 @@
 """Tests for km046.kamath_ch3_prefix_prompt_template."""
 import numpy as np
 import pytest
-from moirais.fn.km046 import kamath_ch3_prefix_prompt_template
+from morie.fn.km046 import kamath_ch3_prefix_prompt_template
 
 
 def test_km046_basic():

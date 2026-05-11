@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.impme -- impute missing mean."""
+"""Tests for morie.fn.impme -- impute missing mean."""
 
 import numpy as np
-from moirais.fn.impme import impute_missing_mean, impme
+from morie.fn.impme import impute_missing_mean, impme
 
 
 def test_impme_no_missing():

@@ -1,7 +1,7 @@
 """Tests for altkp.alammar_tokenization_pipeline."""
 import numpy as np
 import pytest
-from moirais.fn.altkp import alammar_tokenization_pipeline
+from morie.fn.altkp import alammar_tokenization_pipeline
 
 
 def test_altkp_basic():

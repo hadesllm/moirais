@@ -1,6 +1,6 @@
 """Test mthry."""
 import pytest
-from moirais.fn.mthry import m_theory_dimension
+from morie.fn.mthry import m_theory_dimension
 
 
 def test_mthry_basic():

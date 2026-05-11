@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rcdtm — recidivism time-to-event summary."""
+"""Tests for morie.fn.rcdtm — recidivism time-to-event summary."""
 
 import numpy as np
-from moirais.fn.rcdtm import recidivism_time, rcdtm
+from morie.fn.rcdtm import recidivism_time, rcdtm
 
 
 class TestRecidivismTime:

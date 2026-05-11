@@ -1,7 +1,7 @@
 """Tests for rgtwa.rangayyan_twave_alternans."""
 import numpy as np
 import pytest
-from moirais.fn.rgtwa import rangayyan_twave_alternans
+from morie.fn.rgtwa import rangayyan_twave_alternans
 
 
 def test_rgtwa_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfafi -- CFA fit indices for any structure."""
+"""Tests for morie.fn.cfafi -- CFA fit indices for any structure."""
 
 import numpy as np
-from moirais.fn.cfafi import cfa_fit
-from moirais.fn._mapq_const import SUBSCALES
+from morie.fn.cfafi import cfa_fit
+from morie.fn._mapq_const import SUBSCALES
 
 
 class TestCfaFit:

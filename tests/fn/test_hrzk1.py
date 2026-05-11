@@ -1,7 +1,7 @@
 """Tests for hrzk1.horowitz_kernel_density."""
 import numpy as np
 import pytest
-from moirais.fn.hrzk1 import horowitz_kernel_density
+from morie.fn.hrzk1 import horowitz_kernel_density
 
 
 def test_hrzk1_basic():

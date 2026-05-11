@@ -1,7 +1,7 @@
 """Test nblde."""
 import numpy as np
 import pytest
-from moirais.fn.nblde import nblde
+from morie.fn.nblde import nblde
 
 
 def test_nblde_basic():

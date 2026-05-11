@@ -1,7 +1,7 @@
 """Tests for tmlext.tmle_external_data."""
 import numpy as np
 import pytest
-from moirais.fn.tmlext import tmle_external_data
+from morie.fn.tmlext import tmle_external_data
 
 
 def test_tmlext_basic():

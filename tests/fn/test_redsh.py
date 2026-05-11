@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.redsh -- cosmological redshift."""
+"""Tests for morie.fn.redsh -- cosmological redshift."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.redsh import redsh
+from morie.fn.redsh import redsh
 
 
 def test_returns_dict():

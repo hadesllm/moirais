@@ -1,7 +1,7 @@
 """Tests for ghadp.ghosal_adaptation."""
 import numpy as np
 import pytest
-from moirais.fn.ghadp import ghosal_adaptation
+from morie.fn.ghadp import ghosal_adaptation
 
 
 def test_ghadp_basic():

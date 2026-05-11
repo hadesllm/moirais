@@ -1,7 +1,7 @@
 """Tests for hwmul.holt_winters_mult."""
 import numpy as np
 import pytest
-from moirais.fn.hwmul import holt_winters_mult
+from morie.fn.hwmul import holt_winters_mult
 
 
 def test_hwmul_basic():

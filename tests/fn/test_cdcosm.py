@@ -1,7 +1,7 @@
 """Tests for cdcosm."""
 import numpy as np
 import pytest
-from moirais.fn.cdcosm import cdcosm
+from morie.fn.cdcosm import cdcosm
 
 
 def test_cdcosm_basic():
@@ -27,5 +27,5 @@ def test_cdcosm_no_data():
 
 
 def test_cdcosm_alias():
-    from moirais.fn.cdcosm import cdcosm
+    from morie.fn.cdcosm import cdcosm
     assert cdcosm is cdcosm

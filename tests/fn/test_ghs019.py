@@ -1,7 +1,7 @@
 """Tests for ghs019.ghosal_ch3_tree_set_probability."""
 import numpy as np
 import pytest
-from moirais.fn.ghs019 import ghosal_ch3_tree_set_probability
+from morie.fn.ghs019 import ghosal_ch3_tree_set_probability
 
 
 def test_ghs019_basic():

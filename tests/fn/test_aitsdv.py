@@ -1,7 +1,7 @@
 """Tests for aitsdv.compositional_shannon."""
 import numpy as np
 import pytest
-from moirais.fn.aitsdv import compositional_shannon
+from morie.fn.aitsdv import compositional_shannon
 
 
 def test_aitsdv_basic():

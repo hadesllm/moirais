@@ -1,7 +1,7 @@
 """Test ppnnd."""
 import numpy as np
 import pytest
-from moirais.fn.ppnnd import ppnnd
+from morie.fn.ppnnd import ppnnd
 
 
 def test_ppnnd_basic():

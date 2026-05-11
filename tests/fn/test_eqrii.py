@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.eqrii — relative inequality index."""
+"""Tests for morie.fn.eqrii — relative inequality index."""
 
 import pytest
-from moirais.fn.eqrii import relative_inequality
-from moirais.fn._containers import ESRes
+from morie.fn.eqrii import relative_inequality
+from morie.fn._containers import ESRes
 
 
 class TestRelativeInequality:

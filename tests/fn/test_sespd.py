@@ -1,7 +1,7 @@
 """Test sespd."""
 import numpy as np
 import pytest
-from moirais.fn.sespd import sespd
+from morie.fn.sespd import sespd
 
 
 def test_sespd_basic():

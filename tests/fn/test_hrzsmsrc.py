@@ -1,7 +1,7 @@
 """Tests for hrzsmsrc.horowitz_sms_rate."""
 import numpy as np
 import pytest
-from moirais.fn.hrzsmsrc import horowitz_sms_rate
+from morie.fn.hrzsmsrc import horowitz_sms_rate
 
 
 def test_hrzsmsrc_basic():

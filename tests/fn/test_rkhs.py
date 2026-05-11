@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rkhs -- RKHS regression."""
+"""Tests for morie.fn.rkhs -- RKHS regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.rkhs import rkhs
+from morie.fn.rkhs import rkhs
 
 
 class TestRkhs:

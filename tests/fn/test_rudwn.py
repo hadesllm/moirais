@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.rudwn import rudwn
+from morie.fn.rudwn import rudwn
 
 
 class TestRudwn:

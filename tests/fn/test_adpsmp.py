@@ -1,7 +1,7 @@
 """Test adpsmp."""
 import numpy as np
 import pytest
-from moirais.fn.adpsmp import adpsmp
+from morie.fn.adpsmp import adpsmp
 
 
 def test_adpsmp_basic():

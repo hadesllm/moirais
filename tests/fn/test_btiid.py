@@ -1,7 +1,7 @@
 """Tests for btiid.boot_iid_resample."""
 import numpy as np
 import pytest
-from moirais.fn.btiid import boot_iid_resample
+from morie.fn.btiid import boot_iid_resample
 
 
 def test_btiid_basic():

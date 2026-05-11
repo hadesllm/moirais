@@ -1,7 +1,7 @@
 """Tests for chlpow."""
 import numpy as np
 import pytest
-from moirais.fn.chlpow import chlpow
+from morie.fn.chlpow import chlpow
 
 
 def test_chlpow_basic():
@@ -27,5 +27,5 @@ def test_chlpow_no_data():
 
 
 def test_chlpow_alias():
-    from moirais.fn.chlpow import chlpow
+    from morie.fn.chlpow import chlpow
     assert chlpow is chlpow

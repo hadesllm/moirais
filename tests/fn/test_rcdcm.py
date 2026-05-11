@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rcdcm — recidivism competing risks."""
+"""Tests for morie.fn.rcdcm — recidivism competing risks."""
 
 import pytest
 import numpy as np
-from moirais.fn.rcdcm import recidivism_competing
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rcdcm import recidivism_competing
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRecidivismCompeting:

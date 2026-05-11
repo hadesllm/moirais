@@ -1,7 +1,7 @@
 """Test agshp."""
 import numpy as np
 import pytest
-from moirais.fn.agshp import agshp
+from morie.fn.agshp import agshp
 
 
 def test_agshp_basic():

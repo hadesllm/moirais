@@ -1,7 +1,7 @@
 """Tests for gh_ap_i2.ghosal_dudley_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_i2 import ghosal_dudley_entropy
+from morie.fn.gh_ap_i2 import ghosal_dudley_entropy
 
 
 def test_gh_ap_i2_basic():

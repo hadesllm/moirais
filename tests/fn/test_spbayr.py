@@ -1,7 +1,7 @@
 """Tests for spbayr.schabenberger_bayesian_hierarchical."""
 import numpy as np
 import pytest
-from moirais.fn.spbayr import schabenberger_bayesian_hierarchical
+from morie.fn.spbayr import schabenberger_bayesian_hierarchical
 
 
 def test_spbayr_basic():

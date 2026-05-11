@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rtdst — rate-distortion function."""
+"""Tests for morie.fn.rtdst — rate-distortion function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rtdst import rtdst
+from morie.fn.rtdst import rtdst
 
 
 class TestRtdst:

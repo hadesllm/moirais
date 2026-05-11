@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msdcs -- Cosine distance matrix"""
+"""Tests for morie.fn.msdcs -- Cosine distance matrix"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msdcs import dist_cosine
+from morie.fn.msdcs import dist_cosine
 
 
 class TestDistCosine:

@@ -1,7 +1,7 @@
 """Tests for evgofa.evt_gev_anderson_darling."""
 import numpy as np
 import pytest
-from moirais.fn.evgofa import evt_gev_anderson_darling
+from morie.fn.evgofa import evt_gev_anderson_darling
 
 
 def test_evgofa_basic():

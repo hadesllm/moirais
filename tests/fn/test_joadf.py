@@ -1,7 +1,7 @@
 """Tests for joadf.joseph_adf_unit_root_test."""
 import numpy as np
 import pytest
-from moirais.fn.joadf import joseph_adf_unit_root_test
+from morie.fn.joadf import joseph_adf_unit_root_test
 
 
 def test_joadf_basic():

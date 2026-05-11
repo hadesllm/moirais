@@ -1,7 +1,7 @@
 """Tests for ghs007.ghosal_ch2_binary_regression_density."""
 import numpy as np
 import pytest
-from moirais.fn.ghs007 import ghosal_ch2_binary_regression_density
+from morie.fn.ghs007 import ghosal_ch2_binary_regression_density
 
 
 def test_ghs007_basic():

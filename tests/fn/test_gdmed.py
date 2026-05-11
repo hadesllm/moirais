@@ -1,7 +1,7 @@
 """Test gdmed."""
 import numpy as np
 import pytest
-from moirais.fn.gdmed import gdmed
+from morie.fn.gdmed import gdmed
 
 
 def test_gdmed_basic():

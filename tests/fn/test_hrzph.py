@@ -1,7 +1,7 @@
 """Tests for hrzph.horowitz_proportional_hazards."""
 import numpy as np
 import pytest
-from moirais.fn.hrzph import horowitz_proportional_hazards
+from morie.fn.hrzph import horowitz_proportional_hazards
 
 
 def test_hrzph_basic():

@@ -1,7 +1,7 @@
 """Tests for rbif -- bifactor omega."""
 import numpy as np
-from moirais.fn.rbif import bifactor_omega
-from moirais.fn._containers import ESRes
+from morie.fn.rbif import bifactor_omega
+from morie.fn._containers import ESRes
 
 
 class TestBifactorOmega:

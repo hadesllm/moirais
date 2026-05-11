@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bcomp — Bayesian model comparison."""
+"""Tests for morie.fn.bcomp — Bayesian model comparison."""
 
 import numpy as np
 import pytest
-from moirais.fn.bcomp import bayesian_model_compare
+from morie.fn.bcomp import bayesian_model_compare
 
 
 class TestBayesianModelCompare:

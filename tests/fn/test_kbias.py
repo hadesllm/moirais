@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kbias — bias-reduced KDE."""
+"""Tests for morie.fn.kbias — bias-reduced KDE."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kbias import kbias
+from morie.fn.kbias import kbias
 
 
 class TestKbias:

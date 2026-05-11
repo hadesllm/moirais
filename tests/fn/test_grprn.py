@@ -1,7 +1,7 @@
 """Tests for grprn.geron_weight_pruning."""
 import numpy as np
 import pytest
-from moirais.fn.grprn import geron_weight_pruning
+from morie.fn.grprn import geron_weight_pruning
 
 
 def test_grprn_basic():

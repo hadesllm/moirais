@@ -1,6 +1,6 @@
 """Tests for jarque_bera_test."""
 import numpy as np, pytest
-from moirais.fn.jbtet import jarque_bera_test
+from morie.fn.jbtet import jarque_bera_test
 
 
 class TestJarqueBera:

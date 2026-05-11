@@ -1,7 +1,7 @@
 """Tests for vitatt.vit_self_attention."""
 import numpy as np
 import pytest
-from moirais.fn.vitatt import vit_self_attention
+from morie.fn.vitatt import vit_self_attention
 
 
 def test_vitatt_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgord -- Ordinary kriging prediction"""
+"""Tests for morie.fn.kgord -- Ordinary kriging prediction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgord import ordinary_kriging
+from morie.fn.kgord import ordinary_kriging
 
 
 class TestOrdinaryKriging:

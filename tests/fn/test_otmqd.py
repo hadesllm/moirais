@@ -1,7 +1,7 @@
 """Tests for otmqd.ot_quantization_distortion."""
 import numpy as np
 import pytest
-from moirais.fn.otmqd import ot_quantization_distortion
+from morie.fn.otmqd import ot_quantization_distortion
 
 
 def test_otmqd_basic():

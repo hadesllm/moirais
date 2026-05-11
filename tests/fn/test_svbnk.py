@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svbnk -- Banks set computation"""
+"""Tests for morie.fn.svbnk -- Banks set computation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svbnk import banks_set
+from morie.fn.svbnk import banks_set
 
 
 class TestBanksSet:

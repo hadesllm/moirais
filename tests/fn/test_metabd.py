@@ -1,7 +1,7 @@
 """Tests for metabd.metagenome_binning."""
 import numpy as np
 import pytest
-from moirais.fn.metabd import metagenome_binning
+from morie.fn.metabd import metagenome_binning
 
 
 def test_metabd_basic():

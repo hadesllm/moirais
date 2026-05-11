@@ -1,7 +1,7 @@
 """Tests for kmrlaif.kamath_rlaif_objective."""
 import numpy as np
 import pytest
-from moirais.fn.kmrlaif import kamath_rlaif_objective
+from morie.fn.kmrlaif import kamath_rlaif_objective
 
 
 def test_kmrlaif_basic():

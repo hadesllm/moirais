@@ -1,7 +1,7 @@
 """Test blksmp."""
 import numpy as np
 import pytest
-from moirais.fn.blksmp import blksmp
+from morie.fn.blksmp import blksmp
 
 
 def test_blksmp_basic():

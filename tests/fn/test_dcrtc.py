@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.dcrtc import dicrotic_notch_detect, dcrtc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dcrtc import dicrotic_notch_detect, dcrtc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDicroticNotchDetect:

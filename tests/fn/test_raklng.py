@@ -1,7 +1,7 @@
 """Tests for raklng.raking_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.raklng import raking_ratio
+from morie.fn.raklng import raking_ratio
 
 
 def test_raklng_basic():

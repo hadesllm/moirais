@@ -1,7 +1,7 @@
 """Tests for wsmemt.wasserman_em_algorithm."""
 import numpy as np
 import pytest
-from moirais.fn.wsmemt import wasserman_em_algorithm
+from morie.fn.wsmemt import wasserman_em_algorithm
 
 
 def test_wsmemt_basic():

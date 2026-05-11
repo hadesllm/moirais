@@ -1,7 +1,7 @@
 """Tests for hmlcv.geron_learning_curves."""
 import numpy as np
 import pytest
-from moirais.fn.hmlcv import geron_learning_curves
+from morie.fn.hmlcv import geron_learning_curves
 
 
 def test_hmlcv_basic():

@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.ergod import ergodicity_test, ergod
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ergod import ergodicity_test, ergod
+from morie.fn._containers import DescriptiveResult
 
 
 class TestErgodicityTest:

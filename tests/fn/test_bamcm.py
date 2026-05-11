@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bamcm -- Bayesian MCMC sampler."""
+"""Tests for morie.fn.bamcm -- Bayesian MCMC sampler."""
 import numpy as np
-from moirais.fn.bamcm import bayesian_am_mcmc_sample, bamcm
+from morie.fn.bamcm import bayesian_am_mcmc_sample, bamcm
 
 
 def test_alias():

@@ -1,5 +1,5 @@
 """Auto-discovers + runs every DatasetGate in
-moirais.eval_pipeline.SEED_GATES (plus anything downstream code
+morie.eval_pipeline.SEED_GATES (plus anything downstream code
 has registered).
 
 Behaviour:
@@ -9,7 +9,7 @@ Behaviour:
     fail  -> hard fail, with the per-key failure list.
     error -> hard fail, with the exception type + message.
 
-Strict mode is governed by env var ``MOIRAIS_PIPELINE_STRICT=1`` —
+Strict mode is governed by env var ``MORIE_PIPELINE_STRICT=1`` —
 when set, "skip" also becomes a hard failure (so an offline CI run
 is flagged rather than silently treated as green). Off by default
 because most contributors won't have a configured remote endpoint
@@ -21,11 +21,11 @@ import os
 
 import pytest
 
-from moirais import eval_pipeline as ep
+from morie import eval_pipeline as ep
 
 
 _GATES = ep.gates()
-STRICT = os.getenv("MOIRAIS_PIPELINE_STRICT", "0") == "1"
+STRICT = os.getenv("MORIE_PIPELINE_STRICT", "0") == "1"
 
 
 @pytest.mark.skipif(not _GATES, reason="no DatasetGates registered")

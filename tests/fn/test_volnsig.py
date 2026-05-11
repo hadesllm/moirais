@@ -1,7 +1,7 @@
 """Tests for volnsig.vol_nelson_skew_garch."""
 import numpy as np
 import pytest
-from moirais.fn.volnsig import vol_nelson_skew_garch
+from morie.fn.volnsig import vol_nelson_skew_garch
 
 
 def test_volnsig_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.blckw -- SNR degradation."""
+"""Tests for morie.fn.blckw -- SNR degradation."""
 
 import numpy as np
-from moirais.fn.blckw import snr_degradation, blckw
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.blckw import snr_degradation, blckw
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBlckw:

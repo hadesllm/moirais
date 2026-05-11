@@ -1,6 +1,6 @@
 """Tests for morsw.py - Generalized Morse wavelet."""
 import numpy as np
-from moirais.fn.morsw import morse_wavelet, morsw
+from morie.fn.morsw import morse_wavelet, morsw
 
 
 def test_morsw_returns_descriptive_result():

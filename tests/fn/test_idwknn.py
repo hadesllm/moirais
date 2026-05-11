@@ -1,7 +1,7 @@
 """Tests for idwknn."""
 import numpy as np
 import pytest
-from moirais.fn.idwknn import idwknn
+from morie.fn.idwknn import idwknn
 
 
 def test_idwknn_basic():
@@ -27,5 +27,5 @@ def test_idwknn_no_data():
 
 
 def test_idwknn_alias():
-    from moirais.fn.idwknn import idwknn
+    from morie.fn.idwknn import idwknn
     assert idwknn is idwknn

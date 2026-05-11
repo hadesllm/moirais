@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.empbs — Empirical bootstrap process."""
+"""Tests for morie.fn.empbs — Empirical bootstrap process."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.empbs import empbs
+from morie.fn.empbs import empbs
 
 
 @pytest.fixture()

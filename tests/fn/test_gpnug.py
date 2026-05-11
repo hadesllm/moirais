@@ -1,7 +1,7 @@
 """Tests for gpnug."""
 import numpy as np
 import pytest
-from moirais.fn.gpnug import gpnug
+from morie.fn.gpnug import gpnug
 
 
 def test_gpnug_basic():
@@ -27,5 +27,5 @@ def test_gpnug_no_data():
 
 
 def test_gpnug_alias():
-    from moirais.fn.gpnug import gpnug
+    from morie.fn.gpnug import gpnug
     assert gpnug is gpnug

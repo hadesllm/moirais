@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.occex -- occupational exposure."""
+"""Tests for morie.fn.occex -- occupational exposure."""
 
 import pytest
-from moirais.fn.occex import occupational_exposure
+from morie.fn.occex import occupational_exposure
 
 
 class TestOccupationalExposure:

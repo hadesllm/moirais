@@ -1,7 +1,7 @@
 """Tests for evgevc.evt_gev_cdf."""
 import numpy as np
 import pytest
-from moirais.fn.evgevc import evt_gev_cdf
+from morie.fn.evgevc import evt_gev_cdf
 
 
 def test_evgevc_basic():

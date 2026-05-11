@@ -1,7 +1,7 @@
 """Tests for causmedb.causal_mediation_baron_kenny."""
 import numpy as np
 import pytest
-from moirais.fn.causmedb import causal_mediation_baron_kenny
+from morie.fn.causmedb import causal_mediation_baron_kenny
 
 
 def test_causmedb_basic():

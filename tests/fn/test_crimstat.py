@@ -11,7 +11,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.fn import cohend, gkgam, kentau, mcfadr, s2var, somerd, spearm, xbar
+from morie.fn import cohend, gkgam, kentau, mcfadr, s2var, somerd, spearm, xbar
 
 
 # ── xbar ────────────────────────────────────────────────────────────────────

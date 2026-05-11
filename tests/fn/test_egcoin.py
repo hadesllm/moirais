@@ -1,7 +1,7 @@
 """Tests for egcoin.engle_granger_2step."""
 import numpy as np
 import pytest
-from moirais.fn.egcoin import engle_granger_2step
+from morie.fn.egcoin import engle_granger_2step
 
 
 def test_egcoin_basic():

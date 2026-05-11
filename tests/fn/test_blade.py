@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.blade -- Canny edge detection."""
+"""Tests for morie.fn.blade -- Canny edge detection."""
 
 import numpy as np
-from moirais.fn.blade import edge_detect, blade
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.blade import edge_detect, blade
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBlade:

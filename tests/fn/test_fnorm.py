@@ -1,7 +1,7 @@
 """Test feature_normalize (fnorm)."""
 import numpy as np
-from moirais.fn.fnorm import feature_normalize, fnorm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.fnorm import feature_normalize, fnorm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFnorm:

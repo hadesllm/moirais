@@ -1,7 +1,7 @@
 """Test fodiv."""
 import numpy as np
 import pytest
-from moirais.fn.fodiv import fodiv
+from morie.fn.fodiv import fodiv
 
 
 def test_fodiv_basic():

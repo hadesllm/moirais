@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.frdmt import frdmt
+from morie.fn.frdmt import frdmt
 
 
 class TestFrdmt:

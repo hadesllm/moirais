@@ -1,7 +1,7 @@
 """Tests for wideD.wide_and_deep."""
 import numpy as np
 import pytest
-from moirais.fn.wideD import wide_and_deep
+from morie.fn.wideD import wide_and_deep
 
 
 def test_wideD_basic():

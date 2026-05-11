@@ -1,7 +1,7 @@
 """Tests for johbu.joseph_bottom_up_reconciliation."""
 import numpy as np
 import pytest
-from moirais.fn.johbu import joseph_bottom_up_reconciliation
+from morie.fn.johbu import joseph_bottom_up_reconciliation
 
 
 def test_johbu_basic():

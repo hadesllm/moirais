@@ -1,7 +1,7 @@
 """Tests for ksr030.kosorok_ch2_brownian_bridge_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.ksr030 import kosorok_ch2_brownian_bridge_covariance
+from morie.fn.ksr030 import kosorok_ch2_brownian_bridge_covariance
 
 
 def test_ksr030_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.grndr -- Grenander estimator."""
+"""Tests for morie.fn.grndr -- Grenander estimator."""
 
 import numpy as np
 import pytest
-from moirais.fn.grndr import grenander_estimator
+from morie.fn.grndr import grenander_estimator
 
 
 class TestGrenander:

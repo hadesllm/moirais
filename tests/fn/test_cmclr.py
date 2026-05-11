@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cmclr."""
+"""Tests for morie.fn.cmclr."""
 
 import numpy as np
 import pytest
-from moirais.fn.cmclr import cmclr
+from morie.fn.cmclr import cmclr
 
 
 class TestCmclr:

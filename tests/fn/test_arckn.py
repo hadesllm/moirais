@@ -1,7 +1,7 @@
 """Tests for arckn.arc_cosine_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.arckn import arc_cosine_kernel
+from morie.fn.arckn import arc_cosine_kernel
 
 
 def test_arckn_basic():

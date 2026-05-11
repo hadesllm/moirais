@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lmpzv — Lempel-Ziv complexity."""
+"""Tests for morie.fn.lmpzv — Lempel-Ziv complexity."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lmpzv import lmpzv
+from morie.fn.lmpzv import lmpzv
 
 
 class TestLmpzv:

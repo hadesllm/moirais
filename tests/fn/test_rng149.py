@@ -1,7 +1,7 @@
 """Tests for rng149.rangayyan_ch3_wiener_frequency_relation."""
 import numpy as np
 import pytest
-from moirais.fn.rng149 import rangayyan_ch3_wiener_frequency_relation
+from morie.fn.rng149 import rangayyan_ch3_wiener_frequency_relation
 
 
 def test_rng149_basic():

@@ -1,7 +1,7 @@
 """Tests for baysc.py - Bayesian classifier."""
 import numpy as np
 import pytest
-from moirais.fn.baysc import baysc_fn, baysc
+from morie.fn.baysc import baysc_fn, baysc
 
 
 def _two_class_data():

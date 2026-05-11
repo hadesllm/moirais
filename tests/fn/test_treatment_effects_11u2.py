@@ -1,7 +1,7 @@
 """Tests for treatment_effects_11u2.treatment_effects_1_chapter_1_unnumbered_2."""
 import numpy as np
 import pytest
-from moirais.fn.treatment_effects_11u2 import treatment_effects_1_chapter_1_unnumbered_2
+from morie.fn.treatment_effects_11u2 import treatment_effects_1_chapter_1_unnumbered_2
 
 
 def test_treatment_effects_11u2_basic():

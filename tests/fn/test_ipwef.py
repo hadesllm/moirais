@@ -1,7 +1,7 @@
 """Tests for ipwef.ipw_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.ipwef import ipw_estimator
+from morie.fn.ipwef import ipw_estimator
 
 
 def test_ipwef_basic():

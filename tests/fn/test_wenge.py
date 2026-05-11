@@ -1,7 +1,7 @@
 """Tests for wenge.weight_based_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.wenge import weight_based_mediation
+from morie.fn.wenge import weight_based_mediation
 
 
 def test_wenge_basic():

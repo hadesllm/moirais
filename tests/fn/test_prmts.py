@@ -1,6 +1,6 @@
 """Tests for permutation_test_two."""
 import numpy as np, pytest
-from moirais.fn.prmts import permutation_test_two
+from morie.fn.prmts import permutation_test_two
 
 
 class TestPermutationTwo:

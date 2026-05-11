@@ -1,7 +1,7 @@
 """Tests for gpreg.gaussian_process_regression."""
 import numpy as np
 import pytest
-from moirais.fn.gpreg import gaussian_process_regression
+from morie.fn.gpreg import gaussian_process_regression
 
 
 def test_gpreg_basic():

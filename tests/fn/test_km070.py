@@ -1,7 +1,7 @@
 """Tests for km070.kamath_ch5_rlhf_optimal_policy."""
 import numpy as np
 import pytest
-from moirais.fn.km070 import kamath_ch5_rlhf_optimal_policy
+from morie.fn.km070 import kamath_ch5_rlhf_optimal_policy
 
 
 def test_km070_basic():

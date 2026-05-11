@@ -1,7 +1,7 @@
 """Tests for gh_c3_2.ghosal_stochastic_proc_prior."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c3_2 import ghosal_stochastic_proc_prior
+from morie.fn.gh_c3_2 import ghosal_stochastic_proc_prior
 
 
 def test_gh_c3_2_basic():

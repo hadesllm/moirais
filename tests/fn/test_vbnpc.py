@@ -1,7 +1,7 @@
 """Tests for vbnpc.vb_nonparametric."""
 import numpy as np
 import pytest
-from moirais.fn.vbnpc import vb_nonparametric
+from morie.fn.vbnpc import vb_nonparametric
 
 
 def test_vbnpc_basic():

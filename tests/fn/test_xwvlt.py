@@ -1,6 +1,6 @@
 """Tests for xwvlt.py - Cross-wavelet spectrum."""
 import numpy as np
-from moirais.fn.xwvlt import cross_wavelet, xwvlt
+from morie.fn.xwvlt import cross_wavelet, xwvlt
 
 
 def test_xwvlt_returns_descriptive_result():

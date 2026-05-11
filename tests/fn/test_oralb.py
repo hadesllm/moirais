@@ -1,7 +1,7 @@
 """Tests for oralb.oral_bioavailability."""
 import numpy as np
 import pytest
-from moirais.fn.oralb import oral_bioavailability
+from morie.fn.oralb import oral_bioavailability
 
 
 def test_oralb_basic():

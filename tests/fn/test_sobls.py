@@ -1,7 +1,7 @@
 """Tests for sobls.sobol_sequence."""
 import numpy as np
 import pytest
-from moirais.fn.sobls import sobol_sequence
+from morie.fn.sobls import sobol_sequence
 
 
 def test_sobls_basic():

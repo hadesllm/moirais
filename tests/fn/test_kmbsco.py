@@ -1,7 +1,7 @@
 """Tests for kmbsco.kamath_bertscore."""
 import numpy as np
 import pytest
-from moirais.fn.kmbsco import kamath_bertscore
+from morie.fn.kmbsco import kamath_bertscore
 
 
 def test_kmbsco_basic():

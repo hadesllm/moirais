@@ -1,7 +1,7 @@
 """Tests for fractal dimension."""
 import numpy as np
 import pytest
-from moirais.fn.frcdm import fractal_dimension, frcdm
+from morie.fn.frcdm import fractal_dimension, frcdm
 
 
 def test_line():

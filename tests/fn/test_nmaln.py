@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmaln -- Alpha-NOMINATE (Bayesian MCMC)"""
+"""Tests for morie.fn.nmaln -- Alpha-NOMINATE (Bayesian MCMC)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmaln import alpha_nominate
+from morie.fn.nmaln import alpha_nominate
 
 
 class TestAlphaNominate:

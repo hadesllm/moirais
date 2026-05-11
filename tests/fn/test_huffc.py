@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.huffc — Huffman coding."""
+"""Tests for morie.fn.huffc — Huffman coding."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.huffc import huffc
+from morie.fn.huffc import huffc
 
 
 class TestHuffc:

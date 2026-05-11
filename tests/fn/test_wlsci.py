@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.wlsci."""
-from moirais.fn.wlsci import wlsci
+"""Tests for morie.fn.wlsci."""
+from morie.fn.wlsci import wlsci
 
 
 def test_wlsci_smoke():
@@ -10,7 +10,7 @@ def test_wlsci_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.wlsci import cheatsheet
+    from morie.fn.wlsci import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

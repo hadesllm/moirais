@@ -1,7 +1,7 @@
 """Tests for math2.ma_higgins_h2."""
 import numpy as np
 import pytest
-from moirais.fn.math2 import ma_higgins_h2
+from morie.fn.math2 import ma_higgins_h2
 
 
 def test_math2_basic():

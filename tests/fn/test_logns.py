@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.logns -- Log-normal survival model."""
+"""Tests for morie.fn.logns -- Log-normal survival model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.logns import logns
+from morie.fn.logns import logns
 
 
 @pytest.fixture()
@@ -39,5 +39,5 @@ def test_with_covariates(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.logns import cheatsheet
+    from morie.fn.logns import cheatsheet
     assert "log-normal" in cheatsheet().lower()

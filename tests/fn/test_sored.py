@@ -1,7 +1,7 @@
 """Test sored."""
 import numpy as np
 import pytest
-from moirais.fn.sored import sored
+from morie.fn.sored import sored
 
 
 def test_sored_basic():

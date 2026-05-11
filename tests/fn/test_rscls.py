@@ -1,7 +1,7 @@
 """Test rscls."""
 import numpy as np
 import pytest
-from moirais.fn.rscls import rscls
+from morie.fn.rscls import rscls
 
 
 def test_rscls_basic():

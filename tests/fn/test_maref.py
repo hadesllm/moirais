@@ -1,7 +1,7 @@
 """Test maref."""
 import numpy as np
 import pytest
-from moirais.fn.maref import maref
+from morie.fn.maref import maref
 
 
 def test_maref_basic():

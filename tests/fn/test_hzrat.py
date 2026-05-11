@@ -1,7 +1,7 @@
 """Tests for hzrat: hazard ratio with CI."""
 import numpy as np
 import pytest
-from moirais.fn.hzrat import hzrat
+from morie.fn.hzrat import hzrat
 
 
 def _make_two_group(n_per_group=150, hr=2.0, seed=0):

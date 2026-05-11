@@ -1,7 +1,7 @@
 """Tests for tbgss."""
 import numpy as np
 import pytest
-from moirais.fn.tbgss import tbgss
+from morie.fn.tbgss import tbgss
 
 
 def test_tbgss_basic():
@@ -27,5 +27,5 @@ def test_tbgss_no_data():
 
 
 def test_tbgss_alias():
-    from moirais.fn.tbgss import tbgss
+    from morie.fn.tbgss import tbgss
     assert tbgss is tbgss

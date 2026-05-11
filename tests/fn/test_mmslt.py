@@ -1,6 +1,6 @@
 """Tests for mm_estimator."""
 import numpy as np, pytest
-from moirais.fn.mmslt import mm_estimator
+from morie.fn.mmslt import mm_estimator
 
 
 class TestMMEstimator:

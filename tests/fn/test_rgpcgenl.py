@@ -1,7 +1,7 @@
 """Tests for rgpcgenl.rangayyan_pcg_envelope_avg."""
 import numpy as np
 import pytest
-from moirais.fn.rgpcgenl import rangayyan_pcg_envelope_avg
+from morie.fn.rgpcgenl import rangayyan_pcg_envelope_avg
 
 
 def test_rgpcgenl_basic():

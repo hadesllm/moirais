@@ -1,7 +1,7 @@
 """Tests for grgruc.geron_gru_cell."""
 import numpy as np
 import pytest
-from moirais.fn.grgruc import geron_gru_cell
+from morie.fn.grgruc import geron_gru_cell
 
 
 def test_grgruc_basic():

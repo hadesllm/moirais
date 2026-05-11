@@ -1,7 +1,7 @@
 """Tests for mainf.ma_influence_diagnostics."""
 import numpy as np
 import pytest
-from moirais.fn.mainf import ma_influence_diagnostics
+from morie.fn.mainf import ma_influence_diagnostics
 
 
 def test_mainf_basic():

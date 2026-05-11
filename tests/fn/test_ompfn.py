@@ -1,7 +1,7 @@
 """Test omp_sparse (ompfn)."""
 import numpy as np
-from moirais.fn.ompfn import omp_sparse, ompfn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ompfn import omp_sparse, ompfn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOmpfn:

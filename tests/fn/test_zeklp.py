@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeklp -- Prospective space-time scan"""
+"""Tests for morie.fn.zeklp -- Prospective space-time scan"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeklp import scan_prospective
+from morie.fn.zeklp import scan_prospective
 
 
 class TestScanProspective:

@@ -1,7 +1,7 @@
 """Test ppitd."""
 import numpy as np
 import pytest
-from moirais.fn.ppitd import ppitd
+from morie.fn.ppitd import ppitd
 
 
 def test_ppitd_basic():

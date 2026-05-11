@@ -1,7 +1,7 @@
 """Test ghsrv."""
 import numpy as np
 import pytest
-from moirais.fn.ghsrv import ghsrv
+from morie.fn.ghsrv import ghsrv
 
 
 def test_ghsrv_basic():

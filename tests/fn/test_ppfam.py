@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ppfam."""
+"""Tests for morie.fn.ppfam."""
 
 import numpy as np
 import pytest
-from moirais.fn.ppfam import ppfam
+from morie.fn.ppfam import ppfam
 
 
 class TestPpfam:

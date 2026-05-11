@@ -1,7 +1,7 @@
 """Tests for mpfn.message_passing."""
 import numpy as np
 import pytest
-from moirais.fn.mpfn import message_passing
+from morie.fn.mpfn import message_passing
 
 
 def test_mpfn_basic():

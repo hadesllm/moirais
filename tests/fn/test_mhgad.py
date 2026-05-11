@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhgad -- GAD-7 score."""
+"""Tests for morie.fn.mhgad -- GAD-7 score."""
 
 import pytest
-from moirais.fn.mhgad import gad7_score
+from morie.fn.mhgad import gad7_score
 
 
 class TestGAD7:

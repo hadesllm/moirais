@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.skerr — spatial error model (SEM)."""
+"""Tests for morie.fn.skerr — spatial error model (SEM)."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.skerr import spatial_error_model
+from morie.fn.skerr import spatial_error_model
 
 
 class TestSpatialErrorModel:

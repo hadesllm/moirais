@@ -1,7 +1,7 @@
 """Tests for hmhei.geron_he_init."""
 import numpy as np
 import pytest
-from moirais.fn.hmhei import geron_he_init
+from morie.fn.hmhei import geron_he_init
 
 
 def test_hmhei_basic():

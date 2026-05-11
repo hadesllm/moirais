@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hotrd -- Newton's method convergence."""
+"""Tests for morie.fn.hotrd -- Newton's method convergence."""
 
 import numpy as np
-from moirais.fn.hotrd import newton_convergence, hotrd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hotrd import newton_convergence, hotrd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHotrd:

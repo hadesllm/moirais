@@ -1,8 +1,8 @@
 """Test rlwe_keygen."""
 import numpy as np
 import pytest
-from moirais.fn.rlwe import rlwe_keygen
-from moirais.fn._containers import CryptoResult
+from morie.fn.rlwe import rlwe_keygen
+from morie.fn._containers import CryptoResult
 
 
 class TestRlweKeygen:

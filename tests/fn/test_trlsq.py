@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.trlsq -- Total least squares."""
+"""Tests for morie.fn.trlsq -- Total least squares."""
 
 import numpy as np
-from moirais.fn.trlsq import total_least_squares, trlsq
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.trlsq import total_least_squares, trlsq
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTrlsq:

@@ -1,7 +1,7 @@
 """Tests for sensMI.sensitivity_mediation_imbens."""
 import numpy as np
 import pytest
-from moirais.fn.sensMI import sensitivity_mediation_imbens
+from morie.fn.sensMI import sensitivity_mediation_imbens
 
 
 def test_sensMI_basic():

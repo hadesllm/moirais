@@ -1,7 +1,7 @@
 """Tests for evtsthr.evt_threshold_select_lvar."""
 import numpy as np
 import pytest
-from moirais.fn.evtsthr import evt_threshold_select_lvar
+from morie.fn.evtsthr import evt_threshold_select_lvar
 
 
 def test_evtsthr_basic():

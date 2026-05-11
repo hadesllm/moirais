@@ -1,7 +1,7 @@
 """Test complex_demodulation."""
 import numpy as np
-from moirais.fn.cxdmd import complex_demodulation, cxdmd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cxdmd import complex_demodulation, cxdmd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestComplexDemodulation:

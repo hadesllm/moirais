@@ -1,7 +1,7 @@
 """Tests for rng195.rangayyan_ch4_length_transformation."""
 import numpy as np
 import pytest
-from moirais.fn.rng195 import rangayyan_ch4_length_transformation
+from morie.fn.rng195 import rangayyan_ch4_length_transformation
 
 
 def test_rng195_basic():

@@ -1,7 +1,7 @@
 """Test enwdr."""
 import numpy as np
 import pytest
-from moirais.fn.enwdr import enwdr
+from morie.fn.enwdr import enwdr
 
 
 def test_enwdr_basic():

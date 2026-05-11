@@ -1,7 +1,7 @@
 """Tests for survgen.general_estimating_eq_surv."""
 import numpy as np
 import pytest
-from moirais.fn.survgen import general_estimating_eq_surv
+from morie.fn.survgen import general_estimating_eq_surv
 
 
 def test_survgen_basic():

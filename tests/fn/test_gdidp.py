@@ -1,7 +1,7 @@
 """Test gdidp."""
 import numpy as np
 import pytest
-from moirais.fn.gdidp import gdidp
+from morie.fn.gdidp import gdidp
 
 
 def test_gdidp_basic():

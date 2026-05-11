@@ -1,7 +1,7 @@
 """Tests for grcos.geron_conv_output_size."""
 import numpy as np
 import pytest
-from moirais.fn.grcos import geron_conv_output_size
+from morie.fn.grcos import geron_conv_output_size
 
 
 def test_grcos_basic():

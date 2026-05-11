@@ -1,7 +1,7 @@
 """Tests for gh_wn_gauss_pr.ghosal_white_noise_gauss_prior."""
 import numpy as np
 import pytest
-from moirais.fn.gh_wn_gauss_pr import ghosal_white_noise_gauss_prior
+from morie.fn.gh_wn_gauss_pr import ghosal_white_noise_gauss_prior
 
 
 def test_gh_wn_gauss_pr_basic():

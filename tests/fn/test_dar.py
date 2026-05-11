@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dar -- direct age-adjustment."""
+"""Tests for morie.fn.dar -- direct age-adjustment."""
 
 import numpy as np
 import pytest
-from moirais.fn.dar import direct_age_adjustment
+from morie.fn.dar import direct_age_adjustment
 
 
 class TestDAR:

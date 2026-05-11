@@ -1,6 +1,6 @@
 """Tests for Cramer-Rao bound."""
 import pytest
-from moirais.fn.cramr import cramer_rao_bound, cramr
+from morie.fn.cramr import cramer_rao_bound, cramr
 
 
 def test_basic():

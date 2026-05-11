@@ -1,7 +1,7 @@
 """Test clemb."""
 import numpy as np
 import pytest
-from moirais.fn.clemb import clemb
+from morie.fn.clemb import clemb
 
 
 def test_clemb_basic():

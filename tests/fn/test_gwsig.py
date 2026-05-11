@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gwsig -- Genome-wide significance."""
+"""Tests for morie.fn.gwsig -- Genome-wide significance."""
 
 import numpy as np
 import pytest
-from moirais.fn.gwsig import gwsig
+from morie.fn.gwsig import gwsig
 
 
 class TestGwsig:

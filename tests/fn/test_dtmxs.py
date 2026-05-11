@@ -1,7 +1,7 @@
 """Test dtmxs."""
 import numpy as np
 import pytest
-from moirais.fn.dtmxs import dtmxs
+from morie.fn.dtmxs import dtmxs
 
 
 def test_dtmxs_basic():

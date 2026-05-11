@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.prssc -- Polygenic risk score."""
+"""Tests for morie.fn.prssc -- Polygenic risk score."""
 
 import numpy as np
 import pytest
-from moirais.fn.prssc import prssc
+from morie.fn.prssc import prssc
 
 
 class TestPrssc:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.nash — Nash equilibrium."""
+"""Tests for morie.fn.nash — Nash equilibrium."""
 import numpy as np
-from moirais.fn.nash import nash_equilibrium
+from morie.fn.nash import nash_equilibrium
 
 
 class TestNash:

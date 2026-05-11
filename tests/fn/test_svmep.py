@@ -1,7 +1,7 @@
 """Tests for svmep.svr_epsilon_insensitive."""
 import numpy as np
 import pytest
-from moirais.fn.svmep import svr_epsilon_insensitive
+from morie.fn.svmep import svr_epsilon_insensitive
 
 
 def test_svmep_basic():

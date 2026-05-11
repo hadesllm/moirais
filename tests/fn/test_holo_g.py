@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.holo_g -- Geographic summary."""
+"""Tests for morie.fn.holo_g -- Geographic summary."""
 
 import numpy as np
 import pytest
-from moirais.fn.holo_g import geo_summary, holo_g
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.holo_g import geo_summary, holo_g
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHoloG:

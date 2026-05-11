@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrsdl -- Spatial Durbin Error model"""
+"""Tests for morie.fn.xrsdl -- Spatial Durbin Error model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrsdl import sdem_ml
+from morie.fn.xrsdl import sdem_ml
 
 
 class TestSdemMl:

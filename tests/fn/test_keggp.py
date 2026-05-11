@@ -1,7 +1,7 @@
 """Tests for keggp.kegg_pathway."""
 import numpy as np
 import pytest
-from moirais.fn.keggp import kegg_pathway
+from morie.fn.keggp import kegg_pathway
 
 
 def test_keggp_basic():

@@ -1,7 +1,7 @@
 """Tests for bleuS.bleu."""
 import numpy as np
 import pytest
-from moirais.fn.bleuS import bleu
+from morie.fn.bleuS import bleu
 
 
 def test_bleuS_basic():

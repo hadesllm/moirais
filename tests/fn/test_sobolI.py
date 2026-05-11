@@ -1,7 +1,7 @@
 """Tests for sobolI.sobol_indices."""
 import numpy as np
 import pytest
-from moirais.fn.sobolI import sobol_indices
+from morie.fn.sobolI import sobol_indices
 
 
 def test_sobolI_basic():

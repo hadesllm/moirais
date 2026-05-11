@@ -1,7 +1,7 @@
 """Test sawkn."""
 import numpy as np
 import pytest
-from moirais.fn.sawkn import sawkn
+from morie.fn.sawkn import sawkn
 
 
 def test_sawkn_basic():

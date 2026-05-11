@@ -1,6 +1,6 @@
 """Tests for bspwv.py - B-spline wavelet."""
 import numpy as np
-from moirais.fn.bspwv import bspline_wavelet, bspwv
+from morie.fn.bspwv import bspline_wavelet, bspwv
 
 
 def test_bspline_returns_result():

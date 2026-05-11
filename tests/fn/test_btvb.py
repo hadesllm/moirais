@@ -1,7 +1,7 @@
 """Tests for btvb.boot_var_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.btvb import boot_var_estimator
+from morie.fn.btvb import boot_var_estimator
 
 
 def test_btvb_basic():

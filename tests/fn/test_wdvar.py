@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.wdvar — Windowed variogram cloud."""
+"""Tests for morie.fn.wdvar — Windowed variogram cloud."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.wdvar import wdvar
+from morie.fn.wdvar import wdvar
 
 
 class TestWdvar:

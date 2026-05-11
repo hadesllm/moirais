@@ -1,7 +1,7 @@
 """Tests for berte.bert_encoder."""
 import numpy as np
 import pytest
-from moirais.fn.berte import bert_encoder
+from morie.fn.berte import bert_encoder
 
 
 def test_berte_basic():

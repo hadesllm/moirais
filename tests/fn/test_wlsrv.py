@@ -1,7 +1,7 @@
 """Test wlsrv."""
 import numpy as np
 import pytest
-from moirais.fn.wlsrv import wlsrv
+from morie.fn.wlsrv import wlsrv
 
 
 def test_wlsrv_basic():

@@ -1,7 +1,7 @@
 """Test rsemi."""
 import numpy as np
 import pytest
-from moirais.fn.rsemi import rsemi
+from morie.fn.rsemi import rsemi
 
 
 def test_rsemi_basic():

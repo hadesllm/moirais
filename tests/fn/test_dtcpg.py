@@ -1,7 +1,7 @@
 """Test dtcpg."""
 import numpy as np
 import pytest
-from moirais.fn.dtcpg import dtcpg
+from morie.fn.dtcpg import dtcpg
 
 
 def test_dtcpg_basic():

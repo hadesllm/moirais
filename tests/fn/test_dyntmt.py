@@ -1,7 +1,7 @@
 """Tests for dyntmt.dynamic_marginal_msm."""
 import numpy as np
 import pytest
-from moirais.fn.dyntmt import dynamic_marginal_msm
+from morie.fn.dyntmt import dynamic_marginal_msm
 
 
 def test_dyntmt_basic():

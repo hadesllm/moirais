@@ -1,7 +1,7 @@
 """Test lr_finder."""
 import numpy as np
-from moirais.fn.lrinf import lr_finder, lrinf
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lrinf import lr_finder, lrinf
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLrFinder:

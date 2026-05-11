@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgexp -- Exponential variogram model"""
+"""Tests for morie.fn.vgexp -- Exponential variogram model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgexp import vario_exponential
+from morie.fn.vgexp import vario_exponential
 
 
 class TestVarioExponential:

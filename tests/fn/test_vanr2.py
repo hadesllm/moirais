@@ -1,7 +1,7 @@
 """Tests for vanr2.vanraden_method2."""
 import numpy as np
 import pytest
-from moirais.fn.vanr2 import vanraden_method2
+from morie.fn.vanr2 import vanraden_method2
 
 
 def test_vanr2_basic():

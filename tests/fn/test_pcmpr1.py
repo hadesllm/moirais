@@ -1,7 +1,7 @@
 """Tests for pcmpr1.prediction_compression."""
 import numpy as np
 import pytest
-from moirais.fn.pcmpr1 import prediction_compression
+from morie.fn.pcmpr1 import prediction_compression
 
 
 def test_pcmpr1_basic():

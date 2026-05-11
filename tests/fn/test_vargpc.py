@@ -1,7 +1,7 @@
 """Tests for vargpc.variational_gp_classifier."""
 import numpy as np
 import pytest
-from moirais.fn.vargpc import variational_gp_classifier
+from morie.fn.vargpc import variational_gp_classifier
 
 
 def test_vargpc_basic():

@@ -1,7 +1,7 @@
 """Test mtbtw."""
 import numpy as np
 import pytest
-from moirais.fn.mtbtw import mtbtw
+from morie.fn.mtbtw import mtbtw
 
 
 def test_mtbtw_basic():

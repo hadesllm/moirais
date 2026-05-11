@@ -1,7 +1,7 @@
 """Tests for asmnvr.genome_assembly."""
 import numpy as np
 import pytest
-from moirais.fn.asmnvr import genome_assembly
+from morie.fn.asmnvr import genome_assembly
 
 
 def test_asmnvr_basic():

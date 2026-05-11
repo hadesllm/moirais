@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pca_ — PCA."""
+"""Tests for morie.fn.pca_ — PCA."""
 import numpy as np
 import pytest
-from moirais.fn.pca_ import pca_simple
+from morie.fn.pca_ import pca_simple
 
 
 class TestPCA:

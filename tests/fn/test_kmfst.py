@@ -1,7 +1,7 @@
 """Tests for kmfst.kamath_fasttext_subword."""
 import numpy as np
 import pytest
-from moirais.fn.kmfst import kamath_fasttext_subword
+from morie.fn.kmfst import kamath_fasttext_subword
 
 
 def test_kmfst_basic():

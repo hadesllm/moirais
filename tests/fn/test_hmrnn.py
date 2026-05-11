@@ -1,7 +1,7 @@
 """Tests for hmrnn.geron_recurrent_neuron."""
 import numpy as np
 import pytest
-from moirais.fn.hmrnn import geron_recurrent_neuron
+from morie.fn.hmrnn import geron_recurrent_neuron
 
 
 def test_hmrnn_basic():

@@ -1,7 +1,7 @@
 """He who has a why to live can bear almost any how. — Friedrich Nietzsche"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u21 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_21
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u21 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_21
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u21_basic():

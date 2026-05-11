@@ -1,7 +1,7 @@
 """Tests for bndnpr.bound_nonparam_regr."""
 import numpy as np
 import pytest
-from moirais.fn.bndnpr import bound_nonparam_regr
+from morie.fn.bndnpr import bound_nonparam_regr
 
 
 def test_bndnpr_basic():

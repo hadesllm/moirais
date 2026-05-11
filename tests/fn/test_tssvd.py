@@ -1,7 +1,7 @@
 """Test tssvd."""
 import numpy as np
 import pytest
-from moirais.fn.tssvd import tssvd
+from morie.fn.tssvd import tssvd
 
 
 def test_tssvd_basic():

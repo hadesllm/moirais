@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.osns1 — Rosenbaum sensitivity bounds."""
+"""Tests for morie.fn.osns1 — Rosenbaum sensitivity bounds."""
 
-from moirais.fn.osns1 import otis_sensitivity
+from morie.fn.osns1 import otis_sensitivity
 
 
 class TestOtisSensitivity:

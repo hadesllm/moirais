@@ -1,7 +1,7 @@
 """Tests for grclp.geron_clip_contrastive_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grclp import geron_clip_contrastive_loss
+from morie.fn.grclp import geron_clip_contrastive_loss
 
 
 def test_grclp_basic():

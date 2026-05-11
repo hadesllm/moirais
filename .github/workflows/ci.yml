@@ -8,7 +8,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "src/moirais/**"
+      - "src/morie/**"
       - "tests/**"
       - "r-package/**"
       - "pyproject.toml"
@@ -69,12 +69,12 @@ jobs:
       # later library() / Rscript calls find them.
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          working-directory: r-package/moirais
+          working-directory: r-package/morie
           extra-packages: any::testthat any::survey any::DBI any::RSQLite any::jsonlite
           needs: check
 
-      - name: Install moirais
-        run: R CMD INSTALL r-package/moirais
+      - name: Install morie
+        run: R CMD INSTALL r-package/morie
 
       - name: Test
-        run: Rscript -e "library(moirais); testthat::test_dir('r-package/moirais/tests/testthat')"
+        run: Rscript -e "library(morie); testthat::test_dir('r-package/morie/tests/testthat')"

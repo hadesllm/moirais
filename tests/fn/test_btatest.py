@@ -1,7 +1,7 @@
 """Tests for btatest.boot_anderson_test."""
 import numpy as np
 import pytest
-from moirais.fn.btatest import boot_anderson_test
+from morie.fn.btatest import boot_anderson_test
 
 
 def test_btatest_basic():

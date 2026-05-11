@@ -1,7 +1,7 @@
 """Tests for kmqfrm.kamath_q_former."""
 import numpy as np
 import pytest
-from moirais.fn.kmqfrm import kamath_q_former
+from morie.fn.kmqfrm import kamath_q_former
 
 
 def test_kmqfrm_basic():

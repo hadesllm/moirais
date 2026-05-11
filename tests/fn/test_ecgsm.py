@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ecgsm -- simulated 12-lead ECG."""
+"""Tests for morie.fn.ecgsm -- simulated 12-lead ECG."""
 
 import numpy as np
 
-from moirais.fn.ecgsm import ecgsm
+from morie.fn.ecgsm import ecgsm
 
 
 class TestEcgSm:

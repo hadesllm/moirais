@@ -1,7 +1,7 @@
 """Tests for tmlcmp.tmle_competing_risks."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcmp import tmle_competing_risks
+from morie.fn.tmlcmp import tmle_competing_risks
 
 
 def test_tmlcmp_basic():

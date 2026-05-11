@@ -1,7 +1,7 @@
 """Tests for evpdfn.evt_pickands_dep_fn."""
 import numpy as np
 import pytest
-from moirais.fn.evpdfn import evt_pickands_dep_fn
+from morie.fn.evpdfn import evt_pickands_dep_fn
 
 
 def test_evpdfn_basic():

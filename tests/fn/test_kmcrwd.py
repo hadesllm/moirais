@@ -1,7 +1,7 @@
 """Tests for kmcrwd.kamath_crowspairs_bias."""
 import numpy as np
 import pytest
-from moirais.fn.kmcrwd import kamath_crowspairs_bias
+from morie.fn.kmcrwd import kamath_crowspairs_bias
 
 
 def test_kmcrwd_basic():

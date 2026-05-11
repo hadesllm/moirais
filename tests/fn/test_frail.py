@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.frail — frailty model."""
+"""Tests for morie.fn.frail — frailty model."""
 import numpy as np
 import pytest
-from moirais.fn.frail import frailty_model
+from morie.fn.frail import frailty_model
 
 
 class TestFrailtyModel:

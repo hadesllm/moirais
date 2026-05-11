@@ -1,7 +1,7 @@
 """Tests for wsmstn.wasserman_sufficient."""
 import numpy as np
 import pytest
-from moirais.fn.wsmstn import wasserman_sufficient
+from morie.fn.wsmstn import wasserman_sufficient
 
 
 def test_wsmstn_basic():

@@ -1,6 +1,6 @@
 """Tests for ordered optimal classification."""
 import numpy as np
-from moirais.fn.orooc import orooc
+from morie.fn.orooc import orooc
 
 
 def test_orooc_smoke():
@@ -13,7 +13,7 @@ def test_orooc_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.orooc import cheatsheet
+    from morie.fn.orooc import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

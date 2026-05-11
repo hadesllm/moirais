@@ -1,7 +1,7 @@
 """Tests for km043.kamath_ch3_prompt_softmax_label."""
 import numpy as np
 import pytest
-from moirais.fn.km043 import kamath_ch3_prompt_softmax_label
+from morie.fn.km043 import kamath_ch3_prompt_softmax_label
 
 
 def test_km043_basic():

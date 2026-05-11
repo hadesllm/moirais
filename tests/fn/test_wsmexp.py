@@ -1,7 +1,7 @@
 """Tests for wsmexp.wasserman_expectation."""
 import numpy as np
 import pytest
-from moirais.fn.wsmexp import wasserman_expectation
+from morie.fn.wsmexp import wasserman_expectation
 
 
 def test_wsmexp_basic():

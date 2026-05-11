@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptgfn -- Nearest-neighbor G-function"""
+"""Tests for morie.fn.ptgfn -- Nearest-neighbor G-function"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptgfn import g_function
+from morie.fn.ptgfn import g_function
 
 
 class TestGFunction:

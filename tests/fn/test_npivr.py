@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.npivr — Nonparametric instrumental variables."""
+"""Tests for morie.fn.npivr — Nonparametric instrumental variables."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.npivr import npivr
+from morie.fn.npivr import npivr
 
 
 @pytest.fixture()

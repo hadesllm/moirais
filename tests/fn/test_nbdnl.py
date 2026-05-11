@@ -1,7 +1,7 @@
 """Test nbdnl."""
 import numpy as np
 import pytest
-from moirais.fn.nbdnl import nbdnl
+from morie.fn.nbdnl import nbdnl
 
 
 def test_nbdnl_basic():

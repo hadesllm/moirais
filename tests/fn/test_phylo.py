@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.phylo -- phylogenetic diversity."""
+"""Tests for morie.fn.phylo -- phylogenetic diversity."""
 
 import numpy as np
 import pytest
-from moirais.fn.phylo import phylogenetic_diversity
+from morie.fn.phylo import phylogenetic_diversity
 
 
 class TestPhyloDiversity:

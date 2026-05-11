@@ -1,7 +1,7 @@
 """Tests for tqest.turboquant_estimate_scores."""
 import numpy as np
 import pytest
-from moirais.fn.tqest import turboquant_estimate_scores
+from morie.fn.tqest import turboquant_estimate_scores
 
 
 def test_tqest_basic():

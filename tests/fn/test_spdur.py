@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.spdur — spatial Durbin model."""
+"""Tests for morie.fn.spdur — spatial Durbin model."""
 import numpy as np
-from moirais.fn.spdur import spatial_durbin
+from morie.fn.spdur import spatial_durbin
 
 
 class TestSpatialDurbin:

@@ -1,7 +1,7 @@
 """Tests for cvxsoc.boyd_socp."""
 import numpy as np
 import pytest
-from moirais.fn.cvxsoc import boyd_socp
+from morie.fn.cvxsoc import boyd_socp
 
 
 def test_cvxsoc_basic():

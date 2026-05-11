@@ -1,7 +1,7 @@
 """Tests for aitsbp.aitchison_sbp_basis."""
 import numpy as np
 import pytest
-from moirais.fn.aitsbp import aitchison_sbp_basis
+from morie.fn.aitsbp import aitchison_sbp_basis
 
 
 def test_aitsbp_basic():

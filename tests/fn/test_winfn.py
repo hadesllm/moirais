@@ -1,7 +1,7 @@
 """Test window_functions."""
 import numpy as np
-from moirais.fn.winfn import window_functions, winfn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.winfn import window_functions, winfn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWindowFunctions:

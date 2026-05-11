@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rf — F-distribution random variates."""
+"""Tests for morie.fn.rf — F-distribution random variates."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rf import rf_dist, rf
+from morie.fn.rf import rf_dist, rf
 
 
 class TestRf:

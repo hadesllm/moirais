@@ -1,7 +1,7 @@
 """Tests for eigen_decompose."""
 import numpy as np
 import pytest
-from moirais.fn.eigdp import eigen_decompose, eigdp
+from morie.fn.eigdp import eigen_decompose, eigdp
 
 
 def test_identity():

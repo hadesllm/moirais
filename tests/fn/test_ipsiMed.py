@@ -1,7 +1,7 @@
 """Tests for ipsiMed.interventional_psi."""
 import numpy as np
 import pytest
-from moirais.fn.ipsiMed import interventional_psi
+from morie.fn.ipsiMed import interventional_psi
 
 
 def test_ipsiMed_basic():

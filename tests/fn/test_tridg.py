@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tridg -- Thomas algorithm."""
+"""Tests for morie.fn.tridg -- Thomas algorithm."""
 
 import numpy as np
-from moirais.fn.tridg import thomas_solve, tridg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tridg import thomas_solve, tridg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTridg:

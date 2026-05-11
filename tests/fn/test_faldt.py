@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.faldt — fall time detection."""
+"""Tests for morie.fn.faldt — fall time detection."""
 import numpy as np
 import pytest
 
-from moirais.fn.faldt import fall_time_detect, faldt
+from morie.fn.faldt import fall_time_detect, faldt
 
 
 def test_ramp_down():

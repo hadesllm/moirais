@@ -1,6 +1,6 @@
 """Tests for spatial ACF."""
 import numpy as np
-from moirais.fn.sgacf import sgacf
+from morie.fn.sgacf import sgacf
 
 
 def test_sgacf_smoke():
@@ -15,7 +15,7 @@ def test_sgacf_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgacf import cheatsheet
+    from morie.fn.sgacf import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

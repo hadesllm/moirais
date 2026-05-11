@@ -1,7 +1,7 @@
 """Test utmzon."""
 import numpy as np
 import pytest
-from moirais.fn.utmzon import utmzon
+from morie.fn.utmzon import utmzon
 
 
 def test_utmzon_basic():

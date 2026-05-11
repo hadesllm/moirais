@@ -1,7 +1,7 @@
 """Tests for finalsz.final_epidemic_size."""
 import numpy as np
 import pytest
-from moirais.fn.finalsz import final_epidemic_size
+from morie.fn.finalsz import final_epidemic_size
 
 
 def test_finalsz_basic():

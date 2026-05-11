@@ -1,7 +1,7 @@
 """Tests for lassj.lasso_objective."""
 import numpy as np
 import pytest
-from moirais.fn.lassj import lasso_objective
+from morie.fn.lassj import lasso_objective
 
 
 def test_lassj_basic():

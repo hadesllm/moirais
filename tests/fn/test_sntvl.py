@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sntvl — sentence volatility."""
+"""Tests for morie.fn.sntvl — sentence volatility."""
 
 import pandas as pd
-from moirais.fn.sntvl import sentence_volatility, sntvl
+from morie.fn.sntvl import sentence_volatility, sntvl
 
 
 class TestSentenceVolatility:

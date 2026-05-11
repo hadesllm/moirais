@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.nuc — nucleotide frequency."""
+"""Tests for morie.fn.nuc — nucleotide frequency."""
 import pytest
-from moirais.fn.nuc import nucleotide_freq
+from morie.fn.nuc import nucleotide_freq
 
 
 class TestNucleotideFreq:

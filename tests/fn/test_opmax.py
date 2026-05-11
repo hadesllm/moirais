@@ -1,7 +1,7 @@
 """Test opmax."""
 import numpy as np
 import pytest
-from moirais.fn.opmax import opmax
+from morie.fn.opmax import opmax
 
 
 def test_opmax_basic():

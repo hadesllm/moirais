@@ -1,7 +1,7 @@
 """Tests for diophs.diophantine."""
 import numpy as np
 import pytest
-from moirais.fn.diophs import diophantine
+from morie.fn.diophs import diophantine
 
 
 def test_diophs_basic():

@@ -1,6 +1,6 @@
 """Test holog."""
 import pytest
-from moirais.fn.holog import holographic_entropy
+from morie.fn.holog import holographic_entropy
 
 
 def test_holog_basic():

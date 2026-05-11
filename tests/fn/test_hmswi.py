@@ -1,7 +1,7 @@
 """Tests for hmswi.geron_swish."""
 import numpy as np
 import pytest
-from moirais.fn.hmswi import geron_swish
+from morie.fn.hmswi import geron_swish
 
 
 def test_hmswi_basic():

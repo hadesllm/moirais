@@ -1,7 +1,7 @@
 """Tests for awltrn.augmented_owl."""
 import numpy as np
 import pytest
-from moirais.fn.awltrn import augmented_owl
+from morie.fn.awltrn import augmented_owl
 
 
 def test_awltrn_basic():

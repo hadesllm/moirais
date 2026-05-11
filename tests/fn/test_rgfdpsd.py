@@ -1,7 +1,7 @@
 """Tests for rgfdpsd.rangayyan_fd_psd_slope."""
 import numpy as np
 import pytest
-from moirais.fn.rgfdpsd import rangayyan_fd_psd_slope
+from morie.fn.rgfdpsd import rangayyan_fd_psd_slope
 
 
 def test_rgfdpsd_basic():

@@ -1,7 +1,7 @@
 """Test wqlvs."""
 import numpy as np
 import pytest
-from moirais.fn.wqlvs import wqlvs
+from morie.fn.wqlvs import wqlvs
 
 
 def test_wqlvs_basic():

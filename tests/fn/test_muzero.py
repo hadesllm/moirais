@@ -1,7 +1,7 @@
 """Tests for muzero.muzero."""
 import numpy as np
 import pytest
-from moirais.fn.muzero import muzero
+from morie.fn.muzero import muzero
 
 
 def test_muzero_basic():

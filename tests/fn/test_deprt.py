@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.deprt -- dependency ratio."""
+"""Tests for morie.fn.deprt -- dependency ratio."""
 
 import pytest
-from moirais.fn.deprt import dependency_ratio
+from morie.fn.deprt import dependency_ratio
 
 
 class TestDependencyRatio:

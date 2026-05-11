@@ -1,7 +1,7 @@
 """Test opabc."""
 import numpy as np
 import pytest
-from moirais.fn.opabc import opabc
+from morie.fn.opabc import opabc
 
 
 def test_opabc_basic():

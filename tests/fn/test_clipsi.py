@@ -1,7 +1,7 @@
 """Tests for clipsi.clip_similarity."""
 import numpy as np
 import pytest
-from moirais.fn.clipsi import clip_similarity
+from morie.fn.clipsi import clip_similarity
 
 
 def test_clipsi_basic():

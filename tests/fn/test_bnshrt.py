@@ -1,7 +1,7 @@
 """Tests for bnshrt.bound_short_panel."""
 import numpy as np
 import pytest
-from moirais.fn.bnshrt import bound_short_panel
+from morie.fn.bnshrt import bound_short_panel
 
 
 def test_bnshrt_basic():

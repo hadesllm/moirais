@@ -1,7 +1,7 @@
 """Test integrate_signal (intgs)."""
 import numpy as np
-from moirais.fn.intgs import integrate_signal, intgs
-from moirais.fn._containers import SignalResult
+from morie.fn.intgs import integrate_signal, intgs
+from morie.fn._containers import SignalResult
 
 
 class TestIntegrateSignal:

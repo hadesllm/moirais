@@ -1,7 +1,7 @@
 """Tests for caustmle.causal_tmle_targeted."""
 import numpy as np
 import pytest
-from moirais.fn.caustmle import causal_tmle_targeted
+from morie.fn.caustmle import causal_tmle_targeted
 
 
 def test_caustmle_basic():

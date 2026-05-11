@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dpool -- jackknife delete-d."""
+"""Tests for morie.fn.dpool -- jackknife delete-d."""
 
 import numpy as np
-from moirais.fn.dpool import jackknife_delete_d, dpool
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dpool import jackknife_delete_d, dpool
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDpool:

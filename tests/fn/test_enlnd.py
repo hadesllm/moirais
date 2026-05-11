@@ -1,7 +1,7 @@
 """Test enlnd."""
 import numpy as np
 import pytest
-from moirais.fn.enlnd import enlnd
+from morie.fn.enlnd import enlnd
 
 
 def test_enlnd_basic():

@@ -1,7 +1,7 @@
 """Tests for rgkneejt.rangayyan_knee_joint_sound."""
 import numpy as np
 import pytest
-from moirais.fn.rgkneejt import rangayyan_knee_joint_sound
+from morie.fn.rgkneejt import rangayyan_knee_joint_sound
 
 
 def test_rgkneejt_basic():

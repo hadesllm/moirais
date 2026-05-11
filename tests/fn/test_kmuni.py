@@ -1,7 +1,7 @@
 """Tests for kmuni.kamath_unigram_lm_tokenizer."""
 import numpy as np
 import pytest
-from moirais.fn.kmuni import kamath_unigram_lm_tokenizer
+from morie.fn.kmuni import kamath_unigram_lm_tokenizer
 
 
 def test_kmuni_basic():

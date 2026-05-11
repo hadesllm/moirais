@@ -1,7 +1,7 @@
 """Tests for plcmt.rank_placements."""
 import numpy as np
 import pytest
-from moirais.fn.plcmt import rank_placements
+from morie.fn.plcmt import rank_placements
 
 
 def test_plcmt_basic():

@@ -1,7 +1,7 @@
 """Tests for motfsr.motif_meme."""
 import numpy as np
 import pytest
-from moirais.fn.motfsr import motif_meme
+from morie.fn.motfsr import motif_meme
 
 
 def test_motfsr_basic():

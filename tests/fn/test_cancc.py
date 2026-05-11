@@ -1,7 +1,7 @@
 """Test cancc."""
 import numpy as np
 import pytest
-from moirais.fn.cancc import canonical_correlation
+from morie.fn.cancc import canonical_correlation
 
 
 def test_cancc_basic():

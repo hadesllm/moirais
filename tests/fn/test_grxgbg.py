@@ -1,7 +1,7 @@
 """Tests for grxgbg.geron_xgboost_gain."""
 import numpy as np
 import pytest
-from moirais.fn.grxgbg import geron_xgboost_gain
+from morie.fn.grxgbg import geron_xgboost_gain
 
 
 def test_grxgbg_basic():

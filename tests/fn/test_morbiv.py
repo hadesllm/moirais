@@ -1,7 +1,7 @@
 """Tests for morbiv.bivariate_morans_i."""
 import numpy as np
 import pytest
-from moirais.fn.morbiv import bivariate_morans_i
+from morie.fn.morbiv import bivariate_morans_i
 
 
 def test_morbiv_basic():

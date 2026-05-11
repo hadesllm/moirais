@@ -1,7 +1,7 @@
 """Tests for grpre.geron_precision."""
 import numpy as np
 import pytest
-from moirais.fn.grpre import geron_precision
+from morie.fn.grpre import geron_precision
 
 
 def test_grpre_basic():

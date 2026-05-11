@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svcyc -- Condorcet cycle detection"""
+"""Tests for morie.fn.svcyc -- Condorcet cycle detection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svcyc import condorcet_cycle
+from morie.fn.svcyc import condorcet_cycle
 
 
 class TestCondorcetCycle:

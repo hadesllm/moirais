@@ -1,7 +1,7 @@
 """Tests for kmicl.kamath_in_context_learning_prob."""
 import numpy as np
 import pytest
-from moirais.fn.kmicl import kamath_in_context_learning_prob
+from morie.fn.kmicl import kamath_in_context_learning_prob
 
 
 def test_kmicl_basic():

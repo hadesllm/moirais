@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.migrt -- net migration rate."""
+"""Tests for morie.fn.migrt -- net migration rate."""
 
 import pytest
-from moirais.fn.migrt import net_migration_rate
+from morie.fn.migrt import net_migration_rate
 
 
 class TestNetMigration:

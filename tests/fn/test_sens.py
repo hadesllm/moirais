@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sens — Sensitivity."""
+"""Tests for morie.fn.sens — Sensitivity."""
 import numpy as np
 
-from moirais.fn.sens import sensitivity_dx, sens
+from morie.fn.sens import sensitivity_dx, sens
 
 
 def test_perfect_sensitivity():

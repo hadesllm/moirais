@@ -1,6 +1,6 @@
 """Test stdea."""
 import numpy as np
-from moirais.fn.stdea import st_diff_equation
+from morie.fn.stdea import st_diff_equation
 
 
 def test_stdea_basic():

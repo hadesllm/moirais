@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.svord."""
+"""Tests for morie.fn.svord."""
 
 import numpy as np
 import pytest
-from moirais.fn.svord import svord
+from morie.fn.svord import svord
 
 
 class TestSvord:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrjcn -- Join count statistic"""
+"""Tests for morie.fn.xrjcn -- Join count statistic"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrjcn import join_count
+from morie.fn.xrjcn import join_count
 
 
 class TestJoinCount:

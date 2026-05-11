@@ -1,7 +1,7 @@
 """Tests for tmlmed.tmle_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.tmlmed import tmle_mediation
+from morie.fn.tmlmed import tmle_mediation
 
 
 def test_tmlmed_basic():

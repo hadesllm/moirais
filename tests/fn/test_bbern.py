@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bbern -- Bayesian Bernoulli model."""
+"""Tests for morie.fn.bbern -- Bayesian Bernoulli model."""
 
 import numpy as np
-from moirais.fn.bbern import bayesian_bernoulli
+from morie.fn.bbern import bayesian_bernoulli
 
 
 def test_returns_dict():

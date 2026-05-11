@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.robust — Random Forest robustness evaluation."""
+"""Tests for morie.fn.robust — Random Forest robustness evaluation."""
 
 import pytest
 import pandas as pd
 from sklearn.datasets import make_classification
-from moirais.fn.robust import eval_robustness as robust
+from morie.fn.robust import eval_robustness as robust
 
 
 @pytest.fixture()

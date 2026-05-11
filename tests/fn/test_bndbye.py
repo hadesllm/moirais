@@ -1,7 +1,7 @@
 """Tests for bndbye.bound_bayes_credible."""
 import numpy as np
 import pytest
-from moirais.fn.bndbye import bound_bayes_credible
+from morie.fn.bndbye import bound_bayes_credible
 
 
 def test_bndbye_basic():

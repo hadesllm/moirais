@@ -1,7 +1,7 @@
 """Test dknst."""
 import numpy as np
 import pytest
-from moirais.fn.dknst import dknst
+from morie.fn.dknst import dknst
 
 
 def test_dknst_basic():

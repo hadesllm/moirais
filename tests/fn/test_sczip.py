@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sczip."""
+"""Tests for morie.fn.sczip."""
 import numpy as np
 import pytest
-from moirais.fn.sczip import sczip
+from morie.fn.sczip import sczip
 
 
 class TestSczip:

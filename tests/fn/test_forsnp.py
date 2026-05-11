@@ -1,7 +1,7 @@
 """Tests for forsnp.forensic_lr."""
 import numpy as np
 import pytest
-from moirais.fn.forsnp import forensic_lr
+from morie.fn.forsnp import forensic_lr
 
 
 def test_forsnp_basic():

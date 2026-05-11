@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gnsjac."""
+"""Tests for morie.fn.gnsjac."""
 import numpy as np
 import pytest
-from moirais.fn.gnsjac import gnsjac
+from morie.fn.gnsjac import gnsjac
 
 
 class TestGnsjac:

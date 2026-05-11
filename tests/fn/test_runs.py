@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.runs -- Wald-Wolfowitz runs test."""
+"""Tests for morie.fn.runs -- Wald-Wolfowitz runs test."""
 
 import numpy as np
 import pytest
-from moirais.fn.runs import runs_test
-from moirais.fn._containers import TestResult
+from morie.fn.runs import runs_test
+from morie.fn._containers import TestResult
 
 
 class TestRuns:

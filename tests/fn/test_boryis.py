@@ -1,7 +1,7 @@
 """Tests for boryis.borusyak_jaravel_spiess."""
 import numpy as np
 import pytest
-from moirais.fn.boryis import borusyak_jaravel_spiess
+from morie.fn.boryis import borusyak_jaravel_spiess
 
 
 def test_boryis_basic():

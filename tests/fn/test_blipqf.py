@@ -1,7 +1,7 @@
 """Tests for blipqf.blip_qformer."""
 import numpy as np
 import pytest
-from moirais.fn.blipqf import blip_qformer
+from morie.fn.blipqf import blip_qformer
 
 
 def test_blipqf_basic():

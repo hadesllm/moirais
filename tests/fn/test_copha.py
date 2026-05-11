@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.copha -- Cophenetic correlation."""
+"""Tests for morie.fn.copha -- Cophenetic correlation."""
 
 import numpy as np
-from moirais.fn.copha import cophenetic_correlation, copha
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.copha import cophenetic_correlation, copha
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCopheneticCorrelation:

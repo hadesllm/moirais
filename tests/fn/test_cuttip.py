@@ -1,7 +1,7 @@
 """Tests for cuttip.cutting_plane."""
 import numpy as np
 import pytest
-from moirais.fn.cuttip import cutting_plane
+from morie.fn.cuttip import cutting_plane
 
 
 def test_cuttip_basic():

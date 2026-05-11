@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vtblk."""
+"""Tests for morie.fn.vtblk."""
 
 import numpy as np
 import pytest
-from moirais.fn.vtblk import vtblk
+from morie.fn.vtblk import vtblk
 
 
 class TestVtblk:

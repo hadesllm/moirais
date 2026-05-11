@@ -1,7 +1,7 @@
 """Tests for hamilq.hamilton_q_changepoint."""
 import numpy as np
 import pytest
-from moirais.fn.hamilq import hamilton_q_changepoint
+from morie.fn.hamilq import hamilton_q_changepoint
 
 
 def test_hamilq_basic():

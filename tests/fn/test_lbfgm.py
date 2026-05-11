@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.lbfgm -- L-BFGS optimizer."""
+"""Tests for morie.fn.lbfgm -- L-BFGS optimizer."""
 
 import numpy as np
-from moirais.fn.lbfgm import lbfgs_optimize, lbfgm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lbfgm import lbfgs_optimize, lbfgm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLbfgm:

@@ -1,7 +1,7 @@
 """Tests for wnomp.wnominate_probability."""
 import numpy as np
 import pytest
-from moirais.fn.wnomp import wnominate_probability
+from morie.fn.wnomp import wnominate_probability
 
 
 def test_wnomp_basic():

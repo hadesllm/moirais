@@ -1,7 +1,7 @@
 """Tests for miestn.mi_neural_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.miestn import mi_neural_estimator
+from morie.fn.miestn import mi_neural_estimator
 
 
 def test_miestn_basic():

@@ -1,7 +1,7 @@
 """Test vmeff."""
 import numpy as np
 import pytest
-from moirais.fn.vmeff import vmeff
+from morie.fn.vmeff import vmeff
 
 
 def test_vmeff_basic():

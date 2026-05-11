@@ -1,7 +1,7 @@
 """Tests for causdmliv.causal_dml_iv."""
 import numpy as np
 import pytest
-from moirais.fn.causdmliv import causal_dml_iv
+from morie.fn.causdmliv import causal_dml_iv
 
 
 def test_causdmliv_basic():

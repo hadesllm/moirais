@@ -1,7 +1,7 @@
 """Tests for hmself.geron_self_supervised."""
 import numpy as np
 import pytest
-from moirais.fn.hmself import geron_self_supervised
+from morie.fn.hmself import geron_self_supervised
 
 
 def test_hmself_basic():

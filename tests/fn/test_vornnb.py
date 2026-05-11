@@ -1,7 +1,7 @@
 """Test vornnb."""
 import numpy as np
 import pytest
-from moirais.fn.vornnb import vornnb
+from morie.fn.vornnb import vornnb
 
 
 def test_vornnb_basic():

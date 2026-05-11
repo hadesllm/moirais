@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bpntr -- vibranium damping."""
+"""Tests for morie.fn.bpntr -- vibranium damping."""
 
 import numpy as np
-from moirais.fn.bpntr import vibranium_damping, bpntr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bpntr import vibranium_damping, bpntr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBpntr:

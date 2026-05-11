@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgcov -- Covariogram function"""
+"""Tests for morie.fn.vgcov -- Covariogram function"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgcov import covariogram
+from morie.fn.vgcov import covariogram
 
 
 class TestCovariogram:

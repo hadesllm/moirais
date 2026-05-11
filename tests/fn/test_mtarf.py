@@ -1,7 +1,7 @@
 """Test mtarf."""
 import numpy as np
 import pytest
-from moirais.fn.mtarf import mtarf
+from morie.fn.mtarf import mtarf
 
 
 def test_mtarf_basic():

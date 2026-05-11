@@ -1,7 +1,7 @@
 """Test hyhdc."""
 import numpy as np
 import pytest
-from moirais.fn.hyhdc import hyhdc
+from morie.fn.hyhdc import hyhdc
 
 
 def test_hyhdc_basic():

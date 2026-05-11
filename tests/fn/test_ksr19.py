@@ -1,7 +1,7 @@
 """Tests for ksr19.kosorok_cox_partial_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.ksr19 import kosorok_cox_partial_likelihood
+from morie.fn.ksr19 import kosorok_cox_partial_likelihood
 
 
 def test_ksr19_basic():

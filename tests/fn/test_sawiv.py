@@ -1,7 +1,7 @@
 """Test sawiv."""
 import numpy as np
 import pytest
-from moirais.fn.sawiv import sawiv
+from morie.fn.sawiv import sawiv
 
 
 def test_sawiv_basic():

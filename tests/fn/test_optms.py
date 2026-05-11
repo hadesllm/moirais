@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.optms -- Wasserstein optimal transport."""
+"""Tests for morie.fn.optms -- Wasserstein optimal transport."""
 
 import numpy as np
-from moirais.fn.optms import optimal_transport, optms
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.optms import optimal_transport, optms
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOptms:

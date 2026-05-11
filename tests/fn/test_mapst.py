@@ -1,7 +1,7 @@
 """Tests for map_estimate."""
 import numpy as np
 import pytest
-from moirais.fn.mapst import map_estimate, mapst
+from morie.fn.mapst import map_estimate, mapst
 
 
 def test_shrinkage():

@@ -1,7 +1,7 @@
 """Test higuchi_fd."""
 import numpy as np
-from moirais.fn.higfd import higuchi_fd, higfd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.higfd import higuchi_fd, higfd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHiguchiFD:

@@ -1,7 +1,7 @@
 """Tests for hmrfc.geron_random_forest."""
 import numpy as np
 import pytest
-from moirais.fn.hmrfc import geron_random_forest
+from morie.fn.hmrfc import geron_random_forest
 
 
 def test_hmrfc_basic():

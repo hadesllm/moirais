@@ -1,7 +1,7 @@
 """Tests for hmkmlim.geron_kmeans_limits."""
 import numpy as np
 import pytest
-from moirais.fn.hmkmlim import geron_kmeans_limits
+from morie.fn.hmkmlim import geron_kmeans_limits
 
 
 def test_hmkmlim_basic():

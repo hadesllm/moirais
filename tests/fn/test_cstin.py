@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cstin — custody incident rate."""
+"""Tests for morie.fn.cstin — custody incident rate."""
 
 import pytest
-from moirais.fn.cstin import custody_incident_rate
+from morie.fn.cstin import custody_incident_rate
 
 
 class TestCustodyIncidentRate:

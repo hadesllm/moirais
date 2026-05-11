@@ -1,6 +1,6 @@
 """Tests for dunnett_test."""
 import numpy as np, pytest
-from moirais.fn.dnntt import dunnett_test
+from morie.fn.dnntt import dunnett_test
 
 class TestDunnett:
     def test_basic(self):

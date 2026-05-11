@@ -1,7 +1,7 @@
 """Tests for adfTst.adf_test."""
 import numpy as np
 import pytest
-from moirais.fn.adfTst import adf_test
+from morie.fn.adfTst import adf_test
 
 
 def test_adfTst_basic():

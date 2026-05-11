@@ -1,6 +1,6 @@
 """Tests for kriging cross-validation."""
 import numpy as np
-from moirais.fn.sgkvl import sgkvl
+from morie.fn.sgkvl import sgkvl
 
 
 def test_sgkvl_smoke():
@@ -15,7 +15,7 @@ def test_sgkvl_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgkvl import cheatsheet
+    from morie.fn.sgkvl import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Test abvoc."""
 import numpy as np
 import pytest
-from moirais.fn.abvoc import abvoc
+from morie.fn.abvoc import abvoc
 
 
 def test_abvoc_basic():

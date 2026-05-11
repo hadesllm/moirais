@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.semhet."""
+"""Tests for morie.fn.semhet."""
 import numpy as np
 import pytest
-from moirais.fn.semhet import semhet
+from morie.fn.semhet import semhet
 
 
 class TestSemhet:

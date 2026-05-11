@@ -1,6 +1,6 @@
 """Tests for cheby (Chebyshev distance)."""
 import numpy as np
-from moirais.fn.cheby import chebyshev_dist
+from morie.fn.cheby import chebyshev_dist
 
 
 def test_chebyshev_basic():

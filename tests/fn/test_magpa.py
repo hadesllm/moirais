@@ -1,7 +1,7 @@
 """Tests for magpa.ma_glmm_ipd_proportion."""
 import numpy as np
 import pytest
-from moirais.fn.magpa import ma_glmm_ipd_proportion
+from morie.fn.magpa import ma_glmm_ipd_proportion
 
 
 def test_magpa_basic():

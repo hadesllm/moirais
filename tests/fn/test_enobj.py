@@ -1,7 +1,7 @@
 """Tests for enobj.elastic_net_objective."""
 import numpy as np
 import pytest
-from moirais.fn.enobj import elastic_net_objective
+from morie.fn.enobj import elastic_net_objective
 
 
 def test_enobj_basic():

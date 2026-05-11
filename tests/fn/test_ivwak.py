@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ivwak — instrumental variable weak test."""
+"""Tests for morie.fn.ivwak — instrumental variable weak test."""
 import numpy as np
 import pytest
-from moirais.fn.ivwak import iv_weak_test
+from morie.fn.ivwak import iv_weak_test
 
 
 class TestIVWeakTest:

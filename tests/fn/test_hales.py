@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hales -- health-adjusted life expectancy."""
+"""Tests for morie.fn.hales -- health-adjusted life expectancy."""
 
 import numpy as np
 import pytest
-from moirais.fn.hales import health_adjusted_life_expectancy
+from morie.fn.hales import health_adjusted_life_expectancy
 
 
 class TestHALE:

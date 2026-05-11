@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.amscl — Aldrich-McKelvey scaling."""
+"""Tests for morie.fn.amscl — Aldrich-McKelvey scaling."""
 import numpy as np
 import pytest
 
-from moirais.fn.amscl import amscl
+from morie.fn.amscl import amscl
 
 
 def test_amscl_smoke():
@@ -13,7 +13,7 @@ def test_amscl_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.amscl import cheatsheet
+    from morie.fn.amscl import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for aitlrm.compositional_lrmean."""
 import numpy as np
 import pytest
-from moirais.fn.aitlrm import compositional_lrmean
+from morie.fn.aitlrm import compositional_lrmean
 
 
 def test_aitlrm_basic():

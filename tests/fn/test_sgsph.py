@@ -1,6 +1,6 @@
 """Tests for spherical variogram."""
 import numpy as np
-from moirais.fn.sgsph import sgsph
+from morie.fn.sgsph import sgsph
 
 
 def test_sgsph_smoke():

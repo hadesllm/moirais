@@ -1,4 +1,4 @@
-"""Tests for moirais.dataset — dataset-agnostic profiling and analysis engine."""
+"""Tests for morie.dataset — dataset-agnostic profiling and analysis engine."""
 
 import tempfile
 from pathlib import Path
@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.dataset import (
+from morie.dataset import (
     ColumnProfile,
     DatasetProfile,
     MeasurementLevel,

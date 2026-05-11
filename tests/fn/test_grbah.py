@@ -1,7 +1,7 @@
 """Tests for grbah.geron_bahdanau_attention."""
 import numpy as np
 import pytest
-from moirais.fn.grbah import geron_bahdanau_attention
+from morie.fn.grbah import geron_bahdanau_attention
 
 
 def test_grbah_basic():

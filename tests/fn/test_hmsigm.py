@@ -1,7 +1,7 @@
 """Tests for hmsigm.geron_sigmoid."""
 import numpy as np
 import pytest
-from moirais.fn.hmsigm import geron_sigmoid
+from morie.fn.hmsigm import geron_sigmoid
 
 
 def test_hmsigm_basic():

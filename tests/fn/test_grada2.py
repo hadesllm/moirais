@@ -1,7 +1,7 @@
 """Tests for grada2.geron_adagrad_update."""
 import numpy as np
 import pytest
-from moirais.fn.grada2 import geron_adagrad_update
+from morie.fn.grada2 import geron_adagrad_update
 
 
 def test_grada2_basic():

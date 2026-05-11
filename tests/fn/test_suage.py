@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.suage -- age-specific substance use."""
+"""Tests for morie.fn.suage -- age-specific substance use."""
 
 import pytest
 import pandas as pd
-from moirais.fn.suage import substance_by_age
+from morie.fn.suage import substance_by_age
 
 
 class TestSubstanceByAge:

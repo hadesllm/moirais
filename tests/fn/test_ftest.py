@@ -1,7 +1,7 @@
 """Test ftest."""
 import numpy as np
 import pytest
-from moirais.fn.ftest import ftest
+from morie.fn.ftest import ftest
 
 
 def test_ftest_basic():

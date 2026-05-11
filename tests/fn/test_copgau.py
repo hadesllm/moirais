@@ -1,7 +1,7 @@
 """Tests for copgau.gaussian_copula."""
 import numpy as np
 import pytest
-from moirais.fn.copgau import gaussian_copula
+from morie.fn.copgau import gaussian_copula
 
 
 def test_copgau_basic():

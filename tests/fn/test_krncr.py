@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.krncr -- Kronecker product."""
+"""Tests for morie.fn.krncr -- Kronecker product."""
 
 import numpy as np
-from moirais.fn.krncr import kronecker, krncr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.krncr import kronecker, krncr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestKrncr:

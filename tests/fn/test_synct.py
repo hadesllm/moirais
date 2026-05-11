@@ -1,7 +1,7 @@
 """Tests for synct.synthetic_control."""
 import numpy as np
 import pytest
-from moirais.fn.synct import synthetic_control
+from morie.fn.synct import synthetic_control
 
 
 def test_synct_basic():

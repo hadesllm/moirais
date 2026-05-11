@@ -1,7 +1,7 @@
 """Tests for abndst.abundance_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.abndst import abundance_estimation
+from morie.fn.abndst import abundance_estimation
 
 
 def test_abndst_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rccut."""
+"""Tests for morie.fn.rccut."""
 
 import numpy as np
 import pytest
-from moirais.fn.rccut import rccut
+from morie.fn.rccut import rccut
 
 
 class TestRccut:

@@ -1,7 +1,7 @@
 """Test gafdir."""
 import numpy as np
 import pytest
-from moirais.fn.gafdir import gafdir
+from morie.fn.gafdir import gafdir
 
 
 def test_gafdir_basic():

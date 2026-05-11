@@ -1,7 +1,7 @@
 """Test wlcrc."""
 import numpy as np
 import pytest
-from moirais.fn.wlcrc import wlcrc
+from morie.fn.wlcrc import wlcrc
 
 
 def test_wlcrc_basic():

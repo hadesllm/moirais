@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsfft -- FFT-based spectral simulation"""
+"""Tests for morie.fn.zsfft -- FFT-based spectral simulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsfft import spectral_sim
+from morie.fn.zsfft import spectral_sim
 
 
 class TestSpectralSim:

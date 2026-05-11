@@ -1,7 +1,7 @@
 """Tests for epsig1.em_algorithm."""
 import numpy as np
 import pytest
-from moirais.fn.epsig1 import em_algorithm
+from morie.fn.epsig1 import em_algorithm
 
 
 def test_epsig1_basic():

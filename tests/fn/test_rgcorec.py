@@ -1,7 +1,7 @@
 """Tests for rgcorec.rangayyan_correlation_coeff."""
 import numpy as np
 import pytest
-from moirais.fn.rgcorec import rangayyan_correlation_coeff
+from morie.fn.rgcorec import rangayyan_correlation_coeff
 
 
 def test_rgcorec_basic():

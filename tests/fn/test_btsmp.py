@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 
-from moirais.fn.btsmp import btsmp, bootstrap_sample
+from morie.fn.btsmp import btsmp, bootstrap_sample
 
 
 def test_btsmp_returns_dict():

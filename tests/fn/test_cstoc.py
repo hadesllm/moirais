@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cstoc — custody occupancy."""
+"""Tests for morie.fn.cstoc — custody occupancy."""
 
 import pandas as pd
-from moirais.fn.cstoc import custody_occupancy
+from morie.fn.cstoc import custody_occupancy
 
 
 class TestCustodyOccupancy:

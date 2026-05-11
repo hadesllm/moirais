@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gblup -- Genomic BLUP."""
+"""Tests for morie.fn.gblup -- Genomic BLUP."""
 
 import numpy as np
 import pytest
-from moirais.fn.gblup import gblup
+from morie.fn.gblup import gblup
 
 
 def _make_data(n=50, p=20, seed=42):

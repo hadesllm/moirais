@@ -1,7 +1,7 @@
 """Tests for e_div.e_divisive."""
 import numpy as np
 import pytest
-from moirais.fn.e_div import e_divisive
+from morie.fn.e_div import e_divisive
 
 
 def test_e_div_basic():

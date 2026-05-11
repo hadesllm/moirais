@@ -1,7 +1,7 @@
 """Tests for km086.kamath_ch6_pll."""
 import numpy as np
 import pytest
-from moirais.fn.km086 import kamath_ch6_pll
+from morie.fn.km086 import kamath_ch6_pll
 
 
 def test_km086_basic():

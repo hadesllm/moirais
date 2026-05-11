@@ -1,7 +1,7 @@
 """Tests for irtras.rating_scale_model."""
 import numpy as np
 import pytest
-from moirais.fn.irtras import rating_scale_model
+from morie.fn.irtras import rating_scale_model
 
 
 def test_irtras_basic():

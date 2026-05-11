@@ -1,7 +1,7 @@
 """Test convergence_rate (cnvgr)."""
 import numpy as np
-from moirais.fn.cnvgr import convergence_rate, cnvgr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cnvgr import convergence_rate, cnvgr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCnvgr:

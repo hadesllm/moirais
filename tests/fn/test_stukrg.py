@@ -1,7 +1,7 @@
 """Tests for stukrg."""
 import numpy as np
 import pytest
-from moirais.fn.stukrg import stukrg
+from morie.fn.stukrg import stukrg
 
 
 def test_stukrg_basic():
@@ -27,5 +27,5 @@ def test_stukrg_no_data():
 
 
 def test_stukrg_alias():
-    from moirais.fn.stukrg import stukrg
+    from morie.fn.stukrg import stukrg
     assert stukrg is stukrg

@@ -1,7 +1,7 @@
 """Tests for ksr043.kosorok_ch2_quantile_hadamard_inequality."""
 import numpy as np
 import pytest
-from moirais.fn.ksr043 import kosorok_ch2_quantile_hadamard_inequality
+from morie.fn.ksr043 import kosorok_ch2_quantile_hadamard_inequality
 
 
 def test_ksr043_basic():

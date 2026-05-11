@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.renyh — Renyi entropy."""
+"""Tests for morie.fn.renyh — Renyi entropy."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.renyh import renyh
+from morie.fn.renyh import renyh
 
 
 class TestRenyh:

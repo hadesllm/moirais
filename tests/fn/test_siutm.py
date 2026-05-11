@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.siutm — SIU timeline."""
+"""Tests for morie.fn.siutm — SIU timeline."""
 
 import pytest
 import pandas as pd
-from moirais.fn.siutm import siu_timeline
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.siutm import siu_timeline
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSiuTimeline:

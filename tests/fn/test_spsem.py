@@ -1,7 +1,7 @@
 """Tests for spsem.schabenberger_spatial_error_model."""
 import numpy as np
 import pytest
-from moirais.fn.spsem import schabenberger_spatial_error_model
+from morie.fn.spsem import schabenberger_spatial_error_model
 
 
 def test_spsem_basic():

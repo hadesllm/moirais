@@ -1,7 +1,7 @@
 """Test krgcv."""
 import numpy as np
 import pytest
-from moirais.fn.krgcv import krgcv
+from morie.fn.krgcv import krgcv
 
 
 def test_krgcv_basic():

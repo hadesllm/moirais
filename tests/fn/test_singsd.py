@@ -1,7 +1,7 @@
 """Tests for singsd.singular_spectrum."""
 import numpy as np
 import pytest
-from moirais.fn.singsd import singular_spectrum
+from morie.fn.singsd import singular_spectrum
 
 
 def test_singsd_basic():

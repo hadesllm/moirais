@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptcsr -- Complete Spatial Randomness test"""
+"""Tests for morie.fn.ptcsr -- Complete Spatial Randomness test"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptcsr import csr_test
+from morie.fn.ptcsr import csr_test
 
 
 class TestCsrTest:

@@ -1,7 +1,7 @@
 """Tests for eslr2.esl_r_squared."""
 import numpy as np
 import pytest
-from moirais.fn.eslr2 import esl_r_squared
+from morie.fn.eslr2 import esl_r_squared
 
 
 def test_eslr2_basic():

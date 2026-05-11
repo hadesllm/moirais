@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.odm_r — Demographic profile per region."""
+"""Tests for morie.fn.odm_r — Demographic profile per region."""
 
 import pandas as pd
-from moirais.fn.odm_r import otis_demo_region
+from morie.fn.odm_r import otis_demo_region
 
 
 class TestOtisDemoRegion:

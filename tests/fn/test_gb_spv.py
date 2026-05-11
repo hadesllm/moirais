@@ -1,7 +1,7 @@
 """Tests for gb_spv.gibbons_spearman_rho_var."""
 import numpy as np
 import pytest
-from moirais.fn.gb_spv import gibbons_spearman_rho_var
+from morie.fn.gb_spv import gibbons_spearman_rho_var
 
 
 def test_gb_spv_basic():

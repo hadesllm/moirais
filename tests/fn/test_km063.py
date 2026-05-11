@@ -1,7 +1,7 @@
 """Tests for km063.kamath_ch4_vera_forward."""
 import numpy as np
 import pytest
-from moirais.fn.km063 import kamath_ch4_vera_forward
+from morie.fn.km063 import kamath_ch4_vera_forward
 
 
 def test_km063_basic():

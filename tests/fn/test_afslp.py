@@ -1,7 +1,7 @@
 """Test afslp."""
 import numpy as np
 import pytest
-from moirais.fn.afslp import afslp
+from morie.fn.afslp import afslp
 
 
 def test_afslp_basic():

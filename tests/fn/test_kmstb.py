@@ -1,7 +1,7 @@
 """Tests for kmstb.kamath_step_back_prompting."""
 import numpy as np
 import pytest
-from moirais.fn.kmstb import kamath_step_back_prompting
+from morie.fn.kmstb import kamath_step_back_prompting
 
 
 def test_kmstb_basic():

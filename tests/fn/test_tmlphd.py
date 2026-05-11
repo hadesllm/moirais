@@ -1,7 +1,7 @@
 """Tests for tmlphd.tmle_high_dim."""
 import numpy as np
 import pytest
-from moirais.fn.tmlphd import tmle_high_dim
+from morie.fn.tmlphd import tmle_high_dim
 
 
 def test_tmlphd_basic():

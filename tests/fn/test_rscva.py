@@ -1,7 +1,7 @@
 """Test rscva."""
 import numpy as np
 import pytest
-from moirais.fn.rscva import rscva
+from morie.fn.rscva import rscva
 
 
 def test_rscva_basic():

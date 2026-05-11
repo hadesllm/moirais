@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dbnm — binomial PMF."""
+"""Tests for morie.fn.dbnm — binomial PMF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dbnm import dbinom
+from morie.fn.dbnm import dbinom
 
 
 class TestDbinom:

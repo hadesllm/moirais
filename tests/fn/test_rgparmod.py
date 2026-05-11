@@ -1,7 +1,7 @@
 """Tests for rgparmod.rangayyan_parametric_sysid."""
 import numpy as np
 import pytest
-from moirais.fn.rgparmod import rangayyan_parametric_sysid
+from morie.fn.rgparmod import rangayyan_parametric_sysid
 
 
 def test_rgparmod_basic():

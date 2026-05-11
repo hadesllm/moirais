@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.popst -- Population structure PCA."""
+"""Tests for morie.fn.popst -- Population structure PCA."""
 
 import numpy as np
 import pytest
-from moirais.fn.popst import popst
+from morie.fn.popst import popst
 
 
 class TestPopst:

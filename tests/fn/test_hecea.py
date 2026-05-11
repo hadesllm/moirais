@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hecea -- CE plane."""
+"""Tests for morie.fn.hecea -- CE plane."""
 
 import numpy as np
-from moirais.fn.hecea import cost_effectiveness_plane
+from morie.fn.hecea import cost_effectiveness_plane
 
 
 class TestCEPlane:

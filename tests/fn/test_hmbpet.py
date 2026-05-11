@@ -1,7 +1,7 @@
 """Tests for hmbpet.geron_bpe_tokenizer."""
 import numpy as np
 import pytest
-from moirais.fn.hmbpet import geron_bpe_tokenizer
+from morie.fn.hmbpet import geron_bpe_tokenizer
 
 
 def test_hmbpet_basic():

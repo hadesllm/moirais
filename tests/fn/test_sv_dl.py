@@ -1,7 +1,7 @@
 """Tests for sv_dl.structural_variant."""
 import numpy as np
 import pytest
-from moirais.fn.sv_dl import structural_variant
+from morie.fn.sv_dl import structural_variant
 
 
 def test_sv_dl_basic():

@@ -1,7 +1,7 @@
 """Tests for buttlp — Butterworth lowpass filter."""
 import numpy as np
-from moirais.fn.buttlp import butter_lowpass
-from moirais.fn._containers import SignalResult
+from morie.fn.buttlp import butter_lowpass
+from morie.fn._containers import SignalResult
 
 
 def test_buttlp_basic(signal_1khz):

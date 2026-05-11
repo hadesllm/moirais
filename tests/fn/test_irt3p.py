@@ -1,6 +1,6 @@
 """Tests for irt3p — 3PL model."""
 import numpy as np
-from moirais.fn.irt3p import irt3p
+from morie.fn.irt3p import irt3p
 
 def test_irt3p_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -9,7 +9,7 @@ def test_irt3p_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.irt3p import cheatsheet
+    from morie.fn.irt3p import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

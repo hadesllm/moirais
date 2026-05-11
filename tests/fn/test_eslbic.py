@@ -1,7 +1,7 @@
 """Tests for eslbic.esl_bic_score."""
 import numpy as np
 import pytest
-from moirais.fn.eslbic import esl_bic_score
+from morie.fn.eslbic import esl_bic_score
 
 
 def test_eslbic_basic():

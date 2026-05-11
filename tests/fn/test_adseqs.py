@@ -1,7 +1,7 @@
 """Tests for adseqs.admixture_seq."""
 import numpy as np
 import pytest
-from moirais.fn.adseqs import admixture_seq
+from morie.fn.adseqs import admixture_seq
 
 
 def test_adseqs_basic():

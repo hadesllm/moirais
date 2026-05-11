@@ -1,7 +1,7 @@
 """Tests for bfsd.bayes_factor_savage_dickey."""
 import numpy as np
 import pytest
-from moirais.fn.bfsd import bayes_factor_savage_dickey
+from morie.fn.bfsd import bayes_factor_savage_dickey
 
 
 def test_bfsd_basic():

@@ -1,7 +1,7 @@
 """Tests for rgpowerl.rangayyan_powerline_removal."""
 import numpy as np
 import pytest
-from moirais.fn.rgpowerl import rangayyan_powerline_removal
+from morie.fn.rgpowerl import rangayyan_powerline_removal
 
 
 def test_rgpowerl_basic():

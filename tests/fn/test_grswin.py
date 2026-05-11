@@ -1,7 +1,7 @@
 """Tests for grswin.geron_swin_window_attention."""
 import numpy as np
 import pytest
-from moirais.fn.grswin import geron_swin_window_attention
+from morie.fn.grswin import geron_swin_window_attention
 
 
 def test_grswin_basic():

@@ -1,7 +1,7 @@
 """Test gdinf."""
 import numpy as np
 import pytest
-from moirais.fn.gdinf import gdinf
+from morie.fn.gdinf import gdinf
 
 
 def test_gdinf_basic():

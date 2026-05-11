@@ -1,7 +1,7 @@
 """Tests for causivar.causal_iv_anderson_rubin."""
 import numpy as np
 import pytest
-from moirais.fn.causivar import causal_iv_anderson_rubin
+from morie.fn.causivar import causal_iv_anderson_rubin
 
 
 def test_causivar_basic():

@@ -1,7 +1,7 @@
 """Test sobd."""
 import numpy as np
 import pytest
-from moirais.fn.sobd import sobd
+from morie.fn.sobd import sobd
 
 
 def test_sobd_basic():

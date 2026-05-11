@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.punf — uniform CDF."""
+"""Tests for morie.fn.punf — uniform CDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.punf import punif
+from morie.fn.punf import punif
 
 
 class TestPunif:

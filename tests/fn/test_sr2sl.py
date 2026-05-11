@@ -1,7 +1,7 @@
 """Test sr2sl."""
 import numpy as np
 import pytest
-from moirais.fn.sr2sl import sr2sl
+from morie.fn.sr2sl import sr2sl
 
 
 def test_sr2sl_basic():

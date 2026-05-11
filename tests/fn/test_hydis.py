@@ -1,7 +1,7 @@
 """Test hydis."""
 import numpy as np
 import pytest
-from moirais.fn.hydis import hydis
+from morie.fn.hydis import hydis
 
 
 def test_hydis_basic():

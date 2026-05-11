@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.olswt -- OLS with IPW weights."""
+"""Tests for morie.fn.olswt -- OLS with IPW weights."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.olswt import ols_weighted, olswt
-from moirais.fn._containers import RegressionResult
+from morie.fn.olswt import ols_weighted, olswt
+from morie.fn._containers import RegressionResult
 
 
 class TestOLSWeighted:

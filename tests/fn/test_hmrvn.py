@@ -1,7 +1,7 @@
 """Tests for hmrvn.geron_revnet."""
 import numpy as np
 import pytest
-from moirais.fn.hmrvn import geron_revnet
+from morie.fn.hmrvn import geron_revnet
 
 
 def test_hmrvn_basic():

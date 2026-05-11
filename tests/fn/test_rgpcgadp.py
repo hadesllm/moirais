@@ -1,7 +1,7 @@
 """Tests for rgpcgadp.rangayyan_pcg_adaptive_seg."""
 import numpy as np
 import pytest
-from moirais.fn.rgpcgadp import rangayyan_pcg_adaptive_seg
+from morie.fn.rgpcgadp import rangayyan_pcg_adaptive_seg
 
 
 def test_rgpcgadp_basic():

@@ -1,7 +1,7 @@
 """Tests for hetmix.heterogeneous_mixing."""
 import numpy as np
 import pytest
-from moirais.fn.hetmix import heterogeneous_mixing
+from morie.fn.hetmix import heterogeneous_mixing
 
 
 def test_hetmix_basic():

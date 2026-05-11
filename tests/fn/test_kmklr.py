@@ -1,7 +1,7 @@
 """Tests for kmklr.kamath_kl_reward_shaping."""
 import numpy as np
 import pytest
-from moirais.fn.kmklr import kamath_kl_reward_shaping
+from morie.fn.kmklr import kamath_kl_reward_shaping
 
 
 def test_kmklr_basic():

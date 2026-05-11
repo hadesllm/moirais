@@ -1,7 +1,7 @@
 """Test csres."""
 import numpy as np
 import pytest
-from moirais.fn.csres import csres
+from morie.fn.csres import csres
 
 
 def test_csres_basic():

@@ -1,7 +1,7 @@
 """Test turns_count_fn."""
 import numpy as np
-from moirais.fn.turns import turns_count_fn, alias
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.turns import turns_count_fn, alias
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTurnsCountFn:

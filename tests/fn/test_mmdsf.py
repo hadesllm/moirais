@@ -1,7 +1,7 @@
 """Tests for mmdsf.metric_mds_torgerson."""
 import numpy as np
 import pytest
-from moirais.fn.mmdsf import metric_mds_torgerson
+from morie.fn.mmdsf import metric_mds_torgerson
 
 
 def test_mmdsf_basic():

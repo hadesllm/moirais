@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tbund — torus bundle."""
+"""Tests for morie.fn.tbund — torus bundle."""
 
 import pytest
 
-from moirais.fn.tbund import torus_bundle
+from morie.fn.tbund import torus_bundle
 
 
 class TestTorusBundle:

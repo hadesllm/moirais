@@ -1,7 +1,7 @@
 """Tests for remlfn.reml_loglik."""
 import numpy as np
 import pytest
-from moirais.fn.remlfn import reml_loglik
+from morie.fn.remlfn import reml_loglik
 
 
 def test_remlfn_basic():

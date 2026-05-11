@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ofreq — Frequency table."""
+"""Tests for morie.fn.ofreq — Frequency table."""
 
 import pandas as pd
-from moirais.fn.ofreq import otis_freq_table
+from morie.fn.ofreq import otis_freq_table
 
 
 class TestOtisFreqTable:

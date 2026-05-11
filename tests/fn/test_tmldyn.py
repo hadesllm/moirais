@@ -1,7 +1,7 @@
 """Tests for tmldyn.tmle_dynamic_regime."""
 import numpy as np
 import pytest
-from moirais.fn.tmldyn import tmle_dynamic_regime
+from morie.fn.tmldyn import tmle_dynamic_regime
 
 
 def test_tmldyn_basic():

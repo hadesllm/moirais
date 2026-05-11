@@ -1,7 +1,7 @@
 """Tests for agclop.alphazero_optimizer."""
 import numpy as np
 import pytest
-from moirais.fn.agclop import alphazero_optimizer
+from morie.fn.agclop import alphazero_optimizer
 
 
 def test_agclop_basic():

@@ -1,6 +1,6 @@
 """Test ldpc_generate."""
-from moirais.fn._containers import DescriptiveResult
-from moirais.fn.ldpcg import ldpc_generate, ldpcg
+from morie.fn._containers import DescriptiveResult
+from morie.fn.ldpcg import ldpc_generate, ldpcg
 
 
 class TestLdpcGenerate:

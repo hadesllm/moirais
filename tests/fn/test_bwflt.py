@@ -1,7 +1,7 @@
 """Test butterworth_filter (bwflt)."""
 import numpy as np
-from moirais.fn.bwflt import butterworth_filter, bwflt
-from moirais.fn._containers import SignalResult
+from morie.fn.bwflt import butterworth_filter, bwflt
+from morie.fn._containers import SignalResult
 
 
 class TestButterworthFilter:

@@ -1,7 +1,7 @@
 """Tests for rgwavstr.rangayyan_wavelet_struct."""
 import numpy as np
 import pytest
-from moirais.fn.rgwavstr import rangayyan_wavelet_struct
+from morie.fn.rgwavstr import rangayyan_wavelet_struct
 
 
 def test_rgwavstr_basic():

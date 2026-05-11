@@ -1,7 +1,7 @@
 """Tests for causbalt.causal_balance_test."""
 import numpy as np
 import pytest
-from moirais.fn.causbalt import causal_balance_test
+from morie.fn.causbalt import causal_balance_test
 
 
 def test_causbalt_basic():

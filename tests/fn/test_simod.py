@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.simod — Single-index model estimation."""
+"""Tests for morie.fn.simod — Single-index model estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.simod import simod
+from morie.fn.simod import simod
 
 
 @pytest.fixture()

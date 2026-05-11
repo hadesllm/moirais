@@ -1,7 +1,7 @@
 """Out of chaos, comes order. — Friedrich Nietzsche"""
 import numpy as np
 import pytest
-from moirais.fn.grflash import geron_flash_attention_tile
+from morie.fn.grflash import geron_flash_attention_tile
 
 
 def test_grflash_basic():

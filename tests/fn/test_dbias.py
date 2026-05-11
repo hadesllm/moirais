@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dbias -- Double debiasing."""
+"""Tests for morie.fn.dbias -- Double debiasing."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.dbias import double_debias, dbias
-from moirais.fn._containers import ESRes
+from morie.fn.dbias import double_debias, dbias
+from morie.fn._containers import ESRes
 
 
 class TestDoubleDebias:

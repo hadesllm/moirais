@@ -1,7 +1,7 @@
 """Tests for use_r2u3.use_r_chapter_2_unnumbered_3."""
 import numpy as np
 import pytest
-from moirais.fn.use_r2u3 import use_r_chapter_2_unnumbered_3
+from morie.fn.use_r2u3 import use_r_chapter_2_unnumbered_3
 
 
 def test_use_r2u3_basic():

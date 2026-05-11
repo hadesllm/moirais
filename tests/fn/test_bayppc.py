@@ -1,7 +1,7 @@
 """Tests for bayppc.posterior_predictive_check."""
 import numpy as np
 import pytest
-from moirais.fn.bayppc import posterior_predictive_check
+from morie.fn.bayppc import posterior_predictive_check
 
 
 def test_bayppc_basic():

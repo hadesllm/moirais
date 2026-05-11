@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.scdisp."""
+"""Tests for morie.fn.scdisp."""
 import numpy as np
 import pytest
-from moirais.fn.scdisp import scdisp
+from morie.fn.scdisp import scdisp
 
 
 class TestScdisp:

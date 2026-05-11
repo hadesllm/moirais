@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zegrm -- Gravity migration model"""
+"""Tests for morie.fn.zegrm -- Gravity migration model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zegrm import gravity_migration
+from morie.fn.zegrm import gravity_migration
 
 
 class TestGravityMigration:

@@ -1,7 +1,7 @@
 """Tests for clipbn.clip_image_text_align."""
 import numpy as np
 import pytest
-from moirais.fn.clipbn import clip_image_text_align
+from morie.fn.clipbn import clip_image_text_align
 
 
 def test_clipbn_basic():

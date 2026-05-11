@@ -1,7 +1,7 @@
 """Tests for hrzfrd.horowitz_fredholm_eq."""
 import numpy as np
 import pytest
-from moirais.fn.hrzfrd import horowitz_fredholm_eq
+from morie.fn.hrzfrd import horowitz_fredholm_eq
 
 
 def test_hrzfrd_basic():

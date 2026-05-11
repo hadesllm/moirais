@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rcdsb — recidivism subgroup."""
+"""Tests for morie.fn.rcdsb — recidivism subgroup."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.rcdsb import recidivism_subgroup
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rcdsb import recidivism_subgroup
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRecidivismSubgroup:

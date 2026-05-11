@@ -1,7 +1,7 @@
 """Test mafit."""
 import numpy as np
 import pytest
-from moirais.fn.mafit import mafit
+from morie.fn.mafit import mafit
 
 
 def test_mafit_basic():

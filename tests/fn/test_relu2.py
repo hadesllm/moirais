@@ -1,7 +1,7 @@
 """Test relu_squared."""
 import numpy as np
-from moirais.fn.relu2 import relu_squared, relu2
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.relu2 import relu_squared, relu2
+from morie.fn._containers import DescriptiveResult
 
 
 class TestReluSquared:

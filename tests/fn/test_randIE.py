@@ -1,7 +1,7 @@
 """Tests for randIE.randomized_intervention."""
 import numpy as np
 import pytest
-from moirais.fn.randIE import randomized_intervention
+from morie.fn.randIE import randomized_intervention
 
 
 def test_randIE_basic():

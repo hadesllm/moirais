@@ -1,7 +1,7 @@
 """Tests for hmfp16.geron_fp16_quant."""
 import numpy as np
 import pytest
-from moirais.fn.hmfp16 import geron_fp16_quant
+from morie.fn.hmfp16 import geron_fp16_quant
 
 
 def test_hmfp16_basic():

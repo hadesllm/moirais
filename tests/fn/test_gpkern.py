@@ -1,7 +1,7 @@
 """Tests for gpkern.gp_kernel_compose."""
 import numpy as np
 import pytest
-from moirais.fn.gpkern import gp_kernel_compose
+from morie.fn.gpkern import gp_kernel_compose
 
 
 def test_gpkern_basic():

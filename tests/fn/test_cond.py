@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cond — condition number."""
+"""Tests for morie.fn.cond — condition number."""
 import numpy as np
 import pytest
-from moirais.fn.cond import condition_number
+from morie.fn.cond import condition_number
 
 
 class TestConditionNumber:

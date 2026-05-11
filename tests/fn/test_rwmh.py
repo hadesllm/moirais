@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rwmh -- Random walk MH."""
+"""Tests for morie.fn.rwmh -- Random walk MH."""
 
 import numpy as np
-from moirais.fn.rwmh import random_walk_mh
+from morie.fn.rwmh import random_walk_mh
 
 
 def test_returns_dict():

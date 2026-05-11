@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeenb -- Ecological NB regression"""
+"""Tests for morie.fn.zeenb -- Ecological NB regression"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeenb import ecological_nb
+from morie.fn.zeenb import ecological_nb
 
 
 class TestEcologicalNb:

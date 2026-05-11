@@ -1,7 +1,7 @@
 """Tests for hmint8.geron_int8_quant."""
 import numpy as np
 import pytest
-from moirais.fn.hmint8 import geron_int8_quant
+from morie.fn.hmint8 import geron_int8_quant
 
 
 def test_hmint8_basic():

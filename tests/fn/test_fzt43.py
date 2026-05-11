@@ -1,7 +1,7 @@
 """Tests for fzt43.fauzi_thm4_3_mrl_bias_var."""
 import numpy as np
 import pytest
-from moirais.fn.fzt43 import fauzi_thm4_3_mrl_bias_var
+from morie.fn.fzt43 import fauzi_thm4_3_mrl_bias_var
 
 
 def test_fzt43_basic():

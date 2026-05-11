@@ -1,7 +1,7 @@
 """Tests for grtdb.geron_transformer_decoder_block."""
 import numpy as np
 import pytest
-from moirais.fn.grtdb import geron_transformer_decoder_block
+from morie.fn.grtdb import geron_transformer_decoder_block
 
 
 def test_grtdb_basic():

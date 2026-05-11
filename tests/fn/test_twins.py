@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.twins -- phase locking value."""
+"""Tests for morie.fn.twins -- phase locking value."""
 
 import numpy as np
-from moirais.fn.twins import phase_locking_value, twins
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.twins import phase_locking_value, twins
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTwins:

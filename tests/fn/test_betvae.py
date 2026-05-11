@@ -1,7 +1,7 @@
 """Tests for betvae.beta_vae_disentangle."""
 import numpy as np
 import pytest
-from moirais.fn.betvae import beta_vae_disentangle
+from morie.fn.betvae import beta_vae_disentangle
 
 
 def test_betvae_basic():

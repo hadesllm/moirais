@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.cityb — city block distance."""
-from moirais.fn.cityb import cityb
+"""Tests for morie.fn.cityb — city block distance."""
+from morie.fn.cityb import cityb
 
 
 def test_cityb_smoke():
@@ -9,7 +9,7 @@ def test_cityb_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.cityb import cheatsheet
+    from morie.fn.cityb import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

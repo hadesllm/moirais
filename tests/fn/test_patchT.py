@@ -1,7 +1,7 @@
 """Tests for patchT.patch_tst."""
 import numpy as np
 import pytest
-from moirais.fn.patchT import patch_tst
+from morie.fn.patchT import patch_tst
 
 
 def test_patchT_basic():

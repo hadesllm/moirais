@@ -1,7 +1,7 @@
 """Tests for hrzboxc.horowitz_box_cox."""
 import numpy as np
 import pytest
-from moirais.fn.hrzboxc import horowitz_box_cox
+from morie.fn.hrzboxc import horowitz_box_cox
 
 
 def test_hrzboxc_basic():

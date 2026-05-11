@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.effic — Semiparametric efficiency bound."""
+"""Tests for morie.fn.effic — Semiparametric efficiency bound."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.effic import effic, EfficiencyBoundResult
+from morie.fn.effic import effic, EfficiencyBoundResult
 
 
 @pytest.fixture()

@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.bbstr import bayesian_bootstrap
+from morie.fn.bbstr import bayesian_bootstrap
 
 
 def test_bbstr_basic():

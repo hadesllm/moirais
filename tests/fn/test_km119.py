@@ -1,7 +1,7 @@
 """Tests for km119.kamath_ch8_bertscore_recall."""
 import numpy as np
 import pytest
-from moirais.fn.km119 import kamath_ch8_bertscore_recall
+from morie.fn.km119 import kamath_ch8_bertscore_recall
 
 
 def test_km119_basic():

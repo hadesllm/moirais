@@ -1,7 +1,7 @@
 """Tests for rgkatzfd.rangayyan_katz_fd."""
 import numpy as np
 import pytest
-from moirais.fn.rgkatzfd import rangayyan_katz_fd
+from morie.fn.rgkatzfd import rangayyan_katz_fd
 
 
 def test_rgkatzfd_basic():

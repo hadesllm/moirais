@@ -1,7 +1,7 @@
 """Tests for hmdeit.geron_deit."""
 import numpy as np
 import pytest
-from moirais.fn.hmdeit import geron_deit
+from morie.fn.hmdeit import geron_deit
 
 
 def test_hmdeit_basic():

@@ -1,7 +1,7 @@
 """Tests for evdedh.evt_dekkers_einmahl_dehaan."""
 import numpy as np
 import pytest
-from moirais.fn.evdedh import evt_dekkers_einmahl_dehaan
+from morie.fn.evdedh import evt_dekkers_einmahl_dehaan
 
 
 def test_evdedh_basic():

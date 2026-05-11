@@ -1,7 +1,7 @@
 """Tests for rgbbb.rangayyan_bundle_branch_block."""
 import numpy as np
 import pytest
-from moirais.fn.rgbbb import rangayyan_bundle_branch_block
+from morie.fn.rgbbb import rangayyan_bundle_branch_block
 
 
 def test_rgbbb_basic():

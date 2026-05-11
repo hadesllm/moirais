@@ -1,7 +1,7 @@
 """Tests for thrtmt.threshold_treatment_msm."""
 import numpy as np
 import pytest
-from moirais.fn.thrtmt import threshold_treatment_msm
+from morie.fn.thrtmt import threshold_treatment_msm
 
 
 def test_thrtmt_basic():

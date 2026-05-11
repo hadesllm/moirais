@@ -1,7 +1,7 @@
 """Tests for tdmed.two_dimensional_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.tdmed import two_dimensional_mediation
+from morie.fn.tdmed import two_dimensional_mediation
 
 
 def test_tdmed_basic():

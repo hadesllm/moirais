@@ -1,7 +1,7 @@
 """Test parzen_classify (parzn)."""
 import numpy as np
-from moirais.fn.parzn import parzen_classify, parzn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.parzn import parzen_classify, parzn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestParzn:

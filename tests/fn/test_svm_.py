@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.svm_ -- SVM classifier wrapper."""
+"""Tests for morie.fn.svm_ -- SVM classifier wrapper."""
 
 import numpy as np
 import pytest
-from moirais.fn.svm_ import svm_classify
+from morie.fn.svm_ import svm_classify
 
 
 class TestSvmClassify:

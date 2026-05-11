@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.svbut."""
+"""Tests for morie.fn.svbut."""
 
 import numpy as np
 import pytest
-from moirais.fn.svbut import svbut
+from morie.fn.svbut import svbut
 
 
 class TestSvbut:

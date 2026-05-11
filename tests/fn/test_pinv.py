@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.pinv — pseudoinverse."""
+"""Tests for morie.fn.pinv — pseudoinverse."""
 import numpy as np
-from moirais.fn.pinv import pseudoinverse
+from morie.fn.pinv import pseudoinverse
 
 
 class TestPseudoinverse:

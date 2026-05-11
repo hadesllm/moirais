@@ -1,7 +1,7 @@
 """Tests for causshap.causal_shap_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.causshap import causal_shap_decomposition
+from morie.fn.causshap import causal_shap_decomposition
 
 
 def test_causshap_basic():

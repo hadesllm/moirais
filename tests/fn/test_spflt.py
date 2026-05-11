@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.spflt — eigenvector spatial filtering."""
+"""Tests for morie.fn.spflt — eigenvector spatial filtering."""
 import numpy as np
-from moirais.fn.spflt import spatial_filter
+from morie.fn.spflt import spatial_filter
 
 
 class TestSpatialFilter:

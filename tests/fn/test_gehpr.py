@@ -1,7 +1,7 @@
 """Test gehpr."""
 import numpy as np
 import pytest
-from moirais.fn.gehpr import gehpr
+from morie.fn.gehpr import gehpr
 
 
 def test_gehpr_basic():

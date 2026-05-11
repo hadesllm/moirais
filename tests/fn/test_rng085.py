@@ -1,7 +1,7 @@
 """Tests for rng085.rangayyan_ch3_synchronized_averaging_sum."""
 import numpy as np
 import pytest
-from moirais.fn.rng085 import rangayyan_ch3_synchronized_averaging_sum
+from morie.fn.rng085 import rangayyan_ch3_synchronized_averaging_sum
 
 
 def test_rng085_basic():

@@ -1,7 +1,7 @@
 """Tests for grblip.geron_blip_itm_itc."""
 import numpy as np
 import pytest
-from moirais.fn.grblip import geron_blip_itm_itc
+from morie.fn.grblip import geron_blip_itm_itc
 
 
 def test_grblip_basic():

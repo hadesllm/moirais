@@ -1,7 +1,7 @@
 """Tests for toptor.topological_torsion."""
 import numpy as np
 import pytest
-from moirais.fn.toptor import topological_torsion
+from morie.fn.toptor import topological_torsion
 
 
 def test_toptor_basic():

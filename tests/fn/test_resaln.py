@@ -1,7 +1,7 @@
 """Tests for resaln.resultant."""
 import numpy as np
 import pytest
-from moirais.fn.resaln import resultant
+from morie.fn.resaln import resultant
 
 
 def test_resaln_basic():

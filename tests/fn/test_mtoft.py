@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mtoft — fatality rate."""
+"""Tests for morie.fn.mtoft — fatality rate."""
 
 import pytest
-from moirais.fn.mtoft import mto_fatality_rate
-from moirais.fn._containers import CrimeResult
+from morie.fn.mtoft import mto_fatality_rate
+from morie.fn._containers import CrimeResult
 
 
 class TestFatalityRate:

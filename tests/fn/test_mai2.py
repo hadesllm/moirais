@@ -1,7 +1,7 @@
 """Tests for mai2.ma_higgins_i2."""
 import numpy as np
 import pytest
-from moirais.fn.mai2 import ma_higgins_i2
+from morie.fn.mai2 import ma_higgins_i2
 
 
 def test_mai2_basic():

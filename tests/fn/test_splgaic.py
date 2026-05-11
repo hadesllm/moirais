@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.splgaic."""
+"""Tests for morie.fn.splgaic."""
 import numpy as np
 import pytest
-from moirais.fn.splgaic import splgaic
+from morie.fn.splgaic import splgaic
 
 
 class TestSplgaic:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rmst — Restricted mean survival time."""
+"""Tests for morie.fn.rmst — Restricted mean survival time."""
 import numpy as np
 
-from moirais.fn.rmst import rmst_estimate, rmst
+from morie.fn.rmst import rmst_estimate, rmst
 
 
 def test_rmst_positive():

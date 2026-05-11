@@ -1,7 +1,7 @@
 """Tests for spsann.schabenberger_simulated_annealing."""
 import numpy as np
 import pytest
-from moirais.fn.spsann import schabenberger_simulated_annealing
+from morie.fn.spsann import schabenberger_simulated_annealing
 
 
 def test_spsann_basic():

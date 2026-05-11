@@ -1,7 +1,7 @@
 """Tests for km132.kamath_ch9_llm_signal_tokens."""
 import numpy as np
 import pytest
-from moirais.fn.km132 import kamath_ch9_llm_signal_tokens
+from morie.fn.km132 import kamath_ch9_llm_signal_tokens
 
 
 def test_km132_basic():

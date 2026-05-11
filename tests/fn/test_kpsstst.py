@@ -1,7 +1,7 @@
 """Tests for kpsstst.kpss_stationarity."""
 import numpy as np
 import pytest
-from moirais.fn.kpsstst import kpss_stationarity
+from morie.fn.kpsstst import kpss_stationarity
 
 
 def test_kpsstst_basic():

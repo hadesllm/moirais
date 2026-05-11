@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfanl -- Confirmatory factor analysis."""
+"""Tests for morie.fn.cfanl -- Confirmatory factor analysis."""
 
 import numpy as np
-from moirais.fn.cfanl import cfa_uls, cfanl
-from moirais.fn._containers import CfaRes
+from morie.fn.cfanl import cfa_uls, cfanl
+from morie.fn._containers import CfaRes
 
 
 class TestCfaUls:

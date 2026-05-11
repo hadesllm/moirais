@@ -1,7 +1,7 @@
 """Tests for km042.kamath_ch3_prompt_label_mapping."""
 import numpy as np
 import pytest
-from moirais.fn.km042 import kamath_ch3_prompt_label_mapping
+from morie.fn.km042 import kamath_ch3_prompt_label_mapping
 
 
 def test_km042_basic():

@@ -1,7 +1,7 @@
 """Tests for hmadmx.geron_adamax."""
 import numpy as np
 import pytest
-from moirais.fn.hmadmx import geron_adamax
+from morie.fn.hmadmx import geron_adamax
 
 
 def test_hmadmx_basic():

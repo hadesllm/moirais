@@ -1,7 +1,7 @@
 """Tests for abcnnt.abc_neural."""
 import numpy as np
 import pytest
-from moirais.fn.abcnnt import abc_neural
+from morie.fn.abcnnt import abc_neural
 
 
 def test_abcnnt_basic():

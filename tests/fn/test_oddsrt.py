@@ -1,7 +1,7 @@
 """Tests for oddsrt.odds_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.oddsrt import odds_ratio
+from morie.fn.oddsrt import odds_ratio
 
 
 def test_oddsrt_basic():

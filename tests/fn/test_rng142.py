@@ -1,7 +1,7 @@
 """Tests for rng142.rangayyan_ch3_cross_correlation_vector."""
 import numpy as np
 import pytest
-from moirais.fn.rng142 import rangayyan_ch3_cross_correlation_vector
+from morie.fn.rng142 import rangayyan_ch3_cross_correlation_vector
 
 
 def test_rng142_basic():

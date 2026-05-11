@@ -1,7 +1,7 @@
 """Test gcgcm."""
 import numpy as np
 import pytest
-from moirais.fn.gcgcm import gcgcm
+from morie.fn.gcgcm import gcgcm
 
 
 def test_gcgcm_basic():

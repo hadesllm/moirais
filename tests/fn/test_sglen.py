@@ -1,7 +1,7 @@
 """Test signal_arc_length."""
 import numpy as np
-from moirais.fn.sglen import signal_arc_length, sglen
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sglen import signal_arc_length, sglen
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSignalArcLength:

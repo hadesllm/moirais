@@ -1,7 +1,7 @@
 """Tests for eslcrm.esl_cross_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.eslcrm import esl_cross_entropy
+from morie.fn.eslcrm import esl_cross_entropy
 
 
 def test_eslcrm_basic():

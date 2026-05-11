@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bmaxe -- Bayesian model averaging."""
+"""Tests for morie.fn.bmaxe -- Bayesian model averaging."""
 
 import numpy as np
-from moirais.fn.bmaxe import bayesian_model_averaging
+from morie.fn.bmaxe import bayesian_model_averaging
 
 
 def test_returns_dict():

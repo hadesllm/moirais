@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.sentn."""
+"""Tests for morie.fn.sentn."""
 import numpy as np
-from moirais.fn.sentn import sentiment_lexicon
+from morie.fn.sentn import sentiment_lexicon
 
 
 def test_sentn_smoke():
@@ -12,7 +12,7 @@ def test_sentn_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sentn import cheatsheet
+    from morie.fn.sentn import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

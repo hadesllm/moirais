@@ -1,7 +1,7 @@
 """Tests for tqunb.turboquant_prodqjl_unbiasedness."""
 import numpy as np
 import pytest
-from moirais.fn.tqunb import turboquant_prodqjl_unbiasedness
+from morie.fn.tqunb import turboquant_prodqjl_unbiasedness
 
 
 def test_tqunb_basic():

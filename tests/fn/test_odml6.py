@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.odml6 — OTIS DML custody."""
+"""Tests for morie.fn.odml6 — OTIS DML custody."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.odml6 import otis_dml_custody
-from moirais.fn._containers import ESRes
+from morie.fn.odml6 import otis_dml_custody
+from morie.fn._containers import ESRes
 
 
 class TestOtisDmlCustody:

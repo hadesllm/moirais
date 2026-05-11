@@ -1,5 +1,5 @@
 """Tests for blsum (BLOSUM alignment score)."""
-from moirais.fn.blsum import blosum_score
+from morie.fn.blsum import blosum_score
 
 
 def test_blosum_identical():

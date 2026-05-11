@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.susngl -- single-use risk."""
+"""Tests for morie.fn.susngl -- single-use risk."""
 
 import pytest
-from moirais.fn.susngl import single_use_risk
+from morie.fn.susngl import single_use_risk
 
 
 class TestSingleUseRisk:

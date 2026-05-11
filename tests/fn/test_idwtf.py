@@ -1,7 +1,7 @@
 """Tests for idwtf.py - Inverse DWT reconstruction."""
 import numpy as np
-from moirais.fn.dwtfn import dwt_decompose
-from moirais.fn.idwtf import idwt_reconstruct, idwtf
+from morie.fn.dwtfn import dwt_decompose
+from morie.fn.idwtf import idwt_reconstruct, idwtf
 
 
 def test_idwt_returns_descriptive_result():

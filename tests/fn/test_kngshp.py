@@ -1,7 +1,7 @@
 """Tests for kngshp.kinship_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.kngshp import kinship_estimator
+from morie.fn.kngshp import kinship_estimator
 
 
 def test_kngshp_basic():

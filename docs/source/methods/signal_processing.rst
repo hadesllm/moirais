@@ -1,10 +1,10 @@
 Signal Processing & Biomedical Analysis
 ========================================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS provides 25 biomedical signal processing functions via ``moirais.signal``
-and individual ``moirais.fn.*`` modules. All functions are dataset-agnostic:
+MORIE provides 25 biomedical signal processing functions via ``morie.signal``
+and individual ``morie.fn.*`` modules. All functions are dataset-agnostic:
 numpy arrays in, result objects out.
 
 Digital Filters
@@ -14,7 +14,7 @@ Butterworth zero-phase filters (via ``scipy.signal``):
 
 .. code-block:: python
 
-   from moirais.signal import buttlp, butthp, buttbp, buttbs, sgolay
+   from morie.signal import buttlp, butthp, buttbp, buttbs, sgolay
 
    result = buttlp(ecg_signal, fs=500, cutoff=40, order=4)
    filtered = result.filtered
@@ -30,7 +30,7 @@ Spectral Analysis
 
 .. code-block:: python
 
-   from moirais.signal import welch, pburg
+   from morie.signal import welch, pburg
 
    psd = welch(signal, fs=256)        # Welch PSD
    ar_psd = pburg(signal, order=16)   # Burg AR PSD (parametric)
@@ -42,7 +42,7 @@ Pure-numpy implementations for nonlinear time-series characterization:
 
 .. code-block:: python
 
-   from moirais.signal import hfd, kfd, pfd, dfa, sampen, hurst
+   from morie.signal import hfd, kfd, pfd, dfa, sampen, hurst
 
    result = hfd(signal, kmax=10)    # Higuchi fractal dimension
    alpha = dfa(signal).value        # DFA scaling exponent
@@ -61,7 +61,7 @@ ECG and Heart Rate Variability
 
 .. code-block:: python
 
-   from moirais.signal import ecgdet, rrint, hrvtd, hrvfd, hrvnl
+   from morie.signal import ecgdet, rrint, hrvtd, hrvfd, hrvnl
 
    peaks = ecgdet(ecg, fs=360)              # Pan-Tompkins QRS detection
    rr = rrint(peaks.extra["qrs_indices"], fs=360)
@@ -79,7 +79,7 @@ For cardiotoxicity studies in addiction/substance use research:
 
 .. code-block:: python
 
-   from moirais.signal import pcgflt, pcgenv, pcgseg, pcgmur
+   from morie.signal import pcgflt, pcgenv, pcgseg, pcgmur
 
    filtered = pcgflt(pcg, fs=2000)           # 25-400 Hz bandpass
    envelope = pcgenv(pcg, fs=2000)           # Shannon energy envelope

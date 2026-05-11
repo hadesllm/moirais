@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.terra -- Terrain analysis."""
+"""Tests for morie.fn.terra -- Terrain analysis."""
 
 import numpy as np
-from moirais.fn.terra import terrain_analysis, terra
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.terra import terrain_analysis, terra
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTerra:

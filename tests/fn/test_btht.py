@@ -1,7 +1,7 @@
 """Tests for btht.boot_test_hypothesis."""
 import numpy as np
 import pytest
-from moirais.fn.btht import boot_test_hypothesis
+from morie.fn.btht import boot_test_hypothesis
 
 
 def test_btht_basic():

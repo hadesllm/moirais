@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bnsmo — Smoothed maximum score."""
+"""Tests for morie.fn.bnsmo — Smoothed maximum score."""
 
 import numpy as np
 import pytest
-from moirais.fn.bnsmo import bnsmo
+from morie.fn.bnsmo import bnsmo
 
 
 def test_returns_dict():

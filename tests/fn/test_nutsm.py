@@ -1,7 +1,7 @@
 """Test nutsm."""
 import numpy as np
 import pytest
-from moirais.fn.nutsm import nutsm
+from morie.fn.nutsm import nutsm
 
 
 def test_nutsm_basic():

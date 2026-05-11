@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sidwy -- adversarial perturbation."""
+"""Tests for morie.fn.sidwy -- adversarial perturbation."""
 
 import numpy as np
-from moirais.fn.sidwy import adversarial_perturb, sidwy
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sidwy import adversarial_perturb, sidwy
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSidwy:

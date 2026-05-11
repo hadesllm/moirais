@@ -1,7 +1,7 @@
 """Tests for adwopt.adamw."""
 import numpy as np
 import pytest
-from moirais.fn.adwopt import adamw
+from morie.fn.adwopt import adamw
 
 
 def test_adwopt_basic():

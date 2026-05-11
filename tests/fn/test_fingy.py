@@ -1,7 +1,7 @@
 """Tests for fingy: Fine-Gray subdistribution hazard model."""
 import numpy as np
 import pytest
-from moirais.fn.fingy import fingy
+from morie.fn.fingy import fingy
 
 
 def _sim_competing_risks_cov(n=200, beta_true=0.5, seed=0):

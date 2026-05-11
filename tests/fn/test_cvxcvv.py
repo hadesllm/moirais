@@ -1,7 +1,7 @@
 """Tests for cvxcvv.boyd_cvxlin_complement."""
 import numpy as np
 import pytest
-from moirais.fn.cvxcvv import boyd_cvxlin_complement
+from morie.fn.cvxcvv import boyd_cvxlin_complement
 
 
 def test_cvxcvv_basic():

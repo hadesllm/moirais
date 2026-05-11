@@ -1,6 +1,6 @@
 """Tests for cooks_distance."""
 import numpy as np, pytest
-from moirais.fn.cooks import cooks_distance
+from morie.fn.cooks import cooks_distance
 
 class TestCooks:
     def test_basic(self):

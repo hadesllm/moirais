@@ -1,7 +1,7 @@
 """Tests for depthH.halfspace_depth."""
 import numpy as np
 import pytest
-from moirais.fn.depthH import halfspace_depth
+from morie.fn.depthH import halfspace_depth
 
 
 def test_depthH_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mvkov — Moving window variogram."""
+"""Tests for morie.fn.mvkov — Moving window variogram."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mvkov import mvkov
+from morie.fn.mvkov import mvkov
 
 
 class TestMvkov:

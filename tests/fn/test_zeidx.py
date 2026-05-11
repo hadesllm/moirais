@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeidx -- IDW exposure interpolation"""
+"""Tests for morie.fn.zeidx -- IDW exposure interpolation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeidx import idw_exposure
+from morie.fn.zeidx import idw_exposure
 
 
 class TestIdwExposure:

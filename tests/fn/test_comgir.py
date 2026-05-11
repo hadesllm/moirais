@@ -1,7 +1,7 @@
 """Tests for comgir.girvan_newman."""
 import numpy as np
 import pytest
-from moirais.fn.comgir import girvan_newman
+from morie.fn.comgir import girvan_newman
 
 
 def test_comgir_basic():

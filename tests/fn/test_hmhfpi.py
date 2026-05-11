@@ -1,7 +1,7 @@
 """Tests for hmhfpi.geron_hf_pipelines."""
 import numpy as np
 import pytest
-from moirais.fn.hmhfpi import geron_hf_pipelines
+from morie.fn.hmhfpi import geron_hf_pipelines
 
 
 def test_hmhfpi_basic():

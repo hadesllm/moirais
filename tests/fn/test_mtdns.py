@@ -1,7 +1,7 @@
 """Test mtdns."""
 import numpy as np
 import pytest
-from moirais.fn.mtdns import mtdns
+from morie.fn.mtdns import mtdns
 
 
 def test_mtdns_basic():

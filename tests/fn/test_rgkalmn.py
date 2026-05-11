@@ -1,7 +1,7 @@
 """Tests for rgkalmn.rangayyan_kalman_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rgkalmn import rangayyan_kalman_filter
+from morie.fn.rgkalmn import rangayyan_kalman_filter
 
 
 def test_rgkalmn_basic():

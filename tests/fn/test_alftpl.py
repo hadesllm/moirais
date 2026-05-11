@@ -1,7 +1,7 @@
 """Tests for alftpl.alphafold_template_embed."""
 import numpy as np
 import pytest
-from moirais.fn.alftpl import alphafold_template_embed
+from morie.fn.alftpl import alphafold_template_embed
 
 
 def test_alftpl_basic():

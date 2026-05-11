@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.fevdc -- Forecast error variance decomposition."""
+"""Tests for morie.fn.fevdc -- Forecast error variance decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.fevdc import fevd
+from morie.fn.fevdc import fevd
 
 
 class TestFEVD:
@@ -18,5 +18,5 @@ class TestFEVD:
             fevd(np.ones((2, 3)), np.eye(2))
 
     def test_cheatsheet(self):
-        from moirais.fn.fevdc import cheatsheet
+        from morie.fn.fevdc import cheatsheet
         assert isinstance(cheatsheet(), str)

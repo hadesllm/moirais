@@ -1,7 +1,7 @@
 """Tests for irt4pl.four_parameter_logistic."""
 import numpy as np
 import pytest
-from moirais.fn.irt4pl import four_parameter_logistic
+from morie.fn.irt4pl import four_parameter_logistic
 
 
 def test_irt4pl_basic():

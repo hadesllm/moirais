@@ -1,6 +1,6 @@
 """Tests for kendall_tau_b."""
 import numpy as np, pytest
-from moirais.fn.kendt import kendall_tau_b
+from morie.fn.kendt import kendall_tau_b
 
 class TestKendall:
     def test_perfect(self):

@@ -1,7 +1,7 @@
 """Tests for km008.kamath_ch2_attention_softmax_weights."""
 import numpy as np
 import pytest
-from moirais.fn.km008 import kamath_ch2_attention_softmax_weights
+from morie.fn.km008 import kamath_ch2_attention_softmax_weights
 
 
 def test_km008_basic():

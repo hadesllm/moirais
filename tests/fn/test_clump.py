@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.clump — LD clumping."""
+"""Tests for morie.fn.clump — LD clumping."""
 import numpy as np
 import pytest
-from moirais.fn.clump import ld_clumping
+from morie.fn.clump import ld_clumping
 
 
 class TestLDClumping:

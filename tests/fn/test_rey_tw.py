@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rey_tw — Tweedie regression."""
+"""Tests for morie.fn.rey_tw — Tweedie regression."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.rey_tw import rey_tw
+from morie.fn.rey_tw import rey_tw
 
 
 class TestReyTw:

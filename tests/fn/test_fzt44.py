@@ -1,7 +1,7 @@
 """Tests for fzt44.fauzi_thm4_4_mrl_normality."""
 import numpy as np
 import pytest
-from moirais.fn.fzt44 import fauzi_thm4_4_mrl_normality
+from morie.fn.fzt44 import fauzi_thm4_4_mrl_normality
 
 
 def test_fzt44_basic():

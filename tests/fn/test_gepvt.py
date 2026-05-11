@@ -1,7 +1,7 @@
 """Test gepvt."""
 import numpy as np
 import pytest
-from moirais.fn.gepvt import gepvt
+from morie.fn.gepvt import gepvt
 
 
 def test_gepvt_basic():

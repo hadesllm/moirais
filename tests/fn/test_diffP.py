@@ -1,7 +1,7 @@
 """Tests for diffP.diffpool."""
 import numpy as np
 import pytest
-from moirais.fn.diffP import diffpool
+from morie.fn.diffP import diffpool
 
 
 def test_diffP_basic():

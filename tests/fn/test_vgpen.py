@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgpen -- Pentaspherical variogram"""
+"""Tests for morie.fn.vgpen -- Pentaspherical variogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgpen import vario_pentaspherical
+from morie.fn.vgpen import vario_pentaspherical
 
 
 class TestVarioPentaspherical:

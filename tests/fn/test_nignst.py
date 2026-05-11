@@ -1,7 +1,7 @@
 """Tests for nignst.normal_inv_gamma."""
 import numpy as np
 import pytest
-from moirais.fn.nignst import normal_inv_gamma
+from morie.fn.nignst import normal_inv_gamma
 
 
 def test_nignst_basic():

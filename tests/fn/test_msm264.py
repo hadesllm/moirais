@@ -1,7 +1,7 @@
 """Tests for msm264.mvsml_convolutional_nn_eq_14_3."""
 import numpy as np
 import pytest
-from moirais.fn.msm264 import mvsml_convolutional_nn_eq_14_3
+from morie.fn.msm264 import mvsml_convolutional_nn_eq_14_3
 
 
 def test_msm264_basic():

@@ -1,7 +1,7 @@
 """Tests for voltgr.vol_tgarch_fit."""
 import numpy as np
 import pytest
-from moirais.fn.voltgr import vol_tgarch_fit
+from morie.fn.voltgr import vol_tgarch_fit
 
 
 def test_voltgr_basic():

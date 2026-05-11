@@ -1,7 +1,7 @@
 """Test ar_to_reflection (ar2rc)."""
 import numpy as np
-from moirais.fn.ar2rc import ar_to_reflection, ar2rc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ar2rc import ar_to_reflection, ar2rc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAr2rc:

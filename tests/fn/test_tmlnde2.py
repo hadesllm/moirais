@@ -1,7 +1,7 @@
 """Tests for tmlnde2.tmle_nde_interventional."""
 import numpy as np
 import pytest
-from moirais.fn.tmlnde2 import tmle_nde_interventional
+from morie.fn.tmlnde2 import tmle_nde_interventional
 
 
 def test_tmlnde2_basic():

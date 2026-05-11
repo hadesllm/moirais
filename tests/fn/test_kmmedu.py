@@ -1,7 +1,7 @@
 """Tests for kmmedu.kamath_medusa_heads."""
 import numpy as np
 import pytest
-from moirais.fn.kmmedu import kamath_medusa_heads
+from morie.fn.kmmedu import kamath_medusa_heads
 
 
 def test_kmmedu_basic():

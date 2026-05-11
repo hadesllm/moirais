@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxtda -- Persistent homology spatial"""
+"""Tests for morie.fn.zxtda -- Persistent homology spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxtda import tda_persistent
+from morie.fn.zxtda import tda_persistent
 
 
 class TestTdaPersistent:

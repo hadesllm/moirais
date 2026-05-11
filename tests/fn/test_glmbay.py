@@ -1,7 +1,7 @@
 """Tests for glmbay.bayesian_glm."""
 import numpy as np
 import pytest
-from moirais.fn.glmbay import bayesian_glm
+from morie.fn.glmbay import bayesian_glm
 
 
 def test_glmbay_basic():

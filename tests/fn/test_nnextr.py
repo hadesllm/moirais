@@ -1,7 +1,7 @@
 """Tests for nnextr."""
 import numpy as np
 import pytest
-from moirais.fn.nnextr import nnextr
+from morie.fn.nnextr import nnextr
 
 
 def test_nnextr_basic():
@@ -27,5 +27,5 @@ def test_nnextr_no_data():
 
 
 def test_nnextr_alias():
-    from moirais.fn.nnextr import nnextr
+    from morie.fn.nnextr import nnextr
     assert nnextr is nnextr

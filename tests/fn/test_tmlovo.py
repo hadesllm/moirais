@@ -1,7 +1,7 @@
 """Tests for tmlovo.tmle_outcome_only_regr."""
 import numpy as np
 import pytest
-from moirais.fn.tmlovo import tmle_outcome_only_regr
+from morie.fn.tmlovo import tmle_outcome_only_regr
 
 
 def test_tmlovo_basic():

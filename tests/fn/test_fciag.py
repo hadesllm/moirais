@@ -1,7 +1,7 @@
 """Tests for fciag.fci_algorithm."""
 import numpy as np
 import pytest
-from moirais.fn.fciag import fci_algorithm
+from morie.fn.fciag import fci_algorithm
 
 
 def test_fciag_basic():

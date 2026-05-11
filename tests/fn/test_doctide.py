@@ -1,7 +1,7 @@
 """Tests for doctide.de_chaisemartin_dhaultfoeuille."""
 import numpy as np
 import pytest
-from moirais.fn.doctide import de_chaisemartin_dhaultfoeuille
+from morie.fn.doctide import de_chaisemartin_dhaultfoeuille
 
 
 def test_doctide_basic():

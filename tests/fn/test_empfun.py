@@ -1,7 +1,7 @@
 """Tests for empfun.empty_space_function."""
 import numpy as np
 import pytest
-from moirais.fn.empfun import empty_space_function
+from morie.fn.empfun import empty_space_function
 
 
 def test_empfun_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bwt -- RDD bandwidth selection."""
+"""Tests for morie.fn.bwt -- RDD bandwidth selection."""
 
 import numpy as np
 import pytest
-from moirais.fn.bwt import rdd_bandwidth
+from morie.fn.bwt import rdd_bandwidth
 
 
 class TestRDDBandwidth:

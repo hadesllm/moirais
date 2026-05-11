@@ -1,7 +1,7 @@
 """Test iteratively_reweighted_ls (irls)."""
 import numpy as np
-from moirais.fn.irls import iteratively_reweighted_ls, irls
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.irls import iteratively_reweighted_ls, irls
+from morie.fn._containers import DescriptiveResult
 
 
 class TestIrls:

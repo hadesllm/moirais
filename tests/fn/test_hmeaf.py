@@ -1,7 +1,7 @@
 """Tests for hmeaf.geron_error_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.hmeaf import geron_error_analysis
+from morie.fn.hmeaf import geron_error_analysis
 
 
 def test_hmeaf_basic():

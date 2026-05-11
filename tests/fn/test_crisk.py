@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.crisk — competing risks CIF."""
+"""Tests for morie.fn.crisk — competing risks CIF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.crisk import crisk
+from morie.fn.crisk import crisk
 
 
 class TestCrisk:

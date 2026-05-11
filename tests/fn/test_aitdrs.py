@@ -1,7 +1,7 @@
 """Tests for aitdrs.dirichlet_sample."""
 import numpy as np
 import pytest
-from moirais.fn.aitdrs import dirichlet_sample
+from morie.fn.aitdrs import dirichlet_sample
 
 
 def test_aitdrs_basic():

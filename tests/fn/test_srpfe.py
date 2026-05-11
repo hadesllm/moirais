@@ -1,7 +1,7 @@
 """Test srpfe."""
 import numpy as np
 import pytest
-from moirais.fn.srpfe import srpfe
+from morie.fn.srpfe import srpfe
 
 
 def test_srpfe_basic():

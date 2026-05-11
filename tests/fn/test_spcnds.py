@@ -1,7 +1,7 @@
 """Tests for spcnds.schabenberger_conditional_sim."""
 import numpy as np
 import pytest
-from moirais.fn.spcnds import schabenberger_conditional_sim
+from morie.fn.spcnds import schabenberger_conditional_sim
 
 
 def test_spcnds_basic():

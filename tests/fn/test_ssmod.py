@@ -1,7 +1,7 @@
 """Tests for ssmod.state_space_model."""
 import numpy as np
 import pytest
-from moirais.fn.ssmod import state_space_model
+from morie.fn.ssmod import state_space_model
 
 
 def test_ssmod_basic():

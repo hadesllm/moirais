@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dor -- Diagnostic Odds Ratio."""
+"""Tests for morie.fn.dor -- Diagnostic Odds Ratio."""
 
 import math
 import pytest
-from moirais.fn.dor import diagnostic_odds_ratio
+from morie.fn.dor import diagnostic_odds_ratio
 
 
 class TestDiagnosticOddsRatio:

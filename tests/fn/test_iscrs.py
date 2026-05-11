@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.iscrs."""
+"""Tests for morie.fn.iscrs."""
 
 import numpy as np
 import pytest
-from moirais.fn.iscrs import iscrs
+from morie.fn.iscrs import iscrs
 
 
 class TestIscrs:

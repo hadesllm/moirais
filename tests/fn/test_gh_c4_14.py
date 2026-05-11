@@ -1,7 +1,7 @@
 """Tests for gh_c4_14.ghosal_dp_fs_approx."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c4_14 import ghosal_dp_fs_approx
+from morie.fn.gh_c4_14 import ghosal_dp_fs_approx
 
 
 def test_gh_c4_14_basic():

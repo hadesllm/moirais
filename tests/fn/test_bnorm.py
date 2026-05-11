@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bnorm -- Bayesian normal model."""
+"""Tests for morie.fn.bnorm -- Bayesian normal model."""
 
 import numpy as np
-from moirais.fn.bnorm import bayesian_normal
+from morie.fn.bnorm import bayesian_normal
 
 
 def test_returns_dict():

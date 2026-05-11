@@ -1,7 +1,7 @@
 """Tests for kmsp.kamath_sentencepiece_tokenizer."""
 import numpy as np
 import pytest
-from moirais.fn.kmsp import kamath_sentencepiece_tokenizer
+from morie.fn.kmsp import kamath_sentencepiece_tokenizer
 
 
 def test_kmsp_basic():

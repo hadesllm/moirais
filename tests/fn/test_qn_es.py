@@ -1,6 +1,6 @@
 """Tests for qn_estimator."""
 import numpy as np, pytest
-from moirais.fn.qn_es import qn_estimator
+from morie.fn.qn_es import qn_estimator
 
 
 class TestQnEstimator:

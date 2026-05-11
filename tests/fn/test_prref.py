@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.prref -- Procrustes reflection."""
+"""Tests for morie.fn.prref -- Procrustes reflection."""
 
 import numpy as np
-from moirais.fn.prref import procrustes_reflection, prref
+from morie.fn.prref import procrustes_reflection, prref
 
 
 def test_prref_smoke():

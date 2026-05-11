@@ -1,7 +1,7 @@
 """Tests for rgecgwvf.rangayyan_ecg_waveshape."""
 import numpy as np
 import pytest
-from moirais.fn.rgecgwvf import rangayyan_ecg_waveshape
+from morie.fn.rgecgwvf import rangayyan_ecg_waveshape
 
 
 def test_rgecgwvf_basic():

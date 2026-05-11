@@ -1,7 +1,7 @@
 """Test ghlam."""
 import numpy as np
 import pytest
-from moirais.fn.ghlam import ghlam
+from morie.fn.ghlam import ghlam
 
 
 def test_ghlam_basic():

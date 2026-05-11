@@ -1,7 +1,7 @@
 """Tests for rgerpflt.rangayyan_erp_artifact_remove."""
 import numpy as np
 import pytest
-from moirais.fn.rgerpflt import rangayyan_erp_artifact_remove
+from morie.fn.rgerpflt import rangayyan_erp_artifact_remove
 
 
 def test_rgerpflt_basic():

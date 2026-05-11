@@ -1,7 +1,7 @@
 """Tests for detfdt.detrended_fluctuation."""
 import numpy as np
 import pytest
-from moirais.fn.detfdt import detrended_fluctuation
+from morie.fn.detfdt import detrended_fluctuation
 
 
 def test_detfdt_basic():

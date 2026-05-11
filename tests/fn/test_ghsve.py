@@ -1,7 +1,7 @@
 """Tests for ghsve.ghosal_sieve_prior."""
 import numpy as np
 import pytest
-from moirais.fn.ghsve import ghosal_sieve_prior
+from morie.fn.ghsve import ghosal_sieve_prior
 
 
 def test_ghsve_basic():

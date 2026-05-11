@@ -1,7 +1,7 @@
 """Tests for bndvar.bound_variance_term."""
 import numpy as np
 import pytest
-from moirais.fn.bndvar import bound_variance_term
+from morie.fn.bndvar import bound_variance_term
 
 
 def test_bndvar_basic():

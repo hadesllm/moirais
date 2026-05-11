@@ -1,7 +1,7 @@
 """Test getec."""
 import numpy as np
 import pytest
-from moirais.fn.getec import getec
+from morie.fn.getec import getec
 
 
 def test_getec_basic():

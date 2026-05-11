@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgsmp -- Simple kriging prediction"""
+"""Tests for morie.fn.kgsmp -- Simple kriging prediction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgsmp import simple_kriging
+from morie.fn.kgsmp import simple_kriging
 
 
 class TestSimpleKriging:

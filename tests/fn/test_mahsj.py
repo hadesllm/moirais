@@ -1,7 +1,7 @@
 """Tests for mahsj.ma_hksj_t_pi."""
 import numpy as np
 import pytest
-from moirais.fn.mahsj import ma_hksj_t_pi
+from morie.fn.mahsj import ma_hksj_t_pi
 
 
 def test_mahsj_basic():

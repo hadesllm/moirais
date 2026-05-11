@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.plank -- Planck distribution."""
+"""Tests for morie.fn.plank -- Planck distribution."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.plank import plank
+from morie.fn.plank import plank
 
 
 def test_returns_dict():

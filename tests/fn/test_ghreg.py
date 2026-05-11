@@ -1,7 +1,7 @@
 """Tests for ghreg.ghosal_np_regression."""
 import numpy as np
 import pytest
-from moirais.fn.ghreg import ghosal_np_regression
+from morie.fn.ghreg import ghosal_np_regression
 
 
 def test_ghreg_basic():

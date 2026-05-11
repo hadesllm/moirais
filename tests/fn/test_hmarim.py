@@ -1,7 +1,7 @@
 """Tests for hmarim.geron_arima."""
 import numpy as np
 import pytest
-from moirais.fn.hmarim import geron_arima
+from morie.fn.hmarim import geron_arima
 
 
 def test_hmarim_basic():

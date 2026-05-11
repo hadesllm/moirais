@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.gform — G-formula."""
+"""Tests for morie.fn.gform — G-formula."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.gform import g_formula
+from morie.fn.gform import g_formula
 
 
 class TestGFormula:

@@ -1,7 +1,7 @@
 """Tests for deepF.deepfm."""
 import numpy as np
 import pytest
-from moirais.fn.deepF import deepfm
+from morie.fn.deepF import deepfm
 
 
 def test_deepF_basic():

@@ -1,7 +1,7 @@
 """Test cksim."""
 import numpy as np
 import pytest
-from moirais.fn.cksim import cksim
+from morie.fn.cksim import cksim
 
 
 def test_cksim_basic():

@@ -1,7 +1,7 @@
 """Test abemf."""
 import numpy as np
 import pytest
-from moirais.fn.abemf import abemf
+from morie.fn.abemf import abemf
 
 
 def test_abemf_basic():

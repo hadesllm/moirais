@@ -1,6 +1,6 @@
 """Tests for biscn (bisection root finding)."""
 import math
-from moirais.fn.biscn import bisection_root
+from morie.fn.biscn import bisection_root
 
 
 def test_bisection_sqrt2():

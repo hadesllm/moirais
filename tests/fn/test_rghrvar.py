@@ -1,7 +1,7 @@
 """Tests for rghrvar.rangayyan_hrv_ar_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.rghrvar import rangayyan_hrv_ar_ratio
+from morie.fn.rghrvar import rangayyan_hrv_ar_ratio
 
 
 def test_rghrvar_basic():

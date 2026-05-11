@@ -1,7 +1,7 @@
 """Tests for chnntp.channel_capacity."""
 import numpy as np
 import pytest
-from moirais.fn.chnntp import channel_capacity
+from morie.fn.chnntp import channel_capacity
 
 
 def test_chnntp_basic():

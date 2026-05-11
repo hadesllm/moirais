@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rskrd — risk reclassification NRI."""
+"""Tests for morie.fn.rskrd — risk reclassification NRI."""
 
 import pytest
 import numpy as np
-from moirais.fn.rskrd import risk_reclassification
-from moirais.fn._containers import ESRes
+from morie.fn.rskrd import risk_reclassification
+from morie.fn._containers import ESRes
 
 
 class TestRiskReclassification:

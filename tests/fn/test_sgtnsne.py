@@ -1,7 +1,7 @@
 """Tests for sgtnsne.sgt_isomap."""
 import numpy as np
 import pytest
-from moirais.fn.sgtnsne import sgt_isomap
+from morie.fn.sgtnsne import sgt_isomap
 
 
 def test_sgtnsne_basic():

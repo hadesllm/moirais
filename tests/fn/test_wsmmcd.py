@@ -1,7 +1,7 @@
 """Tests for wsmmcd.wasserman_mcdiarmid."""
 import numpy as np
 import pytest
-from moirais.fn.wsmmcd import wasserman_mcdiarmid
+from morie.fn.wsmmcd import wasserman_mcdiarmid
 
 
 def test_wsmmcd_basic():

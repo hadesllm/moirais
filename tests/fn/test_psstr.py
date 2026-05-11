@@ -1,6 +1,6 @@
 """Tests for propensity_stratify."""
 import numpy as np, pytest
-from moirais.fn.psstr import propensity_stratify
+from morie.fn.psstr import propensity_stratify
 
 class TestPSStratify:
     def test_basic(self):

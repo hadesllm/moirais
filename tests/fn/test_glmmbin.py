@@ -1,7 +1,7 @@
 """Tests for glmmbin."""
 import numpy as np
 import pytest
-from moirais.fn.glmmbin import glmmbin
+from morie.fn.glmmbin import glmmbin
 
 
 def test_glmmbin_basic():
@@ -27,5 +27,5 @@ def test_glmmbin_no_data():
 
 
 def test_glmmbin_alias():
-    from moirais.fn.glmmbin import glmmbin
+    from morie.fn.glmmbin import glmmbin
     assert glmmbin is glmmbin

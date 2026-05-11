@@ -1,7 +1,7 @@
 """Tests for birl.bayesian_irl."""
 import numpy as np
 import pytest
-from moirais.fn.birl import bayesian_irl
+from morie.fn.birl import bayesian_irl
 
 
 def test_birl_basic():

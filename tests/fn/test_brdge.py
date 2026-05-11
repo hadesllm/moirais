@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.brdge -- Bayesian ridge regression."""
+"""Tests for morie.fn.brdge -- Bayesian ridge regression."""
 
 import numpy as np
-from moirais.fn.brdge import bayesian_ridge
+from morie.fn.brdge import bayesian_ridge
 
 
 def test_returns_dict():

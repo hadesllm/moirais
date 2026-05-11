@@ -1,7 +1,7 @@
 """Tests for cncpat.controlnet_attach."""
 import numpy as np
 import pytest
-from moirais.fn.cncpat import controlnet_attach
+from morie.fn.cncpat import controlnet_attach
 
 
 def test_cncpat_basic():

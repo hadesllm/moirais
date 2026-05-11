@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.t1smp -- One-sample t-test."""
+"""Tests for morie.fn.t1smp -- One-sample t-test."""
 
 import pytest
-from moirais.fn.t1smp import one_sample_t_test
+from morie.fn.t1smp import one_sample_t_test
 
 
 class TestOneSampleTTest:

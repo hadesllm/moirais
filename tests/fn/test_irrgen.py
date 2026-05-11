@@ -1,7 +1,7 @@
 """Test irrgen."""
 import numpy as np
 import pytest
-from moirais.fn.irrgen import irrgen
+from morie.fn.irrgen import irrgen
 
 
 def test_irrgen_basic():

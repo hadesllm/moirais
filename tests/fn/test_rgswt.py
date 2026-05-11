@@ -1,7 +1,7 @@
 """Tests for rgswt.rangayyan_swt."""
 import numpy as np
 import pytest
-from moirais.fn.rgswt import rangayyan_swt
+from morie.fn.rgswt import rangayyan_swt
 
 
 def test_rgswt_basic():

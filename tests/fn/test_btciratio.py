@@ -1,7 +1,7 @@
 """Tests for btciratio.boot_ci_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.btciratio import boot_ci_ratio
+from morie.fn.btciratio import boot_ci_ratio
 
 
 def test_btciratio_basic():

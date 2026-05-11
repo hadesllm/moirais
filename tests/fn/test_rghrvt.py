@@ -1,7 +1,7 @@
 """Tests for rghrvt.rangayyan_hrv_time_domain."""
 import numpy as np
 import pytest
-from moirais.fn.rghrvt import rangayyan_hrv_time_domain
+from morie.fn.rghrvt import rangayyan_hrv_time_domain
 
 
 def test_rghrvt_basic():

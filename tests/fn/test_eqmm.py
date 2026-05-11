@@ -1,7 +1,7 @@
 """Tests for eqmm.equating_mean_mean."""
 import numpy as np
 import pytest
-from moirais.fn.eqmm import equating_mean_mean
+from morie.fn.eqmm import equating_mean_mean
 
 
 def test_eqmm_basic():

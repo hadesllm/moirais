@@ -1,7 +1,7 @@
 """Test slope_sign_changes_fn."""
 import numpy as np
-from moirais.fn.sscfn import slope_sign_changes_fn, alias
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sscfn import slope_sign_changes_fn, alias
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSlopeSignChangesFn:

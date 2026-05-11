@@ -1,7 +1,7 @@
 """Tests for grmom.geron_momentum_update."""
 import numpy as np
 import pytest
-from moirais.fn.grmom import geron_momentum_update
+from morie.fn.grmom import geron_momentum_update
 
 
 def test_grmom_basic():

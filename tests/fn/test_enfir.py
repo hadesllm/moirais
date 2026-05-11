@@ -1,7 +1,7 @@
 """Test enfir."""
 import numpy as np
 import pytest
-from moirais.fn.enfir import enfir
+from morie.fn.enfir import enfir
 
 
 def test_enfir_basic():

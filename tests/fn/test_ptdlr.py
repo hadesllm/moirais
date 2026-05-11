@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptdlr -- Delaunay residuals"""
+"""Tests for morie.fn.ptdlr -- Delaunay residuals"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptdlr import pp_delaunay_resid
+from morie.fn.ptdlr import pp_delaunay_resid
 
 
 class TestPpDelaunayResid:

@@ -1,7 +1,7 @@
 """Tests for rgvagadp.rangayyan_vag_adaptive_tfd."""
 import numpy as np
 import pytest
-from moirais.fn.rgvagadp import rangayyan_vag_adaptive_tfd
+from morie.fn.rgvagadp import rangayyan_vag_adaptive_tfd
 
 
 def test_rgvagadp_basic():

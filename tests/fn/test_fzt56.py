@@ -1,7 +1,7 @@
 """Tests for fzt56.fauzi_thm5_6_bdfree_ks_equiv."""
 import numpy as np
 import pytest
-from moirais.fn.fzt56 import fauzi_thm5_6_bdfree_ks_equiv
+from morie.fn.fzt56 import fauzi_thm5_6_bdfree_ks_equiv
 
 
 def test_fzt56_basic():

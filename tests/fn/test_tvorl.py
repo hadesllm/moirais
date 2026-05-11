@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tvorl — Voronoi on flat torus."""
+"""Tests for morie.fn.tvorl — Voronoi on flat torus."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tvorl import torus_voronoi
+from morie.fn.tvorl import torus_voronoi
 
 
 class TestTorusVoronoi:

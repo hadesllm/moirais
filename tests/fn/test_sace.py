@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.sace -- SACE estimator."""
+"""Tests for morie.fn.sace -- SACE estimator."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.sace import sace as sace_fn
-from moirais.fn._containers import ESRes
+from morie.fn.sace import sace as sace_fn
+from morie.fn._containers import ESRes
 
 
 class TestSACE:

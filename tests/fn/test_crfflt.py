@@ -1,7 +1,7 @@
 """Tests for crfflt.christiano_fitzgerald."""
 import numpy as np
 import pytest
-from moirais.fn.crfflt import christiano_fitzgerald
+from morie.fn.crfflt import christiano_fitzgerald
 
 
 def test_crfflt_basic():

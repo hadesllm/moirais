@@ -1,7 +1,7 @@
 """Test azmeqa."""
 import numpy as np
 import pytest
-from moirais.fn.azmeqa import azmeqa
+from morie.fn.azmeqa import azmeqa
 
 
 def test_azmeqa_basic():

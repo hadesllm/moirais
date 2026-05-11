@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.lancs -- Lanczos algorithm."""
+"""Tests for morie.fn.lancs -- Lanczos algorithm."""
 
 import numpy as np
-from moirais.fn.lancs import lanczos, lancs
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lancs import lanczos, lancs
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLancs:

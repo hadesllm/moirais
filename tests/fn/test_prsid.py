@@ -1,8 +1,8 @@
 """Test parseval_identity (prsid)."""
 import numpy as np
 
-from moirais.fn.prsid import parseval_identity, prsid
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prsid import parseval_identity, prsid
+from morie.fn._containers import DescriptiveResult
 
 
 class TestParsevalIdentity:

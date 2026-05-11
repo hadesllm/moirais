@@ -1,6 +1,6 @@
 """Test emirt."""
 import numpy as np
-from moirais.fn.emirt import em_irt_estimate
+from morie.fn.emirt import em_irt_estimate
 
 
 def test_emirt_basic():

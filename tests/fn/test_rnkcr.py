@@ -1,6 +1,6 @@
 """Tests for rank_correlation_test."""
 import numpy as np, pytest
-from moirais.fn.rnkcr import rank_correlation_test
+from morie.fn.rnkcr import rank_correlation_test
 
 
 class TestRankCorrelation:

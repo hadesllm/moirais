@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.odose — OTIS dose-response."""
+"""Tests for morie.fn.odose — OTIS dose-response."""
 
 import pytest
 import numpy as np
-from moirais.fn.odose import otis_dose_response
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.odose import otis_dose_response
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOtisDoseResponse:

@@ -1,7 +1,7 @@
 """Tests for autoI.autoint."""
 import numpy as np
 import pytest
-from moirais.fn.autoI import autoint
+from morie.fn.autoI import autoint
 
 
 def test_autoI_basic():

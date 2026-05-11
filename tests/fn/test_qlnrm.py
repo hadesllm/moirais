@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qlnrm — lognormal quantile function."""
+"""Tests for morie.fn.qlnrm — lognormal quantile function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qlnrm import qlnrm
+from morie.fn.qlnrm import qlnrm
 
 
 class TestQlnrm:

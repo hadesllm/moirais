@@ -1,7 +1,7 @@
 """Tests for bicsm.bic_score_dag."""
 import numpy as np
 import pytest
-from moirais.fn.bicsm import bic_score_dag
+from morie.fn.bicsm import bic_score_dag
 
 
 def test_bicsm_basic():

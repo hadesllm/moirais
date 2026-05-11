@@ -1,7 +1,7 @@
 """Tests for vecmf.vecm_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.vecmf import vecm_estimation
+from morie.fn.vecmf import vecm_estimation
 
 
 def test_vecmf_basic():

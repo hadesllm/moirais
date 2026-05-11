@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.pcana import pcana
+from morie.fn.pcana import pcana
 
 
 class TestPCANA:

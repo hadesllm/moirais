@@ -1,7 +1,7 @@
 """Tests for rgosflt.rangayyan_order_stat_flt."""
 import numpy as np
 import pytest
-from moirais.fn.rgosflt import rangayyan_order_stat_flt
+from morie.fn.rgosflt import rangayyan_order_stat_flt
 
 
 def test_rgosflt_basic():

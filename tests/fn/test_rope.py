@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rope -- Region of Practical Equivalence."""
+"""Tests for morie.fn.rope -- Region of Practical Equivalence."""
 
 import numpy as np
 import pytest
-from moirais.fn.rope import rope_test
+from morie.fn.rope import rope_test
 
 
 class TestROPE:

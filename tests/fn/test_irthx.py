@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.irthx -- heteroskedastic IRT."""
+"""Tests for morie.fn.irthx -- heteroskedastic IRT."""
 import numpy as np
-from moirais.fn.irthx import irt_heteroskedastic, irthx
+from morie.fn.irthx import irt_heteroskedastic, irthx
 
 
 def test_alias():

@@ -1,6 +1,6 @@
 """Tests for ramsey_reset."""
 import numpy as np, pytest
-from moirais.fn.rmsyt import ramsey_reset
+from morie.fn.rmsyt import ramsey_reset
 
 class TestRESET:
     def test_linear_ok(self):

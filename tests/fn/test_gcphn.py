@@ -1,7 +1,7 @@
 """Test gcphn."""
 import numpy as np
 import pytest
-from moirais.fn.gcphn import gcphn
+from morie.fn.gcphn import gcphn
 
 
 def test_gcphn_basic():

@@ -1,7 +1,7 @@
 """Test matrwl."""
 import numpy as np
 import pytest
-from moirais.fn.matrwl import matrwl
+from morie.fn.matrwl import matrwl
 
 
 def test_matrwl_basic():

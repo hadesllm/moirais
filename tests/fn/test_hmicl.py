@@ -1,7 +1,7 @@
 """Tests for hmicl.geron_in_context_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmicl import geron_in_context_learning
+from morie.fn.hmicl import geron_in_context_learning
 
 
 def test_hmicl_basic():

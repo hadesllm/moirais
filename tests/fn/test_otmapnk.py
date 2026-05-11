@@ -1,7 +1,7 @@
 """Tests for otmapnk.ot_map_neural_kantorovich."""
 import numpy as np
 import pytest
-from moirais.fn.otmapnk import ot_map_neural_kantorovich
+from morie.fn.otmapnk import ot_map_neural_kantorovich
 
 
 def test_otmapnk_basic():

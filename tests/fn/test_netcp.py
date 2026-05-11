@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netcp — Network comparison test."""
+"""Tests for morie.fn.netcp — Network comparison test."""
 
 import numpy as np
 import pytest
-from moirais.fn.netcp import network_compare
+from morie.fn.netcp import network_compare
 
 
 class TestNetworkCompare:

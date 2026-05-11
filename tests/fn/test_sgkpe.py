@@ -1,6 +1,6 @@
 """Tests for kriging prediction error."""
 import numpy as np
-from moirais.fn.sgkpe import sgkpe
+from morie.fn.sgkpe import sgkpe
 
 
 def test_sgkpe_smoke():
@@ -14,7 +14,7 @@ def test_sgkpe_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgkpe import cheatsheet
+    from morie.fn.sgkpe import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

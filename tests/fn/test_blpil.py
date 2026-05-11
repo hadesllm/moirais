@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.blpil -- naive baseline estimator."""
+"""Tests for morie.fn.blpil -- naive baseline estimator."""
 
 import pandas as pd
-from moirais.fn.blpil import naive_baseline, blpil
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.blpil import naive_baseline, blpil
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBlpil:

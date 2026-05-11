@@ -1,7 +1,7 @@
 """Tests for hmmnl.geron_multinomial_logistic."""
 import numpy as np
 import pytest
-from moirais.fn.hmmnl import geron_multinomial_logistic
+from morie.fn.hmmnl import geron_multinomial_logistic
 
 
 def test_hmmnl_basic():

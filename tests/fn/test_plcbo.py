@@ -1,7 +1,7 @@
 """Tests for plcbo.placebo_refutation."""
 import numpy as np
 import pytest
-from moirais.fn.plcbo import placebo_refutation
+from morie.fn.plcbo import placebo_refutation
 
 
 def test_plcbo_basic():

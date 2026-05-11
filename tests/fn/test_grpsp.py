@@ -1,7 +1,7 @@
 """Test group_sparse_decompose (grpsp)."""
 import numpy as np
-from moirais.fn.grpsp import group_sparse_decompose, grpsp
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.grpsp import group_sparse_decompose, grpsp
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGrpsp:

@@ -1,10 +1,10 @@
-"""Tests for moirais.crypto.keystore — Encrypted key pair storage."""
+"""Tests for morie.crypto.keystore — Encrypted key pair storage."""
 
 import os
 
 import pytest
 
-from moirais.crypto.keystore import create_keystore, list_keys, load_keypair, store_keypair
+from morie.crypto.keystore import create_keystore, list_keys, load_keypair, store_keypair
 
 
 class TestKeystore:

@@ -1,7 +1,7 @@
 """Tests for jodirc.joseph_direct_multistep."""
 import numpy as np
 import pytest
-from moirais.fn.jodirc import joseph_direct_multistep
+from morie.fn.jodirc import joseph_direct_multistep
 
 
 def test_jodirc_basic():

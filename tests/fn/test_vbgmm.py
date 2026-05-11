@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.vbgmm -- Variational Bayes GMM."""
+"""Tests for morie.fn.vbgmm -- Variational Bayes GMM."""
 
 import numpy as np
-from moirais.fn.vbgmm import vb_gaussian_mixture
+from morie.fn.vbgmm import vb_gaussian_mixture
 
 
 def test_returns_dict():

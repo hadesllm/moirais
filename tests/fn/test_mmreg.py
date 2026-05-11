@@ -1,7 +1,7 @@
 """Tests for mmreg.mm_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.mmreg import mm_estimator
+from morie.fn.mmreg import mm_estimator
 
 
 def test_mmreg_basic():

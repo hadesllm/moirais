@@ -1,7 +1,7 @@
 """Tests for matSym.matrix_symbolic."""
 import numpy as np
 import pytest
-from moirais.fn.matSym import matrix_symbolic
+from morie.fn.matSym import matrix_symbolic
 
 
 def test_matSym_basic():

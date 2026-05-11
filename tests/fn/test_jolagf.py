@@ -1,7 +1,7 @@
 """Tests for jolagf.joseph_lag_feature."""
 import numpy as np
 import pytest
-from moirais.fn.jolagf import joseph_lag_feature
+from morie.fn.jolagf import joseph_lag_feature
 
 
 def test_jolagf_basic():

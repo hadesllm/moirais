@@ -1,7 +1,7 @@
 """Tests for trupek.trust_region."""
 import numpy as np
 import pytest
-from moirais.fn.trupek import trust_region
+from morie.fn.trupek import trust_region
 
 
 def test_trupek_basic():

@@ -1,7 +1,7 @@
 """Test dunn."""
 import numpy as np
 import pytest
-from moirais.fn.dunn import dunn_test
+from morie.fn.dunn import dunn_test
 
 
 def test_dunn_basic():

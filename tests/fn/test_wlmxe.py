@@ -1,7 +1,7 @@
 """Test wlmxe."""
 import numpy as np
 import pytest
-from moirais.fn.wlmxe import wlmxe
+from morie.fn.wlmxe import wlmxe
 
 
 def test_wlmxe_basic():

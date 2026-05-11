@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.barcd -- CSP backtracking solver."""
+"""Tests for morie.fn.barcd -- CSP backtracking solver."""
 
-from moirais.fn.barcd import csp_backtrack, barcd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.barcd import csp_backtrack, barcd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBarcd:

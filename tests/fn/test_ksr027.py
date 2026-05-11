@@ -1,7 +1,7 @@
 """Tests for ksr027.kosorok_ch2_law_large_numbers_pointwise."""
 import numpy as np
 import pytest
-from moirais.fn.ksr027 import kosorok_ch2_law_large_numbers_pointwise
+from morie.fn.ksr027 import kosorok_ch2_law_large_numbers_pointwise
 
 
 def test_ksr027_basic():

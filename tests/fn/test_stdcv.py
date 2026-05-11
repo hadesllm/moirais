@@ -1,7 +1,7 @@
 """Tests for stdcv."""
 import numpy as np
 import pytest
-from moirais.fn.stdcv import stdcv
+from morie.fn.stdcv import stdcv
 
 
 def test_stdcv_basic():
@@ -27,5 +27,5 @@ def test_stdcv_no_data():
 
 
 def test_stdcv_alias():
-    from moirais.fn.stdcv import stdcv
+    from morie.fn.stdcv import stdcv
     assert stdcv is stdcv

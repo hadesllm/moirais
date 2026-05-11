@@ -1,7 +1,7 @@
 """Tests for mosum.mosum."""
 import numpy as np
 import pytest
-from moirais.fn.mosum import mosum
+from morie.fn.mosum import mosum
 
 
 def test_mosum_basic():

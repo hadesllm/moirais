@@ -1,7 +1,7 @@
 """Tests for ghs028.ghosal_ch3_polya_tree_first_two_moments."""
 import numpy as np
 import pytest
-from moirais.fn.ghs028 import ghosal_ch3_polya_tree_first_two_moments
+from morie.fn.ghs028 import ghosal_ch3_polya_tree_first_two_moments
 
 
 def test_ghs028_basic():

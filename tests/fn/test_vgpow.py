@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgpow -- Power variogram model"""
+"""Tests for morie.fn.vgpow -- Power variogram model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgpow import vario_power
+from morie.fn.vgpow import vario_power
 
 
 class TestVarioPower:

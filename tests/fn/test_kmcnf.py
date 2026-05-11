@@ -1,7 +1,7 @@
 """Tests for kmcnf: KM confidence intervals."""
 import numpy as np
 import pytest
-from moirais.fn.kmcnf import kmcnf
+from morie.fn.kmcnf import kmcnf
 
 
 def _make_data(n=200, rate=0.5, censor_rate=0.2, seed=0):

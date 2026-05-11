@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.snttm — sentence time served."""
+"""Tests for morie.fn.snttm — sentence time served."""
 
 import pytest
 import numpy as np
-from moirais.fn.snttm import sentence_time_served
-from moirais.fn._containers import ESRes
+from morie.fn.snttm import sentence_time_served
+from morie.fn._containers import ESRes
 
 
 class TestSentenceTimeServed:

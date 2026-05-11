@@ -1,7 +1,7 @@
 """Tests for lupiv."""
 import numpy as np
 import pytest
-from moirais.fn.lupiv import lupiv
+from morie.fn.lupiv import lupiv
 
 
 def test_lupiv_basic():
@@ -27,5 +27,5 @@ def test_lupiv_no_data():
 
 
 def test_lupiv_alias():
-    from moirais.fn.lupiv import lupiv
+    from morie.fn.lupiv import lupiv
     assert lupiv is lupiv

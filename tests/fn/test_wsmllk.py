@@ -1,7 +1,7 @@
 """Tests for wsmllk.wasserman_log_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.wsmllk import wasserman_log_likelihood
+from morie.fn.wsmllk import wasserman_log_likelihood
 
 
 def test_wsmllk_basic():

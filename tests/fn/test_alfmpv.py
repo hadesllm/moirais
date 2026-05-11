@@ -1,7 +1,7 @@
 """Tests for alfmpv.alphafold_multimer."""
 import numpy as np
 import pytest
-from moirais.fn.alfmpv import alphafold_multimer
+from morie.fn.alfmpv import alphafold_multimer
 
 
 def test_alfmpv_basic():

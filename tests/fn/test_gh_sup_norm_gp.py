@@ -1,7 +1,7 @@
 """Tests for gh_sup_norm_gp.ghosal_sup_norm_contraction."""
 import numpy as np
 import pytest
-from moirais.fn.gh_sup_norm_gp import ghosal_sup_norm_contraction
+from morie.fn.gh_sup_norm_gp import ghosal_sup_norm_contraction
 
 
 def test_gh_sup_norm_gp_basic():

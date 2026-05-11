@@ -1,7 +1,7 @@
 """Tests for bdmnto.bound_monot_outcome."""
 import numpy as np
 import pytest
-from moirais.fn.bdmnto import bound_monot_outcome
+from morie.fn.bdmnto import bound_monot_outcome
 
 
 def test_bdmnto_basic():

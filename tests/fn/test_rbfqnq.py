@@ -1,7 +1,7 @@
 """Tests for rbfqnq."""
 import numpy as np
 import pytest
-from moirais.fn.rbfqnq import rbfqnq
+from morie.fn.rbfqnq import rbfqnq
 
 
 def test_rbfqnq_basic():
@@ -27,5 +27,5 @@ def test_rbfqnq_no_data():
 
 
 def test_rbfqnq_alias():
-    from moirais.fn.rbfqnq import rbfqnq
+    from morie.fn.rbfqnq import rbfqnq
     assert rbfqnq is rbfqnq

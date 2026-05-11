@@ -1,7 +1,7 @@
 """Test tsarm."""
 import numpy as np
 import pytest
-from moirais.fn.tsarm import tsarm
+from morie.fn.tsarm import tsarm
 
 
 def test_tsarm_basic():

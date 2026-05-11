@@ -1,7 +1,7 @@
 """Tests for shfrm.shared_frailty_marginal."""
 import numpy as np
 import pytest
-from moirais.fn.shfrm import shared_frailty_marginal
+from morie.fn.shfrm import shared_frailty_marginal
 
 
 def test_shfrm_basic():

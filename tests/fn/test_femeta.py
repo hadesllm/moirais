@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.femeta -- fixed-effects meta-analysis."""
+"""Tests for morie.fn.femeta -- fixed-effects meta-analysis."""
 
 import pytest
-from moirais.fn.femeta import fixed_effects_meta
+from morie.fn.femeta import fixed_effects_meta
 
 
 class TestFixedEffectsMeta:

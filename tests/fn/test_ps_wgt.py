@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.ps_wgt — Post-stratification weights."""
+"""Tests for morie.fn.ps_wgt — Post-stratification weights."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.ps_wgt import poststratification_weights
+from morie.fn.ps_wgt import poststratification_weights
 
 
 @pytest.fixture()

@@ -1,7 +1,7 @@
 """Tests for sammkr.sam_multi_mask_rank."""
 import numpy as np
 import pytest
-from moirais.fn.sammkr import sam_multi_mask_rank
+from morie.fn.sammkr import sam_multi_mask_rank
 
 
 def test_sammkr_basic():

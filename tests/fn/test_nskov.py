@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nskov — Non-stationary kernel covariance."""
+"""Tests for morie.fn.nskov — Non-stationary kernel covariance."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nskov import nskov
+from morie.fn.nskov import nskov
 
 
 class TestNskov:

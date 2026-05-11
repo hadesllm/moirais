@@ -1,7 +1,7 @@
 """Tests for mahks.ma_hartung_knapp."""
 import numpy as np
 import pytest
-from moirais.fn.mahks import ma_hartung_knapp
+from morie.fn.mahks import ma_hartung_knapp
 
 
 def test_mahks_basic():

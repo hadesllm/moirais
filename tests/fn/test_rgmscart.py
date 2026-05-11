@@ -1,7 +1,7 @@
 """Tests for rgmscart.rangayyan_muscle_artifact."""
 import numpy as np
 import pytest
-from moirais.fn.rgmscart import rangayyan_muscle_artifact
+from morie.fn.rgmscart import rangayyan_muscle_artifact
 
 
 def test_rgmscart_basic():

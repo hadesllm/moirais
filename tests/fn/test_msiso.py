@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msiso -- Isotonic regression for MDS"""
+"""Tests for morie.fn.msiso -- Isotonic regression for MDS"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msiso import isotonic_reg
+from morie.fn.msiso import isotonic_reg
 
 
 class TestIsotonicReg:

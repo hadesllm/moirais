@@ -1,7 +1,7 @@
 """Tests for plsqs.pls_qsar."""
 import numpy as np
 import pytest
-from moirais.fn.plsqs import pls_qsar
+from morie.fn.plsqs import pls_qsar
 
 
 def test_plsqs_basic():

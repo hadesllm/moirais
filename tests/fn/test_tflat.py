@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tflat — flat torus."""
+"""Tests for morie.fn.tflat — flat torus."""
 
 import pytest
 
-from moirais.fn.tflat import flat_torus
+from morie.fn.tflat import flat_torus
 
 
 class TestFlatTorus:

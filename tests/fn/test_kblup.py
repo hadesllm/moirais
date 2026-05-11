@@ -1,7 +1,7 @@
 """Tests for kblup.kernel_blup."""
 import numpy as np
 import pytest
-from moirais.fn.kblup import kernel_blup
+from morie.fn.kblup import kernel_blup
 
 
 def test_kblup_basic():

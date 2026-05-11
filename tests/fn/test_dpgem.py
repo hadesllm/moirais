@@ -1,7 +1,7 @@
 """Tests for dpgem.gem_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.dpgem import gem_distribution
+from morie.fn.dpgem import gem_distribution
 
 
 def test_dpgem_basic():

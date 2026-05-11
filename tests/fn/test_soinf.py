@@ -1,7 +1,7 @@
 """Test soinf."""
 import numpy as np
 import pytest
-from moirais.fn.soinf import soinf
+from morie.fn.soinf import soinf
 
 
 def test_soinf_basic():

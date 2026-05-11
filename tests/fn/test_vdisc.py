@@ -1,7 +1,7 @@
 """Tests for vdisc -- discriminant validity (HTMT)."""
 import numpy as np
-from moirais.fn.vdisc import discriminant_validity
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.vdisc import discriminant_validity
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDiscriminantValidity:

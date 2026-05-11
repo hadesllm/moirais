@@ -1,7 +1,7 @@
 """Tests for matvar.matern_variogram_model."""
 import numpy as np
 import pytest
-from moirais.fn.matvar import matern_variogram_model
+from morie.fn.matvar import matern_variogram_model
 
 
 def test_matvar_basic():

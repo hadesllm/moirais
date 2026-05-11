@@ -1,7 +1,7 @@
 """Tests for agvhdt.alphazero_value_head."""
 import numpy as np
 import pytest
-from moirais.fn.agvhdt import alphazero_value_head
+from morie.fn.agvhdt import alphazero_value_head
 
 
 def test_agvhdt_basic():

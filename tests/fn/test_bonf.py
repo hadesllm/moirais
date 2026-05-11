@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bonf -- Bonferroni correction."""
+"""Tests for morie.fn.bonf -- Bonferroni correction."""
 
 import pytest
-from moirais.fn.bonf import bonferroni_correction
+from morie.fn.bonf import bonferroni_correction
 
 
 class TestBonferroni:

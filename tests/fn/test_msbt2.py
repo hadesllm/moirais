@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msbt2 -- MDS bootstrap confidence"""
+"""Tests for morie.fn.msbt2 -- MDS bootstrap confidence"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msbt2 import mds_bootstrap
+from morie.fn.msbt2 import mds_bootstrap
 
 
 class TestMdsBootstrap:

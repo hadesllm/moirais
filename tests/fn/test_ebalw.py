@@ -1,7 +1,7 @@
 """Tests for ebalw.entropy_balancing."""
 import numpy as np
 import pytest
-from moirais.fn.ebalw import entropy_balancing
+from morie.fn.ebalw import entropy_balancing
 
 
 def test_ebalw_basic():

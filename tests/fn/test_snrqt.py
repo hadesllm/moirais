@@ -1,6 +1,6 @@
 """Test snr_quantization (snrqt)."""
-from moirais.fn.snrqt import snr_quantization, snrqt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.snrqt import snr_quantization, snrqt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSnrqt:

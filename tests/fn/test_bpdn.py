@@ -1,7 +1,7 @@
 """Test basis_pursuit (bpdn)."""
 import numpy as np
-from moirais.fn.bpdn import basis_pursuit, bpdn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bpdn import basis_pursuit, bpdn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBpdn:

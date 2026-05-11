@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.adfts — Augmented Dickey-Fuller unit root test."""
+"""Tests for morie.fn.adfts — Augmented Dickey-Fuller unit root test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.adfts import adf_test, adfts
+from morie.fn.adfts import adf_test, adfts
 
 
 def _ar1(phi: float, n: int, seed: int = 0) -> np.ndarray:

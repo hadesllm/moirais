@@ -1,7 +1,7 @@
 """Test trtxi."""
 import numpy as np
 import pytest
-from moirais.fn.trtxi import trtxi
+from morie.fn.trtxi import trtxi
 
 
 def test_trtxi_basic():

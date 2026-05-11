@@ -1,7 +1,7 @@
 """Tests for rgseizwv.rangayyan_seizure_wavelet."""
 import numpy as np
 import pytest
-from moirais.fn.rgseizwv import rangayyan_seizure_wavelet
+from morie.fn.rgseizwv import rangayyan_seizure_wavelet
 
 
 def test_rgseizwv_basic():

@@ -1,7 +1,7 @@
 """Test stability_check (stbck)."""
 import numpy as np
-from moirais.fn.stbck import stability_check, stbck
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.stbck import stability_check, stbck
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStabilityCheck:

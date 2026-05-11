@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.umlag."""
+"""Tests for morie.fn.umlag."""
 
 import numpy as np
 import pytest
-from moirais.fn.umlag import umlag
+from morie.fn.umlag import umlag
 
 
 class TestUmlag:

@@ -1,7 +1,7 @@
 """Test arfit."""
 import numpy as np
 import pytest
-from moirais.fn.arfit import arfit
+from morie.fn.arfit import arfit
 
 
 def test_arfit_basic():

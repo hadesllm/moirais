@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxcpg -- Gaussian copula spatial"""
+"""Tests for morie.fn.zxcpg -- Gaussian copula spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxcpg import copula_gauss_sp
+from morie.fn.zxcpg import copula_gauss_sp
 
 
 class TestCopulaGaussSp:

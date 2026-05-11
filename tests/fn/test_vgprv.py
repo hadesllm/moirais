@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgprv -- Pairwise relative variogram"""
+"""Tests for morie.fn.vgprv -- Pairwise relative variogram"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgprv import pairwise_rel_vario
+from morie.fn.vgprv import pairwise_rel_vario
 
 
 class TestPairwiseRelVario:

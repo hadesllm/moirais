@@ -1,7 +1,7 @@
 """Tests for varcal.variant_calling."""
 import numpy as np
 import pytest
-from moirais.fn.varcal import variant_calling
+from morie.fn.varcal import variant_calling
 
 
 def test_varcal_basic():

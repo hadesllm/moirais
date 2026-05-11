@@ -1,7 +1,7 @@
 """Test ageve."""
 import numpy as np
 import pytest
-from moirais.fn.ageve import ageve
+from morie.fn.ageve import ageve
 
 
 def test_ageve_basic():

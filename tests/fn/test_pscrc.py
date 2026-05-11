@@ -1,7 +1,7 @@
 """Tests for pscrc.pscl_rollcall."""
 import numpy as np
 import pytest
-from moirais.fn.pscrc import pscl_rollcall
+from morie.fn.pscrc import pscl_rollcall
 
 
 def test_pscrc_basic():

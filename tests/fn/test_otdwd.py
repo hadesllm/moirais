@@ -1,7 +1,7 @@
 """Tests for otdwd.ot_doubly_stoch_proj."""
 import numpy as np
 import pytest
-from moirais.fn.otdwd import ot_doubly_stoch_proj
+from morie.fn.otdwd import ot_doubly_stoch_proj
 
 
 def test_otdwd_basic():

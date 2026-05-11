@@ -1,7 +1,7 @@
 """Tests for rgmemb.rangayyan_membrane_potential."""
 import numpy as np
 import pytest
-from moirais.fn.rgmemb import rangayyan_membrane_potential
+from morie.fn.rgmemb import rangayyan_membrane_potential
 
 
 def test_rgmemb_basic():

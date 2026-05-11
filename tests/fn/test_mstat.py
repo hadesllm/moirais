@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mstat -- Multi-state model."""
+"""Tests for morie.fn.mstat -- Multi-state model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mstat import mstat
+from morie.fn.mstat import mstat
 
 
 @pytest.fixture()
@@ -40,5 +40,5 @@ def test_rates_bounded(ms_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.mstat import cheatsheet
+    from morie.fn.mstat import cheatsheet
     assert "multi-state" in cheatsheet().lower()

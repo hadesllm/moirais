@@ -1,7 +1,7 @@
 """Tests for cyclE.cyclone_intensity."""
 import numpy as np
 import pytest
-from moirais.fn.cyclE import cyclone_intensity
+from morie.fn.cyclE import cyclone_intensity
 
 
 def test_cyclE_basic():

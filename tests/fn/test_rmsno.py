@@ -1,6 +1,6 @@
 """Test RMS normalization."""
 import numpy as np
-from moirais.fn.rmsno import rmsno
+from morie.fn.rmsno import rmsno
 
 
 def test_rmsno_basic():

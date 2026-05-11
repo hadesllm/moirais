@@ -1,7 +1,7 @@
 """Tests for gb_c2.gibbons_chi2_yates."""
 import numpy as np
 import pytest
-from moirais.fn.gb_c2 import gibbons_chi2_yates
+from morie.fn.gb_c2 import gibbons_chi2_yates
 
 
 def test_gb_c2_basic():

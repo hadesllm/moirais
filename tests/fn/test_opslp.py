@@ -1,7 +1,7 @@
 """Test opslp."""
 import numpy as np
 import pytest
-from moirais.fn.opslp import opslp
+from morie.fn.opslp import opslp
 
 
 def test_opslp_basic():

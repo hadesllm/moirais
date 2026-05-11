@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mdsex -- convex hull MDS."""
+"""Tests for morie.fn.mdsex -- convex hull MDS."""
 
 import numpy as np
-from moirais.fn.mdsex import convex_hull_mds, mdsex
+from morie.fn.mdsex import convex_hull_mds, mdsex
 
 
 def test_mdsex_smoke():

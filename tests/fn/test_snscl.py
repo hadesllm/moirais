@@ -1,7 +1,7 @@
 """Tests for snscl.sn_scale."""
 import numpy as np
 import pytest
-from moirais.fn.snscl import sn_scale
+from morie.fn.snscl import sn_scale
 
 
 def test_snscl_basic():

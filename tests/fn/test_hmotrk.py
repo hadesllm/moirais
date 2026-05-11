@@ -1,7 +1,7 @@
 """Tests for hmotrk.geron_object_tracking."""
 import numpy as np
 import pytest
-from moirais.fn.hmotrk import geron_object_tracking
+from morie.fn.hmotrk import geron_object_tracking
 
 
 def test_hmotrk_basic():

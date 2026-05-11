@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ocate — CATE by risk score tercile."""
+"""Tests for morie.fn.ocate — CATE by risk score tercile."""
 
 import pandas as pd
-from moirais.fn.ocate import otis_cate_risk
+from morie.fn.ocate import otis_cate_risk
 
 
 class TestOtisCateRisk:

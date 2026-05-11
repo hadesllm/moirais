@@ -1,7 +1,7 @@
 """Test geoidh."""
 import numpy as np
 import pytest
-from moirais.fn.geoidh import geoidh
+from morie.fn.geoidh import geoidh
 
 
 def test_geoidh_basic():

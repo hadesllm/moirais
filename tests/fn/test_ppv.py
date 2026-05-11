@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ppv — Positive and negative predictive values."""
+"""Tests for morie.fn.ppv — Positive and negative predictive values."""
 import numpy as np
 
-from moirais.fn.ppv import ppv_npv, ppv
+from morie.fn.ppv import ppv_npv, ppv
 
 
 def test_known_ppv_npv():

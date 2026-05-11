@@ -1,7 +1,7 @@
 """Tests for gh_c14_11.ghosal_py_powerlaw."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c14_11 import ghosal_py_powerlaw
+from morie.fn.gh_c14_11 import ghosal_py_powerlaw
 
 
 def test_gh_c14_11_basic():

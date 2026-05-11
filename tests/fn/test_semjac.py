@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.semjac."""
+"""Tests for morie.fn.semjac."""
 import numpy as np
 import pytest
-from moirais.fn.semjac import semjac
+from morie.fn.semjac import semjac
 
 
 class TestSemjac:

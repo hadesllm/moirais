@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.agfwd."""
+"""Tests for morie.fn.agfwd."""
 
 import numpy as np
 import pytest
-from moirais.fn.agfwd import agfwd
+from morie.fn.agfwd import agfwd
 
 
 class TestAgfwd:

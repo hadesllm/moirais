@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.schon — Schoenfeld residuals."""
+"""Tests for morie.fn.schon — Schoenfeld residuals."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.schon import schon
+from morie.fn.schon import schon
 
 
 class TestSchon:

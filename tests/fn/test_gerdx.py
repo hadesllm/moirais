@@ -1,7 +1,7 @@
 """Test gerdx."""
 import numpy as np
 import pytest
-from moirais.fn.gerdx import gerdx
+from morie.fn.gerdx import gerdx
 
 
 def test_gerdx_basic():

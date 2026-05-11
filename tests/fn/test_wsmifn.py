@@ -1,7 +1,7 @@
 """Tests for wsmifn.wasserman_influence_function."""
 import numpy as np
 import pytest
-from moirais.fn.wsmifn import wasserman_influence_function
+from morie.fn.wsmifn import wasserman_influence_function
 
 
 def test_wsmifn_basic():

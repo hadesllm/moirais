@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rforc -- Random forest classifier."""
+"""Tests for morie.fn.rforc -- Random forest classifier."""
 
 import numpy as np
 import pytest
-from moirais.fn.rforc import random_forest
+from morie.fn.rforc import random_forest
 
 
 class TestRandomForest:

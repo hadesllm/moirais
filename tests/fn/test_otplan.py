@@ -1,7 +1,7 @@
 """Tests for otplan.ot_plan_to_map."""
 import numpy as np
 import pytest
-from moirais.fn.otplan import ot_plan_to_map
+from morie.fn.otplan import ot_plan_to_map
 
 
 def test_otplan_basic():

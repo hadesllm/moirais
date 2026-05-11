@@ -1,7 +1,7 @@
 """Test ubelc."""
 import numpy as np
 import pytest
-from moirais.fn.ubelc import ubelc
+from morie.fn.ubelc import ubelc
 
 
 def test_ubelc_basic():

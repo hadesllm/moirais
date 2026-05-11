@@ -1,7 +1,7 @@
 """Tests for hmtsf.geron_time_series_forecast."""
 import numpy as np
 import pytest
-from moirais.fn.hmtsf import geron_time_series_forecast
+from morie.fn.hmtsf import geron_time_series_forecast
 
 
 def test_hmtsf_basic():

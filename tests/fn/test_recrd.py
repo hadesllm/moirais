@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.recrd -- Recrudescence probability."""
+"""Tests for morie.fn.recrd -- Recrudescence probability."""
 
 import numpy as np
 import pytest
-from moirais.fn.recrd import recrd
+from morie.fn.recrd import recrd
 
 
 class TestRecrd:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrlmb -- Robust LM test for error"""
+"""Tests for morie.fn.xrlmb -- Robust LM test for error"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrlmb import lm_robust_error
+from morie.fn.xrlmb import lm_robust_error
 
 
 class TestLmRobustError:

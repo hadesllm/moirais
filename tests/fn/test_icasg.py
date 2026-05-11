@@ -1,8 +1,8 @@
 """Tests for icasg -- ICA source separation."""
 import numpy as np
 import pytest
-from moirais.fn.icasg import icasg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.icasg import icasg
+from morie.fn._containers import DescriptiveResult
 
 
 def test_icasg_basic():

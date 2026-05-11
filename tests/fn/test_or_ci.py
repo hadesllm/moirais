@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.or_ci -- odds ratio with confidence interval."""
+"""Tests for morie.fn.or_ci -- odds ratio with confidence interval."""
 
 import numpy as np
 import pytest
-from moirais.fn.or_ci import odds_ratio_ci
+from morie.fn.or_ci import odds_ratio_ci
 
 
 class TestOddsRatioCI:

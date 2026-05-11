@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dtcmp."""
+"""Tests for morie.fn.dtcmp."""
 
 import numpy as np
 import pytest
-from moirais.fn.dtcmp import dtcmp
+from morie.fn.dtcmp import dtcmp
 
 
 class TestDtcmp:

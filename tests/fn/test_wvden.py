@@ -1,6 +1,6 @@
 """Tests for wvden.py - Wavelet denoising."""
 import numpy as np
-from moirais.fn.wvden import wavelet_denoise, wvden
+from morie.fn.wvden import wavelet_denoise, wvden
 
 
 def test_denoise_returns_result():

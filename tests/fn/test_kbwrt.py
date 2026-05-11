@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kbwrt — Silverman's rule-of-thumb bandwidth."""
+"""Tests for morie.fn.kbwrt — Silverman's rule-of-thumb bandwidth."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kbwrt import kbwrt
+from morie.fn.kbwrt import kbwrt
 
 
 class TestKbwrt:

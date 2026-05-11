@@ -1,0 +1,51 @@
+{
+  "fn": "pnorm",
+  "callable": "morie.fn.pnorm.pnorm",
+  "source": "scipy.stats.norm.cdf",
+  "cases": [
+    {
+      "inputs": {
+        "x": 0.0
+      },
+      "expected": 0.5,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 1.96
+      },
+      "expected": 0.9750021048517795,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": -1.96
+      },
+      "expected": 0.024997895148220435,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 2.5758,
+        "mean": 0.0,
+        "sd": 1.0
+      },
+      "expected": 0.9949995762622214,
+      "rtol": 1e-12,
+      "atol": 0.0
+    },
+    {
+      "inputs": {
+        "x": 5.0,
+        "mean": 2.0,
+        "sd": 1.5
+      },
+      "expected": 0.9772498680518208,
+      "rtol": 1e-12,
+      "atol": 0.0
+    }
+  ]
+}

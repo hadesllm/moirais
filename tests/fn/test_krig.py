@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.krig — ordinary kriging."""
+"""Tests for morie.fn.krig — ordinary kriging."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.krig import ordinary_kriging
+from morie.fn.krig import ordinary_kriging
 
 
 class TestOrdinaryKriging:

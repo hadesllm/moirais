@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dmlpl -- DML Partially Linear Model."""
+"""Tests for morie.fn.dmlpl -- DML Partially Linear Model."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.dmlpl import dml_plr, dmlpl
-from moirais.fn._containers import ESRes
+from morie.fn.dmlpl import dml_plr, dmlpl
+from morie.fn._containers import ESRes
 
 
 class TestDMLPLR:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svsph -- Spatial phase transition (chaos/order)"""
+"""Tests for morie.fn.svsph -- Spatial phase transition (chaos/order)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svsph import spatial_phase
+from morie.fn.svsph import spatial_phase
 
 
 class TestSpatialPhase:

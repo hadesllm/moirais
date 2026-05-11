@@ -1,7 +1,7 @@
 """Tests for vaenc.vae_elbo."""
 import numpy as np
 import pytest
-from moirais.fn.vaenc import vae_elbo
+from morie.fn.vaenc import vae_elbo
 
 
 def test_vaenc_basic():

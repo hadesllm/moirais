@@ -1,7 +1,7 @@
 """Test aliasing_demo (alias)."""
 import numpy as np
-from moirais.fn.alias import aliasing_demo, alias
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.alias import aliasing_demo, alias
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAliasingDemo:

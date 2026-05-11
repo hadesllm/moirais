@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.nnd -- Number Needed to Diagnose."""
+"""Tests for morie.fn.nnd -- Number Needed to Diagnose."""
 
 import pytest
-from moirais.fn.nnd import number_needed_to_diagnose
+from morie.fn.nnd import number_needed_to_diagnose
 
 
 class TestNND:

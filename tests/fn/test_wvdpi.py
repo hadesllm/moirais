@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.wvdpi."""
+"""Tests for morie.fn.wvdpi."""
 
 import numpy as np
 import pytest
-from moirais.fn.wvdpi import wvdpi
+from morie.fn.wvdpi import wvdpi
 
 
 class TestWvdpi:

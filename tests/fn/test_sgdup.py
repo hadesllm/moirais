@@ -1,7 +1,7 @@
 """Tests for sgdup.sgd_update."""
 import numpy as np
 import pytest
-from moirais.fn.sgdup import sgd_update
+from morie.fn.sgdup import sgd_update
 
 
 def test_sgdup_basic():

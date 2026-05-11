@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.cutto — Cutting plane."""
+"""Tests for morie.fn.cutto — Cutting plane."""
 import numpy as np
-from moirais.fn.cutto import cutto
+from morie.fn.cutto import cutto
 
 
 def test_cutto_midpoint():

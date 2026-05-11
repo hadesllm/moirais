@@ -1,6 +1,6 @@
 """Tests for network_small_world."""
 import numpy as np, pytest
-from moirais.fn.netsw import network_small_world
+from morie.fn.netsw import network_small_world
 
 class TestNetSW:
     def test_complete(self):

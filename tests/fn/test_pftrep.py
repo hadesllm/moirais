@@ -1,7 +1,7 @@
 """Tests for pftrep.particle_filter_epi."""
 import numpy as np
 import pytest
-from moirais.fn.pftrep import particle_filter_epi
+from morie.fn.pftrep import particle_filter_epi
 
 
 def test_pftrep_basic():

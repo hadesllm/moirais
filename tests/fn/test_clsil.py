@@ -1,7 +1,7 @@
 """Test clsil."""
 import numpy as np
 import pytest
-from moirais.fn.clsil import clsil
+from morie.fn.clsil import clsil
 
 
 def test_clsil_basic():

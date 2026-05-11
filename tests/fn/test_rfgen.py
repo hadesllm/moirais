@@ -1,7 +1,7 @@
 """Tests for rfgen.random_forest_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.rfgen import random_forest_genomic
+from morie.fn.rfgen import random_forest_genomic
 
 
 def test_rfgen_basic():

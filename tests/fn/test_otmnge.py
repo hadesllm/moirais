@@ -1,7 +1,7 @@
 """Tests for otmnge.ot_marginal_negent."""
 import numpy as np
 import pytest
-from moirais.fn.otmnge import ot_marginal_negent
+from morie.fn.otmnge import ot_marginal_negent
 
 
 def test_otmnge_basic():

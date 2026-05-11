@@ -1,7 +1,7 @@
 """Test gatwi."""
 import numpy as np
 import pytest
-from moirais.fn.gatwi import gatwi
+from morie.fn.gatwi import gatwi
 
 
 def test_gatwi_basic():

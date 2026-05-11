@@ -1,7 +1,7 @@
 """Tests for sfbnds.sharp_bounds_balke_pearl."""
 import numpy as np
 import pytest
-from moirais.fn.sfbnds import sharp_bounds_balke_pearl
+from morie.fn.sfbnds import sharp_bounds_balke_pearl
 
 
 def test_sfbnds_basic():

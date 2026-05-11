@@ -1,7 +1,7 @@
 """Test csrgr."""
 import numpy as np
 import pytest
-from moirais.fn.csrgr import csrgr
+from morie.fn.csrgr import csrgr
 
 
 def test_csrgr_basic():

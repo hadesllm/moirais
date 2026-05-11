@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hedsc -- discount rate."""
+"""Tests for morie.fn.hedsc -- discount rate."""
 
 import pytest
-from moirais.fn.hedsc import discount_rate
+from morie.fn.hedsc import discount_rate
 
 
 class TestDiscountRate:

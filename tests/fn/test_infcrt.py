@@ -1,7 +1,7 @@
 """Tests for infcrt.information_criterion."""
 import numpy as np
 import pytest
-from moirais.fn.infcrt import information_criterion
+from morie.fn.infcrt import information_criterion
 
 
 def test_infcrt_basic():

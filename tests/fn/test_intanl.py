@@ -1,7 +1,7 @@
 """Tests for intanl.interaction_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.intanl import interaction_analysis
+from morie.fn.intanl import interaction_analysis
 
 
 def test_intanl_basic():

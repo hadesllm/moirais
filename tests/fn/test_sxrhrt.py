@@ -1,7 +1,7 @@
 """Tests for sxrhrt.sex_specific_h2."""
 import numpy as np
 import pytest
-from moirais.fn.sxrhrt import sex_specific_h2
+from morie.fn.sxrhrt import sex_specific_h2
 
 
 def test_sxrhrt_basic():

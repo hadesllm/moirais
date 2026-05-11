@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.siurt — SIU case rate."""
+"""Tests for morie.fn.siurt — SIU case rate."""
 
 import pytest
-from moirais.fn.siurt import siu_case_rate
-from moirais.fn._containers import CrimeResult
+from morie.fn.siurt import siu_case_rate
+from morie.fn._containers import CrimeResult
 
 
 class TestSiuCaseRate:

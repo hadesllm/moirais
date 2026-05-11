@@ -1,7 +1,7 @@
 """Test enrad."""
 import numpy as np
 import pytest
-from moirais.fn.enrad import enrad
+from morie.fn.enrad import enrad
 
 
 def test_enrad_basic():

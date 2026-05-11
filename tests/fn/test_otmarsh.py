@@ -1,7 +1,7 @@
 """Tests for otmarsh.ot_marginal_shift."""
 import numpy as np
 import pytest
-from moirais.fn.otmarsh import ot_marginal_shift
+from morie.fn.otmarsh import ot_marginal_shift
 
 
 def test_otmarsh_basic():

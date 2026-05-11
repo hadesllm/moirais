@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.jnpnt -- Joinpoint survival regression."""
+"""Tests for morie.fn.jnpnt -- Joinpoint survival regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.jnpnt import jnpnt
+from morie.fn.jnpnt import jnpnt
 
 
 @pytest.fixture()
@@ -38,5 +38,5 @@ def test_bic_exists(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.jnpnt import cheatsheet
+    from morie.fn.jnpnt import cheatsheet
     assert "joinpoint" in cheatsheet().lower()

@@ -1,7 +1,7 @@
 """Tests for deepw.deepwalk."""
 import numpy as np
 import pytest
-from moirais.fn.deepw import deepwalk
+from morie.fn.deepw import deepwalk
 
 
 def test_deepw_basic():

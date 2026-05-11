@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.dnneg — density negative weights."""
+"""Tests for morie.fn.dnneg — density negative weights."""
 import numpy as np
-from moirais.fn.dnneg import dnneg
+from morie.fn.dnneg import dnneg
 
 
 def test_dnneg_smoke():
@@ -14,7 +14,7 @@ def test_dnneg_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.dnneg import cheatsheet
+    from morie.fn.dnneg import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Test ppann."""
 import numpy as np
 import pytest
-from moirais.fn.ppann import ppann
+from morie.fn.ppann import ppann
 
 
 def test_ppann_basic():

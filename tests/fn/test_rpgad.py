@@ -1,7 +1,7 @@
 """Tests for rpgad.rdp_to_eps_delta."""
 import numpy as np
 import pytest
-from moirais.fn.rpgad import rdp_to_eps_delta
+from morie.fn.rpgad import rdp_to_eps_delta
 
 
 def test_rpgad_basic():

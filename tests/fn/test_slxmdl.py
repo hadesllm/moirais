@@ -1,7 +1,7 @@
 """Tests for slxmdl.slx_model."""
 import numpy as np
 import pytest
-from moirais.fn.slxmdl import slx_model
+from morie.fn.slxmdl import slx_model
 
 
 def test_slxmdl_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.shply — Shapley values."""
+"""Tests for morie.fn.shply — Shapley values."""
 import numpy as np
 import pytest
-from moirais.fn.shply import shapley_value
+from morie.fn.shply import shapley_value
 
 
 class TestShapley:

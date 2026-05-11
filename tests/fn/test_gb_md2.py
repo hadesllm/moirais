@@ -1,7 +1,7 @@
 """Tests for gb_md2.gibbons_median_test_2sided."""
 import numpy as np
 import pytest
-from moirais.fn.gb_md2 import gibbons_median_test_2sided
+from morie.fn.gb_md2 import gibbons_median_test_2sided
 
 
 def test_gb_md2_basic():

@@ -1,7 +1,7 @@
 """Test sawhi."""
 import numpy as np
 import pytest
-from moirais.fn.sawhi import sawhi
+from morie.fn.sawhi import sawhi
 
 
 def test_sawhi_basic():

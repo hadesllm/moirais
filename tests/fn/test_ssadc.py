@@ -1,6 +1,6 @@
 """Tests for ssadc.py - SSA decomposition."""
 import numpy as np
-from moirais.fn.ssadc import ssa_decompose_fn, ssadc
+from morie.fn.ssadc import ssa_decompose_fn, ssadc
 
 
 def test_ssadc_returns_result():

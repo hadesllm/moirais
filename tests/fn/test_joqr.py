@@ -1,7 +1,7 @@
 """Tests for joqr.joseph_quantile_regression."""
 import numpy as np
 import pytest
-from moirais.fn.joqr import joseph_quantile_regression
+from morie.fn.joqr import joseph_quantile_regression
 
 
 def test_joqr_basic():

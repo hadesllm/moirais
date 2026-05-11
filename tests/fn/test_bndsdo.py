@@ -1,7 +1,7 @@
 """Tests for bndsdo.bound_skewed_outcome."""
 import numpy as np
 import pytest
-from moirais.fn.bndsdo import bound_skewed_outcome
+from morie.fn.bndsdo import bound_skewed_outcome
 
 
 def test_bndsdo_basic():

@@ -1,7 +1,7 @@
 """Test wlgnf."""
 import numpy as np
 import pytest
-from moirais.fn.wlgnf import wlgnf
+from morie.fn.wlgnf import wlgnf
 
 
 def test_wlgnf_basic():

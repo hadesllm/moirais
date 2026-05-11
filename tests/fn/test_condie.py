@@ -1,7 +1,7 @@
 """Tests for condie.conditional_indirect_effect."""
 import numpy as np
 import pytest
-from moirais.fn.condie import conditional_indirect_effect
+from morie.fn.condie import conditional_indirect_effect
 
 
 def test_condie_basic():

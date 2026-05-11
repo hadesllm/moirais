@@ -1,7 +1,7 @@
 """Tests for flxipt.flexible_iptw."""
 import numpy as np
 import pytest
-from moirais.fn.flxipt import flexible_iptw
+from morie.fn.flxipt import flexible_iptw
 
 
 def test_flxipt_basic():

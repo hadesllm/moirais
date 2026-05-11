@@ -1,7 +1,7 @@
 """Tests for deciA.deci_model."""
 import numpy as np
 import pytest
-from moirais.fn.deciA import deci_model
+from morie.fn.deciA import deci_model
 
 
 def test_deciA_basic():

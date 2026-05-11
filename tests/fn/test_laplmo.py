@@ -1,7 +1,7 @@
 """Tests for laplmo.laplacian_eigen."""
 import numpy as np
 import pytest
-from moirais.fn.laplmo import laplacian_eigen
+from morie.fn.laplmo import laplacian_eigen
 
 
 def test_laplmo_basic():

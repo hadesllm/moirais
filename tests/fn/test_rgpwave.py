@@ -1,7 +1,7 @@
 """Tests for rgpwave.rangayyan_p_wave_detect."""
 import numpy as np
 import pytest
-from moirais.fn.rgpwave import rangayyan_p_wave_detect
+from morie.fn.rgpwave import rangayyan_p_wave_detect
 
 
 def test_rgpwave_basic():

@@ -1,7 +1,7 @@
 """Tests for km003.kamath_ch2_context_simplest."""
 import numpy as np
 import pytest
-from moirais.fn.km003 import kamath_ch2_context_simplest
+from morie.fn.km003 import kamath_ch2_context_simplest
 
 
 def test_km003_basic():

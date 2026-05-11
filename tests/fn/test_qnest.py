@@ -1,7 +1,7 @@
 """Test qnest."""
 import numpy as np
 import pytest
-from moirais.fn.qnest import qn_estimator
+from morie.fn.qnest import qn_estimator
 
 
 def test_qnest_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mscrd -- MDS coordinate extraction"""
+"""Tests for morie.fn.mscrd -- MDS coordinate extraction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mscrd import mds_coords
+from morie.fn.mscrd import mds_coords
 
 
 class TestMdsCoords:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.msswt -- missing data weights."""
+"""Tests for morie.fn.msswt -- missing data weights."""
 
 import numpy as np
-from moirais.fn.msswt import missing_data_weights, msswt
+from morie.fn.msswt import missing_data_weights, msswt
 
 
 def test_msswt_no_missing():

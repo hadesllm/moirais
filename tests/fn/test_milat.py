@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.milat -- latent mean differences."""
+"""Tests for morie.fn.milat -- latent mean differences."""
 
-from moirais.fn.milat import mi_latent_means
+from morie.fn.milat import mi_latent_means
 
 
 class TestMiLatentMeans:

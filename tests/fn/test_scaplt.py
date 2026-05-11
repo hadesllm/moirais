@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.scaplt -- scalogram plot."""
+"""Tests for morie.fn.scaplt -- scalogram plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.scaplt import scaplt
+from morie.fn.scaplt import scaplt
 
 
 class TestScaPlt:
@@ -20,7 +20,7 @@ class TestScaPlt:
 
 
 def test_cheatsheet():
-    from moirais.fn.scaplt import cheatsheet
+    from morie.fn.scaplt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Test matcl."""
 import numpy as np
 import pytest
-from moirais.fn.matcl import matcl
+from morie.fn.matcl import matcl
 
 
 def test_matcl_basic():

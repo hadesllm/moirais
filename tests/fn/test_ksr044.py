@@ -1,7 +1,7 @@
 """Tests for ksr044.kosorok_ch2_quantile_taylor_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.ksr044 import kosorok_ch2_quantile_taylor_bounds
+from morie.fn.ksr044 import kosorok_ch2_quantile_taylor_bounds
 
 
 def test_ksr044_basic():

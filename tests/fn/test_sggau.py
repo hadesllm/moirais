@@ -1,6 +1,6 @@
 """Tests for Gaussian variogram."""
 import numpy as np
-from moirais.fn.sggau import sggau
+from morie.fn.sggau import sggau
 
 
 def test_sggau_smoke():

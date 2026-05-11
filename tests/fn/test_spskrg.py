@@ -1,7 +1,7 @@
 """Tests for spskrg.schabenberger_simple_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.spskrg import schabenberger_simple_kriging
+from morie.fn.spskrg import schabenberger_simple_kriging
 
 
 def test_spskrg_basic():

@@ -2,7 +2,7 @@
 
 import pytest
 
-from moirais.data import DATASET_CATALOG
+from morie.data import DATASET_CATALOG
 
 
 def _naps_entries():
@@ -17,7 +17,7 @@ def test_naps_catalog_has_at_least_20_entries():
 def test_every_naps_entry_dispatches_via_fetcher():
     for k, e in _naps_entries().items():
         assert e["format"] == "fetcher", f"{k} missing fetcher format"
-        assert e["fetcher"] == "moirais.earth:fetch_naps", f"{k} wrong fetcher"
+        assert e["fetcher"] == "morie.earth:fetch_naps", f"{k} wrong fetcher"
         assert e["source"] == "naps"
 
 

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.irtdc -- IRT discrimination summary."""
+"""Tests for morie.fn.irtdc -- IRT discrimination summary."""
 import numpy as np
-from moirais.fn.irtdc import irt_discrimination_summary, irtdc
+from morie.fn.irtdc import irt_discrimination_summary, irtdc
 
 
 def test_alias():

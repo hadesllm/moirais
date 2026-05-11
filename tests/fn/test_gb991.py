@@ -1,7 +1,7 @@
 """Tests for gb991.gibbons_conover_scale."""
 import numpy as np
 import pytest
-from moirais.fn.gb991 import gibbons_conover_scale
+from morie.fn.gb991 import gibbons_conover_scale
 
 
 def test_gb991_basic():

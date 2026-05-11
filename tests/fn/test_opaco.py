@@ -1,7 +1,7 @@
 """Test opaco."""
 import numpy as np
 import pytest
-from moirais.fn.opaco import opaco
+from morie.fn.opaco import opaco
 
 
 def test_opaco_basic():

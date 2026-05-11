@@ -1,7 +1,7 @@
 """Tests for johnsen.johansen_test."""
 import numpy as np
 import pytest
-from moirais.fn.johnsen import johansen_test
+from morie.fn.johnsen import johansen_test
 
 
 def test_johnsen_basic():

@@ -1,7 +1,7 @@
 """Tests for pinsk1.pinsker_inequality."""
 import numpy as np
 import pytest
-from moirais.fn.pinsk1 import pinsker_inequality
+from morie.fn.pinsk1 import pinsker_inequality
 
 
 def test_pinsk1_basic():

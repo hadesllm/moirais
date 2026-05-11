@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.citym — City-block spatial model."""
+"""Tests for morie.fn.citym — City-block spatial model."""
 import numpy as np
-from moirais.fn.citym import citym
+from morie.fn.citym import citym
 
 
 def test_citym_nearest():

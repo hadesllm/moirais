@@ -1,7 +1,7 @@
 """Tests for cvxepi.boyd_epigraph."""
 import numpy as np
 import pytest
-from moirais.fn.cvxepi import boyd_epigraph
+from morie.fn.cvxepi import boyd_epigraph
 
 
 def test_cvxepi_basic():

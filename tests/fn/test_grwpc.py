@@ -1,7 +1,7 @@
 """Tests for grwpc.geron_wordpiece_tokenizer_score."""
 import numpy as np
 import pytest
-from moirais.fn.grwpc import geron_wordpiece_tokenizer_score
+from morie.fn.grwpc import geron_wordpiece_tokenizer_score
 
 
 def test_grwpc_basic():

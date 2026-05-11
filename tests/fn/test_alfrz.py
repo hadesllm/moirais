@@ -1,7 +1,7 @@
 """Tests for alfrz.alammar_layer_freezing."""
 import numpy as np
 import pytest
-from moirais.fn.alfrz import alammar_layer_freezing
+from morie.fn.alfrz import alammar_layer_freezing
 
 
 def test_alfrz_basic():

@@ -1,7 +1,7 @@
 """Tests for icc2k.icc_two_way_random_avg."""
 import numpy as np
 import pytest
-from moirais.fn.icc2k import icc_two_way_random_avg
+from morie.fn.icc2k import icc_two_way_random_avg
 
 
 def test_icc2k_basic():

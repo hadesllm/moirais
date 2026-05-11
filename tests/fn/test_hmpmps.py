@@ -1,7 +1,7 @@
 """Tests for hmpmps.geron_mps_acceleration."""
 import numpy as np
 import pytest
-from moirais.fn.hmpmps import geron_mps_acceleration
+from morie.fn.hmpmps import geron_mps_acceleration
 
 
 def test_hmpmps_basic():

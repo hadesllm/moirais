@@ -1,7 +1,7 @@
 """Tests for spvmr.schabenberger_variance_mean_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.spvmr import schabenberger_variance_mean_ratio
+from morie.fn.spvmr import schabenberger_variance_mean_ratio
 
 
 def test_spvmr_basic():

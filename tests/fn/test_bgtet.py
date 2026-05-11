@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bgtet -- Breusch-Godfrey test."""
+"""Tests for morie.fn.bgtet -- Breusch-Godfrey test."""
 import numpy as np
 import pytest
-from moirais.fn.bgtet import bg_test
+from morie.fn.bgtet import bg_test
 
 
 class TestBG:
@@ -18,5 +18,5 @@ class TestBG:
             bg_test(np.ones(3), np.ones((3, 2)), order=2)
 
     def test_cheatsheet(self):
-        from moirais.fn.bgtet import cheatsheet
+        from morie.fn.bgtet import cheatsheet
         assert isinstance(cheatsheet(), str)

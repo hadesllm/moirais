@@ -1,7 +1,7 @@
 """Tests for grsmd.geron_symbolic_differentiation."""
 import numpy as np
 import pytest
-from moirais.fn.grsmd import geron_symbolic_differentiation
+from morie.fn.grsmd import geron_symbolic_differentiation
 
 
 def test_grsmd_basic():

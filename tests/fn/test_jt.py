@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.jt -- Jonckheere-Terpstra test."""
+"""Tests for morie.fn.jt -- Jonckheere-Terpstra test."""
 
 import numpy as np
 import pytest
-from moirais.fn.jt import jonckheere_terpstra_test
-from moirais.fn._containers import TestResult
+from morie.fn.jt import jonckheere_terpstra_test
+from morie.fn._containers import TestResult
 
 
 class TestJT:

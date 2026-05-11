@@ -1,7 +1,7 @@
 """Tests for cminc: cumulative incidence function (Aalen-Johansen)."""
 import numpy as np
 import pytest
-from moirais.fn.cminc import cminc
+from morie.fn.cminc import cminc
 
 
 def _sim_competing_risks(n=200, seed=0):

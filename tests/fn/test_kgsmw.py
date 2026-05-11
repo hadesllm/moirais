@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgsmw -- Simple kriging weights"""
+"""Tests for morie.fn.kgsmw -- Simple kriging weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgsmw import sk_weights
+from morie.fn.kgsmw import sk_weights
 
 
 class TestSkWeights:

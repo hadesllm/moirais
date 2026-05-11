@@ -1,7 +1,7 @@
 """Tests for wsmbpc.wasserman_bootstrap_percentile."""
 import numpy as np
 import pytest
-from moirais.fn.wsmbpc import wasserman_bootstrap_percentile
+from morie.fn.wsmbpc import wasserman_bootstrap_percentile
 
 
 def test_wsmbpc_basic():

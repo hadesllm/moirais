@@ -1,7 +1,7 @@
 """Test salml."""
 import numpy as np
 import pytest
-from moirais.fn.salml import salml
+from morie.fn.salml import salml
 
 
 def test_salml_basic():

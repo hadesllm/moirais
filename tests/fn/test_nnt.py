@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.nnt -- number needed to treat."""
+"""Tests for morie.fn.nnt -- number needed to treat."""
 
 import pytest
-from moirais.fn.nnt import number_needed_to_treat
+from morie.fn.nnt import number_needed_to_treat
 
 
 class TestNNT:

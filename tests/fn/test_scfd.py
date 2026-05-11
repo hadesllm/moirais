@@ -1,7 +1,7 @@
 """Tests for scfd.scalar_on_function."""
 import numpy as np
 import pytest
-from moirais.fn.scfd import scalar_on_function
+from morie.fn.scfd import scalar_on_function
 
 
 def test_scfd_basic():

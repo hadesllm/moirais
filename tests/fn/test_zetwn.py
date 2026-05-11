@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zetwn -- Townsend deprivation index"""
+"""Tests for morie.fn.zetwn -- Townsend deprivation index"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zetwn import townsend_index
+from morie.fn.zetwn import townsend_index
 
 
 class TestTownsendIndex:

@@ -1,6 +1,6 @@
 """Test multi-head attention."""
 import numpy as np
-from moirais.fn.mhatt import mhatt
+from morie.fn.mhatt import mhatt
 
 
 def test_mhatt_basic():

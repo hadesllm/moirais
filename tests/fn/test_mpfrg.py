@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mpfrg."""
+"""Tests for morie.fn.mpfrg."""
 
 import numpy as np
 import pytest
-from moirais.fn.mpfrg import mpfrg
+from morie.fn.mpfrg import mpfrg
 
 
 class TestMpfrg:

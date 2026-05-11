@@ -1,7 +1,7 @@
 """Test hullar."""
 import numpy as np
 import pytest
-from moirais.fn.hullar import hullar
+from morie.fn.hullar import hullar
 
 
 def test_hullar_basic():

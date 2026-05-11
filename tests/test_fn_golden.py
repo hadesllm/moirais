@@ -1,10 +1,10 @@
-"""Auto-discovering golden-value test for moirais.fn.
+"""Auto-discovering golden-value test for morie.fn.
 
 Reads every JSON in fn/_golden/, calls the corresponding fn, asserts
 output matches expected (within tolerance). Stub returns (all-NaN) are
 xfail-style: they fail strict mode but pass loose mode.
 
-Strict mode is governed by env var MOIRAIS_GOLDEN_STRICT=1 — set in CI
+Strict mode is governed by env var MORIE_GOLDEN_STRICT=1 — set in CI
 once enough fn are filled out that drift becomes meaningful.
 """
 from __future__ import annotations
@@ -14,7 +14,7 @@ from pathlib import Path
 
 import pytest
 
-from moirais import eval as meval
+from morie import eval as meval
 
 
 def _golden_files() -> list[Path]:
@@ -26,7 +26,7 @@ def _ids(files: list[Path]) -> list[str]:
 
 
 _files = _golden_files()
-STRICT = os.getenv("MOIRAIS_GOLDEN_STRICT", "0") == "1"
+STRICT = os.getenv("MORIE_GOLDEN_STRICT", "0") == "1"
 
 
 @pytest.mark.skipif(not _files, reason="no golden files in fn/_golden/")
@@ -47,7 +47,7 @@ def test_fn_golden(path: Path) -> None:
         if STRICT:
             pytest.fail(
                 f"{fn}: {report.n_stub}/{len(report.results)} cases returned NaN-stub "
-                f"(MOIRAIS_GOLDEN_STRICT=1, fn must be implemented)"
+                f"(MORIE_GOLDEN_STRICT=1, fn must be implemented)"
             )
         pytest.xfail(f"{fn}: {report.n_stub} stub returns (fn not yet implemented)")
 

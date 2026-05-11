@@ -1,7 +1,7 @@
 """Test dtcpc."""
 import numpy as np
 import pytest
-from moirais.fn.dtcpc import dtcpc
+from morie.fn.dtcpc import dtcpc
 
 
 def test_dtcpc_basic():

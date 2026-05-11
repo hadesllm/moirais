@@ -1,7 +1,7 @@
 """Tests for evbgrev.evt_bayes_gev."""
 import numpy as np
 import pytest
-from moirais.fn.evbgrev import evt_bayes_gev
+from morie.fn.evbgrev import evt_bayes_gev
 
 
 def test_evbgrev_basic():

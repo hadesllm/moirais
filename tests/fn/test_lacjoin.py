@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lacjoin."""
+"""Tests for morie.fn.lacjoin."""
 import numpy as np
 import pytest
-from moirais.fn.lacjoin import lacjoin
+from morie.fn.lacjoin import lacjoin
 
 
 class TestLacjoin:

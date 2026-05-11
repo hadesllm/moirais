@@ -1,7 +1,7 @@
 """Tests for reportm.report_noisy_max."""
 import numpy as np
 import pytest
-from moirais.fn.reportm import report_noisy_max
+from morie.fn.reportm import report_noisy_max
 
 
 def test_reportm_basic():

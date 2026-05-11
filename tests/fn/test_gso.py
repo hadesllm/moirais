@@ -1,8 +1,8 @@
 """Test gram_schmidt_orth."""
 import numpy as np
 import pytest
-from moirais.fn.gso import gram_schmidt_orth
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.gso import gram_schmidt_orth
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGramSchmidtOrth:

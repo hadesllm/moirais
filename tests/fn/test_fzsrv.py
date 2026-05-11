@@ -1,7 +1,7 @@
 """Tests for fzsrv.fauzi_survival_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.fzsrv import fauzi_survival_kernel
+from morie.fn.fzsrv import fauzi_survival_kernel
 
 
 def test_fzsrv_basic():

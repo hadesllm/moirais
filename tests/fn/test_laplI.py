@@ -1,7 +1,7 @@
 """Tests for laplI.inverse_laplace."""
 import numpy as np
 import pytest
-from moirais.fn.laplI import inverse_laplace
+from morie.fn.laplI import inverse_laplace
 
 
 def test_laplI_basic():

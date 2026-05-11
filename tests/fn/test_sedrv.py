@@ -1,7 +1,7 @@
 """Test sedrv."""
 import numpy as np
 import pytest
-from moirais.fn.sedrv import sedrv
+from morie.fn.sedrv import sedrv
 
 
 def test_sedrv_basic():

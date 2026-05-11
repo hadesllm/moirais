@@ -1,7 +1,7 @@
 """Tests for rng019.rangayyan_ch3_time_average_mean."""
 import numpy as np
 import pytest
-from moirais.fn.rng019 import rangayyan_ch3_time_average_mean
+from morie.fn.rng019 import rangayyan_ch3_time_average_mean
 
 
 def test_rng019_basic():

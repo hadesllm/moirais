@@ -1,7 +1,7 @@
 """Tests for causmnde.causal_natural_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.causmnde import causal_natural_decomposition
+from morie.fn.causmnde import causal_natural_decomposition
 
 
 def test_causmnde_basic():

@@ -1,7 +1,7 @@
 """Tests for lmmf1.lmm_form_eq2_1."""
 import numpy as np
 import pytest
-from moirais.fn.lmmf1 import lmm_form_eq2_1
+from morie.fn.lmmf1 import lmm_form_eq2_1
 
 
 def test_lmmf1_basic():

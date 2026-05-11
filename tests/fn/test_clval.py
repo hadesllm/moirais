@@ -1,7 +1,7 @@
 """Test clval."""
 import numpy as np
 import pytest
-from moirais.fn.clval import clval
+from morie.fn.clval import clval
 
 
 def test_clval_basic():

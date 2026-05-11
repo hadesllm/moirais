@@ -1,7 +1,7 @@
 """Test wqdrk."""
 import numpy as np
 import pytest
-from moirais.fn.wqdrk import wqdrk
+from morie.fn.wqdrk import wqdrk
 
 
 def test_wqdrk_basic():

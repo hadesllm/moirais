@@ -1,7 +1,7 @@
 """Test soero."""
 import numpy as np
 import pytest
-from moirais.fn.soero import soero
+from morie.fn.soero import soero
 
 
 def test_soero_basic():

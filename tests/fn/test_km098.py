@@ -1,7 +1,7 @@
 """Tests for km098.kamath_ch6_log_prob_ratio_attr."""
 import numpy as np
 import pytest
-from moirais.fn.km098 import kamath_ch6_log_prob_ratio_attr
+from morie.fn.km098 import kamath_ch6_log_prob_ratio_attr
 
 
 def test_km098_basic():

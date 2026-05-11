@@ -1,7 +1,7 @@
 """Tests for hmsrp.geron_sparse_rand_projection."""
 import numpy as np
 import pytest
-from moirais.fn.hmsrp import geron_sparse_rand_projection
+from morie.fn.hmsrp import geron_sparse_rand_projection
 
 
 def test_hmsrp_basic():

@@ -1,7 +1,7 @@
 """Test trrail."""
 import numpy as np
 import pytest
-from moirais.fn.trrail import trrail
+from morie.fn.trrail import trrail
 
 
 def test_trrail_basic():

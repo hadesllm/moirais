@@ -1,7 +1,7 @@
 """Tests for ecod.ecod."""
 import numpy as np
 import pytest
-from moirais.fn.ecod import ecod
+from morie.fn.ecod import ecod
 
 
 def test_ecod_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sacboot."""
+"""Tests for morie.fn.sacboot."""
 import numpy as np
 import pytest
-from moirais.fn.sacboot import sacboot
+from morie.fn.sacboot import sacboot
 
 
 class TestSacboot:

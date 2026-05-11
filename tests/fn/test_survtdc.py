@@ -1,7 +1,7 @@
 """Tests for survtdc.time_dep_concordance."""
 import numpy as np
 import pytest
-from moirais.fn.survtdc import time_dep_concordance
+from morie.fn.survtdc import time_dep_concordance
 
 
 def test_survtdc_basic():

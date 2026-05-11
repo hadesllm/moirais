@@ -1,7 +1,7 @@
 """Test wlibd."""
 import numpy as np
 import pytest
-from moirais.fn.wlibd import wlibd
+from morie.fn.wlibd import wlibd
 
 
 def test_wlibd_basic():

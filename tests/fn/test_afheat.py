@@ -1,7 +1,7 @@
 """Test afheat."""
 import numpy as np
 import pytest
-from moirais.fn.afheat import afheat
+from morie.fn.afheat import afheat
 
 
 def test_afheat_basic():

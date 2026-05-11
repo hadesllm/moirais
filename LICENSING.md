@@ -1,22 +1,22 @@
 # Licensing
 
-MOIRAIS is released under the **GNU General Public License, version 2 only**
+MORIE is released under the **GNU General Public License, version 2 only**
 (`GPL-2.0-only`). The full license text is in [`LICENSE`](LICENSE).
 
 ## Summary
 
 | Component | Path | License |
 |---|---|---|
-| Python package | `src/moirais/` | **GPL-2.0-only** |
-| R package | `r-package/moirais/` | **GPL-2.0-only** |
+| Python package | `src/morie/` | **GPL-2.0-only** |
+| R package | `r-package/morie/` | **GPL-2.0-only** |
 | Documentation prose | `docs/source/*.rst`, `*.md` | **CC-BY-4.0** |
 | Paper text and figures | `paper.md`, `paper.bib` | **CC-BY-4.0** |
-| Test data and fixtures | `tests/`, `src/moirais/data/` | **GPL-2.0-only** |
+| Test data and fixtures | `tests/`, `src/morie/data/` | **GPL-2.0-only** |
 
 ## Why GPL-2.0-only (not "or later")
 
 1. **Linux precedent.** The Linux kernel is `GPL-2.0-only` — Linus chose
-   v2-only deliberately, and MOIRAIS keeps that choice in the same
+   v2-only deliberately, and MORIE keeps that choice in the same
    spirit.
 2. **No automatic upgrade.** "or later" delegates the licensing decision
    to a future Free Software Foundation. Pinning to v2 keeps the licence
@@ -28,13 +28,13 @@ MOIRAIS is released under the **GNU General Public License, version 2 only**
 
 ## What this means in practice
 
-- You may use, modify, and redistribute MOIRAIS under GPL-2.0-only.
+- You may use, modify, and redistribute MORIE under GPL-2.0-only.
 - If you distribute a derivative work, it must also be released under
   GPL-2.0-only and ship complete corresponding source.
-- Linking MOIRAIS into a non-GPL program is not permitted; depending on
-  MOIRAIS as an external runtime (e.g. calling `python -m moirais`) is.
+- Linking MORIE into a non-GPL program is not permitted; depending on
+  MORIE as an external runtime (e.g. calling `python -m morie`) is.
 - The package itself imposes no restriction on the *output* of analyses —
-  research results produced with MOIRAIS are yours to license as you
+  research results produced with MORIE are yours to license as you
   choose.
 
 ## Documentation and paper text
@@ -46,11 +46,11 @@ released under **Creative Commons Attribution 4.0 International**
 ## Dependencies
 
 Each dependency carries its own licence; see `pyproject.toml`
-(Python) and `r-package/moirais/DESCRIPTION` (R) for the chain.
+(Python) and `r-package/morie/DESCRIPTION` (R) for the chain.
 
 ## AI assistance and third-party tools
 
-The MOIRAIS source was developed with substantial assistance from
+The MORIE source was developed with substantial assistance from
 frontier AI assistants. This is disclosed for transparency; it does
 not transfer authorship, copyright, or licensing obligations away
 from the human author. The author retains full responsibility for
@@ -69,20 +69,20 @@ the code, the methods, and the scientific claims.
   research-credit programs.
 
 The Anthropic and Google research-credit programs are compute-
-allocation programs; they do not constitute endorsement of MOIRAIS
+allocation programs; they do not constitute endorsement of MORIE
 by either company. Where AI-generated code reproduces material from
 training data verbatim, the upstream licence governs that material.
 The author has reviewed the source for any such cases.
 
 ## Contributing
 
-Contributions to MOIRAIS are accepted under `GPL-2.0-only`. By
+Contributions to MORIE are accepted under `GPL-2.0-only`. By
 submitting a pull request you agree to license your contribution under
 that licence.
 
 ## Reporting licence issues
 
-Open an issue at <https://github.com/hadesllm/moirais/issues> or contact
+Open an issue at <https://github.com/hadesllm/morie/issues> or contact
 the author.
 
 — Vansh Singh Ruhela, 2026

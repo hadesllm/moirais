@@ -1,7 +1,7 @@
 """Tests for specsm.spectral_smoothed."""
 import numpy as np
 import pytest
-from moirais.fn.specsm import spectral_smoothed
+from morie.fn.specsm import spectral_smoothed
 
 
 def test_specsm_basic():

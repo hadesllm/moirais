@@ -1,7 +1,7 @@
 """Tests for grn011.geron_ch4_lasso_regression_cost_function."""
 import numpy as np
 import pytest
-from moirais.fn.grn011 import geron_ch4_lasso_regression_cost_function
+from morie.fn.grn011 import geron_ch4_lasso_regression_cost_function
 
 
 def test_grn011_basic():

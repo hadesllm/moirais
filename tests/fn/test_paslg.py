@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.paslg."""
+"""Tests for morie.fn.paslg."""
 
 import numpy as np
 import pytest
-from moirais.fn.paslg import paslg
+from morie.fn.paslg import paslg
 
 
 class TestPaslg:

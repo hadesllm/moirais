@@ -1,7 +1,7 @@
 """Test ghbym."""
 import numpy as np
 import pytest
-from moirais.fn.ghbym import ghbym
+from morie.fn.ghbym import ghbym
 
 
 def test_ghbym_basic():

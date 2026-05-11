@@ -1,7 +1,7 @@
 """Tests for kmcrag.kamath_corrective_rag."""
 import numpy as np
 import pytest
-from moirais.fn.kmcrag import kamath_corrective_rag
+from morie.fn.kmcrag import kamath_corrective_rag
 
 
 def test_kmcrag_basic():

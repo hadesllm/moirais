@@ -1,7 +1,7 @@
 """Tests for rglms.rangayyan_lms_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rglms import rangayyan_lms_filter
+from morie.fn.rglms import rangayyan_lms_filter
 
 
 def test_rglms_basic():

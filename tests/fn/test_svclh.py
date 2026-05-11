@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svclh -- Heart of spatial game"""
+"""Tests for morie.fn.svclh -- Heart of spatial game"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svclh import coalition_heart
+from morie.fn.svclh import coalition_heart
 
 
 class TestCoalitionHeart:

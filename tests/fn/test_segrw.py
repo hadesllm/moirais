@@ -1,7 +1,7 @@
 """Test segrw."""
 import numpy as np
 import pytest
-from moirais.fn.segrw import segrw
+from morie.fn.segrw import segrw
 
 
 def test_segrw_basic():

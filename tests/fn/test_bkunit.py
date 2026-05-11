@@ -1,7 +1,7 @@
 """Tests for bkunit.burkov_unit_vector."""
 import numpy as np
 import pytest
-from moirais.fn.bkunit import burkov_unit_vector
+from morie.fn.bkunit import burkov_unit_vector
 
 
 def test_bkunit_basic():

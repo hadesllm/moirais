@@ -1,7 +1,7 @@
 """Tests for hmrad.geron_reverse_autodiff."""
 import numpy as np
 import pytest
-from moirais.fn.hmrad import geron_reverse_autodiff
+from morie.fn.hmrad import geron_reverse_autodiff
 
 
 def test_hmrad_basic():

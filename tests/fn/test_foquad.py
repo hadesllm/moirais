@@ -1,7 +1,7 @@
 """Test foquad."""
 import numpy as np
 import pytest
-from moirais.fn.foquad import foquad
+from morie.fn.foquad import foquad
 
 
 def test_foquad_basic():

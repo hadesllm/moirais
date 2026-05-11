@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ebmix -- Empirical Bayes mixture."""
+"""Tests for morie.fn.ebmix -- Empirical Bayes mixture."""
 
 import numpy as np
-from moirais.fn.ebmix import eb_mixture
+from morie.fn.ebmix import eb_mixture
 
 
 def test_returns_dict():

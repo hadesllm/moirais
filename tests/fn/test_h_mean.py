@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.h_mean — Hajek mean estimator."""
+"""Tests for morie.fn.h_mean — Hajek mean estimator."""
 
 import math
 
 import numpy as np
 import pytest
 
-from moirais.fn.h_mean import hajek_mean
+from morie.fn.h_mean import hajek_mean
 
 
 def test_returns_dict_with_keys():

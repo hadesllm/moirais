@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.semap -- Sammon mapping."""
+"""Tests for morie.fn.semap -- Sammon mapping."""
 
 import numpy as np
-from moirais.fn.semap import sammon_mapping, semap
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.semap import sammon_mapping, semap
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSammonMapping:

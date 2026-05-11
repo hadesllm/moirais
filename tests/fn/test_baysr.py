@@ -1,7 +1,7 @@
 """Tests for baysr.bayes_r_prior."""
 import numpy as np
 import pytest
-from moirais.fn.baysr import bayes_r_prior
+from morie.fn.baysr import bayes_r_prior
 
 
 def test_baysr_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lgrst -- Log-rank test."""
+"""Tests for morie.fn.lgrst -- Log-rank test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lgrst import lgrst
+from morie.fn.lgrst import lgrst
 
 
 @pytest.fixture()
@@ -54,5 +54,5 @@ def test_wrong_groups():
 
 
 def test_cheatsheet():
-    from moirais.fn.lgrst import cheatsheet
+    from morie.fn.lgrst import cheatsheet
     assert "log-rank" in cheatsheet().lower()

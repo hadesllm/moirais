@@ -1,7 +1,7 @@
 """Tests for cvxsmh.boyd_smooth_huber_grad."""
 import numpy as np
 import pytest
-from moirais.fn.cvxsmh import boyd_smooth_huber_grad
+from morie.fn.cvxsmh import boyd_smooth_huber_grad
 
 
 def test_cvxsmh_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mtosp — speed analysis."""
+"""Tests for morie.fn.mtosp — speed analysis."""
 
 import pytest
 import numpy as np
-from moirais.fn.mtosp import mto_speed_analysis
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtosp import mto_speed_analysis
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSpeedAnalysis:

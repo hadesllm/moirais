@@ -1,7 +1,7 @@
 """Tests for hmddqn.geron_double_dqn."""
 import numpy as np
 import pytest
-from moirais.fn.hmddqn import geron_double_dqn
+from morie.fn.hmddqn import geron_double_dqn
 
 
 def test_hmddqn_basic():

@@ -1,7 +1,7 @@
 """Test wlbrt."""
 import numpy as np
 import pytest
-from moirais.fn.wlbrt import wlbrt
+from morie.fn.wlbrt import wlbrt
 
 
 def test_wlbrt_basic():

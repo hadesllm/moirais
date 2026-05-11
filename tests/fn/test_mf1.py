@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mf1 — multi-class F1."""
+"""Tests for morie.fn.mf1 — multi-class F1."""
 import numpy as np
 import pytest
-from moirais.fn.mf1 import multiclass_f1, mf1
+from morie.fn.mf1 import multiclass_f1, mf1
 
 
 def test_perfect_macro():

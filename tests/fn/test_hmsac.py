@@ -1,7 +1,7 @@
 """Tests for hmsac.geron_sac."""
 import numpy as np
 import pytest
-from moirais.fn.hmsac import geron_sac
+from morie.fn.hmsac import geron_sac
 
 
 def test_hmsac_basic():

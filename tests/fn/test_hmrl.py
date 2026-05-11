@@ -1,7 +1,7 @@
 """Tests for hmrl.geron_reinforcement_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmrl import geron_reinforcement_learning
+from morie.fn.hmrl import geron_reinforcement_learning
 
 
 def test_hmrl_basic():

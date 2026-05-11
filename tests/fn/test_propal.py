@@ -1,7 +1,7 @@
 """Tests for propal.proportional_allocation."""
 import numpy as np
 import pytest
-from moirais.fn.propal import proportional_allocation
+from morie.fn.propal import proportional_allocation
 
 
 def test_propal_basic():

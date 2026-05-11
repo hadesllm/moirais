@@ -1,7 +1,7 @@
 """Test sawkr."""
 import numpy as np
 import pytest
-from moirais.fn.sawkr import sawkr
+from morie.fn.sawkr import sawkr
 
 
 def test_sawkr_basic():

@@ -1,7 +1,7 @@
 """Tests for fwlfwd.fully_corrective_fw."""
 import numpy as np
 import pytest
-from moirais.fn.fwlfwd import fully_corrective_fw
+from morie.fn.fwlfwd import fully_corrective_fw
 
 
 def test_fwlfwd_basic():

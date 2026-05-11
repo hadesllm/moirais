@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mcdir -- McDiarmid bounded-differences inequality."""
+"""Tests for morie.fn.mcdir -- McDiarmid bounded-differences inequality."""
 
 import numpy as np
 import pytest
-from moirais.fn.mcdir import mcdiarmid_bound
+from morie.fn.mcdir import mcdiarmid_bound
 
 
 class TestMcDiarmid:

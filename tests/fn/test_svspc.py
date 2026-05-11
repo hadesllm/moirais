@@ -1,6 +1,6 @@
 """Tests for svspc.py - Subspace decomposition."""
 import numpy as np
-from moirais.fn.svspc import subspace_decompose_fn, svspc
+from morie.fn.svspc import subspace_decompose_fn, svspc
 
 
 def test_svspc_returns_result():

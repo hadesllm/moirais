@@ -1,7 +1,7 @@
 """Tests for hillEst.hill_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.hillEst import hill_estimator
+from morie.fn.hillEst import hill_estimator
 
 
 def test_hillEst_basic():

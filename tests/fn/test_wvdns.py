@@ -1,6 +1,6 @@
 """Tests for wvdns.py - Wavelet denoising."""
 import numpy as np
-from moirais.fn.wvdns import wavelet_denoise, wvdns
+from morie.fn.wvdns import wavelet_denoise, wvdns
 
 
 def test_wvdns_returns_descriptive_result():

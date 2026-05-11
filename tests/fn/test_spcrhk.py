@@ -1,7 +1,7 @@
 """Tests for spcrhk.schabenberger_cressie_hawkins."""
 import numpy as np
 import pytest
-from moirais.fn.spcrhk import schabenberger_cressie_hawkins
+from morie.fn.spcrhk import schabenberger_cressie_hawkins
 
 
 def test_spcrhk_basic():

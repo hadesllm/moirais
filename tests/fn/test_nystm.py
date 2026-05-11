@@ -1,7 +1,7 @@
 """Tests for nystm.nystrom_approximation."""
 import numpy as np
 import pytest
-from moirais.fn.nystm import nystrom_approximation
+from morie.fn.nystm import nystrom_approximation
 
 
 def test_nystm_basic():

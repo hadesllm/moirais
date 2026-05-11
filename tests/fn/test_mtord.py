@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mtord — road segment."""
+"""Tests for morie.fn.mtord — road segment."""
 
 import pytest
 import pandas as pd
-from moirais.fn.mtord import mto_road_segment
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtord import mto_road_segment
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRoadSegment:

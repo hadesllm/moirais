@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.balan — balanced accuracy."""
+"""Tests for morie.fn.balan — balanced accuracy."""
 import numpy as np
 import pytest
-from moirais.fn.balan import balanced_accuracy, balan
+from morie.fn.balan import balanced_accuracy, balan
 
 
 def test_perfect():

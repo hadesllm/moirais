@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrflt -- Eigenvector spatial filtering"""
+"""Tests for morie.fn.xrflt -- Eigenvector spatial filtering"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrflt import spatial_filter
+from morie.fn.xrflt import spatial_filter
 
 
 class TestSpatialFilter:

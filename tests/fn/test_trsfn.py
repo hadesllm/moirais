@@ -1,6 +1,6 @@
 """Tests for transfer entropy."""
 import numpy as np
-from moirais.fn.trsfn import transfer_entropy, trsfn
+from morie.fn.trsfn import transfer_entropy, trsfn
 
 
 def test_independent():

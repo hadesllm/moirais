@@ -1,7 +1,7 @@
 """Tests for didfst.did_forest."""
 import numpy as np
 import pytest
-from moirais.fn.didfst import did_forest
+from morie.fn.didfst import did_forest
 
 
 def test_didfst_basic():

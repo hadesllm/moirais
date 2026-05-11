@@ -1,7 +1,7 @@
 """Tests for jsdivg.jensen_shannon_divergence."""
 import numpy as np
 import pytest
-from moirais.fn.jsdivg import jensen_shannon_divergence
+from morie.fn.jsdivg import jensen_shannon_divergence
 
 
 def test_jsdivg_basic():

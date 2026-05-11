@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bmulr -- Bayesian multinomial."""
+"""Tests for morie.fn.bmulr -- Bayesian multinomial."""
 
 import numpy as np
-from moirais.fn.bmulr import bayesian_multinomial
+from morie.fn.bmulr import bayesian_multinomial
 
 
 def test_returns_dict():

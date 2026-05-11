@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhsrv -- service utilization."""
+"""Tests for morie.fn.mhsrv -- service utilization."""
 
 import pytest
-from moirais.fn.mhsrv import service_utilization
+from morie.fn.mhsrv import service_utilization
 
 
 class TestServiceUtilization:

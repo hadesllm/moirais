@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxscv -- Spatial LOO cross-validation"""
+"""Tests for morie.fn.zxscv -- Spatial LOO cross-validation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxscv import spatial_cv_loo
+from morie.fn.zxscv import spatial_cv_loo
 
 
 class TestSpatialCvLoo:

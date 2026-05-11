@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.newtm -- Newton's method."""
+"""Tests for morie.fn.newtm -- Newton's method."""
 
 import numpy as np
-from moirais.fn.newtm import newton_method, newtm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.newtm import newton_method, newtm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNewtm:

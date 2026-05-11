@@ -1,7 +1,7 @@
 """Test quantize_signal (sqntz)."""
 import numpy as np
-from moirais.fn.sqntz import quantize_signal, sqntz
-from moirais.fn._containers import SignalResult
+from morie.fn.sqntz import quantize_signal, sqntz
+from morie.fn._containers import SignalResult
 
 
 class TestQuantizeSignal:

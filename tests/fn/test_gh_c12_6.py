@@ -1,7 +1,7 @@
 """Tests for gh_c12_6.ghosal_semipara_eff."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c12_6 import ghosal_semipara_eff
+from morie.fn.gh_c12_6 import ghosal_semipara_eff
 
 
 def test_gh_c12_6_basic():

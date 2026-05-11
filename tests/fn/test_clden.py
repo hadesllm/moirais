@@ -1,7 +1,7 @@
 """Test clden."""
 import numpy as np
 import pytest
-from moirais.fn.clden import clden
+from morie.fn.clden import clden
 
 
 def test_clden_basic():

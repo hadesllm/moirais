@@ -1,7 +1,7 @@
 """Test pages."""
 import numpy as np
 import pytest
-from moirais.fn.pages import page_trend_test
+from morie.fn.pages import page_trend_test
 
 
 def test_pages_basic():

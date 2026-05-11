@@ -1,7 +1,7 @@
 """Tests for posab.positional_encoding_abs."""
 import numpy as np
 import pytest
-from moirais.fn.posab import positional_encoding_abs
+from morie.fn.posab import positional_encoding_abs
 
 
 def test_posab_basic():

@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.gate — Group Average Treatment Effect via AIPW within strata."""
+"""Tests for morie.fn.gate — Group Average Treatment Effect via AIPW within strata."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.gate import estimate_gate
+from morie.fn.gate import estimate_gate
 
 
 @pytest.fixture()

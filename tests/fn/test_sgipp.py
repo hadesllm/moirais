@@ -1,6 +1,6 @@
 """Tests for inhomogeneous Poisson process."""
 import numpy as np
-from moirais.fn.sgipp import sgipp
+from morie.fn.sgipp import sgipp
 
 
 def test_sgipp_smoke():
@@ -12,7 +12,7 @@ def test_sgipp_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgipp import cheatsheet
+    from morie.fn.sgipp import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

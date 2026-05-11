@@ -1,7 +1,7 @@
 """Tests for twoT.two_tower."""
 import numpy as np
 import pytest
-from moirais.fn.twoT import two_tower
+from morie.fn.twoT import two_tower
 
 
 def test_twoT_basic():

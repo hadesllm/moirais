@@ -3,7 +3,7 @@ Tests for Nelder-Mead simplex optimization.
 """
 
 import numpy as np
-from moirais.fn.nmead import nmead
+from morie.fn.nmead import nmead
 
 
 class TestNmead:

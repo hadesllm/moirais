@@ -1,7 +1,7 @@
 """Tests for bndfre.bound_frequentist."""
 import numpy as np
 import pytest
-from moirais.fn.bndfre import bound_frequentist
+from morie.fn.bndfre import bound_frequentist
 
 
 def test_bndfre_basic():

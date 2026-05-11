@@ -1,7 +1,7 @@
 """Test zero_crossing_rate (szcr)."""
 import numpy as np
-from moirais.fn.szcr import zero_crossing_rate, szcr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.szcr import zero_crossing_rate, szcr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestZCR:

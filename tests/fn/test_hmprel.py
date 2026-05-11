@@ -1,7 +1,7 @@
 """Tests for hmprel.geron_prelu."""
 import numpy as np
 import pytest
-from moirais.fn.hmprel import geron_prelu
+from morie.fn.hmprel import geron_prelu
 
 
 def test_hmprel_basic():

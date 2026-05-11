@@ -1,7 +1,7 @@
 """Tests for tmldgp.tmle_doubly_robust_pen."""
 import numpy as np
 import pytest
-from moirais.fn.tmldgp import tmle_doubly_robust_pen
+from morie.fn.tmldgp import tmle_doubly_robust_pen
 
 
 def test_tmldgp_basic():

@@ -1,7 +1,7 @@
 """Tests for posspr.posterior_predictive."""
 import numpy as np
 import pytest
-from moirais.fn.posspr import posterior_predictive
+from morie.fn.posspr import posterior_predictive
 
 
 def test_posspr_basic():

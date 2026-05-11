@@ -4,7 +4,7 @@ Acknowledgments
 AI assistance
 -------------
 
-MOIRAIS was developed with substantial assistance from frontier AI
+MORIE was developed with substantial assistance from frontier AI
 assistants. The author retains full responsibility for the code, the
 methods, and the scientific claims. AI assistance accelerated
 implementation but does not change the attribution of the work.
@@ -41,7 +41,7 @@ Project URLs:
 - https://cloud.google.com/vertex-ai
 
 The Anthropic and Google research-credit programs are compute-
-allocation programs; they do not constitute endorsement of MOIRAIS
+allocation programs; they do not constitute endorsement of MORIE
 by either company.
 
 Funding and infrastructure

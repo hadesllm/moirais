@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.netei — Expected influence."""
+"""Tests for morie.fn.netei — Expected influence."""
 
 import numpy as np
 import pytest
-from moirais.fn.netei import network_expected_influence
+from morie.fn.netei import network_expected_influence
 
 
 class TestNetworkExpectedInfluence:

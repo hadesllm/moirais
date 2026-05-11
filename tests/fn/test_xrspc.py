@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrspc -- Spatial Poisson count model"""
+"""Tests for morie.fn.xrspc -- Spatial Poisson count model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrspc import spatial_poisson
+from morie.fn.xrspc import spatial_poisson
 
 
 class TestSpatialPoisson:

@@ -1,7 +1,7 @@
 """Tests for hmbdn.geron_bahdanau_attention."""
 import numpy as np
 import pytest
-from moirais.fn.hmbdn import geron_bahdanau_attention
+from morie.fn.hmbdn import geron_bahdanau_attention
 
 
 def test_hmbdn_basic():

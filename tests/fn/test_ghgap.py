@@ -1,7 +1,7 @@
 """Test ghgap."""
 import numpy as np
 import pytest
-from moirais.fn.ghgap import ghgap
+from morie.fn.ghgap import ghgap
 
 
 def test_ghgap_basic():

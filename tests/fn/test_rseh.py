@@ -1,5 +1,5 @@
 """Tests for rseh — SEM with CI."""
-from moirais.fn.rseh import rseh
+from morie.fn.rseh import rseh
 
 def test_rseh_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -9,7 +9,7 @@ def test_rseh_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.rseh import cheatsheet
+    from morie.fn.rseh import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

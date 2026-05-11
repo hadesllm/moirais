@@ -1,7 +1,7 @@
 """Tests for extvm.extreme_value_gev."""
 import numpy as np
 import pytest
-from moirais.fn.extvm import extreme_value_gev
+from morie.fn.extvm import extreme_value_gev
 
 
 def test_extvm_basic():

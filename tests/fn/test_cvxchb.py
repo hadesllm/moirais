@@ -1,7 +1,7 @@
 """Tests for cvxchb.boyd_chebyshev_center."""
 import numpy as np
 import pytest
-from moirais.fn.cvxchb import boyd_chebyshev_center
+from morie.fn.cvxchb import boyd_chebyshev_center
 
 
 def test_cvxchb_basic():

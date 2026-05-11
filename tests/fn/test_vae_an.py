@@ -1,7 +1,7 @@
 """Tests for vae_an.vae_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.vae_an import vae_anomaly
+from morie.fn.vae_an import vae_anomaly
 
 
 def test_vae_an_basic():

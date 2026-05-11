@@ -1,7 +1,7 @@
 """Tests for aitdrr.dirichlet_regression."""
 import numpy as np
 import pytest
-from moirais.fn.aitdrr import dirichlet_regression
+from morie.fn.aitdrr import dirichlet_regression
 
 
 def test_aitdrr_basic():

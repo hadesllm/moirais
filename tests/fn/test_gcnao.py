@@ -1,7 +1,7 @@
 """Test gcnao."""
 import numpy as np
 import pytest
-from moirais.fn.gcnao import gcnao
+from morie.fn.gcnao import gcnao
 
 
 def test_gcnao_basic():

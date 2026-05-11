@@ -1,6 +1,6 @@
 """Tests for lilliefors_test."""
 import numpy as np, pytest
-from moirais.fn.lbrst import lilliefors_test
+from morie.fn.lbrst import lilliefors_test
 
 
 class TestLilliefors:

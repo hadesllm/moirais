@@ -1,6 +1,6 @@
 """Tests for distance_correlation."""
 import numpy as np, pytest
-from moirais.fn.dcorr import distance_correlation
+from morie.fn.dcorr import distance_correlation
 
 class TestDcorr:
     def test_correlated(self):

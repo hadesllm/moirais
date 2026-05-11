@@ -1,7 +1,7 @@
 """Tests for sglhd."""
 import numpy as np
 import pytest
-from moirais.fn.sglhd import sglhd
+from morie.fn.sglhd import sglhd
 
 
 def test_sglhd_basic():
@@ -27,5 +27,5 @@ def test_sglhd_no_data():
 
 
 def test_sglhd_alias():
-    from moirais.fn.sglhd import sglhd
+    from morie.fn.sglhd import sglhd
     assert sglhd is sglhd

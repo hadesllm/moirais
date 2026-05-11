@@ -1,6 +1,6 @@
 """Tests for latent_growth."""
 import numpy as np, pytest
-from moirais.fn.lcgm import latent_growth
+from morie.fn.lcgm import latent_growth
 
 class TestLCGM:
     def test_linear_growth(self):

@@ -1,7 +1,7 @@
 """Tests for rgknn.rangayyan_knn_classifier."""
 import numpy as np
 import pytest
-from moirais.fn.rgknn import rangayyan_knn_classifier
+from morie.fn.rgknn import rangayyan_knn_classifier
 
 
 def test_rgknn_basic():

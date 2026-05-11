@@ -1,7 +1,7 @@
 """Tests for rng254.rangayyan_ch4_power_cepstrum_sum."""
 import numpy as np
 import pytest
-from moirais.fn.rng254 import rangayyan_ch4_power_cepstrum_sum
+from morie.fn.rng254 import rangayyan_ch4_power_cepstrum_sum
 
 
 def test_rng254_basic():

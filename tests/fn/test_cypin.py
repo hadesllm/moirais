@@ -1,7 +1,7 @@
 """Tests for cypin.cyp450_inhibition."""
 import numpy as np
 import pytest
-from moirais.fn.cypin import cyp450_inhibition
+from morie.fn.cypin import cyp450_inhibition
 
 
 def test_cypin_basic():

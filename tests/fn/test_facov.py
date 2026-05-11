@@ -1,7 +1,7 @@
 """Tests for facov.factor_analytic_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.facov import factor_analytic_covariance
+from morie.fn.facov import factor_analytic_covariance
 
 
 def test_facov_basic():

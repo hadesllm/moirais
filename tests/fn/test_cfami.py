@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfami -- CFA modification indices."""
+"""Tests for morie.fn.cfami -- CFA modification indices."""
 
 import pandas as pd
-from moirais.fn.cfami import cfa_modindex
-from moirais.fn._mapq_const import SUBSCALES
+from morie.fn.cfami import cfa_modindex
+from morie.fn._mapq_const import SUBSCALES
 
 
 class TestCfaModIndex:

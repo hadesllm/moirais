@@ -1,7 +1,7 @@
 """Tests for rdfunc.rate_distortion."""
 import numpy as np
 import pytest
-from moirais.fn.rdfunc import rate_distortion
+from morie.fn.rdfunc import rate_distortion
 
 
 def test_rdfunc_basic():

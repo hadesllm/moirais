@@ -1,7 +1,7 @@
 """Tests for vacthr.vaccination_threshold."""
 import numpy as np
 import pytest
-from moirais.fn.vacthr import vaccination_threshold
+from morie.fn.vacthr import vaccination_threshold
 
 
 def test_vacthr_basic():

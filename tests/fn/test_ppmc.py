@@ -1,7 +1,7 @@
 """Test ppmc."""
 import numpy as np
 import pytest
-from moirais.fn.ppmc import ppmc
+from morie.fn.ppmc import ppmc
 
 
 def test_ppmc_basic():

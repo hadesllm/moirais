@@ -1,7 +1,7 @@
 """Tests for hmceg.geron_cross_entropy_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.hmceg import geron_cross_entropy_gradient
+from morie.fn.hmceg import geron_cross_entropy_gradient
 
 
 def test_hmceg_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pmm -- predictive mean matching imputation."""
+"""Tests for morie.fn.pmm -- predictive mean matching imputation."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.pmm import pmm_impute
+from morie.fn.pmm import pmm_impute
 
 
 class TestPMMImpute:

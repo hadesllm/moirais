@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.si — Serial interval estimation."""
+"""Tests for morie.fn.si — Serial interval estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.si import serial_interval
+from morie.fn.si import serial_interval
 
 
 class TestSerialInterval:

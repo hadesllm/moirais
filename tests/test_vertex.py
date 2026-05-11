@@ -1,4 +1,4 @@
-"""Tests for moirais.vertex — mocked gcloud + httpx."""
+"""Tests for morie.vertex — mocked gcloud + httpx."""
 
 import json
 import subprocess
@@ -6,7 +6,7 @@ from unittest.mock import patch, MagicMock
 
 import pytest
 
-from moirais import vertex
+from morie import vertex
 
 
 @pytest.fixture(autouse=True)
@@ -19,7 +19,7 @@ def _clear_token_cache():
 
 def test_resolve_config_requires_project(monkeypatch):
     monkeypatch.delenv("GOOGLE_CLOUD_PROJECT", raising=False)
-    monkeypatch.delenv("MOIRAIS_EE_PROJECT", raising=False)
+    monkeypatch.delenv("MORIE_EE_PROJECT", raising=False)
     with pytest.raises(RuntimeError, match="GOOGLE_CLOUD_PROJECT"):
         vertex.resolve_config()
 
@@ -34,9 +34,9 @@ def test_resolve_config_picks_up_project(monkeypatch):
     assert cfg.model == "gemini-2.5-pro"
 
 
-def test_resolve_config_falls_back_to_moirais_ee_project(monkeypatch):
+def test_resolve_config_falls_back_to_morie_ee_project(monkeypatch):
     monkeypatch.delenv("GOOGLE_CLOUD_PROJECT", raising=False)
-    monkeypatch.setenv("MOIRAIS_EE_PROJECT", "ee-fallback-project")
+    monkeypatch.setenv("MORIE_EE_PROJECT", "ee-fallback-project")
     cfg = vertex.resolve_config()
     assert cfg.project == "ee-fallback-project"
 
@@ -125,7 +125,7 @@ def test_health_check_reports_ok(monkeypatch):
 
 def test_health_check_captures_error(monkeypatch):
     monkeypatch.delenv("GOOGLE_CLOUD_PROJECT", raising=False)
-    monkeypatch.delenv("MOIRAIS_EE_PROJECT", raising=False)
+    monkeypatch.delenv("MORIE_EE_PROJECT", raising=False)
     out = vertex.health_check()
     assert out["ok"] is False
     assert "GOOGLE_CLOUD_PROJECT" in out["error"]

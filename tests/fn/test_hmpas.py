@@ -1,7 +1,7 @@
 """Tests for hmpas.geron_pasting."""
 import numpy as np
 import pytest
-from moirais.fn.hmpas import geron_pasting
+from morie.fn.hmpas import geron_pasting
 
 
 def test_hmpas_basic():

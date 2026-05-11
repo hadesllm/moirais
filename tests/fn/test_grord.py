@@ -1,7 +1,7 @@
 """Tests for grord.geron_ordinal_encoding."""
 import numpy as np
 import pytest
-from moirais.fn.grord import geron_ordinal_encoding
+from morie.fn.grord import geron_ordinal_encoding
 
 
 def test_grord_basic():

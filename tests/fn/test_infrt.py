@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.infrt -- Infant mortality rate."""
+"""Tests for morie.fn.infrt -- Infant mortality rate."""
 
 import pytest
-from moirais.fn.infrt import infant_mortality_rate
+from morie.fn.infrt import infant_mortality_rate
 
 
 class TestInfantMortality:

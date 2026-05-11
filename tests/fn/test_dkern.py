@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dkern — Deformation kernel."""
+"""Tests for morie.fn.dkern — Deformation kernel."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dkern import dkern
+from morie.fn.dkern import dkern
 
 
 class TestDkern:

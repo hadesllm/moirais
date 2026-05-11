@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.psmix."""
+"""Tests for morie.fn.psmix."""
 
 import numpy as np
 import pytest
-from moirais.fn.psmix import psmix
+from morie.fn.psmix import psmix
 
 
 class TestPsmix:

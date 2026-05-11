@@ -1,7 +1,7 @@
 """Test parseval_verify (prsv)."""
 import numpy as np
-from moirais.fn.prsv import parseval_verify, prsv
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prsv import parseval_verify, prsv
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPrsv:

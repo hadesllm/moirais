@@ -1,7 +1,7 @@
 """Tests for node2v.node2vec."""
 import numpy as np
 import pytest
-from moirais.fn.node2v import node2vec
+from morie.fn.node2v import node2vec
 
 
 def test_node2v_basic():

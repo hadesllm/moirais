@@ -1,7 +1,7 @@
 """Tests for ddqn.double_dqn."""
 import numpy as np
 import pytest
-from moirais.fn.ddqn import double_dqn
+from morie.fn.ddqn import double_dqn
 
 
 def test_ddqn_basic():

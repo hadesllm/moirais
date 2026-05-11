@@ -1,7 +1,7 @@
 """Tests for kmdpok.kamath_dpo_loss."""
 import numpy as np
 import pytest
-from moirais.fn.kmdpok import kamath_dpo_loss
+from morie.fn.kmdpok import kamath_dpo_loss
 
 
 def test_kmdpok_basic():

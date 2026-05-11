@@ -1,7 +1,7 @@
 """Tests for causdml2.causal_dml_partial_lin."""
 import numpy as np
 import pytest
-from moirais.fn.causdml2 import causal_dml_partial_lin
+from morie.fn.causdml2 import causal_dml_partial_lin
 
 
 def test_causdml2_basic():

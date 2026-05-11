@@ -1,7 +1,7 @@
 """Tests for gh_wn_rate_opt.ghosal_white_noise_optimal_rate."""
 import numpy as np
 import pytest
-from moirais.fn.gh_wn_rate_opt import ghosal_white_noise_optimal_rate
+from morie.fn.gh_wn_rate_opt import ghosal_white_noise_optimal_rate
 
 
 def test_gh_wn_rate_opt_basic():

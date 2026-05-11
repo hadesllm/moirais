@@ -1,7 +1,7 @@
 """Test gecon."""
 import numpy as np
 import pytest
-from moirais.fn.gecon import gecon
+from morie.fn.gecon import gecon
 
 
 def test_gecon_basic():

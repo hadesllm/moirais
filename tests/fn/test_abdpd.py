@@ -1,7 +1,7 @@
 """Tests for abdpd.abduction_modification_prediction."""
 import numpy as np
 import pytest
-from moirais.fn.abdpd import abduction_modification_prediction
+from morie.fn.abdpd import abduction_modification_prediction
 
 
 def test_abdpd_basic():

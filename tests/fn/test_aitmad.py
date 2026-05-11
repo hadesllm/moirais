@@ -1,7 +1,7 @@
 """Tests for aitmad.compositional_mad."""
 import numpy as np
 import pytest
-from moirais.fn.aitmad import compositional_mad
+from morie.fn.aitmad import compositional_mad
 
 
 def test_aitmad_basic():

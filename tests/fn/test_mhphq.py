@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhphq -- PHQ-9 score."""
+"""Tests for morie.fn.mhphq -- PHQ-9 score."""
 
 import pytest
-from moirais.fn.mhphq import phq9_score
+from morie.fn.mhphq import phq9_score
 
 
 class TestPHQ9:

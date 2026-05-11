@@ -1,7 +1,7 @@
 """Tests for wlcxsv.wilcoxon_gehan."""
 import numpy as np
 import pytest
-from moirais.fn.wlcxsv import wilcoxon_gehan
+from morie.fn.wlcxsv import wilcoxon_gehan
 
 
 def test_wlcxsv_basic():

@@ -1,6 +1,6 @@
 """Test group normalization."""
 import numpy as np
-from moirais.fn.gnorm import gnorm
+from morie.fn.gnorm import gnorm
 
 
 def test_gnorm_basic():

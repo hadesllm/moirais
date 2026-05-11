@@ -1,7 +1,7 @@
 """Tests for rginf.rangayyan_infomax_ica."""
 import numpy as np
 import pytest
-from moirais.fn.rginf import rangayyan_infomax_ica
+from morie.fn.rginf import rangayyan_infomax_ica
 
 
 def test_rginf_basic():

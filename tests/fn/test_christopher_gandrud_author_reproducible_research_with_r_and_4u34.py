@@ -1,7 +1,7 @@
 """Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u34 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_34
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u34 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_34
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u34_basic():

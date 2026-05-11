@@ -1,7 +1,7 @@
 """Tests for sgtncuts.sgt_normalised_cut."""
 import numpy as np
 import pytest
-from moirais.fn.sgtncuts import sgt_normalised_cut
+from morie.fn.sgtncuts import sgt_normalised_cut
 
 
 def test_sgtncuts_basic():

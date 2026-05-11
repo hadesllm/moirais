@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmocc -- OC classification rate"""
+"""Tests for morie.fn.nmocc -- OC classification rate"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmocc import oc_classify
+from morie.fn.nmocc import oc_classify
 
 
 class TestOcClassify:

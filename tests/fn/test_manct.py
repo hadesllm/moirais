@@ -1,7 +1,7 @@
 """Tests for manct.ma_continuity_correction."""
 import numpy as np
 import pytest
-from moirais.fn.manct import ma_continuity_correction
+from morie.fn.manct import ma_continuity_correction
 
 
 def test_manct_basic():

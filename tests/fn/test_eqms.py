@@ -1,7 +1,7 @@
 """Tests for eqms.equating_mean_sigma."""
 import numpy as np
 import pytest
-from moirais.fn.eqms import equating_mean_sigma
+from morie.fn.eqms import equating_mean_sigma
 
 
 def test_eqms_basic():

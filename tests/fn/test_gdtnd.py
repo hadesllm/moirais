@@ -1,7 +1,7 @@
 """Test gdtnd."""
 import numpy as np
 import pytest
-from moirais.fn.gdtnd import gdtnd
+from morie.fn.gdtnd import gdtnd
 
 
 def test_gdtnd_basic():

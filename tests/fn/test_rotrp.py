@@ -1,7 +1,7 @@
 """Tests for rotrp.rotary_position_embedding."""
 import numpy as np
 import pytest
-from moirais.fn.rotrp import rotary_position_embedding
+from morie.fn.rotrp import rotary_position_embedding
 
 
 def test_rotrp_basic():

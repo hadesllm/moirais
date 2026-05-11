@@ -1,7 +1,7 @@
 """Tests for hrzkde.horowitz_appendix_kde."""
 import numpy as np
 import pytest
-from moirais.fn.hrzkde import horowitz_appendix_kde
+from morie.fn.hrzkde import horowitz_appendix_kde
 
 
 def test_hrzkde_basic():

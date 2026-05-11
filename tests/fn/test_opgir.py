@@ -1,7 +1,7 @@
 """Test opgir."""
 import numpy as np
 import pytest
-from moirais.fn.opgir import opgir
+from morie.fn.opgir import opgir
 
 
 def test_opgir_basic():

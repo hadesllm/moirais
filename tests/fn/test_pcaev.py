@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pcaev -- PCA via eigenvalue decomposition."""
+"""Tests for morie.fn.pcaev -- PCA via eigenvalue decomposition."""
 
 import numpy as np
-from moirais.fn.pcaev import pca_eigen, pcaev
-from moirais.fn._containers import PcaRes
+from morie.fn.pcaev import pca_eigen, pcaev
+from morie.fn._containers import PcaRes
 
 
 class TestPcaEigen:

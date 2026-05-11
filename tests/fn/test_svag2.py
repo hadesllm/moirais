@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svag2 -- 2D amendment agenda"""
+"""Tests for morie.fn.svag2 -- 2D amendment agenda"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svag2 import agenda_2d
+from morie.fn.svag2 import agenda_2d
 
 
 class TestAgenda2d:

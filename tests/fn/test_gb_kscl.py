@@ -1,7 +1,7 @@
 """Tests for gb_kscl.gibbons_ks_critical_values."""
 import numpy as np
 import pytest
-from moirais.fn.gb_kscl import gibbons_ks_critical_values
+from morie.fn.gb_kscl import gibbons_ks_critical_values
 
 
 def test_gb_kscl_basic():

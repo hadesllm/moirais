@@ -1,7 +1,7 @@
 """Tests for ghhbp.ghosal_hierarchical_bayes."""
 import numpy as np
 import pytest
-from moirais.fn.ghhbp import ghosal_hierarchical_bayes
+from morie.fn.ghhbp import ghosal_hierarchical_bayes
 
 
 def test_ghhbp_basic():

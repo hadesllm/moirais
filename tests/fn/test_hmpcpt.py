@@ -1,7 +1,7 @@
 """Tests for hmpcpt.geron_perceptron."""
 import numpy as np
 import pytest
-from moirais.fn.hmpcpt import geron_perceptron
+from morie.fn.hmpcpt import geron_perceptron
 
 
 def test_hmpcpt_basic():

@@ -1,7 +1,7 @@
 """Tests for graic.geron_aic_gmm."""
 import numpy as np
 import pytest
-from moirais.fn.graic import geron_aic_gmm
+from morie.fn.graic import geron_aic_gmm
 
 
 def test_graic_basic():

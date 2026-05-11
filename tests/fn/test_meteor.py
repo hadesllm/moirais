@@ -1,7 +1,7 @@
 """Tests for meteor.meteor."""
 import numpy as np
 import pytest
-from moirais.fn.meteor import meteor
+from morie.fn.meteor import meteor
 
 
 def test_meteor_basic():

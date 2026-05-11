@@ -1,7 +1,7 @@
 """Tests for rng021.rangayyan_ch3_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.rng021 import rangayyan_ch3_covariance
+from morie.fn.rng021 import rangayyan_ch3_covariance
 
 
 def test_rng021_basic():

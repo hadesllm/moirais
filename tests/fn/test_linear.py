@@ -1,7 +1,7 @@
 """Tests for linear.linearization_se."""
 import numpy as np
 import pytest
-from moirais.fn.linear import linearization_se
+from morie.fn.linear import linearization_se
 
 
 def test_linear_basic():

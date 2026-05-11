@@ -1,7 +1,7 @@
 """Tests for cvxdgp.boyd_dual_problem."""
 import numpy as np
 import pytest
-from moirais.fn.cvxdgp import boyd_dual_problem
+from morie.fn.cvxdgp import boyd_dual_problem
 
 
 def test_cvxdgp_basic():

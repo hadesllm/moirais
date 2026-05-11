@@ -1,7 +1,7 @@
 """Tests for ppsamp.pps_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.ppsamp import pps_sampling
+from morie.fn.ppsamp import pps_sampling
 
 
 def test_ppsamp_basic():

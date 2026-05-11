@@ -1,7 +1,7 @@
 """Test lambrt."""
 import numpy as np
 import pytest
-from moirais.fn.lambrt import lambrt
+from morie.fn.lambrt import lambrt
 
 
 def test_lambrt_basic():

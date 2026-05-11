@@ -1,7 +1,7 @@
 """Test dkinl."""
 import numpy as np
 import pytest
-from moirais.fn.dkinl import dkinl
+from morie.fn.dkinl import dkinl
 
 
 def test_dkinl_basic():

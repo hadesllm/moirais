@@ -1,7 +1,7 @@
 """Tests for gdpf.gaussian_dp."""
 import numpy as np
 import pytest
-from moirais.fn.gdpf import gaussian_dp
+from morie.fn.gdpf import gaussian_dp
 
 
 def test_gdpf_basic():

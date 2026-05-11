@@ -1,7 +1,7 @@
 """Tests for gh_crm_def.ghosal_completely_random_measure."""
 import numpy as np
 import pytest
-from moirais.fn.gh_crm_def import ghosal_completely_random_measure
+from morie.fn.gh_crm_def import ghosal_completely_random_measure
 
 
 def test_gh_crm_def_basic():

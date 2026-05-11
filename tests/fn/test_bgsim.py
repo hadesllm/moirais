@@ -1,7 +1,7 @@
 """Test bgsim."""
 import numpy as np
 import pytest
-from moirais.fn.bgsim import bgsim
+from morie.fn.bgsim import bgsim
 
 
 def test_bgsim_basic():

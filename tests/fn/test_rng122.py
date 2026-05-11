@@ -1,7 +1,7 @@
 """Tests for rng122.rangayyan_ch3_baseline_wander_filter_difference_eq."""
 import numpy as np
 import pytest
-from moirais.fn.rng122 import rangayyan_ch3_baseline_wander_filter_difference_eq
+from morie.fn.rng122 import rangayyan_ch3_baseline_wander_filter_difference_eq
 
 
 def test_rng122_basic():

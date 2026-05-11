@@ -1,7 +1,7 @@
 """Tests for primal.primal_dual."""
 import numpy as np
 import pytest
-from moirais.fn.primal import primal_dual
+from morie.fn.primal import primal_dual
 
 
 def test_primal_basic():

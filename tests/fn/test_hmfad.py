@@ -1,7 +1,7 @@
 """Tests for hmfad.geron_forward_autodiff."""
 import numpy as np
 import pytest
-from moirais.fn.hmfad import geron_forward_autodiff
+from morie.fn.hmfad import geron_forward_autodiff
 
 
 def test_hmfad_basic():

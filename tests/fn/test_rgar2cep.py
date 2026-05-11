@@ -1,7 +1,7 @@
 """Tests for rgar2cep.rangayyan_ar_to_cepstrum."""
 import numpy as np
 import pytest
-from moirais.fn.rgar2cep import rangayyan_ar_to_cepstrum
+from morie.fn.rgar2cep import rangayyan_ar_to_cepstrum
 
 
 def test_rgar2cep_basic():

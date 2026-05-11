@@ -1,7 +1,7 @@
 """Tests for gh_besov_prior.ghosal_besov_prior."""
 import numpy as np
 import pytest
-from moirais.fn.gh_besov_prior import ghosal_besov_prior
+from morie.fn.gh_besov_prior import ghosal_besov_prior
 
 
 def test_gh_besov_prior_basic():

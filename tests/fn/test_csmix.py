@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.csmix — case-control mixture model."""
+"""Tests for morie.fn.csmix — case-control mixture model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.csmix import csmix
+from morie.fn.csmix import csmix
 
 
 @pytest.fixture()

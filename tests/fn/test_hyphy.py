@@ -1,7 +1,7 @@
 """Test hyphy."""
 import numpy as np
 import pytest
-from moirais.fn.hyphy import hyphy
+from morie.fn.hyphy import hyphy
 
 
 def test_hyphy_basic():

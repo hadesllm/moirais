@@ -1,6 +1,6 @@
 """Test stability_margin (stbnr)."""
-from moirais.fn.stbnr import stability_margin, stbnr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.stbnr import stability_margin, stbnr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStbnr:

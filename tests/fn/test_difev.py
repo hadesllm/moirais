@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.difev -- Differential evolution."""
+"""Tests for morie.fn.difev -- Differential evolution."""
 
 import numpy as np
 
-from moirais.fn.difev import difev
+from morie.fn.difev import difev
 
 
 def test_sphere():

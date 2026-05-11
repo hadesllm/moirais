@@ -1,7 +1,7 @@
 """Test ophho."""
 import numpy as np
 import pytest
-from moirais.fn.ophho import ophho
+from morie.fn.ophho import ophho
 
 
 def test_ophho_basic():

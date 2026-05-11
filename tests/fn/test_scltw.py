@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scltw -- bootstrap quantile resampling."""
+"""Tests for morie.fn.scltw -- bootstrap quantile resampling."""
 
 import numpy as np
-from moirais.fn.scltw import probability_resample, scltw
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.scltw import probability_resample, scltw
+from morie.fn._containers import DescriptiveResult
 
 
 class TestScltw:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bic2b -- BIC-based Bayes factor."""
+"""Tests for morie.fn.bic2b -- BIC-based Bayes factor."""
 
 import math
-from moirais.fn.bic2b import bayes_factor_bic
+from morie.fn.bic2b import bayes_factor_bic
 
 
 def test_returns_dict():

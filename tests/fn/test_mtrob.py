@@ -1,7 +1,7 @@
 """Test mtrob."""
 import numpy as np
 import pytest
-from moirais.fn.mtrob import mtrob
+from morie.fn.mtrob import mtrob
 
 
 def test_mtrob_basic():

@@ -1,7 +1,7 @@
 """Test dkfit."""
 import numpy as np
 import pytest
-from moirais.fn.dkfit import dkfit
+from morie.fn.dkfit import dkfit
 
 
 def test_dkfit_basic():

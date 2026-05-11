@@ -1,7 +1,7 @@
 """Tests for hmdetr.geron_detr."""
 import numpy as np
 import pytest
-from moirais.fn.hmdetr import geron_detr
+from morie.fn.hmdetr import geron_detr
 
 
 def test_hmdetr_basic():

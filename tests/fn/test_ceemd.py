@@ -1,7 +1,7 @@
 """Test ceemdan (ceemd)."""
 import numpy as np
-from moirais.fn.ceemd import ceemdan, ceemd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ceemd import ceemdan, ceemd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCeemd:

@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.srs import srs, simple_random_sample
+from morie.fn.srs import srs, simple_random_sample
 
 
 def test_srs_correct_size():

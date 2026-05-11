@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.relps -- Relapse vs reinfection (Pv3Rs)."""
+"""Tests for morie.fn.relps -- Relapse vs reinfection (Pv3Rs)."""
 
 import numpy as np
 import pytest
-from moirais.fn.relps import relps
+from morie.fn.relps import relps
 
 
 class TestRelps:

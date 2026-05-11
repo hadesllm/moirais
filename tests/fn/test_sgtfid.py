@@ -1,7 +1,7 @@
 """Tests for sgtfid.sgt_fiedler_value."""
 import numpy as np
 import pytest
-from moirais.fn.sgtfid import sgt_fiedler_value
+from morie.fn.sgtfid import sgt_fiedler_value
 
 
 def test_sgtfid_basic():

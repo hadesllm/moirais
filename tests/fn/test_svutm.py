@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svutm -- Spatial utility maximizer"""
+"""Tests for morie.fn.svutm -- Spatial utility maximizer"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svutm import utility_max
+from morie.fn.svutm import utility_max
 
 
 class TestUtilityMax:

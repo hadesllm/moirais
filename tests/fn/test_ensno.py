@@ -1,7 +1,7 @@
 """Test ensno."""
 import numpy as np
 import pytest
-from moirais.fn.ensno import ensno
+from morie.fn.ensno import ensno
 
 
 def test_ensno_basic():

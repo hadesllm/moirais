@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mscvx -- 2D convex hull"""
+"""Tests for morie.fn.mscvx -- 2D convex hull"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mscvx import convex_hull_2d
+from morie.fn.mscvx import convex_hull_2d
 
 
 class TestConvexHull2d:

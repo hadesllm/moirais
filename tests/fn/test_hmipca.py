@@ -1,7 +1,7 @@
 """Tests for hmipca.geron_incremental_pca."""
 import numpy as np
 import pytest
-from moirais.fn.hmipca import geron_incremental_pca
+from morie.fn.hmipca import geron_incremental_pca
 
 
 def test_hmipca_basic():

@@ -1,7 +1,7 @@
 """Test mafsh."""
 import numpy as np
 import pytest
-from moirais.fn.mafsh import mafsh
+from morie.fn.mafsh import mafsh
 
 
 def test_mafsh_basic():

@@ -1,7 +1,7 @@
 """Tests for plctst.placebo_test_did."""
 import numpy as np
 import pytest
-from moirais.fn.plctst import placebo_test_did
+from morie.fn.plctst import placebo_test_did
 
 
 def test_plctst_basic():

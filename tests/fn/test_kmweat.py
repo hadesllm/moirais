@@ -1,7 +1,7 @@
 """Tests for kmweat.kamath_weat_bias_score."""
 import numpy as np
 import pytest
-from moirais.fn.kmweat import kamath_weat_bias_score
+from morie.fn.kmweat import kamath_weat_bias_score
 
 
 def test_kmweat_basic():

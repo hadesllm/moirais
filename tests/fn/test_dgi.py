@@ -1,7 +1,7 @@
 """Tests for dgi.dgi."""
 import numpy as np
 import pytest
-from moirais.fn.dgi import dgi
+from morie.fn.dgi import dgi
 
 
 def test_dgi_basic():

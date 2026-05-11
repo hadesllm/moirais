@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgjck -- Variogram jackknife"""
+"""Tests for morie.fn.vgjck -- Variogram jackknife"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgjck import vario_jackknife
+from morie.fn.vgjck import vario_jackknife
 
 
 class TestVarioJackknife:

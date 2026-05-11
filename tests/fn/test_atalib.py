@@ -1,7 +1,7 @@
 """Tests for atalib.alibi_position_bias."""
 import numpy as np
 import pytest
-from moirais.fn.atalib import alibi_position_bias
+from morie.fn.atalib import alibi_position_bias
 
 
 def test_atalib_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mdsel — model selection via CV loss."""
+"""Tests for morie.fn.mdsel — model selection via CV loss."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mdsel import mdsel
+from morie.fn.mdsel import mdsel
 
 
 def test_basic_output():

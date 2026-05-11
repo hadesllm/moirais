@@ -1,7 +1,7 @@
 """Tests for ksr062.kosorok_ch3_pathwise_derivative."""
 import numpy as np
 import pytest
-from moirais.fn.ksr062 import kosorok_ch3_pathwise_derivative
+from morie.fn.ksr062 import kosorok_ch3_pathwise_derivative
 
 
 def test_ksr062_basic():

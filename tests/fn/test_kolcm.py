@@ -1,6 +1,6 @@
 """Tests for Kolmogorov complexity."""
 import pytest
-from moirais.fn.kolcm import kolmogorov_complexity, kolcm
+from morie.fn.kolcm import kolmogorov_complexity, kolcm
 
 
 def test_random_high():

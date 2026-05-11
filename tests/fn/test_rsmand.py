@@ -1,7 +1,7 @@
 """Tests for rsmand.rating_scale_andrich."""
 import numpy as np
 import pytest
-from moirais.fn.rsmand import rating_scale_andrich
+from morie.fn.rsmand import rating_scale_andrich
 
 
 def test_rsmand_basic():

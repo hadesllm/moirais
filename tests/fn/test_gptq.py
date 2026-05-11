@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.gptq — GPTQ weight quantizer."""
+"""Tests for morie.fn.gptq — GPTQ weight quantizer."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.gptq import gptq_quantize
+from morie.fn.gptq import gptq_quantize
 
 
 class TestGptqQuantize:

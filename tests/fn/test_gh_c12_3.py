@@ -1,7 +1,7 @@
 """Tests for gh_c12_3.ghosal_strong_apx_dp."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c12_3 import ghosal_strong_apx_dp
+from morie.fn.gh_c12_3 import ghosal_strong_apx_dp
 
 
 def test_gh_c12_3_basic():

@@ -1,7 +1,7 @@
 """Tests for surepi.surveillance_signal."""
 import numpy as np
 import pytest
-from moirais.fn.surepi import surveillance_signal
+from morie.fn.surepi import surveillance_signal
 
 
 def test_surepi_basic():

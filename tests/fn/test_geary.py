@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.geary — Geary's C spatial autocorrelation."""
+"""Tests for morie.fn.geary — Geary's C spatial autocorrelation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.geary import gearys_c
+from morie.fn.geary import gearys_c
 
 
 class TestGearysC:

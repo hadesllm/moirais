@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.plidl -- plot ideal and stimuli."""
+"""Tests for morie.fn.plidl -- plot ideal and stimuli."""
 
 import numpy as np
-from moirais.fn.plidl import plot_ideal_and_stimuli, plidl
+from morie.fn.plidl import plot_ideal_and_stimuli, plidl
 
 
 def test_plidl_smoke():

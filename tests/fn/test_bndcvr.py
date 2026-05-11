@@ -1,7 +1,7 @@
 """Tests for bndcvr.bound_coverage_check."""
 import numpy as np
 import pytest
-from moirais.fn.bndcvr import bound_coverage_check
+from morie.fn.bndcvr import bound_coverage_check
 
 
 def test_bndcvr_basic():

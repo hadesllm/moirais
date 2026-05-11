@@ -1,7 +1,7 @@
 """Tests for chgbcp.bayesian_online_changepoint."""
 import numpy as np
 import pytest
-from moirais.fn.chgbcp import bayesian_online_changepoint
+from morie.fn.chgbcp import bayesian_online_changepoint
 
 
 def test_chgbcp_basic():

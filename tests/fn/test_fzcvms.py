@@ -1,7 +1,7 @@
 """Tests for fzcvms.fauzi_cvm_statistic."""
 import numpy as np
 import pytest
-from moirais.fn.fzcvms import fauzi_cvm_statistic
+from morie.fn.fzcvms import fauzi_cvm_statistic
 
 
 def test_fzcvms_basic():

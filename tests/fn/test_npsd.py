@@ -1,7 +1,7 @@
 """Test noise_psd (npsd)."""
 import numpy as np
-from moirais.fn.npsd import noise_psd, npsd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.npsd import noise_psd, npsd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNoisePSD:

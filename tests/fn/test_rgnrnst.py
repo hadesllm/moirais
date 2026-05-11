@@ -1,7 +1,7 @@
 """Tests for rgnrnst.rangayyan_nernst_potential."""
 import numpy as np
 import pytest
-from moirais.fn.rgnrnst import rangayyan_nernst_potential
+from morie.fn.rgnrnst import rangayyan_nernst_potential
 
 
 def test_rgnrnst_basic():

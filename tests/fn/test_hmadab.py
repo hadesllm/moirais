@@ -1,7 +1,7 @@
 """Tests for hmadab.geron_adaboost."""
 import numpy as np
 import pytest
-from moirais.fn.hmadab import geron_adaboost
+from morie.fn.hmadab import geron_adaboost
 
 
 def test_hmadab_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svhtm -- Multi-candidate Hotelling model"""
+"""Tests for morie.fn.svhtm -- Multi-candidate Hotelling model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svhtm import hotelling_multi
+from morie.fn.svhtm import hotelling_multi
 
 
 class TestHotellingMulti:

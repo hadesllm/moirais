@@ -1,7 +1,7 @@
 """Test convolution_theorem_verify (cnvth)."""
 import numpy as np
-from moirais.fn.cnvth import convolution_theorem_verify, cnvth
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cnvth import convolution_theorem_verify, cnvth
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCnvth:

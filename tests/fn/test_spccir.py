@@ -1,7 +1,7 @@
 """Tests for spccir."""
 import numpy as np
 import pytest
-from moirais.fn.spccir import spccir
+from morie.fn.spccir import spccir
 
 
 def test_spccir_basic():
@@ -27,5 +27,5 @@ def test_spccir_no_data():
 
 
 def test_spccir_alias():
-    from moirais.fn.spccir import spccir
+    from morie.fn.spccir import spccir
     assert spccir is spccir

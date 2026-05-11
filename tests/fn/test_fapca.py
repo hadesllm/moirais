@@ -1,6 +1,6 @@
 """Tests for factor_pca_compare."""
 import numpy as np, pytest
-from moirais.fn.fapca import factor_pca_compare
+from morie.fn.fapca import factor_pca_compare
 
 class TestFaPca:
     def test_basic(self):

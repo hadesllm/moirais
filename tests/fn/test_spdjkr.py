@@ -1,7 +1,7 @@
 """Tests for spdjkr.schabenberger_disjunctive_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.spdjkr import schabenberger_disjunctive_kriging
+from morie.fn.spdjkr import schabenberger_disjunctive_kriging
 
 
 def test_spdjkr_basic():

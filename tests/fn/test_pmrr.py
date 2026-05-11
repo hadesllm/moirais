@@ -5,7 +5,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.fn.pmrr import pm_relative_risk, pmrr
+from morie.fn.pmrr import pm_relative_risk, pmrr
 
 
 def test_pmrr_reference_level_gives_rr_one():

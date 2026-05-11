@@ -1,7 +1,7 @@
 """Tests for rhatc.r_hat_convergence."""
 import numpy as np
 import pytest
-from moirais.fn.rhatc import r_hat_convergence
+from morie.fn.rhatc import r_hat_convergence
 
 
 def test_rhatc_basic():

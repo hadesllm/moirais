@@ -1,7 +1,7 @@
 """Test gchwv."""
 import numpy as np
 import pytest
-from moirais.fn.gchwv import gchwv
+from morie.fn.gchwv import gchwv
 
 
 def test_gchwv_basic():

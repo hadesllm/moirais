@@ -1,7 +1,7 @@
 """Test enelr."""
 import numpy as np
 import pytest
-from moirais.fn.enelr import enelr
+from morie.fn.enelr import enelr
 
 
 def test_enelr_basic():

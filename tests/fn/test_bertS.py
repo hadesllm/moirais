@@ -1,7 +1,7 @@
 """Tests for bertS.bertscore."""
 import numpy as np
 import pytest
-from moirais.fn.bertS import bertscore
+from morie.fn.bertS import bertscore
 
 
 def test_bertS_basic():

@@ -1,7 +1,7 @@
 """Tests for ipferd.ipw_with_replicate."""
 import numpy as np
 import pytest
-from moirais.fn.ipferd import ipw_with_replicate
+from morie.fn.ipferd import ipw_with_replicate
 
 
 def test_ipferd_basic():

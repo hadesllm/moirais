@@ -1,7 +1,7 @@
 """Test geloc."""
 import numpy as np
 import pytest
-from moirais.fn.geloc import geloc
+from morie.fn.geloc import geloc
 
 
 def test_geloc_basic():

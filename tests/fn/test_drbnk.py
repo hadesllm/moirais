@@ -1,7 +1,7 @@
 """Tests for drbnk.dr_bandit_did."""
 import numpy as np
 import pytest
-from moirais.fn.drbnk import dr_bandit_did
+from morie.fn.drbnk import dr_bandit_did
 
 
 def test_drbnk_basic():

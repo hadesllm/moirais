@@ -1,7 +1,7 @@
 """Tests for kmalbi.kamath_alibi_bias."""
 import numpy as np
 import pytest
-from moirais.fn.kmalbi import kamath_alibi_bias
+from morie.fn.kmalbi import kamath_alibi_bias
 
 
 def test_kmalbi_basic():

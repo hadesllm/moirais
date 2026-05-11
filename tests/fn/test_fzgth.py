@@ -1,7 +1,7 @@
 """Tests for fzgth.fauzi_g_theta_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.fzgth import fauzi_g_theta_distribution
+from morie.fn.fzgth import fauzi_g_theta_distribution
 
 
 def test_fzgth_basic():

@@ -1,7 +1,7 @@
 """Tests for fastxt.fasttext."""
 import numpy as np
 import pytest
-from moirais.fn.fastxt import fasttext
+from morie.fn.fastxt import fasttext
 
 
 def test_fastxt_basic():

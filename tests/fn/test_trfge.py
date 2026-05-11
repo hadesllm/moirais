@@ -1,7 +1,7 @@
 """Tests for trfge.transformer_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.trfge import transformer_genomic
+from morie.fn.trfge import transformer_genomic
 
 
 def test_trfge_basic():

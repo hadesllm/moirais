@@ -1,7 +1,7 @@
 """Tests for grace.grace."""
 import numpy as np
 import pytest
-from moirais.fn.grace import grace
+from morie.fn.grace import grace
 
 
 def test_grace_basic():

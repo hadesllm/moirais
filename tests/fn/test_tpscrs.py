@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tpscrs — crime severity."""
+"""Tests for morie.fn.tpscrs — crime severity."""
 
 import pytest
-from moirais.fn.tpscrs import tps_crime_severity
-from moirais.fn._containers import ESRes
+from morie.fn.tpscrs import tps_crime_severity
+from morie.fn._containers import ESRes
 
 
 class TestCrimeSeverity:

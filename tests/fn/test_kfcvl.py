@@ -1,7 +1,7 @@
 """Tests for kfcvl.py - K-fold cross-validation."""
 import numpy as np
 import pytest
-from moirais.fn.kfcvl import kfcvl_fn, kfcvl
+from morie.fn.kfcvl import kfcvl_fn, kfcvl
 
 
 def _two_class_data():

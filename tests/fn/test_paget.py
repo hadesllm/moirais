@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.paget import paget
+from morie.fn.paget import paget
 
 
 class TestPaget:

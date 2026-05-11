@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sent -- Sentence length stats."""
+"""Tests for morie.fn.sent -- Sentence length stats."""
 
 import numpy as np
 import pytest
-from moirais.fn.sent import sentence_stats, sent
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sent import sentence_stats, sent
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSent:

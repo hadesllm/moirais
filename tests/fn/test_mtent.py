@@ -1,7 +1,7 @@
 """Test mtent."""
 import numpy as np
 import pytest
-from moirais.fn.mtent import mtent
+from morie.fn.mtent import mtent
 
 
 def test_mtent_basic():

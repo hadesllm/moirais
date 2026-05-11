@@ -1,7 +1,7 @@
 """Test gevac."""
 import numpy as np
 import pytest
-from moirais.fn.gevac import gevac
+from morie.fn.gevac import gevac
 
 
 def test_gevac_basic():

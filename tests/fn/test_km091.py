@@ -1,7 +1,7 @@
 """Tests for km091.kamath_ch6_demographic_representation."""
 import numpy as np
 import pytest
-from moirais.fn.km091 import kamath_ch6_demographic_representation
+from morie.fn.km091 import kamath_ch6_demographic_representation
 
 
 def test_km091_basic():

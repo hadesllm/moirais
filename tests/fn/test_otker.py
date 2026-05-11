@@ -1,7 +1,7 @@
 """Tests for otker.ot_kernel_emd_approx."""
 import numpy as np
 import pytest
-from moirais.fn.otker import ot_kernel_emd_approx
+from morie.fn.otker import ot_kernel_emd_approx
 
 
 def test_otker_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svppm -- Party manifesto scaling (Wordscores)"""
+"""Tests for morie.fn.svppm -- Party manifesto scaling (Wordscores)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svppm import party_manifesto
+from morie.fn.svppm import party_manifesto
 
 
 class TestPartyManifesto:

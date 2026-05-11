@@ -1,7 +1,7 @@
 """Tests for convgs.convergent_validity."""
 import numpy as np
 import pytest
-from moirais.fn.convgs import convergent_validity
+from morie.fn.convgs import convergent_validity
 
 
 def test_convgs_basic():

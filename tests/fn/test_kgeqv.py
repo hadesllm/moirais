@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgeqv -- Kriging equivalence to GLS"""
+"""Tests for morie.fn.kgeqv -- Kriging equivalence to GLS"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgeqv import kriging_equiv
+from morie.fn.kgeqv import kriging_equiv
 
 
 class TestKrigingEquiv:

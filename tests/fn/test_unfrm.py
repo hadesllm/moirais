@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.unfrm — uniform quantizer."""
+"""Tests for morie.fn.unfrm — uniform quantizer."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.unfrm import uniform_quantize
+from morie.fn.unfrm import uniform_quantize
 
 
 class TestUniformQuantize:

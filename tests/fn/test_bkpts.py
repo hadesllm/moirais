@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bkpts — Bai-Perron structural break detection."""
+"""Tests for morie.fn.bkpts — Bai-Perron structural break detection."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bkpts import bai_perron, bkpts
+from morie.fn.bkpts import bai_perron, bkpts
 
 
 def test_returns_descriptive_result():

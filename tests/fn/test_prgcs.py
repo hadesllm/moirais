@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.prgcs — program cost savings."""
+"""Tests for morie.fn.prgcs — program cost savings."""
 
 import pytest
-from moirais.fn.prgcs import program_cost_savings
-from moirais.fn._containers import ESRes
+from morie.fn.prgcs import program_cost_savings
+from morie.fn._containers import ESRes
 
 
 class TestProgramCostSavings:

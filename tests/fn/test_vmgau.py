@@ -1,7 +1,7 @@
 """Test vmgau."""
 import numpy as np
 import pytest
-from moirais.fn.vmgau import vmgau
+from morie.fn.vmgau import vmgau
 
 
 def test_vmgau_basic():

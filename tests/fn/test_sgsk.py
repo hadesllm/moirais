@@ -1,6 +1,6 @@
 """Tests for simple kriging."""
 import numpy as np
-from moirais.fn.sgsk import sgsk
+from morie.fn.sgsk import sgsk
 
 
 def test_sgsk_smoke():

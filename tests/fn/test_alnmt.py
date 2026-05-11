@@ -1,6 +1,6 @@
 """Test alnmt."""
 import numpy as np
-from moirais.fn.alnmt import alpha_nominate_score
+from morie.fn.alnmt import alpha_nominate_score
 
 
 def test_alnmt_basic():

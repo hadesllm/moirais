@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.tqdec — TurboQuant dequantization."""
+"""Tests for morie.fn.tqdec — TurboQuant dequantization."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tqmse import turboquant_mse
-from moirais.fn.tqdec import turboquant_decode
+from morie.fn.tqmse import turboquant_mse
+from morie.fn.tqdec import turboquant_decode
 
 
 class TestTurboquantDecode:

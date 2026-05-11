@@ -1,7 +1,7 @@
 """Tests for rgam.rangayyan_am_signal."""
 import numpy as np
 import pytest
-from moirais.fn.rgam import rangayyan_am_signal
+from morie.fn.rgam import rangayyan_am_signal
 
 
 def test_rgam_basic():

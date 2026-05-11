@@ -1,7 +1,7 @@
 """Test wqtst."""
 import numpy as np
 import pytest
-from moirais.fn.wqtst import wqtst
+from morie.fn.wqtst import wqtst
 
 
 def test_wqtst_basic():

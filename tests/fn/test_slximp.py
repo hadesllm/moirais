@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.slximp."""
+"""Tests for morie.fn.slximp."""
 import numpy as np
 import pytest
-from moirais.fn.slximp import slximp
+from morie.fn.slximp import slximp
 
 
 class TestSlximp:

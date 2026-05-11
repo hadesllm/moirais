@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.phi -- Phi coefficient for 2x2 tables."""
+"""Tests for morie.fn.phi -- Phi coefficient for 2x2 tables."""
 
 import pytest
-from moirais.fn.phi import phi_coefficient
+from morie.fn.phi import phi_coefficient
 
 
 class TestPhiCoefficient:

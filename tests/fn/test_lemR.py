@@ -1,7 +1,7 @@
 """Tests for lemR.leiden_grph."""
 import numpy as np
 import pytest
-from moirais.fn.lemR import leiden_grph
+from morie.fn.lemR import leiden_grph
 
 
 def test_lemR_basic():

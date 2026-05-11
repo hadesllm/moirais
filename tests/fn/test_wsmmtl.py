@@ -1,7 +1,7 @@
 """Tests for wsmmtl.wasserman_mutual_info."""
 import numpy as np
 import pytest
-from moirais.fn.wsmmtl import wasserman_mutual_info
+from morie.fn.wsmmtl import wasserman_mutual_info
 
 
 def test_wsmmtl_basic():

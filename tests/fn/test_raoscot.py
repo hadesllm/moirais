@@ -1,7 +1,7 @@
 """Tests for raoscot.rao_scott_chisq."""
 import numpy as np
 import pytest
-from moirais.fn.raoscot import rao_scott_chisq
+from morie.fn.raoscot import rao_scott_chisq
 
 
 def test_raoscot_basic():

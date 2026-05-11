@@ -1,7 +1,7 @@
 """Tests for evtlmom.evt_trimmed_lmom."""
 import numpy as np
 import pytest
-from moirais.fn.evtlmom import evt_trimmed_lmom
+from morie.fn.evtlmom import evt_trimmed_lmom
 
 
 def test_evtlmom_basic():

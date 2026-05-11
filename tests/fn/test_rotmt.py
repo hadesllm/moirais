@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rotmt -- rotation matrix 2D."""
+"""Tests for morie.fn.rotmt -- rotation matrix 2D."""
 
 import numpy as np
-from moirais.fn.rotmt import rotation_matrix_2d, rotmt
+from morie.fn.rotmt import rotation_matrix_2d, rotmt
 
 
 def test_rotmt_identity():

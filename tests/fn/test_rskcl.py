@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rskcl — risk classification."""
+"""Tests for morie.fn.rskcl — risk classification."""
 
 import pandas as pd
-from moirais.fn.rskcl import risk_classify, rskcl
+from morie.fn.rskcl import risk_classify, rskcl
 
 
 class TestRiskClassify:

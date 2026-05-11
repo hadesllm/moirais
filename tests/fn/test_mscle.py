@@ -1,6 +1,6 @@
 """Tests for multiscale entropy."""
 import numpy as np
-from moirais.fn.mscle import multiscale_entropy, mscle
+from morie.fn.mscle import multiscale_entropy, mscle
 
 
 def test_basic():

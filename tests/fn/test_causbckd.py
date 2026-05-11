@@ -1,7 +1,7 @@
 """Tests for causbckd.causal_backdoor_estimate."""
 import numpy as np
 import pytest
-from moirais.fn.causbckd import causal_backdoor_estimate
+from morie.fn.causbckd import causal_backdoor_estimate
 
 
 def test_causbckd_basic():

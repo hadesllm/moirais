@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgres -- Kriging residual map"""
+"""Tests for morie.fn.kgres -- Kriging residual map"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgres import kriging_residual_map
+from morie.fn.kgres import kriging_residual_map
 
 
 class TestKrigingResidualMap:

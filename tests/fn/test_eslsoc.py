@@ -1,7 +1,7 @@
 """Tests for eslsoc.esl_self_organize."""
 import numpy as np
 import pytest
-from moirais.fn.eslsoc import esl_self_organize
+from morie.fn.eslsoc import esl_self_organize
 
 
 def test_eslsoc_basic():

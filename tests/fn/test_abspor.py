@@ -1,7 +1,7 @@
 """Test abspor."""
 import numpy as np
 import pytest
-from moirais.fn.abspor import abspor
+from morie.fn.abspor import abspor
 
 
 def test_abspor_basic():

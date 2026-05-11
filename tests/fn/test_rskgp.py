@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rskgp — risk group profile."""
+"""Tests for morie.fn.rskgp — risk group profile."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.rskgp import risk_group_profile
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rskgp import risk_group_profile
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRiskGroupProfile:

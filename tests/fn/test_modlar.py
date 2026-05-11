@@ -1,7 +1,7 @@
 """Tests for modlar.modularity_newman."""
 import numpy as np
 import pytest
-from moirais.fn.modlar import modularity_newman
+from morie.fn.modlar import modularity_newman
 
 
 def test_modlar_basic():

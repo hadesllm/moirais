@@ -1,7 +1,7 @@
 """Test wqtpp."""
 import numpy as np
 import pytest
-from moirais.fn.wqtpp import wqtpp
+from morie.fn.wqtpp import wqtpp
 
 
 def test_wqtpp_basic():

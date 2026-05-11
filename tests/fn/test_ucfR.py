@@ -1,7 +1,7 @@
 """Tests for ucfR.user_cf."""
 import numpy as np
 import pytest
-from moirais.fn.ucfR import user_cf
+from morie.fn.ucfR import user_cf
 
 
 def test_ucfR_basic():

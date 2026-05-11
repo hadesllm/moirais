@@ -1,7 +1,7 @@
 """Tests for itrlrn.iterative_q_learning."""
 import numpy as np
 import pytest
-from moirais.fn.itrlrn import iterative_q_learning
+from morie.fn.itrlrn import iterative_q_learning
 
 
 def test_itrlrn_basic():

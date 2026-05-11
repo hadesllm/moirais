@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.mtodr — driver risk."""
+"""Tests for morie.fn.mtodr — driver risk."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.mtodr import mto_driver_risk
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtodr import mto_driver_risk
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDriverRisk:

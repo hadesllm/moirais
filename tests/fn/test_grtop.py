@@ -1,7 +1,7 @@
 """Tests for grtop.geron_topk_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.grtop import geron_topk_sampling
+from morie.fn.grtop import geron_topk_sampling
 
 
 def test_grtop_basic():

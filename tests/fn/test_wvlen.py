@@ -1,7 +1,7 @@
 """Test waveform_length_fn."""
 import numpy as np
-from moirais.fn.wvlen import waveform_length_fn, alias
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wvlen import waveform_length_fn, alias
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWaveformLengthFn:

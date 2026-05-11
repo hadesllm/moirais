@@ -1,7 +1,7 @@
 """Tests for dpols.dp_linear_regression."""
 import numpy as np
 import pytest
-from moirais.fn.dpols import dp_linear_regression
+from morie.fn.dpols import dp_linear_regression
 
 
 def test_dpols_basic():

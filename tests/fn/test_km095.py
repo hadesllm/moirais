@@ -1,7 +1,7 @@
 """Tests for km095.kamath_ch6_gender_direction."""
 import numpy as np
 import pytest
-from moirais.fn.km095 import kamath_ch6_gender_direction
+from morie.fn.km095 import kamath_ch6_gender_direction
 
 
 def test_km095_basic():

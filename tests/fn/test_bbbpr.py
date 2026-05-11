@@ -1,7 +1,7 @@
 """Tests for bbbpr.bbb_permeability."""
 import numpy as np
 import pytest
-from moirais.fn.bbbpr import bbb_permeability
+from morie.fn.bbbpr import bbb_permeability
 
 
 def test_bbbpr_basic():

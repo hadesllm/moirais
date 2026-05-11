@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.tpsrp — police report summary."""
+"""Tests for morie.fn.tpsrp — police report summary."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.tpsrp import tps_report_analysis
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tpsrp import tps_report_analysis
+from morie.fn._containers import DescriptiveResult
 
 
 @pytest.fixture()

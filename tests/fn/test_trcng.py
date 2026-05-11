@@ -1,7 +1,7 @@
 """Test trcng."""
 import numpy as np
 import pytest
-from moirais.fn.trcng import trcng
+from morie.fn.trcng import trcng
 
 
 def test_trcng_basic():

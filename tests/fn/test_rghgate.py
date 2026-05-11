@@ -1,7 +1,7 @@
 """Tests for rghgate.rangayyan_hh_gating."""
 import numpy as np
 import pytest
-from moirais.fn.rghgate import rangayyan_hh_gating
+from morie.fn.rghgate import rangayyan_hh_gating
 
 
 def test_rghgate_basic():

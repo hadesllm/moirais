@@ -1,7 +1,7 @@
 """Tests for rgmavg.rangayyan_moving_average."""
 import numpy as np
 import pytest
-from moirais.fn.rgmavg import rangayyan_moving_average
+from morie.fn.rgmavg import rangayyan_moving_average
 
 
 def test_rgmavg_basic():

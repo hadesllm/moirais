@@ -1,7 +1,7 @@
 """Tests for rgfeatex.rangayyan_feature_extract_bci."""
 import numpy as np
 import pytest
-from moirais.fn.rgfeatex import rangayyan_feature_extract_bci
+from morie.fn.rgfeatex import rangayyan_feature_extract_bci
 
 
 def test_rgfeatex_basic():

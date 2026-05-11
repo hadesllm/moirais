@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.swalg."""
+"""Tests for morie.fn.swalg."""
 import numpy as np
-from moirais.fn.swalg import smith_waterman
+from morie.fn.swalg import smith_waterman
 
 
 def test_swalg_identical():
@@ -25,7 +25,7 @@ def test_swalg_no_match():
 
 
 def test_cheatsheet():
-    from moirais.fn.swalg import cheatsheet
+    from morie.fn.swalg import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Test rslst."""
 import numpy as np
 import pytest
-from moirais.fn.rslst import rslst
+from morie.fn.rslst import rslst
 
 
 def test_rslst_basic():

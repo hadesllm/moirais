@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pldyn."""
+"""Tests for morie.fn.pldyn."""
 
 import numpy as np
 import pytest
-from moirais.fn.pldyn import pldyn
+from morie.fn.pldyn import pldyn
 
 
 class TestPldyn:

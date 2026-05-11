@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.idisc — item discrimination index."""
+"""Tests for morie.fn.idisc — item discrimination index."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn import idisc
+from morie.fn import idisc
 
 
 @pytest.fixture()

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.hrmit."""
+"""Tests for morie.fn.hrmit."""
 import numpy as np
-from moirais.fn.hrmit import hermite_interp
+from morie.fn.hrmit import hermite_interp
 
 
 def test_hrmit_smoke():
@@ -17,7 +17,7 @@ def test_hrmit_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.hrmit import cheatsheet
+    from morie.fn.hrmit import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

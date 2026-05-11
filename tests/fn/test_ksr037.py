@@ -1,7 +1,7 @@
 """Tests for ksr037.kosorok_ch2_glivenko_cantelli_uniform."""
 import numpy as np
 import pytest
-from moirais.fn.ksr037 import kosorok_ch2_glivenko_cantelli_uniform
+from morie.fn.ksr037 import kosorok_ch2_glivenko_cantelli_uniform
 
 
 def test_ksr037_basic():

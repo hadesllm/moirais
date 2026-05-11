@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bnhan — Han's maximum rank correlation."""
+"""Tests for morie.fn.bnhan — Han's maximum rank correlation."""
 
 import numpy as np
 import pytest
-from moirais.fn.bnhan import bnhan
+from morie.fn.bnhan import bnhan
 
 
 def test_returns_dict():

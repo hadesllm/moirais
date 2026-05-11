@@ -1,7 +1,7 @@
 """Tests for grgmem.geron_gmm_em_step."""
 import numpy as np
 import pytest
-from moirais.fn.grgmem import geron_gmm_em_step
+from morie.fn.grgmem import geron_gmm_em_step
 
 
 def test_grgmem_basic():

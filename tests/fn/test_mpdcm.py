@@ -1,7 +1,7 @@
 """Test matching_pursuit_decompose (mpdcm)."""
 import numpy as np
-from moirais.fn.mpdcm import matching_pursuit_decompose, mpdcm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mpdcm import matching_pursuit_decompose, mpdcm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMpdcm:

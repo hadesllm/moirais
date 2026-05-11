@@ -1,7 +1,7 @@
 """Tests for chlmlt."""
 import numpy as np
 import pytest
-from moirais.fn.chlmlt import chlmlt
+from morie.fn.chlmlt import chlmlt
 
 
 def test_chlmlt_basic():
@@ -27,5 +27,5 @@ def test_chlmlt_no_data():
 
 
 def test_chlmlt_alias():
-    from moirais.fn.chlmlt import chlmlt
+    from morie.fn.chlmlt import chlmlt
     assert chlmlt is chlmlt

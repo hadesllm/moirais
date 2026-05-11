@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gescd — GES causal discovery."""
+"""Tests for morie.fn.gescd — GES causal discovery."""
 import numpy as np
 import pytest
-from moirais.fn.gescd import gescd
+from morie.fn.gescd import gescd
 
 
 @pytest.fixture()
@@ -69,5 +69,5 @@ def test_sparsity_higher_lambda(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.gescd import cheatsheet
+    from morie.fn.gescd import cheatsheet
     assert len(cheatsheet()) > 0

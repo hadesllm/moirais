@@ -1,7 +1,7 @@
 """Tests for km080.kamath_ch6_weat_function."""
 import numpy as np
 import pytest
-from moirais.fn.km080 import kamath_ch6_weat_function
+from morie.fn.km080 import kamath_ch6_weat_function
 
 
 def test_km080_basic():

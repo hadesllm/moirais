@@ -1,7 +1,7 @@
 """Tests for rng199.rangayyan_ch4_correlation_coefficient_normalized_dot."""
 import numpy as np
 import pytest
-from moirais.fn.rng199 import rangayyan_ch4_correlation_coefficient_normalized_dot
+from morie.fn.rng199 import rangayyan_ch4_correlation_coefficient_normalized_dot
 
 
 def test_rng199_basic():

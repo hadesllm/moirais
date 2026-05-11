@@ -1,7 +1,7 @@
 """Tests for gb_edf.gibbons_edf_def."""
 import numpy as np
 import pytest
-from moirais.fn.gb_edf import gibbons_edf_def
+from morie.fn.gb_edf import gibbons_edf_def
 
 
 def test_gb_edf_basic():

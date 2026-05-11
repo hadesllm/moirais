@@ -1,7 +1,7 @@
 """Tests for dpgaus.dp_gaussian_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.dpgaus import dp_gaussian_mechanism
+from morie.fn.dpgaus import dp_gaussian_mechanism
 
 
 def test_dpgaus_basic():

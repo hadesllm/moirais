@@ -1,7 +1,7 @@
 """Tests for rgztf.rangayyan_z_transform."""
 import numpy as np
 import pytest
-from moirais.fn.rgztf import rangayyan_z_transform
+from morie.fn.rgztf import rangayyan_z_transform
 
 
 def test_rgztf_basic():

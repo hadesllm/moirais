@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mselb -- MDS elbow detection"""
+"""Tests for morie.fn.mselb -- MDS elbow detection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mselb import mds_elbow
+from morie.fn.mselb import mds_elbow
 
 
 class TestMdsElbow:

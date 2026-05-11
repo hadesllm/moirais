@@ -1,7 +1,7 @@
 """Tests for hmagc.geron_agglomerative."""
 import numpy as np
 import pytest
-from moirais.fn.hmagc import geron_agglomerative
+from morie.fn.hmagc import geron_agglomerative
 
 
 def test_hmagc_basic():

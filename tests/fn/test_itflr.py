@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itflr — item floor and ceiling effects."""
+"""Tests for morie.fn.itflr — item floor and ceiling effects."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.itflr import item_floor_ceiling
+from morie.fn.itflr import item_floor_ceiling
 
 
 class TestItemFloorCeiling:

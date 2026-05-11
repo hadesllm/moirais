@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cpads — load CPADS data."""
+"""Tests for morie.fn.cpads — load CPADS data."""
 
 import pytest
 
-from moirais.fn.cpads import cpads, load_cpads
+from morie.fn.cpads import cpads, load_cpads
 
 
 def test_alias_is_same_function():

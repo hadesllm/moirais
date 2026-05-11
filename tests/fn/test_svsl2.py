@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svsl2 -- Two-issue salience model"""
+"""Tests for morie.fn.svsl2 -- Two-issue salience model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svsl2 import salience_2issue
+from morie.fn.svsl2 import salience_2issue
 
 
 class TestSalience2issue:

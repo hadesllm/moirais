@@ -1,7 +1,7 @@
 """Tests for survip.survey_p_value."""
 import numpy as np
 import pytest
-from moirais.fn.survip import survey_p_value
+from morie.fn.survip import survey_p_value
 
 
 def test_survip_basic():

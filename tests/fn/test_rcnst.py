@@ -1,7 +1,7 @@
 """Test sinc_reconstruct (rcnst)."""
 import numpy as np
-from moirais.fn.rcnst import sinc_reconstruct, rcnst
-from moirais.fn._containers import SignalResult
+from morie.fn.rcnst import sinc_reconstruct, rcnst
+from morie.fn._containers import SignalResult
 
 
 class TestSincReconstruct:

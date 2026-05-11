@@ -1,7 +1,7 @@
 """Tests for rgarb.rangayyan_ar_burg."""
 import numpy as np
 import pytest
-from moirais.fn.rgarb import rangayyan_ar_burg
+from morie.fn.rgarb import rangayyan_ar_burg
 
 
 def test_rgarb_basic():

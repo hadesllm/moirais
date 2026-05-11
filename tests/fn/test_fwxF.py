@@ -1,7 +1,7 @@
 """Tests for fwxF.fire_weather_index."""
 import numpy as np
 import pytest
-from moirais.fn.fwxF import fire_weather_index
+from morie.fn.fwxF import fire_weather_index
 
 
 def test_fwxF_basic():

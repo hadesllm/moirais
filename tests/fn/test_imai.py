@@ -1,7 +1,7 @@
 """Tests for imai.imai_keele_yamamoto_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.imai import imai_keele_yamamoto_mediation
+from morie.fn.imai import imai_keele_yamamoto_mediation
 
 
 def test_imai_basic():

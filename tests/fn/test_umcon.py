@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.umcon."""
+"""Tests for morie.fn.umcon."""
 
 import numpy as np
 import pytest
-from moirais.fn.umcon import umcon
+from morie.fn.umcon import umcon
 
 
 class TestUmcon:

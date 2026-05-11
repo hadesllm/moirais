@@ -1,7 +1,7 @@
 """Test geodes."""
 import numpy as np
 import pytest
-from moirais.fn.geodes import geodes
+from morie.fn.geodes import geodes
 
 
 def test_geodes_basic():

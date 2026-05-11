@@ -1,7 +1,7 @@
 """Tests for nwcen -- network centrality."""
 import numpy as np
-from moirais.fn.nwcen import network_centrality
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nwcen import network_centrality
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNetworkCentrality:

@@ -1,7 +1,7 @@
 """Tests for pcadr.pca_dimensionality_reduction."""
 import numpy as np
 import pytest
-from moirais.fn.pcadr import pca_dimensionality_reduction
+from morie.fn.pcadr import pca_dimensionality_reduction
 
 
 def test_pcadr_basic():

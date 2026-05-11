@@ -1,7 +1,7 @@
 """Tests for funkM.funk_svd."""
 import numpy as np
 import pytest
-from moirais.fn.funkM import funk_svd
+from morie.fn.funkM import funk_svd
 
 
 def test_funkM_basic():

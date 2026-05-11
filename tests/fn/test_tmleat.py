@@ -1,7 +1,7 @@
 """Tests for tmleat.tmle_ate."""
 import numpy as np
 import pytest
-from moirais.fn.tmleat import tmle_ate
+from morie.fn.tmleat import tmle_ate
 
 
 def test_tmleat_basic():

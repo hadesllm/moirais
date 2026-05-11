@@ -1,7 +1,7 @@
 """Tests for pmcrt.pepe_mori_cif_test."""
 import numpy as np
 import pytest
-from moirais.fn.pmcrt import pepe_mori_cif_test
+from morie.fn.pmcrt import pepe_mori_cif_test
 
 
 def test_pmcrt_basic():

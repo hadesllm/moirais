@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.lasrb -- IoU metric."""
+"""Tests for morie.fn.lasrb -- IoU metric."""
 
 import numpy as np
-from moirais.fn.lasrb import iou_metric, lasrb
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lasrb import iou_metric, lasrb
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLasrb:

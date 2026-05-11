@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mofnb — m-out-of-n bootstrap."""
+"""Tests for morie.fn.mofnb — m-out-of-n bootstrap."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mofnb import mofnb
+from morie.fn.mofnb import mofnb
 
 
 def test_default_m():

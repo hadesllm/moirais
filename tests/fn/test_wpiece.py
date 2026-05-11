@@ -1,7 +1,7 @@
 """Tests for wpiece.wordpiece."""
 import numpy as np
 import pytest
-from moirais.fn.wpiece import wordpiece
+from morie.fn.wpiece import wordpiece
 
 
 def test_wpiece_basic():

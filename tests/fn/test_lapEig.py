@@ -1,7 +1,7 @@
 """Tests for lapEig.laplacian_eigenmaps."""
 import numpy as np
 import pytest
-from moirais.fn.lapEig import laplacian_eigenmaps
+from morie.fn.lapEig import laplacian_eigenmaps
 
 
 def test_lapEig_basic():

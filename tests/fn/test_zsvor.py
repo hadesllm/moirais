@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsvor -- Voronoi polygon areas"""
+"""Tests for morie.fn.zsvor -- Voronoi polygon areas"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsvor import voronoi_areas
+from morie.fn.zsvor import voronoi_areas
 
 
 class TestVoronoiAreas:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.kw -- Kruskal-Wallis H-test."""
+"""Tests for morie.fn.kw -- Kruskal-Wallis H-test."""
 
 import numpy as np
 import pytest
-from moirais.fn.kw import kruskal_wallis_test
+from morie.fn.kw import kruskal_wallis_test
 
 
 class TestKruskalWallis:

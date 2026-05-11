@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.spcplt -- power spectrum plot."""
+"""Tests for morie.fn.spcplt -- power spectrum plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.spcplt import spcplt
+from morie.fn.spcplt import spcplt
 
 
 class TestSpcPlt:

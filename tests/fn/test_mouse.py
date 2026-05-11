@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mouse -- Monte Carlo integration."""
+"""Tests for morie.fn.mouse -- Monte Carlo integration."""
 
 import numpy as np
-from moirais.fn.mouse import monte_carlo, mouse
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mouse import monte_carlo, mouse
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMouse:

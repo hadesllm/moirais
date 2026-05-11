@@ -1,7 +1,7 @@
 """Tests for miest1.mi_ksg."""
 import numpy as np
 import pytest
-from moirais.fn.miest1 import mi_ksg
+from morie.fn.miest1 import mi_ksg
 
 
 def test_miest1_basic():

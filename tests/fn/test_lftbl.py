@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lftbl -- Complete life table."""
+"""Tests for morie.fn.lftbl -- Complete life table."""
 
 import pytest
-from moirais.fn.lftbl import life_table_complete
+from morie.fn.lftbl import life_table_complete
 
 
 class TestLifeTableComplete:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.varm -- VAR model."""
+"""Tests for morie.fn.varm -- VAR model."""
 import numpy as np
 import pytest
-from moirais.fn.varm import var_fit
+from morie.fn.varm import var_fit
 
 
 class TestVAR:
@@ -17,5 +17,5 @@ class TestVAR:
             var_fit(np.ones((2, 2)), lags=1)
 
     def test_cheatsheet(self):
-        from moirais.fn.varm import cheatsheet
+        from morie.fn.varm import cheatsheet
         assert isinstance(cheatsheet(), str)

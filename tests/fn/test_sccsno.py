@@ -1,7 +1,7 @@
 """Tests for sccsno.sccs_no_replacement."""
 import numpy as np
 import pytest
-from moirais.fn.sccsno import sccs_no_replacement
+from morie.fn.sccsno import sccs_no_replacement
 
 
 def test_sccsno_basic():

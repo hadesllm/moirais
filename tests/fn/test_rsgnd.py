@@ -1,7 +1,7 @@
 """Test rsgnd."""
 import numpy as np
 import pytest
-from moirais.fn.rsgnd import rsgnd
+from morie.fn.rsgnd import rsgnd
 
 
 def test_rsgnd_basic():

@@ -1,7 +1,7 @@
 """Tests for rng213.rangayyan_ch4_peak_power_snr."""
 import numpy as np
 import pytest
-from moirais.fn.rng213 import rangayyan_ch4_peak_power_snr
+from morie.fn.rng213 import rangayyan_ch4_peak_power_snr
 
 
 def test_rng213_basic():

@@ -1,7 +1,7 @@
 """Tests for pplxm.perplexity_metric."""
 import numpy as np
 import pytest
-from moirais.fn.pplxm import perplexity_metric
+from morie.fn.pplxm import perplexity_metric
 
 
 def test_pplxm_basic():

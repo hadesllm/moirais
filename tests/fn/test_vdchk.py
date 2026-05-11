@@ -1,7 +1,7 @@
 """Tests for vdchk."""
 import numpy as np
 import pytest
-from moirais.fn.vdchk import vdchk
+from morie.fn.vdchk import vdchk
 
 
 def test_vdchk_basic():
@@ -27,5 +27,5 @@ def test_vdchk_no_data():
 
 
 def test_vdchk_alias():
-    from moirais.fn.vdchk import vdchk
+    from morie.fn.vdchk import vdchk
     assert vdchk is vdchk

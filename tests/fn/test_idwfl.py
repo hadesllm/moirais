@@ -1,7 +1,7 @@
 """Test idwfl."""
 import numpy as np
 import pytest
-from moirais.fn.idwfl import idwfl
+from morie.fn.idwfl import idwfl
 
 
 def test_idwfl_basic():

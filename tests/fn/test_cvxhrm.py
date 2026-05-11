@@ -1,7 +1,7 @@
 """Tests for cvxhrm.boyd_huber_loss."""
 import numpy as np
 import pytest
-from moirais.fn.cvxhrm import boyd_huber_loss
+from morie.fn.cvxhrm import boyd_huber_loss
 
 
 def test_cvxhrm_basic():

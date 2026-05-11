@@ -1,7 +1,7 @@
 """Tests for ksr055.kosorok_ch2_m_estimator_taylor_expansion."""
 import numpy as np
 import pytest
-from moirais.fn.ksr055 import kosorok_ch2_m_estimator_taylor_expansion
+from morie.fn.ksr055 import kosorok_ch2_m_estimator_taylor_expansion
 
 
 def test_ksr055_basic():

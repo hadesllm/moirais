@@ -1,7 +1,7 @@
 """Test trtram."""
 import numpy as np
 import pytest
-from moirais.fn.trtram import trtram
+from morie.fn.trtram import trtram
 
 
 def test_trtram_basic():

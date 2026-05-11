@@ -1,7 +1,7 @@
 """Tests for correlation_dist."""
 import numpy as np
 import pytest
-from moirais.fn.corrd import correlation_dist, corrd
+from morie.fn.corrd import correlation_dist, corrd
 
 
 def test_perfect():

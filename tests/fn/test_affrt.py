@@ -1,7 +1,7 @@
 """Test affrt."""
 import numpy as np
 import pytest
-from moirais.fn.affrt import affrt
+from morie.fn.affrt import affrt
 
 
 def test_affrt_basic():

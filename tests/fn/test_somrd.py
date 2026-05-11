@@ -1,6 +1,6 @@
 """Tests for somers_d."""
 import numpy as np, pytest
-from moirais.fn.somrd import somers_d
+from morie.fn.somrd import somers_d
 
 
 class TestSomersD:

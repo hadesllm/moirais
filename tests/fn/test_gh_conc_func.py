@@ -1,7 +1,7 @@
 """Tests for gh_conc_func.ghosal_concentration_function."""
 import numpy as np
 import pytest
-from moirais.fn.gh_conc_func import ghosal_concentration_function
+from morie.fn.gh_conc_func import ghosal_concentration_function
 
 
 def test_gh_conc_func_basic():

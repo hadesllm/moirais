@@ -1,7 +1,7 @@
 """Tests for btbayes.boot_bayesian."""
 import numpy as np
 import pytest
-from moirais.fn.btbayes import boot_bayesian
+from morie.fn.btbayes import boot_bayesian
 
 
 def test_btbayes_basic():

@@ -1,7 +1,7 @@
 """Tests for clocen.closeness_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.clocen import closeness_centrality
+from morie.fn.clocen import closeness_centrality
 
 
 def test_clocen_basic():

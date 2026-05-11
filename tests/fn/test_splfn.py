@@ -1,7 +1,7 @@
 """Test splfn."""
 import numpy as np
 import pytest
-from moirais.fn.splfn import splfn
+from morie.fn.splfn import splfn
 
 
 def test_splfn_basic():

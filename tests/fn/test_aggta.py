@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.aggta."""
+"""Tests for morie.fn.aggta."""
 
 import numpy as np
 import pytest
-from moirais.fn.aggta import aggta
+from morie.fn.aggta import aggta
 
 
 class TestAggta:

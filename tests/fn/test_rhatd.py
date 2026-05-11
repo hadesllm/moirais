@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rhatd -- R-hat diagnostic."""
+"""Tests for morie.fn.rhatd -- R-hat diagnostic."""
 
 import numpy as np
-from moirais.fn.rhatd import rhat_diagnostic
+from morie.fn.rhatd import rhat_diagnostic
 
 
 def test_returns_dict():

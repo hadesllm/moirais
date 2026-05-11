@@ -1,6 +1,6 @@
 """Tests for bicsc.py - BIC score."""
 import numpy as np
-from moirais.fn.bicsc import bic_score_fn, bicsc
+from morie.fn.bicsc import bic_score_fn, bicsc
 
 
 def test_bicsc_returns_result():

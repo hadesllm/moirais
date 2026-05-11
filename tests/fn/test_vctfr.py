@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vctfr — fear of crime."""
+"""Tests for morie.fn.vctfr — fear of crime."""
 
 import pytest
 import numpy as np
-from moirais.fn.vctfr import victim_fear
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.vctfr import victim_fear
+from morie.fn._containers import DescriptiveResult
 
 
 class TestVictimFear:

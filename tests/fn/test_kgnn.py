@@ -1,7 +1,7 @@
 """Tests for kgnn.r_gcn."""
 import numpy as np
 import pytest
-from moirais.fn.kgnn import r_gcn
+from morie.fn.kgnn import r_gcn
 
 
 def test_kgnn_basic():

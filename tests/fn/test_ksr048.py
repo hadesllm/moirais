@@ -1,7 +1,7 @@
 """Tests for ksr048.kosorok_ch2_z_master_stochastic_equicontinuity."""
 import numpy as np
 import pytest
-from moirais.fn.ksr048 import kosorok_ch2_z_master_stochastic_equicontinuity
+from morie.fn.ksr048 import kosorok_ch2_z_master_stochastic_equicontinuity
 
 
 def test_ksr048_basic():

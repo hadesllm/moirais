@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kdist — kernel CDF estimator."""
+"""Tests for morie.fn.kdist — kernel CDF estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kdist import kdist
+from morie.fn.kdist import kdist
 
 
 class TestKdist:

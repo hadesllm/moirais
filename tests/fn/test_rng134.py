@@ -1,7 +1,7 @@
 """Tests for rng134.rangayyan_ch3_butterworth_lowpass_dft_indexed."""
 import numpy as np
 import pytest
-from moirais.fn.rng134 import rangayyan_ch3_butterworth_lowpass_dft_indexed
+from morie.fn.rng134 import rangayyan_ch3_butterworth_lowpass_dft_indexed
 
 
 def test_rng134_basic():

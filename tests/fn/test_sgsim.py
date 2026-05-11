@@ -1,7 +1,7 @@
 """Tests for sgsim."""
 import numpy as np
 import pytest
-from moirais.fn.sgsim import sgsim
+from morie.fn.sgsim import sgsim
 
 
 def test_sgsim_basic():
@@ -27,5 +27,5 @@ def test_sgsim_no_data():
 
 
 def test_sgsim_alias():
-    from moirais.fn.sgsim import sgsim
+    from morie.fn.sgsim import sgsim
     assert sgsim is sgsim

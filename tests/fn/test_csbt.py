@@ -1,7 +1,7 @@
 """Test csbt."""
 import numpy as np
 import pytest
-from moirais.fn.csbt import csbt
+from morie.fn.csbt import csbt
 
 
 def test_csbt_basic():

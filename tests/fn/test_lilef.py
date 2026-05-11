@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.lilef import lilef
+from morie.fn.lilef import lilef
 
 
 class TestLilef:

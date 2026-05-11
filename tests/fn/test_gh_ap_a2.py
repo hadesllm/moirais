@@ -1,7 +1,7 @@
 """Tests for gh_ap_a2.ghosal_prohorov_metric."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_a2 import ghosal_prohorov_metric
+from morie.fn.gh_ap_a2 import ghosal_prohorov_metric
 
 
 def test_gh_ap_a2_basic():

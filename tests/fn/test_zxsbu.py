@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsbu -- Buffered spatial CV"""
+"""Tests for morie.fn.zxsbu -- Buffered spatial CV"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsbu import spatial_cv_buffer
+from morie.fn.zxsbu import spatial_cv_buffer
 
 
 class TestSpatialCvBuffer:

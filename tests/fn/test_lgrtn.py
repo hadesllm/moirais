@@ -1,7 +1,7 @@
 """Test log_spectral_dist (lgrtn)."""
 import numpy as np
-from moirais.fn.lgrtn import log_spectral_dist, lgrtn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lgrtn import log_spectral_dist, lgrtn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLgrtn:

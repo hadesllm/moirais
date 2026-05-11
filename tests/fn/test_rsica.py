@@ -1,7 +1,7 @@
 """Test rsica."""
 import numpy as np
 import pytest
-from moirais.fn.rsica import rsica
+from morie.fn.rsica import rsica
 
 
 def test_rsica_basic():

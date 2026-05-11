@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hw -- Hardy-Weinberg equilibrium test."""
+"""Tests for morie.fn.hw -- Hardy-Weinberg equilibrium test."""
 
 import pytest
-from moirais.fn.hw import hardy_weinberg_test
+from morie.fn.hw import hardy_weinberg_test
 
 
 class TestHardyWeinberg:

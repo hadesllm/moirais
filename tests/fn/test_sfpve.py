@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sfpve."""
+"""Tests for morie.fn.sfpve."""
 import numpy as np
 import pytest
-from moirais.fn.sfpve import sfpve
+from morie.fn.sfpve import sfpve
 
 
 class TestSfpve:

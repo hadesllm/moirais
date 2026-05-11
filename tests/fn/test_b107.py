@@ -1,7 +1,7 @@
 """Tests for b107.burkov_lm_ch1_layer2_output."""
 import numpy as np
 import pytest
-from moirais.fn.b107 import burkov_lm_ch1_layer2_output
+from morie.fn.b107 import burkov_lm_ch1_layer2_output
 
 
 def test_b107_basic():

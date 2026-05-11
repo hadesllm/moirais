@@ -1,7 +1,7 @@
 """Tests for wsmscr.wasserman_score_test."""
 import numpy as np
 import pytest
-from moirais.fn.wsmscr import wasserman_score_test
+from morie.fn.wsmscr import wasserman_score_test
 
 
 def test_wsmscr_basic():

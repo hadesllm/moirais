@@ -1,7 +1,7 @@
 """Tests for poispr.poisson_predictive."""
 import numpy as np
 import pytest
-from moirais.fn.poispr import poisson_predictive
+from morie.fn.poispr import poisson_predictive
 
 
 def test_poispr_basic():

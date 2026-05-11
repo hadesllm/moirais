@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.wavlt — wavelet decomposition."""
+"""Tests for morie.fn.wavlt — wavelet decomposition."""
 import numpy as np
-from moirais.fn.wavlt import wavelet_decompose
+from morie.fn.wavlt import wavelet_decompose
 
 
 class TestWavelet:

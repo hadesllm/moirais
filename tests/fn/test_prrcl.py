@@ -1,6 +1,6 @@
 """Tests for precision_recall."""
 import pytest
-from moirais.fn.prrcl import precision_recall, prrcl
+from morie.fn.prrcl import precision_recall, prrcl
 
 
 def test_perfect():

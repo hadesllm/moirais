@@ -1,7 +1,7 @@
 """Tests for hmkpsg.geron_kernel_pca_sigmoid."""
 import numpy as np
 import pytest
-from moirais.fn.hmkpsg import geron_kernel_pca_sigmoid
+from morie.fn.hmkpsg import geron_kernel_pca_sigmoid
 
 
 def test_hmkpsg_basic():

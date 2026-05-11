@@ -1,7 +1,7 @@
 """Test abmcr."""
 import numpy as np
 import pytest
-from moirais.fn.abmcr import abmcr
+from morie.fn.abmcr import abmcr
 
 
 def test_abmcr_basic():

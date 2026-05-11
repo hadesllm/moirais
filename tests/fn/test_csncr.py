@@ -1,7 +1,7 @@
 """Test csncr."""
 import numpy as np
 import pytest
-from moirais.fn.csncr import csncr
+from morie.fn.csncr import csncr
 
 
 def test_csncr_basic():

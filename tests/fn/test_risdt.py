@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.risdt — rise time detection."""
+"""Tests for morie.fn.risdt — rise time detection."""
 import numpy as np
 import pytest
 
-from moirais.fn.risdt import rise_time_detect, risdt
+from morie.fn.risdt import rise_time_detect, risdt
 
 
 def test_ramp_rise():

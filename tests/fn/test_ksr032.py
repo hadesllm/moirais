@@ -1,7 +1,7 @@
 """Tests for ksr032.kosorok_ch2_weak_convergence_iff."""
 import numpy as np
 import pytest
-from moirais.fn.ksr032 import kosorok_ch2_weak_convergence_iff
+from morie.fn.ksr032 import kosorok_ch2_weak_convergence_iff
 
 
 def test_ksr032_basic():

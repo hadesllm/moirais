@@ -1,7 +1,7 @@
 """Test hyunt."""
 import numpy as np
 import pytest
-from moirais.fn.hyunt import hyunt
+from morie.fn.hyunt import hyunt
 
 
 def test_hyunt_basic():

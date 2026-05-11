@@ -1,7 +1,7 @@
 """Tests for lucnd."""
 import numpy as np
 import pytest
-from moirais.fn.lucnd import lucnd
+from morie.fn.lucnd import lucnd
 
 
 def test_lucnd_basic():
@@ -27,5 +27,5 @@ def test_lucnd_no_data():
 
 
 def test_lucnd_alias():
-    from moirais.fn.lucnd import lucnd
+    from morie.fn.lucnd import lucnd
     assert lucnd is lucnd

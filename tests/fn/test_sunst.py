@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sunst -- surface roughness."""
+"""Tests for morie.fn.sunst -- surface roughness."""
 
 import numpy as np
-from moirais.fn.sunst import surface_roughness, sunst
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sunst import surface_roughness, sunst
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSunst:

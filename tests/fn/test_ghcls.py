@@ -1,7 +1,7 @@
 """Tests for ghcls.ghosal_np_classification."""
 import numpy as np
 import pytest
-from moirais.fn.ghcls import ghosal_np_classification
+from morie.fn.ghcls import ghosal_np_classification
 
 
 def test_ghcls_basic():

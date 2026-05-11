@@ -1,7 +1,7 @@
 """Tests for forwsr.forward_search."""
 import numpy as np
 import pytest
-from moirais.fn.forwsr import forward_search
+from morie.fn.forwsr import forward_search
 
 
 def test_forwsr_basic():

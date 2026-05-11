@@ -1,7 +1,7 @@
 """Tests for ripJ.ripley_j_function."""
 import numpy as np
 import pytest
-from moirais.fn.ripJ import ripley_j_function
+from morie.fn.ripJ import ripley_j_function
 
 
 def test_ripJ_basic():

@@ -1,7 +1,7 @@
 """Test nbsel."""
 import numpy as np
 import pytest
-from moirais.fn.nbsel import nbsel
+from morie.fn.nbsel import nbsel
 
 
 def test_nbsel_basic():

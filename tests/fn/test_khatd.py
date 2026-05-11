@@ -1,7 +1,7 @@
 """Tests for khatd.pareto_k_diagnostic."""
 import numpy as np
 import pytest
-from moirais.fn.khatd import pareto_k_diagnostic
+from morie.fn.khatd import pareto_k_diagnostic
 
 
 def test_khatd_basic():

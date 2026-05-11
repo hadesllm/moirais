@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.mdnvt — Median voter."""
+"""Tests for morie.fn.mdnvt — Median voter."""
 import numpy as np
-from moirais.fn.mdnvt import mdnvt
+from morie.fn.mdnvt import mdnvt
 
 
 def test_mdnvt_odd():

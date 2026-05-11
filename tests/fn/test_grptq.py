@@ -1,7 +1,7 @@
 """Tests for grptq.geron_static_ptq."""
 import numpy as np
 import pytest
-from moirais.fn.grptq import geron_static_ptq
+from morie.fn.grptq import geron_static_ptq
 
 
 def test_grptq_basic():

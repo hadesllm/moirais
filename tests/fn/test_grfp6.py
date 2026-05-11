@@ -1,7 +1,7 @@
 """Tests for grfp6.geron_fp16_mixed_precision."""
 import numpy as np
 import pytest
-from moirais.fn.grfp6 import geron_fp16_mixed_precision
+from morie.fn.grfp6 import geron_fp16_mixed_precision
 
 
 def test_grfp6_basic():

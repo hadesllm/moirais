@@ -1,7 +1,7 @@
 """Tests for ksr065.kosorok_ch3_efficient_influence_general."""
 import numpy as np
 import pytest
-from moirais.fn.ksr065 import kosorok_ch3_efficient_influence_general
+from morie.fn.ksr065 import kosorok_ch3_efficient_influence_general
 
 
 def test_ksr065_basic():

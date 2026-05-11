@@ -1,7 +1,7 @@
 """Test secoh."""
 import numpy as np
 import pytest
-from moirais.fn.secoh import secoh
+from morie.fn.secoh import secoh
 
 
 def test_secoh_basic():

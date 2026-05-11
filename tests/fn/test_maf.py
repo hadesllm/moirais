@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.maf -- Minor allele frequency."""
+"""Tests for morie.fn.maf -- Minor allele frequency."""
 
 import pytest
-from moirais.fn.maf import minor_allele_frequency
+from morie.fn.maf import minor_allele_frequency
 
 
 class TestMAF:

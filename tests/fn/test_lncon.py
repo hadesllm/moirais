@@ -1,7 +1,7 @@
 """Test linear_convolution (lncon)."""
 import numpy as np
-from moirais.fn.lncon import linear_convolution, lncon
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lncon import linear_convolution, lncon
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLncon:

@@ -1,6 +1,6 @@
 """Test gen_parity_check."""
-from moirais.fn._containers import DescriptiveResult
-from moirais.fn.genpk import gen_parity_check, genpk
+from morie.fn._containers import DescriptiveResult
+from morie.fn.genpk import gen_parity_check, genpk
 
 
 class TestGenParityCheck:

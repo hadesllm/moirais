@@ -1,7 +1,7 @@
 """Tests for mamh.ma_mantel_haenszel."""
 import numpy as np
 import pytest
-from moirais.fn.mamh import ma_mantel_haenszel
+from morie.fn.mamh import ma_mantel_haenszel
 
 
 def test_mamh_basic():

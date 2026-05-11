@@ -1,7 +1,7 @@
 """Tests for joses.joseph_simple_exponential_smoothing."""
 import numpy as np
 import pytest
-from moirais.fn.joses import joseph_simple_exponential_smoothing
+from morie.fn.joses import joseph_simple_exponential_smoothing
 
 
 def test_joses_basic():

@@ -1,7 +1,7 @@
 """Test gdger."""
 import numpy as np
 import pytest
-from moirais.fn.gdger import gdger
+from morie.fn.gdger import gdger
 
 
 def test_gdger_basic():

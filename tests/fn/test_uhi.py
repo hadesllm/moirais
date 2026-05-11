@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.uhi import uhi, urban_heat_island
+from morie.fn.uhi import uhi, urban_heat_island
 
 
 def test_uhi_zero_when_urban_equals_rural():

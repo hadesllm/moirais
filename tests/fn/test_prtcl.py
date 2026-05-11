@@ -1,7 +1,7 @@
 """Tests for prtcl.particle_filter."""
 import numpy as np
 import pytest
-from moirais.fn.prtcl import particle_filter
+from morie.fn.prtcl import particle_filter
 
 
 def test_prtcl_basic():

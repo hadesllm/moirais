@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.cmp_log — nested logistic model comparison."""
+"""Tests for morie.fn.cmp_log — nested logistic model comparison."""
 
 import math
 
@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.cmp_log import compare_nested_logistic_models
+from morie.fn.cmp_log import compare_nested_logistic_models
 
 
 def _make_cpads_frame(rng, n=200):

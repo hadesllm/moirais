@@ -1,7 +1,7 @@
 """Tests for kmperm.kamath_permutation_lm_loss."""
 import numpy as np
 import pytest
-from moirais.fn.kmperm import kamath_permutation_lm_loss
+from morie.fn.kmperm import kamath_permutation_lm_loss
 
 
 def test_kmperm_basic():

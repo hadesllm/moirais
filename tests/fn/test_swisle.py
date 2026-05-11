@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.swisle."""
+"""Tests for morie.fn.swisle."""
 import numpy as np
 import pytest
-from moirais.fn.swisle import swisle
+from morie.fn.swisle import swisle
 
 
 class TestSwisle:

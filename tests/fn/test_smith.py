@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.smith -- bootstrap resampling."""
+"""Tests for morie.fn.smith -- bootstrap resampling."""
 
 import numpy as np
-from moirais.fn.smith import bootstrap_resample, smith
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.smith import bootstrap_resample, smith
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSmith:

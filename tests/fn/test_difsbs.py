@@ -1,7 +1,7 @@
 """Tests for difsbs.dif_sibtest."""
 import numpy as np
 import pytest
-from moirais.fn.difsbs import dif_sibtest
+from morie.fn.difsbs import dif_sibtest
 
 
 def test_difsbs_basic():

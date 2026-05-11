@@ -1,7 +1,7 @@
 """Tests for polrz.polarization_index."""
 import numpy as np
 import pytest
-from moirais.fn.polrz import polarization_index
+from morie.fn.polrz import polarization_index
 
 
 def test_polrz_basic():

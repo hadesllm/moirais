@@ -1,7 +1,7 @@
 """Tests for ghstk.ghosal_stick_breaking_trunc."""
 import numpy as np
 import pytest
-from moirais.fn.ghstk import ghosal_stick_breaking_trunc
+from morie.fn.ghstk import ghosal_stick_breaking_trunc
 
 
 def test_ghstk_basic():

@@ -1,7 +1,7 @@
 """Tests for samdec.sam_mask_decoder."""
 import numpy as np
 import pytest
-from moirais.fn.samdec import sam_mask_decoder
+from morie.fn.samdec import sam_mask_decoder
 
 
 def test_samdec_basic():

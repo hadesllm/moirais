@@ -1,7 +1,7 @@
 """Tests for frwol2.frank_wolfe."""
 import numpy as np
 import pytest
-from moirais.fn.frwol2 import frank_wolfe
+from morie.fn.frwol2 import frank_wolfe
 
 
 def test_frwol2_basic():

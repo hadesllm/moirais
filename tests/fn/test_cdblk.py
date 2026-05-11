@@ -1,7 +1,7 @@
 """Tests for cdblk."""
 import numpy as np
 import pytest
-from moirais.fn.cdblk import cdblk
+from morie.fn.cdblk import cdblk
 
 
 def test_cdblk_basic():
@@ -27,5 +27,5 @@ def test_cdblk_no_data():
 
 
 def test_cdblk_alias():
-    from moirais.fn.cdblk import cdblk
+    from morie.fn.cdblk import cdblk
     assert cdblk is cdblk

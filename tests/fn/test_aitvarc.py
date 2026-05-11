@@ -1,7 +1,7 @@
 """Tests for aitvarc.aitchison_clr_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.aitvarc import aitchison_clr_covariance
+from morie.fn.aitvarc import aitchison_clr_covariance
 
 
 def test_aitvarc_basic():

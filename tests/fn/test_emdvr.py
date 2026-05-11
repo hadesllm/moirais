@@ -1,6 +1,6 @@
 """Tests for emdvr.py - EMD variance ratio."""
 import numpy as np
-from moirais.fn.emdvr import emd_variance_ratio, emdvr
+from morie.fn.emdvr import emd_variance_ratio, emdvr
 
 
 def test_variance_ratio_returns_result():

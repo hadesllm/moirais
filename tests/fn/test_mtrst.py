@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mtrst -- Martingale residuals."""
+"""Tests for morie.fn.mtrst -- Martingale residuals."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mtrst import mtrst
+from morie.fn.mtrst import mtrst
 
 
 @pytest.fixture()
@@ -40,5 +40,5 @@ def test_residuals_bounded(cox_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.mtrst import cheatsheet
+    from morie.fn.mtrst import cheatsheet
     assert "martingale" in cheatsheet().lower()

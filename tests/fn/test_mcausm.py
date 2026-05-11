@@ -1,7 +1,7 @@
 """Tests for mcausm.multi_mediator_causal."""
 import numpy as np
 import pytest
-from moirais.fn.mcausm import multi_mediator_causal
+from morie.fn.mcausm import multi_mediator_causal
 
 
 def test_mcausm_basic():

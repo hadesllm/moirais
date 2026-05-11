@@ -1,7 +1,7 @@
 """Tests for sgtnbe.sgt_nonbacktracking_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.sgtnbe import sgt_nonbacktracking_matrix
+from morie.fn.sgtnbe import sgt_nonbacktracking_matrix
 
 
 def test_sgtnbe_basic():

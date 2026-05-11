@@ -1,7 +1,7 @@
 """Tests for cross-entropy."""
 import numpy as np
 import pytest
-from moirais.fn.xentc import cross_entropy, xentc
+from morie.fn.xentc import cross_entropy, xentc
 
 
 def test_same_distribution():

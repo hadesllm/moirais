@@ -1,7 +1,7 @@
 """Tests for svmkr.svm_kernel_trick."""
 import numpy as np
 import pytest
-from moirais.fn.svmkr import svm_kernel_trick
+from morie.fn.svmkr import svm_kernel_trick
 
 
 def test_svmkr_basic():

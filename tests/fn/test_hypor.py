@@ -1,7 +1,7 @@
 """Test hypor."""
 import numpy as np
 import pytest
-from moirais.fn.hypor import hypor
+from morie.fn.hypor import hypor
 
 
 def test_hypor_basic():

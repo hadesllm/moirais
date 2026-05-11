@@ -1,7 +1,7 @@
 """Tests for gb331.gibbons_run_lengths_dist."""
 import numpy as np
 import pytest
-from moirais.fn.gb331 import gibbons_run_lengths_dist
+from morie.fn.gb331 import gibbons_run_lengths_dist
 
 
 def test_gb331_basic():

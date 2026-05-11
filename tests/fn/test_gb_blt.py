@@ -1,7 +1,7 @@
 """Tests for gb_blt.gibbons_balance_incomplete."""
 import numpy as np
 import pytest
-from moirais.fn.gb_blt import gibbons_balance_incomplete
+from morie.fn.gb_blt import gibbons_balance_incomplete
 
 
 def test_gb_blt_basic():

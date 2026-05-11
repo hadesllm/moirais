@@ -1,7 +1,7 @@
 """Tests for strfst.f_statistics."""
 import numpy as np
 import pytest
-from moirais.fn.strfst import f_statistics
+from morie.fn.strfst import f_statistics
 
 
 def test_strfst_basic():

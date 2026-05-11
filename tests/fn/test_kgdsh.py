@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgdsh -- Disjunctive kriging Hermite polynomials"""
+"""Tests for morie.fn.kgdsh -- Disjunctive kriging Hermite polynomials"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgdsh import dk_hermite
+from morie.fn.kgdsh import dk_hermite
 
 
 class TestDkHermite:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.spdef — Spatial deformation model."""
+"""Tests for morie.fn.spdef — Spatial deformation model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.spdef import spdef
+from morie.fn.spdef import spdef
 
 
 class TestSpdef:

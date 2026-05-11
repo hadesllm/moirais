@@ -1,7 +1,7 @@
 """Test gethl."""
 import numpy as np
 import pytest
-from moirais.fn.gethl import gethl
+from morie.fn.gethl import gethl
 
 
 def test_gethl_basic():

@@ -1,7 +1,7 @@
 """Tests for mcdAnm.mcd_outlier."""
 import numpy as np
 import pytest
-from moirais.fn.mcdAnm import mcd_outlier
+from morie.fn.mcdAnm import mcd_outlier
 
 
 def test_mcdAnm_basic():

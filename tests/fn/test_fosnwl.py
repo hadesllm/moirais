@@ -1,7 +1,7 @@
 """Test fosnwl."""
 import numpy as np
 import pytest
-from moirais.fn.fosnwl import fosnwl
+from morie.fn.fosnwl import fosnwl
 
 
 def test_fosnwl_basic():

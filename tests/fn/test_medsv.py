@@ -1,7 +1,7 @@
 """Tests for medsv: median survival time with CI."""
 import numpy as np
 import pytest
-from moirais.fn.medsv import medsv
+from morie.fn.medsv import medsv
 
 
 def _make_data(n=300, rate=0.5, seed=0):

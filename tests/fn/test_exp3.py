@@ -1,7 +1,7 @@
 """Tests for exp3.exp3."""
 import numpy as np
 import pytest
-from moirais.fn.exp3 import exp3
+from morie.fn.exp3 import exp3
 
 
 def test_exp3_basic():

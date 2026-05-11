@@ -1,7 +1,7 @@
 """Tests for hrzsiqm.horowitz_sim_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.hrzsiqm import horowitz_sim_quantile
+from morie.fn.hrzsiqm import horowitz_sim_quantile
 
 
 def test_hrzsiqm_basic():

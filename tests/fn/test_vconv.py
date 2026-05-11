@@ -1,7 +1,7 @@
 """Tests for vconv -- convergent validity."""
 import numpy as np
-from moirais.fn.vconv import convergent_validity
-from moirais.fn._containers import ESRes
+from morie.fn.vconv import convergent_validity
+from morie.fn._containers import ESRes
 
 
 class TestConvergentValidity:

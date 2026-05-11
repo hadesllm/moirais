@@ -1,7 +1,7 @@
 """Tests for rgpzmod.rangayyan_pole_zero_model."""
 import numpy as np
 import pytest
-from moirais.fn.rgpzmod import rangayyan_pole_zero_model
+from morie.fn.rgpzmod import rangayyan_pole_zero_model
 
 
 def test_rgpzmod_basic():

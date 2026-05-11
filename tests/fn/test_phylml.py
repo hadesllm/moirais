@@ -1,7 +1,7 @@
 """Tests for phylml.phylogenetic_ml."""
 import numpy as np
 import pytest
-from moirais.fn.phylml import phylogenetic_ml
+from morie.fn.phylml import phylogenetic_ml
 
 
 def test_phylml_basic():

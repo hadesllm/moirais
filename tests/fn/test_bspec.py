@@ -1,7 +1,7 @@
 """Tests for bspec -- Bispectrum estimation."""
 import numpy as np
-from moirais.fn.bspec import bspec
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bspec import bspec
+from morie.fn._containers import DescriptiveResult
 
 
 def test_bspec_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rcdpr — logistic regression for recidivism."""
+"""Tests for morie.fn.rcdpr — logistic regression for recidivism."""
 
-from moirais.fn.rcdpr import recidivism_predictors, rcdpr
+from morie.fn.rcdpr import recidivism_predictors, rcdpr
 
 
 class TestRecidivismPredictors:

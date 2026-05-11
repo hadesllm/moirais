@@ -1,7 +1,7 @@
 """Test rotgrd."""
 import numpy as np
 import pytest
-from moirais.fn.rotgrd import rotgrd
+from morie.fn.rotgrd import rotgrd
 
 
 def test_rotgrd_basic():

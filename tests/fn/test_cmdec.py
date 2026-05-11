@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cmdec."""
+"""Tests for morie.fn.cmdec."""
 
 import numpy as np
 import pytest
-from moirais.fn.cmdec import cmdec
+from morie.fn.cmdec import cmdec
 
 
 class TestCmdec:

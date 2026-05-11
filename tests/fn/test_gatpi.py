@@ -1,7 +1,7 @@
 """Test gatpi."""
 import numpy as np
 import pytest
-from moirais.fn.gatpi import gatpi
+from morie.fn.gatpi import gatpi
 
 
 def test_gatpi_basic():

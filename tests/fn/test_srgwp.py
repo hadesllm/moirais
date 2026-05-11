@@ -1,7 +1,7 @@
 """Test srgwp."""
 import numpy as np
 import pytest
-from moirais.fn.srgwp import srgwp
+from morie.fn.srgwp import srgwp
 
 
 def test_srgwp_basic():

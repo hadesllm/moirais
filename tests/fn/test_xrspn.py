@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrspn -- Spatial panel fixed effects"""
+"""Tests for morie.fn.xrspn -- Spatial panel fixed effects"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrspn import spatial_panel_fe
+from morie.fn.xrspn import spatial_panel_fe
 
 
 class TestSpatialPanelFe:

@@ -1,7 +1,7 @@
 """Tests for fzt52.fauzi_thm5_2_bdfree_kdfe_bv."""
 import numpy as np
 import pytest
-from moirais.fn.fzt52 import fauzi_thm5_2_bdfree_kdfe_bv
+from morie.fn.fzt52 import fauzi_thm5_2_bdfree_kdfe_bv
 
 
 def test_fzt52_basic():

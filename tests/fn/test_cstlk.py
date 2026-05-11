@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cstlk — custody lockdown frequency."""
+"""Tests for morie.fn.cstlk — custody lockdown frequency."""
 
 import pandas as pd
-from moirais.fn.cstlk import custody_lockdown_freq
+from morie.fn.cstlk import custody_lockdown_freq
 
 
 class TestCustodyLockdownFreq:

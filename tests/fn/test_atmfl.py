@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.atmfl import alpha_trimmed_mean_filter, atmfl
-from moirais.fn._containers import SignalResult
+from morie.fn.atmfl import alpha_trimmed_mean_filter, atmfl
+from morie.fn._containers import SignalResult
 
 
 class TestAlphaTrimmedMeanFilter:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bndpi — Sheather-Jones plug-in bandwidth."""
+"""Tests for morie.fn.bndpi — Sheather-Jones plug-in bandwidth."""
 
 import numpy as np
 import pytest
-from moirais.fn.bndpi import bndpi
+from morie.fn.bndpi import bndpi
 
 
 def test_returns_dict():

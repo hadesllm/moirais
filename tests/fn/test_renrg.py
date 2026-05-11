@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.renrg -- renormalization group beta function."""
+"""Tests for morie.fn.renrg -- renormalization group beta function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.renrg import renrg
+from morie.fn.renrg import renrg
 
 
 def test_returns_dict():

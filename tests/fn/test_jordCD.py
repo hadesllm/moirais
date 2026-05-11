@@ -1,7 +1,7 @@
 """Tests for jordCD.jordan_canonical."""
 import numpy as np
 import pytest
-from moirais.fn.jordCD import jordan_canonical
+from morie.fn.jordCD import jordan_canonical
 
 
 def test_jordCD_basic():

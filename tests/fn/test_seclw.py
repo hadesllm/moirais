@@ -1,7 +1,7 @@
 """Test seclw."""
 import numpy as np
 import pytest
-from moirais.fn.seclw import seclw
+from morie.fn.seclw import seclw
 
 
 def test_seclw_basic():

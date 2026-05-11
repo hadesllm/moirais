@@ -1,7 +1,7 @@
 """Tests for evmsexp.evt_max_stable_logistic."""
 import numpy as np
 import pytest
-from moirais.fn.evmsexp import evt_max_stable_logistic
+from morie.fn.evmsexp import evt_max_stable_logistic
 
 
 def test_evmsexp_basic():

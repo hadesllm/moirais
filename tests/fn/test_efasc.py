@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.efasc -- factor scores."""
+"""Tests for morie.fn.efasc -- factor scores."""
 
 import numpy as np
-from moirais.fn.efasc import efa_scores
+from morie.fn.efasc import efa_scores
 
 
 class TestEfaScores:

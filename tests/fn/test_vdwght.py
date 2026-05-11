@@ -1,7 +1,7 @@
 """Tests for vdwght."""
 import numpy as np
 import pytest
-from moirais.fn.vdwght import vdwght
+from morie.fn.vdwght import vdwght
 
 
 def test_vdwght_basic():
@@ -27,5 +27,5 @@ def test_vdwght_no_data():
 
 
 def test_vdwght_alias():
-    from moirais.fn.vdwght import vdwght
+    from morie.fn.vdwght import vdwght
     assert vdwght is vdwght

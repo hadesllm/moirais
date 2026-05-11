@@ -1,7 +1,7 @@
 """Tests for cvxlif.boyd_linf_fitting."""
 import numpy as np
 import pytest
-from moirais.fn.cvxlif import boyd_linf_fitting
+from morie.fn.cvxlif import boyd_linf_fitting
 
 
 def test_cvxlif_basic():

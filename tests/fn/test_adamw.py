@@ -1,6 +1,6 @@
 """Test AdamW optimizer."""
 import numpy as np
-from moirais.fn.adamw import adamw
+from morie.fn.adamw import adamw
 
 
 def test_adamw_basic():

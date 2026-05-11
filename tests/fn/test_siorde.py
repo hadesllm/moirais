@@ -1,7 +1,7 @@
 """Tests for siorde."""
 import numpy as np
 import pytest
-from moirais.fn.siorde import siorde
+from morie.fn.siorde import siorde
 
 
 def test_siorde_basic():
@@ -27,5 +27,5 @@ def test_siorde_no_data():
 
 
 def test_siorde_alias():
-    from moirais.fn.siorde import siorde
+    from morie.fn.siorde import siorde
     assert siorde is siorde

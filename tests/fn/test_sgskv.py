@@ -1,6 +1,6 @@
 """Tests for simple kriging variance."""
 import numpy as np
-from moirais.fn.sgskv import sgskv
+from morie.fn.sgskv import sgskv
 
 
 def test_sgskv_smoke():

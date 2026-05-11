@@ -1,7 +1,7 @@
 """Tests for kmvera.kamath_vera_adapter."""
 import numpy as np
 import pytest
-from moirais.fn.kmvera import kamath_vera_adapter
+from morie.fn.kmvera import kamath_vera_adapter
 
 
 def test_kmvera_basic():

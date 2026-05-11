@@ -1,7 +1,7 @@
 """Tests for kmadap.kamath_houlsby_adapter."""
 import numpy as np
 import pytest
-from moirais.fn.kmadap import kamath_houlsby_adapter
+from morie.fn.kmadap import kamath_houlsby_adapter
 
 
 def test_kmadap_basic():

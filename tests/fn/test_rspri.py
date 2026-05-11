@@ -1,7 +1,7 @@
 """Test rspri."""
 import numpy as np
 import pytest
-from moirais.fn.rspri import rspri
+from morie.fn.rspri import rspri
 
 
 def test_rspri_basic():

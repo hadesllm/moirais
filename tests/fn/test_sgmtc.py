@@ -1,5 +1,5 @@
 """Tests for Matern cluster process."""
-from moirais.fn.sgmtc import sgmtc
+from morie.fn.sgmtc import sgmtc
 
 
 def test_sgmtc_smoke():
@@ -11,7 +11,7 @@ def test_sgmtc_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgmtc import cheatsheet
+    from morie.fn.sgmtc import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -25,13 +25,13 @@ Step 1: Load the data
 
 .. code-block:: python
 
-   from moirais.fn import dnorm  # any moirais import warms the package
+   from morie.fn import dnorm  # any morie import warms the package
    import sqlite3
    import pandas as pd
 
-   # MOIRAIS ships with the iris dataset in its built-in database.
-   from moirais.data import moirais_builtin_db
-   conn = sqlite3.connect(moirais_builtin_db())
+   # MORIE ships with the iris dataset in its built-in database.
+   from morie.data import morie_builtin_db
+   conn = sqlite3.connect(morie_builtin_db())
    iris = pd.read_sql("SELECT * FROM iris", conn)
    conn.close()
 
@@ -52,7 +52,7 @@ Step 2: Pick the right tool
 
 The question is "are petal lengths different between two groups?".
 That maps to a *two-sample t-test* (with a robust alternative when
-the data is skewed) — which lives at ``moirais.fn.t2smp``.
+the data is skewed) — which lives at ``morie.fn.t2smp``.
 
 You can find this by:
 
@@ -61,7 +61,7 @@ You can find this by:
 
   .. code-block:: python
 
-     from moirais.cheatsheet import cheatsheet
+     from morie.cheatsheet import cheatsheet
      print(cheatsheet("t2smp"))
 
   That prints a whole help card: when to use, the formula reference,
@@ -75,7 +75,7 @@ Step 3: Run the test
 .. code-block:: python
 
    import numpy as np
-   from moirais.fn.t2smp import t2smp  # if t2smp ships a module of the same name
+   from morie.fn.t2smp import t2smp  # if t2smp ships a module of the same name
 
    setosa_petal     = iris.loc[iris.species == "setosa",     "petal_length"].to_numpy()
    virginica_petal  = iris.loc[iris.species == "virginica",  "petal_length"].to_numpy()
@@ -148,6 +148,6 @@ The big idea, restated
 
 You loaded data, picked a tool that matched the question, ran it,
 and got a number with a margin of error and a citation.  That is
-the entire workflow.  The thousand other functions in MOIRAIS exist
+the entire workflow.  The thousand other functions in MORIE exist
 because the question can take a thousand other shapes, but the
 shape of the work doesn't change.

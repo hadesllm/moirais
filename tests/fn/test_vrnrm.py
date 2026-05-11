@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.vrnrm — normalized variance."""
+"""Tests for morie.fn.vrnrm — normalized variance."""
 import numpy as np
-from moirais.fn.vrnrm import vrnrm
+from morie.fn.vrnrm import vrnrm
 
 
 def test_vrnrm_perfect():
@@ -11,7 +11,7 @@ def test_vrnrm_perfect():
 
 
 def test_cheatsheet():
-    from moirais.fn.vrnrm import cheatsheet
+    from morie.fn.vrnrm import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for nbeats.n_beats."""
 import numpy as np
 import pytest
-from moirais.fn.nbeats import n_beats
+from morie.fn.nbeats import n_beats
 
 
 def test_nbeats_basic():

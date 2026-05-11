@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.lgint."""
+"""Tests for morie.fn.lgint."""
 import numpy as np
-from moirais.fn.lgint import lagrange_interp
+from morie.fn.lgint import lagrange_interp
 
 
 def test_lgint_smoke():
@@ -16,7 +16,7 @@ def test_lgint_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.lgint import cheatsheet
+    from morie.fn.lgint import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

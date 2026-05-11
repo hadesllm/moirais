@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svht3 -- Three-candidate spatial equilibrium"""
+"""Tests for morie.fn.svht3 -- Three-candidate spatial equilibrium"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svht3 import hotelling_3cand
+from morie.fn.svht3 import hotelling_3cand
 
 
 class TestHotelling3cand:

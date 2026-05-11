@@ -1,7 +1,7 @@
 """Tests for idwmod."""
 import numpy as np
 import pytest
-from moirais.fn.idwmod import idwmod
+from morie.fn.idwmod import idwmod
 
 
 def test_idwmod_basic():
@@ -27,5 +27,5 @@ def test_idwmod_no_data():
 
 
 def test_idwmod_alias():
-    from moirais.fn.idwmod import idwmod
+    from morie.fn.idwmod import idwmod
     assert idwmod is idwmod

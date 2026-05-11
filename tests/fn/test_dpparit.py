@@ -1,7 +1,7 @@
 """Tests for dpparit.pitman_yor_process."""
 import numpy as np
 import pytest
-from moirais.fn.dpparit import pitman_yor_process
+from morie.fn.dpparit import pitman_yor_process
 
 
 def test_dpparit_basic():

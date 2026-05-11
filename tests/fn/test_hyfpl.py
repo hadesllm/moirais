@@ -1,7 +1,7 @@
 """Test hyfpl."""
 import numpy as np
 import pytest
-from moirais.fn.hyfpl import hyfpl
+from morie.fn.hyfpl import hyfpl
 
 
 def test_hyfpl_basic():

@@ -1,7 +1,7 @@
 """Tests for hmanae.geron_anomaly_autoencoder."""
 import numpy as np
 import pytest
-from moirais.fn.hmanae import geron_anomaly_autoencoder
+from morie.fn.hmanae import geron_anomaly_autoencoder
 
 
 def test_hmanae_basic():

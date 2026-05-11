@@ -1,7 +1,7 @@
 """Tests for diaspath.diameter."""
 import numpy as np
 import pytest
-from moirais.fn.diaspath import diameter
+from morie.fn.diaspath import diameter
 
 
 def test_diaspath_basic():

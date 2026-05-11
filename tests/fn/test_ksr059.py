@@ -1,7 +1,7 @@
 """Tests for ksr059.kosorok_ch2_kmt_strong_approximation."""
 import numpy as np
 import pytest
-from moirais.fn.ksr059 import kosorok_ch2_kmt_strong_approximation
+from morie.fn.ksr059 import kosorok_ch2_kmt_strong_approximation
 
 
 def test_ksr059_basic():

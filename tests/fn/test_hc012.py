@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.hc012 — HC0/HC1/HC2/HC3 robust SE."""
+"""Tests for morie.fn.hc012 — HC0/HC1/HC2/HC3 robust SE."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.hc012 import hc_robust_se
+from morie.fn.hc012 import hc_robust_se
 
 
 @pytest.fixture()
@@ -54,7 +54,7 @@ def test_hc1_matches_ols_se_homoskedastic():
     n = 500
     X = rng.standard_normal((n, 1))
     y = 1.0 + 2.0 * X[:, 0] + rng.standard_normal(n) * 0.5
-    from moirais.fn.olsrg import ols_regression
+    from morie.fn.olsrg import ols_regression
     ols = ols_regression(y, X)
     hc1 = hc_robust_se(y, X, hc_type="HC1")
     np.testing.assert_allclose(ols.se["x0"], hc1.se["x0"], rtol=0.15)

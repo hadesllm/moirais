@@ -1,7 +1,7 @@
 """Tests for mehtad.mehrotras_predictor."""
 import numpy as np
 import pytest
-from moirais.fn.mehtad import mehrotras_predictor
+from morie.fn.mehtad import mehrotras_predictor
 
 
 def test_mehtad_basic():

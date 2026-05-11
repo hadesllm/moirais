@@ -1,7 +1,7 @@
 """Tests for alann.alammar_approximate_nearest_neighbor."""
 import numpy as np
 import pytest
-from moirais.fn.alann import alammar_approximate_nearest_neighbor
+from morie.fn.alann import alammar_approximate_nearest_neighbor
 
 
 def test_alann_basic():

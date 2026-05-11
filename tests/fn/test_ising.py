@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ising -- 2D Ising model."""
+"""Tests for morie.fn.ising -- 2D Ising model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ising import ising
+from morie.fn.ising import ising
 
 
 def test_returns_dict():

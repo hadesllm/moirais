@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.spln -- Cubic spline regression."""
+"""Tests for morie.fn.spln -- Cubic spline regression."""
 
 import numpy as np
-from moirais.fn.spln import spline_regression, spln
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.spln import spline_regression, spln
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSpln:

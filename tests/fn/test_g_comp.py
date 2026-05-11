@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.g_comp — G-computation ATE estimator with bootstrap SE."""
+"""Tests for morie.fn.g_comp — G-computation ATE estimator with bootstrap SE."""
 
 import math
 
@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.g_comp import estimate_ate_gcomputation
+from morie.fn.g_comp import estimate_ate_gcomputation
 
 
 @pytest.fixture()

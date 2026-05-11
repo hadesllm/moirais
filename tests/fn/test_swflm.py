@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.swflm -- Star Wars film summary."""
+"""Tests for morie.fn.swflm -- Star Wars film summary."""
 
 import pandas as pd
-from moirais.fn.swflm import sw_film_summary, swflm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.swflm import sw_film_summary, swflm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSwflm:

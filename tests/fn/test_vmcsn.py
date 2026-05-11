@@ -1,7 +1,7 @@
 """Test vmcsn."""
 import numpy as np
 import pytest
-from moirais.fn.vmcsn import vmcsn
+from morie.fn.vmcsn import vmcsn
 
 
 def test_vmcsn_basic():

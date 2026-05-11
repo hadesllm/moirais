@@ -1,7 +1,7 @@
 """Tests for pesdol.pesaran_shin_dols."""
 import numpy as np
 import pytest
-from moirais.fn.pesdol import pesaran_shin_dols
+from morie.fn.pesdol import pesaran_shin_dols
 
 
 def test_pesdol_basic():

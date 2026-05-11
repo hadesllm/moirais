@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.scnblrt."""
+"""Tests for morie.fn.scnblrt."""
 import numpy as np
 import pytest
-from moirais.fn.scnblrt import scnblrt
+from morie.fn.scnblrt import scnblrt
 
 
 class TestScnblrt:

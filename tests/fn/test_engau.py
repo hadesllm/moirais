@@ -1,7 +1,7 @@
 """Test engau."""
 import numpy as np
 import pytest
-from moirais.fn.engau import engau
+from morie.fn.engau import engau
 
 
 def test_engau_basic():

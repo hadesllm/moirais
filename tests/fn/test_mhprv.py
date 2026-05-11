@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhprv -- mental health prevalence."""
+"""Tests for morie.fn.mhprv -- mental health prevalence."""
 
 import pytest
-from moirais.fn.mhprv import mental_health_prevalence
+from morie.fn.mhprv import mental_health_prevalence
 
 
 class TestMentalHealthPrevalence:

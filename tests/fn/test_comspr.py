@@ -1,7 +1,7 @@
 """Tests for comspr.spectral_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.comspr import spectral_clustering
+from morie.fn.comspr import spectral_clustering
 
 
 def test_comspr_basic():

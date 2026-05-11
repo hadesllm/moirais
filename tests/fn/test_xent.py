@@ -1,7 +1,7 @@
 """Tests for cross_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.xent import cross_entropy, xent
+from morie.fn.xent import cross_entropy, xent
 
 
 def test_same_dist():

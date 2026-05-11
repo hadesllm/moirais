@@ -1,6 +1,6 @@
 """Tests for cwvsp.py - CWT spectrum."""
 import numpy as np
-from moirais.fn.cwvsp import cwt_spectrum, cwvsp
+from morie.fn.cwvsp import cwt_spectrum, cwvsp
 
 
 def test_cwt_returns_result():

@@ -1,7 +1,7 @@
 """Tests for tqalg1.turboquant_online_key_quantizer."""
 import numpy as np
 import pytest
-from moirais.fn.tqalg1 import turboquant_online_key_quantizer
+from morie.fn.tqalg1 import turboquant_online_key_quantizer
 
 
 def test_tqalg1_basic():

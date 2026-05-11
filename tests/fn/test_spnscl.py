@@ -1,7 +1,7 @@
 """Tests for spnscl.schabenberger_neyman_scott."""
 import numpy as np
 import pytest
-from moirais.fn.spnscl import schabenberger_neyman_scott
+from morie.fn.spnscl import schabenberger_neyman_scott
 
 
 def test_spnscl_basic():

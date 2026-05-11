@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.smchc -- simulate choice probabilities."""
+"""Tests for morie.fn.smchc -- simulate choice probabilities."""
 import numpy as np
-from moirais.fn.smchc import simulate_choice_prob, smchc
+from morie.fn.smchc import simulate_choice_prob, smchc
 
 
 def test_alias():

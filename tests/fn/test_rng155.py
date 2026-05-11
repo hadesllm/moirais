@@ -1,7 +1,7 @@
 """Tests for rng155.rangayyan_ch3_lms_filter_output."""
 import numpy as np
 import pytest
-from moirais.fn.rng155 import rangayyan_ch3_lms_filter_output
+from morie.fn.rng155 import rangayyan_ch3_lms_filter_output
 
 
 def test_rng155_basic():

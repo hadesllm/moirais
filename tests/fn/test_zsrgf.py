@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsrgf -- Random Gaussian field"""
+"""Tests for morie.fn.zsrgf -- Random Gaussian field"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsrgf import random_gauss_field
+from morie.fn.zsrgf import random_gauss_field
 
 
 class TestRandomGaussField:

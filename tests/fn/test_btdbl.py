@@ -1,7 +1,7 @@
 """Tests for btdbl.boot_double."""
 import numpy as np
 import pytest
-from moirais.fn.btdbl import boot_double
+from morie.fn.btdbl import boot_double
 
 
 def test_btdbl_basic():

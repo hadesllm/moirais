@@ -1,7 +1,7 @@
 """Tests for rglpcs.rangayyan_lpc_synthesis."""
 import numpy as np
 import pytest
-from moirais.fn.rglpcs import rangayyan_lpc_synthesis
+from morie.fn.rglpcs import rangayyan_lpc_synthesis
 
 
 def test_rglpcs_basic():

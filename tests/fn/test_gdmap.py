@@ -1,7 +1,7 @@
 """Test gdmap."""
 import numpy as np
 import pytest
-from moirais.fn.gdmap import gdmap
+from morie.fn.gdmap import gdmap
 
 
 def test_gdmap_basic():

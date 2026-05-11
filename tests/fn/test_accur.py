@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.accur — classification accuracy."""
+"""Tests for morie.fn.accur — classification accuracy."""
 import numpy as np
 import pytest
-from moirais.fn.accur import accuracy, accur
+from morie.fn.accur import accuracy, accur
 
 
 def test_perfect():

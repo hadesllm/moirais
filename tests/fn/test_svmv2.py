@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svmv2 -- Median voter in 2D (Plott conditions)"""
+"""Tests for morie.fn.svmv2 -- Median voter in 2D (Plott conditions)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svmv2 import median_voter_2d
+from morie.fn.svmv2 import median_voter_2d
 
 
 class TestMedianVoter2d:

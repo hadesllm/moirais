@@ -1,7 +1,7 @@
 """Tests for eudst.euclidean_utility."""
 import numpy as np
 import pytest
-from moirais.fn.eudst import euclidean_utility
+from morie.fn.eudst import euclidean_utility
 
 
 def test_eudst_basic():

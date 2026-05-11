@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rskbs — risk Brier score."""
+"""Tests for morie.fn.rskbs — risk Brier score."""
 
 import pytest
 import numpy as np
-from moirais.fn.rskbs import risk_brier
-from moirais.fn._containers import ESRes
+from morie.fn.rskbs import risk_brier
+from morie.fn._containers import ESRes
 
 
 class TestRiskBrier:

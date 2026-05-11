@@ -1,7 +1,7 @@
 """Tests for phylog.phylogenetic_dating."""
 import numpy as np
 import pytest
-from moirais.fn.phylog import phylogenetic_dating
+from morie.fn.phylog import phylogenetic_dating
 
 
 def test_phylog_basic():

@@ -1,7 +1,7 @@
 """Tests for tmlqsa.tmle_quasi_score."""
 import numpy as np
 import pytest
-from moirais.fn.tmlqsa import tmle_quasi_score
+from morie.fn.tmlqsa import tmle_quasi_score
 
 
 def test_tmlqsa_basic():

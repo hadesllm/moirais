@@ -1,7 +1,7 @@
 """Tests for hmbsz.geron_batch_size_heuristic."""
 import numpy as np
 import pytest
-from moirais.fn.hmbsz import geron_batch_size_heuristic
+from morie.fn.hmbsz import geron_batch_size_heuristic
 
 
 def test_hmbsz_basic():

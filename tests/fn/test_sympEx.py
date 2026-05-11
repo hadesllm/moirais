@@ -1,7 +1,7 @@
 """Tests for sympEx.sympy_expand."""
 import numpy as np
 import pytest
-from moirais.fn.sympEx import sympy_expand
+from morie.fn.sympEx import sympy_expand
 
 
 def test_sympEx_basic():

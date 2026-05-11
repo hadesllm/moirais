@@ -1,7 +1,7 @@
 """Tests for hmwpt.geron_wordpiece_tokenizer."""
 import numpy as np
 import pytest
-from moirais.fn.hmwpt import geron_wordpiece_tokenizer
+from morie.fn.hmwpt import geron_wordpiece_tokenizer
 
 
 def test_hmwpt_basic():

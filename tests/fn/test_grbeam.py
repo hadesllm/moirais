@@ -1,7 +1,7 @@
 """Tests for grbeam.geron_beam_search_decoder."""
 import numpy as np
 import pytest
-from moirais.fn.grbeam import geron_beam_search_decoder
+from morie.fn.grbeam import geron_beam_search_decoder
 
 
 def test_grbeam_basic():

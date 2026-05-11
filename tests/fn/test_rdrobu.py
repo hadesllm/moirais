@@ -1,7 +1,7 @@
 """Tests for rdrobu.calonico_cattaneo_titiunik."""
 import numpy as np
 import pytest
-from moirais.fn.rdrobu import calonico_cattaneo_titiunik
+from morie.fn.rdrobu import calonico_cattaneo_titiunik
 
 
 def test_rdrobu_basic():

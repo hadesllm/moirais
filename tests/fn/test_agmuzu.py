@@ -1,7 +1,7 @@
 """Tests for agmuzu.muzero_world_model."""
 import numpy as np
 import pytest
-from moirais.fn.agmuzu import muzero_world_model
+from morie.fn.agmuzu import muzero_world_model
 
 
 def test_agmuzu_basic():

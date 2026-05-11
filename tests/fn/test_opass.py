@@ -1,7 +1,7 @@
 """Test opass."""
 import numpy as np
 import pytest
-from moirais.fn.opass import opass
+from morie.fn.opass import opass
 
 
 def test_opass_basic():

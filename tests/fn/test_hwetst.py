@@ -1,7 +1,7 @@
 """Tests for hwetst.hardy_weinberg."""
 import numpy as np
 import pytest
-from moirais.fn.hwetst import hardy_weinberg
+from morie.fn.hwetst import hardy_weinberg
 
 
 def test_hwetst_basic():

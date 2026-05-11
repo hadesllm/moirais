@@ -1,7 +1,7 @@
 """Tests for gmcent.grand_mean_centering."""
 import numpy as np
 import pytest
-from moirais.fn.gmcent import grand_mean_centering
+from morie.fn.gmcent import grand_mean_centering
 
 
 def test_gmcent_basic():

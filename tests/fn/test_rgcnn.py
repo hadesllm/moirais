@@ -1,7 +1,7 @@
 """Tests for rgcnn.rangayyan_cnn_signal."""
 import numpy as np
 import pytest
-from moirais.fn.rgcnn import rangayyan_cnn_signal
+from morie.fn.rgcnn import rangayyan_cnn_signal
 
 
 def test_rgcnn_basic():

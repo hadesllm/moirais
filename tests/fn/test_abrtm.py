@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.abrtm -- Farrington aberration detection."""
+"""Tests for morie.fn.abrtm -- Farrington aberration detection."""
 
 import pytest
-from moirais.fn.abrtm import farrington_aberration
+from morie.fn.abrtm import farrington_aberration
 
 
 class TestFarrington:

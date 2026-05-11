@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.siubc -- SIU Ontario report parser."""
+"""Tests for morie.fn.siubc -- SIU Ontario report parser."""
 
-from moirais.fn.siubc import siu_scrape_report, siubc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.siubc import siu_scrape_report, siubc
+from morie.fn._containers import DescriptiveResult
 
 
 _SAMPLE_HTML = """

@@ -1,7 +1,7 @@
 """Test rscnf."""
 import numpy as np
 import pytest
-from moirais.fn.rscnf import rscnf
+from morie.fn.rscnf import rscnf
 
 
 def test_rscnf_basic():

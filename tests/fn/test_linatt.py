@@ -1,7 +1,7 @@
 """Tests for linatt.linformer_linear_attention."""
 import numpy as np
 import pytest
-from moirais.fn.linatt import linformer_linear_attention
+from morie.fn.linatt import linformer_linear_attention
 
 
 def test_linatt_basic():

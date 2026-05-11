@@ -1,7 +1,7 @@
 """Tests for copExt.extremal_copula."""
 import numpy as np
 import pytest
-from moirais.fn.copExt import extremal_copula
+from morie.fn.copExt import extremal_copula
 
 
 def test_copExt_basic():

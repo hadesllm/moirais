@@ -1,7 +1,7 @@
 """Tests for hmppo.geron_ppo."""
 import numpy as np
 import pytest
-from moirais.fn.hmppo import geron_ppo
+from morie.fn.hmppo import geron_ppo
 
 
 def test_hmppo_basic():

@@ -1,7 +1,7 @@
 """Tests for hmopt.geron_optics."""
 import numpy as np
 import pytest
-from moirais.fn.hmopt import geron_optics
+from morie.fn.hmopt import geron_optics
 
 
 def test_hmopt_basic():

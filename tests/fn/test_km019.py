@@ -1,7 +1,7 @@
 """Tests for km019.kamath_ch2_masked_attention."""
 import numpy as np
 import pytest
-from moirais.fn.km019 import kamath_ch2_masked_attention
+from morie.fn.km019 import kamath_ch2_masked_attention
 
 
 def test_km019_basic():

@@ -1,7 +1,7 @@
 """Tests for fnDist.functional_distance."""
 import numpy as np
 import pytest
-from moirais.fn.fnDist import functional_distance
+from morie.fn.fnDist import functional_distance
 
 
 def test_fnDist_basic():

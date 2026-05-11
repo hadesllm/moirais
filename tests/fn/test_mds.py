@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mds — Classical Multidimensional Scaling."""
+"""Tests for morie.fn.mds — Classical Multidimensional Scaling."""
 
 import numpy as np
 import pytest
-from moirais.fn.mds import mds
-from moirais.fn._containers import MdsRes
+from morie.fn.mds import mds
+from morie.fn._containers import MdsRes
 
 
 class TestMds:

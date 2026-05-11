@@ -1,7 +1,7 @@
 """Tests for gb734.gibbons_linrank_symmetry_cond."""
 import numpy as np
 import pytest
-from moirais.fn.gb734 import gibbons_linrank_symmetry_cond
+from morie.fn.gb734 import gibbons_linrank_symmetry_cond
 
 
 def test_gb734_basic():

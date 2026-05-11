@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.plogi -- Logistic CDF."""
+"""Tests for morie.fn.plogi -- Logistic CDF."""
 
 import numpy as np
 import pytest
-from moirais.fn.plogi import plogi
+from morie.fn.plogi import plogi
 
 
 class TestPlogi:

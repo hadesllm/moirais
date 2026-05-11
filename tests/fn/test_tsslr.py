@@ -1,7 +1,7 @@
 """Test tsslr."""
 import numpy as np
 import pytest
-from moirais.fn.tsslr import tsslr
+from morie.fn.tsslr import tsslr
 
 
 def test_tsslr_basic():

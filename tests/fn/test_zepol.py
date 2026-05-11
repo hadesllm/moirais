@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zepol -- Pollution surface estimation"""
+"""Tests for morie.fn.zepol -- Pollution surface estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zepol import pollution_surface
+from morie.fn.zepol import pollution_surface
 
 
 class TestPollutionSurface:

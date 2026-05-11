@@ -1,7 +1,7 @@
 """Tests for fhar.fourier_basis."""
 import numpy as np
 import pytest
-from moirais.fn.fhar import fourier_basis
+from morie.fn.fhar import fourier_basis
 
 
 def test_fhar_basic():

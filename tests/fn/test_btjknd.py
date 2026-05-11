@@ -1,7 +1,7 @@
 """Tests for btjknd.boot_jackknife_d."""
 import numpy as np
 import pytest
-from moirais.fn.btjknd import boot_jackknife_d
+from morie.fn.btjknd import boot_jackknife_d
 
 
 def test_btjknd_basic():

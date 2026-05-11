@@ -1,7 +1,7 @@
 """Tests for arimab.arima_box_jenkins."""
 import numpy as np
 import pytest
-from moirais.fn.arimab import arima_box_jenkins
+from morie.fn.arimab import arima_box_jenkins
 
 
 def test_arimab_basic():

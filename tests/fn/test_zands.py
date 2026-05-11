@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.zands -- Zivot-Andrews test."""
+"""Tests for morie.fn.zands -- Zivot-Andrews test."""
 import numpy as np
 import pytest
-from moirais.fn.zands import za_test
+from morie.fn.zands import za_test
 
 
 class TestZA:
@@ -16,5 +16,5 @@ class TestZA:
             za_test(np.ones(10))
 
     def test_cheatsheet(self):
-        from moirais.fn.zands import cheatsheet
+        from morie.fn.zands import cheatsheet
         assert isinstance(cheatsheet(), str)

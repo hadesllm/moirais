@@ -1,7 +1,7 @@
 """Test sesmr."""
 import numpy as np
 import pytest
-from moirais.fn.sesmr import sesmr
+from morie.fn.sesmr import sesmr
 
 
 def test_sesmr_basic():

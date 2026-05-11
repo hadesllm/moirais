@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.paapp."""
+"""Tests for morie.fn.paapp."""
 
 import numpy as np
 import pytest
-from moirais.fn.paapp import paapp
+from morie.fn.paapp import paapp
 
 
 class TestPaapp:

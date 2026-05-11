@@ -1,7 +1,7 @@
 """Tests for causdid3w.causal_did_three_way."""
 import numpy as np
 import pytest
-from moirais.fn.causdid3w import causal_did_three_way
+from morie.fn.causdid3w import causal_did_three_way
 
 
 def test_causdid3w_basic():

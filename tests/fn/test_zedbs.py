@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zedbs -- Spatial DBSCAN cluster detection"""
+"""Tests for morie.fn.zedbs -- Spatial DBSCAN cluster detection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zedbs import spatial_dbscan
+from morie.fn.zedbs import spatial_dbscan
 
 
 class TestSpatialDbscan:

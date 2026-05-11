@@ -1,7 +1,7 @@
 """Tests for berkly.berkeley_earth."""
 import numpy as np
 import pytest
-from moirais.fn.berkly import berkeley_earth
+from morie.fn.berkly import berkeley_earth
 
 
 def test_berkly_basic():

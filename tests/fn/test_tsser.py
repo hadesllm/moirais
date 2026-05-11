@@ -1,7 +1,7 @@
 """Test tsser."""
 import numpy as np
 import pytest
-from moirais.fn.tsser import tsser
+from morie.fn.tsser import tsser
 
 
 def test_tsser_basic():

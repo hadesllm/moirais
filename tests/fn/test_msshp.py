@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msshp -- Shepard diagram values"""
+"""Tests for morie.fn.msshp -- Shepard diagram values"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msshp import shepard_diag
+from morie.fn.msshp import shepard_diag
 
 
 class TestShepardDiag:

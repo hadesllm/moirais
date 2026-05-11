@@ -1,7 +1,7 @@
 """Tests for hmlrex.geron_lr_exponential."""
 import numpy as np
 import pytest
-from moirais.fn.hmlrex import geron_lr_exponential
+from morie.fn.hmlrex import geron_lr_exponential
 
 
 def test_hmlrex_basic():

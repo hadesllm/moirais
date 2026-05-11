@@ -1,7 +1,7 @@
 """Tests for km016.kamath_ch2_multihead_concat."""
 import numpy as np
 import pytest
-from moirais.fn.km016 import kamath_ch2_multihead_concat
+from morie.fn.km016 import kamath_ch2_multihead_concat
 
 
 def test_km016_basic():

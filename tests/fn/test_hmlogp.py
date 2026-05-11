@@ -1,7 +1,7 @@
 """Tests for hmlogp.geron_logistic_probability."""
 import numpy as np
 import pytest
-from moirais.fn.hmlogp import geron_logistic_probability
+from morie.fn.hmlogp import geron_logistic_probability
 
 
 def test_hmlogp_basic():

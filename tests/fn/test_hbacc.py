@@ -1,7 +1,7 @@
 """Tests for hbacc.hbond_acceptor_count."""
 import numpy as np
 import pytest
-from moirais.fn.hbacc import hbond_acceptor_count
+from morie.fn.hbacc import hbond_acceptor_count
 
 
 def test_hbacc_basic():

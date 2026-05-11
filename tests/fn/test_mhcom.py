@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mhcom -- comorbidity index."""
+"""Tests for morie.fn.mhcom -- comorbidity index."""
 
 import pytest
 import numpy as np
-from moirais.fn.mhcom import comorbidity_index
+from morie.fn.mhcom import comorbidity_index
 
 
 class TestComorbidityIndex:

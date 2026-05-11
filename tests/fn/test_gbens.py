@@ -1,7 +1,7 @@
 """Tests for gbens.gradient_boosting_ensemble."""
 import numpy as np
 import pytest
-from moirais.fn.gbens import gradient_boosting_ensemble
+from morie.fn.gbens import gradient_boosting_ensemble
 
 
 def test_gbens_basic():

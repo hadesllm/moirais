@@ -1,7 +1,7 @@
 """Tests for rgpcgar.rangayyan_pcg_ar_model."""
 import numpy as np
 import pytest
-from moirais.fn.rgpcgar import rangayyan_pcg_ar_model
+from morie.fn.rgpcgar import rangayyan_pcg_ar_model
 
 
 def test_rgpcgar_basic():

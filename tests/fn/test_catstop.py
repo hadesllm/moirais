@@ -1,7 +1,7 @@
 """Tests for catstop.cat_stopping_rule."""
 import numpy as np
 import pytest
-from moirais.fn.catstop import cat_stopping_rule
+from morie.fn.catstop import cat_stopping_rule
 
 
 def test_catstop_basic():

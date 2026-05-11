@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bnebi -- Bayesian negative binomial."""
+"""Tests for morie.fn.bnebi -- Bayesian negative binomial."""
 
-from moirais.fn.bnebi import bayesian_negbinom
+from morie.fn.bnebi import bayesian_negbinom
 
 
 def test_returns_dict():

@@ -1,7 +1,7 @@
 """Tests for grimp.geron_simple_imputer."""
 import numpy as np
 import pytest
-from moirais.fn.grimp import geron_simple_imputer
+from morie.fn.grimp import geron_simple_imputer
 
 
 def test_grimp_basic():

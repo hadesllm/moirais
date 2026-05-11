@@ -1,7 +1,7 @@
 """Tests for gnnEx.gnn_explainer."""
 import numpy as np
 import pytest
-from moirais.fn.gnnEx import gnn_explainer
+from morie.fn.gnnEx import gnn_explainer
 
 
 def test_gnnEx_basic():

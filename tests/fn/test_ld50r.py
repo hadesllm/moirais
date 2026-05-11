@@ -1,7 +1,7 @@
 """Tests for ld50r.acute_toxicity_ld50."""
 import numpy as np
 import pytest
-from moirais.fn.ld50r import acute_toxicity_ld50
+from morie.fn.ld50r import acute_toxicity_ld50
 
 
 def test_ld50r_basic():

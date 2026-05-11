@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dmtst -- Diebold-Mariano test."""
+"""Tests for morie.fn.dmtst -- Diebold-Mariano test."""
 import numpy as np
 import pytest
-from moirais.fn.dmtst import dm_test
+from morie.fn.dmtst import dm_test
 
 
 class TestDM:
@@ -21,5 +21,5 @@ class TestDM:
         assert "p_value" in res.extra
 
     def test_cheatsheet(self):
-        from moirais.fn.dmtst import cheatsheet
+        from morie.fn.dmtst import cheatsheet
         assert isinstance(cheatsheet(), str)

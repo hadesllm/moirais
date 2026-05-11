@@ -1,7 +1,7 @@
 """Test ltest."""
 import numpy as np
 import pytest
-from moirais.fn.ltest import ltest
+from morie.fn.ltest import ltest
 
 
 def test_ltest_basic():

@@ -1,7 +1,7 @@
 """Tests for moetop.moe_topk_routing."""
 import numpy as np
 import pytest
-from moirais.fn.moetop import moe_topk_routing
+from morie.fn.moetop import moe_topk_routing
 
 
 def test_moetop_basic():

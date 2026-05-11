@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxfkr -- Functional kriging"""
+"""Tests for morie.fn.zxfkr -- Functional kriging"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxfkr import func_kriging
+from morie.fn.zxfkr import func_kriging
 
 
 class TestFuncKriging:

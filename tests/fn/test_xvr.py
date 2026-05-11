@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.xvr -- partial correlation matrix."""
+"""Tests for morie.fn.xvr -- partial correlation matrix."""
 
 import numpy as np
-from moirais.fn.xvr import partial_corr_matrix, xvr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.xvr import partial_corr_matrix, xvr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestXvr:

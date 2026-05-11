@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.secnt -- Secant method."""
+"""Tests for morie.fn.secnt -- Secant method."""
 
 import numpy as np
-from moirais.fn.secnt import secant_method, secnt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.secnt import secant_method, secnt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSecnt:

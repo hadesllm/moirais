@@ -1,7 +1,7 @@
 """Tests for konfound.konfound."""
 import numpy as np
 import pytest
-from moirais.fn.konfound import konfound
+from morie.fn.konfound import konfound
 
 
 def test_konfound_basic():

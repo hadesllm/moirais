@@ -1,7 +1,7 @@
 """Test spectral_edge_freq (spedf)."""
 import numpy as np
-from moirais.fn.spedf import spectral_edge_freq, spedf
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.spedf import spectral_edge_freq, spedf
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSpedf:

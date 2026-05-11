@@ -1,7 +1,7 @@
 """Tests for rgeqn10b.rangayyan_ch10_roc_optimal."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn10b import rangayyan_ch10_roc_optimal
+from morie.fn.rgeqn10b import rangayyan_ch10_roc_optimal
 
 
 def test_rgeqn10b_basic():

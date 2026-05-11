@@ -1,7 +1,7 @@
 """Tests for ksr057.kosorok_ch2_m_estimator_master_theorem."""
 import numpy as np
 import pytest
-from moirais.fn.ksr057 import kosorok_ch2_m_estimator_master_theorem
+from morie.fn.ksr057 import kosorok_ch2_m_estimator_master_theorem
 
 
 def test_ksr057_basic():

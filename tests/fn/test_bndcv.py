@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bndcv — LOO cross-validation bandwidth."""
+"""Tests for morie.fn.bndcv — LOO cross-validation bandwidth."""
 
 import numpy as np
 import pytest
-from moirais.fn.bndcv import bndcv
+from morie.fn.bndcv import bndcv
 
 
 def test_returns_dict():

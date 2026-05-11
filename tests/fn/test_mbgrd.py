@@ -1,7 +1,7 @@
 """Tests for mbgrd.mini_batch_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.mbgrd import mini_batch_gradient
+from morie.fn.mbgrd import mini_batch_gradient
 
 
 def test_mbgrd_basic():

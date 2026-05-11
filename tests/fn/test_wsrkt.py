@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.wsrkt import wsrkt
+from morie.fn.wsrkt import wsrkt
 
 
 class TestWsrkt:

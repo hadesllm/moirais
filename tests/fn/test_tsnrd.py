@@ -1,7 +1,7 @@
 """Tests for tsnrd.tsne_reduction."""
 import numpy as np
 import pytest
-from moirais.fn.tsnrd import tsne_reduction
+from morie.fn.tsnrd import tsne_reduction
 
 
 def test_tsnrd_basic():

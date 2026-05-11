@@ -1,7 +1,7 @@
 """Tests for bayreg2.bayes_robust."""
 import numpy as np
 import pytest
-from moirais.fn.bayreg2 import bayes_robust
+from morie.fn.bayreg2 import bayes_robust
 
 
 def test_bayreg2_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.wvpub."""
+"""Tests for morie.fn.wvpub."""
 
 import numpy as np
 import pytest
-from moirais.fn.wvpub import wvpub
+from morie.fn.wvpub import wvpub
 
 
 class TestWvpub:

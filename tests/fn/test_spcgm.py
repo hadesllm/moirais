@@ -1,7 +1,7 @@
 """Tests for spcgm -- Spectrogram."""
 import numpy as np
-from moirais.fn.spcgm import spcgm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.spcgm import spcgm
+from morie.fn._containers import DescriptiveResult
 
 
 def test_spcgm_basic(signal_1khz):

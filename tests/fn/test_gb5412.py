@@ -1,7 +1,7 @@
 """Tests for gb5412.gibbons_sign_normal_approx."""
 import numpy as np
 import pytest
-from moirais.fn.gb5412 import gibbons_sign_normal_approx
+from morie.fn.gb5412 import gibbons_sign_normal_approx
 
 
 def test_gb5412_basic():

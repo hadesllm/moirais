@@ -1,6 +1,6 @@
 """Tests for difst -- Stocking-Lord DIF."""
-from moirais.fn.difst import dif_stocking_lord
-from moirais.fn._containers import DIFResult
+from morie.fn.difst import dif_stocking_lord
+from morie.fn._containers import DIFResult
 
 
 class TestDifStockingLord:

@@ -1,7 +1,7 @@
 """Tests for alfvio.alphafold_violation."""
 import numpy as np
 import pytest
-from moirais.fn.alfvio import alphafold_violation
+from morie.fn.alfvio import alphafold_violation
 
 
 def test_alfvio_basic():

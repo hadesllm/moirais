@@ -1,7 +1,7 @@
 """Tests for rng060.rangayyan_ch3_frequency_response_from_pole_zero."""
 import numpy as np
 import pytest
-from moirais.fn.rng060 import rangayyan_ch3_frequency_response_from_pole_zero
+from morie.fn.rng060 import rangayyan_ch3_frequency_response_from_pole_zero
 
 
 def test_rng060_basic():

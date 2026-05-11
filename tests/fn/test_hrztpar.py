@@ -1,7 +1,7 @@
 """Tests for hrztpar.horowitz_parametric_T."""
 import numpy as np
 import pytest
-from moirais.fn.hrztpar import horowitz_parametric_T
+from morie.fn.hrztpar import horowitz_parametric_T
 
 
 def test_hrztpar_basic():

@@ -1,7 +1,7 @@
 """Tests for hmsvm2.geron_save_load_pytorch."""
 import numpy as np
 import pytest
-from moirais.fn.hmsvm2 import geron_save_load_pytorch
+from morie.fn.hmsvm2 import geron_save_load_pytorch
 
 
 def test_hmsvm2_basic():

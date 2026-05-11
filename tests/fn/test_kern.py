@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.kern -- Gaussian KDE."""
+"""Tests for morie.fn.kern -- Gaussian KDE."""
 
 import numpy as np
-from moirais.fn.kern import kde, kern
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.kern import kde, kern
+from morie.fn._containers import DescriptiveResult
 
 
 class TestKern:

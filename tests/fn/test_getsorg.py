@@ -1,7 +1,7 @@
 """Tests for getsorg.getis_ord_g."""
 import numpy as np
 import pytest
-from moirais.fn.getsorg import getis_ord_g
+from morie.fn.getsorg import getis_ord_g
 
 
 def test_getsorg_basic():

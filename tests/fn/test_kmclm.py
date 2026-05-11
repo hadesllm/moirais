@@ -1,7 +1,7 @@
 """Tests for kmclm.kamath_causal_lm_loss."""
 import numpy as np
 import pytest
-from moirais.fn.kmclm import kamath_causal_lm_loss
+from morie.fn.kmclm import kamath_causal_lm_loss
 
 
 def test_kmclm_basic():

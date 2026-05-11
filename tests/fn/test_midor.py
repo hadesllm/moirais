@@ -1,7 +1,7 @@
 """Tests for midor.model_identify_estimate_refute."""
 import numpy as np
 import pytest
-from moirais.fn.midor import model_identify_estimate_refute
+from morie.fn.midor import model_identify_estimate_refute
 
 
 def test_midor_basic():

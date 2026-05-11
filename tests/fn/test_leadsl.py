@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.leadsl import lead_service_line_risk, leadsl
+from morie.fn.leadsl import lead_service_line_risk, leadsl
 
 
 def test_leadsl_pre1900_very_high_us():

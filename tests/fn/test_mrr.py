@@ -1,7 +1,7 @@
 """Tests for mrr.mrr."""
 import numpy as np
 import pytest
-from moirais.fn.mrr import mrr
+from morie.fn.mrr import mrr
 
 
 def test_mrr_basic():

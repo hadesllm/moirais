@@ -1,7 +1,7 @@
 """Tests for bnstvr.bound_treatment_variation."""
 import numpy as np
 import pytest
-from moirais.fn.bnstvr import bound_treatment_variation
+from morie.fn.bnstvr import bound_treatment_variation
 
 
 def test_bnstvr_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tlatt — torus lattice."""
+"""Tests for morie.fn.tlatt — torus lattice."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tlatt import torus_lattice
+from morie.fn.tlatt import torus_lattice
 
 
 class TestTorusLattice:

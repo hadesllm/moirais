@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vtbal — Viterbi alignment."""
+"""Tests for morie.fn.vtbal — Viterbi alignment."""
 import numpy as np
 import pytest
 
-from moirais.fn.vtbal import viterbi_align, vtbal
+from morie.fn.vtbal import viterbi_align, vtbal
 
 
 def test_deterministic_path():

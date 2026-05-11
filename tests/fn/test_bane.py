@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bane -- Structural break test."""
+"""Tests for morie.fn.bane -- Structural break test."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.bane import structural_break, bane
-from moirais.fn._containers import TestResult
+from morie.fn.bane import structural_break, bane
+from morie.fn._containers import TestResult
 
 
 class TestBane:

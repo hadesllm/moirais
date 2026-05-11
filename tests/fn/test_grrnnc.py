@@ -1,7 +1,7 @@
 """Tests for grrnnc.geron_simple_rnn_cell."""
 import numpy as np
 import pytest
-from moirais.fn.grrnnc import geron_simple_rnn_cell
+from morie.fn.grrnnc import geron_simple_rnn_cell
 
 
 def test_grrnnc_basic():

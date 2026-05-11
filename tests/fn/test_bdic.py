@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bdic -- Bayesian DIC."""
+"""Tests for morie.fn.bdic -- Bayesian DIC."""
 
 import numpy as np
-from moirais.fn.bdic import bayesian_dic
+from morie.fn.bdic import bayesian_dic
 
 
 def test_returns_dict():

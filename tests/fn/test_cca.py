@@ -1,6 +1,6 @@
 """Tests for canonical_correlation."""
 import numpy as np, pytest
-from moirais.fn.cca import canonical_correlation
+from morie.fn.cca import canonical_correlation
 
 class TestCCA:
     def test_correlated(self):

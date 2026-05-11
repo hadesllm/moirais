@@ -1,7 +1,7 @@
 """Tests for tknbp.bpe_tokenizer."""
 import numpy as np
 import pytest
-from moirais.fn.tknbp import bpe_tokenizer
+from morie.fn.tknbp import bpe_tokenizer
 
 
 def test_tknbp_basic():

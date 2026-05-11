@@ -1,7 +1,7 @@
 """Test gcgrw."""
 import numpy as np
 import pytest
-from moirais.fn.gcgrw import gcgrw
+from morie.fn.gcgrw import gcgrw
 
 
 def test_gcgrw_basic():

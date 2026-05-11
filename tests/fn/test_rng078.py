@@ -1,7 +1,7 @@
 """Tests for rng078.rangayyan_ch3_twiddle_periodicity."""
 import numpy as np
 import pytest
-from moirais.fn.rng078 import rangayyan_ch3_twiddle_periodicity
+from morie.fn.rng078 import rangayyan_ch3_twiddle_periodicity
 
 
 def test_rng078_basic():

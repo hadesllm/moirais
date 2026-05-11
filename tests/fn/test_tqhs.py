@@ -1,7 +1,7 @@
 """Tests for tqhs.turboquant_qjl_sign_quantizer."""
 import numpy as np
 import pytest
-from moirais.fn.tqhs import turboquant_qjl_sign_quantizer
+from morie.fn.tqhs import turboquant_qjl_sign_quantizer
 
 
 def test_tqhs_basic():

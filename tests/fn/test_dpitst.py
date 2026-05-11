@@ -1,7 +1,7 @@
 """Tests for dpitst.data_processing_inequality."""
 import numpy as np
 import pytest
-from moirais.fn.dpitst import data_processing_inequality
+from morie.fn.dpitst import data_processing_inequality
 
 
 def test_dpitst_basic():

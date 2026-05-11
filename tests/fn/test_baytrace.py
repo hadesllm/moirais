@@ -1,7 +1,7 @@
 """Tests for baytrace.trace_plot."""
 import numpy as np
 import pytest
-from moirais.fn.baytrace import trace_plot
+from morie.fn.baytrace import trace_plot
 
 
 def test_baytrace_basic():

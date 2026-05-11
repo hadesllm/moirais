@@ -1,7 +1,7 @@
 """Tests for hiatus.hiatus_model."""
 import numpy as np
 import pytest
-from moirais.fn.hiatus import hiatus_model
+from morie.fn.hiatus import hiatus_model
 
 
 def test_hiatus_basic():

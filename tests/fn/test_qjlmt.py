@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qjlmt — QJL projection matrix."""
+"""Tests for morie.fn.qjlmt — QJL projection matrix."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qjlmt import qjl_matrix
+from morie.fn.qjlmt import qjl_matrix
 
 
 class TestQjlMatrix:

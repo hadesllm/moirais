@@ -1,7 +1,7 @@
 """Tests for phylotr.phylogenetic_tree."""
 import numpy as np
 import pytest
-from moirais.fn.phylotr import phylogenetic_tree
+from morie.fn.phylotr import phylogenetic_tree
 
 
 def test_phylotr_basic():

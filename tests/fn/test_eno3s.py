@@ -1,7 +1,7 @@
 """Test eno3s."""
 import numpy as np
 import pytest
-from moirais.fn.eno3s import eno3s
+from morie.fn.eno3s import eno3s
 
 
 def test_eno3s_basic():

@@ -1,7 +1,7 @@
 """Test clflm."""
 import numpy as np
 import pytest
-from moirais.fn.clflm import clflm
+from morie.fn.clflm import clflm
 
 
 def test_clflm_basic():

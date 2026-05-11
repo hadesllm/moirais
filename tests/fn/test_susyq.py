@@ -1,5 +1,5 @@
 """Test susyq."""
-from moirais.fn.susyq import susy_algebra
+from morie.fn.susyq import susy_algebra
 
 
 def test_susyq_n1d4():

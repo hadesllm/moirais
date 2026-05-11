@@ -1,7 +1,7 @@
 """Tests for gh_c6_4.ghosal_df_inconsist."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c6_4 import ghosal_df_inconsist
+from morie.fn.gh_c6_4 import ghosal_df_inconsist
 
 
 def test_gh_c6_4_basic():

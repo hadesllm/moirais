@@ -1,7 +1,7 @@
 """Tests for gh_c6_11.ghosal_markov_con."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c6_11 import ghosal_markov_con
+from morie.fn.gh_c6_11 import ghosal_markov_con
 
 
 def test_gh_c6_11_basic():

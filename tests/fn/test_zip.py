@@ -1,6 +1,6 @@
 """Tests for zero_inflated_poisson."""
 import numpy as np, pytest
-from moirais.fn.zip import zero_inflated_poisson
+from morie.fn.zip import zero_inflated_poisson
 
 class TestZIP:
     def test_basic(self):

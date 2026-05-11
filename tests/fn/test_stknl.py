@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.stknl — Spatio-temporal kernel smoothing."""
+"""Tests for morie.fn.stknl — Spatio-temporal kernel smoothing."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.stknl import stknl
+from morie.fn.stknl import stknl
 
 
 class TestStknl:

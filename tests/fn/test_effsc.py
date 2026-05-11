@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.effsc — Efficient score function."""
+"""Tests for morie.fn.effsc — Efficient score function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.effsc import effsc
+from morie.fn.effsc import effsc
 
 
 @pytest.fixture()

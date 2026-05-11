@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rcdmx — recidivism mixture model."""
+"""Tests for morie.fn.rcdmx — recidivism mixture model."""
 
 import pytest
 import numpy as np
-from moirais.fn.rcdmx import recidivism_mixture
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rcdmx import recidivism_mixture
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRecidivismMixture:

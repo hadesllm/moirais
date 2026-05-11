@@ -1,5 +1,5 @@
 """
-Tests for statistical correctness of MOIRAIS causal, survey, and inference modules.
+Tests for statistical correctness of MORIE causal, survey, and inference modules.
 
 These tests were written AFTER the following defects were corrected:
 
@@ -19,14 +19,14 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.causal import (
+from morie.causal import (
     calculate_ipw_weights,
     compute_propensity_scores,
     run_propensity_ipw_analysis,
 )
-from moirais.inference import bootstrap_ci, calculate_interaction_power
-from moirais.investigation import run_treatment_effects_analysis
-from moirais.survey import SurveyDesign
+from morie.inference import bootstrap_ci, calculate_interaction_power
+from morie.investigation import run_treatment_effects_analysis
+from morie.survey import SurveyDesign
 
 
 # ---------------------------------------------------------------------------

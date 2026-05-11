@@ -1,7 +1,7 @@
 """Tests for rng198.rangayyan_ch4_dot_product_discrete."""
 import numpy as np
 import pytest
-from moirais.fn.rng198 import rangayyan_ch4_dot_product_discrete
+from morie.fn.rng198 import rangayyan_ch4_dot_product_discrete
 
 
 def test_rng198_basic():

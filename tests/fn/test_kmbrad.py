@@ -1,7 +1,7 @@
 """Tests for kmbrad.kamath_bradley_terry_preference."""
 import numpy as np
 import pytest
-from moirais.fn.kmbrad import kamath_bradley_terry_preference
+from morie.fn.kmbrad import kamath_bradley_terry_preference
 
 
 def test_kmbrad_basic():

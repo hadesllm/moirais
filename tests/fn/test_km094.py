@@ -1,7 +1,7 @@
 """Tests for km094.kamath_ch6_debias_regularizer."""
 import numpy as np
 import pytest
-from moirais.fn.km094 import kamath_ch6_debias_regularizer
+from morie.fn.km094 import kamath_ch6_debias_regularizer
 
 
 def test_km094_basic():

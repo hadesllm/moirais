@@ -1,7 +1,7 @@
 """Tests for otmcluster.ot_clustering_w."""
 import numpy as np
 import pytest
-from moirais.fn.otmcluster import ot_clustering_w
+from morie.fn.otmcluster import ot_clustering_w
 
 
 def test_otmcluster_basic():

@@ -1,7 +1,7 @@
 """Test gdrel."""
 import numpy as np
 import pytest
-from moirais.fn.gdrel import gdrel
+from morie.fn.gdrel import gdrel
 
 
 def test_gdrel_basic():

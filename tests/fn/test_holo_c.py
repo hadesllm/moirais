@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.holo_c -- correlation heatmap."""
+"""Tests for morie.fn.holo_c -- correlation heatmap."""
 
 import numpy as np
 import pytest
@@ -6,7 +6,7 @@ import pytest
 plt = pytest.importorskip("matplotlib.pyplot")
 pd = pytest.importorskip("pandas")
 
-from moirais.fn.holo_c import holo_corr
+from morie.fn.holo_c import holo_corr
 
 
 class TestHoloCorr:

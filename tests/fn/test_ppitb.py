@@ -1,7 +1,7 @@
 """Test ppitb."""
 import numpy as np
 import pytest
-from moirais.fn.ppitb import ppitb
+from morie.fn.ppitb import ppitb
 
 
 def test_ppitb_basic():

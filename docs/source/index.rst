@@ -1,4 +1,4 @@
-MOIRAIS — Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation
+MORIE — Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation
 =======================================================
 
 .. image:: https://img.shields.io/badge/license-GPL--2.0-blue.svg
@@ -10,21 +10,21 @@ MOIRAIS — Methods for Observational Inference and Robust Analysis of Intervent
 .. image:: https://img.shields.io/badge/R-4.3%2B-276DC3.svg
    :alt: R 4.3+
 
-.. image:: https://img.shields.io/pypi/v/moirais.svg
-   :target: https://pypi.org/project/moirais/
+.. image:: https://img.shields.io/pypi/v/morie.svg
+   :target: https://pypi.org/project/morie/
    :alt: PyPI version
 
 .. image:: https://img.shields.io/badge/r--universe-hadesllm-276DC3
-   :target: https://hadesllm.r-universe.dev/moirais
+   :target: https://hadesllm.r-universe.dev/morie
    :alt: r-universe
 
 .. image:: https://img.shields.io/badge/Software_DOI-10.5281%2Fzenodo.20111233-blue
    :target: https://doi.org/10.5281/zenodo.20111233
    :alt: Software DOI 10.5281/zenodo.20111233
 
-.. image:: https://img.shields.io/badge/MOIRAIS_paper_DOI-10.5281%2Fzenodo.20096350-blue
+.. image:: https://img.shields.io/badge/MORIE_paper_DOI-10.5281%2Fzenodo.20096350-blue
    :target: https://doi.org/10.5281/zenodo.20096350
-   :alt: MOIRAIS paper DOI 10.5281/zenodo.20096350
+   :alt: MORIE paper DOI 10.5281/zenodo.20096350
 
 .. image:: https://img.shields.io/badge/MRM_paper_DOI-10.5281%2Fzenodo.20096075-blue
    :target: https://doi.org/10.5281/zenodo.20096075
@@ -49,59 +49,59 @@ Install via pip, Homebrew (forthcoming), or from source:
 
 .. code-block:: bash
 
-   pip install moirais # Python package (60+ built-in datasets)
-   pip install "moirais[interactive]" # + Terminal IDE (TUI) with textual
-   pip install "moirais[carbon]" # + CodeCarbon emissions (Python ≤3.14 only)
+   pip install morie # Python package (60+ built-in datasets)
+   pip install "morie[interactive]" # + Terminal IDE (TUI) with textual
+   pip install "morie[carbon]" # + CodeCarbon emissions (Python ≤3.14 only)
 
    # R package (from source)
-   install.packages("r-package/moirais", repos = NULL, type = "source")
+   install.packages("r-package/morie", repos = NULL, type = "source")
 
 Run your first analysis in seconds:
 
 .. code-block:: bash
 
    # Launch the Terminal IDE (multi-pane IDE)
-   moirais tui
+   morie tui
 
    # Self-diagnostics — checks LLM providers, datasets, R, Docker
-   moirais doctor
+   morie doctor
 
    # List all 60+ built-in datasets
-   moirais list-datasets
+   morie list-datasets
 
    # List all 23 analysis modules
-   moirais list-modules
+   morie list-modules
 
    # Run a single module against built-in data
-   moirais run-module power-design --output-dir /tmp/moirais-outputs
+   morie run-module power-design --output-dir /tmp/morie-outputs
 
    # Run the full pipeline (with enlighten progress bars)
-   moirais pipeline --all -y
+   morie pipeline --all -y
 
    # Start free AI chat (no API key needed)
-   moirais chat
+   morie chat
 
 From R:
 
 .. code-block:: r
 
-   library(moirais)
+   library(morie)
 
    # Load built-in dataset (DBI/RSQLite — no file paths needed)
-   cpads <- moirais_load_dataset("cpads_2021")
+   cpads <- morie_load_dataset("cpads_2021")
 
    # List all 60+ built-in datasets
-   moirais_list_datasets()
+   morie_list_datasets()
 
    # Browse dataset catalog
-   moirais_dataset_catalog()
+   morie_dataset_catalog()
 
    # Estimate average treatment effect
    ate <- estimate_ate(cpads, "outcome", "treatment", c("age", "sex"))
 
 ----
 
-What MOIRAIS does
+What MORIE does
 -----------------
 
 A unified Python + R interface across the following surfaces. See
@@ -173,12 +173,12 @@ for auto-generated function reference.
   60+ built-in datasets in a portable SQLite layer (Canadian
   carceral, police, and oversight + epidemiological reference data).
   Auto dataset-profiling for arbitrary tabular input
-  (``moirais.dataset.profile_dataset``).
+  (``morie.dataset.profile_dataset``).
 
-**Function namespace ``moirais.fn``**
+**Function namespace ``morie.fn``**
   36,000+ individual function files indexed by a registry, exposing
   short stable names for every estimator, every kernel,
-  every weight matrix, every test. Use ``moirais.fn.cheatsheet(name)``
+  every weight matrix, every test. Use ``morie.fn.cheatsheet(name)``
   for a per-function help card.
 
 **Federal SIU + Doob T-539-20 replication**
@@ -189,7 +189,7 @@ for auto-generated function reference.
   :doc:`methods/doob_trends`, :doc:`methods/siuiap`.
 
 **Toronto Police Service surface**
-  ``moirais.tps_*`` modules: incident I/O, CSI, neighbourhood
+  ``morie.tps_*`` modules: incident I/O, CSI, neighbourhood
   spatial / temporal analyses, Hawkes (basic + advanced),
   statistical physics, Hohl-style choropleths and proportional-symbol
   district maps. Companion paper at 10.5281/zenodo.20102198.
@@ -203,7 +203,7 @@ for auto-generated function reference.
 
 **Carbon-aware computing**
   Built-in pure-Python emissions tracker
-  (``moirais.emissions``) with 213-country IEA carbon-intensity
+  (``morie.emissions``) with 213-country IEA carbon-intensity
   data, per-module and pipeline-wide CO₂ accounting. CodeCarbon
   fallback on Python ≤ 3.14.
 
@@ -214,7 +214,7 @@ Key design principles
 
 *Lean terminal IDE.*
   Rich terminal output — progress bars, formatted ASCII tables, color-coded
-  diagnostics. Run entire pipelines from a single ``moirais`` command.
+  diagnostics. Run entire pipelines from a single ``morie`` command.
 
 *Python + R parity.*
   Every statistical estimator is implemented in both languages with matching
@@ -228,7 +228,7 @@ Key design principles
 *Data governance built-in.*
   Raw CPADS microdata lives in ``data/datasets/``. Wrangled cache in ``data/cache/``.
   Synthetic data (``generate_synthetic_data()``) is labeled synthetic in all
-  outputs. ``moirais verify`` (planned) will validate manifest output provenance.
+  outputs. ``morie verify`` (planned) will validate manifest output provenance.
 
 *Statistically rigorous.*
   Target estimand is always an explicit parameter (ATE vs ATT vs CATE — never
@@ -240,7 +240,7 @@ Key design principles
 Background
 ----------
 
-MOIRAIS is a multi-domain scientific computing toolkit for
+MORIE is a multi-domain scientific computing toolkit for
 observational inference. It sits between one-off research scripts
 and heavy enterprise analytics platforms, and is aimed at
 researchers who need:
@@ -270,7 +270,7 @@ The package ships 60+ built-in datasets (Canadian carceral, police,
 and oversight + epidemiological reference data) in a portable SQLite
 layer.
 
-MOIRAIS is licensed under GPL-2.0-only (Linus copyleft, deliberately
+MORIE is licensed under GPL-2.0-only (Linus copyleft, deliberately
 chosen over GPL-3.0 for compatibility with the broader
 Linux-kernel-style ecosystem). See ``LICENSE`` for the full text and
 ``LICENSING.md`` for the rationale.
@@ -287,7 +287,7 @@ navigation, every page on this site is listed below — top to bottom:
   have never opened a Python or R console before.
 - :doc:`install` — Installation instructions for Python, R, macOS,
   Linux, Windows, plus LLM provider setup.
-- :doc:`cli` — Reference for every ``moirais …`` subcommand.
+- :doc:`cli` — Reference for every ``morie …`` subcommand.
 - :doc:`methods/index` — Statistical-methods reference. Estimands,
   causal estimators, survey statistics, spatial methods, Hawkes
   processes, statistical physics of crime, OTIS / TPS / SIU

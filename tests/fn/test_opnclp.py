@@ -1,7 +1,7 @@
 """Tests for opnclp.open_clip."""
 import numpy as np
 import pytest
-from moirais.fn.opnclp import open_clip
+from morie.fn.opnclp import open_clip
 
 
 def test_opnclp_basic():

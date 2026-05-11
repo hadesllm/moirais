@@ -1,7 +1,7 @@
 """Tests for aitclri.aitchison_clr_inverse."""
 import numpy as np
 import pytest
-from moirais.fn.aitclri import aitchison_clr_inverse
+from morie.fn.aitclri import aitchison_clr_inverse
 
 
 def test_aitclri_basic():

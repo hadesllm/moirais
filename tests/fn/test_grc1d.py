@@ -1,7 +1,7 @@
 """Tests for grc1d.geron_causal_1d_cnn."""
 import numpy as np
 import pytest
-from moirais.fn.grc1d import geron_causal_1d_cnn
+from morie.fn.grc1d import geron_causal_1d_cnn
 
 
 def test_grc1d_basic():

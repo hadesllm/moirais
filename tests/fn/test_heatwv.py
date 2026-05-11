@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.heatwv import heat_wave_detect, heatwv
+from morie.fn.heatwv import heat_wave_detect, heatwv
 
 
 def test_heatwv_detects_single_episode():

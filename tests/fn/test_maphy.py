@@ -1,7 +1,7 @@
 """Test maphy."""
 import numpy as np
 import pytest
-from moirais.fn.maphy import maphy
+from morie.fn.maphy import maphy
 
 
 def test_maphy_basic():

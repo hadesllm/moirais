@@ -1,7 +1,7 @@
 """Test gefdi."""
 import numpy as np
 import pytest
-from moirais.fn.gefdi import gefdi
+from morie.fn.gefdi import gefdi
 
 
 def test_gefdi_basic():

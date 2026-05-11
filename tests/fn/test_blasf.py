@@ -1,7 +1,7 @@
 """Tests for blasf.bayesian_lasso_full."""
 import numpy as np
 import pytest
-from moirais.fn.blasf import bayesian_lasso_full
+from morie.fn.blasf import bayesian_lasso_full
 
 
 def test_blasf_basic():

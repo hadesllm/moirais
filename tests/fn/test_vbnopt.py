@@ -1,7 +1,7 @@
 """Tests for vbnopt.variational_inference."""
 import numpy as np
 import pytest
-from moirais.fn.vbnopt import variational_inference
+from morie.fn.vbnopt import variational_inference
 
 
 def test_vbnopt_basic():

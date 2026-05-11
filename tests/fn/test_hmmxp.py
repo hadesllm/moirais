@@ -1,7 +1,7 @@
 """Tests for hmmxp.geron_max_pool."""
 import numpy as np
 import pytest
-from moirais.fn.hmmxp import geron_max_pool
+from morie.fn.hmmxp import geron_max_pool
 
 
 def test_hmmxp_basic():

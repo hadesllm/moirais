@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.trprl import trapezoidal_integrate, trprl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.trprl import trapezoidal_integrate, trprl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTrapezoidalIntegrate:

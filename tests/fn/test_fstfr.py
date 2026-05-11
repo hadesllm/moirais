@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.fstfr -- Forensic Fst/theta."""
+"""Tests for morie.fn.fstfr -- Forensic Fst/theta."""
 
 import numpy as np
 import pytest
-from moirais.fn.fstfr import fstfr
+from morie.fn.fstfr import fstfr
 
 
 class TestFstfr:

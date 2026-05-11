@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.irm — Interactive Regression Model via DoubleML."""
+"""Tests for morie.fn.irm — Interactive Regression Model via DoubleML."""
 
 import numpy as np
 import pandas as pd
@@ -10,7 +10,7 @@ try:
 except ImportError:
     _HAS_DOUBLEML = False
 
-from moirais.fn.irm import estimate_irm
+from morie.fn.irm import estimate_irm
 
 pytestmark = pytest.mark.skipif(not _HAS_DOUBLEML, reason="DoubleML not installed")
 

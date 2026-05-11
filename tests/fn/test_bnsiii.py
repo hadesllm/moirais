@@ -1,7 +1,7 @@
 """Tests for bnsiii.bound_iii."""
 import numpy as np
 import pytest
-from moirais.fn.bnsiii import bound_iii
+from morie.fn.bnsiii import bound_iii
 
 
 def test_bnsiii_basic():

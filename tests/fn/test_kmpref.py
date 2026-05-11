@@ -1,7 +1,7 @@
 """Tests for kmpref.kamath_prefix_tuning."""
 import numpy as np
 import pytest
-from moirais.fn.kmpref import kamath_prefix_tuning
+from morie.fn.kmpref import kamath_prefix_tuning
 
 
 def test_kmpref_basic():

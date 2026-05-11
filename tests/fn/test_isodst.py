@@ -1,7 +1,7 @@
 """Tests for isodst.isotropy_distance_test."""
 import numpy as np
 import pytest
-from moirais.fn.isodst import isotropy_distance_test
+from morie.fn.isodst import isotropy_distance_test
 
 
 def test_isodst_basic():

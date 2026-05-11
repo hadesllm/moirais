@@ -1,7 +1,7 @@
 """Test vmsph."""
 import numpy as np
 import pytest
-from moirais.fn.vmsph import vmsph
+from morie.fn.vmsph import vmsph
 
 
 def test_vmsph_basic():

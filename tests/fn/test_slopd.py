@@ -1,7 +1,7 @@
 """Test slope_detect (slopd)."""
 import numpy as np
-from moirais.fn.slopd import slope_detect, slopd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.slopd import slope_detect, slopd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSlopeDetect:

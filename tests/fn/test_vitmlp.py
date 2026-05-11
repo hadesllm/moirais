@@ -1,7 +1,7 @@
 """Tests for vitmlp.vit_mlp_block."""
 import numpy as np
 import pytest
-from moirais.fn.vitmlp import vit_mlp_block
+from morie.fn.vitmlp import vit_mlp_block
 
 
 def test_vitmlp_basic():

@@ -1,7 +1,7 @@
 """Tests for grdpmf.geron_ddpm_forward_process."""
 import numpy as np
 import pytest
-from moirais.fn.grdpmf import geron_ddpm_forward_process
+from morie.fn.grdpmf import geron_ddpm_forward_process
 
 
 def test_grdpmf_basic():

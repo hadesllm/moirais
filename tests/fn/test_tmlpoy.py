@@ -1,7 +1,7 @@
 """Tests for tmlpoy.tmle_propensity_only."""
 import numpy as np
 import pytest
-from moirais.fn.tmlpoy import tmle_propensity_only
+from morie.fn.tmlpoy import tmle_propensity_only
 
 
 def test_tmlpoy_basic():

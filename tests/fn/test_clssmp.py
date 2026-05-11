@@ -1,7 +1,7 @@
 """Test clssmp."""
 import numpy as np
 import pytest
-from moirais.fn.clssmp import clssmp
+from morie.fn.clssmp import clssmp
 
 
 def test_clssmp_basic():

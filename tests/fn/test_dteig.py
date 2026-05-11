@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dteig."""
+"""Tests for morie.fn.dteig."""
 
 import numpy as np
 import pytest
-from moirais.fn.dteig import dteig
+from morie.fn.dteig import dteig
 
 
 class TestDteig:

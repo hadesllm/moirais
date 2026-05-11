@@ -1,7 +1,7 @@
 """Tests for tmlavp.tmle_average_predictiveness."""
 import numpy as np
 import pytest
-from moirais.fn.tmlavp import tmle_average_predictiveness
+from morie.fn.tmlavp import tmle_average_predictiveness
 
 
 def test_tmlavp_basic():

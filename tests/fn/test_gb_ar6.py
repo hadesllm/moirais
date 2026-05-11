@@ -1,7 +1,7 @@
 """Tests for gb_ar6.gibbons_are_unif."""
 import numpy as np
 import pytest
-from moirais.fn.gb_ar6 import gibbons_are_unif
+from morie.fn.gb_ar6 import gibbons_are_unif
 
 
 def test_gb_ar6_basic():

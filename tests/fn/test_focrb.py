@@ -1,7 +1,7 @@
 """Test focrb."""
 import numpy as np
 import pytest
-from moirais.fn.focrb import focrb
+from morie.fn.focrb import focrb
 
 
 def test_focrb_basic():

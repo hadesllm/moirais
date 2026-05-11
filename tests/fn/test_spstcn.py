@@ -1,7 +1,7 @@
 """Tests for spstcn.schabenberger_st_cov_nonsep."""
 import numpy as np
 import pytest
-from moirais.fn.spstcn import schabenberger_st_cov_nonsep
+from morie.fn.spstcn import schabenberger_st_cov_nonsep
 
 
 def test_spstcn_basic():

@@ -1,7 +1,7 @@
 """Test rskap."""
 import numpy as np
 import pytest
-from moirais.fn.rskap import rskap
+from morie.fn.rskap import rskap
 
 
 def test_rskap_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.survc — Survival concordance (C-index)."""
+"""Tests for morie.fn.survc — Survival concordance (C-index)."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.survc import survival_concordance
+from morie.fn.survc import survival_concordance
 
 
 class TestSurvivalConcordance:

@@ -1,7 +1,7 @@
 """Tests for reglmd.regression_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.reglmd import regression_estimator
+from morie.fn.reglmd import regression_estimator
 
 
 def test_reglmd_basic():

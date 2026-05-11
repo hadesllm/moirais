@@ -1,7 +1,7 @@
 """Tests for rgvf.rangayyan_vf_detect."""
 import numpy as np
 import pytest
-from moirais.fn.rgvf import rangayyan_vf_detect
+from morie.fn.rgvf import rangayyan_vf_detect
 
 
 def test_rgvf_basic():

@@ -1,7 +1,7 @@
 """Tests for rgsavg.rangayyan_sync_average."""
 import numpy as np
 import pytest
-from moirais.fn.rgsavg import rangayyan_sync_average
+from morie.fn.rgsavg import rangayyan_sync_average
 
 
 def test_rgsavg_basic():

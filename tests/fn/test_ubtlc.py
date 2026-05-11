@@ -1,7 +1,7 @@
 """Test ubtlc."""
 import numpy as np
 import pytest
-from moirais.fn.ubtlc import ubtlc
+from morie.fn.ubtlc import ubtlc
 
 
 def test_ubtlc_basic():

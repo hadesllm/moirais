@@ -1,7 +1,7 @@
 """Tests for rgpcgeeg.rangayyan_pcg_eeg_coupling."""
 import numpy as np
 import pytest
-from moirais.fn.rgpcgeeg import rangayyan_pcg_eeg_coupling
+from morie.fn.rgpcgeeg import rangayyan_pcg_eeg_coupling
 
 
 def test_rgpcgeeg_basic():

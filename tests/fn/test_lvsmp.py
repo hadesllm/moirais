@@ -1,7 +1,7 @@
 """Test lvsmp."""
 import numpy as np
 import pytest
-from moirais.fn.lvsmp import lvsmp
+from morie.fn.lvsmp import lvsmp
 
 
 def test_lvsmp_basic():

@@ -1,7 +1,7 @@
 """Test aflai."""
 import numpy as np
 import pytest
-from moirais.fn.aflai import aflai
+from morie.fn.aflai import aflai
 
 
 def test_aflai_basic():

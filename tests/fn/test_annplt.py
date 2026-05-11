@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.annplt -- annotated signal plot."""
+"""Tests for morie.fn.annplt -- annotated signal plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.annplt import annplt
+from morie.fn.annplt import annplt
 
 
 class TestAnnPlt:

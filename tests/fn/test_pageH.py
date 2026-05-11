@@ -1,7 +1,7 @@
 """Tests for pageH.page_hinkley."""
 import numpy as np
 import pytest
-from moirais.fn.pageH import page_hinkley
+from morie.fn.pageH import page_hinkley
 
 
 def test_pageH_basic():

@@ -1,7 +1,7 @@
 """Test vmswt."""
 import numpy as np
 import pytest
-from moirais.fn.vmswt import vmswt
+from morie.fn.vmswt import vmswt
 
 
 def test_vmswt_basic():

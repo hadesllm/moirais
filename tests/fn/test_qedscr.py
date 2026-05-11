@@ -1,7 +1,7 @@
 """Tests for qedscr.qed_drug_likeness."""
 import numpy as np
 import pytest
-from moirais.fn.qedscr import qed_drug_likeness
+from morie.fn.qedscr import qed_drug_likeness
 
 
 def test_qedscr_basic():

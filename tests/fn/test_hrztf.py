@@ -1,7 +1,7 @@
 """Tests for hrztf.horowitz_both_nonpar_transform."""
 import numpy as np
 import pytest
-from moirais.fn.hrztf import horowitz_both_nonpar_transform
+from morie.fn.hrztf import horowitz_both_nonpar_transform
 
 
 def test_hrztf_basic():

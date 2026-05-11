@@ -1,7 +1,7 @@
 """Tests for tmlcom.tmle_compositional."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcom import tmle_compositional
+from morie.fn.tmlcom import tmle_compositional
 
 
 def test_tmlcom_basic():

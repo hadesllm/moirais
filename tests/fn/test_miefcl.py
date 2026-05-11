@@ -1,7 +1,7 @@
 """Tests for miefcl.multiple_imputation_combine."""
 import numpy as np
 import pytest
-from moirais.fn.miefcl import multiple_imputation_combine
+from morie.fn.miefcl import multiple_imputation_combine
 
 
 def test_miefcl_basic():

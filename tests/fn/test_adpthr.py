@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.adpthr — adaptive threshold detection."""
+"""Tests for morie.fn.adpthr — adaptive threshold detection."""
 import numpy as np
 import pytest
 
-from moirais.fn.adpthr import adaptive_threshold_detect, adpthr
+from morie.fn.adpthr import adaptive_threshold_detect, adpthr
 
 
 def test_no_detections_in_noise():

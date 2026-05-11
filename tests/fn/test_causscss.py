@@ -1,7 +1,7 @@
 """Tests for causscss.causal_synthetic_subset."""
 import numpy as np
 import pytest
-from moirais.fn.causscss import causal_synthetic_subset
+from morie.fn.causscss import causal_synthetic_subset
 
 
 def test_causscss_basic():

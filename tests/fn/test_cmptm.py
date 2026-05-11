@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cmptm — compliance timeline."""
+"""Tests for morie.fn.cmptm — compliance timeline."""
 
 import pytest
 import pandas as pd
-from moirais.fn.cmptm import compliance_timeline
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cmptm import compliance_timeline
+from morie.fn._containers import DescriptiveResult
 
 
 class TestComplianceTimeline:

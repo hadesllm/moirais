@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.stdd -- Staggered DiD."""
+"""Tests for morie.fn.stdd -- Staggered DiD."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.stdd import staggered_did, stdd
-from moirais.fn._containers import ESRes
+from morie.fn.stdd import staggered_did, stdd
+from morie.fn._containers import ESRes
 
 
 def _make_panel(n_units=20, n_times=10, treat_effect=3.0, seed=42):

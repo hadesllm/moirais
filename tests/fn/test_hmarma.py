@@ -1,7 +1,7 @@
 """Tests for hmarma.geron_arma."""
 import numpy as np
 import pytest
-from moirais.fn.hmarma import geron_arma
+from morie.fn.hmarma import geron_arma
 
 
 def test_hmarma_basic():

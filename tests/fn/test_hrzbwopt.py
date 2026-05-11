@@ -1,7 +1,7 @@
 """Tests for hrzbwopt.horowitz_optimal_bandwidth_kde."""
 import numpy as np
 import pytest
-from moirais.fn.hrzbwopt import horowitz_optimal_bandwidth_kde
+from morie.fn.hrzbwopt import horowitz_optimal_bandwidth_kde
 
 
 def test_hrzbwopt_basic():

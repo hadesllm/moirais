@@ -1,7 +1,7 @@
 """Tests for sgdmom.sgd_momentum."""
 import numpy as np
 import pytest
-from moirais.fn.sgdmom import sgd_momentum
+from morie.fn.sgdmom import sgd_momentum
 
 
 def test_sgdmom_basic():

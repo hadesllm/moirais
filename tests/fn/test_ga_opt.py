@@ -1,7 +1,7 @@
 """Tests for ga_opt.genetic_algorithm."""
 import numpy as np
 import pytest
-from moirais.fn.ga_opt import genetic_algorithm
+from morie.fn.ga_opt import genetic_algorithm
 
 
 def test_ga_opt_basic():

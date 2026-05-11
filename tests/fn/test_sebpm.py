@@ -1,7 +1,7 @@
 """Test sebpm."""
 import numpy as np
 import pytest
-from moirais.fn.sebpm import sebpm
+from morie.fn.sebpm import sebpm
 
 
 def test_sebpm_basic():

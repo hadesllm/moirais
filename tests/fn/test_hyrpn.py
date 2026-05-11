@@ -1,7 +1,7 @@
 """Test hyrpn."""
 import numpy as np
 import pytest
-from moirais.fn.hyrpn import hyrpn
+from morie.fn.hyrpn import hyrpn
 
 
 def test_hyrpn_basic():

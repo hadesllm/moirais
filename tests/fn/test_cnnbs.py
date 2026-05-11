@@ -1,7 +1,7 @@
 """Tests for cnnbs.py - 1D CNN for biosignals."""
 import numpy as np
 import pytest
-from moirais.fn.cnnbs import cnnbs_fn, cnnbs
+from morie.fn.cnnbs import cnnbs_fn, cnnbs
 
 
 def test_cnnbs_returns_descriptive_result():

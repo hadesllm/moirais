@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rcprd -- predicted choice."""
+"""Tests for morie.fn.rcprd -- predicted choice."""
 
 import numpy as np
-from moirais.fn.rcprd import predicted_choice, rcprd
+from morie.fn.rcprd import predicted_choice, rcprd
 
 
 def test_rcprd_smoke():

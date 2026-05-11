@@ -1,7 +1,7 @@
 """Test grwsp."""
 import numpy as np
 import pytest
-from moirais.fn.grwsp import grwsp
+from morie.fn.grwsp import grwsp
 
 
 def test_grwsp_basic():

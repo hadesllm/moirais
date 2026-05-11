@@ -1,7 +1,7 @@
 """Tests for hmenet.geron_elastic_net."""
 import numpy as np
 import pytest
-from moirais.fn.hmenet import geron_elastic_net
+from morie.fn.hmenet import geron_elastic_net
 
 
 def test_hmenet_basic():

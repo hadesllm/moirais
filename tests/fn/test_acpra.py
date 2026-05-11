@@ -1,7 +1,7 @@
 """Tests for acpra.acceptance_rate_diagnostic."""
 import numpy as np
 import pytest
-from moirais.fn.acpra import acceptance_rate_diagnostic
+from morie.fn.acpra import acceptance_rate_diagnostic
 
 
 def test_acpra_basic():

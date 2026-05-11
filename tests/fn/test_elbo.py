@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.elbo -- ELBO computation."""
+"""Tests for morie.fn.elbo -- ELBO computation."""
 
 import numpy as np
-from moirais.fn.elbo import compute_elbo
+from morie.fn.elbo import compute_elbo
 
 
 def test_returns_dict():

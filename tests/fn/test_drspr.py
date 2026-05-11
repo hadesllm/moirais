@@ -1,7 +1,7 @@
 """Tests for drspr.dr_spillover."""
 import numpy as np
 import pytest
-from moirais.fn.drspr import dr_spillover
+from morie.fn.drspr import dr_spillover
 
 
 def test_drspr_basic():

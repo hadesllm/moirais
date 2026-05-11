@@ -1,7 +1,7 @@
 """Tests for rgpark.rangayyan_parkinson_multimodal."""
 import numpy as np
 import pytest
-from moirais.fn.rgpark import rangayyan_parkinson_multimodal
+from morie.fn.rgpark import rangayyan_parkinson_multimodal
 
 
 def test_rgpark_basic():

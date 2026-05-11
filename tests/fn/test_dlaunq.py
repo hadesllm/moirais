@@ -1,7 +1,7 @@
 """Test dlaunq."""
 import numpy as np
 import pytest
-from moirais.fn.dlaunq import dlaunq
+from morie.fn.dlaunq import dlaunq
 
 
 def test_dlaunq_basic():

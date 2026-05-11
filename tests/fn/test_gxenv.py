@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gxenv -- Gene-by-environment interaction."""
+"""Tests for morie.fn.gxenv -- Gene-by-environment interaction."""
 
 import numpy as np
 import pytest
-from moirais.fn.gxenv import gxenv
+from morie.fn.gxenv import gxenv
 
 
 class TestGxenv:

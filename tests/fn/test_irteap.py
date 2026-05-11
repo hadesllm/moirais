@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.irteap — EAP theta estimation."""
+"""Tests for morie.fn.irteap — EAP theta estimation."""
 
 import numpy as np
 import pytest
-from moirais.fn.irteap import irt_eap_theta
+from morie.fn.irteap import irt_eap_theta
 
 
 class TestIrtEapTheta:

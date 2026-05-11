@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.coefv import coefficient_of_variation, coefv
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.coefv import coefficient_of_variation, coefv
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCoefficientOfVariation:

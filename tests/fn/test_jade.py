@@ -1,7 +1,7 @@
 """Test jade_ica (jade)."""
 import numpy as np
-from moirais.fn.jade import jade_ica, jade
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.jade import jade_ica, jade
+from morie.fn._containers import DescriptiveResult
 
 
 class TestJade:

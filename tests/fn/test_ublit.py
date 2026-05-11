@@ -1,7 +1,7 @@
 """Test ublit."""
 import numpy as np
 import pytest
-from moirais.fn.ublit import ublit
+from morie.fn.ublit import ublit
 
 
 def test_ublit_basic():

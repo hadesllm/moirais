@@ -1,7 +1,7 @@
 """Tests for secaead.aead_chacha20poly1305."""
 import numpy as np
 import pytest
-from moirais.fn.secaead import aead_chacha20poly1305
+from morie.fn.secaead import aead_chacha20poly1305
 
 
 def test_secaead_basic():

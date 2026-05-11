@@ -1,7 +1,7 @@
 """Tests for rng210.rangayyan_ch4_noise_psd_at_output."""
 import numpy as np
 import pytest
-from moirais.fn.rng210 import rangayyan_ch4_noise_psd_at_output
+from morie.fn.rng210 import rangayyan_ch4_noise_psd_at_output
 
 
 def test_rng210_basic():

@@ -1,7 +1,7 @@
 """Tests for vit2lf.vit2_log_attention."""
 import numpy as np
 import pytest
-from moirais.fn.vit2lf import vit2_log_attention
+from morie.fn.vit2lf import vit2_log_attention
 
 
 def test_vit2lf_basic():

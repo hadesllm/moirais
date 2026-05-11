@@ -1,7 +1,7 @@
 """Tests for grvots.geron_soft_voting."""
 import numpy as np
 import pytest
-from moirais.fn.grvots import geron_soft_voting
+from morie.fn.grvots import geron_soft_voting
 
 
 def test_grvots_basic():

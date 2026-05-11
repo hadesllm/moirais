@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.coxsn -- Cox-Snell residuals."""
+"""Tests for morie.fn.coxsn -- Cox-Snell residuals."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.coxsn import coxsn
+from morie.fn.coxsn import coxsn
 
 
 @pytest.fixture()
@@ -40,5 +40,5 @@ def test_residuals_nonneg(cox_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.coxsn import cheatsheet
+    from morie.fn.coxsn import cheatsheet
     assert "cox" in cheatsheet().lower()

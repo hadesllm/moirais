@@ -1,7 +1,7 @@
 """Tests for medML.ml_mediation_dml."""
 import numpy as np
 import pytest
-from moirais.fn.medML import ml_mediation_dml
+from morie.fn.medML import ml_mediation_dml
 
 
 def test_medML_basic():

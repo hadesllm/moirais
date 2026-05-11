@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bnpar -- Dirichlet process density."""
+"""Tests for morie.fn.bnpar -- Dirichlet process density."""
 
 import numpy as np
-from moirais.fn.bnpar import dp_density
+from morie.fn.bnpar import dp_density
 
 
 def test_returns_dict():

@@ -1,7 +1,7 @@
 """Tests for maorw.ma_orwin_fsn."""
 import numpy as np
 import pytest
-from moirais.fn.maorw import ma_orwin_fsn
+from morie.fn.maorw import ma_orwin_fsn
 
 
 def test_maorw_basic():

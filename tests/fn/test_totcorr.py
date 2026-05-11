@@ -1,7 +1,7 @@
 """Tests for totcorr.total_correlation."""
 import numpy as np
 import pytest
-from moirais.fn.totcorr import total_correlation
+from morie.fn.totcorr import total_correlation
 
 
 def test_totcorr_basic():

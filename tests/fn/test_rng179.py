@@ -1,7 +1,7 @@
 """Tests for rng179.rangayyan_ch4_filtered_derivative_murthy."""
 import numpy as np
 import pytest
-from moirais.fn.rng179 import rangayyan_ch4_filtered_derivative_murthy
+from morie.fn.rng179 import rangayyan_ch4_filtered_derivative_murthy
 
 
 def test_rng179_basic():

@@ -1,7 +1,7 @@
 """Test wqfe."""
 import numpy as np
 import pytest
-from moirais.fn.wqfe import wqfe
+from morie.fn.wqfe import wqfe
 
 
 def test_wqfe_basic():

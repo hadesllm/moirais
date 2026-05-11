@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zerke -- Risk exceedance probability"""
+"""Tests for morie.fn.zerke -- Risk exceedance probability"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zerke import risk_exceedance
+from morie.fn.zerke import risk_exceedance
 
 
 class TestRiskExceedance:

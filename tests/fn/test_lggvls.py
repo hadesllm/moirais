@@ -1,7 +1,7 @@
 """Tests for lggvls.laggedval_iptw."""
 import numpy as np
 import pytest
-from moirais.fn.lggvls import laggedval_iptw
+from morie.fn.lggvls import laggedval_iptw
 
 
 def test_lggvls_basic():

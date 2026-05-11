@@ -1,7 +1,7 @@
 """Tests for ramsw.ramsay_weight."""
 import numpy as np
 import pytest
-from moirais.fn.ramsw import ramsay_weight
+from morie.fn.ramsw import ramsay_weight
 
 
 def test_ramsw_basic():

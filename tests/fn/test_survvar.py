@@ -1,7 +1,7 @@
 """Tests for survvar.variance_cox_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.survvar import variance_cox_estimator
+from morie.fn.survvar import variance_cox_estimator
 
 
 def test_survvar_basic():

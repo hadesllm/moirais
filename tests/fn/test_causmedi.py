@@ -1,7 +1,7 @@
 """Tests for causmedi.causal_mediation_imai."""
 import numpy as np
 import pytest
-from moirais.fn.causmedi import causal_mediation_imai
+from morie.fn.causmedi import causal_mediation_imai
 
 
 def test_causmedi_basic():

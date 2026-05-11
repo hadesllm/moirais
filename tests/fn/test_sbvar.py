@@ -1,7 +1,7 @@
 """Tests for sbvar."""
 import numpy as np
 import pytest
-from moirais.fn.sbvar import sbvar
+from morie.fn.sbvar import sbvar
 
 
 def test_sbvar_basic():
@@ -27,5 +27,5 @@ def test_sbvar_no_data():
 
 
 def test_sbvar_alias():
-    from moirais.fn.sbvar import sbvar
+    from morie.fn.sbvar import sbvar
     assert sbvar is sbvar

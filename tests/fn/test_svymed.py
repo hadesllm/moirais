@@ -1,7 +1,7 @@
 """Tests for svymed.survey_median."""
 import numpy as np
 import pytest
-from moirais.fn.svymed import survey_median
+from morie.fn.svymed import survey_median
 
 
 def test_svymed_basic():

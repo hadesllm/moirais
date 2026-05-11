@@ -1,7 +1,7 @@
 """Tests for tmlpoo.tmle_pooled."""
 import numpy as np
 import pytest
-from moirais.fn.tmlpoo import tmle_pooled
+from morie.fn.tmlpoo import tmle_pooled
 
 
 def test_tmlpoo_basic():

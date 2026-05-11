@@ -1,7 +1,7 @@
 """Tests for madsc.mad_scale."""
 import numpy as np
 import pytest
-from moirais.fn.madsc import mad_scale
+from morie.fn.madsc import mad_scale
 
 
 def test_madsc_basic():

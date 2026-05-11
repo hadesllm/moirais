@@ -1,6 +1,6 @@
 """Test nmmds."""
 import numpy as np
-from moirais.fn.nmmds import nonmetric_mds
+from morie.fn.nmmds import nonmetric_mds
 
 
 def test_nmmds_basic():

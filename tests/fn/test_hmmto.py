@@ -1,7 +1,7 @@
 """Tests for hmmto.geron_multioutput."""
 import numpy as np
 import pytest
-from moirais.fn.hmmto import geron_multioutput
+from morie.fn.hmmto import geron_multioutput
 
 
 def test_hmmto_basic():

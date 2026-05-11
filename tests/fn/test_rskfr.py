@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rskfr — risk fairness."""
+"""Tests for morie.fn.rskfr — risk fairness."""
 
 import pandas as pd
-from moirais.fn.rskfr import risk_fairness, rskfr
+from morie.fn.rskfr import risk_fairness, rskfr
 
 
 class TestRiskFairness:

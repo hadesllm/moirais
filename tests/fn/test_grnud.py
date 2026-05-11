@@ -1,7 +1,7 @@
 """Tests for grnud.geron_numerical_differentiation."""
 import numpy as np
 import pytest
-from moirais.fn.grnud import geron_numerical_differentiation
+from morie.fn.grnud import geron_numerical_differentiation
 
 
 def test_grnud_basic():

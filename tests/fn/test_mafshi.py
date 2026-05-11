@@ -1,7 +1,7 @@
 """Tests for mafshi.ma_fishers_z_inverse."""
 import numpy as np
 import pytest
-from moirais.fn.mafshi import ma_fishers_z_inverse
+from morie.fn.mafshi import ma_fishers_z_inverse
 
 
 def test_mafshi_basic():

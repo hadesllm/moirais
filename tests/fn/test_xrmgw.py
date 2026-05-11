@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrmgw -- MGWR estimation"""
+"""Tests for morie.fn.xrmgw -- MGWR estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrmgw import mgwr_estimate
+from morie.fn.xrmgw import mgwr_estimate
 
 
 class TestMgwrEstimate:

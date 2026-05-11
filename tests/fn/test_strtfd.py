@@ -1,7 +1,7 @@
 """Tests for strtfd.stratified_design."""
 import numpy as np
 import pytest
-from moirais.fn.strtfd import stratified_design
+from morie.fn.strtfd import stratified_design
 
 
 def test_strtfd_basic():

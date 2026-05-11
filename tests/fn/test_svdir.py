@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.svdir."""
+"""Tests for morie.fn.svdir."""
 
 import numpy as np
 import pytest
-from moirais.fn.svdir import svdir
+from morie.fn.svdir import svdir
 
 
 class TestSvdir:

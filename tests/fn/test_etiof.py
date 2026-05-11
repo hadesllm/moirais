@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.etiof — Etiologic fraction."""
+"""Tests for morie.fn.etiof — Etiologic fraction."""
 
 import pytest
 
-from moirais.fn.etiof import etiologic_fraction
+from morie.fn.etiof import etiologic_fraction
 
 
 class TestEtiologicFraction:

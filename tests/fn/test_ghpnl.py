@@ -1,7 +1,7 @@
 """Test ghpnl."""
 import numpy as np
 import pytest
-from moirais.fn.ghpnl import ghpnl
+from morie.fn.ghpnl import ghpnl
 
 
 def test_ghpnl_basic():

@@ -5,7 +5,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.fn.ndvix import ndvi_exposure_rr, ndvix
+from morie.fn.ndvix import ndvi_exposure_rr, ndvix
 
 
 def test_ndvix_reference_gives_rr_one():

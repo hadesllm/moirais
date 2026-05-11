@@ -1,7 +1,7 @@
 """Tests for emdtsm.emd_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.emdtsm import emd_decomposition
+from morie.fn.emdtsm import emd_decomposition
 
 
 def test_emdtsm_basic():

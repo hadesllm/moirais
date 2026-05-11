@@ -1,7 +1,7 @@
 """Tests for icc12c.icc_two_way."""
 import numpy as np
 import pytest
-from moirais.fn.icc12c import icc_two_way
+from morie.fn.icc12c import icc_two_way
 
 
 def test_icc12c_basic():

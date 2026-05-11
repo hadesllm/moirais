@@ -1,7 +1,7 @@
 """Tests for hmcatt.geron_cross_attention."""
 import numpy as np
 import pytest
-from moirais.fn.hmcatt import geron_cross_attention
+from morie.fn.hmcatt import geron_cross_attention
 
 
 def test_hmcatt_basic():

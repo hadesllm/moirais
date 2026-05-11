@@ -1,7 +1,7 @@
 """Tests for smigr.smiles_grammar_parse."""
 import numpy as np
 import pytest
-from moirais.fn.smigr import smiles_grammar_parse
+from morie.fn.smigr import smiles_grammar_parse
 
 
 def test_smigr_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.zcrdt — zero-crossing rate detection."""
+"""Tests for morie.fn.zcrdt — zero-crossing rate detection."""
 import numpy as np
 import pytest
 
-from moirais.fn.zcrdt import zcr_detect, zcrdt
+from morie.fn.zcrdt import zcr_detect, zcrdt
 
 
 def test_sine_zcr():

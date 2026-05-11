@@ -1,7 +1,7 @@
 """Test vmmap."""
 import numpy as np
 import pytest
-from moirais.fn.vmmap import vmmap
+from morie.fn.vmmap import vmmap
 
 
 def test_vmmap_basic():

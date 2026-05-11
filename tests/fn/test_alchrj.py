@@ -1,7 +1,7 @@
 """Tests for alchrj.alammar_chosen_rejected_template."""
 import numpy as np
 import pytest
-from moirais.fn.alchrj import alammar_chosen_rejected_template
+from morie.fn.alchrj import alammar_chosen_rejected_template
 
 
 def test_alchrj_basic():

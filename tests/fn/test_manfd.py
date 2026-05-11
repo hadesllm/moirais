@@ -1,7 +1,7 @@
 """Tests for manfd.manifold_functional."""
 import numpy as np
 import pytest
-from moirais.fn.manfd import manifold_functional
+from morie.fn.manfd import manifold_functional
 
 
 def test_manfd_basic():

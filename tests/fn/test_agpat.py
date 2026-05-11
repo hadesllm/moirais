@@ -1,7 +1,7 @@
 """Test agpat."""
 import numpy as np
 import pytest
-from moirais.fn.agpat import agpat
+from morie.fn.agpat import agpat
 
 
 def test_agpat_basic():

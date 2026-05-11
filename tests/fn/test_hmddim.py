@@ -1,7 +1,7 @@
 """Tests for hmddim.geron_ddim."""
 import numpy as np
 import pytest
-from moirais.fn.hmddim import geron_ddim
+from morie.fn.hmddim import geron_ddim
 
 
 def test_hmddim_basic():

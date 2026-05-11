@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.clist — cache list."""
+"""Tests for morie.fn.clist — cache list."""
 
 import pandas as pd
 import pytest
 
-from moirais.fn.clist import clist, cache_list
-from moirais.fn.cstor import cstor
+from morie.fn.clist import clist, cache_list
+from morie.fn.cstor import cstor
 
 
 def test_alias_is_same_function():
@@ -13,11 +13,11 @@ def test_alias_is_same_function():
 
 
 def test_empty_db_has_metadata_only(tmp_path):
-    """A fresh cache DB has only the _moirais_metadata table."""
+    """A fresh cache DB has only the _morie_metadata table."""
     db = tmp_path / "empty.db"
     result = clist(db)
     tables = [r["table"] for r in result]
-    assert "_moirais_metadata" in tables
+    assert "_morie_metadata" in tables
 
 
 def test_lists_stored_tables(tmp_path):

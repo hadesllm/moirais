@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.i2 -- Higgins' I-squared heterogeneity."""
+"""Tests for morie.fn.i2 -- Higgins' I-squared heterogeneity."""
 
 import pytest
-from moirais.fn.i2 import i_squared
+from morie.fn.i2 import i_squared
 
 
 class TestISquared:

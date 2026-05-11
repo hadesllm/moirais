@@ -1,7 +1,7 @@
 """Test dtbvp."""
 import numpy as np
 import pytest
-from moirais.fn.dtbvp import dtbvp
+from morie.fn.dtbvp import dtbvp
 
 
 def test_dtbvp_basic():

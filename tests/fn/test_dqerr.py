@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dqerr — dequantization error metrics."""
+"""Tests for morie.fn.dqerr — dequantization error metrics."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dqerr import dequant_error
+from morie.fn.dqerr import dequant_error
 
 
 class TestDequantError:

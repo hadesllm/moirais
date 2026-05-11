@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tmle — Targeted Minimum Loss-Based Estimation."""
+"""Tests for morie.fn.tmle — Targeted Minimum Loss-Based Estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tmle import tmle
+from morie.fn.tmle import tmle
 
 
 @pytest.fixture()

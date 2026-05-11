@@ -1,7 +1,7 @@
 """Test opcko."""
 import numpy as np
 import pytest
-from moirais.fn.opcko import opcko
+from morie.fn.opcko import opcko
 
 
 def test_opcko_basic():

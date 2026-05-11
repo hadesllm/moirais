@@ -1,7 +1,7 @@
 """Test vmmad."""
 import numpy as np
 import pytest
-from moirais.fn.vmmad import vmmad
+from morie.fn.vmmad import vmmad
 
 
 def test_vmmad_basic():

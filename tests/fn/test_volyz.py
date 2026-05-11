@@ -1,7 +1,7 @@
 """Tests for volyz.vol_yang_zhang."""
 import numpy as np
 import pytest
-from moirais.fn.volyz import vol_yang_zhang
+from morie.fn.volyz import vol_yang_zhang
 
 
 def test_volyz_basic():

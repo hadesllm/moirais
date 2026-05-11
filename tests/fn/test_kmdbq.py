@@ -1,7 +1,7 @@
 """Tests for kmdbq.kamath_double_quantization."""
 import numpy as np
 import pytest
-from moirais.fn.kmdbq import kamath_double_quantization
+from morie.fn.kmdbq import kamath_double_quantization
 
 
 def test_kmdbq_basic():

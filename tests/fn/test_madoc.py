@@ -1,7 +1,7 @@
 """Test madoc."""
 import numpy as np
 import pytest
-from moirais.fn.madoc import madoc
+from morie.fn.madoc import madoc
 
 
 def test_madoc_basic():

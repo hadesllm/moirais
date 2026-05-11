@@ -1,7 +1,7 @@
 """Tests for zfmech.z_dp_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.zfmech import z_dp_mechanism
+from morie.fn.zfmech import z_dp_mechanism
 
 
 def test_zfmech_basic():

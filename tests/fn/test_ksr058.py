@@ -1,7 +1,7 @@
 """Tests for ksr058.kosorok_ch2_law_iterated_logarithm."""
 import numpy as np
 import pytest
-from moirais.fn.ksr058 import kosorok_ch2_law_iterated_logarithm
+from morie.fn.ksr058 import kosorok_ch2_law_iterated_logarithm
 
 
 def test_ksr058_basic():

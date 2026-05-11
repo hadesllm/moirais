@@ -1,7 +1,7 @@
 """Test gefin."""
 import numpy as np
 import pytest
-from moirais.fn.gefin import gefin
+from morie.fn.gefin import gefin
 
 
 def test_gefin_basic():

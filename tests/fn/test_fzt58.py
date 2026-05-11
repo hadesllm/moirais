@@ -1,7 +1,7 @@
 """Tests for fzt58.fauzi_thm5_8_smoothed_convergence."""
 import numpy as np
 import pytest
-from moirais.fn.fzt58 import fauzi_thm5_8_smoothed_convergence
+from morie.fn.fzt58 import fauzi_thm5_8_smoothed_convergence
 
 
 def test_fzt58_basic():

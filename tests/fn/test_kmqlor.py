@@ -1,7 +1,7 @@
 """Tests for kmqlor.kamath_qlora_4bit."""
 import numpy as np
 import pytest
-from moirais.fn.kmqlor import kamath_qlora_4bit
+from morie.fn.kmqlor import kamath_qlora_4bit
 
 
 def test_kmqlor_basic():

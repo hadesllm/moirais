@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.stdif."""
+"""Tests for morie.fn.stdif."""
 import numpy as np
-from moirais.fn.stdif import spatial_did
+from morie.fn.stdif import spatial_did
 
 
 def test_stdif_smoke():
@@ -17,7 +17,7 @@ def test_stdif_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.stdif import cheatsheet
+    from morie.fn.stdif import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

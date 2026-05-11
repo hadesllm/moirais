@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ocomp — OTIS group comparison."""
+"""Tests for morie.fn.ocomp — OTIS group comparison."""
 
-from moirais.fn.ocomp import otis_group_compare
+from morie.fn.ocomp import otis_group_compare
 
 
 class TestOtisGroupCompare:

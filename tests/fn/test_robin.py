@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.robin -- Winsorized mean."""
+"""Tests for morie.fn.robin -- Winsorized mean."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.robin import winsorized_mean, robin
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.robin import winsorized_mean, robin
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRobin:

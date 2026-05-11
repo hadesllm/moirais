@@ -1,7 +1,7 @@
 """Tests for shrt.shortest_path_dijkstra."""
 import numpy as np
 import pytest
-from moirais.fn.shrt import shortest_path_dijkstra
+from morie.fn.shrt import shortest_path_dijkstra
 
 
 def test_shrt_basic():

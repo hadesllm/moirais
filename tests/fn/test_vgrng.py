@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgrng -- Effective range estimation"""
+"""Tests for morie.fn.vgrng -- Effective range estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgrng import range_est
+from morie.fn.vgrng import range_est
 
 
 class TestRangeEst:

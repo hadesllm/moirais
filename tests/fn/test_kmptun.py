@@ -1,7 +1,7 @@
 """Tests for kmptun.kamath_prompt_tuning."""
 import numpy as np
 import pytest
-from moirais.fn.kmptun import kamath_prompt_tuning
+from morie.fn.kmptun import kamath_prompt_tuning
 
 
 def test_kmptun_basic():

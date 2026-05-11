@@ -1,7 +1,7 @@
 """Tests for coxtmv.cox_time_varying."""
 import numpy as np
 import pytest
-from moirais.fn.coxtmv import cox_time_varying
+from morie.fn.coxtmv import cox_time_varying
 
 
 def test_coxtmv_basic():

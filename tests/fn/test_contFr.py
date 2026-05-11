@@ -1,7 +1,7 @@
 """Tests for contFr.continued_fraction."""
 import numpy as np
 import pytest
-from moirais.fn.contFr import continued_fraction
+from morie.fn.contFr import continued_fraction
 
 
 def test_contFr_basic():

@@ -1,7 +1,7 @@
 """Test gcveg."""
 import numpy as np
 import pytest
-from moirais.fn.gcveg import gcveg
+from morie.fn.gcveg import gcveg
 
 
 def test_gcveg_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qbet — beta quantile function."""
+"""Tests for morie.fn.qbet — beta quantile function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qbet import qbeta
+from morie.fn.qbet import qbeta
 
 
 class TestQbeta:

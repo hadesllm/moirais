@@ -1,7 +1,7 @@
 """Test optrs."""
 import numpy as np
 import pytest
-from moirais.fn.optrs import optrs
+from morie.fn.optrs import optrs
 
 
 def test_optrs_basic():

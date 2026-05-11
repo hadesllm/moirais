@@ -1,8 +1,8 @@
 """Test bkz_reduce."""
 import numpy as np
 import pytest
-from moirais.fn.bkz import bkz_reduce
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bkz import bkz_reduce
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBkzReduce:

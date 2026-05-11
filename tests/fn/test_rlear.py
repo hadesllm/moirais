@@ -1,7 +1,7 @@
 """Tests for rlear.r_learner."""
 import numpy as np
 import pytest
-from moirais.fn.rlear import r_learner
+from morie.fn.rlear import r_learner
 
 
 def test_rlear_basic():

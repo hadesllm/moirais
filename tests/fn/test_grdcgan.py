@@ -1,7 +1,7 @@
 """Tests for grdcgan.geron_dcgan_generator."""
 import numpy as np
 import pytest
-from moirais.fn.grdcgan import geron_dcgan_generator
+from morie.fn.grdcgan import geron_dcgan_generator
 
 
 def test_grdcgan_basic():

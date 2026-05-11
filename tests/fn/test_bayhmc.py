@@ -1,7 +1,7 @@
 """Tests for bayhmc.hmc_dual_avg."""
 import numpy as np
 import pytest
-from moirais.fn.bayhmc import hmc_dual_avg
+from morie.fn.bayhmc import hmc_dual_avg
 
 
 def test_bayhmc_basic():

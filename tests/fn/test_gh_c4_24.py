@@ -1,7 +1,7 @@
 """Tests for gh_c4_24.ghosal_bayes_boot."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c4_24 import ghosal_bayes_boot
+from morie.fn.gh_c4_24 import ghosal_bayes_boot
 
 
 def test_gh_c4_24_basic():

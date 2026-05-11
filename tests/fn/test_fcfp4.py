@@ -1,7 +1,7 @@
 """Tests for fcfp4.fcfp_4_fingerprint."""
 import numpy as np
 import pytest
-from moirais.fn.fcfp4 import fcfp_4_fingerprint
+from morie.fn.fcfp4 import fcfp_4_fingerprint
 
 
 def test_fcfp4_basic():

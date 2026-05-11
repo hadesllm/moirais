@@ -1,7 +1,7 @@
 """Tests for tbnbnd."""
 import numpy as np
 import pytest
-from moirais.fn.tbnbnd import tbnbnd
+from morie.fn.tbnbnd import tbnbnd
 
 
 def test_tbnbnd_basic():
@@ -27,5 +27,5 @@ def test_tbnbnd_no_data():
 
 
 def test_tbnbnd_alias():
-    from moirais.fn.tbnbnd import tbnbnd
+    from morie.fn.tbnbnd import tbnbnd
     assert tbnbnd is tbnbnd

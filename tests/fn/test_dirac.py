@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dirac -- Dirac equation."""
+"""Tests for morie.fn.dirac -- Dirac equation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dirac import dirac
+from morie.fn.dirac import dirac
 
 
 def test_returns_dict():

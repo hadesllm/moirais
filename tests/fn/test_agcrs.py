@@ -1,7 +1,7 @@
 """Test agcrs."""
 import numpy as np
 import pytest
-from moirais.fn.agcrs import agcrs
+from morie.fn.agcrs import agcrs
 
 
 def test_agcrs_basic():

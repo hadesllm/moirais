@@ -1,7 +1,7 @@
 """Tests for agpuct.alphazero_puct."""
 import numpy as np
 import pytest
-from moirais.fn.agpuct import alphazero_puct
+from morie.fn.agpuct import alphazero_puct
 
 
 def test_agpuct_basic():

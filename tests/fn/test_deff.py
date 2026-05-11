@@ -1,7 +1,7 @@
 """Tests for fn/deff.py -- Design effect (DEFF)."""
 import numpy as np
 
-from moirais.fn.deff import deff, design_effect
+from morie.fn.deff import deff, design_effect
 
 
 def test_deff_equal_weights():

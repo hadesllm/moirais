@@ -1,7 +1,7 @@
 """Tests for nashq.nash_q_learning."""
 import numpy as np
 import pytest
-from moirais.fn.nashq import nash_q_learning
+from morie.fn.nashq import nash_q_learning
 
 
 def test_nashq_basic():

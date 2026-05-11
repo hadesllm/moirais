@@ -1,7 +1,7 @@
 """Tests for rng147.rangayyan_ch3_minimum_mse."""
 import numpy as np
 import pytest
-from moirais.fn.rng147 import rangayyan_ch3_minimum_mse
+from morie.fn.rng147 import rangayyan_ch3_minimum_mse
 
 
 def test_rng147_basic():

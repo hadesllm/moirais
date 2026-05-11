@@ -1,7 +1,7 @@
 """Tests for hmpip.geron_pipeline."""
 import numpy as np
 import pytest
-from moirais.fn.hmpip import geron_pipeline
+from morie.fn.hmpip import geron_pipeline
 
 
 def test_hmpip_basic():

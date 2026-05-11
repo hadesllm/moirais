@@ -1,7 +1,7 @@
 """Tests for hmtfm.geron_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.hmtfm import geron_transformer
+from morie.fn.hmtfm import geron_transformer
 
 
 def test_hmtfm_basic():

@@ -1,7 +1,7 @@
 """Test agcon."""
 import numpy as np
 import pytest
-from moirais.fn.agcon import agcon
+from morie.fn.agcon import agcon
 
 
 def test_agcon_basic():

@@ -1,7 +1,7 @@
 """Tests for gpsps.gp_spectral_mixture."""
 import numpy as np
 import pytest
-from moirais.fn.gpsps import gp_spectral_mixture
+from morie.fn.gpsps import gp_spectral_mixture
 
 
 def test_gpsps_basic():

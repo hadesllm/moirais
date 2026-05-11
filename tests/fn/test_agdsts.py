@@ -1,7 +1,7 @@
 """Tests for agdsts.alphazero_distill_student."""
 import numpy as np
 import pytest
-from moirais.fn.agdsts import alphazero_distill_student
+from morie.fn.agdsts import alphazero_distill_student
 
 
 def test_agdsts_basic():

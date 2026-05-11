@@ -1,7 +1,7 @@
 """Tests for cvxgd1.boyd_grad_proj."""
 import numpy as np
 import pytest
-from moirais.fn.cvxgd1 import boyd_grad_proj
+from morie.fn.cvxgd1 import boyd_grad_proj
 
 
 def test_cvxgd1_basic():

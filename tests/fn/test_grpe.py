@@ -1,7 +1,7 @@
 """Tests for grpe.geron_sinusoidal_positional_encoding."""
 import numpy as np
 import pytest
-from moirais.fn.grpe import geron_sinusoidal_positional_encoding
+from morie.fn.grpe import geron_sinusoidal_positional_encoding
 
 
 def test_grpe_basic():

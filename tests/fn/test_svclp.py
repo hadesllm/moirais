@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svclp -- Cutting plane in 3D"""
+"""Tests for morie.fn.svclp -- Cutting plane in 3D"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svclp import cut_plane
+from morie.fn.svclp import cut_plane
 
 
 class TestCutPlane:

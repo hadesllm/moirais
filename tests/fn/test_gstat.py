@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.gstat — empirical semivariogram."""
+"""Tests for morie.fn.gstat — empirical semivariogram."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.gstat import semivariogram
+from morie.fn.gstat import semivariogram
 
 
 class TestSemivariogram:

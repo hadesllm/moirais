@@ -1,7 +1,7 @@
 """Test socla."""
 import numpy as np
 import pytest
-from moirais.fn.socla import socla
+from morie.fn.socla import socla
 
 
 def test_socla_basic():

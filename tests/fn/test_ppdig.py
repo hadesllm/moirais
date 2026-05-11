@@ -1,7 +1,7 @@
 """Test ppdig."""
 import numpy as np
 import pytest
-from moirais.fn.ppdig import ppdig
+from morie.fn.ppdig import ppdig
 
 
 def test_ppdig_basic():

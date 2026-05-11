@@ -1,7 +1,7 @@
 """Tests for mctsel.mcts_selection."""
 import numpy as np
 import pytest
-from moirais.fn.mctsel import mcts_selection
+from morie.fn.mctsel import mcts_selection
 
 
 def test_mctsel_basic():

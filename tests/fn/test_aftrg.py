@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.aftrg — accelerated failure time regression."""
+"""Tests for morie.fn.aftrg — accelerated failure time regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.aftrg import aftrg
+from morie.fn.aftrg import aftrg
 
 
 @pytest.fixture()

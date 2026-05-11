@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.moods import moods
+from morie.fn.moods import moods
 
 
 class TestMoods:

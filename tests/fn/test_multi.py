@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.multi — Multinomial logit."""
+"""Tests for morie.fn.multi — Multinomial logit."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.multi import multinomial_logit
+from morie.fn.multi import multinomial_logit
 
 
 def test_multinomial_three_classes():

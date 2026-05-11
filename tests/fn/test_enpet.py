@@ -1,7 +1,7 @@
 """Test enpet."""
 import numpy as np
 import pytest
-from moirais.fn.enpet import enpet
+from morie.fn.enpet import enpet
 
 
 def test_enpet_basic():

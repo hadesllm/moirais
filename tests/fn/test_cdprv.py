@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cdprv -- chronic disease prevalence."""
+"""Tests for morie.fn.cdprv -- chronic disease prevalence."""
 
 import pytest
 import numpy as np
-from moirais.fn.cdprv import chronic_disease_prevalence
+from morie.fn.cdprv import chronic_disease_prevalence
 
 
 class TestChronicDiseasePrevalence:

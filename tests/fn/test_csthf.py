@@ -1,7 +1,7 @@
 """Test csthf."""
 import numpy as np
 import pytest
-from moirais.fn.csthf import csthf
+from morie.fn.csthf import csthf
 
 
 def test_csthf_basic():

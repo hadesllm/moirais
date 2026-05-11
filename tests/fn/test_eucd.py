@@ -1,7 +1,7 @@
 """Tests for euclidean_dist."""
 import numpy as np
 import pytest
-from moirais.fn.eucd import euclidean_dist, eucd
+from morie.fn.eucd import euclidean_dist, eucd
 
 
 def test_basic():

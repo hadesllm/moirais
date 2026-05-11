@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.ander import ander
+from morie.fn.ander import ander
 
 
 class TestAnder:

@@ -1,7 +1,7 @@
 """Tests for tarmd.threshold_autoregression."""
 import numpy as np
 import pytest
-from moirais.fn.tarmd import threshold_autoregression
+from morie.fn.tarmd import threshold_autoregression
 
 
 def test_tarmd_basic():

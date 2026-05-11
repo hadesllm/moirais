@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ibd -- Identity by descent."""
+"""Tests for morie.fn.ibd -- Identity by descent."""
 
 import numpy as np
 import pytest
-from moirais.fn.ibd import ibd
+from morie.fn.ibd import ibd
 
 
 class TestIbd:

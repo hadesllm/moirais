@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bsthy — basic space dimensionality test."""
+"""Tests for morie.fn.bsthy — basic space dimensionality test."""
 import numpy as np
-from moirais.fn.bsthy import bsthy
+from morie.fn.bsthy import bsthy
 
 
 def test_bsthy_smoke():
@@ -13,7 +13,7 @@ def test_bsthy_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.bsthy import cheatsheet
+    from morie.fn.bsthy import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

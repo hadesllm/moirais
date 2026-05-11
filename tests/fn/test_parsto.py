@@ -1,7 +1,7 @@
 """Tests for parsto.parallel_trends_test."""
 import numpy as np
 import pytest
-from moirais.fn.parsto import parallel_trends_test
+from morie.fn.parsto import parallel_trends_test
 
 
 def test_parsto_basic():

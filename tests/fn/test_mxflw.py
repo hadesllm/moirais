@@ -1,6 +1,6 @@
 """Tests for mxflw (max flow)."""
 import numpy as np
-from moirais.fn.mxflw import max_flow
+from morie.fn.mxflw import max_flow
 
 
 def test_max_flow_basic():
@@ -15,7 +15,7 @@ def test_max_flow_basic():
 
 
 def test_cheatsheet():
-    from moirais.fn.mxflw import cheatsheet
+    from morie.fn.mxflw import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

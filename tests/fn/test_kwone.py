@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.kwone import kwone
+from morie.fn.kwone import kwone
 
 
 class TestKwone:

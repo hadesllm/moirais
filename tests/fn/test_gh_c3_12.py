@@ -1,7 +1,7 @@
 """Tests for gh_c3_12.ghosal_polya_tree_def."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c3_12 import ghosal_polya_tree_def
+from morie.fn.gh_c3_12 import ghosal_polya_tree_def
 
 
 def test_gh_c3_12_basic():

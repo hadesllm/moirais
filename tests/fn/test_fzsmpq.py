@@ -1,7 +1,7 @@
 """Tests for fzsmpq.fauzi_sample_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.fzsmpq import fauzi_sample_quantile
+from morie.fn.fzsmpq import fauzi_sample_quantile
 
 
 def test_fzsmpq_basic():

@@ -1,7 +1,7 @@
 """Tests for hmbv.geron_bias_variance_tradeoff."""
 import numpy as np
 import pytest
-from moirais.fn.hmbv import geron_bias_variance_tradeoff
+from morie.fn.hmbv import geron_bias_variance_tradeoff
 
 
 def test_hmbv_basic():

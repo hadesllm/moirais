@@ -1,7 +1,7 @@
 """Tests for twostg.two_stage_hazard."""
 import numpy as np
 import pytest
-from moirais.fn.twostg import two_stage_hazard
+from morie.fn.twostg import two_stage_hazard
 
 
 def test_twostg_basic():

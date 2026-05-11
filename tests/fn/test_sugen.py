@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sugen -- gender-specific substance use."""
+"""Tests for morie.fn.sugen -- gender-specific substance use."""
 
 import pytest
 import pandas as pd
-from moirais.fn.sugen import substance_by_gender
+from morie.fn.sugen import substance_by_gender
 
 
 class TestSubstanceByGender:

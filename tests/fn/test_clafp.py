@@ -1,7 +1,7 @@
 """Test clafp."""
 import numpy as np
 import pytest
-from moirais.fn.clafp import clafp
+from morie.fn.clafp import clafp
 
 
 def test_clafp_basic():

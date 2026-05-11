@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bhawz -- Bayesian hazard."""
+"""Tests for morie.fn.bhawz -- Bayesian hazard."""
 
 import numpy as np
-from moirais.fn.bhawz import bayesian_hazard
+from morie.fn.bhawz import bayesian_hazard
 
 
 def test_returns_dict():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zerrk -- Relative risk kernel ratio"""
+"""Tests for morie.fn.zerrk -- Relative risk kernel ratio"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zerrk import relative_risk_kern
+from morie.fn.zerrk import relative_risk_kern
 
 
 class TestRelativeRiskKern:

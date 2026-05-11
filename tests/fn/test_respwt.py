@@ -1,7 +1,7 @@
 """Tests for respwt.response_weight."""
 import numpy as np
 import pytest
-from moirais.fn.respwt import response_weight
+from morie.fn.respwt import response_weight
 
 
 def test_respwt_basic():

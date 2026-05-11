@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cstcl — custody classification."""
+"""Tests for morie.fn.cstcl — custody classification."""
 
 import pytest
 import numpy as np
-from moirais.fn.cstcl import custody_classification
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cstcl import custody_classification
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCustodyClassification:

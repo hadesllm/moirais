@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tparm — torus parametric coordinates."""
+"""Tests for morie.fn.tparm — torus parametric coordinates."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tparm import torus_parametric
+from morie.fn.tparm import torus_parametric
 
 
 class TestTorusParametric:

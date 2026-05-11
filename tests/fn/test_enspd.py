@@ -1,7 +1,7 @@
 """Test enspd."""
 import numpy as np
 import pytest
-from moirais.fn.enspd import enspd
+from morie.fn.enspd import enspd
 
 
 def test_enspd_basic():

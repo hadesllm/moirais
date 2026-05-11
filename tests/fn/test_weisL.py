@@ -1,7 +1,7 @@
 """Tests for weisL.wl_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.weisL import wl_kernel
+from morie.fn.weisL import wl_kernel
 
 
 def test_weisL_basic():

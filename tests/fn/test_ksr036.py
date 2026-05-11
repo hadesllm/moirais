@@ -1,7 +1,7 @@
 """Tests for ksr036.kosorok_ch2_donsker_bracketing_theorem."""
 import numpy as np
 import pytest
-from moirais.fn.ksr036 import kosorok_ch2_donsker_bracketing_theorem
+from morie.fn.ksr036 import kosorok_ch2_donsker_bracketing_theorem
 
 
 def test_ksr036_basic():

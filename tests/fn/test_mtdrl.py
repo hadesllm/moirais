@@ -1,7 +1,7 @@
 """Tests for mtdrl.meta_rl."""
 import numpy as np
 import pytest
-from moirais.fn.mtdrl import meta_rl
+from morie.fn.mtdrl import meta_rl
 
 
 def test_mtdrl_basic():

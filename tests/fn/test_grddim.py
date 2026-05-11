@@ -1,7 +1,7 @@
 """Tests for grddim.geron_ddim_sampling_step."""
 import numpy as np
 import pytest
-from moirais.fn.grddim import geron_ddim_sampling_step
+from morie.fn.grddim import geron_ddim_sampling_step
 
 
 def test_grddim_basic():

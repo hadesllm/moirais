@@ -1,7 +1,7 @@
 """Tests for gauvar.gaussian_variogram_model."""
 import numpy as np
 import pytest
-from moirais.fn.gauvar import gaussian_variogram_model
+from morie.fn.gauvar import gaussian_variogram_model
 
 
 def test_gauvar_basic():

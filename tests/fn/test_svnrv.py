@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svnrv -- Normal vector to cutting line"""
+"""Tests for morie.fn.svnrv -- Normal vector to cutting line"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svnrv import normal_vector
+from morie.fn.svnrv import normal_vector
 
 
 class TestNormalVector:

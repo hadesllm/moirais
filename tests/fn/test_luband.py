@@ -1,7 +1,7 @@
 """Tests for luband."""
 import numpy as np
 import pytest
-from moirais.fn.luband import luband
+from morie.fn.luband import luband
 
 
 def test_luband_basic():
@@ -27,5 +27,5 @@ def test_luband_no_data():
 
 
 def test_luband_alias():
-    from moirais.fn.luband import luband
+    from morie.fn.luband import luband
     assert luband is luband

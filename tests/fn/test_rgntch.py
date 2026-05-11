@@ -1,7 +1,7 @@
 """Tests for rgntch.rangayyan_notch_filter."""
 import numpy as np
 import pytest
-from moirais.fn.rgntch import rangayyan_notch_filter
+from morie.fn.rgntch import rangayyan_notch_filter
 
 
 def test_rgntch_basic():

@@ -1,7 +1,7 @@
 """Tests for eslica.esl_ica."""
 import numpy as np
 import pytest
-from moirais.fn.eslica import esl_ica
+from morie.fn.eslica import esl_ica
 
 
 def test_eslica_basic():

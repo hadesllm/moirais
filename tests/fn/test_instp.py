@@ -1,6 +1,6 @@
 """Tests for instp.py - Instantaneous phase."""
 import numpy as np
-from moirais.fn.instp import instantaneous_phase, instp
+from morie.fn.instp import instantaneous_phase, instp
 
 
 def test_instp_returns_descriptive_result():

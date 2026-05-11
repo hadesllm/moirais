@@ -1,7 +1,7 @@
 """Tests for spqkv.sparse_attention."""
 import numpy as np
 import pytest
-from moirais.fn.spqkv import sparse_attention
+from morie.fn.spqkv import sparse_attention
 
 
 def test_spqkv_basic():

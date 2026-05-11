@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cstpg — custody program participation rate."""
+"""Tests for morie.fn.cstpg — custody program participation rate."""
 
 import pandas as pd
-from moirais.fn.cstpg import custody_program_rate
+from morie.fn.cstpg import custody_program_rate
 
 
 class TestCustodyProgramRate:

@@ -1,7 +1,7 @@
 """Test gcpdo."""
 import numpy as np
 import pytest
-from moirais.fn.gcpdo import gcpdo
+from morie.fn.gcpdo import gcpdo
 
 
 def test_gcpdo_basic():

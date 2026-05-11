@@ -1,7 +1,7 @@
 """Tests for survlts.life_table_smoothed."""
 import numpy as np
 import pytest
-from moirais.fn.survlts import life_table_smoothed
+from morie.fn.survlts import life_table_smoothed
 
 
 def test_survlts_basic():

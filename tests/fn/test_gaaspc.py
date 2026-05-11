@@ -1,7 +1,7 @@
 """Test gaaspc."""
 import numpy as np
 import pytest
-from moirais.fn.gaaspc import gaaspc
+from morie.fn.gaaspc import gaaspc
 
 
 def test_gaaspc_basic():

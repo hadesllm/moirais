@@ -1,6 +1,6 @@
 """Tests for cohfn.py - Coherence function."""
 import numpy as np
-from moirais.fn.cohfn import coherence_function_fn, cohfn
+from morie.fn.cohfn import coherence_function_fn, cohfn
 
 
 def test_cohfn_returns_result():

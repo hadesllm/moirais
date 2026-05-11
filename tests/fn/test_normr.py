@@ -1,7 +1,7 @@
 """Tests for normalized redundancy."""
 import numpy as np
 import pytest
-from moirais.fn.normr import normalized_redundancy, normr
+from morie.fn.normr import normalized_redundancy, normr
 
 
 def test_identical():

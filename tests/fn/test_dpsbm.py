@@ -1,7 +1,7 @@
 """Tests for dpsbm.dp_stochastic_block."""
 import numpy as np
 import pytest
-from moirais.fn.dpsbm import dp_stochastic_block
+from morie.fn.dpsbm import dp_stochastic_block
 
 
 def test_dpsbm_basic():

@@ -1,7 +1,7 @@
 """Test agwtr."""
 import numpy as np
 import pytest
-from moirais.fn.agwtr import agwtr
+from morie.fn.agwtr import agwtr
 
 
 def test_agwtr_basic():

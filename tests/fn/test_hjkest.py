@@ -1,7 +1,7 @@
 """Tests for hjkest.hajek_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.hjkest import hajek_estimator
+from morie.fn.hjkest import hajek_estimator
 
 
 def test_hjkest_basic():

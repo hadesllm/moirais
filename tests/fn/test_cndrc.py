@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.cndrc — Condorcet winner."""
+"""Tests for morie.fn.cndrc — Condorcet winner."""
 import numpy as np
-from moirais.fn.cndrc import cndrc
+from morie.fn.cndrc import cndrc
 
 
 def test_cndrc_winner():

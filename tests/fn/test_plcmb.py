@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.plcmb -- Coombs mesh visualization."""
+"""Tests for morie.fn.plcmb -- Coombs mesh visualization."""
 import numpy as np
-from moirais.fn.plcmb import plot_coombs_data, plcmb
+from morie.fn.plcmb import plot_coombs_data, plcmb
 
 
 def test_alias():

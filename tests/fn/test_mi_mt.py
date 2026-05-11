@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mi_mt -- metric invariance."""
+"""Tests for morie.fn.mi_mt -- metric invariance."""
 
-from moirais.fn.mi_mt import mi_metric
-from moirais.fn.mi_cf import mi_configural
+from morie.fn.mi_mt import mi_metric
+from morie.fn.mi_cf import mi_configural
 
 
 class TestMiMetric:

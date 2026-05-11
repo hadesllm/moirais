@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mssmi -- Individual differences SMACOF"""
+"""Tests for morie.fn.mssmi -- Individual differences SMACOF"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mssmi import smacof_indiv
+from morie.fn.mssmi import smacof_indiv
 
 
 class TestSmacofIndiv:

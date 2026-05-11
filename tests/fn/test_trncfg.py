@@ -1,7 +1,7 @@
 """Tests for trncfg.truncated_cf_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.trncfg import truncated_cf_estimator
+from morie.fn.trncfg import truncated_cf_estimator
 
 
 def test_trncfg_basic():

@@ -1,7 +1,7 @@
 """Tests for blinkg.blink_gwas."""
 import numpy as np
 import pytest
-from moirais.fn.blinkg import blink_gwas
+from morie.fn.blinkg import blink_gwas
 
 
 def test_blinkg_basic():

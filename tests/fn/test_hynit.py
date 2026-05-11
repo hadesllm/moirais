@@ -1,7 +1,7 @@
 """Test hynit."""
 import numpy as np
 import pytest
-from moirais.fn.hynit import hynit
+from morie.fn.hynit import hynit
 
 
 def test_hynit_basic():

@@ -1,7 +1,7 @@
 """Tests for alfsdc.alphafold_sidechain."""
 import numpy as np
 import pytest
-from moirais.fn.alfsdc import alphafold_sidechain
+from morie.fn.alfsdc import alphafold_sidechain
 
 
 def test_alfsdc_basic():

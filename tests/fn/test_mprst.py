@@ -1,7 +1,7 @@
 """Tests for mprst.py - Matching Pursuit decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.mprst import matching_pursuit_fn, mprst
+from morie.fn.mprst import matching_pursuit_fn, mprst
 
 
 def test_matching_pursuit_returns_descriptive_result():

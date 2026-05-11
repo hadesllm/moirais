@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svrcl -- Roll call logit model"""
+"""Tests for morie.fn.svrcl -- Roll call logit model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svrcl import roll_call_logit
+from morie.fn.svrcl import roll_call_logit
 
 
 class TestRollCallLogit:

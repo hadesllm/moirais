@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bmcmc — Metropolis-Hastings sampler."""
+"""Tests for morie.fn.bmcmc — Metropolis-Hastings sampler."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bmcmc import metropolis_hastings
+from morie.fn.bmcmc import metropolis_hastings
 
 
 class TestMetropolisHastings:

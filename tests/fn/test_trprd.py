@@ -1,7 +1,7 @@
 """Test trprd."""
 import numpy as np
 import pytest
-from moirais.fn.trprd import trprd
+from morie.fn.trprd import trprd
 
 
 def test_trprd_basic():

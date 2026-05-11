@@ -1,7 +1,7 @@
 """Tests for cmutif.conditional_mi."""
 import numpy as np
 import pytest
-from moirais.fn.cmutif import conditional_mi
+from morie.fn.cmutif import conditional_mi
 
 
 def test_cmutif_basic():

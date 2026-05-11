@@ -1,7 +1,7 @@
 """Tests for survlnk.link_function_survival."""
 import numpy as np
 import pytest
-from moirais.fn.survlnk import link_function_survival
+from morie.fn.survlnk import link_function_survival
 
 
 def test_survlnk_basic():

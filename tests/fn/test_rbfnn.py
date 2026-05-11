@@ -1,7 +1,7 @@
 """Tests for rbfnn.py - RBF network."""
 import numpy as np
 import pytest
-from moirais.fn.rbfnn import rbfnn_fn, rbfnn
+from morie.fn.rbfnn import rbfnn_fn, rbfnn
 
 
 def test_rbfnn_returns_descriptive_result():

@@ -1,7 +1,7 @@
 """Tests for coher -- Coherence between two signals."""
 import numpy as np
-from moirais.fn.coher import coherence
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.coher import coherence
+from morie.fn._containers import DescriptiveResult
 
 
 def test_coherence_identical_signals():

@@ -1,7 +1,7 @@
 """Tests for km150.kamath_ch9_flamingo_dataset_mix."""
 import numpy as np
 import pytest
-from moirais.fn.km150 import kamath_ch9_flamingo_dataset_mix
+from morie.fn.km150 import kamath_ch9_flamingo_dataset_mix
 
 
 def test_km150_basic():

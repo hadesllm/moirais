@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.nnidx — nearest neighbor index."""
+"""Tests for morie.fn.nnidx — nearest neighbor index."""
 import numpy as np
-from moirais.fn.nnidx import nearest_neighbor_index
+from morie.fn.nnidx import nearest_neighbor_index
 
 
 class TestNNIndex:

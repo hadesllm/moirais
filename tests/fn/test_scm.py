@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.scm — structural causal model."""
+"""Tests for morie.fn.scm — structural causal model."""
 import numpy as np
 import pytest
-from moirais.fn.scm import structural_causal_model
+from morie.fn.scm import structural_causal_model
 
 
 class TestStructuralCausalModel:

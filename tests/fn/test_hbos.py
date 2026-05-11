@@ -1,7 +1,7 @@
 """Tests for hbos.hbos."""
 import numpy as np
 import pytest
-from moirais.fn.hbos import hbos
+from morie.fn.hbos import hbos
 
 
 def test_hbos_basic():

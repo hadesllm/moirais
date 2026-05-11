@@ -1,7 +1,7 @@
 """Test seibm."""
 import numpy as np
 import pytest
-from moirais.fn.seibm import seibm
+from morie.fn.seibm import seibm
 
 
 def test_seibm_basic():

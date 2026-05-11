@@ -1,7 +1,7 @@
 """Tests for vrmed.variance_based_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.vrmed import variance_based_mediation
+from morie.fn.vrmed import variance_based_mediation
 
 
 def test_vrmed_basic():

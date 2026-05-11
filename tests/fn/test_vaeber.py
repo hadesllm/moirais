@@ -1,7 +1,7 @@
 """Tests for vaeber.vae_elbo."""
 import numpy as np
 import pytest
-from moirais.fn.vaeber import vae_elbo
+from morie.fn.vaeber import vae_elbo
 
 
 def test_vaeber_basic():

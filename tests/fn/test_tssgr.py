@@ -1,7 +1,7 @@
 """Test tssgr."""
 import numpy as np
 import pytest
-from moirais.fn.tssgr import tssgr
+from morie.fn.tssgr import tssgr
 
 
 def test_tssgr_basic():

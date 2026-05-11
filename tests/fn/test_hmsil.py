@@ -1,7 +1,7 @@
 """Tests for hmsil.geron_silhouette."""
 import numpy as np
 import pytest
-from moirais.fn.hmsil import geron_silhouette
+from morie.fn.hmsil import geron_silhouette
 
 
 def test_hmsil_basic():

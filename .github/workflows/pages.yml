@@ -2,7 +2,7 @@ name: Deploy Sphinx docs to Pages
 
 # Builds the Sphinx documentation in docs/source/ and deploys to
 # GitHub Pages. The published site is at:
-#   https://hadesllm.github.io/moirais/
+#   https://hadesllm.github.io/morie/
 #
 # Uses the official actions/deploy-pages workflow pattern; no
 # branch (gh-pages) needed — artefact is uploaded directly.
@@ -13,7 +13,7 @@ on:
       - main
     paths:
       - 'docs/**'
-      - 'src/moirais/**'
+      - 'src/morie/**'
       - 'pyproject.toml'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
@@ -48,13 +48,13 @@ jobs:
           python -m pip install -e ".[docs]"
 
       # Cache Sphinx's incremental doctrees so unchanged pages skip
-      # re-parsing on the next run. Key on docs/source + src/moirais
+      # re-parsing on the next run. Key on docs/source + src/morie
       # + the R man pages — anything that affects the rendered HTML.
       - name: Cache Sphinx doctrees
         uses: actions/cache@v4
         with:
           path: .sphinx-doctrees
-          key: sphinx-doctrees-${{ hashFiles('docs/source/**', 'src/moirais/**', 'r-package/moirais/man/**') }}
+          key: sphinx-doctrees-${{ hashFiles('docs/source/**', 'src/morie/**', 'r-package/morie/man/**') }}
           restore-keys: |
             sphinx-doctrees-
 

@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from moirais.data import DatasetRegistry
+from morie.data import DatasetRegistry
 
 
 def test_dataset_registry_lists_seed_catalog():
@@ -72,7 +72,7 @@ def test_dataset_registry_fetches_ckan_records(monkeypatch):
         assert "q=title%3Ajones" in url
         return DummyResponse()
 
-    monkeypatch.setattr("moirais.data.urlopen", fake_urlopen)
+    monkeypatch.setattr("morie.data.urlopen", fake_urlopen)
 
     payload = registry.fetch_ckan_records(
         "cpads_2021_2022_pumf",
@@ -139,7 +139,7 @@ def test_cpads_contract_validation(tmp_path: Path):
 
 
 def test_dataset_catalog_has_all_expected_keys():
-    from moirais.data import DATASET_CATALOG
+    from morie.data import DATASET_CATALOG
     assert len(DATASET_CATALOG) >= 30
     assert "ocp21" in DATASET_CATALOG
     assert "hibub" in DATASET_CATALOG
@@ -147,7 +147,7 @@ def test_dataset_catalog_has_all_expected_keys():
 
 
 def test_dataset_catalog_entries_have_required_fields():
-    from moirais.data import DATASET_CATALOG
+    from morie.data import DATASET_CATALOG
     required = {"name", "source", "survey", "year", "format", "type",
                 "local_path", "table_name", "ckan_resource_id"}
     for key, entry in DATASET_CATALOG.items():
@@ -156,13 +156,13 @@ def test_dataset_catalog_entries_have_required_fields():
 
 
 def test_dataset_catalog_table_names_unique():
-    from moirais.data import DATASET_CATALOG
+    from morie.data import DATASET_CATALOG
     names = [e["table_name"] for e in DATASET_CATALOG.values()]
     assert len(names) == len(set(names)), "Duplicate table names in catalog"
 
 
 def test_fuzzy_match_key():
-    from moirais.data import _fuzzy_match_key
+    from morie.data import _fuzzy_match_key
     assert _fuzzy_match_key("ocp21") == "ocp21"
     assert _fuzzy_match_key("hibua") == "hibua"
     assert _fuzzy_match_key("nonexistent") is None
@@ -170,7 +170,7 @@ def test_fuzzy_match_key():
 
 def test_load_dataset_from_builtin_db(tmp_path, monkeypatch):
     import sqlite3
-    from moirais.data import load_dataset
+    from morie.data import load_dataset
 
     db = tmp_path / "mock.db"
     conn = sqlite3.connect(str(db))
@@ -180,7 +180,7 @@ def test_load_dataset_from_builtin_db(tmp_path, monkeypatch):
     conn.close()
 
     monkeypatch.setattr(
-        "moirais.data._builtin_db_connect",
+        "morie.data._builtin_db_connect",
         lambda: sqlite3.connect(str(db)),
     )
     try:
@@ -192,7 +192,7 @@ def test_load_dataset_from_builtin_db(tmp_path, monkeypatch):
 
 
 def test_list_datasets_shows_cache_status(tmp_path):
-    from moirais.data import cache_store, list_datasets
+    from morie.data import cache_store, list_datasets
     db = tmp_path / "test.db"
     df = pd.DataFrame({"x": [1]})
     cache_store(df, "ocp21", db)
@@ -203,6 +203,6 @@ def test_list_datasets_shows_cache_status(tmp_path):
 
 
 def test_load_dataset_unknown_key_raises():
-    from moirais.data import load_dataset
+    from morie.data import load_dataset
     with pytest.raises(KeyError, match="Unknown dataset key"):
         load_dataset("totally_fake_dataset_xyz")

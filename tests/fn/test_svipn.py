@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svipn -- Normal ideal point model"""
+"""Tests for morie.fn.svipn -- Normal ideal point model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svipn import ideal_point_normal
+from morie.fn.svipn import ideal_point_normal
 
 
 class TestIdealPointNormal:

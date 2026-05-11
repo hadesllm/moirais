@@ -1,7 +1,7 @@
 """Tests for evgpdpw.evt_gpd_pwm."""
 import numpy as np
 import pytest
-from moirais.fn.evgpdpw import evt_gpd_pwm
+from morie.fn.evgpdpw import evt_gpd_pwm
 
 
 def test_evgpdpw_basic():

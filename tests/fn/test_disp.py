@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.disp -- Disparity index."""
+"""Tests for morie.fn.disp -- Disparity index."""
 
 import pytest
-from moirais.fn.disp import disparity_index, disp
-from moirais.fn._containers import ESRes
+from morie.fn.disp import disparity_index, disp
+from morie.fn._containers import ESRes
 
 
 class TestDisp:

@@ -1,7 +1,7 @@
 """Test srgns."""
 import numpy as np
 import pytest
-from moirais.fn.srgns import srgns
+from morie.fn.srgns import srgns
 
 
 def test_srgns_basic():

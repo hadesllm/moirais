@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mssmr -- Replicated SMACOF"""
+"""Tests for morie.fn.mssmr -- Replicated SMACOF"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mssmr import smacof_replicate
+from morie.fn.mssmr import smacof_replicate
 
 
 class TestSmacofReplicate:

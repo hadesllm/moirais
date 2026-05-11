@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.drctr — Doubly robust cross-fitted ATE estimator."""
+"""Tests for morie.fn.drctr — Doubly robust cross-fitted ATE estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.drctr import drctr
+from morie.fn.drctr import drctr
 
 
 @pytest.fixture()

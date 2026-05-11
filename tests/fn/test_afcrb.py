@@ -1,7 +1,7 @@
 """Test afcrb."""
 import numpy as np
 import pytest
-from moirais.fn.afcrb import afcrb
+from morie.fn.afcrb import afcrb
 
 
 def test_afcrb_basic():

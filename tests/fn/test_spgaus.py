@@ -1,7 +1,7 @@
 """Tests for spgaus.schabenberger_gaussian_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.spgaus import schabenberger_gaussian_variogram
+from morie.fn.spgaus import schabenberger_gaussian_variogram
 
 
 def test_spgaus_basic():

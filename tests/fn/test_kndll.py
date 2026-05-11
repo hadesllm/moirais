@@ -1,6 +1,6 @@
 """Tests for kendall_concordance."""
 import numpy as np, pytest
-from moirais.fn.kndll import kendall_concordance
+from morie.fn.kndll import kendall_concordance
 
 
 class TestKendallConcordance:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.birtl — Bayesian IRT log-likelihood."""
+"""Tests for morie.fn.birtl — Bayesian IRT log-likelihood."""
 import numpy as np
 import pytest
 
-from moirais.fn.birtl import birtl
+from morie.fn.birtl import birtl
 
 
 def test_birtl_smoke():
@@ -15,7 +15,7 @@ def test_birtl_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.birtl import cheatsheet
+    from morie.fn.birtl import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

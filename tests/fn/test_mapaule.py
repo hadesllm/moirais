@@ -1,7 +1,7 @@
 """Tests for mapaule.ma_paule_mandel."""
 import numpy as np
 import pytest
-from moirais.fn.mapaule import ma_paule_mandel
+from morie.fn.mapaule import ma_paule_mandel
 
 
 def test_mapaule_basic():

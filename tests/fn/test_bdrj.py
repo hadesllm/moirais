@@ -1,7 +1,7 @@
 """Tests for bdrj.backdoor_adjustment_formula."""
 import numpy as np
 import pytest
-from moirais.fn.bdrj import backdoor_adjustment_formula
+from morie.fn.bdrj import backdoor_adjustment_formula
 
 
 def test_bdrj_basic():

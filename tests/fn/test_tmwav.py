@@ -1,7 +1,7 @@
 """Tests for tmwav."""
 import numpy as np
 import pytest
-from moirais.fn.tmwav import tmwav
+from morie.fn.tmwav import tmwav
 
 
 def test_tmwav_basic():
@@ -27,5 +27,5 @@ def test_tmwav_no_data():
 
 
 def test_tmwav_alias():
-    from moirais.fn.tmwav import tmwav
+    from morie.fn.tmwav import tmwav
     assert tmwav is tmwav

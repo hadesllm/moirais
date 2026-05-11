@@ -1,7 +1,7 @@
 """Tests for sgtcoml.sgt_louvain_step."""
 import numpy as np
 import pytest
-from moirais.fn.sgtcoml import sgt_louvain_step
+from morie.fn.sgtcoml import sgt_louvain_step
 
 
 def test_sgtcoml_basic():

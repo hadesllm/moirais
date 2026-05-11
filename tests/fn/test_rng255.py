@@ -1,7 +1,7 @@
 """Tests for rng255.rangayyan_ch4_power_cepstrum_relation_to_complex."""
 import numpy as np
 import pytest
-from moirais.fn.rng255 import rangayyan_ch4_power_cepstrum_relation_to_complex
+from morie.fn.rng255 import rangayyan_ch4_power_cepstrum_relation_to_complex
 
 
 def test_rng255_basic():

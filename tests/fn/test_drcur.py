@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.drcur — Dose-response curve."""
+"""Tests for morie.fn.drcur — Dose-response curve."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.drcur import dose_response_curve
+from morie.fn.drcur import dose_response_curve
 
 
 class TestDoseResponseCurve:

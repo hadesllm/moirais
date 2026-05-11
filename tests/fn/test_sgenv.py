@@ -1,6 +1,6 @@
 """Tests for simulation envelope."""
 import numpy as np
-from moirais.fn.sgenv import sgenv
+from morie.fn.sgenv import sgenv
 
 
 def test_sgenv_smoke():
@@ -14,7 +14,7 @@ def test_sgenv_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgenv import cheatsheet
+    from morie.fn.sgenv import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

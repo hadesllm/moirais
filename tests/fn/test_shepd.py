@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.shepd -- Shepard diagram."""
+"""Tests for morie.fn.shepd -- Shepard diagram."""
 
 import numpy as np
-from moirais.fn.shepd import shepard_diagram, shepd
+from morie.fn.shepd import shepard_diagram, shepd
 
 
 def test_shepd_smoke():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hzdrt -- Hazard rate from life table."""
+"""Tests for morie.fn.hzdrt -- Hazard rate from life table."""
 
 import pytest
-from moirais.fn.hzdrt import hazard_rate
+from morie.fn.hzdrt import hazard_rate
 
 
 class TestHazardRate:

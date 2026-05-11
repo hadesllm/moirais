@@ -1,7 +1,7 @@
 """Tests for stcov."""
 import numpy as np
 import pytest
-from moirais.fn.stcov import stcov
+from morie.fn.stcov import stcov
 
 
 def test_stcov_basic():
@@ -27,5 +27,5 @@ def test_stcov_no_data():
 
 
 def test_stcov_alias():
-    from moirais.fn.stcov import stcov
+    from morie.fn.stcov import stcov
     assert stcov is stcov

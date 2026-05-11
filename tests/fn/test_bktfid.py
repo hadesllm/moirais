@@ -1,7 +1,7 @@
 """Tests for bktfid.burkov_tf_idf."""
 import numpy as np
 import pytest
-from moirais.fn.bktfid import burkov_tf_idf
+from morie.fn.bktfid import burkov_tf_idf
 
 
 def test_bktfid_basic():

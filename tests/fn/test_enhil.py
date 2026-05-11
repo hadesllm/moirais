@@ -1,7 +1,7 @@
 """Test enhil."""
 import numpy as np
 import pytest
-from moirais.fn.enhil import enhil
+from morie.fn.enhil import enhil
 
 
 def test_enhil_basic():

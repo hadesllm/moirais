@@ -1,7 +1,7 @@
 """Tests for a2cv.a2c."""
 import numpy as np
 import pytest
-from moirais.fn.a2cv import a2c
+from morie.fn.a2cv import a2c
 
 
 def test_a2cv_basic():

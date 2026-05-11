@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dsinfo — dataset info."""
+"""Tests for morie.fn.dsinfo — dataset info."""
 
 import pytest
 
-from moirais.fn.dsinfo import dsinfo, dataset_info
+from morie.fn.dsinfo import dsinfo, dataset_info
 
 
 def test_alias_is_same_function():

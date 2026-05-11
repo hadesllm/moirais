@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.prohv -- Prohorov metric."""
+"""Tests for morie.fn.prohv -- Prohorov metric."""
 
 import numpy as np
 import pytest
-from moirais.fn.prohv import prohorov_metric
+from morie.fn.prohv import prohorov_metric
 
 
 class TestProhorov:

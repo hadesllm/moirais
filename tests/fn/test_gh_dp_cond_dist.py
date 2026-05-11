@@ -1,7 +1,7 @@
 """Tests for gh_dp_cond_dist.ghosal_dp_conditional_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.gh_dp_cond_dist import ghosal_dp_conditional_distribution
+from morie.fn.gh_dp_cond_dist import ghosal_dp_conditional_distribution
 
 
 def test_gh_dp_cond_dist_basic():

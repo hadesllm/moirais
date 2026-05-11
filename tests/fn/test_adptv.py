@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.adptv — Adaptive design."""
+"""Tests for morie.fn.adptv — Adaptive design."""
 
 import pytest
 
-from moirais.fn.adptv import adaptive_design
+from morie.fn.adptv import adaptive_design
 
 
 class TestAdaptiveDesign:

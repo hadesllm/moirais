@@ -1,7 +1,7 @@
 """Tests for rgtmpl.rangayyan_template_match."""
 import numpy as np
 import pytest
-from moirais.fn.rgtmpl import rangayyan_template_match
+from morie.fn.rgtmpl import rangayyan_template_match
 
 
 def test_rgtmpl_basic():

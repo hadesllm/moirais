@@ -1,7 +1,7 @@
 """Tests for acfP.autocorrelation."""
 import numpy as np
 import pytest
-from moirais.fn.acfP import autocorrelation
+from morie.fn.acfP import autocorrelation
 
 
 def test_acfP_basic():

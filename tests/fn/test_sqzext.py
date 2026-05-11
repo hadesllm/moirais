@@ -1,7 +1,7 @@
 """Tests for sqzext.squeeze_excite."""
 import numpy as np
 import pytest
-from moirais.fn.sqzext import squeeze_excite
+from morie.fn.sqzext import squeeze_excite
 
 
 def test_sqzext_basic():

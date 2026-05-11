@@ -1,7 +1,7 @@
 """Tests for gb_qq.gibbons_qq_plot."""
 import numpy as np
 import pytest
-from moirais.fn.gb_qq import gibbons_qq_plot
+from morie.fn.gb_qq import gibbons_qq_plot
 
 
 def test_gb_qq_basic():

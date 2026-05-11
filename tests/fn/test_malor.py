@@ -1,7 +1,7 @@
 """Tests for malor.ma_log_odds_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.malor import ma_log_odds_ratio
+from morie.fn.malor import ma_log_odds_ratio
 
 
 def test_malor_basic():

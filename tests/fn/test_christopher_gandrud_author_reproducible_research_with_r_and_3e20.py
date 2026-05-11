@@ -1,7 +1,7 @@
 """Everything flows. — Heraclitus"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_3e20 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_3_equation_20
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_3e20 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_3_equation_20
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_3e20_basic():

@@ -1,7 +1,7 @@
 """Tests for km049.kamath_ch3_top1_prompt_metric."""
 import numpy as np
 import pytest
-from moirais.fn.km049 import kamath_ch3_top1_prompt_metric
+from morie.fn.km049 import kamath_ch3_top1_prompt_metric
 
 
 def test_km049_basic():

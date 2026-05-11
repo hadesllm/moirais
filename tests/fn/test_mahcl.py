@@ -1,7 +1,7 @@
 """Test mahcl."""
 import numpy as np
 import pytest
-from moirais.fn.mahcl import mahcl
+from morie.fn.mahcl import mahcl
 
 
 def test_mahcl_basic():

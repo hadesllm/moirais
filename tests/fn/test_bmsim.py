@@ -1,7 +1,7 @@
 """Test bmsim."""
 import numpy as np
 import pytest
-from moirais.fn.bmsim import bmsim
+from morie.fn.bmsim import bmsim
 
 
 def test_bmsim_basic():

@@ -1,7 +1,7 @@
 """Tests for phylby.bayesian_phylogeny."""
 import numpy as np
 import pytest
-from moirais.fn.phylby import bayesian_phylogeny
+from morie.fn.phylby import bayesian_phylogeny
 
 
 def test_phylby_basic():

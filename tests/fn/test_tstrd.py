@@ -1,7 +1,7 @@
 """Test tstrd."""
 import numpy as np
 import pytest
-from moirais.fn.tstrd import tstrd
+from morie.fn.tstrd import tstrd
 
 
 def test_tstrd_basic():

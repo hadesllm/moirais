@@ -1,7 +1,7 @@
 """Tests for dpepsm.epsilon_dp."""
 import numpy as np
 import pytest
-from moirais.fn.dpepsm import epsilon_dp
+from morie.fn.dpepsm import epsilon_dp
 
 
 def test_dpepsm_basic():

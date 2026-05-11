@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.admod — Additive model via marginal integration."""
+"""Tests for morie.fn.admod — Additive model via marginal integration."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.admod import admod
+from morie.fn.admod import admod
 
 
 @pytest.fixture()

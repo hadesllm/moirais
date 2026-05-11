@@ -1,6 +1,6 @@
 """Test estimate_flops."""
-from moirais.fn.flops import estimate_flops, flops
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.flops import estimate_flops, flops
+from morie.fn._containers import DescriptiveResult
 
 
 class TestEstimateFlops:

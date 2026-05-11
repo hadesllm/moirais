@@ -1,7 +1,7 @@
 """Tests for tmltrt.tmle_truncation."""
 import numpy as np
 import pytest
-from moirais.fn.tmltrt import tmle_truncation
+from morie.fn.tmltrt import tmle_truncation
 
 
 def test_tmltrt_basic():

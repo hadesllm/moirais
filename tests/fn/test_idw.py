@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.idw — inverse distance weighting interpolation."""
+"""Tests for morie.fn.idw — inverse distance weighting interpolation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.idw import inverse_distance_weighting
+from morie.fn.idw import inverse_distance_weighting
 
 
 class TestIDW:

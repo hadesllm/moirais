@@ -1,7 +1,7 @@
 """Tests for grfad.geron_forward_mode_autodiff."""
 import numpy as np
 import pytest
-from moirais.fn.grfad import geron_forward_mode_autodiff
+from morie.fn.grfad import geron_forward_mode_autodiff
 
 
 def test_grfad_basic():

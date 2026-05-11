@@ -1,7 +1,7 @@
 """Tests for gbgen.gradient_boosting_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.gbgen import gradient_boosting_genomic
+from morie.fn.gbgen import gradient_boosting_genomic
 
 
 def test_gbgen_basic():

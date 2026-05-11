@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.irv — Instant runoff voting."""
+"""Tests for morie.fn.irv — Instant runoff voting."""
 import numpy as np
-from moirais.fn.irv import irv
+from morie.fn.irv import irv
 
 
 def test_irv_majority():

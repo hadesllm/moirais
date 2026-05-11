@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mice -- MICE imputation."""
+"""Tests for morie.fn.mice -- MICE imputation."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.mice import mice_impute
+from morie.fn.mice import mice_impute
 
 
 class TestMICE:

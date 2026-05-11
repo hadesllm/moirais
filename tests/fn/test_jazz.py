@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.jazz -- Markov chain generation."""
+"""Tests for morie.fn.jazz -- Markov chain generation."""
 
 import numpy as np
-from moirais.fn.jazz import markov_generate, jazz
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.jazz import markov_generate, jazz
+from morie.fn._containers import DescriptiveResult
 
 
 class TestJazz:

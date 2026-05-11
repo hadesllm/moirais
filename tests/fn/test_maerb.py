@@ -1,7 +1,7 @@
 """Test maerb."""
 import numpy as np
 import pytest
-from moirais.fn.maerb import maerb
+from morie.fn.maerb import maerb
 
 
 def test_maerb_basic():

@@ -1,7 +1,7 @@
 """Tests for vdcal.volume_of_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.vdcal import volume_of_distribution
+from morie.fn.vdcal import volume_of_distribution
 
 
 def test_vdcal_basic():

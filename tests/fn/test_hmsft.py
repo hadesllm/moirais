@@ -1,7 +1,7 @@
 """Tests for hmsft.geron_sft."""
 import numpy as np
 import pytest
-from moirais.fn.hmsft import geron_sft
+from morie.fn.hmsft import geron_sft
 
 
 def test_hmsft_basic():

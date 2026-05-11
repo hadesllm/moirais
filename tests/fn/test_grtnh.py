@@ -1,7 +1,7 @@
 """Tests for grtnh.geron_tanh_activation."""
 import numpy as np
 import pytest
-from moirais.fn.grtnh import geron_tanh_activation
+from morie.fn.grtnh import geron_tanh_activation
 
 
 def test_grtnh_basic():

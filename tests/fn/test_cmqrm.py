@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cmqrm."""
+"""Tests for morie.fn.cmqrm."""
 
 import numpy as np
 import pytest
-from moirais.fn.cmqrm import cmqrm
+from morie.fn.cmqrm import cmqrm
 
 
 class TestCmqrm:

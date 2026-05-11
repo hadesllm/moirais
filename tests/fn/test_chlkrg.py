@@ -1,7 +1,7 @@
 """Tests for chlkrg."""
 import numpy as np
 import pytest
-from moirais.fn.chlkrg import chlkrg
+from morie.fn.chlkrg import chlkrg
 
 
 def test_chlkrg_basic():
@@ -27,5 +27,5 @@ def test_chlkrg_no_data():
 
 
 def test_chlkrg_alias():
-    from moirais.fn.chlkrg import chlkrg
+    from morie.fn.chlkrg import chlkrg
     assert chlkrg is chlkrg

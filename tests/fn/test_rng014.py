@@ -1,7 +1,7 @@
 """Tests for rng014.rangayyan_ch3_variance_of_sum_uncorrelated."""
 import numpy as np
 import pytest
-from moirais.fn.rng014 import rangayyan_ch3_variance_of_sum_uncorrelated
+from morie.fn.rng014 import rangayyan_ch3_variance_of_sum_uncorrelated
 
 
 def test_rng014_basic():

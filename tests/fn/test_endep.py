@@ -1,7 +1,7 @@
 """Test endep."""
 import numpy as np
 import pytest
-from moirais.fn.endep import endep
+from morie.fn.endep import endep
 
 
 def test_endep_basic():

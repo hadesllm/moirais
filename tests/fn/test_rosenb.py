@@ -1,7 +1,7 @@
 """Tests for rosenb.rosenbaum_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.rosenb import rosenbaum_bounds
+from morie.fn.rosenb import rosenbaum_bounds
 
 
 def test_rosenb_basic():

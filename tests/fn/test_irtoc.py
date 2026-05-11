@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.irtoc — option characteristic curves."""
+"""Tests for morie.fn.irtoc — option characteristic curves."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.irtoc import irt_option_curves
+from morie.fn.irtoc import irt_option_curves
 
 
 class TestIrtOptionCurves:

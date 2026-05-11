@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.mmds — Metric MDS."""
+"""Tests for morie.fn.mmds — Metric MDS."""
 import numpy as np
-from moirais.fn.mmds import mmds
+from morie.fn.mmds import mmds
 
 
 def test_mmds_basic():

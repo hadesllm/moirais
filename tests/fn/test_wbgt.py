@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.wbgt import wbgt, wet_bulb_globe_temp
+from morie.fn.wbgt import wbgt, wet_bulb_globe_temp
 
 
 def test_wbgt_outdoor_known_case():

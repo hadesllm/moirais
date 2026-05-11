@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.iscat."""
+"""Tests for morie.fn.iscat."""
 
 import numpy as np
 import pytest
-from moirais.fn.iscat import iscat
+from morie.fn.iscat import iscat
 
 
 class TestIscat:

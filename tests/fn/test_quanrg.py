@@ -1,7 +1,7 @@
 """Tests for quanrg.quantile_regression."""
 import numpy as np
 import pytest
-from moirais.fn.quanrg import quantile_regression
+from morie.fn.quanrg import quantile_regression
 
 
 def test_quanrg_basic():

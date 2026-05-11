@@ -1,7 +1,7 @@
 """Tests for spnst.schabenberger_nonstationary_cov."""
 import numpy as np
 import pytest
-from moirais.fn.spnst import schabenberger_nonstationary_cov
+from morie.fn.spnst import schabenberger_nonstationary_cov
 
 
 def test_spnst_basic():

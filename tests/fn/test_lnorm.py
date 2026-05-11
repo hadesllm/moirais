@@ -1,6 +1,6 @@
 """Test layer normalization."""
 import numpy as np
-from moirais.fn.lnorm import lnorm
+from morie.fn.lnorm import lnorm
 
 
 def test_lnorm_basic():

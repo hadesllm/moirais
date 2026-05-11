@@ -1,7 +1,7 @@
 """Test csbwt."""
 import numpy as np
 import pytest
-from moirais.fn.csbwt import csbwt
+from morie.fn.csbwt import csbwt
 
 
 def test_csbwt_basic():

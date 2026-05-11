@@ -1,7 +1,7 @@
 """Tests for grevr.geron_explained_variance_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.grevr import geron_explained_variance_ratio
+from morie.fn.grevr import geron_explained_variance_ratio
 
 
 def test_grevr_basic():

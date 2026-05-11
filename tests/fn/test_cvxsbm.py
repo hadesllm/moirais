@@ -1,7 +1,7 @@
 """Tests for cvxsbm.boyd_subgrad_method."""
 import numpy as np
 import pytest
-from moirais.fn.cvxsbm import boyd_subgrad_method
+from morie.fn.cvxsbm import boyd_subgrad_method
 
 
 def test_cvxsbm_basic():

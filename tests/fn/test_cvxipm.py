@@ -1,7 +1,7 @@
 """Tests for cvxipm.boyd_interior_point."""
 import numpy as np
 import pytest
-from moirais.fn.cvxipm import boyd_interior_point
+from morie.fn.cvxipm import boyd_interior_point
 
 
 def test_cvxipm_basic():

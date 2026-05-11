@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.crtbl — bail grant rate."""
+"""Tests for morie.fn.crtbl — bail grant rate."""
 
 import pytest
-from moirais.fn.crtbl import court_bail_rate
-from moirais.fn._containers import CrimeResult
+from morie.fn.crtbl import court_bail_rate
+from morie.fn._containers import CrimeResult
 
 
 class TestBailRate:

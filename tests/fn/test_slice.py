@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.slice -- slice sampling."""
+"""Tests for morie.fn.slice -- slice sampling."""
 
 import numpy as np
-from moirais.fn.slice import slice_sampler
+from morie.fn.slice import slice_sampler
 
 
 def test_returns_dict():

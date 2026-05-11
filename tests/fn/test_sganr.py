@@ -1,6 +1,6 @@
 """Tests for anisotropy ratio."""
 import numpy as np
-from moirais.fn.sganr import sganr
+from morie.fn.sganr import sganr
 
 
 def test_sganr_smoke():

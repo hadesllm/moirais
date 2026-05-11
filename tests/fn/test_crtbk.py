@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.crtbk — court backlog."""
+"""Tests for morie.fn.crtbk — court backlog."""
 
 import pytest
-from moirais.fn.crtbk import court_backlog
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.crtbk import court_backlog
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCourtBacklog:

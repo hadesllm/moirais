@@ -1,7 +1,7 @@
 """Tests for prgxnt.perplexity."""
 import numpy as np
 import pytest
-from moirais.fn.prgxnt import perplexity
+from morie.fn.prgxnt import perplexity
 
 
 def test_prgxnt_basic():

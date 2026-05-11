@@ -1,7 +1,7 @@
 """Tests for gail.gail."""
 import numpy as np
 import pytest
-from moirais.fn.gail import gail
+from morie.fn.gail import gail
 
 
 def test_gail_basic():

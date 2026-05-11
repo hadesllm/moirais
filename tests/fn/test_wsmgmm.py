@@ -1,7 +1,7 @@
 """Tests for wsmgmm.wasserman_gmm_em."""
 import numpy as np
 import pytest
-from moirais.fn.wsmgmm import wasserman_gmm_em
+from morie.fn.wsmgmm import wasserman_gmm_em
 
 
 def test_wsmgmm_basic():

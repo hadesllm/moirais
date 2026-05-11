@@ -1,7 +1,7 @@
 """Tests for polqnt.polar_quantization."""
 import numpy as np
 import pytest
-from moirais.fn.polqnt import polar_quantization
+from morie.fn.polqnt import polar_quantization
 
 
 def test_polqnt_basic():

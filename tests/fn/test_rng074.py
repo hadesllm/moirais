@@ -1,7 +1,7 @@
 """Tests for rng074.rangayyan_ch3_dft_real_imag_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.rng074 import rangayyan_ch3_dft_real_imag_decomposition
+from morie.fn.rng074 import rangayyan_ch3_dft_real_imag_decomposition
 
 
 def test_rng074_basic():

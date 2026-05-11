@@ -1,7 +1,7 @@
 """Tests for wsmwhz.wasserman_white_huber."""
 import numpy as np
 import pytest
-from moirais.fn.wsmwhz import wasserman_white_huber
+from morie.fn.wsmwhz import wasserman_white_huber
 
 
 def test_wsmwhz_basic():

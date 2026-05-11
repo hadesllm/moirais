@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxcpv -- Vine copula spatial"""
+"""Tests for morie.fn.zxcpv -- Vine copula spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxcpv import copula_vine_sp
+from morie.fn.zxcpv import copula_vine_sp
 
 
 class TestCopulaVineSp:

@@ -1,7 +1,7 @@
 """Test ubcon."""
 import numpy as np
 import pytest
-from moirais.fn.ubcon import ubcon
+from morie.fn.ubcon import ubcon
 
 
 def test_ubcon_basic():

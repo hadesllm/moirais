@@ -1,7 +1,7 @@
 """Tests for gb233.gibbons_edf_asymp_normal."""
 import numpy as np
 import pytest
-from moirais.fn.gb233 import gibbons_edf_asymp_normal
+from morie.fn.gb233 import gibbons_edf_asymp_normal
 
 
 def test_gb233_basic():

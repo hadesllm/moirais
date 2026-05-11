@@ -1,7 +1,7 @@
 """Test gdadr."""
 import numpy as np
 import pytest
-from moirais.fn.gdadr import gdadr
+from morie.fn.gdadr import gdadr
 
 
 def test_gdadr_basic():

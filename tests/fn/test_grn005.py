@@ -1,7 +1,7 @@
 """Tests for grn005.geron_ch4_normal_equation."""
 import numpy as np
 import pytest
-from moirais.fn.grn005 import geron_ch4_normal_equation
+from morie.fn.grn005 import geron_ch4_normal_equation
 
 
 def test_grn005_basic():

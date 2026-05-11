@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.roslw -- Wind rose plot."""
+"""Tests for morie.fn.roslw -- Wind rose plot."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.roslw import wind_rose, roslw
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.roslw import wind_rose, roslw
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRoslw:

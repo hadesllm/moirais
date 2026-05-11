@@ -1,7 +1,7 @@
 """Tests for fnscale.functional_scale."""
 import numpy as np
 import pytest
-from moirais.fn.fnscale import functional_scale
+from morie.fn.fnscale import functional_scale
 
 
 def test_fnscale_basic():

@@ -1,7 +1,7 @@
 """Test fofwi."""
 import numpy as np
 import pytest
-from moirais.fn.fofwi import fofwi
+from morie.fn.fofwi import fofwi
 
 
 def test_fofwi_basic():

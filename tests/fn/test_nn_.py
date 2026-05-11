@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.nn_ -- Simple neural network."""
+"""Tests for morie.fn.nn_ -- Simple neural network."""
 
 import numpy as np
 import pytest
-from moirais.fn.nn_ import nn_classify
+from morie.fn.nn_ import nn_classify
 
 
 class TestNnClassify:

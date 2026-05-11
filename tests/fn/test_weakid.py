@@ -1,7 +1,7 @@
 """Tests for weakid.weak_identification_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.weakid import weak_identification_mediation
+from morie.fn.weakid import weak_identification_mediation
 
 
 def test_weakid_basic():

@@ -1,7 +1,7 @@
 """Tests for rnkor.rank_order_statistics."""
 import numpy as np
 import pytest
-from moirais.fn.rnkor import rank_order_statistics
+from morie.fn.rnkor import rank_order_statistics
 
 
 def test_rnkor_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.torus — torus surface area and volume."""
+"""Tests for morie.fn.torus — torus surface area and volume."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.torus import torus_surface
+from morie.fn.torus import torus_surface
 
 
 class TestTorusSurface:

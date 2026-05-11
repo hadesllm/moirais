@@ -1,7 +1,7 @@
 """Test foeqt."""
 import numpy as np
 import pytest
-from moirais.fn.foeqt import foeqt
+from morie.fn.foeqt import foeqt
 
 
 def test_foeqt_basic():

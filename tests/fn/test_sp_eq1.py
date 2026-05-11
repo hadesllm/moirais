@@ -1,7 +1,7 @@
 """Tests for sp_eq1.stochastic_physics_equation_1."""
 import numpy as np
 import pytest
-from moirais.fn.sp_eq1 import stochastic_physics_equation_1
+from morie.fn.sp_eq1 import stochastic_physics_equation_1
 
 
 def test_sp_eq1_basic():

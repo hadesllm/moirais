@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsrf -- Spatial random forest"""
+"""Tests for morie.fn.zxsrf -- Spatial random forest"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsrf import spatial_rf
+from morie.fn.zxsrf import spatial_rf
 
 
 class TestSpatialRf:

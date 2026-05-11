@@ -1,7 +1,7 @@
 """Tests for tmlefp.tmle_effective_pi."""
 import numpy as np
 import pytest
-from moirais.fn.tmlefp import tmle_effective_pi
+from morie.fn.tmlefp import tmle_effective_pi
 
 
 def test_tmlefp_basic():

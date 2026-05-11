@@ -1,7 +1,7 @@
 """Test gdyrm."""
 import numpy as np
 import pytest
-from moirais.fn.gdyrm import gdyrm
+from morie.fn.gdyrm import gdyrm
 
 
 def test_gdyrm_basic():

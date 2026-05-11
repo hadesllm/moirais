@@ -1,7 +1,7 @@
 """Tests for gwasem.emmax_gwas."""
 import numpy as np
 import pytest
-from moirais.fn.gwasem import emmax_gwas
+from morie.fn.gwasem import emmax_gwas
 
 
 def test_gwasem_basic():

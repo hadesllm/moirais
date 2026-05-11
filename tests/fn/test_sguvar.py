@@ -1,7 +1,7 @@
 """Tests for sguvar."""
 import numpy as np
 import pytest
-from moirais.fn.sguvar import sguvar
+from morie.fn.sguvar import sguvar
 
 
 def test_sguvar_basic():
@@ -27,5 +27,5 @@ def test_sguvar_no_data():
 
 
 def test_sguvar_alias():
-    from moirais.fn.sguvar import sguvar
+    from morie.fn.sguvar import sguvar
     assert sguvar is sguvar

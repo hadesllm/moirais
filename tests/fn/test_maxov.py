@@ -1,6 +1,6 @@
 """Tests for maxov.py - Maximal Overlap DWT."""
 import numpy as np
-from moirais.fn.maxov import maximal_overlap_dwt, maxov
+from morie.fn.maxov import maximal_overlap_dwt, maxov
 
 
 def test_modwt_returns_result():

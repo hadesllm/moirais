@@ -2,7 +2,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.hajek import hajek, hajek_mean
+from morie.fn.hajek import hajek, hajek_mean
 
 
 def test_hajek_returns_dict():

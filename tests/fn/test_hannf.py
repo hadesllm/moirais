@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.hannf import hann_filter, hannf
-from moirais.fn._containers import SignalResult
+from morie.fn.hannf import hann_filter, hannf
+from morie.fn._containers import SignalResult
 
 
 class TestHannFilter:

@@ -1,7 +1,7 @@
 """Tests for hmcnv.geron_convolutional_layer."""
 import numpy as np
 import pytest
-from moirais.fn.hmcnv import geron_convolutional_layer
+from morie.fn.hmcnv import geron_convolutional_layer
 
 
 def test_hmcnv_basic():

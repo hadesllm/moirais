@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.getis — Getis-Ord Gi* hot spot statistic."""
+"""Tests for morie.fn.getis — Getis-Ord Gi* hot spot statistic."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.getis import getis_ord_gi_star
+from morie.fn.getis import getis_ord_gi_star
 
 
 class TestGetisOrdGiStar:

@@ -1,7 +1,7 @@
 """Test nbbar."""
 import numpy as np
 import pytest
-from moirais.fn.nbbar import nbbar
+from morie.fn.nbbar import nbbar
 
 
 def test_nbbar_basic():

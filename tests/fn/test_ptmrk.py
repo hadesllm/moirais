@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptmrk -- Marked point pattern analysis"""
+"""Tests for morie.fn.ptmrk -- Marked point pattern analysis"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptmrk import marked_pp
+from morie.fn.ptmrk import marked_pp
 
 
 class TestMarkedPp:

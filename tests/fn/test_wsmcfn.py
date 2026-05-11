@@ -1,7 +1,7 @@
 """Tests for wsmcfn.wasserman_char_fn."""
 import numpy as np
 import pytest
-from moirais.fn.wsmcfn import wasserman_char_fn
+from morie.fn.wsmcfn import wasserman_char_fn
 
 
 def test_wsmcfn_basic():

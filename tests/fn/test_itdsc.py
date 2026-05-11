@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itdsc — item discrimination (corrected item-total r)."""
+"""Tests for morie.fn.itdsc — item discrimination (corrected item-total r)."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.itdsc import item_discrimination_all
+from morie.fn.itdsc import item_discrimination_all
 
 
 class TestItemDiscriminationAll:

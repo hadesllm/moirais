@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgqnt -- Kriging quantile prediction"""
+"""Tests for morie.fn.kgqnt -- Kriging quantile prediction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgqnt import kriging_quantile
+from morie.fn.kgqnt import kriging_quantile
 
 
 class TestKrigingQuantile:

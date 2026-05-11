@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.psnrm."""
+"""Tests for morie.fn.psnrm."""
 
 import numpy as np
 import pytest
-from moirais.fn.psnrm import psnrm
+from morie.fn.psnrm import psnrm
 
 
 class TestPsnrm:

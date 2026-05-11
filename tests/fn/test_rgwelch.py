@@ -1,7 +1,7 @@
 """Tests for rgwelch.rangayyan_welch_psd."""
 import numpy as np
 import pytest
-from moirais.fn.rgwelch import rangayyan_welch_psd
+from morie.fn.rgwelch import rangayyan_welch_psd
 
 
 def test_rgwelch_basic():

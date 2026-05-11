@@ -1,7 +1,7 @@
 """Tests for netcmp.network_comparison."""
 import numpy as np
 import pytest
-from moirais.fn.netcmp import network_comparison
+from morie.fn.netcmp import network_comparison
 
 
 def test_netcmp_basic():

@@ -1,7 +1,7 @@
 """Tests for grubbs.grubbs_test."""
 import numpy as np
 import pytest
-from moirais.fn.grubbs import grubbs_test
+from morie.fn.grubbs import grubbs_test
 
 
 def test_grubbs_basic():

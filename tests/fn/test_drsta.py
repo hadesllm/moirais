@@ -1,7 +1,7 @@
 """Tests for drsta.dr_staggered_design."""
 import numpy as np
 import pytest
-from moirais.fn.drsta import dr_staggered_design
+from morie.fn.drsta import dr_staggered_design
 
 
 def test_drsta_basic():

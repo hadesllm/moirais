@@ -1,7 +1,7 @@
 """Test gcadp."""
 import numpy as np
 import pytest
-from moirais.fn.gcadp import gcadp
+from morie.fn.gcadp import gcadp
 
 
 def test_gcadp_basic():

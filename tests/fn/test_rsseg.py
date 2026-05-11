@@ -1,7 +1,7 @@
 """Test rsseg."""
 import numpy as np
 import pytest
-from moirais.fn.rsseg import rsseg
+from morie.fn.rsseg import rsseg
 
 
 def test_rsseg_basic():

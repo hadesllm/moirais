@@ -1,7 +1,7 @@
 """Tests for cvxsup.boyd_support_hyperplane."""
 import numpy as np
 import pytest
-from moirais.fn.cvxsup import boyd_support_hyperplane
+from morie.fn.cvxsup import boyd_support_hyperplane
 
 
 def test_cvxsup_basic():

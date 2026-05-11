@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svcls -- Minimum winning coalition size"""
+"""Tests for morie.fn.svcls -- Minimum winning coalition size"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svcls import coalition_size
+from morie.fn.svcls import coalition_size
 
 
 class TestCoalitionSize:

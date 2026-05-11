@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cfore — Causal forest CATE."""
+"""Tests for morie.fn.cfore — Causal forest CATE."""
 import numpy as np
 import pytest
-from moirais.fn.cfore import cfore
+from morie.fn.cfore import cfore
 
 
 @pytest.fixture()
@@ -56,5 +56,5 @@ def test_heterogeneity_detected(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.cfore import cheatsheet
+    from morie.fn.cfore import cheatsheet
     assert len(cheatsheet()) > 0

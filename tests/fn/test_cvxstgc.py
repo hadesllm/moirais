@@ -1,7 +1,7 @@
 """Tests for cvxstgc.boyd_strong_convex."""
 import numpy as np
 import pytest
-from moirais.fn.cvxstgc import boyd_strong_convex
+from morie.fn.cvxstgc import boyd_strong_convex
 
 
 def test_cvxstgc_basic():

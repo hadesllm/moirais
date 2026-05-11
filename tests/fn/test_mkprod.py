@@ -1,7 +1,7 @@
 """Tests for mkprod.mackinnon_distribution_products."""
 import numpy as np
 import pytest
-from moirais.fn.mkprod import mackinnon_distribution_products
+from morie.fn.mkprod import mackinnon_distribution_products
 
 
 def test_mkprod_basic():

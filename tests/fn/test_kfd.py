@@ -1,7 +1,7 @@
 """Tests for kfd — Katz fractal dimension."""
 import numpy as np
-from moirais.fn.kfd import katz_fd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.kfd import katz_fd
+from morie.fn._containers import DescriptiveResult
 
 
 def test_kfd_basic(rng):

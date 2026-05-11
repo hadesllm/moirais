@@ -1,7 +1,7 @@
 """Test gradient_stats."""
 import numpy as np
-from moirais.fn.grdst import gradient_stats, grdst
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.grdst import gradient_stats, grdst
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGradientStats:

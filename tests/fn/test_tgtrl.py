@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tgtrl — Target trial emulation."""
+"""Tests for morie.fn.tgtrl — Target trial emulation."""
 
 import pandas as pd
 import pytest
 
-from moirais.fn.tgtrl import target_trial
+from morie.fn.tgtrl import target_trial
 
 
 class TestTargetTrial:

@@ -1,7 +1,7 @@
 """Tests for ksr034.kosorok_ch2_glivenko_cantelli_bracketing."""
 import numpy as np
 import pytest
-from moirais.fn.ksr034 import kosorok_ch2_glivenko_cantelli_bracketing
+from morie.fn.ksr034 import kosorok_ch2_glivenko_cantelli_bracketing
 
 
 def test_ksr034_basic():

@@ -1,7 +1,7 @@
 """Test dtzpf."""
 import numpy as np
 import pytest
-from moirais.fn.dtzpf import dtzpf
+from morie.fn.dtzpf import dtzpf
 
 
 def test_dtzpf_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ratch -- data repair pipeline."""
+"""Tests for morie.fn.ratch -- data repair pipeline."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.ratch import repair_pipeline, ratch
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ratch import repair_pipeline, ratch
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRatch:

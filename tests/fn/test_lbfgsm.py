@@ -1,7 +1,7 @@
 """Tests for lbfgsm.lbfgs."""
 import numpy as np
 import pytest
-from moirais.fn.lbfgsm import lbfgs
+from morie.fn.lbfgsm import lbfgs
 
 
 def test_lbfgsm_basic():

@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.savfg -- Save figure."""
+"""Tests for morie.fn.savfg -- Save figure."""
 
 import pytest
 from unittest.mock import MagicMock
 
-from moirais.fn.savfg import save_figure, savfg, _VALID_FORMATS
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.savfg import save_figure, savfg, _VALID_FORMATS
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSavfg:

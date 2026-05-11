@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kylo -- K-fold cross-validation."""
+"""Tests for morie.fn.kylo -- K-fold cross-validation."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.kylo import kfold_cv, kylo
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.kylo import kfold_cv, kylo
+from morie.fn._containers import DescriptiveResult
 
 
 class TestKylo:

@@ -1,7 +1,7 @@
 """Tests for hmcart.geron_cart_algorithm."""
 import numpy as np
 import pytest
-from moirais.fn.hmcart import geron_cart_algorithm
+from morie.fn.hmcart import geron_cart_algorithm
 
 
 def test_hmcart_basic():

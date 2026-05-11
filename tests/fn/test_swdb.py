@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.swdb -- Star Wars dataset loader."""
+"""Tests for morie.fn.swdb -- Star Wars dataset loader."""
 
 import pytest
-from moirais.fn.swdb import load_sw_dataset, swdb
+from morie.fn.swdb import load_sw_dataset, swdb
 
 
 class TestSwdb:

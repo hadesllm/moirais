@@ -1,7 +1,7 @@
 """Test dtbur."""
 import numpy as np
 import pytest
-from moirais.fn.dtbur import dtbur
+from morie.fn.dtbur import dtbur
 
 
 def test_dtbur_basic():

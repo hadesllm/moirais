@@ -1,6 +1,6 @@
 """Tests for Moran residual test."""
 import numpy as np
-from moirais.fn.sgrmr import sgrmr
+from morie.fn.sgrmr import sgrmr
 
 
 def test_sgrmr_smoke():
@@ -19,7 +19,7 @@ def test_sgrmr_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgrmr import cheatsheet
+    from morie.fn.sgrmr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

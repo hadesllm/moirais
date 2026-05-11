@@ -1,7 +1,7 @@
 """Tests for wavts.wavelet_time_series."""
 import numpy as np
 import pytest
-from moirais.fn.wavts import wavelet_time_series
+from morie.fn.wavts import wavelet_time_series
 
 
 def test_wavts_basic():

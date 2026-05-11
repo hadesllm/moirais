@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cddaly -- DALY."""
+"""Tests for morie.fn.cddaly -- DALY."""
 
 import pytest
-from moirais.fn.cddaly import daly_calc
+from morie.fn.cddaly import daly_calc
 
 
 class TestDALY:

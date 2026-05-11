@@ -1,7 +1,7 @@
 """Tests for idwvar."""
 import numpy as np
 import pytest
-from moirais.fn.idwvar import idwvar
+from morie.fn.idwvar import idwvar
 
 
 def test_idwvar_basic():
@@ -27,5 +27,5 @@ def test_idwvar_no_data():
 
 
 def test_idwvar_alias():
-    from moirais.fn.idwvar import idwvar
+    from morie.fn.idwvar import idwvar
     assert idwvar is idwvar

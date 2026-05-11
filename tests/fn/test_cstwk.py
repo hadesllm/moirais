@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cstwk — custody work program."""
+"""Tests for morie.fn.cstwk — custody work program."""
 
 import pytest
 import pandas as pd
-from moirais.fn.cstwk import custody_work_program
-from moirais.fn._containers import CrimeResult
+from morie.fn.cstwk import custody_work_program
+from morie.fn._containers import CrimeResult
 
 
 class TestCustodyWorkProgram:

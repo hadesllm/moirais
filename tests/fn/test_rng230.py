@@ -1,7 +1,7 @@
 """Tests for rng230.rangayyan_ch4_homomorphic_multiplicative_signal."""
 import numpy as np
 import pytest
-from moirais.fn.rng230 import rangayyan_ch4_homomorphic_multiplicative_signal
+from morie.fn.rng230 import rangayyan_ch4_homomorphic_multiplicative_signal
 
 
 def test_rng230_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cmprs — Competing risks."""
+"""Tests for morie.fn.cmprs — Competing risks."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cmprs import competing_risks
+from morie.fn.cmprs import competing_risks
 
 
 class TestCompetingRisks:

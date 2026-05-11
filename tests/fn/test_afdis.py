@@ -1,7 +1,7 @@
 """Test afdis."""
 import numpy as np
 import pytest
-from moirais.fn.afdis import afdis
+from morie.fn.afdis import afdis
 
 
 def test_afdis_basic():

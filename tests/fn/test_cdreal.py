@@ -1,7 +1,7 @@
 """Tests for cdreal."""
 import numpy as np
 import pytest
-from moirais.fn.cdreal import cdreal
+from morie.fn.cdreal import cdreal
 
 
 def test_cdreal_basic():
@@ -27,5 +27,5 @@ def test_cdreal_no_data():
 
 
 def test_cdreal_alias():
-    from moirais.fn.cdreal import cdreal
+    from morie.fn.cdreal import cdreal
     assert cdreal is cdreal

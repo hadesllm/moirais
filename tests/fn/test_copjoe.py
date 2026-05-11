@@ -1,7 +1,7 @@
 """Tests for copjoe.joe_copula."""
 import numpy as np
 import pytest
-from moirais.fn.copjoe import joe_copula
+from morie.fn.copjoe import joe_copula
 
 
 def test_copjoe_basic():

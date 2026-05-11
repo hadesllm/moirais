@@ -1,7 +1,7 @@
 """Tests for hrzb1.horowitz_binary_response."""
 import numpy as np
 import pytest
-from moirais.fn.hrzb1 import horowitz_binary_response
+from morie.fn.hrzb1 import horowitz_binary_response
 
 
 def test_hrzb1_basic():

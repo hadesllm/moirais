@@ -1,7 +1,7 @@
 """Test rsalb."""
 import numpy as np
 import pytest
-from moirais.fn.rsalb import rsalb
+from morie.fn.rsalb import rsalb
 
 
 def test_rsalb_basic():

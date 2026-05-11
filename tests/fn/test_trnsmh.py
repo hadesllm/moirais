@@ -1,7 +1,7 @@
 """Tests for trnsmh.transmembrane_topology."""
 import numpy as np
 import pytest
-from moirais.fn.trnsmh import transmembrane_topology
+from morie.fn.trnsmh import transmembrane_topology
 
 
 def test_trnsmh_basic():

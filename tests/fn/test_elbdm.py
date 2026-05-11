@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.elbdm -- elbow method MDS dimensionality."""
+"""Tests for morie.fn.elbdm -- elbow method MDS dimensionality."""
 
-from moirais.fn.elbdm import elbow_mds_dim, elbdm
+from morie.fn.elbdm import elbow_mds_dim, elbdm
 
 
 def test_elbdm_smoke():

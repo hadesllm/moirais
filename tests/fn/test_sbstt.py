@@ -1,7 +1,7 @@
 """Tests for sbstt."""
 import numpy as np
 import pytest
-from moirais.fn.sbstt import sbstt
+from morie.fn.sbstt import sbstt
 
 
 def test_sbstt_basic():
@@ -27,5 +27,5 @@ def test_sbstt_no_data():
 
 
 def test_sbstt_alias():
-    from moirais.fn.sbstt import sbstt
+    from morie.fn.sbstt import sbstt
     assert sbstt is sbstt

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.steng -- stress-energy tensor."""
+"""Tests for morie.fn.steng -- stress-energy tensor."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.steng import steng
+from morie.fn.steng import steng
 
 
 def test_returns_dict():

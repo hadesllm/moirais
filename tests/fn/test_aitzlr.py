@@ -1,7 +1,7 @@
 """Tests for aitzlr.compositional_zero_lrem."""
 import numpy as np
 import pytest
-from moirais.fn.aitzlr import compositional_zero_lrem
+from morie.fn.aitzlr import compositional_zero_lrem
 
 
 def test_aitzlr_basic():

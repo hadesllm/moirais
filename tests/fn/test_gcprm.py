@@ -1,7 +1,7 @@
 """Test gcprm."""
 import numpy as np
 import pytest
-from moirais.fn.gcprm import gcprm
+from morie.fn.gcprm import gcprm
 
 
 def test_gcprm_basic():

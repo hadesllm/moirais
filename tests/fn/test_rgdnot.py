@@ -1,7 +1,7 @@
 """Tests for rgdnot.rangayyan_dicrotic_notch."""
 import numpy as np
 import pytest
-from moirais.fn.rgdnot import rangayyan_dicrotic_notch
+from morie.fn.rgdnot import rangayyan_dicrotic_notch
 
 
 def test_rgdnot_basic():

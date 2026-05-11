@@ -1,7 +1,7 @@
 """Tests for spcrad.spectral_radius."""
 import numpy as np
 import pytest
-from moirais.fn.spcrad import spectral_radius
+from morie.fn.spcrad import spectral_radius
 
 
 def test_spcrad_basic():

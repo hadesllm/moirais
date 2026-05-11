@@ -1,7 +1,7 @@
 """Test wqcol."""
 import numpy as np
 import pytest
-from moirais.fn.wqcol import wqcol
+from morie.fn.wqcol import wqcol
 
 
 def test_wqcol_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rcagr -- agreement scores."""
+"""Tests for morie.fn.rcagr -- agreement scores."""
 
 import numpy as np
-from moirais.fn.rcagr import agreement_scores, rcagr
+from morie.fn.rcagr import agreement_scores, rcagr
 
 
 def test_rcagr_perfect():

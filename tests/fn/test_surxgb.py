@@ -1,7 +1,7 @@
 """Tests for surxgb.xgb_survival."""
 import numpy as np
 import pytest
-from moirais.fn.surxgb import xgb_survival
+from morie.fn.surxgb import xgb_survival
 
 
 def test_surxgb_basic():

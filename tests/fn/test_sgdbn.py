@@ -1,6 +1,6 @@
 """Tests for spatial Durbin model."""
 import numpy as np
-from moirais.fn.sgdbn import sgdbn
+from morie.fn.sgdbn import sgdbn
 
 
 def test_sgdbn_smoke():
@@ -23,7 +23,7 @@ def test_sgdbn_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgdbn import cheatsheet
+    from morie.fn.sgdbn import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

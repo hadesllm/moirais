@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.entqm -- von Neumann entropy."""
+"""Tests for morie.fn.entqm -- von Neumann entropy."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.entqm import entqm
+from morie.fn.entqm import entqm
 
 
 def test_returns_dict():

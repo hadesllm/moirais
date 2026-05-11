@@ -1,7 +1,7 @@
 """Tests for emdsg -- Empirical Mode Decomposition."""
 import numpy as np
-from moirais.fn.emdsg import emd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.emdsg import emd
+from morie.fn._containers import DescriptiveResult
 
 
 def test_emd_basic():

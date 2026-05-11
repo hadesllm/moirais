@@ -1,7 +1,7 @@
 """Tests for olrFn.outgoing_longwave."""
 import numpy as np
 import pytest
-from moirais.fn.olrFn import outgoing_longwave
+from morie.fn.olrFn import outgoing_longwave
 
 
 def test_olrFn_basic():

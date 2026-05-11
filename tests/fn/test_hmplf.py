@@ -1,7 +1,7 @@
 """Tests for hmplf.geron_polynomial_features."""
 import numpy as np
 import pytest
-from moirais.fn.hmplf import geron_polynomial_features
+from morie.fn.hmplf import geron_polynomial_features
 
 
 def test_hmplf_basic():

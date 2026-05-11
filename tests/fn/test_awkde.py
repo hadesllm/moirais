@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.awkde — adaptive bandwidth KDE."""
+"""Tests for morie.fn.awkde — adaptive bandwidth KDE."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.awkde import awkde
+from morie.fn.awkde import awkde
 
 
 class TestAwkde:

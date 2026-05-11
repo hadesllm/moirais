@@ -1,7 +1,7 @@
 """Tests for bndnvg.bound_naive_gross."""
 import numpy as np
 import pytest
-from moirais.fn.bndnvg import bound_naive_gross
+from morie.fn.bndnvg import bound_naive_gross
 
 
 def test_bndnvg_basic():

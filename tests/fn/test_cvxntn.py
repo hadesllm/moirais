@@ -1,7 +1,7 @@
 """Tests for cvxntn.boyd_newton."""
 import numpy as np
 import pytest
-from moirais.fn.cvxntn import boyd_newton
+from morie.fn.cvxntn import boyd_newton
 
 
 def test_cvxntn_basic():

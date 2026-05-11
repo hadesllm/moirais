@@ -1,7 +1,7 @@
 """Test mollwd."""
 import numpy as np
 import pytest
-from moirais.fn.mollwd import mollwd
+from morie.fn.mollwd import mollwd
 
 
 def test_mollwd_basic():

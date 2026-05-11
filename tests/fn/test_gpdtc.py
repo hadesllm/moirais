@@ -1,7 +1,7 @@
 """Tests for gpdtc."""
 import numpy as np
 import pytest
-from moirais.fn.gpdtc import gpdtc
+from morie.fn.gpdtc import gpdtc
 
 
 def test_gpdtc_basic():
@@ -27,5 +27,5 @@ def test_gpdtc_no_data():
 
 
 def test_gpdtc_alias():
-    from moirais.fn.gpdtc import gpdtc
+    from morie.fn.gpdtc import gpdtc
     assert gpdtc is gpdtc

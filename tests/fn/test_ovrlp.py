@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ovrlp — Overlap weights (causal inference) + Szymkiewicz-Simpson."""
+"""Tests for morie.fn.ovrlp — Overlap weights (causal inference) + Szymkiewicz-Simpson."""
 import numpy as np
 import pytest
-from moirais.fn.ovrlp import ovrlp, overlap_coefficient
+from morie.fn.ovrlp import ovrlp, overlap_coefficient
 
 
 @pytest.fixture()
@@ -57,5 +57,5 @@ def test_set_overlap_subset():
 
 
 def test_cheatsheet():
-    from moirais.fn.ovrlp import cheatsheet
+    from morie.fn.ovrlp import cheatsheet
     assert len(cheatsheet()) > 0

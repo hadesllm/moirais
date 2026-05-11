@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tthet — Jacobi theta function."""
+"""Tests for morie.fn.tthet — Jacobi theta function."""
 
 import pytest
 
-from moirais.fn.tthet import theta_function
+from morie.fn.tthet import theta_function
 
 
 class TestThetaFunction:

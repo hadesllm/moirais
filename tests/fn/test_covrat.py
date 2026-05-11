@@ -1,7 +1,7 @@
 """Tests for covrat.covratio."""
 import numpy as np
 import pytest
-from moirais.fn.covrat import covratio
+from morie.fn.covrat import covratio
 
 
 def test_covrat_basic():

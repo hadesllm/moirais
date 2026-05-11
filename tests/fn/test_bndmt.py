@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bndmt -- Banded matrix solver."""
+"""Tests for morie.fn.bndmt -- Banded matrix solver."""
 
 import numpy as np
-from moirais.fn.bndmt import banded_solve, bndmt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bndmt import banded_solve, bndmt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBndmt:

@@ -1,7 +1,7 @@
 """Tests for sgtpns.sgt_perron_frobenius."""
 import numpy as np
 import pytest
-from moirais.fn.sgtpns import sgt_perron_frobenius
+from morie.fn.sgtpns import sgt_perron_frobenius
 
 
 def test_sgtpns_basic():

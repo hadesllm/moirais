@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bblck — Blackbox scaling."""
+"""Tests for morie.fn.bblck — Blackbox scaling."""
 import numpy as np
 import pytest
 
-from moirais.fn.bblck import bblck
+from morie.fn.bblck import bblck
 
 
 def test_bblck_smoke():
@@ -13,7 +13,7 @@ def test_bblck_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.bblck import cheatsheet
+    from morie.fn.bblck import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

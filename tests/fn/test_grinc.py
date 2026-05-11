@@ -1,7 +1,7 @@
 """Tests for grinc.geron_in_context_learning."""
 import numpy as np
 import pytest
-from moirais.fn.grinc import geron_in_context_learning
+from morie.fn.grinc import geron_in_context_learning
 
 
 def test_grinc_basic():

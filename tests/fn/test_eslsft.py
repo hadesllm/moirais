@@ -1,7 +1,7 @@
 """Tests for eslsft.esl_softmax."""
 import numpy as np
 import pytest
-from moirais.fn.eslsft import esl_softmax
+from morie.fn.eslsft import esl_softmax
 
 
 def test_eslsft_basic():

@@ -1,7 +1,7 @@
 """Tests for morrisM.morris_screening."""
 import numpy as np
 import pytest
-from moirais.fn.morrisM import morris_screening
+from morie.fn.morrisM import morris_screening
 
 
 def test_morrisM_basic():

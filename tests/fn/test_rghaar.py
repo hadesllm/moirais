@@ -1,7 +1,7 @@
 """Tests for rghaar.rangayyan_haar_wavelet."""
 import numpy as np
 import pytest
-from moirais.fn.rghaar import rangayyan_haar_wavelet
+from morie.fn.rghaar import rangayyan_haar_wavelet
 
 
 def test_rghaar_basic():

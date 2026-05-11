@@ -3,7 +3,7 @@ Tests for L-BFGS quasi-Newton method.
 """
 
 import numpy as np
-from moirais.fn.lbfgs import lbfgs
+from morie.fn.lbfgs import lbfgs
 
 
 class TestLbfgs:

@@ -1,6 +1,6 @@
 """Tests for fpesc.py - FPE score."""
 import numpy as np
-from moirais.fn.fpesc import fpe_score_fn, fpesc
+from morie.fn.fpesc import fpe_score_fn, fpesc
 
 
 def test_fpesc_returns_result():

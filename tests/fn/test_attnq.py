@@ -1,7 +1,7 @@
 """Tests for attnq.scaled_dot_product_attention."""
 import numpy as np
 import pytest
-from moirais.fn.attnq import scaled_dot_product_attention
+from morie.fn.attnq import scaled_dot_product_attention
 
 
 def test_attnq_basic():

@@ -1,6 +1,6 @@
 """Tests for symwv.py - Symlet wavelet."""
 import numpy as np
-from moirais.fn.symwv import symlet_wavelet, symwv
+from morie.fn.symwv import symlet_wavelet, symwv
 
 
 def test_sym4_returns_result():

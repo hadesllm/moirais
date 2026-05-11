@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.glivn — Glivenko-Cantelli uniform convergence test."""
+"""Tests for morie.fn.glivn — Glivenko-Cantelli uniform convergence test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.glivn import glivn, GlivenkoCantelliResult
+from morie.fn.glivn import glivn, GlivenkoCantelliResult
 
 
 @pytest.fixture()

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.minorm."""
+"""Tests for morie.fn.minorm."""
 import numpy as np
 import pytest
-from moirais.fn.minorm import minorm
+from morie.fn.minorm import minorm
 
 
 class TestMinorm:

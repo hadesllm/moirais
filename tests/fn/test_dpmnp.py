@@ -1,7 +1,7 @@
 """Tests for dpmnp.dp_minmax."""
 import numpy as np
 import pytest
-from moirais.fn.dpmnp import dp_minmax
+from morie.fn.dpmnp import dp_minmax
 
 
 def test_dpmnp_basic():

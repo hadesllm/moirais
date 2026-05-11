@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svtcs -- Top cycle set computation"""
+"""Tests for morie.fn.svtcs -- Top cycle set computation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svtcs import top_cycle_set
+from morie.fn.svtcs import top_cycle_set
 
 
 class TestTopCycleSet:

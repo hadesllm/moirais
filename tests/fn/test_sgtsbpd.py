@@ -1,7 +1,7 @@
 """Tests for sgtsbpd.sgt_spectral_radius."""
 import numpy as np
 import pytest
-from moirais.fn.sgtsbpd import sgt_spectral_radius
+from morie.fn.sgtsbpd import sgt_spectral_radius
 
 
 def test_sgtsbpd_basic():

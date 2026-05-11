@@ -1,7 +1,7 @@
 """Test slcsp."""
 import numpy as np
 import pytest
-from moirais.fn.slcsp import slcsp
+from morie.fn.slcsp import slcsp
 
 
 def test_slcsp_basic():

@@ -1,7 +1,7 @@
 """Test sawer."""
 import numpy as np
 import pytest
-from moirais.fn.sawer import sawer
+from morie.fn.sawer import sawer
 
 
 def test_sawer_basic():

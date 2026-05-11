@@ -1,7 +1,7 @@
 """Tests for causmrop.causal_robins_g_formula."""
 import numpy as np
 import pytest
-from moirais.fn.causmrop import causal_robins_g_formula
+from morie.fn.causmrop import causal_robins_g_formula
 
 
 def test_causmrop_basic():

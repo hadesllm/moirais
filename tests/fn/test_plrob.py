@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.plrob — Robinson partially linear estimator."""
+"""Tests for morie.fn.plrob — Robinson partially linear estimator."""
 
 import numpy as np
 import pytest
-from moirais.fn.plrob import plrob
+from morie.fn.plrob import plrob
 
 
 def test_returns_dict():

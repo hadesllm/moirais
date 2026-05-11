@@ -1,7 +1,7 @@
 """Test afirr."""
 import numpy as np
 import pytest
-from moirais.fn.afirr import afirr
+from morie.fn.afirr import afirr
 
 
 def test_afirr_basic():

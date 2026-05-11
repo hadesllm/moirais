@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rcd_g — recidivism by gender."""
+"""Tests for morie.fn.rcd_g — recidivism by gender."""
 
 import pandas as pd
-from moirais.fn.rcd_g import recidivism_by_gender, rcd_g
+from morie.fn.rcd_g import recidivism_by_gender, rcd_g
 
 
 class TestRecidivismByGender:

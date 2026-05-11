@@ -1,7 +1,7 @@
 """Test gdeld."""
 import numpy as np
 import pytest
-from moirais.fn.gdeld import gdeld
+from morie.fn.gdeld import gdeld
 
 
 def test_gdeld_basic():

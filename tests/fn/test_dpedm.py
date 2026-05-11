@@ -1,7 +1,7 @@
 """Tests for dpedm.approx_dp."""
 import numpy as np
 import pytest
-from moirais.fn.dpedm import approx_dp
+from morie.fn.dpedm import approx_dp
 
 
 def test_dpedm_basic():

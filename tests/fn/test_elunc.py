@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.elunc."""
+"""Tests for morie.fn.elunc."""
 
 import numpy as np
 import pytest
-from moirais.fn.elunc import elunc
+from morie.fn.elunc import elunc
 
 
 class TestElunc:

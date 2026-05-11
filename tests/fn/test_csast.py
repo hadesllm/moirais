@@ -1,7 +1,7 @@
 """Test csast."""
 import numpy as np
 import pytest
-from moirais.fn.csast import csast
+from morie.fn.csast import csast
 
 
 def test_csast_basic():

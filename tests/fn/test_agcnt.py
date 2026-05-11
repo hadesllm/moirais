@@ -1,7 +1,7 @@
 """Test agcnt."""
 import numpy as np
 import pytest
-from moirais.fn.agcnt import agcnt
+from morie.fn.agcnt import agcnt
 
 
 def test_agcnt_basic():

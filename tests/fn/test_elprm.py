@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.elprm."""
+"""Tests for morie.fn.elprm."""
 
 import numpy as np
 import pytest
-from moirais.fn.elprm import elprm
+from morie.fn.elprm import elprm
 
 
 class TestElprm:

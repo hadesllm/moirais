@@ -1,7 +1,7 @@
 """Tests for datasb.data_subset_refutation."""
 import numpy as np
 import pytest
-from moirais.fn.datasb import data_subset_refutation
+from morie.fn.datasb import data_subset_refutation
 
 
 def test_datasb_basic():

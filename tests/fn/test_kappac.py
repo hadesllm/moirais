@@ -1,7 +1,7 @@
 """Tests for kappac.cohens_kappa."""
 import numpy as np
 import pytest
-from moirais.fn.kappac import cohens_kappa
+from morie.fn.kappac import cohens_kappa
 
 
 def test_kappac_basic():

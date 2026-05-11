@@ -1,7 +1,7 @@
 """Tests for alfqud.alphadev_quicksort_disc."""
 import numpy as np
 import pytest
-from moirais.fn.alfqud import alphadev_quicksort_disc
+from morie.fn.alfqud import alphadev_quicksort_disc
 
 
 def test_alfqud_basic():

@@ -1,7 +1,7 @@
 """Tests for cvxbck.boyd_backtracking."""
 import numpy as np
 import pytest
-from moirais.fn.cvxbck import boyd_backtracking
+from morie.fn.cvxbck import boyd_backtracking
 
 
 def test_cvxbck_basic():

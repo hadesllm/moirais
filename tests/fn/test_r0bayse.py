@@ -1,7 +1,7 @@
 """Tests for r0bayse.basic_reproduction."""
 import numpy as np
 import pytest
-from moirais.fn.r0bayse import basic_reproduction
+from morie.fn.r0bayse import basic_reproduction
 
 
 def test_r0bayse_basic():

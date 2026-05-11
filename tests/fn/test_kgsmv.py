@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgsmv -- Simple kriging variance"""
+"""Tests for morie.fn.kgsmv -- Simple kriging variance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgsmv import sk_variance
+from morie.fn.kgsmv import sk_variance
 
 
 class TestSkVariance:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cmpgn — compliance by gender."""
+"""Tests for morie.fn.cmpgn — compliance by gender."""
 
 import pandas as pd
-from moirais.fn.cmpgn import compliance_by_gender
+from morie.fn.cmpgn import compliance_by_gender
 
 
 class TestComplianceByGender:

@@ -1,7 +1,7 @@
 """Tests for emgmu -- EMG MUAP detection."""
 import numpy as np
-from moirais.fn.emgmu import emgmu
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.emgmu import emgmu
+from morie.fn._containers import DescriptiveResult
 
 
 def test_emgmu_basic():

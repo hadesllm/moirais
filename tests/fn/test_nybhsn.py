@@ -1,7 +1,7 @@
 """Tests for nybhsn.nyblom_hansen_stability."""
 import numpy as np
 import pytest
-from moirais.fn.nybhsn import nyblom_hansen_stability
+from morie.fn.nybhsn import nyblom_hansen_stability
 
 
 def test_nybhsn_basic():

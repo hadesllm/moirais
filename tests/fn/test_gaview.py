@@ -1,7 +1,7 @@
 """Test gaview."""
 import numpy as np
 import pytest
-from moirais.fn.gaview import gaview
+from morie.fn.gaview import gaview
 
 
 def test_gaview_basic():

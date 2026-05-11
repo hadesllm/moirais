@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.suhdnk -- heavy drinking."""
+"""Tests for morie.fn.suhdnk -- heavy drinking."""
 
 import pytest
-from moirais.fn.suhdnk import heavy_drinking
+from morie.fn.suhdnk import heavy_drinking
 
 
 class TestHeavyDrinking:

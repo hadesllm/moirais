@@ -1,7 +1,7 @@
 """Tests for rapaf.adjusted_paf."""
 import numpy as np
 import pytest
-from moirais.fn.rapaf import adjusted_paf
+from morie.fn.rapaf import adjusted_paf
 
 
 def test_rapaf_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sfaic."""
+"""Tests for morie.fn.sfaic."""
 import numpy as np
 import pytest
-from moirais.fn.sfaic import sfaic
+from morie.fn.sfaic import sfaic
 
 
 class TestSfaic:

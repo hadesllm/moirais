@@ -1,7 +1,7 @@
 """Tests for maeggr.ma_egger_test."""
 import numpy as np
 import pytest
-from moirais.fn.maeggr import ma_egger_test
+from morie.fn.maeggr import ma_egger_test
 
 
 def test_maeggr_basic():

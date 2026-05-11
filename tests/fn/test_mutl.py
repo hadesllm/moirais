@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mutl — mutual information."""
+"""Tests for morie.fn.mutl — mutual information."""
 import numpy as np
 import pytest
-from moirais.fn.mutl import mutual_information
+from morie.fn.mutl import mutual_information
 
 
 class TestMutualInfo:

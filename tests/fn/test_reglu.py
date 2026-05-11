@@ -1,7 +1,7 @@
 """Tests for reglu.reglu_activation."""
 import numpy as np
 import pytest
-from moirais.fn.reglu import reglu_activation
+from morie.fn.reglu import reglu_activation
 
 
 def test_reglu_basic():

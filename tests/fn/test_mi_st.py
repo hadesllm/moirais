@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.mi_st -- strict invariance."""
+"""Tests for morie.fn.mi_st -- strict invariance."""
 
-from moirais.fn.mi_st import mi_strict
+from morie.fn.mi_st import mi_strict
 
 
 class TestMiStrict:

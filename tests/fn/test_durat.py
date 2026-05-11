@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.durat — Semiparametric duration model."""
+"""Tests for morie.fn.durat — Semiparametric duration model."""
 
 import numpy as np
 import pytest
-from moirais.fn.durat import durat
+from morie.fn.durat import durat
 
 
 def test_returns_dict():

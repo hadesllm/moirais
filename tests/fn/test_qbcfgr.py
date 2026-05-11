@@ -1,7 +1,7 @@
 """Tests for qbcfgr.quantile_balanced_cf."""
 import numpy as np
 import pytest
-from moirais.fn.qbcfgr import quantile_balanced_cf
+from morie.fn.qbcfgr import quantile_balanced_cf
 
 
 def test_qbcfgr_basic():

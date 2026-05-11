@@ -1,7 +1,7 @@
 """Test vmdir."""
 import numpy as np
 import pytest
-from moirais.fn.vmdir import vmdir
+from morie.fn.vmdir import vmdir
 
 
 def test_vmdir_basic():

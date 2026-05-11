@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.gmm2s -- Two-step GMM."""
+"""Tests for morie.fn.gmm2s -- Two-step GMM."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.gmm2s import gmm_twostep, gmm2s
-from moirais.fn._containers import RegressionResult
+from morie.fn.gmm2s import gmm_twostep, gmm2s
+from morie.fn._containers import RegressionResult
 
 
 class TestGMM2Step:

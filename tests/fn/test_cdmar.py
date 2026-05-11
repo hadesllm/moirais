@@ -1,7 +1,7 @@
 """Tests for cdmar."""
 import numpy as np
 import pytest
-from moirais.fn.cdmar import cdmar
+from morie.fn.cdmar import cdmar
 
 
 def test_cdmar_basic():
@@ -27,5 +27,5 @@ def test_cdmar_no_data():
 
 
 def test_cdmar_alias():
-    from moirais.fn.cdmar import cdmar
+    from morie.fn.cdmar import cdmar
     assert cdmar is cdmar

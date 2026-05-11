@@ -1,6 +1,6 @@
 """Tests for nugget effect estimation."""
 import numpy as np
-from moirais.fn.sgnug import sgnug
+from morie.fn.sgnug import sgnug
 
 
 def test_sgnug_smoke():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pt2nd -- Second-order point pattern stats"""
+"""Tests for morie.fn.pt2nd -- Second-order point pattern stats"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pt2nd import second_order_pp
+from morie.fn.pt2nd import second_order_pp
 
 
 class TestSecondOrderPp:

@@ -1,6 +1,6 @@
 """Tests for bheap (binary heap)."""
 import numpy as np
-from moirais.fn.bheap import binary_heap
+from morie.fn.bheap import binary_heap
 
 
 def test_binary_heap_min():

@@ -1,6 +1,6 @@
 """Tests for spwvd.py - Smoothed pseudo Wigner-Ville distribution."""
 import numpy as np
-from moirais.fn.spwvd import smoothed_pseudo_wvd_fn, spwvd
+from morie.fn.spwvd import smoothed_pseudo_wvd_fn, spwvd
 
 
 def test_spwvd_returns_descriptive_result():

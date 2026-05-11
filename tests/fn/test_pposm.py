@@ -1,7 +1,7 @@
 """Tests for pposm.posterior_predictive_mean."""
 import numpy as np
 import pytest
-from moirais.fn.pposm import posterior_predictive_mean
+from morie.fn.pposm import posterior_predictive_mean
 
 
 def test_pposm_basic():

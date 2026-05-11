@@ -1,6 +1,6 @@
 """Tests for little_mcar_test."""
 import numpy as np, pytest
-from moirais.fn.ltmcr import little_mcar_test
+from morie.fn.ltmcr import little_mcar_test
 
 class TestLittleMCAR:
     def test_mcar(self):

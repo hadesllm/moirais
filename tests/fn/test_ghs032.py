@@ -1,7 +1,7 @@
 """Tests for ghs032.ghosal_ch3_polya_tree_density_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.ghs032 import ghosal_ch3_polya_tree_density_bounds
+from morie.fn.ghs032 import ghosal_ch3_polya_tree_density_bounds
 
 
 def test_ghs032_basic():

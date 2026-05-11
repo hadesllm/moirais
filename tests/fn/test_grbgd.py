@@ -1,7 +1,7 @@
 """Tests for grbgd.geron_batch_gradient_descent."""
 import numpy as np
 import pytest
-from moirais.fn.grbgd import geron_batch_gradient_descent
+from morie.fn.grbgd import geron_batch_gradient_descent
 
 
 def test_grbgd_basic():

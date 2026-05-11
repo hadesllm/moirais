@@ -1,7 +1,7 @@
 """Tests for bnskt2.bound_kink_te."""
 import numpy as np
 import pytest
-from moirais.fn.bnskt2 import bound_kink_te
+from morie.fn.bnskt2 import bound_kink_te
 
 
 def test_bnskt2_basic():

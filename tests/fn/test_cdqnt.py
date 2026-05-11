@@ -1,7 +1,7 @@
 """Tests for cdqnt."""
 import numpy as np
 import pytest
-from moirais.fn.cdqnt import cdqnt
+from morie.fn.cdqnt import cdqnt
 
 
 def test_cdqnt_basic():
@@ -27,5 +27,5 @@ def test_cdqnt_no_data():
 
 
 def test_cdqnt_alias():
-    from moirais.fn.cdqnt import cdqnt
+    from morie.fn.cdqnt import cdqnt
     assert cdqnt is cdqnt

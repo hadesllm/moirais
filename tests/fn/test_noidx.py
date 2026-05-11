@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.noidx -- noise exposure."""
+"""Tests for morie.fn.noidx -- noise exposure."""
 
 import pytest
-from moirais.fn.noidx import noise_exposure
+from morie.fn.noidx import noise_exposure
 
 
 class TestNoiseExposure:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.optth — optimal threshold selection."""
+"""Tests for morie.fn.optth — optimal threshold selection."""
 import numpy as np
 import pytest
-from moirais.fn.optth import optimal_threshold, optth
+from morie.fn.optth import optimal_threshold, optth
 
 
 def test_youden_perfect():

@@ -1,7 +1,7 @@
 """Tests for km060.kamath_ch4_krona_efficient."""
 import numpy as np
 import pytest
-from moirais.fn.km060 import kamath_ch4_krona_efficient
+from morie.fn.km060 import kamath_ch4_krona_efficient
 
 
 def test_km060_basic():

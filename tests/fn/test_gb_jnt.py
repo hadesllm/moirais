@@ -1,7 +1,7 @@
 """Tests for gb_jnt.gibbons_joint_order."""
 import numpy as np
 import pytest
-from moirais.fn.gb_jnt import gibbons_joint_order
+from morie.fn.gb_jnt import gibbons_joint_order
 
 
 def test_gb_jnt_basic():

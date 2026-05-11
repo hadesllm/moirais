@@ -1,7 +1,7 @@
 """Tests for dwtA.discrete_wavelet_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.dwtA import discrete_wavelet_anomaly
+from morie.fn.dwtA import discrete_wavelet_anomaly
 
 
 def test_dwtA_basic():

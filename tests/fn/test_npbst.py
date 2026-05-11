@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.npbst -- Nonparametric bootstrap inference."""
+"""Tests for morie.fn.npbst -- Nonparametric bootstrap inference."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.npbst import npbst
+from morie.fn.npbst import npbst
 
 
 @pytest.fixture()
@@ -63,5 +63,5 @@ def test_reproducible(sample_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.npbst import cheatsheet
+    from morie.fn.npbst import cheatsheet
     assert "bootstrap" in cheatsheet().lower()

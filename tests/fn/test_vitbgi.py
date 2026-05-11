@@ -1,7 +1,7 @@
 """Tests for vitbgi.vit_b16_init."""
 import numpy as np
 import pytest
-from moirais.fn.vitbgi import vit_b16_init
+from morie.fn.vitbgi import vit_b16_init
 
 
 def test_vitbgi_basic():

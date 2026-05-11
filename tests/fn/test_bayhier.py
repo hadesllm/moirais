@@ -1,7 +1,7 @@
 """Tests for bayhier.hierarchical_pooling."""
 import numpy as np
 import pytest
-from moirais.fn.bayhier import hierarchical_pooling
+from morie.fn.bayhier import hierarchical_pooling
 
 
 def test_bayhier_basic():

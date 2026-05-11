@@ -1,7 +1,7 @@
 """Test overlap_save (olsav)."""
 import numpy as np
-from moirais.fn.olsav import overlap_save, olsav
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.olsav import overlap_save, olsav
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOlsav:

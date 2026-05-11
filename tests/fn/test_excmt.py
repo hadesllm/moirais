@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.excmt -- excess mortality."""
+"""Tests for morie.fn.excmt -- excess mortality."""
 
 import numpy as np
 import pytest
-from moirais.fn.excmt import excess_mortality
+from morie.fn.excmt import excess_mortality
 
 
 class TestExcessMortality:

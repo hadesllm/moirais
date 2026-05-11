@@ -1,4 +1,4 @@
-"""Tests for moirais.gguf_loader — GGUF model file parser."""
+"""Tests for morie.gguf_loader — GGUF model file parser."""
 
 import struct
 import tempfile
@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from moirais.gguf_loader import (
+from morie.gguf_loader import (
     GGML_TYPE_F16,
     GGML_TYPE_F32,
     GGML_TYPE_Q8_0,

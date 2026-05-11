@@ -1,7 +1,7 @@
 """Tests for impfun.genotype_imputation."""
 import numpy as np
 import pytest
-from moirais.fn.impfun import genotype_imputation
+from morie.fn.impfun import genotype_imputation
 
 
 def test_impfun_basic():

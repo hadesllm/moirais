@@ -1,7 +1,7 @@
 """Tests for lightG.lightgcn."""
 import numpy as np
 import pytest
-from moirais.fn.lightG import lightgcn
+from morie.fn.lightG import lightgcn
 
 
 def test_lightG_basic():

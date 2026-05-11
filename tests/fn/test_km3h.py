@@ -1,7 +1,7 @@
 """Tests for km3h.kamath_3h_alignment."""
 import numpy as np
 import pytest
-from moirais.fn.km3h import kamath_3h_alignment
+from morie.fn.km3h import kamath_3h_alignment
 
 
 def test_km3h_basic():

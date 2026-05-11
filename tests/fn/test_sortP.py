@@ -1,7 +1,7 @@
 """Tests for sortP.sortpool."""
 import numpy as np
 import pytest
-from moirais.fn.sortP import sortpool
+from morie.fn.sortP import sortpool
 
 
 def test_sortP_basic():

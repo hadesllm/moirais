@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from moirais.fn.humidex import humidex
+from morie.fn.humidex import humidex
 
 
 def test_humidex_equals_temp_when_dewpoint_is_benchmark():

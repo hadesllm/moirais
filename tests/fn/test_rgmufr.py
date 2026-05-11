@@ -1,7 +1,7 @@
 """Tests for rgmufr.rangayyan_muap_firing_rate."""
 import numpy as np
 import pytest
-from moirais.fn.rgmufr import rangayyan_muap_firing_rate
+from morie.fn.rgmufr import rangayyan_muap_firing_rate
 
 
 def test_rgmufr_basic():

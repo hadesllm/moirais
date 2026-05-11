@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svqud -- Quadratic spatial utility function"""
+"""Tests for morie.fn.svqud -- Quadratic spatial utility function"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svqud import quad_utility
+from morie.fn.svqud import quad_utility
 
 
 class TestQuadUtility:

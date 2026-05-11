@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ocorr — Correlation matrix."""
+"""Tests for morie.fn.ocorr — Correlation matrix."""
 
 import pandas as pd
-from moirais.fn.ocorr import otis_correlation
+from morie.fn.ocorr import otis_correlation
 
 
 class TestOtisCorrelation:

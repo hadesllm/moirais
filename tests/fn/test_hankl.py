@@ -1,6 +1,6 @@
 """Tests for hankl.py - Hankel matrix."""
 import numpy as np
-from moirais.fn.hankl import hankel_matrix_fn, hankl
+from morie.fn.hankl import hankel_matrix_fn, hankl
 
 
 def test_hankl_returns_result():

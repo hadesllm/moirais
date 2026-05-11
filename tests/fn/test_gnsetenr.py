@@ -1,7 +1,7 @@
 """Tests for gnsetenr.geneset_enrichment."""
 import numpy as np
 import pytest
-from moirais.fn.gnsetenr import geneset_enrichment
+from morie.fn.gnsetenr import geneset_enrichment
 
 
 def test_gnsetenr_basic():

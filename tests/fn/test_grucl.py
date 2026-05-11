@@ -1,7 +1,7 @@
 """Tests for grucl.gru_cell."""
 import numpy as np
 import pytest
-from moirais.fn.grucl import gru_cell
+from morie.fn.grucl import gru_cell
 
 
 def test_grucl_basic():

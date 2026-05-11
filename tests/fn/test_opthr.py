@@ -1,7 +1,7 @@
 """Tests for opthr.optimal_huber_k."""
 import numpy as np
 import pytest
-from moirais.fn.opthr import optimal_huber_k
+from morie.fn.opthr import optimal_huber_k
 
 
 def test_opthr_basic():

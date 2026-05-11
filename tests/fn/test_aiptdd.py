@@ -1,7 +1,7 @@
 """Tests for aiptdd.aipw_did."""
 import numpy as np
 import pytest
-from moirais.fn.aiptdd import aipw_did
+from morie.fn.aiptdd import aipw_did
 
 
 def test_aiptdd_basic():

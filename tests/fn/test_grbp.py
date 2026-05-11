@@ -1,7 +1,7 @@
 """Tests for grbp.geron_backpropagation_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.grbp import geron_backpropagation_gradient
+from morie.fn.grbp import geron_backpropagation_gradient
 
 
 def test_grbp_basic():

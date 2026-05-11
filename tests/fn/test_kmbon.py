@@ -1,7 +1,7 @@
 """Tests for kmbon.kamath_best_of_n_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.kmbon import kamath_best_of_n_sampling
+from morie.fn.kmbon import kamath_best_of_n_sampling
 
 
 def test_kmbon_basic():

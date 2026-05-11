@@ -1,7 +1,7 @@
 """Test clcal."""
 import numpy as np
 import pytest
-from moirais.fn.clcal import clcal
+from morie.fn.clcal import clcal
 
 
 def test_clcal_basic():

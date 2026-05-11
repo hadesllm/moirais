@@ -1,7 +1,7 @@
 """Tests for gh_c7_9.ghosal_linreg_unk_err."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c7_9 import ghosal_linreg_unk_err
+from morie.fn.gh_c7_9 import ghosal_linreg_unk_err
 
 
 def test_gh_c7_9_basic():

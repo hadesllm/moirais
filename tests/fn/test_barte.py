@@ -1,7 +1,7 @@
 """Tests for barte.bart."""
 import numpy as np
 import pytest
-from moirais.fn.barte import bart
+from morie.fn.barte import bart
 
 
 def test_barte_basic():

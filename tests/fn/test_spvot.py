@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.spvot — spatial vote."""
+"""Tests for morie.fn.spvot — spatial vote."""
 import numpy as np
-from moirais.fn.spvot import spvot
+from morie.fn.spvot import spvot
 
 
 def test_spvot_smoke():

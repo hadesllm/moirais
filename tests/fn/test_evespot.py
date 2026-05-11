@@ -1,7 +1,7 @@
 """Tests for evespot.evt_pot_es."""
 import numpy as np
 import pytest
-from moirais.fn.evespot import evt_pot_es
+from morie.fn.evespot import evt_pot_es
 
 
 def test_evespot_basic():

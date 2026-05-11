@@ -1,6 +1,6 @@
 """Tests for wvenr.py - Wavelet energy."""
 import numpy as np
-from moirais.fn.wvenr import wavelet_energy, wvenr
+from morie.fn.wvenr import wavelet_energy, wvenr
 
 
 def test_energy_returns_result():

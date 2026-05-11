@@ -1,7 +1,7 @@
 """Tests for grstae.geron_stacked_autoencoder."""
 import numpy as np
 import pytest
-from moirais.fn.grstae import geron_stacked_autoencoder
+from morie.fn.grstae import geron_stacked_autoencoder
 
 
 def test_grstae_basic():

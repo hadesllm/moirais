@@ -1,7 +1,7 @@
 """Tests for deseq2.deseq2_differential."""
 import numpy as np
 import pytest
-from moirais.fn.deseq2 import deseq2_differential
+from morie.fn.deseq2 import deseq2_differential
 
 
 def test_deseq2_basic():

@@ -1,7 +1,7 @@
 """Tests for dpunit.dp_unit_definition."""
 import numpy as np
 import pytest
-from moirais.fn.dpunit import dp_unit_definition
+from morie.fn.dpunit import dp_unit_definition
 
 
 def test_dpunit_basic():

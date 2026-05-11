@@ -1,7 +1,7 @@
 """Tests for causflnk.causal_falsification_test."""
 import numpy as np
 import pytest
-from moirais.fn.causflnk import causal_falsification_test
+from morie.fn.causflnk import causal_falsification_test
 
 
 def test_causflnk_basic():

@@ -1,7 +1,7 @@
 """Tests for spmom.py - spectral moment."""
 import numpy as np
 import pytest
-from moirais.fn.spmom import spectral_moment_fn, spmom
+from morie.fn.spmom import spectral_moment_fn, spmom
 
 
 def test_spectral_moment_order0_returns_total_power():

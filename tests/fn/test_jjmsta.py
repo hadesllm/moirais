@@ -1,7 +1,7 @@
 """Tests for jjmsta.join_count."""
 import numpy as np
 import pytest
-from moirais.fn.jjmsta import join_count
+from morie.fn.jjmsta import join_count
 
 
 def test_jjmsta_basic():

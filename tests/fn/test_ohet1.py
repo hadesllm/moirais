@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ohet1 — Heterogeneous effects test by region."""
+"""Tests for morie.fn.ohet1 — Heterogeneous effects test by region."""
 
 import numpy as np
-from moirais.fn.ohet1 import otis_het_region
+from morie.fn.ohet1 import otis_het_region
 
 
 class TestOtisHetRegion:

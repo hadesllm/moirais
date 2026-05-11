@@ -1,7 +1,7 @@
 """Tests for evgevlm.evt_gev_lmoments."""
 import numpy as np
 import pytest
-from moirais.fn.evgevlm import evt_gev_lmoments
+from morie.fn.evgevlm import evt_gev_lmoments
 
 
 def test_evgevlm_basic():

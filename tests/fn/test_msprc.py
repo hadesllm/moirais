@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msprc -- Procrustes correlation"""
+"""Tests for morie.fn.msprc -- Procrustes correlation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msprc import procrustes_corr
+from morie.fn.msprc import procrustes_corr
 
 
 class TestProcrustesCorr:

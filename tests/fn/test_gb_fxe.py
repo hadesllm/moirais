@@ -1,7 +1,7 @@
 """Tests for gb_fxe.gibbons_fisher_one_sided."""
 import numpy as np
 import pytest
-from moirais.fn.gb_fxe import gibbons_fisher_one_sided
+from morie.fn.gb_fxe import gibbons_fisher_one_sided
 
 
 def test_gb_fxe_basic():

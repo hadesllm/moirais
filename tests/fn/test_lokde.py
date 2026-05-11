@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lokde — local polynomial density estimator."""
+"""Tests for morie.fn.lokde — local polynomial density estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lokde import lokde
+from morie.fn.lokde import lokde
 
 
 class TestLokde:

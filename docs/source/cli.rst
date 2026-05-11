@@ -1,8 +1,8 @@
 CLI Reference
 =============
 
-The ``moirais`` command is the primary terminal interface. It is installed as a
-console script entry point from ``moirais.runner:main``.
+The ``morie`` command is the primary terminal interface. It is installed as a
+console script entry point from ``morie.runner:main``.
 
 Commands
 --------
@@ -14,7 +14,7 @@ Print the full module surface with descriptions.
 
 .. code-block:: bash
 
-   moirais list-modules
+   morie list-modules
 
 ``run-module``
 ~~~~~~~~~~~~~~
@@ -23,9 +23,9 @@ Run a single named analysis module.
 
 .. code-block:: bash
 
-   moirais run-module <module-name> \
+   morie run-module <module-name> \
      --cpads-csv path/to/cpads.csv \
-     --output-dir /tmp/moirais-outputs
+     --output-dir /tmp/morie-outputs
 
 ``pipeline``
 ~~~~~~~~~~~~
@@ -34,19 +34,19 @@ Run all (or selected) modules in sequence.
 
 .. code-block:: bash
 
-   moirais pipeline --all -y
-   moirais pipeline --modules power-design logistic-models -y
-   moirais pipeline --cpads-csv custom.csv --output-dir ./out
+   morie pipeline --all -y
+   morie pipeline --modules power-design logistic-models -y
+   morie pipeline --cpads-csv custom.csv --output-dir ./out
 
 ``ask``
 ~~~~~~~
 
-Query the terminal assistant (requires ``moirais[ai]`` and ``OPENAI_API_KEY``,
+Query the terminal assistant (requires ``morie[ai]`` and ``OPENAI_API_KEY``,
 or runs in local fallback mode).
 
 .. code-block:: bash
 
-   moirais ask "What does the propensity-scores module output?"
+   morie ask "What does the propensity-scores module output?"
 
 Global options
 --------------
@@ -64,11 +64,11 @@ Global options
 Repo-root wrapper
 -----------------
 
-A shell wrapper ``./moirais`` at the repository root invokes
-``.venv/bin/python -m moirais.runner`` so the venv does not need to be activated
+A shell wrapper ``./morie`` at the repository root invokes
+``.venv/bin/python -m morie.runner`` so the venv does not need to be activated
 manually:
 
 .. code-block:: bash
 
-   ./moirais list-modules
-   ./moirais pipeline --all -y
+   ./morie list-modules
+   ./morie pipeline --all -y

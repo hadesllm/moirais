@@ -1,7 +1,7 @@
 """Test trdly."""
 import numpy as np
 import pytest
-from moirais.fn.trdly import trdly
+from morie.fn.trdly import trdly
 
 
 def test_trdly_basic():

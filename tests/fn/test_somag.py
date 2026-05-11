@@ -1,7 +1,7 @@
 """Test somag."""
 import numpy as np
 import pytest
-from moirais.fn.somag import somag
+from morie.fn.somag import somag
 
 
 def test_somag_basic():

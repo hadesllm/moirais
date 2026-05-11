@@ -1,7 +1,7 @@
 """Tests for tbsmp."""
 import numpy as np
 import pytest
-from moirais.fn.tbsmp import tbsmp
+from morie.fn.tbsmp import tbsmp
 
 
 def test_tbsmp_basic():
@@ -27,5 +27,5 @@ def test_tbsmp_no_data():
 
 
 def test_tbsmp_alias():
-    from moirais.fn.tbsmp import tbsmp
+    from morie.fn.tbsmp import tbsmp
     assert tbsmp is tbsmp

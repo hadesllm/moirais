@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.yll -- Years of Life Lost."""
+"""Tests for morie.fn.yll -- Years of Life Lost."""
 
 import numpy as np
 import pytest
-from moirais.fn.yll import years_of_life_lost
+from morie.fn.yll import years_of_life_lost
 
 
 class TestYLL:

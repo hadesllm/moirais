@@ -1,7 +1,7 @@
 """Tests for ghs005.ghosal_ch2_location_scale_mixture_limit."""
 import numpy as np
 import pytest
-from moirais.fn.ghs005 import ghosal_ch2_location_scale_mixture_limit
+from morie.fn.ghs005 import ghosal_ch2_location_scale_mixture_limit
 
 
 def test_ghs005_basic():

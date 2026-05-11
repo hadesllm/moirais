@@ -1,7 +1,7 @@
 """Tests for procrustes rotation."""
 import numpy as np
 import pytest
-from moirais.fn.procr import procrustes_rotation, procr
+from morie.fn.procr import procrustes_rotation, procr
 
 
 class TestProcrustes:

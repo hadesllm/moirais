@@ -1,7 +1,7 @@
 """Tests for fanocb.fano_inequality."""
 import numpy as np
 import pytest
-from moirais.fn.fanocb import fano_inequality
+from morie.fn.fanocb import fano_inequality
 
 
 def test_fanocb_basic():

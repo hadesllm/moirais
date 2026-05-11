@@ -1,7 +1,7 @@
 """Tests for cvxlse.boyd_lse."""
 import numpy as np
 import pytest
-from moirais.fn.cvxlse import boyd_lse
+from morie.fn.cvxlse import boyd_lse
 
 
 def test_cvxlse_basic():

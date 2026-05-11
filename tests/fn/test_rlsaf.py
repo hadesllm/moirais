@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.rlsaf import rls_adaptive_filter, rlsaf
-from moirais.fn._containers import SignalResult
+from morie.fn.rlsaf import rls_adaptive_filter, rlsaf
+from morie.fn._containers import SignalResult
 
 
 class TestRlsAdaptiveFilter:

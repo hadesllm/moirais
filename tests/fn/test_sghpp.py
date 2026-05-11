@@ -1,6 +1,6 @@
 """Tests for homogeneous Poisson process."""
 import numpy as np
-from moirais.fn.sghpp import sghpp
+from morie.fn.sghpp import sghpp
 
 
 def test_sghpp_smoke():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lrank — Log-rank test."""
+"""Tests for morie.fn.lrank — Log-rank test."""
 import numpy as np
 
-from moirais.fn.lrank import log_rank, lrank
+from morie.fn.lrank import log_rank, lrank
 
 
 def test_same_distribution():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bcauz -- Bayesian ATE."""
+"""Tests for morie.fn.bcauz -- Bayesian ATE."""
 
 import numpy as np
-from moirais.fn.bcauz import bayesian_ate
+from morie.fn.bcauz import bayesian_ate
 
 
 def test_returns_dict():

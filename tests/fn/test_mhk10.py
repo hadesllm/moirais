@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mhk10 -- K10 score."""
+"""Tests for morie.fn.mhk10 -- K10 score."""
 
 import pytest
-from moirais.fn.mhk10 import k10_score
+from morie.fn.mhk10 import k10_score
 
 
 class TestK10:

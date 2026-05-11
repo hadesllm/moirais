@@ -1,8 +1,8 @@
 """Test lwe_key_exchange."""
 import numpy as np
 import pytest
-from moirais.fn.lweke import lwe_key_exchange
-from moirais.fn._containers import CryptoResult
+from morie.fn.lweke import lwe_key_exchange
+from morie.fn._containers import CryptoResult
 
 
 class TestLweKeyExchange:

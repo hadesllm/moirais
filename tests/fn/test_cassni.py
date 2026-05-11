@@ -1,7 +1,7 @@
 """Test cassni."""
 import numpy as np
 import pytest
-from moirais.fn.cassni import cassni
+from morie.fn.cassni import cassni
 
 
 def test_cassni_basic():

@@ -1,7 +1,7 @@
 """Tests for brrpf.brr_prior_posterior."""
 import numpy as np
 import pytest
-from moirais.fn.brrpf import brr_prior_posterior
+from morie.fn.brrpf import brr_prior_posterior
 
 
 def test_brrpf_basic():

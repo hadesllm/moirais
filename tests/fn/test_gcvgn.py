@@ -1,7 +1,7 @@
 """Tests for gcvgn.genomic_cross_validation."""
 import numpy as np
 import pytest
-from moirais.fn.gcvgn import genomic_cross_validation
+from morie.fn.gcvgn import genomic_cross_validation
 
 
 def test_gcvgn_basic():

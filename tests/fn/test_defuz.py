@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.defuz."""
+"""Tests for morie.fn.defuz."""
 import numpy as np
 import pytest
-from moirais.fn.defuz import defuz
+from morie.fn.defuz import defuz
 
 
 @pytest.mark.xfail(reason="np.trapz removed in numpy 2.x", strict=False)
@@ -15,7 +15,7 @@ def test_defuz_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.defuz import cheatsheet
+    from morie.fn.defuz import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

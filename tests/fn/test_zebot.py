@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zebot -- Bayesian outbreak detection"""
+"""Tests for morie.fn.zebot -- Bayesian outbreak detection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zebot import bayes_outbreak
+from morie.fn.zebot import bayes_outbreak
 
 
 class TestBayesOutbreak:

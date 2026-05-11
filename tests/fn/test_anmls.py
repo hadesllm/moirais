@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.anmls -- multi-view CCA."""
+"""Tests for morie.fn.anmls -- multi-view CCA."""
 
 import numpy as np
-from moirais.fn.anmls import multiview_cca, anmls
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.anmls import multiview_cca, anmls
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAnmls:

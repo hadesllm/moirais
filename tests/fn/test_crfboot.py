@@ -1,7 +1,7 @@
 """Tests for crfboot.causal_forest_bootstrap."""
 import numpy as np
 import pytest
-from moirais.fn.crfboot import causal_forest_bootstrap
+from morie.fn.crfboot import causal_forest_bootstrap
 
 
 def test_crfboot_basic():

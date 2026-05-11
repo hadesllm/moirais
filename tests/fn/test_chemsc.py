@@ -1,7 +1,7 @@
 """Tests for chemsc.chemscore_dock."""
 import numpy as np
 import pytest
-from moirais.fn.chemsc import chemscore_dock
+from morie.fn.chemsc import chemscore_dock
 
 
 def test_chemsc_basic():

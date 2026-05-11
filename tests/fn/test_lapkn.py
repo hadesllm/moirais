@@ -1,7 +1,7 @@
 """Tests for lapkn.laplacian_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.lapkn import laplacian_kernel
+from morie.fn.lapkn import laplacian_kernel
 
 
 def test_lapkn_basic():

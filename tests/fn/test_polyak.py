@@ -1,7 +1,7 @@
 """Tests for polyak.polyak_target."""
 import numpy as np
 import pytest
-from moirais.fn.polyak import polyak_target
+from morie.fn.polyak import polyak_target
 
 
 def test_polyak_basic():

@@ -1,7 +1,7 @@
 """Tests for fastm.fast_mcd."""
 import numpy as np
 import pytest
-from moirais.fn.fastm import fast_mcd
+from morie.fn.fastm import fast_mcd
 
 
 def test_fastm_basic():

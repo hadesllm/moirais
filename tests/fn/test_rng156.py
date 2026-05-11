@@ -1,7 +1,7 @@
 """Tests for rng156.rangayyan_ch3_lms_estimation_error."""
 import numpy as np
 import pytest
-from moirais.fn.rng156 import rangayyan_ch3_lms_estimation_error
+from morie.fn.rng156 import rangayyan_ch3_lms_estimation_error
 
 
 def test_rng156_basic():

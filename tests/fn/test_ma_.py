@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ma_ — moving average smoother."""
+"""Tests for morie.fn.ma_ — moving average smoother."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ma_ import ma_
+from morie.fn.ma_ import ma_
 
 
 class TestMa:

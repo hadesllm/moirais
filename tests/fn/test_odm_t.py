@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.odm_t — OTIS demo trend."""
+"""Tests for morie.fn.odm_t — OTIS demo trend."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.odm_t import otis_demo_trend
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.odm_t import otis_demo_trend
+from morie.fn._containers import DescriptiveResult
 
 
 class TestOtisDemoTrend:

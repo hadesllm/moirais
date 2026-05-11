@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.pdplt — Partial dependence plot values."""
+"""Tests for morie.fn.pdplt — Partial dependence plot values."""
 import numpy as np
 import pytest
-from moirais.fn.pdplt import pdplt
+from morie.fn.pdplt import pdplt
 
 
 @pytest.fixture()
@@ -61,5 +61,5 @@ def test_method_label(setup):
 
 
 def test_cheatsheet():
-    from moirais.fn.pdplt import cheatsheet
+    from morie.fn.pdplt import cheatsheet
     assert len(cheatsheet()) > 0

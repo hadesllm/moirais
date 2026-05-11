@@ -1,7 +1,7 @@
 """Tests for quntf.quantile_function."""
 import numpy as np
 import pytest
-from moirais.fn.quntf import quantile_function
+from morie.fn.quntf import quantile_function
 
 
 def test_quntf_basic():

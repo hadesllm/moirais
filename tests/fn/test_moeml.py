@@ -1,7 +1,7 @@
 """Tests for moeml.mixture_of_experts."""
 import numpy as np
 import pytest
-from moirais.fn.moeml import mixture_of_experts
+from morie.fn.moeml import mixture_of_experts
 
 
 def test_moeml_basic():

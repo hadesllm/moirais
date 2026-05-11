@@ -1,7 +1,7 @@
 """Tests for spcen.py - spectral entropy."""
 import numpy as np
 import pytest
-from moirais.fn.spcen import spectral_entropy_fn, spcen
+from morie.fn.spcen import spectral_entropy_fn, spcen
 
 
 def test_spectral_entropy_returns_descriptive_result():

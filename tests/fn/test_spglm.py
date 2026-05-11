@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.spglm — Spatial GLM."""
+"""Tests for morie.fn.spglm — Spatial GLM."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.spglm import spglm
+from morie.fn.spglm import spglm
 
 
 class TestSpglm:

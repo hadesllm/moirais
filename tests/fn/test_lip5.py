@@ -1,7 +1,7 @@
 """Tests for lip5.lipinski_rule_of_5."""
 import numpy as np
 import pytest
-from moirais.fn.lip5 import lipinski_rule_of_5
+from morie.fn.lip5 import lipinski_rule_of_5
 
 
 def test_lip5_basic():

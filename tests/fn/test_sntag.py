@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sntag — sentence by age group."""
+"""Tests for morie.fn.sntag — sentence by age group."""
 
 import pandas as pd
-from moirais.fn.sntag import sentence_by_age, sntag
+from morie.fn.sntag import sentence_by_age, sntag
 
 
 class TestSentenceByAge:

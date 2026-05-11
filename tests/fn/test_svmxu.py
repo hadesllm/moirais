@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svmxu -- Mixed-norm spatial utility"""
+"""Tests for morie.fn.svmxu -- Mixed-norm spatial utility"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svmxu import mixed_utility
+from morie.fn.svmxu import mixed_utility
 
 
 class TestMixedUtility:

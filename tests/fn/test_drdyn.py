@@ -1,7 +1,7 @@
 """Tests for drdyn.dr_dynamic_did."""
 import numpy as np
 import pytest
-from moirais.fn.drdyn import dr_dynamic_did
+from morie.fn.drdyn import dr_dynamic_did
 
 
 def test_drdyn_basic():

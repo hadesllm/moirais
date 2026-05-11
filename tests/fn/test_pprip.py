@@ -1,7 +1,7 @@
 """Test pprip."""
 import numpy as np
 import pytest
-from moirais.fn.pprip import pprip
+from morie.fn.pprip import pprip
 
 
 def test_pprip_basic():

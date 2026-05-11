@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.wheej -- polynomial feature expansion."""
+"""Tests for morie.fn.wheej -- polynomial feature expansion."""
 
 import numpy as np
-from moirais.fn.wheej import polynomial_features, wheej
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wheej import polynomial_features, wheej
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWheej:

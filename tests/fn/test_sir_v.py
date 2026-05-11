@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sir_v — SIR with vaccination."""
+"""Tests for morie.fn.sir_v — SIR with vaccination."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.sir_v import sir_vaccination
+from morie.fn.sir_v import sir_vaccination
 
 
 class TestSIRVaccination:

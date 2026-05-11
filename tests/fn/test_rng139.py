@@ -1,7 +1,7 @@
 """Tests for rng139.rangayyan_ch3_wiener_output_dot_product."""
 import numpy as np
 import pytest
-from moirais.fn.rng139 import rangayyan_ch3_wiener_output_dot_product
+from morie.fn.rng139 import rangayyan_ch3_wiener_output_dot_product
 
 
 def test_rng139_basic():

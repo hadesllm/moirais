@@ -1,7 +1,7 @@
 """Test lapfp."""
 import numpy as np
 import pytest
-from moirais.fn.lapfp import lapfp
+from morie.fn.lapfp import lapfp
 
 
 def test_lapfp_basic():

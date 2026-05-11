@@ -1,7 +1,7 @@
 """Tests for sntmod.sequential_target_models."""
 import numpy as np
 import pytest
-from moirais.fn.sntmod import sequential_target_models
+from morie.fn.sntmod import sequential_target_models
 
 
 def test_sntmod_basic():

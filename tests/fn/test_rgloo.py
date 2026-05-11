@@ -1,7 +1,7 @@
 """Tests for rgloo.rangayyan_loo_cv."""
 import numpy as np
 import pytest
-from moirais.fn.rgloo import rangayyan_loo_cv
+from morie.fn.rgloo import rangayyan_loo_cv
 
 
 def test_rgloo_basic():

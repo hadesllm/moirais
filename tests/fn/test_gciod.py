@@ -1,7 +1,7 @@
 """Test gciod."""
 import numpy as np
 import pytest
-from moirais.fn.gciod import gciod
+from morie.fn.gciod import gciod
 
 
 def test_gciod_basic():

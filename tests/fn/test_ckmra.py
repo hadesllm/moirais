@@ -1,6 +1,6 @@
 """Tests for ckmra (Cochran-Mantel-Haenszel test)."""
 import numpy as np
-from moirais.fn.ckmra import cochran_mantel
+from morie.fn.ckmra import cochran_mantel
 
 
 def test_cmh_basic():
@@ -12,7 +12,7 @@ def test_cmh_basic():
 
 
 def test_cheatsheet():
-    from moirais.fn.ckmra import cheatsheet
+    from morie.fn.ckmra import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

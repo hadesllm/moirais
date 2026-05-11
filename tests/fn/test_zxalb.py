@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxalb -- Albers equal-area projection"""
+"""Tests for morie.fn.zxalb -- Albers equal-area projection"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxalb import albers_proj
+from morie.fn.zxalb import albers_proj
 
 
 class TestAlbersProj:

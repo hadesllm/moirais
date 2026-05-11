@@ -1,7 +1,7 @@
 """Tests for hmtfl.geron_transfer_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmtfl import geron_transfer_learning
+from morie.fn.hmtfl import geron_transfer_learning
 
 
 def test_hmtfl_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kmsem -- Kaplan-Meier survival estimator."""
+"""Tests for morie.fn.kmsem -- Kaplan-Meier survival estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kmsem import kmsem
+from morie.fn.kmsem import kmsem
 
 
 @pytest.fixture()
@@ -75,5 +75,5 @@ def test_length_mismatch():
 
 
 def test_cheatsheet():
-    from moirais.fn.kmsem import cheatsheet
+    from morie.fn.kmsem import cheatsheet
     assert "kaplan" in cheatsheet().lower()

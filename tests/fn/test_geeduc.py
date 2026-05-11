@@ -1,7 +1,7 @@
 """Test geeduc."""
 import numpy as np
 import pytest
-from moirais.fn.geeduc import geeduc
+from morie.fn.geeduc import geeduc
 
 
 def test_geeduc_basic():

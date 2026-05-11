@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.armam -- ARMA(p,q) model."""
+"""Tests for morie.fn.armam -- ARMA(p,q) model."""
 import numpy as np
 import pytest
-from moirais.fn.armam import arma_fit
+from morie.fn.armam import arma_fit
 
 
 class TestARMAFit:
@@ -18,5 +18,5 @@ class TestARMAFit:
             arma_fit(np.ones(5), p=1, q=1)
 
     def test_cheatsheet(self):
-        from moirais.fn.armam import cheatsheet
+        from morie.fn.armam import cheatsheet
         assert isinstance(cheatsheet(), str)

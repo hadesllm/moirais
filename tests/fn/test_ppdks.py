@@ -1,7 +1,7 @@
 """Tests for ppdks.posterior_predictive_ks."""
 import numpy as np
 import pytest
-from moirais.fn.ppdks import posterior_predictive_ks
+from morie.fn.ppdks import posterior_predictive_ks
 
 
 def test_ppdks_basic():

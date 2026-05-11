@@ -1,7 +1,7 @@
 """Tests for ipwSn.ipw_sensitivity."""
 import numpy as np
 import pytest
-from moirais.fn.ipwSn import ipw_sensitivity
+from morie.fn.ipwSn import ipw_sensitivity
 
 
 def test_ipwSn_basic():

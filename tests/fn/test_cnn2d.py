@@ -1,7 +1,7 @@
 """Tests for cnn2d.conv2d_forward."""
 import numpy as np
 import pytest
-from moirais.fn.cnn2d import conv2d_forward
+from morie.fn.cnn2d import conv2d_forward
 
 
 def test_cnn2d_basic():

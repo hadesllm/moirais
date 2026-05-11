@@ -1,6 +1,6 @@
 """Tests for mvdr.py - MVDR (Capon) spectrum."""
 import numpy as np
-from moirais.fn.mvdr import mvdr_spectrum_fn, mvdr
+from morie.fn.mvdr import mvdr_spectrum_fn, mvdr
 
 
 def test_mvdr_returns_result():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.donsk — Donsker class membership test."""
+"""Tests for morie.fn.donsk — Donsker class membership test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.donsk import donsk, DonskerResult
+from morie.fn.donsk import donsk, DonskerResult
 
 
 @pytest.fixture()

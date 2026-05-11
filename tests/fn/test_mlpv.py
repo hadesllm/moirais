@@ -1,7 +1,7 @@
 """Tests for mlpv.multilevel_pseudo_variance_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.mlpv import multilevel_pseudo_variance_ratio
+from morie.fn.mlpv import multilevel_pseudo_variance_ratio
 
 
 def test_mlpv_basic():

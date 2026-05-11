@@ -1,7 +1,7 @@
 """Test tsfor."""
 import numpy as np
 import pytest
-from moirais.fn.tsfor import tsfor
+from morie.fn.tsfor import tsfor
 
 
 def test_tsfor_basic():

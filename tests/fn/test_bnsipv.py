@@ -1,7 +1,7 @@
 """Tests for bnsipv.bound_iv_partial."""
 import numpy as np
 import pytest
-from moirais.fn.bnsipv import bound_iv_partial
+from morie.fn.bnsipv import bound_iv_partial
 
 
 def test_bnsipv_basic():

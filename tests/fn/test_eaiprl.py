@@ -1,7 +1,7 @@
 """Tests for eaiprl.aipw_efficient_influence."""
 import numpy as np
 import pytest
-from moirais.fn.eaiprl import aipw_efficient_influence
+from morie.fn.eaiprl import aipw_efficient_influence
 
 
 def test_eaiprl_basic():

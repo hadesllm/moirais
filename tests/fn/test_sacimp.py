@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sacimp."""
+"""Tests for morie.fn.sacimp."""
 import numpy as np
 import pytest
-from moirais.fn.sacimp import sacimp
+from morie.fn.sacimp import sacimp
 
 
 class TestSacimp:

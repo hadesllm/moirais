@@ -1,6 +1,6 @@
 """Tests for spearman_corr."""
 import numpy as np, pytest
-from moirais.fn.sprmn import spearman_corr
+from morie.fn.sprmn import spearman_corr
 
 
 class TestSpearmanCorr:

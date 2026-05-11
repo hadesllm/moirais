@@ -1,7 +1,7 @@
 """Test ovrsmp."""
 import numpy as np
 import pytest
-from moirais.fn.ovrsmp import ovrsmp
+from morie.fn.ovrsmp import ovrsmp
 
 
 def test_ovrsmp_basic():

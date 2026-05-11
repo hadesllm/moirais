@@ -1,7 +1,7 @@
 """Test sebnr."""
 import numpy as np
 import pytest
-from moirais.fn.sebnr import sebnr
+from morie.fn.sebnr import sebnr
 
 
 def test_sebnr_basic():

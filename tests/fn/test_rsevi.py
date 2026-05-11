@@ -1,7 +1,7 @@
 """Test rsevi."""
 import numpy as np
 import pytest
-from moirais.fn.rsevi import rsevi
+from morie.fn.rsevi import rsevi
 
 
 def test_rsevi_basic():

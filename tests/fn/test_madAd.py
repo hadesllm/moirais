@@ -1,7 +1,7 @@
 """Tests for madAd.mad_anomaly_score."""
 import numpy as np
 import pytest
-from moirais.fn.madAd import mad_anomaly_score
+from morie.fn.madAd import mad_anomaly_score
 
 
 def test_madAd_basic():

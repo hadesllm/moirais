@@ -1,7 +1,7 @@
 """Tests for neyman_pearson."""
 import numpy as np
 import pytest
-from moirais.fn.nympn import neyman_pearson, nympn
+from morie.fn.nympn import neyman_pearson, nympn
 
 
 def test_basic():

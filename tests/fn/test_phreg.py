@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.phreg -- Piecewise constant hazard regression."""
+"""Tests for morie.fn.phreg -- Piecewise constant hazard regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.phreg import phreg
+from morie.fn.phreg import phreg
 
 
 @pytest.fixture()
@@ -39,5 +39,5 @@ def test_baseline_positive(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.phreg import cheatsheet
+    from morie.fn.phreg import cheatsheet
     assert "piecewise" in cheatsheet().lower()

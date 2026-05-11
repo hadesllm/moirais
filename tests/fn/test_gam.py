@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gam -- GAM (B-spline + OLS)."""
+"""Tests for morie.fn.gam -- GAM (B-spline + OLS)."""
 
 import numpy as np
-from moirais.fn.gam import fit_gam, gam
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.gam import fit_gam, gam
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGam:

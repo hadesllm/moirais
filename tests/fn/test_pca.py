@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.pca — Principal Component Analysis."""
+"""Tests for morie.fn.pca — Principal Component Analysis."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.pca import pca
-from moirais.fn._containers import PcaRes
+from morie.fn.pca import pca
+from morie.fn._containers import PcaRes
 
 
 class TestPca:

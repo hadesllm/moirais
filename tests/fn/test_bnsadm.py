@@ -1,7 +1,7 @@
 """Tests for bnsadm.bound_admissible_estimators."""
 import numpy as np
 import pytest
-from moirais.fn.bnsadm import bound_admissible_estimators
+from morie.fn.bnsadm import bound_admissible_estimators
 
 
 def test_bnsadm_basic():

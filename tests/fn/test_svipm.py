@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svipm -- MLE ideal point estimation"""
+"""Tests for morie.fn.svipm -- MLE ideal point estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svipm import ideal_point_mle
+from morie.fn.svipm import ideal_point_mle
 
 
 class TestIdealPointMle:

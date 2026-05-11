@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cpchg — PELT change point detection."""
+"""Tests for morie.fn.cpchg — PELT change point detection."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cpchg import changepoint_pelt, cpchg
+from morie.fn.cpchg import changepoint_pelt, cpchg
 
 
 def test_returns_descriptive_result():

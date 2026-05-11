@@ -1,7 +1,7 @@
 """Tests for hml1c.geron_one_cycle."""
 import numpy as np
 import pytest
-from moirais.fn.hml1c import geron_one_cycle
+from morie.fn.hml1c import geron_one_cycle
 
 
 def test_hml1c_basic():

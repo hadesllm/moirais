@@ -1,7 +1,7 @@
 """Test dynamic_range (dynrg)."""
 import numpy as np
-from moirais.fn.dynrg import dynamic_range, dynrg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dynrg import dynamic_range, dynrg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDynrg:

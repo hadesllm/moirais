@@ -1,7 +1,7 @@
 """Tests for gh_ppt_consist.ghosal_polya_tree_consist_rate."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ppt_consist import ghosal_polya_tree_consist_rate
+from morie.fn.gh_ppt_consist import ghosal_polya_tree_consist_rate
 
 
 def test_gh_ppt_consist_basic():

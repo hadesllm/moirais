@@ -1,7 +1,7 @@
 """Tests for grlstc.geron_lstm_cell."""
 import numpy as np
 import pytest
-from moirais.fn.grlstc import geron_lstm_cell
+from morie.fn.grlstc import geron_lstm_cell
 
 
 def test_grlstc_basic():

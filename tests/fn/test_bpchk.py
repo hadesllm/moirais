@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bpchk -- Posterior predictive check."""
+"""Tests for morie.fn.bpchk -- Posterior predictive check."""
 
 import numpy as np
-from moirais.fn.bpchk import posterior_predictive_check
+from morie.fn.bpchk import posterior_predictive_check
 
 
 def test_returns_dict():

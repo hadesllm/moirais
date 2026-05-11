@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sfglob."""
+"""Tests for morie.fn.sfglob."""
 import numpy as np
 import pytest
-from moirais.fn.sfglob import sfglob
+from morie.fn.sfglob import sfglob
 
 
 class TestSfglob:

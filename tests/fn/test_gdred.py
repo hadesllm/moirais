@@ -1,7 +1,7 @@
 """Test gdred."""
 import numpy as np
 import pytest
-from moirais.fn.gdred import gdred
+from morie.fn.gdred import gdred
 
 
 def test_gdred_basic():

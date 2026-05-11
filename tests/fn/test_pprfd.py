@@ -1,7 +1,7 @@
 """Test pprfd."""
 import numpy as np
 import pytest
-from moirais.fn.pprfd import pprfd
+from morie.fn.pprfd import pprfd
 
 
 def test_pprfd_basic():

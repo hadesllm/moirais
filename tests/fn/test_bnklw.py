@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bnklw — Klein-Spady binary estimator."""
+"""Tests for morie.fn.bnklw — Klein-Spady binary estimator."""
 
 import numpy as np
 import pytest
-from moirais.fn.bnklw import bnklw
+from morie.fn.bnklw import bnklw
 
 
 def test_returns_dict():

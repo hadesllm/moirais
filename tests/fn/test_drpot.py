@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.drpot."""
+"""Tests for morie.fn.drpot."""
 import numpy as np
-from moirais.fn.drpot import dropout
+from morie.fn.drpot import dropout
 
 
 def test_drpot_smoke():
@@ -12,7 +12,7 @@ def test_drpot_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.drpot import cheatsheet
+    from morie.fn.drpot import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

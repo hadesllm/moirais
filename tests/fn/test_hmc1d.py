@@ -1,7 +1,7 @@
 """Tests for hmc1d.geron_causal_1d_conv."""
 import numpy as np
 import pytest
-from moirais.fn.hmc1d import geron_causal_1d_conv
+from morie.fn.hmc1d import geron_causal_1d_conv
 
 
 def test_hmc1d_basic():

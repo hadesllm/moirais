@@ -1,7 +1,7 @@
 """Test agprf."""
 import numpy as np
 import pytest
-from moirais.fn.agprf import agprf
+from morie.fn.agprf import agprf
 
 
 def test_agprf_basic():

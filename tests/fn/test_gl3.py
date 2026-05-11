@@ -1,5 +1,5 @@
 """Tests for gl3 — Guttman Lambda 3 (= alpha)."""
-from moirais.fn.gl3 import gl3
+from morie.fn.gl3 import gl3
 
 def test_gl3_basic(mapq_df):
     items = [c for c in mapq_df.columns if c.startswith(("EE","EA","UA","ER")) and c[-1].isdigit()]
@@ -8,7 +8,7 @@ def test_gl3_basic(mapq_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.gl3 import cheatsheet
+    from morie.fn.gl3 import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

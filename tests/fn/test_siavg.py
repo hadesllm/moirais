@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.siavg — Single-index via average derivative."""
+"""Tests for morie.fn.siavg — Single-index via average derivative."""
 
 import numpy as np
 import pytest
-from moirais.fn.siavg import siavg
+from morie.fn.siavg import siavg
 
 
 def test_returns_dict():

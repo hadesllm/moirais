@@ -1,7 +1,7 @@
 """Tests for otgws.ot_gromov_sinkhorn."""
 import numpy as np
 import pytest
-from moirais.fn.otgws import ot_gromov_sinkhorn
+from morie.fn.otgws import ot_gromov_sinkhorn
 
 
 def test_otgws_basic():

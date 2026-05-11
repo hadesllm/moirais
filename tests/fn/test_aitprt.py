@@ -1,7 +1,7 @@
 """Tests for aitprt.aitchison_perturbation."""
 import numpy as np
 import pytest
-from moirais.fn.aitprt import aitchison_perturbation
+from morie.fn.aitprt import aitchison_perturbation
 
 
 def test_aitprt_basic():

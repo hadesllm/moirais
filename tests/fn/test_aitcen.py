@@ -1,7 +1,7 @@
 """Tests for aitcen.aitchison_center."""
 import numpy as np
 import pytest
-from moirais.fn.aitcen import aitchison_center
+from morie.fn.aitcen import aitchison_center
 
 
 def test_aitcen_basic():

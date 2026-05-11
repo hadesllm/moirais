@@ -1,7 +1,7 @@
 """Tests for hrzconf.horowitz_confidence_bands."""
 import numpy as np
 import pytest
-from moirais.fn.hrzconf import horowitz_confidence_bands
+from morie.fn.hrzconf import horowitz_confidence_bands
 
 
 def test_hrzconf_basic():

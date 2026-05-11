@@ -1,7 +1,7 @@
 """Test hytrb."""
 import numpy as np
 import pytest
-from moirais.fn.hytrb import hytrb
+from morie.fn.hytrb import hytrb
 
 
 def test_hytrb_basic():

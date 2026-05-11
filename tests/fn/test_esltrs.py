@@ -1,7 +1,7 @@
 """Tests for esltrs.esl_basis_truncated."""
 import numpy as np
 import pytest
-from moirais.fn.esltrs import esl_basis_truncated
+from morie.fn.esltrs import esl_basis_truncated
 
 
 def test_esltrs_basic():

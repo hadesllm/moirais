@@ -1,7 +1,7 @@
 """Tests for gb_ttm.gibbons_two_sample_t_efficacy."""
 import numpy as np
 import pytest
-from moirais.fn.gb_ttm import gibbons_two_sample_t_efficacy
+from morie.fn.gb_ttm import gibbons_two_sample_t_efficacy
 
 
 def test_gb_ttm_basic():

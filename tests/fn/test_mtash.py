@@ -1,7 +1,7 @@
 """Test mtash."""
 import numpy as np
 import pytest
-from moirais.fn.mtash import mtash
+from morie.fn.mtash import mtash
 
 
 def test_mtash_basic():

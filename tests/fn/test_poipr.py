@@ -1,7 +1,7 @@
 """Tests for poipr.poisson_penalized_regression."""
 import numpy as np
 import pytest
-from moirais.fn.poipr import poisson_penalized_regression
+from morie.fn.poipr import poisson_penalized_regression
 
 
 def test_poipr_basic():

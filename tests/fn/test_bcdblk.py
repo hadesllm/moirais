@@ -1,7 +1,7 @@
 """Tests for bcdblk.block_coordinate_descent."""
 import numpy as np
 import pytest
-from moirais.fn.bcdblk import block_coordinate_descent
+from morie.fn.bcdblk import block_coordinate_descent
 
 
 def test_bcdblk_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rcdrp -- drop influential votes."""
+"""Tests for morie.fn.rcdrp -- drop influential votes."""
 
 import numpy as np
-from moirais.fn.rcdrp import drop_influential_votes, rcdrp
+from morie.fn.rcdrp import drop_influential_votes, rcdrp
 
 
 def test_rcdrp_keep_all():

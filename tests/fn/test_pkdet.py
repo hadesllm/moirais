@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pkdet — advanced peak detection."""
+"""Tests for morie.fn.pkdet — advanced peak detection."""
 import numpy as np
 import pytest
 
-from moirais.fn.pkdet import peak_detect_advanced, pkdet
+from morie.fn.pkdet import peak_detect_advanced, pkdet
 
 
 def test_sine_peaks():

@@ -1,7 +1,7 @@
 """Tests for hmtrlf.geron_trl_finetune."""
 import numpy as np
 import pytest
-from moirais.fn.hmtrlf import geron_trl_finetune
+from morie.fn.hmtrlf import geron_trl_finetune
 
 
 def test_hmtrlf_basic():

@@ -1,7 +1,7 @@
 """Tests for rgturns.rangayyan_turns_count."""
 import numpy as np
 import pytest
-from moirais.fn.rgturns import rangayyan_turns_count
+from morie.fn.rgturns import rangayyan_turns_count
 
 
 def test_rgturns_basic():

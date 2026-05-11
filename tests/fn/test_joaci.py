@@ -1,7 +1,7 @@
 """Tests for joaci.joseph_adaptive_conformal_inference."""
 import numpy as np
 import pytest
-from moirais.fn.joaci import joseph_adaptive_conformal_inference
+from morie.fn.joaci import joseph_adaptive_conformal_inference
 
 
 def test_joaci_basic():

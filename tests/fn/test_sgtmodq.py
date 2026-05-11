@@ -1,7 +1,7 @@
 """Tests for sgtmodq.sgt_modularity_q."""
 import numpy as np
 import pytest
-from moirais.fn.sgtmodq import sgt_modularity_q
+from morie.fn.sgtmodq import sgt_modularity_q
 
 
 def test_sgtmodq_basic():

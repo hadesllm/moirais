@@ -1,7 +1,7 @@
 """Tests for otpush.ot_pushforward_density."""
 import numpy as np
 import pytest
-from moirais.fn.otpush import ot_pushforward_density
+from morie.fn.otpush import ot_pushforward_density
 
 
 def test_otpush_basic():

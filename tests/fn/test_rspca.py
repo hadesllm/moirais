@@ -1,7 +1,7 @@
 """Test rspca."""
 import numpy as np
 import pytest
-from moirais.fn.rspca import rspca
+from morie.fn.rspca import rspca
 
 
 def test_rspca_basic():

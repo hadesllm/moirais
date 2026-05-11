@@ -1,7 +1,7 @@
 """Tests for alfsmd.alphafold_msa_attention."""
 import numpy as np
 import pytest
-from moirais.fn.alfsmd import alphafold_msa_attention
+from morie.fn.alfsmd import alphafold_msa_attention
 
 
 def test_alfsmd_basic():

@@ -1,7 +1,7 @@
 """Tests for hmbin.geron_binary_classification."""
 import numpy as np
 import pytest
-from moirais.fn.hmbin import geron_binary_classification
+from morie.fn.hmbin import geron_binary_classification
 
 
 def test_hmbin_basic():

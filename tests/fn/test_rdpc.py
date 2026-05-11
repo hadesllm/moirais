@@ -1,7 +1,7 @@
 """Tests for rdpc.renyi_dp."""
 import numpy as np
 import pytest
-from moirais.fn.rdpc import renyi_dp
+from morie.fn.rdpc import renyi_dp
 
 
 def test_rdpc_basic():

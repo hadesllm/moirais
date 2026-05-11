@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.starn — Spatio-temporal autoregressive model."""
+"""Tests for morie.fn.starn — Spatio-temporal autoregressive model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.starn import starn
+from morie.fn.starn import starn
 
 
 class TestStarn:

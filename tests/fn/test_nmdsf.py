@@ -1,7 +1,7 @@
 """Tests for nmdsf.nonmetric_mds."""
 import numpy as np
 import pytest
-from moirais.fn.nmdsf import nonmetric_mds
+from morie.fn.nmdsf import nonmetric_mds
 
 
 def test_nmdsf_basic():

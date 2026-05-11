@@ -1,7 +1,7 @@
 """Tests for hmmha.geron_multihead_attention."""
 import numpy as np
 import pytest
-from moirais.fn.hmmha import geron_multihead_attention
+from morie.fn.hmmha import geron_multihead_attention
 
 
 def test_hmmha_basic():

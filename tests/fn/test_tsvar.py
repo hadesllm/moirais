@@ -1,7 +1,7 @@
 """Test tsvar."""
 import numpy as np
 import pytest
-from moirais.fn.tsvar import tsvar
+from morie.fn.tsvar import tsvar
 
 
 def test_tsvar_basic():

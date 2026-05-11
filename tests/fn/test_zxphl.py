@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxphl -- Persistence landscape"""
+"""Tests for morie.fn.zxphl -- Persistence landscape"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxphl import persistence_land
+from morie.fn.zxphl import persistence_land
 
 
 class TestPersistenceLand:

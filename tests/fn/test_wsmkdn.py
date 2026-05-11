@@ -1,7 +1,7 @@
 """Tests for wsmkdn.wasserman_kde."""
 import numpy as np
 import pytest
-from moirais.fn.wsmkdn import wasserman_kde
+from morie.fn.wsmkdn import wasserman_kde
 
 
 def test_wsmkdn_basic():

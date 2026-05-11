@@ -1,7 +1,7 @@
 """Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u11 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_11
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u11 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_11
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u11_basic():

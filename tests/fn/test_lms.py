@@ -1,6 +1,6 @@
 """Tests for least_median_sq."""
 import numpy as np, pytest
-from moirais.fn.lms import least_median_sq
+from morie.fn.lms import least_median_sq
 
 class TestLMS:
     def test_basic(self):

@@ -1,7 +1,7 @@
 """Tests for dssm.dssm."""
 import numpy as np
 import pytest
-from moirais.fn.dssm import dssm
+from morie.fn.dssm import dssm
 
 
 def test_dssm_basic():

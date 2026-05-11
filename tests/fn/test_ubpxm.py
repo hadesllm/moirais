@@ -1,7 +1,7 @@
 """Test ubpxm."""
 import numpy as np
 import pytest
-from moirais.fn.ubpxm import ubpxm
+from morie.fn.ubpxm import ubpxm
 
 
 def test_ubpxm_basic():

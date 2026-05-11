@@ -1,7 +1,7 @@
 """Test reproj."""
 import numpy as np
 import pytest
-from moirais.fn.reproj import reproj
+from morie.fn.reproj import reproj
 
 
 def test_reproj_basic():

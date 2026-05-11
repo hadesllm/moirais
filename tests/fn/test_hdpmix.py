@@ -1,7 +1,7 @@
 """Tests for hdpmix.hierarchical_dp."""
 import numpy as np
 import pytest
-from moirais.fn.hdpmix import hierarchical_dp
+from morie.fn.hdpmix import hierarchical_dp
 
 
 def test_hdpmix_basic():

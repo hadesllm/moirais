@@ -1,7 +1,7 @@
 """Tests for tmlsbg.tmle_subgroup."""
 import numpy as np
 import pytest
-from moirais.fn.tmlsbg import tmle_subgroup
+from morie.fn.tmlsbg import tmle_subgroup
 
 
 def test_tmlsbg_basic():

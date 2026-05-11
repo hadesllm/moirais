@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dbet — beta PDF."""
+"""Tests for morie.fn.dbet — beta PDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dbet import dbeta
+from morie.fn.dbet import dbeta
 
 
 class TestDbeta:

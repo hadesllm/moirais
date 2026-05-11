@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.clse — Clustered standard errors."""
+"""Tests for morie.fn.clse — Clustered standard errors."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.clse import clustered_se
+from morie.fn.clse import clustered_se
 
 
 def test_clustered_se_larger_than_ols():
@@ -19,7 +19,7 @@ def test_clustered_se_larger_than_ols():
             X.append([x])
             cl.append(c)
     y, X, cl = np.array(y), np.array(X), np.array(cl)
-    from moirais.fn.olsrg import ols_regression
+    from morie.fn.olsrg import ols_regression
     ols = ols_regression(y, X)
     cse = clustered_se(y, X, cl)
     assert cse.se["(Intercept)"] > ols.se["(Intercept)"]
@@ -30,7 +30,7 @@ def test_clustered_se_coefs_same_as_ols():
     X = rng.standard_normal((100, 1))
     y = 2.0 + 3.0 * X[:, 0] + rng.standard_normal(100)
     cl = np.repeat(np.arange(20), 5)
-    from moirais.fn.olsrg import ols_regression
+    from morie.fn.olsrg import ols_regression
     ols = ols_regression(y, X)
     cse = clustered_se(y, X, cl)
     np.testing.assert_allclose(

@@ -1,7 +1,7 @@
 """Test gcplr."""
 import numpy as np
 import pytest
-from moirais.fn.gcplr import gcplr
+from morie.fn.gcplr import gcplr
 
 
 def test_gcplr_basic():

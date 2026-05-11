@@ -1,7 +1,7 @@
 """Test grtcrc."""
 import numpy as np
 import pytest
-from moirais.fn.grtcrc import grtcrc
+from morie.fn.grtcrc import grtcrc
 
 
 def test_grtcrc_basic():

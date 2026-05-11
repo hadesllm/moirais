@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.clfrt — Classification rate."""
+"""Tests for morie.fn.clfrt — Classification rate."""
 import numpy as np
-from moirais.fn.clfrt import clfrt
+from morie.fn.clfrt import clfrt
 
 
 def test_clfrt_perfect():

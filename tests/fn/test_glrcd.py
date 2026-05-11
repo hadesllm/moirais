@@ -1,7 +1,7 @@
 """Tests for glrcd.py - GLR change point detection."""
 import numpy as np
 import pytest
-from moirais.fn.glrcd import glr_change, glrcd
+from morie.fn.glrcd import glr_change, glrcd
 
 
 def test_glr_change_returns_descriptive_result():

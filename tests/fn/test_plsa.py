@@ -1,7 +1,7 @@
 """Tests for plsa.plsa."""
 import numpy as np
 import pytest
-from moirais.fn.plsa import plsa
+from morie.fn.plsa import plsa
 
 
 def test_plsa_basic():

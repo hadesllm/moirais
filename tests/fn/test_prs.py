@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.prs — polygenic risk score."""
+"""Tests for morie.fn.prs — polygenic risk score."""
 import numpy as np
 import pytest
-from moirais.fn.prs import polygenic_risk_score
+from morie.fn.prs import polygenic_risk_score
 
 
 class TestPRS:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.skwrp -- Levy flight."""
+"""Tests for morie.fn.skwrp -- Levy flight."""
 
 import numpy as np
-from moirais.fn.skwrp import levy_flight, skwrp
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.skwrp import levy_flight, skwrp
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSkwrp:

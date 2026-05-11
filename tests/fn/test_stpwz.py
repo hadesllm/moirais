@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.stpwz -- Stepped-wedge design."""
+"""Tests for morie.fn.stpwz -- Stepped-wedge design."""
 
 import pytest
-from moirais.fn.stpwz import stepped_wedge_design
+from morie.fn.stpwz import stepped_wedge_design
 
 
 class TestSteppedWedge:

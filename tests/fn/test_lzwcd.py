@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lzwcd — LZW compression."""
+"""Tests for morie.fn.lzwcd — LZW compression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lzwcd import lzwcd
+from morie.fn.lzwcd import lzwcd
 
 
 class TestLzwcd:

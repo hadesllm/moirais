@@ -1,7 +1,7 @@
 """Tests for cvxcen.boyd_central_path."""
 import numpy as np
 import pytest
-from moirais.fn.cvxcen import boyd_central_path
+from morie.fn.cvxcen import boyd_central_path
 
 
 def test_cvxcen_basic():

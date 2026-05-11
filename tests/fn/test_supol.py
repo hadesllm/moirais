@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.supol -- polysubstance use."""
+"""Tests for morie.fn.supol -- polysubstance use."""
 
 import pandas as pd
-from moirais.fn.supol import polysubstance
+from morie.fn.supol import polysubstance
 
 
 class TestPolysubstance:

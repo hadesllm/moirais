@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.jsdiv — Jensen-Shannon divergence."""
+"""Tests for morie.fn.jsdiv — Jensen-Shannon divergence."""
 import numpy as np
 import pytest
-from moirais.fn.jsdiv import js_divergence
+from morie.fn.jsdiv import js_divergence
 
 
 class TestJSDivergence:

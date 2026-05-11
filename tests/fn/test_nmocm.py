@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmocm -- OC Coombs mesh"""
+"""Tests for morie.fn.nmocm -- OC Coombs mesh"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmocm import oc_coombs_mesh
+from morie.fn.nmocm import oc_coombs_mesh
 
 
 class TestOcCoombsMesh:

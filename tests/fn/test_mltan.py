@@ -1,6 +1,6 @@
 """Tests for mltan.py - Multiresolution analysis."""
 import numpy as np
-from moirais.fn.mltan import multiresolution_analysis, mltan
+from morie.fn.mltan import multiresolution_analysis, mltan
 
 
 def test_mra_returns_result():

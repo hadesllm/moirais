@@ -1,7 +1,7 @@
 Homomorphic Deconvolution & Cepstral Analysis
 ==============================================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
 Cepstral analysis transforms convolution into addition via the log domain,
 enabling separation of mixed signals (e.g., excitation from impulse response
@@ -20,7 +20,7 @@ where :math:`X(k) = \text{FFT}(x[n])`.
 
 .. code-block:: python
 
-   from moirais.signal import cepst
+   from morie.signal import cepst
    result = cepst(signal)   # CepstrumResult with .cepstrum array
 
 Complex Cepstrum
@@ -36,7 +36,7 @@ This is invertible: ``inverse_complex_cepstrum(complex_cepstrum(x)) = x``.
 
 .. code-block:: python
 
-   from moirais.signal import hcepst
+   from morie.signal import hcepst
    result = hcepst(signal)  # CepstrumResult
 
 Liftering and Deconvolution
@@ -54,7 +54,7 @@ minimum-phase component from the rapidly varying excitation.
 
 .. code-block:: python
 
-   from moirais.signal import hdecon
+   from morie.signal import hdecon
 
    result = hdecon(pcg_signal, cutoff_quefrency=64)
    min_phase = result.extra["min_phase"]
@@ -70,7 +70,7 @@ this enables murmur detection in cardiotoxicity studies.
 
 .. code-block:: python
 
-   from moirais.signal import pcgflt, hdecon, pcgmur
+   from morie.signal import pcgflt, hdecon, pcgmur
 
    filtered = pcgflt(pcg, fs=2000)
    decomposed = hdecon(filtered.filtered, cutoff_quefrency=128)

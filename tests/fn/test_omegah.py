@@ -1,7 +1,7 @@
 """Tests for omegah.omega_hierarchical."""
 import numpy as np
 import pytest
-from moirais.fn.omegah import omega_hierarchical
+from morie.fn.omegah import omega_hierarchical
 
 
 def test_omegah_basic():

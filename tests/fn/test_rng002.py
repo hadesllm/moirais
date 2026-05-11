@@ -1,7 +1,7 @@
 """Tests for rng002.rangayyan_ch3_mean_squared_value."""
 import numpy as np
 import pytest
-from moirais.fn.rng002 import rangayyan_ch3_mean_squared_value
+from morie.fn.rng002 import rangayyan_ch3_mean_squared_value
 
 
 def test_rng002_basic():

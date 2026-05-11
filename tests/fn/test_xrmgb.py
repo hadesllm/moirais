@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrmgb -- MGWR variable bandwidths"""
+"""Tests for morie.fn.xrmgb -- MGWR variable bandwidths"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrmgb import mgwr_bandwidths
+from morie.fn.xrmgb import mgwr_bandwidths
 
 
 class TestMgwrBandwidths:

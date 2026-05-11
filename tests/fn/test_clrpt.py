@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.clrpt — classification report."""
+"""Tests for morie.fn.clrpt — classification report."""
 import numpy as np
 import pytest
-from moirais.fn.clrpt import classification_report, clrpt
+from morie.fn.clrpt import classification_report, clrpt
 
 
 def test_perfect_binary():

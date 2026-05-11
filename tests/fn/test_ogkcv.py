@@ -1,7 +1,7 @@
 """Tests for ogkcv.orthogonalized_gk."""
 import numpy as np
 import pytest
-from moirais.fn.ogkcv import orthogonalized_gk
+from morie.fn.ogkcv import orthogonalized_gk
 
 
 def test_ogkcv_basic():

@@ -1,7 +1,7 @@
 """Tests for ksr050.kosorok_ch2_frechet_differentiability."""
 import numpy as np
 import pytest
-from moirais.fn.ksr050 import kosorok_ch2_frechet_differentiability
+from morie.fn.ksr050 import kosorok_ch2_frechet_differentiability
 
 
 def test_ksr050_basic():

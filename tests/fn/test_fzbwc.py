@@ -1,7 +1,7 @@
 """Tests for fzbwc.fauzi_quantile_bw_condition."""
 import numpy as np
 import pytest
-from moirais.fn.fzbwc import fauzi_quantile_bw_condition
+from morie.fn.fzbwc import fauzi_quantile_bw_condition
 
 
 def test_fzbwc_basic():

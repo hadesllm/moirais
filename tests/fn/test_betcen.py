@@ -1,7 +1,7 @@
 """Tests for betcen.betweenness_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.betcen import betweenness_centrality
+from morie.fn.betcen import betweenness_centrality
 
 
 def test_betcen_basic():

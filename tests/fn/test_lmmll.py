@@ -1,7 +1,7 @@
 """Tests for lmmll.lmm_log_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.lmmll import lmm_log_likelihood
+from morie.fn.lmmll import lmm_log_likelihood
 
 
 def test_lmmll_basic():

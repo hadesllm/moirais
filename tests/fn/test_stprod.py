@@ -1,7 +1,7 @@
 """Tests for stprod."""
 import numpy as np
 import pytest
-from moirais.fn.stprod import stprod
+from morie.fn.stprod import stprod
 
 
 def test_stprod_basic():
@@ -27,5 +27,5 @@ def test_stprod_no_data():
 
 
 def test_stprod_alias():
-    from moirais.fn.stprod import stprod
+    from morie.fn.stprod import stprod
     assert stprod is stprod

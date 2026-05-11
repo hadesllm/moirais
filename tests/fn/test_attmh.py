@@ -1,7 +1,7 @@
 """Tests for attmh.multi_head_attention."""
 import numpy as np
 import pytest
-from moirais.fn.attmh import multi_head_attention
+from morie.fn.attmh import multi_head_attention
 
 
 def test_attmh_basic():

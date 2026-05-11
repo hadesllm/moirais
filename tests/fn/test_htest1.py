@@ -1,7 +1,7 @@
 """Tests for htest1.horvitz_thompson."""
 import numpy as np
 import pytest
-from moirais.fn.htest1 import horvitz_thompson
+from morie.fn.htest1 import horvitz_thompson
 
 
 def test_htest1_basic():

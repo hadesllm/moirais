@@ -1,7 +1,7 @@
 """Test gchrc."""
 import numpy as np
 import pytest
-from moirais.fn.gchrc import gchrc
+from morie.fn.gchrc import gchrc
 
 
 def test_gchrc_basic():

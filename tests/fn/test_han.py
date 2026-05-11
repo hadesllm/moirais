@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.han -- Missing data handler."""
+"""Tests for morie.fn.han -- Missing data handler."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.han import handle_missing, han
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.han import handle_missing, han
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHan:

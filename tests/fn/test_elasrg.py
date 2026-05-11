@@ -1,7 +1,7 @@
 """Tests for elasrg.elastic_net_regression."""
 import numpy as np
 import pytest
-from moirais.fn.elasrg import elastic_net_regression
+from morie.fn.elasrg import elastic_net_regression
 
 
 def test_elasrg_basic():

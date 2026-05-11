@@ -1,7 +1,7 @@
 """Tests for rng177.rangayyan_ch4_qrs_second_derivative_balda."""
 import numpy as np
 import pytest
-from moirais.fn.rng177 import rangayyan_ch4_qrs_second_derivative_balda
+from morie.fn.rng177 import rangayyan_ch4_qrs_second_derivative_balda
 
 
 def test_rng177_basic():

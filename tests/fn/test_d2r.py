@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.d2r -- Convert Cohen's d to Pearson r."""
+"""Tests for morie.fn.d2r -- Convert Cohen's d to Pearson r."""
 
 import pytest
-from moirais.fn.d2r import d_to_r
+from morie.fn.d2r import d_to_r
 
 
 class TestDToR:

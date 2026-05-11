@@ -1,7 +1,7 @@
 """Test opde."""
 import numpy as np
 import pytest
-from moirais.fn.opde import opde
+from morie.fn.opde import opde
 
 
 def test_opde_basic():

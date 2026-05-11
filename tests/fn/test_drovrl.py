@@ -1,7 +1,7 @@
 """Tests for drovrl.dr_did_overlap_trim."""
 import numpy as np
 import pytest
-from moirais.fn.drovrl import dr_did_overlap_trim
+from morie.fn.drovrl import dr_did_overlap_trim
 
 
 def test_drovrl_basic():

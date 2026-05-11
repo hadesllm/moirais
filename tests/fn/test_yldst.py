@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.yldst -- Years lived with disability."""
+"""Tests for morie.fn.yldst -- Years lived with disability."""
 
 import pytest
-from moirais.fn.yldst import years_lived_with_disability
+from morie.fn.yldst import years_lived_with_disability
 
 
 class TestYLD:

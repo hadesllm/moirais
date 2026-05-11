@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.odid1 — DiD for policy change."""
+"""Tests for morie.fn.odid1 — DiD for policy change."""
 
 import numpy as np
-from moirais.fn.odid1 import otis_did_policy
+from morie.fn.odid1 import otis_did_policy
 
 
 class TestOtisDidPolicy:

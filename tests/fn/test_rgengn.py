@@ -1,7 +1,7 @@
 """Tests for rgengn.rangayyan_eng."""
 import numpy as np
 import pytest
-from moirais.fn.rgengn import rangayyan_eng
+from morie.fn.rgengn import rangayyan_eng
 
 
 def test_rgengn_basic():

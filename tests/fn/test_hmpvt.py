@@ -1,7 +1,7 @@
 """Tests for hmpvt.geron_pvt."""
 import numpy as np
 import pytest
-from moirais.fn.hmpvt import geron_pvt
+from morie.fn.hmpvt import geron_pvt
 
 
 def test_hmpvt_basic():

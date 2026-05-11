@@ -1,7 +1,7 @@
 """Tests for rng206.rangayyan_ch4_coherence_spectrum."""
 import numpy as np
 import pytest
-from moirais.fn.rng206 import rangayyan_ch4_coherence_spectrum
+from morie.fn.rng206 import rangayyan_ch4_coherence_spectrum
 
 
 def test_rng206_basic():

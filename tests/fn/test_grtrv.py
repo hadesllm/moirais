@@ -1,7 +1,7 @@
 """Tests for grtrv.geron_tree_regression_leaf."""
 import numpy as np
 import pytest
-from moirais.fn.grtrv import geron_tree_regression_leaf
+from morie.fn.grtrv import geron_tree_regression_leaf
 
 
 def test_grtrv_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.moran — Moran's I global spatial autocorrelation."""
+"""Tests for morie.fn.moran — Moran's I global spatial autocorrelation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.moran import morans_i
+from morie.fn.moran import morans_i
 
 
 class TestMoransI:

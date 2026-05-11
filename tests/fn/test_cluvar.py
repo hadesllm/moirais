@@ -1,7 +1,7 @@
 """Tests for cluvar.cluster_variance."""
 import numpy as np
 import pytest
-from moirais.fn.cluvar import cluster_variance
+from morie.fn.cluvar import cluster_variance
 
 
 def test_cluvar_basic():

@@ -1,7 +1,7 @@
 """Tests for hmencox.geron_encoder_only."""
 import numpy as np
 import pytest
-from moirais.fn.hmencox import geron_encoder_only
+from morie.fn.hmencox import geron_encoder_only
 
 
 def test_hmencox_basic():

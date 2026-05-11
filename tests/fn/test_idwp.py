@@ -1,7 +1,7 @@
 """Tests for idwp."""
 import numpy as np
 import pytest
-from moirais.fn.idwp import idwp
+from morie.fn.idwp import idwp
 
 
 def test_idwp_basic():
@@ -27,5 +27,5 @@ def test_idwp_no_data():
 
 
 def test_idwp_alias():
-    from moirais.fn.idwp import idwp
+    from morie.fn.idwp import idwp
     assert idwp is idwp

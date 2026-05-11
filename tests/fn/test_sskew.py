@@ -1,7 +1,7 @@
 """Test skewness_coeff (sskew)."""
 import numpy as np
-from moirais.fn.sskew import skewness_coeff, sskew
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sskew import skewness_coeff, sskew
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSkewness:

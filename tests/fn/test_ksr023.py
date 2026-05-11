@@ -1,7 +1,7 @@
 """Tests for ksr023.kosorok_ch1_cox_estimating_equation."""
 import numpy as np
 import pytest
-from moirais.fn.ksr023 import kosorok_ch1_cox_estimating_equation
+from morie.fn.ksr023 import kosorok_ch1_cox_estimating_equation
 
 
 def test_ksr023_basic():

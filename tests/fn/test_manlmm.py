@@ -1,7 +1,7 @@
 """Tests for manlmm.ma_network_lme."""
 import numpy as np
 import pytest
-from moirais.fn.manlmm import ma_network_lme
+from morie.fn.manlmm import ma_network_lme
 
 
 def test_manlmm_basic():

@@ -1,7 +1,7 @@
 """Test rgfsp."""
 import numpy as np
 import pytest
-from moirais.fn.rgfsp import rgfsp
+from morie.fn.rgfsp import rgfsp
 
 
 def test_rgfsp_basic():

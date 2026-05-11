@@ -1,7 +1,7 @@
 """Tests for agplog.alphazero_play_log."""
 import numpy as np
 import pytest
-from moirais.fn.agplog import alphazero_play_log
+from morie.fn.agplog import alphazero_play_log
 
 
 def test_agplog_basic():

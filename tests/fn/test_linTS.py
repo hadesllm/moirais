@@ -1,7 +1,7 @@
 """Tests for linTS.lin_thompson."""
 import numpy as np
 import pytest
-from moirais.fn.linTS import lin_thompson
+from morie.fn.linTS import lin_thompson
 
 
 def test_linTS_basic():

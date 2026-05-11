@@ -1,7 +1,7 @@
 """Test srpnl."""
 import numpy as np
 import pytest
-from moirais.fn.srpnl import srpnl
+from morie.fn.srpnl import srpnl
 
 
 def test_srpnl_basic():

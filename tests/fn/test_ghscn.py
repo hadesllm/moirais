@@ -1,7 +1,7 @@
 """Test ghscn."""
 import numpy as np
 import pytest
-from moirais.fn.ghscn import ghscn
+from morie.fn.ghscn import ghscn
 
 
 def test_ghscn_basic():

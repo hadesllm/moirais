@@ -1,7 +1,7 @@
 """Tests for tmlmrk.tmle_markov."""
 import numpy as np
 import pytest
-from moirais.fn.tmlmrk import tmle_markov
+from morie.fn.tmlmrk import tmle_markov
 
 
 def test_tmlmrk_basic():

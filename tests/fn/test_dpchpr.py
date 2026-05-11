@@ -1,7 +1,7 @@
 """Tests for dpchpr.dp_changepoint."""
 import numpy as np
 import pytest
-from moirais.fn.dpchpr import dp_changepoint
+from morie.fn.dpchpr import dp_changepoint
 
 
 def test_dpchpr_basic():

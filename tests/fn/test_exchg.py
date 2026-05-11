@@ -1,7 +1,7 @@
 """Tests for exchg.exchangeability_assumption."""
 import numpy as np
 import pytest
-from moirais.fn.exchg import exchangeability_assumption
+from morie.fn.exchg import exchangeability_assumption
 
 
 def test_exchg_basic():

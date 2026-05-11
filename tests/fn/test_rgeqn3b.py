@@ -1,7 +1,7 @@
 """Tests for rgeqn3b.rangayyan_ch3_correlation_sum."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn3b import rangayyan_ch3_correlation_sum
+from morie.fn.rgeqn3b import rangayyan_ch3_correlation_sum
 
 
 def test_rgeqn3b_basic():

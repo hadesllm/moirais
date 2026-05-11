@@ -1,7 +1,7 @@
 """Tests for bvtrA.bias_variance_tradeoff."""
 import numpy as np
 import pytest
-from moirais.fn.bvtrA import bias_variance_tradeoff
+from morie.fn.bvtrA import bias_variance_tradeoff
 
 
 def test_bvtrA_basic():

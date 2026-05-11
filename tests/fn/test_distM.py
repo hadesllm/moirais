@@ -1,7 +1,7 @@
 """Tests for distM.distmult."""
 import numpy as np
 import pytest
-from moirais.fn.distM import distmult
+from morie.fn.distM import distmult
 
 
 def test_distM_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kwlcx — kernel-smoothed Wilcoxon test."""
+"""Tests for morie.fn.kwlcx — kernel-smoothed Wilcoxon test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kwlcx import kwlcx
+from morie.fn.kwlcx import kwlcx
 
 
 class TestKwlcx:

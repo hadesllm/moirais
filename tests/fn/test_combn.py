@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.combn."""
+"""Tests for morie.fn.combn."""
 import numpy as np
-from moirais.fn.combn import combn
+from morie.fn.combn import combn
 
 
 def test_combn_smoke():
@@ -12,7 +12,7 @@ def test_combn_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.combn import cheatsheet
+    from morie.fn.combn import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

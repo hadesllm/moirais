@@ -1,6 +1,6 @@
 """Tests for mrmr_score."""
 import numpy as np
-from moirais.fn.mirmf import mrmr_score, mirmf
+from morie.fn.mirmf import mrmr_score, mirmf
 
 
 def test_basic():

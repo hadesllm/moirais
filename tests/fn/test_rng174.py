@@ -1,7 +1,7 @@
 """Tests for rng174.rangayyan_ch3_rls_weight_update_compact."""
 import numpy as np
 import pytest
-from moirais.fn.rng174 import rangayyan_ch3_rls_weight_update_compact
+from morie.fn.rng174 import rangayyan_ch3_rls_weight_update_compact
 
 
 def test_rng174_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hound -- Kalman filter."""
+"""Tests for morie.fn.hound -- Kalman filter."""
 
 import numpy as np
-from moirais.fn.hound import kalman_filter, hound
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hound import kalman_filter, hound
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHound:

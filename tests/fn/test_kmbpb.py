@@ -1,7 +1,7 @@
 """Tests for kmbpb.kamath_bits_per_byte."""
 import numpy as np
 import pytest
-from moirais.fn.kmbpb import kamath_bits_per_byte
+from morie.fn.kmbpb import kamath_bits_per_byte
 
 
 def test_kmbpb_basic():

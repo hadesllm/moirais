@@ -1,7 +1,7 @@
 """Tests for naivef.naive_forecast."""
 import numpy as np
 import pytest
-from moirais.fn.naivef import naive_forecast
+from morie.fn.naivef import naive_forecast
 
 
 def test_naivef_basic():

@@ -1,7 +1,7 @@
 """Tests for lismor.local_morans_i."""
 import numpy as np
 import pytest
-from moirais.fn.lismor import local_morans_i
+from morie.fn.lismor import local_morans_i
 
 
 def test_lismor_basic():

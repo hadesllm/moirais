@@ -1,7 +1,7 @@
 """Tests for rgpantp.rangayyan_pan_tompkins."""
 import numpy as np
 import pytest
-from moirais.fn.rgpantp import rangayyan_pan_tompkins
+from morie.fn.rgpantp import rangayyan_pan_tompkins
 
 
 def test_rgpantp_basic():

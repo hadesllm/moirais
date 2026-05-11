@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.storm -- Markov chain weather model."""
+"""Tests for morie.fn.storm -- Markov chain weather model."""
 
 import numpy as np
-from moirais.fn.storm import markov_weather, storm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.storm import markov_weather, storm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStorm:

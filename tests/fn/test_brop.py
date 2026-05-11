@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.brop — ROPE analysis."""
+"""Tests for morie.fn.brop — ROPE analysis."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.brop import bayesian_rope
+from morie.fn.brop import bayesian_rope
 
 
 class TestBayesianROPE:

@@ -1,7 +1,7 @@
 """Tests for alndcg.alammar_ndcg_at_k."""
 import numpy as np
 import pytest
-from moirais.fn.alndcg import alammar_ndcg_at_k
+from morie.fn.alndcg import alammar_ndcg_at_k
 
 
 def test_alndcg_basic():

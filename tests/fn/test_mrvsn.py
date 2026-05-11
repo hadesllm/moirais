@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mrvsn -- Granger causality."""
+"""Tests for morie.fn.mrvsn -- Granger causality."""
 
 import numpy as np
-from moirais.fn.mrvsn import granger_causality, mrvsn
-from moirais.fn._containers import TestResult
+from morie.fn.mrvsn import granger_causality, mrvsn
+from morie.fn._containers import TestResult
 
 
 class TestMrvsn:

@@ -1,7 +1,7 @@
 """Tests for gdupd.gradient_descent_update."""
 import numpy as np
 import pytest
-from moirais.fn.gdupd import gradient_descent_update
+from morie.fn.gdupd import gradient_descent_update
 
 
 def test_gdupd_basic():

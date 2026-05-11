@@ -1,7 +1,7 @@
 """Test nbppr."""
 import numpy as np
 import pytest
-from moirais.fn.nbppr import nbppr
+from morie.fn.nbppr import nbppr
 
 
 def test_nbppr_basic():

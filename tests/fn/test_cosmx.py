@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cosmx -- comoving distance."""
+"""Tests for morie.fn.cosmx -- comoving distance."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cosmx import cosmx
+from morie.fn.cosmx import cosmx
 
 
 def test_returns_dict():

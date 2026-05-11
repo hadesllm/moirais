@@ -1,7 +1,7 @@
 """Tests for difrj -- Raju's area DIF."""
 import numpy as np
-from moirais.fn.difrj import dif_raju_area
-from moirais.fn._containers import DIFResult
+from morie.fn.difrj import dif_raju_area
+from morie.fn._containers import DIFResult
 
 
 class TestDifRaju:

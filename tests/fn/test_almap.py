@@ -1,7 +1,7 @@
 """Tests for almap.alammar_mean_average_precision."""
 import numpy as np
 import pytest
-from moirais.fn.almap import alammar_mean_average_precision
+from morie.fn.almap import alammar_mean_average_precision
 
 
 def test_almap_basic():

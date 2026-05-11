@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ncoef — normalize coefficients."""
+"""Tests for morie.fn.ncoef — normalize coefficients."""
 import numpy as np
-from moirais.fn.ncoef import ncoef
+from morie.fn.ncoef import ncoef
 
 
 def test_ncoef_smoke():
@@ -12,7 +12,7 @@ def test_ncoef_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ncoef import cheatsheet
+    from morie.fn.ncoef import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

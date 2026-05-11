@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rskcb — risk calibration."""
+"""Tests for morie.fn.rskcb — risk calibration."""
 
 import pandas as pd
-from moirais.fn.rskcb import risk_calibration, rskcb
+from morie.fn.rskcb import risk_calibration, rskcb
 
 
 class TestRiskCalibration:

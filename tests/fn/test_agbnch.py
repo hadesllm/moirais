@@ -1,7 +1,7 @@
 """Tests for agbnch.alphazero_benchmark_eval."""
 import numpy as np
 import pytest
-from moirais.fn.agbnch import alphazero_benchmark_eval
+from morie.fn.agbnch import alphazero_benchmark_eval
 
 
 def test_agbnch_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.jacbi -- Jacobi solver."""
+"""Tests for morie.fn.jacbi -- Jacobi solver."""
 
 import numpy as np
 import pytest
-from moirais.fn.jacbi import jacobi_solve, jacbi
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.jacbi import jacobi_solve, jacbi
+from morie.fn._containers import DescriptiveResult
 
 
 class TestJacbi:

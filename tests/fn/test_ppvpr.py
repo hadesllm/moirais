@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ppvpr."""
+"""Tests for morie.fn.ppvpr."""
 import numpy as np
-from moirais.fn.ppvpr import ppvpr
+from morie.fn.ppvpr import ppvpr
 
 
 def test_ppvpr_smoke():
@@ -12,7 +12,7 @@ def test_ppvpr_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ppvpr import cheatsheet
+    from morie.fn.ppvpr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

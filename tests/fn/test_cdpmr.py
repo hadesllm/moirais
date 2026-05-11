@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cdpmr -- proportionate mortality."""
+"""Tests for morie.fn.cdpmr -- proportionate mortality."""
 
 import pytest
-from moirais.fn.cdpmr import proportionate_mortality
+from morie.fn.cdpmr import proportionate_mortality
 
 
 class TestProportionateMortality:

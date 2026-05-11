@@ -1,7 +1,7 @@
 """Tests for dpsum.dp_sum."""
 import numpy as np
 import pytest
-from moirais.fn.dpsum import dp_sum
+from morie.fn.dpsum import dp_sum
 
 
 def test_dpsum_basic():

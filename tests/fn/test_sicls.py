@@ -1,7 +1,7 @@
 """Tests for sicls."""
 import numpy as np
 import pytest
-from moirais.fn.sicls import sicls
+from morie.fn.sicls import sicls
 
 
 def test_sicls_basic():
@@ -27,5 +27,5 @@ def test_sicls_no_data():
 
 
 def test_sicls_alias():
-    from moirais.fn.sicls import sicls
+    from morie.fn.sicls import sicls
     assert sicls is sicls

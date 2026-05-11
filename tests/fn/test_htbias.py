@@ -1,7 +1,7 @@
 """Tests for htbias.hettest_bias."""
 import numpy as np
 import pytest
-from moirais.fn.htbias import hettest_bias
+from morie.fn.htbias import hettest_bias
 
 
 def test_htbias_basic():

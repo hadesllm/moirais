@@ -1,7 +1,7 @@
 """Tests for km074.kamath_ch5_dpo_pref_substituted."""
 import numpy as np
 import pytest
-from moirais.fn.km074 import kamath_ch5_dpo_pref_substituted
+from morie.fn.km074 import kamath_ch5_dpo_pref_substituted
 
 
 def test_km074_basic():

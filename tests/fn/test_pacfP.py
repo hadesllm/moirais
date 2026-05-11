@@ -1,7 +1,7 @@
 """Tests for pacfP.partial_autocorrelation."""
 import numpy as np
 import pytest
-from moirais.fn.pacfP import partial_autocorrelation
+from morie.fn.pacfP import partial_autocorrelation
 
 
 def test_pacfP_basic():

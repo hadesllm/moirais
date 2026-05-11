@@ -1,7 +1,7 @@
 """Tests for use_r2u255.use_r_chapter_2_unnumbered_255."""
 import numpy as np
 import pytest
-from moirais.fn.use_r2u255 import use_r_chapter_2_unnumbered_255
+from morie.fn.use_r2u255 import use_r_chapter_2_unnumbered_255
 
 
 def test_use_r2u255_basic():

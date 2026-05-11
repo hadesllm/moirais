@@ -1,7 +1,7 @@
 """Tests for fzkqe.fauzi_kernel_quantile_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.fzkqe import fauzi_kernel_quantile_estimator
+from morie.fn.fzkqe import fauzi_kernel_quantile_estimator
 
 
 def test_fzkqe_basic():

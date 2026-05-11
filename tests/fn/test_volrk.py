@@ -1,7 +1,7 @@
 """Tests for volrk.vol_realised_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.volrk import vol_realised_kernel
+from morie.fn.volrk import vol_realised_kernel
 
 
 def test_volrk_basic():

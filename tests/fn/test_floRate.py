@@ -1,7 +1,7 @@
 """Tests for floRate.flow_duration."""
 import numpy as np
 import pytest
-from moirais.fn.floRate import flow_duration
+from morie.fn.floRate import flow_duration
 
 
 def test_floRate_basic():

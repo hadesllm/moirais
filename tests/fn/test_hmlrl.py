@@ -1,7 +1,7 @@
 """Tests for hmlrl.geron_linear_regression_life."""
 import numpy as np
 import pytest
-from moirais.fn.hmlrl import geron_linear_regression_life
+from morie.fn.hmlrl import geron_linear_regression_life
 
 
 def test_hmlrl_basic():

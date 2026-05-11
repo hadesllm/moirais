@@ -1,7 +1,7 @@
 """Tests for grdcl.gradient_clipping."""
 import numpy as np
 import pytest
-from moirais.fn.grdcl import gradient_clipping
+from morie.fn.grdcl import gradient_clipping
 
 
 def test_grdcl_basic():

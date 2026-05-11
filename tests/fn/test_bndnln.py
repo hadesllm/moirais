@@ -1,7 +1,7 @@
 """Tests for bndnln.bound_nonlinear."""
 import numpy as np
 import pytest
-from moirais.fn.bndnln import bound_nonlinear
+from morie.fn.bndnln import bound_nonlinear
 
 
 def test_bndnln_basic():

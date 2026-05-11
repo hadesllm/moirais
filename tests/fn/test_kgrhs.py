@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgrhs -- Kriging right-hand side vector"""
+"""Tests for morie.fn.kgrhs -- Kriging right-hand side vector"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgrhs import kriging_rhs
+from morie.fn.kgrhs import kriging_rhs
 
 
 class TestKrigingRhs:

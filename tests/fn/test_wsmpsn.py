@@ -1,7 +1,7 @@
 """Tests for wsmpsn.wasserman_pearson_corr."""
 import numpy as np
 import pytest
-from moirais.fn.wsmpsn import wasserman_pearson_corr
+from morie.fn.wsmpsn import wasserman_pearson_corr
 
 
 def test_wsmpsn_basic():

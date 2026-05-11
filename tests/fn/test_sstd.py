@@ -1,7 +1,7 @@
 """Test sample_std (sstd)."""
 import numpy as np
-from moirais.fn.sstd import sample_std, sstd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sstd import sample_std, sstd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSampleStd:

@@ -1,7 +1,7 @@
 """Tests for rgsclgr.rangayyan_scalogram."""
 import numpy as np
 import pytest
-from moirais.fn.rgsclgr import rangayyan_scalogram
+from morie.fn.rgsclgr import rangayyan_scalogram
 
 
 def test_rgsclgr_basic():

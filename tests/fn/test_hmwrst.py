@@ -1,7 +1,7 @@
 """Tests for hmwrst.geron_warm_restarts."""
 import numpy as np
 import pytest
-from moirais.fn.hmwrst import geron_warm_restarts
+from morie.fn.hmwrst import geron_warm_restarts
 
 
 def test_hmwrst_basic():

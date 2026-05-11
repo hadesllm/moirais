@@ -1,7 +1,7 @@
 """Tests for rgwhop.rangayyan_wiener_hopf."""
 import numpy as np
 import pytest
-from moirais.fn.rgwhop import rangayyan_wiener_hopf
+from morie.fn.rgwhop import rangayyan_wiener_hopf
 
 
 def test_rgwhop_basic():

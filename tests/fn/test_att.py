@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.att — Average Treatment Effect on the Treated."""
+"""Tests for morie.fn.att — Average Treatment Effect on the Treated."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.att import estimate_att
+from morie.fn.att import estimate_att
 
 
 @pytest.fixture()

@@ -1,7 +1,7 @@
 """Tests for spblup.schabenberger_blup."""
 import numpy as np
 import pytest
-from moirais.fn.spblup import schabenberger_blup
+from morie.fn.spblup import schabenberger_blup
 
 
 def test_spblup_basic():

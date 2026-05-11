@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rinsp — render inspection."""
+"""Tests for morie.fn.rinsp — render inspection."""
 
 import pandas as pd
 import pytest
 
-from moirais.fn.rinsp import rinsp, render_inspection
-from moirais.inspector import InspectionResult
+from morie.fn.rinsp import rinsp, render_inspection
+from morie.inspector import InspectionResult
 
 
 def test_alias_is_same_function():

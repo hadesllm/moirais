@@ -1,7 +1,7 @@
 """Tests for hitsR.hits_at_k."""
 import numpy as np
 import pytest
-from moirais.fn.hitsR import hits_at_k
+from morie.fn.hitsR import hits_at_k
 
 
 def test_hitsR_basic():

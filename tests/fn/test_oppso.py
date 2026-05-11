@@ -1,7 +1,7 @@
 """Test oppso."""
 import numpy as np
 import pytest
-from moirais.fn.oppso import oppso
+from morie.fn.oppso import oppso
 
 
 def test_oppso_basic():

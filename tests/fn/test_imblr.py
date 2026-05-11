@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.imblr."""
+"""Tests for morie.fn.imblr."""
 import numpy as np
-from moirais.fn.imblr import imblr
+from morie.fn.imblr import imblr
 
 
 def test_imblr_smoke():
@@ -12,7 +12,7 @@ def test_imblr_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.imblr import cheatsheet
+    from morie.fn.imblr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Test sostr."""
 import numpy as np
 import pytest
-from moirais.fn.sostr import sostr
+from morie.fn.sostr import sostr
 
 
 def test_sostr_basic():

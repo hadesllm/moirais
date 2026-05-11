@@ -1,7 +1,7 @@
 """Tests for alftrm.alphafold_triangle_mult."""
 import numpy as np
 import pytest
-from moirais.fn.alftrm import alphafold_triangle_mult
+from morie.fn.alftrm import alphafold_triangle_mult
 
 
 def test_alftrm_basic():

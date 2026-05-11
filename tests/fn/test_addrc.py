@@ -1,6 +1,6 @@
 """Tests for addrc (full adder)."""
 import numpy as np
-from moirais.fn.addrc import full_adder
+from morie.fn.addrc import full_adder
 
 
 def test_full_adder_scalar():

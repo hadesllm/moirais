@@ -1,7 +1,7 @@
 """Test abuvr."""
 import numpy as np
 import pytest
-from moirais.fn.abuvr import abuvr
+from morie.fn.abuvr import abuvr
 
 
 def test_abuvr_basic():

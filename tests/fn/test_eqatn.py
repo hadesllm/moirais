@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.eqatn — Atkinson index."""
+"""Tests for morie.fn.eqatn — Atkinson index."""
 
 import pytest
 import numpy as np
-from moirais.fn.eqatn import atkinson_index
-from moirais.fn._containers import ESRes
+from morie.fn.eqatn import atkinson_index
+from morie.fn._containers import ESRes
 
 
 class TestAtkinson:

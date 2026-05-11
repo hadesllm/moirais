@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.precn — precision (PPV)."""
+"""Tests for morie.fn.precn — precision (PPV)."""
 import numpy as np
 import pytest
-from moirais.fn.precn import precision, precn
+from morie.fn.precn import precision, precn
 
 
 def test_perfect():

@@ -1,7 +1,7 @@
 """Test ppthm."""
 import numpy as np
 import pytest
-from moirais.fn.ppthm import ppthm
+from morie.fn.ppthm import ppthm
 
 
 def test_ppthm_basic():

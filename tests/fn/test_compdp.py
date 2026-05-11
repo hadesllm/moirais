@@ -1,7 +1,7 @@
 """Tests for compdp.basic_composition."""
 import numpy as np
 import pytest
-from moirais.fn.compdp import basic_composition
+from morie.fn.compdp import basic_composition
 
 
 def test_compdp_basic():

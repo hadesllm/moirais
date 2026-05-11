@@ -1,7 +1,7 @@
 """Tests for hmcfm.geron_confusion_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.hmcfm import geron_confusion_matrix
+from morie.fn.hmcfm import geron_confusion_matrix
 
 
 def test_hmcfm_basic():

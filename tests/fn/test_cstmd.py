@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cstmd — custody medical rate."""
+"""Tests for morie.fn.cstmd — custody medical rate."""
 
 import pytest
 import numpy as np
-from moirais.fn.cstmd import custody_medical
-from moirais.fn._containers import CrimeResult
+from morie.fn.cstmd import custody_medical
+from morie.fn._containers import CrimeResult
 
 
 class TestCustodyMedical:

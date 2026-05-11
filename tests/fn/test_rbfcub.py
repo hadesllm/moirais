@@ -1,7 +1,7 @@
 """Tests for rbfcub."""
 import numpy as np
 import pytest
-from moirais.fn.rbfcub import rbfcub
+from morie.fn.rbfcub import rbfcub
 
 
 def test_rbfcub_basic():
@@ -27,5 +27,5 @@ def test_rbfcub_no_data():
 
 
 def test_rbfcub_alias():
-    from moirais.fn.rbfcub import rbfcub
+    from morie.fn.rbfcub import rbfcub
     assert rbfcub is rbfcub

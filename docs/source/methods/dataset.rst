@@ -1,24 +1,24 @@
 Dataset-Agnostic Analysis
 ==========================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS can profile and analyse *any* tabular dataset without prior knowledge
-of its schema via the :mod:`moirais.dataset` module. This capability is essential
+MORIE can profile and analyse *any* tabular dataset without prior knowledge
+of its schema via the :mod:`morie.dataset` module. This capability is essential
 when working with novel administrative health data, new survey waves, or
 datasets outside of CPADS.
 
 Levels of Measurement
 ----------------------
 
-MOIRAIS follows Stevens (1946) four-level typology when classifying columns:
+MORIE follows Stevens (1946) four-level typology when classifying columns:
 
 - **Nominal** — categories, no order. Operations: =, ≠. Examples: sex, province, ethnicity.
 - **Ordinal** — ordered categories. Operations: =, ≠, <, >. Examples: Likert scale (1--5), severity grade.
 - **Interval** — equal intervals, no true zero. Operations: +, −, mean. Examples: year, temperature (°C), index score.
 - **Ratio** — equal intervals + true zero. Operations: +, −, ×, ÷, geometric mean. Examples: income, age, count, weight.
 
-Inference rules used by :func:`moirais.dataset.infer_measurement_level`:
+Inference rules used by :func:`morie.dataset.infer_measurement_level`:
 
 1. Object / category dtype + ≤ ``ordinal_threshold`` unique values → **Ordinal**
 2. Object / category dtype + > ``ordinal_threshold`` unique values → **Nominal**
@@ -31,8 +31,8 @@ Inference rules used by :func:`moirais.dataset.infer_measurement_level`:
 Dataset Profiling
 ------------------
 
-:func:`moirais.dataset.profile_dataset` builds a :class:`moirais.dataset.DatasetProfile`
-containing a :class:`moirais.dataset.ColumnProfile` for every column.
+:func:`morie.dataset.profile_dataset` builds a :class:`morie.dataset.DatasetProfile`
+containing a :class:`morie.dataset.ColumnProfile` for every column.
 
 Each ``ColumnProfile`` records:
 
@@ -63,7 +63,7 @@ If the user supplies hints via ``hint_treatment``, ``hint_outcome``, or
 Analysis Plan Suggestion
 ------------------------
 
-:func:`moirais.dataset.suggest_analysis_plan` inspects the
+:func:`morie.dataset.suggest_analysis_plan` inspects the
 :class:`DatasetProfile` and returns an ordered list of suggested analyses.
 Each suggestion is a dict::
 
@@ -84,7 +84,7 @@ Usage Example
 .. code-block:: python
 
    import pandas as pd
-   from moirais.dataset import load_dataset, profile_dataset, suggest_analysis_plan
+   from morie.dataset import load_dataset, profile_dataset, suggest_analysis_plan
 
    df = load_dataset("data/my_survey.csv")
    profile = profile_dataset(df, hint_treatment="cannabis_use")
@@ -98,7 +98,7 @@ Usage Example
 
 CLI usage::
 
-   moirais profile-dataset --csv data/my_survey.csv
+   morie profile-dataset --csv data/my_survey.csv
 
 References
 ----------

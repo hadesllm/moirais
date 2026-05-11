@@ -1,7 +1,7 @@
 """Tests for sscure.cure_model."""
 import numpy as np
 import pytest
-from moirais.fn.sscure import cure_model
+from morie.fn.sscure import cure_model
 
 
 def test_sscure_basic():

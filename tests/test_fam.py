@@ -1,11 +1,11 @@
-"""Tests for moirais.fam — vendored OllamaFreeAPI client."""
+"""Tests for morie.fam — vendored OllamaFreeAPI client."""
 
 import json
 from unittest.mock import MagicMock, patch
 
 import pytest
 
-from moirais.fam import OllamaFreeAPI
+from morie.fam import OllamaFreeAPI
 
 
 class TestModelRegistry:

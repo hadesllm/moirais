@@ -1,7 +1,7 @@
 """Tests for bndpl.bnp_density_pl."""
 import numpy as np
 import pytest
-from moirais.fn.bndpl import bnp_density_pl
+from morie.fn.bndpl import bnp_density_pl
 
 
 def test_bndpl_basic():

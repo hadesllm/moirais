@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tweir — Weierstrass p-function."""
+"""Tests for morie.fn.tweir — Weierstrass p-function."""
 
 import pytest
 
-from moirais.fn.tweir import weierstrass_p
+from morie.fn.tweir import weierstrass_p
 
 
 class TestWeierstrassP:

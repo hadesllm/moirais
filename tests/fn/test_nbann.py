@@ -1,7 +1,7 @@
 """Test nbann."""
 import numpy as np
 import pytest
-from moirais.fn.nbann import nbann
+from morie.fn.nbann import nbann
 
 
 def test_nbann_basic():

@@ -1,7 +1,7 @@
 """Tests for sbcrc."""
 import numpy as np
 import pytest
-from moirais.fn.sbcrc import sbcrc
+from morie.fn.sbcrc import sbcrc
 
 
 def test_sbcrc_basic():
@@ -27,5 +27,5 @@ def test_sbcrc_no_data():
 
 
 def test_sbcrc_alias():
-    from moirais.fn.sbcrc import sbcrc
+    from morie.fn.sbcrc import sbcrc
     assert sbcrc is sbcrc

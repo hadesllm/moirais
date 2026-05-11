@@ -1,7 +1,7 @@
 """Tests for rfwht."""
 import numpy as np
 import pytest
-from moirais.fn.rfwht import rfwht
+from morie.fn.rfwht import rfwht
 
 
 def test_rfwht_basic():
@@ -27,5 +27,5 @@ def test_rfwht_no_data():
 
 
 def test_rfwht_alias():
-    from moirais.fn.rfwht import rfwht
+    from morie.fn.rfwht import rfwht
     assert rfwht is rfwht

@@ -1,7 +1,7 @@
 """Tests for cominf.infomap."""
 import numpy as np
 import pytest
-from moirais.fn.cominf import infomap
+from morie.fn.cominf import infomap
 
 
 def test_cominf_basic():

@@ -1,7 +1,7 @@
 """Tests for sdiff.synthetic_did."""
 import numpy as np
 import pytest
-from moirais.fn.sdiff import synthetic_did
+from morie.fn.sdiff import synthetic_did
 
 
 def test_sdiff_basic():

@@ -1,7 +1,7 @@
 """Test mamar."""
 import numpy as np
 import pytest
-from moirais.fn.mamar import mamar
+from morie.fn.mamar import mamar
 
 
 def test_mamar_basic():

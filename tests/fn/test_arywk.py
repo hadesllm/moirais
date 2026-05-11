@@ -1,6 +1,6 @@
 """Tests for arywk.py - AR Yule-Walker estimation."""
 import numpy as np
-from moirais.fn.arywk import ar_yule_walker_fn, arywk
+from morie.fn.arywk import ar_yule_walker_fn, arywk
 
 
 def test_arywk_returns_result():

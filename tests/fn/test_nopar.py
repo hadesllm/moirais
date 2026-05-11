@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.nopar -- NOMINATE parameters."""
+"""Tests for morie.fn.nopar -- NOMINATE parameters."""
 import numpy as np
-from moirais.fn.nopar import nominate_parameters, nopar
+from morie.fn.nopar import nominate_parameters, nopar
 
 
 def test_alias():

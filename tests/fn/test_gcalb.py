@@ -1,7 +1,7 @@
 """Test gcalb."""
 import numpy as np
 import pytest
-from moirais.fn.gcalb import gcalb
+from morie.fn.gcalb import gcalb
 
 
 def test_gcalb_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.dimts -- dimensionality test."""
+"""Tests for morie.fn.dimts -- dimensionality test."""
 import numpy as np
-from moirais.fn.dimts import dimensionality_test, dimts
+from morie.fn.dimts import dimensionality_test, dimts
 
 
 def test_alias():

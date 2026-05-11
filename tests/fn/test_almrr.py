@@ -1,7 +1,7 @@
 """Tests for almrr.alammar_mean_reciprocal_rank."""
 import numpy as np
 import pytest
-from moirais.fn.almrr import alammar_mean_reciprocal_rank
+from morie.fn.almrr import alammar_mean_reciprocal_rank
 
 
 def test_almrr_basic():

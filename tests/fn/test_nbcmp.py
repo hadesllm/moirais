@@ -1,7 +1,7 @@
 """Test nbcmp."""
 import numpy as np
 import pytest
-from moirais.fn.nbcmp import nbcmp
+from morie.fn.nbcmp import nbcmp
 
 
 def test_nbcmp_basic():

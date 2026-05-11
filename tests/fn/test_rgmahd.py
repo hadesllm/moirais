@@ -1,7 +1,7 @@
 """Tests for rgmahd.rangayyan_mahalanobis."""
 import numpy as np
 import pytest
-from moirais.fn.rgmahd import rangayyan_mahalanobis
+from morie.fn.rgmahd import rangayyan_mahalanobis
 
 
 def test_rgmahd_basic():

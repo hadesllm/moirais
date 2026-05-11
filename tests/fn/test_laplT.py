@@ -1,7 +1,7 @@
 """Tests for laplT.laplace_transform."""
 import numpy as np
 import pytest
-from moirais.fn.laplT import laplace_transform
+from morie.fn.laplT import laplace_transform
 
 
 def test_laplT_basic():

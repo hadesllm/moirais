@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.r2d -- Convert Pearson r to Cohen's d."""
+"""Tests for morie.fn.r2d -- Convert Pearson r to Cohen's d."""
 
 import numpy as np
 import pytest
-from moirais.fn.r2d import r_to_d
+from morie.fn.r2d import r_to_d
 
 
 class TestRToD:
@@ -16,7 +16,7 @@ class TestRToD:
 
     def test_roundtrip_with_d2r(self):
         """r -> d -> r should recover original r."""
-        from moirais.fn.d2r import d_to_r
+        from morie.fn.d2r import d_to_r
         r_orig = 0.4
         r_back = d_to_r(r_to_d(r_orig))
         assert r_back == pytest.approx(r_orig, abs=1e-6)

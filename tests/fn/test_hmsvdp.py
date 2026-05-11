@@ -1,7 +1,7 @@
 """Tests for hmsvdp.geron_svd_pseudoinverse."""
 import numpy as np
 import pytest
-from moirais.fn.hmsvdp import geron_svd_pseudoinverse
+from morie.fn.hmsvdp import geron_svd_pseudoinverse
 
 
 def test_hmsvdp_basic():

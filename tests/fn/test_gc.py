@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gc -- GC content."""
+"""Tests for morie.fn.gc -- GC content."""
 
 import pytest
-from moirais.fn.gc import gc_content_calc
+from morie.fn.gc import gc_content_calc
 
 
 class TestGCContent:

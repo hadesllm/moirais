@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rtn — round-to-nearest quantizer."""
+"""Tests for morie.fn.rtn — round-to-nearest quantizer."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rtn import round_to_nearest
+from morie.fn.rtn import round_to_nearest
 
 
 class TestRoundToNearest:

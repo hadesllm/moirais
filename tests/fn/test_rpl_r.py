@@ -1,6 +1,6 @@
 """Tests for rpl_r — placement by region."""
 import pandas as pd
-from moirais.fn.rpl_r import rplace_by_region
+from morie.fn.rpl_r import rplace_by_region
 
 def test_rpl_r_basic(otis_df):
     result = rplace_by_region(otis_df, "Central")

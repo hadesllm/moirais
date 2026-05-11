@@ -1,6 +1,6 @@
 """Tests for goldfeld_quandt_test."""
 import numpy as np, pytest
-from moirais.fn.gldvr import goldfeld_quandt_test
+from morie.fn.gldvr import goldfeld_quandt_test
 
 
 class TestGoldfeldQuandt:

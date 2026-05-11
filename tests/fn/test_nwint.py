@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.nwint."""
+"""Tests for morie.fn.nwint."""
 import numpy as np
-from moirais.fn.nwint import newton_interp
+from morie.fn.nwint import newton_interp
 
 
 def test_nwint_smoke():
@@ -16,7 +16,7 @@ def test_nwint_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.nwint import cheatsheet
+    from morie.fn.nwint import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

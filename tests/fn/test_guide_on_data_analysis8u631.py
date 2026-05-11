@@ -1,7 +1,7 @@
 """Tests for guide_on_data_analysis8u631.guide_on_data_analysis_chapter_8_unnumbered_631."""
 import numpy as np
 import pytest
-from moirais.fn.guide_on_data_analysis8u631 import guide_on_data_analysis_chapter_8_unnumbered_631
+from morie.fn.guide_on_data_analysis8u631 import guide_on_data_analysis_chapter_8_unnumbered_631
 
 
 def test_guide_on_data_analysis8u631_basic():

@@ -1,7 +1,7 @@
 """Test sample_mean (smean)."""
 import numpy as np
-from moirais.fn.smean import sample_mean, smean
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.smean import sample_mean, smean
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSampleMean:

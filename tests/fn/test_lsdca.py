@@ -1,7 +1,7 @@
 """Tests for lsdca.robust_lda."""
 import numpy as np
 import pytest
-from moirais.fn.lsdca import robust_lda
+from morie.fn.lsdca import robust_lda
 
 
 def test_lsdca_basic():

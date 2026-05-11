@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msnmt -- Nonmetric MDS (Kruskal)"""
+"""Tests for morie.fn.msnmt -- Nonmetric MDS (Kruskal)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msnmt import nonmetric_mds
+from morie.fn.msnmt import nonmetric_mds
 
 
 class TestNonmetricMds:

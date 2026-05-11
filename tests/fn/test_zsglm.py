@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsglm -- Spatial GLMM simulation"""
+"""Tests for morie.fn.zsglm -- Spatial GLMM simulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsglm import spatial_glmm_sim
+from morie.fn.zsglm import spatial_glmm_sim
 
 
 class TestSpatialGlmmSim:

@@ -1,7 +1,7 @@
 """Tests for mTriple.triply_robust_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.mTriple import triply_robust_mediation
+from morie.fn.mTriple import triply_robust_mediation
 
 
 def test_mTriple_basic():

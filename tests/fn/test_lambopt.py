@@ -1,7 +1,7 @@
 """Tests for lambopt.lamb_optimizer."""
 import numpy as np
 import pytest
-from moirais.fn.lambopt import lamb_optimizer
+from morie.fn.lambopt import lamb_optimizer
 
 
 def test_lambopt_basic():

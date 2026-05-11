@@ -1,7 +1,7 @@
 """Tests for mishfn.mish_activation."""
 import numpy as np
 import pytest
-from moirais.fn.mishfn import mish_activation
+from morie.fn.mishfn import mish_activation
 
 
 def test_mishfn_basic():

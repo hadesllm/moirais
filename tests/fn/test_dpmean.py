@@ -1,7 +1,7 @@
 """Tests for dpmean.dp_mean."""
 import numpy as np
 import pytest
-from moirais.fn.dpmean import dp_mean
+from morie.fn.dpmean import dp_mean
 
 
 def test_dpmean_basic():

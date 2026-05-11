@@ -1,6 +1,6 @@
 """Tests for coiwv.py - Coiflet wavelet."""
 import numpy as np
-from moirais.fn.coiwv import coiflet_wavelet, coiwv
+from morie.fn.coiwv import coiflet_wavelet, coiwv
 
 
 def test_coif1_returns_result():

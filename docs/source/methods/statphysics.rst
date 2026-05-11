@@ -1,9 +1,9 @@
 Statistical Physics of Crime
 =============================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-The ``moirais.tps_statphysics`` module collects four
+The ``morie.tps_statphysics`` module collects four
 statistical-physics models of urban crime that are routinely fit on
 Toronto Police Service open-data feeds. The framing follows the
 D'Orsogna-Perc (2015) review.
@@ -21,7 +21,7 @@ discretised lattice form admits a closed-form steady-state and
 reproduces the empirically-observed *hot-spot patterns* in burglary
 and theft.
 
-- ``moirais.tps_statphysics.sdb_reaction_diffusion`` --- fits the
+- ``morie.tps_statphysics.sdb_reaction_diffusion`` --- fits the
   diffusion coefficient :math:`\eta`, the activity rate
   :math:`\theta`, and the attractiveness decay :math:`\omega` from
   observed incident-density grids.
@@ -38,7 +38,7 @@ estimator on inter-event spatial displacements between consecutive
 crime incidents diagnoses whether offenders' movement is Brownian
 (:math:`\alpha \ge 2`) or Lévy (:math:`\alpha < 2`).
 
-- ``moirais.tps_statphysics.levy_flight_alpha`` --- Hill estimator on
+- ``morie.tps_statphysics.levy_flight_alpha`` --- Hill estimator on
   inter-event displacements with bootstrap CI.
 - Reference: Brockmann, Hufnagel, Geisel (2006). *The scaling laws of
   human travel.* Nature 439:462--465.
@@ -58,7 +58,7 @@ For *socio-economic* metrics (including crime totals),
 :math:`\beta < 1` (sub-linear). The estimator is HC3-robust OLS on
 :math:`\log Y` vs. :math:`\log N`.
 
-- ``moirais.tps_statphysics.urban_scaling_beta`` --- HC3-OLS fit of
+- ``morie.tps_statphysics.urban_scaling_beta`` --- HC3-OLS fit of
   :math:`\beta` with sandwich SE.
 - Reference: Bettencourt, Lobo, Helbing, Kühnert, West (2007).
   *Growth, innovation, scaling, and the pace of life in cities.*
@@ -73,7 +73,7 @@ predators. The fit recovers the four classical parameters
 (:math:`\alpha, \beta, \gamma, \delta`) plus their stability
 classification (stable focus / spiral / saddle).
 
-- ``moirais.tps_statphysics.lotka_volterra_police_crime`` --- nonlinear
+- ``morie.tps_statphysics.lotka_volterra_police_crime`` --- nonlinear
   least-squares on annual paired police / crime time series.
 - Reference: D'Orsogna, Perc (2015). *Statistical physics of crime: A
   review.* Physics of Life Reviews 12:1--21, §3.4.

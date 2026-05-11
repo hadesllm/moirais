@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.s_ua -- UA subscale reliability."""
+"""Tests for morie.fn.s_ua -- UA subscale reliability."""
 
 import numpy as np
-from moirais.fn.s_ua import subscale_ua
+from morie.fn.s_ua import subscale_ua
 
 
 class TestSubscaleUA:

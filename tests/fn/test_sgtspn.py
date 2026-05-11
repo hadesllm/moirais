@@ -1,7 +1,7 @@
 """Tests for sgtspn.sgt_spanning_tree_count."""
 import numpy as np
 import pytest
-from moirais.fn.sgtspn import sgt_spanning_tree_count
+from morie.fn.sgtspn import sgt_spanning_tree_count
 
 
 def test_sgtspn_basic():

@@ -1,7 +1,7 @@
 """Tests for hmmnr.geron_max_norm."""
 import numpy as np
 import pytest
-from moirais.fn.hmmnr import geron_max_norm
+from morie.fn.hmmnr import geron_max_norm
 
 
 def test_hmmnr_basic():

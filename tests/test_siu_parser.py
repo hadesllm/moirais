@@ -1,4 +1,4 @@
-"""Tests for moirais.siu offline pieces (no network).
+"""Tests for morie.siu offline pieces (no network).
 
 Phase 2a covers the parser, schema, normalizer, and writer. Phase 2b
 will add live-fetch tests against 5 sample drids.
@@ -11,14 +11,14 @@ from pathlib import Path
 
 import pytest
 
-from moirais.siu import (
+from morie.siu import (
     BLANK_ROW,
     SIU_COLUMNS,
     parse_html,
     write_csv,
     write_jsonl,
 )
-from moirais.siu._normalize import (
+from morie.siu._normalize import (
     find_case_number,
     parse_date,
     parse_drid_from_url,
@@ -365,7 +365,7 @@ def test_incident_date_skips_notification_sentence():
 
 # ── News-release parser tests (real nrid fixtures) ─────────────────────
 
-from moirais.siu import parse_news_html
+from morie.siu import parse_news_html
 
 
 def _load_real_nrid(nrid: int) -> dict:

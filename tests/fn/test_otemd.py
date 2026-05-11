@@ -1,7 +1,7 @@
 """Tests for otemd.ot_emd_solver."""
 import numpy as np
 import pytest
-from moirais.fn.otemd import ot_emd_solver
+from morie.fn.otemd import ot_emd_solver
 
 
 def test_otemd_basic():

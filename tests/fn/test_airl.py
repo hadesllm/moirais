@@ -1,7 +1,7 @@
 """Tests for airl.airl."""
 import numpy as np
 import pytest
-from moirais.fn.airl import airl
+from morie.fn.airl import airl
 
 
 def test_airl_basic():

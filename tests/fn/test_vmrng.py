@@ -1,7 +1,7 @@
 """Test vmrng."""
 import numpy as np
 import pytest
-from moirais.fn.vmrng import vmrng
+from morie.fn.vmrng import vmrng
 
 
 def test_vmrng_basic():

@@ -1,7 +1,7 @@
 """Tests for evhill.evt_hill_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.evhill import evt_hill_estimator
+from morie.fn.evhill import evt_hill_estimator
 
 
 def test_evhill_basic():

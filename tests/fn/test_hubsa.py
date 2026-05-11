@@ -1,7 +1,7 @@
 """The art of doing mathematics consists in finding that special case which contains all the germs of generality. — David Hilbert"""
 import numpy as np
 import pytest
-from moirais.fn.hubsa import hits_hubs_authorities
+from morie.fn.hubsa import hits_hubs_authorities
 
 
 def test_hubsa_basic():

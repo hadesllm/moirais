@@ -1,7 +1,7 @@
 """Tests for otws.ot_wasserstein_1d."""
 import numpy as np
 import pytest
-from moirais.fn.otws import ot_wasserstein_1d
+from morie.fn.otws import ot_wasserstein_1d
 
 
 def test_otws_basic():

@@ -1,7 +1,7 @@
 """Tests for dprnyi.renyi_dp_composition."""
 import numpy as np
 import pytest
-from moirais.fn.dprnyi import renyi_dp_composition
+from morie.fn.dprnyi import renyi_dp_composition
 
 
 def test_dprnyi_basic():

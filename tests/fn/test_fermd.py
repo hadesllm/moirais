@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.fermd -- Fermi-Dirac distribution."""
+"""Tests for morie.fn.fermd -- Fermi-Dirac distribution."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.fermd import fermd
+from morie.fn.fermd import fermd
 
 
 def test_returns_dict():

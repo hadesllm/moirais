@@ -1,7 +1,7 @@
 """Tests for gb_plc.gibbons_placement_def."""
 import numpy as np
 import pytest
-from moirais.fn.gb_plc import gibbons_placement_def
+from morie.fn.gb_plc import gibbons_placement_def
 
 
 def test_gb_plc_basic():

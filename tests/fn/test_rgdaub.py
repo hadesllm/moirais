@@ -1,7 +1,7 @@
 """Tests for rgdaub.rangayyan_daubechies."""
 import numpy as np
 import pytest
-from moirais.fn.rgdaub import rangayyan_daubechies
+from morie.fn.rgdaub import rangayyan_daubechies
 
 
 def test_rgdaub_basic():

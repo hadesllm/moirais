@@ -1,7 +1,7 @@
 """Tests for ltsreg.least_trimmed_squares."""
 import numpy as np
 import pytest
-from moirais.fn.ltsreg import least_trimmed_squares
+from morie.fn.ltsreg import least_trimmed_squares
 
 
 def test_ltsreg_basic():

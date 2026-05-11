@@ -1,7 +1,7 @@
 """Test rschg."""
 import numpy as np
 import pytest
-from moirais.fn.rschg import rschg
+from morie.fn.rschg import rschg
 
 
 def test_rschg_basic():

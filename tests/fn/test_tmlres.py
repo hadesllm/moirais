@@ -1,7 +1,7 @@
 """Tests for tmlres.tmle_residual."""
 import numpy as np
 import pytest
-from moirais.fn.tmlres import tmle_residual
+from morie.fn.tmlres import tmle_residual
 
 
 def test_tmlres_basic():

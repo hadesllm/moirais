@@ -1,7 +1,7 @@
 """Tests for intlpa.interior_point_lp."""
 import numpy as np
 import pytest
-from moirais.fn.intlpa import interior_point_lp
+from morie.fn.intlpa import interior_point_lp
 
 
 def test_intlpa_basic():

@@ -1,7 +1,7 @@
 """Tests for bprop.backpropagation_chain_rule."""
 import numpy as np
 import pytest
-from moirais.fn.bprop import backpropagation_chain_rule
+from morie.fn.bprop import backpropagation_chain_rule
 
 
 def test_bprop_basic():

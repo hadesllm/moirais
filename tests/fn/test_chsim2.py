@@ -1,7 +1,7 @@
 """Tests for chsim2."""
 import numpy as np
 import pytest
-from moirais.fn.chsim2 import chsim2
+from morie.fn.chsim2 import chsim2
 
 
 def test_chsim2_basic():
@@ -27,5 +27,5 @@ def test_chsim2_no_data():
 
 
 def test_chsim2_alias():
-    from moirais.fn.chsim2 import chsim2
+    from morie.fn.chsim2 import chsim2
     assert chsim2 is chsim2

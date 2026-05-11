@@ -1,7 +1,7 @@
 """Test vmhol."""
 import numpy as np
 import pytest
-from moirais.fn.vmhol import vmhol
+from morie.fn.vmhol import vmhol
 
 
 def test_vmhol_basic():

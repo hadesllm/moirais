@@ -1,7 +1,7 @@
 """Tests for hrzb2.horowitz_smoothed_maximum_score."""
 import numpy as np
 import pytest
-from moirais.fn.hrzb2 import horowitz_smoothed_maximum_score
+from morie.fn.hrzb2 import horowitz_smoothed_maximum_score
 
 
 def test_hrzb2_basic():

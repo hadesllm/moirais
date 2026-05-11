@@ -1,7 +1,7 @@
 """Test opcov."""
 import numpy as np
 import pytest
-from moirais.fn.opcov import opcov
+from morie.fn.opcov import opcov
 
 
 def test_opcov_basic():

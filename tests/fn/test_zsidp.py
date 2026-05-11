@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsidp -- IDW power parameter optimization"""
+"""Tests for morie.fn.zsidp -- IDW power parameter optimization"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsidp import idw_power
+from morie.fn.zsidp import idw_power
 
 
 class TestIdwPower:

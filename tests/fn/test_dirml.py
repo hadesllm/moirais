@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.dirml — Directional spatial model."""
+"""Tests for morie.fn.dirml — Directional spatial model."""
 import numpy as np
-from moirais.fn.dirml import dirml
+from morie.fn.dirml import dirml
 
 
 def test_dirml_same_side():

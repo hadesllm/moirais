@@ -1,7 +1,7 @@
 """Tests for impala.impala_vtrace."""
 import numpy as np
 import pytest
-from moirais.fn.impala import impala_vtrace
+from morie.fn.impala import impala_vtrace
 
 
 def test_impala_basic():

@@ -1,7 +1,7 @@
 """Test hygrw."""
 import numpy as np
 import pytest
-from moirais.fn.hygrw import hygrw
+from morie.fn.hygrw import hygrw
 
 
 def test_hygrw_basic():

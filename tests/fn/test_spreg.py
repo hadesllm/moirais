@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.spreg — spatial regimes."""
+"""Tests for morie.fn.spreg — spatial regimes."""
 import numpy as np
-from moirais.fn.spreg import spatial_regime
+from morie.fn.spreg import spatial_regime
 
 
 class TestSpatialRegime:

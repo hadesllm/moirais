@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.whttk."""
+"""Tests for morie.fn.whttk."""
 import numpy as np
-from moirais.fn.whttk import whttk
+from morie.fn.whttk import whttk
 
 
 def test_whttk_smoke():
@@ -12,7 +12,7 @@ def test_whttk_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.whttk import cheatsheet
+    from morie.fn.whttk import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

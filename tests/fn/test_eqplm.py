@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.eqplm — Palma ratio."""
+"""Tests for morie.fn.eqplm — Palma ratio."""
 
 import pytest
 import numpy as np
-from moirais.fn.eqplm import palma_ratio
-from moirais.fn._containers import ESRes
+from morie.fn.eqplm import palma_ratio
+from morie.fn._containers import ESRes
 
 
 class TestPalma:

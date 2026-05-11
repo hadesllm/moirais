@@ -1,7 +1,7 @@
 """Tests for hmovr.geron_one_vs_rest."""
 import numpy as np
 import pytest
-from moirais.fn.hmovr import geron_one_vs_rest
+from morie.fn.hmovr import geron_one_vs_rest
 
 
 def test_hmovr_basic():

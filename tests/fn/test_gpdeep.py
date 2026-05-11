@@ -1,7 +1,7 @@
 """Tests for gpdeep."""
 import numpy as np
 import pytest
-from moirais.fn.gpdeep import gpdeep
+from morie.fn.gpdeep import gpdeep
 
 
 def test_gpdeep_basic():
@@ -27,5 +27,5 @@ def test_gpdeep_no_data():
 
 
 def test_gpdeep_alias():
-    from moirais.fn.gpdeep import gpdeep
+    from morie.fn.gpdeep import gpdeep
     assert gpdeep is gpdeep

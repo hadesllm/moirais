@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxwmr -- Spatial wavelet MRA"""
+"""Tests for morie.fn.zxwmr -- Spatial wavelet MRA"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxwmr import wavelet_mra_sp
+from morie.fn.zxwmr import wavelet_mra_sp
 
 
 class TestWaveletMraSp:

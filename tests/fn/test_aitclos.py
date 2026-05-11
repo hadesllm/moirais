@@ -1,7 +1,7 @@
 """Tests for aitclos.aitchison_closure."""
 import numpy as np
 import pytest
-from moirais.fn.aitclos import aitchison_closure
+from morie.fn.aitclos import aitchison_closure
 
 
 def test_aitclos_basic():

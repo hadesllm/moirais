@@ -1,7 +1,7 @@
 """Tests for fclust.functional_clustering."""
 import numpy as np
 import pytest
-from moirais.fn.fclust import functional_clustering
+from morie.fn.fclust import functional_clustering
 
 
 def test_fclust_basic():

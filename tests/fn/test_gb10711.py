@@ -1,7 +1,7 @@
 """Tests for gb10711.gibbons_ctrl_normal_asymp."""
 import numpy as np
 import pytest
-from moirais.fn.gb10711 import gibbons_ctrl_normal_asymp
+from morie.fn.gb10711 import gibbons_ctrl_normal_asymp
 
 
 def test_gb10711_basic():

@@ -1,7 +1,7 @@
 """Tests for mienco.mi_neural_encoder."""
 import numpy as np
 import pytest
-from moirais.fn.mienco import mi_neural_encoder
+from morie.fn.mienco import mi_neural_encoder
 
 
 def test_mienco_basic():

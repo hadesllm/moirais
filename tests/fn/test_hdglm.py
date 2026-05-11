@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.hdglm import hdglm
+from morie.fn.hdglm import hdglm
 
 
 class TestHdglm:

@@ -1,7 +1,7 @@
 """Tests for hmaic.geron_aic."""
 import numpy as np
 import pytest
-from moirais.fn.hmaic import geron_aic
+from morie.fn.hmaic import geron_aic
 
 
 def test_hmaic_basic():

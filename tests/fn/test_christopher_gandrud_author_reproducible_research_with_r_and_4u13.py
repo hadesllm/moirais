@@ -1,7 +1,7 @@
 """The art of doing mathematics consists in finding that special case which contains all the germs of generality. — David Hilbert"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u13 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_13
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u13 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_13
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u13_basic():

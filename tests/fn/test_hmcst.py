@@ -1,7 +1,7 @@
 """Tests for hmcst.geron_contrastive_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmcst import geron_contrastive_learning
+from morie.fn.hmcst import geron_contrastive_learning
 
 
 def test_hmcst_basic():

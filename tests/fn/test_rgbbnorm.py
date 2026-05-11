@@ -1,7 +1,7 @@
 """Tests for rgbbnorm.rangayyan_ecg_bbb_normal."""
 import numpy as np
 import pytest
-from moirais.fn.rgbbnorm import rangayyan_ecg_bbb_normal
+from morie.fn.rgbbnorm import rangayyan_ecg_bbb_normal
 
 
 def test_rgbbnorm_basic():

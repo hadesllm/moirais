@@ -1,7 +1,7 @@
 """Tests for mannK.mann_kendall."""
 import numpy as np
 import pytest
-from moirais.fn.mannK import mann_kendall
+from morie.fn.mannK import mann_kendall
 
 
 def test_mannK_basic():

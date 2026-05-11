@@ -1,7 +1,7 @@
 """Tests for hcoreg.hardcore_process."""
 import numpy as np
 import pytest
-from moirais.fn.hcoreg import hardcore_process
+from morie.fn.hcoreg import hardcore_process
 
 
 def test_hcoreg_basic():

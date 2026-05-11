@@ -1,6 +1,6 @@
 """Tests for DW-NOMINATE."""
 import numpy as np
-from moirais.fn.dwnom import dwnom
+from morie.fn.dwnom import dwnom
 
 
 def test_dwnom_smoke():
@@ -14,7 +14,7 @@ def test_dwnom_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.dwnom import cheatsheet
+    from morie.fn.dwnom import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

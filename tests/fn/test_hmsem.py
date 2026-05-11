@@ -1,7 +1,7 @@
 """Tests for hmsem.geron_semisupervised."""
 import numpy as np
 import pytest
-from moirais.fn.hmsem import geron_semisupervised
+from morie.fn.hmsem import geron_semisupervised
 
 
 def test_hmsem_basic():

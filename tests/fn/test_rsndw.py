@@ -1,7 +1,7 @@
 """Test rsndw."""
 import numpy as np
 import pytest
-from moirais.fn.rsndw import rsndw
+from morie.fn.rsndw import rsndw
 
 
 def test_rsndw_basic():

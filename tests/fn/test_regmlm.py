@@ -1,7 +1,7 @@
 """Tests for regmlm.regenie_lmm."""
 import numpy as np
 import pytest
-from moirais.fn.regmlm import regenie_lmm
+from morie.fn.regmlm import regenie_lmm
 
 
 def test_regmlm_basic():

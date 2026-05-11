@@ -1,7 +1,7 @@
 """Tests for hmsslc.geron_semisupervised_cluster."""
 import numpy as np
 import pytest
-from moirais.fn.hmsslc import geron_semisupervised_cluster
+from morie.fn.hmsslc import geron_semisupervised_cluster
 
 
 def test_hmsslc_basic():

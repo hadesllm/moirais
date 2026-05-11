@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.mi_cf -- configural invariance."""
+"""Tests for morie.fn.mi_cf -- configural invariance."""
 
-from moirais.fn.mi_cf import mi_configural
+from morie.fn.mi_cf import mi_configural
 
 
 class TestMiConfigural:

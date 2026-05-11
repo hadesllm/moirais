@@ -1,7 +1,7 @@
 """Tests for grdpmr.geron_ddpm_reverse_step."""
 import numpy as np
 import pytest
-from moirais.fn.grdpmr import geron_ddpm_reverse_step
+from morie.fn.grdpmr import geron_ddpm_reverse_step
 
 
 def test_grdpmr_basic():

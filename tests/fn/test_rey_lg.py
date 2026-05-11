@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rey_lg -- Logistic regression via IRLS."""
+"""Tests for morie.fn.rey_lg -- Logistic regression via IRLS."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.rey_lg import logistic_regression, rey_lg
-from moirais.fn._containers import RegressionResult
+from morie.fn.rey_lg import logistic_regression, rey_lg
+from morie.fn._containers import RegressionResult
 
 
 @pytest.fixture()

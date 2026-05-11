@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zebym -- BYM (Besag-York-Mollie) model"""
+"""Tests for morie.fn.zebym -- BYM (Besag-York-Mollie) model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zebym import bym_model
+from morie.fn.zebym import bym_model
 
 
 class TestBymModel:

@@ -1,7 +1,7 @@
 """Tests for poilO.poisson_loss_dnn."""
 import numpy as np
 import pytest
-from moirais.fn.poilO import poisson_loss_dnn
+from morie.fn.poilO import poisson_loss_dnn
 
 
 def test_poilO_basic():

@@ -1,7 +1,7 @@
 """Tests for dctgls.doubly_censored_gls."""
 import numpy as np
 import pytest
-from moirais.fn.dctgls import doubly_censored_gls
+from morie.fn.dctgls import doubly_censored_gls
 
 
 def test_dctgls_basic():

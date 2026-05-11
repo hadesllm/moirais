@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgani -- Anisotropy ratio estimation"""
+"""Tests for morie.fn.vgani -- Anisotropy ratio estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgani import anisotropy_ratio
+from morie.fn.vgani import anisotropy_ratio
 
 
 class TestAnisotropyRatio:

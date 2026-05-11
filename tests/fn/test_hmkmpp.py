@@ -1,7 +1,7 @@
 """Tests for hmkmpp.geron_kmeans_plus_plus."""
 import numpy as np
 import pytest
-from moirais.fn.hmkmpp import geron_kmeans_plus_plus
+from morie.fn.hmkmpp import geron_kmeans_plus_plus
 
 
 def test_hmkmpp_basic():

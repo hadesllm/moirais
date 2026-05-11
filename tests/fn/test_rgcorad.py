@@ -1,7 +1,7 @@
 """Tests for rgcorad.rangayyan_coronary_ad."""
 import numpy as np
 import pytest
-from moirais.fn.rgcorad import rangayyan_coronary_ad
+from morie.fn.rgcorad import rangayyan_coronary_ad
 
 
 def test_rgcorad_basic():

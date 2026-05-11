@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.prgsv — program survival."""
+"""Tests for morie.fn.prgsv — program survival."""
 
 import pytest
 import numpy as np
-from moirais.fn.prgsv import program_survival
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prgsv import program_survival
+from morie.fn._containers import DescriptiveResult
 
 
 class TestProgramSurvival:

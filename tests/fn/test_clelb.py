@@ -1,7 +1,7 @@
 """Test clelb."""
 import numpy as np
 import pytest
-from moirais.fn.clelb import clelb
+from morie.fn.clelb import clelb
 
 
 def test_clelb_basic():

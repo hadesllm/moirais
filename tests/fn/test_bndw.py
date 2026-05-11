@@ -1,7 +1,7 @@
 """Test bandwidth_compute (bndw)."""
 import numpy as np
-from moirais.fn.bndw import bandwidth_compute, bndw
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bndw import bandwidth_compute, bndw
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBndw:

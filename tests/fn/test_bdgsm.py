@@ -1,7 +1,7 @@
 """Tests for bdgsm.bridge_sampling_marginal."""
 import numpy as np
 import pytest
-from moirais.fn.bdgsm import bridge_sampling_marginal
+from morie.fn.bdgsm import bridge_sampling_marginal
 
 
 def test_bdgsm_basic():

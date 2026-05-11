@@ -1,7 +1,7 @@
 """Tests for grmcd.geron_mc_dropout."""
 import numpy as np
 import pytest
-from moirais.fn.grmcd import geron_mc_dropout
+from morie.fn.grmcd import geron_mc_dropout
 
 
 def test_grmcd_basic():

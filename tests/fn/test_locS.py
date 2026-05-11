@@ -1,7 +1,7 @@
 """Tests for locS.location_scale_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.locS import location_scale_estimator
+from morie.fn.locS import location_scale_estimator
 
 
 def test_locS_basic():

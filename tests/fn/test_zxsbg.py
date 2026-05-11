@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxsbg -- Spatial bagging"""
+"""Tests for morie.fn.zxsbg -- Spatial bagging"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxsbg import spatial_bagging
+from morie.fn.zxsbg import spatial_bagging
 
 
 class TestSpatialBagging:

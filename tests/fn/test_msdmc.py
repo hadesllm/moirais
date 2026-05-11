@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msdmc -- Mahalanobis distance matrix"""
+"""Tests for morie.fn.msdmc -- Mahalanobis distance matrix"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msdmc import dist_mahal
+from morie.fn.msdmc import dist_mahal
 
 
 class TestDistMahal:

@@ -1,7 +1,7 @@
 """Test ppstr."""
 import numpy as np
 import pytest
-from moirais.fn.ppstr import ppstr
+from morie.fn.ppstr import ppstr
 
 
 def test_ppstr_basic():

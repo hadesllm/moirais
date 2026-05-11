@@ -1,7 +1,7 @@
 """Tests for rng165.rangayyan_ch3_rls_phi_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.rng165 import rangayyan_ch3_rls_phi_matrix
+from morie.fn.rng165 import rangayyan_ch3_rls_phi_matrix
 
 
 def test_rng165_basic():

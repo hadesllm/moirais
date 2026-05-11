@@ -1,7 +1,7 @@
 """Tests for lordzs.lord_chi_square."""
 import numpy as np
 import pytest
-from moirais.fn.lordzs import lord_chi_square
+from morie.fn.lordzs import lord_chi_square
 
 
 def test_lordzs_basic():

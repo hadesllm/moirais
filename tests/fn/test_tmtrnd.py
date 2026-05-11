@@ -1,7 +1,7 @@
 """Tests for tmtrnd."""
 import numpy as np
 import pytest
-from moirais.fn.tmtrnd import tmtrnd
+from morie.fn.tmtrnd import tmtrnd
 
 
 def test_tmtrnd_basic():
@@ -27,5 +27,5 @@ def test_tmtrnd_no_data():
 
 
 def test_tmtrnd_alias():
-    from moirais.fn.tmtrnd import tmtrnd
+    from morie.fn.tmtrnd import tmtrnd
     assert tmtrnd is tmtrnd

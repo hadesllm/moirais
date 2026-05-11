@@ -1,7 +1,7 @@
 """Test wqpb."""
 import numpy as np
 import pytest
-from moirais.fn.wqpb import wqpb
+from morie.fn.wqpb import wqpb
 
 
 def test_wqpb_basic():

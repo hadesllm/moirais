@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.did -- Difference-in-differences."""
+"""Tests for morie.fn.did -- Difference-in-differences."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.did import diff_in_diff, did
-from moirais.fn._containers import ESRes
+from morie.fn.did import diff_in_diff, did
+from morie.fn._containers import ESRes
 
 
 class TestDiD:

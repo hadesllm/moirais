@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gmpre — Geometric mean probability."""
+"""Tests for morie.fn.gmpre — Geometric mean probability."""
 import numpy as np
-from moirais.fn.gmpre import gmpre
+from morie.fn.gmpre import gmpre
 
 
 def test_gmpre_perfect():

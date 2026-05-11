@@ -1,7 +1,7 @@
 """Tests for cv1gn.cv1_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.cv1gn import cv1_genomic
+from morie.fn.cv1gn import cv1_genomic
 
 
 def test_cv1gn_basic():

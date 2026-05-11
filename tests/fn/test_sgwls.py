@@ -1,6 +1,6 @@
 """Tests for WLS variogram fitting."""
 import numpy as np
-from moirais.fn.sgwls import sgwls
+from morie.fn.sgwls import sgwls
 
 
 def test_sgwls_smoke():
@@ -15,7 +15,7 @@ def test_sgwls_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgwls import cheatsheet
+    from morie.fn.sgwls import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

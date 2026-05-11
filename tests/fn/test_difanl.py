@@ -1,7 +1,7 @@
 """Test difanl."""
 import numpy as np
 import pytest
-from moirais.fn.difanl import difanl
+from morie.fn.difanl import difanl
 
 
 def test_difanl_basic():

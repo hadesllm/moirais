@@ -1,7 +1,7 @@
 """Tests for gaussm.gaussian_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.gaussm import gaussian_mechanism
+from morie.fn.gaussm import gaussian_mechanism
 
 
 def test_gaussm_basic():

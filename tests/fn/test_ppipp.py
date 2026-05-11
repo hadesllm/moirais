@@ -1,7 +1,7 @@
 """Test ppipp."""
 import numpy as np
 import pytest
-from moirais.fn.ppipp import ppipp
+from morie.fn.ppipp import ppipp
 
 
 def test_ppipp_basic():

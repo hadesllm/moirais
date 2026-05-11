@@ -1,7 +1,7 @@
 """Test agdis."""
 import numpy as np
 import pytest
-from moirais.fn.agdis import agdis
+from morie.fn.agdis import agdis
 
 
 def test_agdis_basic():

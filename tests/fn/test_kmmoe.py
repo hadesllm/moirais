@@ -1,7 +1,7 @@
 """Tests for kmmoe.kamath_moe_router_softmax."""
 import numpy as np
 import pytest
-from moirais.fn.kmmoe import kamath_moe_router_softmax
+from morie.fn.kmmoe import kamath_moe_router_softmax
 
 
 def test_kmmoe_basic():

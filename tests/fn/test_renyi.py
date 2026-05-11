@@ -1,14 +1,14 @@
 """Tests for renyi_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.renyi import renyi_entropy, renyi
+from morie.fn.renyi import renyi_entropy, renyi
 
 
 def test_alpha1_is_shannon():
     rng = np.random.default_rng(42)
     x = rng.normal(0, 1, 5000)
     r1 = renyi_entropy(x, alpha=1.0, bins=20)
-    from moirais.fn.shent import shannon_entropy
+    from morie.fn.shent import shannon_entropy
     r2 = shannon_entropy(x, bins=20)
     assert abs(r1.estimate - r2.estimate) < 0.01
 

@@ -1,7 +1,7 @@
 """Test fovol."""
 import numpy as np
 import pytest
-from moirais.fn.fovol import fovol
+from morie.fn.fovol import fovol
 
 
 def test_fovol_basic():

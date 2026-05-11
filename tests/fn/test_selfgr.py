@@ -1,7 +1,7 @@
 """Tests for selfgr.selfies_encode."""
 import numpy as np
 import pytest
-from moirais.fn.selfgr import selfies_encode
+from morie.fn.selfgr import selfies_encode
 
 
 def test_selfgr_basic():

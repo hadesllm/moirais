@@ -1,7 +1,7 @@
 """Tests for mafshz.ma_fishers_z."""
 import numpy as np
 import pytest
-from moirais.fn.mafshz import ma_fishers_z
+from morie.fn.mafshz import ma_fishers_z
 
 
 def test_mafshz_basic():

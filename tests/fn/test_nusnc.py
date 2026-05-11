@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nusnc — nuisance parameter profiling."""
+"""Tests for morie.fn.nusnc — nuisance parameter profiling."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nusnc import nusnc
+from morie.fn.nusnc import nusnc
 
 
 def test_normal_mean_variance():

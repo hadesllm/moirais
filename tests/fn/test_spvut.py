@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.spvut — Spatial voting utility."""
+"""Tests for morie.fn.spvut — Spatial voting utility."""
 import numpy as np
-from moirais.fn.spvut import spvut
+from morie.fn.spvut import spvut
 
 
 def test_spvut_quadratic():

@@ -1,6 +1,6 @@
 # OTIS Linkage Constraints — Read Before Doing Any Individual-Level Analysis
 
-*Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
+*Part of {doc}`index` — MORIE's statistical-methods reference.*
 
 **TL;DR**: OTIS `UniqueIndividual_ID` is **NOT** a stable person identifier. It is randomly re-assigned per fiscal year **and** per dataset file. Any analysis claiming individual-level linkage across years, or across datasets within the same year, is artifactual.
 
@@ -32,7 +32,7 @@ From the Ontario MCSCS data dictionary v2.0 (resource `d83fe893-9634-4794-a0c1-c
 
 ## Empirical confirmation
 
-Run `.venv-314/bin/python -c "from moirais.otis_datasets import load_otis_dataset; ..."`:
+Run `.venv-314/bin/python -c "from morie.otis_datasets import load_otis_dataset; ..."`:
 
 - **a01** (76,934 rows, 65,467 unique IDs): 0 IDs span >1 fiscal year. YYYY-prefix == EndFiscalYear in 100% of rows.
 - **b01** (82,001 rows, 33,136 unique IDs): 0 IDs span >1 fiscal year.
@@ -42,21 +42,21 @@ Run `.venv-314/bin/python -c "from moirais.otis_datasets import load_otis_datase
 ## Which analyses are valid
 
 ### Within-year individual-level (intra-FY Goffmanian)
-- `moirais.otis_churn.within_year_placement_count(b01)` — distribution of placements per (id × FY) cell. (50.3% of person-years have multiple placements; Gini = 0.432.)
-- `moirais.otis_churn.within_year_region_diversity(b01)` — distinct regions per (id × FY) cell. (3.8% of person-years span multiple regions.)
+- `morie.otis_churn.within_year_placement_count(b01)` — distribution of placements per (id × FY) cell. (50.3% of person-years have multiple placements; Gini = 0.432.)
+- `morie.otis_churn.within_year_region_diversity(b01)` — distinct regions per (id × FY) cell. (3.8% of person-years span multiple regions.)
 - Alert co-occurrence within an FY (chi² + Cramer's V): mortification cluster.
 - Disciplinary × medical-protective overlap within an FY.
 - Region × alert state-richness within an FY.
 
 ### Aggregate / population-level (no individual linkage)
-- `moirais.otis_churn.repeat_placement_concentration(b09)` — population-wide placements-per-individual distribution from binned aggregate data; Goffmanian heavy tail via Gini + power-law.
-- `moirais.otis_churn.embedding_distribution(b02)` — total-days-in-segregation distribution; lognormal vs Pareto AIC.
+- `morie.otis_churn.repeat_placement_concentration(b09)` — population-wide placements-per-individual distribution from binned aggregate data; Goffmanian heavy tail via Gini + power-law.
+- `morie.otis_churn.embedding_distribution(b02)` — total-days-in-segregation distribution; lognormal vs Pareto AIC.
 - Year-over-year aggregate trend tests (rate ratios, Pettitt change-point).
 - Demographic contingency tables (race × region, gender × age, etc.) within and across years (using counts, not linkage).
 
 ### Causal estimands (intra-year)
-- `moirais.otis_causal.otis_irm_dml` — IRM-DML with `cluster_cols=["yr"]` (treats year as the cluster, not individuals).
-- `moirais.otis_causal.otis_aipw`, `otis_psm`, `otis_ipw` — all operate on the (treat, vm) pair within FY.
+- `morie.otis_causal.otis_irm_dml` — IRM-DML with `cluster_cols=["yr"]` (treats year as the cluster, not individuals).
+- `morie.otis_causal.otis_aipw`, `otis_psm`, `otis_ipw` — all operate on the (treat, vm) pair within FY.
 
 ## Which analyses are INVALID — never trust their output
 
@@ -69,7 +69,7 @@ If you see code that does any of these, treat the result as artifact:
 
 ## How we got here (2026-05-08)
 
-A prior `moirais.otis_churn.time_to_readmission()` reported "100% of gaps are within the SAME fiscal year — Goffman's cyclical inmate dynamic." That was the artifact, not the dynamic. The function has been renamed `within_year_placement_count` with corrected semantics. `cross_region_churn` was renamed `within_year_region_diversity` with corrected interpretation (the math was always intra-year; only the framing was wrong).
+A prior `morie.otis_churn.time_to_readmission()` reported "100% of gaps are within the SAME fiscal year — Goffman's cyclical inmate dynamic." That was the artifact, not the dynamic. The function has been renamed `within_year_placement_count` with corrected semantics. `cross_region_churn` was renamed `within_year_region_diversity` with corrected interpretation (the math was always intra-year; only the framing was wrong).
 
 ## Sources
 

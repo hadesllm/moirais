@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pslap."""
+"""Tests for morie.fn.pslap."""
 
 import numpy as np
 import pytest
-from moirais.fn.pslap import pslap
+from morie.fn.pslap import pslap
 
 
 class TestPslap:

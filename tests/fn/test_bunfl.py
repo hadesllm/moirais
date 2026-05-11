@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bunfl — Bayesian unfolding."""
+"""Tests for morie.fn.bunfl — Bayesian unfolding."""
 import numpy as np
 import pytest
 
-from moirais.fn.bunfl import bunfl
+from morie.fn.bunfl import bunfl
 
 
 def test_bunfl_smoke():
@@ -12,7 +12,7 @@ def test_bunfl_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.bunfl import cheatsheet
+    from morie.fn.bunfl import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

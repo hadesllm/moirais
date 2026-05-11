@@ -1,7 +1,7 @@
 """Test opffa."""
 import numpy as np
 import pytest
-from moirais.fn.opffa import opffa
+from morie.fn.opffa import opffa
 
 
 def test_opffa_basic():

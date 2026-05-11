@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgns2 -- Nested variogram fitting"""
+"""Tests for morie.fn.vgns2 -- Nested variogram fitting"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgns2 import vario_nested_fit
+from morie.fn.vgns2 import vario_nested_fit
 
 
 class TestVarioNestedFit:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mstri -- Triangle inequality check"""
+"""Tests for morie.fn.mstri -- Triangle inequality check"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mstri import triangle_ineq
+from morie.fn.mstri import triangle_ineq
 
 
 class TestTriangleIneq:

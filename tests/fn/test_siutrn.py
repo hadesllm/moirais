@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.siutrn — SIU trend."""
+"""Tests for morie.fn.siutrn — SIU trend."""
 
 import pytest
-from moirais.fn.siutrn import siu_trend
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.siutrn import siu_trend
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSiuTrend:

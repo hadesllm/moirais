@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mkrsl -- Marker selection."""
+"""Tests for morie.fn.mkrsl -- Marker selection."""
 
 import numpy as np
 import pytest
-from moirais.fn.mkrsl import mkrsl
+from morie.fn.mkrsl import mkrsl
 
 
 class TestMkrsl:

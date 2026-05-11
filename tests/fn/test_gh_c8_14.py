@@ -1,7 +1,7 @@
 """Tests for gh_c8_14.ghosal_convex_misp."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c8_14 import ghosal_convex_misp
+from morie.fn.gh_c8_14 import ghosal_convex_misp
 
 
 def test_gh_c8_14_basic():

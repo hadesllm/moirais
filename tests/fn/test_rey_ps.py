@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rey_ps -- Poisson regression."""
+"""Tests for morie.fn.rey_ps -- Poisson regression."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.rey_ps import poisson_regression, rey_ps
-from moirais.fn._containers import RegressionResult
+from morie.fn.rey_ps import poisson_regression, rey_ps
+from morie.fn._containers import RegressionResult
 
 
 @pytest.fixture()

@@ -1,7 +1,7 @@
 """Tests for sgvar."""
 import numpy as np
 import pytest
-from moirais.fn.sgvar import sgvar
+from morie.fn.sgvar import sgvar
 
 
 def test_sgvar_basic():
@@ -27,5 +27,5 @@ def test_sgvar_no_data():
 
 
 def test_sgvar_alias():
-    from moirais.fn.sgvar import sgvar
+    from morie.fn.sgvar import sgvar
     assert sgvar is sgvar

@@ -1,6 +1,6 @@
 """Tests for ramsey_reset_test."""
 import numpy as np, pytest
-from moirais.fn.ramsy import ramsey_reset_test
+from morie.fn.ramsy import ramsey_reset_test
 
 
 class TestRamseyRESET:

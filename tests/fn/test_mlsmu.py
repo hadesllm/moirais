@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mlsmu — ML SMACOF unfolding."""
+"""Tests for morie.fn.mlsmu — ML SMACOF unfolding."""
 import numpy as np
 import pytest
 
-from moirais.fn.mlsmu import mlsmu
+from morie.fn.mlsmu import mlsmu
 
 
 def test_mlsmu_smoke():
@@ -12,7 +12,7 @@ def test_mlsmu_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.mlsmu import cheatsheet
+    from morie.fn.mlsmu import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Test clcur."""
 import numpy as np
 import pytest
-from moirais.fn.clcur import clcur
+from morie.fn.clcur import clcur
 
 
 def test_clcur_basic():

@@ -1,7 +1,7 @@
 """Tests for svmopt.svm_dual."""
 import numpy as np
 import pytest
-from moirais.fn.svmopt import svm_dual
+from morie.fn.svmopt import svm_dual
 
 
 def test_svmopt_basic():

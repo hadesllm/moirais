@@ -1,7 +1,7 @@
 """Test sawvr."""
 import numpy as np
 import pytest
-from moirais.fn.sawvr import sawvr
+from morie.fn.sawvr import sawvr
 
 
 def test_sawvr_basic():

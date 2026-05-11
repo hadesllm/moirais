@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgcvl -- Kriging LOO cross-validation"""
+"""Tests for morie.fn.kgcvl -- Kriging LOO cross-validation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgcvl import kriging_cv_loo
+from morie.fn.kgcvl import kriging_cv_loo
 
 
 class TestKrigingCvLoo:

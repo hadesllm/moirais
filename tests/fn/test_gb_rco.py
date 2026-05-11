@@ -1,7 +1,7 @@
 """Tests for gb_rco.gibbons_rank_corr_partial."""
 import numpy as np
 import pytest
-from moirais.fn.gb_rco import gibbons_rank_corr_partial
+from morie.fn.gb_rco import gibbons_rank_corr_partial
 
 
 def test_gb_rco_basic():

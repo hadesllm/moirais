@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.fried -- Friedman test for repeated measures."""
+"""Tests for morie.fn.fried -- Friedman test for repeated measures."""
 
 import numpy as np
 import pytest
-from moirais.fn.fried import friedman, fried
-from moirais.fn._containers import TestResult
+from morie.fn.fried import friedman, fried
+from morie.fn._containers import TestResult
 
 
 class TestFried:

@@ -1,7 +1,7 @@
 """Test ppgey."""
 import numpy as np
 import pytest
-from moirais.fn.ppgey import ppgey
+from morie.fn.ppgey import ppgey
 
 
 def test_ppgey_basic():

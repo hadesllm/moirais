@@ -1,7 +1,7 @@
 """Tests for snpest.sn_pseudo_estimate."""
 import numpy as np
 import pytest
-from moirais.fn.snpest import sn_pseudo_estimate
+from morie.fn.snpest import sn_pseudo_estimate
 
 
 def test_snpest_basic():

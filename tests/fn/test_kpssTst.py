@@ -1,7 +1,7 @@
 """Tests for kpssTst.kpss_test."""
 import numpy as np
 import pytest
-from moirais.fn.kpssTst import kpss_test
+from morie.fn.kpssTst import kpss_test
 
 
 def test_kpssTst_basic():

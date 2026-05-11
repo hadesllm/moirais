@@ -1,7 +1,7 @@
 """Tests for irtgpc.generalized_partial_credit."""
 import numpy as np
 import pytest
-from moirais.fn.irtgpc import generalized_partial_credit
+from morie.fn.irtgpc import generalized_partial_credit
 
 
 def test_irtgpc_basic():

@@ -1,7 +1,7 @@
 """Tests for alfomg.openfold_msa_pair."""
 import numpy as np
 import pytest
-from moirais.fn.alfomg import openfold_msa_pair
+from morie.fn.alfomg import openfold_msa_pair
 
 
 def test_alfomg_basic():

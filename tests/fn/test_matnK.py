@@ -1,7 +1,7 @@
 """Tests for matnK.matern_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.matnK import matern_kernel
+from morie.fn.matnK import matern_kernel
 
 
 def test_matnK_basic():

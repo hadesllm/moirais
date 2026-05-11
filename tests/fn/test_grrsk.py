@@ -1,7 +1,7 @@
 """Tests for grrsk.geron_resnet_skip."""
 import numpy as np
 import pytest
-from moirais.fn.grrsk import geron_resnet_skip
+from morie.fn.grrsk import geron_resnet_skip
 
 
 def test_grrsk_basic():

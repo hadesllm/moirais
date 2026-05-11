@@ -1,7 +1,7 @@
 """Tests for binmed.binary_outcome_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.binmed import binary_outcome_mediation
+from morie.fn.binmed import binary_outcome_mediation
 
 
 def test_binmed_basic():

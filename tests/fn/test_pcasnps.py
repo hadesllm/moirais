@@ -1,7 +1,7 @@
 """Tests for pcasnps.pca_snps."""
 import numpy as np
 import pytest
-from moirais.fn.pcasnps import pca_snps
+from morie.fn.pcasnps import pca_snps
 
 
 def test_pcasnps_basic():

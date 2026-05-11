@@ -1,7 +1,7 @@
 """Tests for tvsbn.tversky_similarity."""
 import numpy as np
 import pytest
-from moirais.fn.tvsbn import tversky_similarity
+from morie.fn.tvsbn import tversky_similarity
 
 
 def test_tvsbn_basic():

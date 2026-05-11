@@ -1,7 +1,7 @@
 """Tests for localS.local_shift."""
 import numpy as np
 import pytest
-from moirais.fn.localS import local_shift
+from morie.fn.localS import local_shift
 
 
 def test_localS_basic():

@@ -1,7 +1,7 @@
 """Tests for alvocb.alammar_tokenizer_vocab_overlap."""
 import numpy as np
 import pytest
-from moirais.fn.alvocb import alammar_tokenizer_vocab_overlap
+from morie.fn.alvocb import alammar_tokenizer_vocab_overlap
 
 
 def test_alvocb_basic():

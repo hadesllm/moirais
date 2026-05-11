@@ -1,7 +1,7 @@
 """Test sowrc."""
 import numpy as np
 import pytest
-from moirais.fn.sowrc import sowrc
+from morie.fn.sowrc import sowrc
 
 
 def test_sowrc_basic():

@@ -1,7 +1,7 @@
 """Tests for gb531.gibbons_quantile_test."""
 import numpy as np
 import pytest
-from moirais.fn.gb531 import gibbons_quantile_test
+from morie.fn.gb531 import gibbons_quantile_test
 
 
 def test_gb531_basic():

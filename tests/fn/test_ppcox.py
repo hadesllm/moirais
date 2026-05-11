@@ -1,7 +1,7 @@
 """Test ppcox."""
 import numpy as np
 import pytest
-from moirais.fn.ppcox import ppcox
+from morie.fn.ppcox import ppcox
 
 
 def test_ppcox_basic():

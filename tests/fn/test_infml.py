@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.infml — infer measurement level (NOIR)."""
+"""Tests for morie.fn.infml — infer measurement level (NOIR)."""
 
 import pandas as pd
 import pytest
 
-from moirais.fn.infml import infml, infer_measurement_level
-from moirais.dataset import MeasurementLevel
+from morie.fn.infml import infml, infer_measurement_level
+from morie.dataset import MeasurementLevel
 
 
 def test_alias_is_same_function():

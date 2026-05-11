@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.carbic."""
+"""Tests for morie.fn.carbic."""
 import numpy as np
 import pytest
-from moirais.fn.carbic import carbic
+from morie.fn.carbic import carbic
 
 
 class TestCarbic:

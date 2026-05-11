@@ -1,7 +1,7 @@
 """Tests for ksr020.kosorok_ch1_linear_regression_model."""
 import numpy as np
 import pytest
-from moirais.fn.ksr020 import kosorok_ch1_linear_regression_model
+from morie.fn.ksr020 import kosorok_ch1_linear_regression_model
 
 
 def test_ksr020_basic():

@@ -1,7 +1,7 @@
 """Tests for rng012.rangayyan_ch3_signal_plus_noise_model."""
 import numpy as np
 import pytest
-from moirais.fn.rng012 import rangayyan_ch3_signal_plus_noise_model
+from morie.fn.rng012 import rangayyan_ch3_signal_plus_noise_model
 
 
 def test_rng012_basic():

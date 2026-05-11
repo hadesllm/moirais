@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tlnk — torus link."""
+"""Tests for morie.fn.tlnk — torus link."""
 
 import pytest
 
-from moirais.fn.tlnk import torus_link
+from morie.fn.tlnk import torus_link
 
 
 class TestTorusLink:

@@ -1,7 +1,7 @@
 """Tests for fzgn.fauzi_gn_edgeworth_correction."""
 import numpy as np
 import pytest
-from moirais.fn.fzgn import fauzi_gn_edgeworth_correction
+from morie.fn.fzgn import fauzi_gn_edgeworth_correction
 
 
 def test_fzgn_basic():

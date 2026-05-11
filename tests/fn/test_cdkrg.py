@@ -1,7 +1,7 @@
 """Tests for cdkrg."""
 import numpy as np
 import pytest
-from moirais.fn.cdkrg import cdkrg
+from morie.fn.cdkrg import cdkrg
 
 
 def test_cdkrg_basic():
@@ -27,5 +27,5 @@ def test_cdkrg_no_data():
 
 
 def test_cdkrg_alias():
-    from moirais.fn.cdkrg import cdkrg
+    from morie.fn.cdkrg import cdkrg
     assert cdkrg is cdkrg

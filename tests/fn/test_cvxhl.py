@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.cvxhl."""
+"""Tests for morie.fn.cvxhl."""
 import numpy as np
-from moirais.fn.cvxhl import cvxhl
+from morie.fn.cvxhl import cvxhl
 
 
 def test_cvxhl_smoke():
@@ -12,7 +12,7 @@ def test_cvxhl_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.cvxhl import cheatsheet
+    from morie.fn.cvxhl import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

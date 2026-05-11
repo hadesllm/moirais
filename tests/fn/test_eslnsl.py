@@ -1,7 +1,7 @@
 """Tests for eslnsl.esl_natural_spline."""
 import numpy as np
 import pytest
-from moirais.fn.eslnsl import esl_natural_spline
+from morie.fn.eslnsl import esl_natural_spline
 
 
 def test_eslnsl_basic():

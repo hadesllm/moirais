@@ -1,7 +1,7 @@
 """Tests for volgvar.vol_garch_var_backtest."""
 import numpy as np
 import pytest
-from moirais.fn.volgvar import vol_garch_var_backtest
+from morie.fn.volgvar import vol_garch_var_backtest
 
 
 def test_volgvar_basic():

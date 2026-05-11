@@ -1,7 +1,7 @@
 """Test gcslr."""
 import numpy as np
 import pytest
-from moirais.fn.gcslr import gcslr
+from morie.fn.gcslr import gcslr
 
 
 def test_gcslr_basic():

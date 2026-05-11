@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.spcae -- Sparse PCA."""
+"""Tests for morie.fn.spcae -- Sparse PCA."""
 
 import numpy as np
-from moirais.fn.spcae import sparse_pca, spcae
-from moirais.fn._containers import PcaRes
+from morie.fn.spcae import sparse_pca, spcae
+from morie.fn._containers import PcaRes
 
 
 class TestSparsePca:

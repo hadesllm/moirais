@@ -1,6 +1,6 @@
 """Tests for mywkr.py - Modified Yule-Walker ARMA estimation."""
 import numpy as np
-from moirais.fn.mywkr import modified_yule_walker_arma_fn, mywkr
+from morie.fn.mywkr import modified_yule_walker_arma_fn, mywkr
 
 
 def test_mywkr_returns_descriptive_result():

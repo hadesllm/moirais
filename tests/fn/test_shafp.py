@@ -1,7 +1,7 @@
 """Test shafp."""
 import numpy as np
 import pytest
-from moirais.fn.shafp import shafp
+from morie.fn.shafp import shafp
 
 
 def test_shafp_basic():

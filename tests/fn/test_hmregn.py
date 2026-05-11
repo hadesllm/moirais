@@ -1,7 +1,7 @@
 """Tests for hmregn.geron_regression_mlp."""
 import numpy as np
 import pytest
-from moirais.fn.hmregn import geron_regression_mlp
+from morie.fn.hmregn import geron_regression_mlp
 
 
 def test_hmregn_basic():

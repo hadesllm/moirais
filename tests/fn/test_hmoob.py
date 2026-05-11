@@ -1,7 +1,7 @@
 """Tests for hmoob.geron_oob_score."""
 import numpy as np
 import pytest
-from moirais.fn.hmoob import geron_oob_score
+from morie.fn.hmoob import geron_oob_score
 
 
 def test_hmoob_basic():

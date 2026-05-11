@@ -1,7 +1,7 @@
 """Tests for agrsc.agreement_score_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.agrsc import agreement_score_matrix
+from morie.fn.agrsc import agreement_score_matrix
 
 
 def test_agrsc_basic():

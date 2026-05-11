@@ -1,7 +1,7 @@
 """Tests for effnnt.efficientnet_block."""
 import numpy as np
 import pytest
-from moirais.fn.effnnt import efficientnet_block
+from morie.fn.effnnt import efficientnet_block
 
 
 def test_effnnt_basic():

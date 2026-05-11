@@ -1,7 +1,7 @@
 """Tests for cdpost."""
 import numpy as np
 import pytest
-from moirais.fn.cdpost import cdpost
+from morie.fn.cdpost import cdpost
 
 
 def test_cdpost_basic():
@@ -27,5 +27,5 @@ def test_cdpost_no_data():
 
 
 def test_cdpost_alias():
-    from moirais.fn.cdpost import cdpost
+    from morie.fn.cdpost import cdpost
     assert cdpost is cdpost

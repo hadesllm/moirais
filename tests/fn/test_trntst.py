@@ -1,7 +1,7 @@
 """Tests for trntst.transportability_test."""
 import numpy as np
 import pytest
-from moirais.fn.trntst import transportability_test
+from morie.fn.trntst import transportability_test
 
 
 def test_trntst_basic():

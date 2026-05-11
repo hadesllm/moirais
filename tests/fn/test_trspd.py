@@ -1,7 +1,7 @@
 """Test trspd."""
 import numpy as np
 import pytest
-from moirais.fn.trspd import trspd
+from morie.fn.trspd import trspd
 
 
 def test_trspd_basic():

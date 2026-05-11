@@ -1,7 +1,7 @@
 """Test phase_spectrum (phssp)."""
 import numpy as np
-from moirais.fn.phssp import phase_spectrum, phssp
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.phssp import phase_spectrum, phssp
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPhssp:

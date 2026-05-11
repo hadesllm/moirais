@@ -1,7 +1,7 @@
 """Tests for rappor.rappor."""
 import numpy as np
 import pytest
-from moirais.fn.rappor import rappor
+from morie.fn.rappor import rappor
 
 
 def test_rappor_basic():

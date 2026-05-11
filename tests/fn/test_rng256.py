@@ -1,7 +1,7 @@
 """Tests for rng256.rangayyan_ch4_power_spectrum_signal_echo."""
 import numpy as np
 import pytest
-from moirais.fn.rng256 import rangayyan_ch4_power_spectrum_signal_echo
+from morie.fn.rng256 import rangayyan_ch4_power_spectrum_signal_echo
 
 
 def test_rng256_basic():

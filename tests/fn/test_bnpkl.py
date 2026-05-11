@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bnpkl — Binary NP kernel likelihood."""
+"""Tests for morie.fn.bnpkl — Binary NP kernel likelihood."""
 
 import numpy as np
 import pytest
-from moirais.fn.bnpkl import bnpkl
+from morie.fn.bnpkl import bnpkl
 
 
 def test_returns_dict():

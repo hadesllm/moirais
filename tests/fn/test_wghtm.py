@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.wghtm — Weighted Euclidean model."""
+"""Tests for morie.fn.wghtm — Weighted Euclidean model."""
 import numpy as np
-from moirais.fn.wghtm import wghtm
+from morie.fn.wghtm import wghtm
 
 
 def test_wghtm_uniform():

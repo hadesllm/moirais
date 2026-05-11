@@ -1,7 +1,7 @@
 """Tests for rgmcn.rangayyan_mcnemar_test."""
 import numpy as np
 import pytest
-from moirais.fn.rgmcn import rangayyan_mcnemar_test
+from morie.fn.rgmcn import rangayyan_mcnemar_test
 
 
 def test_rgmcn_basic():

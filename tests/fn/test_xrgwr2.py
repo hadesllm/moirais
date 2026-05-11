@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrgwr2 -- GWR local R-squared"""
+"""Tests for morie.fn.xrgwr2 -- GWR local R-squared"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrgwr2 import gwr_rsquared
+from morie.fn.xrgwr2 import gwr_rsquared
 
 
 class TestGwrRsquared:

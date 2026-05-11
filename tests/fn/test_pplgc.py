@@ -1,7 +1,7 @@
 """Test pplgc."""
 import numpy as np
 import pytest
-from moirais.fn.pplgc import pplgc
+from morie.fn.pplgc import pplgc
 
 
 def test_pplgc_basic():

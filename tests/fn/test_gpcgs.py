@@ -1,7 +1,7 @@
 """Tests for gpcgs.gp_classification_svgp."""
 import numpy as np
 import pytest
-from moirais.fn.gpcgs import gp_classification_svgp
+from morie.fn.gpcgs import gp_classification_svgp
 
 
 def test_gpcgs_basic():

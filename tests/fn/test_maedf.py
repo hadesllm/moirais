@@ -1,7 +1,7 @@
 """Tests for maedf.mae_metric."""
 import numpy as np
 import pytest
-from moirais.fn.maedf import mae_metric
+from morie.fn.maedf import mae_metric
 
 
 def test_maedf_basic():

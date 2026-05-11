@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.submd — substitution estimator."""
+"""Tests for morie.fn.submd — substitution estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.submd import submd
+from morie.fn.submd import submd
 
 
 @pytest.fixture()

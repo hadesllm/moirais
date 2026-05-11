@@ -1,7 +1,7 @@
 """Tests for rng059.rangayyan_ch3_pole_zero_factored_form_alt."""
 import numpy as np
 import pytest
-from moirais.fn.rng059 import rangayyan_ch3_pole_zero_factored_form_alt
+from morie.fn.rng059 import rangayyan_ch3_pole_zero_factored_form_alt
 
 
 def test_rng059_basic():

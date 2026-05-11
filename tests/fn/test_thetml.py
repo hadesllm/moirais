@@ -1,7 +1,7 @@
 """Tests for thetml.theta_mle."""
 import numpy as np
 import pytest
-from moirais.fn.thetml import theta_mle
+from morie.fn.thetml import theta_mle
 
 
 def test_thetml_basic():

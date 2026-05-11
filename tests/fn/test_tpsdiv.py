@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tpsdiv — division compare."""
+"""Tests for morie.fn.tpsdiv — division compare."""
 
 import pytest
 import pandas as pd
-from moirais.fn.tpsdiv import tps_division_compare
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tpsdiv import tps_division_compare
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDivisionCompare:

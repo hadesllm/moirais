@@ -1,7 +1,7 @@
 """Test iir_design (iirds)."""
 import numpy as np
-from moirais.fn.iirds import iir_design, iirds
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.iirds import iir_design, iirds
+from morie.fn._containers import DescriptiveResult
 
 
 class TestIirDesign:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.smutl -- simulate utility shocks."""
+"""Tests for morie.fn.smutl -- simulate utility shocks."""
 import numpy as np
-from moirais.fn.smutl import simulate_utility_shocks, smutl
+from morie.fn.smutl import simulate_utility_shocks, smutl
 
 
 def test_alias():

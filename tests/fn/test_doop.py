@@ -1,7 +1,7 @@
 """Tests for doop.do_operator."""
 import numpy as np
 import pytest
-from moirais.fn.doop import do_operator
+from morie.fn.doop import do_operator
 
 
 def test_doop_basic():

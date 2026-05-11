@@ -1,7 +1,7 @@
 """Test endrt."""
 import numpy as np
 import pytest
-from moirais.fn.endrt import endrt
+from morie.fn.endrt import endrt
 
 
 def test_endrt_basic():

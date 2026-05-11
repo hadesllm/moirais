@@ -1,7 +1,7 @@
 """Tests for coxfrl.cox_frailty."""
 import numpy as np
 import pytest
-from moirais.fn.coxfrl import cox_frailty
+from morie.fn.coxfrl import cox_frailty
 
 
 def test_coxfrl_basic():

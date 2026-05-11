@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.iv_wk -- Weak instrument diagnostics."""
+"""Tests for morie.fn.iv_wk -- Weak instrument diagnostics."""
 
 import pytest
-from moirais.fn.iv_wk import weak_instrument_test
+from morie.fn.iv_wk import weak_instrument_test
 
 
 class TestWeakInstrument:

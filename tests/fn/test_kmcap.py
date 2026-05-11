@@ -1,7 +1,7 @@
 """Tests for kmcap.kamath_expert_capacity_factor."""
 import numpy as np
 import pytest
-from moirais.fn.kmcap import kamath_expert_capacity_factor
+from morie.fn.kmcap import kamath_expert_capacity_factor
 
 
 def test_kmcap_basic():

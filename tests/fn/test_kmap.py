@@ -1,7 +1,7 @@
 """Tests for kmap.kamath_autoprompt_gradient_search."""
 import numpy as np
 import pytest
-from moirais.fn.kmap import kamath_autoprompt_gradient_search
+from morie.fn.kmap import kamath_autoprompt_gradient_search
 
 
 def test_kmap_basic():

@@ -1,7 +1,7 @@
 """Tests for medCI.asymmetric_indirect_ci."""
 import numpy as np
 import pytest
-from moirais.fn.medCI import asymmetric_indirect_ci
+from morie.fn.medCI import asymmetric_indirect_ci
 
 
 def test_medCI_basic():

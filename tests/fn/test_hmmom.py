@@ -1,7 +1,7 @@
 """Tests for hmmom.geron_momentum."""
 import numpy as np
 import pytest
-from moirais.fn.hmmom import geron_momentum
+from morie.fn.hmmom import geron_momentum
 
 
 def test_hmmom_basic():

@@ -1,7 +1,7 @@
 """Tests for acclso.accelerated_lasso."""
 import numpy as np
 import pytest
-from moirais.fn.acclso import accelerated_lasso
+from morie.fn.acclso import accelerated_lasso
 
 
 def test_acclso_basic():

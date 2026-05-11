@@ -1,6 +1,6 @@
 """Tests for latent_class."""
 import numpy as np, pytest
-from moirais.fn.lca import latent_class
+from morie.fn.lca import latent_class
 
 class TestLCA:
     def test_two_classes(self):

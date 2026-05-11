@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ada -- AdaBoost."""
+"""Tests for morie.fn.ada -- AdaBoost."""
 
 import numpy as np
-from moirais.fn.ada import adaboost, ada
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ada import adaboost, ada
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAda:

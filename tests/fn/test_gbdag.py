@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gbdag -- GBD age pattern."""
+"""Tests for morie.fn.gbdag -- GBD age pattern."""
 
-from moirais.fn.gbdag import gbd_age_pattern
+from morie.fn.gbdag import gbd_age_pattern
 
 
 class TestGBDAgePattern:

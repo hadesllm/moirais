@@ -1,7 +1,7 @@
 """Tests for bnseff.bound_efficient."""
 import numpy as np
 import pytest
-from moirais.fn.bnseff import bound_efficient
+from morie.fn.bnseff import bound_efficient
 
 
 def test_bnseff_basic():

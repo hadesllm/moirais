@@ -1,7 +1,7 @@
 """Tests for jackvar.jackknife_variance_survey."""
 import numpy as np
 import pytest
-from moirais.fn.jackvar import jackknife_variance_survey
+from morie.fn.jackvar import jackknife_variance_survey
 
 
 def test_jackvar_basic():

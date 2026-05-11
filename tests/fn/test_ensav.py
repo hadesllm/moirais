@@ -1,7 +1,7 @@
 """Test ensemble_average (ensav)."""
 import numpy as np
-from moirais.fn.ensav import ensemble_average, ensav
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ensav import ensemble_average, ensav
+from morie.fn._containers import DescriptiveResult
 
 
 class TestEnsembleAverage:

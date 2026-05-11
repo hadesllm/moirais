@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ivw — IV Wald estimate."""
+"""Tests for morie.fn.ivw — IV Wald estimate."""
 
 import pytest
 
-from moirais.fn.ivw import iv_wald
+from morie.fn.ivw import iv_wald
 
 
 class TestIVWald:

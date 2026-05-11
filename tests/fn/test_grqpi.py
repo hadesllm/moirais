@@ -1,7 +1,7 @@
 """Tests for grqpi.geron_action_value_function."""
 import numpy as np
 import pytest
-from moirais.fn.grqpi import geron_action_value_function
+from morie.fn.grqpi import geron_action_value_function
 
 
 def test_grqpi_basic():

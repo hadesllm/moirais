@@ -1,7 +1,7 @@
 """Tests for rrint — RR interval series."""
 import numpy as np
-from moirais.fn.rrint import rr_intervals
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rrint import rr_intervals
+from morie.fn._containers import DescriptiveResult
 
 
 def test_rrint_basic():

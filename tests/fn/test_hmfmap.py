@@ -1,7 +1,7 @@
 """Tests for hmfmap.geron_feature_map."""
 import numpy as np
 import pytest
-from moirais.fn.hmfmap import geron_feature_map
+from morie.fn.hmfmap import geron_feature_map
 
 
 def test_hmfmap_basic():

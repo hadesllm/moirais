@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rskci — risk concordance."""
+"""Tests for morie.fn.rskci — risk concordance."""
 
 import pytest
 import numpy as np
-from moirais.fn.rskci import risk_concordance
-from moirais.fn._containers import ESRes
+from morie.fn.rskci import risk_concordance
+from morie.fn._containers import ESRes
 
 
 class TestRiskConcordance:

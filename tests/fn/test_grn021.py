@@ -1,7 +1,7 @@
 """Tests for grn021.geron_ch4_softmax_function."""
 import numpy as np
 import pytest
-from moirais.fn.grn021 import geron_ch4_softmax_function
+from morie.fn.grn021 import geron_ch4_softmax_function
 
 
 def test_grn021_basic():

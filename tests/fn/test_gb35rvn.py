@@ -1,7 +1,7 @@
 """Tests for gb35rvn.gibbons_rvn_test."""
 import numpy as np
 import pytest
-from moirais.fn.gb35rvn import gibbons_rvn_test
+from morie.fn.gb35rvn import gibbons_rvn_test
 
 
 def test_gb35rvn_basic():

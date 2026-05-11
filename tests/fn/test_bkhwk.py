@@ -1,6 +1,6 @@
 """Test bkhwk."""
 import pytest
-from moirais.fn.bkhwk import bekenstein_hawking
+from morie.fn.bkhwk import bekenstein_hawking
 
 
 def test_bkhwk_basic():

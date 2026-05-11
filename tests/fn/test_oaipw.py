@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.oaipw — AIPW doubly-robust estimator."""
+"""Tests for morie.fn.oaipw — AIPW doubly-robust estimator."""
 
 import numpy as np
-from moirais.fn.oaipw import otis_aipw
+from morie.fn.oaipw import otis_aipw
 
 
 class TestOtisAipw:

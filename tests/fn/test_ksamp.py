@@ -1,7 +1,7 @@
 """Test ksamp."""
 import numpy as np
 import pytest
-from moirais.fn.ksamp import k_sample_anderson_darling
+from morie.fn.ksamp import k_sample_anderson_darling
 
 
 def test_ksamp_basic():

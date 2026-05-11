@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.guskr — Gaussian kernel."""
+"""Tests for morie.fn.guskr — Gaussian kernel."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.guskr import guskr
+from morie.fn.guskr import guskr
 
 
 class TestGuskr:

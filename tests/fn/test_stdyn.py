@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.stdyn — Dynamic spatio-temporal state-space model."""
+"""Tests for morie.fn.stdyn — Dynamic spatio-temporal state-space model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.stdyn import stdyn
+from morie.fn.stdyn import stdyn
 
 
 class TestStdyn:

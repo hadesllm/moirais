@@ -1,7 +1,7 @@
 """Tests for gb45lf.gibbons_lilliefors_normal."""
 import numpy as np
 import pytest
-from moirais.fn.gb45lf import gibbons_lilliefors_normal
+from morie.fn.gb45lf import gibbons_lilliefors_normal
 
 
 def test_gb45lf_basic():

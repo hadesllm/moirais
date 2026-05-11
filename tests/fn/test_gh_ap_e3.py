@@ -1,7 +1,7 @@
 """Tests for gh_ap_e3.ghosal_wavelet_mra."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_e3 import ghosal_wavelet_mra
+from morie.fn.gh_ap_e3 import ghosal_wavelet_mra
 
 
 def test_gh_ap_e3_basic():

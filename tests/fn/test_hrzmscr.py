@@ -1,7 +1,7 @@
 """Tests for hrzmscr.horowitz_manski_max_score."""
 import numpy as np
 import pytest
-from moirais.fn.hrzmscr import horowitz_manski_max_score
+from morie.fn.hrzmscr import horowitz_manski_max_score
 
 
 def test_hrzmscr_basic():

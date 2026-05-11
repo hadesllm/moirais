@@ -1,7 +1,7 @@
 """Tests for tmltsm.tmle_two_stage."""
 import numpy as np
 import pytest
-from moirais.fn.tmltsm import tmle_two_stage
+from morie.fn.tmltsm import tmle_two_stage
 
 
 def test_tmltsm_basic():

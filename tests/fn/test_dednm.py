@@ -1,6 +1,6 @@
 """Test dednm."""
 import pytest
-from moirais.fn.dednm import dedekind_sum
+from morie.fn.dednm import dedekind_sum
 
 
 def test_dednm_basic():

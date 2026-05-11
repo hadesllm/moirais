@@ -1,7 +1,7 @@
 """Tests for fzmkrn.fauzi_muller_fourth_order_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.fzmkrn import fauzi_muller_fourth_order_kernel
+from morie.fn.fzmkrn import fauzi_muller_fourth_order_kernel
 
 
 def test_fzmkrn_basic():

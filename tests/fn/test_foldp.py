@@ -1,7 +1,7 @@
 """Tests for foldp.folding_problem."""
 import numpy as np
 import pytest
-from moirais.fn.foldp import folding_problem
+from morie.fn.foldp import folding_problem
 
 
 def test_foldp_basic():

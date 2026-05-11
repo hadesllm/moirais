@@ -1,6 +1,6 @@
 """Test greedy decoding."""
 import numpy as np
-from moirais.fn.greed import greed
+from morie.fn.greed import greed
 
 
 def test_greed_basic():

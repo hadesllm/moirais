@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ripk."""
+"""Tests for morie.fn.ripk."""
 import numpy as np
-from moirais.fn.ripk import ripley_k_corrected
+from morie.fn.ripk import ripley_k_corrected
 
 
 def test_ripk_smoke():
@@ -12,7 +12,7 @@ def test_ripk_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ripk import cheatsheet
+    from morie.fn.ripk import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,7 +1,7 @@
 """Tests for hmgmm.geron_gaussian_mixture."""
 import numpy as np
 import pytest
-from moirais.fn.hmgmm import geron_gaussian_mixture
+from morie.fn.hmgmm import geron_gaussian_mixture
 
 
 def test_hmgmm_basic():

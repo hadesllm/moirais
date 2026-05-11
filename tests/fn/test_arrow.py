@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.arrow -- Directed graph layout."""
+"""Tests for morie.fn.arrow -- Directed graph layout."""
 
 import numpy as np
-from moirais.fn.arrow import directed_layout, arrow
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.arrow import directed_layout, arrow
+from morie.fn._containers import DescriptiveResult
 
 
 class TestArrow:

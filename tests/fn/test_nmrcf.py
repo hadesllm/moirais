@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmrcf -- Roll call filtering"""
+"""Tests for morie.fn.nmrcf -- Roll call filtering"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmrcf import roll_call_filter
+from morie.fn.nmrcf import roll_call_filter
 
 
 class TestRollCallFilter:

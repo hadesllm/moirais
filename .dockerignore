@@ -58,12 +58,12 @@ tests
 test
 .benchmarks
 
-# Large data binaries — distributed via `moirais download-bootstrap`
+# Large data binaries — distributed via `morie download-bootstrap`
 *.db
 *.sqlite
 *.sqlite3
-src/moirais/data/*.db
-src/moirais/data/*.sqlite
+src/morie/data/*.db
+src/morie/data/*.sqlite
 
 # Build/CI tooling
 Makefile

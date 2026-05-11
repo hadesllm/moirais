@@ -1,7 +1,7 @@
 """Tests for hmridg.geron_ridge_cost."""
 import numpy as np
 import pytest
-from moirais.fn.hmridg import geron_ridge_cost
+from morie.fn.hmridg import geron_ridge_cost
 
 
 def test_hmridg_basic():

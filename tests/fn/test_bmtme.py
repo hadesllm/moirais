@@ -1,7 +1,7 @@
 """Tests for bmtme.bmtme_model."""
 import numpy as np
 import pytest
-from moirais.fn.bmtme import bmtme_model
+from morie.fn.bmtme import bmtme_model
 
 
 def test_bmtme_basic():

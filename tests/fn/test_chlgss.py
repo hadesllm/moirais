@@ -1,7 +1,7 @@
 """Tests for chlgss."""
 import numpy as np
 import pytest
-from moirais.fn.chlgss import chlgss
+from morie.fn.chlgss import chlgss
 
 
 def test_chlgss_basic():
@@ -27,5 +27,5 @@ def test_chlgss_no_data():
 
 
 def test_chlgss_alias():
-    from moirais.fn.chlgss import chlgss
+    from morie.fn.chlgss import chlgss
     assert chlgss is chlgss

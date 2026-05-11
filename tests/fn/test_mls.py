@@ -1,7 +1,7 @@
 """Test mls."""
 import numpy as np
 import pytest
-from moirais.fn.mls import mls
+from morie.fn.mls import mls
 
 
 def test_mls_basic():

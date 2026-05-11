@@ -1,7 +1,7 @@
 """Tests for semsbn.sem_sb_chi_sq."""
 import numpy as np
 import pytest
-from moirais.fn.semsbn import sem_sb_chi_sq
+from morie.fn.semsbn import sem_sb_chi_sq
 
 
 def test_semsbn_basic():

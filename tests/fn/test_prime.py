@@ -1,6 +1,6 @@
 """Tests for prime_density."""
 import pytest
-from moirais.fn.prime import prime_density
+from morie.fn.prime import prime_density
 
 class TestPrime:
     def test_known(self):

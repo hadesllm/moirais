@@ -1,7 +1,7 @@
 """Tests for rgwvmom.rangayyan_wavelet_moments."""
 import numpy as np
 import pytest
-from moirais.fn.rgwvmom import rangayyan_wavelet_moments
+from morie.fn.rgwvmom import rangayyan_wavelet_moments
 
 
 def test_rgwvmom_basic():

@@ -1,7 +1,7 @@
 """Test pttsp."""
 import numpy as np
 import pytest
-from moirais.fn.pttsp import pttsp
+from morie.fn.pttsp import pttsp
 
 
 def test_pttsp_basic():

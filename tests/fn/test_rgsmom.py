@@ -1,7 +1,7 @@
 """Tests for rgsmom.rangayyan_spectral_moments."""
 import numpy as np
 import pytest
-from moirais.fn.rgsmom import rangayyan_spectral_moments
+from morie.fn.rgsmom import rangayyan_spectral_moments
 
 
 def test_rgsmom_basic():

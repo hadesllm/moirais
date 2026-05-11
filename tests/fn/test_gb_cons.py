@@ -1,7 +1,7 @@
 """Tests for gb_cons.gibbons_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.gb_cons import gibbons_consistency
+from morie.fn.gb_cons import gibbons_consistency
 
 
 def test_gb_cons_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptqdr -- Quadrat count test"""
+"""Tests for morie.fn.ptqdr -- Quadrat count test"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptqdr import quadrat_test
+from morie.fn.ptqdr import quadrat_test
 
 
 class TestQuadratTest:

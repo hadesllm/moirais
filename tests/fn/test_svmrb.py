@@ -1,7 +1,7 @@
 """Test svm_rbf (svmrb)."""
 import numpy as np
-from moirais.fn.svmrb import svm_rbf, svmrb
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.svmrb import svm_rbf, svmrb
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSvmrb:

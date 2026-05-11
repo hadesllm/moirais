@@ -1,7 +1,7 @@
 """Tests for rgblp.rangayyan_butterworth_lp."""
 import numpy as np
 import pytest
-from moirais.fn.rgblp import rangayyan_butterworth_lp
+from morie.fn.rgblp import rangayyan_butterworth_lp
 
 
 def test_rgblp_basic():

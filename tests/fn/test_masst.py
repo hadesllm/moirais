@@ -1,7 +1,7 @@
 """Test masst."""
 import numpy as np
 import pytest
-from moirais.fn.masst import masst
+from morie.fn.masst import masst
 
 
 def test_masst_basic():

@@ -1,7 +1,7 @@
 """Tests for ghs010.ghosal_ch3_discrete_hazard_rate."""
 import numpy as np
 import pytest
-from moirais.fn.ghs010 import ghosal_ch3_discrete_hazard_rate
+from morie.fn.ghs010 import ghosal_ch3_discrete_hazard_rate
 
 
 def test_ghs010_basic():

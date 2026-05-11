@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.combf import comb_filter_signal, combf
-from moirais.fn._containers import SignalResult
+from morie.fn.combf import comb_filter_signal, combf
+from morie.fn._containers import SignalResult
 
 
 class TestCombFilter:

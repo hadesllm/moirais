@@ -1,7 +1,7 @@
 """Tests for icafn.py - Independent Component Analysis."""
 import numpy as np
 import pytest
-from moirais.fn.icafn import ica_fn, icafn
+from morie.fn.icafn import ica_fn, icafn
 
 
 def test_ica_returns_descriptive_result():

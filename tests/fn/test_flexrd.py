@@ -1,7 +1,7 @@
 """Tests for flexrd.flexible_receptor_dock."""
 import numpy as np
 import pytest
-from moirais.fn.flexrd import flexible_receptor_dock
+from morie.fn.flexrd import flexible_receptor_dock
 
 
 def test_flexrd_basic():

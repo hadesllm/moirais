@@ -1,6 +1,6 @@
 """Test mceliece_encrypt."""
-from moirais.fn._containers import CryptoResult
-from moirais.fn.mcelc import mcelc, mceliece_encrypt
+from morie.fn._containers import CryptoResult
+from morie.fn.mcelc import mcelc, mceliece_encrypt
 
 
 class TestMcelieceEncrypt:

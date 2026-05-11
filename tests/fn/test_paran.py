@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.paran — Horn's parallel analysis."""
+"""Tests for morie.fn.paran — Horn's parallel analysis."""
 
 import pytest
 import numpy as np
-from moirais.fn import paran
+from morie.fn import paran
 
 
 class TestParan:

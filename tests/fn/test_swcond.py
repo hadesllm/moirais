@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.swcond."""
+"""Tests for morie.fn.swcond."""
 import numpy as np
 import pytest
-from moirais.fn.swcond import swcond
+from morie.fn.swcond import swcond
 
 
 class TestSwcond:

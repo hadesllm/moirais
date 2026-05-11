@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.svdrc."""
+"""Tests for morie.fn.svdrc."""
 
 import numpy as np
 import pytest
-from moirais.fn.svdrc import svdrc
+from morie.fn.svdrc import svdrc
 
 
 class TestSvdrc:

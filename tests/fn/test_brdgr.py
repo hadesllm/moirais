@@ -1,7 +1,7 @@
 """Tests for brdgr.bridge_observations."""
 import numpy as np
 import pytest
-from moirais.fn.brdgr import bridge_observations
+from morie.fn.brdgr import bridge_observations
 
 
 def test_brdgr_basic():

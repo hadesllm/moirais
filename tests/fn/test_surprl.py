@@ -1,7 +1,7 @@
 """Tests for surprl.surprisal."""
 import numpy as np
 import pytest
-from moirais.fn.surprl import surprisal
+from morie.fn.surprl import surprisal
 
 
 def test_surprl_basic():

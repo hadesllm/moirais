@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.ocsvm -- OC SVM classify."""
+"""Tests for morie.fn.ocsvm -- OC SVM classify."""
 import numpy as np
-from moirais.fn.ocsvm import oc_svm_classify, ocsvm
+from morie.fn.ocsvm import oc_svm_classify, ocsvm
 
 
 def test_alias():

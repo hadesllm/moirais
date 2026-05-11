@@ -1,6 +1,6 @@
 """Test hinge loss."""
 import numpy as np
-from moirais.fn.hinge import hinge
+from morie.fn.hinge import hinge
 
 
 def test_hinge_basic():

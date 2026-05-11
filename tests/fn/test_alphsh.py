@@ -1,7 +1,7 @@
 """Test alphsh."""
 import numpy as np
 import pytest
-from moirais.fn.alphsh import alphsh
+from morie.fn.alphsh import alphsh
 
 
 def test_alphsh_basic():

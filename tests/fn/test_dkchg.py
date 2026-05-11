@@ -1,7 +1,7 @@
 """Test dkchg."""
 import numpy as np
 import pytest
-from moirais.fn.dkchg import dkchg
+from morie.fn.dkchg import dkchg
 
 
 def test_dkchg_basic():

@@ -1,7 +1,7 @@
 """Tests for esllgr.esl_logistic_reg."""
 import numpy as np
 import pytest
-from moirais.fn.esllgr import esl_logistic_reg
+from morie.fn.esllgr import esl_logistic_reg
 
 
 def test_esllgr_basic():

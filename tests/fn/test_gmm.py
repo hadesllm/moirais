@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gmm — Gaussian mixture model."""
+"""Tests for morie.fn.gmm — Gaussian mixture model."""
 import numpy as np
-from moirais.fn.gmm import gaussian_mixture
+from morie.fn.gmm import gaussian_mixture
 
 
 class TestGMM:

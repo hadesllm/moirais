@@ -1,7 +1,7 @@
 """Tests for gh_ap_a3.ghosal_tv_distance."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_a3 import ghosal_tv_distance
+from morie.fn.gh_ap_a3 import ghosal_tv_distance
 
 
 def test_gh_ap_a3_basic():

@@ -1,7 +1,7 @@
 """Tests for thfdt.terry_hoeffding_test."""
 import numpy as np
 import pytest
-from moirais.fn.thfdt import terry_hoeffding_test
+from morie.fn.thfdt import terry_hoeffding_test
 
 
 def test_thfdt_basic():

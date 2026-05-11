@@ -1,7 +1,7 @@
 """Tests for rkhsb.rkhs_bayesian_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.rkhsb import rkhs_bayesian_kernel
+from morie.fn.rkhsb import rkhs_bayesian_kernel
 
 
 def test_rkhsb_basic():

@@ -1,7 +1,7 @@
 """Tests for hetgnn.heterogeneous_gnn."""
 import numpy as np
 import pytest
-from moirais.fn.hetgnn import heterogeneous_gnn
+from morie.fn.hetgnn import heterogeneous_gnn
 
 
 def test_hetgnn_basic():

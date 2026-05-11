@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msscr -- MDS scree plot values"""
+"""Tests for morie.fn.msscr -- MDS scree plot values"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msscr import mds_scree
+from morie.fn.msscr import mds_scree
 
 
 class TestMdsScree:

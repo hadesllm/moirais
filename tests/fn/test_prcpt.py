@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.prcpt — perceptron."""
+"""Tests for morie.fn.prcpt — perceptron."""
 import numpy as np
-from moirais.fn.prcpt import perceptron
+from morie.fn.prcpt import perceptron
 
 
 class TestPerceptron:

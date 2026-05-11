@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.kinlr -- Kinship likelihood ratio."""
+"""Tests for morie.fn.kinlr -- Kinship likelihood ratio."""
 
 import numpy as np
 import pytest
-from moirais.fn.kinlr import kinlr
+from morie.fn.kinlr import kinlr
 
 
 class TestKinlr:

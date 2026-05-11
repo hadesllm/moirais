@@ -1,7 +1,7 @@
 """Tests for caustrnsp.causal_transportability_weights."""
 import numpy as np
 import pytest
-from moirais.fn.caustrnsp import causal_transportability_weights
+from morie.fn.caustrnsp import causal_transportability_weights
 
 
 def test_caustrnsp_basic():

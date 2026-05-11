@@ -1,7 +1,7 @@
 """Tests for wsmcrk.wasserman_kernel_regression."""
 import numpy as np
 import pytest
-from moirais.fn.wsmcrk import wasserman_kernel_regression
+from morie.fn.wsmcrk import wasserman_kernel_regression
 
 
 def test_wsmcrk_basic():

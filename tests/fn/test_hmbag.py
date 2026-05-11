@@ -1,7 +1,7 @@
 """Tests for hmbag.geron_bagging."""
 import numpy as np
 import pytest
-from moirais.fn.hmbag import geron_bagging
+from morie.fn.hmbag import geron_bagging
 
 
 def test_hmbag_basic():

@@ -1,7 +1,7 @@
 """Tests for wsmsmp.wasserman_smoothing_spline."""
 import numpy as np
 import pytest
-from moirais.fn.wsmsmp import wasserman_smoothing_spline
+from morie.fn.wsmsmp import wasserman_smoothing_spline
 
 
 def test_wsmsmp_basic():

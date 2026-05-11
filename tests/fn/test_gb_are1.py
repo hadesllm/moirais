@@ -1,7 +1,7 @@
 """Tests for gb_are1.gibbons_are_sign_wilcoxon."""
 import numpy as np
 import pytest
-from moirais.fn.gb_are1 import gibbons_are_sign_wilcoxon
+from morie.fn.gb_are1 import gibbons_are_sign_wilcoxon
 
 
 def test_gb_are1_basic():

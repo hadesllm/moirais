@@ -1,6 +1,6 @@
 """Tests for partial_kendall."""
 import numpy as np, pytest
-from moirais.fn.pknds import partial_kendall
+from morie.fn.pknds import partial_kendall
 
 
 class TestPartialKendall:

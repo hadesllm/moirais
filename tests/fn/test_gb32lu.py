@@ -1,7 +1,7 @@
 """Tests for gb32lu.gibbons_runs_up_down_recur."""
 import numpy as np
 import pytest
-from moirais.fn.gb32lu import gibbons_runs_up_down_recur
+from morie.fn.gb32lu import gibbons_runs_up_down_recur
 
 
 def test_gb32lu_basic():

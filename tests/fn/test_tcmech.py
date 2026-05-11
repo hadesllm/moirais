@@ -1,7 +1,7 @@
 """Tests for tcmech.truncated_cdp_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.tcmech import truncated_cdp_mechanism
+from morie.fn.tcmech import truncated_cdp_mechanism
 
 
 def test_tcmech_basic():

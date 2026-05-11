@@ -1,7 +1,7 @@
 """Test undsmp."""
 import numpy as np
 import pytest
-from moirais.fn.undsmp import undsmp
+from morie.fn.undsmp import undsmp
 
 
 def test_undsmp_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bart — Bartlett's test of sphericity."""
+"""Tests for morie.fn.bart — Bartlett's test of sphericity."""
 
 import pytest
 import numpy as np
-from moirais.fn import bart
-from moirais.fn._containers import BrtRes
+from morie.fn import bart
+from morie.fn._containers import BrtRes
 
 
 @pytest.fixture()

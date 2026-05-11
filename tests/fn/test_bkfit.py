@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bkfit — Backfitting algorithm for additive models."""
+"""Tests for morie.fn.bkfit — Backfitting algorithm for additive models."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bkfit import bkfit
+from morie.fn.bkfit import bkfit
 
 
 @pytest.fixture()

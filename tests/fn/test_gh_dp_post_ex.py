@@ -1,7 +1,7 @@
 """Tests for gh_dp_post_ex.ghosal_dp_posterior_exact."""
 import numpy as np
 import pytest
-from moirais.fn.gh_dp_post_ex import ghosal_dp_posterior_exact
+from morie.fn.gh_dp_post_ex import ghosal_dp_posterior_exact
 
 
 def test_gh_dp_post_ex_basic():

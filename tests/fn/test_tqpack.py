@@ -1,7 +1,7 @@
 """Tests for tqpack.turboquant_bit_pack_indices."""
 import numpy as np
 import pytest
-from moirais.fn.tqpack import turboquant_bit_pack_indices
+from morie.fn.tqpack import turboquant_bit_pack_indices
 
 
 def test_tqpack_basic():

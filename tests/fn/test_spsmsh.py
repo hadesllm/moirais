@@ -1,7 +1,7 @@
 """Tests for spsmsh.spsm_shifted_intervention."""
 import numpy as np
 import pytest
-from moirais.fn.spsmsh import spsm_shifted_intervention
+from morie.fn.spsmsh import spsm_shifted_intervention
 
 
 def test_spsmsh_basic():

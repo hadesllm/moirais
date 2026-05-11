@@ -1,7 +1,7 @@
 """Tests for pscme.path_specific_causal_effect."""
 import numpy as np
 import pytest
-from moirais.fn.pscme import path_specific_causal_effect
+from morie.fn.pscme import path_specific_causal_effect
 
 
 def test_pscme_basic():

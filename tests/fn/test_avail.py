@@ -1,5 +1,5 @@
 """Tests for avail (system availability)."""
-from moirais.fn.avail import availability
+from morie.fn.avail import availability
 
 
 def test_availability_basic():

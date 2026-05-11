@@ -1,7 +1,7 @@
 """Test samcr."""
 import numpy as np
 import pytest
-from moirais.fn.samcr import samcr
+from morie.fn.samcr import samcr
 
 
 def test_samcr_basic():

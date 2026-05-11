@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.exrsp — exposure-response modeling."""
+"""Tests for morie.fn.exrsp — exposure-response modeling."""
 import numpy as np
 import pytest
-from moirais.fn.exrsp import exposure_response
+from morie.fn.exrsp import exposure_response
 
 
 class TestExposureResponse:

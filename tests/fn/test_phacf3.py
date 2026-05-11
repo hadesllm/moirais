@@ -1,7 +1,7 @@
 """Tests for phacf3.pharmacophore_3d."""
 import numpy as np
 import pytest
-from moirais.fn.phacf3 import pharmacophore_3d
+from morie.fn.phacf3 import pharmacophore_3d
 
 
 def test_phacf3_basic():

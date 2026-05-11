@@ -1,7 +1,7 @@
 """Tests for mhrate.mantel_haenszel_rate."""
 import numpy as np
 import pytest
-from moirais.fn.mhrate import mantel_haenszel_rate
+from morie.fn.mhrate import mantel_haenszel_rate
 
 
 def test_mhrate_basic():

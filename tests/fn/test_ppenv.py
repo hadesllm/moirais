@@ -1,7 +1,7 @@
 """Test ppenv."""
 import numpy as np
 import pytest
-from moirais.fn.ppenv import ppenv
+from morie.fn.ppenv import ppenv
 
 
 def test_ppenv_basic():

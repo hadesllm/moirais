@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.dsgwt import dsgwt, compute_design_weights
+from morie.fn.dsgwt import dsgwt, compute_design_weights
 
 
 def test_dsgwt_returns_series():

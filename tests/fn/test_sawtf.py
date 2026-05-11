@@ -1,7 +1,7 @@
 """Test sawtf."""
 import numpy as np
 import pytest
-from moirais.fn.sawtf import sawtf
+from morie.fn.sawtf import sawtf
 
 
 def test_sawtf_basic():

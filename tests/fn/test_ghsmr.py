@@ -1,7 +1,7 @@
 """Test ghsmr."""
 import numpy as np
 import pytest
-from moirais.fn.ghsmr import ghsmr
+from morie.fn.ghsmr import ghsmr
 
 
 def test_ghsmr_basic():

@@ -1,7 +1,7 @@
 """Tests for wsment.wasserman_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.wsment import wasserman_entropy
+from morie.fn.wsment import wasserman_entropy
 
 
 def test_wsment_basic():

@@ -1,7 +1,7 @@
 """Tests for alumap.alammar_umap_projection."""
 import numpy as np
 import pytest
-from moirais.fn.alumap import alammar_umap_projection
+from morie.fn.alumap import alammar_umap_projection
 
 
 def test_alumap_basic():

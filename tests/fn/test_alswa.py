@@ -1,7 +1,7 @@
 """Tests for alswa.alammar_sliding_window_attention."""
 import numpy as np
 import pytest
-from moirais.fn.alswa import alammar_sliding_window_attention
+from morie.fn.alswa import alammar_sliding_window_attention
 
 
 def test_alswa_basic():

@@ -1,7 +1,7 @@
 """Tests for mapth.map_theta_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.mapth import map_theta_estimator
+from morie.fn.mapth import map_theta_estimator
 
 
 def test_mapth_basic():

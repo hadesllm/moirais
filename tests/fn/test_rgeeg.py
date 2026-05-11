@@ -1,7 +1,7 @@
 """Tests for rgeeg.rangayyan_eeg_bands."""
 import numpy as np
 import pytest
-from moirais.fn.rgeeg import rangayyan_eeg_bands
+from morie.fn.rgeeg import rangayyan_eeg_bands
 
 
 def test_rgeeg_basic():

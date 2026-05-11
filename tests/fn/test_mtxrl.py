@@ -1,7 +1,7 @@
 """Tests for mtxrl.matrix_game."""
 import numpy as np
 import pytest
-from moirais.fn.mtxrl import matrix_game
+from morie.fn.mtxrl import matrix_game
 
 
 def test_mtxrl_basic():

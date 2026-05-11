@@ -1,7 +1,7 @@
 """Tests for gmm_pdf."""
 import numpy as np
 import pytest
-from moirais.fn.gmmpd import gmm_pdf, gmmpd
+from morie.fn.gmmpd import gmm_pdf, gmmpd
 
 
 def test_single_component():

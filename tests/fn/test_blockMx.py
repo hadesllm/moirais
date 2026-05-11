@@ -1,7 +1,7 @@
 """Tests for blockMx.block_maxima."""
 import numpy as np
 import pytest
-from moirais.fn.blockMx import block_maxima
+from morie.fn.blockMx import block_maxima
 
 
 def test_blockMx_basic():

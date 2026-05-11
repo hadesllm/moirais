@@ -1,7 +1,7 @@
 """Tests for b103.burkov_lm_ch1_mse_cost."""
 import numpy as np
 import pytest
-from moirais.fn.b103 import burkov_lm_ch1_mse_cost
+from morie.fn.b103 import burkov_lm_ch1_mse_cost
 
 
 def test_b103_basic():

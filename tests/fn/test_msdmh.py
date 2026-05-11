@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msdmh -- Manhattan distance matrix"""
+"""Tests for morie.fn.msdmh -- Manhattan distance matrix"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msdmh import dist_manhattan
+from morie.fn.msdmh import dist_manhattan
 
 
 class TestDistManhattan:

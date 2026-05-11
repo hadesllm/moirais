@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.silh -- Silhouette score."""
+"""Tests for morie.fn.silh -- Silhouette score."""
 
 import numpy as np
 import pytest
-from moirais.fn.silh import silhouette_score
+from morie.fn.silh import silhouette_score
 
 
 class TestSilhouetteScore:

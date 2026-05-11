@@ -1,7 +1,7 @@
 """Tests for hrzphv.horowitz_ph_heterogeneity."""
 import numpy as np
 import pytest
-from moirais.fn.hrzphv import horowitz_ph_heterogeneity
+from morie.fn.hrzphv import horowitz_ph_heterogeneity
 
 
 def test_hrzphv_basic():

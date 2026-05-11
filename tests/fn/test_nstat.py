@@ -1,7 +1,7 @@
 """Tests for nstat.nonstationary_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.nstat import nonstationary_covariance
+from morie.fn.nstat import nonstationary_covariance
 
 
 def test_nstat_basic():

@@ -1,7 +1,7 @@
 """Test sespc."""
 import numpy as np
 import pytest
-from moirais.fn.sespc import sespc
+from morie.fn.sespc import sespc
 
 
 def test_sespc_basic():

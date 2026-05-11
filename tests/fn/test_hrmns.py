@@ -1,7 +1,7 @@
 """Tests for hrmns -- Harmonic analysis."""
 import numpy as np
-from moirais.fn.hrmns import hrmns
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hrmns import hrmns
+from morie.fn._containers import DescriptiveResult
 
 
 def test_hrmns_basic():

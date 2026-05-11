@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lacscor."""
+"""Tests for morie.fn.lacscor."""
 import numpy as np
 import pytest
-from moirais.fn.lacscor import lacscor
+from morie.fn.lacscor import lacscor
 
 
 class TestLacscor:

@@ -1,7 +1,7 @@
 """Tests for idwlcl."""
 import numpy as np
 import pytest
-from moirais.fn.idwlcl import idwlcl
+from morie.fn.idwlcl import idwlcl
 
 
 def test_idwlcl_basic():
@@ -27,5 +27,5 @@ def test_idwlcl_no_data():
 
 
 def test_idwlcl_alias():
-    from moirais.fn.idwlcl import idwlcl
+    from morie.fn.idwlcl import idwlcl
     assert idwlcl is idwlcl

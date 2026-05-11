@@ -1,7 +1,7 @@
 """Tests for funCA.functional_cca."""
 import numpy as np
 import pytest
-from moirais.fn.funCA import functional_cca
+from morie.fn.funCA import functional_cca
 
 
 def test_funCA_basic():

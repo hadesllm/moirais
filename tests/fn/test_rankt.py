@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rankt."""
+"""Tests for morie.fn.rankt."""
 import numpy as np
-from moirais.fn.rankt import rank_transform
+from morie.fn.rankt import rank_transform
 
 
 def test_rankt_smoke():
@@ -12,7 +12,7 @@ def test_rankt_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.rankt import cheatsheet
+    from morie.fn.rankt import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.ecgplt -- ECG multi-lead plot."""
+"""Tests for morie.fn.ecgplt -- ECG multi-lead plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.ecgplt import ecgplt
+from morie.fn.ecgplt import ecgplt
 
 
 class TestEcgPlt:

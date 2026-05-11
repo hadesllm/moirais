@@ -1,7 +1,7 @@
 """Tests for joswc.joseph_sliding_window_cv."""
 import numpy as np
 import pytest
-from moirais.fn.joswc import joseph_sliding_window_cv
+from morie.fn.joswc import joseph_sliding_window_cv
 
 
 def test_joswc_basic():

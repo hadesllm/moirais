@@ -1,7 +1,7 @@
 """He who is brave is free. — Seneca"""
 import numpy as np
 import pytest
-from moirais.fn.hubsau import hits_hub_authority
+from morie.fn.hubsau import hits_hub_authority
 
 
 def test_hubsau_basic():

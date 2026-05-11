@@ -1,6 +1,6 @@
 """Tests for normal score transform."""
 import numpy as np
-from moirais.fn.sgnsc import sgnsc
+from morie.fn.sgnsc import sgnsc
 
 
 def test_sgnsc_smoke():
@@ -13,7 +13,7 @@ def test_sgnsc_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgnsc import cheatsheet
+    from morie.fn.sgnsc import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

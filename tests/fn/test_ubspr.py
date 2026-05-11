@@ -1,7 +1,7 @@
 """Test ubspr."""
 import numpy as np
 import pytest
-from moirais.fn.ubspr import ubspr
+from morie.fn.ubspr import ubspr
 
 
 def test_ubspr_basic():

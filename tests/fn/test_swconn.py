@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.swconn."""
+"""Tests for morie.fn.swconn."""
 import numpy as np
 import pytest
-from moirais.fn.swconn import swconn
+from morie.fn.swconn import swconn
 
 
 class TestSwconn:

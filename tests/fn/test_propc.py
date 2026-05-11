@@ -1,7 +1,7 @@
 """Tests for propc.prophet_components."""
 import numpy as np
 import pytest
-from moirais.fn.propc import prophet_components
+from morie.fn.propc import prophet_components
 
 
 def test_propc_basic():

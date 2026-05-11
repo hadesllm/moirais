@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rgknd — Regression kink design."""
+"""Tests for morie.fn.rgknd — Regression kink design."""
 import numpy as np
 import pytest
-from moirais.fn.rgknd import rgknd
+from morie.fn.rgknd import rgknd
 
 
 @pytest.fixture()
@@ -53,5 +53,5 @@ def test_slope_signs(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.rgknd import cheatsheet
+    from morie.fn.rgknd import cheatsheet
     assert len(cheatsheet()) > 0

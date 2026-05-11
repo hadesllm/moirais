@@ -1,7 +1,7 @@
 """Tests for itrct1.interaction_did."""
 import numpy as np
 import pytest
-from moirais.fn.itrct1 import interaction_did
+from morie.fn.itrct1 import interaction_did
 
 
 def test_itrct1_basic():

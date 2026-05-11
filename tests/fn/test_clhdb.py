@@ -1,7 +1,7 @@
 """Test clhdb."""
 import numpy as np
 import pytest
-from moirais.fn.clhdb import clhdb
+from morie.fn.clhdb import clhdb
 
 
 def test_clhdb_basic():

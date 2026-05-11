@@ -1,7 +1,7 @@
 """Tests for bndpst.bound_post_test."""
 import numpy as np
 import pytest
-from moirais.fn.bndpst import bound_post_test
+from morie.fn.bndpst import bound_post_test
 
 
 def test_bndpst_basic():

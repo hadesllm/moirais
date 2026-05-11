@@ -1,7 +1,7 @@
 """Test buffr."""
 import numpy as np
 import pytest
-from moirais.fn.buffr import buffr
+from morie.fn.buffr import buffr
 
 
 def test_buffr_basic():

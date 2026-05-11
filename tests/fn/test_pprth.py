@@ -1,7 +1,7 @@
 """Test pprth."""
 import numpy as np
 import pytest
-from moirais.fn.pprth import pprth
+from morie.fn.pprth import pprth
 
 
 def test_pprth_basic():

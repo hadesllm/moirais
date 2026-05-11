@@ -1,7 +1,7 @@
 """Tests for bpblm.bits_per_byte."""
 import numpy as np
 import pytest
-from moirais.fn.bpblm import bits_per_byte
+from morie.fn.bpblm import bits_per_byte
 
 
 def test_bpblm_basic():

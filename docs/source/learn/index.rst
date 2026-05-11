@@ -33,10 +33,10 @@ matplotlib is excellent and you don't need this.
 
 ----
 
-What is MOIRAIS
+What is MORIE
 ---------------
 
-MOIRAIS is a *toolbox*.  It's not magic, it's not a stats degree in a
+MORIE is a *toolbox*.  It's not magic, it's not a stats degree in a
 box, it doesn't decide what you should do with your data.  It's a
 collection of around ten thousand small functions, each one a single
 formula from a published paper, plus a terminal interface that lets
@@ -44,7 +44,7 @@ you stitch them together into an analysis.
 
 Three things make it different from a stats package:
 
-1. **Every formula has a citation.**  If you run ``moirais.fn.icc1``
+1. **Every formula has a citation.**  If you run ``morie.fn.icc1``
    and want to know where the math came from, the answer is
    *Shrout & Fleiss (1979)* — printed right there in the help.  No
    black boxes.

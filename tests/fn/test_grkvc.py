@@ -1,7 +1,7 @@
 """Tests for grkvc.geron_kv_cache_compression."""
 import numpy as np
 import pytest
-from moirais.fn.grkvc import geron_kv_cache_compression
+from morie.fn.grkvc import geron_kv_cache_compression
 
 
 def test_grkvc_basic():

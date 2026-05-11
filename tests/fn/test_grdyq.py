@@ -1,7 +1,7 @@
 """Tests for grdyq.geron_dynamic_quantization."""
 import numpy as np
 import pytest
-from moirais.fn.grdyq import geron_dynamic_quantization
+from morie.fn.grdyq import geron_dynamic_quantization
 
 
 def test_grdyq_basic():

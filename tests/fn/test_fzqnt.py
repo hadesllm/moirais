@@ -1,7 +1,7 @@
 """Tests for fzqnt.fauzi_kernel_quantile_asymptotic."""
 import numpy as np
 import pytest
-from moirais.fn.fzqnt import fauzi_kernel_quantile_asymptotic
+from morie.fn.fzqnt import fauzi_kernel_quantile_asymptotic
 
 
 def test_fzqnt_basic():

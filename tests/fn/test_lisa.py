@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lisa — Local Moran's I (LISA)."""
+"""Tests for morie.fn.lisa — Local Moran's I (LISA)."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lisa import local_morans_i
+from morie.fn.lisa import local_morans_i
 
 
 class TestLISA:

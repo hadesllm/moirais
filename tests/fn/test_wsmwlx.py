@@ -1,7 +1,7 @@
 """Tests for wsmwlx.wasserman_wilcoxon."""
 import numpy as np
 import pytest
-from moirais.fn.wsmwlx import wasserman_wilcoxon
+from morie.fn.wsmwlx import wasserman_wilcoxon
 
 
 def test_wsmwlx_basic():

@@ -1,7 +1,7 @@
 """Tests for difbd -- DIF bundle analysis."""
 import numpy as np
-from moirais.fn.difbd import dif_bundle
-from moirais.fn._containers import DIFResult
+from morie.fn.difbd import dif_bundle
+from morie.fn._containers import DIFResult
 
 
 class TestDifBundle:

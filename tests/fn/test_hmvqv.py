@@ -1,7 +1,7 @@
 """Tests for hmvqv.geron_vq_vae."""
 import numpy as np
 import pytest
-from moirais.fn.hmvqv import geron_vq_vae
+from morie.fn.hmvqv import geron_vq_vae
 
 
 def test_hmvqv_basic():

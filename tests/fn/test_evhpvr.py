@@ -1,7 +1,7 @@
 """Tests for evhpvr.evt_heffernan_tawn."""
 import numpy as np
 import pytest
-from moirais.fn.evhpvr import evt_heffernan_tawn
+from morie.fn.evhpvr import evt_heffernan_tawn
 
 
 def test_evhpvr_basic():

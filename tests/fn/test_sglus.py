@@ -1,6 +1,6 @@
 """Tests for LU decomposition simulation."""
 import numpy as np
-from moirais.fn.sglus import sglus
+from morie.fn.sglus import sglus
 
 
 def test_sglus_smoke():
@@ -15,7 +15,7 @@ def test_sglus_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sglus import cheatsheet
+    from morie.fn.sglus import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

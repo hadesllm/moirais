@@ -1,5 +1,5 @@
 """Tests for ari (Automated Readability Index)."""
-from moirais.fn.ari import automated_readability
+from morie.fn.ari import automated_readability
 
 
 def test_ari_basic():
@@ -10,7 +10,7 @@ def test_ari_basic():
 
 
 def test_cheatsheet():
-    from moirais.fn.ari import cheatsheet
+    from morie.fn.ari import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

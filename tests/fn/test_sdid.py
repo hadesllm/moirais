@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.sdid -- Synthetic DiD."""
+"""Tests for morie.fn.sdid -- Synthetic DiD."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.sdid import synthetic_did, sdid
-from moirais.fn._containers import ESRes
+from morie.fn.sdid import synthetic_did, sdid
+from morie.fn._containers import ESRes
 
 
 def _make_sdid_panel(n_ctrl=8, n_pre=6, n_post=3, effect=4.0, seed=42):

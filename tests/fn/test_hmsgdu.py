@@ -1,7 +1,7 @@
 """Tests for hmsgdu.geron_sgd_update."""
 import numpy as np
 import pytest
-from moirais.fn.hmsgdu import geron_sgd_update
+from morie.fn.hmsgdu import geron_sgd_update
 
 
 def test_hmsgdu_basic():

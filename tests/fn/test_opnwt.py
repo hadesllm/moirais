@@ -1,7 +1,7 @@
 """Test opnwt."""
 import numpy as np
 import pytest
-from moirais.fn.opnwt import opnwt
+from morie.fn.opnwt import opnwt
 
 
 def test_opnwt_basic():

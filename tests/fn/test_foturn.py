@@ -1,7 +1,7 @@
 """Test foturn."""
 import numpy as np
 import pytest
-from moirais.fn.foturn import foturn
+from morie.fn.foturn import foturn
 
 
 def test_foturn_basic():

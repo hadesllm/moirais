@@ -1,7 +1,7 @@
 """Test afchl."""
 import numpy as np
 import pytest
-from moirais.fn.afchl import afchl
+from morie.fn.afchl import afchl
 
 
 def test_afchl_basic():

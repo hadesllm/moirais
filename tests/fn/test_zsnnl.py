@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsnnl -- Laplace natural neighbor (Sibson)"""
+"""Tests for morie.fn.zsnnl -- Laplace natural neighbor (Sibson)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsnnl import nn_laplace
+from morie.fn.zsnnl import nn_laplace
 
 
 class TestNnLaplace:

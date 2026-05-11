@@ -1,7 +1,7 @@
 """Tests for bm25.bm25."""
 import numpy as np
 import pytest
-from moirais.fn.bm25 import bm25
+from morie.fn.bm25 import bm25
 
 
 def test_bm25_basic():

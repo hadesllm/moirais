@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mcar -- Little's MCAR test."""
+"""Tests for morie.fn.mcar -- Little's MCAR test."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.mcar import littles_mcar_test
+from morie.fn.mcar import littles_mcar_test
 
 
 class TestLittlesMCARTest:

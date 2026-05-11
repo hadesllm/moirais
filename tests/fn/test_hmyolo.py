@@ -1,7 +1,7 @@
 """Tests for hmyolo.geron_yolo."""
 import numpy as np
 import pytest
-from moirais.fn.hmyolo import geron_yolo
+from morie.fn.hmyolo import geron_yolo
 
 
 def test_hmyolo_basic():

@@ -1,7 +1,7 @@
 """Tests for ksr022.kosorok_ch1_multiplicative_intensity."""
 import numpy as np
 import pytest
-from moirais.fn.ksr022 import kosorok_ch1_multiplicative_intensity
+from morie.fn.ksr022 import kosorok_ch1_multiplicative_intensity
 
 
 def test_ksr022_basic():

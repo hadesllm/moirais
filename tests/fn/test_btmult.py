@@ -1,7 +1,7 @@
 """Tests for btmult.boot_multinomial_weights."""
 import numpy as np
 import pytest
-from moirais.fn.btmult import boot_multinomial_weights
+from morie.fn.btmult import boot_multinomial_weights
 
 
 def test_btmult_basic():

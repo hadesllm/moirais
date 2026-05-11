@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.eta — alias for eta-squared."""
-from moirais.fn.eta import eta
+"""Tests for morie.fn.eta — alias for eta-squared."""
+from morie.fn.eta import eta
 
 
 def test_eta_is_callable():
@@ -9,5 +9,5 @@ def test_eta_is_callable():
 
 
 def test_eta_same_as_eta2():
-    from moirais.fn.eta2 import eta_squared
+    from morie.fn.eta2 import eta_squared
     assert eta(10.0, 3, 100) == eta_squared(10.0, 3, 100)

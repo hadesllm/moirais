@@ -1,7 +1,7 @@
 """Tests for expvar.exponential_variogram_model."""
 import numpy as np
 import pytest
-from moirais.fn.expvar import exponential_variogram_model
+from morie.fn.expvar import exponential_variogram_model
 
 
 def test_expvar_basic():

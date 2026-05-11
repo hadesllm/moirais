@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bambn -- burn-in trimming."""
+"""Tests for morie.fn.bambn -- burn-in trimming."""
 import numpy as np
-from moirais.fn.bambn import bayesian_burnin_trim, bambn
+from morie.fn.bambn import bayesian_burnin_trim, bambn
 
 
 def test_alias():

@@ -1,7 +1,7 @@
 """Tests for rnkbs.rank_based_test."""
 import numpy as np
 import pytest
-from moirais.fn.rnkbs import rank_based_test
+from morie.fn.rnkbs import rank_based_test
 
 
 def test_rnkbs_basic():

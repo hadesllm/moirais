@@ -1,7 +1,7 @@
 """Tests for mhatf.multi_head_attention_full."""
 import numpy as np
 import pytest
-from moirais.fn.mhatf import multi_head_attention_full
+from morie.fn.mhatf import multi_head_attention_full
 
 
 def test_mhatf_basic():

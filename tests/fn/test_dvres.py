@@ -1,7 +1,7 @@
 """Tests for dvres.deviance_residual_cox."""
 import numpy as np
 import pytest
-from moirais.fn.dvres import deviance_residual_cox
+from morie.fn.dvres import deviance_residual_cox
 
 
 def test_dvres_basic():

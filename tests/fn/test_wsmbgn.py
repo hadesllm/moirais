@@ -1,7 +1,7 @@
 """Tests for wsmbgn.wasserman_bagging."""
 import numpy as np
 import pytest
-from moirais.fn.wsmbgn import wasserman_bagging
+from morie.fn.wsmbgn import wasserman_bagging
 
 
 def test_wsmbgn_basic():

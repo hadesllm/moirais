@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from moirais.causal import calculate_ipw_weights, compute_propensity_scores
+from morie.causal import calculate_ipw_weights, compute_propensity_scores
 
 def test_calculate_ipw_weights():
     # Setup mock data

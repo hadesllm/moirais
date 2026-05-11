@@ -1,7 +1,7 @@
 """Tests for spansm.schabenberger_anselin_local_moran."""
 import numpy as np
 import pytest
-from moirais.fn.spansm import schabenberger_anselin_local_moran
+from morie.fn.spansm import schabenberger_anselin_local_moran
 
 
 def test_spansm_basic():

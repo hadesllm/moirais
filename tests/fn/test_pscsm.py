@@ -1,7 +1,7 @@
 """Tests for pscsm.propensity_score_matching."""
 import numpy as np
 import pytest
-from moirais.fn.pscsm import propensity_score_matching
+from morie.fn.pscsm import propensity_score_matching
 
 
 def test_pscsm_basic():

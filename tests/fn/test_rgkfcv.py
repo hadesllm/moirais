@@ -1,7 +1,7 @@
 """Tests for rgkfcv.rangayyan_kfold_cv."""
 import numpy as np
 import pytest
-from moirais.fn.rgkfcv import rangayyan_kfold_cv
+from morie.fn.rgkfcv import rangayyan_kfold_cv
 
 
 def test_rgkfcv_basic():

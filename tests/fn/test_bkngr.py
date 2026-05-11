@@ -1,7 +1,7 @@
 """Tests for bkngr.burkov_ngram_mle."""
 import numpy as np
 import pytest
-from moirais.fn.bkngr import burkov_ngram_mle
+from morie.fn.bkngr import burkov_ngram_mle
 
 
 def test_bkngr_basic():

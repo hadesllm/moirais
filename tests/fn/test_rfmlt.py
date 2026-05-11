@@ -1,7 +1,7 @@
 """Tests for rfmlt.rf_multivariate."""
 import numpy as np
 import pytest
-from moirais.fn.rfmlt import rf_multivariate
+from morie.fn.rfmlt import rf_multivariate
 
 
 def test_rfmlt_basic():

@@ -1,7 +1,7 @@
 """Tests for gb_mnq.gibbons_marginal_quant."""
 import numpy as np
 import pytest
-from moirais.fn.gb_mnq import gibbons_marginal_quant
+from morie.fn.gb_mnq import gibbons_marginal_quant
 
 
 def test_gb_mnq_basic():

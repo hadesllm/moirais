@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tpstrn — crime trend."""
+"""Tests for morie.fn.tpstrn — crime trend."""
 
 import pytest
 import numpy as np
-from moirais.fn.tpstrn import tps_crime_trend
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.tpstrn import tps_crime_trend
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCrimeTrend:

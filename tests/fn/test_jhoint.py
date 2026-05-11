@@ -1,7 +1,7 @@
 """Tests for jhoint.johansen_trace."""
 import numpy as np
 import pytest
-from moirais.fn.jhoint import johansen_trace
+from morie.fn.jhoint import johansen_trace
 
 
 def test_jhoint_basic():

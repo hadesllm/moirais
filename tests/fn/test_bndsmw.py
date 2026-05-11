@@ -1,7 +1,7 @@
 """Tests for bndsmw.bound_simul_weights."""
 import numpy as np
 import pytest
-from moirais.fn.bndsmw import bound_simul_weights
+from morie.fn.bndsmw import bound_simul_weights
 
 
 def test_bndsmw_basic():

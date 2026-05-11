@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gcomp — G-computation time-varying."""
+"""Tests for morie.fn.gcomp — G-computation time-varying."""
 import numpy as np
 import pytest
-from moirais.fn.gcomp import gcomp
+from morie.fn.gcomp import gcomp
 
 
 @pytest.fixture()
@@ -52,5 +52,5 @@ def test_single_timepoint():
 
 
 def test_cheatsheet():
-    from moirais.fn.gcomp import cheatsheet
+    from morie.fn.gcomp import cheatsheet
     assert len(cheatsheet()) > 0

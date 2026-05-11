@@ -1,7 +1,7 @@
 """Tests for vilbrt.vilbert_two_stream."""
 import numpy as np
 import pytest
-from moirais.fn.vilbrt import vilbert_two_stream
+from morie.fn.vilbrt import vilbert_two_stream
 
 
 def test_vilbrt_basic():

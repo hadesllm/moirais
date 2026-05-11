@@ -1,7 +1,7 @@
 """Tests for chgcus.changepoint_cusum."""
 import numpy as np
 import pytest
-from moirais.fn.chgcus import changepoint_cusum
+from morie.fn.chgcus import changepoint_cusum
 
 
 def test_chgcus_basic():

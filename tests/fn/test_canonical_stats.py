@@ -1,6 +1,6 @@
 """Tests for the 14 canonical stat callables wired in Phase 4 follow-on
 (2026-05-06). These cover concepts identified in the 27,467-equation
-catalog as having textbook evidence but no existing moirais.fn entry.
+catalog as having textbook evidence but no existing morie.fn entry.
 """
 
 from __future__ import annotations
@@ -8,7 +8,7 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from moirais.fn import (
+from morie.fn import (
     akike, bayic, covar, iqrng, ksonebs, kurt, kwallis, mad, manwhi,
     odds, relrsk, shapir, skew, wilcoxn,
 )

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.apc -- age-period-cohort decomposition."""
+"""Tests for morie.fn.apc -- age-period-cohort decomposition."""
 
 import numpy as np
 import pytest
-from moirais.fn.apc import age_period_cohort
+from morie.fn.apc import age_period_cohort
 
 
 class TestAPC:

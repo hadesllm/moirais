@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.fdr -- Benjamini-Hochberg FDR."""
+"""Tests for morie.fn.fdr -- Benjamini-Hochberg FDR."""
 
 import pytest
-from moirais.fn.fdr import benjamini_hochberg
+from morie.fn.fdr import benjamini_hochberg
 
 
 class TestBenjaminiHochberg:

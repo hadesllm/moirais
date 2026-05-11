@@ -1,7 +1,7 @@
 """Tests for bnscnf.bound_confidence_set."""
 import numpy as np
 import pytest
-from moirais.fn.bnscnf import bound_confidence_set
+from morie.fn.bnscnf import bound_confidence_set
 
 
 def test_bnscnf_basic():

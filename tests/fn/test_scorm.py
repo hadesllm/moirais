@@ -1,7 +1,7 @@
 """Test covariance_matrix (scorm)."""
 import numpy as np
-from moirais.fn.scorm import covariance_matrix, scorm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.scorm import covariance_matrix, scorm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCovarianceMatrix:

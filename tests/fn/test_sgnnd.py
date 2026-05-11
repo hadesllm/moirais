@@ -1,6 +1,6 @@
 """Tests for nearest-neighbor distances."""
 import numpy as np
-from moirais.fn.sgnnd import sgnnd
+from morie.fn.sgnnd import sgnnd
 
 
 def test_sgnnd_smoke():
@@ -14,7 +14,7 @@ def test_sgnnd_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgnnd import cheatsheet
+    from morie.fn.sgnnd import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

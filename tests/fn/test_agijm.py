@@ -1,7 +1,7 @@
 """Test agijm."""
 import numpy as np
 import pytest
-from moirais.fn.agijm import agijm
+from morie.fn.agijm import agijm
 
 
 def test_agijm_basic():

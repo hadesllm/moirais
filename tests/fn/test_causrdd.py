@@ -1,7 +1,7 @@
 """Tests for causrdd.causal_rdd_local_lin."""
 import numpy as np
 import pytest
-from moirais.fn.causrdd import causal_rdd_local_lin
+from morie.fn.causrdd import causal_rdd_local_lin
 
 
 def test_causrdd_basic():

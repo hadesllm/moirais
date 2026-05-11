@@ -1,7 +1,7 @@
 """Tests for diffS.symbolic_diff."""
 import numpy as np
 import pytest
-from moirais.fn.diffS import symbolic_diff
+from morie.fn.diffS import symbolic_diff
 
 
 def test_diffS_basic():

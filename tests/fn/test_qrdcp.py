@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.qrdcp -- QR decomposition."""
+"""Tests for morie.fn.qrdcp -- QR decomposition."""
 
 import numpy as np
-from moirais.fn.qrdcp import qr_decomposition, qrdcp
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.qrdcp import qr_decomposition, qrdcp
+from morie.fn._containers import DescriptiveResult
 
 
 class TestQrdcp:

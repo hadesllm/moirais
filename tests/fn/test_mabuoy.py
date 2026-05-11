@@ -1,7 +1,7 @@
 """Test mabuoy."""
 import numpy as np
 import pytest
-from moirais.fn.mabuoy import mabuoy
+from morie.fn.mabuoy import mabuoy
 
 
 def test_mabuoy_basic():

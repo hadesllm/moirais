@@ -1,7 +1,7 @@
 """Tests for eslknn.esl_knn."""
 import numpy as np
 import pytest
-from moirais.fn.eslknn import esl_knn
+from morie.fn.eslknn import esl_knn
 
 
 def test_eslknn_basic():

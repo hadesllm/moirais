@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.pstpc -- posterior predictive check."""
+"""Tests for morie.fn.pstpc -- posterior predictive check."""
 import numpy as np
-from moirais.fn.pstpc import posterior_predictive_check, pstpc
+from morie.fn.pstpc import posterior_predictive_check, pstpc
 
 
 def test_alias():

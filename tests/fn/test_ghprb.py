@@ -1,7 +1,7 @@
 """Test ghprb."""
 import numpy as np
 import pytest
-from moirais.fn.ghprb import ghprb
+from morie.fn.ghprb import ghprb
 
 
 def test_ghprb_basic():

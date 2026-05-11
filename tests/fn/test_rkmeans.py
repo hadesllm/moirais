@@ -1,7 +1,7 @@
 """Tests for rkmeans.trimmed_kmeans."""
 import numpy as np
 import pytest
-from moirais.fn.rkmeans import trimmed_kmeans
+from morie.fn.rkmeans import trimmed_kmeans
 
 
 def test_rkmeans_basic():

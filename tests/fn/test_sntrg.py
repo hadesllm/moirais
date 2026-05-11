@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sntrg — sentence by region."""
+"""Tests for morie.fn.sntrg — sentence by region."""
 
 import pandas as pd
-from moirais.fn.sntrg import sentence_by_region, sntrg
+from morie.fn.sntrg import sentence_by_region, sntrg
 
 
 class TestSentenceByRegion:

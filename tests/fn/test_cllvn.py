@@ -1,7 +1,7 @@
 """Test cllvn."""
 import numpy as np
 import pytest
-from moirais.fn.cllvn import cllvn
+from morie.fn.cllvn import cllvn
 
 
 def test_cllvn_basic():

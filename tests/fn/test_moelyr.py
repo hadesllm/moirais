@@ -1,7 +1,7 @@
 """Tests for moelyr.moe_layer."""
 import numpy as np
 import pytest
-from moirais.fn.moelyr import moe_layer
+from morie.fn.moelyr import moe_layer
 
 
 def test_moelyr_basic():

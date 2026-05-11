@@ -1,4 +1,4 @@
-"""Tests for moirais.fn.cconn — SQLite cache connect."""
+"""Tests for morie.fn.cconn — SQLite cache connect."""
 
 import sqlite3
 import tempfile
@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from moirais.fn.cconn import cconn, cache_connect
+from morie.fn.cconn import cconn, cache_connect
 
 
 def test_alias_is_same_function():
@@ -25,12 +25,12 @@ def test_returns_connection(tmp_path):
 
 
 def test_creates_metadata_table(tmp_path):
-    """cache_connect creates the _moirais_metadata table."""
+    """cache_connect creates the _morie_metadata table."""
     db = tmp_path / "test_cache.db"
     conn = cconn(db)
     try:
         tables = conn.execute(
-            "SELECT name FROM sqlite_master WHERE type='table' AND name='_moirais_metadata'"
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='_morie_metadata'"
         ).fetchone()
         assert tables is not None
     finally:

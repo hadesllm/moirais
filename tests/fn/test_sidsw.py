@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sidsw -- impact force modeling."""
+"""Tests for morie.fn.sidsw -- impact force modeling."""
 
-from moirais.fn.sidsw import impact_force, sidsw
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sidsw import impact_force, sidsw
+from morie.fn._containers import DescriptiveResult
 import pytest
 
 

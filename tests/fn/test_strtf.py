@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.strtf -- Stratified Cox model."""
+"""Tests for morie.fn.strtf -- Stratified Cox model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.strtf import strtf
+from morie.fn.strtf import strtf
 
 
 @pytest.fixture()
@@ -41,5 +41,5 @@ def test_n_strata(strat_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.strtf import cheatsheet
+    from morie.fn.strtf import cheatsheet
     assert "stratified" in cheatsheet().lower()

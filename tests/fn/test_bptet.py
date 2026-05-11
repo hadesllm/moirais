@@ -1,6 +1,6 @@
 """Tests for bowman_shenton_test."""
 import numpy as np, pytest
-from moirais.fn.bptet import bowman_shenton_test
+from morie.fn.bptet import bowman_shenton_test
 
 
 class TestBowmanShenton:

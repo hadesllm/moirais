@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.feat -- Permutation feature importance."""
+"""Tests for morie.fn.feat -- Permutation feature importance."""
 
 import numpy as np
-from moirais.fn.feat import feature_importance
+from morie.fn.feat import feature_importance
 
 
 class TestFeatureImportance:

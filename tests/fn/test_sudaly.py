@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sudaly -- substance DALY."""
+"""Tests for morie.fn.sudaly -- substance DALY."""
 
 import pytest
-from moirais.fn.sudaly import substance_daly
+from morie.fn.sudaly import substance_daly
 
 
 class TestSubstanceDaly:

@@ -1,7 +1,7 @@
 """Tests for ctde.controlled_direct_effect."""
 import numpy as np
 import pytest
-from moirais.fn.ctde import controlled_direct_effect
+from morie.fn.ctde import controlled_direct_effect
 
 
 def test_ctde_basic():

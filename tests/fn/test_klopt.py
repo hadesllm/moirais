@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.klopt — KL divergence optimization."""
+"""Tests for morie.fn.klopt — KL divergence optimization."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.klopt import klopt
+from morie.fn.klopt import klopt
 
 
 class TestKlopt:

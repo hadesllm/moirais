@@ -1,7 +1,7 @@
 """Tests for ngomtx.next_generation_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.ngomtx import next_generation_matrix
+from morie.fn.ngomtx import next_generation_matrix
 
 
 def test_ngomtx_basic():

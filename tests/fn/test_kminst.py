@@ -1,7 +1,7 @@
 """Tests for kminst.kamath_instruction_tuning_loss."""
 import numpy as np
 import pytest
-from moirais.fn.kminst import kamath_instruction_tuning_loss
+from morie.fn.kminst import kamath_instruction_tuning_loss
 
 
 def test_kminst_basic():

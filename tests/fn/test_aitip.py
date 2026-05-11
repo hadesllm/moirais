@@ -1,7 +1,7 @@
 """Tests for aitip.aitchison_inner_product."""
 import numpy as np
 import pytest
-from moirais.fn.aitip import aitchison_inner_product
+from morie.fn.aitip import aitchison_inner_product
 
 
 def test_aitip_basic():

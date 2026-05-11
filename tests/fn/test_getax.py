@@ -1,7 +1,7 @@
 """Test getax."""
 import numpy as np
 import pytest
-from moirais.fn.getax import getax
+from morie.fn.getax import getax
 
 
 def test_getax_basic():

@@ -1,7 +1,7 @@
 """Tests for grbic.geron_bic_gmm."""
 import numpy as np
 import pytest
-from moirais.fn.grbic import geron_bic_gmm
+from morie.fn.grbic import geron_bic_gmm
 
 
 def test_grbic_basic():

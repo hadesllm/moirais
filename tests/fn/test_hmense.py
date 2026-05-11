@@ -1,7 +1,7 @@
 """Tests for hmense.geron_ensemble_eval."""
 import numpy as np
 import pytest
-from moirais.fn.hmense import geron_ensemble_eval
+from morie.fn.hmense import geron_ensemble_eval
 
 
 def test_hmense_basic():

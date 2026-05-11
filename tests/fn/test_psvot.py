@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.psvot."""
+"""Tests for morie.fn.psvot."""
 
 import numpy as np
 import pytest
-from moirais.fn.psvot import psvot
+from morie.fn.psvot import psvot
 
 
 class TestPsvot:

@@ -1,7 +1,7 @@
 """Test sopot."""
 import numpy as np
 import pytest
-from moirais.fn.sopot import sopot
+from morie.fn.sopot import sopot
 
 
 def test_sopot_basic():

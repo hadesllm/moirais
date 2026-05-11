@@ -1,7 +1,7 @@
 """Tests for paligi.parametric_alibi."""
 import numpy as np
 import pytest
-from moirais.fn.paligi import parametric_alibi
+from morie.fn.paligi import parametric_alibi
 
 
 def test_paligi_basic():

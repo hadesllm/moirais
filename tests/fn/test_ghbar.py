@@ -1,7 +1,7 @@
 """Test ghbar."""
 import numpy as np
 import pytest
-from moirais.fn.ghbar import ghbar
+from morie.fn.ghbar import ghbar
 
 
 def test_ghbar_basic():

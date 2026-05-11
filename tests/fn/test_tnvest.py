@@ -1,7 +1,7 @@
 """Tests for tnvest._test_negative_design."""
 import numpy as np
 import pytest
-from moirais.fn.tnvest import test_negative_design as _test_negative_design
+from morie.fn.tnvest import test_negative_design as _test_negative_design
 
 
 def test_tnvest_basic():

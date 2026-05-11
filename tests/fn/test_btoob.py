@@ -1,7 +1,7 @@
 """Tests for btoob.boot_oob_error."""
 import numpy as np
 import pytest
-from moirais.fn.btoob import boot_oob_error
+from morie.fn.btoob import boot_oob_error
 
 
 def test_btoob_basic():

@@ -1,7 +1,7 @@
 """Test svdsi."""
 import numpy as np
 import pytest
-from moirais.fn.svdsi import svdsi
+from morie.fn.svdsi import svdsi
 
 
 def test_svdsi_basic():

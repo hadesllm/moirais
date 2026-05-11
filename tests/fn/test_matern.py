@@ -1,7 +1,7 @@
 """Tests for matern.matern_cluster."""
 import numpy as np
 import pytest
-from moirais.fn.matern import matern_cluster
+from morie.fn.matern import matern_cluster
 
 
 def test_matern_basic():

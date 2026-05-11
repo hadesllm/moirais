@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ksgnr — kernel-smoothed sign test."""
+"""Tests for morie.fn.ksgnr — kernel-smoothed sign test."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ksgnr import ksgnr
+from morie.fn.ksgnr import ksgnr
 
 
 class TestKsgnr:

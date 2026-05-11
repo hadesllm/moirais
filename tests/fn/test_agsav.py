@@ -1,7 +1,7 @@
 """Test agsav."""
 import numpy as np
 import pytest
-from moirais.fn.agsav import agsav
+from morie.fn.agsav import agsav
 
 
 def test_agsav_basic():

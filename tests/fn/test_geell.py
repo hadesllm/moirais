@@ -1,7 +1,7 @@
 """Test geell."""
 import numpy as np
 import pytest
-from moirais.fn.geell import geell
+from morie.fn.geell import geell
 
 
 def test_geell_basic():

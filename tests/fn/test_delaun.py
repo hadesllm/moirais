@@ -1,7 +1,7 @@
 """Test delaun."""
 import numpy as np
 import pytest
-from moirais.fn.delaun import delaun
+from morie.fn.delaun import delaun
 
 
 def test_delaun_basic():

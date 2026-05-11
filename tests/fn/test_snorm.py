@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.snorm -- subscale normative tables."""
+"""Tests for morie.fn.snorm -- subscale normative tables."""
 
 import pandas as pd
-from moirais.fn.snorm import subscale_norms
+from morie.fn.snorm import subscale_norms
 
 
 class TestSubscaleNorms:

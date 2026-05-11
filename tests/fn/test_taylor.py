@@ -1,7 +1,7 @@
 """Tests for taylor.taylor_linearization."""
 import numpy as np
 import pytest
-from moirais.fn.taylor import taylor_linearization
+from morie.fn.taylor import taylor_linearization
 
 
 def test_taylor_basic():

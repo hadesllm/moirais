@@ -1,7 +1,7 @@
 """Tests for rgnl.rangayyan_nonlinear_features."""
 import numpy as np
 import pytest
-from moirais.fn.rgnl import rangayyan_nonlinear_features
+from morie.fn.rgnl import rangayyan_nonlinear_features
 
 
 def test_rgnl_basic():

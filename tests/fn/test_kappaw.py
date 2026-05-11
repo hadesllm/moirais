@@ -1,7 +1,7 @@
 """Tests for kappaw.weighted_kappa."""
 import numpy as np
 import pytest
-from moirais.fn.kappaw import weighted_kappa
+from morie.fn.kappaw import weighted_kappa
 
 
 def test_kappaw_basic():

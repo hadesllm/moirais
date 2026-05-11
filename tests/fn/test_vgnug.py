@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vgnug -- Nugget effect estimation"""
+"""Tests for morie.fn.vgnug -- Nugget effect estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vgnug import nugget_est
+from morie.fn.vgnug import nugget_est
 
 
 class TestNuggetEst:

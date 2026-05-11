@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.fctvt — factor convert levels."""
-from moirais.fn.fctvt import fctvt
+"""Tests for morie.fn.fctvt — factor convert levels."""
+from morie.fn.fctvt import fctvt
 
 
 def test_fctvt_smoke():

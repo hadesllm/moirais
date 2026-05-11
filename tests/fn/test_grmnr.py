@@ -1,7 +1,7 @@
 """Tests for grmnr.geron_max_norm_regularization."""
 import numpy as np
 import pytest
-from moirais.fn.grmnr import geron_max_norm_regularization
+from morie.fn.grmnr import geron_max_norm_regularization
 
 
 def test_grmnr_basic():

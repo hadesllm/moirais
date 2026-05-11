@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.hadpr -- Hadamard product."""
+"""Tests for morie.fn.hadpr -- Hadamard product."""
 
 import numpy as np
 import pytest
-from moirais.fn.hadpr import hadamard_product, hadpr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.hadpr import hadamard_product, hadpr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestHadpr:

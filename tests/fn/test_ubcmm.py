@@ -1,7 +1,7 @@
 """Test ubcmm."""
 import numpy as np
 import pytest
-from moirais.fn.ubcmm import ubcmm
+from morie.fn.ubcmm import ubcmm
 
 
 def test_ubcmm_basic():

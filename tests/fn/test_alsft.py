@@ -1,7 +1,7 @@
 """Tests for alsft.alammar_setfit_twostep."""
 import numpy as np
 import pytest
-from moirais.fn.alsft import alammar_setfit_twostep
+from morie.fn.alsft import alammar_setfit_twostep
 
 
 def test_alsft_basic():

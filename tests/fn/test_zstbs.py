@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zstbs -- Turning bands simulation"""
+"""Tests for morie.fn.zstbs -- Turning bands simulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zstbs import turning_bands
+from morie.fn.zstbs import turning_bands
 
 
 class TestTurningBands:

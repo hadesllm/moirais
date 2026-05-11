@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cgd — conjugate gradient descent."""
+"""Tests for morie.fn.cgd — conjugate gradient descent."""
 import numpy as np
 import pytest
-from moirais.fn.cgd import conjugate_gradient
+from morie.fn.cgd import conjugate_gradient
 
 
 class TestConjugateGradient:

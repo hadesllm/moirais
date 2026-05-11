@@ -1,7 +1,7 @@
 """Tests for hmneq.geron_normal_equation."""
 import numpy as np
 import pytest
-from moirais.fn.hmneq import geron_normal_equation
+from morie.fn.hmneq import geron_normal_equation
 
 
 def test_hmneq_basic():

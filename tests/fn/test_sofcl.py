@@ -1,7 +1,7 @@
 """Test sofcl."""
 import numpy as np
 import pytest
-from moirais.fn.sofcl import sofcl
+from morie.fn.sofcl import sofcl
 
 
 def test_sofcl_basic():

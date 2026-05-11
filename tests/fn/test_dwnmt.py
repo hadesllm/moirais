@@ -1,6 +1,6 @@
 """Test dwnmt."""
 import numpy as np
-from moirais.fn.dwnmt import dw_nominate_score
+from morie.fn.dwnmt import dw_nominate_score
 
 
 def test_dwnmt_basic():

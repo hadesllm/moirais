@@ -1,7 +1,7 @@
 """Tests for eslprt.esl_partial_dependence."""
 import numpy as np
 import pytest
-from moirais.fn.eslprt import esl_partial_dependence
+from morie.fn.eslprt import esl_partial_dependence
 
 
 def test_eslprt_basic():

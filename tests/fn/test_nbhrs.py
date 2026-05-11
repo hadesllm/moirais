@@ -1,7 +1,7 @@
 """Test nbhrs."""
 import numpy as np
 import pytest
-from moirais.fn.nbhrs import nbhrs
+from morie.fn.nbhrs import nbhrs
 
 
 def test_nbhrs_basic():

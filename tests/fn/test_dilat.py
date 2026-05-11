@@ -1,7 +1,7 @@
 """Test dilat."""
 import numpy as np
 import pytest
-from moirais.fn.dilat import dilat
+from morie.fn.dilat import dilat
 
 
 def test_dilat_basic():

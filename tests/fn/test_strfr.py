@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.strfr -- Luminosity function."""
+"""Tests for morie.fn.strfr -- Luminosity function."""
 
 import numpy as np
-from moirais.fn.strfr import luminosity_function, strfr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.strfr import luminosity_function, strfr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestStrfr:

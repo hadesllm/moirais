@@ -1,7 +1,7 @@
 """Tests for didtwfe.twoway_fixed_effects_did."""
 import numpy as np
 import pytest
-from moirais.fn.didtwfe import twoway_fixed_effects_did
+from morie.fn.didtwfe import twoway_fixed_effects_did
 
 
 def test_didtwfe_basic():

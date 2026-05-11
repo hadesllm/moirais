@@ -1,7 +1,7 @@
 """Tests for hmt5.geron_t5."""
 import numpy as np
 import pytest
-from moirais.fn.hmt5 import geron_t5
+from morie.fn.hmt5 import geron_t5
 
 
 def test_hmt5_basic():

@@ -1,7 +1,7 @@
 """Test uniona."""
 import numpy as np
 import pytest
-from moirais.fn.uniona import uniona
+from morie.fn.uniona import uniona
 
 
 def test_uniona_basic():

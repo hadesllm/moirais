@@ -1,7 +1,7 @@
 """Tests for hmnmt.geron_encoder_decoder_nmt."""
 import numpy as np
 import pytest
-from moirais.fn.hmnmt import geron_encoder_decoder_nmt
+from morie.fn.hmnmt import geron_encoder_decoder_nmt
 
 
 def test_hmnmt_basic():

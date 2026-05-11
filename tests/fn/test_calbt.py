@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.calbt — Calibration (Platt + isotonic)."""
+"""Tests for morie.fn.calbt — Calibration (Platt + isotonic)."""
 import numpy as np
 import pytest
-from moirais.fn.calbt import calbt
+from morie.fn.calbt import calbt
 
 
 @pytest.fixture()
@@ -57,5 +57,5 @@ def test_method_label(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.calbt import cheatsheet
+    from morie.fn.calbt import cheatsheet
     assert len(cheatsheet()) > 0

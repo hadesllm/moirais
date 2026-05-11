@@ -1,7 +1,7 @@
 """Tests for grovo.geron_one_vs_one."""
 import numpy as np
 import pytest
-from moirais.fn.grovo import geron_one_vs_one
+from morie.fn.grovo import geron_one_vs_one
 
 
 def test_grovo_basic():

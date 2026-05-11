@@ -1,7 +1,7 @@
 """Tests for shrpd.shepard_diagram."""
 import numpy as np
 import pytest
-from moirais.fn.shrpd import shepard_diagram
+from morie.fn.shrpd import shepard_diagram
 
 
 def test_shrpd_basic():

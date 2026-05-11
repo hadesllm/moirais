@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.nblam -- cloud mass function."""
+"""Tests for morie.fn.nblam -- cloud mass function."""
 
 import numpy as np
-from moirais.fn.nblam import cloud_mass_function, nblam
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.nblam import cloud_mass_function, nblam
+from morie.fn._containers import DescriptiveResult
 
 
 class TestNblam:

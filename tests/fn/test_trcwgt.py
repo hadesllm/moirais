@@ -1,7 +1,7 @@
 """Tests for trcwgt.truncated_combined_weights."""
 import numpy as np
 import pytest
-from moirais.fn.trcwgt import truncated_combined_weights
+from morie.fn.trcwgt import truncated_combined_weights
 
 
 def test_trcwgt_basic():

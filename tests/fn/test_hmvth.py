@@ -1,7 +1,7 @@
 """Tests for hmvth.geron_voting_hard."""
 import numpy as np
 import pytest
-from moirais.fn.hmvth import geron_voting_hard
+from morie.fn.hmvth import geron_voting_hard
 
 
 def test_hmvth_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.smvot -- simulate spatial voting."""
+"""Tests for morie.fn.smvot -- simulate spatial voting."""
 import numpy as np
-from moirais.fn.smvot import simulate_voting_spatial, smvot
+from morie.fn.smvot import simulate_voting_spatial, smvot
 
 
 def test_alias():

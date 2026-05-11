@@ -1,7 +1,7 @@
 """Tests for idwani."""
 import numpy as np
 import pytest
-from moirais.fn.idwani import idwani
+from morie.fn.idwani import idwani
 
 
 def test_idwani_basic():
@@ -27,5 +27,5 @@ def test_idwani_no_data():
 
 
 def test_idwani_alias():
-    from moirais.fn.idwani import idwani
+    from morie.fn.idwani import idwani
     assert idwani is idwani

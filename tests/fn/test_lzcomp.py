@@ -1,7 +1,7 @@
 """Tests for lzcomp.lempel_ziv_complexity."""
 import numpy as np
 import pytest
-from moirais.fn.lzcomp import lempel_ziv_complexity
+from morie.fn.lzcomp import lempel_ziv_complexity
 
 
 def test_lzcomp_basic():

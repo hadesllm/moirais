@@ -1,7 +1,7 @@
 """Tests for ksr17.kosorok_counting_process."""
 import numpy as np
 import pytest
-from moirais.fn.ksr17 import kosorok_counting_process
+from morie.fn.ksr17 import kosorok_counting_process
 
 
 def test_ksr17_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.heicer -- ICER."""
+"""Tests for morie.fn.heicer -- ICER."""
 
 import pytest
-from moirais.fn.heicer import incremental_cer
+from morie.fn.heicer import incremental_cer
 
 
 class TestICER:

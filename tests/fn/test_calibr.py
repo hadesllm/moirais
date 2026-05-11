@@ -1,7 +1,7 @@
 """Tests for calibr.calibration_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.calibr import calibration_estimator
+from morie.fn.calibr import calibration_estimator
 
 
 def test_calibr_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.cvbnd — cross-validation risk bound."""
+"""Tests for morie.fn.cvbnd — cross-validation risk bound."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.cvbnd import cvbnd
+from morie.fn.cvbnd import cvbnd
 
 
 def test_basic_output():

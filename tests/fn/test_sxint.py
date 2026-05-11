@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sxint -- GxSex interaction test."""
+"""Tests for morie.fn.sxint -- GxSex interaction test."""
 
 import numpy as np
 import pytest
-from moirais.fn.sxint import sxint
+from morie.fn.sxint import sxint
 
 
 class TestSxint:

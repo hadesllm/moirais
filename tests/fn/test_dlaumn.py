@@ -1,7 +1,7 @@
 """Test dlaumn."""
 import numpy as np
 import pytest
-from moirais.fn.dlaumn import dlaumn
+from morie.fn.dlaumn import dlaumn
 
 
 def test_dlaumn_basic():

@@ -1,7 +1,7 @@
 """Tests for rng084.rangayyan_ch3_observed_signal_kth_realization."""
 import numpy as np
 import pytest
-from moirais.fn.rng084 import rangayyan_ch3_observed_signal_kth_realization
+from morie.fn.rng084 import rangayyan_ch3_observed_signal_kth_realization
 
 
 def test_rng084_basic():

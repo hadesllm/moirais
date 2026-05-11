@@ -1,7 +1,7 @@
 """Tests for ranova.random_effects_anova_decomp."""
 import numpy as np
 import pytest
-from moirais.fn.ranova import random_effects_anova_decomp
+from morie.fn.ranova import random_effects_anova_decomp
 
 
 def test_ranova_basic():

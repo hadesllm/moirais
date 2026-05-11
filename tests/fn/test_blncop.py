@@ -1,7 +1,7 @@
 """Tests for blncop.blomqvists_beta_copula."""
 import numpy as np
 import pytest
-from moirais.fn.blncop import blomqvists_beta_copula
+from morie.fn.blncop import blomqvists_beta_copula
 
 
 def test_blncop_basic():

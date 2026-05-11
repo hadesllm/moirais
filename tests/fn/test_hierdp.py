@@ -1,7 +1,7 @@
 """Tests for hierdp.hierarchical_dp_density."""
 import numpy as np
 import pytest
-from moirais.fn.hierdp import hierarchical_dp_density
+from morie.fn.hierdp import hierarchical_dp_density
 
 
 def test_hierdp_basic():

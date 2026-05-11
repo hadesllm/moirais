@@ -1,7 +1,7 @@
 """Tests for arbrg.py - AR Burg estimation."""
 import numpy as np
 import pytest
-from moirais.fn.arbrg import ar_burg_fn, arbrg
+from morie.fn.arbrg import ar_burg_fn, arbrg
 
 
 def test_ar_burg_returns_descriptive_result():

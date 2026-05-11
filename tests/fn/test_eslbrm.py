@@ -1,7 +1,7 @@
 """Tests for eslbrm.esl_boltzmann."""
 import numpy as np
 import pytest
-from moirais.fn.eslbrm import esl_boltzmann
+from morie.fn.eslbrm import esl_boltzmann
 
 
 def test_eslbrm_basic():

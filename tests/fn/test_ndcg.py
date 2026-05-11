@@ -1,7 +1,7 @@
 """Tests for ndcg.ndcg."""
 import numpy as np
 import pytest
-from moirais.fn.ndcg import ndcg
+from morie.fn.ndcg import ndcg
 
 
 def test_ndcg_basic():

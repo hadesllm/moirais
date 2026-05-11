@@ -1,7 +1,7 @@
 """Tests for alfbnp.af3_protein_ligand."""
 import numpy as np
 import pytest
-from moirais.fn.alfbnp import af3_protein_ligand
+from morie.fn.alfbnp import af3_protein_ligand
 
 
 def test_alfbnp_basic():

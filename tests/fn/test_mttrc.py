@@ -1,7 +1,7 @@
 """Test mttrc."""
 import numpy as np
 import pytest
-from moirais.fn.mttrc import mttrc
+from morie.fn.mttrc import mttrc
 
 
 def test_mttrc_basic():

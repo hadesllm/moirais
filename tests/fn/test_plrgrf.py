@@ -1,7 +1,7 @@
 """Tests for plrgrf.partial_linear_grf."""
 import numpy as np
 import pytest
-from moirais.fn.plrgrf import partial_linear_grf
+from morie.fn.plrgrf import partial_linear_grf
 
 
 def test_plrgrf_basic():

@@ -1,7 +1,7 @@
 """Tests for otdom.ot_domain_adaptation."""
 import numpy as np
 import pytest
-from moirais.fn.otdom import ot_domain_adaptation
+from morie.fn.otdom import ot_domain_adaptation
 
 
 def test_otdom_basic():

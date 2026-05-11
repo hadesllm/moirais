@@ -1,7 +1,7 @@
 """Tests for tqrot.turboquant_rotation_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.tqrot import turboquant_rotation_matrix
+from morie.fn.tqrot import turboquant_rotation_matrix
 
 
 def test_tqrot_basic():

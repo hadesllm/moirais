@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cmprk — competing risks CIF."""
+"""Tests for morie.fn.cmprk — competing risks CIF."""
 import numpy as np
 import pytest
-from moirais.fn.cmprk import competing_risks
+from morie.fn.cmprk import competing_risks
 
 
 class TestCompetingRisks:

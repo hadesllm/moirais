@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.calib -- Calibration curve."""
+"""Tests for morie.fn.calib -- Calibration curve."""
 
 import numpy as np
 import pytest
-from moirais.fn.calib import calibration_curve
+from morie.fn.calib import calibration_curve
 
 
 class TestCalibrationCurve:

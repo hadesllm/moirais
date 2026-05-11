@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.rsprt -- respiratory rate estimation."""
+"""Tests for morie.fn.rsprt -- respiratory rate estimation."""
 
 import numpy as np
 import pytest
 
 pytest.importorskip("scipy")
 
-from moirais.fn.rsprt import rsprt
+from morie.fn.rsprt import rsprt
 
 
 class TestRspRt:

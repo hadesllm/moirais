@@ -1,7 +1,7 @@
 """Tests for aitzlk.compositional_zero_lrda."""
 import numpy as np
 import pytest
-from moirais.fn.aitzlk import compositional_zero_lrda
+from morie.fn.aitzlk import compositional_zero_lrda
 
 
 def test_aitzlk_basic():

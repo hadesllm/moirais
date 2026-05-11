@@ -1,7 +1,7 @@
 """Tests for idwopt."""
 import numpy as np
 import pytest
-from moirais.fn.idwopt import idwopt
+from morie.fn.idwopt import idwopt
 
 
 def test_idwopt_basic():
@@ -27,5 +27,5 @@ def test_idwopt_no_data():
 
 
 def test_idwopt_alias():
-    from moirais.fn.idwopt import idwopt
+    from morie.fn.idwopt import idwopt
     assert idwopt is idwopt

@@ -1,7 +1,7 @@
 """Tests for hmsymd.geron_symbolic_diff."""
 import numpy as np
 import pytest
-from moirais.fn.hmsymd import geron_symbolic_diff
+from morie.fn.hmsymd import geron_symbolic_diff
 
 
 def test_hmsymd_basic():

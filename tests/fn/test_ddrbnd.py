@@ -1,7 +1,7 @@
 """Tests for ddrbnd.deer_dr_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.ddrbnd import deer_dr_bounds
+from morie.fn.ddrbnd import deer_dr_bounds
 
 
 def test_ddrbnd_basic():

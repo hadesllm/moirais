@@ -1,7 +1,7 @@
 """Tests for rgsprep.rangayyan_sparse_rep."""
 import numpy as np
 import pytest
-from moirais.fn.rgsprep import rangayyan_sparse_rep
+from morie.fn.rgsprep import rangayyan_sparse_rep
 
 
 def test_rgsprep_basic():

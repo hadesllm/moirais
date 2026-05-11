@@ -1,7 +1,7 @@
 """Tests for ghntr.ghosal_neutral_right."""
 import numpy as np
 import pytest
-from moirais.fn.ghntr import ghosal_neutral_right
+from morie.fn.ghntr import ghosal_neutral_right
 
 
 def test_ghntr_basic():

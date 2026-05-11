@@ -1,7 +1,7 @@
 """Tests for gpdkl.deep_kernel_gp."""
 import numpy as np
 import pytest
-from moirais.fn.gpdkl import deep_kernel_gp
+from morie.fn.gpdkl import deep_kernel_gp
 
 
 def test_gpdkl_basic():

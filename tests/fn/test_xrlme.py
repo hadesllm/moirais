@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrlme -- LM test for spatial error"""
+"""Tests for morie.fn.xrlme -- LM test for spatial error"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrlme import lm_error
+from morie.fn.xrlme import lm_error
 
 
 class TestLmError:

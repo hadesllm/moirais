@@ -1,7 +1,7 @@
 """Tests for hmflmg.geron_flamingo."""
 import numpy as np
 import pytest
-from moirais.fn.hmflmg import geron_flamingo
+from morie.fn.hmflmg import geron_flamingo
 
 
 def test_hmflmg_basic():

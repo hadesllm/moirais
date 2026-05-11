@@ -1,7 +1,7 @@
 """Tests for pscli.pscl_ideal."""
 import numpy as np
 import pytest
-from moirais.fn.pscli import pscl_ideal
+from morie.fn.pscli import pscl_ideal
 
 
 def test_pscli_basic():

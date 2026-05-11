@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nwker — Nadaraya-Watson kernel regression."""
+"""Tests for morie.fn.nwker — Nadaraya-Watson kernel regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nwker import nwker
+from morie.fn.nwker import nwker
 
 
 @pytest.fixture()

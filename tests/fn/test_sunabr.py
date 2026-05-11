@@ -1,7 +1,7 @@
 """Tests for sunabr.sun_abraham_did."""
 import numpy as np
 import pytest
-from moirais.fn.sunabr import sun_abraham_did
+from morie.fn.sunabr import sun_abraham_did
 
 
 def test_sunabr_basic():

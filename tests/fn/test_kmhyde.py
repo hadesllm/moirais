@@ -1,7 +1,7 @@
 """Tests for kmhyde.kamath_hyde_hypothetical_doc."""
 import numpy as np
 import pytest
-from moirais.fn.kmhyde import kamath_hyde_hypothetical_doc
+from morie.fn.kmhyde import kamath_hyde_hypothetical_doc
 
 
 def test_kmhyde_basic():

@@ -1,7 +1,7 @@
 """Tests for hmfcn.geron_fcn."""
 import numpy as np
 import pytest
-from moirais.fn.hmfcn import geron_fcn
+from morie.fn.hmfcn import geron_fcn
 
 
 def test_hmfcn_basic():

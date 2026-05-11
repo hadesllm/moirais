@@ -1,7 +1,7 @@
 """Tests for volsabr.vol_sabr_implied."""
 import numpy as np
 import pytest
-from moirais.fn.volsabr import vol_sabr_implied
+from morie.fn.volsabr import vol_sabr_implied
 
 
 def test_volsabr_basic():

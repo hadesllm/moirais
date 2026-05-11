@@ -1,7 +1,7 @@
 """Tests for swintr.swin_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.swintr import swin_transformer
+from morie.fn.swintr import swin_transformer
 
 
 def test_swintr_basic():

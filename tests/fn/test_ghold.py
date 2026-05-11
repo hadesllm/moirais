@@ -1,7 +1,7 @@
 """Test ghold."""
 import numpy as np
 import pytest
-from moirais.fn.ghold import ghold
+from morie.fn.ghold import ghold
 
 
 def test_ghold_basic():

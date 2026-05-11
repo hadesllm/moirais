@@ -1,7 +1,7 @@
 """Tests for gb2313.gibbons_edf_joint_moment."""
 import numpy as np
 import pytest
-from moirais.fn.gb2313 import gibbons_edf_joint_moment
+from morie.fn.gb2313 import gibbons_edf_joint_moment
 
 
 def test_gb2313_basic():

@@ -1,7 +1,7 @@
 """Tests for mfird.mirt_factor_loading."""
 import numpy as np
 import pytest
-from moirais.fn.mfird import mirt_factor_loading
+from morie.fn.mfird import mirt_factor_loading
 
 
 def test_mfird_basic():

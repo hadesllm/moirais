@@ -1,7 +1,7 @@
 """Tests for hmdbd.geron_decision_boundary."""
 import numpy as np
 import pytest
-from moirais.fn.hmdbd import geron_decision_boundary
+from morie.fn.hmdbd import geron_decision_boundary
 
 
 def test_hmdbd_basic():

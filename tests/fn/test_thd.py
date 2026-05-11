@@ -1,7 +1,7 @@
 """Test thd_compute (thd)."""
 import numpy as np
-from moirais.fn.thd import thd_compute, thd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.thd import thd_compute, thd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestThd:

@@ -1,7 +1,7 @@
 """Tests for ppbnd.plasma_protein_binding."""
 import numpy as np
 import pytest
-from moirais.fn.ppbnd import plasma_protein_binding
+from morie.fn.ppbnd import plasma_protein_binding
 
 
 def test_ppbnd_basic():

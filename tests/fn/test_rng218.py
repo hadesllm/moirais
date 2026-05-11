@@ -1,7 +1,7 @@
 """Tests for rng218.rangayyan_ch4_cauchy_schwarz_vectors."""
 import numpy as np
 import pytest
-from moirais.fn.rng218 import rangayyan_ch4_cauchy_schwarz_vectors
+from morie.fn.rng218 import rangayyan_ch4_cauchy_schwarz_vectors
 
 
 def test_rng218_basic():

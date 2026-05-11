@@ -1,7 +1,7 @@
 """Tests for aitbal.aitchison_balance."""
 import numpy as np
 import pytest
-from moirais.fn.aitbal import aitchison_balance
+from morie.fn.aitbal import aitchison_balance
 
 
 def test_aitbal_basic():

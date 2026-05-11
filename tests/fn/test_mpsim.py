@@ -1,7 +1,7 @@
 """Test mpsim."""
 import numpy as np
 import pytest
-from moirais.fn.mpsim import mpsim
+from morie.fn.mpsim import mpsim
 
 
 def test_mpsim_basic():

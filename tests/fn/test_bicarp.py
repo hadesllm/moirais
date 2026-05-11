@@ -1,7 +1,7 @@
 """Tests for bicarp.bic_ar_order."""
 import numpy as np
 import pytest
-from moirais.fn.bicarp import bic_ar_order
+from morie.fn.bicarp import bic_ar_order
 
 
 def test_bicarp_basic():

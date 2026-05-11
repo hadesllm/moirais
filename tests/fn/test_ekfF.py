@@ -1,7 +1,7 @@
 """Tests for ekfF.extended_kalman."""
 import numpy as np
 import pytest
-from moirais.fn.ekfF import extended_kalman
+from morie.fn.ekfF import extended_kalman
 
 
 def test_ekfF_basic():

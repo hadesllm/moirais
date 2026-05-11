@@ -1,7 +1,7 @@
 """Tests for drwgs.dr_weighting_strategy."""
 import numpy as np
 import pytest
-from moirais.fn.drwgs import dr_weighting_strategy
+from morie.fn.drwgs import dr_weighting_strategy
 
 
 def test_drwgs_basic():

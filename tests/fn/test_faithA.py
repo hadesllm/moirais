@@ -1,7 +1,7 @@
 """Tests for faithA.faithfulness_assumption."""
 import numpy as np
 import pytest
-from moirais.fn.faithA import faithfulness_assumption
+from morie.fn.faithA import faithfulness_assumption
 
 
 def test_faithA_basic():

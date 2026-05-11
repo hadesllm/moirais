@@ -1,7 +1,7 @@
 """Tests for ffmFM.field_aware_fm."""
 import numpy as np
 import pytest
-from moirais.fn.ffmFM import field_aware_fm
+from morie.fn.ffmFM import field_aware_fm
 
 
 def test_ffmFM_basic():

@@ -1,7 +1,7 @@
 """Tests for glmmre."""
 import numpy as np
 import pytest
-from moirais.fn.glmmre import glmmre
+from morie.fn.glmmre import glmmre
 
 
 def test_glmmre_basic():
@@ -27,5 +27,5 @@ def test_glmmre_no_data():
 
 
 def test_glmmre_alias():
-    from moirais.fn.glmmre import glmmre
+    from morie.fn.glmmre import glmmre
     assert glmmre is glmmre

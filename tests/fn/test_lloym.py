@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lloym — Lloyd-Max optimal quantizer."""
+"""Tests for morie.fn.lloym — Lloyd-Max optimal quantizer."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lloym import lloyd_max
+from morie.fn.lloym import lloyd_max
 
 
 class TestLloydMax:

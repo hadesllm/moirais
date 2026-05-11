@@ -1,7 +1,7 @@
 """Tests for ecgdet — Pan-Tompkins QRS detector."""
 import numpy as np
-from moirais.fn.ecgdet import pan_tompkins
-from moirais.fn._containers import SignalResult
+from morie.fn.ecgdet import pan_tompkins
+from morie.fn._containers import SignalResult
 
 
 def test_ecgdet_basic(ecg_synthetic):

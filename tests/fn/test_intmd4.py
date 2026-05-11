@@ -1,7 +1,7 @@
 """Tests for intmd4.interaction_mediation_4way."""
 import numpy as np
 import pytest
-from moirais.fn.intmd4 import interaction_mediation_4way
+from morie.fn.intmd4 import interaction_mediation_4way
 
 
 def test_intmd4_basic():

@@ -1,7 +1,7 @@
 """Tests for plpol.plot_spatial."""
 import numpy as np
 import pytest
-from moirais.fn.plpol import plot_spatial
+from morie.fn.plpol import plot_spatial
 
 
 def test_plpol_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.irtva -- per-legislator IRT variance."""
+"""Tests for morie.fn.irtva -- per-legislator IRT variance."""
 import numpy as np
-from moirais.fn.irtva import irt_variance_legislator, irtva
+from morie.fn.irtva import irt_variance_legislator, irtva
 
 
 def test_alias():

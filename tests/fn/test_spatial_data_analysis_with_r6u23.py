@@ -1,7 +1,7 @@
 """Tests for spatial_data_analysis_with_r6u23.spatial_data_analysis_with_r_chapter_6_unnumbered_23."""
 import numpy as np
 import pytest
-from moirais.fn.spatial_data_analysis_with_r6u23 import spatial_data_analysis_with_r_chapter_6_unnumbered_23
+from morie.fn.spatial_data_analysis_with_r6u23 import spatial_data_analysis_with_r_chapter_6_unnumbered_23
 
 
 def test_spatial_data_analysis_with_r6u23_basic():

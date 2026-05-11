@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pldml — Partially linear DML."""
+"""Tests for morie.fn.pldml — Partially linear DML."""
 
 import numpy as np
 import pytest
-from moirais.fn.pldml import pldml
+from morie.fn.pldml import pldml
 
 
 def test_returns_dict():

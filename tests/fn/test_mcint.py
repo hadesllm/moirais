@@ -1,7 +1,7 @@
 """Tests for mcint."""
 import numpy as np
 import pytest
-from moirais.fn.mcint import mcint
+from morie.fn.mcint import mcint
 
 
 def test_mcint_basic():
@@ -27,5 +27,5 @@ def test_mcint_no_data():
 
 
 def test_mcint_alias():
-    from moirais.fn.mcint import mcint
+    from morie.fn.mcint import mcint
     assert mcint is mcint

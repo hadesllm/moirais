@@ -1,7 +1,7 @@
 """Tests for b202.burkov_lm_ch2_lm_next_token."""
 import numpy as np
 import pytest
-from moirais.fn.b202 import burkov_lm_ch2_lm_next_token
+from morie.fn.b202 import burkov_lm_ch2_lm_next_token
 
 
 def test_b202_basic():

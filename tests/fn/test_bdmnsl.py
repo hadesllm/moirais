@@ -1,7 +1,7 @@
 """Tests for bdmnsl.bound_monot_selection."""
 import numpy as np
 import pytest
-from moirais.fn.bdmnsl import bound_monot_selection
+from morie.fn.bdmnsl import bound_monot_selection
 
 
 def test_bdmnsl_basic():

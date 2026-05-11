@@ -1,7 +1,7 @@
 """Tests for rgeqn9a.rangayyan_ch9_pca_reconstruction."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn9a import rangayyan_ch9_pca_reconstruction
+from morie.fn.rgeqn9a import rangayyan_ch9_pca_reconstruction
 
 
 def test_rgeqn9a_basic():

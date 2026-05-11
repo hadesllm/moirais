@@ -1,7 +1,7 @@
 """Tests for smwgrp.small_worldness."""
 import numpy as np
 import pytest
-from moirais.fn.smwgrp import small_worldness
+from morie.fn.smwgrp import small_worldness
 
 
 def test_smwgrp_basic():

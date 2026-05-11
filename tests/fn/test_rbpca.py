@@ -1,6 +1,6 @@
 """Tests for robust_pca_pp."""
 import numpy as np, pytest
-from moirais.fn.rbpca import robust_pca_pp
+from morie.fn.rbpca import robust_pca_pp
 
 
 class TestRobustPCA:

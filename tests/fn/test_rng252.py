@@ -1,7 +1,7 @@
 """Tests for rng252.rangayyan_ch4_complex_cepstrum_signal_with_echo."""
 import numpy as np
 import pytest
-from moirais.fn.rng252 import rangayyan_ch4_complex_cepstrum_signal_with_echo
+from morie.fn.rng252 import rangayyan_ch4_complex_cepstrum_signal_with_echo
 
 
 def test_rng252_basic():

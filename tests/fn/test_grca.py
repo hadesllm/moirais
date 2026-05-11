@@ -1,7 +1,7 @@
 """Tests for grca.geron_cross_attention."""
 import numpy as np
 import pytest
-from moirais.fn.grca import geron_cross_attention
+from morie.fn.grca import geron_cross_attention
 
 
 def test_grca_basic():

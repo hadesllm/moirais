@@ -1,7 +1,7 @@
 """Tests for Tsallis entropy."""
 import numpy as np
 import pytest
-from moirais.fn.tsent import tsallis_entropy, tsent
+from morie.fn.tsent import tsallis_entropy, tsent
 
 
 def test_positive():

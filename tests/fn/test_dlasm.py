@@ -1,7 +1,7 @@
 """Test dlasm."""
 import numpy as np
 import pytest
-from moirais.fn.dlasm import dlasm
+from morie.fn.dlasm import dlasm
 
 
 def test_dlasm_basic():

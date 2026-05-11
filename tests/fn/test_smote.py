@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.smote — SMOTE oversampling with fallback."""
+"""Tests for morie.fn.smote — SMOTE oversampling with fallback."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.smote import apply_smote as smote
+from morie.fn.smote import apply_smote as smote
 
 
 @pytest.fixture()

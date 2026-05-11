@@ -1,7 +1,7 @@
 """Tests for crfNlp.crf_sequence."""
 import numpy as np
 import pytest
-from moirais.fn.crfNlp import crf_sequence
+from morie.fn.crfNlp import crf_sequence
 
 
 def test_crfNlp_basic():

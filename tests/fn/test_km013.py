@@ -1,7 +1,7 @@
 """Tests for km013.kamath_ch2_positional_encoding_sin."""
 import numpy as np
 import pytest
-from moirais.fn.km013 import kamath_ch2_positional_encoding_sin
+from morie.fn.km013 import kamath_ch2_positional_encoding_sin
 
 
 def test_km013_basic():

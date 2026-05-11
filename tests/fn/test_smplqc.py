@@ -1,7 +1,7 @@
 """Tests for smplqc.sample_qc."""
 import numpy as np
 import pytest
-from moirais.fn.smplqc import sample_qc
+from morie.fn.smplqc import sample_qc
 
 
 def test_smplqc_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gibbs -- Gibbs sampler for bivariate normal."""
+"""Tests for morie.fn.gibbs -- Gibbs sampler for bivariate normal."""
 
 import numpy as np
-from moirais.fn.gibbs import gibbs_bivariate_normal
+from morie.fn.gibbs import gibbs_bivariate_normal
 
 
 def test_returns_dict():

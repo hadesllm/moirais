@@ -1,7 +1,7 @@
 """Tests for airbed.emissions_inventory."""
 import numpy as np
 import pytest
-from moirais.fn.airbed import emissions_inventory
+from morie.fn.airbed import emissions_inventory
 
 
 def test_airbed_basic():

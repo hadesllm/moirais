@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.garch — GARCH(1,1)."""
+"""Tests for morie.fn.garch — GARCH(1,1)."""
 import numpy as np
 import pytest
-from moirais.fn.garch import garch_fit
+from morie.fn.garch import garch_fit
 
 
 class TestGARCH:

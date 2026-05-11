@@ -1,7 +1,7 @@
 """Test rsbai."""
 import numpy as np
 import pytest
-from moirais.fn.rsbai import rsbai
+from morie.fn.rsbai import rsbai
 
 
 def test_rsbai_basic():

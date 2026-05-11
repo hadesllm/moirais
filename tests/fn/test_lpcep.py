@@ -1,6 +1,6 @@
 """Tests for lpcep.py - LPC to cepstral coefficients."""
 import numpy as np
-from moirais.fn.lpcep import lpc_to_cepstral_fn, lpcep
+from morie.fn.lpcep import lpc_to_cepstral_fn, lpcep
 
 
 def test_lpcep_returns_result():

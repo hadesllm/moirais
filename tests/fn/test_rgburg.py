@@ -1,7 +1,7 @@
 """Tests for rgburg.rangayyan_burg_method."""
 import numpy as np
 import pytest
-from moirais.fn.rgburg import rangayyan_burg_method
+from morie.fn.rgburg import rangayyan_burg_method
 
 
 def test_rgburg_basic():

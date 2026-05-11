@@ -1,7 +1,7 @@
 """Tests for frgrow.fragment_growing."""
 import numpy as np
 import pytest
-from moirais.fn.frgrow import fragment_growing
+from morie.fn.frgrow import fragment_growing
 
 
 def test_frgrow_basic():

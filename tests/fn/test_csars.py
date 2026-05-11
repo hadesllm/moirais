@@ -1,7 +1,7 @@
 """Test csars."""
 import numpy as np
 import pytest
-from moirais.fn.csars import csars
+from morie.fn.csars import csars
 
 
 def test_csars_basic():

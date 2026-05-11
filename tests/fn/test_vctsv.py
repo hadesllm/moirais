@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vctsv — victim severity."""
+"""Tests for morie.fn.vctsv — victim severity."""
 
 import pytest
-from moirais.fn.vctsv import victim_severity
-from moirais.fn._containers import ESRes
+from morie.fn.vctsv import victim_severity
+from morie.fn._containers import ESRes
 
 
 class TestVictimSeverity:

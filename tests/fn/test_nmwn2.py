@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmwn2 -- W-NOMINATE 2D"""
+"""Tests for morie.fn.nmwn2 -- W-NOMINATE 2D"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmwn2 import wnominate_2d
+from morie.fn.nmwn2 import wnominate_2d
 
 
 class TestWnominate2d:

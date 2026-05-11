@@ -1,12 +1,12 @@
 # MRM modules
 
-*Part of {doc}`index` — MOIRAIS's statistical-methods reference.*
+*Part of {doc}`index` — MORIE's statistical-methods reference.*
 
 An **MRM module** pairs a (treatment, outcome, covariates) design
 choice for a specific OTIS dataset with the full **MRM**
 (McNamara-Ruhela-Medina) ten-estimator framework, applied to that
 design. See the attribution block at the head of
-`moirais.otis_causal` for the framework's lineage.
+`morie.otis_causal` for the framework's lineage.
 
 ## Vocabulary
 
@@ -53,7 +53,7 @@ For a01 and b01 the canonical formulation is
 
 ```python
 # MRM-prefixed names (preferred going forward)
-from moirais.otis_all_analyze import (
+from morie.otis_all_analyze import (
     analyze_a01_mrm,
     analyze_b01_mrm,
     analyze_b02_mrm,
@@ -72,7 +72,7 @@ from moirais.otis_all_analyze import (
 For aggregate datasets the analog is Poisson + NB GLM with IRR.
 
 ```python
-from moirais.otis_all_analyze import (
+from morie.otis_all_analyze import (
     analyze_b03_mrm_aggregate,
     analyze_b06_mrm_aggregate,
     analyze_b07_mrm_aggregate,
@@ -89,7 +89,7 @@ from moirais.otis_all_analyze import (
 ## Doob chi-square companion
 
 ```python
-from moirais.otis_all_analyze import analyze_c_doob_chi2, analyze_d_doob_chi2
+from morie.otis_all_analyze import analyze_c_doob_chi2, analyze_d_doob_chi2
 ```
 
 ## Constraints

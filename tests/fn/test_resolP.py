@@ -1,7 +1,7 @@
 """Tests for resolP.resolution_proof."""
 import numpy as np
 import pytest
-from moirais.fn.resolP import resolution_proof
+from morie.fn.resolP import resolution_proof
 
 
 def test_resolP_basic():

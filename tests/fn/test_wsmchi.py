@@ -1,7 +1,7 @@
 """Tests for wsmchi.wasserman_chi_sq_gof."""
 import numpy as np
 import pytest
-from moirais.fn.wsmchi import wasserman_chi_sq_gof
+from morie.fn.wsmchi import wasserman_chi_sq_gof
 
 
 def test_wsmchi_basic():

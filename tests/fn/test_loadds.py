@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.loadds — load dataset from file."""
+"""Tests for morie.fn.loadds — load dataset from file."""
 
 import pandas as pd
 import pytest
 import tempfile
 import os
 
-from moirais.fn.loadds import loadds, load_dataset
+from morie.fn.loadds import loadds, load_dataset
 
 
 def test_alias_is_same_function():

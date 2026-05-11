@@ -1,7 +1,7 @@
 """Tests for gb833.gibbons_pct_mod_rank_loc."""
 import numpy as np
 import pytest
-from moirais.fn.gb833 import gibbons_pct_mod_rank_loc
+from morie.fn.gb833 import gibbons_pct_mod_rank_loc
 
 
 def test_gb833_basic():

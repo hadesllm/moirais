@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.stsep — Separable spatio-temporal covariance."""
+"""Tests for morie.fn.stsep — Separable spatio-temporal covariance."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.stsep import stsep
+from morie.fn.stsep import stsep
 
 
 class TestStsep:

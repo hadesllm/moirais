@@ -1,7 +1,7 @@
 """Test krgef."""
 import numpy as np
 import pytest
-from moirais.fn.krgef import krgef
+from morie.fn.krgef import krgef
 
 
 def test_krgef_basic():

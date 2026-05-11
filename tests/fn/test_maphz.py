@@ -1,7 +1,7 @@
 """Test maphz."""
 import numpy as np
 import pytest
-from moirais.fn.maphz import maphz
+from morie.fn.maphz import maphz
 
 
 def test_maphz_basic():

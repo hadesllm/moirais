@@ -1,6 +1,6 @@
 """Tests for mdlsc.py - MDL score."""
 import numpy as np
-from moirais.fn.mdlsc import mdl_score_fn, mdlsc
+from morie.fn.mdlsc import mdl_score_fn, mdlsc
 
 
 def test_mdlsc_returns_result():

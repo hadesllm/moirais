@@ -1,7 +1,7 @@
 """Test opzon."""
 import numpy as np
 import pytest
-from moirais.fn.opzon import opzon
+from morie.fn.opzon import opzon
 
 
 def test_opzon_basic():

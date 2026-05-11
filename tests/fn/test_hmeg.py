@@ -1,7 +1,7 @@
 """Tests for hmeg.geron_epsilon_greedy."""
 import numpy as np
 import pytest
-from moirais.fn.hmeg import geron_epsilon_greedy
+from morie.fn.hmeg import geron_epsilon_greedy
 
 
 def test_hmeg_basic():

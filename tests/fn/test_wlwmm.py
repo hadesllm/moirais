@@ -1,7 +1,7 @@
 """Tests for wlwmm.wlw_marginal_model."""
 import numpy as np
 import pytest
-from moirais.fn.wlwmm import wlw_marginal_model
+from morie.fn.wlwmm import wlw_marginal_model
 
 
 def test_wlwmm_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.cfacm -- nested CFA model comparison."""
+"""Tests for morie.fn.cfacm -- nested CFA model comparison."""
 
-from moirais.fn.cfacm import cfa_compare
+from morie.fn.cfacm import cfa_compare
 
 
 class TestCfaCompare:

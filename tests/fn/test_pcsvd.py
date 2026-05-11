@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pcsvd -- PCA via SVD."""
+"""Tests for morie.fn.pcsvd -- PCA via SVD."""
 
 import numpy as np
-from moirais.fn.pcsvd import pca_svd, pcsvd
-from moirais.fn._containers import PcaRes
+from morie.fn.pcsvd import pca_svd, pcsvd
+from morie.fn._containers import PcaRes
 
 
 class TestPcaSvd:
@@ -23,7 +23,7 @@ class TestPcaSvd:
         assert res.scores.shape == (50, 3)
 
     def test_agrees_with_eigen(self):
-        from moirais.fn.pcaev import pca_eigen
+        from morie.fn.pcaev import pca_eigen
         rng = np.random.default_rng(42)
         X = rng.standard_normal((80, 4))
         r1 = pca_eigen(X, n_components=2)

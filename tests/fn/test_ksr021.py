@@ -1,7 +1,7 @@
 """Tests for ksr021.kosorok_ch1_residual_empirical_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.ksr021 import kosorok_ch1_residual_empirical_distribution
+from morie.fn.ksr021 import kosorok_ch1_residual_empirical_distribution
 
 
 def test_ksr021_basic():

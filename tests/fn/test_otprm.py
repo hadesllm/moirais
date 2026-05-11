@@ -1,7 +1,7 @@
 """Tests for otprm.ot_permutation_test_w1."""
 import numpy as np
 import pytest
-from moirais.fn.otprm import ot_permutation_test_w1
+from morie.fn.otprm import ot_permutation_test_w1
 
 
 def test_otprm_basic():

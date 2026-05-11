@@ -1,7 +1,7 @@
 """Tests for aparcm.aparch_dge."""
 import numpy as np
 import pytest
-from moirais.fn.aparcm import aparch_dge
+from morie.fn.aparcm import aparch_dge
 
 
 def test_aparcm_basic():

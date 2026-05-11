@@ -1,7 +1,7 @@
 """Tests for bysid.bayesian_ideal_points."""
 import numpy as np
 import pytest
-from moirais.fn.bysid import bayesian_ideal_points
+from morie.fn.bysid import bayesian_ideal_points
 
 
 def test_bysid_basic():

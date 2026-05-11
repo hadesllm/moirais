@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svwvt -- Weighted voting game value"""
+"""Tests for morie.fn.svwvt -- Weighted voting game value"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svwvt import weighted_vote
+from morie.fn.svwvt import weighted_vote
 
 
 class TestWeightedVote:

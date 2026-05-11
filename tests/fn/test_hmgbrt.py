@@ -1,7 +1,7 @@
 """Tests for hmgbrt.geron_gradient_boosting."""
 import numpy as np
 import pytest
-from moirais.fn.hmgbrt import geron_gradient_boosting
+from morie.fn.hmgbrt import geron_gradient_boosting
 
 
 def test_hmgbrt_basic():

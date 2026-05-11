@@ -1,7 +1,7 @@
 """Tests for rng024.rangayyan_ch3_dirac_delta_definition."""
 import numpy as np
 import pytest
-from moirais.fn.rng024 import rangayyan_ch3_dirac_delta_definition
+from morie.fn.rng024 import rangayyan_ch3_dirac_delta_definition
 
 
 def test_rng024_basic():

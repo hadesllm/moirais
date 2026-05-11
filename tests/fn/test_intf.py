@@ -1,7 +1,7 @@
 """Tests for intf.integrate_function."""
 import numpy as np
 import pytest
-from moirais.fn.intf import integrate_function
+from morie.fn.intf import integrate_function
 
 
 def test_intf_basic():

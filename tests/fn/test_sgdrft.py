@@ -1,6 +1,6 @@
 """Tests for external drift kriging."""
 import numpy as np
-from moirais.fn.sgdrft import sgdrft
+from morie.fn.sgdrft import sgdrft
 
 
 def test_sgdrft_smoke():
@@ -14,7 +14,7 @@ def test_sgdrft_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.sgdrft import cheatsheet
+    from morie.fn.sgdrft import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

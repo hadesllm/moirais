@@ -1,7 +1,7 @@
 """Tests for aitcmd.compositional_median."""
 import numpy as np
 import pytest
-from moirais.fn.aitcmd import compositional_median
+from morie.fn.aitcmd import compositional_median
 
 
 def test_aitcmd_basic():

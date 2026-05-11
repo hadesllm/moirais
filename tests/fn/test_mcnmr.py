@@ -1,6 +1,6 @@
 """Tests for mcnemar_test."""
 import numpy as np, pytest
-from moirais.fn.mcnmr import mcnemar_test
+from morie.fn.mcnmr import mcnemar_test
 
 class TestMcNemar:
     def test_basic(self):

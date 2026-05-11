@@ -1,7 +1,7 @@
 """Tests for mdian.mediation_analysis."""
 import numpy as np
 import pytest
-from moirais.fn.mdian import mediation_analysis
+from morie.fn.mdian import mediation_analysis
 
 
 def test_mdian_basic():

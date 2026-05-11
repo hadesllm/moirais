@@ -1,7 +1,7 @@
 """Tests for rng132.rangayyan_ch3_iir_difference_eq_general."""
 import numpy as np
 import pytest
-from moirais.fn.rng132 import rangayyan_ch3_iir_difference_eq_general
+from morie.fn.rng132 import rangayyan_ch3_iir_difference_eq_general
 
 
 def test_rng132_basic():

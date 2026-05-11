@@ -1,7 +1,7 @@
 """You have power over your mind — not outside events. — Marcus Aurelius"""
 import numpy as np
 import pytest
-from moirais.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u25 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_25
+from morie.fn.christopher_gandrud_author_reproducible_research_with_r_and_4u25 import christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_25
 
 
 def test_christopher_gandrud_author_reproducible_research_with_r_and_4u25_basic():

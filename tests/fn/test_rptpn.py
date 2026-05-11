@@ -1,7 +1,7 @@
 """Tests for rptpn.repetition_penalty."""
 import numpy as np
 import pytest
-from moirais.fn.rptpn import repetition_penalty
+from morie.fn.rptpn import repetition_penalty
 
 
 def test_rptpn_basic():

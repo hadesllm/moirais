@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.agset."""
+"""Tests for morie.fn.agset."""
 
 import numpy as np
 import pytest
-from moirais.fn.agset import agset
+from morie.fn.agset import agset
 
 
 class TestAgset:

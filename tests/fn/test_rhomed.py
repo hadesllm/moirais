@@ -1,7 +1,7 @@
 """Tests for rhomed.rho_critical_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.rhomed import rho_critical_mediation
+from morie.fn.rhomed import rho_critical_mediation
 
 
 def test_rhomed_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mtobac — BAC analysis."""
+"""Tests for morie.fn.mtobac — BAC analysis."""
 
 import pytest
 import numpy as np
-from moirais.fn.mtobac import mto_bac_analysis
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtobac import mto_bac_analysis
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBacAnalysis:

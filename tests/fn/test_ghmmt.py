@@ -1,7 +1,7 @@
 """Tests for ghmmt.ghosal_moment_matching."""
 import numpy as np
 import pytest
-from moirais.fn.ghmmt import ghosal_moment_matching
+from morie.fn.ghmmt import ghosal_moment_matching
 
 
 def test_ghmmt_basic():

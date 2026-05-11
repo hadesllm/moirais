@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mnero -- cellular automaton."""
+"""Tests for morie.fn.mnero -- cellular automaton."""
 
-from moirais.fn.mnero import cellular_automaton, mnero
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mnero import cellular_automaton, mnero
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMnero:

@@ -1,7 +1,7 @@
 """Tests for rng056.rangayyan_ch3_iir_transfer_function."""
 import numpy as np
 import pytest
-from moirais.fn.rng056 import rangayyan_ch3_iir_transfer_function
+from morie.fn.rng056 import rangayyan_ch3_iir_transfer_function
 
 
 def test_rng056_basic():

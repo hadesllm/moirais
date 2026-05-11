@@ -1,7 +1,7 @@
 """Tests for geglu.geglu_activation."""
 import numpy as np
 import pytest
-from moirais.fn.geglu import geglu_activation
+from morie.fn.geglu import geglu_activation
 
 
 def test_geglu_basic():

@@ -1,7 +1,7 @@
 """Tests for manmar.ma_network_indirect."""
 import numpy as np
 import pytest
-from moirais.fn.manmar import ma_network_indirect
+from morie.fn.manmar import ma_network_indirect
 
 
 def test_manmar_basic():

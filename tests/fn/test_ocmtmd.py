@@ -1,7 +1,7 @@
 """Tests for ocmtmd.outcome_model_diagnostic."""
 import numpy as np
 import pytest
-from moirais.fn.ocmtmd import outcome_model_diagnostic
+from morie.fn.ocmtmd import outcome_model_diagnostic
 
 
 def test_ocmtmd_basic():

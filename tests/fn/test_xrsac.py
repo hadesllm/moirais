@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrsac -- SAC/SARAR model ML"""
+"""Tests for morie.fn.xrsac -- SAC/SARAR model ML"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrsac import sac_ml
+from morie.fn.xrsac import sac_ml
 
 
 class TestSacMl:

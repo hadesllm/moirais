@@ -1,7 +1,7 @@
 """Tests for rgwvvar.rangayyan_wavelet_variance."""
 import numpy as np
 import pytest
-from moirais.fn.rgwvvar import rangayyan_wavelet_variance
+from morie.fn.rgwvvar import rangayyan_wavelet_variance
 
 
 def test_rgwvvar_basic():

@@ -1,7 +1,7 @@
 """Tests for tftran.temporal_fusion_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.tftran import temporal_fusion_transformer
+from morie.fn.tftran import temporal_fusion_transformer
 
 
 def test_tftran_basic():

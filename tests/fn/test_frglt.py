@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.frglt -- Frailty model."""
+"""Tests for morie.fn.frglt -- Frailty model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.frglt import frglt
+from morie.fn.frglt import frglt
 
 
 @pytest.fixture()
@@ -41,5 +41,5 @@ def test_n_clusters(frailty_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.frglt import cheatsheet
+    from morie.fn.frglt import cheatsheet
     assert "frailty" in cheatsheet().lower()

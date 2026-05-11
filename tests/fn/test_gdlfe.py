@@ -1,7 +1,7 @@
 """Test gdlfe."""
 import numpy as np
 import pytest
-from moirais.fn.gdlfe import gdlfe
+from morie.fn.gdlfe import gdlfe
 
 
 def test_gdlfe_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vinc — Incremental validity."""
+"""Tests for morie.fn.vinc — Incremental validity."""
 
 import numpy as np
 import pytest
-from moirais.fn.vinc import validity_incremental
+from morie.fn.vinc import validity_incremental
 
 
 class TestValidityIncremental:

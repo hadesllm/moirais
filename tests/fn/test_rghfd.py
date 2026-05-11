@@ -1,7 +1,7 @@
 """Tests for rghfd.rangayyan_higuchi_fd."""
 import numpy as np
 import pytest
-from moirais.fn.rghfd import rangayyan_higuchi_fd
+from morie.fn.rghfd import rangayyan_higuchi_fd
 
 
 def test_rghfd_basic():

@@ -1,7 +1,7 @@
 """Tests for lgobj.logistic_log_likelihood."""
 import numpy as np
 import pytest
-from moirais.fn.lgobj import logistic_log_likelihood
+from morie.fn.lgobj import logistic_log_likelihood
 
 
 def test_lgobj_basic():

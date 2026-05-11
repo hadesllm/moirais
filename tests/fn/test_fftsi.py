@@ -1,7 +1,7 @@
 """Test fftsi."""
 import numpy as np
 import pytest
-from moirais.fn.fftsi import fftsi
+from morie.fn.fftsi import fftsi
 
 
 def test_fftsi_basic():

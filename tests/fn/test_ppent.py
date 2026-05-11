@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ppent."""
+"""Tests for morie.fn.ppent."""
 
 import numpy as np
 import pytest
-from moirais.fn.ppent import ppent
+from morie.fn.ppent import ppent
 
 
 class TestPpent:

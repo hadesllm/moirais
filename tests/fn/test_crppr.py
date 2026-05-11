@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.crppr -- Chinese restaurant process."""
+"""Tests for morie.fn.crppr -- Chinese restaurant process."""
 
-from moirais.fn.crppr import chinese_restaurant_process
+from morie.fn.crppr import chinese_restaurant_process
 
 
 def test_returns_dict():

@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rey_gm — Gamma GLM regression."""
+"""Tests for morie.fn.rey_gm — Gamma GLM regression."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.rey_gm import rey_gm
+from morie.fn.rey_gm import rey_gm
 
 
 class TestReyGm:

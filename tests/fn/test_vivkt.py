@@ -1,7 +1,7 @@
 """Tests for vivkt.vansteelandt_vanderweele."""
 import numpy as np
 import pytest
-from moirais.fn.vivkt import vansteelandt_vanderweele
+from morie.fn.vivkt import vansteelandt_vanderweele
 
 
 def test_vivkt_basic():

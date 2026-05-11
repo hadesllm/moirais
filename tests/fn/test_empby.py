@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.empby -- Empirical Bayes."""
+"""Tests for morie.fn.empby -- Empirical Bayes."""
 
 import numpy as np
-from moirais.fn.empby import empirical_bayes
+from morie.fn.empby import empirical_bayes
 
 
 def test_returns_dict():

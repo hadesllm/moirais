@@ -1,7 +1,7 @@
 """Tests for msmphr.msm_proportional_hazards."""
 import numpy as np
 import pytest
-from moirais.fn.msmphr import msm_proportional_hazards
+from morie.fn.msmphr import msm_proportional_hazards
 
 
 def test_msmphr_basic():

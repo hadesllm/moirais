@@ -1,7 +1,7 @@
 """Tests for hmovo.geron_one_vs_one."""
 import numpy as np
 import pytest
-from moirais.fn.hmovo import geron_one_vs_one
+from morie.fn.hmovo import geron_one_vs_one
 
 
 def test_hmovo_basic():

@@ -1,7 +1,7 @@
 """Tests for covpop.coverage_correction."""
 import numpy as np
 import pytest
-from moirais.fn.covpop import coverage_correction
+from morie.fn.covpop import coverage_correction
 
 
 def test_covpop_basic():

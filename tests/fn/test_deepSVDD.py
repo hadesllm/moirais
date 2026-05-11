@@ -1,7 +1,7 @@
 """Tests for deepSVDD.deep_svdd."""
 import numpy as np
 import pytest
-from moirais.fn.deepSVDD import deep_svdd
+from morie.fn.deepSVDD import deep_svdd
 
 
 def test_deepSVDD_basic():

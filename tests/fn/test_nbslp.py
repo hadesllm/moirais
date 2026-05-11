@@ -1,7 +1,7 @@
 """Test nbslp."""
 import numpy as np
 import pytest
-from moirais.fn.nbslp import nbslp
+from morie.fn.nbslp import nbslp
 
 
 def test_nbslp_basic():

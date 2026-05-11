@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cm -- Confusion matrix."""
+"""Tests for morie.fn.cm -- Confusion matrix."""
 
 import numpy as np
 import pytest
-from moirais.fn.cm import confusion_matrix
+from morie.fn.cm import confusion_matrix
 
 
 class TestConfusionMatrix:

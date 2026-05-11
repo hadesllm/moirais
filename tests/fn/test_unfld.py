@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.unfld — Unfolding model."""
+"""Tests for morie.fn.unfld — Unfolding model."""
 import numpy as np
-from moirais.fn.unfld import unfld
+from morie.fn.unfld import unfld
 
 
 def test_unfld_basic():

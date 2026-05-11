@@ -1,7 +1,7 @@
 """Tests for pdic.effective_parameters_dic."""
 import numpy as np
 import pytest
-from moirais.fn.pdic import effective_parameters_dic
+from morie.fn.pdic import effective_parameters_dic
 
 
 def test_pdic_basic():

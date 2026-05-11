@@ -1,7 +1,7 @@
 """Tests for conti.continued_fraction_pi."""
 import numpy as np
 import pytest
-from moirais.fn.conti import continued_fraction_pi
+from morie.fn.conti import continued_fraction_pi
 
 
 def test_conti_basic():

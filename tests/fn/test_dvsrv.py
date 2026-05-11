@@ -1,7 +1,7 @@
 """Tests for dvsrv: deviance residuals for Cox model."""
 import numpy as np
 import pytest
-from moirais.fn.dvsrv import dvsrv
+from morie.fn.dvsrv import dvsrv
 
 
 def _make_data(n=150, beta=0.5, seed=0):

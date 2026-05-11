@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgckv -- Co-kriging variance"""
+"""Tests for morie.fn.kgckv -- Co-kriging variance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgckv import cok_variance
+from morie.fn.kgckv import cok_variance
 
 
 class TestCokVariance:

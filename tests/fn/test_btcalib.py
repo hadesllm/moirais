@@ -1,7 +1,7 @@
 """Tests for btcalib.boot_calibrated_ci."""
 import numpy as np
 import pytest
-from moirais.fn.btcalib import boot_calibrated_ci
+from morie.fn.btcalib import boot_calibrated_ci
 
 
 def test_btcalib_basic():

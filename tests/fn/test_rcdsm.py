@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rcdsm — overall recidivism rate."""
+"""Tests for morie.fn.rcdsm — overall recidivism rate."""
 
-from moirais.fn.rcdsm import recidivism_rate, rcdsm
+from morie.fn.rcdsm import recidivism_rate, rcdsm
 
 
 class TestRecidivismRate:

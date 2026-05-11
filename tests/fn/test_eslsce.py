@@ -1,7 +1,7 @@
 """Tests for eslsce.esl_score_match."""
 import numpy as np
 import pytest
-from moirais.fn.eslsce import esl_score_match
+from morie.fn.eslsce import esl_score_match
 
 
 def test_eslsce_basic():

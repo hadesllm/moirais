@@ -1,7 +1,7 @@
 """Tests for hmrpt.geron_random_patches."""
 import numpy as np
 import pytest
-from moirais.fn.hmrpt import geron_random_patches
+from morie.fn.hmrpt import geron_random_patches
 
 
 def test_hmrpt_basic():

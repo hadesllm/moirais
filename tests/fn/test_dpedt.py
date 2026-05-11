@@ -1,7 +1,7 @@
 """Tests for dpedt.dp_exchangeable_distribution."""
 import numpy as np
 import pytest
-from moirais.fn.dpedt import dp_exchangeable_distribution
+from morie.fn.dpedt import dp_exchangeable_distribution
 
 
 def test_dpedt_basic():

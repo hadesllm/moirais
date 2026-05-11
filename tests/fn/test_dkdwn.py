@@ -1,7 +1,7 @@
 """Test dkdwn."""
 import numpy as np
 import pytest
-from moirais.fn.dkdwn import dkdwn
+from morie.fn.dkdwn import dkdwn
 
 
 def test_dkdwn_basic():

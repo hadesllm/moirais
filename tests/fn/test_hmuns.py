@@ -1,7 +1,7 @@
 """Tests for hmuns.geron_unsupervised_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmuns import geron_unsupervised_learning
+from morie.fn.hmuns import geron_unsupervised_learning
 
 
 def test_hmuns_basic():

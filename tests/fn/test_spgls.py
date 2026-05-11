@@ -1,7 +1,7 @@
 """Tests for spgls.schabenberger_gls_spatial."""
 import numpy as np
 import pytest
-from moirais.fn.spgls import schabenberger_gls_spatial
+from morie.fn.spgls import schabenberger_gls_spatial
 
 
 def test_spgls_basic():

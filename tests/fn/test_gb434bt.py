@@ -1,7 +1,7 @@
 """Tests for gb434bt.gibbons_ks_bt_formula."""
 import numpy as np
 import pytest
-from moirais.fn.gb434bt import gibbons_ks_bt_formula
+from morie.fn.gb434bt import gibbons_ks_bt_formula
 
 
 def test_gb434bt_basic():

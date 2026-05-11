@@ -1,7 +1,7 @@
 """Tests for stkint."""
 import numpy as np
 import pytest
-from moirais.fn.stkint import stkint
+from morie.fn.stkint import stkint
 
 
 def test_stkint_basic():
@@ -27,5 +27,5 @@ def test_stkint_no_data():
 
 
 def test_stkint_alias():
-    from moirais.fn.stkint import stkint
+    from morie.fn.stkint import stkint
     assert stkint is stkint

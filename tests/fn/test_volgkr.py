@@ -1,7 +1,7 @@
 """Tests for volgkr.vol_garman_klass."""
 import numpy as np
 import pytest
-from moirais.fn.volgkr import vol_garman_klass
+from morie.fn.volgkr import vol_garman_klass
 
 
 def test_volgkr_basic():

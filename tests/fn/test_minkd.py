@@ -1,6 +1,6 @@
 """Tests for minkowski_dist."""
 import pytest
-from moirais.fn.minkd import minkowski_dist, minkd
+from morie.fn.minkd import minkowski_dist, minkd
 
 
 def test_manhattan():

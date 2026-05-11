@@ -1,6 +1,6 @@
 """Tests for Lempel-Ziv complexity."""
 import numpy as np
-from moirais.fn.lzcmp import lempel_ziv_complexity, lzcmp
+from morie.fn.lzcmp import lempel_ziv_complexity, lzcmp
 
 
 def test_constant():

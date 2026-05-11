@@ -1,7 +1,7 @@
 """Tests for baytsm.bayes_time_series."""
 import numpy as np
 import pytest
-from moirais.fn.baytsm import bayes_time_series
+from morie.fn.baytsm import bayes_time_series
 
 
 def test_baytsm_basic():

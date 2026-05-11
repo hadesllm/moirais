@@ -1,7 +1,7 @@
 """Tests for hmgoog.geron_googlenet."""
 import numpy as np
 import pytest
-from moirais.fn.hmgoog import geron_googlenet
+from morie.fn.hmgoog import geron_googlenet
 
 
 def test_hmgoog_basic():

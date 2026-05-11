@@ -1,7 +1,7 @@
 """Tests for breslot.breslow_tie_correction."""
 import numpy as np
 import pytest
-from moirais.fn.breslot import breslow_tie_correction
+from morie.fn.breslot import breslow_tie_correction
 
 
 def test_breslot_basic():

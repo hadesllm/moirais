@@ -1,7 +1,7 @@
 """Tests for rng048.rangayyan_ch3_laplace_transform."""
 import numpy as np
 import pytest
-from moirais.fn.rng048 import rangayyan_ch3_laplace_transform
+from morie.fn.rng048 import rangayyan_ch3_laplace_transform
 
 
 def test_rng048_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.zcrss."""
+"""Tests for morie.fn.zcrss."""
 import numpy as np
-from moirais.fn.zcrss import zero_crossings
+from morie.fn.zcrss import zero_crossings
 
 
 def test_zcrss_smoke():
@@ -12,7 +12,7 @@ def test_zcrss_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.zcrss import cheatsheet
+    from morie.fn.zcrss import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

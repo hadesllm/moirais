@@ -1,7 +1,7 @@
 """Tests for yolovx.yolo_decoupled_head."""
 import numpy as np
 import pytest
-from moirais.fn.yolovx import yolo_decoupled_head
+from morie.fn.yolovx import yolo_decoupled_head
 
 
 def test_yolovx_basic():

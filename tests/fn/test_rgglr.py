@@ -1,7 +1,7 @@
 """Tests for rgglr.rangayyan_gen_likelihood_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.rgglr import rangayyan_gen_likelihood_ratio
+from morie.fn.rgglr import rangayyan_gen_likelihood_ratio
 
 
 def test_rgglr_basic():

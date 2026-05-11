@@ -1,7 +1,7 @@
 """Tests for grrlhf.geron_rlhf_reward_kl_objective."""
 import numpy as np
 import pytest
-from moirais.fn.grrlhf import geron_rlhf_reward_kl_objective
+from morie.fn.grrlhf import geron_rlhf_reward_kl_objective
 
 
 def test_grrlhf_basic():

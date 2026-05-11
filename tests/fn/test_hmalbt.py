@@ -1,7 +1,7 @@
 """Tests for hmalbt.geron_albert."""
 import numpy as np
 import pytest
-from moirais.fn.hmalbt import geron_albert
+from morie.fn.hmalbt import geron_albert
 
 
 def test_hmalbt_basic():

@@ -1,7 +1,7 @@
 """Tests for hmkrn.geron_filter_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.hmkrn import geron_filter_kernel
+from morie.fn.hmkrn import geron_filter_kernel
 
 
 def test_hmkrn_basic():

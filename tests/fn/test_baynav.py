@@ -1,7 +1,7 @@
 """Tests for baynav.variational_nf."""
 import numpy as np
 import pytest
-from moirais.fn.baynav import variational_nf
+from morie.fn.baynav import variational_nf
 
 
 def test_baynav_basic():

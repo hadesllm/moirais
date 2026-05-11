@@ -1,7 +1,7 @@
 """Test gecns."""
 import numpy as np
 import pytest
-from moirais.fn.gecns import gecns
+from morie.fn.gecns import gecns
 
 
 def test_gecns_basic():

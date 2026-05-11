@@ -1,7 +1,7 @@
 """Test gdcdr."""
 import numpy as np
 import pytest
-from moirais.fn.gdcdr import gdcdr
+from morie.fn.gdcdr import gdcdr
 
 
 def test_gdcdr_basic():

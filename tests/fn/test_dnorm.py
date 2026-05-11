@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dnorm — normal PDF."""
+"""Tests for morie.fn.dnorm — normal PDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dnorm import dnorm
+from morie.fn.dnorm import dnorm
 
 
 class TestDnorm:

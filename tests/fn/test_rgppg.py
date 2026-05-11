@@ -1,7 +1,7 @@
 """Tests for rgppg.rangayyan_ppg_features."""
 import numpy as np
 import pytest
-from moirais.fn.rgppg import rangayyan_ppg_features
+from morie.fn.rgppg import rangayyan_ppg_features
 
 
 def test_rgppg_basic():

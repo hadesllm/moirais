@@ -1,7 +1,7 @@
 """Test anc_remove (ancrm)."""
 import numpy as np
-from moirais.fn.ancrm import anc_remove, ancrm
-from moirais.fn._containers import SignalResult
+from morie.fn.ancrm import anc_remove, ancrm
+from morie.fn._containers import SignalResult
 
 
 class TestAncRemove:

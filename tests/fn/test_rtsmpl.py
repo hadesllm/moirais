@@ -1,7 +1,7 @@
 """Tests for rtsmpl.rt_serial_interval."""
 import numpy as np
 import pytest
-from moirais.fn.rtsmpl import rt_serial_interval
+from morie.fn.rtsmpl import rt_serial_interval
 
 
 def test_rtsmpl_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrsar -- SAR (Spatial Lag) model ML estimation"""
+"""Tests for morie.fn.xrsar -- SAR (Spatial Lag) model ML estimation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrsar import sar_ml
+from morie.fn.xrsar import sar_ml
 
 
 class TestSarMl:

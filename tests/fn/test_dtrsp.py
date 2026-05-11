@@ -1,7 +1,7 @@
 """Tests for dtrsp.decision_tree_split."""
 import numpy as np
 import pytest
-from moirais.fn.dtrsp import decision_tree_split
+from morie.fn.dtrsp import decision_tree_split
 
 
 def test_dtrsp_basic():

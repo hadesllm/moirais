@@ -1,7 +1,7 @@
 """Tests for vandIE.vanderweele_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.vandIE import vanderweele_decomposition
+from morie.fn.vandIE import vanderweele_decomposition
 
 
 def test_vandIE_basic():

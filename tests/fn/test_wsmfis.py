@@ -1,7 +1,7 @@
 """Tests for wsmfis.wasserman_fisher_info."""
 import numpy as np
 import pytest
-from moirais.fn.wsmfis import wasserman_fisher_info
+from morie.fn.wsmfis import wasserman_fisher_info
 
 
 def test_wsmfis_basic():

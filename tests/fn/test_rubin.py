@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rubin -- Rubin's rules for pooling MI estimates."""
+"""Tests for morie.fn.rubin -- Rubin's rules for pooling MI estimates."""
 
 import math
 
 import numpy as np
 import pytest
-from moirais.fn.rubin import rubins_rules
+from morie.fn.rubin import rubins_rules
 
 
 class TestRubinsRules:

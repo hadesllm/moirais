@@ -1,7 +1,7 @@
 """Tests for rng094.rangayyan_ch3_hann_frequency_response_simplified."""
 import numpy as np
 import pytest
-from moirais.fn.rng094 import rangayyan_ch3_hann_frequency_response_simplified
+from morie.fn.rng094 import rangayyan_ch3_hann_frequency_response_simplified
 
 
 def test_rng094_basic():

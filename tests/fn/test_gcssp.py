@@ -1,7 +1,7 @@
 """Test gcssp."""
 import numpy as np
 import pytest
-from moirais.fn.gcssp import gcssp
+from morie.fn.gcssp import gcssp
 
 
 def test_gcssp_basic():

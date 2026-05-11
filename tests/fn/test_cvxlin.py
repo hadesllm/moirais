@@ -1,7 +1,7 @@
 """Tests for cvxlin.boyd_linear_program."""
 import numpy as np
 import pytest
-from moirais.fn.cvxlin import boyd_linear_program
+from morie.fn.cvxlin import boyd_linear_program
 
 
 def test_cvxlin_basic():

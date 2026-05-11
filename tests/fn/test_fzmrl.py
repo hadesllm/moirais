@@ -1,7 +1,7 @@
 """Tests for fzmrl.fauzi_mrl_asymptotic."""
 import numpy as np
 import pytest
-from moirais.fn.fzmrl import fauzi_mrl_asymptotic
+from morie.fn.fzmrl import fauzi_mrl_asymptotic
 
 
 def test_fzmrl_basic():

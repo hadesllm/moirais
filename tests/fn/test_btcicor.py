@@ -1,7 +1,7 @@
 """Tests for btcicor.boot_ci_correlation."""
 import numpy as np
 import pytest
-from moirais.fn.btcicor import boot_ci_correlation
+from morie.fn.btcicor import boot_ci_correlation
 
 
 def test_btcicor_basic():

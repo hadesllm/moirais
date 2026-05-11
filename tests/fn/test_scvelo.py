@@ -1,7 +1,7 @@
 """Tests for scvelo.rna_velocity."""
 import numpy as np
 import pytest
-from moirais.fn.scvelo import rna_velocity
+from morie.fn.scvelo import rna_velocity
 
 
 def test_scvelo_basic():

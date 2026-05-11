@@ -1,7 +1,7 @@
 """Tests for esldat.esl_dropout."""
 import numpy as np
 import pytest
-from moirais.fn.esldat import esl_dropout
+from morie.fn.esldat import esl_dropout
 
 
 def test_esldat_basic():

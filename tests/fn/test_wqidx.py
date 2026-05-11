@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.wqidx -- water quality index."""
+"""Tests for morie.fn.wqidx -- water quality index."""
 
 import pytest
-from moirais.fn.wqidx import water_quality_index
+from morie.fn.wqidx import water_quality_index
 
 
 class TestWQI:

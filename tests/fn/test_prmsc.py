@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.prmsc -- VAE sampling."""
+"""Tests for morie.fn.prmsc -- VAE sampling."""
 
 import numpy as np
-from moirais.fn.prmsc import vae_sample, prmsc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.prmsc import vae_sample, prmsc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestPrmsc:

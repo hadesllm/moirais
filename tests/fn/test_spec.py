@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.spec — Specificity."""
+"""Tests for morie.fn.spec — Specificity."""
 import numpy as np
 
-from moirais.fn.spec import specificity_dx, spec
+from morie.fn.spec import specificity_dx, spec
 
 
 def test_perfect_specificity():

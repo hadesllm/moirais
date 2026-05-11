@@ -1,7 +1,7 @@
 """Tests for deopti.differential_evolution."""
 import numpy as np
 import pytest
-from moirais.fn.deopti import differential_evolution
+from morie.fn.deopti import differential_evolution
 
 
 def test_deopti_basic():

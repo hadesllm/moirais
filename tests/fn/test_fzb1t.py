@@ -1,7 +1,7 @@
 """Tests for fzb1t.fauzi_b1_coefficient."""
 import numpy as np
 import pytest
-from moirais.fn.fzb1t import fauzi_b1_coefficient
+from morie.fn.fzb1t import fauzi_b1_coefficient
 
 
 def test_fzb1t_basic():

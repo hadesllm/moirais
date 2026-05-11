@@ -1,7 +1,7 @@
 """Tests for prdmed.product_of_coefficients."""
 import numpy as np
 import pytest
-from moirais.fn.prdmed import product_of_coefficients
+from morie.fn.prdmed import product_of_coefficients
 
 
 def test_prdmed_basic():

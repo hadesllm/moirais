@@ -1,7 +1,7 @@
 """Tests for gb_jall.gibbons_joint_all_order."""
 import numpy as np
 import pytest
-from moirais.fn.gb_jall import gibbons_joint_all_order
+from morie.fn.gb_jall import gibbons_joint_all_order
 
 
 def test_gb_jall_basic():

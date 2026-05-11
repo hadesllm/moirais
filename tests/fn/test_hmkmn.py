@@ -1,7 +1,7 @@
 """Tests for hmkmn.geron_kmeans."""
 import numpy as np
 import pytest
-from moirais.fn.hmkmn import geron_kmeans
+from morie.fn.hmkmn import geron_kmeans
 
 
 def test_hmkmn_basic():

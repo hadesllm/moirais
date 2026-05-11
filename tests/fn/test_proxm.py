@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.proxm — proximity cost."""
-from moirais.fn.proxm import proxm
+"""Tests for morie.fn.proxm — proximity cost."""
+from morie.fn.proxm import proxm
 
 
 def test_proxm_smoke():

@@ -1,7 +1,7 @@
 """Test sowp."""
 import numpy as np
 import pytest
-from moirais.fn.sowp import sowp
+from morie.fn.sowp import sowp
 
 
 def test_sowp_basic():

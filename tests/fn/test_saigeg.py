@@ -1,7 +1,7 @@
 """Tests for saigeg.saige_gwas."""
 import numpy as np
 import pytest
-from moirais.fn.saigeg import saige_gwas
+from morie.fn.saigeg import saige_gwas
 
 
 def test_saigeg_basic():

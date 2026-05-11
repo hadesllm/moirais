@@ -1,7 +1,7 @@
 """Tests for tipsne.tipping_point_sensitivity."""
 import numpy as np
 import pytest
-from moirais.fn.tipsne import tipping_point_sensitivity
+from morie.fn.tipsne import tipping_point_sensitivity
 
 
 def test_tipsne_basic():

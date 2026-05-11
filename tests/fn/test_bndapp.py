@@ -1,7 +1,7 @@
 """Tests for bndapp.bound_application."""
 import numpy as np
 import pytest
-from moirais.fn.bndapp import bound_application
+from morie.fn.bndapp import bound_application
 
 
 def test_bndapp_basic():

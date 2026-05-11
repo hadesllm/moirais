@@ -1,7 +1,7 @@
 """Tests for gh_loc_dp_crt.ghosal_local_dp_rate."""
 import numpy as np
 import pytest
-from moirais.fn.gh_loc_dp_crt import ghosal_local_dp_rate
+from morie.fn.gh_loc_dp_crt import ghosal_local_dp_rate
 
 
 def test_gh_loc_dp_crt_basic():

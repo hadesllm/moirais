@@ -1,6 +1,6 @@
 """Tests for spatial weights matrix."""
 import numpy as np
-from moirais.fn.sgwts import sgwts
+from morie.fn.sgwts import sgwts
 
 
 def test_sgwts_knn():

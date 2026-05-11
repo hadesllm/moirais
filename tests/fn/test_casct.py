@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.casct -- Case-control odds ratio."""
+"""Tests for morie.fn.casct -- Case-control odds ratio."""
 
 import pytest
-from moirais.fn.casct import case_control_or
+from morie.fn.casct import case_control_or
 
 
 class TestCaseControlOR:

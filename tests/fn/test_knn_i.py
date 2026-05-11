@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.knn_i -- KNN imputation."""
+"""Tests for morie.fn.knn_i -- KNN imputation."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.knn_i import knn_impute
+from morie.fn.knn_i import knn_impute
 
 
 class TestKNNImpute:

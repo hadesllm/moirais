@@ -1,7 +1,7 @@
 """Tests for epsg.epsilon_greedy."""
 import numpy as np
 import pytest
-from moirais.fn.epsg import epsilon_greedy
+from morie.fn.epsg import epsilon_greedy
 
 
 def test_epsg_basic():

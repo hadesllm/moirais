@@ -1,7 +1,7 @@
 """Tests for grlrex.geron_lr_exponential_schedule."""
 import numpy as np
 import pytest
-from moirais.fn.grlrex import geron_lr_exponential_schedule
+from morie.fn.grlrex import geron_lr_exponential_schedule
 
 
 def test_grlrex_basic():

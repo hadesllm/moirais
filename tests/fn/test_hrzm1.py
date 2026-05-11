@@ -1,7 +1,7 @@
 """Tests for hrzm1.horowitz_mixture_model."""
 import numpy as np
 import pytest
-from moirais.fn.hrzm1 import horowitz_mixture_model
+from morie.fn.hrzm1 import horowitz_mixture_model
 
 
 def test_hrzm1_basic():

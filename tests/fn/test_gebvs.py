@@ -1,7 +1,7 @@
 """Tests for gebvs.gebv_selection."""
 import numpy as np
 import pytest
-from moirais.fn.gebvs import gebv_selection
+from morie.fn.gebvs import gebv_selection
 
 
 def test_gebvs_basic():

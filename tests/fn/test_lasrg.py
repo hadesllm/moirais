@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lasrg — LASSO regression."""
+"""Tests for morie.fn.lasrg — LASSO regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lasrg import lasso_regression
+from morie.fn.lasrg import lasso_regression
 
 
 def test_lasso_sparsity():

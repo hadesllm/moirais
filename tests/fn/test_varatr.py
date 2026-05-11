@@ -1,7 +1,7 @@
 """Tests for varatr.value_at_risk."""
 import numpy as np
 import pytest
-from moirais.fn.varatr import value_at_risk
+from morie.fn.varatr import value_at_risk
 
 
 def test_varatr_basic():

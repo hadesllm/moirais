@@ -1,7 +1,7 @@
 """Tests for llavx.llava_visual_chat."""
 import numpy as np
 import pytest
-from moirais.fn.llavx import llava_visual_chat
+from morie.fn.llavx import llava_visual_chat
 
 
 def test_llavx_basic():

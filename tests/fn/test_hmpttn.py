@@ -1,7 +1,7 @@
 """Tests for hmpttn.geron_pytorch_tensor."""
 import numpy as np
 import pytest
-from moirais.fn.hmpttn import geron_pytorch_tensor
+from morie.fn.hmpttn import geron_pytorch_tensor
 
 
 def test_hmpttn_basic():

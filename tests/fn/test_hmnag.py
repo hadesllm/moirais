@@ -1,7 +1,7 @@
 """Tests for hmnag.geron_nesterov."""
 import numpy as np
 import pytest
-from moirais.fn.hmnag import geron_nesterov
+from morie.fn.hmnag import geron_nesterov
 
 
 def test_hmnag_basic():

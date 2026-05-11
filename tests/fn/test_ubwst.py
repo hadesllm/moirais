@@ -1,7 +1,7 @@
 """Test ubwst."""
 import numpy as np
 import pytest
-from moirais.fn.ubwst import ubwst
+from morie.fn.ubwst import ubwst
 
 
 def test_ubwst_basic():

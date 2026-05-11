@@ -1,7 +1,7 @@
 """Tests for tmltrn.tmle_transportability."""
 import numpy as np
 import pytest
-from moirais.fn.tmltrn import tmle_transportability
+from morie.fn.tmltrn import tmle_transportability
 
 
 def test_tmltrn_basic():

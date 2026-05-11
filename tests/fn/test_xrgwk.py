@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrgwk -- GWR kernel function"""
+"""Tests for morie.fn.xrgwk -- GWR kernel function"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrgwk import gwr_kernel
+from morie.fn.xrgwk import gwr_kernel
 
 
 class TestGwrKernel:

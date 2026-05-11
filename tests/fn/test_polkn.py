@@ -1,7 +1,7 @@
 """Tests for polkn.polynomial_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.polkn import polynomial_kernel
+from morie.fn.polkn import polynomial_kernel
 
 
 def test_polkn_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dmxlr -- DNA mixture likelihood ratio."""
+"""Tests for morie.fn.dmxlr -- DNA mixture likelihood ratio."""
 
 import numpy as np
 import pytest
-from moirais.fn.dmxlr import dmxlr
+from morie.fn.dmxlr import dmxlr
 
 
 class TestDmxlr:

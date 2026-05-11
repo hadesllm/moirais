@@ -1,7 +1,7 @@
 """Test envelope_detect (envdt)."""
 import numpy as np
-from moirais.fn.envdt import envelope_detect, envdt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.envdt import envelope_detect, envdt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestEnvelopeDetect:

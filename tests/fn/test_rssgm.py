@@ -1,6 +1,6 @@
 """Tests for rssgm.py - Reassigned spectrogram."""
 import numpy as np
-from moirais.fn.rssgm import reassigned_spectrogram, rssgm
+from morie.fn.rssgm import reassigned_spectrogram, rssgm
 
 
 def test_reassigned_returns_result():

@@ -1,7 +1,7 @@
 """Tests for rnwatr."""
 import numpy as np
 import pytest
-from moirais.fn.rnwatr import rnwatr
+from morie.fn.rnwatr import rnwatr
 
 
 def test_rnwatr_basic():
@@ -27,5 +27,5 @@ def test_rnwatr_no_data():
 
 
 def test_rnwatr_alias():
-    from moirais.fn.rnwatr import rnwatr
+    from morie.fn.rnwatr import rnwatr
     assert rnwatr is rnwatr

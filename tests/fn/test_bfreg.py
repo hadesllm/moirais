@@ -1,6 +1,6 @@
 """Tests for biweight_regression."""
 import numpy as np, pytest
-from moirais.fn.bfreg import biweight_regression
+from morie.fn.bfreg import biweight_regression
 
 
 class TestBiweightRegression:

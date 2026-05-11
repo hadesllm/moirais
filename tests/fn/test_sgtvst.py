@@ -1,7 +1,7 @@
 """Tests for sgtvst.sgt_vertex_strengths."""
 import numpy as np
 import pytest
-from moirais.fn.sgtvst import sgt_vertex_strengths
+from morie.fn.sgtvst import sgt_vertex_strengths
 
 
 def test_sgtvst_basic():

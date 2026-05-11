@@ -1,7 +1,7 @@
 """Tests for unetbk.unet_backbone."""
 import numpy as np
 import pytest
-from moirais.fn.unetbk import unet_backbone
+from morie.fn.unetbk import unet_backbone
 
 
 def test_unetbk_basic():

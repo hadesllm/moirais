@@ -1,7 +1,7 @@
 """Test erosn."""
 import numpy as np
 import pytest
-from moirais.fn.erosn import erosn
+from morie.fn.erosn import erosn
 
 
 def test_erosn_basic():

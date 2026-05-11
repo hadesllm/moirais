@@ -1,7 +1,7 @@
 """Tests for binseg.binary_segmentation."""
 import numpy as np
 import pytest
-from moirais.fn.binseg import binary_segmentation
+from morie.fn.binseg import binary_segmentation
 
 
 def test_binseg_basic():

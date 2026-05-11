@@ -1,7 +1,7 @@
 """Tests for hrzaul.horowitz_additive_unknown_link."""
 import numpy as np
 import pytest
-from moirais.fn.hrzaul import horowitz_additive_unknown_link
+from morie.fn.hrzaul import horowitz_additive_unknown_link
 
 
 def test_hrzaul_basic():

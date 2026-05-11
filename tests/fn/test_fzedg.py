@@ -1,7 +1,7 @@
 """Tests for fzedg.fauzi_edgeworth_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.fzedg import fauzi_edgeworth_quantile
+from morie.fn.fzedg import fauzi_edgeworth_quantile
 
 
 def test_fzedg_basic():

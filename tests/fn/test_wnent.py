@@ -1,7 +1,7 @@
 """Tests for Wiener entropy."""
 import numpy as np
 import pytest
-from moirais.fn.wnent import wiener_entropy, wnent
+from morie.fn.wnent import wiener_entropy, wnent
 
 
 def test_noise():

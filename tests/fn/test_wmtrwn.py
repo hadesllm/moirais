@@ -1,7 +1,7 @@
 """Tests for wmtrwn.weights_row_normalize."""
 import numpy as np
 import pytest
-from moirais.fn.wmtrwn import weights_row_normalize
+from morie.fn.wmtrwn import weights_row_normalize
 
 
 def test_wmtrwn_basic():

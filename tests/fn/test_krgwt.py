@@ -1,7 +1,7 @@
 """Test krgwt."""
 import numpy as np
 import pytest
-from moirais.fn.krgwt import krgwt
+from morie.fn.krgwt import krgwt
 
 
 def test_krgwt_basic():

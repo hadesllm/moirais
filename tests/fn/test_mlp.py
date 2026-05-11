@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.mlp — simple MLP."""
+"""Tests for morie.fn.mlp — simple MLP."""
 import numpy as np
-from moirais.fn.mlp import mlp_simple
+from morie.fn.mlp import mlp_simple
 
 
 class TestMLP:

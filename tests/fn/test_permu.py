@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.permu."""
+"""Tests for morie.fn.permu."""
 import numpy as np
-from moirais.fn.permu import permu
+from morie.fn.permu import permu
 
 
 def test_permu_smoke():
@@ -12,7 +12,7 @@ def test_permu_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.permu import cheatsheet
+    from morie.fn.permu import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

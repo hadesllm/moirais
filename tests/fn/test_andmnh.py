@@ -1,7 +1,7 @@
 """Tests for andmnh.andrews_monahan_hac."""
 import numpy as np
 import pytest
-from moirais.fn.andmnh import andrews_monahan_hac
+from morie.fn.andmnh import andrews_monahan_hac
 
 
 def test_andmnh_basic():

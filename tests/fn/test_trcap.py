@@ -1,7 +1,7 @@
 """Test trcap."""
 import numpy as np
 import pytest
-from moirais.fn.trcap import trcap
+from morie.fn.trcap import trcap
 
 
 def test_trcap_basic():

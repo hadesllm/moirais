@@ -1,7 +1,7 @@
 """Tests for dpglap.dp_laplace_mechanism."""
 import numpy as np
 import pytest
-from moirais.fn.dpglap import dp_laplace_mechanism
+from morie.fn.dpglap import dp_laplace_mechanism
 
 
 def test_dpglap_basic():

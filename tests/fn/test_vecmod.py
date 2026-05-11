@@ -1,7 +1,7 @@
 """Tests for vecmod.vector_error_correction."""
 import numpy as np
 import pytest
-from moirais.fn.vecmod import vector_error_correction
+from morie.fn.vecmod import vector_error_correction
 
 
 def test_vecmod_basic():

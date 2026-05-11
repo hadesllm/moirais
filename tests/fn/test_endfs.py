@@ -1,7 +1,7 @@
 """Test endfs."""
 import numpy as np
 import pytest
-from moirais.fn.endfs import endfs
+from morie.fn.endfs import endfs
 
 
 def test_endfs_basic():

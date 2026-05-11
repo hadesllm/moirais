@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.sctrl -- Synthetic control."""
+"""Tests for morie.fn.sctrl -- Synthetic control."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.sctrl import synthetic_control, sctrl
-from moirais.fn._containers import ESRes
+from morie.fn.sctrl import synthetic_control, sctrl
+from morie.fn._containers import ESRes
 
 
 def _make_sc_panel(n_ctrl=5, n_pre=8, n_post=4, effect=5.0, seed=42):

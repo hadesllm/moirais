@@ -1,7 +1,7 @@
 """Tests for kmrmsn.kamath_rms_norm."""
 import numpy as np
 import pytest
-from moirais.fn.kmrmsn import kamath_rms_norm
+from morie.fn.kmrmsn import kamath_rms_norm
 
 
 def test_kmrmsn_basic():

@@ -1,6 +1,6 @@
 """Tests for wvcor.py - Wavelet correlation."""
 import numpy as np
-from moirais.fn.wvcor import wavelet_correlation, wvcor
+from morie.fn.wvcor import wavelet_correlation, wvcor
 
 
 def test_wvcor_returns_descriptive_result():

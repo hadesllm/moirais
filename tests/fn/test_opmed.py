@@ -1,7 +1,7 @@
 """Test opmed."""
 import numpy as np
 import pytest
-from moirais.fn.opmed import opmed
+from morie.fn.opmed import opmed
 
 
 def test_opmed_basic():

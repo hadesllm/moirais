@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sdmcf."""
+"""Tests for morie.fn.sdmcf."""
 import numpy as np
 import pytest
-from moirais.fn.sdmcf import sdmcf
+from morie.fn.sdmcf import sdmcf
 
 
 class TestSdmcf:

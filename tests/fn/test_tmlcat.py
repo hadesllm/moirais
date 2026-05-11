@@ -1,7 +1,7 @@
 """Tests for tmlcat.tmle_categorical_outcome."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcat import tmle_categorical_outcome
+from morie.fn.tmlcat import tmle_categorical_outcome
 
 
 def test_tmlcat_basic():

@@ -1,6 +1,6 @@
 """Tests for liftw.py - Lifting scheme DWT."""
 import numpy as np
-from moirais.fn.liftw import lifting_dwt, liftw
+from morie.fn.liftw import lifting_dwt, liftw
 
 
 def test_liftw_returns_descriptive_result():

@@ -1,7 +1,7 @@
 """Test ghtim."""
 import numpy as np
 import pytest
-from moirais.fn.ghtim import ghtim
+from morie.fn.ghtim import ghtim
 
 
 def test_ghtim_basic():

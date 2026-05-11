@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vctrp — repeat victimization."""
+"""Tests for morie.fn.vctrp — repeat victimization."""
 
 import pytest
-from moirais.fn.vctrp import victim_repeat
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.vctrp import victim_repeat
+from morie.fn._containers import DescriptiveResult
 
 
 class TestVictimRepeat:

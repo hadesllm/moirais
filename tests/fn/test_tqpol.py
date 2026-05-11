@@ -1,7 +1,7 @@
 """Tests for tqpol.turboquant_polar_transform."""
 import numpy as np
 import pytest
-from moirais.fn.tqpol import turboquant_polar_transform
+from morie.fn.tqpol import turboquant_polar_transform
 
 
 def test_tqpol_basic():

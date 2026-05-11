@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pqcmp — PolarQuant full compression."""
+"""Tests for morie.fn.pqcmp — PolarQuant full compression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pqcmp import polar_compress
+from morie.fn.pqcmp import polar_compress
 
 
 class TestPolarCompress:

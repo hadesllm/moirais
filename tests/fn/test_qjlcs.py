@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qjlcs — QJL cosine similarity."""
+"""Tests for morie.fn.qjlcs — QJL cosine similarity."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qjlcs import qjl_cosine_sim
+from morie.fn.qjlcs import qjl_cosine_sim
 
 
 class TestQjlCosineSim:

@@ -1,7 +1,7 @@
 """Tests for rcaus.random_cause_refutation."""
 import numpy as np
 import pytest
-from moirais.fn.rcaus import random_cause_refutation
+from morie.fn.rcaus import random_cause_refutation
 
 
 def test_rcaus_basic():

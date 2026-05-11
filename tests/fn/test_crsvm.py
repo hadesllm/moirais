@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.crsvm import crsvm
+from morie.fn.crsvm import crsvm
 
 
 class TestCrsvm:

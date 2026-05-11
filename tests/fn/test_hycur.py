@@ -1,7 +1,7 @@
 """Test hycur."""
 import numpy as np
 import pytest
-from moirais.fn.hycur import hycur
+from morie.fn.hycur import hycur
 
 
 def test_hycur_basic():

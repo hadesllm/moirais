@@ -1,7 +1,7 @@
 """Tests for gxgnt2.gxg_interaction."""
 import numpy as np
 import pytest
-from moirais.fn.gxgnt2 import gxg_interaction
+from morie.fn.gxgnt2 import gxg_interaction
 
 
 def test_gxgnt2_basic():

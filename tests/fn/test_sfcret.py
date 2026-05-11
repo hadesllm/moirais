@@ -1,7 +1,7 @@
 """Tests for sfcret.surface_retrieval."""
 import numpy as np
 import pytest
-from moirais.fn.sfcret import surface_retrieval
+from morie.fn.sfcret import surface_retrieval
 
 
 def test_sfcret_basic():

@@ -1,7 +1,7 @@
 """Tests for volgargd.vol_garch_ged."""
 import numpy as np
 import pytest
-from moirais.fn.volgargd import vol_garch_ged
+from morie.fn.volgargd import vol_garch_ged
 
 
 def test_volgargd_basic():

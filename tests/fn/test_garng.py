@@ -1,7 +1,7 @@
 """Test garng."""
 import numpy as np
 import pytest
-from moirais.fn.garng import garng
+from morie.fn.garng import garng
 
 
 def test_garng_basic():

@@ -1,7 +1,7 @@
 """Tests for jomape.joseph_mape."""
 import numpy as np
 import pytest
-from moirais.fn.jomape import joseph_mape
+from morie.fn.jomape import joseph_mape
 
 
 def test_jomape_basic():

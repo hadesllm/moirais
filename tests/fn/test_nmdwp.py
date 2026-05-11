@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmdwp -- DW-NOMINATE polarization"""
+"""Tests for morie.fn.nmdwp -- DW-NOMINATE polarization"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmdwp import dwnominate_polar
+from morie.fn.nmdwp import dwnominate_polar
 
 
 class TestDwnominatePolar:

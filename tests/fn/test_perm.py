@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.perm -- Permutation test."""
+"""Tests for morie.fn.perm -- Permutation test."""
 
 import numpy as np
-from moirais.fn.perm import permutation_test, perm
-from moirais.fn._containers import TestResult
+from morie.fn.perm import permutation_test, perm
+from morie.fn._containers import TestResult
 
 
 class TestPerm:

@@ -1,7 +1,7 @@
 """Tests for varF.vector_autoregression."""
 import numpy as np
 import pytest
-from moirais.fn.varF import vector_autoregression
+from morie.fn.varF import vector_autoregression
 
 
 def test_varF_basic():

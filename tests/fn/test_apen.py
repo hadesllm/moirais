@@ -1,7 +1,7 @@
 """Tests for apen — Approximate entropy."""
 import numpy as np
-from moirais.fn.apen import approx_entropy
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.apen import approx_entropy
+from morie.fn._containers import DescriptiveResult
 
 
 def test_apen_basic(rng):

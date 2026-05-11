@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.slag -- Newton's law of cooling."""
+"""Tests for morie.fn.slag -- Newton's law of cooling."""
 
 import numpy as np
-from moirais.fn.slag import newton_cooling, slag
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.slag import newton_cooling, slag
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSlag:

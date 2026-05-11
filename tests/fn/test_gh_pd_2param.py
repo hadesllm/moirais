@@ -1,7 +1,7 @@
 """Tests for gh_pd_2param.ghosal_poisson_dirichlet."""
 import numpy as np
 import pytest
-from moirais.fn.gh_pd_2param import ghosal_poisson_dirichlet
+from morie.fn.gh_pd_2param import ghosal_poisson_dirichlet
 
 
 def test_gh_pd_2param_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.siutyp — SIU by type."""
+"""Tests for morie.fn.siutyp — SIU by type."""
 
 import pytest
-from moirais.fn.siutyp import siu_by_type
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.siutyp import siu_by_type
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSiuByType:

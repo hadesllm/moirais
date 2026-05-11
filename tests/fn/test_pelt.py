@@ -1,7 +1,7 @@
 """Tests for pelt.pelt."""
 import numpy as np
 import pytest
-from moirais.fn.pelt import pelt
+from morie.fn.pelt import pelt
 
 
 def test_pelt_basic():

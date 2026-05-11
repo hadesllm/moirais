@@ -1,7 +1,7 @@
 """Tests for rng236.rangayyan_ch4_complex_cepstrum_definition."""
 import numpy as np
 import pytest
-from moirais.fn.rng236 import rangayyan_ch4_complex_cepstrum_definition
+from morie.fn.rng236 import rangayyan_ch4_complex_cepstrum_definition
 
 
 def test_rng236_basic():

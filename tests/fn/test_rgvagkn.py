@@ -1,7 +1,7 @@
 """Tests for rgvagkn.rangayyan_vag_knee_cartilage."""
 import numpy as np
 import pytest
-from moirais.fn.rgvagkn import rangayyan_vag_knee_cartilage
+from morie.fn.rgvagkn import rangayyan_vag_knee_cartilage
 
 
 def test_rgvagkn_basic():

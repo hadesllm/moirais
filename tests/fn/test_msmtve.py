@@ -1,7 +1,7 @@
 """Tests for msmtve.msm_time_varying_exposure."""
 import numpy as np
 import pytest
-from moirais.fn.msmtve import msm_time_varying_exposure
+from morie.fn.msmtve import msm_time_varying_exposure
 
 
 def test_msmtve_basic():

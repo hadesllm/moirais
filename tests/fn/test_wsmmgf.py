@@ -1,7 +1,7 @@
 """Tests for wsmmgf.wasserman_mgf."""
 import numpy as np
 import pytest
-from moirais.fn.wsmmgf import wasserman_mgf
+from morie.fn.wsmmgf import wasserman_mgf
 
 
 def test_wsmmgf_basic():

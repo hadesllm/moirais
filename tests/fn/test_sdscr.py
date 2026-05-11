@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sdscr -- discriminant validity."""
+"""Tests for morie.fn.sdscr -- discriminant validity."""
 
 import pandas as pd
-from moirais.fn.sdscr import subscale_discriminant
+from morie.fn.sdscr import subscale_discriminant
 
 
 class TestSubscaleDiscriminant:

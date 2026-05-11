@@ -1,7 +1,7 @@
 """Tests for hdpgmm.hdp_gaussian_mixture."""
 import numpy as np
 import pytest
-from moirais.fn.hdpgmm import hdp_gaussian_mixture
+from morie.fn.hdpgmm import hdp_gaussian_mixture
 
 
 def test_hdpgmm_basic():

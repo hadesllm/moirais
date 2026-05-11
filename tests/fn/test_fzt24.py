@@ -1,7 +1,7 @@
 """Tests for fzt24.fauzi_thm2_4_mise_brdkdfe."""
 import numpy as np
 import pytest
-from moirais.fn.fzt24 import fauzi_thm2_4_mise_brdkdfe
+from morie.fn.fzt24 import fauzi_thm2_4_mise_brdkdfe
 
 
 def test_fzt24_basic():

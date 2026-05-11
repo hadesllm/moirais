@@ -1,7 +1,7 @@
 """Tests for cvxcjg.boyd_conjugate."""
 import numpy as np
 import pytest
-from moirais.fn.cvxcjg import boyd_conjugate
+from morie.fn.cvxcjg import boyd_conjugate
 
 
 def test_cvxcjg_basic():

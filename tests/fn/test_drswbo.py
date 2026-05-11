@@ -1,7 +1,7 @@
 """Tests for drswbo.dr_did_stratified_block."""
 import numpy as np
 import pytest
-from moirais.fn.drswbo import dr_did_stratified_block
+from morie.fn.drswbo import dr_did_stratified_block
 
 
 def test_drswbo_basic():

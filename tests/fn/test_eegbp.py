@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.eegbp -- EEG band power."""
+"""Tests for morie.fn.eegbp -- EEG band power."""
 
 import numpy as np
 import pytest
 
 pytest.importorskip("scipy")
 
-from moirais.fn.eegbp import eegbp
+from morie.fn.eegbp import eegbp
 
 
 class TestEegBp:

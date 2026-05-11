@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.expos — Exposure assessment."""
+"""Tests for morie.fn.expos — Exposure assessment."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.expos import exposure_assessment
+from morie.fn.expos import exposure_assessment
 
 
 class TestExposureAssessment:

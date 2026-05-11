@@ -1,7 +1,7 @@
 """Tests for postrt.post_stratification."""
 import numpy as np
 import pytest
-from moirais.fn.postrt import post_stratification
+from morie.fn.postrt import post_stratification
 
 
 def test_postrt_basic():

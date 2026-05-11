@@ -1,7 +1,7 @@
 """Tests for sasRec.sasrec."""
 import numpy as np
 import pytest
-from moirais.fn.sasRec import sasrec
+from morie.fn.sasRec import sasrec
 
 
 def test_sasRec_basic():

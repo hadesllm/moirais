@@ -1,7 +1,7 @@
 """Tests for gb32l3.gibbons_vandermonde_id2."""
 import numpy as np
 import pytest
-from moirais.fn.gb32l3 import gibbons_vandermonde_id2
+from morie.fn.gb32l3 import gibbons_vandermonde_id2
 
 
 def test_gb32l3_basic():

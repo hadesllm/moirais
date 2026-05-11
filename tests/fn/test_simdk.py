@@ -1,7 +1,7 @@
 """Tests for simdk."""
 import numpy as np
 import pytest
-from moirais.fn.simdk import simdk
+from morie.fn.simdk import simdk
 
 
 def test_simdk_basic():
@@ -27,5 +27,5 @@ def test_simdk_no_data():
 
 
 def test_simdk_alias():
-    from moirais.fn.simdk import simdk
+    from morie.fn.simdk import simdk
     assert simdk is simdk

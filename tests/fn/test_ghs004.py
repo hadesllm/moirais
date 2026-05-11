@@ -1,7 +1,7 @@
 """Tests for ghs004.ghosal_ch2_exponential_link_density."""
 import numpy as np
 import pytest
-from moirais.fn.ghs004 import ghosal_ch2_exponential_link_density
+from morie.fn.ghs004 import ghosal_ch2_exponential_link_density
 
 
 def test_ghs004_basic():

@@ -1,7 +1,7 @@
 """Test ppjcq."""
 import numpy as np
 import pytest
-from moirais.fn.ppjcq import ppjcq
+from morie.fn.ppjcq import ppjcq
 
 
 def test_ppjcq_basic():

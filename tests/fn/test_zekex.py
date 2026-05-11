@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zekex -- Kernel density exposure"""
+"""Tests for morie.fn.zekex -- Kernel density exposure"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zekex import kernel_exposure
+from morie.fn.zekex import kernel_exposure
 
 
 class TestKernelExposure:

@@ -1,7 +1,7 @@
 """Test cslvy."""
 import numpy as np
 import pytest
-from moirais.fn.cslvy import cslvy
+from morie.fn.cslvy import cslvy
 
 
 def test_cslvy_basic():

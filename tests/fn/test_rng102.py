@@ -1,7 +1,7 @@
 """Tests for rng102.rangayyan_ch3_integral_general."""
 import numpy as np
 import pytest
-from moirais.fn.rng102 import rangayyan_ch3_integral_general
+from morie.fn.rng102 import rangayyan_ch3_integral_general
 
 
 def test_rng102_basic():

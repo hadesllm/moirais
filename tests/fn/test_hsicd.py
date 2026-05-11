@@ -1,7 +1,7 @@
 """Tests for hsicd.hsic_independence."""
 import numpy as np
 import pytest
-from moirais.fn.hsicd import hsic_independence
+from morie.fn.hsicd import hsic_independence
 
 
 def test_hsicd_basic():

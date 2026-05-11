@@ -1,7 +1,7 @@
 """Tests for rgeqn4.rangayyan_ch4_qrs_slope."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn4 import rangayyan_ch4_qrs_slope
+from morie.fn.rgeqn4 import rangayyan_ch4_qrs_slope
 
 
 def test_rgeqn4_basic():

@@ -1,7 +1,7 @@
 """Tests for bivand20132u56.bivand2013_chapter_2_unnumbered_56."""
 import numpy as np
 import pytest
-from moirais.fn.bivand20132u56 import bivand2013_chapter_2_unnumbered_56
+from morie.fn.bivand20132u56 import bivand2013_chapter_2_unnumbered_56
 
 
 def test_bivand20132u56_basic():

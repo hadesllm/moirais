@@ -1,7 +1,7 @@
 """Tests for gamtd.n_step_td."""
 import numpy as np
 import pytest
-from moirais.fn.gamtd import n_step_td
+from morie.fn.gamtd import n_step_td
 
 
 def test_gamtd_basic():

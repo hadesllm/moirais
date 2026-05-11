@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.cglm — Complex survey GLM."""
+"""Tests for morie.fn.cglm — Complex survey GLM."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.cglm import complex_survey_glm
+from morie.fn.cglm import complex_survey_glm
 
 
 @pytest.fixture()

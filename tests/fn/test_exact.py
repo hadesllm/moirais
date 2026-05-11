@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.exact — exact permutation test."""
+"""Tests for morie.fn.exact — exact permutation test."""
 import numpy as np
 import pytest
-from moirais.fn.exact import exact_perm_test
+from morie.fn.exact import exact_perm_test
 
 
 class TestExactPermTest:

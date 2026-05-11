@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.vggau -- Gaussian variogram model"""
+"""Tests for morie.fn.vggau -- Gaussian variogram model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.vggau import vario_gaussian
+from morie.fn.vggau import vario_gaussian
 
 
 class TestVarioGaussian:

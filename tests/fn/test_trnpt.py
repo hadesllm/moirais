@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.trnpt import turning_points_test, trnpt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.trnpt import turning_points_test, trnpt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTurningPointsTest:

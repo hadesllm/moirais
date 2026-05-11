@@ -1,7 +1,7 @@
 """Tests for smspln.smoothing_spline."""
 import numpy as np
 import pytest
-from moirais.fn.smspln import smoothing_spline
+from morie.fn.smspln import smoothing_spline
 
 
 def test_smspln_basic():

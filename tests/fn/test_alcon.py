@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.alcon import algorithm_convergence, alcon
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.alcon import algorithm_convergence, alcon
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAlgorithmConvergence:

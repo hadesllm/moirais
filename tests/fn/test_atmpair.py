@@ -1,7 +1,7 @@
 """Tests for atmpair.atom_pair_fp."""
 import numpy as np
 import pytest
-from moirais.fn.atmpair import atom_pair_fp
+from morie.fn.atmpair import atom_pair_fp
 
 
 def test_atmpair_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bwcv — Bandwidth selection via LOO cross-validation."""
+"""Tests for morie.fn.bwcv — Bandwidth selection via LOO cross-validation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bwcv import bwcv
+from morie.fn.bwcv import bwcv
 
 
 @pytest.fixture()

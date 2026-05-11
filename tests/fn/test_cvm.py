@@ -1,6 +1,6 @@
 """Tests for cramer_von_mises_test."""
 import numpy as np, pytest
-from moirais.fn.cvm import cramer_von_mises_test
+from morie.fn.cvm import cramer_von_mises_test
 
 
 class TestCramerVonMises:

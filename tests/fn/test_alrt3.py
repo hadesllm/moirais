@@ -1,6 +1,6 @@
 """Tests for alrt3 — suicide watch alert."""
 import pandas as pd
-from moirais.fn.alrt3 import alrt_sw
+from morie.fn.alrt3 import alrt_sw
 
 def test_alrt3_basic(otis_df):
     result = alrt_sw(otis_df)
@@ -8,7 +8,7 @@ def test_alrt3_basic(otis_df):
 
 
 def test_cheatsheet():
-    from moirais.fn.alrt3 import cheatsheet
+    from morie.fn.alrt3 import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

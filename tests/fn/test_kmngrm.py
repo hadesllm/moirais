@@ -1,7 +1,7 @@
 """Tests for kmngrm.kamath_ngram_language_model."""
 import numpy as np
 import pytest
-from moirais.fn.kmngrm import kamath_ngram_language_model
+from morie.fn.kmngrm import kamath_ngram_language_model
 
 
 def test_kmngrm_basic():

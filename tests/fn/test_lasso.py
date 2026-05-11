@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.lasso -- Lasso regression (L1)."""
+"""Tests for morie.fn.lasso -- Lasso regression (L1)."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.lasso import lasso_regression, lasso
-from moirais.fn._containers import RegressionResult
+from morie.fn.lasso import lasso_regression, lasso
+from morie.fn._containers import RegressionResult
 
 
 @pytest.fixture()

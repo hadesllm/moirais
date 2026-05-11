@@ -1,7 +1,7 @@
 """Tests for rfmax."""
 import numpy as np
 import pytest
-from moirais.fn.rfmax import rfmax
+from morie.fn.rfmax import rfmax
 
 
 def test_rfmax_basic():
@@ -27,5 +27,5 @@ def test_rfmax_no_data():
 
 
 def test_rfmax_alias():
-    from moirais.fn.rfmax import rfmax
+    from morie.fn.rfmax import rfmax
     assert rfmax is rfmax

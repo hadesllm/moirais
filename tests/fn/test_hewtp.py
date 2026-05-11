@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hewtp -- willingness to pay."""
+"""Tests for morie.fn.hewtp -- willingness to pay."""
 
 import pytest
-from moirais.fn.hewtp import willingness_to_pay
+from morie.fn.hewtp import willingness_to_pay
 
 
 class TestWTP:

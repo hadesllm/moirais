@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrspz -- Spatial zero-inflated Poisson"""
+"""Tests for morie.fn.xrspz -- Spatial zero-inflated Poisson"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrspz import spatial_zip
+from morie.fn.xrspz import spatial_zip
 
 
 class TestSpatialZip:

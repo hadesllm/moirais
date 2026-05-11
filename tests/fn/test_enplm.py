@@ -1,7 +1,7 @@
 """Test enplm."""
 import numpy as np
 import pytest
-from moirais.fn.enplm import enplm
+from morie.fn.enplm import enplm
 
 
 def test_enplm_basic():

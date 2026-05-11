@@ -1,7 +1,7 @@
 """Test dssim."""
 import numpy as np
 import pytest
-from moirais.fn.dssim import dssim
+from morie.fn.dssim import dssim
 
 
 def test_dssim_basic():

@@ -1,6 +1,6 @@
 """Tests for lpcco.py - LPC coefficients."""
 import numpy as np
-from moirais.fn.lpcco import lpc_coefficients_fn, lpcco
+from morie.fn.lpcco import lpc_coefficients_fn, lpcco
 
 
 def test_lpcco_returns_result():

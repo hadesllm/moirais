@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bgpcl -- Bayesian GP classification."""
+"""Tests for morie.fn.bgpcl -- Bayesian GP classification."""
 
 import numpy as np
-from moirais.fn.bgpcl import bayesian_gp_classification
+from morie.fn.bgpcl import bayesian_gp_classification
 
 
 def test_returns_dict():

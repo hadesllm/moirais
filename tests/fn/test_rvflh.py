@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rvflh -- Causal reversal test."""
+"""Tests for morie.fn.rvflh -- Causal reversal test."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.rvflh import causal_reversal_test, rvflh
-from moirais.fn._containers import TestResult
+from morie.fn.rvflh import causal_reversal_test, rvflh
+from morie.fn._containers import TestResult
 
 
 class TestRvflh:

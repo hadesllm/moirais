@@ -1,7 +1,7 @@
 """Test gefrm."""
 import numpy as np
 import pytest
-from moirais.fn.gefrm import gefrm
+from morie.fn.gefrm import gefrm
 
 
 def test_gefrm_basic():

@@ -1,7 +1,7 @@
 """Tests for kswin.kswin."""
 import numpy as np
 import pytest
-from moirais.fn.kswin import kswin
+from morie.fn.kswin import kswin
 
 
 def test_kswin_basic():

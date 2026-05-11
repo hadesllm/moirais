@@ -1,7 +1,7 @@
 """Tests for the headless polyglot REPL engine."""
 import os
 import pytest
-from moirais.polyglot import PolyglotEngine, detect_language, ExecResult, LABELS, LANGUAGES
+from morie.polyglot import PolyglotEngine, detect_language, ExecResult, LABELS, LANGUAGES
 
 
 class TestDetectLanguage:
@@ -9,7 +9,7 @@ class TestDetectLanguage:
         assert detect_language("x = 5") == "python"
         assert detect_language("print('hello')") == "python"
         assert detect_language("import numpy") == "python"
-        assert detect_language("from moirais import fn") == "python"
+        assert detect_language("from morie import fn") == "python"
 
     def test_r_assignment(self):
         assert detect_language("x <- 5") == "r"

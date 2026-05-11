@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bwkrn — biweight kernel."""
+"""Tests for morie.fn.bwkrn — biweight kernel."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.bwkrn import bwkrn
+from morie.fn.bwkrn import bwkrn
 
 
 class TestBwkrn:

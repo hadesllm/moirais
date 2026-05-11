@@ -1,7 +1,7 @@
 """Tests for hml2r.geron_l2_regularization."""
 import numpy as np
 import pytest
-from moirais.fn.hml2r import geron_l2_regularization
+from morie.fn.hml2r import geron_l2_regularization
 
 
 def test_hml2r_basic():

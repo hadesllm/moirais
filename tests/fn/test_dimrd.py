@@ -1,7 +1,7 @@
 """Tests for dimrd.dimensionality_test."""
 import numpy as np
 import pytest
-from moirais.fn.dimrd import dimensionality_test
+from morie.fn.dimrd import dimensionality_test
 
 
 def test_dimrd_basic():

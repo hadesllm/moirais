@@ -1,7 +1,7 @@
 """Test nbmrn."""
 import numpy as np
 import pytest
-from moirais.fn.nbmrn import nbmrn
+from morie.fn.nbmrn import nbmrn
 
 
 def test_nbmrn_basic():

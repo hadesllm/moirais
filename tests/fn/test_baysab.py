@@ -1,7 +1,7 @@
 """Tests for baysab.bayes_a_alpha."""
 import numpy as np
 import pytest
-from moirais.fn.baysab import bayes_a_alpha
+from morie.fn.baysab import bayes_a_alpha
 
 
 def test_baysab_basic():

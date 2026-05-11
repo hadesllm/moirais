@@ -1,7 +1,7 @@
 """Tests for rkfunc.ripley_k."""
 import numpy as np
 import pytest
-from moirais.fn.rkfunc import ripley_k
+from morie.fn.rkfunc import ripley_k
 
 
 def test_rkfunc_basic():

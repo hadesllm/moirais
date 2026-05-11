@@ -1,7 +1,7 @@
 """Tests for hmtd.geron_td_learning."""
 import numpy as np
 import pytest
-from moirais.fn.hmtd import geron_td_learning
+from morie.fn.hmtd import geron_td_learning
 
 
 def test_hmtd_basic():

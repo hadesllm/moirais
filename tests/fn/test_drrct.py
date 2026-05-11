@@ -1,7 +1,7 @@
 """Tests for drrct.dr_rct_assisted_did."""
 import numpy as np
 import pytest
-from moirais.fn.drrct import dr_rct_assisted_did
+from morie.fn.drrct import dr_rct_assisted_did
 
 
 def test_drrct_basic():

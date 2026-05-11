@@ -1,7 +1,7 @@
 """Tests for sarla.spatial_ar_lag."""
 import numpy as np
 import pytest
-from moirais.fn.sarla import spatial_ar_lag
+from morie.fn.sarla import spatial_ar_lag
 
 
 def test_sarla_basic():

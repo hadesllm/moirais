@@ -1,7 +1,7 @@
 """Test hullfr."""
 import numpy as np
 import pytest
-from moirais.fn.hullfr import hullfr
+from morie.fn.hullfr import hullfr
 
 
 def test_hullfr_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.weibs -- Weibull survival model."""
+"""Tests for morie.fn.weibs -- Weibull survival model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.weibs import weibs
+from morie.fn.weibs import weibs
 
 
 @pytest.fixture()
@@ -45,5 +45,5 @@ def test_with_covariates(surv_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.weibs import cheatsheet
+    from morie.fn.weibs import cheatsheet
     assert "weibull" in cheatsheet().lower()

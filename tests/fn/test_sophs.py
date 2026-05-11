@@ -1,7 +1,7 @@
 """Test sophs."""
 import numpy as np
 import pytest
-from moirais.fn.sophs import sophs
+from morie.fn.sophs import sophs
 
 
 def test_sophs_basic():

@@ -1,7 +1,7 @@
 """Tests for percn.perceptron_activation."""
 import numpy as np
 import pytest
-from moirais.fn.percn import perceptron_activation
+from morie.fn.percn import perceptron_activation
 
 
 def test_percn_basic():

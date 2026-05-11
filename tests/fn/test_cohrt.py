@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cohrt -- Cohort risk ratio."""
+"""Tests for morie.fn.cohrt -- Cohort risk ratio."""
 
 import pytest
-from moirais.fn.cohrt import cohort_risk_ratio
+from morie.fn.cohrt import cohort_risk_ratio
 
 
 class TestCohortRR:

@@ -1,7 +1,7 @@
 """Tests for gb321.gibbons_runs_joint_dist."""
 import numpy as np
 import pytest
-from moirais.fn.gb321 import gibbons_runs_joint_dist
+from morie.fn.gb321 import gibbons_runs_joint_dist
 
 
 def test_gb321_basic():

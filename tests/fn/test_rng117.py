@@ -1,7 +1,7 @@
 """Tests for rng117.rangayyan_ch3_three_point_central_diff_transfer_function."""
 import numpy as np
 import pytest
-from moirais.fn.rng117 import rangayyan_ch3_three_point_central_diff_transfer_function
+from morie.fn.rng117 import rangayyan_ch3_three_point_central_diff_transfer_function
 
 
 def test_rng117_basic():

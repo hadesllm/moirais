@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sveir -- SVEIR model."""
+"""Tests for morie.fn.sveir -- SVEIR model."""
 
 import numpy as np
 import pytest
-from moirais.fn.sveir import sveir_model
+from morie.fn.sveir import sveir_model
 
 
 class TestSVEIR:

@@ -1,7 +1,7 @@
 """Tests for krigun.universal_kriging."""
 import numpy as np
 import pytest
-from moirais.fn.krigun import universal_kriging
+from morie.fn.krigun import universal_kriging
 
 
 def test_krigun_basic():

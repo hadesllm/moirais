@@ -1,7 +1,7 @@
 """Tests for rkhsf.rkhs_full."""
 import numpy as np
 import pytest
-from moirais.fn.rkhsf import rkhs_full
+from morie.fn.rkhsf import rkhs_full
 
 
 def test_rkhsf_basic():

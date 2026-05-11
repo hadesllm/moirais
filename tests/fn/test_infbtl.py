@@ -1,7 +1,7 @@
 """Tests for infbtl.information_bottleneck."""
 import numpy as np
 import pytest
-from moirais.fn.infbtl import information_bottleneck
+from morie.fn.infbtl import information_bottleneck
 
 
 def test_infbtl_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.awgnc — AWGN channel capacity."""
+"""Tests for morie.fn.awgnc — AWGN channel capacity."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.awgnc import awgnc
+from morie.fn.awgnc import awgnc
 
 
 class TestAwgnc:

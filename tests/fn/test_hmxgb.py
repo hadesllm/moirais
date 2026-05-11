@@ -1,7 +1,7 @@
 """Tests for hmxgb.geron_xgboost."""
 import numpy as np
 import pytest
-from moirais.fn.hmxgb import geron_xgboost
+from morie.fn.hmxgb import geron_xgboost
 
 
 def test_hmxgb_basic():

@@ -1,7 +1,7 @@
 """Test opldn."""
 import numpy as np
 import pytest
-from moirais.fn.opldn import opldn
+from morie.fn.opldn import opldn
 
 
 def test_opldn_basic():

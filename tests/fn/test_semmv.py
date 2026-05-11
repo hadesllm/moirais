@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.semmv."""
+"""Tests for morie.fn.semmv."""
 import numpy as np
-from moirais.fn.semmv import spatial_error_ml
+from morie.fn.semmv import spatial_error_ml
 
 
 def test_semmv_smoke():
@@ -17,7 +17,7 @@ def test_semmv_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.semmv import cheatsheet
+    from morie.fn.semmv import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

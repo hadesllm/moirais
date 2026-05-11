@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.matnm -- Matrix norms."""
+"""Tests for morie.fn.matnm -- Matrix norms."""
 
 import numpy as np
-from moirais.fn.matnm import matrix_norms, matnm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.matnm import matrix_norms, matnm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMatnm:

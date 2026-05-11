@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zegra -- Gravity-based accessibility"""
+"""Tests for morie.fn.zegra -- Gravity-based accessibility"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zegra import gravity_access
+from morie.fn.zegra import gravity_access
 
 
 class TestGravityAccess:

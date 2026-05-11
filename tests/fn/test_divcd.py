@@ -1,7 +1,7 @@
 """Tests for divcd.divergent_transitions_count."""
 import numpy as np
 import pytest
-from moirais.fn.divcd import divergent_transitions_count
+from morie.fn.divcd import divergent_transitions_count
 
 
 def test_divcd_basic():

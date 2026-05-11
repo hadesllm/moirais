@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.iccfn -- ICC curve data."""
+"""Tests for morie.fn.iccfn -- ICC curve data."""
 import numpy as np
-from moirais.fn.iccfn import icc_curve_data, iccfn
+from morie.fn.iccfn import icc_curve_data, iccfn
 
 
 def test_alias():

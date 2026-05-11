@@ -1,7 +1,7 @@
 """Tests for eslmht.esl_holm_bonferroni."""
 import numpy as np
 import pytest
-from moirais.fn.eslmht import esl_holm_bonferroni
+from morie.fn.eslmht import esl_holm_bonferroni
 
 
 def test_eslmht_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.carbym."""
+"""Tests for morie.fn.carbym."""
 import numpy as np
 import pytest
-from moirais.fn.carbym import carbym
+from morie.fn.carbym import carbym
 
 
 class TestCarbym:

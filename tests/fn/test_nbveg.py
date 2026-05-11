@@ -1,7 +1,7 @@
 """Test nbveg."""
 import numpy as np
 import pytest
-from moirais.fn.nbveg import nbveg
+from morie.fn.nbveg import nbveg
 
 
 def test_nbveg_basic():

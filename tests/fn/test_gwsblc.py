@@ -1,7 +1,7 @@
 """Tests for gwsblc.gwas_block_combine."""
 import numpy as np
 import pytest
-from moirais.fn.gwsblc import gwas_block_combine
+from morie.fn.gwsblc import gwas_block_combine
 
 
 def test_gwsblc_basic():

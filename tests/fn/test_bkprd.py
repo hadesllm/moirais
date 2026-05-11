@@ -1,6 +1,6 @@
 """Tests for bkprd.py - Backward prediction error."""
 import numpy as np
-from moirais.fn.bkprd import backward_prediction_fn, bkprd
+from morie.fn.bkprd import backward_prediction_fn, bkprd
 
 
 def test_bkprd_returns_result():

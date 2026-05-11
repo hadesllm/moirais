@@ -1,7 +1,7 @@
 """Tests for dixon.dixon_test."""
 import numpy as np
 import pytest
-from moirais.fn.dixon import dixon_test
+from morie.fn.dixon import dixon_test
 
 
 def test_dixon_basic():

@@ -1,7 +1,7 @@
 """Tests for xpehh1.xpehh."""
 import numpy as np
 import pytest
-from moirais.fn.xpehh1 import xpehh
+from morie.fn.xpehh1 import xpehh
 
 
 def test_xpehh1_basic():

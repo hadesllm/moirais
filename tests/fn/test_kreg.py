@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kreg -- Nadaraya-Watson kernel regression."""
+"""Tests for morie.fn.kreg -- Nadaraya-Watson kernel regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.kreg import kernel_regression, kreg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.kreg import kernel_regression, kreg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestKreg:

@@ -1,7 +1,7 @@
 """Tests for gb_pit2.gibbons_pit_rng."""
 import numpy as np
 import pytest
-from moirais.fn.gb_pit2 import gibbons_pit_rng
+from morie.fn.gb_pit2 import gibbons_pit_rng
 
 
 def test_gb_pit2_basic():

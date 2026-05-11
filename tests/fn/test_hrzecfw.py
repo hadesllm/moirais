@@ -1,7 +1,7 @@
 """Tests for hrzecfw.horowitz_empirical_cf."""
 import numpy as np
 import pytest
-from moirais.fn.hrzecfw import horowitz_empirical_cf
+from morie.fn.hrzecfw import horowitz_empirical_cf
 
 
 def test_hrzecfw_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.reldi — Reliability diagram values."""
+"""Tests for morie.fn.reldi — Reliability diagram values."""
 import numpy as np
 import pytest
-from moirais.fn.reldi import reldi
+from morie.fn.reldi import reldi
 
 
 @pytest.fixture()
@@ -60,5 +60,5 @@ def test_n_correct(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.reldi import cheatsheet
+    from morie.fn.reldi import cheatsheet
     assert len(cheatsheet()) > 0

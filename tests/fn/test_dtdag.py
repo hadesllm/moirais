@@ -1,7 +1,7 @@
 """Test dtdag."""
 import numpy as np
 import pytest
-from moirais.fn.dtdag import dtdag
+from morie.fn.dtdag import dtdag
 
 
 def test_dtdag_basic():

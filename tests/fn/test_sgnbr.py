@@ -1,7 +1,7 @@
 """Tests for sgnbr."""
 import numpy as np
 import pytest
-from moirais.fn.sgnbr import sgnbr
+from morie.fn.sgnbr import sgnbr
 
 
 def test_sgnbr_basic():
@@ -27,5 +27,5 @@ def test_sgnbr_no_data():
 
 
 def test_sgnbr_alias():
-    from moirais.fn.sgnbr import sgnbr
+    from morie.fn.sgnbr import sgnbr
     assert sgnbr is sgnbr

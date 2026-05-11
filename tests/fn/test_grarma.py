@@ -1,7 +1,7 @@
 """Tests for grarma.geron_arima_forecast."""
 import numpy as np
 import pytest
-from moirais.fn.grarma import geron_arima_forecast
+from morie.fn.grarma import geron_arima_forecast
 
 
 def test_grarma_basic():

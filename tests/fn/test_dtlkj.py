@@ -1,7 +1,7 @@
 """Test dtlkj."""
 import numpy as np
 import pytest
-from moirais.fn.dtlkj import dtlkj
+from morie.fn.dtlkj import dtlkj
 
 
 def test_dtlkj_basic():

@@ -1,7 +1,7 @@
 """Tests for hmonnx.geron_onnx_export."""
 import numpy as np
 import pytest
-from moirais.fn.hmonnx import geron_onnx_export
+from morie.fn.hmonnx import geron_onnx_export
 
 
 def test_hmonnx_basic():

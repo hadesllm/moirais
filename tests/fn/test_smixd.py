@@ -1,7 +1,7 @@
 """Tests for smixd.spatial_mixed_model."""
 import numpy as np
 import pytest
-from moirais.fn.smixd import spatial_mixed_model
+from morie.fn.smixd import spatial_mixed_model
 
 
 def test_smixd_basic():

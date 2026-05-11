@@ -1,7 +1,7 @@
 """Tests for stkanim."""
 import numpy as np
 import pytest
-from moirais.fn.stkanim import stkanim
+from morie.fn.stkanim import stkanim
 
 
 def test_stkanim_basic():
@@ -27,5 +27,5 @@ def test_stkanim_no_data():
 
 
 def test_stkanim_alias():
-    from moirais.fn.stkanim import stkanim
+    from morie.fn.stkanim import stkanim
     assert stkanim is stkanim

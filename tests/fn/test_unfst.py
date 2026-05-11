@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.unfst -- unfolding stress diagnostic."""
+"""Tests for morie.fn.unfst -- unfolding stress diagnostic."""
 
 import numpy as np
-from moirais.fn.unfst import unfolding_stress_diagnostic, unfst
+from morie.fn.unfst import unfolding_stress_diagnostic, unfst
 
 
 def test_unfst_smoke():

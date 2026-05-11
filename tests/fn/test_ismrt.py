@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ismrt -- Indirect standardization."""
+"""Tests for morie.fn.ismrt -- Indirect standardization."""
 
 import pytest
-from moirais.fn.ismrt import indirect_standardization
+from morie.fn.ismrt import indirect_standardization
 
 
 class TestIndirectStandardization:

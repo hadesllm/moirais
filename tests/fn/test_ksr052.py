@@ -1,7 +1,7 @@
 """Tests for ksr052.kosorok_ch2_kaplan_meier_derivative."""
 import numpy as np
 import pytest
-from moirais.fn.ksr052 import kosorok_ch2_kaplan_meier_derivative
+from morie.fn.ksr052 import kosorok_ch2_kaplan_meier_derivative
 
 
 def test_ksr052_basic():

@@ -1,7 +1,7 @@
 """Tests for km145.kamath_ch9_mmllm_autoregressive."""
 import numpy as np
 import pytest
-from moirais.fn.km145 import kamath_ch9_mmllm_autoregressive
+from morie.fn.km145 import kamath_ch9_mmllm_autoregressive
 
 
 def test_km145_basic():

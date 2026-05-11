@@ -1,7 +1,7 @@
 """Tests for evdec.evt_declustering_runs."""
 import numpy as np
 import pytest
-from moirais.fn.evdec import evt_declustering_runs
+from morie.fn.evdec import evt_declustering_runs
 
 
 def test_evdec_basic():

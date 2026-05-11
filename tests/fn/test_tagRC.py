@@ -1,7 +1,7 @@
 """Tests for tagRC.tag_aware_rec."""
 import numpy as np
 import pytest
-from moirais.fn.tagRC import tag_aware_rec
+from morie.fn.tagRC import tag_aware_rec
 
 
 def test_tagRC_basic():

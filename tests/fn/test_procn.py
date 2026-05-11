@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.procn — Process convolution model."""
+"""Tests for morie.fn.procn — Process convolution model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.procn import procn
+from morie.fn.procn import procn
 
 
 class TestProcn:

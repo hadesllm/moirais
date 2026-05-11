@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tdede — Dedekind eta function."""
+"""Tests for morie.fn.tdede — Dedekind eta function."""
 
 import pytest
 
-from moirais.fn.tdede import dedekind_eta
+from morie.fn.tdede import dedekind_eta
 
 
 class TestDedekindEta:

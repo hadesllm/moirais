@@ -1,7 +1,7 @@
 """Test dk4sm."""
 import numpy as np
 import pytest
-from moirais.fn.dk4sm import dk4sm
+from morie.fn.dk4sm import dk4sm
 
 
 def test_dk4sm_basic():

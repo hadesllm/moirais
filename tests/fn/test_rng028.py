@@ -1,7 +1,7 @@
 """Tests for rng028.rangayyan_ch3_sifting_property."""
 import numpy as np
 import pytest
-from moirais.fn.rng028 import rangayyan_ch3_sifting_property
+from morie.fn.rng028 import rangayyan_ch3_sifting_property
 
 
 def test_rng028_basic():

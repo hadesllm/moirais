@@ -1,7 +1,7 @@
 """Tests for stratm.stratified_mean."""
 import numpy as np
 import pytest
-from moirais.fn.stratm import stratified_mean
+from morie.fn.stratm import stratified_mean
 
 
 def test_stratm_basic():

@@ -1,7 +1,7 @@
 """Tests for jntlmm.joint_longitudinal_survival."""
 import numpy as np
 import pytest
-from moirais.fn.jntlmm import joint_longitudinal_survival
+from morie.fn.jntlmm import joint_longitudinal_survival
 
 
 def test_jntlmm_basic():

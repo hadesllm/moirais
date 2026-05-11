@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tcrv — torus curvature."""
+"""Tests for morie.fn.tcrv — torus curvature."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tcrv import torus_curvature
+from morie.fn.tcrv import torus_curvature
 
 
 class TestTorusCurvature:

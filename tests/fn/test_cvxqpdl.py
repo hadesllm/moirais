@@ -1,7 +1,7 @@
 """Tests for cvxqpdl.boyd_qp_dual."""
 import numpy as np
 import pytest
-from moirais.fn.cvxqpdl import boyd_qp_dual
+from morie.fn.cvxqpdl import boyd_qp_dual
 
 
 def test_cvxqpdl_basic():

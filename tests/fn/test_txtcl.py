@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.txtcl."""
+"""Tests for morie.fn.txtcl."""
 import numpy as np
-from moirais.fn.txtcl import text_classify
+from morie.fn.txtcl import text_classify
 
 
 def test_txtcl_smoke():
@@ -15,7 +15,7 @@ def test_txtcl_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.txtcl import cheatsheet
+    from morie.fn.txtcl import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

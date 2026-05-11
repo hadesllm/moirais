@@ -1,7 +1,7 @@
 """Tests for wsmnpb.wasserman_nonparametric_boot."""
 import numpy as np
 import pytest
-from moirais.fn.wsmnpb import wasserman_nonparametric_boot
+from morie.fn.wsmnpb import wasserman_nonparametric_boot
 
 
 def test_wsmnpb_basic():

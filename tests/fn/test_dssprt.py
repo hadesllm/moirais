@@ -1,7 +1,7 @@
 """Tests for dssprt.dssp_secondary."""
 import numpy as np
 import pytest
-from moirais.fn.dssprt import dssp_secondary
+from morie.fn.dssprt import dssp_secondary
 
 
 def test_dssprt_basic():

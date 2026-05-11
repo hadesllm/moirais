@@ -1,7 +1,7 @@
 """Tests for drvst.dr_did_variance_stab."""
 import numpy as np
 import pytest
-from moirais.fn.drvst import dr_did_variance_stab
+from morie.fn.drvst import dr_did_variance_stab
 
 
 def test_drvst_basic():

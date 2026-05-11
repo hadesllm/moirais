@@ -1,7 +1,7 @@
 """Tests for sgtmix.sgt_mixing_time."""
 import numpy as np
 import pytest
-from moirais.fn.sgtmix import sgt_mixing_time
+from morie.fn.sgtmix import sgt_mixing_time
 
 
 def test_sgtmix_basic():

@@ -1,7 +1,7 @@
 """Tests for glides.glide_score_proxy."""
 import numpy as np
 import pytest
-from moirais.fn.glides import glide_score_proxy
+from morie.fn.glides import glide_score_proxy
 
 
 def test_glides_basic():

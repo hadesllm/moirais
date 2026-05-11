@@ -1,7 +1,7 @@
 """Tests for tmlsta.tmle_stabilized."""
 import numpy as np
 import pytest
-from moirais.fn.tmlsta import tmle_stabilized
+from morie.fn.tmlsta import tmle_stabilized
 
 
 def test_tmlsta_basic():

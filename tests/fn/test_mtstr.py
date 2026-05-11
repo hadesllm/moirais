@@ -1,7 +1,7 @@
 """Test mtstr."""
 import numpy as np
 import pytest
-from moirais.fn.mtstr import mtstr
+from morie.fn.mtstr import mtstr
 
 
 def test_mtstr_basic():

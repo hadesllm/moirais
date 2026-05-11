@@ -1,7 +1,7 @@
 """Tests for rgricca.rangayyan_riccati_eq."""
 import numpy as np
 import pytest
-from moirais.fn.rgricca import rangayyan_riccati_eq
+from morie.fn.rgricca import rangayyan_riccati_eq
 
 
 def test_rgricca_basic():

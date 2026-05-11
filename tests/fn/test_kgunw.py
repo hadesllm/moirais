@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgunw -- Universal kriging weights"""
+"""Tests for morie.fn.kgunw -- Universal kriging weights"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgunw import uk_weights
+from morie.fn.kgunw import uk_weights
 
 
 class TestUkWeights:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msgof -- MDS goodness of fit"""
+"""Tests for morie.fn.msgof -- MDS goodness of fit"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msgof import mds_gof
+from morie.fn.msgof import mds_gof
 
 
 class TestMdsGof:

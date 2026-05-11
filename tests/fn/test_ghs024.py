@@ -1,7 +1,7 @@
 """Tests for ghs024.ghosal_ch3_tailfree_canonical_summability."""
 import numpy as np
 import pytest
-from moirais.fn.ghs024 import ghosal_ch3_tailfree_canonical_summability
+from morie.fn.ghs024 import ghosal_ch3_tailfree_canonical_summability
 
 
 def test_ghs024_basic():

@@ -1,7 +1,7 @@
 """Tests for hmseq2.geron_seq2seq."""
 import numpy as np
 import pytest
-from moirais.fn.hmseq2 import geron_seq2seq
+from morie.fn.hmseq2 import geron_seq2seq
 
 
 def test_hmseq2_basic():

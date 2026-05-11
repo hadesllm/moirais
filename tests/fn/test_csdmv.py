@@ -1,7 +1,7 @@
 """Test csdmv."""
 import numpy as np
 import pytest
-from moirais.fn.csdmv import csdmv
+from morie.fn.csdmv import csdmv
 
 
 def test_csdmv_basic():

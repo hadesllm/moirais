@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.force -- ATE difference-in-means."""
+"""Tests for morie.fn.force -- ATE difference-in-means."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.force import ate_diff, force
-from moirais.fn._containers import ESRes
+from morie.fn.force import ate_diff, force
+from morie.fn._containers import ESRes
 
 
 class TestForce:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tfund — fundamental group."""
+"""Tests for morie.fn.tfund — fundamental group."""
 
 import pytest
 
-from moirais.fn.tfund import torus_fundamental_group
+from morie.fn.tfund import torus_fundamental_group
 
 
 class TestTorusFundamentalGroup:

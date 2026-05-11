@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.palps — Parallel analysis."""
+"""Tests for morie.fn.palps — Parallel analysis."""
 import numpy as np
 
-from moirais.fn.palps import parallel_analysis, palps
+from morie.fn.palps import parallel_analysis, palps
 
 
 def test_correlated_suggests_factors():

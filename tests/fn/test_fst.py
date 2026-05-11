@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.fst -- Fst fixation index."""
+"""Tests for morie.fn.fst -- Fst fixation index."""
 
 import numpy as np
 import pytest
-from moirais.fn.fst import fixation_index
+from morie.fn.fst import fixation_index
 
 
 class TestFst:

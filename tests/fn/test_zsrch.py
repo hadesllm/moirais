@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsrch -- Random chi-squared field"""
+"""Tests for morie.fn.zsrch -- Random chi-squared field"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsrch import random_chisq_field
+from morie.fn.zsrch import random_chisq_field
 
 
 class TestRandomChisqField:

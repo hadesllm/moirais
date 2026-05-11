@@ -1,7 +1,7 @@
 """Tests for phchk: Schoenfeld residuals PH assumption check."""
 import numpy as np
 import pytest
-from moirais.fn.phchk import phchk
+from morie.fn.phchk import phchk
 
 
 def _make_ph_data(n=150, beta=0.5, seed=0):

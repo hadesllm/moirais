@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dynic -- Dynamic linear model."""
+"""Tests for morie.fn.dynic -- Dynamic linear model."""
 import numpy as np
 import pytest
-from moirais.fn.dynic import dlm_fit
+from morie.fn.dynic import dlm_fit
 
 
 class TestDLM:
@@ -22,5 +22,5 @@ class TestDLM:
             dlm_fit(np.ones(10), model="bad")
 
     def test_cheatsheet(self):
-        from moirais.fn.dynic import cheatsheet
+        from morie.fn.dynic import cheatsheet
         assert isinstance(cheatsheet(), str)

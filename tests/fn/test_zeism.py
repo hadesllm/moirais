@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zeism -- Indirect standardization"""
+"""Tests for morie.fn.zeism -- Indirect standardization"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zeism import indirect_std
+from morie.fn.zeism import indirect_std
 
 
 class TestIndirectStd:

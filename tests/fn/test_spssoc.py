@@ -1,7 +1,7 @@
 """Tests for spssoc.schabenberger_stationary_cov_semivario."""
 import numpy as np
 import pytest
-from moirais.fn.spssoc import schabenberger_stationary_cov_semivario
+from morie.fn.spssoc import schabenberger_stationary_cov_semivario
 
 
 def test_spssoc_basic():

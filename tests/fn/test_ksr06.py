@@ -1,7 +1,7 @@
 """Tests for ksr06.kosorok_maximal_inequality."""
 import numpy as np
 import pytest
-from moirais.fn.ksr06 import kosorok_maximal_inequality
+from morie.fn.ksr06 import kosorok_maximal_inequality
 
 
 def test_ksr06_basic():

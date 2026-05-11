@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.crmix — cure rate model."""
+"""Tests for morie.fn.crmix — cure rate model."""
 import numpy as np
 import pytest
-from moirais.fn.crmix import cure_rate_model
+from morie.fn.crmix import cure_rate_model
 
 
 class TestCureRateModel:

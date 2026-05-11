@@ -1,7 +1,7 @@
 """Tests for gb571m.gibbons_wsrt_mean."""
 import numpy as np
 import pytest
-from moirais.fn.gb571m import gibbons_wsrt_mean
+from morie.fn.gb571m import gibbons_wsrt_mean
 
 
 def test_gb571m_basic():

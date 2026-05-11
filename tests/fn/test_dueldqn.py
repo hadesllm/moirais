@@ -1,7 +1,7 @@
 """Tests for dueldqn.dueling_dqn."""
 import numpy as np
 import pytest
-from moirais.fn.dueldqn import dueling_dqn
+from morie.fn.dueldqn import dueling_dqn
 
 
 def test_dueldqn_basic():

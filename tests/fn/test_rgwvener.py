@@ -1,7 +1,7 @@
 """Tests for rgwvener.rangayyan_wavelet_energy."""
 import numpy as np
 import pytest
-from moirais.fn.rgwvener import rangayyan_wavelet_energy
+from morie.fn.rgwvener import rangayyan_wavelet_energy
 
 
 def test_rgwvener_basic():

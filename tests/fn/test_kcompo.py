@@ -1,7 +1,7 @@
 """Tests for kcompo.k_step_dp_composition."""
 import numpy as np
 import pytest
-from moirais.fn.kcompo import k_step_dp_composition
+from morie.fn.kcompo import k_step_dp_composition
 
 
 def test_kcompo_basic():

@@ -1,7 +1,7 @@
 """Tests for rgminph.rangayyan_min_phase."""
 import numpy as np
 import pytest
-from moirais.fn.rgminph import rangayyan_min_phase
+from morie.fn.rgminph import rangayyan_min_phase
 
 
 def test_rgminph_basic():

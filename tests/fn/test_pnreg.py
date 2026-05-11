@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pnreg — Penalized kernel regression."""
+"""Tests for morie.fn.pnreg — Penalized kernel regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.pnreg import pnreg
+from morie.fn.pnreg import pnreg
 
 
 def test_returns_dict():

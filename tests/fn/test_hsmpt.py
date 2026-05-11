@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.hsmpt."""
+"""Tests for morie.fn.hsmpt."""
 
 import numpy as np
 import pytest
-from moirais.fn.hsmpt import hsmpt
+from morie.fn.hsmpt import hsmpt
 
 
 class TestHsmpt:

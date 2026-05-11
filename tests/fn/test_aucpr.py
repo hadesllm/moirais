@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.aucpr — AUC-PR."""
+"""Tests for morie.fn.aucpr — AUC-PR."""
 import numpy as np
 import pytest
-from moirais.fn.aucpr import auc_pr, aucpr
+from morie.fn.aucpr import auc_pr, aucpr
 
 
 def test_perfect_separation():

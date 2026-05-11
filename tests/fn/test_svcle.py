@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svcle -- Coalition equilibrium (Schofield)"""
+"""Tests for morie.fn.svcle -- Coalition equilibrium (Schofield)"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svcle import coalition_equil
+from morie.fn.svcle import coalition_equil
 
 
 class TestCoalitionEquil:

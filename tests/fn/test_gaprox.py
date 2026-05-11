@@ -1,7 +1,7 @@
 """Test gaprox."""
 import numpy as np
 import pytest
-from moirais.fn.gaprox import gaprox
+from morie.fn.gaprox import gaprox
 
 
 def test_gaprox_basic():

@@ -1,7 +1,7 @@
 """Test ubcls."""
 import numpy as np
 import pytest
-from moirais.fn.ubcls import ubcls
+from morie.fn.ubcls import ubcls
 
 
 def test_ubcls_basic():

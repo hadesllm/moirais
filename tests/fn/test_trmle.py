@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.trmle — Transformation model MLE."""
+"""Tests for morie.fn.trmle — Transformation model MLE."""
 
 import numpy as np
 import pytest
-from moirais.fn.trmle import trmle
+from morie.fn.trmle import trmle
 
 
 def test_returns_dict():

@@ -1,7 +1,7 @@
 """Tests for hmdrv.geron_diffusion_reverse."""
 import numpy as np
 import pytest
-from moirais.fn.hmdrv import geron_diffusion_reverse
+from morie.fn.hmdrv import geron_diffusion_reverse
 
 
 def test_hmdrv_basic():

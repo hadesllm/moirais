@@ -1,7 +1,7 @@
 """Tests for pmantl.partial_mantel_test."""
 import numpy as np
 import pytest
-from moirais.fn.pmantl import partial_mantel_test
+from morie.fn.pmantl import partial_mantel_test
 
 
 def test_pmantl_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrgwc -- GWR local coefficients"""
+"""Tests for morie.fn.xrgwc -- GWR local coefficients"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrgwc import gwr_coefficients
+from morie.fn.xrgwc import gwr_coefficients
 
 
 class TestGwrCoefficients:

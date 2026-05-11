@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.eqcon — concentration index."""
+"""Tests for morie.fn.eqcon — concentration index."""
 
 import pytest
 import numpy as np
-from moirais.fn.eqcon import concentration_index
-from moirais.fn._containers import ESRes
+from morie.fn.eqcon import concentration_index
+from morie.fn._containers import ESRes
 
 
 class TestConcentration:

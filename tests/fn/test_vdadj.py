@@ -1,7 +1,7 @@
 """Tests for vdadj."""
 import numpy as np
 import pytest
-from moirais.fn.vdadj import vdadj
+from morie.fn.vdadj import vdadj
 
 
 def test_vdadj_basic():
@@ -27,5 +27,5 @@ def test_vdadj_no_data():
 
 
 def test_vdadj_alias():
-    from moirais.fn.vdadj import vdadj
+    from morie.fn.vdadj import vdadj
     assert vdadj is vdadj

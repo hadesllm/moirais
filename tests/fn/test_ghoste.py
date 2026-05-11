@@ -1,7 +1,7 @@
 """Tests for ghoste.ghose_filter."""
 import numpy as np
 import pytest
-from moirais.fn.ghoste import ghose_filter
+from morie.fn.ghoste import ghose_filter
 
 
 def test_ghoste_basic():

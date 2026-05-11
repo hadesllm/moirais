@@ -1,7 +1,7 @@
 """Tests for rng111.rangayyan_ch3_first_difference_operator."""
 import numpy as np
 import pytest
-from moirais.fn.rng111 import rangayyan_ch3_first_difference_operator
+from morie.fn.rng111 import rangayyan_ch3_first_difference_operator
 
 
 def test_rng111_basic():

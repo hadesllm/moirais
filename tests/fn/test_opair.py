@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.opair — Pairwise group comparisons."""
+"""Tests for morie.fn.opair — Pairwise group comparisons."""
 
 import pandas as pd
-from moirais.fn.opair import otis_pairwise_compare
+from morie.fn.opair import otis_pairwise_compare
 
 
 class TestOtisPairwiseCompare:

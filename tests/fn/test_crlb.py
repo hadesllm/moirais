@@ -1,8 +1,8 @@
 """Test cramer_rao_lower_bound (crlb)."""
 import numpy as np
 
-from moirais.fn.crlb import cramer_rao_lower_bound, crlb
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.crlb import cramer_rao_lower_bound, crlb
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCramerRao:

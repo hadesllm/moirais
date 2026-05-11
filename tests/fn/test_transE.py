@@ -1,7 +1,7 @@
 """Tests for transE.transe."""
 import numpy as np
 import pytest
-from moirais.fn.transE import transe
+from morie.fn.transE import transe
 
 
 def test_transE_basic():

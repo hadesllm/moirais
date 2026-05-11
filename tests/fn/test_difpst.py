@@ -1,7 +1,7 @@
 """Tests for difpst.dif_p_diff."""
 import numpy as np
 import pytest
-from moirais.fn.difpst import dif_p_diff
+from morie.fn.difpst import dif_p_diff
 
 
 def test_difpst_basic():

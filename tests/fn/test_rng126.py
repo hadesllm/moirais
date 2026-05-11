@@ -1,7 +1,7 @@
 """Tests for rng126.rangayyan_ch3_butterworth_analog_transfer_function."""
 import numpy as np
 import pytest
-from moirais.fn.rng126 import rangayyan_ch3_butterworth_analog_transfer_function
+from morie.fn.rng126 import rangayyan_ch3_butterworth_analog_transfer_function
 
 
 def test_rng126_basic():

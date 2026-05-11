@@ -1,0 +1,49 @@
+"""Bayesian expression (auto-extracted; see ref).."""
+import numpy as np
+from scipy import stats
+
+from ._richresult import RichResult, hypothesis_test_result
+
+__all__ = ["spatiotemporal_methods_in_environmental_epidemiology_with_r__chapter_3_unnumbered_342"]
+
+
+def spatiotemporal_methods_in_environmental_epidemiology_with_r__chapter_3_unnumbered_342(x):
+    """
+    Bayesian expression (auto-extracted; see ref).
+
+    Formula: [EQ] p(θ j|ψ, Y )p(ψ|Y )dψ.
+
+    Parameters
+    ----------
+    x : array-like
+        Input data.
+
+    Returns
+    -------
+    result : RichResult
+        Inherits from ``dict`` (so ``isinstance(result, dict)`` is True
+        and ``result["statistic"]`` / ``result.get(...)`` keep working),
+        but also exposes a multi-section ``str(result)`` render. Keys: value.
+        See ``morie.fn.describe('spatiotemporal_methods_in_environmental_epidemiology_with_r_3u342')`` for the full guide.
+
+    References
+    ----------
+    spatiotemporal-methods-in-environmental-epidemiology-with-r-chapman-amp-hall-crc-texts-in-statistical-science-2nbsped-1032397810-9781032397818, ch.3 (unnumbered)
+    """
+    x = np.atleast_1d(np.asarray(x, dtype=float))
+    n = len(x)
+    result = float(np.mean(x))
+    se = float(np.std(x, ddof=1) / np.sqrt(n)) if n > 1 else float("nan")
+    return RichResult(
+        title="Bayesian expression (auto-extracted; see ref).",
+        summary_lines=[
+            ("Estimate", result),
+            ("Standard error", se),
+            ("n", n),
+        ],
+        payload={"estimate": result, "se": se, "n": n, "method": "Bayesian expression (auto-extracted; see ref)."},
+    )
+
+
+def cheatsheet():
+    return "spatiotemporal_methods_in_environmental_epidemiology_with_r_3u342: Bayesian expression (auto-extracted; see ref)."

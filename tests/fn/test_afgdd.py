@@ -1,7 +1,7 @@
 """Test afgdd."""
 import numpy as np
 import pytest
-from moirais.fn.afgdd import afgdd
+from morie.fn.afgdd import afgdd
 
 
 def test_afgdd_basic():

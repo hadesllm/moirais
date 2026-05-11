@@ -1,6 +1,6 @@
 """Tests for gborl.py - Gabor logon."""
 import numpy as np
-from moirais.fn.gborl import gabor_logon, gborl
+from morie.fn.gborl import gabor_logon, gborl
 
 
 def test_gborl_returns_descriptive_result():

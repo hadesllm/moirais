@@ -1,7 +1,7 @@
 """Tests for rng108.rangayyan_ch3_ma_8point_recursive."""
 import numpy as np
 import pytest
-from moirais.fn.rng108 import rangayyan_ch3_ma_8point_recursive
+from morie.fn.rng108 import rangayyan_ch3_ma_8point_recursive
 
 
 def test_rng108_basic():

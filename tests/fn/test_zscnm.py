@@ -1,7 +1,7 @@
 """Tests for zscnm.zscore_normalization."""
 import numpy as np
 import pytest
-from moirais.fn.zscnm import zscore_normalization
+from morie.fn.zscnm import zscore_normalization
 
 
 def test_zscnm_basic():

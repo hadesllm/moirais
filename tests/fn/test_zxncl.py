@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxncl -- Network spatial clustering"""
+"""Tests for morie.fn.zxncl -- Network spatial clustering"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxncl import network_cluster_sp
+from morie.fn.zxncl import network_cluster_sp
 
 
 class TestNetworkClusterSp:

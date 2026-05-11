@@ -1,7 +1,7 @@
 """Tests for tmlhte.tmle_heterogeneous."""
 import numpy as np
 import pytest
-from moirais.fn.tmlhte import tmle_heterogeneous
+from morie.fn.tmlhte import tmle_heterogeneous
 
 
 def test_tmlhte_basic():

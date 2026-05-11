@@ -1,6 +1,6 @@
 """Test 2D average pooling."""
 import numpy as np
-from moirais.fn.avpl2 import avpl2
+from morie.fn.avpl2 import avpl2
 
 
 def test_avpl2_basic():

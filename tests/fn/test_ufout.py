@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ufout -- unfolding outliers."""
+"""Tests for morie.fn.ufout -- unfolding outliers."""
 
 import numpy as np
-from moirais.fn.ufout import unfolding_outliers, ufout
+from morie.fn.ufout import unfolding_outliers, ufout
 
 
 def test_ufout_no_outliers():

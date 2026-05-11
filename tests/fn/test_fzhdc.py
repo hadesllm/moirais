@@ -1,7 +1,7 @@
 """Tests for fzhdc.fauzi_h_decomposition."""
 import numpy as np
 import pytest
-from moirais.fn.fzhdc import fauzi_h_decomposition
+from morie.fn.fzhdc import fauzi_h_decomposition
 
 
 def test_fzhdc_basic():

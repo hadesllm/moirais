@@ -1,7 +1,7 @@
 """Tests for hmkd.geron_knowledge_distillation."""
 import numpy as np
 import pytest
-from moirais.fn.hmkd import geron_knowledge_distillation
+from morie.fn.hmkd import geron_knowledge_distillation
 
 
 def test_hmkd_basic():

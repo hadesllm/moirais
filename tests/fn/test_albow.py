@@ -1,7 +1,7 @@
 """Tests for albow.alammar_bag_of_words."""
 import numpy as np
 import pytest
-from moirais.fn.albow import alammar_bag_of_words
+from morie.fn.albow import alammar_bag_of_words
 
 
 def test_albow_basic():

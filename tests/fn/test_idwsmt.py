@@ -1,7 +1,7 @@
 """Tests for idwsmt.inverse_distance_weighting."""
 import numpy as np
 import pytest
-from moirais.fn.idwsmt import inverse_distance_weighting
+from morie.fn.idwsmt import inverse_distance_weighting
 
 
 def test_idwsmt_basic():

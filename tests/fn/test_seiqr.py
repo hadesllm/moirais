@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.seiqr -- SEIQR compartmental model."""
+"""Tests for morie.fn.seiqr -- SEIQR compartmental model."""
 
 import numpy as np
 import pytest
-from moirais.fn.seiqr import seiqr_model
+from morie.fn.seiqr import seiqr_model
 
 
 class TestSEIQR:

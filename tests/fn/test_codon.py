@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.codon — codon usage."""
+"""Tests for morie.fn.codon — codon usage."""
 import pytest
-from moirais.fn.codon import codon_usage
+from morie.fn.codon import codon_usage
 
 
 class TestCodonUsage:

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.htidx — Heat index."""
+"""Tests for morie.fn.htidx — Heat index."""
 
 import pytest
 
-from moirais.fn.htidx import heat_index
+from morie.fn.htidx import heat_index
 
 
 class TestHeatIndex:

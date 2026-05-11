@@ -1,7 +1,7 @@
 """Test wots_verify."""
-from moirais.fn._containers import CryptoResult
-from moirais.fn.wots import wots_sign
-from moirais.fn.wotsv import wots_verify, wotsv
+from morie.fn._containers import CryptoResult
+from morie.fn.wots import wots_sign
+from morie.fn.wotsv import wots_verify, wotsv
 
 
 class TestWotsVerify:

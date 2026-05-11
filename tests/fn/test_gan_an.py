@@ -1,7 +1,7 @@
 """Tests for gan_an.gan_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.gan_an import gan_anomaly
+from morie.fn.gan_an import gan_anomaly
 
 
 def test_gan_an_basic():

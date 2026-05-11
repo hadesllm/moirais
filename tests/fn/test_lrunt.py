@@ -2,7 +2,7 @@
 
 import numpy as np
 import pytest
-from moirais.fn.lrunt import lrunt
+from morie.fn.lrunt import lrunt
 
 
 class TestLrunt:

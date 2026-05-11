@@ -1,7 +1,7 @@
 """Tests for aitsim.compositional_simpson."""
 import numpy as np
 import pytest
-from moirais.fn.aitsim import compositional_simpson
+from morie.fn.aitsim import compositional_simpson
 
 
 def test_aitsim_basic():

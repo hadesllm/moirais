@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgbkv -- Block kriging variance"""
+"""Tests for morie.fn.kgbkv -- Block kriging variance"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgbkv import bk_variance
+from morie.fn.kgbkv import bk_variance
 
 
 class TestBkVariance:

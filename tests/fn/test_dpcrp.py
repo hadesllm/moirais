@@ -1,7 +1,7 @@
 """Tests for dpcrp.chinese_restaurant_process."""
 import numpy as np
 import pytest
-from moirais.fn.dpcrp import chinese_restaurant_process
+from morie.fn.dpcrp import chinese_restaurant_process
 
 
 def test_dpcrp_basic():

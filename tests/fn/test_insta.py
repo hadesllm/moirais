@@ -1,6 +1,6 @@
 """Tests for insta.py - Instantaneous amplitude."""
 import numpy as np
-from moirais.fn.insta import instantaneous_amp, insta
+from morie.fn.insta import instantaneous_amp, insta
 
 
 def test_insta_returns_descriptive_result():

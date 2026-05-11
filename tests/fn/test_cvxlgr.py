@@ -1,7 +1,7 @@
 """Tests for cvxlgr.boyd_logistic_loss."""
 import numpy as np
 import pytest
-from moirais.fn.cvxlgr import boyd_logistic_loss
+from morie.fn.cvxlgr import boyd_logistic_loss
 
 
 def test_cvxlgr_basic():

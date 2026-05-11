@@ -1,7 +1,7 @@
 """Tests for hrzsic.horowitz_sim_identification."""
 import numpy as np
 import pytest
-from moirais.fn.hrzsic import horowitz_sim_identification
+from morie.fn.hrzsic import horowitz_sim_identification
 
 
 def test_hrzsic_basic():

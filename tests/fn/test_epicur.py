@@ -1,7 +1,7 @@
 """Tests for epicur.epicurve."""
 import numpy as np
 import pytest
-from moirais.fn.epicur import epicurve
+from morie.fn.epicur import epicurve
 
 
 def test_epicur_basic():

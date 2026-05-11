@@ -1,7 +1,7 @@
 """Tests for raindq.rainbow_dqn."""
 import numpy as np
 import pytest
-from moirais.fn.raindq import rainbow_dqn
+from morie.fn.raindq import rainbow_dqn
 
 
 def test_raindq_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lockm -- SHA-256 hash."""
+"""Tests for morie.fn.lockm -- SHA-256 hash."""
 
-from moirais.fn.lockm import sha256_hash, lockm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.lockm import sha256_hash, lockm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestLockm:

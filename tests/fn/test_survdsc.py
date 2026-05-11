@@ -1,7 +1,7 @@
 """Tests for survdsc.discrete_time_survival."""
 import numpy as np
 import pytest
-from moirais.fn.survdsc import discrete_time_survival
+from morie.fn.survdsc import discrete_time_survival
 
 
 def test_survdsc_basic():

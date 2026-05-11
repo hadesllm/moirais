@@ -1,7 +1,7 @@
 """Tests for thmksp.thomas_cluster."""
 import numpy as np
 import pytest
-from moirais.fn.thmksp import thomas_cluster
+from morie.fn.thmksp import thomas_cluster
 
 
 def test_thmksp_basic():

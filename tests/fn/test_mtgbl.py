@@ -1,7 +1,7 @@
 """Tests for mtgbl.multi_trait_gblup."""
 import numpy as np
 import pytest
-from moirais.fn.mtgbl import multi_trait_gblup
+from morie.fn.mtgbl import multi_trait_gblup
 
 
 def test_mtgbl_basic():

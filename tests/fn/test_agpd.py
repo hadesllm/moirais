@@ -1,7 +1,7 @@
 """Test agpd."""
 import numpy as np
 import pytest
-from moirais.fn.agpd import agpd
+from morie.fn.agpd import agpd
 
 
 def test_agpd_basic():

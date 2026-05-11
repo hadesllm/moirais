@@ -1,7 +1,7 @@
 """Tests for gh_mises_eff.ghosal_mises_efficiency."""
 import numpy as np
 import pytest
-from moirais.fn.gh_mises_eff import ghosal_mises_efficiency
+from morie.fn.gh_mises_eff import ghosal_mises_efficiency
 
 
 def test_gh_mises_eff_basic():

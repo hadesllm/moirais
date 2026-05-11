@@ -1,7 +1,7 @@
 """Tests for bymds.bayesian_mds."""
 import numpy as np
 import pytest
-from moirais.fn.bymds import bayesian_mds
+from morie.fn.bymds import bayesian_mds
 
 
 def test_bymds_basic():

@@ -1,7 +1,7 @@
 """Tests for groft.geron_overfitting_gap."""
 import numpy as np
 import pytest
-from moirais.fn.groft import geron_overfitting_gap
+from morie.fn.groft import geron_overfitting_gap
 
 
 def test_groft_basic():

@@ -1,7 +1,7 @@
 """Tests for hrzades.horowitz_improved_ade."""
 import numpy as np
 import pytest
-from moirais.fn.hrzades import horowitz_improved_ade
+from morie.fn.hrzades import horowitz_improved_ade
 
 
 def test_hrzades_basic():

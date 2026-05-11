@@ -1,6 +1,6 @@
 from unittest.mock import patch
 
-from moirais.perseus import agent_available, build_prompt, ask_percy
+from morie.perseus import agent_available, build_prompt, ask_percy
 
 
 def test_build_prompt_includes_context():
@@ -16,8 +16,8 @@ def test_agent_available_false_without_api_key(monkeypatch):
     monkeypatch.delenv("LLM_API_BASE_URL", raising=False)
     monkeypatch.delenv("LLM_API_KEY", raising=False)
 
-    with patch("moirais.llm._probe_ollama", return_value=False), \
-         patch("moirais.llm._probe_freeapi", return_value=False):
+    with patch("morie.llm._probe_ollama", return_value=False), \
+         patch("morie.llm._probe_freeapi", return_value=False):
         assert agent_available() is False
 
 
@@ -26,8 +26,8 @@ def test_ask_percy_falls_back_without_api_key(monkeypatch):
     monkeypatch.delenv("LLM_API_BASE_URL", raising=False)
     monkeypatch.delenv("LLM_API_KEY", raising=False)
 
-    with patch("moirais.llm._probe_ollama", return_value=False), \
-         patch("moirais.llm._probe_freeapi", return_value=False):
+    with patch("morie.llm._probe_ollama", return_value=False), \
+         patch("morie.llm._probe_freeapi", return_value=False):
         payload = ask_percy("Explain IPTW.")
 
     assert payload["mode"] == "local_fallback"

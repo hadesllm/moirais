@@ -1,7 +1,7 @@
 """Tests for hmqat.geron_quantization_aware_training."""
 import numpy as np
 import pytest
-from moirais.fn.hmqat import geron_quantization_aware_training
+from morie.fn.hmqat import geron_quantization_aware_training
 
 
 def test_hmqat_basic():

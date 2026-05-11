@@ -1,7 +1,7 @@
 """Tests for cstat: Harrell's C-index."""
 import numpy as np
 import pytest
-from moirais.fn.cstat import cstat
+from morie.fn.cstat import cstat
 
 
 def _make_data(n=100, beta=1.0, seed=0):

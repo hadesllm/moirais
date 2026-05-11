@@ -1,7 +1,7 @@
 """Tests for clrgrf.clustered_grf."""
 import numpy as np
 import pytest
-from moirais.fn.clrgrf import clustered_grf
+from morie.fn.clrgrf import clustered_grf
 
 
 def test_clrgrf_basic():

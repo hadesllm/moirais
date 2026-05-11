@@ -1,7 +1,7 @@
 """Tests for hrzfneps.horowitz_panel_density_estimators."""
 import numpy as np
 import pytest
-from moirais.fn.hrzfneps import horowitz_panel_density_estimators
+from morie.fn.hrzfneps import horowitz_panel_density_estimators
 
 
 def test_hrzfneps_basic():

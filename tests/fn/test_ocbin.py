@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ocbin — Optimal classification binarized."""
+"""Tests for morie.fn.ocbin — Optimal classification binarized."""
 import numpy as np
 import pytest
 
-from moirais.fn.ocbin import ocbin
+from morie.fn.ocbin import ocbin
 
 
 def test_ocbin_smoke():
@@ -12,7 +12,7 @@ def test_ocbin_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.ocbin import cheatsheet
+    from morie.fn.ocbin import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

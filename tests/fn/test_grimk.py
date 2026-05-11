@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.grimk -- power law fit."""
+"""Tests for morie.fn.grimk -- power law fit."""
 
 import numpy as np
-from moirais.fn.grimk import power_law_fit, grimk
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.grimk import power_law_fit, grimk
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGrimk:

@@ -1,7 +1,7 @@
 """Tests for varrd.variance_reduction_split."""
 import numpy as np
 import pytest
-from moirais.fn.varrd import variance_reduction_split
+from morie.fn.varrd import variance_reduction_split
 
 
 def test_varrd_basic():

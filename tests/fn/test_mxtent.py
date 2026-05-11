@@ -1,7 +1,7 @@
 """Tests for mxtent.max_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.mxtent import max_entropy
+from morie.fn.mxtent import max_entropy
 
 
 def test_mxtent_basic():

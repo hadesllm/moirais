@@ -1,7 +1,7 @@
 """Tests for jodrrc.joseph_dirrec_strategy."""
 import numpy as np
 import pytest
-from moirais.fn.jodrrc import joseph_dirrec_strategy
+from morie.fn.jodrrc import joseph_dirrec_strategy
 
 
 def test_jodrrc_basic():

@@ -1,7 +1,7 @@
 """Tests for ucmod.unobserved_components."""
 import numpy as np
 import pytest
-from moirais.fn.ucmod import unobserved_components
+from morie.fn.ucmod import unobserved_components
 
 
 def test_ucmod_basic():

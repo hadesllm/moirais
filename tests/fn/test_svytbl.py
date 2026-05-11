@@ -1,7 +1,7 @@
 """Tests for svytbl.survey_xtab."""
 import numpy as np
 import pytest
-from moirais.fn.svytbl import survey_xtab
+from morie.fn.svytbl import survey_xtab
 
 
 def test_svytbl_basic():

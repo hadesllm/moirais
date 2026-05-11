@@ -1,7 +1,7 @@
 """Tests for hmord.geron_ordinal_encoding."""
 import numpy as np
 import pytest
-from moirais.fn.hmord import geron_ordinal_encoding
+from morie.fn.hmord import geron_ordinal_encoding
 
 
 def test_hmord_basic():

@@ -1,7 +1,7 @@
 """Tests for agmupv.muzero_predict_value."""
 import numpy as np
 import pytest
-from moirais.fn.agmupv import muzero_predict_value
+from morie.fn.agmupv import muzero_predict_value
 
 
 def test_agmupv_basic():

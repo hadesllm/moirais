@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scmn — mean score."""
+"""Tests for morie.fn.scmn — mean score."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.scmn import score_mean
+from morie.fn.scmn import score_mean
 
 
 class TestScoreMean:

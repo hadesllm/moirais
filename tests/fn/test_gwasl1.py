@@ -1,7 +1,7 @@
 """Tests for gwasl1.gwas_linear."""
 import numpy as np
 import pytest
-from moirais.fn.gwasl1 import gwas_linear
+from morie.fn.gwasl1 import gwas_linear
 
 
 def test_gwasl1_basic():

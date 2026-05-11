@@ -1,7 +1,7 @@
 """Tests for causscg.causal_generalised_sc."""
 import numpy as np
 import pytest
-from moirais.fn.causscg import causal_generalised_sc
+from morie.fn.causscg import causal_generalised_sc
 
 
 def test_causscg_basic():

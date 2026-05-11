@@ -1,7 +1,7 @@
 """Tests for tfidfV.tfidf."""
 import numpy as np
 import pytest
-from moirais.fn.tfidfV import tfidf
+from morie.fn.tfidfV import tfidf
 
 
 def test_tfidfV_basic():

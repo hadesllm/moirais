@@ -1,7 +1,7 @@
 """Tests for kalmS.kalman_smoother."""
 import numpy as np
 import pytest
-from moirais.fn.kalmS import kalman_smoother
+from morie.fn.kalmS import kalman_smoother
 
 
 def test_kalmS_basic():

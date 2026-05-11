@@ -1,7 +1,7 @@
 """Tests for tmlnie.tmle_natural_indirect."""
 import numpy as np
 import pytest
-from moirais.fn.tmlnie import tmle_natural_indirect
+from morie.fn.tmlnie import tmle_natural_indirect
 
 
 def test_tmlnie_basic():

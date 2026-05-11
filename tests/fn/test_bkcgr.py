@@ -1,7 +1,7 @@
 """Tests for bkcgr.burkov_computational_graph."""
 import numpy as np
 import pytest
-from moirais.fn.bkcgr import burkov_computational_graph
+from morie.fn.bkcgr import burkov_computational_graph
 
 
 def test_bkcgr_basic():

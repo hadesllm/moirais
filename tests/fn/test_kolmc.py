@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kolmc — Kolmogorov complexity approximation."""
+"""Tests for morie.fn.kolmc — Kolmogorov complexity approximation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kolmc import kolmc
+from morie.fn.kolmc import kolmc
 
 
 class TestKolmc:

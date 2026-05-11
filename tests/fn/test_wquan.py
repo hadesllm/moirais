@@ -1,7 +1,7 @@
 """Tests for wquan.weighted_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.wquan import weighted_quantile
+from morie.fn.wquan import weighted_quantile
 
 
 def test_wquan_basic():

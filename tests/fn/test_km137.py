@@ -1,7 +1,7 @@
 """Tests for km137.kamath_ch9_itm_hard_negative."""
 import numpy as np
 import pytest
-from moirais.fn.km137 import kamath_ch9_itm_hard_negative
+from morie.fn.km137 import kamath_ch9_itm_hard_negative
 
 
 def test_km137_basic():

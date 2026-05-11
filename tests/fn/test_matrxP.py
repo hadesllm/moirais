@@ -1,7 +1,7 @@
 """Tests for matrxP.matrix_profile."""
 import numpy as np
 import pytest
-from moirais.fn.matrxP import matrix_profile
+from morie.fn.matrxP import matrix_profile
 
 
 def test_matrxP_basic():

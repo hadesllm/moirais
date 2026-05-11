@@ -1,7 +1,7 @@
 """Tests for diripr.dirichlet_multinomial."""
 import numpy as np
 import pytest
-from moirais.fn.diripr import dirichlet_multinomial
+from morie.fn.diripr import dirichlet_multinomial
 
 
 def test_diripr_basic():

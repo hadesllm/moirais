@@ -1,7 +1,7 @@
 """Tests for survmd.survival_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.survmd import survival_mediation
+from morie.fn.survmd import survival_mediation
 
 
 def test_survmd_basic():

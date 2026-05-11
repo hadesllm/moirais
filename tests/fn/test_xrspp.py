@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrspp -- Spatial probit model"""
+"""Tests for morie.fn.xrspp -- Spatial probit model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrspp import spatial_probit
+from morie.fn.xrspp import spatial_probit
 
 
 class TestSpatialProbit:

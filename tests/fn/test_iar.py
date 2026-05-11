@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.iar -- indirect age-adjustment (SMR)."""
+"""Tests for morie.fn.iar -- indirect age-adjustment (SMR)."""
 
 import numpy as np
 import pytest
-from moirais.fn.iar import indirect_age_adjustment
+from morie.fn.iar import indirect_age_adjustment
 
 
 class TestIAR:

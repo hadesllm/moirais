@@ -1,7 +1,7 @@
 """Tests for groebn.groebner."""
 import numpy as np
 import pytest
-from moirais.fn.groebn import groebner
+from morie.fn.groebn import groebner
 
 
 def test_groebn_basic():

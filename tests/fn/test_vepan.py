@@ -1,7 +1,7 @@
 """Tests for vepan.vep_annotation."""
 import numpy as np
 import pytest
-from moirais.fn.vepan import vep_annotation
+from morie.fn.vepan import vep_annotation
 
 
 def test_vepan_basic():

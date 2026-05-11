@@ -1,7 +1,7 @@
 """Test aicc."""
 import numpy as np
 import pytest
-from moirais.fn.aicc import corrected_aic
+from morie.fn.aicc import corrected_aic
 
 
 def test_aicc_basic():

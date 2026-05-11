@@ -1,7 +1,7 @@
 """Tests for rgacf.rangayyan_acf_estimate."""
 import numpy as np
 import pytest
-from moirais.fn.rgacf import rangayyan_acf_estimate
+from morie.fn.rgacf import rangayyan_acf_estimate
 
 
 def test_rgacf_basic():

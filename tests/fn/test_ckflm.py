@@ -1,7 +1,7 @@
 """Test ckflm."""
 import numpy as np
 import pytest
-from moirais.fn.ckflm import ckflm
+from morie.fn.ckflm import ckflm
 
 
 def test_ckflm_basic():

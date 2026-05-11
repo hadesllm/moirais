@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.mtchf import matched_filter_detect, mtchf
-from moirais.fn._containers import SignalResult
+from morie.fn.mtchf import matched_filter_detect, mtchf
+from morie.fn._containers import SignalResult
 
 
 class TestMatchedFilter:

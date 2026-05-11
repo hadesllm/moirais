@@ -1,7 +1,7 @@
 """Test gaazbr."""
 import numpy as np
 import pytest
-from moirais.fn.gaazbr import gaazbr
+from morie.fn.gaazbr import gaazbr
 
 
 def test_gaazbr_basic():

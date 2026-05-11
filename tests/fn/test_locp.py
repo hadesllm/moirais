@@ -1,7 +1,7 @@
 """Tests for locp.local_polynomial."""
 import numpy as np
 import pytest
-from moirais.fn.locp import local_polynomial
+from morie.fn.locp import local_polynomial
 
 
 def test_locp_basic():

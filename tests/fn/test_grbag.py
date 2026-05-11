@@ -1,7 +1,7 @@
 """Tests for grbag.geron_bagging_predictor."""
 import numpy as np
 import pytest
-from moirais.fn.grbag import geron_bagging_predictor
+from morie.fn.grbag import geron_bagging_predictor
 
 
 def test_grbag_basic():

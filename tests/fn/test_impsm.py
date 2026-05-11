@@ -1,7 +1,7 @@
 """Tests for impsm.importance_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.impsm import importance_sampling
+from morie.fn.impsm import importance_sampling
 
 
 def test_impsm_basic():

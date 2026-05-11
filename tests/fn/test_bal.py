@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.bal -- Balance diagnostics."""
+"""Tests for morie.fn.bal -- Balance diagnostics."""
 
 import numpy as np
 import pytest
-from moirais.fn.bal import balance_diagnostics
+from morie.fn.bal import balance_diagnostics
 
 
 class TestBalanceDiagnostics:

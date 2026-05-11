@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.lortz -- Lorentz transformation."""
+"""Tests for morie.fn.lortz -- Lorentz transformation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.lortz import lortz
+from morie.fn.lortz import lortz
 
 
 def test_returns_dict():

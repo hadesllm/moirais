@@ -1,7 +1,7 @@
 """Tests for hybRC.hybrid_rec."""
 import numpy as np
 import pytest
-from moirais.fn.hybRC import hybrid_rec
+from morie.fn.hybRC import hybrid_rec
 
 
 def test_hybRC_basic():

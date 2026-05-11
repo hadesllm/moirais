@@ -1,7 +1,7 @@
 """Tests for btvinf.boot_influence_fn."""
 import numpy as np
 import pytest
-from moirais.fn.btvinf import boot_influence_fn
+from morie.fn.btvinf import boot_influence_fn
 
 
 def test_btvinf_basic():

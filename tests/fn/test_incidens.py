@@ -1,7 +1,7 @@
 """Tests for incidens.incidence_rate."""
 import numpy as np
 import pytest
-from moirais.fn.incidens import incidence_rate
+from morie.fn.incidens import incidence_rate
 
 
 def test_incidens_basic():

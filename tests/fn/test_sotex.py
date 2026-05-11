@@ -1,7 +1,7 @@
 """Test sotex."""
 import numpy as np
 import pytest
-from moirais.fn.sotex import sotex
+from morie.fn.sotex import sotex
 
 
 def test_sotex_basic():

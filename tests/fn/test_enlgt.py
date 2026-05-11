@@ -1,7 +1,7 @@
 """Test enlgt."""
 import numpy as np
 import pytest
-from moirais.fn.enlgt import enlgt
+from morie.fn.enlgt import enlgt
 
 
 def test_enlgt_basic():

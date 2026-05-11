@@ -1,7 +1,7 @@
 """Test fractal_dim_from_psd."""
 import numpy as np
-from moirais.fn.fdspc import fractal_dim_from_psd, fdspc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.fdspc import fractal_dim_from_psd, fdspc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestFractalDimFromPSD:

@@ -1,7 +1,7 @@
 """Tests for wvdst -- Wigner-Ville distribution."""
 import numpy as np
-from moirais.fn.wvdst import wigner_ville
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wvdst import wigner_ville
+from morie.fn._containers import DescriptiveResult
 
 
 def test_wvd_basic():

@@ -1,7 +1,7 @@
 """Test wqind."""
 import numpy as np
 import pytest
-from moirais.fn.wqind import wqind
+from morie.fn.wqind import wqind
 
 
 def test_wqind_basic():

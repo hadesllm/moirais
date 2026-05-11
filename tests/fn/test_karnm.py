@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.karnm."""
+"""Tests for morie.fn.karnm."""
 import numpy as np
-from moirais.fn.karnm import karnaugh_map
+from morie.fn.karnm import karnaugh_map
 
 
 def test_karnm_smoke():
@@ -12,7 +12,7 @@ def test_karnm_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.karnm import cheatsheet
+    from morie.fn.karnm import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

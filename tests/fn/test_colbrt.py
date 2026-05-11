@@ -1,7 +1,7 @@
 """Tests for colbrt.colbert."""
 import numpy as np
 import pytest
-from moirais.fn.colbrt import colbert
+from morie.fn.colbrt import colbert
 
 
 def test_colbrt_basic():

@@ -1,7 +1,7 @@
 """Test masgr."""
 import numpy as np
 import pytest
-from moirais.fn.masgr import masgr
+from morie.fn.masgr import masgr
 
 
 def test_masgr_basic():

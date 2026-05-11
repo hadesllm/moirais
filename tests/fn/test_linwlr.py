@@ -1,7 +1,7 @@
 """Tests for linwlr.linear_weighted_learner."""
 import numpy as np
 import pytest
-from moirais.fn.linwlr import linear_weighted_learner
+from morie.fn.linwlr import linear_weighted_learner
 
 
 def test_linwlr_basic():

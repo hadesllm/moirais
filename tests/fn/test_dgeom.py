@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.dgeom — geometric PMF."""
+"""Tests for morie.fn.dgeom — geometric PMF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.dgeom import dgeom
+from morie.fn.dgeom import dgeom
 
 
 class TestDgeom:

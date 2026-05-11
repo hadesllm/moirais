@@ -1,6 +1,6 @@
 """Tests for point_biserial."""
 import numpy as np, pytest
-from moirais.fn.pbis import point_biserial
+from morie.fn.pbis import point_biserial
 
 class TestPBis:
     def test_correlated(self):

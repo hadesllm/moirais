@@ -1,7 +1,7 @@
 """Tests for rgeqn1.rangayyan_ch1_signal_stats."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn1 import rangayyan_ch1_signal_stats
+from morie.fn.rgeqn1 import rangayyan_ch1_signal_stats
 
 
 def test_rgeqn1_basic():

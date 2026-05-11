@@ -1,7 +1,7 @@
 """Tests for stmat."""
 import numpy as np
 import pytest
-from moirais.fn.stmat import stmat
+from morie.fn.stmat import stmat
 
 
 def test_stmat_basic():
@@ -27,5 +27,5 @@ def test_stmat_no_data():
 
 
 def test_stmat_alias():
-    from moirais.fn.stmat import stmat
+    from morie.fn.stmat import stmat
     assert stmat is stmat

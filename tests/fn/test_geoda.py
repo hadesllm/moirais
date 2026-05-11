@@ -1,7 +1,7 @@
 """Test geoda."""
 import numpy as np
 import pytest
-from moirais.fn.geoda import geoda
+from morie.fn.geoda import geoda
 
 
 def test_geoda_basic():

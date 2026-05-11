@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.bayid — Bayesian ideal points."""
+"""Tests for morie.fn.bayid — Bayesian ideal points."""
 import numpy as np
-from moirais.fn.bayid import bayid
+from morie.fn.bayid import bayid
 
 
 def test_bayid_basic():

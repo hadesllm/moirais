@@ -1,7 +1,7 @@
 """Tests for grmlm.geron_bert_mlm_loss."""
 import numpy as np
 import pytest
-from moirais.fn.grmlm import geron_bert_mlm_loss
+from morie.fn.grmlm import geron_bert_mlm_loss
 
 
 def test_grmlm_basic():

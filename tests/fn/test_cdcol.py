@@ -1,7 +1,7 @@
 """Tests for cdcol."""
 import numpy as np
 import pytest
-from moirais.fn.cdcol import cdcol
+from morie.fn.cdcol import cdcol
 
 
 def test_cdcol_basic():
@@ -27,5 +27,5 @@ def test_cdcol_no_data():
 
 
 def test_cdcol_alias():
-    from moirais.fn.cdcol import cdcol
+    from morie.fn.cdcol import cdcol
     assert cdcol is cdcol

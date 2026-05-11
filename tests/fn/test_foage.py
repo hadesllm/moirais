@@ -1,7 +1,7 @@
 """Test foage."""
 import numpy as np
 import pytest
-from moirais.fn.foage import foage
+from morie.fn.foage import foage
 
 
 def test_foage_basic():

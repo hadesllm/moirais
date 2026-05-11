@@ -1,10 +1,10 @@
-"""Tests for moirais.crypto._chacha — ChaCha20-Poly1305 AEAD."""
+"""Tests for morie.crypto._chacha — ChaCha20-Poly1305 AEAD."""
 
 import os
 
 import pytest
 
-from moirais.crypto._chacha import chacha20_poly1305_decrypt, chacha20_poly1305_encrypt
+from morie.crypto._chacha import chacha20_poly1305_decrypt, chacha20_poly1305_encrypt
 
 
 class TestChaCha20Poly1305:

@@ -1,7 +1,7 @@
 """Test seclo."""
 import numpy as np
 import pytest
-from moirais.fn.seclo import seclo
+from morie.fn.seclo import seclo
 
 
 def test_seclo_basic():

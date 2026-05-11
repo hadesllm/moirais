@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.cfa — Confirmatory Factor Analysis."""
+"""Tests for morie.fn.cfa — Confirmatory Factor Analysis."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.cfa import cfa
-from moirais.fn._containers import CfaRes
+from morie.fn.cfa import cfa
+from morie.fn._containers import CfaRes
 
 
 def _make_two_factor_data(rng, n=300):

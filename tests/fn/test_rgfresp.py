@@ -1,7 +1,7 @@
 """Tests for rgfresp.rangayyan_freq_response."""
 import numpy as np
 import pytest
-from moirais.fn.rgfresp import rangayyan_freq_response
+from morie.fn.rgfresp import rangayyan_freq_response
 
 
 def test_rgfresp_basic():

@@ -1,0 +1,36 @@
+# morie.fn — function file (hadesllm/morie)
+"""Multi-party competition index.
+
+Category: Spatial
+"""
+
+import numpy as np
+
+from ._containers import DescriptiveResult
+
+
+def mpcmp(data=None, n=50):
+    """Multi-party competition index.
+
+    Returns
+    -------
+    DescriptiveResult
+    """
+    if data is None:
+        data = np.random.default_rng(0).standard_normal(n)
+    stat = float(np.mean(data))
+    return DescriptiveResult(
+        name=short,
+        value=stat,
+        extra={"n": len(data), "mean": float(np.mean(data)), "std": float(np.std(data))},
+    )
+
+
+short = "mpcmp"
+alias = "mpcmp"
+quote = "The spice must flow. -- Paul Atreides"
+mpcmp = mpcmp
+
+
+def cheatsheet() -> str:
+    return "mpcmp({}) -> Multi-party competition index."

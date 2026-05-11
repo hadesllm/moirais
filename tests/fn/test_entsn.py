@@ -1,7 +1,7 @@
 """Test entsn."""
 import numpy as np
 import pytest
-from moirais.fn.entsn import entsn
+from morie.fn.entsn import entsn
 
 
 def test_entsn_basic():

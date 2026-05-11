@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ircnh -- MCD robust covariance."""
+"""Tests for morie.fn.ircnh -- MCD robust covariance."""
 
 import numpy as np
-from moirais.fn.ircnh import robust_covariance_mcd, ircnh
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ircnh import robust_covariance_mcd, ircnh
+from morie.fn._containers import DescriptiveResult
 
 
 class TestIrcnh:

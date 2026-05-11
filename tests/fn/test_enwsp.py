@@ -1,7 +1,7 @@
 """Test enwsp."""
 import numpy as np
 import pytest
-from moirais.fn.enwsp import enwsp
+from morie.fn.enwsp import enwsp
 
 
 def test_enwsp_basic():

@@ -1,7 +1,7 @@
 """Test dklmc."""
 import numpy as np
 import pytest
-from moirais.fn.dklmc import dklmc
+from morie.fn.dklmc import dklmc
 
 
 def test_dklmc_basic():

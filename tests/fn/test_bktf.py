@@ -1,7 +1,7 @@
 """Tests for bktf.burkov_term_frequency."""
 import numpy as np
 import pytest
-from moirais.fn.bktf import burkov_term_frequency
+from morie.fn.bktf import burkov_term_frequency
 
 
 def test_bktf_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zesfr -- Spatial frailty survival model"""
+"""Tests for morie.fn.zesfr -- Spatial frailty survival model"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zesfr import spatial_frailty
+from morie.fn.zesfr import spatial_frailty
 
 
 class TestSpatialFrailty:

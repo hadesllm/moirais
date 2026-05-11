@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.oiv1 — IV estimation (2SLS)."""
+"""Tests for morie.fn.oiv1 — IV estimation (2SLS)."""
 
 import numpy as np
-from moirais.fn.oiv1 import otis_iv_distance
+from morie.fn.oiv1 import otis_iv_distance
 
 
 class TestOtisIvDistance:

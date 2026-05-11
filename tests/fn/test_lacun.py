@@ -1,6 +1,6 @@
 """Tests for lacun.py - Lacunarity analysis."""
 import numpy as np
-from moirais.fn.lacun import lacunarity_fn, lacun
+from morie.fn.lacun import lacunarity_fn, lacun
 
 
 def test_lacun_returns_descriptive_result():

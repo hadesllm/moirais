@@ -1,7 +1,7 @@
 """Tests for ident.identifiability_conditions."""
 import numpy as np
 import pytest
-from moirais.fn.ident import identifiability_conditions
+from morie.fn.ident import identifiability_conditions
 
 
 def test_ident_basic():

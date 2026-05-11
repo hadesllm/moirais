@@ -1,7 +1,7 @@
 """Test hynut."""
 import numpy as np
 import pytest
-from moirais.fn.hynut import hynut
+from morie.fn.hynut import hynut
 
 
 def test_hynut_basic():

@@ -1,7 +1,7 @@
 """Test dtric."""
 import numpy as np
 import pytest
-from moirais.fn.dtric import dtric
+from morie.fn.dtric import dtric
 
 
 def test_dtric_basic():

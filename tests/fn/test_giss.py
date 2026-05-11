@@ -1,7 +1,7 @@
 """Tests for giss.giss_anomaly."""
 import numpy as np
 import pytest
-from moirais.fn.giss import giss_anomaly
+from morie.fn.giss import giss_anomaly
 
 
 def test_giss_basic():

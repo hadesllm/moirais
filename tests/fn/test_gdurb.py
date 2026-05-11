@@ -1,7 +1,7 @@
 """Test gdurb."""
 import numpy as np
 import pytest
-from moirais.fn.gdurb import gdurb
+from morie.fn.gdurb import gdurb
 
 
 def test_gdurb_basic():

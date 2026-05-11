@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.pt — Student's t CDF."""
+"""Tests for morie.fn.pt — Student's t CDF."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.pt import pt
+from morie.fn.pt import pt
 
 
 class TestPt:

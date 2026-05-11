@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bsurv -- Bayesian survival model."""
+"""Tests for morie.fn.bsurv -- Bayesian survival model."""
 
 import numpy as np
-from moirais.fn.bsurv import bayesian_survival
+from morie.fn.bsurv import bayesian_survival
 
 
 def test_returns_dict():

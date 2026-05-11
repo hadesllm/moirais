@@ -1,7 +1,7 @@
 """Tests for hmnov.geron_novelty_detection."""
 import numpy as np
 import pytest
-from moirais.fn.hmnov import geron_novelty_detection
+from morie.fn.hmnov import geron_novelty_detection
 
 
 def test_hmnov_basic():

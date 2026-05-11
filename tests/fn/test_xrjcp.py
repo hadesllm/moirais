@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrjcp -- Join count permutation test"""
+"""Tests for morie.fn.xrjcp -- Join count permutation test"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrjcp import join_count_perm
+from morie.fn.xrjcp import join_count_perm
 
 
 class TestJoinCountPerm:

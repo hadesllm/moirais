@@ -1,7 +1,7 @@
 """Tests for grsgd.geron_stochastic_gradient_descent."""
 import numpy as np
 import pytest
-from moirais.fn.grsgd import geron_stochastic_gradient_descent
+from morie.fn.grsgd import geron_stochastic_gradient_descent
 
 
 def test_grsgd_basic():

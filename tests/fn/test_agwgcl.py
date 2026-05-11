@@ -1,7 +1,7 @@
 """Tests for agwgcl.alphazero_weight_clipping."""
 import numpy as np
 import pytest
-from moirais.fn.agwgcl import alphazero_weight_clipping
+from morie.fn.agwgcl import alphazero_weight_clipping
 
 
 def test_agwgcl_basic():

@@ -1,7 +1,7 @@
 """Tests for mard.ma_risk_difference."""
 import numpy as np
 import pytest
-from moirais.fn.mard import ma_risk_difference
+from morie.fn.mard import ma_risk_difference
 
 
 def test_mard_basic():

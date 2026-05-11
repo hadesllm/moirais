@@ -1,7 +1,7 @@
 """Tests for evextidx.evt_extremal_index_runs."""
 import numpy as np
 import pytest
-from moirais.fn.evextidx import evt_extremal_index_runs
+from morie.fn.evextidx import evt_extremal_index_runs
 
 
 def test_evextidx_basic():

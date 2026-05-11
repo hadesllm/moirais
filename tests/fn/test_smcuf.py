@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.smcuf — SMACOF unfolding."""
+"""Tests for morie.fn.smcuf — SMACOF unfolding."""
 import numpy as np
 import pytest
 
-from moirais.fn.smcuf import smcuf
+from morie.fn.smcuf import smcuf
 
 
 def test_smcuf_smoke():
@@ -12,7 +12,7 @@ def test_smcuf_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.smcuf import cheatsheet
+    from morie.fn.smcuf import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

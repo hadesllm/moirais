@@ -1,7 +1,7 @@
 """Tests for kmnxtg.kamath_nextgpt_any2any."""
 import numpy as np
 import pytest
-from moirais.fn.kmnxtg import kamath_nextgpt_any2any
+from morie.fn.kmnxtg import kamath_nextgpt_any2any
 
 
 def test_kmnxtg_basic():

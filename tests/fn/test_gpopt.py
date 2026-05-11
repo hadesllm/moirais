@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gpopt -- GP Bayesian optimization."""
+"""Tests for morie.fn.gpopt -- GP Bayesian optimization."""
 
 import numpy as np
-from moirais.fn.gpopt import gp_optimize
+from morie.fn.gpopt import gp_optimize
 
 
 def _sphere(x):

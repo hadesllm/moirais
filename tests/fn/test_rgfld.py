@@ -1,7 +1,7 @@
 """Tests for rgfld.rangayyan_fisher_lda."""
 import numpy as np
 import pytest
-from moirais.fn.rgfld import rangayyan_fisher_lda
+from morie.fn.rgfld import rangayyan_fisher_lda
 
 
 def test_rgfld_basic():

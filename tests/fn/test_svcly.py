@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svcly -- Yolk of spatial game"""
+"""Tests for morie.fn.svcly -- Yolk of spatial game"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svcly import coalition_yolk
+from morie.fn.svcly import coalition_yolk
 
 
 class TestCoalitionYolk:

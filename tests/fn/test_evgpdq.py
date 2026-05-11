@@ -1,7 +1,7 @@
 """Tests for evgpdq.evt_gpd_quantile."""
 import numpy as np
 import pytest
-from moirais.fn.evgpdq import evt_gpd_quantile
+from morie.fn.evgpdq import evt_gpd_quantile
 
 
 def test_evgpdq_basic():

@@ -1,7 +1,7 @@
 """Test dtcar."""
 import numpy as np
 import pytest
-from moirais.fn.dtcar import dtcar
+from morie.fn.dtcar import dtcar
 
 
 def test_dtcar_basic():

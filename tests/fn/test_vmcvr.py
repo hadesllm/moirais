@@ -1,7 +1,7 @@
 """Test vmcvr."""
 import numpy as np
 import pytest
-from moirais.fn.vmcvr import vmcvr
+from morie.fn.vmcvr import vmcvr
 
 
 def test_vmcvr_basic():

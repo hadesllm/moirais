@@ -1,7 +1,7 @@
 """Tests for agscan.alphazero_self_consistency."""
 import numpy as np
 import pytest
-from moirais.fn.agscan import alphazero_self_consistency
+from morie.fn.agscan import alphazero_self_consistency
 
 
 def test_agscan_basic():

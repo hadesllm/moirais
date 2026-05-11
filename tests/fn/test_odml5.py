@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.odml5 — OTIS DML volatility."""
+"""Tests for morie.fn.odml5 — OTIS DML volatility."""
 
 import pytest
 import numpy as np
 import pandas as pd
-from moirais.fn.odml5 import otis_dml_volatility
-from moirais.fn._containers import ESRes
+from morie.fn.odml5 import otis_dml_volatility
+from morie.fn._containers import ESRes
 
 
 class TestOtisDmlVolatility:

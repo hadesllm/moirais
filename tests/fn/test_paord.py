@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.paord."""
+"""Tests for morie.fn.paord."""
 
 import numpy as np
 import pytest
-from moirais.fn.paord import paord
+from morie.fn.paord import paord
 
 
 class TestPaord:

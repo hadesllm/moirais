@@ -1,7 +1,7 @@
 """Tests for hmwemb.geron_word_embeddings."""
 import numpy as np
 import pytest
-from moirais.fn.hmwemb import geron_word_embeddings
+from morie.fn.hmwemb import geron_word_embeddings
 
 
 def test_hmwemb_basic():

@@ -1,7 +1,7 @@
 """Tests for empbnp.empirical_bayes_np."""
 import numpy as np
 import pytest
-from moirais.fn.empbnp import empirical_bayes_np
+from morie.fn.empbnp import empirical_bayes_np
 
 
 def test_empbnp_basic():

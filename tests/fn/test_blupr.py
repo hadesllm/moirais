@@ -1,7 +1,7 @@
 """Tests for blupr.blup_random_intercept."""
 import numpy as np
 import pytest
-from moirais.fn.blupr import blup_random_intercept
+from morie.fn.blupr import blup_random_intercept
 
 
 def test_blupr_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.seprt — Separation detection."""
+"""Tests for morie.fn.seprt — Separation detection."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.seprt import detect_separation
+from morie.fn.seprt import detect_separation
 
 
 def test_complete_separation_detected():

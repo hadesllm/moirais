@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.taskm -- dynamic time warping."""
+"""Tests for morie.fn.taskm -- dynamic time warping."""
 
 import numpy as np
-from moirais.fn.taskm import dtw_match, taskm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.taskm import dtw_match, taskm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestTaskm:

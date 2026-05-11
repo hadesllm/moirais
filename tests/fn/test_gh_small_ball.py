@@ -1,7 +1,7 @@
 """Tests for gh_small_ball.ghosal_small_ball_prob."""
 import numpy as np
 import pytest
-from moirais.fn.gh_small_ball import ghosal_small_ball_prob
+from morie.fn.gh_small_ball import ghosal_small_ball_prob
 
 
 def test_gh_small_ball_basic():

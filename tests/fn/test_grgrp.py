@@ -1,7 +1,7 @@
 """Tests for grgrp.geron_gaussian_random_projection."""
 import numpy as np
 import pytest
-from moirais.fn.grgrp import geron_gaussian_random_projection
+from morie.fn.grgrp import geron_gaussian_random_projection
 
 
 def test_grgrp_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.gfunc — pair correlation."""
+"""Tests for morie.fn.gfunc — pair correlation."""
 import numpy as np
-from moirais.fn.gfunc import pair_correlation
+from morie.fn.gfunc import pair_correlation
 
 
 class TestPairCorrelation:

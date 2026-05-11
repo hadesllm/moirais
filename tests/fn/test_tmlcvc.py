@@ -1,7 +1,7 @@
 """Tests for tmlcvc.tmle_cv_targeting."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcvc import tmle_cv_targeting
+from morie.fn.tmlcvc import tmle_cv_targeting
 
 
 def test_tmlcvc_basic():

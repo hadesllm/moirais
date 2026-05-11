@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsstk -- Space-time kriging prediction"""
+"""Tests for morie.fn.zsstk -- Space-time kriging prediction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsstk import st_kriging
+from morie.fn.zsstk import st_kriging
 
 
 class TestStKriging:

@@ -1,7 +1,7 @@
 """Tests for gh_contr_rate2.ghosal_contraction_rate_iid."""
 import numpy as np
 import pytest
-from moirais.fn.gh_contr_rate2 import ghosal_contraction_rate_iid
+from morie.fn.gh_contr_rate2 import ghosal_contraction_rate_iid
 
 
 def test_gh_contr_rate2_basic():

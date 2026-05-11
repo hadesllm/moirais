@@ -1,11 +1,11 @@
-"""Tests for moirais.fn.sigplt -- generic signal plot."""
+"""Tests for morie.fn.sigplt -- generic signal plot."""
 
 import numpy as np
 import pytest
 
 plt = pytest.importorskip("matplotlib.pyplot")
 
-from moirais.fn.sigplt import sigplt
+from morie.fn.sigplt import sigplt
 
 
 class TestSigPlt:

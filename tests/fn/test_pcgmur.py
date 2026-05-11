@@ -1,7 +1,7 @@
 """Tests for pcgmur — PCG murmur detection score."""
 import numpy as np
-from moirais.fn.pcgmur import pcg_murmur_score
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.pcgmur import pcg_murmur_score
+from morie.fn._containers import DescriptiveResult
 
 
 def test_pcgmur_basic(rng):

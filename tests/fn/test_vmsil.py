@@ -1,7 +1,7 @@
 """Test vmsil."""
 import numpy as np
 import pytest
-from moirais.fn.vmsil import vmsil
+from morie.fn.vmsil import vmsil
 
 
 def test_vmsil_basic():

@@ -1,7 +1,7 @@
 """Test vmzrn."""
 import numpy as np
 import pytest
-from moirais.fn.vmzrn import vmzrn
+from morie.fn.vmzrn import vmzrn
 
 
 def test_vmzrn_basic():

@@ -1,7 +1,7 @@
 """Test ensrc."""
 import numpy as np
 import pytest
-from moirais.fn.ensrc import ensrc
+from morie.fn.ensrc import ensrc
 
 
 def test_ensrc_basic():

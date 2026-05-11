@@ -1,7 +1,7 @@
 """Test ghmxc."""
 import numpy as np
 import pytest
-from moirais.fn.ghmxc import ghmxc
+from morie.fn.ghmxc import ghmxc
 
 
 def test_ghmxc_basic():

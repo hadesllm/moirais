@@ -1,7 +1,7 @@
 """Test gegni."""
 import numpy as np
 import pytest
-from moirais.fn.gegni import gegni
+from morie.fn.gegni import gegni
 
 
 def test_gegni_basic():

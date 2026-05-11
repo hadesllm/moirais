@@ -1,7 +1,7 @@
 """Tests for sample entropy."""
 import numpy as np
 import pytest
-from moirais.fn.smpnt import sample_entropy, smpnt
+from morie.fn.smpnt import sample_entropy, smpnt
 
 
 def test_regular():

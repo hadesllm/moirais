@@ -1,7 +1,7 @@
 """Tests for josnv.joseph_seasonal_naive."""
 import numpy as np
 import pytest
-from moirais.fn.josnv import joseph_seasonal_naive
+from morie.fn.josnv import joseph_seasonal_naive
 
 
 def test_josnv_basic():

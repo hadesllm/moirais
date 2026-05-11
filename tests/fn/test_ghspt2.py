@@ -1,7 +1,7 @@
 """Test ghspt2."""
 import numpy as np
 import pytest
-from moirais.fn.ghspt2 import ghspt2
+from morie.fn.ghspt2 import ghspt2
 
 
 def test_ghspt2_basic():

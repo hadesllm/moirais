@@ -1,7 +1,7 @@
 """Tests for grbo.geron_bellman_optimality."""
 import numpy as np
 import pytest
-from moirais.fn.grbo import geron_bellman_optimality
+from morie.fn.grbo import geron_bellman_optimality
 
 
 def test_grbo_basic():

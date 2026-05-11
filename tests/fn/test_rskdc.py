@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.rskdc — outcome rate by risk decile."""
+"""Tests for morie.fn.rskdc — outcome rate by risk decile."""
 
 import pandas as pd
-from moirais.fn.rskdc import risk_decile, rskdc
+from morie.fn.rskdc import risk_decile, rskdc
 
 
 class TestRiskDecile:

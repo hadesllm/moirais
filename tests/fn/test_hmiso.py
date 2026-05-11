@@ -1,7 +1,7 @@
 """Tests for hmiso.geron_isomap."""
 import numpy as np
 import pytest
-from moirais.fn.hmiso import geron_isomap
+from morie.fn.hmiso import geron_isomap
 
 
 def test_hmiso_basic():

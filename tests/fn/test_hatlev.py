@@ -1,7 +1,7 @@
 """Tests for hatlev.leverage."""
 import numpy as np
 import pytest
-from moirais.fn.hatlev import leverage
+from morie.fn.hatlev import leverage
 
 
 def test_hatlev_basic():

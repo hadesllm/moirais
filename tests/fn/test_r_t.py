@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.r_t — Real-time Rt estimation."""
+"""Tests for morie.fn.r_t — Real-time Rt estimation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.r_t import realtime_rt
+from morie.fn.r_t import realtime_rt
 
 
 class TestRealtimeRt:

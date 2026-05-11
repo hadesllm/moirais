@@ -1,7 +1,7 @@
 """Tests for btmbb.boot_moving_block."""
 import numpy as np
 import pytest
-from moirais.fn.btmbb import boot_moving_block
+from morie.fn.btmbb import boot_moving_block
 
 
 def test_btmbb_basic():

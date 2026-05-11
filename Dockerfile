@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 #
-# MOIRAIS container — 3-stage Python + R build, single-arch (linux/amd64).
+# MORIE container — 3-stage Python + R build, single-arch (linux/amd64).
 #
 # Optimisations:
 #   1. Dummy package shim before deps install — heavy pip layer is
@@ -43,8 +43,8 @@ WORKDIR /build
 COPY pyproject.toml README.md ./
 
 RUN --mount=type=cache,target=/root/.cache/pip,sharing=locked \
-    mkdir -p src/moirais \
-    && echo '__version__ = "0.1.2"' > src/moirais/__init__.py \
+    mkdir -p src/morie \
+    && echo '__version__ = "0.1.3"' > src/morie/__init__.py \
     && pip install --root-user-action=ignore setuptools wheel \
     && pip install --root-user-action=ignore --prefix=/install .
 
@@ -69,20 +69,20 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     && Rscript -e "install.packages(c('survey','testthat','DBI','RSQLite','jsonlite'), repos='https://cloud.r-project.org', quiet=TRUE, Ncpus=parallel::detectCores())"
 
 COPY r-package/ /build/r-package/
-RUN R CMD INSTALL --library=/usr/local/lib/R/site-library /build/r-package/moirais
+RUN R CMD INSTALL --library=/usr/local/lib/R/site-library /build/r-package/morie
 
 # ─── Stage 3: Runtime ────────────────────────────────────────────────────────
 FROM python:${PYTHON_VERSION}-slim AS runtime
 
-ARG VERSION=0.1.2
+ARG VERSION=0.1.3
 ARG VCS_REF=unknown
 ARG BUILD_DATE=unknown
 
-LABEL org.opencontainers.image.title="MOIRAIS" \
+LABEL org.opencontainers.image.title="MORIE" \
       org.opencontainers.image.description="Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation (Python + R)" \
-      org.opencontainers.image.url="https://github.com/hadesllm/moirais" \
-      org.opencontainers.image.source="https://github.com/hadesllm/moirais" \
-      org.opencontainers.image.documentation="https://hadesllm.github.io/moirais/" \
+      org.opencontainers.image.url="https://github.com/hadesllm/morie" \
+      org.opencontainers.image.source="https://github.com/hadesllm/morie" \
+      org.opencontainers.image.documentation="https://hadesllm.github.io/morie/" \
       org.opencontainers.image.licenses="GPL-2.0-only" \
       org.opencontainers.image.authors="Vansh Singh Ruhela <hadesllm@proton.me>" \
       org.opencontainers.image.vendor="hadesllm" \
@@ -108,20 +108,20 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
         tini \
         r-base-core
 
-RUN groupadd -r moiraisapp -g 1000 \
-    && useradd -r -u 1000 -g moiraisapp -m -d /home/moiraisapp -s /usr/sbin/nologin moiraisapp
+RUN groupadd -r morieapp -g 1000 \
+    && useradd -r -u 1000 -g morieapp -m -d /home/morieapp -s /usr/sbin/nologin morieapp
 
 # Pull in the installed Python tree from py-builder.
 COPY --from=py-builder /install /usr/local
 
-# Pull in the R site-library (incl. moirais and its CRAN deps).
+# Pull in the R site-library (incl. morie and its CRAN deps).
 COPY --from=r-builder /usr/local/lib/R/site-library /usr/local/lib/R/site-library
 
-USER moiraisapp
-WORKDIR /home/moiraisapp
+USER morieapp
+WORKDIR /home/morieapp
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD python3 -c "from moirais.fn._registry import REGISTRY; assert len(REGISTRY) > 0" || exit 1
+    CMD python3 -c "from morie.fn._registry import REGISTRY; assert len(REGISTRY) > 0" || exit 1
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD ["moirais", "--help"]
+CMD ["morie", "--help"]

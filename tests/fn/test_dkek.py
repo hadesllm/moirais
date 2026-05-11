@@ -1,7 +1,7 @@
 """Test dkek."""
 import numpy as np
 import pytest
-from moirais.fn.dkek import dkek
+from morie.fn.dkek import dkek
 
 
 def test_dkek_basic():

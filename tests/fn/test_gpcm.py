@@ -1,7 +1,7 @@
 """Tests for gpcm.generalized_partial_credit."""
 import numpy as np
 import pytest
-from moirais.fn.gpcm import generalized_partial_credit
+from morie.fn.gpcm import generalized_partial_credit
 
 
 def test_gpcm_basic():

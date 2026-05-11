@@ -1,7 +1,7 @@
 """Tests for ccngg.nakagawa_conditional_r2."""
 import numpy as np
 import pytest
-from moirais.fn.ccngg import nakagawa_conditional_r2
+from morie.fn.ccngg import nakagawa_conditional_r2
 
 
 def test_ccngg_basic():

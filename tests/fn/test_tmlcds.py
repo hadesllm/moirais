@@ -1,7 +1,7 @@
 """Tests for tmlcds.tmle_cdrs."""
 import numpy as np
 import pytest
-from moirais.fn.tmlcds import tmle_cdrs
+from morie.fn.tmlcds import tmle_cdrs
 
 
 def test_tmlcds_basic():

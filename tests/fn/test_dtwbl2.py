@@ -1,7 +1,7 @@
 """Test dtwbl2."""
 import numpy as np
 import pytest
-from moirais.fn.dtwbl2 import dtwbl2
+from morie.fn.dtwbl2 import dtwbl2
 
 
 def test_dtwbl2_basic():

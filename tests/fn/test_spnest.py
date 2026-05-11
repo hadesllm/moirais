@@ -1,7 +1,7 @@
 """Tests for spnest.schabenberger_nested_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.spnest import schabenberger_nested_variogram
+from morie.fn.spnest import schabenberger_nested_variogram
 
 
 def test_spnest_basic():

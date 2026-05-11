@@ -1,5 +1,5 @@
 """Test nmbu."""
-from moirais.fn.nmbu import nambu_goto_action
+from morie.fn.nmbu import nambu_goto_action
 
 
 def test_nmbu_basic():

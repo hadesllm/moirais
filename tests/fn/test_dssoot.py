@@ -1,7 +1,7 @@
 """Tests for dssoot.bootstrap_indirect."""
 import numpy as np
 import pytest
-from moirais.fn.dssoot import bootstrap_indirect
+from morie.fn.dssoot import bootstrap_indirect
 
 
 def test_dssoot_basic():

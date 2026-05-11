@@ -1,7 +1,7 @@
 """Tests for qbcfgs.qb_cf_score."""
 import numpy as np
 import pytest
-from moirais.fn.qbcfgs import qb_cf_score
+from morie.fn.qbcfgs import qb_cf_score
 
 
 def test_qbcfgs_basic():

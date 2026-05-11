@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mtovh — vehicle type."""
+"""Tests for morie.fn.mtovh — vehicle type."""
 
 import pytest
 import pandas as pd
-from moirais.fn.mtovh import mto_vehicle_type
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtovh import mto_vehicle_type
+from morie.fn._containers import DescriptiveResult
 
 
 class TestVehicleType:

@@ -1,7 +1,7 @@
 """Test hybod."""
 import numpy as np
 import pytest
-from moirais.fn.hybod import hybod
+from morie.fn.hybod import hybod
 
 
 def test_hybod_basic():

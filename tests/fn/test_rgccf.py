@@ -1,7 +1,7 @@
 """Tests for rgccf.rangayyan_ccf."""
 import numpy as np
 import pytest
-from moirais.fn.rgccf import rangayyan_ccf
+from morie.fn.rgccf import rangayyan_ccf
 
 
 def test_rgccf_basic():

@@ -1,7 +1,7 @@
 """Tests for mfovsm.mfo_vsm."""
 import numpy as np
 import pytest
-from moirais.fn.mfovsm import mfo_vsm
+from morie.fn.mfovsm import mfo_vsm
 
 
 def test_mfovsm_basic():

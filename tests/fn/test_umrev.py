@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.umrev."""
+"""Tests for morie.fn.umrev."""
 
 import numpy as np
 import pytest
-from moirais.fn.umrev import umrev
+from morie.fn.umrev import umrev
 
 
 class TestUmrev:

@@ -1,7 +1,7 @@
 """Tests for sctraj.scrnaseq_trajectory."""
 import numpy as np
 import pytest
-from moirais.fn.sctraj import scrnaseq_trajectory
+from morie.fn.sctraj import scrnaseq_trajectory
 
 
 def test_sctraj_basic():

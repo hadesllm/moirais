@@ -1,7 +1,7 @@
 """Tests for bkmed.baron_kenny."""
 import numpy as np
 import pytest
-from moirais.fn.bkmed import baron_kenny
+from morie.fn.bkmed import baron_kenny
 
 
 def test_bkmed_basic():

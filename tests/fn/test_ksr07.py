@@ -1,7 +1,7 @@
 """Tests for ksr07.kosorok_bootstrap_empirical."""
 import numpy as np
 import pytest
-from moirais.fn.ksr07 import kosorok_bootstrap_empirical
+from morie.fn.ksr07 import kosorok_bootstrap_empirical
 
 
 def test_ksr07_basic():

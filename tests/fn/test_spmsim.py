@@ -1,7 +1,7 @@
 """Tests for spmsim.schabenberger_mgwr_bandwidth."""
 import numpy as np
 import pytest
-from moirais.fn.spmsim import schabenberger_mgwr_bandwidth
+from morie.fn.spmsim import schabenberger_mgwr_bandwidth
 
 
 def test_spmsim_basic():

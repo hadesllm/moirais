@@ -1,7 +1,7 @@
 """Tests for wleth.weighted_likelihood_theta."""
 import numpy as np
 import pytest
-from moirais.fn.wleth import weighted_likelihood_theta
+from morie.fn.wleth import weighted_likelihood_theta
 
 
 def test_wleth_basic():

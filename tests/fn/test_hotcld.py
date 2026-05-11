@@ -1,7 +1,7 @@
 """Tests for hotcld.hot_cold_spots."""
 import numpy as np
 import pytest
-from moirais.fn.hotcld import hot_cold_spots
+from morie.fn.hotcld import hot_cold_spots
 
 
 def test_hotcld_basic():

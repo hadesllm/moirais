@@ -1,7 +1,7 @@
 """Test hytwi."""
 import numpy as np
 import pytest
-from moirais.fn.hytwi import hytwi
+from morie.fn.hytwi import hytwi
 
 
 def test_hytwi_basic():

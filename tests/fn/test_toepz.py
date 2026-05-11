@@ -1,6 +1,6 @@
 """Tests for toeplitz_matrix."""
 import numpy as np
-from moirais.fn.toepz import toeplitz_matrix, toepz
+from morie.fn.toepz import toeplitz_matrix, toepz
 
 
 def test_basic():

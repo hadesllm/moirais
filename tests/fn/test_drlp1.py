@@ -1,7 +1,7 @@
 """Tests for drlp1.dr_lp_did."""
 import numpy as np
 import pytest
-from moirais.fn.drlp1 import dr_lp_did
+from morie.fn.drlp1 import dr_lp_did
 
 
 def test_drlp1_basic():

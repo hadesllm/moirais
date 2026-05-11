@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.beast -- Jukes-Cantor mutation rate."""
+"""Tests for morie.fn.beast -- Jukes-Cantor mutation rate."""
 
-from moirais.fn.beast import jukes_cantor_rate, beast
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.beast import jukes_cantor_rate, beast
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBeast:

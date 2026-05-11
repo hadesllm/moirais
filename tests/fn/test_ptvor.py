@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptvor -- Point pattern Voronoi intensities"""
+"""Tests for morie.fn.ptvor -- Point pattern Voronoi intensities"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptvor import pp_voronoi
+from morie.fn.ptvor import pp_voronoi
 
 
 class TestPpVoronoi:

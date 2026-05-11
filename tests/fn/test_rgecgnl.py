@@ -1,7 +1,7 @@
 """Tests for rgecgnl.rangayyan_ecg_normal_ectopic."""
 import numpy as np
 import pytest
-from moirais.fn.rgecgnl import rangayyan_ecg_normal_ectopic
+from morie.fn.rgecgnl import rangayyan_ecg_normal_ectopic
 
 
 def test_rgecgnl_basic():

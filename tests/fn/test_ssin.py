@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ssin — Sample size for non-inferiority."""
+"""Tests for morie.fn.ssin — Sample size for non-inferiority."""
 
 import pytest
 
-from moirais.fn.ssin import sample_size_noninferiority
+from morie.fn.ssin import sample_size_noninferiority
 
 
 class TestSampleSizeNoninferiority:

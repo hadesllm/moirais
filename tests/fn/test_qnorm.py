@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qnorm — normal quantile function."""
+"""Tests for morie.fn.qnorm — normal quantile function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qnorm import qnorm
+from morie.fn.qnorm import qnorm
 
 
 class TestQnorm:

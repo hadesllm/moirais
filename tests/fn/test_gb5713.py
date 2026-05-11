@@ -1,7 +1,7 @@
 """Tests for gb5713.gibbons_wsrt_simpower."""
 import numpy as np
 import pytest
-from moirais.fn.gb5713 import gibbons_wsrt_simpower
+from morie.fn.gb5713 import gibbons_wsrt_simpower
 
 
 def test_gb5713_basic():

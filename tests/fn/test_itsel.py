@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itsel — item selection / flagging."""
+"""Tests for morie.fn.itsel — item selection / flagging."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.itsel import item_select
+from morie.fn.itsel import item_select
 
 
 class TestItemSelect:

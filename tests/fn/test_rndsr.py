@@ -1,7 +1,7 @@
 """Tests for rndsr.random_search_cv."""
 import numpy as np
 import pytest
-from moirais.fn.rndsr import random_search_cv
+from morie.fn.rndsr import random_search_cv
 
 
 def test_rndsr_basic():

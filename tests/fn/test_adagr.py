@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.adagr -- Adagrad optimizer."""
+"""Tests for morie.fn.adagr -- Adagrad optimizer."""
 
 import numpy as np
 
-from moirais.fn.adagr import adagr
+from morie.fn.adagr import adagr
 
 
 def test_quadratic_minimization():

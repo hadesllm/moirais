@@ -1,7 +1,7 @@
 """Tests for irtid.irt_identification_constraints."""
 import numpy as np
 import pytest
-from moirais.fn.irtid import irt_identification_constraints
+from morie.fn.irtid import irt_identification_constraints
 
 
 def test_irtid_basic():

@@ -1,7 +1,7 @@
 """Test dkspr."""
 import numpy as np
 import pytest
-from moirais.fn.dkspr import dkspr
+from morie.fn.dkspr import dkspr
 
 
 def test_dkspr_basic():

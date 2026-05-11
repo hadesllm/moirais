@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.aqman -- IDW interpolation."""
+"""Tests for morie.fn.aqman -- IDW interpolation."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.aqman import idw_interpolate, aqman
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.aqman import idw_interpolate, aqman
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAqman:

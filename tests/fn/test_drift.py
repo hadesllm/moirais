@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.drift -- ADWIN concept drift detection."""
+"""Tests for morie.fn.drift -- ADWIN concept drift detection."""
 
 import numpy as np
-from moirais.fn.drift import adwin_drift, drift
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.drift import adwin_drift, drift
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDrift:

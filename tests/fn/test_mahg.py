@@ -1,7 +1,7 @@
 """Tests for mahg.ma_hedges_g."""
 import numpy as np
 import pytest
-from moirais.fn.mahg import ma_hedges_g
+from morie.fn.mahg import ma_hedges_g
 
 
 def test_mahg_basic():

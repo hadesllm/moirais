@@ -1,7 +1,7 @@
 """Tests for gh_var_dp_post.ghosal_variational_dp_posterior."""
 import numpy as np
 import pytest
-from moirais.fn.gh_var_dp_post import ghosal_variational_dp_posterior
+from morie.fn.gh_var_dp_post import ghosal_variational_dp_posterior
 
 
 def test_gh_var_dp_post_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.aepth — AEP verification."""
+"""Tests for morie.fn.aepth — AEP verification."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.aepth import aepth
+from morie.fn.aepth import aepth
 
 
 class TestAepth:

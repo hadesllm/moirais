@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zssgs -- Sequential Gaussian simulation"""
+"""Tests for morie.fn.zssgs -- Sequential Gaussian simulation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zssgs import seq_gauss_sim
+from morie.fn.zssgs import seq_gauss_sim
 
 
 class TestSeqGaussSim:

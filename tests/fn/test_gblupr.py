@@ -1,7 +1,7 @@
 """Tests for gblupr.gblup_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.gblupr import gblup_estimator
+from morie.fn.gblupr import gblup_estimator
 
 
 def test_gblupr_basic():

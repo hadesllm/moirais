@@ -1,7 +1,7 @@
 """Tests for gpwhr.gp_warped."""
 import numpy as np
 import pytest
-from moirais.fn.gpwhr import gp_warped
+from morie.fn.gpwhr import gp_warped
 
 
 def test_gpwhr_basic():

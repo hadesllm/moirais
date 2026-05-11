@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.morph -- t-SNE dimensionality reduction."""
+"""Tests for morie.fn.morph -- t-SNE dimensionality reduction."""
 
 import numpy as np
-from moirais.fn.morph import tsne_reduce, morph
-from moirais.fn._containers import TsneRes
+from morie.fn.morph import tsne_reduce, morph
+from morie.fn._containers import TsneRes
 
 
 class TestMorph:

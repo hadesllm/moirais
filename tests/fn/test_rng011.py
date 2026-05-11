@@ -1,7 +1,7 @@
 """Tests for rng011.rangayyan_ch3_shannon_entropy_discrete."""
 import numpy as np
 import pytest
-from moirais.fn.rng011 import rangayyan_ch3_shannon_entropy_discrete
+from morie.fn.rng011 import rangayyan_ch3_shannon_entropy_discrete
 
 
 def test_rng011_basic():

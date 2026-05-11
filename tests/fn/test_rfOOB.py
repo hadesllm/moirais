@@ -1,7 +1,7 @@
 """Tests for rfOOB.rf_oob_error."""
 import numpy as np
 import pytest
-from moirais.fn.rfOOB import rf_oob_error
+from morie.fn.rfOOB import rf_oob_error
 
 
 def test_rfOOB_basic():

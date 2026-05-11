@@ -1,6 +1,6 @@
 """Tests for swtfn.py - Stationary Wavelet Transform."""
 import numpy as np
-from moirais.fn.swtfn import swt_decompose, swtfn
+from morie.fn.swtfn import swt_decompose, swtfn
 
 
 def test_swt_returns_descriptive_result():

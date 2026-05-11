@@ -1,6 +1,6 @@
 """Tests for min_covariance_det."""
 import numpy as np, pytest
-from moirais.fn.mcd import min_covariance_det
+from morie.fn.mcd import min_covariance_det
 
 class TestMCD:
     def test_clean_data(self):

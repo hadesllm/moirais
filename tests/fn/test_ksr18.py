@@ -1,7 +1,7 @@
 """Tests for ksr18.kosorok_nelson_aalen."""
 import numpy as np
 import pytest
-from moirais.fn.ksr18 import kosorok_nelson_aalen
+from morie.fn.ksr18 import kosorok_nelson_aalen
 
 
 def test_ksr18_basic():

@@ -1,7 +1,7 @@
 """Tests for deftef.design_effect."""
 import numpy as np
 import pytest
-from moirais.fn.deftef import design_effect
+from morie.fn.deftef import design_effect
 
 
 def test_deftef_basic():

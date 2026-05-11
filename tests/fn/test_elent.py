@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.elent."""
+"""Tests for morie.fn.elent."""
 
 import numpy as np
 import pytest
-from moirais.fn.elent import elent
+from morie.fn.elent import elent
 
 
 class TestElent:

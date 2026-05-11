@@ -1,7 +1,7 @@
 """Test rsfus."""
 import numpy as np
 import pytest
-from moirais.fn.rsfus import rsfus
+from morie.fn.rsfus import rsfus
 
 
 def test_rsfus_basic():

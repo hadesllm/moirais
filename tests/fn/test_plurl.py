@@ -1,5 +1,5 @@
-"""Tests for moirais.fn.plurl — Plurality voting."""
-from moirais.fn.plurl import plurl
+"""Tests for morie.fn.plurl — Plurality voting."""
+from morie.fn.plurl import plurl
 
 
 def test_plurl_basic():

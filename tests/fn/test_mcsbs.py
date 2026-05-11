@@ -1,7 +1,7 @@
 """Tests for mcsbs."""
 import numpy as np
 import pytest
-from moirais.fn.mcsbs import mcsbs
+from morie.fn.mcsbs import mcsbs
 
 
 def test_mcsbs_basic():
@@ -27,5 +27,5 @@ def test_mcsbs_no_data():
 
 
 def test_mcsbs_alias():
-    from moirais.fn.mcsbs import mcsbs
+    from morie.fn.mcsbs import mcsbs
     assert mcsbs is mcsbs

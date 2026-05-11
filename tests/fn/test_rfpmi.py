@@ -1,7 +1,7 @@
 """Tests for rfpmi.rf_permutation_importance."""
 import numpy as np
 import pytest
-from moirais.fn.rfpmi import rf_permutation_importance
+from morie.fn.rfpmi import rf_permutation_importance
 
 
 def test_rfpmi_basic():

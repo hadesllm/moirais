@@ -1,7 +1,7 @@
 """Tests for grduel.geron_dueling_dqn."""
 import numpy as np
 import pytest
-from moirais.fn.grduel import geron_dueling_dqn
+from morie.fn.grduel import geron_dueling_dqn
 
 
 def test_grduel_basic():

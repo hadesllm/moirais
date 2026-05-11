@@ -1,7 +1,7 @@
 """Tests for kapco.kappa_coefficient."""
 import numpy as np
 import pytest
-from moirais.fn.kapco import kappa_coefficient
+from morie.fn.kapco import kappa_coefficient
 
 
 def test_kapco_basic():

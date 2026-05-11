@@ -1,7 +1,7 @@
 """Tests for dreamr.dreamer."""
 import numpy as np
 import pytest
-from moirais.fn.dreamr import dreamer
+from morie.fn.dreamr import dreamer
 
 
 def test_dreamr_basic():

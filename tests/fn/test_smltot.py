@@ -1,7 +1,7 @@
 """Tests for smltot.survey_total."""
 import numpy as np
 import pytest
-from moirais.fn.smltot import survey_total
+from morie.fn.smltot import survey_total
 
 
 def test_smltot_basic():

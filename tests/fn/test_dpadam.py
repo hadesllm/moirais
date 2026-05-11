@@ -1,7 +1,7 @@
 """Tests for dpadam.dp_adam."""
 import numpy as np
 import pytest
-from moirais.fn.dpadam import dp_adam
+from morie.fn.dpadam import dp_adam
 
 
 def test_dpadam_basic():

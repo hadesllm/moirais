@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.baysa -- BayesA genomic prediction."""
+"""Tests for morie.fn.baysa -- BayesA genomic prediction."""
 
 import numpy as np
 import pytest
-from moirais.fn.baysa import baysa
+from morie.fn.baysa import baysa
 
 
 def _sim(n=60, p=10, seed=42):

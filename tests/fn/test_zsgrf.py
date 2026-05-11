@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsgrf -- Focal grid statistics"""
+"""Tests for morie.fn.zsgrf -- Focal grid statistics"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsgrf import grid_focal
+from morie.fn.zsgrf import grid_focal
 
 
 class TestGridFocal:

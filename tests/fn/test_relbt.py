@@ -1,7 +1,7 @@
 """Tests for relbt.reliability_metric."""
 import numpy as np
 import pytest
-from moirais.fn.relbt import reliability_metric
+from morie.fn.relbt import reliability_metric
 
 
 def test_relbt_basic():

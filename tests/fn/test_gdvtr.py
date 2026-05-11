@@ -1,7 +1,7 @@
 """Test gdvtr."""
 import numpy as np
 import pytest
-from moirais.fn.gdvtr import gdvtr
+from morie.fn.gdvtr import gdvtr
 
 
 def test_gdvtr_basic():

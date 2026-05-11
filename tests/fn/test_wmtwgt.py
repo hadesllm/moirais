@@ -1,7 +1,7 @@
 """Tests for wmtwgt.weights_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.wmtwgt import weights_matrix
+from morie.fn.wmtwgt import weights_matrix
 
 
 def test_wmtwgt_basic():

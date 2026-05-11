@@ -1,7 +1,7 @@
 """Tests for vitlrn.vit_layer_norm."""
 import numpy as np
 import pytest
-from moirais.fn.vitlrn import vit_layer_norm
+from morie.fn.vitlrn import vit_layer_norm
 
 
 def test_vitlrn_basic():

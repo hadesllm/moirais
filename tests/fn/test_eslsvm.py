@@ -1,7 +1,7 @@
 """Tests for eslsvm.esl_svm_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.eslsvm import esl_svm_kernel
+from morie.fn.eslsvm import esl_svm_kernel
 
 
 def test_eslsvm_basic():

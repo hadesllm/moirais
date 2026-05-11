@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.pslin."""
+"""Tests for morie.fn.pslin."""
 
 import numpy as np
 import pytest
-from moirais.fn.pslin import pslin
+from morie.fn.pslin import pslin
 
 
 class TestPslin:

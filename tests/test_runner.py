@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from moirais.runner import build_parser, execute_pipeline, main
+from morie.runner import build_parser, execute_pipeline, main
 
 _RTESTS_DIR = Path(__file__).resolve().parents[1] / "rtests"
 
@@ -20,7 +20,7 @@ def test_execute_pipeline_requires_confirmation_by_default(monkeypatch, capsys):
 
 def test_execute_pipeline_runs_when_confirmed(monkeypatch, capsys):
     monkeypatch.setattr("builtins.input", lambda _: "y")
-    monkeypatch.setattr("moirais.runner.run_module", lambda *_, **__: {})
+    monkeypatch.setattr("morie.runner.run_module", lambda *_, **__: {})
 
     status = execute_pipeline(modules=["power-design"], silent=False)
 
@@ -32,13 +32,13 @@ def test_execute_pipeline_runs_when_confirmed(monkeypatch, capsys):
 
 
 def test_main_prints_help_when_no_action_requested(monkeypatch, capsys):
-    monkeypatch.setattr("sys.argv", ["moirais"])
+    monkeypatch.setattr("sys.argv", ["morie"])
 
     status = main()
 
     captured = capsys.readouterr()
     assert status == 0
-    assert "MOIRAIS" in captured.out
+    assert "MORIE" in captured.out
 
 
 def test_parser_accepts_module_overrides():
@@ -65,7 +65,7 @@ def test_main_runs_parity_review(monkeypatch, capsys, tmp_path):
     monkeypatch.setattr(
         "sys.argv",
         [
-            "moirais",
+            "morie",
             "parity-review",
             "--epiml-root",
             str(_RTESTS_DIR),
@@ -83,7 +83,7 @@ def test_main_runs_parity_review(monkeypatch, capsys, tmp_path):
 
 
 def test_main_lists_modules(monkeypatch, capsys):
-    monkeypatch.setattr("sys.argv", ["moirais", "list-modules"])
+    monkeypatch.setattr("sys.argv", ["morie", "list-modules"])
     status = main()
     captured = capsys.readouterr()
     assert status == 0

@@ -1,7 +1,7 @@
 """Tests for erdosg.erdos_renyi_gnp."""
 import numpy as np
 import pytest
-from moirais.fn.erdosg import erdos_renyi_gnp
+from morie.fn.erdosg import erdos_renyi_gnp
 
 
 def test_erdosg_basic():

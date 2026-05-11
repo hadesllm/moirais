@@ -1,7 +1,7 @@
 """Tests for agnodu.alphazero_node_update."""
 import numpy as np
 import pytest
-from moirais.fn.agnodu import alphazero_node_update
+from morie.fn.agnodu import alphazero_node_update
 
 
 def test_agnodu_basic():

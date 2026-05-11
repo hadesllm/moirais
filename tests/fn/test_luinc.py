@@ -1,7 +1,7 @@
 """Tests for luinc."""
 import numpy as np
 import pytest
-from moirais.fn.luinc import luinc
+from morie.fn.luinc import luinc
 
 
 def test_luinc_basic():
@@ -27,5 +27,5 @@ def test_luinc_no_data():
 
 
 def test_luinc_alias():
-    from moirais.fn.luinc import luinc
+    from morie.fn.luinc import luinc
     assert luinc is luinc

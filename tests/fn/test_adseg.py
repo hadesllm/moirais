@@ -1,7 +1,7 @@
 """Test adaptive_segment (adseg)."""
 import numpy as np
-from moirais.fn.adseg import adaptive_segment, adseg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.adseg import adaptive_segment, adseg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAdaptiveSegment:

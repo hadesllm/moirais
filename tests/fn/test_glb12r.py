@@ -1,7 +1,7 @@
 """Tests for glb12r.greatest_lower_bound."""
 import numpy as np
 import pytest
-from moirais.fn.glb12r import greatest_lower_bound
+from morie.fn.glb12r import greatest_lower_bound
 
 
 def test_glb12r_basic():

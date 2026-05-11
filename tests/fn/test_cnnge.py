@@ -1,7 +1,7 @@
 """Tests for cnnge.cnn_genomic."""
 import numpy as np
 import pytest
-from moirais.fn.cnnge import cnn_genomic
+from morie.fn.cnnge import cnn_genomic
 
 
 def test_cnnge_basic():

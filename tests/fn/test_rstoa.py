@@ -1,7 +1,7 @@
 """Test rstoa."""
 import numpy as np
 import pytest
-from moirais.fn.rstoa import rstoa
+from morie.fn.rstoa import rstoa
 
 
 def test_rstoa_basic():

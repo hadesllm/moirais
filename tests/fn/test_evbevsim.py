@@ -1,7 +1,7 @@
 """Tests for evbevsim.evt_bv_evd_sim."""
 import numpy as np
 import pytest
-from moirais.fn.evbevsim import evt_bv_evd_sim
+from morie.fn.evbevsim import evt_bv_evd_sim
 
 
 def test_evbevsim_basic():

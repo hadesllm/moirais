@@ -1,7 +1,7 @@
 """Tests for btsubs.boot_subsampling."""
 import numpy as np
 import pytest
-from moirais.fn.btsubs import boot_subsampling
+from morie.fn.btsubs import boot_subsampling
 
 
 def test_btsubs_basic():

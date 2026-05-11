@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.carml."""
+"""Tests for morie.fn.carml."""
 import numpy as np
 import pytest
-from moirais.fn.carml import carml
+from morie.fn.carml import carml
 
 
 class TestCarml:

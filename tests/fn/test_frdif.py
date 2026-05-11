@@ -1,8 +1,8 @@
 """Test forward_difference (frdif)."""
 import numpy as np
 
-from moirais.fn.frdif import forward_difference, frdif
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.frdif import forward_difference, frdif
+from morie.fn._containers import DescriptiveResult
 
 
 class TestForwardDifference:

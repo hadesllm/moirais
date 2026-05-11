@@ -1,7 +1,7 @@
 """Tests for abcsmc.abc_smc_epi."""
 import numpy as np
 import pytest
-from moirais.fn.abcsmc import abc_smc_epi
+from morie.fn.abcsmc import abc_smc_epi
 
 
 def test_abcsmc_basic():

@@ -1,7 +1,7 @@
 """Tests for agmurc.muzero_recurrent_inf."""
 import numpy as np
 import pytest
-from moirais.fn.agmurc import muzero_recurrent_inf
+from morie.fn.agmurc import muzero_recurrent_inf
 
 
 def test_agmurc_basic():

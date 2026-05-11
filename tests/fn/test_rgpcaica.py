@@ -1,7 +1,7 @@
 """Tests for rgpcaica.rangayyan_pca_vs_ica."""
 import numpy as np
 import pytest
-from moirais.fn.rgpcaica import rangayyan_pca_vs_ica
+from morie.fn.rgpcaica import rangayyan_pca_vs_ica
 
 
 def test_rgpcaica_basic():

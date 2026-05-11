@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rey_zp — zero-inflated Poisson regression."""
+"""Tests for morie.fn.rey_zp — zero-inflated Poisson regression."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.rey_zp import rey_zp
+from morie.fn.rey_zp import rey_zp
 
 
 class TestReyZp:

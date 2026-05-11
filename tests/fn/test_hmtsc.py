@@ -1,7 +1,7 @@
 """Tests for hmtsc.geron_torchscript."""
 import numpy as np
 import pytest
-from moirais.fn.hmtsc import geron_torchscript
+from morie.fn.hmtsc import geron_torchscript
 
 
 def test_hmtsc_basic():

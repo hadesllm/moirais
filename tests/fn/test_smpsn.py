@@ -2,8 +2,8 @@
 import numpy as np
 import pytest
 
-from moirais.fn.smpsn import simpson_integrate, smpsn
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.smpsn import simpson_integrate, smpsn
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSimpsonIntegrate:

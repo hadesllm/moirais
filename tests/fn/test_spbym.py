@@ -1,7 +1,7 @@
 """Tests for spbym.schabenberger_bym_model."""
 import numpy as np
 import pytest
-from moirais.fn.spbym import schabenberger_bym_model
+from morie.fn.spbym import schabenberger_bym_model
 
 
 def test_spbym_basic():

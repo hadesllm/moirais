@@ -1,7 +1,7 @@
 """Tests for rgwvpkt.rangayyan_wavelet_packet."""
 import numpy as np
 import pytest
-from moirais.fn.rgwvpkt import rangayyan_wavelet_packet
+from morie.fn.rgwvpkt import rangayyan_wavelet_packet
 
 
 def test_rgwvpkt_basic():

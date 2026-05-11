@@ -1,7 +1,7 @@
 """Tests for goalc.goal_conditioned."""
 import numpy as np
 import pytest
-from moirais.fn.goalc import goal_conditioned
+from morie.fn.goalc import goal_conditioned
 
 
 def test_goalc_basic():

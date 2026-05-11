@@ -1,7 +1,7 @@
 """Tests for clipxt.clip_text_encoder."""
 import numpy as np
 import pytest
-from moirais.fn.clipxt import clip_text_encoder
+from morie.fn.clipxt import clip_text_encoder
 
 
 def test_clipxt_basic():

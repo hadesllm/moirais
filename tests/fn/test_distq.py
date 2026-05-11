@@ -1,7 +1,7 @@
 """Tests for distq.distributional_rl."""
 import numpy as np
 import pytest
-from moirais.fn.distq import distributional_rl
+from morie.fn.distq import distributional_rl
 
 
 def test_distq_basic():

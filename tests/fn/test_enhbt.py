@@ -1,7 +1,7 @@
 """Test enhbt."""
 import numpy as np
 import pytest
-from moirais.fn.enhbt import enhbt
+from morie.fn.enhbt import enhbt
 
 
 def test_enhbt_basic():

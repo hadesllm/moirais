@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.smcnv -- SMACOF convergence."""
+"""Tests for morie.fn.smcnv -- SMACOF convergence."""
 
-from moirais.fn.smcnv import smacof_convergence, smcnv
+from morie.fn.smcnv import smacof_convergence, smcnv
 
 
 def test_smcnv_converged():

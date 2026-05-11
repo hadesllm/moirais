@@ -1,7 +1,7 @@
 """Tests for ksr033.kosorok_ch2_uniform_covering_number."""
 import numpy as np
 import pytest
-from moirais.fn.ksr033 import kosorok_ch2_uniform_covering_number
+from morie.fn.ksr033 import kosorok_ch2_uniform_covering_number
 
 
 def test_ksr033_basic():

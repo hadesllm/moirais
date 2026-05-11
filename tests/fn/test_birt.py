@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.birt — Bayesian 2PL IRT."""
+"""Tests for morie.fn.birt — Bayesian 2PL IRT."""
 
 import numpy as np
 import pytest
-from moirais.fn.birt import bayesian_irt_2pl
+from morie.fn.birt import bayesian_irt_2pl
 
 
 class TestBayesianIrt2pl:

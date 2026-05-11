@@ -1,7 +1,7 @@
 """Tests for mecpd.markov_equivalence_class."""
 import numpy as np
 import pytest
-from moirais.fn.mecpd import markov_equivalence_class
+from morie.fn.mecpd import markov_equivalence_class
 
 
 def test_mecpd_basic():

@@ -1,7 +1,7 @@
 """Test shannon_energy_fn."""
 import numpy as np
-from moirais.fn.sheng import shannon_energy_fn, alias
-from moirais.fn._containers import SignalResult
+from morie.fn.sheng import shannon_energy_fn, alias
+from morie.fn._containers import SignalResult
 
 
 class TestShannonEnergyFn:

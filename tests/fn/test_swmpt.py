@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.swmpt -- Biomass estimation."""
+"""Tests for morie.fn.swmpt -- Biomass estimation."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.swmpt import biomass_estimate, swmpt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.swmpt import biomass_estimate, swmpt
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSwmpt:

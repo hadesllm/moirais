@@ -1,6 +1,6 @@
 """Tests for feature_select_variance."""
 import numpy as np
-from moirais.fn.fslct import feature_select_variance, fslct
+from morie.fn.fslct import feature_select_variance, fslct
 
 
 def test_basic():

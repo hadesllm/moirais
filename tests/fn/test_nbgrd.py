@@ -1,7 +1,7 @@
 """Test nbgrd."""
 import numpy as np
 import pytest
-from moirais.fn.nbgrd import nbgrd
+from morie.fn.nbgrd import nbgrd
 
 
 def test_nbgrd_basic():

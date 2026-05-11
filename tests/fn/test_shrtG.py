@@ -1,7 +1,7 @@
 """Tests for shrtG.shortest_path_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.shrtG import shortest_path_kernel
+from morie.fn.shrtG import shortest_path_kernel
 
 
 def test_shrtG_basic():

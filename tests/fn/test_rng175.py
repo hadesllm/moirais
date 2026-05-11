@@ -1,7 +1,7 @@
 """Tests for rng175.rangayyan_ch3_rls_a_priori_error."""
 import numpy as np
 import pytest
-from moirais.fn.rng175 import rangayyan_ch3_rls_a_priori_error
+from morie.fn.rng175 import rangayyan_ch3_rls_a_priori_error
 
 
 def test_rng175_basic():

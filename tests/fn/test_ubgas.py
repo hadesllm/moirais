@@ -1,7 +1,7 @@
 """Test ubgas."""
 import numpy as np
 import pytest
-from moirais.fn.ubgas import ubgas
+from morie.fn.ubgas import ubgas
 
 
 def test_ubgas_basic():

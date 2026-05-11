@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tqprd — TurboQuant product quantizer."""
+"""Tests for morie.fn.tqprd — TurboQuant product quantizer."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tqprd import turboquant_prod
+from morie.fn.tqprd import turboquant_prod
 
 
 class TestTurboquantProd:

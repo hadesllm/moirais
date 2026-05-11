@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msdst -- Distance matrix computation"""
+"""Tests for morie.fn.msdst -- Distance matrix computation"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msdst import dist_matrix
+from morie.fn.msdst import dist_matrix
 
 
 class TestDistMatrix:

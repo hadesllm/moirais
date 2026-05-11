@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.xrwsm -- Weights symmetrization"""
+"""Tests for morie.fn.xrwsm -- Weights symmetrization"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.xrwsm import w_symmetrize
+from morie.fn.xrwsm import w_symmetrize
 
 
 class TestWSymmetrize:

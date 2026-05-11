@@ -1,7 +1,7 @@
 """Tests for romg2 -- omega per subscale."""
 import numpy as np
-from moirais.fn.romg2 import omega_subscale
-from moirais.fn._containers import ESRes
+from morie.fn.romg2 import omega_subscale
+from morie.fn._containers import ESRes
 
 
 class TestOmegaSubscale:

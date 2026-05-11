@@ -1,7 +1,7 @@
 """Tests for fzt15.fauzi_thm1_5_consistency_mgkde."""
 import numpy as np
 import pytest
-from moirais.fn.fzt15 import fauzi_thm1_5_consistency_mgkde
+from morie.fn.fzt15 import fauzi_thm1_5_consistency_mgkde
 
 
 def test_fzt15_basic():

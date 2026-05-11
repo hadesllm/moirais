@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.wkndm -- multi-objective Pareto optimization."""
+"""Tests for morie.fn.wkndm -- multi-objective Pareto optimization."""
 
 import numpy as np
-from moirais.fn.wkndm import pareto_optimize, wkndm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.wkndm import pareto_optimize, wkndm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestWkndm:

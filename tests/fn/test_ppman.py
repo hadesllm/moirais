@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ppman."""
+"""Tests for morie.fn.ppman."""
 
 import numpy as np
 import pytest
-from moirais.fn.ppman import ppman
+from morie.fn.ppman import ppman
 
 
 class TestPpman:

@@ -1,7 +1,7 @@
 """Test rsusc."""
 import numpy as np
 import pytest
-from moirais.fn.rsusc import rsusc
+from morie.fn.rsusc import rsusc
 
 
 def test_rsusc_basic():

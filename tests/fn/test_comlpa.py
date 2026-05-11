@@ -1,7 +1,7 @@
 """Tests for comlpa.label_propagation."""
 import numpy as np
 import pytest
-from moirais.fn.comlpa import label_propagation
+from morie.fn.comlpa import label_propagation
 
 
 def test_comlpa_basic():

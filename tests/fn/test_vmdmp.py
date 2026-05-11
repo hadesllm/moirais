@@ -1,7 +1,7 @@
 """Test vmdmp."""
 import numpy as np
 import pytest
-from moirais.fn.vmdmp import vmdmp
+from morie.fn.vmdmp import vmdmp
 
 
 def test_vmdmp_basic():

@@ -1,7 +1,7 @@
 """Tests for cfst.causal_forest."""
 import numpy as np
 import pytest
-from moirais.fn.cfst import causal_forest
+from morie.fn.cfst import causal_forest
 
 
 def test_cfst_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.runf — uniform random sample."""
+"""Tests for morie.fn.runf — uniform random sample."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.runf import runif
+from morie.fn.runf import runif
 
 
 class TestRunif:

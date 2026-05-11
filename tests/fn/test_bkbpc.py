@@ -1,7 +1,7 @@
 """Tests for bkbpc.burkov_bits_per_character."""
 import numpy as np
 import pytest
-from moirais.fn.bkbpc import burkov_bits_per_character
+from morie.fn.bkbpc import burkov_bits_per_character
 
 
 def test_bkbpc_basic():

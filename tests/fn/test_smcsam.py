@@ -1,7 +1,7 @@
 """Tests for smcsam.sequential_mc_sampler."""
 import numpy as np
 import pytest
-from moirais.fn.smcsam import sequential_mc_sampler
+from morie.fn.smcsam import sequential_mc_sampler
 
 
 def test_smcsam_basic():

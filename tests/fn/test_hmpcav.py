@@ -1,7 +1,7 @@
 """Tests for hmpcav.geron_pca_variance."""
 import numpy as np
 import pytest
-from moirais.fn.hmpcav import geron_pca_variance
+from morie.fn.hmpcav import geron_pca_variance
 
 
 def test_hmpcav_basic():

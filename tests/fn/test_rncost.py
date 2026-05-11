@@ -1,7 +1,7 @@
 """Tests for rncost."""
 import numpy as np
 import pytest
-from moirais.fn.rncost import rncost
+from morie.fn.rncost import rncost
 
 
 def test_rncost_basic():
@@ -27,5 +27,5 @@ def test_rncost_no_data():
 
 
 def test_rncost_alias():
-    from moirais.fn.rncost import rncost
+    from morie.fn.rncost import rncost
     assert rncost is rncost

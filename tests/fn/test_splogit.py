@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.splogit."""
+"""Tests for morie.fn.splogit."""
 import numpy as np
 import pytest
-from moirais.fn.splogit import splogit
+from morie.fn.splogit import splogit
 
 
 class TestSplogit:

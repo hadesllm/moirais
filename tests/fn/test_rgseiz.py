@@ -1,7 +1,7 @@
 """Tests for rgseiz.rangayyan_seizure_detect."""
 import numpy as np
 import pytest
-from moirais.fn.rgseiz import rangayyan_seizure_detect
+from morie.fn.rgseiz import rangayyan_seizure_detect
 
 
 def test_rgseiz_basic():

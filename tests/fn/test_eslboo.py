@@ -1,7 +1,7 @@
 """Tests for eslboo.esl_bootstrap_err."""
 import numpy as np
 import pytest
-from moirais.fn.eslboo import esl_bootstrap_err
+from morie.fn.eslboo import esl_bootstrap_err
 
 
 def test_eslboo_basic():

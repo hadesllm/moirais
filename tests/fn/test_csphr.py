@@ -1,7 +1,7 @@
 """Tests for csphr.cutting_plane_sphere."""
 import numpy as np
 import pytest
-from moirais.fn.csphr import cutting_plane_sphere
+from morie.fn.csphr import cutting_plane_sphere
 
 
 def test_csphr_basic():

@@ -1,7 +1,7 @@
 """Tests for gb_spq.gibbons_spearman_test."""
 import numpy as np
 import pytest
-from moirais.fn.gb_spq import gibbons_spearman_test
+from morie.fn.gb_spq import gibbons_spearman_test
 
 
 def test_gb_spq_basic():

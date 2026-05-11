@@ -1,7 +1,7 @@
 """Tests for hmzsl.geron_zero_shot."""
 import numpy as np
 import pytest
-from moirais.fn.hmzsl import geron_zero_shot
+from morie.fn.hmzsl import geron_zero_shot
 
 
 def test_hmzsl_basic():

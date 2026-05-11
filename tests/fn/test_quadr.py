@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.quadr — quadrat test."""
+"""Tests for morie.fn.quadr — quadrat test."""
 import numpy as np
 import pytest
-from moirais.fn.quadr import quadrat_test
+from morie.fn.quadr import quadrat_test
 
 
 class TestQuadratTest:

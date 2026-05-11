@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.vrimx -- Varimax rotation."""
+"""Tests for morie.fn.vrimx -- Varimax rotation."""
 
 import numpy as np
-from moirais.fn.vrimx import varimax, vrimx
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.vrimx import varimax, vrimx
+from morie.fn._containers import DescriptiveResult
 
 
 class TestVarimax:

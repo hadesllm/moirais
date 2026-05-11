@@ -1,6 +1,6 @@
 """Tests for knn_classify."""
 import numpy as np
-from moirais.fn.knnc import knn_classify, knnc
+from morie.fn.knnc import knn_classify, knnc
 
 
 def test_basic():

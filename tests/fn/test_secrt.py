@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.secrt -- Secondary attack rate."""
+"""Tests for morie.fn.secrt -- Secondary attack rate."""
 
 import pytest
-from moirais.fn.secrt import secondary_attack_rate
+from morie.fn.secrt import secondary_attack_rate
 
 
 class TestSecondaryAttackRate:

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.xgb_ — simplified XGBoost."""
+"""Tests for morie.fn.xgb_ — simplified XGBoost."""
 import numpy as np
-from moirais.fn.xgb_ import xgboost_simple
+from morie.fn.xgb_ import xgboost_simple
 
 
 class TestXGBoost:

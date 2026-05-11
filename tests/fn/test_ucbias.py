@@ -1,7 +1,7 @@
 """Tests for ucbias.unmeasured_conf_bias."""
 import numpy as np
 import pytest
-from moirais.fn.ucbias import unmeasured_conf_bias
+from morie.fn.ucbias import unmeasured_conf_bias
 
 
 def test_ucbias_basic():

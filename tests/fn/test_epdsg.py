@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.epdsg -- epidemic curve fitting."""
+"""Tests for morie.fn.epdsg -- epidemic curve fitting."""
 
 import numpy as np
 import pytest
-from moirais.fn.epdsg import epidemic_curve_fit
+from morie.fn.epdsg import epidemic_curve_fit
 
 
 class TestEpiCurveFit:

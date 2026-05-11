@@ -1,7 +1,7 @@
 """Tests for ghbvm.ghosal_bernstein_von_mises."""
 import numpy as np
 import pytest
-from moirais.fn.ghbvm import ghosal_bernstein_von_mises
+from morie.fn.ghbvm import ghosal_bernstein_von_mises
 
 
 def test_ghbvm_basic():

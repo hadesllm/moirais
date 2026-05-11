@@ -1,7 +1,7 @@
 """Tests for spintp.schabenberger_intensity_estimation."""
 import numpy as np
 import pytest
-from moirais.fn.spintp import schabenberger_intensity_estimation
+from morie.fn.spintp import schabenberger_intensity_estimation
 
 
 def test_spintp_basic():

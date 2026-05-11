@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.fgreg -- Fine-Gray competing risks regression."""
+"""Tests for morie.fn.fgreg -- Fine-Gray competing risks regression."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.fgreg import fgreg
+from morie.fn.fgreg import fgreg
 
 
 @pytest.fixture()
@@ -37,5 +37,5 @@ def test_shr_positive(cr_data):
 
 
 def test_cheatsheet():
-    from moirais.fn.fgreg import cheatsheet
+    from morie.fn.fgreg import cheatsheet
     assert "fine-gray" in cheatsheet().lower()

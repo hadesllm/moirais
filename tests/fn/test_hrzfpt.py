@@ -1,7 +1,7 @@
 """Tests for hrzfpt.horowitz_first_passage_time."""
 import numpy as np
 import pytest
-from moirais.fn.hrzfpt import horowitz_first_passage_time
+from morie.fn.hrzfpt import horowitz_first_passage_time
 
 
 def test_hrzfpt_basic():

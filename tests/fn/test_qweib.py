@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.qweib — Weibull quantile function."""
+"""Tests for morie.fn.qweib — Weibull quantile function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.qweib import qweib
+from morie.fn.qweib import qweib
 
 
 class TestQweib:

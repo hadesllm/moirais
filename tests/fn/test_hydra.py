@@ -1,7 +1,7 @@
 """Test hydra."""
 import numpy as np
 import pytest
-from moirais.fn.hydra import hydra
+from morie.fn.hydra import hydra
 
 
 def test_hydra_basic():

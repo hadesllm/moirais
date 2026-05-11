@@ -1,7 +1,7 @@
 """Tests for hmvbgm.geron_variational_bayes_gmm."""
 import numpy as np
 import pytest
-from moirais.fn.hmvbgm import geron_variational_bayes_gmm
+from morie.fn.hmvbgm import geron_variational_bayes_gmm
 
 
 def test_hmvbgm_basic():

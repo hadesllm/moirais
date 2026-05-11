@@ -1,7 +1,7 @@
 """Tests for ghcrt.ghosal_contraction_rate."""
 import numpy as np
 import pytest
-from moirais.fn.ghcrt import ghosal_contraction_rate
+from morie.fn.ghcrt import ghosal_contraction_rate
 
 
 def test_ghcrt_basic():

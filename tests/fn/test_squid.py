@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.squid -- threat scoring."""
+"""Tests for morie.fn.squid -- threat scoring."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.squid import threat_score, squid
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.squid import threat_score, squid
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSquid:

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.msans -- MDS anisotropy measure"""
+"""Tests for morie.fn.msans -- MDS anisotropy measure"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.msans import mds_aniso
+from morie.fn.msans import mds_aniso
 
 
 class TestMdsAniso:

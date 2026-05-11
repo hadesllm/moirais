@@ -1,5 +1,5 @@
 """Test plykv."""
-from moirais.fn.plykv import polyakov_action
+from morie.fn.plykv import polyakov_action
 
 
 def test_plykv_basic():

@@ -1,7 +1,7 @@
 """Tests for alsR.als."""
 import numpy as np
 import pytest
-from moirais.fn.alsR import als
+from morie.fn.alsR import als
 
 
 def test_alsR_basic():

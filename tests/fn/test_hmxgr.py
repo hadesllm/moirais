@@ -1,7 +1,7 @@
 """Tests for hmxgr.geron_exploding_gradients."""
 import numpy as np
 import pytest
-from moirais.fn.hmxgr import geron_exploding_gradients
+from morie.fn.hmxgr import geron_exploding_gradients
 
 
 def test_hmxgr_basic():

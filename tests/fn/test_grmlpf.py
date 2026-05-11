@@ -1,7 +1,7 @@
 """Tests for grmlpf.geron_mlp_forward."""
 import numpy as np
 import pytest
-from moirais.fn.grmlpf import geron_mlp_forward
+from morie.fn.grmlpf import geron_mlp_forward
 
 
 def test_grmlpf_basic():

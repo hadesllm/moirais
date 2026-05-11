@@ -1,7 +1,7 @@
 """Tests for alaug.alammar_augmented_sbert."""
 import numpy as np
 import pytest
-from moirais.fn.alaug import alammar_augmented_sbert
+from morie.fn.alaug import alammar_augmented_sbert
 
 
 def test_alaug_basic():

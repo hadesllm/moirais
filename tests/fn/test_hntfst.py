@@ -1,7 +1,7 @@
 """Tests for hntfst.honest_random_forest."""
 import numpy as np
 import pytest
-from moirais.fn.hntfst import honest_random_forest
+from morie.fn.hntfst import honest_random_forest
 
 
 def test_hntfst_basic():

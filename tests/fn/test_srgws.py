@@ -1,7 +1,7 @@
 """Test srgws."""
 import numpy as np
 import pytest
-from moirais.fn.srgws import srgws
+from morie.fn.srgws import srgws
 
 
 def test_srgws_basic():

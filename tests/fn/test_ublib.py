@@ -1,7 +1,7 @@
 """Test ublib."""
 import numpy as np
 import pytest
-from moirais.fn.ublib import ublib
+from morie.fn.ublib import ublib
 
 
 def test_ublib_basic():

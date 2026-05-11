@@ -1,7 +1,7 @@
 """Test clmxp."""
 import numpy as np
 import pytest
-from moirais.fn.clmxp import clmxp
+from morie.fn.clmxp import clmxp
 
 
 def test_clmxp_basic():

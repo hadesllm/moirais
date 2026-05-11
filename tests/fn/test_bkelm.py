@@ -1,7 +1,7 @@
 """Tests for bkelm.burkov_elman_rnn."""
 import numpy as np
 import pytest
-from moirais.fn.bkelm import burkov_elman_rnn
+from morie.fn.bkelm import burkov_elman_rnn
 
 
 def test_bkelm_basic():

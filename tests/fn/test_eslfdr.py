@@ -1,7 +1,7 @@
 """Tests for eslfdr.esl_bh_fdr."""
 import numpy as np
 import pytest
-from moirais.fn.eslfdr import esl_bh_fdr
+from morie.fn.eslfdr import esl_bh_fdr
 
 
 def test_eslfdr_basic():

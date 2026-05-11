@@ -1,7 +1,7 @@
 """Tests for hmnsp.geron_next_sentence_prediction."""
 import numpy as np
 import pytest
-from moirais.fn.hmnsp import geron_next_sentence_prediction
+from morie.fn.hmnsp import geron_next_sentence_prediction
 
 
 def test_hmnsp_basic():

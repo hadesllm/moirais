@@ -1,7 +1,7 @@
 """Test cscpr."""
 import numpy as np
 import pytest
-from moirais.fn.cscpr import cscpr
+from morie.fn.cscpr import cscpr
 
 
 def test_cscpr_basic():

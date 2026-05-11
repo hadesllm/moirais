@@ -1,7 +1,7 @@
 """Tests for crpsF.crps."""
 import numpy as np
 import pytest
-from moirais.fn.crpsF import crps
+from morie.fn.crpsF import crps
 
 
 def test_crpsF_basic():

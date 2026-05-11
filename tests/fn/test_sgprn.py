@@ -1,6 +1,6 @@
 """Tests for practical range."""
 import numpy as np
-from moirais.fn.sgprn import sgprn
+from morie.fn.sgprn import sgprn
 
 
 def test_sgprn_spherical():

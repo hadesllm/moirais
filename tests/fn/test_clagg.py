@@ -1,7 +1,7 @@
 """Test clagg."""
 import numpy as np
 import pytest
-from moirais.fn.clagg import clagg
+from morie.fn.clagg import clagg
 
 
 def test_clagg_basic():

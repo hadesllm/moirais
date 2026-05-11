@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rcchy -- Cauchy random variates."""
+"""Tests for morie.fn.rcchy -- Cauchy random variates."""
 
 import numpy as np
 import pytest
-from moirais.fn.rcchy import rcchy
+from morie.fn.rcchy import rcchy
 
 
 class TestRcchy:

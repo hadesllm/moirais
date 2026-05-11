@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sraph -- input validation."""
+"""Tests for morie.fn.sraph -- input validation."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.sraph import validate_inputs, sraph
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sraph import validate_inputs, sraph
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSraph:

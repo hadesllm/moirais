@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.scfct — factor scores."""
+"""Tests for morie.fn.scfct — factor scores."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.scfct import score_factor
+from morie.fn.scfct import score_factor
 
 
 class TestScoreFactor:

@@ -1,7 +1,7 @@
 """Tests for sacmod.spatial_combined."""
 import numpy as np
 import pytest
-from moirais.fn.sacmod import spatial_combined
+from morie.fn.sacmod import spatial_combined
 
 
 def test_sacmod_basic():

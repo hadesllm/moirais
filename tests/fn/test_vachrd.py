@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.vachrd -- vaccine herd immunity."""
+"""Tests for morie.fn.vachrd -- vaccine herd immunity."""
 
 import pytest
-from moirais.fn.vachrd import vaccine_herd
+from morie.fn.vachrd import vaccine_herd
 
 
 class TestVaccineHerd:

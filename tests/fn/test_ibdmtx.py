@@ -1,7 +1,7 @@
 """Tests for ibdmtx.ibd_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.ibdmtx import ibd_matrix
+from morie.fn.ibdmtx import ibd_matrix
 
 
 def test_ibdmtx_basic():

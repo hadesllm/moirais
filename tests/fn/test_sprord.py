@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sprord."""
+"""Tests for morie.fn.sprord."""
 import numpy as np
 import pytest
-from moirais.fn.sprord import sprord
+from morie.fn.sprord import sprord
 
 
 class TestSprord:

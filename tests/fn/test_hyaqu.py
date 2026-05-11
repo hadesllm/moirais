@@ -1,7 +1,7 @@
 """Test hyaqu."""
 import numpy as np
 import pytest
-from moirais.fn.hyaqu import hyaqu
+from morie.fn.hyaqu import hyaqu
 
 
 def test_hyaqu_basic():

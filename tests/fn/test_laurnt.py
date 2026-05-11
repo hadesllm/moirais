@@ -1,7 +1,7 @@
 """Tests for laurnt.laurent_series."""
 import numpy as np
 import pytest
-from moirais.fn.laurnt import laurent_series
+from morie.fn.laurnt import laurent_series
 
 
 def test_laurnt_basic():

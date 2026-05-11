@@ -1,7 +1,7 @@
 """Test cosh_distance (coshd)."""
 import numpy as np
-from moirais.fn.coshd import cosh_distance, coshd
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.coshd import cosh_distance, coshd
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCoshd:

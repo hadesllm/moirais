@@ -1,7 +1,7 @@
 """Tests for ca12e2.ca_chapter_12_equation_2."""
 import numpy as np
 import pytest
-from moirais.fn.ca12e2 import ca_chapter_12_equation_2
+from morie.fn.ca12e2 import ca_chapter_12_equation_2
 
 
 def test_ca12e2_basic():

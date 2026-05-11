@@ -1,7 +1,7 @@
 """Tests for gh_hier_np.ghosal_hierarchical_np."""
 import numpy as np
 import pytest
-from moirais.fn.gh_hier_np import ghosal_hierarchical_np
+from morie.fn.gh_hier_np import ghosal_hierarchical_np
 
 
 def test_gh_hier_np_basic():

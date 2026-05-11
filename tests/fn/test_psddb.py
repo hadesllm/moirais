@@ -1,7 +1,7 @@
 """Tests for psddb.py - PSD to decibels."""
 import numpy as np
 import pytest
-from moirais.fn.psddb import psd_decibels, psddb
+from morie.fn.psddb import psd_decibels, psddb
 
 
 def test_psd_decibels_returns_descriptive_result():

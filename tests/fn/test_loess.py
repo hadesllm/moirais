@@ -1,7 +1,7 @@
 """Tests for loess.loess."""
 import numpy as np
 import pytest
-from moirais.fn.loess import loess
+from morie.fn.loess import loess
 
 
 def test_loess_basic():

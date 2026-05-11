@@ -1,7 +1,7 @@
 """Tests for btiseq.boot_iter_calibrated."""
 import numpy as np
 import pytest
-from moirais.fn.btiseq import boot_iter_calibrated
+from morie.fn.btiseq import boot_iter_calibrated
 
 
 def test_btiseq_basic():

@@ -1,7 +1,7 @@
 """Test gabfp."""
 import numpy as np
 import pytest
-from moirais.fn.gabfp import gabfp
+from morie.fn.gabfp import gabfp
 
 
 def test_gabfp_basic():

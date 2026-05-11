@@ -1,7 +1,7 @@
 """Test csdkp."""
 import numpy as np
 import pytest
-from moirais.fn.csdkp import csdkp
+from morie.fn.csdkp import csdkp
 
 
 def test_csdkp_basic():

@@ -1,7 +1,7 @@
 """Tests for snr2.snijders_bosker_r2_level1."""
 import numpy as np
 import pytest
-from moirais.fn.snr2 import snijders_bosker_r2_level1
+from morie.fn.snr2 import snijders_bosker_r2_level1
 
 
 def test_snr2_basic():

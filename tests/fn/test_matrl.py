@@ -1,7 +1,7 @@
 """Tests for matrl.ma_three_level."""
 import numpy as np
 import pytest
-from moirais.fn.matrl import ma_three_level
+from morie.fn.matrl import ma_three_level
 
 
 def test_matrl_basic():

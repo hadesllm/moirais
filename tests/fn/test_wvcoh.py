@@ -1,6 +1,6 @@
 """Tests for wvcoh.py - Wavelet coherence."""
 import numpy as np
-from moirais.fn.wvcoh import wavelet_coherence, wvcoh
+from morie.fn.wvcoh import wavelet_coherence, wvcoh
 
 
 def test_wvcoh_returns_descriptive_result():

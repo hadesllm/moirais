@@ -1,7 +1,7 @@
 """Tests for phpprn.phillips_perron."""
 import numpy as np
 import pytest
-from moirais.fn.phpprn import phillips_perron
+from morie.fn.phpprn import phillips_perron
 
 
 def test_phpprn_basic():

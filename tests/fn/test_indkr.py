@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.indkr — Indicator kriging."""
+"""Tests for morie.fn.indkr — Indicator kriging."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.indkr import indkr
+from morie.fn.indkr import indkr
 
 
 class TestIndkr:

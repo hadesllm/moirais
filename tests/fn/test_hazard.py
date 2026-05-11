@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.hazard — Hazard rate."""
+"""Tests for morie.fn.hazard — Hazard rate."""
 import numpy as np
 
-from moirais.fn.hazard import hazard_rate, hazard
+from morie.fn.hazard import hazard_rate, hazard
 
 
 def test_hazard_nonnegative():

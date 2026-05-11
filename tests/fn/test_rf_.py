@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.rf_ — random forest."""
+"""Tests for morie.fn.rf_ — random forest."""
 import numpy as np
-from moirais.fn.rf_ import random_forest_simple
+from morie.fn.rf_ import random_forest_simple
 
 
 class TestRandomForest:

@@ -1,7 +1,7 @@
 """Tests for spstcv.schabenberger_st_cov_separable."""
 import numpy as np
 import pytest
-from moirais.fn.spstcv import schabenberger_st_cov_separable
+from morie.fn.spstcv import schabenberger_st_cov_separable
 
 
 def test_spstcv_basic():

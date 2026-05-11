@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svrub -- Rubinstein spatial bargaining"""
+"""Tests for morie.fn.svrub -- Rubinstein spatial bargaining"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svrub import rubinstein_sp
+from morie.fn.svrub import rubinstein_sp
 
 
 class TestRubinsteinSp:

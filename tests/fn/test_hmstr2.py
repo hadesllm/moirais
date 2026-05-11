@@ -1,7 +1,7 @@
 """Tests for hmstr2.geron_stride."""
 import numpy as np
 import pytest
-from moirais.fn.hmstr2 import geron_stride
+from morie.fn.hmstr2 import geron_stride
 
 
 def test_hmstr2_basic():

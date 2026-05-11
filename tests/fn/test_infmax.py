@@ -1,7 +1,7 @@
 """Tests for infmax.infomax_objective."""
 import numpy as np
 import pytest
-from moirais.fn.infmax import infomax_objective
+from morie.fn.infmax import infomax_objective
 
 
 def test_infmax_basic():

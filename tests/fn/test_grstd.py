@@ -1,7 +1,7 @@
 """Tests for grstd.geron_standardization."""
 import numpy as np
 import pytest
-from moirais.fn.grstd import geron_standardization
+from morie.fn.grstd import geron_standardization
 
 
 def test_grstd_basic():

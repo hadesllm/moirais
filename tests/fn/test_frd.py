@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.frd -- Fuzzy RDD."""
+"""Tests for morie.fn.frd -- Fuzzy RDD."""
 
 import numpy as np
 import pandas as pd
 import pytest
-from moirais.fn.frd import fuzzy_rd, frd
-from moirais.fn._containers import RegressionResult
+from morie.fn.frd import fuzzy_rd, frd
+from morie.fn._containers import RegressionResult
 
 
 class TestFuzzyRD:

@@ -1,10 +1,10 @@
-"""Tests for moirais._migration — verify migration is complete.
+"""Tests for morie._migration — verify migration is complete.
 
-The migration from the old epiml-project layout into moirais is DONE.
-All 21 modules are inlined in moirais_pipeline.R and registered in MODULE_SPECS.
+The migration from the old epiml-project layout into morie is DONE.
+All 21 modules are inlined in morie_pipeline.R and registered in MODULE_SPECS.
 """
 
-from moirais._migration import LEGACY_MODULE_DOCS, LEGACY_TO_MODULE
+from morie._migration import LEGACY_MODULE_DOCS, LEGACY_TO_MODULE
 
 
 def test_legacy_to_module_map_covers_all_scripts():
@@ -17,7 +17,7 @@ def test_legacy_to_module_map_covers_all_scripts():
 
 def test_all_mapped_modules_exist_in_specs():
     """Every module in LEGACY_TO_MODULE should exist in MODULE_SPECS."""
-    from moirais.modules import MODULE_SPECS
+    from morie.modules import MODULE_SPECS
     for script, module_name in LEGACY_TO_MODULE.items():
         assert module_name in MODULE_SPECS, (
             f"Legacy script '{script}' maps to module '{module_name}' "

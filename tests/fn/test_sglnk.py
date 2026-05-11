@@ -1,6 +1,6 @@
 """Tests for lognormal kriging."""
 import numpy as np
-from moirais.fn.sglnk import sglnk
+from morie.fn.sglnk import sglnk
 
 
 def test_sglnk_smoke():

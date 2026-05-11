@@ -1,7 +1,7 @@
 """Tests for ratest.ratio_estimator."""
 import numpy as np
 import pytest
-from moirais.fn.ratest import ratio_estimator
+from morie.fn.ratest import ratio_estimator
 
 
 def test_ratest_basic():

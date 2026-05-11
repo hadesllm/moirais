@@ -1,7 +1,7 @@
 """Tests for sp_s3u13.stochastic_physics_section_3_unnumbered_13."""
 import numpy as np
 import pytest
-from moirais.fn.sp_s3u13 import stochastic_physics_section_3_unnumbered_13
+from morie.fn.sp_s3u13 import stochastic_physics_section_3_unnumbered_13
 
 
 def test_sp_s3u13_basic():

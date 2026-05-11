@@ -1,7 +1,7 @@
 """Test trque."""
 import numpy as np
 import pytest
-from moirais.fn.trque import trque
+from morie.fn.trque import trque
 
 
 def test_trque_basic():

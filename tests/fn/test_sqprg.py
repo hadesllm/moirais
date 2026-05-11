@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.sqprg -- SQP optimizer."""
+"""Tests for morie.fn.sqprg -- SQP optimizer."""
 
 import numpy as np
-from moirais.fn.sqprg import sqp_optimize, sqprg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sqprg import sqp_optimize, sqprg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSqprg:

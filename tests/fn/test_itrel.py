@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.itrel — item reliability index."""
+"""Tests for morie.fn.itrel — item reliability index."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.itrel import item_reliability_index
+from morie.fn.itrel import item_reliability_index
 
 
 class TestItemReliabilityIndex:

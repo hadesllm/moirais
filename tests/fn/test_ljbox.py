@@ -1,7 +1,7 @@
 """Tests for ljbox.ljung_box_test."""
 import numpy as np
 import pytest
-from moirais.fn.ljbox import ljbox as ljung_box_test
+from morie.fn.ljbox import ljbox as ljung_box_test
 
 
 def test_ljbox_basic():

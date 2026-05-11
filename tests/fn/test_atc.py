@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.atc — Average Treatment Effect on the Controls."""
+"""Tests for morie.fn.atc — Average Treatment Effect on the Controls."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.atc import estimate_atc
+from morie.fn.atc import estimate_atc
 
 
 @pytest.fixture()

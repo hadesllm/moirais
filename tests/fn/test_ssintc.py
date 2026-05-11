@@ -1,7 +1,7 @@
 """Tests for ssintc.interval_censored_survival."""
 import numpy as np
 import pytest
-from moirais.fn.ssintc import interval_censored_survival
+from morie.fn.ssintc import interval_censored_survival
 
 
 def test_ssintc_basic():

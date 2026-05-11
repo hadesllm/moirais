@@ -1,7 +1,7 @@
 """Tests for alrck.alammar_recall_at_k."""
 import numpy as np
 import pytest
-from moirais.fn.alrck import alammar_recall_at_k
+from morie.fn.alrck import alammar_recall_at_k
 
 
 def test_alrck_basic():

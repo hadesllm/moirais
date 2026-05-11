@@ -1,7 +1,7 @@
 """Tests for grgan.geron_gan_minimax."""
 import numpy as np
 import pytest
-from moirais.fn.grgan import geron_gan_minimax
+from morie.fn.grgan import geron_gan_minimax
 
 
 def test_grgan_basic():

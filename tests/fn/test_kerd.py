@@ -1,7 +1,7 @@
 """Tests for kerd.kernel_density_fda."""
 import numpy as np
 import pytest
-from moirais.fn.kerd import kernel_density_fda
+from morie.fn.kerd import kernel_density_fda
 
 
 def test_kerd_basic():

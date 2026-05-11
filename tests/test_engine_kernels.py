@@ -1,9 +1,9 @@
-"""Tests for moirais.engine_bridge — C kernel bridge with Accelerate.framework."""
+"""Tests for morie.engine_bridge — C kernel bridge with Accelerate.framework."""
 
 import numpy as np
 import pytest
 
-from moirais.engine_bridge import (
+from morie.engine_bridge import (
     argmax,
     is_available,
     matvec,

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.csomp."""
+"""Tests for morie.fn.csomp."""
 import numpy as np
-from moirais.fn.csomp import csomp
+from morie.fn.csomp import csomp
 
 
 def test_csomp_smoke():
@@ -15,7 +15,7 @@ def test_csomp_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.csomp import cheatsheet
+    from morie.fn.csomp import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

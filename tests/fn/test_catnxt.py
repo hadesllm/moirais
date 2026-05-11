@@ -1,7 +1,7 @@
 """Tests for catnxt.cat_next_item."""
 import numpy as np
 import pytest
-from moirais.fn.catnxt import cat_next_item
+from morie.fn.catnxt import cat_next_item
 
 
 def test_catnxt_basic():

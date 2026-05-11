@@ -1,7 +1,7 @@
 """Tests for rng118.rangayyan_ch3_three_point_central_diff_magnitude."""
 import numpy as np
 import pytest
-from moirais.fn.rng118 import rangayyan_ch3_three_point_central_diff_magnitude
+from morie.fn.rng118 import rangayyan_ch3_three_point_central_diff_magnitude
 
 
 def test_rng118_basic():

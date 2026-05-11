@@ -1,7 +1,7 @@
 """Tests for alpz.alphazero_search."""
 import numpy as np
 import pytest
-from moirais.fn.alpz import alphazero_search
+from morie.fn.alpz import alphazero_search
 
 
 def test_alpz_basic():

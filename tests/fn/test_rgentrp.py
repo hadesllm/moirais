@@ -1,7 +1,7 @@
 """Tests for rgentrp.rangayyan_spectral_entropy."""
 import numpy as np
 import pytest
-from moirais.fn.rgentrp import rangayyan_spectral_entropy
+from morie.fn.rgentrp import rangayyan_spectral_entropy
 
 
 def test_rgentrp_basic():

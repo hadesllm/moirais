@@ -1,5 +1,5 @@
 """Test strpf."""
-from moirais.fn.strpf import string_partition
+from morie.fn.strpf import string_partition
 
 
 def test_strpf_basic():

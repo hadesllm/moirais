@@ -1,7 +1,7 @@
 """Test markv."""
 import numpy as np
 import pytest
-from moirais.fn.markv import markv
+from morie.fn.markv import markv
 
 
 def test_markv_basic():

@@ -1,7 +1,7 @@
 """Test mtcor."""
 import numpy as np
 import pytest
-from moirais.fn.mtcor import mtcor
+from morie.fn.mtcor import mtcor
 
 
 def test_mtcor_basic():

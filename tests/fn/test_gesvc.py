@@ -1,7 +1,7 @@
 """Test gesvc."""
 import numpy as np
 import pytest
-from moirais.fn.gesvc import gesvc
+from morie.fn.gesvc import gesvc
 
 
 def test_gesvc_basic():

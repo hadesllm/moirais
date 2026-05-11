@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lmsdm."""
+"""Tests for morie.fn.lmsdm."""
 import numpy as np
 import pytest
-from moirais.fn.lmsdm import lmsdm
+from morie.fn.lmsdm import lmsdm
 
 
 class TestLmsdm:

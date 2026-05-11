@@ -1,7 +1,7 @@
 """Tests for grsmxs.geron_softmax_score."""
 import numpy as np
 import pytest
-from moirais.fn.grsmxs import geron_softmax_score
+from morie.fn.grsmxs import geron_softmax_score
 
 
 def test_grsmxs_basic():

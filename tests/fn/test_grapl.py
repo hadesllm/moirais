@@ -1,7 +1,7 @@
 """Tests for grapl.geron_average_pooling."""
 import numpy as np
 import pytest
-from moirais.fn.grapl import geron_average_pooling
+from morie.fn.grapl import geron_average_pooling
 
 
 def test_grapl_basic():

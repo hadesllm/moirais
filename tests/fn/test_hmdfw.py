@@ -1,7 +1,7 @@
 """Tests for hmdfw.geron_diffusion_forward."""
 import numpy as np
 import pytest
-from moirais.fn.hmdfw import geron_diffusion_forward
+from morie.fn.hmdfw import geron_diffusion_forward
 
 
 def test_hmdfw_basic():

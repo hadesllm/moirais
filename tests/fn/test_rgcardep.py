@@ -1,7 +1,7 @@
 """Tests for rgcardep.rangayyan_cardiac_elecphys."""
 import numpy as np
 import pytest
-from moirais.fn.rgcardep import rangayyan_cardiac_elecphys
+from morie.fn.rgcardep import rangayyan_cardiac_elecphys
 
 
 def test_rgcardep_basic():

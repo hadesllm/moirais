@@ -1,7 +1,7 @@
 """Tests for bfgsop.bfgs."""
 import numpy as np
 import pytest
-from moirais.fn.bfgsop import bfgs
+from morie.fn.bfgsop import bfgs
 
 
 def test_bfgsop_basic():

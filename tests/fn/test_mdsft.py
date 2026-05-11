@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mdsft — MDS fit statistics."""
+"""Tests for morie.fn.mdsft — MDS fit statistics."""
 import numpy as np
 import pytest
 
-from moirais.fn.mdsft import mdsft
+from morie.fn.mdsft import mdsft
 
 
 def test_mdsft_smoke():
@@ -12,7 +12,7 @@ def test_mdsft_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.mdsft import cheatsheet
+    from morie.fn.mdsft import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

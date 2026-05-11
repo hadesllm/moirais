@@ -1,7 +1,7 @@
 """Tests for speccoh.coherence."""
 import numpy as np
 import pytest
-from moirais.fn.speccoh import coherence
+from morie.fn.speccoh import coherence
 
 
 def test_speccoh_basic():

@@ -1,7 +1,7 @@
 """Tests for dif1pl.dif_mantel_haenszel."""
 import numpy as np
 import pytest
-from moirais.fn.dif1pl import dif_mantel_haenszel
+from morie.fn.dif1pl import dif_mantel_haenszel
 
 
 def test_dif1pl_basic():

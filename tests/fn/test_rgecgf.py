@@ -1,7 +1,7 @@
 """Tests for rgecgf.rangayyan_ecg_features."""
 import numpy as np
 import pytest
-from moirais.fn.rgecgf import rangayyan_ecg_features
+from morie.fn.rgecgf import rangayyan_ecg_features
 
 
 def test_rgecgf_basic():

@@ -1,7 +1,7 @@
 """Tests for netdeg.degree_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.netdeg import degree_centrality
+from morie.fn.netdeg import degree_centrality
 
 
 def test_netdeg_basic():

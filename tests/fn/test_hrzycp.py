@@ -1,7 +1,7 @@
 """Tests for hrzycp.horowitz_conditional_prediction."""
 import numpy as np
 import pytest
-from moirais.fn.hrzycp import horowitz_conditional_prediction
+from morie.fn.hrzycp import horowitz_conditional_prediction
 
 
 def test_hrzycp_basic():

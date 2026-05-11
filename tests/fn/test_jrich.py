@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.jrich -- Formant extraction."""
+"""Tests for morie.fn.jrich -- Formant extraction."""
 
 import numpy as np
-from moirais.fn.jrich import formant_extract, jrich
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.jrich import formant_extract, jrich
+from morie.fn._containers import DescriptiveResult
 
 
 class TestJrich:

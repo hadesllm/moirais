@@ -1,7 +1,7 @@
 """Tests for hmdtr.geron_tree_regularization."""
 import numpy as np
 import pytest
-from moirais.fn.hmdtr import geron_tree_regularization
+from morie.fn.hmdtr import geron_tree_regularization
 
 
 def test_hmdtr_basic():

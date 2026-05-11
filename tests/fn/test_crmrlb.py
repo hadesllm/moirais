@@ -1,7 +1,7 @@
 """Tests for crmrlb.cramer_rao_bound."""
 import numpy as np
 import pytest
-from moirais.fn.crmrlb import cramer_rao_bound
+from morie.fn.crmrlb import cramer_rao_bound
 
 
 def test_crmrlb_basic():

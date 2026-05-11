@@ -1,7 +1,7 @@
 """Tests for funmix.functional_mixture."""
 import numpy as np
 import pytest
-from moirais.fn.funmix import functional_mixture
+from morie.fn.funmix import functional_mixture
 
 
 def test_funmix_basic():

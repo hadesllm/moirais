@@ -1,7 +1,7 @@
 """Test cosine_decompose (cosdc)."""
 import numpy as np
-from moirais.fn.cosdc import cosine_decompose, cosdc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cosdc import cosine_decompose, cosdc
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCosdc:

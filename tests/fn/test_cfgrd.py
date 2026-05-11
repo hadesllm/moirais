@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.cfgrd."""
+"""Tests for morie.fn.cfgrd."""
 
 import numpy as np
 import pytest
-from moirais.fn.cfgrd import cfgrd
+from morie.fn.cfgrd import cfgrd
 
 
 class TestCfgrd:

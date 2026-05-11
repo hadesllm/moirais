@@ -1,7 +1,7 @@
 """Tests for tmlnte.tmle_natural_total."""
 import numpy as np
 import pytest
-from moirais.fn.tmlnte import tmle_natural_total
+from morie.fn.tmlnte import tmle_natural_total
 
 
 def test_tmlnte_basic():

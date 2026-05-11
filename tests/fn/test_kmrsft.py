@@ -1,7 +1,7 @@
 """Tests for kmrsft.kamath_rejection_sampling_finetune."""
 import numpy as np
 import pytest
-from moirais.fn.kmrsft import kamath_rejection_sampling_finetune
+from morie.fn.kmrsft import kamath_rejection_sampling_finetune
 
 
 def test_kmrsft_basic():

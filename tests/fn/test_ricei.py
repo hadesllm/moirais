@@ -1,7 +1,7 @@
 """Tests for ricei.rice_index."""
 import numpy as np
 import pytest
-from moirais.fn.ricei import rice_index
+from morie.fn.ricei import rice_index
 
 
 def test_ricei_basic():

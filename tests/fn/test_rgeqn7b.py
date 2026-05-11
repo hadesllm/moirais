@@ -1,7 +1,7 @@
 """Tests for rgeqn7b.rangayyan_ch7_arma_error."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn7b import rangayyan_ch7_arma_error
+from morie.fn.rgeqn7b import rangayyan_ch7_arma_error
 
 
 def test_rgeqn7b_basic():

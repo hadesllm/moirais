@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mest — M-estimator."""
+"""Tests for morie.fn.mest — M-estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mest import mest
+from morie.fn.mest import mest
 
 
 def test_mean_via_ls():

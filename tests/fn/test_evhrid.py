@@ -1,7 +1,7 @@
 """Tests for evhrid.evt_husler_reiss_dep."""
 import numpy as np
 import pytest
-from moirais.fn.evhrid import evt_husler_reiss_dep
+from morie.fn.evhrid import evt_husler_reiss_dep
 
 
 def test_evhrid_basic():

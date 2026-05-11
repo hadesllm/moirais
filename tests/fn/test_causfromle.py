@@ -1,7 +1,7 @@
 """Tests for causfromle.causal_e_value."""
 import numpy as np
 import pytest
-from moirais.fn.causfromle import causal_e_value
+from morie.fn.causfromle import causal_e_value
 
 
 def test_causfromle_basic():

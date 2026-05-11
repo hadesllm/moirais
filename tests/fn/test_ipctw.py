@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ipctw — IPCW."""
+"""Tests for morie.fn.ipctw — IPCW."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ipctw import ipcw
+from morie.fn.ipctw import ipcw
 
 
 class TestIPCW:

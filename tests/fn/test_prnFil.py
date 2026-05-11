@@ -1,7 +1,7 @@
 """Tests for prnFil.prophet_changepoint."""
 import numpy as np
 import pytest
-from moirais.fn.prnFil import prophet_changepoint
+from morie.fn.prnFil import prophet_changepoint
 
 
 def test_prnFil_basic():

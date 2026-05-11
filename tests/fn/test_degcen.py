@@ -1,7 +1,7 @@
 """Tests for degcen.degree_centrality."""
 import numpy as np
 import pytest
-from moirais.fn.degcen import degree_centrality
+from morie.fn.degcen import degree_centrality
 
 
 def test_degcen_basic():

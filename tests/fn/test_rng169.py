@@ -1,7 +1,7 @@
 """Tests for rng169.rangayyan_ch3_abcd_matrix_inversion_lemma."""
 import numpy as np
 import pytest
-from moirais.fn.rng169 import rangayyan_ch3_abcd_matrix_inversion_lemma
+from morie.fn.rng169 import rangayyan_ch3_abcd_matrix_inversion_lemma
 
 
 def test_rng169_basic():

@@ -1,6 +1,6 @@
 """Tests for prflt.py - Polyphase filter."""
 import numpy as np
-from moirais.fn.prflt import polyphase_filter, prflt
+from morie.fn.prflt import polyphase_filter, prflt
 
 
 def test_prflt_returns_descriptive_result():

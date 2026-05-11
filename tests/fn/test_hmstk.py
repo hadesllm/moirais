@@ -1,7 +1,7 @@
 """Tests for hmstk.geron_stacking."""
 import numpy as np
 import pytest
-from moirais.fn.hmstk import geron_stacking
+from morie.fn.hmstk import geron_stacking
 
 
 def test_hmstk_basic():

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.dtw — dynamic time warping."""
+"""Tests for morie.fn.dtw — dynamic time warping."""
 import numpy as np
 import pytest
-from moirais.fn.dtw import dtw_distance
+from morie.fn.dtw import dtw_distance
 
 
 class TestDTW:

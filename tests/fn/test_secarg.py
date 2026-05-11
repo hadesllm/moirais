@@ -1,7 +1,7 @@
 """Tests for secarg.argon2id_kdf."""
 import numpy as np
 import pytest
-from moirais.fn.secarg import argon2id_kdf
+from morie.fn.secarg import argon2id_kdf
 
 
 def test_secarg_basic():

@@ -1,7 +1,7 @@
 """Tests for otsinkhorn.ot_sinkhorn."""
 import numpy as np
 import pytest
-from moirais.fn.otsinkhorn import ot_sinkhorn
+from morie.fn.otsinkhorn import ot_sinkhorn
 
 
 def test_otsinkhorn_basic():

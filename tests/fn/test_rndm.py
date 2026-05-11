@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.rndm — Block randomization."""
+"""Tests for morie.fn.rndm — Block randomization."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.rndm import randomization
+from morie.fn.rndm import randomization
 
 
 class TestRandomization:

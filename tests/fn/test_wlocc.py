@@ -1,7 +1,7 @@
 """Test wlocc."""
 import numpy as np
 import pytest
-from moirais.fn.wlocc import wlocc
+from morie.fn.wlocc import wlocc
 
 
 def test_wlocc_basic():

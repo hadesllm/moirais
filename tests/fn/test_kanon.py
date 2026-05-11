@@ -1,7 +1,7 @@
 """Tests for kanon.k_anonymity_check."""
 import numpy as np
 import pytest
-from moirais.fn.kanon import k_anonymity_check
+from morie.fn.kanon import k_anonymity_check
 
 
 def test_kanon_basic():

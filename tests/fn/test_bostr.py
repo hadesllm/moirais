@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.bostr -- Naive time series forecasting."""
+"""Tests for morie.fn.bostr -- Naive time series forecasting."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.bostr import naive_forecast, bostr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.bostr import naive_forecast, bostr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestBostr:

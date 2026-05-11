@@ -1,7 +1,7 @@
 """Tests for mtsbnd.monotone_treatment_selection."""
 import numpy as np
 import pytest
-from moirais.fn.mtsbnd import monotone_treatment_selection
+from morie.fn.mtsbnd import monotone_treatment_selection
 
 
 def test_mtsbnd_basic():

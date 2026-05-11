@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cdyld -- YLD."""
+"""Tests for morie.fn.cdyld -- YLD."""
 
 import pytest
-from moirais.fn.cdyld import years_lived_disability
+from morie.fn.cdyld import years_lived_disability
 
 
 class TestYLD:

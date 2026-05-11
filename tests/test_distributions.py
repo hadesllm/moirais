@@ -1,5 +1,5 @@
 """
-Tests for R-like distribution functions in moirais.inference.
+Tests for R-like distribution functions in morie.inference.
 
 Each test verifies at least one of:
 - Exact known values (cross-checked against R or mathematical derivation)
@@ -20,7 +20,7 @@ import math
 import numpy as np
 import pytest
 
-from moirais.inference import (
+from morie.inference import (
     # Normal
     dnorm, pnorm, qnorm, rnorm,
     # t

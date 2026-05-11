@@ -1,7 +1,7 @@
 """Test ghtrd."""
 import numpy as np
 import pytest
-from moirais.fn.ghtrd import ghtrd
+from morie.fn.ghtrd import ghtrd
 
 
 def test_ghtrd_basic():

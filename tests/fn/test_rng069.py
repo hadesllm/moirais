@@ -1,7 +1,7 @@
 """Tests for rng069.rangayyan_ch3_dft_definition."""
 import numpy as np
 import pytest
-from moirais.fn.rng069 import rangayyan_ch3_dft_definition
+from morie.fn.rng069 import rangayyan_ch3_dft_definition
 
 
 def test_rng069_basic():

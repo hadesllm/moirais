@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.fertl -- total fertility rate."""
+"""Tests for morie.fn.fertl -- total fertility rate."""
 
 import pytest
-from moirais.fn.fertl import fertility_rate
+from morie.fn.fertl import fertility_rate
 
 
 class TestFertilityRate:

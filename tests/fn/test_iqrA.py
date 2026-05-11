@@ -1,7 +1,7 @@
 """Tests for iqrA.iqr_outlier."""
 import numpy as np
 import pytest
-from moirais.fn.iqrA import iqr_outlier
+from morie.fn.iqrA import iqr_outlier
 
 
 def test_iqrA_basic():

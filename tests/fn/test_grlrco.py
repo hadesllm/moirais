@@ -1,7 +1,7 @@
 """Tests for grlrco.geron_lr_cosine_annealing."""
 import numpy as np
 import pytest
-from moirais.fn.grlrco import geron_lr_cosine_annealing
+from morie.fn.grlrco import geron_lr_cosine_annealing
 
 
 def test_grlrco_basic():

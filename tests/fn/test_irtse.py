@@ -1,7 +1,7 @@
 """Tests for irtse -- SE(theta)."""
 import numpy as np
-from moirais.fn.irtse import irt_se_theta
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.irtse import irt_se_theta
+from morie.fn._containers import DescriptiveResult
 
 
 class TestIrtSeTheta:

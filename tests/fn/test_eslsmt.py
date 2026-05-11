@@ -1,7 +1,7 @@
 """Tests for eslsmt.esl_smoothing_spline."""
 import numpy as np
 import pytest
-from moirais.fn.eslsmt import esl_smoothing_spline
+from morie.fn.eslsmt import esl_smoothing_spline
 
 
 def test_eslsmt_basic():

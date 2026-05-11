@@ -1,7 +1,7 @@
 """Tests for tdcvar.time_dep_covariate."""
 import numpy as np
 import pytest
-from moirais.fn.tdcvar import time_dep_covariate
+from morie.fn.tdcvar import time_dep_covariate
 
 
 def test_tdcvar_basic():

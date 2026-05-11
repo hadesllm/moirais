@@ -1,7 +1,7 @@
 """Tests for stkval."""
 import numpy as np
 import pytest
-from moirais.fn.stkval import stkval
+from morie.fn.stkval import stkval
 
 
 def test_stkval_basic():
@@ -27,5 +27,5 @@ def test_stkval_no_data():
 
 
 def test_stkval_alias():
-    from moirais.fn.stkval import stkval
+    from morie.fn.stkval import stkval
     assert stkval is stkval

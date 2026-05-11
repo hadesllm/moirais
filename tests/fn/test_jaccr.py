@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.jaccr."""
+"""Tests for morie.fn.jaccr."""
 import numpy as np
-from moirais.fn.jaccr import jaccr
+from morie.fn.jaccr import jaccr
 
 
 def test_jaccr_smoke():
@@ -12,7 +12,7 @@ def test_jaccr_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.jaccr import cheatsheet
+    from morie.fn.jaccr import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

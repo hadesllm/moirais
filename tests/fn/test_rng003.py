@@ -1,7 +1,7 @@
 """Tests for rng003.rangayyan_ch3_variance_continuous."""
 import numpy as np
 import pytest
-from moirais.fn.rng003 import rangayyan_ch3_variance_continuous
+from morie.fn.rng003 import rangayyan_ch3_variance_continuous
 
 
 def test_rng003_basic():

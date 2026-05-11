@@ -1,7 +1,7 @@
 """Tests for ototk.ot_kantorovich_dual_value."""
 import numpy as np
 import pytest
-from moirais.fn.ototk import ot_kantorovich_dual_value
+from morie.fn.ototk import ot_kantorovich_dual_value
 
 
 def test_ototk_basic():

@@ -1,7 +1,7 @@
 """Tests for rfens.random_forest_ensemble."""
 import numpy as np
 import pytest
-from moirais.fn.rfens import random_forest_ensemble
+from morie.fn.rfens import random_forest_ensemble
 
 
 def test_rfens_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.attkr — Attack rate."""
+"""Tests for morie.fn.attkr — Attack rate."""
 
 import pytest
 
-from moirais.fn.attkr import attack_rate
+from morie.fn.attkr import attack_rate
 
 
 class TestAttackRate:

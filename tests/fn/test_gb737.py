@@ -1,7 +1,7 @@
 """Tests for gb737.gibbons_linrank_properties."""
 import numpy as np
 import pytest
-from moirais.fn.gb737 import gibbons_linrank_properties
+from morie.fn.gb737 import gibbons_linrank_properties
 
 
 def test_gb737_basic():

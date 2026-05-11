@@ -1,10 +1,10 @@
-"""Tests for moirais.fn.rey_sv — survey-weighted regression."""
+"""Tests for morie.fn.rey_sv — survey-weighted regression."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from moirais.fn.rey_sv import rey_sv
+from morie.fn.rey_sv import rey_sv
 
 
 class TestReySv:

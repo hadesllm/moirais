@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxgmm -- Spatial Gaussian mixture"""
+"""Tests for morie.fn.zxgmm -- Spatial Gaussian mixture"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxgmm import gmm_spatial
+from morie.fn.zxgmm import gmm_spatial
 
 
 class TestGmmSpatial:

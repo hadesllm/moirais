@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.irtcl — IRT calibration."""
+"""Tests for morie.fn.irtcl — IRT calibration."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.irtcl import irt_calibrate
+from morie.fn.irtcl import irt_calibrate
 
 
 class TestIrtCalibrate:

@@ -1,7 +1,7 @@
 """Tests for crrfgs.competing_risks_fg."""
 import numpy as np
 import pytest
-from moirais.fn.crrfgs import competing_risks_fg
+from morie.fn.crrfgs import competing_risks_fg
 
 
 def test_crrfgs_basic():

@@ -1,7 +1,7 @@
 """Tests for kmmamb.kamath_mamba_ssm."""
 import numpy as np
 import pytest
-from moirais.fn.kmmamb import kamath_mamba_ssm
+from morie.fn.kmmamb import kamath_mamba_ssm
 
 
 def test_kmmamb_basic():

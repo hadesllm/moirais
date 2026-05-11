@@ -1,9 +1,9 @@
 Causal Inference
 ================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
-MOIRAIS implements a layered causal-inference workflow. For the full
+MORIE implements a layered causal-inference workflow. For the full
 estimand taxonomy see :doc:`estimands`; for the broader catalogue of
 methods (causal, survey, spatial, Hawkes, statistical physics,
 psychometrics, etc.) see :doc:`index`.
@@ -29,7 +29,7 @@ Inverse Probability Weighting (IPW) — Hájek estimator
 -------------------------------------------------------
 
 Given propensity scores :math:`\hat{e}(X_i) = P(T_i = 1 \mid X_i)`,
-MOIRAIS uses **stabilised (Hájek) weights**:
+MORIE uses **stabilised (Hájek) weights**:
 
 .. math::
 
@@ -49,8 +49,8 @@ The effective sample size (ESS) is reported as a weight-quality diagnostic:
 
    \text{ESS} = \frac{\left(\sum_i w_i\right)^2}{\sum_i w_i^2}
 
-**Python entry points**: :func:`moirais.causal.run_propensity_ipw_analysis`,
-:func:`moirais.causal.estimate_ate`
+**Python entry points**: :func:`morie.causal.run_propensity_ipw_analysis`,
+:func:`morie.causal.estimate_ate`
 
 Average Treatment Effect on the Treated (ATT)
 ----------------------------------------------
@@ -64,7 +64,7 @@ treated covariate distribution:
    \bar{Y}_1 - \frac{\sum_{T_i=0} w_i Y_i}{\sum_{T_i=0} w_i},
    \quad w_i = \frac{\hat{e}(X_i)}{1-\hat{e}(X_i)}
 
-**Python entry point**: :func:`moirais.causal.estimate_att`
+**Python entry point**: :func:`morie.causal.estimate_att`
 
 Average Treatment Effect on the Controls (ATC)
 ------------------------------------------------
@@ -77,7 +77,7 @@ The ATC reweights treated units to match the control covariate distribution:
    \frac{\sum_{T_i=1} w_i Y_i}{\sum_{T_i=1} w_i} - \bar{Y}_0,
    \quad w_i = \frac{1-\hat{e}(X_i)}{\hat{e}(X_i)}
 
-**Python entry point**: :func:`moirais.causal.estimate_atc`
+**Python entry point**: :func:`morie.causal.estimate_atc`
 
 Augmented IPW (AIPW) — Doubly Robust
 --------------------------------------
@@ -103,7 +103,7 @@ The ATE estimate and its standard error are
    \qquad
    \hat{\sigma} = \frac{\text{sd}(\psi_i)}{\sqrt{n}}
 
-**Python entry point**: :func:`moirais.causal.estimate_aipw`
+**Python entry point**: :func:`morie.causal.estimate_aipw`
 
 G-computation (Outcome Regression)
 ------------------------------------
@@ -121,7 +121,7 @@ where :math:`\hat{\mu}(t, X)` is the predicted outcome from a regression
 model fit on the full sample.  Unlike IPW, G-computation is singly robust
 (requires correct outcome model specification).
 
-**Python entry point**: :func:`moirais.effects.estimate_ate_gcomputation`
+**Python entry point**: :func:`morie.effects.estimate_ate_gcomputation`
 
 eBAC-selection-adjusted IPW
 ----------------------------
@@ -130,7 +130,7 @@ The ``ebac-selection-adjustment-ipw`` module extends the IPW framework to
 account for selection on eBAC (estimated Blood Alcohol Concentration) strata.
 Weights are constructed within eBAC-defined subpopulations and then combined.
 
-**Python entry point**: :func:`moirais.causal.run_ebac_selection_ipw_analysis`
+**Python entry point**: :func:`morie.causal.run_ebac_selection_ipw_analysis`
 
 Sensitivity Analysis
 ---------------------
@@ -148,7 +148,7 @@ risk-ratio scale needed to fully explain away the observed effect:
 For the 95% CI lower bound, apply the same formula to the CI endpoint.
 An observed RR of 3.9 yields :math:`E \approx 7.3`.
 
-**Python entry point**: :func:`moirais.effects.e_value`
+**Python entry point**: :func:`morie.effects.e_value`
 
 Rosenbaum Bounds
 ~~~~~~~~~~~~~~~~~
@@ -159,7 +159,7 @@ differ by at most :math:`\Gamma` between matched units. Increasing
 :math:`\Gamma` until the bound exceeds :math:`\alpha` measures robustness
 to unmeasured confounding.
 
-**Python entry point**: :func:`moirais.effects.sensitivity_rosenbaum`
+**Python entry point**: :func:`morie.effects.sensitivity_rosenbaum`
 
 Average Treatment Effect on the Treated (ATT)
 ----------------------------------------------
@@ -180,7 +180,7 @@ to treated units and weight :math:`\hat{e}(X)/(1 - \hat{e}(X))` to controls:
    - \frac{\sum_{i:T_i=0} Y_i \cdot \hat{e}_i/(1-\hat{e}_i)}
          {\sum_{i:T_i=0} \hat{e}_i/(1-\hat{e}_i)}
 
-**Python entry point**: :func:`moirais.causal.estimate_att`
+**Python entry point**: :func:`morie.causal.estimate_att`
 
 Average Treatment Effect on the Controls (ATC)
 ------------------------------------------------
@@ -195,7 +195,7 @@ units had been treated:
 Treated units are re-weighted by :math:`(1-\hat{e}(X))/\hat{e}(X)` and
 controls retain weight 1.
 
-**Python entry point**: :func:`moirais.causal.estimate_atc`
+**Python entry point**: :func:`morie.causal.estimate_atc`
 
 Group Average Treatment Effect (GATE)
 --------------------------------------
@@ -207,11 +207,11 @@ the ATE within each group:
 
    \text{GATE}_g = \mathbb{E}[Y(1) - Y(0) \mid G = g]
 
-MOIRAIS estimates GATEs using the AIPW doubly-robust estimator applied within
+MORIE estimates GATEs using the AIPW doubly-robust estimator applied within
 each stratum defined by *group_col*.  This provides effect heterogeneity
 across pre-defined subpopulations (e.g., age groups, provinces).
 
-**Python entry point**: :func:`moirais.causal.estimate_gate`
+**Python entry point**: :func:`morie.causal.estimate_gate`
 
 Conditional Average Treatment Effect (CATE)
 --------------------------------------------
@@ -222,7 +222,7 @@ The CATE provides a per-unit treatment effect estimate:
 
    \tau(x) = \mathbb{E}[Y(1) - Y(0) \mid X = x]
 
-MOIRAIS implements two metalearner strategies:
+MORIE implements two metalearner strategies:
 
 - **T-learner**: fit separate outcome models :math:`\hat{\mu}_1(x)` and
   :math:`\hat{\mu}_0(x)` on treated and control units respectively, then
@@ -233,7 +233,7 @@ MOIRAIS implements two metalearner strategies:
 
 Both use Random Forest nuisance learners by default.
 
-**Python entry point**: :func:`moirais.causal.estimate_cate`
+**Python entry point**: :func:`morie.causal.estimate_cate`
 
 Local Average Treatment Effect (LATE / IV)
 -------------------------------------------
@@ -247,13 +247,13 @@ changes in response to the instrument):
    \text{LATE} = \frac{\text{Cov}(Y, Z)}{\text{Cov}(T, Z)}
    = \frac{\bar{Y}_{Z=1} - \bar{Y}_{Z=0}}{\bar{T}_{Z=1} - \bar{T}_{Z=0}}
 
-This is the **Wald estimator** for binary instruments.  With covariates, MOIRAIS
+This is the **Wald estimator** for binary instruments.  With covariates, MORIE
 uses two-stage least squares (2SLS) via ``linearmodels`` or ``statsmodels``.
 
 The first-stage F-statistic is reported as a weak-instrument diagnostic.
 The conventional threshold is :math:`F > 10` (Staiger & Stock, 1997).
 
-**Python entry point**: :func:`moirais.causal.estimate_late`
+**Python entry point**: :func:`morie.causal.estimate_late`
 
 Interactive Regression Model (IRM)
 -----------------------------------
@@ -275,10 +275,10 @@ The Neyman-orthogonal score for the ATE under the IRM is:
    + \frac{T_i(Y_i - g_0(1,X_i))}{m_0(X_i)}
    - \frac{(1-T_i)(Y_i - g_0(0,X_i))}{1 - m_0(X_i)} - \theta
 
-MOIRAIS uses :class:`doubleml.DoubleMLIRM` with Random Forest nuisance learners
+MORIE uses :class:`doubleml.DoubleMLIRM` with Random Forest nuisance learners
 and cross-fitting for honest inference.
 
-**Python entry point**: :func:`moirais.causal.estimate_irm`
+**Python entry point**: :func:`morie.causal.estimate_irm`
 
 References
 ----------

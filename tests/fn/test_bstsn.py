@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.bstsn — Bayesian structural time series."""
+"""Tests for morie.fn.bstsn — Bayesian structural time series."""
 import numpy as np
 import pytest
-from moirais.fn.bstsn import bstsn
+from morie.fn.bstsn import bstsn
 
 
 @pytest.fixture()
@@ -57,5 +57,5 @@ def test_trend_captures_direction(series):
 
 
 def test_cheatsheet():
-    from moirais.fn.bstsn import cheatsheet
+    from morie.fn.bstsn import cheatsheet
     assert len(cheatsheet()) > 0

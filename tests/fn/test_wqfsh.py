@@ -1,7 +1,7 @@
 """Test wqfsh."""
 import numpy as np
 import pytest
-from moirais.fn.wqfsh import wqfsh
+from morie.fn.wqfsh import wqfsh
 
 
 def test_wqfsh_basic():

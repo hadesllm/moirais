@@ -1,7 +1,7 @@
 """Tests for rgpcg.rangayyan_pcg_segments."""
 import numpy as np
 import pytest
-from moirais.fn.rgpcg import rangayyan_pcg_segments
+from morie.fn.rgpcg import rangayyan_pcg_segments
 
 
 def test_rgpcg_basic():

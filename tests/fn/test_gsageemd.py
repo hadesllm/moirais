@@ -1,7 +1,7 @@
 """Tests for gsageemd.graphsage."""
 import numpy as np
 import pytest
-from moirais.fn.gsageemd import graphsage
+from morie.fn.gsageemd import graphsage
 
 
 def test_gsageemd_basic():

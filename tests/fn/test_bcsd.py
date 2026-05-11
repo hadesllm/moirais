@@ -1,7 +1,7 @@
 """Tests for bcsd.bcsd_downscaling."""
 import numpy as np
 import pytest
-from moirais.fn.bcsd import bcsd_downscaling
+from morie.fn.bcsd import bcsd_downscaling
 
 
 def test_bcsd_basic():

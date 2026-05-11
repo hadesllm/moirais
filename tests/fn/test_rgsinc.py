@@ -1,7 +1,7 @@
 """Tests for rgsinc.rangayyan_sinc_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.rgsinc import rangayyan_sinc_kernel
+from morie.fn.rgsinc import rangayyan_sinc_kernel
 
 
 def test_rgsinc_basic():

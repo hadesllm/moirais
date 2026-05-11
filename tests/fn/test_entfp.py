@@ -1,7 +1,7 @@
 """Test entfp."""
 import numpy as np
 import pytest
-from moirais.fn.entfp import entfp
+from morie.fn.entfp import entfp
 
 
 def test_entfp_basic():

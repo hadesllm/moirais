@@ -1,16 +1,16 @@
 Post-Quantum Cryptography (Research)
 =====================================
 
-Part of :doc:`index` — MOIRAIS's statistical-methods reference.
+Part of :doc:`index` — MORIE's statistical-methods reference.
 
 .. warning::
 
-   MOIRAIS crypto is a **teaching/research implementation** of NIST-standardized
+   MORIE crypto is a **teaching/research implementation** of NIST-standardized
    post-quantum cryptography. For production-grade secrets, use hardware KMS
    or libsodium. Pure-Python ML-KEM is ~100x slower than the reference C
    implementation and is **not constant-time** (vulnerable to timing attacks).
 
-MOIRAIS provides a pure-Python post-quantum cryptography module with no external
+MORIE provides a pure-Python post-quantum cryptography module with no external
 dependencies, suitable for educational use and non-critical research data.
 
 ML-KEM-768 (FIPS 203)
@@ -21,7 +21,7 @@ Provides IND-CCA2-secure key encapsulation using the module-LWE problem.
 
 .. code-block:: python
 
-   from moirais.crypto import mlkem768_keygen, mlkem768_encaps, mlkem768_decaps
+   from morie.crypto import mlkem768_keygen, mlkem768_encaps, mlkem768_decaps
 
    pk, sk = mlkem768_keygen()
    ct, shared_secret = mlkem768_encaps(pk)
@@ -37,7 +37,7 @@ confidentiality and integrity for arbitrary-length messages.
 
 .. code-block:: python
 
-   from moirais.crypto import chacha20_poly1305_encrypt, chacha20_poly1305_decrypt
+   from morie.crypto import chacha20_poly1305_encrypt, chacha20_poly1305_decrypt
 
    ct = chacha20_poly1305_encrypt(key, nonce, plaintext, aad=b"")
    pt = chacha20_poly1305_decrypt(key, nonce, ct, aad=b"")
@@ -49,7 +49,7 @@ Key derivation function for expanding keying material.
 
 .. code-block:: python
 
-   from moirais.crypto import hkdf_sha256
+   from morie.crypto import hkdf_sha256
    derived = hkdf_sha256(input_key_material, length=32, salt=b"", info=b"")
 
 Hybrid KEM-DEM Construction
@@ -60,7 +60,7 @@ ChaCha20-Poly1305 for data encryption:
 
 .. code-block:: python
 
-   from moirais.crypto import hybrid_encrypt, hybrid_decrypt, hybrid_keygen
+   from morie.crypto import hybrid_encrypt, hybrid_decrypt, hybrid_keygen
 
    pk, sk = hybrid_keygen()
    ciphertext = hybrid_encrypt(b"secret data", pk)
@@ -73,19 +73,19 @@ CLI Usage
 
 .. code-block:: bash
 
-   moirais crypto keygen --name alice --output ./keys
-   moirais crypto encrypt secret.csv --to ./keys/alice_pk.bin --output secret.moiraisenc
-   moirais crypto decrypt secret.moiraisenc --sk ./keys/alice_sk.bin --output secret.csv
+   morie crypto keygen --name alice --output ./keys
+   morie crypto encrypt secret.csv --to ./keys/alice_pk.bin --output secret.morieenc
+   morie crypto decrypt secret.morieenc --sk ./keys/alice_sk.bin --output secret.csv
 
 Keystore
 --------
 
-Encrypted keystore at ``~/.moirais/keys/keystore.json`` with scrypt-derived
+Encrypted keystore at ``~/.morie/keys/keystore.json`` with scrypt-derived
 password protection:
 
 .. code-block:: python
 
-   from moirais.crypto import create_keystore, store_keypair, load_keypair
+   from morie.crypto import create_keystore, store_keypair, load_keypair
 
    create_keystore("my-password")
    pk, sk = hybrid_keygen()
@@ -100,5 +100,5 @@ Security Considerations
 - **No hardware acceleration**: Pure Python; ~100x slower than libsodium/C.
 - **Research-grade**: Suitable for coursework, CTF challenges, and
   non-critical research data protection.
-- **Key material**: Never commit ``*.moiraissk``, ``*.moiraisenc``, or
-  ``~/.moirais/keys/`` to version control.
+- **Key material**: Never commit ``*.moriesk``, ``*.morieenc``, or
+  ``~/.morie/keys/`` to version control.

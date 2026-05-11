@@ -1,7 +1,7 @@
 """Tests for rgeqn5b.rangayyan_ch5_waveform_length."""
 import numpy as np
 import pytest
-from moirais.fn.rgeqn5b import rangayyan_ch5_waveform_length
+from morie.fn.rgeqn5b import rangayyan_ch5_waveform_length
 
 
 def test_rgeqn5b_basic():

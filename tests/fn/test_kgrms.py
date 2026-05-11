@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgrms -- Kriging RMSE"""
+"""Tests for morie.fn.kgrms -- Kriging RMSE"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgrms import kriging_rmse
+from morie.fn.kgrms import kriging_rmse
 
 
 class TestKrigingRmse:

@@ -1,7 +1,7 @@
 """Tests for grkldg.geron_kl_divergence_gaussian."""
 import numpy as np
 import pytest
-from moirais.fn.grkldg import geron_kl_divergence_gaussian
+from morie.fn.grkldg import geron_kl_divergence_gaussian
 
 
 def test_grkldg_basic():

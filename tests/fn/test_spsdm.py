@@ -1,7 +1,7 @@
 """Tests for spsdm.schabenberger_spatial_durbin_model."""
 import numpy as np
 import pytest
-from moirais.fn.spsdm import schabenberger_spatial_durbin_model
+from morie.fn.spsdm import schabenberger_spatial_durbin_model
 
 
 def test_spsdm_basic():

@@ -1,7 +1,7 @@
 """Tests for msm324.mvsml_functional_regression_eq_15_1."""
 import numpy as np
 import pytest
-from moirais.fn.msm324 import mvsml_functional_regression_eq_15_1
+from morie.fn.msm324 import mvsml_functional_regression_eq_15_1
 
 
 def test_msm324_basic():

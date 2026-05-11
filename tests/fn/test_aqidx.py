@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.aqidx -- air quality index."""
+"""Tests for morie.fn.aqidx -- air quality index."""
 
 import pytest
-from moirais.fn.aqidx import air_quality_index
+from morie.fn.aqidx import air_quality_index
 
 
 class TestAQI:

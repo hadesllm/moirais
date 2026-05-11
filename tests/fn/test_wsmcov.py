@@ -1,7 +1,7 @@
 """Tests for wsmcov.wasserman_covariance."""
 import numpy as np
 import pytest
-from moirais.fn.wsmcov import wasserman_covariance
+from morie.fn.wsmcov import wasserman_covariance
 
 
 def test_wsmcov_basic():

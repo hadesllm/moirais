@@ -1,7 +1,7 @@
 """Tests for gpkrn."""
 import numpy as np
 import pytest
-from moirais.fn.gpkrn import gpkrn
+from morie.fn.gpkrn import gpkrn
 
 
 def test_gpkrn_basic():
@@ -27,5 +27,5 @@ def test_gpkrn_no_data():
 
 
 def test_gpkrn_alias():
-    from moirais.fn.gpkrn import gpkrn
+    from morie.fn.gpkrn import gpkrn
     assert gpkrn is gpkrn

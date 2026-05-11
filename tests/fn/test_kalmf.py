@@ -1,7 +1,7 @@
 """Tests for kalmf -- Kalman filter."""
 import numpy as np
-from moirais.fn.kalmf import kalmf
-from moirais.fn._containers import SignalResult
+from morie.fn.kalmf import kalmf
+from morie.fn._containers import SignalResult
 
 
 def test_kalmf_basic():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmrcm -- Roll call matrix construction"""
+"""Tests for morie.fn.nmrcm -- Roll call matrix construction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmrcm import roll_call_matrix
+from morie.fn.nmrcm import roll_call_matrix
 
 
 class TestRollCallMatrix:

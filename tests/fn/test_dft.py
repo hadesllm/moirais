@@ -1,7 +1,7 @@
 """Test dft_compute (dft)."""
 import numpy as np
-from moirais.fn.dft import dft_compute, dft
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.dft import dft_compute, dft
+from morie.fn._containers import DescriptiveResult
 
 
 class TestDft:

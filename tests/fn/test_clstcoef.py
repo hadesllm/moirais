@@ -1,7 +1,7 @@
 """Tests for clstcoef.clustering_coefficient."""
 import numpy as np
 import pytest
-from moirais.fn.clstcoef import clustering_coefficient
+from morie.fn.clstcoef import clustering_coefficient
 
 
 def test_clstcoef_basic():

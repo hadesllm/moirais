@@ -1,7 +1,7 @@
 """Tests for lrtsts.logrank_test."""
 import numpy as np
 import pytest
-from moirais.fn.lrtsts import logrank_test
+from morie.fn.lrtsts import logrank_test
 
 
 def test_lrtsts_basic():

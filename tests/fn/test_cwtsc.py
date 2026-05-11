@@ -1,7 +1,7 @@
 """Tests for cwtsc -- Continuous wavelet scalogram."""
 import numpy as np
-from moirais.fn.cwtsc import cwtsc
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cwtsc import cwtsc
+from morie.fn._containers import DescriptiveResult
 
 
 def test_cwtsc_basic():

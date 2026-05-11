@@ -1,7 +1,7 @@
 """Test mtspr."""
 import numpy as np
 import pytest
-from moirais.fn.mtspr import mtspr
+from morie.fn.mtspr import mtspr
 
 
 def test_mtspr_basic():

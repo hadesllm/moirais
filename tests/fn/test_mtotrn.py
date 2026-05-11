@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mtotrn — road safety trend."""
+"""Tests for morie.fn.mtotrn — road safety trend."""
 
 import pytest
-from moirais.fn.mtotrn import mto_trend
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.mtotrn import mto_trend
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMtoTrend:

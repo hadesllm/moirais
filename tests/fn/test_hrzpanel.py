@@ -1,7 +1,7 @@
 """Tests for hrzpanel.horowitz_panel_deconv."""
 import numpy as np
 import pytest
-from moirais.fn.hrzpanel import horowitz_panel_deconv
+from morie.fn.hrzpanel import horowitz_panel_deconv
 
 
 def test_hrzpanel_basic():

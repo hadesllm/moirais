@@ -1,7 +1,7 @@
 """Tests for drnpc.dr_did_neg_control."""
 import numpy as np
 import pytest
-from moirais.fn.drnpc import dr_did_neg_control
+from morie.fn.drnpc import dr_did_neg_control
 
 
 def test_drnpc_basic():

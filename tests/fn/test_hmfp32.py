@@ -1,7 +1,7 @@
 """Tests for hmfp32.geron_fp32."""
 import numpy as np
 import pytest
-from moirais.fn.hmfp32 import geron_fp32
+from morie.fn.hmfp32 import geron_fp32
 
 
 def test_hmfp32_basic():

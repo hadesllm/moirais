@@ -1,7 +1,7 @@
 """Tests for rgsvmk.rangayyan_svm_kernel."""
 import numpy as np
 import pytest
-from moirais.fn.rgsvmk import rangayyan_svm_kernel
+from morie.fn.rgsvmk import rangayyan_svm_kernel
 
 
 def test_rgsvmk_basic():

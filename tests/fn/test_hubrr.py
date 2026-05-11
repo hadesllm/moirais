@@ -1,7 +1,7 @@
 """Tests for hubrr.huber_regression."""
 import numpy as np
 import pytest
-from moirais.fn.hubrr import huber_regression
+from morie.fn.hubrr import huber_regression
 
 
 def test_hubrr_basic():

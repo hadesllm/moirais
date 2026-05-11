@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.mdsmm -- MDS with missing data."""
+"""Tests for morie.fn.mdsmm -- MDS with missing data."""
 
 import numpy as np
-from moirais.fn.mdsmm import mds_missing_data, mdsmm
+from morie.fn.mdsmm import mds_missing_data, mdsmm
 
 
 def test_mdsmm_smoke():

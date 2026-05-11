@@ -1,7 +1,7 @@
 """Tests for tmlmrr.tmle_marginal_rr."""
 import numpy as np
 import pytest
-from moirais.fn.tmlmrr import tmle_marginal_rr
+from morie.fn.tmlmrr import tmle_marginal_rr
 
 
 def test_tmlmrr_basic():

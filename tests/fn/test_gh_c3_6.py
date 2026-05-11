@@ -1,7 +1,7 @@
 """Tests for gh_c3_6.ghosal_dense_subset_prior."""
 import numpy as np
 import pytest
-from moirais.fn.gh_c3_6 import ghosal_dense_subset_prior
+from morie.fn.gh_c3_6 import ghosal_dense_subset_prior
 
 
 def test_gh_c3_6_basic():

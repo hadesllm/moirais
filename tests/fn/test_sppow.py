@@ -1,7 +1,7 @@
 """Tests for sppow.schabenberger_power_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.sppow import schabenberger_power_variogram
+from morie.fn.sppow import schabenberger_power_variogram
 
 
 def test_sppow_basic():

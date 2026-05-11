@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lornz."""
+"""Tests for morie.fn.lornz."""
 import numpy as np
 import pytest
-from moirais.fn.lornz import lorenz_curve
+from morie.fn.lornz import lorenz_curve
 
 
 @pytest.mark.xfail(reason="np.trapz removed in numpy 2.x", strict=False)
@@ -15,7 +15,7 @@ def test_lornz_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.lornz import cheatsheet
+    from morie.fn.lornz import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

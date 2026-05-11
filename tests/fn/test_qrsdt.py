@@ -1,7 +1,7 @@
 """Tests for qrsdt -- QRS complex detection."""
 import numpy as np
-from moirais.fn.qrsdt import qrsdt
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.qrsdt import qrsdt
+from morie.fn._containers import DescriptiveResult
 
 
 def test_qrsdt_basic():

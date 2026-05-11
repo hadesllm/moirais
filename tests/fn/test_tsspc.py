@@ -1,7 +1,7 @@
 """Test tsspc."""
 import numpy as np
 import pytest
-from moirais.fn.tsspc import tsspc
+from morie.fn.tsspc import tsspc
 
 
 def test_tsspc_basic():

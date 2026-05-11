@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svqta -- Quota game equilibrium"""
+"""Tests for morie.fn.svqta -- Quota game equilibrium"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svqta import quota_game
+from morie.fn.svqta import quota_game
 
 
 class TestQuotaGame:

@@ -1,7 +1,7 @@
 """Tests for potef.potential_outcomes_individual."""
 import numpy as np
 import pytest
-from moirais.fn.potef import potential_outcomes_individual
+from morie.fn.potef import potential_outcomes_individual
 
 
 def test_potef_basic():

@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.knox — Knox test."""
+"""Tests for morie.fn.knox — Knox test."""
 import numpy as np
-from moirais.fn.knox import knox_test
+from morie.fn.knox import knox_test
 
 
 class TestKnox:

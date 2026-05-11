@@ -1,7 +1,7 @@
 """Tests for cvxprg.boyd_proximal_grad."""
 import numpy as np
 import pytest
-from moirais.fn.cvxprg import boyd_proximal_grad
+from morie.fn.cvxprg import boyd_proximal_grad
 
 
 def test_cvxprg_basic():

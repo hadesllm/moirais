@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.svbnz -- Banzhaf power index spatial"""
+"""Tests for morie.fn.svbnz -- Banzhaf power index spatial"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.svbnz import banzhaf_spatial
+from morie.fn.svbnz import banzhaf_spatial
 
 
 class TestBanzhafSpatial:

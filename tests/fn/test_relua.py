@@ -1,7 +1,7 @@
 """Tests for relua.relu_activation."""
 import numpy as np
 import pytest
-from moirais.fn.relua import relu_activation
+from morie.fn.relua import relu_activation
 
 
 def test_relua_basic():

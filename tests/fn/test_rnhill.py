@@ -1,7 +1,7 @@
 """Tests for rnhill."""
 import numpy as np
 import pytest
-from moirais.fn.rnhill import rnhill
+from morie.fn.rnhill import rnhill
 
 
 def test_rnhill_basic():
@@ -27,5 +27,5 @@ def test_rnhill_no_data():
 
 
 def test_rnhill_alias():
-    from moirais.fn.rnhill import rnhill
+    from morie.fn.rnhill import rnhill
     assert rnhill is rnhill

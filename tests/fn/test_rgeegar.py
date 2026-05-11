@@ -1,7 +1,7 @@
 """Tests for rgeegar.rangayyan_eeg_autocorr."""
 import numpy as np
 import pytest
-from moirais.fn.rgeegar import rangayyan_eeg_autocorr
+from morie.fn.rgeegar import rangayyan_eeg_autocorr
 
 
 def test_rgeegar_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gmatx -- Genomic relationship matrix."""
+"""Tests for morie.fn.gmatx -- Genomic relationship matrix."""
 
 import numpy as np
 import pytest
-from moirais.fn.gmatx import gmatx
+from morie.fn.gmatx import gmatx
 
 
 class TestGmatx:

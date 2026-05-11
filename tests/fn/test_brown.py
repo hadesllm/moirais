@@ -1,6 +1,6 @@
 """Tests for brown_forsythe."""
 import numpy as np, pytest
-from moirais.fn.brown import brown_forsythe
+from morie.fn.brown import brown_forsythe
 
 class TestBrown:
     def test_equal(self):

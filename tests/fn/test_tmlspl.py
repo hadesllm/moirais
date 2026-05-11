@@ -1,7 +1,7 @@
 """Tests for tmlspl.tmle_spillover."""
 import numpy as np
 import pytest
-from moirais.fn.tmlspl import tmle_spillover
+from morie.fn.tmlspl import tmle_spillover
 
 
 def test_tmlspl_basic():

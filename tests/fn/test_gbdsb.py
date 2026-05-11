@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.gbdsb -- GBD subgroup."""
+"""Tests for morie.fn.gbdsb -- GBD subgroup."""
 
 import pytest
-from moirais.fn.gbdsb import gbd_subgroup
+from morie.fn.gbdsb import gbd_subgroup
 
 
 class TestGBDSubgroup:
@@ -15,7 +15,7 @@ class TestGBDSubgroup:
 
 
 def test_cheatsheet():
-    from moirais.fn.gbdsb import cheatsheet
+    from morie.fn.gbdsb import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

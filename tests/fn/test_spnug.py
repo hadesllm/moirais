@@ -1,7 +1,7 @@
 """Tests for spnug.schabenberger_nugget_effect."""
 import numpy as np
 import pytest
-from moirais.fn.spnug import schabenberger_nugget_effect
+from morie.fn.spnug import schabenberger_nugget_effect
 
 
 def test_spnug_basic():

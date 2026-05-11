@@ -1,7 +1,7 @@
 """Tests for coxres.cox_schoenfeld_residuals."""
 import numpy as np
 import pytest
-from moirais.fn.coxres import cox_schoenfeld_residuals
+from morie.fn.coxres import cox_schoenfeld_residuals
 
 
 def test_coxres_basic():

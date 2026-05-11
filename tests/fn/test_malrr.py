@@ -1,7 +1,7 @@
 """Tests for malrr.ma_log_risk_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.malrr import ma_log_risk_ratio
+from morie.fn.malrr import ma_log_risk_ratio
 
 
 def test_malrr_basic():

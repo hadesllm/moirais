@@ -1,7 +1,7 @@
 """Test gdmml."""
 import numpy as np
 import pytest
-from moirais.fn.gdmml import gdmml
+from morie.fn.gdmml import gdmml
 
 
 def test_gdmml_basic():

@@ -1,7 +1,7 @@
 """Tests for detrbb.detr_set_prediction."""
 import numpy as np
 import pytest
-from moirais.fn.detrbb import detr_set_prediction
+from morie.fn.detrbb import detr_set_prediction
 
 
 def test_detrbb_basic():

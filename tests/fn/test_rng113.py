@@ -1,7 +1,7 @@
 """Tests for rng113.rangayyan_ch3_first_difference_frequency_response."""
 import numpy as np
 import pytest
-from moirais.fn.rng113 import rangayyan_ch3_first_difference_frequency_response
+from morie.fn.rng113 import rangayyan_ch3_first_difference_frequency_response
 
 
 def test_rng113_basic():

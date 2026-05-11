@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.csthl — custody health access."""
+"""Tests for morie.fn.csthl — custody health access."""
 
 import pandas as pd
-from moirais.fn.csthl import custody_health_access
+from morie.fn.csthl import custody_health_access
 
 
 class TestCustodyHealthAccess:

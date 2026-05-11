@@ -1,7 +1,7 @@
 """Test ubcmp."""
 import numpy as np
 import pytest
-from moirais.fn.ubcmp import ubcmp
+from morie.fn.ubcmp import ubcmp
 
 
 def test_ubcmp_basic():

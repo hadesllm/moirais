@@ -1,7 +1,7 @@
 """Tests for rng191.rangayyan_ch4_pan_tompkins_thresholds."""
 import numpy as np
 import pytest
-from moirais.fn.rng191 import rangayyan_ch4_pan_tompkins_thresholds
+from morie.fn.rng191 import rangayyan_ch4_pan_tompkins_thresholds
 
 
 def test_rng191_basic():

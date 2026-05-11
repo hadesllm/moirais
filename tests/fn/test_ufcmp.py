@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.ufcmp -- compare unfolding methods."""
+"""Tests for morie.fn.ufcmp -- compare unfolding methods."""
 
 import numpy as np
-from moirais.fn.ufcmp import compare_unfolding_methods, ufcmp
+from morie.fn.ufcmp import compare_unfolding_methods, ufcmp
 
 
 def test_ufcmp_smoke():

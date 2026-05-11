@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.splrg — Spline regression."""
+"""Tests for morie.fn.splrg — Spline regression."""
 
 import numpy as np
 import pytest
-from moirais.fn.splrg import splrg
+from morie.fn.splrg import splrg
 
 
 def test_returns_dict():

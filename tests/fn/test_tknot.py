@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tknot — torus knot."""
+"""Tests for morie.fn.tknot — torus knot."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tknot import torus_knot
+from morie.fn.tknot import torus_knot
 
 
 class TestTorusKnot:

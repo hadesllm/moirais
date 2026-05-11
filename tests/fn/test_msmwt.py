@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.msmwt — MSM stabilized weights."""
+"""Tests for morie.fn.msmwt — MSM stabilized weights."""
 import numpy as np
 import pytest
-from moirais.fn.msmwt import msmwt
+from morie.fn.msmwt import msmwt
 
 
 @pytest.fixture()
@@ -55,5 +55,5 @@ def test_K_correct(data):
 
 
 def test_cheatsheet():
-    from moirais.fn.msmwt import cheatsheet
+    from morie.fn.msmwt import cheatsheet
     assert len(cheatsheet()) > 0

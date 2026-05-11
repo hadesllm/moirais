@@ -1,7 +1,7 @@
 """Test mtcnt."""
 import numpy as np
 import pytest
-from moirais.fn.mtcnt import mtcnt
+from morie.fn.mtcnt import mtcnt
 
 
 def test_mtcnt_basic():

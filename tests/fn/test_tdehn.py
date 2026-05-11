@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.tdehn — Dehn twist."""
+"""Tests for morie.fn.tdehn — Dehn twist."""
 
 import pytest
 
-from moirais.fn.tdehn import dehn_twist
+from morie.fn.tdehn import dehn_twist
 
 
 class TestDehnTwist:

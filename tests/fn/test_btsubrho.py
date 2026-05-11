@@ -1,7 +1,7 @@
 """Tests for btsubrho.boot_subsample_rate."""
 import numpy as np
 import pytest
-from moirais.fn.btsubrho import boot_subsample_rate
+from morie.fn.btsubrho import boot_subsample_rate
 
 
 def test_btsubrho_basic():

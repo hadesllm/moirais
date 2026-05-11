@@ -1,7 +1,7 @@
 """Tests for irt1pl.rasch_one_parameter."""
 import numpy as np
 import pytest
-from moirais.fn.irt1pl import rasch_one_parameter
+from morie.fn.irt1pl import rasch_one_parameter
 
 
 def test_irt1pl_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.ultro -- particle swarm optimization."""
+"""Tests for morie.fn.ultro -- particle swarm optimization."""
 
 import numpy as np
-from moirais.fn.ultro import swarm_optimize, ultro
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ultro import swarm_optimize, ultro
+from morie.fn._containers import DescriptiveResult
 
 
 class TestUltro:

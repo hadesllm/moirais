@@ -1,7 +1,7 @@
 """Tests for vaceff.vaccine_efficacy."""
 import numpy as np
 import pytest
-from moirais.fn.vaceff import vaccine_efficacy
+from morie.fn.vaceff import vaccine_efficacy
 
 
 def test_vaceff_basic():

@@ -1,7 +1,7 @@
 """Tests for rgrespf.rangayyan_respiration_features."""
 import numpy as np
 import pytest
-from moirais.fn.rgrespf import rangayyan_respiration_features
+from morie.fn.rgrespf import rangayyan_respiration_features
 
 
 def test_rgrespf_basic():

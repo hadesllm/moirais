@@ -1,7 +1,7 @@
 """Test gegry."""
 import numpy as np
 import pytest
-from moirais.fn.gegry import gegry
+from morie.fn.gegry import gegry
 
 
 def test_gegry_basic():

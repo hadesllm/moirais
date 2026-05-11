@@ -1,7 +1,7 @@
 """Tests for alffap.alphafold_fape_loss."""
 import numpy as np
 import pytest
-from moirais.fn.alffap import alphafold_fape_loss
+from morie.fn.alffap import alphafold_fape_loss
 
 
 def test_alffap_basic():

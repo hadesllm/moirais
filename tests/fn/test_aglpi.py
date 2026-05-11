@@ -1,7 +1,7 @@
 """Test aglpi."""
 import numpy as np
 import pytest
-from moirais.fn.aglpi import aglpi
+from morie.fn.aglpi import aglpi
 
 
 def test_aglpi_basic():

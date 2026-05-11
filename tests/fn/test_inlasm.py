@@ -1,7 +1,7 @@
 """Tests for inlasm.inla_spatial."""
 import numpy as np
 import pytest
-from moirais.fn.inlasm import inla_spatial
+from morie.fn.inlasm import inla_spatial
 
 
 def test_inlasm_basic():

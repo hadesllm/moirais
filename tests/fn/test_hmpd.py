@@ -1,7 +1,7 @@
 """Tests for hmpd.geron_padding."""
 import numpy as np
 import pytest
-from moirais.fn.hmpd import geron_padding
+from morie.fn.hmpd import geron_padding
 
 
 def test_hmpd_basic():

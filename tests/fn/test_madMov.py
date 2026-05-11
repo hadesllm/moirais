@@ -1,7 +1,7 @@
 """Tests for madMov.moving_mad."""
 import numpy as np
 import pytest
-from moirais.fn.madMov import moving_mad
+from morie.fn.madMov import moving_mad
 
 
 def test_madMov_basic():

@@ -1,7 +1,7 @@
 """Tests for dwnmn.dynamic_wnominate."""
 import numpy as np
 import pytest
-from moirais.fn.dwnmn import dynamic_wnominate
+from morie.fn.dwnmn import dynamic_wnominate
 
 
 def test_dwnmn_basic():

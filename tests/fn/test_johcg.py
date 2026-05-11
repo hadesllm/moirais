@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.johcg -- Johansen cointegration."""
+"""Tests for morie.fn.johcg -- Johansen cointegration."""
 import numpy as np
 import pytest
-from moirais.fn.johcg import johansen_test
+from morie.fn.johcg import johansen_test
 
 
 class TestJohansen:
@@ -17,5 +17,5 @@ class TestJohansen:
             johansen_test(np.ones(50))
 
     def test_cheatsheet(self):
-        from moirais.fn.johcg import cheatsheet
+        from morie.fn.johcg import cheatsheet
         assert isinstance(cheatsheet(), str)

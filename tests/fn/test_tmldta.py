@@ -1,7 +1,7 @@
 """Tests for tmldta.tmle_data_adaptive."""
 import numpy as np
 import pytest
-from moirais.fn.tmldta import tmle_data_adaptive
+from morie.fn.tmldta import tmle_data_adaptive
 
 
 def test_tmldta_basic():

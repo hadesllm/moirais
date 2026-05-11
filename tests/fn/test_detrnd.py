@@ -1,7 +1,7 @@
 """Tests for detrnd.detrend_climate."""
 import numpy as np
 import pytest
-from moirais.fn.detrnd import detrend_climate
+from morie.fn.detrnd import detrend_climate
 
 
 def test_detrnd_basic():

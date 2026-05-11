@@ -1,7 +1,7 @@
 """Tests for hrzcs.horowitz_curse_dimensionality."""
 import numpy as np
 import pytest
-from moirais.fn.hrzcs import horowitz_curse_dimensionality
+from morie.fn.hrzcs import horowitz_curse_dimensionality
 
 
 def test_hrzcs_basic():

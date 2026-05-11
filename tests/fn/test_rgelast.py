@@ -1,7 +1,7 @@
 """Tests for rgelast.rangayyan_heart_elasticity."""
 import numpy as np
 import pytest
-from moirais.fn.rgelast import rangayyan_heart_elasticity
+from morie.fn.rgelast import rangayyan_heart_elasticity
 
 
 def test_rgelast_basic():

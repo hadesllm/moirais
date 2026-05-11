@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.sphet — spatial heterogeneity."""
+"""Tests for morie.fn.sphet — spatial heterogeneity."""
 import numpy as np
 import pytest
-from moirais.fn.sphet import spatial_heterogeneity
+from morie.fn.sphet import spatial_heterogeneity
 
 
 class TestSpatialHeterogeneity:

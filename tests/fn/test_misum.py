@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.misum -- MI summary table."""
+"""Tests for morie.fn.misum -- MI summary table."""
 
 import pandas as pd
-from moirais.fn.misum import mi_summary
+from morie.fn.misum import mi_summary
 
 
 class TestMiSummary:

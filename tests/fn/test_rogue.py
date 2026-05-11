@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rogue -- transfer learning feature extraction."""
+"""Tests for morie.fn.rogue -- transfer learning feature extraction."""
 
 import numpy as np
-from moirais.fn.rogue import absorption_features, rogue
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.rogue import absorption_features, rogue
+from morie.fn._containers import DescriptiveResult
 
 
 class TestRogue:

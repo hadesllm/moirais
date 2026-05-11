@@ -1,7 +1,7 @@
 """Tests for grkfd.geron_kfold_cv."""
 import numpy as np
 import pytest
-from moirais.fn.grkfd import geron_kfold_cv
+from morie.fn.grkfd import geron_kfold_cv
 
 
 def test_grkfd_basic():

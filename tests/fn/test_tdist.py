@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tdist — geodesic distance on torus."""
+"""Tests for morie.fn.tdist — geodesic distance on torus."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tdist import torus_distance
+from morie.fn.tdist import torus_distance
 
 
 class TestTorusDistance:

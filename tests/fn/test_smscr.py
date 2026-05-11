@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.smscr — Smoothed maximum score estimator."""
+"""Tests for morie.fn.smscr — Smoothed maximum score estimator."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.smscr import smscr
+from morie.fn.smscr import smscr
 
 
 @pytest.fixture()

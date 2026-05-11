@@ -1,7 +1,7 @@
 """Tests for grrein.geron_reinforce_policy_gradient."""
 import numpy as np
 import pytest
-from moirais.fn.grrein import geron_reinforce_policy_gradient
+from morie.fn.grrein import geron_reinforce_policy_gradient
 
 
 def test_grrein_basic():

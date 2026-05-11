@@ -1,7 +1,7 @@
 """Tests for spatial_data_analysis_with_r2u4.spatial_data_analysis_with_r_chapter_2_unnumbered_4."""
 import numpy as np
 import pytest
-from moirais.fn.spatial_data_analysis_with_r2u4 import spatial_data_analysis_with_r_chapter_2_unnumbered_4
+from morie.fn.spatial_data_analysis_with_r2u4 import spatial_data_analysis_with_r_chapter_2_unnumbered_4
 
 
 def test_spatial_data_analysis_with_r2u4_basic():

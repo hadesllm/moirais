@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.irtml — MLE theta estimation."""
+"""Tests for morie.fn.irtml — MLE theta estimation."""
 
 import numpy as np
 import pytest
-from moirais.fn.irtml import irt_mle_theta
+from morie.fn.irtml import irt_mle_theta
 
 
 class TestIrtMleTheta:

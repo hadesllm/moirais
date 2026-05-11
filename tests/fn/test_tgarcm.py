@@ -1,7 +1,7 @@
 """Tests for tgarcm.tgarch_gjr."""
 import numpy as np
 import pytest
-from moirais.fn.tgarcm import tgarch_gjr
+from morie.fn.tgarcm import tgarch_gjr
 
 
 def test_tgarcm_basic():

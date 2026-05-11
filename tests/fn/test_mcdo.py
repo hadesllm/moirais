@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mcdo — McDonald's omega."""
+"""Tests for morie.fn.mcdo — McDonald's omega."""
 
 import pytest
 import numpy as np
-from moirais.fn import mcdo
-from moirais.fn._containers import OmgRes
+from morie.fn import mcdo
+from morie.fn._containers import OmgRes
 
 
 @pytest.fixture()

@@ -1,7 +1,7 @@
 """Tests for rgfish.rangayyan_fisher_criterion."""
 import numpy as np
 import pytest
-from moirais.fn.rgfish import rangayyan_fisher_criterion
+from morie.fn.rgfish import rangayyan_fisher_criterion
 
 
 def test_rgfish_basic():

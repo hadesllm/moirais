@@ -1,7 +1,7 @@
 """Tests for btstud.boot_studentized_ci."""
 import numpy as np
 import pytest
-from moirais.fn.btstud import boot_studentized_ci
+from morie.fn.btstud import boot_studentized_ci
 
 
 def test_btstud_basic():

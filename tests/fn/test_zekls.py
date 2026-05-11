@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zekls -- Circular scan statistic"""
+"""Tests for morie.fn.zekls -- Circular scan statistic"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zekls import scan_circular
+from morie.fn.zekls import scan_circular
 
 
 class TestScanCircular:

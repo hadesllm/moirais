@@ -1,6 +1,6 @@
 """Tests for wvflt.py - Wavelet filtering."""
 import numpy as np
-from moirais.fn.wvflt import wavelet_filter, wvflt
+from morie.fn.wvflt import wavelet_filter, wvflt
 
 
 def test_filter_approx():

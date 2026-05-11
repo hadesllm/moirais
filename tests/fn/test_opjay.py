@@ -1,7 +1,7 @@
 """Test opjay."""
 import numpy as np
 import pytest
-from moirais.fn.opjay import opjay
+from morie.fn.opjay import opjay
 
 
 def test_opjay_basic():

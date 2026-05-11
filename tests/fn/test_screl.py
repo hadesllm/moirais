@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.screl — score-level reliability."""
+"""Tests for morie.fn.screl — score-level reliability."""
 
 import numpy as np
-from moirais.fn.screl import score_reliability
+from morie.fn.screl import score_reliability
 
 
 class TestScoreReliability:

@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lmlag."""
+"""Tests for morie.fn.lmlag."""
 import numpy as np
 import pytest
-from moirais.fn.lmlag import lmlag
+from morie.fn.lmlag import lmlag
 
 
 class TestLmlag:

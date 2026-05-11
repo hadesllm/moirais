@@ -1,7 +1,7 @@
 """Tests for smrest.standardized_mortality_ratio."""
 import numpy as np
 import pytest
-from moirais.fn.smrest import standardized_mortality_ratio
+from morie.fn.smrest import standardized_mortality_ratio
 
 
 def test_smrest_basic():

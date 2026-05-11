@@ -1,7 +1,7 @@
 """Test ghrsk."""
 import numpy as np
 import pytest
-from moirais.fn.ghrsk import ghrsk
+from morie.fn.ghrsk import ghrsk
 
 
 def test_ghrsk_basic():

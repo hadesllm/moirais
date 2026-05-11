@@ -1,7 +1,7 @@
 """Tests for sgtdeg.sgt_degree_matrix."""
 import numpy as np
 import pytest
-from moirais.fn.sgtdeg import sgt_degree_matrix
+from morie.fn.sgtdeg import sgt_degree_matrix
 
 
 def test_sgtdeg_basic():

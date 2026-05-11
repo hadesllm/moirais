@@ -1,7 +1,7 @@
 """Tests for tqkmse.turboquant_kv_mse."""
 import numpy as np
 import pytest
-from moirais.fn.tqkmse import turboquant_kv_mse
+from morie.fn.tqkmse import turboquant_kv_mse
 
 
 def test_tqkmse_basic():

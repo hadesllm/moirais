@@ -1,7 +1,7 @@
 """Tests for svmhg.svm_hinge_primal."""
 import numpy as np
 import pytest
-from moirais.fn.svmhg import svm_hinge_primal
+from morie.fn.svmhg import svm_hinge_primal
 
 
 def test_svmhg_basic():

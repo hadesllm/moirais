@@ -1,7 +1,7 @@
 """Tests for pcm.partial_credit_masters."""
 import numpy as np
 import pytest
-from moirais.fn.pcm import partial_credit_masters
+from morie.fn.pcm import partial_credit_masters
 
 
 def test_pcm_basic():

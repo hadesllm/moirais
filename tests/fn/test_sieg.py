@@ -1,7 +1,7 @@
 """Tests for sieg.siegel_repeated."""
 import numpy as np
 import pytest
-from moirais.fn.sieg import siegel_repeated
+from morie.fn.sieg import siegel_repeated
 
 
 def test_sieg_basic():

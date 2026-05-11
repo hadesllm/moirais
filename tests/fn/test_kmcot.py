@@ -1,7 +1,7 @@
 """Tests for kmcot.kamath_chain_of_thought."""
 import numpy as np
 import pytest
-from moirais.fn.kmcot import kamath_chain_of_thought
+from morie.fn.kmcot import kamath_chain_of_thought
 
 
 def test_kmcot_basic():

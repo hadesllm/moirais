@@ -1,5 +1,5 @@
 """Test gkpw."""
-from moirais.fn.gkpw import gkp_witten
+from morie.fn.gkpw import gkp_witten
 
 
 def test_gkpw_basic():

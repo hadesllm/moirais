@@ -1,7 +1,7 @@
 """Tests for moranI.morans_i_asymptotic_test."""
 import numpy as np
 import pytest
-from moirais.fn.moranI import morans_i_asymptotic_test
+from morie.fn.moranI import morans_i_asymptotic_test
 
 
 def test_moranI_basic():

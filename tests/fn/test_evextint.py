@@ -1,7 +1,7 @@
 """Tests for evextint.evt_extremal_index_intervals."""
 import numpy as np
 import pytest
-from moirais.fn.evextint import evt_extremal_index_intervals
+from morie.fn.evextint import evt_extremal_index_intervals
 
 
 def test_evextint_basic():

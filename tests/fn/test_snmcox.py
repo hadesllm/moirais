@@ -1,7 +1,7 @@
 """Tests for snmcox.snm_cox."""
 import numpy as np
 import pytest
-from moirais.fn.snmcox import snm_cox
+from morie.fn.snmcox import snm_cox
 
 
 def test_snmcox_basic():

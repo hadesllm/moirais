@@ -1,7 +1,7 @@
 """Tests for chflt -- Chebyshev type I filter."""
 import numpy as np
-from moirais.fn.chflt import chflt
-from moirais.fn._containers import SignalResult
+from morie.fn.chflt import chflt
+from morie.fn._containers import SignalResult
 
 
 def test_chflt_basic(signal_1khz):

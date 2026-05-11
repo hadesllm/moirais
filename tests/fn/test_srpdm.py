@@ -1,7 +1,7 @@
 """Test srpdm."""
 import numpy as np
 import pytest
-from moirais.fn.srpdm import srpdm
+from morie.fn.srpdm import srpdm
 
 
 def test_srpdm_basic():

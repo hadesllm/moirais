@@ -1,7 +1,7 @@
 """Tests for sprfss.schabenberger_random_field_stationarity."""
 import numpy as np
 import pytest
-from moirais.fn.sprfss import schabenberger_random_field_stationarity
+from morie.fn.sprfss import schabenberger_random_field_stationarity
 
 
 def test_sprfss_basic():

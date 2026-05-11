@@ -1,7 +1,7 @@
 """Tests for clipxi.clip_image_encoder."""
 import numpy as np
 import pytest
-from moirais.fn.clipxi import clip_image_encoder
+from morie.fn.clipxi import clip_image_encoder
 
 
 def test_clipxi_basic():

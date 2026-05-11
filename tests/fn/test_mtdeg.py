@@ -1,7 +1,7 @@
 """Test mtdeg."""
 import numpy as np
 import pytest
-from moirais.fn.mtdeg import mtdeg
+from morie.fn.mtdeg import mtdeg
 
 
 def test_mtdeg_basic():

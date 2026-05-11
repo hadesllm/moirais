@@ -1,7 +1,7 @@
 """Test dk3dr."""
 import numpy as np
 import pytest
-from moirais.fn.dk3dr import dk3dr
+from morie.fn.dk3dr import dk3dr
 
 
 def test_dk3dr_basic():

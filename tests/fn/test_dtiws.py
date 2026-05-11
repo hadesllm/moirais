@@ -1,7 +1,7 @@
 """Test dtiws."""
 import numpy as np
 import pytest
-from moirais.fn.dtiws import dtiws
+from morie.fn.dtiws import dtiws
 
 
 def test_dtiws_basic():

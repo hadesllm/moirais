@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.srinv -- serial interval estimation."""
+"""Tests for morie.fn.srinv -- serial interval estimation."""
 
 import numpy as np
 import pytest
-from moirais.fn.srinv import serial_interval
+from morie.fn.srinv import serial_interval
 
 
 class TestSerialInterval:

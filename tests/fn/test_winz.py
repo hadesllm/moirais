@@ -1,7 +1,7 @@
 """Tests for winz.winsorized_mean."""
 import numpy as np
 import pytest
-from moirais.fn.winz import winsorized_mean
+from morie.fn.winz import winsorized_mean
 
 
 def test_winz_basic():

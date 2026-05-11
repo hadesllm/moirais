@@ -1,7 +1,7 @@
 """Tests for bhltmsm.behavioral_health_msm."""
 import numpy as np
 import pytest
-from moirais.fn.bhltmsm import behavioral_health_msm
+from morie.fn.bhltmsm import behavioral_health_msm
 
 
 def test_bhltmsm_basic():

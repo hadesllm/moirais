@@ -1,7 +1,7 @@
 """Tests for cvxqcr.boyd_quadratic_constraint."""
 import numpy as np
 import pytest
-from moirais.fn.cvxqcr import boyd_quadratic_constraint
+from morie.fn.cvxqcr import boyd_quadratic_constraint
 
 
 def test_cvxqcr_basic():

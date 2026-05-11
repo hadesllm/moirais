@@ -1,7 +1,7 @@
 """Tests for hrzaml.horowitz_additive_nonid_link."""
 import numpy as np
 import pytest
-from moirais.fn.hrzaml import horowitz_additive_nonid_link
+from morie.fn.hrzaml import horowitz_additive_nonid_link
 
 
 def test_hrzaml_basic():

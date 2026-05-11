@@ -1,7 +1,7 @@
 """Test hexgen."""
 import numpy as np
 import pytest
-from moirais.fn.hexgen import hexgen
+from morie.fn.hexgen import hexgen
 
 
 def test_hexgen_basic():

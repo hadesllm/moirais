@@ -1,6 +1,6 @@
 """Tests for spatial data decomposition."""
 import numpy as np
-from moirais.fn.sgdcp import sgdcp
+from morie.fn.sgdcp import sgdcp
 
 
 def test_sgdcp_smoke():

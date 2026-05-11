@@ -1,7 +1,7 @@
 """Tests for alllmj.alammar_llm_as_judge."""
 import numpy as np
 import pytest
-from moirais.fn.alllmj import alammar_llm_as_judge
+from morie.fn.alllmj import alammar_llm_as_judge
 
 
 def test_alllmj_basic():

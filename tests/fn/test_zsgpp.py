@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zsgpp -- GP prediction"""
+"""Tests for morie.fn.zsgpp -- GP prediction"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zsgpp import gp_predict
+from morie.fn.zsgpp import gp_predict
 
 
 class TestGpPredict:

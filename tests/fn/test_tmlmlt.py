@@ -1,7 +1,7 @@
 """Tests for tmlmlt.tmle_multiple_treatments."""
 import numpy as np
 import pytest
-from moirais.fn.tmlmlt import tmle_multiple_treatments
+from morie.fn.tmlmlt import tmle_multiple_treatments
 
 
 def test_tmlmlt_basic():

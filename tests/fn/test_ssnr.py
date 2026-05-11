@@ -1,7 +1,7 @@
 """Test snr_compute (ssnr)."""
 import numpy as np
-from moirais.fn.ssnr import snr_compute, ssnr
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.ssnr import snr_compute, ssnr
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSNR:

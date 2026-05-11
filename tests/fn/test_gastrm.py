@@ -1,7 +1,7 @@
 """Test gastrm."""
 import numpy as np
 import pytest
-from moirais.fn.gastrm import gastrm
+from morie.fn.gastrm import gastrm
 
 
 def test_gastrm_basic():

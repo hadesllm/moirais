@@ -1,7 +1,7 @@
 """Tests for grn001.geron_ch4_simple_linear_life_satisfaction."""
 import numpy as np
 import pytest
-from moirais.fn.grn001 import geron_ch4_simple_linear_life_satisfaction
+from morie.fn.grn001 import geron_ch4_simple_linear_life_satisfaction
 
 
 def test_grn001_basic():

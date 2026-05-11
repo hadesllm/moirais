@@ -1,7 +1,7 @@
 """Tests for wsmlas.wasserman_lasso."""
 import numpy as np
 import pytest
-from moirais.fn.wsmlas import wasserman_lasso
+from morie.fn.wsmlas import wasserman_lasso
 
 
 def test_wsmlas_basic():

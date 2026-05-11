@@ -1,7 +1,7 @@
 """Tests for abind.ab_indirect_effect."""
 import numpy as np
 import pytest
-from moirais.fn.abind import ab_indirect_effect
+from morie.fn.abind import ab_indirect_effect
 
 
 def test_abind_basic():

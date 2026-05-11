@@ -1,7 +1,7 @@
 """Tests for funBand.functional_band."""
 import numpy as np
 import pytest
-from moirais.fn.funBand import functional_band
+from morie.fn.funBand import functional_band
 
 
 def test_funBand_basic():

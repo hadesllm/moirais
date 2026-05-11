@@ -1,7 +1,7 @@
 """Tests for bayauto.autocorrelation_check."""
 import numpy as np
 import pytest
-from moirais.fn.bayauto import autocorrelation_check
+from morie.fn.bayauto import autocorrelation_check
 
 
 def test_bayauto_basic():

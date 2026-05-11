@@ -1,7 +1,7 @@
 """Test ppspx."""
 import numpy as np
 import pytest
-from moirais.fn.ppspx import ppspx
+from morie.fn.ppspx import ppspx
 
 
 def test_ppspx_basic():

@@ -1,7 +1,7 @@
 """Tests for glmmsar."""
 import numpy as np
 import pytest
-from moirais.fn.glmmsar import glmmsar
+from morie.fn.glmmsar import glmmsar
 
 
 def test_glmmsar_basic():
@@ -27,5 +27,5 @@ def test_glmmsar_no_data():
 
 
 def test_glmmsar_alias():
-    from moirais.fn.glmmsar import glmmsar
+    from morie.fn.glmmsar import glmmsar
     assert glmmsar is glmmsar

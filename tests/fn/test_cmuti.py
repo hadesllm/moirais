@@ -1,7 +1,7 @@
 """Tests for cmuti.copula_mutual_information."""
 import numpy as np
 import pytest
-from moirais.fn.cmuti import copula_mutual_information
+from morie.fn.cmuti import copula_mutual_information
 
 
 def test_cmuti_basic():

@@ -1,7 +1,7 @@
 """Tests for tft.temporal_fusion_transformer."""
 import numpy as np
 import pytest
-from moirais.fn.tft import temporal_fusion_transformer
+from morie.fn.tft import temporal_fusion_transformer
 
 
 def test_tft_basic():

@@ -1,7 +1,7 @@
 """Tests for gae.gae."""
 import numpy as np
 import pytest
-from moirais.fn.gae import gae
+from morie.fn.gae import gae
 
 
 def test_gae_basic():

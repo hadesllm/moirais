@@ -1,7 +1,7 @@
 """Test clcon."""
 import numpy as np
 import pytest
-from moirais.fn.clcon import clcon
+from morie.fn.clcon import clcon
 
 
 def test_clcon_basic():

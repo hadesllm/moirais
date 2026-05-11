@@ -1,7 +1,7 @@
 """Tests for pero.prioritized_experience_replay."""
 import numpy as np
 import pytest
-from moirais.fn.pero import prioritized_experience_replay
+from morie.fn.pero import prioritized_experience_replay
 
 
 def test_pero_basic():

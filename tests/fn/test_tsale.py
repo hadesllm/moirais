@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.tsale — Tsallis entropy."""
+"""Tests for morie.fn.tsale — Tsallis entropy."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.tsale import tsale
+from morie.fn.tsale import tsale
 
 
 class TestTsale:

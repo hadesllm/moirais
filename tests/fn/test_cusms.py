@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cusms -- CUSUM test."""
+"""Tests for morie.fn.cusms -- CUSUM test."""
 import numpy as np
 import pytest
-from moirais.fn.cusms import cusum_test
+from morie.fn.cusms import cusum_test
 
 
 class TestCUSUM:
@@ -18,5 +18,5 @@ class TestCUSUM:
             cusum_test(np.ones(2), np.ones((2, 2)))
 
     def test_cheatsheet(self):
-        from moirais.fn.cusms import cheatsheet
+        from morie.fn.cusms import cheatsheet
         assert isinstance(cheatsheet(), str)

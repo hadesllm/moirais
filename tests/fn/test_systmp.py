@@ -1,7 +1,7 @@
 """Tests for systmp.systematic_sampling."""
 import numpy as np
 import pytest
-from moirais.fn.systmp import systematic_sampling
+from morie.fn.systmp import systematic_sampling
 
 
 def test_systmp_basic():

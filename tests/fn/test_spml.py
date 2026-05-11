@@ -1,7 +1,7 @@
 """Tests for spml.schabenberger_ml_variogram."""
 import numpy as np
 import pytest
-from moirais.fn.spml import schabenberger_ml_variogram
+from morie.fn.spml import schabenberger_ml_variogram
 
 
 def test_spml_basic():

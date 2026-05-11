@@ -1,7 +1,7 @@
 """Tests for rng164.rangayyan_ch3_rls_normal_equation."""
 import numpy as np
 import pytest
-from moirais.fn.rng164 import rangayyan_ch3_rls_normal_equation
+from morie.fn.rng164 import rangayyan_ch3_rls_normal_equation
 
 
 def test_rng164_basic():

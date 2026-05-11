@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.ptcox -- Cox (doubly stochastic) process"""
+"""Tests for morie.fn.ptcox -- Cox (doubly stochastic) process"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.ptcox import cox_process
+from morie.fn.ptcox import cox_process
 
 
 class TestCoxProcess:

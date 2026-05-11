@@ -1,7 +1,7 @@
 """Tests for tmlfed.tmle_federated."""
 import numpy as np
 import pytest
-from moirais.fn.tmlfed import tmle_federated
+from morie.fn.tmlfed import tmle_federated
 
 
 def test_tmlfed_basic():

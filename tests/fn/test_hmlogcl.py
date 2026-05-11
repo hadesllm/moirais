@@ -1,7 +1,7 @@
 """Tests for hmlogcl.geron_logistic_cost."""
 import numpy as np
 import pytest
-from moirais.fn.hmlogcl import geron_logistic_cost
+from morie.fn.hmlogcl import geron_logistic_cost
 
 
 def test_hmlogcl_basic():

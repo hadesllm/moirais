@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.f1_ -- F1 score."""
+"""Tests for morie.fn.f1_ -- F1 score."""
 
 import numpy as np
 import pytest
-from moirais.fn.f1_ import f1_score
+from morie.fn.f1_ import f1_score
 
 
 class TestF1Score:

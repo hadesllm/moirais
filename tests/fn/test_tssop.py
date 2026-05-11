@@ -1,7 +1,7 @@
 """Test tssop."""
 import numpy as np
 import pytest
-from moirais.fn.tssop import tssop
+from morie.fn.tssop import tssop
 
 
 def test_tssop_basic():

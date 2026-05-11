@@ -1,7 +1,7 @@
 """Test vmhrs."""
 import numpy as np
 import pytest
-from moirais.fn.vmhrs import vmhrs
+from morie.fn.vmhrs import vmhrs
 
 
 def test_vmhrs_basic():

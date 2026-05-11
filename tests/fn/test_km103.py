@@ -1,7 +1,7 @@
 """Tests for km103.kamath_ch6_lstm_softmax_word."""
 import numpy as np
 import pytest
-from moirais.fn.km103 import kamath_ch6_lstm_softmax_word
+from morie.fn.km103 import kamath_ch6_lstm_softmax_word
 
 
 def test_km103_basic():

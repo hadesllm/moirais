@@ -1,7 +1,7 @@
 """Tests for rglindsep.rangayyan_lin_discr_sep."""
 import numpy as np
 import pytest
-from moirais.fn.rglindsep import rangayyan_lin_discr_sep
+from morie.fn.rglindsep import rangayyan_lin_discr_sep
 
 
 def test_rglindsep_basic():

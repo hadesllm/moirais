@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.arcit -- Gauss-Seidel solver."""
+"""Tests for morie.fn.arcit -- Gauss-Seidel solver."""
 
 import numpy as np
-from moirais.fn.arcit import gauss_seidel, arcit
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.arcit import gauss_seidel, arcit
+from morie.fn._containers import DescriptiveResult
 
 
 class TestArcit:

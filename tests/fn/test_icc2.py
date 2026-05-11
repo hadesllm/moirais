@@ -1,7 +1,7 @@
 """Tests for icc2.icc_two_way_random."""
 import numpy as np
 import pytest
-from moirais.fn.icc2 import icc_two_way_random
+from morie.fn.icc2 import icc_two_way_random
 
 
 def test_icc2_basic():

@@ -1,7 +1,7 @@
 """Tests for b203.burkov_lm_ch2_lm_shorthand."""
 import numpy as np
 import pytest
-from moirais.fn.b203 import burkov_lm_ch2_lm_shorthand
+from morie.fn.b203 import burkov_lm_ch2_lm_shorthand
 
 
 def test_b203_basic():

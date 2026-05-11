@@ -1,10 +1,10 @@
 // Smart clipboard for code blocks — strips `# comment` lines on copy.
 //
-// MOIRAIS docs include shell + Python snippets where lines are
+// MORIE docs include shell + Python snippets where lines are
 // annotated with comments, e.g.
 //
-//   pip install moirais        # Python package (60+ datasets)
-//   pip install moirais[interactive]  # + Terminal IDE
+//   pip install morie        # Python package (60+ datasets)
+//   pip install morie[interactive]  # + Terminal IDE
 //
 // New users paste those into a shell and either (a) get an error
 // because the shell doesn't know what `# Python package (60+ datasets)`

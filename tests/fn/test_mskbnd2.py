@@ -1,7 +1,7 @@
 """Tests for mskbnd2.manski_no_assumption_outcome."""
 import numpy as np
 import pytest
-from moirais.fn.mskbnd2 import manski_no_assumption_outcome
+from morie.fn.mskbnd2 import manski_no_assumption_outcome
 
 
 def test_mskbnd2_basic():

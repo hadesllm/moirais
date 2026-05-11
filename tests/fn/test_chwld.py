@@ -1,7 +1,7 @@
 """Tests for chwld.py - Choi-Williams distribution."""
 import numpy as np
 import pytest
-from moirais.fn.chwld import choi_williams_fn, chwld
+from morie.fn.chwld import choi_williams_fn, chwld
 
 
 def test_choi_williams_returns_descriptive_result():

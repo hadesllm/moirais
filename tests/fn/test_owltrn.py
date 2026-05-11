@@ -1,7 +1,7 @@
 """Tests for owltrn.outcome_weighted_learning."""
 import numpy as np
 import pytest
-from moirais.fn.owltrn import outcome_weighted_learning
+from morie.fn.owltrn import outcome_weighted_learning
 
 
 def test_owltrn_basic():

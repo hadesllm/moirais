@@ -1,7 +1,7 @@
 """Tests for sptrs.schabenberger_trend_surface."""
 import numpy as np
 import pytest
-from moirais.fn.sptrs import schabenberger_trend_surface
+from morie.fn.sptrs import schabenberger_trend_surface
 
 
 def test_sptrs_basic():

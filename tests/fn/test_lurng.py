@@ -1,7 +1,7 @@
 """Tests for lurng."""
 import numpy as np
 import pytest
-from moirais.fn.lurng import lurng
+from morie.fn.lurng import lurng
 
 
 def test_lurng_basic():
@@ -27,5 +27,5 @@ def test_lurng_no_data():
 
 
 def test_lurng_alias():
-    from moirais.fn.lurng import lurng
+    from morie.fn.lurng import lurng
     assert lurng is lurng

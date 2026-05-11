@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lexis -- Lexis diagram data."""
+"""Tests for morie.fn.lexis -- Lexis diagram data."""
 
 import pytest
-from moirais.fn.lexis import lexis_diagram_data
+from morie.fn.lexis import lexis_diagram_data
 
 
 class TestLexisDiagram:

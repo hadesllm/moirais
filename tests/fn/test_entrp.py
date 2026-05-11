@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.entrp — Metric entropy (covering number) computation."""
+"""Tests for morie.fn.entrp — Metric entropy (covering number) computation."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.entrp import entrp, MetricEntropyResult
+from morie.fn.entrp import entrp, MetricEntropyResult
 
 
 def test_returns_result_type():

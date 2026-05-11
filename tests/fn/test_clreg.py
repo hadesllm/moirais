@@ -1,7 +1,7 @@
 """Test clreg."""
 import numpy as np
 import pytest
-from moirais.fn.clreg import clreg
+from morie.fn.clreg import clreg
 
 
 def test_clreg_basic():

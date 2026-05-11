@@ -1,7 +1,7 @@
 """Tests for immid.index_moderated_mediation."""
 import numpy as np
 import pytest
-from moirais.fn.immid import index_moderated_mediation
+from morie.fn.immid import index_moderated_mediation
 
 
 def test_immid_basic():

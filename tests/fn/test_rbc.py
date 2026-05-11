@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.rbc -- Rank-biserial correlation."""
+"""Tests for morie.fn.rbc -- Rank-biserial correlation."""
 
 import pytest
-from moirais.fn.rbc import rank_biserial_correlation
-from moirais.fn._containers import ESRes
+from morie.fn.rbc import rank_biserial_correlation
+from morie.fn._containers import ESRes
 
 
 class TestRankBiserialCorrelation:

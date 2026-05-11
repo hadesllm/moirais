@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zedrc -- Spatial dose-response curve"""
+"""Tests for morie.fn.zedrc -- Spatial dose-response curve"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zedrc import dose_resp_spatial
+from morie.fn.zedrc import dose_resp_spatial
 
 
 class TestDoseRespSpatial:

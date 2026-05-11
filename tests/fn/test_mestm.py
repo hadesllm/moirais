@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mestm — M-estimator with influence function."""
+"""Tests for morie.fn.mestm — M-estimator with influence function."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mestm import mestm, MEstimatorResult
+from morie.fn.mestm import mestm, MEstimatorResult
 
 
 def _huber_rho(xi, theta, k=1.345):

@@ -1,7 +1,7 @@
 """Tests for gh_ap_c3.ghosal_bracket_num."""
 import numpy as np
 import pytest
-from moirais.fn.gh_ap_c3 import ghosal_bracket_num
+from morie.fn.gh_ap_c3 import ghosal_bracket_num
 
 
 def test_gh_ap_c3_basic():

@@ -1,7 +1,7 @@
 """Tests for hmlaso.geron_lasso_cost."""
 import numpy as np
 import pytest
-from moirais.fn.hmlaso import geron_lasso_cost
+from morie.fn.hmlaso import geron_lasso_cost
 
 
 def test_hmlaso_basic():

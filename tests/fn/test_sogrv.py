@@ -1,7 +1,7 @@
 """Test sogrv."""
 import numpy as np
 import pytest
-from moirais.fn.sogrv import sogrv
+from morie.fn.sogrv import sogrv
 
 
 def test_sogrv_basic():

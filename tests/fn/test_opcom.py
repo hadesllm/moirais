@@ -1,7 +1,7 @@
 """Test opcom."""
 import numpy as np
 import pytest
-from moirais.fn.opcom import opcom
+from morie.fn.opcom import opcom
 
 
 def test_opcom_basic():

@@ -1,7 +1,7 @@
 """Tests for lrcvg.learning_curve."""
 import numpy as np
 import pytest
-from moirais.fn.lrcvg import learning_curve
+from morie.fn.lrcvg import learning_curve
 
 
 def test_lrcvg_basic():

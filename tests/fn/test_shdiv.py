@@ -1,6 +1,6 @@
-"""Tests for moirais.fn.shdiv."""
+"""Tests for morie.fn.shdiv."""
 import numpy as np
-from moirais.fn.shdiv import shdiv
+from morie.fn.shdiv import shdiv
 
 
 def test_shdiv_smoke():
@@ -12,7 +12,7 @@ def test_shdiv_smoke():
 
 
 def test_cheatsheet():
-    from moirais.fn.shdiv import cheatsheet
+    from morie.fn.shdiv import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

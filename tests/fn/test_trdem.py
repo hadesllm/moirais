@@ -1,7 +1,7 @@
 """Test trdem."""
 import numpy as np
 import pytest
-from moirais.fn.trdem import trdem
+from morie.fn.trdem import trdem
 
 
 def test_trdem_basic():

@@ -1,6 +1,6 @@
 """Tests for ltcfl.py - Lattice filter coefficients."""
 import numpy as np
-from moirais.fn.ltcfl import lattice_coefficients_fn, ltcfl
+from morie.fn.ltcfl import lattice_coefficients_fn, ltcfl
 
 
 def test_ltcfl_returns_result():

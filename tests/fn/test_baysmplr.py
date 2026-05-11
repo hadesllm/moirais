@@ -1,7 +1,7 @@
 """Tests for baysmplr.sampler_dispatch."""
 import numpy as np
 import pytest
-from moirais.fn.baysmplr import sampler_dispatch
+from morie.fn.baysmplr import sampler_dispatch
 
 
 def test_baysmplr_basic():

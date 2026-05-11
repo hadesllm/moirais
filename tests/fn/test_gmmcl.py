@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.gmmcl -- Gaussian mixture model clustering."""
+"""Tests for morie.fn.gmmcl -- Gaussian mixture model clustering."""
 
 import numpy as np
-from moirais.fn.gmmcl import gmm_cluster, gmmcl
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.gmmcl import gmm_cluster, gmmcl
+from morie.fn._containers import DescriptiveResult
 
 
 class TestGmmCluster:

@@ -1,7 +1,7 @@
 """Test sespt."""
 import numpy as np
 import pytest
-from moirais.fn.sespt import sespt
+from morie.fn.sespt import sespt
 
 
 def test_sespt_basic():

@@ -1,7 +1,7 @@
 """Test enmng."""
 import numpy as np
 import pytest
-from moirais.fn.enmng import enmng
+from morie.fn.enmng import enmng
 
 
 def test_enmng_basic():

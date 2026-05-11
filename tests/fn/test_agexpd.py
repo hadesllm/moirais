@@ -1,7 +1,7 @@
 """Tests for agexpd.alphazero_expand."""
 import numpy as np
 import pytest
-from moirais.fn.agexpd import alphazero_expand
+from morie.fn.agexpd import alphazero_expand
 
 
 def test_agexpd_basic():

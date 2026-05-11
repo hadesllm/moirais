@@ -1,7 +1,7 @@
 """Tests for km056.kamath_ch4_full_finetune_obj."""
 import numpy as np
 import pytest
-from moirais.fn.km056 import kamath_ch4_full_finetune_obj
+from morie.fn.km056 import kamath_ch4_full_finetune_obj
 
 
 def test_km056_basic():

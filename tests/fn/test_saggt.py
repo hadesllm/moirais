@@ -1,7 +1,7 @@
 """Test saggt."""
 import numpy as np
 import pytest
-from moirais.fn.saggt import saggt
+from morie.fn.saggt import saggt
 
 
 def test_saggt_basic():

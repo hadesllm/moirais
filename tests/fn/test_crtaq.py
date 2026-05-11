@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.crtaq — acquittal rate."""
+"""Tests for morie.fn.crtaq — acquittal rate."""
 
 import pytest
-from moirais.fn.crtaq import court_acquittal
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.crtaq import court_acquittal
+from morie.fn._containers import DescriptiveResult
 
 
 class TestAcquittal:

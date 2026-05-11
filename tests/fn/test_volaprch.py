@@ -1,7 +1,7 @@
 """Tests for volaprch.vol_aparch_fit."""
 import numpy as np
 import pytest
-from moirais.fn.volaprch import vol_aparch_fit
+from morie.fn.volaprch import vol_aparch_fit
 
 
 def test_volaprch_basic():

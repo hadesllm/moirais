@@ -1,7 +1,7 @@
 """Tests for saxR.sax_representation."""
 import numpy as np
 import pytest
-from moirais.fn.saxR import sax_representation
+from morie.fn.saxR import sax_representation
 
 
 def test_saxR_basic():

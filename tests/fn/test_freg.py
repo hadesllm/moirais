@@ -1,7 +1,7 @@
 """Tests for freg.function_register."""
 import numpy as np
 import pytest
-from moirais.fn.freg import function_register
+from morie.fn.freg import function_register
 
 
 def test_freg_basic():

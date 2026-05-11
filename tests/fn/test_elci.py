@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.elci — empirical likelihood CI."""
+"""Tests for morie.fn.elci — empirical likelihood CI."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.elci import elci
+from morie.fn.elci import elci
 
 
 def test_ci_contains_mean():

@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.fa — Exploratory Factor Analysis."""
+"""Tests for morie.fn.fa — Exploratory Factor Analysis."""
 
 import numpy as np
 import pytest
-from moirais.fn.fa import fa
-from moirais.fn._containers import FaRes
+from morie.fn.fa import fa
+from morie.fn._containers import FaRes
 
 
 class TestFa:

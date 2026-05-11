@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.mh_ -- Metropolis-Hastings sampler."""
+"""Tests for morie.fn.mh_ -- Metropolis-Hastings sampler."""
 
 import numpy as np
 import pytest
-from moirais.fn.mh_ import metropolis_hastings
+from morie.fn.mh_ import metropolis_hastings
 
 
 class TestMetropolisHastings:

@@ -1,7 +1,7 @@
 """Tests for rlhfRS.rlhf_recommendation."""
 import numpy as np
 import pytest
-from moirais.fn.rlhfRS import rlhf_recommendation
+from morie.fn.rlhfRS import rlhf_recommendation
 
 
 def test_rlhfRS_basic():

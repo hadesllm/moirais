@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.nmdw2 -- DW-NOMINATE bridging observations"""
+"""Tests for morie.fn.nmdw2 -- DW-NOMINATE bridging observations"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.nmdw2 import dwnominate_bridge
+from morie.fn.nmdw2 import dwnominate_bridge
 
 
 class TestDwnominateBridge:

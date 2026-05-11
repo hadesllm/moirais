@@ -1,7 +1,7 @@
 """Tests for pdcoin.pedroni_panel_cointegration."""
 import numpy as np
 import pytest
-from moirais.fn.pdcoin import pedroni_panel_cointegration
+from morie.fn.pdcoin import pedroni_panel_cointegration
 
 
 def test_pdcoin_basic():

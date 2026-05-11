@@ -1,7 +1,7 @@
 """Test robnsn."""
 import numpy as np
 import pytest
-from moirais.fn.robnsn import robnsn
+from morie.fn.robnsn import robnsn
 
 
 def test_robnsn_basic():

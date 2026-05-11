@@ -1,7 +1,7 @@
 """Tests for bigtm.bigram_topic."""
 import numpy as np
 import pytest
-from moirais.fn.bigtm import bigram_topic
+from morie.fn.bigtm import bigram_topic
 
 
 def test_bigtm_basic():

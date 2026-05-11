@@ -1,7 +1,7 @@
 """Tests for rgsig2n.rangayyan_signal_to_noise."""
 import numpy as np
 import pytest
-from moirais.fn.rgsig2n import rangayyan_signal_to_noise
+from morie.fn.rgsig2n import rangayyan_signal_to_noise
 
 
 def test_rgsig2n_basic():

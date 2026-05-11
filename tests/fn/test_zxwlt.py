@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.zxwlt -- Spatial wavelet analysis"""
+"""Tests for morie.fn.zxwlt -- Spatial wavelet analysis"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.zxwlt import wavelet_spatial
+from morie.fn.zxwlt import wavelet_spatial
 
 
 class TestWaveletSpatial:

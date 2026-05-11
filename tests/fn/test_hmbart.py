@@ -1,7 +1,7 @@
 """Tests for hmbart.geron_bart."""
 import numpy as np
 import pytest
-from moirais.fn.hmbart import geron_bart
+from morie.fn.hmbart import geron_bart
 
 
 def test_hmbart_basic():

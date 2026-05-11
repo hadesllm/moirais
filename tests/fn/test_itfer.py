@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.itfer — interference effects."""
+"""Tests for morie.fn.itfer — interference effects."""
 import numpy as np
 import pytest
-from moirais.fn.itfer import interference_effects
+from morie.fn.itfer import interference_effects
 
 
 class TestInterferenceEffects:

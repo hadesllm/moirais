@@ -1,7 +1,7 @@
 """Tests for clstrs.cluster_design."""
 import numpy as np
 import pytest
-from moirais.fn.clstrs import cluster_design
+from morie.fn.clstrs import cluster_design
 
 
 def test_clstrs_basic():

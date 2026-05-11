@@ -1,6 +1,6 @@
 """Tests for missing_pattern."""
 import numpy as np, pytest
-from moirais.fn.mispt import missing_pattern
+from morie.fn.mispt import missing_pattern
 
 class TestMissingPattern:
     def test_basic(self):

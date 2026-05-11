@@ -1,7 +1,7 @@
 """Tests for mcsec.mcmc_standard_error."""
 import numpy as np
 import pytest
-from moirais.fn.mcsec import mcmc_standard_error
+from morie.fn.mcsec import mcmc_standard_error
 
 
 def test_mcsec_basic():

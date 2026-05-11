@@ -1,7 +1,7 @@
 """Tests for gb321l.gibbons_distributing_objects."""
 import numpy as np
 import pytest
-from moirais.fn.gb321l import gibbons_distributing_objects
+from morie.fn.gb321l import gibbons_distributing_objects
 
 
 def test_gb321l_basic():

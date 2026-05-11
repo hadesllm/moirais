@@ -1,7 +1,7 @@
 """Tests for sgtsbnd.sgt_sbm_detect_threshold."""
 import numpy as np
 import pytest
-from moirais.fn.sgtsbnd import sgt_sbm_detect_threshold
+from morie.fn.sgtsbnd import sgt_sbm_detect_threshold
 
 
 def test_sgtsbnd_basic():

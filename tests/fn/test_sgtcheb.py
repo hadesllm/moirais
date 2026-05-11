@@ -1,7 +1,7 @@
 """Tests for sgtcheb.sgt_cheeger_bound."""
 import numpy as np
 import pytest
-from moirais.fn.sgtcheb import sgt_cheeger_bound
+from morie.fn.sgtcheb import sgt_cheeger_bound
 
 
 def test_sgtcheb_basic():

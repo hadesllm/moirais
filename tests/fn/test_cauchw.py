@@ -1,7 +1,7 @@
 """Tests for cauchw.cauchy_weight."""
 import numpy as np
 import pytest
-from moirais.fn.cauchw import cauchy_weight
+from morie.fn.cauchw import cauchy_weight
 
 
 def test_cauchw_basic():

@@ -1,7 +1,7 @@
 """Tests for bkkn.burkov_kneser_ney."""
 import numpy as np
 import pytest
-from moirais.fn.bkkn import burkov_kneser_ney
+from morie.fn.bkkn import burkov_kneser_ney
 
 
 def test_bkkn_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.polyA -- Polya urn model."""
+"""Tests for morie.fn.polyA -- Polya urn model."""
 
 import numpy as np
 
-from moirais.fn.polya import polya_urn
+from morie.fn.polya import polya_urn
 
 
 def test_polya_smoke():
@@ -20,7 +20,7 @@ def test_polya_seed_reproducible():
 
 
 def test_cheatsheet():
-    from moirais.fn.polya import cheatsheet
+    from morie.fn.polya import cheatsheet
     cs = cheatsheet()
     assert isinstance(cs, str)
     assert len(cs) > 0

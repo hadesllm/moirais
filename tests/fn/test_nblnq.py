@@ -1,7 +1,7 @@
 """Test nblnq."""
 import numpy as np
 import pytest
-from moirais.fn.nblnq import nblnq
+from morie.fn.nblnq import nblnq
 
 
 def test_nblnq_basic():

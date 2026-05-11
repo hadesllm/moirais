@@ -1,7 +1,7 @@
 """Tests for frdbnd.frechet_hoeffding_bounds."""
 import numpy as np
 import pytest
-from moirais.fn.frdbnd import frechet_hoeffding_bounds
+from morie.fn.frdbnd import frechet_hoeffding_bounds
 
 
 def test_frdbnd_basic():

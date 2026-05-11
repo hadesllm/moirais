@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.mxmod -- Semiparametric mixture model."""
+"""Tests for morie.fn.mxmod -- Semiparametric mixture model."""
 
 import numpy as np
 import pytest
 
-from moirais.fn.mxmod import mxmod
+from morie.fn.mxmod import mxmod
 
 
 @pytest.fixture()
@@ -60,5 +60,5 @@ def test_invalid_n_components():
 
 
 def test_cheatsheet():
-    from moirais.fn.mxmod import cheatsheet
+    from morie.fn.mxmod import cheatsheet
     assert "mixture" in cheatsheet().lower()

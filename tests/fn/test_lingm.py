@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.lingm — LiNGAM causal discovery."""
+"""Tests for morie.fn.lingm — LiNGAM causal discovery."""
 import numpy as np
 import pytest
-from moirais.fn.lingm import lingm
+from morie.fn.lingm import lingm
 
 
 @pytest.fixture()
@@ -58,5 +58,5 @@ def test_three_variables():
 
 
 def test_cheatsheet():
-    from moirais.fn.lingm import cheatsheet
+    from morie.fn.lingm import cheatsheet
     assert len(cheatsheet()) > 0

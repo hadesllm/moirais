@@ -1,7 +1,7 @@
 """Test gccnv."""
 import numpy as np
 import pytest
-from moirais.fn.gccnv import gccnv
+from morie.fn.gccnv import gccnv
 
 
 def test_gccnv_basic():

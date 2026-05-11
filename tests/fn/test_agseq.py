@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.agseq."""
+"""Tests for morie.fn.agseq."""
 
 import numpy as np
 import pytest
-from moirais.fn.agseq import agseq
+from morie.fn.agseq import agseq
 
 
 class TestAgseq:

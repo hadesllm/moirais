@@ -1,7 +1,7 @@
 """Tests for sinkhd.sinkhorn_distance."""
 import numpy as np
 import pytest
-from moirais.fn.sinkhd import sinkhorn_distance
+from morie.fn.sinkhd import sinkhorn_distance
 
 
 def test_sinkhd_basic():

@@ -1,7 +1,7 @@
 """Tests for vcomp.variance_components_henderson3."""
 import numpy as np
 import pytest
-from moirais.fn.vcomp import variance_components_henderson3
+from morie.fn.vcomp import variance_components_henderson3
 
 
 def test_vcomp_basic():

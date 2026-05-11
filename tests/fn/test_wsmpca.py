@@ -1,7 +1,7 @@
 """Tests for wsmpca.wasserman_pca."""
 import numpy as np
 import pytest
-from moirais.fn.wsmpca import wasserman_pca
+from morie.fn.wsmpca import wasserman_pca
 
 
 def test_wsmpca_basic():

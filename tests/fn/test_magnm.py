@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.magnm -- Biot-Savart magnetic field."""
+"""Tests for morie.fn.magnm -- Biot-Savart magnetic field."""
 
 import numpy as np
-from moirais.fn.magnm import biot_savart, magnm
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.magnm import biot_savart, magnm
+from morie.fn._containers import DescriptiveResult
 
 
 class TestMagnm:

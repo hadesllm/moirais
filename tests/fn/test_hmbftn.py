@@ -1,7 +1,7 @@
 """Tests for hmbftn.geron_bert_finetune."""
 import numpy as np
 import pytest
-from moirais.fn.hmbftn import geron_bert_finetune
+from morie.fn.hmbftn import geron_bert_finetune
 
 
 def test_hmbftn_basic():

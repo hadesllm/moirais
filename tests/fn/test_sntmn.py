@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.sntmn — mandatory minimum sentence."""
+"""Tests for morie.fn.sntmn — mandatory minimum sentence."""
 
 import pytest
 import pandas as pd
-from moirais.fn.sntmn import sentence_mandatory_min
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.sntmn import sentence_mandatory_min
+from morie.fn._containers import DescriptiveResult
 
 
 class TestSentenceMandatoryMin:

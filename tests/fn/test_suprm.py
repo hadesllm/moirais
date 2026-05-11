@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.suprm -- KS supremum test."""
+"""Tests for morie.fn.suprm -- KS supremum test."""
 
 import numpy as np
 import pandas as pd
-from moirais.fn.suprm import ks_supremum, suprm
-from moirais.fn._containers import TestResult
+from morie.fn.suprm import ks_supremum, suprm
+from morie.fn._containers import TestResult
 
 
 class TestSuprm:

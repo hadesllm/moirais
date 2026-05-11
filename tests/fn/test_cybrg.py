@@ -1,7 +1,7 @@
-"""Tests for moirais.fn.cybrg -- PID control simulation."""
+"""Tests for morie.fn.cybrg -- PID control simulation."""
 
-from moirais.fn.cybrg import pid_simulate, cybrg
-from moirais.fn._containers import DescriptiveResult
+from morie.fn.cybrg import pid_simulate, cybrg
+from morie.fn._containers import DescriptiveResult
 
 
 class TestCybrg:

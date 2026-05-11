@@ -1,7 +1,7 @@
 """Tests for volrv.vol_realised_variance."""
 import numpy as np
 import pytest
-from moirais.fn.volrv import vol_realised_variance
+from morie.fn.volrv import vol_realised_variance
 
 
 def test_volrv_basic():

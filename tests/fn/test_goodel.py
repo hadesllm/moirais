@@ -1,7 +1,7 @@
 """Test goodel."""
 import numpy as np
 import pytest
-from moirais.fn.goodel import goodel
+from morie.fn.goodel import goodel
 
 
 def test_goodel_basic():

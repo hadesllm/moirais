@@ -1,7 +1,7 @@
 """Test cosim."""
 import numpy as np
 import pytest
-from moirais.fn.cosim import cosim
+from morie.fn.cosim import cosim
 
 
 def test_cosim_basic():

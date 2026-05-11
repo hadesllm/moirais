@@ -1,7 +1,7 @@
 """Test seclm."""
 import numpy as np
 import pytest
-from moirais.fn.seclm import seclm
+from morie.fn.seclm import seclm
 
 
 def test_seclm_basic():

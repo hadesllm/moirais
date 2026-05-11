@@ -1,7 +1,7 @@
 """Tests for hmbp.geron_backpropagation."""
 import numpy as np
 import pytest
-from moirais.fn.hmbp import geron_backpropagation
+from morie.fn.hmbp import geron_backpropagation
 
 
 def test_hmbp_basic():

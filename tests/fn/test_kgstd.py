@@ -1,9 +1,9 @@
-"""Tests for moirais.fn.kgstd -- Kriging standard error map"""
+"""Tests for morie.fn.kgstd -- Kriging standard error map"""
 
 import numpy as np
 import pytest
 
-from moirais.fn.kgstd import kriging_std_error
+from morie.fn.kgstd import kriging_std_error
 
 
 class TestKrigingStdError:

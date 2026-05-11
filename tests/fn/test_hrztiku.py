@@ -1,7 +1,7 @@
 """Tests for hrztiku.horowitz_tikhonov_unknown_T."""
 import numpy as np
 import pytest
-from moirais.fn.hrztiku import horowitz_tikhonov_unknown_T
+from morie.fn.hrztiku import horowitz_tikhonov_unknown_T
 
 
 def test_hrztiku_basic():

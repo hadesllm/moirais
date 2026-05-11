@@ -1,7 +1,7 @@
 """Tests for albio.alammar_bio_tagging."""
 import numpy as np
 import pytest
-from moirais.fn.albio import alammar_bio_tagging
+from morie.fn.albio import alammar_bio_tagging
 
 
 def test_albio_basic():

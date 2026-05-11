@@ -1,7 +1,7 @@
 """Test gcams."""
 import numpy as np
 import pytest
-from moirais.fn.gcams import gcams
+from morie.fn.gcams import gcams
 
 
 def test_gcams_basic():

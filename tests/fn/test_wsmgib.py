@@ -1,7 +1,7 @@
 """Tests for wsmgib.wasserman_gibbs_sampler."""
 import numpy as np
 import pytest
-from moirais.fn.wsmgib import wasserman_gibbs_sampler
+from morie.fn.wsmgib import wasserman_gibbs_sampler
 
 
 def test_wsmgib_basic():

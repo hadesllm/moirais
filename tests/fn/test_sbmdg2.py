@@ -1,7 +1,7 @@
 """Tests for sbmdg2.degree_corrected_sbm."""
 import numpy as np
 import pytest
-from moirais.fn.sbmdg2 import degree_corrected_sbm
+from morie.fn.sbmdg2 import degree_corrected_sbm
 
 
 def test_sbmdg2_basic():

@@ -1,8 +1,8 @@
-"""Tests for moirais.fn.dchnt -- Ghost signal detection."""
+"""Tests for morie.fn.dchnt -- Ghost signal detection."""
 
 import numpy as np
-from moirais.fn.dchnt import ghost_signal, dchnt
-from moirais.fn._containers import TestResult
+from morie.fn.dchnt import ghost_signal, dchnt
+from morie.fn._containers import TestResult
 
 
 class TestDchnt:

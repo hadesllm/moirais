@@ -1,7 +1,7 @@
 """Tests for drpfw.dropout_forward."""
 import numpy as np
 import pytest
-from moirais.fn.drpfw import dropout_forward
+from morie.fn.drpfw import dropout_forward
 
 
 def test_drpfw_basic():

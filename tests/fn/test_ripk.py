@@ -1,18 +1,23 @@
-"""Tests for morie.fn.ripk."""
+"""Tests for ripK.ripley_k_function."""
 import numpy as np
-from morie.fn.ripk import ripley_k_corrected
+import pytest
+from morie.fn.ripk import ripley_k_function
 
 
-def test_ripk_smoke():
-    rng = np.random.default_rng(42)
-    result = ripley_k_corrected(points=rng.uniform(size=(20, 2)))
-    assert result is not None
-    assert hasattr(result, "name")
-    assert result.statistic is not None or result.extra is not None
+def test_ripk_basic():
+    """Test basic functionality."""
+    points = np.random.default_rng(42).normal(0, 1, 100)
+    window = np.random.default_rng(42).normal(0, 1, 100)
+    r = 10
+    result = ripley_k_function(points, window, r)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
 
 
-def test_cheatsheet():
-    from morie.fn.ripk import cheatsheet
-    cs = cheatsheet()
-    assert isinstance(cs, str)
-    assert len(cs) > 0
+def test_ripk_edge():
+    """Test edge cases."""
+    points = np.random.default_rng(42).normal(0, 1, 100)
+    window = np.random.default_rng(42).normal(0, 1, 100)
+    r = 10
+    result = ripley_k_function(points, window, r)
+    assert isinstance(result, dict)

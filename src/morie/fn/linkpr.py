@@ -1,4 +1,4 @@
-"""Link prediction (common neighbors / Adamic-Adar)."""
+"""Link prediction (CN, AA, RA)."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,9 +8,9 @@ __all__ = ["link_prediction"]
 
 def link_prediction(G, u, v, method):
     """
-    Link prediction (common neighbors / Adamic-Adar)
+    Link prediction (CN, AA, RA)
 
-    Formula: score = sum 1/log(deg(z))
+    Formula: common neighbors / Adamic-Adar / resource alloc
 
     Parameters
     ----------
@@ -30,14 +30,14 @@ def link_prediction(G, u, v, method):
 
     References
     ----------
-    Adamic-Adar (2003); Liben-Nowell-Kleinberg (2007)
+    Liben-Nowell-Kleinberg (2007)
     """
     G = np.atleast_1d(np.asarray(G, dtype=float))
     n = len(G)
     result = float(np.mean(G))
     se = float(np.std(G, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Link prediction (common neighbors / Adamic-Adar)"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Link prediction (CN, AA, RA)"})
 
 
 def cheatsheet():
-    return "linkpr: Link prediction (common neighbors / Adamic-Adar)"
+    return "linkPr: Link prediction (CN, AA, RA)"

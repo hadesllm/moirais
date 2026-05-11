@@ -1,4 +1,4 @@
-"""Tests for linkpr.link_prediction."""
+"""Tests for linkPr.link_prediction."""
 import numpy as np
 import pytest
 from morie.fn.linkpr import link_prediction

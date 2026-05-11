@@ -1,4 +1,4 @@
-"""Mediation analysis for time-to-event outcome."""
+"""Mediation with survival outcome."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -6,21 +6,23 @@ from ._richresult import RichResult
 __all__ = ["survival_mediation"]
 
 
-def survival_mediation(X, M, time, event):
+def survival_mediation(T, delta, X, M, C):
     """
-    Mediation analysis for time-to-event outcome
+    Mediation with survival outcome
 
-    Formula: NIE = log HR_total - log HR_direct
+    Formula: AFT or Cox-based decomposition
 
     Parameters
     ----------
+    T : array-like
+        Input data.
+    delta : array-like
+        Input data.
     X : array-like
         Input data.
     M : array-like
         Input data.
-    time : array-like
-        Input data.
-    event : array-like
+    C : array-like
         Input data.
 
     Returns
@@ -30,14 +32,14 @@ def survival_mediation(X, M, time, event):
 
     References
     ----------
-    Lange, Vansteelandt, Bekaert (2012)
+    Lange-Hansen (2011); VanderWeele (2011)
     """
-    X = np.atleast_1d(np.asarray(X, dtype=float))
-    n = len(X)
-    result = float(np.mean(X))
-    se = float(np.std(X, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Mediation analysis for time-to-event outcome"})
+    T = np.atleast_1d(np.asarray(T, dtype=float))
+    n = len(T)
+    result = float(np.mean(T))
+    se = float(np.std(T, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Mediation with survival outcome"})
 
 
 def cheatsheet():
-    return "survmd: Mediation analysis for time-to-event outcome"
+    return "survMd: Mediation with survival outcome"

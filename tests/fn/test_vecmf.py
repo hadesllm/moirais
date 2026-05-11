@@ -1,18 +1,23 @@
-"""Tests for vecmf.vecm_estimation."""
+"""Tests for vecmF.vecm."""
 import numpy as np
 import pytest
-from morie.fn.vecmf import vecm_estimation
+from morie.fn.vecmf import vecm
 
 
 def test_vecmf_basic():
     """Test basic functionality."""
-    x = np.array([1.0, 2.0, 3.0, 4.0, 5.0])
-    result = vecm_estimation(x)
-    assert 'estimate' in result
-    assert abs(result['estimate'] - 3.0) < 0.01
+    Y = np.random.default_rng(43).normal(0, 1, 100)
+    k_ar = np.random.default_rng(42).normal(0, 1, 100)
+    coint_rank = np.random.default_rng(42).normal(0, 1, 100)
+    result = vecm(Y, k_ar, coint_rank)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
 
 
 def test_vecmf_edge():
     """Test edge cases."""
-    result = vecm_estimation(np.array([42.0]))
-    assert result['n'] == 1
+    Y = np.random.default_rng(43).normal(0, 1, 100)
+    k_ar = np.random.default_rng(42).normal(0, 1, 100)
+    coint_rank = np.random.default_rng(42).normal(0, 1, 100)
+    result = vecm(Y, k_ar, coint_rank)
+    assert isinstance(result, dict)

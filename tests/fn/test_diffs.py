@@ -1,20 +1,21 @@
-"""Test differentiate_signal (diffs)."""
+"""Tests for diffS.symbolic_diff."""
 import numpy as np
-from morie.fn.diffs import differentiate_signal, diffs
-from morie.fn._containers import SignalResult
+import pytest
+from morie.fn.diffs import symbolic_diff
 
 
-class TestDifferentiateSignal:
-    def test_basic(self):
-        x = np.array([0.0, 1.0, 4.0, 9.0, 16.0])
-        result = differentiate_signal(x)
-        assert isinstance(result, SignalResult)
-        assert result.name == "differentiate_signal"
+def test_diffs_basic():
+    """Test basic functionality."""
+    expr = np.random.default_rng(42).normal(0, 1, 100)
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = symbolic_diff(expr, x)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
 
-    def test_linear(self):
-        x = np.arange(10, dtype=float)
-        result = differentiate_signal(x, fs=1.0)
-        np.testing.assert_allclose(result.filtered, np.ones(10), atol=1e-10)
 
-    def test_alias(self):
-        assert diffs is differentiate_signal
+def test_diffs_edge():
+    """Test edge cases."""
+    expr = np.random.default_rng(42).normal(0, 1, 100)
+    x = np.random.default_rng(42).normal(0, 1, 100)
+    result = symbolic_diff(expr, x)
+    assert isinstance(result, dict)

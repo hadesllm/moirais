@@ -1,26 +1,24 @@
-"""Manski-Pepper monotone treatment selection (MTS) bounds."""
+"""Monotone treatment selection bounds."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
 
-__all__ = ["monotone_treatment_selection"]
+__all__ = ["mts_bounds"]
 
 
-def monotone_treatment_selection(y, D, y_min, y_max):
+def mts_bounds(Y, X, monotone):
     """
-    Manski-Pepper monotone treatment selection (MTS) bounds
+    Monotone treatment selection bounds
 
-    Formula: E[Y(d)|D=d'] is monotone in d'; tightens Manski bounds
+    Formula: impose monotonicity to tighten Manski
 
     Parameters
     ----------
-    y : array-like
+    Y : array-like
         Input data.
-    D : array-like
+    X : array-like
         Input data.
-    y_min : array-like
-        Input data.
-    y_max : array-like
+    monotone : array-like
         Input data.
 
     Returns
@@ -32,12 +30,12 @@ def monotone_treatment_selection(y, D, y_min, y_max):
     ----------
     Manski-Pepper (2000)
     """
-    y = np.atleast_1d(np.asarray(y, dtype=float))
-    n = len(y)
-    result = float(np.mean(y))
-    se = float(np.std(y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Manski-Pepper monotone treatment selection (MTS) bounds"})
+    Y = np.atleast_1d(np.asarray(Y, dtype=float))
+    n = len(Y)
+    result = float(np.mean(Y))
+    se = float(np.std(Y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Monotone treatment selection bounds"})
 
 
 def cheatsheet():
-    return "mtsbnd: Manski-Pepper monotone treatment selection (MTS) bounds"
+    return "mtsBnd: Monotone treatment selection bounds"

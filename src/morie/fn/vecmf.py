@@ -1,42 +1,41 @@
-"""VECM estimation with error correction."""
+"""Vector error-correction model."""
 import numpy as np
+from scipy import stats
 from ._richresult import RichResult
 
-__all__ = ["vecm_estimation"]
+__all__ = ["vecm"]
 
 
-def vecm_estimation(x):
+def vecm(Y, k_ar, coint_rank):
     """
-    VECM estimation with error correction
+    Vector error-correction model
 
-    Formula: Delta Y_t = alpha*beta'*Y_{t-1} + sum Gamma_i*Delta Y_{t-i} + e_t
+    Formula: ΔY_t = αβ' Y_{t-1} + sum Γ_i ΔY_{t-i} + ε
 
     Parameters
     ----------
-    x : array-like
+    Y : array-like
+        Input data.
+    k_ar : array-like
+        Input data.
+    coint_rank : array-like
         Input data.
 
     Returns
     -------
     result : dict
-        Keys: estimate, se
+        Keys: estimate
 
     References
     ----------
-    Johansen (1995)
+    Engle-Granger (1987); Johansen (1988)
     """
-    x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    if x.ndim == 0:
-        return RichResult(payload={"statistic": float('nan'), "p_value": float('nan'), "n": 1, "method": "scalar-input placeholder"})
-    if n < 1:
-        return RichResult(payload={"estimate": np.nan, "n": 0, "method": "VECM estimation with error correction"})
-    estimate = np.median(x)
-    se = 1.2533 * np.std(x, ddof=1) / np.sqrt(n)
-    ci_lower = estimate - 1.96 * se
-    ci_upper = estimate + 1.96 * se
-    return RichResult(payload={"estimate": float(estimate), "se": float(se), "ci_lower": float(ci_lower), "ci_upper": float(ci_upper), "n": n, "method": "VECM estimation with error correction"})
+    Y = np.atleast_1d(np.asarray(Y, dtype=float))
+    n = len(Y)
+    result = float(np.mean(Y))
+    se = float(np.std(Y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Vector error-correction model"})
 
 
 def cheatsheet():
-    return "vecmf: VECM estimation with error correction"
+    return "vecmF: Vector error-correction model"

@@ -1,18 +1,19 @@
-"""Tests for morie.fn.ginii."""
+"""Tests for giniI.gini_impurity."""
 import numpy as np
-from morie.fn.ginii import gini_coefficient
+import pytest
+from morie.fn.ginii import gini_impurity
 
 
-def test_ginii_smoke():
-    rng = np.random.default_rng(42)
-    result = gini_coefficient(incomes=rng.uniform(10, 100, size=50))
-    assert result is not None
-    assert hasattr(result, "name")
-    assert result.value is not None or result.extra is not None
+def test_ginii_basic():
+    """Test basic functionality."""
+    class_probs = np.random.default_rng(42).normal(0, 1, 100)
+    result = gini_impurity(class_probs)
+    assert isinstance(result, dict)
+    assert 'estimate' in result or 'statistic' in result
 
 
-def test_cheatsheet():
-    from morie.fn.ginii import cheatsheet
-    cs = cheatsheet()
-    assert isinstance(cs, str)
-    assert len(cs) > 0
+def test_ginii_edge():
+    """Test edge cases."""
+    class_probs = np.random.default_rng(42).normal(0, 1, 100)
+    result = gini_impurity(class_probs)
+    assert isinstance(result, dict)

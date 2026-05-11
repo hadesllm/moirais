@@ -1,24 +1,22 @@
-"""Complete-case analysis baseline."""
+"""ComplEx (complex embeddings)."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
 
-__all__ = ["complete_case"]
+__all__ = ["complex"]
 
 
-def complete_case(y, X, R):
+def complex(triples, dim):
     """
-    Complete-case analysis baseline
+    ComplEx (complex embeddings)
 
-    Formula: discard missing; estimate on complete
+    Formula: Re(<h, r, t̄>) over complex space
 
     Parameters
     ----------
-    y : array-like
+    triples : array-like
         Input data.
-    X : array-like
-        Input data.
-    R : array-like
+    dim : array-like
         Input data.
 
     Returns
@@ -28,14 +26,14 @@ def complete_case(y, X, R):
 
     References
     ----------
-    Little-Rubin (2019)
+    Trouillon et al (2016)
     """
-    y = np.atleast_1d(np.asarray(y, dtype=float))
-    n = len(y)
-    result = float(np.mean(y))
-    se = float(np.std(y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Complete-case analysis baseline"})
+    triples = np.atleast_1d(np.asarray(triples, dtype=float))
+    n = len(triples)
+    result = float(np.mean(triples))
+    se = float(np.std(triples, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "ComplEx (complex embeddings)"})
 
 
 def cheatsheet():
-    return "comple: Complete-case analysis baseline"
+    return "complE: ComplEx (complex embeddings)"

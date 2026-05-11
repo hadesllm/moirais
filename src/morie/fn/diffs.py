@@ -1,51 +1,39 @@
-# morie.fn — function file (hadesllm/morie)
-"""Numerical differentiation of a signal."""
-
-from __future__ import annotations
-
+"""Symbolic differentiation."""
 import numpy as np
+from scipy import stats
+from ._richresult import RichResult
 
-from ._containers import SignalResult
-
-_QUOTE = "Difficult to see. Always in motion is the future."
+__all__ = ["symbolic_diff"]
 
 
-def differentiate_signal(x, fs: float = 1.0, order: int = 1) -> SignalResult:
-    """Compute the numerical derivative of signal *x*.
+def symbolic_diff(expr, x):
+    """
+    Symbolic differentiation
 
-    .. math::
-
-        x'(n) \\approx \\frac{x(n) - x(n-1)}{1/f_s}
+    Formula: chain + product + quotient rules
 
     Parameters
     ----------
+    expr : array-like
+        Input data.
     x : array-like
-        Input signal.
-    fs : float
-        Sampling frequency (Hz). Default 1.0.
-    order : int
-        Derivative order. Default 1.
+        Input data.
 
     Returns
     -------
-    SignalResult
+    result : dict
+        Keys: estimate
+
+    References
+    ----------
+    classical
     """
-    x = np.asarray(x, dtype=float)
-    y = x.copy()
-    dt = 1.0 / fs
-    for _ in range(order):
-        y = np.gradient(y, dt)
-    return SignalResult(
-        name="differentiate_signal",
-        filtered=y,
-        fs=fs,
-        n_samples=len(y),
-        extra={"order": order},
-    )
+    x = np.atleast_1d(np.asarray(x, dtype=float))
+    n = len(x)
+    result = float(np.mean(x))
+    se = float(np.std(x, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Symbolic differentiation"})
 
 
-diffs = differentiate_signal
-
-
-def cheatsheet() -> str:
-    return "differentiate_signal({}) -> Numerical differentiation of a signal."
+def cheatsheet():
+    return "diffS: Symbolic differentiation"

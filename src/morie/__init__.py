@@ -144,6 +144,17 @@ try:
 except ImportError:
     pass
 
+
+try:
+    from .mrm_design import (
+        mrm_two_treatment_test, mrm_anova_oneway,
+        mrm_factorial_2k, mrm_causal_design,
+        TwoTreatmentResult, AnovaOneWayResult,
+        Factorial2kResult, CausalDesignResult,
+    )
+except ImportError:
+    pass
+
 def load_sample(name: str):
     """Load a bundled reference sample CSV by name.
 
@@ -342,6 +353,10 @@ __all__ = [
     "mrm_tps_lisa",
     "mrm_tps_polygon_moran_per_year",
     "LISAResult",
+    "mrm_two_treatment_test",
+    "mrm_anova_oneway",
+    "mrm_factorial_2k",
+    "mrm_causal_design",
     "load_sample",
     "sync_rng",
     "generate_ar_coefficients",

@@ -4,7 +4,7 @@
 
 This page gives a single-glance map of MORIE's class structure and
 the contracts between components. It complements the prose in the
-{doc}`methods/index` reference and the auto-generated {doc}`api/index`.
+{doc}`methods/index` reference and the {doc}`api/index`.
 
 ## The result-container spine
 

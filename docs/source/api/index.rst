@@ -1,7 +1,7 @@
 API Reference
 =============
 
-Auto-generated function and class reference for both languages.
+Function and class reference for both languages.
 
 - :doc:`python` — every public Python module exposed under
   ``morie.*``, with signatures and docstrings extracted by

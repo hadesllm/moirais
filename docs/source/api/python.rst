@@ -3,7 +3,7 @@ Python API
 
 Part of :doc:`index` — MORIE API reference.
 
-Auto-generated reference for every public ``morie.*`` module.
+Reference for every public ``morie.*`` module.
 Signatures and docstrings come from ``sphinx.ext.autodoc``; see
 :doc:`../methods/index` for the methodology behind each function.
 

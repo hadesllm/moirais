@@ -61,37 +61,33 @@ Full documentation is at [hadesllm.github.io/morie](https://hadesllm.github.io/m
 
 ## Citation
 
-If you use MORIE in your research, please cite **the software** and
-**the companion paper** that describes it. Where applicable to your work,
-also cite the MRM framework paper and the Hawkes-process methodology paper.
+If you use morie in your research, please cite **both software papers** (R and Python)
+and, where applicable, the **MRM framework paper** and the **Hawkes methodology paper**.
 
 ```
-# Software (the toolkit itself)
-Ruhela, V. S. (2026). MORIE Toolkit: Methods for Observational Inference
-and Robust Analysis of Interventions in Scientific Experimentation
-(v0.1.2) [Software]. Zenodo.
+# Software paper — R (also the R package source on Zenodo)
+Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
+Estimation in R (v0.1.3). Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
-# Companion paper (introduces the toolkit)
-Ruhela, V. S. (2026). MORIE: A Multi-Domain Scientific Computing
-Toolkit for Observational Inference, with Sociolegal, Signal-Processing,
-Cryptographic, and Spatial-Statistics Modules. Zenodo.
+# Software paper — Python (also the Python package source on Zenodo)
+Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
+Estimation in Python (v0.1.3). Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
-# MRM framework paper
-Ruhela, V. S. (2026). The MRM Framework: A Multi-Source Statistical
-Foundation for Canadian Carceral, Police, and Oversight Data, Implemented
-as MRM Modules in MORIE. Zenodo.
+# MRM framework paper (theoretical foundations)
+Ruhela, V. S. (2026). MRM Framework: Multi-Source Statistical Foundation
+for Canadian Carceral, Police, and Oversight Data (v1). Zenodo.
 https://doi.org/10.5281/zenodo.20096075
 
 # Hawkes-process methodology paper
-Ruhela, V. S. (2026). Criminological Hawkes Process via MORIE:
-Markovian and Non-Markovian Self-Exciting Point Processes for Toronto
-Crime. Zenodo.
-https://doi.org/10.5281/zenodo.20102198
+Ruhela, V. S. (2026). Criminological Hawkes Process via MORIE: Markovian
+and Non-Markovian Self-Exciting Point Processes for Toronto Crime (v1).
+Zenodo. https://doi.org/10.5281/zenodo.20102198
 ```
 
 See [`CITATION.cff`](https://github.com/hadesllm/morie/blob/main/CITATION.cff) for machine-readable citation metadata.
+
 
 ## Acknowledgments
 

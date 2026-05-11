@@ -18,21 +18,21 @@ MORIE — Multi-domain Open Research and Inferential Estimation
    :target: https://hadesllm.r-universe.dev/morie
    :alt: r-universe
 
-.. image:: https://img.shields.io/badge/Software_DOI-10.5281%2Fzenodo.20111233-blue
+.. image:: https://img.shields.io/badge/DOI%20%C2%B7%20morie%20R-10.5281%2Fzenodo.20111233-blue?logo=zenodo&logoColor=white
    :target: https://doi.org/10.5281/zenodo.20111233
-   :alt: Software DOI 10.5281/zenodo.20111233
+   :alt: DOI - morie R - 10.5281/zenodo.20111233
 
-.. image:: https://img.shields.io/badge/MORIE_paper_DOI-10.5281%2Fzenodo.20096350-blue
+.. image:: https://img.shields.io/badge/DOI%20%C2%B7%20morie%20Python-10.5281%2Fzenodo.20096350-blue?logo=zenodo&logoColor=white
    :target: https://doi.org/10.5281/zenodo.20096350
-   :alt: MORIE paper DOI 10.5281/zenodo.20096350
+   :alt: DOI - morie Python - 10.5281/zenodo.20096350
 
-.. image:: https://img.shields.io/badge/MRM_paper_DOI-10.5281%2Fzenodo.20096075-blue
+.. image:: https://img.shields.io/badge/MRM_paper-10.5281%2Fzenodo.20096075-2ea44f?logo=zenodo&logoColor=white
    :target: https://doi.org/10.5281/zenodo.20096075
-   :alt: MRM paper DOI 10.5281/zenodo.20096075
+   :alt: MRM paper - 10.5281/zenodo.20096075
 
-.. image:: https://img.shields.io/badge/Hawkes_paper_DOI-10.5281%2Fzenodo.20102198-blue
+.. image:: https://img.shields.io/badge/Hawkes_paper-10.5281%2Fzenodo.20102198-2ea44f?logo=zenodo&logoColor=white
    :target: https://doi.org/10.5281/zenodo.20102198
-   :alt: Hawkes paper DOI 10.5281/zenodo.20102198
+   :alt: Hawkes paper - 10.5281/zenodo.20102198
 
 A dual-language (Python + R) multi-domain scientific computing toolkit for
 observational inference, with sociolegal, signal-processing, cryptographic,

@@ -1,7 +1,7 @@
 MORIE — Multi-domain Open Research and Inferential Estimation
 =============================================================
 
-.. image:: https://img.shields.io/badge/license-GPL--2.0-blue.svg
+.. image:: https://img.shields.io/badge/license-GPL--2.0-d97706.svg
    :alt: License: GPL-2.0
 
 .. image:: https://img.shields.io/badge/python-3.10%2B-blue.svg
@@ -18,19 +18,19 @@ MORIE — Multi-domain Open Research and Inferential Estimation
    :target: https://hadesllm.r-universe.dev/morie
    :alt: r-universe
 
-.. image:: https://img.shields.io/badge/DOI%20%C2%B7%20morie%20R-10.5281%2Fzenodo.20111233-blue?logo=zenodo&logoColor=white
+.. image:: https://img.shields.io/badge/DOI%20%C2%B7%20morie%20R-10.5281%2Fzenodo.20111233-0d9488?logo=zenodo&logoColor=white
    :target: https://doi.org/10.5281/zenodo.20111233
    :alt: DOI - morie R - 10.5281/zenodo.20111233
 
-.. image:: https://img.shields.io/badge/DOI%20%C2%B7%20morie%20Python-10.5281%2Fzenodo.20096350-blue?logo=zenodo&logoColor=white
+.. image:: https://img.shields.io/badge/DOI%20%C2%B7%20morie%20Python-10.5281%2Fzenodo.20096350-7c3aed?logo=zenodo&logoColor=white
    :target: https://doi.org/10.5281/zenodo.20096350
    :alt: DOI - morie Python - 10.5281/zenodo.20096350
 
-.. image:: https://img.shields.io/badge/MRM_paper-10.5281%2Fzenodo.20096075-2ea44f?logo=zenodo&logoColor=white
+.. image:: https://img.shields.io/badge/MRM_paper-10.5281%2Fzenodo.20096075-15803d?logo=zenodo&logoColor=white
    :target: https://doi.org/10.5281/zenodo.20096075
    :alt: MRM paper - 10.5281/zenodo.20096075
 
-.. image:: https://img.shields.io/badge/Hawkes_paper-10.5281%2Fzenodo.20102198-2ea44f?logo=zenodo&logoColor=white
+.. image:: https://img.shields.io/badge/Hawkes_paper-10.5281%2Fzenodo.20102198-be123c?logo=zenodo&logoColor=white
    :target: https://doi.org/10.5281/zenodo.20102198
    :alt: Hawkes paper - 10.5281/zenodo.20102198
 

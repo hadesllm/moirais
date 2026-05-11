@@ -1,3 +1,39 @@
+# morie 0.1.15 — 2026-05-11
+
+* Adds the MRM empirical-paper callables: `mrm_otis_*` (5 fns, OTIS),
+  `mrm_tps_*` (4 fns, TPS), `mrm_siu_*` (3 fns, SIU), plus
+  `mrm_tps_kulldorff_scan` (space-time scan with MC permutations).
+  All have R + Python parity.
+* Adds dataset fetchers: `fetch_tps_category` (ArcGIS REST) and
+  `fetch_siu_cases` (on-demand scraper for the Ontario SIU public
+  Director's Reports). OTIS CKAN resource IDs registered for
+  a01/b01/b09/c11; loadable via `morie_load_dataset()`.
+* Adds 4 bundled reference samples in `inst/extdata/` (random
+  1000-row b01 + b09 + c11 + tps_assault, ~420 KB total) so the
+  examples run offline.
+* Adds `simulate_longitudinal_panel()` — clean-room VAR(L) panel
+  simulator with structured covariance kernels.
+* Adds a GPL-2.0-only signaling layer: SPDX headers on every new
+  source file, `check_plugin_license()` runtime guard, optional
+  out-of-tree kernel module (`kernel-module/morie.c`), optional
+  userspace audit daemon (`daemon/morie_lsm.py`).
+* Adds an animated demo: `python -m morie.demo` showcases every
+  new callable end-to-end on the bundled samples with rich-based
+  spinners + progress bars (DoubleML / Optuna style).
+* 5 companion papers updated and verified against the new
+  callables: morie-empirical-paper §6 + §7.1-§7.11 every numeric
+  claim verified (15 verification text files in `results/`).
+  Corrections shipped: Hill α 1.62 → 2.08; SDB 22% → 57%; Hawkes
+  Gamma → Weibull (hawkes-paper abstract typo); KM TTR 210 days
+  → flagged as ID-misreading artefact (actual SIU TTR is 120 days);
+  LISA Assault 2024 quadrants 47/5/4/44 → verified 19/13/17/52.
+* License declarations harmonised to `GPL-2.0-only` SPDX (matching
+  the Linux kernel convention) across `CITATION.cff`, `pyproject.toml`,
+  both `DESCRIPTION` files, `LICENSING.md`, README, kernel module.
+* Removed "Auto-generated" wording from 6 Sphinx documentation pages
+  per user preference; `python -m sphinx` rebuilds with cleaner intro
+  prose for the API reference pages.
+
 # morie 0.1.2
 
 * Initial CRAN submission.

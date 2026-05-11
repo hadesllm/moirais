@@ -1,6 +1,6 @@
 {
-  "title": "MORIE: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation",
-  "description": "MORIE is an open-source Python and R package for the analysis of Canadian carceral, police, and oversight data. It implements the DLRM (Doob-Levinsky-Ruhela-Medina) framework as a set of RF modules, spanning provincial OTIS restrictive-confinement microdata, federal Structured Intervention Unit (SIU) reports, the Ontario Special Investigations Unit (Ontario SIU) automated scraper, the Toronto Police Service (TPS) open-data crime categories, the Statistics Canada Crime Severity Index (CSI), and the federal Corrections and Conditional Release Statistical Overview (CCRSO). The framework includes a 10-estimator per-individual causal ensemble (IPW, AIPW, IRM-DML, PSM, PSM-subclassification, AIPW-SuperLearner, PLR), an aggregate IRR family with a GEE clustering grid for high-cardinality groupings, a Doob chi-square family for aggregate contingency tables, a Mandela Rules classifier that operates at both federal (full operationalization) and provincial (duration-only proxy) levels, a Goffmanian institutional-churn analysis suite, a stochastic-physics-of-crime stack (Hawkes self-exciting process with exponential / gamma / Weibull / Lomax kernels, reaction-diffusion, Levy flight, urban scaling, Lotka-Volterra), and an automated scraper for the Ontario SIU director's-report corpus.",
+  "title": "MORIE: Multi-domain Open Research and Inferential Estimation",
+  "description": "MORIE is an open-source Python and R toolkit for the analysis of Canadian carceral, police, and oversight data. It implements the MRM (McNamara-Ruhela-Medina) framework, including: a 10-estimator per-individual causal ensemble (IPW, AIPW, IRM-DML, PSM, PSM-subclassification, AIPW-SuperLearner, PLR); an aggregate IRR family with a GEE clustering grid for high-cardinality groupings; a Doob chi-square family for aggregate contingency tables; a Mandela Rules classifier that operates at both federal (full operationalization) and provincial (duration-only proxy) levels; a Goffmanian institutional-churn analysis suite; and a stochastic-physics-of-crime stack (Hawkes self-exciting process with exponential, gamma, Weibull, Lomax kernels; reaction-diffusion; Levy flight; urban scaling; Lotka-Volterra). v0.1.15 adds the OTIS/TPS/SIU mrm_* empirical callables (Hill / Gini / Cramer V / Kulldorff space-time scan / LISA quadrants / case-to-decision KM), an ArcGIS REST fetcher for Toronto Police open data, an on-demand scraper for the Ontario SIU Director's Reports, four bundled reference samples, a longitudinal-panel simulator, an animated demo entrypoint (python -m morie.demo), and a GPL-2.0-only signaling layer (SPDX headers, runtime license guard, optional kernel-module + LSM-style audit daemon).",
   "creators": [
     {
       "name": "Ruhela, Vansh Singh",
@@ -26,7 +26,7 @@
     "GEE",
     "Hawkes process",
     "Goffmanian churn",
-    "DLRM",
+    "MRM",
     "RF modules",
     "Python",
     "R"
@@ -54,5 +54,6 @@
     "VanderWeele, T. J., & Ding, P. (2017). Sensitivity analysis in observational research: Introducing the E-value. Annals of Internal Medicine, 167(4), 268-274.",
     "Goffman, E. (1961). Asylums: Essays on the Social Situation of Mental Patients and Other Inmates. Anchor Books."
   ],
-  "notes": "MORIE is composed of distinct license tiers per memory: analytical modules MIT/Apache (clew MIT/Apache for adoption); MORIE itself follows GPL-2.0-only (Linus copyleft; see LICENSE); the Ontario SIU scraper is additionally subject to the Ontario open-government licence on the source corpus."
+  "notes": "MORIE is composed of distinct license tiers per memory: analytical modules MIT/Apache (clew MIT/Apache for adoption); MORIE itself follows GPL-2.0-only (Linus copyleft; see LICENSE); the Ontario SIU scraper is additionally subject to the Ontario open-government licence on the source corpus.",
+  "version": "0.1.15"
 }

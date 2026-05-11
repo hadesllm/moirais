@@ -104,8 +104,8 @@ cat("diagonal share:", res$diagonal_share, "  V:", res$cramers_v, "\n")
 
 ## Mandela classification
 
-`mrm_classify_mandela()` is shipped from v0.1.14. It supports three
-operationalisations:
+`mrm_classify_mandela()` shipped in v0.1.14 and remains the canonical
+Mandela classifier in v0.1.15. It supports three operationalisations:
 
 ```{r mandela}
 mrm_classify_mandela(b01, denominator = "row")           # per-placement

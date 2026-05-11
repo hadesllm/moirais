@@ -155,6 +155,33 @@ try:
 except ImportError:
     pass
 
+try:
+    from .mrm_diagnostics import (
+        mrm_standardised_difference, mrm_check_balancing,
+        mrm_check_overlap, mrm_median_causal_effect,
+        mrm_assumptions_check,
+    )
+except ImportError:
+    pass
+
+try:
+    from .mrm_mathstats import (
+        mrm_oneprop_test, mrm_twoprop_test, mrm_var_test,
+        mrm_qq_plot, mrm_clt_demo, mrm_pit,
+    )
+except ImportError:
+    pass
+
+try:
+    from .mrm_doe import (
+        mrm_anova_bonferroni, mrm_rcbd, mrm_latin_square,
+        mrm_graeco_latin, mrm_fractional_factorial,
+        mrm_response_surface, mrm_anova_power, mrm_mc_power,
+        mrm_perm_block, mrm_random_latin,
+    )
+except ImportError:
+    pass
+
 def load_sample(name: str):
     """Load a bundled reference sample CSV by name.
 
@@ -357,6 +384,30 @@ __all__ = [
     "mrm_anova_oneway",
     "mrm_factorial_2k",
     "mrm_causal_design",
+    # Tier 1 diagnostics
+    "mrm_standardised_difference",
+    "mrm_check_balancing",
+    "mrm_check_overlap",
+    "mrm_median_causal_effect",
+    "mrm_assumptions_check",
+    # Tier 2 math-stats
+    "mrm_oneprop_test",
+    "mrm_twoprop_test",
+    "mrm_var_test",
+    "mrm_qq_plot",
+    "mrm_clt_demo",
+    "mrm_pit",
+    # Tier 3 DOE
+    "mrm_anova_bonferroni",
+    "mrm_rcbd",
+    "mrm_latin_square",
+    "mrm_graeco_latin",
+    "mrm_fractional_factorial",
+    "mrm_response_surface",
+    "mrm_anova_power",
+    "mrm_mc_power",
+    "mrm_perm_block",
+    "mrm_random_latin",
     "load_sample",
     "sync_rng",
     "generate_ar_coefficients",

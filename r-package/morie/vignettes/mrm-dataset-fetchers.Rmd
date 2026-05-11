@@ -1,0 +1,194 @@
+---
+title: "MRM dataset fetchers and bundled samples"
+output:
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{MRM dataset fetchers and bundled samples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  eval     = requireNamespace("morie", quietly = TRUE)
+)
+```
+
+# Overview
+
+The MRM empirical callables (`mrm_otis_*`, `mrm_tps_*`,
+`mrm_siu_*`) operate on three external data sources. This vignette
+documents how `morie` makes each of them accessible to end users:
+
+* **OTIS** (Ontario Tracking Information System) — public CKAN
+  release on `data.ontario.ca`, reached via the existing
+  `morie_load_dataset()` infrastructure.
+* **TPS** (Toronto Police Service) — public ArcGIS Open Data, reached
+  via `morie_fetch_tps()`.
+* **SIU** (Ontario Special Investigations Unit) — public Director's
+  Reports, scraped on demand by `morie_fetch_siu()` (the corpus is
+  not shipped because redistribution licensing is unsettled).
+
+Four small reference samples are bundled with the package
+(`inst/extdata/`) so every example runs offline.
+
+```{r intro}
+library(morie)
+```
+
+# Bundled reference samples
+
+The samples live in `inst/extdata/` and total ~420 KB. Each is a
+1000-row random draw (seed 42) except `otis_b09` and `otis_c11`,
+which are shipped whole (already small).
+
+```{r samples}
+# Bundled samples
+b01 <- morie_sample("otis_b01")
+b09 <- morie_sample("otis_b09")
+c11 <- morie_sample("otis_c11")
+tps <- morie_sample("tps_assault")
+
+# Schema sanity
+str(b01, max.level = 1)
+nrow(b09); nrow(c11)
+ncol(tps)
+```
+
+# OTIS via CKAN (`data.ontario.ca`)
+
+The OTIS public release is hosted at
+`data.ontario.ca/dataset/data-on-inmates-in-ontario` as 28 CSV
+resources. The MORIE catalog has four of them registered with their
+canonical CKAN resource IDs:
+
+```{r otis-keys}
+cat <- morie_dataset_catalog()
+cat[cat$source == "otis", c("key", "name", "table_name", "ckan_resource_id")]
+```
+
+To pull the full b01 (82,001 rows) from CKAN:
+
+```{r otis-load, eval = FALSE}
+b01_full <- morie_load_dataset("otisb01")
+nrow(b01_full)
+# 82001
+```
+
+The loader downloads the CSV on first call, caches it into the
+package SQLite database, and returns a data.frame on subsequent
+calls.
+
+# TPS via ArcGIS Open Data
+
+Toronto Police Service publishes per-category crime events through
+ArcGIS Online. MORIE knows the layer URLs for nine categories.
+
+```{r tps-urls}
+morie_tps_layer_urls()
+```
+
+To fetch a single category:
+
+```{r tps-fetch, eval = FALSE}
+csv_path <- morie_fetch_tps("Assault")
+assault <- utils::read.csv(csv_path)
+nrow(assault)
+# 254378 (as of mid-2026)
+```
+
+The fetcher pages through `/query` with a 2000-record-per-page cap
+(the ArcGIS-imposed maximum) and writes a tidy CSV to
+`~/.cache/morie/tps/tps_Assault.csv`. Subsequent calls return the
+cached path unless `overwrite = TRUE`.
+
+Filtering at the server side:
+
+```{r tps-filter, eval = FALSE}
+recent <- morie_fetch_tps("Homicides",
+                          where = "OCC_YEAR >= 2024",
+                          overwrite = TRUE)
+```
+
+# SIU via on-demand scraper
+
+The Ontario SIU publishes Director's Reports at
+`siu.on.ca/en/case_directors_reports.php`. MORIE includes an
+on-demand scraper that:
+
+* Iterates over the index page(s) (optionally filtered by year)
+* Extracts case links
+* Pulls each case detail page
+* Parses incident date, notifying police service, Director's
+  decision, and outcome text into a single CSV
+
+```{r siu, eval = FALSE}
+csv_path <- morie_fetch_siu()       # full unfiltered index
+siu <- utils::read.csv(csv_path)
+nrow(siu)
+
+# Or restricted to specific years:
+csv_path <- morie_fetch_siu(years = 2020:2025, overwrite = TRUE)
+```
+
+## Why a scraper rather than a shipped dataset?
+
+The legal status of redistributing a single tabular copy of public
+oversight reports is not clearly established. Running the scraper
+per-user is unambiguously fair use of public information; bundling
+the scraped corpus might be more questionable. The scraper itself
+respects a 2-second rate limit, sets a clear User-Agent, and follows
+the SIU site's published structure.
+
+## R-side wrapper, Python-side implementation
+
+`morie_fetch_siu()` in R is a thin `reticulate` wrapper around
+`morie.siu_fetch.fetch_siu_cases()` in Python. This keeps the regex
+parsing logic in one canonical place. If `reticulate` isn't
+installed, fall back to calling the Python directly:
+
+```{bash, eval = FALSE}
+python3 -c "from morie.siu_fetch import fetch_siu_cases; print(fetch_siu_cases())"
+```
+
+# Workflow: from bundled sample to verified result
+
+Putting it together — a complete worked example without any network
+call:
+
+```{r workflow}
+b01 <- morie_sample("otis_b01")
+
+# Mandela classification with default "individual_any" denominator
+mrm_classify_mandela(b01, denominator = "row")
+
+# Segregation duration KM
+mrm_otis_seg_duration_km(b01,
+                         group_cols = "MentalHealth_Alert")
+
+# Mortification co-occurrence: Cramer's V across alert pairs
+mrm_otis_mortification_cooccurrence(b01)
+```
+
+For a full-data version, swap `morie_sample("otis_b01")` for
+`morie_load_dataset("otisb01")` and re-run the same callables.
+
+# Caching layout
+
+| Cache path | Populated by | Size (full) |
+|---|---|---|
+| `~/.cache/morie/morie.db` (SQLite) | `morie_load_dataset(*)` | a few MB to ~1 GB depending on selection |
+| `~/.cache/morie/tps/tps_*.csv` | `morie_fetch_tps()` | ~5--50 MB per category |
+| `~/.cache/morie/siu/SIU.csv` | `morie_fetch_siu()` | ~5 MB |
+
+# References
+
+* OTIS data dictionary —
+  `data.ontario.ca/dataset/data-on-inmates-in-ontario`
+* Toronto Police Open Data — `data.torontopolice.on.ca/`
+* SIU Director's Reports — `siu.on.ca/en/case_directors_reports.php`
+* MRM theoretical paper — Zenodo DOI
+  [10.5281/zenodo.20096075](https://doi.org/10.5281/zenodo.20096075)

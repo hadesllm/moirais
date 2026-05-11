@@ -1,7 +1,7 @@
 Package: moirais
 Type: Package
 Title: Deprecated Alias for the 'morie' Package
-Version: 0.1.14
+Version: 0.1.15
 Authors@R: c(
   person(
     given = "Vansh Singh",
@@ -15,7 +15,7 @@ Author: Vansh Singh Ruhela [aut, cre] (<https://orcid.org/0009-0004-1750-3592>)
 Maintainer: Vansh Singh Ruhela <hadesllm@proton.me>
 Description: Backwards-compatibility shim for the package previously
   published as 'moirais'. The toolkit was renamed to 'morie' in version
-  0.1.14. Loading 'moirais' attaches 'morie' and emits a one-time
+  0.1.15. Loading 'moirais' attaches 'morie' and emits a one-time
   deprecation message; all functionality is provided by 'morie'.
   This shim is intended only to keep existing scripts working; new
   code should depend on 'morie' directly. The 'morie' package is
@@ -28,6 +28,6 @@ Encoding: UTF-8
 Depends:
   R (>= 4.3.0)
 Suggests:
-  morie (>= 0.1.14)
+  morie (>= 0.1.15)
 URL: https://github.com/hadesllm/morie
 BugReports: https://github.com/hadesllm/morie/issues

@@ -1,7 +1,7 @@
 Package: morie
 Type: Package
 Title: Multi-domain Open Research and Inferential Estimation
-Version: 0.1.14
+Version: 0.1.15
 Authors@R: c(
   person(
     given = "Vansh Singh",
@@ -55,6 +55,8 @@ Suggests:
   DoubleML,
   mlr3,
   mlr3learners,
+  dbscan,
+  reticulate,
   testthat (>= 3.0.0),
   knitr,
   rmarkdown

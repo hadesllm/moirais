@@ -106,7 +106,7 @@ What MORIE does
 
 A unified Python + R interface across the following surfaces. See
 :doc:`methods/index` for methodology details and :doc:`api/index`
-for auto-generated function reference.
+for function reference.
 
 **Causal estimators**
   ATE, ATT, ATC, GATE, CATE (T- / S-learner), LATE (2SLS / Wald),
@@ -292,7 +292,7 @@ navigation, every page on this site is listed below — top to bottom:
   causal estimators, survey statistics, spatial methods, Hawkes
   processes, statistical physics of crime, OTIS / TPS / SIU
   pipelines, the MRM framework, key empirical findings.
-- :doc:`api/index` — Auto-generated Python and R API reference
+- :doc:`api/index` — Python and R API reference
   (function signatures and docstrings).
 - :doc:`contributing` — Development setup, test conventions,
   module-addition guide.

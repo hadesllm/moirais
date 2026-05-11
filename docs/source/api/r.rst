@@ -3,7 +3,7 @@ R API
 
 Part of :doc:`index` — MORIE API reference.
 
-Auto-generated reference for every public function exported by the
+Reference for every public function exported by the
 ``morie`` R package. Signatures and descriptions come from the
 Roxygen2 ``.Rd`` files in ``r-package/morie/man/``; see
 :doc:`../methods/index` for the methodology behind each function.

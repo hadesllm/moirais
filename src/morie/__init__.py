@@ -6,7 +6,7 @@ autoresearch venv) without requiring sklearn, httpx, textual, or other
 optional dependencies.
 """
 
-__version__ = "0.1.14"
+__version__ = "0.1.15"
 
 # --- Guarded eager imports — fail gracefully in minimal envs ---
 # In a full morie install these all succeed and populate the namespace.
@@ -56,6 +56,101 @@ try:
     from .ebac import calculate_ebac, is_over_legal_limit
 except ImportError:
     pass
+
+try:
+    from .mrm_otis import (
+        mrm_otis_placement_concentration,
+        mrm_otis_seg_duration_km,
+        mrm_otis_mortification_cooccurrence,
+        mrm_otis_region_locality,
+    )
+except ImportError:
+    pass
+
+try:
+    from .mrm_tps import (
+        mrm_tps_levy_scaling,
+        mrm_tps_moran_clustering,
+        mrm_tps_neighbourhood_recurrence_km,
+        mrm_tps_load_hawkes_refit,
+    )
+except ImportError:
+    pass
+
+try:
+    from .mrm_siu import (
+        mrm_siu_case_to_decision_km,
+        mrm_siu_per_service_rate,
+        mrm_siu_outcome_classifier,
+    )
+except ImportError:
+    pass
+
+try:
+    from .tps_fetch import (
+        TPS_LAYER_URLS,
+        fetch_tps_category,
+        list_tps_categories,
+    )
+except ImportError:
+    pass
+
+try:
+    from .siu_fetch import (
+        SIU_INDEX_URL,
+        fetch_siu_cases,
+        siu_cache_path,
+    )
+except ImportError:
+    pass
+
+
+
+try:
+    from .longitudinal_sim import (
+        sync_rng,
+        generate_ar_coefficients,
+        generate_var_coefficients,
+        mvn_with_covariance,
+        simulate_longitudinal_panel,
+        LongitudinalSimSpec,
+    )
+except ImportError:
+    pass
+
+try:
+    from .mrm_kulldorff import mrm_tps_kulldorff_scan, ScanCluster
+except ImportError:
+    pass
+
+try:
+    from ._license_check import (
+        GPL_COMPATIBLE_LICENSES,
+        check_plugin_license,
+        morie_license_metadata,
+    )
+except ImportError:
+    pass
+
+def load_sample(name: str):
+    """Load a bundled reference sample CSV by name.
+
+    Available samples: 'otis_b01', 'otis_b09', 'otis_c11', 'tps_assault'.
+    The OTIS samples are taken from the public Ontario Data Catalogue
+    release; the TPS sample is taken from Toronto Police Open Data.
+    """
+    import pandas as pd
+    from pathlib import Path
+    here = Path(__file__).parent / "data" / "samples"
+    files = {
+        "otis_b01": "otis_b01_sample.csv",
+        "otis_b09": "otis_b09_sample.csv",
+        "otis_c11": "otis_c11_sample.csv",
+        "tps_assault": "tps_assault_sample.csv",
+    }
+    if name not in files:
+        raise KeyError(f"Unknown sample {name!r}; choices: {list(files)}")
+    return pd.read_csv(here / files[name])
 
 try:
     from .effects import estimate_ate
@@ -211,6 +306,38 @@ __all__ = [
     "suggest_analysis_plan",
     "validate_cpads_frame",
     "verify_statistical_output",
+    # MRM-framework empirical analyses
+    "mrm_otis_placement_concentration",
+    "mrm_otis_seg_duration_km",
+    "mrm_otis_mortification_cooccurrence",
+    "mrm_otis_region_locality",
+    "mrm_tps_levy_scaling",
+    "mrm_tps_moran_clustering",
+    "mrm_tps_neighbourhood_recurrence_km",
+    "mrm_tps_load_hawkes_refit",
+    "mrm_siu_case_to_decision_km",
+    "mrm_siu_per_service_rate",
+    "mrm_siu_outcome_classifier",
+    # Dataset fetchers (on-demand download/scrape)
+    "TPS_LAYER_URLS",
+    "fetch_tps_category",
+    "list_tps_categories",
+    "SIU_INDEX_URL",
+    "fetch_siu_cases",
+    "siu_cache_path",
+    "load_sample",
+    "sync_rng",
+    "generate_ar_coefficients",
+    "generate_var_coefficients",
+    "mvn_with_covariance",
+    "simulate_longitudinal_panel",
+    "LongitudinalSimSpec",
+    "mrm_tps_kulldorff_scan",
+    "ScanCluster",
+    "GPL_COMPATIBLE_LICENSES",
+    "check_plugin_license",
+    "morie_license_metadata",
+
     # New modules (import via morie.viz, morie.tables_pub, etc.)
     "viz",
     "tables_pub",

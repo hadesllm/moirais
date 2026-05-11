@@ -6,14 +6,14 @@
 
 A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the MRM framework as a primary application for Canadian carceral, police, and oversight data analysis.
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-d97706.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/morie.svg)](https://pypi.org/project/morie/)
 [![r-universe](https://img.shields.io/badge/r--universe-hadesllm-276DC3)](https://hadesllm.r-universe.dev/morie)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Software DOI](https://img.shields.io/badge/Software_DOI-10.5281%2Fzenodo.20111233-blue)](https://doi.org/10.5281/zenodo.20111233)
-[![MORIE paper DOI](https://img.shields.io/badge/MORIE_paper_DOI-10.5281%2Fzenodo.20096350-blue)](https://doi.org/10.5281/zenodo.20096350)
-[![MRM paper DOI](https://img.shields.io/badge/MRM_paper_DOI-10.5281%2Fzenodo.20096075-blue)](https://doi.org/10.5281/zenodo.20096075)
-[![Hawkes paper DOI](https://img.shields.io/badge/Hawkes_paper_DOI-10.5281%2Fzenodo.20102198-blue)](https://doi.org/10.5281/zenodo.20102198)
+[![DOI · morie R](https://img.shields.io/badge/DOI%20%C2%B7%20morie%20R-10.5281%2Fzenodo.20111233-0d9488?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20111233)
+[![DOI · morie Python](https://img.shields.io/badge/DOI%20%C2%B7%20morie%20Python-10.5281%2Fzenodo.20096350-7c3aed?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20096350)
+[![MRM paper](https://img.shields.io/badge/MRM_paper-10.5281%2Fzenodo.20096075-15803d?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20096075)
+[![Hawkes paper](https://img.shields.io/badge/Hawkes_paper-10.5281%2Fzenodo.20102198-be123c?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20102198)
 
 ## Installation
 

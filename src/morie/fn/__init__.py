@@ -928,7 +928,7 @@ from .difdt import dif_delta_plot
 from .difef import difef
 from .diffd import diffd
 from .diffl import dif_flag_summary
-from .diffS import symbolic_diff
+from .diffs import symbolic_diff
 from .diffu import heat_diffusion
 from .difgn import difgn
 from .difir import dif_irt_based
@@ -1679,7 +1679,7 @@ from .ghtim import ghtim
 from .ghtrd import ghtrd
 from .gibbs import gibbs_bivariate_normal
 from .gibsp import gibsp
-from .giniI import gini_impurity
+from .ginii import gini_impurity
 from .gkgam import gkgam
 from .gkpw import gkp_witten
 from .gl1 import gl1
@@ -2130,7 +2130,7 @@ from .isidx import isidx
 from .isisz import isi_analyze
 from .ismul import ismul
 from .isngm import isngm
-from .isoF import isolation_forest
+from .isof import isolation_forest
 from .isomp import isomap
 from .isorg import isotonic_regression
 from .isown import isown
@@ -3677,7 +3677,7 @@ from .ridge import ridge_regression
 from .ridgx import ridge_extract
 from .ridlr import cipher_frequency
 from .rinsp import rinsp
-from .ripK import ripley_k_function
+from .ripk import ripley_k_function
 from .rirr import rirr
 from .risdt import rise_time_detect
 from .rk4 import runge_kutta4

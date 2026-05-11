@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# =============================================================================
+# moirais — DEPRECATED alias for the renamed `morie` CLI.
+# =============================================================================
+# This script exists for backwards compatibility only. The toolkit was
+# renamed from MOIRAIS to MORIE in v0.1.3; please update your scripts
+# to invoke `morie` directly. This wrapper will be removed in a future
+# release.
+# =============================================================================
+
+set -euo pipefail
+
+# Emit deprecation notice on stderr so piped consumers stay clean.
+if [ -t 2 ]; then
+  printf >&2 '\033[33m[deprecation]\033[0m moirais was renamed to morie in v0.1.3; please use `morie` directly.\n'
+fi
+
+# Resolve `morie` relative to this script first, then fall through to PATH.
+self_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+if [ -x "${self_dir}/morie" ]; then
+  exec "${self_dir}/morie" "$@"
+fi
+
+if command -v morie >/dev/null 2>&1; then
+  exec morie "$@"
+fi
+
+printf >&2 'moirais: companion `morie` executable not found. Install morie first.\n'
+exit 127

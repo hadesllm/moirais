@@ -80,10 +80,10 @@ Changelog     = "https://github.com/hadesllm/morie/releases"
 "Download"    = "https://pypi.org/project/morie/#files"
 "R package"   = "https://hadesllm.r-universe.dev/morie"
 "Container (GHCR)" = "https://github.com/hadesllm/morie/pkgs/container/morie"
-"Software (Zenodo)"               = "https://doi.org/10.5281/zenodo.20111233"
-"MORIE paper (Zenodo)"            = "https://doi.org/10.5281/zenodo.20096350"
-"MRM framework paper (Zenodo)"    = "https://doi.org/10.5281/zenodo.20096075"
-"Hawkes process paper (Zenodo)"   = "https://doi.org/10.5281/zenodo.20102198"
+"Software"                       = "https://doi.org/10.5281/zenodo.20111233"
+"MORIE paper"                    = "https://doi.org/10.5281/zenodo.20096350"
+"MRM framework paper"            = "https://doi.org/10.5281/zenodo.20096075"
+"Hawkes process paper"           = "https://doi.org/10.5281/zenodo.20102198"
 
 [project.optional-dependencies]
 test = [

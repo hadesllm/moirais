@@ -94,12 +94,8 @@ Specifically, MRM inherits from her JMP:
 Her substantive review of the OTIS Major Research Paper insisted on
 quantitatively-grounded sociolegal mechanism, on a negative-binomial
 mixed model with regional-cluster random intercepts as the principal
-aggregate-level estimator, and on a disciplined empirical structure
-(a focused introduction, a four-part policy and literature section,
-a four-part data and measures section, and the removal of
-philosophical digressions in favour of statistical rigour on the
-existing sample). That review directly shapes the methodological
-spine reported here.
+aggregate-level estimator, and on a disciplined empirical structure.
+That review directly shapes the methodology reported here.
 
 Data acknowledgments
 --------------------

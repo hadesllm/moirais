@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sieve prior construction (truncated log-spline / Bernstein basis)."""
 import numpy as np
 from scipy.stats import beta as beta_dist
@@ -39,7 +39,7 @@ def ghosal_sieve_prior(x, K=None):
 
     Parameters
     ----------
-    x : array-like — sample on R.
+    x : array-like -- sample on R.
     K : int or None.
 
     Returns

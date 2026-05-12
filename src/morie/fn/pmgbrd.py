@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PM₂.₅ attributable-burden via GEMM nonlinear RR (Burnett 2018)."""
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ def pm_gemm_burden(
     mu: float | None = None,
     nu: float | None = None,
 ) -> DescriptiveResult:
-    """Compute PM₂.₅ attributable deaths using the Burnett GEMM curve.
+    r"""Compute PM₂.₅ attributable deaths using the Burnett GEMM curve.
 
     Composes ``pm_gemm_rr`` (nonlinear RR) with the classical
     population-attributable-fraction formula and a mortality-rate
@@ -62,7 +62,7 @@ def pm_gemm_burden(
         NCD+LRI all-adults, ~0.008 in Canada (CIHI); use
         outcome-specific rates when analyzing a single disease.
     outcome : str, default "ncd_lri"
-        Which GEMM curve to use — passed through to ``pm_gemm_rr``.
+        Which GEMM curve to use -- passed through to ``pm_gemm_rr``.
     reference_ugm3 : float, default 2.4
         TMREL (theoretical minimum risk exposure level) per
         Burnett 2018.
@@ -81,7 +81,7 @@ def pm_gemm_burden(
     baseline NCD+LRI mortality 0.008:
 
     >>> r = pm_gemm_burden(10.0, 500_000, 0.008)
-    >>> round(r.value, 1)  # low exposure → modest attribution
+    >>> round(r.value, 1)  # low exposure -> modest attribution
     159.1
 
     High-pollution city, 80 µg/m³, 1M people:

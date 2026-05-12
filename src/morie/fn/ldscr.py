@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LD score regression."""
 
 __all__ = ["ldscr"]

@@ -1,4 +1,4 @@
-"""Lora obj.."""
+r"""Lora obj.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch4_lora_obj"]
 
 
 def kamath_ch4_lora_obj(Theta, Phi_0, x, y):
-    """
+    r"""
     Lora obj.
 
     Formula: \max_{\Theta} \sum_{(x,y)\in Z}\sum_{t=1}^{|y|}\log(p_{\Phi_0+\Delta\Phi(\Theta)}(y_t|x,y_{<t}))
@@ -31,7 +31,7 @@ def kamath_ch4_lora_obj(Theta, Phi_0, x, y):
     References
     ----------
     Kamath et al (2024), Ch 4, Eq 4.4, p. 151
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

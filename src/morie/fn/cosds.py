@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cosine distance."""
 
 import numpy as np
@@ -9,7 +9,7 @@ _QUOTE = "Rebellions are built on hope. -- Jyn Erso"
 
 
 def cosine_distance(x, y, **kwargs) -> ESRes:
-    """
+    r"""
     Compute cosine distance d = 1 - cos(x, y).
 
     .. math::

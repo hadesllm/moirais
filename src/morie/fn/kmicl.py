@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """In-context learning conditional probability with K demonstrations."""
 import numpy as np
 from ._richresult import RichResult

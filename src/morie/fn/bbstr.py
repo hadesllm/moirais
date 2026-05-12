@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayesian bootstrap (Rubin). 'That is why you fail.'"""
 
 from __future__ import annotations

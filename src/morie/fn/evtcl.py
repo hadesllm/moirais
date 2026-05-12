@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cluster detected events by morphological similarity."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Our greatest glory is not in never falling, but in rising every time we fall. — Confucius"
+_QUOTE = "Our greatest glory is not in never falling, but in rising every time we fall. -- Confucius"
 
 
 def event_cluster(events, n_clusters=3, **kwargs) -> DescriptiveResult:

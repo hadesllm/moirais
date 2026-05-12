@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Receiver operating characteristic: FPR vs TPR over thresholds."""
 import numpy as np
 from ._richresult import RichResult

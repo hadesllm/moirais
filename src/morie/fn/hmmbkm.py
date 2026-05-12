@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mini-batch k-means: update centers using small random batches."""
 import numpy as np
 from ._richresult import RichResult

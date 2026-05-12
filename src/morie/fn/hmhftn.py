@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hugging Face Trainer API high-level training loop."""
 import numpy as np
 from ._richresult import RichResult

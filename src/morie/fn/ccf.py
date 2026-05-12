@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cross-correlation function between two time series."""
 
 import numpy as np
@@ -10,7 +10,7 @@ def ccf(
     nlags: int = 20,
     alpha: float = 0.05,
 ) -> dict:
-    """
+    r"""
     Cross-correlation function between two time series.
 
     Computes the Pearson correlation between *x* and lagged *y*:

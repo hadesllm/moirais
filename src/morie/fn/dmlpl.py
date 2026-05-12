@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DML Partially Linear Model (PLR)."""
 
 from __future__ import annotations

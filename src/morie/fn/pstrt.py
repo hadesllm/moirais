@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Propensity score stratification. 'You must unlearn what you have learned.'"""
 
 from __future__ import annotations

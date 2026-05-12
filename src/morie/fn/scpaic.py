@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Spatial count model AIC."""
 
 from ._containers import SpatialResult

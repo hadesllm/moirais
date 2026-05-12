@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Recurrent (vanilla RNN) genomic predictor — NumPy."""
+# morie.fn -- function file (hadesllm/morie)
+"""Recurrent (vanilla RNN) genomic predictor -- NumPy."""
 from __future__ import annotations
 
 import numpy as np
@@ -10,7 +10,8 @@ __all__ = ["rnn_genomic"]
 
 
 def rnn_genomic(x, y, markers, hidden: int = 8, n_epochs: int = 150,
-                lr: float = 1e-2, l2: float = 1e-3, seed: int = 0):
+                lr: float = 1e-2, l2: float = 1e-3, seed: int = 0,
+                deterministic_seed: int | None = None):
     """Vanilla RNN sweeping over the marker sequence.
 
     Architecture (per individual i with marker vector m_i of length L)::
@@ -21,7 +22,7 @@ def rnn_genomic(x, y, markers, hidden: int = 8, n_epochs: int = 150,
         y_hat_i = w_o^T h_L + b_o
 
     Trained by backpropagation through time, full-batch GD with L2 decay.
-    Used in the Montesinos book as a baseline before LSTM/GRU — we keep
+    Used in the Montesinos book as a baseline before LSTM/GRU -- we keep
     the vanilla version because it's deterministic and trains in
     sub-second on small inputs.
 
@@ -30,6 +31,11 @@ def rnn_genomic(x, y, markers, hidden: int = 8, n_epochs: int = 150,
     x, y, markers : standard.
     hidden : int, default 8
     n_epochs, lr, l2, seed : training hyperparameters
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged.
 
     Returns
     -------
@@ -39,7 +45,11 @@ def rnn_genomic(x, y, markers, hidden: int = 8, n_epochs: int = 150,
     ----------
     Montesinos Lopez et al. (2022), Ch. 14.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("rnnge", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     y = np.asarray(y, dtype=float).ravel()
     n = len(y)
     M = np.asarray(markers, dtype=float)

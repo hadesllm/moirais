@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: constantτ such that Dn/√ n → τ a.s. and in mean square. We shall not prove this, but note
+    Formula: constantτ such that Dn/√ n -> τ a.s. and in mean square. We shall not prove this, but note
 
     Parameters
     ----------

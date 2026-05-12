@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hilbert-Huang Transform (EMD + instantaneous frequency/amplitude).
 
 Distinct from hhtfn.py: this implementation exposes the full Hilbert
@@ -42,7 +42,7 @@ def hilbert_huang_spectrum(
     max_imfs: int = 10,
     n_freq_bins: int = 256,
 ) -> DescriptiveResult:
-    """Hilbert-Huang Transform with full Hilbert spectrum.
+    r"""Hilbert-Huang Transform with full Hilbert spectrum.
 
     Performs Empirical Mode Decomposition to extract IMFs, then applies
     the Hilbert transform to each IMF to obtain instantaneous

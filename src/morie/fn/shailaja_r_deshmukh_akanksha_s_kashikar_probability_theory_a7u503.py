@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: [EQ] √n√n + 1e−1/8 → e−1/8 < 1
+    Formula: [EQ] √n√n + 1e−1/8 -> e−1/8 < 1
 
     Parameters
     ----------

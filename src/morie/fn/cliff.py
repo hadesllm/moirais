@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cliff's delta (non-parametric effect size)."""
 
 from typing import Union

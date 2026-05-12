@@ -1,4 +1,4 @@
-"""morie.tps_datasets — registry + loader for Toronto Police Service
+"""morie.tps_datasets -- registry + loader for Toronto Police Service
 public crime datasets.
 
 13 categories at `data/datasets/TPS/<Category>/CSV/`:
@@ -21,7 +21,7 @@ Schema (per-incident, varies slightly by category):
     LONG_WGS84, LAT_WGS84, x, y
 
 Public API:
-    TPS_REGISTRY        — dict: name → TpsDataset
+    TPS_REGISTRY        -- dict: name -> TpsDataset
     load_tps_dataset(name)              -> pd.DataFrame
     list_tps_datasets()                 -> list of (name, n_rows_est, ...)
 """
@@ -144,7 +144,7 @@ def load_tps_dataset(name: str,
     `name` is case-insensitive. Pass `nrows=N` for a quick sample
     while developing on the largest tables (Assault is 254k rows).
 
-    `format` (optional) — load from a non-CSV format. Valid:
+    `format` (optional) -- load from a non-CSV format. Valid:
     ``csv``, ``excel``, ``geojson``, ``featurecollection``, ``kml``,
     ``geopackage``, ``sqlitegeodatabase``, ``shapefile``. Default ``csv``.
     Geometric formats attach a ``geometry`` column (Python coord lists).

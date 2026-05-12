@@ -1,15 +1,15 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Frequency resolution."""
 
 from __future__ import annotations
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Study the past if you would define the future. — Confucius"
+_QUOTE = "Study the past if you would define the future. -- Confucius"
 
 
 def freq_resolution(fs: float, N: int, **kwargs) -> DescriptiveResult:
-    """Compute the frequency resolution of a DFT.
+    r"""Compute the frequency resolution of a DFT.
 
     .. math::
 

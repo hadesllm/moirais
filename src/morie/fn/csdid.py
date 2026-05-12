@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Callaway-Sant'Anna DiD estimator."""
 
 from __future__ import annotations

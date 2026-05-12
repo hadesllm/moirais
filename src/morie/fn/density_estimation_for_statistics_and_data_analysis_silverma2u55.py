@@ -1,4 +1,4 @@
-"""CentralTendency expression (auto-extracted; see ref).."""
+r"""CentralTendency expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["density_estimation_for_statistics_and_data_analysis_silverma_chapter
 
 
 def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnumbered_55(x):
-    """
+    r"""
     CentralTendency expression (auto-extracted; see ref).
 
     Formula: [EQ] C^K) = \ K (tf dt ^ .

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Spatial GLMM random effects variance comp."""
 
 import numpy as np

@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: sequence of step functions converging to ψ , then µ(ψ n) → µ(ψ) . By the definition of the
+    Formula: sequence of step functions converging to ψ , then µ(ψ n) -> µ(ψ) . By the definition of the
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lemma: number of ways to distribute n-like objects into r cells with no cell empty."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,8 +1,8 @@
-"""Interactive chat REPL for MORIE — Claude Code-like terminal experience.
+"""Interactive chat REPL for MORIE -- Claude Code-like terminal experience.
 
 Provides a multi-turn conversational interface with streaming LLM responses,
 slash commands for module execution, and agent persona switching.  Uses only
-``rich`` (core dependency) — does NOT require Textual.
+``rich`` (core dependency) -- does NOT require Textual.
 
 Usage::
 
@@ -522,7 +522,7 @@ def run_chat_repl(*, agent: str | None = None) -> int:
         print("Error: morie chat requires an interactive terminal.", file=sys.stderr)
         return 1
 
-    import readline  # Only import in CLI REPL — conflicts with Textual's terminal input.
+    import readline  # Only import in CLI REPL -- conflicts with Textual's terminal input.
 
     from rich.console import Console
     from rich.panel import Panel

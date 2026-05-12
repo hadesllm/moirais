@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Median filter (nonlinear smoothing).
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal

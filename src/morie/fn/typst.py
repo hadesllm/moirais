@@ -11,7 +11,7 @@ def typst(
     *,
     epsilon: float = 0.1,
 ) -> dict:
-    """
+    r"""
     Compute typical set properties for an i.i.d. source.
 
     The typical set A_epsilon^(n) contains sequences x^n such that:

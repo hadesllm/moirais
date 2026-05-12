@@ -10,7 +10,7 @@ _QUOTE = "Stay on target."
 
 
 def peak_to_peak(x, **kwargs) -> DescriptiveResult:
-    """Compute the peak-to-peak amplitude of signal *x*.
+    r"""Compute the peak-to-peak amplitude of signal *x*.
 
     .. math::
 

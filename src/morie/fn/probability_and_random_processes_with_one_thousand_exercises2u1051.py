@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: to show that there exist δ> 0 andβ > 0 such that m( t) ∼ δ eβ t as t → ∞ wheneverµ> 1.
+    Formula: to show that there exist δ> 0 andβ > 0 such that m( t) ∼ δ eβ t as t -> ∞ wheneverµ> 1.
 
     Parameters
     ----------

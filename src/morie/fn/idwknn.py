@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """k-nearest neighbor IDW interpolation."""
 
 import numpy as np

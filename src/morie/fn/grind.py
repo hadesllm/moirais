@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Particle size distribution (Rosin-Rammler). 'Grind them down!' -- Grindor"""
 
 from __future__ import annotations

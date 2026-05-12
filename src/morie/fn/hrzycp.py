@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Conditional prediction of Y given X after transformation model estimation."""
 import numpy as np
 from ._richresult import RichResult

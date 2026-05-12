@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Normalized cross-correlation."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The more you know, the more you realize you don't know. — Aristotle"
+_QUOTE = "The more you know, the more you realize you don't know. -- Aristotle"
 
 
 def normalized_xcorr(x, y, **kwargs) -> DescriptiveResult:

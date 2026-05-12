@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simulated annealing MDS. 'Muda muda muda!' -- DIO, JoJo's Bizarre Adventure"""
 
 from __future__ import annotations

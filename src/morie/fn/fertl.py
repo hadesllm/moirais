@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Total fertility rate from age-specific fertility rates."""
 
 import numpy as np
@@ -10,7 +10,7 @@ def fertility_rate(
     age_specific_rates: list | np.ndarray,
     interval: int = 5,
 ) -> ESRes:
-    """Compute total fertility rate from age-specific fertility rates.
+    r"""Compute total fertility rate from age-specific fertility rates.
 
     .. math::
 

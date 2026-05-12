@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Barron's predictive consistency: KL from predictive to true density goes to 0."""
 import numpy as np
 from ._richresult import RichResult

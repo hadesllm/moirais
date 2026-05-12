@@ -1,7 +1,7 @@
 """
 Weighted logistic regression analysis with interaction and SMOTE sensitivity.
 
-Implements ``run_weighted_logistic_analysis`` — fits a survey-weighted logistic
+Implements ``run_weighted_logistic_analysis`` -- fits a survey-weighted logistic
 model for a binary outcome, tests treatment-by-covariate interactions, and
 runs a SMOTE sensitivity refit to check odds ratio stability.
 """
@@ -146,7 +146,7 @@ def run_weighted_logistic_analysis(
         ]
     )
 
-    # SMOTE sensitivity — rebalance and refit to check stability of ORs
+    # SMOTE sensitivity -- rebalance and refit to check stability of ORs
     from morie.ml import apply_smote
 
     y_smote = frame[outcome].astype(int)

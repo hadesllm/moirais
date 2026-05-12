@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """James-Stein shrinkage estimator. 'It's a small world after all.' -- The Atom"""
 
 from __future__ import annotations

@@ -6,11 +6,11 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Time discovers truth. — Seneca"
+_QUOTE = "Time discovers truth. -- Seneca"
 
 
 def kurtosis_coeff(x, **kwargs) -> DescriptiveResult:
-    """Compute the excess kurtosis of signal *x*.
+    r"""Compute the excess kurtosis of signal *x*.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Breusch-Godfrey test for serial correlation."""
 
 from __future__ import annotations
@@ -67,7 +67,7 @@ def bg_test(y, lags: int = 1, x=None, cdf=None) -> TestResult:
     except np.linalg.LinAlgError:
         resid = y - np.mean(y)
 
-    # Step 2: Auxiliary regression — resid on X_mat + lagged residuals.
+    # Step 2: Auxiliary regression -- resid on X_mat + lagged residuals.
     # Pad lagged residuals with zeros for the first *lags* positions
     # (standard Breusch-Godfrey convention).
     lag_cols = []

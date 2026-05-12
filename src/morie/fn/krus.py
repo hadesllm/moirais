@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kruskal minimum spanning tree. 'We are the spark that will light the fire.' -- Poe Dameron"""
 
 from __future__ import annotations

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Score norms — normative table from score distribution."""
+# morie.fn -- function file (hadesllm/morie)
+"""Score norms -- normative table from score distribution."""
 
 from __future__ import annotations
 
@@ -47,4 +47,4 @@ def score_norms(
 
 
 def cheatsheet() -> str:
-    return "score_norms({}) -> Score norms — normative table from score distribution."
+    return "score_norms({}) -> Score norms -- normative table from score distribution."

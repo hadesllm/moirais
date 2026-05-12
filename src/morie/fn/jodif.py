@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """First/seasonal differencing as target transformation."""
 import numpy as np
 from ._richresult import RichResult

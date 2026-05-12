@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_153(x):
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: satisfy 2γ(δ)/δ 2 → 0 as δ → ∞. For example, the power semivariogram model
+    Formula: satisfy 2γ(δ)/δ 2 -> 0 as δ -> ∞. For example, the power semivariogram model
 
     Parameters
     ----------

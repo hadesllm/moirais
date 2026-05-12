@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chain (mediation) structure A->B->C: information flows, B is mediator."""
 import numpy as np
 from ._richresult import RichResult

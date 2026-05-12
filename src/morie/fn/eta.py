@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Eta-squared effect size."""
 
 from morie.fn.eta2 import eta_squared

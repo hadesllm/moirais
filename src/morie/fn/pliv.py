@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partially Linear IV (PLIV) for LATE via DoubleML or 2SLS fallback."""
 
 import warnings
@@ -17,7 +17,7 @@ def estimate_pliv(
     n_folds: int = 5,
     random_state: int = 42,
 ) -> dict:
-    """
+    r"""
     Partially Linear IV (PLIV) for the Local Average Treatment Effect (LATE)
     using an instrumental variable via DoubleML.
 

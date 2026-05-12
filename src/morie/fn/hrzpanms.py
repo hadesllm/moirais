@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maximum-score estimator for panel data with fixed effects."""
 import numpy as np
 from ._richresult import RichResult

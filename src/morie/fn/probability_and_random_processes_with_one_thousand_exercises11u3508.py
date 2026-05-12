@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: j = 0( W( j + 1)δ − Wjδ) 2 satisfies Zn → t in mean square as n → ∞ .
+    Formula: j = 0( W( j + 1)δ − Wjδ) 2 satisfies Zn -> t in mean square as n -> ∞ .
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-"""Numbered display equation (2.1) from MVSML chapter 2.."""
+r"""Numbered display equation (2.1) from MVSML chapter 2.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_preprocessing_eq_2_1"]
 
 
 def mvsml_preprocessing_eq_2_1(represented, by, random, variables, observed, which):
-    """
+    r"""
     Numbered display equation (2.1) from MVSML chapter 2.
 
     Formula: represented by random variables (not observed) which, we generally assume, have a particular distribution, the normal distribution being the most common. Due to the above, random effects are suggested when we want to perform an inference for all levels of the target population. 2.2 BLUEs and BLUPs This section presents the concepts and terminologies of BLUE and BLUP. Since these two concepts are related to a mixed model, we present the following linear mixed model as Y = X\beta + Zu + \epsilon,
@@ -35,7 +35,7 @@ def mvsml_preprocessing_eq_2_1(represented, by, random, variables, observed, whi
     References
     ----------
     MVSML, Eq. (2.1) [Multivariate Statistical Machine Learnin [Pages 35-70] [2026-04-16].pdf]
-    """
+    r"""
     represented = np.atleast_1d(np.asarray(represented, dtype=float))
     n = len(represented)
     result = float(np.mean(represented))

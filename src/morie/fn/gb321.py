@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Joint distribution of R1 and R2 (runs of type 1 and 2) under randomness."""
 import numpy as np
 from ._richresult import RichResult

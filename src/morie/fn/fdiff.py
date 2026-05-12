@@ -1,10 +1,10 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Numerical differentiation via finite differences."""
 
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Look well into thyself; there is a source which will always spring up. — Marcus Aurelius"
+_QUOTE = "Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius"
 
 
 def finite_diff(f, x: float, h: float = 1e-5, order: int = 1, method: str = "central", **kwargs) -> DescriptiveResult:

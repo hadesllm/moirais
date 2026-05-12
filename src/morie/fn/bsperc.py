@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bootstrap percentile CI."""
 
 from typing import Sequence, Union

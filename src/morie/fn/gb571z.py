@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Handling zeros and tied differences in Wilcoxon signed-rank test."""
 import numpy as np
 from scipy import stats

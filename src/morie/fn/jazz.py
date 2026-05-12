@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stochastic sequence generation (Markov chain). 'Do I at least get to pick the song?' -- Jazz"""
 
 from __future__ import annotations

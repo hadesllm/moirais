@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] P [|Xn| < ϵ] = Fn(ϵ) − Fn(−ϵ) = (2/π) tan−1(nϵ) → (2/π)(π/2) = 1
+    Formula: [EQ] P [|Xn| < ϵ] = Fn(ϵ) − Fn(−ϵ) = (2/π) tan−1(nϵ) -> (2/π)(π/2) = 1
 
     Parameters
     ----------

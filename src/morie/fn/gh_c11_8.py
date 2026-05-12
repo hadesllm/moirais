@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fractional Brownian motion prior: Hurst parameter H controls smoothness."""
 import numpy as np
 from ._richresult import RichResult

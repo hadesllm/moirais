@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Terry-Hoeffding (normal scores) test for location using expected normal order statistics."""
 import numpy as np
 from scipy import stats

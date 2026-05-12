@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Coherence spectrum between two signals."""
 
 from __future__ import annotations

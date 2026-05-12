@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kruskal stress-1 badness-of-fit for MDS solutions."""
 import numpy as np
 from ._richresult import RichResult

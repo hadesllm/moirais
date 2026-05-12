@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Reward-model training loss over preference pairs (BT negative log-likelihood)."""
 import numpy as np
 from ._richresult import RichResult

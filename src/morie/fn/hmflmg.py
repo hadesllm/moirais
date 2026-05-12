@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Flamingo: visual dialogue with interleaved image and text."""
 import numpy as np
 from ._richresult import RichResult

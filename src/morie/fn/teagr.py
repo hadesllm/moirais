@@ -8,7 +8,7 @@ from ._containers import SignalResult
 
 
 def teager_energy_fn(x: np.ndarray) -> SignalResult:
-    """Knowledge itself is power. — Francis Bacon"""
+    """Knowledge itself is power. -- Francis Bacon"""
     from morie._detection import teager_energy as _backend
 
     result = _backend(x)

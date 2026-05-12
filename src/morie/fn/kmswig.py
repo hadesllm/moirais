@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SwiGLU activation used in LLaMA-style FFN: Swish-gated linear unit."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """General two-sample permutation test (Good 2005, *Permutation Tests*).
 
 Tests H0: F_x = F_y by shuffling group labels and comparing the observed
@@ -81,7 +81,7 @@ def permutation_test_general(x, y, statistic=None, B: int = 5000,
 # >>> y = rng.normal(0.0, 1.0, 30)
 # >>> res = permutation_test_general(x, y, B=1000, seed=0)
 # >>> assert 0 <= res["p_value"] <= 1
-# >>> # same-distribution samples → expect p not extreme
+# >>> # same-distribution samples -> expect p not extreme
 # >>> assert res["p_value"] > 0.01
 
 

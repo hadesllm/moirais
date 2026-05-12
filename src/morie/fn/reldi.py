@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Reliability diagram values for probability calibration assessment.
 
 A reliability diagram plots the fraction of positive outcomes against

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Logistic growth model. 'I am Groot.' -- Groot"""
 
 from __future__ import annotations

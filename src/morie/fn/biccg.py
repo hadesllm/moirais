@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """BiCGSTAB solver for non-symmetric linear systems."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Combinatorial probability (card counting). 'The name is Gambit. Remember it.' -- Gambit"""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def card_probability(
     *,
     at_least: int = 1,
 ) -> DescriptiveResult:
-    """Compute the probability of drawing at least *at_least* target cards
+    r"""Compute the probability of drawing at least *at_least* target cards
     in a *draw*-card hand from a deck via the hypergeometric distribution.
 
     :math:`P(X \\ge k) = \\sum_{i=k}^{\\min(draw, n_{target})}`

@@ -1,11 +1,11 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Nyquist bandwidth limit analysis."""
 
 from __future__ import annotations
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "There are no facts, only interpretations. — Friedrich Nietzsche"
+_QUOTE = "There are no facts, only interpretations. -- Friedrich Nietzsche"
 
 
 def bandwidth_limit(fs, signal_bw, **kwargs) -> DescriptiveResult:

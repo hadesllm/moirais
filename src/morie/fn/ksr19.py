@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cox proportional-hazards partial likelihood (Kosorok 2008, Ch 8).
 
 l(beta) = sum_{i: delta_i=1} [ X_i' beta - log( sum_{j in R(t_i)}

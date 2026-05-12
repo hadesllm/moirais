@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Guttman's Lambda 5 reliability lower bound."""
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ import pandas as pd
 def gl5(
     data: pd.DataFrame | np.ndarray,
 ) -> float:
-    """Guttman's Lambda 5 — lower bound using max item covariance sum.
+    """Guttman's Lambda 5 -- lower bound using max item covariance sum.
 
     lambda_5 = lambda_1 + 2 * sqrt(max_j(sum_{i!=j} cov_ij^2)) / var_total
 

@@ -1,4 +1,4 @@
-"""Wilson score interval for binomial proportion. 'Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius' -- General usage"""
+"""Wilson score interval for binomial proportion. 'Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius' -- General usage"""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def wilson_ci(successes: int, trials: int, alpha: float = 0.05) -> DescriptiveResult:
-    """
+    r"""
     Wilson score confidence interval for a binomial proportion.
 
     .. math::

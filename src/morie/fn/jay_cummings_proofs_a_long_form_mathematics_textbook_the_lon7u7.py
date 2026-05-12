@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (i) q : (−∞, −10) → (−∞, 0) where q(x) = −|x + 4|
+    Formula: [EQ] (i) q : (−∞, −10) -> (−∞, 0) where q(x) = −|x + 4|
 
     Parameters
     ----------

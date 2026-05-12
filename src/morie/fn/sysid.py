@@ -14,7 +14,7 @@ def system_identify_fn(
     output_signal: np.ndarray,
     order: int = 4,
 ) -> DescriptiveResult:
-    """Identify a linear system from input/output data via least squares.
+    r"""Identify a linear system from input/output data via least squares.
 
     Estimates the FIR coefficients :math:`h(k)` that minimise
     :math:`\\|y - X h\\|^2` where *X* is the convolution matrix.

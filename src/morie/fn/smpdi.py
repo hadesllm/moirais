@@ -8,7 +8,7 @@ _QUOTE = "There is always a bigger fish. -- Qui-Gon Jinn"
 
 
 def simpson_diversity(abundances, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute Simpson's diversity index (1 - D).
 
     Simpson's concentration is:

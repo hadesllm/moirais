@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Intraclass correlation coefficient (ICC)."""
 
 from __future__ import annotations

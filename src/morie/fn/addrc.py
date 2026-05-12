@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Mathematics is the music of reason. — James Joseph Sylvester"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Mathematics is the music of reason. -- James Joseph Sylvester"""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ def full_adder(
     b: int | np.ndarray,
     carry_in: int = 0,
 ) -> DescriptiveResult:
-    """
+    r"""
     Simulate a full adder (or ripple-carry adder for bit arrays).
 
     For scalars: single-bit full adder.

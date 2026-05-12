@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pearson correlation coefficient for morphological analysis."""
 import numpy as np
 from scipy import stats

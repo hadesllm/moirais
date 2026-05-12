@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Emergent ability metric: step-function improvement past a scale threshold."""
 import numpy as np
 from ._richresult import RichResult

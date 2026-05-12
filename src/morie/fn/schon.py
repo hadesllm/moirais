@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Schoenfeld residuals for proportional hazards assumption testing."""
 
 import numpy as np

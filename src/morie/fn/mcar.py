@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Little's MCAR test for missing completely at random."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear Prediction Coding coefficients."""
 
 from __future__ import annotations

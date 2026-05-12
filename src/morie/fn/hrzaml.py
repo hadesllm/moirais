@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Additive model with known non-identity link function g."""
 import numpy as np
 from ._richresult import RichResult

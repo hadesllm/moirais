@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stiennon et al. summarization-from-human-feedback pipeline loss."""
 import numpy as np
 from ._richresult import RichResult

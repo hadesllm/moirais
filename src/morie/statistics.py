@@ -256,7 +256,7 @@ def welch_ttest(
     y: Union[np.ndarray, pd.Series, list],
     confidence: float = 0.95,
 ) -> TestResult:
-    """Welch's *t*-test — convenience wrapper for ``two_sample_ttest(equal_var=False)``.
+    """Welch's *t*-test -- convenience wrapper for ``two_sample_ttest(equal_var=False)``.
 
     Parameters
     ----------
@@ -405,7 +405,7 @@ def repeated_measures_anova(
     subject: str,
     within: str,
 ) -> TestResult:
-    """One-way repeated-measures ANOVA (sphericity not assumed — uses
+    """One-way repeated-measures ANOVA (sphericity not assumed -- uses
     Greenhouse--Geisser correction).
 
     Parameters
@@ -1745,9 +1745,9 @@ def auto_test(
 
     Decision logic:
 
-    1. If *y* is ``None`` — one-sample t-test against zero.
-    2. If ``paired=True`` — paired t-test (if normal differences) or Wilcoxon.
-    3. If two independent samples — check normality and variance equality;
+    1. If *y* is ``None`` -- one-sample t-test against zero.
+    2. If ``paired=True`` -- paired t-test (if normal differences) or Wilcoxon.
+    3. If two independent samples -- check normality and variance equality;
        choose between Student's t, Welch's t, or Mann--Whitney U.
 
     Parameters

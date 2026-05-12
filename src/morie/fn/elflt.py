@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Elliptic (Cauer) filter."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "So this is how liberty dies... with thunderous applause."
 
 
 def elliptic_filter(x, cutoff, fs, order: int = 4, rp: float = 1.0, rs: float = 40.0) -> SignalResult:
-    """Apply an elliptic (Cauer) IIR filter to signal *x*.
+    r"""Apply an elliptic (Cauer) IIR filter to signal *x*.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Asymptotic normality of r-th order statistic X_(r) when r/n -> p."""
 import numpy as np
 from scipy import stats

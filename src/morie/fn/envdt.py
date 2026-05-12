@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Signal envelope via rectification and lowpass."""
 
 from __future__ import annotations

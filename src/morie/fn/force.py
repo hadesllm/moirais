@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ATE difference-in-means. 'We suffer more often in imagination than in reality. -- Seneca'"""
 from __future__ import annotations
 

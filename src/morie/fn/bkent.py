@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bekenstein-Hawking entropy."""
 
 __all__ = ["bkent"]
@@ -14,7 +14,7 @@ def bkent(
     hbar: float = 1.0545718e-34,
     kB: float = 1.380649e-23,
 ) -> dict:
-    """
+    r"""
     Compute Bekenstein-Hawking black hole entropy.
 
     .. math::

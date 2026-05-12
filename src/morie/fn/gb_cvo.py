@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Covariance between r-th and s-th order statistics (r < s)."""
 import numpy as np
 from scipy import stats

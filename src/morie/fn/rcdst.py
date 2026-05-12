@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Distance from agreement. 'Special Beam Cannon!' -- Piccolo, Dragon Ball Z"""
 
 from __future__ import annotations

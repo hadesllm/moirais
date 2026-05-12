@@ -1,4 +1,4 @@
-"""Factscore.."""
+r"""Factscore.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_factscore"]
 
 
 def kamath_ch6_factscore(M, X, A_y, C):
-    """
+    r"""
     Factscore.
 
     Formula: \mathrm{FActScore}(M) = E_{x\in X}[\frac{1}{|A_y|}\sum_{a\in A_y} I[a\text{ is supported by }C] | M_x \text{ responds}]
@@ -31,7 +31,7 @@ def kamath_ch6_factscore(M, X, A_y, C):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.1, p. 219
-    """
+    r"""
     M = np.atleast_1d(np.asarray(M, dtype=float))
     n = len(M)
     result = float(np.mean(M))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Quantiles for a numeric column in OTIS correctional data."""
 
 from __future__ import annotations

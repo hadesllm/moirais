@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 5.8: standardized smoothed sign/Wilcoxon converge to unsmoothed in L^2."""
 import numpy as np
 from ._richresult import RichResult

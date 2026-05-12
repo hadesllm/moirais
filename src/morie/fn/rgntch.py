@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Notch filter for powerline interference removal (50/60 Hz)."""
 import numpy as np
 from ._richresult import RichResult

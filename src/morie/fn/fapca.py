@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Compare factor analysis vs PCA solutions."""
 
 from __future__ import annotations

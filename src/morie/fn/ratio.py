@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Survey ratio estimator for a population total."""
 
 import math
@@ -13,7 +13,7 @@ def ratio_estimator(
     weights: np.ndarray,
     X_population_total: float,
 ) -> dict:
-    """
+    r"""
     Survey ratio estimator for a population total.
 
     The ratio estimator exploits auxiliary information X whose population

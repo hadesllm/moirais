@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Generate synthetic ARMA process."""
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ def arma_generate_fn(
     N: int = 1000,
     seed: int | None = None,
 ) -> DescriptiveResult:
-    """Generate a realisation of an ARMA(p,q) process.
+    r"""Generate a realisation of an ARMA(p,q) process.
 
     .. math::
 

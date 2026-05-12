@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MDS goodness-of-fit interpretation. 'Infinite Void.' -- Gojo, Jujutsu Kaisen"""
 
 from __future__ import annotations

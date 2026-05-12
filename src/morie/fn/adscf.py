@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AdS/CFT dictionary: conformal dimension <-> bulk mass."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def ads_cft_dictionary(
     d: int = 4,
     L: float = 1.0,
 ) -> DescriptiveResult:
-    """Apply the AdS/CFT mass-dimension relation.
+    r"""Apply the AdS/CFT mass-dimension relation.
 
     For a scalar field in :math:`AdS_{d+1}`:
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exact null distribution of D_n via order-statistic integral formula."""
 import numpy as np
 from scipy import stats

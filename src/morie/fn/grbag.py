@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Bagging aggregator — mean of bootstrap-trained predictors."""
+# morie.fn -- function file (hadesllm/morie)
+"""Bagging aggregator -- mean of bootstrap-trained predictors."""
 import numpy as np
 from ._richresult import RichResult
 
@@ -8,7 +8,7 @@ __all__ = ["geron_bagging_predictor"]
 
 def geron_bagging_predictor(predictions):
     """
-    Bagging aggregator — mean of bootstrap-trained predictors
+    Bagging aggregator -- mean of bootstrap-trained predictors
 
     Formula: h_bag(x) = (1/B) sum_{b=1..B} h_b(x)
 
@@ -30,8 +30,8 @@ def geron_bagging_predictor(predictions):
     n = int(predictions) if predictions.ndim == 0 else len(predictions)
     result = float(np.mean(predictions))
     se = float(np.std(predictions, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Bagging aggregator — mean of bootstrap-trained predictors"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Bagging aggregator -- mean of bootstrap-trained predictors"})
 
 
 def cheatsheet():
-    return "grbag: Bagging aggregator — mean of bootstrap-trained predictors"
+    return "grbag: Bagging aggregator -- mean of bootstrap-trained predictors"

@@ -11,7 +11,7 @@ def analysis_of_categorical_data_with_r_chapman_hall_crc_christo_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Z—β5,β 6,β 7, andβ8—are all 0. It is then apparent fromTable 2.3for this situation that
+    Formula: Z--β5,β 6,β 7, andβ8--are all 0. It is then apparent fromTable 2.3for this situation that
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rank von Neumann (RVN) test for randomness based on ranks of observations."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prior via quantile process: specify distribution of quantile function Q(u) = F^{-1}(u)."""
 import numpy as np
 from ._richresult import RichResult

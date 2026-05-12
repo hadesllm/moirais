@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mantel-Haenszel pooled odds ratio."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def mantel_haenszel_or(
     tables: list[tuple[int, int, int, int]],
     confidence: float = 0.95,
 ) -> ESRes:
-    """Mantel-Haenszel pooled odds ratio across K 2x2 tables.
+    r"""Mantel-Haenszel pooled odds ratio across K 2x2 tables.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Area under ROC curve."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Never tell me the odds."
 
 
 def auc_compute(y_true, y_scores, **kwargs) -> DescriptiveResult:
-    """Compute area under the ROC curve via trapezoidal rule.
+    r"""Compute area under the ROC curve via trapezoidal rule.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ricci tensor and scalar curvature."""
 
 __all__ = ["ricci"]
@@ -10,7 +10,7 @@ def ricci(
     riemann: np.ndarray,
     metric: np.ndarray,
 ) -> dict:
-    """
+    r"""
     Compute the Ricci tensor and scalar curvature from the Riemann tensor.
 
     .. math::

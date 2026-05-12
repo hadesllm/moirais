@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean change-point detection via CUSUM. 'In time, the suffering of your people will persuade you.' -- Count Dooku"""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def mean_changepoint(y: np.ndarray, method: str = "cusum") -> DescriptiveResult:
-    """
+    r"""
     Detect a single mean shift in a time series using CUSUM.
 
     Computes the cumulative sum of deviations from the grand mean

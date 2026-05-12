@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Clever covariate computation for TMLE."""
 
 from __future__ import annotations

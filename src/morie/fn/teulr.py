@@ -6,7 +6,7 @@ from ._containers import DescriptiveResult
 
 
 def torus_euler_char(genus: int = 1) -> DescriptiveResult:
-    """Euler characteristic of a closed orientable surface of genus *g*.
+    r"""Euler characteristic of a closed orientable surface of genus *g*.
 
     :math:`\\chi = 2 - 2g`
 

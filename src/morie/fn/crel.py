@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Composite reliability from factor loadings."""
 
 from __future__ import annotations

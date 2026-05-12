@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean and variance of RVN test statistic under null hypothesis."""
 import numpy as np
 from scipy import stats

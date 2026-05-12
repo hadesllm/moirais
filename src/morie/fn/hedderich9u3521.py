@@ -1,4 +1,4 @@
-"""CentralTendency expression (auto-extracted; see ref).."""
+r"""CentralTendency expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_3521"]
 
 
 def hedderich_chapter_9_unnumbered_3521(x):
-    """
+    r"""
     CentralTendency expression (auto-extracted; see ref).
 
     Formula: + c a t( " ICC = " , round ( ICC , 4 ) , " sowie VIF = " , round ( VIF , 4 ) , " \ n " ) }

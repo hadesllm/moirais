@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SDEM Bayesian information criterion."""
 
 from ._containers import SpatialResult

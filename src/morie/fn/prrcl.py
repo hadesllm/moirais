@@ -1,15 +1,15 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Precision, recall, and F1 score."""
 
 import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "Without music, life would be a mistake. — Friedrich Nietzsche"
+_QUOTE = "Without music, life would be a mistake. -- Friedrich Nietzsche"
 
 
 def precision_recall(y_true, y_pred, **kwargs) -> ESRes:
-    """
+    r"""
     Compute precision, recall, and F1 score for binary classification.
 
     .. math::

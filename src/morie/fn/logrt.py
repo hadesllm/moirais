@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 logrt.py - Log-rank test for comparing survival distributions.
 

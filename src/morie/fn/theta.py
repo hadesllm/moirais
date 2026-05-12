@@ -5,7 +5,7 @@ from ._containers import GenomicsResult
 
 
 def watterson_theta(S: int, n: int, L: int = 1) -> GenomicsResult:
-    """
+    r"""
     Compute Watterson's theta from the number of segregating sites.
 
     .. math::

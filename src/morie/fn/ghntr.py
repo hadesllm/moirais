@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Neutral-to-the-right process — Doksum (1974) survival prior."""
+# morie.fn -- function file (hadesllm/morie)
+"""Neutral-to-the-right process -- Doksum (1974) survival prior."""
 import numpy as np
 from ._richresult import RichResult
 

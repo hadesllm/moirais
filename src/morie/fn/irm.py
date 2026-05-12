@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 Interactive Regression Model (IRM) via DoubleML.
 
-Implements ``estimate_irm`` — estimates the ATE allowing for treatment effect
+Implements ``estimate_irm`` -- estimates the ATE allowing for treatment effect
 heterogeneity using Neyman-orthogonal scores and cross-fitting.
 """
 
@@ -25,7 +25,7 @@ def estimate_irm(
     n_folds: int = 5,
     random_state: int = 42,
 ) -> dict[str, Any]:
-    """Estimate the ATE via the Interactive Regression Model (IRM) using DoubleML.
+    r"""Estimate the ATE via the Interactive Regression Model (IRM) using DoubleML.
 
     The IRM extends the partially linear model by allowing treatment effect
     heterogeneity.  It models:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Single EMD sifting pass to extract one IMF."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Mastering others is strength; mastering yourself is true power. — Lao Tzu"
+_QUOTE = "Mastering others is strength; mastering yourself is true power. -- Lao Tzu"
 
 
 def emd_sifting(x, max_iter: int = 300, tol: float = 1e-6, **kwargs) -> DescriptiveResult:

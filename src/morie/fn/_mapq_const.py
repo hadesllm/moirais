@@ -51,7 +51,7 @@ SUBSCALE_MAX: int = 25  # 5 items * 5
 TOTAL_MIN: int = 20  # 20 items * 1
 TOTAL_MAX: int = 100  # 20 items * 5
 
-# Reverse-scored items (if any — update as needed)
+# Reverse-scored items (if any -- update as needed)
 REVERSE_ITEMS: list[str] = []
 
 # Factor structure for CFA (4-factor model)

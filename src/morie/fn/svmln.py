@@ -10,7 +10,7 @@ _QUOTE = "Your focus determines your reality."
 
 
 def svm_linear(X_train, y_train, X_test, C=1.0, lr=0.001, n_iter=1000, **kwargs) -> DescriptiveResult:
-    """Linear SVM trained with sub-gradient descent on hinge loss.
+    r"""Linear SVM trained with sub-gradient descent on hinge loss.
 
     .. math::
 

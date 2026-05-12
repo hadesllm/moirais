@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """HDBSCAN density-based hierarchical clustering assignment."""
 import numpy as np
 from ._richresult import RichResult

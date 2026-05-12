@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Banzhaf and Shapley-Shubik voting-power indices (Armstrong Ch 10)."""
 import numpy as np
 from itertools import combinations
@@ -21,7 +21,7 @@ def voting_power_index(x, quota=None):
         Voter weights w_i.
     quota : float, optional
         Winning threshold q (default = ceil(sum(w)/2 + 1) to be strictly
-        more than half — the simple-majority rule).
+        more than half -- the simple-majority rule).
 
     Returns
     -------

@@ -1,4 +1,4 @@
-"""Gpt2 task conditioning.."""
+r"""Gpt2 task conditioning.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_gpt2_task_conditioning"]
 
 
 def kamath_ch2_gpt2_task_conditioning(input, task):
-    """
+    r"""
     Gpt2 task conditioning.
 
     Formula: p(\mathrm{output}|\mathrm{input},\mathrm{task})
@@ -27,7 +27,7 @@ def kamath_ch2_gpt2_task_conditioning(input, task):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.38, p. 70
-    """
+    r"""
     input = np.atleast_1d(np.asarray(input, dtype=float))
     n = len(input)
     result = float(np.mean(input))

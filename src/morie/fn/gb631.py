@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Two-sample Kolmogorov-Smirnov test D_{m,n} = sup|S_m(x) - S_n(x)|."""
 import numpy as np
 from scipy import stats

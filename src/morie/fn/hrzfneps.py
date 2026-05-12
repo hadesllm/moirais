@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Estimators fn_eps and fn_U for panel deconvolution."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,5 +1,5 @@
 """
-Headless polyglot REPL engine — multi-language execution with variable bridging.
+Headless polyglot REPL engine -- multi-language execution with variable bridging.
 
 Supports: Python, R, Shell (bash/zsh), Julia, SQL (SQLite/PostgreSQL), Node.js,
           Go, Rust, C, C++, OCaml, Lua, TypeScript, LaTeX
@@ -1881,9 +1881,9 @@ def run_headless_repl(
 
     avail = engine.available_languages()
     langs = [k for k, v in avail.items() if v]
-    print(f"MORIE Polyglot REPL — {len(langs)} languages: {', '.join(langs)}")
+    print(f"MORIE Polyglot REPL -- {len(langs)} languages: {', '.join(langs)}")
     if polyglot:
-        print("Polyglot mode ON — variables bridge automatically across languages")
+        print("Polyglot mode ON -- variables bridge automatically across languages")
     print("Prefixes: R> J> Q> N> Go> Rs> C> C+> ML> Lu> TS> TX> PG> ! (shell)")
     print(f"Auto-detect: {'ON' if auto_detect else 'OFF'} | Default: {lang}")
 

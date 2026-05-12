@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RKHS norm and reproducing property."""
 import numpy as np
 from ._richresult import RichResult

@@ -13,7 +13,7 @@ def xavier_init(
     distribution: str = "normal",
     seed: int | None = None,
 ) -> DescriptiveResult:
-    """Generate Xavier (Glorot) initialized weight matrix.
+    r"""Generate Xavier (Glorot) initialized weight matrix.
 
     Normal: :math:`W \\sim \\mathcal{N}(0, \\sqrt{2/(\\text{fan\\_in}+\\text{fan\\_out})})`.
     Uniform: :math:`W \\sim U[-a, a]` where :math:`a = \\sqrt{6/(\\text{fan\\_in}+\\text{fan\\_out})}`.

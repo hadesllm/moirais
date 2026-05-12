@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DIF effect size (MH delta) with ETS classification."""
 
 from __future__ import annotations

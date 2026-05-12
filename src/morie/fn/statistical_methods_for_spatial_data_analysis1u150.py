@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_150(x, cd
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: can be the limiting form (as δ → 0) of C(δ) only if σ̇ 2 is ﬁnite. As a consequence
+    Formula: can be the limiting form (as δ -> 0) of C(δ) only if σ̇ 2 is ﬁnite. As a consequence
 
     Parameters
     ----------

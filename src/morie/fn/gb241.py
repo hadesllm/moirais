@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CDF of r-th order statistic X_(r) in terms of binomial tail probability."""
 import numpy as np
 from scipy import stats

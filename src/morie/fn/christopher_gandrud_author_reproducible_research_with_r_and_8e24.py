@@ -1,10 +1,10 @@
-"""Knowledge itself is power. — Francis Bacon"""
+"""Knowledge itself is power. -- Francis Bacon"""
 import numpy as np
 from scipy import stats
 
 from ._richresult import RichResult, hypothesis_test_result
 
-__all__ = ["Knowledge itself is power. — Francis Bacon"]
+__all__ = ["Knowledge itself is power. -- Francis Bacon"]
 
 
 def christopher_gandrud_author_reproducible_research_with_r_and__chapter_8_equation_24(x, cdf=None):
@@ -26,7 +26,7 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_8_equat
         Inherits from ``dict`` (so ``isinstance(result, dict)`` is True
         and ``result["statistic"]`` / ``result.get(...)`` keep working),
         but also exposes a multi-section ``str(result)`` render. Keys: value.
-        See ``morie.fn.describe('Knowledge itself is power. — Francis Bacon')`` for the full guide.
+        See ``morie.fn.describe('Knowledge itself is power. -- Francis Bacon')`` for the full guide.
 
     References
     ----------
@@ -36,12 +36,12 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_8_equat
     n = len(x)
     if n < 2:
         return hypothesis_test_result(
-            test_name="Knowledge itself is power. — Francis Bacon",
+            test_name="Knowledge itself is power. -- Francis Bacon",
             statistic=float("nan"),
             pvalue=float("nan"),
             warnings=["n<2: insufficient data."],
             extra_summary=[("n", n)],
-            extra_payload={"n": n, "method": "Knowledge itself is power. — Francis Bacon", "p_value": float("nan")},
+            extra_payload={"n": n, "method": "Knowledge itself is power. -- Francis Bacon", "p_value": float("nan")},
         )
     x_sorted = np.sort(x)
     if cdf is None:
@@ -60,13 +60,13 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_8_equat
         p_value = 2.0 * np.sum([(-1) ** (k - 1) * np.exp(-2 * k ** 2 * lam ** 2) for k in range(1, 101)])
         p_value = max(0.0, min(1.0, p_value))
     return hypothesis_test_result(
-        test_name="Knowledge itself is power. — Francis Bacon",
+        test_name="Knowledge itself is power. -- Francis Bacon",
         statistic=float(statistic),
         pvalue=float(p_value),
         extra_summary=[("n", n)],
-        extra_payload={"n": n, "method": "Knowledge itself is power. — Francis Bacon", "p_value": float(p_value)},
+        extra_payload={"n": n, "method": "Knowledge itself is power. -- Francis Bacon", "p_value": float(p_value)},
     )
 
 
 def cheatsheet():
-    return "Knowledge itself is power. — Francis Bacon"
+    return "Knowledge itself is power. -- Francis Bacon"

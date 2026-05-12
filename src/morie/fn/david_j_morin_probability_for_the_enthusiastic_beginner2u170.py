@@ -11,7 +11,7 @@ def david_j_morin_probability_for_the_enthusiastic_beginner_chapter_2_unnumbered
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: continuous time below, we’ll actually be taking the ϵ → 0 limit. In this mathematical limit, the “ ≈” sign in Eq. (4.18) becomes an exact “ =” sign. To sum up:
+    Formula: continuous time below, we’ll actually be taking the ϵ -> 0 limit. In this mathematical limit, the “ ≈” sign in Eq. (4.18) becomes an exact “ =” sign. To sum up:
 
     Parameters
     ----------

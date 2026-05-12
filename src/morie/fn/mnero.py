@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Study the past if you would define the future. — Confucius"""
+# morie.fn -- function file (hadesllm/morie)
+"""Study the past if you would define the future. -- Confucius"""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""GeneralStatistics expression (auto-extracted; see ref).."""
+r"""GeneralStatistics expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_2943"]
 
 
 def hedderich_chapter_9_unnumbered_2943(x, cdf=None):
-    """
+    r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
     Formula: + c a t( "B ( one − sidedgreater ) =" ,B . plus , " , ( P =" , round ( p . val , 8 ) , " ) \ n " ) }

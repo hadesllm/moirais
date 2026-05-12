@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Metric (weak) invariance: constrain loadings equal across groups."""
 
 from __future__ import annotations

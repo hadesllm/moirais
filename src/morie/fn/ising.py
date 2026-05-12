@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ising model partition function (2D, Onsager)."""
 
 __all__ = ["ising"]
@@ -13,7 +13,7 @@ def ising(
     kB: float = 1.0,
     n_sites: int = None,
 ) -> dict:
-    """
+    r"""
     Compute 2D Ising model thermodynamic quantities using Onsager's
     exact solution on an infinite square lattice.
 

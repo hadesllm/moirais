@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Graph clustering coefficient."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def clustering_coefficient(adj_matrix: np.ndarray) -> DescriptiveResult:
-    """Local and global clustering coefficients.
+    r"""Local and global clustering coefficients.
 
     The local clustering coefficient for node *v* is:
 

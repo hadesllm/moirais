@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pearson correlation coefficient."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Truly wonderful the mind of a child is."
 
 
 def pearson_corr(x, y, **kwargs) -> DescriptiveResult:
-    """Compute the Pearson product-moment correlation coefficient.
+    r"""Compute the Pearson product-moment correlation coefficient.
 
     .. math::
 

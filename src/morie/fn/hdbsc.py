@@ -1,4 +1,4 @@
-"""HDBSCAN — hierarchical density clustering."""
+"""HDBSCAN -- hierarchical density clustering."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["hdbscan"]
 
 def hdbscan(X, min_cluster_size):
     """
-    HDBSCAN — hierarchical density clustering
+    HDBSCAN -- hierarchical density clustering
 
     Formula: build mutual reachability tree + condensed tree
 
@@ -32,8 +32,8 @@ def hdbscan(X, min_cluster_size):
     n = len(X)
     result = float(np.mean(X))
     se = float(np.std(X, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "HDBSCAN — hierarchical density clustering"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "HDBSCAN -- hierarchical density clustering"})
 
 
 def cheatsheet():
-    return "hdbsc: HDBSCAN — hierarchical density clustering"
+    return "hdbsc: HDBSCAN -- hierarchical density clustering"

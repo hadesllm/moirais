@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Permutation test. 'The unexamined life is not worth living. -- Socrates'"""
 from __future__ import annotations
 

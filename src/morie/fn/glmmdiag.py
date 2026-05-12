@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Spatial GLMM model diagnostic residuals."""
 
 import numpy as np

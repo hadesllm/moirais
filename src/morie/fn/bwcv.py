@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bandwidth selection via leave-one-out cross-validation."""
 
 from __future__ import annotations

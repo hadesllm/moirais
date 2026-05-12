@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: and so on, where theτ i( n) are given by (15). Thus |yi | ≤ τ i( n) for all n. Let n → ∞ to show
+    Formula: and so on, where theτ i( n) are given by (15). Thus |yi | ≤ τ i( n) for all n. Let n -> ∞ to show
 
     Parameters
     ----------

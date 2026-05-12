@@ -12,7 +12,7 @@ bibentry(
   author  = person("Vansh Singh", "Ruhela",
                    comment = c(ORCID = "0009-0004-1750-3592")),
   year    = "2026",
-  note    = "R package version 0.3.0",
+  note    = "R package version 0.4.0",
   doi     = "10.5281/zenodo.20111233",
   url     = "https://github.com/hadesllm/morie"
 )
@@ -25,7 +25,7 @@ bibentry(
   author  = person("Vansh Singh", "Ruhela",
                    comment = c(ORCID = "0009-0004-1750-3592")),
   year    = "2026",
-  note    = "Python package version 0.3.0",
+  note    = "Python package version 0.4.0",
   doi     = "10.5281/zenodo.20096350",
   url     = "https://pypi.org/project/morie/"
 )
@@ -34,12 +34,12 @@ bibentry(
 bibentry(
   bibtype   = "Misc",
   key       = "ruhela_mrm_2026",
-  title     = "MRM Framework: Multi-Source Statistical Foundation for Canadian Carceral, Police, and Oversight Data",
+  title     = "MRM: Multilevel Reconciliation Methodology -- A multi-source statistical foundation for Canadian carceral, police, and oversight data",
   author    = person("Vansh Singh", "Ruhela",
                      comment = c(ORCID = "0009-0004-1750-3592")),
   year      = "2026",
   publisher = "Zenodo",
-  note      = "v1",
+  note      = "v2",
   doi       = "10.5281/zenodo.20096075",
   url       = "https://doi.org/10.5281/zenodo.20096075"
 )
@@ -53,7 +53,7 @@ bibentry(
                      comment = c(ORCID = "0009-0004-1750-3592")),
   year      = "2026",
   publisher = "Zenodo",
-  note      = "v1",
+  note      = "v2",
   doi       = "10.5281/zenodo.20102198",
   url       = "https://doi.org/10.5281/zenodo.20102198"
 )
@@ -68,6 +68,6 @@ bibentry(
   author  = person("Vansh Singh", "Ruhela",
                    comment = c(ORCID = "0009-0004-1750-3592")),
   year    = "2026",
-  note    = "R package version 0.3.0",
+  note    = "R package version 0.4.0",
   url     = "https://CRAN.R-project.org/package=morie"
 )

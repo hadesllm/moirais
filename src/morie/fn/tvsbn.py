@@ -1,4 +1,4 @@
-"""Tversky asymmetric similarity."""
+r"""Tversky asymmetric similarity."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["tversky_similarity"]
 
 
 def tversky_similarity(fp_a, fp_b, alpha, beta):
-    """
+    r"""
     Tversky asymmetric similarity
 
     Formula: |A∩B| / (|A∩B| + α|A\B| + β|B\A|)
@@ -31,7 +31,7 @@ def tversky_similarity(fp_a, fp_b, alpha, beta):
     References
     ----------
     Tversky (1977)
-    """
+    r"""
     fp_a = np.atleast_1d(np.asarray(fp_a, dtype=float))
     n = len(fp_a)
     result = float(np.mean(fp_a))

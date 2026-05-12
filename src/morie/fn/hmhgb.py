@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Histogram-based gradient boosting (HistGB): bin features before split search."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GP kernel functions: SE, Matern, RQ, periodic. 'These are the droids.' -- ObiWan"""
 
 from __future__ import annotations

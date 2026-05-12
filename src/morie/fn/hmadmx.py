@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AdaMax: Adam variant using L-infinity norm."""
 import numpy as np
 from ._richresult import RichResult

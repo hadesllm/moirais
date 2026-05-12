@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Recrudescence probability estimation."""
 
 __all__ = ["recrd"]

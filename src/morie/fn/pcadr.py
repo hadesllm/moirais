@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PCA for dimensionality reduction of SNP marker matrices."""
 import numpy as np
 from ._richresult import RichResult

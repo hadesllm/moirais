@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Elementary coverage C_i = U_(i) - U_(i-1) has Beta(1,n) distribution."""
 import numpy as np
 from ._richresult import RichResult

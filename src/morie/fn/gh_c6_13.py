@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Le Cam inequality approach to posterior consistency."""
 import numpy as np
 from ._richresult import RichResult

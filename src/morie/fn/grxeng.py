@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gradient of K-class softmax cross-entropy w.r.t. Theta_k."""
 import numpy as np
 from ._richresult import RichResult

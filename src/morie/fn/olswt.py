@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OLS with IPW weights for causal ATE estimation."""
 
 from __future__ import annotations

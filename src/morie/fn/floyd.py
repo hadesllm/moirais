@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Floyd-Warshall all-pairs shortest paths. 'I have spoken.' -- Kuiil"""
 
 from __future__ import annotations

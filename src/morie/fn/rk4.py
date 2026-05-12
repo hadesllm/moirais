@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fourth-order Runge-Kutta ODE solver."""
 
 import numpy as np
@@ -9,7 +9,7 @@ _QUOTE = "Stay on target. -- Gold Five"
 
 
 def runge_kutta4(f, y0, t_span, n_steps: int = 100, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Solve an ODE system using the classic 4th-order Runge-Kutta method.
 
     For :math:`\\dot{y} = f(t, y)`:

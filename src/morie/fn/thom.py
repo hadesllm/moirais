@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def torus_homology(dim: int = 2) -> DescriptiveResult:
-    """Compute homology groups of the n-dimensional torus T^n.
+    r"""Compute homology groups of the n-dimensional torus T^n.
 
     By the Kuenneth formula for the product of *n* circles:
     :math:`H_k(T^n; \\mathbb{Z}) \\cong \\mathbb{Z}^{\\binom{n}{k}}`

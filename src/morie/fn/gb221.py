@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Derivatives of quantile function Q_X(p): first and second order."""
 import numpy as np
 from ._richresult import RichResult

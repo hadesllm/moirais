@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classification tree leaf prediction (majority class)."""
 import numpy as np
 from ._richresult import RichResult

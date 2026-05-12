@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polyphase representation of filter."""
 
 from __future__ import annotations
@@ -7,14 +7,14 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The more you know, the more you realize you don't know. — Aristotle"
+_QUOTE = "The more you know, the more you realize you don't know. -- Aristotle"
 
 
 def polyphase_filter(
     h: np.ndarray,
     M: int = 2,
 ) -> DescriptiveResult:
-    """Polyphase decomposition of a filter into M sub-filters.
+    r"""Polyphase decomposition of a filter into M sub-filters.
 
     .. math::
 

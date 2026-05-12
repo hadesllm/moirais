@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (12) E( |Xn|I{|Xn |≥ a}) → E|X| − E( |X|I{|X |<a}) = E( |X|I{|X |≥ a})
+    Formula: [EQ] (12) E( |Xn|I{|Xn |≥ a}) -> E|X| − E( |X|I{|X |<a}) = E( |X|I{|X |≥ a})
 
     Parameters
     ----------

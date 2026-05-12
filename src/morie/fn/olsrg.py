@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OLS regression with full inference."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def ols_regression(
     *,
     add_intercept: bool = True,
 ) -> RegressionResult:
-    """Ordinary least squares with coefficients, SE, t, p, R2, adj-R2.
+    r"""Ordinary least squares with coefficients, SE, t, p, R2, adj-R2.
 
     Solves :math:`\\hat{\\beta} = (X^\\top X)^{-1} X^\\top y` and computes
     the usual OLS inference under homoscedasticity.

@@ -1,4 +1,4 @@
-"""Design effect (DEFF) — variance ratio vs SRS."""
+"""Design effect (DEFF) -- variance ratio vs SRS."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["design_effect"]
 
 def design_effect(y, weights, cluster):
     """
-    Design effect (DEFF) — variance ratio vs SRS
+    Design effect (DEFF) -- variance ratio vs SRS
 
     Formula: DEFF = Var_complex / Var_SRS
 
@@ -34,8 +34,8 @@ def design_effect(y, weights, cluster):
     n = len(y)
     result = float(np.mean(y))
     se = float(np.std(y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Design effect (DEFF) — variance ratio vs SRS"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Design effect (DEFF) -- variance ratio vs SRS"})
 
 
 def cheatsheet():
-    return "desigeff: Design effect (DEFF) — variance ratio vs SRS"
+    return "desigeff: Design effect (DEFF) -- variance ratio vs SRS"

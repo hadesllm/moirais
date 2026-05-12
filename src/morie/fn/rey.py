@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OLS linear regression. 'The belonging you seek is not behind you, it is ahead.' -- Maz Kanata"""
 
 from __future__ import annotations

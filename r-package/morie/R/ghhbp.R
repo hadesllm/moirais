@@ -7,12 +7,21 @@
 #' @param b_prior Gamma rate hyperparameter (default 1).
 #' @param M Integer number of MCMC iterations (default 400).
 #' @param seed Integer RNG seed (default 0).
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("ghhbp", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return Named list with estimate (alpha post mean), alpha_se,
 #'   alpha_draws, K_n, n, method.
 #' @export
 ghosal_hierarchical_bayes <- function(x, a_prior = 1.0, b_prior = 1.0,
-                                        M = 400, seed = 0) {
-  set.seed(seed)
+                                        M = 400, seed = 0,
+                                        deterministic_seed = NULL) {
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("ghhbp", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   x <- as.numeric(x); n <- length(x)
   if (n < 2) return(list(estimate = NA_real_, n = n,
                           method = "Hierarchical NP-Bayes (n<2)"))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Structural causal model (SCM) definition: (U, V, F) triple."""
 import numpy as np
 from ._richresult import RichResult

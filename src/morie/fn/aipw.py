@@ -1,8 +1,8 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """
 Augmented Inverse Probability Weighting (AIPW) doubly-robust estimator.
 
-Implements ``estimate_aipw`` — estimates the ATE with double robustness:
+Implements ``estimate_aipw`` -- estimates the ATE with double robustness:
 consistent if either the propensity score model or outcome model is correct.
 """
 
@@ -26,7 +26,7 @@ def estimate_aipw(
     covariates: list[str] | None = None,
     outcome_model: str = "logistic",
 ) -> dict[str, Any]:
-    """
+    r"""
     Estimate the ATE via the Augmented Inverse Probability Weighting (AIPW)
     doubly-robust estimator.
 

@@ -1,11 +1,11 @@
-"""morie.tps_hawkes_advanced — non-stationary Hawkes with non-exponential kernels.
+"""morie.tps_hawkes_advanced -- non-stationary Hawkes with non-exponential kernels.
 
 Implements the Kwan-Chen-Dunsmuir (2024, arXiv:2408.09710v1) methodology
 for Hawkes process likelihood inference when the baseline intensity is
 time-varying *and* the excitation kernel is non-exponential (so the
 intensity process is non-Markovian).
 
-Companion to ``morie.tps_stochastic`` — that module contains the
+Companion to ``morie.tps_stochastic`` -- that module contains the
 classical exponential-kernel constant-baseline (Markovian / Mohler 2011)
 fit; this module adds:
 
@@ -35,7 +35,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats as sps
 from scipy.optimize import minimize
-from scipy.special import gammainc, gammaln  # noqa: F401 — used inline
+from scipy.special import gammainc, gammaln  # noqa: F401 -- used inline
 
 from .fn._richresult import RichResult
 from .tps_hawkes_jit import has_jit_path, neg_loglik_jit
@@ -66,7 +66,7 @@ def _kernel_density(u: np.ndarray, kind: KernelKind,
     kind:
         One of ``"exponential"``, ``"gamma"``, ``"weibull"``, ``"lomax"``.
     psi:
-        Kernel-specific parameter tuple — see ``_n_kernel_params``.
+        Kernel-specific parameter tuple -- see ``_n_kernel_params``.
     """
     u = np.asarray(u, dtype=float)
     if kind == "exponential":
@@ -127,8 +127,8 @@ def _baseline(t: np.ndarray, kind: BaselineKind, alpha: tuple[float, ...],
               T: float) -> np.ndarray:
     """Baseline intensity ν(t) on [0, T] in events / day.
 
-    ``"constant"``  →  ν(t) = exp(a₀)  (one parameter, log-link).
-    ``"sinusoidal"``→  ν(t) = exp(a₀ + a₁·(t/T) + a₂ sin(2πt/365)
+    ``"constant"``  ->  ν(t) = exp(a₀)  (one parameter, log-link).
+    ``"sinusoidal"``->  ν(t) = exp(a₀ + a₁·(t/T) + a₂ sin(2πt/365)
                                        + a₃ cos(2πt/365)).
     """
     t = np.asarray(t, dtype=float)
@@ -145,13 +145,13 @@ def _baseline(t: np.ndarray, kind: BaselineKind, alpha: tuple[float, ...],
 
 def _baseline_integral(T: float, kind: BaselineKind,
                        alpha: tuple[float, ...]) -> float:
-    """∫_0^T ν(t) dt — closed form for constant, trapezoidal otherwise."""
+    """∫_0^T ν(t) dt -- closed form for constant, trapezoidal otherwise."""
     if kind == "constant":
         (a0,) = alpha
         return math.exp(a0) * T
     grid = np.linspace(0.0, T, max(64, int(T) + 1))
     vals = _baseline(grid, kind, alpha, T)
-    # NumPy 2.x renamed np.trapz → np.trapezoid; fall back for older.
+    # NumPy 2.x renamed np.trapz -> np.trapezoid; fall back for older.
     trapezoid = getattr(np, "trapezoid", None) or np.trapz
     return float(trapezoid(vals, grid))
 
@@ -166,7 +166,7 @@ def _n_baseline_params(kind: BaselineKind) -> int:
 def _split_theta(theta: np.ndarray, kernel_kind: KernelKind,
                  baseline_kind: BaselineKind
                  ) -> tuple[tuple[float, ...], float, tuple[float, ...]]:
-    """θ → (α-baseline, η-branching-ratio, ψ-kernel)."""
+    """θ -> (α-baseline, η-branching-ratio, ψ-kernel)."""
     nb = _n_baseline_params(baseline_kind)
     nk = _n_kernel_params(kernel_kind)
     if theta.size != nb + 1 + nk:
@@ -190,7 +190,7 @@ def _neg_loglik_general(theta: np.ndarray, t: np.ndarray, T: float,
 
         ∫_0^T λ(s) ds = ∫_0^T ν(s) ds + η Σᵢ F̃(T − tᵢ).
 
-    The intensity at events is computed by direct O(n²) summation —
+    The intensity at events is computed by direct O(n²) summation --
     correct for n ≲ 5 000.  For n ≫ 10⁴ a recursive update is needed
     only in the exponential-kernel case (other kernels lack the
     memorylessness required for O(n) recursion).
@@ -272,7 +272,7 @@ def fit_hawkes_general(t: np.ndarray, T: float,
     ``branching_ratio``, ``baseline_params``, ``kernel_params``,
     and the time-rescaling KS statistic.
     """
-    # Clip events strictly inside [0, T) — jittered timestamps that land at
+    # Clip events strictly inside [0, T) -- jittered timestamps that land at
     # or past T break the kernel-CDF integral term (negative^non-integer = NaN).
     t = np.asarray(t, dtype=float)
     t = t[(t >= 0.0) & (t < T)]
@@ -409,11 +409,11 @@ def hawkes_advanced_fit(df: pd.DataFrame, *,
     from .tps_stochastic import _try_savefig
 
     if "OCC_DATE" not in df.columns and "REPORT_DATE" not in df.columns:
-        return RichResult(title=f"Hawkes-{kernel}/{baseline} — {ds_name}",
+        return RichResult(title=f"Hawkes-{kernel}/{baseline} -- {ds_name}",
                           warnings=["no OCC_DATE or REPORT_DATE column"])
     t, T = _events_to_days(df, max_n)
     if t.size < 100:
-        return RichResult(title=f"Hawkes-{kernel}/{baseline} — {ds_name}",
+        return RichResult(title=f"Hawkes-{kernel}/{baseline} -- {ds_name}",
                           warnings=[f"only {t.size} timestamps"])
 
     result = fit_hawkes_general(t, T, kernel_kind=kernel,
@@ -426,7 +426,7 @@ def hawkes_advanced_fit(df: pd.DataFrame, *,
         u = np.array(result["rescaled_uniforms"])
         fig, ax = plt.subplots(1, 2, figsize=(10, 4))
         sps.probplot(u, dist="uniform", plot=ax[0])
-        ax[0].set_title(f"{ds_name} — Q-Q vs Uniform "
+        ax[0].set_title(f"{ds_name} -- Q-Q vs Uniform "
                          f"(KS p = {result['ks_pvalue']:.3f})")
         # density vs empirical
         ax[1].hist(u, bins=30, color="#3584e4", alpha=0.7,
@@ -435,7 +435,7 @@ def hawkes_advanced_fit(df: pd.DataFrame, *,
         ax[1].set_xlim(0, 1)
         ax[1].legend()
         ax[1].set_title(f"{kernel}/{baseline} kernel")
-        fig.suptitle(f"Time-rescaling residuals — {ds_name}")
+        fig.suptitle(f"Time-rescaling residuals -- {ds_name}")
         plt.tight_layout()
         fig_path = _try_savefig(
             f"hawkes_qq_{kernel}_{baseline}_{ds_name}.png", fig)
@@ -461,7 +461,7 @@ def hawkes_advanced_fit(df: pd.DataFrame, *,
         ("Time-rescaling KS p-value", round(result["ks_pvalue"], 4)),
     ]
     interp = (
-        f"Branching ratio η = {eta:.3f} → mean {eta:.2f} offspring "
+        f"Branching ratio η = {eta:.3f} -> mean {eta:.2f} offspring "
         f"per event. "
         + ("Process is stationary (η < 1)."
            if eta < 1 else "Process is EXPLOSIVE (η ≥ 1).")
@@ -473,7 +473,7 @@ def hawkes_advanced_fit(df: pd.DataFrame, *,
     payload = dict(result)
     payload["figure_path"] = fig_path
     return RichResult(
-        title=f"Hawkes [{kernel} kernel, {baseline} baseline] — {ds_name}",
+        title=f"Hawkes [{kernel} kernel, {baseline} baseline] -- {ds_name}",
         summary_lines=summary,
         interpretation=interp,
         payload=payload,
@@ -493,11 +493,11 @@ def compare_hawkes_kernels(df: pd.DataFrame, *,
     the non-Markovian non-stationary models are everything else.
     """
     if "OCC_DATE" not in df.columns and "REPORT_DATE" not in df.columns:
-        return RichResult(title=f"Hawkes comparison — {ds_name}",
+        return RichResult(title=f"Hawkes comparison -- {ds_name}",
                           warnings=["no OCC_DATE or REPORT_DATE column"])
     t, T = _events_to_days(df, max_n)
     if t.size < 100:
-        return RichResult(title=f"Hawkes comparison — {ds_name}",
+        return RichResult(title=f"Hawkes comparison -- {ds_name}",
                           warnings=[f"only {t.size} timestamps"])
 
     rows = []
@@ -548,7 +548,7 @@ def compare_hawkes_kernels(df: pd.DataFrame, *,
         "Kwan-Chen-Dunsmuir (2024)."
     )
     return RichResult(
-        title=f"Markovian vs non-Markovian Hawkes — {ds_name}",
+        title=f"Markovian vs non-Markovian Hawkes -- {ds_name}",
         summary_lines=summary,
         interpretation=interp,
         payload={"rows": rows, "best": best},
@@ -560,7 +560,7 @@ def hawkes_markovian_vs_nonmarkovian(df: pd.DataFrame, *,
                                        max_n: int = 4000) -> RichResult:
     """Focused 2-way comparison: classical exp/const vs gamma/sinusoidal.
 
-    The two endpoints of the Kwan-Chen-Dunsmuir framework — quickest to
+    The two endpoints of the Kwan-Chen-Dunsmuir framework -- quickest to
     run on the dashboard.
     """
     return compare_hawkes_kernels(

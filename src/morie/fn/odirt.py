@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ordinal IRT model estimation"""
 
 import numpy as np
@@ -28,7 +28,7 @@ def ordinal_irt_estimate(responses=None, *, dims=1, n=10, m=5):
 
 short = "odirt"
 alias = "ordinal_irt_estimate"
-quote = "We are what we repeatedly do. Excellence is not an act, but a habit. — Aristotle"
+quote = "We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle"
 ordinal_irt_estimate = ordinal_irt_estimate
 
 

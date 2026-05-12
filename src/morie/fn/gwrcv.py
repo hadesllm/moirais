@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GWR leave-one-out cross-validation score."""
 
 import numpy as np

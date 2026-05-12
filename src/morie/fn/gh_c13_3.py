@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Beta process prior definition: H ~ BP(c, H0) for cumulative hazard function."""
 import numpy as np
 from ._richresult import RichResult

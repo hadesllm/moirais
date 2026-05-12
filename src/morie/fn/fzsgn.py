@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Smoothed sign test (Fauzi Ch 5).
 
 Classical sign test counts S = #{X_i > theta_0}.  Fauzi's smoothed
@@ -32,7 +32,7 @@ def fauzi_smoothed_sign(x, theta0=0.0, h=None, alternative="two-sided"):
     n = len(x)
     if n < 5:
         return RichResult(payload={"statistic": np.nan, "p_value": np.nan,
-                                    "n": n, "method": "fzsgn — too few obs"})
+                                    "n": n, "method": "fzsgn -- too few obs"})
     if h is None:
         h = float(_silverman_h(x))
 

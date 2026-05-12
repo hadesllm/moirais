@@ -11,7 +11,7 @@ def chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: i=1(1 − Wi)ˆγ(Xi)2 → 1, imbalance in δm is op(n−1/2), each weight’s square is small
+    Formula: i=1(1 − Wi)ˆγ(Xi)2 -> 1, imbalance in δm is op(n−1/2), each weight’s square is small
 
     Parameters
     ----------

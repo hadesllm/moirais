@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Log-rank test for comparing two survival curves."""
 
 from __future__ import annotations

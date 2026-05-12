@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hard voting classifier: majority class vote among base models."""
 import numpy as np
 from ._richresult import RichResult

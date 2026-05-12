@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Patience is bitter, but its fruit is sweet. — Aristotle"""
+# morie.fn -- function file (hadesllm/morie)
+"""Patience is bitter, but its fruit is sweet. -- Aristotle"""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 
 
 def cochran_mantel(strata: list[np.ndarray], cdf=None) -> DescriptiveResult:
-    """
+    r"""
     Cochran-Mantel-Haenszel (CMH) test for conditional independence
     across K 2x2 stratified tables.
 

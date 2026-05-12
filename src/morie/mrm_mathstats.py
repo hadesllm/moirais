@@ -10,15 +10,15 @@ Primary references:
     Lehmann, E. L. & Romano, J. P. (2005). Testing Statistical Hypotheses.
 
 Public callables:
-    mrm_oneprop_test(x, n, p0)   — exact-binomial + Wald one-prop test
+    mrm_oneprop_test(x, n, p0)   -- exact-binomial + Wald one-prop test
     mrm_twoprop_test(x1, n1, x2, n2)
-                                  — chi-square + Fisher exact + Wald
+                                  -- chi-square + Fisher exact + Wald
     mrm_var_test(sample, sigma0_sq)
-                                  — chi-square test for σ² (Wilks 1962)
-    mrm_qq_plot(sample, dist)    — Q-Q plot coordinates
+                                  -- chi-square test for σ² (Wilks 1962)
+    mrm_qq_plot(sample, dist)    -- Q-Q plot coordinates
     mrm_clt_demo(base_distribution, n_samples, sample_size)
-                                  — Central Limit Theorem demonstrator
-    mrm_pit(sample, dist)        — Probability Integral Transform
+                                  -- Central Limit Theorem demonstrator
+    mrm_pit(sample, dist)        -- Probability Integral Transform
 """
 
 from __future__ import annotations
@@ -68,7 +68,7 @@ def mrm_oneprop_test(
         x: number of successes.
         n: number of trials.
         p0: null-hypothesis proportion.
-        alpha: CI level (default 0.05 → 95% CI).
+        alpha: CI level (default 0.05 -> 95% CI).
     """
     if n <= 0 or x < 0 or x > n:
         raise ValueError("invalid x, n")
@@ -297,7 +297,7 @@ def mrm_pit(sample: Iterable[float], *, dist: str = "norm", **dist_kwargs) -> pd
     x = np.asarray([v for v in sample if np.isfinite(v)], dtype=float)
     pdist = getattr(stats, dist)
     U = pdist.cdf(x, **dist_kwargs)
-    # KS test of U against Uniform(0,1) — diagnostic for fit quality
+    # KS test of U against Uniform(0,1) -- diagnostic for fit quality
     ks = stats.kstest(U, "uniform")
     out = pd.DataFrame({"raw": x, "U": U})
     out.attrs["ks_stat"] = float(ks.statistic)

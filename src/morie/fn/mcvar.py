@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Monte Carlo variance reduction techniques."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hohmann transfer orbit computation. 'Ain't no thing like me, except me.' -- Rocket"""
 
 from __future__ import annotations

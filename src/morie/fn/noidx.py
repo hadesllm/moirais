@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Noise exposure assessment (TWA dBA)."""
 
 import numpy as np

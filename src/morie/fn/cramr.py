@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cramer-Rao bound."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def cramer_rao_bound(fisher_info: float, n: int = 1, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Cramer-Rao lower bound on estimator variance.
 
     .. math::

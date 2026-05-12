@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dirichlet marginals: subset-sum of Dirichlet components is Beta distributed."""
 import numpy as np
 from ._richresult import RichResult

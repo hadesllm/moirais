@@ -1,12 +1,12 @@
 from ._richresult import RichResult
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Binary erasure channel capacity."""
 
 __all__ = ["becch"]
 
 
 def becch(epsilon: float) -> dict:
-    """
+    r"""
     Capacity of a binary erasure channel (BEC).
 
     .. math::

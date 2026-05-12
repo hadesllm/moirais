@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Direct standardization (age-adjusted rates)."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def direct_standardization(
     standard_pop: list[float] | np.ndarray,
     confidence: float = 0.95,
 ) -> ESRes:
-    """Compute directly age-standardized rate.
+    r"""Compute directly age-standardized rate.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Biweight midcorrelation. 'Truly wonderful the mind of a child is.'"""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def biweight_midcorrelation(x: np.ndarray, y: np.ndarray) -> DescriptiveResult:
-    """Biweight midcorrelation (bicor) — robust alternative to Pearson r.
+    """Biweight midcorrelation (bicor) -- robust alternative to Pearson r.
 
     Uses Tukey's biweight function to downweight outliers.  The
     measure has a 50% breakdown point while retaining high

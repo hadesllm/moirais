@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Block kriging — areal prediction (Schabenberger & Gotway Ch 5)."""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Block kriging -- areal prediction (Schabenberger & Gotway Ch 5)."""
 
 import numpy as np
 from scipy.spatial.distance import cdist

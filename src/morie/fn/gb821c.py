@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Confidence interval for location shift from Wilcoxon rank-sum test."""
 import numpy as np
 from scipy import stats

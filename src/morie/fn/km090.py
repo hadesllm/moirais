@@ -1,4 +1,4 @@
-"""Co occurrence bias.."""
+r"""Co occurrence bias.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_co_occurrence_bias"]
 
 
 def kamath_ch6_co_occurrence_bias(w, A_i, A_j):
-    """
+    r"""
     Co occurrence bias.
 
     Formula: \text{Co-Occurrence Bias Score}(w) = \log\frac{P(w|A_i)}{P(w|A_j)}
@@ -29,7 +29,7 @@ def kamath_ch6_co_occurrence_bias(w, A_i, A_j):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.14, p. 236
-    """
+    r"""
     w = np.atleast_1d(np.asarray(w, dtype=float))
     n = len(w)
     result = float(np.mean(w))

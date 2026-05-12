@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EEG rhythm band classification (delta/theta/alpha/beta/gamma)."""
 import numpy as np
 from ._richresult import RichResult

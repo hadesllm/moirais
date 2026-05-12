@@ -15,7 +15,7 @@ def wigner_ville(
     *,
     nfft: int | None = None,
 ) -> DescriptiveResult:
-    """Compute the Wigner-Ville distribution (WVD).
+    r"""Compute the Wigner-Ville distribution (WVD).
 
     The WVD is a bilinear time-frequency representation defined as:
 

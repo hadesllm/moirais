@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Anderson-Darling test for Normality with R-style verbose result."""
 
 from typing import Sequence, Union

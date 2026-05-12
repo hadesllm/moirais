@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ramanujan tau function from the discriminant modular form."""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def ramanujan_tau(
     n: int = 1,
     n_max: int | None = None,
 ) -> DescriptiveResult:
-    """Compute the Ramanujan tau function tau(n).
+    r"""Compute the Ramanujan tau function tau(n).
 
     The Ramanujan tau function is defined via the discriminant:
 

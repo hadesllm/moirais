@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partially linear model (Robinson 1988)."""
 
 from __future__ import annotations

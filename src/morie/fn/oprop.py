@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OTIS proportion test across groups."""
 
 from __future__ import annotations

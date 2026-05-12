@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric mixture model via EM (Horowitz 2009, Ch 11).
 
 Two-component Gaussian mixture (the canonical workhorse for the

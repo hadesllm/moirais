@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multiple Imputation by Chained Equations (MICE)."""
 
 from __future__ import annotations

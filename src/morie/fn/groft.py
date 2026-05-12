@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Overfitting gap: training accuracy minus validation accuracy."""
 import numpy as np
 from ._richresult import RichResult

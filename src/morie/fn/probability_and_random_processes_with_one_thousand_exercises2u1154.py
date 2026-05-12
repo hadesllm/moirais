@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: function satisfying φ( t) = 1 − c|t| + o( t) as t → 0, where c > 0. Show that, as n → ∞ , the
+    Formula: function satisfying φ( t) = 1 − c|t| + o( t) as t -> 0, where c > 0. Show that, as n -> ∞ , the
 
     Parameters
     ----------

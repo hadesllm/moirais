@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Median frequency."""
 
 from __future__ import annotations
@@ -7,11 +7,11 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "There are no facts, only interpretations. — Friedrich Nietzsche"
+_QUOTE = "There are no facts, only interpretations. -- Friedrich Nietzsche"
 
 
 def median_frequency(x, fs: float = 1.0, **kwargs) -> DescriptiveResult:
-    """Compute the median frequency of the power spectrum.
+    r"""Compute the median frequency of the power spectrum.
 
     The median frequency *f_med* satisfies:
 

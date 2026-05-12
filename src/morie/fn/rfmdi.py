@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random forest mean decrease in impurity (MDI) variable importance."""
 import numpy as np
 from ._richresult import RichResult

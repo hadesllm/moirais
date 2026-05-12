@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Competing risks analysis for recidivism."""
 
 from __future__ import annotations

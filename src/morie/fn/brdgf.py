@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BayesA via Gibbs sampler (per-marker variance scaled-inverse-chi^2)."""
 from __future__ import annotations
 
@@ -10,8 +10,9 @@ __all__ = ["bayes_ridge_gibbs"]
 
 
 def bayes_ridge_gibbs(x, y, n_iter: int = 200, burn: int = 50,
-                      df0: float = 4.0, S0: float | None = None, seed: int = 0):
-    """BayesA — Meuwissen, Hayes & Goddard (2001).
+                      df0: float = 4.0, S0: float | None = None, seed: int = 0,
+                      deterministic_seed: int | None = None):
+    """BayesA -- Meuwissen, Hayes & Goddard (2001).
 
     Model::
 
@@ -29,6 +30,11 @@ def bayes_ridge_gibbs(x, y, n_iter: int = 200, burn: int = 50,
     df0 : float, default 4
     S0 : float, optional. Prior scale; default anchors prior mode to var(y)/p.
     seed : int
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged.
 
     Returns
     -------
@@ -42,7 +48,11 @@ def bayes_ridge_gibbs(x, y, n_iter: int = 200, burn: int = 50,
         Genetics, 157(4), 1819-1829.
     Montesinos Lopez et al. (2022), Ch. 4.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("brdgf", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     X = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float).ravel()
     if X.ndim == 1:
@@ -121,7 +131,7 @@ def bayes_ridge_gibbs(x, y, n_iter: int = 200, burn: int = 50,
             "p": p,
             "method": "BayesA (Meuwissen-Hayes-Goddard) short Gibbs",
         },
-        warnings=["Short chain (default 200 / 50 burn) — for publication "
+        warnings=["Short chain (default 200 / 50 burn) -- for publication "
                   "posteriors use BGLR with ≥10k iters."],
     )
 

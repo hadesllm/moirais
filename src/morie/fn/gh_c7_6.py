@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polya tree density estimation: posterior consistent at Lipschitz densities."""
 import numpy as np
 from ._richresult import RichResult

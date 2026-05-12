@@ -10,7 +10,7 @@ _QUOTE = "Truly wonderful, the mind of a child is."
 
 
 def thd_compute(x, fs: float = 1.0, n_harmonics: int = 5, **kwargs) -> DescriptiveResult:
-    """Compute total harmonic distortion (THD).
+    r"""Compute total harmonic distortion (THD).
 
     .. math::
 

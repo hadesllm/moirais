@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Return-level estimation for GEV-fitted block maxima (Coles 2001, Ch. 3).
 
 For block-maxima with GEV(mu, sigma, xi), the level exceeded once every

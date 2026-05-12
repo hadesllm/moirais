@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bai-Perron structural break test (simplified OLS-based)."""
 
 import numpy as np
@@ -76,7 +76,7 @@ def bp_ts(
     # m = 0: no breaks
     rss0 = _segment_rss(0, n)
     if rss0 < 1e-12:
-        # Perfect fit with no breaks — no structural break possible
+        # Perfect fit with no breaks -- no structural break possible
         return {
             "n_breaks": 0,
             "break_indices": [],

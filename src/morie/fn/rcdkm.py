@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kaplan-Meier survival curve for recidivism."""
 
 from __future__ import annotations

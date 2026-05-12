@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Enigma cipher / substitution cipher analysis. 'Riddle me this.' -- The Riddler"""
 
 from __future__ import annotations

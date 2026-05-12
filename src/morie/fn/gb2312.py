@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """S_n(x) is a consistent estimator of F(x); converges in probability."""
 import numpy as np
 from ._richresult import RichResult

@@ -11,7 +11,7 @@ def david_j_morin_probability_for_the_enthusiastic_beginner_chapter_4_equation_3
     """
     GeneralStatistics equation extracted from David J. Morin - Probability  For the Enthusiastic Beginner.
 
-    Formula: the size of the product λt = λnϵ.) In the ϵ → 0 limit (and hence n → ∞ limit), we
+    Formula: the size of the product λt = λnϵ.) In the ϵ -> 0 limit (and hence n -> ∞ limit), we
 
     Parameters
     ----------

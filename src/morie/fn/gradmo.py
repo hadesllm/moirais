@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Adam optimizer step (bias-corrected first and second moments)."""
 import numpy as np
 from ._richresult import RichResult

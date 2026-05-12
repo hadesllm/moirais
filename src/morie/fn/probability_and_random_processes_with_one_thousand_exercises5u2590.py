@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: by linearity and the isometry of µ . Now ⟨Jλ,λ + h, Jλ,λ + h⟩ → 0 as h ↓ 0, and (8) has been
+    Formula: by linearity and the isometry of µ . Now ⟨Jλ,λ + h, Jλ,λ + h⟩ -> 0 as h ↓ 0, and (8) has been
 
     Parameters
     ----------

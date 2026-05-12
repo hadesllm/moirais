@@ -1,4 +1,4 @@
-"""Conditional probability that defines an autoregressive language model: distribution over the next token given an L-token context.."""
+r"""Conditional probability that defines an autoregressive language model: distribution over the next token given an L-token context.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch2_lm_next_token"]
 
 
 def burkov_lm_ch2_lm_next_token(t_next, s):
-    """
+    r"""
     Conditional probability that defines an autoregressive language model: distribution over the next token given an L-token context.
 
     Formula: \Pr\!\bigl(t = t_{L+1} \mid \mathbf{s} = (t_1, t_2, \ldots, t_L)\bigr)

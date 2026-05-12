@@ -6,11 +6,11 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "You have power over your mind — not outside events. — Marcus Aurelius"
+_QUOTE = "You have power over your mind -- not outside events. -- Marcus Aurelius"
 
 
 def rectangular_window(N: int, **kwargs) -> DescriptiveResult:
-    """Generate a rectangular window of length *N*.
+    r"""Generate a rectangular window of length *N*.
 
     .. math::
 

@@ -11,7 +11,7 @@ def chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter_10_unnu
     """
     Resampling expression (auto-extracted; see ref).
 
-    Formula: covering δ ↦→ ψ(δ) via the multiplier bootstrap and use the bands to test for no treatment effect, as in
+    Formula: covering δ ↦-> ψ(δ) via the multiplier bootstrap and use the bands to test for no treatment effect, as in
 
     Parameters
     ----------

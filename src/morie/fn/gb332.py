@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Distribution of lengths of runs of type 1 objects marginally."""
 import numpy as np
 from ._richresult import RichResult

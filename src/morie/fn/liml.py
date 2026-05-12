@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Limited information maximum likelihood (LIML) estimator."""
 
 from __future__ import annotations

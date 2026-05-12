@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Probit stick-breaking process: V_k(x) = Phi(a_k + b_k'x) for covariate-dependent DP."""
 import numpy as np
 from ._richresult import RichResult

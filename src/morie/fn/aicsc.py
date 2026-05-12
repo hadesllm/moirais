@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Akaike Information Criterion for AR model order selection."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "The ability to speak does not make you intelligent."
 
 
 def aic_score_fn(x: np.ndarray, max_order: int = 20) -> DescriptiveResult:
-    """Compute AIC for AR model orders 1..max_order.
+    r"""Compute AIC for AR model orders 1..max_order.
 
     .. math::
 

@@ -4,7 +4,7 @@ from scipy import stats
 
 from ._richresult import RichResult, hypothesis_test_result
 
-__all__ = ["Errors using inadequate data are much less than those using no data at all. — Charles Babbage"]
+__all__ = ["Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"]
 
 
 def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_28(x, cdf=None):
@@ -26,7 +26,7 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
         Inherits from ``dict`` (so ``isinstance(result, dict)`` is True
         and ``result["statistic"]`` / ``result.get(...)`` keep working),
         but also exposes a multi-section ``str(result)`` render. Keys: value.
-        See ``morie.fn.describe('Errors using inadequate data are much less than those using no data at all. — Charles Babbage')`` for the full guide.
+        See ``morie.fn.describe('Errors using inadequate data are much less than those using no data at all. -- Charles Babbage')`` for the full guide.
 
     References
     ----------
@@ -69,4 +69,4 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
 
 
 def cheatsheet():
-    return "Errors using inadequate data are much less than those using no data at all. — Charles Babbage"
+    return "Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"

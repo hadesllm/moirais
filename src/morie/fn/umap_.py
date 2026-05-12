@@ -1,4 +1,4 @@
-"""UMAP (Uniform Manifold Approximation and Projection) — simplified."""
+"""UMAP (Uniform Manifold Approximation and Projection) -- simplified."""
 
 from __future__ import annotations
 
@@ -106,7 +106,7 @@ def umap_(
     D = squareform(pdist(X, metric="euclidean"))
     W = _fuzzy_simplicial_set(D, min(n_neighbors, n - 1))
 
-    # Smooth min_dist → a, b parameters for the output metric
+    # Smooth min_dist -> a, b parameters for the output metric
     # Approximate: phi(d) = 1 / (1 + a * d^(2b))
     # For min_dist ~ 0.1: a ~ 1.93, b ~ 0.79 (from UMAP paper fitting)
     a = 1.93 if min_dist <= 0.1 else 1.0 / min_dist
@@ -150,4 +150,4 @@ def umap_(
 
 
 def cheatsheet() -> str:
-    return "_fuzzy_simplicial_set({}) -> UMAP (Uniform Manifold Approximation and Projection) — simpl"
+    return "_fuzzy_simplicial_set({}) -> UMAP (Uniform Manifold Approximation and Projection) -- simpl"

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Normalized completely random measure: G = M(.)/M(X) for CRM M."""
 import numpy as np
 from ._richresult import RichResult

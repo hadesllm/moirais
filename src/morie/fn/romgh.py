@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hierarchical omega per subscale."""
 
 from __future__ import annotations

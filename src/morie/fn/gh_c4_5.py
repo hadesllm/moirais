@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Self-similarity of DP: conditional distribution given partition is again DP."""
 import numpy as np
 from ._richresult import RichResult

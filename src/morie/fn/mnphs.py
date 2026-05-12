@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Minimum phase correspondent of a signal."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import SignalResult
 def minimum_phase_correspondent(x: np.ndarray) -> SignalResult:
     """Compute the minimum-phase correspondent via cepstral windowing.
 
-    'Time discovers truth. — Seneca'
+    'Time discovers truth. -- Seneca'
     """
     from morie._waveform import minimum_phase_correspondent as _backend
 

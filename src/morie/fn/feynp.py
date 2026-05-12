@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Feynman path integral (1D harmonic oscillator)."""
 
 __all__ = ["feynp"]
@@ -17,7 +17,7 @@ def feynp(
     seed: int = 42,
     hbar: float = 1.0,
 ) -> dict:
-    """
+    r"""
     Evaluate the Feynman path integral for a 1D harmonic oscillator
     using Monte Carlo sampling, and compare with the exact propagator.
 

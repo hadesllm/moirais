@@ -20,7 +20,7 @@ def sveir_model(
     t_max: int = 200,
     dt: float = 1.0,
 ) -> SIRResult:
-    """Simulate an SVEIR model with vaccination and exposed class.
+    r"""Simulate an SVEIR model with vaccination and exposed class.
 
     .. math::
 

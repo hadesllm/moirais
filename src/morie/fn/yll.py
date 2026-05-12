@@ -12,7 +12,7 @@ def years_of_life_lost(
     *,
     life_expectancy: float = 80.0,
 ) -> dict[str, Any]:
-    """
+    r"""
     Compute Years of Life Lost (YLL).
 
     .. math::

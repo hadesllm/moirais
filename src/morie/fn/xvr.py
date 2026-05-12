@@ -12,7 +12,7 @@ def partial_corr_matrix(
     *,
     regularize: float = 1e-6,
 ) -> DescriptiveResult:
-    """Compute the partial correlation matrix (brain connectivity proxy).
+    r"""Compute the partial correlation matrix (brain connectivity proxy).
 
     The partial correlation between variables *i* and *j* given all others
     is derived from the precision matrix (inverse covariance):

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sparse attention pattern (Child et al. 2019, Sparse Transformer)."""
 from __future__ import annotations
 

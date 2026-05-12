@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heteroskedastic IRT (Lauderdale 2010): per-legislator variation in uncertainty."""
 import numpy as np
 from ._richresult import RichResult

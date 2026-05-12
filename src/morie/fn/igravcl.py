@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gravity model calibration (beta estimation)."""
 
 import numpy as np

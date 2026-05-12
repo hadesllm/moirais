@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """KS statistics D_n, D+_n, D-_n are distribution-free under H0."""
 import numpy as np
 from scipy import stats

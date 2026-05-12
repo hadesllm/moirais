@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Preference circles for visualization. 'Instant Transmission.' -- Goku, Dragon Ball Z"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Autocorrelation function of residuals for whiteness testing."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"
+_QUOTE = "Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"
 
 
 def residual_acf_fn(residuals: np.ndarray, nlags: int = 20) -> DescriptiveResult:

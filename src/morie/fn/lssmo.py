@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LOESS/LOWESS smoother. 'Rebellions are built on hope.' -- Jyn Erso"""
 
 from __future__ import annotations

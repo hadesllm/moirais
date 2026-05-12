@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Klotz normal-scores scale test."""
 import numpy as np
 from scipy import stats

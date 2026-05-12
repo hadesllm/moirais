@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Data cleaning / denoising pipeline. 'I can fix that!' -- Ratchet"""
 
 from __future__ import annotations

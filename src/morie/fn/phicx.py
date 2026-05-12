@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Phi complexity (integrated information)."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def phi_complexity(cov_matrix, partition: list[list[int]] | None = None, **kwargs) -> ESRes:
-    """
+    r"""
     Compute phi (integrated information) for Gaussian variables.
 
     Phi measures how much a system is more than the sum of its parts.

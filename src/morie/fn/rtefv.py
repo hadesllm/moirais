@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Effective reproduction number Rt (EpiEstim-style)."""
 
 from __future__ import annotations

@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_131(x):
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: stationary—we have C(h) = Cov[Z(s), Z(s + h)] = Cov[Z(t − h), Z(t)] =
+    Formula: stationary--we have C(h) = Cov[Z(s), Z(s + h)] = Cov[Z(t − h), Z(t)] =
 
     Parameters
     ----------

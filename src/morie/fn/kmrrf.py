@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Reciprocal Rank Fusion across multiple rankers."""
 import numpy as np
 from ._richresult import RichResult

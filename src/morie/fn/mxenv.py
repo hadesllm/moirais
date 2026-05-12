@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multi-environment genomic model: environment as factor in LMM."""
 import numpy as np
 from ._richresult import RichResult

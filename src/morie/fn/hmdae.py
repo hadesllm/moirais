@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Denoising autoencoder: reconstruct clean input from corrupted."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discount future costs/effects."""
 
 import numpy as np
@@ -11,7 +11,7 @@ def discount_rate(
     years: list | np.ndarray,
     rate: float = 0.03,
 ) -> DescriptiveResult:
-    """Discount future values to present value.
+    r"""Discount future values to present value.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Single-index model for conditional mean: E[Y|X]=G(X'beta)."""
 import numpy as np
 from ._richresult import RichResult

@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: implies that E(Xn − 1)r → 0. It is to be noted thatE|Xn − 1|2k =
+    Formula: implies that E(Xn − 1)r -> 0. It is to be noted thatE|Xn − 1|2k =
 
     Parameters
     ----------

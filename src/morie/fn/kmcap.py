@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Per-expert token capacity with capacity factor C."""
 import numpy as np
 from ._richresult import RichResult

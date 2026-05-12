@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Minimum Description Length for AR model order selection."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "There is always a bigger fish."
 
 
 def mdl_score_fn(x: np.ndarray, max_order: int = 20) -> DescriptiveResult:
-    """Compute MDL (Rissanen) for AR model orders 1..max_order.
+    r"""Compute MDL (Rissanen) for AR model orders 1..max_order.
 
     .. math::
 

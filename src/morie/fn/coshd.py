@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cosh spectral distance."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Let go of your hate."
 
 
 def cosh_distance(S1, S2, **kwargs) -> DescriptiveResult:
-    """Compute the cosh spectral distance.
+    r"""Compute the cosh spectral distance.
 
     .. math::
 

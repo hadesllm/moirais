@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nelson-Aalen cumulative hazard (Kosorok 2008, Ch 8).
 
 Lambda_hat(t) = sum_{t_i <= t} d_i / Y_i, with d_i events at event

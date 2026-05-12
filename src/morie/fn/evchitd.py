@@ -10,7 +10,7 @@ def evt_chi_tail_dependence(x, y, u):
     """
     Tail dependence coefficient χ for two series
 
-    Formula: χ = lim_{u→1} P(F_X(X)>u | F_Y(Y)>u)
+    Formula: χ = lim_{u->1} P(F_X(X)>u | F_Y(Y)>u)
 
     Parameters
     ----------

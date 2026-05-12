@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Channel equalization (inverse filter)."""
 
 from __future__ import annotations

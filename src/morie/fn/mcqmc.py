@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Quasi-Monte Carlo low-discrepancy integration."""
 
 import numpy as np

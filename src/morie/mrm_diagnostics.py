@@ -8,26 +8,26 @@ designexptr.org Chapter 7 (Causal Inference) coverage audit.
 Primary references:
     Imbens, G. W., & Rubin, D. B. (2015). Causal Inference for Statistics,
         Social and Biomedical Sciences. Cambridge University Press.
-        — standardised-difference / balance / overlap diagnostics
+        -- standardised-difference / balance / overlap diagnostics
     Rosenbaum, P. R., & Rubin, D. B. (1985). Constructing a control
         group using multivariate matched sampling methods that incorporate
         the propensity score. The American Statistician, 39(1), 33-38.
-        — balancing-property formalisation
+        -- balancing-property formalisation
     Cole, S. R., & Hernán, M. A. (2008). Constructing inverse probability
         weights for marginal structural models. AJE, 168(6), 656-664.
-        — positivity violation diagnostics
+        -- positivity violation diagnostics
 
 Public callables:
     mrm_standardised_difference(data, treatment, covariates)
-        — Imbens-Rubin %SMD for every covariate, pre- vs post-adjustment.
+        -- Imbens-Rubin %SMD for every covariate, pre- vs post-adjustment.
     mrm_check_balancing(data, treatment, covariates, threshold=10)
-        — composite balance verdict (Rosenbaum-Rubin threshold = 10%).
+        -- composite balance verdict (Rosenbaum-Rubin threshold = 10%).
     mrm_check_overlap(data, treatment, covariates)
-        — propensity-score support overlap; flags positivity violations.
+        -- propensity-score support overlap; flags positivity violations.
     mrm_median_causal_effect(data, treatment, outcome, covariates)
-        — median(Y(1)) - median(Y(0)) via PS-matching counterfactual.
+        -- median(Y(1)) - median(Y(0)) via PS-matching counterfactual.
     mrm_assumptions_check(data, treatment, outcome, covariates)
-        — composite SUTVA / unconfoundedness / probabilistic-assignment
+        -- composite SUTVA / unconfoundedness / probabilistic-assignment
           audit; returns a verdict per assumption with diagnostic statistics.
 """
 
@@ -287,7 +287,7 @@ def mrm_assumptions_check(
         (b) a clustering-of-residuals statistic.
       Unconfoundedness (no unmeasured confounders):
         We cannot test this from data alone either; we report:
-        (a) E-value from the existing ATE — the minimum unmeasured-
+        (a) E-value from the existing ATE -- the minimum unmeasured-
             confounder strength that would explain away the effect;
         (b) covariate balance after adjustment.
       Probabilistic assignment / positivity:
@@ -306,7 +306,7 @@ def mrm_assumptions_check(
     }
     unconf = {
         "verdict": ("plausible (after adjustment)" if balance.overall_balanced
-                    else "questionable — covariate imbalance remains"),
+                    else "questionable -- covariate imbalance remains"),
         "evidence": balance.interpretation,
     }
     pos = {

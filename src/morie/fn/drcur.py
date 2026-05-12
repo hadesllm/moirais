@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dose-response curve modeling (log-logistic)."""
 
 from __future__ import annotations

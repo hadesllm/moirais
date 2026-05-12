@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEM Kelejian-Prucha IV/2SLS estimator."""
 
 import numpy as np

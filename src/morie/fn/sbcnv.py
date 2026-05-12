@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bootstrap convergence diagnostic."""
 
 from __future__ import annotations

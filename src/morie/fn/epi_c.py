@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Epidemic curve (epi curve) construction."""
 
 import numpy as np

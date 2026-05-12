@@ -1,4 +1,4 @@
-"""Equivalent shorthand notations for the autoregressive next-token probability used throughout the book.."""
+r"""Equivalent shorthand notations for the autoregressive next-token probability used throughout the book.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch2_lm_shorthand"]
 
 
 def burkov_lm_ch2_lm_shorthand(t_next, s):
-    """
+    r"""
     Equivalent shorthand notations for the autoregressive next-token probability used throughout the book.
 
     Formula: \Pr(t_{L+1} \mid t_1, t_2, \ldots, t_L) \quad \text{or} \quad \Pr(t_{L+1} \mid \mathbf{s})

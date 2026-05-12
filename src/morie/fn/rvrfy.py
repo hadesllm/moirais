@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Render a verification report to the terminal."""
 
 from morie.inspector import render_verification as _fn

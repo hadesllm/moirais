@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multinomial probit for spatial choice (Armstrong Ch 9)."""
 import numpy as np
 from scipy.stats import norm
@@ -14,7 +14,7 @@ def multinomial_probit_spatial(x, n_draws: int = 2000, seed: int = 0):
     Computes P(choice j) for utility matrix U of shape (n_obs, n_alt):
         eps ~ N(0, I), choice = argmax_j (U_ij + eps_j)
     Probability estimated by GHK-style Monte Carlo (independent Gaussian
-    errors — sufficient for the IIA-relaxed spatial-choice case in
+    errors -- sufficient for the IIA-relaxed spatial-choice case in
     Armstrong Ch 9).
 
     Parameters
@@ -61,7 +61,7 @@ mnpbt = multinomial_probit_spatial
 
 
 def cheatsheet():
-    return "mnpbt: Multinomial probit — GHK Monte-Carlo choice probs."
+    return "mnpbt: Multinomial probit -- GHK Monte-Carlo choice probs."
 
 
 # CANONICAL TEST

@@ -276,7 +276,7 @@ def estimate_aipw(
 
     **Double robustness**: the estimator is consistent if *either* the
     propensity score model :math:`\\hat{e}(X)` or the outcome model
-    :math:`\\hat{\\mu}(T, X)` is correctly specified — not necessarily both.
+    :math:`\\hat{\\mu}(T, X)` is correctly specified -- not necessarily both.
 
     :param data: The input DataFrame.
     :type data: pandas.DataFrame
@@ -495,7 +495,7 @@ def run_ebac_selection_ipw_analysis(
     )
     # Additional IPW diagnostic outputs (match MODULE_SPECS expectations)
 
-    # Weight diagnostics — detailed per-observation weight summary
+    # Weight diagnostics -- detailed per-observation weight summary
     weight_diag = pd.DataFrame(
         {
             "metric": [
@@ -523,7 +523,7 @@ def run_ebac_selection_ipw_analysis(
         }
     )
 
-    # Logistic OR — full coefficient table from the IPW logistic model
+    # Logistic OR -- full coefficient table from the IPW logistic model
     ipw_logistic_conf = fit_bin.conf_int()
     ipw_logistic_or = pd.DataFrame(
         {
@@ -538,7 +538,7 @@ def run_ebac_selection_ipw_analysis(
         }
     )
 
-    # Linear coefficients — full table
+    # Linear coefficients -- full table
     ipw_linear_conf = fit_lin.conf_int()
     ipw_linear_coefs = pd.DataFrame(
         {
@@ -552,7 +552,7 @@ def run_ebac_selection_ipw_analysis(
         }
     )
 
-    # Cannabis comparison — extended with unweighted estimates
+    # Cannabis comparison -- extended with unweighted estimates
     unadj_bin = smf.glm(
         formula=logit_formula,
         data=observed,
@@ -577,7 +577,7 @@ def run_ebac_selection_ipw_analysis(
         ignore_index=True,
     )
 
-    # Observation model OR — from the selection model
+    # Observation model OR -- from the selection model
     obs_conf = obs_model.conf_int()
     obs_model_or = pd.DataFrame(
         {
@@ -591,7 +591,7 @@ def run_ebac_selection_ipw_analysis(
         }
     )
 
-    # Covariate balance — standardised mean differences before/after IPW
+    # Covariate balance -- standardised mean differences before/after IPW
     balance_rows = []
     for cov in covariates:
         if cov not in observed.columns:
@@ -644,7 +644,7 @@ def run_ebac_selection_ipw_analysis(
 
 
 # ---------------------------------------------------------------------------
-# ATT — Average Treatment Effect on the Treated
+# ATT -- Average Treatment Effect on the Treated
 # ---------------------------------------------------------------------------
 
 
@@ -754,7 +754,7 @@ def estimate_att(
 
 
 # ---------------------------------------------------------------------------
-# ATC — Average Treatment Effect on the Controls
+# ATC -- Average Treatment Effect on the Controls
 # ---------------------------------------------------------------------------
 
 
@@ -848,7 +848,7 @@ def estimate_atc(
 
 
 # ---------------------------------------------------------------------------
-# GATE — Group Average Treatment Effect
+# GATE -- Group Average Treatment Effect
 # ---------------------------------------------------------------------------
 
 
@@ -944,7 +944,7 @@ def estimate_gate(
 
 
 # ---------------------------------------------------------------------------
-# CATE — Conditional Average Treatment Effect (T-learner / S-learner)
+# CATE -- Conditional Average Treatment Effect (T-learner / S-learner)
 # ---------------------------------------------------------------------------
 
 
@@ -1031,7 +1031,7 @@ def estimate_cate(
 
 
 # ---------------------------------------------------------------------------
-# LATE — Local Average Treatment Effect (IV / 2SLS)
+# LATE -- Local Average Treatment Effect (IV / 2SLS)
 # ---------------------------------------------------------------------------
 
 
@@ -1227,7 +1227,7 @@ def estimate_late(
 
 
 # ---------------------------------------------------------------------------
-# IRM — Interactive Regression Model via DoubleML
+# IRM -- Interactive Regression Model via DoubleML
 # ---------------------------------------------------------------------------
 
 
@@ -1305,8 +1305,8 @@ def estimate_irm(
         x_cols=covariates,
     )
 
-    # ml_g: outcome regression E[Y|T,X] — regressor
-    # ml_m: propensity score P(T=1|X) — classifier
+    # ml_g: outcome regression E[Y|T,X] -- regressor
+    # ml_m: propensity score P(T=1|X) -- classifier
     ml_g = RandomForestRegressor(n_estimators=100, max_depth=5, random_state=random_state)
     ml_m = RandomForestClassifier(n_estimators=100, max_depth=5, random_state=random_state)
 
@@ -1407,8 +1407,8 @@ def estimate_double_ml(
 
     dml_data = dml.DoubleMLData(data, y_col=outcome, d_cols=treatment, x_cols=covariates)
 
-    # ml_l: outcome regression E[Y|X] — always a regressor.
-    # ml_m: treatment model P(T=1|X) — classifier for binary treatment so that
+    # ml_l: outcome regression E[Y|X] -- always a regressor.
+    # ml_m: treatment model P(T=1|X) -- classifier for binary treatment so that
     #       DoubleML receives probability predictions, not continuous predictions.
     #       Using a Regressor here would silently fit E[T|X] as a number in [0,1]
     #       rather than a probability, producing incorrect Neyman-orthogonal scores.

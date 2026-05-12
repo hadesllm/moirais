@@ -9,13 +9,13 @@ Inspired by the designexptr.org pedagogical sequence:
 Four general-purpose statistical-design entry points, all with full
 R parity in r-package/morie/R/mrm_design.R:
 
-    mrm_two_treatment_test()  — Welch t / Student t / Mann-Whitney U
+    mrm_two_treatment_test()  -- Welch t / Student t / Mann-Whitney U
                                 with sensitivity to assumption breaks.
-    mrm_anova_oneway()        — One-way ANOVA + Tukey HSD post-hoc.
-    mrm_factorial_2k()        — 2^k factorial: main effects +
+    mrm_anova_oneway()        -- One-way ANOVA + Tukey HSD post-hoc.
+    mrm_factorial_2k()        -- 2^k factorial: main effects +
                                 interaction effects + half-normal plot
                                 coordinates for Daniel's method.
-    mrm_causal_design()       — Convenience wrapper around the morie
+    mrm_causal_design()       -- Convenience wrapper around the morie
                                 causal estimators in a designed-
                                 experiment idiom (treatment vector,
                                 outcome vector, optional covariates).
@@ -76,7 +76,7 @@ def mrm_two_treatment_test(
 
     Args:
         a, b: outcome vectors under treatments A and B.
-        alpha: confidence-interval level (default 0.05 → 95% CI).
+        alpha: confidence-interval level (default 0.05 -> 95% CI).
     """
     a = np.asarray([x for x in a if np.isfinite(x)], dtype=float)
     b = np.asarray([x for x in b if np.isfinite(x)], dtype=float)
@@ -196,8 +196,8 @@ def mrm_anova_oneway(
 
 @dataclass
 class Factorial2kResult:
-    main_effects: dict     # factor → effect estimate
-    interaction_effects: dict   # tuple of factor names → effect
+    main_effects: dict     # factor -> effect estimate
+    interaction_effects: dict   # tuple of factor names -> effect
     half_normal_coords: pd.DataFrame   # for Daniel's plot
     n: int
     k: int
@@ -229,7 +229,7 @@ def mrm_factorial_2k(
     if k < 2:
         raise ValueError("2^k design requires k >= 2 factors")
 
-    # Recode 0/1 → -1/+1
+    # Recode 0/1 -> -1/+1
     for c in factor_cols:
         if set(df[c].unique()) - {-1, 1}:
             df[c] = np.where(df[c] > df[c].median(), 1, -1)

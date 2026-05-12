@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multi-scale RBF hierarchical interpolation."""
 
 import numpy as np

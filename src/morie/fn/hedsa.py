@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Deterministic one-way sensitivity analysis."""
 
 import numpy as np

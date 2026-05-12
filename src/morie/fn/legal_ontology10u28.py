@@ -11,7 +11,7 @@ def legal_ontology_chapter_10_unnumbered_28(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: <rdf:Description rdf:about="Nature does not hurry, yet everything is accomplished. — Lao Tzu">
+    Formula: <rdf:Description rdf:about="Nature does not hurry, yet everything is accomplished. -- Lao Tzu">
 
     Parameters
     ----------

@@ -10,7 +10,7 @@ def bart(src, tgt):
     """
     BART denoising encoder-decoder
 
-    Formula: corrupt → reconstruct via seq2seq
+    Formula: corrupt -> reconstruct via seq2seq
 
     Parameters
     ----------

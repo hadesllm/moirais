@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cauchy distribution cumulative distribution function."""
 
 from typing import Union
@@ -8,7 +8,7 @@ import scipy.stats as stats
 
 
 def pcchy(x: Union[float, np.ndarray], loc: float = 0.0, scale: float = 1.0, lower_tail: bool = True, log_p: bool = False, cdf=None) -> Union[float, np.ndarray]:
-    """
+    r"""
     Cauchy distribution CDF.
 
     .. math::

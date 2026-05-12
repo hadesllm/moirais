@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dropout forward pass (inverted dropout)."""
 from __future__ import annotations
 
@@ -9,8 +9,9 @@ from ._richresult import RichResult
 __all__ = ["dropout_forward"]
 
 
-def dropout_forward(x, p: float = 0.5, seed: int = 0, training: bool = True):
-    """Dropout forward pass with inverted scaling.
+def dropout_forward(x, p: float = 0.5, seed: int = 0, training: bool = True,
+                    deterministic_seed: "int | None" = None):
+    r"""Dropout forward pass with inverted scaling.
 
     During training, mask :math:`m \\sim \\text{Bernoulli}(1-p)` and
     :math:`y = x \\odot m / (1-p)` so :math:`\\mathbb{E}[y] = x`.  At
@@ -26,6 +27,10 @@ def dropout_forward(x, p: float = 0.5, seed: int = 0, training: bool = True):
         RNG seed.
     training : bool
         Apply dropout if True; pass-through otherwise.
+    deterministic_seed : int or None, optional
+        If given, the SHA-keyed RNG from
+        :func:`morie._det_rng.from_seed` is used so Py<->R streams agree
+        for the same ``(name, seed)`` pair. Overrides ``seed`` when set.
 
     Returns
     -------
@@ -47,7 +52,11 @@ def dropout_forward(x, p: float = 0.5, seed: int = 0, training: bool = True):
                      "kept_fraction": 1.0,
                      "method": "Dropout (pass-through)"},
         )
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("drpfw", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     mask = (rng.random(x.shape) >= p).astype(x.dtype)
     y = x * mask / (1.0 - p)
     return RichResult(

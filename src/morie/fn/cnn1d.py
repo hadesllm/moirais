@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """1D convolution forward pass (valid, cross-correlation convention)."""
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ __all__ = ["conv1d_forward"]
 
 
 def conv1d_forward(x, w, b=0.0, stride: int = 1, padding: int = 0):
-    """1D convolution / cross-correlation forward pass.
+    r"""1D convolution / cross-correlation forward pass.
 
     .. math::
 

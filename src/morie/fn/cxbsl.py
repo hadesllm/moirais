@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cox baseline hazard (Breslow estimator)."""
 
 from __future__ import annotations

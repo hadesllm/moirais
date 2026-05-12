@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1248(x, c
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula:    3) − Σ(θ)]X(s) −→
+    Formula:    3) − Σ(θ)]X(s) −->
 
     Parameters
     ----------

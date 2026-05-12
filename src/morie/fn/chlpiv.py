@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pivoted Cholesky incomplete decomposition sim."""
 
 import numpy as np

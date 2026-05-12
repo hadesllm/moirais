@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Newton divided-difference interpolation. 'The greatest teacher, failure is.'"""
 
 from __future__ import annotations

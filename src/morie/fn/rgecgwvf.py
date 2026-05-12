@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ECG waveform analysis for ischemia and bundle branch block."""
 import numpy as np
 from ._richresult import RichResult

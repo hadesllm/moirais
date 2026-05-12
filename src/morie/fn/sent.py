@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sentence length distribution stats. 'What is now proved was once only imagined. -- Blake'"""
 from __future__ import annotations
 

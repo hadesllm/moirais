@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Crime rate per 100K with Wilson CI. 'These are not the droids you are looking for.'"""
 
 from __future__ import annotations

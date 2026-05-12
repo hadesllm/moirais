@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 4.5: strong uniform consistency of boundary-free MRL estimators."""
 import numpy as np
 from ._richresult import RichResult

@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: We have that |gn(λ) | ≤ 1 for all n andλ , and, as n → ∞ ,
+    Formula: We have that |gn(λ) | ≤ 1 for all n andλ , and, as n -> ∞ ,
 
     Parameters
     ----------

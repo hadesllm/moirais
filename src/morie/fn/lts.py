@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Least Trimmed Squares (LTS) robust regression."""
 
 from __future__ import annotations

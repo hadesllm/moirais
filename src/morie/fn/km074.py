@@ -1,4 +1,4 @@
-"""Dpo pref substituted.."""
+r"""Dpo pref substituted.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch5_dpo_pref_substituted"]
 
 
 def kamath_ch5_dpo_pref_substituted(pi_star, pi_ref, beta, Z):
-    """
+    r"""
     Dpo pref substituted.
 
     Formula: p^*(y_w \succ y_l|x) = \sigma(\beta\log\frac{\pi^*(y_w|x)}{\pi_{ref}(y_w|x)} + \beta\log Z(x) - \beta\log\frac{\pi^*(y_l|x)}{\pi_{ref}(y_l|x)} - \beta\log Z(x))
@@ -31,7 +31,7 @@ def kamath_ch5_dpo_pref_substituted(pi_star, pi_ref, beta, Z):
     References
     ----------
     Kamath et al (2024), Ch 5, Eq 5.10, p. 210
-    """
+    r"""
     pi_star = np.atleast_1d(np.asarray(pi_star, dtype=float))
     n = len(pi_star)
     result = float(np.mean(pi_star))

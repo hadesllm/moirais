@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Draw a random sample from a uniform distribution."""
 
 import numpy as np

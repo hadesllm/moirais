@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multi-output DNN for multi-trait genomic prediction."""
 import numpy as np
 from ._richresult import RichResult

@@ -156,7 +156,7 @@ def _load_autoresearch_tokenizer(tokenizer_dir):
         raise FileNotFoundError(f"Tokenizer not found: {tok_path}")
 
     with open(tok_path, "rb") as f:
-        enc = pickle.load(f)  # noqa: S301 — local autoresearch tokenizer only, not user input
+        enc = pickle.load(f)  # noqa: S301 -- local autoresearch tokenizer only, not user input
 
     tokens = []
     scores = []

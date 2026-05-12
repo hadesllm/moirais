@@ -10,7 +10,7 @@ def longitudinal_mediation(panel, X, M, Y):
     """
     Longitudinal mediation (cross-lagged)
 
-    Formula: X_t → M_{t+1} → Y_{t+2}
+    Formula: X_t -> M_{t+1} -> Y_{t+2}
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Turns count of an EMG signal (number of direction reversals above threshold)."""
 import numpy as np
 from ._richresult import RichResult

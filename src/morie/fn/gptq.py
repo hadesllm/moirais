@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GPTQ Hessian-based weight quantizer."""
 
 from __future__ import annotations

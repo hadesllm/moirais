@@ -1,4 +1,4 @@
-"""morie.tps_statphysics — Statistical physics of crime applied to TPS.
+"""morie.tps_statphysics -- Statistical physics of crime applied to TPS.
 
 Implements the 4 canonical methods reviewed by D'Orsogna & Perc,
 "Statistical physics of crime: A review", Phys. Life Rev. 12 (2015) 1-21
@@ -7,7 +7,7 @@ RichResult with a paragraph-level interpretation.
 
 Methods
 -------
-1. ``sdb_reaction_diffusion(category, …)`` — Short-D'Orsogna-Brantingham
+1. ``sdb_reaction_diffusion(category, …)`` -- Short-D'Orsogna-Brantingham
    2008 hot-spot PDE on a Toronto grid:
 
        ∂A/∂t = η ∇²A − ω A + θ ρ
@@ -19,17 +19,17 @@ Methods
    localised-spike regime. We fit the steady-state spike count to the
    observed cluster count from DBSCAN.
 
-2. ``levy_flight_alpha(category)`` — Brockmann-Hufnagel-Geisel 2006
+2. ``levy_flight_alpha(category)`` -- Brockmann-Hufnagel-Geisel 2006
    Lévy-flight diagnostic. We compute step lengths between
    chronologically-consecutive incidents and fit a power-law tail
    p(ℓ) ∝ ℓ^{−α} via Hill-MLE on the upper-tail.
 
-3. ``urban_scaling_beta(category)`` — Bettencourt et al. 2007 / 2010
+3. ``urban_scaling_beta(category)`` -- Bettencourt et al. 2007 / 2010
    urban scaling: log(crime_i) = log(Y₀) + β · log(pop_i) + ε for the
    158 Toronto wards. β > 1 = super-linear (crime grows faster than
    population), β = 1 = linear, β < 1 = sub-linear.
 
-4. ``lotka_volterra_police_crime(category)`` — Lotka-Volterra
+4. ``lotka_volterra_police_crime(category)`` -- Lotka-Volterra
    predator-prey on a coarse-grained yearly time series:
 
        dx/dt = α x − β x y       (crime: prey)
@@ -101,7 +101,7 @@ def sdb_reaction_diffusion(category: str = "Assault",
     df = df[(df["LAT_WGS84"].between(43.55, 43.90))
             & (df["LONG_WGS84"].between(-79.65, -79.10))]
     if df.empty:
-        return RichResult(title=f"SDB reaction-diffusion — {category}",
+        return RichResult(title=f"SDB reaction-diffusion -- {category}",
                             warnings=[f"{category}: no in-bbox rows"])
 
     pt_x, pt_y = project_xy(df["LAT_WGS84"].to_numpy(),
@@ -168,7 +168,7 @@ def sdb_reaction_diffusion(category: str = "Assault",
             ax.set_xticks([]); ax.set_yticks([])
             fig.colorbar(im, ax=ax, shrink=0.7)
         fig.suptitle(
-            f"Short-D'Orsogna-Brantingham 2008 hotspot PDE — {category} · "
+            f"Short-D'Orsogna-Brantingham 2008 hotspot PDE -- {category} · "
             f"η={eta}, ω={omega}, θ={theta}, D={D}, γ={gamma} · "
             f"{n_spikes} spikes (vs {n_dbscan} DBSCAN clusters)",
             fontsize=11, y=1.0)
@@ -178,7 +178,7 @@ def sdb_reaction_diffusion(category: str = "Assault",
         plt.close(fig)
 
     return RichResult(
-        title=f"SDB reaction-diffusion — {category}",
+        title=f"SDB reaction-diffusion -- {category}",
         summary_lines=[
             ("Method", "Short-D'Orsogna-Brantingham 2008 hot-spot PDE"),
             ("Grid", f"{nx}×{ny} cos-corrected, dx≈{dx_:.2f} km"),
@@ -198,7 +198,7 @@ def sdb_reaction_diffusion(category: str = "Assault",
             "puts the system in the unstable / hot-spot regime "
             "(D'Orsogna & Perc 2015, §3.2). Steady-state spike count "
             f"is {n_spikes}, vs {n_dbscan} empirical DBSCAN clusters "
-            f"at 0.3 km — agreement of "
+            f"at 0.3 km -- agreement of "
             f"{abs(n_spikes - n_dbscan) / max(n_dbscan, 1) * 100:.0f}% "
             "deviation from the data-driven count."
         ),
@@ -232,7 +232,7 @@ def levy_flight_alpha(category: str = "Assault",
     df["_dt"] = pd.to_datetime(df["OCC_DATE"], errors="coerce")
     df = df.dropna(subset=["_dt"]).sort_values("_dt")
     if len(df) < 200:
-        return RichResult(title=f"Lévy α — {category}",
+        return RichResult(title=f"Lévy α -- {category}",
                             warnings=["too few rows for Lévy fit"])
     xk, yk = project_xy(df["LAT_WGS84"].to_numpy(),
                             df["LONG_WGS84"].to_numpy())
@@ -240,7 +240,7 @@ def levy_flight_alpha(category: str = "Assault",
     steps = np.sqrt(dx_ ** 2 + dy_ ** 2)
     steps = steps[steps >= lmin_km]
     if steps.size < 50:
-        return RichResult(title=f"Lévy α — {category}",
+        return RichResult(title=f"Lévy α -- {category}",
                             warnings=[f"only {steps.size} tail steps "
                                        f"≥ {lmin_km} km"])
     # Hill-MLE: α̂ = 1 + n / Σ ln(ℓ_i / ℓ_min)
@@ -275,7 +275,7 @@ def levy_flight_alpha(category: str = "Assault",
         plt.close(fig)
 
     return RichResult(
-        title=f"Lévy α — {category}",
+        title=f"Lévy α -- {category}",
         summary_lines=[
             ("Method", "Hill-MLE upper-tail power-law (BHG 2006)"),
             ("ℓ_min (km)", lmin_km),
@@ -293,7 +293,7 @@ def levy_flight_alpha(category: str = "Assault",
             "mobility (Lévy regime). α ∈ (1, 3) ⇒ heavy-tailed Lévy; "
             "α > 3 ⇒ Gaussian-like local diffusion. Routine-activity "
             "theory predicts crime mobility tracks general human "
-            "mobility — D'Orsogna & Perc 2015 §2.2."
+            "mobility -- D'Orsogna & Perc 2015 §2.2."
         ),
     )
 
@@ -303,7 +303,7 @@ def urban_scaling_beta(category: str = "Assault",
                         save_fig: bool = True) -> RichResult:
     """Bettencourt 2007 super-linear urban scaling on the 158 wards.
 
-    Regresses log(crime per ward) on log(population per ward) → β.
+    Regresses log(crime per ward) on log(population per ward) -> β.
     """
     from .tps_io import load_tps
     df = load_tps("NeighbourhoodCrimeRates", format="geojson")
@@ -320,13 +320,13 @@ def urban_scaling_beta(category: str = "Assault",
     crime_col = f"{cat_prefix}_{year}"
     if pop_col is None or crime_col not in df.columns:
         return RichResult(
-            title=f"Urban scaling β — {category}",
+            title=f"Urban scaling β -- {category}",
             warnings=[f"missing pop or {crime_col} column "
                        f"(have pop_col={pop_col})"])
     sub = df[[pop_col, crime_col]].dropna()
     sub = sub[(sub[pop_col] > 100) & (sub[crime_col] > 0)]
     if len(sub) < 30:
-        return RichResult(title=f"Urban scaling β — {category}",
+        return RichResult(title=f"Urban scaling β -- {category}",
                             warnings=[f"only {len(sub)} usable wards"])
     lx = np.log(sub[pop_col].to_numpy(dtype=float))
     ly = np.log(sub[crime_col].to_numpy(dtype=float))
@@ -363,7 +363,7 @@ def urban_scaling_beta(category: str = "Assault",
               else "sub-linear (β < 1)" if beta < 0.95
               else "linear (β ≈ 1)")
     return RichResult(
-        title=f"Urban scaling β — {category} · {year}",
+        title=f"Urban scaling β -- {category} · {year}",
         summary_lines=[
             ("Method", "Bettencourt 2007 OLS log–log scaling"),
             ("Crime column", crime_col),
@@ -380,7 +380,7 @@ def urban_scaling_beta(category: str = "Assault",
             f"Across Toronto's 158 wards, {category} {year} scales as "
             f"crime ∝ pop^{beta:.2f}. {regime}. "
             "Bettencourt 2007 finds β ≈ 1.16 for violent crime across "
-            "US metros — population doubles, violent crime rises ~2.24x. "
+            "US metros -- population doubles, violent crime rises ~2.24x. "
             "β < 1 (sub-linear) is rare and indicates protective scale. "
             "D'Orsogna & Perc 2015 §4.1 generalises to socio-economic "
             "indicators."
@@ -395,19 +395,19 @@ def lotka_volterra_police_crime(category: str = "Assault",
 
     With only 1 series we use the empirical x(t) and back out (α, β)
     from the LV equilibrium x* = γ/δ, y* = α/β under stationarity. For
-    the predator series we use the cumulative count of incidents → a
+    the predator series we use the cumulative count of incidents -> a
     crude effort-density proxy; the absolute scale is unidentified but
     the (α, γ) ratio and the cycle period are.
     """
     from .tps_datasets import load_tps_dataset
     df = load_tps_dataset(category)
     if "OCC_YEAR" not in df.columns:
-        return RichResult(title=f"Lotka-Volterra — {category}",
+        return RichResult(title=f"Lotka-Volterra -- {category}",
                             warnings=["no OCC_YEAR column"])
     counts = df.groupby("OCC_YEAR").size().sort_index()
     counts = counts[counts.index >= 2014]
     if len(counts) < 5:
-        return RichResult(title=f"Lotka-Volterra — {category}",
+        return RichResult(title=f"Lotka-Volterra -- {category}",
                             warnings=[f"only {len(counts)} years"])
     x = counts.to_numpy(dtype=float)
     # Naive predator proxy: rolling 3-year mean of x (lagged response)
@@ -440,7 +440,7 @@ def lotka_volterra_police_crime(category: str = "Assault",
         plt.close(fig)
 
     return RichResult(
-        title=f"Lotka-Volterra — {category}",
+        title=f"Lotka-Volterra -- {category}",
         summary_lines=[
             ("Method",
              "LV predator-prey on yearly counts (D'Orsogna & Perc 2015 §3.4)"),
@@ -459,7 +459,7 @@ def lotka_volterra_police_crime(category: str = "Assault",
             f"yet). Linearised LV gives a cycle period of T ≈ {T:.1f} "
             f"years. D'Orsogna & Perc 2015 §3.4 use this framework "
             f"for Mexican drug-cartel turf wars; here it's qualitative "
-            f"only — substitute a real predator series (TPS use-of-force "
+            f"only -- substitute a real predator series (TPS use-of-force "
             f"counts, arrests, dispatches) for quantitative inference."
         ),
     )
@@ -473,7 +473,7 @@ def sdb_turing_demo(*, eta: float = 0.20, omega: float = 0.033,
     """Canonical SDB Turing-instability demo on a *clean periodic* grid.
 
     Reproduces the localized hot-spot lattice from Short, D'Orsogna &
-    Brantingham (2008) Fig. 4 / D'Orsogna & Perc (2015) Fig. 5 — which
+    Brantingham (2008) Fig. 4 / D'Orsogna & Perc (2015) Fig. 5 -- which
     is what the author's reference image #3 / #4 shows. Periodic boundaries,
     homogeneous initial state + Gaussian noise, runs to steady state.
     Output: 1×3 panel (early / mid / late).
@@ -544,7 +544,7 @@ def sdb_turing_demo(*, eta: float = 0.20, omega: float = 0.033,
             ("Figure", str(fig_path) if fig_path else "(skipped)"),
         ],
         interpretation=(
-            "Canonical Turing-instability hot-spot lattice — the "
+            "Canonical Turing-instability hot-spot lattice -- the "
             "homogeneous (A, ρ) state is unstable for these parameters "
             "and the system spontaneously self-organises into a "
             "near-hexagonal lattice of localised spikes. This figure "
@@ -564,12 +564,12 @@ def inspection_game_phase(n_temptations: int = 20,
     crime-rate phase diagram from D'Orsogna & Perc 2015 §5 / Image #5.
 
     Three strategies (pure populations only):
-      C — cooperator
-      P — defector / 'predator'
-      O — punisher / inspector
+      C -- cooperator
+      P -- defector / 'predator'
+      O -- punisher / inspector
 
     Replicator dynamics with payoff matrix that includes punishment of
-    P by O at cost γ. Steady-state defector fraction → 'crime rate'.
+    P by O at cost γ. Steady-state defector fraction -> 'crime rate'.
     """
     Ts = np.linspace(0.05, 1.8, n_temptations)
     gs = np.linspace(0.05, 1.2, n_costs)
@@ -649,14 +649,14 @@ def criminal_network_graph(category: str = "Assault",
     sharing a common neighbourhood, weighted by joint incident count.
 
     Replaces the criminal-role graph in D'Orsogna & Perc Fig. 9 /
-    Diviák et al. (2019) — for our public TPS data we don't have
+    Diviák et al. (2019) -- for our public TPS data we don't have
     co-offender records, so we build the closest-meaning network from
     PREMISES_TYPE × HOOD_158 co-incidence.
     """
     from .tps_datasets import load_tps_dataset
     df = load_tps_dataset(category, nrows=sample_rows)
     if "HOOD_158" not in df.columns:
-        return RichResult(title=f"Criminal network — {category}",
+        return RichResult(title=f"Criminal network -- {category}",
                             warnings=["missing HOOD_158"])
     # Pick the best available node-attribute column. Most TPS categories
     # have PREMISES_TYPE (e.g. "Apartment", "Outside"); Homicides /
@@ -666,7 +666,7 @@ def criminal_network_graph(category: str = "Assault",
                       "HOMICIDE_TYPE", "OFFENCE", "DIVISION")
                      if c in df.columns), None)
     if node_col is None:
-        return RichResult(title=f"Criminal network — {category}",
+        return RichResult(title=f"Criminal network -- {category}",
                             warnings=["no usable node-attribute column "
                                        "(PREMISES_TYPE, LOCATION_TYPE, "
                                        "HOMICIDE_TYPE, OFFENCE, DIVISION "
@@ -682,7 +682,7 @@ def criminal_network_graph(category: str = "Assault",
     nodes = list(co.columns)
     n = len(nodes)
     if n < 2:
-        return RichResult(title=f"Criminal network — {category}",
+        return RichResult(title=f"Criminal network -- {category}",
                             warnings=[f"only {n} nodes"])
 
     # Circular layout
@@ -731,7 +731,7 @@ def criminal_network_graph(category: str = "Assault",
         plt.close(fig)
 
     return RichResult(
-        title=f"Criminal network — {category}",
+        title=f"Criminal network -- {category}",
         summary_lines=[
             ("Method", "Premise × neighbourhood co-occurrence network"),
             ("Nodes", n),

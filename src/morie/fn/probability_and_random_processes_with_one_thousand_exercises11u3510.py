@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: )Delta1 j = Vj + 1 − Vj . Evaluate the limits of the following as n → ∞ :
+    Formula: )Delta1 j = Vj + 1 − Vj . Evaluate the limits of the following as n -> ∞ :
 
     Parameters
     ----------

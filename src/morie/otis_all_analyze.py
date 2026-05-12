@@ -1,4 +1,4 @@
-"""morie.otis_all_analyze — RichResult-emitting analyses for ALL 28
+"""morie.otis_all_analyze -- RichResult-emitting analyses for ALL 28
 OTIS datasets.
 
 This module is the **comprehensive** OTIS analysis surface. It pairs
@@ -18,21 +18,21 @@ which runs every dataset's analysis, writes per-dataset .txt and .json
 under data/manifest/outputs/otis/, and returns the in-memory results.
 
 Plus the Ruhela-formulation (RF) high-level entry points:
-    analyze_a01_ruhela_formulations(df=None)   — full DLRM on a01
-        — alias: analyze_a01_dlrm
-    analyze_b01_ruhela_formulations(df=None)   — full DLRM on b01
-        — alias: analyze_b01_dlrm
-    analyze_b02_ruhela_formulations(df=None)   — gender → seg days on b02
-        — alias: analyze_b02_dlrm
-    analyze_a01_with_csi_context()             — a01 causal + Toronto CSI
-    analyze_c_doob_chi2()                      — χ² + Cramer's V on c-series
-        — homage to Doob's chi-square tradition
-    analyze_d_doob_chi2()                      — d-series + Alert χ²
+    analyze_a01_ruhela_formulations(df=None)   -- full DLRM on a01
+        -- alias: analyze_a01_dlrm
+    analyze_b01_ruhela_formulations(df=None)   -- full DLRM on b01
+        -- alias: analyze_b01_dlrm
+    analyze_b02_ruhela_formulations(df=None)   -- gender -> seg days on b02
+        -- alias: analyze_b02_dlrm
+    analyze_a01_with_csi_context()             -- a01 causal + Toronto CSI
+    analyze_c_doob_chi2()                      -- χ² + Cramer's V on c-series
+        -- homage to Doob's chi-square tradition
+    analyze_d_doob_chi2()                      -- d-series + Alert χ²
 
 Naming abbreviations:
-    RF  — Ruhela formulation
-    RDF — Ruhela Dual Formulation (RF + Naive-arm sensitivity)
-    DLRM — Doob-Levinsky-Ruhela-Medina (methodology attribution)
+    RF  -- Ruhela formulation
+    RDF -- Ruhela Dual Formulation (RF + Naive-arm sensitivity)
+    DLRM -- Doob-Levinsky-Ruhela-Medina (methodology attribution)
 
 The DLRM methodology attribution and the wider acknowledgements
 (Prof. Jauregui, Prof. Laniyonu) live at the top of
@@ -79,7 +79,7 @@ def _summary_lines(df: pd.DataFrame, ds_id: str) -> list[tuple[str, Any]]:
     meta = DATASET_REGISTRY[ds_id]
     yc = _year_col(df)
     out: list[tuple[str, Any]] = [
-        ("Dataset", f"{ds_id} — {meta.description}"),
+        ("Dataset", f"{ds_id} -- {meta.description}"),
         ("Series", meta.series),
         ("Rows", int(df.shape[0])),
         ("Columns", int(df.shape[1])),
@@ -168,7 +168,7 @@ def analyze_b01(df: pd.DataFrame | None = None) -> RichResult:
                               f"{100*n_yes/df.shape[0]:.1f}%"])
 
     return RichResult(
-        title="b01 — Segregation placements (person-level detail)",
+        title="b01 -- Segregation placements (person-level detail)",
         summary_lines=summary,
         tables=[
             {"title": "Reasons for placement (count, % of rows):",
@@ -192,7 +192,7 @@ def analyze_b02(df: pd.DataFrame | None = None) -> RichResult:
     summary.append(("Median total days", int(days.median())))
     summary.append(("Max total days", int(days.max())))
     return RichResult(
-        title="b02 — Segregation total days per person per fiscal year",
+        title="b02 -- Segregation total days per person per fiscal year",
         summary_lines=summary,
         tables=[
             _year_trend(df, "TotalAggregatedDays_Segregation") or {"title": "(none)", "headers": [], "rows": []},
@@ -208,7 +208,7 @@ def analyze_b03(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("b03")
     summary = _summary_lines(df, "b03")
     return RichResult(
-        title="b03 — Segregation placements by alert/hold flag × institution",
+        title="b03 -- Segregation placements by alert/hold flag × institution",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Alert_Type", "Alert_Presence",
@@ -224,7 +224,7 @@ def analyze_b04(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("b04")
     summary = _summary_lines(df, "b04")
     return RichResult(
-        title="b04 — Placement durations by region & gender",
+        title="b04 -- Placement durations by region & gender",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Region_AtTimeOfPlacement", "Measure",
@@ -239,7 +239,7 @@ def analyze_b05(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("b05")
     summary = _summary_lines(df, "b05")
     return RichResult(
-        title="b05 — Distribution of placements by binned duration",
+        title="b05 -- Distribution of placements by binned duration",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Consecutive_Duration", "EndFiscalYear",
@@ -253,7 +253,7 @@ def analyze_b06(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("b06")
     summary = _summary_lines(df, "b06")
     return RichResult(
-        title="b06 — Reasons for placement by institution & gender",
+        title="b06 -- Reasons for placement by institution & gender",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Reason", "EndFiscalYear",
@@ -277,7 +277,7 @@ def analyze_b07(df: pd.DataFrame | None = None) -> RichResult:
         rows.append([_to_int(r["EndFiscalYear"]), str(r["Alert_Type"]),
                      str(r["Gender"]), with_a, wo_a, f"{rate:.1f}%"])
     return RichResult(
-        title="b07 — Segregation placements with/without alert × gender",
+        title="b07 -- Segregation placements with/without alert × gender",
         summary_lines=summary,
         tables=[{"title": "By alert × gender × year:",
                  "headers": ["Year", "Alert_Type", "Gender", "With_Alert",
@@ -291,7 +291,7 @@ def analyze_b08(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("b08")
     summary = _summary_lines(df, "b08")
     return RichResult(
-        title="b08 — Placement durations by institution & gender",
+        title="b08 -- Placement durations by institution & gender",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Institution_AtTimeOfPlacement", "Measure",
@@ -306,7 +306,7 @@ def analyze_b09(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("b09")
     summary = _summary_lines(df, "b09")
     return RichResult(
-        title="b09 — Individuals by number of placements × gender",
+        title="b09 -- Individuals by number of placements × gender",
         summary_lines=summary,
         tables=[
             _crosstab(df, "NumberPlacements_Segregation", "Gender",
@@ -333,7 +333,7 @@ def analyze_c01(df: pd.DataFrame | None = None) -> RichResult:
                           f"{(rc/cust*100) if cust else 0:.1f}%",
                           f"{(seg/cust*100) if cust else 0:.1f}%"])
     return RichResult(
-        title="c01 — Total individuals × custody/RC/seg × gender",
+        title="c01 -- Total individuals × custody/RC/seg × gender",
         summary_lines=summary,
         tables=[{"title": "Cohort sizes + ratios:",
                  "headers": ["Year", "Gender", "Custody", "RC", "Seg",
@@ -347,7 +347,7 @@ def analyze_c02(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c02")
     summary = _summary_lines(df, "c02")
     return RichResult(
-        title="c02 — Individuals in RC/seg by institution × region × gender",
+        title="c02 -- Individuals in RC/seg by institution × region × gender",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Institution_MostRecentPlacement",
@@ -378,7 +378,7 @@ def analyze_c03(df: pd.DataFrame | None = None) -> RichResult:
                     f"{(seg/cust*100) if cust else 0:.1f}%"])
     rows.sort(key=lambda x: -x[1])
     return RichResult(
-        title="c03 — Individuals × race × gender",
+        title="c03 -- Individuals × race × gender",
         summary_lines=summary,
         tables=[{"title": "By race (totals across years/genders):",
                  "headers": ["Race", "Custody", "RC", "Seg",
@@ -387,7 +387,7 @@ def analyze_c03(df: pd.DataFrame | None = None) -> RichResult:
         interpretation=(
             "Race × confinement disparities are visible in the "
             "RC/custody and Seg/custody ratios. Compare across race "
-            "categories — the gap between Indigenous and White rates is "
+            "categories -- the gap between Indigenous and White rates is "
             "a documented Ontario-corrections finding."
         ),
     )
@@ -398,7 +398,7 @@ def analyze_c04(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c04")
     summary = _summary_lines(df, "c04")
     return RichResult(
-        title="c04 — Individuals in RC/seg × race × region",
+        title="c04 -- Individuals in RC/seg × race × region",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Race", "Region_MostRecentPlacement",
@@ -412,7 +412,7 @@ def analyze_c05(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c05")
     summary = _summary_lines(df, "c05")
     return RichResult(
-        title="c05 — Individuals in RC/seg × religion × region",
+        title="c05 -- Individuals in RC/seg × religion × region",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Religion", "Region_MostRecentPlacement",
@@ -426,7 +426,7 @@ def analyze_c06(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c06")
     summary = _summary_lines(df, "c06")
     return RichResult(
-        title="c06 — Individuals in RC/seg × age category × region",
+        title="c06 -- Individuals in RC/seg × age category × region",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Age_Category", "Region_MostRecentPlacement",
@@ -440,7 +440,7 @@ def analyze_c07(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c07")
     summary = _summary_lines(df, "c07")
     return RichResult(
-        title="c07 — Individuals in custody/RC/seg × alert type × gender",
+        title="c07 -- Individuals in custody/RC/seg × alert type × gender",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Alert_Type", "Gender",
@@ -456,7 +456,7 @@ def analyze_c08(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c08")
     summary = _summary_lines(df, "c08")
     return RichResult(
-        title="c08 — Individuals × religion × gender",
+        title="c08 -- Individuals × religion × gender",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Religion", "Gender",
@@ -470,7 +470,7 @@ def analyze_c09(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c09")
     summary = _summary_lines(df, "c09")
     return RichResult(
-        title="c09 — Individuals × age category × gender",
+        title="c09 -- Individuals × age category × gender",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Age_Category", "Gender",
@@ -484,7 +484,7 @@ def analyze_c10(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c10")
     summary = _summary_lines(df, "c10")
     return RichResult(
-        title="c10 — RC/seg aggregate durations by institution",
+        title="c10 -- RC/seg aggregate durations by institution",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Institution_MostRecentPlacement", "Measure",
@@ -499,7 +499,7 @@ def analyze_c11(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c11")
     summary = _summary_lines(df, "c11")
     return RichResult(
-        title="c11 — Individuals by binned aggregate duration",
+        title="c11 -- Individuals by binned aggregate duration",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Aggregate_Duration", "EndFiscalYear",
@@ -513,7 +513,7 @@ def analyze_c12(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("c12")
     summary = _summary_lines(df, "c12")
     return RichResult(
-        title="c12 — RC/seg aggregate durations by region & gender",
+        title="c12 -- RC/seg aggregate durations by region & gender",
         summary_lines=summary,
         tables=[
             _crosstab(df, "Region_MostRecentPlacement", "Measure",
@@ -539,7 +539,7 @@ def analyze_d01(df: pd.DataFrame | None = None) -> RichResult:
     means_col = ("MeansofDeath" if "MeansofDeath" in df.columns
                  else "MeansOfDeath")
     return RichResult(
-        title="d01 — Custodial deaths (person-level)",
+        title="d01 -- Custodial deaths (person-level)",
         summary_lines=summary,
         tables=[
             {"title": "By region:",
@@ -567,7 +567,7 @@ def _d_simple(ds_id: str, by: str) -> callable:
         df = df if df is not None else load_otis_dataset(ds_id)
         meta = DATASET_REGISTRY[ds_id]
         return RichResult(
-            title=f"{ds_id} — {meta.description}",
+            title=f"{ds_id} -- {meta.description}",
             summary_lines=_summary_lines(df, ds_id),
             tables=[
                 _year_trend(df, "Number_CustodialDeaths") or {"title": "(none)", "headers": [], "rows": []},
@@ -586,7 +586,7 @@ analyze_d05 = _d_simple("d05", "Age_Category")
 def analyze_d06(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("d06")
     return RichResult(
-        title="d06 — Custodial deaths × alert × medical cause",
+        title="d06 -- Custodial deaths × alert × medical cause",
         summary_lines=_summary_lines(df, "d06"),
         tables=[
             _crosstab(df, "MedicalCauseOfDeath", "Alert_Type",
@@ -598,7 +598,7 @@ def analyze_d06(df: pd.DataFrame | None = None) -> RichResult:
 def analyze_d07(df: pd.DataFrame | None = None) -> RichResult:
     df = df if df is not None else load_otis_dataset("d07")
     return RichResult(
-        title="d07 — Custodial deaths × alert × housing unit",
+        title="d07 -- Custodial deaths × alert × housing unit",
         summary_lines=_summary_lines(df, "d07"),
         tables=[
             _crosstab(df, "HousingUnit_Type", "Alert_Type",
@@ -662,8 +662,8 @@ def analyze_a01(df: pd.DataFrame | None = None) -> RichResult:
         ("Standard error type", fit["se_kind"]),
     ]
     return RichResult(
-        title=("OTIS a01 — high alert complexity (ac ≥ 2) "
-                "→ regional volatility (vm count)"),
+        title=("OTIS a01 -- high alert complexity (ac ≥ 2) "
+                "-> regional volatility (vm count)"),
         summary_lines=summary,
         interpretation=(
             "MatchIt-then-IRM-DML reproduction of the published "
@@ -819,29 +819,29 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                       ) -> RichResult:
     """Ruhela formulations (full DLRM).
 
-    Runs the complete OTIS-RC methodology arc on a Ruhela formulation —
+    Runs the complete OTIS-RC methodology arc on a Ruhela formulation --
     a (treatment, outcome, covariates) design choice for a specific
-    OTIS dataset. Defaults to the author's canonical alert-complexity → vm
+    OTIS dataset. Defaults to the author's canonical alert-complexity -> vm
     formulation (via ``make_pair_alert_to_volatility_all``); pass
     explicit ``treatment``/``outcome``/``covariates`` for dataset-
     specific Ruhela formulations on b02-b09 / c-series / d-series.
 
     DLRM (each estimator runs on the Ruhela arm):
 
-      1. IPW (Hájek)               — single-robust; Lunceford-Davidian SE
-      2. AIPW                       — doubly-robust; RRZ 1994 IF, cross-fit
-      3. g-computation              — single-robust outcome model + bootstrap
-      4. PSM 1:1 NN                 — Austin 2011 caliper, ATT
-      5. PSM subclass (5 strata)    — Rosenbaum-Rubin 1983, ATE
-      6. IRM-DML                    — Chernozhukov 2018, ATE+ATTE+ATC,
+      1. IPW (Hájek)               -- single-robust; Lunceford-Davidian SE
+      2. AIPW                       -- doubly-robust; RRZ 1994 IF, cross-fit
+      3. g-computation              -- single-robust outcome model + bootstrap
+      4. PSM 1:1 NN                 -- Austin 2011 caliper, ATT
+      5. PSM subclass (5 strata)    -- Rosenbaum-Rubin 1983, ATE
+      6. IRM-DML                    -- Chernozhukov 2018, ATE+ATTE+ATC,
                                        cluster-robust SE
-      7. PSM->IRM-DML (match_first) — the author's MatchIt-then-DoubleML pipeline
-      8. ATC (AIPW-flavour)         — E[Y(1)-Y(0) | D=0]
-      9. PLR DML                    — homogeneous-effect double ML
-     10. SuperLearner-stacked AIPW  — RF+ridge+GLM+mean convex stack
+      7. PSM->IRM-DML (match_first) -- the author's MatchIt-then-DoubleML pipeline
+      8. ATC (AIPW-flavour)         -- E[Y(1)-Y(0) | D=0]
+      9. PLR DML                    -- homogeneous-effect double ML
+     10. SuperLearner-stacked AIPW  -- RF+ridge+GLM+mean convex stack
 
     Plus IRM-DML SE comparison: pooled (iid), cluster on EndFiscalYear,
-    cluster on UniqueIndividual_ID, multi-way (year × id) — same point
+    cluster on UniqueIndividual_ID, multi-way (year × id) -- same point
     estimate, four standard errors.
 
     Parameters
@@ -884,7 +884,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
         # Default a01/b01 alert-complexity formulation with naive sensitivity
         both = oc.make_pair_alert_to_volatility_all(df)
         data_r, T_r, Y_r, cov_r = both["ruhela"]
-        formulation_label = f"{ds_id}: T_high_ac → Y_vm_count (canonical)"
+        formulation_label = f"{ds_id}: T_high_ac -> Y_vm_count (canonical)"
         naive_arm = both["naive"]
 
     payloads["formulation"] = {"label": formulation_label,
@@ -898,7 +898,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
     def _row(idx: str, est, label: str = None,
              estimand: str = "ATE") -> list:
         if est is None or not hasattr(est, "ate"):
-            return [idx, "—", "err", "—", "—", "—", "—"]
+            return [idx, "--", "err", "--", "--", "--", "--"]
         ci = est.ate_ci95
         return [
             idx if not label else f"{idx} ({label})",
@@ -907,7 +907,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
             f"{est.ate_se:.4f}",
             f"[{ci[0]:+.3f}, {ci[1]:+.3f}]",
             f"{est.ate_pval:.2e}",
-            ", ".join(est.notes[:2]) if est.notes else "—",
+            ", ".join(est.notes[:2]) if est.notes else "--",
         ]
 
     # 1. IPW
@@ -922,7 +922,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                      "p": float(ipw.ate_pval),
                                      "n": int(ipw.n), "notes": ipw.notes})
     except Exception as e:  # noqa: BLE001
-        rows.append(["1. IPW", "—", "err", str(e)[:30], "—", "—", "—"])
+        rows.append(["1. IPW", "--", "err", str(e)[:30], "--", "--", "--"])
 
     # 2. AIPW
     try:
@@ -936,7 +936,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                      "p": float(aipw.ate_pval),
                                      "n": int(aipw.n), "notes": aipw.notes})
     except Exception as e:  # noqa: BLE001
-        rows.append(["2. AIPW", "—", "err", str(e)[:30], "—", "—", "—"])
+        rows.append(["2. AIPW", "--", "err", str(e)[:30], "--", "--", "--"])
 
     # 3. g-computation
     try:
@@ -949,7 +949,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                      "p": float(gc.ate_pval),
                                      "n": int(gc.n), "notes": gc.notes})
     except Exception as e:  # noqa: BLE001
-        rows.append(["3. g-computation", "—", "err", str(e)[:30], "—", "—", "—"])
+        rows.append(["3. g-computation", "--", "err", str(e)[:30], "--", "--", "--"])
 
     # 4. PSM 1:1 NN
     try:
@@ -962,7 +962,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                      "p": float(psm.ate_pval),
                                      "n": int(psm.n), "notes": psm.notes})
     except Exception as e:  # noqa: BLE001
-        rows.append(["4. PSM 1:1 NN", "—", "err", str(e)[:30], "—", "—", "—"])
+        rows.append(["4. PSM 1:1 NN", "--", "err", str(e)[:30], "--", "--", "--"])
 
     # 5. PSM subclass
     try:
@@ -976,9 +976,9 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                      "n": int(psm_sc.n),
                                      "notes": psm_sc.notes})
     except Exception as e:  # noqa: BLE001
-        rows.append(["5. PSM subclass", "—", "err", str(e)[:30], "—", "—", "—"])
+        rows.append(["5. PSM subclass", "--", "err", str(e)[:30], "--", "--", "--"])
 
-    # 6. IRM-DML — primary (cluster on cluster_col), now with ATC
+    # 6. IRM-DML -- primary (cluster on cluster_col), now with ATC
     irm_results: dict = {}
     try:
         dml = oc.otis_irm_dml(data_r, treatment=T_r, outcome=Y_r,
@@ -993,17 +993,17 @@ def _ruhela_formulations_on(df: pd.DataFrame,
         rows.append(["6. IRM-DML", "ATTE",
                       f"{dml['atte']:+.4f}", f"{dml['atte_se']:.4f}",
                       f"[{dml['atte_ci95'][0]:+.3f}, {dml['atte_ci95'][1]:+.3f}]",
-                      f"{dml['atte_pval']:.2e}", "—"])
+                      f"{dml['atte_pval']:.2e}", "--"])
         if include_atc and dml.get("atc") is not None:
             rows.append(["6. IRM-DML", "ATC",
                           f"{dml['atc']:+.4f}",
                           f"{dml.get('atc_se', float('nan')):.4f}",
                           (f"[{dml['atc_ci95'][0]:+.3f}, "
                             f"{dml['atc_ci95'][1]:+.3f}]"
-                            if dml.get("atc_ci95") else "—"),
+                            if dml.get("atc_ci95") else "--"),
                           (f"{dml['atc_pval']:.2e}"
-                            if dml.get("atc_pval") is not None else "—"),
-                          "—"])
+                            if dml.get("atc_pval") is not None else "--"),
+                          "--"])
         irm_results = dml
         payloads["ensemble"].append({"estimator": "IRM-DML",
                                      "ate": float(dml["ate"]),
@@ -1015,7 +1015,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                              else None),
                                      "n": int(dml["n"])})
     except Exception as e:  # noqa: BLE001
-        rows.append(["6. IRM-DML", "—", "err", str(e)[:30], "—", "—", "—"])
+        rows.append(["6. IRM-DML", "--", "err", str(e)[:30], "--", "--", "--"])
 
     # 7. PSM -> IRM-DML
     try:
@@ -1033,7 +1033,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
         payloads["match_first"] = {k: v for k, v in dml_mf.items()
                                     if k != "data"}
     except Exception as e:  # noqa: BLE001
-        rows.append(["7. PSM->IRM-DML", "—", "err", str(e)[:30], "—", "—", "—"])
+        rows.append(["7. PSM->IRM-DML", "--", "err", str(e)[:30], "--", "--", "--"])
 
     # 8. ATC (AIPW-style)
     if include_atc:
@@ -1047,8 +1047,8 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                          "p": float(atc.ate_pval),
                                          "n": int(atc.n), "notes": atc.notes})
         except Exception as e:  # noqa: BLE001
-            rows.append(["8. ATC (AIPW)", "—", "err",
-                          str(e)[:30], "—", "—", "—"])
+            rows.append(["8. ATC (AIPW)", "--", "err",
+                          str(e)[:30], "--", "--", "--"])
 
     # 9. PLR (Partially Linear DML)
     if include_plr:
@@ -1063,7 +1063,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                          "p": float(plr.ate_pval),
                                          "n": int(plr.n), "notes": plr.notes})
         except Exception as e:  # noqa: BLE001
-            rows.append(["9. PLR", "—", "err", str(e)[:30], "—", "—", "—"])
+            rows.append(["9. PLR", "--", "err", str(e)[:30], "--", "--", "--"])
 
     # 10. SuperLearner-stacked AIPW
     if include_superlearner:
@@ -1079,8 +1079,8 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                          "n": int(sl.n),
                                          "notes": sl.notes})
         except Exception as e:  # noqa: BLE001
-            rows.append(["10. SuperLearner AIPW", "—", "err",
-                          str(e)[:30], "—", "—", "—"])
+            rows.append(["10. SuperLearner AIPW", "--", "err",
+                          str(e)[:30], "--", "--", "--"])
 
     # === Multi-SE comparison on IRM-DML primary point estimate ===
     multi_se_rows: list = []
@@ -1101,8 +1101,8 @@ def _ruhela_formulations_on(df: pd.DataFrame,
         ]
         for label, cl in flavours:
             if cl is None and label != "pooled (iid)":
-                multi_se_rows.append([label, "—", "n/a (col missing)",
-                                       "—", "—"])
+                multi_se_rows.append([label, "--", "n/a (col missing)",
+                                       "--", "--"])
                 continue
             try:
                 fit = oc.otis_irm_dml(data_r, treatment=T_r, outcome=Y_r,
@@ -1115,8 +1115,8 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                     f"{fit['ate_pval']:.2e}",
                 ])
             except Exception as e:  # noqa: BLE001
-                multi_se_rows.append([label, "—", "err",
-                                       str(e)[:30], "—"])
+                multi_se_rows.append([label, "--", "err",
+                                       str(e)[:30], "--"])
         payloads["multi_se"] = multi_se_rows
 
     # === Naive-arm sensitivity (only if formulation defines a naive pair) ===
@@ -1138,11 +1138,11 @@ def _ruhela_formulations_on(df: pd.DataFrame,
                                     f"{r.ate_pval:.2e}"])
             except Exception as e:  # noqa: BLE001
                 naive_rows.append([label_n, "err", str(e)[:30],
-                                    "—", "—"])
+                                    "--", "--"])
         payloads["naive_arm"] = naive_rows
 
     # === Balance & propensity diagnostics on Ruhela arm ===
-    balance_summary = "—"
+    balance_summary = "--"
     try:
         balance = oc.otis_balance(data_r, treatment=T_r,
                                     covariates=cov_r)
@@ -1169,7 +1169,7 @@ def _ruhela_formulations_on(df: pd.DataFrame,
 
     tables = [{
         "title": (f"Ruhela formulations (full DLRM, "
-                   f"alias DLRM) on {ds_id} — {formulation_label}:"),
+                   f"alias DLRM) on {ds_id} -- {formulation_label}:"),
         "headers": ["Estimator", "Estimand",
                      "Estimate", "SE", "95% CI", "p-value", "Notes"],
         "rows": rows,
@@ -1203,7 +1203,7 @@ def analyze_a01_ruhela_formulations(df: pd.DataFrame | None = None,
                             *,
                             cluster_col: str = "EndFiscalYear",
                             ) -> RichResult:
-    """Ruhela formulations (full DLRM) on a01 — the canonical
+    """Ruhela formulations (full DLRM) on a01 -- the canonical
     OTIS-RC dataset.
 
     Runs the complete OTIS-RC methodology arc on the author's Ruhela
@@ -1213,9 +1213,9 @@ def analyze_a01_ruhela_formulations(df: pd.DataFrame | None = None,
     Attribution
     -----------
     The Ruhela formulation is the author's design end-to-end; the supporting-
-    contributor credits (Doob — pointed the author to the dataset; Levinsky —
+    contributor credits (Doob -- pointed the author to the dataset; Levinsky --
     course context, reviewed only the preliminary a01 analysis; Medina
-    — reviewed the formal write-up) are documented in
+    -- reviewed the formal write-up) are documented in
     ``morie.otis_causal``'s module docstring.
 
     Parameters
@@ -1233,8 +1233,8 @@ def analyze_a01_ruhela_formulations(df: pd.DataFrame | None = None,
         df,
         ds_id="a01",
         source_label="a01_restrictive_confinement_detailed_dataset.csv",
-        title=("OTIS a01 — Ruhela formulations (full DLRM) on the "
-                "canonical formulation (T = ac ≥ 2 → Y = vm count)"),
+        title=("OTIS a01 -- Ruhela formulations (full DLRM) on the "
+                "canonical formulation (T = ac ≥ 2 -> Y = vm count)"),
         interpretation=(
             "Ruhela formulations on the canonical OTIS-RC dataset (a01). The "
             "Ruhela formulation (T = ac ≥ 2 alert-state complexity, "
@@ -1243,7 +1243,7 @@ def analyze_a01_ruhela_formulations(df: pd.DataFrame | None = None,
             "across IPW (single-robust on propensity), g-computation "
             "(single-robust on outcome), AIPW (doubly-robust), PSM-NN "
             "(ATT, nonparametric), PSM-subclass (ATE, nonparametric), "
-            "The man who moves a mountain begins by carrying away small stones. — Confucius"
+            "The man who moves a mountain begins by carrying away small stones. -- Confucius"
             "then-DoubleML pipeline) is the strongest practical signal "
             "of identification. Naive-arm sensitivity (any-flag, vm-"
             "binary) shows the same Goffmanian sign at smaller magnitude."
@@ -1268,7 +1268,7 @@ def analyze_b01_ruhela_formulations(df: pd.DataFrame | None = None,
     """Ruhela formulations (full DLRM) on b01 (Segregation Detailed).
 
     Per-placement segregation complement to a01's per-day RC records.
-    Same Ruhela alert-complexity → regional-volatility contrast,
+    Same Ruhela alert-complexity -> regional-volatility contrast,
     larger magnitude effect because segregation is a stronger
     institutional contrast.
 
@@ -1282,7 +1282,7 @@ def analyze_b01_ruhela_formulations(df: pd.DataFrame | None = None,
         df,
         ds_id="b01",
         source_label="b01_segregation_detailed_dataset.csv",
-        title=("OTIS b01 — Ruhela formulations (full DLRM) "
+        title=("OTIS b01 -- Ruhela formulations (full DLRM) "
                 "(segregation-detailed complement)"),
         interpretation=(
             "Ruhela formulations on b01 segregation-placement records, "
@@ -1349,8 +1349,8 @@ def analyze_b02_ruhela_formulations(df: "pd.DataFrame | None" = None,
         work,
         ds_id="b02",
         source_label="b02_segregation_detailed_total_days.csv",
-        title=("OTIS b02 — Ruhela formulations: "
-                "T=Female → Y=Total seg days within FY"),
+        title=("OTIS b02 -- Ruhela formulations: "
+                "T=Female -> Y=Total seg days within FY"),
         interpretation=(
             "Ruhela formulation on b02 testing gender disparity in "
             "segregation-day burden. Per-person-year aggregated days "
@@ -1406,7 +1406,7 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
             est = year_results.get(est_label, {})
             if "error" in est:
                 long_rows.append([yr, est_label.upper(),
-                                    "err", "—", "—", "—", est.get("error", "")[:30]])
+                                    "err", "--", "--", "--", est.get("error", "")[:30]])
                 continue
             ci = est.get("ci95", (float("nan"), float("nan")))
             long_rows.append([
@@ -1420,7 +1420,7 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
         # IRM-DML: report ATE + ATTE + ATC inline
         irm = year_results.get("irm_dml", {})
         if "error" in irm:
-            long_rows.append([yr, "IRM-DML", "err", "—", "—", "—",
+            long_rows.append([yr, "IRM-DML", "err", "--", "--", "--",
                                 irm.get("error", "")[:30]])
         else:
             for label_irm, key, key_se in [
@@ -1436,12 +1436,12 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
                     yr, label_irm,
                     f"{v:+.4f}", f"{vse:.4f}",
                     f"[{v - 1.96 * vse:+.3f}, {v + 1.96 * vse:+.3f}]",
-                    "—", f"n={irm.get('n', '?')} {irm.get('se_kind', '')}",
+                    "--", f"n={irm.get('n', '?')} {irm.get('se_kind', '')}",
                 ])
         # match_first
         mf = year_results.get("match_first", {})
         if "error" in mf:
-            long_rows.append([yr, "PSM->IRM-DML", "err", "—", "—", "—",
+            long_rows.append([yr, "PSM->IRM-DML", "err", "--", "--", "--",
                                 mf.get("error", "")[:30]])
         else:
             v = mf.get("ate", float("nan"))
@@ -1450,7 +1450,7 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
                 yr, "PSM->IRM-DML",
                 f"{v:+.4f}", f"{vse:.4f}",
                 f"[{v - 1.96 * vse:+.3f}, {v + 1.96 * vse:+.3f}]",
-                "—", f"matched_n={mf.get('n', '?')}",
+                "--", f"matched_n={mf.get('n', '?')}",
             ])
 
     summary = [
@@ -1466,7 +1466,7 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
         ("Estimators per year", 10),
     ]
     return RichResult(
-        title=(f"OTIS {ds_id} — per-fiscal-year full DLRM-on-Ruhela-formulations "
+        title=(f"OTIS {ds_id} -- per-fiscal-year full DLRM-on-Ruhela-formulations "
                 "suite (10 estimators × N years)"),
         summary_lines=summary,
         tables=[{
@@ -1483,7 +1483,7 @@ def analyze_ruhela_per_year(df: "pd.DataFrame",
             "across estimators within each FY = no-misspecification "
             "robustness; stable magnitudes across FYs = temporal "
             "stationarity. Use this to identify FYs where some "
-            "estimators disagree — typical sign of finite-sample "
+            "estimators disagree -- typical sign of finite-sample "
             "fragility or genuine effect heterogeneity."
         ),
         payload={"by_year": by_year,
@@ -1553,7 +1553,7 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
     model** (Liang-Zeger 1986) clustered on that grouping variable,
     with cluster-robust SE. Use this when one categorical has too many
     levels to enter as a fixed effect (e.g. ~76 institutions on a 148-
-    row table) — the FE specification becomes collinear and fits fail.
+    row table) -- the FE specification becomes collinear and fits fail.
     GEE marginal model is what OTIS-RC's ``glmmTMB nbinom2`` does in
     spirit: report population-level IRR with cluster-robust inference.
 
@@ -1575,7 +1575,7 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
     except ImportError:
         return RichResult(
             title=title,
-            warnings=["statsmodels unavailable — install morie[stats]"],
+            warnings=["statsmodels unavailable -- install morie[stats]"],
             interpretation="Aggregate Poisson/NB GLM requires statsmodels.",
         )
 
@@ -1621,8 +1621,8 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
             t_coef_keys = [k for k in model.params.index
                             if treatment in k]
             if not t_coef_keys:
-                rows.append([fam_label, treatment, "no coef", "—", "—",
-                              "—", "—"])
+                rows.append([fam_label, treatment, "no coef", "--", "--",
+                              "--", "--"])
                 continue
             t_key = t_coef_keys[0]
             beta = float(model.params[t_key])
@@ -1650,7 +1650,7 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
         except Exception as e:  # noqa: BLE001
             rows.append([fam_label, treatment, "fit failed",
                           str(type(e).__name__), str(e)[:30],
-                          "—", "—"])
+                          "--", "--"])
 
     # === GEE clustered fits when cluster_group set ===
     # Iterate over (Family × WorkingCorrelation): Poisson + NB,
@@ -1682,7 +1682,7 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
                                 if treatment in k]
                 if not t_coef_keys:
                     rows.append([row_label, treatment, "no coef",
-                                  "—", "—", "—", "—"])
+                                  "--", "--", "--", "--"])
                     continue
                 t_key = t_coef_keys[0]
                 beta = float(gee_model.params[t_key])
@@ -1694,7 +1694,7 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
                 rows.append([
                     row_label, t_key, round(irr, 4),
                     f"[{ci_lo:.3f}, {ci_hi:.3f}]",
-                    f"{pval:.2e}", "—",
+                    f"{pval:.2e}", "--",
                     f"groups={n_groups}, n_obs={int(work.shape[0])}",
                 ])
                 payloads["estimands"].append({
@@ -1710,7 +1710,7 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
                 rows.append([
                     row_label, treatment, "fit failed",
                     str(type(e).__name__), str(e)[:30],
-                    "—", "—",
+                    "--", "--",
                 ])
 
     overdispersion = (round(aic_pois - aic_nb, 1)
@@ -1725,7 +1725,7 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
         ("Year FE", year_col),
         ("Covariate FEs", ", ".join(cov) if cov else "none"),
         ("Cluster group (GEE marginal model)",
-            cluster_group or "—"),
+            cluster_group or "--"),
         ("Cells", int(work.shape[0])),
         ("Total outcome count", int(work[outcome].sum())),
         ("Overdispersion (Poisson AIC − NB AIC)", overdispersion),
@@ -1735,7 +1735,7 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
         title=title,
         summary_lines=summary,
         tables=[{
-            "title": ("Aggregate Ruhela formulation — Poisson + NB IRR "
+            "title": ("Aggregate Ruhela formulation -- Poisson + NB IRR "
                        + ("+ GEE clustered " if cluster_group else "")
                        + "for treatment effect on count outcome:"),
             "headers": ["Family", "Coefficient", "IRR", "95% CI",
@@ -1746,7 +1746,7 @@ def _ruhela_aggregate_on(df: "pd.DataFrame",
             "\n\nIRR > 1 ⇒ treatment increases the count rate; IRR < 1 ⇒ "
             "treatment decreases it. Concordance between Poisson and NB "
             "indicates equidispersion; large gap (Poisson AIC ≫ NB AIC) "
-            "indicates overdispersion — trust NB."
+            "indicates overdispersion -- trust NB."
             + (" GEE-Poisson with cluster-robust SE is the population-"
                 "level marginal-model alternative that respects within-"
                 f"{cluster_group} correlation; trust the GEE row when "
@@ -1762,7 +1762,7 @@ def analyze_b03_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
     """Aggregate Ruhela formulation on b03 (Alert × Institution).
 
-    T = Alert_Presence indicator → Y = Number_SegregationPlacements.
+    T = Alert_Presence indicator -> Y = Number_SegregationPlacements.
     Year-FE + Region-FE + Alert_Type-FE; Institution as **GEE cluster
     group** (24 levels, marginal model with cluster-robust SE).
     """
@@ -1778,8 +1778,8 @@ def analyze_b03_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="b03",
         source_label=("b03_segregation_placements_alerts_and_hold_flags"
                        "_by_institution.csv"),
-        title=("OTIS b03 — Aggregate Ruhela formulation: "
-                "Alert presence → Number of segregation placements"),
+        title=("OTIS b03 -- Aggregate Ruhela formulation: "
+                "Alert presence -> Number of segregation placements"),
         interpretation=(
             "Aggregate Ruhela formulation on b03 testing whether an "
             "alert-flagged person-cell receives more segregation "
@@ -1804,7 +1804,7 @@ def analyze_b07_ruhela_aggregate(df: "pd.DataFrame | None" = None,
       Number_Segregation_Placements_Without_Alert
 
     We pivot to long form (one row per alert-state × gender × year),
-    then T = with_alert indicator → Y = count. Year + Gender + Alert_Type
+    then T = with_alert indicator -> Y = count. Year + Gender + Alert_Type
     fixed effects.
     """
     from .otis_datasets import load_otis_dataset
@@ -1833,8 +1833,8 @@ def analyze_b07_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         long_df, ds_id="b07",
         source_label=("b07_segregation_placements_alerts_and_hold_flags"
                        "_by_gender.csv"),
-        title=("OTIS b07 — Aggregate Ruhela formulation: "
-                "With-alert vs without-alert × gender → "
+        title=("OTIS b07 -- Aggregate Ruhela formulation: "
+                "With-alert vs without-alert × gender -> "
                 "Number of segregation placements"),
         interpretation=(
             "Aggregate Ruhela formulation on b07 testing whether "
@@ -1851,10 +1851,10 @@ def analyze_b07_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c01_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate Ruhela formulation on c01 — gender disparity in RC.
+    """Aggregate Ruhela formulation on c01 -- gender disparity in RC.
 
     c01 has Gender × {InCustody, RestrictiveConfinement, Segregation}
-    counts. T = Female indicator → Y = NumberIndividuals_RC,
+    counts. T = Female indicator -> Y = NumberIndividuals_RC,
     Year-FE.
     """
     from .otis_datasets import load_otis_dataset
@@ -1868,8 +1868,8 @@ def analyze_c01_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c01",
         source_label=("c01_individuals_in_segregation_and_restrictive_"
                        "confinement_total_individuals.csv"),
-        title=("OTIS c01 — Aggregate Ruhela formulation: "
-                "Female indicator → Number of individuals in RC"),
+        title=("OTIS c01 -- Aggregate Ruhela formulation: "
+                "Female indicator -> Number of individuals in RC"),
         interpretation=(
             "Aggregate Ruhela formulation on c01 testing gender "
             "disparity in restrictive-confinement totals at the "
@@ -1885,7 +1885,7 @@ def analyze_c01_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c07_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate Ruhela formulation on c07 — alert × gender → RC count.
+    """Aggregate Ruhela formulation on c07 -- alert × gender -> RC count.
 
     Counterpart of the per-row Ruhela formulation on a01/b01 at the
     aggregate level. Useful triangulation: c07 reports
@@ -1910,17 +1910,17 @@ def analyze_c07_ruhela_aggregate(df: "pd.DataFrame | None" = None,
             or (1 - work["T_alert_present"]).sum() == 0):
         return RichResult(
             title="c07 aggregate Ruhela",
-            warnings=["c07 has no no-alert reference rows — "
+            warnings=["c07 has no no-alert reference rows -- "
                        "treatment indicator is degenerate"],
         )
     return _ruhela_aggregate_on(
         work, ds_id="c07",
         source_label=("c07_individuals_in_segregation_and_restrictive_"
                        "confinement_alerts_and_hold_flags.csv"),
-        title=("OTIS c07 — Aggregate Ruhela formulation: "
-                "Alert presence × Gender → Individuals in RC"),
+        title=("OTIS c07 -- Aggregate Ruhela formulation: "
+                "Alert presence × Gender -> Individuals in RC"),
         interpretation=(
-            "Aggregate Ruhela formulation on c07 — the population-level "
+            "Aggregate Ruhela formulation on c07 -- the population-level "
             "counterpart of the canonical (T_high_ac, vm) per-row "
             "formulation on a01/b01. Tests whether alert-flagged person-"
             "cells produce higher RC counts at the aggregate level."
@@ -1937,9 +1937,9 @@ def analyze_c07_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_b06_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate Ruhela formulation on b06 — disciplinary reason → seg.
+    """Aggregate Ruhela formulation on b06 -- disciplinary reason -> seg.
 
-    T = (Reason contains "Disciplinary") → Y = Number of seg placements.
+    T = (Reason contains "Disciplinary") -> Y = Number of seg placements.
     Year-FE + Region-FE + Gender-FE; Institution as **GEE cluster
     group** (24 levels) for marginal-model cluster-robust inference.
     """
@@ -1957,8 +1957,8 @@ def analyze_b06_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="b06",
         source_label=("b06_segregation_placements_reason_for_placement_"
                        "by_institution.csv"),
-        title=("OTIS b06 — Aggregate Ruhela formulation: "
-                "Disciplinary reason → Number of seg placements"),
+        title=("OTIS b06 -- Aggregate Ruhela formulation: "
+                "Disciplinary reason -> Number of seg placements"),
         interpretation=(
             "Aggregate RF on b06 testing whether disciplinary "
             "segregation reasons produce more placements than non-"
@@ -1975,9 +1975,9 @@ def analyze_b06_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c03_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate Ruhela formulation on c03 — racial disparity in RC.
+    """Aggregate Ruhela formulation on c03 -- racial disparity in RC.
 
-    T = (Race == "Indigenous") indicator → Y = NumberIndividuals_RC.
+    T = (Race == "Indigenous") indicator -> Y = NumberIndividuals_RC.
     Year-FE + Gender-FE. Indigenous vs all-other contrast tests
     overrepresentation.
     """
@@ -1993,8 +1993,8 @@ def analyze_c03_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c03",
         source_label=("c03_individuals_in_segregation_and_restrictive_"
                        "confinement_race_by_gender.csv"),
-        title=("OTIS c03 — Aggregate Ruhela formulation: "
-                "Indigenous race → Individuals in RC"),
+        title=("OTIS c03 -- Aggregate Ruhela formulation: "
+                "Indigenous race -> Individuals in RC"),
         interpretation=(
             "Aggregate Ruhela formulation on c03 testing Indigenous "
             "overrepresentation in restrictive confinement at the "
@@ -2010,9 +2010,9 @@ def analyze_c03_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c04_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate Ruhela formulation on c04 — racial disparity by region.
+    """Aggregate Ruhela formulation on c04 -- racial disparity by region.
 
-    T = (Race == "Indigenous") → Y = NumberIndividuals_RC.
+    T = (Race == "Indigenous") -> Y = NumberIndividuals_RC.
     Year-FE + Region-FE.
     """
     from .otis_datasets import load_otis_dataset
@@ -2027,8 +2027,8 @@ def analyze_c04_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c04",
         source_label=("c04_individuals_in_segregation_and_restrictive_"
                        "confinement_race_by_region.csv"),
-        title=("OTIS c04 — Aggregate Ruhela formulation: "
-                "Indigenous race → Individuals in RC, by region"),
+        title=("OTIS c04 -- Aggregate Ruhela formulation: "
+                "Indigenous race -> Individuals in RC, by region"),
         interpretation=(
             "Aggregate Ruhela formulation on c04 testing Indigenous "
             "overrepresentation in RC controlling for region. Region-"
@@ -2044,9 +2044,9 @@ def analyze_c04_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c06_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate Ruhela formulation on c06 — age-50+ disparity in RC.
+    """Aggregate Ruhela formulation on c06 -- age-50+ disparity in RC.
 
-    T = (Age_Category contains "50") → Y = NumberIndividuals_RC.
+    T = (Age_Category contains "50") -> Y = NumberIndividuals_RC.
     Year-FE + Region-FE.
     """
     from .otis_datasets import load_otis_dataset
@@ -2060,8 +2060,8 @@ def analyze_c06_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c06",
         source_label=("c06_individuals_in_segregation_and_restrictive_"
                        "confinement_age_category_by_region.csv"),
-        title=("OTIS c06 — Aggregate Ruhela formulation: "
-                "Age 50+ → Individuals in RC, by region"),
+        title=("OTIS c06 -- Aggregate Ruhela formulation: "
+                "Age 50+ -> Individuals in RC, by region"),
         interpretation=(
             "Aggregate Ruhela formulation on c06 testing age-50+ "
             "overrepresentation in RC controlling for region. Older "
@@ -2077,7 +2077,7 @@ def analyze_c06_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c09_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate Ruhela formulation on c09 — age-50+ disparity by gender."""
+    """Aggregate Ruhela formulation on c09 -- age-50+ disparity by gender."""
     from .otis_datasets import load_otis_dataset
     if df is None:
         df = load_otis_dataset("c09")
@@ -2089,8 +2089,8 @@ def analyze_c09_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c09",
         source_label=("c09_individuals_in_segregation_and_restrictive_"
                        "confinement_age_category_by_gender.csv"),
-        title=("OTIS c09 — Aggregate Ruhela formulation: "
-                "Age 50+ → Individuals in RC, by gender"),
+        title=("OTIS c09 -- Aggregate Ruhela formulation: "
+                "Age 50+ -> Individuals in RC, by gender"),
         interpretation=(
             "Aggregate Ruhela formulation on c09 testing age-50+ "
             "overrepresentation in RC controlling for gender."
@@ -2104,8 +2104,8 @@ def analyze_c09_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 # ── Alternative-treatment Ruhela formulations on a01 (per-row) ────
 #
-# The canonical a01 Ruhela formulation is T_high_ac → Y_vm_count
-# (alert-complexity → regional-volatility). The framework also supports
+# The canonical a01 Ruhela formulation is T_high_ac -> Y_vm_count
+# (alert-complexity -> regional-volatility). The framework also supports
 # alternative treatments on the same panel data: gender, age, region.
 # Each runs the full 10-estimator Ruhela suite on the a01 cell-level
 # frame, with the alternative T while keeping Y = vm count and the
@@ -2123,10 +2123,10 @@ def _a01_ruhela_cell_frame() -> "tuple[pd.DataFrame, list[str]]":
 
 def analyze_a01_ruhela_alt_gender(df: "pd.DataFrame | None" = None,
                                     ) -> RichResult:
-    """Alt-T Ruhela formulation on a01 — gender → regional volatility.
+    """Alt-T Ruhela formulation on a01 -- gender -> regional volatility.
 
     Same per-row Ruhela cell frame as the canonical formulation, but
-    T = Female indicator → Y = vm count. Covariates exclude Gender
+    T = Female indicator -> Y = vm count. Covariates exclude Gender
     (the variable being treated). Runs the full 10-estimator DLRM ensemble.
     Tests whether women experience more or fewer regional transfers
     within a fiscal year of restrictive confinement.
@@ -2138,8 +2138,8 @@ def analyze_a01_ruhela_alt_gender(df: "pd.DataFrame | None" = None,
         cell_data, ds_id="a01-altG",
         source_label=("a01_restrictive_confinement_detailed_dataset.csv "
                        "(alt-T: Gender)"),
-        title=("OTIS a01 — Alt-T Ruhela formulation: "
-                "T=Female → Y=vm count (regional volatility)"),
+        title=("OTIS a01 -- Alt-T Ruhela formulation: "
+                "T=Female -> Y=vm count (regional volatility)"),
         interpretation=(
             "Alternative-treatment Ruhela formulation on the a01 cell "
             "frame. Same Y (vm count) as the canonical formulation; T "
@@ -2155,7 +2155,7 @@ def analyze_a01_ruhela_alt_gender(df: "pd.DataFrame | None" = None,
 
 def analyze_a01_ruhela_alt_age(df: "pd.DataFrame | None" = None,
                                  ) -> RichResult:
-    """Alt-T Ruhela formulation on a01 — age 50+ → regional volatility."""
+    """Alt-T Ruhela formulation on a01 -- age 50+ -> regional volatility."""
     cell_data, _ = _a01_ruhela_cell_frame()
     cell_data = cell_data.copy()
     cell_data["T_50plus"] = _age_50plus_indicator(cell_data["Age_Category"])
@@ -2163,8 +2163,8 @@ def analyze_a01_ruhela_alt_age(df: "pd.DataFrame | None" = None,
         cell_data, ds_id="a01-altA",
         source_label=("a01_restrictive_confinement_detailed_dataset.csv "
                        "(alt-T: Age 50+)"),
-        title=("OTIS a01 — Alt-T Ruhela formulation: "
-                "T=Age 50+ → Y=vm count"),
+        title=("OTIS a01 -- Alt-T Ruhela formulation: "
+                "T=Age 50+ -> Y=vm count"),
         interpretation=(
             "Alternative-treatment Ruhela formulation: age 50+ as the "
             "binary treatment. Tests whether older adults experience "
@@ -2179,7 +2179,7 @@ def analyze_a01_ruhela_alt_age(df: "pd.DataFrame | None" = None,
 
 def analyze_a01_ruhela_alt_toronto(df: "pd.DataFrame | None" = None,
                                        ) -> RichResult:
-    """Alt-T Ruhela formulation on a01 — Toronto-region → regional volatility.
+    """Alt-T Ruhela formulation on a01 -- Toronto-region -> regional volatility.
 
     T = (Region_AtTimeOfPlacement == "Toronto") indicator. Tests
     whether Toronto-region placements produce different volatility
@@ -2198,8 +2198,8 @@ def analyze_a01_ruhela_alt_toronto(df: "pd.DataFrame | None" = None,
         cell_data, ds_id="a01-altT",
         source_label=("a01_restrictive_confinement_detailed_dataset.csv "
                        "(alt-T: Toronto region)"),
-        title=("OTIS a01 — Alt-T Ruhela formulation: "
-                "T=Toronto region → Y=vm count"),
+        title=("OTIS a01 -- Alt-T Ruhela formulation: "
+                "T=Toronto region -> Y=vm count"),
         interpretation=(
             "Alternative-treatment Ruhela formulation: Toronto-region "
             "placement as the binary treatment. Tests whether the "
@@ -2232,7 +2232,7 @@ def _b01_ruhela_cell_frame() -> "pd.DataFrame":
 
 def analyze_b01_ruhela_alt_gender(df: "pd.DataFrame | None" = None,
                                     ) -> RichResult:
-    """Alt-T Ruhela formulation on b01 — gender → regional volatility.
+    """Alt-T Ruhela formulation on b01 -- gender -> regional volatility.
 
     Same as analyze_a01_ruhela_alt_gender but on b01 (Segregation
     Detailed) cell frame. Tests whether women experience more or
@@ -2245,8 +2245,8 @@ def analyze_b01_ruhela_alt_gender(df: "pd.DataFrame | None" = None,
         cell_data, ds_id="b01-altG",
         source_label=("b01_segregation_detailed_dataset.csv "
                        "(alt-T: Gender)"),
-        title=("OTIS b01 — Alt-T Ruhela formulation: "
-                "T=Female → Y=vm count (regional volatility)"),
+        title=("OTIS b01 -- Alt-T Ruhela formulation: "
+                "T=Female -> Y=vm count (regional volatility)"),
         interpretation=(
             "Alternative-treatment Ruhela formulation on the b01 cell "
             "frame. Same Y (vm count) as canonical; T = Female "
@@ -2263,7 +2263,7 @@ def analyze_b01_ruhela_alt_gender(df: "pd.DataFrame | None" = None,
 
 def analyze_b01_ruhela_alt_age(df: "pd.DataFrame | None" = None,
                                  ) -> RichResult:
-    """Alt-T Ruhela formulation on b01 — age 50+ → regional volatility."""
+    """Alt-T Ruhela formulation on b01 -- age 50+ -> regional volatility."""
     cell_data = _b01_ruhela_cell_frame()
     cell_data = cell_data.copy()
     cell_data["T_50plus"] = _age_50plus_indicator(cell_data["Age_Category"])
@@ -2271,8 +2271,8 @@ def analyze_b01_ruhela_alt_age(df: "pd.DataFrame | None" = None,
         cell_data, ds_id="b01-altA",
         source_label=("b01_segregation_detailed_dataset.csv "
                        "(alt-T: Age 50+)"),
-        title=("OTIS b01 — Alt-T Ruhela formulation: "
-                "T=Age 50+ → Y=vm count"),
+        title=("OTIS b01 -- Alt-T Ruhela formulation: "
+                "T=Age 50+ -> Y=vm count"),
         interpretation=(
             "Alt-T RF on b01: age 50+ as binary treatment. Tests "
             "whether older adults experience different intra-year "
@@ -2287,7 +2287,7 @@ def analyze_b01_ruhela_alt_age(df: "pd.DataFrame | None" = None,
 
 def analyze_b01_ruhela_alt_toronto(df: "pd.DataFrame | None" = None,
                                        ) -> RichResult:
-    """Alt-T Ruhela formulation on b01 — Toronto-region → regional volatility."""
+    """Alt-T Ruhela formulation on b01 -- Toronto-region -> regional volatility."""
     cell_data = _b01_ruhela_cell_frame()
     cell_data = cell_data.copy()
     if "regA" not in cell_data.columns:
@@ -2300,8 +2300,8 @@ def analyze_b01_ruhela_alt_toronto(df: "pd.DataFrame | None" = None,
         cell_data, ds_id="b01-altT",
         source_label=("b01_segregation_detailed_dataset.csv "
                        "(alt-T: Toronto region)"),
-        title=("OTIS b01 — Alt-T Ruhela formulation: "
-                "T=Toronto region → Y=vm count"),
+        title=("OTIS b01 -- Alt-T Ruhela formulation: "
+                "T=Toronto region -> Y=vm count"),
         interpretation=(
             "Alt-T RF on b01: Toronto-region placement as binary "
             "treatment. Tests whether Toronto's institutional density "
@@ -2322,7 +2322,7 @@ def analyze_a01_ruhela_subgroup_female(df: "pd.DataFrame | None" = None,
                                          ) -> RichResult:
     """Canonical a01 Ruhela formulation on Female-only subset.
 
-    Tests effect-heterogeneity-by-gender: same T_high_ac → vm
+    Tests effect-heterogeneity-by-gender: same T_high_ac -> vm
     contrast, but only on female cells. Compare ATE here to
     analyze_a01_ruhela_subgroup_male to see if alert-complexity
     matters more or less for women than men.
@@ -2343,8 +2343,8 @@ def analyze_a01_ruhela_subgroup_female(df: "pd.DataFrame | None" = None,
         sub, ds_id="a01-subF",
         source_label=("a01_restrictive_confinement_detailed_dataset.csv "
                        "(subgroup: Female)"),
-        title=("OTIS a01 — Subgroup Ruhela formulation: "
-                "Female-only cell frame, T_high_ac → vm count"),
+        title=("OTIS a01 -- Subgroup Ruhela formulation: "
+                "Female-only cell frame, T_high_ac -> vm count"),
         interpretation=(
             "Subgroup analysis: canonical Ruhela formulation restricted "
             "to female cells. Compare to analyze_a01_ruhela_subgroup_male "
@@ -2371,8 +2371,8 @@ def analyze_a01_ruhela_subgroup_male(df: "pd.DataFrame | None" = None,
         sub, ds_id="a01-subM",
         source_label=("a01_restrictive_confinement_detailed_dataset.csv "
                        "(subgroup: Male)"),
-        title=("OTIS a01 — Subgroup Ruhela formulation: "
-                "Male-only cell frame, T_high_ac → vm count"),
+        title=("OTIS a01 -- Subgroup Ruhela formulation: "
+                "Male-only cell frame, T_high_ac -> vm count"),
         interpretation=(
             "Subgroup analysis: canonical Ruhela formulation restricted "
             "to male cells. Companion to analyze_a01_ruhela_subgroup_female "
@@ -2407,13 +2407,13 @@ def analyze_b01_ruhela_subgroup_female(df: "pd.DataFrame | None" = None,
         sub, ds_id="b01-subF",
         source_label=("b01_segregation_detailed_dataset.csv "
                        "(subgroup: Female)"),
-        title=("OTIS b01 — Subgroup Ruhela formulation: "
-                "Female-only cell frame, T_high_ac → vm count"),
+        title=("OTIS b01 -- Subgroup Ruhela formulation: "
+                "Female-only cell frame, T_high_ac -> vm count"),
         interpretation=(
             "Subgroup analysis on b01 (segregation records, per-"
             "placement). Compare to analyze_a01_ruhela_subgroup_female "
             "to see whether the gender-conditional pattern in alert-"
-            "complexity → vm holds across the two unit-of-analysis "
+            "complexity -> vm holds across the two unit-of-analysis "
             "variants (per-day RC vs per-placement seg)."
         ),
         treatment=T, outcome=Y, covariates=cov_no_gender,
@@ -2435,8 +2435,8 @@ def analyze_b01_ruhela_subgroup_male(df: "pd.DataFrame | None" = None,
         sub, ds_id="b01-subM",
         source_label=("b01_segregation_detailed_dataset.csv "
                        "(subgroup: Male)"),
-        title=("OTIS b01 — Subgroup Ruhela formulation: "
-                "Male-only cell frame, T_high_ac → vm count"),
+        title=("OTIS b01 -- Subgroup Ruhela formulation: "
+                "Male-only cell frame, T_high_ac -> vm count"),
         interpretation=(
             "Male-only subgroup analysis on b01. Companion to "
             "analyze_b01_ruhela_subgroup_female for effect-"
@@ -2452,7 +2452,7 @@ def analyze_b01_ruhela_subgroup_male(df: "pd.DataFrame | None" = None,
 
 def analyze_b02_ruhela_alt_region(df: "pd.DataFrame | None" = None,
                                     ) -> RichResult:
-    """b02 alt-T: T = Toronto region → Y = total seg days within FY.
+    """b02 alt-T: T = Toronto region -> Y = total seg days within FY.
 
     Sister to analyze_b02_ruhela_formulations (T = Female). Tests
     regional disparity in seg-day burden controlling for gender +
@@ -2471,8 +2471,8 @@ def analyze_b02_ruhela_alt_region(df: "pd.DataFrame | None" = None,
         work, ds_id="b02-altR",
         source_label=("b02_segregation_detailed_total_days.csv "
                        "(alt-T: Toronto region)"),
-        title=("OTIS b02 — Alt-T Ruhela formulation: "
-                "T=Toronto region → Y=Total seg days within FY"),
+        title=("OTIS b02 -- Alt-T Ruhela formulation: "
+                "T=Toronto region -> Y=Total seg days within FY"),
         interpretation=(
             "Alt-T RF on b02: Toronto-region indicator. Tests whether "
             "Toronto's institutional density translates into different "
@@ -2488,7 +2488,7 @@ def analyze_b02_ruhela_alt_region(df: "pd.DataFrame | None" = None,
 
 def analyze_b02_ruhela_alt_age(df: "pd.DataFrame | None" = None,
                                  ) -> RichResult:
-    """b02 alt-T: T = Age 50+ → Y = total seg days within FY."""
+    """b02 alt-T: T = Age 50+ -> Y = total seg days within FY."""
     from .otis_datasets import load_otis_dataset
     if df is None:
         df = load_otis_dataset("b02")
@@ -2501,8 +2501,8 @@ def analyze_b02_ruhela_alt_age(df: "pd.DataFrame | None" = None,
         work, ds_id="b02-altA",
         source_label=("b02_segregation_detailed_total_days.csv "
                        "(alt-T: Age 50+)"),
-        title=("OTIS b02 — Alt-T Ruhela formulation: "
-                "T=Age 50+ → Y=Total seg days within FY"),
+        title=("OTIS b02 -- Alt-T Ruhela formulation: "
+                "T=Age 50+ -> Y=Total seg days within FY"),
         interpretation=(
             "Alt-T RF on b02: Age 50+ indicator. Tests whether older "
             "adults experience different seg-day burden than younger "
@@ -2522,7 +2522,7 @@ def analyze_b02_ruhela_alt_age(df: "pd.DataFrame | None" = None,
 
 def analyze_c05_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate RF on c05 — non-Christian religion → individuals in RC.
+    """Aggregate RF on c05 -- non-Christian religion -> individuals in RC.
 
     T = (Religion != "Christian" and not "No Religion" and not
     "Unknown") indicator. Tests population-level religious-minority
@@ -2542,8 +2542,8 @@ def analyze_c05_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c05",
         source_label=("c05_individuals_in_segregation_and_restrictive_"
                        "confinement_religion_by_region.csv"),
-        title=("OTIS c05 — Aggregate Ruhela formulation: "
-                "Non-Christian/non-majority religion → Individuals in RC"),
+        title=("OTIS c05 -- Aggregate Ruhela formulation: "
+                "Non-Christian/non-majority religion -> Individuals in RC"),
         interpretation=(
             "Aggregate RF on c05 testing whether religious-minority "
             "(non-Christian, non-no-religion, non-unknown) cells "
@@ -2559,7 +2559,7 @@ def analyze_c05_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c08_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate RF on c08 — non-Christian religion × gender → RC.
+    """Aggregate RF on c08 -- non-Christian religion × gender -> RC.
 
     T = (Religion != Christian / no religion / unknown) indicator.
     Year + Gender FE. Companion to c05 with gender control.
@@ -2578,8 +2578,8 @@ def analyze_c08_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c08",
         source_label=("c08_individuals_in_segregation_and_restrictive_"
                        "confinement_religion_by_gender.csv"),
-        title=("OTIS c08 — Aggregate Ruhela formulation: "
-                "Non-Christian/non-majority religion × Gender → "
+        title=("OTIS c08 -- Aggregate Ruhela formulation: "
+                "Non-Christian/non-majority religion × Gender -> "
                 "Individuals in RC"),
         interpretation=(
             "Aggregate RF on c08, parallel to c05 but with gender "
@@ -2594,10 +2594,10 @@ def analyze_c08_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_b04_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate RF on b04 — gender disparity in median seg duration.
+    """Aggregate RF on b04 -- gender disparity in median seg duration.
 
     b04 has Region × Gender × Measure (max/median/mode) duration. We
-    filter to Measure == "Median" and test T = Female → Y = duration.
+    filter to Measure == "Median" and test T = Female -> Y = duration.
     """
     from .otis_datasets import load_otis_dataset
     if df is None:
@@ -2617,8 +2617,8 @@ def analyze_b04_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="b04",
         source_label=("b04_segregation_placements_consecutive_durations"
                        "_by_region.csv"),
-        title=("OTIS b04 — Aggregate Ruhela formulation: "
-                "Female → median consecutive seg duration"),
+        title=("OTIS b04 -- Aggregate Ruhela formulation: "
+                "Female -> median consecutive seg duration"),
         interpretation=(
             "Aggregate RF on b04 testing gender disparity in the "
             "MEDIAN consecutive duration of segregation placements, "
@@ -2633,7 +2633,7 @@ def analyze_b04_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_b08_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate RF on b08 — gender disparity in median seg duration
+    """Aggregate RF on b08 -- gender disparity in median seg duration
     by institution.
 
     Companion to b04; b08 adds Institution_AtTimeOfPlacement as a
@@ -2659,8 +2659,8 @@ def analyze_b08_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="b08",
         source_label=("b08_segregation_placements_consecutive_durations"
                        "_by_institution.csv"),
-        title=("OTIS b08 — Aggregate Ruhela formulation: "
-                "Female → median seg duration, GEE-clustered on institution"),
+        title=("OTIS b08 -- Aggregate Ruhela formulation: "
+                "Female -> median seg duration, GEE-clustered on institution"),
         interpretation=(
             "Aggregate RF on b08 testing gender disparity in median "
             "segregation duration with region-FE + GEE-Poisson "
@@ -2680,10 +2680,10 @@ def analyze_b08_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_b09_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate RF on b09 — gender disparity in placement-count distribution.
+    """Aggregate RF on b09 -- gender disparity in placement-count distribution.
 
     b09 has rows of (Year × NumberPlacements_Segregation × Gender ×
-    NumberIndividuals_Segregation). We test T = Female → Y =
+    NumberIndividuals_Segregation). We test T = Female -> Y =
     NumberIndividuals_Segregation, with NumberPlacements as a
     categorical FE so we adjust for the bin-cell structure.
     """
@@ -2698,8 +2698,8 @@ def analyze_b09_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="b09",
         source_label=("b09_individuals_in_segregation_number_of_times"
                        "_in_segregation.csv"),
-        title=("OTIS b09 — Aggregate Ruhela formulation: "
-                "Female → Number of individuals in segregation"),
+        title=("OTIS b09 -- Aggregate Ruhela formulation: "
+                "Female -> Number of individuals in segregation"),
         interpretation=(
             "Aggregate RF on b09 testing gender disparity in the "
             "individuals-in-segregation count distribution, "
@@ -2713,12 +2713,12 @@ def analyze_b09_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c02_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate RF on c02 — gender disparity by institution.
+    """Aggregate RF on c02 -- gender disparity by institution.
 
-    Companion to c01 with institution-level granularity. T = Female →
+    Companion to c01 with institution-level granularity. T = Female ->
     Y = NumberIndividuals_RC. Region + year as fixed effects;
     **Institution as a GEE cluster group** (marginal model with
-    cluster-robust SE) — Institution has too many levels (~76) for an
+    cluster-robust SE) -- Institution has too many levels (~76) for an
     FE specification on the 148-row table without collinearity.
     Mirrors OTIS-RC's ``glmmTMB nbinom2`` clustered approach.
     """
@@ -2734,14 +2734,14 @@ def analyze_c02_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c02",
         source_label=("c02_individuals_in_segregation_and_restrictive_"
                        "confinement_by_institution.csv"),
-        title=("OTIS c02 — Aggregate Ruhela formulation: "
-                "Female → Individuals in RC, GEE-clustered on institution"),
+        title=("OTIS c02 -- Aggregate Ruhela formulation: "
+                "Female -> Individuals in RC, GEE-clustered on institution"),
         interpretation=(
             "Aggregate RF on c02 testing gender disparity in RC counts. "
             "Region + year as fixed effects; institution enters as a "
             "GEE cluster group (~76 levels too many for FE specification "
             "on this 148-row table). The GEE-Poisson row reports the "
-            "population-level IRR with cluster-robust SE — the "
+            "population-level IRR with cluster-robust SE -- the "
             "marginal-model analogue of OTIS-RC's glmmTMB nbinom2 "
             "approach with institution random intercept."
         ),
@@ -2754,10 +2754,10 @@ def analyze_c02_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c10_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate RF on c10 — gender disparity in median RC days.
+    """Aggregate RF on c10 -- gender disparity in median RC days.
 
     c10 has Region × Institution × Gender × Measure
-    (Maximum/Median/Mode) duration. Filter to Median; T = Female →
+    (Maximum/Median/Mode) duration. Filter to Median; T = Female ->
     Y = TotalAggregatedDays_RC. Region-FE + Year-FE; Institution as
     **GEE cluster group** (25 levels) for cluster-robust marginal
     inference.
@@ -2781,8 +2781,8 @@ def analyze_c10_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c10",
         source_label=("c10_segregation_and_restrictive_confinement_"
                        "aggregate_durations_by_institution.csv"),
-        title=("OTIS c10 — Aggregate Ruhela formulation: "
-                "Female → median RC days, GEE-clustered on institution"),
+        title=("OTIS c10 -- Aggregate Ruhela formulation: "
+                "Female -> median RC days, GEE-clustered on institution"),
         interpretation=(
             "Aggregate RF on c10 testing gender disparity in median "
             "total RC days per individual. Region + year FE; "
@@ -2798,7 +2798,7 @@ def analyze_c10_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c12_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate RF on c12 — gender disparity in median RC days by region."""
+    """Aggregate RF on c12 -- gender disparity in median RC days by region."""
     from .otis_datasets import load_otis_dataset
     if df is None:
         df = load_otis_dataset("c12")
@@ -2817,8 +2817,8 @@ def analyze_c12_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c12",
         source_label=("c12_segregation_and_restrictive_confinement_"
                        "aggregate_durations_by_region.csv"),
-        title=("OTIS c12 — Aggregate Ruhela formulation: "
-                "Female → median RC days, by region"),
+        title=("OTIS c12 -- Aggregate Ruhela formulation: "
+                "Female -> median RC days, by region"),
         interpretation=(
             "Aggregate RF on c12, the region-level companion to c10. "
             "Tests gender disparity in median total RC days with "
@@ -2833,13 +2833,13 @@ def analyze_c12_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c11_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """Aggregate Ruhela formulation on c11 — long-duration cell concentration.
+    """Aggregate Ruhela formulation on c11 -- long-duration cell concentration.
 
     c11 has rows of (FY × Aggregate_Duration_bin × NumberIndividuals_RC
     × NumberIndividuals_Seg). 11 duration bins from "1 day" to
     "Greater than 30 days". Rather than treat duration as the
     treatment-FE (it IS the categorical the data is binned by), we
-    test T = (long-duration bin: ≥16 days) → Y = NumberIndividuals_RC.
+    test T = (long-duration bin: ≥16 days) -> Y = NumberIndividuals_RC.
     Year-FE only.
     """
     from .otis_datasets import load_otis_dataset
@@ -2858,8 +2858,8 @@ def analyze_c11_ruhela_aggregate(df: "pd.DataFrame | None" = None,
         work, ds_id="c11",
         source_label=("c11_individuals_in_segregation_and_restrictive_"
                        "confinement_aggregate_lengths.csv"),
-        title=("OTIS c11 — Aggregate Ruhela formulation: "
-                "Long-duration bin (≥16 days) → Individuals in RC"),
+        title=("OTIS c11 -- Aggregate Ruhela formulation: "
+                "Long-duration bin (≥16 days) -> Individuals in RC"),
         interpretation=(
             "Aggregate RF on c11 testing whether long-duration bins "
             "(≥16 days) account for a disproportionate share of "
@@ -2880,11 +2880,11 @@ def analyze_c11_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_c01_ruhela_aggregate_region_cluster(
         df: "pd.DataFrame | None" = None) -> RichResult:
-    """c01 alternative: Female → RC count, GEE-clustered on year.
+    """c01 alternative: Female -> RC count, GEE-clustered on year.
 
     Sister analyzer to analyze_c01_ruhela_aggregate. The c01 case has
     only 6 cells (3 years × 2 genders), so cluster_group="EndFiscalYear"
-    gives a 3-cluster GEE — extreme small-cluster bias. This variant
+    gives a 3-cluster GEE -- extreme small-cluster bias. This variant
     is shipped for transparency: shows that with so few clusters,
     Poisson and GEE-Poisson give nearly identical numbers because
     there's no clustering structure to exploit.
@@ -2901,11 +2901,11 @@ def analyze_c01_ruhela_aggregate_region_cluster(
         source_label=("c01_individuals_in_segregation_and_restrictive_"
                        "confinement_total_individuals.csv "
                        "(year-clustered variant)"),
-        title=("OTIS c01 — Aggregate Ruhela formulation, year-clustered: "
-                "Female → Individuals in RC"),
+        title=("OTIS c01 -- Aggregate Ruhela formulation, year-clustered: "
+                "Female -> Individuals in RC"),
         interpretation=(
             "Year-clustered GEE variant of c01. With only 3 fiscal "
-            "years (= 3 clusters), the GEE inference is unreliable — "
+            "years (= 3 clusters), the GEE inference is unreliable -- "
             "this analyzer is shipped for transparency, not as the "
             "primary inference. The standard c01 analyzer remains the "
             "default."
@@ -2919,7 +2919,7 @@ def analyze_c01_ruhela_aggregate_region_cluster(
 
 def analyze_c04_ruhela_aggregate_region_cluster(
         df: "pd.DataFrame | None" = None) -> RichResult:
-    """c04 alternative: Indigenous → RC, GEE-clustered on region.
+    """c04 alternative: Indigenous -> RC, GEE-clustered on region.
 
     Sister to analyze_c04_ruhela_aggregate (which uses region as FE).
     With 5 regions, the GEE-cluster:Region inference treats region as
@@ -2939,8 +2939,8 @@ def analyze_c04_ruhela_aggregate_region_cluster(
         source_label=("c04_individuals_in_segregation_and_restrictive_"
                        "confinement_race_by_region.csv "
                        "(region-clustered variant)"),
-        title=("OTIS c04 — Aggregate Ruhela formulation, region-clustered: "
-                "Indigenous → Individuals in RC"),
+        title=("OTIS c04 -- Aggregate Ruhela formulation, region-clustered: "
+                "Indigenous -> Individuals in RC"),
         interpretation=(
             "Region-clustered GEE variant of c04. The standard c04 "
             "analyzer enters region as FE; this variant treats region "
@@ -2960,7 +2960,7 @@ def analyze_c04_ruhela_aggregate_region_cluster(
 
 def analyze_d02_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """d02 — gender → custodial death count, with year FE."""
+    """d02 -- gender -> custodial death count, with year FE."""
     from .otis_datasets import load_otis_dataset
     if df is None:
         df = load_otis_dataset("d02")
@@ -2970,8 +2970,8 @@ def analyze_d02_ruhela_aggregate(df: "pd.DataFrame | None" = None,
     return _ruhela_aggregate_on(
         work, ds_id="d02",
         source_label="d02_deaths_in_custody_gender.csv",
-        title=("OTIS d02 — Aggregate Ruhela formulation: "
-                "Female → Number of custodial deaths"),
+        title=("OTIS d02 -- Aggregate Ruhela formulation: "
+                "Female -> Number of custodial deaths"),
         interpretation=(
             "Aggregate RF on d02 testing gender disparity in custodial "
             "death counts. Calendar-year aggregate, very small N (6 "
@@ -2986,7 +2986,7 @@ def analyze_d02_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_d03_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """d03 — Indigenous → custodial death count, with year FE."""
+    """d03 -- Indigenous -> custodial death count, with year FE."""
     from .otis_datasets import load_otis_dataset
     if df is None:
         df = load_otis_dataset("d03")
@@ -2997,8 +2997,8 @@ def analyze_d03_ruhela_aggregate(df: "pd.DataFrame | None" = None,
     return _ruhela_aggregate_on(
         work, ds_id="d03",
         source_label="d03_deaths_in_custody_race.csv",
-        title=("OTIS d03 — Aggregate Ruhela formulation: "
-                "Indigenous → Number of custodial deaths"),
+        title=("OTIS d03 -- Aggregate Ruhela formulation: "
+                "Indigenous -> Number of custodial deaths"),
         interpretation=(
             "Aggregate RF on d03 testing Indigenous overrepresentation "
             "in custodial death counts. Small-sample warning: 17 rows; "
@@ -3014,7 +3014,7 @@ def analyze_d03_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_d04_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """d04 — non-majority religion → custodial death count."""
+    """d04 -- non-majority religion -> custodial death count."""
     from .otis_datasets import load_otis_dataset
     if df is None:
         df = load_otis_dataset("d04")
@@ -3027,8 +3027,8 @@ def analyze_d04_ruhela_aggregate(df: "pd.DataFrame | None" = None,
     return _ruhela_aggregate_on(
         work, ds_id="d04",
         source_label="d04_deaths_in_custody_religion.csv",
-        title=("OTIS d04 — Aggregate Ruhela formulation: "
-                "Non-majority religion → Number of custodial deaths"),
+        title=("OTIS d04 -- Aggregate Ruhela formulation: "
+                "Non-majority religion -> Number of custodial deaths"),
         interpretation=(
             "Aggregate RF on d04 testing whether non-majority-religion "
             "cells produce higher death counts. 20 rows total. Small-"
@@ -3043,7 +3043,7 @@ def analyze_d04_ruhela_aggregate(df: "pd.DataFrame | None" = None,
 
 def analyze_d05_ruhela_aggregate(df: "pd.DataFrame | None" = None,
                                    ) -> RichResult:
-    """d05 — age 50+ → custodial death count."""
+    """d05 -- age 50+ -> custodial death count."""
     from .otis_datasets import load_otis_dataset
     if df is None:
         df = load_otis_dataset("d05")
@@ -3053,8 +3053,8 @@ def analyze_d05_ruhela_aggregate(df: "pd.DataFrame | None" = None,
     return _ruhela_aggregate_on(
         work, ds_id="d05",
         source_label="d05_deaths_in_custody_age_category.csv",
-        title=("OTIS d05 — Aggregate Ruhela formulation: "
-                "Age 50+ → Number of custodial deaths"),
+        title=("OTIS d05 -- Aggregate Ruhela formulation: "
+                "Age 50+ -> Number of custodial deaths"),
         interpretation=(
             "Aggregate RF on d05 testing age-50+ overrepresentation "
             "in custodial death counts. Old-age mortality is well-"
@@ -3110,22 +3110,22 @@ def analyze_ruhela_grid() -> RichResult:
         try:
             r = fn()
         except Exception as e:  # noqa: BLE001
-            rows.append([ds_id, "—", "load_err", str(type(e).__name__),
-                          str(e)[:30], "—", "—"])
+            rows.append([ds_id, "--", "load_err", str(type(e).__name__),
+                          str(e)[:30], "--", "--"])
             continue
         if r.warnings:
-            rows.append([ds_id, "—", "warn",
+            rows.append([ds_id, "--", "warn",
                           (r.warnings or [""])[0][:50],
-                          "—", "—", "—"])
+                          "--", "--", "--"])
             continue
         if not (r.tables and r.tables[0].get("rows")):
-            rows.append([ds_id, "—", "no rows", "—", "—", "—", "—"])
+            rows.append([ds_id, "--", "no rows", "--", "--", "--", "--"])
             continue
-        # Estimator priority (most → least appropriate):
-        # 1. GEE-NB Exch  — cluster-robust + overdispersion-aware (OTIS-RC analog)
-        # 2. GEE-Poisson Exch — cluster-robust, equidispersed
-        # 3. NB GLM       — overdispersion-aware, no cluster
-        # 4. Poisson GLM  — fallback
+        # Estimator priority (most -> least appropriate):
+        # 1. GEE-NB Exch  -- cluster-robust + overdispersion-aware (OTIS-RC analog)
+        # 2. GEE-Poisson Exch -- cluster-robust, equidispersed
+        # 3. NB GLM       -- overdispersion-aware, no cluster
+        # 4. Poisson GLM  -- fallback
         def _find(label_substr):
             return next((row for row in r.tables[0]["rows"]
                           if label_substr in str(row[0])
@@ -3152,16 +3152,16 @@ def analyze_ruhela_grid() -> RichResult:
             rows.append([
                 ds_id, primary_type, title,
                 primary[2], primary[3], primary[4],
-                primary[6][:30] if len(primary) > 6 else "—",
+                primary[6][:30] if len(primary) > 6 else "--",
             ])
         else:
             rows.append([
                 ds_id, "all failed", title,
-                "—", "—", "—", "—",
+                "--", "--", "--", "--",
             ])
 
     return RichResult(
-        title=("OTIS Ruhela formulations grid summary — one-page IRR/ATE"
+        title=("OTIS Ruhela formulations grid summary -- one-page IRR/ATE"
                 " comparison across all aggregate RF analyzers"),
         summary_lines=[
             ("Aggregate datasets covered", len(aggregates_to_run)),
@@ -3173,7 +3173,7 @@ def analyze_ruhela_grid() -> RichResult:
                 "GEE-NB > GEE-Poisson > NB GLM > Poisson GLM"),
         ],
         tables=[{
-            "title": ("Aggregate Ruhela formulations — primary IRR per "
+            "title": ("Aggregate Ruhela formulations -- primary IRR per "
                        "dataset (GEE cluster-robust > NB GLM):"),
             "headers": ["DS", "Type", "Formulation", "IRR",
                          "95% CI", "p", "Notes"],
@@ -3194,11 +3194,11 @@ def analyze_ruhela_grid() -> RichResult:
 
 
 def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
-    """Paper-ready master report — every Ruhela formulation in one RichResult.
+    """Paper-ready master report -- every Ruhela formulation in one RichResult.
 
     Sections:
-      1. Aggregate Ruhela formulations (24 datasets) — IRR comparison
-      2. Per-row Ruhela formulations on a01/b01/b02 — primary IRM-DML ATE
+      1. Aggregate Ruhela formulations (24 datasets) -- IRR comparison
+      2. Per-row Ruhela formulations on a01/b01/b02 -- primary IRM-DML ATE
          (only when ``include_per_row=True``; ~5-7 min runtime)
       3. Doob chi-square family on c-series + d-series
 
@@ -3208,7 +3208,7 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
     ----------
     include_per_row : bool
         If True, also runs the slow per-row RFs on a01/b01/b02 (full
-        10-estimator DLRM). Default False — runs in ~1 second from
+        10-estimator DLRM). Default False -- runs in ~1 second from
         cached aggregates only.
     """
     sections: list = []
@@ -3217,7 +3217,7 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
     grid = analyze_ruhela_grid()
     if grid.tables:
         sections.append({
-            "title": ("§1 Aggregate Ruhela formulations — primary "
+            "title": ("§1 Aggregate Ruhela formulations -- primary "
                        "IRR per dataset:"),
             "headers": grid.tables[0]["headers"],
             "rows": grid.tables[0]["rows"],
@@ -3236,15 +3236,15 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
             except Exception as e:  # noqa: BLE001
                 per_row_rows.append([ds_id, "load_err",
                                        str(type(e).__name__),
-                                       str(e)[:30], "—", "—"])
+                                       str(e)[:30], "--", "--"])
                 continue
             if r.warnings:
                 per_row_rows.append([ds_id, "warn",
                                        (r.warnings or [""])[0][:50],
-                                       "—", "—", "—"])
+                                       "--", "--", "--"])
                 continue
             if not (r.tables and r.tables[0].get("rows")):
-                per_row_rows.append([ds_id, "no rows", "—", "—", "—", "—"])
+                per_row_rows.append([ds_id, "no rows", "--", "--", "--", "--"])
                 continue
             irm_row = next((row for row in r.tables[0]["rows"]
                              if "IRM-DML" in str(row[0])
@@ -3256,11 +3256,11 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
                 ])
             else:
                 per_row_rows.append([ds_id, "no IRM-DML ATE",
-                                       "—", "—", "—", "—"])
+                                       "--", "--", "--", "--"])
     if per_row_rows:
         sections.append({
             "title": ("§2 Per-row Ruhela formulations (canonical "
-                       "T_high_ac → vm_count) — IRM-DML ATE:"),
+                       "T_high_ac -> vm_count) -- IRM-DML ATE:"),
             "headers": ["DS", "Estimator", "ATE", "SE", "95% CI", "p"],
             "rows": per_row_rows,
         })
@@ -3277,7 +3277,7 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
                     doob_rows.append([label, *row[:5]])
         if doob_rows:
             sections.append({
-                "title": ("§3 Doob chi-square family — Pearson χ² + "
+                "title": ("§3 Doob chi-square family -- Pearson χ² + "
                            "Cramer's V on aggregate contingency tables:"),
                 "headers": ["Series", "Slice/measure", "χ²", "dof",
                              "p", "Cramer's V"],
@@ -3295,21 +3295,21 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
         # Feb 2021 Mandela classification (Table 19) headline
         for r in _sd.TABLE19_MANDELA_CLASSIFICATION:
             sd_rows.append(["SD-2021-Feb T19", r["category"],
-                             f"{r['percent']:.1f}%", r["n"], "—", "—"])
+                             f"{r['percent']:.1f}%", r["n"], "--", "--"])
         # Feb 2021 regional torture rates (Table 23) headline
         for r in _sd.TABLE23_REGIONAL_TORTURE_RATES:
             sd_rows.append(["SD-2021-Feb T23", r["region"],
-                             "—", "—",
+                             "--", "--",
                              f"{r['solitary_rate']:.2f}/1k",
                              f"{r['torture_rate']:.2f}/1k"])
-        # Feb 2021 — additional headline rows from Tables 11, 12, 22
+        # Feb 2021 -- additional headline rows from Tables 11, 12, 22
         if hasattr(_sd, "TABLE11_CHISQ"):
             sd_rows.append(["SD-2021-Feb T11",
                              "Region × stay-length χ²",
                              f"χ²={_sd.TABLE11_CHISQ['chi2']}, "
                              f"df={_sd.TABLE11_CHISQ['df']}",
                              f"p<{_sd.TABLE11_CHISQ['p']}",
-                             "—", "—"])
+                             "--", "--"])
         if hasattr(_sd, "TABLE12_REGIONAL_OVERREP"):
             for r in _sd.TABLE12_REGIONAL_OVERREP:
                 ratio = r["siu_pct"] / r["pop_pct"]
@@ -3317,51 +3317,51 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
                                  f"{r['region']} over-/under-rep",
                                  f"SIU {r['siu_pct']:.1f}%",
                                  f"Pop {r['pop_pct']:.1f}%",
-                                 f"{ratio:.2f}×", "—"])
+                                 f"{ratio:.2f}×", "--"])
         if hasattr(_sd, "TABLE22_CHISQ"):
             sd_rows.append(["SD-2021-Feb T22",
                              "Region × Mandela χ²",
                              f"χ²={_sd.TABLE22_CHISQ['chi2']}, "
                              f"df={_sd.TABLE22_CHISQ['df']}",
                              f"p<{_sd.TABLE22_CHISQ['p']}",
-                             "—", "—"])
-        # May 2021 — IEDM headline
+                             "--", "--"])
+        # May 2021 -- IEDM headline
         h = _sd.HEADLINE_MAY2021
-        sd_rows.append(["SDI-2021-May", "n_iedm_stays_reviewed", "—",
-                         h["n_iedm_stays_reviewed"], "—", "—"])
+        sd_rows.append(["SDI-2021-May", "n_iedm_stays_reviewed", "--",
+                         h["n_iedm_stays_reviewed"], "--", "--"])
         sd_rows.append(["SDI-2021-May", "% IEDM stay-in (Table 9)",
                          f"{h['pct_stay_in_decisions_among_rendered']}%",
-                         "—", "—", "—"])
+                         "--", "--", "--"])
         sd_rows.append(["SDI-2021-May", "% pre-empted by CSC (T9)",
                          f"{h['pct_csc_moved_prisoner_before_iedm']}%",
-                         "—", "—", "—"])
+                         "--", "--", "--"])
         sd_rows.append(["SDI-2021-May", "long-stay no-IEDM record (T15)",
-                         "—", h["n_long_stay_no_iedm_record_min76d"],
-                         "—", "—"])
+                         "--", h["n_long_stay_no_iedm_record_min76d"],
+                         "--", "--"])
         sd_rows.append(["SDI-2021-May", "Indigenous share (T1)",
                          f"{h['indigenous_share_of_reviewed_stays_pct']:.1f}%",
-                         "—", "—", "—"])
-        # May 2021 — additional headline rows from Tables 5, 8, 10
+                         "--", "--", "--"])
+        # May 2021 -- additional headline rows from Tables 5, 8, 10
         if hasattr(_sd, "TABLE5_MAY2021_CHISQ"):
             sd_rows.append(["SDI-2021-May T5",
                              "Race × #IEDM-reviews χ²",
                              f"χ²={_sd.TABLE5_MAY2021_CHISQ['chi2']}, "
                              f"df={_sd.TABLE5_MAY2021_CHISQ['df']}",
                              f"p<{_sd.TABLE5_MAY2021_CHISQ['p']}",
-                             "—", "—"])
+                             "--", "--"])
         if hasattr(_sd, "TABLE8_MAY2021_RACE_X_STAY_121PLUS"):
             for r in _sd.TABLE8_MAY2021_RACE_X_STAY_121PLUS:
                 sd_rows.append(["SDI-2021-May T8",
                                  f"{r['race']} ≥121d share",
                                  f"{r['pct_121_380']:.1f}%",
-                                 r["n_121_380"], "—", "—"])
+                                 r["n_121_380"], "--", "--"])
         if hasattr(_sd, "TABLE10_MAY2021_CHISQ"):
             sd_rows.append(["SDI-2021-May T10",
                              "Per-IEDM 'remain' rate variance χ²",
                              f"χ²={_sd.TABLE10_MAY2021_CHISQ['chi2']}, "
                              f"df={_sd.TABLE10_MAY2021_CHISQ['df']}",
                              f"p<{_sd.TABLE10_MAY2021_CHISQ['p']}",
-                             "37.5%-85.7%", "—"])
+                             "37.5%-85.7%", "--"])
         if sd_rows:
             sections.append({
                 "title": ("§4 RF-extended (federal): Sprott-Doob CRIMSL "
@@ -3374,7 +3374,7 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
     except Exception:  # noqa: BLE001
         pass
 
-    # === Section 5: Doob T-539-20 affidavit — CCRSO national tables ===
+    # === Section 5: Doob T-539-20 affidavit -- CCRSO national tables ===
     try:
         from . import doob_trends as _dt
         doob_nat_rows = []
@@ -3398,7 +3398,7 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
         if doob_nat_rows:
             sections.append({
                 "title": ("§5 RF-extended (federal): Doob T-539-20 "
-                           "affidavit — CCRSO 2018 prisoner-flow & age "
+                           "affidavit -- CCRSO 2018 prisoner-flow & age "
                            "tables (national-aggregate companion):"),
                 "headers": ["Source", "Item", "Col A", "Col B", "Col C"],
                 "rows": doob_nat_rows,
@@ -3433,12 +3433,12 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
             man_rows.append([
                 "Federal SIU vs Prov peak (Mandela torture)",
                 f"max {max_year}",
-                "—", f"prov {max_pct:.1f}%",
+                "--", f"prov {max_pct:.1f}%",
                 f"gap {gap:+.1f} pp vs federal 9.9%",
             ])
         if man_rows:
             sections.append({
-                "title": ("§6 Mandela-RF — Ontario provincial Mandela "
+                "title": ("§6 Mandela-RF -- Ontario provincial Mandela "
                            "classification (OTIS b05/c11) + federal "
                            "cross-comparison:"),
                 "headers": ["Source", "Year/Slice", "Solitary %",
@@ -3449,7 +3449,7 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
         pass
 
     return RichResult(
-        title=("OTIS Ruhela formulations — paper-ready master report "
+        title=("OTIS Ruhela formulations -- paper-ready master report "
                 "(provincial + federal-aggregate companion)"),
         summary_lines=[
             ("Sections", len(sections)),
@@ -3472,7 +3472,7 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
             "applies; (2) per-row IRM-DML ATE on a01/b01/b02 (when "
             "include_per_row=True); (3) Doob χ² on c-series + d-series "
             "demographic contingency tables; (4) RF-extended federal "
-            "companion — Sprott-Doob CRIMSL Feb 2021 Mandela-Rules "
+            "companion -- Sprott-Doob CRIMSL Feb 2021 Mandela-Rules "
             "classifier (28.4% solitary, 9.9% torture) + regional "
             "torture rates (Pacific 22.6× Ontario), and Sprott-Doob-"
             "Iftene Schulich Law May 2021 IEDM-review evaluation "
@@ -3484,7 +3484,7 @@ def analyze_ruhela_master(*, include_per_row: bool = False) -> RichResult:
             "individual-level evidence (Sections 1-3). Methodology "
             "attribution remains DLRM; the federal-aggregate evidence "
             "is replicated FROM Sprott / Doob / Iftene published work, "
-            "The man who moves a mountain begins by carrying away small stones. — Confucius"
+            "The man who moves a mountain begins by carrying away small stones. -- Confucius"
         ),
         payload={"include_per_row": include_per_row,
                   "n_sections": len(sections)},
@@ -3513,8 +3513,8 @@ def analyze_b01_dlrm(*args, **kwargs):
 # framework on Ontario provincial OTIS data.
 #
 # Mandela Rule 43 thresholds applied to OTIS duration bins:
-#   ≤ 15 days  → "Solitary Confinement" (Mandela Rule 44 if conditions met)
-#   ≥ 16 days  → "Torture" (Mandela Rule 43 — prolonged solitary confinement)
+#   ≤ 15 days  -> "Solitary Confinement" (Mandela Rule 44 if conditions met)
+#   ≥ 16 days  -> "Torture" (Mandela Rule 43 -- prolonged solitary confinement)
 #
 # OTIS b05 has bins: 1d, 2d, 3d, 4d, 5d, 6-10d, 11-15d, 16-20d, 21-25d,
 # 26-30d, >30d. The first 7 bins are "≤15 days"; the last 4 are "≥16 days".
@@ -3525,7 +3525,7 @@ def analyze_b01_dlrm(*args, **kwargs):
 # proxy for the Mandela threshold: a placement of ≥16 days CROSSES the
 # Mandela 'prolonged' line, but whether it formally meets the full
 # torture definition depends on hours-out-of-cell data we don't have.
-# The user should treat the b05/c11 figures as a CEILING — actual
+# The user should treat the b05/c11 figures as a CEILING -- actual
 # Mandela-classified torture rates may be lower if conditions are
 # better than the federal SIU regime.
 
@@ -3551,7 +3551,7 @@ def _classify_otis_bins(duration_str: str) -> str:
 def analyze_b05_mandela_classification(
     df: "pd.DataFrame | None" = None,
 ) -> RichResult:
-    """Mandela-RF on b05 — per-placement Mandela classification by year.
+    """Mandela-RF on b05 -- per-placement Mandela classification by year.
 
     Applies the Sprott-Doob 15-day Mandela threshold to OTIS b05 (Ontario
     provincial segregation placement counts by binned duration). Reports
@@ -3593,23 +3593,23 @@ def analyze_b05_mandela_classification(
         prov_torture_pct = float("nan")
 
     return RichResult(
-        title=("Mandela-RF on OTIS b05 — per-placement Mandela "
+        title=("Mandela-RF on OTIS b05 -- per-placement Mandela "
                 "classification (Ontario provincial segregation, by "
                 "fiscal year)"),
         summary_lines=[
             ("Source", "OTIS b05 (segregation placement counts × duration)"),
-            ("Mandela threshold", "Rule 43 — 15 days (≤15 = solitary; "
+            ("Mandela threshold", "Rule 43 -- 15 days (≤15 = solitary; "
                                     "≥16 = torture)"),
             ("Caveat",
                 "Duration-only proxy (no hours-out-of-cell in OTIS); "
-                "treat as upper bound — actual Mandela torture rate may "
+                "treat as upper bound -- actual Mandela torture rate may "
                 "be lower if conditions are less restrictive than "
                 "federal SIUs"),
             ("Federal SD-2021 reference (CSC SIUs N=1960)",
                 f"Solitary {sd_federal_solitary_pct}%, "
                 f"Torture {sd_federal_torture_pct}%"),
             ("Latest provincial torture rate",
-                f"{prov_torture_pct:.2f}% — vs federal "
+                f"{prov_torture_pct:.2f}% -- vs federal "
                 f"{sd_federal_torture_pct}%; "
                 f"{'higher' if prov_torture_pct > sd_federal_torture_pct else 'lower'}"),
         ],
@@ -3646,7 +3646,7 @@ def analyze_b05_mandela_classification(
 def analyze_c11_mandela_classification(
     df: "pd.DataFrame | None" = None,
 ) -> RichResult:
-    """Mandela-RF on c11 — per-individual Mandela classification by year.
+    """Mandela-RF on c11 -- per-individual Mandela classification by year.
 
     Applies the 15-day threshold to OTIS c11 (Ontario provincial counts of
     INDIVIDUALS by binned aggregate duration). Reports both restrictive-
@@ -3662,7 +3662,7 @@ def analyze_c11_mandela_classification(
     for (year, kind), gdf in df.groupby(
         ["EndFiscalYear",  # noqa: PD010
             df["mandela_class"]], sort=True):
-        pass  # placeholder — restructure below
+        pass  # placeholder -- restructure below
 
     # Per-year totals across both 'kind' columns
     rows = []
@@ -3688,18 +3688,18 @@ def analyze_c11_mandela_classification(
                          n_torture, f"{tor_pct:.1f}%", total])
 
     return RichResult(
-        title=("Mandela-RF on OTIS c11 — per-individual Mandela "
+        title=("Mandela-RF on OTIS c11 -- per-individual Mandela "
                 "classification (Ontario provincial restrictive-"
                 "confinement & segregation, by fiscal year)"),
         summary_lines=[
             ("Source", "OTIS c11 (individuals × aggregate duration)"),
-            ("Mandela threshold", "Rule 43 — 15 days "
+            ("Mandela threshold", "Rule 43 -- 15 days "
                                     "(≤15 = solitary; ≥16 = torture)"),
             ("Two views",
                 "Segregation (closer match to federal SIU); "
                 "Restrictive Confinement (broader Ontario superset)"),
             ("Caveat",
-                "Duration-only proxy — no hours-out-of-cell in OTIS"),
+                "Duration-only proxy -- no hours-out-of-cell in OTIS"),
             ("Federal SD-2021 reference (N=1960)",
                 "Solitary 28.4%, Torture 9.9%"),
         ],
@@ -3780,7 +3780,7 @@ def analyze_otis_mandela_provincial_vs_federal() -> RichResult:
         gap_pp = float("nan")
 
     return RichResult(
-        title=("Mandela-RF cross-comparison — Ontario provincial "
+        title=("Mandela-RF cross-comparison -- Ontario provincial "
                 "(OTIS) vs federal SIUs (Sprott-Doob T19)"),
         summary_lines=[
             ("Federal SIU reference",
@@ -3803,7 +3803,7 @@ def analyze_otis_mandela_provincial_vs_federal() -> RichResult:
             "rows": rows,
         }],
         interpretation=(
-            "Cross-comparison of Mandela-Rules classifications — "
+            "Cross-comparison of Mandela-Rules classifications -- "
             "federal SIUs (Sprott-Doob's headline 9.9% torture) vs "
             "Ontario provincial (OTIS c11). Note the unit and "
             "operationalization differences: federal numbers are "
@@ -3832,8 +3832,8 @@ def analyze_otis_mandela_provincial_vs_federal() -> RichResult:
 # Prof. Anthony N. Doob (U. of Toronto, member of the federal SIU IAP
 # alongside Howard Sapers and Jane Sprott) has a long career applying
 # chi-square independence tests in Canadian corrections research.
-# These analyzers — applied to the c-series (aggregate counts) and
-# d-series (deaths) — are framed as a homage to that tradition: classic
+# These analyzers -- applied to the c-series (aggregate counts) and
+# d-series (deaths) -- are framed as a homage to that tradition: classic
 # Pearson chi-square + Cramer's V on every meaningful 2-way slice of
 # the aggregate tables, plus year-over-year trend tests on death counts.
 #
@@ -3985,7 +3985,7 @@ def analyze_c_aggregate(*,
         payloads[ds] = {"row": r_col, "col": c_col, "stats": stats}
 
     return RichResult(
-        title=("OTIS c-series — χ² + Cramer's V family on demographic "
+        title=("OTIS c-series -- χ² + Cramer's V family on demographic "
                 "contingency tables"),
         summary_lines=[
             ("Contingency value column", contingency_value),
@@ -4000,8 +4000,8 @@ def analyze_c_aggregate(*,
         }],
         interpretation=(
             "Cramer's V is the canonical effect-size measure for χ² "
-            "independence on 2-way contingency tables: V≈0 → "
-            "independence, V→1 → strong association. p<.05 with "
+            "independence on 2-way contingency tables: V≈0 -> "
+            "independence, V->1 -> strong association. p<.05 with "
             "V<0.1 ⇒ statistically detectable but practically tiny "
             "(typical of large-n contingency); V>0.3 is a noticeable "
             "association. All slices are population-aggregate (year-"
@@ -4023,7 +4023,7 @@ def analyze_d_aggregate() -> RichResult:
       3. χ² + Cramer's V on d06 (Alert × MedicalCauseOfDeath) and
          d07 (Alert × Housing_Type).
 
-    All measures are at the population aggregate level — d-series has
+    All measures are at the population aggregate level -- d-series has
     no per-individual alert columns, so the Ruhela dual is structurally
     impossible here.
     """
@@ -4102,7 +4102,7 @@ def analyze_d_aggregate() -> RichResult:
         ])
 
     return RichResult(
-        title=("OTIS d-series — yearly death counts + "
+        title=("OTIS d-series -- yearly death counts + "
                 "Alert × Cause/Housing χ²"),
         summary_lines=[
             ("d01 total deaths", int(yearly.sum())),
@@ -4131,7 +4131,7 @@ def analyze_d_aggregate() -> RichResult:
             "rows": chi_rows,
         }],
         interpretation=(
-            "d-series carries no per-individual alert columns — the "
+            "d-series carries no per-individual alert columns -- the "
             "Ruhela alert-complexity dual is structurally impossible "
             "on these data. The natural alternatives are: (1) yearly "
             "death-count trends (small N: 116 total deaths over 3 "
@@ -4155,12 +4155,12 @@ def analyze_a01_with_csi_context(df: pd.DataFrame | None = None,
 
     Wires together three independent morie subsystems:
 
-      1. ``morie.otis_all_analyze.analyze_a01`` — the MatchIt-then-
+      1. ``morie.otis_all_analyze.analyze_a01`` -- the MatchIt-then-
          IRM-DML causal estimate of high-alert-complexity (ac ≥ 2) on
          regional volatility (vm) within OTIS a01.
-      2. ``morie.otis_tps_overlay`` — year-by-year correlation between
+      2. ``morie.otis_tps_overlay`` -- year-by-year correlation between
          OTIS Toronto-region segregation counts and TPS incident counts.
-      3. ``morie.tps_csi.analyze_csi_from_tps_dataframes`` — Statistics
+      3. ``morie.tps_csi.analyze_csi_from_tps_dataframes`` -- Statistics
          Canada Crime Severity Index per year + per ward, weighted by
          offence-specific severity weights and population-adjusted.
 
@@ -4244,7 +4244,7 @@ def analyze_a01_with_csi_context(df: pd.DataFrame | None = None,
     for _, r in overlap.iterrows():
         idx_val = (round(float(r["csi_index"]), 2)
                     if "csi_index" in r.index and pd.notna(r["csi_index"])
-                    else "—")
+                    else "--")
         csi_table_rows.append([
             int(r["year"]),
             int(r["raw_weighted_sum"]),
@@ -4254,9 +4254,9 @@ def analyze_a01_with_csi_context(df: pd.DataFrame | None = None,
         ])
 
     summary = list(otis_result.summary_lines or []) + [
-        ("— CSI context (StatsCan), variant", variant),
-        ("— Rebase year", rebase_to_year if rebase_to_year else "none"),
-        ("— Years with CSI data",
+        ("-- CSI context (StatsCan), variant", variant),
+        ("-- Rebase year", rebase_to_year if rebase_to_year else "none"),
+        ("-- Years with CSI data",
             sorted(by_year_full["year"].astype(int).tolist())
             if "year" in by_year_full.columns else "n/a"),
     ]
@@ -4274,7 +4274,7 @@ def analyze_a01_with_csi_context(df: pd.DataFrame | None = None,
     )
 
     return RichResult(
-        title=("OTIS a01 (alert→vm) + Toronto Crime Severity Index "
+        title=("OTIS a01 (alert->vm) + Toronto Crime Severity Index "
                 "context"),
         summary_lines=summary,
         tables=[{

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Phi coefficient for association in a 2x2 contingency table."""
 
 import math

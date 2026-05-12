@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """VC dimension for the class of affine half-spaces in R^d (Kosorok 2008, Ch 2).
 
 For the class H = {1{a'x + b >= 0} : a in R^d, b in R}, the classical

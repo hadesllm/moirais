@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Network comparison test (global strength and structure)."""
 
 from __future__ import annotations

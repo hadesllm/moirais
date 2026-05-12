@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Raw stress (Kruskal stress-1)"""
 
 import numpy as np

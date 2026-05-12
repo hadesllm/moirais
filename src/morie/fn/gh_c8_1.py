@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Posterior contraction rate definition: eps_n rate iff Pi(d>M*eps_n|data)->0 in P0-prob."""
 import numpy as np
 from ._richresult import RichResult

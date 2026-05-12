@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""An unexamined life is not worth living. — Socrates"""
+# morie.fn -- function file (hadesllm/morie)
+"""An unexamined life is not worth living. -- Socrates"""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ def ps_calibrate(
     ps: np.ndarray,
     treatment: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Calibrate propensity scores using Platt scaling.
 
     Fits :math:`P(T=1|ps) = \\text{logistic}(a \\cdot ps + b)` to
@@ -86,4 +86,4 @@ pscal = ps_calibrate
 
 
 def cheatsheet() -> str:
-    return "An unexamined life is not worth living. — Socrates"
+    return "An unexamined life is not worth living. -- Socrates"

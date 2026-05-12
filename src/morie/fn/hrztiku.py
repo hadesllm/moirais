@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Tikhonov regularization for NPIV when T is unknown."""
 import numpy as np
 from ._richresult import RichResult

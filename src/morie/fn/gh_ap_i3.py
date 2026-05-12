@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Borell-TIS inequality: concentration of GP supremum around its mean."""
 import numpy as np
 from ._richresult import RichResult

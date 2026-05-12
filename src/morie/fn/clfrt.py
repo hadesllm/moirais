@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classification rate for spatial voting model."""
 
 from __future__ import annotations

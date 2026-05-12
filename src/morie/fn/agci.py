@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Agresti-Coull interval for binomial proportion. 'Rebellions are built on hope.' -- Cassian Andor"""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def agresti_coull(successes: int, trials: int, alpha: float = 0.05) -> DescriptiveResult:
-    """
+    r"""
     Agresti-Coull confidence interval for a binomial proportion.
 
     Adds :math:`z^2/2` pseudo-successes and :math:`z^2/2`

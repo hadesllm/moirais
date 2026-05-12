@@ -6,11 +6,11 @@ import numpy as np
 
 from ._containers import SignalResult
 
-_QUOTE = "Life is really simple, but we insist on making it complicated. — Confucius"
+_QUOTE = "Life is really simple, but we insist on making it complicated. -- Confucius"
 
 
 def quantize_signal(x, bits: int = 8) -> SignalResult:
-    """Quantize signal to b bits (uniform quantization).
+    r"""Quantize signal to b bits (uniform quantization).
 
     .. math::
 

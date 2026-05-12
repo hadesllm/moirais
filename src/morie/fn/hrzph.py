@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Proportional hazards model with nonparametric baseline and parametric F."""
 import numpy as np
 from ._richresult import RichResult

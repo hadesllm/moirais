@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Donsker-class verification via the bracketing integral (Kosorok 2008, Ch 2).
 
 A class F is P-Donsker if the L_2(P) bracketing entropy integral

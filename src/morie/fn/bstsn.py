@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayesian structural time series (BSTS) model.
 
 Implements a local linear trend state-space model with Kalman

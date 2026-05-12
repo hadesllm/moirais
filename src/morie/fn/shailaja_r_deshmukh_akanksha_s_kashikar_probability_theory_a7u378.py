@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: → 0. Thus, the limit law of√n(Xn − θ) is degenerate at0.
+    Formula: -> 0. Thus, the limit law of√n(Xn − θ) is degenerate at0.
 
     Parameters
     ----------

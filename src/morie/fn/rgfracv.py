@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fractal analysis of VAG signals via power spectral slope."""
 import numpy as np
 from ._richresult import RichResult

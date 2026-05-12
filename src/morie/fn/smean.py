@@ -10,7 +10,7 @@ _QUOTE = "In my experience, there is no such thing as luck."
 
 
 def sample_mean(x, **kwargs) -> DescriptiveResult:
-    """Compute the sample mean of signal *x*.
+    r"""Compute the sample mean of signal *x*.
 
     .. math::
 

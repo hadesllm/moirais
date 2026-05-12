@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bilinear transform (analog to digital)."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The art of doing mathematics consists in finding that special case which contains all the germs of generality. — David Hilbert"
+_QUOTE = "The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"
 
 
 def bilinear_transform(b_s, a_s, fs) -> DescriptiveResult:

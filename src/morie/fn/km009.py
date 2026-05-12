@@ -1,4 +1,4 @@
-"""Softmax element.."""
+r"""Softmax element.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_softmax_element"]
 
 
 def kamath_ch2_softmax_element(a_i, a):
-    """
+    r"""
     Softmax element.
 
     Formula: b_i = \frac{\exp(a_i)}{\sum_j \exp(a_j)}
@@ -27,7 +27,7 @@ def kamath_ch2_softmax_element(a_i, a):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.9, p. 32
-    """
+    r"""
     a_i = np.atleast_1d(np.asarray(a_i, dtype=float))
     n = len(a_i)
     result = float(np.mean(a_i))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RKHS norm and small ball probability for GP: ||f||_H controls concentration."""
 import numpy as np
 from ._richresult import RichResult

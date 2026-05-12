@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gaussian mixture model fit via EM."""
 import numpy as np
 from ._richresult import RichResult

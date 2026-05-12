@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multilayer perceptron forward pass (L hidden layers with activation phi)."""
 import numpy as np
 from ._richresult import RichResult

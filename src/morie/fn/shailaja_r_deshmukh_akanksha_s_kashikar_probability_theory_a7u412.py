@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: [EQ] → 1 ⇒ 1−(X(1) +X(n)) = −X(1) +(1 −X(n))
+    Formula: [EQ] -> 1 ⇒ 1−(X(1) +X(n)) = −X(1) +(1 −X(n))
 
     Parameters
     ----------

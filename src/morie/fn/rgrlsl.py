@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RLS lattice (ladder) adaptive filter."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dimensionality test via eigenvalue analysis."""
 
 from __future__ import annotations

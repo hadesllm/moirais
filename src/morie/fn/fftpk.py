@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""It does not matter how slowly you go as long as you do not stop. — Confucius"""
+# morie.fn -- function file (hadesllm/morie)
+"""It does not matter how slowly you go as long as you do not stop. -- Confucius"""
 
 from __future__ import annotations
 
@@ -78,4 +78,4 @@ def fft_peaks(
 
 
 def cheatsheet() -> str:
-    return "It does not matter how slowly you go as long as you do not stop. — Confucius"
+    return "It does not matter how slowly you go as long as you do not stop. -- Confucius"

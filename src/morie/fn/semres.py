@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEM residual autocorrelation (filtered residuals)."""
 
 import numpy as np

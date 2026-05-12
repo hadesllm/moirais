@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """ARIMA(p,d,q) model -- differencing + ARMA."""
 
 import numpy as np
@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def arima_fit(y: np.ndarray, p: int = 1, d: int = 1, q: int = 0) -> DescriptiveResult:
-    """
+    r"""
     Fit an ARIMA(p,d,q) model via differencing then conditional MLE.
 
     .. math::

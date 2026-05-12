@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Years lived with disability (YLD)."""
 
 from ._containers import ESRes

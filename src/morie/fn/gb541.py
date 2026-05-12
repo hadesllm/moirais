@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sign test for median using count of positive differences K_N."""
 import numpy as np
 from scipy import stats

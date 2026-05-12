@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """SNR degradation model. 'All communications jammed.' -- Blackout"""
 
 from __future__ import annotations

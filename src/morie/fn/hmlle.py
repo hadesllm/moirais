@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Locally linear embedding (LLE): preserve local linear reconstruction weights."""
 import numpy as np
 from ._richresult import RichResult

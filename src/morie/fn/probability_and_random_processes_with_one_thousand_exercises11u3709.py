@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (b) If − 1< xi ≤ 0 for all i , then p n → 0 if and only if ∑
+    Formula: (b) If − 1< xi ≤ 0 for all i , then p n -> 0 if and only if ∑
 
     Parameters
     ----------

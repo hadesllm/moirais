@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LMS convergence rate."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Much to learn, you still have."
 
 
 def convergence_rate(mu: float, eigenvalues, **kwargs) -> DescriptiveResult:
-    """Compute the LMS adaptive filter convergence time constants.
+    r"""Compute the LMS adaptive filter convergence time constants.
 
     .. math::
 

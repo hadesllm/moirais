@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Species sampling process: G = sum_k p_k delta_{theta_k} with random weights (p_k)."""
 import numpy as np
 from ._richresult import RichResult

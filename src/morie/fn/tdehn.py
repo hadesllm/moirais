@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def dehn_twist(curve_type: str = "a", n: int = 1) -> DescriptiveResult:
-    """Knowledge itself is power. — Francis Bacon"""
+    """Knowledge itself is power. -- Francis Bacon"""
     curve_type = curve_type.lower()
     if curve_type not in ("a", "b"):
         raise ValueError(f"curve_type must be 'a' or 'b', got '{curve_type}'.")

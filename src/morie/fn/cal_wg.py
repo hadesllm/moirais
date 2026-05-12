@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Raking calibration (iterative proportional fitting) weights."""
 
 import warnings
@@ -15,7 +15,7 @@ def calibration_weights(
     max_iter: int = 50,
     tol: float = 1e-6,
 ) -> pd.Series:
-    """
+    r"""
     Raking calibration (iterative proportional fitting) to match known
     population marginal totals.
 

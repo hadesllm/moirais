@@ -1,4 +1,4 @@
-"""Numbered display equation (7.2) from MVSML chapter 7.."""
+r"""Numbered display equation (7.2) from MVSML chapter 7.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_pt2_eq_7_2"]
 
 
 def mvsml_bayesian_regression_pt2_eq_7_2(Bayesian, Classical, Prediction, Models, Categorical, Count):
-    """
+    r"""
     Numbered display equation (7.2) from MVSML chapter 7.
 
     Formula: 214 7 Bayesian and Classical Prediction Models for Categorical and Count Data pic = P Yi = c ( ) = \Phi \gammac + bi ( )  \Phi \gammac1 + bi ( ), c = 1, . . . , C,
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_pt2_eq_7_2(Bayesian, Classical, Prediction, Models
     References
     ----------
     MVSML, Eq. (7.2) [Multivariate Statistical Machine Learnin [Pages 209-249] [2026-04-16].pdf]
-    """
+    r"""
     Bayesian = np.atleast_1d(np.asarray(Bayesian, dtype=float))
     n = len(Bayesian)
     result = float(np.mean(Bayesian))

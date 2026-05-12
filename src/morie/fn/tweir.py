@@ -12,7 +12,7 @@ def weierstrass_p(
     tau: complex = 1j,
     terms: int = 10,
 ) -> DescriptiveResult:
-    """Compute the Weierstrass elliptic function P(z; tau).
+    r"""Compute the Weierstrass elliptic function P(z; tau).
 
     Lattice L = Z + tau*Z. Uses the double sum:
     :math:`\\wp(z) = \\frac{1}{z^2} + \\sum_{(m,n)\\neq(0,0)}

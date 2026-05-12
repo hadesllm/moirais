@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Causal Markov condition: each node independent of non-descendants given parents."""
 import numpy as np
 from ._richresult import RichResult

@@ -14,7 +14,7 @@ def torus_knot(
     R: float = 3.0,
     r: float = 1.0,
 ) -> DescriptiveResult:
-    """Generate (p,q)-torus knot coordinates in R^3.
+    r"""Generate (p,q)-torus knot coordinates in R^3.
 
     A torus knot winds *p* times around the hole and *q* times around the tube.
 

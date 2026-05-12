@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sukhatme scale test using squared deviations from grand median rank."""
 import numpy as np
 from scipy import stats

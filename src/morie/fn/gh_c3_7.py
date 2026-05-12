@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prior via random rectangular partitions of the sample space."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Zero-shot learning: LLM generalizes to unseen tasks from prompt only."""
 import numpy as np
 from ._richresult import RichResult

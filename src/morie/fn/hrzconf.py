@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Uniform confidence bands for nonparametric regression function."""
 import numpy as np
 from ._richresult import RichResult

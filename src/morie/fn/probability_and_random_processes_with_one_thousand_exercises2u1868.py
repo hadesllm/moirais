@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: and note that Mn ≥ Mn+ 1. Suppose that Mn( A) ̸→ 0. There exists δ > 0 such that
+    Formula: and note that Mn ≥ Mn+ 1. Suppose that Mn( A) ̸-> 0. There exists δ > 0 such that
 
     Parameters
     ----------

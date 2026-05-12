@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """STL (Seasonal and Trend decomposition using LOESS): Y = Trend + Seasonal + Remainder."""
 import numpy as np
 from ._richresult import RichResult

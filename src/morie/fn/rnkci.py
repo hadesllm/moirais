@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rank-based confidence intervals for location (distribution-free)."""
 
 import numpy as np

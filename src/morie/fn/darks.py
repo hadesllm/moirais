@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dark energy equation of state. 'I am the end of all things.' -- Darkseid"""
 
 from __future__ import annotations

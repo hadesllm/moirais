@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AWGN channel capacity (Shannon limit)."""
 
 __all__ = ["awgnc"]
@@ -8,7 +8,7 @@ from ._richresult import RichResult
 
 
 def awgnc(snr_db: float = None, *, snr_linear: float = None) -> dict:
-    """
+    r"""
     Capacity of an additive white Gaussian noise channel.
 
     .. math::

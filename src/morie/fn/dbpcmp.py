@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Disinfection-byproducts (TTHMs, HAA5) drinking-water compliance."""
 
 from __future__ import annotations
@@ -76,12 +76,12 @@ def dbp_compliance(
     Disinfectants and Disinfection Byproducts Rule. 71 FR 388, Jan 4 2006.
 
     Health Canada (2020). Guidelines for Canadian Drinking Water
-    Quality — Guideline Technical Document: Trihalomethanes.
+    Quality -- Guideline Technical Document: Trihalomethanes.
 
     Notes
     -----
     Quote: "We chlorinate to stop cholera, and live with the
-    tradeoff." — summary of drinking-water public-health history.
+    tradeoff." -- summary of drinking-water public-health history.
 
     Chlorine disinfection is one of the great public-health
     interventions of the 20th century. DBPs are its measurable

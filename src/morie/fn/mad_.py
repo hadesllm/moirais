@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Median Absolute Deviation (MAD) statistic."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def median_abs_deviation(
     *,
     constant: float = 1.4826,
 ) -> ESRes:
-    """MAD — robust scale estimator.
+    """MAD -- robust scale estimator.
 
     MAD = constant * median(|x_i - median(x)|).
     Default constant 1.4826 makes MAD consistent for the normal.

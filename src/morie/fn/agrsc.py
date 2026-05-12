@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Agreement score matrix from roll call votes."""
 import numpy as np
 from ._richresult import RichResult

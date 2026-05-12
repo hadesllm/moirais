@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Disjunctive kriging Hermite polynomials"""
 
 import numpy as np

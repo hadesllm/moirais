@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hubble parameter and expansion rate."""
 
 __all__ = ["hubbl"]
@@ -14,7 +14,7 @@ def hubbl(
     Omega_r: float = 9.0e-5,
     Omega_Lambda: float = None,
 ) -> dict:
-    """
+    r"""
     Compute Hubble parameter H(z) and related quantities at redshift z.
 
     .. math::

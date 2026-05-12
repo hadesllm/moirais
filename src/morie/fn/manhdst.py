@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Manhattan (L₁) distance."""
 
 from typing import Sequence, Union

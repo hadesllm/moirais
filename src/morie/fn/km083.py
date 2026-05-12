@@ -1,4 +1,4 @@
-"""Ceat random effects.."""
+r"""Ceat random effects.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_ceat_random_effects"]
 
 
 def kamath_ch6_ceat_random_effects(S_A1, S_A2, S_W1, S_W2, v):
-    """
+    r"""
     Ceat random effects.
 
     Formula: \mathrm{CEAT}(S_{A_1},S_{A_2},S_{W_1},S_{W_2}) = \frac{\sum_{i=1}^N v_i\,\mathrm{WEAT}(S_{A_1i},S_{A_2i},S_{W_1i},S_{W_2i})}{\sum_{i=1}^N v_i}
@@ -33,7 +33,7 @@ def kamath_ch6_ceat_random_effects(S_A1, S_A2, S_W1, S_W2, v):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.7, p. 234
-    """
+    r"""
     S_A1 = np.atleast_1d(np.asarray(S_A1, dtype=float))
     n = len(S_A1)
     result = float(np.mean(S_A1))

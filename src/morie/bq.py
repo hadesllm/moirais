@@ -1,16 +1,16 @@
 """BigQuery-derived dataset analysis over a local SQLite catalog.
 
 This module gives the morie analytics surface a typed entry point
-into a SQLite-mirrored slice of public BigQuery datasets — useful for
+into a SQLite-mirrored slice of public BigQuery datasets -- useful for
 local, network-free exploration and CI work.
 
 Two access paths:
 
-    1. Local — point at the on-disk SQLite file directly. Fast, no
+    1. Local -- point at the on-disk SQLite file directly. Fast, no
        network. Works against the bundled ``morie_datasets.db`` plus
        any user-supplied SQLite mirrors of public BigQuery slices.
 
-    2. Remote — a SQL-over-HTTP endpoint configured via the
+    2. Remote -- a SQL-over-HTTP endpoint configured via the
        ``MORIE_REMOTE_URL`` env var. Useful for exploration without
        copying GBs of SQLite locally.
 
@@ -29,7 +29,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-# Optional remote SQL-over-HTTP endpoint. Unset by default — set
+# Optional remote SQL-over-HTTP endpoint. Unset by default -- set
 # ``MORIE_REMOTE_URL`` to a base URL (e.g. ``https://example.org/data``)
 # to enable the remote fallback path.
 REMOTE_BASE_URL = os.environ.get("MORIE_REMOTE_URL", "")
@@ -125,7 +125,7 @@ def _query(db: str, sql: str) -> list[dict[str, Any]]:
 
 
 # --------------------------------------------------------------------------
-# Public API — high-level helpers a morie user calls directly
+# Public API -- high-level helpers a morie user calls directly
 # --------------------------------------------------------------------------
 
 
@@ -189,7 +189,7 @@ def bq_summary(db: str, table: str, column: str) -> ColumnSummary:
         WHERE {c} IS NOT NULL
     """
     row = _query(db, sql)[0]
-    # SQLite has no median or stddev built-in for older versions — compute
+    # SQLite has no median or stddev built-in for older versions -- compute
     # client-side from a SELECT of the column. For huge tables the user
     # should use a sample.
     vals = [r[column] for r in _query(db, f"SELECT {c} FROM {t} WHERE {c} IS NOT NULL LIMIT 100000")]

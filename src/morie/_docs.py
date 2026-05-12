@@ -216,7 +216,7 @@ def _build_artifact_rows(module_name: str, manifest: pd.DataFrame) -> list[str]:
     for output_name in expected:
         row = present.get(output_name)
         if row is None:
-            lines.append(f"| `{output_name}` | Not currently published | — |")
+            lines.append(f"| `{output_name}` | Not currently published | -- |")
             continue
         href = f"../outputs/{output_name}"
         lines.append(f"| `{output_name}` | Published | [Open]({href}) |")

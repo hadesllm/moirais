@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """He initialization (for ReLU-family activations)."""
 import numpy as np
 from ._richresult import RichResult

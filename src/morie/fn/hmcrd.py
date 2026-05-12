@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Credit assignment problem: which past actions caused reward."""
 import numpy as np
 from ._richresult import RichResult

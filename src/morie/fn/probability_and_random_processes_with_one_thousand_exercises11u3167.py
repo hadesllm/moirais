@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] EU( a, b; Y) = limn→∞ EUn( a, b; Y) ≤ M + | a|
+    Formula: [EQ] EU( a, b; Y) = limn->∞ EUn( a, b; Y) ≤ M + | a|
 
     Parameters
     ----------

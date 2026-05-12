@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Binary nonparametric monotone regression consistency."""
 import numpy as np
 from ._richresult import RichResult

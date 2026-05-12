@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simple random sample (without replacement)."""
 
 from typing import Sequence, Union

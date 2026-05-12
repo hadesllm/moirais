@@ -4,7 +4,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Study the past if you would define the future. — Confucius"
+_QUOTE = "Study the past if you would define the future. -- Confucius"
 
 
 def transfer_function(

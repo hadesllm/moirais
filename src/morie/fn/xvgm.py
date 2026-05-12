@@ -12,7 +12,7 @@ def xvgm(
     n_lags: int = 10,
     max_dist: float | None = None,
 ) -> dict:
-    """
+    r"""
     Compute the empirical cross-variogram between two variables.
 
     .. math::

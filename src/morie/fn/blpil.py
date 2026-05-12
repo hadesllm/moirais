@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle"""
 
 from __future__ import annotations
 
@@ -83,4 +83,4 @@ blpil = naive_baseline
 
 
 def cheatsheet() -> str:
-    return "It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle"
+    return "It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle"

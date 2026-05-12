@@ -125,7 +125,7 @@ def run_weighted_logistic_analysis(
         ]
     )
 
-    # SMOTE sensitivity — rebalance and refit to check stability of ORs
+    # SMOTE sensitivity -- rebalance and refit to check stability of ORs
     from .ml import apply_smote
 
     y_smote = frame[outcome].astype(int)
@@ -352,12 +352,12 @@ def run_treatment_effects_analysis(
     All three estimands use IPW weights derived from the estimated propensity
     score :math:`e_i = P(T_i=1 \\mid X_i)`.
 
-    **ATE** — Hájek (normalised Horvitz-Thompson) estimator.  See
+    **ATE** -- Hájek (normalised Horvitz-Thompson) estimator.  See
     :func:`_hajek_ate` for the formula.  This is preferred over the
     unnormalised HT estimator because self-normalisation gives better
     finite-sample performance (Lunceford & Davidian, 2004).
 
-    **ATT** — weighted mean of control outcomes under ATT weights:
+    **ATT** -- weighted mean of control outcomes under ATT weights:
 
     .. math::
 
@@ -365,7 +365,7 @@ def run_treatment_effects_analysis(
             \\bar{Y}_1 -
             \\frac{\\sum_{T_i=0} Y_i e_i / (1-e_i)}{\\sum_{T_i=0} e_i / (1-e_i)}
 
-    **ATC** — weighted mean of treated outcomes under ATC weights:
+    **ATC** -- weighted mean of treated outcomes under ATC weights:
 
     .. math::
 
@@ -409,7 +409,7 @@ def run_treatment_effects_analysis(
     ps = frame["ps"].values
 
     # ------------------------------------------------------------------
-    # ATE — Hájek estimator (normalised HT).
+    # ATE -- Hájek estimator (normalised HT).
     # The previous code computed np.average(treated_y, weights=treated_ipw)
     # and np.average(control_y, weights=control_ipw) separately.  That
     # formula is NOT the Horvitz-Thompson estimator; it is an ad-hoc
@@ -418,7 +418,7 @@ def run_treatment_effects_analysis(
     ate, _, _ = _hajek_ate(ps, t, y)
 
     # ------------------------------------------------------------------
-    # ATT — Hájek normalised estimator for the treated subpopulation.
+    # ATT -- Hájek normalised estimator for the treated subpopulation.
     # Treated mean is unweighted (w_att = 1 for treated).
     # Control mean uses ATT weights (e / (1-e)), normalised.
     # ------------------------------------------------------------------
@@ -433,7 +433,7 @@ def run_treatment_effects_analysis(
     att = float(y1_mean - y0_att) if not (np.isnan(y1_mean) or np.isnan(y0_att)) else np.nan
 
     # ------------------------------------------------------------------
-    # ATC — Hájek normalised estimator for the control subpopulation.
+    # ATC -- Hájek normalised estimator for the control subpopulation.
     # Control mean is unweighted.  Treated mean uses ATC weights ((1-e)/e),
     # normalised.
     # ------------------------------------------------------------------
@@ -475,7 +475,7 @@ def run_treatment_effects_analysis(
     )
 
     # ------------------------------------------------------------------
-    # CATE subgroup estimates — Hájek IPW within each subgroup.
+    # CATE subgroup estimates -- Hájek IPW within each subgroup.
     # INCORRECT prior code: used raw unadjusted within-subgroup means,
     # which conflates treatment effect with covariate imbalance inside
     # the subgroup.  The global propensity score is reused here; fitting

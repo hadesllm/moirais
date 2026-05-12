@@ -1,4 +1,4 @@
-"""Perseus — the MORIE resident AI agent.
+"""Perseus -- the MORIE resident AI agent.
 
 Delegates to the provider-chain in :mod:`morie.llm`.  The LLM module handles
 Ollama, Gemini, OpenAI-compatible APIs, direct OpenAI, and a local static

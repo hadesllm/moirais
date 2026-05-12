@@ -11,7 +11,7 @@ def stide(
     bandwidth: float | None = None,
     n_steps: int | None = None,
 ) -> dict:
-    """
+    r"""
     Fit a spatio-temporal integro-difference equation (IDE) model.
 
     .. math::

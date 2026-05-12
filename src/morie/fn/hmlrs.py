@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Learning rate schedule used with SGD: eta_t = eta_0 / (t + t_0)."""
 import numpy as np
 from ._richresult import RichResult

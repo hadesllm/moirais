@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Log-density estimation by exponential-family expansion."""
 import numpy as np
 from scipy.optimize import minimize
@@ -27,7 +27,7 @@ def ghosal_log_density(x, K=5, grid=None):
     Parameters
     ----------
     x : array-like.
-    K : int — basis size.
+    K : int -- basis size.
     grid : array-like or None.
 
     Returns

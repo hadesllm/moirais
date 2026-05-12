@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Clinton-Jackman-Rivers IRT model for roll-call data."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Weibull distribution quantile function (inverse CDF)."""
 
 from __future__ import annotations

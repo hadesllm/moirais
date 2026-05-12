@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Negative binomial regression (GLM) via IRLS."""
 
 import numpy as np
@@ -10,7 +10,7 @@ from morie.fn._containers import RegressionResult
 
 
 def rey_nb(df, y: str = "y", x: list | str = "x", alpha_nb: float = 1.0, alpha: float = 0.05, cdf=None) -> RegressionResult:
-    """
+    r"""
     Negative binomial regression via maximum likelihood.
 
     Models count data with overdispersion:

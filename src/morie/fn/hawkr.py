@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hawking radiation temperature."""
 
 __all__ = ["hawkr"]
@@ -13,7 +13,7 @@ def hawkr(
     hbar: float = 1.0545718e-34,
     kB: float = 1.380649e-23,
 ) -> dict:
-    """
+    r"""
     Compute the Hawking temperature of a Schwarzschild black hole.
 
     .. math::

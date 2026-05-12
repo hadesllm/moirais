@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Efficacy of sign test for location parameter."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Glorot (Xavier) initialization for layer with fan_in/fan_out."""
 import numpy as np
 from ._richresult import RichResult

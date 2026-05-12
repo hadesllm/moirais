@@ -31,7 +31,7 @@ def _find_cpads_csv() -> str:
     candidate = root / "data" / "datasets" / "oc" / "CPADS" / "2021-2022" / "cpads-2021-2022-pumf2.csv"
     if candidate.exists():
         return str(candidate)
-    return str(candidate)  # return path even if missing — error at load time
+    return str(candidate)  # return path even if missing -- error at load time
 
 
 DEFAULT_CPADS_CSV = _find_cpads_csv()
@@ -262,7 +262,7 @@ MODULE_SPECS = {
     ),
     "mapq-psychometrics": ModuleSpec(
         name="mapq-psychometrics",
-        description="MAPQ psychometric validation (CTT, CFA, omega) + DML (gender → KS).",
+        description="MAPQ psychometric validation (CTT, CFA, omega) + DML (gender -> KS).",
         output_files=("mapq_reliability.csv", "mapq_factor_loadings.csv", "mapq_dml_results.csv"),
     ),
 }
@@ -289,7 +289,7 @@ def load_cpads_analysis_data(cpads_csv: str | Path = DEFAULT_CPADS_CSV) -> pd.Da
 
 
 def _project_root() -> Path:
-    # morie/modules.py → morie → py-package → tools → config → libexec → project
+    # morie/modules.py -> morie -> py-package -> tools -> config -> libexec -> project
     return Path(__file__).resolve().parents[5]
 
 
@@ -744,9 +744,9 @@ def _load_dataset_frame(
     """Load a dataset by key, path, or from the DB.
 
     Supports three modes:
-    1. **Catalog key** — e.g. "ocp21", "hibp" → loads from SQLite DB
-    2. **Arbitrary CSV/XLSX path** — e.g. "/tmp/my_data.csv" → reads directly
-    3. **Default** — CPADS CSV (backward compat when no key/path given)
+    1. **Catalog key** -- e.g. "ocp21", "hibp" -> loads from SQLite DB
+    2. **Arbitrary CSV/XLSX path** -- e.g. "/tmp/my_data.csv" -> reads directly
+    3. **Default** -- CPADS CSV (backward compat when no key/path given)
 
     Parameters
     ----------
@@ -779,7 +779,7 @@ def _load_dataset_frame(
         if dataset_key in DATASET_CATALOG:
             return load_dataset(dataset_key)
 
-        # Not a known key and not a file path — try fuzzy match
+        # Not a known key and not a file path -- try fuzzy match
         matches = [k for k in DATASET_CATALOG if dataset_key.lower() in k]
         if matches:
             return load_dataset(matches[0])

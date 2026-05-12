@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Jonckheere-Terpstra compact formula as sum of pairwise Mann-Whitney statistics."""
 import numpy as np
 from scipy import stats

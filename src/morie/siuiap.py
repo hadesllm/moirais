@@ -1,10 +1,10 @@
-"""morie.siuiap — Structured Intervention Unit Implementation Advisory Panel (federal).
+"""morie.siuiap -- Structured Intervention Unit Implementation Advisory Panel (federal).
 
 NOTE: this is the FEDERAL Structured Intervention Unit Implementation
 Advisory Panel module. It is distinct from `morie.siu`, which is the
 ONTARIO Special Investigations Unit (police-oversight) automation
 package. Both share the acronym SIU but refer to entirely different
-agencies — the rename siu_iap → siuiap was made to avoid the underscore
+agencies -- the rename siu_iap -> siuiap was made to avoid the underscore
 prefix collision with `morie.siu/`.
 
 The federal counterpart to Ontario's OTIS provincial restrictive-
@@ -28,12 +28,12 @@ In addition to SIU IAP panel reports, this module also indexes:
 
 This module exposes:
 
-  PANEL_MEMBERS         — list of SIU IAP members
-  REPORTS               — dict of SIU IAP panel reports (5)
-  CRIMSL_REPORTS        — dict of UToronto CRIMSL research reports (4)
-  AFFIDAVITS            — dict of Federal Court / inquest affidavits
-  PANEL_MANDATE         — text describing the panel's mandate
-  cite() -> str         — generate a citation string
+  PANEL_MEMBERS         -- list of SIU IAP members
+  REPORTS               -- dict of SIU IAP panel reports (5)
+  CRIMSL_REPORTS        -- dict of UToronto CRIMSL research reports (4)
+  AFFIDAVITS            -- dict of Federal Court / inquest affidavits
+  PANEL_MANDATE         -- text describing the panel's mandate
+  cite() -> str         -- generate a citation string
 
 It does NOT ingest data: SIU IAP outputs and CRIMSL papers are
 qualitative / mixed-method PDFs. The federal SIU dataset itself
@@ -46,7 +46,7 @@ Public Safety Canada. Structured Intervention Unit Implementation
   Advisory Panel.
   https://www.publicsafety.gc.ca/cnt/cntrng-crm/crrctns/siuiap-ccuis-en.aspx
 
-Sapers, H. et al. (2024). Final Report — Structured Intervention Unit
+Sapers, H. et al. (2024). Final Report -- Structured Intervention Unit
   Implementation Advisory Panel.
 
 Centre for Criminology & Sociolegal Studies, U. of Toronto.
@@ -113,7 +113,7 @@ REPORTS = {
         "year": 2024,
         "type": "Final Report",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["SIU IAP"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
     },
     "annual_2023_2024": {
         "title": "2023-2024 Annual Report",
@@ -121,28 +121,28 @@ REPORTS = {
         "type": "Annual Report",
         "notes": "Includes government responses",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["SIU IAP"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
     },
     "preliminary_observations": {
         "title": "Preliminary Observations",
         "year": 2022,
         "type": "Preliminary",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["SIU IAP"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
     },
     "thematic_mental_health": {
-        "title": "Thematic update — mental health in SIUs",
+        "title": "Thematic update -- mental health in SIUs",
         "year": 2023,
         "type": "Thematic update",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["SIU IAP"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
     },
     "thematic_indigenous": {
-        "title": "Thematic update — Indigenous peoples in SIUs",
+        "title": "Thematic update -- Indigenous peoples in SIUs",
         "year": 2023,
         "type": "Thematic update",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["SIU IAP"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
     },
 }
 
@@ -158,7 +158,7 @@ CRIMSL_REPORTS = {
         "title": ("Understanding the Operation of Correctional Service "
                    "Canada's Structured Intervention Units: Some Preliminary "
                    "Findings"),
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob"],
         "year": 2020,
         "month": "October",
         "publisher": ("Centre for Criminology & Sociolegal Studies, "
@@ -171,7 +171,7 @@ CRIMSL_REPORTS = {
         "title": ("Is there Clear Evidence that COVID-19 Was the Cause of "
                    "Problems with the Operation of CSC's Structured "
                    "Intervention Units?"),
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob"],
         "year": 2020,
         "month": "November",
         "publisher": ("Centre for Criminology & Sociolegal Studies, "
@@ -183,7 +183,7 @@ CRIMSL_REPORTS = {
     "sprott_doob_torture_solitary_2021": {
         "title": ("Solitary Confinement, Torture, and Canada's Structured "
                    "Intervention Units"),
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob"],
         "year": 2021,
         "month": "February",
         "publisher": ("Centre for Criminology & Sociolegal Studies, "
@@ -199,7 +199,7 @@ CRIMSL_REPORTS = {
                    "\"An Inmate's Confinement in a Structured Intervention "
                    "Unit Is to End as Soon as Possible\"? [Corrections "
                    "and Conditional Release Act, Section 33]"),
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob", "Adelina Iftene"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob", "Adelina Iftene"],
         "affiliations": [
             "Ryerson University",
             "University of Toronto",
@@ -210,7 +210,7 @@ CRIMSL_REPORTS = {
         "date": "2021-05-09",
         "publisher": ("Schulich School of Law, Dalhousie University "
                        "(Schulich Law Scholars / Reports & Public Policy "
-                       "Documents) — Faculty Scholarship; with companion "
+                       "Documents) -- Faculty Scholarship; with companion "
                        "release at Centre for Criminology & Sociolegal "
                        "Studies, University of Toronto"),
         "url": ("https://digitalcommons.schulichlaw.dal.ca/cgi/"
@@ -235,9 +235,9 @@ CRIMSL_REPORTS = {
 
 AFFIDAVITS = {
     "doob_t_539_20_2020": {
-        "title": ("Affidavit of Anthony N. Doob — Federal Court of Canada, "
+        "title": ("Affidavit of Anthony N. Doob -- Federal Court of Canada, "
                    "T-539-20"),
-        "He who has a why to live can bear almost any how. — Friedrich Nietzsche": ["Anthony N. Doob"],
+        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Anthony N. Doob"],
         "year": 2020,
         "court": "Federal Court of Canada",
         "file_no": "T-539-20",
@@ -267,12 +267,12 @@ def cite(report_id: str = "final_2024") -> str:
     for d in (REPORTS, CRIMSL_REPORTS, AFFIDAVITS):
         if report_id in d:
             r = d[report_id]
-            authors = ", ".join(r.get("He who has a why to live can bear almost any how. — Friedrich Nietzsche", ["SIU IAP"]))
+            authors = ", ".join(r.get("He who has a why to live can bear almost any how. -- Friedrich Nietzsche", ["SIU IAP"]))
             year = r["year"]
             title = r["title"]
             publisher = r.get("publisher",
                                 r.get("court", "Public Safety Canada"))
-            return f"He who has a why to live can bear almost any how. — Friedrich Nietzsche"
+            return f"He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
     raise KeyError(
         f"unknown report_id {report_id!r}; "
         f"available REPORTS: {sorted(REPORTS)}; "

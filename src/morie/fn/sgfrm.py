@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "I cannot teach anybody anything. I can only make them think. — Socrates"
+_QUOTE = "I cannot teach anybody anything. I can only make them think. -- Socrates"
 
 
 def frame_signal(x, frame_len: int, hop_len: int) -> DescriptiveResult:

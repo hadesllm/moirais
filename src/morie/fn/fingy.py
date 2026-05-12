@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 fingy.py - Fine-Gray subdistribution hazard model for competing risks via
 weighted partial likelihood.

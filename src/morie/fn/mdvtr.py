@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Median voter theorem (Armstrong et al. Ch 2)."""
 import numpy as np
 from ._richresult import RichResult
@@ -11,7 +11,7 @@ def median_voter(x):
 
     On a single dimension with single-peaked preferences, the Condorcet
     winner among any odd-sized electorate is the *median* of ideal
-    points — NOT the mean. Returns the median plus a bootstrap-free
+    points -- NOT the mean. Returns the median plus a bootstrap-free
     Laplace-based standard error 1.2533 * s/sqrt(n) for the sample
     median of an approximately-normal sample.
 
@@ -56,7 +56,7 @@ mdvtr = median_voter
 
 
 def cheatsheet():
-    return "mdvtr: Median voter theorem — x* = median(x_i*) in 1D."
+    return "mdvtr: Median voter theorem -- x* = median(x_i*) in 1D."
 
 
 # CANONICAL TEST

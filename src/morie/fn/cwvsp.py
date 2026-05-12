@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CWT scalogram/spectrum using Morlet wavelet."""
 
 from __future__ import annotations

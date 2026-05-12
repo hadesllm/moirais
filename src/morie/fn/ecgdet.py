@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pan-Tompkins QRS detector."""
 
 from __future__ import annotations

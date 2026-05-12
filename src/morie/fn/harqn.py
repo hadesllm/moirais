@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Out of chaos, comes order. — Friedrich Nietzsche"""
+# morie.fn -- function file (hadesllm/morie)
+"""Out of chaos, comes order. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 
@@ -85,4 +85,4 @@ harqn = harrells_c
 
 
 def cheatsheet() -> str:
-    return "Out of chaos, comes order. — Friedrich Nietzsche"
+    return "Out of chaos, comes order. -- Friedrich Nietzsche"

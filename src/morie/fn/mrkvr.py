@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Marker variance-component estimation (per-marker sigma_m^2)."""
 from __future__ import annotations
 

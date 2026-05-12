@@ -1,4 +1,4 @@
-"""OTIS analysis surfaces — RichResult wrappers around morie.otis primitives.
+"""OTIS analysis surfaces -- RichResult wrappers around morie.otis primitives.
 
 `morie.otis` provides 6 result-emitting callables that return specialized
 dataclasses (RplRes / AstRes / VolRes / OtDmlR / etc.).  This module wraps
@@ -73,7 +73,7 @@ def rplace(df: pd.DataFrame, year: int, sex: str | None = None,
     """Regional placement analysis as RichResult."""
     r = _o.rplace(df, year=year, sex=sex, **kw)
     return RichResult(
-        title=f"OTIS regional placement — fiscal year {year}"
+        title=f"OTIS regional placement -- fiscal year {year}"
               + (f" (sex={sex})" if sex else ""),
         summary_lines=[
             ("Year", year),
@@ -172,7 +172,7 @@ def rctrnd(df: pd.DataFrame, **kw: Any) -> RichResult:
 def otdesc(df: pd.DataFrame, **kw: Any) -> RichResult:
     """Full OTIS descriptive suite as RichResult.
 
-    `_o.otdesc` does not accept year/sex filters — apply those upstream
+    `_o.otdesc` does not accept year/sex filters -- apply those upstream
     via `df = df[df.end_fiscal_year == year]` if needed.
     """
     r = _o.otdesc(df, **kw)
@@ -204,7 +204,7 @@ def otdml(df: pd.DataFrame, *, treatment: str, outcome: str,
     r = _o.otdml(df, treatment=treatment, outcome=outcome,
                  covariates=covariates, **kw)
     return RichResult(
-        title=f"OTIS DML {r.method}: ATE/ATT for {treatment} → {outcome}",
+        title=f"OTIS DML {r.method}: ATE/ATT for {treatment} -> {outcome}",
         summary_lines=[
             ("Method", r.method),
             ("Treatment", treatment),
@@ -240,7 +240,7 @@ def all_analyses(df: pd.DataFrame, year: int,
     """Run rplace / astcmb / volat / rctrnd / otdesc on `df` and write to disk.
 
     `otdml` is excluded from the bundle because it requires the user
-    to specify (treatment, outcome, covariates) — call it separately.
+    to specify (treatment, outcome, covariates) -- call it separately.
     """
     out_dir = out_dir or DEFAULT_OUT
     out_dir.mkdir(parents=True, exist_ok=True)

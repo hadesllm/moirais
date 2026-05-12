@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AdaGrad update: per-parameter learning rate inversely proportional to sqrt of accumulated squared gradients."""
 import numpy as np
 from ._richresult import RichResult

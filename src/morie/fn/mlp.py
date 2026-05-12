@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simple MLP (1 hidden layer, numpy)."""
 
 import numpy as np

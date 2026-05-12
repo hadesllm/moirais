@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Parametric bootstrap for NOMINATE standard errors."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random utility model (McFadden) for stochastic spatial voting."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric Bernstein–von Mises diagnostic."""
 import numpy as np
 from scipy.stats import norm, kstest
@@ -7,7 +7,8 @@ from ._richresult import RichResult
 __all__ = ["ghosal_bernstein_von_mises"]
 
 
-def ghosal_bernstein_von_mises(x, theta0=None, B=500, seed=0):
+def ghosal_bernstein_von_mises(x, theta0=None, B=500, seed=0,
+                                 deterministic_seed: int | None = None):
     """Bernstein–von Mises diagnostic for the mean functional.
 
     The BvM theorem (Ghosal Ch 11) says
@@ -26,9 +27,14 @@ def ghosal_bernstein_von_mises(x, theta0=None, B=500, seed=0):
     Parameters
     ----------
     x : array-like.
-    theta0 : float or None — null mean (defaults to bar X_n).
-    B : int — number of posterior draws.
+    theta0 : float or None -- null mean (defaults to bar X_n).
+    B : int -- number of posterior draws.
     seed : int.
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged.
 
     Returns
     -------
@@ -41,7 +47,11 @@ def ghosal_bernstein_von_mises(x, theta0=None, B=500, seed=0):
     Castillo & Nickl (2014). Nonparametric BvM. AOS 42.
     Ghosal & van der Vaart (2017) Ch 11.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("ghbvm", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     x = np.asarray(x, dtype=float).ravel()
     n = int(x.size)
     if n < 2:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Donsker class membership test via bootstrap empirical process."""
 
 from __future__ import annotations

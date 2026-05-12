@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ripley's L function for spatial point patterns."""
 
 import numpy as np
@@ -8,7 +8,7 @@ from .kfunc import ripley_k
 
 
 def ripley_l(points: np.ndarray, distances: np.ndarray | None = None, n_distances: int = 20) -> DescriptiveResult:
-    """
+    r"""
     Compute Ripley's L function.
 
     .. math::

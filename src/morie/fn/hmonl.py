@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Online learning: sequentially update model with streaming data and learning rate."""
 import numpy as np
 from ._richresult import RichResult

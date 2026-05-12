@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: (b) Let X : )Omega1 → R be the random variable given by the identity mapping X(ω) = ω . Show that
+    Formula: (b) Let X : )Omega1 -> R be the random variable given by the identity mapping X(ω) = ω . Show that
 
     Parameters
     ----------

@@ -44,7 +44,7 @@ def _project_root() -> Path:
 
 
 # ---------------------------------------------------------------------------
-# CKAN dataset catalogue — Canadian public health open data
+# CKAN dataset catalogue -- Canadian public health open data
 # ---------------------------------------------------------------------------
 
 CKAN_DATASETS: dict[str, dict[str, str]] = {
@@ -70,7 +70,7 @@ CKAN_DATASETS: dict[str, dict[str, str]] = {
 
 
 # ---------------------------------------------------------------------------
-# Full dataset catalog — every file in data/datasets/
+# Full dataset catalog -- every file in data/datasets/
 # ---------------------------------------------------------------------------
 
 DATASET_CATALOG: dict[str, dict] = {
@@ -902,12 +902,12 @@ CREATE TABLE IF NOT EXISTS _morie_metadata (
 
 
 # ---------------------------------------------------------------------------
-# Built-in database — ships with the package
+# Built-in database -- ships with the package
 # ---------------------------------------------------------------------------
 
 
 def morie_db() -> Path:
-    """Return path to morie.db — checks package-bundled location first, then cache.
+    """Return path to morie.db -- checks package-bundled location first, then cache.
 
     Package-bundled DB ships with the installed package (via LFS/setuptools).
     Cache location is used for development and is gitignored.
@@ -931,7 +931,7 @@ def _builtin_db_connect() -> sqlite3.Connection | None:
 
 
 # ---------------------------------------------------------------------------
-# SQLite cache — shared between Python and R via DBI
+# SQLite cache -- shared between Python and R via DBI
 # ---------------------------------------------------------------------------
 
 
@@ -960,7 +960,7 @@ def cache_store(df: pd.DataFrame, table: str, db_path: str | Path | None = None)
     try:
         df.to_sql(table, conn, if_exists="replace", index=False)
         n = len(df)
-        logger.info("Cached %d rows → %s", n, table)
+        logger.info("Cached %d rows -> %s", n, table)
         return n
     finally:
         conn.close()
@@ -1070,7 +1070,7 @@ def load_cpads(db_path: str | Path | None = None, timeout: int = 60) -> pd.DataF
     Resolution order:
     1. Local RDS (via R bridge) or CSV files in standard locations
     2. SQLite cache (data/cache/morie.db)
-    3. CKAN API fetch → cache → return
+    3. CKAN API fetch -> cache -> return
     """
     # 1. Try local files.
     local_candidates = [
@@ -1088,7 +1088,7 @@ def load_cpads(db_path: str | Path | None = None, timeout: int = 60) -> pd.DataF
             validate_cpads_frame(df, strict=True)
             return df
         if p.suffix == ".rds":
-            # RDS files need R — skip in Python, prefer CSV or cache.
+            # RDS files need R -- skip in Python, prefer CSV or cache.
             continue
 
     # 2. Try built-in morie.db (ships with package).

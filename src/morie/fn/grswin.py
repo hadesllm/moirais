@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Swin Transformer: self-attention restricted to non-overlapping local windows."""
 import numpy as np
 from ._richresult import RichResult

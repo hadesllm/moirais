@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Perplexity from cross-entropy loss."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def perplexity(
     loss: float,
 ) -> DescriptiveResult:
-    """Compute perplexity from cross-entropy loss.
+    r"""Compute perplexity from cross-entropy loss.
 
     :math:`\\text{PPL} = \\exp(\\text{loss})`
 

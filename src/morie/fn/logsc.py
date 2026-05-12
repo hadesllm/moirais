@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Logit soft-capping."""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def logit_softcap(
     logits: np.ndarray,
     cap: float = 30.0,
 ) -> DescriptiveResult:
-    """Apply logit soft-capping to prevent extreme values.
+    r"""Apply logit soft-capping to prevent extreme values.
 
     :math:`\\text{softcap}(x) = \\text{cap} \\cdot \\tanh(x / \\text{cap})`
 

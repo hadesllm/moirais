@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EEG artifact removal via ICA (eye blink, muscle, ECG)."""
 import numpy as np
 from ._richresult import RichResult

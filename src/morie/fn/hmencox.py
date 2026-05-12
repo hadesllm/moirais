@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Encoder-only transformer (BERT-family)."""
 import numpy as np
 from ._richresult import RichResult

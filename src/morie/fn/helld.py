@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hellinger distance."""
 
 import numpy as np
@@ -9,7 +9,7 @@ _QUOTE = "There is always a bigger fish. -- Qui-Gon Jinn"
 
 
 def hellinger_dist(p, q, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Hellinger distance between two probability distributions.
 
     .. math::

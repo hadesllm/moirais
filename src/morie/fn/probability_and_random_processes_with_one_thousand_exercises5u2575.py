@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: such that ∥φ n − ψ ∥ → 0 as n → ∞ . Then
+    Formula: such that ∥φ n − ψ ∥ -> 0 as n -> ∞ . Then
 
     Parameters
     ----------

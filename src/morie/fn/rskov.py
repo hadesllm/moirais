@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Risk score distribution overlap between groups."""
 
 from __future__ import annotations

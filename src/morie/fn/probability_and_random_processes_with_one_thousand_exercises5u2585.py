@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: where Iλ : R → { 0, 1} is the indicator function of the interval ( − π,λ ]. It is a standard result
+    Formula: where Iλ : R -> { 0, 1} is the indicator function of the interval ( − π,λ ]. It is a standard result
 
     Parameters
     ----------

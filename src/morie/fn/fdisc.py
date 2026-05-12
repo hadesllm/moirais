@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """f-divergence (general: KL, chi-squared, Hellinger, total variation)."""
 
 __all__ = ["fdisc"]
@@ -13,7 +13,7 @@ def fdisc(
     *,
     divergence: str = "kl",
 ) -> dict:
-    """
+    r"""
     Compute an f-divergence between two discrete distributions.
 
     .. math::

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Minimum Variance Distortionless Response (Capon) spectral estimation."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Life is really simple, but we insist on making it complicated. — Confucius"
+_QUOTE = "Life is really simple, but we insist on making it complicated. -- Confucius"
 
 
 def mvdr_spectrum_fn(
@@ -16,7 +16,7 @@ def mvdr_spectrum_fn(
     nfft: int = 512,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute MVDR (Capon) spectral estimate.
+    r"""Compute MVDR (Capon) spectral estimate.
 
     .. math::
 

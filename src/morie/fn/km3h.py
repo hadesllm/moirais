@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """3H alignment scoring rubric: helpful, harmless, honest."""
 import numpy as np
 from ._richresult import RichResult

@@ -10,19 +10,28 @@
 #' @param learning_rate Unused by Rtsne (kept for API parity).
 #' @param n_iter Max iterations.
 #' @param seed RNG seed.
+#' @param deterministic_seed Integer or NULL.  If supplied, the RNG state
+#'   is derived from the SHA-keyed [morie_det_rng()] so Py<->R streams
+#'   agree on the canonical fixture.  When `NULL` (default), behaviour
+#'   is unchanged: `seed` drives `set.seed()` directly.
 #' @return Named list: estimate (shape), embedding, kl_divergence,
 #'   perplexity, n_components, n, method.
 #' @export
 tsne_reduction <- function(x, n_components = 2L, perplexity = 30,
                             learning_rate = "auto", n_iter = 1000L,
-                            seed = 0L) {
+                            seed = 0L,
+                            deterministic_seed = NULL) {
   if (!requireNamespace("Rtsne", quietly = TRUE)) {
     stop("Function 'tsne_reduction' requires package 'Rtsne'. Install with install.packages('Rtsne').")
   }
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)
   x <- as.matrix(x)
   n <- nrow(x)
-  set.seed(seed)
+  if (!is.null(deterministic_seed)) {
+    morie_det_rng("tsnrd", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   ts <- Rtsne::Rtsne(x, dims = n_components, perplexity = perplexity,
                      max_iter = n_iter, check_duplicates = FALSE,
                      verbose = FALSE, pca = TRUE)

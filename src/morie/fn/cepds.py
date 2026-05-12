@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cepstral distance."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Rebellions are built on hope."
 
 
 def cepstral_distance(c1, c2, **kwargs) -> DescriptiveResult:
-    """Compute the Euclidean cepstral distance.
+    r"""Compute the Euclidean cepstral distance.
 
     .. math::
 

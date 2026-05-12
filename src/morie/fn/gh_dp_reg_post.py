@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP regression posterior: nonparametric regression with DP error distribution."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Environmental justice exposure-disparity index."""
 
 from __future__ import annotations
@@ -44,7 +44,7 @@ def environmental_justice_index(
         Column name for population weights. If None, unweighted means.
     reference : str, optional
         Value of `group` to use as the reference. If None, uses the
-        overall (unstratified) population mean as denominator — this is
+        overall (unstratified) population mean as denominator -- this is
         the EJSCREEN convention.
 
     Returns
@@ -118,7 +118,7 @@ def environmental_justice_index(
             raise ValueError(f"reference group {reference!r} not present.")
     ref_mean = _m(x, ref_idx)
     if not np.isfinite(ref_mean) or ref_mean == 0:
-        raise ValueError("Reference mean is zero/NaN — cannot compute ratios.")
+        raise ValueError("Reference mean is zero/NaN -- cannot compute ratios.")
 
     per_group_mean: dict[str, float] = {}
     per_group_n: dict[str, int] = {}

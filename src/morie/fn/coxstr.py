@@ -10,7 +10,7 @@ def cox_stratified(time, event, X, stratum):
     """
     Stratified Cox proportional hazards
 
-    Formula: lambda_s(t) exp(beta X) — separate baseline per stratum
+    Formula: lambda_s(t) exp(beta X) -- separate baseline per stratum
 
     Parameters
     ----------

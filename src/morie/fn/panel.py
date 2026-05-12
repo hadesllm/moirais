@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Panel data regression (fixed effects / random effects)."""
 
 from __future__ import annotations

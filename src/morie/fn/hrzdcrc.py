@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rate of convergence of deconvolution estimator."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """ARMA(p,q) model fitting via conditional MLE."""
 
 import numpy as np
@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def arma_fit(y: np.ndarray, p: int = 1, q: int = 1) -> DescriptiveResult:
-    """
+    r"""
     Fit an ARMA(p,q) model via conditional maximum likelihood.
 
     .. math::

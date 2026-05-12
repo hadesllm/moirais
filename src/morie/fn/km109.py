@@ -1,4 +1,4 @@
-"""Perplexity leakage.."""
+r"""Perplexity leakage.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_perplexity_leakage"]
 
 
 def kamath_ch6_perplexity_leakage(S_uniq, PP_public, PP_lm):
-    """
+    r"""
     Perplexity leakage.
 
     Formula: \epsilon_l = \max_{w\in S_{uniq}} \log(\frac{PP_{public}(w)}{PP_{lm}(w)})
@@ -29,7 +29,7 @@ def kamath_ch6_perplexity_leakage(S_uniq, PP_public, PP_lm):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.33, p. 259
-    """
+    r"""
     S_uniq = np.atleast_1d(np.asarray(S_uniq, dtype=float))
     n = len(S_uniq)
     result = float(np.mean(S_uniq))

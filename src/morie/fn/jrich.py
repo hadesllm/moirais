@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Formant extraction from speech signal. 'Actions speak louder than words.' -- Jericho"""
 
 from __future__ import annotations

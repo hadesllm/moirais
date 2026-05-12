@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maximum likelihood estimation for Gaussian."""
 
 import numpy as np
 
 from ._containers import ESRes
 def mle_gaussian(x, **kwargs) -> ESRes:
-    """
+    r"""
     Compute MLE of mean and variance for a Gaussian distribution.
 
     .. math::

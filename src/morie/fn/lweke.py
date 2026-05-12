@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LWE-based Diffie-Hellman key exchange."""
 
 from __future__ import annotations

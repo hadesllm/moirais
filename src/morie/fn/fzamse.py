@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AMSE of sample quantile estimator."""
 import numpy as np
 from ._richresult import RichResult

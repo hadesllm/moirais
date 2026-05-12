@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Roll call analysis for legislative voting."""
 
 from __future__ import annotations

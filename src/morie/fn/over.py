@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Overlap / common support assessment for propensity scores."""
 
 from __future__ import annotations

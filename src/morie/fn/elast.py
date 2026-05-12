@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Price elasticity of demand. 'The ability to speak does not make you intelligent.' -- Qui-Gon Jinn"""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def elasticity(
     price: np.ndarray,
     quantity: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute arc price elasticity of demand.
 
     .. math::

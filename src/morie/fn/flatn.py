@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""Flatten layer.
 
 Reshapes multi-dimensional input to 1D (per batch).

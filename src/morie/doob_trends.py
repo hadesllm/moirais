@@ -1,4 +1,4 @@
-"""morie.doob_trends — National-aggregate analyses from Doob's Federal Court affidavit.
+"""morie.doob_trends -- National-aggregate analyses from Doob's Federal Court affidavit.
 
 Replicates the analytical contribution of Prof. Anthony N. Doob's
 expert-witness affidavit in *Canadian Civil Liberties Association et al.
@@ -22,9 +22,9 @@ Constants exposed
   CCRSO_TABLE2_FLOW          Table 2: 2013/14-2017/18 prisoner flow:
                               count / admissions / deaths / full parole
                               releases / statutory releases.
-  CCRSO_TABLE3_AGE           Table 3: 2018 age distribution — adult
+  CCRSO_TABLE3_AGE           Table 3: 2018 age distribution -- adult
                               population, CSC in-custody count, CSC
-                              admissions — by age group (18-49, 50-59,
+                              admissions -- by age group (18-49, 50-59,
                               60+).
 
 Functions exposed
@@ -45,7 +45,7 @@ Functions exposed
 
 Data sources (cited in Doob affidavit)
 --------------------------------------
-  CCRSO 2018 — Public Safety Canada, Corrections and Conditional
+  CCRSO 2018 -- Public Safety Canada, Corrections and Conditional
     Release Statistical Overview 2018 (released 2019).
     https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/ccrso-2018/
   StatsCan CANSIM/Table 35-10-0026-01, 35-10-0177-01, 35-10-0014-01.
@@ -54,7 +54,7 @@ Data sources (cited in Doob affidavit)
 
 Citation
 --------
-Doob, A. N. (2020). Affidavit (T-539-20) of Anthony Doob — Federal
+Doob, A. N. (2020). Affidavit (T-539-20) of Anthony Doob -- Federal
 Court of Canada, Application Record Vol. 3 of 5. CCLA et al. v.
 Attorney General of Canada.
 """
@@ -151,7 +151,7 @@ def analyze_doob_table1_releases() -> RichResult:
         100.0 * total_violent_revokes / total_pop if total_pop else 0
     )
     return RichResult(
-        title=("Doob Affidavit Table 1 — Successful & unsuccessful "
+        title=("Doob Affidavit Table 1 -- Successful & unsuccessful "
                 "conditional releases (5-year avg, CCRSO 2013/14-2017/18)"),
         summary_lines=[
             ("Source", "CCRSO 2018 pp.94-98, Doob Affidavit Exhibit B"),
@@ -162,7 +162,7 @@ def analyze_doob_table1_releases() -> RichResult:
                 f"{overall_violent_revoke_pct:.3f}%"),
             ("Doob's headline point",
                 "≥ 99.4% of releases are successful or "
-                "non-violent-revoked — the violent-revocation rate is < 1%"),
+                "non-violent-revoked -- the violent-revocation rate is < 1%"),
         ],
         tables=[{
             "title": ("Table 1: Average annual releases by type, "
@@ -173,7 +173,7 @@ def analyze_doob_table1_releases() -> RichResult:
         }],
         interpretation=(
             "Reproduces Doob's Federal Court Table 1. The headline "
-            "finding: violent revocations are very rare — < 1% of "
+            "finding: violent revocations are very rare -- < 1% of "
             "all releases (across day parole, full parole, statutory) "
             "result in revocation due to a violent offence. The "
             "majority of unsuccessful releases are breach-of-condition "
@@ -210,7 +210,7 @@ def analyze_doob_table2_flow() -> RichResult:
     ])
     monthly_releases = avg_stat_release / 12
     return RichResult(
-        title=("Doob Affidavit Table 2 — Flow of prisoners into and out "
+        title=("Doob Affidavit Table 2 -- Flow of prisoners into and out "
                 "of penitentiaries (CCRSO 2013/14-2017/18)"),
         summary_lines=[
             ("Source", "CCRSO 2018, Doob Affidavit Exhibit B"),
@@ -221,7 +221,7 @@ def analyze_doob_table2_flow() -> RichResult:
             ("Average statutory releases / month",
                 round(monthly_releases, 1)),
             ("Doob's headline point",
-                "About 427 statutory releases per month — "
+                "About 427 statutory releases per month -- "
                 "releasing prisoners 6 months early would empty "
                 "~17.5% of the penitentiary system in one tranche."),
         ],
@@ -247,7 +247,7 @@ def analyze_doob_table2_flow() -> RichResult:
 
 
 def analyze_doob_table3_age_overrepresentation() -> RichResult:
-    """Doob Affidavit Table 3: age distribution — Canada vs CSC custody."""
+    """Doob Affidavit Table 3: age distribution -- Canada vs CSC custody."""
     rows = []
     irrs: list[dict] = []
     for r in CCRSO_TABLE3_AGE:
@@ -269,7 +269,7 @@ def analyze_doob_table3_age_overrepresentation() -> RichResult:
                      "irr_custody": irr_custody,
                      "irr_admissions": irr_admissions})
     return RichResult(
-        title=("Doob Affidavit Table 3 — Prisoner age distribution: "
+        title=("Doob Affidavit Table 3 -- Prisoner age distribution: "
                 "Canada adult population vs CSC in-custody / admissions"),
         summary_lines=[
             ("Source", "CCRSO 2018 + StatsCan CANSIM, Doob Affidavit Exhibits A,C,D"),
@@ -279,7 +279,7 @@ def analyze_doob_table3_age_overrepresentation() -> RichResult:
             ("Doob's headline point",
                 "Older adults are dramatically under-represented "
                 "in CSC custody (25.2% vs 47.3%) and even more so in "
-                "admissions (16.9%) — the prison population skews young."),
+                "admissions (16.9%) -- the prison population skews young."),
         ],
         tables=[{
             "title": ("Table 3: Age distribution + over-/under-"
@@ -378,7 +378,7 @@ def decoupling_test(crime_series: "Iterable[float]",
     yrs_str = (f"{int(min(years))}-{int(max(years))}"
                 if years is not None else f"n={n} years")
     return RichResult(
-        title=("Doob decoupling test — Pearson(crime rate, imprisonment "
+        title=("Doob decoupling test -- Pearson(crime rate, imprisonment "
                 "rate) over time"),
         summary_lines=[
             ("Years", yrs_str),
@@ -391,7 +391,7 @@ def decoupling_test(crime_series: "Iterable[float]",
                 pcp_imp.get("change_point_index", "n/a")),
             ("Doob's thesis",
                 "If r is small / sign-mismatched / non-significant, "
-                "imprisonment is decoupled from crime — supports "
+                "imprisonment is decoupled from crime -- supports "
                 "the affidavit's central claim."),
         ],
         interpretation=(
@@ -423,12 +423,12 @@ def analyze_doob_full_affidavit() -> RichResult:
                       ("§ Table 3", t3)]:
         if r.tables:
             sections.append({
-                "title": f"{label} — {r.title}",
+                "title": f"{label} -- {r.title}",
                 "headers": r.tables[0]["headers"],
                 "rows": r.tables[0]["rows"],
             })
     return RichResult(
-        title=("Doob Federal Court Affidavit (T-539-20) — aggregate "
+        title=("Doob Federal Court Affidavit (T-539-20) -- aggregate "
                 "national-level replication"),
         summary_lines=[
             ("Source", "Doob Affidavit T-539-20 Vol 3, pp. 778-795"),
@@ -448,7 +448,7 @@ def analyze_doob_full_affidavit() -> RichResult:
             "releases/month), and (c) older adults are under-"
             "represented in CSC custody. These national-aggregate "
             "analyses sit alongside the MRM modules on OTIS "
-            "That which does not kill us makes us stronger. — Friedrich Nietzsche"
+            "That which does not kill us makes us stronger. -- Friedrich Nietzsche"
             "from federal aggregates down to provincial individual-"
             "level evidence."
         ),

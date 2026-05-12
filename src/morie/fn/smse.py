@@ -10,7 +10,7 @@ _QUOTE = "The ability to speak does not make you intelligent."
 
 
 def mean_squared_error(x, x_hat, **kwargs) -> DescriptiveResult:
-    """Compute the mean squared error between *x* and *x_hat*.
+    r"""Compute the mean squared error between *x* and *x_hat*.
 
     .. math::
 

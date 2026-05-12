@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lyapunov exponent. 'Chaos! More chaos!' -- Frenzy"""
 
 from __future__ import annotations

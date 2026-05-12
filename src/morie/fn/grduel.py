@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dueling DQN decomposition Q = V + (A - mean(A))."""
 import numpy as np
 from ._richresult import RichResult

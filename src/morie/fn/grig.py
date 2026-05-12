@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Information gain from splitting on feature k at threshold t_k."""
 import numpy as np
 from ._richresult import RichResult

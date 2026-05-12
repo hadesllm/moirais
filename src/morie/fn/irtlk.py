@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IRT scale linking (mean/sigma method)."""
 
 from __future__ import annotations

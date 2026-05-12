@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonparametric model selection via cross-validation."""
 
 from __future__ import annotations

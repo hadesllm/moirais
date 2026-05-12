@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Haar wavelet transform."""
 
 from __future__ import annotations
@@ -7,11 +7,11 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Character is destiny. — Heraclitus"
+_QUOTE = "Character is destiny. -- Heraclitus"
 
 
 def haar_transform(x: np.ndarray) -> DescriptiveResult:
-    """Haar wavelet transform (simplest DWT, db1).
+    r"""Haar wavelet transform (simplest DWT, db1).
 
     The Haar wavelet uses averaging and differencing of adjacent samples:
 

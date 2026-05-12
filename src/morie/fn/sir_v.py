@@ -18,7 +18,7 @@ def sir_vaccination(
     t_max: float = 160.0,
     n_steps: int = 1000,
 ) -> SIRResult:
-    """
+    r"""
     SIR model with a constant vaccination rate removing susceptibles.
 
     .. math::

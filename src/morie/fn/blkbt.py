@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Blackbox scaling for ideal point estimation."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def blackbox_scaling_basic(
     *,
     missing_val: float = float("nan"),
 ) -> DescriptiveResult:
-    """Time discovers truth. — Seneca"""
+    """Time discovers truth. -- Seneca"""
     R = np.asarray(response_matrix, dtype=float)
     if R.ndim != 2:
         raise ValueError("response_matrix must be 2D.")

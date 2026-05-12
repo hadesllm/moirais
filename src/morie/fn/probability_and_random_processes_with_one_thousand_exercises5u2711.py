@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: (c) Show that the autocovariance function of the asymptotic finite-dimensional distributions of√ n( Fn( x) − x) , in the limit as n → ∞ , is the same as that of the process Z( t) = W( t) − t W( 1) ,
+    Formula: (c) Show that the autocovariance function of the asymptotic finite-dimensional distributions of√ n( Fn( x) − x) , in the limit as n -> ∞ , is the same as that of the process Z( t) = W( t) − t W( 1) ,
 
     Parameters
     ----------

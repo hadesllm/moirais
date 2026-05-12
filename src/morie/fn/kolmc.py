@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kolmogorov complexity approximation via compression ratio."""
 
 __all__ = ["kolmc"]
@@ -9,7 +9,7 @@ import numpy as np
 
 
 def kolmc(data: np.ndarray) -> dict:
-    """
+    r"""
     Approximate Kolmogorov complexity using compression ratio.
 
     K(x) is uncomputable, but the length of a compressed representation

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SDEM likelihood-ratio test vs SEM."""
 
 from ._containers import SpatialResult

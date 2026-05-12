@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-means++ initialisation + Lloyd's algorithm."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MODWT (maximal overlap DWT, translation-invariant)."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def modwt_decompose(
     wavelet: str = "db4",
     level: int = 3,
 ) -> DescriptiveResult:
-    """Maximal Overlap Discrete Wavelet Transform (MODWT).
+    r"""Maximal Overlap Discrete Wavelet Transform (MODWT).
 
     Unlike the DWT, the MODWT does not downsample and is translation-invariant.
     Filters are rescaled by :math:`1/\\sqrt{2^j}` at each level *j*.

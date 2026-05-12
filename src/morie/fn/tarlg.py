@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def tar_fit(
     y: np.ndarray, p: int = 1, threshold: float | None = None, delay: int = 1
 ) -> DescriptiveResult:
-    """
+    r"""
     Fit a two-regime threshold autoregressive (TAR) model.
 
     .. math::

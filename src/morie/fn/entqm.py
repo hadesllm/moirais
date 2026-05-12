@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Quantum entanglement entropy (von Neumann)."""
 
 __all__ = ["entqm"]
@@ -10,7 +10,7 @@ def entqm(
     rho: np.ndarray,
     base: float = np.e,
 ) -> dict:
-    """
+    r"""
     Compute the von Neumann entropy of a quantum density matrix.
 
     .. math::

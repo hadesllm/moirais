@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: [EQ] c( 0) {F( 0) − F( 0− ) } = limn→∞
+    Formula: [EQ] c( 0) {F( 0) − F( 0− ) } = limn->∞
 
     Parameters
     ----------

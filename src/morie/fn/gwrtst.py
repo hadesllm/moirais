@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GWR Monte-Carlo test for spatial variability."""
 
 import numpy as np

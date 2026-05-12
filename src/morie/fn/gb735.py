@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Symmetry of null distribution of T_N when m = n = N/2."""
 import numpy as np
 from ._richresult import RichResult

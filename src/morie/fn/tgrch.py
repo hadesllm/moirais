@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""TGARCH / GJR-GARCH(1,1) — threshold GARCH with asymmetric news impact."""
+# morie.fn -- function file (hadesllm/morie)
+"""TGARCH / GJR-GARCH(1,1) -- threshold GARCH with asymmetric news impact."""
 from __future__ import annotations
 
 import numpy as np

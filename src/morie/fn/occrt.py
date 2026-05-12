@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Occupational injury rate per 100 FTE."""
 
 import scipy.stats as stats

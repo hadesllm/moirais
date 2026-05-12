@@ -1,4 +1,4 @@
-"""Numbered display equation (7.9) from MVSML chapter 7.."""
+r"""Numbered display equation (7.9) from MVSML chapter 7.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_pt2_eq_7_9"]
 
 
 def mvsml_bayesian_regression_pt2_eq_7_9(p, y, cj, c, j, block):
-    """
+    r"""
     Numbered display equation (7.9) from MVSML chapter 7.
 
     Formula: ℓp \beta; y ( ) = ℓ\beta; y ( )  \lambda \betacj (7.10) c=1 j=1 and block updating can be done as in
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_pt2_eq_7_9(p, y, cj, c, j, block):
     References
     ----------
     MVSML, Eq. (7.9) [Multivariate Statistical Machine Learnin [Pages 209-249] [2026-04-16].pdf]
-    """
+    r"""
     y = np.atleast_1d(np.asarray(y, dtype=float))
     n = len(y)
     result = float(np.mean(y))

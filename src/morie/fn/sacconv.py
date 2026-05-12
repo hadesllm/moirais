@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SAC rho/lambda joint feasibility bounds."""
 
 import numpy as np

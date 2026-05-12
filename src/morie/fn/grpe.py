@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sinusoidal positional encoding (Vaswani et al. 2017)."""
 import numpy as np
 from ._richresult import RichResult

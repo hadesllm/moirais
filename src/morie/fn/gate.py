@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 Group Average Treatment Effect (GATE) via AIPW within strata.
 
-Implements ``estimate_gate`` — partitions data by a grouping variable and
+Implements ``estimate_gate`` -- partitions data by a grouping variable and
 estimates the ATE within each group using the AIPW doubly-robust estimator.
 """
 
@@ -26,7 +26,7 @@ def estimate_gate(
     group_col: str,
     propensity_col: str | None = None,
 ) -> pd.DataFrame:
-    """Estimate Group Average Treatment Effects (GATE) via AIPW within strata.
+    r"""Estimate Group Average Treatment Effects (GATE) via AIPW within strata.
 
     Partitions the data by *group_col* and estimates the ATE within each
     group using the AIPW doubly-robust estimator.

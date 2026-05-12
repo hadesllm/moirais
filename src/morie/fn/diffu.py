@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """1D heat diffusion solver + DDPM forward process. 'Your focus determines your reality.' -- Qui-Gon Jinn"""
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ def heat_diffusion(
     dt: float = 0.01,
     n_steps: int = 100,
 ) -> DescriptiveResult:
-    """
+    r"""
     Solve the 1D heat equation via explicit finite differences.
 
     .. math::
@@ -75,7 +75,7 @@ def heat_diffusion(
 
 def diffusion_forward(x0, t: int, betas=None, num_steps: int = 1000,
                       noise=None, seed: int = 0):
-    """DDPM forward (noising) process (Ho et al. 2020).
+    r"""DDPM forward (noising) process (Ho et al. 2020).
 
     .. math::
 

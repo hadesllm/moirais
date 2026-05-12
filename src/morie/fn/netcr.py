@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partial correlation network (regularized via pseudo-inverse)."""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def network_correlation(
     *,
     threshold: float = 0.0,
 ) -> np.ndarray:
-    """Patience is bitter, but its fruit is sweet. — Aristotle"""
+    """Patience is bitter, but its fruit is sweet. -- Aristotle"""
     X = np.asarray(data, dtype=np.float64)
     R = np.corrcoef(X, rowvar=False)
     p = R.shape[0]

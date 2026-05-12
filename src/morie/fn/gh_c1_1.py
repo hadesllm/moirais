@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayes rule for infinite-dimensional parameters: posterior proportional to likelihood times prior."""
 import numpy as np
 from ._richresult import RichResult

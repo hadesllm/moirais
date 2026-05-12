@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayesian Information Criterion for AR model order selection."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "You were my brother, Anakin. I loved you."
 
 
 def bic_score_fn(x: np.ndarray, max_order: int = 20) -> DescriptiveResult:
-    """Compute BIC for AR model orders 1..max_order.
+    r"""Compute BIC for AR model orders 1..max_order.
 
     .. math::
 

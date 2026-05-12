@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Epsilon-covering number N(eps,T,d): minimum number of eps-balls covering T."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Recall@k — fraction of relevant items in the top-k retrieved set."""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Recall@k -- fraction of relevant items in the top-k retrieved set."""
 import numpy as np
 from ._richresult import RichResult
 
@@ -8,7 +8,7 @@ __all__ = ["alammar_recall_at_k"]
 
 def alammar_recall_at_k(retrieved, relevant, k):
     """
-    Recall@k — fraction of relevant items in the top-k retrieved set
+    Recall@k -- fraction of relevant items in the top-k retrieved set
 
     Formula: Recall@k = |relevant ∩ top_k| / |relevant|
 
@@ -34,8 +34,8 @@ def alammar_recall_at_k(retrieved, relevant, k):
     n = len(retrieved)
     result = float(np.mean(retrieved))
     se = float(np.std(retrieved, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Recall@k — fraction of relevant items in the top-k retrieved set"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Recall@k -- fraction of relevant items in the top-k retrieved set"})
 
 
 def cheatsheet():
-    return "alrck: Recall@k — fraction of relevant items in the top-k retrieved set"
+    return "alrck: Recall@k -- fraction of relevant items in the top-k retrieved set"

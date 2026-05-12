@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Feature normalization (z-score, min-max, robust)."""
 
 from __future__ import annotations

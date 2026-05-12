@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Von Neumann entanglement entropy -Tr(rho log rho)."""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def entanglement_entropy(
     rho: np.ndarray | None = None,
     schmidt_coeffs: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """Compute von Neumann entanglement entropy.
+    r"""Compute von Neumann entanglement entropy.
 
     .. math::
 

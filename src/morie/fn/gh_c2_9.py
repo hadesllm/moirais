@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayesian nonparametric binary regression via probit link: P(Y=1|x) = Phi(f(x))."""
 import numpy as np
 from ._richresult import RichResult

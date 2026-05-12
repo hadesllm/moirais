@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Compressed sensing denoising via L1 regularization."""
 
 import numpy as np
@@ -16,7 +16,7 @@ def denoise_cs(
     tol: float = 1e-6,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Denoise a signal using compressed sensing L1 regularization (ISTA).
 
     Solves the basis pursuit denoising (BPDN) problem:

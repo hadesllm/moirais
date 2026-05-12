@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lag operator (k-th lag)."""
 
 from typing import Sequence, Union

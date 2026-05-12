@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sample autocorrelation function at lag k."""
 import numpy as np
 from scipy import stats

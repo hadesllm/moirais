@@ -1,6 +1,6 @@
 """Parse a single SIU director's-report HTML page into a structured row.
 
-This module is **pure** — no network. Hand it a raw HTML string and it
+This module is **pure** -- no network. Hand it a raw HTML string and it
 returns a dict matching SIU_COLUMNS. All scraping, retry, and caching
 lives in `_scraper.py`.
 
@@ -37,9 +37,9 @@ def parse_html(html: str, *, drid: Optional[int] = None,
     """Turn a director's-report HTML page into a SIU.csv row dict.
 
     :param html: raw response body.
-    :param drid: optional integer drid from the request URL — useful when
+    :param drid: optional integer drid from the request URL -- useful when
                  the page itself doesn't echo it.
-    :param source_url: optional canonical URL — used to derive drid/nrid
+    :param source_url: optional canonical URL -- used to derive drid/nrid
                        and recorded as `source_url_report`.
     :return: dict with every SIU_COLUMNS key (Nones for unfound fields).
     """
@@ -94,7 +94,7 @@ def parse_html(html: str, *, drid: Optional[int] = None,
     row["narrative_summary"] = _extract_summary(text)
 
     # ── police service (prose-detected; full names + abbreviations).
-    # Vocabulary scan only — DO NOT fall through to `_label_value`
+    # Vocabulary scan only -- DO NOT fall through to `_label_value`
     # because the SIU page boilerplate contains the substring "police
     # services across Ontario" which the label regex matches as
     # garbage like "s across Ontario.".
@@ -105,7 +105,7 @@ def parse_html(html: str, *, drid: Optional[int] = None,
     row["number_of_officers_involved"] = _detect_officers_involved(text, team_section)
 
     # The Team also has the SIU investigator counts (kept as
-    # supplemental — "siu_investigators" gets a list-as-string).
+    # supplemental -- "siu_investigators" gets a list-as-string).
     row["siu_investigators"] = _team_field(team_section, "SIU Investigators")
     row["siu_forensics_investigators"] = _team_field(team_section, "SIU Forensic Investigators")
 
@@ -221,7 +221,7 @@ def parse_news_html(html: str, *, nrid: Optional[int] = None,
     """Parse a SIU news-release page into a partial row dict.
 
     News-release pages live at `news_template.php?nrid=<N>` and have a
-    different layout than the director's reports — single headline,
+    different layout than the director's reports -- single headline,
     short summary paragraph, signed-by-Director line. We extract:
       - news_release_title
       - news_release_date_iso / _raw       (the "Mississauga, ON (Date)" line)
@@ -248,7 +248,7 @@ def parse_news_html(html: str, *, nrid: Optional[int] = None,
     }
 
     # ── Find the headline. The body always has "News Release\n<title>\n"
-    # — find the SECOND occurrence (first is the page chrome menu).
+    # -- find the SECOND occurrence (first is the page chrome menu).
     title = _detect_news_release_title(full_text)
     out["news_release_title"] = title
 
@@ -260,7 +260,7 @@ def parse_news_html(html: str, *, nrid: Optional[int] = None,
     # ── Summary paragraph (the "On <date>, …" sentence right after the date stamp)
     out["news_release_summary"] = _detect_news_release_summary(full_text)
 
-    # ── Director's name — "The Director of the Special Investigations Unit, Tony Loparco,"
+    # ── Director's name -- "The Director of the Special Investigations Unit, Tony Loparco,"
     out["directors_name"] = _detect_directors_name(full_text)
 
     return out
@@ -293,7 +293,7 @@ def _trim_to_body(text: str) -> str:
         return text[matches[1].start():]
     if len(matches) == 1:
         return text[matches[0].start():]
-    # No "Mandate of the SIU" — fall back to "The Investigation"
+    # No "Mandate of the SIU" -- fall back to "The Investigation"
     matches = list(re.finditer(r"(?:^|\n)\s*The Investigation\s*\n", text, re.M))
     if len(matches) >= 2:
         return text[matches[1].start():]
@@ -303,7 +303,7 @@ def _trim_to_body(text: str) -> str:
 def _label_value(text: str, label: str) -> Optional[str]:
     """Look for `<label>:?\\s*<value>` in the stripped text and return the value.
 
-    Tolerant of label variants — the caller passes the canonical phrase;
+    Tolerant of label variants -- the caller passes the canonical phrase;
     we accept it case-insensitively with optional trailing colon and
     whitespace flexibility.
     """
@@ -354,7 +354,7 @@ _NARRATIVE_END_RE = re.compile(
 
 
 def _extract_narrative_full(soup: BeautifulSoup, text: str) -> str:
-    """Return the body of the report — Mandate engaged → Endnotes.
+    """Return the body of the report -- Mandate engaged -> Endnotes.
 
     The SIU page is wrapped in a navigation chrome that pollutes both
     `<main>` and a flat `<p>` join with the site menu (which contains
@@ -376,7 +376,7 @@ def _extract_narrative_full(soup: BeautifulSoup, text: str) -> str:
     end = end_m.start() if end_m else len(text)
     if end > start:
         return text[start:end]
-    # Last-ditch — flatten <p> tags
+    # Last-ditch -- flatten <p> tags
     paras = [p.get_text(" ", strip=True) for p in soup.find_all("p")]
     return "\n\n".join(p for p in paras if p)
 
@@ -436,7 +436,7 @@ def _extract_outbound_links(soup: BeautifulSoup,
 # The real SIU report HTML is mostly narrative paragraphs with section
 # headers. These helpers find structured information embedded in prose.
 
-# Police service vocabulary — every singleton in SIU1a's Q3 column.
+# Police service vocabulary -- every singleton in SIU1a's Q3 column.
 # Compiled 2026-05-06 from data/datasets/vsr/SIU1a.xlsx (90 distinct
 # values, 56 unique singletons). Multi-service comma-joined entries are
 # handled at match-time, not in this list.
@@ -496,7 +496,7 @@ _POLICE_SERVICES = [
     "Woodstock Police Service",
     "Port Hope Police Service",
     "Stl'atl'imx Tribal Police",
-    "That which does not kill us makes us stronger. — Friedrich Nietzsche",
+    "That which does not kill us makes us stronger. -- Friedrich Nietzsche",
     "West Grey Police Service",
     "Anishinabek Police Service",
     "Six Nations Police",
@@ -529,7 +529,7 @@ _POLICE_ABBR = {
 }
 
 
-# Modern SIU report boilerplate — the jurisdictional sidebar/footer
+# Modern SIU report boilerplate -- the jurisdictional sidebar/footer
 # mentions Niagara Parks Commission ~4× per page in EVERY case (because
 # NPC is one of the entities under SIU's jurisdiction). Pre-strip these
 # boilerplate clauses before vocabulary scan.
@@ -548,7 +548,7 @@ def _detect_police_service(text: str) -> Optional[str]:
 
     Counts occurrences of each vocabulary entry and returns the
     most-frequent. This handles multi-service cases where a primary
-    and a witness service both appear — SIU1a captures the primary
+    and a witness service both appear -- SIU1a captures the primary
     (the most-mentioned one).
 
     Falls back to abbreviation match if no full-name hits.
@@ -575,7 +575,7 @@ def _detect_police_service(text: str) -> Optional[str]:
         # Highest count wins; ties broken by longer name (more specific)
         return max(counts.items(), key=lambda kv: (kv[1], len(kv[0])))[0]
 
-    # No full-name hit — try abbreviations as standalone tokens
+    # No full-name hit -- try abbreviations as standalone tokens
     abbr_counts: dict[str, int] = {}
     for abbr, full in _POLICE_ABBR.items():
         c = len(re.findall(rf"\b{re.escape(abbr)}\b", text))
@@ -624,7 +624,7 @@ def _detect_officers_involved(text: str, team_section: str) -> Optional[int]:
     Order of attempts:
       1. Explicit `Number of Officers: N` label (legacy/test format)
       2. Numbered `SO #N` mentions in Subject Officers section (real)
-      3. Bare "the SO" mention → assume 1 officer (real, single-SO case)
+      3. Bare "the SO" mention -> assume 1 officer (real, single-SO case)
     """
     # 1) explicit-label form (synthetic / structured pages)
     by_label = _label_int(text, "Number of Officers")
@@ -643,7 +643,7 @@ def _detect_officers_involved(text: str, team_section: str) -> Optional[int]:
     if so_nums:
         return max(so_nums)
 
-    # 3) bare "the SO" → 1
+    # 3) bare "the SO" -> 1
     if re.search(r"\bthe\s+SO\b", flat, re.IGNORECASE):
         return 1
     return None
@@ -665,14 +665,14 @@ def _count_lines_starting_with(section: str, prefix: str) -> Optional[int]:
         nums.add(int(m.group(1)))
     if nums:
         return max(nums)
-    # Fall back to "The SO" / "the SO" without a number → 1 if present
+    # Fall back to "The SO" / "the SO" without a number -> 1 if present
     if re.search(rf"\b{re.escape(prefix.strip())}\b", flat):
         return 1
     return None
 
 
 def _detect_witness_officer_count(wo_section: str) -> Optional[int]:
-    """Witness Officers — usually 'There were no police officers witness…'
+    """Witness Officers -- usually 'There were no police officers witness…'
     or a list of WO #1, WO #2.
 
     Real SIU HTML breaks `WO\\n#1` across lines; flatten before regex.
@@ -705,7 +705,7 @@ def _detect_incident_date_from_narrative(text: str) -> Optional[str]:
     Investigation" sections.
 
     Skip dates that appear in the same sentence as
-    "notified", "contacted", "Notification of the SIU" — those are
+    "notified", "contacted", "Notification of the SIU" -- those are
     notification dates, not incident dates. Take the next available
     "On <Month> <Day>, <Year>" instead.
     """
@@ -738,7 +738,7 @@ def _detect_siu_notified(text: str) -> Optional[str]:
     inv = _section_text(text, "The Investigation",
                         end_markers=("The Team", "Incident Narrative"))
     haystack = inv or text
-    # Form A: "<Date>, ... notified|contacted the SIU" — date may be
+    # Form A: "<Date>, ... notified|contacted the SIU" -- date may be
     # preceded by "On" (capitalized) or "on" (lowercase, often after
     # "at <time> on <weekday>, <date>"); accept either.
     m = re.search(
@@ -777,7 +777,7 @@ def _detect_notifying_party(text: str) -> Optional[str]:
 
 
 def _detect_decision_date(text: str) -> Optional[str]:
-    """Director's decision date — signature block usually has 'Date: <date>'
+    """Director's decision date -- signature block usually has 'Date: <date>'
     immediately above the director's name."""
     # "Date: October 18, 2018" near "Director" mention.
     m = re.search(r"Date:\s*([A-Z][a-z]+\s+\d{1,2},?\s+\d{4})", text)
@@ -835,7 +835,7 @@ def _detect_legislation(text: str) -> Optional[str]:
     if not sec:
         return None
     sections = []
-    for m in re.finditer(r"Section\s+\d+(?:\([^)]+\))?,?\s+([A-Z][^\n,—\-–]+?)(?:\s*[–\-—]|$)",
+    for m in re.finditer(r"Section\s+\d+(?:\([^)]+\))?,?\s+([A-Z][^\n,--\-–]+?)(?:\s*[–\---]|$)",
                          sec):
         act = m.group(1).strip().rstrip(",")
         if act not in sections:
@@ -864,7 +864,7 @@ def _detect_charges_from_decision(text: str) -> Optional[bool]:
     return None
 
 
-# French markers — strong signals that a page is French-only.
+# French markers -- strong signals that a page is French-only.
 _FR_MARKERS = (
     "L'enquête",
     "L’enquête",
@@ -876,7 +876,7 @@ _FR_MARKERS = (
     "Mandat de l'UES",
     "Mandat de l’UES",
 )
-# English markers — strong signals that a page is English.
+# English markers -- strong signals that a page is English.
 _EN_MARKERS = (
     "The Investigation",
     "Notification of the SIU",
@@ -911,7 +911,7 @@ def _detect_news_release_title(full_text: str) -> Optional[str]:
     matches = list(re.finditer(r"\n\s*News Release\s*\n", full_text))
     if not matches:
         return None
-    # Try each "News Release" anchor — pick the one followed by a non-empty
+    # Try each "News Release" anchor -- pick the one followed by a non-empty
     # line that doesn't start with another nav label.
     for m in matches:
         nl = full_text.find("\n", m.end())

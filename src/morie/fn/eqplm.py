@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Palma ratio (top 10% / bottom 40%)."""
 
 from __future__ import annotations

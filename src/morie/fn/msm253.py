@@ -1,4 +1,4 @@
-"""Numbered display equation (10.14) from MVSML chapter 10.."""
+r"""Numbered display equation (10.14) from MVSML chapter 10.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_reproducing_kernel_eq_10_14"]
 
 
 def mvsml_reproducing_kernel_eq_10_14(jk, Next, to, update, the, weights):
-    """
+    r"""
     Numbered display equation (10.14) from MVSML chapter 10.
 
     Formula: ( ) . jk jk Next, to update the weights connecting the input units to the hidden units, we follow a similar process as in (10.12). Thus kp = -\eta \partial E \Deltaw h ( )
@@ -35,7 +35,7 @@ def mvsml_reproducing_kernel_eq_10_14(jk, Next, to, update, the, weights):
     References
     ----------
     MVSML, Eq. (10.14) [Multivariate Statistical Machine Learnin [Pages 379-425] [2026-04-16].pdf]
-    """
+    r"""
     jk = np.atleast_1d(np.asarray(jk, dtype=float))
     n = len(jk)
     result = float(np.mean(jk))

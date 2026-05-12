@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Interference/spillover effects via partial interference model."""
 
 import numpy as np

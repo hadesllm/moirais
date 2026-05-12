@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""No man ever steps in the same river twice. — Heraclitus"""
+# morie.fn -- function file (hadesllm/morie)
+"""No man ever steps in the same river twice. -- Heraclitus"""
 
 from __future__ import annotations
 

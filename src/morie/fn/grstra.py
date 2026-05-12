@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stratified train/test split preserving class proportions."""
 import numpy as np
 from scipy import stats

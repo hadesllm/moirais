@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_15_unnumbered_494(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Φ (·) or (Yi − τ ) /ω ∼ Υ (·) then as I →∞ , the left side of the equation, 2 Tτ0 / {I (I + 1)},
+    Formula: Φ (·) or (Yi − τ ) /ω ∼ Υ (·) then as I ->∞ , the left side of the equation, 2 Tτ0 / {I (I + 1)},
 
     Parameters
     ----------

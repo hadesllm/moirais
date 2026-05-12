@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: We have by (15) that F( x)<ω . However, Fn( x) → F( x) as n → ∞ and so Fn( x)<ω for
+    Formula: We have by (15) that F( x)<ω . However, Fn( x) -> F( x) as n -> ∞ and so Fn( x)<ω for
 
     Parameters
     ----------

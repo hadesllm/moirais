@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Survey-weighted regression with robust (sandwich) standard errors."""
 
 import numpy as np
@@ -14,7 +14,7 @@ def rey_sv(
     weights: str = "weight",
     alpha: float = 0.05,
 ) -> RegressionResult:
-    """
+    r"""
     Survey-weighted OLS regression with sandwich (HC1) standard errors.
 
     Fits the weighted least squares model:

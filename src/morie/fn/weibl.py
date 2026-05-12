@@ -1,4 +1,4 @@
-"""Mastering others is strength; mastering yourself is true power. — Lao Tzu"""
+"""Mastering others is strength; mastering yourself is true power. -- Lao Tzu"""
 
 from __future__ import annotations
 

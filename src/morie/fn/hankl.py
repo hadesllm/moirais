@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Construct Hankel matrix from signal."""
 
 from __future__ import annotations

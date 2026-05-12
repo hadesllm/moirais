@@ -1,4 +1,4 @@
-"""Attention output.."""
+r"""Attention output.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_attention_output"]
 
 
 def kamath_ch2_attention_output(b, v):
-    """
+    r"""
     Attention output.
 
     Formula: o = \sum_{i=1}^n b_i v_i
@@ -27,7 +27,7 @@ def kamath_ch2_attention_output(b, v):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.10, p. 32
-    """
+    r"""
     b = np.atleast_1d(np.asarray(b, dtype=float))
     n = len(b)
     result = float(np.mean(b))

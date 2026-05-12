@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Counterfactual notation: Y_x outcome had X been set to x by intervention."""
 import numpy as np
 from ._richresult import RichResult

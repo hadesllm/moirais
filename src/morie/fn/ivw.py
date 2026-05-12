@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Instrumental variable Wald estimate (MR-style)."""
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ def iv_wald(
     se_zx: float = 0.0,
     alpha: float = 0.05,
 ) -> ESRes:
-    """
+    r"""
     Wald ratio IV estimator (single instrument).
 
     .. math::

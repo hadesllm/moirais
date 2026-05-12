@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 def shape_factor_fn(x: np.ndarray) -> DescriptiveResult:
     """Compute the shape factor (RMS / mean of absolute value).
 
-    'This is the way.' — The Mandalorian
+    'This is the way.' -- The Mandalorian
     """
     from morie._waveform import shape_factor as _backend
 

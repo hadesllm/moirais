@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Klein-Gordon equation."""
 
 __all__ = ["klgrd"]
@@ -18,7 +18,7 @@ def klgrd(
     hbar: float = 1.0,
     c: float = 1.0,
 ) -> dict:
-    """
+    r"""
     Solve the 1+1D Klein-Gordon equation numerically.
 
     .. math::

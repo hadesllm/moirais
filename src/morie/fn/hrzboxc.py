@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Box-Cox regression model: T_lambda(Y) = X'beta + U."""
 import numpy as np
 from ._richresult import RichResult

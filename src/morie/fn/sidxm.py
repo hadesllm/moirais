@@ -1,4 +1,4 @@
-"""Single-index model via maximum score estimator (Manski 1975).
+r"""Single-index model via maximum score estimator (Manski 1975).
 
 Estimates the coefficient direction in a binary-response single-index
 model :math:`P(Y=1 \\mid X) = F(X^\\top \\beta)` where :math:`F` is

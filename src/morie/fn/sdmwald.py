@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SDM Wald test on rho."""
 
 from ._containers import SpatialResult

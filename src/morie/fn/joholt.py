@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Holt's linear trend method (double exponential smoothing)."""
 import numpy as np
 from ._richresult import RichResult

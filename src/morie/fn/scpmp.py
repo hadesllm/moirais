@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Percent of Maximum Possible (PMP) score."""
 
 from __future__ import annotations

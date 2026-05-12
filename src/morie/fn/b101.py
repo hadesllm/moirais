@@ -1,4 +1,4 @@
-"""Linear function defining the simplest one-feature model with weight w and bias b.."""
+r"""Linear function defining the simplest one-feature model with weight w and bias b.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_linear_function"]
 
 
 def burkov_lm_ch1_linear_function(x, w, b):
-    """
+    r"""
     Linear function defining the simplest one-feature model with weight w and bias b.
 
     Formula: f(x) \stackrel{\text{def}}{=} wx + b

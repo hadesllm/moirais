@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Concept drift detection (ADWIN). 'Things are changing...' -- Drift"""
 
 from __future__ import annotations

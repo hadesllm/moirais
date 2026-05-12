@@ -1,14 +1,14 @@
 Package: morie
 Type: Package
 Title: Multi-domain Open Research and Inferential Estimation
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: c(
   person(
     given = "Vansh Singh",
     family = "Ruhela",
     email = "hadesllm@proton.me",
     role = c("aut", "cre"),
-    comment = c(ORCID = "0009-0004-1750-3592", "Hindi IPA pronunciation: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/")
+    comment = c(ORCID = "0009-0004-1750-3592", "IPA pronunciation: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/")
   )
  )
 Author: Vansh Singh Ruhela [aut, cre] (<https://orcid.org/0009-0004-1750-3592>)
@@ -79,6 +79,9 @@ Suggests:
   dlm,
   rmgarch,
   randtoolbox,
+  oro.nifti,
+  eegkit,
+  R.matlab,
   testthat (>= 3.0.0),
   knitr,
   rmarkdown
@@ -87,6 +90,7 @@ URL: https://github.com/hadesllm/morie
 BugReports: https://github.com/hadesllm/morie/issues
 Config/testthat/edition: 3
 Collate:
+  'aaa_helpers_det_rng.R'
   'aaa_helpers_fauzi.R'
   'aaa_helpers_ghosal_bnp.R'
   'aaa_helpers_horowitz.R'
@@ -145,6 +149,9 @@ Collate:
   'dwnmn.R'
   'ebac.R'
   'egrch.R'
+  'entheo_data.R'
+  'entheo_analysis.R'
+  'entheo_preprocess.R'
   'ewtma.R'
   'extvm.R'
   'flsha.R'

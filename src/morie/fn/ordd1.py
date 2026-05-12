@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Regression discontinuity at age cutoff."""
 
 from __future__ import annotations

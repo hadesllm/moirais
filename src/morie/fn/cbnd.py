@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Causal bounds — partial identification under unmeasured confounding."""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Causal bounds -- partial identification under unmeasured confounding."""
 
 import numpy as np
 
@@ -60,4 +60,4 @@ def causal_bounds(y, treatment, p_upper=None, p_lower=None):
 
 
 def cheatsheet() -> str:
-    return "causal_bounds({}) -> Causal bounds — partial identification under unmeasured conf"
+    return "causal_bounds({}) -> Causal bounds -- partial identification under unmeasured conf"

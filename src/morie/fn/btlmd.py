@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bradley-Terry-Luce model for paired comparisons."""
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ def bradley_terry(win_matrix, *, max_iter: int = 100, tol: float = 1e-8) -> Desc
     ----------
     Armstrong (2014), Ch 8. Bradley & Terry (1952). Hunter (2004).
 
-    .. epigraph:: "The whole is greater than the sum of its parts. — Aristotle", Star Wars
+    .. epigraph:: "The whole is greater than the sum of its parts. -- Aristotle", Star Wars
     """
     W = np.asarray(win_matrix, dtype=float)
     n = W.shape[0]

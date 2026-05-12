@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Age group x gender cross-tabulation of placements."""
 
 from __future__ import annotations

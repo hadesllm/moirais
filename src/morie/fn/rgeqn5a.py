@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Waveform morphology index for ECG beat classification."""
 import numpy as np
 from ._richresult import RichResult

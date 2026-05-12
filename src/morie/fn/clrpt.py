@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classification report (all metrics per class)."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "We suffer more often in imagination than in reality. — Seneca"
+_QUOTE = "We suffer more often in imagination than in reality. -- Seneca"
 
 
 def classification_report(y_true, y_pred, *, labels=None, **kwargs) -> DescriptiveResult:

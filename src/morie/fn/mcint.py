@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Monte Carlo spatial integration estimate."""
 
 import numpy as np

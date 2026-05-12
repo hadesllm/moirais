@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Matrix trace (sum of diagonal)."""
 
 from typing import Sequence, Union

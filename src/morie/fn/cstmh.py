@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Custody mental health flag trend over years."""
 
 from __future__ import annotations

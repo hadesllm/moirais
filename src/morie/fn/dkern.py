@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Deformation kernel / space warping (Schabenberger & Gotway Ch 8)."""
 
 import numpy as np

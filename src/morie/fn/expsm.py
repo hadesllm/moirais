@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simple exponential smoothing. 'Much to learn, you still have.'"""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def exponential_smooth(y: np.ndarray, alpha: float = 0.3) -> DescriptiveResult:
-    """
+    r"""
     Simple Exponential Smoothing (SES).
 
     Produces one-step-ahead forecasts using the recursion:

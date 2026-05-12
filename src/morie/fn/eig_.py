@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Eigenvalue/eigenvector analysis."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EEG rhythm detection via autocorrelation."""
 import numpy as np
 from scipy import stats

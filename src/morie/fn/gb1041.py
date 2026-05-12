@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kruskal-Wallis one-way ANOVA by ranks: H statistic."""
 import numpy as np
 from scipy import stats

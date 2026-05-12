@@ -42,11 +42,11 @@ def find_case_number(text: str) -> Optional[str]:
     return None
 
 
-# Date parsing — multiple formats seen on siu.on.ca:
+# Date parsing -- multiple formats seen on siu.on.ca:
 #   "January 5, 2017"   "1 January 2017"   "2017-01-05"   "01/05/2017"
 DATE_FORMATS = [
     "%B %d, %Y",
-    "%d %B, %Y",     # "6 December, 2018" — SIU news-release stamp
+    "%d %B, %Y",     # "6 December, 2018" -- SIU news-release stamp
     "%d %B %Y",
     "%B %d %Y",
     "%Y-%m-%d",
@@ -115,7 +115,7 @@ def normalise_sex(text: Optional[str]) -> Optional[str]:
 
 
 def normalise_yes_no(text: Optional[str]) -> Optional[bool]:
-    """Map yes/no/true/false/charged/no charges → bool."""
+    """Map yes/no/true/false/charged/no charges -> bool."""
     if not text:
         return None
     t = text.strip().lower()

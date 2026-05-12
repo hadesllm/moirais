@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Distribution of median of DP sample: quantile functional of random CDF."""
 import numpy as np
 from ._richresult import RichResult

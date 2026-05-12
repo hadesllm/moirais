@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Out-of-bag (OOB) evaluation using unsampled observations per bootstrap."""
 import numpy as np
 from ._richresult import RichResult

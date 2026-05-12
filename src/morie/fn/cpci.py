@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Clopper-Pearson exact binomial CI. 'We have hope. Rebellions are built on hope.' -- Jyn Erso"""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def clopper_pearson(successes: int, trials: int, alpha: float = 0.05) -> DescriptiveResult:
-    """
+    r"""
     Clopper-Pearson exact binomial confidence interval.
 
     Uses the relationship between the binomial and Beta distributions:

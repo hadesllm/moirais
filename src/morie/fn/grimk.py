@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Power law scaling. 'Me Grimlock strongest!' -- Grimlock"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Basic signal statistics: mean, variance, skewness, kurtosis of biomedical signal."""
 import numpy as np
 from scipy import stats

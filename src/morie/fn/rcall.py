@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Roll-call matrix analysis (Armstrong Ch 2)."""
 import numpy as np
 from ._richresult import RichResult
@@ -10,9 +10,9 @@ def roll_call_analysis(x, absent_codes=(np.nan, 9)):
     """Summarise a roll-call matrix V = {v_ij}, v_ij ∈ {yea, nay, absent}.
 
     Encoding (Poole-Rosenthal convention):
-        yea    = {1, 2, 3}  → 1
-        nay    = {4, 5, 6}  → 0
-        absent = {0, 7, 8, 9, NaN}  → NaN
+        yea    = {1, 2, 3}  -> 1
+        nay    = {4, 5, 6}  -> 0
+        absent = {0, 7, 8, 9, NaN}  -> NaN
 
     Accepts any of those codings; values not in {0, 1, NaN} after
     coercion are mapped via the Poole-Rosenthal rule above.
@@ -64,7 +64,7 @@ rcall = roll_call_analysis
 
 
 def cheatsheet():
-    return "rcall: Roll-call summary — yea/nay/absent + Poole-Rosenthal lopsided."
+    return "rcall: Roll-call summary -- yea/nay/absent + Poole-Rosenthal lopsided."
 
 
 # CANONICAL TEST

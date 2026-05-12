@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Confine yourself to the present. — Marcus Aurelius"""
+# morie.fn -- function file (hadesllm/morie)
+"""Confine yourself to the present. -- Marcus Aurelius"""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Compute factor scores from data and loadings."""
 
 from __future__ import annotations

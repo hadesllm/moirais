@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GMRES iterative solver for non-symmetric linear systems."""
 
 from __future__ import annotations

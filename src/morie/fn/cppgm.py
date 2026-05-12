@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Poisson change-point model. 'I sense great fear in you.'"""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def changepoint_poisson(counts: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Detect a single change point in Poisson count data via maximum
     likelihood.
 

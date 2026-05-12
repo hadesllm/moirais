@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Equity metrics: representation index and disparity ratio."""
 
 from __future__ import annotations

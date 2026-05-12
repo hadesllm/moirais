@@ -15,7 +15,7 @@ def svm_hinge_primal(x, y, *, C=1.0, seed=0):
     Parameters
     ----------
     x : array-like (n, p).
-    y : array-like (n,) — any binary labels.
+    y : array-like (n,) -- any binary labels.
     C : float
         Regularization inverse (smaller C => stronger regularization).
     seed : int

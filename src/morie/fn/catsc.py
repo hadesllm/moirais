@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Criterion Autoregressive Transfer function for model order selection."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "I've got a bad feeling about this."
 
 
 def cat_score_fn(x: np.ndarray, max_order: int = 20) -> DescriptiveResult:
-    """Compute CAT (Parzen) criterion for AR orders 1..max_order.
+    r"""Compute CAT (Parzen) criterion for AR orders 1..max_order.
 
     .. math::
 

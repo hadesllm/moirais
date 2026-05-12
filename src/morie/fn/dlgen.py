@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Deep-learning genomic prediction (single-hidden-layer MLP, NumPy)."""
 from __future__ import annotations
 
@@ -10,8 +10,9 @@ __all__ = ["deep_learning_genomic"]
 
 
 def deep_learning_genomic(x, y, markers, hidden: int = 16, n_epochs: int = 200,
-                          lr: float = 1e-2, l2: float = 1e-3, seed: int = 0):
-    """Single-hidden-layer MLP genomic predictor — NumPy implementation.
+                          lr: float = 1e-2, l2: float = 1e-3, seed: int = 0,
+                          deterministic_seed: int | None = None):
+    """Single-hidden-layer MLP genomic predictor -- NumPy implementation.
 
     Architecture::
 
@@ -32,6 +33,11 @@ def deep_learning_genomic(x, y, markers, hidden: int = 16, n_epochs: int = 200,
     lr : float, default 1e-2. Learning rate.
     l2 : float, default 1e-3. Weight-decay (ridge on W1/w2).
     seed : int
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged.
 
     Returns
     -------
@@ -42,7 +48,11 @@ def deep_learning_genomic(x, y, markers, hidden: int = 16, n_epochs: int = 200,
     ----------
     Montesinos Lopez et al. (2022), Ch. 12.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("dlgen", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     y = np.asarray(y, dtype=float).ravel()
     n = len(y)
     M = np.asarray(markers, dtype=float)

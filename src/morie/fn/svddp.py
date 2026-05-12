@@ -4,7 +4,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Nature does not hurry, yet everything is accomplished. — Lao Tzu"
+_QUOTE = "Nature does not hurry, yet everything is accomplished. -- Lao Tzu"
 
 
 def svd_decompose(A, **kwargs) -> DescriptiveResult:

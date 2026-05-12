@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gabor logon (Gaussian-windowed sinusoid, TF atom)."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def gabor_logon(
     f0: float,
     sigma: float,
 ) -> DescriptiveResult:
-    """Gabor logon: Gaussian-windowed complex sinusoid.
+    r"""Gabor logon: Gaussian-windowed complex sinusoid.
 
     .. math::
 

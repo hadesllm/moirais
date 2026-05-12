@@ -1,4 +1,4 @@
-"""Bertscore precision.."""
+r"""Bertscore precision.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch8_bertscore_precision"]
 
 
 def kamath_ch8_bertscore_precision(x, xhat):
-    """
+    r"""
     Bertscore precision.
 
     Formula: P_{BERT} = \frac{1}{|\hat{x}|}\sum_{\hat{x}_j\in\hat{x}} \max_{x_i\in x} \langle\hat{x}_j,x_i\rangle
@@ -27,7 +27,7 @@ def kamath_ch8_bertscore_precision(x, xhat):
     References
     ----------
     Kamath et al (2024), Ch 8, Eq 8.8, p. 325
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

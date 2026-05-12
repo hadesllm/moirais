@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""BayesCpi — common variance mixture for genomic prediction."""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""BayesCpi -- common variance mixture for genomic prediction."""
 
 __all__ = ["bycpi"]
 

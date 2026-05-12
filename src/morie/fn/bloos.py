@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayesian LOO-CV with Pareto-smoothed importance sampling."""
 
 from __future__ import annotations

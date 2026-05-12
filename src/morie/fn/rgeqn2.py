@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multivariate analysis of concurrent biomedical signals (covariance matrix)."""
 import numpy as np
 from ._richresult import RichResult

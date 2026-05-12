@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Canary exposure: rank of a canary string among candidate strings by model PLL."""
 import numpy as np
 from ._richresult import RichResult

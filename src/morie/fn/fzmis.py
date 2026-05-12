@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MISE decomposition for kernel density estimators (Fauzi Ch 1).
 
 Asymptotic MISE of a 2nd-order kernel density estimator:
@@ -42,7 +42,7 @@ def fauzi_mise_computation(x, h=None):
     n = len(x)
     if n < 5:
         return RichResult(payload={"estimate": np.nan, "n": n,
-                                    "method": "fzmis — too few obs"})
+                                    "method": "fzmis -- too few obs"})
 
     sigma = float(np.std(x, ddof=1))
     if sigma <= 0:

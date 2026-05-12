@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Shannon entropy at a tree node (alternative to Gini)."""
 import numpy as np
 from ._richresult import RichResult

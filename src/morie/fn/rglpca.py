@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear predictive coding (LPC) analysis of speech/biosignals."""
 import numpy as np
 from ._richresult import RichResult

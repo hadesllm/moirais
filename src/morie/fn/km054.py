@@ -1,4 +1,4 @@
-"""Series adapter.."""
+r"""Series adapter.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch4_series_adapter"]
 
 
 def kamath_ch4_series_adapter(H_o, W_down, W_up):
-    """
+    r"""
     Series adapter.
 
     Formula: H_o \leftarrow H_o + f(H_o W_{down}) W_{up}
@@ -29,7 +29,7 @@ def kamath_ch4_series_adapter(H_o, W_down, W_up):
     References
     ----------
     Kamath et al (2024), Ch 4, Eq 4.1, p. 147
-    """
+    r"""
     H_o = np.atleast_1d(np.asarray(H_o, dtype=float))
     n = len(H_o)
     result = float(np.mean(H_o))

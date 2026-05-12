@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The more you know, the more you realize you don't know. — Aristotle"
+_QUOTE = "The more you know, the more you realize you don't know. -- Aristotle"
 
 
 def wavelet_packets(
@@ -14,7 +14,7 @@ def wavelet_packets(
     wavelet: str = "db4",
     level: int = 3,
 ) -> DescriptiveResult:
-    """Wavelet packet decomposition — full binary tree.
+    """Wavelet packet decomposition -- full binary tree.
 
     Unlike the standard DWT which only decomposes approximation coefficients,
     wavelet packets decompose both approximation and detail at every level.

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Symbolic differentiation: manipulate algebraic expressions analytically."""
 import numpy as np
 from ._richresult import RichResult

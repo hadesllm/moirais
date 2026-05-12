@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chebyshev distance."""
 
 import numpy as np
 
 from ._containers import ESRes
 def chebyshev_dist(x, y, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Chebyshev (L-infinity) distance.
 
     .. math::

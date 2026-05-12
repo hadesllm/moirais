@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Onset detection via energy envelope."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def onset_detect_fn(
 ) -> DescriptiveResult:
     """Detect signal onsets using energy envelope thresholding.
 
-    'An unexamined life is not worth living. — Socrates'
+    'An unexamined life is not worth living. -- Socrates'
     """
     from morie._detection import onset_detect as _backend
 

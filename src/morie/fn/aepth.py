@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AEP (asymptotic equipartition property) verification."""
 
 __all__ = ["aepth"]
@@ -14,7 +14,7 @@ def aepth(
     epsilon: float = 0.1,
     seed: int = 42,
 ) -> dict:
-    """
+    r"""
     Verify the AEP via Monte Carlo simulation.
 
     The AEP states that for i.i.d. X_1, ..., X_n ~ p(x):

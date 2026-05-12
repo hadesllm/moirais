@@ -1,4 +1,4 @@
-"""Wmd.."""
+r"""Wmd.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch8_wmd"]
 
 
 def kamath_ch8_wmd(x_n, y_n, C, F):
-    """
+    r"""
     Wmd.
 
     Formula: \mathrm{WMD}(x^n,y^n) = \min_{F\in R^{|x^n|\times|y^n|}} \langle C,F\rangle, \text{ s.t. } F\mathbf{1}=f_{x^n}, F^T\mathbf{1}=f_{y^n}
@@ -31,7 +31,7 @@ def kamath_ch8_wmd(x_n, y_n, C, F):
     References
     ----------
     Kamath et al (2024), Ch 8, Eq 8.10, p. 326
-    """
+    r"""
     x_n = np.atleast_1d(np.asarray(x_n, dtype=float))
     n = len(x_n)
     result = float(np.mean(x_n))

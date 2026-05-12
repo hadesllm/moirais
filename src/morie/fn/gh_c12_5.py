@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Efficient influence function for semiparametric BvM."""
 import numpy as np
 from ._richresult import RichResult

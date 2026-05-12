@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GP definition via RKHS: reproducing kernel Hilbert space H_k associated to kernel k."""
 import numpy as np
 from ._richresult import RichResult

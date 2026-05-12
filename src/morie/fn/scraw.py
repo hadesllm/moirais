@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Compute raw total/subscale scores."""
 
 from __future__ import annotations

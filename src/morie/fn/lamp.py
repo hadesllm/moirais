@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Lamport one-time signature — sign."""
+# morie.fn -- function file (hadesllm/morie)
+"""Lamport one-time signature -- sign."""
 
 from __future__ import annotations
 
@@ -37,4 +37,4 @@ lamp = lamport_sign
 
 
 def cheatsheet() -> str:
-    return "lamport_sign({}) -> Lamport one-time signature — sign."
+    return "lamport_sign({}) -> Lamport one-time signature -- sign."

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ToxiGen-based toxicity classifier score for a generation."""
 import numpy as np
 from ._richresult import RichResult

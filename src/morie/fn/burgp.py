@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Burg AR spectral estimation.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -16,7 +16,7 @@ def burg_psd(
     nfft: int = 512,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """Burg autoregressive spectral estimation.
+    r"""Burg autoregressive spectral estimation.
 
     Estimates the AR coefficients using the Burg method (minimizes
     forward + backward prediction error simultaneously) and computes

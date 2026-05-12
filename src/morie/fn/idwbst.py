@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IDW boosted ensemble interpolation."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semi-supervised learning: small labeled set plus large unlabeled pool."""
 import numpy as np
 from ._richresult import RichResult

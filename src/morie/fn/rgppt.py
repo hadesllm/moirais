@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Point process model for inter-event interval (IEI) statistics."""
 import numpy as np
 from scipy import stats

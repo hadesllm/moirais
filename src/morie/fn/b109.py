@@ -1,4 +1,4 @@
-"""Binary cross-entropy (logistic) loss for a single example in binary classification.."""
+r"""Binary cross-entropy (logistic) loss for a single example in binary classification.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_binary_cross_entropy"]
 
 
 def burkov_lm_ch1_binary_cross_entropy(y_hat_i, y_i):
-    """
+    r"""
     Binary cross-entropy (logistic) loss for a single example in binary classification.
 
     Formula: \operatorname{loss}(\hat{y}_i, y_i) \stackrel{\text{def}}{=} -\bigl[y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i)\bigr]

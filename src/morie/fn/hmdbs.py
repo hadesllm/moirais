@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Density-based spatial clustering (DBSCAN)."""
 import numpy as np
 from ._richresult import RichResult

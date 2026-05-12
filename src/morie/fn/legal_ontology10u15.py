@@ -11,7 +11,7 @@ def legal_ontology_chapter_10_unnumbered_15(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: <rdf:Description rdf:about="Statistics is the grammar of science. — Karl Pearson">
+    Formula: <rdf:Description rdf:about="Statistics is the grammar of science. -- Karl Pearson">
 
     Parameters
     ----------

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Sample mean — canonical x̄ notation."""
+# morie.fn -- function file (hadesllm/morie)
+"""Sample mean -- canonical x̄ notation."""
 
 from typing import Sequence, Union
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Standardized factor loadings from CFA."""
 
 from __future__ import annotations

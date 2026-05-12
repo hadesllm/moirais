@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Higuchi fractal dimension — Rangayyan Ch 7."""
+# morie.fn -- function file (hadesllm/morie)
+"""Higuchi fractal dimension -- Rangayyan Ch 7."""
 from __future__ import annotations
 
 import numpy as np
@@ -67,4 +67,4 @@ def rangayyan_higuchi_fd(x, kmax=10):
 
 
 def cheatsheet():
-    return "rghfd: Higuchi fractal dimension — Rangayyan Ch 7"
+    return "rghfd: Higuchi fractal dimension -- Rangayyan Ch 7"

@@ -10,7 +10,7 @@ def ab_indirect_effect(a, b):
     """
     Product of coefficients indirect effect (a*b)
 
-    Formula: IE = a * b, where a is X→M and b is M→Y|X
+    Formula: IE = a * b, where a is X->M and b is M->Y|X
 
     Parameters
     ----------

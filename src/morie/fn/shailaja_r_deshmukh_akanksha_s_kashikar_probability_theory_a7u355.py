@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: [EQ] P [|IAn | > ϵ] = P [IAn = 1] = P (An) → 0 ⇒ IAn
+    Formula: [EQ] P [|IAn | > ϵ] = P [IAn = 1] = P (An) -> 0 ⇒ IAn
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""Dropout regularization (forward pass).
 
 Randomly zeros activations with probability p during training.

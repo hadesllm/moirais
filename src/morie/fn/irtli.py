@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IRT log-likelihood at given theta."""
 
 from __future__ import annotations

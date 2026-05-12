@@ -136,7 +136,7 @@ def _extract_metadata(reader) -> dict[str, str]:
     meta = reader.metadata or {}
     return {
         "title": getattr(meta, "title", "") or "",
-        "It does not matter how slowly you go as long as you do not stop. — Confucius": getattr(meta, "It does not matter how slowly you go as long as you do not stop. — Confucius", "") or "",
+        "It does not matter how slowly you go as long as you do not stop. -- Confucius": getattr(meta, "It does not matter how slowly you go as long as you do not stop. -- Confucius", "") or "",
         "subject": getattr(meta, "subject", "") or "",
         "creator": getattr(meta, "creator", "") or "",
         "producer": getattr(meta, "producer", "") or "",
@@ -299,22 +299,22 @@ def _decode_uni_escapes(text: str) -> str:
 # known equations (logistic odds, OLS β, McFadden R²) and matching against
 # the published source.
 _CID_NAME_MAP = {
-    "/C0":   "−",      # minus sign (very common — arithmetic + intervals)
+    "/C0":   "−",      # minus sign (very common -- arithmetic + intervals)
     "/C1":   "·",      # middle-dot multiplication
     "/C2":   "×",      # ×
-    "/C16":  "(",      # bracket-fraction open  → context says "( "
-    "/C17":  ")",      # bracket-fraction close → "}/("
+    "/C16":  "(",      # bracket-fraction open  -> context says "( "
+    "/C17":  ")",      # bracket-fraction close -> "}/("
     "/C18":  "{",
     "/C19":  "}",
     "/C20":  "<",
     "/C21":  "≥",      # >= seen in `y /C21 0`
     "/C22":  "≤",
     "/C23":  "≠",
-    "/C24":  "→",
+    "/C24":  "->",
     "/C25":  "↑",
     "/C26":  "↓",
     "/C32":  " ",
-    "/C138": "]",      # close bracket — paired with `½`
+    "/C138": "]",      # close bracket -- paired with `½`
     "/C139": "}",
     "/C140": ")",
 }
@@ -324,7 +324,7 @@ _CID_NAME_RE = re.compile(r"/[CGg]\d+")
 def _decode_cid_names(text: str) -> str:
     """Replace pypdf-leaked `/Cnnn` CID names with their actual glyph.
 
-    Unknown codes are stripped (replaced with empty string) — keeping them
+    Unknown codes are stripped (replaced with empty string) -- keeping them
     poisons grep-based equation detection. This is lossy, but advanced.txt
     has 1000+ leaked `/Cnnn` tokens; leaving them in is worse than dropping
     the rare unknown ones.
@@ -358,8 +358,8 @@ _MATH_GLYPH_RE = re.compile("|".join(re.escape(k) for k in _MATH_GLYPH_MAP))
 _DECIMAL_COLON_RE = re.compile(r"(\d):(\d)")
 
 
-_BAR_OVER_RE = re.compile(r"≤([xXyYpPzZμπρ])")          # `≤x` → `x̄`
-_HAT_OVER_RE = re.compile(r"\bb(Y|β|p|π)\b")              # `bY` → `Ŷ`
+_BAR_OVER_RE = re.compile(r"≤([xXyYpPzZμπρ])")          # `≤x` -> `x̄`
+_HAT_OVER_RE = re.compile(r"\bb(Y|β|p|π)\b")              # `bY` -> `Ŷ`
 COMBINING_MACRON = "̄"
 COMBINING_CIRCUMFLEX = "̂"
 
@@ -368,12 +368,12 @@ def _decode_math_glyphs(text: str) -> str:
     """Repair pypdf single-glyph mismaps in symbol-font math expressions.
 
     Passes:
-      1. Per-character mismap (`¼ → =`, `þ → +`, `ð → (`, `Þ → )`, ligatures).
-      2. `0:5` → `0.5` for digit-colon-digit (Springer typesets decimal
+      1. Per-character mismap (`¼ -> =`, `þ -> +`, `ð -> (`, `Þ -> )`, ligatures).
+      2. `0:5` -> `0.5` for digit-colon-digit (Springer typesets decimal
          points as colons in the symbol font).
-      3. Bar-over: `≤x` → `x̄` (combining macron). Restricted to a small
+      3. Bar-over: `≤x` -> `x̄` (combining macron). Restricted to a small
          set of math letters to avoid mangling real `≤` comparisons.
-      4. Hat-over: `bY` → `Ŷ` (combining circumflex). Restricted to math
+      4. Hat-over: `bY` -> `Ŷ` (combining circumflex). Restricted to math
          letters to avoid mangling real `b…` words.
     """
     out = _MATH_GLYPH_RE.sub(lambda m: _MATH_GLYPH_MAP[m.group(0)], text)
@@ -396,7 +396,7 @@ _LETTER_SPACED_RUN_RE = re.compile(
 
 
 def _collapse_letter_spacing(text: str) -> str:
-    r"""Collapse `C h a p t e r  o n e` → `Chapter one`.
+    r"""Collapse `C h a p t e r  o n e` -> `Chapter one`.
 
     Restores PDF-tracked headings to normal word form. Heuristic:
     - find runs of >=4 single-letter tokens separated by 1-4 spaces each

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """System of equations solver (Gauss-Seidel). 'I have been waiting for you.' -- The Architect"""
 
 from __future__ import annotations

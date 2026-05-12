@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""ReLU6 activation function.
 
 Clamps ReLU output to [0, 6].

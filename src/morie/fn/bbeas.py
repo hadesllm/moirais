@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Shape analysis (morphometrics). 'Dude, I can turn into a T-Rex.' -- Beast Boy"""
 
 from __future__ import annotations

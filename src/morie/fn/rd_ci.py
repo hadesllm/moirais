@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Risk difference (absolute risk difference) with Newcombe's CI."""
 
 import math

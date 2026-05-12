@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Slice sampler for DP mixture: auxiliary variable u for uniform sampling."""
 import numpy as np
 from ._richresult import RichResult

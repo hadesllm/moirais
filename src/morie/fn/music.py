@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MUSIC spectral estimation."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Statistics is the grammar of science. — Karl Pearson"
+_QUOTE = "Statistics is the grammar of science. -- Karl Pearson"
 
 
 def music_spectrum_fn(
@@ -17,7 +17,7 @@ def music_spectrum_fn(
     nfft: int = 512,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """MUSIC (Multiple Signal Classification) spectral estimation.
+    r"""MUSIC (Multiple Signal Classification) spectral estimation.
 
     Estimates the pseudospectrum by projecting steering vectors onto
     the noise subspace of the autocorrelation matrix.

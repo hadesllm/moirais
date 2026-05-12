@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Jensen-Shannon divergence."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def js_divergence(p: np.ndarray, q: np.ndarray) -> ESRes:
-    """
+    r"""
     Compute Jensen-Shannon divergence.
 
     .. math::

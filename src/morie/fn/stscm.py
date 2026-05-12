@@ -1,4 +1,4 @@
-"""Patience is bitter, but its fruit is sweet. — Aristotle"""
+"""Patience is bitter, but its fruit is sweet. -- Aristotle"""
 
 from __future__ import annotations
 

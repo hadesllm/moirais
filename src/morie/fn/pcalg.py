@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PC algorithm for constraint-based causal discovery.
 
 The PC algorithm recovers the Markov equivalence class of a DAG by
@@ -49,7 +49,7 @@ def pcalg(
     -------
     dict
         ``adj`` (adjacency matrix, undirected skeleton),
-        ``cpdag`` (partially directed adjacency matrix, 1 = i→j),
+        ``cpdag`` (partially directed adjacency matrix, 1 = i->j),
         ``sepsets`` (conditioning sets used),
         ``n_tests``, ``p``, ``n``, ``method``.
 
@@ -57,7 +57,7 @@ def pcalg(
     -----
     The adjacency matrix uses convention: ``adj[i, j] = 1`` means
     edge between i and j; ``cpdag[i, j] = 1, cpdag[j, i] = 0`` means
-    directed edge i → j.
+    directed edge i -> j.
 
     References
     ----------
@@ -75,7 +75,7 @@ def pcalg(
     C = np.corrcoef(X.T)
     np.fill_diagonal(C, 1.0)
 
-    # Phase 1: skeleton (undirected complete graph → remove edges)
+    # Phase 1: skeleton (undirected complete graph -> remove edges)
     adj = np.ones((p, p), dtype=int)
     np.fill_diagonal(adj, 0)
     sepsets: dict[tuple[int, int], list[int]] = {}
@@ -105,13 +105,13 @@ def pcalg(
             for k in range(p):
                 if k == i or k == j:
                     continue
-                # i - k - j (k not in sepset(i,j)) → i → k ← j
+                # i - k - j (k not in sepset(i,j)) -> i -> k ← j
                 if adj[i, k] and adj[j, k] and not adj[i, j]:
                     continue
                 if adj[i, k] and adj[j, k]:
                     sep = sepsets.get((i, j), [])
                     if k not in sep:
-                        # Orient i → k ← j
+                        # Orient i -> k ← j
                         cpdag[i, k] = 1
                         cpdag[k, i] = 0
                         cpdag[j, k] = 1

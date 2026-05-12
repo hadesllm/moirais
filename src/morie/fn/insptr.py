@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Inspection score trend over fiscal years."""
 
 from __future__ import annotations

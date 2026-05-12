@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Complete (single-year) life table construction."""
 
 from __future__ import annotations

@@ -18,7 +18,7 @@ def sir_demography(
     t_max: float = 300.0,
     n_steps: int = 1000,
 ) -> SIRResult:
-    """
+    r"""
     SIR model with birth and death (vital dynamics).
 
     .. math::

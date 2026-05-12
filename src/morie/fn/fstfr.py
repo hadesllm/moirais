@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Population structure correction (theta/Fst) for forensic genetics."""
 
 __all__ = ["fstfr"]

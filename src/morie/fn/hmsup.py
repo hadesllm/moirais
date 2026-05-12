@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Supervised learning paradigm: learn mapping f(x)->y from labeled examples."""
 import numpy as np
 from ._richresult import RichResult

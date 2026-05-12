@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IV estimation (2SLS) for OTIS correctional data."""
 
 from __future__ import annotations

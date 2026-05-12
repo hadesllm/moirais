@@ -11,7 +11,7 @@ def legal_ontology_chapter_10_unnumbered_6(x):
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: <mcontainer name="Confine yourself to the present. — Marcus Aurelius" id="Confine yourself to the present. — Marcus Aurelius"
+    Formula: <mcontainer name="Confine yourself to the present. -- Marcus Aurelius" id="Confine yourself to the present. -- Marcus Aurelius"
 
     Parameters
     ----------

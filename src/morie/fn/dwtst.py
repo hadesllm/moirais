@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Durbin-Watson test statistic for autocorrelation."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def durbin_watson(residuals: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Durbin-Watson statistic for first-order autocorrelation.
 
     .. math::

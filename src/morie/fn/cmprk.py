@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Competing risks — cumulative incidence via Aalen-Johansen."""
+# morie.fn -- function file (hadesllm/morie)
+"""Competing risks -- cumulative incidence via Aalen-Johansen."""
 
 import numpy as np
 
@@ -56,4 +56,4 @@ def competing_risks(time, event, cause_of_interest=1):
 
 
 def cheatsheet() -> str:
-    return "competing_risks({}) -> Competing risks — cumulative incidence via Aalen-Johansen."
+    return "competing_risks({}) -> Competing risks -- cumulative incidence via Aalen-Johansen."

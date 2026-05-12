@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wilcoxon rank-sum test statistic W = sum of ranks of X in combined sample."""
 import numpy as np
 from scipy import stats

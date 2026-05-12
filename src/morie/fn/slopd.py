@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "We suffer more often in imagination than in reality. — Seneca"
+_QUOTE = "We suffer more often in imagination than in reality. -- Seneca"
 
 
 def slope_detect(x, fs: float = 1.0, threshold: float | None = None, **kwargs) -> DescriptiveResult:

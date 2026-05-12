@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: [EQ] n/π + 2 + O( n− 1/ 2), as n → ∞ .
+    Formula: [EQ] n/π + 2 + O( n− 1/ 2), as n -> ∞ .
 
     Parameters
     ----------

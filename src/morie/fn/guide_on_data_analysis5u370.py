@@ -11,7 +11,7 @@ def guide_on_data_analysis_chapter_5_unnumbered_370(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] √𝑛(̂𝛽 − 𝛽) →𝑑 𝑁(0, Σ),
+    Formula: [EQ] √𝑛(̂𝛽 − 𝛽) ->𝑑 𝑁(0, Σ),
 
     Parameters
     ----------

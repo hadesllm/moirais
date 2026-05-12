@@ -55,7 +55,7 @@ def apply_smote(
     minority_count = int(y.value_counts().min())
     majority_count = int(y.value_counts().max())
 
-    # Determine k_neighbors — SMOTE needs at least k_neighbors minority samples
+    # Determine k_neighbors -- SMOTE needs at least k_neighbors minority samples
     if k_neighbors is None:
         k_neighbors = min(5, minority_count - 1) if minority_count > 1 else 1
 

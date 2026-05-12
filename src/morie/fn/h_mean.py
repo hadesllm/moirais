@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hajek estimator for population mean."""
 
 import math
@@ -11,7 +11,7 @@ def hajek_mean(
     y: np.ndarray,
     weights: np.ndarray,
 ) -> dict:
-    """
+    r"""
     Hajek estimator for population mean (ratio estimator).
 
     The Hajek estimator normalises the HT estimator by the estimated

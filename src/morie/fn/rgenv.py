@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Hilbert-transform envelope — Rangayyan Ch 5."""
+# morie.fn -- function file (hadesllm/morie)
+"""Hilbert-transform envelope -- Rangayyan Ch 5."""
 from __future__ import annotations
 
 import numpy as np
@@ -59,4 +59,4 @@ def rangayyan_envelope(x):
 
 
 def cheatsheet():
-    return "rgenv: Hilbert envelope — Rangayyan Ch 5"
+    return "rgenv: Hilbert envelope -- Rangayyan Ch 5"

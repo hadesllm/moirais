@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Vector dot product (scalar product) of two vectors a and b."""
 import numpy as np
 from ._richresult import RichResult

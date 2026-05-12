@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Undercomplete linear autoencoder (PCA equivalent when linear)."""
 import numpy as np
 from ._richresult import RichResult

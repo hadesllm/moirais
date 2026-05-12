@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Convert LPC coefficients to cepstral coefficients."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "These aren't the droids you're looking for."
 
 
 def lpc_to_cepstral_fn(lpc_coeffs: np.ndarray, n_ceps: int = 13) -> DescriptiveResult:
-    """Convert LPC coefficients to cepstral coefficients.
+    r"""Convert LPC coefficients to cepstral coefficients.
 
     The recursion from AR to cepstral domain:
 

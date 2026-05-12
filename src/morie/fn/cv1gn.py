@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CV1 genomic cross-validation: train on observed, predict unobserved lines."""
 import numpy as np
 from ._richresult import RichResult

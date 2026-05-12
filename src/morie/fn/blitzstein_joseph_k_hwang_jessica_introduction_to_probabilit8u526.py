@@ -8,7 +8,7 @@ __all__ = ["blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter
 
 
 def blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter_8_unnumbered_526(x, cdf=None):
-    """Real knowledge is to know the extent of one's ignorance. — Confucius"""
+    """Real knowledge is to know the extent of one's ignorance. -- Confucius"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

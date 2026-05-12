@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """One-sample coverage probability (Gibbons Ch 2.11.1).
 
 For an ordered sample X_(1) < ... < X_(n) the coverages

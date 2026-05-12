@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Causal (autoregressive) attention mask (Radford et al. 2019)."""
 from __future__ import annotations
 

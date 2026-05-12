@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Empirical-Bayes hyper-parameter selection for a DP prior."""
 import numpy as np
 from scipy.special import gammaln
@@ -32,7 +32,7 @@ def ghosal_empirical_bayes(x, alpha_grid=None):
 
     Parameters
     ----------
-    x : array-like — sample.  Distinct count ``K_n`` is computed from
+    x : array-like -- sample.  Distinct count ``K_n`` is computed from
         rounded values; if the data is continuous-valued ``K_n = n``.
     alpha_grid : array-like or None
         If provided, the marginal log-lik is evaluated on this grid.
@@ -57,7 +57,7 @@ def ghosal_empirical_bayes(x, alpha_grid=None):
         })
     K_n = int(np.unique(x).size)
     # Avoid degenerate K=n by treating continuous data as if "binned" at
-    # the bandwidth of the data — informative only if there are ties.
+    # the bandwidth of the data -- informative only if there are ties.
     if K_n == n:
         # Use a Sturges-style bin count so the EB estimate is meaningful.
         K_n = max(2, int(np.ceil(np.log2(n) + 1)))

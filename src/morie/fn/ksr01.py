@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Empirical process indexed by function class (Kosorok 2008, Ch 2).
 
 G_n(f) = sqrt(n) * (P_n - P)(f).  If P is unknown (the usual case),

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 1.4: asymptotic normality of modified gamma KDE."""
 import numpy as np
 from ._richresult import RichResult

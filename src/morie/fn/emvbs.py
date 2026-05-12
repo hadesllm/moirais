@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Evidence maximization / variational Bayes for linear model."""
 
 from __future__ import annotations

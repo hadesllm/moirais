@@ -1,4 +1,4 @@
-"""Association expression (auto-extracted; see ref).."""
+r"""Association expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_2914"]
 
 
 def hedderich_chapter_9_unnumbered_2914(x):
-    """
+    r"""
     Association expression (auto-extracted; see ref).
 
     Formula: + " Chi − squaredtotal : " , c h i . gesamt = round ( chi , 3 ) , " \ n " )

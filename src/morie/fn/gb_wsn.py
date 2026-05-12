@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Normal approximation for Wilcoxon signed-rank test."""
 import numpy as np
 from scipy import stats

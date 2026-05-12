@@ -20,7 +20,7 @@ def wavelet_coherence(
     fs: float = 1.0,
     scales: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """Wavelet coherence between two signals.
+    r"""Wavelet coherence between two signals.
 
     .. math::
 

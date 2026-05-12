@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Regression kink design (RKD) estimator.
 
 RKD identifies a causal effect by exploiting a known kink (slope

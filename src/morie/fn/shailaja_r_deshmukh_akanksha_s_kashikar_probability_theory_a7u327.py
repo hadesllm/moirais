@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: [EQ] P [|Xn| > ϵ] = P [IAn = 1] = 1/n → 0 ⇒ Xn
+    Formula: [EQ] P [|Xn| > ϵ] = P [IAn = 1] = 1/n -> 0 ⇒ Xn
 
     Parameters
     ----------

@@ -1,17 +1,17 @@
-"""morie.otis_causal — IPW, AIPW, and DML estimators for OTIS.
+"""morie.otis_causal -- IPW, AIPW, and DML estimators for OTIS.
 
 Companion to ``morie.otis.otdml`` (which already implements
 cross-fitted Frisch-Waugh-Lovell DML).  This module adds:
 
-  * :func:`otis_ipw`   — Hájek-stabilised inverse probability weighting
+  * :func:`otis_ipw`   -- Hájek-stabilised inverse probability weighting
     with a logistic propensity model.
-  * :func:`otis_aipw`  — Augmented IPW (Robins-Rotnitzky-Zhao 1994
+  * :func:`otis_aipw`  -- Augmented IPW (Robins-Rotnitzky-Zhao 1994
     doubly-robust estimator) with cross-fitted nuisance models.
-  * :func:`otis_causal_grid` — runs all three estimators (IPW, AIPW,
+  * :func:`otis_causal_grid` -- runs all three estimators (IPW, AIPW,
     DML) on the canonical three (treatment, outcome) pairs:
-        (a) MentalHealth_Alert → SuicideRisk_Alert
-        (b) HighAlertComplexity → AnyReadmission
-        (c) RegionalVolatility → ConsecutiveSegregationDays
+        (a) MentalHealth_Alert -> SuicideRisk_Alert
+        (b) HighAlertComplexity -> AnyReadmission
+        (c) RegionalVolatility -> ConsecutiveSegregationDays
 
 The three pairs cover the three Goffmanian framings of OTIS most
 relevant to the MA-paired thesis: clinical-alert chain (a),
@@ -64,7 +64,7 @@ effects: a comparative study.  Statistics in Medicine 23(19):
 2937-2960.
 
 Robins, J. M. (1986).  A new approach to causal inference in
-mortality studies with a sustained exposure period — application
+mortality studies with a sustained exposure period -- application
 to control of the healthy worker survivor effect.  Mathematical
 Modelling 7: 1393-1512.
 
@@ -72,12 +72,12 @@ Rosenbaum, P. R. and Rubin, D. B. (1983).  The central role of the
 propensity score in observational studies for causal effects.
 Biometrika 70(1): 41-55.
 
-Attribution — Ruhela formulations
+Attribution -- Ruhela formulations
 ---------------------------------
 The OTIS-RC formulations and the entire codebase implemented here
 are the work of Vansh Singh Ruhela (hadesllm).  No one
 co-formulated the analyses: the (T = ac ≥ 2, Y = vm count)
-alert-complexity → regional-volatility contrast, the 8-state
+alert-complexity -> regional-volatility contrast, the 8-state
 combo encoding, and the full method battery (IPW + AIPW +
 g-computation + PSM-NN + PSM-subclass + IRM-DML + match_first)
 are Ruhela's design.
@@ -85,45 +85,45 @@ are Ruhela's design.
 Three external contributors enabled the journey but did not
 co-author the formulations:
 
-  Doob       — Prof. Emeritus Anthony N. Doob, University of Toronto.
-                Pointed Ruhela to the existence of the OTIS data feed —
+  Doob       -- Prof. Emeritus Anthony N. Doob, University of Toronto.
+                Pointed Ruhela to the existence of the OTIS data feed --
                 the first piece of the puzzle.  Without that pointer,
                 this project does not begin.
-  Levinsky   — Prof. Zachary Levinsky, University of Toronto.  His
+  Levinsky   -- Prof. Zachary Levinsky, University of Toronto.  His
                 graduate course on the Theory of Punishment was the
                 broader context that motivated this work.  He later
                 reviewed the preliminary a01-only analysis from the
                 ``OTIS-RC/`` folder; he did not see the full method
                 battery shipped here.
-  Medina     — Prof. Zorro Medina, University of Toronto.  Reviewed
+  Medina     -- Prof. Zorro Medina, University of Toronto.  Reviewed
                 the formal write-up; her feedback validated the
                 statistical route and gave the pipeline confidence in
                 its current form.
 
 Naming conventions
 ------------------
-  RF  — Ruhela formulation: a (treatment, outcome, covariates) design
+  RF  -- Ruhela formulation: a (treatment, outcome, covariates) design
          choice for a specific OTIS dataset.
-  RDF — Ruhela Dual Formulation: an RF paired with a Naive-arm
+  RDF -- Ruhela Dual Formulation: an RF paired with a Naive-arm
          sensitivity contrast (e.g., on a01/b01 the Ruhela arm
-         T_high_ac → vm_count is paired with the Naive arm
-         any-flag → vm-binary).
-  DLRM — Doob-Levinsky-Ruhela-Medina, short alias for the
+         T_high_ac -> vm_count is paired with the Naive arm
+         any-flag -> vm-binary).
+  DLRM -- Doob-Levinsky-Ruhela-Medina, short alias for the
          attribution chain on the methodology side. Function names
          like ``analyze_a01_dlrm`` are equivalent aliases for
          ``analyze_a01_ruhela_formulations``.
 
-ACKNOWLEDGEMENTS — beyond the methodology attribution above
+ACKNOWLEDGEMENTS -- beyond the methodology attribution above
 -----------------------------------------------------------
 The DLRM attribution covers the contributors whose work directly
 shaped the OTIS-RC analyses. The wider intellectual journey that
 brought this codebase into being also owes credit to:
 
-  Prof. Beatrice Jauregui, University of Toronto — for the network
+  Prof. Beatrice Jauregui, University of Toronto -- for the network
     of mentorship that connected Ruhela to Prof. Medina, which made
     this line of work possible.
 
-  Prof. Ayobami Laniyonu, University of Toronto — for valuable
+  Prof. Ayobami Laniyonu, University of Toronto -- for valuable
     lessons over the broader period of this work that informed
     Ruhela's thinking on policing and corrections research.
 
@@ -381,7 +381,7 @@ def otis_gcomputation(df: pd.DataFrame, *,
     References
     ----------
     Robins, J. M. (1986). A new approach to causal inference in
-      mortality studies with a sustained exposure period — application
+      mortality studies with a sustained exposure period -- application
       to control of the healthy worker survivor effect. Mathematical
       Modelling 7: 1393-1512.
     """
@@ -439,7 +439,7 @@ def otis_psm_subclass(df: pd.DataFrame, *,
     population ATE. Standard error: weighted average of within-stratum
     SEs (Rosenbaum-Rubin convention).
 
-    n_strata=5 is the standard "rule of thumb" — Cochran (1968) showed
+    n_strata=5 is the standard "rule of thumb" -- Cochran (1968) showed
     5 strata remove ~90% of bias from a single confounder.
 
     References
@@ -671,7 +671,7 @@ def _calibrate_propensity(p_raw: np.ndarray, d: np.ndarray, *,
     ----------
     p_raw : raw propensities in (0, 1)
     d : binary treatment vector
-    method : 'platt' (logistic regression on logit p_raw → d) or
+    method : 'platt' (logistic regression on logit p_raw -> d) or
               'isotonic' (sklearn isotonic regression).
 
     Returns calibrated propensities. Falls back to raw if the
@@ -680,7 +680,7 @@ def _calibrate_propensity(p_raw: np.ndarray, d: np.ndarray, *,
     if method == "none":
         return p_raw
     if method == "platt":
-        # Platt: fit logistic on logit(p_raw) → d, then transform.
+        # Platt: fit logistic on logit(p_raw) -> d, then transform.
         eps = 1e-6
         p_clip = np.clip(p_raw, eps, 1 - eps)
         z = np.log(p_clip / (1 - p_clip)).reshape(-1, 1)
@@ -727,7 +727,7 @@ def otis_aipw_superlearner(df: pd.DataFrame, *,
                             ) -> CausalEstimate:
     """SuperLearner-stacked AIPW (cross-fitted convex stack of learners).
 
-    Stacks four learners — random forest, ridge, OLS/logistic, mean —
+    Stacks four learners -- random forest, ridge, OLS/logistic, mean --
     via cross-validated convex weights minimising MSE (regression) or
     log-loss (propensity). Mirrors the OTIS-RC AIPW SuperLearner
     pipeline (notez1a.qmd lines 2028-2048: SL.glmnet, SL.xgboost,
@@ -751,7 +751,7 @@ def otis_aipw_superlearner(df: pd.DataFrame, *,
                             covariates=covariates, n_folds=n_folds,
                             seed=seed, eps=eps,
                             propensity_calibration=propensity_calibration)
-        result.notes = ["sklearn unavailable — fell back to plain AIPW",
+        result.notes = ["sklearn unavailable -- fell back to plain AIPW",
                          *result.notes]
         return result
 
@@ -1363,20 +1363,20 @@ def otis_irm_dml(df: pd.DataFrame, *,
                 - (1 - d) * (y - mu0_hat) / (1 - e_hat))
     ate = float(psi_ate.mean())
 
-    # ATTE — efficient influence function for E[Y(1)-Y(0)|D=1]
+    # ATTE -- efficient influence function for E[Y(1)-Y(0)|D=1]
     p_d = max(p_treat, 1e-9)
     psi_atte = (d * (y - mu0_hat)
                   - e_hat * (1 - d) * (y - mu0_hat) / (1 - e_hat)) / p_d
     atte = float(psi_atte.mean())
 
-    # ATC — efficient influence function for E[Y(1)-Y(0)|D=0]
+    # ATC -- efficient influence function for E[Y(1)-Y(0)|D=0]
     p_d0 = max(1.0 - p_treat, 1e-9)
     psi_atc = ((1 - d) * (mu1_hat - mu0_hat)
                 + d * ((1 - e_hat) / e_hat) * (y - mu1_hat)
                 - (1 - d) * (y - mu0_hat)) / p_d0
     atc = float(psi_atc.mean())
 
-    # Variance — cluster-robust if requested
+    # Variance -- cluster-robust if requested
     if cluster_cols is None:
         se_ate = float(psi_ate.std(ddof=1) / math.sqrt(n))
         se_atte = float(psi_atte.std(ddof=1) / math.sqrt(n))
@@ -1482,7 +1482,7 @@ def otis_per_year_irm_dml(df: pd.DataFrame, *,
                 }
             except Exception as exc:  # noqa: BLE001
                 year_results[label] = {"error": str(exc)[:120]}
-        # IRM-DML (cluster-robust if requested) — separately because
+        # IRM-DML (cluster-robust if requested) -- separately because
         # it returns ATE+ATTE+ATC dict, not CausalEstimate
         try:
             irm = otis_irm_dml(sub, treatment=treatment, outcome=outcome,
@@ -1518,7 +1518,7 @@ def otis_per_year_irm_dml(df: pd.DataFrame, *,
     return out
 
 
-# ── Ruhela's primary T→Y pair: ac >= 2 → vm (Goffmanian classification) ──
+# ── Ruhela's primary T->Y pair: ac >= 2 -> vm (Goffmanian classification) ──
 
 
 def make_pair_alert_to_volatility_ruhela(df: pd.DataFrame
@@ -1527,7 +1527,7 @@ def make_pair_alert_to_volatility_ruhela(df: pd.DataFrame
     causes more inter-region transfers (vm).
 
     **This is "Ruhela's equation" for alert complexity and volatility**
-    — the 8-state combo encoding documented in
+    -- the 8-state combo encoding documented in
     ``/path/to/workspace/OTIS-RC/notez1a.qmd`` and used to
     produce the published ``res_pool`` / ``res_by_year`` / ``res_all``
     estimates in ``correctional_stats_report1z.RData``.  Sister
@@ -1543,17 +1543,17 @@ def make_pair_alert_to_volatility_ruhela(df: pd.DataFrame
 
         a1  =  MH  & ¬SR & ¬SW       (mental-health only)
         a2  = ¬MH  &  SR & ¬SW       (suicide-risk only)
-        a3  = ¬MH  & ¬SR &  SW       (suicide-watch only — empirically empty)
+        a3  = ¬MH  & ¬SR &  SW       (suicide-watch only -- empirically empty)
         a4  =  MH  &  SR & ¬SW       (MH+SR)
         a5  = ¬MH  &  SR &  SW       (SR+SW)
-        a6  =  MH  & ¬SR &  SW       (MH+SW — empirically empty)
+        a6  =  MH  & ¬SR &  SW       (MH+SW -- empirically empty)
         a7  =  MH  &  SR &  SW       (all three)
         a8  = ¬MH  & ¬SR & ¬SW       (no alerts)
 
     Per (UniqueIndividual_ID, EndFiscalYear), the *alert-state
     complexity* `ac` is the number of distinct combos with positive
     support across the year's placement-rows for that person.  This
-    differs from the naïve "max simultaneous flags" — a person who
+    differs from the naïve "max simultaneous flags" -- a person who
     had three a4 placements has ac = 1 (one distinct combo), not
     ac = 2 (two simultaneous flags).  Treatment T = 1 iff ac ≥ 2.
 
@@ -1583,7 +1583,7 @@ def make_pair_alert_to_volatility_ruhela(df: pd.DataFrame
     a_mh = _binarise(base["MentalHealth_Alert"])
     a_sr = _binarise(base["SuicideRisk_Alert"])
     a_sw = _binarise(base["SuicideWatch_Alert"])
-    # 8-state combo encoding — bitfield (MH * 4 + SR * 2 + SW * 1)
+    # 8-state combo encoding -- bitfield (MH * 4 + SR * 2 + SW * 1)
     base["combo"] = (a_mh * 4 + a_sr * 2 + a_sw * 1).astype(int)
     # Per-row indicator of within-row region change
     base["regA"] = base["Region_AtTimeOfPlacement"].astype(str)
@@ -1661,7 +1661,7 @@ def make_pair_alert_to_volatility_naive(df: pd.DataFrame
 
 
 def make_pair_alert_to_volatility_all(df: pd.DataFrame) -> dict:
-    """Run both Ruhela and naïve alert→volatility formulations.
+    """Run both Ruhela and naïve alert->volatility formulations.
 
     Returns a dict ``{"ruhela": (...), "naive": (...)}`` where each
     value is a 4-tuple ``(person_year_data, T, Y, covariates)``
@@ -1673,7 +1673,7 @@ def make_pair_alert_to_volatility_all(df: pd.DataFrame) -> dict:
     }
 
 
-# Backwards-compatible alias — points to Ruhela's formulation, the
+# Backwards-compatible alias -- points to Ruhela's formulation, the
 # faithful replication of OTIS-RC/notez1a.qmd.
 make_pair_alert_to_volatility = make_pair_alert_to_volatility_ruhela
 
@@ -1764,7 +1764,7 @@ def _ensure_a01(df: pd.DataFrame | None,
 
 
 def make_pair_a(df: pd.DataFrame) -> tuple[pd.DataFrame, str, str, list[str]]:
-    """Pair (a): MentalHealth_Alert → SuicideRisk_Alert (binary→binary).
+    """Pair (a): MentalHealth_Alert -> SuicideRisk_Alert (binary->binary).
 
     The clinical-alert chain: do mental-health flags causally elevate
     subsequent suicide-risk-alert occurrence, conditional on
@@ -1783,7 +1783,7 @@ def make_pair_a(df: pd.DataFrame) -> tuple[pd.DataFrame, str, str, list[str]]:
 
 
 def make_pair_b(df: pd.DataFrame) -> tuple[pd.DataFrame, str, str, list[str]]:
-    """Pair (b): HighAlertComplexity → AnyReadmission.
+    """Pair (b): HighAlertComplexity -> AnyReadmission.
 
     Treatment T_b = 1 iff at least 2 of {MentalHealth, SuicideRisk,
     SuicideWatch} alerts are simultaneously active in the year.
@@ -1810,7 +1810,7 @@ def make_pair_b(df: pd.DataFrame) -> tuple[pd.DataFrame, str, str, list[str]]:
 
 
 def make_pair_c(df: pd.DataFrame) -> tuple[pd.DataFrame, str, str, list[str]]:
-    """Pair (c): RegionalVolatility → SegregationDays.
+    """Pair (c): RegionalVolatility -> SegregationDays.
 
     Treatment T_c = 1 iff Region_AtTimeOfPlacement ≠
     Region_MostRecentPlacement (the inter-region transfer flag).
@@ -1854,18 +1854,18 @@ def otis_causal_grid(df: pd.DataFrame | None = None,
                        seed: int = 123) -> RichResult:
     """Run IPW / AIPW / DML on all three canonical (T, Y) pairs.
 
-    Returns a :class:`RichResult` with a 9-row payload table — three
-    estimators × three pairs — plus per-row standard errors,
+    Returns a :class:`RichResult` with a 9-row payload table -- three
+    estimators × three pairs -- plus per-row standard errors,
     p-values, and 95% confidence intervals.
     """
     df = _ensure_b01(df)
 
     pairs = {
-        "(a) MentalHealth → SuicideRisk":
+        "(a) MentalHealth -> SuicideRisk":
             make_pair_a(df),
-        "(b) HighAlertComplexity → AnyReadmission":
+        "(b) HighAlertComplexity -> AnyReadmission":
             make_pair_b(df),
-        "(c) RegionalVolatility → SegregationDays":
+        "(c) RegionalVolatility -> SegregationDays":
             make_pair_c(df),
     }
 
@@ -1917,7 +1917,7 @@ def otis_causal_grid(df: pd.DataFrame | None = None,
         "exchangeability."
     )
     return RichResult(
-        title="OTIS causal grid — IPW / AIPW / DML × 3 (T,Y) pairs",
+        title="OTIS causal grid -- IPW / AIPW / DML × 3 (T,Y) pairs",
         summary_lines=summary_lines,
         interpretation=interp,
         payload={"rows": rows},

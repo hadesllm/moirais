@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Direct Preference Optimization loss (preferred vs rejected completions)."""
 import numpy as np
 from ._richresult import RichResult

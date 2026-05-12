@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bagplot for bivariate outliers. 'The night is darkest before the dawn.' -- Batgirl"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """c_1(x) coefficient in boundary-free KDFE bias."""
 import numpy as np
 from ._richresult import RichResult

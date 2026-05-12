@@ -8,7 +8,7 @@ __all__ = ["wilcox_chapter_13_unnumbered_1096"]
 
 
 def wilcox_chapter_13_unnumbered_1096(x):
-    """The only true wisdom is in knowing you know nothing. — Socrates"""
+    """The only true wisdom is in knowing you know nothing. -- Socrates"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wald-Wolfowitz two-sample runs test using combined pooled sequence."""
 import numpy as np
 from scipy import stats

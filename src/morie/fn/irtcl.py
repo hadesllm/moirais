@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IRT calibration pipeline (JMLE for 1PL/2PL)."""
 
 from __future__ import annotations

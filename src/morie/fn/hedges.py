@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hedges' g effect size."""
 
 from morie.fn.g import hedges_g

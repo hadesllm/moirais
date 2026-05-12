@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maximal Overlap DWT (MODWT / non-decimated DWT)."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Luck is what happens when preparation meets opportunity. — Seneca"
+_QUOTE = "Luck is what happens when preparation meets opportunity. -- Seneca"
 
 
 def _db_filter(order=4):

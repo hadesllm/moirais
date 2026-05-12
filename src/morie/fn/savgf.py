@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Savitzky-Golay filter. 'He who fights with monsters should be careful lest he thereby become a monster. — Friedrich Nietzsche'"""
+# morie.fn -- function file (hadesllm/morie)
+"""Savitzky-Golay filter. 'He who fights with monsters should be careful lest he thereby become a monster. -- Friedrich Nietzsche'"""
 
 from __future__ import annotations
 
@@ -62,4 +62,4 @@ savgf = savgol_smooth
 
 
 def cheatsheet() -> str:
-    return "savgol_smooth({}) -> Savitzky-Golay filter. 'He who fights with monsters should be careful lest he thereby become a monster. — Friedrich Nietzsche' -- Y"
+    return "savgol_smooth({}) -> Savitzky-Golay filter. 'He who fights with monsters should be careful lest he thereby become a monster. -- Friedrich Nietzsche' -- Y"

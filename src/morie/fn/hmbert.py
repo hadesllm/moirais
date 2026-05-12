@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BERT: bidirectional encoder pretrained on MLM + NSP."""
 import numpy as np
 from ._richresult import RichResult

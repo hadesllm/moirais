@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Freeze-thaw cycle degradation model. 'Tonight, hell freezes over.' -- Mr. Freeze"""
 
 from __future__ import annotations

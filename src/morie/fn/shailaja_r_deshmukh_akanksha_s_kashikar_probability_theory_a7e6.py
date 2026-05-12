@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_equat
     """
     GeneralStatistics equation extracted from Shailaja R. Deshmukh, Akanksha S. Kashikar - Probability Theory  An Introduction Using R.
 
-    Formula: [EQ] Theorem 7.3.3, P [Yn ≤ 0] → 1. By Equation (7.6), 1/(C + ϵ) < 1/Yn <
+    Formula: [EQ] Theorem 7.3.3, P [Yn ≤ 0] -> 1. By Equation (7.6), 1/(C + ϵ) < 1/Yn <
 
     Parameters
     ----------

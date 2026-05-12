@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Store a DataFrame in the SQLite cache."""
 
 from morie.data import cache_store as _fn

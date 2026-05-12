@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Spatial GLMM GMRF Gaussian Markov RF prior."""
 
 import numpy as np

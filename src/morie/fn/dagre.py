@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Diagnostic agreement (Cohen's kappa). 'Judge me by my size, do you?'"""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def diagnostic_agreement(
     rater1: np.ndarray,
     rater2: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute Cohen's kappa and percent agreement between two raters.
 
     .. math::

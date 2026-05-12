@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Convergence rate estimation."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Big results require big ambitions. — Heraclitus"
+_QUOTE = "Big results require big ambitions. -- Heraclitus"
 
 
 def convergence_rate(errors, **kwargs) -> DescriptiveResult:

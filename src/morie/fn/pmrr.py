@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear PM₂.₅ / PM₁₀ relative-risk model (ACS / Harvard Six Cities)."""
 
 from __future__ import annotations
@@ -32,7 +32,7 @@ def pm_relative_risk(
     pollutant: str = "pm25",
     outcome: str = "all_cause",
 ) -> DescriptiveResult:
-    """Linear log-linear PM exposure relative-risk estimator.
+    r"""Linear log-linear PM exposure relative-risk estimator.
 
     Computes RR = exp( β × (C − C_ref) / 10 ) where β = ln(RR_10),
     using published per-10-µg/m³ estimates from the ACS cohort (Pope
@@ -93,7 +93,7 @@ def pm_relative_risk(
     Notes
     -----
     Quote: "Without data, you're just another person with an opinion."
-    — W. Edwards Deming.
+    -- W. Edwards Deming.
     """
     key = (pollutant.lower().strip(), outcome.lower().strip())
     if key not in _RR_PER_10_UGM3:

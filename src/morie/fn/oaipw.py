@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AIPW doubly-robust estimator for OTIS correctional data."""
 
 from __future__ import annotations

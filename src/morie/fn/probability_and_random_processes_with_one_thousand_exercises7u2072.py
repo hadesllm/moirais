@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: A = { ω ∈ )Omega1 : Xn(ω) → X(ω) as n → ∞} satisfies A = )Omega1 . Such a condition is of little
+    Formula: A = { ω ∈ )Omega1 : Xn(ω) -> X(ω) as n -> ∞} satisfies A = )Omega1 . Such a condition is of little
 
     Parameters
     ----------

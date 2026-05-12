@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pre-trial custody credit days calculation (R v Summers, 1.5x)."""
 
 from __future__ import annotations

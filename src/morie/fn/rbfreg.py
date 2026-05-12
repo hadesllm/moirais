@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Regularized RBF with smoothing parameter."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lempel-Ziv complexity."""
 
 __all__ = ["lmpzv"]

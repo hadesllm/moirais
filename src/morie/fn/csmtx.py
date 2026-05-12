@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random sensing matrix generation for compressed sensing."""
 
 import numpy as np
@@ -15,7 +15,7 @@ def sensing_matrix(
     seed: int = 42,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Generate a random sensing matrix for compressed sensing.
 
     Supported types:

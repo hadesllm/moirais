@@ -1,4 +1,4 @@
-"""Numbered display equation (6.1) from MVSML chapter 6.."""
+r"""Numbered display equation (6.1) from MVSML chapter 6.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_eq_6_1"]
 
 
 def mvsml_bayesian_regression_eq_6_1(distribution, of, given, by, j, y):
-    """
+    r"""
     Numbered display equation (6.1) from MVSML chapter 6.
 
     Formula:   2 -  2 1 distribution of \beta is given by \beta j \sigma2, y, X  N e\beta, \sigma2 XTX : 6.2 Bayesian Genome-Based Ridge Regression When p > n, X is not of full column rank and the posterior of model
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_eq_6_1(distribution, of, given, by, j, y):
     References
     ----------
     MVSML, Eq. (6.1) [Multivariate Statistical Machine Learnin [Pages 171-208] [2026-04-16].pdf]
-    """
+    r"""
     y = np.atleast_1d(np.asarray(y, dtype=float))
     n = len(y)
     result = float(np.mean(y))

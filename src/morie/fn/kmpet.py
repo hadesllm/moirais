@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PET (Pattern-Exploiting Training) loss combining LM and classifier objectives."""
 import numpy as np
 from ._richresult import RichResult

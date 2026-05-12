@@ -1,4 +1,4 @@
-"""Honest score.."""
+r"""Honest score.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_honest_score"]
 
 
 def kamath_ch6_honest_score(Yhat, k):
-    """
+    r"""
     Honest score.
 
     Formula: \mathrm{HONEST}(\hat{Y}) = \frac{\sum_{\hat{Y}_k\in\hat{Y}_k}\sum_{\hat{y}\in\hat{Y}_k} I_{HurtLex}(\hat{y})}{|\hat{Y}|\cdot k}
@@ -27,7 +27,7 @@ def kamath_ch6_honest_score(Yhat, k):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.17, p. 237
-    """
+    r"""
     Yhat = np.atleast_1d(np.asarray(Yhat, dtype=float))
     n = len(Yhat)
     result = float(np.mean(Yhat))

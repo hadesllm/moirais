@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Layer normalization: normalize across features within a single sample."""
 import numpy as np
 from ._richresult import RichResult

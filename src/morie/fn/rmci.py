@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Reliable Change Index (Jacobson & Truax)."""
 
 from __future__ import annotations

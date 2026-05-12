@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Recurrence quantification analysis. 'Dormammu, I have come to bargain.' -- Doctor Strange"""
 
 from __future__ import annotations

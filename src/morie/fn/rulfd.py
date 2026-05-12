@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ruler fractal dimension."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def ruler_fd(x: np.ndarray, n_rulers: int = 10) -> DescriptiveResult:
-    """The whole is greater than the sum of its parts. — Aristotle"""
+    """The whole is greater than the sum of its parts. -- Aristotle"""
     from morie._waveform import ruler_fd as _backend
 
     fd = _backend(x, n_rulers=n_rulers)

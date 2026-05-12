@@ -3,7 +3,7 @@
 Implements methods from Armstrong (2021) "Analyzing Spatial Models of Choice
 and Judgment" (2nd ed., Chapman & Hall/CRC).
 
-All functions are pure NumPy/SciPy — no external R packages required.
+All functions are pure NumPy/SciPy -- no external R packages required.
 """
 
 from __future__ import annotations
@@ -134,7 +134,7 @@ def optimal_classification(
     max_iter: int = 500,
     n_restarts: int = 10,
 ) -> dict:
-    """Optimal Classification — nonparametric scaling (Eqs 2.9-2.14).
+    """Optimal Classification -- nonparametric scaling (Eqs 2.9-2.14).
 
     Finds legislator ideal points and cutting planes that minimize
     classification errors on roll call votes.
@@ -465,7 +465,7 @@ def nonmetric_mds(
 
 
 def mds_fit_stats(eigenvalues: NDArray) -> dict:
-    """MDS fit statistics — Mardia criterion (Eqs 3.9-3.10).
+    """MDS fit statistics -- Mardia criterion (Eqs 3.9-3.10).
 
     :param eigenvalues: Array of eigenvalues from MDS decomposition.
     :return: dict with fit_1d, fit_2d, fit_nd for various dimensionalities.
@@ -1034,7 +1034,7 @@ def bayesian_unfolding(
     n_samples: int = 1000,
     burn_in: int = 200,
 ) -> dict:
-    """Bayesian multidimensional unfolding — Bakker & Poole (Eqs 6.10-6.16).
+    """Bayesian multidimensional unfolding -- Bakker & Poole (Eqs 6.10-6.16).
 
     :param D: (n_resp x n_stim) rating/distance matrix.
     :param n_dims: Latent dimensions.

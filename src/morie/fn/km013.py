@@ -1,4 +1,4 @@
-"""Positional encoding sin.."""
+r"""Positional encoding sin.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_positional_encoding_sin"]
 
 
 def kamath_ch2_positional_encoding_sin(i, j, d):
-    """
+    r"""
     Positional encoding sin.
 
     Formula: P_{i,2j} = \sin(i/10000^{2j/d})
@@ -29,7 +29,7 @@ def kamath_ch2_positional_encoding_sin(i, j, d):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.13, p. 35
-    """
+    r"""
     i = np.atleast_1d(np.asarray(i, dtype=float))
     n = len(i)
     result = float(np.mean(i))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Local growth rate estimation across spatial units over time."""
 
 from __future__ import annotations

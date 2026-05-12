@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exchangeable partition probability function (EPPF): p(n1,...,nk) for partition of n."""
 import numpy as np
 from ._richresult import RichResult

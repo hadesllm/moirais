@@ -11,7 +11,7 @@ def bookadvanced_elementsofstatisticallearning_chapter_6_unnumbered_975(x):
     """
     Regression expression (auto-extracted; see ref).
 
-    Formula: p− q nonzero elements in γ12—i.e.,p− q edges constrained to be zero. These
+    Formula: p− q nonzero elements in γ12--i.e.,p− q edges constrained to be zero. These
 
     Parameters
     ----------

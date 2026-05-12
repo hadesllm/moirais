@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lorentz transformation (special relativity)."""
 
 __all__ = ["lortz"]
@@ -11,7 +11,7 @@ def lortz(
     v: float,
     c: float = 299792458.0,
 ) -> dict:
-    """
+    r"""
     Apply a Lorentz boost along the x-axis.
 
     Transforms a 4-vector :math:`(ct, x, y, z)` from frame S to S'

@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_8_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: n = n3+δ, δ > 0, thenbn > 0, b n → ∞ and V ar(Sn/bn) →
+    Formula: n = n3+δ, δ > 0, thenbn > 0, b n -> ∞ and V ar(Sn/bn) ->
 
     Parameters
     ----------

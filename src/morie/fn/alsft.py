@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """SetFit two-step: (1) contrastive fine-tune encoder on few-shot pairs, (2) classifier head."""
 import numpy as np
 from ._richresult import RichResult

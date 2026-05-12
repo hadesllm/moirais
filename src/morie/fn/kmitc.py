@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Image-Text Contrastive loss (InfoNCE over a batch)."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Token/word embedding similarity via cosine distance."""
 
 import numpy as np

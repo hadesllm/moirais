@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Humidex (Environment Canada apparent-temperature index)."""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def humidex(
     T_air_C: float | np.ndarray,
     T_dew_C: float | np.ndarray,
 ) -> DescriptiveResult:
-    """Compute Humidex from air temperature and dewpoint, in °C.
+    r"""Compute Humidex from air temperature and dewpoint, in °C.
 
     Environment Canada's apparent-temperature index, widely used across
     Canadian weather forecasts, occupational heat guidelines, and
@@ -61,7 +61,7 @@ def humidex(
 
     Notes
     -----
-    Quote: "The days are getting shorter." — Grogu
+    Quote: "The days are getting shorter." -- Grogu
     """
     T = np.atleast_1d(np.asarray(T_air_C, dtype=float))
     Td = np.atleast_1d(np.asarray(T_dew_C, dtype=float))

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Pitman-Yor process: two-parameter generalization of DP. 'You have power over your mind — not outside events. Realize this, and you will find strength. — Marcus Aurelius'"""
+# morie.fn -- function file (hadesllm/morie)
+"""Pitman-Yor process: two-parameter generalization of DP. 'You have power over your mind -- not outside events. Realize this, and you will find strength. -- Marcus Aurelius'"""
 
 from __future__ import annotations
 

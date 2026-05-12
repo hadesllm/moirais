@@ -1,4 +1,4 @@
-"""Lstm chain rule.."""
+r"""Lstm chain rule.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_lstm_chain_rule"]
 
 
 def kamath_ch6_lstm_chain_rule(w_1_w_M):
-    """
+    r"""
     Lstm chain rule.
 
     Formula: P(w_1,w_2,\dots,w_M) = \prod_{t=1}^M P(w_t|w_1,w_2,\dots,w_{t-1})
@@ -25,7 +25,7 @@ def kamath_ch6_lstm_chain_rule(w_1_w_M):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.26, p. 252
-    """
+    r"""
     w_1_w_M = np.atleast_1d(np.asarray(w_1_w_M, dtype=float))
     n = len(w_1_w_M)
     result = float(np.mean(w_1_w_M))

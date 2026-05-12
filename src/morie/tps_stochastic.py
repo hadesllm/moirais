@@ -1,4 +1,4 @@
-"""morie.tps_stochastic — stochastic-physics-of-crime analyses on TPS.
+"""morie.tps_stochastic -- stochastic-physics-of-crime analyses on TPS.
 
 Modelled on Frenkel-style crime-physics (Hawkes self-exciting +
 Fokker-Planck density evolution + Langevin SDE), with practical
@@ -6,13 +6,13 @@ forecasting baselines (SARIMA, XGBoost-when-available) for hold-out
 comparison.
 
 Functions
-- hawkes_temporal_fit(df)       — fit μ, κ, ω of self-exciting kernel,
+- hawkes_temporal_fit(df)       -- fit μ, κ, ω of self-exciting kernel,
                                    compute branching ratio + AIC/BIC
-- sarima_forecast(df, h=12)     — seasonal ARIMA, train/test MAPE
-- prophet_forecast(df, h=12)    — Prophet trend+seasonality if installed
-- langevin_simulate(...)        — Euler-Maruyama Ornstein-Uhlenbeck path
-- fokker_planck_grid(df)        — finite-difference density evolution
-- model_compare(df)             — AIC across baselines + SDE
+- sarima_forecast(df, h=12)     -- seasonal ARIMA, train/test MAPE
+- prophet_forecast(df, h=12)    -- Prophet trend+seasonality if installed
+- langevin_simulate(...)        -- Euler-Maruyama Ornstein-Uhlenbeck path
+- fokker_planck_grid(df)        -- finite-difference density evolution
+- model_compare(df)             -- AIC across baselines + SDE
 
 All emit RichResult; `figure_path` payload entry written when
 matplotlib is available (saved as PNG under
@@ -64,10 +64,10 @@ def _date_series(df: pd.DataFrame,
                   *, min_year: int = 2014) -> pd.Series:
     """Return cleaned OCC_DATE/REPORT_DATE timestamps.
 
-    `min_year=2014` drops pre-2014 retro-records — TPS started its
+    `min_year=2014` drops pre-2014 retro-records -- TPS started its
     public-safety open-data programme in 2014 and earlier rows are
     sparse retro-reports that produce a visible regime change in the
-    monthly count and force μ → 0 in any Hawkes fit. Override
+    monthly count and force μ -> 0 in any Hawkes fit. Override
     ``min_year=None`` to include the long historical tail deliberately.
     """
     for c in ("OCC_DATE", "REPORT_DATE"):
@@ -117,7 +117,7 @@ def hawkes_temporal_fit(df: pd.DataFrame, *,
     """
     dt = _date_series(df)
     if dt.size < 100:
-        return RichResult(title=f"Hawkes — {ds_name}",
+        return RichResult(title=f"Hawkes -- {ds_name}",
                           warnings=[f"only {dt.size} timestamps"])
     if dt.size > max_n:
         dt = dt.sample(n=max_n, random_state=42).sort_values()
@@ -152,7 +152,7 @@ def hawkes_temporal_fit(df: pd.DataFrame, *,
                     label="monthly count")
         ax[0].axhline(mu * 30, color="#e66100", ls="--",
                        label=f"μ·30days = {mu*30:.1f}")
-        ax[0].set_title(f"{ds_name} — Hawkes fit")
+        ax[0].set_title(f"{ds_name} -- Hawkes fit")
         ax[0].set_ylabel("incidents / month")
         ax[0].legend()
         # Bottom: residual interarrival KS
@@ -167,7 +167,7 @@ def hawkes_temporal_fit(df: pd.DataFrame, *,
         residuals = np.array(residuals)
         ks = sps.kstest(residuals[:1000], "expon")
         ax[1].hist(np.diff(residuals), bins=50, color="#3584e4", alpha=0.7)
-        ax[1].set_title(f"residual interarrivals — KS p = {ks.pvalue:.3f}")
+        ax[1].set_title(f"residual interarrivals -- KS p = {ks.pvalue:.3f}")
         ax[1].set_xlabel("residual Δt")
         plt.tight_layout()
         fig_path = _try_savefig(f"hawkes_{ds_name}.png", fig)
@@ -175,7 +175,7 @@ def hawkes_temporal_fit(df: pd.DataFrame, *,
         pass
 
     return RichResult(
-        title=f"Hawkes self-exciting fit — {ds_name}",
+        title=f"Hawkes self-exciting fit -- {ds_name}",
         summary_lines=[
             ("Events fitted", n),
             ("Time window (days)", round(T, 1)),
@@ -196,7 +196,7 @@ def hawkes_temporal_fit(df: pd.DataFrame, *,
                "explode). Mohler-style self-excitation is operating: "
                "events cluster in time around prior events."
                if kappa < 1 else
-               "κ ≥ 1 ⇒ EXPLOSIVE — fit may be unstable; treat with care.")
+               "κ ≥ 1 ⇒ EXPLOSIVE -- fit may be unstable; treat with care.")
         ),
         payload={"mu": float(mu), "kappa": float(kappa),
                  "omega": float(omega), "branching": float(kappa),
@@ -219,16 +219,16 @@ def sarima_forecast(df: pd.DataFrame, *,
     try:
         import statsmodels.api as sm
     except ImportError:
-        return RichResult(title=f"SARIMA — {ds_name}",
+        return RichResult(title=f"SARIMA -- {ds_name}",
                           warnings=["statsmodels not installed"])
     dt = _date_series(df)
     if dt.size < 36:
-        return RichResult(title=f"SARIMA — {ds_name}",
+        return RichResult(title=f"SARIMA -- {ds_name}",
                           warnings=[f"need ≥36 months, got {dt.size}"])
     monthly = dt.dt.to_period("M").value_counts().sort_index()
     monthly.index = monthly.index.to_timestamp()
     if monthly.size < 36:
-        return RichResult(title=f"SARIMA — {ds_name}",
+        return RichResult(title=f"SARIMA -- {ds_name}",
                           warnings=[f"only {monthly.size} months"])
     # train/test split: hold out last `h`
     train, test = monthly.iloc[:-h], monthly.iloc[-h:]
@@ -241,7 +241,7 @@ def sarima_forecast(df: pd.DataFrame, *,
         fit = model.fit(disp=False)
         fc = fit.forecast(steps=h)
     except Exception as e:
-        return RichResult(title=f"SARIMA — {ds_name}",
+        return RichResult(title=f"SARIMA -- {ds_name}",
                           warnings=[f"fit failed: {e!r}"])
     # Metrics
     err = test.values.astype(float) - fc
@@ -258,7 +258,7 @@ def sarima_forecast(df: pd.DataFrame, *,
         ax.plot(test.index, fc, color="#e66100", lw=2,
                   label=f"SARIMA forecast (h={h})")
         ax.axvline(train.index[-1], color="#5e5c64", ls="--", alpha=0.5)
-        ax.set_title(f"{ds_name} — SARIMA"
+        ax.set_title(f"{ds_name} -- SARIMA"
                        f"{order}×{seasonal}, MAPE={mape:.1f}%")
         ax.set_ylabel("monthly incidents")
         ax.legend()
@@ -268,7 +268,7 @@ def sarima_forecast(df: pd.DataFrame, *,
         pass
 
     return RichResult(
-        title=f"SARIMA{order}×{seasonal} forecast — {ds_name}",
+        title=f"SARIMA{order}×{seasonal} forecast -- {ds_name}",
         summary_lines=[
             ("Training months", train.size),
             ("Hold-out months (h)", h),
@@ -314,7 +314,7 @@ def langevin_simulate(df: pd.DataFrame, *,
     """
     dt_ser = _date_series(df)
     if dt_ser.size < 60:
-        return RichResult(title=f"Langevin OU — {ds_name}",
+        return RichResult(title=f"Langevin OU -- {ds_name}",
                           warnings=[f"only {dt_ser.size} timestamps"])
     daily = dt_ser.dt.to_period("D").value_counts().sort_index()
     daily.index = daily.index.to_timestamp()
@@ -325,7 +325,7 @@ def langevin_simulate(df: pd.DataFrame, *,
     X = np.column_stack([np.ones_like(x_lag), x_lag])
     beta, *_ = np.linalg.lstsq(X, dx, rcond=None)
     a, b = beta
-    # In OU dx = θμ dt − θ x dt + σ dW; matching → θ = -b, μ = -a/b
+    # In OU dx = θμ dt − θ x dt + σ dW; matching -> θ = -b, μ = -a/b
     theta = max(1e-6, -float(b))
     mu = -float(a) / b if b != 0 else float(x.mean())
     resid = dx - (a + b * x_lag)
@@ -365,7 +365,7 @@ def langevin_simulate(df: pd.DataFrame, *,
         ax.fill_between(future, lo, hi, color="#e66100", alpha=0.2,
                           label="5–95% envelope")
         ax.axvline(daily.index[-1], color="#5e5c64", ls="--", alpha=0.5)
-        ax.set_title(f"{ds_name} — Langevin OU simulation "
+        ax.set_title(f"{ds_name} -- Langevin OU simulation "
                        f"(θ={theta:.3f}, μ={mu:.1f}, σ={sigma:.1f})")
         ax.set_ylabel("daily incidents")
         ax.legend()
@@ -375,7 +375,7 @@ def langevin_simulate(df: pd.DataFrame, *,
         pass
 
     return RichResult(
-        title=f"Langevin OU SDE simulation — {ds_name}",
+        title=f"Langevin OU SDE simulation -- {ds_name}",
         summary_lines=[
             ("Historical days observed", x.size),
             ("Fitted θ (mean reversion)", round(theta, 4)),
@@ -421,7 +421,7 @@ def fokker_planck_grid(df: pd.DataFrame, *,
     """
     dt_ser = _date_series(df)
     if dt_ser.size < 60:
-        return RichResult(title=f"Fokker-Planck — {ds_name}",
+        return RichResult(title=f"Fokker-Planck -- {ds_name}",
                           warnings=[f"only {dt_ser.size} timestamps"])
     daily = dt_ser.dt.to_period("D").value_counts().sort_index()
     x = daily.values.astype(float)
@@ -471,7 +471,7 @@ def fokker_planck_grid(df: pd.DataFrame, *,
                      label=f"μ = {mu:.1f}")
         ax.set_xlabel("daily incidents")
         ax.set_ylabel("density")
-        ax.set_title(f"{ds_name} — Fokker-Planck density (1-D OU)")
+        ax.set_title(f"{ds_name} -- Fokker-Planck density (1-D OU)")
         ax.legend()
         plt.tight_layout()
         fig_path = _try_savefig(f"fokker_planck_{ds_name}.png", fig)
@@ -479,7 +479,7 @@ def fokker_planck_grid(df: pd.DataFrame, *,
         pass
 
     return RichResult(
-        title=f"Fokker-Planck density evolution — {ds_name}",
+        title=f"Fokker-Planck density evolution -- {ds_name}",
         summary_lines=[
             ("Grid points", n_grid),
             ("Time steps", n_steps),

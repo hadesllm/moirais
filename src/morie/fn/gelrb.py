@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gelman-Rubin R-hat statistic."""
 
 from __future__ import annotations

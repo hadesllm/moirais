@@ -1,4 +1,4 @@
-"""Errors using inadequate data are much less than those using no data at all. — Charles Babbage"""
+"""Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -32,8 +32,8 @@ def hits(A, iters):
     n = len(A)
     result = float(np.mean(A))
     se = float(np.std(A, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Errors using inadequate data are much less than those using no data at all. — Charles Babbage"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"})
 
 
 def cheatsheet():
-    return "Errors using inadequate data are much less than those using no data at all. — Charles Babbage"
+    return "Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"

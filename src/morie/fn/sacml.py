@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SAC (combined lag+error) ML estimation."""
 
 import numpy as np

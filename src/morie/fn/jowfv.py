@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Walk-forward validation: refit model after each new observation."""
 import numpy as np
 from ._richresult import RichResult

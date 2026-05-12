@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Missing data weight matrix. '200% Power.' -- Deku, My Hero Academia"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Generate synthetic AR process."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Confine yourself to the present. — Marcus Aurelius"
+_QUOTE = "Confine yourself to the present. -- Marcus Aurelius"
 
 
 def ar_generate_fn(
@@ -16,7 +16,7 @@ def ar_generate_fn(
     N: int = 1000,
     seed: int | None = None,
 ) -> DescriptiveResult:
-    """Generate a realisation of an AR(p) process.
+    r"""Generate a realisation of an AR(p) process.
 
     .. math::
 

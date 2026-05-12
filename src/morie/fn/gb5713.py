@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simulated power of Wilcoxon signed-rank test via Monte Carlo."""
 import numpy as np
 from scipy import stats

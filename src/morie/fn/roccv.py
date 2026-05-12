@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ROC curve (FPR, TPR at thresholds)."""
 
 from __future__ import annotations

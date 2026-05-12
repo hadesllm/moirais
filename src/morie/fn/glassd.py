@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Glass's Δ effect size."""
 
 from typing import Sequence, Union
@@ -6,7 +6,7 @@ import numpy as np
 def glassd(treated, control) -> float:
     """Glass's Δ: (mean_t − mean_c) / sd_c.
 
-    Standardizes by control SD only — appropriate when treatment
+    Standardizes by control SD only -- appropriate when treatment
     can change variance, not just mean.
     """
     t = np.asarray(treated, dtype=float)

@@ -11,7 +11,7 @@ def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnum
     """
     Nonparametric expression (auto-extracted; see ref).
 
-    Formula: [EQ] = j*{exp (— h^s^) — 2 exp (— i ^^s^)} | «(s) | ^ ds
+    Formula: [EQ] = j*{exp (-- h^s^) -- 2 exp (-- i ^^s^)} | «(s) | ^ ds
 
     Parameters
     ----------

@@ -8,7 +8,7 @@ def vecm(
     y2: np.ndarray,
     lags: int = 1,
 ) -> dict:
-    """
+    r"""
     Vector Error Correction Model for two cointegrated series.
 
     Estimates the VECM:

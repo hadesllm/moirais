@@ -1,8 +1,8 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """
 Average Treatment Effect on the Treated (ATT) via Hajek-weighted IPW.
 
-Implements ``estimate_att`` — estimates the causal effect of treatment
+Implements ``estimate_att`` -- estimates the causal effect of treatment
 among those who actually received it.
 """
 
@@ -25,7 +25,7 @@ def estimate_att(
     covariates: list[str],
     propensity_col: str | None = None,
 ) -> dict[str, Any]:
-    """Estimate the Average Treatment Effect on the Treated (ATT) via
+    r"""Estimate the Average Treatment Effect on the Treated (ATT) via
     Hajek-weighted IPW.
 
     The ATT is defined as:

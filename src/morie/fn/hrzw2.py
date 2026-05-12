@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bootstrap bandwidth selection (Faraway-Jhun 1990; Horowitz 2009, Ch 13).
 
     h* = argmin_h MISE_boot(h)

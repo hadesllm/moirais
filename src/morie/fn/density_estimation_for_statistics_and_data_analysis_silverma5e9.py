@@ -1,4 +1,4 @@
-"""CentralTendency equation extracted from Density estimation for statistics and data analysis -- Silverman, B  W -- Monographs on statistics and applied probability.."""
+r"""CentralTendency equation extracted from Density estimation for statistics and data analysis -- Silverman, B  W -- Monographs on statistics and applied probability.."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["density_estimation_for_statistics_and_data_analysis_silverma_chapter
 
 
 def density_estimation_for_statistics_and_data_analysis_silverma_chapter_5_equation_9(x, cdf=None):
-    """
+    r"""
     CentralTendency equation extracted from Density estimation for statistics and data analysis -- Silverman, B  W -- Monographs on statistics and applied probability.
 
     Formula: [EQ] h{x) = C , { K ) n - ^ / ^ \ f " { x ) \ (5.9)

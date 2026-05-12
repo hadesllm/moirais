@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MIDAS mixed-frequency regression (Ghysels, Santa-Clara & Valkanov 2004)."""
 from __future__ import annotations
 

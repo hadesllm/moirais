@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Spectral resolution and leakage analysis (Rayleigh criterion)."""
 import numpy as np
 from ._richresult import RichResult

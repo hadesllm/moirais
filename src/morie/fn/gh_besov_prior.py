@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Besov prior for adaptation: wavelet coefficient prior adapts to Besov smoothness."""
 import numpy as np
 from ._richresult import RichResult

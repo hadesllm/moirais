@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GWR tri-cube kernel weights."""
 
 from ._containers import SpatialResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """P-tuning v2: deep prompt (learnable prefix per layer, not just input)."""
 import numpy as np
 from ._richresult import RichResult

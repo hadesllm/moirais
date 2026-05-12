@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Jackknife delete-d estimator. 'Maximum effort!' -- Deadpool"""
 
 from __future__ import annotations

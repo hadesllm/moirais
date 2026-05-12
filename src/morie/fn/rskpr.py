@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean risk score profile by demographic subgroups."""
 
 from __future__ import annotations

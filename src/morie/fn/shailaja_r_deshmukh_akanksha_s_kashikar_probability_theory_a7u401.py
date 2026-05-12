@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: 7.5.24Suppose Xn ∼ P (λn)and Yn = (Xn−λn)/√λn. Show that asλn → ∞,
+    Formula: 7.5.24Suppose Xn ∼ P (λn)and Yn = (Xn−λn)/√λn. Show that asλn -> ∞,
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Instantaneous phase via Hilbert transform."""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ _QUOTE = "Luminous beings are we."
 
 
 def instantaneous_phase(x: np.ndarray) -> DescriptiveResult:
-    """Instantaneous phase via analytic signal.
+    r"""Instantaneous phase via analytic signal.
 
     .. math::
 

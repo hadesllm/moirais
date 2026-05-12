@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multilayer perceptron classifier (pure NumPy)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Matched filter for template detection in biomedical signals.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -19,7 +19,7 @@ def matched_filter(
     template: np.ndarray,
     fs: float = 1.0,
 ) -> SignalResult:
-    """Apply a matched filter to detect a known template in signal *x*.
+    r"""Apply a matched filter to detect a known template in signal *x*.
 
     The matched filter maximizes the signal-to-noise ratio at the
     output when the noise is white and Gaussian:

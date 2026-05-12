@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """JADE ICA via joint approximate diagonalization of eigenmatrices."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rotary Positional Embedding (RoPE)."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def rotary_embed(
     dim: int | None = None,
     base: float = 10000.0,
 ) -> DescriptiveResult:
-    """Apply Rotary Positional Embedding to input.
+    r"""Apply Rotary Positional Embedding to input.
 
     :math:`\\text{RoPE}(x, m) = x \\odot \\cos(m\\theta) + \\text{rotate}(x) \\odot \\sin(m\\theta)`
 

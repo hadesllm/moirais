@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Perplexity (Jelinek et al. 1977)."""
 from __future__ import annotations
 

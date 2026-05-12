@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Beta-process prior for survival (Hjort 1990)."""
 import numpy as np
 from ._richresult import RichResult
@@ -27,10 +27,10 @@ def ghosal_survival_beta_process(time, event=None, c=1.0, lam0=None):
 
     Parameters
     ----------
-    time : array-like — observation times (possibly censored).
-    event : array-like or None — 1=event, 0=censored.  All-events if None.
-    c : float — prior concentration (constant in t).
-    lam0 : float or None — exponential base hazard rate.  Defaults to
+    time : array-like -- observation times (possibly censored).
+    event : array-like or None -- 1=event, 0=censored.  All-events if None.
+    c : float -- prior concentration (constant in t).
+    lam0 : float or None -- exponential base hazard rate.  Defaults to
         ``1/mean(time)``.
 
     Returns

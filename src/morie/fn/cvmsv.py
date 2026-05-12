@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cramer-von Mises goodness-of-fit statistic."""
 
 from __future__ import annotations

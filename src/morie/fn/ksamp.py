@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-sample Anderson-Darling test. 'We are brave. -- Rose Tico'"""
 
 from __future__ import annotations

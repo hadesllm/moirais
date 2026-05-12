@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Complete Ensemble EMD (CEEMD) decomposition."""
 
 from __future__ import annotations

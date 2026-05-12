@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """M-estimator: argmin sum rho(X_i, theta)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MAP theta estimation with normal prior."""
 
 from __future__ import annotations

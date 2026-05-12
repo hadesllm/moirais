@@ -1,4 +1,4 @@
-"""Output of the first hidden layer of a feed-forward network after applying activation function phi.."""
+r"""Output of the first hidden layer of a feed-forward network after applying activation function phi.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_layer1_output"]
 
 
 def burkov_lm_ch1_layer1_output(W_1, x, b_1, phi):
-    """
+    r"""
     Output of the first hidden layer of a feed-forward network after applying activation function phi.
 
     Formula: \mathbf{y}_1 = \phi(\mathbf{W}_1 \mathbf{x} + \mathbf{b}_1)

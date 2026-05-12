@@ -1,4 +1,4 @@
-"""1D wave equation solver. 'It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle'"""
+"""1D wave equation solver. 'It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle'"""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ def wave_1d(
     dt: float = 0.01,
     n_steps: int = 100,
 ) -> DescriptiveResult:
-    """
+    r"""
     Solve the 1D wave equation via explicit finite differences.
 
     .. math::
@@ -79,4 +79,4 @@ short = wave_1d
 
 
 def cheatsheet() -> str:
-    return "wave_1d({}) -> 1D wave equation solver. 'It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle' "
+    return "wave_1d({}) -> 1D wave equation solver. 'It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle' "

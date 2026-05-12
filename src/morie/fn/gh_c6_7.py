@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kullback-Leibler divergence formula used in consistency theory."""
 import numpy as np
 from ._richresult import RichResult

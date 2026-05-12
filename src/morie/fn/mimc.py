@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moran's I Monte-Carlo permutation test."""
 
 import numpy as np

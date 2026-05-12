@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AR model estimation via Yule-Walker (autocorrelation method)."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The road up and the road down are the same thing. — Heraclitus"
+_QUOTE = "The road up and the road down are the same thing. -- Heraclitus"
 
 
 def ar_yule_walker_fn(x: np.ndarray, order: int = 4) -> DescriptiveResult:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fine-Gray competing risks regression."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEM convergence check (lambda feasibility)."""
 
 import numpy as np

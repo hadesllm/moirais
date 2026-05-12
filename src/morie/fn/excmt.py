@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Excess mortality estimation via baseline comparison."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def excess_mortality(
     *,
     alpha: float = 0.05,
 ) -> dict[str, Any]:
-    """Estimate excess mortality by comparing observed to baseline deaths.
+    r"""Estimate excess mortality by comparing observed to baseline deaths.
 
     Excess deaths are the difference between observed and expected
     (baseline) deaths. The baseline may come from the average of

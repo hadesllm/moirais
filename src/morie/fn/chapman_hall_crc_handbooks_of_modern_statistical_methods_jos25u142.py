@@ -11,7 +11,7 @@ def chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter_25_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: sufficiently many pairings are forbidden — say, ifδtc = ∞ for sufficiently many entries inδ — then
+    Formula: sufficiently many pairings are forbidden -- say, ifδtc = ∞ for sufficiently many entries inδ -- then
 
     Parameters
     ----------

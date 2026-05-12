@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gaussian random projection with component entries ~ N(0, 1/d)."""
 import numpy as np
 from ._richresult import RichResult

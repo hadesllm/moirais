@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GWR logistic regression (binary outcome)."""
 
 import numpy as np

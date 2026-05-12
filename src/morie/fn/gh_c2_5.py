@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Histogram (binning) prior: density is piecewise constant on partition bins."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-"""Alignscore total loss.."""
+r"""Alignscore total loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_alignscore_total_loss"]
 
 
 def kamath_ch6_alignscore_total_loss(L_3way, L_bin, L_reg, lambdas):
-    """
+    r"""
     Alignscore total loss.
 
     Formula: L_{total} = \lambda_1 L_{3way} + \lambda_2 L_{bin} + \lambda_3 L_{reg}
@@ -31,7 +31,7 @@ def kamath_ch6_alignscore_total_loss(L_3way, L_bin, L_reg, lambdas):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.3, p. 220
-    """
+    r"""
     L_3way = np.atleast_1d(np.asarray(L_3way, dtype=float))
     n = len(L_3way)
     result = float(np.mean(L_3way))

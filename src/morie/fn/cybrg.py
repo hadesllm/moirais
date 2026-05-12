@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cybernetic control system simulation. 'Booyah!' -- Cyborg"""
 
 from __future__ import annotations

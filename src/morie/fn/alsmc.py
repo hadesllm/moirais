@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """SimCSE: two dropout passes of the same sentence as positive pair."""
 import numpy as np
 from ._richresult import RichResult

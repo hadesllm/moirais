@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Torus compactification moduli."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def compactify_torus(
     radii: list[float] | np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """Compute moduli space properties of T^n toroidal compactification.
+    r"""Compute moduli space properties of T^n toroidal compactification.
 
     For a rectangular torus :math:`T^n` with radii :math:`R_1, \\ldots, R_n`:
 

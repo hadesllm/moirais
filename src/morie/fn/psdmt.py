@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multitaper power spectral density (DPSS windows).
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal

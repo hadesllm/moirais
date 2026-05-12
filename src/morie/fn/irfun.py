@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Impulse response function (IRF) for VAR models."""
 
 from __future__ import annotations
@@ -40,12 +40,12 @@ def impulse_response(
     Returns
     -------
     DescriptiveResult
-        value: float — IRF at horizon h=1 for the shocked variable.
+        value: float -- IRF at horizon h=1 for the shocked variable.
         extra keys:
-          'irf'      : ndarray (horizon+1, m) — response of each variable
+          'irf'      : ndarray (horizon+1, m) -- response of each variable
                        to a one-standard-deviation shock in *shock_var*.
-          'Phi'      : ndarray (horizon+1, m, m) — VAR MA coefficient matrices.
-          'chol'     : ndarray (m, m) — Cholesky factor P.
+          'Phi'      : ndarray (horizon+1, m, m) -- VAR MA coefficient matrices.
+          'chol'     : ndarray (m, m) -- Cholesky factor P.
           'horizon'  : int.
           'shock_var': int.
 

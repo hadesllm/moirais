@@ -1,4 +1,4 @@
-"""Agentic loop for Perseus — MORIE's resident AI with tool calling."""
+"""Agentic loop for Perseus -- MORIE's resident AI with tool calling."""
 
 from __future__ import annotations
 
@@ -412,7 +412,7 @@ _DOMAIN_KNOWLEDGE: dict[str, dict] = {
     },
     "biomedical": {
         "desc": "Biomedical signal processing (Rangayyan & Krishnan, 941 equations)",
-        "books": "Rangayyan — Biomedical Signal Analysis (3rd Ed)",
+        "books": "Rangayyan -- Biomedical Signal Analysis (3rd Ed)",
         "core": ["bwflt", "envlp", "hlbrt", "hrvtd", "hrvfd", "eegbd", "welch", "pburg", "spgrm"],
         "extended": ["lmsaf", "wienr", "nlmsf", "rlsaf", "ecgdet", "hrvtd", "hrvfd",
                       "eogdt", "emgrt", "iemg", "gdemg"],
@@ -634,41 +634,41 @@ _KEYWORD_TO_DOMAIN: dict[str, list[str]] = {
 }
 
 _TEXTBOOK_REFS: dict[str, str] = {
-    "spatial autocorrelation": "Schabenberger & Gotway Ch.5 — Moran's I, Geary's C, LISA",
-    "kriging": "Schabenberger & Gotway Ch.5.4 — Ordinary, universal, co-kriging",
-    "variogram": "Schabenberger & Gotway Ch.5.3 — Variogram estimation and modeling",
-    "spatial regression": "Schabenberger & Gotway Ch.6 — SAR, CAR, SEM, GWR",
-    "geostatistics": "Schabenberger & Gotway Ch.5 — Geostatistical methods",
-    "point pattern": "Schabenberger & Gotway Ch.7 — Ripley's K, quadrat test",
-    "spatial voting": "Armstrong Ch.1-6 — Spatial models of choice and judgment",
-    "ideal point": "Armstrong Ch.2 — Ideal point estimation in spatial voting",
-    "emg": "Rangayyan Ch.8 — EMG signal analysis (envelope, spectrum, fatigue)",
-    "ecg": "Rangayyan Ch.7 — ECG analysis (QRS detection, HRV, arrhythmia)",
-    "eeg": "Rangayyan Ch.9 — EEG analysis (band decomposition, ERP)",
-    "hrv": "Rangayyan Ch.7.5 — Heart rate variability (time/frequency domain)",
-    "biosignal filtering": "Rangayyan Ch.3-4 — Butterworth, Chebyshev, adaptive filters",
-    "spectral analysis": "Rangayyan Ch.5 — FFT, Welch, STFT",
-    "wavelet": "Rangayyan Ch.6 — DWT, CWT, wavelet denoising",
-    "adaptive filter": "Rangayyan Ch.4 — LMS, RLS, NLMS adaptive filters",
-    "irt": "Embretson & Reise — Item Response Theory (1PL/2PL/3PL, GRM, PCM)",
-    "dif": "Zumbo — Differential Item Functioning (MH, logistic regression)",
-    "reliability": "DeVellis — Scale Development (alpha, omega, split-half)",
-    "factor analysis": "Brown — Confirmatory Factor Analysis (KMO, Bartlett, CFA)",
-    "causal inference": "Imbens & Rubin — Rubin causal model, propensity scores",
-    "dml": "Chernozhukov et al. — Double Machine Learning (PLR, IRM, PLIV)",
-    "did": "Angrist & Pischke — Difference-in-Differences",
-    "rdd": "Angrist & Pischke — Regression Discontinuity Design",
-    "iv": "Angrist & Pischke — Instrumental Variables (2SLS, LATE)",
-    "matching": "Rosenbaum & Rubin — Propensity Score Matching",
-    "survival": "Hosmer & Lemeshow — KM, Cox PH, log-rank test",
-    "meta-analysis": "Borenstein et al. — Fixed/random effects, forest plots",
-    "ml-kem": "NIST FIPS 203 — ML-KEM (Module-Lattice Key Encapsulation)",
-    "ml-dsa": "NIST FIPS 204 — ML-DSA (Module-Lattice Digital Signature)",
-    "lwe": "Regev 2005 — Learning With Errors lattice problem",
-    "lattice": "Micciancio & Regev — LLL, BKZ, SVP, CVP",
-    "ntru": "Hoffstein, Pipher, Silverman — NTRU cryptosystem",
-    "correctional": "OTIS — Ontario Restrictive Confinement Patterns",
-    "ebac": "CPADS/CSUS — Estimated Blood Alcohol Concentration",
+    "spatial autocorrelation": "Schabenberger & Gotway Ch.5 -- Moran's I, Geary's C, LISA",
+    "kriging": "Schabenberger & Gotway Ch.5.4 -- Ordinary, universal, co-kriging",
+    "variogram": "Schabenberger & Gotway Ch.5.3 -- Variogram estimation and modeling",
+    "spatial regression": "Schabenberger & Gotway Ch.6 -- SAR, CAR, SEM, GWR",
+    "geostatistics": "Schabenberger & Gotway Ch.5 -- Geostatistical methods",
+    "point pattern": "Schabenberger & Gotway Ch.7 -- Ripley's K, quadrat test",
+    "spatial voting": "Armstrong Ch.1-6 -- Spatial models of choice and judgment",
+    "ideal point": "Armstrong Ch.2 -- Ideal point estimation in spatial voting",
+    "emg": "Rangayyan Ch.8 -- EMG signal analysis (envelope, spectrum, fatigue)",
+    "ecg": "Rangayyan Ch.7 -- ECG analysis (QRS detection, HRV, arrhythmia)",
+    "eeg": "Rangayyan Ch.9 -- EEG analysis (band decomposition, ERP)",
+    "hrv": "Rangayyan Ch.7.5 -- Heart rate variability (time/frequency domain)",
+    "biosignal filtering": "Rangayyan Ch.3-4 -- Butterworth, Chebyshev, adaptive filters",
+    "spectral analysis": "Rangayyan Ch.5 -- FFT, Welch, STFT",
+    "wavelet": "Rangayyan Ch.6 -- DWT, CWT, wavelet denoising",
+    "adaptive filter": "Rangayyan Ch.4 -- LMS, RLS, NLMS adaptive filters",
+    "irt": "Embretson & Reise -- Item Response Theory (1PL/2PL/3PL, GRM, PCM)",
+    "dif": "Zumbo -- Differential Item Functioning (MH, logistic regression)",
+    "reliability": "DeVellis -- Scale Development (alpha, omega, split-half)",
+    "factor analysis": "Brown -- Confirmatory Factor Analysis (KMO, Bartlett, CFA)",
+    "causal inference": "Imbens & Rubin -- Rubin causal model, propensity scores",
+    "dml": "Chernozhukov et al. -- Double Machine Learning (PLR, IRM, PLIV)",
+    "did": "Angrist & Pischke -- Difference-in-Differences",
+    "rdd": "Angrist & Pischke -- Regression Discontinuity Design",
+    "iv": "Angrist & Pischke -- Instrumental Variables (2SLS, LATE)",
+    "matching": "Rosenbaum & Rubin -- Propensity Score Matching",
+    "survival": "Hosmer & Lemeshow -- KM, Cox PH, log-rank test",
+    "meta-analysis": "Borenstein et al. -- Fixed/random effects, forest plots",
+    "ml-kem": "NIST FIPS 203 -- ML-KEM (Module-Lattice Key Encapsulation)",
+    "ml-dsa": "NIST FIPS 204 -- ML-DSA (Module-Lattice Digital Signature)",
+    "lwe": "Regev 2005 -- Learning With Errors lattice problem",
+    "lattice": "Micciancio & Regev -- LLL, BKZ, SVP, CVP",
+    "ntru": "Hoffstein, Pipher, Silverman -- NTRU cryptosystem",
+    "correctional": "OTIS -- Ontario Restrictive Confinement Patterns",
+    "ebac": "CPADS/CSUS -- Estimated Blood Alcohol Concentration",
 }
 
 
@@ -735,9 +735,9 @@ def tool_recommend_analysis(question: str) -> str:
     if not matched:
         return (
             "Could not match to a specific domain. Try:\n"
-            "  search_functions(query) — find functions by keyword\n"
-            "  category_tree() — see all categories\n"
-            "  domain_guide(domain) — guide for a specific field"
+            "  search_functions(query) -- find functions by keyword\n"
+            "  category_tree() -- see all categories\n"
+            "  domain_guide(domain) -- guide for a specific field"
         )
 
     lines = ["=== ANALYSIS RECOMMENDATION ===\n"]
@@ -1350,7 +1350,7 @@ _TOOL_DISPATCH: dict[str, Any] = {
 }
 
 _SYSTEM_PROMPT_FULL = (
-    "You are Perseus, the MORIE demigod — an autonomous scientific computing agent with "
+    "You are Perseus, the MORIE demigod -- an autonomous scientific computing agent with "
     "mastery over 20 statistical domains and 5710+ functions.\n\n"
     "INTELLIGENCE TOOLS (use these FIRST to plan your approach):\n"
     "- domain_guide(domain): complete guide for spatial/causal/biomedical/psychometrics/etc.\n"
@@ -1689,10 +1689,10 @@ _TEXT_TOOL_PROMPT = (
     '<tool_call>{"name": "domain_guide", "arguments": {"domain": "spatial"}}</tool_call>\n\n'
     "RULES:\n"
     "1. Start with domain_guide or recommend_analysis to plan your approach\n"
-    "2. ALWAYS search before running — never guess function names\n"
+    "2. ALWAYS search before running -- never guess function names\n"
     "3. Short names: 'moran', 'ate', 'dnorm', 'd' (max 7 chars)\n"
     "4. Be explicit about statistical assumptions and limitations\n"
-    "5. Never fabricate results — only report what tools return"
+    "5. Never fabricate results -- only report what tools return"
 )
 
 _TOOL_CALL_RE = None
@@ -1711,7 +1711,7 @@ class FreeAPIAgent:
 
     Uses text-based tool calling: the system prompt teaches the model to
     output <tool_call> tags, which we parse and execute locally. This enables
-    Perseus tool calling over the internet for free — no local hardware needed.
+    Perseus tool calling over the internet for free -- no local hardware needed.
     """
 
     def __init__(self, *, max_iterations: int = 5) -> None:
@@ -1834,7 +1834,7 @@ class FreeAPIAgent:
         )
 
     def chat_stream(self, message: str, *, model: str | None = None) -> Iterator[str]:
-        """Streaming variant — yields text, executes tools between rounds."""
+        """Streaming variant -- yields text, executes tools between rounds."""
         resp = self.chat(message, model=model)
         if resp.tool_calls_made:
             yield f"[{len(resp.tool_calls_made)} tools called]\n\n"
@@ -1849,7 +1849,7 @@ class PerseusCloudAgent:
 
     The relay runs on Pi (or any machine) and handles tool execution
     server-side. The client just sends questions and gets full results
-    back — zero local compute needed.
+    back -- zero local compute needed.
 
     This is how Perseus becomes a cloud service: run the relay on Pi,
     expose via Cloudflare Tunnel or port forward, and anyone with the
@@ -1895,10 +1895,10 @@ def create_agent(
     """Create the best available Perseus agent.
 
     Priority:
-    1. Explicit cloud URL — remote Perseus relay (full tools, server-side execution)
-    2. Local/remote Ollama — native tool calling (fastest, most capable)
-    3. FreeAPI — text-based tool calling over free community servers
-    4. Fallback — local Ollama endpoint (may not be running)
+    1. Explicit cloud URL -- remote Perseus relay (full tools, server-side execution)
+    2. Local/remote Ollama -- native tool calling (fastest, most capable)
+    3. FreeAPI -- text-based tool calling over free community servers
+    4. Fallback -- local Ollama endpoint (may not be running)
 
     Environment variables:
     - PERSEUS_CLOUD_URL: Auto-connect to a Perseus relay
@@ -1959,7 +1959,7 @@ def create_agent(
         from .fam import OllamaFreeAPI
         client = OllamaFreeAPI()
         if client.list_models():
-            logger.info("No local Ollama — using FreeAPI with text-based tool calling")
+            logger.info("No local Ollama -- using FreeAPI with text-based tool calling")
             return FreeAPIAgent(**kwargs)
     except Exception:
         pass
@@ -1973,7 +1973,7 @@ def warmup(model: str | None = None, base_url: str | None = None) -> bool:
     """Pre-load the model into GPU/RAM so subsequent queries are fast.
 
     Sets keep_alive=-1 (infinite) so the model stays resident. Call this
-    once when morie starts — after that, tool-calling queries take 2-10s
+    once when morie starts -- after that, tool-calling queries take 2-10s
     instead of 30-120s.
     """
     try:

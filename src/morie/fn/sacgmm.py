@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SAC GMM (Kelejian-Prucha) estimator."""
 
 import numpy as np

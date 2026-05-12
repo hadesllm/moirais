@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP mixture density estimation: posterior mean. 'Wise, you are becoming.'"""
 
 from __future__ import annotations

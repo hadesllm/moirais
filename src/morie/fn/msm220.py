@@ -1,4 +1,4 @@
-"""Numbered display equation (9.36) from MVSML chapter 9.."""
+r"""Numbered display equation (9.36) from MVSML chapter 9.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_ridge_lasso_elastic_eq_9_36"]
 
 
 def mvsml_ridge_lasso_elastic_eq_9_36(X, p, yi, j1xij, M, i):
-    """
+    r"""
     Numbered display equation (9.36) from MVSML chapter 9.
 
     Formula: ! X p yi \beta0 + \beta j1xij  M 1 + \zetai ( ),
@@ -35,7 +35,7 @@ def mvsml_ridge_lasso_elastic_eq_9_36(X, p, yi, j1xij, M, i):
     References
     ----------
     MVSML, Eq. (9.36) [Multivariate Statistical Machine Learnin [Pages 337-378] [2026-04-16].pdf]
-    """
+    r"""
     X = np.atleast_1d(np.asarray(X, dtype=float))
     n = len(X)
     result = float(np.mean(X))

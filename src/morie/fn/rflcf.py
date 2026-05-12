@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Reflection (PARCOR) coefficients from AR coefficients."""
 
 from __future__ import annotations

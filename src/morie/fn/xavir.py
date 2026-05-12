@@ -1,4 +1,4 @@
-"""Xavier/Glorot weight initialization. 'By all means, marry. If you get a good wife, you'll become happy; if you get a bad one, you'll become a philosopher. — Socrates' -- Various"""
+"""Xavier/Glorot weight initialization. 'By all means, marry. If you get a good wife, you'll become happy; if you get a bad one, you'll become a philosopher. -- Socrates' -- Various"""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ def xavier_init(
     seed: int = 42,
     uniform: bool = True,
 ) -> DescriptiveResult:
-    """
+    r"""
     Generate Xavier/Glorot weight initialization matrix.
 
     For uniform distribution:
@@ -72,4 +72,4 @@ short = xavier_init
 
 
 def cheatsheet() -> str:
-    return "Nature does not hurry, yet everything is accomplished. — Lao Tzu"
+    return "Nature does not hurry, yet everything is accomplished. -- Lao Tzu"

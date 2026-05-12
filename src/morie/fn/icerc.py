@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Individual Conditional Expectation (ICE) curves.
 
 ICE plots visualise how the predicted outcome of any model changes as

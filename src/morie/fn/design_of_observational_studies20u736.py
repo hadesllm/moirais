@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_20_unnumbered_736(x):
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: μ c2 ≥ δ is rejected for small values of −→t . Here, both ←−t ≥ 1.65 and −→t ≤− 1.65,
+    Formula: μ c2 ≥ δ is rejected for small values of −->t . Here, both ←−t ≥ 1.65 and −->t ≤− 1.65,
 
     Parameters
     ----------

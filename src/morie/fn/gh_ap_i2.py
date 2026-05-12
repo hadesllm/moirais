@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dudley entropy integral: J[](sigma,F) = integral_0^sigma sqrt(log N(eps,F,L2)) deps."""
 import numpy as np
 from ._richresult import RichResult

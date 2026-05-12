@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Donsker class: family F with sqrt(n)(P_n-P)(f) weak convergence in l^infty(F)."""
 import numpy as np
 from ._richresult import RichResult

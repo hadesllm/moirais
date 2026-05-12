@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Type I error and p-value concepts for discrete test statistics."""
 import numpy as np
 from scipy import stats

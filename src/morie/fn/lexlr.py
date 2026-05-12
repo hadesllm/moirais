@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lexicographic rank aggregation.
 
 'Some people can read War and Peace and come away thinking it is a simple adventure story.' -- Lex Luthor"""

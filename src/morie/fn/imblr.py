@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Look well into thyself; there is a source which will always spring up. — Marcus Aurelius"""
+# morie.fn -- function file (hadesllm/morie)
+"""Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius"""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 
 
 def gaussian_blur(image: np.ndarray, sigma: float = 1.0) -> DescriptiveResult:
-    """
+    r"""
     Apply Gaussian blur to a grayscale image.
 
     Convolves the image with a 2-D Gaussian kernel of standard deviation

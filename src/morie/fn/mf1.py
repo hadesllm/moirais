@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Macro/micro/weighted F1 score (multi-class)."""
 
 from __future__ import annotations

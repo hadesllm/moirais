@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Choi-Williams distribution (reduced cross-term TFR)."""
 
 from __future__ import annotations

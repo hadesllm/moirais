@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Correlation dimension (Grassberger-Procaccia) — Rangayyan Ch 7."""
+# morie.fn -- function file (hadesllm/morie)
+"""Correlation dimension (Grassberger-Procaccia) -- Rangayyan Ch 7."""
 from __future__ import annotations
 
 import numpy as np
@@ -82,4 +82,4 @@ def rangayyan_correlation_dimension(x, m=3, tau=1, n_r=20):
 
 
 def cheatsheet():
-    return "rgcrl: correlation dimension D₂ — Rangayyan Ch 7"
+    return "rgcrl: correlation dimension D₂ -- Rangayyan Ch 7"

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maximum LMS step size."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "You must unlearn what you have learned."
 
 
 def max_step_size(x, order: int = 16, **kwargs) -> DescriptiveResult:
-    """Compute the maximum stable LMS step size.
+    r"""Compute the maximum stable LMS step size.
 
     .. math::
 

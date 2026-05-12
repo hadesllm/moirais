@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric efficiency bound (information bound)."""
 
 from __future__ import annotations

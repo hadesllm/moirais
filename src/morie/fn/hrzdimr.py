@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dimension reduction property: single-index aggregates d-dim X to 1D index."""
 import numpy as np
 from ._richresult import RichResult

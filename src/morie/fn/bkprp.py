@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Backpropagation gradient computation for a single dense layer."""
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ __all__ = ["backpropagation"]
 
 
 def backpropagation(x, y, w=None, b=None, activation: str = "sigmoid"):
-    """Backpropagation gradient computation for one dense layer with MSE loss.
+    r"""Backpropagation gradient computation for one dense layer with MSE loss.
 
     For ``L = 1/(2n) * sum( (a - y)^2 )`` with ``a = sigma(Wx + b)``:
 

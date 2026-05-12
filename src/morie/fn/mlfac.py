@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maximum Likelihood Factor Analysis.
 
 Estimates factor analysis via maximum likelihood, optimizing the likelihood

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Receiver operating characteristic (ROC) curve and AUC."""
 import numpy as np
 from ._richresult import RichResult

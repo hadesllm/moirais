@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Mastering others is strength; mastering yourself is true power. — Lao Tzu"""
+# morie.fn -- function file (hadesllm/morie)
+"""Mastering others is strength; mastering yourself is true power. -- Lao Tzu"""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ def kepler_orbit(
     e: float,
     n_points: int = 360,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute a Keplerian orbit in 2D Cartesian coordinates.
 
     .. math::

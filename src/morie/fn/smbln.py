@@ -1,4 +1,4 @@
-"""The man who moves a mountain begins by carrying away small stones. — Confucius"""
+"""The man who moves a mountain begins by carrying away small stones. -- Confucius"""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ def smd_balance(
     treatment: np.ndarray,
     weights: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute standardized mean differences (SMD) for covariate balance.
 
     .. math::

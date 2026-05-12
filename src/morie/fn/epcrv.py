@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Epidemic curve analysis (peak detection, growth rate, doubling time)."""
 
 from __future__ import annotations

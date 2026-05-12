@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AR model estimation via Burg algorithm."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius"
+_QUOTE = "The happiness of your life depends upon the quality of your thoughts. -- Marcus Aurelius"
 
 
 def ar_burg_fn(x: np.ndarray, order: int = 4) -> DescriptiveResult:

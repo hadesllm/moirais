@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Confidence band for population CDF using KS statistic."""
 import numpy as np
 from scipy import stats

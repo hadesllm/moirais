@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Reflection coefficients to AR coefficients."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "We are what we repeatedly do. Excellence is not an act, but a habit. — Aristotle"
+_QUOTE = "We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle"
 
 
 def reflection_to_ar(rc, **kwargs) -> DescriptiveResult:

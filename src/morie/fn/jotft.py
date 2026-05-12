@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """TFT: gated residual networks + variable selection + LSTM encoder + multi-head attention."""
 import numpy as np
 from ._richresult import RichResult
@@ -10,7 +10,7 @@ def joseph_temporal_fusion_transformer(static, observed, known, horizon):
     """
     TFT: gated residual networks + variable selection + LSTM encoder + multi-head attention
 
-    Formula: static + observed + known inputs → GRN + VSN → LSTM → MHA → quantile heads
+    Formula: static + observed + known inputs -> GRN + VSN -> LSTM -> MHA -> quantile heads
 
     Parameters
     ----------

@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
-Double Machine Learning (DML) — Partially Linear Regression Model.
+Double Machine Learning (DML) -- Partially Linear Regression Model.
 
-Implements ``estimate_double_ml`` — estimates the ATE using DoubleML's PLR
+Implements ``estimate_double_ml`` -- estimates the ATE using DoubleML's PLR
 with Random Forest nuisance estimators and cross-fitting.
 """
 
@@ -110,4 +110,4 @@ dml = estimate_double_ml
 
 
 def cheatsheet() -> str:
-    return "estimate_double_ml({}) -> Double Machine Learning (DML) — Partially Linear Regression "
+    return "estimate_double_ml({}) -> Double Machine Learning (DML) -- Partially Linear Regression "

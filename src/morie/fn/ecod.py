@@ -1,4 +1,4 @@
-"""ECOD — empirical CDF outlier."""
+"""ECOD -- empirical CDF outlier."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["ecod"]
 
 def ecod(X):
     """
-    ECOD — empirical CDF outlier
+    ECOD -- empirical CDF outlier
 
     Formula: sum log(min(F_i(x), 1-F_i(x))) per dim
 
@@ -30,8 +30,8 @@ def ecod(X):
     n = len(X)
     result = float(np.mean(X))
     se = float(np.std(X, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "ECOD — empirical CDF outlier"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "ECOD -- empirical CDF outlier"})
 
 
 def cheatsheet():
-    return "ecod: ECOD — empirical CDF outlier"
+    return "ecod: ECOD -- empirical CDF outlier"

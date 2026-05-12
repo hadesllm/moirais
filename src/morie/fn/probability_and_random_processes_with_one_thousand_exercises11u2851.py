@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (a) Ifρ < 1, then P( Q( t) = n) → ( 1 − ρ)ρ n = π n for n ≥ 0, where π is the unique
+    Formula: (a) Ifρ < 1, then P( Q( t) = n) -> ( 1 − ρ)ρ n = π n for n ≥ 0, where π is the unique
 
     Parameters
     ----------

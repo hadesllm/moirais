@@ -11,7 +11,7 @@ def edward_frenkel_love_and_math_the_heart_of_hidden_reality_chapter_18_unnumber
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: 2 /mapstoc〈a∇→ x − (− y
+    Formula: 2 /mapstoc〈a∇-> x − (− y
 
     Parameters
     ----------

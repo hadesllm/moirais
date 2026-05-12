@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Matrix trace, determinant, rank, condition number, and norms."""
 
 import numpy as np

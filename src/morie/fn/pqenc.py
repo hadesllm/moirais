@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PolarQuant encoder: separate magnitude + direction."""
 
 from __future__ import annotations

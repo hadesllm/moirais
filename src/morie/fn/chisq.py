@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chi-square goodness-of-fit or independence test."""
 
 from typing import Union

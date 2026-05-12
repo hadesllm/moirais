@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Euclidean distance utility for spatial voting model."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Custody occupancy count per facility per year."""
 
 from __future__ import annotations

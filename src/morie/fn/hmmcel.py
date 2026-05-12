@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Memory cell abstraction: internal state carries information through time."""
 import numpy as np
 from ._richresult import RichResult

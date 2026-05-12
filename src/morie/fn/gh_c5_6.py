@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Variational inference for DPM: mean-field approximation q(G,theta,z) = prod q_i."""
 import numpy as np
 from ._richresult import RichResult

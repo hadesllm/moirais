@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """FLOPs estimator for transformer models."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def estimate_flops(
     vocab_size: int = 32000,
     batch_size: int = 1,
 ) -> DescriptiveResult:
-    """Estimate FLOPs for a single forward pass of a transformer.
+    r"""Estimate FLOPs for a single forward pass of a transformer.
 
     Uses the Kaplan et al. approximation:
     :math:`\\text{FLOPs} \\approx 2 \\cdot N \\cdot T` for a model with

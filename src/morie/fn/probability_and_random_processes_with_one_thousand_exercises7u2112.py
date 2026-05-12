@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] ⏐⏐ ≤ | h( b) |P( b − δ< X < b + δ) → 0 as δ ↓ 0,
+    Formula: [EQ] ⏐⏐ ≤ | h( b) |P( b − δ< X < b + δ) -> 0 as δ ↓ 0,
 
     Parameters
     ----------

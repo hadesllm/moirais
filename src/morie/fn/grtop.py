@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Top-k sampling: renormalize probabilities over the k most likely tokens."""
 import numpy as np
 from ._richresult import RichResult

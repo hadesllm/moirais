@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-fold cross-validation index generator."""
 import numpy as np
 from ._richresult import RichResult

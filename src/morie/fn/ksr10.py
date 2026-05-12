@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """M-estimator with a nuisance parameter (Kosorok 2008, Ch 5).
 
 theta_n = argmax_theta P_n m(.; theta, eta_n), with eta_n a

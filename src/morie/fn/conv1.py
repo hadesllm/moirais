@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""1D convolution (valid/same/full).
 
 Applies sliding window operation on 1D signal.

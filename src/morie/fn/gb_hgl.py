@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hodges-Lehmann one-sample location estimator based on Walsh averages."""
 import numpy as np
 from ._richresult import RichResult

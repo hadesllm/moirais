@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random basis expansion prior: f = sum_k z_k phi_k with random coefficients z_k."""
 import numpy as np
 from ._richresult import RichResult

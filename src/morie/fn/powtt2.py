@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Power for two-sample t-test with R-style verbose result."""
 
 from scipy.stats import nct, t as _t

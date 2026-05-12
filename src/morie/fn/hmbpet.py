@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Byte-pair encoding tokenizer: iteratively merge most frequent symbol pair."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-"""APPNP — personalized PageRank propagation."""
+"""APPNP -- personalized PageRank propagation."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["appnp"]
 
 def appnp(A, H0, alpha, K):
     """
-    APPNP — personalized PageRank propagation
+    APPNP -- personalized PageRank propagation
 
     Formula: H^{l+1} = (1−α)Â H^l + α H^0
 
@@ -36,8 +36,8 @@ def appnp(A, H0, alpha, K):
     n = len(A)
     result = float(np.mean(A))
     se = float(np.std(A, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "APPNP — personalized PageRank propagation"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "APPNP -- personalized PageRank propagation"})
 
 
 def cheatsheet():
-    return "appnp: APPNP — personalized PageRank propagation"
+    return "appnp: APPNP -- personalized PageRank propagation"

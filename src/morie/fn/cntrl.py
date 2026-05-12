@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Central charge for bosonic and superstring theories."""
 
 from __future__ import annotations

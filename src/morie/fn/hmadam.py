@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Adam optimizer: momentum + RMSProp with bias correction."""
 import numpy as np
 from ._richresult import RichResult

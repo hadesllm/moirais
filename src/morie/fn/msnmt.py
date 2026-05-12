@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonmetric MDS (Kruskal)"""
 
 import numpy as np

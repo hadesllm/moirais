@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Magnitude spectrum."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "I find your lack of faith disturbing."
 
 
 def magnitude_spectrum(x, **kwargs) -> DescriptiveResult:
-    """Compute the magnitude spectrum |X(k)| of signal *x*.
+    r"""Compute the magnitude spectrum |X(k)| of signal *x*.
 
     .. math::
 

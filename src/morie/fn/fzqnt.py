@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Asymptotic distribution of kernel quantile estimator (Fauzi Ch 3).
 
 Kernel quantile estimator: Q_hat(p) = F_hat_h^{-1}(p) where F_hat_h is
@@ -51,7 +51,7 @@ def fauzi_kernel_quantile_asymptotic(x, p=0.5, h=None):
     n = len(x)
     if n < 5:
         return RichResult(payload={"estimate": np.nan, "se": np.nan, "n": n,
-                                    "method": "fzqnt — too few obs"})
+                                    "method": "fzqnt -- too few obs"})
     if not 0.0 < p < 1.0:
         raise ValueError("p must be in (0,1)")
     if h is None:

@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (2λ + 1)/n(2λ+1)/2 → 0. Hence given ϵ > 0, ∃ n1 such that
+    Formula: (2λ + 1)/n(2λ+1)/2 -> 0. Hence given ϵ > 0, ∃ n1 such that
 
     Parameters
     ----------

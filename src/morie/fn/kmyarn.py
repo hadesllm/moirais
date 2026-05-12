@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """YaRN NTK-aware RoPE rescaling for context-window extrapolation."""
 import numpy as np
 from ._richresult import RichResult

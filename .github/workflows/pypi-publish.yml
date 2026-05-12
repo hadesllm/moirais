@@ -1,5 +1,9 @@
 name: Publish to PyPI
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+
 # Publishes the morie Python package to PyPI on every tag of the
 # form v*.*.* (e.g., v0.1.1, v0.2.0). Uses Trusted Publisher OIDC —
 # no API token in GitHub secrets. The PyPI side has a Trusted

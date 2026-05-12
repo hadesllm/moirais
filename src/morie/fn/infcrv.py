@@ -10,7 +10,7 @@ def influence_function(estimator, F, x):
     """
     Influence function
 
-    Formula: IF(x; T, F) = lim_{ε→0} [T((1−ε)F + εδ_x) − T(F)]/ε
+    Formula: IF(x; T, F) = lim_{ε->0} [T((1−ε)F + εδ_x) − T(F)]/ε
 
     Parameters
     ----------

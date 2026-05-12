@@ -29,12 +29,12 @@ def var_model(Y, p: int = 1) -> DescriptiveResult:
     DescriptiveResult
         value: float(AIC).
         extra keys:
-          'coef'    : ndarray (m, 1 + m*p) — intercepts + lag coefficients
+          'coef'    : ndarray (m, 1 + m*p) -- intercepts + lag coefficients
                       for each equation (row = equation).
-          'sigma_u' : ndarray (m, m) — residual covariance matrix.
+          'sigma_u' : ndarray (m, m) -- residual covariance matrix.
           'residuals': ndarray (n-p, m).
-          'aic'     : float — Akaike information criterion.
-          'bic'     : float — Bayesian information criterion.
+          'aic'     : float -- Akaike information criterion.
+          'bic'     : float -- Bayesian information criterion.
           'n', 'p', 'm': dimensions.
 
     Raises

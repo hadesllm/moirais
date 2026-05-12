@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discrete wavelet transform (DWT) via filterbank."""
 import numpy as np
 from ._richresult import RichResult

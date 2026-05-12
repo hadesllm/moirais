@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """KDE bandwidth selection (spatial)"""
 
 import numpy as np

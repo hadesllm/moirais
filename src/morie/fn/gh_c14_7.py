@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SSP mixture models: density f(x) = integral K(x;theta) dG(theta), G ~ SSP."""
 import numpy as np
 from ._richresult import RichResult

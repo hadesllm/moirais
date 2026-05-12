@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 Nested logistic model comparison with Wald tests and coefficient tables.
 
-Implements ``compare_nested_logistic_models`` — fits a sequence of nested
+Implements ``compare_nested_logistic_models`` -- fits a sequence of nested
 survey-weighted logistic models (null through full interaction), compares
 deviance/AIC/pseudo-R-squared, and extracts per-predictor Wald tests.
 """
@@ -49,11 +49,11 @@ def compare_nested_logistic_models(
 
     Models fitted:
 
-    - **Model 0** — Null (intercept only)
-    - **Model 1** — Demographics (age + gender)
-    - **Model 2** — + Region + Mental Health
-    - **Model 3** — + Cannabis + Physical Health (all main effects)
-    - **Model 4** — + Cannabis x Gender interaction
+    - **Model 0** -- Null (intercept only)
+    - **Model 1** -- Demographics (age + gender)
+    - **Model 2** -- + Region + Mental Health
+    - **Model 3** -- + Cannabis + Physical Health (all main effects)
+    - **Model 4** -- + Cannabis x Gender interaction
 
     :param data: CPADS-compliant DataFrame (passes ``validate_cpads_frame``).
     :type data: pandas.DataFrame

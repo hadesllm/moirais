@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """STFT spectrogram (magnitude squared STFT)."""
 import numpy as np
 from ._richresult import RichResult

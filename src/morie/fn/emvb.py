@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Expectation-Maximization Variational Bayes (Gaussian mixture)."""
 
 from __future__ import annotations

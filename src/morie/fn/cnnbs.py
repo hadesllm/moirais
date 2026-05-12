@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """1D Convolutional Neural Network for biosignal classification."""
 
 from __future__ import annotations

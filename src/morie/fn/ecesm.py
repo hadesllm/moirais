@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Expected Calibration Error (ECE) and variants.
 
 ECE measures the weighted average absolute difference between

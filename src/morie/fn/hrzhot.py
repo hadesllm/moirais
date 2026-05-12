@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Horowitz estimators for T and F in fully nonparametric transformation model."""
 import numpy as np
 from ._richresult import RichResult

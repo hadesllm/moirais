@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Single-channel fetal ECG extraction using NMF/ICA."""
 import numpy as np
 from ._richresult import RichResult

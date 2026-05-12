@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Matrix decomposition (destructive rank reduction). 'Nothing goes over my head.' -- Drax"""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def destroyer_decompose(
     rank: int | None = None,
     tol: float = 1e-10,
 ) -> DescriptiveResult:
-    """Truncated SVD with rank estimation and reconstruction error.
+    r"""Truncated SVD with rank estimation and reconstruction error.
 
     Decomposes :math:`A \\approx U_k \\Sigma_k V_k^T` and reports the
     Frobenius-norm reconstruction error and effective rank.

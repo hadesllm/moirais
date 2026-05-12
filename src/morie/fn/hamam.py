@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Brownian motion simulation. 'I have survived your predecessors.' -- The Merovingian"""
 
 from __future__ import annotations

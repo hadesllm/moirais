@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""iTransformer: inverted attention — variates as tokens, time as feature dim."""
+# morie.fn -- function file (hadesllm/morie)
+"""iTransformer: inverted attention -- variates as tokens, time as feature dim."""
 import numpy as np
 from ._richresult import RichResult
 
@@ -8,7 +8,7 @@ __all__ = ["joseph_itransformer"]
 
 def joseph_itransformer(X, n_variates, transformer):
     """
-    iTransformer: inverted attention — variates as tokens, time as feature dim
+    iTransformer: inverted attention -- variates as tokens, time as feature dim
 
     Formula: token_i = series_for_variate_i; MHA across variates; feed-forward along time
 
@@ -34,8 +34,8 @@ def joseph_itransformer(X, n_variates, transformer):
     n = len(X)
     result = float(np.mean(X))
     se = float(np.std(X, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "iTransformer: inverted attention — variates as tokens, time as feature dim"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "iTransformer: inverted attention -- variates as tokens, time as feature dim"})
 
 
 def cheatsheet():
-    return "joitran: iTransformer: inverted attention — variates as tokens, time as feature dim"
+    return "joitran: iTransformer: inverted attention -- variates as tokens, time as feature dim"

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Glass's delta effect size (control-group SD denominator)."""
 
 import math

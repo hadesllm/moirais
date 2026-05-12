@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Le Cam testing lemma: lower bound on sum of error probabilities via affinity."""
 import numpy as np
 from scipy import stats

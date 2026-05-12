@@ -14,7 +14,7 @@ def wavelet_variance(
     wavelet: str = "db4",
     level: int | None = None,
 ) -> DescriptiveResult:
-    """Wavelet variance: variance decomposed across scales.
+    r"""Wavelet variance: variance decomposed across scales.
 
     .. math::
 

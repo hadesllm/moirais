@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ def bland_altman(
     method2: np.ndarray,
     confidence: float = 0.95,
 ) -> DescriptiveResult:
-    """
+    r"""
     Bland-Altman analysis for method comparison agreement.
 
     Computes the mean difference (bias) and 95% limits of agreement:

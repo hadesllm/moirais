@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Epidemic forecast using the renewal equation."""
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ def renewal_forecast(
     n_sim: int = 0,
     alpha: float = 0.05,
 ) -> dict[str, Any]:
-    """Forecast epidemic incidence using the renewal equation.
+    r"""Forecast epidemic incidence using the renewal equation.
 
     .. math::
 

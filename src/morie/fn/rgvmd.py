@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Variational mode decomposition (VMD) into K band-limited modes."""
 import numpy as np
 from ._richresult import RichResult

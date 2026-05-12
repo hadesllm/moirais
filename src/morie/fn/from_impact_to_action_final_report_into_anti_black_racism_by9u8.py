@@ -11,7 +11,7 @@ def from_impact_to_action_final_report_into_anti_black_racism_by_chapter_9_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Plan 2022-23” at chapter 13, “Information Technology and Innovation – Key Projects” at 40—41, online(pdf): https://tpsb.ca/jdownloads-categories?task=download.send&id=721&catid=32&m=0.
+    Formula: Plan 2022-23” at chapter 13, “Information Technology and Innovation – Key Projects” at 40--41, online(pdf): https://tpsb.ca/jdownloads-categories?task=download.send&id=721&catid=32&m=0.
 
     Parameters
     ----------

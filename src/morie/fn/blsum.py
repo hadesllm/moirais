@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Simplified BLOSUM62 alignment score. 'Judge me by my size, do you?'"""
 
 from __future__ import annotations

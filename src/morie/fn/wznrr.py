@@ -10,7 +10,7 @@ def wznrr(
     distortion_matrix: np.ndarray,
     target_distortion: float,
 ) -> dict:
-    """
+    r"""
     Compute the Wyner-Ziv rate-distortion function (lower bound).
 
     For source X with side information Y at the decoder, the Wyner-Ziv

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LM test for SLX (spatially lagged X)."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pool-adjacent-violators isotonic regression for nonmetric MDS disparities."""
 import numpy as np
 from ._richresult import RichResult

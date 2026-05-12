@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """k-th moment of r-th order statistic E[X_(r)^k]."""
 import numpy as np
 from scipy import stats

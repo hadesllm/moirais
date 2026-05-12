@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """2D kernel density for heatmaps. 'The belonging you seek is ahead.' -- Maz Kanata"""
 
 from __future__ import annotations

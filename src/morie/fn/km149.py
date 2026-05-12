@@ -1,4 +1,4 @@
-"""Flamingo factorized.."""
+r"""Flamingo factorized.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_flamingo_factorized"]
 
 
 def kamath_ch9_flamingo_factorized(y, x, L):
-    """
+    r"""
     Flamingo factorized.
 
     Formula: p(y|x) = \prod_{\ell=1}^L p(y_{\ell}|y_{<\ell}, x_{\le\ell})
@@ -29,7 +29,7 @@ def kamath_ch9_flamingo_factorized(y, x, L):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.21, p. 404
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

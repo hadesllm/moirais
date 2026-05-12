@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Proportions per group with confidence interval."""
 
 from __future__ import annotations

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Nonparametric IV via Tikhonov regularization.
+# morie.fn -- function file (hadesllm/morie)
+r"""Nonparametric IV via Tikhonov regularization.
 
 Solves the Fredholm integral equation of the first kind:
 

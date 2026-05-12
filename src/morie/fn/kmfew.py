@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Few-shot exemplar selection by similarity to the query."""
 import numpy as np
 from ._richresult import RichResult

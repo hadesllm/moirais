@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cholesky decomposition and linear solve."""
 
 from __future__ import annotations

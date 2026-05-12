@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayesian predictive distribution (normal model)."""
 
 from __future__ import annotations
@@ -22,7 +22,7 @@ def bayesian_predictive(
     n_draws: int = 5000,
     seed: int = 42,
 ) -> dict[str, Any]:
-    """
+    r"""
     Bayesian posterior predictive distribution for a Normal model.
 
     Using the Normal-Inverse-Gamma conjugate model:

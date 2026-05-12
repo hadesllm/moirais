@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Renyi divergence of order alpha: D_alpha(P||Q) = log integral p^alpha q^{1-alpha} / (alpha-1)."""
 import numpy as np
 from ._richresult import RichResult

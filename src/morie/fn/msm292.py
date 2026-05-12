@@ -1,4 +1,4 @@
-"""Numbered display equation (14.1) from MVSML chapter 14.."""
+r"""Numbered display equation (14.1) from MVSML chapter 14.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_convolutional_nn_eq_14_1"]
 
 
 def mvsml_convolutional_nn_eq_14_1(l, Ei, y, X, e, prior):
-    """
+    r"""
     Numbered display equation (14.1) from MVSML chapter 14.
 
     Formula: l=1xil\betal + Ei   (y = 1n\mu + X\beta + e), with prior distribution \beta  N 0, \sigma2 \betaP1 , with \sigma2 \beta = \lambda \sigma2. So, from here a Bayesian formulation (PBFR) for the smoothed solution of the coefﬁcient function (\beta(t)) in the functional regression model
@@ -35,7 +35,7 @@ def mvsml_convolutional_nn_eq_14_1(l, Ei, y, X, e, prior):
     References
     ----------
     MVSML, Eq. (14.1) [Multivariate Statistical Machine Learnin [Pages 579-631] [2026-04-16].pdf]
-    """
+    r"""
     y = np.atleast_1d(np.asarray(y, dtype=float))
     n = len(y)
     result = float(np.mean(y))

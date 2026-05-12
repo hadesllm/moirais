@@ -11,7 +11,7 @@ def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] >1/(0) = (b-a) ^ {exp(-fcV)-2exp(-^hV) Ill'll^1 = - MUMil— 1 + 2(6 —a) ^ {exp( — — 2 exp( —
+    Formula: [EQ] >1/(0) = (b-a) ^ {exp(-fcV)-2exp(-^hV) Ill'll^1 = - MUMil-- 1 + 2(6 --a) ^ {exp( -- -- 2 exp( --
 
     Parameters
     ----------

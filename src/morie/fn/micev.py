@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""MICE — Multiple Imputation by Chained Equations."""
+# morie.fn -- function file (hadesllm/morie)
+"""MICE -- Multiple Imputation by Chained Equations."""
 
 from __future__ import annotations
 
@@ -84,4 +84,4 @@ micev = mice_impute
 
 
 def cheatsheet() -> str:
-    return "mice_impute({}) -> MICE — Multiple Imputation by Chained Equations."
+    return "mice_impute({}) -> MICE -- Multiple Imputation by Chained Equations."

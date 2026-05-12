@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Sliding-window attention: token i attends to [i-W, i] only."""
 import numpy as np
 from ._richresult import RichResult

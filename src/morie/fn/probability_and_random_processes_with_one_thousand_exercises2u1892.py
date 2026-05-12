@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (19) N( A) = | )Pi1 ∩ A| = limn→∞ Tn( A) where Tn( A) =
+    Formula: [EQ] (19) N( A) = | )Pi1 ∩ A| = limn->∞ Tn( A) where Tn( A) =
 
     Parameters
     ----------

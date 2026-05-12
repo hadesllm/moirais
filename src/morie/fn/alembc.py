@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Embedding-based classifier: logistic regression / SVM on top of frozen embeddings."""
 import numpy as np
 from ._richresult import RichResult

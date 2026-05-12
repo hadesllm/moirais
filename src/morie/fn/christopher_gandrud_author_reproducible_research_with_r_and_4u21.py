@@ -4,7 +4,7 @@ from scipy import stats
 
 from ._richresult import RichResult, hypothesis_test_result
 
-__all__ = ["Look well into thyself; there is a source which will always spring up. — Marcus Aurelius"]
+__all__ = ["Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius"]
 
 
 def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_21(x):
@@ -24,7 +24,7 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
         Inherits from ``dict`` (so ``isinstance(result, dict)`` is True
         and ``result["statistic"]`` / ``result.get(...)`` keep working),
         but also exposes a multi-section ``str(result)`` render. Keys: value.
-        See ``morie.fn.describe('Look well into thyself; there is a source which will always spring up. — Marcus Aurelius')`` for the full guide.
+        See ``morie.fn.describe('Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius')`` for the full guide.
 
     References
     ----------
@@ -46,4 +46,4 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
 
 
 def cheatsheet():
-    return "Look well into thyself; there is a source which will always spring up. — Marcus Aurelius"
+    return "Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius"

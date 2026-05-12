@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Flamingo gated cross-attention between language tokens and visual features."""
 import numpy as np
 from ._richresult import RichResult

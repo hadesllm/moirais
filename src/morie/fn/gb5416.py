@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sample size formula for sign test given power requirement."""
 import numpy as np
 from scipy import stats

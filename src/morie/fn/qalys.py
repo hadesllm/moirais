@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Quality-adjusted life years (QALY) computation."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def qaly_computation(
     utilities: list[float] | np.ndarray,
     discount_rate: float = 0.03,
 ) -> ESRes:
-    """Compute quality-adjusted life years (QALYs).
+    r"""Compute quality-adjusted life years (QALYs).
 
     .. math::
 

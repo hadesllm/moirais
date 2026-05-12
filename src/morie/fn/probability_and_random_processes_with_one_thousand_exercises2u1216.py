@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: so that P( FI) = ( 1 − γ) I → 0 as I → ∞ . However, { FI : I ≥ 1} is a decreasing sequence
+    Formula: so that P( FI) = ( 1 − γ) I -> 0 as I -> ∞ . However, { FI : I ≥ 1} is a decreasing sequence
 
     Parameters
     ----------

@@ -10,7 +10,7 @@ def tmle_data_adaptive(y, D, X, candidate_strata):
     """
     Data-adaptive parameter TMLE
 
-    Formula: target a parameter chosen from data — eg max-CATE stratum
+    Formula: target a parameter chosen from data -- eg max-CATE stratum
 
     Parameters
     ----------

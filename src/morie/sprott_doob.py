@@ -1,4 +1,4 @@
-"""morie.sprott_doob — Sprott & Doob (CRIMSL UToronto) SIU analyses.
+"""morie.sprott_doob -- Sprott & Doob (CRIMSL UToronto) SIU analyses.
 
 Replicates the analytical contribution of the four CRIMSL UToronto
 research reports authored by **Prof. Jane B. Sprott** (Toronto
@@ -10,26 +10,26 @@ Decision Makers.
 The four reports
 ----------------
 
-1. **Sprott & Doob (Oct 2020)** — *Understanding the Operation of
+1. **Sprott & Doob (Oct 2020)** -- *Understanding the Operation of
    Correctional Service Canada's Structured Intervention Units:
    Some Preliminary Findings*. First systematic outside analysis of
    CSC's SIU data; demonstrated that SIUs were not operating as
    the legislative framework (Bill C-83) required.
 
-2. **Sprott & Doob (Nov 2020)** — *Is there Clear Evidence that
+2. **Sprott & Doob (Nov 2020)** -- *Is there Clear Evidence that
    COVID-19 Was the Cause of Problems with the Operation of CSC's
    Structured Intervention Units?* Tests CSC's COVID-attribution
    defense; finds the data did not support it (problems pre-existed
    COVID).
 
-3. **Sprott & Doob (Feb 2021)** — *Solitary Confinement, Torture,
+3. **Sprott & Doob (Feb 2021)** -- *Solitary Confinement, Torture,
    and Canada's Structured Intervention Units*. The most data-
    intensive of the four; introduces a Mandela-Rules classifier for
    SIU stays (solitary confinement = ≤15 days at ≤2 hrs out-of-cell;
    torture = ≥16 days under same conditions). Contains Tables 13,
    19, 23 reproduced below.
 
-4. **Sprott, Doob & Iftene (May 2021)** — *Do Independent External
+4. **Sprott, Doob & Iftene (May 2021)** -- *Do Independent External
    Decision Makers Ensure that Solitary Confinement is no Longer
    Used in Canada's Federal Penitentiaries?* Evaluates the IEDM
    review mechanism added by Bill C-83.
@@ -77,7 +77,7 @@ Sprott is FIRST author on the public CRIMSL papers; Doob is co-
 author. This is documented and indexed in `morie.siuiap.
 CRIMSL_REPORTS`. The October 2020 report's Drive filename
 ("DoobSprott") had Doob first but the published title page may
-differ — when in doubt, follow the published front-matter order.
+differ -- when in doubt, follow the published front-matter order.
 """
 
 from __future__ import annotations
@@ -172,11 +172,11 @@ def classify_mandela(days_in_siu: int,
 
     Categories
     ----------
-    "Solitary Confinement" — Mandela Rule 44: ≤2 hrs out of cell, all
+    "Solitary Confinement" -- Mandela Rule 44: ≤2 hrs out of cell, all
         days missed full 4 hrs, stay length ≤ 15 days.
-    "Torture" — Mandela Rules 43+44: same conditions but stay length
+    "Torture" -- Mandela Rules 43+44: same conditions but stay length
         ≥ 16 days.
-    "All other"  — none of the above thresholds met.
+    "All other"  -- none of the above thresholds met.
 
     >>> r = classify_mandela(20, 1.5, 100)
     >>> r["category"]
@@ -211,7 +211,7 @@ def classify_mandela(days_in_siu: int,
         }
     return {
         "category": "All other",
-        "rule": "—",
+        "rule": "--",
         "reason": ("Did not meet the joint threshold of ≤2 hrs out of "
                     "cell, all days missed 4 hrs, and stay length"),
     }
@@ -234,7 +234,7 @@ def analyze_table13_regional_rates() -> RichResult:
                           if r["region"] == "Ontario")
     qc_on_ratio = quebec_short / ontario_short
     return RichResult(
-        title=("Sprott & Doob (Feb 2021) Table 13 — SIU person-stays "
+        title=("Sprott & Doob (Feb 2021) Table 13 -- SIU person-stays "
                 "per 1,000 regional prisoners"),
         summary_lines=[
             ("Source", "Sprott & Doob (Feb 2021), p. 3"),
@@ -256,7 +256,7 @@ def analyze_table13_regional_rates() -> RichResult:
             "short SIU stays (≤15 days) was nearly 10× Ontario's, and "
             "the long-stay rate was higher in EVERY other region than "
             "in Ontario. Sprott & Doob argue this regional variation "
-            "is not explained by population characteristics alone — "
+            "is not explained by population characteristics alone -- "
             "it points to structurally different decision-making "
             "across CSC regions."
         ),
@@ -277,7 +277,7 @@ def analyze_table19_mandela_classification() -> RichResult:
     n_problematic = n_solitary + n_torture
     pct_problematic = 100.0 * n_problematic / 1960
     return RichResult(
-        title=("Sprott & Doob (Feb 2021) Table 19 — Mandela-Rules "
+        title=("Sprott & Doob (Feb 2021) Table 19 -- Mandela-Rules "
                 "classification of SIU person-stays"),
         summary_lines=[
             ("Source", "Sprott & Doob (Feb 2021), p. 4 of 28"),
@@ -289,19 +289,19 @@ def analyze_table19_mandela_classification() -> RichResult:
                 f"{pct_problematic:.1f}% ({n_problematic})"),
         ],
         tables=[{
-            "title": ("Table 19 — Mandela-Rules classification "
+            "title": ("Table 19 -- Mandela-Rules classification "
                        "(stays > 1 day):"),
             "headers": ["Category", "Percent", "N"],
             "rows": rows,
         }],
         interpretation=(
-            "Reproduces Sprott & Doob's Table 19 — the headline "
+            "Reproduces Sprott & Doob's Table 19 -- the headline "
             "Mandela-Rules classification. ~38% of SIU person-stays "
             "(those longer than 1 day) meet international thresholds "
             "for either solitary confinement (28.4%, N=556) or "
             "torture (9.9%, N=195) under UN Mandela Rules. CSC's "
-            "post-Bill-C-83 SIU regime — designed precisely to avoid "
-            "these international classifications — does not in fact "
+            "post-Bill-C-83 SIU regime -- designed precisely to avoid "
+            "these international classifications -- does not in fact "
             "do so for ~38% of stays."
         ),
         payload={"table19": TABLE19_MANDELA_CLASSIFICATION,
@@ -322,7 +322,7 @@ def analyze_table23_regional_torture_rates() -> RichResult:
                               if r["region"] == "Ontario")
     pac_on_ratio = pacific_torture / ontario_torture
     return RichResult(
-        title=("Sprott & Doob (Feb 2021) Table 23 — Regional rates of "
+        title=("Sprott & Doob (Feb 2021) Table 23 -- Regional rates of "
                 "Solitary Confinement and Torture per 1,000 prisoners"),
         summary_lines=[
             ("Source", "Sprott & Doob (Feb 2021), p. 4 of 28"),
@@ -339,7 +339,7 @@ def analyze_table23_regional_torture_rates() -> RichResult:
                 "its SIU stays that would be considered torture.'"),
         ],
         tables=[{
-            "title": "Table 23 — Regional rates per 1000 prisoners:",
+            "title": "Table 23 -- Regional rates per 1000 prisoners:",
             "headers": ["Region", "Solitary rate", "Torture rate"],
             "rows": rows,
         }],
@@ -363,7 +363,7 @@ def analyze_table23_regional_torture_rates() -> RichResult:
 # ── May 2021 IEDM paper (Sprott, Doob, Iftene) ─────────────────────
 # "Do Independent External Decision Makers Ensure that 'An Inmate's
 # Confinement in a Structured Intervention Unit Is to End as Soon as
-# Possible'? [CCRA, Section 33]" — Schulich Law Scholars, 9 May 2021.
+# Possible'? [CCRA, Section 33]" -- Schulich Law Scholars, 9 May 2021.
 # Pages 1-7 transcribed from the bepress upload. N=265 stays with at
 # least one IEDM review under CCRA s.37.8.
 
@@ -425,7 +425,7 @@ def analyze_iedm_table1_population() -> RichResult:
             "rows": rows,
         })
     return RichResult(
-        title=("Sprott, Doob & Iftene (May 2021) Table 1 — Population "
+        title=("Sprott, Doob & Iftene (May 2021) Table 1 -- Population "
                 "characteristics of SIU stays receiving ≥1 IEDM review "
                 "under CCRA s.37.8"),
         summary_lines=[
@@ -440,7 +440,7 @@ def analyze_iedm_table1_population() -> RichResult:
         tables=sections,
         interpretation=(
             "Reproduces Sprott, Doob & Iftene's Table 1. Indigenous "
-            "people make up 40.4% of IEDM-reviewed SIU stays — a "
+            "people make up 40.4% of IEDM-reviewed SIU stays -- a "
             "stark over-representation against the Indigenous share "
             "of the Canadian adult population (~5%). Black people "
             "are 15.8% of stays vs ~4% of the adult population "
@@ -457,7 +457,7 @@ def analyze_iedm_review_outcomes() -> RichResult:
     """Sprott, Doob & Iftene May 2021: IEDM review outcomes & disparities."""
     h = HEADLINE_MAY2021
     return RichResult(
-        title=("Sprott, Doob & Iftene (May 2021) — IEDM review "
+        title=("Sprott, Doob & Iftene (May 2021) -- IEDM review "
                 "outcomes and structural disparities"),
         summary_lines=[
             ("Source", "Sprott, Doob & Iftene (9 May 2021)"),
@@ -466,21 +466,21 @@ def analyze_iedm_review_outcomes() -> RichResult:
             ("N IEDM decisions rendered",
                 h["n_iedm_decisions_rendered"]),
             ("'Stay-in' rate among rendered decisions",
-                f"{h['pct_stay_in_decisions_among_rendered']}% — most "
+                f"{h['pct_stay_in_decisions_among_rendered']}% -- most "
                 f"IEDM decisions ratify continued SIU placement"),
             ("CSC moved prisoner BEFORE IEDM decided",
                 f"{h['pct_csc_moved_prisoner_before_iedm']}% of cases "
-                f"— 'CSC can structure timing of release to meet its "
+                f"-- 'CSC can structure timing of release to meet its "
                 f"own unarticulated needs' (Iftene/Sprott/Doob)"),
             ("IEDM-level variance in 'should remain' rate",
                 f"{h['iedm_min_should_remain_pct']}% to "
                 f"{h['iedm_max_should_remain_pct']}% across "
-                f"{h['n_iedms']} IEDMs — large IEDM-level "
+                f"{h['n_iedms']} IEDMs -- large IEDM-level "
                 f"heterogeneity"),
             ("Long-stay (≥76 days) with NO IEDM record",
                 f"{h['n_long_stay_no_iedm_record_min76d']} cases "
                 f"(of which {h['n_long_stay_no_iedm_record_min120d']} "
-                f"are ≥120 days) — apparent compliance failure"),
+                f"are ≥120 days) -- apparent compliance failure"),
             ("% of stays referred to IEDM in days 55-62",
                 f"{h['pct_referred_55_to_62_days']:.1f}%"),
             ("Indigenous share of reviewed stays",
@@ -490,12 +490,12 @@ def analyze_iedm_review_outcomes() -> RichResult:
         ],
         interpretation=(
             "Captures the May 2021 paper's structural critique. The "
-            "IEDM mechanism — created by Bill C-83 to provide "
-            "independent oversight — in practice (a) ratifies "
+            "IEDM mechanism -- created by Bill C-83 to provide "
+            "independent oversight -- in practice (a) ratifies "
             "continued SIU placement 87% of the time when it "
             "renders a decision, (b) is pre-empted by CSC for 30% "
             "of cases (CSC moves the prisoner before the IEDM can "
-            "decide), (c) has 38%-86% inter-IEDM variance — pointing "
+            "decide), (c) has 38%-86% inter-IEDM variance -- pointing "
             "to inconsistent decision standards across the 12 IEDMs, "
             "and (d) leaves some prisoners in SIUs for 76-120+ days. "
             "Sprott and Doob conclude that the IEDM "
@@ -506,7 +506,7 @@ def analyze_iedm_review_outcomes() -> RichResult:
     )
 
 
-# ── Feb 2021 — additional tables (4, 11, 12, 15, 20, 22) ──────────
+# ── Feb 2021 -- additional tables (4, 11, 12, 15, 20, 22) ──────────
 # Transcribed from pp.11-26 of the report. These extend Tables 13,
 # 19, 23 already encoded above.
 
@@ -536,7 +536,7 @@ TABLE11_REGION_X_STAY_LENGTH = [
 TABLE11_CHISQ = {"chi2": 201.00, "df": 16, "p": 0.001}
 
 
-# Table 12: Region — over-/under-representation in SIU vs. Dec-2020
+# Table 12: Region -- over-/under-representation in SIU vs. Dec-2020
 # penitentiary population.
 TABLE12_REGIONAL_OVERREP = [
     {"region": "Atlantic", "siu_pct": 11.3, "pop_pct": 9.2},
@@ -592,7 +592,7 @@ TABLE22_REGION_X_MANDELA = [
 TABLE22_CHISQ = {"chi2": 208.54, "df": 8, "p": 0.001}
 
 
-# ── May 2021 — additional tables (3, 5, 7, 8, 9, 10, 11, 14, 15) ──
+# ── May 2021 -- additional tables (3, 5, 7, 8, 9, 10, 11, 14, 15) ──
 
 TABLE3_MAY2021_REVIEWS_PER_STAY = [
     {"reviews": 1, "stays": 187, "total_reviews": 187},
@@ -645,7 +645,7 @@ TABLE9_MAY2021_IEDM_DECISIONS = [
     {"decision": "Decision moot", "n": 8, "pct": 2.1},
     {"decision": "Inmate to be removed from SIU", "n": 33, "pct": 8.7},
     {"decision": "Inmate to remain in SIU", "n": 224, "pct": 58.9},
-    {"decision": ("N/A — Inmate transferred out of SIU before "
+    {"decision": ("N/A -- Inmate transferred out of SIU before "
                     "decision rendered"),
      "n": 115, "pct": 30.3},
 ]
@@ -693,7 +693,7 @@ TABLE14_MAY2021_DECISION_X_RELEASE_TIMING = [
     {"decision": "Inmate to remain", "within_30d": 13, "31_40d": 13,
      "41_60d": 22, "after_61d": 2, "total": 50,
      "within_30d_pct": 26.0, "after_61d_pct": 4.0},
-    {"decision": ("N/A — transferred before decision"),
+    {"decision": ("N/A -- transferred before decision"),
      "within_30d": 77, "31_40d": 2, "41_60d": 1, "after_61d": 0,
      "total": 80,
      "within_30d_pct": 96.3},
@@ -730,7 +730,7 @@ def analyze_table4_length_of_stay() -> RichResult:
     long = sum(r["pct"] for r in TABLE4_LENGTH_OF_STAY
                 if r["days"] in ("16-31", "32-61", "62-380"))
     return RichResult(
-        title=("Sprott & Doob (Feb 2021) Table 4 — SIU length-of-stay "
+        title=("Sprott & Doob (Feb 2021) Table 4 -- SIU length-of-stay "
                 "distribution (N=1,983 admissions Nov 2019 - Sept 2020)"),
         summary_lines=[
             ("N", TABLE4_N),
@@ -746,7 +746,7 @@ def analyze_table4_length_of_stay() -> RichResult:
         }],
         interpretation=(
             "Reproduces Table 4. Roughly half of SIU stays are 15 days "
-            "or shorter, but 20.8% (N=413) are ≥62 days — well past "
+            "or shorter, but 20.8% (N=413) are ≥62 days -- well past "
             "the Mandela Rule 43 'prolonged' threshold."
         ),
         payload={"table4": TABLE4_LENGTH_OF_STAY},
@@ -760,7 +760,7 @@ def analyze_table11_region_x_stay_length() -> RichResult:
         rows.append([r["region"], r["1-5"], r["6-15"],
                      r["16-31"], r["32-61"], r["62-380"], r["total"]])
     return RichResult(
-        title=("Sprott & Doob (Feb 2021) Table 11 — Region × Total "
+        title=("Sprott & Doob (Feb 2021) Table 11 -- Region × Total "
                 "days in SIU"),
         summary_lines=[
             ("Source", "Sprott & Doob (Feb 2021), p.18"),
@@ -790,7 +790,7 @@ def analyze_table12_regional_overrepresentation() -> RichResult:
         rows.append([r["region"], f"{r['siu_pct']:.1f}%",
                      f"{r['pop_pct']:.1f}%", f"{ratio:.2f}×"])
     return RichResult(
-        title=("Sprott & Doob (Feb 2021) Table 12 — Regional over-/"
+        title=("Sprott & Doob (Feb 2021) Table 12 -- Regional over-/"
                 "under-representation in SIU stays vs. Dec 2020 "
                 "penitentiary population"),
         summary_lines=[
@@ -803,7 +803,7 @@ def analyze_table12_regional_overrepresentation() -> RichResult:
                            "the federal prison population")),
         ],
         tables=[{
-            "title": ("Region — SIU share vs. prison-pop share + ratio:"),
+            "title": ("Region -- SIU share vs. prison-pop share + ratio:"),
             "headers": ["Region", "SIU %", "Pop %",
                          "Over/under-rep ratio"],
             "rows": rows,
@@ -819,7 +819,7 @@ def analyze_table15_region_x_mental_health() -> RichResult:
         rows.append([r["region"], r["no_mh"], r["yes_mh"],
                      r["total"], f"{r['yes_pct']:.1f}%"])
     return RichResult(
-        title=("Sprott & Doob (Feb 2021) Table 15 — Region × Mental-"
+        title=("Sprott & Doob (Feb 2021) Table 15 -- Region × Mental-"
                 "health flag at SIU entry (N=2,279)"),
         summary_lines=[
             ("χ²", TABLE15_CHISQ["chi2"]),
@@ -848,7 +848,7 @@ def analyze_table22_region_x_mandela() -> RichResult:
                      f"{r['torture']} ({r['torture_pct']:.1f}%)",
                      r["everyone_else"], r["total"]])
     return RichResult(
-        title=("Sprott & Doob (Feb 2021) Table 22 — Region × Mandela "
+        title=("Sprott & Doob (Feb 2021) Table 22 -- Region × Mandela "
                 "Rules classification (N=1,960)"),
         summary_lines=[
             ("χ²", TABLE22_CHISQ["chi2"]),
@@ -883,7 +883,7 @@ def analyze_table9_iedm_decisions() -> RichResult:
                 if "transferred" in r["decision"].lower())
     )
     return RichResult(
-        title=("Sprott, Doob & Iftene (May 2021) Table 9 — IEDM "
+        title=("Sprott, Doob & Iftene (May 2021) Table 9 -- IEDM "
                 "review outcomes (N=380 reviews from 265 stays)"),
         summary_lines=[
             ("N reviews with outcomes", TABLE9_MAY2021_TOTAL),
@@ -892,7 +892,7 @@ def analyze_table9_iedm_decisions() -> RichResult:
             ("Pre-empted by CSC", "115 (30.3%)"),
             ("Decision moot", "8 (2.1%)"),
             ("% non-removal outcomes",
-                f"{pct_remain_or_moved_pre:.1f}% — i.e., either CSC "
+                f"{pct_remain_or_moved_pre:.1f}% -- i.e., either CSC "
                 f"had moved the prisoner before the IEDM decided, "
                 f"or the IEDM said 'remain in SIU'"),
         ],
@@ -922,7 +922,7 @@ def analyze_table10_per_iedm_variance() -> RichResult:
                      f"{r['remain_pct']:.1f}%"])
     pcts = [r["remain_pct"] for r in TABLE10_MAY2021_PER_IEDM]
     return RichResult(
-        title=("Sprott, Doob & Iftene (May 2021) Table 10 — Per-IEDM "
+        title=("Sprott, Doob & Iftene (May 2021) Table 10 -- Per-IEDM "
                 "decision variance (12 anonymized IEDMs)"),
         summary_lines=[
             ("χ²", TABLE10_MAY2021_CHISQ["chi2"]),
@@ -931,7 +931,7 @@ def analyze_table10_per_iedm_variance() -> RichResult:
             ("Min 'remain' rate", f"{min(pcts):.1f}% (IEDM #8)"),
             ("Max 'remain' rate", f"{max(pcts):.1f}% (IEDM #11)"),
             ("Range", f"{max(pcts) - min(pcts):.1f} percentage points"),
-            ("Headline", ("Substantial variance across IEDMs — one "
+            ("Headline", ("Substantial variance across IEDMs -- one "
                            "decided 37.5% should remain; another "
                            "decided 85.7% should remain")),
         ],
@@ -955,7 +955,7 @@ def analyze_table15_long_stay_no_iedm() -> RichResult:
         rows.append([r["days"], r["no_iedm"], r["with_iedm"],
                      r["total"], f"{r['no_iedm_pct']:.1f}%"])
     return RichResult(
-        title=("Sprott, Doob & Iftene (May 2021) Table 15 — Long-stay "
+        title=("Sprott, Doob & Iftene (May 2021) Table 15 -- Long-stay "
                 "SIU cases with NO IEDM record (N=1,979)"),
         summary_lines=[
             ("N total stays examined", TABLE15_MAY2021_TOTAL),
@@ -965,7 +965,7 @@ def analyze_table15_long_stay_no_iedm() -> RichResult:
             (">120d with NO IEDM",
                 "49 cases (35.8% of 137 long-stay >120d cases)"),
             ("Headline", ("105 cases stayed 76+ days in an SIU "
-                           "with no IEDM record — apparent compliance "
+                           "with no IEDM record -- apparent compliance "
                            "failure with CCRA s.37.8")),
         ],
         tables=[{
@@ -987,7 +987,7 @@ def analyze_table15_long_stay_no_iedm() -> RichResult:
     )
 
 
-# ── χ² verifier — recompute published χ² from transcribed cells ──
+# ── χ² verifier -- recompute published χ² from transcribed cells ──
 
 
 def verify_chi2(observed: "list[list[int]]") -> dict:
@@ -1091,7 +1091,7 @@ def verify_published_chi_squares() -> RichResult:
 
     n_pass = sum(1 for r in rows if r[-1] == "✓")
     return RichResult(
-        title=("χ² verification — recomputed from transcribed "
+        title=("χ² verification -- recomputed from transcribed "
                 "cell counts vs. published values"),
         summary_lines=[
             ("Tables verified", len(rows)),
@@ -1101,7 +1101,7 @@ def verify_published_chi_squares() -> RichResult:
                 "1.0–1.5 χ² units (rounding in published values)"),
         ],
         tables=[{
-            "title": ("Recomputed χ² vs. published — pass = within "
+            "title": ("Recomputed χ² vs. published -- pass = within "
                        "rounding tolerance:"),
             "headers": ["Source", "Recomputed χ²", "df",
                          "Published χ²", "df", "✓?"],
@@ -1111,7 +1111,7 @@ def verify_published_chi_squares() -> RichResult:
             "Recomputes every published χ² from the transcribed "
             "contingency-table cells. A '✓' means the recomputed "
             "value is within rounding tolerance of the published "
-            "value — confirming both the transcription is accurate "
+            "value -- confirming both the transcription is accurate "
             "and the published statistic is correctly derived. "
             "A '≠' indicates either a transcription error or a "
             "difference in the χ² formula (e.g., Yates correction)."
@@ -1130,12 +1130,12 @@ def analyze_full_sprott_doob_feb2021() -> RichResult:
                       ("§ Table 23", t23)]:
         if r.tables:
             sections.append({
-                "title": f"{label} — {r.title}",
+                "title": f"{label} -- {r.title}",
                 "headers": r.tables[0]["headers"],
                 "rows": r.tables[0]["rows"],
             })
     return RichResult(
-        title=("Sprott & Doob (Feb 2021) — Solitary Confinement, "
+        title=("Sprott & Doob (Feb 2021) -- Solitary Confinement, "
                 "Torture, and Canada's SIUs (CRIMSL UToronto)"),
         summary_lines=[
             ("Authors", "Jane B. Sprott (Ryerson) & Anthony N. Doob (UofT)"),
@@ -1158,8 +1158,8 @@ def analyze_full_sprott_doob_feb2021() -> RichResult:
             "`classify_mandela()`): 28.4% of SIU stays meet the UN "
             "definition of solitary confinement, 9.9% meet the "
             "definition of torture or other cruel, inhuman, or "
-            "degrading treatment. The regional disparities — "
-            "Pacific 22.6× Ontario for torture rate — point to "
+            "degrading treatment. The regional disparities -- "
+            "Pacific 22.6× Ontario for torture rate -- point to "
             "decision-making rather than population characteristics "
             "as the driver."
         ),

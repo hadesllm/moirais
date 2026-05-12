@@ -11,14 +11,23 @@
 #'   vector).
 #' @param seed RNG seed.
 #' @param mode One of \code{"normal"} (default) or \code{"uniform"}.
+#' @param deterministic_seed Optional integer; if non-NULL, a SHA-keyed
+#'   seed from \code{\link{morie_det_rng}("heinz", deterministic_seed)} is
+#'   installed before sampling so Py<->R streams agree.  Overrides
+#'   \code{seed} when set.
 #' @return Named list \code{(W, estimate, mean, std, shape, method)}.
 #' @references He, Zhang, Ren & Sun (2015), ICCV.
 #' @export
 heinz_he_initialization <- function(fan_in, fan_out = NULL, seed = 42L,
-                                    mode = "normal") {
+                                    mode = "normal",
+                                    deterministic_seed = NULL) {
   fan_in <- as.integer(fan_in)
   if (fan_in <= 0) stop(sprintf("fan_in must be > 0, got %d", fan_in))
-  set.seed(seed)
+  if (!is.null(deterministic_seed)) {
+    morie_det_rng("heinz", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   if (is.null(fan_out)) {
     n <- fan_in
     shape <- fan_in

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """L-statistic for kernel functionals (Fauzi Ch 5).
 
 L_n = sum_i c_{n,i} X_{(i)} with c_{n,i} = integral_{(i-1)/n}^{i/n} J(u) du
@@ -32,7 +32,7 @@ def fauzi_l_statistic(x, score=None, n_quad=200):
     n = len(x)
     if n < 2:
         return RichResult(payload={"estimate": np.nan, "n": n,
-                                    "method": "fzlst — too few obs"})
+                                    "method": "fzlst -- too few obs"})
     if score is None:
         score = lambda u: np.ones_like(u)
 

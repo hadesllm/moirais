@@ -1,4 +1,4 @@
-"""Rrf score.."""
+r"""Rrf score.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch7_rrf_score"]
 
 
 def kamath_ch7_rrf_score(r):
-    """
+    r"""
     Rrf score.
 
     Formula: \mathrm{Score}_{RRF} = \frac{1}{r+60}
@@ -25,7 +25,7 @@ def kamath_ch7_rrf_score(r):
     References
     ----------
     Kamath et al (2024), Ch 7, Eq 7.1, p. 285
-    """
+    r"""
     r = np.atleast_1d(np.asarray(r, dtype=float))
     n = len(r)
     result = float(np.mean(r))

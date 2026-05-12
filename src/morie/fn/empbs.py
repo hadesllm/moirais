@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Empirical bootstrap process.
 
 Computes the bootstrap empirical process and tests for its weak

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GoogLeNet/Inception with parallel filter modules."""
 import numpy as np
 from ._richresult import RichResult

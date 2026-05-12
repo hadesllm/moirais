@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dynamic IRT with random walk priors."""
 
 from __future__ import annotations

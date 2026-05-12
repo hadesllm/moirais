@@ -6,7 +6,7 @@ from ._containers import DescriptiveResult
 
 
 def var_fit(Y: np.ndarray, lags: int = 1) -> DescriptiveResult:
-    """
+    r"""
     Fit a VAR(p) model via OLS.
 
     .. math::

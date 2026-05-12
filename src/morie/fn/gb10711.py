@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Asymptotic normality of k-sample control median test vector W_N."""
 import numpy as np
 from scipy import stats

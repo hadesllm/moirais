@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Percentile modified rank test (Gibbons Ch 8.3.3).
 
 Gastwirth's "percentile modified rank" test for location: only the

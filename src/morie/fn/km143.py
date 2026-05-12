@@ -1,4 +1,4 @@
-"""Fom loss.."""
+r"""Fom loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_fom_loss"]
 
 
 def kamath_ch9_fom_loss(r_i, t_i, R):
-    """
+    r"""
     Fom loss.
 
     Formula: L_{FOM} = -E[\sum_{i=1}^R \log P[r_i,t_i]]
@@ -29,7 +29,7 @@ def kamath_ch9_fom_loss(r_i, t_i, R):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.15, p. 390
-    """
+    r"""
     r_i = np.atleast_1d(np.asarray(r_i, dtype=float))
     n = len(r_i)
     result = float(np.mean(r_i))

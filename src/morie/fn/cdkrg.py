@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Conditional kriging for simulation conditioning."""
 
 import numpy as np

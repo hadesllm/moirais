@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (a) Let C = { ω ∈ )Omega1 : Xn(ω) → X(ω) as n → ∞} and let
+    Formula: [EQ] (a) Let C = { ω ∈ )Omega1 : Xn(ω) -> X(ω) as n -> ∞} and let
 
     Parameters
     ----------

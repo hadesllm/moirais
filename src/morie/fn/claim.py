@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Poisson claim frequency model."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def claim_frequency(
     exposure: np.ndarray,
     confidence: float = 0.95,
 ) -> DescriptiveResult:
-    """Estimate claim frequency under a Poisson model.
+    r"""Estimate claim frequency under a Poisson model.
 
     The MLE of the Poisson rate parameter is:
 

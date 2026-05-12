@@ -11,7 +11,7 @@ def youden_index(
     y_true: np.ndarray | list,
     y_scores: np.ndarray | list,
 ) -> ESRes:
-    """
+    r"""
     Find optimal threshold via Youden's J statistic.
 
     .. math::

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Equal error rate (EER) computation."""
 
 from __future__ import annotations

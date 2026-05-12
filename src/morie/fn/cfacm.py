@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nested CFA model comparison (chi-square difference test)."""
 
 from __future__ import annotations

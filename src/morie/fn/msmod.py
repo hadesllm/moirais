@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Marginal structural model (MSM) via inverse probability weighting.
 
 Implements the MSM framework for estimating the causal effect of a

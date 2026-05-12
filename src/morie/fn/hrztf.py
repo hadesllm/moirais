@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fully nonparametric transformation model: both T and F unknown."""
 import numpy as np
 from ._richresult import RichResult

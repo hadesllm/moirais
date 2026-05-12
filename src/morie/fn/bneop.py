@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Birth-death process. 'The prophecy was true.' -- Councillor Hamann"""
 
 from __future__ import annotations

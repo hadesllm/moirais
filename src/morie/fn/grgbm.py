@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gradient boosting residual-fitting step (regression with squared loss)."""
 import numpy as np
 from ._richresult import RichResult

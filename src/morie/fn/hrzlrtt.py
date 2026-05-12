@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Likelihood ratio-type test for parametric restrictions in semiparametric models."""
 import numpy as np
 from scipy import stats

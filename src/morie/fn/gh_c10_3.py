@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Parametric rate recovery from mixture prior: 1/sqrt(n) for parametric models."""
 import numpy as np
 from ._richresult import RichResult

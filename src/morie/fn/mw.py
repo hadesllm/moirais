@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mann-Whitney U test (Wilcoxon rank-sum test)."""
 
 from typing import Union

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nambu-Goto string action."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def nambu_goto_action(
     metric: np.ndarray | None = None,
     T: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute the Nambu-Goto action for a string worldsheet.
+    r"""Compute the Nambu-Goto action for a string worldsheet.
 
     .. math::
 

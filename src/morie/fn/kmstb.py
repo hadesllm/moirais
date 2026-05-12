@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Step-back prompting: first ask a higher-level/generalized query, then the specific one."""
 import numpy as np
 from ._richresult import RichResult

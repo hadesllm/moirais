@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Restricted Isometry Property (RIP) check."""
 
 import numpy as np
@@ -16,7 +16,7 @@ def rip_check(
     seed: int = 42,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Empirically estimate the Restricted Isometry Constant (RIC) of a matrix.
 
     A matrix satisfies the RIP of order *s* with constant :math:`\\delta_s`

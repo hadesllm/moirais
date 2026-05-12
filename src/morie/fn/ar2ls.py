@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AR coefficients to line spectral frequencies."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Mastering others is strength; mastering yourself is true power. — Lao Tzu"
+_QUOTE = "Mastering others is strength; mastering yourself is true power. -- Lao Tzu"
 
 
 def ar_to_lsf(ar_coeffs, **kwargs) -> DescriptiveResult:

@@ -1,4 +1,4 @@
-"""Spatial vote choice — pick closest candidate."""
+"""Spatial vote choice -- pick closest candidate."""
 
 from __future__ import annotations
 
@@ -36,4 +36,4 @@ spvot = spatial_vote
 
 
 def cheatsheet() -> str:
-    return "spatial_vote({}) -> Spatial vote choice — pick closest candidate."
+    return "spatial_vote({}) -> Spatial vote choice -- pick closest candidate."

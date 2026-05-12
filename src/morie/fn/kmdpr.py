@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dense passage retrieval: bi-encoder dot-product similarity."""
 import numpy as np
 from ._richresult import RichResult

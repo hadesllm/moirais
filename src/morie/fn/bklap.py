@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Add-1 (Laplace) smoothing for n-gram probabilities."""
 import numpy as np
 from ._richresult import RichResult

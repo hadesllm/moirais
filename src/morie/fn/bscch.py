@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Binary symmetric channel capacity."""
 
 __all__ = ["bscch"]
@@ -8,7 +8,7 @@ from ._richresult import RichResult
 
 
 def bscch(p: float) -> dict:
-    """
+    r"""
     Capacity of a binary symmetric channel (BSC).
 
     .. math::

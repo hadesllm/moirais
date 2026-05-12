@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Load dataset from CSV, TSV, Excel, Parquet, or JSON."""
 
 from morie.dataset import load_dataset as _fn

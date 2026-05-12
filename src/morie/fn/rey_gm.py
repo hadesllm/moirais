@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gamma GLM regression via IRLS."""
 
 import numpy as np
@@ -8,7 +8,7 @@ from morie.fn._containers import RegressionResult
 
 
 def rey_gm(df, y: str = "y", x: list | str = "x", link: str = "log", max_iter: int = 50, tol: float = 1e-8, cdf=None) -> RegressionResult:
-    """
+    r"""
     Gamma GLM regression via iteratively reweighted least squares.
 
     Uses the log link by default:

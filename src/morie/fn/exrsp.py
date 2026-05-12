@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exposure-response modeling for environmental epidemiology."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dense layer forward pass."""
 from __future__ import annotations
 
@@ -33,7 +33,7 @@ def _apply_activation(z: np.ndarray, activation: str) -> np.ndarray:
 
 
 def forward_pass_dense(x, w, b, activation: str = "sigmoid"):
-    """Dense layer forward pass.
+    r"""Dense layer forward pass.
 
     Computes :math:`z = W x + b` followed by an element-wise
     activation :math:`a = \\sigma(z)`.

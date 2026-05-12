@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Metropolis-Hastings sampler (general)."""
 
 from __future__ import annotations

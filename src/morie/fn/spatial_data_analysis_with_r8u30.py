@@ -11,7 +11,7 @@ def spatial_data_analysis_with_r_chapter_8_unnumbered_30(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] ˓→66666666666666 +lon_0=-122 +x_0=2000000 +y_0=500000.0000000001 +datum=NAD83 +units=us-
+    Formula: [EQ] ˓->66666666666666 +lon_0=-122 +x_0=2000000 +y_0=500000.0000000001 +datum=NAD83 +units=us-
 
     Parameters
     ----------

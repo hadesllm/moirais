@@ -13,7 +13,7 @@ def sparse_diagonal(
     offsets: list | None = None,
     n: int | None = None,
 ) -> DescriptiveResult:
-    """We are what we repeatedly do. Excellence is a habit. — Aristotle"""
+    """We are what we repeatedly do. Excellence is a habit. -- Aristotle"""
     if offsets is None:
         offsets = [0]
     if not isinstance(diags[0], np.ndarray):

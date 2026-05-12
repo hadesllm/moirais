@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Indirect age-adjustment via Standardized Mortality Ratio (SMR)."""
 
 import numpy as np
@@ -13,7 +13,7 @@ def indirect_age_adjustment(
     population: np.ndarray,
     confidence: float = 0.95,
 ) -> ESRes:
-    """Indirect age-standardization via the Standardized Mortality Ratio.
+    r"""Indirect age-standardization via the Standardized Mortality Ratio.
 
     .. math::
 

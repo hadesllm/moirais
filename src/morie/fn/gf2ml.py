@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GF(2) matrix multiplication."""
 
 from __future__ import annotations

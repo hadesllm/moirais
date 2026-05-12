@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mahalanobis distance. 'Judge me by my size, do you?'"""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def mahalanobis_dist(x: np.ndarray, data: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Compute the Mahalanobis distance of a point from a dataset.
 
     .. math::

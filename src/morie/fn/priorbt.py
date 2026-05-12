@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Beta-Binomial conjugate update with R-style verbose result."""
 
 

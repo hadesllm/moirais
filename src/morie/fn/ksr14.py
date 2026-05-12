@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Profile likelihood for the linear-regression slope (Kosorok 2008, Ch 7).
 
 In Y = beta X + eps with eps ~ N(0, sigma^2), profiling out sigma^2

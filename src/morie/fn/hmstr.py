@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stratified sampling preserves class/strata proportions in each split."""
 import numpy as np
 from ._richresult import RichResult

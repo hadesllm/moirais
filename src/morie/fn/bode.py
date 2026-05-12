@@ -1,11 +1,11 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bode magnitude and phase plot computation."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Time discovers truth. — Seneca"
+_QUOTE = "Time discovers truth. -- Seneca"
 
 
 def bode_plot(
@@ -15,7 +15,7 @@ def bode_plot(
     n_points: int = 500,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute Bode magnitude and phase for a transfer function.
 
     Evaluates :math:`H(j\\omega) = N(j\\omega) / D(j\\omega)` over a range

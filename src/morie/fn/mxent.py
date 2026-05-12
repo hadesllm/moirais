@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maximum entropy distribution subject to moment constraints."""
 
 __all__ = ["mxent"]
@@ -13,7 +13,7 @@ def mxent(
     *,
     tol: float = 1e-10,
 ) -> dict:
-    """
+    r"""
     Find the maximum entropy distribution on a finite support.
 
     Solves:

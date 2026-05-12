@@ -1,4 +1,4 @@
-"""Unfolding model — ideal point estimation from preference data."""
+"""Unfolding model -- ideal point estimation from preference data."""
 
 from __future__ import annotations
 

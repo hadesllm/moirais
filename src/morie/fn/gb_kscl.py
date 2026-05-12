@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """KS test critical values D_{n,alpha}: exact for n <= 40, asymptotic for n > 40."""
 import numpy as np
 from scipy import stats

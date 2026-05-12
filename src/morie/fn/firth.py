@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Firth penalized logistic regression. 'Statistics is the grammar of science. — Karl Pearson'"""
+# morie.fn -- function file (hadesllm/morie)
+"""Firth penalized logistic regression. 'Statistics is the grammar of science. -- Karl Pearson'"""
 
 from __future__ import annotations
 

@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_20_unnumbered_733(x):
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: [EQ] 0.1432 + 0.3772 = 5.9 and −→t = (6.400 − 6.005) − 2√
+    Formula: [EQ] 0.1432 + 0.3772 = 5.9 and −->t = (6.400 − 6.005) − 2√
 
     Parameters
     ----------

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius"""
+# morie.fn -- function file (hadesllm/morie)
+"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
 
 from __future__ import annotations
 
@@ -78,4 +78,4 @@ gls = generalized_ls
 
 
 def cheatsheet() -> str:
-    return "Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius"
+    return "Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"

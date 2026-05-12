@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""OTIS demographic summary — region x age x gender counts."""
+# morie.fn -- function file (hadesllm/morie)
+"""OTIS demographic summary -- region x age x gender counts."""
 
 from __future__ import annotations
 
@@ -42,4 +42,4 @@ def otis_demographic_summary(
 
 
 def cheatsheet() -> str:
-    return "otis_demographic_summary({}) -> OTIS demographic summary — region x age x gender counts."
+    return "otis_demographic_summary({}) -> OTIS demographic summary -- region x age x gender counts."

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Continued pretraining on domain corpus with MLM objective before fine-tuning."""
 import numpy as np
 from ._richresult import RichResult

@@ -11,7 +11,7 @@ def legal_ontology_chapter_10_unnumbered_9(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: <meta id="metalex_idtipo115252488" name="Study the past if you would define the future. — Confucius"
+    Formula: <meta id="metalex_idtipo115252488" name="Study the past if you would define the future. -- Confucius"
 
     Parameters
     ----------

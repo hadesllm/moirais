@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: [EQ] Now E(Xn) = 4/(n + 4) + 1 → 1.
+    Formula: [EQ] Now E(Xn) = 4/(n + 4) + 1 -> 1.
 
     Parameters
     ----------

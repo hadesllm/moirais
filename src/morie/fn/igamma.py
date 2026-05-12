@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Regularised lower incomplete gamma."""
 
 from scipy.special import gammainc

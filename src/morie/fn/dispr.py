@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Disparity fit via isotonic regression. 'Detroit Smash!' -- All Might, My Hero Academia"""
 
 from __future__ import annotations

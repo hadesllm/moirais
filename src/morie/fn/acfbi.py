@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Biased autocorrelation function."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Always pass on what you have learned."
 
 
 def acf_biased(x, maxlag: int | None = None, **kwargs) -> DescriptiveResult:
-    """Compute the biased autocorrelation function.
+    r"""Compute the biased autocorrelation function.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Isomap embedding. 'Truly wonderful the mind of a child is.'"""
 
 from __future__ import annotations

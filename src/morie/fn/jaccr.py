@@ -1,15 +1,15 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Jaccard similarity index."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"
+_QUOTE = "Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"
 
 
 def jaccard_similarity(set_a, set_b, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the Jaccard similarity index between two sets.
 
     .. math::

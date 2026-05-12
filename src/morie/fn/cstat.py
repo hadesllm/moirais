@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 cstat.py - Harrell's concordance statistic (C-index) for survival models.
 

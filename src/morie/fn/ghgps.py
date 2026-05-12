@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Gaussian-process regression — squared-exponential kernel."""
+# morie.fn -- function file (hadesllm/morie)
+"""Gaussian-process regression -- squared-exponential kernel."""
 import numpy as np
 from ._richresult import RichResult
 

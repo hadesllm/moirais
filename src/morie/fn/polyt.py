@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polya tree prior construction. 'Tree, I am not.'"""
 
 from __future__ import annotations

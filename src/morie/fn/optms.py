@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"""
+# morie.fn -- function file (hadesllm/morie)
+"""Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"""
 
 from __future__ import annotations
 

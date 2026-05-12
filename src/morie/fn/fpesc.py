@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Final Prediction Error for AR model order selection."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "A long time ago in a galaxy far, far away."
 
 
 def fpe_score_fn(x: np.ndarray, max_order: int = 20) -> DescriptiveResult:
-    """Compute Akaike's Final Prediction Error for AR orders 1..max_order.
+    r"""Compute Akaike's Final Prediction Error for AR orders 1..max_order.
 
     .. math::
 

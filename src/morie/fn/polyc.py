@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polychoric correlation (two-step approximation)."""
 
 from __future__ import annotations

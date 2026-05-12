@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Geometric distribution cumulative distribution function."""
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ def pgeom(q: Union[int, np.ndarray], prob: float, lower_tail: bool = True, cdf=N
     Mirrors R's ``pgeom(q, prob, lower.tail)`` where q is the number
     of failures before the first success.
 
-    :param q: Quantile(s) — number of failures.
+    :param q: Quantile(s) -- number of failures.
     :param prob: Probability of success (0 < prob <= 1).
     :param lower_tail: If True (default) return P(X <= q); else P(X > q).
     :return: CDF value(s).

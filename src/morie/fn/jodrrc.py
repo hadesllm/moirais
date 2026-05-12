@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DirRec hybrid: direct per horizon, but include previous prediction as input."""
 import numpy as np
 from ._richresult import RichResult

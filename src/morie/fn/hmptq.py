@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Static post-training quantization (PTQ) using calibration data."""
 import numpy as np
 from ._richresult import RichResult

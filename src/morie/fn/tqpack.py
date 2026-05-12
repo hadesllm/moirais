@@ -25,7 +25,7 @@ def turboquant_bit_pack_indices(indices, bits):
 
     References
     ----------
-    TurboQuant MORIE integration — pack_indices
+    TurboQuant MORIE integration -- pack_indices
     """
     indices = np.atleast_1d(np.asarray(indices, dtype=float))
     n = len(indices)

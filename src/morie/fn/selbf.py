@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Everything flows. — Heraclitus"""
+# morie.fn -- function file (hadesllm/morie)
+"""Everything flows. -- Heraclitus"""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ def selection_bias_factor(
     p_selected: float,
     outcome_diff: float,
 ) -> DescriptiveResult:
-    """
+    r"""
     Quantify selection bias as a multiplicative factor.
 
     When selection into a study depends on both treatment and outcome,
@@ -64,4 +64,4 @@ selbf = selection_bias_factor
 
 
 def cheatsheet() -> str:
-    return "selection_bias_factor({}) -> Selection bias factor. 'Look well into thyself; there is a source which will always spring up. — Marcus Aurelius' -- "
+    return "selection_bias_factor({}) -> Selection bias factor. 'Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius' -- "

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Equivalence of Mann-Whitney U and Wilcoxon rank-sum W: W = U + m(m+1)/2."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cryptographic hash (SHA-256). 'Some doors are meant to stay closed.' -- Lock"""
 
 from __future__ import annotations

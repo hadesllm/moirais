@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """McNemar's test for paired proportions."""
 
 from __future__ import annotations

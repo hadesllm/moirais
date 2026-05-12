@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random common cause refutation: add random confounder, check estimate stability."""
 import numpy as np
 from ._richresult import RichResult

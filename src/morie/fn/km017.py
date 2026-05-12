@@ -1,4 +1,4 @@
-"""Ffn relu.."""
+r"""Ffn relu.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_ffn_relu"]
 
 
 def kamath_ch2_ffn_relu(z, W_1, W_2, b_1, b_2):
-    """
+    r"""
     Ffn relu.
 
     Formula: F(z) = \mathrm{ReLU}(zW_1 + b_1)W_2 + b_2
@@ -33,7 +33,7 @@ def kamath_ch2_ffn_relu(z, W_1, W_2, b_1, b_2):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.17, p. 37
-    """
+    r"""
     z = np.atleast_1d(np.asarray(z, dtype=float))
     n = len(z)
     result = float(np.mean(z))

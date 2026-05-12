@@ -1,21 +1,21 @@
-"""morie.tps_io — multi-format readers for TPS open-data exports.
+"""morie.tps_io -- multi-format readers for TPS open-data exports.
 
 Each TPS category at data/datasets/TPS/<Category>/ has 9 sibling format
 exports of the same incident records:
 
-    CSV               — pandas.read_csv (canonical fast path)
-    Excel             — pandas.read_excel via openpyxl
-    GeoJSON           — pure JSON, geometry as Python list-of-coords
-    FeatureCollection — ESRI JSON variant of GeoJSON
-    KML / KMZ         — zipfile + ElementTree, geometry as coord list
-    GeoPackage        — sqlite3, geometry stored as WKB blobs
-    SQLiteGeodatabase — sqlite3, ESRI variant of GeoPackage
-    Shapefile         — needs pyshp; graceful degrade if not installed
-    FileGeoDatabase   — needs fiona / gdal; graceful degrade
+    CSV               -- pandas.read_csv (canonical fast path)
+    Excel             -- pandas.read_excel via openpyxl
+    GeoJSON           -- pure JSON, geometry as Python list-of-coords
+    FeatureCollection -- ESRI JSON variant of GeoJSON
+    KML / KMZ         -- zipfile + ElementTree, geometry as coord list
+    GeoPackage        -- sqlite3, geometry stored as WKB blobs
+    SQLiteGeodatabase -- sqlite3, ESRI variant of GeoPackage
+    Shapefile         -- needs pyshp; graceful degrade if not installed
+    FileGeoDatabase   -- needs fiona / gdal; graceful degrade
 
 This module returns a `pandas.DataFrame` for every format, with the
 geometry (when available) attached as a `geometry` column whose values
-are simple Python lists/tuples — no shapely / geopandas dependency.
+are simple Python lists/tuples -- no shapely / geopandas dependency.
 
 For NeighbourhoodCrimeRates the geometry is `Polygon`; for incident
 datasets the geometry is `Point`. Either way, the geometry column
@@ -150,7 +150,7 @@ def _kml_to_dataframe(xml_text: str, nrows: int | None) -> pd.DataFrame:
     rows = []
     for pm in placemarks:
         row: dict[str, Any] = {}
-        # ExtendedData → SimpleData
+        # ExtendedData -> SimpleData
         for sd in pm.findall(".//kml:SimpleData", _KML_NS):
             row[sd.attrib.get("name", "data")] = sd.text
         # Try geometry
@@ -206,7 +206,7 @@ def _wkb_point(blob: bytes) -> tuple[float, float] | None:
             return None
         # Skip GPKG flag header if present (starts with b'GP')
         if blob[:2] == b"GP":
-            # GPKG envelope/header — skip past to WKB body. Header has
+            # GPKG envelope/header -- skip past to WKB body. Header has
             # variable size; locate first 0x01 (LE) or 0x00 (BE) WKB byte
             # after the envelope. Simplification: WKB body usually starts
             # at offset 8 + 4*envelope_size. Use a tolerant scan: skip
@@ -357,7 +357,7 @@ def load_tps(name: str, format: str = "csv",
     name   : "Assault", "Homicides", … (case-insensitive)
     format : one of csv | excel | geojson | featurecollection |
              kml | geopackage | sqlitegeodatabase | shapefile.
-             "filegeodatabase" requires fiona/gdal — not supported on
+             "filegeodatabase" requires fiona/gdal -- not supported on
              this build.
     nrows  : sample size cap; None = full dataset.
     """
@@ -375,7 +375,7 @@ def load_tps(name: str, format: str = "csv",
 
 
 def list_tps_formats(name: str) -> dict[str, Path]:
-    """Map format name → path of the file that would be loaded.
+    """Map format name -> path of the file that would be loaded.
     For formats not present on disk, the path is omitted from the dict.
     """
     out: dict[str, Path] = {}

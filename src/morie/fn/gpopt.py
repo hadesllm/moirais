@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gaussian process Bayesian optimization."""
 
 from __future__ import annotations
@@ -53,7 +53,7 @@ def gp_optimize(
     noise: float = 1e-6,
     seed: int = 42,
 ) -> dict[str, Any]:
-    """
+    r"""
     Bayesian optimization using a Gaussian process surrogate.
 
     Uses Expected Improvement (EI) as the acquisition function:

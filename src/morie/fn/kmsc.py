@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Self-consistency decoding: sample N CoT traces and majority-vote the answer."""
 import numpy as np
 from ._richresult import RichResult

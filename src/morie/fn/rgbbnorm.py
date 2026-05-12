@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Normal versus ectopic beat classification with LDA and Bayes."""
 import numpy as np
 from ._richresult import RichResult

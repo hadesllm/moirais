@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (g) n : Z → N where n(x) = x2 − 2x + 1
+    Formula: [EQ] (g) n : Z -> N where n(x) = x2 − 2x + 1
 
     Parameters
     ----------

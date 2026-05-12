@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""We suffer more often in imagination than in reality. — Seneca"""
+# morie.fn -- function file (hadesllm/morie)
+"""We suffer more often in imagination than in reality. -- Seneca"""
 
 from __future__ import annotations
 

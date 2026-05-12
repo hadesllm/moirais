@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RMS normalization."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def rms_norm(
     eps: float = 1e-6,
     weight: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """Apply Root Mean Square Layer Normalization.
+    r"""Apply Root Mean Square Layer Normalization.
 
     :math:`\\text{RMSNorm}(x) = \\frac{x}{\\sqrt{\\frac{1}{d}\\sum x_i^2 + \\epsilon}} \\odot \\gamma`
 

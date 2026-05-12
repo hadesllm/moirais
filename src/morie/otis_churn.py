@@ -1,21 +1,21 @@
-"""morie.otis_churn — Goffmanian institutional-churn analyses on OTIS.
+"""morie.otis_churn -- Goffmanian institutional-churn analyses on OTIS.
 
 Goffman (1961) describes 'total institutions' as totalizing environments
 that produce a *cyclical* relationship to the inmate. This module
 operationalises the cyclical / mortifying / embedding dimensions as
 formal statistical tests:
 
-    repeat_placement_concentration(b09)   — Gini + power-law fit + KS test
-    within_year_placement_count(b01)      — per-(id,year) cell-size distribution
-    within_year_region_diversity(b01)     — intra-year region cycling
-    mortification_cooccurrence(b01)       — joint alert chi² + Cramer's V
-    disciplinary_medical_overlap(b01)     — disc × med-protect co-occurrence
-    embedding_distribution(b02)           — total-days survival (lognormal vs Pareto AIC)
-    intra_year_transition_matrix(a01)     — Markov regA→regA' within FY
-    path_complexity_gini(b01)             — Gini split by (year × region)
-    region_alert_state_richness(b01)      — distinct (region × combo) per cell
-    regC_demog_contingency(b01)           — multi-region × Gender × Age χ²
-    irr_glmm_vm(b01)                      — Poisson + NB IRR for vm
+    repeat_placement_concentration(b09)   -- Gini + power-law fit + KS test
+    within_year_placement_count(b01)      -- per-(id,year) cell-size distribution
+    within_year_region_diversity(b01)     -- intra-year region cycling
+    mortification_cooccurrence(b01)       -- joint alert chi² + Cramer's V
+    disciplinary_medical_overlap(b01)     -- disc × med-protect co-occurrence
+    embedding_distribution(b02)           -- total-days survival (lognormal vs Pareto AIC)
+    intra_year_transition_matrix(a01)     -- Markov regA->regA' within FY
+    path_complexity_gini(b01)             -- Gini split by (year × region)
+    region_alert_state_richness(b01)      -- distinct (region × combo) per cell
+    regC_demog_contingency(b01)           -- multi-region × Gender × Age χ²
+    irr_glmm_vm(b01)                      -- Poisson + NB IRR for vm
 
 Each emits a RichResult.
 
@@ -92,7 +92,7 @@ def _parse_placement_bin(label: str) -> float:
 
 
 def repeat_placement_concentration(df: pd.DataFrame | None = None) -> RichResult:
-    """Goffman's 'cyclical inmate' — heavy concentration of placements
+    """Goffman's 'cyclical inmate' -- heavy concentration of placements
     among a small fraction of individuals.
 
     Uses OTIS b09 (NumberPlacements × NumberIndividuals).
@@ -133,7 +133,7 @@ def repeat_placement_concentration(df: pd.DataFrame | None = None) -> RichResult
     return RichResult(
         title="Goffmanian: repeat-placement concentration",
         summary_lines=[
-            ("OTIS source", "b09 — placements per individual"),
+            ("OTIS source", "b09 -- placements per individual"),
             ("Individuals (in seg)", int(n)),
             ("Mean placements/person", round(float(expanded.mean()), 2)),
             ("Median placements/person", float(np.median(expanded))),
@@ -151,7 +151,7 @@ def repeat_placement_concentration(df: pd.DataFrame | None = None) -> RichResult
             f"Gini = {g:.3f} on placements/person. Goffmanian total-"
             "institution dynamics predict heavy-tail concentration "
             "(few individuals account for many placements). "
-            f"Power-law α ≈ {alpha:.2f} — typical Goffmanian range is "
+            f"Power-law α ≈ {alpha:.2f} -- typical Goffmanian range is "
             "1.5–2.5 (preferential-attachment-style cycling). KS-test "
             f"p={ks_p:.4f} against exponential null: rejection ⇒ "
             "non-exponential heavy tail."
@@ -171,7 +171,7 @@ def within_year_placement_count(df: pd.DataFrame | None = None) -> RichResult:
     Because OTIS `UniqueIndividual_ID` is anonymised per fiscal year
     (`YYYY-XXXXX-AA`), each (id, year) cell is one anonymous person-year.
     This metric describes how concentrated the placements are *within*
-    a fiscal year — Goffman's intra-year cycling. Cross-year readmission
+    a fiscal year -- Goffman's intra-year cycling. Cross-year readmission
     is **not measurable** in OTIS by design. See OTIS_LINKAGE.md.
     """
     df = df if df is not None else _load("b01")
@@ -236,7 +236,7 @@ def within_year_region_diversity(df: pd.DataFrame | None = None) -> RichResult:
 
     Because OTIS `UniqueIndividual_ID` is anonymised per fiscal year
     (`YYYY-XXXXX-AA`), this metric measures **intra-year** region
-    cycling only — not multi-year mobility. See OTIS_LINKAGE.md.
+    cycling only -- not multi-year mobility. See OTIS_LINKAGE.md.
     """
     df = df if df is not None else _load("b01")
     if "Region_AtTimeOfPlacement" not in df.columns or \
@@ -271,7 +271,7 @@ def within_year_region_diversity(df: pd.DataFrame | None = None) -> RichResult:
         interpretation=(
             f"{100*(n_regions_per > 1).mean():.1f}% of person-years involve "
             "movement across more than one region within the same fiscal "
-            "year — intra-year cross-staff-regime mobility. Multi-year "
+            "year -- intra-year cross-staff-regime mobility. Multi-year "
             "mobility cannot be measured because OTIS IDs are year-locked."
         ),
         warnings=[
@@ -398,7 +398,7 @@ def disciplinary_medical_overlap(df: pd.DataFrame | None = None) -> RichResult:
             "Goffman's 'tinkering trades' surface where punitive and "
             "therapeutic logics co-classify the same person. "
             f"Cramer's V={cramer_v:.3f} measures their dependence. "
-            f"χ² p={p:.4g} — rejection ⇒ joint flagging is non-random."
+            f"χ² p={p:.4g} -- rejection ⇒ joint flagging is non-random."
         ),
     )
 
@@ -475,7 +475,7 @@ def embedding_distribution(df: pd.DataFrame | None = None) -> RichResult:
 
 
 def _binarise(s: pd.Series) -> pd.Series:
-    """Tolerant 'Yes/No/True/False' → 0/1."""
+    """Tolerant 'Yes/No/True/False' -> 0/1."""
     if pd.api.types.is_numeric_dtype(s):
         return (s.fillna(0).astype(int) > 0).astype(int)
     return s.astype(str).str.strip().str.lower().isin(
@@ -483,7 +483,7 @@ def _binarise(s: pd.Series) -> pd.Series:
 
 
 def intra_year_transition_matrix(df: pd.DataFrame | None = None) -> RichResult:
-    """Knowledge itself is power. — Francis Bacon"""
+    """Knowledge itself is power. -- Francis Bacon"""
     df = df if df is not None else _load("a01")
     needed = {"UniqueIndividual_ID", "EndFiscalYear",
               "Region_AtTimeOfPlacement"}
@@ -543,7 +543,7 @@ def intra_year_transition_matrix(df: pd.DataFrame | None = None) -> RichResult:
             ("Stationary π (regA)", stationary),
         ],
         tables=[{
-            "title": "Transition probability matrix P(regA→regA'):",
+            "title": "Transition probability matrix P(regA->regA'):",
             "headers": ["from \\ to"] + regions,
             "rows": [[r] + [round(float(P.loc[r, c]), 3) for c in regions]
                      for r in regions],
@@ -553,7 +553,7 @@ def intra_year_transition_matrix(df: pd.DataFrame | None = None) -> RichResult:
             f"{100*diag_share:.1f}% (diagonal share). The off-diagonal "
             f"mass is concentrated with Theil-T = {theil:.3f} "
             "(higher = more concentrated transitions, lower = more uniform "
-            "cross-region mixing). All transitions are intra-year — see "
+            "cross-region mixing). All transitions are intra-year -- see "
             "OTIS_LINKAGE.md."
         ),
         payload={"diag_share": diag_share, "theil_off": theil,
@@ -669,7 +669,7 @@ def region_alert_state_richness(df: pd.DataFrame | None = None) -> RichResult:
         ],
         interpretation=(
             f"{100*(arr > 1).mean():.1f}% of person-years span multiple "
-            "(region × alert-combo) states within one fiscal year — a "
+            "(region × alert-combo) states within one fiscal year -- a "
             "Goffmanian sweep across institutional role-zones. Possible "
             "states = 5 regions × 8 combos = 40."
         ),
@@ -753,8 +753,8 @@ def regC_demog_contingency(df: pd.DataFrame | None = None) -> RichResult:
         }],
         interpretation=(
             "Cramer's V quantifies association strength of Gender and Age "
-            "with within-fiscal-year multi-region cycling. V≈0 → "
-            "independence, V→1 → strong association. All measures are "
+            "with within-fiscal-year multi-region cycling. V≈0 -> "
+            "independence, V->1 -> strong association. All measures are "
             "intra-year (OTIS IDs are year-locked)."
         ),
         payload={"frac_multi": float(cell["multi_region"].mean()),
@@ -816,9 +816,9 @@ def irr_glmm_vm(df: pd.DataFrame | None = None) -> RichResult:
                               round(float(model.aic), 2)])
         except Exception as e:  # noqa: BLE001
             out_rows.append([family_label, "fit failed",
-                              str(type(e).__name__), "—", "—"])
+                              str(type(e).__name__), "--", "--"])
     return RichResult(
-        title="IRR Poisson/NB GLM — vm ~ T_high_ac + demog",
+        title="IRR Poisson/NB GLM -- vm ~ T_high_ac + demog",
         summary_lines=[
             ("Cells (id × year)", int(py.shape[0])),
             ("Mean vm / cell", round(float(py[Y].mean()), 3)),

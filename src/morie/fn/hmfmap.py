@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Feature map output of a conv layer after activation."""
 import numpy as np
 from ._richresult import RichResult

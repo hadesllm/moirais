@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partial dependence plot (PDP) values.
 
 Computes the marginal effect of one or two features by averaging

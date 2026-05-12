@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heaps' law estimation."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def heaps_law(tokens: list[str], **kwargs) -> ESRes:
-    """
+    r"""
     Estimate Heaps' law parameters from a token sequence.
 
     .. math::

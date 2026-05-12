@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Special case symmetry when N even and a_i = i for i <= N/2, else N-i+1."""
 import numpy as np
 from ._richresult import RichResult

@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Difficulties strengthen the mind, as labor does the body. — Seneca"
+_QUOTE = "Difficulties strengthen the mind, as labor does the body. -- Seneca"
 
 
 def tensor_decompose(

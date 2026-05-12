@@ -1,4 +1,4 @@
-"""You have power over your mind — not outside events. — Marcus Aurelius"""
+"""You have power over your mind -- not outside events. -- Marcus Aurelius"""
 
 from __future__ import annotations
 

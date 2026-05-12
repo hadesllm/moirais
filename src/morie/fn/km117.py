@@ -1,4 +1,4 @@
-"""Bleu final.."""
+r"""Bleu final.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch8_bleu_final"]
 
 
 def kamath_ch8_bleu_final(BP, p_n, N):
-    """
+    r"""
     Bleu final.
 
     Formula: \mathrm{BLEU} = \mathrm{BP}\cdot \exp(\sum_{n=1}^N \frac{1}{N}\log p_n)
@@ -29,7 +29,7 @@ def kamath_ch8_bleu_final(BP, p_n, N):
     References
     ----------
     Kamath et al (2024), Ch 8, Eq 8.5, p. 323
-    """
+    r"""
     BP = np.atleast_1d(np.asarray(BP, dtype=float))
     n = len(BP)
     result = float(np.mean(BP))

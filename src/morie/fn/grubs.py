@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Grubbs' test for a single outlier."""
 
 from typing import Union
@@ -14,7 +14,7 @@ def grubbs_test(
     *,
     alpha: float = 0.05,
 ) -> TestResult:
-    """
+    r"""
     Grubbs' test for detecting a single outlier.
 
     Tests whether the value farthest from the sample mean is an outlier.

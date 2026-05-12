@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BERT next-sentence-prediction binary cross-entropy loss."""
 import numpy as np
 from ._richresult import RichResult

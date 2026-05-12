@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Standard error of theta at each ability level."""
 
 from __future__ import annotations

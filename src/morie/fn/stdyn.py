@@ -10,7 +10,7 @@ def stdyn(
     obs_noise: float = 1.0,
     state_noise: float = 0.1,
 ) -> dict:
-    """
+    r"""
     Fit a dynamic linear spatio-temporal model (state-space / Kalman).
 
     .. math::

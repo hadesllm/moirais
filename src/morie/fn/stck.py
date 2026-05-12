@@ -17,7 +17,7 @@ def stacking(
     Parameters
     ----------
     X : ndarray
-        Original features (unused — kept for API consistency).
+        Original features (unused -- kept for API consistency).
     y : ndarray
         True response.
     base_predictions : list[ndarray]

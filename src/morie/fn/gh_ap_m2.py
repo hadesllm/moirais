@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gibbs sampler: iteratively sample each parameter from full conditional."""
 import numpy as np
 from ._richresult import RichResult

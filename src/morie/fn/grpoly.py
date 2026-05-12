@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polynomial feature expansion up to given degree (no interactions)."""
 import numpy as np
 from ._richresult import RichResult

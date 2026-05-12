@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PY universal sequence via GEM distribution: residual allocation from PY."""
 import numpy as np
 from ._richresult import RichResult

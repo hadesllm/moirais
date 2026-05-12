@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] n ))2 = σ2/n + 1/n2 → 0
+    Formula: [EQ] n ))2 = σ2/n + 1/n2 -> 0
 
     Parameters
     ----------

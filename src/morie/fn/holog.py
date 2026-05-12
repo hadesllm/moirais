@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Holographic entanglement entropy (Ryu-Takayanagi)."""
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ def holographic_entropy(
     area: float = 1.0,
     G_N: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute holographic entanglement entropy via the Ryu-Takayanagi formula.
+    r"""Compute holographic entanglement entropy via the Ryu-Takayanagi formula.
 
     .. math::
 

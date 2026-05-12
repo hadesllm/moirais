@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """QR decomposition via Householder reflections."""
 
 from __future__ import annotations

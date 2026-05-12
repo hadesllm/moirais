@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayesian LASSO (Park & Casella 2008 Gibbs sampler, light version)."""
 from __future__ import annotations
 
@@ -10,7 +10,8 @@ __all__ = ["bayesian_lasso_full"]
 
 
 def bayesian_lasso_full(x, y, n_iter: int = 200, burn: int = 50,
-                        lam: float | None = None, seed: int = 0):
+                        lam: float | None = None, seed: int = 0,
+                        deterministic_seed: int | None = None):
     """Bayesian LASSO with a double-exponential (Laplace) prior on beta.
 
     Model::
@@ -19,8 +20,8 @@ def bayesian_lasso_full(x, y, n_iter: int = 200, burn: int = 50,
         tau_j^2               ~ Exp(lambda^2 / 2)
         lambda^2              ~ Gamma(r, s)
 
-    Park & Casella (2008) Gibbs sampler. A *short* chain — 200 iterations,
-    50 burn-in — is run; this gives sub-second runtime while still tracking
+    Park & Casella (2008) Gibbs sampler. A *short* chain -- 200 iterations,
+    50 burn-in -- is run; this gives sub-second runtime while still tracking
     the posterior mode within ~5% of a long chain on the canonical test
     inputs. For production use BGLR in R.
 
@@ -31,6 +32,12 @@ def bayesian_lasso_full(x, y, n_iter: int = 200, burn: int = 50,
     n_iter, burn : int
     lam : float, optional. If None, updated via empirical-Bayes Park-Casella step.
     seed : int
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged: the user-supplied ``seed`` drives a fresh
+        :class:`numpy.random.Generator`.
 
     Returns
     -------
@@ -42,7 +49,11 @@ def bayesian_lasso_full(x, y, n_iter: int = 200, burn: int = 50,
         681-686.
     Montesinos Lopez et al. (2022), Ch. 4.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("blasf", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     X = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float).ravel()
     if X.ndim == 1:
@@ -141,7 +152,7 @@ def bayesian_lasso_full(x, y, n_iter: int = 200, burn: int = 50,
             "p": p,
             "method": "Bayesian LASSO (Park-Casella Gibbs, short chain)",
         },
-        warnings=["Short chain (default 200 iters / 50 burn-in) — for "
+        warnings=["Short chain (default 200 iters / 50 burn-in) -- for "
                   "publication-grade posteriors use BGLR with ≥10k iters."],
     )
 

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Cumulative incidence function — non-parametric."""
+# morie.fn -- function file (hadesllm/morie)
+"""Cumulative incidence function -- non-parametric."""
 
 import numpy as np
 
@@ -67,4 +67,4 @@ def cumulative_incidence(time, event, group=None):
 
 
 def cheatsheet() -> str:
-    return "cumulative_incidence({}) -> Cumulative incidence function — non-parametric."
+    return "cumulative_incidence({}) -> Cumulative incidence function -- non-parametric."

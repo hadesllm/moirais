@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Disattenuation (correction for attenuation). 'Size matters not.'"""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def attenuation_ratio(
     rel_x: float,
     rel_y: float = 1.0,
 ) -> DescriptiveResult:
-    """
+    r"""
     Correct an observed correlation for measurement unreliability.
 
     .. math::

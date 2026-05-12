@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Compute all fit indices for any CFA structure."""
 
 from __future__ import annotations

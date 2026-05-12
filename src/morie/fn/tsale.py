@@ -6,7 +6,7 @@ import numpy as np
 
 
 def tsale(pmf: np.ndarray, q: float) -> dict:
-    """
+    r"""
     Compute Tsallis entropy of order q.
 
     .. math::

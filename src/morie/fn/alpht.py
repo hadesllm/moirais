@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayesian prior elicitation. 'The wisdom of ages.' -- Alpha Trion"""
 
 from __future__ import annotations

@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: → θ. (ii) SupposeYn = √n(ˆθn−θ). Examine the
+    Formula: -> θ. (ii) SupposeYn = √n(ˆθn−θ). Examine the
 
     Parameters
     ----------

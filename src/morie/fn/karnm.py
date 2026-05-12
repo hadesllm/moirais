@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Karnaugh map grouping. 'No man ever steps in the same river twice. — Heraclitus' -- Chirrut Imwe"""
+# morie.fn -- function file (hadesllm/morie)
+"""Karnaugh map grouping. 'No man ever steps in the same river twice. -- Heraclitus' -- Chirrut Imwe"""
 
 from __future__ import annotations
 
@@ -75,4 +75,4 @@ short = karnaugh_map
 
 
 def cheatsheet() -> str:
-    return "He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche"
+    return "He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"

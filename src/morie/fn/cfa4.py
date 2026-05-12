@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """4-factor CFA using MAPQ structure (EE/EA/UA/ER)."""
 
 from __future__ import annotations

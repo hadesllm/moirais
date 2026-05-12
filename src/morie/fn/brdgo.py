@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bridge observations for cross-period ideal point comparison."""
 import numpy as np
 from ._richresult import RichResult

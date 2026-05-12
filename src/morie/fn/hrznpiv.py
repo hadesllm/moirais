@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonparametric IV model: Y=g(X)+U, E[U|W]=0."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DIF by age group via Mantel-Haenszel."""
 
 from __future__ import annotations

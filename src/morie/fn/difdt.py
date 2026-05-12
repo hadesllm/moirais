@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Delta plot method for DIF detection."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Curse of dimensionality in nonparametric regression: rate degrades with dimension."""
 import numpy as np
 from ._richresult import RichResult

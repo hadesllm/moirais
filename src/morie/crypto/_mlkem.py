@@ -1,4 +1,4 @@
-"""ML-KEM-768 (FIPS 203, formerly Kyber768) — pure-Python reference.
+"""ML-KEM-768 (FIPS 203, formerly Kyber768) -- pure-Python reference.
 
 NOT constant-time. NOT for production secrets. Educational/research only.
 Uses SHAKE-128/256 from hashlib (stdlib). No external dependencies.

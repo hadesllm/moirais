@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Custody transfer rate between regions per year."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def custody_transfer_rate(
     id_col: str = "unique_individual_id",
     year_col: str = "end_fiscal_year",
 ) -> pd.DataFrame:
-    """Transfer rate — individuals appearing in 2+ regions within a year.
+    """Transfer rate -- individuals appearing in 2+ regions within a year.
 
     Parameters
     ----------

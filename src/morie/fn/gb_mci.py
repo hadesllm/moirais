@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """McNemar test confidence interval for discordant proportion difference."""
 import numpy as np
 from scipy import stats

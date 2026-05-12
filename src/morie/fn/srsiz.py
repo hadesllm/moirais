@@ -1,4 +1,4 @@
-"""Hope in reality is the worst of all evils because it prolongs the torments of man. — Friedrich Nietzsche"""
+"""Hope in reality is the worst of all evils because it prolongs the torments of man. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ def sample_size_proportion(
     margin: float = 0.05,
     confidence: float = 0.95,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute required sample size for estimating a proportion.
 
     .. math::

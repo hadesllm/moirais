@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """TorchScript: statically-typed graph representation of PyTorch models."""
 import numpy as np
 from ._richresult import RichResult

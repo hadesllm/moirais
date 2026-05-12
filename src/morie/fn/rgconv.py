@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear convolution of two finite-length sequences."""
 import numpy as np
 from ._richresult import RichResult

@@ -9,13 +9,13 @@ __all__ = ["svm_kernel_trick"]
 def svm_kernel_trick(x, y, *, kernel="rbf", C=1.0, gamma="scale", degree=3, seed=0):
     """Kernel SVM via sklearn.svm.SVC.
 
-    K(x_i, x_j) — RBF: exp(-gamma ||x_i - x_j||^2);
+    K(x_i, x_j) -- RBF: exp(-gamma ||x_i - x_j||^2);
     poly: (gamma <x_i, x_j> + coef0)^degree; sigmoid: tanh(gamma <x_i,x_j>+coef0).
 
     Parameters
     ----------
     x : array-like (n, p).
-    y : array-like (n,) — binary labels.
+    y : array-like (n,) -- binary labels.
     kernel : {"rbf", "poly", "sigmoid", "linear"}.
     C : float
         Soft-margin regularization inverse.

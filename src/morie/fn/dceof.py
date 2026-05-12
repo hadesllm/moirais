@@ -1,15 +1,15 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sorensen-Dice coefficient."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Numbers have life; they're not just symbols on paper. — Shakuntala Devi"
+_QUOTE = "Numbers have life; they're not just symbols on paper. -- Shakuntala Devi"
 
 
 def dice_coefficient(set_a, set_b, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the Sorensen-Dice coefficient between two sets.
 
     .. math::

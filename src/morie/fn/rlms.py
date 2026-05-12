@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Least median of squares regression. 'The road up and the road down are the same thing. — Heraclitus' -- Chirrut Imwe"""
+# morie.fn -- function file (hadesllm/morie)
+"""Least median of squares regression. 'The road up and the road down are the same thing. -- Heraclitus' -- Chirrut Imwe"""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def lms_regression(X: np.ndarray, y: np.ndarray, n_subsets: int = 500, seed: int = 42) -> DescriptiveResult:
-    """
+    r"""
     Least Median of Squares (LMS) regression.
 
     Minimises :math:`\\mathrm{median}_i (y_i - X_i \\beta)^2` by
@@ -72,4 +72,4 @@ rlms = lms_regression
 
 
 def cheatsheet() -> str:
-    return "Nature does not hurry, yet everything is accomplished. — Lao Tzu"
+    return "Nature does not hurry, yet everything is accomplished. -- Lao Tzu"

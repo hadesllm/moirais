@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Jacobi iterative solver for diagonally dominant systems."""
 
 from __future__ import annotations
@@ -41,7 +41,7 @@ def jacobi_solve(
     n = int(b) if b.ndim == 0 else len(b)
     D = np.diag(A)
     if np.any(np.abs(D) < 1e-15):
-        raise ValueError("Zero diagonal element — Jacobi cannot proceed")
+        raise ValueError("Zero diagonal element -- Jacobi cannot proceed")
     R = A - np.diag(D)
     x = np.zeros(n)
     bnorm = np.linalg.norm(b)

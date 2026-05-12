@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Quantile regression: minimize pinball loss at target quantile."""
 import numpy as np
 from ._richresult import RichResult

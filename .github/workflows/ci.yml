@@ -1,5 +1,9 @@
 name: CI
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+
 # Triggers only on push to main (admin-merge already short-circuits PR review).
 # Path-restricted so docs-only / paper-only / sibling-workflow-only commits
 # don't fire a 5-10 min Python+R test cycle.

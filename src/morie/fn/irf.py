@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Impulse Response Function from a VAR coefficient matrix."""
 
 import numpy as np
@@ -10,7 +10,7 @@ def irf(
     shock_var: int = 0,
     shock_size: float = 1.0,
 ) -> np.ndarray:
-    """
+    r"""
     Impulse Response Function from a VAR(1) model.
 
     Computes the response of each variable to a one-unit shock in

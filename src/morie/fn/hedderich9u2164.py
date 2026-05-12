@@ -1,4 +1,4 @@
-"""PowerAndDesign expression (auto-extracted; see ref).."""
+r"""PowerAndDesign expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_2164"]
 
 
 def hedderich_chapter_9_unnumbered_2164(x):
-    """
+    r"""
     PowerAndDesign expression (auto-extracted; see ref).
 
     Formula: + c a t( " Sample size n1=" , n1 , " und n2=" , n2 , " \ n " ,

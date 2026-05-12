@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cohen's d effect size with R-style verbose result."""
 
 from typing import Sequence, Union
@@ -11,7 +11,7 @@ def cohend(x1: Union[Sequence[float], np.ndarray],
 
     d = (xbar1 - xbar2) / s_pooled
 
-    Returns RichResult — float(result) yields the d scalar; print()
+    Returns RichResult -- float(result) yields the d scalar; print()
     yields the multi-section guide. Conventional benchmarks: 0.2 small,
     0.5 medium, 0.8 large.
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wilcoxon signed-rank statistic T+ = sum R_i * I(D_i > 0)."""
 import numpy as np
 from scipy import stats

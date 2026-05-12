@@ -10,7 +10,7 @@ _QUOTE = "Already know you that which you need."
 
 
 def mobility(x, **kwargs) -> DescriptiveResult:
-    """Compute the Hjorth Mobility parameter.
+    r"""Compute the Hjorth Mobility parameter.
 
     .. math::
 

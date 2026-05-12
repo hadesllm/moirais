@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Backpropagation of errors to compute gradients."""
 import numpy as np
 from ._richresult import RichResult

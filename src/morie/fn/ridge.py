@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ridge regression (L2). 'Stay on target.' -- Gold Five"""
 
 from __future__ import annotations

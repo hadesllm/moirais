@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ghost signal detection in noise. 'I'm already dead.' -- Deadman"""
 
 from __future__ import annotations

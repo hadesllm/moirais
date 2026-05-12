@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Algorithm convergence diagnostics."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "No man ever steps in the same river twice. — Heraclitus"
+_QUOTE = "No man ever steps in the same river twice. -- Heraclitus"
 
 
 def algorithm_convergence(cost_history, **kwargs) -> DescriptiveResult:

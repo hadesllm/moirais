@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""That which does not kill us makes us stronger. — Friedrich Nietzsche"""
+# morie.fn -- function file (hadesllm/morie)
+"""That which does not kill us makes us stronger. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ def armor_optimize(
     bounds: list[tuple[float | None, float | None]] | None = None,
     max_iter: int = 1000,
 ) -> DescriptiveResult:
-    """Solve a linear program via the revised simplex (Phase I / Phase II).
+    r"""Solve a linear program via the revised simplex (Phase I / Phase II).
 
     Minimise :math:`c^T x` subject to :math:`A_{ub} x \\le b_{ub}`,
     :math:`A_{eq} x = b_{eq}`, and optional variable bounds.
@@ -127,4 +127,4 @@ ironm = armor_optimize
 
 
 def cheatsheet() -> str:
-    return "That which does not kill us makes us stronger. — Friedrich Nietzsche"
+    return "That which does not kill us makes us stronger. -- Friedrich Nietzsche"

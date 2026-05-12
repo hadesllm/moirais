@@ -2,7 +2,7 @@
 
 Pure ``httpx``-based client for a local Ollama instance running at
 ``localhost:11434``.  Provides model management (pull, list, remove),
-chat, and streaming — no external deps beyond ``httpx``.
+chat, and streaming -- no external deps beyond ``httpx``.
 
 This module backs the ``ollama`` provider slot in :mod:`morie.llm`.
 
@@ -89,7 +89,7 @@ class LocalOllama:
 
     @property
     def model(self) -> str:
-        """Active model — auto-detected from Ollama if not explicitly set."""
+        """Active model -- auto-detected from Ollama if not explicitly set."""
         if self._model_override:
             return self._model_override
         if self._model_detected is not None:

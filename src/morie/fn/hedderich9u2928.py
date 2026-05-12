@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_2928(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: HA : πi <π0 for at least onei →ˆB−=
+    Formula: HA : πi <π0 for at least onei ->ˆB−=
 
     Parameters
     ----------

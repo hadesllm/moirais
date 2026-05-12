@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fixed-effects (inverse-variance weighted) meta-analytic pooling."""
 
 import math

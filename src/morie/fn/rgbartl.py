@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bartlett averaging of periodograms for variance reduction."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Box-counting fractal dimension."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def box_counting_fd(x: np.ndarray, n_scales: int = 10) -> DescriptiveResult:
-    """Study the past if you would define the future. — Confucius"""
+    """Study the past if you would define the future. -- Confucius"""
     from morie._waveform import box_counting_fd as _backend
 
     fd = _backend(x, n_scales=n_scales)

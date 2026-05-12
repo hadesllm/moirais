@@ -1,4 +1,4 @@
-"""Back translation prob.."""
+r"""Back translation prob.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch3_back_translation_prob"]
 
 
 def kamath_ch3_back_translation_prob(t, thatt):
-    """
+    r"""
     Back translation prob.
 
     Formula: P(t) = P_{forward}(\hat{t}|t) \cdot P_{backward}(t|\hat{t})
@@ -27,7 +27,7 @@ def kamath_ch3_back_translation_prob(t, thatt):
     References
     ----------
     Kamath et al (2024), Ch 3, Eq 3.9, p. 105
-    """
+    r"""
     t = np.atleast_1d(np.asarray(t, dtype=float))
     n = len(t)
     result = float(np.mean(t))

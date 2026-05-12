@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Durbin-Watson autocorrelation test."""
 
 from __future__ import annotations

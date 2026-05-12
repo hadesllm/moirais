@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (7) limx→∞ FX, Y( x, y) = FY( y)( = P( Y ≤ y)).
+    Formula: [EQ] (7) limx->∞ FX, Y( x, y) = FY( y)( = P( Y ≤ y)).
 
     Parameters
     ----------

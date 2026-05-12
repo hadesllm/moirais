@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hebb's rule: connections strengthen when pre- and post-synaptic activities co-occur."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Network average shortest path length (BFS)."""
 
 from __future__ import annotations

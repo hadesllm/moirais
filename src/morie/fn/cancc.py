@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Canonical correlation analysis. 'No man ever steps in the same river twice. — Heraclitus'"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Canonical correlation analysis. 'No man ever steps in the same river twice. -- Heraclitus'"""
 
 from __future__ import annotations
 
@@ -71,4 +71,4 @@ cancc = canonical_correlation
 
 
 def cheatsheet() -> str:
-    return "He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche"
+    return "He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"

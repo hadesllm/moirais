@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Standardized mortality ratio (SMR) with CI."""
 
 import scipy.stats as stats

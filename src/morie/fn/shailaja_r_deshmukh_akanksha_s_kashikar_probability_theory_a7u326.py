@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: Observe that E(Xn) = 0 ∀ n ≥ 1 and hence E(Xn) → 0 = E(X)
+    Formula: Observe that E(Xn) = 0 ∀ n ≥ 1 and hence E(Xn) -> 0 = E(X)
 
     Parameters
     ----------

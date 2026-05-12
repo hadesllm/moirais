@@ -1,4 +1,4 @@
-"""Affect lm.."""
+r"""Affect lm.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_affect_lm"]
 
 
 def kamath_ch6_affect_lm(U, V, f, g, c, e, beta, b):
-    """
+    r"""
     Affect lm.
 
     Formula: P(w_t=i|c_{t-1},e_{t-1}) = \frac{\exp(U_i^T f(c_{t-1}) + \beta V_i^T g(e_{t-1}) + b_i)}{\sum_{j=1}^V \exp(U_j^T f(c_{t-1}) + \beta V_j^T g(e_{t-1}) + b_j)}
@@ -39,7 +39,7 @@ def kamath_ch6_affect_lm(U, V, f, g, c, e, beta, b):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.28, p. 253
-    """
+    r"""
     U = np.atleast_1d(np.asarray(U, dtype=float))
     n = len(U)
     result = float(np.mean(U))

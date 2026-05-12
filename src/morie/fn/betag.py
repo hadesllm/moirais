@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Beta regression for rates/proportions in (0,1)."""
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ def beta_regression(
     *,
     add_intercept: bool = True,
 ) -> RegressionResult:
-    """Beta regression via MLE (logit link).
+    r"""Beta regression via MLE (logit link).
 
     Models a response in (0, 1) with a Beta distribution parameterised
     by mean :math:`\\mu = \\text{logit}^{-1}(X\\beta)` and precision

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EMG onset detection via double threshold."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""Multi-head attention (scaled dot-product).
 
 Self-attention mechanism with multiple representation subspaces.

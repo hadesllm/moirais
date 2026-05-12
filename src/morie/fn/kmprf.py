@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prefix-LM attention mask: bidirectional over prefix, causal over completion."""
 import numpy as np
 from ._richresult import RichResult

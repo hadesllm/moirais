@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Process convolution model (Schabenberger & Gotway Ch 8)."""
 
 import numpy as np

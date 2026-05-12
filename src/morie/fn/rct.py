@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Restrictive confinement trends over time."""
 
 from __future__ import annotations

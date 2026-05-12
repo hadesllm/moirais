@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Odds ratio estimate and test for 2x2 contingency tables."""
 import numpy as np
 from scipy import stats

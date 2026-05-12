@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DW-NOMINATE ideal point estimation"""
 
 import numpy as np
@@ -28,7 +28,7 @@ def dw_nominate_score(votes=None, *, dims=2, n=10, m=5):
 
 short = "dwnmt"
 alias = "dw_nominate_score"
-quote = "Errors using inadequate data are much less than those using no data at all. — Charles Babbage"
+quote = "Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"
 dw_nominate_score = dw_nominate_score
 
 

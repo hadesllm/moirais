@@ -1,4 +1,4 @@
-"""Reward loss pairwise.."""
+r"""Reward loss pairwise.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch5_reward_loss_pairwise"]
 
 
 def kamath_ch5_reward_loss_pairwise(r_theta, x, y_0, y_1, i):
-    """
+    r"""
     Reward loss pairwise.
 
     Formula: \mathrm{loss}(r_{\theta}) = -E_{(x,y_0,y_1,i)\sim D}[\log(\sigma(r_{\theta}(x,y_i) - r_{\theta}(x,y_{1-i})))]
@@ -33,7 +33,7 @@ def kamath_ch5_reward_loss_pairwise(r_theta, x, y_0, y_1, i):
     References
     ----------
     Kamath et al (2024), Ch 5, Eq 5.1, p. 195
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

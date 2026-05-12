@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """MTEB aggregate: mean score across task categories."""
 import numpy as np
 from ._richresult import RichResult

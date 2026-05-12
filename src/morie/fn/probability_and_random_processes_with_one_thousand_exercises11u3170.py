@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: and Sn → ∞ a.s. if p> q. Note that Yn does not converge in mean, sinceE( Yn) = E( Y0) ̸= 0
+    Formula: and Sn -> ∞ a.s. if p> q. Note that Yn does not converge in mean, sinceE( Yn) = E( Y0) ̸= 0
 
     Parameters
     ----------

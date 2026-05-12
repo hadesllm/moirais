@@ -14,7 +14,7 @@ def subpopulation_estimate(
     outcome_col: str,
     weight_col: str,
 ) -> dict:
-    """
+    r"""
     Design-based estimate for a domain (subpopulation) mean.
 
     Treats domain membership as a 0/1 indicator and applies the Hajek

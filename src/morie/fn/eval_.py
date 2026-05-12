@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """E-value for unmeasured confounding (VanderWeele and Ding, 2017)."""
 
 import math
 
 
 def e_value(ate: float, se: float, *, null: float = 0.0) -> float:
-    """
+    r"""
     E-value for unmeasured confounding (VanderWeele & Ding, 2017).
 
     The E-value is the minimum strength of association (on the risk-ratio

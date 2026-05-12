@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """N-HiTS: Neural Hierarchical Interpolation for Time Series forecasting."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear mixed model general form (Eq 2.1): Y = Xbeta + Zu + epsilon."""
 import numpy as np
 from ._richresult import RichResult

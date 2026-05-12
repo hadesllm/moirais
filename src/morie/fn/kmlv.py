@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LLaVA visual instruction tuning: linear-project visual features as soft tokens into LLM."""
 import numpy as np
 from ._richresult import RichResult

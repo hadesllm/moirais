@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Empirical semivariogram estimation."""
 
 import numpy as np
@@ -14,7 +14,7 @@ def semivariogram(
     n_bins: int = 15,
     max_dist: float | None = None,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute the empirical (experimental) semivariogram.
 
     For each distance bin *h*:

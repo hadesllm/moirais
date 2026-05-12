@@ -12,6 +12,10 @@
 #' @param max_depth Depth of each tree.
 #' @param task "auto", "classification", or "regression".
 #' @param seed RNG seed.
+#' @param deterministic_seed Integer or NULL.  If supplied, the RNG state
+#'   is derived from the SHA-keyed [morie_det_rng()] so Py<->R streams
+#'   agree on the canonical fixture.  When `NULL` (default), behaviour
+#'   is unchanged: `seed` drives `set.seed()` directly.
 #' @return Named list: estimate, train_score, feature_importances,
 #'   n_estimators, learning_rate, max_depth, task, n, method.
 #' @importFrom stats predict
@@ -19,7 +23,8 @@
 gradient_boosting_ensemble <- function(x, y, n_estimators = 100L,
                                         learning_rate = 0.1,
                                         max_depth = 3L,
-                                        task = "auto", seed = 0L) {
+                                        task = "auto", seed = 0L,
+                                        deterministic_seed = NULL) {
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)
   x <- as.matrix(x)
   if (identical(task, "auto")) {
@@ -27,7 +32,11 @@ gradient_boosting_ensemble <- function(x, y, n_estimators = 100L,
               "classification" else "regression"
   }
   n <- nrow(x)
-  set.seed(seed)
+  if (!is.null(deterministic_seed)) {
+    morie_det_rng("gbens", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   if (requireNamespace("gbm", quietly = TRUE)) {
     df <- as.data.frame(x); df$.y <- if (task == "classification") as.numeric(as.factor(y)) - 1 else as.numeric(y)
     distribution <- if (task == "classification") "bernoulli" else "gaussian"

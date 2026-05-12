@@ -11,7 +11,7 @@ def analysis_of_categorical_data_with_r_chapman_hall_crc_christo_chapter_4_unnum
     """
     Regression expression (auto-extracted; see ref).
 
-    Formula: model matrices—for example the matrixX in the linear model specificationY = Xβ + ϵ—may appreciate
+    Formula: model matrices--for example the matrixX in the linear model specificationY = Xβ + ϵ--may appreciate
 
     Parameters
     ----------

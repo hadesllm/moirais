@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_9_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: bn = n1+δ with δ > 0 then V ar(Sn/bn) → 0 and the WLLN holds
+    Formula: bn = n1+δ with δ > 0 then V ar(Sn/bn) -> 0 and the WLLN holds
 
     Parameters
     ----------

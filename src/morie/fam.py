@@ -1,4 +1,4 @@
-"""Pure-httpx OllamaFreeAPI client — no pydantic/Rust dependencies.
+"""Pure-httpx OllamaFreeAPI client -- no pydantic/Rust dependencies.
 
 Drop-in replacement for the ``ollamafreeapi`` pip package.  Uses the same
 bundled JSON model registry and the standard Ollama ``/api/generate``

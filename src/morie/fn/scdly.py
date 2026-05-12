@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Surveillance case reporting delay distribution."""
 
 from __future__ import annotations

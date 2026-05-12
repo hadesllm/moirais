@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 2.4: MISE of bias-reduced KDFE is smaller than standard KDFE."""
 import numpy as np
 from ._richresult import RichResult

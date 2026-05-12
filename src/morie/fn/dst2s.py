@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Distance to squared element-wise. 'Believe it!' -- Naruto, Naruto"""
 
 from __future__ import annotations

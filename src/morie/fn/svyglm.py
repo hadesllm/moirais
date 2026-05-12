@@ -1,4 +1,4 @@
-"""Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"""
+"""Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"""
 
 from morie.survey import complex_survey_glm as _fn
 

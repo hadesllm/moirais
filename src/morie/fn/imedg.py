@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Edge detection via Sobel or Prewitt operators. 'Your focus determines your reality.' -- Qui-Gon Jinn"""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ _PREWITT_Y = np.array([[-1, -1, -1], [0, 0, 0], [1, 1, 1]], dtype=float)
 
 
 def edge_detect(image: np.ndarray, method: str = "sobel") -> DescriptiveResult:
-    """
+    r"""
     Detect edges in a grayscale image using Sobel or Prewitt operators.
 
     Computes horizontal and vertical gradients :math:`G_x, G_y` then

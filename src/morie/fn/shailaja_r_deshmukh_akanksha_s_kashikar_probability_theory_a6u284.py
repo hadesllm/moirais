@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_6_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: with P (N) = 0, Xn(ω) → 0. Hence by Toeplitz’ lemma withbn = 1,
+    Formula: with P (N) = 0, Xn(ω) -> 0. Hence by Toeplitz’ lemma withbn = 1,
 
     Parameters
     ----------

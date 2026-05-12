@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Adaptive segmentation of PCG signals via SEM."""
 import numpy as np
 from ._richresult import RichResult

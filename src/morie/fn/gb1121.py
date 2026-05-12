@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kendall tau coefficient T = (concordant - discordant pairs) / C(n,2)."""
 import numpy as np
 from ._richresult import RichResult

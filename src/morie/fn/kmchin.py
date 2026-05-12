@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chinchilla compute-optimal parameter/token ratio (N tokens per param)."""
 import numpy as np
 from ._richresult import RichResult

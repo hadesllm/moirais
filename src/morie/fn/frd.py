@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fuzzy regression discontinuity design."""
 
 from __future__ import annotations

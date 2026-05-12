@@ -11,7 +11,7 @@ def statistics_fourth_edition_david_freeman_robert_pisani_and_ro_chapter_7_unnum
     """
     PowerAndDesign expression (auto-extracted; see ref).
 
-    Formula: 6. χ 2 ≈ 18.6, d = 5, P < 1%—although for most purposes, the die is as fair as
+    Formula: 6. χ 2 ≈ 18.6, d = 5, P < 1%--although for most purposes, the die is as fair as
 
     Parameters
     ----------

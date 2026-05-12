@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayes factor for parametric vs nonparametric model: BF consistent for model selection."""
 import numpy as np
 from ._richresult import RichResult

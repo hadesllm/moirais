@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Queen contiguity spatial weights matrix from adjacency list."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Region of Practical Equivalence (ROPE) analysis."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """BIC-based Bayes factor approximation."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def bayes_factor_bic(
     bic_null: float,
     bic_alt: float,
 ) -> dict[str, Any]:
-    """
+    r"""
     Approximate Bayes factor from BIC values of two competing models.
 
     .. math::

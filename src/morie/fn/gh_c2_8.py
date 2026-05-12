@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayesian nonparametric normal regression prior: Y|X ~ N(f(X), sigma^2), f ~ GP."""
 import numpy as np
 from ._richresult import RichResult

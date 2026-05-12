@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Competing risks — Cumulative Incidence Function (CIF)."""
+# morie.fn -- function file (hadesllm/morie)
+"""Competing risks -- Cumulative Incidence Function (CIF)."""
 
 import numpy as np
 
@@ -9,7 +9,7 @@ def crisk(
     event: np.ndarray,
     alpha: float = 0.05,
 ) -> dict:
-    """
+    r"""
     Cumulative Incidence Function for competing risks.
 
     Uses the Aalen-Johansen estimator.  For cause *k*:
@@ -106,4 +106,4 @@ def crisk(
 
 
 def cheatsheet() -> str:
-    return "crisk({}) -> Competing risks — Cumulative Incidence Function (CIF)."
+    return "crisk({}) -> Competing risks -- Cumulative Incidence Function (CIF)."

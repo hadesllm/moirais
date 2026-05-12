@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Identity by descent (IBD) estimation from SNP data."""
 
 __all__ = ["ibd"]

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Markov decision process (S, A, P, R, gamma)."""
 import numpy as np
 from ._richresult import RichResult

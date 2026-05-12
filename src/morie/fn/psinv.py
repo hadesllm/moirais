@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moore-Penrose pseudoinverse."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"
+_QUOTE = "Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"
 
 
 def pseudo_inverse(A, **kwargs) -> DescriptiveResult:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Geary's C spatial autocorrelation statistic."""
 
 import numpy as np
@@ -13,7 +13,7 @@ def gearys_c(
     nperm: int = 999,
     seed: int | None = None,
 ) -> SpatialResult:
-    """
+    r"""
     Compute Geary's C ratio for spatial autocorrelation.
 
     .. math::

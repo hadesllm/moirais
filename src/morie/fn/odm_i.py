@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Diversity index (Simpson/Shannon) for demographics."""
 
 from __future__ import annotations

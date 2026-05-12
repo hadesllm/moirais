@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Markov-switching AR model (Hamilton regime switching)."""
 
 import numpy as np

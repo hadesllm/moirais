@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simple exponential smoothing."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def ses(y: np.ndarray, alpha: float = 0.3, h: int = 1) -> DescriptiveResult:
-    """
+    r"""
     Simple exponential smoothing (SES).
 
     .. math::

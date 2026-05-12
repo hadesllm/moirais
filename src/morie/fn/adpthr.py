@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Adaptive threshold based on local statistics."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "No man ever steps in the same river twice. — Heraclitus"
+_QUOTE = "No man ever steps in the same river twice. -- Heraclitus"
 
 
 def adaptive_threshold_detect(x, window=50, k=1.5, **kwargs) -> DescriptiveResult:

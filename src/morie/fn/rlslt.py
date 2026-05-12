@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RLS lattice adaptive filter."""
 
 from __future__ import annotations

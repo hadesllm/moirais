@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Higher-order kernel for bias reduction (Fauzi Ch 1).
 
 A kernel K_r is of order r if
@@ -50,7 +50,7 @@ def fauzi_higher_order_kernel(x, t=None, h=None, order=4):
     n = len(x)
     if n < 2:
         return RichResult(payload={"estimate": np.nan, "n": n,
-                                    "method": "fzhok — too few obs"})
+                                    "method": "fzhok -- too few obs"})
     if order != 4:
         raise NotImplementedError("only order=4 implemented (Wand-Jones eq 2.8)")
     if t is None:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nelson-Aalen cumulative hazard estimator."""
 
 import numpy as np
@@ -11,7 +11,7 @@ def nels(
     event: np.ndarray,
     alpha: float = 0.05,
 ) -> SurvivalResult:
-    """
+    r"""
     Nelson-Aalen estimator of the cumulative hazard function.
 
     .. math::

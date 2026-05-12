@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cramer-von Mises test statistic."""
 import numpy as np
 from scipy import stats

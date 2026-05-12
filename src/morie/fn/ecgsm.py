@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simulated 12-lead ECG generator."""
 
 from __future__ import annotations

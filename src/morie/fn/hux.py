@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""The only true wisdom is in knowing you know nothing. — Socrates"""
+# morie.fn -- function file (hadesllm/morie)
+"""The only true wisdom is in knowing you know nothing. -- Socrates"""
 
 from __future__ import annotations
 

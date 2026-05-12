@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ljung-Box portmanteau test for autocorrelation."""
 
 import numpy as np
@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def ljung_box(residuals: np.ndarray, lags: int = 10, fitdf: int = 0, cdf=None) -> DescriptiveResult:
-    """
+    r"""
     Ljung-Box test for autocorrelation in residuals.
 
     .. math::

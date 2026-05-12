@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rubin's Bayesian bootstrap: posterior of DP at alpha->0 is Dirichlet(1,...,1) on observed."""
 import numpy as np
 from ._richresult import RichResult

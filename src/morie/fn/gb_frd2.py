@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Friedman statistic with correction for tied observations."""
 import numpy as np
 from scipy import stats

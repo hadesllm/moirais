@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Diffusion reverse process denoises from x_T back to x_0."""
 import numpy as np
 from ._richresult import RichResult

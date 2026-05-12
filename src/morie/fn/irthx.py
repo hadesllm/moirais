@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heteroskedastic IRT probabilities."""
 
 from __future__ import annotations

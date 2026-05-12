@@ -8,7 +8,7 @@ __all__ = ["statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1
 
 
 def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1739(x):
-    """Out of chaos, comes order. — Friedrich Nietzsche"""
+    """Out of chaos, comes order. -- Friedrich Nietzsche"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

@@ -1,15 +1,15 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Permutation count P(n, k)."""
 
 from math import perm as _perm
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Look well into thyself; there is a source which will always spring up. — Marcus Aurelius"
+_QUOTE = "Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius"
 
 
 def permutation_count(n: int, k: int, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the number of k-permutations of n items.
 
     .. math::

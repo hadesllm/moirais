@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exponential growth rate estimation from epidemic incidence."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def exponential_growth_rate(
     window: tuple[int, int] | None = None,
     alpha: float = 0.05,
 ) -> dict[str, Any]:
-    """Estimate exponential growth rate from epidemic incidence data.
+    r"""Estimate exponential growth rate from epidemic incidence data.
 
     Fits log(incidence) ~ a + r * t via ordinary least squares over the
     specified window (default: full series with positive counts).

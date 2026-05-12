@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fisher information."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def fisher_information(x, bins: int = 50, **kwargs) -> ESRes:
-    """
+    r"""
     Estimate Fisher information from data via histogram density estimation.
 
     .. math::

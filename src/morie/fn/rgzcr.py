@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Zero-crossing rate — Rangayyan Ch 5."""
+# morie.fn -- function file (hadesllm/morie)
+"""Zero-crossing rate -- Rangayyan Ch 5."""
 from __future__ import annotations
 
 import numpy as np
@@ -62,4 +62,4 @@ def rangayyan_zero_crossing(x, fs=1.0):
 
 
 def cheatsheet():
-    return "rgzcr: Zero-crossing rate — Rangayyan Ch 5"
+    return "rgzcr: Zero-crossing rate -- Rangayyan Ch 5"

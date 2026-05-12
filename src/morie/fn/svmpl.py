@@ -6,11 +6,11 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Knowing yourself is the beginning of all wisdom. — Aristotle"
+_QUOTE = "Knowing yourself is the beginning of all wisdom. -- Aristotle"
 
 
 def svm_poly(X_train, y_train, X_test, C=1.0, degree=3, lr=0.01, n_iter=500, **kwargs) -> DescriptiveResult:
-    """Polynomial kernel SVM via dual coordinate ascent.
+    r"""Polynomial kernel SVM via dual coordinate ascent.
 
     .. math::
 

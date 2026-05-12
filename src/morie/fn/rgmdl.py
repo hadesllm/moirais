@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Minimum description length (MDL) criterion for AR model order."""
 import numpy as np
 from ._richresult import RichResult

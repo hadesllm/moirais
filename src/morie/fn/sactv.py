@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hjorth activity parameter."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The man who moves a mountain begins by carrying away small stones. — Confucius"
+_QUOTE = "The man who moves a mountain begins by carrying away small stones. -- Confucius"
 
 
 def activity(x, **kwargs) -> DescriptiveResult:

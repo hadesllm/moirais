@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayesian Cox posterior for regression coefficient beta via partial likelihood."""
 import numpy as np
 from ._richresult import RichResult

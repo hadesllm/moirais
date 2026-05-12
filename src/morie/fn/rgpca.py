@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PCA for signal mixture separation (eigendecomposition of covariance)."""
 import numpy as np
 from ._richresult import RichResult

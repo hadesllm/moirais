@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Test condition for contraction: exponentially powerful tests at scale eps_n."""
 import numpy as np
 from scipy import stats

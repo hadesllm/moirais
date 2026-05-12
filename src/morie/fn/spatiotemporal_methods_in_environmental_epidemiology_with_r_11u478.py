@@ -11,7 +11,7 @@ def spatiotemporal_methods_in_environmental_epidemiology_with_r__chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: 15.31, G(m)→ 1−exp[−(m− u)/σ ], m > u, in words to an exponential distribution,
+    Formula: 15.31, G(m)-> 1−exp[−(m− u)/σ ], m > u, in words to an exponential distribution,
 
     Parameters
     ----------

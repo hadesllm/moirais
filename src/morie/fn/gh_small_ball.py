@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Small ball probability for GP: log Pi(||f||<eps) ~ -phi(eps) as eps->0."""
 import numpy as np
 from ._richresult import RichResult

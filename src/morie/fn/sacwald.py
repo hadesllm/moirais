@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SAC Wald test on rho and lambda jointly."""
 
 import numpy as np

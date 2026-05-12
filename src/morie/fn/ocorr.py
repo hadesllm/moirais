@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Correlation matrix for numeric columns in OTIS data."""
 
 from __future__ import annotations

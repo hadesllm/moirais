@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ARE of Kruskal-Wallis relative to F-test: at least 0.864 for any continuous F."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random walk Metropolis-Hastings with adaptive step size."""
 
 from __future__ import annotations

@@ -5,7 +5,7 @@ from scipy.linalg import toeplitz as _toeplitz
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Patience is bitter, but its fruit is sweet. — Aristotle"
+_QUOTE = "Patience is bitter, but its fruit is sweet. -- Aristotle"
 
 
 def toeplitz_matrix(c, r=None, **kwargs) -> DescriptiveResult:

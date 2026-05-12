@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Leave-One-Out Information Criterion with Pareto-k diagnostic."""
 
 from __future__ import annotations

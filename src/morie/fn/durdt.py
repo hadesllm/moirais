@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Filter events by duration."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "By all means, marry. If you get a good wife, you'll become happy; if you get a bad one, you'll become a philosopher. — Socrates"
+_QUOTE = "By all means, marry. If you get a good wife, you'll become happy; if you get a bad one, you'll become a philosopher. -- Socrates"
 
 
 def duration_detect(events, min_dur=0.01, max_dur=1.0, **kwargs) -> DescriptiveResult:

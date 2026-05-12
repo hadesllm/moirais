@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BvM for Dirichlet process: Diaconis-Freedman approximation by Brownian bridge."""
 import numpy as np
 from ._richresult import RichResult

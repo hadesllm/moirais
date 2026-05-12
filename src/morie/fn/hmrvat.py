@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RNNs with visual attention over spatial feature map."""
 import numpy as np
 from ._richresult import RichResult

@@ -11,7 +11,7 @@ def bookadvanced_elementsofstatisticallearning_chapter_3_unnumbered_564(x):
     """
     Bayesian expression (auto-extracted; see ref).
 
-    Formula: around the maximum likelihood estimate ˆθ =z. In the limit as τ→∞ we
+    Formula: around the maximum likelihood estimate ˆθ =z. In the limit as τ->∞ we
 
     Parameters
     ----------

@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     CountModels expression (auto-extracted; see ref).
 
-    Formula: [EQ] ni/i! = P [Yn ≤ n] = P [(Yn − n)/√n ≤ 0] → P [Z ≤ 0] = 1/2.
+    Formula: [EQ] ni/i! = P [Yn ≤ n] = P [(Yn − n)/√n ≤ 0] -> P [Z ≤ 0] = 1/2.
 
     Parameters
     ----------

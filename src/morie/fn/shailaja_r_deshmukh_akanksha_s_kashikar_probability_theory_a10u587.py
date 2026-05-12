@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] nλ ≤ 1] → Φ(1) = 0.8413.
+    Formula: [EQ] nλ ≤ 1] -> Φ(1) = 0.8413.
 
     Parameters
     ----------

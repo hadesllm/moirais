@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EWMA volatility (RiskMetrics)."""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def ewma_volatility(
     returns: np.ndarray,
     lambda_: float = 0.94,
 ) -> DescriptiveResult:
-    """Exponentially weighted moving average volatility.
+    r"""Exponentially weighted moving average volatility.
 
     The RiskMetrics variance estimator:
 

@@ -40,7 +40,7 @@ def space_deformation(coords=None, data=None, *, n=50, dims=2):
 
 short = "sgspd"
 alias = "space_deformation"
-quote = "The man who moves a mountain begins by carrying away small stones. — Confucius"
+quote = "The man who moves a mountain begins by carrying away small stones. -- Confucius"
 space_deformation = space_deformation
 
 

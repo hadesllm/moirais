@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Computer-aided diagnosis (CAD) pipeline: preprocess -> features -> classify -> validate."""
 import numpy as np
 from ._richresult import RichResult

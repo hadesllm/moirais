@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cascade (sequential rejection) classifier."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cutting lines for Coombs mesh visualization."""
 
 from __future__ import annotations

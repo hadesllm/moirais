@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SAR direct/indirect/total impact decomposition."""
 
 import numpy as np

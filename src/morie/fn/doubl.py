@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Epidemic doubling time estimation."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def doubling_time(
     incidence: np.ndarray | list | None = None,
     alpha: float = 0.05,
 ) -> ESRes:
-    """
+    r"""
     Compute the epidemic doubling time from the exponential growth rate.
 
     .. math::

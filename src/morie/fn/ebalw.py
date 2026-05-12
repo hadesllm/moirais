@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Entropy balancing for covariate balance (Hainmueller 2012)."""
 import numpy as np
 from ._richresult import RichResult

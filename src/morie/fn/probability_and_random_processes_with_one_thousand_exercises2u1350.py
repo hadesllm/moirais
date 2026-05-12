@@ -8,7 +8,7 @@ __all__ = ["probability_and_random_processes_with_one_thousand_exercises_chapter
 
 
 def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnumbered_1350(x, cdf=None):
-    """The only true wisdom is in knowing you know nothing. — Socrates"""
+    """The only true wisdom is in knowing you know nothing. -- Socrates"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

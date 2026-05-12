@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear prediction gain."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Difficult to see. Always in motion is the future."
 
 
 def prediction_gain(x, ar_coeffs, **kwargs) -> DescriptiveResult:
-    """Compute the linear prediction gain.
+    r"""Compute the linear prediction gain.
 
     .. math::
 

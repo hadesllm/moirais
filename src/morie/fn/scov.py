@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sample covariance."""
 
 from __future__ import annotations
@@ -7,11 +7,11 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "A journey of a thousand miles begins with a single step. — Lao Tzu"
+_QUOTE = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 
 
 def sample_covariance(x, y, **kwargs) -> DescriptiveResult:
-    """Compute the sample covariance between *x* and *y*.
+    r"""Compute the sample covariance between *x* and *y*.
 
     .. math::
 

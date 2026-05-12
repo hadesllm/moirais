@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """D-brane tension calculation."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def d_brane_tension(
     g_s: float = 0.1,
     alpha_prime: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute the tension of a D_p-brane.
+    r"""Compute the tension of a D_p-brane.
 
     .. math::
 

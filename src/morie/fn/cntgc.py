@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pearson contingency coefficient C (Gibbons Ch 14.2.1).
 
 C = sqrt(chi2 / (chi2 + n))

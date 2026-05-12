@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] n = (2λ + 1)/n2λ+1 → 0.
+    Formula: [EQ] n = (2λ + 1)/n2λ+1 -> 0.
 
     Parameters
     ----------

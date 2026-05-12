@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ARE calculations for two-sample scale tests (Mood, Klotz, Siegel-Tukey)."""
 import numpy as np
 from scipy import stats

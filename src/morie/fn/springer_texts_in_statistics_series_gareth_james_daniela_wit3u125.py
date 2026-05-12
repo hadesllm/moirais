@@ -11,7 +11,7 @@ def springer_texts_in_statistics_series_gareth_james_daniela_wit_chapter_3_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: i1 = xi2 = ... = xip = 0. If we assume that the variables—that is,
+    Formula: i1 = xi2 = ... = xip = 0. If we assume that the variables--that is,
 
     Parameters
     ----------

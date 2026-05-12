@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Portmanteau test for weak convergence (Ljung-Box)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Real cepstrum of a signal."""
 import numpy as np
 from ._richresult import RichResult

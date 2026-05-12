@@ -1,4 +1,4 @@
-"""MOMENT — encoder TS foundation model."""
+"""MOMENT -- encoder TS foundation model."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["moment_foundation"]
 
 def moment_foundation(y, task):
     """
-    MOMENT — encoder TS foundation model
+    MOMENT -- encoder TS foundation model
 
     Formula: masked patch reconstruction + downstream heads
 
@@ -32,8 +32,8 @@ def moment_foundation(y, task):
     n = len(y)
     result = float(np.mean(y))
     se = float(np.std(y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "MOMENT — encoder TS foundation model"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "MOMENT -- encoder TS foundation model"})
 
 
 def cheatsheet():
-    return "momento: MOMENT — encoder TS foundation model"
+    return "momento: MOMENT -- encoder TS foundation model"

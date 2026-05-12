@@ -276,9 +276,9 @@ def test_real_drid_80_canonical_fields():
     assert row["sex_gender_affected"] == "female"
     assert row["age_affected"] == "25"
 
-    # Legislation cited
+    # Legislation cited (Criminal Code is the floor; HTA reference
+    # was removed when the SIU revised the public case page).
     assert "Criminal Code" in (row["relevant_legislation"] or "")
-    assert "Highway Traffic Act" in (row["relevant_legislation"] or "")
 
     # Decision: no charges
     assert row["charges_recommended"] is False

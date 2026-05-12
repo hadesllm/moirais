@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Hope in reality is the worst of all evils because it prolongs the torments of man. — Friedrich Nietzsche"""
+# morie.fn -- function file (hadesllm/morie)
+"""Hope in reality is the worst of all evils because it prolongs the torments of man. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 
@@ -61,4 +61,4 @@ robin = winsorized_mean
 
 
 def cheatsheet() -> str:
-    return "Hope in reality is the worst of all evils because it prolongs the torments of man. — Friedrich Nietzsche"
+    return "Hope in reality is the worst of all evils because it prolongs the torments of man. -- Friedrich Nietzsche"

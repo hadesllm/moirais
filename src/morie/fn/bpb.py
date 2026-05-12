@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bits per byte from cross-entropy loss."""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def bits_per_byte(
     loss: float,
     base: str = "e",
 ) -> DescriptiveResult:
-    """Convert cross-entropy loss to bits per byte (BPB).
+    r"""Convert cross-entropy loss to bits per byte (BPB).
 
     For a model trained with natural log cross-entropy:
     :math:`\\text{BPB} = \\text{loss} / \\ln(2)`.

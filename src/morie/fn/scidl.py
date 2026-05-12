@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Scatter plot data for ideal points."""
 
 from __future__ import annotations

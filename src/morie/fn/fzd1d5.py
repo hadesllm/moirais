@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Conditions D1-D5 for boundary-free goodness-of-fit tests."""
 import numpy as np
 from scipy import stats

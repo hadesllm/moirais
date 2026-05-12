@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Page's L trend test for ordered alternatives."""
 
 from typing import Union
@@ -12,7 +12,7 @@ from ._containers import TestResult
 def page_trend_test(
     data: Union[list, np.ndarray],
 ) -> TestResult:
-    """
+    r"""
     Page's L test for ordered alternatives in a randomised block design.
 
     Tests whether *k* treatments have a monotonic ordering across *n*

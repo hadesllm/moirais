@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Improved average derivative estimator (Li-Hsiao-Zinn)."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-"""Probability expression (auto-extracted; see ref).."""
+r"""Probability expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_3
 
 
 def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_321(x):
-    """
+    r"""
     Probability expression (auto-extracted; see ref).
 
     Formula: e−λν(A) [λν(D \ A)]n e−λν(D\A)
@@ -29,7 +29,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_321(x):
     References
     ----------
     Schabenberger & Gotway (2005) Statistical Methods for Spatial Data Analysis, ch.1 (unnumbered)
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

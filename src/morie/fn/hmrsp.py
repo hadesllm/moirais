@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random subspaces: bag features per tree without subsampling rows."""
 import numpy as np
 from ._richresult import RichResult

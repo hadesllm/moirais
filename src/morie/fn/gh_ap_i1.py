@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GP sample path continuity: Kolmogorov-Chentsov criterion for path continuity."""
 import numpy as np
 from ._richresult import RichResult

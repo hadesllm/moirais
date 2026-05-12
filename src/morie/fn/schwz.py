@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Schwarzschild metric (black hole geometry)."""
 
 __all__ = ["schwz"]
@@ -13,7 +13,7 @@ def schwz(
     G: float = 6.67430e-11,
     c: float = 299792458.0,
 ) -> dict:
-    """
+    r"""
     Compute the Schwarzschild metric tensor at radius r.
 
     The line element in Schwarzschild coordinates (t, r, theta, phi):

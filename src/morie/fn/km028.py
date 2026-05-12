@@ -1,4 +1,4 @@
-"""Alm loss.."""
+r"""Alm loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_alm_loss"]
 
 
 def kamath_ch2_alm_loss(z, M):
-    """
+    r"""
     Alm loss.
 
     Formula: L^{(z(x,y))}_{ALM} = -\frac{1}{|M|}\sum_{i\in M}\log P(z_i|z_{\setminus M})
@@ -27,7 +27,7 @@ def kamath_ch2_alm_loss(z, M):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.28, p. 53
-    """
+    r"""
     z = np.atleast_1d(np.asarray(z, dtype=float))
     n = len(z)
     result = float(np.mean(z))

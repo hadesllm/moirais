@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """S-duality transformation g_s <-> 1/g_s."""
 
 from __future__ import annotations

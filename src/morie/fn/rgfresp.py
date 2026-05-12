@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Frequency response H(f) of a digital filter from coefficients."""
 import numpy as np
 from ._richresult import RichResult

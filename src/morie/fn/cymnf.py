@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Calabi-Yau manifold Hodge numbers and Euler characteristic."""
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ def calabi_yau_hodge(
     h11: int = 1,
     h21: int = 101,
 ) -> DescriptiveResult:
-    """Compute Calabi-Yau threefold topological invariants from Hodge numbers.
+    r"""Compute Calabi-Yau threefold topological invariants from Hodge numbers.
 
     .. math::
 

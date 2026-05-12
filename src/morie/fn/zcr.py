@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 def zero_crossing_rate(x: np.ndarray, frame_length: int | None = None) -> DescriptiveResult:
     """Compute zero-crossing rate of a signal.
 
-    'Character is destiny. — Heraclitus'
+    'Character is destiny. -- Heraclitus'
     """
     from morie._detection import zero_crossing_rate as _backend
 

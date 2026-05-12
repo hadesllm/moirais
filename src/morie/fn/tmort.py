@@ -38,7 +38,7 @@ def temperature_mortality_vcurve(
     beta_hot: float = _GASPARRINI_POOLED_BETA_HOT,
     beta_cold: float = _GASPARRINI_POOLED_BETA_COLD,
 ) -> DescriptiveResult:
-    """Compute daily mortality relative risk from temperature via V-curve.
+    r"""Compute daily mortality relative risk from temperature via V-curve.
 
     Implements the minimum-mortality-temperature framework from
     Gasparrini et al. 2015 Lancet: mortality is lowest at the MMT
@@ -101,7 +101,7 @@ def temperature_mortality_vcurve(
     Quote: "The cold and the hot both know your name, and the cold
     knows it longer."
 
-    Assumes no adaptation / acclimatization — the V-curve encodes
+    Assumes no adaptation / acclimatization -- the V-curve encodes
     acute exposure risk. For long-term climate-attribution, combine
     with heat-wave detection (``heatwv``) and demographic weighting.
     """

@@ -6,7 +6,7 @@ progress bars, and streaming per-iteration tables. Wired into the slow
 callables (Kulldorff MC permutations, longitudinal simulator subject
 loop, DML cross-fit folds) via an opt-in `animate=True` kwarg.
 
-Falls back to plain `print()` if `rich` is not installed — the helpers
+Falls back to plain `print()` if `rich` is not installed -- the helpers
 are non-fatal decoration, never a hard dependency.
 
 Public API:
@@ -145,11 +145,11 @@ def morie_banner() -> None:
     """Print a one-shot MORIE banner at the start of a CLI session."""
     if _HAS_RICH:
         Console().print(Panel.fit(
-            "[bold cyan]MORIE[/bold cyan] — Multi-domain Open Research\n"
+            "[bold cyan]MORIE[/bold cyan] -- Multi-domain Open Research\n"
             "and Inferential Estimation\n"
             "[dim]v0.2.0 · GPL-2.0-only · https://github.com/hadesllm/morie[/dim]",
             border_style="cyan",
         ))
     else:
-        print("MORIE — Multi-domain Open Research and Inferential Estimation")
+        print("MORIE -- Multi-domain Open Research and Inferential Estimation")
         print("v0.2.0 · GPL-2.0-only · https://github.com/hadesllm/morie")

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Patience is bitter, but its fruit is sweet. — Aristotle"""
+# morie.fn -- function file (hadesllm/morie)
+"""Patience is bitter, but its fruit is sweet. -- Aristotle"""
 
 from __future__ import annotations
 
@@ -82,4 +82,4 @@ mssns = missing_sensitivity_analysis
 
 
 def cheatsheet() -> str:
-    return "Patience is bitter, but its fruit is sweet. — Aristotle"
+    return "Patience is bitter, but its fruit is sweet. -- Aristotle"

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Welch's t-test (unequal variances) with R-style verbose result."""
 
 from typing import Sequence, Union
@@ -11,7 +11,7 @@ def welcht(x: Union[Sequence, np.ndarray],
            y: Union[Sequence, np.ndarray]):
     """Welch's two-sample t-test (unequal variances assumed).
 
-    Returns a ``RichResult`` — print it for an R-style verbose summary,
+    Returns a ``RichResult`` -- print it for an R-style verbose summary,
     or access fields like ``.statistic``, ``.pvalue``, ``.df``.
 
     >>> r = welcht([1,2,3,4,5], [10,20,30,40,50])

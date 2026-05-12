@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GARCH(1,1) volatility model."""
 
 import numpy as np
@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def garch_fit(returns: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Fit a GARCH(1,1) model to financial returns.
 
     .. math::

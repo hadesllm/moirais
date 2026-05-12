@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hedges' g effect size (bias-corrected Cohen's d)."""
 
 import math

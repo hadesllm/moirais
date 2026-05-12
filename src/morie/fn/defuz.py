@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Defuzzification methods."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 def defuzzify(x, mf, method: str = "centroid", **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Defuzzify a fuzzy set to obtain a crisp output value.
 
     Supported methods:

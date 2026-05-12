@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""LMS adaptive noise canceller — Rangayyan Ch 11."""
+# morie.fn -- function file (hadesllm/morie)
+"""LMS adaptive noise canceller -- Rangayyan Ch 11."""
 from __future__ import annotations
 
 import numpy as np
@@ -75,4 +75,4 @@ def rangayyan_adaptive_filter(x, reference, mu=0.01, order=16):
 
 
 def cheatsheet():
-    return "rgadp: LMS adaptive noise canceller — Rangayyan Ch 11"
+    return "rgadp: LMS adaptive noise canceller -- Rangayyan Ch 11"

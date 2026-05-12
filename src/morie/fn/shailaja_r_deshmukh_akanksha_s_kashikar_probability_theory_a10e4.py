@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_equa
     """
     GeneralStatistics equation extracted from Shailaja R. Deshmukh, Akanksha S. Kashikar - Probability Theory  An Introduction Using R.
 
-    Formula: (10.4) is satisfied, that is, ∀ ϵ > 0, g n(ϵ) → 0
+    Formula: (10.4) is satisfied, that is, ∀ ϵ > 0, g n(ϵ) -> 0
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Signal entropy (Shannon, sample, approximate).
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal

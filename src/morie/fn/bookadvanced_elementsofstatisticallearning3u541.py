@@ -11,7 +11,7 @@ def bookadvanced_elementsofstatisticallearning_chapter_3_unnumbered_541(x, cdf=N
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] ˆθ→ N (θ0, i(θ0)− 1), (8.16)
+    Formula: [EQ] ˆθ-> N (θ0, i(θ0)− 1), (8.16)
 
     Parameters
     ----------

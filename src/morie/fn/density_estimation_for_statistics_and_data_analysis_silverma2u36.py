@@ -11,7 +11,7 @@ def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnum
     """
     Nonparametric expression (auto-extracted; see ref).
 
-    Formula: where ^(u) = {1 —u^ + exp (— ^u^).The window width actually used would then be hj, where
+    Formula: where ^(u) = {1 --u^ + exp (-- ^u^).The window width actually used would then be hj, where
 
     Parameters
     ----------

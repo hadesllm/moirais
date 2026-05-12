@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kruskal-Wallis H-test with R-style verbose result."""
 
 from typing import Sequence, Union
@@ -22,7 +22,7 @@ def kwallis(*groups: Union[Sequence, np.ndarray]):
     warnings = []
     if any(a.size < 5 for a in arrs):
         warnings.append("at least one group has n<5; the χ²-approximation "
-                        "may be poor — consider exact permutation `permpv` for pairs.")
+                        "may be poor -- consider exact permutation `permpv` for pairs.")
     return hypothesis_test_result(
         test_name="Kruskal-Wallis H-test (nonparametric ANOVA)",
         statistic=float(res.statistic),

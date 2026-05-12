@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Boundary-free KDE derived from F_tilde_X by differentiation."""
 import numpy as np
 from ._richresult import RichResult

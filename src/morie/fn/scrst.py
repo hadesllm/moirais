@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Crest factor."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "It's a trap!"
 
 
 def crest_factor(x, **kwargs) -> DescriptiveResult:
-    """Compute the crest factor of signal *x*.
+    r"""Compute the crest factor of signal *x*.
 
     .. math::
 

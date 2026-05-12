@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric BvM for smooth functionals: efficient posterior centering."""
 import numpy as np
 from ._richresult import RichResult

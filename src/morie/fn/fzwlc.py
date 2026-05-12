@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Smoothed Wilcoxon signed-rank test (Fauzi Ch 5).
 
 Classical Wilcoxon signed-rank: with D_i = X_i - theta_0,
@@ -38,7 +38,7 @@ def fauzi_smoothed_wilcoxon(x, theta0=0.0, h=None, alternative="two-sided"):
     n = len(x)
     if n < 5:
         return RichResult(payload={"statistic": np.nan, "p_value": np.nan,
-                                    "n": n, "method": "fzwlc — too few obs"})
+                                    "n": n, "method": "fzwlc -- too few obs"})
     d = x - theta0
     ad = np.abs(d)
     nz = ad > 1e-12
@@ -48,7 +48,7 @@ def fauzi_smoothed_wilcoxon(x, theta0=0.0, h=None, alternative="two-sided"):
     n_eff = len(d)
     if n_eff < 5:
         return RichResult(payload={"statistic": np.nan, "p_value": np.nan,
-                                    "n": n_eff, "method": "fzwlc — too few nonzero"})
+                                    "n": n_eff, "method": "fzwlc -- too few nonzero"})
 
     # Smoothed rank: R_smooth(t) = sum_j W((t - |D_j|)/h)
     # We need R(|D_i|) for each i, so vectorise:

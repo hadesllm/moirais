@@ -10,7 +10,7 @@ def tsb(y, alpha, beta):
     """
     TSB modification for Croston
 
-    Formula: replaces interval with prob → less bias
+    Formula: replaces interval with prob -> less bias
 
     Parameters
     ----------

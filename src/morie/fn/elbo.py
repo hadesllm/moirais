@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Evidence Lower Bound (ELBO) computation."""
 
 from __future__ import annotations
@@ -19,7 +19,7 @@ def compute_elbo(
     n_samples: int = 1000,
     seed: int = 42,
 ) -> dict[str, Any]:
-    """
+    r"""
     Estimate the Evidence Lower Bound (ELBO) for a mean-field
     Gaussian variational approximation.
 

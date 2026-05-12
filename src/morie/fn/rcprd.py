@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Predicted choice from ideal points. 'Tri-Beam!' -- Tien, Dragon Ball Z"""
 
 from __future__ import annotations

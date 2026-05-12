@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cross-fitting (K-fold sample splitting for DML)."""
 
 from __future__ import annotations

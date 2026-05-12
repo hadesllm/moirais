@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fairness metrics for recidivism predictions."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Effective reproduction number Rt (Wallinga-Teunis method)."""
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ def effective_rt(
     tau: int = 7,
     alpha: float = 0.05,
 ) -> dict[str, Any]:
-    """Estimate time-varying reproduction number Rt (Wallinga-Teunis).
+    r"""Estimate time-varying reproduction number Rt (Wallinga-Teunis).
 
     For each case at time *t*, the relative likelihood that it was
     infected by a case at time *s* is proportional to the serial

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ROUGE-N recall: n-gram recall of hypothesis against reference."""
 import numpy as np
 from ._richresult import RichResult

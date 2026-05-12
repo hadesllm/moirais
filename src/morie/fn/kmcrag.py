@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Corrective RAG: classifier decides to use retrieved docs or fall back to web/self-knowledge."""
 import numpy as np
 from ._richresult import RichResult

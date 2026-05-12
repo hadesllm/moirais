@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: and that, for fixed k, mk( T) − log T → − ∑k
+    Formula: and that, for fixed k, mk( T) − log T -> − ∑k
 
     Parameters
     ----------

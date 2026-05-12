@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Arc length computation. 'Speed is my weapon.' -- Arcee"""
 
 from __future__ import annotations

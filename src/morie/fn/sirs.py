@@ -18,7 +18,7 @@ def sirs_model(
     t_max: float = 300.0,
     n_steps: int = 1000,
 ) -> SIRResult:
-    """
+    r"""
     Susceptible-Infected-Recovered-Susceptible model with waning immunity.
 
     .. math::

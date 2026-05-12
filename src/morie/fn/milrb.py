@@ -1,15 +1,15 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Miller-Rabin probabilistic primality test."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "He who has a why to live can bear almost any how. — Friedrich Nietzsche"
+_QUOTE = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 
 
 def miller_rabin(n: int, k: int = 10, seed: int = 42, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Miller-Rabin probabilistic primality test.
 
     Decomposes :math:`n - 1 = 2^r \\cdot d` and tests *k* random witnesses.

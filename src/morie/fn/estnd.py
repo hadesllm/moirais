@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Causal estimand definition: what to estimate (ATE/ATT/ATC/LATE/CATE)."""
 import numpy as np
 from ._richresult import RichResult

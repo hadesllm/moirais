@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Direct multi-step: train a separate model per horizon h."""
 import numpy as np
 from ._richresult import RichResult

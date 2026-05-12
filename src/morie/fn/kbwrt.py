@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bandwidth selection: Silverman's rule of thumb."""
 
 from __future__ import annotations

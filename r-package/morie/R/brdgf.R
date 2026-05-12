@@ -11,12 +11,21 @@
 #' @param df0 Prior df (default 4).
 #' @param S0 Prior scale (default anchors to var(y)/p).
 #' @param seed Seed.
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("brdgf", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return list(estimate, beta, beta_se, sigma_j2, sigma2, n_iter, n, p, method).
 #' @references Meuwissen-Hayes-Goddard (2001) Genetics 157:1819.
 #' @export
 bayes_ridge_gibbs <- function(x, y, n_iter = 200, burn = 50,
-                               df0 = 4, S0 = NULL, seed = 0) {
-  set.seed(seed)
+                               df0 = 4, S0 = NULL, seed = 0,
+                               deterministic_seed = NULL) {
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("brdgf", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   X <- as.matrix(x); y <- as.numeric(y); n <- nrow(X); p <- ncol(X)
   ym <- mean(y); yc <- y - ym
   Xc <- sweep(X, 2, colMeans(X))

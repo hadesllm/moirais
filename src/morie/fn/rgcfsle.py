@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cardiorespiratory coupling analysis via coherence and PLV."""
 import numpy as np
 from ._richresult import RichResult

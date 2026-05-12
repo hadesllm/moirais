@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Two-way ANOVA. 'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu' -- Ahsoka Tano"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Two-way ANOVA. 'Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu' -- Ahsoka Tano"""
 
 from __future__ import annotations
 
@@ -75,4 +75,4 @@ ahsoka = anova_twoway
 
 
 def cheatsheet() -> str:
-    return "anova_twoway({}) -> Two-way ANOVA. 'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu' -- Ahsoka Tano"
+    return "anova_twoway({}) -> Two-way ANOVA. 'Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu' -- Ahsoka Tano"

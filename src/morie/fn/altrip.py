@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """SBERT triplet loss: anchor-positive closer than anchor-negative by margin."""
 import numpy as np
 from ._richresult import RichResult

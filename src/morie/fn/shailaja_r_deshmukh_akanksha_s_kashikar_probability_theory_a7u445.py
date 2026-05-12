@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] Thus, P0[√n(ˆθn − 0) ≤ x] → (1/2)FU1(x) + (1/2)FU2(x).
+    Formula: [EQ] Thus, P0[√n(ˆθn − 0) ≤ x] -> (1/2)FU1(x) + (1/2)FU2(x).
 
     Parameters
     ----------

@@ -6,11 +6,11 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Truth comes out of error more readily than out of confusion. — Francis Bacon"
+_QUOTE = "Truth comes out of error more readily than out of confusion. -- Francis Bacon"
 
 
 def sample_std(x, ddof=1, **kwargs) -> DescriptiveResult:
-    """Compute the sample standard deviation of signal *x*.
+    r"""Compute the sample standard deviation of signal *x*.
 
     .. math::
 

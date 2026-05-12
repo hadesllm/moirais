@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Brownian motion / fractional Brownian field."""
 
 import numpy as np

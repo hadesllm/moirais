@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Task-specific classification head over the [CLS] token hidden state."""
 import numpy as np
 from ._richresult import RichResult

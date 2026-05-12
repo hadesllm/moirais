@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MAP estimate with Gaussian prior."""
 
 import numpy as np
@@ -10,7 +10,7 @@ def map_estimate(
     prior_sigma: float = 1.0,
     **kwargs,
 ) -> ESRes:
-    """
+    r"""
     Maximum a posteriori estimate of the mean with a Gaussian prior.
 
     .. math::

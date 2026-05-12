@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Metric MDS for ideal point estimation (Armstrong Ch 3)."""
 
 from __future__ import annotations

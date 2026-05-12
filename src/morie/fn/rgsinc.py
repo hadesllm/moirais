@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ideal sinc (low-pass) filter impulse response."""
 import numpy as np
 from ._richresult import RichResult

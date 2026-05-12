@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Instruction tuning CE loss over (instruction, response) pairs."""
 import numpy as np
 from ._richresult import RichResult

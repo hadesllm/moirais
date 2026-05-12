@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayes factor (BIC approximation)."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def bayes_factor(
     k_0: int,
     n: int,
 ) -> ESRes:
-    """
+    r"""
     Approximate Bayes factor using the BIC (Schwarz criterion).
 
     .. math::

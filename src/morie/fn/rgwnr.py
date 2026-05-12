@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wiener filter (Wiener-Hopf equations, optimal MMSE linear filter)."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Frame TS forecasting as tabular regression via lag and window features."""
 import numpy as np
 from ._richresult import RichResult

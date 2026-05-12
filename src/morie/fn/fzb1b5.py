@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Assumptions B1-B5 for bias-reduced KDFE (kernel, bandwidth, f_X conditions)."""
 import numpy as np
 from ._richresult import RichResult

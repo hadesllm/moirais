@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Parkinson's disease monitoring via multimodal signal analysis."""
 import numpy as np
 from ._richresult import RichResult

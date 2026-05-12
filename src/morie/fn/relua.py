@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ReLU activation function for neural networks."""
 import numpy as np
 from ._richresult import RichResult

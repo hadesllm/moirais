@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Contraction under misspecification: posterior contracts to KL projection of P0 onto model."""
 import numpy as np
 from ._richresult import RichResult

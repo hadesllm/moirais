@@ -1,4 +1,4 @@
-"""He who is brave is free. — Seneca"""
+"""He who is brave is free. -- Seneca"""
 
 from __future__ import annotations
 

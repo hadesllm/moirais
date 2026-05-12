@@ -12,7 +12,7 @@ def eisenstein_series(
     tau: complex = 1j,
     terms: int = 50,
 ) -> DescriptiveResult:
-    """Compute the Eisenstein series E_k(tau).
+    r"""Compute the Eisenstein series E_k(tau).
 
     :math:`E_k(\\tau) = 1 - \\frac{2k}{B_k}\\sum_{n=1}^{N}\\sigma_{k-1}(n)q^n`
 

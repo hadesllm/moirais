@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Latin Hypercube Sampling."""
 
 from __future__ import annotations

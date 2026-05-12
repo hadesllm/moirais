@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ergodic decomposition theorem verification."""
 
 __all__ = ["ergdc"]
@@ -12,7 +12,7 @@ def ergdc(
     n_steps: int = 1000,
     tol: float = 1e-8,
 ) -> dict:
-    """
+    r"""
     Verify ergodic properties of a discrete-time Markov chain.
 
     Checks whether a Markov chain is ergodic (irreducible + aperiodic)

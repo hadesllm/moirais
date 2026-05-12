@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dirichlet moments: E[X_j]=alpha_j/alpha_0, Var[X_j]=alpha_j(alpha_0-alpha_j)/(alpha_0^2*(alpha_0+1))."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Frailty model (shared gamma frailty)."""
 
 from __future__ import annotations

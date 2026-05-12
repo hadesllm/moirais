@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Early-stopping rule: halt training when validation error is minimal."""
 import numpy as np
 from ._richresult import RichResult

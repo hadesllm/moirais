@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "It does not matter how slowly you go as long as you do not stop. — Confucius"
+_QUOTE = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 
 
 def spectral_slope(x, fs: float = 1.0, **kwargs) -> DescriptiveResult:

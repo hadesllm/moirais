@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Edgeworth expansion for kernel quantile (Fauzi Ch 3).
 
 One-term Edgeworth correction to the normal approximation of the
@@ -34,7 +34,7 @@ def fauzi_edgeworth_quantile(x, z=1.96, p=0.5):
     n = len(x)
     if n < 5:
         return RichResult(payload={"estimate": np.nan, "n": n,
-                                    "method": "fzedg — too few obs"})
+                                    "method": "fzedg -- too few obs"})
 
     # Indicator I{X<=Q(p)} has variance p(1-p), third central moment
     # p(1-p)(1-2p), so standardised skewness γ1 = (1-2p)/sqrt(p(1-p)).

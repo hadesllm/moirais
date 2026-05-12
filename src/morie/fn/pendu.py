@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""We suffer more often in imagination than in reality. — Seneca"""
+# morie.fn -- function file (hadesllm/morie)
+"""We suffer more often in imagination than in reality. -- Seneca"""
 
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ def pendulum(
     t_max: float = 10.0,
     dt: float = 0.01,
 ) -> DescriptiveResult:
-    """
+    r"""
     Simulate a simple pendulum using the nonlinear ODE.
 
     .. math::
@@ -89,4 +89,4 @@ short = pendulum
 
 
 def cheatsheet() -> str:
-    return "We suffer more often in imagination than in reality. — Seneca"
+    return "We suffer more often in imagination than in reality. -- Seneca"

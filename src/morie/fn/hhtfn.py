@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hilbert-Huang Transform (EMD + Hilbert spectrum)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SDM log-determinant ln|I - rho*W|."""
 
 import numpy as np

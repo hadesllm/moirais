@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hamming distance between binary vectors."""
 
 import numpy as np
@@ -9,7 +9,7 @@ _QUOTE = "I have spoken. -- Kuiil"
 
 
 def hamming_distance_sets(a, b, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the Hamming distance between two binary vectors.
 
     .. math::

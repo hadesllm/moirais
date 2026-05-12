@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Posterior density estimation via KDE."""
 
 from __future__ import annotations

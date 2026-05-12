@@ -304,7 +304,7 @@ class GGUFModel:
             return self._dequant_tq(info)
 
         else:
-            # For other quantized types, return raw — caller can dequantize
+            # For other quantized types, return raw -- caller can dequantize
             byte_count = int(info.n_elements * _TYPE_SIZES.get(info.dtype, 4.0))
             raw = self._mm[start : start + byte_count]
             return np.frombuffer(raw, dtype=np.uint8).copy()

@@ -1,4 +1,4 @@
-"""Context vector.."""
+r"""Context vector.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_context_vector"]
 
 
 def kamath_ch2_context_vector(h_1_h_T):
-    """
+    r"""
     Context vector.
 
     Formula: c = m(h_1, \dots, h_T)
@@ -25,7 +25,7 @@ def kamath_ch2_context_vector(h_1_h_T):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.2, p. 30
-    """
+    r"""
     h_1_h_T = np.atleast_1d(np.asarray(h_1_h_T, dtype=float))
     n = len(h_1_h_T)
     result = float(np.mean(h_1_h_T))

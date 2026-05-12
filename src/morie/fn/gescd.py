@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GES (Greedy Equivalence Search) for score-based causal discovery.
 
 GES is a two-phase greedy algorithm that maximizes a decomposable
@@ -54,7 +54,7 @@ def gescd(
     Returns
     -------
     dict
-        ``dag`` (adjacency matrix, ``dag[i,j]=1`` means i→j),
+        ``dag`` (adjacency matrix, ``dag[i,j]=1`` means i->j),
         ``score``, ``p``, ``n``, ``n_edges``, ``method``.
 
     References
@@ -99,7 +99,7 @@ def gescd(
             for j in range(p):
                 if i == j or dag[i, j] or dag[j, i]:
                     continue
-                # Check acyclicity after adding i→j
+                # Check acyclicity after adding i->j
                 if _creates_cycle(dag, i, j):
                     continue
                 pa_j = [k for k in range(p) if dag[k, j]]
@@ -142,7 +142,7 @@ def gescd(
 
 
 def _creates_cycle(dag: np.ndarray, i: int, j: int) -> bool:
-    """DFS check: would adding edge i→j create a cycle?"""
+    """DFS check: would adding edge i->j create a cycle?"""
     # Can we reach i from j in the current DAG?
     visited = set()
     stack = [j]

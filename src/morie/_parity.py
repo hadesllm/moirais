@@ -1,9 +1,9 @@
 """General-purpose parity-review helpers for comparing legacy and modern codebases.
 
 Three modes:
-  1. General: ``compare_function_parity(source_dir, target_dir)`` — any two dirs.
-  2. MORIE default: ``build_parity_matrix(epiml_root)`` — built-in epiml→morie mapping.
-  3. TIDE: ``build_tide_parity()`` — Python TUI vs Go TIDE feature parity.
+  1. General: ``compare_function_parity(source_dir, target_dir)`` -- any two dirs.
+  2. MORIE default: ``build_parity_matrix(epiml_root)`` -- built-in epiml->morie mapping.
+  3. TIDE: ``build_tide_parity()`` -- Python TUI vs Go TIDE feature parity.
 
 Example (general-purpose)::
 
@@ -544,7 +544,7 @@ TIDE_PARITY = [
         "go_tide": "9 methods (+ synth control)",
         "status": "done",
     },
-    {"feature": "Dataset Context → Chat", "python_tui": "loaded_df injection", "go_tide": "n/a", "status": "missing"},
+    {"feature": "Dataset Context -> Chat", "python_tui": "loaded_df injection", "go_tide": "n/a", "status": "missing"},
     {"feature": "Agent Personas", "python_tui": "/agent <name>", "go_tide": "single agent only", "status": "partial"},
 ]
 

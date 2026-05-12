@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Age-standardized rate (direct method)."""
 
 import numpy as np
@@ -14,7 +14,7 @@ def age_standardized_rate(
     confidence: float = 0.95,
     per: float = 100_000.0,
 ) -> ESRes:
-    """Age-standardized rate using the direct method.
+    r"""Age-standardized rate using the direct method.
 
     .. math::
 

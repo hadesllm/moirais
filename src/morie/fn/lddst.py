@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Local Dirichlet density estimation. 'Size matters not, judge me by size do you?'"""
 
 from __future__ import annotations

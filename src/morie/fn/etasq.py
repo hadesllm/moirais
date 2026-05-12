@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Eta-squared (one-way ANOVA effect size)."""
 
 def etasq(ss_between: float, ss_total: float) -> float:

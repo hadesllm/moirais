@@ -8,12 +8,21 @@
 #' @param burn Burn-in (default 50).
 #' @param lam Optional fixed lambda (else empirical-Bayes updated).
 #' @param seed Random seed.
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("blasf", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return list(estimate, beta, intercept, se, beta_se, lam, sigma2, n_iter, n, p, method).
 #' @references Park & Casella (2008) JASA 103:681. Montesinos Lopez Ch 4.
 #' @export
 bayesian_lasso_full <- function(x, y, n_iter = 200, burn = 50,
-                                 lam = NULL, seed = 0) {
-  set.seed(seed)
+                                 lam = NULL, seed = 0,
+                                 deterministic_seed = NULL) {
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("blasf", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   X <- as.matrix(x); y <- as.numeric(y); n <- nrow(X); p <- ncol(X)
   ym <- mean(y); yc <- y - ym
   Xc <- sweep(X, 2, colMeans(X))

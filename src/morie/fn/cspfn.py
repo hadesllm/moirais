@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Common Spatial Patterns for EEG classification."""
 
 from __future__ import annotations

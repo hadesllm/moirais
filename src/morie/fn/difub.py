@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Uniform DIF detection via logistic regression."""
 
 from __future__ import annotations

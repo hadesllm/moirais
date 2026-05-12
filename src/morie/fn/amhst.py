@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Amplitude histogram of a signal."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def amplitude_hist(x: np.ndarray, n_bins: int = 50) -> DescriptiveResult:
-    """Our greatest glory is not in never falling, but in rising every time we fall. — Confucius"""
+    """Our greatest glory is not in never falling, but in rising every time we fall. -- Confucius"""
     from morie._waveform import amplitude_histogram as _backend
 
     hist_dict = _backend(x, n_bins=n_bins)

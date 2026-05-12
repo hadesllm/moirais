@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Goodness-of-fit test for multinomial data."""
 import numpy as np
 from scipy import stats

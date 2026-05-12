@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: [EQ] P( B < ∞ ) = limx→∞ P( B ≤ x)
+    Formula: [EQ] P( B < ∞ ) = limx->∞ P( B ≤ x)
 
     Parameters
     ----------

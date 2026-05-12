@@ -1,4 +1,4 @@
-"""Self diagnosis prob.."""
+r"""Self diagnosis prob.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_self_diagnosis_prob"]
 
 
 def kamath_ch6_self_diagnosis_prob(x, y, M, sdg):
-    """
+    r"""
     Self diagnosis prob.
 
     Formula: p(y|x) = \frac{p_M(\text{Yes}|sdg(x,y))}{\sum_{w\in\{\text{Yes,No}\}} p_M(w|sdg(x,y))}
@@ -31,7 +31,7 @@ def kamath_ch6_self_diagnosis_prob(x, y, M, sdg):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.30, p. 255
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

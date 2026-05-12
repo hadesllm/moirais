@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Null distribution of Kendall T statistic (exact and asymptotic)."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Holt-Winters additive seasonal method. 'The belonging you seek is ahead of you.' -- Maz Kanata"""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def holt_winters(
     y: np.ndarray, alpha: float = 0.3, beta: float = 0.1, gamma: float = 0.1, season: int = 12, h: int = 1
 ) -> DescriptiveResult:
-    """
+    r"""
     Holt-Winters additive seasonal smoothing.
 
     Updates level, trend, and seasonal components:

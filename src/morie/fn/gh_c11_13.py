@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GP adaptation theorem: random bandwidth GP adapts to unknown smoothness."""
 import numpy as np
 from ._richresult import RichResult

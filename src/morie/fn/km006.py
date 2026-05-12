@@ -1,4 +1,4 @@
-"""Seq2seq cross entropy.."""
+r"""Seq2seq cross entropy.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_seq2seq_cross_entropy"]
 
 
 def kamath_ch2_seq2seq_cross_entropy(y, c, U):
-    """
+    r"""
     Seq2seq cross entropy.
 
     Formula: L = -\sum_{t=1}^{U} \log p(y_t|y_{t-1},\dots,y_1,c)
@@ -29,7 +29,7 @@ def kamath_ch2_seq2seq_cross_entropy(y, c, U):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.6, p. 31
-    """
+    r"""
     y = np.atleast_1d(np.asarray(y, dtype=float))
     n = len(y)
     result = float(np.mean(y))

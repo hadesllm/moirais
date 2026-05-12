@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Idealized action potential waveform model (depolarization/repolarization)."""
 import numpy as np
 from ._richresult import RichResult

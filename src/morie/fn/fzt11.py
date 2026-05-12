@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 1.1: bias of modified gamma KDE is O(h^4)."""
 import numpy as np
 from ._richresult import RichResult

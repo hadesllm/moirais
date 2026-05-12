@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chernoff-Savage theorem: asymptotic normality of linear rank statistics."""
 import numpy as np
 from scipy import stats

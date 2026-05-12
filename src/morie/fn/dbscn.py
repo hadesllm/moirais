@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DBSCAN density-based clustering."""
 
 from __future__ import annotations

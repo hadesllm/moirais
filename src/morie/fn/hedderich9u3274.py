@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_3274"]
 
 
 def hedderich_chapter_9_unnumbered_3274(x, cdf=None):
-    """Knowing yourself is the beginning of all wisdom. — Aristotle"""
+    """Knowing yourself is the beginning of all wisdom. -- Aristotle"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

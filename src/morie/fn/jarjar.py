@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Jarque-Bera normality test. 'How wude!' -- Jar Jar Binks"""
 
 from __future__ import annotations

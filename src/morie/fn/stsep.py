@@ -15,7 +15,7 @@ def stsep(
     nugget: float = 0.0,
     model: str = "exponential",
 ) -> dict:
-    """
+    r"""
     Construct a separable spatio-temporal covariance matrix.
 
     .. math::

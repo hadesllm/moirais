@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Odds ratio for 2x2 with R-style verbose result."""
 
 from typing import Sequence, Union

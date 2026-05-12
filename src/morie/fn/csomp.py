@@ -1,15 +1,15 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Orthogonal Matching Pursuit for sparse recovery."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "I cannot teach anybody anything. I can only make them think. — Socrates"
+_QUOTE = "I cannot teach anybody anything. I can only make them think. -- Socrates"
 
 
 def omp(A, y, sparsity: int, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Orthogonal Matching Pursuit (OMP) for sparse signal recovery.
 
     Greedily selects columns of :math:`A` that best explain :math:`y`,

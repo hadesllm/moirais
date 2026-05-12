@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEM Cochrane-Orcutt spatial filter transform."""
 
 import numpy as np

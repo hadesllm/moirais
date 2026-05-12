@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Radon indoor-air cancer risk per EPA BEIR VI / ICRP methodology."""
 
 from __future__ import annotations
@@ -8,7 +8,7 @@ import numpy as np
 from ._containers import DescriptiveResult
 
 # US EPA action level: 4 pCi/L (148 Bq/m³) triggers mitigation.
-# WHO reference level: 100 Bq/m³ (2.7 pCi/L) — stricter.
+# WHO reference level: 100 Bq/m³ (2.7 pCi/L) -- stricter.
 # Health Canada guideline: 200 Bq/m³ (5.4 pCi/L).
 #
 # Lifetime excess lung-cancer risk per pCi/L of indoor radon:

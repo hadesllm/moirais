@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """White noise exact rate with conjugate Gaussian prior: posterior mean = projection."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Optimal Classification cutting-plane estimator (Poole 2000; Armstrong Ch 3)."""
 import numpy as np
 from ._richresult import RichResult
@@ -83,7 +83,7 @@ optcl = optimal_classification
 
 
 def cheatsheet():
-    return "optcl: Optimal classification — Poole's cutting-plane PRE."
+    return "optcl: Optimal classification -- Poole's cutting-plane PRE."
 
 
 # CANONICAL TEST

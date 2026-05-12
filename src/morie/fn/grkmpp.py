@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """k-means++ initialization: sample each centroid with prob. proportional to D(x)^2."""
 import numpy as np
 from ._richresult import RichResult

@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Study the past if you would define the future. — Confucius"
+_QUOTE = "Study the past if you would define the future. -- Confucius"
 
 
 def spectral_edge_freq(x, fs: float = 1.0, pct: float = 0.95, **kwargs) -> DescriptiveResult:

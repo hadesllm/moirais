@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gabor-Wigner distribution.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -23,7 +23,7 @@ def gbrwv(
     alpha: float = 0.5,
     nfft: int | None = None,
 ) -> DescriptiveResult:
-    """Gabor-Wigner distribution (hybrid TF representation).
+    r"""Gabor-Wigner distribution (hybrid TF representation).
 
     Computes a weighted combination of the spectrogram (Gabor) and
     the Wigner-Ville distribution to balance cross-term suppression

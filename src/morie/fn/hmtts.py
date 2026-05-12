@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random train/test split with fixed random seed for reproducibility."""
 import numpy as np
 from scipy import stats

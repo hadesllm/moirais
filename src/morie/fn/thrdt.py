@@ -12,7 +12,7 @@ def threshold_detect(
 ) -> DescriptiveResult:
     """Detect indices where signal crosses a threshold.
 
-    'That which does not kill us makes us stronger. — Friedrich Nietzsche'
+    'That which does not kill us makes us stronger. -- Friedrich Nietzsche'
     """
     from morie._detection import threshold_detect as _backend
 

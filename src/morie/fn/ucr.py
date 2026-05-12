@@ -1,4 +1,4 @@
-"""No man ever steps in the same river twice. — Heraclitus"""
+"""No man ever steps in the same river twice. -- Heraclitus"""
 
 from __future__ import annotations
 

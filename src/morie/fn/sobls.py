@@ -1,4 +1,4 @@
-"""Sobol quasi-random low-discrepancy sequence (Sobol 1967).
+r"""Sobol quasi-random low-discrepancy sequence (Sobol 1967).
 
 Thin wrapper around ``scipy.stats.qmc.Sobol`` (deterministic for fixed
 seed).  Returns the QMC point set in [0,1]^d plus an optional QMC
@@ -25,7 +25,7 @@ def sobol_sequence(x=None, N: int = 128, d: int = 1, f=None,
     d : int
         Dimensionality.  Default 1.
     f : callable, optional
-        Integrand on [0,1]^d → scalar.
+        Integrand on [0,1]^d -> scalar.
     scramble : bool
         Owen-scrambling (default True) for randomised QMC.
     seed : int

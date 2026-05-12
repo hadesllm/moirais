@@ -1,4 +1,4 @@
-"""Numbered display equation (14.10) from MVSML chapter 14.."""
+r"""Numbered display equation (14.10) from MVSML chapter 14.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_convolutional_nn_eq_14_10"]
 
 
 def mvsml_convolutional_nn_eq_14_10(functions, the, covariate, function, B, spline):
-    """
+    r"""
     Numbered display equation (14.10) from MVSML chapter 14.
 
     Formula: functions for the covariate function and 21 B-spline basis functions for \beta(t)  2 Xn XL1 SSE\lambda \beta ( ) = i=1 yi  \mu  l=1xil\betal + \lambdaJ\beta,
@@ -35,7 +35,7 @@ def mvsml_convolutional_nn_eq_14_10(functions, the, covariate, function, B, spli
     References
     ----------
     MVSML, Eq. (14.10) [Multivariate Statistical Machine Learnin [Pages 579-631] [2026-04-16].pdf]
-    """
+    r"""
     functions = np.atleast_1d(np.asarray(functions, dtype=float))
     n = len(functions)
     result = float(np.mean(functions))

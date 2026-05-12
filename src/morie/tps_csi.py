@@ -1,4 +1,4 @@
-"""morie.tps_csi — Statistics Canada Crime Severity Index (CSI)
+"""morie.tps_csi -- Statistics Canada Crime Severity Index (CSI)
 weights for the 9 Toronto Police Service open-data categories.
 
 The Crime Severity Index, introduced in Wallace et al.\\ (2009)
@@ -155,11 +155,11 @@ def csi_per_year(counts_per_year: dict[int, dict[str, int]] | pd.DataFrame,
     """Compute Toronto's CSI per fiscal year from per-category counts.
 
     Returns a DataFrame indexed by year with columns:
-      raw_weighted_sum    — Σ w_c · n_{c,year}
-      total_count         — Σ n_{c,year}
-      population          — Toronto population that year
-      csi_per_capita      — raw_weighted_sum / population × per_capita_unit
-      simple_count_rate   — total_count / population × per_capita_unit
+      raw_weighted_sum    -- Σ w_c · n_{c,year}
+      total_count         -- Σ n_{c,year}
+      population          -- Toronto population that year
+      csi_per_capita      -- raw_weighted_sum / population × per_capita_unit
+      simple_count_rate   -- total_count / population × per_capita_unit
                             (for comparison)
 
     `counts_per_year` may be either a dict-of-dicts or a long-format
@@ -285,11 +285,11 @@ def analyze_csi_from_tps_dataframes(dfs: dict[str, pd.DataFrame],
         "Statistics Canada uses CSI to compare 33 Census Metropolitan "
         "Areas; Toronto's most-recent published CSI (2023) is "
         "approximately 60.4 (Total) and 71.8 (Violent), against a "
-        "national mean of 80.5 — Toronto sits below the national "
+        "national mean of 80.5 -- Toronto sits below the national "
         "average on Total but above on Violent."
     )
     return RichResult(
-        title="Toronto Crime Severity Index — per-year + per-ward",
+        title="Toronto Crime Severity Index -- per-year + per-ward",
         summary_lines=summary_lines,
         interpretation=interpretation,
         payload={"by_year": by_year.to_dict(orient="records"),

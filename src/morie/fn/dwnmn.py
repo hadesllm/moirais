@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dynamic W-NOMINATE / dynamic ideal points (Armstrong Ch 6)."""
 import numpy as np
 from ._richresult import RichResult
@@ -80,7 +80,7 @@ dwnmn = dynamic_wnominate
 
 
 def cheatsheet():
-    return "dwnmn: Dynamic W-NOMINATE — RTS smoother over random-walk ideal pts."
+    return "dwnmn: Dynamic W-NOMINATE -- RTS smoother over random-walk ideal pts."
 
 
 # CANONICAL TEST

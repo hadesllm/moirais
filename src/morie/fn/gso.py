@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gram-Schmidt orthogonalization for lattice bases."""
 
 from __future__ import annotations

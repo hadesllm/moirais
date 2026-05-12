@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Set t = 2n andw = 22n/ 3 and use the Borel–Cantelli lemma to show that t − 1W( t) → 0 a.s. as
+    Formula: Set t = 2n andw = 22n/ 3 and use the Borel–Cantelli lemma to show that t − 1W( t) -> 0 a.s. as
 
     Parameters
     ----------

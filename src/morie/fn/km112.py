@@ -1,4 +1,4 @@
-"""Answer relevance.."""
+r"""Answer relevance.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch7_answer_relevance"]
 
 
 def kamath_ch7_answer_relevance(E_g, E_o, N):
-    """
+    r"""
     Answer relevance.
 
     Formula: \text{Answer Relevance} = \frac{1}{N}\sum_{i=1}^N \mathrm{sim}(E_{g_i},E_o)
@@ -29,7 +29,7 @@ def kamath_ch7_answer_relevance(E_g, E_o, N):
     References
     ----------
     Kamath et al (2024), Ch 7, Eq 7.3, p. 300
-    """
+    r"""
     E_g = np.atleast_1d(np.asarray(E_g, dtype=float))
     n = len(E_g)
     result = float(np.mean(E_g))

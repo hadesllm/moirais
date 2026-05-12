@@ -1,4 +1,4 @@
-"""Spatial mixed model — random spatial effects (Schabenberger & Gotway Ch 7)."""
+"""Spatial mixed model -- random spatial effects (Schabenberger & Gotway Ch 7)."""
 
 import numpy as np
 from scipy.spatial.distance import cdist
@@ -15,7 +15,7 @@ def spmxd(
     max_iter: int = 50,
     tol: float = 1e-6,
 ) -> dict:
-    """
+    r"""
     Fit a spatial linear mixed model with spatially correlated random effects.
 
     .. math::

@@ -4,7 +4,7 @@ Parallels the ``survey`` and ``srvyr`` packages in R.
 
 This module provides:
 
-1. :class:`SurveyDesign` — encapsulates survey data with weights and strata.
+1. :class:`SurveyDesign` -- encapsulates survey data with weights and strata.
 2. Horvitz-Thompson and Hájek estimators for population totals and means.
 3. Ratio estimator for auxiliary-variable-assisted estimation.
 4. Post-stratification and calibration (raking) weight adjustments.
@@ -101,12 +101,12 @@ class SurveyDesign:
         References
         ----------
         Lumley, T. (2010). *Complex Surveys: A Guide to Analysis Using R*.
-        Wiley. (Chapter 2 — probability weights vs. frequency weights.)
+        Wiley. (Chapter 2 -- probability weights vs. frequency weights.)
         """
         if family is None:
             family = sm.families.Binomial()
 
-        # var_weights: analytic/probability weights — correct for survey data.
+        # var_weights: analytic/probability weights -- correct for survey data.
         # Each weight w_i re-scales the variance of observation i by 1/w_i,
         # which is the appropriate treatment for unequal-probability sampling.
         # Do NOT use freq_weights, which expands the dataset by the weight
@@ -116,7 +116,7 @@ class SurveyDesign:
 
 
 # ===========================================================================
-# SECTION 2 — HORVITZ-THOMPSON AND HÁJEK ESTIMATORS
+# SECTION 2 -- HORVITZ-THOMPSON AND HÁJEK ESTIMATORS
 # ===========================================================================
 
 
@@ -255,7 +255,7 @@ def hajek_mean(
 
 
 # ===========================================================================
-# SECTION 3 — RATIO ESTIMATOR
+# SECTION 3 -- RATIO ESTIMATOR
 # ===========================================================================
 
 
@@ -334,7 +334,7 @@ def ratio_estimator(
 
 
 # ===========================================================================
-# SECTION 4 — WEIGHT CALIBRATION
+# SECTION 4 -- WEIGHT CALIBRATION
 # ===========================================================================
 
 
@@ -480,7 +480,7 @@ def calibration_weights(
 
 
 # ===========================================================================
-# SECTION 5 — DOMAIN / SUBPOPULATION ESTIMATION
+# SECTION 5 -- DOMAIN / SUBPOPULATION ESTIMATION
 # ===========================================================================
 
 
@@ -563,7 +563,7 @@ def subpopulation_estimate(
 
 
 # ===========================================================================
-# SECTION 6 — COMPLEX SURVEY GLM
+# SECTION 6 -- COMPLEX SURVEY GLM
 # ===========================================================================
 
 
@@ -580,7 +580,7 @@ def complex_survey_glm(
     Fit a GLM with complex survey design (weights, optional clustering, strata).
 
     Model is fit using statsmodels WLS/GLM with analytic ``var_weights``
-    (not freq_weights — see :meth:`SurveyDesign.svyglm` for the rationale).
+    (not freq_weights -- see :meth:`SurveyDesign.svyglm` for the rationale).
 
     When ``cluster_col`` is provided, cluster-robust (sandwich) standard errors
     are applied via ``fit(cov_type='cluster', cov_kwds={'groups': ...})``.

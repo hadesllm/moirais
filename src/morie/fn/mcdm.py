@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """TOPSIS multi-criteria decision making."""
 
 import numpy as np

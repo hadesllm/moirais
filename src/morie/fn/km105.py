@@ -1,4 +1,4 @@
-"""Gedi combined loss.."""
+r"""Gedi combined loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_gedi_combined_loss"]
 
 
 def kamath_ch6_gedi_combined_loss(L_g, L_d, lam):
-    """
+    r"""
     Gedi combined loss.
 
     Formula: L_{gd} = \lambda L_g + (1-\lambda) L_d
@@ -29,7 +29,7 @@ def kamath_ch6_gedi_combined_loss(L_g, L_d, lam):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.29, p. 254
-    """
+    r"""
     L_g = np.atleast_1d(np.asarray(L_g, dtype=float))
     n = len(L_g)
     result = float(np.mean(L_g))

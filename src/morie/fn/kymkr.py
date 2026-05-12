@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Information gain / mutual information. 'One door, one key.' -- The Keymaker"""
 
 from __future__ import annotations

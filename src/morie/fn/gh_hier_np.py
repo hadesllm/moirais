@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hierarchical Bayesian nonparametric model: hyperprior on DP concentration."""
 import numpy as np
 from ._richresult import RichResult

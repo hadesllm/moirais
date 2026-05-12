@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Minimum description length (MDL)."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def mdl(log_likelihood: float, k: int, n: int, **kwargs) -> ESRes:
-    """
+    r"""
     Compute minimum description length criterion.
 
     .. math::

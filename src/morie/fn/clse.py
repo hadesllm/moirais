@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Clustered standard errors for OLS."""
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ def clustered_se(
     *,
     add_intercept: bool = True,
 ) -> RegressionResult:
-    """OLS with cluster-robust (Liang-Zeger) standard errors.
+    r"""OLS with cluster-robust (Liang-Zeger) standard errors.
 
     Computes the sandwich estimator:
     :math:`\\widehat{V}_{CL} = (X^\\top X)^{-1}

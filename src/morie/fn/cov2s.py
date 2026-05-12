@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Two-sample coverage probability (Gibbons Ch 2.11.2).
 
 Given samples X (size m) and Y (size n), the placement coverages

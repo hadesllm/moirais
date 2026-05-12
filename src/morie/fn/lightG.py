@@ -1,4 +1,4 @@
-"""LightGCN — simplified graph CF."""
+"""LightGCN -- simplified graph CF."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["lightgcn"]
 
 def lightgcn(R, K, layers):
     """
-    LightGCN — simplified graph CF
+    LightGCN -- simplified graph CF
 
     Formula: L=normalized adj; emb = sum α_k L^k E
 
@@ -34,8 +34,8 @@ def lightgcn(R, K, layers):
     n = len(R)
     result = float(np.mean(R))
     se = float(np.std(R, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "LightGCN — simplified graph CF"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "LightGCN -- simplified graph CF"})
 
 
 def cheatsheet():
-    return "lightG: LightGCN — simplified graph CF"
+    return "lightG: LightGCN -- simplified graph CF"

@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gaussian Mixture Model PDF evaluation."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 def gmm_pdf(x, means, covs, weights, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Evaluate a Gaussian Mixture Model PDF at points *x*.
 
     .. math::

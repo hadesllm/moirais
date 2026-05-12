@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear (city-block) utility function for spatial voting."""
 
 from __future__ import annotations

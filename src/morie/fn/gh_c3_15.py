@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partially specified Polya tree: some partition levels left free."""
 import numpy as np
 from ._richresult import RichResult

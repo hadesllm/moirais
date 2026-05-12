@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Decision tree split criterion. 'There is no spoon.' -- Spoon Boy"""
 
 from __future__ import annotations

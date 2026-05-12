@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP mixture model: f(x) = integral phi(x|theta) dG(theta), G ~ DP(alpha, G0)."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""You have power over your mind — not outside events. — Marcus Aurelius"""
+# morie.fn -- function file (hadesllm/morie)
+"""You have power over your mind -- not outside events. -- Marcus Aurelius"""
 
 from __future__ import annotations
 
@@ -72,4 +72,4 @@ def permutation_two_sample(
 
 
 def cheatsheet() -> str:
-    return "You have power over your mind — not outside events. — Marcus Aurelius"
+    return "You have power over your mind -- not outside events. -- Marcus Aurelius"

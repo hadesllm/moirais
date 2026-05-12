@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Population doubling time."""
 
 import numpy as np
@@ -9,7 +9,7 @@ from ._containers import ESRes
 def population_doubling(
     growth_rate: float,
 ) -> ESRes:
-    """Compute population doubling time.
+    r"""Compute population doubling time.
 
     .. math::
 

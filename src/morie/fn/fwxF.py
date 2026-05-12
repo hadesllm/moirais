@@ -10,7 +10,7 @@ def fire_weather_index(T, RH, wind, precip):
     """
     Canadian Fire Weather Index
 
-    Formula: FFMC + DMC + DC + ISI + BUI → FWI
+    Formula: FFMC + DMC + DC + ISI + BUI -> FWI
 
     Parameters
     ----------

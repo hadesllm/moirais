@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rank-order statistics for paired samples (Gibbons Ch 5.5).
 
 For a single sample of paired differences D_i = X_i - mu0, return

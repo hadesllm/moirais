@@ -1,4 +1,4 @@
-"""Dreamer — world-model RL via latent imagination."""
+"""Dreamer -- world-model RL via latent imagination."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["dreamer"]
 
 def dreamer(env, world_model, actor, critic):
     """
-    Dreamer — world-model RL via latent imagination
+    Dreamer -- world-model RL via latent imagination
 
     Formula: RSSM + actor + critic in latent space
 
@@ -36,8 +36,8 @@ def dreamer(env, world_model, actor, critic):
     n = len(env)
     result = float(np.mean(env))
     se = float(np.std(env, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Dreamer — world-model RL via latent imagination"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Dreamer -- world-model RL via latent imagination"})
 
 
 def cheatsheet():
-    return "dreamr: Dreamer — world-model RL via latent imagination"
+    return "dreamr: Dreamer -- world-model RL via latent imagination"

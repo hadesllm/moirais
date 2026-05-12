@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Double quantization: quantize the (FP32) quantization constants themselves."""
 import numpy as np
 from ._richresult import RichResult

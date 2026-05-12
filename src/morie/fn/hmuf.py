@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Underfitting: high training error because the model is too simple."""
 import numpy as np
 from ._richresult import RichResult

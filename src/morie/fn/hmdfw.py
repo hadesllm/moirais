@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Diffusion forward process adds Gaussian noise over T steps."""
 import numpy as np
 from ._richresult import RichResult

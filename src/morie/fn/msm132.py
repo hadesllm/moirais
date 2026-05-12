@@ -1,4 +1,4 @@
-"""Numbered display equation (8.5) from MVSML chapter 8.."""
+r"""Numbered display equation (8.5) from MVSML chapter 8.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_categorical_count_eq_8_5"]
 
 
 def mvsml_categorical_count_eq_8_5(J, l, xi, x, j, AK):
-    """
+    r"""
     Numbered display equation (8.5) from MVSML chapter 8.
 
     Formula:   2 J \theta l( ) = 1 ) xi, x j \pi AK l( ) xi, xi )AK l( ) x j, x j AK l+1 ( (
@@ -35,7 +35,7 @@ def mvsml_categorical_count_eq_8_5(J, l, xi, x, j, AK):
     References
     ----------
     MVSML, Eq. (8.5) [Multivariate Statistical Machine Learnin [Pages 251-336] [2026-04-16].pdf]
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

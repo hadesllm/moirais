@@ -1,4 +1,4 @@
-"""Cps metric.."""
+r"""Cps metric.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_cps_metric"]
 
 
 def kamath_ch6_cps_metric(U, M, theta):
-    """
+    r"""
     Cps metric.
 
     Formula: \mathrm{CPS}(S) = \sum_{u\in U}\log P(u|U_{\setminus u},M;\theta)
@@ -29,7 +29,7 @@ def kamath_ch6_cps_metric(U, M, theta):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.11, p. 236
-    """
+    r"""
     U = np.atleast_1d(np.asarray(U, dtype=float))
     n = len(U)
     result = float(np.mean(U))

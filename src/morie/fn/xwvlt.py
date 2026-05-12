@@ -20,7 +20,7 @@ def cross_wavelet(
     fs: float = 1.0,
     scales: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """Cross-wavelet spectrum of two signals.
+    r"""Cross-wavelet spectrum of two signals.
 
     .. math::
 

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Reliability growth (Duane/AMSAA model). 'That which does not kill us makes us stronger. — Friedrich Nietzsche'"""
+# morie.fn -- function file (hadesllm/morie)
+"""Reliability growth (Duane/AMSAA model). 'That which does not kill us makes us stronger. -- Friedrich Nietzsche'"""
 
 from __future__ import annotations
 

@@ -13,11 +13,16 @@
 #' @param W,U,b Weight matrices / bias.
 #' @param hidden_size Hidden size.
 #' @param seed RNG seed.
+#' @param deterministic_seed Optional integer; if non-NULL, a SHA-keyed
+#'   seed from \code{\link{morie_det_rng}("grucl", deterministic_seed)} is
+#'   installed before sampling so Py<->R streams agree.  Overrides
+#'   \code{seed} when set.
 #' @return Named list \code{(h, estimate, z, r, n, method)}.
 #' @references Cho et al. (2014), EMNLP.
 #' @export
 grucl_gru_cell <- function(x, h_prev = NULL, W = NULL, U = NULL, b = NULL,
-                           hidden_size = NULL, seed = 0L) {
+                           hidden_size = NULL, seed = 0L,
+                           deterministic_seed = NULL) {
   x <- as.numeric(x); n_in <- length(x)
   if (is.null(hidden_size)) {
     hidden_size <- if (!is.null(h_prev)) length(h_prev)
@@ -26,7 +31,11 @@ grucl_gru_cell <- function(x, h_prev = NULL, W = NULL, U = NULL, b = NULL,
   }
   H <- as.integer(hidden_size)
   if (is.null(h_prev)) h_prev <- rep(0, H)
-  set.seed(seed)
+  if (!is.null(deterministic_seed)) {
+    morie_det_rng("grucl", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   if (is.null(W)) W <- matrix(stats::rnorm(3 * H * n_in, 0, 0.1), 3 * H, n_in)
   if (is.null(U)) U <- matrix(stats::rnorm(3 * H * H, 0, 0.1), 3 * H, H)
   if (is.null(b)) b <- rep(0, 3 * H)

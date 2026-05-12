@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Durbin-Watson statistic for residual autocorrelation."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Who's the more foolish: the fool, or the fool who follows him?"
 
 
 def durbin_watson_stat_fn(residuals: np.ndarray) -> DescriptiveResult:
-    """Compute the Durbin-Watson statistic.
+    r"""Compute the Durbin-Watson statistic.
 
     .. math::
 

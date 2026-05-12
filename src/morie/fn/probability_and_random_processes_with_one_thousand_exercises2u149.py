@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: If X is a random variable and g : R → R, then Z = g( X) , defined by Z(ω) = g( X(ω)) ,
+    Formula: If X is a random variable and g : R -> R, then Z = g( X) , defined by Z(ω) = g( X(ω)) ,
 
     Parameters
     ----------

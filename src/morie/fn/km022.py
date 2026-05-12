@@ -1,4 +1,4 @@
-"""Mlm loss.."""
+r"""Mlm loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_mlm_loss"]
 
 
 def kamath_ch2_mlm_loss(x, M_x):
-    """
+    r"""
     Mlm loss.
 
     Formula: L^{(x)}_{MLM} = -\frac{1}{|M_x|}\sum_{i\in M_x} \log P(x_i|x_{\setminus M_x})
@@ -27,7 +27,7 @@ def kamath_ch2_mlm_loss(x, M_x):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.22, p. 51
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

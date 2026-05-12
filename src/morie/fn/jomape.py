@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean Absolute Percentage Error."""
 import numpy as np
 from ._richresult import RichResult

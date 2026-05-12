@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MGWR diagnostic summary."""
 
 from ._containers import SpatialResult

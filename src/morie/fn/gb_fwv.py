@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Variance of Friedman chi_r^2 statistic for small b."""
 import numpy as np
 from scipy import stats

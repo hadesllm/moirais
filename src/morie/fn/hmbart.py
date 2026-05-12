@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BART: denoising autoencoder pretraining for seq2seq."""
 import numpy as np
 from ._richresult import RichResult

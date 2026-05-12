@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Test-retest reliability via ICC."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classical metric MDS via Torgerson-Eckart-Young decomposition."""
 import numpy as np
 from ._richresult import RichResult

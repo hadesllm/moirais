@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_15_unnumbered_531(x):
     """
     PowerAndDesign expression (auto-extracted; see ref).
 
-    Formula: analysis for one-tailed α -level test of no effect with α> 0 tends to 1 as I →∞ for
+    Formula: analysis for one-tailed α -level test of no effect with α> 0 tends to 1 as I ->∞ for
 
     Parameters
     ----------

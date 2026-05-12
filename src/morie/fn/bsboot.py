@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bootstrap resamples of a statistic."""
 
 from typing import Sequence, Union, Callable

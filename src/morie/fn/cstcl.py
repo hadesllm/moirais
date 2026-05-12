@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Custody classification level distribution and transitions."""
 
 from __future__ import annotations

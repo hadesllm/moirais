@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GP posterior contraction theorem: rate from concentration function phi_n."""
 import numpy as np
 from ._richresult import RichResult

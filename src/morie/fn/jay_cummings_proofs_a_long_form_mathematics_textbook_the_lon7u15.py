@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Exercise 8.15. Consider the functionsf : Z × Z → Z × Z where f (m,n ) =
+    Formula: Exercise 8.15. Consider the functionsf : Z × Z -> Z × Z where f (m,n ) =
 
     Parameters
     ----------

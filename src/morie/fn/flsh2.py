@@ -1,9 +1,9 @@
-"""Real knowledge is to know the extent of one's ignorance. — Confucius"""
+"""Real knowledge is to know the extent of one's ignorance. -- Confucius"""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
 
-__all__ = ["Real knowledge is to know the extent of one's ignorance. — Confucius"]
+__all__ = ["Real knowledge is to know the extent of one's ignorance. -- Confucius"]
 
 
 def flash_attention(Q, K, V):
@@ -34,8 +34,8 @@ def flash_attention(Q, K, V):
     n = len(Q)
     result = float(np.mean(Q))
     se = float(np.std(Q, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Real knowledge is to know the extent of one's ignorance. — Confucius"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Real knowledge is to know the extent of one's ignorance. -- Confucius"})
 
 
 def cheatsheet():
-    return "Real knowledge is to know the extent of one's ignorance. — Confucius"
+    return "Real knowledge is to know the extent of one's ignorance. -- Confucius"

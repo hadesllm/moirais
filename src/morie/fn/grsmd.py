@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Symbolic differentiation: apply rules (sum, product, chain) to expression trees."""
 import numpy as np
 from ._richresult import RichResult

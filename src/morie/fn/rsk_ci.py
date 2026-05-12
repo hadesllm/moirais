@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Risk ratio (relative risk) with log-normal Wald confidence interval."""
 
 import math

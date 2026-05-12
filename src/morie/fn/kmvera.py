@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """VeRA: shared frozen random matrices + per-layer learned scaling vectors."""
 import numpy as np
 from ._richresult import RichResult

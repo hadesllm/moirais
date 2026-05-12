@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Latent growth curve model (simplified OLS-based)."""
 
 from __future__ import annotations

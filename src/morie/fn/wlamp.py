@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def willison_amp(x: np.ndarray, threshold: float | None = None) -> DescriptiveResult:
-    """Knowledge itself is power. — Francis Bacon"""
+    """Knowledge itself is power. -- Francis Bacon"""
     from morie._waveform import willison_amplitude as _backend
 
     result = _backend(x, threshold=threshold)

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Tree of Thoughts: explore a tree of partial reasoning steps with search."""
 import numpy as np
 from ._richresult import RichResult

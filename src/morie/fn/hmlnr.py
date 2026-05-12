@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Layer normalization applied in RNN cells."""
 import numpy as np
 from ._richresult import RichResult

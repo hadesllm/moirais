@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sleep apnea detection via ECG-derived respiration + SpO2 fusion."""
 import numpy as np
 from ._richresult import RichResult

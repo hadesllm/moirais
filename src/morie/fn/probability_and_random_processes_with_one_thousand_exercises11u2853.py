@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: then P( Q( t) → ∞ as t → ∞ ) = 1, whilst if ρ = 1 then the queue length experiences wild
+    Formula: then P( Q( t) -> ∞ as t -> ∞ ) = 1, whilst if ρ = 1 then the queue length experiences wild
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ordered logit (proportional odds) model AND
 Jonckheere-Terpstra ordered-alternatives test (Gibbons Ch 10.6).
 
@@ -23,7 +23,7 @@ def ordered_logit(
     *,
     max_iter: int = 200,
 ) -> RegressionResult:
-    """Ordered logit (proportional odds) via MLE.
+    r"""Ordered logit (proportional odds) via MLE.
 
     Estimates cutpoints :math:`\\alpha_1 < \\alpha_2 < \\dots < \\alpha_{J-1}`
     and a common coefficient vector :math:`\\beta` such that

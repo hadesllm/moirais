@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""ARIMA model fitting. 'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius' -- Maz Kanata"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""ARIMA model fitting. 'The happiness of your life depends upon the quality of your thoughts. -- Marcus Aurelius' -- Maz Kanata"""
 
 from __future__ import annotations
 
@@ -73,4 +73,4 @@ arma = arima_fit
 
 
 def cheatsheet() -> str:
-    return "arima_fit({}) -> ARIMA model fitting. 'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius' -- Maz Kana"
+    return "arima_fit({}) -> ARIMA model fitting. 'The happiness of your life depends upon the quality of your thoughts. -- Marcus Aurelius' -- Maz Kana"

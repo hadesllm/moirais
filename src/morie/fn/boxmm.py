@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Box's M test for covariance equality. 'I have a bad feeling about this. --'"""
 
 from __future__ import annotations

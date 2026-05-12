@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MGWR t-values for local coefficients."""
 
 from ._containers import SpatialResult

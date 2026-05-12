@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Weather-related crash factor analysis."""
 
 from __future__ import annotations

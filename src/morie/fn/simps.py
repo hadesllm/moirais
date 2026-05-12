@@ -4,11 +4,11 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle"
+_QUOTE = "It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle"
 
 
 def simpson_integrate(f, a: float, b: float, n: int = 100, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Numerical integration using composite Simpson's 1/3 rule.
 
     .. math::

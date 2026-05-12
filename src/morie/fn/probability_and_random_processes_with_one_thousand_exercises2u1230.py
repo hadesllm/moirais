@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: studies the asymptotic behaviour of P( |Sn − nµ |> nα) as n → ∞ , for values ofα satisfying
+    Formula: studies the asymptotic behaviour of P( |Sn − nµ |> nα) as n -> ∞ , for values ofα satisfying
 
     Parameters
     ----------

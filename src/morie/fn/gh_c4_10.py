@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polya urn scheme construction of DP: sequential predictive draws."""
 import numpy as np
 from ._richresult import RichResult

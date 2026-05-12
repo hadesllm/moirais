@@ -1,4 +1,4 @@
-"""Dispersion expression (auto-extracted; see ref).."""
+r"""Dispersion expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["density_estimation_for_statistics_and_data_analysis_silverma_chapter
 
 
 def density_estimation_for_statistics_and_data_analysis_silverma_chapter_3_unnumbered_85(x):
-    """
+    r"""
     Dispersion expression (auto-extracted; see ref).
 
     Formula: [EQ] Step 3" Y = X + (X - X -f h8)/{\ + (6.17)

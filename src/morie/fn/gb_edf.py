@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Empirical distribution function S_n(x) definition via order statistics."""
 import numpy as np
 from scipy import stats

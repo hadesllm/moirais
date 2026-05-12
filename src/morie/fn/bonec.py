@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Weibull failure analysis. 'I will crush you!' -- Bonecrusher"""
 
 from __future__ import annotations

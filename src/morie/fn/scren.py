@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Screening test performance (Se, Sp, PPV, NPV, LR+, LR-)."""
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ def screening_performance(
     prevalence: float | None = None,
     alpha: float = 0.05,
 ) -> dict[str, Any]:
-    """Compute screening/diagnostic test performance metrics.
+    r"""Compute screening/diagnostic test performance metrics.
 
     From a 2x2 confusion matrix:
 

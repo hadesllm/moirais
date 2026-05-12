@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""describe(name) — pedagogical multi-section guide for any morie.fn callable.
+# morie.fn -- function file (hadesllm/morie)
+"""describe(name) -- pedagogical multi-section guide for any morie.fn callable.
 
 Per  and the rule in
 memory `feedback_morie_describe_feature.md`. Reads a sibling
@@ -16,7 +16,7 @@ _FN_DIR = Path(__file__).parent
 _DESCRIBE_PREFIX = "describe_"
 
 # The 9 standard section headers we expect in describe_<name>.md files.
-# Order matters — this is the order they're rendered.
+# Order matters -- this is the order they're rendered.
 _STANDARD_SECTIONS = [
     "WHAT IT DOES",
     "WHEN TO USE",
@@ -115,7 +115,7 @@ def _render_from_md(md_text: str, entry, md_path: Path):
             })
 
     return RichResult(
-        title=f"describe({entry.short!r}) — {entry.description or entry.full}",
+        title=f"describe({entry.short!r}) -- {entry.description or entry.full}",
         summary_lines=[
             ("Short name", entry.short),
             ("Category", entry.category),
@@ -136,17 +136,17 @@ def _render_skeleton(entry):
     from ._richresult import RichResult
 
     return RichResult(
-        title=f"describe({entry.short!r}) — {entry.full}",
+        title=f"describe({entry.short!r}) -- {entry.full}",
         summary_lines=[
             ("Short name", entry.short),
             ("Category", entry.category),
             ("Description", entry.description),
-            ("Quote", entry.quote or "—"),
+            ("Quote", entry.quote or "--"),
         ],
         sections=[{
             "title": "WHAT IT DOES",
             "text": (entry.description or "(no description provided)") + "\n\n"
-                    "We are what we repeatedly do. Excellence is a habit. — Aristotle"
+                    "We are what we repeatedly do. Excellence is a habit. -- Aristotle"
                     f"`describe_{entry.short}.md` next to its source file.)",
         }],
         warnings=[

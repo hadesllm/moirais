@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Decision trees exhibit high variance; small data changes yield very different trees."""
 import numpy as np
 from ._richresult import RichResult

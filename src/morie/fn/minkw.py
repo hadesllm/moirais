@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""The man who moves a mountain begins by carrying away small stones. — Confucius"""
+# morie.fn -- function file (hadesllm/morie)
+"""The man who moves a mountain begins by carrying away small stones. -- Confucius"""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def minkowski_dist(a: np.ndarray, b: np.ndarray, p: float = 2.0) -> DescriptiveResult:
-    """
+    r"""
     Compute the Minkowski distance (Lp norm) between two vectors.
 
     .. math::

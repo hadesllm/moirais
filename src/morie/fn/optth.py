@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Optimal threshold selection (Youden's J or cost-based)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Johansen cointegration test (trace + max-eigenvalue)."""
 from __future__ import annotations
 
@@ -61,7 +61,7 @@ def johansen_cointegration(x, k_ar_diff=1):
     if T < 20 or k < 2:
         raise ValueError(f"Need T>=20 and k>=2; got T={T}, k={k}.")
 
-    # Prefer statsmodels if available — robust treatment of trends/lags.
+    # Prefer statsmodels if available -- robust treatment of trends/lags.
     try:
         from statsmodels.tsa.vector_ar.vecm import coint_johansen
         jres = coint_johansen(Y, det_order=0, k_ar_diff=k_ar_diff)

@@ -1,4 +1,4 @@
-"""Numbered display equation (14.8) from MVSML chapter 14.."""
+r"""Numbered display equation (14.8) from MVSML chapter 14.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_convolutional_nn_eq_14_8"]
 
 
 def mvsml_convolutional_nn_eq_14_8(L2, t1, t2):
-    """
+    r"""
     Numbered display equation (14.8) from MVSML chapter 14.
 
     Formula: \psiL2 t1 ( ) 6664 7775 \psi1 t2 ( ) ⋱ \psiL2 t2 ( ) \Psi =
@@ -29,7 +29,7 @@ def mvsml_convolutional_nn_eq_14_8(L2, t1, t2):
     References
     ----------
     MVSML, Eq. (14.8) [Multivariate Statistical Machine Learnin [Pages 579-631] [2026-04-16].pdf]
-    """
+    r"""
     L2 = np.atleast_1d(np.asarray(L2, dtype=float))
     n = len(L2)
     result = float(np.mean(L2))

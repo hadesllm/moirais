@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Truth comes out of error more readily than out of confusion. — Francis Bacon"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Truth comes out of error more readily than out of confusion. -- Francis Bacon"""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ def circular_mean(
     degrees: bool = True,
     weights: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """Compute circular (directional) mean and concentration parameter.
+    r"""Compute circular (directional) mean and concentration parameter.
 
     Parameters
     ----------
@@ -84,4 +84,4 @@ capam = circular_mean
 
 
 def cheatsheet() -> str:
-    return "circular_mean({}) -> Circular statistics — mean direction and concentration. 'I c"
+    return "circular_mean({}) -> Circular statistics -- mean direction and concentration. 'I c"

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discrete-event M/M/1 queue simulation."""
 
 from __future__ import annotations

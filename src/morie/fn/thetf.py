@@ -1,4 +1,4 @@
-"""Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius"""
+"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
 
 from __future__ import annotations
 

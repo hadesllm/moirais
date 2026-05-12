@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Paired t-test with R-style verbose result."""
 
 from typing import Sequence, Union
@@ -31,7 +31,7 @@ def paired(x: Union[Sequence, np.ndarray],
     warnings = []
     if a.size < 10:
         warnings.append(f"small sample (n={a.size}); paired-t assumes diffs "
-                        "are approximately Normal — consider `wilcoxn` "
+                        "are approximately Normal -- consider `wilcoxn` "
                         "(signed-rank) as a robust alternative.")
 
     return hypothesis_test_result(

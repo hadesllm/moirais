@@ -1,6 +1,6 @@
 """JIT-ready acceleration layer for morie hot paths.
 
-⚠ HONEST STATE — read before believing the speed claims:
+⚠ HONEST STATE -- read before believing the speed claims:
 
 This module is *structurally* numba-ready: every kernel below is
 decorated with @njit(cache=True) and uses numba.prange for parallel
@@ -8,7 +8,7 @@ loops. WHEN numba is installed and importable, the JIT path runs
 and small-array kernels get ~5–10× speedup over scipy.stats.
 
 When numba is NOT importable (the current state of morie's
-primary venv on Python 3.15 — numba's wheels max out at 3.14),
+primary venv on Python 3.15 -- numba's wheels max out at 3.14),
 the `try import numba` fails, the module installs a no-op
 decorator, and every function runs as plain numpy. **Numerically
 identical, but no speedup.** `is_jit_available()` returns False
@@ -21,7 +21,7 @@ where `pip install numba` succeeds. Track:
     >>> is_jit_available()
     True   # ← only when numba imported
 
-This module is *opt-in* — `morie` proper doesn't import it eagerly.
+This module is *opt-in* -- `morie` proper doesn't import it eagerly.
 fn/ files that want acceleration import via:
 
     from morie._jit import normal_pdf
@@ -32,10 +32,10 @@ the test suite stays green on Python 3.15 even though acceleration
 is dormant.
 
 Kernels exposed (all numerically correct in both modes):
-  - normal_pdf / normal_logpdf  — the kernel inside dnorm/qnorm/pnorm
-  - mean_jit / std_jit / var_jit — fused-loop summary stats
-  - cor_pearson_jit              — Pearson correlation in one pass
-  - euclid_dist_jit              — pairwise distance kernel
+  - normal_pdf / normal_logpdf  -- the kernel inside dnorm/qnorm/pnorm
+  - mean_jit / std_jit / var_jit -- fused-loop summary stats
+  - cor_pearson_jit              -- Pearson correlation in one pass
+  - euclid_dist_jit              -- pairwise distance kernel
 """
 from __future__ import annotations
 
@@ -43,13 +43,13 @@ import math
 import numpy as np
 
 # Attempt to enable JIT. The module exposes the same function names
-# either way — callers don't need to branch on availability.
+# either way -- callers don't need to branch on availability.
 try:
     import numba
     from numba import njit, prange
 
     _NUMBA_AVAILABLE = True
-except ImportError:  # pragma: no cover — Python 3.15 path
+except ImportError:  # pragma: no cover -- Python 3.15 path
     _NUMBA_AVAILABLE = False
     # Stub decorators so the function bodies parse + run identically.
     def njit(*args, **kwargs):  # type: ignore[no-redef]
@@ -71,7 +71,7 @@ _LOG_SQRT_2PI = 0.5 * math.log(2.0 * math.pi)
 
 @njit(cache=True)
 def normal_pdf(x: np.ndarray, mean: float, sd: float) -> np.ndarray:
-    """Normal PDF — kernel of dnorm. ~5–10× faster than scipy.stats.norm.pdf
+    """Normal PDF -- kernel of dnorm. ~5–10× faster than scipy.stats.norm.pdf
     on small arrays once compiled, comparable on big arrays.
     """
     inv_sigma = 1.0 / sd
@@ -81,7 +81,7 @@ def normal_pdf(x: np.ndarray, mean: float, sd: float) -> np.ndarray:
 
 @njit(cache=True)
 def normal_logpdf(x: np.ndarray, mean: float, sd: float) -> np.ndarray:
-    """Log-density form — preferred for likelihood calculations to
+    """Log-density form -- preferred for likelihood calculations to
     avoid underflow.
     """
     inv_sigma = 1.0 / sd
@@ -154,7 +154,7 @@ def euclid_dist_jit(a: np.ndarray, b: np.ndarray) -> float:
 
 
 def is_jit_available() -> bool:
-    """Probe — used by doctor / selftest to advertise the speedup."""
+    """Probe -- used by doctor / selftest to advertise the speedup."""
     return _NUMBA_AVAILABLE
 
 

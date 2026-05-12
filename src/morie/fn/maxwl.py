@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maxwell equations (EM field tensor)."""
 
 __all__ = ["maxwl"]
@@ -11,7 +11,7 @@ def maxwl(
     B: np.ndarray,
     c: float = 299792458.0,
 ) -> dict:
-    """
+    r"""
     Construct the electromagnetic field tensor (Faraday tensor) and
     its dual, and compute Lorentz invariants.
 

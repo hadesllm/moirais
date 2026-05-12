@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Copeland method for social choice."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def copeland_method(preference_matrix) -> DescriptiveResult:
-    """An unexamined life is not worth living. — Socrates"""
+    """An unexamined life is not worth living. -- Socrates"""
     M = np.asarray(preference_matrix, dtype=float)
     n = M.shape[0]
     if M.shape != (n, n):

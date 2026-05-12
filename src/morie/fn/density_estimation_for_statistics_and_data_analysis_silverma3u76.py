@@ -11,7 +11,7 @@ def density_estimation_for_statistics_and_data_analysis_silverma_chapter_3_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: The expression (5.34) is maximized by setting j8(Zj) = + oo if 6 ^ = 1 and jS(Z,) = — 0 0 if = 0. Much better estimates of the log density ratio are
+    Formula: The expression (5.34) is maximized by setting j8(Zj) = + oo if 6 ^ = 1 and jS(Z,) = -- 0 0 if = 0. Much better estimates of the log density ratio are
 
     Parameters
     ----------

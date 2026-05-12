@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """UA subscale composite reliability (rho_c)."""
 
 from __future__ import annotations

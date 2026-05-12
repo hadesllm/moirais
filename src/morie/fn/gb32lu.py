@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Recursive frequency relation for runs up and down in sequence of n numbers."""
 import numpy as np
 from ._richresult import RichResult

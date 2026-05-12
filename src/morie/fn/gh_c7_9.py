@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Consistency for linear regression with unknown error density."""
 import numpy as np
 from ._richresult import RichResult

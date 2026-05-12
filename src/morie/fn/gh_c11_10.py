@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Series GP prior (random Fourier features): f = sum_k beta_k phi_k, beta_k ~ N(0,lambda_k)."""
 import numpy as np
 from ._richresult import RichResult

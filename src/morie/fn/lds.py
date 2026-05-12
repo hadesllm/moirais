@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Load a dataset by catalog key (data module)."""
 
 from morie.data import load_dataset as _fn

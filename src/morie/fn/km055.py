@@ -1,4 +1,4 @@
-"""Parallel adapter.."""
+r"""Parallel adapter.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch4_parallel_adapter"]
 
 
 def kamath_ch4_parallel_adapter(H_o, H_i, W_down, W_up):
-    """
+    r"""
     Parallel adapter.
 
     Formula: H_o \leftarrow H_o + f(H_i W_{down}) W_{up}
@@ -31,7 +31,7 @@ def kamath_ch4_parallel_adapter(H_o, H_i, W_down, W_up):
     References
     ----------
     Kamath et al (2024), Ch 4, Eq 4.2, p. 149
-    """
+    r"""
     H_o = np.atleast_1d(np.asarray(H_o, dtype=float))
     n = len(H_o)
     result = float(np.mean(H_o))

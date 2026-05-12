@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Other k-sample rank test statistics using linear rank scores."""
 import numpy as np
 from scipy import stats

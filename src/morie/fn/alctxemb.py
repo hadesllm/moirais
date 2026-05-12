@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Contextualized word embedding: layer-l hidden state at position i."""
 import numpy as np
 from ._richresult import RichResult

@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: θ ∈)Theta1 g(θ)π(θ) , where g :)Theta1 → R andπ is a density or mass
+    Formula: θ ∈)Theta1 g(θ)π(θ) , where g :)Theta1 -> R andπ is a density or mass
 
     Parameters
     ----------

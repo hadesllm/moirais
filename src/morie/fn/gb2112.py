@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Joint distribution of block frequencies B_1,...,B_(n+1) is uniform over partitions."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Batch normalization. 'Truly wonderful, the mind of a child is.'"""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def batch_norm(
     beta: float = 0.0,
     eps: float = 1e-5,
 ) -> DescriptiveResult:
-    """
+    r"""
     Apply batch normalization to an input array.
 
     .. math::

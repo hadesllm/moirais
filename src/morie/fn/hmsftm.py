@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Softmax function normalizes class scores into probabilities."""
 import numpy as np
 from ._richresult import RichResult

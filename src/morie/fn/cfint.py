@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Counterfactual explanation via nearest counterfactual search.
 
 Finds the smallest perturbation to an instance that changes the

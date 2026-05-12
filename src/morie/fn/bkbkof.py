@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """N-gram backoff: fall back to lower-order n-gram when higher-order count is zero."""
 import numpy as np
 from ._richresult import RichResult

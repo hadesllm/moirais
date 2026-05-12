@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Wavelet denoising — Rangayyan Ch 10."""
+# morie.fn -- function file (hadesllm/morie)
+"""Wavelet denoising -- Rangayyan Ch 10."""
 from __future__ import annotations
 
 import numpy as np
@@ -111,4 +111,4 @@ def rangayyan_wavelet_denoise(x, wavelet="db4", level=None, mode="soft"):
 
 
 def cheatsheet():
-    return "rgwav: wavelet (universal-threshold) denoising — Rangayyan Ch 10"
+    return "rgwav: wavelet (universal-threshold) denoising -- Rangayyan Ch 10"

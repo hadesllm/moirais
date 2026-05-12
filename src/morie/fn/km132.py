@@ -1,4 +1,4 @@
-"""Llm signal tokens.."""
+r"""Llm signal tokens.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_llm_signal_tokens"]
 
 
 def kamath_ch9_llm_signal_tokens(P_X, F_T):
-    """
+    r"""
     Llm signal tokens.
 
     Formula: (t, S_X) = \mathrm{LLM}(P_X, F_T)
@@ -27,7 +27,7 @@ def kamath_ch9_llm_signal_tokens(P_X, F_T):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.4, p. 383
-    """
+    r"""
     P_X = np.atleast_1d(np.asarray(P_X, dtype=float))
     n = len(P_X)
     result = float(np.mean(P_X))

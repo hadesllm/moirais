@@ -1,4 +1,4 @@
-"""Whittaker smoother. 'Character is destiny. — Heraclitus' -- General usage"""
+"""Whittaker smoother. 'Character is destiny. -- Heraclitus' -- General usage"""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ def whittaker_smooth(
     lambda_: float = 100.0,
     d: int = 2,
 ) -> DescriptiveResult:
-    """
+    r"""
     Whittaker smoother (penalised least squares).
 
     Minimises :math:`\\|y - z\\|^2 + \\lambda \\|D^d z\\|^2`
@@ -67,4 +67,4 @@ whttk = whittaker_smooth
 
 
 def cheatsheet() -> str:
-    return "whittaker_smooth({}) -> Whittaker smoother. 'Character is destiny. — Heraclitus' -- General "
+    return "whittaker_smooth({}) -> Whittaker smoother. 'Character is destiny. -- Heraclitus' -- General "

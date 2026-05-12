@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Elastic net regression. 'Everything flows. -- Heraclitus'"""
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nominal response model for multiple-choice items."""
 
 from __future__ import annotations

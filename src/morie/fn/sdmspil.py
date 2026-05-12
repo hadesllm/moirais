@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SDM spillover index (indirect/total)."""
 
 from ._containers import SpatialResult

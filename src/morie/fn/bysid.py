@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayesian ideal-point estimation (Armstrong Ch 5)."""
 import numpy as np
 from ._richresult import RichResult
@@ -11,7 +11,8 @@ def _logistic(z):
 
 
 def bayesian_ideal_points(x, n_iter: int = 400, burn: int = 100,
-                          seed: int = 0):
+                          seed: int = 0,
+                          deterministic_seed: int | None = None):
     """Bayesian ideal-point estimation, Metropolis-within-Gibbs surrogate
     for Clinton-Jackman-Rivers (2004).
 
@@ -23,12 +24,22 @@ def bayesian_ideal_points(x, n_iter: int = 400, burn: int = 100,
     x : (n, m) binary vote matrix, or 1-D vector (treated as single item).
     n_iter, burn : MCMC sweep lengths.
     seed : RNG seed.
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged: the user-supplied ``seed`` drives a fresh
+        :class:`numpy.random.Generator`.
 
     Returns
     -------
     RichResult with keys: x_mean, x_sd, x_ci, alpha, beta, n_iter
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("bysid", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     M = np.asarray(x, dtype=float)
     if M.ndim == 1:
         M = M.reshape(-1, 1)

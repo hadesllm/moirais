@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LPC-derived power spectrum."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Statistics is the grammar of science. — Karl Pearson"
+_QUOTE = "Statistics is the grammar of science. -- Karl Pearson"
 
 
 def lpc_spectrum_fn(
@@ -16,7 +16,7 @@ def lpc_spectrum_fn(
     nfft: int = 512,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute the power spectrum from LPC (all-pole) model parameters.
+    r"""Compute the power spectrum from LPC (all-pole) model parameters.
 
     .. math::
 

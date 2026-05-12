@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP posterior convergence to Kaplan-Meier estimator as concentration alpha->0."""
 import numpy as np
 from ._richresult import RichResult

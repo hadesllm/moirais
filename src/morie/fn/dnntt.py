@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Dunnett's test — multiple treatment groups vs control."""
+# morie.fn -- function file (hadesllm/morie)
+"""Dunnett's test -- multiple treatment groups vs control."""
 
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ def dunnett_test(
     """Dunnett's test: each treatment vs control.
 
     Uses t-statistics with pooled variance (approximate, no
-    multivariate-t critical values — uses Bonferroni correction).
+    multivariate-t critical values -- uses Bonferroni correction).
 
     Parameters
     ----------
@@ -71,4 +71,4 @@ dnntt = dunnett_test
 
 
 def cheatsheet() -> str:
-    return "dunnett_test({}) -> Dunnett's test — multiple treatment groups vs control."
+    return "dunnett_test({}) -> Dunnett's test -- multiple treatment groups vs control."

@@ -1,4 +1,4 @@
-"""Squared error between the predicted value and the target for a single example.."""
+r"""Squared error between the predicted value and the target for a single example.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_squared_error"]
 
 
 def burkov_lm_ch1_squared_error(y_hat_i, y_i):
-    """
+    r"""
     Squared error between the predicted value and the target for a single example.
 
     Formula: \operatorname{err}(\hat{y}_i, y_i) \stackrel{\text{def}}{=} (\hat{y}_i - y_i)^2

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Legal BAC limit threshold check."""
 
 from __future__ import annotations

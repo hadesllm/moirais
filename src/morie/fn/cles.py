@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Common Language Effect Size (probability of superiority)."""
 
 from typing import Union

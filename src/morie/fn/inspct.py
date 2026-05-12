@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Inspect a single output file (schema, row counts, stats)."""
 
 from morie.inspector import inspect_output as _fn

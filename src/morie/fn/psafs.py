@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Population attributable fraction (PAF)."""
 
 from __future__ import annotations

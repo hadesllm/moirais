@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dynamic quantization: weights statically INT8, activations quantized per-batch at runtime."""
 import numpy as np
 from ._richresult import RichResult

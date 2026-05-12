@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Combinatorial identity: sum_r C(m,r)C(n,r+1) = C(m+n,m+1)."""
 import numpy as np
 from ._richresult import RichResult

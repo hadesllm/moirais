@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Poisson kernel for count data in DPM: mixture of Poisson(lambda)."""
 import numpy as np
 from ._richresult import RichResult

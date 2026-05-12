@@ -1,4 +1,4 @@
-"""Lora forward.."""
+r"""Lora forward.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch4_lora_forward"]
 
 
 def kamath_ch4_lora_forward(W_0, B, A, x):
-    """
+    r"""
     Lora forward.
 
     Formula: h = W_0 x + \Delta W x = W_0 x + B A x
@@ -31,7 +31,7 @@ def kamath_ch4_lora_forward(W_0, B, A, x):
     References
     ----------
     Kamath et al (2024), Ch 4, Eq 4.5, p. 151
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

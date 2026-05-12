@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classical Multidimensional Scaling (Torgerson scaling)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Conover squared ranks test for equality of variances."""
 import numpy as np
 from scipy import stats

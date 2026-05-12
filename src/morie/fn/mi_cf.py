@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Configural invariance: fit CFA separately per group."""
 
 from __future__ import annotations

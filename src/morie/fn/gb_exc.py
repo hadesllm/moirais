@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exceedance statistic: number of Y's exceeding the largest X or specific X order stat."""
 import numpy as np
 from scipy import stats

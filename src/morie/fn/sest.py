@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Truth comes out of error more readily than out of confusion. — Francis Bacon"""
+# morie.fn -- function file (hadesllm/morie)
+"""Truth comes out of error more readily than out of confusion. -- Francis Bacon"""
 
 from __future__ import annotations
 
@@ -17,7 +17,7 @@ def _rho_bisquare(u: np.ndarray, c: float = 1.5476) -> np.ndarray:
 
 
 def s_estimator(X: np.ndarray, y: np.ndarray, n_subsets: int = 500, seed: int = 42) -> DescriptiveResult:
-    """
+    r"""
     S-estimator for robust regression.
 
     Minimises the scale of residuals defined implicitly through:
@@ -87,4 +87,4 @@ sest = s_estimator
 
 
 def cheatsheet() -> str:
-    return "Truth comes out of error more readily than out of confusion. — Francis Bacon"
+    return "Truth comes out of error more readily than out of confusion. -- Francis Bacon"

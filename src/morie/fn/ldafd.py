@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LDA feature extraction."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The road up and the road down are the same thing. — Heraclitus"
+_QUOTE = "The road up and the road down are the same thing. -- Heraclitus"
 
 
 def lda_features(X, y, n_components=None, **kwargs) -> DescriptiveResult:

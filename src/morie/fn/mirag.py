@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Differential privacy (Laplace mechanism). 'Now you see me...' -- Mirage"""
 
 from __future__ import annotations

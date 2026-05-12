@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Accelerated failure time (AFT) model. 'I have lived most of my life surrounded by enemies.' -- Gamora"""
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ def aft_model(
     *,
     distribution: str = "lognormal",
 ) -> SurvivalResult:
-    """Fit an accelerated failure time (AFT) survival model.
+    r"""Fit an accelerated failure time (AFT) survival model.
 
     Parametric survival model where covariates accelerate or decelerate
     time-to-event: :math:`\\ln T = X\\beta + \\sigma W`.

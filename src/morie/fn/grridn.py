@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Closed-form ridge regression via augmented normal equation."""
 import numpy as np
 from ._richresult import RichResult

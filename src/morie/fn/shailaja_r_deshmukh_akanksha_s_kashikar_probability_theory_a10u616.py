@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] = −t2/2 + ∆λ → −t2/2 ⇒ ϕYλ(t) → exp(−t2/2),
+    Formula: [EQ] = −t2/2 + ∆λ -> −t2/2 ⇒ ϕYλ(t) -> exp(−t2/2),
 
     Parameters
     ----------

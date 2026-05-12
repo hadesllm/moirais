@@ -10,7 +10,7 @@ _QUOTE = "Your eyes can deceive you. Don't trust them."
 
 
 def peak_factor(x, **kwargs) -> DescriptiveResult:
-    """Compute the peak factor of signal *x*.
+    r"""Compute the peak factor of signal *x*.
 
     .. math::
 

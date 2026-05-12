@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Precision at K metric. 'I never miss.' -- Deadshot"""
 
 from __future__ import annotations

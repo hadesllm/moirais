@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partial autocorrelation (PARCOR) coefficients via lattice method."""
 
 from __future__ import annotations

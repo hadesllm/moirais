@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IRT ability (theta) estimation: MLE, MAP, and EAP."""
 
 from __future__ import annotations

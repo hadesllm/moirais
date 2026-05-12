@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Outlier detection in A-M residuals."""
 
 from __future__ import annotations

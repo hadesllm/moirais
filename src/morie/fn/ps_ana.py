@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 Propensity score IPW analysis pipeline.
 
-Implements ``run_propensity_ipw_analysis`` — an end-to-end orchestration
+Implements ``run_propensity_ipw_analysis`` -- an end-to-end orchestration
 function that computes propensity scores, IPW weights, and the Hajek
 (normalised Horvitz-Thompson) ATE estimator with diagnostics.
 """
@@ -25,7 +25,7 @@ def run_propensity_ipw_analysis(
     covariates: list[str] | None = None,
     survey_weight_col: str = "weight",
 ) -> dict[str, pd.DataFrame | float]:
-    """
+    r"""
     Reproduce the core outputs of the old ``07_propensity.R`` workflow.
 
     ATE Estimator

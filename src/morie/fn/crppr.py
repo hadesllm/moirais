@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chinese restaurant process and partition probability. 'Understand structure, you must.'"""
 
 from __future__ import annotations

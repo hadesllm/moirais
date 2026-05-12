@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] E( Yn) = E( Xn I{ Xn<n}) = E( X1 I{ X1<n}) → E( X1) = µ
+    Formula: [EQ] E( Yn) = E( Xn I{ Xn<n}) = E( X1 I{ X1<n}) -> E( X1) = µ
 
     Parameters
     ----------

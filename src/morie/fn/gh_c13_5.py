@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Continuous-time Beta process as a Lévy process with specific Levy measure."""
 import numpy as np
 from ._richresult import RichResult

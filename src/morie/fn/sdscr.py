@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discriminant validity: sqrt(AVE) > inter-subscale r."""
 
 from __future__ import annotations

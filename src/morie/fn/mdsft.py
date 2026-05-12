@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MDS goodness-of-fit statistics."""
 
 from __future__ import annotations

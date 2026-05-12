@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moment inequality for degenerate U-statistics."""
 import numpy as np
 from scipy import stats

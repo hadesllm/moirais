@@ -1,7 +1,7 @@
 """Rich-output result containers for morie.fn.
 
 R-style verbose ``__repr__`` so users see paragraph-level summaries
-when they print a result, not just a bare dict — modeled after
+when they print a result, not just a bare dict -- modeled after
 psych::omega(), lavaan summary(), survival::summary.coxph(), etc.
 
 Usage::
@@ -20,13 +20,13 @@ from typing import Any
 
 @dataclass
 class RichResult(dict):
-    """Generic rich-printing result dict-like — psych::omega style.
+    """Generic rich-printing result dict-like -- psych::omega style.
 
     Inherits from `dict` so `isinstance(result, dict)` is True and
     legacy callers that expect a plain dict (`.get(...)`, `for k in r`,
     `result["statistic"]`) keep working unchanged. The RichResult
     layer adds title / sections / tables / interpretation / warnings
-    on top — opt-in via `print(result)` or `result.summary()`.
+    on top -- opt-in via `print(result)` or `result.summary()`.
 
     Supports multi-section output:
     - title              short test/model name (top of output)
@@ -39,7 +39,7 @@ class RichResult(dict):
     - comparison         optional dict with same shape as a section,
                          printed under "Compare this with …" heading
     - extras             list of free-form paragraph blocks
-    - warnings           list of advisory strings — surfaced VERBATIM,
+    - warnings           list of advisory strings -- surfaced VERBATIM,
                          multi-line OK
     - interpretation     optional plain-language concluding sentence(s)
     - payload            arbitrary dict for programmatic access
@@ -59,7 +59,7 @@ class RichResult(dict):
     def __post_init__(self) -> None:
         # Populate the dict portion (self) from payload so
         # isinstance(self, dict) is True and dict.* methods work.
-        # We don't store payload twice — `payload` and `self` (as a dict)
+        # We don't store payload twice -- `payload` and `self` (as a dict)
         # are kept in sync because __getitem__/__contains__/keys/values
         # all proxy through payload.
         try:
@@ -103,7 +103,7 @@ class RichResult(dict):
 
     def _render(self) -> str:
         out: list[str] = []
-        # Surface warnings BEFORE the result block — psych::omega does this,
+        # Surface warnings BEFORE the result block -- psych::omega does this,
         # because users want to see "Matrix not positive definite" up front,
         # not buried at the bottom.
         if self.warnings:
@@ -199,7 +199,7 @@ class RichResult(dict):
 
     # Convenience: float(result) returns the headline scalar so callers
     # that historically did `d = cohend(x, y)` still work after upgrade.
-    # Looks for payload["value"], payload["statistic"], payload["score"] —
+    # Looks for payload["value"], payload["statistic"], payload["score"] --
     # in that priority order.
     def __float__(self) -> float:
         for key in ("value", "statistic", "score", "estimate"):
@@ -214,12 +214,12 @@ class RichResult(dict):
             f"(none of {list(self.payload.keys())[:8]})"
         )
 
-    # Scalar comparison operators — let `cohend(x, y) == 1.0` and
+    # Scalar comparison operators -- let `cohend(x, y) == 1.0` and
     # `cohend(x, y) < 0.5` and `pytest.approx(0.25) == mcfadr(...)`
     # work without users having to wrap in float() first.
     #
     # __eq__ also accepts another RichResult or anything with a
-    # __float__ — falls back to identity comparison if no scalar exists.
+    # __float__ -- falls back to identity comparison if no scalar exists.
     def _try_float(self) -> float | None:
         try:
             return float(self)
@@ -275,12 +275,12 @@ class RichResult(dict):
         return sv >= (float(other) if isinstance(other, RichResult) else other)
 
     # __hash__ must be re-declared whenever __eq__ is overridden, or
-    # instances become unhashable. Use id() — RichResults aren't intended
+    # instances become unhashable. Use id() -- RichResults aren't intended
     # as dict keys, so identity-hash is fine.
     def __hash__(self) -> int:
         return id(self)
 
-    # Unary numeric protocol — let abs(result), -result, +result work
+    # Unary numeric protocol -- let abs(result), -result, +result work
     def __abs__(self) -> float:
         return abs(float(self))
 
@@ -290,7 +290,7 @@ class RichResult(dict):
     def __pos__(self) -> float:
         return +float(self)
 
-    # Binary arithmetic with scalars / other RichResults — operates on
+    # Binary arithmetic with scalars / other RichResults -- operates on
     # the headline scalar. Returns a plain float; chain operations
     # don't preserve the structured side of the result, which is correct
     # (the structured fields belong to the original computation).
@@ -323,7 +323,7 @@ class RichResult(dict):
     def __rtruediv__(self, other) -> float:
         return self._other_as_float(other) / float(self)
 
-    # Boolean cast — important for `if result:` checks (default truthy)
+    # Boolean cast -- important for `if result:` checks (default truthy)
     def __bool__(self) -> bool:
         try:
             return bool(float(self))
@@ -353,7 +353,7 @@ def hypothesis_test_result(
 ) -> RichResult:
     """Factory for hypothesis-test results with a uniform layout.
 
-    `callable_name` (optional) — short name of the morie.fn callable
+    `callable_name` (optional) -- short name of the morie.fn callable
     that produced this result. If provided, a "Learn more" pointer is
     appended to the extras suggesting `describe(<name>)` for the full
     pedagogical guide. Caller can pass it explicitly OR auto-detect

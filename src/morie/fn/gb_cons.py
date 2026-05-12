@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Consistency definition: test statistic power -> 1 as n -> inf."""
 import numpy as np
 from scipy import stats

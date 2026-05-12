@@ -1,4 +1,4 @@
-"""Moverscore distance.."""
+r"""Moverscore distance.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch8_moverscore_distance"]
 
 
 def kamath_ch8_moverscore_distance(x_i, y_j, E):
-    """
+    r"""
     Moverscore distance.
 
     Formula: d(x_i^n, y_j^n) = \|E(x_i^n) - E(y_j^n)\|_2
@@ -29,7 +29,7 @@ def kamath_ch8_moverscore_distance(x_i, y_j, E):
     References
     ----------
     Kamath et al (2024), Ch 8, Eq 8.11, p. 326
-    """
+    r"""
     x_i = np.atleast_1d(np.asarray(x_i, dtype=float))
     n = len(x_i)
     result = float(np.mean(x_i))

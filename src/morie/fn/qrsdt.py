@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """QRS complex detection (Pan-Tompkins algorithm).
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal

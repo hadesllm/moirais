@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Etiologic fraction among the exposed."""
 
 from __future__ import annotations

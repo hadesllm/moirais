@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Betweenness centrality for unweighted graphs."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 
 
 def betweenness(adj_matrix: np.ndarray) -> DescriptiveResult:
-    """Betweenness centrality via Brandes' algorithm.
+    r"""Betweenness centrality via Brandes' algorithm.
 
     .. math::
 

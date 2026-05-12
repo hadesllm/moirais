@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_20_unnumbered_735(x):
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: 0 : μ c1 − μ c2 ≤− δ is rejected for large values of ←−t and −→H (δ)
+    Formula: 0 : μ c1 − μ c2 ≤− δ is rejected for large values of ←−t and −->H (δ)
 
     Parameters
     ----------

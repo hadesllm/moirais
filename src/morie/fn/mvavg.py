@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moving average filter."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Rebellions are built on hope."
 
 
 def moving_average(x, window=5, **kwargs) -> DescriptiveResult:
-    """Apply a simple moving average filter.
+    r"""Apply a simple moving average filter.
 
     .. math::
 

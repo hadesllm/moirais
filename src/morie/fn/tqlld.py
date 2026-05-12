@@ -25,7 +25,7 @@ def turboquant_lloyd_max_codebook(bits, source_dist):
 
     References
     ----------
-    TurboQuant MORIE integration — lloyd_max_codebook
+    TurboQuant MORIE integration -- lloyd_max_codebook
     """
     bits = np.atleast_1d(np.asarray(bits, dtype=float))
     n = len(bits)

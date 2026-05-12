@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MSE loss for continuous genomic trait prediction."""
 import numpy as np
 from ._richresult import RichResult

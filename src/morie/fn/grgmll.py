@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gaussian mixture log-likelihood of observations under K components."""
 import numpy as np
 from ._richresult import RichResult

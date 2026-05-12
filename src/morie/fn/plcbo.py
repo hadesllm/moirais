@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Placebo treatment refutation test for causal estimates."""
 import numpy as np
 from scipy import stats

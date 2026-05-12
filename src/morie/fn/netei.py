@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Expected influence (signed node strength) for a network."""
 
 from __future__ import annotations

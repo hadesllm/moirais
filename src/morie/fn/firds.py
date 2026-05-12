@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """FIR filter design via windowed sinc."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ _QUOTE = "Your focus determines your reality."
 
 
 def fir_design(numtaps: int, cutoff, fs, window: str = "hamming") -> DescriptiveResult:
-    """Design an FIR filter using the window method.
+    r"""Design an FIR filter using the window method.
 
     .. math::
 

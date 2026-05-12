@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SAR convergence diagnostic (eigenvalue method)."""
 
 import numpy as np

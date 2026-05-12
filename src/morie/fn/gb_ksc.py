@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Comparison of KS and Cramer-von Mises tests: CvM uses all deviations."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Brain floating point (BF16): FP32-range with FP16-size."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Best-of-N sampling: generate N completions, return the highest-reward one."""
 import numpy as np
 from ._richresult import RichResult

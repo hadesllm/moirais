@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Reconstruct distances from MDS coordinates. 'ZA WARUDO!' -- DIO, JoJo's Bizarre Adventure"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multiple-index model with several indices x'beta_1, x'beta_2,...."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Breusch-Pagan test for heteroscedasticity."""
 
 from typing import Union
@@ -13,7 +13,7 @@ def breusch_pagan_test(
     residuals: Union[list, np.ndarray],
     X: Union[list, np.ndarray],
 ) -> TestResult:
-    """
+    r"""
     Breusch-Pagan Lagrange Multiplier test for heteroscedasticity.
 
     Tests H0: error variances are all equal (homoscedasticity) against

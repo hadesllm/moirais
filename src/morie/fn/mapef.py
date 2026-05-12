@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MAPE (Mean Absolute Percentage Error) forecast accuracy."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def mape(actual: np.ndarray, forecast: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Mean Absolute Percentage Error.
 
     .. math::

@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: as λ → ∞, since∆λ → 0 as λ → ∞. Hence, by the continuity theorem
+    Formula: as λ -> ∞, since∆λ -> 0 as λ -> ∞. Hence, by the continuity theorem
 
     Parameters
     ----------

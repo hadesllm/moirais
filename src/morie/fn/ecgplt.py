@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ECG multi-lead plot visualization."""
 
 from __future__ import annotations

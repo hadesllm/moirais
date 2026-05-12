@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GWR comparison: fixed vs adaptive bandwidth."""
 
 from ._containers import SpatialResult

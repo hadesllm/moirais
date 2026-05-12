@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""When I let go of what I am, I become what I might be. — Lao Tzu"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""When I let go of what I am, I become what I might be. -- Lao Tzu"""
 
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ def vibranium_damping(
     damping_ratio: float = 0.1,
     natural_freq: float = 1.0,
 ) -> DescriptiveResult:
-    """Model signal attenuation through a second-order damped system.
+    r"""Model signal attenuation through a second-order damped system.
 
     Applies the transfer function of a single-degree-of-freedom oscillator
     :math:`H(s) = \\omega_n^2 / (s^2 + 2\\zeta\\omega_n s + \\omega_n^2)`
@@ -78,4 +78,4 @@ bpntr = vibranium_damping
 
 
 def cheatsheet() -> str:
-    return "When I let go of what I am, I become what I might be. — Lao Tzu"
+    return "When I let go of what I am, I become what I might be. -- Lao Tzu"

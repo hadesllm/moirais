@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ACI: online update of alpha to maintain coverage under distribution shift."""
 import numpy as np
 from ._richresult import RichResult

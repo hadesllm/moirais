@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heckman two-step selection model. 'This is the way.' -- The Mandalorian"""
 
 from __future__ import annotations

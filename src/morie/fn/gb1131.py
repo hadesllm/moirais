@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Spearman rank correlation coefficient r_s."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Joint density of all n order statistics."""
 import numpy as np
 from scipy import stats

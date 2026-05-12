@@ -11,7 +11,7 @@ def bookadvanced_elementsofstatisticallearning_chapter_3_unnumbered_613(x, cdf=N
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: • g(µ) = X Tβ +α k +f (Z)—a semiparametric model, where X is a
+    Formula: • g(µ) = X Tβ +α k +f (Z)--a semiparametric model, where X is a
 
     Parameters
     ----------

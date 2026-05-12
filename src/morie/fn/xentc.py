@@ -6,7 +6,7 @@ from ._containers import ESRes
 
 
 def cross_entropy(p, q, **kwargs) -> ESRes:
-    """
+    r"""
     Compute cross-entropy H(P, Q) = -sum p_i log q_i.
 
     .. math::

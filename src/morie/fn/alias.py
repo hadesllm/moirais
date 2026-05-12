@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Aliasing demonstration."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ _QUOTE = "I've got a bad feeling about this."
 
 
 def aliasing_demo(f_signal: float, fs: float) -> DescriptiveResult:
-    """Show the aliased frequency when fs < 2 * f_signal.
+    r"""Show the aliased frequency when fs < 2 * f_signal.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wiener-Hopf matrix equations for FIR Wiener filter."""
 import numpy as np
 from ._richresult import RichResult

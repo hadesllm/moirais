@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Multi-query retrieval: LLM generates K paraphrases, union of top-k each."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric duration/hazard model (Cox PH; Horowitz 2009, Ch 8).
 
     h(t | X) = h_0(t) * exp(X' beta)

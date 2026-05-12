@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Odds ratio effect size for a 2x2 table with CI."""
 
 import math

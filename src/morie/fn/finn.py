@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Correlation pattern finder. 'I need a pilot!' -- Finn"""
 
 from __future__ import annotations

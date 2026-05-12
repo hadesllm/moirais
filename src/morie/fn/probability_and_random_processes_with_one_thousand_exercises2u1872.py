@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Let n ≥ 0; later we shall let n → ∞ . The number Nk = | )Pi1 ∩ f − 1 Bk| of ‘strikes’ inside
+    Formula: Let n ≥ 0; later we shall let n -> ∞ . The number Nk = | )Pi1 ∩ f − 1 Bk| of ‘strikes’ inside
 
     Parameters
     ----------

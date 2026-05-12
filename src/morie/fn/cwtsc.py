@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Continuous wavelet scalogram.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -13,7 +13,7 @@ from ._containers import DescriptiveResult
 
 __all__ = ['cwtsc']
 
-_QUOTE = "Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"
+_QUOTE = "Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"
 
 
 def cwtsc(

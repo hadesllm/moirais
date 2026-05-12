@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (9) Any random variable X : )Omega1 → R can be written as the difference X = X + − X − of
+    Formula: (9) Any random variable X : )Omega1 -> R can be written as the difference X = X + − X − of
 
     Parameters
     ----------

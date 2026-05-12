@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 ipcwt.py - Inverse probability of censoring weights (IPCW).
 

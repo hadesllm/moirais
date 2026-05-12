@@ -1,4 +1,4 @@
-"""Learning curve — train/val error vs training-set size."""
+"""Learning curve -- train/val error vs training-set size."""
 import numpy as np
 
 from ._richresult import RichResult

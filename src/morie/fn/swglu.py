@@ -14,7 +14,7 @@ def swiglu(
     W2: np.ndarray | None = None,
     W3: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """Compute the SwiGLU activation (Shazeer 2020).
+    r"""Compute the SwiGLU activation (Shazeer 2020).
 
     :math:`\\text{SwiGLU}(x) = (x W_1 \\odot \\text{SiLU}(x W_3)) W_2`
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Welch power spectral density estimation.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -13,7 +13,7 @@ from ._containers import DescriptiveResult
 
 __all__ = ['psdwl']
 
-_QUOTE = "Out of chaos, comes order. — Friedrich Nietzsche"
+_QUOTE = "Out of chaos, comes order. -- Friedrich Nietzsche"
 
 
 def psdwl(

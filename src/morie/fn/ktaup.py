@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kendall partial-tau correlation (Gibbons Ch 12.6).
 
 Partial Kendall tau between X and Y controlling for Z:

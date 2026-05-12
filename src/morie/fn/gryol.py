@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """YOLO localization + classification loss per grid cell."""
 import numpy as np
 from ._richresult import RichResult

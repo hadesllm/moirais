@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: (a) Find the mean and variance of Fn( x) , and prove that √ n( Fn( x) − x) D− → Y( x) as n → ∞ , where
+    Formula: (a) Find the mean and variance of Fn( x) , and prove that √ n( Fn( x) − x) D− -> Y( x) as n -> ∞ , where
 
     Parameters
     ----------

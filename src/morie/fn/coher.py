@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Coherence between two signals.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -17,7 +17,7 @@ def coherence(
     *,
     nperseg: int = 256,
 ) -> DescriptiveResult:
-    """Magnitude-squared coherence between two signals.
+    r"""Magnitude-squared coherence between two signals.
 
     Measures the linear relationship between *x* and *y* at each
     frequency, normalized to [0, 1]:

@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_15_unnumbered_403(x):
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: [EQ] T − E ( T | F , Z )√ var ( T | F , Z ) −→ N (0, 1) as I →∞; (15.3)
+    Formula: [EQ] T − E ( T | F , Z )√ var ( T | F , Z ) −-> N (0, 1) as I ->∞; (15.3)
 
     Parameters
     ----------

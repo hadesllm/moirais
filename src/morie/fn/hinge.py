@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""Hinge loss for SVM.
 
 Encourages correct classification with margin.

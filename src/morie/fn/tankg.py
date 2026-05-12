@@ -1,4 +1,4 @@
-"""He who has a why to live can bear almost any how. — Friedrich Nietzsche"""
+"""He who has a why to live can bear almost any how. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 
@@ -109,4 +109,4 @@ tankg = nn_train
 
 
 def cheatsheet() -> str:
-    return "He who has a why to live can bear almost any how. — Friedrich Nietzsche"
+    return "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"

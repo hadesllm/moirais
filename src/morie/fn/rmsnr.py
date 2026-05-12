@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Root-mean-square normalisation (Zhang & Sennrich 2019)."""
 from __future__ import annotations
 

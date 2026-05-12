@@ -4,7 +4,7 @@ from scipy import stats
 
 from ._richresult import RichResult, hypothesis_test_result
 
-__all__ = ["An unexamined life is not worth living. — Socrates"]
+__all__ = ["An unexamined life is not worth living. -- Socrates"]
 
 
 def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_6(x, cdf=None):
@@ -26,7 +26,7 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
         Inherits from ``dict`` (so ``isinstance(result, dict)`` is True
         and ``result["statistic"]`` / ``result.get(...)`` keep working),
         but also exposes a multi-section ``str(result)`` render. Keys: value.
-        See ``morie.fn.describe('An unexamined life is not worth living. — Socrates')`` for the full guide.
+        See ``morie.fn.describe('An unexamined life is not worth living. -- Socrates')`` for the full guide.
 
     References
     ----------
@@ -69,4 +69,4 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
 
 
 def cheatsheet():
-    return "An unexamined life is not worth living. — Socrates"
+    return "An unexamined life is not worth living. -- Socrates"

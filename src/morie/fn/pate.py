@@ -1,4 +1,4 @@
-"""PATE — private aggregation of teacher ensembles."""
+"""PATE -- private aggregation of teacher ensembles."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["pate"]
 
 def pate(teachers, x, epsilon):
     """
-    PATE — private aggregation of teacher ensembles
+    PATE -- private aggregation of teacher ensembles
 
     Formula: label student via noisy argmax of teacher votes
 
@@ -34,8 +34,8 @@ def pate(teachers, x, epsilon):
     n = len(x)
     result = float(np.mean(x))
     se = float(np.std(x, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "PATE — private aggregation of teacher ensembles"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "PATE -- private aggregation of teacher ensembles"})
 
 
 def cheatsheet():
-    return "pate: PATE — private aggregation of teacher ensembles"
+    return "pate: PATE -- private aggregation of teacher ensembles"

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Backfitting algorithm for additive model estimation."""
 import numpy as np
 from ._richresult import RichResult

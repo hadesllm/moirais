@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kaplan-Meier estimator of the censoring distribution (Kosorok 2008, Ch 8).
 
 P(C > t) is estimated by Kaplan-Meier on (t_i, 1 - delta_i), i.e.

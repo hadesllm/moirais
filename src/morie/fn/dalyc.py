@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DALY computation with age-weighting and discounting (GBD method)."""
 
 from __future__ import annotations

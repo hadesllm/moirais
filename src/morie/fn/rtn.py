@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Round-to-nearest (RTN) baseline quantizer."""
 
 from __future__ import annotations

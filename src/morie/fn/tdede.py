@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def dedekind_eta(tau: complex = 1j, terms: int = 50) -> DescriptiveResult:
-    """Compute the Dedekind eta function eta(tau).
+    r"""Compute the Dedekind eta function eta(tau).
 
     :math:`\\eta(\\tau) = q^{1/24}\\prod_{n=1}^{N}(1 - q^n)`
 

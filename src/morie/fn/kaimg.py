@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kaiming (He) weight initialization."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def kaiming_init(
     nonlinearity: str = "relu",
     seed: int | None = None,
 ) -> DescriptiveResult:
-    """Generate Kaiming (He) initialized weight matrix.
+    r"""Generate Kaiming (He) initialized weight matrix.
 
     :math:`W \\sim \\mathcal{N}(0, \\sqrt{2 / \\text{fan}})` for ReLU.
 

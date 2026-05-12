@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Standard error of measurement. 'Patience you must have.'"""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def sem_measurement(
     sd: float,
     reliability: float,
 ) -> DescriptiveResult:
-    """
+    r"""
     Standard error of measurement (SEM).
 
     .. math::

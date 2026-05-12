@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Advanced peak detection with prominence/width."""
 
 from __future__ import annotations

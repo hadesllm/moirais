@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: → X and P( |Xn| ≤ k) = 1 then P( |X| ≤ k) = 1 also, since
+    Formula: -> X and P( |Xn| ≤ k) = 1 then P( |X| ≤ k) = 1 also, since
 
     Parameters
     ----------

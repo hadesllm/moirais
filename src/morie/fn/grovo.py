@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """One-vs-One: train K(K-1)/2 binary classifiers, majority vote."""
 import numpy as np
 from ._richresult import RichResult

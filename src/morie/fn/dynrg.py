@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dynamic range."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Wars not make one great."
 
 
 def dynamic_range(x, **kwargs) -> DescriptiveResult:
-    """Compute the dynamic range in dB.
+    r"""Compute the dynamic range in dB.
 
     .. math::
 

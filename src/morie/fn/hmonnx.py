@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Export PyTorch model to ONNX format for cross-platform inference."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Encoder-decoder transformer (original architecture)."""
 import numpy as np
 from ._richresult import RichResult

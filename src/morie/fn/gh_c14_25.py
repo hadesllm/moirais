@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Poisson process representation of IBP: features as points of Poisson process."""
 import numpy as np
 from ._richresult import RichResult

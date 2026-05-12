@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exponential moving average."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "The belonging you seek is not behind you, it is ahead."
 
 
 def exponential_ma(x, alpha=0.3, **kwargs) -> DescriptiveResult:
-    """Apply an exponential moving average filter.
+    r"""Apply an exponential moving average filter.
 
     .. math::
 

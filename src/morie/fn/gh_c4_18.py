@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cifarelli-Regazzini theorem: distribution of mean of DP via characteristic function."""
 import numpy as np
 from ._richresult import RichResult

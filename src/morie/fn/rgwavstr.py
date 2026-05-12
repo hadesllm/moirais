@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wavelet-based structure detection in biomedical signals (CWT ridges)."""
 import numpy as np
 from ._richresult import RichResult

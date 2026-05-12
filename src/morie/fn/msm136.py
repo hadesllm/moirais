@@ -1,4 +1,4 @@
-"""Numbered display equation (8.6) from MVSML chapter 8.."""
+r"""Numbered display equation (8.6) from MVSML chapter 8.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_categorical_count_eq_8_6"]
 
 
 def mvsml_categorical_count_eq_8_6(CTy, KTC, KTK, K, b, KTy):
-    """
+    r"""
     Numbered display equation (8.6) from MVSML chapter 8.
 
     Formula: CTy = (8.6) KTC KTK + \lambdaK\sigma2 b\beta KTy e Recall that K is symmetric, so KTK = K2, and by multiplying the second system of
@@ -35,7 +35,7 @@ def mvsml_categorical_count_eq_8_6(CTy, KTC, KTK, K, b, KTy):
     References
     ----------
     MVSML, Eq. (8.6) [Multivariate Statistical Machine Learnin [Pages 251-336] [2026-04-16].pdf]
-    """
+    r"""
     CTy = np.atleast_1d(np.asarray(CTy, dtype=float))
     n = len(CTy)
     result = float(np.mean(CTy))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """KNN imputation for missing data."""
 
 from __future__ import annotations
@@ -76,7 +76,7 @@ def knn_impute(
         # Observed columns for this row
         obs_cols = [j for j in range(values.shape[1]) if not np.isnan(values[row_i, j])]
         if not obs_cols:
-            # No observed values at all — fill with column means
+            # No observed values at all -- fill with column means
             for j in missing_cols:
                 values[row_i, j] = col_means[j]
             continue

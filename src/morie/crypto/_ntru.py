@@ -1,4 +1,4 @@
-"""NTRU key exchange — pure-Python educational reference.
+"""NTRU key exchange -- pure-Python educational reference.
 
 Implements NTRU encryption in Z_q[x]/(x^n - 1) with polynomial
 inversion via Newton lifting.
@@ -63,7 +63,7 @@ def ntru_keygen(n: int = 167, q: int = 128, p: int = 3) -> dict:
             "params": {"n": n, "q": q, "p": p, "d": d},
         }
 
-    raise RuntimeError("keygen failed — no invertible f found after 100 attempts")
+    raise RuntimeError("keygen failed -- no invertible f found after 100 attempts")
 
 
 def ntru_encrypt(message: list[int], pk: list[int], n: int = 167, q: int = 128) -> list[int]:

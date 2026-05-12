@@ -10,7 +10,7 @@ def esmfold_lm_only(sequence, esm_model):
     """
     ESMFold language-model-only structure prediction
 
-    Formula: single-sequence ESM-2 LM → fold module
+    Formula: single-sequence ESM-2 LM -> fold module
 
     Parameters
     ----------

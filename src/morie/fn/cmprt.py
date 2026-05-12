@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Overall and by-group compliance rate."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def compliance_rate(
     flag_col: str = "D",
     group_col: str | None = None,
 ) -> dict | pd.DataFrame:
-    """Compliance rate — proportion where flag_col == 1.
+    """Compliance rate -- proportion where flag_col == 1.
 
     Parameters
     ----------

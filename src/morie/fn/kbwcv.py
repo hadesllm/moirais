@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bandwidth selection via least-squares cross-validation (LSCV)."""
 
 from __future__ import annotations

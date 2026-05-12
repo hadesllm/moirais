@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """One-hot encoding: represent categorical variable with K-1 indicator columns."""
 import numpy as np
 from ._richresult import RichResult

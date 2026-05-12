@@ -1,4 +1,4 @@
-"""Mean squared error cost over the dataset for the linear model with parameters w and b.."""
+r"""Mean squared error cost over the dataset for the linear model with parameters w and b.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_mse_cost"]
 
 
 def burkov_lm_ch1_mse_cost(w, b, x, y, N):
-    """
+    r"""
     Mean squared error cost over the dataset for the linear model with parameters w and b.
 
     Formula: J(w, b) \stackrel{\text{def}}{=} \frac{(wx_1 + b - y_1)^2 + (wx_2 + b - y_2)^2 + \cdots + (wx_N + b - y_N)^2}{N}

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Diaconis-Freedman inconsistency example: symmetric Dirichlet posterior inconsistent."""
 import numpy as np
 from ._richresult import RichResult

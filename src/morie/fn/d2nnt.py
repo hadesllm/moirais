@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Convert Cohen's d to NNT (Kraemer and Kupfer, 2006)."""
 
 import numpy as np

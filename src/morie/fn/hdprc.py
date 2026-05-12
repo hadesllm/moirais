@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hierarchical Dirichlet process for grouped data. 'Groups, understand them you must.'"""
 
 from __future__ import annotations

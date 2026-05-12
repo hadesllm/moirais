@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Softmax class-score for class k in multinomial logistic regression."""
 import numpy as np
 from ._richresult import RichResult

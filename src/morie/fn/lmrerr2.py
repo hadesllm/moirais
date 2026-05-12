@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """One-directional robust LM error (Bera-Yoon)."""
 
 import numpy as np

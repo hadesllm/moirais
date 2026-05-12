@@ -8,7 +8,7 @@ __all__ = ["bookadvanced_elementsofstatisticallearning_chapter_6_unnumbered_988"
 
 
 def bookadvanced_elementsofstatisticallearning_chapter_6_unnumbered_988(x, cdf=None):
-    """The art of doing mathematics consists in finding that special case which contains all the germs of generality. — David Hilbert"statistic"]`` / ``result.get(...)`` keep working),
+    """The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"statistic"]`` / ``result.get(...)`` keep working),
         but also exposes a multi-section ``str(result)`` render. Keys: value.
         See ``morie.fn.describe('bookadvanced_elementsofstatisticallearning6u988')`` for the full guide.
 

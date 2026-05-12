@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ROC and DET curves with AUC."""
 
 from __future__ import annotations

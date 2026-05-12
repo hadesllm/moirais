@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gradient boosting for genomic prediction (Friedman 2001)."""
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Moe topk gating.."""
+r"""Moe topk gating.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_moe_topk_gating"]
 
 
 def kamath_ch2_moe_topk_gating(x, W_g):
-    """
+    r"""
     Moe topk gating.
 
     Formula: G(x) := \mathrm{Softmax}(\mathrm{TopK}(x \cdot W_g))
@@ -27,7 +27,7 @@ def kamath_ch2_moe_topk_gating(x, W_g):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.40, p. 74
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

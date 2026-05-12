@@ -182,7 +182,7 @@ def hedges_g(
     y: Union[np.ndarray, pd.Series, list],
     confidence: float = 0.95,
 ) -> EffectSizeResult:
-    """Hedges' *g* — bias-corrected Cohen's *d*.
+    """Hedges' *g* -- bias-corrected Cohen's *d*.
 
     Applies the exact correction factor :math:`J = 1 - 3/(4(n_1+n_2-2)-1)`.
 
@@ -219,7 +219,7 @@ def glass_delta(
     control: str = "y",
     confidence: float = 0.95,
 ) -> EffectSizeResult:
-    """Glass's delta — uses the control group SD as denominator.
+    """Glass's delta -- uses the control group SD as denominator.
 
     Parameters
     ----------
@@ -417,7 +417,7 @@ def omega_squared(
     df_effect: int,
     ms_error: float,
 ) -> EffectSizeResult:
-    """Omega-squared — less biased than eta-squared.
+    """Omega-squared -- less biased than eta-squared.
 
     :math:`\\omega^2 = (SS_{effect} - df_{effect} \\cdot MS_{error}) / (SS_{total} + MS_{error})`
 
@@ -622,7 +622,7 @@ def number_needed_to_harm(
     d: int,
     confidence: float = 0.95,
 ) -> EffectSizeResult:
-    """Number needed to harm (NNH) — same as NNT but with reversed sign
+    """Number needed to harm (NNH) -- same as NNT but with reversed sign
     convention.
 
     Parameters

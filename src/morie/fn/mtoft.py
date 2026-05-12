@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Traffic fatality rate per 100K population."""
 
 from __future__ import annotations

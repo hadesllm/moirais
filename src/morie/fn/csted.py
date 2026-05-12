@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Education program enrollment and completion in custody."""
 
 from __future__ import annotations

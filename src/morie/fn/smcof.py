@@ -28,7 +28,7 @@ def smacof_scale(dissimilarities=None, *, dims=2, n=10, max_iter=300):
 
 short = "smcof"
 alias = "smacof_scale"
-quote = "Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius"
+quote = "Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"
 smacof_scale = smacof_scale
 
 

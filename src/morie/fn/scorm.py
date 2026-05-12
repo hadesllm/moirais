@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Covariance matrix."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle"
+_QUOTE = "It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle"
 
 
 def covariance_matrix(X, **kwargs) -> DescriptiveResult:

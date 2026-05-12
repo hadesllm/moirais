@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lacunarity analysis for fractal texture characterization."""
 
 from __future__ import annotations

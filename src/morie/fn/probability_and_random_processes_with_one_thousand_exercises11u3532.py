@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: and it follows by the dominated convergence theorem that ∥φ ( n) − ψ ∥ → 0 as n → ∞ . ■
+    Formula: and it follows by the dominated convergence theorem that ∥φ ( n) − ψ ∥ -> 0 as n -> ∞ . ■
 
     Parameters
     ----------

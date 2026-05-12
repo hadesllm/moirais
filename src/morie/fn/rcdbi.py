@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Burden index: weighted recidivism accounting for severity."""
 
 from __future__ import annotations

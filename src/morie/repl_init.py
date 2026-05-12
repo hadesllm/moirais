@@ -5,7 +5,7 @@ Usage from TIDE subprocess:
     exec("from morie.repl_init import setup_repl; setup_repl(globals())")
 
 This injects all convenience functions, stat_commands, and fn/ registry
-into the caller's namespace — achieving parity with the Python TUI REPL.
+into the caller's namespace -- achieving parity with the Python TUI REPL.
 """
 
 from __future__ import annotations

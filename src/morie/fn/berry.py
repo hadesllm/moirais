@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Berry geometric phase."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def berry_phase(
     path: np.ndarray | None = None,
     n_points: int = 100,
 ) -> DescriptiveResult:
-    """Compute the Berry phase for a parametric Hamiltonian.
+    r"""Compute the Berry phase for a parametric Hamiltonian.
 
     For a 2-level system with H(theta, phi) = B(sin(theta)cos(phi) sigma_x +
     sin(theta)sin(phi) sigma_y + cos(theta) sigma_z):

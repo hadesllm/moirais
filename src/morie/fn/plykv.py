@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polyakov worldsheet action."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def polyakov_action(
     G: np.ndarray | None = None,
     T: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute the Polyakov action for a bosonic string.
+    r"""Compute the Polyakov action for a bosonic string.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Non-uniform DIF detection via interaction term."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """i.i.d. contraction in L1: rate from entropy integral and prior mass."""
 import numpy as np
 from ._richresult import RichResult

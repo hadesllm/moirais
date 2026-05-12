@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Power cepstrum."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "A long time ago in a galaxy far, far away."
 
 
 def power_cepstrum(x, **kwargs) -> DescriptiveResult:
-    """Compute the power cepstrum of signal *x*.
+    r"""Compute the power cepstrum of signal *x*.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Disability-Adjusted Life Years (DALY)."""
 
 from __future__ import annotations

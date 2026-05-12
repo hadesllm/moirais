@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discounted return G_t from step t onward."""
 import numpy as np
 from ._richresult import RichResult

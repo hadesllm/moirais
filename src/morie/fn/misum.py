@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Summary table of invariance levels with pass/fail."""
 
 from __future__ import annotations

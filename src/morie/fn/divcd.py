@@ -10,7 +10,7 @@ def divergent_transitions_count(chains):
     """
     HMC divergent transition count + rate
 
-    Formula: n_div / n_total — flag if > 0 (NUTS adaptation issue)
+    Formula: n_div / n_total -- flag if > 0 (NUTS adaptation issue)
 
     Parameters
     ----------

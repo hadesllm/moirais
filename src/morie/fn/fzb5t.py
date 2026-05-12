@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """b_5(t) coefficient in MRL variance formula."""
 import numpy as np
 from ._richresult import RichResult

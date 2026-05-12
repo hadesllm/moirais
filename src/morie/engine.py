@@ -1,10 +1,10 @@
-"""MORIE Inference Engine — Transformer forward pass with TurboQuant KV-cache.
+"""MORIE Inference Engine -- Transformer forward pass with TurboQuant KV-cache.
 
 Minimal LLM inference engine with two backends:
 
-- **MLX** (Apple Silicon GPU via Metal) — requires ``pip install mlx``
+- **MLX** (Apple Silicon GPU via Metal) -- requires ``pip install mlx``
   on Python 3.14. Use ``.venv-314/`` for MLX acceleration.
-- **NumPy** (CPU fallback) — works on Python 3.15, any platform.
+- **NumPy** (CPU fallback) -- works on Python 3.15, any platform.
 
 The engine loads GGUF models via :class:`morie.gguf_loader.GGUFModel`,
 compresses the KV-cache with :class:`morie.kv_cache.TurboQuantKVCache`,
@@ -15,9 +15,9 @@ autoresearch GPT (ReLU², value embeddings, residual lambdas, logit softcap).
 
 References
 ----------
-* Karpathy, A. (2023). llama2.c — inference in pure C.
+* Karpathy, A. (2023). llama2.c -- inference in pure C.
 * TurboQuant: Zandieh et al. (2026). ICLR 2026. arXiv:2504.19874
-* MLX: Apple (2023). ml-explore/mlx — array framework for Apple Silicon.
+* MLX: Apple (2023). ml-explore/mlx -- array framework for Apple Silicon.
 """
 
 from __future__ import annotations
@@ -64,7 +64,7 @@ def _from_mx(arr) -> np.ndarray:
 
 
 # ---------------------------------------------------------------------------
-# Math primitives — MLX-accelerated or NumPy fallback
+# Math primitives -- MLX-accelerated or NumPy fallback
 # ---------------------------------------------------------------------------
 
 
@@ -209,7 +209,7 @@ class MORIEEngine:
         return w
 
     def forward(self, token_id: int, position: int):
-        """One transformer forward pass — returns logits.
+        """One transformer forward pass -- returns logits.
 
         Parameters
         ----------

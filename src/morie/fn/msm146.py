@@ -1,4 +1,4 @@
-"""Numbered display equation (8.8) from MVSML chapter 8.."""
+r"""Numbered display equation (8.8) from MVSML chapter 8.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_categorical_count_eq_8_8"]
 
 
 def mvsml_categorical_count_eq_8_8(it, important, to, point, out, that):
-    """
+    r"""
     Numbered display equation (8.8) from MVSML chapter 8.
 
     Formula: (2020), it is important to point out that model (8.8) can be reparametrized as Eq. (8.11) if the eigenvalue decomposition of the kernel matrix K is expressed as US1/2S1/2U0, y = \mu1n + Pf + \epsilon, (8.11)   where f  N 0, \sigma2 (where r is the rank of K) and P = US1/2. Note that models f Ir,r
@@ -35,7 +35,7 @@ def mvsml_categorical_count_eq_8_8(it, important, to, point, out, that):
     References
     ----------
     MVSML, Eq. (8.8) [Multivariate Statistical Machine Learnin [Pages 251-336] [2026-04-16].pdf]
-    """
+    r"""
     it = np.atleast_1d(np.asarray(it, dtype=float))
     n = len(it)
     result = float(np.mean(it))

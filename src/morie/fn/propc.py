@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prophet-style additive decomposition (Taylor & Letham 2018)."""
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ def prophet_components(x, period=12):
     plain linear) least-squares fit; seasonality ``s(t)`` is a 5-term
     Fourier series at the supplied period; the residual ``ε(t)`` is the
     noise component.  This implementation does NOT include a holiday
-    component (``h(t)``) — pass exogenous indicators if you need that.
+    component (``h(t)``) -- pass exogenous indicators if you need that.
 
     Parameters
     ----------

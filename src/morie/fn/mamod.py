@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MA(q) model fitting via innovations algorithm."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def ma_fit(y: np.ndarray, q: int = 1) -> DescriptiveResult:
-    """
+    r"""
     Fit an MA(q) model using the innovations algorithm.
 
     .. math::

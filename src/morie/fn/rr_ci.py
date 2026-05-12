@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Incidence rate ratio (IRR) with asymptotic log-normal confidence interval."""
 
 import math

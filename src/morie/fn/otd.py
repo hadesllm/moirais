@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OTIS descriptive statistics suite."""
 
 from __future__ import annotations

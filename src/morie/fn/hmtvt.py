@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Three-way split into train, validation, test; report final score on test."""
 import numpy as np
 from scipy import stats

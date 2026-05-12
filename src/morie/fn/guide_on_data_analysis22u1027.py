@@ -11,7 +11,7 @@ def guide_on_data_analysis_chapter_22_unnumbered_1027(x):
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: Here, the term 𝐸[𝜂𝑖|𝐷𝑖 = 1] − 𝐸[𝜂𝑖|𝐷𝑖 = 0]represents selection bias —the
+    Formula: Here, the term 𝐸[𝜂𝑖|𝐷𝑖 = 1] − 𝐸[𝜂𝑖|𝐷𝑖 = 0]represents selection bias --the
 
     Parameters
     ----------

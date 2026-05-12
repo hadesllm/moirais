@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mixture-of-Experts gating (Shazeer et al. 2017)."""
 from __future__ import annotations
 

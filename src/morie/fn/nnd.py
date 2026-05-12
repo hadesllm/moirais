@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Number Needed to Diagnose (NND)."""
 
 from __future__ import annotations

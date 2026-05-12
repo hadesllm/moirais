@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Cure rate mixture model — long-term survivors."""
+# morie.fn -- function file (hadesllm/morie)
+"""Cure rate mixture model -- long-term survivors."""
 
 import numpy as np
 from scipy import optimize
@@ -59,4 +59,4 @@ def cure_rate_model(time, event):
 
 
 def cheatsheet() -> str:
-    return "cure_rate_model({}) -> Cure rate mixture model — long-term survivors."
+    return "cure_rate_model({}) -> Cure rate mixture model -- long-term survivors."

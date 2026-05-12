@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Synthetic control method (Abadie, Diamond, Hainmueller)."""
 
 from __future__ import annotations

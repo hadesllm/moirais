@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multi-head attention with output projection."""
 from __future__ import annotations
 
@@ -11,8 +11,9 @@ __all__ = ["multi_head_attention_full"]
 
 
 def multi_head_attention_full(x, num_heads: int = 2, W_q=None, W_k=None,
-                              W_v=None, W_o=None, seed: int = 0):
-    """Multi-head attention with linear projection.
+                              W_v=None, W_o=None, seed: int = 0,
+                              deterministic_seed: "int | None" = None):
+    r"""Multi-head attention with linear projection.
 
     .. math::
 
@@ -34,6 +35,10 @@ def multi_head_attention_full(x, num_heads: int = 2, W_q=None, W_k=None,
         Output projection. Default: identity.
     seed : int
         RNG seed for default projection matrices.
+    deterministic_seed : int or None, optional
+        If given, the SHA-keyed RNG from
+        :func:`morie._det_rng.from_seed` is used so Py<->R streams agree
+        for the same ``(name, seed)`` pair. Overrides ``seed`` when set.
 
     Returns
     -------
@@ -54,7 +59,11 @@ def multi_head_attention_full(x, num_heads: int = 2, W_q=None, W_k=None,
             f"d_model={d_model} must be divisible by num_heads={num_heads}.")
     d_k = d_model // num_heads
 
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("mhatf", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     if W_q is None:
         W_q = rng.normal(0, 1.0 / np.sqrt(d_model), size=(d_model, d_model))
     if W_k is None:

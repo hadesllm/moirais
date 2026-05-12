@@ -10,7 +10,7 @@ _QUOTE = "Your focus determines your reality."
 
 
 def sample_variance(x, ddof=1, **kwargs) -> DescriptiveResult:
-    """Compute the sample variance of signal *x*.
+    r"""Compute the sample variance of signal *x*.
 
     .. math::
 

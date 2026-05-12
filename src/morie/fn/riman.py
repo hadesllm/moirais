@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Riemann curvature tensor."""
 
 __all__ = ["riman"]
@@ -13,7 +13,7 @@ def riman(
     coords: np.ndarray = None,
     h: float = 1e-5,
 ) -> dict:
-    """
+    r"""
     Compute the Riemann curvature tensor from Christoffel symbols.
 
     .. math::

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Effective sample size for MCMC chains."""
 
 from __future__ import annotations

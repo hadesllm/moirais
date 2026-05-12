@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_4_unnumbered_280(x):
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: (Λ × Δ + 1)/(Λ + Δ) . In other words, two sensitivity analyses—one defined in
+    Formula: (Λ × Δ + 1)/(Λ + Δ) . In other words, two sensitivity analyses--one defined in
 
     Parameters
     ----------

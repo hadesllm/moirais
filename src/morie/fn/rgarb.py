@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""AR(p) model via Burg's recursion — Rangayyan Ch 4."""
+# morie.fn -- function file (hadesllm/morie)
+"""AR(p) model via Burg's recursion -- Rangayyan Ch 4."""
 from __future__ import annotations
 
 import numpy as np
@@ -82,4 +82,4 @@ def rangayyan_ar_burg(x, order=10):
 
 
 def cheatsheet():
-    return "rgarb: AR(p) coefficients via Burg method — Rangayyan Ch 4"
+    return "rgarb: AR(p) coefficients via Burg method -- Rangayyan Ch 4"

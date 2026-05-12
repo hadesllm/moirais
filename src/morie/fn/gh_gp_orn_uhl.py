@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ornstein-Uhlenbeck kernel: k(s,t) = exp(-|s-t|/l), Markovian covariance."""
 import numpy as np
 from ._richresult import RichResult

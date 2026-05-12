@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polya tree KL property: canonical PT*(alpha, a_m) has KL support at continuous densities."""
 import numpy as np
 from ._richresult import RichResult

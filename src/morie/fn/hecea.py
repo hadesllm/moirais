@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cost-effectiveness plane quadrant probabilities."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Control-median test (Gibbons Ch 6.5).
 
 Mood's two-sample median test: count how many of each sample lie

@@ -11,7 +11,7 @@ def legal_ontology_chapter_10_unnumbered_26(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: <rdf:Description rdf:about="Without music, life would be a mistake. — Friedrich Nietzsche">
+    Formula: <rdf:Description rdf:about="Without music, life would be a mistake. -- Friedrich Nietzsche">
 
     Parameters
     ----------

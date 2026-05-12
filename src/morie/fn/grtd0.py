@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """TD(0) value update."""
 import numpy as np
 from ._richresult import RichResult

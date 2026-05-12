@@ -1,4 +1,4 @@
-"""Weat function.."""
+r"""Weat function.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_weat_function"]
 
 
 def kamath_ch6_weat_function(A_1, A_2, W_1, W_2):
-    """
+    r"""
     Weat function.
 
     Formula: f(A_1,A_2,W_1,W_2) = \sum_{a_1\in A_1} s(a_1,W_1,W_2) - \sum_{a_2\in A_2} s(a_2,W_1,W_2)
@@ -31,7 +31,7 @@ def kamath_ch6_weat_function(A_1, A_2, W_1, W_2):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.4, p. 234
-    """
+    r"""
     A_1 = np.atleast_1d(np.asarray(A_1, dtype=float))
     n = len(A_1)
     result = float(np.mean(A_1))

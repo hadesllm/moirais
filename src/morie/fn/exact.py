@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exact permutation test for two-sample location."""
 
 import numpy as np
@@ -13,7 +13,7 @@ def exact_perm_test(x, y, n_perm=9999, stat="mean"):
     :param x: (n,) first sample.
     :param y: (m,) second sample.
     :param n_perm: Number of permutations.
-    :param stat: Test statistic — 'mean' (difference of means) or 'median'.
+    :param stat: Test statistic -- 'mean' (difference of means) or 'median'.
     :return: DescriptiveResult with p-value, observed statistic, null distribution.
 
     References

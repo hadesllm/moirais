@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Alpha-posterior contraction rate: robust Bayes at same minimax rate as standard posterior."""
 import numpy as np
 from ._richresult import RichResult

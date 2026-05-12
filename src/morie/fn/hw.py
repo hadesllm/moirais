@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hardy-Weinberg equilibrium chi-square test."""
 
 import numpy as np

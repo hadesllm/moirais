@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Finite-dimensional Dirichlet distribution: Dir(alpha_1..alpha_k) on simplex S_k."""
 import numpy as np
 from ._richresult import RichResult

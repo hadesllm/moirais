@@ -1,4 +1,4 @@
-"""Numbered display equation (15.3) from MVSML chapter 15.."""
+r"""Numbered display equation (15.3) from MVSML chapter 15.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_functional_regression_eq_15_3"]
 
 
 def mvsml_functional_regression_eq_15_3(LL, right, node, are, the, log):
-    """
+    r"""
     Numbered display equation (15.3) from MVSML chapter 15.
 
     Formula: LL+ (right node) are the log-likelihood for each node. Once we have the estimates of \mu and \theta, the predicted values of Y under the ZAP_RF are obtained with   1  b\theta exp b\mu ( ) bY =
@@ -35,7 +35,7 @@ def mvsml_functional_regression_eq_15_3(LL, right, node, are, the, log):
     References
     ----------
     MVSML, Eq. (15.3) [Multivariate Statistical Machine Learnin [Pages 633-681] [2026-04-16].pdf]
-    """
+    r"""
     LL = np.atleast_1d(np.asarray(LL, dtype=float))
     n = len(LL)
     result = float(np.mean(LL))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """StereoSet bias: fraction of stereotype-preferred vs anti-stereotype continuations."""
 import numpy as np
 from ._richresult import RichResult

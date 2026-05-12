@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Arnoldi iteration for non-symmetric eigenvalue problems."""
 
 from __future__ import annotations

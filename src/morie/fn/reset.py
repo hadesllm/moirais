@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ramsey RESET specification test."""
 
 from typing import Union
@@ -16,7 +16,7 @@ def ramsey_reset_test(
     *,
     power: int = 3,
 ) -> TestResult:
-    """
+    r"""
     Ramsey RESET (Regression Equation Specification Error Test).
 
     Tests for omitted non-linearities by augmenting the original model

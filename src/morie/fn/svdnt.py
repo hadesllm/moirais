@@ -6,7 +6,7 @@ from ._containers import ESRes
 
 
 def svd_entropy(x, m: int = 10, delay: int = 1, **kwargs) -> ESRes:
-    """
+    r"""
     Compute SVD entropy of a time series.
 
     Constructs an embedding matrix and computes the normalised entropy

@@ -13,7 +13,7 @@ def suffx(
     *,
     n_bins: int = 20,
 ) -> dict:
-    """
+    r"""
     Test whether T(X) is a sufficient statistic for theta via factorization.
 
     The Fisher-Neyman factorization theorem states T(X) is sufficient iff:

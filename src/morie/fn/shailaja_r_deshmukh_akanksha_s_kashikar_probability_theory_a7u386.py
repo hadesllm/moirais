@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] → FX(xC) = P [X ≤ xC] = FX/C(x).
+    Formula: [EQ] -> FX(xC) = P [X ≤ xC] = FX/C(x).
 
     Parameters
     ----------

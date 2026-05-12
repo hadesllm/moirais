@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Penalized regression (ridge kernel)."""
 
 from __future__ import annotations

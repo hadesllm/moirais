@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Negative binomial GLM via IRLS."""
 
 from __future__ import annotations
@@ -19,7 +19,7 @@ def negbin_glm(
     max_iter: int = 50,
     tol: float = 1e-8,
 ) -> RegressionResult:
-    """Negative binomial GLM (NB2) via IRLS with fixed dispersion.
+    r"""Negative binomial GLM (NB2) via IRLS with fixed dispersion.
 
     Log-link: :math:`\\log(\\mu) = X \\beta`.  Variance function
     :math:`V(\\mu) = \\mu + \\alpha \\mu^2` (NB2 parameterisation).

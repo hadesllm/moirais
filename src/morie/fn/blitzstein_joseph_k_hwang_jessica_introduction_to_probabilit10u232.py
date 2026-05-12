@@ -8,7 +8,7 @@ __all__ = ["blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter
 
 
 def blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter_10_unnumbered_232(x, cdf=None):
-    """Study the past if you would define the future. — Confucius"""
+    """Study the past if you would define the future. -- Confucius"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

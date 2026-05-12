@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Instantaneous frequency via analytic signal."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def instantaneous_freq(
     x: np.ndarray,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """Instantaneous frequency from the analytic signal.
+    r"""Instantaneous frequency from the analytic signal.
 
     .. math::
 

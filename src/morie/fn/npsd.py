@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Noise power spectral density."""
 
 from __future__ import annotations
@@ -7,11 +7,11 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "We are what we repeatedly do. Excellence is not an act, but a habit. — Aristotle"
+_QUOTE = "We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle"
 
 
 def noise_psd(x, fs=1.0, **kwargs) -> DescriptiveResult:
-    """Estimate the noise power spectral density of *x*.
+    r"""Estimate the noise power spectral density of *x*.
 
     For white Gaussian noise the PSD is flat at :math:`\\sigma^2 / f_s`.
 

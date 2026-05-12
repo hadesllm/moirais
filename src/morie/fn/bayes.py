@@ -1,10 +1,10 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayes theorem."""
 
 
 from ._containers import ESRes
 
-_QUOTE = "Everything flows. — Heraclitus"
+_QUOTE = "Everything flows. -- Heraclitus"
 
 
 def bayes_theorem(
@@ -13,7 +13,7 @@ def bayes_theorem(
     evidence: float | None = None,
     **kwargs,
 ) -> ESRes:
-    """
+    r"""
     Apply Bayes' theorem to compute posterior probability.
 
     .. math::

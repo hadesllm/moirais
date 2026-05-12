@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MSM stabilized inverse-probability weights.
 
 Computes and diagnostics stabilized IPW weights for marginal

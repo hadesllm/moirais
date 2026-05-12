@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BLIP-2: frozen image encoder + lightweight Q-Former."""
 import numpy as np
 from ._richresult import RichResult

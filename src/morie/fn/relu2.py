@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ReLU squared activation."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def relu_squared(
     x: np.ndarray,
 ) -> DescriptiveResult:
-    """Compute ReLU squared activation.
+    r"""Compute ReLU squared activation.
 
     :math:`\\text{ReLU}^2(x) = (\\max(0, x))^2`
 

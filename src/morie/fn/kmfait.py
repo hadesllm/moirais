@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RAGAS faithfulness: fraction of answer claims entailed by the retrieved context."""
 import numpy as np
 from ._richresult import RichResult

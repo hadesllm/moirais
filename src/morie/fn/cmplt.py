@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Completeness of ascertainment via capture-recapture."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def capture_recapture(
     m: int,
     confidence: float = 0.95,
 ) -> ESRes:
-    """Estimate population size using two-source capture-recapture.
+    r"""Estimate population size using two-source capture-recapture.
 
     Uses the Chapman estimator (bias-corrected Lincoln-Petersen).
 

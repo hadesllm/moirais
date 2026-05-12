@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MDS with missing data (weighted stress). 'Shoot Style.' -- Deku, My Hero Academia"""
 
 from __future__ import annotations

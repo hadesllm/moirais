@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Custody incident rate per 1000 person-days."""
 
 from __future__ import annotations

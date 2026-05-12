@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Knowledge itself is power. — Francis Bacon"""
+# morie.fn -- function file (hadesllm/morie)
+"""Knowledge itself is power. -- Francis Bacon"""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ def ppv_prevalence(
     specificity: float,
     prevalence: float,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute positive and negative predictive values from prevalence.
 
     .. math::
@@ -61,4 +61,4 @@ ppvpr = ppv_prevalence
 
 
 def cheatsheet() -> str:
-    return "Knowledge itself is power. — Francis Bacon"
+    return "Knowledge itself is power. -- Francis Bacon"

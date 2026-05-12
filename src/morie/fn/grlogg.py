@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gradient of logistic-regression cost w.r.t. theta."""
 import numpy as np
 from ._richresult import RichResult

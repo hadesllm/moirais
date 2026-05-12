@@ -1,4 +1,4 @@
-"""Smoothed maximum score estimator (Horowitz 1992).
+r"""Smoothed maximum score estimator (Horowitz 1992).
 
 Replaces the discontinuous sign function in Manski's maximum score
 with a smooth kernel approximation:

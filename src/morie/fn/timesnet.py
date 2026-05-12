@@ -1,4 +1,4 @@
-"""TimesNet — 2D periodic blocks."""
+"""TimesNet -- 2D periodic blocks."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["timesnet"]
 
 def timesnet(X, top_k):
     """
-    TimesNet — 2D periodic blocks
+    TimesNet -- 2D periodic blocks
 
     Formula: FFT to find periods; reshape to 2D; Inception
 
@@ -32,8 +32,8 @@ def timesnet(X, top_k):
     n = len(X)
     result = float(np.mean(X))
     se = float(np.std(X, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "TimesNet — 2D periodic blocks"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "TimesNet -- 2D periodic blocks"})
 
 
 def cheatsheet():
-    return "timesnet: TimesNet — 2D periodic blocks"
+    return "timesnet: TimesNet -- 2D periodic blocks"

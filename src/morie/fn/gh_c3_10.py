@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prior via normalization of a completely random measure."""
 import numpy as np
 from ._richresult import RichResult

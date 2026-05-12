@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 4.1: biases and variances of S_tilde_X and S_tilde_X,1."""
 import numpy as np
 from ._richresult import RichResult

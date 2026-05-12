@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def j_invariant(tau: complex = 1j, terms: int = 30) -> DescriptiveResult:
-    """Compute the j-invariant j(tau) of the elliptic curve C/(Z + tau*Z).
+    r"""Compute the j-invariant j(tau) of the elliptic curve C/(Z + tau*Z).
 
     Uses the q-expansion:
     :math:`j(\\tau) = \\frac{1}{q} + 744 + 196884q + 21493760q^2 + \\cdots`

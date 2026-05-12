@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Balance diagnostics via standardized mean differences."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def balance_diagnostics(
     covariate_names: list[str] | None = None,
     weights: Union[list, np.ndarray, None] = None,
 ) -> list[dict[str, Any]]:
-    """
+    r"""
     Compute standardised mean differences (SMD) for covariate balance.
 
     For each covariate, the SMD is:

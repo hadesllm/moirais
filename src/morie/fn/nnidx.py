@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Clark-Evans nearest neighbor index."""
 
 import numpy as np
@@ -8,7 +8,7 @@ from ._containers import SpatialResult
 
 
 def nearest_neighbor_index(points: np.ndarray) -> SpatialResult:
-    """
+    r"""
     Compute the Clark-Evans nearest neighbor index.
 
     .. math::

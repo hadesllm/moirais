@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Likelihood ratios (positive and negative)."""
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ def likelihood_ratios(
     sensitivity: float,
     specificity: float,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute positive and negative likelihood ratios.
 
     .. math::

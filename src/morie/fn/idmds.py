@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """INDSCAL: Individual Differences MDS."""
 
 from __future__ import annotations

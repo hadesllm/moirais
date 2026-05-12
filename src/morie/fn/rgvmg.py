@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Vibromyogram (VMG) signal characterization (lateral oscillation of contracting muscle)."""
 import numpy as np
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["rangayyan_vmg"]
 
 
 def rangayyan_vmg(vmg, fs):
-    """It is during our darkest moments that we must focus to see the light. — Aristotle"""
+    """It is during our darkest moments that we must focus to see the light. -- Aristotle"""
     vmg = np.asarray(vmg, dtype=float)
     n = int(vmg) if vmg.ndim == 0 else len(vmg)
     result = float(np.mean(vmg))

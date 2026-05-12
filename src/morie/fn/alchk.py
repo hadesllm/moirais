@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Recursive text chunking: split on separators in priority order until under target size."""
 import numpy as np
 from ._richresult import RichResult
@@ -10,7 +10,7 @@ def alammar_recursive_chunking(text, separators, target_size, overlap):
     """
     Recursive text chunking: split on separators in priority order until under target size
 
-    Formula: split(text, seps) → if any chunk > target: recursive split with next-tier separator
+    Formula: split(text, seps) -> if any chunk > target: recursive split with next-tier separator
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multi-trait Bayesian kernel regression with shared kernel matrix."""
 import numpy as np
 from ._richresult import RichResult

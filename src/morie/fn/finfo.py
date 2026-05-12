@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fisher information matrix."""
 
 __all__ = ["finfo"]
@@ -15,7 +15,7 @@ def finfo(
     seed: int = 42,
     h: float = 1e-5,
 ) -> dict:
-    """
+    r"""
     Estimate the Fisher information matrix via Monte Carlo or numerical diff.
 
     .. math::

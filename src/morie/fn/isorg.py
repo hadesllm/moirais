@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Isotonic regression. 'One Punch!' -- Saitama, One Punch Man"""
 
 from __future__ import annotations

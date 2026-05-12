@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Life satisfaction = theta0 + theta1 * GDP_per_capita (introductory example)."""
 import numpy as np
 from ._richresult import RichResult

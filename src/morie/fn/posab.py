@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Absolute sinusoidal positional encoding (Vaswani et al. 2017)."""
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ __all__ = ["positional_encoding_abs"]
 
 
 def positional_encoding_abs(seq_len: int, d_model: int, base: float = 10000.0):
-    """Absolute sinusoidal positional encoding.
+    r"""Absolute sinusoidal positional encoding.
 
     .. math::
 

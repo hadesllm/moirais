@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Molecular cloud mass function (Schechter). 'I was disassembled and rebuilt.' -- Nebula"""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def cloud_mass_function(
     n_bins: int = 20,
     alpha: float = -1.6,
 ) -> DescriptiveResult:
-    """Fit a Schechter-like mass function to cloud mass observations.
+    r"""Fit a Schechter-like mass function to cloud mass observations.
 
     The cloud mass function (CMF) follows
     :math:`dN/dM \\propto M^{\\alpha} \\exp(-M/M^*)`.

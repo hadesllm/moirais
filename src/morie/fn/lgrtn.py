@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Log spectral distance."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Never tell me the odds."
 
 
 def log_spectral_dist(S1, S2, **kwargs) -> DescriptiveResult:
-    """Compute the log spectral distance.
+    r"""Compute the log spectral distance.
 
     .. math::
 

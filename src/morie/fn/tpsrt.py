@@ -1,4 +1,4 @@
-"""Our greatest glory is not in never falling, but in rising every time we fall. — Confucius"""
+"""Our greatest glory is not in never falling, but in rising every time we fall. -- Confucius"""
 
 from __future__ import annotations
 

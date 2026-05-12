@@ -11,11 +11,16 @@
 #' @param cv CV folds.
 #' @param task "auto" / "classification" / "regression".
 #' @param seed RNG seed.
+#' @param deterministic_seed Integer or NULL.  If supplied, the RNG state
+#'   is derived from the SHA-keyed [morie_det_rng()] so Py<->R streams
+#'   agree on the canonical fixture.  When `NULL` (default), behaviour
+#'   is unchanged: `seed` drives `set.seed()` directly.
 #' @return Named list: estimate, best_params, best_score, sampled_params,
 #'   sampled_scores, n_iter, task, n, method.
 #' @export
 random_search_cv <- function(x, y, method = NULL, n_iter = 20L, cv = 5L,
-                              task = "auto", seed = 0L) {
+                              task = "auto", seed = 0L,
+                              deterministic_seed = NULL) {
   if (!requireNamespace("caret", quietly = TRUE)) {
     stop("Function 'random_search_cv' requires package 'caret'. Install with install.packages('caret').")
   }
@@ -25,7 +30,11 @@ random_search_cv <- function(x, y, method = NULL, n_iter = 20L, cv = 5L,
     task <- if (is.factor(y) || all(y %in% c(0L, 1L)) || is.integer(y))
               "classification" else "regression"
   }
-  set.seed(seed)
+  if (!is.null(deterministic_seed)) {
+    morie_det_rng("rndsr", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   ctrl <- caret::trainControl(method = "cv", number = cv,
                                search = "random", classProbs = FALSE)
   if (is.null(method)) {

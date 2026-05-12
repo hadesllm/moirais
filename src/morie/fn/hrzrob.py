@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rate of convergence n^{-1/2} for beta in single-index models."""
 import numpy as np
 from ._richresult import RichResult

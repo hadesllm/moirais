@@ -1,4 +1,4 @@
-"""R-GCN — relational GCN."""
+"""R-GCN -- relational GCN."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["r_gcn"]
 
 def r_gcn(A_r, X, W_r):
     """
-    R-GCN — relational GCN
+    R-GCN -- relational GCN
 
     Formula: per-relation transform + sum
 
@@ -34,8 +34,8 @@ def r_gcn(A_r, X, W_r):
     n = len(A_r)
     result = float(np.mean(A_r))
     se = float(np.std(A_r, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "R-GCN — relational GCN"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "R-GCN -- relational GCN"})
 
 
 def cheatsheet():
-    return "kgnn: R-GCN — relational GCN"
+    return "kgnn: R-GCN -- relational GCN"

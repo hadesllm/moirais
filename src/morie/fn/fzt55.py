@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 5.5: bias and variance of boundary-free KDE."""
 import numpy as np
 from ._richresult import RichResult

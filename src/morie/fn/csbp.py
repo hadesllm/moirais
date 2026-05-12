@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """L1 minimization via Iterative Shrinkage-Thresholding (ISTA)."""
 
 import numpy as np
@@ -16,7 +16,7 @@ def basis_pursuit_l1(
     tol: float = 1e-6,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Solve the LASSO / basis pursuit denoising problem via ISTA.
 
     .. math::

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Standardization (z-score normalization) to zero mean, unit variance."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CPI and inflation rate. 'So this is how liberty dies, with thunderous applause.' -- Padme"""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def cpi_inflation(
     prices_current: np.ndarray,
     weights: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute Consumer Price Index and inflation rate.
 
     .. math::

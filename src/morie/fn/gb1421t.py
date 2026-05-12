@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Phi coefficient and Cramer's V for 2x2 and rxc tables."""
 import numpy as np
 from ._richresult import RichResult

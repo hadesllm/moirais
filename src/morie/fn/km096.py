@@ -1,4 +1,4 @@
-"""Gender projection reg.."""
+r"""Gender projection reg.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_gender_projection_reg"]
 
 
 def kamath_ch6_gender_projection_reg(W_stereo, g):
-    """
+    r"""
     Gender projection reg.
 
     Formula: R = \sum_{w\in W_{stereo}} \frac{g}{\|g\|} w^T
@@ -27,7 +27,7 @@ def kamath_ch6_gender_projection_reg(W_stereo, g):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.20, p. 243
-    """
+    r"""
     W_stereo = np.atleast_1d(np.asarray(W_stereo, dtype=float))
     n = len(W_stereo)
     result = float(np.mean(W_stereo))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RMSFE (Root Mean Square Forecast Error)."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def rmsfe_calc(actual: np.ndarray, forecast: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Root Mean Square Forecast Error.
 
     .. math::

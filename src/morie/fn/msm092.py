@@ -1,4 +1,4 @@
-"""Numbered display equation (7.3) from MVSML chapter 7.."""
+r"""Numbered display equation (7.3) from MVSML chapter 7.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_pt2_eq_7_3"]
 
 
 def mvsml_bayesian_regression_pt2_eq_7_3(can, be, taken, into, account, to):
-    """
+    r"""
     Numbered display equation (7.3) from MVSML chapter 7.
 
     Formula: can be taken into account to improve the prediction performance. One extension of model (7.1) that takes into account environment effects and environment–marker interaction is given by pic = P Yi = c ( ) = F \gammac  \etai ( )  F \gammac1  \etai ( ), c = 1, . . . , C,
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_pt2_eq_7_3(can, be, taken, into, account, to):
     References
     ----------
     MVSML, Eq. (7.3) [Multivariate Statistical Machine Learnin [Pages 209-249] [2026-04-16].pdf]
-    """
+    r"""
     can = np.atleast_1d(np.asarray(can, dtype=float))
     n = len(can)
     result = float(np.mean(can))

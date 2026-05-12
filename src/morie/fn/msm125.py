@@ -1,4 +1,4 @@
-"""Numbered display equation (8.2) from MVSML chapter 8.."""
+r"""Numbered display equation (8.2) from MVSML chapter 8.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_categorical_count_eq_8_2"]
 
 
 def mvsml_categorical_count_eq_8_2(dimensional, space, the, solution, admits, a):
-    """
+    r"""
     Numbered display equation (8.2) from MVSML chapter 8.
 
     Formula: dimensional space, the solution for (8.1) admits a linear representation X n   = \eta0 + kT f xi ( ) = \eta0 + \beta jK xi, x j i \beta,
@@ -35,7 +35,7 @@ def mvsml_categorical_count_eq_8_2(dimensional, space, the, solution, admits, a)
     References
     ----------
     MVSML, Eq. (8.2) [Multivariate Statistical Machine Learnin [Pages 251-336] [2026-04-16].pdf]
-    """
+    r"""
     dimensional = np.atleast_1d(np.asarray(dimensional, dtype=float))
     n = len(dimensional)
     result = float(np.mean(dimensional))

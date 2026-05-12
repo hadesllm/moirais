@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sparse representation of biomedical signals in learned dictionary."""
 import numpy as np
 from ._richresult import RichResult

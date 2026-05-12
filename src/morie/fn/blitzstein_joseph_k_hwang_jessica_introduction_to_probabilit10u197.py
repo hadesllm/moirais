@@ -1,4 +1,4 @@
-"""Correlation expression (auto-extracted; see ref).."""
+r"""Correlation expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter
 
 
 def blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter_10_unnumbered_197(x):
-    """
+    r"""
     Correlation expression (auto-extracted; see ref).
 
     Formula: be a blunder: \Either M = X; L= Y or M = Y; L= X, so either Cov(M;L ) =

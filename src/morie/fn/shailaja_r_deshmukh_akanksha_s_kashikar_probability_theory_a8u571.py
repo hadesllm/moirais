@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_8_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (t) = (ϕ(t/n))n = (1 − |t/n|)n → e−|t| ∀ t ∈ R.
+    Formula: [EQ] (t) = (ϕ(t/n))n = (1 − |t/n|)n -> e−|t| ∀ t ∈ R.
 
     Parameters
     ----------

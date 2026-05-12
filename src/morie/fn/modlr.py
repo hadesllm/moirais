@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Modular form of weight k."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def modular_form(
     tau: complex = 0.5j,
     terms: int = 20,
 ) -> DescriptiveResult:
-    """Compute the Eisenstein series E_k(tau) as a weight-k modular form.
+    r"""Compute the Eisenstein series E_k(tau) as a weight-k modular form.
 
     .. math::
 

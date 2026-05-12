@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """NOMINATE scaling (1D/2D) for legislative ideal points."""
 
 from __future__ import annotations

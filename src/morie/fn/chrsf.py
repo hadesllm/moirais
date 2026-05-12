@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Christoffel symbols from metric tensor."""
 
 __all__ = ["chrsf"]
@@ -13,7 +13,7 @@ def chrsf(
     h: float = 1e-6,
     metric_func=None,
 ) -> dict:
-    """
+    r"""
     Compute Christoffel symbols of the second kind.
 
     .. math::

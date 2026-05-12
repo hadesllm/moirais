@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pitman-Yor EPPF: prod (theta+j*d) / prod_{j=1}^k prod_{l=1}^{n_j-1}(l-d)."""
 import numpy as np
 from ._richresult import RichResult

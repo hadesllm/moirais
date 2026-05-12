@@ -1,4 +1,4 @@
-"""morie.otis_datasets — registry + loader for all 29 OTIS CSVs.
+"""morie.otis_datasets -- registry + loader for all 29 OTIS CSVs.
 
 The Ontario Tracking Information System (OTIS) is the open-data feed
 for Ontario's adult correctional system, published by the Ministry
@@ -6,13 +6,13 @@ of the Solicitor General's Service Management and Oversight Branch
 under the Jahn settlement framework.  The 29 datasets in the
 official A01RCDD release fall into 4 series:
 
-    a-series (1 dataset)    — Restrictive confinement detailed
+    a-series (1 dataset)    -- Restrictive confinement detailed
                               (the canonical per-day record file used
                               in Ruhela 2026 OTIS-RC)
-    b-series (9 datasets)   — Segregation placement records
-    c-series (12 datasets)  — Individuals in segregation & restrictive
+    b-series (9 datasets)   -- Segregation placement records
+    c-series (12 datasets)  -- Individuals in segregation & restrictive
                               confinement
-    d-series (7 datasets)   — Deaths in custody
+    d-series (7 datasets)   -- Deaths in custody
 
 CSV path convention:
     data/datasets/OTIS/<id>_<short_label>.csv
@@ -21,16 +21,16 @@ Where <id> is the canonical dataset name from the official Ontario
 data dictionary (a01, b01, c03, d05, …).
 
 Public API:
-    DATASET_REGISTRY        — dict mapping id → metadata
-    load_otis_dataset(id)   — returns DataFrame
-    list_otis_datasets()    — list of all (id, description, n_cols)
+    DATASET_REGISTRY        -- dict mapping id -> metadata
+    load_otis_dataset(id)   -- returns DataFrame
+    list_otis_datasets()    -- list of all (id, description, n_cols)
     download_otis_dataset(id, target_dir=None)
-                            — fetch a fresh copy from data.ontario.ca
+                            -- fetch a fresh copy from data.ontario.ca
                               via the CKAN action API
     download_all_otis(target_dir=None)
-                            — fetch every file in the package
-    OTIS_DATA_DIR           — Path
-    OTIS_CKAN_PACKAGE       — package id on data.ontario.ca
+                            -- fetch every file in the package
+    OTIS_DATA_DIR           -- Path
+    OTIS_CKAN_PACKAGE       -- package id on data.ontario.ca
 
 References
 ----------
@@ -81,7 +81,7 @@ def _r(d: OtisDataset) -> None:
 _r(OtisDataset(
     id="a01", series="a",
     csv_filename="a01_restrictive_confinement_detailed_dataset.csv",
-    description=("Restrictive confinement — person-level detail "
+    description=("Restrictive confinement -- person-level detail "
                   "(each row = one DAY in restrictive confinement). "
                   "The canonical RC dataset used in Ruhela's OTIS-RC "
                   "research (notez1a.qmd, res_pool, res_by_year, "
@@ -99,7 +99,7 @@ _r(OtisDataset(
 _r(OtisDataset(
     id="b01", series="b",
     csv_filename="b01_segregation_detailed_dataset.csv",
-    description="Segregation placements — person-level detail (each row = one placement)",
+    description="Segregation placements -- person-level detail (each row = one placement)",
     columns=("EndFiscalYear", "UniqueIndividual_ID", "Gender",
              "Region_AtTimeOfPlacement", "Region_MostRecentPlacement",
              "Age_Category", "NumberConsecutiveDays_Segregation",
@@ -309,7 +309,7 @@ _r(OtisDataset(
 _r(OtisDataset(
     id="d01", series="d",
     csv_filename="d01_deaths_in_custody_detailed_dataset.csv",
-    description="Custodial deaths — person-level detail (calendar year)",
+    description="Custodial deaths -- person-level detail (calendar year)",
     columns=("Year", "UniqueIndividual_ID",
              "Region_AtTimeOfDeath", "HousingUnit_Type",
              "MedicalCauseofDeath", "MeansofDeath"),
@@ -447,7 +447,7 @@ def download_otis_dataset(dataset_id: str,
         return out_path
 
     idx = _ckan_resource_index()
-    # Build token set from local filename — strip leading "<id>_",
+    # Build token set from local filename -- strip leading "<id>_",
     # drop common boilerplate words, lowercase.  Then match against
     # CKAN names (which use spaces / en-dashes / mixed case).
     import re

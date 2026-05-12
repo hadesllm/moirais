@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Save and load PyTorch model state_dict."""
 import numpy as np
 from ._richresult import RichResult

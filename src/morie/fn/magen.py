@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generate synthetic MA process."""
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ def ma_generate_fn(
     N: int = 1000,
     seed: int | None = None,
 ) -> DescriptiveResult:
-    """Generate a realisation of an MA(q) process.
+    r"""Generate a realisation of an MA(q) process.
 
     .. math::
 

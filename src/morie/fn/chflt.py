@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chebyshev type I IIR filter.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal

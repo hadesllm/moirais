@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Temperature scaling for logits (Hinton et al. 2015)."""
 from __future__ import annotations
 

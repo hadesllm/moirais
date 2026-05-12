@@ -11,7 +11,7 @@ def bookadvanced_elementsofstatisticallearning_chapter_4_unnumbered_95(x):
     """
     Regression expression (auto-extracted; see ref).
 
-    Formula: λ = 0 (no regularization) and df( λ) → 0 as λ → ∞ . Of course there
+    Formula: λ = 0 (no regularization) and df( λ) -> 0 as λ -> ∞ . Of course there
 
     Parameters
     ----------

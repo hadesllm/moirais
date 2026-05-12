@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayesian model averaging (predictive)."""
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ def bayesian_model_averaging(
     *,
     prior_weights: Union[list, np.ndarray, None] = None,
 ) -> dict[str, Any]:
-    """
+    r"""
     Bayesian model averaging for predictive inference.
 
     Combines predictions from multiple models weighted by their

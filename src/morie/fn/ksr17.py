@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Counting process for survival data (Kosorok 2008, Ch 8).
 
 N(t) = sum_i 1{T_i <= t, delta_i = 1}.  Returns total events

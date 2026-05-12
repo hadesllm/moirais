@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Prime density — pi(n) counting function."""
+# morie.fn -- function file (hadesllm/morie)
+"""Prime density -- pi(n) counting function."""
 
 from __future__ import annotations
 
@@ -45,4 +45,4 @@ prime = prime_density
 
 
 def cheatsheet() -> str:
-    return "prime_density({}) -> Prime density — pi(n) counting function."
+    return "prime_density({}) -> Prime density -- pi(n) counting function."

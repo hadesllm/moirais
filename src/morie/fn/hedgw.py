@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Edgeworth expansion for kernel density statistics."""
 
 from __future__ import annotations

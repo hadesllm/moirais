@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SWT-based denoising (shift-invariant, no Gibbs oscillation)."""
 import numpy as np
 from ._richresult import RichResult

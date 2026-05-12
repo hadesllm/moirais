@@ -9,7 +9,7 @@ Statistic for the first (X) sample:
 Under H0 with no ties: E[T] = 0, Var[T] = (m*n/(N*(N-1))) * sum a_i^2.
 
 Approximated normal scores via inverse-CDF of midranks
-(``Phi^{-1}((R_i - 3/8)/(N + 1/4))``) — the Blom approximation,
+(``Phi^{-1}((R_i - 3/8)/(N + 1/4))``) -- the Blom approximation,
 identical to R's ``qnorm(ppoints(N))``.
 """
 from __future__ import annotations

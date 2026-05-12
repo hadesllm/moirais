@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Network centrality measures. 'When I was a boy...' -- Kingpin"""
 
 from __future__ import annotations

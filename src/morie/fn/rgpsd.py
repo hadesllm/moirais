@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Power spectral density via Welch's method — Rangayyan Ch 4."""
+# morie.fn -- function file (hadesllm/morie)
+"""Power spectral density via Welch's method -- Rangayyan Ch 4."""
 from __future__ import annotations
 
 import numpy as np
@@ -82,4 +82,4 @@ def rangayyan_psd(x, fs=1.0, nperseg=None, noverlap=None, window="hann"):
 
 
 def cheatsheet():
-    return "rgpsd: Welch power spectral density — Rangayyan Ch 4"
+    return "rgpsd: Welch power spectral density -- Rangayyan Ch 4"

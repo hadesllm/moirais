@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Nonparametric IV via series (sieve) estimation.
+# morie.fn -- function file (hadesllm/morie)
+r"""Nonparametric IV via series (sieve) estimation.
 
 Approximates the structural function :math:`h(x)` using a linear
 combination of basis functions (Hermite polynomials or B-splines),

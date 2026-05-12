@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chern-Simons level and partition function."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def chern_simons(
     gauge_group: str = "SU(2)",
     manifold: str = "S3",
 ) -> DescriptiveResult:
-    """Compute Chern-Simons theory properties.
+    r"""Compute Chern-Simons theory properties.
 
     For SU(2) Chern-Simons on S^3:
 

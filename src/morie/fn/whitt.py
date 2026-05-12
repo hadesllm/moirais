@@ -14,7 +14,7 @@ def white_test(
     *,
     add_intercept: bool = True,
 ) -> DescriptiveResult:
-    """White's general test for heteroskedasticity.
+    r"""White's general test for heteroskedasticity.
 
     Regresses squared OLS residuals on all predictors, their squares,
     and cross-products.  Under :math:`H_0` (homoscedasticity),

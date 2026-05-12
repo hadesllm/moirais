@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEIQR compartmental model (Susceptible-Exposed-Infected-Quarantined-Recovered)."""
 
 import numpy as np
@@ -21,7 +21,7 @@ def seiqr_model(
     t_max: int = 160,
     dt: float = 1.0,
 ) -> SIRResult:
-    """Simulate an SEIQR compartmental model with quarantine.
+    r"""Simulate an SEIQR compartmental model with quarantine.
 
     .. math::
 

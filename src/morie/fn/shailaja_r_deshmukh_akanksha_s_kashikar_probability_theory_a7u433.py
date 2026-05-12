@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: → 0, hence √n(X n − θ) and√n(ˆθn − θ) have the same limit law. But√n(X n − θ)
+    Formula: -> 0, hence √n(X n − θ) and√n(ˆθn − θ) have the same limit law. But√n(X n − θ)
 
     Parameters
     ----------

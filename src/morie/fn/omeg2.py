@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Omega-squared (less biased than η²)."""
 
 def omeg2(ss_between: float, df_between: int,

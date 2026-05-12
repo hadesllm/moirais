@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """F-beta score."""
 
 import numpy as np
@@ -9,7 +9,7 @@ _QUOTE = "So this is how liberty dies. With thunderous applause. -- Padme"
 
 
 def f_score(y_true, y_pred, beta: float = 1.0, **kwargs) -> ESRes:
-    """
+    r"""
     Compute the F_beta score for binary classification.
 
     .. math::

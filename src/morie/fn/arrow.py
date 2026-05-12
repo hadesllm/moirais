@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Arrow plot / directed graph layout. 'You have failed this city!' -- Green Arrow"""
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ def directed_layout(
     adjacency : array (n, n)
         Adjacency or weight matrix (non-zero = edge).
     method : str
-        ``'Our greatest glory is not in never falling, but in rising every time we fall. — Confucius'`` (Fruchterman-Reingold) or ``'circular'``.
+        ``'Our greatest glory is not in never falling, but in rising every time we fall. -- Confucius'`` (Fruchterman-Reingold) or ``'circular'``.
     n_iter : int
         Iterations for force-directed layout.
     seed : int or None

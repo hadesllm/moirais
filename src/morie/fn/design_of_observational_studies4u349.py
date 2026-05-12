@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_4_unnumbered_349(x):
     """
     PowerAndDesign expression (auto-extracted; see ref).
 
-    Formula: as the sample size increases, I →∞ .I n[ 43,Tabl e2 ,β − β 0 = 0.5], the design sensitivity is
+    Formula: as the sample size increases, I ->∞ .I n[ 43,Tabl e2 ,β − β 0 = 0.5], the design sensitivity is
 
     Parameters
     ----------

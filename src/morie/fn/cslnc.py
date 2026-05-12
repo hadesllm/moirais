@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cosine LR schedule with warmup (Loshchilov & Hutter 2017)."""
 from __future__ import annotations
 

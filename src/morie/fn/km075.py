@@ -1,4 +1,4 @@
-"""Dpo pref simplified.."""
+r"""Dpo pref simplified.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch5_dpo_pref_simplified"]
 
 
 def kamath_ch5_dpo_pref_simplified(pi_star, pi_ref, beta):
-    """
+    r"""
     Dpo pref simplified.
 
     Formula: p^*(y_w \succ y_l|x) = \sigma(\beta\log\frac{\pi^*(y_w|x)}{\pi_{ref}(y_w|x)} - \beta\log\frac{\pi^*(y_l|x)}{\pi_{ref}(y_l|x)})
@@ -29,7 +29,7 @@ def kamath_ch5_dpo_pref_simplified(pi_star, pi_ref, beta):
     References
     ----------
     Kamath et al (2024), Ch 5, Eq 5.11, p. 210
-    """
+    r"""
     pi_star = np.atleast_1d(np.asarray(pi_star, dtype=float))
     n = len(pi_star)
     result = float(np.mean(pi_star))

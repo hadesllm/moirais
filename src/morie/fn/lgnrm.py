@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 lgnrm.py - Log-normal accelerated failure time (AFT) survival model via MLE.
 

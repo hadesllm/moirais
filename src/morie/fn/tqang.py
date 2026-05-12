@@ -25,7 +25,7 @@ def turboquant_angle_quantization(theta, bits):
 
     References
     ----------
-    TurboQuant MORIE integration — quantize_angles
+    TurboQuant MORIE integration -- quantize_angles
     """
     theta = np.atleast_1d(np.asarray(theta, dtype=float))
     n = len(theta)

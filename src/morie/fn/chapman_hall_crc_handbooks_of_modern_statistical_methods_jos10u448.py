@@ -11,7 +11,7 @@ def chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter_10_unnu
     """
     CausalInference expression (auto-extracted; see ref).
 
-    Formula: λ ≍ λ′ ≍ {log(p ∨ n)/n}1/2, if (s1 + s2) logp = o(n) as s1, s2, p, n → ∞, then the estimator ˆµ1
+    Formula: λ ≍ λ′ ≍ {log(p ∨ n)/n}1/2, if (s1 + s2) logp = o(n) as s1, s2, p, n -> ∞, then the estimator ˆµ1
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AR(p) model fitting via Yule-Walker equations."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def ar_fit(y: np.ndarray, p: int = 1) -> DescriptiveResult:
-    """
+    r"""
     Fit an AR(p) model using Yule-Walker equations.
 
     .. math::

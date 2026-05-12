@@ -1,4 +1,4 @@
-"""morie.siu — automated mining of Ontario Special Investigations Unit
+"""morie.siu -- automated mining of Ontario Special Investigations Unit
 director's reports.
 
 Reads from siu.on.ca (publicly published reports + paired news releases),
@@ -15,7 +15,7 @@ Public API:
     scrape_range(drid_min, drid_max, **kw) -> Iterator[dict]
         Polite range scrape with concurrency limits.
     parse_html(html, *, drid=None, source_url=None) -> dict
-        Pure parser — no network — turns one HTML page into a row.
+        Pure parser -- no network -- turns one HTML page into a row.
     write_csv(rows, path) -> None
     write_jsonl(rows, path) -> None         # for narrative_full bodies
     SIU_COLUMNS                              # 45-col canonical schema

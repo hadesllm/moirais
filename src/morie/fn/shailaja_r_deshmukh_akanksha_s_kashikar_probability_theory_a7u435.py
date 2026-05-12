@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: → Z ∼ N(0, 1), for θ > 0. Suppose nowθ = 0.
+    Formula: -> Z ∼ N(0, 1), for θ > 0. Suppose nowθ = 0.
 
     Parameters
     ----------

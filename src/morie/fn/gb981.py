@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Confidence interval for scale ratio from scale rank tests."""
 import numpy as np
 from scipy import stats

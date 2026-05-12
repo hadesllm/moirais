@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (b) If the chain is positive recurrent then pi j( n) → π j = µ − 1
+    Formula: (b) If the chain is positive recurrent then pi j( n) -> π j = µ − 1
 
     Parameters
     ----------

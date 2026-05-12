@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """F1 score, precision, and recall."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moving block bootstrap for dependent data."""
 
 from __future__ import annotations

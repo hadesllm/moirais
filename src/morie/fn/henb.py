@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Net monetary benefit (NMB)."""
 
 from ._containers import ESRes
@@ -9,7 +9,7 @@ def net_monetary_benefit(
     cost_diff: float,
     wtp: float,
 ) -> ESRes:
-    """Net monetary benefit at given willingness-to-pay threshold.
+    r"""Net monetary benefit at given willingness-to-pay threshold.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ridge regression (closed-form)."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def ridge_regression(
     lam: float = 1.0,
     add_intercept: bool = True,
 ) -> RegressionResult:
-    """Ridge regression: :math:`\\hat{\\beta} = (X^\\top X + \\lambda I)^{-1} X^\\top y`.
+    r"""Ridge regression: :math:`\\hat{\\beta} = (X^\\top X + \\lambda I)^{-1} X^\\top y`.
 
     Standardises predictors internally; returns coefficients on the
     original scale.

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wavelet cross-correlation between two signals at each scale."""
 import numpy as np
 from scipy import stats

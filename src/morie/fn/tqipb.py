@@ -27,7 +27,7 @@ def turboquant_inner_product_distortion_bound(bits, norm_sq, d):
 
     References
     ----------
-    TurboQuant MORIE integration — inner_product_distortion_bound
+    TurboQuant MORIE integration -- inner_product_distortion_bound
     """
     bits = np.atleast_1d(np.asarray(bits, dtype=float))
     n = len(bits)

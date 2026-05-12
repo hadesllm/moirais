@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nadaraya-Watson kernel regression estimator."""
 
 from __future__ import annotations

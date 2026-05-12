@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Robust covariance (MCD). 'Ironhide reporting.' -- Ironhide"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-"""Numbered display equation (14.4) from MVSML chapter 14.."""
+r"""Numbered display equation (14.4) from MVSML chapter 14.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_convolutional_nn_eq_14_4"]
 
 
 def mvsml_convolutional_nn_eq_14_4(R, T, l, xil, xi, t):
-    """
+    r"""
     Numbered display equation (14.4) from MVSML chapter 14.
 
     Formula:  R T l=1xil\betal, \sigma2 , xil = 0 xi t( )ϕl t( )dt, i = 1, . . ., n, l = 1, . . ., L1. So, the maximum likelihood estimation of parameters \beta and \sigma2 is given by - 1XTy b\beta = XTX
@@ -35,7 +35,7 @@ def mvsml_convolutional_nn_eq_14_4(R, T, l, xil, xi, t):
     References
     ----------
     MVSML, Eq. (14.4) [Multivariate Statistical Machine Learnin [Pages 579-631] [2026-04-16].pdf]
-    """
+    r"""
     R = np.atleast_1d(np.asarray(R, dtype=float))
     n = len(R)
     result = float(np.mean(R))

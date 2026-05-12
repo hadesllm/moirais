@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """KDFE bias and variance properties (Fauzi Ch 2).
 
 Kernel distribution function estimator (KDFE):
@@ -64,7 +64,7 @@ def fauzi_kdfe_properties(x, t=None, h=None):
     n = len(x)
     if n < 2:
         return RichResult(payload={"estimate": np.nan, "n": n,
-                                    "method": "KDFE — too few obs"})
+                                    "method": "KDFE -- too few obs"})
     if t is None:
         t = float(np.median(x))
     if h is None:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multi-trait linear mixed model with Kronecker covariance."""
 import numpy as np
 from ._richresult import RichResult

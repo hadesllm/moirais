@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Noise floor estimation."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Character is destiny. — Heraclitus"
+_QUOTE = "Character is destiny. -- Heraclitus"
 
 
 def noise_floor(x, method: str = "median", **kwargs) -> DescriptiveResult:

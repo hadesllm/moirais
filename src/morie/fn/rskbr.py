@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Base rate of outcome overall and by group."""
 
 from __future__ import annotations

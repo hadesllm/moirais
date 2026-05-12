@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: [EQ] pi j( n) = md( n) − md( n − 1) → fi j
+    Formula: [EQ] pi j( n) = md( n) − md( n − 1) -> fi j
 
     Parameters
     ----------

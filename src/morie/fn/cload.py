@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Load a table from the SQLite cache."""
 
 from morie.data import cache_load as _fn

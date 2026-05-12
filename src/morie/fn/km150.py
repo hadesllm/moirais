@@ -1,4 +1,4 @@
-"""Flamingo dataset mix.."""
+r"""Flamingo dataset mix.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_flamingo_dataset_mix"]
 
 
 def kamath_ch9_flamingo_dataset_mix(D_m, lambda_m, x, y):
-    """
+    r"""
     Flamingo dataset mix.
 
     Formula: \sum_{m=1}^M \lambda_m E_{(x,y)\sim D_m}[-\sum_{\ell=1}^L \log p(y_{\ell}|y_{<\ell}, x_{\le\ell})]
@@ -31,7 +31,7 @@ def kamath_ch9_flamingo_dataset_mix(D_m, lambda_m, x, y):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.22, p. 404
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

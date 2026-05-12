@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rubin's rules for pooling multiply imputed estimates."""
 
 from __future__ import annotations

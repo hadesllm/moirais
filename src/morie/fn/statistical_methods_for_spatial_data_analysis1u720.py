@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_720(x, cd
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: 2      → χ22 if ω = 0                    (4.69)
+    Formula: 2      -> χ22 if ω = 0                    (4.69)
 
     Parameters
     ----------

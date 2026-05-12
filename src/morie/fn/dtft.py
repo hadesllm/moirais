@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discrete-Time Fourier Transform."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Your focus determines your reality."
 
 
 def dtft_compute(x, omega=None, **kwargs) -> DescriptiveResult:
-    """Compute the DTFT of signal *x* at specified frequencies.
+    r"""Compute the DTFT of signal *x* at specified frequencies.
 
     .. math::
 

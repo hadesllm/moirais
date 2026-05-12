@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CATE by risk score tercile for OTIS correctional data."""
 
 from __future__ import annotations

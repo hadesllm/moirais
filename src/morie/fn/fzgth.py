@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """G(theta): distribution function of (X_1+X_2)/2 used in Wilcoxon moments."""
 import numpy as np
 from ._richresult import RichResult

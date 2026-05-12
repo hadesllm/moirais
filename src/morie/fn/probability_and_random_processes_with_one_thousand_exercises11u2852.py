@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (b) Ifρ ≥ 1, there is no stationary distribution, and P( Q( t) = n) → 0 for all n.
+    Formula: (b) Ifρ ≥ 1, there is no stationary distribution, and P( Q( t) = n) -> 0 for all n.
 
     Parameters
     ----------

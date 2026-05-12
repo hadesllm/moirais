@@ -1,4 +1,4 @@
-"""Confine yourself to the present. — Marcus Aurelius"""
+"""Confine yourself to the present. -- Marcus Aurelius"""
 
 from __future__ import annotations
 
@@ -38,4 +38,4 @@ swflm = sw_film_summary
 
 
 def cheatsheet() -> str:
-    return "Confine yourself to the present. — Marcus Aurelius"
+    return "Confine yourself to the present. -- Marcus Aurelius"

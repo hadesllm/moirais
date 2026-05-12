@@ -7,7 +7,7 @@ __all__ = ["mvsml_convolutional_nn_eq_14_8"]
 
 
 def mvsml_convolutional_nn_eq_14_8(where, bc, j, T, jx, a):
-    """Confine yourself to the present. — Marcus Aurelius"""
+    """Confine yourself to the present. -- Marcus Aurelius"""
     where = np.atleast_1d(np.asarray(where, dtype=float))
     n = len(where)
     result = float(np.mean(where))

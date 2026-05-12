@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean absolute value of a signal."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def mean_abs_value(x: np.ndarray) -> DescriptiveResult:
     """Compute the mean absolute value (MAV) of a signal.
 
-    'Stay on target.' — Gold Five
+    'Stay on target.' -- Gold Five
     """
     from morie._waveform import mean_absolute_value as _backend
 

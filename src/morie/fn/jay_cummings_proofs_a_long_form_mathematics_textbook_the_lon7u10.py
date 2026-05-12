@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (n) v : Z × Z → Z where v(m,n ) = 3m − 4n
+    Formula: [EQ] (n) v : Z × Z -> Z where v(m,n ) = 3m − 4n
 
     Parameters
     ----------

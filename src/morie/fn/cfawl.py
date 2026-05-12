@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """WLSMV estimation for ordinal CFA."""
 
 from __future__ import annotations

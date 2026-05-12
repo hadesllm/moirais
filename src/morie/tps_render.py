@@ -1,4 +1,4 @@
-"""morie.tps_render — clean Toronto map rendering.
+"""morie.tps_render -- clean Toronto map rendering.
 
 Two design rules per the author, 2026-05-07:
 
@@ -8,7 +8,7 @@ Two design rules per the author, 2026-05-07:
    not via on-canvas text.
 
 2. Map is rotated ~17° CLOCKWISE in projected space so Lake Ontario's
-   shoreline sits level horizontally — matching the Sigar Li 2022
+   shoreline sits level horizontally -- matching the Sigar Li 2022
    "Hotspot Policing for the City of Toronto" poster aesthetic and
    the Hohl 2024 ALMI homicide-cluster map.
 
@@ -17,10 +17,10 @@ shapes stay metric-true regardless of where in Toronto's bbox they sit.
 
 Public API
 ----------
-``project_xy(lat, lon)``     — degrees → rotated planar metres (km)
-``render_choropleth(rate_col, year, ...)``   — polygon choropleth
-``render_dbscan(category, ...)``             — point-pattern + clusters
-``render_yearly_grid(prefix, years, ...)``   — small-multiples
+``project_xy(lat, lon)``     -- degrees -> rotated planar metres (km)
+``render_choropleth(rate_col, year, ...)``   -- polygon choropleth
+``render_dbscan(category, ...)``             -- point-pattern + clusters
+``render_yearly_grid(prefix, years, ...)``   -- small-multiples
 """
 
 from __future__ import annotations
@@ -36,7 +36,7 @@ import pandas as pd
 # Toronto rotation constants
 # Centre = downtown intersection (~Yonge/Dundas).
 # 17.5° matches the Sigar Li / Hohl-ALMI orientation: the long axis
-# of Toronto (Etobicoke→Scarborough) becomes horizontal.
+# of Toronto (Etobicoke->Scarborough) becomes horizontal.
 # ----------------------------------------------------------------------
 
 _LAT_C: float = 43.7000
@@ -50,7 +50,7 @@ FIG_DIR = PROJECT / "data/manifest/outputs/figures/diagnostics"
 
 
 # Per-category palette (matches Hohl 2024 ALMI quad aesthetic + Sigar Li
-# 2022 Toronto poster). Two cmaps per category — sequential for rate
+# 2022 Toronto poster). Two cmaps per category -- sequential for rate
 # panels, divergent for cluster/LISA panels.
 # Toronto's six former-municipality districts (pre-1998 amalgamation),
 # used for district-colour layouts. Roughly bbox-defined; close to the
@@ -102,7 +102,7 @@ CATEGORY_CMAP: dict[str, tuple[str, str]] = {
 
 
 def pretty_label(s: str) -> str:
-    """`ASSAULT_RATE_2024` → `Assault rate · 2024`. Strips underscores
+    """`ASSAULT_RATE_2024` -> `Assault rate · 2024`. Strips underscores
     and casing so titles & legend labels look like prose."""
     parts = s.split("_")
     out: list[str] = []
@@ -123,7 +123,7 @@ def project_xy(lat: np.ndarray | float,
                *, rot_deg_cw: float = _ROT_DEG_CW,
                lat_c: float = _LAT_C,
                lon_c: float = _LON_C) -> tuple[np.ndarray, np.ndarray]:
-    """Project (lat, lon) → (x_km, y_km) with a clockwise rotation.
+    """Project (lat, lon) -> (x_km, y_km) with a clockwise rotation.
 
     Equirectangular projection centred at (lat_c, lon_c), then rotated
     `rot_deg_cw` degrees clockwise. Returns kilometres east-of-centre
@@ -143,7 +143,7 @@ def project_xy(lat: np.ndarray | float,
 
 
 def _setup_axes(ax, *, title: str, basemap_alpha: float = 0.0):
-    """Common axis setup — equal aspect, no degree ticks, light grid."""
+    """Common axis setup -- equal aspect, no degree ticks, light grid."""
     ax.set_aspect("equal", adjustable="box")
     ax.set_xlabel("east of centre (km)")
     ax.set_ylabel("north of centre (km)")
@@ -187,7 +187,7 @@ def render_choropleth(*, rate_col: str = "ASSAULT_RATE_2024",
     Style matches the Hohl 2024 ALMI / Sigar Li 2022 Toronto poster:
     - thick black polygon borders (`border_color`/`border_lw`)
     - sequential cmap chosen per category (default Reds family)
-    - small numeric polygon-ID labels (`show_ids=True`) — IDs only,
+    - small numeric polygon-ID labels (`show_ids=True`) -- IDs only,
       never neighbourhood names per the author 2026-05-07
     - title and colour-bar legend with proper spaces (no underscores)
     """
@@ -228,7 +228,7 @@ def render_choropleth(*, rate_col: str = "ASSAULT_RATE_2024",
             if hood_id is None or pd.isna(hood_id):
                 continue
             cx, cy = poly.mean(axis=0)
-            # bbox of this poly in km — used to scale font so labels stay inside
+            # bbox of this poly in km -- used to scale font so labels stay inside
             w = float(poly[:, 0].max() - poly[:, 0].min())
             h = float(poly[:, 1].max() - poly[:, 1].min())
             small = min(w, h)
@@ -270,10 +270,10 @@ def render_quad(category: str = "Homicides",
     """Hohl 2024 ALMI-style 4-panel quad for any TPS category.
 
     Panels (a-d):
-      a) Kernel density (incidents per sq km) — sequential
-      b) Per-100k rate from NeighbourhoodCrimeRates — sequential
-      c) Spatial clusters / outliers (LISA HH/LL/HL/LH) — diverging
-      d) Significant Gi* hot/cold spots — diverging
+      a) Kernel density (incidents per sq km) -- sequential
+      b) Per-100k rate from NeighbourhoodCrimeRates -- sequential
+      c) Spatial clusters / outliers (LISA HH/LL/HL/LH) -- diverging
+      d) Significant Gi* hot/cold spots -- diverging
     """
     import matplotlib.pyplot as plt
     from matplotlib.collections import PolyCollection
@@ -372,7 +372,7 @@ def render_quad(category: str = "Homicides",
             else getattr(tbl, "rows", [])
         for r in rows:
             try:
-                # quadrant cells look like "HH (high-high)" — keep "HH"
+                # quadrant cells look like "HH (high-high)" -- keep "HH"
                 hood_q[int(r[0])] = str(r[-1]).strip()[:2].upper()
             except (TypeError, ValueError, IndexError):
                 pass
@@ -478,7 +478,7 @@ def render_dbscan(category: str = "Assault",
 
     df = load_tps_dataset(category, nrows=sample_rows)
     df = df.dropna(subset=["LAT_WGS84", "LONG_WGS84"]).copy()
-    # Toronto bbox sanity filter — drops any rows accidentally at
+    # Toronto bbox sanity filter -- drops any rows accidentally at
     # (0,0), in another country, or with junk values.
     df = df[(df["LAT_WGS84"].between(43.55, 43.90))
             & (df["LONG_WGS84"].between(-79.65, -79.10))]
@@ -510,8 +510,8 @@ def render_dbscan(category: str = "Assault",
     n_noise = int(noise_mask.sum())
     _setup_axes(
         ax,
-        title=(f"Toronto {category} — DBSCAN (eps={eps_km}km, "
-                f"min={min_samples}) — {n_clusters} clusters, "
+        title=(f"Toronto {category} -- DBSCAN (eps={eps_km}km, "
+                f"min={min_samples}) -- {n_clusters} clusters, "
                 f"{n_noise:,} noise"))
     out = Path(outfile) if outfile else FIG_DIR / \
         f"map_dbscan_{category.lower()}.png"
@@ -533,7 +533,7 @@ def _draw_compass(ax, *, x_frac: float = 0.93, y_frac: float = 0.83,
     import matplotlib.patches as mpatches
     cx, cy = x_frac, y_frac
     # On a CW-rotated map, north on the page is rotated 17.5° CCW from
-    # straight up — i.e. arrow points slightly LEFT of vertical. But
+    # straight up -- i.e. arrow points slightly LEFT of vertical. But
     # the human-readable convention in the Hohl reference shows north
     # leaning slightly RIGHT (matching the 17.5° CW projection). We
     # follow that convention: arrow direction (dx, dy) using CW angle.
@@ -704,7 +704,7 @@ def render_satscan_panel(category: str = "Homicides",
                           fig_w: float = 11.5,
                           border_color: str = "#1a1a1a",
                           border_lw: float = 0.55) -> Path:
-    """Hohl 2024 ALMI "panel d" — Kulldorff-style space-time scan
+    """Hohl 2024 ALMI "panel d" -- Kulldorff-style space-time scan
     statistic with significant clusters as pink filled circles, red
     dots inside for sig. locations, yellow polygons for sig. wards,
     and an info-box (n_cases / expected / RR / p-value) on the right.
@@ -854,7 +854,7 @@ def render_satscan_panel(category: str = "Homicides",
                                   linewidth=border_lw + 0.2)
     ax.add_collection(pc_yellow)
 
-    # Tiny ward IDs (Hohl-style) — same adaptive sizing as choropleths
+    # Tiny ward IDs (Hohl-style) -- same adaptive sizing as choropleths
     for poly, attrs in zip(polys, poly_attrs, strict=False):
         hood_id = attrs.get("HOOD_ID") or attrs.get("AREA_ID")
         if hood_id is None or pd.isna(hood_id):
@@ -897,14 +897,14 @@ def render_satscan_panel(category: str = "Homicides",
         inside_time = (years >= t0) & (years <= t1)
         sel = inside_space & inside_time
         sig_loc_count += int(sel.sum())
-        # Pink halo — translucent so wards/dots show through, like Hohl
+        # Pink halo -- translucent so wards/dots show through, like Hohl
         ax.add_patch(Circle(c, r, facecolor="#f4b6c2",
                               edgecolor="#9a1d3a",
                               linewidth=1.0, alpha=0.32, zorder=2))
         # Red dots = significant locations
         ax.scatter(pt_x[sel], pt_y[sel], s=14, c="#d7191c",
                     edgecolor="#7a0000", linewidths=0.3, zorder=4)
-        # Cluster index — BIG blue numeral on top of everything
+        # Cluster index -- BIG blue numeral on top of everything
         ax.text(c[0], c[1], f"{k}", ha="center", va="center",
                   fontsize=26, fontweight="bold", color="#0d3a8a",
                   zorder=6,
@@ -938,8 +938,8 @@ def render_satscan_panel(category: str = "Homicides",
         )
         info.text(0.10, y_top - 0.012, body, va="top", ha="left",
                     family="monospace", fontsize=9.0)
-        # Leader line — from circle right-edge (in ax data coords) to
-        # card centre-left (in info axes coords) — gives the
+        # Leader line -- from circle right-edge (in ax data coords) to
+        # card centre-left (in info axes coords) -- gives the
         # "pulled-out" 3D-callout look like Hohl 2024
         con = ConnectionPatch(
             xyA=(c[0] + r * 0.95, c[1] + r * 0.5),

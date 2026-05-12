@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: If i ̸= j , then i → j if and only if fi j > 0. Clearly i → i since pii( 0) = 1, and it follows
+    Formula: If i ̸= j , then i -> j if and only if fi j > 0. Clearly i -> i since pii( 0) = 1, and it follows
 
     Parameters
     ----------

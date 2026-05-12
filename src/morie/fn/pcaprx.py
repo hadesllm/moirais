@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Principal Component Analysis with R-style verbose result."""
 
 from typing import Optional, Sequence, Union

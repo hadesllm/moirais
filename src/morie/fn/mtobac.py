@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BAC distribution in impaired driving."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Complex cepstrum using phase unwrapping."""
 import numpy as np
 from ._richresult import RichResult

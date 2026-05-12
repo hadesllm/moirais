@@ -40,7 +40,7 @@ def st_diff_equation(coords=None, times=None, data=None, *, n=30, diffusion=0.1)
 
 short = "stdea"
 alias = "st_diff_equation"
-quote = "A journey of a thousand miles begins with a single step. — Lao Tzu"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 st_diff_equation = st_diff_equation
 
 

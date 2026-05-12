@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Anchor explanations (rule-based local explanations).
 
 Finds a minimal set of feature conditions (an anchor) such that the

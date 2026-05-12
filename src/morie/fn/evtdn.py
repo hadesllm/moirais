@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kernel density estimate of event times."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "He who is brave is free. — Seneca"
+_QUOTE = "He who is brave is free. -- Seneca"
 
 
 def event_density(events, duration=1.0, bandwidth=0.1, **kwargs) -> DescriptiveResult:

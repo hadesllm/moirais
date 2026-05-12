@@ -2,7 +2,7 @@
 Publication-ready statistical visualizations for epidemiological analysis.
 
 Provides forest plots, funnel plots, survival curves, ROC curves, DAGs,
-diagnostic plots, and many more — all with a consistent theme system
+diagnostic plots, and many more -- all with a consistent theme system
 suitable for journal submission.
 """
 
@@ -885,7 +885,7 @@ def balance_plot(
 
 
 # ---------------------------------------------------------------------------
-# DAG (directed acyclic graph) — pure matplotlib, no graphviz
+# DAG (directed acyclic graph) -- pure matplotlib, no graphviz
 # ---------------------------------------------------------------------------
 
 
@@ -2310,7 +2310,7 @@ def caterpillar_plot(
     ax: plt.Axes | None = None,
 ) -> plt.Figure:
     """
-    Caterpillar plot — ranked effects with confidence intervals.
+    Caterpillar plot -- ranked effects with confidence intervals.
 
     Parameters
     ----------

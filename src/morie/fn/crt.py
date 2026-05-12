@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chinese Remainder Theorem solver."""
 
 import numpy as np
@@ -9,7 +9,7 @@ _QUOTE = "The belonging you seek is not behind you. It is ahead. -- Maz Kanata"
 
 
 def chinese_remainder(remainders, moduli, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Solve a system of simultaneous congruences via the Chinese Remainder Theorem.
 
     Given :math:`x \\equiv r_i \\pmod{m_i}` for pairwise coprime moduli,

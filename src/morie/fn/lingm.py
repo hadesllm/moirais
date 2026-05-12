@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LiNGAM: Linear Non-Gaussian Acyclic Model for causal discovery.
 
 LiNGAM identifies a unique causal ordering (not just an equivalence
@@ -58,7 +58,7 @@ def lingm(
     -------
     dict
         ``B`` (estimated mixing matrix), ``order`` (causal order,
-        index of root → leaf), ``W`` (unmixing matrix),
+        index of root -> leaf), ``W`` (unmixing matrix),
         ``method``, ``p``, ``n``.
 
     References

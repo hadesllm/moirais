@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Augmented Dickey-Fuller unit root test."""
 
 import numpy as np
@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def adf_test(y: np.ndarray, max_lag: int | None = None, cdf=None) -> DescriptiveResult:
-    """
+    r"""
     Augmented Dickey-Fuller test for a unit root.
 
     Tests H0: series has a unit root vs H1: stationary.

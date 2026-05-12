@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mixed-precision training: FP16 forward, FP32 master weights."""
 import numpy as np
 from ._richresult import RichResult

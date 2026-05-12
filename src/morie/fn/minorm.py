@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moran's I normal approximation p-value."""
 
 from ._containers import SpatialResult

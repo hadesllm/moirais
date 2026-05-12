@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Resource depletion model. 'I hunger.' -- Galactus"""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def depletion_model(
     *,
     model: str = "exponential",
 ) -> DescriptiveResult:
-    """Fit a resource depletion model and estimate time to exhaustion.
+    r"""Fit a resource depletion model and estimate time to exhaustion.
 
     Parameters
     ----------

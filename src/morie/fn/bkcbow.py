@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """CBOW: predict center word from averaged context embeddings."""
 import numpy as np
 from ._richresult import RichResult

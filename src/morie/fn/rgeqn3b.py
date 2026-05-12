@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cross-correlation via convolution: R_xy[m] = x[-n] conv y[n]."""
 import numpy as np
 from scipy import stats

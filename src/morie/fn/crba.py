@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cronbach's coefficient alpha with Feldt CI."""
 
 from __future__ import annotations

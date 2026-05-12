@@ -1,4 +1,4 @@
-"""Kronecker product.."""
+r"""Kronecker product.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch4_kronecker_product"]
 
 
 def kamath_ch4_kronecker_product(A, B):
-    """
+    r"""
     Kronecker product.
 
     Formula: W = A \otimes B = \begin{pmatrix} a_{11}B & \cdots & a_{1n}B \\ \vdots & \ddots & \vdots \\ a_{m1}B & \cdots & a_{mn}B \end{pmatrix}
@@ -27,7 +27,7 @@ def kamath_ch4_kronecker_product(A, B):
     References
     ----------
     Kamath et al (2024), Ch 4, Eq 4.6, p. 152
-    """
+    r"""
     A = np.atleast_1d(np.asarray(A, dtype=float))
     n = len(A)
     result = float(np.mean(A))

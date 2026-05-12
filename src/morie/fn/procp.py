@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Procrustes rotation for factor analysis or PCA loadings.
 
 Finds optimal orthogonal or oblique transformation to match a target matrix.

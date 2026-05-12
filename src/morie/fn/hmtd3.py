@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Twin delayed DDPG (TD3): two critics + delayed policy updates."""
 import numpy as np
 from ._richresult import RichResult

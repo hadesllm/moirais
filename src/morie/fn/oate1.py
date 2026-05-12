@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simple ATE by region (difference in means) for OTIS data."""
 
 from __future__ import annotations

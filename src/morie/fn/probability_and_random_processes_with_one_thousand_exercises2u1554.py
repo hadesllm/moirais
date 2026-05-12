@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] n( s) = Gπ( s) and limn→∞ Hn( sη) = H( sη)
+    Formula: [EQ] n( s) = Gπ( s) and limn->∞ Hn( sη) = H( sη)
 
     Parameters
     ----------

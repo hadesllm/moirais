@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Confusion matrix and classification metrics."""
 
 from __future__ import annotations

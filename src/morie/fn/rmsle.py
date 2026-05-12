@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RMS log spectral error."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Luminous beings are we, not this crude matter."
 
 
 def rms_log_error(S1, S2, **kwargs) -> DescriptiveResult:
-    """Compute the RMS log spectral error.
+    r"""Compute the RMS log spectral error.
 
     .. math::
 

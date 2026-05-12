@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 r"""Beam search decoding.
 
 Maintains multiple candidate hypotheses during sequence generation.

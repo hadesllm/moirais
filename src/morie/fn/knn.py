@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """k-Nearest Neighbors classifier (pure NumPy)."""
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ def knn_classify(
 ) -> dict[str, Any]:
     """k-Nearest Neighbors classifier using Euclidean distance.
 
-    Pure NumPy implementation — no sklearn required.
+    Pure NumPy implementation -- no sklearn required.
 
     Parameters
     ----------

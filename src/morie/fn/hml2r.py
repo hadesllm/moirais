@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """L2 regularization adds theta^2 penalty."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lotka-Volterra predator-prey model."""
 
 import numpy as np
@@ -15,7 +15,7 @@ def lotka_volterra(
     dt: float = 0.01,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Simulate the Lotka-Volterra predator-prey ODE system.
 
     .. math::

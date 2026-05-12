@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nested Dirichlet process: G_j ~ DP(alpha, G0), G0 ~ DP(gamma, H) for clustering."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Normal distribution quantile function (inverse CDF)."""
 
 from typing import Union

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EEG band power estimation (delta/theta/alpha/beta spectral integration)."""
 import numpy as np
 from ._richresult import RichResult

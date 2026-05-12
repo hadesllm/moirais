@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (b) Conversely, ifφ( t) = limn→∞ φ n( t) exists and is continuous at t = 0, then φ is the
+    Formula: (b) Conversely, ifφ( t) = limn->∞ φ n( t) exists and is continuous at t = 0, then φ is the
 
     Parameters
     ----------

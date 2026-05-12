@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] and |φ( t) r | → 0 as t → ±∞ . Hence |φ( t) |< 1 for t ̸= 0, and |φ( t) | → 0 as t → ±∞ , and
+    Formula: [EQ] and |φ( t) r | -> 0 as t -> ±∞ . Hence |φ( t) |< 1 for t ̸= 0, and |φ( t) | -> 0 as t -> ±∞ , and
 
     Parameters
     ----------

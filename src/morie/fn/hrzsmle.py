@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric MLE for binary-response single-index model (Klein-Spady)."""
 import numpy as np
 from ._richresult import RichResult

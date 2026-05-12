@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fst fixation index (Weir-Cockerham estimator)."""
 
 import numpy as np

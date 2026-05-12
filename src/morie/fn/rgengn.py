@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Electroneurogram (ENG) compound action potential model."""
 import numpy as np
 from ._richresult import RichResult

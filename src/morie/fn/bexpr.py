@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Boolean expression evaluator. 'Knowledge itself is power. -- Bacon'"""
 from __future__ import annotations
 

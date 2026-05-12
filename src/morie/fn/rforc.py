@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random forest classifier (pure NumPy, bootstrap + feature subset + dtree)."""
 
 from __future__ import annotations

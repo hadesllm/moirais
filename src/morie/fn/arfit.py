@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """
 AR(p) model fitting via Yule-Walker equations.
 
@@ -12,7 +12,7 @@ import numpy as np
 
 
 def arfit(y, p=1, demean=True):
-    """Fit AR(p) model via Yule-Walker method.
+    r"""Fit AR(p) model via Yule-Walker method.
 
     Parameters
     ----------
@@ -117,7 +117,7 @@ def arfit(y, p=1, demean=True):
 
 short = "arfit"
 alias = "ar_yulewalker"
-quote = "Knowing yourself is the beginning of all wisdom. — Aristotle"
+quote = "Knowing yourself is the beginning of all wisdom. -- Aristotle"
 __all__ = ["arfit"]
 
 

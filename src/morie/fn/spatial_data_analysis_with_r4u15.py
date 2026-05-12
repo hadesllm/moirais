@@ -11,7 +11,7 @@ def spatial_data_analysis_with_r_chapter_4_unnumbered_15(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: ˓→+datum=WGS84 +units=m")
+    Formula: ˓->+datum=WGS84 +units=m")
 
     Parameters
     ----------

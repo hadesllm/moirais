@@ -4,7 +4,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Life is really simple, but we insist on making it complicated. — Confucius"
+_QUOTE = "Life is really simple, but we insist on making it complicated. -- Confucius"
 
 
 def species_richness(samples, method: str = "chao1", **kwargs) -> DescriptiveResult:

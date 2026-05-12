@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hilbert transform amplitude envelope."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import SignalResult
 def hilbert_envelope_fn(x: np.ndarray) -> SignalResult:
     """Compute the Hilbert transform amplitude envelope.
 
-    'He who is brave is free. — Seneca' — Chirrut Imwe
+    'He who is brave is free. -- Seneca' -- Chirrut Imwe
     """
     from morie._detection import hilbert_envelope as _backend
 

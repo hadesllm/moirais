@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Draw a random sample from a geometric distribution."""
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ def rgeom(n: int, prob: float, seed: int = 42) -> np.ndarray:
     """
     Draw a random sample from a geometric distribution.
 
-    Mirrors R's ``rgeom(n, prob)`` — returns number of failures
+    Mirrors R's ``rgeom(n, prob)`` -- returns number of failures
     before first success.
 
     :param n: Number of observations to draw (> 0).

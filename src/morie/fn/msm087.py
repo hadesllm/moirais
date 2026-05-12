@@ -1,4 +1,4 @@
-"""Numbered display equation (7.1) from MVSML chapter 7.."""
+r"""Numbered display equation (7.1) from MVSML chapter 7.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_pt2_eq_7_1"]
 
 
 def mvsml_bayesian_regression_pt2_eq_7_1(a, scaled, inverse, chi, squared, From):
-    """
+    r"""
     Numbered display equation (7.1) from MVSML chapter 7.
 
     Formula: , and a scaled inverse chi-squared for \sigma2 \beta: From now on, this model will be referred to as BRR in this chapter in analogy to the Bayesian linear regression and the way that this is implemented in the BGLR R package. Similar to the genomic linear regression model, the posterior distribution of the parameter vector does not have a known form and a Gibbs sampler is used to explore this; for this reason, in the coming lines, the Gibbs sampling method proposed by Albert and Chib (1993) is described. To make it possible to derive the full conditional distributions, the parameter vector is augmented with a latent variable in the representation of model
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_pt2_eq_7_1(a, scaled, inverse, chi, squared, From)
     References
     ----------
     MVSML, Eq. (7.1) [Multivariate Statistical Machine Learnin [Pages 209-249] [2026-04-16].pdf]
-    """
+    r"""
     a = np.atleast_1d(np.asarray(a, dtype=float))
     n = len(a)
     result = float(np.mean(a))

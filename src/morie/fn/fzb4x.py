@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """b_4(x) coefficient in KDFE bias expansion."""
 import numpy as np
 from ._richresult import RichResult

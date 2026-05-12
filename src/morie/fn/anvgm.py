@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Anisotropic variogram model (Schabenberger & Gotway Ch 8)."""
 
 import numpy as np

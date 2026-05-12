@@ -2327,8 +2327,8 @@ def did_chaisemartin_dhaultfoeuille(
 ) -> DiDResult:
     r"""Heterogeneity-robust DiD (de Chaisemartin & D'Haultfoeuille, 2020).
 
-    Computes the instantaneous treatment effect for switchers—units
-    whose treatment status changes—using appropriate comparisons.
+    Computes the instantaneous treatment effect for switchers--units
+    whose treatment status changes--using appropriate comparisons.
 
     .. math::
 

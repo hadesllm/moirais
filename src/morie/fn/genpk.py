@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generator and parity-check matrix construction."""
 
 from __future__ import annotations

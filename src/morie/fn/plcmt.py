@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ranks, block frequencies, and placements (Gibbons Ch 2.11.3).
 
 Returns the rank-vector of Y observations among the combined

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Driver risk profile by age/gender."""
 
 from __future__ import annotations

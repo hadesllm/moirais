@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Geodesic equation solver (Runge-Kutta on curved spacetime)."""
 
 __all__ = ["geods"]
@@ -15,7 +15,7 @@ def geods(
     n_points: int = 500,
     h: float = 1e-5,
 ) -> dict:
-    """
+    r"""
     Solve the geodesic equation via numerical integration.
 
     .. math::

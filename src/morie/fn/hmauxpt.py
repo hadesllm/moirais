@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pretraining on auxiliary related task."""
 import numpy as np
 from ._richresult import RichResult

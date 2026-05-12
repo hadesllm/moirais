@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Orthogonal matching pursuit (OMP) for sparse representation."""
 import numpy as np
 from ._richresult import RichResult

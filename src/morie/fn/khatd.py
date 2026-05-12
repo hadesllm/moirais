@@ -10,7 +10,7 @@ def pareto_k_diagnostic(log_lik):
     """
     Pareto-k shape diagnostic for PSIS-LOO
 
-    Formula: k > 0.7 → unreliable importance weights
+    Formula: k > 0.7 -> unreliable importance weights
 
     Parameters
     ----------

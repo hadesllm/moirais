@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Planck distribution (blackbody radiation)."""
 
 __all__ = ["plank"]
@@ -13,7 +13,7 @@ def plank(
     c: float = 299792458.0,
     kB: float = 1.380649e-23,
 ) -> dict:
-    """
+    r"""
     Compute the Planck spectral radiance for blackbody radiation.
 
     .. math::

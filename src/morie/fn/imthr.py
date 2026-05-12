@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Image thresholding (Otsu / fixed). 'Time discovers truth. — Seneca'"""
+# morie.fn -- function file (hadesllm/morie)
+"""Image thresholding (Otsu / fixed). 'Time discovers truth. -- Seneca'"""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def threshold(image: np.ndarray, method: str = "otsu", value: float = 128.0) -> DescriptiveResult:
-    """
+    r"""
     Binarise a grayscale image using Otsu's method or a fixed threshold.
 
     Otsu's method minimises intra-class variance to find an optimal

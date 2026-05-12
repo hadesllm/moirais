@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Least absolute deviations regression. 'The unexamined statistic is not worth reporting. — adapted from Socrates'"""
+# morie.fn -- function file (hadesllm/morie)
+"""Least absolute deviations regression. 'The unexamined statistic is not worth reporting. -- adapted from Socrates'"""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 
 
 def lad_regression(X: np.ndarray, y: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Least Absolute Deviations (LAD / L1) regression via linear programming.
 
     Minimises :math:`\\sum_i |y_i - X_i \\beta|` which is more robust to

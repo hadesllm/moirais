@@ -9,7 +9,7 @@ def starn(
     *,
     order: int = 1,
 ) -> dict:
-    """
+    r"""
     Fit a spatio-temporal autoregressive (STAR) model.
 
     .. math::
@@ -19,7 +19,7 @@ def starn(
     where :math:`W` is the spatial weights matrix and :math:`p` is the
     spatial lag order.
 
-    :param data: Spatio-temporal data (T, n) — T time steps, n locations.
+    :param data: Spatio-temporal data (T, n) -- T time steps, n locations.
     :param weights: Spatial weights matrix (n, n), row-standardised.
     :param order: Spatial lag order *p*.
     :return: dict with ``coefficients``, ``residuals``, ``fitted``, ``aic``.

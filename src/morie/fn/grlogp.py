@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Predicted probability for binary logistic regression."""
 import numpy as np
 from ._richresult import RichResult

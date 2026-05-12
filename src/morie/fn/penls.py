@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Penalized regression (ridge / LASSO / elastic net) for markers."""
 from __future__ import annotations
 

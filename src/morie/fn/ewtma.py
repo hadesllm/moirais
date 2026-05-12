@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EWMA volatility (RiskMetrics 1996)."""
 from __future__ import annotations
 
@@ -32,7 +32,7 @@ def ewma_volatility(x, lambda_=0.94):
 
     References
     ----------
-    JP Morgan / Reuters (1996). RiskMetrics — Technical Document
+    JP Morgan / Reuters (1996). RiskMetrics -- Technical Document
     (4th ed.).
     """
     r = np.asarray(x, dtype=float).ravel()

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Scaled dot-product attention (Vaswani et al. 2017)."""
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ def _softmax(z, axis=-1):
 
 
 def scaled_dot_product_attention(Q, K=None, V=None, mask=None):
-    """Scaled dot-product attention.
+    r"""Scaled dot-product attention.
 
     .. math::
 

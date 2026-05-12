@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Separation condition for consistency: alternative to KL using test-based approach."""
 import numpy as np
 from scipy import stats

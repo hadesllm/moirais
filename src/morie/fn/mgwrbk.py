@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MGWR backfitting algorithm iteration."""
 
 import numpy as np

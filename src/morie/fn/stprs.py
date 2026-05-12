@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import SignalResult
 
-_QUOTE = "The whole is greater than the sum of its parts. — Aristotle"
+_QUOTE = "The whole is greater than the sum of its parts. -- Aristotle"
 
 
 def step_response(b, a, N: int = 100) -> SignalResult:

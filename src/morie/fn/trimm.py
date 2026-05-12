@@ -12,7 +12,7 @@ def trimmed_mean(
     *,
     trim: float = 0.1,
 ) -> ESRes:
-    """Trimmed mean — discards a fraction from each tail before averaging.
+    """Trimmed mean -- discards a fraction from each tail before averaging.
 
     Parameters
     ----------

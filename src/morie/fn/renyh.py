@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Renyi entropy of order alpha."""
 
 __all__ = ["renyh"]
@@ -8,7 +8,7 @@ from ._richresult import RichResult
 
 
 def renyh(pmf: np.ndarray, alpha: float) -> dict:
-    """
+    r"""
     Compute Renyi entropy of order alpha.
 
     .. math::

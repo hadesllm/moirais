@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Item discrimination index (D-statistic)."""
 
 from __future__ import annotations

@@ -4,14 +4,14 @@ Requires ``pip install morie[interactive]`` (textual >= 0.85).
 
 Provides a Claude Code-inspired TUI with multiple screens:
 
-- **ChatScreen** — streaming LLM chat with slash commands
-- **PipelineScreen** — run analysis modules with live progress
-- **DoctorScreen** — environment diagnostics
-- **DatasetScreen** — browse and profile datasets
-- **HelpScreen** — built-in documentation and command reference
-- **DebugScreen** — debug log viewer and diagnostics
-- **ReplScreen** — Python/R interactive REPL
-- **StatScreen** — run statistical analyses (70+ commands)
+- **ChatScreen** -- streaming LLM chat with slash commands
+- **PipelineScreen** -- run analysis modules with live progress
+- **DoctorScreen** -- environment diagnostics
+- **DatasetScreen** -- browse and profile datasets
+- **HelpScreen** -- built-in documentation and command reference
+- **DebugScreen** -- debug log viewer and diagnostics
+- **ReplScreen** -- Python/R interactive REPL
+- **StatScreen** -- run statistical analyses (70+ commands)
 
 Launch with::
 
@@ -36,7 +36,7 @@ import traceback
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Guarded import — textual is optional
+# Guarded import -- textual is optional
 # ---------------------------------------------------------------------------
 
 try:
@@ -72,7 +72,7 @@ def _check_textual() -> bool:
 
 if _TEXTUAL_AVAILABLE:
     # ==================================================================
-    # CopyableRichLog — RichLog with plain-text shadow buffer
+    # CopyableRichLog -- RichLog with plain-text shadow buffer
     # ==================================================================
 
     import re as _re
@@ -162,7 +162,7 @@ if _TEXTUAL_AVAILABLE:
             return "\n".join(self._text_buffer[start:])
 
     # ==================================================================
-    # ChatScreen — LLM agent with slash commands
+    # ChatScreen -- LLM agent with slash commands
     # ==================================================================
 
     # Suggestion lists for auto-completion across screens.
@@ -383,7 +383,7 @@ if _TEXTUAL_AVAILABLE:
     )
 
     class ChatScreen(Screen):
-        """Chat interface — same pattern as DatasetScreen/HelpScreen."""
+        """Chat interface -- same pattern as DatasetScreen/HelpScreen."""
 
         BINDINGS = [
             Binding("escape", "app.pop_screen", "Back"),
@@ -447,7 +447,7 @@ if _TEXTUAL_AVAILABLE:
             log = self.query_one("#chat-log", RichLog)
             log.can_focus = False
 
-            # Create session — wrapped in try/except so focus() always runs.
+            # Create session -- wrapped in try/except so focus() always runs.
             try:
                 from .chat import ChatSession
 
@@ -490,7 +490,7 @@ if _TEXTUAL_AVAILABLE:
                 if provider == "local":
                     log.write("[dim]No LLM available. Set moriefam env var or install ollama.[/dim]")
             except Exception:
-                pass  # Non-critical — don't break the screen.
+                pass  # Non-critical -- don't break the screen.
 
         def on_input_submitted(self, event: Input.Submitted) -> None:
             user_input = event.value.strip()
@@ -506,7 +506,7 @@ if _TEXTUAL_AVAILABLE:
                 log.write("")
                 return
 
-            # Slash commands — synchronous, no LLM needed.
+            # Slash commands -- synchronous, no LLM needed.
             if user_input.startswith("/"):
                 try:
                     response = self._session.send(user_input, stream=False)
@@ -523,7 +523,7 @@ if _TEXTUAL_AVAILABLE:
                 log.write("")
                 return
 
-            # Regular message — run LLM call in background thread.
+            # Regular message -- run LLM call in background thread.
             from .llm import detect_provider_and_model, pick_thinking_word
 
             _, _mod = detect_provider_and_model()
@@ -590,7 +590,7 @@ if _TEXTUAL_AVAILABLE:
             self.query_one("#chat-input", Input).focus()
 
     # ==================================================================
-    # PipelineScreen — run analysis modules
+    # PipelineScreen -- run analysis modules
     # ==================================================================
 
     class PipelineScreen(Screen):
@@ -697,7 +697,7 @@ if _TEXTUAL_AVAILABLE:
             log.write("\n[bold green]Pipeline complete.[/bold green]")
 
     # ==================================================================
-    # DoctorScreen — diagnostics
+    # DoctorScreen -- diagnostics
     # ==================================================================
 
     class DoctorScreen(Screen):
@@ -729,7 +729,7 @@ if _TEXTUAL_AVAILABLE:
 
             log = self.query_one("#doctor-log", RichLog)
             log.can_focus = False
-            log.write("[bold cyan]MORIE Doctor — Environment Diagnostics[/bold cyan]\n")
+            log.write("[bold cyan]MORIE Doctor -- Environment Diagnostics[/bold cyan]\n")
 
             results = run_checks()
             for check in results["checks"]:
@@ -748,7 +748,7 @@ if _TEXTUAL_AVAILABLE:
                 log.write("[red]Some required checks failed.[/red]")
 
     # ==================================================================
-    # DatasetScreen — browse and profile
+    # DatasetScreen -- browse and profile
     # ==================================================================
 
     class DatasetScreen(Screen):
@@ -830,7 +830,7 @@ if _TEXTUAL_AVAILABLE:
                     df = pd.read_csv(result.file_path)
                     self.app.loaded_df = df
                     self.app.loaded_df_name = Path(result.file_path).stem
-                    log.write("\n[dim]Dataset stored — Chat will know about this data.[/dim]")
+                    log.write("\n[dim]Dataset stored -- Chat will know about this data.[/dim]")
                 except Exception:
                     pass  # Non-critical: inspector worked, CSV re-read failed.
             except FileNotFoundError:
@@ -840,7 +840,7 @@ if _TEXTUAL_AVAILABLE:
             log.write("")
 
     # ==================================================================
-    # HelpScreen — documentation and command reference
+    # HelpScreen -- documentation and command reference
     # ==================================================================
 
     class HelpScreen(Screen):
@@ -868,25 +868,25 @@ if _TEXTUAL_AVAILABLE:
             log.can_focus = False
             log.write("[bold cyan]MORIE Help & Documentation[/bold cyan]\n")
             log.write("[bold]Available topics:[/bold]")
-            log.write("  [bold]overview[/bold]     — What is MORIE?")
-            log.write("  [bold]modules[/bold]      — List all 21 analysis modules")
-            log.write("  [bold]causal[/bold]       — Causal inference methods (IPW, AIPW)")
-            log.write("  [bold]did[/bold]          — Difference-in-differences")
-            log.write("  [bold]rdd[/bold]          — Regression discontinuity")
-            log.write("  [bold]iv[/bold]           — Instrumental variables")
-            log.write("  [bold]matching[/bold]     — Matching methods (PSM, CEM, entropy)")
-            log.write("  [bold]survival[/bold]     — Survival analysis (KM, Cox, AFT)")
-            log.write("  [bold]statistics[/bold]   — Hypothesis testing (t-test, ANOVA, chi-sq)")
-            log.write("  [bold]effects[/bold]      — Effect sizes (Cohen's d, OR, RR, NNT)")
-            log.write("  [bold]missing[/bold]      — Missing data (MICE, imputation)")
-            log.write("  [bold]sensitivity[/bold]  — Sensitivity analysis (E-value, Rosenbaum)")
-            log.write("  [bold]bootstrap[/bold]    — Bootstrap and resampling methods")
-            log.write("  [bold]weights[/bold]      — Survey weights (raking, GREG, post-strat)")
-            log.write("  [bold]reporting[/bold]    — Tables, APA formatting, export")
-            log.write("  [bold]chat[/bold]         — Chat REPL slash commands")
-            log.write("  [bold]keybindings[/bold]  — TUI keyboard shortcuts")
-            log.write("  [bold]cli[/bold]          — Command-line reference")
-            log.write("  [bold]version[/bold]      — Version and system info")
+            log.write("  [bold]overview[/bold]     -- What is MORIE?")
+            log.write("  [bold]modules[/bold]      -- List all 21 analysis modules")
+            log.write("  [bold]causal[/bold]       -- Causal inference methods (IPW, AIPW)")
+            log.write("  [bold]did[/bold]          -- Difference-in-differences")
+            log.write("  [bold]rdd[/bold]          -- Regression discontinuity")
+            log.write("  [bold]iv[/bold]           -- Instrumental variables")
+            log.write("  [bold]matching[/bold]     -- Matching methods (PSM, CEM, entropy)")
+            log.write("  [bold]survival[/bold]     -- Survival analysis (KM, Cox, AFT)")
+            log.write("  [bold]statistics[/bold]   -- Hypothesis testing (t-test, ANOVA, chi-sq)")
+            log.write("  [bold]effects[/bold]      -- Effect sizes (Cohen's d, OR, RR, NNT)")
+            log.write("  [bold]missing[/bold]      -- Missing data (MICE, imputation)")
+            log.write("  [bold]sensitivity[/bold]  -- Sensitivity analysis (E-value, Rosenbaum)")
+            log.write("  [bold]bootstrap[/bold]    -- Bootstrap and resampling methods")
+            log.write("  [bold]weights[/bold]      -- Survey weights (raking, GREG, post-strat)")
+            log.write("  [bold]reporting[/bold]    -- Tables, APA formatting, export")
+            log.write("  [bold]chat[/bold]         -- Chat REPL slash commands")
+            log.write("  [bold]keybindings[/bold]  -- TUI keyboard shortcuts")
+            log.write("  [bold]cli[/bold]          -- Command-line reference")
+            log.write("  [bold]version[/bold]      -- Version and system info")
             log.write("")
             log.write("[dim]Type a topic name below, or press Esc to go back.[/dim]")
             self.query_one("#help-input", Input).focus()
@@ -940,17 +940,17 @@ if _TEXTUAL_AVAILABLE:
                 log.write("[bold cyan]Causal Inference Methods[/bold cyan]")
                 log.write("")
                 log.write("[bold]Estimands:[/bold]")
-                log.write("  ATE  — Average Treatment Effect")
-                log.write("  ATT  — Average Treatment Effect on the Treated")
-                log.write("  ATC  — Average Treatment Effect on the Controls")
-                log.write("  GATE — Group Average Treatment Effect")
-                log.write("  CATE — Conditional Average Treatment Effect")
-                log.write("  LATE — Local Average Treatment Effect")
+                log.write("  ATE  -- Average Treatment Effect")
+                log.write("  ATT  -- Average Treatment Effect on the Treated")
+                log.write("  ATC  -- Average Treatment Effect on the Controls")
+                log.write("  GATE -- Group Average Treatment Effect")
+                log.write("  CATE -- Conditional Average Treatment Effect")
+                log.write("  LATE -- Local Average Treatment Effect")
                 log.write("")
                 log.write("[bold]Methods (morie.causal):[/bold]")
-                log.write("  estimate_ate()    — Hajek IPW estimator")
-                log.write("  estimate_aipw()   — Doubly-robust AIPW")
-                log.write("  estimate_irm()    — Interactive regression model (DML)")
+                log.write("  estimate_ate()    -- Hajek IPW estimator")
+                log.write("  estimate_aipw()   -- Doubly-robust AIPW")
+                log.write("  estimate_irm()    -- Interactive regression model (DML)")
                 log.write("")
                 log.write("[bold]DiD (morie.did):[/bold]  did_2x2, event_study, staggered_did, bacon_decomposition")
                 log.write("[bold]RDD (morie.rdd):[/bold]  sharp_rdd, fuzzy_rdd, bandwidth_cct, mccrary_test")
@@ -961,13 +961,13 @@ if _TEXTUAL_AVAILABLE:
                 log.write("[bold cyan]Survival Analysis (morie.survival)[/bold cyan]")
                 log.write("")
                 log.write("[bold]Non-parametric:[/bold]")
-                log.write("  kaplan_meier()       — KM estimator with CI")
-                log.write("  nelson_aalen()       — Cumulative hazard")
-                log.write("  logrank_test()       — Compare survival curves")
+                log.write("  kaplan_meier()       -- KM estimator with CI")
+                log.write("  nelson_aalen()       -- Cumulative hazard")
+                log.write("  logrank_test()       -- Compare survival curves")
                 log.write("")
                 log.write("[bold]Semi-parametric:[/bold]")
-                log.write("  cox_ph()             — Cox proportional hazards")
-                log.write("  schoenfeld_residuals() — PH assumption test")
+                log.write("  cox_ph()             -- Cox proportional hazards")
+                log.write("  schoenfeld_residuals() -- PH assumption test")
                 log.write("")
                 log.write("[bold]Parametric:[/bold]")
                 log.write("  weibull_model, lognormal_model, gompertz_model")
@@ -986,57 +986,57 @@ if _TEXTUAL_AVAILABLE:
             elif topic in ("effects", "effect_sizes"):
                 log.write("[bold cyan]Effect Sizes (morie.effect_sizes)[/bold cyan]")
                 log.write("")
-                log.write("  cohens_d, hedges_g, glass_delta — standardized mean diff")
-                log.write("  odds_ratio, risk_ratio, risk_difference — binary outcomes")
+                log.write("  cohens_d, hedges_g, glass_delta -- standardized mean diff")
+                log.write("  odds_ratio, risk_ratio, risk_difference -- binary outcomes")
                 log.write("  number_needed_to_treat, number_needed_to_harm")
-                log.write("  cramers_v, phi_coefficient — contingency")
-                log.write("  cliffs_delta, vargha_delaney_a — nonparametric")
-                log.write("  fixed_effects_meta, random_effects_meta — meta-analysis")
+                log.write("  cramers_v, phi_coefficient -- contingency")
+                log.write("  cliffs_delta, vargha_delaney_a -- nonparametric")
+                log.write("  fixed_effects_meta, random_effects_meta -- meta-analysis")
 
             elif topic == "chat":
                 log.write("[bold cyan]Chat Commands[/bold cyan]")
                 log.write("")
-                log.write("  /run <module>    — Run an analysis module")
-                log.write("  /list            — List available modules")
-                log.write("  /doctor          — Run diagnostics")
-                log.write("  /profile <csv>   — Profile a dataset")
-                log.write("  /inspect <path>  — Inspect output CSV(s)")
-                log.write("  /verify <path>   — Verify statistical outputs")
-                log.write("  /agent <name>    — Switch agent persona")
-                log.write("  /agents          — List available agents")
-                log.write("  /models          — List available LLM models")
-                log.write("  /model <alias>   — Switch model (e.g. /model dq)")
-                log.write("  /provider        — Show LLM provider")
-                log.write("  /history         — Show conversation history")
-                log.write("  /clear           — Clear history")
-                log.write("  /help            — Show all commands")
+                log.write("  /run <module>    -- Run an analysis module")
+                log.write("  /list            -- List available modules")
+                log.write("  /doctor          -- Run diagnostics")
+                log.write("  /profile <csv>   -- Profile a dataset")
+                log.write("  /inspect <path>  -- Inspect output CSV(s)")
+                log.write("  /verify <path>   -- Verify statistical outputs")
+                log.write("  /agent <name>    -- Switch agent persona")
+                log.write("  /agents          -- List available agents")
+                log.write("  /models          -- List available LLM models")
+                log.write("  /model <alias>   -- Switch model (e.g. /model dq)")
+                log.write("  /provider        -- Show LLM provider")
+                log.write("  /history         -- Show conversation history")
+                log.write("  /clear           -- Clear history")
+                log.write("  /help            -- Show all commands")
 
             elif topic == "keybindings":
                 log.write("[bold cyan]TUI Keybindings[/bold cyan]")
                 log.write("")
-                log.write("  [bold]c[/bold]   — Chat (LLM agent)")
-                log.write("  [bold]p[/bold]   — Pipeline (run modules)")
-                log.write("  [bold]d[/bold]   — Doctor (diagnostics)")
-                log.write("  [bold]i[/bold]   — Inspect (dataset browser)")
-                log.write("  [bold]h[/bold]   — Help (documentation)")
-                log.write("  [bold]g[/bold]   — Debug (log viewer)")
-                log.write("  [bold]a[/bold]   — Analysis (run stats)")
-                log.write("  [bold]e[/bold]   — REPL (Python/R console)")
-                log.write("  [bold]q[/bold]   — Quit")
-                log.write("  [bold]Esc[/bold] — Go back to previous screen")
+                log.write("  [bold]c[/bold]   -- Chat (LLM agent)")
+                log.write("  [bold]p[/bold]   -- Pipeline (run modules)")
+                log.write("  [bold]d[/bold]   -- Doctor (diagnostics)")
+                log.write("  [bold]i[/bold]   -- Inspect (dataset browser)")
+                log.write("  [bold]h[/bold]   -- Help (documentation)")
+                log.write("  [bold]g[/bold]   -- Debug (log viewer)")
+                log.write("  [bold]a[/bold]   -- Analysis (run stats)")
+                log.write("  [bold]e[/bold]   -- REPL (Python/R console)")
+                log.write("  [bold]q[/bold]   -- Quit")
+                log.write("  [bold]Esc[/bold] -- Go back to previous screen")
 
             elif topic == "cli":
                 log.write("[bold cyan]CLI Reference[/bold cyan]")
                 log.write("")
-                log.write("  morie                    — Launch TUI")
-                log.write("  morie chat               — Interactive chat REPL")
-                log.write("  morie pipeline --all -y  — Run all modules")
-                log.write("  morie doctor             — Diagnostics")
-                log.write("  morie inspect <path>     — Inspect CSV files")
-                log.write("  morie verify <path>      — Verify statistical outputs")
-                log.write("  morie selftest           — Smoke test all subsystems")
-                log.write("  morie data profile <csv> — Profile dataset (native)")
-                log.write("  morie install            — Self-bootstrap")
+                log.write("  morie                    -- Launch TUI")
+                log.write("  morie chat               -- Interactive chat REPL")
+                log.write("  morie pipeline --all -y  -- Run all modules")
+                log.write("  morie doctor             -- Diagnostics")
+                log.write("  morie inspect <path>     -- Inspect CSV files")
+                log.write("  morie verify <path>      -- Verify statistical outputs")
+                log.write("  morie selftest           -- Smoke test all subsystems")
+                log.write("  morie data profile <csv> -- Profile dataset (native)")
+                log.write("  morie install            -- Self-bootstrap")
 
             elif topic == "version":
                 import morie
@@ -1059,106 +1059,106 @@ if _TEXTUAL_AVAILABLE:
             elif topic in ("missing", "imputation"):
                 log.write("[bold cyan]Missing Data (morie.missing)[/bold cyan]")
                 log.write("")
-                log.write("  missing_profile()   — Summarize missingness")
-                log.write("  littles_mcar_test() — Test MCAR assumption")
-                log.write("  mice()              — Multiple imputation (MICE)")
-                log.write("  rubins_rules()      — Pool multiply imputed estimates")
-                log.write("  tipping_point_analysis() — Sensitivity to MNAR")
+                log.write("  missing_profile()   -- Summarize missingness")
+                log.write("  littles_mcar_test() -- Test MCAR assumption")
+                log.write("  mice()              -- Multiple imputation (MICE)")
+                log.write("  rubins_rules()      -- Pool multiply imputed estimates")
+                log.write("  tipping_point_analysis() -- Sensitivity to MNAR")
 
             elif topic in ("sensitivity", "sens"):
                 log.write("[bold cyan]Sensitivity Analysis (morie.sensitivity)[/bold cyan]")
                 log.write("")
-                log.write("  e_value_rr()           — E-value for unmeasured confounding")
-                log.write("  rosenbaum_bounds()     — Sensitivity to hidden bias")
-                log.write("  tipping_point_analysis() — Missing data sensitivity")
-                log.write("  omitted_variable_bias() — Cinelli-Hazlett OVB")
-                log.write("  specification_curve()  — Multi-specification robustness")
+                log.write("  e_value_rr()           -- E-value for unmeasured confounding")
+                log.write("  rosenbaum_bounds()     -- Sensitivity to hidden bias")
+                log.write("  tipping_point_analysis() -- Missing data sensitivity")
+                log.write("  omitted_variable_bias() -- Cinelli-Hazlett OVB")
+                log.write("  specification_curve()  -- Multi-specification robustness")
 
             elif topic in ("bootstrap", "resampling"):
                 log.write("[bold cyan]Bootstrap (morie.bootstrap_methods)[/bold cyan]")
                 log.write("")
-                log.write("  bootstrap()           — Nonparametric bootstrap (BCa, percentile)")
-                log.write("  wild_bootstrap()      — For heteroskedasticity")
-                log.write("  block_bootstrap()     — For time series/panel")
-                log.write("  jackknife()           — Delete-one jackknife")
-                log.write("  permutation_test()    — Two-sample permutation")
-                log.write("  cross_validate()      — K-fold CV")
+                log.write("  bootstrap()           -- Nonparametric bootstrap (BCa, percentile)")
+                log.write("  wild_bootstrap()      -- For heteroskedasticity")
+                log.write("  block_bootstrap()     -- For time series/panel")
+                log.write("  jackknife()           -- Delete-one jackknife")
+                log.write("  permutation_test()    -- Two-sample permutation")
+                log.write("  cross_validate()      -- K-fold CV")
 
             elif topic == "did":
                 log.write("[bold cyan]Difference-in-Differences (morie.did)[/bold cyan]")
                 log.write("")
-                log.write("  did_2x2()                — Classic 2x2 DiD estimator")
-                log.write("  did_doubly_robust()      — Doubly-robust DiD")
-                log.write("  did_continuous_treatment()— Continuous treatment DiD")
-                log.write("  bacon_decomposition()    — Goodman-Bacon decomposition")
-                log.write("  did_chaisemartin_dhaultfoeuille() — Staggered DiD")
-                log.write("  did_diagnostics()        — Pre-trends and parallel trends tests")
+                log.write("  did_2x2()                -- Classic 2x2 DiD estimator")
+                log.write("  did_doubly_robust()      -- Doubly-robust DiD")
+                log.write("  did_continuous_treatment()-- Continuous treatment DiD")
+                log.write("  bacon_decomposition()    -- Goodman-Bacon decomposition")
+                log.write("  did_chaisemartin_dhaultfoeuille() -- Staggered DiD")
+                log.write("  did_diagnostics()        -- Pre-trends and parallel trends tests")
 
             elif topic == "rdd":
                 log.write("[bold cyan]Regression Discontinuity (morie.rdd)[/bold cyan]")
                 log.write("")
-                log.write("  sharp_rdd()              — Sharp RDD with local polynomial")
-                log.write("  fuzzy_rdd()              — Fuzzy RDD (IV at cutoff)")
-                log.write("  donut_rdd()              — Donut-hole RDD")
-                log.write("  bandwidth_ik()           — Imbens-Kalyanaraman bandwidth")
-                log.write("  bandwidth_cct()          — Calonico-Cattaneo-Titiunik bandwidth")
-                log.write("  cattaneo_density_test()  — McCrary/Cattaneo manipulation test")
-                log.write("  covariate_balance_rdd()  — Covariate balance at cutoff")
+                log.write("  sharp_rdd()              -- Sharp RDD with local polynomial")
+                log.write("  fuzzy_rdd()              -- Fuzzy RDD (IV at cutoff)")
+                log.write("  donut_rdd()              -- Donut-hole RDD")
+                log.write("  bandwidth_ik()           -- Imbens-Kalyanaraman bandwidth")
+                log.write("  bandwidth_cct()          -- Calonico-Cattaneo-Titiunik bandwidth")
+                log.write("  cattaneo_density_test()  -- McCrary/Cattaneo manipulation test")
+                log.write("  covariate_balance_rdd()  -- Covariate balance at cutoff")
 
             elif topic == "iv":
                 log.write("[bold cyan]Instrumental Variables (morie.iv)[/bold cyan]")
                 log.write("")
-                log.write("  tsls()                   — Two-stage least squares")
-                log.write("  liml()                   — Limited information maximum likelihood")
-                log.write("  gmm_iv()                 — GMM estimator")
-                log.write("  cragg_donald_test()      — Weak instrument test")
-                log.write("  anderson_rubin_test()    — Anderson-Rubin weak-IV-robust test")
-                log.write("  durbin_wu_hausman()      — Endogeneity test")
-                log.write("  control_function()       — Control function approach")
+                log.write("  tsls()                   -- Two-stage least squares")
+                log.write("  liml()                   -- Limited information maximum likelihood")
+                log.write("  gmm_iv()                 -- GMM estimator")
+                log.write("  cragg_donald_test()      -- Weak instrument test")
+                log.write("  anderson_rubin_test()    -- Anderson-Rubin weak-IV-robust test")
+                log.write("  durbin_wu_hausman()      -- Endogeneity test")
+                log.write("  control_function()       -- Control function approach")
 
             elif topic == "matching":
                 log.write("[bold cyan]Matching Methods (morie.matching)[/bold cyan]")
                 log.write("")
-                log.write("  propensity_score_matching() — PSM (nearest-neighbor, caliper)")
-                log.write("  match_nearest_neighbor()    — NN matching on covariates")
-                log.write("  match_cem()                 — Coarsened exact matching")
-                log.write("  entropy_balance()           — Entropy balancing weights")
-                log.write("  doubly_robust_matching()    — DR matching estimator")
-                log.write("  balance_diagnostics()       — Post-matching balance checks")
-                log.write("  common_support()            — Common support diagnostics")
+                log.write("  propensity_score_matching() -- PSM (nearest-neighbor, caliper)")
+                log.write("  match_nearest_neighbor()    -- NN matching on covariates")
+                log.write("  match_cem()                 -- Coarsened exact matching")
+                log.write("  entropy_balance()           -- Entropy balancing weights")
+                log.write("  doubly_robust_matching()    -- DR matching estimator")
+                log.write("  balance_diagnostics()       -- Post-matching balance checks")
+                log.write("  common_support()            -- Common support diagnostics")
 
             elif topic in ("weights", "survey_weights"):
                 log.write("[bold cyan]Survey Weights (morie.weights)[/bold cyan]")
                 log.write("")
-                log.write("  design_weights()         — Base design weights")
-                log.write("  post_stratify()          — Post-stratification")
-                log.write("  rake()                   — Iterative proportional fitting")
-                log.write("  greg_calibrate()         — GREG calibration")
-                log.write("  replicate_weights()      — BRR/jackknife/bootstrap replicates")
-                log.write("  trimmed_weights()        — Weight trimming")
+                log.write("  design_weights()         -- Base design weights")
+                log.write("  post_stratify()          -- Post-stratification")
+                log.write("  rake()                   -- Iterative proportional fitting")
+                log.write("  greg_calibrate()         -- GREG calibration")
+                log.write("  replicate_weights()      -- BRR/jackknife/bootstrap replicates")
+                log.write("  trimmed_weights()        -- Weight trimming")
 
             elif topic == "reporting":
                 log.write("[bold cyan]Reporting & Export (morie.reporting, morie.export)[/bold cyan]")
                 log.write("")
                 log.write("[bold]Tables:[/bold]")
-                log.write("  table1()                 — Baseline characteristics table")
-                log.write("  regression_table()       — Regression results table")
-                log.write("  hazard_ratio_table()     — HR table for Cox models")
+                log.write("  table1()                 -- Baseline characteristics table")
+                log.write("  regression_table()       -- Regression results table")
+                log.write("  hazard_ratio_table()     -- HR table for Cox models")
                 log.write("[bold]Formatting:[/bold]")
-                log.write("  apa_format()             — APA-style formatting")
-                log.write("  strobe_checklist()       — STROBE compliance check")
-                log.write("  consort_checklist()      — CONSORT compliance check")
+                log.write("  apa_format()             -- APA-style formatting")
+                log.write("  strobe_checklist()       -- STROBE compliance check")
+                log.write("  consort_checklist()      -- CONSORT compliance check")
                 log.write("[bold]Export:[/bold]")
-                log.write("  export_latex()           — LaTeX output")
-                log.write("  export_html()            — HTML output")
-                log.write("  export_docx()            — Word document output")
+                log.write("  export_latex()           -- LaTeX output")
+                log.write("  export_html()            -- HTML output")
+                log.write("  export_docx()            -- Word document output")
 
             else:
                 log.write(f"[yellow]Unknown topic: {topic}[/yellow]")
                 log.write("Type 'overview' for available topics.")
 
     # ==================================================================
-    # SettingsScreen — edit morie.conf in-TUI (like nano/vim)
+    # SettingsScreen -- edit morie.conf in-TUI (like nano/vim)
     # ==================================================================
 
     class SettingsScreen(Screen):
@@ -1193,9 +1193,9 @@ if _TEXTUAL_AVAILABLE:
             return pkg_conf
 
         def compose(self) -> ComposeResult:
-            yield Static("[bold]morie.conf[/bold] — ctrl+s Save | esc Back", id="settings-header")
+            yield Static("[bold]morie.conf[/bold] -- ctrl+s Save | esc Back", id="settings-header")
             conf = self._config_path()
-            text = conf.read_text() if conf.exists() else "# morie.conf — no config found\n"
+            text = conf.read_text() if conf.exists() else "# morie.conf -- no config found\n"
             yield TextArea(text, id="settings-editor", language="toml", show_line_numbers=True)
             yield Static(
                 "[dim]Edit settings, then ctrl+s to save. Changes apply on next TUI restart.[/dim]",
@@ -1210,7 +1210,7 @@ if _TEXTUAL_AVAILABLE:
             footer.update(f"[bold green]Saved to {conf}[/bold green]")
 
     # ==================================================================
-    # DebugScreen — log viewer and diagnostics
+    # DebugScreen -- log viewer and diagnostics
     # ==================================================================
 
     class DebugScreen(Screen):
@@ -1318,7 +1318,7 @@ if _TEXTUAL_AVAILABLE:
             log.write("[dim]Press 's' for selftest, 'r' to refresh.[/dim]")
 
     # ==================================================================
-    # ReplScreen — Python/R/Shell interactive console
+    # ReplScreen -- Python/R/Shell interactive console
     # ==================================================================
 
     class ReplScreen(Screen):
@@ -1347,9 +1347,9 @@ if _TEXTUAL_AVAILABLE:
         # R-like syntax patterns for auto-detection
         # Only patterns that are UNAMBIGUOUS R (not valid Python syntax)
         _R_PATTERNS = {
-            "<-",  # R assignment — not valid Python
+            "<-",  # R assignment -- not valid Python
             "%>%",
-            "%in%",  # R pipe/membership — not valid Python
+            "%in%",  # R pipe/membership -- not valid Python
             "library(",
             "require(",  # R-specific
             "data.frame(",  # R-specific (Python: pd.DataFrame)
@@ -1494,7 +1494,7 @@ if _TEXTUAL_AVAILABLE:
                 f"Auto-detects language | "
                 f"/python /r /shell /auto /polyglot /reset | Up/Down history[/dim]"
             )
-            log.write("[dim]Prefix with ! for shell, R> for R — or just type and let auto-detect handle it[/dim]")
+            log.write("[dim]Prefix with ! for shell, R> for R -- or just type and let auto-detect handle it[/dim]")
             log.write("[dim]Commands: /list /run /help /history | load('cpads'), head(), cols(), summary()[/dim]")
             log.write("[dim]Stats: ttest('col'), corr('c1','c2'), evalue(rr) | help_repl() for 1249 commands[/dim]")
             log.write("")
@@ -1689,7 +1689,7 @@ if _TEXTUAL_AVAILABLE:
                         for d in datasets:
                             tag = f" ({d['rows']} rows)" if d.get("rows") else ""
                             cached = " [cached]" if d.get("cached") else ""
-                            print(f"    load('{d['key']}')  — {d['name']}{tag}{cached}")
+                            print(f"    load('{d['key']}')  -- {d['name']}{tag}{cached}")
                     except Exception as e:
                         print(f"    (error listing: {e})")
                     return None
@@ -1699,7 +1699,7 @@ if _TEXTUAL_AVAILABLE:
                     var_name = path_or_name.replace("-", "_").replace(" ", "_").lower()
                     ns[var_name] = df
                     ns["df"] = df
-                    print(f"Loaded {path_or_name}: {df.shape[0]} rows x {df.shape[1]} cols → '{var_name}' and 'df'")
+                    print(f"Loaded {path_or_name}: {df.shape[0]} rows x {df.shape[1]} cols -> '{var_name}' and 'df'")
                     return df
                 except (KeyError, FileNotFoundError):
                     pass
@@ -1718,7 +1718,7 @@ if _TEXTUAL_AVAILABLE:
                         name = p.stem.replace("-", "_").replace(" ", "_")
                         ns[name] = df
                         ns["df"] = df
-                        print(f"Loaded {p.name}: {df.shape[0]} rows x {df.shape[1]} cols → '{name}' and 'df'")
+                        print(f"Loaded {p.name}: {df.shape[0]} rows x {df.shape[1]} cols -> '{name}' and 'df'")
                         return df
                 print(f"Not found: {path_or_name}")
                 print("  Use load() with no args to see available datasets")
@@ -1876,7 +1876,7 @@ if _TEXTUAL_AVAILABLE:
                 """Show all available REPL helper functions."""
                 sections = {
                     "Data Loading & I/O": [
-                        ("load(path)", "Load CSV/CPADS → 'df'"),
+                        ("load(path)", "Load CSV/CPADS -> 'df'"),
                         ("save(path)", "Save to .csv/.xlsx/.json/.py/.r/.qmd/.md/.html/.tex"),
                         ("export(path, fmt)", "Export analysis bundle"),
                     ],
@@ -1975,7 +1975,7 @@ if _TEXTUAL_AVAILABLE:
                         ("help_repl()", "This help"),
                     ],
                 }
-                print("  MORIE REPL — 85+ Helper Functions:")
+                print("  MORIE REPL -- 85+ Helper Functions:")
                 print()
                 for section, helpers in sections.items():
                     print(f"  [{section}]")
@@ -2043,7 +2043,7 @@ if _TEXTUAL_AVAILABLE:
                     return
                 vc = data[col].value_counts().head(n)
                 total = len(data)
-                print(f"  {col} — top {min(n, len(vc))} values:")
+                print(f"  {col} -- top {min(n, len(vc))} values:")
                 for val, count in vc.items():
                     pct = count / total * 100
                     bar = "#" * int(pct / 2)
@@ -2066,7 +2066,7 @@ if _TEXTUAL_AVAILABLE:
                 else:
                     result = data[condition]
                 ns["filtered"] = result
-                print(f"  Filtered: {len(result)}/{len(data)} rows → 'filtered'")
+                print(f"  Filtered: {len(result)}/{len(data)} rows -> 'filtered'")
                 return result
 
             def _select(*columns, data=None):
@@ -2078,7 +2078,7 @@ if _TEXTUAL_AVAILABLE:
                     return
                 result = data[list(columns)]
                 ns["selected"] = result
-                print(f"  Selected {len(columns)} cols, {len(result)} rows → 'selected'")
+                print(f"  Selected {len(columns)} cols, {len(result)} rows -> 'selected'")
                 return result
 
             def _rename(old=None, new=None, data=None):
@@ -2093,7 +2093,7 @@ if _TEXTUAL_AVAILABLE:
                     return
                 data = data.rename(columns={old: new})
                 ns["df"] = data
-                print(f"  Renamed '{old}' → '{new}'")
+                print(f"  Renamed '{old}' -> '{new}'")
                 return data
 
             def _dropna(col=None, data=None):
@@ -2315,7 +2315,7 @@ if _TEXTUAL_AVAILABLE:
                 print(f"  BH correction ({r.n_tests} tests, {r.n_rejected} rejected):")
                 for i, (o, a, rej) in enumerate(zip(r.original, r.adjusted, r.rejected)):
                     status = "REJECT" if rej else "retain"
-                    print(f"    [{i + 1}] p={o:.4f} → adjusted={a:.4f} ({status})")
+                    print(f"    [{i + 1}] p={o:.4f} -> adjusted={a:.4f} ({status})")
                 return r
 
             def _power(d=None, n=None, alpha=0.05):
@@ -2378,7 +2378,7 @@ if _TEXTUAL_AVAILABLE:
                 print(f"  Propensity scores: treatment={treatment}")
                 print(f"  Covariates: {', '.join(covariates)}")
                 print(f"  Mean={scores.mean():.4f}, Range=[{scores.min():.4f}, {scores.max():.4f}]")
-                print("  → stored in 'ps'")
+                print("  -> stored in 'ps'")
                 return scores
 
             def _ipw(treatment=None, data=None):
@@ -2399,7 +2399,7 @@ if _TEXTUAL_AVAILABLE:
                 ess = (w.sum() ** 2) / (w**2).sum()
                 print(f"  IPW weights: treatment={treatment}")
                 print(f"  n={len(w)}, mean={w.mean():.4f}, ESS={ess:.1f}")
-                print("  → stored in 'ipw_weights'")
+                print("  -> stored in 'ipw_weights'")
                 return w
 
             def _ebac(drinks=None, weight_lbs=None, hours=None, gender="male"):
@@ -2460,7 +2460,7 @@ if _TEXTUAL_AVAILABLE:
                 """R-like summary. Usage: summary(), summary('col'), or summary(df)."""
                 import pandas as _pd
 
-                # If col is a DataFrame, user called summary(df) — treat as data arg
+                # If col is a DataFrame, user called summary(df) -- treat as data arg
                 if isinstance(col, _pd.DataFrame):
                     data = col
                     col = None
@@ -3104,7 +3104,7 @@ if _TEXTUAL_AVAILABLE:
                 log.write("[green]R: persistent session started[/green]")
             except FileNotFoundError:
                 self._r_proc = None
-                log.write("[yellow]R: not found — /r mode will use one-shot Rscript[/yellow]")
+                log.write("[yellow]R: not found -- /r mode will use one-shot Rscript[/yellow]")
 
         def _update_mode_indicator(self, detected: str = "") -> None:
             """Update the mode label below the body."""
@@ -3239,7 +3239,7 @@ if _TEXTUAL_AVAILABLE:
                 return
             if user_code == "/auto":
                 self._auto_detect = True
-                log.write("[cyan]Auto-detect mode enabled — language detected per command[/cyan]")
+                log.write("[cyan]Auto-detect mode enabled -- language detected per command[/cyan]")
                 self._update_mode_indicator()
                 return
             if user_code == "/reset":
@@ -3260,7 +3260,7 @@ if _TEXTUAL_AVAILABLE:
                     log.write("[bold cyan]Available datasets:[/bold cyan]")
                     for d in datasets:
                         tag = f" ({d['rows']} rows)" if d.get("rows") else ""
-                        log.write(f"  load('{d['key']}'){tag} — {d['name']}")
+                        log.write(f"  load('{d['key']}'){tag} -- {d['name']}")
                 except Exception as e:
                     log.write(f"[red]Error listing datasets: {e}[/red]")
                 return
@@ -3277,7 +3277,7 @@ if _TEXTUAL_AVAILABLE:
                     log.write(f"[red]Error: {e}[/red]")
                 return
             if user_code == "/help":
-                log.write("[bold cyan]MORIE REPL — Commands:[/bold cyan]")
+                log.write("[bold cyan]MORIE REPL -- Commands:[/bold cyan]")
                 log.write("[bold]Mode:[/bold] /python /r /shell /auto /polyglot")
                 log.write("[bold]Info:[/bold] /list /run /help /history /reset")
                 log.write("[bold]Data:[/bold] load('cpads'), head(), cols(), summary(), describe()")
@@ -3403,7 +3403,7 @@ if _TEXTUAL_AVAILABLE:
             if self._r_proc:
                 self._r_proc.terminate()
                 self._start_r_process(log)
-            log.write("[cyan]Console reset — all modes reinitialized[/cyan]")
+            log.write("[cyan]Console reset -- all modes reinitialized[/cyan]")
             self._update_mode_indicator()
 
         async def _ask_llm(self, query: str, model: str | None = None) -> None:
@@ -3445,7 +3445,7 @@ if _TEXTUAL_AVAILABLE:
                 log.write(f"[red]LLM error: {exc}[/red]")
 
         def _eval_python(self, log: RichLog, code: str) -> None:
-            """Execute Python — uses exec() for multiline, push() for single."""
+            """Execute Python -- uses exec() for multiline, push() for single."""
             first_line = code.split("\n", 1)[0]
             log.write(f"[bold green][P][/bold green] {first_line}")
             if "\n" in code:
@@ -3495,7 +3495,7 @@ if _TEXTUAL_AVAILABLE:
                 sys.stderr = old_stderr
 
         def _eval_r(self, log: RichLog, code: str) -> None:
-            """Execute R code — persistent subprocess if available, fallback to one-shot."""
+            """Execute R code -- persistent subprocess if available, fallback to one-shot."""
             log.write(f"[bold blue][R][/bold blue] {code}")
 
             if self._r_proc and self._r_proc.poll() is None:
@@ -3584,7 +3584,7 @@ if _TEXTUAL_AVAILABLE:
                     val_lines: list[str] = []
                     while True:
                         raw_line = self._r_proc.stdout.readline()
-                        if not raw_line:  # actual EOF — process died
+                        if not raw_line:  # actual EOF -- process died
                             break
                         line = raw_line.rstrip("\n")
                         if f"{sentinel2}_END" in line:
@@ -3619,9 +3619,9 @@ if _TEXTUAL_AVAILABLE:
                             self._py_console_ns[var_name] = float(val_str)
                         except ValueError:
                             self._py_console_ns[var_name] = val_str
-                    log.write(f"[dim][polyglot] {var_name} → Python[/dim]")
+                    log.write(f"[dim][polyglot] {var_name} -> Python[/dim]")
                 except Exception:
-                    pass  # Best-effort — don't break the REPL
+                    pass  # Best-effort -- don't break the REPL
 
         def _bridge_python_to_r(self, log: RichLog, code: str) -> None:
             """Extract Python assignments and inject into R session."""
@@ -3689,7 +3689,7 @@ if _TEXTUAL_AVAILABLE:
                         if not raw_line or f"{sentinel3}_END" in raw_line:
                             break
 
-                    log.write(f"[dim][polyglot] {var_name} → R[/dim]")
+                    log.write(f"[dim][polyglot] {var_name} -> R[/dim]")
                 except Exception:
                     pass
 
@@ -3709,7 +3709,7 @@ if _TEXTUAL_AVAILABLE:
                             self._py_console_ns[var_name] = float(val)
                         except ValueError:
                             self._py_console_ns[var_name] = val
-                    log.write(f"[dim][polyglot] {var_name} → Python[/dim]")
+                    log.write(f"[dim][polyglot] {var_name} -> Python[/dim]")
                     # Also bridge to R if available
                     if self._r_proc and self._r_proc.poll() is None:
                         py_val = self._py_console_ns[var_name]
@@ -3725,7 +3725,7 @@ if _TEXTUAL_AVAILABLE:
                             raw = self._r_proc.stdout.readline()
                             if not raw or f"{sentinel}_END" in raw:
                                 break
-                        log.write(f"[dim][polyglot] {var_name} → R[/dim]")
+                        log.write(f"[dim][polyglot] {var_name} -> R[/dim]")
                 except Exception:
                     pass
 
@@ -3769,7 +3769,7 @@ if _TEXTUAL_AVAILABLE:
                 self._r_proc.terminate()
 
     # ==================================================================
-    # StatScreen — run statistical analyses (48 commands)
+    # StatScreen -- run statistical analyses (48 commands)
     # ==================================================================
 
     class StatScreen(Screen):
@@ -3797,124 +3797,124 @@ if _TEXTUAL_AVAILABLE:
 
         def _show_help(self, log: RichLog) -> None:
             """Display help text for analysis commands."""
-            log.write("\n[bold cyan]MORIE Analysis Console — Commands:[/bold cyan]")
+            log.write("\n[bold cyan]MORIE Analysis Console -- Commands:[/bold cyan]")
             log.write("")
             log.write("[bold]Data:[/bold]")
-            log.write("  [bold]describe[/bold] <csv>                — Descriptive statistics")
-            log.write("  [bold]profile[/bold] <csv>                 — Full dataset profile")
-            log.write("  [bold]missing[/bold] <csv>                 — Missing data analysis")
-            log.write("  [bold]head[/bold] <csv> [n]                — First n rows (default 10)")
-            log.write("  [bold]columns[/bold] <csv>                 — List columns and types")
+            log.write("  [bold]describe[/bold] <csv>                -- Descriptive statistics")
+            log.write("  [bold]profile[/bold] <csv>                 -- Full dataset profile")
+            log.write("  [bold]missing[/bold] <csv>                 -- Missing data analysis")
+            log.write("  [bold]head[/bold] <csv> [n]                -- First n rows (default 10)")
+            log.write("  [bold]columns[/bold] <csv>                 -- List columns and types")
             log.write("")
             log.write("[bold]Statistical Tests:[/bold]")
-            log.write("  [bold]ttest[/bold] <csv> <col> [mu]        — One-sample t-test")
-            log.write("  [bold]ttest2[/bold] <csv> <col> <group>    — Two-sample t-test (Welch)")
-            log.write("  [bold]paired[/bold] <csv> <col1> <col2>    — Paired t-test")
-            log.write("  [bold]anova[/bold] <csv> <col> <group>     — One-way ANOVA")
-            log.write("  [bold]chi2[/bold] <csv> <col1> <col2>      — Chi-square independence")
-            log.write("  [bold]fisher[/bold] <csv> <col1> <col2>    — Fisher exact test (2x2)")
-            log.write("  [bold]corr[/bold] <csv> <col1> <col2>      — Pearson correlation")
-            log.write("  [bold]ks[/bold] <csv> <col>                — Kolmogorov-Smirnov normality")
-            log.write("  [bold]shapiro[/bold] <csv> <col>           — Shapiro-Wilk normality")
-            log.write("  [bold]wilcoxon[/bold] <csv> <col1> <col2>  — Wilcoxon signed-rank test")
-            log.write("  [bold]levene[/bold] <csv> <col> <group>    — Levene variance equality test")
-            log.write("  [bold]normality[/bold] <csv> <col>         — Normality battery")
-            log.write("  [bold]mannwhitney[/bold] <csv> <col> <grp> — Mann-Whitney U test")
+            log.write("  [bold]ttest[/bold] <csv> <col> [mu]        -- One-sample t-test")
+            log.write("  [bold]ttest2[/bold] <csv> <col> <group>    -- Two-sample t-test (Welch)")
+            log.write("  [bold]paired[/bold] <csv> <col1> <col2>    -- Paired t-test")
+            log.write("  [bold]anova[/bold] <csv> <col> <group>     -- One-way ANOVA")
+            log.write("  [bold]chi2[/bold] <csv> <col1> <col2>      -- Chi-square independence")
+            log.write("  [bold]fisher[/bold] <csv> <col1> <col2>    -- Fisher exact test (2x2)")
+            log.write("  [bold]corr[/bold] <csv> <col1> <col2>      -- Pearson correlation")
+            log.write("  [bold]ks[/bold] <csv> <col>                -- Kolmogorov-Smirnov normality")
+            log.write("  [bold]shapiro[/bold] <csv> <col>           -- Shapiro-Wilk normality")
+            log.write("  [bold]wilcoxon[/bold] <csv> <col1> <col2>  -- Wilcoxon signed-rank test")
+            log.write("  [bold]levene[/bold] <csv> <col> <group>    -- Levene variance equality test")
+            log.write("  [bold]normality[/bold] <csv> <col>         -- Normality battery")
+            log.write("  [bold]mannwhitney[/bold] <csv> <col> <grp> -- Mann-Whitney U test")
             log.write("")
             log.write("[bold]Causal Inference:[/bold]")
-            log.write("  [bold]propensity[/bold] <csv> <trt> <covs> — Propensity scores")
-            log.write("  [bold]ate[/bold] <csv> <outcome> <trt>     — Average treatment effect")
-            log.write("  [bold]ipw[/bold] <csv> <outcome> <trt>     — IPW-weighted estimate")
-            log.write("  [bold]aipw[/bold] <csv> <outcome> <trt> <covs> — Doubly-robust AIPW")
-            log.write("  [bold]att[/bold] <csv> <outcome> <trt> <covs>  — ATT via Hajek IPW")
-            log.write("  [bold]atc[/bold] <csv> <outcome> <trt> <covs>  — ATC via Hajek IPW")
-            log.write("  [bold]cate[/bold] <csv> <outcome> <trt> <covs> — Conditional treatment effects")
-            log.write("  [bold]gate[/bold] <csv> <outcome> <trt> <group> <covs> — Group treatment effects")
-            log.write("  [bold]late[/bold] <csv> <outcome> <trt> <iv> [covs] — Local average treatment effect")
-            log.write("  [bold]irm[/bold] <csv> <outcome> <trt> <covs> — DoubleML interactive regression")
-            log.write("  [bold]dml[/bold] <csv> <outcome> <trt> <covs> — DoubleML PLR (RF)")
-            log.write("  [bold]plr[/bold] <csv> <outcome> <trt> <covs> — PLR via DoubleML")
-            log.write("  [bold]pliv[/bold] <csv> <outcome> <trt> <iv> <covs> — PLIV via DoubleML")
+            log.write("  [bold]propensity[/bold] <csv> <trt> <covs> -- Propensity scores")
+            log.write("  [bold]ate[/bold] <csv> <outcome> <trt>     -- Average treatment effect")
+            log.write("  [bold]ipw[/bold] <csv> <outcome> <trt>     -- IPW-weighted estimate")
+            log.write("  [bold]aipw[/bold] <csv> <outcome> <trt> <covs> -- Doubly-robust AIPW")
+            log.write("  [bold]att[/bold] <csv> <outcome> <trt> <covs>  -- ATT via Hajek IPW")
+            log.write("  [bold]atc[/bold] <csv> <outcome> <trt> <covs>  -- ATC via Hajek IPW")
+            log.write("  [bold]cate[/bold] <csv> <outcome> <trt> <covs> -- Conditional treatment effects")
+            log.write("  [bold]gate[/bold] <csv> <outcome> <trt> <group> <covs> -- Group treatment effects")
+            log.write("  [bold]late[/bold] <csv> <outcome> <trt> <iv> [covs] -- Local average treatment effect")
+            log.write("  [bold]irm[/bold] <csv> <outcome> <trt> <covs> -- DoubleML interactive regression")
+            log.write("  [bold]dml[/bold] <csv> <outcome> <trt> <covs> -- DoubleML PLR (RF)")
+            log.write("  [bold]plr[/bold] <csv> <outcome> <trt> <covs> -- PLR via DoubleML")
+            log.write("  [bold]pliv[/bold] <csv> <outcome> <trt> <iv> <covs> -- PLIV via DoubleML")
             log.write("")
             log.write("[bold]Effect Sizes & Sensitivity:[/bold]")
-            log.write("  [bold]evalue[/bold] <rr> [ci_lower]        — E-value for confounding")
-            log.write("  [bold]cohens_d[/bold] <csv> <col> <group>  — Cohen's d effect size")
-            log.write("  [bold]power[/bold] <d> <n> [alpha]          — Power analysis")
+            log.write("  [bold]evalue[/bold] <rr> [ci_lower]        -- E-value for confounding")
+            log.write("  [bold]cohens_d[/bold] <csv> <col> <group>  -- Cohen's d effect size")
+            log.write("  [bold]power[/bold] <d> <n> [alpha]          -- Power analysis")
             log.write("")
             log.write("[bold]Resampling:[/bold]")
-            log.write("  [bold]bootstrap[/bold] <csv> <col>          — Bootstrap CI for mean")
-            log.write("  [bold]bh[/bold] <p1,p2,...>                 — Benjamini-Hochberg correction")
+            log.write("  [bold]bootstrap[/bold] <csv> <col>          -- Bootstrap CI for mean")
+            log.write("  [bold]bh[/bold] <p1,p2,...>                 -- Benjamini-Hochberg correction")
             log.write("")
             log.write("[bold]Survival Analysis:[/bold]")
-            log.write("  [bold]kaplan_meier[/bold] <csv> <time> <event> — Kaplan-Meier survival curve")
-            log.write("  [bold]cox[/bold] <csv> <time> <event> <covs>  — Cox proportional hazards")
-            log.write("  [bold]logrank[/bold] <csv> <time> <event> <grp>— Log-rank test")
+            log.write("  [bold]kaplan_meier[/bold] <csv> <time> <event> -- Kaplan-Meier survival curve")
+            log.write("  [bold]cox[/bold] <csv> <time> <event> <covs>  -- Cox proportional hazards")
+            log.write("  [bold]logrank[/bold] <csv> <time> <event> <grp>-- Log-rank test")
             log.write("")
             log.write("[bold]Causal Inference (DiD, RDD, IV):[/bold]")
-            log.write("  [bold]did[/bold] <csv> <outcome> <treat> <post>— Difference-in-differences")
-            log.write("  [bold]rdd[/bold] <csv> <outcome> <running> [c] — Sharp RDD")
-            log.write("  [bold]tsls[/bold] <csv> <outcome> <endog> <iv> — Two-stage least squares")
+            log.write("  [bold]did[/bold] <csv> <outcome> <treat> <post>-- Difference-in-differences")
+            log.write("  [bold]rdd[/bold] <csv> <outcome> <running> [c] -- Sharp RDD")
+            log.write("  [bold]tsls[/bold] <csv> <outcome> <endog> <iv> -- Two-stage least squares")
             log.write("")
             log.write("[bold]Matching & Missing Data:[/bold]")
-            log.write("  [bold]match[/bold] <csv> <treat> <covs>       — Propensity score matching")
-            log.write("  [bold]ps_nn[/bold] <csv> <treat> <outcome> <covs> — PS nearest-neighbour matching")
-            log.write("  [bold]ps_subclass[/bold] <csv> <treat> <outcome> <covs> — PS subclassification")
-            log.write("  [bold]balance[/bold] <csv> <treat> <covs> [weights] — Balance diagnostics")
-            log.write("  [bold]overlap[/bold] <csv> <treat> <covs>     — Positivity / overlap diagnostics")
-            log.write("  [bold]mcar[/bold] <csv>                       — Little's MCAR test")
-            log.write("  [bold]impute[/bold] <csv> [m]                 — MICE imputation")
+            log.write("  [bold]match[/bold] <csv> <treat> <covs>       -- Propensity score matching")
+            log.write("  [bold]ps_nn[/bold] <csv> <treat> <outcome> <covs> -- PS nearest-neighbour matching")
+            log.write("  [bold]ps_subclass[/bold] <csv> <treat> <outcome> <covs> -- PS subclassification")
+            log.write("  [bold]balance[/bold] <csv> <treat> <covs> [weights] -- Balance diagnostics")
+            log.write("  [bold]overlap[/bold] <csv> <treat> <covs>     -- Positivity / overlap diagnostics")
+            log.write("  [bold]mcar[/bold] <csv>                       -- Little's MCAR test")
+            log.write("  [bold]impute[/bold] <csv> [m]                 -- MICE imputation")
             log.write("")
             log.write("[bold]Diagnostics & Sensitivity:[/bold]")
-            log.write("  [bold]vif[/bold] <csv> <cols>                 — VIF collinearity diagnostics")
-            log.write("  [bold]rosenbaum[/bold] <csv> <outcome> <treat>— Rosenbaum sensitivity bounds")
-            log.write("  [bold]odds_ratio[/bold] <csv> <col1> <col2>   — Odds ratio (2x2)")
-            log.write("  [bold]nnt[/bold] <csv> <outcome> <treat>      — Number needed to treat")
-            log.write("  [bold]table1[/bold] <csv> <group>             — Publication Table 1")
-            log.write("  [bold]residuals[/bold] <csv> <y> <x1> [x2..] — Residual diagnostics")
-            log.write("  [bold]cooks[/bold] <csv> <y> <x1> [x2..]     — Cook's D / influence diagnostics")
-            log.write("  [bold]ess[/bold] <csv> <weight_col>           — Effective sample size")
-            log.write("  [bold]design_effect[/bold] <csv> <weight_col> — Weight design effect")
+            log.write("  [bold]vif[/bold] <csv> <cols>                 -- VIF collinearity diagnostics")
+            log.write("  [bold]rosenbaum[/bold] <csv> <outcome> <treat>-- Rosenbaum sensitivity bounds")
+            log.write("  [bold]odds_ratio[/bold] <csv> <col1> <col2>   -- Odds ratio (2x2)")
+            log.write("  [bold]nnt[/bold] <csv> <outcome> <treat>      -- Number needed to treat")
+            log.write("  [bold]table1[/bold] <csv> <group>             -- Publication Table 1")
+            log.write("  [bold]residuals[/bold] <csv> <y> <x1> [x2..] -- Residual diagnostics")
+            log.write("  [bold]cooks[/bold] <csv> <y> <x1> [x2..]     -- Cook's D / influence diagnostics")
+            log.write("  [bold]ess[/bold] <csv> <weight_col>           -- Effective sample size")
+            log.write("  [bold]design_effect[/bold] <csv> <weight_col> -- Weight design effect")
             log.write("")
             log.write("[bold]Advanced Methods:[/bold]")
-            log.write("  [bold]hedges_g[/bold] <csv> <col1> <col2>    — Hedges' g effect size")
-            log.write("  [bold]risk_ratio[/bold] <a> <b> <c> <d>      — Risk ratio (2x2 table)")
-            log.write("  [bold]bonferroni[/bold] <p1> <p2> ...        — Bonferroni correction")
-            log.write("  [bold]jackknife[/bold] <csv> <col>           — Jackknife estimation (mean)")
-            log.write("  [bold]permtest[/bold] <csv> <col> <group>    — Permutation test")
-            log.write("  [bold]event_study[/bold] <csv> <y> <unit> <t> [treat_t] — Event study (DiD)")
-            log.write("  [bold]fuzzy_rdd[/bold] <csv> <y> <run> <treat> [cut] — Fuzzy RDD")
-            log.write("  [bold]strobe[/bold] <report.txt>             — STROBE compliance check")
+            log.write("  [bold]hedges_g[/bold] <csv> <col1> <col2>    -- Hedges' g effect size")
+            log.write("  [bold]risk_ratio[/bold] <a> <b> <c> <d>      -- Risk ratio (2x2 table)")
+            log.write("  [bold]bonferroni[/bold] <p1> <p2> ...        -- Bonferroni correction")
+            log.write("  [bold]jackknife[/bold] <csv> <col>           -- Jackknife estimation (mean)")
+            log.write("  [bold]permtest[/bold] <csv> <col> <group>    -- Permutation test")
+            log.write("  [bold]event_study[/bold] <csv> <y> <unit> <t> [treat_t] -- Event study (DiD)")
+            log.write("  [bold]fuzzy_rdd[/bold] <csv> <y> <run> <treat> [cut] -- Fuzzy RDD")
+            log.write("  [bold]strobe[/bold] <report.txt>             -- STROBE compliance check")
             log.write("")
             log.write("[bold]Psychometrics (morie.psymet):[/bold]")
-            log.write("  [bold]crba[/bold] <csv>                       — Cronbach's alpha (all numeric cols)")
-            log.write("  [bold]mcdo[/bold] <csv> [nf]                  — McDonald's omega (default nf=1)")
-            log.write("  [bold]kmo[/bold] <csv>                        — Kaiser-Meyer-Olkin MSA")
-            log.write("  [bold]bart[/bold] <csv>                       — Bartlett's sphericity test")
-            log.write("  [bold]paran[/bold] <csv>                      — Parallel analysis (# factors)")
-            log.write("  [bold]splhf[/bold] <csv>                      — Split-half reliability")
-            log.write("  [bold]itcor[/bold] <csv>                      — Item-total correlations")
-            log.write("  [bold]adel[/bold] <csv>                       — Alpha if item deleted")
-            log.write("  [bold]idisc[/bold] <csv>                      — Item discrimination index")
-            log.write("  [bold]crel[/bold] <l1,l2,...>                  — Composite reliability from loadings")
-            log.write("  [bold]ave[/bold] <l1,l2,...>                   — AVE from loadings")
+            log.write("  [bold]crba[/bold] <csv>                       -- Cronbach's alpha (all numeric cols)")
+            log.write("  [bold]mcdo[/bold] <csv> [nf]                  -- McDonald's omega (default nf=1)")
+            log.write("  [bold]kmo[/bold] <csv>                        -- Kaiser-Meyer-Olkin MSA")
+            log.write("  [bold]bart[/bold] <csv>                       -- Bartlett's sphericity test")
+            log.write("  [bold]paran[/bold] <csv>                      -- Parallel analysis (# factors)")
+            log.write("  [bold]splhf[/bold] <csv>                      -- Split-half reliability")
+            log.write("  [bold]itcor[/bold] <csv>                      -- Item-total correlations")
+            log.write("  [bold]adel[/bold] <csv>                       -- Alpha if item deleted")
+            log.write("  [bold]idisc[/bold] <csv>                      -- Item discrimination index")
+            log.write("  [bold]crel[/bold] <l1,l2,...>                  -- Composite reliability from loadings")
+            log.write("  [bold]ave[/bold] <l1,l2,...>                   -- AVE from loadings")
             log.write("")
             log.write("[bold]Correctional (morie.otis):[/bold]")
-            log.write("  [bold]rplace[/bold] <csv> <year> [sex]        — Regional placement analysis")
-            log.write("  [bold]astcmb[/bold] <csv>                     — Alert-state combo encoding")
-            log.write("  [bold]volat[/bold] <csv>                      — Regional volatility metric")
-            log.write("  [bold]rctrnd[/bold] <csv>                     — Restrictive confinement trends")
-            log.write("  [bold]otdesc[/bold] <csv>                     — OTIS descriptive statistics")
-            log.write("  [bold]otdml[/bold] <csv> <outcome> <treat>    — DML IRM (ATE/ATT)")
+            log.write("  [bold]rplace[/bold] <csv> <year> [sex]        -- Regional placement analysis")
+            log.write("  [bold]astcmb[/bold] <csv>                     -- Alert-state combo encoding")
+            log.write("  [bold]volat[/bold] <csv>                      -- Regional volatility metric")
+            log.write("  [bold]rctrnd[/bold] <csv>                     -- Restrictive confinement trends")
+            log.write("  [bold]otdesc[/bold] <csv>                     -- OTIS descriptive statistics")
+            log.write("  [bold]otdml[/bold] <csv> <outcome> <treat>    -- DML IRM (ATE/ATT)")
             log.write("")
             log.write("[bold]Pipeline:[/bold]")
-            log.write("  [bold]modules[/bold]                        — List analysis modules")
-            log.write("  [bold]run[/bold] <module-name>              — Run an analysis module")
+            log.write("  [bold]modules[/bold]                        -- List analysis modules")
+            log.write("  [bold]run[/bold] <module-name>              -- Run an analysis module")
             log.write("")
             log.write("[bold]Export:[/bold]")
-            log.write("  [bold]save[/bold] <path>                    — Save last result as text")
-            log.write("  [bold]export[/bold] <path> [csv|md|latex|html] — Export last result")
+            log.write("  [bold]save[/bold] <path>                    -- Save last result as text")
+            log.write("  [bold]export[/bold] <path> [csv|md|latex|html] -- Export last result")
             log.write("")
-            log.write("  [bold]help[/bold]                           — Show this help")
+            log.write("  [bold]help[/bold]                           -- Show this help")
             log.write("")
 
         def on_mount(self) -> None:
@@ -4518,7 +4518,7 @@ if _TEXTUAL_AVAILABLE:
                     log.write(f"\n[bold]Bonferroni correction ({len(pvals)} tests)[/bold]")
                     for i, (orig, adj) in enumerate(zip(result.original, result.adjusted)):
                         sig = "[green]reject[/green]" if result.reject[i] else "[dim]retain[/dim]"
-                        log.write(f"  p{i + 1}: {orig:.4f} → {adj:.4f} {sig}")
+                        log.write(f"  p{i + 1}: {orig:.4f} -> {adj:.4f} {sig}")
 
                 # ── Advanced Resampling ────────────────────────
                 elif action == "jackknife" and len(parts) >= 3:
@@ -4714,7 +4714,7 @@ if _TEXTUAL_AVAILABLE:
                         log.write(f"\n[bold]{cat}[/bold] ({len(cmds)})")
                         for c in cmds:
                             a = f" ({', '.join(c.aliases)})" if c.aliases else ""
-                            log.write(f"  [bold]{c.name}[/bold]{a} — {c.description}")
+                            log.write(f"  [bold]{c.name}[/bold]{a} -- {c.description}")
 
                 else:
                     # Fallback: dispatch through stat_commands registry
@@ -4755,7 +4755,7 @@ if _TEXTUAL_AVAILABLE:
     # ==================================================================
 
     class MORIEApp(App):
-        """MORIE Terminal IDE — Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation."""
+        """MORIE Terminal IDE -- Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation."""
 
         TITLE = "MORIE"
         SUB_TITLE = "Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation"
@@ -4763,15 +4763,15 @@ if _TEXTUAL_AVAILABLE:
         ENABLE_COMMAND_PALETTE = False
 
         DEFAULT_CSS = """
-        /* ── App-level design tokens — ATOM-style heavy borders ─── */
-        /* Inspired by rustysys-dev/rsd-terminal-ui — clear, contrast-
+        /* ── App-level design tokens -- ATOM-style heavy borders ─── */
+        /* Inspired by rustysys-dev/rsd-terminal-ui -- clear, contrast-
          * balanced panel boundaries so panes don't visually merge into
          * each other. Textual offers 'heavy', 'double', 'thick',
          * 'tall' as the heaviest stroke options; we use heavy for
          * focusable widgets and double for the frame-style containers
          * (chat-log etc.) that should read as "this is a panel". */
 
-        /* Shared Input styling — all screens */
+        /* Shared Input styling -- all screens */
         Input {
             dock: bottom;
             margin: 1 0 0 0;
@@ -4795,26 +4795,26 @@ if _TEXTUAL_AVAILABLE:
             border: heavy $accent;
         }
 
-        /* Shared RichLog defaults — consistent padding */
+        /* Shared RichLog defaults -- consistent padding */
         RichLog {
             padding: 1;
             scrollbar-size: 1 1;
         }
 
-        /* REPL sidebar — subtle background to differentiate panels */
+        /* REPL sidebar -- subtle background to differentiate panels */
         #repl-tree {
             background: $surface-darken-1;
             padding: 0 1;
         }
 
-        /* REPL mode indicator bar — visible background */
+        /* REPL mode indicator bar -- visible background */
         #repl-mode {
             background: $surface;
             color: $text;
             border-top: solid $primary 30%;
         }
 
-        /* Settings header/footer — better contrast */
+        /* Settings header/footer -- better contrast */
         #settings-header {
             border-bottom: solid $primary 30%;
             padding: 0 2;
@@ -4857,7 +4857,7 @@ if _TEXTUAL_AVAILABLE:
         }
 
         def get_default_screen(self) -> Screen:
-            """Use HomeScreen as the base screen — no push, stack depth 1."""
+            """Use HomeScreen as the base screen -- no push, stack depth 1."""
             return HomeScreen()
 
         def on_mount(self) -> None:
@@ -4866,7 +4866,7 @@ if _TEXTUAL_AVAILABLE:
             Symptom this fixes: every screen mount took "minutes" because
             ChatScreen/PipelineScreen/DatasetScreen each triggered
             first-time imports of llm.py / chat.py / data.py / modules.py
-            — and those transitively pull numpy, pandas, scipy, sklearn,
+            -- and those transitively pull numpy, pandas, scipy, sklearn,
             httpx, etc. The first navigation after launch felt frozen.
 
             By kicking off `_warmup_imports` immediately on app mount,
@@ -4898,7 +4898,7 @@ if _TEXTUAL_AVAILABLE:
                 try:
                     await asyncio.to_thread(importlib.import_module, mod)
                 except Exception:
-                    # Don't fail the whole warmup if one module is busted —
+                    # Don't fail the whole warmup if one module is busted --
                     # the user can still navigate; the broken screen will
                     # surface its own error when opened.
                     pass
@@ -4928,15 +4928,15 @@ if _TEXTUAL_AVAILABLE:
             self.copy_to_clipboard(text)
 
         def action_toggle_copy_mode(self) -> None:
-            """Toggle Copy Mode — disables Textual mouse capture so the
+            """Toggle Copy Mode -- disables Textual mouse capture so the
             terminal's native text selection works (click-drag, Cmd+C)."""
             self._copy_mode = not self._copy_mode
             if self._driver is not None:
                 if self._copy_mode:
                     self._driver._disable_mouse_support()
-                    self.sub_title = "COPY MODE — select text with mouse, Cmd+C to copy"
+                    self.sub_title = "COPY MODE -- select text with mouse, Cmd+C to copy"
                     self.notify(
-                        "Copy Mode ON — select with mouse, Cmd+C to copy",
+                        "Copy Mode ON -- select with mouse, Cmd+C to copy",
                         timeout=3,
                     )
                 else:
@@ -4945,7 +4945,7 @@ if _TEXTUAL_AVAILABLE:
                     self.notify("Copy Mode OFF", timeout=2)
 
         def action_copy_all(self) -> None:
-            """Copy entire log from start to finish — all input, output, errors."""
+            """Copy entire log from start to finish -- all input, output, errors."""
             results = self.screen.query(CopyableRichLog)
             log = results.first() if results else None
             if log is None:
@@ -4988,9 +4988,9 @@ if _TEXTUAL_AVAILABLE:
             self.notify(f"Copied last 5 exchanges ({len(text.splitlines())} lines)", timeout=2)
 
     class HomeScreen(Screen):
-        """Home screen — single vertical layout."""
+        """Home screen -- single vertical layout."""
 
-        # priority=True is critical — without it, Textual lets focused
+        # priority=True is critical -- without it, Textual lets focused
         # widgets (Header, Footer, VerticalScroll) absorb single-letter
         # keys before the screen-level binding fires. Reported symptom:
         # pressing 'c' did nothing because VerticalScroll's default key
@@ -5054,7 +5054,7 @@ if _TEXTUAL_AVAILABLE:
             """Detect LLM provider in background so the event loop stays free.
 
             CRITICAL: this runs in a background worker so the user can
-            navigate (c/p/d/i) the moment the screen mounts — even before
+            navigate (c/p/d/i) the moment the screen mounts -- even before
             this finishes. We deliberately DO NOT call agent.warmup() here:
             warmup loads the Ollama model into RAM which takes 30s–3min on
             cold start and would freeze the system-status line. The user
@@ -5064,7 +5064,7 @@ if _TEXTUAL_AVAILABLE:
             from .llm import detect_model_display
             from .modules import list_modules
 
-            # Cap LLM detection at 2 seconds — if Ollama isn't running,
+            # Cap LLM detection at 2 seconds -- if Ollama isn't running,
             # don't make the user wait on a TCP timeout (default 30s+).
             try:
                 info = await asyncio.wait_for(

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fligner-Killeen test for equality of variances using aligned scores."""
 import numpy as np
 from scipy import stats

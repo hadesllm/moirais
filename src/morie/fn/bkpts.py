@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bai-Perron structural break detection."""
 
 from __future__ import annotations
@@ -32,7 +32,7 @@ def bai_perron(
     y : array-like
         Dependent variable (n,).
     x : array-like or None
-        Regressors (n,) or (n, k).  None → constant-only (k=1).
+        Regressors (n,) or (n, k).  None -> constant-only (k=1).
     max_breaks : int
         Maximum number of breaks to consider.  Default 3.
     min_size : int or None
@@ -43,7 +43,7 @@ def bai_perron(
     Returns
     -------
     DescriptiveResult
-        value: float — estimated number of breaks.
+        value: float -- estimated number of breaks.
         extra keys:
           'break_dates'  : int array of break indices (segment start positions
                            in y, excluding 0 and n).

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AdamW: decoupled weight decay applied directly to parameters."""
 import numpy as np
 from ._richresult import RichResult

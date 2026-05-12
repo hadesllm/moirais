@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prony's method for pole-zero estimation."""
 
 from __future__ import annotations

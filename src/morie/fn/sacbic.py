@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SAC Bayesian information criterion."""
 
 from ._containers import SpatialResult

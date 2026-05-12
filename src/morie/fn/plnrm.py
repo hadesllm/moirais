@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lognormal distribution cumulative distribution function."""
 
 from __future__ import annotations

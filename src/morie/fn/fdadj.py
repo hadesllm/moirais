@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Front-door adjustment formula for causal effect via mediator."""
 import numpy as np
 from ._richresult import RichResult

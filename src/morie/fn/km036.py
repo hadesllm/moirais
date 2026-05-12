@@ -1,4 +1,4 @@
-"""Gpt supervised obj.."""
+r"""Gpt supervised obj.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_gpt_supervised_obj"]
 
 
 def kamath_ch2_gpt_supervised_obj(C, x, y):
-    """
+    r"""
     Gpt supervised obj.
 
     Formula: L_2(C) = \sum_{(x,y)} \log P(y|x_1,\dots,x_m)
@@ -29,7 +29,7 @@ def kamath_ch2_gpt_supervised_obj(C, x, y):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.36, p. 70
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

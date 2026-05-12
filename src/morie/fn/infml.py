@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Infer Stevens measurement level (NOIR) for a column."""
 
 from morie.dataset import infer_measurement_level as _fn

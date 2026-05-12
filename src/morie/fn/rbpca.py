@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Robust PCA via projection pursuit."""
 
 from __future__ import annotations

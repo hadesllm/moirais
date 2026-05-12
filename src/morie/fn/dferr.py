@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Error degrees of freedom."""
 
 def dferr(n: int, k: int) -> int:

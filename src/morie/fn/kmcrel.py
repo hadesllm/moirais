@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RAGAS context relevance: fraction of retrieved context sentences that are useful."""
 import numpy as np
 from ._richresult import RichResult

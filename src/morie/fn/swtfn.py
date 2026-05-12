@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "It is during our darkest moments that we must focus to see the light. — Aristotle"
+_QUOTE = "It is during our darkest moments that we must focus to see the light. -- Aristotle"
 
 
 def swt_decompose(

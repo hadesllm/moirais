@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Integrated BM prior: k_m(s,t) = integral_0^{min(s,t)} (s-u)^{m-1}(t-u)^{m-1}/(m-1)!^2 du."""
 import numpy as np
 from ._richresult import RichResult

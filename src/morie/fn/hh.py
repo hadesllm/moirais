@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hodgkin-Huxley neuron model simulation."""
 
 from __future__ import annotations

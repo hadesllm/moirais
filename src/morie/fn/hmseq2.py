@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sequence-to-sequence encoder-decoder architecture."""
 import numpy as np
 from ._richresult import RichResult

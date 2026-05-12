@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """McDonald's omega total and hierarchical."""
 
 from __future__ import annotations

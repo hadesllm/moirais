@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classifier with reject (ambiguity rejection) option."""
 
 from __future__ import annotations

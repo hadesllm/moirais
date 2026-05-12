@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_20_unnumbered_782(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] 0 : τ ≤− ς or −→H (ς )
+    Formula: [EQ] 0 : τ ≤− ς or −->H (ς )
 
     Parameters
     ----------

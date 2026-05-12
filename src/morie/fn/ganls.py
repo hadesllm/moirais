@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GAN minimax / non-saturating loss (Goodfellow et al. 2014)."""
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ def _clip_log(p, eps=1e-12):
 
 
 def gan_loss(D_real, D_fake, kind: str = "minimax"):
-    """Compute discriminator and generator losses for the original GAN.
+    r"""Compute discriminator and generator losses for the original GAN.
 
     The discriminator maximises
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EMG motor unit action potential detection.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -13,7 +13,7 @@ from ._containers import DescriptiveResult
 
 __all__ = ['emgmu']
 
-_QUOTE = "The unexamined statistic is not worth reporting. — adapted from Socrates"
+_QUOTE = "The unexamined statistic is not worth reporting. -- adapted from Socrates"
 
 
 def emgmu(

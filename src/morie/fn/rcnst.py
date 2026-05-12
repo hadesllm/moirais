@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Whittaker-Shannon sinc interpolation."""
 
 from __future__ import annotations
@@ -7,11 +7,11 @@ import numpy as np
 
 from ._containers import SignalResult
 
-_QUOTE = "All models are wrong, but some are useful. — George E. P. Box"
+_QUOTE = "All models are wrong, but some are useful. -- George E. P. Box"
 
 
 def sinc_reconstruct(samples, fs: float, t_new) -> SignalResult:
-    """Reconstruct a continuous-time signal using sinc interpolation.
+    r"""Reconstruct a continuous-time signal using sinc interpolation.
 
     .. math::
 

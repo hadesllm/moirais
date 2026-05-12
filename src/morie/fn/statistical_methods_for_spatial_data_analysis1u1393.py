@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1393(x):
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: as θ → 0. For θ = 0 the likelihood cannot be computed, so it appears that the
+    Formula: as θ -> 0. For θ = 0 the likelihood cannot be computed, so it appears that the
 
     Parameters
     ----------

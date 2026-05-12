@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hawking radiation temperature model. 'History is about to be rewritten.' -- Hawkgirl"""
 
 from __future__ import annotations

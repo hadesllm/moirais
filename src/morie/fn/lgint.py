@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius"""
+# morie.fn -- function file (hadesllm/morie)
+"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ def lagrange_interp(
     y_known: np.ndarray,
     x_eval: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Lagrange polynomial interpolation.
 
     .. math::

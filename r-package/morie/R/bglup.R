@@ -8,12 +8,21 @@
 #' @param burn Burn-in.
 #' @param pi_init Initial inclusion probability.
 #' @param seed Seed.
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("bglup", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return list(estimate, beta, beta_pip, pi, sigma_b2, sigma2, n_iter, n, p, method).
 #' @references Habier-Fernando-Kizilkaya-Garrick (2011); Montesinos Lopez Ch 4.
 #' @export
 bayes_cpi_genomic <- function(x, y, n_iter = 300, burn = 100,
-                               pi_init = 0.1, seed = 0) {
-  set.seed(seed)
+                               pi_init = 0.1, seed = 0,
+                               deterministic_seed = NULL) {
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("bglup", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   X <- as.matrix(x); y <- as.numeric(y); n <- nrow(X); p <- ncol(X)
   ym <- mean(y); yc <- y - ym
   Xc <- sweep(X, 2, colMeans(X))

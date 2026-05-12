@@ -1,4 +1,4 @@
-"""TurboQuant — data-oblivious vector quantization for MORIE.
+"""TurboQuant -- data-oblivious vector quantization for MORIE.
 
 Implements the TurboQuant two-stage quantization pipeline from the ICLR 2026
 paper (arxiv.org/abs/2504.19874).
@@ -13,19 +13,19 @@ For runtime KV-cache compression with Ollama, use ``OLLAMA_KV_CACHE_TYPE=q8_0``.
 
 Algorithms
 ----------
-**Stage 1 — TurboQuant_MSE** (Zandieh et al. 2026, arXiv:2504.19874):
+**Stage 1 -- TurboQuant_MSE** (Zandieh et al. 2026, arXiv:2504.19874):
     1. Random rotation via QR decomposition (Python) or WHT (C)
     2. Normalize to unit vector, store L2 norm
     3. Scalar-quantize each coordinate via Lloyd-Max codebook
        optimized for the Beta((d-1)/2, (d-1)/2) distribution
 
-**Stage 2 — QJL** (Zandieh et al. 2025, arXiv:2406.03482):
+**Stage 2 -- QJL** (Zandieh et al. 2025, arXiv:2406.03482):
     1. Compute residual: r = x - dequant(quant(x))
     2. 1-bit sign encoding via random projection: sign(S·r)
     3. Guarantees unbiased inner-product estimation: E[<y, r̂>] = <y, r>
 
 Also includes **PolarQuant** utilities (Han et al. 2026, arXiv:2502.02617):
-    polar_transform() and inverse_polar() for recursive Cartesian→Polar,
+    polar_transform() and inverse_polar() for recursive Cartesian->Polar,
     but these are NOT used by turboquant_mse(). They are available for
     research and comparison.
 
@@ -51,7 +51,7 @@ import numpy as np
 from numpy.typing import NDArray
 
 # ---------------------------------------------------------------------------
-# Paper references — see also references.bib
+# Paper references -- see also references.bib
 # ---------------------------------------------------------------------------
 
 REFERENCES = {
@@ -96,7 +96,7 @@ def rotation_matrix(d: int, seed: int | None = None) -> F64:
 
     The rotation randomizes coordinate-wise distributions so that angular
     components after the polar transform follow a concentrated, predictable
-    distribution — eliminating the need for per-block normalization constants.
+    distribution -- eliminating the need for per-block normalization constants.
 
     Parameters
     ----------
@@ -211,7 +211,7 @@ def lloyd_max_codebook(d: int, bits: int, n_iter: int = 200) -> F64:
     return np.sort(centroids)
 
 
-# Precomputed codebooks cache (dimension, bits) → centroids
+# Precomputed codebooks cache (dimension, bits) -> centroids
 _codebook_cache: dict[tuple[int, int], F64] = {}
 
 
@@ -224,12 +224,12 @@ def get_codebook(d: int, bits: int) -> F64:
 
 
 # ---------------------------------------------------------------------------
-# PolarQuant: recursive Cartesian → Polar transform
+# PolarQuant: recursive Cartesian -> Polar transform
 # ---------------------------------------------------------------------------
 
 
 def polar_transform(x: F64) -> tuple[float, list[F64]]:
-    """Recursive Cartesian→Polar transform in O(d log d).
+    """Recursive Cartesian->Polar transform in O(d log d).
 
     Parameters
     ----------
@@ -462,7 +462,7 @@ def qjl_encode(residual: F64, S: F64) -> tuple[I8, float]:
 
 
 def qjl_decode(signs: I8, norm: float, S: F64) -> F64:
-    """QJL dequantization — unbiased inner-product estimation.
+    """QJL dequantization -- unbiased inner-product estimation.
 
     Q_qjl^{-1}(z) = (√(π/2) / d) · S^T · z
 
@@ -493,7 +493,7 @@ def qjl_decode(signs: I8, norm: float, S: F64) -> F64:
 
 
 # ---------------------------------------------------------------------------
-# TQBlock — compressed block storage
+# TQBlock -- compressed block storage
 # ---------------------------------------------------------------------------
 
 
@@ -549,7 +549,7 @@ class TQBlock:
 
 
 # ---------------------------------------------------------------------------
-# TurboQuant_MSE — Stage 1 only (MSE-optimal)
+# TurboQuant_MSE -- Stage 1 only (MSE-optimal)
 # ---------------------------------------------------------------------------
 
 
@@ -629,7 +629,7 @@ def turboquant_mse_decode(block: TQBlock) -> F64:
 
 
 # ---------------------------------------------------------------------------
-# TurboQuant_prod — Stage 1 + Stage 2 (inner-product optimal)
+# TurboQuant_prod -- Stage 1 + Stage 2 (inner-product optimal)
 # ---------------------------------------------------------------------------
 
 
@@ -874,14 +874,14 @@ def unpack_indices(data: bytes, bits: int, count: int) -> U8:
 
 
 # ---------------------------------------------------------------------------
-# #161 — outlier-aware TurboQuant
+# #161 -- outlier-aware TurboQuant
 #
 # The vanilla turboquant_mse pipeline gets bitten by activation outliers in
 # real LLM tensors: a few entries of |x| ~ 5σ pull the rotated norm up so
 # the inner ring's quantization grid expands and most of the bins go unused.
 # Following the GPTQ / SmoothQuant / SpQR family, we split outliers off,
 # quantize the bulk at the same bit budget, and store outliers in fp16 with
-# their indices.  Cosine recovery on Llama-3 V_proj rises from 0.983 → 0.991
+# their indices.  Cosine recovery on Llama-3 V_proj rises from 0.983 -> 0.991
 # at 4-bit on internal eval (2026-04-30).
 # ---------------------------------------------------------------------------
 
@@ -921,7 +921,7 @@ def turboquant_mse_outlier(
     mu = float(np.mean(x))
     sigma = float(np.std(x))
     if sigma < 1e-15:
-        # Degenerate (constant vector) — no outliers to find.
+        # Degenerate (constant vector) -- no outliers to find.
         bulk = turboquant_mse(x, bits=bits, rotation_seed=rotation_seed)
         return TQOutlierBlock(
             bulk=bulk,
@@ -939,7 +939,7 @@ def turboquant_mse_outlier(
             outlier_values=np.array([], dtype=np.float16),
         )
 
-    # Cap by |x| magnitude — top max_outlier_frac · d entries.
+    # Cap by |x| magnitude -- top max_outlier_frac · d entries.
     max_count = max(1, int(max_outlier_frac * d))
     if candidate_mask.sum() > max_count:
         thresh = np.partition(z, -max_count)[-max_count]
@@ -949,7 +949,7 @@ def turboquant_mse_outlier(
     outlier_vals = x[outlier_idx].astype(np.float16)
 
     cleaned = x.copy()
-    cleaned[outlier_idx] = mu  # replace with mean — mean(rotated) ≈ 0 anyway
+    cleaned[outlier_idx] = mu  # replace with mean -- mean(rotated) ≈ 0 anyway
 
     bulk = turboquant_mse(cleaned, bits=bits, rotation_seed=rotation_seed)
     return TQOutlierBlock(
@@ -960,7 +960,7 @@ def turboquant_mse_outlier(
 
 
 def turboquant_mse_outlier_decode(block: "TQOutlierBlock") -> F64:
-    """Decode an outlier-aware TQ block — bulk decode then overwrite outliers."""
+    """Decode an outlier-aware TQ block -- bulk decode then overwrite outliers."""
     out = turboquant_mse_decode(block.bulk)
     if len(block.outlier_indices) > 0:
         out[block.outlier_indices] = block.outlier_values.astype(np.float64)

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Borda count election method."""
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ def borda_count(rankings) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 1.
 
-    .. epigraph:: 'Knowledge itself is power. — Francis Bacon'
+    .. epigraph:: 'Knowledge itself is power. -- Francis Bacon'
     """
     R = np.asarray(rankings, dtype=float)
     if R.ndim != 2:

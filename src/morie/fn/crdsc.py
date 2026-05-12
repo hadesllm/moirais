@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Scale coordinates Z = V * sqrt(Lambda). 'Gomu Gomu no...' -- Luffy, One Piece"""
 
 from __future__ import annotations

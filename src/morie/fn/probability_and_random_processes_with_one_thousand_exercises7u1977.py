@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [0, 1]. Let g : S × [0, 1] → S be given by g( j, u) = k if u ∈ Aj k. The sequence { Xn : n ≥ 0} of
+    Formula: [0, 1]. Let g : S × [0, 1] -> S be given by g( j, u) = k if u ∈ Aj k. The sequence { Xn : n ≥ 0} of
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Neal Algorithm 8 for DP mixture MCMC sampling. 'Sample, Markov must.'"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GF(2^m) finite field arithmetic."""
 
 from __future__ import annotations
@@ -12,7 +12,7 @@ def gf2m_arithmetic(a: int, b: int, m: int = 8, op: str = "mul") -> DescriptiveR
     :param a: First element (integer representation).
     :param b: Second element (integer representation).
     :param m: Field extension degree.
-    :param op: Operation — "add", "mul", "inv" (ignores b), "pow" (b is exponent).
+    :param op: Operation -- "add", "mul", "inv" (ignores b), "pow" (b is exponent).
     :return: DescriptiveResult with the computed value.
     """
     from morie.crypto._gf2m import find_irreducible, gf2m_add, gf2m_inv, gf2m_mul, gf2m_pow

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nucleotide frequency distribution (A/T/G/C counts and proportions)."""
 
 

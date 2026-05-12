@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dvoretzky-Kiefer-Wolfowitz inequality for empirical CDF."""
 
 from __future__ import annotations

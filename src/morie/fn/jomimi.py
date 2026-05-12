@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Time-series-aware missing imputation (forward-fill / linear / seasonal-mean)."""
 import numpy as np
 from ._richresult import RichResult

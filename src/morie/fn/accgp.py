@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Genomic-prediction accuracy metrics."""
 from __future__ import annotations
 

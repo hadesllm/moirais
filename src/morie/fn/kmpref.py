@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prefix tuning: learned prefix vectors prepended to keys/values at every layer."""
 import numpy as np
 from ._richresult import RichResult

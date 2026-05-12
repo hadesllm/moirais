@@ -1,4 +1,4 @@
-"""A journey of a thousand miles begins with a single step. — Lao Tzu"""
+"""A journey of a thousand miles begins with a single step. -- Lao Tzu"""
 
 from __future__ import annotations
 

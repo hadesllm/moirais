@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AUC-ROC via trapezoidal integration."""
 
 from __future__ import annotations
@@ -7,11 +7,11 @@ import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "The whole is greater than the sum of its parts. — Aristotle"
+_QUOTE = "The whole is greater than the sum of its parts. -- Aristotle"
 
 
 def auc_roc(y_true, y_score, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Area Under the ROC Curve via trapezoidal rule.
 
     .. math::

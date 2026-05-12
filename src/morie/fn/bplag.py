@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Breusch-Pagan Lagrange multiplier test."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def breusch_pagan_lm(
     X: np.ndarray,
     entity: np.ndarray,
 ) -> DescriptiveResult:
-    """Breusch-Pagan LM test for individual (random) effects.
+    r"""Breusch-Pagan LM test for individual (random) effects.
 
     Tests :math:`H_0: \\sigma^2_u = 0` (pooled OLS adequate) against
     :math:`H_1: \\sigma^2_u > 0` (RE model needed).

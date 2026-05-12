@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """F-statistic for nested-model comparison (atomic, scalar return)."""
 
 
 def fstat(ssr_val: float, sse_val: float, k: int, n: int) -> float:
     """F-statistic: (SSR / k) / (SSE / (n - k - 1)).
 
-    Atomic primitive — returns scalar. For full F-test output use a
+    Atomic primitive -- returns scalar. For full F-test output use a
     full ANOVA or call lrtst().
     """
     if sse_val <= 0:

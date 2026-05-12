@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: that for ϵ > 0, P [|Xn| > ϵ] = 1/n2 → 0 and hence Xn
+    Formula: that for ϵ > 0, P [|Xn| > ϵ] = 1/n2 -> 0 and hence Xn
 
     Parameters
     ----------

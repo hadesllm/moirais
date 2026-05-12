@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Einstein field equation tensor (G_uv = 8*pi*G/c^4 * T_uv)."""
 
 __all__ = ["einsf"]
@@ -15,7 +15,7 @@ def einsf(
     G: float = 6.67430e-11,
     c: float = 299792458.0,
 ) -> dict:
-    """
+    r"""
     Compute the Einstein tensor and verify the field equations.
 
     .. math::

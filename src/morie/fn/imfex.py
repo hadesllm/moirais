@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Extract intrinsic mode functions via sifting."""
 
 from __future__ import annotations

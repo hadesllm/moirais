@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kalman filter wrapper for adaptive state estimation."""
 
 from __future__ import annotations

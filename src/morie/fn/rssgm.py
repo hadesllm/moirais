@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Reassigned spectrogram (time-frequency reassignment)."""
 
 from __future__ import annotations
@@ -8,7 +8,7 @@ from scipy.signal import stft
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Knowledge itself is power. — Francis Bacon"
+_QUOTE = "Knowledge itself is power. -- Francis Bacon"
 
 
 def reassigned_spectrogram(

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polarity check and correction for stimulus positions."""
 
 from __future__ import annotations

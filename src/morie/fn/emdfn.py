@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Empirical Mode Decomposition into Intrinsic Mode Functions."""
 
 from __future__ import annotations

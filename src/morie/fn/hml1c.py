@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """1cycle policy: warm up then anneal the learning rate."""
 import numpy as np
 from ._richresult import RichResult

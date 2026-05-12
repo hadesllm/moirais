@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Learning rate finder from loss curve."""
 
 from __future__ import annotations

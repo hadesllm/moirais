@@ -1,4 +1,4 @@
-"""Numbered display equation (10.13) from MVSML chapter 10.."""
+r"""Numbered display equation (10.13) from MVSML chapter 10.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_reproducing_kernel_eq_10_13"]
 
 
 def mvsml_reproducing_kernel_eq_10_13(ij, the, hidden, units, to, output):
-    """
+    r"""
     Numbered display equation (10.13) from MVSML chapter 10.
 
     Formula: ij from the hidden units to the output units is w l( ) t+1 ( ) = w l( ) t( ) + \Deltaw l( ) jk = w l( ) t( ) ( ) + \eta\deltaijV h
@@ -35,7 +35,7 @@ def mvsml_reproducing_kernel_eq_10_13(ij, the, hidden, units, to, output):
     References
     ----------
     MVSML, Eq. (10.13) [Multivariate Statistical Machine Learnin [Pages 379-425] [2026-04-16].pdf]
-    """
+    r"""
     ij = np.atleast_1d(np.asarray(ij, dtype=float))
     n = len(ij)
     result = float(np.mean(ij))

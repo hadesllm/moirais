@@ -8,7 +8,7 @@ __all__ = ["probability_and_random_processes_with_one_thousand_exercises_chapter
 
 
 def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnumbered_1698(x):
-    """He who has a why to live can bear almost any how. — Friedrich Nietzsche"""
+    """He who has a why to live can bear almost any how. -- Friedrich Nietzsche"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

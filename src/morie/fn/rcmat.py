@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rectangular matrix formatter. 'Spirit Gun!' -- Yusuke, Yu Yu Hakusho"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kernel density estimator for semiparametric models (Horowitz 2009, Ch 2).
 
 Implements the standard univariate Rosenblatt-Parzen kernel density estimator

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nucleus (top-p) sampling (Holtzman et al. 2020)."""
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Approximation by normal mixtures: any smooth density approx by Gaussian mixture."""
 import numpy as np
 from ._richresult import RichResult

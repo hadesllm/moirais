@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_eq_6_9"]
 
 
 def mvsml_bayesian_regression_eq_6_9(means, that, the, random, matrix, Z):
-    """Time discovers truth. — Seneca"""
+    """Time discovers truth. -- Seneca"""
     means = np.atleast_1d(np.asarray(means, dtype=float))
     n = len(means)
     result = float(np.mean(means))

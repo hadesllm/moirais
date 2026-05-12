@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Penalized Dirichlet process: DP with penalty on deviation from G0."""
 import numpy as np
 from ._richresult import RichResult

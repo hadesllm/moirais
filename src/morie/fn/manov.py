@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MANOVA (Pillai/Wilks/Hotelling/Roy)."""
 
 from __future__ import annotations

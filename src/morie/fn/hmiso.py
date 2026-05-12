@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Isomap: MDS on geodesic distances from kNN graph."""
 import numpy as np
 from ._richresult import RichResult

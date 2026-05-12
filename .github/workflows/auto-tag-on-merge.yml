@@ -1,0 +1,89 @@
+name: Auto-tag on version bump merge
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+# When a PR merges into main with a NEW `version =` value in
+# pyproject.toml that doesn't already exist as a tag, automatically
+# create + push `v<new-version>` so that the existing tag-triggered
+# publish workflows fire WITHOUT requiring a manual `git tag` step.
+#
+# The publish chain this enables:
+#   PR merged → pyproject.toml version bumped → THIS workflow
+#     → git tag vX.Y.Z + push
+#       → pypi-publish.yml fires (Trusted Publisher OIDC -> PyPI)
+#       → docker-publish.yml fires (ghcr.io/hadesllm/morie:X.Y.Z + :latest)
+#       → release-debrpm.yml fires (DEB + RPM signed)
+#       → r-universe polls main + sees new tag (within ~1 hr)
+#
+# Manual override:
+#   - Skip via `[skip auto-tag]` in the merge commit message
+#   - Force re-tag via workflow_dispatch with the desired version
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - pyproject.toml
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to tag (e.g. 0.4.0) — leave blank to read from pyproject.toml"
+        required: false
+
+permissions:
+  contents: write   # needed to push tags
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history for tag list)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Skip if "[skip auto-tag]" in commit
+        run: |
+          msg="$(git log -1 --pretty=%B)"
+          if echo "$msg" | grep -qF "[skip auto-tag]"; then
+            echo "Skip marker found; bailing."
+            exit 0
+          fi
+
+      - name: Read version from pyproject.toml
+        id: ver
+        run: |
+          if [ -n "${{ github.event.inputs.version }}" ]; then
+            v="${{ github.event.inputs.version }}"
+          else
+            v=$(awk -F'"' '/^version *=/{print $2; exit}' pyproject.toml)
+          fi
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          echo "Detected version: $v"
+
+      - name: Bail if tag exists
+        id: gate
+        run: |
+          v="${{ steps.ver.outputs.version }}"
+          if git rev-parse "v$v" >/dev/null 2>&1; then
+            echo "Tag v$v already exists; nothing to do."
+            echo "tag_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Configure git identity
+        if: steps.gate.outputs.tag_exists == 'false'
+        run: |
+          git config user.name  "morie-release-bot[hadesllm]"
+          git config user.email "278967282+rootcoder007@users.noreply.github.com"
+
+      - name: Create + push tag
+        if: steps.gate.outputs.tag_exists == 'false'
+        run: |
+          v="${{ steps.ver.outputs.version }}"
+          git tag -a "v$v" -m "morie v$v (auto-tagged on pyproject.toml bump)"
+          git push origin "v$v"
+          echo "::notice title=Auto-tagged::v$v pushed to origin — pypi-publish + docker-publish + release-debrpm should now fire."

@@ -6,7 +6,7 @@ from ._containers import ESRes
 
 
 def tsallis_entropy(x, q: float = 2.0, bins: int = 50, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Tsallis entropy of order q.
 
     .. math::

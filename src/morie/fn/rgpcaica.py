@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Comparative analysis of PCA, ICA, and NMF for signal separation."""
 import numpy as np
 from ._richresult import RichResult

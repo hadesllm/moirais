@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ghosal-Ghosh-van der Vaart 2000 general contraction theorem."""
 import numpy as np
 from ._richresult import RichResult

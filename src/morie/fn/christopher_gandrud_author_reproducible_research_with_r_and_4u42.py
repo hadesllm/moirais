@@ -4,7 +4,7 @@ from scipy import stats
 
 from ._richresult import RichResult, hypothesis_test_result
 
-__all__ = ["It does not matter how slowly you go as long as you do not stop. — Confucius"]
+__all__ = ["It does not matter how slowly you go as long as you do not stop. -- Confucius"]
 
 
 def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_42(x, cdf=None):
@@ -26,7 +26,7 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
         Inherits from ``dict`` (so ``isinstance(result, dict)`` is True
         and ``result["statistic"]`` / ``result.get(...)`` keep working),
         but also exposes a multi-section ``str(result)`` render. Keys: value.
-        See ``morie.fn.describe('It does not matter how slowly you go as long as you do not stop. — Confucius')`` for the full guide.
+        See ``morie.fn.describe('It does not matter how slowly you go as long as you do not stop. -- Confucius')`` for the full guide.
 
     References
     ----------
@@ -69,4 +69,4 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
 
 
 def cheatsheet():
-    return "It does not matter how slowly you go as long as you do not stop. — Confucius"
+    return "It does not matter how slowly you go as long as you do not stop. -- Confucius"

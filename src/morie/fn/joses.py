@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simple exponential smoothing (SES) forecast."""
 import numpy as np
 from ._richresult import RichResult

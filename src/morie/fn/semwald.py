@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEM Wald test on spatial error parameter lambda."""
 
 from ._containers import SpatialResult

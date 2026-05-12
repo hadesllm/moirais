@@ -10,7 +10,7 @@ _QUOTE = "Luminous beings are we, not this crude matter."
 
 
 def cross_psd(x, y, fs: float = 1.0, **kwargs) -> DescriptiveResult:
-    """Compute the cross power spectral density of *x* and *y*.
+    r"""Compute the cross power spectral density of *x* and *y*.
 
     .. math::
 

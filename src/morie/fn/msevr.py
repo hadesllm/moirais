@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MSE = Bias^2 + Variance decomposition."""
 
 from __future__ import annotations

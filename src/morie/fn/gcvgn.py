@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-fold cross-validation for genomic-prediction accuracy."""
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ def genomic_cross_validation(x, y, K: int = 5, lam: float = 1.0, seed: int = 0):
 
     Parameters
     ----------
-    x : array-like (n,) or (n, p) — predictor matrix (e.g. markers).
+    x : array-like (n,) or (n, p) -- predictor matrix (e.g. markers).
     y : array-like (n,)
     K : int, default 5
     lam : float, default 1.0. Ridge penalty inside each fold.

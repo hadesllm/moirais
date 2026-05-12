@@ -10,7 +10,7 @@ def bayesian_glm(y, X, family, priors):
     """
     Bayesian GLM via Stan/JAGS
 
-    Formula: likelihood + priors → MCMC posterior
+    Formula: likelihood + priors -> MCMC posterior
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ventricular fibrillation (VF) detection in ECG."""
 import numpy as np
 from ._richresult import RichResult

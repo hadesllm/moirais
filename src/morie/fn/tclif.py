@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def clifford_torus(n_points: int = 500) -> DescriptiveResult:
-    """Generate points on the Clifford torus in S^3 subset R^4.
+    r"""Generate points on the Clifford torus in S^3 subset R^4.
 
     The Clifford torus is the set:
     :math:`(x_1, x_2, x_3, x_4) = \\frac{1}{\\sqrt{2}}(\\cos u, \\sin u, \\cos v, \\sin v)`

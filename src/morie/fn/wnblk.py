@@ -10,7 +10,7 @@ _QUOTE = "Power! Unlimited power!"
 
 
 def blackman_window(N: int, **kwargs) -> DescriptiveResult:
-    """Generate a Blackman window of length *N*.
+    r"""Generate a Blackman window of length *N*.
 
     .. math::
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Feature importance via mean decrease in impurity across forest trees."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Incremental cost-effectiveness ratio (ICER)."""
 
 from __future__ import annotations
@@ -61,9 +61,9 @@ def incremental_cost_effectiveness_ratio(
     if delta_c >= 0 and delta_e >= 0:
         quadrant = "NE (more costly, more effective)"
     elif delta_c < 0 and delta_e >= 0:
-        quadrant = "SE (less costly, more effective — dominant)"
+        quadrant = "SE (less costly, more effective -- dominant)"
     elif delta_c >= 0 and delta_e < 0:
-        quadrant = "NW (more costly, less effective — dominated)"
+        quadrant = "NW (more costly, less effective -- dominated)"
     else:
         quadrant = "SW (less costly, less effective)"
 

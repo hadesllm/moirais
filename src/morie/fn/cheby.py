@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Chebyshev (L-infinity) distance. 'Luck is what happens when preparation meets opportunity. — Seneca' -- Ahsoka Tano"""
+# morie.fn -- function file (hadesllm/morie)
+"""Chebyshev (L-infinity) distance. 'Luck is what happens when preparation meets opportunity. -- Seneca' -- Ahsoka Tano"""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def chebyshev_dist(a: np.ndarray, b: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Compute the Chebyshev distance (L-infinity norm) between two vectors.
 
     .. math::
@@ -46,4 +46,4 @@ cheby = chebyshev_dist
 
 
 def cheatsheet() -> str:
-    return "chebyshev_dist({}) -> Chebyshev (L-infinity) distance. 'Luck is what happens when preparation meets opportunity. — Seneca' -- Ahsoka T"
+    return "chebyshev_dist({}) -> Chebyshev (L-infinity) distance. 'Luck is what happens when preparation meets opportunity. -- Seneca' -- Ahsoka T"

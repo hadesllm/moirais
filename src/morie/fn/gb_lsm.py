@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Large-sample approximations to mean and variance of X_(r)."""
 import numpy as np
 from ._richresult import RichResult

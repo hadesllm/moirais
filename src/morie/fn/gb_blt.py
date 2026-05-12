@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Coefficient of concordance for balanced incomplete block designs."""
 import numpy as np
 from ._richresult import RichResult

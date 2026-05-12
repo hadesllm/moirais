@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ordinal logistic regression (proportional odds model)."""
 
 import numpy as np
@@ -7,7 +7,7 @@ from scipy.stats import norm
 
 
 def rey_ol(df, y: str = "y", x: list | str = "x", alpha: float = 0.05, cdf=None) -> dict:
-    """
+    r"""
     Ordinal logistic regression via the proportional odds model.
 
     For an ordered categorical response with *K* levels:

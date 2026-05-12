@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chebyshev Type II filter."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ _QUOTE = "Never tell me the odds."
 
 
 def chebyshev2_filter(x, cutoff, fs, order: int = 4, rs: float = 40.0) -> SignalResult:
-    """Apply a Chebyshev Type II filter to signal *x*.
+    r"""Apply a Chebyshev Type II filter to signal *x*.
 
     .. math::
 

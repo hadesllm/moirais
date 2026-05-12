@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polynomial ring operations mod (x^n+1) over Z_q."""
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ def poly_ring_op(
     :param a: First polynomial (coefficient list, constant term first).
     :param b: Second polynomial.
     :param q: Modulus.
-    :param op: Operation — "add", "sub", "mul".
+    :param op: Operation -- "add", "sub", "mul".
     :return: DescriptiveResult with result polynomial.
     """
     from morie.crypto._poly_ring import poly_add, poly_ring_mul, poly_sub

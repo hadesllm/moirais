@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cochran's Q test for k related binary samples."""
 
 from typing import Union
@@ -12,7 +12,7 @@ from ._containers import TestResult
 def cochrans_q_test(
     data: Union[list, np.ndarray],
 ) -> TestResult:
-    """
+    r"""
     Cochran's Q test for *k* related dichotomous samples.
 
     Extension of McNemar's test to more than two related groups. Tests

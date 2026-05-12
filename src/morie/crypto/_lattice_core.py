@@ -125,7 +125,7 @@ def babai_nearest_plane(basis: np.ndarray, target: np.ndarray) -> np.ndarray:
 
     Produces an approximate solution to CVP by rounding Gram-Schmidt
     coefficients layer by layer from the top. Quality depends on the
-    basis quality — apply LLL first for better results.
+    basis quality -- apply LLL first for better results.
 
     Reference: Galbraith, "Mathematics of Public Key Cryptography", Algorithm 18.1.
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Denoising diffusion implicit models (DDIM) for faster sampling."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Contingency coefficient C = sqrt(Q/(Q+n))."""
 import numpy as np
 from ._richresult import RichResult

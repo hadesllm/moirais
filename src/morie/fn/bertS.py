@@ -1,4 +1,4 @@
-"""BERTScore — embedding-based eval."""
+"""BERTScore -- embedding-based eval."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["bertscore"]
 
 def bertscore(candidate, reference, model):
     """
-    BERTScore — embedding-based eval
+    BERTScore -- embedding-based eval
 
     Formula: max-cosine matching between token embeddings
 
@@ -34,8 +34,8 @@ def bertscore(candidate, reference, model):
     n = len(candidate)
     result = float(np.mean(candidate))
     se = float(np.std(candidate, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "BERTScore — embedding-based eval"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "BERTScore -- embedding-based eval"})
 
 
 def cheatsheet():
-    return "bertS: BERTScore — embedding-based eval"
+    return "bertS: BERTScore -- embedding-based eval"

@@ -1,4 +1,4 @@
-"""Real knowledge is to know the extent of one's ignorance. — Confucius"""
+"""Real knowledge is to know the extent of one's ignorance. -- Confucius"""
 
 from __future__ import annotations
 
@@ -69,4 +69,4 @@ zionm = defense_allocation
 
 
 def cheatsheet() -> str:
-    return "Real knowledge is to know the extent of one's ignorance. — Confucius"
+    return "Real knowledge is to know the extent of one's ignorance. -- Confucius"

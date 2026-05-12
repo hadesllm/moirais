@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SDM OLS ignoring spatial component (baseline)."""
 
 import numpy as np

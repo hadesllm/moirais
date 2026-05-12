@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Schwartz posterior consistency diagnostic."""
 import numpy as np
 from scipy.stats import norm
@@ -19,7 +19,7 @@ def ghosal_posterior_consistency(x, ref_loc=None, ref_scale=None,
 
     where ``F_ref`` is either the empirical CDF (default) or a reference
     Gaussian if ``ref_loc``/``ref_scale`` are given.  Posterior samples
-    are obtained via the Bayesian bootstrap (Rubin 1981) — the
+    are obtained via the Bayesian bootstrap (Rubin 1981) -- the
     no-base-measure limit of a posterior DP.  Schwartz's theorem
     (Ghosal Ch 5) implies this probability decays to 0 as ``n -> inf``.
 

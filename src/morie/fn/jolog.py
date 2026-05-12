@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Log (or log1p) target transformation for strictly-positive series."""
 import numpy as np
 from ._richresult import RichResult

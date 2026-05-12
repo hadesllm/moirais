@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Signal derivative in Hz domain."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "He who has a why to live can bear almost any how. — Friedrich Nietzsche"
+_QUOTE = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 
 
 def derivative_hz(x, fs=1.0, order=1, **kwargs) -> DescriptiveResult:

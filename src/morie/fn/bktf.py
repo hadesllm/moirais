@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Term frequency: raw count of term t in document d (optionally normalized)."""
 import numpy as np
 from ._richresult import RichResult

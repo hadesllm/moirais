@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Instant runoff voting (ranked choice)."""
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ def instant_runoff(rankings) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 1.
 
-    .. epigraph:: 'Confine yourself to the present. — Marcus Aurelius'
+    .. epigraph:: 'Confine yourself to the present. -- Marcus Aurelius'
     """
     R = np.asarray(rankings, dtype=float)
     if R.ndim != 2:

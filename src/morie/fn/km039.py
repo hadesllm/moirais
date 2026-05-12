@@ -1,4 +1,4 @@
-"""Moe output.."""
+r"""Moe output.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_moe_output"]
 
 
 def kamath_ch2_moe_output(x, G, E_i):
-    """
+    r"""
     Moe output.
 
     Formula: y = \sum_{i=0}^{n-1} G(x)_i \cdot E_i(x)
@@ -29,7 +29,7 @@ def kamath_ch2_moe_output(x, G, E_i):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.39, p. 74
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

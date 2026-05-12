@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nucleotide diversity (pi) from a sequence alignment."""
 
 
@@ -6,7 +6,7 @@ from ._containers import GenomicsResult
 
 
 def nucleotide_diversity(sequences: list[str]) -> GenomicsResult:
-    """
+    r"""
     Compute nucleotide diversity (pi) from aligned DNA sequences.
 
     Pi is the average number of pairwise nucleotide differences per site:

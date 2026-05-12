@@ -6,7 +6,7 @@ from ._containers import DescriptiveResult
 
 
 def periodogram(y: np.ndarray, fs: float = 1.0) -> DescriptiveResult:
-    """
+    r"""
     Compute the periodogram spectral density estimate.
 
     .. math::

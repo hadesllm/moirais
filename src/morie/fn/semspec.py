@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEM common-factor restriction test (Wald)."""
 
 from ._containers import SpatialResult

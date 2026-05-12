@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Elman RNN hidden-state recurrence (vanilla simple-RNN formulation)."""
 import numpy as np
 from ._richresult import RichResult

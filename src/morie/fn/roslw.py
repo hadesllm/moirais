@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wind rose / rose plot construction. 'I make my own choices.' -- Rose Wilson"""
 
 from __future__ import annotations

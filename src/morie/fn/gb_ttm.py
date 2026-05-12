@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Efficacy of two-sample t test for location under normal distribution."""
 import numpy as np
 from scipy import stats

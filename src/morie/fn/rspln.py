@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Restricted cubic spline basis for flexible regression."""
 
 import numpy as np

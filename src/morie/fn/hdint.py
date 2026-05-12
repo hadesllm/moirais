@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""We are what we repeatedly do. Excellence is a habit. — Aristotle"""
+# morie.fn -- function file (hadesllm/morie)
+"""We are what we repeatedly do. Excellence is a habit. -- Aristotle"""
 
 from __future__ import annotations
 

@@ -13,7 +13,7 @@ def cooccurrence_matrix(
     binary: bool = True,
     normalize: bool = True,
 ) -> DescriptiveResult:
-    """Compute a co-occurrence (symbiosis) matrix from binary or count data.
+    r"""Compute a co-occurrence (symbiosis) matrix from binary or count data.
 
     Given a (samples x features) matrix, computes pairwise co-occurrence
     counts :math:`C_{ij} = \\sum_k x_{ki} x_{kj}` and derived metrics:

@@ -1,4 +1,4 @@
-"""Gender direction.."""
+r"""Gender direction.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_gender_direction"]
 
 
 def kamath_ch6_gender_direction(A, E):
-    """
+    r"""
     Gender direction.
 
     Formula: g = \frac{1}{|A|}\sum_{(a_i,a_j)\in A} (E(a_j) - E(a_i))
@@ -27,7 +27,7 @@ def kamath_ch6_gender_direction(A, E):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.19, p. 243
-    """
+    r"""
     A = np.atleast_1d(np.asarray(A, dtype=float))
     n = len(A)
     result = float(np.mean(A))

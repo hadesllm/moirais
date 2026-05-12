@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle"
+_QUOTE = "It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle"
 
 
 def time_duration(N: int, fs: float, **kwargs) -> DescriptiveResult:

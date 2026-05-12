@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bits-per-character (BPC): cross-entropy per character of an LM."""
 import numpy as np
 from ._richresult import RichResult

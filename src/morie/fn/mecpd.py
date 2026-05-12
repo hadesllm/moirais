@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Markov equivalence class (MEC): DAGs with same skeleton and v-structures."""
 import numpy as np
 from ._richresult import RichResult

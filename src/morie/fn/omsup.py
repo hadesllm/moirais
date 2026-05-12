@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Minimax optimization. 'Omega Supreme: defend.' -- Omega Supreme"""
 
 from __future__ import annotations

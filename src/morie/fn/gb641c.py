@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Confidence interval for median difference from median test."""
 import numpy as np
 from scipy import stats

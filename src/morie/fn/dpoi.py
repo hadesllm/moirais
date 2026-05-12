@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Poisson distribution probability mass function."""
 
 from typing import Union
@@ -8,7 +8,7 @@ import scipy.stats as stats
 
 
 def dpois(x: Union[int, np.ndarray], lambda_: float, log: bool = False) -> Union[float, np.ndarray]:
-    """
+    r"""
     Poisson distribution probability mass function.
 
     Computes :math:`P(X = k) = e^{-\\lambda} \\lambda^k / k!`.

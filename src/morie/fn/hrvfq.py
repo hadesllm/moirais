@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heart rate variability -- frequency-domain metrics.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal

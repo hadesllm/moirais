@@ -1,4 +1,4 @@
-"""Numbered display equation (8.13) from MVSML chapter 8.."""
+r"""Numbered display equation (8.13) from MVSML chapter 8.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_categorical_count_eq_8_13"]
 
 
 def mvsml_categorical_count_eq_8_13(m, Reproducing, Kernel, Hilbert, Spaces, Regression):
-    """
+    r"""
     Numbered display equation (8.13) from MVSML chapter 8.
 
     Formula: 264 599 15 32 74 m 296 8 Reproducing Kernel Hilbert Spaces Regression and Classiﬁcation Methods y = \mu1 + ZE\betaE + Pu1f + Pu2l + \epsilon,
@@ -35,7 +35,7 @@ def mvsml_categorical_count_eq_8_13(m, Reproducing, Kernel, Hilbert, Spaces, Reg
     References
     ----------
     MVSML, Eq. (8.13) [Multivariate Statistical Machine Learnin [Pages 251-336] [2026-04-16].pdf]
-    """
+    r"""
     m = np.atleast_1d(np.asarray(m, dtype=float))
     n = len(m)
     result = float(np.mean(m))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MLSMU6 convergence check. 'Jagan Eye.' -- Hiei, Yu Yu Hakusho"""
 
 from __future__ import annotations

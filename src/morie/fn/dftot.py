@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Total degrees of freedom."""
 
 def dftot(n: int) -> int:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OTIS cross-tabulation with chi-square test."""
 
 from __future__ import annotations

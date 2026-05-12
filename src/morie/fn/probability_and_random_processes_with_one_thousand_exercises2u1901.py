@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     CountModels expression (auto-extracted; see ref).
 
-    Formula: f : L ↦→ ( p,θ) is a bijection between S and its image S⊥ = R × [0,π) . See Figure 6.3.
+    Formula: f : L ↦-> ( p,θ) is a bijection between S and its image S⊥ = R × [0,π) . See Figure 6.3.
 
     Parameters
     ----------

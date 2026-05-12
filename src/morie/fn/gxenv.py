@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gene-by-environment interaction test."""
 
 __all__ = ["gxenv"]

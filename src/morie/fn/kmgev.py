@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """G-Eval: GPT-4 based evaluation using a prompted rubric and probabilistic score aggregation."""
 import numpy as np
 from ._richresult import RichResult

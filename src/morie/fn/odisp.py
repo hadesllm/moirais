@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""OTIS disparity index — max/min group mean ratio."""
+# morie.fn -- function file (hadesllm/morie)
+"""OTIS disparity index -- max/min group mean ratio."""
 
 from __future__ import annotations
 
@@ -59,4 +59,4 @@ def otis_disparity_index(
 
 
 def cheatsheet() -> str:
-    return "otis_disparity_index({}) -> OTIS disparity index — max/min group mean ratio."
+    return "otis_disparity_index({}) -> OTIS disparity index -- max/min group mean ratio."

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Panel data deconvolution: estimate fU and f_eps from Y_jt = X_jt'beta + U_j + eps_jt."""
 import numpy as np
 from ._richresult import RichResult

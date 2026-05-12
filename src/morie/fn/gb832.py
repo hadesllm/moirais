@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Van der Waerden test using inverse-normal scores."""
 import numpy as np
 from scipy import stats

@@ -40,16 +40,19 @@ xgboost_objective <- function(x, y, n_estimators = 100L, learning_rate = 0.1,
     set.seed(seed)
   }
   if (requireNamespace("xgboost", quietly = TRUE)) {
-    yv <- if (task == "classification") as.integer(as.factor(y)) - 1L else as.numeric(y)
+    yv <- if (task == "classification") factor(y) else as.numeric(y)
     obj <- if (task == "classification") "binary:logistic" else "reg:squarederror"
-    fit <- xgboost::xgboost(data = x, label = yv, nrounds = n_estimators,
+    # xgboost 2.x uses (x, y) not (data, label); y as factor selects classification
+    fit <- xgboost::xgboost(x = x, y = yv, nrounds = n_estimators,
                              eta = learning_rate, max_depth = max_depth,
                              lambda = reg_lambda, alpha = reg_alpha,
                              objective = obj, verbose = 0L)
     p <- predict(fit, x)
     if (task == "classification") {
       preds <- as.integer(p > 0.5)
-      train_score <- mean(preds == yv)
+      # yv is factor when classification; convert to 0/1 numeric for the comparison
+      yv_num <- if (is.factor(yv)) as.integer(yv) - 1L else yv
+      train_score <- mean(preds == yv_num)
     } else {
       train_score <- 1 - sum((p - yv)^2) / sum((yv - mean(yv))^2)
     }
@@ -64,7 +67,7 @@ xgboost_objective <- function(x, y, n_estimators = 100L, learning_rate = 0.1,
     if (!requireNamespace("gbm", quietly = TRUE)) {
       stop("install 'xgboost' (preferred) or 'gbm' for xgboost_objective")
     }
-    yv <- if (task == "classification") as.integer(as.factor(y)) - 1L else as.numeric(y)
+    yv <- if (task == "classification") factor(y) else as.numeric(y)
     df <- as.data.frame(x); df$.y <- yv
     distribution <- if (task == "classification") "bernoulli" else "gaussian"
     fit <- gbm::gbm(.y ~ ., data = df, distribution = distribution,
@@ -74,7 +77,9 @@ xgboost_objective <- function(x, y, n_estimators = 100L, learning_rate = 0.1,
     p <- gbm::predict.gbm(fit, df, n.trees = n_estimators, type = "response")
     if (task == "classification") {
       preds <- as.integer(p > 0.5)
-      train_score <- mean(preds == yv)
+      # yv is factor when classification; convert to 0/1 numeric for the comparison
+      yv_num <- if (is.factor(yv)) as.integer(yv) - 1L else yv
+      train_score <- mean(preds == yv_num)
     } else {
       train_score <- 1 - sum((p - yv)^2) / sum((yv - mean(yv))^2)
     }

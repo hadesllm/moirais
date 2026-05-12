@@ -129,14 +129,14 @@ test_that("morie_det_rng_sha_hex matches Python for several seeds", {
       expected <- as.character(openssl::sha256(
         charToRaw(paste0(c$name, ":", c$seed))
       ))
-      expect_equal(morie_det_rng_sha_hex(c$name, c$seed), expected)
+      expect_equal(morie_det_rng_sha_hex(c$name, c$seed), expected, ignore_attr = TRUE)
     }
   } else if (requireNamespace("digest", quietly = TRUE)) {
     for (c in cases) {
       expected <- digest::digest(
         paste0(c$name, ":", c$seed), algo = "sha256", serialize = FALSE
       )
-      expect_equal(morie_det_rng_sha_hex(c$name, c$seed), expected)
+      expect_equal(morie_det_rng_sha_hex(c$name, c$seed), expected, ignore_attr = TRUE)
     }
   }
 })

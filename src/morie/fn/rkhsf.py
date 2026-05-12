@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RKHS regression with a Gaussian kernel for genomic prediction."""
 from __future__ import annotations
 

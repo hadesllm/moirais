@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """City-block (Manhattan) distance."""
 
 from __future__ import annotations

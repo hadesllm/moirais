@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Coiflet wavelet filter coefficients."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Life is really simple, but we insist on making it complicated. — Confucius"
+_QUOTE = "Life is really simple, but we insist on making it complicated. -- Confucius"
 
 
 def coiflet_coeffs(order: int = 1) -> DescriptiveResult:

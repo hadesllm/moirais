@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Definition of rank as number of observations <= X_i in sample."""
 import numpy as np
 from ._richresult import RichResult

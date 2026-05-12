@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Higuchi fractal dimension."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def higuchi_fd(x: np.ndarray, kmax: int = 10) -> DescriptiveResult:
     """Estimate fractal dimension using the Higuchi method.
 
-    'Statistics is the grammar of science. — Karl Pearson'
+    'Statistics is the grammar of science. -- Karl Pearson'
     """
     from morie._waveform import higuchi_fd as _backend
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rejection-sampling fine-tuning: retain top-k per-prompt samples by reward, SFT on them."""
 import numpy as np
 from ._richresult import RichResult

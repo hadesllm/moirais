@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kernel survival function estimator (Fauzi Ch 4).
 
 For non-negative X:
@@ -32,7 +32,7 @@ def fauzi_survival_kernel(x, t=None, h=None):
     n = len(x)
     if n < 2:
         return RichResult(payload={"estimate": np.nan, "n": n,
-                                    "method": "fzsrv — too few obs"})
+                                    "method": "fzsrv -- too few obs"})
     if t is None:
         t = float(np.median(x))
     if h is None:

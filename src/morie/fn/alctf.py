@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Class-based TF-IDF (BERTopic): class c treated as a single document."""
 import numpy as np
 from ._richresult import RichResult

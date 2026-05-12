@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Speech signal formant and pitch extraction."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Normalized inverse-Gaussian process: NIG(alpha, G0) from inverse-Gaussian Levy measure."""
 import numpy as np
 from ._richresult import RichResult

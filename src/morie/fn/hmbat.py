@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Batch (offline) learning: train once on full dataset, then deploy."""
 import numpy as np
 from ._richresult import RichResult

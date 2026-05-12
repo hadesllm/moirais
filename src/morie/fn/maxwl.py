@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maxwell equations (EM field tensor)."""
 
 __all__ = ["maxwl"]

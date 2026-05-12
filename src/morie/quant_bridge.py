@@ -87,7 +87,7 @@ _BLOCK_TYPES = {
 
 
 # ---------------------------------------------------------------------------
-# GGMLTurboQuant — ctypes wrapper
+# GGMLTurboQuant -- ctypes wrapper
 # ---------------------------------------------------------------------------
 
 
@@ -126,7 +126,7 @@ class GGMLTurboQuant:
                 logger.debug("Could not load GGML library: %s", e)
 
         if not self._available:
-            logger.debug("GGML TurboQuant not available — using pure-NumPy fallback")
+            logger.debug("GGML TurboQuant not available -- using pure-NumPy fallback")
 
     def _setup_signatures(self) -> None:
         """Set up ctypes function signatures."""
@@ -270,7 +270,7 @@ def compile_ggml_lib(
 
     cc = shutil.which("cc") or shutil.which("clang") or shutil.which("gcc")
     if cc is None:
-        logger.warning("No C compiler found — cannot compile GGML library")
+        logger.warning("No C compiler found -- cannot compile GGML library")
         return None
 
     pkg_dir = Path(__file__).parent
@@ -288,7 +288,7 @@ def compile_ggml_lib(
 
     # The C source would need to be written; for now just validate the header
     logger.info(
-        "GGML C library compilation not yet implemented — header validated at %s. Using NumPy fallback.",
+        "GGML C library compilation not yet implemented -- header validated at %s. Using NumPy fallback.",
         header,
     )
     return None

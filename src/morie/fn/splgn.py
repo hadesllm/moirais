@@ -1,4 +1,4 @@
-"""We suffer more often in imagination than in reality. — Seneca"""
+"""We suffer more often in imagination than in reality. -- Seneca"""
 
 from __future__ import annotations
 

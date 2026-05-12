@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: whereρ = λ/µ and X( 0) = I . Deduce the limiting distribution of X( t) as t → ∞ .
+    Formula: whereρ = λ/µ and X( 0) = I . Deduce the limiting distribution of X( t) as t -> ∞ .
 
     Parameters
     ----------

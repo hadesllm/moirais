@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Number needed to harm (NNH) from a 2x2 table."""
 
 from ._containers import ESRes

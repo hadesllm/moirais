@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Voronoi-based natural neighbor weights."""
 
 import numpy as np

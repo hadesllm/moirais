@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fuzzy AND (t-norm) operation."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The whole is greater than the sum of its parts. — Aristotle"
+_QUOTE = "The whole is greater than the sum of its parts. -- Aristotle"
 
 
 def fuzzy_and(a, b, method: str = "min", **kwargs) -> DescriptiveResult:

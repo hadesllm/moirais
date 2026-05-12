@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """City-block (Manhattan / L1) spatial model."""
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ def cityblock_model(ideal_points, alternatives, *, beta: float = 1.0) -> Descrip
     ----------
     Armstrong (2014), Ch 4.
 
-    .. epigraph:: "These aren't the droids you'The whole is greater than the sum of its parts. — Aristotle'
+    .. epigraph:: "These aren't the droids you'The whole is greater than the sum of its parts. -- Aristotle'
     """
     X = np.asarray(ideal_points, dtype=float)
     Z = np.asarray(alternatives, dtype=float)

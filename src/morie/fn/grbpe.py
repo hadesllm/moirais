@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Byte-pair encoding merge step: merge most-frequent adjacent pair."""
 import numpy as np
 from ._richresult import RichResult

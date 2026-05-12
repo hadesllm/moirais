@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chi-squared distribution random variate generation."""
 
 from __future__ import annotations

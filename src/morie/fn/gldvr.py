@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Goldfeld-Quandt heteroscedasticity test."""
 
 from __future__ import annotations

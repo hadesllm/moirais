@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dropout forward pass (inverted dropout)."""
 from __future__ import annotations
 

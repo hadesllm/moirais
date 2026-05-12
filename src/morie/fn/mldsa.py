@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""ML-DSA (Dilithium) post-quantum signature — keygen."""
+# morie.fn -- function file (hadesllm/morie)
+"""ML-DSA (Dilithium) post-quantum signature -- keygen."""
 
 from __future__ import annotations
 
@@ -26,4 +26,4 @@ mldsa = mldsa_keygen
 
 
 def cheatsheet() -> str:
-    return "mldsa_keygen({}) -> ML-DSA (Dilithium) post-quantum signature — keygen."
+    return "mldsa_keygen({}) -> ML-DSA (Dilithium) post-quantum signature -- keygen."

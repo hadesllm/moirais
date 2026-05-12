@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ordered Optimal Classification for ordinal scales."""
 
 from __future__ import annotations

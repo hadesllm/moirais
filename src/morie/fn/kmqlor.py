@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """QLoRA: frozen base weights in NF4, LoRA adapters in BF16/FP16."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prior construction via moments: specify E[int f dG] for test functions f."""
 import numpy as np
 from scipy import stats

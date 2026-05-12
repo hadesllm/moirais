@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean squared error cost for linear regression (theta minimizes MSE)."""
 import numpy as np
 from ._richresult import RichResult

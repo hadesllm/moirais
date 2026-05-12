@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MA(q) model fitting via innovations algorithm."""
 
 import numpy as np

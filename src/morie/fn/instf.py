@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Instantaneous frequency via analytic signal."""
 
 from __future__ import annotations

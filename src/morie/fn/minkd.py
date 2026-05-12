@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Minkowski distance."""
 
 import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "The art of doing mathematics consists in finding that special case which contains all the germs of generality. — David Hilbert"
+_QUOTE = "The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"
 
 
 def minkowski_dist(x, y, p: float = 2.0, **kwargs) -> ESRes:

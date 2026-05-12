@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] P0[√n(ˆθn − 0) ≤ x] →
+    Formula: [EQ] P0[√n(ˆθn − 0) ≤ x] ->
 
     Parameters
     ----------

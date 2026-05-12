@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """FIR filter design via windowed sinc."""
 
 from __future__ import annotations

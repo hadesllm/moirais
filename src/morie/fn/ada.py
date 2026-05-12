@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""An unexamined life is not worth living. — Socrates"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""An unexamined life is not worth living. -- Socrates"""
 
 from __future__ import annotations
 

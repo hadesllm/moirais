@@ -4,7 +4,7 @@ import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "Numbers have life; they're not just symbols on paper. — Shakuntala Devi"
+_QUOTE = "Numbers have life; they're not just symbols on paper. -- Shakuntala Devi"
 
 
 def cross_entropy(p, q, **kwargs) -> ESRes:

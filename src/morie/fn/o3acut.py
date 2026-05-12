@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Acute ozone short-term mortality relative risk (NMMAPS / APHENA)."""
 
 from __future__ import annotations
@@ -90,7 +90,7 @@ def o3_acute_rr(
     Notes
     -----
     Quote: "Respiration is our most fundamental transaction with the
-    environment. We owe it careful measurement." — paraphrase of
+    environment. We owe it careful measurement." -- paraphrase of
     Bernardino Ramazzini.
     """
     key = outcome.lower().strip().replace(" ", "_").replace("-", "_")
@@ -110,7 +110,7 @@ def o3_acute_rr(
             f"unit must be 'ppb' or 'ug/m3', got {unit!r}."
         )
     if u != "ppb":
-        # Convert µg/m³ → ppb before applying the per-10-ppb scaling
+        # Convert µg/m³ -> ppb before applying the per-10-ppb scaling
         C = C / _PPB_TO_UGM3
         ref = ref / _PPB_TO_UGM3
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EDF statistic T_n(x) = nS_n(x) has binomial distribution with params n and F(x)."""
 import numpy as np
 from scipy import stats

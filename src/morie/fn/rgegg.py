@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Electrogastrogram (EGG) feature extraction (dominant frequency, power)."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CO₂-equivalent conversion using IPCC AR6 GWP100 factors."""
 
 from __future__ import annotations
 
 from ._containers import DescriptiveResult
 
-# IPCC AR6 Working Group I (2021) — Chapter 7, Table 7.SM.7
+# IPCC AR6 Working Group I (2021) -- Chapter 7, Table 7.SM.7
 # GWP-100 values (excluding climate-carbon feedbacks). Units: kg CO₂-eq / kg gas.
 _GWP100_AR6: dict[str, float] = {
     "co2": 1.0,
@@ -36,7 +36,7 @@ def co2_equivalent(
     emissions_kg: dict[str, float] | float,
     gas: str | None = None,
 ) -> DescriptiveResult:
-    """Difficulties strengthen the mind, as labor does the body. — Seneca"""
+    """Difficulties strengthen the mind, as labor does the body. -- Seneca"""
     if isinstance(emissions_kg, dict):
         total = 0.0
         breakdown: dict[str, float] = {}

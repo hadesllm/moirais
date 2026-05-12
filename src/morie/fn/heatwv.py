@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heat-wave detection via WMO percentile + consecutive-day criteria."""
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ def heat_wave_detect(
     ----------
     daily_max_C : array-like, shape (n_days,)
         Daily maximum surface air temperature, °C, in chronological
-        order. Gaps should be filled (np.nan is not handled — drop or
+        order. Gaps should be filled (np.nan is not handled -- drop or
         interpolate first).
     percentile : float, default 90.0
         Threshold percentile computed from the baseline window.
@@ -48,12 +48,12 @@ def heat_wave_detect(
         float, matching fn/ convention).
         extra contains:
 
-        - ``threshold_C`` — the percentile-derived temperature cutoff
-        - ``n_events`` — number of distinct heat-wave episodes
-        - ``event_lengths`` — list of episode lengths in days
-        - ``event_peaks_C`` — list of peak T_max within each episode
-        - ``hot_day_mask`` — boolean mask same length as input
-        - ``event_start_idx`` — start index of each episode
+        - ``threshold_C`` -- the percentile-derived temperature cutoff
+        - ``n_events`` -- number of distinct heat-wave episodes
+        - ``event_lengths`` -- list of episode lengths in days
+        - ``event_peaks_C`` -- list of peak T_max within each episode
+        - ``hot_day_mask`` -- boolean mask same length as input
+        - ``event_start_idx`` -- start index of each episode
 
     Examples
     --------
@@ -94,7 +94,7 @@ def heat_wave_detect(
     if not (0 < percentile < 100):
         raise ValueError("percentile must be in (0, 100).")
     if np.any(~np.isfinite(T)):
-        raise ValueError("daily_max_C has NaN or inf — fill gaps first.")
+        raise ValueError("daily_max_C has NaN or inf -- fill gaps first.")
 
     # Threshold from baseline window
     if baseline_window is None:

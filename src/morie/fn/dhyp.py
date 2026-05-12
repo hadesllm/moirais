@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hypergeometric distribution probability mass function."""
 
 from __future__ import annotations
@@ -20,7 +20,7 @@ def dhyp(x: Union[int, np.ndarray], m: int, n: int, k: int) -> Union[float, np.n
 
     scipy parameterization: ``hypergeom(M=m+n, n=m, N=k)``.
 
-    :param x: Non-negative integer(s) — number of successes drawn.
+    :param x: Non-negative integer(s) -- number of successes drawn.
     :param m: Number of success states in population (>= 0).
     :param n: Number of failure states in population (>= 0).
     :param k: Number of draws (>= 0, <= m + n).

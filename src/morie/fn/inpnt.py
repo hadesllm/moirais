@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Interior point method for linear programming."""
 
 from __future__ import annotations
@@ -55,7 +55,7 @@ def interior_point_lp(
         rp = b - A @ x
         rd = c - A.T @ lam - s
         rc = sigma * mu * np.ones(n) - X @ S @ np.ones(n)
-        # Use solve, not inv — numerically stable on ARM64 (ARM BLAS is
+        # Use solve, not inv -- numerically stable on ARM64 (ARM BLAS is
         # pickier about near-singular matrices than macOS Accelerate).
         XiS_reg = np.diag(s / (x + 1e-30)) + 1e-8 * np.eye(n)
         try:

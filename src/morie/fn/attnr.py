@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Disattenuation (correction for attenuation). 'Size matters not.'"""
 
 from __future__ import annotations

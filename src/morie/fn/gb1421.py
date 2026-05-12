@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chi-square test for independence in r x c contingency table."""
 import numpy as np
 from scipy import stats

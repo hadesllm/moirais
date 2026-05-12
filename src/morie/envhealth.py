@@ -10,14 +10,14 @@ an internal coverage report).
 The pipeline stages, top-down:
 
     exposure (μg/m³) ─┐
-                     ├─→ concentration-response (RR, log-RR)
+                     ├─-> concentration-response (RR, log-RR)
     outcome rate  ─┘           │
-                                ├─→ attributable fraction (PAF)
+                                ├─-> attributable fraction (PAF)
     population    ──────────────┤
-                                ├─→ mortality displaced
-                                ├─→ burden of pollution (DALYs)
-                                ├─→ equity analysis (concentration index)
-                                └─→ FSA-level stratification
+                                ├─-> mortality displaced
+                                ├─-> burden of pollution (DALYs)
+                                ├─-> equity analysis (concentration index)
+                                └─-> FSA-level stratification
 
 Each function takes tidy inputs, returns a dataclass, and cites the
 specific paper whose formula it implements.
@@ -368,7 +368,7 @@ def burden_of_pollution(
     outcome: str = "all_cause_mortality",
     reference_conc: float | None = None,
 ) -> BurdenResult:
-    """End-to-end pollution burden: exposure → RR → PAF → attributable cases.
+    """End-to-end pollution burden: exposure -> RR -> PAF -> attributable cases.
 
     Chains :func:`concentration_response_pm25` or
     :func:`concentration_response_no2`, then :func:`attributable_fraction`,
@@ -380,7 +380,7 @@ def burden_of_pollution(
         Population-mean exposure level (μg/m³).
     exposure_prevalence : float
         Proportion of the population at the exposure_mean level
-        (typically 1.0 for ambient air pollution — everyone breathes it).
+        (typically 1.0 for ambient air pollution -- everyone breathes it).
     baseline_rate : float
         Outcome rate (cases per person-year) in the counterfactual
         unexposed scenario.
@@ -561,12 +561,12 @@ def pollution_equity_analysis(
     is the mean of h across the population.
 
     Interpretation:
-      - CI = 0 → exposure is distributed equally across the income
+      - CI = 0 -> exposure is distributed equally across the income
         distribution.
-      - CI < 0 → lower-income individuals bear a disproportionately
+      - CI < 0 -> lower-income individuals bear a disproportionately
         higher exposure burden (pro-poor pollution burden, adverse
         equity).
-      - CI > 0 → higher-income individuals bear disproportionately more
+      - CI > 0 -> higher-income individuals bear disproportionately more
         exposure (less common for pollution).
 
     Parameters

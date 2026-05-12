@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayesian model comparison (DIC, WAIC, Bayes factor approximation)."""
 
 from __future__ import annotations

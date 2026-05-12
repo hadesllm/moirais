@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Softmax probability for class k (normalized exponentials)."""
 import numpy as np
 from ._richresult import RichResult

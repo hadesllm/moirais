@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gaussian location-scale kernel for DPM density estimation."""
 import numpy as np
 from ._richresult import RichResult

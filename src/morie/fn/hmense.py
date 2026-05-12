@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ensemble evaluation: average or vote predictions across several models."""
 import numpy as np
 from ._richresult import RichResult

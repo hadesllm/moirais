@@ -1,4 +1,4 @@
-"""Crossformer — cross-time + cross-dimension attention."""
+"""Crossformer -- cross-time + cross-dimension attention."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["crossformer"]
 
 def crossformer(X, y, seg_len):
     """
-    Crossformer — cross-time + cross-dimension attention
+    Crossformer -- cross-time + cross-dimension attention
 
     Formula: two-stage attention DSW + HED
 
@@ -34,8 +34,8 @@ def crossformer(X, y, seg_len):
     n = len(y)
     result = float(np.mean(y))
     se = float(np.std(y, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Crossformer — cross-time + cross-dimension attention"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Crossformer -- cross-time + cross-dimension attention"})
 
 
 def cheatsheet():
-    return "crsfmr: Crossformer — cross-time + cross-dimension attention"
+    return "crsfmr: Crossformer -- cross-time + cross-dimension attention"

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LASSO regression via coordinate descent."""
 
 from __future__ import annotations

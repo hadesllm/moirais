@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Zero-inflated Poisson regression via EM algorithm."""
 
 import numpy as np

@@ -11,7 +11,7 @@ def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnum
     r"""
     Nonparametric expression (auto-extracted; see ref).
 
-    Formula: normal kernel p = \/{2^2 — 1) = 0.55.Suppose that m > Pn. Then
+    Formula: normal kernel p = \/{2^2 -- 1) = 0.55.Suppose that m > Pn. Then
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Negative binomial regression. 'Always in motion is the future.'"""
 
 from __future__ import annotations

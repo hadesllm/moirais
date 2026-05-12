@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kneser-Ney smoothing: absolute discount + continuation probability."""
 import numpy as np
 from ._richresult import RichResult

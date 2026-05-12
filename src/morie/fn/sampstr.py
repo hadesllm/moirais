@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stratified random sample (proportional allocation)."""
 
 from typing import Sequence, Union
@@ -6,7 +6,7 @@ import numpy as np
 def sampstr(strata: dict, n_total: int, seed: int = 42) -> dict:
     """Stratified sample with proportional allocation.
 
-    `strata` maps stratum name → list of population units. Returns
+    `strata` maps stratum name -> list of population units. Returns
     same-keyed dict with sampled units; sample sizes proportional to
     stratum sizes.
     """

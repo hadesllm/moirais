@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Raven's progressive matrices scoring. 'Azarath Metrion Zinthos!' -- Raven"""
 
 from __future__ import annotations

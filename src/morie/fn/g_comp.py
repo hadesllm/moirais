@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """G-computation (outcome regression) ATE estimator with bootstrap SE."""
 
 import warnings

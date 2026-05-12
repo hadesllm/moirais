@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Line spectral frequencies to AR coefficients."""
 
 from __future__ import annotations

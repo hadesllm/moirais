@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_8_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] n = (2 + δ)n+1, δ > 0, then bn > 0, b n → ∞
+    Formula: [EQ] n = (2 + δ)n+1, δ > 0, then bn > 0, b n -> ∞
 
     Parameters
     ----------

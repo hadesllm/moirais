@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ARE of Theorem 13.2.2 remains valid for two-sided alternatives."""
 import numpy as np
 from ._richresult import RichResult

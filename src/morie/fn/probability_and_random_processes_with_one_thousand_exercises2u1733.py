@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: [EQ] ˆpi j( t) ≥ limn→∞ Pi( X( t) = j, Tn> t)
+    Formula: [EQ] ˆpi j( t) ≥ limn->∞ Pi( X( t) = j, Tn> t)
 
     Parameters
     ----------

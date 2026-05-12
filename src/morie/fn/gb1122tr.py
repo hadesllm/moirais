@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kendall tau as test against trend in time series."""
 import numpy as np
 from scipy import stats

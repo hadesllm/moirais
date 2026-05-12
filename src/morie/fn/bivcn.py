@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bivariate causal direction test via independence of residuals in ANM."""
 import numpy as np
 from scipy import stats

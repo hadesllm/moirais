@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Final Prediction Error for AR model order selection."""
 
 from __future__ import annotations

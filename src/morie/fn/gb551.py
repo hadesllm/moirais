@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rank-order statistics: rank of |D_i| among |D_1|,...,|D_n|."""
 import numpy as np
 from scipy import stats

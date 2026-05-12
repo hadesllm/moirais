@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DeiT distillation loss: combines CE on class token + CE on distillation token."""
 import numpy as np
 from ._richresult import RichResult

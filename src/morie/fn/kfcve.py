@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-fold cross-validation prediction error."""
 import numpy as np
 from ._richresult import RichResult

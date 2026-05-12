@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Genomic selection response to selection prediction."""
 import numpy as np
 from ._richresult import RichResult

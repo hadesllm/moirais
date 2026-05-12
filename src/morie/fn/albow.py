@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bag-of-words vector: per-document term-count vector over the fixed vocabulary."""
 import numpy as np
 from ._richresult import RichResult

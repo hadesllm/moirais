@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""ML-DSA (Dilithium) post-quantum signature — verify."""
+# morie.fn -- function file (hadesllm/morie)
+"""ML-DSA (Dilithium) post-quantum signature -- verify."""
 
 from __future__ import annotations
 
@@ -29,4 +29,4 @@ mldsv = mldsa_verify
 
 
 def cheatsheet() -> str:
-    return "mldsa_verify({}) -> ML-DSA (Dilithium) post-quantum signature — verify."
+    return "mldsa_verify({}) -> ML-DSA (Dilithium) post-quantum signature -- verify."

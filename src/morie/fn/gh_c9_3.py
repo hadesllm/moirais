@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bernstein polynomial prior contraction rate for density on [0,1]."""
 import numpy as np
 from ._richresult import RichResult

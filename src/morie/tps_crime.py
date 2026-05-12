@@ -1,4 +1,4 @@
-"""morie.tps_crime — cross-category crime analyses for TPS datasets.
+"""morie.tps_crime -- cross-category crime analyses for TPS datasets.
 
 Builds on top of morie.tps_datasets + tps_io to compare incidents
 ACROSS the 13 TPS categories. Useful for:
@@ -51,12 +51,12 @@ def yoy_panel(categories: list[str] | None = None,
             pass
     if not series:
         return RichResult(
-            title="TPS YoY panel — cross-category",
+            title="TPS YoY panel -- cross-category",
             warnings=["no datasets loaded with year column"],
         )
     panel = pd.concat(series, axis=1).fillna(0).astype(int).sort_index()
     return RichResult(
-        title="TPS — year-over-year panel (cross-category)",
+        title="TPS -- year-over-year panel (cross-category)",
         summary_lines=[
             ("Categories", len(series)),
             ("Years", f"{int(panel.index.min())}–{int(panel.index.max())}"),
@@ -115,7 +115,7 @@ def composite_index(categories: list[str] | None = None,
         "hood": panel.index, "composite": composite,
     }).sort_values("composite", ascending=False)
     return RichResult(
-        title="TPS — composite crime-risk index per neighbourhood",
+        title="TPS -- composite crime-risk index per neighbourhood",
         summary_lines=[
             ("Categories used", len(used)),
             ("Neighbourhoods scored", int(panel.shape[0])),
@@ -150,7 +150,7 @@ def composite_index(categories: list[str] | None = None,
 def bivariate_morans_i(cat_a: str, cat_b: str,
                        *, sample_rows: int | None = 50_000,
                        k_neighbours: int = 5) -> RichResult:
-    """Bivariate Moran's I — does category A's count in a hood
+    """Bivariate Moran's I -- does category A's count in a hood
     correlate with category B's count in NEIGHBOURING hoods?
     """
     df_a = load_tps_dataset(cat_a, nrows=sample_rows)
@@ -160,7 +160,7 @@ def bivariate_morans_i(cat_a: str, cat_b: str,
     common = a.index.intersection(b.index)
     if common.size < 5:
         return RichResult(
-            title=f"Bivariate Moran's I — {cat_a} vs {cat_b}",
+            title=f"Bivariate Moran's I -- {cat_a} vs {cat_b}",
             warnings=[f"only {common.size} common hoods"],
         )
     a = a.loc[common].astype(float)
@@ -173,7 +173,7 @@ def bivariate_morans_i(cat_a: str, cat_b: str,
     n = coords.shape[0]
     if n < 5:
         return RichResult(
-            title=f"Bivariate Moran's I — {cat_a} vs {cat_b}",
+            title=f"Bivariate Moran's I -- {cat_a} vs {cat_b}",
             warnings=[f"only {n} hoods with valid centroids"],
         )
     # k-NN row-standardised W
@@ -201,7 +201,7 @@ def bivariate_morans_i(cat_a: str, cat_b: str,
     # Pearson r as comparison (no spatial lag)
     r = float(np.corrcoef(a, b)[0, 1])
     return RichResult(
-        title=f"Bivariate Moran's I — {cat_a} ↔ {cat_b}",
+        title=f"Bivariate Moran's I -- {cat_a} ↔ {cat_b}",
         summary_lines=[
             ("Hoods compared", int(n)),
             ("Bivariate Moran's I_AB", round(I_ab, 4)),
@@ -239,7 +239,7 @@ def category_correlation_matrix(*, sample_rows: int | None = 50_000) -> RichResu
     panel = pd.concat(series, axis=1).fillna(0).astype(float)
     corr = panel.corr().round(3)
     return RichResult(
-        title="TPS — per-hood correlation across categories",
+        title="TPS -- per-hood correlation across categories",
         summary_lines=[
             ("Categories", len(series)),
             ("Hoods (union)", int(panel.shape[0])),

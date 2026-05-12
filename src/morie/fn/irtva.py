@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Per-legislator IRT variance from posterior."""
 
 from __future__ import annotations

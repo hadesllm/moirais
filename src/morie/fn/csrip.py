@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Restricted Isometry Property (RIP) check."""
 
 import numpy as np

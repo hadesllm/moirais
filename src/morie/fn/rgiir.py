@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""IIR Butterworth filter — Rangayyan Ch 3."""
+# morie.fn -- function file (hadesllm/morie)
+"""IIR Butterworth filter -- Rangayyan Ch 3."""
 from __future__ import annotations
 
 import numpy as np
@@ -68,4 +68,4 @@ def rangayyan_iir_filter(x, cutoff, order=4, fs=1.0, btype="low"):
 
 
 def cheatsheet():
-    return "rgiir: Butterworth IIR filter (zero-phase) — Rangayyan Ch 3"
+    return "rgiir: Butterworth IIR filter (zero-phase) -- Rangayyan Ch 3"

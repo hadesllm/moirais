@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RR interval series from R-peak indices."""
 
 from __future__ import annotations

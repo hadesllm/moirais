@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fibonacci golden ratio convergence."""
 
 from __future__ import annotations

@@ -488,7 +488,7 @@ def mrm_random_latin(k: int, *, seed: int = 42) -> pd.DataFrame:
     Standard algorithm: build the cyclic Latin square, then randomly
     permute rows, columns, and symbols.  Produces a uniform sample
     over a subset of Latin squares (not a uniform sample over all
-    Latin squares — exact uniform sampling requires Jacobson-Matthews
+    Latin squares -- exact uniform sampling requires Jacobson-Matthews
     for k > 5).
     """
     rng = np.random.default_rng(seed)

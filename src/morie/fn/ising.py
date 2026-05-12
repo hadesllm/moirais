@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ising model partition function (2D, Onsager)."""
 
 __all__ = ["ising"]

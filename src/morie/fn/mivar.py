@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moran's I variance Var[I] under normality."""
 
 from ._containers import SpatialResult

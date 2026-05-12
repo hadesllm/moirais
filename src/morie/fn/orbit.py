@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Mastering others is strength; mastering yourself is true power. — Lao Tzu"""
+# morie.fn -- function file (hadesllm/morie)
+"""Mastering others is strength; mastering yourself is true power. -- Lao Tzu"""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Laplace functional of CRM: E[exp(-integral f dM)] = exp(-integral (1-e^{-f*u}) nu(du,dx))."""
 import numpy as np
 from ._richresult import RichResult

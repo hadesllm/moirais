@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Handling zero differences in sign test (discard ties, adjust n)."""
 import numpy as np
 from scipy import stats

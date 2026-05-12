@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Groundedness reward: fraction of answer tokens supported by retrieved context."""
 import numpy as np
 from ._richresult import RichResult

@@ -8,7 +8,7 @@ __all__ = ["statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_5
 
 
 def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_540(x):
-    """An unexamined life is not worth living. — Socrates"""
+    """An unexamined life is not worth living. -- Socrates"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

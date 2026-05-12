@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: which tends to zero as n → ∞ . Therefore ∥I( φ) − I( ρ) ∥2 = 0, implying as claimed that
+    Formula: which tends to zero as n -> ∞ . Therefore ∥I( φ) − I( ρ) ∥2 = 0, implying as claimed that
 
     Parameters
     ----------

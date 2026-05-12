@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Mediation analysis — Baron-Kenny with Sobel test."""
+# morie.fn -- function file (hadesllm/morie)
+"""Mediation analysis -- Baron-Kenny with Sobel test."""
 
 import numpy as np
 from scipy import stats
@@ -68,4 +68,4 @@ def mediation_analysis(y, treatment, mediator, covariates=None, cdf=None):
 
 
 def cheatsheet() -> str:
-    return "mediation_analysis({}) -> Mediation analysis — Baron-Kenny with Sobel test."
+    return "mediation_analysis({}) -> Mediation analysis -- Baron-Kenny with Sobel test."

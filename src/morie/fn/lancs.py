@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lanczos algorithm for largest eigenvalues of symmetric matrices."""
 
 from __future__ import annotations

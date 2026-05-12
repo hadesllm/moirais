@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Real-time effective reproduction number (Rt) estimation."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maximum entropy distribution subject to moment constraints."""
 
 __all__ = ["mxent"]

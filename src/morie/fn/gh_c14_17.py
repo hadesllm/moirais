@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Relations between classes of discrete random probability measures."""
 import numpy as np
 from ._richresult import RichResult

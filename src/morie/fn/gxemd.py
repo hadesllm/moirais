@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Genotype-by-environment interaction (G×E) main-and-interaction model."""
 from __future__ import annotations
 
@@ -23,9 +23,9 @@ def gxe_interaction_model(x, y, env):
 
     Parameters
     ----------
-    x : array-like (n,)  — genotype IDs
-    y : array-like (n,)  — phenotype
-    env : array-like (n,) — environment IDs
+    x : array-like (n,)  -- genotype IDs
+    y : array-like (n,)  -- phenotype
+    env : array-like (n,) -- environment IDs
 
     Returns
     -------

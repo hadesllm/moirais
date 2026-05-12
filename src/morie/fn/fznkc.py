@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Naive kernel-smoothed CvM statistic."""
 import numpy as np
 from scipy import stats

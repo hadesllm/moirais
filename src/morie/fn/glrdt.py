@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generalized Likelihood Ratio change-point detector."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "We are what we repeatedly do. Excellence is not an act, but a habit. — Aristotle"
+_QUOTE = "We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle"
 
 
 def glr_detector(x, window: int = 50, **kwargs) -> DescriptiveResult:

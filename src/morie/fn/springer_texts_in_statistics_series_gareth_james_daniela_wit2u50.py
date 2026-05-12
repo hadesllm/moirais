@@ -11,7 +11,7 @@ def springer_texts_in_statistics_series_gareth_james_daniela_wit_chapter_2_unnum
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: to come from either class—that is, π1 = π2 =0 .5—then by inspection of
+    Formula: to come from either class--that is, π1 = π2 =0 .5--then by inspection of
 
     Parameters
     ----------

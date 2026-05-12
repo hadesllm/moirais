@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DALL-E autoregressive text-to-image token modeling."""
 import numpy as np
 from ._richresult import RichResult

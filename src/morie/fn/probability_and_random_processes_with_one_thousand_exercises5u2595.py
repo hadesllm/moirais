@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: is defined for a broad class of functions ψ :( − π,π ] → C. We claim that
+    Formula: is defined for a broad class of functions ψ :( − π,π ] -> C. We claim that
 
     Parameters
     ----------

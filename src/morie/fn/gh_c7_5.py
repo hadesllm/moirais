@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP mixture consistency for general kernel: consistency at Lebesgue a.e. densities."""
 import numpy as np
 from ._richresult import RichResult

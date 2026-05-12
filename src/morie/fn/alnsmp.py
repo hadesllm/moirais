@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Skip-gram with negative sampling loss: positive pair + k negatives."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LM Breusch-Pagan test (general heteroskedasticity)."""
 
 from ._containers import SpatialResult

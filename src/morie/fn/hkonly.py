@@ -10,7 +10,7 @@ def hadamard_response(x, epsilon):
     """
     Hadamard response for LDP
 
-    Formula: map x → ±1 via Hadamard rows
+    Formula: map x -> ±1 via Hadamard rows
 
     Parameters
     ----------

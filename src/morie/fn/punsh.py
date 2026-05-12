@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """L1/Elastic net regularization path. 'If you're guilty, you're dead.' -- Punisher"""
 
 from __future__ import annotations

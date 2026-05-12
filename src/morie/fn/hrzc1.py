@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Powell (1984) censored least-absolute-deviations (Horowitz 2009, Ch 6).
 
 Model:   Y* = X'beta + u,   Y = max(c, Y*)

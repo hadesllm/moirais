@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: [EQ] → − (τ b − )Lambda1(τ)) as n → ∞
+    Formula: [EQ] -> − (τ b − )Lambda1(τ)) as n -> ∞
 
     Parameters
     ----------

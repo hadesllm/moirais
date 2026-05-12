@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pearl's Ladder of Causation: three rungs (association, intervention, counterfactual)."""
 import numpy as np
 from scipy import stats

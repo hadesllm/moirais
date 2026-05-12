@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Event latency measurement from stimulus."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Z-estimator asymptotic distribution (Kosorok 2008, Ch 5).
 
 A Z-estimator theta_n solves P_n psi(.; theta) = 0.  Under regularity,

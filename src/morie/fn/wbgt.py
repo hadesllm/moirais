@@ -19,7 +19,7 @@ def wet_bulb_globe_temp(
     The gold-standard heat-stress index used by ISO 7243, ACGIH, NIOSH,
     and most occupational heat-safety programs. Accounts for
     temperature (T_air), humidity (via wet-bulb), and radiant heat
-    (via globe temperature) simultaneously — strictly more informative
+    (via globe temperature) simultaneously -- strictly more informative
     than the NWS Heat Index, which only uses T_air + RH.
 
     Parameters
@@ -50,12 +50,12 @@ def wet_bulb_globe_temp(
 
     References
     ----------
-    ISO 7243:2017. "Ergonomics of the thermal environment —
+    ISO 7243:2017. "Ergonomics of the thermal environment --
     Assessment of heat stress using the WBGT index."
 
     Notes
     -----
-    Quote: "I must complete my mission." — BB-8
+    Quote: "I must complete my mission." -- BB-8
     """
     Ta = np.atleast_1d(np.asarray(T_air_C, dtype=float))
     Tw = np.atleast_1d(np.asarray(T_wet_C, dtype=float))

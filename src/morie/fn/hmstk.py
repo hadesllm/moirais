@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stacking (blending): meta-learner combines outputs of base learners."""
 import numpy as np
 from ._richresult import RichResult

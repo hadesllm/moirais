@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Homomorphic deconvolution via complex cepstrum."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prediction interval for a new study from random-effects meta-analysis."""
 
 from typing import Union

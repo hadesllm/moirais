@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chinese restaurant process simulation. 'What we cannot speak about we must pass over in silence. -- Wittgenstein'"""
 from __future__ import annotations
 

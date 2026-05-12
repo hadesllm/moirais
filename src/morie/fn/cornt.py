@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Correlation entropy (K2, Grassberger-Procaccia)."""
 
 import numpy as np

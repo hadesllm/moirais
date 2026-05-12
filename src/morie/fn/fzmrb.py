@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Boundary-free MRL estimator (Fauzi Ch 4).
 
 Standard kernel MRL has boundary bias near t=0 because the Gaussian
@@ -35,7 +35,7 @@ def fauzi_mrl_boundary_free(x, t=None, h=None):
     n = len(x)
     if n < 2:
         return RichResult(payload={"estimate": np.nan, "se": np.nan, "n": n,
-                                    "method": "fzmrb — too few obs"})
+                                    "method": "fzmrb -- too few obs"})
     if t is None:
         t = float(np.median(x))
     if t <= 0:
@@ -50,14 +50,14 @@ def fauzi_mrl_boundary_free(x, t=None, h=None):
     if S_y <= 0:
         return RichResult(payload={"estimate": np.nan, "S_hat": S_y,
                                     "n": n, "t": t,
-                                    "method": "fzmrb — S(t)=0"})
+                                    "method": "fzmrb -- S(t)=0"})
 
     diffs = x - t
     above = diffs > 0
     if not above.any():
         return RichResult(payload={"estimate": 0.0, "S_hat": S_y,
                                     "n": n, "t": t,
-                                    "method": "fzmrb — no x>t"})
+                                    "method": "fzmrb -- no x>t"})
     m_hat = float(np.mean(diffs[above]))
     second = float(np.mean((diffs[above]) ** 2))
     sigma2 = max((second - m_hat * m_hat) / S_y, 0.0)

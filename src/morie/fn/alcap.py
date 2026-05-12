@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Image captioning pipeline: visual encoder → projector → LLM decoder."""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Image captioning pipeline: visual encoder -> projector -> LLM decoder."""
 import numpy as np
 from ._richresult import RichResult
 
@@ -8,7 +8,7 @@ __all__ = ["alammar_image_captioning_pipeline"]
 
 def alammar_image_captioning_pipeline(img, visual_encoder, projector, llm):
     """
-    Image captioning pipeline: visual encoder → projector → LLM decoder
+    Image captioning pipeline: visual encoder -> projector -> LLM decoder
 
     Formula: z = Proj(VisEnc(img));  caption = LLM(inputs=[z; prompt])
 
@@ -36,8 +36,8 @@ def alammar_image_captioning_pipeline(img, visual_encoder, projector, llm):
     n = len(img)
     result = float(np.mean(img))
     se = float(np.std(img, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Image captioning pipeline: visual encoder → projector → LLM decoder"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Image captioning pipeline: visual encoder -> projector -> LLM decoder"})
 
 
 def cheatsheet():
-    return "alcap: Image captioning pipeline: visual encoder → projector → LLM decoder"
+    return "alcap: Image captioning pipeline: visual encoder -> projector -> LLM decoder"

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bartik (shift-share) instrumental variable estimator.
 
 The Bartik instrument combines industry-level national growth rates

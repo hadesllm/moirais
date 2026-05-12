@@ -23,7 +23,7 @@ def svm_genomic(x, y, markers, C: float = 1.0, epsilon: float = 0.1,
 
     Parameters
     ----------
-    x : array-like (n,) or (n,q) — fixed-effect features, currently
+    x : array-like (n,) or (n,q) -- fixed-effect features, currently
         concatenated to `markers`.
     y : array-like (n,)
     markers : array-like (n, m)

@@ -11,7 +11,7 @@ def spatiotemporal_methods_in_environmental_epidemiology_with_r__chapter_15_equa
     """
     GeneralStatistics equation extracted from spatiotemporal-methods-in-environmental-epidemiology-with-r-chapman-amp-hall-crc-texts-in-statistical-science-2nbsped-1032397810-9781032397818.
 
-    Formula: 15.31, G(m)→ 1−exp[−(m− u)/σ ], m > u, in words to an exponential distr
+    Formula: 15.31, G(m)-> 1−exp[−(m− u)/σ ], m > u, in words to an exponential distr
 
     Parameters
     ----------

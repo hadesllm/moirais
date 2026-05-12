@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""2D max pooling.
 
 Downsampling via maximum operation over local windows.

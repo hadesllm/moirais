@@ -109,7 +109,7 @@ def who_aqg_compliance(
         )
     thresholds = bands[a]
     # Order from strictest (aqg) to most permissive (it1). Missing
-    # tiers are fine — e.g. SO₂ has only AQG + IT-1 + IT-2.
+    # tiers are fine -- e.g. SO₂ has only AQG + IT-1 + IT-2.
     ordered_tiers = [t for t in ("aqg", "it4", "it3", "it2", "it1")
                      if t in thresholds]
 

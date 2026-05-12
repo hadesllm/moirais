@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Calabi-Yau manifold Hodge numbers and Euler characteristic."""
 
 from __future__ import annotations

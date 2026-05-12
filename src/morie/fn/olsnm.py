@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OLS normal equations for multiple regression."""
 import numpy as np
 from ._richresult import RichResult

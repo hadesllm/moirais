@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fano inequality: lower bound on probability of error in hypothesis testing."""
 import numpy as np
 from scipy import stats

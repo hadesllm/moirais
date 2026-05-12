@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Number needed to treat (NNT) from a 2x2 table."""
 
 import numpy as np

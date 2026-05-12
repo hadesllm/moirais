@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""A journey of a thousand miles begins with a single step. — Lao Tzu"""
+# morie.fn -- function file (hadesllm/morie)
+"""A journey of a thousand miles begins with a single step. -- Lao Tzu"""
 
 from morie.survey import hajek_mean as _fn
 

@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: → X, and furthermore sup n E( |Xn|α)< ∞ for someα> 1. It follows that
+    Formula: -> X, and furthermore sup n E( |Xn|α)< ∞ for someα> 1. It follows that
 
     Parameters
     ----------

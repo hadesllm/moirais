@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] Prove thatf−1 : R \ {3} → R \ {1} where f−1(x) = x
+    Formula: [EQ] Prove thatf−1 : R \ {3} -> R \ {1} where f−1(x) = x
 
     Parameters
     ----------

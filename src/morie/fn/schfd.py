@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Schoenfeld residuals test for PH assumption."""
 
 from __future__ import annotations

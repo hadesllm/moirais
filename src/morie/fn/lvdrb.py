@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Levinson-Durbin recursion for AR model from ACF."""
 
 from __future__ import annotations

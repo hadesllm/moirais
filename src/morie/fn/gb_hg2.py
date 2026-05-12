@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hodges-Lehmann two-sample shift estimator based on all pairwise differences."""
 import numpy as np
 from ._richresult import RichResult

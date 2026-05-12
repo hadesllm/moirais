@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""He who is brave is free. — Seneca"""
+# morie.fn -- function file (hadesllm/morie)
+"""He who is brave is free. -- Seneca"""
 
 from __future__ import annotations
 

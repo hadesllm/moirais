@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prohorov metric on M(X): metrizes weak convergence on Polish spaces."""
 import numpy as np
 from ._richresult import RichResult

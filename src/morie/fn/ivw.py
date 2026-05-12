@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Instrumental variable Wald estimate (MR-style)."""
 
 from __future__ import annotations

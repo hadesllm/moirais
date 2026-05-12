@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Unbiased autocorrelation function (ACF) estimate."""
 import numpy as np
 from ._richresult import RichResult

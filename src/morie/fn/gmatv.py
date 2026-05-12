@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Genomic relationship matrix (VanRaden 2008, methods 1 and 2)."""
 from __future__ import annotations
 

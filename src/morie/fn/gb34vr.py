@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Variance of total runs up-and-down statistic."""
 import numpy as np
 from scipy import stats

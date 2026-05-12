@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Comoving distance and lookback time."""
 
 __all__ = ["cosmx"]

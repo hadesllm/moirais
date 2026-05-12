@@ -14,24 +14,17 @@
 #' @param W,U,b Optional weight matrices and bias.
 #' @param hidden_size Hidden size \code{H}.
 #' @param seed RNG seed for default weights.
-<<<<<<< HEAD
 #' @param deterministic_seed Optional integer; if non-NULL, a SHA-keyed
 #'   seed from \code{\link{morie_det_rng}("lstmc", deterministic_seed)} is
 #'   installed before sampling so Py<->R streams agree.  Overrides
 #'   \code{seed} when set.
-=======
->>>>>>> origin/main
 #' @return Named list \code{(h, c, estimate, i, f, g, o, method)}.
 #' @references Hochreiter & Schmidhuber (1997), Neural Computation 9(8).
 #' @export
 lstmc_lstm_cell <- function(x, h_prev = NULL, c_prev = NULL,
                             W = NULL, U = NULL, b = NULL,
-<<<<<<< HEAD
                             hidden_size = NULL, seed = 0L,
                             deterministic_seed = NULL) {
-=======
-                            hidden_size = NULL, seed = 0L) {
->>>>>>> origin/main
   x <- as.numeric(x); n_in <- length(x)
   if (is.null(hidden_size)) {
     hidden_size <- if (!is.null(h_prev)) length(h_prev)
@@ -41,15 +34,11 @@ lstmc_lstm_cell <- function(x, h_prev = NULL, c_prev = NULL,
   H <- as.integer(hidden_size)
   if (is.null(h_prev)) h_prev <- rep(0, H)
   if (is.null(c_prev)) c_prev <- rep(0, H)
-<<<<<<< HEAD
   if (!is.null(deterministic_seed)) {
     morie_det_rng("lstmc", deterministic_seed)
   } else {
     set.seed(seed)
   }
-=======
-  set.seed(seed)
->>>>>>> origin/main
   if (is.null(W)) W <- matrix(stats::rnorm(4 * H * n_in, 0, 0.1), 4 * H, n_in)
   if (is.null(U)) U <- matrix(stats::rnorm(4 * H * H, 0, 0.1), 4 * H, H)
   if (is.null(b)) b <- rep(0, 4 * H)

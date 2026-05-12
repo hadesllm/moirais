@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cramer-von Mises test with kernel-smoothing (Fauzi Ch 5).
 
     W_n^2 = n * integral ( F_hat_h(t) - F_0(t) )^2 dF_0(t).
@@ -56,12 +56,12 @@ def fauzi_cvm_smoothed(x, cdf="norm", args=None, h=None):
     n = len(x)
     if n < 5:
         return RichResult(payload={"statistic": np.nan, "p_value": np.nan,
-                                    "n": n, "method": "fzcvm — too few obs"})
+                                    "n": n, "method": "fzcvm -- too few obs"})
     if h is None:
         h = float(_silverman_h(x))
 
     if callable(cdf):
-        # Generic continuous reference — uniform-on-x-range quadrature
+        # Generic continuous reference -- uniform-on-x-range quadrature
         t_grid = np.linspace(np.min(x), np.max(x), max(200, n))
         F_ref = np.array([cdf(g) for g in t_grid])
     else:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PCG-EEG coupling analysis for auditory evoked response."""
 import numpy as np
 from ._richresult import RichResult

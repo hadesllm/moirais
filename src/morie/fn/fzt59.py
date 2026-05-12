@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 5.9: Edgeworth expansion for smoothed Wilcoxon with fourth-order kernel."""
 import numpy as np
 from ._richresult import RichResult

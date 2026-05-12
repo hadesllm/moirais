@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Risk difference (attributable risk) effect size for a 2x2 table."""
 
 import math

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Doubly-robust ATE estimator (IPW + outcome regression)."""
 
 from __future__ import annotations

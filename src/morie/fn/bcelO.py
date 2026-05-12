@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Binary cross-entropy loss for binary genomic outcomes."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Instantaneous amplitude (envelope) via Hilbert transform."""
 
 from __future__ import annotations

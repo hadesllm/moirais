@@ -1,4 +1,4 @@
-"""`morie verify-earth-engine` — one-command EE auth smoke check.
+"""`morie verify-earth-engine` -- one-command EE auth smoke check.
 
 Companion to `morie verify-pollution` (Workstream 6). This CLI
 confirms whether the Earth Engine auth pipeline is wired up end-to-
@@ -12,9 +12,9 @@ Steps it attempts, in order:
 4. Can we issue a trivial query? (fetch one pixel of a small image)
 
 Exit codes mirror ``verify-pollution``:
-- 0  — all stages passed
-- 1  — auth failure (missing credentials, expired token)
-- 2  — environment error (missing library, bad network)
+- 0  -- all stages passed
+- 1  -- auth failure (missing credentials, expired token)
+- 2  -- environment error (missing library, bad network)
 
 See also ``.claude/plans/2026-04-17-pollution-health-mission.md`` §7
 (post-registration smoke check) and
@@ -61,7 +61,7 @@ def _probe_credentials() -> tuple[bool, str]:
         return True, f"service account {sa} @ {project} (key at {key})"
     if project:
         return True, (
-            f"user OAuth flow (project={project}; no SA configured — "
+            f"user OAuth flow (project={project}; no SA configured -- "
             "will attempt interactive ADC)"
         )
     return False, (
@@ -79,7 +79,7 @@ def _probe_initialize() -> tuple[bool, str]:
         return False, f"MissingCredentialsError: {exc}"
     except Exception as exc:   # pragma: no cover - surface the raw error
         return False, f"{type(exc).__name__}: {exc}"
-    # ee.Initialize() succeeded — return a hint about the auth mode.
+    # ee.Initialize() succeeded -- return a hint about the auth mode.
     try:
         proj = getattr(ee.data, "_cloud_api_user_project", None)
         return True, f"ee.Initialize() succeeded (project={proj or '(unknown)'})"
@@ -91,8 +91,8 @@ def _probe_query() -> tuple[bool, str]:
     """Run a 1-pixel fetch to confirm quota + dataset access."""
     try:
         import ee  # type: ignore
-        # Small, cheap image. Uses Sentinel-5P NO2 — which the Toronto
-        # MRP pipeline actually uses — so this tests the relevant path.
+        # Small, cheap image. Uses Sentinel-5P NO2 -- which the Toronto
+        # MRP pipeline actually uses -- so this tests the relevant path.
         ic = ee.ImageCollection("COPERNICUS/S5P/OFFL/L3_NO2")
         img = (
             ic.filterDate("2024-01-01", "2024-01-15")
@@ -107,8 +107,8 @@ def _probe_query() -> tuple[bool, str]:
             .getInfo()
         )
         if val:
-            return True, f"fetched NO2 sample over Toronto — {val}"
-        return True, "fetched (empty sample — cloud-cover window?); quota ok"
+            return True, f"fetched NO2 sample over Toronto -- {val}"
+        return True, "fetched (empty sample -- cloud-cover window?); quota ok"
     except Exception as exc:
         return False, f"{type(exc).__name__}: {exc}"
 
@@ -158,7 +158,7 @@ def _emit(results: list[dict[str, Any]], *, as_json: bool) -> None:
     print("=" * 66)
     for r in results:
         tick = "PASS" if r["ok"] else "FAIL"
-        print(f"  [{tick}] {r['stage']:12s} — {r['detail']}")
+        print(f"  [{tick}] {r['stage']:12s} -- {r['detail']}")
 
     overall = all(r["ok"] for r in results)
     print("-" * 66)

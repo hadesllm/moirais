@@ -4,12 +4,12 @@ Moran's I on TPS-style geographic crime data.
 
 Two callables:
 
-1. mrm_tps_lisa(data, year=...) — Local Moran's I per polygon centroid,
+1. mrm_tps_lisa(data, year=...) -- Local Moran's I per polygon centroid,
    with 999-permutation Monte-Carlo significance. Returns per-polygon
    I_i, lag z-score, quadrant (HH/HL/LH/LL), and p-value. Computes
    the global Moran's I as a by-product.
 
-2. mrm_tps_polygon_moran_per_year(data, year_cols=...) — convenience
+2. mrm_tps_polygon_moran_per_year(data, year_cols=...) -- convenience
    wrapper that loops mrm_tps_lisa over a set of per-year count
    columns (e.g. ASSAULT_2014 ... ASSAULT_2024) and returns the
    global Moran's I time series. Used by the empirical paper §7.11
@@ -21,7 +21,7 @@ with lat/lon centroid columns + per-feature counts) and compute
 k-nearest-neighbour spatial weights (default k=6).
 
 References:
-    Anselin, L. (1995). Local indicators of spatial association — LISA.
+    Anselin, L. (1995). Local indicators of spatial association -- LISA.
         Geographical Analysis, 27(2), 93-115.
     Anselin, L. (2010). Thirty years of spatial econometrics.
         Papers in Regional Science, 89(1), 3-25.

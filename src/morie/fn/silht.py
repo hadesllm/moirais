@@ -1,4 +1,4 @@
-"""Confine yourself to the present. — Marcus Aurelius"""
+"""Confine yourself to the present. -- Marcus Aurelius"""
 
 from __future__ import annotations
 

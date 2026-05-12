@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bandwidth selection for PLR (Horowitz 2009, Ch 3).
 
     h_opt = c * sigma_Z * n^{-1/5}

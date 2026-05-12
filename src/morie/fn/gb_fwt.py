@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fligner-Wolfe test against simple tree alternative using sum of U statistics."""
 import numpy as np
 from scipy import stats

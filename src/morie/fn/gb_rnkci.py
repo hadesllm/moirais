@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """General rank-based confidence interval construction via test inversion."""
 import numpy as np
 from scipy import stats

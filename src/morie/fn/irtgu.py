@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pseudo-guessing parameter analysis for 3PL IRT."""
 
 from __future__ import annotations

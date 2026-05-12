@@ -1,5 +1,5 @@
 """
-morie.entheo.analysis — Consciousness-theory analysers.
+morie.entheo.analysis -- Consciousness-theory analysers.
 
 Two public callables:
 
@@ -154,7 +154,7 @@ def san_score(eeg, fmri=None) -> RichResult:
     """Self-Aware Networks (Pirez) recurrence score.
 
     Scores the lag-1 autocorrelation of the joint EEG-fMRI state
-    vector in a sliding window — higher = stronger meta-cognitive
+    vector in a sliding window -- higher = stronger meta-cognitive
     recurrence. Reports DMT-vs-PCB contrast in record context.
     """
     e_dmt, f_dmt, e_pcb, f_pcb = _extract_pair(eeg, fmri)

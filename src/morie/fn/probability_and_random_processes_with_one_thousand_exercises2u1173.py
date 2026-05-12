@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: 2 t 2 + o( t 2) as t → 0, and therefore there exists δ (> 0) such that
+    Formula: 2 t 2 + o( t 2) as t -> 0, and therefore there exists δ (> 0) such that
 
     Parameters
     ----------

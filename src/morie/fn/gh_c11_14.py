@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Laplace approximation to GP posterior for binary regression."""
 import numpy as np
 from ._richresult import RichResult

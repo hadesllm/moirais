@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GPT-1: decoder-only transformer pretrained on next-token prediction."""
 import numpy as np
 from ._richresult import RichResult

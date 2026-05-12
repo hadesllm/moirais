@@ -11,7 +11,7 @@ def spatiotemporal_methods_in_environmental_epidemiology_with_r__chapter_9_unnum
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: Exercise 11.10. We will call a stationary temporal process Yt ,−∞ < t, ∞ L2 continuous if for every t, limh→0 E[Yt+h−Yt ]2 = 0. Show that Yt is L2 continuous if and
+    Formula: Exercise 11.10. We will call a stationary temporal process Yt ,−∞ < t, ∞ L2 continuous if for every t, limh->0 E[Yt+h−Yt ]2 = 0. Show that Yt is L2 continuous if and
 
     Parameters
     ----------

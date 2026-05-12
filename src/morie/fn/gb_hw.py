@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Relationship between Hodges-Lehmann estimator and Wilcoxon statistics."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partially-linear regression (Robinson 1988; Horowitz 2009, Ch 3).
 
 Model:   Y = X * beta + g(Z) + e

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Myopulse percentage rate of a signal."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def myopulse_rate_fn(x: np.ndarray, threshold: float | None = None) -> DescriptiveResult:
     """Compute the myopulse percentage rate (MYOP).
 
-    'Hope is not a strategy.' — Admiral Ackbar
+    'Hope is not a strategy.' -- Admiral Ackbar
     """
     from morie._waveform import myopulse_rate as _backend
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Negative control outcome/exposure test."""
 
 from __future__ import annotations

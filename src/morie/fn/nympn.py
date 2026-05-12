@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Neyman-Pearson threshold."""
 
 import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "We suffer more often in imagination than in reality. — Seneca"
+_QUOTE = "We suffer more often in imagination than in reality. -- Seneca"
 
 
 def neyman_pearson(scores, alpha: float = 0.05, **kwargs) -> ESRes:

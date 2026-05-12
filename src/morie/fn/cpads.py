@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Load CPADS data: local files, cache, or CKAN API."""
 
 from morie.data import load_cpads as _fn

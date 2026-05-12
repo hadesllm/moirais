@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Batch size heuristic: power of two in [32, 512] balancing noise and throughput."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""FIR filter design (windowed sinc) — Rangayyan Ch 3."""
+# morie.fn -- function file (hadesllm/morie)
+"""FIR filter design (windowed sinc) -- Rangayyan Ch 3."""
 from __future__ import annotations
 
 import numpy as np
@@ -96,4 +96,4 @@ def rangayyan_fir_filter(x, cutoff, order=51, fs=1.0, window="hamming"):
 
 
 def cheatsheet():
-    return "rgfir: FIR lowpass filter (windowed sinc) — Rangayyan Ch 3"
+    return "rgfir: FIR lowpass filter (windowed sinc) -- Rangayyan Ch 3"

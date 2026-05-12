@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Indirect age-adjustment via Standardized Mortality Ratio (SMR)."""
 
 import numpy as np

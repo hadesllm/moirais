@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Friedman two-way ANOVA by ranks chi-r^2 statistic."""
 import numpy as np
 from scipy import stats

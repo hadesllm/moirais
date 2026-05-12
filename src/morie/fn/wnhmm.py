@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "That which does not kill us makes us stronger. — Friedrich Nietzsche"
+_QUOTE = "That which does not kill us makes us stronger. -- Friedrich Nietzsche"
 
 
 def hamming_window(N: int, **kwargs) -> DescriptiveResult:

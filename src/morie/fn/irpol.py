@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Find irreducible polynomials over GF(2)."""
 
 from __future__ import annotations

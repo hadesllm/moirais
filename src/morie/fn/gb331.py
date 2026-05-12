@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Null distribution of exact run lengths r1j and r2j under randomness."""
 import numpy as np
 from ._richresult import RichResult

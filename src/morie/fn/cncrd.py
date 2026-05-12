@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Coefficient of concordance for incomplete rankings (Gibbons Ch 12.5).
 
 Kendall's W for k rankers ranking n objects.  Accepts EITHER

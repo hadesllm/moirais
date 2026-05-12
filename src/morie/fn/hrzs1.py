@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heckman-style semiparametric sample-selection model (Horowitz 2009, Ch 7).
 
 Model

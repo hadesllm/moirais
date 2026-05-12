@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Houlsby-style bottleneck adapter inserted in a transformer block."""
 import numpy as np
 from ._richresult import RichResult

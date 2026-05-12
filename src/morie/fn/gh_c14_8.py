@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gibbs-type partition process: EPPF of form prod V(n_j, k) / W(n, k)."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chinese restaurant process: seat customer n+1 at table k prop n_k/(alpha+n) or new."""
 import numpy as np
 from ._richresult import RichResult

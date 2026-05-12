@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AlexNet: deep CNN for ImageNet with ReLU and dropout."""
 import numpy as np
 from ._richresult import RichResult

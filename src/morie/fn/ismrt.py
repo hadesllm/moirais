@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Indirect standardization (SMR-based adjusted rate)."""
 
 from __future__ import annotations

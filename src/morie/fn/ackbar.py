@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Outlier detection. 'It's a trap!' -- Admiral Ackbar"""
 
 from __future__ import annotations

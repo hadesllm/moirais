@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Desistance curve: probability of stopping offending by time."""
 
 from __future__ import annotations

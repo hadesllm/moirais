@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LWE (Learning With Errors) sample generation."""
 
 from __future__ import annotations

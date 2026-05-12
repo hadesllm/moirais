@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Area Under the ROC Curve (AUC) via trapezoidal integration."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def auc_score(
 ) -> float:
     """Compute Area Under the ROC Curve via trapezoidal rule.
 
-    Pure NumPy — no sklearn required.
+    Pure NumPy -- no sklearn required.
 
     Parameters
     ----------

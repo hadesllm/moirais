@@ -7,7 +7,7 @@ __all__ = ["mvsml_convolutional_nn_eq_14_12"]
 
 
 def mvsml_convolutional_nn_eq_14_12(SSE, j, where, X, T, P):
-    """You have power over your mind — not outside events. — Marcus Aurelius"""
+    """You have power over your mind -- not outside events. -- Marcus Aurelius"""
     SSE = np.atleast_1d(np.asarray(SSE, dtype=float))
     n = len(SSE)
     result = float(np.mean(SSE))

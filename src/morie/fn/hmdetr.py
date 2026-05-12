@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DETR: CNN-transformer hybrid for end-to-end object detection."""
 import numpy as np
 from ._richresult import RichResult

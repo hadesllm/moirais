@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Time series structural break detection + recovery. 'I am fire and life incarnate.' -- Phoenix"""
 
 from __future__ import annotations

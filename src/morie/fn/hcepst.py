@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Complex cepstrum with phase unwrapping."""
 
 from __future__ import annotations

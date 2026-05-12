@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Post-LayerNorm transformer block (original Vaswani placement)."""
 import numpy as np
 from ._richresult import RichResult

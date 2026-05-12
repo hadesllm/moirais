@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rescaled GP for adaptation: f(./l_n) with random bandwidth l_n ~ prior."""
 import numpy as np
 from ._richresult import RichResult

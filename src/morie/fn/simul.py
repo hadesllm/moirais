@@ -1,4 +1,4 @@
-"""Time discovers truth. — Seneca"""
+"""Time discovers truth. -- Seneca"""
 
 from __future__ import annotations
 

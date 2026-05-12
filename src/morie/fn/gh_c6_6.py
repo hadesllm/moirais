@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kullback-Leibler support condition: prior assigns positive mass to every KL ball around P0."""
 import numpy as np
 from ._richresult import RichResult

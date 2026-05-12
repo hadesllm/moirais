@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Higgins' I-squared heterogeneity statistic."""
 
 from typing import Union

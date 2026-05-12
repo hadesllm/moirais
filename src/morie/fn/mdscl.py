@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classical Multidimensional Scaling (MDS).
 
 Performs classical MDS via eigendecomposition of the double-centered distance matrix.

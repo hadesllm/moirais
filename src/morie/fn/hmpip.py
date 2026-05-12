@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Scikit-Learn Pipeline: chain preprocessing steps with a final estimator."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multioutput classification: predict multiple target categorical variables per instance."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Elastic deformation field computation. 'I'm Ms. Marvel!' -- Kamala Khan"""
 
 from __future__ import annotations

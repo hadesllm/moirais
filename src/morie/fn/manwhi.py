@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mann-Whitney U test with R-style verbose result."""
 
 from typing import Sequence, Union

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""What is now proved was once only imagined. — William Blake"""
+# morie.fn -- function file (hadesllm/morie)
+"""What is now proved was once only imagined. -- William Blake"""
 
 from __future__ import annotations
 

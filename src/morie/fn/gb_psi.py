@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pitman efficiency: ratio of sample sizes for identical power in large-sample limit."""
 import numpy as np
 from ._richresult import RichResult

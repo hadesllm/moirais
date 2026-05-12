@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Waitlist analysis (instrumental for causal)."""
 
 from __future__ import annotations

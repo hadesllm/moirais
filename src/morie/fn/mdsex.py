@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Convex hull per group in MDS space. 'Cursed Energy.' -- Gojo, Jujutsu Kaisen"""
 
 from __future__ import annotations

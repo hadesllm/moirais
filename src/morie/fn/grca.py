@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cross-attention: Q from decoder, K/V from encoder output."""
 import numpy as np
 from ._richresult import RichResult

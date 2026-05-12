@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Placement trend over time (year-level counts)."""
 
 from __future__ import annotations

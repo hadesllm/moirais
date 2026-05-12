@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cross-correlation function (CCF) between two signals."""
 import numpy as np
 from scipy import stats

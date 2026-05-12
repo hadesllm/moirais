@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Natural neighbor extrapolation bounds."""
 
 import numpy as np

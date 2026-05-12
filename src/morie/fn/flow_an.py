@@ -10,7 +10,7 @@ def normalizing_flow_anomaly(X, flow):
     """
     Normalizing-flow density anomaly
 
-    Formula: low log p(x) → anomaly
+    Formula: low log p(x) -> anomaly
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DDIM deterministic sampling step (subset schedule, eta=0)."""
 import numpy as np
 from ._richresult import RichResult

@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: i=1 Xi. Find limn→∞ P [Sn ≤ nλ +
+    Formula: i=1 Xi. Find limn->∞ P [Sn ≤ nλ +
 
     Parameters
     ----------

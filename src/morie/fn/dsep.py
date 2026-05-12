@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """d-separation criterion for conditional independence in DAGs."""
 import numpy as np
 from ._richresult import RichResult

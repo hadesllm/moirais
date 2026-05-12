@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Average-derivative estimator (Powell-Stock-Stoker 1989; Horowitz 2009, Ch 4).
 
 Density-weighted average derivative:

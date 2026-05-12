@@ -11,7 +11,7 @@ def spatial_data_analysis_with_r_chapter_6_unnumbered_21(x):
     """
     Regression expression (auto-extracted; see ref).
 
-    Formula: ˓→+ellps=GRS80 +datum=NAD83 +units=m +no_defs")
+    Formula: ˓->+ellps=GRS80 +datum=NAD83 +units=m +no_defs")
 
     Parameters
     ----------

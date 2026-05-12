@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Quasi-experimental design analysis (matching + DiD)."""
 
 from __future__ import annotations

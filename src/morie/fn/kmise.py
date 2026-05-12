@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MISE-optimal bandwidth for kernel density estimation."""
 
 from __future__ import annotations

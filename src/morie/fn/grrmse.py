@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Root mean squared error — L2 norm of prediction residuals."""
+# morie.fn -- function file (hadesllm/morie)
+"""Root mean squared error -- L2 norm of prediction residuals."""
 import numpy as np
 from ._richresult import RichResult
 
@@ -8,7 +8,7 @@ __all__ = ["geron_rmse"]
 
 def geron_rmse(y_true, y_pred):
     """
-    Root mean squared error — L2 norm of prediction residuals
+    Root mean squared error -- L2 norm of prediction residuals
 
     Formula: RMSE = sqrt((1/m) sum_{i=1..m} (h(x^(i)) - y^(i))^2)
 
@@ -32,8 +32,8 @@ def geron_rmse(y_true, y_pred):
     n = int(y_true) if y_true.ndim == 0 else len(y_true)
     result = float(np.mean(y_true))
     se = float(np.std(y_true, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Root mean squared error — L2 norm of prediction residuals"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Root mean squared error -- L2 norm of prediction residuals"})
 
 
 def cheatsheet():
-    return "grrmse: Root mean squared error — L2 norm of prediction residuals"
+    return "grrmse: Root mean squared error -- L2 norm of prediction residuals"

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 5.3: asymptotic normality of boundary-free KDFE."""
 import numpy as np
 from ._richresult import RichResult

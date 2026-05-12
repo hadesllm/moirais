@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Time series forecasting with RNN."""
 import numpy as np
 from ._richresult import RichResult

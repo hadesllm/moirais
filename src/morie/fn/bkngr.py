@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """N-gram maximum-likelihood probability (uninsmoothed)."""
 import numpy as np
 from ._richresult import RichResult

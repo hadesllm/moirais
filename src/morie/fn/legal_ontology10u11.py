@@ -11,7 +11,7 @@ def legal_ontology_chapter_10_unnumbered_11(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: <meta id="metalex_idnum115252592" name="Real knowledge is to know the extent of one's ignorance. — Confucius"
+    Formula: <meta id="metalex_idnum115252592" name="Real knowledge is to know the extent of one's ignorance. -- Confucius"
 
     Parameters
     ----------

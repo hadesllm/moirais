@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Tokenizer vocabulary comparison: Jaccard overlap between two tokenizer vocabs."""
 import numpy as np
 from ._richresult import RichResult

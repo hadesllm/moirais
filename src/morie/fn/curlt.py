@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """1-D curvelet-like transform via wrapping."""
 
 from __future__ import annotations

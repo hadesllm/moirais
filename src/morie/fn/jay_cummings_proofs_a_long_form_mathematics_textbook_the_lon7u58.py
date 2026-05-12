@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] g2 : {1, 2, 3} → { 1, 2, 3} where g2(1) = 2 , g2(2) = 3 and g2(3) = 1.
+    Formula: [EQ] g2 : {1, 2, 3} -> { 1, 2, 3} where g2(1) = 2 , g2(2) = 3 and g2(3) = 1.
 
     Parameters
     ----------

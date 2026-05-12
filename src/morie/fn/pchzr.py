@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Piecewise constant hazard rate estimator."""
 
 from __future__ import annotations

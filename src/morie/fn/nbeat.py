@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """N-BEATS-style basis-expansion forecasting (Oreshkin et al. 2020)."""
 from __future__ import annotations
 

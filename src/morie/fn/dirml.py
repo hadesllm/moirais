@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Directional spatial model (Rabinowitz-Macdonald)."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def directional_model(ideal_points, alternatives) -> DescriptiveResult:
-    """Out of chaos, comes order. — Friedrich Nietzsche"""
+    """Out of chaos, comes order. -- Friedrich Nietzsche"""
     X = np.asarray(ideal_points, dtype=float)
     Z = np.asarray(alternatives, dtype=float)
     if X.ndim == 1:

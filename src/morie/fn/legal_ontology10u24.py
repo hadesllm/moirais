@@ -11,7 +11,7 @@ def legal_ontology_chapter_10_unnumbered_24(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: <rdf:Description rdf:about="He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche">
+    Formula: <rdf:Description rdf:about="He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche">
 
     Parameters
     ----------

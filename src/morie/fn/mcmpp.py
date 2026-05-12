@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MCMCpack MCMCirtKd interface for k-dimensional Bayesian IRT."""
 import numpy as np
 from ._richresult import RichResult

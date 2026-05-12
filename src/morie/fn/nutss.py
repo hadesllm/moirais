@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simplified No-U-Turn Sampler (NUTS)."""
 
 from __future__ import annotations

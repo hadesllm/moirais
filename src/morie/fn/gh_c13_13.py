@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cox proportional hazard model: lambda(t|x) = lambda0(t)*exp(beta'x)."""
 import numpy as np
 from ._richresult import RichResult

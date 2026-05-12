@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Local outlier factor of a point relative to its k-nearest neighbors."""
 import numpy as np
 from ._richresult import RichResult

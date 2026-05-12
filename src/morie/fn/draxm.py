@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Matrix decomposition (destructive rank reduction). 'Nothing goes over my head.' -- Drax"""
 
 from __future__ import annotations

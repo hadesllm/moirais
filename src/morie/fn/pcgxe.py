@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Principal component based GxE dimension reduction."""
 import numpy as np
 from ._richresult import RichResult

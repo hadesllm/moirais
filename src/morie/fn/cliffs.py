@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cliff's delta effect size."""
 
 from morie.fn.cliff import cliffs_delta

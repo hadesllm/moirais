@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Croston's method for intermittent demand forecasting."""
 
 from __future__ import annotations
@@ -45,13 +45,13 @@ def croston_method(
     Returns
     -------
     DescriptiveResult
-        value: float — per-period demand forecast (f or f_sba).
+        value: float -- per-period demand forecast (f or f_sba).
         extra keys:
-          'demand_level'   : float — final smoothed demand size (a).
-          'interval_level' : float — final smoothed inter-demand interval (p).
-          'combined_forecast': float — a / p.
-          'sba_forecast'   : float — (1 - alpha/2) * a / p.
-          'n_demands'      : int — number of non-zero observations.
+          'demand_level'   : float -- final smoothed demand size (a).
+          'interval_level' : float -- final smoothed inter-demand interval (p).
+          'combined_forecast': float -- a / p.
+          'sba_forecast'   : float -- (1 - alpha/2) * a / p.
+          'n_demands'      : int -- number of non-zero observations.
           'alpha'          : float.
 
     Raises

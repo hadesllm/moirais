@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RKHS kernel ridge regression (Wahba 1990).
 
 Solves the regularised problem

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric ATE via kernel matching on propensity scores
 (Heckman-Ichimura-Todd 1998; Horowitz 2009, Ch 9).
 
@@ -99,7 +99,7 @@ def horowitz_treatment_effect(x, y, treatment, bandwidth=None, _bootstrap=True):
     att = float((y[t_idx] - cf_treated).mean())
     atu = float((cf_control - y[c_idx]).mean())
     ate = (n_t * att + n_c * atu) / n
-    # SE: bootstrap (50 reps) — disabled in nested calls to avoid recursion blow-up
+    # SE: bootstrap (50 reps) -- disabled in nested calls to avoid recursion blow-up
     if _bootstrap:
         rng = np.random.default_rng(0)
         B = 50; boot = np.zeros(B)

@@ -11,7 +11,7 @@ def guide_on_data_analysis_chapter_5_unnumbered_429(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] √𝑛 (̂𝜃MLE − 𝜃0) →𝑑 𝒩 (0, 𝐼(𝜃0)−1) .
+    Formula: [EQ] √𝑛 (̂𝜃MLE − 𝜃0) ->𝑑 𝒩 (0, 𝐼(𝜃0)−1) .
 
     Parameters
     ----------

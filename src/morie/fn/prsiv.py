@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sieve of Eratosthenes for prime generation."""
 
 import numpy as np

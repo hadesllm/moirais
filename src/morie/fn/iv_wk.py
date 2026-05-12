@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Weak instrument diagnostics for instrumental variables."""
 
 from __future__ import annotations

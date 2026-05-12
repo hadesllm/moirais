@@ -1,4 +1,4 @@
-"""morie.otis — Ontario Restrictive Confinement (OTIS) analysis.
+"""morie.otis -- Ontario Restrictive Confinement (OTIS) analysis.
 
 Correctional/sociolegal analysis for Ontario placement data (2023-2025).
 Orchestrates existing MORIE causal inference modules for the correctional
@@ -6,12 +6,12 @@ domain: DML-IRM, propensity score matching, AIPW, mixed-effects models.
 
 Short-name API (≤6 chars):
 
-- :func:`rplace` — Regional placement analysis by age/sex/year
-- :func:`astcmb` — Alert-state combination encoding (8 binary → complexity)
-- :func:`volat`  — Regional volatility/movement metric
-- :func:`rctrnd` — Restrictive confinement trends over time
-- :func:`otdesc` — Full OTIS descriptive statistics suite
-- :func:`otdml`  — Run DML IRM (ATE/ATT) on OTIS data
+- :func:`rplace` -- Regional placement analysis by age/sex/year
+- :func:`astcmb` -- Alert-state combination encoding (8 binary -> complexity)
+- :func:`volat`  -- Regional volatility/movement metric
+- :func:`rctrnd` -- Restrictive confinement trends over time
+- :func:`otdesc` -- Full OTIS descriptive statistics suite
+- :func:`otdml`  -- Run DML IRM (ATE/ATT) on OTIS data
 
 Data: ``data/cache/correctional_stats_report_environment1b.RData`` (via R)
       ``data/cache/dt_expanded.rds`` (1.9M rows × 13 cols)
@@ -20,7 +20,7 @@ References
 ----------
 * Ontario Ministry of the Solicitor General (2025). Restrictive
   Confinement Detailed Dataset. data.ontario.ca.
-* Jahn v. Ontario (2020). Settlement Agreement — Inmate Data Disclosure.
+* Jahn v. Ontario (2020). Settlement Agreement -- Inmate Data Disclosure.
 * Chernozhukov et al. (2018). Double/debiased machine learning for
   treatment and structural parameters. Econometrics Journal.
 """

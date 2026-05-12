@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Haversine great-circle distance. 'Knowing yourself is true wisdom. -- Lao Tzu'"""
 from __future__ import annotations
 

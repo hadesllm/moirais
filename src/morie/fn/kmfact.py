@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """FactScore: fraction of atomic claims in a generation that are factually supported."""
 import numpy as np
 from ._richresult import RichResult

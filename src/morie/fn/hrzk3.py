@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Local-linear regression estimator (Horowitz 2009, Ch 2).
 
     (a_hat, b_hat) = argmin_{a,b} sum_i K_h(x - X_i) (Y_i - a - b (X_i - x))^2

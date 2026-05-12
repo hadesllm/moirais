@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Now, for any a > 0,φ( t/√ n) n → e− 1
+    Formula: Now, for any a > 0,φ( t/√ n) n -> e− 1
 
     Parameters
     ----------

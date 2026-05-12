@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""Global average pooling.
 
 Reduces spatial dimensions to 1x1.

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP prior for survival: Susarla-Van Ryzin posterior under right censoring."""
 import numpy as np
 from ._richresult import RichResult

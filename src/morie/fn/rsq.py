@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Coefficient of determination R^2 with R-style verbose result."""
 
 from typing import Sequence, Union

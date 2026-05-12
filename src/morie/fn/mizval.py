@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moran's I standardised z-score."""
 
 from ._containers import SpatialResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Basic reproduction number R0 from next-generation matrix."""
 
 from __future__ import annotations

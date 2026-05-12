@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Unobserved-components model — trend + seasonal + irregular (Harvey 1989)."""
+# morie.fn -- function file (hadesllm/morie)
+"""Unobserved-components model -- trend + seasonal + irregular (Harvey 1989)."""
 from __future__ import annotations
 
 import numpy as np
@@ -71,7 +71,7 @@ def unobserved_components(x, period=12, trend="local linear"):
         w = period
         kernel = np.ones(w) / w
         if w % 2 == 0:
-            # 2x w-period MA — pad symmetrically.
+            # 2x w-period MA -- pad symmetrically.
             ma = np.convolve(y, np.ones(w + 1) / (w + 1), mode="same")
         else:
             ma = np.convolve(y, kernel, mode="same")

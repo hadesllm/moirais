@@ -1,4 +1,4 @@
-"""Shift the row marginal a → ã via partial transport."""
+"""Shift the row marginal a -> ã via partial transport."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["ot_marginal_shift"]
 
 def ot_marginal_shift(a, b, C, delta):
     """
-    Shift the row marginal a → ã via partial transport
+    Shift the row marginal a -> ã via partial transport
 
     Formula: Solve OT with a' = a - δ, where δ is removed mass
 
@@ -36,8 +36,8 @@ def ot_marginal_shift(a, b, C, delta):
     n = len(a)
     result = float(np.mean(a))
     se = float(np.std(a, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Shift the row marginal a → ã via partial transport"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Shift the row marginal a -> ã via partial transport"})
 
 
 def cheatsheet():
-    return "otmarsh: Shift the row marginal a → ã via partial transport"
+    return "otmarsh: Shift the row marginal a -> ã via partial transport"

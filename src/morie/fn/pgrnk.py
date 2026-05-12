@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PageRank centrality for directed graphs."""
 
 from __future__ import annotations
@@ -14,7 +14,7 @@ def pagerank(
     max_iter: int = 100,
     tol: float = 1e-8,
 ) -> DescriptiveResult:
-    """It does not matter how slowly you go as long as you do not stop. — Confucius"""
+    """It does not matter how slowly you go as long as you do not stop. -- Confucius"""
     A = np.asarray(adj_matrix, dtype=np.float64)
     if A.ndim != 2 or A.shape[0] != A.shape[1]:
         raise ValueError("adj_matrix must be square.")

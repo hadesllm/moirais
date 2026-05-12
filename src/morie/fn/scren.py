@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Screening test performance (Se, Sp, PPV, NPV, LR+, LR-)."""
 
 from __future__ import annotations

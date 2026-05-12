@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: ∥φ ( n) − ψ ∥ → 0 as n → ∞ . We prove this under the assumption that ψ has continuous
+    Formula: ∥φ ( n) − ψ ∥ -> 0 as n -> ∞ . We prove this under the assumption that ψ has continuous
 
     Parameters
     ----------

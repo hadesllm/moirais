@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Estimate of true preferential ordering from concordance analysis."""
 import numpy as np
 from ._richresult import RichResult

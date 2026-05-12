@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bootstrap aggregating (bagging) classifier."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Knowing yourself is the beginning of all wisdom. — Aristotle"
+_QUOTE = "Knowing yourself is the beginning of all wisdom. -- Aristotle"
 
 
 def bagging_classify(X_train, y_train, X_test, n_estimators=20, max_depth=5, **kwargs) -> DescriptiveResult:

@@ -1,4 +1,4 @@
-"""The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius"""
+"""The happiness of your life depends upon the quality of your thoughts. -- Marcus Aurelius"""
 
 from __future__ import annotations
 

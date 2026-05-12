@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Orbifold spectrum and fixed points."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mutual singularity of DP measures with different base measures."""
 import numpy as np
 from ._richresult import RichResult

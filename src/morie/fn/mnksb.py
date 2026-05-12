@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Manski bounds for partial identification of the ATE.
 
 Under no-assumptions (worst-case) or monotone treatment response (MTR),

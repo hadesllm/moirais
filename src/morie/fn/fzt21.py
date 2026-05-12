@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 2.1: geometric combination of expected KDFE has O(h^4) bias."""
 import numpy as np
 from ._richresult import RichResult

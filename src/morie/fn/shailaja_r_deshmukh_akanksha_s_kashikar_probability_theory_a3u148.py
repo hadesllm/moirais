@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_3_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Further, limx→∞ F (x) = 1 ⇒ α + 0 = 1 ⇒ α = 1 and hence k = −1.
+    Formula: Further, limx->∞ F (x) = 1 ⇒ α + 0 = 1 ⇒ α = 1 and hence k = −1.
 
     Parameters
     ----------

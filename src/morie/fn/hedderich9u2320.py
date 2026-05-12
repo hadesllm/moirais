@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_2320(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: limλ→1 ˆπ0(λ)≡ˆπ0(λ= 1) by a third-degree polynomial function (natural cubic spline). In R,
+    Formula: limλ->1 ˆπ0(λ)≡ˆπ0(λ= 1) by a third-degree polynomial function (natural cubic spline). In R,
 
     Parameters
     ----------

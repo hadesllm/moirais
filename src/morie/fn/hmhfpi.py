@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hugging Face Pipelines: high-level inference wrapper."""
 import numpy as np
 from ._richresult import RichResult

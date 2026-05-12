@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DALL·E: text-to-image generation via discrete VAE + autoregressive transformer."""
 import numpy as np
 from ._richresult import RichResult

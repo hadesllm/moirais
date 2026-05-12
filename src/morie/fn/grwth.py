@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exponential growth rate estimation from epidemic incidence."""
 
 from __future__ import annotations

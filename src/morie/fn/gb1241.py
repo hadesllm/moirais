@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kendall coefficient of concordance W for k sets of rankings."""
 import numpy as np
 from ._richresult import RichResult

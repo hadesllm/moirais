@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sobolev prior: theta ~ N(0, Lambda) with Lambda = diag(j^{-2s-1}) in series model."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generate linear/quadratic chirp signal."""
 
 from __future__ import annotations

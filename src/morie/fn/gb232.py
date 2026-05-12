@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Glivenko-Cantelli theorem: uniform convergence of EDF to CDF with prob 1."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-fold cross-validation. 'Let the past die. Kill it, if you have to.' -- Kylo Ren"""
 
 from __future__ import annotations

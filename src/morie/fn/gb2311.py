@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean and variance of the empirical distribution function S_n(x)."""
 import numpy as np
 from ._richresult import RichResult

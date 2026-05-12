@@ -82,7 +82,7 @@ def _check_assumptions(
     _add(
         "exposure > reference",
         exposure_mean > reference,
-        f"mean {exposure_mean} vs ref {reference} — CRF is monotonic only "
+        f"mean {exposure_mean} vs ref {reference} -- CRF is monotonic only "
         "when exposure exceeds the counterfactual floor.",
     )
     _add(
@@ -120,7 +120,7 @@ def handle_verify_pollution(args: argparse.Namespace) -> int:
     try:
         np, pd, envhealth = _load_deps()
     except ImportError as e:
-        print(f"ERROR: missing dependency — {e}", file=sys.stderr)
+        print(f"ERROR: missing dependency -- {e}", file=sys.stderr)
         return 2
 
     pollutant = args.pollutant.lower()
@@ -292,7 +292,7 @@ def _emit(report: dict[str, Any], *, as_json: bool) -> None:
     print("\nAssumption log")
     for a in report["assumptions"]:
         tick = "PASS" if a["ok"] else "FAIL"
-        print(f"  [{tick}] {a['assumption']} — {a['note']}")
+        print(f"  [{tick}] {a['assumption']} -- {a['note']}")
 
     if report["status"] == "assumption_failure":
         print("\nSTATUS: assumption_failure (pipeline skipped)")
@@ -335,7 +335,7 @@ def register_subparser(subparsers) -> None:
     """Called from morie.runner.build_parser() to register this command."""
     p = subparsers.add_parser(
         "verify-pollution",
-        help="Run a pollution → health causal pipeline and print a report.",
+        help="Run a pollution -> health causal pipeline and print a report.",
     )
     p.add_argument("--pollutant", required=True,
                     choices=["no2", "pm25", "NO2", "PM25"],

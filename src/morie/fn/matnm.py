@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Matrix norms (1, 2, infinity, Frobenius)."""
 
 from __future__ import annotations

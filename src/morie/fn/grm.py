@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Genomic relationship matrix (GRM)."""
 
 import numpy as np

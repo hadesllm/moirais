@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Efficient score for the linear regression model (Kosorok 2008, Ch 6).
 
 In the semiparametric model Y = beta X + eps with eps ind. of X and

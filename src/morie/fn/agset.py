@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Agenda-setter model (Romer-Rosenthal; Armstrong Ch 10)."""
 
 import numpy as np
@@ -45,7 +45,7 @@ def agenda_setter_power(options, setter_ideal, reversion):
                                     "reversion": reversion,
                                     "win_set_size": 0})
     # Win-set: options at least as close to reversion as reversion itself
-    # is to itself — i.e. options strictly preferred by the median voter
+    # is to itself -- i.e. options strictly preferred by the median voter
     # over the reversion (single-peaked, voter at midpoint for monopoly
     # setter). For the canonical Romer-Rosenthal monopoly the win-set is
     # the open interval between reversion and 2*median - reversion.

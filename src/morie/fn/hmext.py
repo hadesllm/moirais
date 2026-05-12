@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Extra-trees: randomize thresholds per feature split for extra variance reduction."""
 import numpy as np
 from ._richresult import RichResult

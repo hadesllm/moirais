@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bootstrap for M-estimators.
 
 Implements the nonparametric bootstrap for M-estimators, providing

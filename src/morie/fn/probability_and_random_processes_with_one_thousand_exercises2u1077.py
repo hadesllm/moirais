@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: where Y( h) = | eih X − 1|. However, |Y( h) | ≤ 2 and Y( h) → 0 as h → 0, and so E( Y( h)) → 0
+    Formula: where Y( h) = | eih X − 1|. However, |Y( h) | ≤ 2 and Y( h) -> 0 as h -> 0, and so E( Y( h)) -> 0
 
     Parameters
     ----------

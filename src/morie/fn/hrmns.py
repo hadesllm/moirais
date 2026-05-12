@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Harmonic analysis (fundamental + overtones).
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -13,7 +13,7 @@ from ._containers import DescriptiveResult
 
 __all__ = ['hrmns']
 
-_QUOTE = "He who has a why to live can bear almost any how. — Friedrich Nietzsche"
+_QUOTE = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 
 
 def hrmns(

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sample size determination for KS test with specified precision."""
 import numpy as np
 from scipy import stats

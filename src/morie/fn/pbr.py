@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Point-biserial correlation between a binary and a continuous variable."""
 
 from typing import Union

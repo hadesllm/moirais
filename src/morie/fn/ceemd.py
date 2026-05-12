@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Complete EEMD with Adaptive Noise (CEEMDAN)."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The whole is greater than the sum of its parts. — Aristotle"
+_QUOTE = "The whole is greater than the sum of its parts. -- Aristotle"
 
 
 def _sift_one_imf(signal, max_iter=300):

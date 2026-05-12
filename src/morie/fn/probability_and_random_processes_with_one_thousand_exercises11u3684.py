@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: Find the mean and variance of D( t) , and show that P( D( t) = 0) → e− 2dα/β as t → ∞ .
+    Formula: Find the mean and variance of D( t) , and show that P( D( t) = 0) -> e− 2dα/β as t -> ∞ .
 
     Parameters
     ----------

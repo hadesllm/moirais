@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dirichlet process stick-breaking construction. 'It's dangerous to go alone.' -- Old Man"""
 
 from __future__ import annotations

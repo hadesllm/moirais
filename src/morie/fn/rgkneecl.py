@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Knee-joint cartilage pathology classification via VAG features."""
 import numpy as np
 from ._richresult import RichResult

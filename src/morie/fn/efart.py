@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rotate factor loadings (varimax, promax, oblimin)."""
 
 from __future__ import annotations

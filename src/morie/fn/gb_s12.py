@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """One-sided Smirnov statistic for stochastic ordering alternative."""
 import numpy as np
 from scipy import stats

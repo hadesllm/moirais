@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Iteratively reweighted least squares for Lp minimization."""
 
 from __future__ import annotations

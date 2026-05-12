@@ -101,7 +101,7 @@ def temperature_mortality_vcurve(
     Quote: "The cold and the hot both know your name, and the cold
     knows it longer."
 
-    Assumes no adaptation / acclimatization — the V-curve encodes
+    Assumes no adaptation / acclimatization -- the V-curve encodes
     acute exposure risk. For long-term climate-attribution, combine
     with heat-wave detection (``heatwv``) and demographic weighting.
     """

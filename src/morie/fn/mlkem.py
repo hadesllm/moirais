@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ML-KEM-768 post-quantum key encapsulation (fn/ wrapper)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonparametric Maximum Likelihood Estimator (NPMLE).
 
 Implements the NPMLE for distribution functions and mixing

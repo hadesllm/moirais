@@ -8,7 +8,7 @@ __all__ = ["probability_and_random_processes_with_one_thousand_exercises_chapter
 
 
 def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnumbered_1527(x, cdf=None):
-    """It does not matter how slowly you go as long as you do not stop. — Confucius"""
+    """It does not matter how slowly you go as long as you do not stop. -- Confucius"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

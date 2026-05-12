@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EM-IRT for text/word-count frequency data as input."""
 import numpy as np
 from ._richresult import RichResult

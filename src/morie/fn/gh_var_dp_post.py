@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Variational DP posterior: truncated stick-breaking with KL-minimizing variational distribution."""
 import numpy as np
 from ._richresult import RichResult

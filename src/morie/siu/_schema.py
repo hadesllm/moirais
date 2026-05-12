@@ -15,7 +15,7 @@ ever losing audit-trail data.
 
 from __future__ import annotations
 
-# Column order matters — this is the CSV header order.
+# Column order matters -- this is the CSV header order.
 SIU_COLUMNS: list[str] = [
     # ── Identifiers / provenance ───────────────────────────────────
     "case_number",                  # PRIMARY KEY  e.g. "17-PVI-371"
@@ -26,7 +26,7 @@ SIU_COLUMNS: list[str] = [
     "scraped_at_utc",               # ISO-8601 with 'Z' suffix
     "parser_version",               # semver of the parser at extract time
 
-    # ── Temporal — incident ─────────────────────────────────────────
+    # ── Temporal -- incident ─────────────────────────────────────────
     "date_of_incident_iso",
     "date_of_incident_raw",
     "time_of_incident_raw",
@@ -34,7 +34,7 @@ SIU_COLUMNS: list[str] = [
     "date_of_injury_raw",
     "incident_to_injury_raw",       # duration string
 
-    # ── Temporal — notification + decision ──────────────────────────
+    # ── Temporal -- notification + decision ──────────────────────────
     "date_siu_notified_iso",
     "date_siu_notified_raw",
     "time_of_notification_raw",

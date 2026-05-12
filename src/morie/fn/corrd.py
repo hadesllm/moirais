@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Correlation distance."""
 
 import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "Luck is what happens when preparation meets opportunity. — Seneca"
+_QUOTE = "Luck is what happens when preparation meets opportunity. -- Seneca"
 
 
 def correlation_dist(x, y, **kwargs) -> ESRes:

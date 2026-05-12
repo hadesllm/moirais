@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Secondary Attack Rate (SAR)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IBP stick-breaking construction: pi_k = prod_{j<=k} V_j, V_j ~ Beta(alpha, 1)."""
 import numpy as np
 from ._richresult import RichResult

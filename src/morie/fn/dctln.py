@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dictionary Learning via K-SVD."""
 
 from __future__ import annotations

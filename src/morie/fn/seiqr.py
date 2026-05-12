@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEIQR compartmental model (Susceptible-Exposed-Infected-Quarantined-Recovered)."""
 
 import numpy as np

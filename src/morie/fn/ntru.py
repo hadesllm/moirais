@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""NTRU post-quantum key exchange — keygen."""
+# morie.fn -- function file (hadesllm/morie)
+"""NTRU post-quantum key exchange -- keygen."""
 
 from __future__ import annotations
 
@@ -28,4 +28,4 @@ ntru = ntru_keygen
 
 
 def cheatsheet() -> str:
-    return "ntru_keygen({}) -> NTRU post-quantum key exchange — keygen."
+    return "ntru_keygen({}) -> NTRU post-quantum key exchange -- keygen."

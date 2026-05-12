@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Covariance of DP: Cov[G(A),G(B)] = (G0(A cap B) - G0(A)G0(B))/(alpha+1)."""
 import numpy as np
 from ._richresult import RichResult

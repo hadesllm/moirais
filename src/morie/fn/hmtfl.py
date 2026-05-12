@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Transfer learning: reuse pretrained model, fine-tune on new task."""
 import numpy as np
 from ._richresult import RichResult

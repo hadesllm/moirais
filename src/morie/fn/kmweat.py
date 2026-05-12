@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Word Embedding Association Test bias score."""
 import numpy as np
 from scipy import stats

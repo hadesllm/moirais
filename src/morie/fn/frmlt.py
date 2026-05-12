@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Framelet (tight frame) decomposition."""
 
 from __future__ import annotations

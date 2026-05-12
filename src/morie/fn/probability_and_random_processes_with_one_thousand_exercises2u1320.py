@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: implying that max 1≤ j ≤ n |φ j( t/σ( n)) − 1| → 0.
+    Formula: implying that max 1≤ j ≤ n |φ j( t/σ( n)) − 1| -> 0.
 
     Parameters
     ----------

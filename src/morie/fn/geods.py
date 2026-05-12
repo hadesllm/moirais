@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Geodesic equation solver (Runge-Kutta on curved spacetime)."""
 
 __all__ = ["geods"]

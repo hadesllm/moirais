@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear LR warmup (Vaswani et al. 2017, Transformer "Noam" schedule)."""
 from __future__ import annotations
 

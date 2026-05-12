@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-fold cross-validation: partition into k equal folds; rotate held-out fold."""
 import numpy as np
 from ._richresult import RichResult

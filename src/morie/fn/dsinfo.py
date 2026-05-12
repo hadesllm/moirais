@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Return full metadata for a dataset by catalog key."""
 
 from morie.data import dataset_info as _fn

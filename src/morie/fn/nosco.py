@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Compare W-NOMINATE vs DW-NOMINATE scores."""
 
 from __future__ import annotations

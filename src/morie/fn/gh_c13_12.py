@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Smooth hazard GP prior: log-hazard function modeled by GP."""
 import numpy as np
 from ._richresult import RichResult

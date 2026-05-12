@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Minkowski metric and spacetime interval computation."""
 
 __all__ = ["mnkws"]

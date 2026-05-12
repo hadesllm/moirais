@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Largest Lyapunov exponent (Rosenstein) — Rangayyan Ch 7."""
+# morie.fn -- function file (hadesllm/morie)
+"""Largest Lyapunov exponent (Rosenstein) -- Rangayyan Ch 7."""
 from __future__ import annotations
 
 import numpy as np
@@ -82,4 +82,4 @@ def rangayyan_lyapunov(x, m=3, tau=1, max_t=None, theiler=10):
 
 
 def cheatsheet():
-    return "rglyp: largest Lyapunov exponent (Rosenstein) — Rangayyan Ch 7"
+    return "rglyp: largest Lyapunov exponent (Rosenstein) -- Rangayyan Ch 7"

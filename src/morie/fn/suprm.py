@@ -1,4 +1,4 @@
-"""That which does not kill us makes us stronger. — Friedrich Nietzsche"""
+"""That which does not kill us makes us stronger. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discrete Fourier Transform."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Time discovers truth. — Seneca"
+_QUOTE = "Time discovers truth. -- Seneca"
 
 
 def dft_compute(x, **kwargs) -> DescriptiveResult:

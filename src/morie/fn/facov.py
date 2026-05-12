@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Factor analytic covariance structure for multi-environment trials."""
 import numpy as np
 from ._richresult import RichResult

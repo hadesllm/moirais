@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Randomized test procedure when exact size is unavailable at a discrete level."""
 import numpy as np
 from scipy import stats

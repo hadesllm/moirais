@@ -1,11 +1,11 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bode magnitude and phase plot computation."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Time discovers truth. — Seneca"
+_QUOTE = "Time discovers truth. -- Seneca"
 
 
 def bode_plot(

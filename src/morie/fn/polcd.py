@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polar code construction (Bhattacharyya parameter method)."""
 
 __all__ = ["polcd"]

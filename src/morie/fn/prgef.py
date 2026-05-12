@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pre-post program effect size (Cohen's d)."""
 
 from __future__ import annotations

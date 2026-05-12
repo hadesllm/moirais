@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Racial disparity index (RDI)."""
 
 from __future__ import annotations

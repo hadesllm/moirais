@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heritability estimation (GREML)."""
 
 __all__ = ["herit"]

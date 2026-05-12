@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 r"""Box-Cox transformation model via GMM.
 
 Estimates the Box-Cox transformation parameter :math:`\\lambda` and

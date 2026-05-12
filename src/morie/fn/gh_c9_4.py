@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DPM of normal kernel contraction: near-optimal rate with log correction."""
 import numpy as np
 from ._richresult import RichResult

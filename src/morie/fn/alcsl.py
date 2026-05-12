@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Cosine-similarity regression loss for SBERT: MSE between predicted and target cos-sim."""
 import numpy as np
 from ._richresult import RichResult

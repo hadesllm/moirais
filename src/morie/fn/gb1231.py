@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Page's test for ordered alternatives in two-way layout."""
 import numpy as np
 from scipy import stats

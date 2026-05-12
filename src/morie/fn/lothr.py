@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Template matching (NCC). 'All our lives we fought this war.' -- Logos crew"""
 
 from __future__ import annotations

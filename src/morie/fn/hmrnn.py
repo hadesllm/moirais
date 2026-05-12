@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Recurrent neuron step: hidden state updated from previous state."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Custody health access — alert rate by group."""
+# morie.fn -- function file (hadesllm/morie)
+"""Custody health access -- alert rate by group."""
 
 from __future__ import annotations
 
@@ -34,4 +34,4 @@ def custody_health_access(
 
 
 def cheatsheet() -> str:
-    return "custody_health_access({}) -> Custody health access — alert rate by group."
+    return "custody_health_access({}) -> Custody health access -- alert rate by group."

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kalman filter predict-update recursion (Kalman 1960)."""
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ def kalman_filter(x, F=None, H=None, Q=None, R=None,
     Parameters
     ----------
     x : array-like, shape (n,) or (n, m)
-        Observations (m=1 if univariate). Univariate → local-level
+        Observations (m=1 if univariate). Univariate -> local-level
         defaults are used.
     F, H, Q, R, x0, P0 : optional
         State matrices; default to a univariate local-level model.

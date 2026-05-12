@@ -10,7 +10,7 @@ def asymptotic_expansion(f, x_inf):
     """
     Asymptotic expansion
 
-    Formula: f ~ sum a_n φ_n as x→∞
+    Formula: f ~ sum a_n φ_n as x->∞
 
     Parameters
     ----------

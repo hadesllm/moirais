@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Local DP contraction rate for regression: same near-optimal rate as standard DPM."""
 import numpy as np
 from ._richresult import RichResult

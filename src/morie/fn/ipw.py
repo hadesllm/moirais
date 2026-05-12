@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 Inverse Probability of Treatment Weighting (IPTW).
 
-Implements ``calculate_ipw_weights`` — computes raw or stabilised IPW weights
+Implements ``calculate_ipw_weights`` -- computes raw or stabilised IPW weights
 from propensity scores, with optional quantile trimming.
 """
 

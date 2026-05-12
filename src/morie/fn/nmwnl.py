@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """W-NOMINATE log-likelihood"""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Uniform distribution cumulative distribution function."""
 
 from typing import Union

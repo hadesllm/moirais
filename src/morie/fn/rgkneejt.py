@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Knee-joint sound generation model (patellofemoral crepitus)."""
 import numpy as np
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["rangayyan_knee_joint_sound"]
 
 
 def rangayyan_knee_joint_sound(vag, fs, force):
-    """In God we trust; all others must bring data. — W. Edwards Deming"""
+    """In God we trust; all others must bring data. -- W. Edwards Deming"""
     vag = np.asarray(vag, dtype=float)
     n = int(vag) if vag.ndim == 0 else len(vag)
     result = float(np.mean(vag))

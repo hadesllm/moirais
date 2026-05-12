@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stacked autoencoder: multiple layers trained greedily or end-to-end."""
 import numpy as np
 from ._richresult import RichResult

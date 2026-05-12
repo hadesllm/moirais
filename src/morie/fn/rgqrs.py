@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Pan-Tompkins QRS detection — Rangayyan Ch 6."""
+# morie.fn -- function file (hadesllm/morie)
+"""Pan-Tompkins QRS detection -- Rangayyan Ch 6."""
 from __future__ import annotations
 
 import numpy as np
@@ -26,7 +26,7 @@ def rangayyan_qrs_detect(x, fs=360.0):
     x : array-like
         Raw ECG.
     fs : float
-        Sampling rate (Hz, default 360 — MIT-BIH).
+        Sampling rate (Hz, default 360 -- MIT-BIH).
 
     Returns
     -------
@@ -104,4 +104,4 @@ def rangayyan_qrs_detect(x, fs=360.0):
 
 
 def cheatsheet():
-    return "rgqrs: Pan-Tompkins QRS detector — Rangayyan Ch 6"
+    return "rgqrs: Pan-Tompkins QRS detector -- Rangayyan Ch 6"

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Deep Q-network (DQN): neural Q-function with replay buffer and target net."""
 import numpy as np
 from ._richresult import RichResult

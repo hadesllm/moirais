@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: T − 1 : y ↦→ x = yD− 1. Use this change of variables in Theorem (4.7.3) to show that , if A,
+    Formula: T − 1 : y ↦-> x = yD− 1. Use this change of variables in Theorem (4.7.3) to show that , if A,
 
     Parameters
     ----------

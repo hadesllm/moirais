@@ -1,4 +1,4 @@
-"""morie.tps_all_analyze — RichResult-emitting analyses for the 13 TPS
+"""morie.tps_all_analyze -- RichResult-emitting analyses for the 13 TPS
 crime datasets.
 
 Surfaces:
@@ -88,7 +88,7 @@ def temporal_summary(df: pd.DataFrame, *, ds_name: str = "?") -> RichResult:
                 "rows": _vc_rows(df[col], top=24),
             })
     return RichResult(
-        title=f"TPS temporal — {ds_name}",
+        title=f"TPS temporal -- {ds_name}",
         summary_lines=summary,
         tables=tables,
     )
@@ -137,7 +137,7 @@ def spatial_summary(df: pd.DataFrame, *, ds_name: str = "?") -> RichResult:
             "rows": _vc_rows(df["LOCATION_TYPE"], top=20),
         })
     return RichResult(
-        title=f"TPS spatial — {ds_name}",
+        title=f"TPS spatial -- {ds_name}",
         summary_lines=summary,
         tables=tables,
     )
@@ -159,7 +159,7 @@ def offence_summary(df: pd.DataFrame, *, ds_name: str = "?") -> RichResult:
                 "rows": _vc_rows(df[col], top=20),
             })
     return RichResult(
-        title=f"TPS offences — {ds_name}",
+        title=f"TPS offences -- {ds_name}",
         summary_lines=summary,
         tables=tables,
     )
@@ -190,8 +190,8 @@ def neighbourhood_concentration(df: pd.DataFrame, *,
     """
     if "HOOD_158" not in df.columns:
         return RichResult(
-            title=f"TPS concentration — {ds_name}",
-            warnings=["HOOD_158 column missing — cannot compute "
+            title=f"TPS concentration -- {ds_name}",
+            warnings=["HOOD_158 column missing -- cannot compute "
                       "neighbourhood concentration."],
         )
     hood_counts = df["HOOD_158"].value_counts()
@@ -202,7 +202,7 @@ def neighbourhood_concentration(df: pd.DataFrame, *,
     p_top10 = float(cum_pct.iloc[min(9, len(cum_pct) - 1)])
     p_top20 = float(cum_pct.iloc[min(19, len(cum_pct) - 1)])
     return RichResult(
-        title=f"TPS neighbourhood concentration — {ds_name}",
+        title=f"TPS neighbourhood concentration -- {ds_name}",
         summary_lines=[
             ("Neighbourhoods with ≥1 incident", n_hoods),
             ("Gini coefficient (concentration)", round(g, 4)),
@@ -260,7 +260,7 @@ def crime_compare(dfs: dict[str, pd.DataFrame]) -> RichResult:
                      for y, row in m.iterrows()],
         }
     return RichResult(
-        title="TPS — cross-category comparison",
+        title="TPS -- cross-category comparison",
         summary_lines=[
             ("Categories compared", len(dfs)),
             ("Total incidents (sum)", sum(df.shape[0] for df in dfs.values())),
@@ -279,7 +279,7 @@ def analyze_one(name: str, df: pd.DataFrame | None = None) -> RichResult:
     """Run the standard TPS analysis bundle on one dataset."""
     df = df if df is not None else load_tps_dataset(name)
     return RichResult(
-        title=f"TPS {name} — full analysis bundle",
+        title=f"TPS {name} -- full analysis bundle",
         summary_lines=[
             ("Dataset", name),
             ("Rows", int(df.shape[0])),

@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: f X = f1 + f2 where f1, f2 : R → [0, ∞ ) , and f1 ≤ fY for some random variable Y . Let U be
+    Formula: f X = f1 + f2 where f1, f2 : R -> [0, ∞ ) , and f1 ≤ fY for some random variable Y . Let U be
 
     Parameters
     ----------

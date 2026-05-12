@@ -11,7 +11,7 @@ def guide_on_data_analysis_chapter_5_unnumbered_428(x):
     """
     Regression expression (auto-extracted; see ref).
 
-    Formula: [EQ] √𝑛 (̂𝜃𝑛 − 𝜃0) →𝑑 𝒩 (0, Σ) ,
+    Formula: [EQ] √𝑛 (̂𝜃𝑛 − 𝜃0) ->𝑑 𝒩 (0, Σ) ,
 
     Parameters
     ----------

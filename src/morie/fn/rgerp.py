@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Event-related potential (ERP) latency and amplitude features."""
 import numpy as np
 from ._richresult import RichResult

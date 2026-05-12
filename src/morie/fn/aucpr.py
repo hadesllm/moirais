@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AUC-PR (area under precision-recall curve)."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "Study the past if you would define the future. — Confucius"
+_QUOTE = "Study the past if you would define the future. -- Confucius"
 
 
 def auc_pr(y_true, y_score, **kwargs) -> ESRes:

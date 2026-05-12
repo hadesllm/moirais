@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dunn's post-hoc test. 'There is another.'"""
 
 from __future__ import annotations

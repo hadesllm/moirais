@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Walker's martingale approach to posterior consistency without exponential tests."""
 import numpy as np
 from scipy import stats

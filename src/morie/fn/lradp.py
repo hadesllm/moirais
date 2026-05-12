@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""Learning rate scheduler with cosine annealing.
 
 Decays learning rate following cosine annealing schedule.

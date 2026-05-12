@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """BIO/BIOES tagging for NER."""
 import numpy as np
 from ._richresult import RichResult

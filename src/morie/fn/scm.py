@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Structural causal model — linear SCM with do-calculus."""
+# morie.fn -- function file (hadesllm/morie)
+"""Structural causal model -- linear SCM with do-calculus."""
 
 import numpy as np
 
@@ -61,4 +61,4 @@ def structural_causal_model(data, edges, intervention=None):
 
 
 def cheatsheet() -> str:
-    return "structural_causal_model({}) -> Structural causal model — linear SCM with do-calculus."
+    return "structural_causal_model({}) -> Structural causal model -- linear SCM with do-calculus."

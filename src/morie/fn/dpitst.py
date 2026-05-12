@@ -10,7 +10,7 @@ def data_processing_inequality(pxyz, cdf=None):
     """
     Data processing inequality test
 
-    Formula: X→Y→Z: I(X;Z) <= I(X;Y)
+    Formula: X->Y->Z: I(X;Z) <= I(X;Y)
 
     Parameters
     ----------

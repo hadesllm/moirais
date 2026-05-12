@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """McFadden pseudo-R^2 with R-style verbose result."""
 
 

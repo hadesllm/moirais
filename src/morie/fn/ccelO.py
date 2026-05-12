@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Categorical cross-entropy loss for multi-class outcomes."""
 import numpy as np
 from ._richresult import RichResult

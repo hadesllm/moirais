@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Anisotropic MC spatial variance reduction."""
 
 import numpy as np

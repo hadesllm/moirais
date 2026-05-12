@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_equat
     """
     GeneralStatistics equation extracted from Shailaja R. Deshmukh, Akanksha S. Kashikar - Probability Theory  An Introduction Using R.
 
-    Formula: [EQ] P [Xn > x/(C + ϵ)] → P [X > x/ (C + ϵ)] = P [X ≥ x/(C + ϵ)]. (7.12)
+    Formula: [EQ] P [Xn > x/(C + ϵ)] -> P [X > x/ (C + ϵ)] = P [X ≥ x/(C + ϵ)]. (7.12)
 
     Parameters
     ----------

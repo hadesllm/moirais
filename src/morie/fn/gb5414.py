@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Power function of sign test for location shift alternative."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hoeffding (H-) decomposition for U-statistics (Fauzi Ch 5).
 
 For a symmetric kernel g(x1,x2):
@@ -28,7 +28,7 @@ def fauzi_h_decomposition(x, kernel=None, max_pairs=2000, rng=None):
     n = len(x)
     if n < 4:
         return RichResult(payload={"estimate": np.nan, "n": n,
-                                    "method": "fzhdc — too few obs"})
+                                    "method": "fzhdc -- too few obs"})
     if kernel is None:
         kernel = _default_kernel
     if rng is None:

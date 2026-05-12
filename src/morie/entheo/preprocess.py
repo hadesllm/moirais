@@ -1,5 +1,5 @@
 """
-morie.entheo.preprocess — EEG-fMRI preprocessing.
+morie.entheo.preprocess -- EEG-fMRI preprocessing.
 
 Pure-NumPy fallbacks so the public API works in any CI environment;
 when scipy.signal / MNE-Python / nilearn are importable we delegate
@@ -116,7 +116,7 @@ def preprocess_eeg(record: dict, bandpass: Tuple[float, float] = (1.0, 40.0),
     for key in ("data_dmt", "data_pcb"):
         arr = eeg.get(key)
         if arr is None:
-            warnings_list.append(f"eeg.{key} absent — skipping")
+            warnings_list.append(f"eeg.{key} absent -- skipping")
             continue
         arr = np.asarray(arr, dtype=np.float32)
         if arr.ndim != 2:
@@ -179,7 +179,7 @@ def preprocess_fmri(record: dict, motion_threshold_mm: float = 0.5,
     for key in ("data_dmt", "data_pcb"):
         arr = fmri.get(key)
         if arr is None:
-            warnings_list.append(f"fmri.{key} absent — skipping")
+            warnings_list.append(f"fmri.{key} absent -- skipping")
             continue
         arr = np.asarray(arr, dtype=np.float32)
         if arr.ndim != 2:
@@ -188,7 +188,7 @@ def preprocess_fmri(record: dict, motion_threshold_mm: float = 0.5,
             continue
         n_parcels = max(n_parcels, arr.shape[0])
 
-        # 1. Motion scrubbing — zero volumes above FD threshold.
+        # 1. Motion scrubbing -- zero volumes above FD threshold.
         fd = fmri.get("motion_fd_mm")
         if fd is not None:
             fd = np.asarray(fd, dtype=np.float32)
@@ -204,7 +204,7 @@ def preprocess_fmri(record: dict, motion_threshold_mm: float = 0.5,
             arr[:, bad] = 0.0
         else:
             warnings_list.append(
-                f"fmri.motion_fd_mm absent — skipping scrubbing on {key}")
+                f"fmri.motion_fd_mm absent -- skipping scrubbing on {key}")
 
         # 2. Toy ICA-AROMA stand-in: project out top-k singular vectors.
         try:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """k-Nearest Neighbors classifier."""
 
 import numpy as np
@@ -9,7 +9,7 @@ _QUOTE = "Stay on target. -- Gold Five"
 
 
 def knn_classify(X_train, y_train, X_test, k: int = 5, **kwargs) -> DescriptiveResult:
-    """The art of doing mathematics consists in finding that special case which contains all the germs of generality. — David Hilbert"""
+    """The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"""
     X_train = np.asarray(X_train, dtype=np.float64)
     y_train = np.asarray(y_train).ravel()
     X_test = np.asarray(X_test, dtype=np.float64)

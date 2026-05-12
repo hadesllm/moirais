@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (f) k : N → Z where k(x) = (−1)n(2n − 1) + 1
+    Formula: [EQ] (f) k : N -> Z where k(x) = (−1)n(2n − 1) + 1
 
     Parameters
     ----------

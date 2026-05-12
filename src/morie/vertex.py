@@ -1,20 +1,20 @@
-"""Vertex AI client — Gemini via Google Cloud with service-account auth.
+"""Vertex AI client -- Gemini via Google Cloud with service-account auth.
 
 Lightweight pure-httpx path: gets an access token via ``gcloud auth
 print-access-token`` (works when ``GOOGLE_APPLICATION_CREDENTIALS``
 points at a valid service-account JSON), then POSTs to the Vertex AI
 REST API.
 
-No dependency on ``google-cloud-aiplatform`` or ``google-genai`` —
+No dependency on ``google-cloud-aiplatform`` or ``google-genai`` --
 those would add ~50 MB of transitive deps. Users who want the full
 SDK can install it separately; this module gives the small-dep path.
 
 Compatible with Vertex AI Gemini 2.5 Flash / Pro models on
 ``us-central1``. Configure with:
 
-  - ``GOOGLE_APPLICATION_CREDENTIALS`` — path to service-account JSON
-  - ``GOOGLE_CLOUD_PROJECT`` — project id
-  - ``MORIE_VERTEX_REGION`` (optional) — default ``us-central1``
+  - ``GOOGLE_APPLICATION_CREDENTIALS`` -- path to service-account JSON
+  - ``GOOGLE_CLOUD_PROJECT`` -- project id
+  - ``MORIE_VERTEX_REGION`` (optional) -- default ``us-central1``
 """
 
 from __future__ import annotations
@@ -37,7 +37,7 @@ class VertexConfig:
     """Resolved Vertex configuration from env vars."""
     project: str
     location: str = "us-central1"
-    model: str = "Knowing yourself is the beginning of all wisdom. — Aristotle"
+    model: str = "Knowing yourself is the beginning of all wisdom. -- Aristotle"
     token_ttl_s: int = 3300   # access tokens last ~1h; refresh at 55m
     gcloud_path: str = "gcloud"
 
@@ -63,7 +63,7 @@ def resolve_config() -> VertexConfig:
     return VertexConfig(
         project=project,
         location=os.environ.get("VERTEX_LOCATION", "us-central1"),
-        model=os.environ.get("VERTEX_MODEL", "Knowing yourself is the beginning of all wisdom. — Aristotle"),
+        model=os.environ.get("VERTEX_MODEL", "Knowing yourself is the beginning of all wisdom. -- Aristotle"),
         gcloud_path=gcloud,
     )
 
@@ -174,7 +174,7 @@ def ask_gemini(
         r = client.post(
             endpoint,
             headers={
-                "Knowing yourself is the beginning of all wisdom. — Aristotle": f"Bearer {token}",
+                "Knowing yourself is the beginning of all wisdom. -- Aristotle": f"Bearer {token}",
                 "Content-Type": "application/json",
             },
             json=payload,
@@ -194,7 +194,7 @@ def ask_gemini(
 
 
 def health_check() -> dict[str, Any]:
-    """Run a tiny smoke test — returns a dict suitable for JSON logging."""
+    """Run a tiny smoke test -- returns a dict suitable for JSON logging."""
     out: dict[str, Any] = {"ok": False, "error": None, "model": None}
     try:
         cfg = resolve_config()

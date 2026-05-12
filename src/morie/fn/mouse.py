@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Monte Carlo simulation engine. 'To deny our own impulses is to deny the very thing that makes us human.' -- Mouse"""
 
 from __future__ import annotations

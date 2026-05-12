@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Confirmatory factor analysis (ULS estimation)."""
 
 from __future__ import annotations

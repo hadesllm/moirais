@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bekenstein-Hawking entropy S = A/(4 l_P^2)."""
 
 from __future__ import annotations

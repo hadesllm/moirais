@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Appendix: Series (sieve) estimation of conditional mean function."""
 import numpy as np
 from ._richresult import RichResult

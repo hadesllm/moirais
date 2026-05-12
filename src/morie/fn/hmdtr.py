@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Tree regularization via max_depth, min_samples_split, min_samples_leaf."""
 import numpy as np
 from ._richresult import RichResult

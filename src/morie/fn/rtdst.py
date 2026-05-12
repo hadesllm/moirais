@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rate-distortion function for discrete memoryless sources."""
 
 __all__ = ["rtdst"]

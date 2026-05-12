@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Negative binomial regression (GLM) via IRLS."""
 
 import numpy as np

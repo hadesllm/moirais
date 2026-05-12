@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """W-NOMINATE 2D ideal point.
 
 Category: Spatial

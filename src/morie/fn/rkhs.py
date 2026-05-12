@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RKHS regression for genomic prediction."""
 
 __all__ = ["rkhs"]

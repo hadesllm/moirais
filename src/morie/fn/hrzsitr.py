@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Series truncation (sieve) estimator for NPIV."""
 import numpy as np
 from ._richresult import RichResult

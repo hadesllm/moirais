@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: (b) Show that cn = 2n( log n + γ − 2) + O( 1) as n → ∞ , whereγ is Euler’s constant.
+    Formula: (b) Show that cn = 2n( log n + γ − 2) + O( 1) as n -> ∞ , whereγ is Euler’s constant.
 
     Parameters
     ----------

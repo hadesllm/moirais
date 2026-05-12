@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Optimal white noise contraction: rate eps_n = n^{-s/(2s+1)} is minimax."""
 import numpy as np
 from ._richresult import RichResult

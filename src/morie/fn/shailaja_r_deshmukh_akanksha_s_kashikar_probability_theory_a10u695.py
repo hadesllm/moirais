@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: [EQ] (1 + 1/n)3/2n1−α → 0, for α < 1.
+    Formula: [EQ] (1 + 1/n)3/2n1−α -> 0, for α < 1.
 
     Parameters
     ----------

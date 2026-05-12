@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Catenary curve fitting. 'Meow.' -- Catwoman"""
 
 from __future__ import annotations

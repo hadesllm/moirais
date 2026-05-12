@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bernstein polynomial approximation: B_K(f)(x) = sum f(k/K) C(K,k) x^k (1-x)^{K-k}."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Convert LPC coefficients to cepstral coefficients."""
 
 from __future__ import annotations

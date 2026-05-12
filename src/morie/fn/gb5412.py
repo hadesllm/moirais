@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Normal approximation to sign test with continuity correction."""
 import numpy as np
 from scipy import stats

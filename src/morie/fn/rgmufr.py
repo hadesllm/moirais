@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Motor unit mean firing rate and inter-discharge interval (IDI)."""
 import numpy as np
 from ._richresult import RichResult

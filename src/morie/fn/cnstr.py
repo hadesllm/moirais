@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Anomaly removal via IQR. 'I'm a nasty piece of work.' -- John Constantine"""
 
 from __future__ import annotations

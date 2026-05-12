@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Percentile modified rank tests for scale."""
 import numpy as np
 from scipy import stats

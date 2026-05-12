@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonnegative matrix factorization (NMF) with multiplicative update rules."""
 import numpy as np
 from ._richresult import RichResult

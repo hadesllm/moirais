@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lead-service-line risk screen from building construction year."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ from ._containers import DescriptiveResult
 #   1960-1986: copper dominant; local lead bans patchy
 #   1986: Safe Drinking Water Act Amendments BAN on lead solder,
 #         lead-free pipe requirement in federal law
-#   2011: Reduction of Lead in Drinking Water Act — tightened to
+#   2011: Reduction of Lead in Drinking Water Act -- tightened to
 #         ≤ 0.25% weighted lead content for "lead-free"
 #
 # Canadian context (Ontario):
@@ -25,7 +25,7 @@ from ._containers import DescriptiveResult
 #   2007+: federal and provincial remediation programs
 #
 # The function returns a risk category based on year of construction.
-# This is SCREENING ONLY — actual pipe material must be confirmed
+# This is SCREENING ONLY -- actual pipe material must be confirmed
 # by in-home inspection or municipal service-line database.
 _US_BANDS: list[tuple[int, int, str, float]] = [
     # (min_year, max_year, label, risk_probability)
@@ -56,7 +56,7 @@ def lead_service_line_risk(
 
     Year-based heuristic for plumbing lead risk, calibrated to US and
     Canadian regulatory milestones. Returns per-building probability
-    and a categorical risk band. **This is screening only — confirm
+    and a categorical risk band. **This is screening only -- confirm
     with in-home inspection or municipal service-line records before
     using for health intervention.**
 
@@ -113,7 +113,7 @@ def lead_service_line_risk(
     https://www.epa.gov/ground-water-and-drinking-water/lead-and-copper-rule
 
     Health Canada (2022). Guidelines for Canadian Drinking Water
-    Quality — Guideline Technical Document: Lead.
+    Quality -- Guideline Technical Document: Lead.
 
     Notes
     -----

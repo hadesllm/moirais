@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""OTIS trend summary — year-over-year change statistics."""
+# morie.fn -- function file (hadesllm/morie)
+"""OTIS trend summary -- year-over-year change statistics."""
 
 from __future__ import annotations
 
@@ -41,4 +41,4 @@ def otis_trend_summary(
 
 
 def cheatsheet() -> str:
-    return "otis_trend_summary({}) -> OTIS trend summary — year-over-year change statistics."
+    return "otis_trend_summary({}) -> OTIS trend summary -- year-over-year change statistics."

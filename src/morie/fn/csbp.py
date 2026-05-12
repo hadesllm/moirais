@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """L1 minimization via Iterative Shrinkage-Thresholding (ISTA)."""
 
 import numpy as np

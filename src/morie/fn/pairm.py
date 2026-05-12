@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pairwise comparison matrix from rankings."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def pairwise_matrix(rankings) -> DescriptiveResult:
-    """Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"""
+    """Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"""
     R = np.asarray(rankings, dtype=float)
     if R.ndim != 2:
         raise ValueError("rankings must be 2D (voters x candidates).")

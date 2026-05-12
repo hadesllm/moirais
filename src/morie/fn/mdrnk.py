@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Midrank computation for tied observations (Gibbons Ch 5.6.2).
 
 Returns the midranks of x.  Tied values get the mean of the ranks

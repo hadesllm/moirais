@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BERTScore: token-level cosine similarity between contextual embeddings."""
 import numpy as np
 from ._richresult import RichResult

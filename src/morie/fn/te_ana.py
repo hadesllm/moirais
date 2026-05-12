@@ -1,7 +1,7 @@
 """
 Treatment effects analysis: ATE, ATT, ATC, and subgroup CATE via IPW.
 
-Implements ``run_treatment_effects_analysis`` — computes Hajek IPW estimators
+Implements ``run_treatment_effects_analysis`` -- computes Hajek IPW estimators
 for ATE/ATT/ATC and subgroup-level CATE with sandwich-style standard errors.
 """
 
@@ -89,10 +89,10 @@ def run_treatment_effects_analysis(
 
     Mirrors the core outputs of the old ``07_treatment_effects.R`` module.
 
-    **ATE** — Hajek (normalised Horvitz-Thompson) estimator.  See
+    **ATE** -- Hajek (normalised Horvitz-Thompson) estimator.  See
     :func:`_hajek_ate` for the formula.
 
-    **ATT** — weighted mean of control outcomes under ATT weights:
+    **ATT** -- weighted mean of control outcomes under ATT weights:
 
     .. math::
 
@@ -100,7 +100,7 @@ def run_treatment_effects_analysis(
             \bar{Y}_1 -
             \frac{\sum_{T_i=0} Y_i e_i / (1-e_i)}{\sum_{T_i=0} e_i / (1-e_i)}
 
-    **ATC** — weighted mean of treated outcomes under ATC weights:
+    **ATC** -- weighted mean of treated outcomes under ATC weights:
 
     .. math::
 
@@ -151,10 +151,10 @@ def run_treatment_effects_analysis(
     y = frame[outcome].values.astype(float)
     ps = frame["ps"].values
 
-    # ATE — Hajek estimator
+    # ATE -- Hajek estimator
     ate, _, _ = _hajek_ate(ps, t, y)
 
-    # ATT — treated mean is unweighted, control uses ATT weights
+    # ATT -- treated mean is unweighted, control uses ATT weights
     treated_mask = t == 1
     control_mask = t == 0
     y1_mean = float(y[treated_mask].mean()) if treated_mask.sum() > 0 else np.nan
@@ -165,7 +165,7 @@ def run_treatment_effects_analysis(
     y0_att = float(np.sum(y_control * att_w_control) / np.sum(att_w_control)) if att_w_control.sum() > 0 else np.nan
     att = float(y1_mean - y0_att) if not (np.isnan(y1_mean) or np.isnan(y0_att)) else np.nan
 
-    # ATC — control mean is unweighted, treated uses ATC weights
+    # ATC -- control mean is unweighted, treated uses ATC weights
     y0_mean = float(y[control_mask].mean()) if control_mask.sum() > 0 else np.nan
 
     ps_treated = ps[treated_mask]
@@ -203,7 +203,7 @@ def run_treatment_effects_analysis(
         ]
     )
 
-    # CATE subgroup estimates — Hajek IPW within each subgroup
+    # CATE subgroup estimates -- Hajek IPW within each subgroup
     cate_rows = []
     for subgroup_var in covariates:
         for subgroup_level, subset in frame.groupby(subgroup_var):

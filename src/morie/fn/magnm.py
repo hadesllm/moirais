@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Biot-Savart magnetic field computation. 'You are all beneath me.' -- Magneto"""
 
 from __future__ import annotations

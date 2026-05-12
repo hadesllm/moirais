@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GP hyperparameter optimization via marginal likelihood. 'You were the chosen one.' -- ObiWan"""
 
 from __future__ import annotations

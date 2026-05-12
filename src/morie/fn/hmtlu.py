@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Threshold logic unit: step activation of weighted sum."""
 import numpy as np
 from ._richresult import RichResult

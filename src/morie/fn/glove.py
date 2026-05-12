@@ -1,4 +1,4 @@
-"""GloVe — global word-vector co-occurrence."""
+"""GloVe -- global word-vector co-occurrence."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["glove"]
 
 def glove(corpus, dim):
     """
-    GloVe — global word-vector co-occurrence
+    GloVe -- global word-vector co-occurrence
 
     Formula: J = sum f(X_ij)(w_i·w_j + b − log X_ij)²
 
@@ -32,8 +32,8 @@ def glove(corpus, dim):
     n = len(corpus)
     result = float(np.mean(corpus))
     se = float(np.std(corpus, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "GloVe — global word-vector co-occurrence"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "GloVe -- global word-vector co-occurrence"})
 
 
 def cheatsheet():
-    return "glove: GloVe — global word-vector co-occurrence"
+    return "glove: GloVe -- global word-vector co-occurrence"

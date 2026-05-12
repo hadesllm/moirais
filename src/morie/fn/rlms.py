@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Least median of squares regression. 'The road up and the road down are the same thing. — Heraclitus' -- Chirrut Imwe"""
+# morie.fn -- function file (hadesllm/morie)
+"""Least median of squares regression. 'The road up and the road down are the same thing. -- Heraclitus' -- Chirrut Imwe"""
 
 from __future__ import annotations
 
@@ -72,4 +72,4 @@ rlms = lms_regression
 
 
 def cheatsheet() -> str:
-    return "Nature does not hurry, yet everything is accomplished. — Lao Tzu"
+    return "Nature does not hurry, yet everything is accomplished. -- Lao Tzu"

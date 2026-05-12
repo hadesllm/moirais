@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Collider (v-structure/immorality) A->B<-C: conditioning on B opens path."""
 import numpy as np
 from ._richresult import RichResult

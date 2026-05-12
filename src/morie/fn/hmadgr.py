@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AdaGrad: per-parameter learning rates scaled by historical gradients."""
 import numpy as np
 from ._richresult import RichResult

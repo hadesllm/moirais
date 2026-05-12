@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kolmogorov complexity approximation via compression ratio."""
 
 __all__ = ["kolmc"]

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Score matching (NCSN) loss: predict grad log p via denoising score network."""
 import numpy as np
 from ._richresult import RichResult

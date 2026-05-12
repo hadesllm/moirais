@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Noise Conditional Score Network (NCSN): score-based generative model."""
 import numpy as np
 from ._richresult import RichResult

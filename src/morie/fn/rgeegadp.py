@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Adaptive segmentation of EEG using GLR test."""
 import numpy as np
 from scipy import stats

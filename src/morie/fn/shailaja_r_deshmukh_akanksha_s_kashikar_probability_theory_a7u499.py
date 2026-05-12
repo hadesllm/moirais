@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: → U ≡ 0. Hence, the limit law of√n(ˆθn − θ) is degenerate at0 for θ ∈ {0, 1}.
+    Formula: -> U ≡ 0. Hence, the limit law of√n(ˆθn − θ) is degenerate at0 for θ ∈ {0, 1}.
 
     Parameters
     ----------

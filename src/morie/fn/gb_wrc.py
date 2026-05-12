@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Critical regions for runs test using tabulated null distribution."""
 import numpy as np
 from scipy import stats

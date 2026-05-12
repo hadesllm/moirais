@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Credible set frequentist coverage: BvM implies credible sets are confidence sets."""
 import numpy as np
 from ._richresult import RichResult

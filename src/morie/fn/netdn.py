@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Network density (proportion of non-zero edges)."""
 
 from __future__ import annotations

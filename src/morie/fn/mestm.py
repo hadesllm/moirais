@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """M-estimator with influence function and robust variance."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Word embedding lookup (Mikolov et al. 2013)."""
 from __future__ import annotations
 

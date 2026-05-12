@@ -4,7 +4,7 @@ All heavy submodule imports are lazy via PEP 562 __getattr__: an
 attribute is loaded the first time it is referenced, not at
 `import morie` time.  This keeps `import morie` cold-startup under
 a second even when the install has optional heavy deps (DoubleML,
-statsmodels, sklearn, lxml, etc.) — previously these were eagerly
+statsmodels, sklearn, lxml, etc.) -- previously these were eagerly
 imported in try/except blocks at the bottom of the package's
 __init__.py, costing ~2 minutes on a cold cache.
 
@@ -15,7 +15,7 @@ exposed), matching the previous try/except-pass behaviour.
 
 __version__ = "0.4.0"
 
-# name → submodule (".cpads", ".causal", ...).  Generated from the
+# name -> submodule (".cpads", ".causal", ...).  Generated from the
 # previous eager try-import block at v0.3.0.  Edit this dict to add
 # new top-level exports instead of adding more try-imports.
 _LAZY_EXPORTS = {

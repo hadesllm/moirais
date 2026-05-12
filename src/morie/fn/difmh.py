@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mantel-Haenszel DIF detection with ETS classification."""
 
 from __future__ import annotations

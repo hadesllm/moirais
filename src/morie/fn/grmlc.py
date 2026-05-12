@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classification MLP output head: softmax for K-class multinomial."""
 import numpy as np
 from ._richresult import RichResult

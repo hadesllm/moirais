@@ -8,7 +8,7 @@ __all__ = ["statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1
 
 
 def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1485(x, cdf=None):
-    """Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"""
+    """Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

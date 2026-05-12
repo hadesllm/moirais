@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP-based prior contraction: discreteness penalty leads to extra log factor."""
 import numpy as np
 from ._richresult import RichResult

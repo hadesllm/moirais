@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Probability manipulation via resampling. 'No more.' -- Scarlet Witch"""
 
 from __future__ import annotations

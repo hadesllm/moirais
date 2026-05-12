@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """k-sample median test extension using count above combined median."""
 import numpy as np
 from scipy import stats

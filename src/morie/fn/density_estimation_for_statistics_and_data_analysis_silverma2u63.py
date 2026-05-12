@@ -11,7 +11,7 @@ def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: [EQ] i^e(x) = ^(d + 2)(1 — x^x) if x^x < 1
+    Formula: [EQ] i^e(x) = ^(d + 2)(1 -- x^x) if x^x < 1
 
     Parameters
     ----------

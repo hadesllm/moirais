@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fisher's exact test for a 2x2 contingency table."""
 
 from typing import Union

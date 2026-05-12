@@ -11,7 +11,7 @@ def chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter_10_unnu
     """
     Regression expression (auto-extracted; see ref).
 
-    Formula: sample. Formally, we can represent such a covariate as a mapping ν : {T , C} − → {λ1, . . . , λK}.
+    Formula: sample. Formally, we can represent such a covariate as a mapping ν : {T , C} − -> {λ1, . . . , λK}.
 
     Parameters
     ----------

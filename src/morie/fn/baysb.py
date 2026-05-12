@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""BayesB — spike-and-slab prior for genomic prediction."""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""BayesB -- spike-and-slab prior for genomic prediction."""
 
 __all__ = ["baysb"]
 

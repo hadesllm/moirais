@@ -11,7 +11,7 @@ def spatiotemporal_methods_in_environmental_epidemiology_with_r__chapter_10_equa
     """
     Dispersion equation extracted from spatiotemporal-methods-in-environmental-epidemiology-with-r-chapman-amp-hall-crc-texts-in-statistical-science-2nbsped-1032397810-9781032397818.
 
-    Formula: Equation (10.6) then we get lim h→∞ γ(h) = C(0). However, the limit may not exist
+    Formula: Equation (10.6) then we get lim h->∞ γ(h) = C(0). However, the limit may not exist
 
     Parameters
     ----------

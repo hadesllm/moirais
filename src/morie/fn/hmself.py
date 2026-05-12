@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Self-supervised learning: generate labels from the data itself via pretext task."""
 import numpy as np
 from ._richresult import RichResult

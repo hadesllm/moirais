@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bispectrum estimation.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal

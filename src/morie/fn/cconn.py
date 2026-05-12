@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Open or create the MORIE SQLite cache database."""
 
 from morie.data import cache_connect as _fn

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Impulse response of a discrete-time system."""
 
 from __future__ import annotations

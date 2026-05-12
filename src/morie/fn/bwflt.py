@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Butterworth IIR filter."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import SignalResult
 
-_QUOTE = "Real knowledge is to know the extent of one's ignorance. — Confucius"
+_QUOTE = "Real knowledge is to know the extent of one's ignorance. -- Confucius"
 
 
 def butterworth_filter(x, cutoff, fs, order: int = 4, btype: str = "low") -> SignalResult:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 phchk.py - Proportional hazards assumption check via scaled Schoenfeld residuals.
 
@@ -118,7 +118,7 @@ def phchk(time: np.ndarray, event: np.ndarray, covariates: np.ndarray, beta: np.
         residuals[i] = x_event - S1
         info_diag += var_j
 
-    # Scale residuals: r*_ij = (d * var_j)^{-1} * r_ij  — Grambsch-Therneau
+    # Scale residuals: r*_ij = (d * var_j)^{-1} * r_ij  -- Grambsch-Therneau
     d = n_events
     scale = np.where(info_diag > 0, d / info_diag, 0.0)
     scaled_residuals = residuals * scale[None, :]

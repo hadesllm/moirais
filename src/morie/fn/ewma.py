@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EWMA control chart for outbreak detection."""
 
 from __future__ import annotations

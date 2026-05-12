@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Randomized PCA using random projection to approximate top components."""
 import numpy as np
 from ._richresult import RichResult

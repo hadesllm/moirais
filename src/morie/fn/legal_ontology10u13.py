@@ -11,7 +11,7 @@ def legal_ontology_chapter_10_unnumbered_13(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: <meta id="metalex_idnorm115252672" name="Time discovers truth. — Seneca"
+    Formula: <meta id="metalex_idnorm115252672" name="Time discovers truth. -- Seneca"
 
     Parameters
     ----------

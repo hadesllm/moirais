@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean and variance formulas for linear rank statistic in complete form."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Modified Shepard quadratic regression IDW."""
 
 import numpy as np

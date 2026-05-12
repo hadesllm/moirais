@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gradient clipping by global norm (Pascanu et al. 2013)."""
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ def gradient_clipping(x, max_norm: float = 1.0):
     ----------
     x : array-like or sequence of arrays
         Gradient tensor(s).  A flat array OR a list of arrays (treated
-        jointly as one global vector — standard PyTorch behaviour).
+        jointly as one global vector -- standard PyTorch behaviour).
     max_norm : float
 
     Returns

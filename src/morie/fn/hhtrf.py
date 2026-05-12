@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hilbert-Huang Transform (EMD + instantaneous frequency/amplitude).
 
 Distinct from hhtfn.py: this implementation exposes the full Hilbert

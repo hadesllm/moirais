@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Difference-in-Differences for policy change in OTIS data."""
 
 from __future__ import annotations

@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] ⊇ { ω : Yn(ω) → Y(ω) },
+    Formula: [EQ] ⊇ { ω : Yn(ω) -> Y(ω) },
 
     Parameters
     ----------

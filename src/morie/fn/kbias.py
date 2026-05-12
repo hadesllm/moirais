@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bias-reduced kernel density via geometric extrapolation."""
 
 from __future__ import annotations

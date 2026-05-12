@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Burg method for AR spectral estimation (maximum entropy)."""
 import numpy as np
 from ._richresult import RichResult

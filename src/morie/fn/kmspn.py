@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """T5 span-corruption objective: mask spans and predict them as a single target sequence."""
 import numpy as np
 from ._richresult import RichResult

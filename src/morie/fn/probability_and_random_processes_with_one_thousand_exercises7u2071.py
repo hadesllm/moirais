@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: [EQ] − → X, if {ω ∈ )Omega1 : Xn(ω) → X(ω) as n → ∞}
+    Formula: [EQ] − -> X, if {ω ∈ )Omega1 : Xn(ω) -> X(ω) as n -> ∞}
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear-by-linear association test for ordered categorical data."""
 import numpy as np
 from scipy import stats

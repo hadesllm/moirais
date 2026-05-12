@@ -11,7 +11,7 @@ def chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: If D ⊆ (0, ∞), then the function δ ↦→ ϕ(Z; δ, π, µ) belongs to the class of Lipschitz functions, which is sufficiently small to satisfy Donsker conditions. As such, the quantity√n{ ˜ψ(δ) −
+    Formula: If D ⊆ (0, ∞), then the function δ ↦-> ϕ(Z; δ, π, µ) belongs to the class of Lipschitz functions, which is sufficiently small to satisfy Donsker conditions. As such, the quantity√n{ ˜ψ(δ) −
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Binary smoothed maximum score estimator (Horowitz 1992)."""
 
 from __future__ import annotations

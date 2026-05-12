@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Now Xn(ω) → X(ω) if and only if ω /∈ A(ǫ) for all ǫ > 0. Hence P( C) = 1 implies
+    Formula: Now Xn(ω) -> X(ω) if and only if ω /∈ A(ǫ) for all ǫ > 0. Hence P( C) = 1 implies
 
     Parameters
     ----------

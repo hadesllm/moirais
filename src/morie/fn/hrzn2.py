@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Deconvolution density estimation (Stefanski-Carroll 1990; Horowitz 2009, Ch 12).
 
 Observation model:   Y_i = X_i + U_i, with U ~ known density f_U.

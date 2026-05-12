@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kuder-Richardson 20 reliability for dichotomous items."""
 
 from __future__ import annotations

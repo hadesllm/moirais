@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SAC sigma-squared ML estimate."""
 
 from ._containers import SpatialResult

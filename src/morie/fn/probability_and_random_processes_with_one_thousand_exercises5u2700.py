@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: for all Y : RT → R for which E( Y) exists, where Yi : RT → R is given by Yi( x) = Y(τ i− 1( x)) . As
+    Formula: for all Y : RT -> R for which E( Y) exists, where Yi : RT -> R is given by Yi( x) = Y(τ i− 1( x)) . As
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-"""The art of doing mathematics consists in finding that special case which contains all the germs of generality. — David Hilbert"""
+"""The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"""
 
 from __future__ import annotations
 
@@ -41,4 +41,4 @@ swchr = sw_character_summary
 
 
 def cheatsheet() -> str:
-    return "The art of doing mathematics consists in finding that special case which contains all the germs of generality. — David Hilbert"
+    return "The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"

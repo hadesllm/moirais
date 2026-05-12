@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Forecast error variance decomposition from a VAR(1) model."""
 
 import numpy as np

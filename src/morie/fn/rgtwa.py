@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """T-wave alternans (TWA) detection via spectral method."""
 import numpy as np
 from ._richresult import RichResult

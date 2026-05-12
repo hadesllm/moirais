@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generalizability coefficient (G-theory)."""
 
 from __future__ import annotations

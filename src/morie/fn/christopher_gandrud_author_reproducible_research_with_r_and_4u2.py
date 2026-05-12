@@ -4,7 +4,7 @@ from scipy import stats
 
 from ._richresult import RichResult, hypothesis_test_result
 
-__all__ = ["Real knowledge is to know the extent of one's ignorance. — Confucius"]
+__all__ = ["Real knowledge is to know the extent of one's ignorance. -- Confucius"]
 
 
 def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnumbered_2(x):
@@ -24,7 +24,7 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
         Inherits from ``dict`` (so ``isinstance(result, dict)`` is True
         and ``result["statistic"]`` / ``result.get(...)`` keep working),
         but also exposes a multi-section ``str(result)`` render. Keys: value.
-        See ``morie.fn.describe('Real knowledge is to know the extent of one\'s ignorance. — Confucius')`` for the full guide.
+        See ``morie.fn.describe('Real knowledge is to know the extent of one\'s ignorance. -- Confucius')`` for the full guide.
 
     References
     ----------
@@ -46,4 +46,4 @@ def christopher_gandrud_author_reproducible_research_with_r_and__chapter_4_unnum
 
 
 def cheatsheet():
-    return "Real knowledge is to know the extent of one's ignorance. — Confucius"
+    return "Real knowledge is to know the extent of one's ignorance. -- Confucius"

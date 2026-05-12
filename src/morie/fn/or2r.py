@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Convert odds ratio to Pearson r via d."""
 
 from .d2r import d_to_r

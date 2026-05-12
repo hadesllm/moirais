@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bias-reduced KDFE via geometric extrapolation (Fauzi Ch 2).
 
 Geometric/Richardson-style extrapolation cancels the O(h^2) bias term
@@ -48,7 +48,7 @@ def fauzi_bias_reduced_kdfe(x, t=None, h=None, c=2.0):
     n = len(x)
     if n < 2:
         return RichResult(payload={"estimate": np.nan, "n": n,
-                                    "method": "BR-KDFE — too few obs"})
+                                    "method": "BR-KDFE -- too few obs"})
     if t is None:
         t = float(np.median(x))
     if h is None:

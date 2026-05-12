@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Appendix: Kernel density estimator and MSE-optimal bandwidth."""
 import numpy as np
 from ._richresult import RichResult

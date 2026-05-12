@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Occupational exposure assessment (TWA vs OEL)."""
 
 import numpy as np

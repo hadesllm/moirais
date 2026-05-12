@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_3091(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: andσx = σy, and an ellipse for σx̸= σy, which becomes increasingly narrow as |ϱ|→1.
+    Formula: andσx = σy, and an ellipse for σx̸= σy, which becomes increasingly narrow as |ϱ|->1.
 
     Parameters
     ----------

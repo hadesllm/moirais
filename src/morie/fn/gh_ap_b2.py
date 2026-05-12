@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """KL variation V_k(P,Q): higher-order moment of log likelihood ratio."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Asymptotic properties of the kernel mean residual life (MRL) (Fauzi Ch 4).
 
 For non-negative X with survival S(t)=1-F(t), the MRL is
@@ -36,7 +36,7 @@ def fauzi_mrl_asymptotic(x, t=None, h=None):
     n = len(x)
     if n < 2:
         return RichResult(payload={"estimate": np.nan, "se": np.nan, "n": n,
-                                    "method": "fzmrl — too few obs"})
+                                    "method": "fzmrl -- too few obs"})
     if t is None:
         t = float(np.median(x))
     if h is None:
@@ -46,14 +46,14 @@ def fauzi_mrl_asymptotic(x, t=None, h=None):
     if S_t <= 0:
         return RichResult(payload={"estimate": np.nan, "se": np.nan,
                                     "S_hat": S_t, "n": n, "t": t,
-                                    "method": "fzmrl — S(t)=0"})
+                                    "method": "fzmrl -- S(t)=0"})
 
     diffs = x - t
     above = diffs > 0
     if not above.any():
         return RichResult(payload={"estimate": 0.0, "se": np.nan,
                                     "S_hat": S_t, "n": n, "t": t,
-                                    "method": "fzmrl — no x>t"})
+                                    "method": "fzmrl -- no x>t"})
     m_hat = float(np.mean(diffs[above]))
     second = float(np.mean((diffs[above]) ** 2))
     sigma2 = (second - m_hat * m_hat) / S_t

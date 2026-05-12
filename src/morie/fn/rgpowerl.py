@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Powerline interference (50/60 Hz) removal from ECG."""
 import numpy as np
 from ._richresult import RichResult

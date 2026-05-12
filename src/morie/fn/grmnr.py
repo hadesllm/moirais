@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Max-norm regularization: project weight vectors onto L2 ball of radius r."""
 import numpy as np
 from ._richresult import RichResult

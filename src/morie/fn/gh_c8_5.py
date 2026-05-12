@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Metric entropy condition: log N(eps_n, sieve Theta_n, Hellinger) <= n*eps_n^2."""
 import numpy as np
 from ._richresult import RichResult

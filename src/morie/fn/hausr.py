@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hausman specification test (FE vs RE)."""
 
 from __future__ import annotations

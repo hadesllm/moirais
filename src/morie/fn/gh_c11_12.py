@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Self-similar GP rescaling: f(lambda*.) =_d lambda^H * f(.) for fractional BM."""
 import numpy as np
 from ._richresult import RichResult

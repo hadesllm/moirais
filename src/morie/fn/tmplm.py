@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def template_match_detect(x: np.ndarray, template: np.ndarray, threshold: float = 0.7) -> DescriptiveResult:
-    """Knowing yourself is the beginning of all wisdom. — Aristotle"""
+    """Knowing yourself is the beginning of all wisdom. -- Aristotle"""
     from morie._detection import template_match as _backend
 
     indices, corr = _backend(x, template, threshold=threshold)

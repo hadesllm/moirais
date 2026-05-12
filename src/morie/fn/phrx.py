@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Pharmacoepidemiology — prescription pattern analysis."""
+# morie.fn -- function file (hadesllm/morie)
+"""Pharmacoepidemiology -- prescription pattern analysis."""
 
 import numpy as np
 
@@ -64,4 +64,4 @@ def prescription_patterns(rx_dates, rx_durations, outcome_dates=None):
 
 
 def cheatsheet() -> str:
-    return "prescription_patterns({}) -> Pharmacoepidemiology — prescription pattern analysis."
+    return "prescription_patterns({}) -> Pharmacoepidemiology -- prescription pattern analysis."

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cramer-von Mises test with kernel smoothing."""
 
 from __future__ import annotations

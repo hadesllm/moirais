@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: condition separately. Note that nλ/sn = 1 /(n1/2(2λ + 1)) → 0, for
+    Formula: condition separately. Note that nλ/sn = 1 /(n1/2(2λ + 1)) -> 0, for
 
     Parameters
     ----------

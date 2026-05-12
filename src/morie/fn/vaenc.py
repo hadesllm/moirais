@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Variational autoencoder ELBO loss (Kingma & Welling 2014)."""
 from __future__ import annotations
 

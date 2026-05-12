@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mode collapse: GAN generator outputs limited variety."""
 import numpy as np
 from ._richresult import RichResult

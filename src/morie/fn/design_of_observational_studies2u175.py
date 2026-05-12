@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_2_unnumbered_175(x):
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: such as Huber’s ψ (y) = max {−1, min (y, 1)},a s I →∞ , the null distribution of
+    Formula: such as Huber’s ψ (y) = max {−1, min (y, 1)},a s I ->∞ , the null distribution of
 
     Parameters
     ----------

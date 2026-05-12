@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Score standardization (z, T-score, stanine, sten)."""
 
 from __future__ import annotations

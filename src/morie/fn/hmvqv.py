@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discrete VAE (VQ-VAE): vector-quantized latents with codebook."""
 import numpy as np
 from ._richresult import RichResult

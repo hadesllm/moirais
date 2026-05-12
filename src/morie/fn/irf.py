@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Impulse Response Function from a VAR coefficient matrix."""
 
 import numpy as np

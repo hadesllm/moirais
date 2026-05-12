@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Two-sided median test: count above combined median in both directions."""
 import numpy as np
 from scipy import stats

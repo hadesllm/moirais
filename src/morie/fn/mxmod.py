@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric mixture model (EM with nonparametric component)."""
 
 from __future__ import annotations

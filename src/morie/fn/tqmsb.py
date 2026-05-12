@@ -23,7 +23,7 @@ def turboquant_mse_distortion_bound(bits):
 
     References
     ----------
-    TurboQuant MORIE integration — mse_distortion_bound
+    TurboQuant MORIE integration -- mse_distortion_bound
     """
     bits = np.atleast_1d(np.asarray(bits, dtype=float))
     n = len(bits)

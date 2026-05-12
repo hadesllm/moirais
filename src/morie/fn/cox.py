@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""The only true wisdom is in knowing you know nothing. — Socrates"""
+# morie.fn -- function file (hadesllm/morie)
+"""The only true wisdom is in knowing you know nothing. -- Socrates"""
 
 from __future__ import annotations
 
@@ -89,4 +89,4 @@ cox = cox_ph
 
 
 def cheatsheet() -> str:
-    return "The only true wisdom is in knowing you know nothing. — Socrates"
+    return "The only true wisdom is in knowing you know nothing. -- Socrates"

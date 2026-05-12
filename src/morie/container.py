@@ -1774,7 +1774,7 @@ def generate_dockerfile(
 
     dockerfile = textwrap.dedent(f"""\
         # =============================================================================
-        # MORIE Dockerfile — auto-generated
+        # MORIE Dockerfile -- auto-generated
         # Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation
         # =============================================================================
         # Stage 1: Base Python environment
@@ -1848,7 +1848,7 @@ def generate_compose_file(
         """)
 
     compose = textwrap.dedent(f"""\
-        # MORIE Docker Compose — auto-generated
+        # MORIE Docker Compose -- auto-generated
         version: "3.8"
 
         services:

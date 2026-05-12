@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Log-likelihood with R-style verbose result."""
 
 from typing import Callable, Sequence, Union

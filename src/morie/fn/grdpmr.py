@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DDPM reverse (denoising) step: sample from p_theta(x_{t-1} | x_t)."""
 import numpy as np
 from ._richresult import RichResult

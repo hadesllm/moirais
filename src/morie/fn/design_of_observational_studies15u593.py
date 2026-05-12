@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_15_unnumbered_593(x):
     """
     PowerAndDesign expression (auto-extracted; see ref).
 
-    Formula: as I →∞ , the power of Qλ is tending to zero while the power of max λ̸=0 Qλ is
+    Formula: as I ->∞ , the power of Qλ is tending to zero while the power of max λ̸=0 Qλ is
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multiple comparisons following Kruskal-Wallis test: pairwise rank-sum tests."""
 import numpy as np
 from scipy import stats

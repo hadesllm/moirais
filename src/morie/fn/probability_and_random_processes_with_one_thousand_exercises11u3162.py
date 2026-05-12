@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Proof. Ifλ = lim infn→∞ yn andµ = lim supn→∞ yn satisfyλ<µ then there exist rationals
+    Formula: Proof. Ifλ = lim infn->∞ yn andµ = lim supn->∞ yn satisfyλ<µ then there exist rationals
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Latent class analysis (EM for binary indicators)."""
 
 from __future__ import annotations

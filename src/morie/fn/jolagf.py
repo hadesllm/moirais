@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lag feature: shift the series by k steps."""
 import numpy as np
 from ._richresult import RichResult

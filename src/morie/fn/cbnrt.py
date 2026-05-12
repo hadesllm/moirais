@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """CausalBERT: text representation for CATE estimation with NLP confounders."""
 import numpy as np
 from ._richresult import RichResult

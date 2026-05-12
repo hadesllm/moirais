@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: P( S = π k) = 1; just note that c( n, n + m) → 0 as m → ∞ and use the result of Problem
+    Formula: P( S = π k) = 1; just note that c( n, n + m) -> 0 as m -> ∞ and use the result of Problem
 
     Parameters
     ----------

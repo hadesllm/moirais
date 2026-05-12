@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """McNemar test for symmetry of paired binary data."""
 import numpy as np
 from scipy import stats

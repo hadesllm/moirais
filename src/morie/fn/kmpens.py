@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prompt ensemble: average class probs across K different prompt templates."""
 import numpy as np
 from ._richresult import RichResult

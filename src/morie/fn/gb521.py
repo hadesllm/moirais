@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Distribution-free confidence interval for population p-th quantile using order statistics."""
 import numpy as np
 from scipy import stats

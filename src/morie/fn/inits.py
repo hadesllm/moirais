@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Initial start values for MDS. 'WRYYYYY!' -- DIO, JoJo's Bizarre Adventure"""
 
 from __future__ import annotations

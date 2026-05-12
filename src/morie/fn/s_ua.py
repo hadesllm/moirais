@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """UA subscale reliability (alpha, omega, CR, AVE)."""
 
 from __future__ import annotations

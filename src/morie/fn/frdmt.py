@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Friedman two-way ANOVA by ranks (repeated measures)."""
 
 import numpy as np

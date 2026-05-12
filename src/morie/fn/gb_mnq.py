@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sample quantile as order statistic point estimator of population quantile."""
 import numpy as np
 from scipy import stats

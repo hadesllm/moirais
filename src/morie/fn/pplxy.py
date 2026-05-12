@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Perplexity from cross-entropy loss."""
 
 from __future__ import annotations

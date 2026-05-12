@@ -11,7 +11,7 @@ def bookadvanced_elementsofstatisticallearning_chapter_4_unnumbered_341(x):
     """
     Regression expression (auto-extracted; see ref).
 
-    Formula: S, which we call the equivalent kernels . As λ→ 0, df λ→ N , and Sλ→ I,
+    Formula: S, which we call the equivalent kernels . As λ-> 0, df λ-> N , and Sλ-> I,
 
     Parameters
     ----------

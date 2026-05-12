@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Regression discontinuity design. 'There has been an awakening.' -- Snoke"""
 
 from __future__ import annotations

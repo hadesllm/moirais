@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Word2Vec skip-gram log-likelihood (one center, context window c)."""
 import numpy as np
 from ._richresult import RichResult

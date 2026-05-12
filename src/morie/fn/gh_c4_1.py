@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dirichlet process DP(alpha, G0): finite-dimensional marginals are Dirichlet."""
 import numpy as np
 from ._richresult import RichResult

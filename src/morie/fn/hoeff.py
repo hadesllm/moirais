@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hoeffding concentration inequality bound."""
 
 from __future__ import annotations

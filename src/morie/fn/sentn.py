@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lexicon-based sentiment analysis. 'There is always a bigger fish.' -- Qui-Gon Jinn"""
 
 from __future__ import annotations

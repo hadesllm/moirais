@@ -1,4 +1,4 @@
-"""Knowledge itself is power. — Francis Bacon"""
+"""Knowledge itself is power. -- Francis Bacon"""
 
 from __future__ import annotations
 
@@ -94,4 +94,4 @@ vctrs = weight_init
 
 
 def cheatsheet() -> str:
-    return "Knowledge itself is power. — Francis Bacon"
+    return "Knowledge itself is power. -- Francis Bacon"

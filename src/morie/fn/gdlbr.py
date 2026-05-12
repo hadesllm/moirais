@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
-"""In God we trust; all others must bring data. — W. Edwards Deming"""
+# morie.fn -- function file (hadesllm/morie)
+"""In God we trust; all others must bring data. -- W. Edwards Deming"""
 
 import numpy as np
 
 
 def gdlbr(population=None, births=None, deaths=None, coords=None, n=50):
-    """In God we trust; all others must bring data. — W. Edwards Deming"""
+    """In God we trust; all others must bring data. -- W. Edwards Deming"""
     from ._containers import DescriptiveResult
 
     if population is None:
@@ -32,4 +32,4 @@ gdlbr = gdlbr
 
 
 def cheatsheet() -> str:
-    return "In God we trust; all others must bring data. — W. Edwards Deming"
+    return "In God we trust; all others must bring data. -- W. Edwards Deming"

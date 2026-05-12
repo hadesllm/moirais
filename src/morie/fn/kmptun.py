@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prompt tuning: learned continuous soft-prompt embeddings prepended to input."""
 import numpy as np
 from ._richresult import RichResult

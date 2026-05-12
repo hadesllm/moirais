@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Plot summary data for Aldrich-McKelvey results."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Anderson-Darling goodness-of-fit test A^2 with stronger weight in tails."""
 import numpy as np
 from scipy import stats

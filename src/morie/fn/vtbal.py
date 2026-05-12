@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "In God we trust; all others must bring data. — W. Edwards Deming"
+_QUOTE = "In God we trust; all others must bring data. -- W. Edwards Deming"
 
 
 def viterbi_align(observations, states, trans_prob, emit_prob, **kwargs) -> DescriptiveResult:

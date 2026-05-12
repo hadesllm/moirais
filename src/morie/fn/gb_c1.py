@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chebyshev's inequality for distribution-free probability bounds."""
 import numpy as np
 from ._richresult import RichResult

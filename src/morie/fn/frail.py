@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Frailty model — gamma-distributed shared frailty for survival."""
+# morie.fn -- function file (hadesllm/morie)
+"""Frailty model -- gamma-distributed shared frailty for survival."""
 
 import numpy as np
 from scipy import optimize
@@ -67,4 +67,4 @@ def frailty_model(time, event, group, theta_init=1.0):
 
 
 def cheatsheet() -> str:
-    return "frailty_model({}) -> Frailty model — gamma-distributed shared frailty for surviva"
+    return "frailty_model({}) -> Frailty model -- gamma-distributed shared frailty for surviva"

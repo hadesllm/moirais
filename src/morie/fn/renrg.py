@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Renormalization group beta function."""
 
 __all__ = ["renrg"]

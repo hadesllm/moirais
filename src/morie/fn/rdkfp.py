@@ -10,7 +10,7 @@ def rdkit_path_fp(smiles, n_bits, min_path, max_path):
     """
     RDKit path-based fingerprint
 
-    Formula: enumerate paths len 1..7 → hash → bit
+    Formula: enumerate paths len 1..7 -> hash -> bit
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hard thresholding operator."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Difficulties strengthen the mind, as labor does the body. — Seneca"
+_QUOTE = "Difficulties strengthen the mind, as labor does the body. -- Seneca"
 
 
 def hard_threshold(x, lambda_: float = 0.1, **kwargs) -> DescriptiveResult:

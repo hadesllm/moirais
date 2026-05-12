@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_43(x):
     """
     PowerAndDesign expression (auto-extracted; see ref).
 
-    Formula: [EQ] am·an =am+n →24·23 = 2 4+3 = 2 7 = 128
+    Formula: [EQ] am·an =am+n ->24·23 = 2 4+3 = 2 7 = 128
 
     Parameters
     ----------

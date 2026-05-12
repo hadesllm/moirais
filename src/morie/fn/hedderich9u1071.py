@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_1071(x):
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: [EQ] P (|ˆpn−π|<ε)→1 for n→∞ (6.8)
+    Formula: [EQ] P (|ˆpn−π|<ε)->1 for n->∞ (6.8)
 
     Parameters
     ----------

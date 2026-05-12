@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Phase-locked loop bandwidth."""
 
 from __future__ import annotations

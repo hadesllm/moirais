@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """HRV AR model LF/HF ratio (sympathovagal balance)."""
 import numpy as np
 from ._richresult import RichResult

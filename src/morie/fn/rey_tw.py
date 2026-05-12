@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Tweedie regression (compound Poisson-gamma GLM)."""
 
 import numpy as np

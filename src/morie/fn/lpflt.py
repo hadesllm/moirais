@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Butterworth lowpass filter. 'When I let go of what I am, I become what I might be. — Lao Tzu' -- Chirrut Imwe"""
+# morie.fn -- function file (hadesllm/morie)
+"""Butterworth lowpass filter. 'When I let go of what I am, I become what I might be. -- Lao Tzu' -- Chirrut Imwe"""
 
 from __future__ import annotations
 
@@ -70,4 +70,4 @@ lpflt = lowpass_filter
 
 
 def cheatsheet() -> str:
-    return "lowpass_filter({}) -> Butterworth lowpass filter. 'When I let go of what I am, I become what I might be. — Lao Tzu' -- Ch"
+    return "lowpass_filter({}) -> Butterworth lowpass filter. 'When I let go of what I am, I become what I might be. -- Lao Tzu' -- Ch"

@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: as n → ∞. For ϵ > 1, Pθ[|ˆθn − θ| < ϵ ] = 1 for θ = 0 and θ = 1. Thus,
+    Formula: as n -> ∞. For ϵ > 1, Pθ[|ˆθn − θ| < ϵ ] = 1 for θ = 0 and θ = 1. Thus,
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Horowitz (1992) smoothed maximum-score estimator (Horowitz 2009, Ch 5).
 
     beta_hat = argmax_{||b||=1} (1/n) sum_i (2 Y_i - 1) * Phi(X_i' b / h)

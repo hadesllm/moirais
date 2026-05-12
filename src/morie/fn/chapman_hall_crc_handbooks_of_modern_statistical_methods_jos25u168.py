@@ -11,7 +11,7 @@ def chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter_25_unnu
     """
     CausalInference expression (auto-extracted; see ref).
 
-    Formula: possible match. Let ν : T × C → R assign a real number, ν (e), to each e = (τt, γc). A threshold
+    Formula: possible match. Let ν : T × C -> R assign a real number, ν (e), to each e = (τt, γc). A threshold
 
     Parameters
     ----------

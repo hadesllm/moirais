@@ -1,5 +1,5 @@
 """
-morie.entheo.data — Data fetchers for the DMT-imaging dataset.
+morie.entheo.data -- Data fetchers for the DMT-imaging dataset.
 
 Primary path: local mirror at ``/Volumes/VSR/rootcoderfiles/DMT_Imaging``
 (Carhart-Harris / Timmermann; 20 subjects EEG-fMRI; 15 motion-survived).
@@ -99,7 +99,7 @@ def _synthetic_record(subject_id: str, n_tp: int = 480, n_chan: int = 32,
 def _try_load_mat(path: Path) -> dict | None:
     """Best-effort .mat loader using scipy.io or pymatreader.
 
-    Returns None if neither library is available — the caller should
+    Returns None if neither library is available -- the caller should
     fall back to the synthetic fixture and emit a warning.
     """
     try:
@@ -169,7 +169,7 @@ def load_dmt_imaging(subject_id: str | int | None = None) -> RichResult:
         ``.records`` : list of dicts with keys
         ``subject_id``, ``eeg``, ``fmri``, ``behavioural``.
         ``.root``    : str path to the DMT_Imaging mirror (or None).
-        ``.synthetic``: bool — True if any record is the fallback.
+        ``.synthetic``: bool -- True if any record is the fallback.
     """
     root = dmt_imaging_root()
     warnings_list: list[str] = []

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Principal Component Analysis via eigendecomposition."""
 
 from __future__ import annotations
@@ -48,7 +48,7 @@ def pca(
     # Covariance (n-1 normalisation)
     cov = np.cov(Z, rowvar=False)
 
-    # Eigendecomposition (symmetric → eigh is numerically preferable)
+    # Eigendecomposition (symmetric -> eigh is numerically preferable)
     eigvals, eigvecs = np.linalg.eigh(cov)
 
     # Sort descending

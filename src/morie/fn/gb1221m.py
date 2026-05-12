@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multiple comparisons after Friedman test."""
 import numpy as np
 from scipy import stats

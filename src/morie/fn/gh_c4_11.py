@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stick-breaking DP: V_k ~ Beta(1,alpha), G = sum_k w_k delta_{theta_k}."""
 import numpy as np
 from ._richresult import RichResult

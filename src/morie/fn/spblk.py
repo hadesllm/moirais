@@ -77,7 +77,7 @@ def spatial_block_kriging(x, coords, blocks,
     ests = []; ses = []
     for b in blocks:
         pts = block_to_pts(b)
-        # C_bar(s_i, B) — average covariance from each datum to block points
+        # C_bar(s_i, B) -- average covariance from each datum to block points
         Cbar_iB = _cov_exp(cdist(coords, pts), c0, c1, a).mean(axis=1)
         Cbar_BB = float(_cov_exp(cdist(pts, pts), c0, c1, a).mean())
         rhs = np.append(Cbar_iB, 1.0)

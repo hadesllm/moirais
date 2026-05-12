@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_152(x):
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: stronger than 2γ(δ)/δ 2 → const., as δ → ∞. A valid semivariogram must                 Hypothesis
+    Formula: stronger than 2γ(δ)/δ 2 -> const., as δ -> ∞. A valid semivariogram must                 Hypothesis
 
     Parameters
     ----------

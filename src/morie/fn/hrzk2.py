@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nadaraya-Watson kernel regression (Horowitz 2009, Ch 2).
 
     m_hat(x) = sum_i K_h(x - X_i) Y_i / sum_i K_h(x - X_i)

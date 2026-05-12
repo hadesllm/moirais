@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""RMS normalization.
 
 Normalizes by root-mean-square of activations.

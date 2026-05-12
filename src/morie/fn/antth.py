@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Antithetic variates Monte-Carlo (Hammersley & Morton 1956).
 
 For uniform draws ``U_i in (0,1)`` and integrand ``f``, the antithetic
@@ -26,7 +26,7 @@ def antithetic_variates(x=None, f=None, N: int = 1000, seed: int = 42):
     x : array-like, optional
         Pre-drawn U(0,1) samples.  If None, ``N`` random U(0,1)s are drawn.
     f : callable
-        Integrand on (0,1) → scalar.  Default ``f(u)=u`` (true E=0.5).
+        Integrand on (0,1) -> scalar.  Default ``f(u)=u`` (true E=0.5).
     N : int
         Used when ``x`` is None.
     seed : int

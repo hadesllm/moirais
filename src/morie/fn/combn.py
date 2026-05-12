@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exact binomial coefficient computation."""
 
 from math import comb as _comb
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "He who is brave is free. — Seneca"
+_QUOTE = "He who is brave is free. -- Seneca"
 
 
 def combinations_count(n: int, k: int, **kwargs) -> DescriptiveResult:

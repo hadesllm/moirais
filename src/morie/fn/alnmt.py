@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """alpha-NOMINATE MCMC estimation"""
 
 import numpy as np
@@ -28,7 +28,7 @@ def alpha_nominate_score(votes=None, *, dims=1, n=10, m=5, n_iter=20):
 
 short = "alnmt"
 alias = "alpha_nominate_score"
-quote = "When I let go of what I am, I become what I might be. — Lao Tzu"
+quote = "When I let go of what I am, I become what I might be. -- Lao Tzu"
 alpha_nominate_score = alpha_nominate_score
 
 

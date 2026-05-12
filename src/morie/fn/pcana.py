@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Principal Component Analysis (PCA) via eigendecomposition.
 
 Performs PCA on a data matrix X via spectral decomposition of the correlation

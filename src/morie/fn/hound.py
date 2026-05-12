@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kalman filter tracking. 'I never lose a trail.' -- Hound"""
 
 from __future__ import annotations

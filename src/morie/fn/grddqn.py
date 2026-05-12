@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Double DQN decouples action selection from evaluation."""
 import numpy as np
 from ._richresult import RichResult

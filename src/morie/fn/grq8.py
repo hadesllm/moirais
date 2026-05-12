@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Symmetric INT8 quantization: map float tensor to 8-bit range via scale."""
 import numpy as np
 from ._richresult import RichResult

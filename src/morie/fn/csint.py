@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Natural cubic spline interpolation. 'Stay on target.' -- Gold Five"""
 
 from __future__ import annotations

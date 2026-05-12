@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""GELU activation (exact and approximation).
 
 Gaussian Error Linear Unit.

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pass@k for code generation: expected fraction of at-least-one-correct in k samples."""
 import numpy as np
 from ._richresult import RichResult

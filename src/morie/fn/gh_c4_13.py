@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Weak convergence of DP: DP(alpha_n, G0_n) -> DP(alpha, G0) weakly."""
 import numpy as np
 from ._richresult import RichResult

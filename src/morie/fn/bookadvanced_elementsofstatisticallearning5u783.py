@@ -11,7 +11,7 @@ def bookadvanced_elementsofstatisticallearning_chapter_5_unnumbered_783(x):
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: if the data are separable, then the limit of ˆβλ in (12.25) as λ→ 0 defines
+    Formula: if the data are separable, then the limit of ˆβλ in (12.25) as λ-> 0 defines
 
     Parameters
     ----------

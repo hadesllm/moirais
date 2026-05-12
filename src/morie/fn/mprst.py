@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Matching Pursuit sparse signal decomposition."""
 
 from __future__ import annotations

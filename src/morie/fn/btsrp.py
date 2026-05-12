@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bootstrap confidence interval (percentile, BCa, studentized).
 
 Implements three resampling-based CIs from Efron & Tibshirani (1993,
@@ -33,7 +33,7 @@ def bootstrap_ci(x, statistic=None, B: int = 2000, alpha: float = 0.05,
     B : int
         Number of bootstrap resamples (default 2000).
     alpha : float
-        Two-sided level (default 0.05 → 95% CI).
+        Two-sided level (default 0.05 -> 95% CI).
     method : {"percentile", "bca", "studentized"}
     seed : int
 

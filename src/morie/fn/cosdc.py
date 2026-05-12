@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discrete cosine transform decomposition."""
 
 from __future__ import annotations
@@ -8,7 +8,7 @@ from scipy.fft import dct, idct
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "He who fights with monsters should be careful lest he thereby become a monster. — Friedrich Nietzsche"
+_QUOTE = "He who fights with monsters should be careful lest he thereby become a monster. -- Friedrich Nietzsche"
 
 
 def cosine_decompose(x, **kwargs) -> DescriptiveResult:

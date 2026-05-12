@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maximum Calibration Error (MCE) for probability calibration.
 
 MCE is the worst-case calibration error across all probability bins,

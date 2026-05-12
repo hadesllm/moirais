@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_103(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] →(2 + 3x) = (5−2x)→(2 + 3x)−(5−2x) = 0→−3 + 5x = 0→x = 3/5 = 0.6
+    Formula: [EQ] ->(2 + 3x) = (5−2x)->(2 + 3x)−(5−2x) = 0->−3 + 5x = 0->x = 3/5 = 0.6
 
     Parameters
     ----------

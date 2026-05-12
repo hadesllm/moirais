@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multiplier bootstrap for Z-estimators (Kosorok 2008, Ch 10).
 
 G_n^xi(f) = n^{-1/2} sum_i xi_i (f(X_i) - P_n f), with xi_i ~ N(0,1)

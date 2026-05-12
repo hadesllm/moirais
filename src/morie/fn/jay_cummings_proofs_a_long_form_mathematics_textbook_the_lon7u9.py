@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (m) u : Z × Z → Z × Z where u(m,n ) = (m +n, 2m +n)
+    Formula: [EQ] (m) u : Z × Z -> Z × Z where u(m,n ) = (m +n, 2m +n)
 
     Parameters
     ----------

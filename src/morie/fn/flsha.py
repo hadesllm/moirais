@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """FlashAttention (IO-aware tiled softmax; Dao et al. 2022)."""
 from __future__ import annotations
 

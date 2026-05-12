@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PDF of r-th order statistic from continuous CDF."""
 import numpy as np
 from scipy import stats

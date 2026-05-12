@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heart rate variability -- time-domain metrics.
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -13,7 +13,7 @@ from ._containers import DescriptiveResult
 
 __all__ = ['hrvar']
 
-_QUOTE = "Real knowledge is to know the extent of one's ignorance. — Confucius"
+_QUOTE = "Real knowledge is to know the extent of one's ignorance. -- Confucius"
 
 
 def hrvar(

@@ -1,4 +1,4 @@
-"""morie.tps_temporal — temporal analyses for TPS crime data.
+"""morie.tps_temporal -- temporal analyses for TPS crime data.
 
 - year_over_year_trend: linear regression on yearly counts
 - seasonal_pattern: monthly / DOW / hour-of-day cyclic stats
@@ -21,7 +21,7 @@ def year_over_year_trend(df: pd.DataFrame, *,
                           ds_name: str = "?") -> RichResult:
     """Linear regression of incident counts vs year."""
     if year_col not in df.columns:
-        return RichResult(title=f"YoY trend — {ds_name}",
+        return RichResult(title=f"YoY trend -- {ds_name}",
                           warnings=[f"{year_col} missing"])
     counts = df.groupby(year_col).size().sort_index()
     valid = counts[counts.index.notna() & (counts.index >= 1990) &
@@ -30,7 +30,7 @@ def year_over_year_trend(df: pd.DataFrame, *,
     valid = valid.dropna()
     valid = valid[(valid.index >= 1990) & (valid.index <= 2030)]
     if valid.size < 3:
-        return RichResult(title=f"YoY trend — {ds_name}",
+        return RichResult(title=f"YoY trend -- {ds_name}",
                           warnings=[f"only {valid.size} usable years"])
     years = valid.index.values.astype(float)
     y = valid.values.astype(float)
@@ -47,7 +47,7 @@ def year_over_year_trend(df: pd.DataFrame, *,
                  else "FLAT")
 
     return RichResult(
-        title=f"Year-over-year trend — {ds_name}",
+        title=f"Year-over-year trend -- {ds_name}",
         summary_lines=[
             ("Years", f"{int(years.min())}–{int(years.max())}"),
             ("n years", int(valid.size)),
@@ -120,7 +120,7 @@ def seasonal_pattern(df: pd.DataFrame, *,
                 "rows": c["rows"],
             })
     return RichResult(
-        title=f"Seasonal / cyclic patterns — {ds_name}",
+        title=f"Seasonal / cyclic patterns -- {ds_name}",
         summary_lines=summary,
         tables=tables,
         interpretation=(
@@ -136,12 +136,12 @@ def changepoint_detection(df: pd.DataFrame, *,
                            ds_name: str = "?") -> RichResult:
     """Simple Pettitt-style change-point on yearly counts."""
     if year_col not in df.columns:
-        return RichResult(title=f"Change-point — {ds_name}",
+        return RichResult(title=f"Change-point -- {ds_name}",
                           warnings=[f"{year_col} missing"])
     counts = df.groupby(year_col).size().sort_index()
     counts = counts[(counts.index >= 1990) & (counts.index <= 2030)]
     if counts.size < 6:
-        return RichResult(title=f"Change-point — {ds_name}",
+        return RichResult(title=f"Change-point -- {ds_name}",
                           warnings=[f"need ≥6 years, got {counts.size}"])
     x = counts.values.astype(float)
     n = x.size
@@ -162,7 +162,7 @@ def changepoint_detection(df: pd.DataFrame, *,
     pre = float(x[: K + 1].mean())
     post = float(x[K + 1 :].mean()) if n > K + 1 else float("nan")
     return RichResult(
-        title=f"Change-point (Pettitt) — {ds_name}",
+        title=f"Change-point (Pettitt) -- {ds_name}",
         summary_lines=[
             ("Years", f"{int(counts.index.min())}–"
                      f"{int(counts.index.max())}"),
@@ -177,7 +177,7 @@ def changepoint_detection(df: pd.DataFrame, *,
         ],
         interpretation=(
             f"Estimated structural break in {bp_year}: pre-mean {pre:.1f}, "
-            f"post-mean {post:.1f}. p={p:.4f} — {'significant' if p < 0.05 else 'not significant'} at α=0.05."
+            f"post-mean {post:.1f}. p={p:.4f} -- {'significant' if p < 0.05 else 'not significant'} at α=0.05."
         ),
     )
 
@@ -189,7 +189,7 @@ def arima_forecast(df: pd.DataFrame, *,
     try:
         import statsmodels.api as sm
     except ImportError:
-        return RichResult(title=f"ARIMA — {ds_name}",
+        return RichResult(title=f"ARIMA -- {ds_name}",
                           warnings=["statsmodels not installed"])
     # Build monthly time series
     if "OCC_DATE" in df.columns:
@@ -197,22 +197,22 @@ def arima_forecast(df: pd.DataFrame, *,
     elif "REPORT_DATE" in df.columns:
         dt = pd.to_datetime(df["REPORT_DATE"], errors="coerce").dropna()
     else:
-        return RichResult(title=f"ARIMA — {ds_name}",
+        return RichResult(title=f"ARIMA -- {ds_name}",
                           warnings=["no OCC_DATE / REPORT_DATE"])
     monthly = dt.dt.to_period("M").value_counts().sort_index()
     monthly.index = monthly.index.to_timestamp()
     if monthly.size < 24:
-        return RichResult(title=f"ARIMA — {ds_name}",
+        return RichResult(title=f"ARIMA -- {ds_name}",
                           warnings=[f"need ≥24 months, got {monthly.size}"])
     try:
         model = sm.tsa.ARIMA(monthly.values.astype(float), order=(1, 1, 1))
         fit = model.fit()
         fc = fit.forecast(steps=h)
     except Exception as e:
-        return RichResult(title=f"ARIMA — {ds_name}",
+        return RichResult(title=f"ARIMA -- {ds_name}",
                           warnings=[f"fit failed: {e!r}"])
     return RichResult(
-        title=f"ARIMA(1,1,1) {h}-month forecast — {ds_name}",
+        title=f"ARIMA(1,1,1) {h}-month forecast -- {ds_name}",
         summary_lines=[
             ("Training months", int(monthly.size)),
             ("Last training month",

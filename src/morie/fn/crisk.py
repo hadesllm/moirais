@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Competing risks — Cumulative Incidence Function (CIF)."""
+# morie.fn -- function file (hadesllm/morie)
+"""Competing risks -- Cumulative Incidence Function (CIF)."""
 
 import numpy as np
 
@@ -106,4 +106,4 @@ def crisk(
 
 
 def cheatsheet() -> str:
-    return "crisk({}) -> Competing risks — Cumulative Incidence Function (CIF)."
+    return "crisk({}) -> Competing risks -- Cumulative Incidence Function (CIF)."

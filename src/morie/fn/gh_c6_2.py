@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Strong posterior consistency: Pi_n(U^c | X^n) -> 0 a.s. for all neighborhoods."""
 import numpy as np
 from ._richresult import RichResult

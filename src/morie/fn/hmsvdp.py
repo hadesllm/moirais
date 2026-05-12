@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OLS via SVD pseudoinverse (robust to singular X^T X)."""
 import numpy as np
 from ._richresult import RichResult

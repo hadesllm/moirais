@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RMSFE (Root Mean Square Forecast Error)."""
 
 import numpy as np

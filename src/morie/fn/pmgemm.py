@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Burnett 2018 GEMM — nonlinear PM₂.₅ exposure-response for mortality."""
+# morie.fn -- function file (hadesllm/morie)
+"""Burnett 2018 GEMM -- nonlinear PM₂.₅ exposure-response for mortality."""
 
 from __future__ import annotations
 
@@ -27,11 +27,11 @@ from ._containers import DescriptiveResult
 #
 # Parameters verified against Burnett 2018 figure 1B and S3-S8.
 _GEMM_PARAMS: dict[str, dict[str, float]] = {
-    # NCDs (noncommunicable diseases) + LRI — the WHO/GBD headline.
+    # NCDs (noncommunicable diseases) + LRI -- the WHO/GBD headline.
     # "All adult mortality attributable to ambient PM2.5" in
     # Burnett 2018 terminology.
     "ncd_lri":    {"theta": 0.1430, "alpha": 1.6,  "mu": 15.5, "nu": 36.8},
-    # Ischemic heart disease — age-averaged 25-80+ (Burnett 2018 T-S2).
+    # Ischemic heart disease -- age-averaged 25-80+ (Burnett 2018 T-S2).
     "ihd":        {"theta": 0.2969, "alpha": 1.9,  "mu": 12.0, "nu": 40.2},
     # Stroke (cerebrovascular, age-averaged).
     "stroke":     {"theta": 0.2720, "alpha": 6.2,  "mu":  7.0, "nu": 19.3},
@@ -43,7 +43,7 @@ _GEMM_PARAMS: dict[str, dict[str, float]] = {
     "lri":        {"theta": 0.4498, "alpha": 6.46, "mu": 12.0, "nu": 22.6},
 }
 
-# C0 — theoretical minimum risk exposure level (Burnett 2018 § Methods).
+# C0 -- theoretical minimum risk exposure level (Burnett 2018 § Methods).
 _TMREL_UGM3 = 2.4
 
 
@@ -124,7 +124,7 @@ def pm_gemm_rr(
 
     Notes
     -----
-    Quote: "The saturation is the lesson." — GEMM's nonlinearity is
+    Quote: "The saturation is the lesson." -- GEMM's nonlinearity is
     what makes it honest about Delhi-level concentrations where
     linear models fail.
     """
@@ -150,7 +150,7 @@ def pm_gemm_rr(
     z = np.maximum(0.0, C - reference_ugm3)
     # log(z/α + 1) is always ≥ 0 because z ≥ 0.
     log_term = np.log(z / p_alpha + 1.0)
-    # Sigmoid weight — saturates as z grows.
+    # Sigmoid weight -- saturates as z grows.
     sigmoid = 1.0 / (1.0 + np.exp(-(z - p_mu) / p_nu))
     log_rr = p_theta * log_term * sigmoid
     rr = np.exp(log_rr)

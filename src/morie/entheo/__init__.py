@@ -1,5 +1,5 @@
 """
-morie.entheo — Psychedelic EEG-fMRI preprocessing and consciousness analysis.
+morie.entheo -- Psychedelic EEG-fMRI preprocessing and consciousness analysis.
 
 v0.4.0-alpha scaffold. Opt-in module; not auto-loaded by `import morie`.
 
@@ -15,7 +15,7 @@ implementations of two consciousness-theory metrics:
     scored as the spectral slope of the autocorrelation of the
     EEG-fMRI joint state-vector.
 
-Toy in v0.4.0-alpha — actual psychometric calibration in v0.4.0-rc1.
+Toy in v0.4.0-alpha -- actual psychometric calibration in v0.4.0-rc1.
 
 Public API
 ----------

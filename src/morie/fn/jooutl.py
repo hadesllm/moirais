@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rolling-IQR outlier detection for time series."""
 import numpy as np
 from ._richresult import RichResult

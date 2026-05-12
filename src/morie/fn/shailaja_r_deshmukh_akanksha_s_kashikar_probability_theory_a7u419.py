@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: → θ. Find the limit law of Yn = √n(ˆθn − θ).
+    Formula: -> θ. Find the limit law of Yn = √n(ˆθn − θ).
 
     Parameters
     ----------

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""OTIS group comparison — t-test/ANOVA + effect size."""
+# morie.fn -- function file (hadesllm/morie)
+"""OTIS group comparison -- t-test/ANOVA + effect size."""
 
 from __future__ import annotations
 
@@ -82,4 +82,4 @@ def otis_group_compare(
 
 
 def cheatsheet() -> str:
-    return "otis_group_compare({}) -> OTIS group comparison — t-test/ANOVA + effect size."
+    return "otis_group_compare({}) -> OTIS group comparison -- t-test/ANOVA + effect size."

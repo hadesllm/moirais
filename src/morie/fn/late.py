@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 Local Average Treatment Effect (LATE) via instrumental variables.
 
-Implements ``estimate_late`` — estimates the LATE using 2SLS (linearmodels
+Implements ``estimate_late`` -- estimates the LATE using 2SLS (linearmodels
 or statsmodels) with automatic fallback to the Wald estimator.
 """
 

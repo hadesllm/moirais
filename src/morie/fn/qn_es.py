@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Qn scale estimator (Rousseeuw & Croux, 1993)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bits-per-byte: cross-entropy divided by bytes-per-token averaged over the corpus."""
 import numpy as np
 from ._richresult import RichResult

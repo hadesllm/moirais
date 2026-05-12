@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Detrended fluctuation analysis — Rangayyan Ch 7."""
+# morie.fn -- function file (hadesllm/morie)
+"""Detrended fluctuation analysis -- Rangayyan Ch 7."""
 from __future__ import annotations
 
 import numpy as np
@@ -81,4 +81,4 @@ def rangayyan_dfa(x, scales=None, order=1):
 
 
 def cheatsheet():
-    return "rgdfa: detrended fluctuation analysis α — Rangayyan Ch 7"
+    return "rgdfa: detrended fluctuation analysis α -- Rangayyan Ch 7"

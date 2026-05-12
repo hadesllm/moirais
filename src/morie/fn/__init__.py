@@ -1,10 +1,10 @@
-"""morie.fn — lazy-loaded function modules (PEP 562).
+"""morie.fn -- lazy-loaded function modules (PEP 562).
 
 The package hosts ~36k auto-generated callable modules.  Previously
 ``__init__.py`` was a 36k-line eager-import block; importing
 ``morie.fn`` parsed every submodule up front, costing minutes on
 cold caches.  Replaced with a small lazy loader that reads the
-symbol→submodule mapping from sibling ``_lazy_map.json`` and resolves
+symbol->submodule mapping from sibling ``_lazy_map.json`` and resolves
 callables on first access via :pep:`562` ``__getattr__``.
 
 Behaviour for callers is unchanged: both ``from morie.fn import X``

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MinT reconciliation: trace-minimizing weighted least-squares reconciliation."""
 import numpy as np
 from ._richresult import RichResult

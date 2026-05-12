@@ -1,4 +1,4 @@
-"""morie.run_crime_analysis — one-command end-to-end pipeline.
+"""morie.run_crime_analysis -- one-command end-to-end pipeline.
 
 Usage::
 
@@ -58,7 +58,7 @@ def otis_only(*, run_descriptive: bool = True,
 def tps_only(category: str = "Assault",
              *, sample_rows: int | None = 50_000) -> dict[str, Any]:
     """Run TPS-only stack on one category."""
-    _step(f"TPS analyses — {category}")
+    _step(f"TPS analyses -- {category}")
     out: dict[str, Any] = {}
 
     from . import tps_all_analyze, tps_datasets, tps_spatial, tps_spatial_advanced, tps_stochastic, tps_temporal
@@ -133,7 +133,7 @@ def full(sample_rows: int | None = 50_000,
     for the OTIS half + 30 s per TPS category.
     """
     t0 = time.time()
-    print("MORIE — full crime-analysis pipeline")
+    print("MORIE -- full crime-analysis pipeline")
     print("=" * 60)
 
     out: dict[str, Any] = {}

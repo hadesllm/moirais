@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ordinal IRT / mixed factor analysis."""
 
 from __future__ import annotations

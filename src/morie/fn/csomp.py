@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Orthogonal Matching Pursuit for sparse recovery."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "I cannot teach anybody anything. I can only make them think. — Socrates"
+_QUOTE = "I cannot teach anybody anything. I can only make them think. -- Socrates"
 
 
 def omp(A, y, sparsity: int, **kwargs) -> DescriptiveResult:

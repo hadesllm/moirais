@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """UMAP projection of high-D embeddings to low-D for clustering / viz."""
 import numpy as np
 from ._richresult import RichResult

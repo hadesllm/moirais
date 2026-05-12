@@ -11,7 +11,7 @@ def david_j_morin_probability_for_the_enthusiastic_beginner_chapter_5_unnumbered
     """
     CountModels expression (auto-extracted; see ref).
 
-    Formula: When we take the δ → 0 limit, both of the 3 xδ and δ2 terms go away, leaving us
+    Formula: When we take the δ -> 0 limit, both of the 3 xδ and δ2 terms go away, leaving us
 
     Parameters
     ----------

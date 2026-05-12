@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stacking meta-learner: predictions from L base models feed a final blender."""
 import numpy as np
 from ._richresult import RichResult

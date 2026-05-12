@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Survey-weighted regression with robust (sandwich) standard errors."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """One-step estimator with Newton-Raphson influence-function correction.
 
 The one-step estimator starts from an initial (possibly inefficient)

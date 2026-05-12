@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Drop influential votes. 'Hellzone Grenade!' -- Piccolo, Dragon Ball Z"""
 
 from __future__ import annotations

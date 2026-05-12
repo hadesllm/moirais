@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BayesCπ: spike-and-slab variable selection for genomic prediction."""
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ __all__ = ["bayes_cpi_genomic"]
 def bayes_cpi_genomic(x, y, n_iter: int = 300, burn: int = 100,
                       pi_init: float = 0.1, seed: int = 0,
                       deterministic_seed: int | None = None):
-    """BayesCπ — Habier, Fernando & Garrick (2011).
+    """BayesCπ -- Habier, Fernando & Garrick (2011).
 
     Model::
 
@@ -150,7 +150,7 @@ def bayes_cpi_genomic(x, y, n_iter: int = 300, burn: int = 100,
             "p": p,
             "method": "BayesCπ Gibbs (Habier-Fernando-Kizilkaya-Garrick)",
         },
-        warnings=["Short chain (default 300 iters / 100 burn) — for "
+        warnings=["Short chain (default 300 iters / 100 burn) -- for "
                   "publication posteriors use BGLR with ≥10k iters."],
     )
 

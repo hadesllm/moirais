@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Reward function R(s, a, s')."""
 import numpy as np
 from ._richresult import RichResult

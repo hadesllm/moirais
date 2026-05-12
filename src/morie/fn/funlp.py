@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Funnel plot data for publication bias. 'Look well into thyself; there is a source which will always spring up. — Marcus Aurelius' -- Ahsoka Tano"""
+# morie.fn -- function file (hadesllm/morie)
+"""Funnel plot data for publication bias. 'Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius' -- Ahsoka Tano"""
 
 from __future__ import annotations
 
@@ -73,4 +73,4 @@ funlp = funnel_plot
 
 
 def cheatsheet() -> str:
-    return "funnel_plot({}) -> Funnel plot data for publication bias. 'Look well into thyself; there is a source which will always spring up. — Marcus Aurelius' -- Ah"
+    return "funnel_plot({}) -> Funnel plot data for publication bias. 'Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius' -- Ah"

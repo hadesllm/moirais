@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ordered logit (proportional odds) model AND
 Jonckheere-Terpstra ordered-alternatives test (Gibbons Ch 10.6).
 

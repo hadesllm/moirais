@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius"""
+# morie.fn -- function file (hadesllm/morie)
+"""The happiness of your life depends upon the quality of your thoughts. -- Marcus Aurelius"""
 
 from __future__ import annotations
 
@@ -44,4 +44,4 @@ delny = delaunay_simple
 
 
 def cheatsheet() -> str:
-    return "The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius"
+    return "The happiness of your life depends upon the quality of your thoughts. -- Marcus Aurelius"

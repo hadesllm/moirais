@@ -188,7 +188,7 @@ def run_golden(callable_path: str, fn_name: str, source: str, cases: Iterable[Go
     for case in cases:
         try:
             actual = fn(**case.inputs)
-        except Exception as e:  # noqa: BLE001 — eval gate must capture all
+        except Exception as e:  # noqa: BLE001 -- eval gate must capture all
             report.results.append(
                 CaseResult(case=case, actual=None, status="error", detail=f"{type(e).__name__}: {e}")
             )

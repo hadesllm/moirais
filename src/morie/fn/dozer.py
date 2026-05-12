@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Out of chaos, comes order. — Friedrich Nietzsche"""
+# morie.fn -- function file (hadesllm/morie)
+"""Out of chaos, comes order. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 

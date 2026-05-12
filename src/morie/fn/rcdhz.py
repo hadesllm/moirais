@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hazard rate at each time point for recidivism."""
 
 from __future__ import annotations

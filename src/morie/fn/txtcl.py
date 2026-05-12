@@ -1,4 +1,4 @@
-"""Naive Bayes text classifier. 'We are what we repeatedly do. Excellence is not an act, but a habit. — Aristotle'"""
+"""Naive Bayes text classifier. 'We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle'"""
 
 from __future__ import annotations
 

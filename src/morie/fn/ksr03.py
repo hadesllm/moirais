@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Glivenko-Cantelli theorem verification (Kosorok 2008, Ch 2).
 
 Computes sup_t |F_n(t) - F(t)| against a hypothesised CDF F (default

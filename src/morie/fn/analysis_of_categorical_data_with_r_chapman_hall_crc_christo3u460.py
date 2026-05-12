@@ -11,7 +11,7 @@ def analysis_of_categorical_data_with_r_chapman_hall_crc_christo_chapter_3_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: row marginal totals vary—n1+ = 491 and n2+ = 509—and are very close to what
+    Formula: row marginal totals vary--n1+ = 491 and n2+ = 509--and are very close to what
 
     Parameters
     ----------

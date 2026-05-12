@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Guttman's Lambda 4 (maximum split-half reliability)."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def gl4(
     n_splits: int = 500,
     seed: int = 42,
 ) -> float:
-    """Guttman's Lambda 4 — maximum split-half reliability.
+    """Guttman's Lambda 4 -- maximum split-half reliability.
 
     The maximum reliability obtainable from splitting the test into two
     halves.  For k <= 20, evaluates a random sample of splits; for
@@ -61,7 +61,7 @@ def gl4(
     best = -np.inf
 
     # Principal component split: assign items to halves by sign of
-    # first eigenvector — this is usually near-optimal.
+    # first eigenvector -- this is usually near-optimal.
     C = np.cov(X, rowvar=False, ddof=1)
     eigvals, eigvecs = np.linalg.eigh(C)
     pc1 = eigvecs[:, -1]  # largest eigenvalue's eigenvector

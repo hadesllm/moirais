@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Autoformer: seasonal/trend decomposition + FFT-based lagged-similarity attention."""
 import numpy as np
 from ._richresult import RichResult

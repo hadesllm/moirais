@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wavelet multiresolution analysis: scaling functions phi_{jk} and wavelets psi_{jk}."""
 import numpy as np
 from ._richresult import RichResult

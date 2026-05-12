@@ -8,7 +8,7 @@ __all__ = ["statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_9
 
 
 def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_985(x, cdf=None):
-    """Character is destiny. — Heraclitus"""
+    """Character is destiny. -- Heraclitus"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

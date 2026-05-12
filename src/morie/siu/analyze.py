@@ -1,4 +1,4 @@
-"""SIU analysis surfaces — turns the scraped SIU.csv / SIU_by_case.csv
+"""SIU analysis surfaces -- turns the scraped SIU.csv / SIU_by_case.csv
 into structured, RichResult-emitting analyses.
 
 Each callable here loads the canonical SIU outputs from
@@ -57,7 +57,7 @@ def by_police_service(csv_path: Path | str | None = None) -> RichResult:
         c = int(charges.get(svc, 0))
         nc = int(no_charges.get(svc, 0))
         rate = (c / (c + nc)) if (c + nc) > 0 else float("nan")
-        out_rows.append([str(svc)[:50], n, c, nc, f"{rate*100:.1f}%" if not pd.isna(rate) else "—"])
+        out_rows.append([str(svc)[:50], n, c, nc, f"{rate*100:.1f}%" if not pd.isna(rate) else "--"])
     out_rows.sort(key=lambda r: -r[1])  # by case count
 
     return RichResult(
@@ -76,7 +76,7 @@ def by_police_service(csv_path: Path | str | None = None) -> RichResult:
         interpretation=(f"Top services by case count: "
                         f"{', '.join(r[0] for r in out_rows[:5])}. "
                         "Services with low charge rate may indicate either "
-                        "truly justified force or systematic under-charging — "
+                        "truly justified force or systematic under-charging -- "
                         "context-dependent interpretation."),
         payload={"counts": dict(zip([str(s) for s in n_cases.index], n_cases.tolist())),
                  "charges": charges.to_dict(),
@@ -105,7 +105,7 @@ def by_year(csv_path: Path | str | None = None) -> RichResult:
             int(charged.get(year, 0)),
             int(no_charged.get(year, 0)),
             (f"{100*charged[year]/(charged[year]+no_charged[year]):.1f}%"
-             if (charged.get(year, 0) + no_charged.get(year, 0)) > 0 else "—"),
+             if (charged.get(year, 0) + no_charged.get(year, 0)) > 0 else "--"),
         ])
     return RichResult(
         title="SIU cases by year",
@@ -220,7 +220,7 @@ def mental_health_race_indicators(csv_path: Path | str | None = None) -> RichRes
 
 
 def decision_timing(csv_path: Path | str | None = None) -> RichResult:
-    """Distributions of intervals: incident → notification → director's decision."""
+    """Distributions of intervals: incident -> notification -> director's decision."""
     df = _load(csv_path)
     inc = pd.to_datetime(df["date_of_incident_iso"], errors="coerce")
     notif = pd.to_datetime(df["date_siu_notified_iso"], errors="coerce")
@@ -244,9 +244,9 @@ def decision_timing(csv_path: Path | str | None = None) -> RichResult:
             "title": "Interval distributions (days):",
             "headers": ["Interval", "n parsed", "Mean", "Median", "Min", "Max"],
             "rows": [
-                _row("Incident → SIU notified", inc_to_notif),
-                _row("Notified → director's decision", notif_to_decision),
-                _row("Incident → decision (total)", inc_to_decision),
+                _row("Incident -> SIU notified", inc_to_notif),
+                _row("Notified -> director's decision", notif_to_decision),
+                _row("Incident -> decision (total)", inc_to_decision),
             ],
         }],
     )
@@ -255,7 +255,7 @@ def decision_timing(csv_path: Path | str | None = None) -> RichResult:
 def all_analyses(csv_path: Path | str | None = None,
                  out_dir: Path | None = None) -> dict:
     """Run every analysis and write each to its own file under
-    data/manifest/outputs/siu/. Returns a dict of name → RichResult."""
+    data/manifest/outputs/siu/. Returns a dict of name -> RichResult."""
     out_dir = out_dir or DEFAULT_OUT
     out_dir.mkdir(parents=True, exist_ok=True)
     results: dict[str, RichResult] = {}

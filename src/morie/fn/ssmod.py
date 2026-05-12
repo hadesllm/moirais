@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Linear-Gaussian state-space model — Kalman filter + smoother."""
+# morie.fn -- function file (hadesllm/morie)
+"""Linear-Gaussian state-space model -- Kalman filter + smoother."""
 from __future__ import annotations
 
 import numpy as np

@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_44(x):
     """
     PowerAndDesign expression (auto-extracted; see ref).
 
-    Formula: [EQ] am :an =am−n →24 : 2 3 = 2 4−3 = 2 1 = 2
+    Formula: [EQ] am :an =am−n ->24 : 2 3 = 2 4−3 = 2 1 = 2
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Probability Integral Transformation: Y = F_X(X) ~ Uniform(0,1)."""
 import numpy as np
 from ._richresult import RichResult

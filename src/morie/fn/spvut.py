@@ -30,7 +30,7 @@ def spatial_utility(
     ----------
     Armstrong (2014), Ch 4-5.
 
-    .. epigraph:: 'Errors using inadequate data are much less than those using no data at all. — Charles Babbage'
+    .. epigraph:: 'Errors using inadequate data are much less than those using no data at all. -- Charles Babbage'
     """
     X = np.asarray(ideal_points, dtype=float)
     Z = np.asarray(alternatives, dtype=float)

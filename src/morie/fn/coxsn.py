@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cox-Snell residuals for survival model diagnostics."""
 
 from __future__ import annotations

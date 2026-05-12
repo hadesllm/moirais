@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Asymptotic properties of Horowitz's T_n and F_n estimators."""
 import numpy as np
 from ._richresult import RichResult

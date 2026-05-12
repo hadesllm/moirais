@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ergodic decomposition theorem verification."""
 
 __all__ = ["ergdc"]

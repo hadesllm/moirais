@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Item selection — flag items for removal."""
+# morie.fn -- function file (hadesllm/morie)
+"""Item selection -- flag items for removal."""
 
 from __future__ import annotations
 
@@ -86,4 +86,4 @@ def item_select(
 
 
 def cheatsheet() -> str:
-    return "item_select({}) -> Item selection — flag items for removal."
+    return "item_select({}) -> Item selection -- flag items for removal."

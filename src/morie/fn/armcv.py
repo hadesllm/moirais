@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AR model estimation via modified covariance method."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Our greatest glory is not in never falling, but in rising every time we fall. — Confucius"
+_QUOTE = "Our greatest glory is not in never falling, but in rising every time we fall. -- Confucius"
 
 
 def ar_modified_cov_fn(x: np.ndarray, order: int = 4) -> DescriptiveResult:

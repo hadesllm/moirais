@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LoRA: low-rank adaptation delta, W = W_0 + B A where A,B low-rank."""
 import numpy as np
 from ._richresult import RichResult

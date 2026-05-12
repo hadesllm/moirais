@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Magnitude-squared coherence function."""
 
 from __future__ import annotations

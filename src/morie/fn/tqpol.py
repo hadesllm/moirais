@@ -23,7 +23,7 @@ def turboquant_polar_transform(x):
 
     References
     ----------
-    TurboQuant MORIE integration — morie/quant.py polar_transform
+    TurboQuant MORIE integration -- morie/quant.py polar_transform
     """
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)

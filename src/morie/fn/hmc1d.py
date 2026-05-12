@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Causal 1D convolution: output at time t only depends on t'<=t."""
 import numpy as np
 from ._richresult import RichResult

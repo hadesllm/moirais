@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_104(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] →xS = 0.6 and yS = 5−2x = 5−2·0.6 = 3.8.
+    Formula: [EQ] ->xS = 0.6 and yS = 5−2x = 5−2·0.6 = 3.8.
 
     Parameters
     ----------

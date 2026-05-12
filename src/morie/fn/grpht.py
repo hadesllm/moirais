@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Graph from edge list. 'We are what they grow beyond.'"""
 
 from __future__ import annotations

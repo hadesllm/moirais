@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """List all datasets with cache status."""
 
 from morie.data import list_datasets as _fn

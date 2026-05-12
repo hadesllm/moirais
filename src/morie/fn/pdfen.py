@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Non-parametric PDF estimation."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Character is destiny. — Heraclitus"
+_QUOTE = "Character is destiny. -- Heraclitus"
 
 
 def pdf_estimate(x, method: str = "histogram", bins: int = 50, **kwargs) -> DescriptiveResult:

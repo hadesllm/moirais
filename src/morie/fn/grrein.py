@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """REINFORCE policy gradient update (Monte Carlo)."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Tangent-space dimension for parametric submodels (Kosorok 2008, Ch 6).
 
 The tangent space T at P is the closure of {score functions s along

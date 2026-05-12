@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cutting plane / cutting sphere for vote classification (Armstrong Ch 3)."""
 import numpy as np
 from ._richresult import RichResult
@@ -10,7 +10,7 @@ def cutting_plane_sphere(x, votes=None):
     """Compute the cutting hyperplane w'x = c that maximises classification
     of binary votes given legislator ideal points.
 
-    Strategy: standardised normal-vector linear discriminant —
+    Strategy: standardised normal-vector linear discriminant --
         w  ∝  Σ_pooled⁻¹ (μ_yea - μ_nay)
         c  =  w' (μ_yea + μ_nay) / 2
     For p = 1 this collapses to the midpoint between class means.
@@ -18,7 +18,7 @@ def cutting_plane_sphere(x, votes=None):
     Parameters
     ----------
     x : (n, p) ideal-point matrix.  1-D vectors are treated as p = 1.
-    votes : (n,) {0,1} — required for non-trivial output.
+    votes : (n,) {0,1} -- required for non-trivial output.
 
     Returns
     -------
@@ -74,7 +74,7 @@ csphr = cutting_plane_sphere
 
 
 def cheatsheet():
-    return "csphr: Cutting plane w'x=c — pooled-LDA normal vector."
+    return "csphr: Cutting plane w'x=c -- pooled-LDA normal vector."
 
 
 # CANONICAL TEST

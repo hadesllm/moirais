@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """E-value for unmeasured confounding (VanderWeele and Ding, 2017)."""
 
 import math

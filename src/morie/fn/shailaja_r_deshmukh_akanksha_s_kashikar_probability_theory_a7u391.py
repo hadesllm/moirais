@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] E(Xn/n − 1)2 = E(Xn − n)2/n2 = 2n/n2 → 0 ⇒ Xn/n
+    Formula: [EQ] E(Xn/n − 1)2 = E(Xn − n)2/n2 = 2n/n2 -> 0 ⇒ Xn/n
 
     Parameters
     ----------

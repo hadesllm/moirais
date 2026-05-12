@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Perceiver IO: adds cross-attention output decoder."""
 import numpy as np
 from ._richresult import RichResult

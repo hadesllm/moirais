@@ -1,4 +1,4 @@
-"""Vine copula — D-vine pair-copula construction (Aas, Czado, Frigessi &
+"""Vine copula -- D-vine pair-copula construction (Aas, Czado, Frigessi &
 Bakken 2009).
 
 Implements a Gaussian D-vine: factorises ``f(x_1, ..., x_d)`` as a

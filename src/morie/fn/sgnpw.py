@@ -71,7 +71,7 @@ def sign_test_power(x, mu0: float = 0.0, p_alt: float = 0.7, alpha: float = 0.05
             break
     size = float(cum)
     if not reject.any():
-        # Can't reject at this alpha (sample too small) — power undefined
+        # Can't reject at this alpha (sample too small) -- power undefined
         return RichResult(payload={
             "statistic": 0.0, "n": n, "p_alt": float(p_alt),
             "alpha": float(alpha), "size": 0.0,

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fredholm integral equation of the first kind (statistical inverse problem)."""
 import numpy as np
 from scipy import stats

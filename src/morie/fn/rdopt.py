@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RD optimal bandwidth selection (IK/CCT)."""
 
 from __future__ import annotations

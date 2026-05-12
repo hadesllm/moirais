@@ -41,7 +41,7 @@ def _section(title: str) -> None:
 
 
 def step1_otis_callables() -> None:
-    _section("OTIS suite — bundled b01/b09/c11 samples")
+    _section("OTIS suite -- bundled b01/b09/c11 samples")
     b01 = load_sample("otis_b01")
     b09 = load_sample("otis_b09")
 
@@ -60,7 +60,7 @@ def step1_otis_callables() -> None:
 
 
 def step2_longsim() -> None:
-    _section("Longitudinal simulator — VAR(1) panel with AR1 covariance")
+    _section("Longitudinal simulator -- VAR(1) panel with AR1 covariance")
     spec = LongitudinalSimSpec(
         n_individuals=50, n_timepoints=20, p_variables=4,
         cov_kernel="ar1", cov_rho=0.5, ar_lags=1,
@@ -93,7 +93,7 @@ def step4_kulldorff() -> None:
         print(f"  top cluster:    LRT = {c.log_lrt}, RR = {c.relative_risk}, "
               f"p = {c.p_value}, radius = {c.radius_km} km")
         print(f"  centre:         ({c.center_lat:.4f}, {c.center_lon:.4f})")
-        print(f"  time window:    {c.t_start.date()} → {c.t_end.date()}")
+        print(f"  time window:    {c.t_start.date()} -> {c.t_end.date()}")
 
 
 def step5_license_check() -> None:

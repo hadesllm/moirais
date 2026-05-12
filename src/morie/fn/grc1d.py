@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Causal (masked) 1D convolution for time-series forecasting."""
 import numpy as np
 from ._richresult import RichResult

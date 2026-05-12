@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Feynman path integral (1D harmonic oscillator)."""
 
 __all__ = ["feynp"]

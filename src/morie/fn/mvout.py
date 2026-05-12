@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multivariate outlier detection via robust Mahalanobis distance."""
 
 from __future__ import annotations

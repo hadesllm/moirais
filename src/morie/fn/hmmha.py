@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multi-head attention: concat heads, then linear projection."""
 import numpy as np
 from ._richresult import RichResult

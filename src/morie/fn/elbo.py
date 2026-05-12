@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Evidence Lower Bound (ELBO) computation."""
 
 from __future__ import annotations

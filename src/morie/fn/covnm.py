@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Covering number estimation (epsilon-net)."""
 
 from __future__ import annotations

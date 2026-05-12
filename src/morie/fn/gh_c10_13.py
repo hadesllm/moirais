@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayesian nonparametric testing of point null H0: theta = theta_0."""
 import numpy as np
 from scipy import stats

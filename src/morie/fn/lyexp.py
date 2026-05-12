@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lyapunov exponent estimation (largest).
 
 Reference: Rangayyan, R.M. & Krishnan, S. (2024). *Biomedical Signal
@@ -13,7 +13,7 @@ from ._containers import DescriptiveResult
 
 __all__ = ['lyexp']
 
-_QUOTE = "That which does not kill us makes us stronger. — Friedrich Nietzsche"
+_QUOTE = "That which does not kill us makes us stronger. -- Friedrich Nietzsche"
 
 
 def lyexp(

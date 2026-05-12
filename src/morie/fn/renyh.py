@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Renyi entropy of order alpha."""
 
 __all__ = ["renyh"]

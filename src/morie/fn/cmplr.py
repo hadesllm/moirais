@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Complier Average Causal Effect (CACE/LATE)."""
 
 from __future__ import annotations
@@ -28,7 +28,7 @@ def complier_ate(
         CACE = \frac{E[Y|Z=1] - E[Y|Z=0]}{E[T|Z=1] - E[T|Z=0]}
         = \frac{ITT_Y}{ITT_T}
 
-    This identifies the treatment effect among *compliers* — units
+    This identifies the treatment effect among *compliers* -- units
     who take treatment when assigned (Z=1) and don't when not (Z=0).
 
     Standard error via delta method:

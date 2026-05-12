@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Inspection fail rate — proportion below threshold."""
+# morie.fn -- function file (hadesllm/morie)
+"""Inspection fail rate -- proportion below threshold."""
 
 from __future__ import annotations
 
@@ -36,4 +36,4 @@ def inspection_fail_rate(
 
 
 def cheatsheet() -> str:
-    return "inspection_fail_rate({}) -> Inspection fail rate — proportion below threshold."
+    return "inspection_fail_rate({}) -> Inspection fail rate -- proportion below threshold."

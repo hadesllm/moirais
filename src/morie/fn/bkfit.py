@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 r"""Backfitting algorithm for additive models.
 
 Iteratively estimates each component :math:`m_j` of the additive model

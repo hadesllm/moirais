@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Geometric mean probability (GMP) fit diagnostic."""
 
 from __future__ import annotations

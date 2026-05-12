@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Renyi entropy."""
 
 import numpy as np
@@ -13,7 +13,7 @@ def renyi_entropy(x, alpha: float = 2.0, bins: int = 50, **kwargs) -> ESRes:
         H_{\\alpha}(X) = \\frac{1}{1 - \\alpha} \\log_2 \\left(
         \\sum_i p_i^{\\alpha} \\right)
 
-    For α → 1 this converges to Shannon entropy. α = 2 gives
+    For α -> 1 this converges to Shannon entropy. α = 2 gives
     collision entropy. α = 0 gives Hartley entropy.
 
     :param x: array-like of observations.

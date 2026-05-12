@@ -10,7 +10,7 @@ def advanced_composition(epsilon, delta, k, delta_prime):
     """
     Advanced composition theorem
 
-    Formula: k mechs with ε,δ → (√(2k ln 1/δ')·ε + kε(eᵉ−1), kδ + δ')-DP
+    Formula: k mechs with ε,δ -> (√(2k ln 1/δ')·ε + kε(eᵉ−1), kδ + δ')-DP
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-"""ML-DSA / Dilithium-lite — simplified lattice-based signature.
+"""ML-DSA / Dilithium-lite -- simplified lattice-based signature.
 
 Educational reference capturing the core Dilithium construction:
 MLWE keygen, rejection sampling sign, HighBits/LowBits verify.

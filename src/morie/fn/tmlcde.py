@@ -10,7 +10,7 @@ def tmle_controlled_direct(y, D, M, X, m_value):
     """
     TMLE for controlled direct effect (CDE)
 
-    Formula: E[Y(1,m) - Y(0,m)] — fix mediator at m
+    Formula: E[Y(1,m) - Y(0,m)] -- fix mediator at m
 
     Parameters
     ----------

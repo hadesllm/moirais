@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Single-index model estimator (Ichimura 1993; Horowitz 2009, Ch 4).
 
 Model:   E[Y|X] = g(X'beta), beta normalised so that ||beta|| = 1

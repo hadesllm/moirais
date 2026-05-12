@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heart rate variability metrics."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def hrv_metrics_fn(
     rr_intervals: np.ndarray,
 ) -> DescriptiveResult:
-    """We are what we repeatedly do. Excellence is not an act, but a habit. — Aristotle"""
+    """We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle"""
     from morie._bioplot import hrv_metrics
 
     rr_intervals = np.asarray(rr_intervals, dtype=float)

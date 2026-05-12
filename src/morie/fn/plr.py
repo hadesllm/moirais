@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partially Linear Regression (PLR) ATE via DoubleML."""
 
 import pandas as pd

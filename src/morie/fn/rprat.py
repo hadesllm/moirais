@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Placement rate per 100,000 population."""
 
 from __future__ import annotations

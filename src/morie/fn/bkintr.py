@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Linear interpolation of n-gram probabilities across orders."""
 import numpy as np
 from ._richresult import RichResult

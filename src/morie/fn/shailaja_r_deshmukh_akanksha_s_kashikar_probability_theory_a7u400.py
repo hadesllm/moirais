@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: since δn → 0 as n → ∞. Thus, a sequence {ϕn(t), n ≥ 1} of characteristic functions converges toϕ(t) = exp( −t2/2), which is continuous
+    Formula: since δn -> 0 as n -> ∞. Thus, a sequence {ϕn(t), n ≥ 1} of characteristic functions converges toϕ(t) = exp( −t2/2), which is continuous
 
     Parameters
     ----------

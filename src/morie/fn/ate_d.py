@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Average treatment effect (ATE) definition under potential outcomes."""
 import numpy as np
 from ._richresult import RichResult

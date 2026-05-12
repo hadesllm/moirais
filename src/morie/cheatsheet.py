@@ -10,7 +10,7 @@ hints but is useless to someone who has never met an M-estimator
 before. This module produces a multi-section help block with:
 
   1. Short description (from the fn's existing one-line cheatsheet)
-  2. When to use this — plain-English category guidance
+  2. When to use this -- plain-English category guidance
   3. A category-themed quote, because learning sticks better when
      it's threaded through stories the reader already knows
   4. Reference (paper / book the formula comes from, when known)
@@ -111,7 +111,7 @@ WHEN_TO_USE: dict[str, str] = {
         "Use when your data has a hierarchy (students inside schools, "
         "patients inside hospitals, repeated measures inside subjects).  "
         "A plain regression treats those as independent rows, but they "
-        "aren't — kids in the same school share a teacher, a building, "
+        "aren't -- kids in the same school share a teacher, a building, "
         "and a hundred other invisible variables.  Multilevel models "
         "let the cluster have its own intercept (and sometimes its own "
         "slope), so your standard errors aren't lying to you."
@@ -121,7 +121,7 @@ WHEN_TO_USE: dict[str, str] = {
         "dominate your estimate.  OLS minimises *squared* error, which "
         "means a single row 100 standard deviations from the mean has "
         "10000x the pull of a typical row.  Huber/MM/LTS replace that "
-        "with bounded influence functions — outliers stop yanking the "
+        "with bounded influence functions -- outliers stop yanking the "
         "fit around but still show up in the residuals so you notice."
     ),
     "DL": (
@@ -130,12 +130,12 @@ WHEN_TO_USE: dict[str, str] = {
         "primitives (attention, RoPE, RMSNorm, MoE) are how modern "
         "LLMs and vision models work end-to-end; ship one of these "
         "into a pipeline only when a simpler model has actually "
-        "failed at the task — not because GPT-4 sounds cool."
+        "failed at the task -- not because GPT-4 sounds cool."
     ),
     "IRT": (
         "Use when you're scoring a TEST and 'right answers' are the "
         "data.  IRT places each student AND each question on the same "
-        "ability scale — a hard question contributes more information "
+        "ability scale -- a hard question contributes more information "
         "than an easy one, and a student gets an estimated theta with "
         "its own standard error.  Better than summing 0/1s when the "
         "questions vary in difficulty."
@@ -145,7 +145,7 @@ WHEN_TO_USE: dict[str, str] = {
         "but they move together.  A copula factors any joint into "
         "(margins) x (dependence structure), so you can model income "
         "as lognormal, age as truncated normal, and their tail "
-        "dependence as a Clayton copula — without forcing the joint "
+        "dependence as a Clayton copula -- without forcing the joint "
         "into a Gaussian everything."
     ),
     "Network": (
@@ -157,7 +157,7 @@ WHEN_TO_USE: dict[str, str] = {
     ),
     "Causal": (
         "Use when you want to answer 'what would happen if?', not "
-        "just 'what's correlated?'.  ATE, IPW, DML, IV — all of "
+        "just 'what's correlated?'.  ATE, IPW, DML, IV -- all of "
         "these try to clean confounding out of the answer.  Cheap "
         "rule of thumb: if the result would change a clinical "
         "guideline, you needed a causal estimator, not a regression."
@@ -171,7 +171,7 @@ WHEN_TO_USE: dict[str, str] = {
     ),
     "Spatial": (
         "Use when 'closer is more similar' is plausible.  House "
-        "prices, disease incidence, soil pH — neighbouring locations "
+        "prices, disease incidence, soil pH -- neighbouring locations "
         "share unobserved drivers (school district, water table) that "
         "violate the iid assumption.  Variograms quantify it; kriging "
         "predicts at unobserved locations; LM-lag/LM-err tests tell "
@@ -181,7 +181,7 @@ WHEN_TO_USE: dict[str, str] = {
         "Use when 'now' is correlated with 'a moment ago'.  Yesterday's "
         "price predicts today's price; last week's flu cases predict "
         "this week's.  Unit-root + cointegration + GARCH are the "
-        "starting trio — find the trend, decide whether it's stochastic "
+        "starting trio -- find the trend, decide whether it's stochastic "
         "or deterministic, then model the volatility separately if it "
         "clusters."
     ),
@@ -196,7 +196,7 @@ WHEN_TO_USE: dict[str, str] = {
     ),
     "CausalSyntheticControl": (
         "Use when you have one (or few) treated unit and many "
-        "candidate controls — and you want a data-driven weighted "
+        "candidate controls -- and you want a data-driven weighted "
         "combination of controls that matches the treated unit's "
         "pre-period.  The post-treatment gap is your effect.  "
         "Better than a hand-picked control when there's no obvious "
@@ -205,7 +205,7 @@ WHEN_TO_USE: dict[str, str] = {
     "CausalRDD": (
         "Use when treatment is determined by a sharp threshold on a "
         "running variable (test score, age, cutoff date).  Compare "
-        "outcomes just-above and just-below the cutoff — they should "
+        "outcomes just-above and just-below the cutoff -- they should "
         "be exchangeable on everything except treatment.  Calonico-"
         "Cattaneo-Titiunik bandwidth + robust CIs are the modern "
         "default."
@@ -246,13 +246,13 @@ WHEN_TO_USE: dict[str, str] = {
         "for binary, k-anonymity / l-diversity for tabular release."
     ),
     "Survey": (
-        "Use when your data isn't iid — it came from a complex "
+        "Use when your data isn't iid -- it came from a complex "
         "sampling design (stratified, clustered, weighted, "
         "post-stratified).  Treating it as iid biases SEs by "
         "factors of 2-10x.  Horvitz-Thompson + design effect "
         "(DEFF) + jackknife/BRR/Taylor variance estimators are the "
-        "canonical toolkit.  CPADS / ACS / NHANES — anything from "
-        "a national stats agency — needs this."
+        "canonical toolkit.  CPADS / ACS / NHANES -- anything from "
+        "a national stats agency -- needs this."
     ),
     "_default": (
         "Look up the reference at the bottom of this cheatsheet.  "
@@ -264,7 +264,7 @@ WHEN_TO_USE: dict[str, str] = {
 
 def _pick(items: Iterable[str], key: str) -> str:
     """Deterministic pick from an iterable based on a key.  Same `key`
-    always picks the same item — keeps cheatsheets stable across
+    always picks the same item -- keeps cheatsheets stable across
     invocations rather than rolling the dice each time."""
     items = list(items)
     if not items:
@@ -279,7 +279,7 @@ def _pick(items: Iterable[str], key: str) -> str:
 # the params, and the citation). So we recover the mapping lazily by
 # reading every scripts/equation_specs_*.json on first call.
 #
-# Built once and cached at module level — the spec files don't change
+# Built once and cached at module level -- the spec files don't change
 # between fn calls, and a fresh process re-reads on cold start.
 
 _SPEC_INDEX: dict[str, str] | None = None
@@ -357,7 +357,7 @@ def _docstring_reference(fn_callable) -> str:
 def cheatsheet(fn_name: str) -> str:
     """Multi-section enriched help block for a single fn/ entry.
 
-    Falls back gracefully when bits are missing — every section is
+    Falls back gracefully when bits are missing -- every section is
     independently optional, so a fn with only a one-line cheatsheet
     still gets a usable card (just without the "When to use" guidance).
 
@@ -376,7 +376,7 @@ def cheatsheet(fn_name: str) -> str:
     except ImportError as e:
         return f"{fn_name}: not found ({e})"
 
-    # 1. Short description — prefer the module-level cheatsheet() call
+    # 1. Short description -- prefer the module-level cheatsheet() call
     #    if defined, else fall back to the first docstring line of the
     #    public function.
     short = ""

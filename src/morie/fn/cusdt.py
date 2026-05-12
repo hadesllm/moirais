@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CUSUM change-point detection."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Study the past if you would define the future. — Confucius"
+_QUOTE = "Study the past if you would define the future. -- Confucius"
 
 
 def cusum_detect(x, threshold: float = 5.0, drift: float = 0.5, **kwargs) -> DescriptiveResult:

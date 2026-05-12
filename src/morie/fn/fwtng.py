@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Feature whitening (ZCA)."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Difficulties strengthen the mind, as labor does the body. — Seneca"
+_QUOTE = "Difficulties strengthen the mind, as labor does the body. -- Seneca"
 
 
 def feature_whiten(X, method="zca", eps=1e-5, **kwargs) -> DescriptiveResult:

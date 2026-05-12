@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: where E = { u ∈ [0, 1] : |g( u) − h( u) |>ǫ }. We say that fn → f in measure if
+    Formula: where E = { u ∈ [0, 1] : |g( u) − h( u) |>ǫ }. We say that fn -> f in measure if
 
     Parameters
     ----------

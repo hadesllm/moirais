@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kolmogorov-Smirnov test with kernel-smoothed CDF (Fauzi Ch 5).
 
     D_n = sup_t | F_hat_h(t) - F_0(t) |
@@ -38,7 +38,7 @@ def fauzi_ks_smoothed(x, cdf="norm", args=None, h=None, n_grid=512):
     n = len(x)
     if n < 5:
         return RichResult(payload={"statistic": np.nan, "p_value": np.nan,
-                                    "n": n, "method": "fzksm — too few obs"})
+                                    "n": n, "method": "fzksm -- too few obs"})
     if h is None:
         h = float(_silverman_h(x))
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Elastic net cost combining L1 and L2 penalties with mix ratio r."""
 import numpy as np
 from ._richresult import RichResult

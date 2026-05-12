@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Poisson change-point model. 'I sense great fear in you.'"""
 
 from __future__ import annotations

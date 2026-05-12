@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Catalan number computation."""
 
 from math import comb
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The only true wisdom is in knowing you know nothing. — Socrates"
+_QUOTE = "The only true wisdom is in knowing you know nothing. -- Socrates"
 
 
 def catalan_number(n: int, **kwargs) -> DescriptiveResult:

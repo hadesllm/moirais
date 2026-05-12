@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Quadratic Discriminant Analysis classifier."""
 
 from __future__ import annotations

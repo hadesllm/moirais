@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chen gamma kernel density estimator for [0,inf) data."""
 import numpy as np
 from ._richresult import RichResult

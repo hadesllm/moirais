@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fidelity metric (SSIM). 'Tell me, is the woman worth it?' -- Persephone"""
 
 from __future__ import annotations

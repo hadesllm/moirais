@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Regression decision tree via CART minimizing MSE per leaf."""
 import numpy as np
 from ._richresult import RichResult

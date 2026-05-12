@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """NOTEARS: DAG learning via continuous optimization.
 
 NOTEARS reformulates DAG structure learning as a continuous
@@ -62,7 +62,7 @@ def notrs(
     -------
     dict
         ``W`` (estimated weight matrix), ``dag`` (thresholded binary
-        adjacency, ``dag[i,j]=1`` means i→j), ``h`` (acyclicity
+        adjacency, ``dag[i,j]=1`` means i->j), ``h`` (acyclicity
         violation at convergence), ``p``, ``n``, ``method``.
 
     References

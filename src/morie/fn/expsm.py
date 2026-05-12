@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simple exponential smoothing. 'Much to learn, you still have.'"""
 
 from __future__ import annotations

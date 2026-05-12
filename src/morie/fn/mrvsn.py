@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Granger causality test. 'Choice is an illusion.' -- The Merovingian"""
 
 from __future__ import annotations

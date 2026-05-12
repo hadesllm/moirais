@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bidirectional RNN: concatenate forward and backward hidden states."""
 import numpy as np
 from ._richresult import RichResult

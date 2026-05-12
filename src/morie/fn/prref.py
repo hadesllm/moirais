@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Procrustes reflection and rotation. 'Cleave.' -- Sukuna, Jujutsu Kaisen"""
 
 from __future__ import annotations

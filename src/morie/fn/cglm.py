@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Complex survey GLM with weights, clustering, and stratification."""
 
 import numpy as np

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Nadaraya-Watson kernel regression. 'We are what we repeatedly do. Excellence is not an act, but a habit. — Aristotle'"""
+# morie.fn -- function file (hadesllm/morie)
+"""Nadaraya-Watson kernel regression. 'We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle'"""
 
 from __future__ import annotations
 

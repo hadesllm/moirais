@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Genomic BLUP — Henderson mixed model equations."""
+# morie.fn -- function file (hadesllm/morie)
+"""Genomic BLUP -- Henderson mixed model equations."""
 
 __all__ = ["gblup"]
 

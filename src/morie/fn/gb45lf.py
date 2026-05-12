@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lilliefors test for normality using modified KS with estimated params."""
 import numpy as np
 from scipy import stats

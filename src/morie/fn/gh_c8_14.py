@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Contraction for convex models under misspecification: unique KL projection."""
 import numpy as np
 from ._richresult import RichResult

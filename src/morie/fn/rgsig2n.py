@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Signal-to-noise ratio calculation after filtering."""
 import numpy as np
 from ._richresult import RichResult

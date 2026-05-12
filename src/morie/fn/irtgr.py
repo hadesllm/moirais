@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Graded Response Model (Samejima) for polytomous IRT."""
 
 from __future__ import annotations

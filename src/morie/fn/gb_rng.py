@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Distribution of sample range W = X_(n) - X_(1)."""
 import numpy as np
 from ._richresult import RichResult

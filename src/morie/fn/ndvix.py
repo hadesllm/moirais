@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Green-space (NDVI) exposure health benefit estimator."""
 
 from __future__ import annotations
@@ -73,7 +73,7 @@ def ndvi_exposure_rr(
     Examples
     --------
     A resident moving from low-green (NDVI 0.15) to park-adjacent
-    (NDVI 0.45) — estimated all-cause mortality benefit:
+    (NDVI 0.45) -- estimated all-cause mortality benefit:
 
     >>> r_low  = ndvi_exposure_rr(0.15, reference_ndvi=0.15)
     >>> r_high = ndvi_exposure_rr(0.45, reference_ndvi=0.15)

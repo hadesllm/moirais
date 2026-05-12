@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Little's law: L = lambda * W."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Benjamini-Hochberg FDR with R-style verbose result."""
 
 from typing import Sequence
@@ -37,7 +37,7 @@ def bhfdr(p_values: Sequence[float], alpha: float = 0.05):
             "headers": ["Rank", "Test idx", "p-value", "Threshold (k*a/m)", "Decision"],
             "rows": rows,
         }],
-        interpretation=(f"BH controls expected FDR at {alpha}, NOT FWER — more "
+        interpretation=(f"BH controls expected FDR at {alpha}, NOT FWER -- more "
                         "powerful than Bonferroni but allows some false positives "
                         "in rejection set."),
         payload={"rejects": out, "n_reject": n_reject, "alpha": alpha},

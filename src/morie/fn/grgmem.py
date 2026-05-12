@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Single EM step for Gaussian mixture: E-step responsibilities + M-step updates."""
 import numpy as np
 from ._richresult import RichResult

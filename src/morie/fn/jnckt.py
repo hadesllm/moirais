@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Jonckheere-Terpstra test for ordered alternatives."""
 
 import numpy as np

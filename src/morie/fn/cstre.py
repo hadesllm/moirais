@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Custody readmission rate."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def custody_readmit(
     id_col: str = "unique_individual_id",
     year_col: str = "end_fiscal_year",
 ) -> dict:
-    """Readmission rate — proportion of individuals appearing in 2+ fiscal years.
+    """Readmission rate -- proportion of individuals appearing in 2+ fiscal years.
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Placement of Y_j among X order statistics."""
 import numpy as np
 from scipy import stats

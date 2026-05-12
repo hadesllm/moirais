@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Distribution-free tolerance interval: U_(s)-U_(r) ~ Beta(s-r, n-s+r+1)."""
 import numpy as np
 from ._richresult import RichResult

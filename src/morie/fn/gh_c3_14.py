@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mixtures of Polya tree processes as prior for density estimation."""
 import numpy as np
 from ._richresult import RichResult

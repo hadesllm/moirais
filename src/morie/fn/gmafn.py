@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gemma 4 native function calling via local Ollama."""
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ def gemma_function_call(
 
     Sends a prompt with tool definitions to Gemma 4 and returns the model's
     response including any tool calls it wants to make. Gemma 4 supports
-    native tool use — it can decide which function to call and with what
+    native tool use -- it can decide which function to call and with what
     arguments based on the user's natural language request.
 
     :param prompt: Natural language request (e.g. "compute dnorm(0)").

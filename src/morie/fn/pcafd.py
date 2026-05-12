@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PCA feature extraction."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Luck is what happens when preparation meets opportunity. — Seneca"
+_QUOTE = "Luck is what happens when preparation meets opportunity. -- Seneca"
 
 
 def pca_features(X, n_components=None, **kwargs) -> DescriptiveResult:

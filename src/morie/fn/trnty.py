@@ -1,4 +1,4 @@
-"""The whole is greater than the sum of its parts. — Aristotle"""
+"""The whole is greater than the sum of its parts. -- Aristotle"""
 
 from __future__ import annotations
 
@@ -99,4 +99,4 @@ trnty = cvss_base
 
 
 def cheatsheet() -> str:
-    return "The whole is greater than the sum of its parts. — Aristotle"
+    return "The whole is greater than the sum of its parts. -- Aristotle"

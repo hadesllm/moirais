@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Latent mean differences between groups (requires scalar invariance)."""
 
 from __future__ import annotations

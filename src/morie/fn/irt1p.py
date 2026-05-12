@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """1-Parameter Logistic (Rasch) IRT model via joint MLE."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Average derivative estimator (Powell-Stock-Stoker) for E[Y|X]."""
 import numpy as np
 from ._richresult import RichResult

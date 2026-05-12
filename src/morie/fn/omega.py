@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Omega-squared effect size."""
 
 from morie.fn.omega2 import omega_squared

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """i.i.d. posterior consistency: Schwartz + KL support gives weak consistency."""
 import numpy as np
 from ._richresult import RichResult

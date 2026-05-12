@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Recode responses: replace missing/special codes with NaN."""
 
 from __future__ import annotations

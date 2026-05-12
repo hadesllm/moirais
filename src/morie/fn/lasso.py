@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lasso regression (L1). 'Your focus determines your reality.' -- Qui-Gon Jinn"""
 
 from __future__ import annotations

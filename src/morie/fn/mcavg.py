@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multiclass averaging (macro/micro/weighted)."""
 
 from __future__ import annotations

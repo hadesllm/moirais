@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bandwidth selection via Sheather-Jones plug-in."""
 
 from __future__ import annotations

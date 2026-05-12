@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonmetric multidimensional scaling"""
 
 import numpy as np
@@ -29,7 +29,7 @@ def nonmetric_mds(dissimilarities=None, *, dims=2, n=10):
 
 short = "nmmds"
 alias = "nonmetric_mds"
-quote = "Pure mathematics is the world's best game. — Richard J. Trudeau"
+quote = "Pure mathematics is the world's best game. -- Richard J. Trudeau"
 nonmetric_mds = nonmetric_mds
 
 

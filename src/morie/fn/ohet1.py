@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heterogeneous treatment effects test by region for OTIS data."""
 
 from __future__ import annotations

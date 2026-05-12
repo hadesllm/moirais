@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Case fatality rate (CFR) with interval censoring correction."""
 
 from __future__ import annotations

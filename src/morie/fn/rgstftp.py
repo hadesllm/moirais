@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """STFT parameter selection (window length vs. time/freq resolution tradeoff)."""
 import numpy as np
 from ._richresult import RichResult

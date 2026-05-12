@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """ViT patch embedding: split image into PxP patches, flatten, linear-project to d_model."""
 import numpy as np
 from ._richresult import RichResult

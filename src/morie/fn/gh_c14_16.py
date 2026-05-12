@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Levy process representation of NCRM: Laplace functional and moments."""
 import numpy as np
 from ._richresult import RichResult

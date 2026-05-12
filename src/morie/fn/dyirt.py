@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dynamic IRT model estimation"""
 
 import numpy as np
@@ -30,7 +30,7 @@ def dynamic_irt_estimate(votes=None, *, time_periods=None, dims=1, n=10, m=5):
 
 short = "dyirt"
 alias = "dynamic_irt_estimate"
-quote = "We are what we repeatedly do. Excellence is not an act, but a habit. — Aristotle"
+quote = "We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle"
 dynamic_irt_estimate = dynamic_irt_estimate
 
 

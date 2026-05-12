@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Penrose diagram coordinates."""
 
 __all__ = ["penrs"]

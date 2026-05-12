@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Genomic relationship matrix (VanRaden methods 1 and 2)."""
 
 __all__ = ["gmatx"]

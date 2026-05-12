@@ -1,5 +1,5 @@
 from ._richresult import RichResult
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Binary erasure channel capacity."""
 
 __all__ = ["becch"]

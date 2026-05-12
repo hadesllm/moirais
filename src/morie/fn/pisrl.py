@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pisarenko harmonic decomposition."""
 
 from __future__ import annotations

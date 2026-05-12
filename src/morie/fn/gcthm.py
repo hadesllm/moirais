@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Glivenko-Cantelli test: sup|Fn - F| convergence."""
 
 from __future__ import annotations

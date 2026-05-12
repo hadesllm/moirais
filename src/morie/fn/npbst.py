@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonparametric bootstrap inference for arbitrary statistics."""
 
 from __future__ import annotations

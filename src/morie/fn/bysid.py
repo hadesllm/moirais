@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayesian ideal-point estimation (Armstrong Ch 5)."""
 import numpy as np
 from ._richresult import RichResult

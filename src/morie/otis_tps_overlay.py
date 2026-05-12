@@ -1,13 +1,13 @@
-"""morie.otis_tps_overlay — cross-link OTIS (Ontario corrections) with
+"""morie.otis_tps_overlay -- cross-link OTIS (Ontario corrections) with
 TPS (Toronto police) data.
 
 Both feeds touch Toronto, so meaningful overlays:
 
-1. **Year-over-year correlation** — does annual segregation/RC use in
+1. **Year-over-year correlation** -- does annual segregation/RC use in
    the OTIS "Toronto" region track annual TPS incident counts?
-2. **Per-OTIS-region rollups** — total seg/RC counts per region, with
+2. **Per-OTIS-region rollups** -- total seg/RC counts per region, with
    the Toronto-region row joinable to TPS aggregates.
-3. **Crime × confinement composite** — combine TPS composite-risk
+3. **Crime × confinement composite** -- combine TPS composite-risk
    index (per-neighbourhood) with OTIS seg/RC totals (Toronto-region
    only) to surface high-correlation years.
 
@@ -80,7 +80,7 @@ def yoy_correlation(tps_categories: list[str] | None = None,
     seg = _toronto_region_seg_by_year(_safe_load_otis_b01())
     if seg.size == 0:
         return RichResult(
-            title="OTIS×TPS — YoY correlation",
+            title="OTIS×TPS -- YoY correlation",
             warnings=["OTIS b01 has no Toronto-region data"],
         )
 
@@ -109,9 +109,9 @@ def yoy_correlation(tps_categories: list[str] | None = None,
 
     rows.sort(key=lambda r: -abs(r[2]) if isinstance(r[2], float) else 0)
     return RichResult(
-        title="OTIS×TPS — year-by-year correlation (Toronto region)",
+        title="OTIS×TPS -- year-by-year correlation (Toronto region)",
         summary_lines=[
-            ("OTIS source", "b01 — segregation placements (Toronto region)"),
+            ("OTIS source", "b01 -- segregation placements (Toronto region)"),
             ("OTIS years",
                 f"{int(seg.index.min())}–{int(seg.index.max())}"),
             ("TPS categories tested", len(cats)),
@@ -148,7 +148,7 @@ def per_region_rollup(*, tps_total_by_year: pd.Series | None = None) -> RichResu
     by_region = (df.groupby(["EndFiscalYear", "Region_AtTimeOfPlacement"])
                    .size().unstack(fill_value=0).sort_index())
     return RichResult(
-        title="OTIS — segregation placements per region × year",
+        title="OTIS -- segregation placements per region × year",
         summary_lines=[
             ("Years", f"{int(by_region.index.min())}–"
                      f"{int(by_region.index.max())}"),

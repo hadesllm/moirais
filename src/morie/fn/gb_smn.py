@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Two-sided Smirnov statistic D_{m,n} = max(D+_{m,n}, D-_{m,n})."""
 import numpy as np
 from scipy import stats

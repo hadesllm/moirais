@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SAR Bayesian information criterion."""
 
 from ._containers import SpatialResult

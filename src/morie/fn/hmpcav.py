@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PCA preserves variance along principal components."""
 import numpy as np
 from ._richresult import RichResult

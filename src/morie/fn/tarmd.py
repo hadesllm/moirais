@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Threshold autoregressive (TAR) model (Tong 1990)."""
 from __future__ import annotations
 

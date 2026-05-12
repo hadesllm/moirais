@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """r_1 integral in KDFE variance formula."""
 import numpy as np
 from ._richresult import RichResult

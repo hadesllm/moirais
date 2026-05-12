@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Manhattan plot data preparation for GWAS results."""
 
 import numpy as np

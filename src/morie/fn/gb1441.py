@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fisher exact test for 2x2 table using hypergeometric distribution."""
 import numpy as np
 from scipy import stats

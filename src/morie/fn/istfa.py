@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Inverse Short-Time Fourier Transform signal synthesis."""
 
 from __future__ import annotations

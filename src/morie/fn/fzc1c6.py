@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Conditions C1-C6 for boundary-free MRL estimation."""
 import numpy as np
 from ._richresult import RichResult

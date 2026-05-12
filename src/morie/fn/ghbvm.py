@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric Bernstein–von Mises diagnostic."""
 import numpy as np
 from scipy.stats import norm, kstest
@@ -27,8 +27,8 @@ def ghosal_bernstein_von_mises(x, theta0=None, B=500, seed=0,
     Parameters
     ----------
     x : array-like.
-    theta0 : float or None — null mean (defaults to bar X_n).
-    B : int — number of posterior draws.
+    theta0 : float or None -- null mean (defaults to bar X_n).
+    B : int -- number of posterior draws.
     seed : int.
     deterministic_seed : int or None, optional
         If supplied, RNG state is derived from the SHA-keyed

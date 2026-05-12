@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Lamport one-time signature — verify."""
+# morie.fn -- function file (hadesllm/morie)
+"""Lamport one-time signature -- verify."""
 
 from __future__ import annotations
 
@@ -29,4 +29,4 @@ lampv = lamport_verify
 
 
 def cheatsheet() -> str:
-    return "lamport_verify({}) -> Lamport one-time signature — verify."
+    return "lamport_verify({}) -> Lamport one-time signature -- verify."

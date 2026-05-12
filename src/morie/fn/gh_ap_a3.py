@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Total variation distance: dTV(P,Q) = sup_A |P(A)-Q(A)| = 1/2 * integral |p-q|."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Likelihood ratio for Gaussian hypotheses."""
 
 import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "Statistics is the grammar of science. — Karl Pearson"
+_QUOTE = "Statistics is the grammar of science. -- Karl Pearson"
 
 
 def likelihood_ratio(x, params0, params1, **kwargs) -> ESRes:

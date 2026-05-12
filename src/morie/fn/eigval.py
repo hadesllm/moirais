@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Eigenvalues of a symmetric matrix."""
 
 from typing import Sequence, Union

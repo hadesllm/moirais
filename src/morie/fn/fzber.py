@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Berry-Esseen bound improvement for kernel quantile: O(n^{-1/2}) vs O(n^{-7/17})."""
 import numpy as np
 from ._richresult import RichResult

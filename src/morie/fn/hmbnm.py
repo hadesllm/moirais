@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Biological neuron model (McCulloch-Pitts): weighted sum then activation."""
 import numpy as np
 from ._richresult import RichResult

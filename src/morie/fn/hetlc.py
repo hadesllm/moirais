@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Marker heterozygosity and frequency of heterogeneous loci."""
 import numpy as np
 from ._richresult import RichResult

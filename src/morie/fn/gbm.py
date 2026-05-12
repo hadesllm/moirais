@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gradient boosting machine (simplified, pure NumPy)."""
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ def gradient_boosting(
     """Simplified gradient boosting for binary classification.
 
     Sequentially fits decision stumps to residuals of the log-loss.
-    Pure NumPy — no external ML library required.
+    Pure NumPy -- no external ML library required.
 
     Parameters
     ----------

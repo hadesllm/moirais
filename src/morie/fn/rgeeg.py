@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""EEG band power (δ θ α β γ) via Welch — Rangayyan Ch 9."""
+# morie.fn -- function file (hadesllm/morie)
+"""EEG band power (δ θ α β γ) via Welch -- Rangayyan Ch 9."""
 from __future__ import annotations
 
 import numpy as np
@@ -32,7 +32,7 @@ def rangayyan_eeg_bands(x, fs, bands=None, nperseg=None):
 
     Returns
     -------
-    RichResult with keys ``absolute`` (band→W), ``relative`` (band→fraction),
+    RichResult with keys ``absolute`` (band->W), ``relative`` (band->fraction),
     ``total_power``, ``freqs``, ``psd``.
 
     References
@@ -82,4 +82,4 @@ def rangayyan_eeg_bands(x, fs, bands=None, nperseg=None):
 
 
 def cheatsheet():
-    return "rgeeg: EEG δ θ α β γ band power — Rangayyan Ch 9"
+    return "rgeeg: EEG δ θ α β γ band power -- Rangayyan Ch 9"

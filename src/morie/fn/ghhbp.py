@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Hierarchical Bayes nonparametric — alpha-integrated DP."""
+# morie.fn -- function file (hadesllm/morie)
+"""Hierarchical Bayes nonparametric -- alpha-integrated DP."""
 import numpy as np
 from scipy.special import gammaln
 from scipy.stats import gamma as gamma_dist, norm
@@ -28,9 +28,9 @@ def ghosal_hierarchical_bayes(x, a_prior=1.0, b_prior=1.0, M=400, seed=0,
 
     Parameters
     ----------
-    x : array-like — sample.
+    x : array-like -- sample.
     a_prior, b_prior : Gamma(shape, rate) hyperprior on alpha.
-    M : int — number of posterior draws.
+    M : int -- number of posterior draws.
     seed : int.
     deterministic_seed : int or None, optional
         If supplied, RNG state is derived from the SHA-keyed

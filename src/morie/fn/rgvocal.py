@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Vocal tract transfer function extraction via homomorphic deconvolution."""
 import numpy as np
 from ._richresult import RichResult

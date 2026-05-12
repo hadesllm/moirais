@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Edge detection (Canny variant). 'Some motherfuckers are always trying to ice-skate uphill.' -- Blade"""
 
 from __future__ import annotations

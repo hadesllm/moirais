@@ -1,4 +1,4 @@
-"""Output writers for SIU mining — CSV (the canonical 45-col table) and
+"""Output writers for SIU mining -- CSV (the canonical 45-col table) and
 JSONL (full narratives, one record per line)."""
 
 from __future__ import annotations

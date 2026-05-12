@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Short-time Fourier transform — Rangayyan Ch 4."""
+# morie.fn -- function file (hadesllm/morie)
+"""Short-time Fourier transform -- Rangayyan Ch 4."""
 from __future__ import annotations
 
 import numpy as np
@@ -64,4 +64,4 @@ def rangayyan_stft(x, fs=1.0, nperseg=256, noverlap=None, window="hann"):
 
 
 def cheatsheet():
-    return "rgstf: short-time Fourier transform — Rangayyan Ch 4"
+    return "rgstf: short-time Fourier transform -- Rangayyan Ch 4"

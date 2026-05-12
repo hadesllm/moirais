@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ramanujan tau function from the discriminant modular form."""
 
 from __future__ import annotations

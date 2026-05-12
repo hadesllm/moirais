@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DoWhy four-step causal inference process: model -> identify -> estimate -> refute."""
 import numpy as np
 from ._richresult import RichResult

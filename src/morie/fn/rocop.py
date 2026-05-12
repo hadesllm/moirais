@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ROC optimal cutoff selection (Youden, closest-to-corner)."""
 
 from __future__ import annotations

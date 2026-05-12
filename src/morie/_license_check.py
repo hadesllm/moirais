@@ -4,7 +4,7 @@
 morie is GPL-2.0-only. This module exposes a `check_plugin_license()`
 helper that loaded plugins or downstream code can call to confirm
 they are GPL-compatible before consuming morie internals. The guard
-is **advisory** — it warns or raises, but does not enforce at the
+is **advisory** -- it warns or raises, but does not enforce at the
 Python-import level (Python cannot prevent code from importing a
 module once installed). For stronger guarantees see the companion
 Linux Security Module userspace daemon at `daemon/morie_lsm.py`.
@@ -71,7 +71,7 @@ def check_plugin_license(plugin_spdx: str, *, raise_on_incompatible: bool = Fals
             on the compatible list.
     """
     if not plugin_spdx:
-        msg = "Plugin reports empty SPDX identifier — cannot verify GPL compatibility."
+        msg = "Plugin reports empty SPDX identifier -- cannot verify GPL compatibility."
         if raise_on_incompatible:
             raise ValueError(msg)
         warnings.warn(msg, RuntimeWarning, stacklevel=2)

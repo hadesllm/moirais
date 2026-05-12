@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Transformer encoder block (Vaswani et al. 2017)."""
 from __future__ import annotations
 

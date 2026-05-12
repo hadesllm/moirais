@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Accelerated failure time (AFT) model. 'I have lived most of my life surrounded by enemies.' -- Gamora"""
 
 from __future__ import annotations

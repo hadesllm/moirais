@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEIR with compartmental dynamics including vital dynamics and waning immunity."""
 
 from __future__ import annotations

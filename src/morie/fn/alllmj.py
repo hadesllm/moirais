@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """LLM-as-judge automated evaluation via pairwise or pointwise prompting."""
 import numpy as np
 from ._richresult import RichResult

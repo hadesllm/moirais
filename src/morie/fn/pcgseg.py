@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """S1/S2 heart sound segmentation from PCG envelope."""
 
 from __future__ import annotations

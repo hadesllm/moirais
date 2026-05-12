@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Newton's method convergence. 'Faster! Faster!' -- Hot Rod"""
 
 from __future__ import annotations

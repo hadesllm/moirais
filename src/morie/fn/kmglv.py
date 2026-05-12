@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GloVe weighted least-squares cost over co-occurrence counts X_ij."""
 import numpy as np
 from ._richresult import RichResult

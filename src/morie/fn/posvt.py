@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Positivity (overlap) assumption: every unit has non-zero probability of treatment."""
 import numpy as np
 from ._richresult import RichResult

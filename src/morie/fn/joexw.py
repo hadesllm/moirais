@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Expanding-window CV: training set grows, validation fixed-size, walks forward."""
 import numpy as np
 from ._richresult import RichResult

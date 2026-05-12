@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Smith's 1cycle LR schedule: triangular warm-up then anneal + momentum mirror."""
 import numpy as np
 from ._richresult import RichResult

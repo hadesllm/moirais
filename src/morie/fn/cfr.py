@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Case fatality rate (CFR) with Wilson confidence interval."""
 
 import numpy as np

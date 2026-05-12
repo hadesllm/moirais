@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multiresolution analysis (MRA) decomposition."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Neurons-per-layer heuristic: typically similar width across hidden layers."""
 import numpy as np
 from ._richresult import RichResult

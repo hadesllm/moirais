@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Holt. 'Patience and perseverance have a magical effect. -- Adams'"""
 from __future__ import annotations
 

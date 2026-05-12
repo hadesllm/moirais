@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (6) Corollary. If X 1 is not arithmetic then p ( t) → ( 1 + ρ) − 1 as t → ∞ , where ρ =
+    Formula: (6) Corollary. If X 1 is not arithmetic then p ( t) -> ( 1 + ρ) − 1 as t -> ∞ , where ρ =
 
     Parameters
     ----------

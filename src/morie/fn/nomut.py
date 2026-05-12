@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """NOMINATE utility computation."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def nominate_utility(
     beta: float = 15.0,
     w=None,
 ) -> DescriptiveResult:
-    """Statistics is the grammar of science. — Karl Pearson"""
+    """Statistics is the grammar of science. -- Karl Pearson"""
     from morie._spatial_voting import nominate_utility as _fn
 
     result = _fn(x, z_yea, z_nay, beta=beta, w=w)

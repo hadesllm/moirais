@@ -26,7 +26,7 @@ try:
     from numba import njit, prange
 
     HAS_NUMBA = True
-except ImportError:  # pragma: no cover — env without numba
+except ImportError:  # pragma: no cover -- env without numba
     HAS_NUMBA = False
     prange = range  # type: ignore[assignment]
 
@@ -49,7 +49,7 @@ def _ll_exp_const(t: np.ndarray, T: float, a0: float,
                    eta: float, beta: float) -> float:
     # box constraints (mirror _neg_loglik_general)
     # beta ∈ [0.01, 100] avoids the well-known Hawkes spike-train
-    # degeneracy where β → ∞ pushes log-lik to +∞ on finite data.
+    # degeneracy where β -> ∞ pushes log-lik to +∞ on finite data.
     if not (1e-6 < eta < 0.999):
         return 1e12
     if not (0.05 < beta < 30.0):

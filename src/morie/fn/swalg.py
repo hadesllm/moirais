@@ -1,4 +1,4 @@
-"""The man who moves a mountain begins by carrying away small stones. — Confucius"""
+"""The man who moves a mountain begins by carrying away small stones. -- Confucius"""
 
 from __future__ import annotations
 

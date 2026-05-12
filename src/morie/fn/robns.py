@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Robinson double-residual estimator with kernel choice.
 
 Estimates the parametric component :math:`\\theta` in the partially

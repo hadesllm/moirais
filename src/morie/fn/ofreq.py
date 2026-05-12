@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Frequency table with proportions for OTIS correctional data."""
 
 from __future__ import annotations

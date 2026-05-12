@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GKP-Witten bulk-to-boundary propagator."""
 
 from __future__ import annotations

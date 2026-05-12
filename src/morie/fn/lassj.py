@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LASSO (L1 penalized) regression objective."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kernel stick-breaking process: dependent weights via kernel function of covariate."""
 import numpy as np
 from ._richresult import RichResult

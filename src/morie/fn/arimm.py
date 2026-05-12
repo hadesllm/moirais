@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """ARIMA(p,d,q) model -- differencing + ARMA."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generalized likelihood ratio (GLR) test for change detection."""
 import numpy as np
 from scipy import stats

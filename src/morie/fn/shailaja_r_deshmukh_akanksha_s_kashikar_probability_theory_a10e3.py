@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_equa
     """
     CentralTendency equation extracted from Shailaja R. Deshmukh, Akanksha S. Kashikar - Probability Theory  An Introduction Using R.
 
-    Formula: X n ≤ x] → 0 if x < µ , P [X n ≤ x] → 1 if x > µ , as shown in Equation
+    Formula: X n ≤ x] -> 0 if x < µ , P [X n ≤ x] -> 1 if x > µ , as shown in Equation
 
     Parameters
     ----------

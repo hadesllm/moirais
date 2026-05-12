@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Spearman rho with ties correction formula."""
 import numpy as np
 from ._richresult import RichResult

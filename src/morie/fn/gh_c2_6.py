@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mixture-of-basis prior for densities using kernel representation."""
 import numpy as np
 from ._richresult import RichResult

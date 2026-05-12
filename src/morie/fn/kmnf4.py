@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """NormalFloat4 (NF4) data type: information-theoretically optimal 4-bit grid for N(0,1) weights."""
 import numpy as np
 from ._richresult import RichResult

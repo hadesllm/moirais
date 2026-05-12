@@ -1,20 +1,20 @@
-"""Higher-level eval pipeline — end-to-end integration gates over
+"""Higher-level eval pipeline -- end-to-end integration gates over
 BigQuery-mirrored datasets, each pinned to a published ground-truth
 claim about a headline coefficient or shape statistic.
 
 Why this exists alongside ``morie.eval``:
 
-    ``morie.eval`` (per-fn goldens) catches drift in *one function* —
+    ``morie.eval`` (per-fn goldens) catches drift in *one function* --
     "did dnorm(0) change from 0.3989… last week?". That is correctness
     at the leaf.  But nothing there catches the kind of bug where a
-    function change quietly breaks an *integration* — e.g., a switch
+    function change quietly breaks an *integration* -- e.g., a switch
     from HC1 to HC3 SEs in the OLS path that flips a published
     coefficient from significant to insignificant on a real-world
     dataset.
 
     ``morie.eval_pipeline`` catches *that*: each gate is a claim of
     the form "this analysis on this dataset should produce a headline
-    coefficient in range X" — sourced from a peer-reviewed paper or a
+    coefficient in range X" -- sourced from a peer-reviewed paper or a
     government report. When a gate fails, the bug is somewhere in the
     chain (data loading, canonicalisation, the model fit, the SE
     formula); the eval points at the broken integration even when
@@ -114,7 +114,7 @@ def _primary_table(slug: str) -> str:
 
 
 def _row_count(slug: str) -> dict[str, Any]:
-    """Row count via SELECT count(*) — works against any SQL endpoint
+    """Row count via SELECT count(*) -- works against any SQL endpoint
     that allows simple SELECT."""
     table = _primary_table(slug)
     rows = bq.bq_query(slug, f'SELECT count(*) AS n FROM "{table}"')
@@ -122,7 +122,7 @@ def _row_count(slug: str) -> dict[str, Any]:
 
 
 def _column_count(slug: str) -> dict[str, Any]:
-    """Column count via a 1-row SELECT * — read ``len()`` of the first
+    """Column count via a 1-row SELECT * -- read ``len()`` of the first
     returned row's keys."""
     table = _primary_table(slug)
     rows = bq.bq_query(slug, f'SELECT * FROM "{table}" LIMIT 1')
@@ -132,13 +132,13 @@ def _column_count(slug: str) -> dict[str, Any]:
 
 
 # ── seed gates (the registry) ────────────────────────────────────────────────
-# Conservative claims for v0 — "this dataset has at least N rows and
+# Conservative claims for v0 -- "this dataset has at least N rows and
 # at least M columns" is enough to catch a regression where a mirror
 # dropped tables or schemas changed shape.  Real coefficient gates
 # land as the runners get richer.
 
 SEED_GATES: list[DatasetGate] = [
-    # Canonical reference dataset — Fisher iris is 150 rows × 5 cols
+    # Canonical reference dataset -- Fisher iris is 150 rows × 5 cols
     # everywhere it appears.  If this gate ever fails, something
     # corrupted the iris mirror (or the morie bq layer).
     DatasetGate(
@@ -162,7 +162,7 @@ SEED_GATES: list[DatasetGate] = [
         runner=_column_count,
         expected={"column_count": (5.0, 5.0)},
     ),
-    # Lower-bound integrity gates — sampled mirrors of public
+    # Lower-bound integrity gates -- sampled mirrors of public
     # BigQuery datasets. We don't pin exact counts (they drift on
     # each refresh), but a sudden 10x drop signals a broken ingest.
     DatasetGate(

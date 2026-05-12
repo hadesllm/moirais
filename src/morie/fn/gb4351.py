@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """V = 4n*D+^2 is asymptotically chi-square with 2 df."""
 import numpy as np
 from ._richresult import RichResult

@@ -25,7 +25,7 @@ def random_search_cv(x, y, *, estimator=None, param_distributions=None,
     cv : int.
     scoring : str | None.
     seed : int
-        random_state — controls both the search and the estimator.
+        random_state -- controls both the search and the estimator.
     task : "auto" | "classification" | "regression".
     deterministic_seed : int or None, optional
         If supplied, the sklearn ``random_state`` is derived from the

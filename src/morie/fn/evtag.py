@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Event alignment via cross-correlation."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Real knowledge is to know the extent of one's ignorance. — Confucius"
+_QUOTE = "Real knowledge is to know the extent of one's ignorance. -- Confucius"
 
 
 def event_align(signal, events, window: int = 100, **kwargs) -> DescriptiveResult:

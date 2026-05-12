@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (d) h : [0,π ] → [−1, 1] where h(x) = cos(x)
+    Formula: [EQ] (d) h : [0,π ] -> [−1, 1] where h(x) = cos(x)
 
     Parameters
     ----------

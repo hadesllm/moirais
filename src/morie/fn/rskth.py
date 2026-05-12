@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Optimal risk classification threshold via Youden's J."""
 
 from __future__ import annotations

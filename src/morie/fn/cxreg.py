@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cox regression semiparametric (partial likelihood)."""
 
 from __future__ import annotations

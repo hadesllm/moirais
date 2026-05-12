@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Summary of flagged DIF items across methods."""
 
 from __future__ import annotations

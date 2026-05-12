@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CV2 genomic cross-validation: both train and test lines evaluated in at least one environment."""
 import numpy as np
 from scipy import stats

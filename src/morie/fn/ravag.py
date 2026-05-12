@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LSB steganography. 'Silent but deadly.' -- Ravage"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random forest for genomic prediction (Breiman 2001)."""
 from __future__ import annotations
 

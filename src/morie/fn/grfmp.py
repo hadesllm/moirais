@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Feature-map total elements for a conv layer (H' x W' x C_out)."""
 import numpy as np
 from ._richresult import RichResult

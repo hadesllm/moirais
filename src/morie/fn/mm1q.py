@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """M/M/1 queue steady-state metrics."""
 
 from __future__ import annotations

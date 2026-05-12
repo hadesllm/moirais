@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Eigenvector spatial filtering (Tiefelsdorf & Griffith)."""
 
 import numpy as np

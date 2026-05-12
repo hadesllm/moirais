@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Birnbaum-Tingey closed-form for P(D+_n > c)."""
 import numpy as np
 from ._richresult import RichResult

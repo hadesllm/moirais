@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gamma process construction of DP: G(A) = gamma(A)/gamma(X)."""
 import numpy as np
 from ._richresult import RichResult

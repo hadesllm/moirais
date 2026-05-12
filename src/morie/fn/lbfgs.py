@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 L-BFGS (Limited-memory BFGS) quasi-Newton optimization.
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kaiser-Meyer-Olkin sampling adequacy."""
 
 from __future__ import annotations

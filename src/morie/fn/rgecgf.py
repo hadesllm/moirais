@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ECG waveform feature extraction (P, QRS, T amplitudes and durations)."""
 import numpy as np
 from ._richresult import RichResult

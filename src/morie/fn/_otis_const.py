@@ -83,7 +83,7 @@ RELEASE_TYPES: list[str] = [
     "Court Order",
 ]
 
-# Default column names (dataset-agnostic — override via keyword args)
+# Default column names (dataset-agnostic -- override via keyword args)
 DEFAULT_COLS: dict[str, str] = {
     "id": "unique_individual_id",
     "year": "end_fiscal_year",

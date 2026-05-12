@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BLIP: bootstrapped language-image pretraining."""
 import numpy as np
 from ._richresult import RichResult

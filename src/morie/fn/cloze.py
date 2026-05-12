@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cloze test scoring. 'Truly wonderful the mind of a child is.'"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Predictive ability as Pearson correlation between observed and predicted."""
 import numpy as np
 from scipy import stats

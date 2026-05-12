@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Score range check — validate responses within bounds."""
+# morie.fn -- function file (hadesllm/morie)
+"""Score range check -- validate responses within bounds."""
 
 from __future__ import annotations
 
@@ -60,4 +60,4 @@ def score_range_check(
 
 
 def cheatsheet() -> str:
-    return "score_range_check({}) -> Score range check — validate responses within bounds."
+    return "score_range_check({}) -> Score range check -- validate responses within bounds."

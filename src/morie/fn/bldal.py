@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 

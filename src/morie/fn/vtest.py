@@ -15,7 +15,7 @@ def validity_test_retest(
 ) -> dict:
     """Test-retest reliability via ICC(3,1) and Pearson r.
 
-    ICC(3,1) — two-way mixed, consistency, single measures — is the
+    ICC(3,1) -- two-way mixed, consistency, single measures -- is the
     standard for test-retest (Shrout & Fleiss, 1979).
 
     Parameters
@@ -51,7 +51,7 @@ def validity_test_retest(
     # Pearson r
     r, p_r = sp.pearsonr(s1, s2)
 
-    # ICC(3,1) — two-way mixed, consistency
+    # ICC(3,1) -- two-way mixed, consistency
     # Using two-way ANOVA decomposition
     k = 2  # number of measurements
     grand_mean = np.mean(np.concatenate([s1, s2]))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mixtures of Dirichlet processes: prior is a mixture of DP(alpha, G0) over base measures."""
 import numpy as np
 from ._richresult import RichResult

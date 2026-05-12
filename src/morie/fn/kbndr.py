@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Boundary-corrected kernel density estimator."""
 
 from __future__ import annotations

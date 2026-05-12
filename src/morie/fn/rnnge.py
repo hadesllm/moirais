@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Recurrent (vanilla RNN) genomic predictor — NumPy."""
+# morie.fn -- function file (hadesllm/morie)
+"""Recurrent (vanilla RNN) genomic predictor -- NumPy."""
 from __future__ import annotations
 
 import numpy as np
@@ -22,7 +22,7 @@ def rnn_genomic(x, y, markers, hidden: int = 8, n_epochs: int = 150,
         y_hat_i = w_o^T h_L + b_o
 
     Trained by backpropagation through time, full-batch GD with L2 decay.
-    Used in the Montesinos book as a baseline before LSTM/GRU — we keep
+    Used in the Montesinos book as a baseline before LSTM/GRU -- we keep
     the vanilla version because it's deterministic and trains in
     sub-second on small inputs.
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Single-precision (FP32) representation."""
 import numpy as np
 from ._richresult import RichResult

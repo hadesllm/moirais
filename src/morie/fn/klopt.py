@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """KL divergence optimization (projection onto exponential family)."""
 
 __all__ = ["klopt"]

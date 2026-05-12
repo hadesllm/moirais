@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Image segmentation via k-means on pixel colors."""
 import numpy as np
 from ._richresult import RichResult

@@ -10,7 +10,7 @@ def blast_protein(query, db):
     """
     BLAST protein heuristic
 
-    Formula: seed-and-extend with k-mer index + ungapped→gapped extension
+    Formula: seed-and-extend with k-mer index + ungapped->gapped extension
 
     Parameters
     ----------

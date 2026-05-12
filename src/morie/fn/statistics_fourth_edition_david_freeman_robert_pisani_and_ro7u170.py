@@ -11,7 +11,7 @@ def statistics_fourth_edition_david_freeman_robert_pisani_and_ro_chapter_7_unnum
     """
     Regression expression (auto-extracted; see ref).
 
-    Formula: narrow × medium = n/n × n/w →
+    Formula: narrow × medium = n/n × n/w ->
 
     Parameters
     ----------

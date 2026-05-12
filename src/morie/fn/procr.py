@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Procrustes rotation for configuration alignment."""
 
 from __future__ import annotations

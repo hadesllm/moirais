@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PFAS Hazard Index per US EPA 2024 MCL methodology."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ from ._containers import DescriptiveResult
 # non-PFOA/PFOS compounds, HBWC values in ppt (ng/L):
 #
 #   PFHxS:     10 ppt
-#   HFPO-DA:   10 ppt  (GenX chemicals — DuPont/Chemours Cape Fear)
+#   HFPO-DA:   10 ppt  (GenX chemicals -- DuPont/Chemours Cape Fear)
 #   PFNA:      10 ppt
 #   PFBS:    2000 ppt
 #
@@ -29,7 +29,7 @@ _EPA_HBWC_PPT: dict[str, float] = {
     "pfbs":  2000.0,
 }
 
-# Individual MCLs (ppt) for PFOA/PFOS — these are *not* part of the
+# Individual MCLs (ppt) for PFOA/PFOS -- these are *not* part of the
 # Hazard Index; they have their own single-compound thresholds.
 _EPA_MCL_PPT: dict[str, float] = {
     "pfoa": 4.0,
@@ -45,7 +45,7 @@ def pfas_hazard_index(
     Evaluates a drinking-water PFAS measurement against the US EPA's
     April 2024 National Primary Drinking Water Regulation. Two regimes:
 
-    1. **Individual MCLs** (4 ppt each) for PFOA and PFOS — hard caps.
+    1. **Individual MCLs** (4 ppt each) for PFOA and PFOS -- hard caps.
     2. **Hazard Index** for the mixture of PFHxS + HFPO-DA + PFNA + PFBS.
        HI = Σ (C_i / HBWC_i). HI > 1 is a regulatory violation.
 
@@ -66,23 +66,23 @@ def pfas_hazard_index(
         value = Hazard Index (unitless; > 1 is a violation).
         extra contains:
 
-        - ``pfoa_compliance``, ``pfos_compliance`` — bool, True if ≤ 4 ppt
-        - ``hazard_index`` — float, the mixture HI
-        - ``per_compound_hq`` — dict of HQs for the 4 HI compounds
-        - ``violation`` — list of reasons for non-compliance (empty if clean)
-        - ``epa_thresholds`` — the numeric bounds used, for reference
+        - ``pfoa_compliance``, ``pfos_compliance`` -- bool, True if ≤ 4 ppt
+        - ``hazard_index`` -- float, the mixture HI
+        - ``per_compound_hq`` -- dict of HQs for the 4 HI compounds
+        - ``violation`` -- list of reasons for non-compliance (empty if clean)
+        - ``epa_thresholds`` -- the numeric bounds used, for reference
 
     Examples
     --------
     A municipal water sample with low PFOA but elevated PFHxS:
 
     >>> r = pfas_hazard_index({
-    ...     "pfoa":    2.0,    # ≤ 4 ppt — compliant
-    ...     "pfos":    1.5,    # ≤ 4 ppt — compliant
+    ...     "pfoa":    2.0,    # ≤ 4 ppt -- compliant
+    ...     "pfos":    1.5,    # ≤ 4 ppt -- compliant
     ...     "pfhxs":   8.0,    # HQ = 0.8
     ...     "hfpo-da": 5.0,    # HQ = 0.5
     ... })
-    >>> round(r.value, 2)      # HI = 0.8 + 0.5 = 1.3 → violation
+    >>> round(r.value, 2)      # HI = 0.8 + 0.5 = 1.3 -> violation
     1.3
     >>> "pfhxs+hfpo-da HI" in r.extra["violation"][0]
     True

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pearl's three rules of do-calculus for identification."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Grouped summary statistics. 'The Child' -- Grogu"""
 
 from __future__ import annotations

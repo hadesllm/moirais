@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EOG eye movement artifact detection."""
 
 from __future__ import annotations

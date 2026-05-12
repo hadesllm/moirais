@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_20_unnumbered_739(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: there is no need to pick a single δ. Start with δ =∞ , which corresponds with←−t =∞ and −→t =− ∞ , continuing to test smaller values of δ until a value δ∗
+    Formula: there is no need to pick a single δ. Start with δ =∞ , which corresponds with←−t =∞ and −->t =− ∞ , continuing to test smaller values of δ until a value δ∗
 
     Parameters
     ----------

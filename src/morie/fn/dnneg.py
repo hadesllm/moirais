@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Density of ideal points for negative-weight respondents."""
 
 from __future__ import annotations

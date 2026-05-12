@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Direct estimation of single-index model with discrete covariates."""
 import numpy as np
 from ._richresult import RichResult

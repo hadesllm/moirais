@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Gaussian-process regression — Matern kernel."""
+# morie.fn -- function file (hadesllm/morie)
+"""Gaussian-process regression -- Matern kernel."""
 import numpy as np
 from scipy.special import gamma as gammafn, kv
 from ._richresult import RichResult

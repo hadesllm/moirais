@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Max-norm regularization: rescale weights so ||w||_2 <= r."""
 import numpy as np
 from ._richresult import RichResult

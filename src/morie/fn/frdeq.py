@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Friedmann equations (cosmological expansion)."""
 
 __all__ = ["frdeq"]

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Conjugate gradient solver for symmetric positive-definite systems."""
 
 from __future__ import annotations

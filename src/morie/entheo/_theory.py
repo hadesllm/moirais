@@ -1,5 +1,5 @@
 """
-morie.entheo._theory — Internal theoretical-framework helpers.
+morie.entheo._theory -- Internal theoretical-framework helpers.
 
 Per-frame phenomenal-binding metrics shared by ``analysis.py``. Kept
 private because the API is unstable (v0.4.0-alpha toy implementations);

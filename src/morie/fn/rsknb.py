@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nagelkerke R-squared for risk model."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Document-level embedding via mean-pool over contextual token vectors."""
 import numpy as np
 from ._richresult import RichResult

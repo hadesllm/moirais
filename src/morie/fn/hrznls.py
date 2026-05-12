@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonlinear least squares estimator of beta in single-index model."""
 import numpy as np
 from ._richresult import RichResult

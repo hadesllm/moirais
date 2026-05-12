@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Dropout regularization. 'Big results require big ambitions. — Heraclitus' -- Ahsoka Tano"""
+# morie.fn -- function file (hadesllm/morie)
+"""Dropout regularization. 'Big results require big ambitions. -- Heraclitus' -- Ahsoka Tano"""
 
 from __future__ import annotations
 
@@ -67,4 +67,4 @@ short = dropout
 
 
 def cheatsheet() -> str:
-    return "dropout({}) -> Dropout regularization. 'Big results require big ambitions. — Heraclitus' -- Ahsoka Tano"
+    return "dropout({}) -> Dropout regularization. 'Big results require big ambitions. -- Heraclitus' -- Ahsoka Tano"

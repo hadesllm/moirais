@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chain-of-thought prompting: elicit step-by-step reasoning before the answer."""
 import numpy as np
 from ._richresult import RichResult

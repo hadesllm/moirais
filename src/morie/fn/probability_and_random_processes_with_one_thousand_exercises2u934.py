@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     CountModels expression (auto-extracted; see ref).
 
-    Formula: np → λ where 0<λ< ∞ . Comment.
+    Formula: np -> λ where 0<λ< ∞ . Comment.
 
     Parameters
     ----------

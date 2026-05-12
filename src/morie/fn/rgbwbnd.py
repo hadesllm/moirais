@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Signal bandwidth estimation from PSD (half-power or 99% energy criterion)."""
 import numpy as np
 from ._richresult import RichResult

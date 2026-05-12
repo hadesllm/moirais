@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: (1) Lemma. If E( Z1)< ∞ then limn→∞ 0 pj( n) = 0π j exists. The generating function
+    Formula: (1) Lemma. If E( Z1)< ∞ then limn->∞ 0 pj( n) = 0π j exists. The generating function
 
     Parameters
     ----------

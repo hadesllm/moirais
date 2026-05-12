@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SF-12 mental component summary (simplified)."""
 
 import numpy as np

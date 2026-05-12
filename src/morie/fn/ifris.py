@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Infection fatality rate (IFR) with seroprevalence adjustment."""
 
 from __future__ import annotations

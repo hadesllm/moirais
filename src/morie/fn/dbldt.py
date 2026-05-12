@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Double-threshold detection (hysteresis)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Durbin-Watson statistic for residual autocorrelation."""
 
 from __future__ import annotations

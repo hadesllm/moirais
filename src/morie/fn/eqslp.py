@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Slope index of inequality (SII)."""
 
 from __future__ import annotations

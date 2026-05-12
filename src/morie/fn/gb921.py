@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mood test for scale: sum of squared rank deviations from median rank."""
 import numpy as np
 from scipy import stats

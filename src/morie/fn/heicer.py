@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Incremental cost-effectiveness ratio (ICER)."""
 
 from ._containers import ESRes

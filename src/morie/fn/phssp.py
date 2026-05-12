@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Phase spectrum."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Patience is bitter, but its fruit is sweet. — Aristotle"
+_QUOTE = "Patience is bitter, but its fruit is sweet. -- Aristotle"
 
 
 def phase_spectrum(x, **kwargs) -> DescriptiveResult:

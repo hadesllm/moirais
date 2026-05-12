@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """A* pathfinding algorithm. 'Lock and load.' -- Niobe"""
 
 from __future__ import annotations

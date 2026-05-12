@@ -10,7 +10,7 @@ def functional_annotation(sequences, eggnog_db):
     """
     Functional annotation (eggNOG-mapper)
 
-    Formula: orthologous group → KEGG/GO
+    Formula: orthologous group -> KEGG/GO
 
     Parameters
     ----------

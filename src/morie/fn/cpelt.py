@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Luck is what happens when preparation meets opportunity. — Seneca"""
+# morie.fn -- function file (hadesllm/morie)
+"""Luck is what happens when preparation meets opportunity. -- Seneca"""
 
 from __future__ import annotations
 

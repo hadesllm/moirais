@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonparametric instrumental variables (Horowitz 2009, Ch 12).
 
 Solves the linear inverse problem  T g = m  with
@@ -96,7 +96,7 @@ def horowitz_nonparametric_iv(x, y, z, J=5, alpha=1e-3, grid=None,
     grid_s = (grid - x.mean()) / max(x.std(ddof=1), 1e-6)
     Bx_g = _hermite_basis(grid_s, J)
     g_hat = Bx_g @ coef
-    # Bootstrap SE (B=30) — guarded against recursion explosion
+    # Bootstrap SE (B=30) -- guarded against recursion explosion
     if _bootstrap:
         rng = np.random.default_rng(0)
         B = 30
@@ -135,5 +135,5 @@ if __name__ == "__main__":  # pragma: no cover
     y = x ** 2 + 0.3 * rng.standard_normal(n)
     res = horowitz_nonparametric_iv(x, y, z, grid=[0.0, 1.0, 2.0])
     print(res)
-    # g(x) = x^2 at 0, 1, 2  → roughly 0, 1, 4
+    # g(x) = x^2 at 0, 1, 2  -> roughly 0, 1, 4
     assert res["estimate"][2] > res["estimate"][0]

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bow-ban (no self-loops): DAG acyclicity condition ensuring no cycles."""
 import numpy as np
 from ._richresult import RichResult

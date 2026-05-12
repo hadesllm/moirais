@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: 1 Xi satisfies Un/√ n D− → N( 0, 1) but var( Un/√ n) → 2 as n → ∞ .
+    Formula: 1 Xi satisfies Un/√ n D− -> N( 0, 1) but var( Un/√ n) -> 2 as n -> ∞ .
 
     Parameters
     ----------

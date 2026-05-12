@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: point-wise to X. However, note thatXn(ω) → X(ω), except for ω = 0.
+    Formula: point-wise to X. However, note thatXn(ω) -> X(ω), except for ω = 0.
 
     Parameters
     ----------

@@ -12,7 +12,7 @@ def temperature_schedule(
     cooling: float = 0.95,
     n_iter: int = 100,
 ) -> SpatialResult:
-    r"""The whole is greater than the sum of its parts. — Aristotle"""
+    r"""The whole is greater than the sum of its parts. -- Aristotle"""
     schedule = T0 * cooling ** np.arange(n_iter)
     return SpatialResult(
         name="temperature_schedule",

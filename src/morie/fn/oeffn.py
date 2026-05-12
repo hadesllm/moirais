@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Summary of all effect sizes for OTIS correctional data."""
 
 from __future__ import annotations

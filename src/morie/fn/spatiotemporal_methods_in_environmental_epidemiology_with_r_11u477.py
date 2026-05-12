@@ -11,7 +11,7 @@ def spatiotemporal_methods_in_environmental_epidemiology_with_r__chapter_11_unnu
     """
     CountModels expression (auto-extracted; see ref).
 
-    Formula: for parameters λ > 0, σ > 0, and ξ∈ (−∞, ∞). Note that as ξ→ 0 in Equation
+    Formula: for parameters λ > 0, σ > 0, and ξ∈ (−∞, ∞). Note that as ξ-> 0 in Equation
 
     Parameters
     ----------

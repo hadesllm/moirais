@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Adaptive TFD of VAG signals via matching pursuit."""
 import numpy as np
 from ._richresult import RichResult

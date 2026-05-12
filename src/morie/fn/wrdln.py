@@ -1,4 +1,4 @@
-"""Word length distribution statistics. 'The whole is greater than the sum of its parts. — Aristotle' -- Chirrut Imwe"""
+"""Word length distribution statistics. 'The whole is greater than the sum of its parts. -- Aristotle' -- Chirrut Imwe"""
 
 from __future__ import annotations
 

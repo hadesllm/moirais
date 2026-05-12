@@ -1,4 +1,4 @@
-"""Damped spring-mass system. 'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu'"""
+"""Damped spring-mass system. 'Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu'"""
 
 from __future__ import annotations
 
@@ -88,4 +88,4 @@ short = spring_mass
 
 
 def cheatsheet() -> str:
-    return "spring_mass({}) -> Damped spring-mass system. 'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu'"
+    return "spring_mass({}) -> Damped spring-mass system. 'Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu'"

@@ -11,7 +11,7 @@ def springer_texts_in_statistics_series_gareth_james_daniela_wit_chapter_3_equat
     """
     GeneralStatistics equation extracted from [Springer Texts in Statistics Series] Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani - An Introduction To Statistical Learning  With Applications In R.
 
-    Formula: i ≈yi for i =1 ,...,n —then ( 3.15) will
+    Formula: i ≈yi for i =1 ,...,n --then ( 3.15) will
 
     Parameters
     ----------

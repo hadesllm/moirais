@@ -11,7 +11,7 @@ def analysis_of_categorical_data_with_r_chapman_hall_crc_christo_chapter_5_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: be factored into two components—one that usesE(π) and one that uses the MLEˆπ =w/n:
+    Formula: be factored into two components--one that usesE(π) and one that uses the MLEˆπ =w/n:
 
     Parameters
     ----------

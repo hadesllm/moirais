@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maternal ECG filtering from abdominal ECG recording."""
 import numpy as np
 from ._richresult import RichResult

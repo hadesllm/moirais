@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AR/ARMA model of PCG for heart sound characterization."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SACE estimator (survivor average causal effect)."""
 
 from __future__ import annotations

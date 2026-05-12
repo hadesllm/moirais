@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Integrated EMG (IEMG) of a signal."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def integrated_emg_fn(x: np.ndarray) -> DescriptiveResult:
-    """Time discovers truth. — Seneca"""
+    """Time discovers truth. -- Seneca"""
     from morie._waveform import integrated_emg as _backend
 
     result = _backend(x)

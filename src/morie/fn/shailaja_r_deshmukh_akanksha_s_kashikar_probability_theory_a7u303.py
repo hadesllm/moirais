@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] 1, if x ≥ −1/n → F (x) =
+    Formula: [EQ] 1, if x ≥ −1/n -> F (x) =
 
     Parameters
     ----------

@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] Show that P(λ T/ I ≤ x | X( 0) = I) → e− 1/ x as I → ∞ .
+    Formula: [EQ] Show that P(λ T/ I ≤ x | X( 0) = I) -> e− 1/ x as I -> ∞ .
 
     Parameters
     ----------

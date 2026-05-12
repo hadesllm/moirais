@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Euclidean distance."""
 
 import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "Difficulties strengthen the mind, as labor does the body. — Seneca"
+_QUOTE = "Difficulties strengthen the mind, as labor does the body. -- Seneca"
 
 
 def euclidean_dist(x, y, **kwargs) -> ESRes:

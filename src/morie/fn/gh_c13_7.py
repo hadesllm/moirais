@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mixtures of Beta processes for flexible hazard modeling."""
 import numpy as np
 from ._richresult import RichResult

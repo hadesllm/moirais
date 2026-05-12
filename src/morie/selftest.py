@@ -1,4 +1,4 @@
-"""MORIE self-test — comprehensive smoke test of all subsystems.
+"""MORIE self-test -- comprehensive smoke test of all subsystems.
 
 Verifies that every major component of the MORIE IDE is functional
 without requiring pytest or any test framework.  Designed to give

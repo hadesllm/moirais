@@ -1,10 +1,10 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Modular multiplicative inverse."""
 
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "You have power over your mind — not outside events. — Marcus Aurelius"
+_QUOTE = "You have power over your mind -- not outside events. -- Marcus Aurelius"
 
 
 def mod_inverse(a: int, m: int, **kwargs) -> DescriptiveResult:

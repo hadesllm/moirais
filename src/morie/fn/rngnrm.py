@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Range normalization to [0, 1]."""
 
 from typing import Sequence, Union

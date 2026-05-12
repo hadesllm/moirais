@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""You have power over your mind — not outside events. — Marcus Aurelius"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""You have power over your mind -- not outside events. -- Marcus Aurelius"""
 
 from __future__ import annotations
 
@@ -84,4 +84,4 @@ short = boolean_minimize
 
 
 def cheatsheet() -> str:
-    return "You have power over your mind — not outside events. — Marcus Aurelius"
+    return "You have power over your mind -- not outside events. -- Marcus Aurelius"

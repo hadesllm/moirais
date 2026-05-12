@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Schwarzschild metric (black hole geometry)."""
 
 __all__ = ["schwz"]

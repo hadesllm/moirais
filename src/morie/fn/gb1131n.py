@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Asymptotic distribution of Spearman r_s: r_s*sqrt(n-1) ->_d N(0,1)."""
 import numpy as np
 from ._richresult import RichResult

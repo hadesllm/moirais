@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Convert PSD to frequency-in-Hz units and compute bin-level features."""
 import numpy as np
 from ._richresult import RichResult

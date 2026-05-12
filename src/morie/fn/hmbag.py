@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bagging (bootstrap aggregating): train on bootstrap samples, aggregate outputs."""
 import numpy as np
 from ._richresult import RichResult

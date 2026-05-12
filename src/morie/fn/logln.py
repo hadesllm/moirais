@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Log-linear model for multi-way tables. 'Truly wonderful, the mind of a child is.'"""
 
 from __future__ import annotations

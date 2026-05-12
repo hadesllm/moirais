@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sparse autoencoder: reconstruction + L1 penalty on hidden activations."""
 import numpy as np
 from ._richresult import RichResult

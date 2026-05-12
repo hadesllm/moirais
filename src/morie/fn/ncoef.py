@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Normalize coefficient vector to unit normal."""
 
 from __future__ import annotations

@@ -11,7 +11,7 @@ def spatial_data_analysis_with_r_chapter_8_unnumbered_31(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: ˓→ft +no_defs +ellps=GRS80 +towgs84=0,0,0
+    Formula: ˓->ft +no_defs +ellps=GRS80 +towgs84=0,0,0
 
     Parameters
     ----------

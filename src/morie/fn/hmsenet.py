@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Squeeze-and-Excitation (SENet) block for channel recalibration."""
 import numpy as np
 from ._richresult import RichResult

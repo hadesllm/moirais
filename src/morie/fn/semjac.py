@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SEM Jacobian ln|I - lambda*W|."""
 
 import numpy as np

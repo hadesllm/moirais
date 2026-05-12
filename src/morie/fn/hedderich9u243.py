@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_243(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] →90, i.e.(150/100 =)1.5 and (90/150 =)−0.6
+    Formula: [EQ] ->90, i.e.(150/100 =)1.5 and (90/150 =)−0.6
 
     Parameters
     ----------

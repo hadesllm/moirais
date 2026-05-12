@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wild bootstrap (Wu 1986; Mammen 1993; Horowitz 2009, Ch 13).
 
 Given fitted residuals ``r_i = Y_i - f(X_i, beta_hat)``, the wild

@@ -1,4 +1,4 @@
-"""Knowledge itself is power. — Francis Bacon"""
+"""Knowledge itself is power. -- Francis Bacon"""
 
 from __future__ import annotations
 

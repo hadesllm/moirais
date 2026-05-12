@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Priors based on finite approximating sets: sieve priors for contraction."""
 import numpy as np
 from ._richresult import RichResult

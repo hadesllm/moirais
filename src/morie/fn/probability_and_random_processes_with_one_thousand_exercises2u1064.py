@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: Xn(ω) → X(ω) for all ω except possibly on some null event , with a similar weakening
+    Formula: Xn(ω) -> X(ω) for all ω except possibly on some null event , with a similar weakening
 
     Parameters
     ----------

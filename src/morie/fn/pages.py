@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Page's L trend test. 'Hope is not lost today. It is found. -- Poe'"""
 
 from __future__ import annotations

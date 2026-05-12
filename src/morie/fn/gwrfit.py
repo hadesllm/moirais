@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GWR basic model fit (Brunsdon et al. 1996)."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Log magnitude spectrum."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Errors using inadequate data are much less than those using no data at all. — Charles Babbage"
+_QUOTE = "Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"
 
 
 def log_magnitude_spectrum(x, **kwargs) -> DescriptiveResult:

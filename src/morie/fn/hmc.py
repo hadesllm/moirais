@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hamiltonian Monte Carlo sampler."""
 
 from __future__ import annotations

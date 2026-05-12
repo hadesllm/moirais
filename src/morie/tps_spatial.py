@@ -1,4 +1,4 @@
-"""morie.tps_spatial — spatial analyses for TPS crime data.
+"""morie.tps_spatial -- spatial analyses for TPS crime data.
 
 Wires the existing morie.fn spatial primitives to TPS data:
 - Moran's I (global) on neighbourhood-level counts
@@ -62,11 +62,11 @@ def morans_i_neighbourhood(df: pd.DataFrame, *,
     then runs Moran's I on the count vector.
     """
     if hood_col not in df.columns:
-        return RichResult(title=f"Moran's I — {ds_name}",
+        return RichResult(title=f"Moran's I -- {ds_name}",
                           warnings=[f"{hood_col} missing"])
     if "LAT_WGS84" not in df.columns or "LONG_WGS84" not in df.columns:
-        return RichResult(title=f"Moran's I — {ds_name}",
-                          warnings=["LAT/LONG_WGS84 missing — cannot build "
+        return RichResult(title=f"Moran's I -- {ds_name}",
+                          warnings=["LAT/LONG_WGS84 missing -- cannot build "
                                     "spatial weights"])
 
     counts = _hood_counts(df, hood_col)
@@ -77,7 +77,7 @@ def morans_i_neighbourhood(df: pd.DataFrame, *,
     counts = counts.loc[common]
     centroids = centroids.loc[common]
     if counts.size < 5:
-        return RichResult(title=f"Moran's I — {ds_name}",
+        return RichResult(title=f"Moran's I -- {ds_name}",
                           warnings=[f"only {counts.size} valid neighbourhoods"])
 
     coords = centroids[["LAT_WGS84", "LONG_WGS84"]].values
@@ -89,8 +89,8 @@ def morans_i_neighbourhood(df: pd.DataFrame, *,
     # Moran's I = (n / S0) * (z'Wz) / (z'z)
     S0 = W.sum()
     if S0 == 0:
-        return RichResult(title=f"Moran's I — {ds_name}",
-                          warnings=["empty spatial weights — k too small"])
+        return RichResult(title=f"Moran's I -- {ds_name}",
+                          warnings=["empty spatial weights -- k too small"])
     num = z @ W @ z
     den = z @ z
     I = (n / S0) * (num / den) if den != 0 else float("nan")
@@ -116,7 +116,7 @@ def morans_i_neighbourhood(df: pd.DataFrame, *,
         p = erfc(abs(z_I) / sqrt(2))
 
     return RichResult(
-        title=f"Moran's I (global) — {ds_name}",
+        title=f"Moran's I (global) -- {ds_name}",
         summary_lines=[
             ("Spatial unit", hood_col),
             ("Neighbourhoods", int(n)),
@@ -133,7 +133,7 @@ def morans_i_neighbourhood(df: pd.DataFrame, *,
             "Positive I = nearby neighbourhoods have similar counts "
             "(spatial clustering of crime); negative = checkerboard "
             "pattern; near zero = random."
-        ) if np.isfinite(z_I) else "Variance non-positive — interpretation skipped.",
+        ) if np.isfinite(z_I) else "Variance non-positive -- interpretation skipped.",
         payload={"I": float(I), "expected_I": expected_I,
                  "var_I": float(var_I),
                  "z_score": float(z_I) if np.isfinite(z_I) else None,
@@ -147,14 +147,14 @@ def local_morans_i(df: pd.DataFrame, *,
                     ds_name: str = "?",
                     k_neighbours: int = 5,
                     top_n: int = 20) -> RichResult:
-    """LISA — local Moran's Ii per neighbourhood, with hot/cold spot
+    """LISA -- local Moran's Ii per neighbourhood, with hot/cold spot
     classification.
     """
     if hood_col not in df.columns:
-        return RichResult(title=f"LISA — {ds_name}",
+        return RichResult(title=f"LISA -- {ds_name}",
                           warnings=[f"{hood_col} missing"])
     if "LAT_WGS84" not in df.columns:
-        return RichResult(title=f"LISA — {ds_name}",
+        return RichResult(title=f"LISA -- {ds_name}",
                           warnings=["LAT/LONG_WGS84 missing"])
 
     counts = _hood_counts(df, hood_col)
@@ -164,7 +164,7 @@ def local_morans_i(df: pd.DataFrame, *,
     counts = counts.loc[common]
     centroids = centroids.loc[common]
     if counts.size < 5:
-        return RichResult(title=f"LISA — {ds_name}",
+        return RichResult(title=f"LISA -- {ds_name}",
                           warnings=[f"only {counts.size} valid neighbourhoods"])
 
     coords = centroids[["LAT_WGS84", "LONG_WGS84"]].values
@@ -196,7 +196,7 @@ def local_morans_i(df: pd.DataFrame, *,
     top = out.sort_values("Ii", ascending=False).head(top_n)
 
     return RichResult(
-        title=f"LISA (local Moran's Ii) — {ds_name}",
+        title=f"LISA (local Moran's Ii) -- {ds_name}",
         summary_lines=[
             ("Spatial unit", hood_col),
             ("Neighbourhoods", int(counts.size)),
@@ -229,12 +229,12 @@ def kde_density(df: pd.DataFrame, *,
     Returns summary stats; not the full grid (too big for a RichResult).
     """
     if "LAT_WGS84" not in df.columns or "LONG_WGS84" not in df.columns:
-        return RichResult(title=f"KDE — {ds_name}",
+        return RichResult(title=f"KDE -- {ds_name}",
                           warnings=["LAT/LONG_WGS84 missing"])
     coords = df[["LAT_WGS84", "LONG_WGS84"]].dropna()
     coords = coords[(coords["LAT_WGS84"] != 0) & (coords["LONG_WGS84"] != 0)]
     if coords.shape[0] < 50:
-        return RichResult(title=f"KDE — {ds_name}",
+        return RichResult(title=f"KDE -- {ds_name}",
                           warnings=[f"only {coords.shape[0]} geocoded"])
     from scipy.stats import gaussian_kde
     pts = coords.values.T
@@ -242,7 +242,7 @@ def kde_density(df: pd.DataFrame, *,
     # Evaluate density at the points themselves to find max-density area
     densities = kde(pts)
     return RichResult(
-        title=f"KDE — {ds_name}",
+        title=f"KDE -- {ds_name}",
         summary_lines=[
             ("Geocoded incidents", int(coords.shape[0])),
             ("Bandwidth", bandwidth),
@@ -255,7 +255,7 @@ def kde_density(df: pd.DataFrame, *,
                 round(float(coords.iloc[densities.argmax()]["LONG_WGS84"]), 4)),
         ],
         interpretation=(
-            "KDE bandwidth controls smoothness — smaller = more sensitive "
+            "KDE bandwidth controls smoothness -- smaller = more sensitive "
             "to local clusters. The (lat, lon) pair under max-density "
             "marks the densest incident hotspot in the data."
         ),

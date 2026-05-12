@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Posterior consistency for independent non-i.i.d. observations."""
 import numpy as np
 from ._richresult import RichResult

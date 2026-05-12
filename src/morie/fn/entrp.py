@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Metric entropy (covering number) computation."""
 
 from __future__ import annotations

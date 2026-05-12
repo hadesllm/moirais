@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """z-based confidence interval half-width."""
 
 from scipy.stats import norm

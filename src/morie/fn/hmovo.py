@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multiclass one-vs-one: train K(K-1)/2 pairwise binary classifiers."""
 import numpy as np
 from ._richresult import RichResult

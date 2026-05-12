@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DDPM forward (noising) process q(x_t | x_0)."""
 import numpy as np
 from ._richresult import RichResult

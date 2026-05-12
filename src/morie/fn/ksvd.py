@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-SVD dictionary learning."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Statistics is the grammar of science. — Karl Pearson"
+_QUOTE = "Statistics is the grammar of science. -- Karl Pearson"
 
 
 def ksvd_dictionary(Y, n_atoms: int = 20, sparsity: int = 3, n_iter: int = 50, **kwargs) -> DescriptiveResult:

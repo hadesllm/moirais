@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius"
+_QUOTE = "The happiness of your life depends upon the quality of your thoughts. -- Marcus Aurelius"
 
 
 def rms_value(x, **kwargs) -> DescriptiveResult:

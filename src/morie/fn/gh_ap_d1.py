@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exponentially consistent test: test phi_n with both errors decaying exponentially."""
 import numpy as np
 from scipy import stats

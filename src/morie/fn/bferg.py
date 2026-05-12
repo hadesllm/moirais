@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Ferguson's Bayesian bootstrap. 'The greatest teacher, failure is.'"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """First-difference operator for baseline wander removal."""
 import numpy as np
 from ._richresult import RichResult

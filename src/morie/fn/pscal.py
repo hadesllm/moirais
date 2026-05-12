@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""An unexamined life is not worth living. — Socrates"""
+# morie.fn -- function file (hadesllm/morie)
+"""An unexamined life is not worth living. -- Socrates"""
 
 from __future__ import annotations
 
@@ -86,4 +86,4 @@ pscal = ps_calibrate
 
 
 def cheatsheet() -> str:
-    return "An unexamined life is not worth living. — Socrates"
+    return "An unexamined life is not worth living. -- Socrates"

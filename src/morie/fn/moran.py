@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moran's I global spatial autocorrelation statistic."""
 
 import numpy as np

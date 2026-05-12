@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DML for alert treatment effect in OTIS correctional data."""
 
 from __future__ import annotations

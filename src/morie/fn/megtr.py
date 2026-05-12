@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Knowing yourself is the beginning of all wisdom. — Aristotle"""
+# morie.fn -- function file (hadesllm/morie)
+"""Knowing yourself is the beginning of all wisdom. -- Aristotle"""
 
 from __future__ import annotations
 
@@ -87,4 +87,4 @@ megtr = kronecker_decompose
 
 
 def cheatsheet() -> str:
-    return "Knowing yourself is the beginning of all wisdom. — Aristotle"
+    return "Knowing yourself is the beginning of all wisdom. -- Aristotle"

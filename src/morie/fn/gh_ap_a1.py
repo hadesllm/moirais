@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Weak convergence of probability measures: integral f dP_n -> integral f dP for all f in Cb."""
 import numpy as np
 from ._richresult import RichResult

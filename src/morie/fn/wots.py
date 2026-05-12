@@ -1,4 +1,4 @@
-"""Winternitz One-Time Signature (WOTS+) — sign."""
+"""Winternitz One-Time Signature (WOTS+) -- sign."""
 
 from __future__ import annotations
 
@@ -37,4 +37,4 @@ wots = wots_sign
 
 
 def cheatsheet() -> str:
-    return "wots_sign({}) -> Winternitz One-Time Signature (WOTS+) — sign."
+    return "wots_sign({}) -> Winternitz One-Time Signature (WOTS+) -- sign."

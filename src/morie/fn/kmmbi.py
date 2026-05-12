@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Membership inference attack: threshold on model loss to infer training-set membership."""
 import numpy as np
 from ._richresult import RichResult

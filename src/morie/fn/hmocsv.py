@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """One-class SVM: learn boundary of high-density region."""
 import numpy as np
 from ._richresult import RichResult

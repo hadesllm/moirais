@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gaussian random projection matrix scaled by 1/sqrt(d')."""
 import numpy as np
 from ._richresult import RichResult

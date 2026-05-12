@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EM algorithm imputation for multivariate normal data."""
 
 from __future__ import annotations

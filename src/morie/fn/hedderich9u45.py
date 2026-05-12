@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_45(x):
     """
     PowerAndDesign expression (auto-extracted; see ref).
 
-    Formula: [EQ] an·bn = (ab)n →62·32 = 6·6·3·3 = (6·3)2 = 18 2 = 324
+    Formula: [EQ] an·bn = (ab)n ->62·32 = 6·6·3·3 = (6·3)2 = 18 2 = 324
 
     Parameters
     ----------

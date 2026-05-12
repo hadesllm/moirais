@@ -8,7 +8,7 @@ __all__ = ["bookadvanced_elementsofstatisticallearning_chapter_4_unnumbered_43"]
 
 
 def bookadvanced_elementsofstatisticallearning_chapter_4_unnumbered_43(x, cdf=None):
-    """Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"""
+    """Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

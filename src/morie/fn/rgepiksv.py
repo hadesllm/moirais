@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Epileptic seizure detection using K-SVD dictionary learning."""
 import numpy as np
 from ._richresult import RichResult

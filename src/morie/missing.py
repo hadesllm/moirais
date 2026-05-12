@@ -4,19 +4,19 @@ Missing data analysis, diagnostics, and imputation for epidemiological datasets.
 This module provides the complete analytical pipeline for handling missing data
 in observational health studies:
 
-1. **Pattern analysis** — identify monotone, non-monotone, and systematic
+1. **Pattern analysis** -- identify monotone, non-monotone, and systematic
    missingness; classify mechanisms (MCAR, MAR, MNAR).
-2. **Diagnostics** — Little's MCAR test, missingness pattern matrices,
+2. **Diagnostics** -- Little's MCAR test, missingness pattern matrices,
    proportion summaries.
-3. **Single imputation** — mean, median, mode, LOCF, NOCB, regression, hot
+3. **Single imputation** -- mean, median, mode, LOCF, NOCB, regression, hot
    deck, cold deck.
-4. **Multiple imputation** — MICE (multivariate imputation by chained
+4. **Multiple imputation** -- MICE (multivariate imputation by chained
    equations) with PMM, Bayesian linear regression, logistic regression for
    binary outcomes, polytomous regression for categorical outcomes, and random
    forest imputation.
-5. **Pooling** — Rubin's rules for combining multiply imputed estimates.
-6. **Convergence** — trace-plot data, R-hat diagnostics.
-7. **Sensitivity analysis** — tipping-point analysis, delta adjustment.
+5. **Pooling** -- Rubin's rules for combining multiply imputed estimates.
+6. **Convergence** -- trace-plot data, R-hat diagnostics.
+7. **Sensitivity analysis** -- tipping-point analysis, delta adjustment.
 
 References
 ----------

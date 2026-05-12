@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dueling DQN: separate value and advantage streams."""
 import numpy as np
 from ._richresult import RichResult

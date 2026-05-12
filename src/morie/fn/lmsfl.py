@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LMS adaptive filter."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import SignalResult
 
-_QUOTE = "We suffer more often in imagination than in reality. — Seneca"
+_QUOTE = "We suffer more often in imagination than in reality. -- Seneca"
 
 
 def lms_filter(x, d, mu: float = 0.01, order: int = 16) -> SignalResult:

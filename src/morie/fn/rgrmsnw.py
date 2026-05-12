@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RMS noise estimation from signal-free segments."""
 import numpy as np
 from ._richresult import RichResult

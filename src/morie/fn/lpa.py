@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Latent profile analysis (GMM for continuous data)."""
 
 from __future__ import annotations

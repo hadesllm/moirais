@@ -1,11 +1,11 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ANOVA F-test per feature for selection."""
 
 import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "I cannot teach anybody anything. I can only make them think. — Socrates"
+_QUOTE = "I cannot teach anybody anything. I can only make them think. -- Socrates"
 
 
 def f_test_features(X, y, **kwargs) -> DescriptiveResult:

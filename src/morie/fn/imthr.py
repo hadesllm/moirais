@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Image thresholding (Otsu / fixed). 'Time discovers truth. — Seneca'"""
+# morie.fn -- function file (hadesllm/morie)
+"""Image thresholding (Otsu / fixed). 'Time discovers truth. -- Seneca'"""
 
 from __future__ import annotations
 

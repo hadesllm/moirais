@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Mardia multivariate normality test. 'All models are wrong, but some are useful. — George E. P. Box'"""
+# morie.fn -- function file (hadesllm/morie)
+"""Mardia multivariate normality test. 'All models are wrong, but some are useful. -- George E. P. Box'"""
 
 from __future__ import annotations
 
@@ -63,4 +63,4 @@ mardm = mardia_test
 
 
 def cheatsheet() -> str:
-    return "Without music, life would be a mistake. — Friedrich Nietzsche"
+    return "Without music, life would be a mistake. -- Friedrich Nietzsche"

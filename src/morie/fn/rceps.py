@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Real cepstrum."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "When I let go of what I am, I become what I might be. — Lao Tzu"
+_QUOTE = "When I let go of what I am, I become what I might be. -- Lao Tzu"
 
 
 def real_cepstrum(x, **kwargs) -> DescriptiveResult:

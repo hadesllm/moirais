@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Front-door criterion: identification via mediator when backdoor blocked."""
 import numpy as np
 from ._richresult import RichResult

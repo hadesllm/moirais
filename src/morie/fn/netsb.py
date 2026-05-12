@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bootstrap stability of network edge weights (CS coefficient)."""
 
 from __future__ import annotations

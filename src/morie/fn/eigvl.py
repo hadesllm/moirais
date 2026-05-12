@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Extract sorted eigenvalues. 'Rasengan!' -- Naruto, Naruto"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IRT-based DIF using likelihood ratio."""
 
 from __future__ import annotations

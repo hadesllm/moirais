@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """pscl rollcall object: encode roll call vote matrix for spatial scaling."""
 import numpy as np
 from ._richresult import RichResult

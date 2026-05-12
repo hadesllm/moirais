@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Semiparametric information bound (Kosorok 2008, Ch 6).
 
 I_eff = E[S_eff S_eff'].  For the linear regression model

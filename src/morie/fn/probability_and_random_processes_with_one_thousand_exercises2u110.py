@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] (a) lim x, y→−∞ FX, Y( x, y) = 0, limx, y→∞ FX, Y( x, y) = 1,
+    Formula: [EQ] (a) lim x, y->−∞ FX, Y( x, y) = 0, limx, y->∞ FX, Y( x, y) = 1,
 
     Parameters
     ----------

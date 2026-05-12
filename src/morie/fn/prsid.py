@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Parseval's identity verification."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The only true wisdom is in knowing you know nothing. — Socrates"
+_QUOTE = "The only true wisdom is in knowing you know nothing. -- Socrates"
 
 
 def parseval_identity(x, X_fft=None, **kwargs) -> DescriptiveResult:

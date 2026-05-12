@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Expected parameter change from modification indices."""
 
 from __future__ import annotations

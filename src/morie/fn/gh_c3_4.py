@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Stick-breaking construction: w_k = V_k * prod_{j<k}(1-V_j), sum w_k = 1."""
 import numpy as np
 from ._richresult import RichResult

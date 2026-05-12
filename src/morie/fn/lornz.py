@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lorenz curve coordinates. 'Knowledge itself is power. -- Bacon'"""
 from __future__ import annotations
 

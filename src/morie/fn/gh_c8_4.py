@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prior mass condition for contraction: Pi(KL ball of radius eps_n) >= exp(-n*eps_n^2)."""
 import numpy as np
 from ._richresult import RichResult

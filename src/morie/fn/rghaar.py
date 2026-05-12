@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Haar wavelet transform (simplest orthogonal wavelet)."""
 import numpy as np
 from ._richresult import RichResult

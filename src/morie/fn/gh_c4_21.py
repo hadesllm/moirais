@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Invariant Dirichlet process: DP prior invariant under group transformations."""
 import numpy as np
 from ._richresult import RichResult

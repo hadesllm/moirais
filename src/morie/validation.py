@@ -392,7 +392,7 @@ def cross_validate(
         Cross-validation strategy:
         ``"kfold"``, ``"stratified_kfold"``, ``"grouped_kfold"``,
         ``"loo"``, ``"monte_carlo"``, ``"time_series"``,
-        ``"nested"`` (outer only — see :func:`nested_cross_validate`).
+        ``"nested"`` (outer only -- see :func:`nested_cross_validate`).
     n_folds : int
         Number of folds (ignored for LOO).
     n_repeats : int

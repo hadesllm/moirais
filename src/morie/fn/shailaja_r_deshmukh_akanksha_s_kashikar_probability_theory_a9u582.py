@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_9_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Hence if we takean = 0 and bn = n, then V ar((Sn − an)/bn) → 0 and
+    Formula: Hence if we takean = 0 and bn = n, then V ar((Sn − an)/bn) -> 0 and
 
     Parameters
     ----------

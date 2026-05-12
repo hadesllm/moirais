@@ -8,7 +8,7 @@ __all__ = ["statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1
 
 
 def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1488(x):
-    """Errors using inadequate data are much less than those using no data at all. — Charles Babbage"""
+    """Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Marginal integration estimator for additive model components."""
 import numpy as np
 from ._richresult import RichResult

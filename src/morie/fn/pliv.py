@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partially Linear IV (PLIV) for LATE via DoubleML or 2SLS fallback."""
 
 import warnings

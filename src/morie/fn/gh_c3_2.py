@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Construction of prior on measures via stochastic process with consistent marginals."""
 import numpy as np
 from ._richresult import RichResult

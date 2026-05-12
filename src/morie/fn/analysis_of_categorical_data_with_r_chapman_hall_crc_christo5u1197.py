@@ -11,7 +11,7 @@ def analysis_of_categorical_data_with_r_chapman_hall_crc_christo_chapter_5_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: easy to compute—simply set the lower confidence limit at theα/2 quantile of the simulated variance-component estimates and the upper confidence limit at the1−α/2 quantile
+    Formula: easy to compute--simply set the lower confidence limit at theα/2 quantile of the simulated variance-component estimates and the upper confidence limit at the1−α/2 quantile
 
     Parameters
     ----------

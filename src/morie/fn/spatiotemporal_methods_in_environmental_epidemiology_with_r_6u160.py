@@ -11,7 +11,7 @@ def spatiotemporal_methods_in_environmental_epidemiology_with_r__chapter_6_unnum
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: (i) The nugget – when, γ(0) = 0 by definition, γ(0+)≡ limh→0+γ(h) = τ2, this
+    Formula: (i) The nugget – when, γ(0) = 0 by definition, γ(0+)≡ limh->0+γ(h) = τ2, this
 
     Parameters
     ----------

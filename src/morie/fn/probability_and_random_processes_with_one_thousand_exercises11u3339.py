@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Use the martingale convergence theorem to show that, if 0 < ξ < 1, then P( Zn → 0) = ξ and
+    Formula: Use the martingale convergence theorem to show that, if 0 < ξ < 1, then P( Zn -> 0) = ξ and
 
     Parameters
     ----------

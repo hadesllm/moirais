@@ -57,7 +57,7 @@ def wind_chill(
 
     Notes
     -----
-    Quote: "Winter is coming." — generic Stark.
+    Quote: "Winter is coming." -- generic Stark.
     """
     T = np.atleast_1d(np.asarray(T_air_C, dtype=float))
     V = np.atleast_1d(np.asarray(wind_kmh, dtype=float))

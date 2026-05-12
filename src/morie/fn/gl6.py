@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Guttman's Lambda 6 reliability using squared multiple correlations."""
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ import pandas as pd
 def gl6(
     data: pd.DataFrame | np.ndarray,
 ) -> float:
-    """Guttman's Lambda 6 — reliability via squared multiple correlations.
+    """Guttman's Lambda 6 -- reliability via squared multiple correlations.
 
     lambda_6 = 1 - sum(1 - R^2_j) / var_total
 

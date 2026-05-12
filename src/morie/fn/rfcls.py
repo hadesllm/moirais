@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random forest classifier (pure NumPy)."""
 
 from __future__ import annotations
@@ -8,7 +8,7 @@ import numpy as np
 from ._containers import DescriptiveResult
 from ._richresult import RichResult
 
-_QUOTE = "Mastering others is strength; mastering yourself is true power. — Lao Tzu"
+_QUOTE = "Mastering others is strength; mastering yourself is true power. -- Lao Tzu"
 
 
 def rf_classify_bio(

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Magnitude-squared coherence — Rangayyan Ch 4."""
+# morie.fn -- function file (hadesllm/morie)
+"""Magnitude-squared coherence -- Rangayyan Ch 4."""
 from __future__ import annotations
 
 import numpy as np
@@ -70,4 +70,4 @@ def rangayyan_coherence(x, y, fs=1.0, nperseg=None):
 
 
 def cheatsheet():
-    return "rgcoh: magnitude-squared coherence — Rangayyan Ch 4"
+    return "rgcoh: magnitude-squared coherence -- Rangayyan Ch 4"

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Heart rate variability (time-domain) — Rangayyan Ch 6."""
+# morie.fn -- function file (hadesllm/morie)
+"""Heart rate variability (time-domain) -- Rangayyan Ch 6."""
 from __future__ import annotations
 
 import numpy as np
@@ -47,7 +47,7 @@ def rangayyan_hrv(rr_ms):
     warnings = []
     if sdnn < 50:
         warnings.append(
-            "SDNN below 50 ms — reduced overall variability (Task Force 1996 reference)."
+            "SDNN below 50 ms -- reduced overall variability (Task Force 1996 reference)."
         )
     res = RichResult(
         title="Heart Rate Variability (time domain)",
@@ -84,4 +84,4 @@ def rangayyan_hrv(rr_ms):
 
 
 def cheatsheet():
-    return "rghrv: time-domain HRV (SDNN, RMSSD, pNN50) — Rangayyan Ch 6"
+    return "rghrv: time-domain HRV (SDNN, RMSSD, pNN50) -- Rangayyan Ch 6"

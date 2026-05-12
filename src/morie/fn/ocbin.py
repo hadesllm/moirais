@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OC for binary choice data with rating-to-pairwise conversion."""
 
 from __future__ import annotations

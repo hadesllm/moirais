@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Expected Log Predictive Density. 'Pass on what you have learned.'"""
 
 from __future__ import annotations

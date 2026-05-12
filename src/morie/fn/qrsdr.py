@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """QRS complex duration measurement."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Big results require big ambitions. — Heraclitus"
+_QUOTE = "Big results require big ambitions. -- Heraclitus"
 
 
 def qrs_duration(qrs_on, qrs_off, fs: float = 1.0, **kwargs) -> DescriptiveResult:

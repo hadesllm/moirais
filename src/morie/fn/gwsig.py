@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Genome-wide significance threshold (Bonferroni / BH)."""
 
 __all__ = ["gwsig"]

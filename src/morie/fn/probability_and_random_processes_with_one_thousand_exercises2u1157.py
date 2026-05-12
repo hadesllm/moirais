@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] as n → ∞ of Yn = ( 2/( nπ)) ∑n
+    Formula: [EQ] as n -> ∞ of Yn = ( 2/( nπ)) ∑n
 
     Parameters
     ----------

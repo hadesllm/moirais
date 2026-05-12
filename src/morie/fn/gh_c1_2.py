@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Absolute continuity condition for posterior existence in nonparametric Bayes."""
 import numpy as np
 from ._richresult import RichResult

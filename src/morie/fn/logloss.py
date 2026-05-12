@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cross-entropy / log loss with R-style verbose result."""
 
 from typing import Sequence, Union

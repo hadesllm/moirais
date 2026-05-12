@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kaluza-Klein mass spectrum from compactification."""
 
 from __future__ import annotations

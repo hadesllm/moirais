@@ -11,7 +11,7 @@ def bookadvanced_elementsofstatisticallearning_chapter_4_unnumbered_210(x):
     """
     Logistic expression (auto-extracted; see ref).
 
-    Formula: classes k and ℓ—the set where Pr( G = k|X = x) = Pr(G = ℓ|X = x)—is
+    Formula: classes k and ℓ--the set where Pr( G = k|X = x) = Pr(G = ℓ|X = x)--is
 
     Parameters
     ----------

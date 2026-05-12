@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Unfolding analysis for preference data (Coombs 1964; Armstrong Ch 7)."""
 import numpy as np
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["unfolding_analysis", "unfdl"]
 
 
 def unfolding_analysis(x, k: int = 2, n_iter: int = 100, tol: float = 1e-6):
-    """Metric unfolding (Schönemann 1970) — recover (X, Y) such that
+    """Metric unfolding (Schönemann 1970) -- recover (X, Y) such that
     ||x_i - y_j||  is close to the input preference dissimilarity p_{ij}.
 
     Closed-form Schönemann solution treating the preference matrix as
@@ -73,7 +73,7 @@ unfdl = unfolding_analysis
 
 
 def cheatsheet():
-    return "unfdl: Metric unfolding — Schönemann + SMACOF refinement."
+    return "unfdl: Metric unfolding -- Schönemann + SMACOF refinement."
 
 
 # CANONICAL TEST

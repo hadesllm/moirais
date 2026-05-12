@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CJS flow / attrition calculation. 'Real knowledge is to know the extent of one's ignorance. -- Confucius'"""
 from __future__ import annotations
 

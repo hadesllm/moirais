@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kelejian-Prucha LM test for SAC model."""
 
 import numpy as np

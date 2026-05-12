@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gravity retail potential (Huff model)."""
 
 from ._containers import SpatialResult

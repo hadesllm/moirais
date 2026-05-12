@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Minimum-phase correspondent of a signal."""
 import numpy as np
 from ._richresult import RichResult

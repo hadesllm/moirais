@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classical multidimensional scaling (MDS) preserves pairwise distances."""
 import numpy as np
 from ._richresult import RichResult

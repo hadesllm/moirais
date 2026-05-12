@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """He/Kaiming weight initialization for ReLU networks."""
 from __future__ import annotations
 

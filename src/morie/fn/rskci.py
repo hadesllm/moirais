@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Concordance (C-statistic) for risk scores."""
 
 from __future__ import annotations

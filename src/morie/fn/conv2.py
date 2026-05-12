@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""2D convolution (forward pass).
 
 Applies sliding 2D kernel on image.

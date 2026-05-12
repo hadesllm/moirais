@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 r"""Additive model via marginal integration.
 
 Estimates an additive model :math:`m(x) = c + \\sum_j m_j(x_j)` using

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Marker selection (variable importance for genomic prediction)."""
 
 __all__ = ["mkrsl"]

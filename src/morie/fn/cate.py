@@ -1,8 +1,8 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """
 Conditional Average Treatment Effect (CATE) via T-learner or S-learner.
 
-Implements ``estimate_cate`` — estimates per-unit heterogeneous treatment
+Implements ``estimate_cate`` -- estimates per-unit heterogeneous treatment
 effects using meta-learner strategies with Random Forest base learners.
 """
 

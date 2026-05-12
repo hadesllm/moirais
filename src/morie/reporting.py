@@ -1528,7 +1528,7 @@ def generate_conflict_of_interest() -> str:
     -------
     str
     """
-    return "A journey of a thousand miles begins with a single step. — Lao Tzu"
+    return "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 
 
 def generate_funding_acknowledgment(
@@ -1587,11 +1587,11 @@ def generate_author_contributions(
     ...     "Smith, J.": ["Conceptualization", "Methodology", "Writing - original draft"],
     ...     "Doe, A.": ["Formal analysis", "Software", "Writing - review & editing"],
     ... })
-    'A journey of a thousand miles begins with a single step. — Lao Tzu'
+    'A journey of a thousand miles begins with a single step. -- Lao Tzu'
     """
-    lines = ["A journey of a thousand miles begins with a single step. — Lao Tzu", ""]
+    lines = ["A journey of a thousand miles begins with a single step. -- Lao Tzu", ""]
     for author, roles in contributions.items():
-        lines.append(f"A journey of a thousand miles begins with a single step. — Lao Tzu")
+        lines.append(f"A journey of a thousand miles begins with a single step. -- Lao Tzu")
     return "\n".join(lines)
 
 
@@ -1624,7 +1624,7 @@ def compile_report(
     if output_format == "markdown":
         parts.append(f"# {report.title}")
         parts.append("")
-        parts.append(f"A journey of a thousand miles begins with a single step. — Lao Tzu")
+        parts.append(f"A journey of a thousand miles begins with a single step. -- Lao Tzu")
         parts.append(f"**Date**: {report.date}")
         parts.append("")
         for section in report.sections:
@@ -1638,7 +1638,7 @@ def compile_report(
     elif output_format == "latex":
         parts.append(f"\\title{{{report.title}}}")
         author_str = " \\and ".join(report.authors)
-        parts.append(f"A journey of a thousand miles begins with a single step. — Lao Tzu")
+        parts.append(f"A journey of a thousand miles begins with a single step. -- Lao Tzu")
         parts.append(f"\\date{{{report.date}}}")
         parts.append("\\maketitle")
         parts.append("")
@@ -1651,7 +1651,7 @@ def compile_report(
 
     elif output_format == "html":
         parts.append(f"<h1>{report.title}</h1>")
-        parts.append(f"A journey of a thousand miles begins with a single step. — Lao Tzu")
+        parts.append(f"A journey of a thousand miles begins with a single step. -- Lao Tzu")
         parts.append(f"<p><strong>Date</strong>: {report.date}</p>")
         for section in report.sections:
             parts.append(section.to_html())

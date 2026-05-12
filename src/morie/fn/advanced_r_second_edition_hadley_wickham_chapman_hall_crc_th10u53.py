@@ -8,7 +8,7 @@ __all__ = ["advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th_chapter
 
 
 def advanced_r_second_edition_hadley_wickham_chapman_hall_crc_th_chapter_10_unnumbered_53(x, cdf=None):
-    """Statistics is the grammar of science. — Karl Pearson"""
+    """Statistics is the grammar of science. -- Karl Pearson"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

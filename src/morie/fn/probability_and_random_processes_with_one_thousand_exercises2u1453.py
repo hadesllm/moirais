@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: τ i = limn→∞ τ i( n) = Pi( no visit to s ever) = 1 − fis
+    Formula: τ i = limn->∞ τ i( n) = Pi( no visit to s ever) = 1 − fis
 
     Parameters
     ----------

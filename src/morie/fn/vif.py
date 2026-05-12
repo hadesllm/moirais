@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Variance Inflation Factor."""
 
 from typing import Sequence, Union
@@ -26,5 +26,5 @@ def vif(X: Union[Sequence, np.ndarray]) -> np.ndarray:
     return out
 
 
-# Back-compat alias — older imports reference `variance_inflation`.
+# Back-compat alias -- older imports reference `variance_inflation`.
 variance_inflation = vif

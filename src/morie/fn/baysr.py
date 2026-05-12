@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """BayesR: mixture of normals prior with different variance classes."""
 import numpy as np
 from ._richresult import RichResult

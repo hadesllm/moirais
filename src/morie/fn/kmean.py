@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-means clustering via Lloyd's algorithm with k-means++ initialisation."""
 
 from __future__ import annotations

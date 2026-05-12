@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Continuity correction for normal approximation to discrete statistics."""
 import numpy as np
 from scipy import stats

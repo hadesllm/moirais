@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Riemann curvature tensor."""
 
 __all__ = ["riman"]

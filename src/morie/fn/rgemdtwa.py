@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """T-wave alternans detection via EMD-based signal decomposition."""
 import numpy as np
 from ._richresult import RichResult

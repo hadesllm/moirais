@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PatchTST: patch-based channel-independent Transformer for TS."""
 import numpy as np
 from ._richresult import RichResult
@@ -10,7 +10,7 @@ def joseph_patchtst(x, patch_len, stride, transformer):
     """
     PatchTST: patch-based channel-independent Transformer for TS
 
-    Formula: patch series into N patches → each channel indep → Transformer → project to horizon
+    Formula: patch series into N patches -> each channel indep -> Transformer -> project to horizon
 
     Parameters
     ----------

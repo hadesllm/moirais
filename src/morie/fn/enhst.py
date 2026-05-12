@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Entropy from amplitude histogram of a signal."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def entropy_hist(x: np.ndarray, n_bins: int = 50) -> DescriptiveResult:
     """Compute the Shannon entropy derived from the amplitude histogram.
 
-    'Knowledge is power. Guard it well.' — Inquisitor
+    'Knowledge is power. Guard it well.' -- Inquisitor
     """
     from morie._waveform import entropy_from_histogram as _backend
 

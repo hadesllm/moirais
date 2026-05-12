@@ -8,7 +8,7 @@ from ._containers import SpatialResult
 
 
 def lu_decomposition_sim(cov_matrix: np.ndarray) -> SpatialResult:
-    r"""You have power over your mind — not outside events. — Marcus Aurelius"""
+    r"""You have power over your mind -- not outside events. -- Marcus Aurelius"""
     from scipy.linalg import lu
 
     C = np.asarray(cov_matrix, dtype=np.float64)

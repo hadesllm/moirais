@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Interrupted time series analysis (ITS)."""
 
 from __future__ import annotations

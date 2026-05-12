@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Huffman coding (optimal prefix code)."""
 
 __all__ = ["huffc"]

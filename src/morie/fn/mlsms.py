@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MLSMU6 missing data imputation. 'Toguro Punch.' -- Toguro, Yu Yu Hakusho"""
 
 from __future__ import annotations

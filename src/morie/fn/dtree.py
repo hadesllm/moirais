@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CART decision tree classifier (pure NumPy, Gini splitting)."""
 
 from __future__ import annotations
@@ -8,7 +8,7 @@ import numpy as np
 from ._containers import DescriptiveResult
 from ._richresult import RichResult
 
-_QUOTE = "The only true wisdom is in knowing you know nothing. — Socrates"
+_QUOTE = "The only true wisdom is in knowing you know nothing. -- Socrates"
 
 
 def decision_tree(X_train, y_train, X_test, max_depth=5, min_samples_leaf=1, **kwargs) -> DescriptiveResult:

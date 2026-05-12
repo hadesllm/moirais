@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Locally Linear Embedding. 'Luminous beings are we, not this crude matter.'"""
 
 from __future__ import annotations

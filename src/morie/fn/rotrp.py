@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rotary position embedding / RoPE (Su et al. 2021)."""
 from __future__ import annotations
 

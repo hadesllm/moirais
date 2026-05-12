@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_2_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: [EQ] limn→∞ P (An). Suppose Bn = [n < X ≤ n + 1]. Findlimn→∞ P (Bn).
+    Formula: [EQ] limn->∞ P (An). Suppose Bn = [n < X ≤ n + 1]. Findlimn->∞ P (Bn).
 
     Parameters
     ----------

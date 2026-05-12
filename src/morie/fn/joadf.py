@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Augmented Dickey-Fuller test for unit-root stationarity."""
 import numpy as np
 from scipy import stats

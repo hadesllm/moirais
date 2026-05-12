@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Alternative formula for H statistic in terms of rank sums R_i."""
 import numpy as np
 from scipy import stats

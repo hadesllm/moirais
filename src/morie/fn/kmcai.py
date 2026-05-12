@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Constitutional AI: critique-and-revise loop using a set of principles."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hellinger distance: dH(P,Q)^2 = 1/2 integral (sqrt(p)-sqrt(q))^2."""
 import numpy as np
 from ._richresult import RichResult

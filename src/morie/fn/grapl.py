@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """2D average pooling over kxk windows with stride s."""
 import numpy as np
 from ._richresult import RichResult

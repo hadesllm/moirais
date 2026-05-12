@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 cminc.py - Cumulative incidence function (CIF) via the Aalen-Johansen estimator
 for competing risks data.

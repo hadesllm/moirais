@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Doubly Robust Cross-fitted Targeted Estimator (DR-TMLE).
 
 Combines TMLE targeting with sample-splitting (cross-fitting) to

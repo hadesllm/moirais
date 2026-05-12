@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Confusion matrix: rows = actual, columns = predicted classes."""
 import numpy as np
 from ._richresult import RichResult

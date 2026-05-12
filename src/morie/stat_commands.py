@@ -93,7 +93,7 @@ def _make_stat_handler(mod_name: str, func_name: str) -> Callable:
         sig = inspect.signature(fn)
         params = list(sig.parameters.values())
 
-        # Collect args from parts[1:] — skip the command name
+        # Collect args from parts[1:] -- skip the command name
         args = parts[1:]
 
         # Check if first param expects a DataFrame/array
@@ -335,7 +335,7 @@ def _auto_register(
 
 
 # ---------------------------------------------------------------------------
-# Module registrations — called at module load time
+# Module registrations -- called at module load time
 # ---------------------------------------------------------------------------
 
 
@@ -763,7 +763,7 @@ def _register_all_backend_modules() -> int:
     # 27. investigation.py (3 fns)
     total += _auto_register("investigation", "Investigation")
 
-    # 28. psymet.py (11 fns — short names, ≤6 chars)
+    # 28. psymet.py (11 fns -- short names, ≤6 chars)
     total += _auto_register(
         "psymet",
         "Psychometrics",
@@ -782,7 +782,7 @@ def _register_all_backend_modules() -> int:
         },
     )
 
-    # 29. otis.py (6 fns — correctional/sociolegal)
+    # 29. otis.py (6 fns -- correctional/sociolegal)
     total += _auto_register(
         "otis",
         "Correctional",
@@ -920,7 +920,7 @@ def _register_wrangling() -> int:
                     rest = args[1:]
                     if hasattr(df, op):
                         return getattr(df, op)(*rest, **kwargs)
-                raise ValueError(f"Usage: {cn}(df, ...) — pass a DataFrame as first arg")
+                raise ValueError(f"Usage: {cn}(df, ...) -- pass a DataFrame as first arg")
 
             handler.__name__ = cn
             handler.__doc__ = f"Pandas {cn.replace('wgl_', '')} wrapper"
@@ -1602,7 +1602,7 @@ def _register_compound() -> int:
             def handler(parts: list[str], log: Any, store: Callable) -> None:
                 log.write(f"\n[bold magenta]Compound: {cn}[/bold magenta]")
                 log.write(f"[dim]{d}[/dim]")
-                log.write(f"[dim]Steps: {' → '.join(st)}[/dim]\n")
+                log.write(f"[dim]Steps: {' -> '.join(st)}[/dim]\n")
                 for step_name in st:
                     step_cmd = resolve(step_name)
                     if step_cmd:
@@ -1651,7 +1651,7 @@ def _register_compound() -> int:
 
 
 # ---------------------------------------------------------------------------
-# Initialize — register everything at import time
+# Initialize -- register everything at import time
 # ---------------------------------------------------------------------------
 
 
@@ -1692,7 +1692,7 @@ def _register_fn_shortcuts() -> int:
         "rct": ("fn.rct", "rctrnd", "OTIS", "Restrictive confinement trends"),
         "otd": ("fn.otd", "otdesc", "OTIS", "OTIS descriptive statistics"),
         "oml": ("fn.oml", "otdml", "OTIS", "DML treatment effect on OTIS data"),
-        # Inference — distributions
+        # Inference -- distributions
         "dnorm": ("fn.dnorm", "dnorm", "Distribution", "Normal density"),
         "pnorm": ("fn.pnorm", "pnorm", "Distribution", "Normal CDF"),
         "qnorm": ("fn.qnorm", "qnorm", "Distribution", "Normal quantile"),
@@ -1719,7 +1719,7 @@ def _register_fn_shortcuts() -> int:
         "dunf": ("fn.dunf", "dunif", "Distribution", "Uniform density"),
         "punf": ("fn.punf", "punif", "Distribution", "Uniform CDF"),
         "runf": ("fn.runf", "runif", "Distribution", "Uniform random variates"),
-        # Inference — tests
+        # Inference -- tests
         "t2smp": ("fn.t2smp", "two_sample_t_test", "Test", "Two-sample t-test"),
         "t1smp": ("fn.t1smp", "one_sample_t_test", "Test", "One-sample t-test"),
         "tpair": ("fn.tpair", "paired_t_test", "Test", "Paired t-test"),
@@ -1731,13 +1731,13 @@ def _register_fn_shortcuts() -> int:
         "wilcox": ("fn.wilcox", "wilcoxon_signed_rank_test", "Test", "Wilcoxon signed-rank"),
         "sw": ("fn.sw", "shapiro_wilk_test", "Test", "Shapiro-Wilk normality test"),
         "levene": ("fn.levene", "levene_test", "Test", "Levene homogeneity test"),
-        # Inference — CIs
+        # Inference -- CIs
         "prop_ci": ("fn.prop_ci", "proportion_ci", "CI", "Proportion confidence interval"),
         "rr_ci": ("fn.rr_ci", "rate_ratio_ci", "CI", "Rate ratio CI"),
         "or_ci": ("fn.or_ci", "odds_ratio_ci", "CI", "Odds ratio CI"),
         "rsk_ci": ("fn.rsk_ci", "risk_ratio_ci", "CI", "Risk ratio CI"),
         "rd_ci": ("fn.rd_ci", "risk_difference_ci", "CI", "Risk difference CI"),
-        # Inference — effect sizes
+        # Inference -- effect sizes
         "d": ("fn.d", "cohens_d", "EffectSize", "Cohen's d"),
         "g": ("fn.g", "hedges_g", "EffectSize", "Hedges' g"),
         "eta2": ("fn.eta2", "eta_squared", "EffectSize", "Eta-squared"),
@@ -1747,12 +1747,12 @@ def _register_fn_shortcuts() -> int:
         "pbr": ("fn.pbr", "point_biserial_r", "EffectSize", "Point-biserial r"),
         "tau": ("fn.tau", "kendall_tau", "EffectSize", "Kendall's tau"),
         "rho": ("fn.rho", "spearman_rho", "EffectSize", "Spearman's rho"),
-        # Inference — power
+        # Inference -- power
         "pwr_t": ("fn.pwr_t", "power_t_test", "Power", "Power for t-test"),
         "pwr_p": ("fn.pwr_p", "power_prop_test", "Power", "Power for proportions"),
         "pwr_av": ("fn.pwr_av", "power_anova", "Power", "Power for ANOVA"),
         "n_logit": ("fn.n_logit", "sample_size_logistic", "Power", "Sample size for logistic"),
-        # Inference — other
+        # Inference -- other
         "i_pwr": ("fn.i_pwr", "calculate_interaction_power", "Power", "Interaction power"),
         "boot": ("fn.boot", "bootstrap_ci", "Inference", "Bootstrap confidence interval"),
     }

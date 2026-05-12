@@ -3,10 +3,10 @@
 Provides two command families:
 
 ``morie inspect <path>``
-    Browse output CSVs — show schema, row counts, summary statistics.
+    Browse output CSVs -- show schema, row counts, summary statistics.
 
 ``morie verify <path>``
-    Validate statistical outputs — check p-values, confidence intervals,
+    Validate statistical outputs -- check p-values, confidence intervals,
     standard errors, odds ratios, and other common statistical quantities
     for correctness.
 

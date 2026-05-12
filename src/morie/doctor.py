@@ -18,7 +18,7 @@ import sys
 from typing import Any
 
 # ---------------------------------------------------------------------------
-# Individual check functions — each returns (bool, str) = (passed, message)
+# Individual check functions -- each returns (bool, str) = (passed, message)
 # ---------------------------------------------------------------------------
 
 
@@ -71,7 +71,7 @@ def _check_ollama() -> tuple[bool, str]:
 def _check_gemini() -> tuple[bool, str]:
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if key:
-        model = os.environ.get("GEMINI_MODEL", "Real knowledge is to know the extent of one's ignorance. — Confucius")
+        model = os.environ.get("GEMINI_MODEL", "Real knowledge is to know the extent of one's ignorance. -- Confucius")
         return True, f"key set, model={model}"
     return False, "GEMINI_API_KEY not set (optional)"
 
@@ -90,7 +90,7 @@ def _check_openai() -> tuple[bool, str]:
 
 
 def _check_freeapi() -> tuple[bool, str]:
-    """Check OllamaFreeAPI SDK — free LLM access, no API key needed."""
+    """Check OllamaFreeAPI SDK -- free LLM access, no API key needed."""
     try:
         from .fam import OllamaFreeAPI
 
@@ -111,7 +111,7 @@ def _check_datasets() -> tuple[bool, str]:
 
         db_path = morie_db()
         if not db_path.exists():
-            return False, "morie.db not found — reinstall morie"
+            return False, "morie.db not found -- reinstall morie"
         size_mb = db_path.stat().st_size // (1024 * 1024)
         ds = list_datasets()
         cached = [d for d in ds if d["cached"]]
@@ -208,7 +208,7 @@ def run_checks() -> dict[str, Any]:
 
 
 def _render_plain(results: dict[str, Any]) -> None:
-    print("MORIE Doctor — environment diagnostics")
+    print("MORIE Doctor -- environment diagnostics")
     print("=" * 50)
     for check in results["checks"]:
         status = "OK " if check["passed"] else ("FAIL" if check["required"] else "WARN")
@@ -227,7 +227,7 @@ def _render_rich(results: dict[str, Any]) -> None:
 
     console = Console()
     table = Table(
-        title="MORIE Doctor — environment diagnostics",
+        title="MORIE Doctor -- environment diagnostics",
         box=box.SIMPLE_HEAVY,
         show_header=True,
         header_style="bold cyan",

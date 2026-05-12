@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] Pθ[|ˆθn − X n| < ϵ] ≥ Pθ[ˆθn = X n] = Pθ[X n ≥ 0] = 1 − Φ(−√nθ) → 1
+    Formula: [EQ] Pθ[|ˆθn − X n| < ϵ] ≥ Pθ[ˆθn = X n] = Pθ[X n ≥ 0] = 1 − Φ(−√nθ) -> 1
 
     Parameters
     ----------

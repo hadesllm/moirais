@@ -30,12 +30,12 @@ OPENAI_API_KEY : str
     API key for the official OpenAI API at ``https://api.openai.com``.
 
 Provider priority (auto-detected at runtime):
-    1. Ollama    — local, private, no API key needed
-    2. FreeAPI   — OllamaFreeAPI, free remote models, no API key
-    3. Gemini    — Google AI, generous free tier
-    4. API       — generic OpenAI-compatible (Qwen, GPT-OSS, Groq, etc.)
-    5. OpenAI    — official OpenAI API
-    6. local     — static help text, no network required
+    1. Ollama    -- local, private, no API key needed
+    2. FreeAPI   -- OllamaFreeAPI, free remote models, no API key
+    3. Gemini    -- Google AI, generous free tier
+    4. API       -- generic OpenAI-compatible (Qwen, GPT-OSS, Groq, etc.)
+    5. OpenAI    -- official OpenAI API
+    6. local     -- static help text, no network required
 
 References
 ----------
@@ -68,7 +68,7 @@ logger = logging.getLogger(__name__)
 DEFAULT_OLLAMA_BASE_URL = "http://localhost:11434"
 DEFAULT_OLLAMA_MODEL = ""  # Auto-detected from running Ollama instance
 DEFAULT_FREEAPI_MODEL = "mistral-nemo:custom"
-DEFAULT_GEMINI_MODEL = "He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche"
+DEFAULT_GEMINI_MODEL = "He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"
 DEFAULT_API_MODEL = "google/gemma-3-27b-it"
 DEFAULT_OPENAI_MODEL = "gpt-4o-mini"
 
@@ -137,7 +137,7 @@ _ollama_model_cached: str | None = None
 
 
 def _ollama_model() -> str:
-    """Return the Ollama model to use — auto-detected from the running instance.
+    """Return the Ollama model to use -- auto-detected from the running instance.
 
     Priority:
     1. MORIE_OLLAMA_MODEL env var (explicit override)
@@ -156,7 +156,7 @@ def _ollama_model() -> str:
         _ollama_model_cached = env
         return env
 
-    # 2. Auto-detect from running Ollama — prefer largest perseus:* model
+    # 2. Auto-detect from running Ollama -- prefer largest perseus:* model
     try:
         from .loc import LocalOllama
 
@@ -256,7 +256,7 @@ def _probe_freeapi() -> bool:
         models = client.list_models()
         _freeapi_cached = bool(models)
     except Exception:
-        # Retry once — community servers can be slow to respond
+        # Retry once -- community servers can be slow to respond
         try:
             import time
 
@@ -322,7 +322,7 @@ def detect_available_provider() -> str:
 
 
 def _normalize_size(size: str) -> str:
-    """Normalize '4.3B' → '4.3b', '134.52M' → '135m'."""
+    """Normalize '4.3B' -> '4.3b', '134.52M' -> '135m'."""
     s = size.strip().lower()
     if s.endswith("m"):
         try:
@@ -394,7 +394,7 @@ def list_freeapi_models() -> list[dict[str, str]]:
 
 
 def _build_alias_table() -> dict[str, str]:
-    """Build alias → model_name mapping from vendored JSONs."""
+    """Build alias -> model_name mapping from vendored JSONs."""
     return {m["alias"]: m["model"] for m in list_freeapi_models()}
 
 
@@ -404,7 +404,7 @@ def detect_provider_and_model() -> tuple[str, str]:
     Returns
     -------
     tuple[str, str]
-        ``(provider_key, display_label)`` — e.g. ``("freeapi", "Gemma3:4.3b")``.
+        ``(provider_key, display_label)`` -- e.g. ``("freeapi", "Gemma3:4.3b")``.
     """
     provider = detect_available_provider()
 
@@ -914,7 +914,7 @@ def _request_completion(
 
     headers: dict[str, str] = {"Content-Type": "application/json"}
     if api_key:
-        headers["He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche"] = f"Bearer {api_key}"
+        headers["He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"] = f"Bearer {api_key}"
 
     payload: dict[str, Any] = {
         "model": model,
@@ -1008,7 +1008,7 @@ def _stream_completion(
     url = f"{base_url}/v1/chat/completions"
     headers: dict[str, str] = {"Content-Type": "application/json"}
     if api_key:
-        headers["He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche"] = f"Bearer {api_key}"
+        headers["He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"] = f"Bearer {api_key}"
 
     payload: dict[str, Any] = {
         "model": model,
@@ -1065,7 +1065,7 @@ def _messages_to_prompt(messages: list[dict[str, str]]) -> str:
     return "\n\n".join(parts)
 
 
-_FREEAPI_TIMEOUT = 180.0  # seconds — generous for free community servers
+_FREEAPI_TIMEOUT = 180.0  # seconds -- generous for free community servers
 
 
 def _strip_think_blocks(text: str) -> str:
@@ -1102,7 +1102,7 @@ def _freeapi_completion(
         resp = client.chat(prompt=prompt, model=model or _freeapi_model(), num_predict=10000)
         return str(resp) if resp else ""
 
-    # NOTE: Do NOT use ``with`` — ThreadPoolExecutor.__exit__ calls
+    # NOTE: Do NOT use ``with`` -- ThreadPoolExecutor.__exit__ calls
     # shutdown(wait=True) which blocks until the hung thread finishes,
     # completely defeating the timeout.
     pool = concurrent.futures.ThreadPoolExecutor(max_workers=1)
@@ -1192,7 +1192,7 @@ To enable AI-assisted mode, use any of the following:
 
   3. Set a Gemini API key (free tier available at aistudio.google.com):
        export GEMINI_API_KEY="your-key-here"
-       export GEMINI_MODEL="He who would learn to fly one day must first learn to stand and walk. — Friedrich Nietzsche"   # optional, this is the default
+       export GEMINI_MODEL="He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"   # optional, this is the default
 
   4. Use an OpenAI-compatible endpoint (Qwen, GPT-OSS, Mistral, Groq):
        export LLM_API_BASE_URL="https://openrouter.ai/api/v1"

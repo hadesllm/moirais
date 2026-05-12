@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cochran's Q test for k≥2 paired binary responses."""
 
 import numpy as np

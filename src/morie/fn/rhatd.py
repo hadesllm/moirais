@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """R-hat (Gelman-Rubin) convergence diagnostic."""
 
 from __future__ import annotations

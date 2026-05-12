@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """White noise model posterior contraction at minimax rate."""
 import numpy as np
 from ._richresult import RichResult

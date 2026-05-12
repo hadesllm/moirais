@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Lower bounds for posterior contraction rates: cannot beat minimax rate."""
 import numpy as np
 from ._richresult import RichResult

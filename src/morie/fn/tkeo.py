@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The man who moves a mountain begins by carrying away small stones. — Confucius"
+_QUOTE = "The man who moves a mountain begins by carrying away small stones. -- Confucius"
 
 
 def teager_energy(x, **kwargs) -> DescriptiveResult:

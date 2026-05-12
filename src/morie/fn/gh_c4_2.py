@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean of DP: E[G(A)] = G0(A) for all measurable A."""
 import numpy as np
 from ._richresult import RichResult

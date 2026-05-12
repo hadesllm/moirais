@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 Group Average Treatment Effect (GATE) via AIPW within strata.
 
-Implements ``estimate_gate`` — partitions data by a grouping variable and
+Implements ``estimate_gate`` -- partitions data by a grouping variable and
 estimates the ATE within each group using the AIPW doubly-robust estimator.
 """
 

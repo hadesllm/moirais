@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Einstein field equation tensor (G_uv = 8*pi*G/c^4 * T_uv)."""
 
 __all__ = ["einsf"]

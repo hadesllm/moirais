@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bias-variance decomposition of expected test error."""
 import numpy as np
 from scipy import stats

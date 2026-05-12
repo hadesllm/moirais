@@ -1,4 +1,4 @@
-"""morie.tps_spatial_advanced — heavyweight spatial statistics for TPS.
+"""morie.tps_spatial_advanced -- heavyweight spatial statistics for TPS.
 
 Builds on morie.tps_spatial (Moran's I global, LISA, KDE) with:
 
@@ -52,7 +52,7 @@ def _haversine_km(lat1: float, lon1: float,
 def ripley_k(df: pd.DataFrame, *, ds_name: str = "?",
              radii_km: list[float] | None = None,
              max_n: int = 5000) -> RichResult:
-    """Ripley's K function — for each radius r, expected number of
+    """Ripley's K function -- for each radius r, expected number of
     other points within r of a typical point, normalised by intensity.
 
     For a homogeneous Poisson process K(r) = π r²; values above this
@@ -61,7 +61,7 @@ def ripley_k(df: pd.DataFrame, *, ds_name: str = "?",
     radii_km = radii_km or [0.25, 0.5, 1.0, 2.0, 3.0, 5.0]
     coords = _coords(df)
     if coords.shape[0] < 50:
-        return RichResult(title=f"Ripley's K — {ds_name}",
+        return RichResult(title=f"Ripley's K -- {ds_name}",
                           warnings=[f"only {coords.shape[0]} geocoded"])
     # Subsample if huge
     if coords.shape[0] > max_n:
@@ -70,7 +70,7 @@ def ripley_k(df: pd.DataFrame, *, ds_name: str = "?",
         coords = coords[idx]
     n = coords.shape[0]
 
-    # Bounding box → area for intensity (approx, equal-area projection)
+    # Bounding box -> area for intensity (approx, equal-area projection)
     lat_mid = float(coords[:, 0].mean())
     km_per_deg_lat = 111.0
     km_per_deg_lon = 111.0 * math.cos(math.radians(lat_mid))
@@ -103,7 +103,7 @@ def ripley_k(df: pd.DataFrame, *, ds_name: str = "?",
             ("regular" if K_csr * 0.95 > K else "≈ CSR"),
         ])
     return RichResult(
-        title=f"Ripley's K — {ds_name}",
+        title=f"Ripley's K -- {ds_name}",
         summary_lines=[
             ("Points used", n),
             ("Bounding-box area (km²)", round(area_km2, 1)),
@@ -137,7 +137,7 @@ def getis_ord_g_star(df: pd.DataFrame, *, ds_name: str = "?",
         Gi* < -1.96 = significant cold spot
     """
     if hood_col not in df.columns or "LAT_WGS84" not in df.columns:
-        return RichResult(title=f"Getis-Ord Gi* — {ds_name}",
+        return RichResult(title=f"Getis-Ord Gi* -- {ds_name}",
                           warnings=[f"{hood_col} or LAT_WGS84 missing"])
     counts = df[hood_col].dropna()
     counts = counts[counts.astype(str).str.upper() != "NSA"]
@@ -147,7 +147,7 @@ def getis_ord_g_star(df: pd.DataFrame, *, ds_name: str = "?",
     common = counts.index.intersection(cents.index)
     counts = counts.loc[common]; cents = cents.loc[common]
     if counts.size < 5:
-        return RichResult(title=f"Getis-Ord Gi* — {ds_name}",
+        return RichResult(title=f"Getis-Ord Gi* -- {ds_name}",
                           warnings=[f"only {counts.size} valid hoods"])
 
     coords = cents.values
@@ -183,7 +183,7 @@ def getis_ord_g_star(df: pd.DataFrame, *, ds_name: str = "?",
                         "z_score": Gi}).sort_values("z_score",
                                                       ascending=False)
     return RichResult(
-        title=f"Getis-Ord Gi* — {ds_name}",
+        title=f"Getis-Ord Gi* -- {ds_name}",
         summary_lines=[
             ("Spatial unit", hood_col),
             ("Neighbourhoods", n_x),
@@ -221,11 +221,11 @@ def dbscan_clusters(df: pd.DataFrame, *, ds_name: str = "?",
     try:
         from sklearn.cluster import DBSCAN
     except ImportError:
-        return RichResult(title=f"DBSCAN — {ds_name}",
+        return RichResult(title=f"DBSCAN -- {ds_name}",
                           warnings=["scikit-learn not installed"])
     coords = _coords(df)
     if coords.shape[0] < 50:
-        return RichResult(title=f"DBSCAN — {ds_name}",
+        return RichResult(title=f"DBSCAN -- {ds_name}",
                           warnings=[f"only {coords.shape[0]} geocoded"])
     if coords.shape[0] > max_n:
         rng = np.random.default_rng(42)
@@ -254,7 +254,7 @@ def dbscan_clusters(df: pd.DataFrame, *, ds_name: str = "?",
         ])
     rows.sort(key=lambda r: -r[1])
     return RichResult(
-        title=f"DBSCAN density clusters — {ds_name}",
+        title=f"DBSCAN density clusters -- {ds_name}",
         summary_lines=[
             ("Points clustered", coords.shape[0]),
             ("eps (km)", eps_km),
@@ -318,7 +318,7 @@ def polygon_morans_i(*, ds_name: str = "NeighbourhoodCrimeRates",
     val_col = f"{value_col_prefix}_{year}"
     if val_col not in df.columns:
         return RichResult(
-            title=f"Polygon Moran's I — {ds_name}",
+            title=f"Polygon Moran's I -- {ds_name}",
             warnings=[f"{val_col} not in GeoJSON; available cols start with: "
                       + ", ".join(c for c in df.columns
                                    if value_col_prefix in c)[:200]],
@@ -336,7 +336,7 @@ def polygon_morans_i(*, ds_name: str = "NeighbourhoodCrimeRates",
             hoods.append(str(row.get("HOOD_ID") or row.get("AREA_NAME") or "?"))
     if len(cents) < 5:
         return RichResult(
-            title=f"Polygon Moran's I — {ds_name}",
+            title=f"Polygon Moran's I -- {ds_name}",
             warnings=[f"only {len(cents)} usable centroid+value pairs"],
         )
     cents = np.array(cents)  # cols: lon, lat
@@ -358,7 +358,7 @@ def polygon_morans_i(*, ds_name: str = "NeighbourhoodCrimeRates",
     z = x - x.mean()
     S0 = W.sum()
     if S0 == 0 or z.dot(z) == 0:
-        return RichResult(title=f"Polygon Moran's I — {ds_name}",
+        return RichResult(title=f"Polygon Moran's I -- {ds_name}",
                           warnings=["S0 or var = 0"])
     I = (n / S0) * (z.dot(W.dot(z))) / z.dot(z)
     expected_I = -1.0 / (n - 1)
@@ -373,7 +373,7 @@ def polygon_morans_i(*, ds_name: str = "NeighbourhoodCrimeRates",
     p = 2 * (1 - sps.norm.cdf(abs(z_I))) if math.isfinite(z_I) else float("nan")
 
     return RichResult(
-        title=f"Polygon Moran's I — {ds_name} ({val_col})",
+        title=f"Polygon Moran's I -- {ds_name} ({val_col})",
         summary_lines=[
             ("Variable", val_col),
             ("Year", year),
@@ -429,7 +429,7 @@ def bivariate_moran(*, ds_name: str = "NeighbourhoodCrimeRates",
     missing = [c for c in (x_col, y_col) if c not in df.columns]
     if missing:
         return RichResult(
-            title=f"Bivariate Moran's I — {ds_name}",
+            title=f"Bivariate Moran's I -- {ds_name}",
             warnings=[f"missing column(s): {missing}"],
         )
     cents, xs, ys = [], [], []
@@ -443,7 +443,7 @@ def bivariate_moran(*, ds_name: str = "NeighbourhoodCrimeRates",
     n = len(cents)
     if n < 5:
         return RichResult(
-            title=f"Bivariate Moran's I — {ds_name}",
+            title=f"Bivariate Moran's I -- {ds_name}",
             warnings=[f"only {n} valid (centroid, x, y) triples; need >=5"],
         )
     coords = np.asarray(cents, dtype=float)
@@ -468,7 +468,7 @@ def bivariate_moran(*, ds_name: str = "NeighbourhoodCrimeRates",
     norm = math.sqrt(float((zx ** 2).sum() * (zy ** 2).sum()))
     I_xy = (n / S0) * cross / norm if norm > 0 else float("nan")
     return RichResult(
-        title=f"Bivariate Moran's I — {x_col} vs {y_col}",
+        title=f"Bivariate Moran's I -- {x_col} vs {y_col}",
         summary_lines=[
             ("X column", x_col),
             ("Y column", y_col),
@@ -526,7 +526,7 @@ def moran_sweep_heatmap(*, ds_name: str = "NeighbourhoodCrimeRates",
             except Exception:
                 matrix[i, j] = np.nan
     return RichResult(
-        title=f"Moran's I sweep — {len(category_prefixes)} categories x {len(years)} years",
+        title=f"Moran's I sweep -- {len(category_prefixes)} categories x {len(years)} years",
         summary_lines=[
             ("Categories", len(category_prefixes)),
             ("Years", f"{years[0]}--{years[-1]}"),

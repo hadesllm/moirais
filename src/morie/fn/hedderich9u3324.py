@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_3324(x):
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: [EQ] (yij−µ−αi)2→min (8.45)
+    Formula: [EQ] (yij−µ−αi)2->min (8.45)
 
     Parameters
     ----------

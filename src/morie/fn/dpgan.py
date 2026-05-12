@@ -1,4 +1,4 @@
-"""DP-GAN — train discriminator with DP-SGD."""
+"""DP-GAN -- train discriminator with DP-SGD."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["dp_gan"]
 
 def dp_gan(G, D, C, sigma):
     """
-    DP-GAN — train discriminator with DP-SGD
+    DP-GAN -- train discriminator with DP-SGD
 
     Formula: DP-SGD on D; G learns from noisy D
 
@@ -36,8 +36,8 @@ def dp_gan(G, D, C, sigma):
     n = len(G)
     result = float(np.mean(G))
     se = float(np.std(G, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "DP-GAN — train discriminator with DP-SGD"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "DP-GAN -- train discriminator with DP-SGD"})
 
 
 def cheatsheet():
-    return "dpgan: DP-GAN — train discriminator with DP-SGD"
+    return "dpgan: DP-GAN -- train discriminator with DP-SGD"

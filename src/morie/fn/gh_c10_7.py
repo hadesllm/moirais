@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Density estimation via finite random series prior: log f = sum beta_k phi_k."""
 import numpy as np
 from ._richresult import RichResult

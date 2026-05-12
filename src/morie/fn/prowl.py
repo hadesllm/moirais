@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Anomaly detection (isolation-forest style). 'Logic is the ultimate weapon.' -- Prowl"""
 
 from __future__ import annotations

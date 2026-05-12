@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cohen's kappa coefficient for classification agreement."""
 import numpy as np
 from ._richresult import RichResult

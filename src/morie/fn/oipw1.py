@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IPW for placement effect in OTIS correctional data."""
 
 from __future__ import annotations

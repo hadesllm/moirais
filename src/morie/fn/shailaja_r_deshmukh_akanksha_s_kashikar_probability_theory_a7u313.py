@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: [EQ] P [|Xn| > ϵ] = 0 ∀ n ≤ n0 and ∀ n > n 0, P [|Xn| > ϵ] = 1 /n → 0 as
+    Formula: [EQ] P [|Xn| > ϵ] = 0 ∀ n ≤ n0 and ∀ n > n 0, P [|Xn| > ϵ] = 1 /n -> 0 as
 
     Parameters
     ----------

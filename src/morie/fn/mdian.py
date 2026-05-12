@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mediation analysis: decompose total effect into direct and indirect."""
 import numpy as np
 from ._richresult import RichResult

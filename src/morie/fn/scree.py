@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Scree plot data for MDS dimensionality. 'Hollow Purple.' -- Gojo, Jujutsu Kaisen"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Vision Transformer patch embedding: flatten patches, project to d_model."""
 import numpy as np
 from ._richresult import RichResult

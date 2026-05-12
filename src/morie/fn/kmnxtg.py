@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """NExT-GPT any-to-any: modality encoders -> LLM -> modality-specific decoders."""
 import numpy as np
 from ._richresult import RichResult

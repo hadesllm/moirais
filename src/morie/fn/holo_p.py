@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pair plot (scatter matrix) visualization."""
 
 from __future__ import annotations

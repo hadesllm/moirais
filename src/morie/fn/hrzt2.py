@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Local Average Treatment Effect (LATE) via IV Wald estimator
 (Imbens-Angrist 1994; Horowitz 2009, Ch 9).
 
@@ -24,7 +24,7 @@ def horowitz_local_ate(x, y, z, treatment):
     ----------
     x : array-like or None
         Optional covariates (currently treated as informational only;
-        the bare Wald estimator does not condition on X — partial-out
+        the bare Wald estimator does not condition on X -- partial-out
         could be added in future).
     y : array-like
         Outcome.
@@ -59,7 +59,7 @@ def horowitz_local_ate(x, y, z, treatment):
         return RichResult(payload={"estimate": np.nan, "se": np.nan, "n": n,
                                    "method": "LATE (weak instrument: D̄ does not vary with Z)"})
     late = num / den
-    # Delta-method SE — treat Ȳ_z, D̄_z as 4 independent sample means
+    # Delta-method SE -- treat Ȳ_z, D̄_z as 4 independent sample means
     var_y1 = y[z_bin > 0.5].var(ddof=1) / n1
     var_y0 = y[z_bin < 0.5].var(ddof=1) / n0
     var_d1 = D[z_bin > 0.5].var(ddof=1) / n1

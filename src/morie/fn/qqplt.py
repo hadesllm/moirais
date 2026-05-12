@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Quantile-quantile plot data for distribution comparison."""
 
 import numpy as np

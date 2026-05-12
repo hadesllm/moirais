@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Walsh-average confidence interval for median from Wilcoxon signed-rank test."""
 import numpy as np
 from scipy import stats

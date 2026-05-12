@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cumulative hazard from Kaplan-Meier survival estimates."""
 
 import numpy as np

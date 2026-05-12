@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bracketing entropy of a function class."""
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ def brent(
     :math:`\varepsilon`-balls are needed to cover the observed function
     evaluations in :math:`L_2` norm.
 
-    :param data: Matrix of shape (n_functions, n_points) — each row is a
+    :param data: Matrix of shape (n_functions, n_points) -- each row is a
         function evaluated at n_points.
     :param epsilons: Array of epsilon values. If None, auto-generated.
     :param n_eps: Number of epsilon values if auto-generated. Default 20.

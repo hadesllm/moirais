@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Lead blood-level → IQ loss dose-response (Lanphear 2005 pooled)."""
+# morie.fn -- function file (hadesllm/morie)
+"""Lead blood-level -> IQ loss dose-response (Lanphear 2005 pooled)."""
 
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ from ._containers import DescriptiveResult
 #
 # We use the pooled central estimate a = -2.7 for reproducibility.
 # Users needing the confidence interval: Lanphear reports −6.2
-# (95% CI −8.7 to −3.6) for the 1→10 contrast; this translates to
+# (95% CI −8.7 to −3.6) for the 1->10 contrast; this translates to
 # a in (-3.78, -1.56).
 _LANPHEAR_POOLED_A = -2.7
 _LANPHEAR_95CI_A = (-3.78, -1.56)
@@ -38,7 +38,7 @@ def lead_iq_loss(
 
     Uses the Lanphear et al. 2005 pooled log-linear concentration-
     response model (7 international cohorts, 1,333 children). The
-    headline result: no safe level detected — effects per µg/dL are
+    headline result: no safe level detected -- effects per µg/dL are
     *largest* at the lowest exposures (sub-linear, super-log-sub-linear
     curvature per the figure).
 

@@ -3,12 +3,12 @@ Treatment effect estimations (ATE, ATT, ATU, LATE, G-computation).
 
 This module provides:
 
-1. :func:`estimate_ate` — IPW-weighted OLS ATE (existing, preserved).
-2. :func:`estimate_plr` — Partially Linear Regression via DoubleML.
-3. :func:`estimate_pliv` — Partially Linear IV (LATE) via DoubleML or 2SLS.
-4. :func:`estimate_ate_gcomputation` — G-computation (outcome regression) ATE.
-5. :func:`sensitivity_rosenbaum` — Rosenbaum bounds for hidden confounding.
-6. :func:`e_value` — E-value for unmeasured confounding (VanderWeele & Ding, 2017).
+1. :func:`estimate_ate` -- IPW-weighted OLS ATE (existing, preserved).
+2. :func:`estimate_plr` -- Partially Linear Regression via DoubleML.
+3. :func:`estimate_pliv` -- Partially Linear IV (LATE) via DoubleML or 2SLS.
+4. :func:`estimate_ate_gcomputation` -- G-computation (outcome regression) ATE.
+5. :func:`sensitivity_rosenbaum` -- Rosenbaum bounds for hidden confounding.
+6. :func:`e_value` -- E-value for unmeasured confounding (VanderWeele & Ding, 2017).
 
 References
 ----------
@@ -58,7 +58,7 @@ def estimate_ate(data: pd.DataFrame, outcome: str, treatment: str, weights_col: 
 
 
 # ===========================================================================
-# SECTION 2 — DOUBLEML PARTIALLY LINEAR REGRESSION (PLR)
+# SECTION 2 -- DOUBLEML PARTIALLY LINEAR REGRESSION (PLR)
 # ===========================================================================
 
 
@@ -157,7 +157,7 @@ def estimate_plr(
 
 
 # ===========================================================================
-# SECTION 3 — DOUBLEML PARTIALLY LINEAR IV (PLIV)
+# SECTION 3 -- DOUBLEML PARTIALLY LINEAR IV (PLIV)
 # ===========================================================================
 
 
@@ -280,7 +280,7 @@ def estimate_pliv(
 
 
 # ===========================================================================
-# SECTION 4 — G-COMPUTATION (OUTCOME REGRESSION) ATE
+# SECTION 4 -- G-COMPUTATION (OUTCOME REGRESSION) ATE
 # ===========================================================================
 
 
@@ -410,7 +410,7 @@ def estimate_ate_gcomputation(
 
 
 # ===========================================================================
-# SECTION 5 — ROSENBAUM BOUNDS
+# SECTION 5 -- ROSENBAUM BOUNDS
 # ===========================================================================
 
 
@@ -530,7 +530,7 @@ def sensitivity_rosenbaum(
 
 
 # ===========================================================================
-# SECTION 6 — E-VALUE
+# SECTION 6 -- E-VALUE
 # ===========================================================================
 
 

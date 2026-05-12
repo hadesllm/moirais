@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """OC SVM-like separating hyperplane."""
 
 from __future__ import annotations

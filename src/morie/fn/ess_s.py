@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kish effective sample size from survey weights.
 
 'In a dark place we find ourselves, and a little more knowledge lights our way.'."""

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chi-square approximation for Kruskal-Wallis H statistic."""
 import numpy as np
 from scipy import stats

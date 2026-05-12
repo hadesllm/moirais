@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Full measurement invariance ladder by gender."""
 
 from __future__ import annotations

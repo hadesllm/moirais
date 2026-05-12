@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Proportional reduction in error statistic."""
 
 from __future__ import annotations

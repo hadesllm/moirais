@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generalised Extreme Value (GEV) distribution fit (Coles 2001).
 
 ML-fits the three-parameter GEV
@@ -86,4 +86,4 @@ def extreme_value_gev(x):
 
 
 def cheatsheet():
-    return "extvm(x): GEV ML fit — returns mu, sigma, xi + observed SEs."
+    return "extvm(x): GEV ML fit -- returns mu, sigma, xi + observed SEs."

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Deviance Information Criterion (DIC)."""
 
 from __future__ import annotations

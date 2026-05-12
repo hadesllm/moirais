@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Estimated Blood Alcohol Concentration (eBAC) via Widmark formula."""
 
 from __future__ import annotations

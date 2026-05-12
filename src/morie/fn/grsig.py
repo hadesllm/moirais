@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Logistic/sigmoid activation used as link in binary logistic regression."""
 import numpy as np
 from ._richresult import RichResult

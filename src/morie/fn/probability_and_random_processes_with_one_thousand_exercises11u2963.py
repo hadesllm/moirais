@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: where G is the distribution function of Un = Sn − Xn+ 1. Thus the limit F( x) = limn→∞ Fn( x)
+    Formula: where G is the distribution function of Un = Sn − Xn+ 1. Thus the limit F( x) = limn->∞ Fn( x)
 
     Parameters
     ----------

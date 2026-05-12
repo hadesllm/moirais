@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Response surface methodology (2nd-order polynomial fit)."""
 
 from __future__ import annotations

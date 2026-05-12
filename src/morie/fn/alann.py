@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Approximate nearest neighbor search (HNSW-style): navigable-small-world greedy descent."""
 import numpy as np
 from ._richresult import RichResult

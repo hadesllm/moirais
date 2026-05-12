@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ferguson-Sethuraman approximation of DP by finite stick-breaking truncation."""
 import numpy as np
 from ._richresult import RichResult

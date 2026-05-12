@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random Forest classifier robustness evaluation."""
 
 from __future__ import annotations

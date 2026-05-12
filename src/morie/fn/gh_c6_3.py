@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Doob's theorem: posterior consistent a.s. prior for identifiable models."""
 import numpy as np
 from ._richresult import RichResult

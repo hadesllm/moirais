@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Factor Analysis via principal axis factoring.
 
 Performs factor analysis using principal axis factoring (PAF) with iterative

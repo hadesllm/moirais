@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Learning-rate heuristic: start with LR finder, use 1/10 of divergence point."""
 import numpy as np
 from ._richresult import RichResult

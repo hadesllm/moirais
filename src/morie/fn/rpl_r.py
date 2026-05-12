@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Placement counts filtered to a single region."""
 
 from __future__ import annotations

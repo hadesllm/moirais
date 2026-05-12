@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Needleman-Wunsch global sequence alignment. 'He who fights with monsters should be careful lest he thereby become a monster. — Friedrich Nietzsche' -- Chirrut Imwe"""
+# morie.fn -- function file (hadesllm/morie)
+"""Needleman-Wunsch global sequence alignment. 'He who fights with monsters should be careful lest he thereby become a monster. -- Friedrich Nietzsche' -- Chirrut Imwe"""
 
 from __future__ import annotations
 
@@ -101,4 +101,4 @@ short = needleman_wunsch
 
 
 def cheatsheet() -> str:
-    return "Mastering others is strength; mastering yourself is true power. — Lao Tzu"
+    return "Mastering others is strength; mastering yourself is true power. -- Lao Tzu"

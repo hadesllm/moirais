@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayes factor (BIC approximation) with R-style verbose result."""
 
 import math

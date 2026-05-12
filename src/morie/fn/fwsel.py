@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sequential forward feature selection."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The road up and the road down are the same thing. — Heraclitus"
+_QUOTE = "The road up and the road down are the same thing. -- Heraclitus"
 
 
 def forward_select(X, y, max_features=None, cv=3, **kwargs) -> DescriptiveResult:

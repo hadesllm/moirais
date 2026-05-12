@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_5_unnum
     """
     CentralTendency expression (auto-extracted; see ref).
 
-    Formula: a.s.− − → X whenever ∑
+    Formula: a.s.− − -> X whenever ∑
 
     Parameters
     ----------

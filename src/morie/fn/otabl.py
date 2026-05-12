@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Table 1 (baseline characteristics by group) for OTIS data."""
 
 from __future__ import annotations

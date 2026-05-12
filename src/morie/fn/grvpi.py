@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """State value function V^pi(s) = E_pi[G_t | S_t = s]."""
 import numpy as np
 from ._richresult import RichResult

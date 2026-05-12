@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cross-encoder re-ranking: joint query+doc scored by a transformer."""
 import numpy as np
 from ._richresult import RichResult

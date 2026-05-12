@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """F1 score: harmonic mean of precision and recall."""
 import numpy as np
 from ._richresult import RichResult

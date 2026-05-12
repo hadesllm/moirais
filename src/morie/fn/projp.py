@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Projection Pursuit (maximise non-Gaussianity)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""KV-cache for autoregressive generation.
 
 Stores key/value tensors to avoid recomputation.

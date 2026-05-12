@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ring-LWE key generation in Z_q[x]/(x^n+1)."""
 
 from __future__ import annotations

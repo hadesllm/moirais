@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Asymptotic relative efficiency: limiting ratio of sample sizes for equal power."""
 import numpy as np
 from ._richresult import RichResult

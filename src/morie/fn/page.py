@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Page's L trend test for ordered alternatives."""
 
 from typing import Union

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Statistics is the grammar of science. — Karl Pearson"""
+# morie.fn -- function file (hadesllm/morie)
+"""Statistics is the grammar of science. -- Karl Pearson"""
 
 from __future__ import annotations
 
@@ -32,4 +32,4 @@ mdslb = label_mds_points
 
 
 def cheatsheet() -> str:
-    return "Statistics is the grammar of science. — Karl Pearson"
+    return "Statistics is the grammar of science. -- Karl Pearson"

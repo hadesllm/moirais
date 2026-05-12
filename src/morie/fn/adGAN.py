@@ -10,7 +10,7 @@ def adversarial_anomaly(x, D):
     """
     GAN trained to detect anomalies
 
-    Formula: discriminator score → anomaly
+    Formula: discriminator score -> anomaly
 
     Parameters
     ----------

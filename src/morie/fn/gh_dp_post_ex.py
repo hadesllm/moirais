@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exact posterior predictive for DP: closed-form Polya urn for density estimation."""
 import numpy as np
 from ._richresult import RichResult

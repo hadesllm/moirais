@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Feller approximation via Bernstein polynomials for distribution functions."""
 import numpy as np
 from ._richresult import RichResult

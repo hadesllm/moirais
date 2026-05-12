@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Constraint satisfaction solver. 'No one gets through.' -- Barricade"""
 
 from __future__ import annotations

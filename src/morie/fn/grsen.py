@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SENet channel-wise Squeeze-and-Excitation attention."""
 import numpy as np
 from ._richresult import RichResult

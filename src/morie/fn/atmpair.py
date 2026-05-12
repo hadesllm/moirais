@@ -10,7 +10,7 @@ def atom_pair_fp(smiles, n_bits, max_dist):
     """
     Atom-pair fingerprint
 
-    Formula: hash(atom_i, atom_j, topological_distance) → bit
+    Formula: hash(atom_i, atom_j, topological_distance) -> bit
 
     Parameters
     ----------

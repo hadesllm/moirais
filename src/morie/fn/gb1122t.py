@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kendall tau with ties: correction for concordance/discordance counts."""
 import numpy as np
 from ._richresult import RichResult

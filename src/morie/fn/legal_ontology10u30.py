@@ -11,7 +11,7 @@ def legal_ontology_chapter_10_unnumbered_30(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: <rdf:Description rdf:about="Hope in reality is the worst of all evils because it prolongs the torments of man. — Friedrich Nietzsche">
+    Formula: <rdf:Description rdf:about="Hope in reality is the worst of all evils because it prolongs the torments of man. -- Friedrich Nietzsche">
 
     Parameters
     ----------

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""CNN for genomic prediction — NumPy Conv1D + dense, deterministic."""
+# morie.fn -- function file (hadesllm/morie)
+"""CNN for genomic prediction -- NumPy Conv1D + dense, deterministic."""
 from __future__ import annotations
 
 import numpy as np

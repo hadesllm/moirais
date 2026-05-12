@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DataLoader for mini-batch iteration with shuffling and parallel workers."""
 import numpy as np
 from ._richresult import RichResult

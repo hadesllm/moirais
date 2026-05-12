@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (c) Solve the equation π G = 0 in order to find the stationary distribution. V erify that pi j( t) → π j
+    Formula: (c) Solve the equation π G = 0 in order to find the stationary distribution. V erify that pi j( t) -> π j
 
     Parameters
     ----------

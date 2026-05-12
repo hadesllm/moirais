@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: as n → ∞ for all i and j , then there exists a sequence ( nr : r ≥ 1) and a vector α (̸= 0) such that
+    Formula: as n -> ∞ for all i and j , then there exists a sequence ( nr : r ≥ 1) and a vector α (̸= 0) such that
 
     Parameters
     ----------

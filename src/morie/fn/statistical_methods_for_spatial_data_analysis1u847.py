@@ -8,7 +8,7 @@ __all__ = ["statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_8
 
 
 def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_847(x):
-    """Luck is what happens when preparation meets opportunity. — Seneca"""
+    """Luck is what happens when preparation meets opportunity. -- Seneca"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

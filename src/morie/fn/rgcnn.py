@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """1D CNN for biomedical signal classification."""
 import numpy as np
 from ._richresult import RichResult

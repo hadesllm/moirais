@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Heart sound (S1/S2) identification via PCG-ECG timing."""
 import numpy as np
 from ._richresult import RichResult

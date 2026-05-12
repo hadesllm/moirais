@@ -11,7 +11,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (5m − 3n, 2n), andg : Z × Z → Z × Z where g(m,n ) = (3m + 2n, 4n −m). Find
+    Formula: (5m − 3n, 2n), andg : Z × Z -> Z × Z where g(m,n ) = (3m + 2n, 4n −m). Find
 
     Parameters
     ----------

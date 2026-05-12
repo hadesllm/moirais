@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """NOMINATE confidence intervals from bootstrap SEs."""
 
 from __future__ import annotations

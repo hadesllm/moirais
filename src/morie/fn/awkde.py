@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Adaptive bandwidth kernel density estimator."""
 
 from __future__ import annotations
@@ -50,7 +50,7 @@ def awkde(
 
     References
     ----------
-    Abramson, I. S. (1982). On bandwidth variation in kernel estimates — a
+    Abramson, I. S. (1982). On bandwidth variation in kernel estimates -- a
         square root law. *Annals of Statistics*, 10(4), 1217-1223.
     """
     data = np.asarray(data, dtype=float).ravel()

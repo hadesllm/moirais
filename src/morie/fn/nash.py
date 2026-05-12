@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nash equilibrium for 2-player games (support enumeration)."""
 
 import numpy as np

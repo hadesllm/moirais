@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """System failure cascade / reliability. 'We are the Doom Patrol.' -- The Chief"""
 
 from __future__ import annotations

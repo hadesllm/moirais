@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Impact testing energy (Charpy/Izod). 'I want everything.' -- Bane (Smith)"""
 
 from __future__ import annotations

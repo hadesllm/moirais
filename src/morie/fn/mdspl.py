@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classical MDS for spatial map of legislators (Armstrong Ch 7)."""
 import numpy as np
 from ._richresult import RichResult
@@ -76,7 +76,7 @@ mdspl = mds_spatial_map
 
 
 def cheatsheet():
-    return "mdspl: Classical MDS — Torgerson double-centring + eigen-decomp."
+    return "mdspl: Classical MDS -- Torgerson double-centring + eigen-decomp."
 
 
 # CANONICAL TEST

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Precision-recall at top-k. 'You and I see things differently.' -- Hawkeye"""
 
 from __future__ import annotations

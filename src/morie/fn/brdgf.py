@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BayesA via Gibbs sampler (per-marker variance scaled-inverse-chi^2)."""
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ __all__ = ["bayes_ridge_gibbs"]
 def bayes_ridge_gibbs(x, y, n_iter: int = 200, burn: int = 50,
                       df0: float = 4.0, S0: float | None = None, seed: int = 0,
                       deterministic_seed: int | None = None):
-    """BayesA — Meuwissen, Hayes & Goddard (2001).
+    """BayesA -- Meuwissen, Hayes & Goddard (2001).
 
     Model::
 
@@ -131,7 +131,7 @@ def bayes_ridge_gibbs(x, y, n_iter: int = 200, burn: int = 50,
             "p": p,
             "method": "BayesA (Meuwissen-Hayes-Goddard) short Gibbs",
         },
-        warnings=["Short chain (default 200 / 50 burn) — for publication "
+        warnings=["Short chain (default 200 / 50 burn) -- for publication "
                   "posteriors use BGLR with ≥10k iters."],
     )
 

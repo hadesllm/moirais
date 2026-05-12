@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Overlap (matching) weights for causal inference.
 
 Overlap weights are the propensity-score weights that maximize the
-effective sample size for the overlap population — the target
+effective sample size for the overlap population -- the target
 population in which all subjects have positive probability of
 receiving either treatment.
 

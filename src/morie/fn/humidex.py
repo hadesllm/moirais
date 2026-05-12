@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Humidex (Environment Canada apparent-temperature index)."""
 
 from __future__ import annotations
@@ -61,7 +61,7 @@ def humidex(
 
     Notes
     -----
-    Quote: "The days are getting shorter." — Grogu
+    Quote: "The days are getting shorter." -- Grogu
     """
     T = np.atleast_1d(np.asarray(T_air_C, dtype=float))
     Td = np.atleast_1d(np.asarray(T_dew_C, dtype=float))

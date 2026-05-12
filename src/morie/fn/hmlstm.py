@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LSTM cell: input/forget/output gates + cell state."""
 import numpy as np
 from ._richresult import RichResult

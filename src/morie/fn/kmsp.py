@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SentencePiece unigram-language-model tokenizer: maximize corpus likelihood over subword units."""
 import numpy as np
 from ._richresult import RichResult

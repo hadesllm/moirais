@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 cxsnl.py - Cox-Snell residuals for survival models.
 
@@ -60,7 +60,7 @@ def cxsnl(
         km_times : np.ndarray
             Time points for KM of residuals (for GOF plot).
         km_neg_log_surv : np.ndarray
-            -log(KM survival) of residuals — should equal km_times if fit is good.
+            -log(KM survival) of residuals -- should equal km_times if fit is good.
 
     Raises
     ------

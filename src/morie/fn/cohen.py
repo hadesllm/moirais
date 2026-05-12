@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cohen's d effect size."""
 
 from morie.fn.d import cohens_d

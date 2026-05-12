@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 mrsrv.py - Martingale residuals for Cox proportional hazards models.
 

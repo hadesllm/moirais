@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "When I let go of what I am, I become what I might be. — Lao Tzu"
+_QUOTE = "When I let go of what I am, I become what I might be. -- Lao Tzu"
 
 
 def wavelet_denoise(

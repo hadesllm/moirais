@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ensemble average."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "An unexamined life is not worth living. — Socrates"
+_QUOTE = "An unexamined life is not worth living. -- Socrates"
 
 
 def ensemble_average(segments, **kwargs) -> DescriptiveResult:

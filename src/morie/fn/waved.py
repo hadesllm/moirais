@@ -1,4 +1,4 @@
-"""1D wave equation solver. 'It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle'"""
+"""1D wave equation solver. 'It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle'"""
 
 from __future__ import annotations
 
@@ -79,4 +79,4 @@ short = wave_1d
 
 
 def cheatsheet() -> str:
-    return "wave_1d({}) -> 1D wave equation solver. 'It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle' "
+    return "wave_1d({}) -> 1D wave equation solver. 'It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle' "

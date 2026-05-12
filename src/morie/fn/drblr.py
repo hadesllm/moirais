@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Doubly robust (DR) ATE estimator: consistent if either outcome or propensity correctly specified."""
 import numpy as np
 from ._richresult import RichResult

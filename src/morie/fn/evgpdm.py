@@ -10,7 +10,7 @@ def evt_gpd_mle(y, init):
     """
     MLE of GPD parameters above threshold
 
-    Formula: argmax over (σ,ξ); profile out σ if ξ→0
+    Formula: argmax over (σ,ξ); profile out σ if ξ->0
 
     Parameters
     ----------

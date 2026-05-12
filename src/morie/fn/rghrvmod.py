@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AR spectral model of HRV for LF/HF decomposition."""
 import numpy as np
 from ._richresult import RichResult

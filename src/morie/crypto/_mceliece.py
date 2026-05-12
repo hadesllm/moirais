@@ -1,4 +1,4 @@
-"""Classic McEliece — syndrome-based KEM (simplified).
+"""Classic McEliece -- syndrome-based KEM (simplified).
 
 Educational reference for the McEliece cryptosystem using
 binary Goppa codes. Uses simplified parameters.

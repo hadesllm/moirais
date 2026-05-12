@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Deep RL from human preferences (Christiano et al. 2017)."""
 import numpy as np
 from ._richresult import RichResult

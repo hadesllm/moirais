@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generic biomedical signal feature vector: time-domain + frequency-domain + nonlinear."""
 import numpy as np
 from ._richresult import RichResult

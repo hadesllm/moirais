@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "The man who moves a mountain begins by carrying away small stones. — Confucius"
+_QUOTE = "The man who moves a mountain begins by carrying away small stones. -- Confucius"
 
 
 def self_org_map(X, grid_size=(10, 10), n_iter=1000, lr_init=0.5, sigma_init=None, **kwargs) -> DescriptiveResult:

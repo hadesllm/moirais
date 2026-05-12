@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Empirical Mode Decomposition (standalone).
 
 Distinct from hhtfn.py: this module exposes EMD as a standalone

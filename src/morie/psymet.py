@@ -1,18 +1,18 @@
-"""morie.psymet — Psychometric analysis (CTT, reliability, factor analysis).
+"""morie.psymet -- Psychometric analysis (CTT, reliability, factor analysis).
 
 Short-name API (≤6 chars, no snake_case):
 
-- :func:`crba`   — Cronbach's coefficient alpha
-- :func:`mcdo`   — McDonald's omega total + hierarchical
-- :func:`itcor`  — Corrected item-total correlations
-- :func:`adel`   — Alpha if item deleted
-- :func:`crel`   — Composite reliability from factor loadings
-- :func:`ave`    — Average Variance Extracted
-- :func:`kmo`    — Kaiser-Meyer-Olkin sampling adequacy
-- :func:`bart`   — Bartlett's test of sphericity
-- :func:`paran`  — Horn's parallel analysis
-- :func:`splhf`  — Spearman-Brown split-half reliability
-- :func:`idisc`  — Item discrimination index
+- :func:`crba`   -- Cronbach's coefficient alpha
+- :func:`mcdo`   -- McDonald's omega total + hierarchical
+- :func:`itcor`  -- Corrected item-total correlations
+- :func:`adel`   -- Alpha if item deleted
+- :func:`crel`   -- Composite reliability from factor loadings
+- :func:`ave`    -- Average Variance Extracted
+- :func:`kmo`    -- Kaiser-Meyer-Olkin sampling adequacy
+- :func:`bart`   -- Bartlett's test of sphericity
+- :func:`paran`  -- Horn's parallel analysis
+- :func:`splhf`  -- Spearman-Brown split-half reliability
+- :func:`idisc`  -- Item discrimination index
 
 References
 ----------
@@ -281,7 +281,7 @@ def kmo(data: pd.DataFrame | np.ndarray) -> KmoRes:
 def bart(data: pd.DataFrame | np.ndarray) -> BrtRes:
     """Bartlett's test of sphericity.
 
-    H0: correlation matrix = identity. Reject (p<0.05) → factorable.
+    H0: correlation matrix = identity. Reject (p<0.05) -> factorable.
     """
     from scipy import stats as sp
 
@@ -302,7 +302,7 @@ def paran(
     nsim: int = 100,
     seed: int = 42,
 ) -> int:
-    """Horn's parallel analysis — suggested number of factors.
+    """Horn's parallel analysis -- suggested number of factors.
 
     Compares observed eigenvalues to 95th percentile of random data.
     """
@@ -372,7 +372,7 @@ def idisc(
 
 
 # ---------------------------------------------------------------------------
-# Backward-compat aliases (long names → short names)
+# Backward-compat aliases (long names -> short names)
 # ---------------------------------------------------------------------------
 
 cronbach_alpha = crba

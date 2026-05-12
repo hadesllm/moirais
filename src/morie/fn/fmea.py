@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """FMEA Risk Priority Number scoring. 'I have a bad feeling about this.' -- Everyone"""
 
 from __future__ import annotations

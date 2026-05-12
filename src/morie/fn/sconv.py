@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Convergent validity: AVE > 0.5 for each subscale."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """SGD classifier with hinge loss (linear SVM) trained by stochastic gradient descent."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Full RLHF pipeline: SFT -> Reward Model -> PPO fine-tuning."""
 import numpy as np
 from ._richresult import RichResult

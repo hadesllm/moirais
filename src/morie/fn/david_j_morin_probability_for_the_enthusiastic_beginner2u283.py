@@ -11,7 +11,7 @@ def david_j_morin_probability_for_the_enthusiastic_beginner_chapter_2_unnumbered
     """
     CountModels expression (auto-extracted; see ref).
 
-    Formula: in Section 4.7.2). But in the n → ∞ limit, the p = 1/(n + 1) condition for P(0) = P(1)
+    Formula: in Section 4.7.2). But in the n -> ∞ limit, the p = 1/(n + 1) condition for P(0) = P(1)
 
     Parameters
     ----------

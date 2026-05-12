@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Spline regression contraction rate: n^{-2s/(2s+1)} via sieve of splines."""
 import numpy as np
 from ._richresult import RichResult

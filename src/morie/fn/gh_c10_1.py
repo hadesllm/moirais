@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Adaptive posterior contraction without knowing smoothness: sieve mixture prior."""
 import numpy as np
 from ._richresult import RichResult

@@ -10,7 +10,7 @@ def bootstrap_indirect(Y, X, M, n_boot):
     """
     Bootstrap CI for indirect effect ab
 
-    Formula: resample → recompute ab → percentile CI
+    Formula: resample -> recompute ab -> percentile CI
 
     Parameters
     ----------

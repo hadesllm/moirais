@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bootstrap prediction intervals for time series forecasts."""
 
 from __future__ import annotations
@@ -25,10 +25,10 @@ def prediction_intervals(
     (``y - fitted``) and adding them to the last fitted value.  Two
     resampling strategies are supported:
 
-    * ``'residual'`` — draws a single residual uniformly from the in-sample
+    * ``'residual'`` -- draws a single residual uniformly from the in-sample
       residual pool and adds it to ``fitted[-1]``.  Appropriate when residuals
       are approximately i.i.d.
-    * ``'block'`` — block bootstrap with block length
+    * ``'block'`` -- block bootstrap with block length
       ``ceil(n^{1/3})`` to preserve short-range serial dependence in the
       residuals (Carlstein 1986).
 
@@ -37,10 +37,10 @@ def prediction_intervals(
     y : array-like
         Observed time series (n,).
     fitted : array-like
-        In-sample fitted values (n,) — must be same length as *y*.
+        In-sample fitted values (n,) -- must be same length as *y*.
     alpha : float
         Significance level for the (1−alpha)×100% prediction interval.
-        Default 0.05 → 95% PI.
+        Default 0.05 -> 95% PI.
     method : {'residual', 'block'}
         Resampling strategy.  Default ``'residual'``.
     n_boot : int
@@ -51,16 +51,16 @@ def prediction_intervals(
     Returns
     -------
     DescriptiveResult
-        value: float — point forecast (mean of bootstrap distribution).
+        value: float -- point forecast (mean of bootstrap distribution).
         extra keys:
-          'lower'       : float — lower prediction bound.
-          'upper'       : float — upper prediction bound.
-          'se'          : float — bootstrap standard error.
-          'forecast'    : float — same as value.
+          'lower'       : float -- lower prediction bound.
+          'upper'       : float -- upper prediction bound.
+          'se'          : float -- bootstrap standard error.
+          'forecast'    : float -- same as value.
           'alpha'       : float.
           'method'      : str.
           'n_boot'      : int.
-          'residual_std': float — in-sample residual standard deviation.
+          'residual_std': float -- in-sample residual standard deviation.
 
     Raises
     ------

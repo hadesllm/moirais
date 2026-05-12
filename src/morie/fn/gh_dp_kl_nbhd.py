@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP KL neighborhood mass: lower bound on Pi(KL(P0,P)<eps)."""
 import numpy as np
 from ._richresult import RichResult

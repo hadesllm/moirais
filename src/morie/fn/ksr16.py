@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Influence function for OLS beta (Kosorok 2008, Ch 7).
 
 IF(x, y) = I_eff^{-1} S_eff(x, y) = (y - ybar - beta_hat (x - xbar))

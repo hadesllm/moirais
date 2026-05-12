@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_10_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: P [|Xk| > ϵs n] = 0 ∀ k = 1, 2, · · · , n. Hencegn(ϵ) → 0 and Lindeberg’s
+    Formula: P [|Xk| > ϵs n] = 0 ∀ k = 1, 2, · · · , n. Hencegn(ϵ) -> 0 and Lindeberg’s
 
     Parameters
     ----------

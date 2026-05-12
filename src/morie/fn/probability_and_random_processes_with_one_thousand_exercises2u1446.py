@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: [EQ] π jµ j = P( X0 = j) + P( X0 ̸= j) − limn→∞ an = 1 − limn→∞ an.
+    Formula: [EQ] π jµ j = P( X0 = j) + P( X0 ̸= j) − limn->∞ an = 1 − limn->∞ an.
 
     Parameters
     ----------

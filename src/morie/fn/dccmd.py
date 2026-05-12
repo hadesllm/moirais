@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DCC multivariate GARCH (Engle 2002)."""
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ __all__ = ["dcc_multivariate_garch"]
 
 
 def _univariate_garch11(r):
-    """Internal GARCH(1,1) for marginal volatilities — Gaussian MLE."""
+    """Internal GARCH(1,1) for marginal volatilities -- Gaussian MLE."""
     n = r.size
     var_r = float(np.var(r))
 

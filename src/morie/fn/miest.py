@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Effect sizes for measurement invariance (dMACS, signed area)."""
 
 from __future__ import annotations

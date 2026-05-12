@@ -1,4 +1,4 @@
-"""XGBoost regularized objective — xgboost if available, sklearn HistGB fallback."""
+"""XGBoost regularized objective -- xgboost if available, sklearn HistGB fallback."""
 import numpy as np
 
 from ._richresult import RichResult

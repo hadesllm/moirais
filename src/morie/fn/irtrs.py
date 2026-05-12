@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rating Scale Model for Likert-type items."""
 
 from __future__ import annotations

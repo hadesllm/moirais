@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Transfer learning feature extraction. 'Don't touch me.' -- Rogue"""
 
 from __future__ import annotations

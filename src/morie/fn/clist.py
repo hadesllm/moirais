@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """List all cached tables with row counts."""
 
 from morie.data import cache_list as _fn

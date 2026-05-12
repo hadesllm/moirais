@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Tensor parallelism: split individual tensors across devices."""
 import numpy as np
 from ._richresult import RichResult

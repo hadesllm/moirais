@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random sensing matrix generation for compressed sensing."""
 
 import numpy as np

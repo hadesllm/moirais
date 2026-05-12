@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Epsilon-squared effect size (Kelley, 1935)."""
 
 from ._containers import ESRes

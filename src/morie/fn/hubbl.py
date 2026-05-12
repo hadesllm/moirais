@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hubble parameter and expansion rate."""
 
 __all__ = ["hubbl"]

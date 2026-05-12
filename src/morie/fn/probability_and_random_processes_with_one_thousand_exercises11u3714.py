@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_11_unnu
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: (15) Differentiation. If G : [0, ∞ ) → R and g = d G/d x thenθ ˆG(θ) = ˆg(θ) + G( 0) .
+    Formula: (15) Differentiation. If G : [0, ∞ ) -> R and g = d G/d x thenθ ˆG(θ) = ˆg(θ) + G( 0) .
 
     Parameters
     ----------

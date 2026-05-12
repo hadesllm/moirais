@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Causal forest CATE estimator (Athey-Wager, honest trees).
 
 Implements a simplified honest causal forest using random subsampling

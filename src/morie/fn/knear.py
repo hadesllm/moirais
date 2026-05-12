@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """K-nearest neighbors spatial weights matrix."""
 
 import numpy as np

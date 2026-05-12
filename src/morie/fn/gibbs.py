@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Gibbs sampler for bivariate normal."""
 
 from __future__ import annotations

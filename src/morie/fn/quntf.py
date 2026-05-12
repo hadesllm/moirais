@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonparametric sample quantile function (Parzen 1979).
 
 Returns the right-continuous empirical quantile function ``Q(tau) =

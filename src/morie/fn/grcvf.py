@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """2D convolution forward pass with single filter and stride s, padding p."""
 import numpy as np
 from ._richresult import RichResult

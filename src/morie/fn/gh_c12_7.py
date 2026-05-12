@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Strict semiparametric BvM: Castillo-Rousseau condition for exact BvM."""
 import numpy as np
 from ._richresult import RichResult

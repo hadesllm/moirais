@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Admixture proportions estimation (maximum likelihood)."""
 
 __all__ = ["admxp"]

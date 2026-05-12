@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ERP artifact removal via synchronized averaging."""
 import numpy as np
 from ._richresult import RichResult

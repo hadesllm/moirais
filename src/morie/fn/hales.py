@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Health-adjusted life expectancy (HALE)."""
 
 from __future__ import annotations

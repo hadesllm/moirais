@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Adaptive Polya tree prior: alpha_m = m^2 gives near-optimal density estimation rate."""
 import numpy as np
 from ._richresult import RichResult

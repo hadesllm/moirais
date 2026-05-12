@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Node betweenness centrality for a network."""
 
 from __future__ import annotations

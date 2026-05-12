@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Burden of illness (total societal)."""
 
 from ._containers import ESRes

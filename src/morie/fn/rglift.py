@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cepstral liftering (low-time / high-time separation)."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bifactor CFA model (general + 4 specific factors)."""
 
 from __future__ import annotations

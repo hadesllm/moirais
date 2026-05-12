@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bandpass Butterworth filter."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import SignalResult
 
-_QUOTE = "No man ever steps in the same river twice. — Heraclitus"
+_QUOTE = "No man ever steps in the same river twice. -- Heraclitus"
 
 
 def bandpass_filter(x, low, high, fs, order: int = 4) -> SignalResult:

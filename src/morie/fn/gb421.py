@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Chi-square goodness-of-fit test statistic Q with grouped data."""
 import numpy as np
 from scipy import stats

@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Approximate entropy — Rangayyan Ch 7."""
+# morie.fn -- function file (hadesllm/morie)
+"""Approximate entropy -- Rangayyan Ch 7."""
 from __future__ import annotations
 
 import numpy as np
@@ -54,7 +54,7 @@ def rangayyan_approximate_entropy(x, m=2, r=None):
             ("m", m), ("r", r), ("N", N),
             ("φ_m", phi_m), ("φ_{m+1}", phi_m1), ("ApEn", apen),
         ],
-        interpretation=f"ApEn = {apen:.4g}. Higher → more irregular.",
+        interpretation=f"ApEn = {apen:.4g}. Higher -> more irregular.",
         payload={"ApEn": apen, "phi_m": phi_m, "phi_m1": phi_m1,
                  "m": m, "r": r, "n": N},
     )
@@ -69,4 +69,4 @@ def rangayyan_approximate_entropy(x, m=2, r=None):
 
 
 def cheatsheet():
-    return "rgapn: approximate entropy — Rangayyan Ch 7"
+    return "rgapn: approximate entropy -- Rangayyan Ch 7"

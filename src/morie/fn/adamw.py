@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 r"""AdamW optimizer with decoupled weight decay.
 
 Adaptive moment estimation with weight decay (L2 regularization).

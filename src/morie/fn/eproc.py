@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Empirical process: sqrt(n) * (Fn - F) at evaluation points."""
 
 from __future__ import annotations

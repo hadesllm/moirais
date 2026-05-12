@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cohort study risk ratio with log-based CI."""
 
 from __future__ import annotations

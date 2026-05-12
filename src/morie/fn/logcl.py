@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Logistic regression classifier (gradient descent)."""
 
 from __future__ import annotations

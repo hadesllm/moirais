@@ -20,7 +20,7 @@ import numpy as np
 from numpy.typing import NDArray
 
 # ---------------------------------------------------------------------------
-# Library loading — same pattern as quant_bridge.py
+# Library loading -- same pattern as quant_bridge.py
 # ---------------------------------------------------------------------------
 
 _lib: ctypes.CDLL | None = None
@@ -91,7 +91,7 @@ def _ptr(arr: np.ndarray):
 
 
 # ---------------------------------------------------------------------------
-# Public API — each function tries C, falls back to NumPy
+# Public API -- each function tries C, falls back to NumPy
 # ---------------------------------------------------------------------------
 
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Efficacy e(T_n) of test statistic T_n."""
 import numpy as np
 from scipy import stats

@@ -25,7 +25,7 @@ def sobol_sequence(x=None, N: int = 128, d: int = 1, f=None,
     d : int
         Dimensionality.  Default 1.
     f : callable, optional
-        Integrand on [0,1]^d → scalar.
+        Integrand on [0,1]^d -> scalar.
     scramble : bool
         Owen-scrambling (default True) for randomised QMC.
     seed : int

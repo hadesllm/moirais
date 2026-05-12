@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Render an inspection result to the terminal."""
 
 from morie.inspector import render_inspection as _fn

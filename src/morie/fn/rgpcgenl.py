@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Synchronized averaging of PCG envelopes (S1/S2 intensity analysis)."""
 import numpy as np
 from ._richresult import RichResult

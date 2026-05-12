@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Asymptotic distribution of one-sided KS: limiting survival function of D+_n."""
 import numpy as np
 from ._richresult import RichResult

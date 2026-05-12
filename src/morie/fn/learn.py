@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Learning curve: train/test error vs. training set size."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Weak posterior consistency: Pi_n(U^c | X^n) -> 0 in P0-probability for all weak neighborhoods U of P0."""
 import numpy as np
 from ._richresult import RichResult

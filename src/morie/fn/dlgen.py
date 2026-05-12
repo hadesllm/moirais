@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Deep-learning genomic prediction (single-hidden-layer MLP, NumPy)."""
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ __all__ = ["deep_learning_genomic"]
 def deep_learning_genomic(x, y, markers, hidden: int = 16, n_epochs: int = 200,
                           lr: float = 1e-2, l2: float = 1e-3, seed: int = 0,
                           deterministic_seed: int | None = None):
-    """Single-hidden-layer MLP genomic predictor — NumPy implementation.
+    """Single-hidden-layer MLP genomic predictor -- NumPy implementation.
 
     Architecture::
 

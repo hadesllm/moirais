@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GWR bandwidth selection (AICc cross-validation)."""
 
 import numpy as np

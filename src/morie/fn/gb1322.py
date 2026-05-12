@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ARE as ratio of squared efficacies of two test statistics."""
 import numpy as np
 from scipy import stats

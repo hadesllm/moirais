@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nonlinear autoregression contraction rate via Markov chain framework."""
 import numpy as np
 from ._richresult import RichResult

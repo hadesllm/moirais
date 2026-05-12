@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Parametric system identification: AR all-pole model fitting."""
 import numpy as np
 from ._richresult import RichResult

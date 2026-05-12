@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exact null distribution of one-sided KS statistic D+_n."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fourth-order Runge-Kutta ODE solver."""
 
 import numpy as np

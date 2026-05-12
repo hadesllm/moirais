@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LDPC parity-check matrix generation."""
 
 from __future__ import annotations

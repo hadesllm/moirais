@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moment matching: posterior mean and variance of G(A) for a DP."""
 import numpy as np
 from scipy.stats import norm

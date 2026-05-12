@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Benjamini-Hochberg false discovery rate correction."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Beta kernel density estimator for bounded support."""
 
 from __future__ import annotations

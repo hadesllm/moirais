@@ -10,7 +10,7 @@ def topological_torsion(smiles, n_bits):
     """
     Topological torsion fingerprint
 
-    Formula: hash(4-atom path types) → bit vector
+    Formula: hash(4-atom path types) -> bit vector
 
     Parameters
     ----------

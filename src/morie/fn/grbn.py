@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Batch normalization: z-normalize per-channel across the mini-batch, then affine scale/shift."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GMM-based anomaly detection: low-density points are anomalies."""
 import numpy as np
 from ._richresult import RichResult

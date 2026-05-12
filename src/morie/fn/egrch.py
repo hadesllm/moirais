@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EGARCH(1,1) asymmetric volatility model.
 
 Wraps `arch.arch_model(..., vol='EGARCH')` when available; falls back to

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Blomqvist q (medial correlation): proportion of concordant vs discordant quadrants."""
 import numpy as np
 from scipy import stats

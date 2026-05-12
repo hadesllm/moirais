@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kinship likelihood ratio for forensic genetics."""
 
 __all__ = ["kinlr"]

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """i.i.d. contraction theorem in Hellinger metric: main tool for density estimation rates."""
 import numpy as np
 from ._richresult import RichResult

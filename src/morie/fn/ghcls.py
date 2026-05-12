@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Bayesian-nonparametric classification — probit-link GP."""
+# morie.fn -- function file (hadesllm/morie)
+"""Bayesian-nonparametric classification -- probit-link GP."""
 import numpy as np
 from scipy.stats import norm
 from ._richresult import RichResult

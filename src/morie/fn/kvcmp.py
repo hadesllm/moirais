@@ -1,12 +1,12 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """KV-cache management and compression for autoregressive decoding.
 
 Two callables share this module:
 
-* ``kv_cache_management`` — append a new (k, v) pair to a running KV
+* ``kv_cache_management`` -- append a new (k, v) pair to a running KV
   cache (Pope et al. 2022).  This is the canonical morie.fn spec entry
   ``kvcmp``.
-* ``kv_cache_compress``   — TurboQuant-style quantised compression of
+* ``kv_cache_compress``   -- TurboQuant-style quantised compression of
   an existing (K, V) cache (kept for backward-compatible imports).
 """
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Simple neural network (1 hidden layer, pure NumPy)."""
 
 from __future__ import annotations
@@ -22,7 +22,7 @@ def nn_classify(
 
     Architecture: input -> Dense(hidden_size, sigmoid) -> Dense(1, sigmoid).
     Trained with binary cross-entropy via gradient descent.
-    Pure NumPy — no external ML library required.
+    Pure NumPy -- no external ML library required.
 
     Parameters
     ----------

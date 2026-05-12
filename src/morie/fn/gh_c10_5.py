@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """White noise adaptation: Abramovich-Silverman wavelet thresholding via Bayes."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Weight tying: share the embedding matrix with the output projection."""
 import numpy as np
 from ._richresult import RichResult

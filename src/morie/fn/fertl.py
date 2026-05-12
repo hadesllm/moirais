@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Total fertility rate from age-specific fertility rates."""
 
 import numpy as np

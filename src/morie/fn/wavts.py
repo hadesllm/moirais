@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Discrete wavelet decomposition for time series (Percival & Walden 2000)."""
 from __future__ import annotations
 

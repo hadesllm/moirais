@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bridge observations for cross-chamber comparison (Armstrong Ch 6)."""
 import numpy as np
 from ._richresult import RichResult
@@ -79,7 +79,7 @@ brdgr = bridge_observations
 
 
 def cheatsheet():
-    return "brdgr: Bridge observations — common legislators across sessions."
+    return "brdgr: Bridge observations -- common legislators across sessions."
 
 
 # CANONICAL TEST

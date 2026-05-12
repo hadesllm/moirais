@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Channel capacity for discrete memoryless channels."""
 
 __all__ = ["chcap"]

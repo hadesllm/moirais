@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Repeat-address / hot-spot analysis. 'It's a trap!' -- Admiral Ackbar"""
 
 from __future__ import annotations

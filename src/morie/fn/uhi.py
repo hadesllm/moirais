@@ -52,7 +52,7 @@ def urban_heat_island(
 
     Notes
     -----
-    Quote: "The city is a jungle." — every urban ecologist, ever.
+    Quote: "The city is a jungle." -- every urban ecologist, ever.
     """
     Tu = np.atleast_1d(np.asarray(T_urban_C, dtype=float))
     Tr = np.atleast_1d(np.asarray(T_rural_C, dtype=float))

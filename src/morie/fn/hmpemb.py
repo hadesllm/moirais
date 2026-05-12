@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Use pretrained word embeddings (e.g., GloVe) as initialization."""
 import numpy as np
 from ._richresult import RichResult

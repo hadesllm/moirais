@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Qn scale estimator. 'Judge me by my size, do you?'"""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def qn_estimator(x: np.ndarray) -> DescriptiveResult:
 
     The Qn is the first quartile of all pairwise |x_i - x_j|
     distances, scaled by a consistency factor for Gaussian data.
-    It has 50% breakdown point and 82% Gaussian efficiency —
+    It has 50% breakdown point and 82% Gaussian efficiency --
     better than MAD in many settings.
 
     :param x: 1-D numeric array.

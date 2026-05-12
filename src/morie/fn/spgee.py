@@ -1,4 +1,4 @@
-"""Spatial GEE — generalized estimating equations (Schabenberger & Gotway Ch 7)."""
+"""Spatial GEE -- generalized estimating equations (Schabenberger & Gotway Ch 7)."""
 
 import numpy as np
 from scipy.spatial.distance import cdist

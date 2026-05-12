@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Likelihood ratios (LR+ / LR-). 'So this is how liberty dies.' -- Padme Amidala"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-"""Pure-Python emissions tracker — drop-in replacement for codecarbon.
+"""Pure-Python emissions tracker -- drop-in replacement for codecarbon.
 
 Replicates the CodeCarbon EmissionsTracker methodology without pydantic
 or any Rust dependencies, enabling Python 3.15+ support.
@@ -6,7 +6,7 @@ or any Rust dependencies, enabling Python 3.15+ support.
 Methodology (matches codecarbon 3.2.x):
   - CPU/GPU power: ``powermetrics`` on Apple Silicon, ``/proc/stat`` TDP on Linux
   - RAM power: heuristic based on DIMM count (1.5 W/DIMM ARM, 5 W/DIMM x86)
-  - Carbon intensity: per-country energy mix → weighted gCO2/kWh
+  - Carbon intensity: per-country energy mix -> weighted gCO2/kWh
   - Emissions: ``energy_kWh × carbon_intensity_kgCO2_per_kWh × PUE``
   - Water: ``energy_kWh × WUE``
 
@@ -40,7 +40,7 @@ _LBS_MWH_TO_KG_KWH = 0.00045359237
 # Data directory containing energy mix and carbon intensity files
 _DATA_DIR = Path(__file__).parent / "data"
 
-# Carbon intensity per source (gCO2/kWh) — matches codecarbon / IEA
+# Carbon intensity per source (gCO2/kWh) -- matches codecarbon / IEA
 _SOURCE_INTENSITY: dict[str, float] = {}
 _WORLD_AVERAGE_G_KWH = 475.0
 
@@ -250,7 +250,7 @@ def _estimate_ram_power() -> float:
 
 
 def _read_powermetrics(duration_ms: int = 500) -> tuple[float, float]:
-    """Read CPU and GPU power via macOS powermetrics (mW → W).
+    """Read CPU and GPU power via macOS powermetrics (mW -> W).
 
     Returns (cpu_watts, gpu_watts).  Falls back to (0, 0) if powermetrics
     is unavailable or requires sudo.
@@ -277,7 +277,7 @@ from functools import lru_cache
 
 @lru_cache(maxsize=1)
 def _cpu_tdp_fallback() -> float:
-    """Estimate CPU TDP from model name (Watts). Cached — CPU doesn't change."""
+    """Estimate CPU TDP from model name (Watts). Cached -- CPU doesn't change."""
     # Try sysctl on macOS first (most reliable for Apple Silicon)
     brand = ""
     if sys.platform == "darwin":

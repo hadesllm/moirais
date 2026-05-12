@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Prohorov metric between empirical distributions."""
 
 from __future__ import annotations

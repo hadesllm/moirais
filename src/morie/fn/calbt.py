@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Calibration via Platt scaling and isotonic regression.
 
 Post-hoc probability calibration transforms raw classifier scores

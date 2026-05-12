@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Home range estimation via kernel density (Worton 1989)."""
 
 from __future__ import annotations

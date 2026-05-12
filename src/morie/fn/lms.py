@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Least Median of Squares (LMS) robust regression."""
 
 from __future__ import annotations
@@ -15,7 +15,7 @@ def least_median_sq(
     n_trials: int = 500,
     seed: int | None = None,
 ) -> DescriptiveResult:
-    """LMS regression — minimises the median of squared residuals.
+    """LMS regression -- minimises the median of squared residuals.
 
     Parameters
     ----------

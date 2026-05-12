@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hybrid retrieval: weighted fusion of dense and sparse scores."""
 import numpy as np
 from ._richresult import RichResult

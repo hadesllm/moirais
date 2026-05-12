@@ -10,7 +10,7 @@ def dssp_secondary(coords):
     """
     DSSP secondary structure assignment
 
-    Formula: hydrogen-bond pattern → 8-state alphabet
+    Formula: hydrogen-bond pattern -> 8-state alphabet
 
     Parameters
     ----------

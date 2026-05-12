@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Laplace / non-Sibsonian natural neighbor."""
 
 import numpy as np

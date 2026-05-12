@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hazard function estimation. 'I keep my promises.' -- Deathstroke"""
 
 from __future__ import annotations

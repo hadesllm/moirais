@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """KV-cache growth during autoregressive decoding: append new K/V per generated token."""
 import numpy as np
 from ._richresult import RichResult

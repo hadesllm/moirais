@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """FLOPs estimator for transformer models."""
 
 from __future__ import annotations

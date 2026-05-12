@@ -11,7 +11,7 @@ def edward_frenkel_love_and_math_the_heart_of_hidden_reality_chapter_18_unnumber
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: permutation x1 /mapstoc〈a∇→x2 /mapstoc〈a∇→x3 /mapstoc〈a∇→x1, and its inverse.
+    Formula: permutation x1 /mapstoc〈a∇->x2 /mapstoc〈a∇->x3 /mapstoc〈a∇->x1, and its inverse.
 
     Parameters
     ----------

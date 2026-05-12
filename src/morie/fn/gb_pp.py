@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PP-plot (probability-probability plot) for visual GOF assessment."""
 import numpy as np
 from ._richresult import RichResult

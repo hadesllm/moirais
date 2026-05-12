@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Local Markov transition matrices for spatial regime dynamics."""
 
 from __future__ import annotations

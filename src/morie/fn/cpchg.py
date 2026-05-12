@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Change point detection via PELT algorithm."""
 
 from __future__ import annotations
@@ -44,15 +44,15 @@ def changepoint_pelt(
     Returns
     -------
     DescriptiveResult
-        value: float — number of detected change points.
+        value: float -- number of detected change points.
         extra keys:
           'changepoints' : 1-D int array of change point indices (positions
                            in the *original* series where a new segment begins,
                            excluding 0 and n).
           'n_changepoints': int.
-          'total_cost'   : float — optimal total cost including penalties.
+          'total_cost'   : float -- optimal total cost including penalties.
           'segments'     : list of (start, end) tuples (half-open, start inclusive).
-          'penalty_value': float — numeric penalty used.
+          'penalty_value': float -- numeric penalty used.
 
     Raises
     ------

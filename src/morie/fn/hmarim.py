@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ARIMA(p,d,q) model: ARMA applied to d-th differenced series."""
 import numpy as np
 from ._richresult import RichResult

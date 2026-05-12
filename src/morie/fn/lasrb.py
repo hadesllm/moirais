@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """IoU tracking metric. 'Eyes in the sky.' -- Laserbeak"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Monte Carlo dropout: leave dropout on at inference for uncertainty."""
 import numpy as np
 from ._richresult import RichResult

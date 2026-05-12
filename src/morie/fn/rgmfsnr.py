@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Output SNR of matched filter (maximum SNR theorem)."""
 import numpy as np
 from ._richresult import RichResult

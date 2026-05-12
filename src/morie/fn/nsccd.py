@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """New-user/active-comparator cohort design for pharmacoepi."""
 
 import numpy as np

@@ -50,7 +50,7 @@ def cressie_hawkins(data=None, coords=None, *, n=50, lags=10):
 
 short = "sgcrh"
 alias = "cressie_hawkins"
-quote = "Mastering others is strength; mastering yourself is true power. — Lao Tzu"
+quote = "Mastering others is strength; mastering yourself is true power. -- Lao Tzu"
 cressie_hawkins = cressie_hawkins
 
 

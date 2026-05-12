@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Evidence lower bound (ELBO) loss for VAE."""
 import numpy as np
 from ._richresult import RichResult

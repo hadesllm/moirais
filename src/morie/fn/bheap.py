@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Our greatest glory is not in never falling, but in rising every time we fall. — Confucius"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Our greatest glory is not in never falling, but in rising every time we fall. -- Confucius"""
 
 from __future__ import annotations
 

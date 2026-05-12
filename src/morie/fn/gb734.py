@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Symmetry condition for null distribution of T_N: a_i + a_{N-i+1} = c."""
 import numpy as np
 from ._richresult import RichResult

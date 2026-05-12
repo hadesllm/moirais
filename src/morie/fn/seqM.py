@@ -10,7 +10,7 @@ def sequential_mediators(Y, X, M1, M2, C):
     """
     Sequential (causally ordered) mediators
 
-    Formula: path-specific effects M1 → M2 → Y
+    Formula: path-specific effects M1 -> M2 -> Y
 
     Parameters
     ----------

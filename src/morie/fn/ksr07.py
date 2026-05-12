@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bootstrap consistency for the empirical process (Kosorok 2008, Ch 10).
 
 G_n^*(f) = sqrt(n)(P_n^* - P_n)(f) converges (conditionally on the

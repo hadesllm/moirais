@@ -48,7 +48,7 @@ def calculate_interaction_power(sample_size: int, alpha: float = 0.05, effect_si
     for interaction-term power in the CPADS study design.
 
     The formula ``1 - exp(-(n * f) / 50)`` that appeared in earlier versions
-    of this function is **not a valid power formula** — it is a heuristic
+    of this function is **not a valid power formula** -- it is a heuristic
     approximation with no grounding in probability theory and produces values
     that systematically diverge from the correct power at moderate sample
     sizes.  It has been replaced by the exact normal-approximation F-test
@@ -153,13 +153,13 @@ def bootstrap_ci(
 
 
 # ===========================================================================
-# SECTION 1 — R-COMPATIBLE DISTRIBUTION FUNCTIONS
+# SECTION 1 -- R-COMPATIBLE DISTRIBUTION FUNCTIONS
 # ===========================================================================
 # Each distribution follows the R naming convention:
-#   d<name>(x, ...)  — probability density / mass function
-#   p<name>(x, ...)  — cumulative distribution function
-#   q<name>(p, ...)  — quantile (inverse CDF)
-#   r<name>(n, ...)  — random sample generation
+#   d<name>(x, ...)  -- probability density / mass function
+#   p<name>(x, ...)  -- cumulative distribution function
+#   q<name>(p, ...)  -- quantile (inverse CDF)
+#   r<name>(n, ...)  -- random sample generation
 #
 # The ``log`` flag (where present) returns log-probability for numerical
 # stability in likelihood computations; it is equivalent to applying
@@ -231,10 +231,10 @@ def pnorm(
         raise ValueError(f"sd must be > 0, got {sd}.")
     dist = stats.norm(loc=mean, scale=sd)
     if lower_tail:
-        # logcdf = log(P(X <= x)) — correct for lower tail
+        # logcdf = log(P(X <= x)) -- correct for lower tail
         result = dist.logcdf(x) if log else dist.cdf(x)
     else:
-        # logsf = log(P(X > x)) = log(1 - CDF) — correct for upper tail
+        # logsf = log(P(X > x)) = log(1 - CDF) -- correct for upper tail
         result = dist.logsf(x) if log else dist.sf(x)
     return result
 
@@ -954,7 +954,7 @@ def runif(n: int, min: float = 0.0, max: float = 1.0, seed: int | None = None) -
 
 
 # ===========================================================================
-# SECTION 2 — HYPOTHESIS TESTING
+# SECTION 2 -- HYPOTHESIS TESTING
 # ===========================================================================
 
 
@@ -1408,7 +1408,7 @@ def levene_test(*groups) -> dict:
 
 
 # ===========================================================================
-# SECTION 3 — CONFIDENCE INTERVALS
+# SECTION 3 -- CONFIDENCE INTERVALS
 # ===========================================================================
 
 
@@ -1423,15 +1423,15 @@ def proportion_ci(
     Confidence interval for a single proportion.
 
     Three methods are supported:
-    - ``"wilson"`` (default): Wilson score interval — recommended for small n
+    - ``"wilson"`` (default): Wilson score interval -- recommended for small n
       and proportions near 0 or 1 (Brown, Cai & DasGupta, 2001).
-    - ``"clopper-pearson"``: Exact Clopper-Pearson interval — conservative.
-    - ``"agresti-coull"``: Agresti-Coull interval — good coverage for moderate n.
+    - ``"clopper-pearson"``: Exact Clopper-Pearson interval -- conservative.
+    - ``"agresti-coull"``: Agresti-Coull interval -- good coverage for moderate n.
 
     :param successes: Number of successes (0 <= successes <= n).
     :param n: Total number of trials (> 0).
     :param method: CI method. Default ``"wilson"``.
-    :param alpha: Significance level (default 0.05 → 95% CI).
+    :param alpha: Significance level (default 0.05 -> 95% CI).
     :return: Tuple ``(lower, upper)``.
     :raises ValueError: If successes < 0, n <= 0, or alpha not in (0, 1).
 
@@ -1694,7 +1694,7 @@ def risk_difference_ci(table_2x2: Union[list, np.ndarray], *, alpha: float = 0.0
 
 
 # ===========================================================================
-# SECTION 4 — EFFECT SIZES
+# SECTION 4 -- EFFECT SIZES
 # ===========================================================================
 
 
@@ -1812,7 +1812,7 @@ def eta_squared(f_stat: float, df_between: int, df_within: int) -> float:
 
 def omega_squared(f_stat: float, df_between: int, df_within: int, n: int) -> float:
     """
-    Omega-squared (omega^2) from ANOVA — less biased than eta-squared.
+    Omega-squared (omega^2) from ANOVA -- less biased than eta-squared.
 
     omega^2 = (SS_between - df_between * MS_within) / (SS_total + MS_within)
             = (df_between * (F - 1)) / (df_between * F + df_within + 1)
@@ -1986,7 +1986,7 @@ def spearman_rho(
 
 
 # ===========================================================================
-# SECTION 5 — POWER ANALYSIS
+# SECTION 5 -- POWER ANALYSIS
 # ===========================================================================
 
 
@@ -2240,7 +2240,7 @@ def power_anova(
             k_groups=int(k),
         )
         return float(result)
-    else:  # k is None — iterate over k (integer) to find smallest k meeting power
+    else:  # k is None -- iterate over k (integer) to find smallest k meeting power
         # FTestAnovaPower requires integer k; we solve by scanning
         for k_try in range(2, 200):
             nobs = float(n * k_try)

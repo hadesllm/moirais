@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Inverse of a symmetric matrix (pinv-safe)."""
 
 from typing import Sequence, Union

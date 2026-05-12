@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ewens sampling formula for random partitions. 'Mutate, alleles do.'"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Normal distribution cumulative distribution function."""
 
 from typing import Union
@@ -29,10 +29,10 @@ def pnorm(x: Union[float, np.ndarray], mean: float = 0.0, sd: float = 1.0, lower
         raise ValueError(f"sd must be > 0, got {sd}.")
     dist = stats.norm(loc=mean, scale=sd)
     if lower_tail:
-        # logcdf = log(P(X <= x)) — correct for lower tail
+        # logcdf = log(P(X <= x)) -- correct for lower tail
         result = dist.logcdf(x) if log else dist.cdf(x)
     else:
-        # logsf = log(P(X > x)) = log(1 - CDF) — correct for upper tail
+        # logsf = log(P(X > x)) = log(1 - CDF) -- correct for upper tail
         result = dist.logsf(x) if log else dist.sf(x)
     return result
 

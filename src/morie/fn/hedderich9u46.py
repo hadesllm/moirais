@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_46(x):
     """
     PowerAndDesign expression (auto-extracted; see ref).
 
-    Formula: [EQ] (am)n =am·n = (an)m→(52)3 = 5 2·52·52 = 5 2·3 = 5 6 = 15625
+    Formula: [EQ] (am)n =am·n = (an)m->(52)3 = 5 2·52·52 = 5 2·3 = 5 6 = 15625
 
     Parameters
     ----------

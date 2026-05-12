@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Recurrent event analysis (Andersen-Gill model)."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Plot ideal points and stimuli. 'Spirit Bomb!' -- Goku, Dragon Ball Z"""
 
 from __future__ import annotations

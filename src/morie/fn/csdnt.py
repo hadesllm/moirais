@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Compressed sensing denoising via L1 regularization."""
 
 import numpy as np

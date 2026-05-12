@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kernel two-sample test (Maximum Mean Discrepancy)."""
 
 from __future__ import annotations

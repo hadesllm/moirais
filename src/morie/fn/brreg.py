@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayesian ridge regression (RR-BLUP) for marker effects."""
 from __future__ import annotations
 
@@ -28,7 +28,7 @@ def bayesian_ridge_regression(x, y, lam: float | None = None):
 
     Parameters
     ----------
-    x : array-like (n,p)  — marker / design matrix
+    x : array-like (n,p)  -- marker / design matrix
     y : array-like (n,)
     lam : float, optional. Ridge parameter sigma_e^2 / sigma_b^2.
 

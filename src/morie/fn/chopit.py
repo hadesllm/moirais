@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CHOPIT anchoring vignette model (King et al.) for perception correction."""
 import numpy as np
 from ._richresult import RichResult

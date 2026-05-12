@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Holt-Winters triple exponential smoothing (level + trend + seasonality)."""
 import numpy as np
 from ._richresult import RichResult

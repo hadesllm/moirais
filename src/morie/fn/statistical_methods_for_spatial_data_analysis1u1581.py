@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1581(x):
     """
     Spatial expression (auto-extracted; see ref).
 
-    Formula: about the ﬁrst two moments—we could model σ 2 R as either σ 2 (I − ρW)−1
+    Formula: about the ﬁrst two moments--we could model σ 2 R as either σ 2 (I − ρW)−1
 
     Parameters
     ----------

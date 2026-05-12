@@ -11,7 +11,7 @@ def david_j_morin_probability_for_the_enthusiastic_beginner_chapter_2_unnumbered
     """
     CountModels expression (auto-extracted; see ref).
 
-    Formula:  Third, in the ϵ → 0 limit, we can use the (1 + a)n ≈ ena approximation again,
+    Formula:  Third, in the ϵ -> 0 limit, we can use the (1 + a)n ≈ ena approximation again,
 
     Parameters
     ----------

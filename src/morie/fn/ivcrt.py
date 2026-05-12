@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Three conditions for a valid instrument Z for causal effect of X on Y."""
 import numpy as np
 from ._richresult import RichResult

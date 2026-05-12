@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Influence function computation for semiparametric estimators.
 
 Computes the empirical influence function (IF) for a given functional,

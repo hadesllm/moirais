@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Bayesian metric MDS with posterior credible regions (Bakker-Poole 2013)."""
 import numpy as np
 from ._richresult import RichResult

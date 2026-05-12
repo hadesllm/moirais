@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Penalised B-spline regression (P-splines; Eilers & Marx 1996).
 
 Solves

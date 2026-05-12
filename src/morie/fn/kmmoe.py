@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MoE router: softmax-gated expert selection."""
 import numpy as np
 from ._richresult import RichResult

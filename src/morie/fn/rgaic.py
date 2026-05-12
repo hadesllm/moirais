@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """AIC criterion for AR model order selection."""
 import numpy as np
 from ._richresult import RichResult

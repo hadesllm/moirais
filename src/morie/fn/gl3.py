@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Guttman's Lambda 3 (identical to Cronbach's alpha)."""
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ import pandas as pd
 def gl3(
     data: pd.DataFrame | np.ndarray,
 ) -> float:
-    """Guttman's Lambda 3 — equivalent to Cronbach's coefficient alpha.
+    """Guttman's Lambda 3 -- equivalent to Cronbach's coefficient alpha.
 
     lambda_3 = (k / (k-1)) * (1 - sum(var_i) / var_total)
 

@@ -1,8 +1,8 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """
 Average Treatment Effect on the Controls (ATC) via Hajek-weighted IPW.
 
-Implements ``estimate_atc`` — estimates the causal effect of treatment
+Implements ``estimate_atc`` -- estimates the causal effect of treatment
 among those who did not receive it (the controls).
 """
 

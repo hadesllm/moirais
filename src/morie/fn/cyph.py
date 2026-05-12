@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Difficulties strengthen the mind, as labor does the body. — Seneca"""
+# morie.fn -- function file (hadesllm/morie)
+"""Difficulties strengthen the mind, as labor does the body. -- Seneca"""
 
 from __future__ import annotations
 
@@ -103,4 +103,4 @@ cyph = detect_leakage
 
 
 def cheatsheet() -> str:
-    return "Difficulties strengthen the mind, as labor does the body. — Seneca"
+    return "Difficulties strengthen the mind, as labor does the body. -- Seneca"

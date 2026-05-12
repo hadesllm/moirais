@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Nuisance parameter estimation for causal inference."""
 
 from __future__ import annotations

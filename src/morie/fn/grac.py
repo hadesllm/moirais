@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Actor-critic with learned value baseline; advantage = r + gamma*V(s') - V(s)."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Political polarization index (Armstrong Ch 8)."""
 import numpy as np
 from ._richresult import RichResult

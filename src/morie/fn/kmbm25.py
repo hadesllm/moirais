@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BM25 relevance score for query-document matching."""
 import numpy as np
 from ._richresult import RichResult

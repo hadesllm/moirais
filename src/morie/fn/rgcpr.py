@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """CPR analysis via wavelet for shockable rhythm detection."""
 import numpy as np
 from ._richresult import RichResult

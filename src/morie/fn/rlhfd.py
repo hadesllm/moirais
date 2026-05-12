@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """RLHF reward-model score (Ouyang et al. 2022, InstructGPT)."""
 from __future__ import annotations
 

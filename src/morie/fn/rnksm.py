@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rank-sum test (Wilcoxon / Mann-Whitney variant)."""
 
 from __future__ import annotations

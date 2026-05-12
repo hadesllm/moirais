@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: For a general function g : R → R, we write g = g+ − g− where g+ ( x) = max{0, g( x) }
+    Formula: For a general function g : R -> R, we write g = g+ − g− where g+ ( x) = max{0, g( x) }
 
     Parameters
     ----------

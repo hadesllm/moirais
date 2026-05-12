@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 r"""Positional encoding (sinusoidal).
 
 Encodes position information into fixed vectors.

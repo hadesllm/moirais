@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_3_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: Solution: Allow x, y → ∞ in F (x + y) = F (x) + F (y), then we get1 = 2.
+    Formula: Solution: Allow x, y -> ∞ in F (x + y) = F (x) + F (y), then we get1 = 2.
 
     Parameters
     ----------

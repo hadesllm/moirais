@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mann-Whitney U statistic counting preferences between two samples."""
 import numpy as np
 from scipy import stats

@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_20_unnumbered_746(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: μ c1 − μ c2 ≤− δ and −→H (δ)
+    Formula: μ c1 − μ c2 ≤− δ and −->H (δ)
 
     Parameters
     ----------

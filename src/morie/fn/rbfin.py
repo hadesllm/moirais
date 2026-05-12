@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Radial basis function interpolation. 'I've got a bad feeling about this.' -- Various"""
 
 from __future__ import annotations

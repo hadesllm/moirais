@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: j ≤ ρ j , and deduce from the hypothesis that max 1≤ j ≤ nσ j/σ( n) → 0 as n → ∞ ,
+    Formula: j ≤ ρ j , and deduce from the hypothesis that max 1≤ j ≤ nσ j/σ( n) -> 0 as n -> ∞ ,
 
     Parameters
     ----------

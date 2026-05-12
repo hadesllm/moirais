@@ -11,7 +11,7 @@ def spatial_data_analysis_with_r_chapter_4_unnumbered_17(x):
     """
     Spatial expression (auto-extracted; see ref).
 
-    Formula: ˓→+datum=WGS84 +units=km")
+    Formula: ˓->+datum=WGS84 +units=km")
 
     Parameters
     ----------

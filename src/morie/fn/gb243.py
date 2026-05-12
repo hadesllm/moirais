@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """r-th order statistic from Uniform(0,1) follows Beta(r, n-r+1) distribution."""
 import numpy as np
 from scipy import stats

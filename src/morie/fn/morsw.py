@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generalized Morse wavelet."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Confine yourself to the present. — Marcus Aurelius"
+_QUOTE = "Confine yourself to the present. -- Marcus Aurelius"
 
 
 def morse_wavelet(

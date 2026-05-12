@@ -1,4 +1,4 @@
-"""Support vector machine classifier — simplified SMO."""
+"""Support vector machine classifier -- simplified SMO."""
 
 import numpy as np
 
@@ -90,4 +90,4 @@ def svm_classify(X, y, C=1.0, kernel="rbf", gamma=None, max_iter=500):
 
 
 def cheatsheet() -> str:
-    return "svm_classify({}) -> Support vector machine classifier — simplified SMO."
+    return "svm_classify({}) -> Support vector machine classifier -- simplified SMO."

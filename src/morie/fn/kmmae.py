@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Multimodal masked autoencoder: reconstruct masked patches across modalities."""
 import numpy as np
 from ._richresult import RichResult

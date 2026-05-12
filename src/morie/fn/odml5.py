@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DML: volatility effect on outcome."""
 
 from __future__ import annotations

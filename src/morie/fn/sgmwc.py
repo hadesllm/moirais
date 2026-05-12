@@ -46,7 +46,7 @@ def moving_window_cov(data=None, coords=None, *, n=50, window_size=20.0):
 
 short = "sgmwc"
 alias = "moving_window_cov"
-quote = "The only true wisdom is in knowing you know nothing. — Socrates"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 moving_window_cov = moving_window_cov
 
 

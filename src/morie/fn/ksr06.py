@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Maximal inequality bound for empirical processes (Kosorok 2008, Ch 2).
 
 For a P-Donsker class F with envelope in L_2(P):

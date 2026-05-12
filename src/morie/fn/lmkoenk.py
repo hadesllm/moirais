@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Koenker-Bassett heteroskedasticity test."""
 
 from ._containers import SpatialResult

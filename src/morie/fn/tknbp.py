@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Byte-pair encoding tokenization (Sennrich et al. 2016)."""
 from __future__ import annotations
 

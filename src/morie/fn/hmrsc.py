@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Randomized search: sample n_iter hyperparameter combinations from distributions."""
 import numpy as np
 from ._richresult import RichResult

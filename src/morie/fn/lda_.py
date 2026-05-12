@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Linear Discriminant Analysis (Fisher's LDA)."""
 
 from __future__ import annotations

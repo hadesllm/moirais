@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Calendar/time-of-day feature engineering (day-of-week, hour, month, is_holiday)."""
 import numpy as np
 from ._richresult import RichResult

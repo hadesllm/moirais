@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Importance sampling estimator (Geweke 1989).
 
 Given samples ``x_i ~ q`` and target measure ``p``, estimates

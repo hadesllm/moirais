@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Brownian motion as prior: k(s,t)=min(s,t), Holder-1/2 paths."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-"""RCT-assisted TMLE — augment RCT with observational."""
+"""RCT-assisted TMLE -- augment RCT with observational."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -8,7 +8,7 @@ __all__ = ["tmle_rct_assisted"]
 
 def tmle_rct_assisted(y_rct, y_obs, D, X):
     """
-    RCT-assisted TMLE — augment RCT with observational
+    RCT-assisted TMLE -- augment RCT with observational
 
     Formula: borrow obs strength under transportability
 
@@ -36,8 +36,8 @@ def tmle_rct_assisted(y_rct, y_obs, D, X):
     n = len(y_rct)
     result = float(np.mean(y_rct))
     se = float(np.std(y_rct, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "RCT-assisted TMLE — augment RCT with observational"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "RCT-assisted TMLE -- augment RCT with observational"})
 
 
 def cheatsheet():
-    return "tmlrct: RCT-assisted TMLE — augment RCT with observational"
+    return "tmlrct: RCT-assisted TMLE -- augment RCT with observational"

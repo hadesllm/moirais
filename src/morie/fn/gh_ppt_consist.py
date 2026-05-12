@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polya tree posterior contraction rate: n^{-s/(2s+1)} for s-Holder densities."""
 import numpy as np
 from ._richresult import RichResult

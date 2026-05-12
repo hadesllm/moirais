@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Synthetic difference-in-differences (Arkhangelsky et al., 2021)."""
 
 from __future__ import annotations

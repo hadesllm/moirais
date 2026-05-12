@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Sample size for Wilcoxon signed-rank test given power."""
 import numpy as np
 from scipy import stats

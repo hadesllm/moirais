@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Classic McEliece syndrome-based encryption."""
 
 from __future__ import annotations
@@ -13,7 +13,7 @@ def mceliece_encrypt(message: bytes, pk: np.ndarray | None = None) -> CryptoResu
 
     If pk is None, generates a fresh key pair first.
 
-    :param message: Ignored (KEM mode — encapsulates a random key).
+    :param message: Ignored (KEM mode -- encapsulates a random key).
     :param pk: Public key matrix (None to auto-generate).
     :return: CryptoResult with shared_secret, syndrome, keys in ``extra``.
     """

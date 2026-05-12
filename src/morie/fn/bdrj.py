@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Back-door adjustment formula (causal effect via covariate adjustment)."""
 import numpy as np
 from ._richresult import RichResult

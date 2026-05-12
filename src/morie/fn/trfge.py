@@ -1,7 +1,7 @@
-"""Transformer (single-head self-attention) for genomic prediction — NumPy.
+"""Transformer (single-head self-attention) for genomic prediction -- NumPy.
 
 Forward-only deterministic attention + ridge-regression head. We do not
-train the attention weights — keeping them random projections — and fit
+train the attention weights -- keeping them random projections -- and fit
 the linear head by closed-form ridge on the pooled context vector. This
 gives a NumPy-only, reproducible, sub-second implementation while still
 returning the per-position attention map for inspection.
@@ -27,7 +27,7 @@ def transformer_genomic(x, y, markers, d_model: int = 8, lam: float = 1.0,
     followed by mean-pooling and ridge regression.
 
     For each individual i with marker sequence M_i ∈ R^{L×1}:
-        E = M_i[:, None] @ W_emb        # (L, d_model)  — random embedding
+        E = M_i[:, None] @ W_emb        # (L, d_model)  -- random embedding
         Q = E @ W_Q,  K = E @ W_K,  V = E @ W_V
         A = softmax(Q K^T / sqrt(d_model))
         C = A @ V                       # (L, d_model)

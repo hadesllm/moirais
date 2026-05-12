@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Alpha-NOMINATE acceptance rate"""
 
 import numpy as np

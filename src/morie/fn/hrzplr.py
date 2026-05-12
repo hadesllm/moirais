@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Robinson (1988) partially linear regression estimator."""
 import numpy as np
 from ._richresult import RichResult

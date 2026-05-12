@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Backpropagation: gradient of the loss w.r.t. each weight layer via chain rule."""
 import numpy as np
 from ._richresult import RichResult

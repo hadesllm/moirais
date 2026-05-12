@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Fuzzy OR (t-conorm) operation."""
 
 import numpy as np

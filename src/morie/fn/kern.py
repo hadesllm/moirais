@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Gaussian KDE. 'Patience is bitter, but its fruit is sweet. — Aristotle' -- General"""
+# morie.fn -- function file (hadesllm/morie)
+"""Gaussian KDE. 'Patience is bitter, but its fruit is sweet. -- Aristotle' -- General"""
 
 from __future__ import annotations
 
@@ -68,4 +68,4 @@ kern = kde
 
 
 def cheatsheet() -> str:
-    return "kde({}) -> Gaussian KDE. 'Patience is bitter, but its fruit is sweet. — Aristotle' -- General"
+    return "kde({}) -> Gaussian KDE. 'Patience is bitter, but its fruit is sweet. -- Aristotle' -- General"

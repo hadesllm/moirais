@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Extract top eigenvectors. 'Gear Fifth!' -- Luffy, One Piece"""
 
 from __future__ import annotations

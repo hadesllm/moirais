@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PY power-law cluster growth: E[K_n] ~ C * n^d as n->infty for d in (0,1)."""
 import numpy as np
 from ._richresult import RichResult

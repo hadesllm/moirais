@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EM algorithm IRT estimation"""
 
 import numpy as np
@@ -28,7 +28,7 @@ def em_irt_estimate(votes=None, *, dims=1, n=10, m=5, max_iter=20):
 
 short = "emirt"
 alias = "em_irt_estimate"
-quote = "Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius"
+quote = "Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"
 em_irt_estimate = em_irt_estimate
 
 

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Randomized PCA. 'This is the way.' -- Din Djarin"""
 
 from __future__ import annotations

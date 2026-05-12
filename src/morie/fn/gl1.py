@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Guttman's Lambda 1 reliability lower bound."""
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ import pandas as pd
 def gl1(
     data: pd.DataFrame | np.ndarray,
 ) -> float:
-    """Guttman's Lambda 1 — simplest lower bound on reliability.
+    """Guttman's Lambda 1 -- simplest lower bound on reliability.
 
     lambda_1 = 1 - sum(var_i) / var_total
 

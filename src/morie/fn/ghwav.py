@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Wavelet spike-and-slab prior for function estimation."""
 import numpy as np
 from scipy.stats import norm
@@ -35,7 +35,7 @@ def _haar_idwt(coeffs, L):
     cur = coeffs[-1]
     details = list(coeffs[:-1])[::-1]   # finest first -> reverse to coarsest first
     for d in details[::-1]:
-        # Wait — coeffs[:-1] is [d_level1 (finest), d_level2, ...]
+        # Wait -- coeffs[:-1] is [d_level1 (finest), d_level2, ...]
         # We need to inverse from coarsest to finest, so iterate in reverse.
         out = np.empty(len(cur) + len(d))
         out[0::2] = (cur + d) / np.sqrt(2.0)
@@ -69,7 +69,7 @@ def ghosal_wavelet_prior(x, pi=0.5, sigma=None, noise=None):
 
     Parameters
     ----------
-    x : array-like — observed signal (1D).
+    x : array-like -- observed signal (1D).
     pi : prior inclusion probability.
     sigma : slab sd (if None, set to robust sd of the wavelet
         coefficients).

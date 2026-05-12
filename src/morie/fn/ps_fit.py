@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 Propensity score estimation via logistic regression.
 
-Implements ``compute_propensity_scores`` — the foundational propensity score
+Implements ``compute_propensity_scores`` -- the foundational propensity score
 model used by IPW, AIPW, ATT, ATC, and other causal estimators in morie.
 """
 

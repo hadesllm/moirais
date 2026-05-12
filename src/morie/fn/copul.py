@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Copula parameter estimation (Gaussian / Clayton / Gumbel).
 
 Implements method-of-moments (or rank-based) fits via Kendall's tau

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Entropy balancing weights (Hainmueller, 2012)."""
 
 from __future__ import annotations

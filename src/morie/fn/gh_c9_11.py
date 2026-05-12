@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Interval censoring with DP prior: contraction in Hellinger for log-concave models."""
 import numpy as np
 from ._richresult import RichResult

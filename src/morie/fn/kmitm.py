@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Image-Text Matching (ITM) binary head on top of contrastive encoders."""
 import numpy as np
 from ._richresult import RichResult

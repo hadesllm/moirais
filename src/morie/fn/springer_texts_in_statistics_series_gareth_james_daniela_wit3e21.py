@@ -11,7 +11,7 @@ def springer_texts_in_statistics_series_gareth_james_daniela_wit_chapter_3_equat
     """
     Regression equation extracted from [Springer Texts in Statistics Series] Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani - An Introduction To Statistical Learning  With Applications In R.
 
-    Formula: 0,β1,...,β p—the response value cannot be predicted perfectly
+    Formula: 0,β1,...,β p--the response value cannot be predicted perfectly
 
     Parameters
     ----------

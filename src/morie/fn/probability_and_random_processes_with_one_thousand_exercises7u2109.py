@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Combine this with (16) to see thatYn(ω) → Y(ω) for all pointsω of continuity of Y . However,
+    Formula: Combine this with (16) to see thatYn(ω) -> Y(ω) for all pointsω of continuity of Y . However,
 
     Parameters
     ----------

@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Patience is bitter, but its fruit is sweet. — Aristotle"
+_QUOTE = "Patience is bitter, but its fruit is sweet. -- Aristotle"
 
 
 def st_segment(signal, qrs_off, t_on, fs: float = 1.0, **kwargs) -> DescriptiveResult:

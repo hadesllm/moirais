@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Variance of DP: Var[G(A)] = G0(A)(1-G0(A))/(alpha+1)."""
 import numpy as np
 from ._richresult import RichResult

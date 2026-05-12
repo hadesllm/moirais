@@ -1,4 +1,4 @@
-"""An unexamined life is not worth living. — Socrates"""
+"""An unexamined life is not worth living. -- Socrates"""
 
 from __future__ import annotations
 
@@ -13,7 +13,7 @@ def tps_use_of_force(
     force_types: list[str] | np.ndarray,
     n_encounters: int,
 ) -> CrimeResult:
-    """An unexamined life is not worth living. — Socrates"""
+    """An unexamined life is not worth living. -- Socrates"""
     if n_encounters <= 0:
         raise ValueError("n_encounters must be positive")
     ft = list(force_types)
@@ -33,4 +33,4 @@ tpsuof = tps_use_of_force
 
 
 def cheatsheet() -> str:
-    return "An unexamined life is not worth living. — Socrates"
+    return "An unexamined life is not worth living. -- Socrates"

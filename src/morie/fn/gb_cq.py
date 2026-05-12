@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Cramer's V contingency measure for general r x c table."""
 import numpy as np
 from ._richresult import RichResult

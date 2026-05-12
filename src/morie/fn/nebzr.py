@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius"""
+# morie.fn -- function file (hadesllm/morie)
+"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
 
 from __future__ import annotations
 
@@ -139,4 +139,4 @@ nebzr = rrt_plan
 
 
 def cheatsheet() -> str:
-    return "Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius"
+    return "Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"

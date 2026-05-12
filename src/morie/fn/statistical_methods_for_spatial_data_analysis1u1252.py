@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_1252(x, c
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: n(β egls − β) −→ G(0, Q    )
+    Formula: n(β egls − β) −-> G(0, Q    )
 
     Parameters
     ----------

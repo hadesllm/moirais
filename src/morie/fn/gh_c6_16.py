@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Alpha-posterior (power-likelihood) for robust consistency: pi_alpha(theta|X^n) proportional pi(theta) * prod p_theta(X_i)^alpha."""
 import numpy as np
 from ._richresult import RichResult

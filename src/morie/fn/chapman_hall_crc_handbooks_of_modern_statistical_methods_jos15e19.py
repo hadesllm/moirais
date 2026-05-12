@@ -11,7 +11,7 @@ def chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter_15_equa
     """
     Dispersion equation extracted from [Chapman & Hall CRC Handbooks of Modern Statistical Methods] José R. Zubizarreta, Elizabeth A. Stuart, Dylan S. Small, Paul R - Handbook of Matching and Weighting Adjustments for Causal Inference.
 
-    Formula: [EQ] − →N(B(f), σ2(f)), (15.19)
+    Formula: [EQ] − ->N(B(f), σ2(f)), (15.19)
 
     Parameters
     ----------

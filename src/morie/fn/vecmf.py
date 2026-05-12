@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """VECM estimation with error-correction (Johansen 1995)."""
 from __future__ import annotations
 

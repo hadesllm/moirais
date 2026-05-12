@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Polya tree process PT(alpha, pi): beta-distributed mass allocations at each tree level."""
 import numpy as np
 from ._richresult import RichResult

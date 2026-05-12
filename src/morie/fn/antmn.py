@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Allometric scaling regression. 'I know a guy.' -- Ant-Man"""
 
 from __future__ import annotations

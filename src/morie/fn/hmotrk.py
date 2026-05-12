@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Object tracking across frames using detection + association."""
 import numpy as np
 from scipy import stats

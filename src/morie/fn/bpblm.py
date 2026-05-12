@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bits-per-byte evaluation metric (Gao et al. 2020, The Pile)."""
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ __all__ = ["bits_per_byte"]
 
 
 def bits_per_byte(x, n_bytes: int | None = None):
-    """Bits-per-byte (BPB) — model-size-independent LM metric.
+    """Bits-per-byte (BPB) -- model-size-independent LM metric.
 
     Formula:  BPB = NLL_nats / (N_tokens * ln(2) * bytes_per_token)
             = total_NLL_nats / (n_bytes * ln(2))

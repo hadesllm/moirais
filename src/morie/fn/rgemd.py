@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Empirical mode decomposition (EMD) sifting algorithm."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bayesian nonparametric hypothesis testing via Polya-tree marginals."""
 import numpy as np
 from scipy.stats import norm
@@ -22,7 +22,7 @@ def ghosal_np_testing(x, ref_loc=0.0, ref_scale=1.0, depth=6, c=1.0):
 
     where ``n_eps`` are the counts of observations falling in dyadic
     cells.  We compare this to ``H0`` (which is exactly the centring
-    measure) — the Bayes factor is
+    measure) -- the Bayes factor is
 
         BF_{10} = exp( sum_eps betaln(.) - betaln(.) ).
 
@@ -31,9 +31,9 @@ def ghosal_np_testing(x, ref_loc=0.0, ref_scale=1.0, depth=6, c=1.0):
     Parameters
     ----------
     x : array-like.
-    ref_loc, ref_scale : float — reference mean and sd.
-    depth : int — tree depth.
-    c : float — tree concentration.
+    ref_loc, ref_scale : float -- reference mean and sd.
+    depth : int -- tree depth.
+    c : float -- tree concentration.
 
     Returns
     -------

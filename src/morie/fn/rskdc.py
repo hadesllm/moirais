@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Outcome rate by risk score decile."""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Seasonal ARIMA (SARIMA) model."""
 
 import numpy as np

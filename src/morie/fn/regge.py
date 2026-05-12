@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Regge trajectory alpha(s) = alpha_0 + alpha_prime * s."""
 
 from __future__ import annotations

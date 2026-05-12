@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Condorcet winner detection from pairwise preferences."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def condorcet_winner(preference_matrix) -> DescriptiveResult:
-    """Out of chaos, comes order. — Friedrich Nietzsche"""
+    """Out of chaos, comes order. -- Friedrich Nietzsche"""
     import numpy as np
 
     M = np.asarray(preference_matrix, dtype=float)

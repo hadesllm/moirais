@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """HC0/HC1/HC2/HC3 heteroskedasticity-robust standard errors."""
 
 from __future__ import annotations

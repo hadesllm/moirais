@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dropout layer: mask each activation with prob p (training time)."""
 import numpy as np
 from ._richresult import RichResult

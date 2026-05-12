@@ -12,7 +12,7 @@ def winsorize(
     *,
     trim: float = 0.1,
 ) -> ESRes:
-    """Winsorized mean — extreme values replaced by boundary percentiles.
+    """Winsorized mean -- extreme values replaced by boundary percentiles.
 
     Parameters
     ----------

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """EM algorithm imputation for missing data."""
 
 from __future__ import annotations

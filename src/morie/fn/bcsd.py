@@ -10,7 +10,7 @@ def bcsd_downscaling(gcm, obs):
     """
     Bias-correction spatial-disaggregation
 
-    Formula: bias-correct → spatial disaggregation via climatology
+    Formula: bias-correct -> spatial disaggregation via climatology
 
     Parameters
     ----------

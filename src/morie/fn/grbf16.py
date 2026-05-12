@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """BF16 representation: 1 sign + 8 exponent + 7 mantissa bits (same exponent range as FP32)."""
 import numpy as np
 from ._richresult import RichResult

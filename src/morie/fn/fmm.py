@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Finite mixture model (general Gaussian)."""
 
 from __future__ import annotations

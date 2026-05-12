@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Grenander estimator (NPMLE of monotone decreasing density)."""
 
 from __future__ import annotations

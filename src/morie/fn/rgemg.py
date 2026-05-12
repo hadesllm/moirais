@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""EMG RMS envelope — Rangayyan Ch 8."""
+# morie.fn -- function file (hadesllm/morie)
+"""EMG RMS envelope -- Rangayyan Ch 8."""
 from __future__ import annotations
 
 import numpy as np
@@ -64,4 +64,4 @@ def rangayyan_emg_rms(x, window=64, fs=1.0):
 
 
 def cheatsheet():
-    return "rgemg: sliding-window RMS envelope — Rangayyan Ch 8"
+    return "rgemg: sliding-window RMS envelope -- Rangayyan Ch 8"

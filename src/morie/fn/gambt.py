@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Combinatorial probability (card counting). 'The name is Gambit. Remember it.' -- Gambit"""
 
 from __future__ import annotations

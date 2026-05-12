@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LIME: Local Interpretable Model-Agnostic Explanations.
 
 LIME approximates any black-box model locally around an instance

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Learning curves: train and validation RMSE as a function of m."""
 import numpy as np
 from ._richresult import RichResult

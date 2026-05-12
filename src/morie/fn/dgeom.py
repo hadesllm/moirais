@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Geometric distribution probability mass function."""
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ def dgeom(x: Union[int, np.ndarray], prob: float) -> Union[float, np.ndarray]:
     before the first success. scipy.stats.geom counts the trial number
     of the first success, so we shift by +1.
 
-    :param x: Non-negative integer(s) — number of failures before first success.
+    :param x: Non-negative integer(s) -- number of failures before first success.
     :param prob: Probability of success (0 < prob <= 1).
     :return: PMF value(s).
     :raises ValueError: If prob not in (0, 1].

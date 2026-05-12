@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Perceiver: cross-attention to learned latents from high-dim inputs."""
 import numpy as np
 from ._richresult import RichResult

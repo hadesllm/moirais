@@ -11,7 +11,7 @@ def design_of_observational_studies_chapter_20_unnumbered_792(x, cdf=None):
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: |τ2| ≥ $500—that is, for testing H0 : τ1 ≤ 0 ∨ |τ2| ≥ $500—is the maximum of
+    Formula: |τ2| ≥ $500--that is, for testing H0 : τ1 ≤ 0 ∨ |τ2| ≥ $500--is the maximum of
 
     Parameters
     ----------

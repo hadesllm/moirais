@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Johnson-Lindenstrauss lemma: d' = O(log(n)/eps^2) preserves pairwise distances."""
 import numpy as np
 from ._richresult import RichResult

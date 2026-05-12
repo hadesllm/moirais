@@ -11,7 +11,7 @@ def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnum
     """
     Nonparametric expression (auto-extracted; see ref).
 
-    Formula: [EQ] d=^{b-a)/Mty _ = a-^kd for k = 0, 1,...,M — 1.
+    Formula: [EQ] d=^{b-a)/Mty _ = a-^kd for k = 0, 1,...,M -- 1.
 
     Parameters
     ----------

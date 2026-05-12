@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Confirmatory Factor Analysis (basic implementation)."""
 
 from __future__ import annotations

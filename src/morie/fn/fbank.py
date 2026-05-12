@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """QMF/CQF analysis+synthesis filter bank design."""
 
 from __future__ import annotations

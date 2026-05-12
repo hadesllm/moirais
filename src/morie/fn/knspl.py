@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Kernel-based non-stationary spatial prediction (Schabenberger & Gotway Ch 8)."""
 
 import numpy as np

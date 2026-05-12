@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Relapse vs reinfection probability for P. vivax (Pv3Rs)."""
 
 __all__ = ["relps"]

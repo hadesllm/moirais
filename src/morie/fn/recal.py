@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Recall (sensitivity / true positive rate)."""
 
 from __future__ import annotations

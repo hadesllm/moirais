@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Template matching for EEG spike-and-wave detection."""
 import numpy as np
 from ._richresult import RichResult

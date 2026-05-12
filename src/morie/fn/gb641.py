@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Two-sample median test using count U above combined median."""
 import numpy as np
 from scipy import stats

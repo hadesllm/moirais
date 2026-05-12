@@ -1,4 +1,4 @@
-"""Wilson score interval for binomial proportion. 'Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius' -- General usage"""
+"""Wilson score interval for binomial proportion. 'Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius' -- General usage"""
 
 from __future__ import annotations
 

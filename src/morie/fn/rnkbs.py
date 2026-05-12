@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rank-based test for randomness (Gibbons Ch 3.5).
 
 Mann's rank test for trend: count the number of pairs (i, j) with

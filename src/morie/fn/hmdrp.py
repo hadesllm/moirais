@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Dropout: randomly zero units during training with probability p."""
 import numpy as np
 from ._richresult import RichResult

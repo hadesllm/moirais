@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 Interactive Regression Model (IRM) via DoubleML.
 
-Implements ``estimate_irm`` — estimates the ATE allowing for treatment effect
+Implements ``estimate_irm`` -- estimates the ATE allowing for treatment effect
 heterogeneity using Neyman-orthogonal scores and cross-fitting.
 """
 

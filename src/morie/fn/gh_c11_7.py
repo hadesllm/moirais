@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Riemann-Liouville process: integrated BM of order s, Holder-s paths."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hawking radiation temperature."""
 
 __all__ = ["hawkr"]

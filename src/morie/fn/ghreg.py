@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Bayesian-nonparametric regression — GP prior on the mean."""
+# morie.fn -- function file (hadesllm/morie)
+"""Bayesian-nonparametric regression -- GP prior on the mean."""
 import numpy as np
 from ._richresult import RichResult
 from .ghgps import ghosal_gp_squared_exponential

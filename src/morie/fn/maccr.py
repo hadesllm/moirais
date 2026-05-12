@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Macro/micro/weighted average precision (multi-class)."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "Difficulties strengthen the mind, as labor does the body. — Seneca"
+_QUOTE = "Difficulties strengthen the mind, as labor does the body. -- Seneca"
 
 
 def multiclass_precision(y_true, y_pred, *, average="macro", labels=None, **kwargs) -> ESRes:

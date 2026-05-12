@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Pearl's do-operator: intervention by setting variable to value."""
 import numpy as np
 from ._richresult import RichResult

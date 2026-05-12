@@ -11,7 +11,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: r= 0( − 1) r/ r ! → e− 1 as n → ∞ . Deduce that lim n→∞ n− 1EUn = e− 2.
+    Formula: r= 0( − 1) r/ r ! -> e− 1 as n -> ∞ . Deduce that lim n->∞ n− 1EUn = e− 2.
 
     Parameters
     ----------

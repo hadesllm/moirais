@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Theorem 2.2: bias of bias-reduced KDFE is O(h^4)."""
 import numpy as np
 from ._richresult import RichResult

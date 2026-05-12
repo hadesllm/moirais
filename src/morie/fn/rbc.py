@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Rank-biserial correlation (Mann-Whitney based)."""
 
 from typing import Union

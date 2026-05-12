@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP-mixture density estimate (collapsed Gibbs)."""
 import numpy as np
 from scipy.stats import norm, t as student_t
@@ -17,7 +17,7 @@ def ghosal_dpmixture_density(x, alpha=1.0, sigma=None, grid=None,
         mu_i | G        ~ G
         G               ~ DP(alpha, G0),  G0 = N(m0, s0^2)
 
-    Implements Algorithm 3 of Neal (2000) — a collapsed Polya-urn Gibbs
+    Implements Algorithm 3 of Neal (2000) -- a collapsed Polya-urn Gibbs
     sampler on cluster labels with marginalised cluster means.  The
     posterior-mean predictive density evaluated on a grid ``t`` is
 

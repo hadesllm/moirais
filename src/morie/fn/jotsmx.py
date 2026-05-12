@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """TSMixer: MLP-only architecture mixing across time and features alternately."""
 import numpy as np
 from ._richresult import RichResult

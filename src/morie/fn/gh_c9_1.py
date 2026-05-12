@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Log-spline prior contraction rate: optimal n^{-s/(2s+1)} for s-Sobolev density."""
 import numpy as np
 from ._richresult import RichResult

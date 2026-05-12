@@ -1,4 +1,4 @@
-"""HTTP fetch layer for SIU mining — caching + politeness + retries.
+"""HTTP fetch layer for SIU mining -- caching + politeness + retries.
 
 Sequential by default (single in-flight request, polite 250 ms gap)
 because Phase 2a is a scaffold. Phase 2c will turn on async concurrency
@@ -27,7 +27,7 @@ SIU_BASE = "https://www.siu.on.ca"
 REPORT_URL = SIU_BASE + "/en/directors_report_details.php?drid={drid}"
 NEWS_URL = SIU_BASE + "/en/news_template.php?drid={drid}"
 
-# Default cache lives at the project's `data/cache/siu/` — same root the
+# Default cache lives at the project's `data/cache/siu/` -- same root the
 # rest of morie uses for pickled / RDS / SQLite caches.
 # __file__ is .../libexec/config/tools/py-package/morie/siu/_scraper.py
 # parents[6] climbs back to dev/sphinx/project/.
@@ -72,7 +72,7 @@ def scrape_drid(
 ) -> dict:
     """Fetch + parse one director's report. Returns a SIU.csv row dict.
 
-    On 404, returns a row with case_number=None and the source_url set —
+    On 404, returns a row with case_number=None and the source_url set --
     the caller decides whether to drop it.
 
     If `fetch_news=True` (default) and the report links to a news release
@@ -179,7 +179,7 @@ def scrape_range(
     """Yield rows for every drid in [drid_min, drid_max] inclusive.
 
     Sequential, polite (sleeps `delay_s` between fetches that touch the
-    network — cache hits don't sleep). Phase-2a default; Phase-2c will
+    network -- cache hits don't sleep). Phase-2a default; Phase-2c will
     introduce a concurrent variant behind the same name.
     """
     with httpx.Client(timeout=DEFAULT_TIMEOUT,
@@ -194,7 +194,7 @@ def scrape_range(
             row = scrape_drid(drid, client=client, cache=cache, cache_dir=cache_dir)
             last_was_network = not cache_hit
             if progress:
-                cn = row.get("case_number") or "—"
+                cn = row.get("case_number") or "--"
                 print(f"  drid={drid:5}  case={cn}  cached={cache_hit}")
             yield row
 

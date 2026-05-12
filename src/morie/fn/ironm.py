@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""That which does not kill us makes us stronger. — Friedrich Nietzsche"""
+# morie.fn -- function file (hadesllm/morie)
+"""That which does not kill us makes us stronger. -- Friedrich Nietzsche"""
 
 from __future__ import annotations
 
@@ -127,4 +127,4 @@ ironm = armor_optimize
 
 
 def cheatsheet() -> str:
-    return "That which does not kill us makes us stronger. — Friedrich Nietzsche"
+    return "That which does not kill us makes us stronger. -- Friedrich Nietzsche"

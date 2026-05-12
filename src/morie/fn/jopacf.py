@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partial autocorrelation function at lag k (controls for intermediate lags)."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Goldman-Hodgkin-Katz (GHK) equation for resting membrane potential."""
 import numpy as np
 from ._richresult import RichResult

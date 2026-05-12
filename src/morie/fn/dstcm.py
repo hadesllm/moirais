@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Distance comparison stats. 'Blackwhip.' -- Deku, My Hero Academia"""
 
 from __future__ import annotations

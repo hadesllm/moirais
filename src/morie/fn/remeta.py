@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random-effects meta-analytic pooling (DerSimonian-Laird)."""
 
 import math

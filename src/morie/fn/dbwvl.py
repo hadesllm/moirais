@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generate Daubechies wavelet filter coefficients."""
 
 from __future__ import annotations

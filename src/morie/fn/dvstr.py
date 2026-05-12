@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Ensemble stacking. 'Devastator, merge!' -- Scrapper"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mixture model for recidivism: recidivists vs desisters."""
 
 from __future__ import annotations

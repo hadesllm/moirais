@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""It is the mark of an educated mind to entertain a thought without accepting it. — Aristotle"""
+# morie.fn -- function file (hadesllm/morie)
+"""It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle"""
 
 from __future__ import annotations
 

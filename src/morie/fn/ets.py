@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Exponential smoothing (Holt-Winters) for time series forecasting."""
 
 import numpy as np

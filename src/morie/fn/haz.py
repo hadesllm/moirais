@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hazard rate λ(t) with R-style verbose result."""
 
 
@@ -19,7 +19,7 @@ def haz(pdf_t: float, surv_t: float):
             ("Conditional failure prob (1 - S(t)/S(t+))", "instantaneous"),
         ],
         interpretation=("Hazard rate is the instantaneous failure rate at t "
-                        "given survival up to t. Constant hazard → exponential. "
-                        "Increasing → ageing; decreasing → infant mortality."),
+                        "given survival up to t. Constant hazard -> exponential. "
+                        "Increasing -> ageing; decreasing -> infant mortality."),
         payload={"value": h, "statistic": h, "pdf": pdf_t, "surv": surv_t},
     )

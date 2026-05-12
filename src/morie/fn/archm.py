@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""ARCH-in-Mean (ARCH-M) — risk premium proportional to conditional volatility."""
+# morie.fn -- function file (hadesllm/morie)
+"""ARCH-in-Mean (ARCH-M) -- risk premium proportional to conditional volatility."""
 from __future__ import annotations
 
 import numpy as np

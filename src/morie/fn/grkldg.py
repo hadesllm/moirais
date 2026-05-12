@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Closed-form KL( N(mu, sigma^2) || N(0, I) ) per dimension."""
 import numpy as np
 from ._richresult import RichResult

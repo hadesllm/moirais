@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_723(x, cd
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: Cov[I(ω 1 ), I(ω 2 )] → 0, if ω 1 = ω 2 .               (4.71)
+    Formula: Cov[I(ω 1 ), I(ω 2 )] -> 0, if ω 1 = ω 2 .               (4.71)
 
     Parameters
     ----------

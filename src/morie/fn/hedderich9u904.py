@@ -11,7 +11,7 @@ def hedderich_chapter_9_unnumbered_904(x):
     """
     Probability expression (auto-extracted; see ref).
 
-    Formula: λ→λ= 0.5
+    Formula: λ->λ= 0.5
 
     Parameters
     ----------

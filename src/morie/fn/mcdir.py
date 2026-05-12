@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """McDiarmid bounded-differences inequality."""
 
 from __future__ import annotations

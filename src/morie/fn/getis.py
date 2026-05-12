@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Getis-Ord Gi* hot spot statistic."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Expected number of distinct values from DP: E[K_n] ~ alpha*log(n) for large n."""
 import numpy as np
 from ._richresult import RichResult

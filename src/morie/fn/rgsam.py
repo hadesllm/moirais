@@ -1,5 +1,5 @@
-# morie.fn — function file (hadesllm/morie)
-"""Sample entropy — Rangayyan Ch 7."""
+# morie.fn -- function file (hadesllm/morie)
+"""Sample entropy -- Rangayyan Ch 7."""
 from __future__ import annotations
 
 import numpy as np
@@ -55,7 +55,7 @@ def rangayyan_sample_entropy(x, m=2, r=None):
             ("B (matches m)", B), ("A (matches m+1)", A),
             ("SampEn", sampen),
         ],
-        interpretation=f"SampEn = {sampen:.4g}. Higher → more irregular.",
+        interpretation=f"SampEn = {sampen:.4g}. Higher -> more irregular.",
         payload={"SampEn": sampen, "A": A, "B": B, "m": m, "r": r, "n": N},
     )
     return with_describe_pointer(res, "rgsam")
@@ -69,4 +69,4 @@ def rangayyan_sample_entropy(x, m=2, r=None):
 
 
 def cheatsheet():
-    return "rgsam: sample entropy — Rangayyan Ch 7"
+    return "rgsam: sample entropy -- Rangayyan Ch 7"

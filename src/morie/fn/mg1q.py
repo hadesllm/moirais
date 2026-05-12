@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """M/G/1 queue via Pollaczek-Khinchine formula."""
 
 from __future__ import annotations

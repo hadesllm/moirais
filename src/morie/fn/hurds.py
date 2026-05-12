@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Hurdle model (two-part: logistic + truncated Poisson)."""
 
 from __future__ import annotations

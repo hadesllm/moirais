@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GPT-3: 175B-parameter autoregressive LM capable of in-context learning."""
 import numpy as np
 from ._richresult import RichResult

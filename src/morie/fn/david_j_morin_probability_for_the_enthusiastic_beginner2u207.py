@@ -11,7 +11,7 @@ def david_j_morin_probability_for_the_enthusiastic_beginner_chapter_2_unnumbered
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: because for any fixed values of k and λ, the k λϵ exponent becomes infinitesimally small as ϵ → 0. Basically, in (1 − λϵ )−k we’re forming a finite power
+    Formula: because for any fixed values of k and λ, the k λϵ exponent becomes infinitesimally small as ϵ -> 0. Basically, in (1 − λϵ )−k we’re forming a finite power
 
     Parameters
     ----------

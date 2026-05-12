@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP conjugacy: posterior given n i.i.d. observations is DP."""
 import numpy as np
 from ._richresult import RichResult

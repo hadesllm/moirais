@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Graph articulation points. 'I am afraid of the truth.' -- Apoc"""
 
 from __future__ import annotations

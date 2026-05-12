@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mean change-point detection via CUSUM. 'In time, the suffering of your people will persuade you.' -- Count Dooku"""
 
 from __future__ import annotations

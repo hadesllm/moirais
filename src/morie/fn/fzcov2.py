@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Covariance between S_tilde_X,2 and S_tilde_X."""
 import numpy as np
 from ._richresult import RichResult

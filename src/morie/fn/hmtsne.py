@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """t-SNE: KL divergence between joint probabilities in high- and low-dim."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Plurality voting (first-past-the-post)."""
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def plurality_vote(first_choices) -> DescriptiveResult:
-    """You have power over your mind — not outside events. — Marcus Aurelius"""
+    """You have power over your mind -- not outside events. -- Marcus Aurelius"""
     choices = np.asarray(first_choices, dtype=int).ravel()
     if len(choices) == 0:
         raise ValueError("first_choices must be non-empty.")

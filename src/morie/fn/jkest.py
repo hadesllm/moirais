@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Jackknife bias and variance estimation (Quenouille 1956, Tukey 1958)."""
 from __future__ import annotations
 

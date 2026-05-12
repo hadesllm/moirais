@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Peephole LSTM: gates also look at cell state."""
 import numpy as np
 from ._richresult import RichResult

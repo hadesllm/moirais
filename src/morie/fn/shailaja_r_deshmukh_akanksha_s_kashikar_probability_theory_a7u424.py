@@ -11,7 +11,7 @@ def shailaja_r_deshmukh_akanksha_s_kashikar_probability_theory_a_chapter_7_unnum
     """
     GeneralStatistics expression (auto-extracted; see ref).
 
-    Formula: that ˆθn ≥ 0, for ϵ > 0, as n → ∞,
+    Formula: that ˆθn ≥ 0, for ϵ > 0, as n -> ∞,
 
     Parameters
     ----------

@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""OpenCLIP contrastive objective — scaled dot-product between normalized text + image emb."""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""OpenCLIP contrastive objective -- scaled dot-product between normalized text + image emb."""
 import numpy as np
 from ._richresult import RichResult
 
@@ -8,7 +8,7 @@ __all__ = ["alammar_openclip_contrastive"]
 
 def alammar_openclip_contrastive(I_emb, T_emb, tau):
     """
-    OpenCLIP contrastive objective — scaled dot-product between normalized text + image emb
+    OpenCLIP contrastive objective -- scaled dot-product between normalized text + image emb
 
     Formula: L = (1/2)(CE(sim_IT/tau, labels) + CE(sim_TI/tau, labels)); sim_ij = I_i.T_j after L2-norm
 
@@ -34,8 +34,8 @@ def alammar_openclip_contrastive(I_emb, T_emb, tau):
     n = len(I_emb)
     result = float(np.mean(I_emb))
     se = float(np.std(I_emb, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "OpenCLIP contrastive objective — scaled dot-product between normalized text + image emb"})
+    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "OpenCLIP contrastive objective -- scaled dot-product between normalized text + image emb"})
 
 
 def cheatsheet():
-    return "alocp: OpenCLIP contrastive objective — scaled dot-product between normalized text + image emb"
+    return "alocp: OpenCLIP contrastive objective -- scaled dot-product between normalized text + image emb"

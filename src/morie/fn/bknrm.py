@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """L2 (Euclidean) norm of a vector."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GRU cell: reset and update gates."""
 import numpy as np
 from ._richresult import RichResult

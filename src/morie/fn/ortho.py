@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Neyman-orthogonal score computation."""
 
 from __future__ import annotations

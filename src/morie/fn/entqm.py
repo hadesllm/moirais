@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Quantum entanglement entropy (von Neumann)."""
 
 __all__ = ["entqm"]

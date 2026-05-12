@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Resource depletion model. 'I hunger.' -- Galactus"""
 
 from __future__ import annotations

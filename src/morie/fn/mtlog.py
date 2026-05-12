@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Matrix logarithm via inverse scaling and squaring."""
 
 from __future__ import annotations

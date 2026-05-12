@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Efficacy of Wilcoxon rank-sum test for two-sample location."""
 import numpy as np
 from scipy import stats

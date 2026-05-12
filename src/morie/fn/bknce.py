@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Noise-Contrastive Estimation: binary-classify data vs noise distribution q."""
 import numpy as np
 from ._richresult import RichResult

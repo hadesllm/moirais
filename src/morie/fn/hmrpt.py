@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random patches: subsample both rows and features per base model."""
 import numpy as np
 from ._richresult import RichResult

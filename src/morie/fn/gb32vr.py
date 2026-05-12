@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Variance of total number of runs under null hypothesis."""
 import numpy as np
 from ._richresult import RichResult

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Three properties of linear rank statistics (score reversal, conjugate)."""
 import numpy as np
 from scipy import stats

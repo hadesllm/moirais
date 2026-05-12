@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ARE values for normal distribution: Wilcoxon=3/pi, sign=2/pi relative to t."""
 import numpy as np
 from ._richresult import RichResult

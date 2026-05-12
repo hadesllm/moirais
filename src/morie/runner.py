@@ -13,7 +13,7 @@ from .modules import DEFAULT_CPADS_CSV, list_modules, run_module
 from .perseus import ask_percy
 
 # ---------------------------------------------------------------------------
-# Emissions tracking — use vendored morie.emissions, fall back to codecarbon
+# Emissions tracking -- use vendored morie.emissions, fall back to codecarbon
 # ---------------------------------------------------------------------------
 
 try:
@@ -205,7 +205,7 @@ def build_parser() -> argparse.ArgumentParser:
     percy_talk = subparsers.add_parser(
         "percy",
         aliases=["perseus"],
-        help="Talk to Perseus — MORIE's expert AI (auto-detects best connection)",
+        help="Talk to Perseus -- MORIE's expert AI (auto-detects best connection)",
     )
     percy_talk.add_argument("question", nargs="?", default=None, help="Question (omit for interactive mode)")
     percy_talk.add_argument("--model", default=None, help="Override model name")
@@ -431,12 +431,12 @@ def build_parser() -> argparse.ArgumentParser:
 def _load_dotenv_if_present() -> None:
     """Auto-load a nearby .env file into os.environ so subcommands pick up
     GOOGLE_CLOUD_PROJECT, MORIE_EE_KEY_PATH, etc. without requiring the
-    user to `source` before calling `morie`. Zero-dep parser — only simple
+    user to `source` before calling `morie`. Zero-dep parser -- only simple
     KEY=VALUE lines, ignores comments and blanks, won't overwrite
     already-exported variables (shell wins).
 
     Tests that need a deterministic "no credentials" baseline set
-    MORIE_SKIP_DOTENV=1 so this loader becomes a no-op — otherwise
+    MORIE_SKIP_DOTENV=1 so this loader becomes a no-op -- otherwise
     a .env with valid keys would defeat the purge."""
     import os
     if os.environ.get("MORIE_SKIP_DOTENV") == "1":
@@ -499,7 +499,7 @@ def main() -> int:
     parser = build_parser()
     args = parser.parse_args()
 
-    # Auto-detect: no subcommand + interactive TTY → launch TUI or chat REPL.
+    # Auto-detect: no subcommand + interactive TTY -> launch TUI or chat REPL.
     if args.command is None:
         if sys.stdout.isatty() and sys.stdin.isatty():
             try:
@@ -509,7 +509,7 @@ def main() -> int:
                     return launch_tui()
             except ImportError:
                 pass
-            # Textual not available — try chat REPL.
+            # Textual not available -- try chat REPL.
             from .chat import run_chat_repl
 
             return run_chat_repl()
@@ -712,7 +712,7 @@ def main() -> int:
                 continue
             rid = entry.get("ckan_resource_id", "")
             if not rid:
-                print(f"  {key}: no CKAN resource ID — download the CSV manually to {entry['local_path']}")
+                print(f"  {key}: no CKAN resource ID -- download the CSV manually to {entry['local_path']}")
                 continue
             print(f"  Downloading {key} from CKAN (limit={args.limit})...")
             try:
@@ -1073,7 +1073,7 @@ def _handle_repl(args: argparse.Namespace) -> int:
 
 
 PERCY_MODELS = [
-    ("functiongemma:270m", "0.3 GB", "ToolCall", "FunctionGemma 270M — fast tool calling"),
+    ("functiongemma:270m", "0.3 GB", "ToolCall", "FunctionGemma 270M -- fast tool calling"),
     ("functiongemma", "0.3 GB", "ToolCall", "FunctionGemma (default tag)"),
     ("gemma4:e2b", "7.2 GB", "LLM", "Perseus base model (Gemma 4)"),
     ("gemma4:e2b-it-q4_K_M", "7.2 GB", "LLM", "Gemma 4 instruction-tuned Q4"),
@@ -1131,30 +1131,30 @@ def _handle_percy(args: argparse.Namespace) -> int:
     cloud_token = os.environ.get("PERSEUS_CLOUD_TOKEN")
 
     if getattr(args, "local", False):
-        print("Perseus [local mode] — using local Ollama only...")
+        print("Perseus [local mode] -- using local Ollama only...")
     elif cloud_url:
-        print(f"Perseus [cloud] — connecting to {cloud_url}...")
+        print(f"Perseus [cloud] -- connecting to {cloud_url}...")
     elif getattr(args, "remote", False):
         cloud_url = os.environ.get("PERSEUS_CLOUD_URL")
         if cloud_url:
-            print(f"Perseus [cloud] — connecting to {cloud_url}...")
+            print(f"Perseus [cloud] -- connecting to {cloud_url}...")
         else:
             pi = os.environ.get("MORIE_PI_HOST")
             if pi:
                 host_part = pi.split("@")[-1] if "@" in pi else pi
                 cloud_url = f"http://{host_part}:8421"
-                print(f"Perseus [cloud via Pi] — connecting to {cloud_url}...")
+                print(f"Perseus [cloud via Pi] -- connecting to {cloud_url}...")
             else:
                 provider = "freeapi"
-                print("Perseus [internet fallback] — no cloud relay configured, using community servers...")
+                print("Perseus [internet fallback] -- no cloud relay configured, using community servers...")
                 print("  Tip: Set PERSEUS_CLOUD_URL or run `morie serve` on your Pi for the real Perseus.")
     elif getattr(args, "freeapi", False):
         provider = "freeapi"
-        print("Perseus [community servers] — using OllamaFreeAPI...")
+        print("Perseus [community servers] -- using OllamaFreeAPI...")
     elif getattr(args, "pi", None):
         pi_host = args.pi
         base_url = f"http://{pi_host}:11434" if "://" not in pi_host else pi_host
-        print(f"Perseus [Pi] — connecting to {base_url}...")
+        print(f"Perseus [Pi] -- connecting to {base_url}...")
     elif os.environ.get("MORIE_PI_HOST"):
         pi = os.environ["MORIE_PI_HOST"]
         host_part = pi.split("@")[-1] if "@" in pi else pi
@@ -1174,7 +1174,7 @@ def _handle_percy(args: argparse.Namespace) -> int:
                 print("\nBye!")
                 break
             if not q or q.lower() in ("quit", "exit", "q"):
-                print("We suffer more often in imagination than in reality. — Seneca")
+                print("We suffer more often in imagination than in reality. -- Seneca")
                 break
             _percy_answer(agent, q, use_stream, sys.stdout)
             print()
@@ -1248,7 +1248,7 @@ def _handle_percysuits(args: argparse.Namespace) -> int:
     if dry_run:
         print("Would pull:")
         for name, size, _cat, desc in to_pull:
-            print(f"  {name} ({size}) — {desc}")
+            print(f"  {name} ({size}) -- {desc}")
         return 0
 
     if ssh_target:

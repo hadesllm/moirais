@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Moderation (interaction) analysis via OLS."""
 
 import numpy as np
@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 def moderation_analysis(y, x, moderator, covariates=None):
     """
-    Test moderation (interaction effect) of moderator on x → y relationship.
+    Test moderation (interaction effect) of moderator on x -> y relationship.
 
     Fits y = b0 + b1*x + b2*moderator + b3*x*moderator + covariates.
 

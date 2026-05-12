@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """GATE (group average treatment effect): average CATE over subgroup."""
 import numpy as np
 from ._richresult import RichResult

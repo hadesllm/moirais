@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Partial correlation via Kendall's tau controlling for third variable."""
 import numpy as np
 from scipy import stats

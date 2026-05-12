@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Permanence of KL property: operations preserving KL support condition."""
 import numpy as np
 from ._richresult import RichResult

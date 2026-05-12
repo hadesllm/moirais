@@ -11,7 +11,7 @@ def bookadvanced_elementsofstatisticallearning_chapter_4_unnumbered_342(x):
     """
     Regression expression (auto-extracted; see ref).
 
-    Formula: theN -dimensional identity matrix. As λ→∞ , df λ→ 2, and Sλ→ H, the
+    Formula: theN -dimensional identity matrix. As λ->∞ , df λ-> 2, and Sλ-> H, the
 
     Parameters
     ----------

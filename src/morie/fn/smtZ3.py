@@ -10,7 +10,7 @@ def smt_solver(formula):
     """
     SMT solver framework
 
-    Formula: DPLL(T) — SAT + theory solvers
+    Formula: DPLL(T) -- SAT + theory solvers
 
     Parameters
     ----------

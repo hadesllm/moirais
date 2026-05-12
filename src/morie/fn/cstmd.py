@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Medical service utilization rate in custody."""
 
 from __future__ import annotations

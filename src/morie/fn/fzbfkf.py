@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Boundary-free KDFE for goodness-of-fit tests."""
 import numpy as np
 from scipy import stats

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Random forest: bagging of decision trees with random feature splits."""
 import numpy as np
 from ._richresult import RichResult

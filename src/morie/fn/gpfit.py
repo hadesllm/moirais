@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generalised Pareto distribution fit (Pickands 1975); peaks-over-threshold.
 
 ML-fits the two-parameter GP

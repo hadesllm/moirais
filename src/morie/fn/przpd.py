@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Parzen window probability density estimation."""
 
 from __future__ import annotations
@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def parzen_pdf(x: np.ndarray, bandwidth: float | None = None, n_points: int = 100) -> DescriptiveResult:
     """Estimate PDF using a Parzen (Gaussian kernel) window.
 
-    'The belonging you seek is not behind you, it is ahead.' — Maz Kanata
+    'The belonging you seek is not behind you, it is ahead.' -- Maz Kanata
     """
     from morie._waveform import parzen_pdf as _backend
 

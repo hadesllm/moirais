@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Point pattern Monte Carlo envelope"""
 
 import numpy as np

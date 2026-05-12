@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Jacobson-Truax Reliable Change Index. 'Hope is like the sun.' -- Poe Dameron"""
 
 from __future__ import annotations

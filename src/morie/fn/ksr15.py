@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """One-step efficient estimator (Kosorok 2008, Ch 7).
 
 theta_tilde = theta_init + n^{-1} sum IF(X_i; theta_init).

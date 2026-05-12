@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Signal envelope via Hilbert transform. 'We are what they grow beyond.'"""
 
 from __future__ import annotations

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """CAR variance ratio (spatial vs unstructured)."""
 
 from ._containers import SpatialResult

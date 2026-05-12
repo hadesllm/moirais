@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Backpropagation via chain rule for multi-layer networks."""
 import numpy as np
 from ._richresult import RichResult

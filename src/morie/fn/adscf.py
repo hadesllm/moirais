@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """AdS/CFT dictionary: conformal dimension <-> bulk mass."""
 
 from __future__ import annotations

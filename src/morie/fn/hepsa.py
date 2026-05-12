@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Probabilistic sensitivity analysis for health economics."""
 
 import numpy as np

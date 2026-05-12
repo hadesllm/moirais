@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Estimate impulse response from input/output data."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "In God we trust; all others must bring data. — W. Edwards Deming"
+_QUOTE = "In God we trust; all others must bring data. -- W. Edwards Deming"
 
 
 def impulse_from_io_fn(

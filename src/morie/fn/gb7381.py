@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Null variance formula from Chernoff-Savage theory under H0."""
 import numpy as np
 from ._richresult import RichResult

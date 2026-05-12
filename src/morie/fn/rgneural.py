@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Neural decoding for prosthesis control from spike trains."""
 import numpy as np
 from ._richresult import RichResult

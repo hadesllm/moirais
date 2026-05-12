@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mini-batch iterator over DataLoader: yields shuffled batches of size b."""
 import numpy as np
 from ._richresult import RichResult

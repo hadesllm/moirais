@@ -11,7 +11,7 @@ def statistical_methods_for_spatial_data_analysis_chapter_1_unnumbered_406(x):
     """
     Dispersion expression (auto-extracted; see ref).
 
-    Formula: γ(si − sj ) → C(0) provided C(si − sj ) → 0. An unbiased estimate of the
+    Formula: γ(si − sj ) -> C(0) provided C(si − sj ) -> 0. An unbiased estimate of the
 
     Parameters
     ----------

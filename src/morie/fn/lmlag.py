@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """LM test for spatial lag (Anselin 1988)."""
 
 import numpy as np

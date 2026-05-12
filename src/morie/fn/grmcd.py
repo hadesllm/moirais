@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Monte Carlo dropout: K stochastic forward passes at test time for uncertainty."""
 import numpy as np
 from scipy import stats

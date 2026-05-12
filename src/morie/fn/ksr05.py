@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Bracketing number N_[](e, F, L_2(P)) for the indicator class (Kosorok 2008, Ch 2).
 
 For F = {1{X<=t} : t in R}, the e-L_2 bracketing number is the number

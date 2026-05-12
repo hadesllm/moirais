@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """ARE of Wilcoxon signed-rank vs t under logistic distribution: pi^2/9."""
 import numpy as np
 from ._richresult import RichResult

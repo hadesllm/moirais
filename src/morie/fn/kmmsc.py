@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MoverScore: Word Mover's Distance over BERT embeddings."""
 import numpy as np
 from ._richresult import RichResult

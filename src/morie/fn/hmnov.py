@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Novelty detection: classify new points as novel vs in-distribution."""
 import numpy as np
 from ._richresult import RichResult

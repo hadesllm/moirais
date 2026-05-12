@@ -7,7 +7,7 @@ __all__ = ["mvsml_linear_mixed_models_eq_5_5"]
 
 
 def mvsml_linear_mixed_models_eq_5_5(where, y, GID, are, again, the):
-    """Errors using inadequate data are much less than those using no data at all. — Charles Babbage"""
+    """Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"""
     y = np.atleast_1d(np.asarray(y, dtype=float))
     n = len(y)
     result = float(np.mean(y))

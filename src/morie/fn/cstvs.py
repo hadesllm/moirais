@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Visitation frequency analysis in custody."""
 
 from __future__ import annotations

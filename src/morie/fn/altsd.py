@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """TSDAE: encoder takes corrupted sentence, decoder reconstructs the clean one."""
 import numpy as np
 from ._richresult import RichResult

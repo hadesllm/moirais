@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Naive time series forecasting. 'I am from the future.' -- Booster Gold"""
 
 from __future__ import annotations

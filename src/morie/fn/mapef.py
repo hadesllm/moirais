@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """MAPE (Mean Absolute Percentage Error) forecast accuracy."""
 
 import numpy as np

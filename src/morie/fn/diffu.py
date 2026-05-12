@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """1D heat diffusion solver + DDPM forward process. 'Your focus determines your reality.' -- Qui-Gon Jinn"""
 
 from __future__ import annotations

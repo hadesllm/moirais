@@ -1,4 +1,4 @@
-"""morie.earth — geospatial pollution-exposure data ingestion.
+"""morie.earth -- geospatial pollution-exposure data ingestion.
 
 Pulls satellite + ground-station air-quality data into pandas DataFrames
 that plug into the rest of MORIE (causal-inference library, Canadian
@@ -6,21 +6,21 @@ health datasets, burden-of-disease attribution).
 
 Data sources wired here:
 
-  * OpenAQ           — global ground-station PM/NO2/O3/SO2/CO/BC
+  * OpenAQ           -- global ground-station PM/NO2/O3/SO2/CO/BC
                        (no auth; hits api.openaq.org)
   * Environment Canada NAPS
-                     — Canadian National Air Pollution Surveillance
+                     -- Canadian National Air Pollution Surveillance
                        (no auth; hits Open-Canada CKAN)
   * Google Earth Engine
-                     — Sentinel-5P TROPOMI, MODIS, Landsat, Copernicus
+                     -- Sentinel-5P TROPOMI, MODIS, Landsat, Copernicus
                        (requires service account or user OAuth)
   * ArcGIS Online
-                     — ESRI Living Atlas + feature services
+                     -- ESRI Living Atlas + feature services
                        (requires ArcGIS account or public service URL)
 
 Each fetcher returns either:
-  * a pandas DataFrame (tidy long-format)          — station data
-  * a dict of {region_id: numpy array}             — raster reductions
+  * a pandas DataFrame (tidy long-format)          -- station data
+  * a dict of {region_id: numpy array}             -- raster reductions
   * a raw GeoDataFrame when ``geopandas`` is
     available; falls back to plain DataFrame
 
@@ -84,7 +84,7 @@ def _cache_key(*parts: _t.Any) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
 
 
-# ─── OpenAQ — no auth ─────────────────────────────────────────────────────
+# ─── OpenAQ -- no auth ─────────────────────────────────────────────────────
 
 _OPENAQ_BASE = "https://api.openaq.org/v3"
 
@@ -124,7 +124,7 @@ def fetch_openaq(
         import httpx  # type: ignore
     except ImportError as exc:
         raise ImportError(
-            "fetch_openaq needs httpx — pip install httpx"
+            "fetch_openaq needs httpx -- pip install httpx"
         ) from exc
 
     key = _cache_key("openaq", country, city, tuple(pollutants), date_from, date_to, limit)
@@ -171,7 +171,7 @@ def fetch_openaq(
     return df
 
 
-# ─── Environment Canada NAPS — no auth (CKAN) ─────────────────────────────
+# ─── Environment Canada NAPS -- no auth (CKAN) ─────────────────────────────
 
 _NAPS_CKAN_PACKAGE = "1b36a356-defd-4813-acea-47bc3abd859b"
 
@@ -206,7 +206,7 @@ def fetch_naps(
         import httpx  # type: ignore
     except ImportError as exc:
         raise ImportError(
-            "fetch_naps needs httpx — pip install httpx"
+            "fetch_naps needs httpx -- pip install httpx"
         ) from exc
 
     key = _cache_key("naps", year, pollutant, province)
@@ -239,13 +239,13 @@ def fetch_naps(
     return df
 
 
-# ─── Google Earth Engine — requires auth ──────────────────────────────────
+# ─── Google Earth Engine -- requires auth ──────────────────────────────────
 
 _EE_SETUP_HELP = """\
 Google Earth Engine requires authentication. Two options:
 
   (1) Service account (headless, recommended for MORIE):
-      a. https://console.cloud.google.com → IAM → Service Accounts
+      a. https://console.cloud.google.com -> IAM -> Service Accounts
       b. Create one, enable "Earth Engine Resource Admin" role
       c. Download JSON key
       d. Register at https://signup.earthengine.google.com/#!/service_accounts
@@ -265,7 +265,7 @@ def _ensure_ee_initialized():
         import ee  # type: ignore
     except ImportError as exc:
         raise ImportError(
-            "fetch_earth_engine needs earthengine-api — pip install earthengine-api"
+            "fetch_earth_engine needs earthengine-api -- pip install earthengine-api"
         ) from exc
 
     sa_email = os.environ.get("MORIE_EE_SERVICE_ACCOUNT")
@@ -358,7 +358,7 @@ def fetch_earth_engine(
     return stats or {}
 
 
-# ─── ArcGIS Online — requires auth (or public service URL) ────────────────
+# ─── ArcGIS Online -- requires auth (or public service URL) ────────────────
 
 _ARCGIS_SETUP_HELP = """\
 ArcGIS Python API requires either public feature-service URLs (no auth)
@@ -368,7 +368,7 @@ or an ArcGIS Online / Enterprise account.
     pip install arcgis
 
   Auth (pick one):
-    # anonymous — public feature services only
+    # anonymous -- public feature services only
     gis = GIS()
 
     # ArcGIS Online (org or developer free tier)
@@ -480,7 +480,7 @@ POLLUTION_DATASETS = {
         "band": "population_count",
         "unit": "persons/pixel",
         "scale_m": 100,
-        "description": "GHSL 2023 population grid (100m) — use for denominators",
+        "description": "GHSL 2023 population grid (100m) -- use for denominators",
     },
 }
 

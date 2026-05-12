@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Chain prompting: output of prompt 1 fed as input to prompt 2."""
 import numpy as np
 from ._richresult import RichResult

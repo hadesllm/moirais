@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Neutral-to-the-right process: F(t) = 1 - prod_{s<=t}(1-dM(s)) from NTR measure M."""
 import numpy as np
 from ._richresult import RichResult

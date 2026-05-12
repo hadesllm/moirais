@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Generalized additive model (B-spline basis + OLS). 'Size matters not.'"""
 
 from __future__ import annotations

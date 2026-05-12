@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Manski (1975) maximum-score estimator (Horowitz 2009, Ch 5).
 
     beta_hat = argmax_{||b||=1} (1/n) sum_i (2 Y_i - 1) * 1(X_i' b > 0)
@@ -46,7 +46,7 @@ def horowitz_binary_response(x, y):
     if beta0[0] < 0:
         beta0 = -beta0
 
-    # Multistart Nelder-Mead — the score function is piecewise constant
+    # Multistart Nelder-Mead -- the score function is piecewise constant
     rng = np.random.default_rng(0)
     best_beta = beta0; best_loss = _score(beta0, X, y_signed)
     starts = [beta0] + [rng.standard_normal(p) for _ in range(8)]

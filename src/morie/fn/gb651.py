@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Control median test: compare treatment sample to known control median."""
 import numpy as np
 from scipy import stats

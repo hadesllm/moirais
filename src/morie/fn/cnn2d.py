@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """2D convolution forward pass (valid, cross-correlation convention)."""
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Blackbox_transpose scaling for large-N surveys"""
 
 import numpy as np
@@ -30,7 +30,7 @@ def blackbox_transpose(data=None, *, dims=2, n=50):
 
 short = "bbtrs"
 alias = "blackbox_transpose"
-quote = "The road up and the road down are the same thing. — Heraclitus"
+quote = "The road up and the road down are the same thing. -- Heraclitus"
 blackbox_transpose = blackbox_transpose
 
 

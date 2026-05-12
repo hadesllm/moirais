@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """PPG waveform feature extraction (systolic peak, dicrotic notch, diastolic peak)."""
 import numpy as np
 from ._richresult import RichResult

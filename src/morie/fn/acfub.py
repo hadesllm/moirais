@@ -1,4 +1,4 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
 """Unbiased autocorrelation function."""
 
 from __future__ import annotations
@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "I cannot teach anybody anything. I can only make them think. — Socrates"
+_QUOTE = "I cannot teach anybody anything. I can only make them think. -- Socrates"
 
 
 def acf_unbiased(x, maxlag: int | None = None, **kwargs) -> DescriptiveResult:

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Extract a subset of issue scale columns."""
 
 from __future__ import annotations

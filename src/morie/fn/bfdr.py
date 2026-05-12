@@ -1,5 +1,5 @@
-# morie.fn — function file from book-equation translation pipeline (hadesllm/morie)
-"""Bayesian FDR. 'Look well into thyself; there is a source which will always spring up. — Marcus Aurelius'"""
+# morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
+"""Bayesian FDR. 'Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius'"""
 
 from __future__ import annotations
 
@@ -46,4 +46,4 @@ bfdr = bayesian_fdr
 
 
 def cheatsheet() -> str:
-    return "bayesian_fdr({}) -> Bayesian FDR. 'Look well into thyself; there is a source which will always spring up. — Marcus Aurelius'"
+    return "bayesian_fdr({}) -> Bayesian FDR. 'Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius'"

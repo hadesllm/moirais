@@ -1,4 +1,4 @@
-"""morie.entheo_dmt — loaders + analyses for the Timmermann 2023
+"""morie.entheo_dmt -- loaders + analyses for the Timmermann 2023
 DMT EEG-fMRI dataset (github.com/timmer500/DMT_Imaging).
 
 Dataset summary
@@ -11,9 +11,9 @@ Dataset summary
   to 5 cortical regions (Central, Frontal, Occipital, Parietal,
   Temporal).  Each region's .mat file (``RegressorsInterpscrubbedIRASA_*``)
   contains three (14, 840, 5) arrays:
-    regDMT  — 14 subjects × 840 TRs × 5 spectral bands under DMT
-    regPCB  — 14 subjects × 840 TRs × 5 spectral bands under PCB
-    regdiff — DMT − PCB difference
+    regDMT  -- 14 subjects × 840 TRs × 5 spectral bands under DMT
+    regPCB  -- 14 subjects × 840 TRs × 5 spectral bands under PCB
+    regdiff -- DMT − PCB difference
   The 5 bands are the IRASA-fractal-aperiodic decomposition; per the
   associated paper they index the canonical δ, θ, α, β, γ ranges.
 
@@ -89,7 +89,7 @@ def available_subjects() -> list[int]:
     """List the integer IDs of subjects that survive in the fMRI dir.
 
     Returns subject IDs sorted ascending (e.g. ``[1, 2, 3, 5, 6, 7,
-    8, 9, 10, 11, 12, 14, 15, 17, 18, 19, 20]`` — the
+    8, 9, 10, 11, 12, 14, 15, 17, 18, 19, 20]`` -- the
     motion-corrected subset).
     """
     root = _require_root()
@@ -111,7 +111,7 @@ def load_fmri_subject(subject_id: int,
 
     Returns
     -------
-    np.ndarray of shape (112, 840) — 112 AAL ROIs × 840 TRs.
+    np.ndarray of shape (112, 840) -- 112 AAL ROIs × 840 TRs.
     """
     root = _require_root()
     fname = f"LongS{subject_id:02d}{condition}.mat"
@@ -160,13 +160,13 @@ def dataset_overview() -> RichResult:
         ("EEG axes", "(14 subj, 840 TRs, 5 bands)"),
     ]
     return RichResult(
-        title="DMT_Imaging — Timmermann 2023 dataset overview",
+        title="DMT_Imaging -- Timmermann 2023 dataset overview",
         summary_lines=summary,
         interpretation=(
             "Use load_fmri_subject(id, condition) for BOLD AAL "
             "matrices and load_eeg_region(region) for IRASA EEG "
             "regressors.  Layer-2 spectral / connectivity analyses "
-            "are stubbed — wire to morie.fn Rangayyan-style "
+            "are stubbed -- wire to morie.fn Rangayyan-style "
             "primitives in a follow-up."
         ),
         payload={"root": str(root), "n_subjects": len(subs),
@@ -211,7 +211,7 @@ def spectral_band_power(signal: np.ndarray, *,
         Frequency bands.  Default = canonical δ/θ/α/β/γ.
     nperseg : int or None
         Welch segment length.  Defaults to ``min(len(signal), 4*fs)``
-        — i.e. 4-second segments at the default fs.
+        -- i.e. 4-second segments at the default fs.
     """
     from .fn.psdwl import psdwl
 
@@ -304,7 +304,7 @@ def dynamic_functional_connectivity(bold: np.ndarray, *,
             "Sliding-window Pearson FC mirrors Allen et al.\\ 2014 / "
             "the dRSFC.m script.  Higher std-of-correlation across "
             "windows indicates a more dynamically reconfiguring "
-            "connectivity profile — a Timmermann 2023 DMT signature."
+            "connectivity profile -- a Timmermann 2023 DMT signature."
         ),
         payload={"n_windows": n_windows, "n_pairs": n_pairs,
                   "mean_per_pair": mean_per_pair.tolist()[:50],
@@ -391,7 +391,7 @@ def analyze_subject(subject_id: int, *,
                 ("Conditions evaluated",
                   [r["condition"] for r in rows if "error" not in r])]
     return RichResult(
-        title=f"DMT-vs-PCB per-subject analysis — subj {subject_id}",
+        title=f"DMT-vs-PCB per-subject analysis -- subj {subject_id}",
         summary_lines=summary,
         interpretation=(
             "DMT-PCB within-subject contrast on global-signal LZ "

@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """DP conditional distribution: G given G(A) is mixture of DP on A and A^c."""
 import numpy as np
 from ._richresult import RichResult

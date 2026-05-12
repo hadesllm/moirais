@@ -1,4 +1,4 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """Mode-collapse metric: fraction of real-distribution modes missed by generator samples."""
 import numpy as np
 from ._richresult import RichResult

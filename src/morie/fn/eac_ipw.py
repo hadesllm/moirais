@@ -1,8 +1,8 @@
-# morie.fn — function file (hadesllm/morie)
+# morie.fn -- function file (hadesllm/morie)
 """
 eBAC selection-adjusted IPW analysis pipeline.
 
-Implements ``run_ebac_selection_ipw_analysis`` — corrects for non-random
+Implements ``run_ebac_selection_ipw_analysis`` -- corrects for non-random
 observation of eBAC using inverse probability weighting on the selection
 (observation) mechanism, then fits treatment-effect models on the
 selection-corrected sample.

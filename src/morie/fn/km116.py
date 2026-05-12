@@ -1,4 +1,4 @@
-"""Brevity penalty.."""
+r"""Brevity penalty.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch8_brevity_penalty"]
 
 
 def kamath_ch8_brevity_penalty(c, r):
-    """
+    r"""
     Brevity penalty.
 
     Formula: \mathrm{BP} = \begin{cases} 1 & c>r \\ e^{1-r/c} & c\le r \end{cases}
@@ -27,7 +27,7 @@ def kamath_ch8_brevity_penalty(c, r):
     References
     ----------
     Kamath et al (2024), Ch 8, Eq 8.4, p. 323
-    """
+    r"""
     c = np.atleast_1d(np.asarray(c, dtype=float))
     n = len(c)
     result = float(np.mean(c))

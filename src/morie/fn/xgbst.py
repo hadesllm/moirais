@@ -8,7 +8,8 @@ __all__ = ["xgboost_objective"]
 
 def xgboost_objective(x, y, *, n_estimators=100, learning_rate=0.1,
                        max_depth=3, reg_lambda=1.0, reg_alpha=0.0,
-                       task="auto", seed=0):
+                       task="auto", seed=0,
+                       deterministic_seed: int | None = None):
     """Boosted-trees with XGBoost's regularized objective.
 
     L = sum_i l(y_i, y_hat_i) + sum_k Omega(f_k),
@@ -31,6 +32,11 @@ def xgboost_objective(x, y, *, n_estimators=100, learning_rate=0.1,
     task : "auto" | "classification" | "regression".
     seed : int
         random_state.
+    deterministic_seed : int or None, optional
+        If supplied, the backend ``random_state`` is derived from the
+        SHA-keyed :func:`morie._det_rng.r_seed` so Py<->R streams agree
+        for the canonical fixture.  When ``None`` (default), behaviour
+        is unchanged: ``seed`` drives ``random_state`` directly.
 
     Returns
     -------
@@ -45,6 +51,12 @@ def xgboost_objective(x, y, *, n_estimators=100, learning_rate=0.1,
     if task == "auto":
         task = "classification" if np.issubdtype(y.dtype, np.integer) or set(np.unique(y)).issubset({0, 1}) else "regression"
 
+    if deterministic_seed is not None:
+        from morie._det_rng import r_seed
+        rs = r_seed("xgbst", deterministic_seed)
+    else:
+        rs = seed
+
     backend = "xgboost"
     try:
         import xgboost as xgb  # type: ignore[import-not-found]
@@ -52,7 +64,7 @@ def xgboost_objective(x, y, *, n_estimators=100, learning_rate=0.1,
         m = Cls(
             n_estimators=n_estimators, learning_rate=learning_rate,
             max_depth=max_depth, reg_lambda=reg_lambda, reg_alpha=reg_alpha,
-            random_state=seed, verbosity=0,
+            random_state=rs, verbosity=0,
             eval_metric="logloss" if task == "classification" else "rmse",
         )
         m.fit(X, y)
@@ -65,7 +77,7 @@ def xgboost_objective(x, y, *, n_estimators=100, learning_rate=0.1,
         m = Cls(
             max_iter=n_estimators, learning_rate=learning_rate,
             max_depth=max_depth, l2_regularization=reg_lambda,
-            random_state=seed,
+            random_state=rs,
         )
         m.fit(X, y)
 

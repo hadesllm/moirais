@@ -9,7 +9,7 @@ _QUOTE = "So this is how liberty dies. With thunderous applause. -- Padme"
 
 
 def bisection_root(f, a: float, b: float, tol: float = 1e-10, max_iter: int = 100, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Find a root of f(x) = 0 using the bisection method.
 
     Requires :math:`f(a) \\cdot f(b) < 0` (sign change). Converges

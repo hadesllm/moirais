@@ -16,7 +16,7 @@ def sammon_mapping(
     lr: float = 0.3,
     seed: int = 42,
 ) -> DescriptiveResult:
-    """Sammon mapping: non-linear dimensionality reduction preserving distances.
+    r"""Sammon mapping: non-linear dimensionality reduction preserving distances.
 
     Minimises Sammon stress:
 

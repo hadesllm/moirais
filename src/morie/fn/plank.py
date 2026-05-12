@@ -13,7 +13,7 @@ def plank(
     c: float = 299792458.0,
     kB: float = 1.380649e-23,
 ) -> dict:
-    """
+    r"""
     Compute the Planck spectral radiance for blackbody radiation.
 
     .. math::

@@ -10,7 +10,7 @@ _QUOTE = "In my experience there is no such thing as luck."
 
 
 def svm_rbf(X_train, y_train, X_test, C=1.0, gamma=None, lr=0.01, n_iter=500, **kwargs) -> DescriptiveResult:
-    """RBF kernel SVM using simplified SMO-style coordinate ascent.
+    r"""RBF kernel SVM using simplified SMO-style coordinate ascent.
 
     .. math::
 

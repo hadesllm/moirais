@@ -1,186 +1,163 @@
 """Top-level package for the MORIE Python interface.
 
-All heavy imports are guarded so that lightweight submodules (morie.quant,
-morie.fn, morie.ebac, etc.) can be imported in minimal environments (e.g.
-autoresearch venv) without requiring sklearn, httpx, textual, or other
-optional dependencies.
+All heavy submodule imports are lazy via PEP 562 __getattr__: an
+attribute is loaded the first time it is referenced, not at
+`import morie` time.  This keeps `import morie` cold-startup under
+a second even when the install has optional heavy deps (DoubleML,
+statsmodels, sklearn, lxml, etc.) — previously these were eagerly
+imported in try/except blocks at the bottom of the package's
+__init__.py, costing ~2 minutes on a cold cache.
+
+For minimal envs without an optional submodule's dependencies, the
+lazy loader returns AttributeError (as if the symbol were never
+exposed), matching the previous try/except-pass behaviour.
 """
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
 
-# --- Guarded eager imports — fail gracefully in minimal envs ---
-# In a full morie install these all succeed and populate the namespace.
-# In a minimal env (only numpy/scipy), they silently skip.
+# name → submodule (".cpads", ".causal", ...).  Generated from the
+# previous eager try-import block at v0.3.0.  Edit this dict to add
+# new top-level exports instead of adding more try-imports.
+_LAZY_EXPORTS = {
+    'AnovaOneWayResult': 'mrm_design',
+    'CPADS_REQUIRED_VARIABLES': 'cpads',
+    'CausalDesignResult': 'mrm_design',
+    'ColumnProfile': 'dataset',
+    'DatasetProfile': 'dataset',
+    'DatasetRegistry': 'data',
+    'Factorial2kResult': 'mrm_design',
+    'GPL_COMPATIBLE_LICENSES': '_license_check',
+    'LISAResult': 'mrm_lisa',
+    'LongitudinalSimSpec': 'longitudinal_sim',
+    'MeasurementLevel': 'dataset',
+    'SIU_INDEX_URL': 'siu_fetch',
+    'ScanCluster': 'mrm_kulldorff',
+    'TPS_LAYER_URLS': 'tps_fetch',
+    'TwoTreatmentResult': 'mrm_design',
+    'agent_available': 'perseus',
+    'ask': 'llm',
+    'ask_multi': 'llm',
+    'ask_percy': 'perseus',
+    'bootstrap_sample': 'sampling',
+    'build_morie_context': 'llm',
+    'build_prompt': 'perseus',
+    'calculate_ebac': 'ebac',
+    'calculate_ipw_weights': 'causal',
+    'canonicalize_cpads_frame': 'cpads',
+    'check_plugin_license': '_license_check',
+    'cluster_sample': 'sampling',
+    'compare_nested_logistic_models': 'investigation',
+    'compute_design_weights': 'sampling',
+    'compute_propensity_scores': 'causal',
+    'cpads_contract': 'cpads',
+    'design_effect': 'sampling',
+    'detect_available_provider': 'llm',
+    'effective_sample_size': 'causal',
+    'estimate_atc': 'causal',
+    'estimate_ate': 'effects',
+    'estimate_att': 'causal',
+    'estimate_cate': 'causal',
+    'estimate_gate': 'causal',
+    'estimate_irm': 'causal',
+    'estimate_late': 'causal',
+    'execute_pipeline as _execute_pipeline': 'runner',
+    'fetch_siu_cases': 'siu_fetch',
+    'fetch_tps_category': 'tps_fetch',
+    'generate_ar_coefficients': 'longitudinal_sim',
+    'generate_var_coefficients': 'longitudinal_sim',
+    'infer_measurement_level': 'dataset',
+    'inspect_output': 'inspector',
+    'is_over_legal_limit': 'ebac',
+    'jackknife_estimate': 'sampling',
+    'launch_tui as _launch_tui': 'tui',
+    'list_modules': 'modules',
+    'list_tps_categories': 'tps_fetch',
+    'load_dataset': 'dataset',
+    'morie_license_metadata': '_license_check',
+    'mrm_anova_bonferroni': 'mrm_doe',
+    'mrm_anova_oneway': 'mrm_design',
+    'mrm_anova_power': 'mrm_doe',
+    'mrm_assumptions_check': 'mrm_diagnostics',
+    'mrm_causal_design': 'mrm_design',
+    'mrm_check_balancing': 'mrm_diagnostics',
+    'mrm_check_overlap': 'mrm_diagnostics',
+    'mrm_classify_mandela': 'mrm_otis',
+    'mrm_clt_demo': 'mrm_mathstats',
+    'mrm_factorial_2k': 'mrm_design',
+    'mrm_fractional_factorial': 'mrm_doe',
+    'mrm_graeco_latin': 'mrm_doe',
+    'mrm_latin_square': 'mrm_doe',
+    'mrm_mc_power': 'mrm_doe',
+    'mrm_median_causal_effect': 'mrm_diagnostics',
+    'mrm_oneprop_test': 'mrm_mathstats',
+    'mrm_otis_mandela_spectrum': 'mrm_mandela_spectrum',
+    'mrm_otis_mortification_cooccurrence': 'mrm_otis',
+    'mrm_otis_placement_concentration': 'mrm_otis',
+    'mrm_otis_region_locality': 'mrm_otis',
+    'mrm_otis_seg_duration_km': 'mrm_otis',
+    'mrm_perm_block': 'mrm_doe',
+    'mrm_pit': 'mrm_mathstats',
+    'mrm_qq_plot': 'mrm_mathstats',
+    'mrm_random_latin': 'mrm_doe',
+    'mrm_rcbd': 'mrm_doe',
+    'mrm_response_surface': 'mrm_doe',
+    'mrm_siu_case_to_decision_km': 'mrm_siu',
+    'mrm_siu_outcome_classifier': 'mrm_siu',
+    'mrm_siu_per_service_rate': 'mrm_siu',
+    'mrm_standardised_difference': 'mrm_diagnostics',
+    'mrm_tps_kulldorff_scan': 'mrm_kulldorff',
+    'mrm_tps_levy_scaling': 'mrm_tps',
+    'mrm_tps_lisa': 'mrm_lisa',
+    'mrm_tps_load_hawkes_refit': 'mrm_tps',
+    'mrm_tps_moran_clustering': 'mrm_tps',
+    'mrm_tps_neighbourhood_recurrence_km': 'mrm_tps',
+    'mrm_tps_polygon_moran_per_year': 'mrm_lisa',
+    'mrm_two_treatment_test': 'mrm_design',
+    'mrm_twoprop_test': 'mrm_mathstats',
+    'mrm_var_test': 'mrm_mathstats',
+    'mvn_with_covariance': 'longitudinal_sim',
+    'pps_sample': 'sampling',
+    'profile_dataset': 'dataset',
+    'run_chat_repl as _run_chat_repl': 'chat',
+    'run_ebac_selection_ipw_analysis': 'causal',
+    'run_module': 'modules',
+    'run_modules': 'modules',
+    'run_power_design_module': 'modules',
+    'run_propensity_ipw_analysis': 'causal',
+    'run_treatment_effects_analysis': 'investigation',
+    'run_weighted_logistic_analysis': 'investigation',
+    'simple_random_sample': 'sampling',
+    'simulate_longitudinal_panel': 'longitudinal_sim',
+    'siu_cache_path': 'siu_fetch',
+    'stratified_sample': 'sampling',
+    'suggest_analysis_plan': 'dataset',
+    'sync_rng': 'longitudinal_sim',
+    'validate_cpads_frame': 'cpads',
+    'verify_statistical_output': 'inspector',
+}
 
-try:
-    from .cpads import CPADS_REQUIRED_VARIABLES, canonicalize_cpads_frame, cpads_contract, validate_cpads_frame
-except ImportError:
-    pass
-
-try:
-    from .causal import (
-        calculate_ipw_weights,
-        compute_propensity_scores,
-        effective_sample_size,
-        estimate_atc,
-        estimate_att,
-        estimate_cate,
-        estimate_gate,
-        estimate_irm,
-        estimate_late,
-        run_ebac_selection_ipw_analysis,
-        run_propensity_ipw_analysis,
-    )
-except ImportError:
-    pass
-
-try:
-    from .data import DatasetRegistry
-except ImportError:
-    pass
-
-try:
-    from .dataset import (
-        ColumnProfile,
-        DatasetProfile,
-        MeasurementLevel,
-        infer_measurement_level,
-        load_dataset,
-        profile_dataset,
-        suggest_analysis_plan,
-    )
-except ImportError:
-    pass
-
-try:
-    from .ebac import calculate_ebac, is_over_legal_limit
-except ImportError:
-    pass
-
-try:
-    from .mrm_otis import (
-        mrm_classify_mandela,
-        mrm_otis_placement_concentration,
-        mrm_otis_seg_duration_km,
-        mrm_otis_mortification_cooccurrence,
-        mrm_otis_region_locality,
-    )
-except ImportError:
-    pass
-
-try:
-    from .mrm_tps import (
-        mrm_tps_levy_scaling,
-        mrm_tps_moran_clustering,
-        mrm_tps_neighbourhood_recurrence_km,
-        mrm_tps_load_hawkes_refit,
-    )
-except ImportError:
-    pass
-
-try:
-    from .mrm_siu import (
-        mrm_siu_case_to_decision_km,
-        mrm_siu_per_service_rate,
-        mrm_siu_outcome_classifier,
-    )
-except ImportError:
-    pass
-
-try:
-    from .tps_fetch import (
-        TPS_LAYER_URLS,
-        fetch_tps_category,
-        list_tps_categories,
-    )
-except ImportError:
-    pass
-
-try:
-    from .siu_fetch import (
-        SIU_INDEX_URL,
-        fetch_siu_cases,
-        siu_cache_path,
-    )
-except ImportError:
-    pass
+def __getattr__(name):
+    """PEP 562 lazy loader for top-level morie.* exports."""
+    if name in _LAZY_EXPORTS:
+        from importlib import import_module
+        try:
+            mod = import_module("." + _LAZY_EXPORTS[name], package=__name__)
+            obj = getattr(mod, name)
+            globals()[name] = obj
+            return obj
+        except (ImportError, AttributeError):
+            # Match the previous try/except-pass behaviour: pretend the
+            # symbol doesn't exist when its dependencies are absent.
+            raise AttributeError(
+                f"morie has no attribute {name!r} "
+                f"(optional submodule {_LAZY_EXPORTS[name]!r} could not be loaded)"
+            )
+    raise AttributeError(f"module 'morie' has no attribute {name!r}")
 
 
+def __dir__():
+    return sorted(list(_LAZY_EXPORTS) + ["__version__", "__getattr__", "__dir__", "load_sample"])
 
-try:
-    from .longitudinal_sim import (
-        sync_rng,
-        generate_ar_coefficients,
-        generate_var_coefficients,
-        mvn_with_covariance,
-        simulate_longitudinal_panel,
-        LongitudinalSimSpec,
-    )
-except ImportError:
-    pass
-
-try:
-    from .mrm_kulldorff import mrm_tps_kulldorff_scan, ScanCluster
-except ImportError:
-    pass
-
-try:
-    from ._license_check import (
-        GPL_COMPATIBLE_LICENSES,
-        check_plugin_license,
-        morie_license_metadata,
-    )
-except ImportError:
-    pass
-
-
-try:
-    from .mrm_mandela_spectrum import mrm_otis_mandela_spectrum
-except ImportError:
-    pass
-
-try:
-    from .mrm_lisa import mrm_tps_lisa, mrm_tps_polygon_moran_per_year, LISAResult
-except ImportError:
-    pass
-
-
-try:
-    from .mrm_design import (
-        mrm_two_treatment_test, mrm_anova_oneway,
-        mrm_factorial_2k, mrm_causal_design,
-        TwoTreatmentResult, AnovaOneWayResult,
-        Factorial2kResult, CausalDesignResult,
-    )
-except ImportError:
-    pass
-
-try:
-    from .mrm_diagnostics import (
-        mrm_standardised_difference, mrm_check_balancing,
-        mrm_check_overlap, mrm_median_causal_effect,
-        mrm_assumptions_check,
-    )
-except ImportError:
-    pass
-
-try:
-    from .mrm_mathstats import (
-        mrm_oneprop_test, mrm_twoprop_test, mrm_var_test,
-        mrm_qq_plot, mrm_clt_demo, mrm_pit,
-    )
-except ImportError:
-    pass
-
-try:
-    from .mrm_doe import (
-        mrm_anova_bonferroni, mrm_rcbd, mrm_latin_square,
-        mrm_graeco_latin, mrm_fractional_factorial,
-        mrm_response_surface, mrm_anova_power, mrm_mc_power,
-        mrm_perm_block, mrm_random_latin,
-    )
-except ImportError:
-    pass
 
 def load_sample(name: str):
     """Load a bundled reference sample CSV by name.
@@ -202,101 +179,13 @@ def load_sample(name: str):
         raise KeyError(f"Unknown sample {name!r}; choices: {list(files)}")
     return pd.read_csv(here / files[name])
 
-try:
-    from .effects import estimate_ate
-except ImportError:
-    pass
 
-try:
-    from .investigation import (
-        compare_nested_logistic_models,
-        run_treatment_effects_analysis,
-        run_weighted_logistic_analysis,
-    )
-except ImportError:
-    pass
-
-try:
-    from .inspector import inspect_output, verify_statistical_output
-except ImportError:
-    pass
-
-try:
-    from .modules import list_modules, run_module, run_modules, run_power_design_module
-except ImportError:
-    pass
-
-try:
-    from .sampling import (
-        bootstrap_sample,
-        cluster_sample,
-        compute_design_weights,
-        design_effect,
-        jackknife_estimate,
-        pps_sample,
-        simple_random_sample,
-        stratified_sample,
-    )
-except ImportError:
-    pass
-
-try:
-    from .perseus import agent_available, ask_percy, build_prompt
-
-    assistant_available = agent_available
-    ask_morie_assistant = ask_percy
-    build_assistant_prompt = build_prompt
-    from .llm import ask, ask_multi, build_morie_context, detect_available_provider
-except ImportError:
-    pass
-
-# --- New modules: viz, tables_pub, validation, export ---
-# Lazy imports to avoid heavy matplotlib/sklearn load on basic usage.
-
-
-def _lazy_viz():
-    from . import viz as _viz
-
-    return _viz
-
-
-def _lazy_tables_pub():
-    from . import tables_pub as _tables_pub
-
-    return _tables_pub
-
-
-def _lazy_validation():
-    from . import validation as _validation
-
-    return _validation
-
-
-def _lazy_export():
-    from . import export as _export
-
-    return _export
-
-
-def execute_pipeline(*args, **kwargs):
-    """Lazily import the CLI runner helper to avoid module-execution warnings."""
-    from .runner import execute_pipeline as _execute_pipeline
-
-    return _execute_pipeline(*args, **kwargs)
-
-
-def run_chat_repl(*args, **kwargs):
-    """Lazily import the chat REPL."""
-    from .chat import run_chat_repl as _run_chat_repl
-
-    return _run_chat_repl(*args, **kwargs)
-
-
-def launch_tui(*args, **kwargs):
-    """Lazily import the TUI launcher."""
-    from .tui import launch_tui as _launch_tui
-
-    return _launch_tui(*args, **kwargs)
+# Aliases that the old __init__.py exposed (not generated from a from-import)
+# Lazily resolved via __getattr__ above when the underlying perseus submodule
+# is available; these names route to the same callables.
+_LAZY_EXPORTS.setdefault("assistant_available", "perseus")
+_LAZY_EXPORTS.setdefault("ask_morie_assistant", "perseus")
+_LAZY_EXPORTS.setdefault("build_assistant_prompt", "perseus")
 
 
 __all__ = [

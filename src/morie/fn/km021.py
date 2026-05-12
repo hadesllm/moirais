@@ -1,4 +1,4 @@
-"""Clm loss.."""
+r"""Clm loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_clm_loss"]
 
 
 def kamath_ch2_clm_loss(x):
-    """
+    r"""
     Clm loss.
 
     Formula: L^{(x)}_{CLM} = -\frac{1}{|x|}\sum_{i=1}^{|x|} \log P(x_i|x_{<i})
@@ -25,7 +25,7 @@ def kamath_ch2_clm_loss(x):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.21, p. 51
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

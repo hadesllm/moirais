@@ -157,8 +157,14 @@ class EmissionsData:
         )
 
     def csv_row(self) -> str:
+        def _clean(v):
+            # Strip commas/newlines from string fields so .split(",") on
+            # the resulting row matches the header column count.
+            if isinstance(v, str):
+                return v.replace(",", " ").replace("\n", " ").replace("\r", " ")
+            return v
         return ",".join(
-            str(v)
+            str(_clean(v))
             for v in [
                 self.timestamp,
                 self.project_name,

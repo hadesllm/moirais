@@ -1,4 +1,4 @@
-"""Numbered display equation (7.7) from MVSML chapter 7.."""
+r"""Numbered display equation (7.7) from MVSML chapter 7.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_pt2_eq_7_7"]
 
 
 def mvsml_bayesian_regression_pt2_eq_7_7(the, value, of, this, that, maximizes):
-    """
+    r"""
     Numbered display equation (7.7) from MVSML chapter 7.
 
     Formula: the value of this that maximizes the penalized log-likelihood: X C \betaT ℓp \beta; y ( ) = ℓ\beta; y ( )  \lambda c \betac,
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_pt2_eq_7_7(the, value, of, this, that, maximizes):
     References
     ----------
     MVSML, Eq. (7.7) [Multivariate Statistical Machine Learnin [Pages 209-249] [2026-04-16].pdf]
-    """
+    r"""
     the = np.atleast_1d(np.asarray(the, dtype=float))
     n = len(the)
     result = float(np.mean(the))

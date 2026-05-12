@@ -13,7 +13,7 @@ import numpy as np
 def rhat_diagnostic(
     chains: Union[list, np.ndarray],
 ) -> dict[str, Any]:
-    """
+    r"""
     Gelman-Rubin R-hat convergence diagnostic for multiple chains.
 
     Compares within-chain and between-chain variance.  R-hat near 1

@@ -1,4 +1,4 @@
-"""Gpt unsupervised obj.."""
+r"""Gpt unsupervised obj.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_gpt_unsupervised_obj"]
 
 
 def kamath_ch2_gpt_unsupervised_obj(U, k, Theta):
-    """
+    r"""
     Gpt unsupervised obj.
 
     Formula: L_1(U) = \sum_i \log P(u_i|u_{i-k},\dots,u_{i-1};\Theta)
@@ -29,7 +29,7 @@ def kamath_ch2_gpt_unsupervised_obj(U, k, Theta):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.34, p. 70
-    """
+    r"""
     U = np.atleast_1d(np.asarray(U, dtype=float))
     n = len(U)
     result = float(np.mean(U))

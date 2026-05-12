@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 def sigmoid(
     x: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute the sigmoid activation function and its gradient.
 
     .. math::

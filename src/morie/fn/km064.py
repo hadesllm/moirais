@@ -1,4 +1,4 @@
-"""Loftq objective.."""
+r"""Loftq objective.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch4_loftq_objective"]
 
 
 def kamath_ch4_loftq_objective(W, Q, A, B):
-    """
+    r"""
     Loftq objective.
 
     Formula: \min_{Q,A,B} \|W - Q - AB^T\|_F
@@ -31,7 +31,7 @@ def kamath_ch4_loftq_objective(W, Q, A, B):
     References
     ----------
     Kamath et al (2024), Ch 4, Eq 4.11, p. 160
-    """
+    r"""
     W = np.atleast_1d(np.asarray(W, dtype=float))
     n = len(W)
     result = float(np.mean(W))

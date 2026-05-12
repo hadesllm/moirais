@@ -12,7 +12,7 @@ def smd_balance(
     treatment: np.ndarray,
     weights: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute standardized mean differences (SMD) for covariate balance.
 
     .. math::

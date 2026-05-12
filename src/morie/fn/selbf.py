@@ -12,7 +12,7 @@ def selection_bias_factor(
     p_selected: float,
     outcome_diff: float,
 ) -> DescriptiveResult:
-    """
+    r"""
     Quantify selection bias as a multiplicative factor.
 
     When selection into a study depends on both treatment and outcome,

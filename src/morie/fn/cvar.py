@@ -12,7 +12,7 @@ def conditional_var(
     returns: np.ndarray,
     alpha: float = 0.05,
 ) -> DescriptiveResult:
-    """Conditional Value at Risk (CVaR / Expected Shortfall).
+    r"""Conditional Value at Risk (CVaR / Expected Shortfall).
 
     CVaR is the expected loss given that the loss exceeds VaR:
 

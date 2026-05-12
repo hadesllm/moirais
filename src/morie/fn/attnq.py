@@ -16,7 +16,7 @@ def _softmax(z, axis=-1):
 
 
 def scaled_dot_product_attention(Q, K=None, V=None, mask=None):
-    """Scaled dot-product attention.
+    r"""Scaled dot-product attention.
 
     .. math::
 

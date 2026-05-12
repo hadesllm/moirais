@@ -9,7 +9,7 @@ _QUOTE = "The whole is greater than the sum of its parts. — Aristotle"
 
 
 def fuzzy_and(a, b, method: str = "min", **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute fuzzy AND (t-norm) of two membership values.
 
     Supported t-norms:

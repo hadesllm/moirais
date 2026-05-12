@@ -9,7 +9,7 @@ def starn(
     *,
     order: int = 1,
 ) -> dict:
-    """
+    r"""
     Fit a spatio-temporal autoregressive (STAR) model.
 
     .. math::

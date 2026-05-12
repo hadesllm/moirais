@@ -11,7 +11,7 @@ _QUOTE = "The belonging you seek is not behind you, it is ahead."
 
 
 def levinson_durbin_fn(acf: np.ndarray, order: int = 4) -> DescriptiveResult:
-    """Levinson-Durbin recursion: solve Toeplitz system from autocorrelation.
+    r"""Levinson-Durbin recursion: solve Toeplitz system from autocorrelation.
 
     Given autocorrelation sequence :math:`r(0), r(1), \\ldots, r(p)`,
     recursively solves for AR coefficients and prediction error.

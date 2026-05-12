@@ -7,13 +7,22 @@
 #' @param x Numeric vector.
 #' @param B Number of multiplier replications.
 #' @param seed Integer RNG seed.
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("ksr08", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return Named list with estimate, se, n, method.
 #' @references Kosorok (2008), Ch 10.
 #' @export
-ksr08_kosorok_multiplier_bootstrap <- function(x, B = 1000, seed = 0) {
+ksr08_kosorok_multiplier_bootstrap <- function(x, B = 1000, seed = 0,
+                                               deterministic_seed = NULL) {
   x <- as.numeric(x)
   n <- length(x)
-  set.seed(seed)
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("ksr08", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   pn <- mean(x)
   centred <- x - pn
   xi <- matrix(stats::rnorm(B * n), nrow = B)

@@ -1,4 +1,4 @@
-"""Numbered display equation (6.2) from MVSML chapter 6.."""
+r"""Numbered display equation (6.2) from MVSML chapter 6.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_eq_6_2"]
 
 
 def mvsml_bayesian_regression_eq_6_2(T, j, Np, Ip, obtained, by):
-    """
+    r"""
     Numbered display equation (6.2) from MVSML chapter 6.
 
     Formula: - T j \sigma2 \beta  Np 0, Ip\sigma2 obtained by assuming that \beta1, . . . , \betap , ignoring the prior \beta distribution of \sigma2 \beta and setting this at a very high value (1010). Note that this model is very similar to the Bayesian model obtained by adopting the prior
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_eq_6_2(T, j, Np, Ip, obtained, by):
     References
     ----------
     MVSML, Eq. (6.2) [Multivariate Statistical Machine Learnin [Pages 171-208] [2026-04-16].pdf]
-    """
+    r"""
     T = np.atleast_1d(np.asarray(T, dtype=float))
     n = len(T)
     result = float(np.mean(T))

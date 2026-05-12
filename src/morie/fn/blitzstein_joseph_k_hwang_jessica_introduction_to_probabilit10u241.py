@@ -1,4 +1,4 @@
-"""Dispersion expression (auto-extracted; see ref).."""
+r"""Dispersion expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter
 
 
 def blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter_10_unnumbered_241(x):
-    """
+    r"""
     Dispersion expression (auto-extracted; see ref).
 
     Formula: Let X and Y be r.v.s. Is it correct to say \max( X;Y ) + min(X;Y ) =X +Y "? Is it

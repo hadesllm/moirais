@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def heaps_law(tokens: list[str], **kwargs) -> ESRes:
-    """
+    r"""
     Estimate Heaps' law parameters from a token sequence.
 
     .. math::

@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def hopf_fibration(n_points: int = 500) -> DescriptiveResult:
-    """Compute the Hopf map from S^3 to S^2.
+    r"""Compute the Hopf map from S^3 to S^2.
 
     The Hopf fibration maps (z1, z2) in C^2 with |z1|^2+|z2|^2=1 to:
     :math:`(2\\operatorname{Re}(z_1\\bar{z}_2),\\; 2\\operatorname{Im}(z_1\\bar{z}_2),\\; |z_1|^2 - |z_2|^2)`

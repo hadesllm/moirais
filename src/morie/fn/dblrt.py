@@ -9,7 +9,7 @@ from ._containers import ESRes
 def population_doubling(
     growth_rate: float,
 ) -> ESRes:
-    """Compute population doubling time.
+    r"""Compute population doubling time.
 
     .. math::
 

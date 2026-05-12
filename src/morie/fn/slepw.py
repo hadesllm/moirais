@@ -6,7 +6,7 @@ import numpy as np
 
 
 def slepw(joint_pmf: np.ndarray) -> dict:
-    """
+    r"""
     Compute the Slepian-Wolf rate region for two correlated sources.
 
     For jointly distributed (X, Y) with joint PMF p(x, y), the achievable

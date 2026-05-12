@@ -13,7 +13,7 @@ def gaussian_beam(
     w0: float,
     z: np.ndarray | list[float],
 ) -> DescriptiveResult:
-    """Compute Gaussian beam parameters along the propagation axis.
+    r"""Compute Gaussian beam parameters along the propagation axis.
 
     Calculates beam radius :math:`w(z)`, radius of curvature :math:`R(z)`,
     and Gouy phase :math:`\\psi(z)` for a TEM00 mode.

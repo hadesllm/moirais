@@ -8,7 +8,8 @@ from ._richresult import RichResult
 __all__ = ["ghosal_hierarchical_bayes"]
 
 
-def ghosal_hierarchical_bayes(x, a_prior=1.0, b_prior=1.0, M=400, seed=0):
+def ghosal_hierarchical_bayes(x, a_prior=1.0, b_prior=1.0, M=400, seed=0,
+                                deterministic_seed: int | None = None):
     """Hierarchical-DP with a Gamma(a, b) hyperprior on the concentration.
 
     Model::
@@ -31,6 +32,11 @@ def ghosal_hierarchical_bayes(x, a_prior=1.0, b_prior=1.0, M=400, seed=0):
     a_prior, b_prior : Gamma(shape, rate) hyperprior on alpha.
     M : int — number of posterior draws.
     seed : int.
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged.
 
     Returns
     -------
@@ -43,7 +49,11 @@ def ghosal_hierarchical_bayes(x, a_prior=1.0, b_prior=1.0, M=400, seed=0):
       JASA 90.
     Ghosal & van der Vaart (2017) Ch 15.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("ghhbp", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     x = np.asarray(x, dtype=float).ravel()
     n = int(x.size)
     if n < 2:

@@ -5,7 +5,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 def gmm_pdf(x, means, covs, weights, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Evaluate a Gaussian Mixture Model PDF at points *x*.
 
     .. math::

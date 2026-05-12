@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def itakura_saito(p_spec, q_spec, **kwargs) -> ESRes:
-    """
+    r"""
     Compute the Itakura-Saito distance between two power spectra.
 
     .. math::

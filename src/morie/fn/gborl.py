@@ -15,7 +15,7 @@ def gabor_logon(
     f0: float,
     sigma: float,
 ) -> DescriptiveResult:
-    """Gabor logon: Gaussian-windowed complex sinusoid.
+    r"""Gabor logon: Gaussian-windowed complex sinusoid.
 
     .. math::
 

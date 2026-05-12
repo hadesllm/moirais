@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 
 
 def lad_regression(X: np.ndarray, y: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Least Absolute Deviations (LAD / L1) regression via linear programming.
 
     Minimises :math:`\\sum_i |y_i - X_i \\beta|` which is more robust to

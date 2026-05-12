@@ -8,7 +8,7 @@ _QUOTE = "It is the mark of an educated mind to entertain a thought without acce
 
 
 def simpson_integrate(f, a: float, b: float, n: int = 100, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Numerical integration using composite Simpson's 1/3 rule.
 
     .. math::

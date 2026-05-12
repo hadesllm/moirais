@@ -10,7 +10,7 @@ _QUOTE = "We are what they grow beyond."
 
 
 def hanning_window(N: int, **kwargs) -> DescriptiveResult:
-    """Generate a Hanning (Hann) window of length *N*.
+    r"""Generate a Hanning (Hann) window of length *N*.
 
     .. math::
 

@@ -15,7 +15,7 @@ def sample_size_logistic(
     *,
     two_sided: bool = True,
 ) -> int:
-    """
+    r"""
     Minimum sample size for logistic regression to detect a change in
     event probability from ``p0`` (control) to ``p1`` (treatment).
 

@@ -1,4 +1,4 @@
-"""Seq2seq loss.."""
+r"""Seq2seq loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_seq2seq_loss"]
 
 
 def kamath_ch2_seq2seq_loss(x, xhat, i, j):
-    """
+    r"""
     Seq2seq loss.
 
     Formula: L^{(x)}_{Seq2Seq} = -\frac{1}{l_s}\sum_{s=i}^{j}\log P(x_s|\hat{x}, x_{i:s-1})
@@ -31,7 +31,7 @@ def kamath_ch2_seq2seq_loss(x, xhat, i, j):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.32, p. 54
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def entropy(data: np.ndarray, base: float = 2.0) -> ESRes:
-    """
+    r"""
     Compute Shannon entropy.
 
     .. math::

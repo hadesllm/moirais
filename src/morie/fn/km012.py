@@ -1,4 +1,4 @@
-"""Scaled dot attention.."""
+r"""Scaled dot attention.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_scaled_dot_attention"]
 
 
 def kamath_ch2_scaled_dot_attention(Q, K, V, d_k):
-    """
+    r"""
     Scaled dot attention.
 
     Formula: \mathrm{attention}(Q,K,V)=\mathrm{softmax}(\frac{QK^T}{\sqrt{d_k}})V
@@ -31,7 +31,7 @@ def kamath_ch2_scaled_dot_attention(Q, K, V, d_k):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.12, p. 33
-    """
+    r"""
     Q = np.atleast_1d(np.asarray(Q, dtype=float))
     n = len(Q)
     result = float(np.mean(Q))

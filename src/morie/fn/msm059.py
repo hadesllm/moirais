@@ -1,4 +1,4 @@
-"""Numbered display equation (6.1) from MVSML chapter 6.."""
+r"""Numbered display equation (6.1) from MVSML chapter 6.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_eq_6_1"]
 
 
 def mvsml_bayesian_regression_eq_6_1(BGLR, y, ETA, nIter, burnIn, df0):
-    """
+    r"""
     Numbered display equation (6.1) from MVSML chapter 6.
 
     Formula: = BGLR(y=y, ETA = ETA, nIter = 1e4, burnIn = 1e3, df0 = v, S0 = S, probIn = \pip0, counts = ϕ0, R2 = R2) and ETA = list( list( model = ‘BayesB’, X=X1 ) ) A = BGLR(y=y, ETA = ETA, nIter = 1e4, burnIn = 1e3, df0 = v, rate0 = r, shape0 = s, probIn = \pip0, counts = ϕ0, R2 = R2) 6.6 Genomic-Enabled Prediction Bayesian Lasso Model Another variant of the model
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_eq_6_1(BGLR, y, ETA, nIter, burnIn, df0):
     References
     ----------
     MVSML, Eq. (6.1) [Multivariate Statistical Machine Learnin [Pages 171-208] [2026-04-16].pdf]
-    """
+    r"""
     y = np.atleast_1d(np.asarray(y, dtype=float))
     n = len(y)
     result = float(np.mean(y))

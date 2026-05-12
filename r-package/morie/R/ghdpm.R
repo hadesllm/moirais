@@ -5,13 +5,21 @@
 #' @param alpha,sigma DP and within-cluster sd (sigma defaults to Silverman bw)
 #' @param grid evaluation grid
 #' @param n_iter,burn,seed Gibbs settings
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("ghdpm", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return named list with `estimate`, `grid`, `density`, `k_post`, `n`
 #' @importFrom utils head tail
 #' @export
 ghosal_dpmixture_density <- function(x, alpha = 1.0, sigma = NULL,
                                        grid = NULL, n_iter = 120, burn = 40,
-                                       seed = 0) {
-  set.seed(seed)
+                                       seed = 0, deterministic_seed = NULL) {
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("ghdpm", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   x <- as.numeric(x); n <- length(x)
   if (n == 0) return(list(estimate = NA_real_, n = 0,
                           method = "DP-mixture density (empty input)"))

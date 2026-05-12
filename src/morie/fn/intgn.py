@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def integration(cov_matrix, **kwargs) -> ESRes:
-    """
+    r"""
     Compute integration (neural complexity) from a covariance matrix.
 
     Integration I(X) = sum of marginal entropies - joint entropy.

@@ -1,4 +1,4 @@
-"""CentralTendency expression (auto-extracted; see ref).."""
+r"""CentralTendency expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_1297"]
 
 
 def hedderich_chapter_9_unnumbered_1297(x):
-    """
+    r"""
     CentralTendency expression (auto-extracted; see ref).
 
     Formula: [EQ] \log(θ) = ¯y + s2

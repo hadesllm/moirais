@@ -20,7 +20,7 @@ def pid_controller(
     plant_tau: float = 0.5,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Simulate a discrete PID controller driving a first-order plant.
 
     The PID control law is:

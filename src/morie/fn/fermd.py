@@ -12,7 +12,7 @@ def fermd(
     T: float,
     kB: float = 1.380649e-23,
 ) -> dict:
-    """
+    r"""
     Compute the Fermi-Dirac distribution.
 
     .. math::

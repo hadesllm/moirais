@@ -9,7 +9,7 @@ _QUOTE = "I cannot teach anybody anything. I can only make them think. — Socra
 
 
 def omp(A, y, sparsity: int, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Orthogonal Matching Pursuit (OMP) for sparse signal recovery.
 
     Greedily selects columns of :math:`A` that best explain :math:`y`,

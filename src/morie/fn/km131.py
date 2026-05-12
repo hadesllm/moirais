@@ -1,4 +1,4 @@
-"""Input projector.."""
+r"""Input projector.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_input_projector"]
 
 
 def kamath_ch9_input_projector(F_X):
-    """
+    r"""
     Input projector.
 
     Formula: P_X = IN\_ALIGN_{X\to T}(F_X)
@@ -25,7 +25,7 @@ def kamath_ch9_input_projector(F_X):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.3, p. 380
-    """
+    r"""
     F_X = np.atleast_1d(np.asarray(F_X, dtype=float))
     n = len(F_X)
     result = float(np.mean(F_X))

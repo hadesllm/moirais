@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def mean_changepoint(y: np.ndarray, method: str = "cusum") -> DescriptiveResult:
-    """
+    r"""
     Detect a single mean shift in a time series using CUSUM.
 
     Computes the cumulative sum of deviations from the grand mean

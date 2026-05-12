@@ -10,7 +10,7 @@ def entqm(
     rho: np.ndarray,
     base: float = np.e,
 ) -> dict:
-    """
+    r"""
     Compute the von Neumann entropy of a quantum density matrix.
 
     .. math::

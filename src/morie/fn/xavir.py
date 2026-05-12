@@ -13,7 +13,7 @@ def xavier_init(
     seed: int = 42,
     uniform: bool = True,
 ) -> DescriptiveResult:
-    """
+    r"""
     Generate Xavier/Glorot weight initialization matrix.
 
     For uniform distribution:

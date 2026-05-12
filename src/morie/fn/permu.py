@@ -9,7 +9,7 @@ _QUOTE = "Look well into thyself; there is a source which will always spring up.
 
 
 def permutation_count(n: int, k: int, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the number of k-permutations of n items.
 
     .. math::

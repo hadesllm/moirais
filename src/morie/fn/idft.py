@@ -11,7 +11,7 @@ _QUOTE = "In my experience there is no such thing as luck."
 
 
 def idft_compute(X, **kwargs) -> DescriptiveResult:
-    """Compute the Inverse Discrete Fourier Transform.
+    r"""Compute the Inverse Discrete Fourier Transform.
 
     .. math::
 

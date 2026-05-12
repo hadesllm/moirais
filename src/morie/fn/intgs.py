@@ -11,7 +11,7 @@ _QUOTE = "The belonging you seek is not behind you. It is ahead."
 
 
 def integrate_signal(x, fs: float = 1.0) -> SignalResult:
-    """Compute cumulative trapezoidal integration of signal *x*.
+    r"""Compute cumulative trapezoidal integration of signal *x*.
 
     .. math::
 

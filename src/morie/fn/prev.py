@@ -13,7 +13,7 @@ def point_prevalence(
     *,
     alpha: float = 0.05,
 ) -> dict[str, Any]:
-    """
+    r"""
     Compute point prevalence (proportion) with Wilson score CI.
 
     .. math::

@@ -1,4 +1,4 @@
-"""Probability expression (auto-extracted; see ref).."""
+r"""Probability expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["probability_and_random_processes_with_one_thousand_exercises_chapter
 
 
 def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnumbered_5(x):
-    """
+    r"""
     Probability expression (auto-extracted; see ref).
 
     Formula: [EQ] (b) if B ⊇ A then P( B) = P( A) + P( B \ A) ≥ P( A) ,
@@ -29,7 +29,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     References
     ----------
     Probability and Random Processes with One Thousand Exercises -- Geoffrey  Stirzaker Grimmett, ch.2 (unnumbered)
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

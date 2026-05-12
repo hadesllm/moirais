@@ -13,7 +13,7 @@ def transmission_tree(
     *,
     ids: list | None = None,
 ) -> dict[str, Any]:
-    """Reconstruct a transmission tree using the Wallinga-Teunis method.
+    r"""Reconstruct a transmission tree using the Wallinga-Teunis method.
 
     For each pair of cases (i, j), computes the relative likelihood
     that case j infected case i based on the serial interval

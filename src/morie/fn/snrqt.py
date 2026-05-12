@@ -8,7 +8,7 @@ _QUOTE = "The art of doing mathematics consists in finding that special case whi
 
 
 def snr_quantization(bits: int, **kwargs) -> DescriptiveResult:
-    """Compute the theoretical quantization SNR.
+    r"""Compute the theoretical quantization SNR.
 
     .. math::
 

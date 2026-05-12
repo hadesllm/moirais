@@ -11,7 +11,7 @@ _QUOTE = "I find your lack of faith disturbing."
 
 
 def chebyshev1_filter(x, cutoff, fs, order: int = 4, rp: float = 1.0) -> SignalResult:
-    """Apply a Chebyshev Type I filter to signal *x*.
+    r"""Apply a Chebyshev Type I filter to signal *x*.
 
     .. math::
 

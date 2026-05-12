@@ -11,7 +11,7 @@ def horvitz_thompson_total(
     y: np.ndarray,
     inclusion_probs: np.ndarray,
 ) -> dict:
-    """
+    r"""
     Horvitz-Thompson estimator of population total.
 
     The HT estimator is:

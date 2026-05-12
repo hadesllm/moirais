@@ -1,4 +1,4 @@
-"""Toxic fraction.."""
+r"""Toxic fraction.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_toxic_fraction"]
 
 
 def kamath_ch6_toxic_fraction(Yhat, c):
-    """
+    r"""
     Toxic fraction.
 
     Formula: \mathrm{TF}(\hat{Y}) = E_{\hat{Y}\in\hat{Y}}[I(c(\hat{Y})\ge 0.5)]
@@ -27,7 +27,7 @@ def kamath_ch6_toxic_fraction(Yhat, c):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.25, p. 250
-    """
+    r"""
     Yhat = np.atleast_1d(np.asarray(Yhat, dtype=float))
     n = len(Yhat)
     result = float(np.mean(Yhat))

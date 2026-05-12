@@ -8,7 +8,8 @@ __all__ = ["ghosal_stick_breaking_trunc"]
 
 
 def ghosal_stick_breaking_trunc(x, alpha=1.0, K=50, seed=0,
-                                  base_mean=None, base_sd=None):
+                                  base_mean=None, base_sd=None,
+                                  deterministic_seed: int | None = None):
     """Draw a truncated stick-breaking representation of ``DP(alpha, G0)``.
 
     Sethuraman (1994) representation::
@@ -35,6 +36,11 @@ def ghosal_stick_breaking_trunc(x, alpha=1.0, K=50, seed=0,
         Truncation level.
     seed : int
     base_mean, base_sd : float, optional
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged.
 
     Returns
     -------
@@ -48,7 +54,11 @@ def ghosal_stick_breaking_trunc(x, alpha=1.0, K=50, seed=0,
     Ishwaran, H. & James, L. (2001). Gibbs Sampling Methods for
       Stick-Breaking Priors. JASA 96.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("ghstk", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     x = np.asarray(x, dtype=float).ravel()
     n = int(x.size)
     if base_mean is None:

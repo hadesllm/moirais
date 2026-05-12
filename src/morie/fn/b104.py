@@ -1,4 +1,4 @@
-"""Compact vector form of the linear model, using a dot product of weight and feature vectors plus a bias.."""
+r"""Compact vector form of the linear model, using a dot product of weight and feature vectors plus a bias.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_linear_vector"]
 
 
 def burkov_lm_ch1_linear_vector(w, x, b):
-    """
+    r"""
     Compact vector form of the linear model, using a dot product of weight and feature vectors plus a bias.
 
     Formula: y = \mathbf{w} \cdot \mathbf{x} + b

@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def pelt_changepoint(y: np.ndarray, penalty: str = "bic", min_size: int = 2) -> DescriptiveResult:
-    """
+    r"""
     Pruned Exact Linear Time (PELT) algorithm for change-point detection.
 
     Finds the exact segmentation that minimises cost + penalty using

@@ -12,7 +12,7 @@ def longest_common_subseq(
     seq1: str,
     seq2: str,
 ) -> DescriptiveResult:
-    """
+    r"""
     Find the longest common subsequence via dynamic programming.
 
     .. math::

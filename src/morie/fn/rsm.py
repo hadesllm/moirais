@@ -13,7 +13,7 @@ def response_surface(
     y: np.ndarray,
     degree: int = 2,
 ) -> DescriptiveResult:
-    """Fit a response surface model via ordinary least squares.
+    r"""Fit a response surface model via ordinary least squares.
 
     Constructs a full second-order polynomial model with linear,
     interaction, and quadratic terms:

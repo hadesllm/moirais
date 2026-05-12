@@ -1,4 +1,4 @@
-"""Numbered display equation (6.2) from MVSML chapter 6.."""
+r"""Numbered display equation (6.2) from MVSML chapter 6.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_eq_6_2"]
 
 
 def mvsml_bayesian_regression_eq_6_2(X, j, E, a, random, error):
-    """
+    r"""
     Numbered display equation (6.2) from MVSML chapter 6.
 
     Formula: X j\beta j + E (6.1) j=1 with E a random error with normal distribution with mean 0 and variance \sigma2, is fully speciﬁed by assuming the next non-informative prior distribution: \beta and log(\sigma) approximately independent and locally uniform. -  f \beta, \sigma2 / \sigma-2
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_eq_6_2(X, j, E, a, random, error):
     References
     ----------
     MVSML, Eq. (6.2) [Multivariate Statistical Machine Learnin [Pages 171-208] [2026-04-16].pdf]
-    """
+    r"""
     X = np.atleast_1d(np.asarray(X, dtype=float))
     n = len(X)
     result = float(np.mean(X))

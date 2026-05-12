@@ -10,7 +10,7 @@ __all__ = ["rotary_position_embedding"]
 
 
 def rotary_position_embedding(x, base: float = 10000.0):
-    """Rotary positional embedding (RoPE).
+    r"""Rotary positional embedding (RoPE).
 
     Each adjacent pair of features (2i, 2i+1) at position ``pos`` is
     rotated by angle :math:`\\theta_{pos,i} = pos / N^{2i/d}`:

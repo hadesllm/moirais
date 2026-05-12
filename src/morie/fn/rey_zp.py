@@ -7,7 +7,7 @@ from scipy.stats import norm
 
 
 def rey_zp(df, y: str = "y", x: list | str = "x", max_iter: int = 200, tol: float = 1e-6, cdf=None) -> dict:
-    """
+    r"""
     Zero-inflated Poisson (ZIP) regression via EM algorithm.
 
     Two-component mixture: a point mass at zero (logistic model) and a

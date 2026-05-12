@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def ma_fit(y: np.ndarray, q: int = 1) -> DescriptiveResult:
-    """
+    r"""
     Fit an MA(q) model using the innovations algorithm.
 
     .. math::

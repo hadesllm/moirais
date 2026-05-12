@@ -16,7 +16,7 @@ def sis_model(
     t_max: float = 160.0,
     n_steps: int = 1000,
 ) -> SIRResult:
-    """
+    r"""
     Susceptible-Infected-Susceptible model without acquired immunity.
 
     .. math::

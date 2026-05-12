@@ -8,7 +8,7 @@ import scipy.stats as stats
 
 
 def plogi(x: Union[float, np.ndarray], loc: float = 0.0, scale: float = 1.0, lower_tail: bool = True, log_p: bool = False, cdf=None) -> Union[float, np.ndarray]:
-    """
+    r"""
     Logistic distribution CDF.
 
     .. math::

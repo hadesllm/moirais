@@ -13,7 +13,7 @@ def kepler_orbit(
     e: float,
     n_points: int = 360,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute a Keplerian orbit in 2D Cartesian coordinates.
 
     .. math::

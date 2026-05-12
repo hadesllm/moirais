@@ -10,7 +10,7 @@ __all__ = ["conv2d_forward"]
 
 
 def conv2d_forward(x, w, b=0.0, stride: int = 1, padding: int = 0):
-    """2D convolution / cross-correlation forward pass on one channel.
+    r"""2D convolution / cross-correlation forward pass on one channel.
 
     .. math::
 

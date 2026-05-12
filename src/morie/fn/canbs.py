@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def canberra_dist(a: np.ndarray, b: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Compute the Canberra distance between two vectors.
 
     .. math::

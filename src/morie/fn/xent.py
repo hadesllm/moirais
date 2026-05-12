@@ -8,7 +8,7 @@ _QUOTE = "Numbers have life; they're not just symbols on paper. — Shakuntala D
 
 
 def cross_entropy(p, q, **kwargs) -> ESRes:
-    """
+    r"""
     Compute cross-entropy H(P, Q).
 
     .. math::

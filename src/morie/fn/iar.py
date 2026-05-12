@@ -13,7 +13,7 @@ def indirect_age_adjustment(
     population: np.ndarray,
     confidence: float = 0.95,
 ) -> ESRes:
-    """Indirect age-standardization via the Standardized Mortality Ratio.
+    r"""Indirect age-standardization via the Standardized Mortality Ratio.
 
     .. math::
 

@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def arch_fit(returns: np.ndarray, p: int = 1) -> DescriptiveResult:
-    """
+    r"""
     Fit an ARCH(p) model to returns via MLE.
 
     .. math::

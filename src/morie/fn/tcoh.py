@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def torus_cohomology(dim: int = 2) -> DescriptiveResult:
-    """Compute de Rham cohomology groups of the n-torus T^n.
+    r"""Compute de Rham cohomology groups of the n-torus T^n.
 
     By Poincare duality and the Kuenneth theorem:
     :math:`H^k_{dR}(T^n) \\cong \\mathbb{R}^{\\binom{n}{k}}`

@@ -9,7 +9,7 @@ _QUOTE = "The ability to speak does not make you intelligent. -- Qui-Gon"
 
 
 def mcc_score(y_true, y_pred, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Matthews Correlation Coefficient (MCC).
 
     .. math::

@@ -11,7 +11,7 @@ def population_growth_rate(
     pop_end: int,
     years: float,
 ) -> ESRes:
-    """Compute annual population growth rate.
+    r"""Compute annual population growth rate.
 
     .. math::
 

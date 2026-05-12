@@ -16,7 +16,7 @@ def coherence_function_fn(
     fs: float = 1.0,
     nperseg: int = 256,
 ) -> DescriptiveResult:
-    """Compute magnitude-squared coherence between two signals.
+    r"""Compute magnitude-squared coherence between two signals.
 
     .. math::
 

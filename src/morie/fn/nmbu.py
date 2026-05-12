@@ -13,7 +13,7 @@ def nambu_goto_action(
     metric: np.ndarray | None = None,
     T: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute the Nambu-Goto action for a string worldsheet.
+    r"""Compute the Nambu-Goto action for a string worldsheet.
 
     .. math::
 

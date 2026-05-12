@@ -10,7 +10,7 @@ _QUOTE = "Great, kid. Don't get cocky."
 
 
 def raw_moment(x, k=1, **kwargs) -> DescriptiveResult:
-    """Compute the *k*-th raw moment of signal *x*.
+    r"""Compute the *k*-th raw moment of signal *x*.
 
     .. math::
 

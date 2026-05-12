@@ -1,4 +1,4 @@
-"""GeneralStatistics expression (auto-extracted; see ref).."""
+r"""GeneralStatistics expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter
 
 
 def blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter_10_unnumbered_354(x, cdf=None):
-    """
+    r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
     Formula: h 9.3.5. It is incorrect to write \E(YjX1 +X2) =E(YjX1) +E(YjX2)"; linearity

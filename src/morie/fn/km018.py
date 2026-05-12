@@ -1,4 +1,4 @@
-"""Layer norm.."""
+r"""Layer norm.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_layer_norm"]
 
 
 def kamath_ch2_layer_norm(h_i, mu, sigma, g):
-    """
+    r"""
     Layer norm.
 
     Formula: h_i = g\,\frac{h_i - \mu}{\sigma}
@@ -31,7 +31,7 @@ def kamath_ch2_layer_norm(h_i, mu, sigma, g):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.18, p. 37
-    """
+    r"""
     h_i = np.atleast_1d(np.asarray(h_i, dtype=float))
     n = len(h_i)
     result = float(np.mean(h_i))

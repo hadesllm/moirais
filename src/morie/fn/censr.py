@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 
 
 def censored_regression(y: np.ndarray, x: np.ndarray, censor_val: float = 0.0, cdf=None) -> DescriptiveResult:
-    """
+    r"""
     Tobit (Type I) censored regression via maximum likelihood.
 
     Left-censored at *censor_val*: observed :math:`y^* = \\max(y, c)`.

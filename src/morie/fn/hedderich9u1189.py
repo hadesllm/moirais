@@ -1,4 +1,4 @@
-"""GeneralStatistics expression (auto-extracted; see ref).."""
+r"""GeneralStatistics expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_1189"]
 
 
 def hedderich_chapter_9_unnumbered_1189(x, cdf=None):
-    """
+    r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
     Formula: + c a t( " \ nThe " ,100 * conflev , "%−CI fortheration " , round ( r r , digits = 2 ) ,

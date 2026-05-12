@@ -10,7 +10,7 @@ _QUOTE = "I find your lack of faith disturbing."
 
 
 def root_mean_squared_error(x, x_hat, **kwargs) -> DescriptiveResult:
-    """Compute the root mean squared error between *x* and *x_hat*.
+    r"""Compute the root mean squared error between *x* and *x_hat*.
 
     .. math::
 

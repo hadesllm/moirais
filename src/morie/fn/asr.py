@@ -14,7 +14,7 @@ def age_standardized_rate(
     confidence: float = 0.95,
     per: float = 100_000.0,
 ) -> ESRes:
-    """Age-standardized rate using the direct method.
+    r"""Age-standardized rate using the direct method.
 
     .. math::
 

@@ -34,7 +34,7 @@ def emd(
     max_sift_iter: int = 300,
     sd_threshold: float = 0.05,
 ) -> DescriptiveResult:
-    """Empirical Mode Decomposition.
+    r"""Empirical Mode Decomposition.
 
     Decomposes a signal into a set of Intrinsic Mode Functions (IMFs)
     through an iterative sifting process.  Each IMF satisfies two

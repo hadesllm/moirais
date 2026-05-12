@@ -10,7 +10,7 @@ _QUOTE = "There is always a bigger fish."
 
 
 def snr_improvement(M, **kwargs) -> DescriptiveResult:
-    """Compute the SNR improvement factor for synchronized averaging.
+    r"""Compute the SNR improvement factor for synchronized averaging.
 
     .. math::
 

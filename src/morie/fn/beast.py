@@ -13,7 +13,7 @@ def jukes_cantor_rate(
     *,
     time: float = 1.0,
 ) -> DescriptiveResult:
-    """Estimate pairwise evolutionary distances using the Jukes-Cantor model.
+    r"""Estimate pairwise evolutionary distances using the Jukes-Cantor model.
 
     For each pair of aligned nucleotide sequences, computes the proportion
     of differing sites :math:`p` and the JC69 corrected distance

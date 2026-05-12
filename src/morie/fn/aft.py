@@ -8,7 +8,7 @@ from scipy.stats import norm
 
 
 def aft(time: np.ndarray, event: np.ndarray, X: np.ndarray, distribution: str = "weibull", alpha: float = 0.05, cdf=None) -> dict:
-    """
+    r"""
     Accelerated Failure Time model via maximum likelihood estimation.
 
     Fits the parametric survival model:

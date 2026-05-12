@@ -12,7 +12,7 @@ def boltz(
     degeneracies: np.ndarray = None,
     kB: float = 1.380649e-23,
 ) -> dict:
-    """
+    r"""
     Compute the Boltzmann distribution and partition function.
 
     .. math::

@@ -1,4 +1,4 @@
-"""Numbered display equation (7.1) from MVSML chapter 7.."""
+r"""Numbered display equation (7.1) from MVSML chapter 7.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_pt2_eq_7_1"]
 
 
 def mvsml_bayesian_regression_pt2_eq_7_1(c, bi, C, where, now, Li):
-    """
+    r"""
     Numbered display equation (7.1) from MVSML chapter 7.
 
     Formula: ( )  \Phi \gammac1 + bi ( ), c = 1, . . . , C, (7.2) where now Li =  bi + Ei is the latent variable, and \Phi is the cumulative normal standard distribution. In matrix form the model for the latent variable can be speciﬁed as L = b + e, where L = (L1, . . ., Ln)T and e~Nn(0, In). A Gibbs sampler of the posterior of the parameters of this model can be obtained similarly as was done for model
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_pt2_eq_7_1(c, bi, C, where, now, Li):
     References
     ----------
     MVSML, Eq. (7.1) [Multivariate Statistical Machine Learnin [Pages 209-249] [2026-04-16].pdf]
-    """
+    r"""
     c = np.atleast_1d(np.asarray(c, dtype=float))
     n = len(c)
     result = float(np.mean(c))

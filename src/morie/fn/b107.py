@@ -1,4 +1,4 @@
-"""Output of the second layer of the two-layer neural network, taking the first layer activations as input.."""
+r"""Output of the second layer of the two-layer neural network, taking the first layer activations as input.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_layer2_output"]
 
 
 def burkov_lm_ch1_layer2_output(W_2, y_1, b_2_1, phi):
-    """
+    r"""
     Output of the second layer of the two-layer neural network, taking the first layer activations as input.
 
     Formula: y_2 = \phi\!\left(\mathbf{W}_2 \mathbf{y}_1 + b_{2,1}\right)

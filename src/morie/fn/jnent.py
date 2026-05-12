@@ -9,7 +9,7 @@ _QUOTE = "The belonging you seek is not behind you, it is ahead. -- Maz Kanata"
 
 
 def joint_entropy(x, y, bins: int = 50, **kwargs) -> ESRes:
-    """
+    r"""
     Compute joint Shannon entropy H(X, Y).
 
     .. math::

@@ -4,7 +4,7 @@
 
 from ._containers import DescriptiveResult
 def bell_polynomial(n: int, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the n-th Bell number :math:`B_n`.
 
     :math:`B_n` counts the number of partitions of a set of *n* elements.

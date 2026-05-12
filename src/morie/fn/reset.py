@@ -16,7 +16,7 @@ def ramsey_reset_test(
     *,
     power: int = 3,
 ) -> TestResult:
-    """
+    r"""
     Ramsey RESET (Regression Equation Specification Error Test).
 
     Tests for omitted non-linearities by augmenting the original model

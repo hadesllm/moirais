@@ -14,7 +14,7 @@ def bland_altman(
     method2: np.ndarray,
     confidence: float = 0.95,
 ) -> DescriptiveResult:
-    """
+    r"""
     Bland-Altman analysis for method comparison agreement.
 
     Computes the mean difference (bias) and 95% limits of agreement:

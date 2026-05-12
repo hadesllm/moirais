@@ -13,7 +13,7 @@ def mantel_haenszel_or(
     tables: list[tuple[int, int, int, int]],
     confidence: float = 0.95,
 ) -> ESRes:
-    """Mantel-Haenszel pooled odds ratio across K 2x2 tables.
+    r"""Mantel-Haenszel pooled odds ratio across K 2x2 tables.
 
     .. math::
 

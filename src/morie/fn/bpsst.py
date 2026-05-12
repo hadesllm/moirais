@@ -12,7 +12,7 @@ def bps_state(
     charges: list[float] | np.ndarray | None = None,
     mass: float | None = None,
 ) -> DescriptiveResult:
-    """Check the BPS bound for a state with given charges.
+    r"""Check the BPS bound for a state with given charges.
 
     .. math::
 

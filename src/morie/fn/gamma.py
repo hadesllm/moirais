@@ -17,7 +17,7 @@ def gamma_glm(
     max_iter: int = 50,
     tol: float = 1e-8,
 ) -> RegressionResult:
-    """Gamma GLM with log link via IRLS.
+    r"""Gamma GLM with log link via IRLS.
 
     Variance function :math:`V(\\mu) = \\mu^2` (constant CV model).
 

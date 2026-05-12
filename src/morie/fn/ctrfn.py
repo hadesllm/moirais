@@ -1,5 +1,5 @@
 # morie.fn — function file (hadesllm/morie)
-"""Control function approach to endogeneity.
+r"""Control function approach to endogeneity.
 
 Two-stage procedure: (1) regress the endogenous variable on
 instruments to obtain residuals, (2) include those residuals as

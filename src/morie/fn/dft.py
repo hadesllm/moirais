@@ -11,7 +11,7 @@ _QUOTE = "Time discovers truth. — Seneca"
 
 
 def dft_compute(x, **kwargs) -> DescriptiveResult:
-    """Compute the Discrete Fourier Transform of signal *x*.
+    r"""Compute the Discrete Fourier Transform of signal *x*.
 
     .. math::
 

@@ -1,4 +1,4 @@
-"""Numbered display equation (4.14) from MVSML chapter 4.."""
+r"""Numbered display equation (4.14) from MVSML chapter 4.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_overfitting_resampling_eq_4_14"]
 
 
 def mvsml_overfitting_resampling_eq_4_14(random, means, a, total, disagreement, between):
-    """
+    r"""
     Numbered display equation (4.14) from MVSML chapter 4.
 
     Formula: random and +1 means a total disagreement between predicted and observed values. Next, we present the Brier score (Brier 1950) for categorical or binary data that can be computed as BS = T+1 X n+T X C )2, ( b\piic + dic
@@ -35,7 +35,7 @@ def mvsml_overfitting_resampling_eq_4_14(random, means, a, total, disagreement, 
     References
     ----------
     MVSML, Eq. (4.14) [Multivariate Statistical Machine Learnin [Pages 109-139] [2026-04-16].pdf]
-    """
+    r"""
     random = np.atleast_1d(np.asarray(random, dtype=float))
     n = len(random)
     result = float(np.mean(random))

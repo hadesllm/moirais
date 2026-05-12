@@ -10,7 +10,7 @@ __all__ = ["vae_elbo"]
 
 
 def vae_elbo(x, x_recon, mu, log_var, reduction: str = "mean"):
-    """Variational autoencoder ELBO.
+    r"""Variational autoencoder ELBO.
 
     For Gaussian encoder :math:`q(z|x) = \\mathcal{N}(\\mu, \\sigma^2)`
     and unit-Gaussian prior :math:`p(z) = \\mathcal{N}(0, I)`, the

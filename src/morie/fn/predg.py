@@ -11,7 +11,7 @@ _QUOTE = "Difficult to see. Always in motion is the future."
 
 
 def prediction_gain(x, ar_coeffs, **kwargs) -> DescriptiveResult:
-    """Compute the linear prediction gain.
+    r"""Compute the linear prediction gain.
 
     .. math::
 

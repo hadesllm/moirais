@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def clopper_pearson(successes: int, trials: int, alpha: float = 0.05) -> DescriptiveResult:
-    """
+    r"""
     Clopper-Pearson exact binomial confidence interval.
 
     Uses the relationship between the binomial and Beta distributions:

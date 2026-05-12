@@ -1,4 +1,4 @@
-"""Cosine of the angle between two vectors, used as a similarity measure for embeddings.."""
+r"""Cosine of the angle between two vectors, used as a similarity measure for embeddings.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_cosine_similarity"]
 
 
 def burkov_lm_ch1_cosine_similarity(x, y):
-    """
+    r"""
     Cosine of the angle between two vectors, used as a similarity measure for embeddings.
 
     Formula: \cos(\theta) = \frac{\mathbf{x} \cdot \mathbf{y}}{\lVert \mathbf{x} \rVert\, \lVert \mathbf{y} \rVert}

@@ -11,7 +11,7 @@ _QUOTE = "Strike me down and I shall become more powerful than you can imagine."
 
 
 def itakura_dist(ar1, sigma1: float, ar2, sigma2: float, **kwargs) -> DescriptiveResult:
-    """Compute the Itakura spectral distance.
+    r"""Compute the Itakura spectral distance.
 
     .. math::
 

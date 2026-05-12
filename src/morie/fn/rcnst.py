@@ -11,7 +11,7 @@ _QUOTE = "All models are wrong, but some are useful. — George E. P. Box"
 
 
 def sinc_reconstruct(samples, fs: float, t_new) -> SignalResult:
-    """Reconstruct a continuous-time signal using sinc interpolation.
+    r"""Reconstruct a continuous-time signal using sinc interpolation.
 
     .. math::
 

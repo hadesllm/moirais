@@ -1,4 +1,4 @@
-"""Association expression (auto-extracted; see ref).."""
+r"""Association expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_1512"]
 
 
 def hedderich_chapter_9_unnumbered_1512(x):
-    """
+    r"""
     Association expression (auto-extracted; see ref).
 
     Formula: + " observations wih Gamma =" , gamma, " and P =" , P , " i s k =" , k , " \ n " ) }

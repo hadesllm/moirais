@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 
 
 def degree_distribution(adj_matrix: np.ndarray) -> DescriptiveResult:
-    """Compute degree distribution and test for power-law scaling.
+    r"""Compute degree distribution and test for power-law scaling.
 
     The power-law exponent is estimated via maximum likelihood for the
     discrete Pareto distribution (Clauset et al., 2009):

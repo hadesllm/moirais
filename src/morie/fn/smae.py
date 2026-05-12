@@ -10,7 +10,7 @@ _QUOTE = "Wars not make one great."
 
 
 def mean_absolute_error(x, x_hat, **kwargs) -> DescriptiveResult:
-    """Compute the mean absolute error between *x* and *x_hat*.
+    r"""Compute the mean absolute error between *x* and *x_hat*.
 
     .. math::
 

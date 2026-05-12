@@ -1,4 +1,4 @@
-"""Gpt supervised softmax.."""
+r"""Gpt supervised softmax.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_gpt_supervised_softmax"]
 
 
 def kamath_ch2_gpt_supervised_softmax(x, h, W_y):
-    """
+    r"""
     Gpt supervised softmax.
 
     Formula: P(y|x_1,\dots,x_m) = \mathrm{softmax}(h_m^l W_y)
@@ -29,7 +29,7 @@ def kamath_ch2_gpt_supervised_softmax(x, h, W_y):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.35, p. 70
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

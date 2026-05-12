@@ -13,7 +13,7 @@ def kernel_smooth(
     y: np.ndarray,
     bandwidth: float | None = None,
 ) -> DescriptiveResult:
-    """
+    r"""
     Nadaraya-Watson kernel regression with Gaussian kernel.
 
     .. math::

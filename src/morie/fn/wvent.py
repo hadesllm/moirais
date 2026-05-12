@@ -10,7 +10,7 @@ _QUOTE = "I sense great fear in you."
 
 
 def wavelet_entropy(coeffs: list) -> DescriptiveResult:
-    """Wavelet entropy from the normalized energy distribution.
+    r"""Wavelet entropy from the normalized energy distribution.
 
     .. math::
 

@@ -13,7 +13,7 @@ def local_morans_i(
     nperm: int = 999,
     seed: int | None = None,
 ) -> SpatialResult:
-    """
+    r"""
     Compute Local Indicators of Spatial Association (LISA).
 
     For each observation *i*:

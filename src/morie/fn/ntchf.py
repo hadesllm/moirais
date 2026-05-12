@@ -11,7 +11,7 @@ _QUOTE = "Fear leads to anger. Anger leads to hate."
 
 
 def notch_filter(x, freq, Q: float = 30.0, fs: float = 1.0) -> SignalResult:
-    """Apply a notch (band-reject) filter at frequency *freq*.
+    r"""Apply a notch (band-reject) filter at frequency *freq*.
 
     .. math::
 

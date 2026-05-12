@@ -1,4 +1,4 @@
-"""Pass at k.."""
+r"""Pass at k.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch8_pass_at_k"]
 
 
 def kamath_ch8_pass_at_k(n, c, k):
-    """
+    r"""
     Pass at k.
 
     Formula: \mathrm{pass}@k = 1 - \frac{\binom{n-c}{k}}{\binom{n}{k}}
@@ -29,7 +29,7 @@ def kamath_ch8_pass_at_k(n, c, k):
     References
     ----------
     Kamath et al (2024), Ch 8, Eq 8.16, p. 328
-    """
+    r"""
     n = np.atleast_1d(np.asarray(n, dtype=float))
     n = len(n)
     result = float(np.mean(n))

@@ -1,4 +1,4 @@
-"""GeneralStatistics expression (auto-extracted; see ref).."""
+r"""GeneralStatistics expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter
 
 
 def blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter_10_unnumbered_346(x, cdf=None):
-    """
+    r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
     Formula: [EQ] say \g(x) = E(YjX = x), so g(X) = E(YjX = X), which equals E(Y ) because

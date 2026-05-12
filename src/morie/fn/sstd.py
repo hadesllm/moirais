@@ -10,7 +10,7 @@ _QUOTE = "Truth comes out of error more readily than out of confusion. — Franc
 
 
 def sample_std(x, ddof=1, **kwargs) -> DescriptiveResult:
-    """Compute the sample standard deviation of signal *x*.
+    r"""Compute the sample standard deviation of signal *x*.
 
     .. math::
 

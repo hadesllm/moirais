@@ -11,7 +11,7 @@ def nels(
     event: np.ndarray,
     alpha: float = 0.05,
 ) -> SurvivalResult:
-    """
+    r"""
     Nelson-Aalen estimator of the cumulative hazard function.
 
     .. math::

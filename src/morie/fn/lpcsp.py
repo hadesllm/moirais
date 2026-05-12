@@ -16,7 +16,7 @@ def lpc_spectrum_fn(
     nfft: int = 512,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute the power spectrum from LPC (all-pole) model parameters.
+    r"""Compute the power spectrum from LPC (all-pole) model parameters.
 
     .. math::
 

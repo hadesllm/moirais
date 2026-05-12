@@ -25,7 +25,7 @@ def estimate_atc(
     covariates: list[str],
     propensity_col: str | None = None,
 ) -> dict[str, Any]:
-    """Estimate the Average Treatment Effect on the Controls (ATC).
+    r"""Estimate the Average Treatment Effect on the Controls (ATC).
 
     The ATC is defined as:
 

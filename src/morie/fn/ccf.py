@@ -10,7 +10,7 @@ def ccf(
     nlags: int = 20,
     alpha: float = 0.05,
 ) -> dict:
-    """
+    r"""
     Cross-correlation function between two time series.
 
     Computes the Pearson correlation between *x* and lagged *y*:

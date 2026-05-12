@@ -14,7 +14,7 @@ def circular_mean(
     degrees: bool = True,
     weights: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """Compute circular (directional) mean and concentration parameter.
+    r"""Compute circular (directional) mean and concentration parameter.
 
     Parameters
     ----------

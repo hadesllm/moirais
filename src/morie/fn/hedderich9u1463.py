@@ -1,4 +1,4 @@
-"""Dispersion expression (auto-extracted; see ref).."""
+r"""Dispersion expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_1463"]
 
 
 def hedderich_chapter_9_unnumbered_1463(x):
-    """
+    r"""
     Dispersion expression (auto-extracted; see ref).
 
     Formula: + " \ n " , " Bradley −Blackwood test : F=" , round ( F . stat , 3 ) ,

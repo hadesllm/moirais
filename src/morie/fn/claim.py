@@ -14,7 +14,7 @@ def claim_frequency(
     exposure: np.ndarray,
     confidence: float = 0.95,
 ) -> DescriptiveResult:
-    """Estimate claim frequency under a Poisson model.
+    r"""Estimate claim frequency under a Poisson model.
 
     The MLE of the Poisson rate parameter is:
 

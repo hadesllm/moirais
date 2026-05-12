@@ -11,7 +11,7 @@ _QUOTE = "Let the Wookiee win."
 
 
 def backward_prediction_fn(x: np.ndarray, ar_coeffs: np.ndarray) -> DescriptiveResult:
-    """Compute backward linear prediction error.
+    r"""Compute backward linear prediction error.
 
     .. math::
 

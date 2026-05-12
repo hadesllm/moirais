@@ -11,7 +11,7 @@ _QUOTE = "The only true wisdom is in knowing you know nothing. — Socrates"
 
 
 def catalan_number(n: int, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the n-th Catalan number.
 
     .. math::

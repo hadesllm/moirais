@@ -13,7 +13,7 @@ def full_adder(
     b: int | np.ndarray,
     carry_in: int = 0,
 ) -> DescriptiveResult:
-    """
+    r"""
     Simulate a full adder (or ripple-carry adder for bit arrays).
 
     For scalars: single-bit full adder.

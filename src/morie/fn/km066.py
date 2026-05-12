@@ -1,4 +1,4 @@
-"""Reward kl penalty.."""
+r"""Reward kl penalty.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch5_reward_kl_penalty"]
 
 
 def kamath_ch5_reward_kl_penalty(x, y, pi_RL, pi_SFT, beta):
-    """
+    r"""
     Reward kl penalty.
 
     Formula: R(x,y) = r_{\theta}(x,y) - \beta\log[\frac{\pi^{RL}(y|x)}{\pi^{SFT}(y|x)}]
@@ -33,7 +33,7 @@ def kamath_ch5_reward_kl_penalty(x, y, pi_RL, pi_SFT, beta):
     References
     ----------
     Kamath et al (2024), Ch 5, Eq 5.2, p. 197
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

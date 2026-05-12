@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def joint_entropy(x, y, bins: int = 50, **kwargs) -> ESRes:
-    """
+    r"""
     Compute joint Shannon entropy H(X, Y).
 
     .. math::

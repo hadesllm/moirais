@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def mdl(log_likelihood: float, k: int, n: int, **kwargs) -> ESRes:
-    """
+    r"""
     Compute minimum description length criterion.
 
     .. math::

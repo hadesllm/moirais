@@ -12,7 +12,7 @@ from ._containers import TestResult
 def jonckheere_terpstra_test(
     *groups: Union[list, np.ndarray],
 ) -> TestResult:
-    """
+    r"""
     Jonckheere-Terpstra test for ordered alternatives.
 
     Tests H0: all *k* groups come from the same distribution against

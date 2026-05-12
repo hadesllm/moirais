@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def minkowski_dist(a: np.ndarray, b: np.ndarray, p: float = 2.0) -> DescriptiveResult:
-    """
+    r"""
     Compute the Minkowski distance (Lp norm) between two vectors.
 
     .. math::

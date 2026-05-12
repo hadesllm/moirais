@@ -11,7 +11,7 @@ _QUOTE = "The garbage will do!"
 
 
 def linear_convolution(x, h, **kwargs) -> DescriptiveResult:
-    """Compute linear convolution of *x* and *h*.
+    r"""Compute linear convolution of *x* and *h*.
 
     .. math::
 

@@ -10,7 +10,7 @@ def ricci(
     riemann: np.ndarray,
     metric: np.ndarray,
 ) -> dict:
-    """
+    r"""
     Compute the Ricci tensor and scalar curvature from the Riemann tensor.
 
     .. math::

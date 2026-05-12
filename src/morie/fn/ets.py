@@ -14,7 +14,7 @@ def ets(
     beta_init: float = 0.1,
     gamma_init: float = 0.1,
 ) -> dict:
-    """
+    r"""
     Exponential smoothing (Holt-Winters method).
 
     Supports additive/multiplicative trend and seasonal components.

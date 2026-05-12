@@ -8,7 +8,7 @@ from ._containers import ESRes
 
 
 def genomic_inflation(chi2_stats: np.ndarray | None = None, p_values: np.ndarray | None = None) -> ESRes:
-    """
+    r"""
     Compute the genomic inflation factor (lambda GC).
 
     .. math::

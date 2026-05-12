@@ -11,7 +11,7 @@ _QUOTE = "Luminous beings are we, not this crude matter."
 
 
 def log_area_ratio_fn(lpc_coeffs: np.ndarray) -> DescriptiveResult:
-    """Compute Log Area Ratios (LAR) from LPC reflection coefficients.
+    r"""Compute Log Area Ratios (LAR) from LPC reflection coefficients.
 
     .. math::
 

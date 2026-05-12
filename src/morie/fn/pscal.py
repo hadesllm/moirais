@@ -12,7 +12,7 @@ def ps_calibrate(
     ps: np.ndarray,
     treatment: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Calibrate propensity scores using Platt scaling.
 
     Fits :math:`P(T=1|ps) = \\text{logistic}(a \\cdot ps + b)` to

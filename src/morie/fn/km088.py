@@ -1,4 +1,4 @@
-"""Cat metric.."""
+r"""Cat metric.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_cat_metric"]
 
 
 def kamath_ch6_cat_metric(M, U, theta):
-    """
+    r"""
     Cat metric.
 
     Formula: \mathrm{CAT}(S) = \frac{1}{|M|}\sum_{m\in M}\log P(m|U;\theta)
@@ -29,7 +29,7 @@ def kamath_ch6_cat_metric(M, U, theta):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.12, p. 236
-    """
+    r"""
     M = np.atleast_1d(np.asarray(M, dtype=float))
     n = len(M)
     result = float(np.mean(M))

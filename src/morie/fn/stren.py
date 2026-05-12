@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 def string_tension(
     alpha_prime: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute the fundamental string tension.
+    r"""Compute the fundamental string tension.
 
     .. math::
 

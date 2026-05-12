@@ -24,7 +24,7 @@ def lasso_regression(
     max_iter: int = 1000,
     tol: float = 1e-6,
 ) -> RegressionResult:
-    """LASSO via coordinate descent on standardised predictors.
+    r"""LASSO via coordinate descent on standardised predictors.
 
     Minimises :math:`\\frac{1}{2n}\\|y - X\\beta\\|^2 + \\lambda \\|\\beta\\|_1`.
 

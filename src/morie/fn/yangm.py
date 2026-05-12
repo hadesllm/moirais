@@ -10,7 +10,7 @@ def yangm(
     g_coupling: float = 1.0,
     structure_constants: np.ndarray = None,
 ) -> dict:
-    """
+    r"""
     Compute the Yang-Mills field strength tensor and action density.
 
     Field strength for SU(N) gauge field:

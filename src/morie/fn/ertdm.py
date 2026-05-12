@@ -12,7 +12,7 @@ from ._containers import DescriptiveResult
 def earth_movers_dist(
     p: np.ndarray, q: np.ndarray, p_weights: np.ndarray | None = None, q_weights: np.ndarray | None = None
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute the Earth Mover's Distance (1-Wasserstein) between two
     1-D distributions.
 

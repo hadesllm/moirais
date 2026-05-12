@@ -25,7 +25,7 @@ def run_propensity_ipw_analysis(
     covariates: list[str] | None = None,
     survey_weight_col: str = "weight",
 ) -> dict[str, pd.DataFrame | float]:
-    """
+    r"""
     Reproduce the core outputs of the old ``07_propensity.R`` workflow.
 
     ATE Estimator

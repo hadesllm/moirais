@@ -8,12 +8,21 @@
 #' @param seed Integer RNG seed (default 0).
 #' @param base_mean Optional base-measure mean.
 #' @param base_sd Optional base-measure sd.
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("ghstk", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return Named list with estimate, weights, atoms, effective_K,
 #'   trunc_err_bound, n, method.
 #' @export
 ghosal_stick_breaking_trunc <- function(x, alpha = 1.0, K = 50, seed = 0,
-                                          base_mean = NULL, base_sd = NULL) {
-  set.seed(seed)
+                                          base_mean = NULL, base_sd = NULL,
+                                          deterministic_seed = NULL) {
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("ghstk", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   x <- as.numeric(x); n <- length(x)
   if (is.null(base_mean)) base_mean <- if (n) mean(x) else 0
   if (is.null(base_sd))   base_sd   <- if (n > 1) sd(x) else 1

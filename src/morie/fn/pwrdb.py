@@ -11,7 +11,7 @@ _QUOTE = "I find your lack of faith disturbing."
 
 
 def power_to_db(power, **kwargs) -> DescriptiveResult:
-    """Convert power to decibels.
+    r"""Convert power to decibels.
 
     .. math::
 

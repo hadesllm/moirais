@@ -14,7 +14,7 @@ def wavelet_threshold(
     method: str = "universal",
     sigma: float | None = None,
 ) -> DescriptiveResult:
-    """Select threshold for wavelet coefficient shrinkage.
+    r"""Select threshold for wavelet coefficient shrinkage.
 
     Methods:
     - ``universal``: VisuShrink :math:`\\lambda = \\sigma \\sqrt{2 \\ln N}`

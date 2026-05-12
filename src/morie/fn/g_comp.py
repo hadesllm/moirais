@@ -17,7 +17,7 @@ def estimate_ate_gcomputation(
     covariates: list[str],
     outcome_model: str = "linear",
 ) -> dict:
-    """
+    r"""
     G-computation (outcome regression / standardisation) ATE estimator.
 
     The G-computation estimator proceeds in three steps:

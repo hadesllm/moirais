@@ -14,7 +14,7 @@ def dirac(
     hbar: float = 1.0545718e-34,
     c: float = 299792458.0,
 ) -> dict:
-    """
+    r"""
     Compute the free-particle Dirac spinor and energy.
 
     The Dirac equation:

@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def js_divergence(p: np.ndarray, q: np.ndarray) -> ESRes:
-    """
+    r"""
     Compute Jensen-Shannon divergence.
 
     .. math::

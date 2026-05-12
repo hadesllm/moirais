@@ -1,4 +1,4 @@
-"""Numbered display equation (7.9) from MVSML chapter 7.."""
+r"""Numbered display equation (7.9) from MVSML chapter 7.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_pt2_eq_7_9"]
 
 
 def mvsml_bayesian_regression_pt2_eq_7_9(of, e, That, the, update, block):
-    """
+    r"""
     Numbered display equation (7.9) from MVSML chapter 7.
 
     Formula: 227 of \beta (e\beta). That is, the update of block c is achieved by maximizing the following function with respect to \beta0c and \betac: ) = ℓ )  \lambda\betaT f c \beta0c, \betac ( c \beta; y ( c \betac,
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_pt2_eq_7_9(of, e, That, the, update, block):
     References
     ----------
     MVSML, Eq. (7.9) [Multivariate Statistical Machine Learnin [Pages 209-249] [2026-04-16].pdf]
-    """
+    r"""
     of = np.atleast_1d(np.asarray(of, dtype=float))
     n = len(of)
     result = float(np.mean(of))

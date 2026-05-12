@@ -15,7 +15,7 @@ _PREWITT_Y = np.array([[-1, -1, -1], [0, 0, 0], [1, 1, 1]], dtype=float)
 
 
 def edge_detect(image: np.ndarray, method: str = "sobel") -> DescriptiveResult:
-    """
+    r"""
     Detect edges in a grayscale image using Sobel or Prewitt operators.
 
     Computes horizontal and vertical gradients :math:`G_x, G_y` then

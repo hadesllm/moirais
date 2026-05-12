@@ -11,7 +11,7 @@ _QUOTE = "Difficulties strengthen the mind, as labor does the body. — Seneca"
 
 
 def feature_whiten(X, method="zca", eps=1e-5, **kwargs) -> DescriptiveResult:
-    """Feature whitening via ZCA or PCA transform.
+    r"""Feature whitening via ZCA or PCA transform.
 
     ZCA whitening:
     :math:`\\mathbf{X}_{\\text{zca}} = \\mathbf{U} \\Lambda^{-1/2} \\mathbf{U}^\\top (\\mathbf{X} - \\mu)`

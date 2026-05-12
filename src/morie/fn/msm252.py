@@ -1,4 +1,4 @@
-"""Numbered display equation (10.13) from MVSML chapter 10.."""
+r"""Numbered display equation (10.13) from MVSML chapter 10.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_reproducing_kernel_eq_10_13"]
 
 
 def mvsml_reproducing_kernel_eq_10_13(w, l, jk, t, ijV, h):
-    """
+    r"""
     Numbered display equation (10.13) from MVSML chapter 10.
 
     Formula: + \Deltaw l( ) jk = w l( ) t( ) ( ) + \eta\deltaijV h (10.13) jk jk jk ik This equation reﬂects that the adjusted weights from
@@ -35,7 +35,7 @@ def mvsml_reproducing_kernel_eq_10_13(w, l, jk, t, ijV, h):
     References
     ----------
     MVSML, Eq. (10.13) [Multivariate Statistical Machine Learnin [Pages 379-425] [2026-04-16].pdf]
-    """
+    r"""
     w = np.atleast_1d(np.asarray(w, dtype=float))
     n = len(w)
     result = float(np.mean(w))

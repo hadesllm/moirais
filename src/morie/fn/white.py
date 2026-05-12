@@ -12,7 +12,7 @@ def white_test(
     residuals: Union[list, np.ndarray],
     X: Union[list, np.ndarray],
 ) -> TestResult:
-    """
+    r"""
     White's general test for heteroscedasticity.
 
     Unlike Breusch-Pagan, White's test does not assume a specific functional

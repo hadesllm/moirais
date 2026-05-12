@@ -8,7 +8,7 @@ def cumhz(
     times: np.ndarray,
     survival: np.ndarray,
 ) -> dict:
-    """
+    r"""
     Cumulative hazard function derived from survival probabilities.
 
     Converts a Kaplan-Meier (or any) survival curve to the cumulative hazard

@@ -1,4 +1,4 @@
-"""Numbered display equation (9.19) from MVSML chapter 9.."""
+r"""Numbered display equation (9.19) from MVSML chapter 9.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_ridge_lasso_elastic_eq_9_19"]
 
 
 def mvsml_ridge_lasso_elastic_eq_9_19(subject, to, x, Then, the, last):
-    """
+    r"""
     Numbered display equation (9.19) from MVSML chapter 9.
 
     Formula: ) subject to = 2x + 2\alpha = 0 \partial x and \alpha  0 (9.18) Then the last version of the Wolfe dual can be simpliﬁed as ( ) = +\alpha2 + 2\alpha maximize L \lambda
@@ -35,7 +35,7 @@ def mvsml_ridge_lasso_elastic_eq_9_19(subject, to, x, Then, the, last):
     References
     ----------
     MVSML, Eq. (9.19) [Multivariate Statistical Machine Learnin [Pages 337-378] [2026-04-16].pdf]
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

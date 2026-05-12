@@ -1,4 +1,4 @@
-"""Numbered display equation (8.8) from MVSML chapter 8.."""
+r"""Numbered display equation (8.8) from MVSML chapter 8.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_categorical_count_eq_8_8"]
 
 
 def mvsml_categorical_count_eq_8_8(can, be, substituted, the, Q, Nystr):
-    """
+    r"""
     Numbered display equation (8.8) from MVSML chapter 8.
 
     Formula: 8.8) can be substituted for the Q approximations from Nyström (Titsias 2009). That   is, the random genetic vectors have a normal distribution u  N 0, \sigma2 uQ , where Q = Kn,mK 2 1 m,mK0 n,m: With these adjustments in the distribution of the random effects u, we used model
@@ -35,7 +35,7 @@ def mvsml_categorical_count_eq_8_8(can, be, substituted, the, Q, Nystr):
     References
     ----------
     MVSML, Eq. (8.8) [Multivariate Statistical Machine Learnin [Pages 251-336] [2026-04-16].pdf]
-    """
+    r"""
     can = np.atleast_1d(np.asarray(can, dtype=float))
     n = len(can)
     result = float(np.mean(can))

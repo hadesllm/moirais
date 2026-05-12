@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def kl_divergence(p: np.ndarray, q: np.ndarray) -> ESRes:
-    """
+    r"""
     Compute KL divergence D_KL(P || Q).
 
     .. math::

@@ -15,7 +15,7 @@ def rbf_interp(
     kernel: str = "gaussian",
     epsilon: float = 1.0,
 ) -> DescriptiveResult:
-    """
+    r"""
     Radial basis function interpolation.
 
     Supported kernels:

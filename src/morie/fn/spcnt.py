@@ -10,7 +10,7 @@ _QUOTE = "Strike me down, and I will become more powerful than you imagine."
 
 
 def spectral_centroid(x, fs: float = 1.0, **kwargs) -> DescriptiveResult:
-    """Compute the spectral centroid.
+    r"""Compute the spectral centroid.
 
     .. math::
 

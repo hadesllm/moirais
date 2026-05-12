@@ -13,7 +13,7 @@ def value_at_risk(
     alpha: float = 0.05,
     method: str = "historical",
 ) -> DescriptiveResult:
-    """Value at Risk (VaR) at a given confidence level.
+    r"""Value at Risk (VaR) at a given confidence level.
 
     Three methods:
 

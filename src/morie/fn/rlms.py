@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def lms_regression(X: np.ndarray, y: np.ndarray, n_subsets: int = 500, seed: int = 42) -> DescriptiveResult:
-    """
+    r"""
     Least Median of Squares (LMS) regression.
 
     Minimises :math:`\\mathrm{median}_i (y_i - X_i \\beta)^2` by

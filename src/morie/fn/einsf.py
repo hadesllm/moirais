@@ -15,7 +15,7 @@ def einsf(
     G: float = 6.67430e-11,
     c: float = 299792458.0,
 ) -> dict:
-    """
+    r"""
     Compute the Einstein tensor and verify the field equations.
 
     .. math::

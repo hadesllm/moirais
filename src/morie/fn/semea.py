@@ -12,7 +12,7 @@ def sem_measurement(
     sd: float,
     reliability: float,
 ) -> DescriptiveResult:
-    """
+    r"""
     Standard error of measurement (SEM).
 
     .. math::

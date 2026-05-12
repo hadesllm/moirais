@@ -14,7 +14,7 @@ from ._richresult import RichResult
 def effective_sample_size(
     samples: Union[list, np.ndarray],
 ) -> dict[str, Any]:
-    """
+    r"""
     Compute the effective sample size (ESS) for an MCMC chain.
 
     ESS quantifies the number of independent samples equivalent

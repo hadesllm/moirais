@@ -1,4 +1,4 @@
-"""Input alignment loss.."""
+r"""Input alignment loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_input_alignment_loss"]
 
 
 def kamath_ch9_input_alignment_loss(P_X, F_T, t):
-    """
+    r"""
     Input alignment loss.
 
     Formula: \arg\min_{IN\_ALIGN_{X\to T}} L_{txt-gen}(\mathrm{LLM}(P_X,F_T), t)
@@ -29,7 +29,7 @@ def kamath_ch9_input_alignment_loss(P_X, F_T, t):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.2, p. 380
-    """
+    r"""
     P_X = np.atleast_1d(np.asarray(P_X, dtype=float))
     n = len(P_X)
     result = float(np.mean(P_X))

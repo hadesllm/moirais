@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def polygenic_risk_score(
     genotypes: np.ndarray, effect_sizes: np.ndarray, p_values: np.ndarray | None = None, p_threshold: float = 1.0
 ) -> DescriptiveResult:
-    """
+    r"""
     Calculate polygenic risk scores (PRS) by summing effect-weighted genotypes.
 
     .. math::

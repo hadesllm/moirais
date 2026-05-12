@@ -4,7 +4,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 def stirling_number(n: int, k: int, kind: int = 2, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the Stirling number S(n, k) of the first or second kind.
 
     **Second kind** :math:`S(n, k)` = number of ways to partition a set

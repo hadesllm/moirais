@@ -12,7 +12,7 @@ _QUOTE = "The garbage will do!"
 
 
 def instantaneous_amp(x: np.ndarray) -> DescriptiveResult:
-    """Instantaneous amplitude (envelope) via the analytic signal.
+    r"""Instantaneous amplitude (envelope) via the analytic signal.
 
     .. math::
 

@@ -31,7 +31,7 @@ def ordinary_kriging(
     sill: float = 1.0,
     range_: float = 1.0,
 ) -> DescriptiveResult:
-    """
+    r"""
     Ordinary kriging using a spherical variogram model.
 
     Solves the kriging system for each prediction point:

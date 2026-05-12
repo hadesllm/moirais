@@ -1,5 +1,5 @@
 # morie.fn — function file (hadesllm/morie)
-"""Deconvolution density estimation under measurement error.
+r"""Deconvolution density estimation under measurement error.
 
 Estimates the density :math:`f_X` of a latent variable :math:`X` from
 observations :math:`W = X + U` where :math:`U` is measurement error

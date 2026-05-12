@@ -15,7 +15,7 @@ def calibration_weights(
     max_iter: int = 50,
     tol: float = 1e-6,
 ) -> pd.Series:
-    """
+    r"""
     Raking calibration (iterative proportional fitting) to match known
     population marginal totals.
 

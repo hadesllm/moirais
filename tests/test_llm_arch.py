@@ -9,7 +9,7 @@ import pytest
 from morie.fn import bpblm, cslat, cslnc, grdcl, grpqa, kvcmp, lradw
 from morie.fn import moeml, pplxm, rlhfd, rmsnr, rptpn, spqkv, swigl
 from morie.fn import tknbp, tmpsc, topkd, toppd, wdemb
-from morie.fn import flshA  # noqa: N812  (matches spec short name)
+from morie.fn import flsha as flshA  # noqa: N812 (case-renamed to flsha for Linux CI)
 
 
 # ───────────────────────── 20 unit checks ──────────────────────────

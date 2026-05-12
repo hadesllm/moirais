@@ -6,7 +6,7 @@ from scipy.stats import norm
 
 
 def rey_mx(df, y: str = "y", x_fixed: list | str = "x", group_col: str = "group", max_iter: int = 200, tol: float = 1e-6, cdf=None) -> dict:
-    """
+    r"""
     Linear mixed-effects model with random intercepts via EM.
 
     Fits the model:

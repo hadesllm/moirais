@@ -11,7 +11,7 @@ _QUOTE = "Let the past die. Kill it, if you have to."
 
 
 def parseval_verify(x, **kwargs) -> DescriptiveResult:
-    """Verify Parseval's theorem for signal *x*.
+    r"""Verify Parseval's theorem for signal *x*.
 
     .. math::
 

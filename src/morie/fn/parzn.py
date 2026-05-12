@@ -11,7 +11,7 @@ _QUOTE = "I find your lack of faith disturbing."
 
 
 def parzen_classify(X_train, y_train, X_test, h=1.0, **kwargs) -> DescriptiveResult:
-    """Parzen window (kernel density estimation) classifier.
+    r"""Parzen window (kernel density estimation) classifier.
 
     Classifies via maximum class-conditional density using Gaussian kernels.
 

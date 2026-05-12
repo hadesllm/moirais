@@ -13,7 +13,7 @@ def years_lived_with_disability(
     weights: list[float] | np.ndarray,
     discount_rate: float = 0.03,
 ) -> ESRes:
-    """Compute years lived with disability (YLD).
+    r"""Compute years lived with disability (YLD).
 
     .. math::
 

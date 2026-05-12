@@ -12,7 +12,7 @@ def e_value(
     point_estimate: float,
     ci_lower: float | None = None,
 ) -> ESRes:
-    """
+    r"""
     Compute the E-value for sensitivity to unmeasured confounding.
 
     The E-value is the minimum strength of association that an

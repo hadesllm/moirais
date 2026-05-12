@@ -19,7 +19,7 @@ def bayesian_normal(
     sigma_known: float = 1.0,
     prob: float = 0.95,
 ) -> dict[str, Any]:
-    """
+    r"""
     Normal-normal conjugate analysis for a mean (known variance).
 
     Prior: mu ~ N(prior_mu, prior_sigma^2)

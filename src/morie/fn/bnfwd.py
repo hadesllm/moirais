@@ -10,7 +10,7 @@ __all__ = ["batch_norm_forward"]
 
 
 def batch_norm_forward(x, gamma=None, beta=None, eps: float = 1e-5, axis: int = 0):
-    """Batch normalization forward pass.
+    r"""Batch normalization forward pass.
 
     .. math::
 

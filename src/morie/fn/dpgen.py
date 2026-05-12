@@ -12,7 +12,7 @@ def dirichlet_process_gen(
     cutoff: float = 1e-6,
     rng: np.random.Generator | None = None,
 ) -> dict:
-    """
+    r"""
     Generate a Dirichlet process via stick-breaking (GEM distribution).
 
     The stick-breaking construction generates weights :math:`w_k` as:

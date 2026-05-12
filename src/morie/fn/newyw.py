@@ -16,7 +16,7 @@ def newey_west(
     max_lag: int | None = None,
     add_intercept: bool = True,
 ) -> RegressionResult:
-    """OLS with Newey-West heteroskedasticity and autocorrelation consistent SE.
+    r"""OLS with Newey-West heteroskedasticity and autocorrelation consistent SE.
 
     Uses the Bartlett kernel with automatic lag selection
     :math:`\\lfloor 4(n/100)^{2/9} \\rfloor` if *max_lag* is not given.

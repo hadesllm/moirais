@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def holts_method(y: np.ndarray, alpha: float = 0.3, beta: float = 0.1, h: int = 1) -> DescriptiveResult:
-    """
+    r"""
     Holt's linear trend (double exponential smoothing).
 
     Updates level :math:`\\ell_t` and trend :math:`b_t`:

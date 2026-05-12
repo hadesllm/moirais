@@ -7,7 +7,8 @@ __all__ = ["gradient_boosting_ensemble"]
 
 
 def gradient_boosting_ensemble(x, y, *, n_estimators=100, learning_rate=0.1,
-                                max_depth=3, task="auto", seed=0):
+                                max_depth=3, task="auto", seed=0,
+                                deterministic_seed: int | None = None):
     """Gradient boosting via sklearn.ensemble.GradientBoosting{Classifier,Regressor}.
 
     F_m(x) = F_{m-1}(x) + nu * h_m(x), where h_m fits the negative gradient
@@ -26,6 +27,11 @@ def gradient_boosting_ensemble(x, y, *, n_estimators=100, learning_rate=0.1,
     task : "auto" | "classification" | "regression".
     seed : int
         random_state.
+    deterministic_seed : int or None, optional
+        If supplied, the sklearn ``random_state`` is derived from the
+        SHA-keyed :func:`morie._det_rng.r_seed` so Py<->R streams agree
+        for the canonical fixture.  When ``None`` (default), behaviour
+        is unchanged: ``seed`` drives ``random_state`` directly.
 
     Returns
     -------
@@ -42,12 +48,18 @@ def gradient_boosting_ensemble(x, y, *, n_estimators=100, learning_rate=0.1,
         X = X.reshape(-1, 1)
     n = X.shape[0]
 
+    if deterministic_seed is not None:
+        from morie._det_rng import r_seed
+        rs = r_seed("gbens", deterministic_seed)
+    else:
+        rs = seed
+
     if task == "auto":
         task = "classification" if np.issubdtype(y.dtype, np.integer) or set(np.unique(y)).issubset({0, 1}) else "regression"
 
     Cls = GradientBoostingClassifier if task == "classification" else GradientBoostingRegressor
     m = Cls(n_estimators=n_estimators, learning_rate=learning_rate,
-            max_depth=max_depth, random_state=seed)
+            max_depth=max_depth, random_state=rs)
     m.fit(X, y)
     score = float(m.score(X, y))
     return RichResult(payload={

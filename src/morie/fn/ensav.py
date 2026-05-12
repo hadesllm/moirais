@@ -11,7 +11,7 @@ _QUOTE = "An unexamined life is not worth living. — Socrates"
 
 
 def ensemble_average(segments, **kwargs) -> DescriptiveResult:
-    """Compute the ensemble (synchronized) average.
+    r"""Compute the ensemble (synchronized) average.
 
     .. math::
 

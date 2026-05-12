@@ -10,7 +10,7 @@ import scipy.stats as stats
 def dnorm(
     x: Union[float, np.ndarray], mean: float = 0.0, sd: float = 1.0, log: bool = False
 ) -> Union[float, np.ndarray]:
-    """
+    r"""
     Normal distribution probability density function.
 
     Computes the density of :math:`X \\sim \\mathcal{N}(\\mu, \\sigma^2)`:

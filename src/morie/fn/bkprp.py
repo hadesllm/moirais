@@ -10,7 +10,7 @@ __all__ = ["backpropagation"]
 
 
 def backpropagation(x, y, w=None, b=None, activation: str = "sigmoid"):
-    """Backpropagation gradient computation for one dense layer with MSE loss.
+    r"""Backpropagation gradient computation for one dense layer with MSE loss.
 
     For ``L = 1/(2n) * sum( (a - y)^2 )`` with ``a = sigma(Wx + b)``:
 

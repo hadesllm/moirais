@@ -13,7 +13,7 @@ def sample_size_proportion(
     margin: float = 0.05,
     confidence: float = 0.95,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute required sample size for estimating a proportion.
 
     .. math::

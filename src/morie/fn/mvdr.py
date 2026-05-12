@@ -16,7 +16,7 @@ def mvdr_spectrum_fn(
     nfft: int = 512,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute MVDR (Capon) spectral estimate.
+    r"""Compute MVDR (Capon) spectral estimate.
 
     .. math::
 

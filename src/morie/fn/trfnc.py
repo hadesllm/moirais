@@ -10,7 +10,7 @@ _QUOTE = "The greatest teacher, failure is."
 
 
 def transfer_function(b, a, worN: int = 512) -> DescriptiveResult:
-    """Compute frequency response H(omega) = B(omega)/A(omega).
+    r"""Compute frequency response H(omega) = B(omega)/A(omega).
 
     .. math::
 

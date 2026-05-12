@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def clustering_coefficient(adj_matrix: np.ndarray) -> DescriptiveResult:
-    """Local and global clustering coefficients.
+    r"""Local and global clustering coefficients.
 
     The local clustering coefficient for node *v* is:
 

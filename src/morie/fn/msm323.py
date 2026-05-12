@@ -1,4 +1,4 @@
-"""Numbered display equation (15.1) from MVSML chapter 15.."""
+r"""Numbered display equation (15.1) from MVSML chapter 15.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_functional_regression_eq_15_1"]
 
 
 def mvsml_functional_regression_eq_15_1(Mathlouthi, et, al, through, are, given):
-    """
+    r"""
     Numbered display equation (15.1) from MVSML chapter 15.
 
     Formula: (Mathlouthi et al. 2019) through \mu and \theta are given by nonparametric link functions like   \theta log \mu ( ) = f \mu x ( ) and log = f \theta x ( ),
@@ -35,7 +35,7 @@ def mvsml_functional_regression_eq_15_1(Mathlouthi, et, al, through, are, given)
     References
     ----------
     MVSML, Eq. (15.1) [Multivariate Statistical Machine Learnin [Pages 633-681] [2026-04-16].pdf]
-    """
+    r"""
     Mathlouthi = np.atleast_1d(np.asarray(Mathlouthi, dtype=float))
     n = len(Mathlouthi)
     result = float(np.mean(Mathlouthi))

@@ -12,7 +12,7 @@ def relu(
     x: np.ndarray,
     leaky: float = 0.0,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute ReLU or Leaky ReLU activation function.
 
     .. math::

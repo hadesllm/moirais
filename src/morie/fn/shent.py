@@ -4,7 +4,7 @@ import numpy as np
 
 from ._containers import ESRes
 def shannon_entropy(x, bins: int = 50, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Shannon entropy of a discrete or discretised signal.
 
     .. math::

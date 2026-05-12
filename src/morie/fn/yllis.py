@@ -14,7 +14,7 @@ def years_of_life_lost(
     discount_rate: float = 0.03,
     age_weight: bool = False,
 ) -> dict[str, Any]:
-    """Compute years of life lost (YLL) with optional discounting.
+    r"""Compute years of life lost (YLL) with optional discounting.
 
     .. math::
 

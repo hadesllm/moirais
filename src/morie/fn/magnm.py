@@ -15,7 +15,7 @@ def biot_savart(
     *,
     mu0: float = 4e-7 * np.pi,
 ) -> DescriptiveResult:
-    """Compute the magnetic field at a point due to a current-carrying wire
+    r"""Compute the magnetic field at a point due to a current-carrying wire
     using the Biot-Savart law.
 
     :math:`\\mathbf{B} = \\frac{\\mu_0 I}{4\\pi} \\int \\frac{d\\mathbf{l} \\times \\hat{r}}{r^2}`

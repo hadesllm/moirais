@@ -12,7 +12,7 @@ from ._containers import TestResult
 def page_trend_test(
     data: Union[list, np.ndarray],
 ) -> TestResult:
-    """
+    r"""
     Page's L test for ordered alternatives in a randomised block design.
 
     Tests whether *k* treatments have a monotonic ordering across *n*

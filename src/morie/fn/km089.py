@@ -1,4 +1,4 @@
-"""Sgs invariance.."""
+r"""Sgs invariance.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_sgs_invariance"]
 
 
 def kamath_ch6_sgs_invariance(Yhat_i, Yhat_j, psi):
-    """
+    r"""
     Sgs invariance.
 
     Formula: \mathrm{SGS}(\hat{Y}) = \psi(\hat{Y}_i, \hat{Y}_j)
@@ -29,7 +29,7 @@ def kamath_ch6_sgs_invariance(Yhat_i, Yhat_j, psi):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.13, p. 236
-    """
+    r"""
     Yhat_i = np.atleast_1d(np.asarray(Yhat_i, dtype=float))
     n = len(Yhat_i)
     result = float(np.mean(Yhat_i))

@@ -6,7 +6,7 @@ from scipy.special import comb
 
 from ._containers import DescriptiveResult
 def rarefaction(abundances, n_subsample=None, n_points: int = 20, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute an individual-based rarefaction curve.
 
     Expected species richness at subsample size *n*:

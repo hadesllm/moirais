@@ -15,7 +15,7 @@ def morse_wavelet(
     gamma_param: float = 3.0,
     N: int = 256,
 ) -> DescriptiveResult:
-    """Generalized Morse wavelet in the frequency domain.
+    r"""Generalized Morse wavelet in the frequency domain.
 
     .. math::
 

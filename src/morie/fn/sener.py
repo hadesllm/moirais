@@ -11,7 +11,7 @@ _QUOTE = "You were the chosen one!"
 
 
 def signal_energy(x, **kwargs) -> DescriptiveResult:
-    """Compute the total energy of signal *x*.
+    r"""Compute the total energy of signal *x*.
 
     .. math::
 

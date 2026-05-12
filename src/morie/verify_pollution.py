@@ -272,8 +272,8 @@ def _emit(report: dict[str, Any], *, as_json: bool) -> None:
         return
 
     print("=" * 66)
-    print(f"  morie verify-pollution — {report['pollutant'].upper()}"
-          f" → {report['outcome']}")
+    print(f"  morie verify-pollution -- {report['pollutant'].upper()}"
+          f" -> {report['outcome']}")
     if report.get("region"):
         print(f"  region: {report['region']}")
     if report.get("years"):

@@ -1,4 +1,4 @@
-"""Numbered display equation (6.8) from MVSML chapter 6.."""
+r"""Numbered display equation (6.8) from MVSML chapter 6.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_eq_6_8"]
 
 
 def mvsml_bayesian_regression_eq_6_8(implemented, a, multivariate, Ridge, regression, model):
-    """
+    r"""
     Numbered display equation (6.8) from MVSML chapter 6.
 
     Formula: implemented as a multivariate Ridge regression model, as follows: Y = 1J\muT + XB + X1B1 + E, (6.10) where X1 = Z1LG, G = LGLT G is the Cholesky factorization of G, B1 = L-1 G b1  MNJnT 0, IJ, \SigmaT ( ) , and the speciﬁcations for the rest of parameters and prior distribution are the same as given in model
@@ -35,7 +35,7 @@ def mvsml_bayesian_regression_eq_6_8(implemented, a, multivariate, Ridge, regres
     References
     ----------
     MVSML, Eq. (6.8) [Multivariate Statistical Machine Learnin [Pages 171-208] [2026-04-16].pdf]
-    """
+    r"""
     implemented = np.atleast_1d(np.asarray(implemented, dtype=float))
     n = len(implemented)
     result = float(np.mean(implemented))

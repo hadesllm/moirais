@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def perplexity(
     loss: float,
 ) -> DescriptiveResult:
-    """Compute perplexity from cross-entropy loss.
+    r"""Compute perplexity from cross-entropy loss.
 
     :math:`\\text{PPL} = \\exp(\\text{loss})`
 

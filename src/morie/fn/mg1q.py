@@ -11,7 +11,7 @@ def mg1_queue(
     mean_service: float,
     var_service: float,
 ) -> DescriptiveResult:
-    """M/G/1 queue metrics via the Pollaczek-Khinchine mean-value formula.
+    r"""M/G/1 queue metrics via the Pollaczek-Khinchine mean-value formula.
 
     For a single server with general service-time distribution:
 

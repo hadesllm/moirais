@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def threshold(image: np.ndarray, method: str = "otsu", value: float = 128.0) -> DescriptiveResult:
-    """
+    r"""
     Binarise a grayscale image using Otsu's method or a fixed threshold.
 
     Otsu's method minimises intra-class variance to find an optimal

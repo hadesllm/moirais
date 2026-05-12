@@ -16,7 +16,7 @@ def ar_generate_fn(
     N: int = 1000,
     seed: int | None = None,
 ) -> DescriptiveResult:
-    """Generate a realisation of an AR(p) process.
+    r"""Generate a realisation of an AR(p) process.
 
     .. math::
 

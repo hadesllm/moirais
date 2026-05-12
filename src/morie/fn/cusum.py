@@ -10,7 +10,7 @@ def cusum(
     threshold: float = 5.0,
     drift: float = 0.0,
 ) -> dict:
-    """
+    r"""
     Cumulative Sum (CUSUM) change-point detection.
 
     Maintains upper and lower cumulative sum statistics:

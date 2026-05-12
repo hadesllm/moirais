@@ -1,4 +1,4 @@
-"""Ear entropy reg.."""
+r"""Ear entropy reg.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_ear_entropy_reg"]
 
 
 def kamath_ch6_ear_entropy_reg(A, L, lam):
-    """
+    r"""
     Ear entropy reg.
 
     Formula: R = -\lambda \sum_{\ell=1}^L \mathrm{entropy}(A)_{\ell}
@@ -29,7 +29,7 @@ def kamath_ch6_ear_entropy_reg(A, L, lam):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.21, p. 244
-    """
+    r"""
     A = np.atleast_1d(np.asarray(A, dtype=float))
     n = len(A)
     result = float(np.mean(A))

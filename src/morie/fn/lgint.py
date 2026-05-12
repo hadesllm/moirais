@@ -13,7 +13,7 @@ def lagrange_interp(
     y_known: np.ndarray,
     x_eval: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Lagrange polynomial interpolation.
 
     .. math::

@@ -14,7 +14,7 @@ def direct_age_adjustment(
     confidence: float = 0.95,
     per: float = 100_000.0,
 ) -> ESRes:
-    """Direct age-adjusted rate.
+    r"""Direct age-adjusted rate.
 
     Weights observed stratum-specific rates by a standard population
     distribution.

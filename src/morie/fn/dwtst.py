@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def durbin_watson(residuals: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Durbin-Watson statistic for first-order autocorrelation.
 
     .. math::

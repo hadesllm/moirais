@@ -14,7 +14,7 @@ def detect_separation(
     *,
     add_intercept: bool = True,
 ) -> DescriptiveResult:
-    """Detect complete or quasi-complete separation in logistic regression.
+    r"""Detect complete or quasi-complete separation in logistic regression.
 
     Uses the linear-programming approach: checks whether there exists a
     vector :math:`\\beta` such that :math:`X\\beta \\ge 0` when y=1 and

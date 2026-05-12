@@ -12,7 +12,7 @@ _QUOTE = "The only true wisdom is in knowing you know nothing. — Socrates"
 
 
 def decision_tree(X_train, y_train, X_test, max_depth=5, min_samples_leaf=1, **kwargs) -> DescriptiveResult:
-    """CART decision tree using recursive Gini impurity splitting.
+    r"""CART decision tree using recursive Gini impurity splitting.
 
     .. math::
 

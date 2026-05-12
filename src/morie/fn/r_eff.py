@@ -11,7 +11,7 @@ def effective_rt(
     serial_interval: float = 5.0,
     window: int = 7,
 ) -> DescriptiveResult:
-    """Estimate the effective reproduction number Rt.
+    r"""Estimate the effective reproduction number Rt.
 
     Uses the ratio method with serial interval correction:
 

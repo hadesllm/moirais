@@ -13,7 +13,7 @@ def chrsf(
     h: float = 1e-6,
     metric_func=None,
 ) -> dict:
-    """
+    r"""
     Compute Christoffel symbols of the second kind.
 
     .. math::

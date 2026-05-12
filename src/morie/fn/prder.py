@@ -11,7 +11,7 @@ _QUOTE = "Great, kid. Don't get cocky."
 
 
 def prediction_error_fn(x: np.ndarray, ar_coeffs: np.ndarray) -> DescriptiveResult:
-    """Compute forward linear prediction error for signal *x* given AR coefficients.
+    r"""Compute forward linear prediction error for signal *x* given AR coefficients.
 
     .. math::
 

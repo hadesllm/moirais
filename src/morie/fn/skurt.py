@@ -10,7 +10,7 @@ _QUOTE = "Time discovers truth. — Seneca"
 
 
 def kurtosis_coeff(x, **kwargs) -> DescriptiveResult:
-    """Compute the excess kurtosis of signal *x*.
+    r"""Compute the excess kurtosis of signal *x*.
 
     .. math::
 

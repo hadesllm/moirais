@@ -1,4 +1,4 @@
-"""Regression expression (auto-extracted; see ref).."""
+r"""Regression expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_149"]
 
 
 def hedderich_chapter_9_unnumbered_149(x):
-    """
+    r"""
     Regression expression (auto-extracted; see ref).
 
     Formula: + c a t( " \ n t a u_ Col : Row = " , round ( t a u . CR, 3 ) ,

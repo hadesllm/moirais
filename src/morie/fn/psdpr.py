@@ -11,7 +11,7 @@ _QUOTE = "I've got a bad feeling about this."
 
 
 def periodogram(x, fs: float = 1.0, **kwargs) -> DescriptiveResult:
-    """Compute the power spectral density via the periodogram method.
+    r"""Compute the power spectral density via the periodogram method.
 
     .. math::
 

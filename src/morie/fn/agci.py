@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def agresti_coull(successes: int, trials: int, alpha: float = 0.05) -> DescriptiveResult:
-    """
+    r"""
     Agresti-Coull confidence interval for a binomial proportion.
 
     Adds :math:`z^2/2` pseudo-successes and :math:`z^2/2`

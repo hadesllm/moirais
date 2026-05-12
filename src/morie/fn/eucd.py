@@ -9,7 +9,7 @@ _QUOTE = "Difficulties strengthen the mind, as labor does the body. — Seneca"
 
 
 def euclidean_dist(x, y, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Euclidean (L2) distance between two vectors.
 
     .. math::

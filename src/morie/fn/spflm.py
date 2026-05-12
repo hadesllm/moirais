@@ -10,7 +10,7 @@ _QUOTE = "So this is how liberty dies... with thunderous applause."
 
 
 def spectral_flatness(x, **kwargs) -> DescriptiveResult:
-    """Compute spectral flatness (Wiener entropy).
+    r"""Compute spectral flatness (Wiener entropy).
 
     .. math::
 

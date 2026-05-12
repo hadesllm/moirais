@@ -10,7 +10,7 @@ def virasoro_algebra(
     m: int = 2,
     n: int = -2,
 ) -> DescriptiveResult:
-    """Compute the Virasoro algebra commutation relation [L_m, L_n].
+    r"""Compute the Virasoro algebra commutation relation [L_m, L_n].
 
     .. math::
 

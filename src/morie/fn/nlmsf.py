@@ -11,7 +11,7 @@ _QUOTE = "You were my brother, Anakin. I loved you."
 
 
 def nlms_filter(x, d, mu: float = 0.5, order: int = 16) -> SignalResult:
-    """Normalized Least Mean Squares adaptive filter.
+    r"""Normalized Least Mean Squares adaptive filter.
 
     .. math::
 

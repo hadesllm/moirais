@@ -23,7 +23,7 @@ def estimate_late(
     instrument: str,
     covariates: list[str] | None = None,
 ) -> dict[str, Any]:
-    """Estimate the Local Average Treatment Effect (LATE) via instrumental variables.
+    r"""Estimate the Local Average Treatment Effect (LATE) via instrumental variables.
 
     For a binary instrument :math:`Z`, the **Wald estimator** (simple IV) is:
 

@@ -10,7 +10,7 @@ import scipy.stats as stats
 def dcchy(
     x: Union[float, np.ndarray], loc: float = 0.0, scale: float = 1.0, log: bool = False
 ) -> Union[float, np.ndarray]:
-    """
+    r"""
     Cauchy distribution probability density function.
 
     .. math::

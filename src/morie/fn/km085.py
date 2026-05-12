@@ -1,4 +1,4 @@
-"""Cbs variance.."""
+r"""Cbs variance.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_cbs_variance"]
 
 
 def kamath_ch6_cbs_variance(W, A, p_a, p_prior):
-    """
+    r"""
     Cbs variance.
 
     Formula: \mathrm{CBS}(S) = \frac{1}{|W|}\sum_{w\in W} \mathrm{Var}_{a\in A}\log\frac{p_a}{p_{prior}}
@@ -31,7 +31,7 @@ def kamath_ch6_cbs_variance(W, A, p_a, p_prior):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.9, p. 235
-    """
+    r"""
     W = np.atleast_1d(np.asarray(W, dtype=float))
     n = len(W)
     result = float(np.mean(W))

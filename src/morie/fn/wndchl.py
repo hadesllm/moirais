@@ -11,7 +11,7 @@ def wind_chill(
     T_air_C: float | np.ndarray,
     wind_kmh: float | np.ndarray,
 ) -> DescriptiveResult:
-    """Compute Wind Chill index (°C) per the Environment Canada formula.
+    r"""Compute Wind Chill index (°C) per the Environment Canada formula.
 
     The joint US/Canada 2001 wind-chill index, replacing the 1945
     Siple-Passel scale. Valid only for T ≤ 10°C and wind ≥ 4.8 km/h;

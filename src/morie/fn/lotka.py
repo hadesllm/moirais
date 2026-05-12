@@ -15,7 +15,7 @@ def lotka_volterra(
     dt: float = 0.01,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Simulate the Lotka-Volterra predator-prey ODE system.
 
     .. math::

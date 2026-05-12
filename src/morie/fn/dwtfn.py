@@ -75,7 +75,7 @@ def dwt_decompose(
     wavelet: str = "db4",
     level: int | None = None,
 ) -> DescriptiveResult:
-    """Discrete Wavelet Transform via filter bank convolution + downsampling.
+    r"""Discrete Wavelet Transform via filter bank convolution + downsampling.
 
     Implements the Mallat pyramidal algorithm (Rangayyan & Krishnan, Ch. 8).
 

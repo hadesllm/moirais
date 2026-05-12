@@ -9,7 +9,7 @@ _QUOTE = "I've got a bad feeling about this."
 
 
 def aliasing_demo(f_signal: float, fs: float) -> DescriptiveResult:
-    """Show the aliased frequency when fs < 2 * f_signal.
+    r"""Show the aliased frequency when fs < 2 * f_signal.
 
     .. math::
 

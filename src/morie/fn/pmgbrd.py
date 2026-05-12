@@ -25,7 +25,7 @@ def pm_gemm_burden(
     mu: float | None = None,
     nu: float | None = None,
 ) -> DescriptiveResult:
-    """Compute PM₂.₅ attributable deaths using the Burnett GEMM curve.
+    r"""Compute PM₂.₅ attributable deaths using the Burnett GEMM curve.
 
     Composes ``pm_gemm_rr`` (nonlinear RR) with the classical
     population-attributable-fraction formula and a mortality-rate

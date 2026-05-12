@@ -11,7 +11,7 @@ _QUOTE = "You were my brother, Anakin. I loved you."
 
 
 def bic_score_fn(x: np.ndarray, max_order: int = 20) -> DescriptiveResult:
-    """Compute BIC for AR model orders 1..max_order.
+    r"""Compute BIC for AR model orders 1..max_order.
 
     .. math::
 

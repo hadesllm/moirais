@@ -1,4 +1,4 @@
-"""Numbered display equation (8.1) from MVSML chapter 8.."""
+r"""Numbered display equation (8.1) from MVSML chapter 8.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_categorical_count_eq_8_1"]
 
 
 def mvsml_categorical_count_eq_8_1(n, k, k2, min, L, yi):
-    """
+    r"""
     Numbered display equation (8.1) from MVSML chapter 8.
 
     Formula: n 1 k k2 min L yi, f xi ( ( ) ) + \lambda f ,
@@ -35,7 +35,7 @@ def mvsml_categorical_count_eq_8_1(n, k, k2, min, L, yi):
     References
     ----------
     MVSML, Eq. (8.1) [Multivariate Statistical Machine Learnin [Pages 251-336] [2026-04-16].pdf]
-    """
+    r"""
     n = np.atleast_1d(np.asarray(n, dtype=float))
     n = len(n)
     result = float(np.mean(n))

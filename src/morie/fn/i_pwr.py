@@ -6,7 +6,7 @@ from statsmodels.stats.power import FTestAnovaPower
 
 
 def calculate_interaction_power(sample_size: int, alpha: float = 0.05, effect_size: float = 0.2) -> float:
-    """
+    r"""
     Calculate statistical power for an ANOVA F-test, used as an approximation
     for interaction-term power in the CPADS study design.
 

@@ -12,7 +12,7 @@ def string_partition(
     d: int = 26,
     n_terms: int = 50,
 ) -> DescriptiveResult:
-    """Compute the bosonic string one-loop partition function.
+    r"""Compute the bosonic string one-loop partition function.
 
     .. math::
 

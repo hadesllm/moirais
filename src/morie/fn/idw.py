@@ -14,7 +14,7 @@ def inverse_distance_weighting(
     *,
     power: float = 2.0,
 ) -> DescriptiveResult:
-    """
+    r"""
     Inverse distance weighting (IDW) spatial interpolation.
 
     For each prediction point :math:`s_0`:

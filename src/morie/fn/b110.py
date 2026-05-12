@@ -1,4 +1,4 @@
-"""Average binary cross-entropy loss over the entire training dataset of size N.."""
+r"""Average binary cross-entropy loss over the entire training dataset of size N.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_dataset_bce"]
 
 
 def burkov_lm_ch1_dataset_bce(y_hat, y, N):
-    """
+    r"""
     Average binary cross-entropy loss over the entire training dataset of size N.
 
     Formula: \operatorname{loss}_{\mathcal{D}} \stackrel{\text{def}}{=} -\frac{1}{N} \sum_{i=1}^{N} \bigl[y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i)\bigr]

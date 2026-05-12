@@ -16,7 +16,7 @@ def gls_regression(
     *,
     add_intercept: bool = True,
 ) -> RegressionResult:
-    """GLS: :math:`\\hat{\\beta} = (X^\\top \\Omega^{-1} X)^{-1} X^\\top \\Omega^{-1} y`.
+    r"""GLS: :math:`\\hat{\\beta} = (X^\\top \\Omega^{-1} X)^{-1} X^\\top \\Omega^{-1} y`.
 
     Parameters
     ----------

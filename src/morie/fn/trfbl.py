@@ -22,7 +22,8 @@ def _gelu(z):
 
 
 def transformer_block(x, num_heads: int = 2, d_ff: "int | None" = None,
-                      seed: int = 0):
+                      seed: int = 0,
+                      deterministic_seed: "int | None" = None):
     """Single Transformer encoder block (post-LN variant).
 
     .. math::
@@ -42,6 +43,10 @@ def transformer_block(x, num_heads: int = 2, d_ff: "int | None" = None,
         Hidden width of the feed-forward layer. Default ``4 * d_model``.
     seed : int
         RNG seed for default weights.
+    deterministic_seed : int or None, optional
+        If given, the SHA-keyed RNG from
+        :func:`morie._det_rng.from_seed` is used so Py<->R streams agree
+        for the same ``(name, seed)`` pair. Overrides ``seed`` when set.
 
     Returns
     -------
@@ -60,10 +65,15 @@ def transformer_block(x, num_heads: int = 2, d_ff: "int | None" = None,
     if d_ff is None:
         d_ff = 4 * d_model
 
-    attn = multi_head_attention_full(x, num_heads=num_heads, seed=seed)
+    attn = multi_head_attention_full(x, num_heads=num_heads, seed=seed,
+                                     deterministic_seed=deterministic_seed)
     h1 = _layer_norm(x + attn.payload["output"])
 
-    rng = np.random.default_rng(seed + 1)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("trfbl", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed + 1)
     W1 = rng.normal(0, 1.0 / np.sqrt(d_model), size=(d_model, d_ff))
     b1 = np.zeros(d_ff)
     W2 = rng.normal(0, 1.0 / np.sqrt(d_ff), size=(d_ff, d_model))

@@ -11,7 +11,7 @@ def discount_rate(
     years: list | np.ndarray,
     rate: float = 0.03,
 ) -> DescriptiveResult:
-    """Discount future values to present value.
+    r"""Discount future values to present value.
 
     .. math::
 

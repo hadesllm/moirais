@@ -9,7 +9,7 @@ _QUOTE = "Rebellions are built on hope. -- Jyn Erso"
 
 
 def cosine_distance(x, y, **kwargs) -> ESRes:
-    """
+    r"""
     Compute cosine distance d = 1 - cos(x, y).
 
     .. math::

@@ -1,5 +1,9 @@
 name: Draft JOSS paper PDF
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+
 # Render paper.md (the JOSS submission) to PDF on
 # every push that touches the paper or its bibliography. The rendered
 # PDF is uploaded as a workflow artifact so we can preview the JOSS

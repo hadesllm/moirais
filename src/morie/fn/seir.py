@@ -18,7 +18,7 @@ def seir_model(
     t_max: int = 160,
     dt: float = 1.0,
 ) -> SIRResult:
-    """Simulate an SEIR compartmental model.
+    r"""Simulate an SEIR compartmental model.
 
     .. math::
 

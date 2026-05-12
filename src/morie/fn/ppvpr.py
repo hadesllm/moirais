@@ -13,7 +13,7 @@ def ppv_prevalence(
     specificity: float,
     prevalence: float,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute positive and negative predictive values from prevalence.
 
     .. math::

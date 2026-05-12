@@ -1,4 +1,4 @@
-"""GeneralStatistics expression (auto-extracted; see ref).."""
+r"""GeneralStatistics expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter
 
 
 def chapman_hall_crc_handbooks_of_modern_statistical_methods_jos_chapter_10_unnumbered_855(x, cdf=None):
-    """
+    r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
     Formula: where F−ℓ = U \ Fℓ is the set of all subjects outside fold Fℓ and ∆k = 1 {min(Ti, Uk) ≤ Ci}.If censoring may depend on (Xi, Wi), then a more complicated model is required. For example,

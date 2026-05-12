@@ -1,4 +1,4 @@
-"""Gpt combined obj.."""
+r"""Gpt combined obj.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_gpt_combined_obj"]
 
 
 def kamath_ch2_gpt_combined_obj(L_1, L_2, lam):
-    """
+    r"""
     Gpt combined obj.
 
     Formula: L_3 = L_2(C) + \lambda \cdot L_1(U)
@@ -29,7 +29,7 @@ def kamath_ch2_gpt_combined_obj(L_1, L_2, lam):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.37, p. 70
-    """
+    r"""
     L_1 = np.atleast_1d(np.asarray(L_1, dtype=float))
     n = len(L_1)
     result = float(np.mean(L_1))

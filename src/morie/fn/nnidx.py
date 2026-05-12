@@ -8,7 +8,7 @@ from ._containers import SpatialResult
 
 
 def nearest_neighbor_index(points: np.ndarray) -> SpatialResult:
-    """
+    r"""
     Compute the Clark-Evans nearest neighbor index.
 
     .. math::

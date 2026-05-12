@@ -13,7 +13,7 @@ def qaly_computation(
     utilities: list[float] | np.ndarray,
     discount_rate: float = 0.03,
 ) -> ESRes:
-    """Compute quality-adjusted life years (QALYs).
+    r"""Compute quality-adjusted life years (QALYs).
 
     .. math::
 

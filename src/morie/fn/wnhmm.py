@@ -10,7 +10,7 @@ _QUOTE = "That which does not kill us makes us stronger. — Friedrich Nietzsche
 
 
 def hamming_window(N: int, **kwargs) -> DescriptiveResult:
-    """Generate a Hamming window of length *N*.
+    r"""Generate a Hamming window of length *N*.
 
     .. math::
 

@@ -1,4 +1,4 @@
-"""Correlation expression (auto-extracted; see ref).."""
+r"""Correlation expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_1136"]
 
 
 def hedderich_chapter_9_unnumbered_1136(x):
-    """
+    r"""
     Correlation expression (auto-extracted; see ref).
 
     Formula: + " \ nupper confidencelimit : " , round ( lowlim , digits = 4 ) , " −" ,

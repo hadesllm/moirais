@@ -15,7 +15,7 @@ def reliable_change(
     se_meas: float,
     alpha: float = 0.05,
 ) -> DescriptiveResult:
-    """
+    r"""
     Jacobson-Truax Reliable Change Index (RCI).
 
     .. math::

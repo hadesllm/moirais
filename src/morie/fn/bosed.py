@@ -12,7 +12,7 @@ def bosed(
     T: float = 300.0,
     kB: float = 1.380649e-23,
 ) -> dict:
-    """
+    r"""
     Compute the Bose-Einstein distribution.
 
     .. math::

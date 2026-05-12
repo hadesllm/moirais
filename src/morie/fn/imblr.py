@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 
 
 def gaussian_blur(image: np.ndarray, sigma: float = 1.0) -> DescriptiveResult:
-    """
+    r"""
     Apply Gaussian blur to a grayscale image.
 
     Convolves the image with a 2-D Gaussian kernel of standard deviation

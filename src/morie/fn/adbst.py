@@ -11,7 +11,7 @@ _QUOTE = "Strike me down and I shall become more powerful than you can imagine."
 
 
 def adaboost_bio(X_train, y_train, X_test, n_estimators=50, **kwargs) -> DescriptiveResult:
-    """AdaBoost with decision stumps (Freund & Schapire, 1997).
+    r"""AdaBoost with decision stumps (Freund & Schapire, 1997).
 
     .. math::
 

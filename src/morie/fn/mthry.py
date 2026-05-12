@@ -10,7 +10,7 @@ def m_theory_dimension(
     g_s: float = 0.1,
     l_s: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute M-theory parameters from string theory data.
+    r"""Compute M-theory parameters from string theory data.
 
     M-theory lives in 11 dimensions. The 11th dimension radius and
     Planck length are:

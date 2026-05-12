@@ -15,7 +15,7 @@ def doubling_time(
     *,
     alpha: float = 0.05,
 ) -> dict[str, Any]:
-    """Compute epidemic doubling time from growth rate or incidence.
+    r"""Compute epidemic doubling time from growth rate or incidence.
 
     .. math::
 

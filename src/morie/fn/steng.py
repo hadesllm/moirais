@@ -12,7 +12,7 @@ def steng(
     metric: np.ndarray,
     c: float = 299792458.0,
 ) -> dict:
-    """
+    r"""
     Construct the stress-energy tensor for a perfect fluid.
 
     .. math::

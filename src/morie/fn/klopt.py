@@ -12,7 +12,7 @@ def klopt(
     support: np.ndarray,
     sufficient_stats: list,
 ) -> dict:
-    """
+    r"""
     Find the distribution in an exponential family closest to target in KL.
 
     Minimizes D_KL(target || q) where q is in the exponential family

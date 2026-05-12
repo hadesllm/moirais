@@ -10,7 +10,7 @@ _QUOTE = "The greatest teacher, failure is."
 
 
 def sinad_compute(x, fs: float = 1.0, **kwargs) -> DescriptiveResult:
-    """Compute SINAD (signal to noise and distortion ratio).
+    r"""Compute SINAD (signal to noise and distortion ratio).
 
     .. math::
 

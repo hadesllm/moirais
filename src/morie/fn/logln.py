@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def loglinear_model(table: np.ndarray, max_iter: int = 100, tol: float = 1e-8, cdf=None) -> DescriptiveResult:
-    """
+    r"""
     Fit a log-linear independence model to a two-way contingency table
     using iterative proportional fitting (IPF).
 

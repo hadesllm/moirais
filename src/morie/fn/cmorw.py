@@ -15,7 +15,7 @@ def cmor_wavelet(
     fc: float = 1.0,
     N: int = 256,
 ) -> DescriptiveResult:
-    """Complex Morlet wavelet.
+    r"""Complex Morlet wavelet.
 
     .. math::
 

@@ -1,4 +1,4 @@
-"""Numbered display equation (15.3) from MVSML chapter 15.."""
+r"""Numbered display equation (15.3) from MVSML chapter 15.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_functional_regression_eq_15_3"]
 
 
 def mvsml_functional_regression_eq_15_3(bY, exp, b, It, important, to):
-    """
+    r"""
     Numbered display equation (15.3) from MVSML chapter 15.
 
     Formula: ( ) bY = (15.3) 1  exp b\mu ( ( ) ) It is important to point out that in the prediction formula given above
@@ -35,7 +35,7 @@ def mvsml_functional_regression_eq_15_3(bY, exp, b, It, important, to):
     References
     ----------
     MVSML, Eq. (15.3) [Multivariate Statistical Machine Learnin [Pages 633-681] [2026-04-16].pdf]
-    """
+    r"""
     bY = np.atleast_1d(np.asarray(bY, dtype=float))
     n = len(bY)
     result = float(np.mean(bY))

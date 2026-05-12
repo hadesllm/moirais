@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def ar_fit(y: np.ndarray, p: int = 1) -> DescriptiveResult:
-    """
+    r"""
     Fit an AR(p) model using Yule-Walker equations.
 
     .. math::

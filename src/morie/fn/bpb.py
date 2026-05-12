@@ -12,7 +12,7 @@ def bits_per_byte(
     loss: float,
     base: str = "e",
 ) -> DescriptiveResult:
-    """Convert cross-entropy loss to bits per byte (BPB).
+    r"""Convert cross-entropy loss to bits per byte (BPB).
 
     For a model trained with natural log cross-entropy:
     :math:`\\text{BPB} = \\text{loss} / \\ln(2)`.

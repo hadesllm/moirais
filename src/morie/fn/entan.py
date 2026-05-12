@@ -12,7 +12,7 @@ def entanglement_entropy(
     rho: np.ndarray | None = None,
     schmidt_coeffs: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """Compute von Neumann entanglement entropy.
+    r"""Compute von Neumann entanglement entropy.
 
     .. math::
 

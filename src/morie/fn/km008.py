@@ -1,4 +1,4 @@
-"""Attention softmax weights.."""
+r"""Attention softmax weights.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_attention_softmax_weights"]
 
 
 def kamath_ch2_attention_softmax_weights(a):
-    """
+    r"""
     Attention softmax weights.
 
     Formula: b = \mathrm{softmax}(a)
@@ -25,7 +25,7 @@ def kamath_ch2_attention_softmax_weights(a):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.8, p. 32
-    """
+    r"""
     a = np.atleast_1d(np.asarray(a, dtype=float))
     n = len(a)
     result = float(np.mean(a))

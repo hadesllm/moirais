@@ -12,7 +12,7 @@ def kaluza_klein_spectrum(
     R: float = 1.0,
     n_max: int = 10,
 ) -> DescriptiveResult:
-    """Compute the Kaluza-Klein mass tower for circular compactification.
+    r"""Compute the Kaluza-Klein mass tower for circular compactification.
 
     .. math::
 

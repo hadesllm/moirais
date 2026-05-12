@@ -14,7 +14,7 @@ def depletion_model(
     *,
     model: str = "exponential",
 ) -> DescriptiveResult:
-    """Fit a resource depletion model and estimate time to exhaustion.
+    r"""Fit a resource depletion model and estimate time to exhaustion.
 
     Parameters
     ----------

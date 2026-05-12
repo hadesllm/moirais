@@ -13,7 +13,7 @@ def densm(
     subsystem_dims: tuple = None,
     trace_out: int = None,
 ) -> dict:
-    """
+    r"""
     Density matrix construction and operations.
 
     Construct from a pure state:

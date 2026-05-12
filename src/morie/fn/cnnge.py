@@ -23,7 +23,8 @@ def _conv1d(M, W, b, stride: int = 1):
 
 def cnn_genomic(x, y, markers, n_filters: int = 8, kernel: int = 3,
                 hidden: int = 8, n_epochs: int = 150, lr: float = 1e-2,
-                l2: float = 1e-3, seed: int = 0):
+                l2: float = 1e-3, seed: int = 0,
+                deterministic_seed: int | None = None):
     """1D convolutional genomic predictor (NumPy).
 
     Architecture::
@@ -40,6 +41,11 @@ def cnn_genomic(x, y, markers, n_filters: int = 8, kernel: int = 3,
     ----------
     x, y, markers : see deep_learning_genomic.
     n_filters, kernel, hidden, n_epochs, lr, l2, seed : hyperparameters.
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged.
 
     Returns
     -------
@@ -49,7 +55,11 @@ def cnn_genomic(x, y, markers, n_filters: int = 8, kernel: int = 3,
     ----------
     Montesinos Lopez et al. (2022), Ch. 13.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("cnnge", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     y = np.asarray(y, dtype=float).ravel()
     n = len(y)
     M = np.asarray(markers, dtype=float)

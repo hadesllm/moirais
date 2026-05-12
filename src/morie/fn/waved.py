@@ -14,7 +14,7 @@ def wave_1d(
     dt: float = 0.01,
     n_steps: int = 100,
 ) -> DescriptiveResult:
-    """
+    r"""
     Solve the 1D wave equation via explicit finite differences.
 
     .. math::

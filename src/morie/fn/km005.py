@@ -1,4 +1,4 @@
-"""Decoder token distribution.."""
+r"""Decoder token distribution.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_decoder_token_distribution"]
 
 
 def kamath_ch2_decoder_token_distribution(s_t_1, y_t_1, c):
-    """
+    r"""
     Decoder token distribution.
 
     Formula: P(y_{t'}|y_{t'-1},\dots,y_1,c) = \mathrm{softmax}(s_{t-1}, y_{t'-1}, c)
@@ -29,7 +29,7 @@ def kamath_ch2_decoder_token_distribution(s_t_1, y_t_1, c):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.5, p. 31
-    """
+    r"""
     s_t_1 = np.atleast_1d(np.asarray(s_t_1, dtype=float))
     n = len(s_t_1)
     result = float(np.mean(s_t_1))

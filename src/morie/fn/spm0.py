@@ -10,7 +10,7 @@ _QUOTE = "The ability to speak does not make you intelligent."
 
 
 def spectral_moment(x, fs: float = 1.0, k: int = 0, **kwargs) -> DescriptiveResult:
-    """Compute the k-th spectral moment.
+    r"""Compute the k-th spectral moment.
 
     .. math::
 

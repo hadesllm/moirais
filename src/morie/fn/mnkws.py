@@ -11,7 +11,7 @@ def mnkws(
     event_b: np.ndarray,
     signature: str = "mostly_minus",
 ) -> dict:
-    """
+    r"""
     Compute the Minkowski spacetime interval between two events.
 
     For signature (+,-,-,-) (mostly_minus):

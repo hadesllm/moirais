@@ -13,7 +13,7 @@ def torus_parametric(
     u: float | np.ndarray = 0.0,
     v: float | np.ndarray = 0.0,
 ) -> DescriptiveResult:
-    """Parametric coordinates (x, y, z) on a torus.
+    r"""Parametric coordinates (x, y, z) on a torus.
 
     .. math::
 

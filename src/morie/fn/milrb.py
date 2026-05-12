@@ -9,7 +9,7 @@ _QUOTE = "He who has a why to live can bear almost any how. — Friedrich Nietzs
 
 
 def miller_rabin(n: int, k: int = 10, seed: int = 42, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Miller-Rabin probabilistic primality test.
 
     Decomposes :math:`n - 1 = 2^r \\cdot d` and tests *k* random witnesses.

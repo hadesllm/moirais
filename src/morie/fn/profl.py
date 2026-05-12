@@ -12,7 +12,7 @@ def procrustes(
     source: np.ndarray,
     target: np.ndarray,
 ) -> DescriptiveResult:
-    """Orthogonal Procrustes rotation: rotate source to best match target.
+    r"""Orthogonal Procrustes rotation: rotate source to best match target.
 
     Minimises :math:`\\|\\mathbf{T} - \\mathbf{S} \\mathbf{R}\\|_F` over
     orthogonal matrices *R*.

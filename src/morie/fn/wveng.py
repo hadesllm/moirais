@@ -10,7 +10,7 @@ _QUOTE = "Impressive. Most impressive."
 
 
 def wavelet_energy(coeffs: list) -> DescriptiveResult:
-    """Compute energy distribution across wavelet subbands.
+    r"""Compute energy distribution across wavelet subbands.
 
     .. math::
 

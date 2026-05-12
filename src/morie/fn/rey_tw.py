@@ -9,7 +9,7 @@ from morie.fn._containers import RegressionResult
 
 
 def rey_tw(df, y: str = "y", x: list | str = "x", power: float = 1.5, alpha: float = 0.05, cdf=None) -> RegressionResult:
-    """
+    r"""
     Tweedie regression via quasi-likelihood maximisation.
 
     The Tweedie family unifies Poisson (*p* = 1), compound Poisson-gamma

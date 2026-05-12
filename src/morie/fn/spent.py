@@ -10,7 +10,7 @@ _QUOTE = "There is always a bigger fish."
 
 
 def spectral_entropy(x, fs: float = 1.0, **kwargs) -> DescriptiveResult:
-    """Compute the spectral entropy of signal *x*.
+    r"""Compute the spectral entropy of signal *x*.
 
     .. math::
 

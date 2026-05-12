@@ -11,7 +11,7 @@ _QUOTE = "Never tell me the odds."
 
 
 def auc_compute(y_true, y_scores, **kwargs) -> DescriptiveResult:
-    """Compute area under the ROC curve via trapezoidal rule.
+    r"""Compute area under the ROC curve via trapezoidal rule.
 
     .. math::
 

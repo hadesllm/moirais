@@ -11,13 +11,18 @@
 #' @param max_depth Max tree depth (NULL -> unrestricted).
 #' @param task "auto", "classification", or "regression".
 #' @param seed RNG seed.
+#' @param deterministic_seed Integer or NULL.  If supplied, the RNG state
+#'   is derived from the SHA-keyed [morie_det_rng()] so Py<->R streams
+#'   agree on the canonical fixture.  When `NULL` (default), behaviour
+#'   is unchanged: `seed` drives `set.seed()` directly.
 #' @return Named list: estimate, train_score, oob_score, feature_importances,
 #'   n_estimators, task, n, method.
 #' @importFrom stats predict
 #' @export
 random_forest_ensemble <- function(x, y, n_estimators = 100L,
                                     max_depth = NULL, task = "auto",
-                                    seed = 0L) {
+                                    seed = 0L,
+                                    deterministic_seed = NULL) {
   if (!requireNamespace("randomForest", quietly = TRUE)) {
     stop("Function 'random_forest_ensemble' requires package 'randomForest'. Install with install.packages('randomForest').")
   }
@@ -28,7 +33,11 @@ random_forest_ensemble <- function(x, y, n_estimators = 100L,
               "classification" else "regression"
   }
   y_use <- if (task == "classification") as.factor(y) else as.numeric(y)
-  set.seed(seed)
+  if (!is.null(deterministic_seed)) {
+    morie_det_rng("rfens", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   args <- list(x = x, y = y_use, ntree = n_estimators, importance = TRUE)
   if (!is.null(max_depth)) args$maxnodes <- 2L^as.integer(max_depth)
   fit <- do.call(randomForest::randomForest, args)

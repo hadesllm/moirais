@@ -8,7 +8,7 @@ _QUOTE = "You have power over your mind — not outside events. — Marcus Aurel
 
 
 def mod_inverse(a: int, m: int, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the modular multiplicative inverse of *a* modulo *m*.
 
     Finds :math:`x` such that :math:`a \\cdot x \\equiv 1 \\pmod{m}`,

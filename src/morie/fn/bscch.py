@@ -8,7 +8,7 @@ from ._richresult import RichResult
 
 
 def bscch(p: float) -> dict:
-    """
+    r"""
     Capacity of a binary symmetric channel (BSC).
 
     .. math::

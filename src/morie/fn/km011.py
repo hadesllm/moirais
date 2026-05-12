@@ -1,4 +1,4 @@
-"""Scaled dot score.."""
+r"""Scaled dot score.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_scaled_dot_score"]
 
 
 def kamath_ch2_scaled_dot_score(q, k, d_k):
-    """
+    r"""
     Scaled dot score.
 
     Formula: \alpha(q,k) = \frac{q\cdot k}{\sqrt{d_k}}
@@ -29,7 +29,7 @@ def kamath_ch2_scaled_dot_score(q, k, d_k):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.11, p. 33
-    """
+    r"""
     q = np.atleast_1d(np.asarray(q, dtype=float))
     n = len(q)
     result = float(np.mean(q))

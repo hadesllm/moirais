@@ -9,7 +9,7 @@ _QUOTE = "Study the past if you would define the future. — Confucius"
 
 
 def freq_resolution(fs: float, N: int, **kwargs) -> DescriptiveResult:
-    """Compute the frequency resolution of a DFT.
+    r"""Compute the frequency resolution of a DFT.
 
     .. math::
 

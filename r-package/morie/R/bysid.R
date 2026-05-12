@@ -9,12 +9,21 @@
 #' @param n_iter Number of MCMC sweeps (default 400).
 #' @param burn Burn-in sweeps (default 100).
 #' @param seed RNG seed.
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("bysid", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return Named list with `x_mean`, `x_sd`, `x_ci`, `alpha`, `beta`,
 #'   `n_iter`, `method`.
 #' @export
-bysid <- function(x, n_iter = 400L, burn = 100L, seed = 0L) {
+bysid <- function(x, n_iter = 400L, burn = 100L, seed = 0L,
+                  deterministic_seed = NULL) {
   logistic <- function(z) 1 / (1 + exp(-pmin(pmax(z, -30), 30)))
-  set.seed(seed)
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("bysid", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   M <- if (is.matrix(x)) x else matrix(as.numeric(x), ncol = 1L)
   n <- nrow(M); m <- ncol(M)
   if (n < 2L)

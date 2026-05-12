@@ -1,4 +1,4 @@
-"""Perplexity as the exponential of the average negative log-likelihood per token under context window of size k.."""
+r"""Perplexity as the exponential of the average negative log-likelihood per token under context window of size k.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch2_perplexity"]
 
 
 def burkov_lm_ch2_perplexity(D, k, t):
-    """
+    r"""
     Perplexity as the exponential of the average negative log-likelihood per token under context window of size k.
 
     Formula: \operatorname{Perplexity}(\mathcal{D}, k) = \exp\!\left(-\frac{1}{D} \sum_{i=1}^{D} \log \Pr\!\bigl(t_i \mid t_{\max(1, i-k)}, \ldots, t_{i-1}\bigr)\right)

@@ -1,4 +1,4 @@
-"""Pii likelihood.."""
+r"""Pii likelihood.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_pii_likelihood"]
 
 
 def kamath_ch6_pii_likelihood(a_m, A, x, L_q, L_r):
-    """
+    r"""
     Pii likelihood.
 
     Formula: P_r(a_m|A_{\setminus m}) = \prod_{r=1}^{L_r} p(a_{m,r}|x_1,x_2,\dots,x_{L_q+r-1})
@@ -33,7 +33,7 @@ def kamath_ch6_pii_likelihood(a_m, A, x, L_q, L_r):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.31, p. 258
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

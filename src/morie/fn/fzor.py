@@ -9,7 +9,7 @@ _QUOTE = "I've got a bad feeling about this. -- Everyone"
 
 
 def fuzzy_or(a, b, method: str = "max", **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute fuzzy OR (t-conorm / s-norm) of two membership values.
 
     Supported s-norms:

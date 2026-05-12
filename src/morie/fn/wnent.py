@@ -6,7 +6,7 @@ from ._containers import ESRes
 
 
 def wiener_entropy(x, fs: float = 1.0, nfft: int | None = None, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Wiener entropy (spectral flatness).
 
     Ratio of geometric mean to arithmetic mean of the power spectrum.

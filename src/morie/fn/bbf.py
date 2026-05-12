@@ -15,7 +15,7 @@ def bayes_factor(
     k_0: int,
     n: int,
 ) -> ESRes:
-    """
+    r"""
     Approximate Bayes factor using the BIC (Schwarz criterion).
 
     .. math::

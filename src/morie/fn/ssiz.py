@@ -16,7 +16,7 @@ def sample_size_means(
     power: float = 0.80,
     ratio: float = 1.0,
 ) -> ESRes:
-    """
+    r"""
     Sample size for a two-sample t-test comparing means.
 
     .. math::

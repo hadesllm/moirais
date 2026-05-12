@@ -5,7 +5,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 def eigen_decompose(A, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute eigenvalues and eigenvectors of a square matrix.
 
     .. math::

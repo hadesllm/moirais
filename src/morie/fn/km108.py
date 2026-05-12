@@ -1,4 +1,4 @@
-"""Differential privacy.."""
+r"""Differential privacy.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_differential_privacy"]
 
 
 def kamath_ch6_differential_privacy(M, A, B, S, epsilon):
-    """
+    r"""
     Differential privacy.
 
     Formula: P[M(A)\in S] \le e^{\epsilon} P[M(B)\in S]
@@ -33,7 +33,7 @@ def kamath_ch6_differential_privacy(M, A, B, S, epsilon):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.32, p. 258
-    """
+    r"""
     M = np.atleast_1d(np.asarray(M, dtype=float))
     n = len(M)
     result = float(np.mean(M))

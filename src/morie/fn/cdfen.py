@@ -5,7 +5,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 def cdf_estimate(x, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the empirical cumulative distribution function (ECDF).
 
     .. math::

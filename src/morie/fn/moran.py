@@ -13,7 +13,7 @@ def morans_i(
     nperm: int = 999,
     seed: int | None = None,
 ) -> SpatialResult:
-    """
+    r"""
     Compute Moran's I for global spatial autocorrelation.
 
     .. math::

@@ -11,7 +11,7 @@ _QUOTE = "We suffer more often in imagination than in reality. — Seneca"
 
 
 def lms_filter(x, d, mu: float = 0.01, order: int = 16) -> SignalResult:
-    """Least Mean Squares adaptive filter.
+    r"""Least Mean Squares adaptive filter.
 
     .. math::
 

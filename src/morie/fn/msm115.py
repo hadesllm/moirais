@@ -1,4 +1,4 @@
-"""Numbered display equation (7.10) from MVSML chapter 7.."""
+r"""Numbered display equation (7.10) from MVSML chapter 7.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_bayesian_regression_pt2_eq_7_10"]
 
 
 def mvsml_bayesian_regression_pt2_eq_7_10(p, y, cj):
-    """
+    r"""
     Numbered display equation (7.10) from MVSML chapter 7.
 
     Formula: ℓp \beta; y ( ) = ℓ\beta; y ( )  \lambda \betacj
@@ -29,7 +29,7 @@ def mvsml_bayesian_regression_pt2_eq_7_10(p, y, cj):
     References
     ----------
     MVSML, Eq. (7.10) [Multivariate Statistical Machine Learnin [Pages 209-249] [2026-04-16].pdf]
-    """
+    r"""
     y = np.atleast_1d(np.asarray(y, dtype=float))
     n = len(y)
     result = float(np.mean(y))

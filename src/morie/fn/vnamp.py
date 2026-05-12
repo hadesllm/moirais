@@ -14,7 +14,7 @@ def veneziano_amplitude(
     alpha0: float = 1.0,
     alpha_prime: float = 0.5,
 ) -> DescriptiveResult:
-    """Compute the Veneziano amplitude A(s,t) = B(-alpha(s), -alpha(t)).
+    r"""Compute the Veneziano amplitude A(s,t) = B(-alpha(s), -alpha(t)).
 
     The Veneziano amplitude is the Euler beta function of linear Regge
     trajectories:

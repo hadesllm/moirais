@@ -14,7 +14,7 @@ def hausman_test(
     X: np.ndarray,
     entity: np.ndarray,
 ) -> DescriptiveResult:
-    """Hausman test for fixed effects vs. random effects.
+    r"""Hausman test for fixed effects vs. random effects.
 
     Under :math:`H_0` (RE is consistent and efficient), the FE and RE
     estimators converge to the same value.  The test statistic is

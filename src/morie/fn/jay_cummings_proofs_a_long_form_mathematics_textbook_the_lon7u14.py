@@ -1,4 +1,4 @@
-"""GeneralStatistics expression (auto-extracted; see ref).."""
+r"""GeneralStatistics expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter
 
 
 def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnumbered_14(x, cdf=None):
-    """
+    r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
     Formula: [EQ] Prove thatf−1 : R \ {3} → R \ {1} where f−1(x) = x
@@ -31,7 +31,7 @@ def jay_cummings_proofs_a_long_form_mathematics_textbook_the_lon_chapter_7_unnum
     References
     ----------
     Jay Cummings - Proofs  A Long-Form Mathematics Textbook (The Long-Form Math Textbook Series)-Independently published (2021), ch.7 (unnumbered)
-    """
+    r"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

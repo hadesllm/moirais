@@ -11,7 +11,7 @@ _QUOTE = "The strongest stars have hearts of kyber."
 
 
 def bandwidth_compute(x, fs: float = 1.0, **kwargs) -> DescriptiveResult:
-    """Compute the spectral bandwidth.
+    r"""Compute the spectral bandwidth.
 
     .. math::
 

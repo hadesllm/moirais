@@ -13,7 +13,7 @@ def mxent(
     *,
     tol: float = 1e-10,
 ) -> dict:
-    """
+    r"""
     Find the maximum entropy distribution on a finite support.
 
     Solves:

@@ -18,7 +18,7 @@ def sirs_demographics(
     t_max: int = 300,
     dt: float = 1.0,
 ) -> SIRResult:
-    """Simulate an SIRS model with vital dynamics (births and deaths).
+    r"""Simulate an SIRS model with vital dynamics (births and deaths).
 
     .. math::
 

@@ -12,7 +12,7 @@ __all__ = ["residual_connection"]
 
 
 def residual_connection(x, f: "Optional[Callable[[np.ndarray], np.ndarray]]" = None):
-    """Residual (identity-shortcut) connection.
+    r"""Residual (identity-shortcut) connection.
 
     .. math::
 

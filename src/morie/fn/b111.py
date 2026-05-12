@@ -1,4 +1,4 @@
-"""Closed-form gradients of binary cross-entropy with respect to each weight and the bias for logistic regression.."""
+r"""Closed-form gradients of binary cross-entropy with respect to each weight and the bias for logistic regression.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_bce_gradients"]
 
 
 def burkov_lm_ch1_bce_gradients(y_hat, y, x, N, j):
-    """
+    r"""
     Closed-form gradients of binary cross-entropy with respect to each weight and the bias for logistic regression.
 
     Formula: \frac{\partial \operatorname{loss}}{\partial w^{(j)}} = \frac{1}{N} \sum_{i=1}^{N} (\hat{y}_i - y_i) x_i^{(j)}, \qquad \frac{\partial \operatorname{loss}}{\partial b} = \frac{1}{N} \sum_{i=1}^{N} (\hat{y}_i - y_i)

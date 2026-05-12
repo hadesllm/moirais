@@ -1,4 +1,4 @@
-"""Bertscore f1.."""
+r"""Bertscore f1.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch8_bertscore_f1"]
 
 
 def kamath_ch8_bertscore_f1(P_BERT, R_BERT):
-    """
+    r"""
     Bertscore f1.
 
     Formula: F_{BERT} = 2\cdot\frac{P_{BERT}\cdot R_{BERT}}{P_{BERT}+R_{BERT}}
@@ -27,7 +27,7 @@ def kamath_ch8_bertscore_f1(P_BERT, R_BERT):
     References
     ----------
     Kamath et al (2024), Ch 8, Eq 8.9, p. 325
-    """
+    r"""
     P_BERT = np.atleast_1d(np.asarray(P_BERT, dtype=float))
     n = len(P_BERT)
     result = float(np.mean(P_BERT))

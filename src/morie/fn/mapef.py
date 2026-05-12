@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def mape(actual: np.ndarray, forecast: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Mean Absolute Percentage Error.
 
     .. math::

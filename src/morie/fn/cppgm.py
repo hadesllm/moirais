@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def changepoint_poisson(counts: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Detect a single change point in Poisson count data via maximum
     likelihood.
 

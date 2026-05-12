@@ -10,7 +10,7 @@ def person_years_at_risk(
     entry_dates: np.ndarray,
     exit_dates: np.ndarray,
 ) -> ESRes:
-    """Compute total person-years at risk.
+    r"""Compute total person-years at risk.
 
     .. math::
 

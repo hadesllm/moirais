@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 
 
 def betweenness(adj_matrix: np.ndarray) -> DescriptiveResult:
-    """Betweenness centrality via Brandes' algorithm.
+    r"""Betweenness centrality via Brandes' algorithm.
 
     .. math::
 

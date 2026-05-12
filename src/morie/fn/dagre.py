@@ -12,7 +12,7 @@ def diagnostic_agreement(
     rater1: np.ndarray,
     rater2: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute Cohen's kappa and percent agreement between two raters.
 
     .. math::

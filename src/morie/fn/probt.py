@@ -10,7 +10,7 @@ from ._containers import RegressionResult
 
 
 def probit_regression(y: np.ndarray, X: np.ndarray, cdf=None, *, add_intercept: bool = True, max_iter: int = 50, tol: float = 1e-8) -> RegressionResult:
-    """Probit regression via IRLS (Fisher scoring).
+    r"""Probit regression via IRLS (Fisher scoring).
 
     The link function is :math:`\\Phi^{-1}(\\mu)` where :math:`\\Phi`
     is the standard normal CDF.

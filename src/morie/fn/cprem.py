@@ -12,7 +12,7 @@ def credibility_premium(
     n: int,
     k: float,
 ) -> DescriptiveResult:
-    """Buhlmann credibility premium.
+    r"""Buhlmann credibility premium.
 
     The credibility-weighted premium blends individual experience
     with the collective mean:

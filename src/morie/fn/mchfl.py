@@ -19,7 +19,7 @@ def matched_filter(
     template: np.ndarray,
     fs: float = 1.0,
 ) -> SignalResult:
-    """Apply a matched filter to detect a known template in signal *x*.
+    r"""Apply a matched filter to detect a known template in signal *x*.
 
     The matched filter maximizes the signal-to-noise ratio at the
     output when the noise is white and Gaussian:

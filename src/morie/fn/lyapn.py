@@ -6,7 +6,7 @@ from scipy import linalg
 
 from ._containers import DescriptiveResult
 def lyapunov_stability(A, Q=None, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Assess Lyapunov stability of a linear time-invariant system.
 
     For :math:`\\dot{x} = Ax`, the system is asymptotically stable iff all

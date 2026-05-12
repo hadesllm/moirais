@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def cramer_rao_bound(fisher_info: float, n: int = 1, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Cramer-Rao lower bound on estimator variance.
 
     .. math::

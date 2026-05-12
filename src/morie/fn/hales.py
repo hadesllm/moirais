@@ -14,7 +14,7 @@ def health_adjusted_life_expectancy(
     health_state_prevalence: np.ndarray,
     disability_weights: np.ndarray,
 ) -> dict[str, Any]:
-    """Compute health-adjusted life expectancy (HALE).
+    r"""Compute health-adjusted life expectancy (HALE).
 
     HALE adjusts life expectancy by subtracting years spent in less
     than full health, weighted by severity.

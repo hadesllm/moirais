@@ -13,7 +13,7 @@ def estimate_plr(
     n_folds: int = 5,
     random_state: int = 42,
 ) -> dict:
-    """
+    r"""
     Partially Linear Regression (PLR) ATE via DoubleML.
 
     The PLR model is:

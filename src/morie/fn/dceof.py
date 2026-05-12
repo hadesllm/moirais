@@ -9,7 +9,7 @@ _QUOTE = "Numbers have life; they're not just symbols on paper. — Shakuntala D
 
 
 def dice_coefficient(set_a, set_b, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the Sorensen-Dice coefficient between two sets.
 
     .. math::

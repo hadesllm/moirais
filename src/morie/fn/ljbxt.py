@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def ljung_box(residuals: np.ndarray, lags: int = 10, fitdf: int = 0, cdf=None) -> DescriptiveResult:
-    """
+    r"""
     Ljung-Box test for autocorrelation in residuals.
 
     .. math::

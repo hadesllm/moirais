@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def max_drawdown(prices: np.ndarray) -> DescriptiveResult:
-    """Maximum drawdown from a price series.
+    r"""Maximum drawdown from a price series.
 
     .. math::
 

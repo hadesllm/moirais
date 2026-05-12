@@ -12,7 +12,7 @@ def theta_function(
     tau: complex = 1j,
     terms: int = 30,
 ) -> DescriptiveResult:
-    """Compute the Jacobi theta function theta_3(z, tau).
+    r"""Compute the Jacobi theta function theta_3(z, tau).
 
     :math:`\\theta_3(z, \\tau) = \\sum_{n=-N}^{N} q^{n^2} e^{2\\pi i n z}`
 

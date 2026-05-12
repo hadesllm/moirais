@@ -13,7 +13,7 @@ def bayes_theorem(
     evidence: float | None = None,
     **kwargs,
 ) -> ESRes:
-    """
+    r"""
     Apply Bayes' theorem to compute posterior probability.
 
     .. math::

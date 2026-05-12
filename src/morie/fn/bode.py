@@ -15,7 +15,7 @@ def bode_plot(
     n_points: int = 500,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute Bode magnitude and phase for a transfer function.
 
     Evaluates :math:`H(j\\omega) = N(j\\omega) / D(j\\omega)` over a range

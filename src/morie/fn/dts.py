@@ -14,7 +14,7 @@ def dip_test(
     n_boot: int = 1000,
     seed: int | None = None,
 ) -> TestResult:
-    """
+    r"""
     Dip test for unimodality (Hartigan & Hartigan, 1985).
 
     Measures the maximum deviation of the empirical CDF from the

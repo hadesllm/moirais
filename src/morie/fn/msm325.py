@@ -1,4 +1,4 @@
-"""Numbered display equation (15.2) from MVSML chapter 15.."""
+r"""Numbered display equation (15.2) from MVSML chapter 15.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_functional_regression_eq_15_2"]
 
 
 def mvsml_functional_regression_eq_15_2(log, Y, i):
-    """
+    r"""
     Numbered display equation (15.2) from MVSML chapter 15.
 
     Formula: log Y+ ( ( ) ) + log \mu ( ) i ! , i i
@@ -29,7 +29,7 @@ def mvsml_functional_regression_eq_15_2(log, Y, i):
     References
     ----------
     MVSML, Eq. (15.2) [Multivariate Statistical Machine Learnin [Pages 633-681] [2026-04-16].pdf]
-    """
+    r"""
     log = np.atleast_1d(np.asarray(log, dtype=float))
     n = len(log)
     result = float(np.mean(log))

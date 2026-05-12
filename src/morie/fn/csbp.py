@@ -16,7 +16,7 @@ def basis_pursuit_l1(
     tol: float = 1e-6,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Solve the LASSO / basis pursuit denoising problem via ISTA.
 
     .. math::

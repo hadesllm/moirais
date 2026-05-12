@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def chebyshev_dist(a: np.ndarray, b: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Compute the Chebyshev distance (L-infinity norm) between two vectors.
 
     .. math::

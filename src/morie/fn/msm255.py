@@ -1,4 +1,4 @@
-"""Numbered display equation (10.17) from MVSML chapter 10.."""
+r"""Numbered display equation (10.17) from MVSML chapter 10.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_reproducing_kernel_eq_10_17"]
 
 
 def mvsml_reproducing_kernel_eq_10_17(t, w, h, kp, ikxip):
-    """
+    r"""
     Numbered display equation (10.17) from MVSML chapter 10.
 
     Formula: ( ) t+1 ( ) = w h ( ) t( ) + \Deltaw h ( ) kp = w h ( ) t( ) + \eta\psiikxip
@@ -33,7 +33,7 @@ def mvsml_reproducing_kernel_eq_10_17(t, w, h, kp, ikxip):
     References
     ----------
     MVSML, Eq. (10.17) [Multivariate Statistical Machine Learnin [Pages 379-425] [2026-04-16].pdf]
-    """
+    r"""
     w = np.atleast_1d(np.asarray(w, dtype=float))
     n = len(w)
     result = float(np.mean(w))

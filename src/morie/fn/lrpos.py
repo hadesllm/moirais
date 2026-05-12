@@ -12,7 +12,7 @@ def likelihood_ratio(
     sensitivity: float,
     specificity: float,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute positive (LR+) and negative (LR-) likelihood ratios.
 
     .. math::

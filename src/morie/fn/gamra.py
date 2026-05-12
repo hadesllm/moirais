@@ -17,7 +17,7 @@ def aft_model(
     *,
     distribution: str = "lognormal",
 ) -> SurvivalResult:
-    """Fit an accelerated failure time (AFT) survival model.
+    r"""Fit an accelerated failure time (AFT) survival model.
 
     Parametric survival model where covariates accelerate or decelerate
     time-to-event: :math:`\\ln T = X\\beta + \\sigma W`.

@@ -1,4 +1,4 @@
-"""Nonparametric expression (auto-extracted; see ref).."""
+r"""Nonparametric expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["density_estimation_for_statistics_and_data_analysis_silverma_chapter
 
 
 def density_estimation_for_statistics_and_data_analysis_silverma_chapter_3_unnumbered_66(x):
-    """
+    r"""
     Nonparametric expression (auto-extracted; see ref).
 
     Formula: Assume that the kernel satisfies K{\) = 0 if x^x ^ 1; for example the kernels (4.4) and (4.5) have this property.

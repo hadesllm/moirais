@@ -12,7 +12,7 @@ def pauli(
     theta: float = 0.0,
     phi: float = 0.0,
 ) -> dict:
-    """
+    r"""
     Compute Pauli matrices and spin-1/2 operators.
 
     .. math::

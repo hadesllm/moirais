@@ -14,7 +14,7 @@ def cloud_mass_function(
     n_bins: int = 20,
     alpha: float = -1.6,
 ) -> DescriptiveResult:
-    """Fit a Schechter-like mass function to cloud mass observations.
+    r"""Fit a Schechter-like mass function to cloud mass observations.
 
     The cloud mass function (CMF) follows
     :math:`dN/dM \\propto M^{\\alpha} \\exp(-M/M^*)`.

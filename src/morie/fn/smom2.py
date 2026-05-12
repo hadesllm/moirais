@@ -10,7 +10,7 @@ _QUOTE = "He who fights with monsters should be careful lest he thereby become a
 
 
 def central_moment(x, k=2, **kwargs) -> DescriptiveResult:
-    """Compute the *k*-th central moment of signal *x*.
+    r"""Compute the *k*-th central moment of signal *x*.
 
     .. math::
 

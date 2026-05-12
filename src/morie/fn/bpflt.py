@@ -11,7 +11,7 @@ _QUOTE = "No man ever steps in the same river twice. — Heraclitus"
 
 
 def bandpass_filter(x, low, high, fs, order: int = 4) -> SignalResult:
-    """Apply a bandpass Butterworth filter.
+    r"""Apply a bandpass Butterworth filter.
 
     .. math::
 

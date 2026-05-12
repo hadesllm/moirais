@@ -9,7 +9,7 @@ _QUOTE = "I have spoken. -- Kuiil"
 
 
 def hamming_distance_sets(a, b, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the Hamming distance between two binary vectors.
 
     .. math::

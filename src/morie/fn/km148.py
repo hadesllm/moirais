@@ -1,4 +1,4 @@
-"""Ldm loss.."""
+r"""Ldm loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_ldm_loss"]
 
 
 def kamath_ch9_ldm_loss(epsilon, z_t, H_X):
-    """
+    r"""
     Ldm loss.
 
     Formula: L_{X-gen} := E_{\epsilon\sim N(0,1), t} \|\epsilon - \epsilon_X(z_t, t, H_X)\|_2^2
@@ -29,7 +29,7 @@ def kamath_ch9_ldm_loss(epsilon, z_t, H_X):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.20, p. 398
-    """
+    r"""
     epsilon = np.atleast_1d(np.asarray(epsilon, dtype=float))
     n = len(epsilon)
     result = float(np.mean(epsilon))

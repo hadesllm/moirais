@@ -32,7 +32,7 @@ def pm_relative_risk(
     pollutant: str = "pm25",
     outcome: str = "all_cause",
 ) -> DescriptiveResult:
-    """Linear log-linear PM exposure relative-risk estimator.
+    r"""Linear log-linear PM exposure relative-risk estimator.
 
     Computes RR = exp( β × (C − C_ref) / 10 ) where β = ln(RR_10),
     using published per-10-µg/m³ estimates from the ACS cohort (Pope

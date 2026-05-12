@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def mahalanobis_dist(x: np.ndarray, data: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Compute the Mahalanobis distance of a point from a dataset.
 
     .. math::

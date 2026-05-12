@@ -13,7 +13,7 @@ def bayes_factor_bic(
     bic_null: float,
     bic_alt: float,
 ) -> dict[str, Any]:
-    """
+    r"""
     Approximate Bayes factor from BIC values of two competing models.
 
     .. math::

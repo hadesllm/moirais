@@ -10,7 +10,7 @@ from ._containers import DescriptiveResult
 
 
 def cochran_mantel(strata: list[np.ndarray], cdf=None) -> DescriptiveResult:
-    """
+    r"""
     Cochran-Mantel-Haenszel (CMH) test for conditional independence
     across K 2x2 stratified tables.
 

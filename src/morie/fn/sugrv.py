@@ -9,7 +9,7 @@ def supergravity_action(
     d: int = 11,
     N: int = 1,
 ) -> DescriptiveResult:
-    """Compute properties of d-dimensional N-extended supergravity.
+    r"""Compute properties of d-dimensional N-extended supergravity.
 
     Supergravity is the low-energy limit of string/M-theory.
     Maximum dimension is 11 (N=1). Maximum supercharges = 32.

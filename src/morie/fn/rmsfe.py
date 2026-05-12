@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def rmsfe_calc(actual: np.ndarray, forecast: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Root Mean Square Forecast Error.
 
     .. math::

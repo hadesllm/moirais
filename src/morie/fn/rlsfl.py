@@ -11,7 +11,7 @@ _QUOTE = "Power! Unlimited power!"
 
 
 def rls_filter(x, d, lam: float = 0.99, order: int = 16) -> SignalResult:
-    """Recursive Least Squares adaptive filter.
+    r"""Recursive Least Squares adaptive filter.
 
     .. math::
 

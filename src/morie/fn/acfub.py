@@ -11,7 +11,7 @@ _QUOTE = "I cannot teach anybody anything. I can only make them think. — Socra
 
 
 def acf_unbiased(x, maxlag: int | None = None, **kwargs) -> DescriptiveResult:
-    """Compute the unbiased autocorrelation function.
+    r"""Compute the unbiased autocorrelation function.
 
     .. math::
 

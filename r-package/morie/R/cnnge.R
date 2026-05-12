@@ -6,13 +6,22 @@
 #' @param y Numeric response.
 #' @param markers (n × m) genotype matrix.
 #' @param n_filters,kernel,hidden,n_epochs,lr,l2,seed Hyperparameters.
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("cnnge", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return list(estimate, y_hat, W_conv, b_conv, W1, b1, w2, b2, se, n, method).
 #' @references Montesinos Lopez Ch 13.
 #' @export
 cnn_genomic <- function(x, y, markers, n_filters = 8, kernel = 3,
                          hidden = 8, n_epochs = 150, lr = 1e-2,
-                         l2 = 1e-3, seed = 0) {
-  set.seed(seed)
+                         l2 = 1e-3, seed = 0,
+                         deterministic_seed = NULL) {
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("cnnge", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   y <- as.numeric(y); n <- length(y)
   M <- as.matrix(markers); m <- ncol(M)
   if (kernel > m) kernel <- max(1, m)

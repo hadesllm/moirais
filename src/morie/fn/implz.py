@@ -15,7 +15,7 @@ def impulse_from_io_fn(
     output_signal: np.ndarray,
     N: int = 64,
 ) -> DescriptiveResult:
-    """Estimate impulse response via frequency-domain deconvolution.
+    r"""Estimate impulse response via frequency-domain deconvolution.
 
     .. math::
 

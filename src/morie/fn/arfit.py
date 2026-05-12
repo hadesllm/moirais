@@ -12,7 +12,7 @@ import numpy as np
 
 
 def arfit(y, p=1, demean=True):
-    """Fit AR(p) model via Yule-Walker method.
+    r"""Fit AR(p) model via Yule-Walker method.
 
     Parameters
     ----------

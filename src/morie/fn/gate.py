@@ -26,7 +26,7 @@ def estimate_gate(
     group_col: str,
     propensity_col: str | None = None,
 ) -> pd.DataFrame:
-    """Estimate Group Average Treatment Effects (GATE) via AIPW within strata.
+    r"""Estimate Group Average Treatment Effects (GATE) via AIPW within strata.
 
     Partitions the data by *group_col* and estimates the ATE within each
     group using the AIPW doubly-robust estimator.

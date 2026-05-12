@@ -8,7 +8,7 @@ __all__ = ["guide_on_data_analysis_chapter_6_unnumbered_532"]
 
 
 def guide_on_data_analysis_chapter_6_unnumbered_532(x, cdf=None):
-    """
+    r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
     Formula: [EQ] theta_0 = as.numeric(gsub(".*=\\s*", "", theta_start[ 1])),

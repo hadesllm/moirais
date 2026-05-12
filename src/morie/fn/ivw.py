@@ -17,7 +17,7 @@ def iv_wald(
     se_zx: float = 0.0,
     alpha: float = 0.05,
 ) -> ESRes:
-    """
+    r"""
     Wald ratio IV estimator (single instrument).
 
     .. math::

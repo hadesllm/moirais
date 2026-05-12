@@ -11,7 +11,7 @@ _QUOTE = "Character is destiny. — Heraclitus"
 
 
 def haar_transform(x: np.ndarray) -> DescriptiveResult:
-    """Haar wavelet transform (simplest DWT, db1).
+    r"""Haar wavelet transform (simplest DWT, db1).
 
     The Haar wavelet uses averaging and differencing of adjacent samples:
 

@@ -10,7 +10,7 @@ __all__ = ["maxpool_forward"]
 
 
 def maxpool_forward(x, kernel_size: int = 2, stride=None):
-    """2D max-pooling forward pass on one channel.
+    r"""2D max-pooling forward pass on one channel.
 
     .. math::
 

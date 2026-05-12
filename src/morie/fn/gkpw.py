@@ -15,7 +15,7 @@ def gkp_witten(
     d: int = 4,
     L: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute the GKP-Witten bulk-to-boundary propagator in AdS.
+    r"""Compute the GKP-Witten bulk-to-boundary propagator in AdS.
 
     For a scalar field with conformal dimension Delta in AdS_{d+1}:
 

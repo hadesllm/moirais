@@ -12,7 +12,7 @@ _QUOTE = "Luminous beings are we."
 
 
 def instantaneous_phase(x: np.ndarray) -> DescriptiveResult:
-    """Instantaneous phase via analytic signal.
+    r"""Instantaneous phase via analytic signal.
 
     .. math::
 

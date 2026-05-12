@@ -13,7 +13,7 @@ def attenuation_ratio(
     rel_x: float,
     rel_y: float = 1.0,
 ) -> DescriptiveResult:
-    """
+    r"""
     Correct an observed correlation for measurement unreliability.
 
     .. math::

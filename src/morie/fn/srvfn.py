@@ -11,7 +11,7 @@ def survival_function(
     qx: list[float] | np.ndarray,
     radix: int = 100000,
 ) -> ESRes:
-    """Compute the survival function S(x) from a life table qx column.
+    r"""Compute the survival function S(x) from a life table qx column.
 
     .. math::
 

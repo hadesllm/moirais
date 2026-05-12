@@ -14,7 +14,7 @@ def penrs(
     G: float = 1.0,
     c: float = 1.0,
 ) -> dict:
-    """
+    r"""
     Compute Penrose (conformal/compactified) diagram coordinates.
 
     For Schwarzschild geometry, uses Kruskal-Szekeres as intermediate:

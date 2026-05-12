@@ -5,7 +5,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 def edit_distance(str_a: str, str_b: str, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the Levenshtein edit distance between two strings.
 
     The minimum number of single-character insertions, deletions, and

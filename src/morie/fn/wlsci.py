@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def wilson_ci(successes: int, trials: int, alpha: float = 0.05) -> DescriptiveResult:
-    """
+    r"""
     Wilson score confidence interval for a binomial proportion.
 
     .. math::

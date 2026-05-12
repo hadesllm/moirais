@@ -1,4 +1,4 @@
-"""Multihead concat.."""
+r"""Multihead concat.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_multihead_concat"]
 
 
 def kamath_ch2_multihead_concat(heads, W_O):
-    """
+    r"""
     Multihead concat.
 
     Formula: \mathrm{multihead}(Q,K,V) = W^O\,\mathrm{concat}(\mathrm{head}_1,\dots,\mathrm{head}_h)
@@ -27,7 +27,7 @@ def kamath_ch2_multihead_concat(heads, W_O):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.16, p. 36
-    """
+    r"""
     heads = np.atleast_1d(np.asarray(heads, dtype=float))
     n = len(heads)
     result = float(np.mean(heads))

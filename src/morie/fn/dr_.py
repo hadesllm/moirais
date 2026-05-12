@@ -13,7 +13,7 @@ def doubly_robust_ate(
     treatment: Union[list, np.ndarray],
     covariates: Union[list, np.ndarray],
 ) -> dict[str, Any]:
-    """
+    r"""
     Doubly-robust ATE estimator combining IPW and outcome regression.
 
     Consistent if *either* the propensity score model or the outcome

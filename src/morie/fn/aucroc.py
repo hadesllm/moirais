@@ -11,7 +11,7 @@ _QUOTE = "The whole is greater than the sum of its parts. — Aristotle"
 
 
 def auc_roc(y_true, y_score, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Area Under the ROC Curve via trapezoidal rule.
 
     .. math::

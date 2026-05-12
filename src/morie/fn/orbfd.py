@@ -13,7 +13,7 @@ def orbifold_spectrum(
     twist: float = 1.0,
     d: int = 6,
 ) -> DescriptiveResult:
-    """Compute orbifold fixed point count and twisted sector spectrum.
+    r"""Compute orbifold fixed point count and twisted sector spectrum.
 
     For a :math:`\\mathbb{Z}_N` orbifold of a torus :math:`T^d`:
 

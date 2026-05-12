@@ -13,7 +13,7 @@ def spatial_error_model(
     max_iter: int = 50,
     tol: float = 1e-6,
 ) -> DescriptiveResult:
-    """
+    r"""
     Estimate a spatial error model (SEM) via two-step feasible GLS.
 
     The model is:

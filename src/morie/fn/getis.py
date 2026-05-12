@@ -10,7 +10,7 @@ def getis_ord_gi_star(
     values: np.ndarray,
     weights: np.ndarray,
 ) -> SpatialResult:
-    """
+    r"""
     Compute the Getis-Ord :math:`G_i^*` statistic for hot/cold spot detection.
 
     For each observation *i*:

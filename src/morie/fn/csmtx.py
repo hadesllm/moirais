@@ -15,7 +15,7 @@ def sensing_matrix(
     seed: int = 42,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Generate a random sensing matrix for compressed sensing.
 
     Supported types:

@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def shapley_value(characteristic_fn, n_players: int) -> DescriptiveResult:
-    """
+    r"""
     Compute exact Shapley values for a cooperative game.
 
     .. math::

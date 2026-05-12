@@ -1,4 +1,4 @@
-"""Nonparametric expression (auto-extracted; see ref).."""
+r"""Nonparametric expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["density_estimation_for_statistics_and_data_analysis_silverma_chapter
 
 
 def density_estimation_for_statistics_and_data_analysis_silverma_chapter_2_unnumbered_28(x):
-    """
+    r"""
     Nonparametric expression (auto-extracted; see ref).
 
     Formula: As h tends to zero, K*{h~\Xi - Xj)} will tend to zero if X- ^ Xp but will remain fixed at K*{0) if X^ = Xj. The number of terms in the

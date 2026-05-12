@@ -13,7 +13,7 @@ def mmc_queue(
     service_rate: float,
     c: int = 2,
 ) -> DescriptiveResult:
-    """M/M/c multi-server queue steady-state metrics.
+    r"""M/M/c multi-server queue steady-state metrics.
 
     Uses the Erlang-C formula for the probability of queuing:
 

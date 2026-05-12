@@ -11,7 +11,7 @@ _QUOTE = "When I let go of what I am, I become what I might be. — Lao Tzu"
 
 
 def real_cepstrum(x, **kwargs) -> DescriptiveResult:
-    """Compute the real cepstrum of signal *x*.
+    r"""Compute the real cepstrum of signal *x*.
 
     .. math::
 

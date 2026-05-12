@@ -11,7 +11,7 @@ _QUOTE = "Rebellions are built on hope."
 
 
 def moving_average(x, window=5, **kwargs) -> DescriptiveResult:
-    """Apply a simple moving average filter.
+    r"""Apply a simple moving average filter.
 
     .. math::
 

@@ -7,7 +7,8 @@ __all__ = ["tsne_reduction"]
 
 
 def tsne_reduction(x, *, n_components=2, perplexity=30.0,
-                    learning_rate="auto", n_iter=1000, seed=0):
+                    learning_rate="auto", n_iter=1000, seed=0,
+                    deterministic_seed: int | None = None):
     """t-SNE embedding via sklearn.manifold.TSNE.
 
     Minimises KL(P||Q) where p_ij are Gaussian joint probabilities in
@@ -26,6 +27,11 @@ def tsne_reduction(x, *, n_components=2, perplexity=30.0,
         Max optimisation iterations.
     seed : int
         random_state.
+    deterministic_seed : int or None, optional
+        If supplied, the sklearn ``random_state`` is derived from the
+        SHA-keyed :func:`morie._det_rng.r_seed` so Py<->R streams agree
+        for the canonical fixture.  When ``None`` (default), behaviour
+        is unchanged: ``seed`` drives ``random_state`` directly.
 
     Returns
     -------
@@ -38,15 +44,22 @@ def tsne_reduction(x, *, n_components=2, perplexity=30.0,
     if X.ndim == 1:
         X = X.reshape(-1, 1)
     n = X.shape[0]
+
+    if deterministic_seed is not None:
+        from morie._det_rng import r_seed
+        rs = r_seed("tsnrd", deterministic_seed)
+    else:
+        rs = seed
+
     # sklearn renamed n_iter -> max_iter at v1.5
     try:
         ts = TSNE(n_components=n_components, perplexity=perplexity,
                   learning_rate=learning_rate, max_iter=n_iter,
-                  random_state=seed, init="pca")
+                  random_state=rs, init="pca")
     except TypeError:
         ts = TSNE(n_components=n_components, perplexity=perplexity,
                   learning_rate=learning_rate, n_iter=n_iter,
-                  random_state=seed, init="pca")
+                  random_state=rs, init="pca")
     emb = ts.fit_transform(X)
     return RichResult(payload={
         "estimate": list(emb.shape),

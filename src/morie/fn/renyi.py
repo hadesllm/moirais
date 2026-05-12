@@ -5,7 +5,7 @@ import numpy as np
 
 from ._containers import ESRes
 def renyi_entropy(x, alpha: float = 2.0, bins: int = 50, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Renyi entropy of order α.
 
     .. math::

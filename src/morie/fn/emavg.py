@@ -11,7 +11,7 @@ _QUOTE = "The belonging you seek is not behind you, it is ahead."
 
 
 def exponential_ma(x, alpha=0.3, **kwargs) -> DescriptiveResult:
-    """Apply an exponential moving average filter.
+    r"""Apply an exponential moving average filter.
 
     .. math::
 

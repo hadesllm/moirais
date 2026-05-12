@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def cross_entropy(p: np.ndarray, q: np.ndarray) -> ESRes:
-    """
+    r"""
     Compute cross-entropy H(P, Q).
 
     .. math::

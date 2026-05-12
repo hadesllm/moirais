@@ -12,7 +12,7 @@ def redsh(
     a_emit: float = None,
     a_obs: float = 1.0,
 ) -> dict:
-    """
+    r"""
     Compute cosmological redshift and related quantities.
 
     .. math::

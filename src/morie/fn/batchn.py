@@ -14,7 +14,7 @@ def batch_norm(
     beta: float = 0.0,
     eps: float = 1e-5,
 ) -> DescriptiveResult:
-    """
+    r"""
     Apply batch normalization to an input array.
 
     .. math::

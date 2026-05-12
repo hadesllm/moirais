@@ -1,4 +1,4 @@
-"""Full finetune obj.."""
+r"""Full finetune obj.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch4_full_finetune_obj"]
 
 
 def kamath_ch4_full_finetune_obj(Phi, x, y):
-    """
+    r"""
     Full finetune obj.
 
     Formula: \max_{\Phi} \sum_{(x,y)\in Z}\sum_{t=1}^{|y|}\log(P_{\Phi}(y_t|x,y_{<t}))
@@ -29,7 +29,7 @@ def kamath_ch4_full_finetune_obj(Phi, x, y):
     References
     ----------
     Kamath et al (2024), Ch 4, Eq 4.3, p. 150
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

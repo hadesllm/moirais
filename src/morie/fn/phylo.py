@@ -13,7 +13,7 @@ def phylogenetic_diversity(
     *,
     labels: list[str] | None = None,
 ) -> dict[str, Any]:
-    """Compute phylogenetic diversity (PD) from a distance matrix.
+    r"""Compute phylogenetic diversity (PD) from a distance matrix.
 
     Uses the minimum spanning tree (MST) total branch length as a
     measure of phylogenetic diversity (Faith's PD approximation from

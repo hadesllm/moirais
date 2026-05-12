@@ -1,4 +1,4 @@
-"""Output alignment.."""
+r"""Output alignment.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_output_alignment"]
 
 
 def kamath_ch9_output_alignment(S_X):
-    """
+    r"""
     Output alignment.
 
     Formula: H_X = OUT\_ALIGN_{T\to X}(S_X)
@@ -25,7 +25,7 @@ def kamath_ch9_output_alignment(S_X):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.19, p. 397
-    """
+    r"""
     S_X = np.atleast_1d(np.asarray(S_X, dtype=float))
     n = len(S_X)
     result = float(np.mean(S_X))

@@ -1,4 +1,4 @@
-"""Numbered display equation (5.2) from MVSML chapter 5.."""
+r"""Numbered display equation (5.2) from MVSML chapter 5.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_linear_mixed_models_eq_5_2"]
 
 
 def mvsml_linear_mixed_models_eq_5_2(n, where, V, ZTDZ, R, the):
-    """
+    r"""
     Numbered display equation (5.2) from MVSML chapter 5.
 
     Formula: ) (5.2) , n ( 2\pi ) where V = ZTDZ + R is the marginal variance of Y. The maximum likelihood estimators (MLE) of the parameters, \beta, D, and R, are the values that maximize the likelihood function
@@ -35,7 +35,7 @@ def mvsml_linear_mixed_models_eq_5_2(n, where, V, ZTDZ, R, the):
     References
     ----------
     MVSML, Eq. (5.2) [Multivariate Statistical Machine Learnin [Pages 141-170] [2026-04-16].pdf]
-    """
+    r"""
     n = np.atleast_1d(np.asarray(n, dtype=float))
     n = len(n)
     result = float(np.mean(n))

@@ -11,7 +11,7 @@ def sharpe_ratio(
     returns: np.ndarray,
     risk_free: float = 0.0,
 ) -> DescriptiveResult:
-    """Annualized Sharpe ratio.
+    r"""Annualized Sharpe ratio.
 
     .. math::
 

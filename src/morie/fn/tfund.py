@@ -6,7 +6,7 @@ from ._containers import DescriptiveResult
 
 
 def torus_fundamental_group(dim: int = 2) -> DescriptiveResult:
-    """Fundamental group of the n-dimensional torus T^n.
+    r"""Fundamental group of the n-dimensional torus T^n.
 
     :math:`\\pi_1(T^n) \\cong \\mathbb{Z}^n`
 

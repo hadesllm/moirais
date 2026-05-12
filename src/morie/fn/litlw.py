@@ -10,7 +10,7 @@ def littles_law(
     arrival_rate: float,
     avg_wait: float,
 ) -> DescriptiveResult:
-    """Apply Little's law to compute mean number in system.
+    r"""Apply Little's law to compute mean number in system.
 
     .. math::
 

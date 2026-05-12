@@ -13,7 +13,7 @@ def cosmx(
     Omega_m: float = 0.315,
     Omega_Lambda: float = None,
 ) -> dict:
-    """
+    r"""
     Compute comoving distance, luminosity distance, angular diameter distance,
     and lookback time for a flat Lambda-CDM cosmology.
 

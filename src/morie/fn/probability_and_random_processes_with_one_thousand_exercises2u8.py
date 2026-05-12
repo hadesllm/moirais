@@ -1,4 +1,4 @@
-"""GeneralStatistics expression (auto-extracted; see ref).."""
+r"""GeneralStatistics expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["probability_and_random_processes_with_one_thousand_exercises_chapter
 
 
 def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnumbered_8(x, cdf=None):
-    """
+    r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
     Formula: [EQ] P( A ∪ B) = P( A) + P( B \ A) = P( A) + P( B \( A ∩ B))
@@ -31,7 +31,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_2_unnum
     References
     ----------
     Probability and Random Processes with One Thousand Exercises -- Geoffrey  Stirzaker Grimmett, ch.2 (unnumbered)
-    """
+    r"""
     x = np.asarray(x, dtype=float)
     n = len(x)
     if n < 2:

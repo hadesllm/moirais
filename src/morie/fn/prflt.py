@@ -14,7 +14,7 @@ def polyphase_filter(
     h: np.ndarray,
     M: int = 2,
 ) -> DescriptiveResult:
-    """Polyphase decomposition of a filter into M sub-filters.
+    r"""Polyphase decomposition of a filter into M sub-filters.
 
     .. math::
 

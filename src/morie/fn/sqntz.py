@@ -10,7 +10,7 @@ _QUOTE = "Life is really simple, but we insist on making it complicated. — Con
 
 
 def quantize_signal(x, bits: int = 8) -> SignalResult:
-    """Quantize signal to b bits (uniform quantization).
+    r"""Quantize signal to b bits (uniform quantization).
 
     .. math::
 

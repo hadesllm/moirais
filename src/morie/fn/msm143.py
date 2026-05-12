@@ -1,4 +1,4 @@
-"""Numbered display equation (8.9) from MVSML chapter 8.."""
+r"""Numbered display equation (8.9) from MVSML chapter 8.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["mvsml_categorical_count_eq_8_9"]
 
 
 def mvsml_categorical_count_eq_8_9(A, R2, When, individuals, had, more):
-    """
+    r"""
     Numbered display equation (8.9) from MVSML chapter 8.
 
     Formula: A R2) When individuals had more than one replication, or a sophisticated experimental design was used for data collection, the Bayesian kernel BLUP model is speciﬁed in a more general way to take into account this structure, as follows: Y = 1n\mu + Zu + e (8.9) with Z the incident matrix of the genomic effects. This model cannot be ﬁtted directly in the BGLR and some precalculus is needed ﬁrst to compute the “covari- ance” matrix of the predictor Zu in model
@@ -35,7 +35,7 @@ def mvsml_categorical_count_eq_8_9(A, R2, When, individuals, had, more):
     References
     ----------
     MVSML, Eq. (8.9) [Multivariate Statistical Machine Learnin [Pages 251-336] [2026-04-16].pdf]
-    """
+    r"""
     A = np.atleast_1d(np.asarray(A, dtype=float))
     n = len(A)
     result = float(np.mean(A))

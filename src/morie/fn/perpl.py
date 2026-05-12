@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def perplexity(log_probs, **kwargs) -> ESRes:
-    """
+    r"""
     Compute perplexity from log-probabilities.
 
     .. math::

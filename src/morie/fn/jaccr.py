@@ -9,7 +9,7 @@ _QUOTE = "Knowing others is intelligence; knowing yourself is true wisdom. — L
 
 
 def jaccard_similarity(set_a, set_b, **kwargs) -> DescriptiveResult:
-    """
+    r"""
     Compute the Jaccard similarity index between two sets.
 
     .. math::

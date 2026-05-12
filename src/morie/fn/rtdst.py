@@ -15,7 +15,7 @@ def rtdst(
     max_iter: int = 300,
     tol: float = 1e-10,
 ) -> dict:
-    """
+    r"""
     Compute the rate-distortion function R(D) via Blahut-Arimoto algorithm.
 
     For source PMF p(x) and distortion d(x, x_hat):

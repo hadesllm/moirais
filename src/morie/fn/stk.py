@@ -13,7 +13,7 @@ def space_time_k(
     n_s: int = 10,
     n_t: int = 10,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute the space-time K function.
 
     Extends Ripley's K to the spatiotemporal domain:

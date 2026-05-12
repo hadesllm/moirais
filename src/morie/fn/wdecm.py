@@ -11,7 +11,7 @@ def weight_decay(
     params: list[np.ndarray],
     lambda_: float = 0.01,
 ) -> DescriptiveResult:
-    """Apply L2 weight decay (penalty) to parameter arrays.
+    r"""Apply L2 weight decay (penalty) to parameter arrays.
 
     Computes the L2 penalty :math:`\\frac{\\lambda}{2} \\sum \\|w\\|^2` and
     returns the decayed parameters :math:`w \\leftarrow w (1 - \\lambda)`.

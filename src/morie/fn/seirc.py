@@ -22,7 +22,7 @@ def seir_compartmental(
     t_max: float = 300.0,
     n_steps: int = 1000,
 ) -> SIRResult:
-    """SEIR model with vital dynamics (births/deaths) and waning immunity.
+    r"""SEIR model with vital dynamics (births/deaths) and waning immunity.
 
     .. math::
 

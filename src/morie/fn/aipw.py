@@ -26,7 +26,7 @@ def estimate_aipw(
     covariates: list[str] | None = None,
     outcome_model: str = "logistic",
 ) -> dict[str, Any]:
-    """
+    r"""
     Estimate the ATE via the Augmented Inverse Probability Weighting (AIPW)
     doubly-robust estimator.
 

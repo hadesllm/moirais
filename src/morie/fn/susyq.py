@@ -9,7 +9,7 @@ def susy_algebra(
     N: int = 1,
     d: int = 4,
 ) -> DescriptiveResult:
-    """Compute properties of the N-extended supersymmetry algebra.
+    r"""Compute properties of the N-extended supersymmetry algebra.
 
     The fundamental anticommutation relation:
 

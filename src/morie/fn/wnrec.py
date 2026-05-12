@@ -10,7 +10,7 @@ _QUOTE = "You have power over your mind — not outside events. — Marcus Aurel
 
 
 def rectangular_window(N: int, **kwargs) -> DescriptiveResult:
-    """Generate a rectangular window of length *N*.
+    r"""Generate a rectangular window of length *N*.
 
     .. math::
 

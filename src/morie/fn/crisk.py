@@ -9,7 +9,7 @@ def crisk(
     event: np.ndarray,
     alpha: float = 0.05,
 ) -> dict:
-    """
+    r"""
     Cumulative Incidence Function for competing risks.
 
     Uses the Aalen-Johansen estimator.  For cause *k*:

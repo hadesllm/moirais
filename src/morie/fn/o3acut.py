@@ -37,7 +37,7 @@ def o3_acute_rr(
     outcome: str = "all_cause",
     unit: str = "ppb",
 ) -> DescriptiveResult:
-    """Short-term ozone exposure relative risk for daily mortality.
+    r"""Short-term ozone exposure relative risk for daily mortality.
 
     Log-linear scaling of published per-10-ppb RR estimates from
     NMMAPS (Bell 2004) and APHENA (Katsouyanni 2009) time-series

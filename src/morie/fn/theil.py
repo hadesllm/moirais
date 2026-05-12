@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def theil_sen(x: np.ndarray, y: np.ndarray) -> ESRes:
-    """
+    r"""
     Theil-Sen median slope estimator for robust linear trend.
 
     Computes the median of all pairwise slopes:

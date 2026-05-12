@@ -16,7 +16,7 @@ def burg_psd(
     nfft: int = 512,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """Burg autoregressive spectral estimation.
+    r"""Burg autoregressive spectral estimation.
 
     Estimates the AR coefficients using the Burg method (minimizes
     forward + backward prediction error simultaneously) and computes

@@ -10,7 +10,7 @@ _QUOTE = "The happiness of your life depends upon the quality of your thoughts. 
 
 
 def rms_value(x, **kwargs) -> DescriptiveResult:
-    """Compute the root mean square (RMS) value of signal *x*.
+    r"""Compute the root mean square (RMS) value of signal *x*.
 
     .. math::
 

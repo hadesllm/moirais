@@ -12,7 +12,7 @@ def annuity_value(
     payment: float = 1.0,
     due: bool = False,
 ) -> DescriptiveResult:
-    """Present value of an ordinary annuity or annuity-due.
+    r"""Present value of an ordinary annuity or annuity-due.
 
     Ordinary annuity (payments at end of period):
 

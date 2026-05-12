@@ -12,7 +12,7 @@ def dedekind_sum(
     h: int = 1,
     k: int = 7,
 ) -> DescriptiveResult:
-    """Compute the Dedekind sum s(h, k).
+    r"""Compute the Dedekind sum s(h, k).
 
     .. math::
 

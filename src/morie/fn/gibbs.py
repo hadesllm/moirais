@@ -19,7 +19,7 @@ def gibbs_bivariate_normal(
     burn_in: int = 0,
     seed: int = 42,
 ) -> dict[str, Any]:
-    """
+    r"""
     Gibbs sampler for a bivariate normal distribution.
 
     Samples from BVN(mu, Sigma) using the full conditional

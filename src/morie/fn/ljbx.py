@@ -11,7 +11,7 @@ _QUOTE = "Train yourself to let go of everything you fear to lose."
 
 
 def ljung_box_test_fn(residuals: np.ndarray, nlags: int = 20, cdf=None) -> DescriptiveResult:
-    """Ljung-Box portmanteau test for residual autocorrelation.
+    r"""Ljung-Box portmanteau test for residual autocorrelation.
 
     .. math::
 

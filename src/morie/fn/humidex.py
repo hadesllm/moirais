@@ -12,7 +12,7 @@ def humidex(
     T_air_C: float | np.ndarray,
     T_dew_C: float | np.ndarray,
 ) -> DescriptiveResult:
-    """Compute Humidex from air temperature and dewpoint, in °C.
+    r"""Compute Humidex from air temperature and dewpoint, in °C.
 
     Environment Canada's apparent-temperature index, widely used across
     Canadian weather forecasts, occupational heat guidelines, and

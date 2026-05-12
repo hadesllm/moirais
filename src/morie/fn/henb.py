@@ -9,7 +9,7 @@ def net_monetary_benefit(
     cost_diff: float,
     wtp: float,
 ) -> ESRes:
-    """Net monetary benefit at given willingness-to-pay threshold.
+    r"""Net monetary benefit at given willingness-to-pay threshold.
 
     .. math::
 

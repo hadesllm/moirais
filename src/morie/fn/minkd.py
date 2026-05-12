@@ -9,7 +9,7 @@ _QUOTE = "The art of doing mathematics consists in finding that special case whi
 
 
 def minkowski_dist(x, y, p: float = 2.0, **kwargs) -> ESRes:
-    """
+    r"""
     Compute Minkowski distance of order p.
 
     .. math::

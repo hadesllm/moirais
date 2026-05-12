@@ -12,7 +12,7 @@ def logit_softcap(
     logits: np.ndarray,
     cap: float = 30.0,
 ) -> DescriptiveResult:
-    """Apply logit soft-capping to prevent extreme values.
+    r"""Apply logit soft-capping to prevent extreme values.
 
     :math:`\\text{softcap}(x) = \\text{cap} \\cdot \\tanh(x / \\text{cap})`
 

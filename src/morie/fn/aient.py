@@ -6,7 +6,7 @@ from ._containers import ESRes
 
 
 def aic_entropy(log_likelihood: float, k: int, n: int = 0, **kwargs) -> ESRes:
-    """
+    r"""
     Compute AIC and AICc from log-likelihood.
 
     .. math::

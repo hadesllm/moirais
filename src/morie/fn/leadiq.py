@@ -34,7 +34,7 @@ def lead_iq_loss(
     *,
     with_ci: bool = False,
 ) -> DescriptiveResult:
-    """Estimate IQ loss from childhood blood lead level (BLL).
+    r"""Estimate IQ loss from childhood blood lead level (BLL).
 
     Uses the Lanphear et al. 2005 pooled log-linear concentration-
     response model (7 international cohorts, 1,333 children). The

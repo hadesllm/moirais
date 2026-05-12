@@ -12,7 +12,7 @@ def silhouette_score(
     X: np.ndarray,
     labels: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute silhouette coefficients for each sample and the mean score.
 
     For each sample *i* with cluster label :math:`C_i`:

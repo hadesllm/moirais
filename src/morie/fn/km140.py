@@ -1,4 +1,4 @@
-"""Moc loss.."""
+r"""Moc loss.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_moc_loss"]
 
 
 def kamath_ch9_moc_loss(theta, w, v, g_theta):
-    """
+    r"""
     Moc loss.
 
     Formula: L_{MOC}(\theta) = -E_{(w,v)}[\sum_{i=1}^M CE(c(v_m^i), g_{\theta}(v_m^i))]
@@ -31,7 +31,7 @@ def kamath_ch9_moc_loss(theta, w, v, g_theta):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.12, p. 388
-    """
+    r"""
     w = np.atleast_1d(np.asarray(w, dtype=float))
     n = len(w)
     result = float(np.mean(w))

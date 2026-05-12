@@ -15,7 +15,7 @@ def wavelet_denoise(
     level: int | None = None,
     mode: str = "soft",
 ) -> DescriptiveResult:
-    """Wavelet denoising via decomposition, thresholding, and reconstruction.
+    r"""Wavelet denoising via decomposition, thresholding, and reconstruction.
 
     Implements the Donoho-Johnstone VisuShrink universal threshold
     (Rangayyan & Krishnan, Ch. 8):

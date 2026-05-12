@@ -10,7 +10,7 @@ _QUOTE = "So this is how liberty dies, with thunderous applause."
 
 
 def signal_power(x, **kwargs) -> DescriptiveResult:
-    """Compute the average power of signal *x*.
+    r"""Compute the average power of signal *x*.
 
     .. math::
 

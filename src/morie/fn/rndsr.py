@@ -7,7 +7,8 @@ __all__ = ["random_search_cv"]
 
 
 def random_search_cv(x, y, *, estimator=None, param_distributions=None,
-                      n_iter=20, cv=5, scoring=None, seed=0, task="auto"):
+                      n_iter=20, cv=5, scoring=None, seed=0, task="auto",
+                      deterministic_seed: int | None = None):
     """Random hyperparameter search via sklearn.model_selection.RandomizedSearchCV.
 
     Samples n_iter configurations from `param_distributions`, evaluates
@@ -26,6 +27,11 @@ def random_search_cv(x, y, *, estimator=None, param_distributions=None,
     seed : int
         random_state — controls both the search and the estimator.
     task : "auto" | "classification" | "regression".
+    deterministic_seed : int or None, optional
+        If supplied, the sklearn ``random_state`` is derived from the
+        SHA-keyed :func:`morie._det_rng.r_seed` so Py<->R streams agree
+        for the canonical fixture.  When ``None`` (default), behaviour
+        is unchanged: ``seed`` drives ``random_state`` directly.
 
     Returns
     -------
@@ -42,20 +48,26 @@ def random_search_cv(x, y, *, estimator=None, param_distributions=None,
         X = X.reshape(-1, 1)
     n = X.shape[0]
 
+    if deterministic_seed is not None:
+        from morie._det_rng import r_seed
+        rs_seed = r_seed("rndsr", deterministic_seed)
+    else:
+        rs_seed = seed
+
     if task == "auto":
         task = "classification" if np.issubdtype(y.dtype, np.integer) or set(np.unique(y)).issubset({0, 1}) else "regression"
 
     if estimator is None:
         if task == "classification":
-            estimator = LogisticRegression(max_iter=1000, random_state=seed)
+            estimator = LogisticRegression(max_iter=1000, random_state=rs_seed)
             param_distributions = param_distributions or {"C": loguniform(1e-3, 1e2)}
         else:
-            estimator = Ridge(random_state=seed)
+            estimator = Ridge(random_state=rs_seed)
             param_distributions = param_distributions or {"alpha": loguniform(1e-3, 1e2)}
 
     rs = RandomizedSearchCV(estimator, param_distributions=param_distributions,
                              n_iter=n_iter, cv=cv, scoring=scoring,
-                             random_state=seed)
+                             random_state=rs_seed)
     rs.fit(X, y)
     return RichResult(payload={
         "estimate": float(rs.best_score_),

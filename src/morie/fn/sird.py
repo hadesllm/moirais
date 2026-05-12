@@ -15,7 +15,7 @@ def sir_model(
     t_max: int = 160,
     dt: float = 1.0,
 ) -> SIRResult:
-    """Simulate an SIR compartmental model using scipy.integrate.odeint.
+    r"""Simulate an SIR compartmental model using scipy.integrate.odeint.
 
     .. math::
 

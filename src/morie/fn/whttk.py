@@ -14,7 +14,7 @@ def whittaker_smooth(
     lambda_: float = 100.0,
     d: int = 2,
 ) -> DescriptiveResult:
-    """
+    r"""
     Whittaker smoother (penalised least squares).
 
     Minimises :math:`\\|y - z\\|^2 + \\lambda \\|D^d z\\|^2`

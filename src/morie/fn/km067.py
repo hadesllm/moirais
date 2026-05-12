@@ -1,4 +1,4 @@
-"""Rm bradley terry.."""
+r"""Rm bradley terry.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch5_rm_bradley_terry"]
 
 
 def kamath_ch5_rm_bradley_terry(x, y_w, y_l, r_theta):
-    """
+    r"""
     Rm bradley terry.
 
     Formula: L(\theta) = -E_{(x,y_w,y_l)\sim D}[\log\sigma(r_{\theta}(x,y_w) - r_{\theta}(x,y_l))]
@@ -31,7 +31,7 @@ def kamath_ch5_rm_bradley_terry(x, y_w, y_l, r_theta):
     References
     ----------
     Kamath et al (2024), Ch 5, Eq 5.3, p. 200
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

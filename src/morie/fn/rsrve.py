@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 
 
 def chain_ladder(triangle: np.ndarray) -> DescriptiveResult:
-    """Chain-ladder method for loss reserving.
+    r"""Chain-ladder method for loss reserving.
 
     Estimates ultimate claims from a cumulative loss development
     triangle using age-to-age (link) factors:

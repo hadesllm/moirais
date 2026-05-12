@@ -1,4 +1,4 @@
-"""Simplified categorical cross-entropy loss when the target is one-hot, reducing to the negative log-probability of the correct class c.."""
+r"""Simplified categorical cross-entropy loss when the target is one-hot, reducing to the negative log-probability of the correct class c.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch2_categorical_cross_entropy"]
 
 
 def burkov_lm_ch2_categorical_cross_entropy(y_hat, c):
-    """
+    r"""
     Simplified categorical cross-entropy loss when the target is one-hot, reducing to the negative log-probability of the correct class c.
 
     Formula: \operatorname{loss}(\hat{\mathbf{y}}, \mathbf{y}) = -\log\!\bigl(\hat{y}^{(c)}\bigr)

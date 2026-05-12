@@ -13,7 +13,7 @@ def torus_curvature(
     u: float | np.ndarray = 0.0,
     v: float | np.ndarray = 0.0,
 ) -> DescriptiveResult:
-    """Gaussian and mean curvature of a torus at parameter (u, v).
+    r"""Gaussian and mean curvature of a torus at parameter (u, v).
 
     Gaussian curvature:
     :math:`K = \\frac{\\cos v}{r(R + r\\cos v)}`

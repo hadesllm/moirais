@@ -17,7 +17,7 @@ def npbst(
     method: str = "percentile",
     seed: int = 42,
 ) -> dict:
-    """
+    r"""
     Nonparametric bootstrap inference for an arbitrary statistic.
 
     Resamples rows of *data* with replacement *n_boot* times, computes

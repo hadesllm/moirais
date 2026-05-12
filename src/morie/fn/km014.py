@@ -1,4 +1,4 @@
-"""Positional encoding cos.."""
+r"""Positional encoding cos.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch2_positional_encoding_cos"]
 
 
 def kamath_ch2_positional_encoding_cos(i, j, d):
-    """
+    r"""
     Positional encoding cos.
 
     Formula: P_{i,2j+1} = \cos(i/10000^{2j/d})
@@ -29,7 +29,7 @@ def kamath_ch2_positional_encoding_cos(i, j, d):
     References
     ----------
     Kamath et al (2024), Ch 2, Eq 2.14, p. 35
-    """
+    r"""
     i = np.atleast_1d(np.asarray(i, dtype=float))
     n = len(i)
     result = float(np.mean(i))

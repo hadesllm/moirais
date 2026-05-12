@@ -18,7 +18,7 @@ def renewal_forecast(
     n_sim: int = 0,
     alpha: float = 0.05,
 ) -> dict[str, Any]:
-    """Forecast epidemic incidence using the renewal equation.
+    r"""Forecast epidemic incidence using the renewal equation.
 
     .. math::
 

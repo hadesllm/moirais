@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def lts_regression(
     X: np.ndarray, y: np.ndarray, h: int | None = None, n_subsets: int = 500, seed: int = 42
 ) -> DescriptiveResult:
-    """
+    r"""
     Least Trimmed Squares (LTS) regression.
 
     Minimises :math:`\\sum_{i=1}^{h} r_{(i)}^2` where :math:`r_{(i)}^2`

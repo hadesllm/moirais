@@ -25,7 +25,7 @@ def estimate_att(
     covariates: list[str],
     propensity_col: str | None = None,
 ) -> dict[str, Any]:
-    """Estimate the Average Treatment Effect on the Treated (ATT) via
+    r"""Estimate the Average Treatment Effect on the Treated (ATT) via
     Hajek-weighted IPW.
 
     The ATT is defined as:

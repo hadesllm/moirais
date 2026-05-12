@@ -11,7 +11,7 @@ _QUOTE = "A journey of a thousand miles begins with a single step. — Lao Tzu"
 
 
 def sample_covariance(x, y, **kwargs) -> DescriptiveResult:
-    """Compute the sample covariance between *x* and *y*.
+    r"""Compute the sample covariance between *x* and *y*.
 
     .. math::
 

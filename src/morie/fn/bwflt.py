@@ -11,7 +11,7 @@ _QUOTE = "Real knowledge is to know the extent of one's ignorance. — Confucius
 
 
 def butterworth_filter(x, cutoff, fs, order: int = 4, btype: str = "low") -> SignalResult:
-    """Apply a Butterworth IIR filter to signal *x*.
+    r"""Apply a Butterworth IIR filter to signal *x*.
 
     .. math::
 

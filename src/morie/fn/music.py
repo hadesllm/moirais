@@ -17,7 +17,7 @@ def music_spectrum_fn(
     nfft: int = 512,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """MUSIC (Multiple Signal Classification) spectral estimation.
+    r"""MUSIC (Multiple Signal Classification) spectral estimation.
 
     Estimates the pseudospectrum by projecting steering vectors onto
     the noise subspace of the autocorrelation matrix.

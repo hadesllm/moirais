@@ -1,4 +1,4 @@
-"""Perplexity.."""
+r"""Perplexity.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch8_perplexity"]
 
 
 def kamath_ch8_perplexity(X, N, p_theta):
-    """
+    r"""
     Perplexity.
 
     Formula: \mathrm{PPL}(X) = \exp(-\frac{1}{N}\sum_{i=0}^N \log p_{\theta}(x_i|x_{<i}))
@@ -29,7 +29,7 @@ def kamath_ch8_perplexity(X, N, p_theta):
     References
     ----------
     Kamath et al (2024), Ch 8, Eq 8.1, p. 322
-    """
+    r"""
     X = np.atleast_1d(np.asarray(X, dtype=float))
     n = len(X)
     result = float(np.mean(X))

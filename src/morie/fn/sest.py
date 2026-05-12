@@ -17,7 +17,7 @@ def _rho_bisquare(u: np.ndarray, c: float = 1.5476) -> np.ndarray:
 
 
 def s_estimator(X: np.ndarray, y: np.ndarray, n_subsets: int = 500, seed: int = 42) -> DescriptiveResult:
-    """
+    r"""
     S-estimator for robust regression.
 
     Minimises the scale of residuals defined implicitly through:

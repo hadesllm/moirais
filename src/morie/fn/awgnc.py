@@ -8,7 +8,7 @@ from ._richresult import RichResult
 
 
 def awgnc(snr_db: float = None, *, snr_linear: float = None) -> dict:
-    """
+    r"""
     Capacity of an additive white Gaussian noise channel.
 
     .. math::

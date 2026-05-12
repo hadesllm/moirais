@@ -11,7 +11,7 @@ _QUOTE = "Rebellions are built on hope."
 
 
 def cepstral_distance(c1, c2, **kwargs) -> DescriptiveResult:
-    """Compute the Euclidean cepstral distance.
+    r"""Compute the Euclidean cepstral distance.
 
     .. math::
 

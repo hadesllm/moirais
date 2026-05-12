@@ -7,7 +7,7 @@ from ._containers import DescriptiveResult
 
 
 def genetic_relatedness(genotype_matrix: np.ndarray) -> DescriptiveResult:
-    """
+    r"""
     Compute the genomic relationship matrix (GRM).
 
     Uses the method of VanRaden (2008):

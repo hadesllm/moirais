@@ -14,7 +14,7 @@ def doubling_time(
     incidence: np.ndarray | list | None = None,
     alpha: float = 0.05,
 ) -> ESRes:
-    """
+    r"""
     Compute the epidemic doubling time from the exponential growth rate.
 
     .. math::

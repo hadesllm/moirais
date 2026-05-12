@@ -12,7 +12,7 @@ def substance_prevalence(
     weights: np.ndarray | None = None,
     confidence: float = 0.95,
 ) -> ESRes:
-    """Estimate substance use prevalence with confidence interval.
+    r"""Estimate substance use prevalence with confidence interval.
 
     .. math::
 

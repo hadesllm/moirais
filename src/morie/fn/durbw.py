@@ -11,7 +11,7 @@ _QUOTE = "Who's the more foolish: the fool, or the fool who follows him?"
 
 
 def durbin_watson_stat_fn(residuals: np.ndarray) -> DescriptiveResult:
-    """Compute the Durbin-Watson statistic.
+    r"""Compute the Durbin-Watson statistic.
 
     .. math::
 

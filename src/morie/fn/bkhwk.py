@@ -14,7 +14,7 @@ def bekenstein_hawking(
     c: float = 1.0,
     hbar: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute Bekenstein-Hawking entropy for a Schwarzschild black hole.
+    r"""Compute Bekenstein-Hawking entropy for a Schwarzschild black hole.
 
     .. math::
 

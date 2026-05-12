@@ -9,7 +9,7 @@ def years_potential_life_lost(
     ages_at_death: np.ndarray,
     cutoff: float = 75.0,
 ) -> ESRes:
-    """Years of potential life lost before a reference age.
+    r"""Years of potential life lost before a reference age.
 
     .. math::
 

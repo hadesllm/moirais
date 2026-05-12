@@ -1,4 +1,4 @@
-"""Itm hard negative.."""
+r"""Itm hard negative.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_itm_hard_negative"]
 
 
 def kamath_ch9_itm_hard_negative(Pos, HardNeg):
-    """
+    r"""
     Itm hard negative.
 
     Formula: L_{ITM-hn} = -\sum_{(x,y)\in\text{Pos}}\log p(\text{aligned}|x,y) - \sum_{(x',y')\in\text{HardNeg}}\log p(\text{unaligned}|x',y')
@@ -27,7 +27,7 @@ def kamath_ch9_itm_hard_negative(Pos, HardNeg):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.9, p. 387
-    """
+    r"""
     Pos = np.atleast_1d(np.asarray(Pos, dtype=float))
     n = len(Pos)
     result = float(np.mean(Pos))

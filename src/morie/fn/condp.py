@@ -12,7 +12,7 @@ def conditional_prob(
     marginal: float,
     **kwargs,
 ) -> ESRes:
-    """
+    r"""
     Compute conditional probability P(A|B) = P(A and B) / P(B).
 
     .. math::

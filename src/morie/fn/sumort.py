@@ -11,7 +11,7 @@ def substance_mortality(
     total_deaths: int,
     confidence: float = 0.95,
 ) -> ESRes:
-    """Compute substance-attributable fraction of mortality.
+    r"""Compute substance-attributable fraction of mortality.
 
     .. math::
 

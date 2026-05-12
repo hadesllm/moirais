@@ -12,7 +12,7 @@ from ._richresult import RichResult
 __all__ = ["kosorok_bootstrap_empirical"]
 
 
-def kosorok_bootstrap_empirical(x, B=1000, seed=0):
+def kosorok_bootstrap_empirical(x, B=1000, seed=0, deterministic_seed: int | None = None):
     """Nonparametric bootstrap SE for sqrt(n)*(P_n - P)(id).
 
     Parameters
@@ -20,6 +20,12 @@ def kosorok_bootstrap_empirical(x, B=1000, seed=0):
     x : array-like, IID sample.
     B : int, number of bootstrap replications.
     seed : int.
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged: the user-supplied ``seed`` drives a fresh
+        :class:`numpy.random.Generator`.
 
     Returns
     -------
@@ -28,7 +34,11 @@ def kosorok_bootstrap_empirical(x, B=1000, seed=0):
     """
     x = np.asarray(x, dtype=float)
     n = len(x)
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("ksr07", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     idx = rng.integers(0, n, size=(B, n))
     boot_means = x[idx].mean(axis=1)
     pn = float(x.mean())

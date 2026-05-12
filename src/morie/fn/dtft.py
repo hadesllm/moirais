@@ -11,7 +11,7 @@ _QUOTE = "Your focus determines your reality."
 
 
 def dtft_compute(x, omega=None, **kwargs) -> DescriptiveResult:
-    """Compute the DTFT of signal *x* at specified frequencies.
+    r"""Compute the DTFT of signal *x* at specified frequencies.
 
     .. math::
 

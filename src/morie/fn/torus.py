@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 
 
 def torus_surface(R: float = 3.0, r: float = 1.0) -> DescriptiveResult:
-    """Surface area and volume of a torus with major radius *R* and minor radius *r*.
+    r"""Surface area and volume of a torus with major radius *R* and minor radius *r*.
 
     Surface area: :math:`S = 4\\pi^2 R r`
     Volume: :math:`V = 2\\pi^2 R r^2`

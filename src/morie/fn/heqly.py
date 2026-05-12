@@ -10,7 +10,7 @@ def quality_adjusted_ly(
     utilities: list | np.ndarray,
     durations: list | np.ndarray,
 ) -> ESRes:
-    """Compute QALYs from utility weights and durations.
+    r"""Compute QALYs from utility weights and durations.
 
     .. math::
 

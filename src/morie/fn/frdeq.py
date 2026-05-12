@@ -15,7 +15,7 @@ def frdeq(
     a_range: tuple = (0.01, 2.0),
     n_points: int = 500,
 ) -> dict:
-    """
+    r"""
     Compute Friedmann equation quantities for FLRW cosmology.
 
     First Friedmann equation:

@@ -1,4 +1,4 @@
-"""Probability expression (auto-extracted; see ref).."""
+r"""Probability expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["hedderich_chapter_9_unnumbered_1157"]
 
 
 def hedderich_chapter_9_unnumbered_1157(x):
-    """
+    r"""
     Probability expression (auto-extracted; see ref).
 
     Formula: + " \ n Wald statistic : " , round ( low1 , digits = 4 ) , " −" , round ( upp1 , digits = 4 ) ,

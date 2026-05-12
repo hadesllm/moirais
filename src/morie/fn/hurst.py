@@ -7,7 +7,7 @@ import numpy as np
 def hurst(
     series: np.ndarray,
 ) -> dict:
-    """
+    r"""
     Hurst exponent via rescaled range (R/S) analysis.
 
     Estimates long-range dependence by computing :math:`(R/S)_n` over

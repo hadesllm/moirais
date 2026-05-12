@@ -35,7 +35,7 @@ def ndvi_exposure_rr(
     reference_ndvi: float = 0.2,
     outcome: str = "all_cause",
 ) -> DescriptiveResult:
-    """Estimate health benefit of green-space exposure via NDVI.
+    r"""Estimate health benefit of green-space exposure via NDVI.
 
     NDVI (Normalized Difference Vegetation Index) summarizes local
     vegetation density from satellite imagery (MODIS, Landsat) on a

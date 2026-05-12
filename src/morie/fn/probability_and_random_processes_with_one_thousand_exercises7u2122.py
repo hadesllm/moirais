@@ -1,4 +1,4 @@
-"""CentralTendency expression (auto-extracted; see ref).."""
+r"""CentralTendency expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["probability_and_random_processes_with_one_thousand_exercises_chapter
 
 
 def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnumbered_2122(x):
-    """
+    r"""
     CentralTendency expression (auto-extracted; see ref).
 
     Formula: [EQ] B1 = A7 \ A9, B2 = A3 ∪ A6 ∪ A9 ∪ · · · , B3 =
@@ -29,7 +29,7 @@ def probability_and_random_processes_with_one_thousand_exercises_chapter_7_unnum
     References
     ----------
     Probability and Random Processes with One Thousand Exercises -- Geoffrey  Stirzaker Grimmett, ch.7 (unnumbered)
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

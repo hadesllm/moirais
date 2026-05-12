@@ -1,4 +1,4 @@
-"""GeneralStatistics expression (auto-extracted; see ref).."""
+r"""GeneralStatistics expression (auto-extracted; see ref).."""
 import numpy as np
 from scipy import stats
 
@@ -8,7 +8,7 @@ __all__ = ["blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter
 
 
 def blitzstein_joseph_k_hwang_jessica_introduction_to_probabilit_chapter_10_unnumbered_164(x, cdf=None):
-    """
+    r"""
     GeneralStatistics expression (auto-extracted; see ref).
 
     Formula: h 7.1.12. In the chicken-egg story, it is not valid to say \ P (X = xjN = n) =

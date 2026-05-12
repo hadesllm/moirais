@@ -13,7 +13,7 @@ def fdisc(
     *,
     divergence: str = "kl",
 ) -> dict:
-    """
+    r"""
     Compute an f-divergence between two discrete distributions.
 
     .. math::

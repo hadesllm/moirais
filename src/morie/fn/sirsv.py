@@ -19,7 +19,7 @@ def sirs_vaccination(
     t_max: float = 300.0,
     n_steps: int = 1000,
 ) -> SIRResult:
-    """SIRS model with vaccination and waning immunity.
+    r"""SIRS model with vaccination and waning immunity.
 
     Unlike SIR-V (``sir_v.py``), recovered individuals lose immunity at
     rate omega, returning to S. Vaccination moves S -> R directly.

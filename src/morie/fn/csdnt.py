@@ -16,7 +16,7 @@ def denoise_cs(
     tol: float = 1e-6,
     **kwargs,
 ) -> DescriptiveResult:
-    """
+    r"""
     Denoise a signal using compressed sensing L1 regularization (ISTA).
 
     Solves the basis pursuit denoising (BPDN) problem:

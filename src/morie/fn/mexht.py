@@ -11,7 +11,7 @@ _QUOTE = "I'm just a simple man trying to make my way in the universe."
 
 
 def mexican_hat(N: int = 256) -> DescriptiveResult:
-    """Mexican hat (Ricker) wavelet: negative normalized second derivative of Gaussian.
+    r"""Mexican hat (Ricker) wavelet: negative normalized second derivative of Gaussian.
 
     .. math::
 

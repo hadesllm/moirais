@@ -13,7 +13,7 @@ def cpi_inflation(
     prices_current: np.ndarray,
     weights: np.ndarray | None = None,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute Consumer Price Index and inflation rate.
 
     .. math::

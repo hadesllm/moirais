@@ -16,7 +16,7 @@ def pendulum(
     t_max: float = 10.0,
     dt: float = 0.01,
 ) -> DescriptiveResult:
-    """
+    r"""
     Simulate a simple pendulum using the nonlinear ODE.
 
     .. math::

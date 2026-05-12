@@ -6,12 +6,21 @@
 #' @param y Numeric response.
 #' @param markers (n × L) marker sequence.
 #' @param hidden,n_epochs,lr,l2,seed Hyperparameters.
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("rnnge", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return list(estimate, y_hat, W_h, W_x, b_h, w_o, b_o, se, n, method).
 #' @references Montesinos Lopez Ch 14.
 #' @export
 rnn_genomic <- function(x, y, markers, hidden = 8, n_epochs = 150,
-                         lr = 1e-2, l2 = 1e-3, seed = 0) {
-  set.seed(seed)
+                         lr = 1e-2, l2 = 1e-3, seed = 0,
+                         deterministic_seed = NULL) {
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("rnnge", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   y <- as.numeric(y); n <- length(y)
   M <- as.matrix(markers); L <- ncol(M)
   M_mu <- colMeans(M); M_sd <- apply(M, 2, stats::sd); M_sd[M_sd == 0] <- 1

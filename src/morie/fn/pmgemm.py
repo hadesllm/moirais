@@ -59,7 +59,7 @@ def pm_gemm_rr(
     mu: float | None = None,
     nu: float | None = None,
 ) -> DescriptiveResult:
-    """Compute PM₂.₅ relative risk via the Burnett 2018 GEMM curve.
+    r"""Compute PM₂.₅ relative risk via the Burnett 2018 GEMM curve.
 
     GEMM (Global Exposure Mortality Model) is the nonlinear
     concentration-response used by WHO GBD for ambient PM₂.₅ burden

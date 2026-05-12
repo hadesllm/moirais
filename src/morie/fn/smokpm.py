@@ -37,7 +37,7 @@ def wildfire_smoke_rr(
     ambient_rr_per_10: float = 1.010,
     outcome: str = "respiratory",
 ) -> DescriptiveResult:
-    """Compute wildfire-smoke vs. ambient PM₂.₅ relative risk.
+    r"""Compute wildfire-smoke vs. ambient PM₂.₅ relative risk.
 
     Wildfire-smoke PM₂.₅ is roughly 2-10× more toxic per µg/m³ than
     ambient (non-smoke) PM₂.₅ for respiratory outcomes, per the

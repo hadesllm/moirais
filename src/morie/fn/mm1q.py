@@ -10,7 +10,7 @@ def mm1_queue(
     arrival_rate: float,
     service_rate: float,
 ) -> DescriptiveResult:
-    """M/M/1 single-server queue steady-state metrics.
+    r"""M/M/1 single-server queue steady-state metrics.
 
     Traffic intensity :math:`\\rho = \\lambda / \\mu`.  The system is
     stable when :math:`\\rho < 1`.

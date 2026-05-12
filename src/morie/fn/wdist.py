@@ -12,7 +12,7 @@ def wdist(
     *,
     p: int = 1,
 ) -> dict:
-    """
+    r"""
     Compute the p-Wasserstein distance between two 1-D distributions.
 
     For empirical distributions on the real line:

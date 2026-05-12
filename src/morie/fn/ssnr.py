@@ -10,7 +10,7 @@ _QUOTE = "Never tell me the odds."
 
 
 def snr_compute(signal, noise, **kwargs) -> DescriptiveResult:
-    """Compute the signal-to-noise ratio in decibels.
+    r"""Compute the signal-to-noise ratio in decibels.
 
     .. math::
 

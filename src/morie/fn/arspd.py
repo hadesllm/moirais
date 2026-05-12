@@ -16,7 +16,7 @@ def ar_spectrum_fn(
     nfft: int = 512,
     fs: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute power spectral density from AR model parameters.
+    r"""Compute power spectral density from AR model parameters.
 
     .. math::
 

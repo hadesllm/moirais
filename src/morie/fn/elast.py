@@ -12,7 +12,7 @@ def elasticity(
     price: np.ndarray,
     quantity: np.ndarray,
 ) -> DescriptiveResult:
-    """
+    r"""
     Compute arc price elasticity of demand.
 
     .. math::

@@ -7,7 +7,7 @@ from ._containers import ESRes
 
 
 def mutual_information(x: np.ndarray, y: np.ndarray, base: float = 2.0) -> ESRes:
-    """
+    r"""
     Compute mutual information between two discrete variables.
 
     .. math::

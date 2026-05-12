@@ -12,7 +12,7 @@ from ._containers import TestResult
 def runs_test(
     x: Union[list, np.ndarray],
 ) -> TestResult:
-    """
+    r"""
     Wald-Wolfowitz runs test for randomness.
 
     Tests whether a binary sequence is randomly ordered by counting the

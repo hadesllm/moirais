@@ -11,7 +11,7 @@ _QUOTE = "Errors using inadequate data are much less than those using no data at
 
 
 def log_magnitude_spectrum(x, **kwargs) -> DescriptiveResult:
-    """Compute the log magnitude spectrum in decibels.
+    r"""Compute the log magnitude spectrum in decibels.
 
     .. math::
 

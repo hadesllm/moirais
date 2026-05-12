@@ -14,7 +14,7 @@ def compute_dic(
     log_lik_at_samples: Union[list, np.ndarray],
     log_lik_at_mean: float,
 ) -> dict[str, Any]:
-    """
+    r"""
     Compute the Deviance Information Criterion (DIC).
 
     DIC = D_bar + p_D, where D_bar is the posterior mean deviance

@@ -10,7 +10,8 @@ __all__ = ["bayesian_lasso_full"]
 
 
 def bayesian_lasso_full(x, y, n_iter: int = 200, burn: int = 50,
-                        lam: float | None = None, seed: int = 0):
+                        lam: float | None = None, seed: int = 0,
+                        deterministic_seed: int | None = None):
     """Bayesian LASSO with a double-exponential (Laplace) prior on beta.
 
     Model::
@@ -31,6 +32,12 @@ def bayesian_lasso_full(x, y, n_iter: int = 200, burn: int = 50,
     n_iter, burn : int
     lam : float, optional. If None, updated via empirical-Bayes Park-Casella step.
     seed : int
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged: the user-supplied ``seed`` drives a fresh
+        :class:`numpy.random.Generator`.
 
     Returns
     -------
@@ -42,7 +49,11 @@ def bayesian_lasso_full(x, y, n_iter: int = 200, burn: int = 50,
         681-686.
     Montesinos Lopez et al. (2022), Ch. 4.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("blasf", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     X = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float).ravel()
     if X.ndim == 1:

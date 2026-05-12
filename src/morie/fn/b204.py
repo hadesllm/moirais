@@ -1,4 +1,4 @@
-"""Maximum-likelihood estimate of a trigram language-model probability using n-gram counts from a corpus.."""
+r"""Maximum-likelihood estimate of a trigram language-model probability using n-gram counts from a corpus.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch2_trigram_count"]
 
 
 def burkov_lm_ch2_trigram_count(t_i, t_im1, t_im2):
-    """
+    r"""
     Maximum-likelihood estimate of a trigram language-model probability using n-gram counts from a corpus.
 
     Formula: \Pr(t_i \mid t_{i-2}, t_{i-1}) = \frac{C(t_{i-2}, t_{i-1}, t_i)}{C(t_{i-2}, t_{i-1})}

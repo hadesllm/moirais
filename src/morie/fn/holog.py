@@ -10,7 +10,7 @@ def holographic_entropy(
     area: float = 1.0,
     G_N: float = 1.0,
 ) -> DescriptiveResult:
-    """Compute holographic entanglement entropy via the Ryu-Takayanagi formula.
+    r"""Compute holographic entanglement entropy via the Ryu-Takayanagi formula.
 
     .. math::
 

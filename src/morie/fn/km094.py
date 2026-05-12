@@ -1,4 +1,4 @@
-"""Debias regularizer.."""
+r"""Debias regularizer.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch6_debias_regularizer"]
 
 
 def kamath_ch6_debias_regularizer(A, E, lam):
-    """
+    r"""
     Debias regularizer.
 
     Formula: R = \lambda \sum_{(a_i,a_j)\in A} \|E(a_i) - E(a_j)\|^2
@@ -29,7 +29,7 @@ def kamath_ch6_debias_regularizer(A, E, lam):
     References
     ----------
     Kamath et al (2024), Ch 6, Eq 6.18, p. 242
-    """
+    r"""
     A = np.atleast_1d(np.asarray(A, dtype=float))
     n = len(A)
     result = float(np.mean(A))

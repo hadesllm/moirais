@@ -13,7 +13,7 @@ def renrg(
     gauge_group: str = "SU3",
     loop_order: int = 1,
 ) -> dict:
-    """
+    r"""
     Compute the renormalization group beta function for QCD.
 
     One-loop beta function:

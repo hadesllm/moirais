@@ -1,4 +1,4 @@
-"""Simvlm mlm.."""
+r"""Simvlm mlm.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["kamath_ch9_simvlm_mlm"]
 
 
 def kamath_ch9_simvlm_mlm(theta, x, v, x_m):
-    """
+    r"""
     Simvlm mlm.
 
     Formula: L_{MLM}(\theta) = -E_{(x,v)} \log P_{\theta}(x_m|x_{\neg m},v)
@@ -31,7 +31,7 @@ def kamath_ch9_simvlm_mlm(theta, x, v, x_m):
     References
     ----------
     Kamath et al (2024), Ch 9, Eq 9.10, p. 387
-    """
+    r"""
     x = np.atleast_1d(np.asarray(x, dtype=float))
     n = len(x)
     result = float(np.mean(x))

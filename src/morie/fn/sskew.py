@@ -10,7 +10,7 @@ _QUOTE = "Luminous beings are we, not this crude matter."
 
 
 def skewness_coeff(x, **kwargs) -> DescriptiveResult:
-    """Compute the skewness coefficient of signal *x*.
+    r"""Compute the skewness coefficient of signal *x*.
 
     .. math::
 

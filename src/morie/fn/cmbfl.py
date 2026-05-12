@@ -11,7 +11,7 @@ _QUOTE = "Luminous beings are we, not this crude matter."
 
 
 def comb_filter(x, delay: int, alpha: float = 0.5) -> SignalResult:
-    """Apply a feedforward comb filter.
+    r"""Apply a feedforward comb filter.
 
     .. math::
 

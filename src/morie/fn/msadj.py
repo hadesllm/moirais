@@ -9,7 +9,7 @@ _QUOTE = "The ability to speak does not make you intelligent."
 
 
 def misadjustment(mu: float, order: int, Px: float, **kwargs) -> DescriptiveResult:
-    """Compute the LMS misadjustment ratio.
+    r"""Compute the LMS misadjustment ratio.
 
     .. math::
 

@@ -9,8 +9,9 @@ from ._richresult import RichResult
 __all__ = ["he_initialization"]
 
 
-def he_initialization(fan_in, fan_out=None, seed: int = 42, mode: str = "normal"):
-    """He/Kaiming weight initialization.
+def he_initialization(fan_in, fan_out=None, seed: int = 42, mode: str = "normal",
+                      deterministic_seed: "int | None" = None):
+    r"""He/Kaiming weight initialization.
 
     For ReLU activations the recommended scheme is:
 
@@ -32,6 +33,10 @@ def he_initialization(fan_in, fan_out=None, seed: int = 42, mode: str = "normal"
         RNG seed for reproducibility.
     mode : str
         ``'normal'`` (default) or ``'uniform'``.
+    deterministic_seed : int or None, optional
+        If given, the SHA-keyed RNG from
+        :func:`morie._det_rng.from_seed` is used so Py<->R streams agree
+        for the same ``(name, seed)`` pair. Overrides ``seed`` when set.
 
     Returns
     -------
@@ -49,7 +54,11 @@ def he_initialization(fan_in, fan_out=None, seed: int = 42, mode: str = "normal"
     if fan_in <= 0:
         raise ValueError(f"fan_in must be > 0, got {fan_in}.")
     shape = (fan_in,) if fan_out is None else (int(fan_out), fan_in)
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("heinz", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     if mode == "normal":
         std = np.sqrt(2.0 / fan_in)
         W = rng.normal(0.0, std, size=shape)

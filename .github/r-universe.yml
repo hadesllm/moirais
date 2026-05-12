@@ -1,0 +1,29 @@
+# r-universe build configuration for hadesllm/morie
+#
+# r-universe (https://r-universe.dev) is the CI/CD service that builds
+# R packages from GitHub source and publishes binary builds for Linux,
+# macOS, and Windows.  This file tells r-universe where the package
+# source lives (the morie monorepo has the R package at
+# `r-package/morie/`, not the repo root), and which dependencies it
+# needs.
+#
+# Once `.github/r-universe.yml` is in place, hadesllm.r-universe.dev
+# will pick up new commits to main automatically (typically within an
+# hour) and rebuild + republish binaries.
+#
+# Reference: https://docs.r-universe.dev/
+
+packages:
+  - package: morie
+    subdir: r-package/morie
+    # Suggests-only optional packages: r-universe should NOT fail the
+    # build if these aren't resolvable on the build machine.  Runtime
+    # `requireNamespace()` guards in function bodies handle absence.
+    config:
+      _R_CHECK_FORCE_SUGGESTS_: false
+
+# Note: the deprecated `moirais` R-package alias at
+# `r-package/moirais/` is intentionally NOT listed for r-universe
+# builds.  Users who want it should install via CRAN (where the
+# moirais alias is also published as a deprecation shim) or directly
+# from GitHub via `remotes::install_github("hadesllm/morie", subdir = "r-package/moirais")`.

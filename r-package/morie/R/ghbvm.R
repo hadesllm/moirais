@@ -6,11 +6,20 @@
 #' @param theta0 Optional null value for the mean functional.
 #' @param B Integer number of bootstrap draws (default 500).
 #' @param seed Integer RNG seed (default 0).
+#' @param deterministic_seed Optional integer; if supplied, RNG state is
+#'   derived via [morie_det_rng()] keyed on ("ghbvm", deterministic_seed)
+#'   so Py<->R streams agree on the canonical fixture.  When `NULL`
+#'   (default) behaviour is unchanged.
 #' @return Named list with estimate, se, theta_hat, z_ks_stat, z_ks_pvalue,
 #'   wald, wald_pvalue, n, B, method.
 #' @export
-ghosal_bernstein_von_mises <- function(x, theta0 = NULL, B = 500, seed = 0) {
-  set.seed(seed)
+ghosal_bernstein_von_mises <- function(x, theta0 = NULL, B = 500, seed = 0,
+                                         deterministic_seed = NULL) {
+  if (!is.null(deterministic_seed)) {
+    morie::morie_det_rng("ghbvm", deterministic_seed)
+  } else {
+    set.seed(seed)
+  }
   x <- as.numeric(x); n <- length(x)
   if (n < 2) return(list(estimate = NA_real_, se = NA_real_, n = n,
                           method = "BvM (n<2)"))

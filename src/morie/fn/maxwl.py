@@ -11,7 +11,7 @@ def maxwl(
     B: np.ndarray,
     c: float = 299792458.0,
 ) -> dict:
-    """
+    r"""
     Construct the electromagnetic field tensor (Faraday tensor) and
     its dual, and compute Lorentz invariants.
 

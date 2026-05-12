@@ -10,7 +10,7 @@ _QUOTE = "I've got a bad feeling about this."
 
 
 def zero_crossing_rate(x, fs=1.0, **kwargs) -> DescriptiveResult:
-    """Compute the zero crossing rate of signal *x*.
+    r"""Compute the zero crossing rate of signal *x*.
 
     .. math::
 

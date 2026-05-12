@@ -1,4 +1,4 @@
-"""Logistic regression model applying the sigmoid to a linear combination of inputs for binary classification.."""
+r"""Logistic regression model applying the sigmoid to a linear combination of inputs for binary classification.."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult
@@ -7,7 +7,7 @@ __all__ = ["burkov_lm_ch1_logistic_regression"]
 
 
 def burkov_lm_ch1_logistic_regression(w, x, b):
-    """
+    r"""
     Logistic regression model applying the sigmoid to a linear combination of inputs for binary classification.
 
     Formula: y = \sigma(\mathbf{w} \cdot \mathbf{x} + b)

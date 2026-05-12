@@ -15,7 +15,7 @@ def spmxd(
     max_iter: int = 50,
     tol: float = 1e-6,
 ) -> dict:
-    """
+    r"""
     Fit a spatial linear mixed model with spatially correlated random effects.
 
     .. math::

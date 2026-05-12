@@ -2,7 +2,7 @@
 % Please edit documentation in R/gblpf.R
 \name{gblup_full}
 \alias{gblup_full}
-\title{GBLUP — full mixed-model implementation}
+\title{GBLUP -- full mixed-model implementation}
 \usage{
 gblup_full(x, y, markers, lambda_gblup = NULL)
 }
@@ -11,7 +11,7 @@ gblup_full(x, y, markers, lambda_gblup = NULL)
 
 \item{y}{Numeric response.}
 
-\item{markers}{Genotype matrix (n × m).}
+\item{markers}{Genotype matrix (n x m).}
 
 \item{lambda_gblup}{Optional ratio sigma_e^2 / sigma_g^2 (default h^2=0.5).}
 }

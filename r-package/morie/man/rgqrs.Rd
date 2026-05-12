@@ -3,7 +3,7 @@
 \name{rgqrs}
 \alias{rgqrs}
 \alias{rangayyan_qrs_detect}
-\title{Pan-Tompkins QRS detector — Rangayyan Ch 6}
+\title{Pan-Tompkins QRS detector -- Rangayyan Ch 6}
 \usage{
 rgqrs(x, fs = 360)
 
@@ -12,15 +12,15 @@ rangayyan_qrs_detect(x, fs = 360)
 \arguments{
 \item{x}{Numeric ECG vector.}
 
-\item{fs}{Sampling rate (Hz, default 360 — MIT-BIH).}
+\item{fs}{Sampling rate (Hz, default 360 -- MIT-BIH).}
 }
 \value{
 Named list \code{r_peaks} (sample indices), \code{rr_intervals_ms},
 \code{heart_rate_bpm}, \code{integrated}, \code{fs}.
 }
 \description{
-Pan & Tompkins (1985) QRS detector: bandpass 5–15 Hz → differentiate →
-square → 150-ms moving-window integration → adaptive threshold (30 \%
+Pan & Tompkins (1985) QRS detector: bandpass 5-15 Hz -> differentiate ->
+square -> 150-ms moving-window integration -> adaptive threshold (30 \%
 of integrated max, 200-ms refractory).
 }
 \examples{

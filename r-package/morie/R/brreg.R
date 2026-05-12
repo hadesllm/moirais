@@ -4,7 +4,7 @@
 #'
 #' beta_hat = solve(X'X + lambda*I) %*% X'y
 #'
-#' @param x (n × p) marker matrix.
+#' @param x (n x p) marker matrix.
 #' @param y Numeric response.
 #' @param lam Optional ridge parameter; default Endelman rrBLUP-style.
 #' @return list(estimate, beta, intercept, se, beta_se, lam, n, p, method).

@@ -3,7 +3,7 @@
 \name{rgarb}
 \alias{rgarb}
 \alias{rangayyan_ar_burg}
-\title{AR(p) Burg estimator — Rangayyan Ch 4}
+\title{AR(p) Burg estimator -- Rangayyan Ch 4}
 \usage{
 rgarb(x, order = 10L)
 

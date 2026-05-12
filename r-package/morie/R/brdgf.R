@@ -4,7 +4,7 @@
 #'
 #' Per-marker variance with scaled inverse chi-squared prior.
 #'
-#' @param x (n × p) marker matrix.
+#' @param x (n x p) marker matrix.
 #' @param y Numeric response.
 #' @param n_iter Iterations.
 #' @param burn Burn-in.

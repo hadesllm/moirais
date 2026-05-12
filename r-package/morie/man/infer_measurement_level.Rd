@@ -19,9 +19,9 @@ classifies a vector as one of \code{"binary"}, \code{"nominal"}, \code{"ordinal"
 \code{"interval"}, or \code{"ratio"} based on Stevens' (1946) typology.
 }
 \details{
-Rules: logical or 2-level factor/character → \code{"binary"}; ordered factor →
-\code{"ordinal"}; unordered factor or character → \code{"nominal"}; integer/numeric
-with non-negative range → \code{"ratio"}; otherwise → \code{"interval"}.
+Rules: logical or 2-level factor/character -> \code{"binary"}; ordered factor ->
+\code{"ordinal"}; unordered factor or character -> \code{"nominal"}; integer/numeric
+with non-negative range -> \code{"ratio"}; otherwise -> \code{"interval"}.
 }
 \examples{
 infer_measurement_level(c(0, 1, 1, 0))               # "binary"

@@ -8,7 +8,7 @@
 #'
 #' @param x Fixed-effect design (optional).
 #' @param y Numeric response.
-#' @param markers (n × m) genotype matrix coded 0/1/2.
+#' @param markers (n x m) genotype matrix coded 0/1/2.
 #' @return list(estimate, sigma_g2, sigma_e2, h2, sigma_m2_vanraden,
 #'   sigma_m2_naive, sum_2pq, p_freq, n, p, method).
 #' @references VanRaden (2008); Montesinos Lopez Ch 3.

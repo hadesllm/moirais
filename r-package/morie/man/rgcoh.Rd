@@ -3,7 +3,7 @@
 \name{rgcoh}
 \alias{rgcoh}
 \alias{rangayyan_coherence}
-\title{Magnitude-squared coherence — Rangayyan Ch 4}
+\title{Magnitude-squared coherence -- Rangayyan Ch 4}
 \usage{
 rgcoh(x, y, fs = 1, nperseg = NULL)
 

@@ -3,7 +3,7 @@
 \name{rgzcr}
 \alias{rgzcr}
 \alias{rangayyan_zero_crossing}
-\title{Zero-crossing rate — Rangayyan Ch 5}
+\title{Zero-crossing rate -- Rangayyan Ch 5}
 \usage{
 rgzcr(x, fs = 1)
 

@@ -1,15 +1,15 @@
-#' Wavelet denoising (universal threshold) — Rangayyan Ch 10
+#' Wavelet denoising (universal threshold) -- Rangayyan Ch 10
 #'
 #' Donoho-Johnstone soft/hard thresholding via the `wavelets` package
 #' (Daubechies DWT). Noise scale estimated from the finest-scale detail
-#' as σ = MAD / 0.6745; universal threshold T = σ sqrt(2 ln N).
+#' as sigma = MAD / 0.6745; universal threshold T = sigma sqrt(2 ln N).
 #'
 #' Falls back to a 5-tap moving-average smoother (with a warning) if
-#' `wavelets` is not installed — keeps R↔Py parity to ~5 % on smooth
+#' `wavelets` is not installed -- keeps R<->Py parity to ~5 % on smooth
 #' signals.
 #'
 #' @param x Numeric vector.
-#' @param wavelet Wavelet filter name (default `"d8"` ≈ db4).
+#' @param wavelet Wavelet filter name (default `"d8"` ~~ db4).
 #' @param level Decomposition depth (default `min(4, max_level)`).
 #' @param mode `"soft"` or `"hard"`.
 #' @return Named list `signal`, `threshold`, `sigma`, `wavelet`,

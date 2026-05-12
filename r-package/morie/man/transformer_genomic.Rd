@@ -19,7 +19,7 @@ transformer_genomic(
 
 \item{y}{Numeric response.}
 
-\item{markers}{(n × L) marker sequence.}
+\item{markers}{(n x L) marker sequence.}
 
 \item{d_model}{Model dimension.}
 

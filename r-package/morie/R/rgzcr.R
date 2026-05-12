@@ -1,4 +1,4 @@
-#' Zero-crossing rate — Rangayyan Ch 5
+#' Zero-crossing rate -- Rangayyan Ch 5
 #'
 #' \deqn{\mathrm{ZCR} = (N-1)^{-1} \sum_{n=1}^{N-1}
 #'        \tfrac{1}{2} |\mathrm{sgn}(x[n]) - \mathrm{sgn}(x[n-1])|}

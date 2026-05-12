@@ -1,4 +1,4 @@
-#' Welch power spectral density — Rangayyan Ch 4
+#' Welch power spectral density -- Rangayyan Ch 4
 #'
 #' Welch-averaged one-sided PSD via [stats::spec.pgram()] on overlapping
 #' detrended segments. Same algorithm as SciPy's `welch` so band powers

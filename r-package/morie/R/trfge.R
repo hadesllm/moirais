@@ -6,7 +6,7 @@
 #'
 #' @param x Optional fixed-effect features.
 #' @param y Numeric response.
-#' @param markers (n × L) marker sequence.
+#' @param markers (n x L) marker sequence.
 #' @param d_model Model dimension.
 #' @param lam Ridge regulariser for the linear head.
 #' @param seed Seed.

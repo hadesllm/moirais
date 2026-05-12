@@ -1,4 +1,4 @@
-#' Largest Lyapunov exponent (Rosenstein) — Rangayyan Ch 7
+#' Largest Lyapunov exponent (Rosenstein) -- Rangayyan Ch 7
 #'
 #' Rosenstein et al. (1993) algorithm via delay embedding and
 #' nearest-neighbour divergence tracking.

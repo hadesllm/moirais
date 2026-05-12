@@ -3,7 +3,7 @@
 \name{rghrv}
 \alias{rghrv}
 \alias{rangayyan_hrv}
-\title{Heart rate variability (time-domain) — Rangayyan Ch 6}
+\title{Heart rate variability (time-domain) -- Rangayyan Ch 6}
 \usage{
 rghrv(rr_ms)
 
@@ -23,8 +23,8 @@ sequence of consecutive NN (RR) intervals.
 \itemize{
 \item \code{meanNN}           mean NN (ms)
 \item \code{SDNN}             SD of NN (ms)
-\item \code{RMSSD}            sqrt mean of (ΔNN)^2 (ms)
-\item \code{pNN50}            \% of |ΔNN| > 50 ms
+\item \code{RMSSD}            sqrt mean of (DeltaNN)^2 (ms)
+\item \code{pNN50}            \% of |DeltaNN| > 50 ms
 \item \code{heart_rate_bpm}   60000 / meanNN
 }
 }

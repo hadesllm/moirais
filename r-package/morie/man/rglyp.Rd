@@ -3,7 +3,7 @@
 \name{rglyp}
 \alias{rglyp}
 \alias{rangayyan_lyapunov}
-\title{Largest Lyapunov exponent (Rosenstein) — Rangayyan Ch 7}
+\title{Largest Lyapunov exponent (Rosenstein) -- Rangayyan Ch 7}
 \usage{
 rglyp(x, m = 3L, tau = 1L, max_t = NULL, theiler = 10L)
 

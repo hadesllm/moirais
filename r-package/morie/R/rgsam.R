@@ -1,4 +1,4 @@
-#' Sample entropy — Rangayyan Ch 7
+#' Sample entropy -- Rangayyan Ch 7
 #'
 #' Richman & Moorman (2000) sample entropy.
 #'

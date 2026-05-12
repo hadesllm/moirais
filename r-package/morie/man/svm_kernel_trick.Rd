@@ -2,7 +2,7 @@
 % Please edit documentation in R/svmkr.R
 \name{svm_kernel_trick}
 \alias{svm_kernel_trick}
-\title{Kernel SVM (RBF / poly / sigmoid) — R parity}
+\title{Kernel SVM (RBF / poly / sigmoid) -- R parity}
 \usage{
 svm_kernel_trick(
   x,

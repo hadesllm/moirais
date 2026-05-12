@@ -21,7 +21,7 @@ deep_learning_genomic(
 
 \item{y}{Numeric response.}
 
-\item{markers}{Genotype matrix (n × m).}
+\item{markers}{Genotype matrix (n x m).}
 
 \item{hidden}{Hidden units (default 16).}
 

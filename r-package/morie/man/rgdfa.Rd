@@ -3,7 +3,7 @@
 \name{rgdfa}
 \alias{rgdfa}
 \alias{rangayyan_dfa}
-\title{Detrended fluctuation analysis — Rangayyan Ch 7}
+\title{Detrended fluctuation analysis -- Rangayyan Ch 7}
 \usage{
 rgdfa(x, scales = NULL, order = 1L)
 
@@ -20,7 +20,7 @@ rangayyan_dfa(x, scales = NULL, order = 1L)
 Named list \code{alpha}, \code{scales}, \code{F}, \code{log_scales}, \code{log_F}.
 }
 \description{
-DFA-α scaling exponent (Peng et al. 1994).
+DFA-alpha scaling exponent (Peng et al. 1994).
 }
 \examples{
 set.seed(0); rgdfa(rnorm(500))$alpha

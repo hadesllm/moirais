@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
-#' Linear SVM (primal hinge loss) — R parity
+#' Linear SVM (primal hinge loss) -- R parity
 #'
 #' Wraps \code{e1071::svm} with a linear kernel.
 #'

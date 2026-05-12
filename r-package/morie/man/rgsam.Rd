@@ -3,7 +3,7 @@
 \name{rgsam}
 \alias{rgsam}
 \alias{rangayyan_sample_entropy}
-\title{Sample entropy — Rangayyan Ch 7}
+\title{Sample entropy -- Rangayyan Ch 7}
 \usage{
 rgsam(x, m = 2L, r = NULL)
 

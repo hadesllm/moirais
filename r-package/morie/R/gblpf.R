@@ -1,12 +1,12 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
-#' GBLUP — full mixed-model implementation
+#' GBLUP -- full mixed-model implementation
 #'
 #' Solves Henderson's MME with VanRaden G.
 #'
 #' @param x Fixed-effect design (vector or matrix).
 #' @param y Numeric response.
-#' @param markers Genotype matrix (n × m).
+#' @param markers Genotype matrix (n x m).
 #' @param lambda_gblup Optional ratio sigma_e^2 / sigma_g^2 (default h^2=0.5).
 #' @return Named list (estimate, g_hat, beta, se, lambda_gblup, n, method).
 #' @references Montesinos Lopez Ch 3.

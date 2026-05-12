@@ -2,7 +2,7 @@
 
 #' K-fold cross-validation for genomic-prediction accuracy
 #'
-#' @param x (n × p) predictor matrix.
+#' @param x (n x p) predictor matrix.
 #' @param y Numeric response.
 #' @param K Number of folds.
 #' @param lam Ridge penalty within each fold.

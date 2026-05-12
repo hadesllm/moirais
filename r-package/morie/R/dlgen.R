@@ -4,7 +4,7 @@
 #'
 #' @param x Fixed-effect design (optional).
 #' @param y Numeric response.
-#' @param markers Genotype matrix (n × m).
+#' @param markers Genotype matrix (n x m).
 #' @param hidden Hidden units (default 16).
 #' @param n_epochs Training epochs.
 #' @param lr Learning rate.

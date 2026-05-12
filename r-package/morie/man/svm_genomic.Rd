@@ -11,7 +11,7 @@ svm_genomic(x, y, markers, C = 1, epsilon = 0.1, gamma = "scale")
 
 \item{y}{Numeric response.}
 
-\item{markers}{(n × m) genotype matrix.}
+\item{markers}{(n x m) genotype matrix.}
 
 \item{C}{Cost (default 1).}
 

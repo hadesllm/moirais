@@ -21,7 +21,7 @@ rnn_genomic(
 
 \item{y}{Numeric response.}
 
-\item{markers}{(n × L) marker sequence.}
+\item{markers}{(n x L) marker sequence.}
 
 \item{hidden, n_epochs, lr, l2, seed}{Hyperparameters.}
 

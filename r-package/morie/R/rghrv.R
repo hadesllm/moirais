@@ -1,4 +1,4 @@
-#' Heart rate variability (time-domain) — Rangayyan Ch 6
+#' Heart rate variability (time-domain) -- Rangayyan Ch 6
 #'
 #' Task-Force-of-the-ESC time-domain HRV indices computed from a
 #' sequence of consecutive NN (RR) intervals.
@@ -6,8 +6,8 @@
 #' \itemize{
 #'   \item `meanNN`           mean NN (ms)
 #'   \item `SDNN`             SD of NN (ms)
-#'   \item `RMSSD`            sqrt mean of (ΔNN)^2 (ms)
-#'   \item `pNN50`            % of |ΔNN| > 50 ms
+#'   \item `RMSSD`            sqrt mean of (DeltaNN)^2 (ms)
+#'   \item `pNN50`            % of |DeltaNN| > 50 ms
 #'   \item `heart_rate_bpm`   60000 / meanNN
 #' }
 #'

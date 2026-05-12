@@ -3,10 +3,10 @@
 #' Multi-trait GBLUP via vec-stacked mixed-model equations
 #'
 #' @param x Fixed-effect design (vector or matrix).
-#' @param y Multi-trait response (n × t).
-#' @param markers Genotype matrix (n × m).
-#' @param Sigma_g Optional t × t genetic covariance.
-#' @param Sigma_e Optional t × t residual covariance.
+#' @param y Multi-trait response (n x t).
+#' @param markers Genotype matrix (n x m).
+#' @param Sigma_g Optional t x t genetic covariance.
+#' @param Sigma_e Optional t x t residual covariance.
 #' @return list(estimate, G_hat, B_hat, Sigma_g, Sigma_e, n, t, method).
 #' @references Montesinos Lopez Ch 10.
 #' @export

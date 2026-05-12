@@ -20,7 +20,7 @@ random_forest_genomic(
 
 \item{y}{Numeric response.}
 
-\item{markers}{Genotype matrix (n × m).}
+\item{markers}{Genotype matrix (n x m).}
 
 \item{n_trees}{Number of trees.}
 

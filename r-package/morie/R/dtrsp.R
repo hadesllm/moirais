@@ -7,7 +7,7 @@
 #'
 #' @param x Numeric predictor matrix.
 #' @param y Response (factor for classification).
-#' @param criterion "gini" or "entropy" — only "gini" is supported by
+#' @param criterion "gini" or "entropy" -- only "gini" is supported by
 #'   rpart for classification; "entropy" maps to information.
 #' @param max_depth Max tree depth.
 #' @param seed RNG seed.

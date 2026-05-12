@@ -11,7 +11,7 @@ marker_variance(x, y, markers)
 
 \item{y}{Numeric response.}
 
-\item{markers}{(n × m) genotype matrix coded 0/1/2.}
+\item{markers}{(n x m) genotype matrix coded 0/1/2.}
 }
 \value{
 list(estimate, sigma_g2, sigma_e2, h2, sigma_m2_vanraden,

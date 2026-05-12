@@ -1,11 +1,11 @@
-#' Pan-Tompkins QRS detector — Rangayyan Ch 6
+#' Pan-Tompkins QRS detector -- Rangayyan Ch 6
 #'
-#' Pan & Tompkins (1985) QRS detector: bandpass 5–15 Hz → differentiate →
-#' square → 150-ms moving-window integration → adaptive threshold (30 %
+#' Pan & Tompkins (1985) QRS detector: bandpass 5-15 Hz -> differentiate ->
+#' square -> 150-ms moving-window integration -> adaptive threshold (30 %
 #' of integrated max, 200-ms refractory).
 #'
 #' @param x Numeric ECG vector.
-#' @param fs Sampling rate (Hz, default 360 — MIT-BIH).
+#' @param fs Sampling rate (Hz, default 360 -- MIT-BIH).
 #' @return Named list `r_peaks` (sample indices), `rr_intervals_ms`,
 #'   `heart_rate_bpm`, `integrated`, `fs`.
 #' @references Pan & Tompkins (1985), IEEE TBME 32:230. Rangayyan Ch 6.
@@ -49,7 +49,7 @@ rgqrs <- function(x, fs = 360.0) {
       i <- i + 1L
     }
   }
-  # refine each to local |bp| max within ±50 ms
+  # refine each to local |bp| max within +/-50 ms
   half <- as.integer(round(0.05 * fs))
   refined <- vapply(peaks, function(p) {
     lo <- max(1L, p - half); hi <- min(N, p + half)

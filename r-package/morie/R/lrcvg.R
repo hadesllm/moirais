@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
-#' Learning curve — train / val MSE vs training-set size (R parity)
+#' Learning curve -- train / val MSE vs training-set size (R parity)
 #'
 #' Manual implementation of the sklearn learning_curve flow: shuffle,
 #' split into k folds, for each train-fraction fit on a prefix of the

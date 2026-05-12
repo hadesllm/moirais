@@ -1,4 +1,4 @@
-#' EMG sliding-window RMS envelope — Rangayyan Ch 8
+#' EMG sliding-window RMS envelope -- Rangayyan Ch 8
 #'
 #' \deqn{\mathrm{RMS}[n] = \sqrt{ (1/W) \sum_{k=n-W+1}^{n} x[k]^2 }}
 #'

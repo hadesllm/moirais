@@ -11,7 +11,7 @@
 #' Computes G = ZZ' / (2 sum p_j(1-p_j)) for method 1 (default), or the
 #' per-locus-scaled variant for method 2.
 #'
-#' @param markers Numeric (n × m) genotype matrix coded (coded 0/1/2).
+#' @param markers Numeric (n x m) genotype matrix coded (coded 0/1/2).
 #' @param method  1 or 2 (VanRaden 2008).
 #' @return Named list with estimate (G matrix), diag_mean, off_mean, p, n, m, method.
 #' @references VanRaden (2008) J Dairy Sci 91:4414. Montesinos Lopez Ch 3.

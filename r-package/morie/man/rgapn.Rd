@@ -3,7 +3,7 @@
 \name{rgapn}
 \alias{rgapn}
 \alias{rangayyan_approximate_entropy}
-\title{Approximate entropy — Rangayyan Ch 7}
+\title{Approximate entropy -- Rangayyan Ch 7}
 \usage{
 rgapn(x, m = 2L, r = NULL)
 

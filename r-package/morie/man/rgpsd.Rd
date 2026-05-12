@@ -3,7 +3,7 @@
 \name{rgpsd}
 \alias{rgpsd}
 \alias{rangayyan_psd}
-\title{Welch power spectral density — Rangayyan Ch 4}
+\title{Welch power spectral density -- Rangayyan Ch 4}
 \usage{
 rgpsd(x, fs = 1, nperseg = NULL, window = "hann")
 

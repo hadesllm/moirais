@@ -1,4 +1,4 @@
-#' Higuchi fractal dimension — Rangayyan Ch 7
+#' Higuchi fractal dimension -- Rangayyan Ch 7
 #'
 #' Higuchi (1988) fractal dimension via curve-length scaling.
 #'

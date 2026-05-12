@@ -3,7 +3,7 @@
 \name{rgadp}
 \alias{rgadp}
 \alias{rangayyan_adaptive_filter}
-\title{LMS adaptive noise canceller — Rangayyan Ch 11}
+\title{LMS adaptive noise canceller -- Rangayyan Ch 11}
 \usage{
 rgadp(x, reference, mu = 0.01, order = 16L)
 
@@ -14,7 +14,7 @@ rangayyan_adaptive_filter(x, reference, mu = 0.01, order = 16L)
 
 \item{reference}{Numeric vector of reference noise (same length).}
 
-\item{mu}{Step size (0 < μ).}
+\item{mu}{Step size (0 < mu).}
 
 \item{order}{Number of taps (default 16).}
 }

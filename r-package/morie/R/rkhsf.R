@@ -4,7 +4,7 @@
 #'
 #' @param x Fixed-effect design.
 #' @param y Numeric response.
-#' @param markers Genotype matrix (n × m).
+#' @param markers Genotype matrix (n x m).
 #' @param h Kernel bandwidth (default median ||m_i - m_j||^2).
 #' @param lam Ridge regulariser on alpha (default 1).
 #' @return list(estimate, alpha, beta, K, f_hat, se, h, n, method).

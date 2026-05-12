@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
-#' Kernel SVM (RBF / poly / sigmoid) — R parity
+#' Kernel SVM (RBF / poly / sigmoid) -- R parity
 #'
 #' Wraps \code{e1071::svm}.
 #'

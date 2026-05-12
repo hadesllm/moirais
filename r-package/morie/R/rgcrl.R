@@ -1,4 +1,4 @@
-#' Correlation dimension (Grassberger-Procaccia) — Rangayyan Ch 7
+#' Correlation dimension (Grassberger-Procaccia) -- Rangayyan Ch 7
 #'
 #' Slope of \eqn{\log C(r)} vs \eqn{\log r} in the middle scaling region.
 #'

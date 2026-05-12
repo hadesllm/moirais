@@ -7,7 +7,7 @@
 genomic_cross_validation(x, y, K = 5, lam = 1, seed = 0)
 }
 \arguments{
-\item{x}{(n × p) predictor matrix.}
+\item{x}{(n x p) predictor matrix.}
 
 \item{y}{Numeric response.}
 

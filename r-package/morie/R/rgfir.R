@@ -1,4 +1,4 @@
-#' FIR lowpass filter (windowed sinc) — Rangayyan Ch 3
+#' FIR lowpass filter (windowed sinc) -- Rangayyan Ch 3
 #'
 #' Designs a linear-phase windowed-sinc FIR lowpass filter and applies it
 #' zero-phase via [signal::filtfilt()] (or single-pass [signal::filter()]

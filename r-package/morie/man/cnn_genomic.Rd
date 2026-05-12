@@ -23,7 +23,7 @@ cnn_genomic(
 
 \item{y}{Numeric response.}
 
-\item{markers}{(n × m) genotype matrix.}
+\item{markers}{(n x m) genotype matrix.}
 
 \item{n_filters, kernel, hidden, n_epochs, lr, l2, seed}{Hyperparameters.}
 

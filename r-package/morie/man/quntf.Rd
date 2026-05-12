@@ -19,7 +19,7 @@ list: taus, quantiles, se, bandwidth, n, method.
 }
 \description{
 Q(tau) = inf over x of F_n(x) at least tau; asymptotic SE
-se(Q(tau)) ≈ sqrt(tau(1-tau) / (n f(Q(tau))^2)),
+se(Q(tau)) ~~ sqrt(tau(1-tau) / (n f(Q(tau))^2)),
 with f estimated by a Gaussian kernel (Silverman's rule bandwidth).
 }
 \keyword{internal}

@@ -1,4 +1,4 @@
-#' Short-time Fourier transform — Rangayyan Ch 4
+#' Short-time Fourier transform -- Rangayyan Ch 4
 #'
 #' Sliding-window FFT spectrogram (one-sided, PSD-scaled). Mirrors
 #' `scipy.signal.spectrogram` with `scaling="density"`.

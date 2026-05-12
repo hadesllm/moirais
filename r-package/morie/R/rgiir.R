@@ -1,4 +1,4 @@
-#' Butterworth IIR filter — Rangayyan Ch 3
+#' Butterworth IIR filter -- Rangayyan Ch 3
 #'
 #' Zero-phase Butterworth IIR filter via the `signal` package (`butter` +
 #' `filtfilt`). Same transfer function as SciPy's `butter` so the Python

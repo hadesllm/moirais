@@ -3,7 +3,7 @@
 \name{rgemg}
 \alias{rgemg}
 \alias{rangayyan_emg_rms}
-\title{EMG sliding-window RMS envelope — Rangayyan Ch 8}
+\title{EMG sliding-window RMS envelope -- Rangayyan Ch 8}
 \usage{
 rgemg(x, window = 64L, fs = 1)
 

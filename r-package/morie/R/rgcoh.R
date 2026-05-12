@@ -1,4 +1,4 @@
-#' Magnitude-squared coherence — Rangayyan Ch 4
+#' Magnitude-squared coherence -- Rangayyan Ch 4
 #'
 #' Welch-averaged magnitude-squared coherence::
 #'

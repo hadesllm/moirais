@@ -1,4 +1,4 @@
-#' AR(p) Burg estimator — Rangayyan Ch 4
+#' AR(p) Burg estimator -- Rangayyan Ch 4
 #'
 #' Burg's recursion for autoregressive coefficients and innovation
 #' variance. Always yields a stable (minimum-phase) all-pole model.

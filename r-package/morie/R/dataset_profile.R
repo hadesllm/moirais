@@ -4,9 +4,9 @@
 #' classifies a vector as one of `"binary"`, `"nominal"`, `"ordinal"`,
 #' `"interval"`, or `"ratio"` based on Stevens' (1946) typology.
 #'
-#' Rules: logical or 2-level factor/character → `"binary"`; ordered factor →
-#' `"ordinal"`; unordered factor or character → `"nominal"`; integer/numeric
-#' with non-negative range → `"ratio"`; otherwise → `"interval"`.
+#' Rules: logical or 2-level factor/character -> `"binary"`; ordered factor ->
+#' `"ordinal"`; unordered factor or character -> `"nominal"`; integer/numeric
+#' with non-negative range -> `"ratio"`; otherwise -> `"interval"`.
 #'
 #' @param x A vector (any atomic type or factor).
 #'

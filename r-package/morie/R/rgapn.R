@@ -1,4 +1,4 @@
-#' Approximate entropy — Rangayyan Ch 7
+#' Approximate entropy -- Rangayyan Ch 7
 #'
 #' Pincus (1991) approximate entropy.
 #'

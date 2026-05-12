@@ -9,13 +9,13 @@ multi_trait_gblup(x, y, markers, Sigma_g = NULL, Sigma_e = NULL)
 \arguments{
 \item{x}{Fixed-effect design (vector or matrix).}
 
-\item{y}{Multi-trait response (n × t).}
+\item{y}{Multi-trait response (n x t).}
 
-\item{markers}{Genotype matrix (n × m).}
+\item{markers}{Genotype matrix (n x m).}
 
-\item{Sigma_g}{Optional t × t genetic covariance.}
+\item{Sigma_g}{Optional t x t genetic covariance.}
 
-\item{Sigma_e}{Optional t × t residual covariance.}
+\item{Sigma_e}{Optional t x t residual covariance.}
 }
 \value{
 list(estimate, G_hat, B_hat, Sigma_g, Sigma_e, n, t, method).

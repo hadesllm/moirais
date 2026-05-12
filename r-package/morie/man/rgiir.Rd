@@ -3,7 +3,7 @@
 \name{rgiir}
 \alias{rgiir}
 \alias{rangayyan_iir_filter}
-\title{Butterworth IIR filter — Rangayyan Ch 3}
+\title{Butterworth IIR filter -- Rangayyan Ch 3}
 \usage{
 rgiir(x, cutoff, order = 4L, fs = 1, btype = c("low", "high", "pass", "stop"))
 

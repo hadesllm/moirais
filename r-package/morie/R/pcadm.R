@@ -20,7 +20,7 @@ pca_dimension_reduction <- function(x, n_components = NULL, seed = 0L) {
   sv <- pc$sdev[seq_len(k)]
   ev <- sv^2
   ratio <- ev / sum(pc$sdev^2)
-  # In sklearn convention components_ is (k, p) — rows = directions; prcomp rotation is (p, k)
+  # In sklearn convention components_ is (k, p) -- rows = directions; prcomp rotation is (p, k)
   components <- t(pc$rotation[, seq_len(k), drop = FALSE])
   scores <- pc$x[, seq_len(k), drop = FALSE]
   list(

@@ -1,11 +1,11 @@
-#' LMS adaptive noise canceller — Rangayyan Ch 11
+#' LMS adaptive noise canceller -- Rangayyan Ch 11
 #'
 #' Widrow-Hoff least-mean-squares adaptive filter. Returns the cleaned
 #' residual `signal = x - LMS(reference)` and the noise estimate.
 #'
 #' @param x Numeric vector (target + correlated noise).
 #' @param reference Numeric vector of reference noise (same length).
-#' @param mu Step size (0 < μ).
+#' @param mu Step size (0 < mu).
 #' @param order Number of taps (default 16).
 #' @return Named list `signal`, `noise_estimate`, `weights`, `mu`, `order`.
 #' @references Widrow & Stearns (1985); Rangayyan Ch 11.

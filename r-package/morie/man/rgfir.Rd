@@ -3,7 +3,7 @@
 \name{rgfir}
 \alias{rgfir}
 \alias{rangayyan_fir_filter}
-\title{FIR lowpass filter (windowed sinc) — Rangayyan Ch 3}
+\title{FIR lowpass filter (windowed sinc) -- Rangayyan Ch 3}
 \usage{
 rgfir(x, cutoff, order = 51L, fs = 1, window = "hamming")
 

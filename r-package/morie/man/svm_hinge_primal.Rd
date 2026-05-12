@@ -2,7 +2,7 @@
 % Please edit documentation in R/svmhg.R
 \name{svm_hinge_primal}
 \alias{svm_hinge_primal}
-\title{Linear SVM (primal hinge loss) — R parity}
+\title{Linear SVM (primal hinge loss) -- R parity}
 \usage{
 svm_hinge_primal(x, y, C = 1, seed = 0L)
 }

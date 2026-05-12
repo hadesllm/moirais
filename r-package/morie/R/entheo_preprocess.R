@@ -28,7 +28,7 @@ preprocess_eeg <- function(record,
   for (key in c("data_dmt", "data_pcb")) {
     arr <- eeg[[key]]
     if (is.null(arr) || !is.matrix(arr)) {
-      warnings_vec <- c(warnings_vec, sprintf("eeg.%s absent — skipping", key))
+      warnings_vec <- c(warnings_vec, sprintf("eeg.%s absent -- skipping", key))
       next
     }
     n_chan <- max(n_chan, nrow(arr))
@@ -49,7 +49,7 @@ preprocess_eeg <- function(record,
        n_channels = n_chan,
        warnings = warnings_vec,
        interpretation = sprintf(
-         "EEG bandpass-filtered (%g–%g Hz) and notch-filtered at %g Hz; %d sample(s) reconstructed by toy ASR.",
+         "EEG bandpass-filtered (%g-%g Hz) and notch-filtered at %g Hz; %d sample(s) reconstructed by toy ASR.",
          bandpass[1], bandpass[2], notch, n_bad_total))
 }
 
@@ -76,7 +76,7 @@ preprocess_fmri <- function(record,
   for (key in c("data_dmt", "data_pcb")) {
     arr <- fmri[[key]]
     if (is.null(arr) || !is.matrix(arr)) {
-      warnings_vec <- c(warnings_vec, sprintf("fmri.%s absent — skipping", key))
+      warnings_vec <- c(warnings_vec, sprintf("fmri.%s absent -- skipping", key))
       next
     }
     n_parcels <- max(n_parcels, nrow(arr))
@@ -89,7 +89,7 @@ preprocess_fmri <- function(record,
       if (any(bad)) arr[, bad] <- 0
     } else {
       warnings_vec <- c(warnings_vec,
-                        sprintf("fmri.motion_fd_mm absent — skipping scrubbing on %s", key))
+                        sprintf("fmri.motion_fd_mm absent -- skipping scrubbing on %s", key))
     }
     sv <- tryCatch(svd(arr), error = function(e) NULL)
     if (!is.null(sv)) {

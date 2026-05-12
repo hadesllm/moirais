@@ -11,7 +11,7 @@ decision_tree_split(x, y, criterion = "gini", max_depth = 30L, seed = 0L)
 
 \item{y}{Response (factor for classification).}
 
-\item{criterion}{"gini" or "entropy" — only "gini" is supported by
+\item{criterion}{"gini" or "entropy" -- only "gini" is supported by
 rpart for classification; "entropy" maps to information.}
 
 \item{max_depth}{Max tree depth.}

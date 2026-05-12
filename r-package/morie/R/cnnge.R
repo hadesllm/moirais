@@ -4,7 +4,7 @@
 #'
 #' @param x Optional fixed-effect design.
 #' @param y Numeric response.
-#' @param markers (n × m) genotype matrix.
+#' @param markers (n x m) genotype matrix.
 #' @param n_filters,kernel,hidden,n_epochs,lr,l2,seed Hyperparameters.
 #' @param deterministic_seed Optional integer; if supplied, RNG state is
 #'   derived via [morie_det_rng()] keyed on ("cnnge", deterministic_seed)

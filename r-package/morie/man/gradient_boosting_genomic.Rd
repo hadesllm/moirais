@@ -19,7 +19,7 @@ gradient_boosting_genomic(
 
 \item{y}{Numeric response.}
 
-\item{markers}{(n × m) genotype matrix.}
+\item{markers}{(n x m) genotype matrix.}
 
 \item{n_estimators}{Boosting rounds.}
 

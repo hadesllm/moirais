@@ -7,7 +7,7 @@
 penalized_regression(x, y, alpha = 0.5, lam = 1, max_iter = 1000, tol = 1e-06)
 }
 \arguments{
-\item{x}{(n × p) predictor matrix.}
+\item{x}{(n x p) predictor matrix.}
 
 \item{y}{Numeric response.}
 

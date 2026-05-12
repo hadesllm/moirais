@@ -4,7 +4,7 @@
 #'
 #' @param x Optional fixed-effect features.
 #' @param y Numeric response.
-#' @param markers (n × m) genotype matrix.
+#' @param markers (n x m) genotype matrix.
 #' @param C Cost (default 1).
 #' @param epsilon SVR tube width (default 0.1).
 #' @param gamma RBF kernel scale ("scale" = 1/(m * var(M)) or numeric).

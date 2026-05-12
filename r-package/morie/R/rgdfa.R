@@ -1,6 +1,6 @@
-#' Detrended fluctuation analysis — Rangayyan Ch 7
+#' Detrended fluctuation analysis -- Rangayyan Ch 7
 #'
-#' DFA-α scaling exponent (Peng et al. 1994).
+#' DFA-alpha scaling exponent (Peng et al. 1994).
 #'
 #' @param x Numeric vector.
 #' @param scales Optional integer box sizes (default geometric 4..N/4).

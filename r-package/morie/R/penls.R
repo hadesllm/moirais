@@ -7,7 +7,7 @@
 #'
 #'   min 1/(2n) ||y - X beta||^2 + lam (alpha ||beta||_1 + (1-alpha)/2 ||beta||_2^2).
 #'
-#' @param x (n × p) predictor matrix.
+#' @param x (n x p) predictor matrix.
 #' @param y Numeric response.
 #' @param alpha 0 (ridge) to 1 (LASSO).
 #' @param lam Penalty strength.

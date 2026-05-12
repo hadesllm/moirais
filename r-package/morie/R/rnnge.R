@@ -4,7 +4,7 @@
 #'
 #' @param x Optional fixed-effect design.
 #' @param y Numeric response.
-#' @param markers (n × L) marker sequence.
+#' @param markers (n x L) marker sequence.
 #' @param hidden,n_epochs,lr,l2,seed Hyperparameters.
 #' @param deterministic_seed Optional integer; if supplied, RNG state is
 #'   derived via [morie_det_rng()] keyed on ("rnnge", deterministic_seed)

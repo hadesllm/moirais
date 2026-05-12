@@ -3,7 +3,7 @@
 \name{rgstf}
 \alias{rgstf}
 \alias{rangayyan_stft}
-\title{Short-time Fourier transform — Rangayyan Ch 4}
+\title{Short-time Fourier transform -- Rangayyan Ch 4}
 \usage{
 rgstf(x, fs = 1, nperseg = 256L, noverlap = NULL, window = "hann")
 

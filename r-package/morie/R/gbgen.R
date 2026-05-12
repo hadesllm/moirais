@@ -6,7 +6,7 @@
 #'
 #' @param x Optional fixed features.
 #' @param y Numeric response.
-#' @param markers (n × m) genotype matrix.
+#' @param markers (n x m) genotype matrix.
 #' @param n_estimators Boosting rounds.
 #' @param learning_rate Shrinkage.
 #' @param max_depth Tree depth (gbm only).

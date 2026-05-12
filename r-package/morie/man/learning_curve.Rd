@@ -2,7 +2,7 @@
 % Please edit documentation in R/lrcvg.R
 \name{learning_curve}
 \alias{learning_curve}
-\title{Learning curve — train / val MSE vs training-set size (R parity)}
+\title{Learning curve -- train / val MSE vs training-set size (R parity)}
 \usage{
 learning_curve(x, y, sizes = NULL, cv = 5L, seed = 0L)
 }

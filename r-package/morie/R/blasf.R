@@ -2,7 +2,7 @@
 
 #' Bayesian LASSO (Park & Casella 2008 short Gibbs)
 #'
-#' @param x (n × p) marker matrix.
+#' @param x (n x p) marker matrix.
 #' @param y Numeric response.
 #' @param n_iter Total iterations (default 200).
 #' @param burn Burn-in (default 50).

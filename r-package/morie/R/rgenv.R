@@ -1,4 +1,4 @@
-#' Hilbert envelope — Rangayyan Ch 5
+#' Hilbert envelope -- Rangayyan Ch 5
 #'
 #' Analytic-signal envelope via the discrete Hilbert transform.
 #'

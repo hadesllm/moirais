@@ -7,7 +7,7 @@
 grm_vanraden(markers, method = 1)
 }
 \arguments{
-\item{markers}{Numeric (n × m) genotype matrix coded (coded 0/1/2).}
+\item{markers}{Numeric (n x m) genotype matrix coded (coded 0/1/2).}
 
 \item{method}{1 or 2 (VanRaden 2008).}
 }

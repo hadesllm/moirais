@@ -3,7 +3,7 @@
 \name{rgenv}
 \alias{rgenv}
 \alias{rangayyan_envelope}
-\title{Hilbert envelope — Rangayyan Ch 5}
+\title{Hilbert envelope -- Rangayyan Ch 5}
 \usage{
 rgenv(x)
 

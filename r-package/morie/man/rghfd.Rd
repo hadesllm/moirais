@@ -3,7 +3,7 @@
 \name{rghfd}
 \alias{rghfd}
 \alias{rangayyan_higuchi_fd}
-\title{Higuchi fractal dimension — Rangayyan Ch 7}
+\title{Higuchi fractal dimension -- Rangayyan Ch 7}
 \usage{
 rghfd(x, kmax = 10L)
 

@@ -11,7 +11,7 @@ rkhs_full(x, y, markers, h = NULL, lam = 1)
 
 \item{y}{Numeric response.}
 
-\item{markers}{Genotype matrix (n × m).}
+\item{markers}{Genotype matrix (n x m).}
 
 \item{h}{Kernel bandwidth (default median ||m_i - m_j||^2).}
 

@@ -7,7 +7,7 @@
 #'
 #' @param x Optional fixed features.
 #' @param y Numeric response.
-#' @param markers Genotype matrix (n × m).
+#' @param markers Genotype matrix (n x m).
 #' @param n_trees Number of trees.
 #' @param max_depth Max depth (fallback only).
 #' @param min_samples Min samples per node.

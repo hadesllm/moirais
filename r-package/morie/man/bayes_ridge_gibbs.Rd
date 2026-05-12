@@ -16,7 +16,7 @@ bayes_ridge_gibbs(
 )
 }
 \arguments{
-\item{x}{(n × p) marker matrix.}
+\item{x}{(n x p) marker matrix.}
 
 \item{y}{Numeric response.}
 

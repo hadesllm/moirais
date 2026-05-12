@@ -3,7 +3,7 @@
 \name{rgwav}
 \alias{rgwav}
 \alias{rangayyan_wavelet_denoise}
-\title{Wavelet denoising (universal threshold) — Rangayyan Ch 10}
+\title{Wavelet denoising (universal threshold) -- Rangayyan Ch 10}
 \usage{
 rgwav(x, wavelet = "d8", level = NULL, mode = c("soft", "hard"))
 
@@ -17,7 +17,7 @@ rangayyan_wavelet_denoise(
 \arguments{
 \item{x}{Numeric vector.}
 
-\item{wavelet}{Wavelet filter name (default \code{"d8"} ≈ db4).}
+\item{wavelet}{Wavelet filter name (default \code{"d8"} ~~ db4).}
 
 \item{level}{Decomposition depth (default \code{min(4, max_level)}).}
 
@@ -30,11 +30,11 @@ Named list \code{signal}, \code{threshold}, \code{sigma}, \code{wavelet},
 \description{
 Donoho-Johnstone soft/hard thresholding via the \code{wavelets} package
 (Daubechies DWT). Noise scale estimated from the finest-scale detail
-as σ = MAD / 0.6745; universal threshold T = σ sqrt(2 ln N).
+as sigma = MAD / 0.6745; universal threshold T = sigma sqrt(2 ln N).
 }
 \details{
 Falls back to a 5-tap moving-average smoother (with a warning) if
-\code{wavelets} is not installed — keeps R↔Py parity to ~5 \% on smooth
+\code{wavelets} is not installed -- keeps R<->Py parity to ~5 \% on smooth
 signals.
 }
 \examples{

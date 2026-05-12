@@ -14,7 +14,8 @@ def _sigmoid(z):
 
 
 def lstm_cell(x, h_prev=None, c_prev=None, W=None, U=None, b=None,
-              hidden_size: "int | None" = None, seed: int = 0):
+              hidden_size: "int | None" = None, seed: int = 0,
+              deterministic_seed: "int | None" = None):
     """Single-step LSTM cell (Hochreiter & Schmidhuber 1997).
 
     Gates::
@@ -31,6 +32,13 @@ def lstm_cell(x, h_prev=None, c_prev=None, W=None, U=None, b=None,
     ``[W_i; W_f; W_g; W_o]``; ``U`` shape ``(4H, H)``; ``b`` length
     ``4H``.  If any of them are ``None``, small deterministic random
     parameters are generated for the smoke test.
+
+    Parameters
+    ----------
+    deterministic_seed : int or None, optional
+        If given, the SHA-keyed RNG from
+        :func:`morie._det_rng.from_seed` is used so Py<->R streams agree
+        for the same ``(name, seed)`` pair. Overrides ``seed`` when set.
 
     Returns
     -------
@@ -60,7 +68,11 @@ def lstm_cell(x, h_prev=None, c_prev=None, W=None, U=None, b=None,
     h_prev = np.asarray(h_prev, dtype=float).ravel()
     c_prev = np.asarray(c_prev, dtype=float).ravel()
 
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("lstmc", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     if W is None:
         W = rng.normal(0, 0.1, size=(4 * H, n_in))
     if U is None:

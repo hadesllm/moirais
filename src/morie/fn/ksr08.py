@@ -13,7 +13,7 @@ from ._richresult import RichResult
 __all__ = ["kosorok_multiplier_bootstrap"]
 
 
-def kosorok_multiplier_bootstrap(x, B=1000, seed=0):
+def kosorok_multiplier_bootstrap(x, B=1000, seed=0, deterministic_seed: int | None = None):
     """Gaussian-multiplier bootstrap SE of sqrt(n) P_n(id).
 
     Parameters
@@ -21,6 +21,12 @@ def kosorok_multiplier_bootstrap(x, B=1000, seed=0):
     x : array-like.
     B : int, multiplier replications.
     seed : int.
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged: the user-supplied ``seed`` drives a fresh
+        :class:`numpy.random.Generator`.
 
     Returns
     -------
@@ -29,7 +35,11 @@ def kosorok_multiplier_bootstrap(x, B=1000, seed=0):
     """
     x = np.asarray(x, dtype=float)
     n = len(x)
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("ksr08", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     pn = float(x.mean())
     centred = x - pn
     xi = rng.normal(size=(B, n))

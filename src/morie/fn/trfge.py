@@ -22,7 +22,7 @@ def _softmax(x, axis=-1):
 
 
 def transformer_genomic(x, y, markers, d_model: int = 8, lam: float = 1.0,
-                        seed: int = 0):
+                        seed: int = 0, deterministic_seed: int | None = None):
     """Single-head self-attention with random key/query/value projections,
     followed by mean-pooling and ridge regression.
 
@@ -42,6 +42,11 @@ def transformer_genomic(x, y, markers, d_model: int = 8, lam: float = 1.0,
     d_model : int, default 8.
     lam : float, default 1.0. Ridge for the linear head.
     seed : int
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged.
 
     Returns
     -------
@@ -52,7 +57,11 @@ def transformer_genomic(x, y, markers, d_model: int = 8, lam: float = 1.0,
     Vaswani et al. (2017). Attention is all you need.
     Montesinos Lopez et al. (2022), Ch. 15.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("trfge", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     y = np.asarray(y, dtype=float).ravel()
     n = len(y)
     M = np.asarray(markers, dtype=float)

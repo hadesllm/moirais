@@ -1,0 +1,587 @@
+#!/usr/bin/env bash
+# dirtyfrag — single-command driver for the Phase 3 qemu verify gate.
+#
+# Auto-detects whether you are on the Mac or already on the Pi (zeus)
+# and adjusts ssh wrapping accordingly, so the SAME command works
+# verbatim from either side.
+#
+# Usage:
+#   dirtyfrag verify             Confirm both kernels built (Step 0)
+#   dirtyfrag prep               kvm group + cloud-init seed (Steps 0.5 + 1)
+#   dirtyfrag boot vanilla       Boot Image-vanilla in qemu/tmux (Step 2)
+#   dirtyfrag boot patched       Boot Image-patched in qemu/tmux (Step 5)
+#   dirtyfrag boot-debug <k>     Boot directly (no tmux) — surfaces qemu stderr
+#   dirtyfrag attach             Re-attach to the qemu tmux session
+#   dirtyfrag guest              SSH into the running guest (Step 4 inner)
+#   dirtyfrag fetch-poc <URL>    Auto-rewrite + fetch + validate PoC into guest
+#   dirtyfrag clean              Tear down tmux + remove seed (Step 7)
+#   dirtyfrag go vanilla         verify + prep + boot vanilla in one shot
+#   dirtyfrag go patched         verify + prep + boot patched in one shot
+#   dirtyfrag status             Print live phase tracker
+#   dirtyfrag install            Symlink to ~/.local/bin so `dirtyfrag` is on PATH
+#
+# All Pi-side work happens under /home/perseus/dirtyfrag/.  The qemu
+# process runs inside a tmux session named `dirtyfrag` so a dropped
+# ssh does not kill the VM.
+
+set -euo pipefail
+
+PI_HOST="zeus.tail6f5dd7.ts.net"
+PI_USER="perseus"
+PI_DIR="/home/perseus/dirtyfrag"
+TMUX_SESSION="dirtyfrag"
+
+# ── side detection ─────────────────────────────────────────────────
+#
+# When run on zeus the inner Pi-side commands execute locally; when
+# run anywhere else they are wrapped in `ssh perseus@zeus.tail…`.
+case "$(hostname -s 2>/dev/null || hostname)" in
+  zeus*) ON_PI=true ;;
+  *)     ON_PI=false ;;
+esac
+
+run_pi() {
+  # Non-interactive remote command. $1 is the command string.
+  if $ON_PI; then bash -c "$1"
+  else            ssh -o BatchMode=yes -o ConnectTimeout=10 \
+                      "${PI_USER}@${PI_HOST}" "$1"
+  fi
+}
+
+run_pi_tty() {
+  # Interactive (tty-attached) remote command — for tmux/qemu console.
+  if $ON_PI; then bash -lc "$1"
+  else            ssh -t "${PI_USER}@${PI_HOST}" "$1"
+  fi
+}
+
+# ── subcommands ────────────────────────────────────────────────────
+
+cmd_verify() {
+  printf '== build status ==\n'
+  run_pi "tail -n 3 ${PI_DIR}/vanilla-build.log ${PI_DIR}/patched-build.log && \
+          ls -la ${PI_DIR}/Image-vanilla ${PI_DIR}/Image-patched"
+}
+
+cmd_prep() {
+  printf '== ensuring perseus is in kvm group ==\n'
+  if run_pi "id perseus | grep -qE '\\(kvm\\)'"; then
+    printf 'kvm group: ok\n'
+  else
+    run_pi "sudo usermod -aG kvm perseus"
+    printf 'kvm group: ADDED — log out + back in for the change to take effect.\n'
+    printf '           qemu boot will fail with Permission denied until you do.\n'
+  fi
+
+  printf '== ensuring debian image is customized (qemu-nbd path) ==\n'
+  # Idempotency marker: a tag file means we've already mounted the
+  # qcow2 via qemu-nbd, set the root password, and disabled cloud-init.
+  # We use qemu-nbd + chroot rather than virt-customize because the
+  # libguestfs appliance does not start reliably on Raspberry Pi OS.
+  # Marker existence is sufficient — qemu writes to the qcow2 on every
+  # boot which makes mtime comparisons unreliable.  Use `dirtyfrag re-prep`
+  # if you actually need to re-customize.
+  if run_pi "[ -f ${PI_DIR}/.image-customized ]"; then
+    printf 'debian image: already customized (root=dirtyfrag) — use re-prep to redo\n'
+  else
+    printf 'debian image: customizing via qemu-nbd + chroot (~30 s)\n'
+    printf '%s\n' '----------------------------------------------------------------'
+    # The whole customize is done as ONE remote bash script piped
+    # through ssh, so all the quoting lives in a single heredoc and we
+    # do not have to escape across two shell layers.
+    run_pi "sudo bash -s" <<'PI_NBD_CUSTOMIZE'
+set -e
+PI_DIR=/home/perseus/dirtyfrag
+IMG="$PI_DIR/debian-13-arm64.qcow2"
+MNT="/mnt/dirtyfrag-root"
+
+# 1. Stop anything holding the image
+tmux kill-session -t dirtyfrag 2>/dev/null || true
+
+# 2. Free up nbd0 if we left it connected from a prior run
+qemu-nbd --disconnect /dev/nbd0 2>/dev/null || true
+umount "$MNT" 2>/dev/null || true
+
+# 3. Load nbd module
+modprobe nbd max_part=8
+
+# 4. Connect the image
+qemu-nbd --connect=/dev/nbd0 --format=qcow2 "$IMG"
+sleep 2
+# Trigger partition table re-read using whichever tool is available.
+# nbd max_part=8 already auto-creates partition devices; this is belt-and-suspenders.
+if command -v partprobe >/dev/null 2>&1; then
+  partprobe /dev/nbd0 || true
+elif command -v partx >/dev/null 2>&1; then
+  partx -u /dev/nbd0 2>/dev/null || true
+else
+  blockdev --rereadpt /dev/nbd0 2>/dev/null || true
+fi
+sleep 2
+
+# 5. Find the root partition (largest by size, of the partitions present)
+ROOT_PART=$(lsblk -bnro NAME,SIZE /dev/nbd0 \
+            | awk '$1 ~ /^nbd0p[0-9]+$/ {print $2 "\t" $1}' \
+            | sort -rn | head -1 | cut -f2)
+if [ -z "$ROOT_PART" ]; then
+  echo "ERROR: no partitions found on /dev/nbd0"
+  qemu-nbd --disconnect /dev/nbd0
+  exit 1
+fi
+ROOT_DEV="/dev/$ROOT_PART"
+echo "Detected root partition: $ROOT_DEV"
+
+# 6. Mount it + bind-mount /dev /proc /sys for chroot
+mkdir -p "$MNT"
+mount "$ROOT_DEV" "$MNT"
+mount --bind /dev "$MNT/dev"
+mount --bind /proc "$MNT/proc"
+mount --bind /sys "$MNT/sys"
+
+# 7. Make all the changes inside chroot
+chroot "$MNT" /bin/bash -e <<'CHROOT_END'
+# Set root password & unlock
+echo 'root:dirtyfrag' | chpasswd
+passwd -u root 2>/dev/null || true
+usermod -U root 2>/dev/null || true
+chsh -s /bin/bash root 2>/dev/null || true
+
+# Create 'tester' user with sudo NOPASSWD (separate fallback identity)
+id tester >/dev/null 2>&1 || useradd -m -G sudo -s /bin/bash tester
+echo 'tester:dirtyfrag' | chpasswd
+echo 'tester ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/99-tester
+chmod 440 /etc/sudoers.d/99-tester
+
+# Disable cloud-init both ways: magic file + masked units
+mkdir -p /etc/cloud
+touch /etc/cloud/cloud-init.disabled
+for u in cloud-init.service cloud-init-local.service cloud-config.service cloud-final.service; do
+  ln -sf /dev/null "/etc/systemd/system/$u" 2>/dev/null || true
+done
+
+# Set hostname
+echo dirtyfrag-test > /etc/hostname
+
+# Allow root login on console + ssh
+sed -ri 's/^#?\s*PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config 2>/dev/null || true
+sed -ri 's/^#?\s*PasswordAuthentication.*/PasswordAuthentication yes/' /etc/ssh/sshd_config 2>/dev/null || true
+# Ensure /etc/securetty has ttyAMA0 (some configs reject root on serial)
+grep -q '^ttyAMA0' /etc/securetty 2>/dev/null || echo ttyAMA0 >> /etc/securetty 2>/dev/null || true
+CHROOT_END
+
+# 8. Cleanup
+sync
+umount "$MNT/sys" "$MNT/proc" "$MNT/dev" "$MNT" 2>/dev/null || true
+qemu-nbd --disconnect /dev/nbd0
+echo "OK: image customized via qemu-nbd"
+PI_NBD_CUSTOMIZE
+    rc=$?
+    printf '%s\n' '----------------------------------------------------------------'
+    if [ $rc -ne 0 ]; then
+      printf 'ERROR: qemu-nbd customize failed (rc=%d). Marker NOT created.\n' "$rc" >&2
+      exit 1
+    fi
+    run_pi "touch ${PI_DIR}/.image-customized"
+    printf 'debian image: customized (login as root / dirtyfrag, OR tester / dirtyfrag)\n'
+    printf 'NOTE: gcc/make are NOT pre-installed.  Inside the guest, run: apt update && apt install -y gcc make\n'
+  fi
+
+  # Cloud-init seed kept around as a no-op fallback, but no longer
+  # required — virt-customize already did everything we needed.
+  printf '== checking cloud-init seed ==\n'
+  if run_pi "[ -f ${PI_DIR}/seed.qcow2 ] && qemu-img info ${PI_DIR}/seed.qcow2 2>/dev/null | grep -q '^file format: qcow2$'"; then
+    printf 'seed.qcow2: ok (qcow2, kept as fallback)\n'
+  else
+    printf 'seed.qcow2: missing or wrong format — regenerating (still useful as fallback)\n'
+    run_pi "cd ${PI_DIR} && bash -s" <<'PIPREP'
+set -e
+cat > user-data <<'EOC'
+#cloud-config
+hostname: dirtyfrag-test
+ssh_pwauth: True
+users:
+  - name: tester
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    plain_text_passwd: testpass123
+    lock_passwd: false
+    shell: /bin/bash
+chpasswd:
+  expire: false
+runcmd:
+  - apt-get install -y gcc make build-essential libc6-dev
+EOC
+printf 'instance-id: i-dirtyfrag-test\nlocal-hostname: dirtyfrag-test\n' > meta-data
+cloud-localds -d qcow2 seed.qcow2 user-data meta-data >/dev/null 2>&1
+PIPREP
+  fi
+}
+
+cmd_boot() {
+  local kernel="${1:-vanilla}"
+  case "$kernel" in
+    vanilla|patched) ;;
+    *) printf 'boot: kernel must be vanilla or patched (got %s)\n' "$kernel" >&2
+       exit 1 ;;
+  esac
+
+  # Make sure prep is done before booting.
+  cmd_prep
+
+  # Kill any lingering tmux session from a prior failed boot — without
+  # this, `tmux new -A` would re-attach to the dead pane.
+  run_pi "tmux kill-session -t ${TMUX_SESSION} 2>/dev/null || true"
+
+  printf '== booting Image-%s in qemu (tmux session: %s) ==\n' \
+         "$kernel" "$TMUX_SESSION"
+  printf 'detach: Ctrl-b d   |   reattach: dirtyfrag attach\n'
+  printf 'guest ssh from another terminal: dirtyfrag guest\n\n'
+
+  # The qemu command lives in a remote heredoc to avoid quoting hell.
+  # tmux new -A attaches if the session exists, otherwise creates +
+  # runs the command.
+  # virtio-blk-pci / virtio-net-pci are more reliable than the MMIO
+  # variants under -M virt -accel kvm — the MMIO devices sometimes
+  # don't get picked up by the device tree, and the kernel panics
+  # with "Unable to mount root fs on unknown-block(254,1)" because
+  # vda never appears.  PCI host generic (CONFIG_PCI_HOST_GENERIC=y)
+  # does the right thing.
+  local qemu_cmd
+  # gic-version=host lets KVM pick the host GIC's version (Pi 5 is GICv2,
+  # not v3 — forcing v3 makes qemu exit immediately with "KVM does not
+  # support GICv3 emulation").
+  qemu_cmd="cd ${PI_DIR} && qemu-system-aarch64 \
+  -M virt,gic-version=host -accel kvm -cpu host -m 4G -smp 2 \
+  -kernel Image-${kernel} \
+  -append 'root=/dev/vda1 rw console=ttyAMA0 net.ifnames=0 nokaslr ds=nocloud' \
+  -drive file=debian-13-arm64.qcow2,format=qcow2,if=none,id=hd0 \
+  -device virtio-blk-pci,drive=hd0 \
+  -drive file=seed.qcow2,format=qcow2,if=none,id=cloudinit \
+  -device virtio-blk-pci,drive=cloudinit \
+  -netdev user,id=net0,hostfwd=tcp::2222-:22 \
+  -device virtio-net-pci,netdev=net0 \
+  -nographic"
+
+  run_pi_tty "tmux new -A -s ${TMUX_SESSION} \"${qemu_cmd}\""
+}
+
+cmd_attach() {
+  run_pi_tty "tmux attach -t ${TMUX_SESSION}"
+}
+
+cmd_boot_debug() {
+  # Same as `boot` but bypasses tmux so qemu's stderr is visible.
+  # Use this when `boot` exits immediately and you can't see why.
+  local kernel="${1:-vanilla}"
+  case "$kernel" in vanilla|patched) ;; *) echo "kernel must be vanilla|patched"; exit 1 ;; esac
+  cmd_prep
+  run_pi_tty "cd ${PI_DIR} && qemu-system-aarch64 \
+    -M virt,gic-version=host -accel kvm -cpu host -m 4G -smp 2 \
+    -kernel Image-${kernel} \
+    -append 'root=/dev/vda1 rw console=ttyAMA0 net.ifnames=0 nokaslr ds=nocloud' \
+    -drive file=debian-13-arm64.qcow2,format=qcow2,if=none,id=hd0 \
+    -device virtio-blk-pci,drive=hd0 \
+    -drive file=seed.qcow2,format=qcow2,if=none,id=cloudinit \
+    -device virtio-blk-pci,drive=cloudinit \
+    -netdev user,id=net0,hostfwd=tcp::2222-:22 \
+    -device virtio-net-pci,netdev=net0 \
+    -nographic"
+}
+
+cmd_verdict() {
+  # End-to-end: boot vanilla, run PoC as victim, capture, shutdown, repeat
+  # for patched, print verdict.  Assumes you have already cloned the PoC
+  # at ~/dirtyfrag/exp.c inside the guest (any prior `dirtyfrag boot
+  # vanilla` + `git clone` is enough — the qcow2 persists).
+  cmd_prep
+  run_pi "command -v sshpass >/dev/null 2>&1 || sudo apt-get install -y -qq sshpass" >/dev/null
+
+  printf '== Dirty Frag verdict run (vanilla + patched) ==\n'
+  printf 'each kernel: boot, ssh as root, su victim, gcc + ./exp, capture id\n\n'
+
+  for kernel in vanilla patched; do
+    printf '─── %s ───\n' "$kernel"
+
+    # Kill any running qemu (avoid lock contention)
+    run_pi "pidof qemu-system-aarch64 | xargs -r kill -9 2>/dev/null; sleep 2; tmux kill-session -t ${TMUX_SESSION} 2>/dev/null; sleep 1"
+
+    # Background-launch qemu
+    printf '  booting Image-%s ...\n' "$kernel"
+    # -display none + -serial file:... + -daemonize makes qemu detach
+    # cleanly while still recording the guest serial console for later
+    # inspection.  -nographic + -daemonize is rejected by qemu because
+    # -nographic implicitly attaches stdio to the serial.
+    run_pi "cd ${PI_DIR} && qemu-system-aarch64 \
+      -M virt,gic-version=host -accel kvm -cpu host -m 2G -smp 2 \
+      -kernel Image-${kernel} \
+      -append 'root=/dev/vda1 rw console=ttyAMA0 net.ifnames=0 nokaslr' \
+      -drive file=debian-13-arm64.qcow2,format=qcow2,if=none,id=hd0 \
+      -device virtio-blk-pci,drive=hd0 \
+      -netdev user,id=net0,hostfwd=tcp::2222-:22 \
+      -device virtio-net-pci,netdev=net0 \
+      -display none \
+      -serial file:/tmp/qemu-${kernel}-serial.log \
+      -daemonize \
+      -pidfile /tmp/qemu-${kernel}.pid \
+      2> /tmp/qemu-${kernel}.log"
+
+    # Wait up to 120 s for sshd
+    printf '  waiting for sshd... '
+    run_pi "for i in \$(seq 1 120); do nc -z 127.0.0.1 2222 2>/dev/null && { echo \"up after \${i}s\"; break; }; sleep 1; done"
+
+    # Write a runner script onto the Pi, scp it to the guest, exec it
+    # as victim.  Avoids all the multi-line quoting issues of su -c "…".
+    run_pi "cat > /tmp/run-poc.sh" <<'POC_SCRIPT'
+#!/bin/bash
+cd /home/victim/dirtyfrag 2>/dev/null || { echo "ERR: ~/dirtyfrag missing"; exit 11; }
+test -f exp.c || { echo "ERR: exp.c missing"; exit 12; }
+gcc -O0 -Wall -o exp exp.c -lutil 2>/tmp/gcc.log
+if [ ! -x exp ]; then echo BUILD_FAIL; cat /tmp/gcc.log; exit 13; fi
+echo MARKER_BEFORE
+id
+echo MARKER_RUN
+timeout 60 ./exp 2>&1 | head -200
+RC=$?
+echo MARKER_RC=$RC
+echo MARKER_AFTER
+id
+POC_SCRIPT
+
+    run_pi "sshpass -p dirtyfrag scp -P 2222 \
+      -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+      /tmp/run-poc.sh root@127.0.0.1:/home/victim/run-poc.sh"
+    run_pi "sshpass -p dirtyfrag ssh -p 2222 \
+      -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+      root@127.0.0.1 'chown victim:victim /home/victim/run-poc.sh && chmod +x /home/victim/run-poc.sh'"
+
+    printf '  running PoC as victim...\n'
+    local out
+    out=$(run_pi "sshpass -p dirtyfrag ssh -p 2222 \
+      -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+      -o ConnectTimeout=10 -o PreferredAuthentications=password \
+      root@127.0.0.1 'runuser -u victim -- /bin/bash /home/victim/run-poc.sh'" 2>&1 || true)
+
+    # Save full output
+    printf '%s\n' "$out" > "/tmp/dirtyfrag-${kernel}.log"
+    run_pi "scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+      /dev/stdin perseus@${PI_HOST}:/tmp/dirtyfrag-${kernel}.log" <<<"$out" 2>/dev/null || true
+
+    # Extract the two id lines for the verdict
+    local before after
+    before=$(echo "$out" | awk '/MARKER_BEFORE/{getline; print}')
+    after=$(echo "$out" |  awk '/MARKER_AFTER/{getline; print}')
+
+    printf '  before: %s\n' "$before"
+    printf '  after : %s\n' "$after"
+    if echo "$after" | grep -q 'uid=0'; then
+      printf '  verdict: EXPLOIT SUCCEEDED (kernel is vulnerable)\n\n'
+      eval "${kernel}_verdict=VULN"
+    elif echo "$after" | grep -q 'uid=1002'; then
+      printf '  verdict: exploit failed (kernel held — patch effective)\n\n'
+      eval "${kernel}_verdict=HELD"
+    else
+      printf '  verdict: inconclusive (could not parse id output)\n'
+      printf '  full output saved to /tmp/dirtyfrag-%s.log on Mac and Pi\n\n' "$kernel"
+      eval "${kernel}_verdict=UNCLEAR"
+    fi
+
+    # Clean shutdown
+    run_pi "sshpass -p dirtyfrag ssh -p 2222 \
+      -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+      -o ConnectTimeout=5 \
+      root@127.0.0.1 'shutdown -h now' 2>/dev/null || true"
+    sleep 5
+    run_pi "pidof qemu-system-aarch64 | xargs -r kill -9 2>/dev/null; rm -f /tmp/qemu-${kernel}.pid; sleep 2"
+  done
+
+  printf '═════════════════════════════════════════\n'
+  printf '  VANILLA: %s\n' "${vanilla_verdict:-UNKNOWN}"
+  printf '  PATCHED: %s\n' "${patched_verdict:-UNKNOWN}"
+  if [ "${vanilla_verdict:-}" = "VULN" ] && [ "${patched_verdict:-}" = "HELD" ]; then
+    printf '  ✓ Patches verified end-to-end (vulnerable → held).\n'
+    printf '  Logs: /tmp/dirtyfrag-{vanilla,patched}.log\n'
+  else
+    printf '  ⚠ Verdict not the expected (VULN, HELD) pair.\n'
+    printf '  Inspect /tmp/dirtyfrag-{vanilla,patched}.log for full output.\n'
+  fi
+  printf '═════════════════════════════════════════\n'
+}
+
+cmd_re_prep() {
+  printf '== forcing re-customize (removing marker) ==\n'
+  run_pi "rm -f ${PI_DIR}/.image-customized; tmux kill-session -t ${TMUX_SESSION} 2>/dev/null || true"
+  cmd_prep
+}
+
+cmd_fetch_poc() {
+  local url="${1:-}"
+  if [ -z "$url" ]; then
+    cat <<'USAGE_EOF'
+Usage: dirtyfrag fetch-poc <github-or-gist-URL>
+
+Auto-rewrites GitHub /blob/ URLs to raw form, fetches into the running
+guest VM, validates the result is C source (not an HTML page), and
+saves it to /home/victim/dirtyfrag-poc.c (owned by victim).
+
+Requires the guest to be booted first:
+  dirtyfrag boot vanilla   (or  boot patched)
+USAGE_EOF
+    exit 1
+  fi
+
+  printf '== fetch PoC into guest VM ==\n'
+  printf 'URL: %s\n' "$url"
+
+  if ! run_pi "nc -z 127.0.0.1 2222 2>/dev/null"; then
+    printf 'ERROR: guest sshd not reachable at 127.0.0.1:2222\n' >&2
+    printf 'Boot it first:  dirtyfrag boot vanilla\n' >&2
+    exit 1
+  fi
+
+  if ! run_pi "command -v sshpass >/dev/null 2>&1"; then
+    printf 'installing sshpass on Pi (one-time)...\n'
+    run_pi "sudo apt-get install -y -qq sshpass" >/dev/null
+  fi
+
+  # Write helper script onto Pi
+  run_pi "cat > /tmp/_dirtyfrag_fetch_guest.sh" <<'HELPER_EOF'
+#!/usr/bin/env bash
+set -e
+URL="$1"
+if [ -z "$URL" ]; then echo "ERROR: no URL"; exit 2; fi
+
+RAW=$(printf '%s' "$URL" | sed -E \
+  -e 's|https://github\.com/([^/]+)/([^/]+)/blob/(.*)$|https://raw.githubusercontent.com/\1/\2/\3|' \
+  -e 's|https://gist\.github\.com/([^/]+)/([0-9a-f]+).*$|https://gist.githubusercontent.com/\1/\2/raw|')
+
+if [ "$RAW" = "$URL" ]; then
+  echo "URL not auto-rewritten; using as-is"
+else
+  echo "rewrote → $RAW"
+fi
+
+command -v curl >/dev/null 2>&1 || { apt-get update -qq; apt-get install -y -qq curl; }
+id victim >/dev/null 2>&1 || { useradd -m -s /bin/bash victim; echo 'victim:victim' | chpasswd; }
+
+OUT=/home/victim/dirtyfrag-poc.c
+rm -f "$OUT" /home/victim/poc
+
+curl -fsSL "$RAW" -o "$OUT"
+chown victim:victim "$OUT"
+
+if head -1 "$OUT" 2>/dev/null | grep -qiE '<!doctype|<html|<head>'; then
+  echo "ERROR: got HTML, not C. Rewrote URL was: $RAW"
+  head -3 "$OUT"
+  exit 1
+fi
+if grep -qE '^(<div|<li |<head|<body|<script|<a |<meta)' "$OUT" 2>/dev/null; then
+  echo "ERROR: file contains HTML tags."
+  grep -nE '^(<div|<li |<head|<body|<script|<a |<meta)' "$OUT" | head -3
+  exit 1
+fi
+
+echo "OK: $(wc -l < "$OUT") lines saved to $OUT (owned by victim)"
+echo "First 12 lines:"
+head -12 "$OUT"
+HELPER_EOF
+
+  # scp helper into guest
+  run_pi "sshpass -p dirtyfrag scp -P 2222 \
+    -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+    /tmp/_dirtyfrag_fetch_guest.sh root@127.0.0.1:/tmp/fetch.sh" >/dev/null
+
+  # Pass URL via stdin to avoid quoting hell across three shell layers
+  run_pi "sshpass -p dirtyfrag ssh -p 2222 \
+    -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+    root@127.0.0.1 'IFS= read -r U; bash /tmp/fetch.sh \"\$U\"'" <<<"$url"
+}
+
+cmd_install() {
+  # Symlink ourselves into ~/.local/bin and /usr/local/bin (best-effort)
+  # so plain `dirtyfrag <verb>` works from anywhere without typing the
+  # full path.
+  local self
+  self="$(readlink -f "$0" 2>/dev/null || realpath "$0")"
+  mkdir -p "$HOME/.local/bin"
+  ln -sf "$self" "$HOME/.local/bin/dirtyfrag"
+  printf 'Symlinked: %s -> %s\n' "$HOME/.local/bin/dirtyfrag" "$self"
+  if [ -w /usr/local/bin ] || sudo -n true 2>/dev/null; then
+    sudo ln -sf "$self" /usr/local/bin/dirtyfrag 2>/dev/null \
+      && printf 'Symlinked: /usr/local/bin/dirtyfrag -> %s\n' "$self" \
+      || printf '(sudo for /usr/local/bin failed; %s/.local/bin link is sufficient if it is on PATH)\n' "$HOME"
+  fi
+  case ":$PATH:" in
+    *":$HOME/.local/bin:"*) printf '~/.local/bin already on PATH; you can now just type: dirtyfrag <verb>\n' ;;
+    *) printf 'NOTE: ~/.local/bin is NOT on your PATH. Add this to ~/.bashrc:\n  export PATH="$HOME/.local/bin:$PATH"\nor invoke as %s\n' "$self" ;;
+  esac
+}
+
+cmd_guest() {
+  printf '== ssh to guest (root@127.0.0.1:2222, password dirtyfrag) ==\n'
+  printf '   (after virt-customize. cloud-init seed fallback user is tester/testpass123)\n'
+  run_pi_tty "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@127.0.0.1"
+}
+
+cmd_clean() {
+  run_pi "tmux kill-session -t ${TMUX_SESSION} 2>/dev/null || true; \
+          rm -f ${PI_DIR}/seed.qcow2 ${PI_DIR}/user-data ${PI_DIR}/meta-data; \
+          printf 'cleaned: tmux session killed, seed removed.\\n'; \
+          printf 'kept: linux-6.12.30* sources, Image-vanilla, Image-patched, debian-13-arm64.qcow2\\n'"
+}
+
+cmd_status() {
+  printf '== Phase tracker ==\n'
+  run_pi "
+    cd ${PI_DIR}
+    printf 'Phase 1 (Pi mitigation):    '
+    [ -f /etc/modprobe.d/dirtyfrag.conf ] && echo '[x] deployed' || echo '[ ] missing'
+
+    printf 'Phase 2 (kernels built):    '
+    if [ -f Image-vanilla ] && [ -f Image-patched ]; then
+      echo \"[x] both Image-* present (\$(stat -c %s Image-vanilla) / \$(stat -c %s Image-patched) bytes)\"
+    else
+      echo '[ ] one or both missing'
+    fi
+
+    printf 'Phase 3a (kvm group):       '
+    id perseus | grep -qE '\\(kvm\\)' && echo '[x] perseus in kvm group' || echo '[ ] perseus NOT in kvm group'
+
+    printf 'Phase 3b (seed.qcow2):      '
+    if [ -f seed.qcow2 ] && qemu-img info seed.qcow2 2>/dev/null | grep -q '^file format: qcow2\$'; then
+      echo '[x] qcow2'
+    else
+      echo '[ ] missing or raw'
+    fi
+
+    printf 'Phase 3c (qemu running):    '
+    tmux has-session -t ${TMUX_SESSION} 2>/dev/null && echo '[~] tmux session active' || echo '[ ] no tmux session'
+  "
+}
+
+cmd_go() {
+  local kernel="${1:-vanilla}"
+  cmd_verify
+  cmd_prep
+  cmd_boot "$kernel"
+}
+
+usage() {
+  sed -n '2,30p' "$0" | sed 's/^# \{0,1\}//'
+}
+
+case "${1:-}" in
+  verify)  shift; cmd_verify "$@" ;;
+  prep)    shift; cmd_prep "$@" ;;
+  re-prep) shift; cmd_re_prep "$@" ;;
+  fetch-poc|fetch_poc|poc) shift; cmd_fetch_poc "$@" ;;
+  verdict|test|run-both) shift; cmd_verdict "$@" ;;
+  boot)    shift; cmd_boot "$@" ;;
+  attach)  shift; cmd_attach "$@" ;;
+  boot-debug) shift; cmd_boot_debug "$@" ;;
+  guest)   shift; cmd_guest "$@" ;;
+  install) shift; cmd_install "$@" ;;
+  clean)   shift; cmd_clean "$@" ;;
+  status)  shift; cmd_status "$@" ;;
+  go)      shift; cmd_go "$@" ;;
+  ""|help|-h|--help) usage ;;
+  *) printf 'unknown subcommand: %s\n\n' "$1"; usage; exit 1 ;;
+esac

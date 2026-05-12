@@ -1,0 +1,190 @@
+# Zenodo upload metadata for the MRM paper.
+#
+# Use this file when manually uploading main.pdf at
+# https://zenodo.org/uploads/new. Each section maps directly to a
+# Zenodo form field. Fill the TBD fields once the corresponding
+# DOIs are minted.
+
+# ── Resource type ─────────────────────────────────────────────────
+upload_type: publication
+publication_type: preprint   # or "article" if a journal version
+
+# ── Title ─────────────────────────────────────────────────────────
+title: |
+  The MRM Framework: A Multi-Source Mathematical Foundation for
+  Canadian Carceral, Police, and Oversight Data, Implemented as
+  RF Modules in MOIRAIS
+
+# ── Authors ───────────────────────────────────────────────────────
+creators:
+  - name: Ruhela, Vansh Singh
+    affiliation: Independent
+    orcid: ""           # FILL once you have an ORCID
+    gnd: ""
+
+# ── Description / abstract ────────────────────────────────────────
+description: |
+  I introduce MRM (McNamara-Ruhela-Medina), a unified
+  mathematical framework that integrates five distinct Canadian
+  carceral and oversight data streams under one set of estimators
+  and one set of primitives. The framework spans (i) the open
+  Ontario Tracking Information System (OTIS) provincial
+  restrictive-confinement microdata, (ii) the federal Structured
+  Intervention Unit Implementation Advisory Panel (SIU IAP) reports
+  and Sprott-Doob-Iftene independent academic replications of
+  federal SIU operations, (iii) the Ontario Special Investigations
+  Unit (Ontario SIU) police-oversight reports ingested by an
+  automated scraper, (iv) the Toronto Police Service (TPS)
+  open-data crime categories and the Statistics Canada Crime
+  Severity Index, and (v) federal Corrections and Conditional
+  Release Statistical Overview (CCRSO) aggregate tables introduced
+  into the record by Doob's T-539-20 affidavit. MRM is implemented
+  in the open-source MOIRAIS package as a set of RF modules,
+  comprising a 10-estimator per-individual ensemble, a GEE
+  clustering grid for high-cardinality groupings, a Doob chi-square
+  family for aggregate contingency tables, a Goffmanian
+  institutional-churn analysis suite, and a Mandela Rules
+  classifier that operates at both the federal and provincial
+  level. I replicate all five published chi-square statistics from
+  Sprott-Doob-Iftene (reproducing every value to within 0.01) and
+  report a headline empirical finding: the provincial Ontario
+  Mandela "torture"-classified proportion rises from 12.5% in
+  fiscal 2023 to 20.6% in fiscal 2025, exceeding the federal SIU
+  rate of 9.9% that Sprott and Doob reported for fiscal 2019-2020.
+
+# ── Keywords ──────────────────────────────────────────────────────
+keywords:
+  - MRM
+  - RF modules
+  - causal inference
+  - observational data
+  - criminology
+  - carceral analysis
+  - Mandela Rules
+  - solitary confinement
+  - OTIS
+  - Ontario Tracking Information System
+  - SIU
+  - Structured Intervention Unit
+  - Special Investigations Unit
+  - Toronto Police Service
+  - Crime Severity Index
+  - double machine learning
+  - GEE
+  - Hawkes process
+  - Goffmanian churn
+  - MOIRAIS
+
+# ── License ───────────────────────────────────────────────────────
+license: cc-by-4.0   # standard for an open paper deposit
+access_right: open
+language: eng
+
+# ── Funding (none) ────────────────────────────────────────────────
+grants: []
+
+# ── Communities (apply for membership; non-blocking) ──────────────
+communities:
+  - identifier: criminology
+  - identifier: software-papers
+
+# ── Related identifiers ────────────────────────────────────────
+# MRM gets a FRESH Zenodo deposit (separate from the MOIRAIS
+# package records at 10.5281/zenodo.18750663 and .18752220, which
+# are for MOIRAIS the toolkit, not MRM the framework).
+# Cross-link the MRM record back to the MOIRAIS records as
+# "is supplement to", and to the software repo + datasets.
+related_identifiers:
+  - identifier: "10.5281/zenodo.20096350"
+    relation: isSupplementTo
+    scheme: doi
+    resource_type: publication-preprint
+    notes: |
+      MOIRAIS package paper (v3, current public release). MRM is
+      one named flagship application of MOIRAIS; the package paper
+      covers the broader multi-domain toolkit. v1 (10.5281/zenodo.
+      18750663) and v2 (10.5281/zenodo.18752220) are now PRIVATE
+      and superseded by v3.
+
+  - identifier: "10.5281/zenodo.MOIRAIS_SOFTWARE_DOI_TBD"
+    relation: isSupplementedBy
+    scheme: doi
+    resource_type: software
+    notes: |
+      MOIRAIS software DOI (auto-minted via the GitHub-Zenodo
+      integration on each release of hadesllm/moirais; metadata
+      pinned in moirais-dev/.zenodo.json). Fill in once the first
+      release v0.2.0 has been tagged and Zenodo has minted the
+      sibling DOI.
+
+  - identifier: "10.5281/zenodo.OTIS_DATASET_DOI_TBD"
+    relation: references
+    scheme: doi
+    resource_type: dataset
+    notes: |
+      Canonical OTIS aggregate file deposit (planned).
+
+  - identifier: "10.5281/zenodo.ONTARIO_SIU_DATASET_DOI_TBD"
+    relation: references
+    scheme: doi
+    resource_type: dataset
+    notes: |
+      Scraped Ontario SIU canonical CSV (65-column schema,
+      case-number-keyed; planned).
+
+  - identifier: "https://github.com/hadesllm/moirais"
+    relation: isSourceOf
+    scheme: url
+    resource_type: software
+    notes: Code repository (MRM is implemented in moirais.otis_*,
+      moirais.siuiap, moirais.siu/, moirais.sprott_doob,
+      moirais.doob_trends, and the moirais.tps_* modules).
+
+# ── References (selected; the LaTeX bibliography has the full list) ─
+references:
+  - >-
+    Sprott, J. B., & Doob, A. N. (2021, February). Solitary
+    Confinement, Torture, and Canada's Structured Intervention
+    Units. Centre for Criminology & Sociolegal Studies, University
+    of Toronto.
+  - >-
+    Sprott, J. B., Doob, A. N., & Iftene, A. (2021, May). Do
+    Independent External Decision Makers Ensure that "An Inmate's
+    Confinement in a Structured Intervention Unit Is to End as
+    Soon as Possible"? Schulich School of Law, Dalhousie
+    University.
+  - >-
+    Doob, A. N. (2020). Affidavit of Anthony N. Doob (Federal
+    Court of Canada, File T-539-20, Application Record Vol. 3 of
+    5, pp. 778-795). Canadian Civil Liberties Association et al.
+    v. Attorney General of Canada.
+  - >-
+    United Nations General Assembly (2015). United Nations
+    Standard Minimum Rules for the Treatment of Prisoners (the
+    Nelson Mandela Rules). A/Res/70/175.
+  - >-
+    Wallace, M., Turner, J., Matarazzo, A., & Babyak, C. (2009).
+    Measuring crime in Canada: Introducing the Crime Severity
+    Index and improvements to the Uniform Crime Reporting
+    Survey. Statistics Canada Catalogue no. 85-004-X.
+  - >-
+    Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E.,
+    Hansen, C., Newey, W., & Robins, J. (2018). Double/debiased
+    machine learning for treatment and structural parameters.
+    The Econometrics Journal, 21(1), C1-C68.
+  - >-
+    Goffman, E. (1961). Asylums: Essays on the Social Situation
+    of Mental Patients and Other Inmates. Anchor Books.
+
+# ── Notes ─────────────────────────────────────────────────────────
+notes: |
+  This is the canonical MRM framework paper. It is paired with:
+    - the MOIRAIS software DOI (auto-minted via .zenodo.json on
+      each GitHub release of hadesllm/moirais)
+    - the OTIS canonical dataset deposit (planned)
+    - the Ontario SIU scraped corpus dataset deposit (planned)
+  Companion papers planned (see paper Section 1):
+    - Mandela-RF cross-jurisdiction empirical paper
+    - Ontario SIU automation methods paper
+    - MOIRAIS software paper for the Journal of Open Source
+      Software (JOSS), at moirais-dev/dev/sphinx/project/paper.md.

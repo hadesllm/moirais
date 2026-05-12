@@ -1,0 +1,18 @@
+title: |
+  morie: Multi-domain Open Research and Inferential Estimation in R
+authors: |
+  Vansh Singh Ruhela , University of Toronto
+license: CC-BY-4.0
+primary_category: stat.CO
+cross_lists:
+  - stat.ME
+  - stat.AP
+journal_ref: ""
+doi: ""
+abstract_word_count: 159
+arxiv_compile_command: pdflatex main && bibtex main && pdflatex main && pdflatex main
+notes: |
+  jss.cls and jss.bst are included in this bundle because the JSS class
+  is not part of the arXiv-supported class library. Bundle was assembled
+  by copying main.tex + refs.bib + jss.cls + jss.bst and extracting the
+  text-only abstract from \Abstract{...}.

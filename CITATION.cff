@@ -1,13 +1,14 @@
 cff-version: 1.2.0
 message: "If you use morie in your research, please cite the language-specific software paper (R: DOI 10.5281/zenodo.20111233; Python: DOI 10.5281/zenodo.20096350). Where applicable to your work, also cite the MRM framework paper (DOI 10.5281/zenodo.20096075) and the Hawkes-process methodology paper (DOI 10.5281/zenodo.20102198)."
-title: "morie: Multi-domain Open Research and Inferential Estimation in R"
+title: "morie: Multi-domain Open Research and Inferential Estimation"
 authors:
   - family-names: "Ruhela"
     given-names: "Vansh Singh"
     orcid: "https://orcid.org/0009-0004-1750-3592"
     name-particle: "Singh"
-    # Hindi IPA: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/
-version: "0.3.0"
+    # morie pronunciation: /ˈmɔɪraɪ/ (like Greek Moirai)
+    # IPA: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/
+version: "0.4.0"
 date-released: "2026-05-11"
 url: "https://github.com/hadesllm/morie"
 repository-code: "https://github.com/hadesllm/morie"
@@ -27,13 +28,13 @@ identifiers:
     description: "Hawkes-process methodology paper."
 preferred-citation:
   type: software
-  title: "morie: Multi-domain Open Research and Inferential Estimation in R"
+  title: "morie: Multi-domain Open Research and Inferential Estimation"
   authors:
     - family-names: "Ruhela"
       given-names: "Vansh Singh"
       orcid: "https://orcid.org/0009-0004-1750-3592"
   year: "2026"
-  version: "0.3.0"
+  version: "0.4.0"
   doi: "10.5281/zenodo.20111233"
   url: "https://doi.org/10.5281/zenodo.20111233"
 references:
@@ -44,12 +45,12 @@ references:
         given-names: "Vansh Singh"
         orcid: "https://orcid.org/0009-0004-1750-3592"
     year: "2026"
-    version: "0.3.0"
+    version: "0.4.0"
     doi: "10.5281/zenodo.20096350"
     url: "https://doi.org/10.5281/zenodo.20096350"
     notes: "Python companion software paper (same toolkit, Python implementation)."
   - type: generic
-    title: "MRM Framework: Multi-Source Statistical Foundation for Canadian Carceral, Police, and Oversight Data"
+    title: "MRM: Multilevel Reconciliation Methodology -- A multi-source statistical foundation for Canadian carceral, police, and oversight data"
     authors:
       - family-names: "Ruhela"
         given-names: "Vansh Singh"

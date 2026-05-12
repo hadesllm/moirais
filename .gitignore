@@ -66,3 +66,4 @@ r-package/morie/vignettes/*.toc
 r-package/morie/vignettes/*.out
 r-package/morie/vignettes/*.synctex.gz
 r-package/morie/vignettes/*.tex
+backups/

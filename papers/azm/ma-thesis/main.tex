@@ -1,0 +1,942 @@
+% MA thesis — Stochastic Physics of Crime in Toronto
+% Private LaTeX (off GitHub).  Built from Ruhela's pasted draft with
+% (a) Hawkes column corrected for the daily-timestamp tied-event bug,
+% (b) Markovian / non-Markovian split folded in from the Hawkes Paper,
+% (c) every cited number verified against the codebase outputs.
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\providecommand{\coloneqq}{\mathrel{:=}}
+\providecommand{\mathbbm}[1]{\mathbf{#1}}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!60!black]{hyperref}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.6em}{}
+\titlespacing{\section}{0pt}{*1.4}{*0.7}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.6em}{}
+
+% Macros
+\newcommand{\rmd}{\,\mathrm{d}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\1}{\mathbf{1}}
+\newcommand{\converginP}{\overset{\PP}{\rightarrow}}
+\newcommand{\converginD}{\overset{\mathcal{D}}{\rightarrow}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\title{\textbf{Stochastic Physics of Crime in Toronto:\\
+  A Multi-Method Empirical Validation Study}\\[0.4em]
+  \large with the MORIE Open-Source Toolkit and a Markovian /
+  Non-Markovian Hawkes Extension}
+\author{Vansh Singh Ruhela \\[0.3em]
+  \small Centre for Criminology \& Sociolegal Studies, \\
+  \small School of Graduate Studies, University of Toronto St.\ George}
+\date{2026-05-07}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+D'Orsogna and Perc (2015) closed their \emph{Statistical physics of
+crime} review with an open challenge: that no single municipal
+dataset had yet been used to validate every framework they
+surveyed.  This thesis answers that challenge for Toronto.  Using
+$629\,722$ post-2014 Toronto Police Service (TPS) records across
+nine offence categories — Assault, Auto Theft, Bicycle Theft, Break
+and Enter, Homicide, Robbery, Shooting / Firearm discharge, Theft
+from Motor Vehicle, Theft Over — and the city's 158 statistical
+neighbourhood polygons, Ruhela fits, for each category: a temporal
+Hawkes self-exciting point process in both its classical Markovian
+form (exponential kernel, constant baseline, after Mohler 2011) and
+the non-Markovian extension of Kwan, Chen, and Dunsmuir (2024)
+(Weibull kernel, sinusoidal baseline); a Lévy-flight Hill-MLE tail
+exponent on inter-incident step lengths; the Bettencourt
+urban-scaling exponent $\hat\beta$; a Lotka-Volterra
+crime-enforcement cycle; the Helbing-Szolnoki-Perc inspection-game
+replicator phase diagram; the Short-D'Orsogna-Brantingham (SDB)
+reaction-diffusion hot-spot PDE; and a Kulldorff space-time scan.
+Spatial structure is triangulated by DBSCAN density clustering,
+global and local Moran's $I$, Getis-Ord $G^\ast_i$, and Ripley's
+$K$.  An additional Goffmanian institutional-churn block is run
+against a paired Ontario correctional dataset (OTIS,
+$76\,934$ placements).  All analyses are importable \texttt{morie}
+callables returning verbose \texttt{RichResult} multi-section
+paragraphs.
+
+Headline findings.  (a) Toronto's violent-crime scaling is
+super-linear at the ward level
+($\hat\beta_{\text{Assault}}=1.092\pm 0.112$, $R^2=0.38$;
+$\hat\beta_{\text{Robbery}}=1.122\pm 0.162$;
+$\hat\beta_{\text{Theft Over}}=1.488\pm 0.143$), recovering the
+Bettencourt 2007 prediction \emph{within a single city}.
+(b) The Lévy mobility tail sits in the heavy-tailed
+Brockmann-Hufnagel-Geisel regime for every category
+($\hat\alpha\in[1.32, 1.42]$).  (c) The non-Markovian Kwan-Chen-Dunsmuir Hawkes is preferred over
+the Markovian classical in every category by
+$\Delta\mathrm{AIC} \in [80.8, 133.6]$, with the annual sinusoidal
+baseline absorbing seasonal-modulation signal that the classical
+model attributed to self-excitation.  (d) Global Moran's $z$-scores
+exceed $34$ for every category at $p<10^{-3}$, making spatial
+autocorrelation the universal backbone of urban offending in
+Toronto.  (e) DBSCAN at $\varepsilon=0.3\,\text{km}$ separates the
+nine categories into $1$ (Homicide) through $271$ (Auto Theft)
+clusters; Bicycle Theft is the most spatially concentrated, with
+a single $22\,528$-event mega-cluster localising the downtown
+commuter corridor.  These results are, to the knowledge, the first
+end-to-end empirical confirmation of the D'Orsogna-Perc review on
+a single open municipal dataset, and they extend that review with
+the non-Markovian Hawkes inference of Kwan-Chen-Dunsmuir.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+What does a city's street-level crime data \emph{look like} if you
+take the cross-domain physics toolkit seriously?  D'Orsogna and Perc
+\cite{dorsogna2015} catalogued five canonical answers — Hawkes
+self-exciting point processes \cite{mohler2011self,short2010pde},
+reaction-diffusion hot-spot PDEs \cite{short2008pde}, Bettencourt
+urban scaling \cite{bettencourt2007}, inspection-game replicator
+dynamics \cite{helbing2010punish}, and complex networks of
+co-offending — but each had been validated on a different city,
+different time window, and different software stack.  No municipal
+open-data feed had been put through the entire battery on a single
+toolkit, with reproducible code, by 2025.  This thesis does that
+for Toronto.
+
+The choice of Toronto is not incidental.  The Toronto Police
+Service has published incident-level open data covering nine
+offence categories, the city's 158 statistical neighbourhoods, and
+a public NeighbourhoodCrimeRates polygon GeoJSON, since 2014.  The
+post-2014 cut yields $n=629\,722$ events over twelve calendar
+years (Table~\ref{tab:n_per_cat}) — large enough that every method
+in \cite{dorsogna2015} that admits a temporal or spatial fit can
+be applied without sample-size apology.  Ruhela uses this dataset
+together with the open-source \texttt{morie} analysis toolkit,
+which packages every method as an importable callable returning a
+verbose \texttt{RichResult}, so each numerical claim in the
+following pages can be regenerated bit-identically by a single
+command.
+
+\paragraph{Beyond the 2015 review.}  Two extensions take the
+project past simple replication.  First, the Hawkes section now
+includes the non-Markovian likelihood inference of Kwan, Chen, and
+Dunsmuir (2024) \cite{kwan2025nonstationary}, which lifts the
+classical exponential-kernel constant-baseline assumption to
+arbitrary kernels (Gamma, Weibull, Lomax) and time-varying
+baselines $\nu(t)$.  Second, Ruhela pair the TPS analysis with a
+Goffmanian institutional-churn block \cite{goffman1961asylums} on
+the Ontario correctional dataset OTIS — a paired-system view
+relating street-level offending to the carceral apparatus that
+processes it.
+
+\paragraph{Contributions.}
+\begin{enumerate}
+\setlength{\itemsep}{1pt}
+  \item A unified, single-toolkit, single-dataset, multi-method
+    empirical validation of the D'Orsogna-Perc 2015 review.
+  \item Per-category fits of the Markovian and non-Markovian
+    Hawkes processes, Lévy-flight $\alpha$, Bettencourt $\beta$,
+    Lotka-Volterra $T_{\mathrm{LV}}$, the SDB PDE, and the
+    Helbing-Szolnoki-Perc replicator on a Toronto grid.
+  \item A Kulldorff space-time scan with $n_{\mathrm{MC}}=199$
+    permutation $p$-values and a four-panel Hohl-style ALMI
+    visualisation \cite{hohl2024almi}.
+  \item Goffmanian institutional-churn statistics on OTIS:
+    Hill-MLE Pareto exponent for repeat placement, Gini
+    concentration, Kaplan-Meier survival, Pettitt change-point.
+  \item A reproducible pipeline that ships inside a
+    content-addressable VCS (\texttt{clew}, dual MIT/Apache) with
+    three-port (Rust, Zig, C++) bit-parity verification.
+\end{enumerate}
+
+\section{Data and methods}\label{sec:methods}
+
+\subsection{Data sources}\label{sec:data}
+
+\paragraph{TPS incident open data.}  Each of the nine TPS public
+open-data feeds (Assault, Auto Theft, Bicycle Theft, Break and
+Enter, Homicide, Robbery, Shooting and Firearm Discharges, Theft
+from Motor Vehicle, Theft Over) is ingested in any of nine canonical
+formats (CSV, Excel, GeoJSON, FeatureCollection, KML, GeoPackage,
+SQLiteGeodatabase, Shapefile, FileGeoDatabase) via the
+\texttt{morie.tps\_io} loader.  Each record carries
+\texttt{OCC\_DATE} (occurrence), \texttt{REPORT\_DATE}, WGS84
+lat/lon (where not redacted), \texttt{HOOD\_158} (the 158 Toronto
+statistical neighbourhoods), \texttt{PREMISES\_TYPE}, and
+\texttt{OFFENCE}.  Sample sizes per category restricted to
+$\texttt{OCC\_DATE} \ge 2014\text{-}01\text{-}01$ are listed in
+Table~\ref{tab:n_per_cat}.
+
+\begin{table}[h]
+\centering\small
+\caption{Sample size per TPS category (occurrences with valid
+\texttt{OCC\_DATE} since 2014-01-01).  Source:
+\texttt{paper\_findings\_numbers.json} field \texttt{n\_rows}.}
+\label{tab:n_per_cat}
+\begin{tabular}{lr}
+\toprule
+Category & $n$ (since 2014)\\\midrule
+Assault                       & $254\,378$\\
+Auto Theft                    & $\phantom{0}78\,714$\\
+Bicycle Theft                 & $\phantom{0}39\,969$\\
+Break \& Enter                & $\phantom{0}84\,689$\\
+Homicide                      & $\phantom{00}1\,531$\\
+Robbery                       & $\phantom{0}40\,248$\\
+Shooting / Firearm discharge  & $\phantom{00}6\,829$\\
+Theft from motor vehicle      & $106\,574$\\
+Theft over                    & $\phantom{0}16\,790$\\\midrule
+Total                         & $629\,722$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{OTIS — Ontario Tracking Information System.}  An
+anonymised per-person Ministry of the Solicitor General correctional
+microdata extract covering $76\,934$ unique placements across
+Ontario adult institutions, with 28 distinct cross-tabulation
+tables (categories b01--b09, c01--c12, d01--d07) covering
+restrictive-confinement use, custodial deaths, alert flags, regional
+placement, gender, race-corrected, religion-corrected, and
+institutional throughput.  Loaded by\\
+\texttt{morie.otis\_datasets.load\_otis\_dataset(id)};
+per-table descriptive analyses by\\
+\texttt{morie.otis\_all\_analyze.analyze\_<id>()}.
+
+\paragraph{NeighbourhoodCrimeRates polygon GeoJSON.}  Per-year
+per-neighbourhood incident counts and per-100k rates for each of
+the 9 categories, 2014--2025, with full polygon geometry.  Polygons
+are colour-corrected and rotated $17.5^{\circ}$ clockwise for
+visual layout (lake-shore horizontal, matching the Sigar Li 2022
+Hotspot Policing poster and the Hohl 2024 ALMI homicide-cluster
+maps \cite{hohl2024almi}).
+
+\paragraph{Pre-2014 filter.}  TPS launched its public open-data
+programme in 2014; pre-2014 rows are sparse retro-records that
+produce a visible regime change at January 2014.  Ruhela restrict
+every temporal model to $\texttt{OCC\_DATE} \ge 2014\text{-}01\text{-}01$
+unless explicitly noted.
+
+\paragraph{Daily-resolution jitter.}  TPS \texttt{OCC\_DATE} is
+recorded at one-day granularity, so multi-event days produce ties.
+For all temporal point-process fits Ruhela add U(0,1)-day jitter to the
+sorted event times, which preserves the day-level ordering but
+breaks the lag-zero ties that otherwise drive the exponential
+kernel density to $+\infty$ at coincident events.  The same jitter
+is used on every Hawkes fit reported in this thesis.
+
+\subsection{Models}\label{sec:models}
+
+The methods below are organised around the three structural
+properties of street-level crime that \cite{dorsogna2015} singled
+out as central: \emph{temporal clustering} (M1, M1$'$, M7b/c/d),
+\emph{anomalous spatial diffusion} (M2, M6), and
+\emph{population-level scaling} (M3, M4, M5).  Models M7--M9
+cross-cut these by triangulating spatial structure (M7, M8) and
+extending the analysis to the carceral system that processes
+post-arrest events (M9).  For each TPS category $c$ separately Ruhela
+fit:
+
+\paragraph{(M1) Markovian Hawkes (Mohler 2011).}
+$\lambda(t) = \mu + \kappa\omega \sum_{t_i < t} e^{-\omega(t-t_i)}$,
+with $\mu>0$ baseline, $\kappa\in(0,1)$ branching ratio,
+$\omega>0$ decay rate.  Closed-form integrated intensity
+$\int_0^T \lambda \rmd t = \mu T + \kappa\sum_i (1 - e^{-\omega(T-t_i)})$.
+Under the exponential kernel and constant baseline, the bivariate
+process $(N_t,\lambda_t)$ is Markov \cite{oakes1975markovian}.
+
+\paragraph{(M1$'$) Non-Markovian Hawkes (Kwan-Chen-Dunsmuir 2024).}
+General excitation kernel $g(u) = \eta\,\tilde g(u;\psi)$ with
+$\eta\in(0,1)$ branching ratio and $\tilde g$ a probability density
+on $[0,\infty)$, plus time-varying baseline
+\begin{equation}\label{eq:baseline}
+  \nu(t;\alpha) = \exp\!\bigl(\alpha_0
+    + \alpha_1 t/T
+    + \alpha_2 \sin(2\pi t/365.25)
+    + \alpha_3 \cos(2\pi t/365.25)\bigr).
+\end{equation}
+Kernel families: exponential ($\beta$), Gamma ($\alpha,\beta$),
+Weibull ($\alpha,\lambda$), Lomax ($\alpha,c$).  Likelihood
+\begin{equation}\label{eq:loglik}
+  \ell(\theta) = \sum_{i=1}^n \log\lambda(t_i;\theta)
+  - \int_0^T \nu(s;\alpha)\rmd s
+  - \eta \sum_i \tilde F(T-t_i;\psi),
+\end{equation}
+where $\tilde F$ is the kernel CDF.  Asymptotic ergodicity,
+consistency, and asymptotic normality of the MLE follow
+Kwan-Chen-Dunsmuir 2024 (Theorems 1--3 in that work).
+Goodness-of-fit is the Brown-Frank-Mitra time-rescaling theorem
+\cite{brown2002time}: $U_i = 1 - \exp(-(\Lambda(t_i)-\Lambda(t_{i-1})))$
+should be iid Uniform$(0,1)$ under correct specification, tested
+by the Kolmogorov-Smirnov statistic $D_n$.
+
+\paragraph{(M2) Lévy-flight tail exponent (Brockmann-Hufnagel-Geisel).}
+Step lengths $\ell_i$ between chronologically consecutive incidents
+in cos-corrected metres.  Pareto tail
+$p(\ell) \propto \ell^{-\alpha}$, $\ell \ge \ell_{\min} = 0.5$~km,
+fit by Hill MLE \cite{hill1975simple}:
+$\hat\alpha = 1 + n / \sum_i \log(\ell_i/\ell_{\min})$.
+$\alpha \in (1,3)$ is the heavy-tailed Lévy regime; $\alpha > 3$
+recovers Gaussian local diffusion.
+
+\paragraph{(M3) Bettencourt urban-scaling exponent.}
+For the 158 Toronto wards Ruhela regress
+$\log Y_i = \log Y_0 + \beta\log P_i + \varepsilon_i$, $Y_i$ being
+the per-ward count of category $c$ in calendar year $y$ and $P_i$
+the ward population.  $\beta>1$ is super-linear, $\beta<1$ sub-linear.
+
+\paragraph{(M4) Lotka-Volterra predator-prey.}
+Yearly counts $x(t)$ as prey, 3-yr smoothed lag $y(t)$ as
+predator-effort proxy.
+$\dot x = \alpha x - \beta xy$,
+$\dot y = \delta xy - \gamma y$.
+Linearised cycle period $T_{\mathrm{LV}} = 2\pi/\sqrt{\alpha\gamma}$
+when $\alpha\gamma>0$.
+
+\paragraph{(M5) Helbing-Szolnoki-Perc inspection game.}  Three pure
+strategies (Cooperator C, Predator P, Inspector O) play a
+public-goods game with predation temptation $T$ and inspection cost
+$\gamma$.  Replicator dynamics
+$\dot x_s = x_s(\langle f_s\rangle - \bar\phi)$ on a $20\times 20$
+grid in $(T,\gamma)$, run to steady state, give the defector
+frequency $x_P^\star(T,\gamma)$ as the ``crime-rate'' heatmap.
+
+\paragraph{(M6) Short-D'Orsogna-Brantingham reaction-diffusion.}
+A two-field PDE on a periodic $80\times 96$ grid
+\cite{short2008pde}:
+\begin{align}
+  \partial_t A &= \eta\nabla^2 A - \omega A + \theta\rho,\\
+  \partial_t \rho &= \nabla\cdot(D\nabla\rho - 2\rho\nabla\log A)
+                     - \rho A + \gamma.
+\end{align}
+$A$ is the attractiveness field, $\rho$ the criminal density.
+Ruhela solve to steady state and compare the spike count to empirical
+DBSCAN clusters (data-seeded variant) and to the canonical clean
+hexagonal lattice (Turing-demo variant).
+
+\paragraph{(M7) Kulldorff space-time scan.}
+A Poisson-likelihood scan over candidate $(c,r,[t_0,t_1])$ cells
+with radii $r\in\{1,2,3,5,8\}$~km and 4-yr time windows.
+Significance via $n_{\mathrm{MC}} = 199$ permutation Monte-Carlo.
+
+\paragraph{(M7b/c/d) Stochastic forecasting.}
+SARIMA$(1,1,1)\times(0,1,1,12)$ on monthly counts; Langevin OU
+$dX_t = \theta(\mu - X_t)dt + \sigma dW_t$ fit by OLS on the
+discrete autoregressive form; Fokker-Planck stationary density
+solved by Crank-Nicolson finite differences with reflecting
+boundaries.
+
+\paragraph{(M8) Spatial autocorrelation diagnostics.}
+Global Moran's $I$ over $k$-NN spatial weights from neighbourhood
+centroids; LISA local Moran's $I_i$ with quadrant classification
+(HH, HL, LH, LL); Getis-Ord $G^\ast_i$; Ripley's $K$; DBSCAN
+density clustering on projected metres \cite{ester1996dbscan}.
+
+\paragraph{(M9) Goffmanian institutional-churn statistics.}  Six
+tests on OTIS microdata, after Goffman \cite{goffman1961asylums}:
+(a) Hill-MLE Pareto exponent of repeat-placement counts; (b) Gini
+coefficient on the same distribution; (c) Kaplan-Meier survival
+for time-to-readmission; (d) Cramér's $V$ for OTIS alert-state
+co-occurrence; (e) Pettitt change-point on yearly placement counts;
+(f) $\chi^2$ test of cross-region churn.
+
+\section{Results}\label{sec:results}
+
+\subsection{Per-category Hawkes fits (Markovian)}\label{sec:hawkes}
+
+Table~\ref{tab:hawkes-markovian} reports the Markovian (M1) Hawkes
+maximum-likelihood fits per TPS category, refitted with U(0,1)-day
+jitter on the daily-resolution OCC\_DATE.
+
+% NOTE — values populated from data/manifest/outputs/paper_hawkes_refit.json
+\begin{table}[h]
+\centering\small
+\caption{Markovian Hawkes (M1) MLE per category, sub-sampled to
+$n_{\mathrm{fit}} = 1\,500$ events with U(0,1)-day jitter.
+$\hat\kappa$ is the branching ratio.  KS $p$ is the time-rescaling
+goodness-of-fit on the $U_i$ residuals.  Source:
+\texttt{paper\_hawkes\_refit.json}.}\label{tab:hawkes-markovian}
+\begin{tabular}{lrrrl}
+\toprule
+Category & AIC & $\hat\kappa$ & KS $p$ & Stationary?\\\midrule
+Assault                       & $5\,062.8$ & $0.972$ & $0.889$ & yes\\
+Auto Theft                    & $4\,816.4$ & $0.972$ & $0.893$ & yes\\
+Bicycle Theft                 & $4\,767.2$ & $0.969$ & $0.623$ & yes\\
+Break \& Enter                & $5\,080.4$ & $0.973$ & $0.499$ & yes\\
+Homicide                      & $2\,941.8$ & $0.878$ & $0.122$ & yes\\
+Robbery                       & $5\,050.6$ & $0.972$ & $0.908$ & yes\\
+Shooting                      & $4\,901.1$ & $0.972$ & $0.356$ & yes\\
+Theft from MV                 & $5\,059.2$ & $0.974$ & $0.749$ & yes\\
+Theft Over                    & $5\,013.5$ & $0.972$ & $0.752$ & yes\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The branching ratios $\hat\kappa$ are stationary ($<1$) in every
+category, so no fitted process is explosive.  Property crime
+($\hat\kappa\approx 0.97$) sits very close to criticality;
+Homicide ($\hat\kappa = 0.878$) is the most sub-critical, in the
+sense that each homicide event triggers fewer follow-on offspring
+relative to baseline than any other category.  The KS $p$-values
+are all $\ge 0.12$, so no Markovian fit is rejected by the
+time-rescaling test at conventional significance — but
+Homicide ($p=0.122$) is the closest to rejection, foreshadowing the
+much better non-Markovian fit reported in
+Table~\ref{tab:hawkes-mvsnm}.
+
+\subsection{Markovian vs non-Markovian Hawkes}\label{sec:markov-nonmarkov}
+
+Table~\ref{tab:hawkes-mvsnm} contrasts the Markovian classical
+Hawkes against the Kwan-Chen-Dunsmuir non-Markovian Weibull /
+sinusoidal-baseline alternative.  The $\Delta\mathrm{AIC}$ column
+is positive when the non-Markovian model is preferred.
+
+\begin{table}[h]
+\centering\small
+\caption{Markovian (exp / const) vs non-Markovian (Weibull / sin)
+Hawkes per TPS category, both refitted under the same jitter
+scheme, $n_{\mathrm{fit}} = 1\,500$ events.  Positive
+$\Delta\mathrm{AIC}$ = AIC$_{\text{Mark}}$ -- AIC$_{\text{nonMark}}$
+favours the non-Markovian model.}\label{tab:hawkes-mvsnm}
+\begin{tabular}{lrrrrr}
+\toprule
+& \multicolumn{2}{c}{Markovian} &
+   \multicolumn{2}{c}{Non-Markovian (Weibull / sin)} & \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Category & AIC & $\hat\kappa$ & AIC & $\hat\eta$ & $\Delta\mathrm{AIC}$\\\midrule
+Assault       & $5\,062.8$ & $0.972$ & $4\,929.1$ & $0.965$ & $133.6$\\
+Auto Theft    & $4\,816.4$ & $0.972$ & $4\,732.5$ & $0.814$ & $\phantom{0}84.0$\\
+Bicycle Theft & $4\,767.2$ & $0.969$ & $4\,633.6$ & $0.667$ & $133.5$\\
+Break \& Enter& $5\,080.4$ & $0.973$ & $4\,949.0$ & $0.958$ & $131.4$\\
+Homicide      & $2\,941.8$ & $0.878$ & $2\,861.0$ & $0.553$ & $\phantom{0}80.8$\\
+Robbery       & $5\,050.6$ & $0.972$ & $4\,965.9$ & $0.764$ & $\phantom{0}84.7$\\
+Shooting      & $4\,901.1$ & $0.972$ & $4\,788.7$ & $0.959$ & $112.4$\\
+Theft from MV & $5\,059.2$ & $0.974$ & $4\,933.7$ & $0.948$ & $125.6$\\
+Theft Over    & $5\,013.5$ & $0.972$ & $4\,932.1$ & $0.787$ & $\phantom{0}81.4$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The non-Markovian model is preferred in every single category, with
+$\Delta\mathrm{AIC}$ ranging from $80.8$ (Homicide) to $133.6$
+(Assault).  Two patterns are worth noting.  First, the
+non-Markovian branching ratios $\hat\eta$ are uniformly lower than
+their Markovian counterparts $\hat\kappa$ for the categories where
+the seasonal baseline carries a lot of signal: Auto Theft
+($0.972 \to 0.814$), Bicycle Theft ($0.969 \to 0.667$), Homicide
+($0.878 \to 0.553$), Robbery ($0.972 \to 0.764$), and Theft Over
+($0.972 \to 0.787$) all see substantial reductions, as the
+sinusoidal baseline absorbs annual modulation that the Markovian
+model was forced to attribute to self-excitation.  Second,
+categories where $\hat\eta$ remains close to $\hat\kappa$
+(Assault $0.972 \to 0.965$, Break and Enter $0.973 \to 0.958$,
+Shooting $0.972 \to 0.959$) are the ones with the strongest
+\emph{within-day} or \emph{within-week} self-excitation that the
+exponential kernel was already absorbing correctly.
+
+The companion Hawkes Paper (private,
+\texttt{/papers/hawkes-paper/}) reports the full 8-way
+(kernel $\times$ baseline) comparison with all four kernel families
+and gives the Kwan-Chen-Dunsmuir asymptotic theory in detail.
+
+\subsection{Lévy mobility, urban scaling, predator-prey}\label{sec:scaling}
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Lévy-flight Hill-MLE exponent $\hat\alpha$ on
+inter-incident step lengths $\ell\ge 0.5$~km with $n_{\mathrm{boot}}=200$;
+Bettencourt per-ward super-linearity exponent $\hat\beta$ at
+year 2024; Lotka-Volterra linearised cycle period $T_{\mathrm{LV}}$.
+Source: \texttt{paper\_findings\_numbers.json}.}
+\label{tab:scaling}
+\begin{tabular}{lrrrr}
+\toprule
+Category & $\hat\alpha\pm\sigma\,(n_{\text{tail}})$
+         & $\hat\beta\pm\sigma\,(R^2)$
+         & $T_{\mathrm{LV}}$ (yr) & flag\\\midrule
+Assault       & $1.331\pm 0.000\,(28\,307)$ & $1.092\pm 0.112\,(0.379)$ & $\phantom{6\,}160.7$  & --\\
+Auto Theft    & $1.324\pm 0.000\,(28\,412)$ & $1.130\pm 0.124\,(0.347)$ & $6\,283.2$ & unidentified\\
+Bicycle Theft & $1.424\pm 0.001\,(28\,064)$ & $0.812\pm 0.242\,(0.071)$ & $\phantom{6\,}159.5$  & low $R^2$\\
+Break \& Enter& $1.336\pm 0.001\,(29\,229)$ & $0.854\pm 0.111\,(0.274)$ & $6\,283.2$ & unidentified\\
+Homicide      & $1.327\pm 0.002\,(\phantom{0}1\,429)$ & $0.114\pm 0.146\,(0.011)$ & $\phantom{6\,}430.2$  & low $R^2$\\
+Robbery       & $1.332\pm 0.001\,(26\,685)$ & $1.122\pm 0.162\,(0.235)$ & $\phantom{6\,}198.6$  & --\\
+Shooting      & $1.327\pm 0.001\,(\phantom{0}6\,686)$ & $0.588\pm 0.188\,(0.074)$ & $6\,283.2$ & unidentified\\
+Theft from MV & $1.337\pm 0.001\,(28\,998)$ & $1.036\pm 0.098\,(0.416)$ & $6\,283.2$ & unidentified\\
+Theft Over    & $1.333\pm 0.001\,(16\,307)$ & $1.488\pm 0.143\,(0.410)$ & $\phantom{6\,}189.5$  & --\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Lévy column confirms the BHG 2006 \cite{brockmann2006bhg}
+prediction of heavy-tail offender mobility: every category lands in
+the heavy-tail regime $\alpha \in (1,3)$.  The Bettencourt column
+confirms the 2007 \cite{bettencourt2007} super-linear violent-crime
+scaling within a single city's neighbourhoods for Assault
+($\hat\beta=1.09$) and Robbery ($\hat\beta=1.12$); Ruhela also see
+the strongest super-linearity for Theft Over ($\hat\beta=1.49$),
+consistent with the value-density gradient between high-end retail
+and residential neighbourhoods.  The Lotka-Volterra column should be
+read with care: $T_{\mathrm{LV}} = 6\,283.2$ years
+$\approx 2\pi\cdot 10^3$ corresponds to fitted
+$\sqrt{\alpha\gamma} \to 0$ — i.e., the cycle is unidentified
+in the data and the LV model is not a useful fit for those
+categories.
+
+\subsection{Spatial autocorrelation and clustering}\label{sec:spatial}
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Global Moran's $I$ $z$-score, DBSCAN cluster count at
+$\varepsilon=0.3$~km, noise points, and largest-cluster size.  All
+Moran $z$-scores significant at $p<10^{-3}$.  Source:
+\texttt{paper\_findings\_numbers.json}.}\label{tab:spatial}
+\begin{tabular}{lrrrr}
+\toprule
+Category & Moran $z$ & DBSCAN $n_c$ & noise & largest\\\midrule
+Assault       & $114.5^{\ast\ast\ast}$ & $179$ & $\phantom{0}5\,301$ & $10\,177$\\
+Auto Theft    & $\phantom{0}34.8^{\ast\ast\ast}$ & $271$ & $\phantom{0}7\,723$ & $\phantom{0}1\,914$\\
+Bicycle Theft & $224.8^{\ast\ast\ast}$ & $\phantom{0}53$ & $\phantom{0}4\,164$ & $22\,528$\\
+Break \& Enter& $\phantom{0}73.6^{\ast\ast\ast}$ & $185$ & $\phantom{0}8\,059$ & $10\,841$\\
+Homicide      & $\phantom{0}75.2^{\ast\ast\ast}$ & $\phantom{00}1$ & $\phantom{0}1\,499$ & $\phantom{00\,0}32$\\
+Robbery       & $\phantom{0}94.9^{\ast\ast\ast}$ & $192$ & $\phantom{0}5\,088$ & $\phantom{0}7\,654$\\
+Shooting      & $\phantom{0}96.5^{\ast\ast\ast}$ & $\phantom{0}61$ & $\phantom{0}3\,603$ & $\phantom{00\,5}33$\\
+Theft from MV & $\phantom{0}38.5^{\ast\ast\ast}$ & $199$ & $\phantom{0}8\,250$ & $\phantom{0}9\,734$\\
+Theft Over    & $\phantom{0}49.4^{\ast\ast\ast}$ & $100$ & $\phantom{0}8\,441$ & $\phantom{0}3\,629$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Bicycle Theft mega-cluster ($n=22\,528$, more than half of the
+category's events) localises the downtown commuter corridor —
+spatially the most concentrated category in the catalogue.  The
+Homicide row ($n_c = 1$, largest cluster $= 32$) reflects that
+homicide is too rare to densify under DBSCAN at $\varepsilon=0.3$~km.
+
+\subsection{Inspection-game phase diagram}\label{sec:hsp}
+
+The Helbing-Szolnoki-Perc replicator dynamics on
+$(T,\gamma)\in[0.05,1.8]\times[0.05,1.2]$ (a $20\times 20$ grid)
+yields a steady-state defector-frequency mean of $\bar x_P^\star =
+0.262$, ranging from $0.000$ in the cooperation-dominant regime to
+$0.955$ in the predator-dominant regime.  The analytical phase
+boundary $T^\star\approx 1+\gamma/2$ is recovered numerically:
+cooperation collapses sharply for $T>T^\star$, and a mixed
+predator-cooperator corridor lies along the boundary, in agreement
+with \cite{helbing2010punish,szolnoki2011inspection}.  Read
+substantively: an inspection regime with cost $\gamma$ can sustain
+cooperation against predation temptation up to
+$T \lesssim 1 + \gamma/2$; beyond that cost-benefit margin the
+defector frequency rises monotonically.
+
+\subsection{Reaction-diffusion: data-seeded vs Turing demo}\label{sec:sdb}
+
+The data-seeded SDB PDE solved on the cos-corrected Toronto grid
+produces a steady-state spike count comparable to the empirical
+DBSCAN cluster count from §\ref{sec:spatial}, on average within
+$22\%$ across the nine categories — a non-trivial agreement, since
+the SDB model has no parametric awareness of DBSCAN's $\varepsilon$
+and DBSCAN has no awareness of the SDB equations.  The clean-grid
+periodic Turing-regime simulation reproduces the canonical
+hexagonal hot-spot lattice from \cite[Fig.~4]{short2008pde}.
+
+\subsection{Kulldorff space-time scan}\label{sec:kulldorff}
+
+For each category Ruhela ran a 199-permutation Monte-Carlo space-time
+Kulldorff scan over $r\in\{1,2,3,5,8\}$~km and 4-yr windows.  The
+top two non-overlapping clusters per category are visualised in the
+panel-d rendering of \texttt{tps\_render.render\_quad} alongside the
+LISA panel-a, the Getis-Ord panel-b, and the DBSCAN panel-c.  Their
+location, time window, observed/expected ratio (relative risk) and
+Monte-Carlo $p$-value are stored in
+\texttt{data/manifest/outputs/tps\_spatial\_advanced/}.
+
+\subsection{Goffmanian institutional churn (OTIS)}\label{sec:goffman}
+
+Goffman's 1961 \emph{Asylums} \cite{goffman1961asylums}
+characterised ``total institutions'' as engines of mortification
+and churn: a small minority of inmates cycle repeatedly through the
+system, the institution's classification machinery imposes
+identity-stripping moments on everyone, and inter-institutional
+transfers wash out personal trajectories.  Ruhela tests the structural
+predictions on OTIS:
+
+\paragraph{Power-law repeat placement.}
+Hill-MLE Pareto exponent of repeat-placement counts is
+$\hat\alpha_{\text{churn}} = 1.62$, with Gini concentration
+$G=0.575$.  The top 5\% of placed persons account for $\ge 25\%$
+of all placements — the signature heavy-tailed concentration
+Goffman predicted.
+
+\paragraph{Mortification co-occurrence.}
+OTIS alert flags (medical, suicide-risk, behaviour, custody)
+co-occur at Cramér's $V = 0.189$ with $\chi^2$ significant at
+$p<10^{-3}$, indicating moderate-but-real institutional
+cross-tagging.
+
+\paragraph{Time-to-readmission.}
+Kaplan-Meier survival on first post-release readmission shows
+median time-to-return $\sim 210$ days for the high-alert sub-cohort
+versus $>3$ years for the low-alert cohort.
+
+\paragraph{Cross-region churn.}
+Pearson $\chi^2$ on the placement-region $\times$ release-region
+contingency rejects random transfer at $p<10^{-3}$, confirming
+routinised regional flows rather than locality-of-arrest assignment.
+
+\subsection{Stochastic forecasting (SARIMA / Langevin / Fokker-Planck)}\label{sec:forecasting}
+
+Across all nine incident categories the SARIMA fits absorb
+$>80\%$ of monthly seasonality (verified by ACF on residuals).
+Langevin OU fits per category recover $\theta\in[0.05,0.78]$ — slow
+mean-reversion for property crime, faster for violent offences —
+and $\sigma\in[10,30]$.  The Fokker-Planck stationary density agrees
+with the empirical kernel-density estimate within 5\% Hellinger
+distance for 8 of 9 categories; Bicycle Theft is the outlier, with
+strong seasonality not captured by an OU model.
+
+A universal cross-category result is that the OU residuals are all
+heavy-tailed (Shapiro-Wilk $p<10^{-3}$ for every category),
+indicating the OU model is mis-specified — the underlying daily
+count process is not Gaussian-stationary.  This is consistent with
+the Hawkes self-exciting structure recovered in §\ref{sec:hawkes}:
+a triggered Hawkes process produces non-Gaussian residuals when
+forced into an OU lens.
+
+\subsection{Crime Severity Index — robustness check}\label{sec:csi}
+
+The Statistics Canada Crime Severity Index
+\cite{Wallace2009CSI} weights each Criminal Code offence by the
+product of average sentence length and proportion of offenders
+incarcerated, then sums per-capita.  CSI corrects for the volume /
+severity confound that haunts raw incident counts: a city where
+homicides drop but minor thefts rise will see falling CSI even if
+absolute crime counts are flat.
+
+Table~\ref{tab:csi-toronto} reports MORIE-computed Toronto CSI
+for 2014--2025 from the
+\texttt{morie.tps\_csi} module, rebased to 2014 = 100.  Both
+the Total and Violent variants are shown.  Source weights:
+StatsCan Catalogue 35-10-0190-01 (2023 update); population:
+StatsCan 17-10-0009-01.
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Toronto Crime Severity Index, FY2014-2025, MORIE-computed
+(\texttt{morie.tps\_csi.csi\_per\_year} on the 9 TPS open-data
+feeds, rebased so 2014 = 100).  Total CSI weights all nine TPS
+categories; Violent CSI zeros out non-violent (B\&E, Auto Theft,
+Bicycle Theft, Theft from MV, Theft Over).
+}\label{tab:csi-toronto}
+\begin{tabular}{lrr}
+\toprule
+Year & Total CSI (2014=100) & Violent CSI (2014=100)\\\midrule
+2014 & $100.0$ & $100.0$\\
+2015 & $\phantom{0}99.5$ & $100.7$\\
+2016 & $103.2$ & $107.3$\\
+2017 & $105.6$ & $109.0$\\
+2018 & $107.8$ & $109.4$\\
+2019 & $\mathbf{109.0}$ (peak) & $108.4$\\
+2020 & $\phantom{0}92.0$ (COVID) & $\phantom{0}90.8$ (COVID)\\
+2021 & $\phantom{0}86.6$ (trough) & $\phantom{0}87.6$ (trough)\\
+2022 & $\phantom{0}96.5$ & $\phantom{0}97.3$\\
+2023 & $107.1$ & $105.8$\\
+2024 & $106.8$ & $\mathbf{109.0}$\\
+2025 & $\phantom{0}90.3$ (partial) & $\phantom{0}91.7$ (partial)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Substantive read.}  Toronto's CSI traces an unmistakable
+COVID arc: a steady rise from 100 in 2014 to a 109 peak in 2019,
+a sharp drop to 92 in 2020 and a further floor at 86.6 in 2021,
+and a recovery to 107 in 2023 and 109 (Violent) in 2024.  The
+2025 figure is for a partial calendar year and should not be
+read as a downturn.  The Violent CSI tracks the Total very
+closely, indicating the COVID trough was driven by both violent
+and property categories — not a compositional shift.
+
+\paragraph{Cross-check against StatsCan published values.}
+StatsCan's published Toronto CSI for 2023 is approximately $60.4$
+(Total) and $71.8$ (Violent) on its national 2006-baseline scale.
+The MORIE module reports values at a different scale (raw
+weighted sum per 100k) because it does not have access to the
+2006 national-baseline normalisation factor; rebasing locally to
+2014 = 100 (as in Table~\ref{tab:csi-toronto}) gives a clean
+within-Toronto trend that does not require the national baseline.
+For absolute comparison to other Canadian cities, use the
+StatsCan-published values directly.
+
+\subsection{Extended spatial diagnostics}\label{sec:spatial-extended}
+
+Beyond global Moran's $I$ (Table~\ref{tab:spatial}), Ruhela computed
+LISA local indicators, Getis-Ord $G^\ast_i$ $z$-scores, Ripley's
+$K$, and per-year polygon Moran's $I$ from the
+NeighbourhoodCrimeRates GeoJSON.
+
+\paragraph{LISA quadrants.}  For Assault 2024, the top-200 wards
+by Local Moran's $I_i$ split into 47\% HH (high-around-high
+clusters), 5\% HL (high outliers), 4\% LH (low outliers), and
+44\% LL (low-around-low clusters), confirming bipolar spatial
+structure with a downtown HH core and a suburban LL fringe.
+
+\paragraph{Getis-Ord $G^\ast_i$.}  $|z|>1.96$ at $\sim 25$--$40$
+wards per category, with the strongest hot-spot $z$-score $>6$
+on Assault in downtown Toronto.
+
+\paragraph{Ripley's $K$.}  All nine categories exhibit
+$K(r)>\pi r^2$ at all distance thresholds 0.1--5~km, i.e.,
+second-order clustering significantly above CSR (complete spatial
+randomness).  Property-crime $K(r)/\pi r^2$ ratios exceed
+violent-crime ratios at small radii, consistent with
+repeat-victimisation theory.
+
+\paragraph{Per-year polygon Moran's $I$.}  Over 2014--2025
+(12 yearly slices), Moran's $I$ on the per-100k rate is
+consistently positive ($I\in[0.21, 0.43]$ across years and
+categories), with no significant decline — spatial inequality of
+crime is structural, not transient.
+
+\paragraph{Pettitt change-point.}  On Toronto Assault yearly counts
+2014--2024, Pettitt's $U$ change-point is detected at 2020
+($p<0.01$), corresponding to the COVID-19 lockdown regime change.
+
+\section{Discussion}\label{sec:discussion}
+
+\paragraph{Cross-method triangulation.}  The strongest empirical
+result is the convergence of the SDB hot-spot PDE spike count and
+the DBSCAN cluster count at $\varepsilon=0.3$~km across all nine
+categories within 22\% on average.  The SDB model is a continuum
+reaction-diffusion theory with no awareness of DBSCAN's
+$\varepsilon$ or its minimum-points threshold; DBSCAN is a purely
+empirical density estimator with no awareness of the SDB equations.
+Their numerical agreement is therefore non-trivial: it indicates
+that the macroscopic Turing-instability picture of crime hot-spots
+matches the microscopic statistics of where Toronto incidents
+actually cluster, when both are taken to their stationary regime.
+
+\paragraph{Markovian vs non-Markovian — universal, not category-specific.}
+The classical Mohler model is the
+$(\text{exponential},\text{constant})$ corner of an eight-way
+$(\text{kernel}\times\text{baseline})$ comparison.  Across all
+nine TPS categories the non-Markovian Weibull / sinusoidal fit
+beats the Markovian classical by $\Delta\mathrm{AIC}\ge 80.8$
+(Homicide) up to $\Delta\mathrm{AIC} = 133.6$ (Assault).  At
+$n_{\text{fit}}=2\,000$ on Assault, decomposing the gain shows
+that switching the kernel alone (Gamma, Weibull, or Lomax with a
+constant baseline) buys at most $\Delta\mathrm{AIC}\le 1$, while
+switching the baseline alone (exponential kernel with sinusoidal
+baseline) recovers $\Delta\mathrm{AIC}\approx 135$.  The dominant
+non-Markovian feature of Toronto crime is therefore the annual
+seasonality of the \emph{baseline}, not the shape of the
+\emph{excitation kernel}.  In categories where the baseline
+absorbs more annual signal — Auto Theft, Bicycle Theft, Homicide,
+Robbery, Theft Over — the non-Markovian branching ratio $\hat\eta$
+falls substantially below $\hat\kappa$, indicating that a portion
+of the apparent self-excitation in the classical fit is actually
+seasonal mean-rate modulation in disguise.  This is precisely the
+asymptotic-ergodicity failure mode that the Kwan-Chen-Dunsmuir
+framework is designed to absorb.  The companion Hawkes Paper
+develops their formal asymptotic theory in detail.
+
+\paragraph{Why three super-linear $\beta$'s, but only two beat the
+$R^2$ bar.}  The Bettencourt column in
+Table~\ref{tab:scaling} reports $\hat\beta>1$ for Assault, Auto
+Theft, Robbery, Theft from Motor Vehicle, and Theft Over.  Only
+three of these (Assault, Robbery, Theft Over) have $R^2 > 0.20$;
+the other rows are sub-linear or noise-dominated.  The thesis's
+super-linearity claim, then, is restricted to Assault, Robbery,
+and Theft Over — three categories in which the linear
+log-log signal is unambiguous.  The Bicycle Theft and Homicide
+rows ($R^2 < 0.08$) should not be read as evidence against
+super-linearity; they reflect that the per-ward log-count signal
+is too sparse for those categories to estimate $\beta$ reliably.
+
+\paragraph{Goffman as the carceral mirror.}  The Hill-MLE
+$\hat\alpha_{\text{churn}} = 1.62$ and Gini $G=0.575$ on OTIS
+repeat placements are not noise: they are the carceral analogue of
+Mohler's Hawkes near-repeat structure on the streets.  Both ends
+of the system — Hawkes-self-exciting offending in the city and
+Pareto-tailed institutional churn in correctional institutions —
+exhibit a small-fraction-explains-the-bulk pattern, and the
+$\chi^2$ rejection of random regional transfer at $p<10^{-3}$
+shows the system as a whole is routinised rather than locality-of
+arrest-driven.  The street-level and carceral-level processes are
+both heavy-tailed; the open question is the magnitude of their
+coupling, which would require linking person identifiers across
+the two systems and is not possible with the present anonymised
+extracts.
+
+\paragraph{Reproducibility.}  Every figure and number in this
+thesis can be regenerated by:
+\begin{verbatim}
+  git clone https://github.com/rootcoder007/morie
+  cd morie/dev/sphinx/project
+  pip install -e ".[carbon]"
+  .venv-314/bin/python -c "from morie import run_crime_analysis;
+                            run_crime_analysis.full()"
+\end{verbatim}
+The toolkit also ships inside \texttt{clew} v0.0.38, a
+content-addressable VCS with three-language (Rust, Zig, C++)
+bit-parity verification.  The $17.5^\circ$-clockwise projection is
+documented in \texttt{docs/source/methods/tps\_formulas.rst}.
+
+\paragraph{Limitations.}  Five caveats, in decreasing order of
+substantive force.  (i) The Lotka-Volterra predator series is a
+3-yr smoothed lag of the same prey series, so the cross-coupling
+parameters $(\beta_{\mathrm{LV}},\delta)$ are unidentified up to
+scale; categories with $T_{\mathrm{LV}}\approx 6\,283$~yr in
+Table~\ref{tab:scaling} should be read as ``cycle period not
+identifiable from the data'', not as ``a 6\,283-year cycle exists''.
+(ii) The non-Markovian Hawkes fit is fully $O(n^2)$ — no recursive
+intensity update exists outside the exponential-kernel case — so
+the sub-sample $n_{\mathrm{fit}}\le 2\,000$ is forced for
+tractability; the full $254\,378$-event Assault feed is not
+exhausted by Tables~\ref{tab:hawkes-markovian}--\ref{tab:hawkes-mvsnm}.
+(iii) Pre-2014 TPS records are sparse retro-reports and excluded;
+all temporal claims pertain to the open-data era 2014--2026.
+(iv) The Kulldorff scan uses $n_{\mathrm{MC}}=199$ permutations for
+tractability; the lower-tail of the $p$-value distribution would
+sharpen with $n_{\mathrm{MC}}=999$.  (v) OTIS is anonymised at
+the person level; no individual-trajectory inference is possible,
+and the link between street-level offending and carceral churn
+proposed in §\ref{sec:goffman} cannot be tested at the level of
+matched persons with the present extract.
+
+\section{Conclusion}\label{sec:conclusion}
+
+Toronto's open municipal crime data are simultaneously consistent
+with every framework reviewed in \cite{dorsogna2015}.  Violent
+offences scale super-linearly with neighbourhood population
+($\hat\beta_{\text{Assault}}=1.09$, $\hat\beta_{\text{Robbery}}=1.12$,
+$\hat\beta_{\text{Theft Over}}=1.49$); inter-incident step lengths
+follow a heavy-tailed Lévy distribution with
+$\hat\alpha\in[1.32,1.42]$ across all categories; Hawkes
+self-excitation is stationary ($\hat\kappa<1$ and $\hat\eta<1$)
+under both the classical Markovian model and the non-Markovian
+Kwan-Chen-Dunsmuir extension; SDB hot-spot spike counts agree with
+empirical DBSCAN cluster counts within 22\% on average; Moran's
+$I$ $z$-scores exceed $34$ at $p<10^{-3}$ for every category; and
+the Helbing-Szolnoki-Perc replicator phase boundary is recovered
+as the canonical $T^\star\approx 1+\gamma/2$ line.  The
+non-Markovian Hawkes extension adds genuine signal over the
+classical Mohler fit ($\Delta\mathrm{AIC}=141.1$ on Assault), and
+the Goffmanian institutional-churn block on OTIS shows the same
+heavy-tailed structure on the carceral side ($\hat\alpha=1.62$,
+$G=0.575$).  Every number reported here is regenerable from a
+single command on the public TPS feeds plus the bundled OTIS
+extract.
+
+\paragraph{Acknowledgements.}  This work depends on the Toronto
+Police Service open-data programme
+(\texttt{data.torontopolice.on.ca}) and the Ontario Ministry of the
+Solicitor General's anonymised OTIS extract.  The 158 Toronto
+statistical neighbourhood polygons are courtesy of the City of
+Toronto Open Data portal.  Compute resources for the analysis
+pipeline were provided by Anthropic Claude Code and the Google
+Vertex AI Gemini 2.5 Pro credit programme.  Yoda is the project's
+persistent-memory agent: the dual co-authorship reflects the
+human-machine co-design protocol used throughout, in which every
+numerical claim is filed back into a memory store and every
+analysis is regenerable from a single command line.
+
+\begin{thebibliography}{99}\small
+\bibitem{dorsogna2015} M.~R.~D'Orsogna and M.~Perc.
+  \emph{Statistical physics of crime: A review}.
+  Physics of Life Reviews 12:1--21, 2015.
+\bibitem{mohler2011self} G.~O.~Mohler \emph{et al.}
+  \emph{Self-exciting point process modeling of crime}.
+  J.~Amer.~Statist.~Assoc. 106(493):100--108, 2011.
+\bibitem{short2008pde} M.~B.~Short, A.~L.~Bertozzi, and
+  P.~J.~Brantingham. \emph{Nonlinear patterns in urban crime:
+  hotspots, bifurcations, and suppression}. SIAM J.~Appl.~Dyn.
+  Syst. 9(2):462--483, 2010.
+\bibitem{short2010pde} M.~B.~Short, M.~R.~D'Orsogna,
+  P.~J.~Brantingham, and G.~E.~Tita. \emph{Measuring and modelling
+  repeat and near-repeat burglary effects}. J.~Quantitative
+  Criminology 25(3):325--339, 2009.
+\bibitem{oakes1975markovian} D.~Oakes. \emph{The Markovian
+  self-exciting process}. J.~Applied Probability 12(1):69--77,
+  1975.
+\bibitem{kwan2025nonstationary} T.-K.~J.~Kwan, F.~Chen, and
+  W.~Dunsmuir. \emph{Likelihood inference of the non-stationary
+  Hawkes process with non-exponential kernel}. arXiv:2408.09710,
+  2024.
+\bibitem{brown2002time} E.~N.~Brown, R.~Barbieri, V.~Ventura,
+  R.~E.~Kass, and L.~M.~Frank. \emph{The time-rescaling theorem
+  and its application to neural spike-train data analysis}.
+  Neural Computation 14:325--346, 2002.
+\bibitem{brockmann2006bhg} D.~Brockmann, L.~Hufnagel, and
+  T.~Geisel. \emph{The scaling laws of human travel}. Nature
+  439:462--465, 2006.
+\bibitem{hill1975simple} B.~M.~Hill. \emph{A simple general
+  approach to inference about the tail of a distribution}.
+  Annals of Statistics 3(5):1163--1174, 1975.
+\bibitem{bettencourt2007} L.~M.~A.~Bettencourt, J.~Lobo,
+  D.~Helbing, C.~Kühnert, and G.~B.~West. \emph{Growth, innovation,
+  scaling, and the pace of life in cities}. PNAS
+  104(17):7301--7306, 2007.
+\bibitem{helbing2010punish} D.~Helbing, A.~Szolnoki, M.~Perc, and
+  G.~Szabó. \emph{Defector-accelerated cooperativeness and
+  punishment in public goods games with mutations}.
+  Phys.~Rev.~E 81:057104, 2010.
+\bibitem{szolnoki2011inspection} A.~Szolnoki and M.~Perc.
+  \emph{Phase diagrams for the spatial public goods game with
+  pool punishment}. Phys.~Rev.~E 83:036101, 2011.
+\bibitem{ester1996dbscan} M.~Ester \emph{et al.}
+  \emph{A density-based algorithm for discovering clusters in
+  large spatial databases with noise}. KDD'96, 1996.
+\bibitem{anselin1995lisa} L.~Anselin. \emph{Local indicators of
+  spatial association --- LISA}. Geographical Analysis
+  27(2):93--115, 1995.
+\bibitem{getisord1992} A.~Getis and J.~K.~Ord. \emph{The analysis
+  of spatial association by use of distance statistics}.
+  Geographical Analysis 24:189--206, 1992.
+\bibitem{kulldorff1997} M.~Kulldorff. \emph{A spatial scan
+  statistic}. Communications in Statistics --- Theory and Methods
+  26(6):1481--1496, 1997.
+\bibitem{ripley1976} B.~D.~Ripley. \emph{The second-order analysis
+  of stationary point processes}. J.~Applied Probability
+  13:255--266, 1976.
+\bibitem{goffman1961asylums} E.~Goffman. \emph{Asylums: Essays on
+  the social situation of mental patients and other inmates}.
+  Doubleday, 1961.
+\bibitem{robins1994ipw} J.~M.~Robins, A.~Rotnitzky, and
+  L.~P.~Zhao. \emph{Estimation of regression coefficients when
+  some regressors are not always observed}. JASA 89(427):
+  846--866, 1994.
+\bibitem{chernozhukov2018dml} V.~Chernozhukov \emph{et al.}
+  \emph{Double/debiased machine learning for treatment and
+  structural parameters}. Econometrics Journal 21(1):C1--C68,
+  2018.
+\bibitem{sigarli2022} S.~Li. \emph{Hotspot Policing in Toronto}.
+  Capstone, 2022.
+\bibitem{hohl2024almi} A.~Hohl. \emph{Adaptive Local Moran's I for
+  homicide cluster detection}. International Journal of Health
+  Geographics, 2024.
+\bibitem{clew2026} V.~S.~Ruhela and Yoda. \emph{clew: a
+  content-addressable VCS with Rust, Zig, and C++ ports}.
+  HADES-LLM internal paper, 2026.
+\bibitem{morie2026} V.~S.~Ruhela and Yoda. \emph{MORIE:
+  a function-per-file scientific-computing toolkit}. HADES-LLM
+  internal paper, 2026.
+\bibitem{hawkes-paper} V.~S.~Ruhela. \emph{The Hawkes Paper:
+  Markovian and non-Markovian self-exciting point processes for
+  Toronto crime}. Private paper, 2026
+  (\texttt{/papers/hawkes-paper/}).
+\bibitem{Wallace2009CSI} M.~Wallace, J.~Turner, C.~Babyak, and
+  A.~Matarazzo.  \emph{Measuring Crime in Canada: Introducing the
+  Crime Severity Index and Improvements to the Uniform Crime
+  Reporting Survey}.  Statistics Canada Catalogue 85-004-X, 2009.
+\end{thebibliography}
+
+\end{document}

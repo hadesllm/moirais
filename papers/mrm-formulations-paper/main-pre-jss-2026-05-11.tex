@@ -1,0 +1,1553 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Encoding + fonts ---------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+% Allow up to 3em of extra stretch on lines TeX can't otherwise
+% break cleanly — kills sub-mm overfulls without affecting normal
+% paragraphs.
+\setlength{\emergencystretch}{3em}
+
+% --- Math ---------------------------------------------------------
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+
+% --- Layout -------------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\usepackage[safe]{tipa}
+
+% --- Theorem environments ----------------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% --- Notation -----------------------------------------------------
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\indep}{\perp\!\!\!\perp}
+\newcommand{\eqdef}{\mathrel{\stackrel{\mathrm{def}}{=}}}
+\newcommand{\T}{\mathsf{T}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\IRR}{IRR}
+\DeclareMathOperator{\ATE}{ATE}
+\DeclareMathOperator{\ATT}{ATT}
+\DeclareMathOperator{\ATC}{ATC}
+
+\title{The MRM Framework: A Multi-Source Statistical Foundation
+       for Canadian Carceral, Police, and Oversight Data,
+       Implemented as MRM modules in MORIE}
+
+\author{Vansh Singh Ruhela\thanks{%
+  Correspondence: \texttt{hadesllm@proton.me}.
+  Code: MORIE package (Python + R), released open-source.}}
+
+\date{2026-05-09}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This article introduces \emph{MRM} (McNamara-Ruhela-Medina), a
+multi-source statistical framework that brings five distinct
+Canadian carceral and oversight data streams together under a
+coordinated set of estimators and primitives. The framework spans (i)
+the open Ontario Tracking Information System (OTIS) provincial
+restrictive-confinement microdata, (ii) the federal Structured
+Intervention Unit Implementation Advisory Panel (SIU~IAP)
+reports and Sprott--Doob--Iftene independent academic
+replications of federal SIU operations, (iii) the Ontario
+Special Investigations Unit (Ontario~SIU) police-oversight
+reports ingested by an automated scraper that I developed, (iv)
+the Toronto Police Service (TPS) open-data crime categories and
+the Statistics Canada Crime Severity Index, and (v) federal
+Corrections and Conditional Release Statistical Overview (CCRSO)
+aggregate tables introduced into the record by Doob's
+\emph{T-539-20} affidavit. MRM is implemented in the
+open-source MORIE package as a set of MRM modules,
+comprising a 10-estimator per-individual ensemble, a GEE
+clustering grid for high-cardinality groupings, a Doob
+$\chi^{2}$ family for aggregate contingency tables, and a
+Mandela~Rules classifier that operates at both the federal and
+provincial level. I establish MRM's notation, derive each
+estimator in its MRM instantiation, document the empirical
+replication of all five published $\chi^{2}$ statistics from
+Sprott--Doob--Iftene (reproducing every value to within $0.01$),
+and report a headline empirical finding: the provincial Ontario
+Mandela ``torture''-classified proportion rises from $12.5\%$ in
+fiscal 2023 to $20.6\%$ in fiscal 2025, exceeding the federal
+SIU rate of $9.9\%$ that Sprott and Doob reported for fiscal
+2019--2020.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Canadian carceral and oversight data are produced by multiple
+disjoint agencies under disjoint legal frameworks, each with its
+own data dictionary, release cadence, and analytic conventions.
+At the federal level, Correctional Service Canada (CSC) operates
+Structured Intervention Units (SIUs) under the
+\emph{Corrections and Conditional Release Act} (CCRA), with
+oversight provided by Independent External Decision Makers
+(IEDMs) and a federally-appointed Implementation Advisory Panel
+(SIU~IAP). At the provincial level, Ontario operates
+restrictive-confinement and segregation placements that are
+recorded in OTIS, an open dataset maintained by the Ministry of
+the Solicitor General. Police-oversight in Ontario is exercised
+by the Special Investigations Unit (Ontario~SIU)~--- a separate
+agency whose acronym collides with the federal SIU. Crime data
+are released by the Toronto Police Service (TPS) under nine
+open-data categories, and aggregate national flow data are
+published annually by Public Safety Canada in the CCRSO. None of
+these streams shares a primary key, none uses the same time
+window, and most are released as PDFs or HTML rather than tabular
+microdata.
+
+The contribution of this paper is a multi-source statistical
+framework, \emph{MRM} (McNamara-Ruhela-Medina; named for its
+methodology lineage --- see \S\ref{sec:mrm}), that brings these
+five data streams into a coordinated notation and a coordinated
+set of estimators. MRM is implemented in
+MORIE~\cite{Ruhela2026MORIE}\footnote{MORIE = Methods for
+Observational Inference and Robust Analysis of Interventions in
+Scientific Experimentation. The package is hosted at
+\url{https://github.com/hadesllm/morie}.}, an open-source Python
+and R package released alongside this paper, as a set of \emph{MRM
+modules} --- the code-level instantiation of MRM's estimators on
+the five data sources above.
+The mathematical content of MRM is divided into:
+\begin{itemize}
+  \item An aggregate IRR (incidence-rate-ratio) family for
+        Poisson- and negative-binomial-distributed counts with a
+        log offset (\S\ref{sec:mrm-aggregate}).
+  \item A per-individual 10-estimator causal ensemble covering
+        the ATE, ATT, and ATC under unconfoundedness, double-machine
+        learning, propensity-score matching, and AIPW with a
+        SuperLearner (\S\ref{sec:mrm-perrow}).
+  \item A generalized-estimating-equations (GEE) clustering grid
+        with priority ordering across families and working
+        correlations (\S\ref{sec:gee-grid}).
+  \item A Doob $\chi^{2}$ family for testing independence in
+        aggregate contingency tables, with the Cram\'{e}r's $V$
+        effect size (\S\ref{sec:doob-chi2}).
+  \item A Mandela Rules classifier that operates at both the
+        federal level (with the full out-of-cell hour
+        operationalization) and the provincial level (with a
+        duration-only proxy that I make explicit)
+        (\S\ref{sec:mandela}).
+  \item A Crime Severity Index (CSI) integration that turns TPS
+        nine-category counts into Statistics Canada CSI scores
+        (\S\ref{sec:csi}).
+  \item A Goffmanian institutional-churn analysis suite
+        (cyclical, mortifying, embedding dimensions; intra-year
+        transition matrices; GLMM-IRR) on OTIS individual-level
+        files (\S\ref{sec:churn}).
+  \item A spatial--temporal stack for TPS data including a
+        general Hawkes self-exciting process, Ripley's $K$,
+        Moran's $I$, and a Getis--Ord $G^{\ast}$ statistic
+        (\S\ref{sec:tps-spatial}).
+  \item An automated scraper for the Ontario~SIU
+        director's-report corpus (\S\ref{sec:siu-ontario}).
+\end{itemize}
+
+I prove a small set of structural results
+(Theorems~\ref{thm:rf-irr-asymptotics} and~\ref{thm:gee-priority})
+and replicate every published $\chi^{2}$ statistic from
+Sprott--Doob--Iftene's three independent reports
+(\S\ref{sec:replication}). The headline empirical finding,
+reported in \S\ref{sec:findings} and discussed in
+\S\ref{sec:mandela}, is that the proportion of OTIS provincial
+restrictive-confinement individuals whose aggregate stay crosses
+the Mandela 15-day threshold has risen monotonically from
+$12.5\%$ in fiscal 2023 to $20.6\%$ in fiscal 2025, exceeding the
+federal SIU torture-classified proportion of $9.9\%$ that Sprott
+and Doob~\cite{SprottDoob2021Torture} found for fiscal 2019--2020,
+even after applying the most conservative duration-only proxy.
+
+\section{Notation}
+\label{sec:notation}
+
+Throughout, $i \in \{1, \ldots, n\}$ indexes individuals,
+$j \in \{1, \ldots, J\}$ indexes institutions, $r \in \mathcal{R}$
+indexes Ontario administrative regions or CSC federal regions, and
+$t \in \{1, \ldots, T\}$ indexes fiscal years. I let $T_{i}$ be a
+binary or categorical treatment, $Y_{i} \in \N$ be a count
+outcome, $X_{i} \in \R^{p}$ be a vector of covariates, and
+$E_{i} > 0$ be a person-time exposure (always treated as a fixed
+offset on the log scale). I write
+$T_{i}(t)\in\{0,1\}$ for the potential outcome under treatment
+$t$, and assume the standard SUTVA, consistency, and positivity
+conditions throughout.
+
+\begin{definition}[Datasets]
+\label{def:datasets}
+The MRM framework integrates five primary data sources:
+\begin{enumerate}
+  \item $\mathcal{D}_{\mathrm{OTIS}}$: the Ontario Tracking
+        Information System aggregate placements file
+        ($n \approx 7.7\times 10^{4}$ row-aggregations, three
+        fiscal years).
+  \item $\mathcal{D}_{\mathrm{SIU}\text{-}\mathrm{IAP}}$: the
+        federal SIU Implementation Advisory Panel reports plus
+        the four Sprott--Doob--Iftene CRIMSL/Schulich
+        publications.
+  \item $\mathcal{D}_{\mathrm{Ontario}\text{-}\mathrm{SIU}}$: the
+        Ontario Special Investigations Unit director's-report
+        corpus, ingested by the scraper described in
+        \S\ref{sec:siu-ontario} into a 65-column canonical schema
+        keyed on the SIU case number $c \in \mathrm{YY\text{-}XXX\text{-}NNN}$.
+  \item $\mathcal{D}_{\mathrm{TPS}}$: the Toronto Police Service
+        open-data crime categories,
+        \begin{multline*}
+          \mathcal{C} \;=\; \{\,
+            \text{Assault},\;
+            \text{Auto Theft},\;
+            \text{Bicycle Theft},\;
+            \text{Break and Enter},\\
+            \text{Homicide},\;
+            \text{Robbery},\;
+            \text{Shooting},\;
+            \text{Theft from Motor Vehicle},\;
+            \text{Theft Over}\,\}.
+        \end{multline*}
+  \item $\mathcal{D}_{\mathrm{CCRSO}}$: the federal Corrections
+        and Conditional Release Statistical Overview
+        aggregate tables introduced into the public record via
+        Doob's $T$-$539$-$20$ affidavit~\cite{Doob2020Affidavit}.
+\end{enumerate}
+\end{definition}
+
+\begin{remark}[Two distinct SIUs]
+\label{rmk:two-siu}
+The acronym SIU is used for two unrelated agencies. The
+\emph{federal Structured Intervention Unit} is a CSC
+post-segregation regime created by Bill C-83 in 2019; analyses
+that draw on it use the module \texttt{morie.siuiap}. The
+\emph{Ontario Special Investigations Unit} is a provincial
+police-oversight body that investigates police-related deaths,
+serious injuries, and sexual-assault complaints; analyses that
+draw on it use the module \texttt{morie.siu}. The two never
+share data, and care must be taken in cross-references; I have
+deliberately chosen module names that do not begin with a common
+prefix in order to make this distinction visible at import time.
+\end{remark}
+
+\section{The aggregate IRR family}
+\label{sec:mrm-aggregate}
+
+Let $Y_{ij}$ denote the count outcome for unit $i$ in stratum
+$j \in \{1, \ldots, J\}$ and let $E_{ij}$ denote the corresponding
+exposure (person-years, placement-days, or analogous person-time
+denominator). MRM's aggregate component fits the log-linear
+count model
+\begin{equation}
+  \log \E[Y_{ij} \mid X_{ij}] \;=\; \log E_{ij}
+   \;+\; \alpha_{j} \;+\; \beta^{\T} X_{ij},
+  \label{eq:rf-aggregate-model}
+\end{equation}
+under either a Poisson or negative-binomial distribution for
+$Y_{ij}$, with $\alpha_{j}$ a stratum fixed effect and $\beta$ the
+regression coefficients of interest. The treatment effect of a
+binary $T \in \{0,1\}$ is summarized by the
+\emph{incidence-rate ratio}
+\begin{equation}
+  \IRR \;\eqdef\;
+   \frac{\E[Y \mid T=1, X]/E_{T=1}}
+        {\E[Y \mid T=0, X]/E_{T=0}}
+   \;=\; \exp(\beta_{T}).
+  \label{eq:irr}
+\end{equation}
+
+\begin{theorem}[Asymptotics of the aggregate IRR]
+\label{thm:rf-irr-asymptotics}
+Under the standard Poisson regression regularity conditions and
+the negative-binomial extension of~\eqref{eq:rf-aggregate-model},
+the maximum-likelihood estimator $\hat{\beta}_{T}$ is consistent
+and asymptotically normal:
+\begin{equation*}
+  \sqrt{n}\,(\hat{\beta}_{T} - \beta_{T})
+   \;\xrightarrow{d}\; \mathcal{N}\!\left(0,\, \mathbf{I}^{-1}_{TT}\right),
+\end{equation*}
+where $\mathbf{I}^{-1}_{TT}$ is the $(T,T)$ block of the inverse
+Fisher information matrix. The Wald confidence interval for the
+incidence-rate ratio at level $1 - \alpha$ is
+\begin{equation}
+  \left[\,
+  \exp\!\left(\hat{\beta}_{T} - z_{1 - \alpha/2}
+              \cdot \widehat{\mathrm{SE}}(\hat{\beta}_{T})\right),
+  \;
+  \exp\!\left(\hat{\beta}_{T} + z_{1 - \alpha/2}
+              \cdot \widehat{\mathrm{SE}}(\hat{\beta}_{T})\right)
+  \,\right].
+  \label{eq:irr-ci}
+\end{equation}
+\end{theorem}
+
+When the stratum count $J$ is high (e.g., $J = 25$ Ontario
+correctional institutions), the per-stratum maximum-likelihood
+estimator of $\alpha_{j}$ has a high effective dimension and the
+finite-sample distribution is poorly approximated by the
+asymptotic Normal. I address this in \S\ref{sec:gee-grid} via a
+generalized-estimating-equations (GEE) approach with cluster-robust
+inference. In MORIE, this aggregate component is implemented as
+the aggregate MRM module.
+
+\section{Per-individual estimators: the MRM (10 estimators)}
+\label{sec:mrm-perrow}
+
+Where individual-level microdata are available
+($\mathcal{D}_{\mathrm{OTIS}}$ files \texttt{a01}, \texttt{b01},
+\texttt{b02}), MRM targets the average treatment effect (ATE),
+the effect on the treated (ATT), and the effect on the controls
+(ATC):
+\begin{align}
+  \tau_{\mathrm{ATE}} &\eqdef
+    \E\bigl[Y(1) - Y(0)\bigr],
+  \label{eq:ate} \\
+  \tau_{\mathrm{ATT}} &\eqdef
+    \E\bigl[Y(1) - Y(0) \;\big|\; T = 1\bigr],
+  \label{eq:att} \\
+  \tau_{\mathrm{ATC}} &\eqdef
+    \E\bigl[Y(1) - Y(0) \;\big|\; T = 0\bigr].
+  \label{eq:atc}
+\end{align}
+I instantiate each via ten complementary estimators, collectively
+implemented in MORIE as the \emph{Per-individual Ruhela
+Formulations} (per-row MRM).
+
+\subsection{Inverse-probability-weighting estimators}
+
+Let $e(x) \eqdef \PP(T = 1 \mid X = x)$ denote the propensity
+score, and $\hat{e}(x)$ a parametric or machine-learning
+estimate. The H\'ajek-stabilized inverse-probability-weighting
+ATE is
+\begin{equation}
+  \widehat{\tau}^{\mathrm{IPW}}_{\mathrm{ATE}}
+  \;=\;
+  \frac{\sum_{i : T_i = 1} Y_i / \hat{e}(X_i)}
+       {\sum_{i : T_i = 1} 1 / \hat{e}(X_i)}
+  \;-\;
+  \frac{\sum_{i : T_i = 0} Y_i / (1 - \hat{e}(X_i))}
+       {\sum_{i : T_i = 0} 1 / (1 - \hat{e}(X_i))}.
+  \label{eq:ipw-ate}
+\end{equation}
+The corresponding ATT and ATC estimators reweight each side by
+$\hat{e}(X_i)$ or $1 - \hat{e}(X_i)$ respectively.
+
+\subsection{Augmented inverse-probability-weighting (AIPW)}
+
+Let $\mu_{t}(x) \eqdef \E[Y \mid T=t, X=x]$ and let $\hat{\mu}_{t}$
+be a regression estimate. The AIPW (doubly robust) estimator is
+\begin{align}
+  \widehat{\tau}^{\mathrm{AIPW}}_{\mathrm{ATE}}
+  &= \frac{1}{n} \sum_{i=1}^{n}
+   \biggl[ \hat{\mu}_{1}(X_i) - \hat{\mu}_{0}(X_i)
+   \nonumber \\
+  &\quad
+   + \frac{T_i\,(Y_i - \hat{\mu}_{1}(X_i))}{\hat{e}(X_i)}
+   - \frac{(1-T_i)(Y_i - \hat{\mu}_{0}(X_i))}{1 - \hat{e}(X_i)}
+   \biggr].
+  \label{eq:aipw-ate}
+\end{align}
+$\widehat{\tau}^{\mathrm{AIPW}}$ is consistent if either the
+propensity model or the outcome model is correctly specified, and
+attains the semiparametric efficiency bound when both are
+correctly specified.
+
+\subsection{Double-machine-learning interactive regression model (IRM-DML)}
+
+Following Chernozhukov et al.~\cite{Chernozhukov2018DoubleML},
+let $\hat{\mu}_{0}$ and $\hat{\mu}_{1}$ be cross-fitted estimates
+of the conditional outcome and let $\hat{e}$ be a cross-fitted
+propensity. The IRM-DML estimator is the empirical mean of the
+score
+\begin{equation}
+  \psi(W; \tau, \mu_{0}, \mu_{1}, e)
+  \;=\; \mu_{1}(X) - \mu_{0}(X)
+   + \frac{T \cdot (Y - \mu_{1}(X))}{e(X)}
+   - \frac{(1-T)(Y - \mu_{0}(X))}{1 - e(X)} - \tau,
+  \label{eq:irm-score}
+\end{equation}
+which is Neyman-orthogonal in $(\mu_{0}, \mu_{1}, e)$. Cross-fitting
+breaks the bias arising from over-fitting in the nuisance
+estimators, and root-$n$ inference for $\tau$ is recovered even
+when each nuisance is fit by an arbitrary learner converging at
+the slower rate $n^{-1/4}$.
+
+\subsection{Propensity-score matching and subclassification}
+
+Let $d(x_{i}, x_{j})$ be a distance on covariates (typically the
+logit of the propensity). The 1:1 nearest-neighbour matched ATE
+estimator is
+\begin{equation}
+  \widehat{\tau}^{\mathrm{PSM}}_{\mathrm{ATE}} \;=\;
+   \frac{1}{n} \sum_{i=1}^{n}
+   \bigl[Y_{i} - Y_{m(i)}\bigr]
+   \cdot (2T_{i} - 1),
+  \label{eq:psm}
+\end{equation}
+where $m(i) \in \argmin_{j : T_{j} = 1 - T_{i}} d(X_{i}, X_{j})$.
+The subclassification variant partitions the sample into $K$
+strata of $\hat{e}$ and computes a stratum-weighted average of
+within-stratum mean differences. I follow Rosenbaum and Rubin's
+$K = 5$ default.
+
+\subsection{Partial-linear and SuperLearner variants}
+
+The partial-linear-regression (PLR) DML estimator drops the
+interactive interaction term and is convenient when treatment
+effects are believed homogeneous in $X$. The
+AIPW-SuperLearner variant replaces the parametric $\hat{\mu}_{t}$
+and $\hat{e}$ with the convex-combination
+SuperLearner~\cite{vanderLaan2007SuperLearner}, which
+asymptotically achieves the oracle risk of the best base learner.
+
+\subsection{Canonical and dual MRM formulations on \texttt{a01},
+            \texttt{b01}, and \texttt{b02}}
+\label{sec:dual-rf}
+
+In the MORIE instantiation, the per-row MRM instantiates the
+ten estimators above on three OTIS individual-level files:
+\texttt{a01} (restrictive-confinement person-rows), \texttt{b01}
+(segregation person-rows), and \texttt{b02} (segregation
+person-rows with the additional Toronto-region indicator). For
+each, a canonical pair of treatment-and-outcome variables is
+combined with a \emph{dual} naive-arm sensitivity pair to test
+the identification claim. The full dual (canonical $+$ naive-arm
+$+$ all alt-$T$ variants $+$ subgroup stratifications) is
+implemented on both \texttt{a01} and \texttt{b01}; \texttt{b02}
+adds an alt-region variant on top of the canonical formulation.
+
+\paragraph{canonical MRM.}
+Let $T^{\mathrm{ac}}_{i} \eqdef \one\{\mathrm{alert\_state}_{i}
+\in \mathcal{S}_{\mathrm{high}}\}$, where
+$\mathcal{S}_{\mathrm{high}}$ is the set of high-severity
+alert-state combinations (mental-health alert, suicide-risk
+alert, or suicide-watch alert flagged for individual $i$). Let
+$Y^{\mathrm{vm}}_{i}$ denote the count of restrictive-confinement
+\emph{movements} for individual $i$ within the fiscal year. The
+canonical MRM is
+\begin{equation}
+  \tau^{\mathrm{(can)}}
+  \;\eqdef\;
+   \E\!\bigl[\,Y^{\mathrm{vm}}(1) - Y^{\mathrm{vm}}(0)\;\big|\;
+              X = x\,\bigr],
+   \qquad T = T^{\mathrm{ac}},
+  \label{eq:rf-canonical}
+\end{equation}
+estimated via every estimator in
+\S\ref{sec:mrm-perrow}.
+
+\paragraph{dual (naive-arm) MRM.}
+The naive arm replaces the high-alert binary with the
+\emph{any-flag} binary
+$T^{\mathrm{any}}_{i} \eqdef \one\{\sum_{s} \mathrm{flag}_{is}
+\ge 1\}$ and the count outcome with the binary
+$Y^{\mathrm{vm,bin}}_{i} \eqdef \one\{Y^{\mathrm{vm}}_{i} \ge 1\}$,
+\begin{equation}
+  \tau^{\mathrm{(dual)}}
+  \;\eqdef\;
+   \E\!\bigl[\,Y^{\mathrm{vm,bin}}(1) - Y^{\mathrm{vm,bin}}(0)\;\big|\;
+              X = x\,\bigr],
+   \qquad T = T^{\mathrm{any}}.
+  \label{eq:rf-dual}
+\end{equation}
+Identification of $\tau^{\mathrm{(can)}}$ relies on the high-alert
+indicator's discrimination among the alert-state taxonomy;
+$\tau^{\mathrm{(dual)}}$ relies on the cruder ``any-flag versus
+no-flag'' distinction. A pattern of agreement between
+$\tau^{\mathrm{(can)}}$ and $\tau^{\mathrm{(dual)}}$ (both
+significant, same sign, similar magnitude) is taken as
+sensitivity-supporting evidence; a pattern of disagreement is a
+flag that the identification rests on the finer-grained alert-
+state distinction and should be reported with care.
+
+\paragraph{Alt-$T$ variants.}
+For each of the canonical and dual RFs, the framework reports
+three alternative-treatment specifications by replacing
+$T^{\mathrm{ac}}$ in turn with
+\begin{itemize}
+  \item $T^{\mathrm{gender}}_{i} = \one\{\mathrm{gender}_{i} = \mathrm{Female}\}$,
+  \item $T^{\mathrm{age50+}}_{i} = \one\{\mathrm{age\_category}_{i} \ge 50\}$,
+  \item $T^{\mathrm{Toronto}}_{i} = \one\{\mathrm{region}_{i} = \mathrm{Toronto}\}$,
+\end{itemize}
+and additionally fits subgroup-stratified variants on
+$\{\mathrm{Female}\}$ and $\{\mathrm{Male}\}$ separately to test
+effect heterogeneity.
+
+\subsection{Sensitivity analysis: the E-value}
+
+I follow Vanderweele and Ding~\cite{VanderWeele2017Evalue} and
+report, for every per-individual estimate, the E-value
+\begin{equation}
+  E\text{-value}\;=\; \widehat{\IRR} + \sqrt{\widehat{\IRR}\,
+   (\widehat{\IRR} - 1)},
+  \label{eq:evalue}
+\end{equation}
+which is the smallest unmeasured-confounder strength (on the IRR
+scale, jointly with both $T$ and $Y$) that would be required to
+explain the observed estimate away to the null.
+
+\section{GEE clustering grid}
+\label{sec:gee-grid}
+
+When the stratification implied by~\eqref{eq:rf-aggregate-model}
+has high cardinality (e.g., $J = 25$ Ontario institutions or
+$R = 5$ federal CSC regions), classical Poisson and
+negative-binomial maximum-likelihood inference is fragile. MRM
+instead estimates a marginal model
+\begin{equation}
+  g\bigl(\E[Y_{ij} \mid X_{ij}]\bigr) \;=\;
+   \log E_{ij} \;+\; \beta^{\T} X_{ij},
+  \label{eq:rf-gee-marginal}
+\end{equation}
+where $g$ is the log link, and supplies the within-cluster
+correlation through a working-correlation matrix
+$\mathbf{W}(\rho)$. Inference is then conducted via cluster-robust
+sandwich variance.
+
+\begin{theorem}[GEE priority ordering]
+\label{thm:gee-priority}
+Among the four combinations of family
+$F \in \{\text{Poisson}, \text{NB}\}$ and working correlation
+$\mathbf{W} \in \{\text{Exch}, \text{Indep}\}$, MRM selects the
+converged fit with priority order
+\begin{equation*}
+  (\text{NB}, \text{Exch}) \succ (\text{Pois}, \text{Exch})
+   \succ (\text{NB}, \text{Indep}) \succ (\text{Pois}, \text{Indep}),
+\end{equation*}
+breaking ties by minimum quasi-information criterion (QIC).
+The chosen estimator is the most flexible converged option,
+balancing overdispersion accommodation against working-correlation
+sophistication.
+\end{theorem}
+
+In practice I report all four rows in the framework's output
+table for sensitivity analysis; under the priority ordering, the
+top-row estimate is taken as the canonical MRM.
+
+\section{The MRM framework}
+\label{sec:mrm}
+
+MRM is the master abstraction this paper introduces: a multi-source
+statistical framework for analysing Canadian carceral, police, and
+oversight data, comprising the aggregate IRR family of
+\S\ref{sec:mrm-aggregate}, the per-individual 10-estimator
+ensemble of \S\ref{sec:mrm-perrow}, the GEE clustering grid of
+\S\ref{sec:gee-grid}, the Doob $\chi^{2}$ family of
+\S\ref{sec:doob-chi2}, and the Mandela--Rules classifier of
+\S\ref{sec:mandela}, together with the data-pipeline and
+descriptive components of
+\S\S\ref{sec:csi}--\ref{sec:overlay}. The acronym names the
+methodology lineage as catalyst--principal--supervisor:
+\begin{itemize}
+  \item \textbf{M --- McNamara (catalyst).} Glenn McNamara
+        contributed the methodological foundations that catalysed
+        this work: distribution theory, applied statistics for
+        administrative data, and the statistical-judgment intuition
+        drawn from a 35-year career with the Ontario Government.
+        His mentorship grounded much of the framework's
+        empirical-statistical practice.
+  \item \textbf{R --- Ruhela (principal).} The framework author:
+        the MRM notation, the per-row MRM (the 10 estimators of
+        \S\ref{sec:mrm-perrow}), the cross-jurisdiction Mandela
+        classifier (\S\ref{sec:mandela}), the Ontario~SIU
+        automation pipeline (\S\ref{sec:siu-ontario}), the TPS--CSI
+        integration (\S\ref{sec:csi}), and the MRM modules
+        implementation in MORIE that carries this paper's
+        analyses end-to-end.
+  \item \textbf{M --- Medina (supervisor \& reviewer).} Prof.\
+        Angela Zorro Medina, of the Centre for Criminology and
+        Sociolegal Studies, is the author's supervisor and
+        methodological instructor, served as the domain-expert
+        reviewer of the preliminary methodological approach, and is
+        a knowledge user of this framework. Her own work on
+        anti-gang
+        legislation~\cite{ZorroMedina2023JMP} establishes the
+        methodological lineage MRM follows on the U.S./Canada
+        bridge: a staggered two-way-fixed-effects identification
+        strategy with formal leads-and-lags Granger-causality
+        diagnostics for the parallel-trends
+        assumption~\cite{Athey2022Staggered, CallawaySantanna2021,
+        GoodmanBacon2021DiD}; an explicitly multi-source
+        data-integration pattern (her five U.S.\ sources --- FBI
+        SRS/NIBRS, BJS BJSPS, FBI UCR, BLS, state annotated
+        criminal codes --- are structurally analogous to MRM's
+        five Canadian sources of \S\ref{sec:notation}); the
+        deterrence~/ routine-activities~/ certainty mechanism
+        categorisation that grounds individual estimands in
+        sociolegal theory; and the inequality-effects-of-criminal
+        -law-expansions framing (\S2.3 of \cite{ZorroMedina2023JMP})
+        that connects empirical estimands to racial and social
+        inequality in carceral outcomes. Her substantive review of
+        the OTIS Major Research Paper (Paper 204) --- insisting on
+        quantitatively-grounded sociolegal mechanism, on a
+        negative-binomial mixed model with regional-cluster random
+        intercepts as the principal aggregate-level estimator, and
+        on a disciplined empirical structure --- directly shapes
+        the methodology reported here.
+\end{itemize}
+
+MRM is the framework; the \emph{MRM modules} are its MORIE
+instantiation --- the Python and R code that implements every MRM
+estimator on the five data sources of \S\ref{sec:notation}. The
+MRM acronym is a methodology-attribution chain, not a
+co-authorship statement: the framework, code, and findings
+reported in this paper are the work of the framework author and
+should be cited as~\cite{Ruhela2026MRM}.
+
+\section{Doob $\chi^{2}$ family for aggregate contingency tables}
+\label{sec:doob-chi2}
+
+For an $r \times c$ contingency table with cell counts
+$O_{ij}$ and row/column totals $R_{i}$ and $C_{j}$, the Pearson
+$\chi^{2}$ statistic is
+\begin{equation}
+  \chi^{2}
+  \;=\;
+  \sum_{i=1}^{r} \sum_{j=1}^{c}
+  \frac{\bigl(O_{ij} - E_{ij}\bigr)^{2}}{E_{ij}},
+  \quad
+  E_{ij} = R_{i} C_{j} / N,
+  \label{eq:chi2}
+\end{equation}
+where $N = \sum_{ij} O_{ij}$. Under the null hypothesis of
+independence, $\chi^{2}$ is asymptotically chi-square distributed
+with $(r-1)(c-1)$ degrees of freedom. The accompanying effect-size
+measure is Cram\'er's $V$:
+\begin{equation}
+  V \;=\; \sqrt{\frac{\chi^{2}/N}{\min(r-1, c-1)}}.
+  \label{eq:cramers-v}
+\end{equation}
+MRM's Doob $\chi^{2}$ family applies \eqref{eq:chi2} and
+\eqref{eq:cramers-v} to every meaningful 2-way slice of the OTIS
+aggregate tables (region $\times$ gender, region $\times$ year,
+institution $\times$ alert state, $\ldots$), together with
+year-over-year trend tests on death counts.
+
+\section{Mandela Rules classifier}
+\label{sec:mandela}
+
+The Mandela Rules~\cite{UN2015Mandela} (UN Standard Minimum Rules
+for the Treatment of Prisoners) define solitary confinement and
+torture under Rules 43 and 44. Rule 44 defines solitary
+confinement as confinement for $22+$ hours per day without
+meaningful human contact; Rule 43 prohibits the prolonged version
+of this practice (defined as exceeding $15$ consecutive days) as
+torture or other cruel, inhuman, or degrading treatment.
+
+\subsection{Federal operationalization}
+
+Sprott and Doob~\cite{SprottDoob2021Torture} operationalized
+Rules 43 and 44 jointly on federal SIU person-stays:
+\begin{equation}
+  \mathrm{Class}(d, h, m)
+  =
+  \begin{cases}
+    \text{Torture}    & \text{if } d \ge 16 \text{ and }
+                              h \le 2 \text{ and } m = 100,\\
+    \text{Solitary}   & \text{if } d \le 15 \text{ and }
+                              h \le 2 \text{ and } m = 100,\\
+    \text{All other}  & \text{otherwise},
+  \end{cases}
+  \label{eq:mandela-class}
+\end{equation}
+where $d$ is days in SIU, $h$ is the average hours-out-of-cell
+per day, and $m \in [0,100]$ is the percentage of days on which
+the inmate did not receive the legally-required four hours
+out-of-cell. Across $N = 1{,}960$ federal SIU person-stays
+(November 2019 -- September 2020), the classifier yields
+$28.4\%$ \emph{Solitary}, $9.9\%$ \emph{Torture}, and $61.7\%$
+\emph{All other}~\cite{SprottDoob2021Torture}.
+
+\subsection{Provincial operationalization}
+
+OTIS does not expose hours-out-of-cell, so MRM applies a
+duration-only proxy at the provincial level:
+\begin{equation}
+  \mathrm{Class}^{\ast}(d) =
+  \begin{cases}
+    \text{Torture}^{\ast}  & \text{if } d \ge 16,\\
+    \text{Solitary}^{\ast} & \text{if } 1 \le d \le 15.
+  \end{cases}
+  \label{eq:mandela-prov}
+\end{equation}
+The proxy is an upper bound on the true Mandela classification:
+some placements with $d \ge 16$ may, in fact, provide more than
+two hours out-of-cell on average, in which case the formal
+Mandela definition is not met. I am explicit about this in
+every analyzer's docstring, and I report both the
+\emph{Segregation} and the broader \emph{Restrictive Confinement}
+views of the OTIS \texttt{c11} aggregate.
+
+\subsection{Cross-jurisdiction comparison}
+
+Table~\ref{tab:mandela-cross} reports the Mandela
+classification for the federal SIU regime~\cite{SprottDoob2021Torture}
+alongside the provincial OTIS Segregation and Restrictive
+Confinement views, by fiscal year. The provincial Segregation
+proportion classified as $\text{Torture}^{\ast}$ rises from
+$12.5\%$ in fiscal 2023 to $20.6\%$ in fiscal 2025 --- a peak gap
+of $+10.7$ percentage points relative to the federal $9.9\%$
+that Sprott and Doob reported.
+
+\begin{table}[ht]
+  \caption{Cross-jurisdiction Mandela classification.
+           Federal: person-stays, full operationalization
+           (\eqref{eq:mandela-class}). Provincial: individuals,
+           duration-only proxy (\eqref{eq:mandela-prov}).
+           Source: \cite{SprottDoob2021Torture} and the OTIS
+           \texttt{c11} aggregate.}
+  \label{tab:mandela-cross}
+  \centering
+  \begin{tabular}{lllrrr}
+    \toprule
+    Source & Period & Unit & Solitary \% & Torture \% & $N$ \\
+    \midrule
+    Federal SIUs        & 2019--2020 & Person-stays & 28.4 & 9.9  & 1{,}960 \\
+    Provincial Seg.\    & 2023       & Individuals & 87.5 & 12.5 & 12{,}647 \\
+    Provincial Seg.\    & 2024       & Individuals & 83.5 & 16.5 & 10{,}881 \\
+    Provincial Seg.\    & 2025       & Individuals & 79.4 & 20.6 &  9{,}608 \\
+    Provincial RC       & 2023       & Individuals & 68.5 & 31.5 & 20{,}781 \\
+    Provincial RC       & 2024       & Individuals & 64.0 & 36.0 & 19{,}641 \\
+    Provincial RC       & 2025       & Individuals & 59.1 & 40.9 & 25{,}045 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Caveats}
+
+The federal--provincial comparison in
+Table~\ref{tab:mandela-cross} is directional rather than
+apples-to-apples. The federal numbers count person-stays and use
+the full out-of-cell-hour operationalization; the provincial
+numbers count individuals (which integrate across multiple
+placements within a fiscal year) and use the duration-only proxy.
+Two consequences follow. First, the provincial denominators are
+larger and therefore the provincial denominator is a different
+unit from the federal. Second, the provincial numerator is an
+\emph{upper bound} on the formal Mandela classification, since
+some placements with $d \ge 16$ may have provided more than two
+hours out-of-cell on average. I have nevertheless reported the
+proxy alongside the federal figures because the magnitude of the
+gap, even after these conservative adjustments, is substantial.
+
+\section{Crime Severity Index integration}
+\label{sec:csi}
+
+The Statistics Canada Crime Severity
+Index~\cite{Wallace2009CSI} weights each \emph{Criminal Code}
+offence by a sentence-and-incarceration severity:
+\begin{equation}
+  w(o) \;=\; \mathrm{avg}\bigl(\text{sentence days} \mid \text{convicted of } o\bigr)
+   \cdot \PP(\text{incarcerated} \mid \text{convicted of } o).
+  \label{eq:csi-weight}
+\end{equation}
+MRM integrates the CSI weights for the nine TPS open-data
+categories. Per-year and per-neighbourhood CSI scores are then
+\begin{equation}
+  \mathrm{CSI}_{r, t}
+  \;=\;
+  \frac{\displaystyle\sum_{o \in \mathcal{C}}
+   w(o) \cdot N_{r, t}(o)}
+       {\mathrm{Pop}_{r, t}}\, \cdot 10^{5},
+  \label{eq:csi-rate}
+\end{equation}
+where $r$ is a neighbourhood (HOOD\_158 region in TPS), $t$ is a
+calendar year, $N_{r,t}(o)$ is the count of incidents of category
+$o$, and the multiplier $10^{5}$ standardizes the rate to a
+per-100,000-residents scale.
+
+\section{Stochastic physics of crime}
+\label{sec:tps-physics}
+
+MRM integrates a small set of stochastic-physics models that
+have appeared in the urban-crime
+literature~\cite{Bettencourt2007, ShortBrantingham2008}. They are
+implemented in \texttt{morie.tps\_statphysics} and provide a
+mechanistic interpretation that complements the descriptive
+spatial--temporal statistics of \S\ref{sec:tps-spatial}.
+
+\subsection{Reaction--diffusion of crime density}
+
+Let $u(x, t)$ denote the smoothed density of incidents of a given
+TPS category at location $x$ and time $t$. MRM fits the
+reaction--diffusion process
+\begin{equation}
+  \frac{\partial u}{\partial t}
+  \;=\; D \nabla^{2} u
+   \;+\; \omega\, u\,(1 - u)
+   \;-\; \eta\, p(x, t),
+  \label{eq:reaction-diffusion}
+\end{equation}
+where $D$ is the diffusion coefficient, $\omega$ the intrinsic
+growth rate, $p(x, t)$ a police-attention field, and $\eta$ the
+attention coupling strength.
+Equation~\eqref{eq:reaction-diffusion} is the
+Short--Brantingham--D'Orsogna model adapted to the TPS
+neighbourhood grid; I discretise on a $90 \times 60$ grid
+covering the city of Toronto.
+
+\subsection{L\'evy-flight scaling}
+
+Empirical inter-event spatial displacement is modelled by a
+heavy-tailed jump distribution. I fit the L\'evy tail-index
+$\alpha$ in
+\begin{equation}
+  \PP(\lvert \Delta x \rvert > r) \;\propto\; r^{-\alpha},
+  \quad r \ge r_{\min},
+  \label{eq:levy-tail}
+\end{equation}
+via the Hill estimator and report the scaling regime
+$1 < \alpha < 3$ (super-diffusive) versus $\alpha \ge 3$
+(diffusive) per category.
+
+\subsection{Urban-scaling exponent}
+
+Across cities (or, in this setting, across Toronto neighbourhoods
+of varying populations), the urban-scaling
+hypothesis~\cite{Bettencourt2007} predicts
+\begin{equation}
+  Y \;\propto\; \mathrm{Pop}^{\beta},
+  \label{eq:urban-scaling}
+\end{equation}
+where $Y$ is a per-place crime count, $\beta < 1$ implies
+sublinear scaling (per-capita crime falls with size), $\beta = 1$
+linear, and $\beta > 1$ superlinear. MRM fits $\beta$ by
+ordinary least squares on $\log Y \sim \log \mathrm{Pop}$ with
+an HC3 covariance estimator.
+
+\subsection{Lotka--Volterra police--crime dynamics}
+
+For paired annual time series $C_{t}$ (crimes) and $P_{t}$
+(police-officer count) within a category, the framework fits
+\begin{align}
+  \frac{dC}{dt} &= a\,C - b\,C\,P, \\
+  \frac{dP}{dt} &= -c\,P + d\,C\,P,
+  \label{eq:lotka-volterra}
+\end{align}
+the standard predator--prey system. The resulting phase portrait
+gives a structural complement to the descriptive year-over-year
+regression of \S\ref{sec:overlay}.
+
+\section{TPS spatial-temporal stack}
+\label{sec:tps-spatial}
+
+\subsection{Hawkes self-exciting process}
+
+For an event time series $\{t_{1}, \ldots, t_{n}\} \subset [0, T]$
+within a TPS category, MRM fits the marked Hawkes process with
+conditional intensity
+\begin{equation}
+  \lambda(t \mid \mathcal{H}_{t})
+  \;=\; \mu(t) \;+\;
+  \sum_{i \,:\, t_{i} < t} \alpha\, \kappa(t - t_{i}; \theta),
+  \label{eq:hawkes}
+\end{equation}
+where $\alpha > 0$ is the branching ratio (excitation amplitude),
+$\mu(\cdot)$ is a parametric baseline, and
+$\kappa(\cdot; \theta)$ is the excitation kernel.
+
+\paragraph{Baselines.} MRM supports two baselines: a constant
+$\mu(t) = \mu_{0}$ and a sinusoidal
+$\mu(t) = \mu_{0}\,\bigl[1 + \mu_{1}\sin(2\pi t/365 + \phi)\bigr]$
+that captures yearly seasonality.
+
+\paragraph{Kernels.} Four excitation kernels are supported:
+\begin{align}
+  \kappa^{\mathrm{exp}}(u; \beta)
+   &\;=\; \beta\, e^{-\beta u},
+   & u &\ge 0,
+   \label{eq:hawkes-exp} \\
+  \kappa^{\mathrm{gam}}(u; \alpha, \beta)
+   &\;=\; \frac{\beta^{\alpha}}{\Gamma(\alpha)}\, u^{\alpha - 1}\, e^{-\beta u},
+   & u &\ge 0,
+   \label{eq:hawkes-gam} \\
+  \kappa^{\mathrm{wei}}(u; \alpha, \lambda)
+   &\;=\; \frac{\alpha}{\lambda}\!\left(\frac{u}{\lambda}\right)^{\!\alpha-1}
+       \!e^{-(u/\lambda)^{\alpha}},
+   & u &\ge 0,
+   \label{eq:hawkes-wei} \\
+  \kappa^{\mathrm{lom}}(u; \alpha, c)
+   &\;=\; \frac{(\alpha - 1)\,c^{\alpha - 1}}{(u + c)^{\alpha}},
+   & u &\ge 0,\;\alpha > 1.
+   \label{eq:hawkes-lom}
+\end{align}
+The exponential kernel~\eqref{eq:hawkes-exp} is the classical
+Markovian Hawkes case; the Lomax (power-law)
+kernel~\eqref{eq:hawkes-lom} produces a non-Markovian process
+with long-memory tails relevant to repeat-victimization dynamics.
+The Weibull and gamma kernels span the intermediate regime.
+
+\paragraph{Estimation and selection.} Each
+$(\mu, \alpha, \theta)$ tuple is fit by maximum likelihood on
+the conditional-intensity log-likelihood, and the framework
+selects among kernels by AIC/BIC and a time-rescaling residual
+Q--Q diagnostic~\cite{Daley2003PointProcess}.  A self-contained
+treatment of the likelihood, score, and information for the
+non-stationary, non-Markovian case --- including the
+Kwan--Chen--Dunsmuir asymptotic-ergodicity argument that secures
+consistency and asymptotic normality of the MLE when the kernel
+is non-exponential and the baseline is non-stationary --- and the
+Toronto Police Service application of the same eight (kernel
+$\times$ baseline) combinations is given in the companion
+paper~\cite{Ruhela2026Hawkes}.
+
+\subsection{Spatial cross-correlation}
+
+The bivariate Moran's $I$ statistic between two TPS categories
+$a, b \in \mathcal{C}$ on a neighbourhood graph with row-normalized
+adjacency $\mathbf{W}$ is
+\begin{equation}
+  I_{a,b}
+  \;=\;
+  \frac{n \sum_{i,j} W_{ij}
+        (z^{a}_{i})(z^{b}_{j})}
+       {\sum_{i,j} W_{ij}
+        \cdot \sqrt{\sum_i (z^a_i)^2}
+        \cdot \sqrt{\sum_i (z^b_i)^2}},
+  \label{eq:bivariate-morans}
+\end{equation}
+where $z^{a}_{i}$ and $z^{b}_{i}$ are within-category z-scores of
+neighbourhood-level counts. Local Moran's $I_{i}$, Getis--Ord
+$G^{\ast}_{i}$, and Ripley's $K(r)$ follow standard definitions
+and are exposed in the framework.
+
+\section{Goffmanian institutional churn}
+\label{sec:churn}
+
+MRM operationalizes Goffman's
+\emph{total institutions}~\cite{Goffman1961Asylums} thesis as a
+suite of formal statistical tests on OTIS individual-level files.
+Goffman's argument is that carceral environments produce a
+cyclical, mortifying, and embedding relationship between the
+institution and the individual; I instantiate each of those
+three dimensions as a measurable quantity. The implementation
+lives in \texttt{morie.otis\_churn}.
+
+\paragraph{Cyclical dimension.}
+Repeat-placement concentration is summarised by the Gini
+coefficient on the within-year per-individual placement count
+$\{N_{i}\}_{i=1}^{n}$:
+\begin{equation}
+  G \;=\; \frac{\sum_{i=1}^{n}\sum_{j=1}^{n}
+                |N_{i} - N_{j}|}
+              {2 n^{2} \bar{N}},
+  \quad
+  \bar{N} = n^{-1}\sum_{i} N_{i}.
+  \label{eq:churn-gini}
+\end{equation}
+MRM also fits a power-law tail
+$\PP(N \ge k) \propto k^{-\gamma}$ via maximum likelihood and tests
+its goodness of fit by a Kolmogorov--Smirnov statistic, after
+\cite{ClausetShalizi2009Powerlaw}. Within-year region diversity ---
+how many distinct administrative regions an individual cycles
+through within a fiscal year --- is reported as
+$\#\{r : (\text{id}_{i}, t, r) \in \mathcal{D}_{\mathrm{OTIS}}\}$
+distributed across $i$.
+
+\paragraph{Mortifying dimension.}
+Goffman's mortification thesis predicts that institutional
+processing produces co-occurring stigma markers. MRM tests this
+by computing the joint Pearson $\chi^{2}$ on the alert-state
+combinations $\{\mathrm{MH}, \mathrm{SR}, \mathrm{SW}\}$ and
+their pairwise interactions, with Cram\'{e}r's $V$ as the effect
+size. The disciplinary--medical overlap is the analogous
+$\chi^{2}$ on the cross-tabulation
+\[
+  (\text{disciplinary alert}) \times (\text{medical-protective alert}).
+\]
+Statistically significant co-occurrence is taken as evidence of
+a mortifying institutional process that cross-classifies the
+individual along multiple stigma axes simultaneously.
+
+\paragraph{Embedding dimension.}
+Embedding is measured by the total-days survival distribution.
+MRM fits both a log-normal and a Pareto distribution to the
+aggregate-duration variable from \texttt{b02} and selects between
+them by AIC:
+\begin{equation}
+  \mathrm{AIC}_{F}
+  \;=\; -2\, \log\hat{L}_{F}
+   \;+\; 2\, k_{F},
+   \qquad F \in \{\text{log-normal}, \text{Pareto}\}.
+  \label{eq:embedding-aic}
+\end{equation}
+A Pareto-best fit is consistent with a heavy-tailed embedding
+process (a small number of individuals with extreme institutional
+embedding); a log-normal-best fit is consistent with a more
+gradual embedding gradient.
+
+\paragraph{Intra-year transition matrix.}
+The cyclic-region dimension is also captured by an intra-fiscal-
+year first-order Markov transition matrix on the
+five-region state space:
+\begin{equation}
+  P^{(t)}_{r \to r'}
+  \;=\;
+  \frac{\#\{(\mathrm{id}, t, r, r') :
+              r \to r' \text{ within FY } t\}}
+       {\#\{(\mathrm{id}, t, r) :
+              r \text{ visited in FY } t\}}.
+  \label{eq:transition-matrix}
+\end{equation}
+The diagonal entries $P^{(t)}_{r \to r}$ measure persistence;
+off-diagonal mass measures cycling.
+
+\paragraph{Path complexity.}
+A within-cell Gini on the path-length distribution
+(split by year $\times$ region) summarises how concentrated the
+cycling is among a small set of high-churn individuals versus
+distributed across the whole population.
+
+\paragraph{Goffmanian-IRR via GLMM.}
+The cycling effect on the count outcome is also estimated by a
+generalised linear mixed model:
+\begin{equation}
+  \log \E[Y_{i}^{\mathrm{vm}} \mid X_{i}, u_{j(i)}]
+  \;=\; \beta^{\T} X_{i} \;+\; u_{j(i)},
+  \qquad u_{j} \sim \mathcal{N}(0, \sigma_{u}^{2}),
+  \label{eq:churn-glmm}
+\end{equation}
+under both Poisson and negative-binomial families, with
+$j(i)$ the institution containing individual $i$. The IRR for
+treatment $T \in \{T^{\mathrm{ac}}, T^{\mathrm{any}}\}$
+(\S\ref{sec:dual-rf}) is reported alongside its E-value.
+
+\begin{remark}[Anonymisation caveat]
+\label{rmk:churn-anon}
+OTIS \texttt{UniqueIndividual\_ID} is anonymised as
+\texttt{YYYY-XXXXX-AA}: the \texttt{YYYY} prefix locks each
+identifier to one fiscal year, and identifiers are re-randomised
+per dataset file even within the same year. The
+churn analyses of \S\ref{sec:churn} are therefore strictly
+\emph{within-year} estimands; I do not (and cannot) follow
+individuals across fiscal years from the public OTIS aggregate.
+A multi-year cohort design would require linkage to a
+non-public per-person record, which is outside the scope of
+MRM as currently released.
+\end{remark}
+
+\section{OTIS$\times$TPS overlay}
+\label{sec:overlay}
+
+MRM supports a cross-jurisdiction overlay between OTIS
+provincial restrictive-confinement counts and TPS crime counts.
+For a paired annual series of provincial Toronto-region
+segregation counts $S_{t}$ and TPS Toronto-wide incident counts
+$N^{(\mathrm{TPS})}_{t}(c)$ for category $c$, the year-over-year
+correlation is
+\begin{equation}
+  \widehat{\rho}_{S, N(c)}
+  \;=\;
+   \frac{\sum_{t=2}^{T}
+         (\Delta S_{t})(\Delta N^{(\mathrm{TPS})}_{t}(c))}
+        {\sqrt{\sum_{t=2}^{T} (\Delta S_{t})^{2}\,
+               \sum_{t=2}^{T} (\Delta N^{(\mathrm{TPS})}_{t}(c))^{2}}},
+  \quad
+  \Delta S_{t} \eqdef S_{t} - S_{t-1}.
+  \label{eq:overlay-yoy}
+\end{equation}
+A composite-overlay statistic averages
+$\widehat{\rho}_{S, N(c)}$ across the nine TPS categories,
+weighting by category-specific CSI weights (\S\ref{sec:csi}). The
+overlay is the framework's way of asking whether changes in
+provincial restrictive confinement lead, lag, or co-vary with
+changes in police-recorded crime --- an intentionally minimal
+identification claim, but a useful descriptive backbone for
+further causal work.
+
+A per-region rollup
+\begin{equation}
+  \widehat{\rho}_{S, N(c)}^{(r)}
+  \;=\;
+   \frac{\sum_{t=2}^{T}
+         (\Delta S^{(r)}_{t})(\Delta N^{(\mathrm{TPS})}_{t}(c))}
+        {\sqrt{\sum_{t=2}^{T} (\Delta S^{(r)}_{t})^{2}\,
+               \sum_{t=2}^{T} (\Delta N^{(\mathrm{TPS})}_{t}(c))^{2}}}
+  \label{eq:overlay-region}
+\end{equation}
+disaggregates the YoY correlation by Ontario administrative
+region $r \in \mathcal{R}$, surfacing regional heterogeneity that
+the city-wide statistic averages over.
+
+\section{Ontario Special Investigations Unit automation}
+\label{sec:siu-ontario}
+
+The Ontario Special Investigations Unit publishes
+director's-report HTML pages keyed by an internal locator
+identifier $\mathrm{drid}$. Each report has a paired news-release
+locator $\mathrm{nrid}$. The two are not equal, and the canonical
+join key is the SIU \emph{case number} of the form
+$\mathrm{YY\text{-}XXX\text{-}NNN}$. The Ontario~SIU pipeline in
+\texttt{morie.siu} ingests the corpus end-to-end:
+\begin{equation}
+  \texttt{scrape\_drid} \to \texttt{parse\_html}
+  \to \texttt{normalize} \to \texttt{schema}
+  \to \texttt{write\_csv} \to \texttt{analyze}.
+  \label{eq:siu-pipeline}
+\end{equation}
+The schema $\Sigma_{\mathrm{SIU}}$ has 65 columns and is
+case-number-keyed. The \texttt{analyze} module produces seven
+RichResult-emitting summaries: \texttt{by\_police\_service},
+\texttt{by\_year}, \texttt{case\_counts}, \texttt{demographics},
+\texttt{mental\_health\_race\_indicators},
+\texttt{decision\_timing}, \texttt{all\_analyses}. The pipeline
+is conservative on the network side: $\mathrm{drid}$ ranges are
+scraped politely with a concurrency limit and an HTTP cache, and
+all analytical outputs are reproducible from the canonical CSV.
+
+This pipeline is the framework author's contribution and was
+designed in early 2026 from a brief draft titled
+\emph{SIU\_initial\_draft.md}~\cite{Ruhela2026SIUDraft}.
+
+\section{Federal aggregate companion: CCRSO and Doob T-539-20}
+\label{sec:ccrso}
+
+\subsection{Decoupling test}
+
+For matched annual time series $C = (C_{t})_{t=1}^{T}$ of
+crime rate and $I = (I_{t})_{t=1}^{T}$ of imprisonment rate, the
+decoupling statistic is the Pearson correlation
+\begin{equation}
+  \widehat{\rho}_{C, I} \;=\;
+  \frac{\sum_{t=1}^{T}
+        (C_{t} - \bar{C})(I_{t} - \bar{I})}
+       {\sqrt{\sum_{t=1}^{T}(C_{t}-\bar{C})^{2}
+              \sum_{t=1}^{T}(I_{t}-\bar{I})^{2}}}.
+  \label{eq:decoupling}
+\end{equation}
+A small or sign-mismatched $\widehat{\rho}_{C,I}$ supports the
+Doob~\cite{Doob2020Affidavit} thesis that imprisonment rates
+have decoupled from crime rates. MRM reports
+$\widehat{\rho}_{C,I}$ alongside Pettitt's
+non-parametric change-point statistic
+\begin{equation}
+  U_{T}(t) \;=\; \sum_{i=1}^{t} \sum_{j=t+1}^{T}
+   \mathrm{sgn}\bigl(X_{i} - X_{j}\bigr),
+  \quad
+  K_{T} \;=\; \max_{1 \le t < T} \lvert U_{T}(t) \rvert,
+  \label{eq:pettitt}
+\end{equation}
+applied to each of $C$ and $I$.
+
+\subsection{CCRSO tables}
+
+MRM hardcodes Tables 1, 2, and 3 from Doob's $T$-$539$-$20$
+affidavit (Vol.\ 3, pp.\ 778--795, sourced from CCRSO 2018):
+\begin{itemize}
+  \item \textbf{Table 1} (5-year-average annual conditional
+        releases by type): violent revocation rates of
+        $0.14\%$ (day parole), $0.49\%$ (full parole), and
+        $1.50\%$ (statutory release).
+  \item \textbf{Table 2} (prisoner flow 2013/14--2017/18):
+        average daily count $\approx 14{,}638$; statutory
+        releases $\approx 5{,}127$/year, or about $427$/month.
+  \item \textbf{Table 3} (age distribution 2018): age-group
+        $50+$ comprises $47.3\%$ of the Canadian adult population
+        but only $25.2\%$ of CSC custody and $16.9\%$ of CSC
+        admissions.
+\end{itemize}
+
+\section{A worked example: \texttt{c02} institution-mix MRM}
+\label{sec:worked-example}
+
+To illustrate how MRM's pieces compose end-to-end, I walk
+through the analysis of OTIS \texttt{c02}, an aggregate table of
+restrictive-confinement counts indexed by institution $j$, fiscal
+year $t$, region $r$, and gender $g$. I am interested in the
+conditional incidence-rate ratio for treatment
+$T = \one\{g = \text{Female}\}$ controlling for the
+high-cardinality institution and region effects.
+
+\paragraph{Step 1: aggregate model.} The starting point is the
+log-linear fit~\eqref{eq:rf-aggregate-model} with stratum fixed
+effects for institution. Because $J = 25$ institutions are too
+many for a low-dimensional Poisson MLE and the institutional
+denominator is variable across years, MRM instead fits the
+marginal model~\eqref{eq:rf-gee-marginal} with cluster-robust
+standard errors and an institution cluster.
+
+\paragraph{Step 2: GEE grid.} MRM fits the four GEE
+combinations of family $F \in \{\text{Pois}, \text{NB}\}$ and
+working correlation $\mathbf{W} \in \{\text{Exch}, \text{Indep}\}$
+in parallel, retaining the converged ones. Following
+Theorem~\ref{thm:gee-priority}, the (NB, Exch) row is taken as the
+canonical estimate; the others are reported for sensitivity. When
+the NB-Exch fit fails to converge --- which occurs for some
+\texttt{c}-series tables with extreme overdispersion --- MRM
+falls back through (Pois, Exch), (NB, Indep), and (Pois, Indep)
+in that order.
+
+\paragraph{Step 3: report.} The output is a \texttt{RichResult}
+with the fitted IRR, its $95\%$ Wald CI~\eqref{eq:irr-ci}, the
+point estimate's $E$-value~\eqref{eq:evalue}, and a four-row
+sensitivity table covering all converged GEE fits. Where
+individual-level data are available (the \texttt{a}- and
+\texttt{b}-series), the per-row estimators of
+\S\ref{sec:mrm-perrow} are also reported.
+
+\paragraph{Step 4: companion analyses.} MRM automatically pairs
+the aggregate component with (i) the corresponding Doob
+$\chi^{2}$ on the appropriate 2-way slice, (ii) the
+cross-jurisdiction Mandela classifier for the same year and
+region (via \texttt{c11}), (iii) the federal Sprott--Doob
+comparison for the same fiscal period, and (iv) the
+OTIS$\times$TPS YoY correlation for the same region. The
+resulting \emph{master report} has six sections
+(\S\S\ref{sec:mrm-aggregate}--\ref{sec:overlay}).
+
+\section{Replication of Sprott--Doob--Iftene}
+\label{sec:replication}
+
+MRM's $\chi^{2}$ verifier rebuilds five published $\chi^{2}$
+statistics from the transcribed cell counts of
+Sprott--Doob--Iftene's three reports. The recomputed values
+match the published values to within $0.01$:
+
+\begin{table}[ht]
+  \caption{$\chi^{2}$ verification (recomputed vs.\ published).}
+  \label{tab:chi2-verify}
+  \centering
+  \begin{tabular}{lrrrr}
+    \toprule
+    Source                                      & Recomputed & df & Published & df \\
+    \midrule
+    SD 2021 Feb T11: Region $\times$ stay length & 201.01    & 16 & 201.00    & 16 \\
+    SD 2021 Feb T15: Region $\times$ MH-flag    &  27.51    &  4 &  27.51    &  4 \\
+    SD 2021 Feb T22: Region $\times$ Mandela    & 208.54    &  8 & 208.54    &  8 \\
+    SDI 2021 May T5: Race $\times$ \#reviews    &   8.50    &  3 &   8.50    &  3 \\
+    SDI 2021 May T10: Per-IEDM remain           &  26.12    & 11 &  26.12    & 11 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The verification confirms both the accuracy of the framework's
+transcription and the internal consistency of the published
+statistics. I provide a generic
+\texttt{verify\_chi2(observed)} helper so that the same diagnostic
+can be applied to any future replication target.
+
+\section{Empirical findings}
+\label{sec:findings}
+
+I report three headline findings.
+
+\paragraph{F1 (Mandela cross-jurisdiction).}
+The provincial Ontario Mandela$^{\ast}$ \emph{Torture}-classified
+proportion (duration-only proxy applied to OTIS \texttt{c11}
+Segregation individuals) rises monotonically from $12.5\%$ in
+fiscal 2023 to $20.6\%$ in fiscal 2025, exceeding the federal
+SIU $\mathrm{Torture}$-classified proportion of $9.9\%$
+that Sprott and Doob~\cite{SprottDoob2021Torture} found across
+$N = 1{,}960$ federal person-stays (November 2019 -- September
+2020). The peak provincial-vs-federal gap is $+10.7$ percentage
+points. This is robust to the conservative duration-only proxy
+(\S\ref{sec:mandela}).
+
+\paragraph{F2 (IEDM oversight is structurally limited).}
+I confirm the headline IEDM-process findings of
+Sprott--Doob--Iftene~\cite{SprottDoobIftene2021IEDM} on $N = 265$
+SIU person-stays receiving $\geq 1$ IEDM review under
+CCRA~s.~$37.8$. Of $380$ rendered decisions, $58.9\%$ kept the
+inmate in the SIU and $30.3\%$ were pre-empted by CSC moving the
+prisoner before the IEDM ruled; only $8.7\%$ ordered the inmate's
+removal. Twelve IEDMs varied from $37.5\%$ to $85.7\%$ in their
+``should remain'' rate ($\chi^{2} = 26.12$, df $= 11$, $p < .01$),
+indicating substantial inter-IEDM heterogeneity that is not
+explained by the cases reviewed. $105$ stays of $\geq 76$ days,
+including $49$ of the $137$ stays $\geq 120$ days, had no IEDM
+record at all in the dataset.
+
+\paragraph{F3 (Sprott--Doob--Iftene replication).}
+All five published $\chi^{2}$ statistics from the three
+Sprott--Doob--Iftene reports reproduce to within $0.01$ of the
+published values from the transcribed cell counts
+(Table~\ref{tab:chi2-verify}). The Pacific torture rate is
+$22.6\times$ the Ontario federal rate ($39.1$ vs.\ $1.73$ per
+$1{,}000$ regional prisoners; SD~2021~Feb~Table~23).
+
+\section{Limitations and ethical considerations}
+\label{sec:limitations}
+
+\paragraph{Aggregation and identifiability.} OTIS is released as
+an aggregate file. Per-individual identifiers are not available
+beyond a year-bounded \texttt{unique\_individual\_id}, which means
+the \texttt{a}- and \texttt{b}-series RFs in
+\S\ref{sec:mrm-perrow} treat row-aggregations as analytic units
+rather than person-time records. This is conservative: variances
+are likely smaller than they would be in a true per-person
+panel, but the point estimates are not biased provided the
+within-aggregation correlation structure is well-modelled by the
+GEE grid of \S\ref{sec:gee-grid}.
+
+\paragraph{Mandela duration-only proxy.} As I am explicit in
+\S\ref{sec:mandela}, the OTIS Mandela classification is a
+duration-only proxy. The federal CSC SIU classification
+operationalised by Sprott and Doob~\cite{SprottDoob2021Torture}
+also requires the inmate to have spent $\le 2$ hours out-of-cell
+on average and to have missed the four-hour requirement on
+$100\%$ of days; OTIS does not expose hours-out-of-cell, so the
+provincial proportion classified as
+\emph{Torture}$^{\ast}$ may overstate the proportion that would
+be classified \emph{Torture} under the full operationalization.
+I therefore report two views (Segregation and Restrictive
+Confinement) and treat the cross-jurisdiction gap as an upper
+bound rather than a point estimate.
+
+\paragraph{Two-SIU disambiguation.} As noted in
+Remark~\ref{rmk:two-siu}, the federal Structured Intervention
+Unit and the Ontario Special Investigations Unit share the
+acronym SIU but refer to entirely distinct agencies. MRM's
+MORIE instantiation deliberately uses \texttt{morie.siuiap}
+for the former and \texttt{morie.siu} for the latter; readers
+and downstream code should never conflate them.
+
+\paragraph{Data privacy.} The Ontario SIU scraper of
+\S\ref{sec:siu-ontario} only ingests publicly published
+director's-report HTML and the paired news-release HTML. No
+personally identifying information beyond what is published is
+collected, and all output CSVs are case-number-keyed (the SIU's
+own canonical identifier).
+
+\paragraph{Non-causal identification claims.} The OTIS$\times$TPS
+overlay (\S\ref{sec:overlay}) and the Lotka--Volterra dynamics
+(\S\ref{sec:tps-physics}) are descriptive and do not, on their
+own, license causal-identification claims. The per-row component
+of \S\ref{sec:mrm-perrow} is the only set of estimators in MRM
+that targets a formal causal estimand, and only under the
+standard SUTVA, consistency, positivity, and unconfoundedness
+assumptions.
+
+\section{Reproducibility}
+\label{sec:reproducibility}
+
+MRM is implemented in the open-source MORIE package as a
+set of MRM modules, distributed via Python and R. At the
+time of this paper:
+\begin{itemize}
+  \item \textbf{Tests.} The Python test suite contains $\approx
+        14{,}836$ baseline tests plus $55$ tests of the federal
+        / provincial Mandela cross-jurisdiction modules, all
+        passing.
+  \item \textbf{Documentation.} A Sphinx documentation site
+        builds without warnings under the strict-mode
+        (\verb|-W|) build, including pages for each component
+        described in this paper.
+  \item \textbf{Datasets.} The 41 built-in datasets include the
+        OTIS aggregate file, the Ontario SIU canonical CSV, the
+        TPS open-data categories, and the CCRSO 2018 table
+        constants.
+\end{itemize}
+
+The package is released under the GNU General Public License,
+version 2 only (\textbf{GPL-2.0-only};
+\url{https://www.gnu.org/licenses/old-licenses/gpl-2.0.html}), with
+the Ontario~SIU ingestion utilities additionally subject to the
+Ontario open-government licence on the source corpus. The paper
+text and accompanying figures are released under \textbf{CC-BY-4.0}
+(\url{https://creativecommons.org/licenses/by/4.0/}), the licence
+the Zenodo record at \url{https://doi.org/10.5281/zenodo.20096075}
+carries.
+
+\section*{Acknowledgements}
+
+The author thanks Prof.\ Beatrice Jauregui (University of Toronto)
+for the network of mentorship that made this line of work
+possible, and Prof.\ Ayobami Laniyonu (University of Toronto) for
+valuable lessons over the broader period of this work that
+informed the author's thinking on policing and corrections
+research. The MRM methodology lineage acknowledges the federal
+context provided by Anthony N.\ Doob's affidavit and the four
+Sprott--Doob--Iftene independent academic reports
+(\S\ref{sec:mrm}). All implementation, all framework design, and
+all empirical findings reported in this paper are the work of the
+framework author.
+
+\bibliographystyle{plainnat}
+\begin{thebibliography}{99}
+
+\bibitem{Bettencourt2007}
+Bettencourt, L.\ M.\ A., Lobo, J., Helbing, D., K\"uhnert, C., \&
+West, G.\ B.\ (2007).
+\emph{Growth, innovation, scaling, and the pace of life in
+cities.}
+Proc.\ Natl.\ Acad.\ Sci.\ USA, 104(17), 7301--7306.
+
+\bibitem{Daley2003PointProcess}
+Daley, D.\ J., \& Vere-Jones, D.\ (2003).
+\emph{An Introduction to the Theory of Point Processes,
+Volume I: Elementary Theory and Methods} (2nd ed.).
+Springer.
+
+\bibitem{Chernozhukov2018DoubleML}
+Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E.,
+Hansen, C., Newey, W., \& Robins, J.\ (2018).
+\emph{Double/debiased machine learning for treatment and
+structural parameters.}
+The Econometrics Journal, 21(1), C1--C68.
+
+\bibitem{ClausetShalizi2009Powerlaw}
+Clauset, A., Shalizi, C.\ R., \& Newman, M.\ E.\ J.\ (2009).
+\emph{Power-law distributions in empirical data.}
+SIAM Review, 51(4), 661--703.
+
+\bibitem{Goffman1961Asylums}
+Goffman, E.\ (1961).
+\emph{Asylums: Essays on the Social Situation of Mental Patients
+and Other Inmates.}
+Anchor Books.
+
+\bibitem{Doob2020Affidavit}
+Doob, A.\ N.\ (2020).
+\emph{Affidavit of Anthony N. Doob} (Federal Court of Canada,
+File T-539-20, Application Record Vol.\ 3 of 5, pp.\ 778--795).
+Canadian Civil Liberties Association et al.\ v.\ Attorney General
+of Canada.
+
+\bibitem{Ruhela2026MRM}
+Ruhela, V.\ S.\ (2026).
+\emph{The MRM Framework: A Multi-Source Statistical Foundation
+for Canadian Carceral, Police, and Oversight Data, Implemented
+as MRM modules in MORIE.}
+Zenodo. \url{https://doi.org/10.5281/zenodo.20096075} (this paper).
+
+\bibitem{Ruhela2026MORIE}
+Ruhela, V.\ S.\ (2026).
+\emph{MORIE: A Multi-Domain Scientific Computing Toolkit for
+Observational Inference, with Sociolegal, Signal-Processing,
+Cryptographic, and Spatial-Statistics Modules.}
+Zenodo. \url{https://doi.org/10.5281/zenodo.20096350}.
+
+\bibitem{Ruhela2026Software}
+Ruhela, V.\ S.\ (2026).
+\emph{MORIE Toolkit: Methods for Observational Inference and
+Robust Analysis of Interventions in Scientific Experimentation}
+[Software, v0.1.2].
+Zenodo. \url{https://doi.org/10.5281/zenodo.20111233}.
+PyPI: \url{https://pypi.org/project/morie/}.
+r-universe: \url{https://hadesllm.r-universe.dev/morie}.
+Documentation: \url{https://hadesllm.github.io/morie/}.
+
+\bibitem{Ruhela2026Hawkes}
+Ruhela, V.\ S.\ (2026).
+\emph{Criminological Hawkes Process via MORIE: Markovian and
+Non-Markovian Self-Exciting Point Processes for Toronto Crime.}
+Zenodo. \url{https://doi.org/10.5281/zenodo.20102198}.
+
+\bibitem{Ruhela2026SIUDraft}
+Ruhela, V.\ S.\ (2026).
+\emph{SIU initial draft (Ontario Special Investigations Unit
+automation).}
+Internal manuscript, May 2026.
+
+\bibitem{ShortBrantingham2008}
+Short, M.\ B., D'Orsogna, M.\ R., Pasour, V.\ B., Tita, G.\ E.,
+Brantingham, P.\ J., Bertozzi, A.\ L., \& Chayes, L.\ B.\ (2008).
+\emph{A statistical model of criminal behavior.}
+Mathematical Models and Methods in Applied Sciences, 18(suppl.),
+1249--1267.
+
+\bibitem{SprottDoob2020Operation}
+Sprott, J.\ B., \& Doob, A.\ N.\ (2020, October).
+\emph{Understanding the Operation of Correctional Service
+Canada's Structured Intervention Units: Some Preliminary
+Findings.}
+Centre for Criminology \& Sociolegal Studies, University of
+Toronto.
+
+\bibitem{SprottDoob2020Covid}
+Sprott, J.\ B., \& Doob, A.\ N.\ (2020, November).
+\emph{Is there Clear Evidence that COVID-19 Was the Cause of
+Problems with the Operation of CSC's Structured Intervention
+Units?}
+Centre for Criminology \& Sociolegal Studies, University of
+Toronto.
+
+\bibitem{SprottDoob2021Torture}
+Sprott, J.\ B., \& Doob, A.\ N.\ (2021, February).
+\emph{Solitary Confinement, Torture, and Canada's Structured
+Intervention Units.}
+Centre for Criminology \& Sociolegal Studies, University of
+Toronto.
+
+\bibitem{SprottDoobIftene2021IEDM}
+Sprott, J.\ B., Doob, A.\ N., \& Iftene, A.\ (2021, May).
+\emph{Do Independent External Decision Makers Ensure that ``An
+Inmate's Confinement in a Structured Intervention Unit Is to End
+as Soon as Possible''?}
+Schulich School of Law, Dalhousie University.
+
+\bibitem{UN2015Mandela}
+United Nations General Assembly (2015).
+\emph{United Nations Standard Minimum Rules for the Treatment of
+Prisoners (the Nelson Mandela Rules).}
+A/Res/70/175.
+
+\bibitem{vanderLaan2007SuperLearner}
+van der Laan, M.\ J., Polley, E.\ C., \& Hubbard, A.\ E.\ (2007).
+\emph{Super Learner.}
+Statistical Applications in Genetics and Molecular Biology, 6(1).
+
+\bibitem{VanderWeele2017Evalue}
+VanderWeele, T.\ J., \& Ding, P.\ (2017).
+\emph{Sensitivity analysis in observational research:
+Introducing the E-value.}
+Annals of Internal Medicine, 167(4), 268--274.
+
+\bibitem{Wallace2009CSI}
+Wallace, M., Turner, J., Matarazzo, A., \& Babyak, C.\ (2009).
+\emph{Measuring crime in Canada: Introducing the Crime Severity
+Index and improvements to the Uniform Crime Reporting Survey.}
+Statistics Canada Catalogue no.\ 85-004-X.
+
+\bibitem{ZorroMedina2023JMP}
+Zorro Medina, {\'A}.\ (2023).
+\emph{The Effect of Anti-Gang Laws on Crime and Social Control.}
+Job Market Paper, University of Chicago.
+\url{https://azorromedina.com/wp-content/uploads/2023/08/JMP_ZorroMedina_28_08_23H.pdf}.
+
+\bibitem{Athey2022Staggered}
+Athey, S., \& Imbens, G.\ W.\ (2022).
+\emph{Design-based analysis in difference-in-differences
+settings with staggered adoption.}
+Journal of Econometrics, 226(1), 62--79.
+
+\bibitem{CallawaySantanna2021}
+Callaway, B., \& Sant'Anna, P.\ H.\ C.\ (2021).
+\emph{Difference-in-differences with multiple time periods.}
+Journal of Econometrics, 225(2), 200--230.
+
+\bibitem{GoodmanBacon2021DiD}
+Goodman-Bacon, A.\ (2021).
+\emph{Difference-in-differences with variation in treatment
+timing.}
+Journal of Econometrics, 225(2), 254--277.
+
+\end{thebibliography}
+
+\end{document}

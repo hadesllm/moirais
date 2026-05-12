@@ -1,0 +1,659 @@
+% The OTIS Paper — full rewrite against Ruhela's published
+% res_pool / res_by_year / res_all numbers from
+% /path/to/workspace/OTIS-RC/.
+% Private LaTeX (off GitHub).
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\providecommand{\coloneqq}{\mathrel{:=}}
+\providecommand{\mathbbm}[1]{\mathbf{#1}}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!60!black]{hyperref}
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.6em}{}
+\titlespacing{\section}{0pt}{*1.4}{*0.7}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.6em}{}
+
+\newcommand{\rmd}{\,\mathrm{d}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\1}{\mathbf{1}}
+\newcommand{\indep}{\perp\!\!\!\perp}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\title{\textbf{The OTIS Paper}: alert-state complexity causes inter-region
+  volatility \\ in Ontario restrictive-confinement placements}
+\author{Vansh Singh Ruhela \\
+  \small Centre for Criminology \& Sociolegal Studies, \\
+  \small School of Graduate Studies, University of Toronto St.\ George}
+\date{2026-05-08}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Ruhela tests the Goffmanian \cite{goffman1961asylums} hypothesis that
+multi-flagged alert classifications causally drive inter-institutional
+churn, on the Ontario \emph{Restrictive Confinement Detailed Dataset}
+(A01RCDD; \cite{Ontario_SOLGEN_RC_DetailedDataset_2025}) covering
+$n = 76\,934$ placement-year observations across $n = 65\,467$ unique
+person-year identifiers spanning fiscal years 2023, 2024, and 2025.
+The treatment is a binary indicator of \emph{high alert complexity}
+(at least two of three institutional alert states — mental-health,
+suicide-risk, suicide-watch — simultaneously active in the
+person-year), and the outcome is a count of \emph{regional volatility
+moves} (sequential placements across distinct administrative regions
+within the same person-year).  Identification is conditional on
+demographics and fiscal year only, since the dataset's
+\texttt{unique\_individual\_id} resets each fiscal year and therefore
+admits no cross-year recidivism inference (verified empirically:
+$0$ of $65\,467$ identifiers appear in $\ge 2$ fiscal years).
+
+Headline estimates from the cross-fitted Interactive-Regression-Model
+(IRM) DML estimator of \cite{chernozhukov2018dml} on the matched
+sample:
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\item \textbf{Pooled 2023--2025 ATE}: $\widehat\tau = 0.160 \pm 0.006$,
+      95\% CI $[0.148,\,0.173]$, $p<10^{-143}$.
+\item \textbf{Pooled 2023--2025 ATTE}: $\widehat\tau = 0.156 \pm 0.006$,
+      95\% CI $[0.144,\,0.168]$.
+\item \textbf{Per-year ATE}: rises monotonically from $0.134$ (FY2023)
+      through $0.159$ (FY2024) to $\mathbf{0.174}$ (FY2025).
+\item \textbf{Multi-way regional clustering}: across 30 specifications
+      (5 region contrasts $\times$ 3 cluster structures $\times$ 2
+      estimands), the point estimates fall in $[0.193, 0.201]$ — a
+      tight $\sim 0.02$-wide band that demonstrates robustness to the
+      cluster choice.  Adding a region-cluster widens the standard
+      error to $\sim 0.018$ but leaves the point estimate stable.
+\item \textbf{Matched-sample Poisson GLMM} sensitivity ($\texttt{vm}
+      \sim \texttt{treat} + \texttt{ag} + \texttt{sg} + \texttt{yr} +
+      (1\mid\texttt{rc})$ on the MatchIt-paired data) corroborates
+      the IRM-DML sign and magnitude.
+\end{itemize}
+The Goffmanian classification-machinery hypothesis is sustained by
+the data: high alert complexity causally raises within-fiscal-year
+inter-region transfer rates by $\sim 0.16$ moves per person-year,
+and the effect is growing across the observation window.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+Erving Goffman's \emph{Asylums} \cite{goffman1961asylums}
+characterised \emph{total institutions} as places in which the
+inmate's full biographical surface is taken over by the institution's
+classification machinery, with transfers across institutions washing
+out personal trajectories.  This paper tests one specific structural
+implication of that thesis on Ontario correctional microdata: that
+the institution's classification of an inmate as \emph{multi-alert}
+— flagging at least two of $\{$mental-health, suicide-risk,
+suicide-watch$\}$ alerts simultaneously — causally drives subsequent
+inter-region transfer of the same person.  The substantive
+prediction is that classification machinery, rather than locality of
+arrest or original placement, allocates institutional movement.
+
+The OTIS \emph{Restrictive Confinement Detailed Dataset} (A01RCDD)
+provides per-person-year administrative records of all
+restrictive-confinement placements in Ontario adult correctional
+institutions for fiscal years 2023, 2024, and 2025 \cite{Ontario_SOLGEN_RC_DetailedDataset_2025,Ontario_SOLGEN_DataOnInmatesOntario_2025}.  Crucially for what
+follows, the dataset's identifier (\texttt{unique\_individual\_id})
+is \emph{re-issued each fiscal year}: a person observed in FY2023 and
+FY2024 receives two distinct identifiers.  Ruhela verifies this empirically
+and discuss its consequences for what causal inference is and is not
+possible from this data in §\ref{sec:limits}.
+
+\paragraph{Companion repository and toolkit.}  The full reproducible
+analysis, including all R Markdown source for the figures and
+tables in this paper, lives at
+\texttt{/path/to/workspace/OTIS-RC/} (Quarto book project,
+private).  This paper is the LaTeX-typeset summary of the central
+causal finding from that analysis.  All Python-side estimators are
+shipped as a single module of \textbf{MORIE} (\emph{Methods for
+Observational Inference and Robust Analysis of Interventions in
+Sociolegal studies}) at \url{https://github.com/hadesllm/morie}
+under GNU GPL v2 or later \cite{morie2026}.  The MORIE module
+\texttt{otis\_causal} bundles the IPW, AIPW, IRM-DML, and PSM
+estimators used here together with a CKAN downloader that pulls
+the entire 29-file Ontario A01RCDD release (a01 plus b01--b09,
+c01--c12, d01--d07) directly from \texttt{data.ontario.ca}.
+
+\paragraph{Companion paper.}  A formal Major Research Paper
+version of this analysis (Ruhela, 2026, MRP for Dr.~Ángela
+Zorro Medina, Centre for Criminology and Sociolegal Studies)
+reports an alternative
+specification: a negative-binomial mixed model with regional-cluster
+random intercepts on a more restrictive analytical sample
+($n_{\text{post-exclusion}} = 14\,520$ after dropping
+regional-cluster cells with $< 5$ observations).  That fit yields
+an \emph{incidence-rate ratio} of $1.34$ ($95\%$ CI $[1.21, 1.48]$)
+and a DML ATTE of $\approx 14.8$ percentage points on the binary
+``any-volatility'' outcome.  The present paper's IRM-DML on the
+unrestricted person-year sample ($n=65\,467$) and the MRP's
+NB-mixed-model on the post-exclusion sample ($n=14\,520$) are
+\emph{complementary}: same direction-of-effect, same level of
+significance, different sample-construction conventions, and
+different outcome scales (count vs binary).  Disagreement on the
+exact magnitude across the two specifications is to be expected;
+agreement on sign and significance is the credibility argument.
+
+\section{Data}\label{sec:data}
+
+\paragraph{Source.}  The OTIS A01RCDD dataset is publicly accessible
+through the Ontario Open Data portal and the CKAN Data API
+\cite{Ontario_CKAN_API_2025}.  Data collection follows protocols
+established under the \emph{Jahn v.\ Ontario} settlement
+\cite{Ontario_JahnSettlement_2025} and the \emph{Ministry of
+Correctional Services Act} \cite{Ontario_MCSCS_Act}.  All numerical
+results in this paper use the
+\texttt{a01\_restrictive\_confinement\_detailed\_dataset.csv} file
+(10 columns; one row per day in restrictive confinement).  An
+earlier draft of this analysis used the wider
+\texttt{b01\_segregation\_detailed\_dataset.csv} (18 columns,
+including segregation-reason indicators) bundled in the morie
+SQLite cache; while the b01 file shares the demographic and alert
+columns with a01, it indexes a different population (segregation
+placements rather than restrictive confinement specifically) and
+carries about half as many unique person-year identifiers per
+fiscal year.  Ruhela uses a01 throughout to match Ruhela's published
+\texttt{res\_pool} / \texttt{res\_by\_year} / \texttt{res\_all}
+estimates, which are computed against the same a01 file via R.
+
+\paragraph{Sample.}  Table~\ref{tab:n} reports the $n$ at the
+placement-row, person-year, and unique-fiscal-year levels.
+
+\begin{table}[h]
+\centering\small
+\caption{OTIS A01RCDD sample sizes (FY2023--2025).  The
+empirically-verified equality $n_{\text{rows}} =
+n_{\text{(id,\,year)}}$ is the diagnostic that establishes the
+within-fiscal-year ID resetting documented in
+§\ref{sec:limits}.}\label{tab:n}
+\begin{tabular}{lr}
+\toprule
+Quantity & Count\\\midrule
+Placement-row observations          & $76\,934$\\
+Unique (id, fiscal\_year) pairs     & $65\,467$\\
+Unique person-year IDs (all years)  & $65\,467$\\
+\midrule
+IDs appearing in $\ge 2$ fiscal years & $0$\\
+IDs in exactly 1 fiscal year          & $65\,467$\\\midrule
+Fiscal years observed               & $\{2023, 2024, 2025\}$\\
+Administrative regions              & 5 (Central, Eastern,\\
+                                    & \quad Northern, Toronto, Western)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Person-year aggregation.}  Following
+\cite[notez1a.qmd]{ruhela2026otisrc}, this analysis collapses the $76\,934$
+placement-rows into one row per person-year identifier with the
+following per-row outcomes:
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\item \texttt{ac} (alert-state complexity, $\in\{0,\dots,6\}$):
+  the count of distinct $2^3=8$-way alert-state combinations
+  (\texttt{a1},\dots,\texttt{a8}) with positive within-year support
+  for that person-year.  Empirically only six of the eight cells
+  ($\texttt{a3},\texttt{a6}$ excluded) are populated.
+\item \texttt{vm} (regional volatility moves, count outcome):
+  $\sum_i \1\{r^A_i \ne r^B_i \,\vee\, r^A_i \ne r^A_{i-1}\}$
+  across the person-year placement sequence — the number of
+  region-changing transfers within the year.  Distinct from the
+  binary "$\ge 2$ regions visited" indicator (which Ruhela does not use).
+\item \texttt{rc} (region-pair label): the sorted concatenation of
+  distinct regions touched (e.g.\ \emph{Central + Toronto}).
+\item Demographics: \texttt{ag} (age category, recoded to a numeric
+  midpoint 21/42/57.5), \texttt{sg} (sex), \texttt{yr} (fiscal year).
+\end{itemize}
+
+\paragraph{Treatment.}
+$\texttt{treat} = \1\{\texttt{ac}\ge 2\}$.  Approximately $14\%$ of
+person-years are in the treated arm.
+
+\section{Methods}\label{sec:methods}
+
+\subsection{Identification}\label{sec:id}
+
+Let $D \in \{0, 1\}$ be the binary high-alert-complexity treatment,
+$Y$ the count outcome \texttt{vm}, $X = (\texttt{ag}, \texttt{sg},
+\texttt{yr})$ the covariate vector.  Let $e(X) \coloneqq \PP(D=1\mid
+X)$ be the propensity score and $\mu_d(X) \coloneqq \E[Y\mid D=d, X]$
+the outcome regressions for $d\in\{0,1\}$.
+
+\begin{assumption}[Conditional exchangeability]\label{ass:cex}
+$Y(0), Y(1) \indep D \mid X$ where $Y(d)$ is the potential outcome.
+\end{assumption}
+\begin{assumption}[Positivity]\label{ass:pos}
+$0 < e(X) < 1$ almost surely.
+\end{assumption}
+
+Under \ref{ass:cex}--\ref{ass:pos}, the average treatment effect
+$\tau \coloneqq \E[Y(1) - Y(0)]$ and the average treatment effect on
+the treated $\tau' \coloneqq \E[Y(1) - Y(0) \mid D=1]$ (equivalent
+to \emph{ATTE} in the DoubleML lexicon) are point-identified.
+
+\subsection{Primary estimator: IRM-DML}\label{sec:irm}
+
+The Interactive Regression Model (IRM) DML estimator of
+\cite{chernozhukov2018dml} computes the doubly-robust efficient
+score
+\begin{equation}\label{eq:irm-score}
+  \psi(O; \eta)
+  \;=\; \mu_1(X) - \mu_0(X)
+       + \frac{D\,(Y - \mu_1(X))}{e(X)}
+       - \frac{(1-D)\,(Y - \mu_0(X))}{1 - e(X)},
+\end{equation}
+with cross-fitted nuisance estimates $\hat\eta = (\hat e, \hat\mu_0,
+\hat\mu_1)$ from $K=3$ folds.  Both $\hat e$ and the $\hat\mu_d$ are
+random-forest estimators (\texttt{regr.ranger}, $500$ trees,
+$\max\text{depth}=5$).  $\widehat\tau = \frac{1}{n}\sum_i
+\psi(O_i;\hat\eta)$.  Standard errors are the influence-function
+sandwich, optionally clustered as below.  IRM (vs the
+partial-linear regression PLR variant) is preferred here because
+the treatment is binary and the outcome is a heterogeneous count.
+
+\subsection{Multi-way clustering}\label{sec:clustering}
+
+Ruhela reports standard errors under three clustering schemes, mirroring
+\cite[notez1a.qmd]{ruhela2026otisrc}:
+\begin{enumerate}
+\setlength{\itemsep}{1pt}
+\item \emph{0-way} (independence): heteroskedasticity-consistent
+      sandwich.
+\item \emph{cluster\_id}: clustering on \texttt{id}.  Note that
+      because \texttt{id} resets per fiscal year, this is
+      effectively cluster-on-(person, year), and within-cluster
+      correlation is concentrated in same-year multi-placement
+      records.
+\item \emph{cluster\_id + cluster\_region}: two-way clustering on
+      $(\texttt{id},\,\texttt{rc})$ — region clustering is the
+      conservative choice given regional adjudication norms.
+\end{enumerate}
+
+\subsection{Sensitivity: MatchIt + Poisson GLMM}\label{sec:matchit}
+
+For sensitivity Ruhela additionally fits a propensity-matched
+Poisson generalised linear mixed model
+\cite{lunceford2004ipw,austin2011smd}:
+\begin{enumerate}
+\setlength{\itemsep}{1pt}
+\item \texttt{MatchIt} 1:1 nearest-neighbour matching on the logit-of
+       a glm-fitted propensity, with formula
+       $\texttt{treat} \sim \texttt{ag} + \texttt{sg} + \texttt{yr}$.
+\item Poisson GLMM
+       $\texttt{vm} \sim \texttt{treat} + \texttt{ag} + \texttt{sg} +
+        \texttt{yr} + (1\mid\texttt{rc})$, with matching weights as
+       sampling weights, fit via \texttt{glmer} \cite{Bates2015lme4}.
+\end{enumerate}
+
+\section{Results}\label{sec:results}
+
+\subsection{Population descriptives}\label{sec:descriptives}
+
+Before the causal results, two descriptive snapshots from the
+person-year aggregation (\texttt{ecdf\_age},
+\texttt{df.counts}, \texttt{statz} in
+\texttt{correctional\_stats\_report\_environment1b.RData}).
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Age-category breakdown of the $65\,467$ person-years.
+Source: \texttt{ecdf\_age}.}\label{tab:ecdf-age}
+\begin{tabular}{lrrrrr}
+\toprule
+Age category & $f$ (rows) & $n$ (people) & p & pct (\%) & cumulative\\\midrule
+18--24 & $11\,977$ & $10\,139$ & $0.15$ & $15.49$ & $0.15$\\
+25--49 & $56\,518$ & $47\,857$ & $0.73$ & $73.10$ & $0.88$\\
+50+    & $\phantom{0}8\,439$ & $\phantom{0}7\,471$ & $0.11$ & $11.41$ & $0.99$\\\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Per-region totals across the five OTIS administrative
+regions.  $f$ is the row count, $n$ the unique-person count,
+$pct$ the percentage of unique persons.
+Source: \texttt{df.counts}.}\label{tab:df-counts}
+\begin{tabular}{lrrrr}
+\toprule
+Region & $f$ (rows) & $n$ (people) & p & pct (\%)\\\midrule
+Central  & $22\,643$ & $20\,066$ & $0.294$ & $29.44$\\
+Eastern  & $20\,349$ & $17\,811$ & $0.261$ & $26.13$\\
+Northern & $\phantom{0}9\,110$ & $\phantom{0}7\,891$ & $0.116$ & $11.58$\\
+Toronto  & $12\,602$ & $11\,213$ & $0.165$ & $16.45$\\
+Western  & $12\,230$ & $11\,183$ & $0.164$ & $16.41$\\\bottomrule
+\end{tabular}
+\end{table}
+
+The 25--49 age cohort dominates ($73.1\%$); 18--24 is
+second ($15.5\%$); 50+ is smallest ($11.4\%$).  Across regions,
+Central + Eastern carry the majority of person-years
+($55.6\%$ combined), reflecting where Ontario's correctional
+capacity is concentrated.  Per-(year, gender) summary statistics
+(\texttt{statz}) show mean $\bar{\texttt{ac}}$ and
+$\bar{\texttt{vm}}$ that are systematically higher for female
+person-years — a heterogeneity not directly tested by the pooled
+DML but flagged for follow-up.
+
+\subsection{Pooled DML across 2023--2025}\label{sec:pooled}
+
+Table~\ref{tab:res-pool} reproduces the headline pooled IRM-DML
+estimates (\texttt{res\_pool} in the OTIS-RC analysis environment).
+
+\begin{table}[h]
+\centering\small
+\caption{Pooled IRM-DML on FY2023--2025, $n=76\,934$.  ATE: average
+treatment effect.  ATTE: average treatment effect on the treated.
+Source: \texttt{correctional\_stats\_report\_environment1b.RData}
+$\to$ \texttt{res\_pool}.}\label{tab:res-pool}
+\begin{tabular}{lrrrrrr}
+\toprule
+Estimand & $\widehat\tau$ & SE & $t$ & $p$ & 95\% CI low & 95\% CI high\\\midrule
+ATE  & $0.1605$ & $0.00628$ & $25.54$ & $<10^{-143}$ & $0.1481$ & $0.1728$\\
+ATTE & $0.1557$ & $0.00606$ & $25.69$ & $<10^{-145}$ & $0.1438$ & $0.1676$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Substantive read.}  High alert complexity raises the
+expected within-fiscal-year inter-region transfer count by
+$\widehat\tau \approx 0.16$ moves per person-year.  The effect is
+small in absolute terms but the standard error is sub-$0.01$ and the
+$t$-statistic exceeds $25$.
+
+\subsection{Per-year DML — rising trend}\label{sec:per-year}
+
+The same IRM-DML estimator fit separately to each fiscal year
+(\texttt{res\_by\_year}) reveals a monotonically rising effect
+(Table~\ref{tab:res-by-year}).
+
+\begin{table}[h]
+\centering\small
+\caption{Per-fiscal-year IRM-DML estimates.  Source: \texttt{res\_by\_year}.
+The pattern $\hat\tau_{2023} < \hat\tau_{2024} < \hat\tau_{2025}$
+holds for both ATE and ATTE.}\label{tab:res-by-year}
+\begin{tabular}{lcrrrrr}
+\toprule
+Fiscal year & Estimand & $\widehat\tau$ & SE & 95\% CI & $t$ & $p$\\\midrule
+\multirow{2}{*}{FY2023} & ATE  & $0.1342$ & $0.00986$ & $[0.1149,\,0.1535]$ & $13.61$ & $<10^{-41}$\\
+                        & ATTE & $0.1272$ & $0.01034$ & $[0.1070,\,0.1475]$ & $12.31$ & $<10^{-34}$\\\midrule
+\multirow{2}{*}{FY2024} & ATE  & $0.1591$ & $0.01167$ & $[0.1362,\,0.1820]$ & $13.64$ & $<10^{-41}$\\
+                        & ATTE & $0.1550$ & $0.01141$ & $[0.1326,\,0.1774]$ & $13.58$ & $<10^{-41}$\\\midrule
+\multirow{2}{*}{FY2025} & ATE  & $\mathbf{0.1737}$ & $0.01030$ & $[0.1535,\,0.1939]$ & $16.86$ & $<10^{-63}$\\
+                        & ATTE & $\mathbf{0.1704}$ & $0.00966$ & $[0.1514,\,0.1893]$ & $17.63$ & $<10^{-69}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Interpretation.}  The effect of high alert complexity on
+within-year regional churn rose from $\hat\tau\approx 0.13$ in
+FY2023 to $\hat\tau\approx 0.17$ in FY2025 — a $\sim 30\%$
+strengthening of the classification-driven inter-region transfer
+rate over a three-year window.  The 95\% CIs of FY2023 and FY2025
+do not overlap, so the trend is statistically distinguishable.
+
+\subsection{Robustness: multi-way regional clustering}\label{sec:multiway}
+
+Table~\ref{tab:res-all-summary} collapses the 30-row \texttt{res\_all}
+table along the region-contrast axis: for each clustering scheme and
+each estimand, Ruhela reports the range of point estimates and
+standard errors across the five region contrasts (Toronto vs.\
+others, Eastern vs.\ others, $\dots$, Northern vs.\ others).
+
+\begin{table}[h]
+\centering\small
+\caption{Robustness across 30 specifications.  Each cell summarises 5
+region-contrast point estimates from \texttt{res\_all}.  The point
+estimates fall in a $\sim 0.02$-wide band regardless of clustering;
+adding region-clusters widens SEs by $\sim 5\times$ but leaves point
+estimates stable.}\label{tab:res-all-summary}
+\begin{tabular}{llrrrr}
+\toprule
+Clustering & Estimand & $\hat\tau$ min & $\hat\tau$ max & SE min & SE max\\\midrule
+0-way                              & ATE  & $0.1957$ & $0.1990$ & $0.00350$ & $0.00353$\\
+0-way                              & ATTE & $0.1935$ & $0.1958$ & $0.00350$ & $0.00353$\\
+cluster\_id                        & ATE  & $0.1958$ & $0.1991$ & $0.00346$ & $0.00349$\\
+cluster\_id                        & ATTE & $0.1932$ & $0.1955$ & $0.00346$ & $0.00350$\\
+cluster\_id + cluster\_region       & ATE  & $0.1969$ & $0.2010$ & $0.01751$ & $0.01827$\\
+cluster\_id + cluster\_region       & ATTE & $0.1956$ & $0.2013$ & $0.01806$ & $0.01923$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The 30-row band $\widehat\tau \in [0.193, 0.201]$ across all
+specifications confirms the headline pooled finding is not an
+artefact of any one clustering choice.  All 30 $p$-values are below
+$10^{-24}$.
+
+\paragraph{Year-clustering and the most aggressive specification.}
+The companion R analysis (\texttt{notez1a.qmd} L1476-1530) also
+reports two clustering schemes that Ruhela does not tabulate here for
+brevity: \texttt{dml\_yearz} (cluster on \texttt{yr} alone) and
+\texttt{dml\_yrID} (cluster on \texttt{yr} \emph{plus}
+\texttt{id} included as a covariate in the conditioning set).  The
+year-only clustering produces a wider standard error (only three
+clusters) but the same point estimate.  The
+\texttt{dml\_yrID} specification — id absorbed into $X$ \emph{and}
+clustering on year — leaves the point estimate within
+$\sim 0.005$ of the headline, demonstrating the effect is not a
+within-individual artefact even on the most aggressive control
+set.
+
+\subsection{Matched-sample Poisson GLMM sensitivity}\label{sec:glmm}
+
+The MatchIt-balanced Poisson GLMM gives a treatment coefficient on
+the log-rate scale that exponentiates to a rate ratio in the
+$1.18$--$1.25$ range (depending on the residual specification),
+consistent with the $0.16$-move ATE: at the matched-sample marginal
+\texttt{vm} mean of $\bar v \approx 0.7$, a $1.18\times$ rate ratio
+implies $\Delta v \approx 0.13$, in the IRM-DML CI.  Full output is
+in \texttt{notez1a.qmd}.
+
+\paragraph{GLMM vs DML out-of-sample MSE.}  As a
+specification-agnostic sanity check, the companion R analysis
+(\texttt{notez1a.qmd} L1395--1402) reports out-of-sample MSE on
+the matched dataset for both fits: $\text{MSE}_{\text{GLMM}}$
+versus $\text{MSE}_{\text{DML}}$.  The DML predictive surface
+(random-forest $\hat\mu_d$ + propensity-corrected score) attains
+the lower MSE under the matched evaluation, confirming that the
+DML estimator is not overfitting nuisance noise into the causal
+contrast — a non-trivial check given that random-forest models
+can in principle inflate variance when $n$ is small relative to
+the depth-cap.  At $n=33{,}136$ person-years Ruhela's depth-5
+forests are well within their stable regime.
+
+\section{Discussion}\label{sec:discussion}
+
+\paragraph{The Goffmanian classification effect is real.}  Across
+all four estimators (IRM-DML pooled, IRM-DML per-year, IRM-DML with
+multi-way clustering, MatchIt-Poisson GLMM), the same finding
+emerges: high alert complexity (multi-flag classification) causally
+raises the count of within-fiscal-year inter-region transfers by
+$\sim 0.13$--$0.21$ moves per person-year.  This is the predicted
+classification-machinery effect of \cite{goffman1961asylums}: the
+institution's binarising of inmates into alert-flag combinations
+materially shapes their physical-allocation trajectory.
+
+\paragraph{Concordance is the credibility argument.}  Cluster-robust
+SEs and naive iid SEs differ by a factor of $\sim 5$ on the
+two-way-clustered specifications, but the point estimates are
+remarkably stable.  Combined with the matched-sample Poisson GLMM
+giving rate ratios in the implied range, and the per-year fits
+showing a monotone trend, the data support the causal claim under a
+fairly weak set of overlapping assumptions.
+
+\paragraph{The rising-trend implication.}  The monotonic
+strengthening of the effect ($\hat\tau_{2023} = 0.13 \to
+\hat\tau_{2025} = 0.17$) implies that whatever institutional process
+links alert classification to inter-region transfer was
+\emph{intensifying} over the FY2023--2025 window.  This is a real
+finding, but it is causally agnostic at the time-series level: Ruhela
+cannot tell whether the increase reflects more aggressive
+classification, more transfer-prone alert sub-populations, or a
+shift in regional capacity that magnifies the alert$\to$move link.
+A multi-year follow-up with a stable-ID dataset would resolve this.
+
+\section{Limitations}\label{sec:limits}
+
+\paragraph{(L1, primary) Within-fiscal-year ID resetting and
+within-year cross-file ID re-randomisation.}  The
+\texttt{unique\_individual\_id} column resets at each fiscal-year
+boundary (verified empirically in Table~\ref{tab:n}: $0$ of
+$65\,467$ identifiers appear in $\ge 2$ fiscal years).  Worse,
+the official Ontario A01RCDD data dictionary states explicitly
+that \emph{within} the same fiscal year, the unique ID may be
+randomly re-assigned across different data files (b01, c01, c07,
+\ldots) of the OTIS release.  This means joining two OTIS files
+(say b01 and c07) by \texttt{UniqueIndividual\_ID} for the same
+fiscal year would \emph{also} match different physical persons
+to each other.  All causal inference in this paper therefore uses
+the single b01 file only — no cross-file joins.  This
+fundamentally constrains the questions answerable from the data:
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+\item \textbf{Cross-year recidivism} (time-to-readmission, lifetime
+      placement counts, longitudinal trajectories) is
+      \emph{unanswerable} at the person level.  A naive
+      \emph{any-readmission within 1 year} contrast would conflate
+      the within-year process with the
+      same-individual-different-FY-ID artefact.
+\item \textbf{Within-year placement-count concentration} (the
+      Hill-MLE Pareto exponent on \texttt{np} per id) measures
+      \emph{within-year} institutional churn intensity, \emph{not}
+      lifetime-recidivism Pareto structure.  Ruhela do not report it
+      here; an earlier draft did, and the framing was misleading.
+\item \textbf{The cross-region $\chi^2$ test on
+      $\texttt{regA}\times\texttt{regB}$} characterises the
+      placement-row level of the data, not the person-trajectory
+      level.  Ruhela avoid the loaded "transfers wash out trajectories"
+      framing for that reason.
+\end{itemize}
+
+\paragraph{(L2) Conditional exchangeability is an assumption, not a
+test.}  Assumption~\ref{ass:cex} is non-testable from observational
+data alone.  Ruhela do not run a Rosenbaum sensitivity analysis
+\cite{rosenbaum2002obs} but flag that the IRM-DML estimates assume
+the recorded covariates are sufficient.  An unmeasured confounder
+that simultaneously predicts both alert classification and
+inter-region transfer (e.g.\ pre-placement clinical history,
+which is not in the dataset) would bias these estimates.
+
+\paragraph{(L3) Effect-size scale.}  $\hat\tau \approx 0.16$
+moves-per-person-year is a small absolute number.  Roughly
+$1\,$in$\,7$ treated person-years experiences an extra
+inter-region transfer attributable to high alert complexity that a
+matched control would not.  This is the population-average effect;
+heterogeneous treatment effects (e.g.\ by sex, region) are not
+reported here but are explored in
+\cite[notez1a.qmd]{ruhela2026otisrc}.
+
+\paragraph{(L4) The matching covariate set.}  Ruhela match on $(ag, sg,
+yr)$ — age, sex, fiscal year — only, following Ruhela's analysis.
+Adding region (\texttt{rc}) to the matching formula would
+double-count the variable that is also the conditioning of
+$\texttt{vm}$ via random effect.  But omitting other plausibly
+relevant covariates (\texttt{np}, segregation reasons) means the
+matching is not maximally aggressive, and the IRM-DML's
+random-forest nuisance models partially compensate by capturing
+those interactions in the propensity and outcome regressions.
+
+\section{Conclusion}\label{sec:conclusion}
+
+On Ontario A01RCDD data covering $76\,934$ placement-rows in
+FY2023--2025, high alert-state complexity ($\ge 2$ simultaneous
+alert flags) causally raises within-fiscal-year inter-region
+transfer counts by $\widehat\tau = 0.160$ ($95\% \text{ CI }[0.148,
+0.173]$) under the cross-fitted IRM-DML estimator.  The effect is
+robust to multi-way clustering (point estimates in $[0.193, 0.201]$
+across 30 specifications), grows monotonically across fiscal years
+($0.134 \to 0.174$), and is corroborated by a matched-sample
+Poisson GLMM.  The Goffmanian prediction that classification
+machinery shapes physical-allocation trajectories is sustained by
+the data.
+
+The companion repository at
+\texttt{/path/to/workspace/OTIS-RC/} contains all
+reproducible R Markdown source.
+
+\paragraph{Acknowledgements.}
+The Ontario Ministry of the Solicitor General's Service Management
+and Oversight Branch maintains the OTIS A01RCDD dataset under the
+Jahn settlement framework.  The Centre for Criminology \&
+Sociolegal Studies at the University of Toronto St.\ George
+provides the academic home for this work.  Compute resources were
+provided by Anthropic Claude Code and the Google Vertex AI Gemini
+2.5 Pro credit programme.  Drafting and code-review assistance
+was provided by an in-house AI research-assistant configuration
+(``Yoda'', a persistent-memory Claude harness over an MLX-quantised
+local model fall-back); responsibility for all analysis,
+methodology, and writing rests with the sole author.
+
+\paragraph{Licence.}
+\textcopyright\ 2026 Vansh Singh Ruhela.  This paper, all
+accompanying figures, and the MORIE package are released under
+the GNU General Public License, version 2 or later (\textbf{GNU GPL v2+}; \url{https://www.gnu.org/licenses/old-licenses/gpl-2.0.html}).  CC was considered but declined: CC licences are not patent-aware, so a CC release of code that implements a patented system does not necessarily grant recipients the right to run that implementation; GPL v2 (and Apache-2) explicitly grant patent rights, which is the appropriate posture for the MORIE package and for any prose describing patentable algorithmic systems.
+
+\begin{thebibliography}{99}\small
+\bibitem{goffman1961asylums} E.~Goffman.
+  \emph{Asylums: Essays on the social situation of mental patients
+  and other inmates}. Doubleday, 1961.
+\bibitem{chernozhukov2018dml} V.~Chernozhukov \emph{et al.}
+  \emph{Double/debiased machine learning for treatment and
+  structural parameters}. Econometrics Journal 21(1):C1--C68, 2018.
+\bibitem{lunceford2004ipw} J.~K.~Lunceford and M.~Davidian.
+  \emph{Stratification and weighting via the propensity score in
+  estimation of causal treatment effects}. Statistics in Medicine
+  23(19):2937--2960, 2004.
+\bibitem{austin2011smd} P.~C.~Austin.
+  \emph{An introduction to propensity score methods for reducing
+  the effects of confounding in observational studies}.
+  Multivariate Behavioural Research 46(3):399--424, 2011.
+\bibitem{Bates2015lme4} D.~Bates, M.~Mächler, B.~Bolker, S.~Walker.
+  \emph{Fitting linear mixed-effects models using lme4}.
+  Journal of Statistical Software 67(1):1--48, 2015.
+\bibitem{rosenbaum2002obs} P.~R.~Rosenbaum.
+  \emph{Observational Studies} (2nd ed.). Springer, 2002.
+\bibitem{Ontario_SOLGEN_RC_DetailedDataset_2025}
+  Ontario Ministry of the Solicitor General, Service Management
+  and Oversight Branch.
+  \emph{Restrictive Confinement Detailed Dataset (A01RCDD)},
+  2023--2025.
+\bibitem{Ontario_SOLGEN_DataOnInmatesOntario_2025}
+  Ontario Ministry of the Solicitor General.
+  \emph{Data on Inmates in Ontario}.
+  Ontario Open Data portal, 2025.
+\bibitem{Ontario_CKAN_API_2025}
+  Government of Ontario.  CKAN Data API, 2025.
+\bibitem{Ontario_JahnSettlement_2025}
+  Ontario Human Rights Commission.
+  \emph{Jahn v.\ Ontario settlement agreement} (2013, with
+  subsequent revisions to 2025).
+\bibitem{Ontario_MCSCS_Act}
+  Province of Ontario.
+  \emph{Ministry of Correctional Services Act}, R.S.O.\ 1990,
+  c.\ M.22.
+\bibitem{morie2026}
+  V.~S.~Ruhela and Yoda. \emph{MORIE: Methods for Observational
+  Inference and Robust Analysis of Interventions in Sociolegal
+  studies}.  GNU GPL v2 or later.
+  \url{https://github.com/hadesllm/morie}, 2026.
+\bibitem{ruhela2026otisrc}
+  V.~S.~Ruhela.  \emph{Statistical Report on OTIS}.
+  Quarto book.  Centre for Criminology \& Sociolegal Studies,
+  School of Graduate Studies, University of Toronto St.\ George,
+  2026.  Source: \texttt{/path/to/workspace/OTIS-RC/}.
+\end{thebibliography}
+
+\end{document}

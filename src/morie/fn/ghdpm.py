@@ -8,7 +8,8 @@ __all__ = ["ghosal_dpmixture_density"]
 
 
 def ghosal_dpmixture_density(x, alpha=1.0, sigma=None, grid=None,
-                              n_iter=120, burn=40, seed=0):
+                              n_iter=120, burn=40, seed=0,
+                              deterministic_seed: int | None = None):
     """Posterior-mean density under a DP mixture of normals.
 
     Model::
@@ -38,6 +39,12 @@ def ghosal_dpmixture_density(x, alpha=1.0, sigma=None, grid=None,
         MCMC iterations.
     seed : int
         RNG seed.
+    deterministic_seed : int or None, optional
+        If supplied, RNG state is derived from the SHA-keyed
+        :func:`morie._det_rng.from_seed` so Py<->R streams agree for the
+        canonical fixture.  When ``None`` (default), behaviour is
+        unchanged: the user-supplied ``seed`` drives a fresh
+        :class:`numpy.random.Generator`.
 
     Returns
     -------
@@ -50,7 +57,11 @@ def ghosal_dpmixture_density(x, alpha=1.0, sigma=None, grid=None,
     Escobar & West (1995). Bayesian Density Estimation. JASA 90.
     Ghosal & van der Vaart (2017) Ch 4.
     """
-    rng = np.random.default_rng(seed)
+    if deterministic_seed is not None:
+        from morie._det_rng import from_seed
+        rng = from_seed("ghdpm", deterministic_seed)
+    else:
+        rng = np.random.default_rng(seed)
     x = np.asarray(x, dtype=float).ravel()
     n = int(x.size)
     if n == 0:

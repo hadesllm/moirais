@@ -7,7 +7,7 @@ __all__ = ["random_forest_ensemble"]
 
 
 def random_forest_ensemble(x, y, *, n_estimators=100, max_depth=None,
-                           task="auto", seed=0):
+                           task="auto", seed=0, deterministic_seed: int | None = None):
     """Random Forest via sklearn.ensemble.RandomForest{Classifier,Regressor}.
 
     f(x) = (1/B) sum_b f_b(x), bagged decision trees with sqrt(p) features
@@ -24,6 +24,11 @@ def random_forest_ensemble(x, y, *, n_estimators=100, max_depth=None,
         "auto" infers from y dtype (integer-typed y -> classification).
     seed : int
         random_state for reproducibility.
+    deterministic_seed : int or None, optional
+        If supplied, the sklearn ``random_state`` is derived from the
+        SHA-keyed :func:`morie._det_rng.r_seed` so Py<->R streams agree
+        for the canonical fixture.  When ``None`` (default), behaviour
+        is unchanged: ``seed`` drives ``random_state`` directly.
 
     Returns
     -------
@@ -38,13 +43,19 @@ def random_forest_ensemble(x, y, *, n_estimators=100, max_depth=None,
         X = X.reshape(-1, 1)
     n = X.shape[0]
 
+    if deterministic_seed is not None:
+        from morie._det_rng import r_seed
+        rs = r_seed("rfens", deterministic_seed)
+    else:
+        rs = seed
+
     if task == "auto":
         task = "classification" if np.issubdtype(y.dtype, np.integer) or set(np.unique(y)).issubset({0, 1}) else "regression"
 
     if task == "classification":
         clf = RandomForestClassifier(n_estimators=n_estimators,
                                      max_depth=max_depth,
-                                     random_state=seed,
+                                     random_state=rs,
                                      oob_score=True, bootstrap=True)
         clf.fit(X, y)
         score = float(clf.score(X, y))
@@ -52,7 +63,7 @@ def random_forest_ensemble(x, y, *, n_estimators=100, max_depth=None,
     else:
         reg = RandomForestRegressor(n_estimators=n_estimators,
                                     max_depth=max_depth,
-                                    random_state=seed,
+                                    random_state=rs,
                                     oob_score=True, bootstrap=True)
         reg.fit(X, y)
         score = float(reg.score(X, y))

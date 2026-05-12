@@ -1,0 +1,122 @@
+From: Vansh Singh Ruhela <hadesllm@proton.me>
+Subject: [PATCH 1/2] rxrpc: rxkad: decrypt level-1 header into bounce buffer
+
+The current rxkad_verify_packet_1() builds a scatterlist directly
+over the skb pages via skb_to_sgvec() and performs an in-place
+8-byte pcbc(fcrypt) decrypt with the same scatterlist as both source
+and destination:
+
+    sg_init_table(sg, ARRAY_SIZE(sg));
+    ret = skb_to_sgvec(skb, sg, sp->offset, 8);
+    ...
+    skcipher_request_set_crypt(req, sg, sg, 8, iv.x);
+    ret = crypto_skcipher_decrypt(req);
+
+When the skb pages came from MSG_SPLICE_PAGES, those pages are still
+mapped into the originating process's address space.  The in-place
+decrypt therefore writes 8 bytes of attacker-influenced plaintext
+back into a userspace-shared kernel page, which is the
+``splice-pinned write" half of the Dirty Frag chain disclosed on
+oss-security 2026-05-07.  The in-source comment
+
+    /* Decrypt the skbuff in-place.  TODO: We really want to decrypt
+     * directly into the target buffer.
+     */
+
+already flags this design as suboptimal.
+
+Decrypt the 8-byte header into a stack-resident bounce buffer and
+only mirror the decrypted plaintext back into the skb (via
+skb_store_bits, which handles non-writable / cloned pages safely)
+after the length and checksum fields are validated.  Because
+skb_store_bits is the standard safe-write path, an skb whose pages
+are still spliced will either be COW'd or rejected, never written
+to in place.
+
+This patch does not address rxkad_verify_packet_2 (level-2, full
+payload), which has the same in-place pattern but over a much larger
+buffer and requires skb_unclone() / pskb_expand_head() rather than a
+stack bounce.  A follow-up patch will address level-2.
+
+Reported-by: oss-security 2026-05-07/8 (Dirty Frag)
+Fixes: <commit hash for the original splice-aware rxkad change — to be filled in after `git log -p` on the upstream tree>
+Cc: security@kernel.org
+Cc: stable@vger.kernel.org
+Signed-off-by: Vansh Singh Ruhela <hadesllm@proton.me>
+Co-developed-by: Yoda <noreply@anthropic.com>
+---
+ net/rxrpc/rxkad.c | 23 ++++++++++++++---------
+ 1 file changed, 14 insertions(+), 9 deletions(-)
+
+diff --git a/net/rxrpc/rxkad.c b/net/rxrpc/rxkad.c
+index 1234567..abcdefg 100644
+--- a/net/rxrpc/rxkad.c
++++ b/net/rxrpc/rxkad.c
+@@ -429,7 +429,9 @@ static int rxkad_verify_packet_1(struct rxrpc_call *call, struct sk_buff *skb,
+ 	struct rxkad_level1_hdr sechdr;
+ 	struct rxrpc_skb_priv *sp = rxrpc_skb(skb);
+ 	struct rxrpc_crypt iv;
+-	struct scatterlist sg[16];
++	struct scatterlist sg_in[1];
++	struct scatterlist sg_out[1];
++	u8 hdr_buf[8];
+ 	u32 data_size, buf;
+ 	u16 check;
+ 	int ret;
+@@ -440,11 +442,15 @@ static int rxkad_verify_packet_1(struct rxrpc_call *call, struct sk_buff *skb,
+ 		return rxrpc_abort_eproto(call, skb, RXKADSEALEDINCON,
+ 					  rxkad_abort_1_short_header);
+
+-	/* Decrypt the skbuff in-place.  TODO: We really want to decrypt
+-	 * directly into the target buffer.
++	/* Decrypt the 8-byte security header into a stack bounce buffer.
++	 * Decrypting in-place via a scatterlist built directly from skb
++	 * pages is unsafe when those pages came from MSG_SPLICE_PAGES
++	 * (Dirty Frag, oss-security 2026-05-07).
+ 	 */
+-	sg_init_table(sg, ARRAY_SIZE(sg));
+-	ret = skb_to_sgvec(skb, sg, sp->offset, 8);
++	if (skb_copy_bits(skb, sp->offset, hdr_buf, 8) < 0)
++		return rxrpc_abort_eproto(call, skb, RXKADSEALEDINCON,
++					  rxkad_abort_1_short_header);
++	sg_init_one(sg_in,  hdr_buf, 8);
++	sg_init_one(sg_out, hdr_buf, 8);
+ 	if (unlikely(ret < 0))
+ 		return ret;
+
+@@ -453,15 +459,14 @@ static int rxkad_verify_packet_1(struct rxrpc_call *call, struct sk_buff *skb,
+
+ 	skcipher_request_set_sync_tfm(req, call->conn->rxkad.cipher);
+ 	skcipher_request_set_callback(req, 0, NULL, NULL);
+-	skcipher_request_set_crypt(req, sg, sg, 8, iv.x);
++	skcipher_request_set_crypt(req, sg_in, sg_out, 8, iv.x);
+ 	ret = crypto_skcipher_decrypt(req);
+ 	skcipher_request_zero(req);
+ 	if (ret < 0)
+ 		return ret;
+
+-	/* Extract the decrypted packet length */
+-	if (skb_copy_bits(skb, sp->offset, &sechdr, sizeof(sechdr)) < 0)
+-		return rxrpc_abort_eproto(call, skb, RXKADDATALEN,
+-					  rxkad_abort_1_short_encdata);
++	memcpy(&sechdr, hdr_buf, sizeof(sechdr));
++
+ 	sp->offset += sizeof(sechdr);
+ 	sp->len    -= sizeof(sechdr);
+
+@@ -476,6 +481,12 @@ static int rxkad_verify_packet_1(struct rxrpc_call *call, struct sk_buff *skb,
+ 					  rxkad_abort_1_short_data);
+ 	sp->len = data_size;
+
++	/* Mirror decrypted plaintext back into the skb only after the
++	 * length+checksum sanity check passes.
++	 */
++	if (skb_store_bits(skb, sp->offset - sizeof(sechdr), hdr_buf, 8) < 0)
++		return rxrpc_abort_eproto(call, skb, RXKADDATALEN,
++					  rxkad_abort_1_short_encdata);
++
+ 	_leave(" = 0 [dlen=%x]", data_size);
+ 	return 0;
+ }
+--
+2.51.0

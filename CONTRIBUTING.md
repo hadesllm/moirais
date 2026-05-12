@@ -177,3 +177,30 @@ when the contributor uses a noreply GitHub email. We also list
 substantial contributors in `ACKNOWLEDGMENTS.md`.
 
 Thanks for being here.
+
+## Branch protection (maintainer setup)
+
+The `main` branch is configured (as of v0.3.0) with a **permissive
+contributor-friendly ruleset**:
+
+- All PRs must pass the GitHub Actions `CI` workflow matrix
+  (Python × {Ubuntu, macOS, Windows} × Py 3.10 + 3.14;
+  R × {Ubuntu, macOS, Windows} × R release + devel + oldrel-1).
+- All PRs must pass the GitHub Actions `R CMD check` workflow.
+- One maintainer review is required on PRs from external contributors.
+- Owners (currently @rootcoder007) can push directly to `main` for
+  hotfix scenarios.
+- Force-push to `main` is disabled.
+
+The intent is: **if the bot says the build works, contribution
+should work**.  CI is the gate, not human gatekeeping.  Owner-direct-
+push exists only for hotfix scenarios; the normal flow for everything
+including the maintainer is open PR → CI green → review → merge.
+
+To configure these rules on a fork:
+1. Settings → Branches → Add rule for `main`.
+2. Require status checks: `CI`, `R CMD check`, `Build and Publish Container`.
+3. Require pull request before merging: 1 approving review (from
+   maintainers only).
+4. Do not check "Restrict who can push to matching branches" so that
+   forks contributors are not pre-emptively blocked.

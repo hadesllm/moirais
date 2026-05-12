@@ -40,19 +40,21 @@ xgboost_objective <- function(x, y, n_estimators = 100L, learning_rate = 0.1,
     set.seed(seed)
   }
   if (requireNamespace("xgboost", quietly = TRUE)) {
-    yv <- if (task == "classification") factor(y) else as.numeric(y)
+    yv <- if (task == "classification") as.numeric(as.factor(y)) - 1 else as.numeric(y)
     obj <- if (task == "classification") "binary:logistic" else "reg:squarederror"
-    # xgboost 2.x uses (x, y) not (data, label); y as factor selects classification
-    fit <- xgboost::xgboost(x = x, y = yv, nrounds = n_estimators,
-                             eta = learning_rate, max_depth = max_depth,
-                             lambda = reg_lambda, alpha = reg_alpha,
-                             objective = obj, verbose = 0L)
+    # Use the low-level xgb.DMatrix + xgb.train API: stable across xgboost
+    # 1.x and 2.x.  The high-level xgboost() helper changed signature in
+    # 2.0 (data/label -> x/y) and rejects numeric y with binary:logistic,
+    # which is what the previous wrapper hit on macOS R CMD check.
+    dtrain <- xgboost::xgb.DMatrix(data = x, label = yv)
+    params <- list(objective = obj, eta = learning_rate,
+                   max_depth = max_depth, lambda = reg_lambda, alpha = reg_alpha)
+    fit <- xgboost::xgb.train(params = params, data = dtrain,
+                              nrounds = n_estimators, verbose = 0L)
     p <- predict(fit, x)
     if (task == "classification") {
       preds <- as.integer(p > 0.5)
-      # yv is factor when classification; convert to 0/1 numeric for the comparison
-      yv_num <- if (is.factor(yv)) as.integer(yv) - 1L else yv
-      train_score <- mean(preds == yv_num)
+      train_score <- mean(preds == yv)
     } else {
       train_score <- 1 - sum((p - yv)^2) / sum((yv - mean(yv))^2)
     }
@@ -77,9 +79,7 @@ xgboost_objective <- function(x, y, n_estimators = 100L, learning_rate = 0.1,
     p <- gbm::predict.gbm(fit, df, n.trees = n_estimators, type = "response")
     if (task == "classification") {
       preds <- as.integer(p > 0.5)
-      # yv is factor when classification; convert to 0/1 numeric for the comparison
-      yv_num <- if (is.factor(yv)) as.integer(yv) - 1L else yv
-      train_score <- mean(preds == yv_num)
+      train_score <- mean(preds == yv)
     } else {
       train_score <- 1 - sum((p - yv)^2) / sum((yv - mean(yv))^2)
     }

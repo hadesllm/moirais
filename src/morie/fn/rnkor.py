@@ -1,56 +1,82 @@
 # morie.fn — function file (hadesllm/morie)
-"""Rank-order statistics for paired samples."""
+"""Rank-order statistics for paired samples (Gibbons Ch 5.5).
+
+For a single sample of paired differences D_i = X_i - mu0, return
+the signed ranks R_i^+ = sign(D_i) * rank(|D_i|).  Used as the
+input layer for Wilcoxon signed-rank.
+"""
+from __future__ import annotations
+
 import numpy as np
 from scipy import stats
+
 from ._richresult import RichResult
 
 __all__ = ["rank_order_statistics"]
 
 
-def rank_order_statistics(x, cdf=None):
-    """
-    Rank-order statistics for paired samples
-
-    Formula: R_i = rank of |D_i| among |D_1|...|D_n|
+def rank_order_statistics(x, mu0: float = 0.0):
+    """Signed ranks of |D_i| for paired-sample inputs.
 
     Parameters
     ----------
     x : array-like
-        Input data.
+        Sample of differences (or values, with ``mu0`` subtracted).
+    mu0 : float
+        Hypothesised median (default 0).
 
     Returns
     -------
-    result : dict
-        Keys: estimate
-
-    References
-    ----------
-    Gibbons Ch 5.5
+    RichResult with payload:
+        signed_ranks : (n,) array of signed ranks
+        abs_ranks    : ranks of |D_i|
+        W_plus       : sum of positive signed ranks (Wilcoxon T+)
+        W_minus      : sum of |negative signed ranks|
+        n_nonzero    : count of non-zero differences
+        n            : input size
     """
-    x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    if x.ndim == 0:
-        return RichResult(payload={"statistic": float('nan'), "p_value": float('nan'), "n": 1, "method": "scalar-input placeholder"})
+    x = np.asarray(x, dtype=float).ravel()
+    n = int(x.size)
     if n < 2:
-        return RichResult(payload={"statistic": np.nan, "p_value": np.nan, "n": n, "method": "Rank-order statistics for paired samples"})
-    x_sorted = np.sort(x)
-    if cdf is None:
-        cdf_vals = stats.norm.cdf(x_sorted, loc=np.mean(x), scale=np.std(x, ddof=1))
-    else:
-        cdf_vals = np.array([cdf(xi) for xi in x_sorted])
-    ecdf = np.arange(1, n + 1) / n
-    ecdf_prev = np.arange(0, n) / n
-    d_plus = np.max(ecdf - cdf_vals)
-    d_minus = np.max(cdf_vals - ecdf_prev)
-    statistic = max(d_plus, d_minus)
-    if n <= 40:
-        p_value = 1.0 - stats.ksone.cdf(statistic, n)
-    else:
-        lam = (np.sqrt(n) + 0.12 + 0.11 / np.sqrt(n)) * statistic
-        p_value = 2.0 * np.sum([(-1) ** (k - 1) * np.exp(-2 * k ** 2 * lam ** 2) for k in range(1, 101)])
-        p_value = max(0.0, min(1.0, p_value))
-    return RichResult(payload={"statistic": float(statistic), "p_value": float(p_value), "n": n, "method": "Rank-order statistics for paired samples"})
+        return RichResult(payload={
+            "signed_ranks": np.array([]),
+            "abs_ranks": np.array([]),
+            "W_plus": np.nan, "W_minus": np.nan,
+            "n_nonzero": 0, "n": n,
+            "method": "Rank-order signed ranks",
+        })
+    d = x - float(mu0)
+    nz = d != 0
+    if not nz.any():
+        return RichResult(payload={
+            "signed_ranks": np.zeros(n),
+            "abs_ranks": np.zeros(n),
+            "W_plus": 0.0, "W_minus": 0.0,
+            "n_nonzero": 0, "n": n,
+            "method": "Rank-order signed ranks",
+        })
+    abs_ranks_nz = stats.rankdata(np.abs(d[nz]))
+    signed_ranks = np.zeros(n)
+    signed_ranks[nz] = np.sign(d[nz]) * abs_ranks_nz
+    abs_ranks = np.zeros(n)
+    abs_ranks[nz] = abs_ranks_nz
+    W_plus = float(signed_ranks[signed_ranks > 0].sum())
+    W_minus = float(-signed_ranks[signed_ranks < 0].sum())
+    return RichResult(payload={
+        "signed_ranks": signed_ranks,
+        "abs_ranks": abs_ranks,
+        "W_plus": W_plus,
+        "W_minus": W_minus,
+        "n_nonzero": int(nz.sum()),
+        "n": n,
+        "method": "Rank-order signed ranks",
+    })
 
 
 def cheatsheet():
-    return "rnkor: Rank-order statistics for paired samples"
+    return "rnkor: Rank-order signed ranks for paired samples"
+
+
+# CANONICAL TEST
+# >>> rank_order_statistics([-2, -1, 1, 2, 3])
+# |D|=[2,1,1,2,3]; ranks=[3.5,1.5,1.5,3.5,5]; W_plus=10, W_minus=5

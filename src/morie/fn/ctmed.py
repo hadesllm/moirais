@@ -1,58 +1,66 @@
 # morie.fn — function file (hadesllm/morie)
-"""Control median test with curtailed sampling."""
+"""Control-median test (Gibbons Ch 6.5).
+
+Mood's two-sample median test: count how many of each sample lie
+above the pooled-sample median, test the resulting 2x2 table.
+"""
+from __future__ import annotations
+
 import numpy as np
 from scipy import stats
+
 from ._richresult import RichResult
 
 __all__ = ["control_median_test"]
 
 
-def control_median_test(x, y, cdf=None):
-    """
-    Control median test with curtailed sampling
-
-    Formula: Compare medians with known control
+def control_median_test(x, y):
+    """Mood's median test (two-sample).
 
     Parameters
     ----------
     x : array-like
-        Input data.
+        Control sample.
     y : array-like
-        Input data.
+        Treatment sample.
 
     Returns
     -------
-    result : dict
-        Keys: statistic, p_value
-
-    References
-    ----------
-    Gibbons Ch 6.5
+    RichResult with payload:
+        statistic   : chi-square statistic (Yates-corrected by scipy)
+        p_value     : two-sided p-value
+        df          : 1
+        n           : m + n
+        grand_median: pooled-sample median
+        table       : 2x2 contingency table (rows: x,y; cols: above,below)
     """
-    x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    if x.ndim == 0:
-        return RichResult(payload={"statistic": float('nan'), "p_value": float('nan'), "n": 1, "method": "scalar-input placeholder"})
-    if n < 2:
-        return RichResult(payload={"statistic": np.nan, "p_value": np.nan, "n": n, "method": "Control median test with curtailed sampling"})
-    x_sorted = np.sort(x)
-    if cdf is None:
-        cdf_vals = stats.norm.cdf(x_sorted, loc=np.mean(x), scale=np.std(x, ddof=1))
-    else:
-        cdf_vals = np.array([cdf(xi) for xi in x_sorted])
-    ecdf = np.arange(1, n + 1) / n
-    ecdf_prev = np.arange(0, n) / n
-    d_plus = np.max(ecdf - cdf_vals)
-    d_minus = np.max(cdf_vals - ecdf_prev)
-    statistic = max(d_plus, d_minus)
-    if n <= 40:
-        p_value = 1.0 - stats.ksone.cdf(statistic, n)
-    else:
-        lam = (np.sqrt(n) + 0.12 + 0.11 / np.sqrt(n)) * statistic
-        p_value = 2.0 * np.sum([(-1) ** (k - 1) * np.exp(-2 * k ** 2 * lam ** 2) for k in range(1, 101)])
-        p_value = max(0.0, min(1.0, p_value))
-    return RichResult(payload={"statistic": float(statistic), "p_value": float(p_value), "n": n, "method": "Control median test with curtailed sampling"})
+    x = np.asarray(x, dtype=float).ravel()
+    y = np.asarray(y, dtype=float).ravel()
+    m, n = int(x.size), int(y.size)
+    if m < 2 or n < 2:
+        return RichResult(payload={
+            "statistic": np.nan, "p_value": np.nan, "df": 1,
+            "n": m + n, "grand_median": np.nan,
+            "method": "Control-median (Mood's median) test",
+        })
+    stat, p, med, tbl = stats.median_test(x, y, ties="below")
+    return RichResult(payload={
+        "statistic": float(stat),
+        "p_value": float(p),
+        "df": 1,
+        "n": m + n,
+        "m": m,
+        "n_y": n,
+        "grand_median": float(med),
+        "table": tbl.tolist(),
+        "method": "Control-median (Mood's median) test",
+    })
 
 
 def cheatsheet():
-    return "ctmed: Control median test with curtailed sampling"
+    return "ctmed: Control-median (Mood's) test"
+
+
+# CANONICAL TEST
+# >>> control_median_test([1,2,3,4,5], [6,7,8,9,10])
+# Clear separation: grand_median=5.5, p_value very small

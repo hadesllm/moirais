@@ -1,43 +1,70 @@
 # morie.fn — function file (hadesllm/morie)
-"""Kernel survival function estimator."""
+"""Kernel survival function estimator (Fauzi Ch 4).
+
+For non-negative X:
+
+    S_hat_h(t) = 1 - F_hat_h(t) = (1/n) * sum_i ( 1 - W((t-X_i)/h) ),
+
+with W(u) = Phi(u) for the Gaussian kernel.  Asymptotic variance is
+the KDFE variance: S(t)(1-S(t))/n + O(h/n).
+"""
 import numpy as np
+from scipy import stats as _sps
 from ._richresult import RichResult
 
 __all__ = ["fauzi_survival_kernel"]
 
 
-def fauzi_survival_kernel(x):
+def _silverman_h(x):
+    n = len(x)
+    s = np.std(x, ddof=1)
+    iqr = np.subtract(*np.percentile(x, [75, 25])) / 1.34
+    sigma = min(s, iqr) if iqr > 0 else s
+    if sigma <= 0:
+        sigma = 1.0
+    return 1.06 * sigma * n ** (-1.0 / 5.0)
+
+
+def fauzi_survival_kernel(x, t=None, h=None):
+    """Kernel survival estimate at ``t`` with asymptotic 95 percent CI.
     """
-    Kernel survival function estimator
+    x = np.asarray(x, dtype=float).ravel()
+    n = len(x)
+    if n < 2:
+        return RichResult(payload={"estimate": np.nan, "n": n,
+                                    "method": "fzsrv — too few obs"})
+    if t is None:
+        t = float(np.median(x))
+    if h is None:
+        h = float(_silverman_h(x))
 
-    Formula: S_hat(t) = 1 - F_hat_h(t)
+    F_hat = float(np.mean(_sps.norm.cdf((t - x) / h)))
+    S_hat = 1.0 - F_hat
+    se = float(np.sqrt(S_hat * (1.0 - S_hat) / n))
+    z = 1.959963984540054
+    lo = max(0.0, S_hat - z * se)
+    hi = min(1.0, S_hat + z * se)
 
-    Parameters
-    ----------
-    x : array-like
-        Input data.
-
-    Returns
-    -------
-    result : dict
-        Keys: estimate
-
-    References
-    ----------
-    Fauzi Ch 4
-    """
-    x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    if x.ndim == 0:
-        return RichResult(payload={"statistic": float('nan'), "p_value": float('nan'), "n": 1, "method": "scalar-input placeholder"})
-    if n < 1:
-        return RichResult(payload={"estimate": np.nan, "n": 0, "method": "Kernel survival function estimator"})
-    estimate = np.median(x)
-    se = 1.2533 * np.std(x, ddof=1) / np.sqrt(n)
-    ci_lower = estimate - 1.96 * se
-    ci_upper = estimate + 1.96 * se
-    return RichResult(payload={"estimate": float(estimate), "se": float(se), "ci_lower": float(ci_lower), "ci_upper": float(ci_upper), "n": n, "method": "Kernel survival function estimator"})
+    return RichResult(payload={
+        "estimate": S_hat,
+        "se": se,
+        "ci_lower": lo,
+        "ci_upper": hi,
+        "t": t,
+        "h": h,
+        "n": n,
+        "method": "Fauzi kernel survival S_hat(t)=1-F_hat_h(t) (Ch 4)",
+    })
 
 
 def cheatsheet():
-    return "fzsrv: Kernel survival function estimator"
+    return "fzsrv: Kernel survival S_hat(t) = 1 - F_hat_h(t) + 95% CI"
+
+
+# CANONICAL TEST
+# >>> import numpy as np
+# >>> rng = np.random.default_rng(0)
+# >>> x = rng.exponential(scale=1.0, size=2000)
+# >>> r = fauzi_survival_kernel(x, t=1.0)
+# >>> abs(r["estimate"] - np.exp(-1)) < 0.05  # S(1)=e^-1
+# True

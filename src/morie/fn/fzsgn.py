@@ -1,56 +1,72 @@
 # morie.fn — function file (hadesllm/morie)
-"""Smoothed sign test."""
+"""Smoothed sign test (Fauzi Ch 5).
+
+Classical sign test counts S = #{X_i > theta_0}.  Fauzi's smoothed
+version replaces the indicator with the integrated kernel:
+
+    S_n = sum_i W( (X_i - theta_0) / h ),   W = integral K.
+
+Under H0: median(X)=theta_0,  E[S_n]=n/2, Var[S_n]≈n/4, so
+z = (S_n - n/2)/sqrt(n/4) ~ N(0,1).
+"""
 import numpy as np
-from scipy import stats
+from scipy import stats as _sps
 from ._richresult import RichResult
 
 __all__ = ["fauzi_smoothed_sign"]
 
 
-def fauzi_smoothed_sign(x, cdf=None):
-    """
-    Smoothed sign test
+def _silverman_h(x):
+    n = len(x)
+    s = np.std(x, ddof=1)
+    iqr = np.subtract(*np.percentile(x, [75, 25])) / 1.34
+    sigma = min(s, iqr) if iqr > 0 else s
+    if sigma <= 0:
+        sigma = 1.0
+    return 1.06 * sigma * n ** (-1.0 / 5.0)
 
-    Formula: S_n = sum K_h(X_i - theta_0)
 
-    Parameters
-    ----------
-    x : array-like
-        Input data.
+def fauzi_smoothed_sign(x, theta0=0.0, h=None, alternative="two-sided"):
+    """Smoothed sign test of H0: median = theta0."""
+    x = np.asarray(x, dtype=float).ravel()
+    n = len(x)
+    if n < 5:
+        return RichResult(payload={"statistic": np.nan, "p_value": np.nan,
+                                    "n": n, "method": "fzsgn — too few obs"})
+    if h is None:
+        h = float(_silverman_h(x))
 
-    Returns
-    -------
-    result : dict
-        Keys: statistic, p_value
+    S_n = float(np.sum(_sps.norm.cdf((x - theta0) / h)))
+    z = (S_n - n / 2.0) / np.sqrt(n / 4.0)
 
-    References
-    ----------
-    Fauzi Ch 5
-    """
-    x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    if x.ndim == 0:
-        return RichResult(payload={"statistic": float('nan'), "p_value": float('nan'), "n": 1, "method": "scalar-input placeholder"})
-    if n < 2:
-        return RichResult(payload={"statistic": np.nan, "p_value": np.nan, "n": n, "method": "Smoothed sign test"})
-    x_sorted = np.sort(x)
-    if cdf is None:
-        cdf_vals = stats.norm.cdf(x_sorted, loc=np.mean(x), scale=np.std(x, ddof=1))
+    if alternative == "two-sided":
+        p = 2.0 * (1.0 - _sps.norm.cdf(abs(z)))
+    elif alternative == "greater":
+        p = 1.0 - _sps.norm.cdf(z)
+    elif alternative == "less":
+        p = float(_sps.norm.cdf(z))
     else:
-        cdf_vals = np.array([cdf(xi) for xi in x_sorted])
-    ecdf = np.arange(1, n + 1) / n
-    ecdf_prev = np.arange(0, n) / n
-    d_plus = np.max(ecdf - cdf_vals)
-    d_minus = np.max(cdf_vals - ecdf_prev)
-    statistic = max(d_plus, d_minus)
-    if n <= 40:
-        p_value = 1.0 - stats.ksone.cdf(statistic, n)
-    else:
-        lam = (np.sqrt(n) + 0.12 + 0.11 / np.sqrt(n)) * statistic
-        p_value = 2.0 * np.sum([(-1) ** (k - 1) * np.exp(-2 * k ** 2 * lam ** 2) for k in range(1, 101)])
-        p_value = max(0.0, min(1.0, p_value))
-    return RichResult(payload={"statistic": float(statistic), "p_value": float(p_value), "n": n, "method": "Smoothed sign test"})
+        raise ValueError("alternative must be two-sided/greater/less")
+
+    return RichResult(payload={
+        "statistic": S_n,
+        "z": float(z),
+        "p_value": float(p),
+        "theta0": theta0,
+        "h": h,
+        "n": n,
+        "method": f"Fauzi smoothed sign test ({alternative}) (Ch 5)",
+    })
 
 
 def cheatsheet():
-    return "fzsgn: Smoothed sign test"
+    return "fzsgn: Smoothed sign test for the median"
+
+
+# CANONICAL TEST
+# >>> import numpy as np
+# >>> rng = np.random.default_rng(0)
+# >>> x = rng.standard_normal(500)
+# >>> r = fauzi_smoothed_sign(x, theta0=0.0)
+# >>> r["p_value"] > 0.05
+# True

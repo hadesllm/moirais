@@ -1,77 +1,93 @@
-# morie.fn — function file (hadesllm/morie)
 """Geographically weighted regression (GWR)."""
-
 import numpy as np
+from scipy.spatial.distance import cdist
+from ._richresult import RichResult
 
-from ._containers import DescriptiveResult
+__all__ = ["geographically_weighted_regression"]
 
 
-def gwr(
-    y: np.ndarray, X: np.ndarray, coordinates: np.ndarray, bandwidth: float | None = None, kernel: str = "gaussian"
-) -> DescriptiveResult:
+def geographically_weighted_regression(x, y, coords,
+                                       bandwidth: float | None = None,
+                                       kernel: str = "gaussian"):
     """
-    Geographically weighted regression (GWR).
+    Geographically weighted regression (Brunsdon, Fotheringham, Charlton 1996).
 
-    Fits a local linear regression at each observation using
-    distance-weighted neighbours.
+    At each sample location i, fit a local weighted least squares:
+        beta(s_i) = (X' W(s_i) X)^{-1} X' W(s_i) y,
+    where W(s_i) is a kernel-weighted diagonal of distances from i.
 
-    :param y: (n,) dependent variable.
-    :param X: (n, k) explanatory variables.
-    :param coordinates: (n, 2) spatial coordinates.
-    :param bandwidth: Kernel bandwidth (default: median distance).
-    :param kernel: Kernel type: 'gaussian' or 'bisquare'.
-    :return: DescriptiveResult with local coefficients and R-squared.
-
-    References
+    Parameters
     ----------
-    Brunsdon C, Fotheringham AS, Charlton ME (1996). Geographically
-    weighted regression: a method for exploring spatial nonstationarity.
-    Geographical Analysis, 28(4), 281-298.
+    x : array-like, shape (n, k)
+        Design matrix (include intercept column if desired).
+    y : array-like, shape (n,)
+    coords : array-like, shape (n, d)
+    bandwidth : float, optional
+        Kernel bandwidth (default: median pairwise distance).
+    kernel : str
+        'gaussian' (default) or 'bisquare'.
+
+    Returns
+    -------
+    RichResult with payload: estimate (n x k local betas as nested list),
+        se (n x k local SEs), bandwidth, kernel, n, method.
     """
-    y = np.asarray(y, dtype=np.float64).ravel()
-    X = np.asarray(X, dtype=np.float64)
-    coords = np.asarray(coordinates, dtype=np.float64)
-    n = len(y)
+    X = np.asarray(x, dtype=float)
     if X.ndim == 1:
         X = X.reshape(-1, 1)
-    k = X.shape[1]
-    dmat = np.sqrt(((coords[:, None, :] - coords[None, :, :]) ** 2).sum(axis=2))
+    y = np.asarray(y, dtype=float).ravel()
+    coords = np.asarray(coords, dtype=float)
+    if coords.ndim == 1:
+        coords = coords.reshape(-1, 1)
+    n, k = X.shape
+    if y.size != n or coords.shape[0] != n:
+        raise ValueError("shape mismatch among x, y, coords")
+    D = cdist(coords, coords)
     if bandwidth is None:
-        bandwidth = float(np.median(dmat[dmat > 0]))
+        bandwidth = float(np.median(D[D > 0]))
+    if kernel not in ("gaussian", "bisquare"):
+        raise ValueError(f"unknown kernel: {kernel}")
+
     local_betas = np.zeros((n, k))
-    local_r2 = np.zeros(n)
+    local_ses = np.zeros((n, k))
     for i in range(n):
-        d = dmat[i]
+        d = D[i]
         if kernel == "bisquare":
-            w = np.where(d <= bandwidth, (1 - (d / bandwidth) ** 2) ** 2, 0.0)
+            w = np.where(d <= bandwidth, (1.0 - (d / bandwidth) ** 2) ** 2, 0.0)
         else:
             w = np.exp(-0.5 * (d / bandwidth) ** 2)
-        W = np.diag(w)
-        XtWX = X.T @ W @ X
+        sqrt_w = np.sqrt(w)
+        Xw = X * sqrt_w[:, None]; yw = y * sqrt_w
+        XtWX = Xw.T @ Xw
         try:
-            local_betas[i] = np.linalg.solve(XtWX, X.T @ W @ y)
+            beta_i = np.linalg.solve(XtWX, Xw.T @ yw)
         except np.linalg.LinAlgError:
-            local_betas[i] = np.linalg.lstsq(XtWX, X.T @ W @ y, rcond=None)[0]
-        fitted_i = X[i] @ local_betas[i]
-        ss_res = w @ (y - X @ local_betas[i]) ** 2
-        ss_tot = w @ (y - np.average(y, weights=w)) ** 2
-        local_r2[i] = 1 - ss_res / ss_tot if ss_tot > 0 else 0.0
-    return DescriptiveResult(
-        name="gwr",
-        value=float(local_r2.mean()),
-        extra={
-            "local_betas": local_betas,
-            "local_r2": local_r2,
-            "bandwidth": bandwidth,
-            "kernel": kernel,
-            "n": n,
-            "k": k,
-        },
-    )
+            beta_i = np.linalg.lstsq(XtWX, Xw.T @ yw, rcond=None)[0]
+        local_betas[i] = beta_i
+        resid = yw - Xw @ beta_i
+        df = max(w.sum() - k, 1.0)
+        sigma2_i = float(resid @ resid) / df
+        try:
+            cov_i = sigma2_i * np.linalg.inv(XtWX)
+            local_ses[i] = np.sqrt(np.maximum(np.diag(cov_i), 0.0))
+        except np.linalg.LinAlgError:
+            local_ses[i] = np.nan
+
+    return RichResult(payload={
+        "estimate": local_betas.tolist(),
+        "se": local_ses.tolist(),
+        "bandwidth": float(bandwidth),
+        "kernel": kernel,
+        "n": int(n),
+        "method": f"GWR ({kernel} kernel)",
+    })
 
 
-gwreg = gwr
+def cheatsheet():
+    return "gwreg: Geographically weighted regression"
 
 
-def cheatsheet() -> str:
-    return "gwr({}) -> Geographically weighted regression (GWR)."
+# CANONICAL TEST
+# X = [[1,0],[1,1],[1,2],[1,3],[1,4]],  y = [1,2,3,4,5],
+# coords = [[0],[1],[2],[3],[4]]
+# Linear truth y = 0 + 1*coord -> every local beta ~ [0, 1].

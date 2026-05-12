@@ -1,58 +1,89 @@
 # morie.fn — function file (hadesllm/morie)
-"""General permutation test for any statistic."""
+"""General two-sample permutation test (Good 2005, *Permutation Tests*).
+
+Tests H0: F_x = F_y by shuffling group labels and comparing the observed
+test statistic to its permutation distribution.  Reports a two-sided
+p-value with the standard +1/(B+1) Monte Carlo continuity correction.
+"""
+from __future__ import annotations
+
 import numpy as np
-from scipy import stats
+
 from ._richresult import RichResult
 
 __all__ = ["permutation_test_general"]
 
 
-def permutation_test_general(x, y, cdf=None):
-    """
-    General permutation test for any statistic
-
-    Formula: p = |{pi: T(pi) >= T_obs}| / |Pi|
+def permutation_test_general(x, y, statistic=None, B: int = 5000,
+                             alternative: str = "two-sided", seed: int = 42):
+    """Two-sample permutation test.
 
     Parameters
     ----------
-    x : array-like
-        Input data.
-    y : array-like
-        Input data.
+    x, y : array-like
+        Group samples.
+    statistic : callable, optional
+        ``statistic(x, y) -> scalar``.  Default = mean difference.
+    B : int
+        Number of permutations (default 5000).
+    alternative : {"two-sided", "less", "greater"}
+    seed : int
 
     Returns
     -------
-    result : dict
-        Keys: statistic, p_value
+    RichResult with keys: statistic, p_value, n_x, n_y, B, method.
+
+    Notes
+    -----
+    p-value uses ``(1 + #{T_b >= T_obs}) / (B + 1)`` per Phipson & Smyth
+    (2010) so that p > 0 strictly.
 
     References
     ----------
-    Good (2005)
+    Good, P. (2005). Permutation, Parametric, and Bootstrap Tests of
+    Hypotheses (3rd ed.). Springer.
     """
-    x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    if x.ndim == 0:
-        return RichResult(payload={"statistic": float('nan'), "p_value": float('nan'), "n": 1, "method": "scalar-input placeholder"})
-    if n < 2:
-        return RichResult(payload={"statistic": np.nan, "p_value": np.nan, "n": n, "method": "General permutation test for any statistic"})
-    x_sorted = np.sort(x)
-    if cdf is None:
-        cdf_vals = stats.norm.cdf(x_sorted, loc=np.mean(x), scale=np.std(x, ddof=1))
+    x = np.asarray(x, dtype=float).ravel()
+    y = np.asarray(y, dtype=float).ravel()
+    n_x, n_y = x.size, y.size
+    if n_x < 1 or n_y < 1:
+        return RichResult(payload={"statistic": float("nan"),
+                                   "p_value": float("nan"),
+                                   "n_x": int(n_x), "n_y": int(n_y),
+                                   "method": "permutation (empty)"})
+    if statistic is None:
+        statistic = lambda a, b: float(np.mean(a) - np.mean(b))
+    T_obs = float(statistic(x, y))
+    pool = np.concatenate([x, y])
+    rng = np.random.default_rng(seed)
+    T_perm = np.empty(B, dtype=float)
+    for b in range(B):
+        rng.shuffle(pool)
+        T_perm[b] = statistic(pool[:n_x], pool[n_x:])
+    if alternative == "greater":
+        p = (1.0 + np.sum(T_perm >= T_obs)) / (B + 1.0)
+    elif alternative == "less":
+        p = (1.0 + np.sum(T_perm <= T_obs)) / (B + 1.0)
     else:
-        cdf_vals = np.array([cdf(xi) for xi in x_sorted])
-    ecdf = np.arange(1, n + 1) / n
-    ecdf_prev = np.arange(0, n) / n
-    d_plus = np.max(ecdf - cdf_vals)
-    d_minus = np.max(cdf_vals - ecdf_prev)
-    statistic = max(d_plus, d_minus)
-    if n <= 40:
-        p_value = 1.0 - stats.ksone.cdf(statistic, n)
-    else:
-        lam = (np.sqrt(n) + 0.12 + 0.11 / np.sqrt(n)) * statistic
-        p_value = 2.0 * np.sum([(-1) ** (k - 1) * np.exp(-2 * k ** 2 * lam ** 2) for k in range(1, 101)])
-        p_value = max(0.0, min(1.0, p_value))
-    return RichResult(payload={"statistic": float(statistic), "p_value": float(p_value), "n": n, "method": "General permutation test for any statistic"})
+        p = (1.0 + np.sum(np.abs(T_perm) >= abs(T_obs))) / (B + 1.0)
+    return RichResult(payload={
+        "statistic": T_obs, "p_value": float(p),
+        "n_x": int(n_x), "n_y": int(n_y), "B": int(B),
+        "alternative": alternative,
+        "method": "Permutation test (Good 2005)",
+    })
+
+
+# CANONICAL TEST
+# >>> import numpy as np
+# >>> rng = np.random.default_rng(0)
+# >>> x = rng.normal(0.0, 1.0, 30)
+# >>> y = rng.normal(0.0, 1.0, 30)
+# >>> res = permutation_test_general(x, y, B=1000, seed=0)
+# >>> assert 0 <= res["p_value"] <= 1
+# >>> # same-distribution samples → expect p not extreme
+# >>> assert res["p_value"] > 0.01
 
 
 def cheatsheet():
-    return "permt: General permutation test for any statistic"
+    return "permt(x, y, statistic=mean-diff, B=5000): permutation test."

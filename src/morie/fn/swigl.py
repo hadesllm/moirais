@@ -1,36 +1,64 @@
-"""SwiGLU gated activation."""
+# morie.fn — function file (hadesllm/morie)
+"""SwiGLU gated activation (Shazeer 2020)."""
+from __future__ import annotations
+
 import numpy as np
+
 from ._richresult import RichResult
 
 __all__ = ["swiglu_activation"]
 
 
-def swiglu_activation(x):
-    """
-    SwiGLU gated activation
+def _silu(z):
+    # Swish/SiLU = z * sigmoid(z); numerically stable form.
+    return z * (1.0 / (1.0 + np.exp(-z)))
 
-    Formula: SwiGLU(x,W,V,b,c) = Swish(xW+b) * (xV+c)
+
+def swiglu_activation(x, W=None, V=None, b=None, c=None):
+    """SwiGLU: ``Swish(xW + b) * (xV + c)``.
 
     Parameters
     ----------
-    x : array-like
-        Input data.
+    x : ndarray, shape (..., d_in)
+    W, V : ndarray, shape (d_in, d_out), optional
+        Linear projection matrices.  If both None, defaults to
+        identity (element-wise gated activation).
+    b, c : ndarray, shape (d_out,), optional
+        Biases (default zero).
 
     Returns
     -------
-    result : dict
-        Keys: estimate
-
-    References
-    ----------
-    Shazeer (2020)
+    RichResult with keys: tensor (output), gate, up.
     """
     x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    result = float(np.mean(x))
-    se = float(np.std(x, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "SwiGLU gated activation"})
+    if W is None and V is None:
+        d_out = x.shape[-1]
+        W = np.eye(d_out)
+        V = np.eye(d_out)
+    elif W is None or V is None:
+        raise ValueError("Provide both W and V or neither")
+    W = np.asarray(W, dtype=float)
+    V = np.asarray(V, dtype=float)
+    b = np.zeros(W.shape[1]) if b is None else np.asarray(b, dtype=float)
+    c = np.zeros(V.shape[1]) if c is None else np.asarray(c, dtype=float)
+    gate = _silu(x @ W + b)
+    up = x @ V + c
+    out = gate * up
+    return RichResult(
+        title="SwiGLU Activation (Shazeer 2020)",
+        summary_lines=[("shape", out.shape),
+                       ("mean", float(np.mean(out)))],
+        payload={"tensor": out, "gate": gate, "up": up,
+                 "method": "SwiGLU"},
+    )
 
 
 def cheatsheet():
-    return "swigl: SwiGLU gated activation"
+    return "swigl(x, W, V, b, c): Swish(xW+b) * (xV+c)"
+
+
+# CANONICAL TEST
+# >>> x = np.array([[1.0, 0.0]]); W = V = np.eye(2)
+# >>> r = swiglu_activation(x, W=W, V=V)
+# >>> r["tensor"].shape
+# (1, 2)

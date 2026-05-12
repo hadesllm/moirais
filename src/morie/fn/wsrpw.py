@@ -1,55 +1,92 @@
-"""Simulated power of Wilcoxon signed-rank test."""
+"""Simulated power of the Wilcoxon signed-rank test (Gibbons Ch 5.7.3).
+
+Monte-Carlo power: draw ``nsim`` samples of size n from the
+alternative (default: Normal with mean shift = ``effect_size``,
+sd = 1), run a two-sided Wilcoxon signed-rank test, and report
+the rejection rate at level ``alpha``.
+
+The observed sample ``x`` is used only to set the sample size n;
+the simulation distribution is independent of x by design (this
+is the *power function*, not a post-hoc test).
+"""
+from __future__ import annotations
+
 import numpy as np
 from scipy import stats
+
 from ._richresult import RichResult
 
 __all__ = ["wilcoxon_power"]
 
 
-def wilcoxon_power(x, cdf=None):
-    """
-    Simulated power of Wilcoxon signed-rank test
-
-    Formula: Monte Carlo power estimation
+def wilcoxon_power(
+    x,
+    effect_size: float = 0.5,
+    alpha: float = 0.05,
+    nsim: int = 2000,
+    seed: int | None = 0,
+):
+    """Monte-Carlo power of the Wilcoxon signed-rank test.
 
     Parameters
     ----------
     x : array-like
-        Input data.
+        Sample (only ``len(x)`` is used).
+    effect_size : float
+        Location shift under H1 (Normal(effect_size, 1)).
+    alpha : float
+        Test level.
+    nsim : int
+        Simulation replicates.
+    seed : int | None
+        Random seed for reproducibility.
 
     Returns
     -------
-    result : dict
-        Keys: estimate
-
-    References
-    ----------
-    Gibbons Ch 5.7.3
+    RichResult with payload:
+        statistic : empirical power (rejection rate at H1)
+        n         : sample size
+        effect_size, alpha, nsim : echoed
+        se        : Monte Carlo standard error of the power estimate
     """
-    x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    if x.ndim == 0:
-        return RichResult(payload={"statistic": float('nan'), "p_value": float('nan'), "n": 1, "method": "scalar-input placeholder"})
-    if n < 2:
-        return RichResult(payload={"statistic": np.nan, "p_value": np.nan, "n": n, "method": "Simulated power of Wilcoxon signed-rank test"})
-    x_sorted = np.sort(x)
-    if cdf is None:
-        cdf_vals = stats.norm.cdf(x_sorted, loc=np.mean(x), scale=np.std(x, ddof=1))
-    else:
-        cdf_vals = np.array([cdf(xi) for xi in x_sorted])
-    ecdf = np.arange(1, n + 1) / n
-    ecdf_prev = np.arange(0, n) / n
-    d_plus = np.max(ecdf - cdf_vals)
-    d_minus = np.max(cdf_vals - ecdf_prev)
-    statistic = max(d_plus, d_minus)
-    if n <= 40:
-        p_value = 1.0 - stats.ksone.cdf(statistic, n)
-    else:
-        lam = (np.sqrt(n) + 0.12 + 0.11 / np.sqrt(n)) * statistic
-        p_value = 2.0 * np.sum([(-1) ** (k - 1) * np.exp(-2 * k ** 2 * lam ** 2) for k in range(1, 101)])
-        p_value = max(0.0, min(1.0, p_value))
-    return RichResult(payload={"statistic": float(statistic), "p_value": float(p_value), "n": n, "method": "Simulated power of Wilcoxon signed-rank test"})
+    x = np.asarray(x, dtype=float).ravel()
+    n = int(x.size)
+    if n < 5:
+        return RichResult(payload={
+            "statistic": np.nan, "n": n, "effect_size": float(effect_size),
+            "alpha": float(alpha), "nsim": int(nsim), "se": np.nan,
+            "method": "Wilcoxon signed-rank power (Monte Carlo)",
+        })
+    rng = np.random.default_rng(seed)
+    rejections = 0
+    # zero-mean=0 method to handle small-sample exact for n<=25, else approx
+    for _ in range(int(nsim)):
+        sample = rng.normal(loc=effect_size, scale=1.0, size=n)
+        try:
+            res = stats.wilcoxon(sample, alternative="two-sided",
+                                 zero_method="wilcox", correction=False)
+            if res.pvalue < alpha:
+                rejections += 1
+        except ValueError:
+            # all-zeros corner case
+            pass
+    power = rejections / float(nsim)
+    se = float(np.sqrt(power * (1.0 - power) / nsim))
+    return RichResult(payload={
+        "statistic": float(power),
+        "n": n,
+        "effect_size": float(effect_size),
+        "alpha": float(alpha),
+        "nsim": int(nsim),
+        "se": se,
+        "method": "Wilcoxon signed-rank power (Monte Carlo)",
+    })
 
 
 def cheatsheet():
-    return "wsrpw: Simulated power of Wilcoxon signed-rank test"
+    return "wsrpw: Monte-Carlo power of Wilcoxon signed-rank test"
+
+
+# CANONICAL TEST
+# >>> wilcoxon_power(np.zeros(20), effect_size=0.5, alpha=0.05, nsim=2000)
+# Expected power ≈ 0.55-0.65 for n=20, delta=0.5, sigma=1

@@ -1,37 +1,50 @@
 # morie.fn — function file (hadesllm/morie)
-"""Causal (autoregressive) attention mask."""
+"""Causal (autoregressive) attention mask (Radford et al. 2019)."""
+from __future__ import annotations
+
 import numpy as np
+
 from ._richresult import RichResult
 
 __all__ = ["causal_attention_mask"]
 
 
 def causal_attention_mask(x):
-    """
-    Causal (autoregressive) attention mask
+    """Build the lower-triangular causal mask.
 
-    Formula: mask[i,j] = -inf if j > i, else 0
+    Formula:  mask[i, j] = -inf if j > i else 0.
 
     Parameters
     ----------
-    x : array-like
-        Input data.
+    x : int OR array-like
+        If int, treat as sequence length ``n``.  If array-like, use
+        ``len(x)`` as the sequence length.
 
     Returns
     -------
-    result : dict
-        Keys: estimate
-
-    References
-    ----------
-    Radford et al. (2019)
+    RichResult with keys: tensor (mask), n.
     """
-    x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    result = float(np.mean(x))
-    se = float(np.std(x, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Causal (autoregressive) attention mask"})
+    if np.isscalar(x):
+        n = int(x)
+    else:
+        arr = np.asarray(x)
+        n = arr.shape[-2] if arr.ndim >= 2 else arr.shape[-1]
+    mask = np.zeros((n, n), dtype=float)
+    mask[np.triu_indices(n, k=1)] = -np.inf
+    return RichResult(
+        title="Causal Attention Mask (Radford 2019)",
+        summary_lines=[("seq_len", n),
+                       ("allowed", int(n * (n + 1) // 2))],
+        payload={"tensor": mask, "n": n, "method": "causal-mask"},
+    )
 
 
 def cheatsheet():
-    return "cslat: Causal (autoregressive) attention mask"
+    return "cslat(n): lower-triangular causal mask, 0 on/below, -inf above"
+
+
+# CANONICAL TEST
+# >>> m = causal_attention_mask(3)["tensor"]
+# >>> np.array_equal(np.isinf(m), np.array(
+# ...     [[False, True, True], [False, False, True], [False, False, False]]))
+# True

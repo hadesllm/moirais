@@ -1,51 +1,89 @@
-"""Specificity (true negative rate)."""
-
+# morie.fn — function file (hadesllm/morie)
+"""Spectral density estimation (Welch periodogram)."""
 from __future__ import annotations
 
 import numpy as np
 
-from ._containers import ESRes
+from ._richresult import RichResult
 
-_QUOTE = "Numbers have life; they're not just symbols on paper. — Shakuntala Devi"
+__all__ = ["spectral_density"]
 
 
-def specificity(y_true, y_pred, *, pos_label=1, **kwargs) -> ESRes:
-    """
-    Compute specificity (TNR) for binary classification.
+def spectral_density(x, fs=1.0, nperseg=None):
+    r"""Welch power-spectral-density estimate.
 
     .. math::
 
-        \\text{Specificity} = \\frac{TN}{TN + FP}
+        S(f) = \frac{1}{K U}\sum_{k=1}^K |X_k(f)|^2
 
-    :param y_true: array-like of true labels.
-    :param y_pred: array-like of predicted labels.
-    :param pos_label: Label considered positive. Default 1.
-    :return: ESRes with specificity.
+    where :math:`X_k` is the windowed DFT of segment :math:`k`,
+    :math:`U` the window normalisation, and :math:`K` the number of
+    averaged segments.
+
+    Parameters
+    ----------
+    x : array-like
+        Time series.
+    fs : float, default 1.0
+        Sampling frequency (Hz).
+    nperseg : int, optional
+        Segment length; default ``max(n//4, 8)``.
+
+    Returns
+    -------
+    RichResult
+        keys: ``frequencies``, ``psd``, ``n_segments``, ``nperseg``,
+        ``fs``, ``n``, ``method``.
 
     References
     ----------
-    Altman DG, Bland JM (1994). Diagnostic tests 1: sensitivity and
-        specificity. *BMJ*, 308(6943), 1552.
+    Welch PD (1967). The Use of Fast Fourier Transform for the
+    Estimation of Power Spectra. *IEEE Trans. Audio Electroacoust.*
+    15(2), 70-73.
     """
-    yt = np.asarray(y_true).ravel()
-    yp = np.asarray(y_pred).ravel()
-    if len(yt) != len(yp):
-        raise ValueError("y_true and y_pred must have same length.")
-    if len(yt) == 0:
-        raise ValueError("Inputs must not be empty.")
-    tn = int(np.sum((yt != pos_label) & (yp != pos_label)))
-    fp = int(np.sum((yt != pos_label) & (yp == pos_label)))
-    spec = tn / (tn + fp) if (tn + fp) > 0 else 0.0
-    return ESRes(
-        measure="specificity",
-        estimate=spec,
-        n=len(yt),
-        extra={"tn": tn, "fp": fp, "pos_label": pos_label},
-    )
+    r = np.asarray(x, dtype=float).ravel()
+    n = r.size
+    if n < 8:
+        raise ValueError(f"Need at least 8 observations, got {n}.")
+    if nperseg is None:
+        nperseg = max(n // 4, 8)
+    nperseg = int(min(nperseg, n))
+
+    try:
+        from scipy import signal as sps
+        f, S = sps.welch(r, fs=fs, nperseg=nperseg)
+        return RichResult(payload={
+            "frequencies": f, "psd": S,
+            "n_segments": int(max(1, (n - nperseg) // (nperseg // 2) + 1)),
+            "nperseg": int(nperseg), "fs": float(fs), "n": int(n),
+            "method": "Welch PSD via scipy.signal.welch",
+        })
+    except Exception:
+        pass
+
+    # Pure-NumPy Welch with Hann window, 50% overlap.
+    step = max(nperseg // 2, 1)
+    win = 0.5 - 0.5 * np.cos(2 * np.pi * np.arange(nperseg) / max(nperseg - 1, 1))
+    U = float(np.sum(win ** 2))
+    nfreq = nperseg // 2 + 1
+    S = np.zeros(nfreq)
+    nseg = 0
+    start = 0
+    while start + nperseg <= n:
+        seg = (r[start:start + nperseg] - r[start:start + nperseg].mean()) * win
+        F = np.fft.rfft(seg)
+        S += np.abs(F) ** 2
+        nseg += 1
+        start += step
+    S /= (nseg * U * fs)
+    freqs = np.fft.rfftfreq(nperseg, d=1.0 / fs)
+    return RichResult(payload={
+        "frequencies": freqs, "psd": S,
+        "n_segments": int(nseg), "nperseg": int(nperseg),
+        "fs": float(fs), "n": int(n),
+        "method": "Welch PSD (Hann window, 50% overlap, numpy)",
+    })
 
 
-specf = specificity
-
-
-def cheatsheet() -> str:
-    return "specificity({}) -> Specificity (TNR)."
+def cheatsheet():
+    return "specf: Spectral density estimate (Welch 1967)."

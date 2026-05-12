@@ -38,6 +38,7 @@ from scipy.optimize import minimize
 from scipy.special import gammainc, gammaln  # noqa: F401 — used inline
 
 from .fn._richresult import RichResult
+from .tps_hawkes_jit import has_jit_path, neg_loglik_jit
 
 PROJECT = Path(__file__).resolve().parents[5]
 FIG_OUT = PROJECT / "data/manifest/outputs/figures/tps_hawkes_advanced"
@@ -194,6 +195,12 @@ def _neg_loglik_general(theta: np.ndarray, t: np.ndarray, T: float,
     only in the exponential-kernel case (other kernels lack the
     memorylessness required for O(n) recursion).
     """
+    # Fast path: Numba-JIT'd implementation with O(n) recursion for the
+    # exponential kernel and O(n²) JIT'd loops for non-Markovian kernels.
+    # See tps_hawkes_jit.has_jit_path for the supported combinations.
+    if has_jit_path(kernel_kind, baseline_kind):
+        return neg_loglik_jit(theta, t, T, kernel_kind, baseline_kind)
+
     nb = _n_baseline_params(baseline_kind)
     nk = _n_kernel_params(kernel_kind)
     a = tuple(theta[:nb])
@@ -265,17 +272,36 @@ def fit_hawkes_general(t: np.ndarray, T: float,
     ``branching_ratio``, ``baseline_params``, ``kernel_params``,
     and the time-rescaling KS statistic.
     """
+    # Clip events strictly inside [0, T) — jittered timestamps that land at
+    # or past T break the kernel-CDF integral term (negative^non-integer = NaN).
+    t = np.asarray(t, dtype=float)
+    t = t[(t >= 0.0) & (t < T)]
     n = int(t.size)
     if n < 50:
         raise ValueError(f"too few events ({n}) for non-stationary fit")
     mean_dt = float(np.mean(np.diff(t))) if n > 1 else 1.0
     x0 = _x0(kernel_kind, baseline_kind, n, T, mean_dt)
 
+    # L-BFGS-B with explicit bounds avoids the Hawkes spike-train
+    # degeneracy that Nelder-Mead drives into via the upper β wall.
+    nb = _n_baseline_params(baseline_kind)
+    nk = _n_kernel_params(kernel_kind)
+    bounds: list[tuple[float, float]] = []
+    bounds += [(-15.0, 15.0)] + [(-5.0, 5.0)] * (nb - 1)  # a0, then a1..a3
+    bounds += [(1e-3, 0.99)]  # eta
+    if kernel_kind == "exponential":
+        bounds += [(0.1, 25.0)]  # beta in [0.1, 25] /day
+    elif kernel_kind == "weibull":
+        bounds += [(0.1, 15.0), (1e-3, 100.0)]  # alpha, lambda
+    elif kernel_kind == "gamma":
+        bounds += [(0.1, 15.0), (0.05, 25.0)]  # alpha, beta
+    elif kernel_kind == "lomax":
+        bounds += [(1.05, 30.0), (1e-3, 100.0)]  # alpha, c
     res = minimize(_neg_loglik_general, x0,
                     args=(t, T, kernel_kind, baseline_kind),
-                    method="Nelder-Mead",
-                    options={"xatol": 1e-4, "fatol": 1e-3,
-                             "maxiter": 4000, "adaptive": True})
+                    method="L-BFGS-B",
+                    bounds=bounds,
+                    options={"maxiter": 1000, "ftol": 1e-9})
     theta = res.x
     nll = float(res.fun)
     a, eta, psi = _split_theta(theta, kernel_kind, baseline_kind)

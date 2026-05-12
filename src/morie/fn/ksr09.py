@@ -1,45 +1,63 @@
 # morie.fn — function file (hadesllm/morie)
-"""Z-estimator asymptotic distribution."""
+"""Z-estimator asymptotic distribution (Kosorok 2008, Ch 5).
+
+A Z-estimator theta_n solves P_n psi(.; theta) = 0.  Under regularity,
+sqrt(n)(theta_n - theta_0) -> N(0, V) with sandwich variance
+    V = A^{-1} B A^{-T}, A = P psi_dot(theta_0), B = P psi(theta_0)^{2}.
+With y omitted we solve psi(x; theta) = x - theta = 0 (the sample
+mean).  With y supplied we solve psi(x, y; beta) = x(y - beta x) = 0
+(centred OLS slope), both with sandwich SE.
+"""
 import numpy as np
 from ._richresult import RichResult
 
 __all__ = ["kosorok_z_estimator"]
 
 
-def kosorok_z_estimator(x, y):
-    """
-    Z-estimator asymptotic distribution
-
-    Formula: sqrt(n)(theta_n - theta_0) -> N(0, V)
+def kosorok_z_estimator(x, y=None):
+    """Z-estimator: location (one-sample) or OLS slope (two-sample).
 
     Parameters
     ----------
-    x : array-like
-        Input data.
-    y : array-like
-        Input data.
+    x : array-like.
+    y : array-like or None.
 
     Returns
     -------
-    result : dict
-        Keys: estimate, se
-
-    References
-    ----------
-    Kosorok (2008), Ch 5
+    RichResult with keys estimate, se, n, method.
     """
     x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    if x.ndim == 0:
-        return RichResult(payload={"statistic": float('nan'), "p_value": float('nan'), "n": 1, "method": "scalar-input placeholder"})
-    if n < 1:
-        return RichResult(payload={"estimate": np.nan, "n": 0, "method": "Z-estimator asymptotic distribution"})
-    estimate = np.median(x)
-    se = 1.2533 * np.std(x, ddof=1) / np.sqrt(n)
-    ci_lower = estimate - 1.96 * se
-    ci_upper = estimate + 1.96 * se
-    return RichResult(payload={"estimate": float(estimate), "se": float(se), "ci_lower": float(ci_lower), "ci_upper": float(ci_upper), "n": n, "method": "Z-estimator asymptotic distribution"})
+    if y is None:
+        n = len(x)
+        theta = float(x.mean())
+        psi = x - theta
+        v = float((psi ** 2).mean())
+        se = float(np.sqrt(v / n)) if n > 0 else float("nan")
+        method = "Z-estimator: psi(x;theta) = x - theta"
+        est = theta
+    else:
+        y = np.asarray(y, dtype=float)
+        n = len(x)
+        xc = x - x.mean(); yc = y - y.mean()
+        beta = float((xc @ yc) / (xc @ xc))
+        resid = yc - beta * xc
+        A = float((xc ** 2).mean())
+        B = float(((xc ** 2) * (resid ** 2)).mean())
+        se = float(np.sqrt(B / (A ** 2) / n))
+        method = "Z-estimator: psi(x,y;beta) = x(y - beta x)"
+        est = beta
+    return RichResult(payload={
+        "estimate": est, "se": se, "n": n, "method": method,
+    })
 
 
 def cheatsheet():
-    return "ksr09: Z-estimator asymptotic distribution"
+    return "ksr09: Z-estimator with sandwich SE"
+
+
+# CANONICAL TEST
+if __name__ == "__main__":
+    rng = np.random.default_rng(0)
+    xs = rng.normal(size=200)
+    ys = 1.5 * xs + rng.normal(size=200)
+    print(kosorok_z_estimator(xs, ys))

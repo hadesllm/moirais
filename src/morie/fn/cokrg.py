@@ -1,95 +1,97 @@
-# morie.fn — function file (hadesllm/morie)
-"""Co-kriging — multivariate spatial prediction (Schabenberger & Gotway Ch 5)."""
-
+"""Cokriging (linear model of coregionalization, simple-cokriging form)."""
 import numpy as np
 from scipy.spatial.distance import cdist
+from ._richresult import RichResult
+
+__all__ = ["cokriging"]
 
 
-def cokrg(
-    coords: np.ndarray,
-    primary: np.ndarray,
-    secondary: np.ndarray,
-    target: np.ndarray,
-    *,
-    sill_p: float = 1.0,
-    range_p: float = 1.0,
-    sill_s: float = 1.0,
-    range_s: float = 1.0,
-    cross_sill: float = 0.5,
-    cross_range: float = 1.0,
-    nugget: float = 0.0,
-) -> dict:
+def _cov_exp(h, c0, c1, a):
+    h = np.asarray(h, dtype=float)
+    return c1 * np.exp(-h / a) + np.where(h == 0, c0, 0.0)
+
+
+def cokriging(x, y, coords, target,
+              sill_p: float = 1.0, range_p: float = 1.0,
+              sill_s: float = 1.0, range_s: float = 1.0,
+              cross_sill: float = 0.5, cross_range: float = 1.0,
+              nugget: float = 0.0):
     """
-    Simple co-kriging using a primary and secondary variable.
+    Simple cokriging on co-located primary/secondary observations.
 
-    Builds the full co-kriging system with auto- and cross-covariance
-    matrices to predict the primary variable at target locations.
+    System:
+       [ Cpp  Cps ] [ lambda ]   [ c_0p ]
+       [ Cps' Css ] [  mu    ] = [ c_0s ]
+    Predictor:  Z1_hat(s0) = lambda' Z1 + mu' Z2.
 
-    :param coords: Observation coordinates (n, 2) — same for both variables.
-    :param primary: Primary variable values (n,).
-    :param secondary: Secondary (covariate) values (n,).
-    :param target: Prediction coordinates (m, 2).
-    :param sill_p: Sill of primary auto-covariance.
-    :param range_p: Range of primary auto-covariance.
-    :param sill_s: Sill of secondary auto-covariance.
-    :param range_s: Range of secondary auto-covariance.
-    :param cross_sill: Sill of cross-covariance.
-    :param cross_range: Range of cross-covariance.
-    :param nugget: Nugget variance.
-    :return: dict with ``predictions``, ``variances``.
-    :raises ValueError: If shapes are incompatible.
-
-    References
+    Parameters
     ----------
-    Schabenberger & Gotway (2005), Ch. 5.
+    x : array-like, shape (n,)   -- primary variable Z1.
+    y : array-like, shape (n,)   -- secondary variable Z2.
+    coords : array-like, shape (n, d) -- co-located sample coords.
+    target : array-like, shape (m, d) or (d,)
+    sill_p, range_p : float -- primary auto-covariance parameters.
+    sill_s, range_s : float -- secondary auto-covariance parameters.
+    cross_sill, cross_range : float -- cross-covariance parameters.
+    nugget : float
+
+    Returns
+    -------
+    RichResult with payload: estimate, se, n, method.
     """
+    x = np.asarray(x, dtype=float).ravel()
+    y = np.asarray(y, dtype=float).ravel()
     coords = np.asarray(coords, dtype=float)
-    primary = np.asarray(primary, dtype=float)
-    secondary = np.asarray(secondary, dtype=float)
+    if coords.ndim == 1:
+        coords = coords.reshape(-1, 1)
     target = np.asarray(target, dtype=float)
-    n = len(primary)
-    if coords.shape != (n, 2):
-        raise ValueError(f"coords must be ({n}, 2), got {coords.shape}.")
-    if len(secondary) != n:
-        raise ValueError("secondary must have same length as primary.")
     if target.ndim == 1:
         target = target.reshape(1, -1)
+    n = x.size
+    if y.size != n or coords.shape[0] != n:
+        raise ValueError("x, y, and coords must have matching n")
+    if target.shape[1] != coords.shape[1]:
+        raise ValueError("target/coords dim mismatch")
 
     D = cdist(coords, coords)
-    Cpp = sill_p * np.exp(-D / (range_p + 1e-12))
-    Css = sill_s * np.exp(-D / (range_s + 1e-12))
-    Cps = cross_sill * np.exp(-D / (cross_range + 1e-12))
+    Cpp = _cov_exp(D, nugget, sill_p - nugget, range_p)
+    Css = _cov_exp(D, nugget, sill_s - nugget, range_s)
+    Cps = cross_sill * np.exp(-D / cross_range)
+    C = np.block([[Cpp, Cps], [Cps.T, Css]])
+    z = np.concatenate([x, y])
+    var0 = sill_p  # C_11(0)
 
-    C = np.block([[Cpp + nugget * np.eye(n), Cps], [Cps.T, Css + nugget * np.eye(n)]])
-
-    z = np.concatenate([primary, secondary])
-    m = len(target)
-    preds = np.zeros(m)
-    variances = np.zeros(m)
-
-    for j in range(m):
-        d0 = cdist(coords, target[j:j + 1]).ravel()
-        c0p = sill_p * np.exp(-d0 / (range_p + 1e-12))
-        c0s = cross_sill * np.exp(-d0 / (cross_range + 1e-12))
+    ests = []; ses = []
+    for s0 in target:
+        d0 = cdist(s0.reshape(1, -1), coords).ravel()
+        c0p = _cov_exp(d0, nugget, sill_p - nugget, range_p)
+        c0s = cross_sill * np.exp(-d0 / cross_range)
         c0 = np.concatenate([c0p, c0s])
-
         try:
             w = np.linalg.solve(C, c0)
         except np.linalg.LinAlgError:
             w = np.linalg.lstsq(C, c0, rcond=None)[0]
-        preds[j] = float(w @ z)
-        variances[j] = max(float(sill_p + nugget - w @ c0), 0.0)
+        z_hat = float(w @ z)
+        var = float(var0 - w @ c0)
+        ests.append(z_hat)
+        ses.append(np.sqrt(max(var, 0.0)))
 
-    return {
-        "predictions": preds,
-        "variances": variances,
-        "n": n,
-        "n_target": m,
-    }
+    if target.shape[0] == 1:
+        ests_out, ses_out = ests[0], ses[0]
+    else:
+        ests_out, ses_out = ests, ses
+    return RichResult(payload={
+        "estimate": ests_out,
+        "se": ses_out,
+        "n": int(n),
+        "method": "Simple cokriging (linear coregionalization, exp. cov)",
+    })
 
 
-cokrg_fn = cokrg
+def cheatsheet():
+    return "cokrg: Cokriging for multivariate spatial prediction"
 
 
-def cheatsheet() -> str:
-    return "cokrg({}) -> Co-kriging multivariate spatial prediction."
+# CANONICAL TEST
+# x = [1,2,3,4,5], y = [2,4,6,8,10],  coords = [[0],[1],[2],[3],[4]],
+# target = [[2.5]];  expect estimate ~ 3.5

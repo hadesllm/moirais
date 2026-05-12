@@ -1,56 +1,73 @@
 # morie.fn — function file (hadesllm/morie)
-"""Test for number of spatial dimensions."""
+"""Dimensionality test for spatial voting (Armstrong Ch 7)."""
 import numpy as np
-from scipy import stats
 from ._richresult import RichResult
 
-__all__ = ["dimensionality_test"]
+__all__ = ["dimensionality_test", "dimrd"]
 
 
-def dimensionality_test(x, cdf=None):
-    """
-    Test for number of spatial dimensions
+def dimensionality_test(x, threshold: float = 1.0):
+    """Cattell scree-criterion dimensionality test on an agreement /
+    vote / configuration matrix.
 
-    Formula: Scree test on eigenvalues of agreement matrix
-
-    Parameters
-    ----------
-    x : array-like
-        Input data.
+    Build symmetric input S:
+      - if x is (n, n) symmetric, S = x;
+      - else S = corr(x) on (n, m) vote / score matrix.
+    Decompose S = U Λ Uᵀ, then count eigenvalues with λ > threshold
+    (Kaiser 1960 rule) as the number of latent dimensions.
 
     Returns
     -------
-    result : dict
-        Keys: estimate
-
-    References
-    ----------
-    Armstrong Ch 7
+    RichResult with keys: n_dims, eigenvalues, threshold, scree_gap
     """
-    x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    if x.ndim == 0:
-        return RichResult(payload={"statistic": float('nan'), "p_value": float('nan'), "n": 1, "method": "scalar-input placeholder"})
-    if n < 2:
-        return RichResult(payload={"statistic": np.nan, "p_value": np.nan, "n": n, "method": "Test for number of spatial dimensions"})
-    x_sorted = np.sort(x)
-    if cdf is None:
-        cdf_vals = stats.norm.cdf(x_sorted, loc=np.mean(x), scale=np.std(x, ddof=1))
+    M = np.asarray(x, dtype=float)
+    if M.ndim == 1:
+        M = M.reshape(-1, 1)
+    n, m = M.shape
+    if n == m and np.allclose(M, M.T, atol=1e-9):
+        S = (M + M.T) / 2
     else:
-        cdf_vals = np.array([cdf(xi) for xi in x_sorted])
-    ecdf = np.arange(1, n + 1) / n
-    ecdf_prev = np.arange(0, n) / n
-    d_plus = np.max(ecdf - cdf_vals)
-    d_minus = np.max(cdf_vals - ecdf_prev)
-    statistic = max(d_plus, d_minus)
-    if n <= 40:
-        p_value = 1.0 - stats.ksone.cdf(statistic, n)
-    else:
-        lam = (np.sqrt(n) + 0.12 + 0.11 / np.sqrt(n)) * statistic
-        p_value = 2.0 * np.sum([(-1) ** (k - 1) * np.exp(-2 * k ** 2 * lam ** 2) for k in range(1, 101)])
-        p_value = max(0.0, min(1.0, p_value))
-    return RichResult(payload={"statistic": float(statistic), "p_value": float(p_value), "n": n, "method": "Test for number of spatial dimensions"})
+        if m < 2:
+            return RichResult(payload={"n_dims": 0,
+                                       "eigenvalues": np.array([]),
+                                       "threshold": float(threshold),
+                                       "scree_gap": np.nan,
+                                       "method": "dimensionality_test"})
+        # Use correlation matrix of items (columns); handle constant cols
+        S = np.corrcoef(M, rowvar=False)
+        if np.any(np.isnan(S)):
+            S = np.nan_to_num(S, nan=0.0)
+            np.fill_diagonal(S, 1.0)
+    eigvals = np.linalg.eigvalsh((S + S.T) / 2)[::-1]
+    n_dims = int(np.sum(eigvals > threshold))
+    # Scree gap: largest drop between successive eigenvalues
+    gaps = -np.diff(eigvals)
+    scree_gap_idx = int(np.argmax(gaps)) + 1 if gaps.size else 0
+    return RichResult(
+        title="Dimensionality test (Kaiser scree)",
+        summary_lines=[("n dimensions (λ > %.2f)" % threshold, n_dims),
+                       ("Largest-gap k* (scree elbow)", scree_gap_idx),
+                       ("Top eigenvalues",
+                        list(np.round(eigvals[:min(5, eigvals.size)], 4)))],
+        interpretation=(
+            f"Kaiser rule suggests {n_dims} spatial dimension(s); scree "
+            f"elbow at k* = {scree_gap_idx}."),
+        payload={"n_dims": n_dims, "eigenvalues": eigvals,
+                 "threshold": float(threshold),
+                 "scree_gap": int(scree_gap_idx),
+                 "method": "dimensionality_test"},
+    )
+
+
+dimrd = dimensionality_test
 
 
 def cheatsheet():
-    return "dimrd: Test for number of spatial dimensions"
+    return "dimrd: Kaiser/scree dimensionality test on eigenvalues."
+
+
+# CANONICAL TEST
+# >>> rng = np.random.default_rng(0)
+# >>> X = rng.normal(size=(50, 5))
+# >>> r = dimensionality_test(X)
+# >>> assert r["n_dims"] >= 1

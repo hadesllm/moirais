@@ -1,11 +1,14 @@
 # morie.fn — function file (hadesllm/morie)
-"""1D heat diffusion solver. 'Your focus determines your reality.' -- Qui-Gon Jinn"""
+"""1D heat diffusion solver + DDPM forward process. 'Your focus determines your reality.' -- Qui-Gon Jinn"""
 
 from __future__ import annotations
 
 import numpy as np
 
 from ._containers import DescriptiveResult
+from ._richresult import RichResult
+
+__all__ = ["heat_diffusion", "diffusion_forward"]
 
 
 def heat_diffusion(
@@ -70,8 +73,78 @@ def heat_diffusion(
     )
 
 
-short = heat_diffusion
+def diffusion_forward(x0, t: int, betas=None, num_steps: int = 1000,
+                      noise=None, seed: int = 0):
+    """DDPM forward (noising) process (Ho et al. 2020).
+
+    .. math::
+
+        x_t = \\sqrt{\\bar\\alpha_t}\\, x_0
+              + \\sqrt{1 - \\bar\\alpha_t}\\, \\varepsilon,
+              \\quad \\varepsilon \\sim \\mathcal{N}(0, I)
+
+    where :math:`\\bar\\alpha_t = \\prod_{s=1}^{t}(1 - \\beta_s)` and
+    :math:`\\beta_s` is a linear noise schedule from ``1e-4`` to
+    ``0.02`` over ``num_steps`` by default.
+
+    Parameters
+    ----------
+    x0 : array-like
+        Clean sample(s).
+    t : int
+        Diffusion timestep (1..num_steps).
+    betas : array-like, optional
+        Custom :math:`\\beta` schedule. Overrides ``num_steps``.
+    num_steps : int
+        Total diffusion steps (default 1000).
+    noise : array-like, optional
+        Pre-generated Gaussian noise; reproducible via ``seed``.
+    seed : int
+        RNG seed.
+
+    Returns
+    -------
+    result : RichResult
+        Keys: ``x_t`` / ``estimate``, ``noise``, ``alpha_bar``, ``beta``.
+
+    References
+    ----------
+    Ho, J., Jain, A., & Abbeel, P. (2020). Denoising diffusion
+    probabilistic models. *NeurIPS*.
+    """
+    x0 = np.asarray(x0, dtype=float)
+    if betas is None:
+        betas = np.linspace(1e-4, 0.02, int(num_steps))
+    betas = np.asarray(betas, dtype=float)
+    if not (1 <= t <= len(betas)):
+        raise ValueError(f"t must be in [1, {len(betas)}], got {t}.")
+    alphas = 1.0 - betas
+    alpha_bar = float(np.prod(alphas[:t]))
+    if noise is None:
+        rng = np.random.default_rng(seed)
+        noise = rng.standard_normal(x0.shape)
+    else:
+        noise = np.asarray(noise, dtype=float)
+    x_t = np.sqrt(alpha_bar) * x0 + np.sqrt(1.0 - alpha_bar) * noise
+    return RichResult(
+        title=f"Diffusion forward (DDPM, t={t})",
+        summary_lines=[("t", t), ("alpha_bar_t", alpha_bar),
+                       ("beta_t", float(betas[t - 1]))],
+        payload={
+            "x_t": x_t,
+            "estimate": x_t,
+            "noise": noise,
+            "alpha_bar": alpha_bar,
+            "beta": float(betas[t - 1]),
+            "method": "DDPM forward diffusion",
+        },
+    )
+
+
+# CANONICAL TEST
+# diffusion_forward(x0=[1,1], t=1, betas=[0.5], noise=[0,0]).x_t
+#   alpha_bar = 0.5, x_t = sqrt(0.5)*[1,1] = [0.7071, 0.7071]
 
 
 def cheatsheet() -> str:
-    return "heat_diffusion({}) -> 1D heat diffusion solver. 'Your focus determines your realit"
+    return "diffu: heat_diffusion(...) PDE / diffusion_forward(...) DDPM"

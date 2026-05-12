@@ -1,12 +1,20 @@
 # morie.fn — function file (hadesllm/morie)
-"""Ordered logit (proportional odds) model."""
+"""Ordered logit (proportional odds) model AND
+Jonckheere-Terpstra ordered-alternatives test (Gibbons Ch 10.6).
+
+Two unrelated callables share this module because of a name
+collision in the Gibbons spec; both are exported via ``__all__``.
+"""
 
 from __future__ import annotations
 
 import numpy as np
-from scipy import optimize, special
+from scipy import optimize, special, stats
 
 from ._containers import RegressionResult
+from ._richresult import RichResult
+
+__all__ = ["ordered_logit", "ordered_alternatives_test"]
 
 
 def ordered_logit(
@@ -115,5 +123,63 @@ def ordered_logit(
 ordlt = ordered_logit
 
 
+def ordered_alternatives_test(groups):
+    """Jonckheere-Terpstra test for ordered alternatives (Gibbons Ch 10.6).
+
+    Tests H0: F_1 = F_2 = ... = F_k against the *ordered* alternative
+    H1: F_1 <= F_2 <= ... <= F_k (with at least one strict inequality).
+    Groups must be supplied in the order specified by H1.
+
+    Statistic J = sum_{i<j} U_{ij} where U_{ij} = #{(x in G_i, y in G_j) : x < y}
+    + 0.5 * #{ties}.
+
+    Parameters
+    ----------
+    groups : sequence of array-like
+        Samples in monotone-hypothesised order.
+
+    Returns
+    -------
+    RichResult with payload:
+        statistic, p_value, z, n, k, method
+    """
+    arrs = [np.asarray(g, dtype=float).ravel() for g in groups]
+    k = len(arrs)
+    if k < 2 or any(a.size < 1 for a in arrs):
+        return RichResult(payload={
+            "statistic": np.nan, "p_value": np.nan, "z": np.nan,
+            "n": 0, "k": k,
+            "method": "Jonckheere-Terpstra ordered-alternatives test",
+        })
+    J = 0.0
+    for i in range(k - 1):
+        for j in range(i + 1, k):
+            xi = arrs[i][:, None]
+            yj = arrs[j][None, :]
+            J += float(np.sum(xi < yj) + 0.5 * np.sum(xi == yj))
+    ns = np.array([a.size for a in arrs], dtype=float)
+    N = float(ns.sum())
+    E_J = (N ** 2 - np.sum(ns ** 2)) / 4.0
+    Var_J = (N ** 2 * (2 * N + 3) - np.sum(ns ** 2 * (2 * ns + 3))) / 72.0
+    z = (J - E_J) / np.sqrt(Var_J) if Var_J > 0 else np.nan
+    p = 2.0 * (1.0 - stats.norm.cdf(abs(z))) if np.isfinite(z) else np.nan
+    return RichResult(payload={
+        "statistic": float(J),
+        "p_value": float(p),
+        "z": float(z),
+        "E_J": float(E_J),
+        "Var_J": float(Var_J),
+        "n": int(N),
+        "k": k,
+        "method": "Jonckheere-Terpstra ordered-alternatives test",
+    })
+
+
+# CANONICAL TEST (Jonckheere)
+# >>> ordered_alternatives_test([[1,2,3,4], [3,4,5,6], [5,6,7,8]])
+# Monotone increase across 3 groups -> J large, z positive, p small
+
+
 def cheatsheet() -> str:
-    return "ordered_logit({}) -> Ordered logit (proportional odds) model."
+    return ("ordered_logit({}) -> Ordered logit (proportional odds) model. "
+            "ordered_alternatives_test([groups]) -> Jonckheere-Terpstra test.")

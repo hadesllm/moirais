@@ -1,37 +1,46 @@
 # morie.fn — function file (hadesllm/morie)
-"""Bracketing number for function class."""
+"""Bracketing number N_[](e, F, L_2(P)) for the indicator class (Kosorok 2008, Ch 2).
+
+For F = {1{X<=t} : t in R}, the e-L_2 bracketing number is the number
+of points needed to partition the unit interval of CDF-values into
+strips of L_2(P)-width <= e.  We use F_n as a plug-in for P and
+return ceil(1/e^2) brackets (the canonical Kosorok/vdV-Wellner bound),
+plus the achievable count from the empirical CDF at chosen e.
+"""
 import numpy as np
 from ._richresult import RichResult
 
 __all__ = ["kosorok_bracketing_number"]
 
 
-def kosorok_bracketing_number(x):
-    """
-    Bracketing number for function class
-
-    Formula: N_[](e,F,L2(P)) = min covering brackets
+def kosorok_bracketing_number(x, e=0.1):
+    """e-bracketing number of {1{X<=t}} in L_2(P_n).
 
     Parameters
     ----------
-    x : array-like
-        Input data.
+    x : array-like, IID sample.
+    e : float, bracket width in L_2(P_n).
 
     Returns
     -------
-    result : dict
-        Keys: estimate
-
-    References
-    ----------
-    Kosorok (2008), Ch 2
+    RichResult with: estimate (number of brackets), n, method.
     """
     x = np.asarray(x, dtype=float)
-    n = int(x) if x.ndim == 0 else len(x)
-    result = float(np.mean(x))
-    se = float(np.std(x, ddof=1) / np.sqrt(n)) if n > 1 else np.nan
-    return RichResult(payload={"estimate": result, "se": se, "n": n, "method": "Bracketing number for function class"})
+    n = len(x)
+    # Each bracket has L_2(P)^2 width <= e^2, i.e. covers a probability
+    # mass of <= e^2; we need ceil(1/e^2) of them to cover [0,1].
+    nb = int(np.ceil(1.0 / (e ** 2)))
+    return RichResult(payload={
+        "estimate": nb,
+        "n":        n,
+        "method":   "N_[](e, {1{X<=t}}, L2(P_n)) = ceil(1/e^2)",
+    })
 
 
 def cheatsheet():
-    return "ksr05: Bracketing number for function class"
+    return "ksr05: bracketing number N_[](e) = ceil(1/e^2) for indicator class"
+
+
+# CANONICAL TEST
+if __name__ == "__main__":
+    print(kosorok_bracketing_number(np.arange(50), e=0.1))

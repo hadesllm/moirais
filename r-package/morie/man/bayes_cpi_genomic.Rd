@@ -4,7 +4,15 @@
 \alias{bayes_cpi_genomic}
 \title{BayesC-pi spike-and-slab variable selection (short Gibbs)}
 \usage{
-bayes_cpi_genomic(x, y, n_iter = 300, burn = 100, pi_init = 0.1, seed = 0)
+bayes_cpi_genomic(
+  x,
+  y,
+  n_iter = 300,
+  burn = 100,
+  pi_init = 0.1,
+  seed = 0,
+  deterministic_seed = NULL
+)
 }
 \arguments{
 \item{x}{(n x p) marker matrix.}
@@ -18,6 +26,11 @@ bayes_cpi_genomic(x, y, n_iter = 300, burn = 100, pi_init = 0.1, seed = 0)
 \item{pi_init}{Initial inclusion probability.}
 
 \item{seed}{Seed.}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("bglup", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 list(estimate, beta, beta_pip, pi, sigma_b2, sigma2, n_iter, n, p, method).

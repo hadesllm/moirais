@@ -5,9 +5,15 @@
 \alias{bayesian_ideal_points}
 \title{Bayesian ideal-point estimation (Armstrong Ch 5)}
 \usage{
-bysid(x, n_iter = 400L, burn = 100L, seed = 0L)
+bysid(x, n_iter = 400L, burn = 100L, seed = 0L, deterministic_seed = NULL)
 
-bayesian_ideal_points(x, n_iter = 400L, burn = 100L, seed = 0L)
+bayesian_ideal_points(
+  x,
+  n_iter = 400L,
+  burn = 100L,
+  seed = 0L,
+  deterministic_seed = NULL
+)
 }
 \arguments{
 \item{x}{Binary vote matrix (n by m).}
@@ -17,6 +23,11 @@ bayesian_ideal_points(x, n_iter = 400L, burn = 100L, seed = 0L)
 \item{burn}{Burn-in sweeps (default 100).}
 
 \item{seed}{RNG seed.}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("bysid", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 Named list with \code{x_mean}, \code{x_sd}, \code{x_ci}, \code{alpha}, \code{beta},

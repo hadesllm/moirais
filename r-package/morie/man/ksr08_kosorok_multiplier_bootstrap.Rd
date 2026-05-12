@@ -5,9 +5,14 @@
 \alias{kosorok_multiplier_bootstrap}
 \title{Gaussian multiplier bootstrap for Z-estimators}
 \usage{
-ksr08_kosorok_multiplier_bootstrap(x, B = 1000, seed = 0)
+ksr08_kosorok_multiplier_bootstrap(
+  x,
+  B = 1000,
+  seed = 0,
+  deterministic_seed = NULL
+)
 
-kosorok_multiplier_bootstrap(x, B = 1000, seed = 0)
+kosorok_multiplier_bootstrap(x, B = 1000, seed = 0, deterministic_seed = NULL)
 }
 \arguments{
 \item{x}{Numeric vector.}
@@ -15,6 +20,11 @@ kosorok_multiplier_bootstrap(x, B = 1000, seed = 0)
 \item{B}{Number of multiplier replications.}
 
 \item{seed}{Integer RNG seed.}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("ksr08", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 Named list with estimate, se, n, method.

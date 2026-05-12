@@ -5,9 +5,21 @@
 \alias{dropout_forward}
 \title{Dropout forward pass (inverted)}
 \usage{
-drpfw_dropout_forward(x, p = 0.5, seed = 0L, training = TRUE)
+drpfw_dropout_forward(
+  x,
+  p = 0.5,
+  seed = 0L,
+  training = TRUE,
+  deterministic_seed = NULL
+)
 
-dropout_forward(x, p = 0.5, seed = 0L, training = TRUE)
+dropout_forward(
+  x,
+  p = 0.5,
+  seed = 0L,
+  training = TRUE,
+  deterministic_seed = NULL
+)
 }
 \arguments{
 \item{x}{Numeric array.}
@@ -17,6 +29,11 @@ dropout_forward(x, p = 0.5, seed = 0L, training = TRUE)
 \item{seed}{RNG seed.}
 
 \item{training}{If FALSE, returns input unchanged.}
+
+\item{deterministic_seed}{Optional integer; if non-NULL, a SHA-keyed
+seed from \code{\link{morie_det_rng}("drpfw", deterministic_seed)} is
+installed before sampling so Py<->R streams agree.  Overrides
+\code{seed} when set.}
 }
 \value{
 Named list \code{(y, estimate, mask, p, kept_fraction, method)}.

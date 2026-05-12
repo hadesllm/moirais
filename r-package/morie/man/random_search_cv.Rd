@@ -11,7 +11,8 @@ random_search_cv(
   n_iter = 20L,
   cv = 5L,
   task = "auto",
-  seed = 0L
+  seed = 0L,
+  deterministic_seed = NULL
 )
 }
 \arguments{
@@ -28,6 +29,11 @@ random_search_cv(
 \item{task}{"auto" / "classification" / "regression".}
 
 \item{seed}{RNG seed.}
+
+\item{deterministic_seed}{Integer or NULL.  If supplied, the RNG state
+is derived from the SHA-keyed \code{\link[=morie_det_rng]{morie_det_rng()}} so Py<->R streams
+agree on the canonical fixture.  When \code{NULL} (default), behaviour
+is unchanged: \code{seed} drives \code{set.seed()} directly.}
 }
 \value{
 Named list: estimate, best_params, best_score, sampled_params,

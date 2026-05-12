@@ -4,7 +4,15 @@
 \alias{bayesian_lasso_full}
 \title{Bayesian LASSO (Park & Casella 2008 short Gibbs)}
 \usage{
-bayesian_lasso_full(x, y, n_iter = 200, burn = 50, lam = NULL, seed = 0)
+bayesian_lasso_full(
+  x,
+  y,
+  n_iter = 200,
+  burn = 50,
+  lam = NULL,
+  seed = 0,
+  deterministic_seed = NULL
+)
 }
 \arguments{
 \item{x}{(n × p) marker matrix.}
@@ -18,6 +26,11 @@ bayesian_lasso_full(x, y, n_iter = 200, burn = 50, lam = NULL, seed = 0)
 \item{lam}{Optional fixed lambda (else empirical-Bayes updated).}
 
 \item{seed}{Random seed.}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("blasf", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 list(estimate, beta, intercept, se, beta_se, lam, sigma2, n_iter, n, p, method).

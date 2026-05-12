@@ -12,7 +12,8 @@ deep_learning_genomic(
   n_epochs = 200,
   lr = 0.01,
   l2 = 0.001,
-  seed = 0
+  seed = 0,
+  deterministic_seed = NULL
 )
 }
 \arguments{
@@ -31,6 +32,11 @@ deep_learning_genomic(
 \item{l2}{L2 weight decay.}
 
 \item{seed}{Seed.}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("dlgen", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 list(estimate, y_hat, beta, W1, b1, w2, b2, se, n, method).

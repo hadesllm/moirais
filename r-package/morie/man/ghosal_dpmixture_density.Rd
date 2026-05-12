@@ -11,7 +11,8 @@ ghosal_dpmixture_density(
   grid = NULL,
   n_iter = 120,
   burn = 40,
-  seed = 0
+  seed = 0,
+  deterministic_seed = NULL
 )
 }
 \arguments{
@@ -22,6 +23,11 @@ ghosal_dpmixture_density(
 \item{grid}{evaluation grid}
 
 \item{n_iter, burn, seed}{Gibbs settings}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("ghdpm", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 named list with \code{estimate}, \code{grid}, \code{density}, \code{k_post}, \code{n}

@@ -5,9 +5,14 @@
 \alias{kosorok_bootstrap_empirical}
 \title{Bootstrap consistency for the empirical process}
 \usage{
-ksr07_kosorok_bootstrap_empirical(x, B = 1000, seed = 0)
+ksr07_kosorok_bootstrap_empirical(
+  x,
+  B = 1000,
+  seed = 0,
+  deterministic_seed = NULL
+)
 
-kosorok_bootstrap_empirical(x, B = 1000, seed = 0)
+kosorok_bootstrap_empirical(x, B = 1000, seed = 0, deterministic_seed = NULL)
 }
 \arguments{
 \item{x}{Numeric vector.}
@@ -15,6 +20,11 @@ kosorok_bootstrap_empirical(x, B = 1000, seed = 0)
 \item{B}{Number of bootstrap replications (default 1000).}
 
 \item{seed}{Integer RNG seed.}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("ksr07", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 Named list with estimate, se, n, method.

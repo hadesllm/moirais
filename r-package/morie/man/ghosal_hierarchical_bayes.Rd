@@ -4,7 +4,14 @@
 \alias{ghosal_hierarchical_bayes}
 \title{Escobar-West augmentation for alpha given K_n with a Gamma(a, b) hyperprior.}
 \usage{
-ghosal_hierarchical_bayes(x, a_prior = 1, b_prior = 1, M = 400, seed = 0)
+ghosal_hierarchical_bayes(
+  x,
+  a_prior = 1,
+  b_prior = 1,
+  M = 400,
+  seed = 0,
+  deterministic_seed = NULL
+)
 }
 \arguments{
 \item{x}{Numeric data vector.}
@@ -16,6 +23,11 @@ ghosal_hierarchical_bayes(x, a_prior = 1, b_prior = 1, M = 400, seed = 0)
 \item{M}{Integer number of MCMC iterations (default 400).}
 
 \item{seed}{Integer RNG seed (default 0).}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("ghhbp", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 Named list with estimate (alpha post mean), alpha_se,

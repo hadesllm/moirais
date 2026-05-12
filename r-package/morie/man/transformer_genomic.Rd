@@ -4,7 +4,15 @@
 \alias{transformer_genomic}
 \title{Transformer (1-head self-attention) genomic predictor (base R)}
 \usage{
-transformer_genomic(x, y, markers, d_model = 8, lam = 1, seed = 0)
+transformer_genomic(
+  x,
+  y,
+  markers,
+  d_model = 8,
+  lam = 1,
+  seed = 0,
+  deterministic_seed = NULL
+)
 }
 \arguments{
 \item{x}{Optional fixed-effect features.}
@@ -18,6 +26,11 @@ transformer_genomic(x, y, markers, d_model = 8, lam = 1, seed = 0)
 \item{lam}{Ridge regulariser for the linear head.}
 
 \item{seed}{Seed.}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("trfge", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 list(estimate, y_hat, beta, attention, context, se, n, method).

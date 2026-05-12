@@ -10,7 +10,8 @@ tsne_reduction(
   perplexity = 30,
   learning_rate = "auto",
   n_iter = 1000L,
-  seed = 0L
+  seed = 0L,
+  deterministic_seed = NULL
 )
 }
 \arguments{
@@ -25,6 +26,11 @@ tsne_reduction(
 \item{n_iter}{Max iterations.}
 
 \item{seed}{RNG seed.}
+
+\item{deterministic_seed}{Integer or NULL.  If supplied, the RNG state
+is derived from the SHA-keyed \code{\link[=morie_det_rng]{morie_det_rng()}} so Py<->R streams
+agree on the canonical fixture.  When \code{NULL} (default), behaviour
+is unchanged: \code{seed} drives \code{set.seed()} directly.}
 }
 \value{
 Named list: estimate (shape), embedding, kl_divergence,

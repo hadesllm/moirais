@@ -12,7 +12,8 @@ mhatf_multi_head_attention_full(
   W_k = NULL,
   W_v = NULL,
   W_o = NULL,
-  seed = 0L
+  seed = 0L,
+  deterministic_seed = NULL
 )
 
 multi_head_attention_full(
@@ -22,7 +23,8 @@ multi_head_attention_full(
   W_k = NULL,
   W_v = NULL,
   W_o = NULL,
-  seed = 0L
+  seed = 0L,
+  deterministic_seed = NULL
 )
 }
 \arguments{
@@ -35,6 +37,11 @@ multi_head_attention_full(
 \item{W_o}{Output projection (default identity).}
 
 \item{seed}{RNG seed for default weights.}
+
+\item{deterministic_seed}{Optional integer; if non-NULL, a SHA-keyed
+seed from \code{\link{morie_det_rng}("mhatf", deterministic_seed)} is
+installed before sampling so Py<->R streams agree.  Overrides
+\code{seed} when set.}
 }
 \value{
 Named list \code{(output, estimate, heads, num_heads, d_k,

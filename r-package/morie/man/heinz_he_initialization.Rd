@@ -5,9 +5,21 @@
 \alias{he_initialization}
 \title{He / Kaiming weight initialization}
 \usage{
-heinz_he_initialization(fan_in, fan_out = NULL, seed = 42L, mode = "normal")
+heinz_he_initialization(
+  fan_in,
+  fan_out = NULL,
+  seed = 42L,
+  mode = "normal",
+  deterministic_seed = NULL
+)
 
-he_initialization(fan_in, fan_out = NULL, seed = 42L, mode = "normal")
+he_initialization(
+  fan_in,
+  fan_out = NULL,
+  seed = 42L,
+  mode = "normal",
+  deterministic_seed = NULL
+)
 }
 \arguments{
 \item{fan_in}{Number of input units.}
@@ -18,6 +30,11 @@ vector).}
 \item{seed}{RNG seed.}
 
 \item{mode}{One of \code{"normal"} (default) or \code{"uniform"}.}
+
+\item{deterministic_seed}{Optional integer; if non-NULL, a SHA-keyed
+seed from \code{\link{morie_det_rng}("heinz", deterministic_seed)} is
+installed before sampling so Py<->R streams agree.  Overrides
+\code{seed} when set.}
 }
 \value{
 Named list \code{(W, estimate, mean, std, shape, method)}.

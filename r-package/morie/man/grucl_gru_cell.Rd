@@ -12,7 +12,8 @@ grucl_gru_cell(
   U = NULL,
   b = NULL,
   hidden_size = NULL,
-  seed = 0L
+  seed = 0L,
+  deterministic_seed = NULL
 )
 
 gru_cell(
@@ -22,7 +23,8 @@ gru_cell(
   U = NULL,
   b = NULL,
   hidden_size = NULL,
-  seed = 0L
+  seed = 0L,
+  deterministic_seed = NULL
 )
 }
 \arguments{
@@ -35,6 +37,11 @@ gru_cell(
 \item{hidden_size}{Hidden size.}
 
 \item{seed}{RNG seed.}
+
+\item{deterministic_seed}{Optional integer; if non-NULL, a SHA-keyed
+seed from \code{\link{morie_det_rng}("grucl", deterministic_seed)} is
+installed before sampling so Py<->R streams agree.  Overrides
+\code{seed} when set.}
 }
 \value{
 Named list \code{(h, estimate, z, r, n, method)}.

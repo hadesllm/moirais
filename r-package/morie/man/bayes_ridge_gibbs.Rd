@@ -4,7 +4,16 @@
 \alias{bayes_ridge_gibbs}
 \title{BayesA via short Gibbs sampler (Meuwissen-Hayes-Goddard 2001)}
 \usage{
-bayes_ridge_gibbs(x, y, n_iter = 200, burn = 50, df0 = 4, S0 = NULL, seed = 0)
+bayes_ridge_gibbs(
+  x,
+  y,
+  n_iter = 200,
+  burn = 50,
+  df0 = 4,
+  S0 = NULL,
+  seed = 0,
+  deterministic_seed = NULL
+)
 }
 \arguments{
 \item{x}{(n × p) marker matrix.}
@@ -20,6 +29,11 @@ bayes_ridge_gibbs(x, y, n_iter = 200, burn = 50, df0 = 4, S0 = NULL, seed = 0)
 \item{S0}{Prior scale (default anchors to var(y)/p).}
 
 \item{seed}{Seed.}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("brdgf", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 list(estimate, beta, beta_se, sigma_j2, sigma2, n_iter, n, p, method).

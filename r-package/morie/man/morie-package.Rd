@@ -22,7 +22,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Vansh Singh Ruhela \email{hadesllm@proton.me} (\href{https://orcid.org/0009-0004-1750-3592}{ORCID})
+\strong{Maintainer}: Vansh Singh Ruhela \email{hadesllm@proton.me} (\href{https://orcid.org/0009-0004-1750-3592}{ORCID}) (IPA pronunciation: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/)
 
 }
 \keyword{internal}

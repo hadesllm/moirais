@@ -10,7 +10,8 @@ ghosal_stick_breaking_trunc(
   K = 50,
   seed = 0,
   base_mean = NULL,
-  base_sd = NULL
+  base_sd = NULL,
+  deterministic_seed = NULL
 )
 }
 \arguments{
@@ -25,6 +26,11 @@ ghosal_stick_breaking_trunc(
 \item{base_mean}{Optional base-measure mean.}
 
 \item{base_sd}{Optional base-measure sd.}
+
+\item{deterministic_seed}{Optional integer; if supplied, RNG state is
+derived via \code{\link[=morie_det_rng]{morie_det_rng()}} keyed on ("ghstk", deterministic_seed)
+so Py<->R streams agree on the canonical fixture.  When \code{NULL}
+(default) behaviour is unchanged.}
 }
 \value{
 Named list with estimate, weights, atoms, effective_K,

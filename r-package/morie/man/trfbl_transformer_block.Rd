@@ -5,9 +5,21 @@
 \alias{transformer_block}
 \title{Transformer encoder block (post-LN)}
 \usage{
-trfbl_transformer_block(x, num_heads = 2L, d_ff = NULL, seed = 0L)
+trfbl_transformer_block(
+  x,
+  num_heads = 2L,
+  d_ff = NULL,
+  seed = 0L,
+  deterministic_seed = NULL
+)
 
-transformer_block(x, num_heads = 2L, d_ff = NULL, seed = 0L)
+transformer_block(
+  x,
+  num_heads = 2L,
+  d_ff = NULL,
+  seed = 0L,
+  deterministic_seed = NULL
+)
 }
 \arguments{
 \item{x}{Numeric matrix \code{(seq_len, d_model)}.}
@@ -17,6 +29,11 @@ transformer_block(x, num_heads = 2L, d_ff = NULL, seed = 0L)
 \item{d_ff}{Width of feed-forward layer (default \code{4 * d_model}).}
 
 \item{seed}{RNG seed.}
+
+\item{deterministic_seed}{Optional integer; if non-NULL, a SHA-keyed
+seed from \code{\link{morie_det_rng}("trfbl", deterministic_seed)} is
+installed before sampling so Py<->R streams agree.  Overrides
+\code{seed} when set.}
 }
 \value{
 Named list \code{(output, estimate, h1, num_heads, d_ff, method)}.

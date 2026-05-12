@@ -39,3 +39,8 @@ vrgm <- function(x, coords, n_bins = 10, max_dist = NULL) {
 
 # CANONICAL TEST
 # vrgm(c(1,2,3,4,5), matrix(0:4, ncol=1), n_bins=4, max_dist=4)
+
+#' @rdname vrgm
+#' @keywords internal
+#' @export
+variogram_estimation <- vrgm

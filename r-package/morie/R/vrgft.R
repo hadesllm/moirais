@@ -61,3 +61,8 @@ vrgft <- function(x, coords, model = "exponential",
 
 # CANONICAL TEST
 # vrgft(c(1,2,3,4,5), matrix(0:4, ncol=1), "exponential", 4, 4)
+
+#' @rdname vrgft
+#' @keywords internal
+#' @export
+variogram_fitting <- vrgft

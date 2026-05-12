@@ -79,6 +79,7 @@ vtpwr <- function(x, quota = NULL) {
        method = "voting_power_index_exact")
 }
 
+#' @keywords internal
 #' @rdname vtpwr
 #' @export
 voting_power_index <- vtpwr

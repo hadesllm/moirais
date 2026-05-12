@@ -34,3 +34,8 @@ rgapn <- function(x, m = 2L, r = NULL) {
   pm <- phi(m); pm1 <- phi(m + 1L)
   list(ApEn = pm - pm1, phi_m = pm, phi_m1 = pm1, m = m, r = r, n = N)
 }
+
+#' @rdname rgapn
+#' @keywords internal
+#' @export
+rangayyan_approximate_entropy <- rgapn

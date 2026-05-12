@@ -76,3 +76,8 @@ btsrp <- function(x, statistic = NULL, B = 2000L, alpha = 0.05,
 # r <- btsrp(x, B = 500, seed = 0)
 # stopifnot(abs(r$estimate - mean(x)) < 1e-9)
 # stopifnot(r$ci_lower < r$estimate, r$estimate < r$ci_upper)
+
+#' @rdname btsrp
+#' @keywords internal
+#' @export
+bootstrap_ci <- btsrp

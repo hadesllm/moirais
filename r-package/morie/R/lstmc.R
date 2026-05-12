@@ -45,3 +45,8 @@ lstmc_lstm_cell <- function(x, h_prev = NULL, c_prev = NULL,
        i = i, f = f, g = g, o = o,
        method = "LSTM cell forward")
 }
+
+#' @rdname lstmc_lstm_cell
+#' @keywords internal
+#' @export
+lstm_cell <- lstmc_lstm_cell

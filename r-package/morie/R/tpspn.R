@@ -40,3 +40,8 @@ tpspn <- function(x, y, lam = 0) {
 # set.seed(0); xx <- matrix(runif(80), ncol = 2); yy <- xx[,1] + xx[,2]
 # r <- tpspn(xx, yy, lam = 1e-8)
 # stopifnot(r$r2 > 0.99)
+
+#' @rdname tpspn
+#' @keywords internal
+#' @export
+thin_plate_spline <- tpspn

@@ -36,6 +36,7 @@ brdgr <- function(x, y = NULL) {
        method = "bridge_observations")
 }
 
+#' @keywords internal
 #' @rdname brdgr
 #' @export
 bridge_observations <- brdgr

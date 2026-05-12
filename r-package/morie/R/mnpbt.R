@@ -33,6 +33,7 @@ mnpbt <- function(x, n_draws = 2000L, seed = 0L) {
        n_obs = n, n_alt = J, method = "multinomial_probit")
 }
 
+#' @keywords internal
 #' @rdname mnpbt
 #' @export
 multinomial_probit_spatial <- mnpbt

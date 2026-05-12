@@ -40,3 +40,8 @@ heinz_he_initialization <- function(fan_in, fan_out = NULL, seed = 42L,
        shape = shape,
        method = sprintf("He initialization (%s)", mode))
 }
+
+#' @rdname heinz_he_initialization
+#' @keywords internal
+#' @export
+he_initialization <- heinz_he_initialization

@@ -74,6 +74,7 @@ bysid <- function(x, n_iter = 400L, burn = 100L, seed = 0L) {
        n_iter = n_iter, method = "bayesian_ideal_points")
 }
 
+#' @keywords internal
 #' @rdname bysid
 #' @export
 bayesian_ideal_points <- bysid

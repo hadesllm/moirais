@@ -48,3 +48,8 @@ extvm <- function(x) {
 # set.seed(0); x <- evd::rgumbel(500, loc = 10, scale = 2)  # or evd::rgev
 # r <- extvm(x)
 # stopifnot(abs(r$xi) < 0.2)  # Gumbel = GEV(xi=0)
+
+#' @rdname extvm
+#' @keywords internal
+#' @export
+extreme_value_gev <- extvm

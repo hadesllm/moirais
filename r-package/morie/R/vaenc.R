@@ -43,3 +43,8 @@ vaenc_vae_elbo <- function(x, x_recon, mu, log_var, reduction = "mean") {
        recon_loss = recon_loss, kl_divergence = kl_div,
        method = "VAE ELBO")
 }
+
+#' @rdname vaenc_vae_elbo
+#' @keywords internal
+#' @export
+vae_elbo <- vaenc_vae_elbo

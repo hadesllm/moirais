@@ -28,3 +28,8 @@ ksr14_kosorok_profile_likelihood <- function(x, y) {
 # CANONICAL TEST
 # set.seed(0); xs <- rnorm(200); ys <- 1.5*xs + rnorm(200)
 # ksr14_kosorok_profile_likelihood(xs, ys)
+
+#' @rdname ksr14_kosorok_profile_likelihood
+#' @keywords internal
+#' @export
+kosorok_profile_likelihood <- ksr14_kosorok_profile_likelihood

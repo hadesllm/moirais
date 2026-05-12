@@ -42,3 +42,8 @@ ksr10_kosorok_m_estimator <- function(x, y = NULL, k = 1.345,
 
 # CANONICAL TEST
 # set.seed(0); ksr10_kosorok_m_estimator(rnorm(200))
+
+#' @rdname ksr10_kosorok_m_estimator
+#' @keywords internal
+#' @export
+kosorok_m_estimator <- ksr10_kosorok_m_estimator

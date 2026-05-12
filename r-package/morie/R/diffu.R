@@ -76,3 +76,8 @@ diffu_diffusion_forward <- function(x0, t, betas = NULL, num_steps = 1000L,
        alpha_bar = alpha_bar, beta = betas[t],
        method = "DDPM forward diffusion")
 }
+
+#' @rdname diffu_heat_diffusion
+#' @keywords internal
+#' @export
+diffusion_forward <- diffu_heat_diffusion

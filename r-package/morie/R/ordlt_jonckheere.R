@@ -3,12 +3,12 @@
 #' Jonckheere-Terpstra ordered-alternatives test (Gibbons Ch 10.6)
 #'
 #' Tests H0: F_1 = ... = F_k against the ordered alternative
-#' H1: F_1 <= F_2 <= ... <= F_k.  J = sum_{i<j} U_{ij} (Mann-Whitney
+#' H1: F_1 <= F_2 <= ... <= F_k.  J = sum over i<j of U_ij (Mann-Whitney
 #' counts with 1/2 weight for ties).
 #'
 #' Normal approximation:
-#'   E[J] = (N^2 - sum n_i^2) / 4
-#'   Var[J] = (N^2 (2N + 3) - sum n_i^2 (2 n_i + 3)) / 72
+#'   E_J = (N^2 - sum n_i^2) / 4
+#'   Var_J = (N^2 (2N + 3) - sum n_i^2 (2 n_i + 3)) / 72
 #'
 #' @param groups List of numeric vectors in monotone hypothesised order.
 #' @return Named list: statistic, p_value, z, E_J, Var_J, n, k, method.

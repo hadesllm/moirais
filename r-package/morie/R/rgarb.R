@@ -38,3 +38,8 @@ rgarb <- function(x, order = 10L) {
   }
   list(ar_coeffs = a[-1], variance = var_, order = p, reflection = k)
 }
+
+#' @rdname rgarb
+#' @keywords internal
+#' @export
+rangayyan_ar_burg <- rgarb

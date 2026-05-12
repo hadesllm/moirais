@@ -6,7 +6,7 @@
 #' majority voting. Returns the index of the Condorcet winner, or -1
 #' if none exists.
 #'
-#' @param preference_matrix n by n matrix where M[i, j] = number of
+#' @param preference_matrix n by n matrix where entry (i, j) = number of
 #'   voters preferring i to j.
 #' @return Named list with `winner` (1-based, or -1), `n_candidates`,
 #'   `has_winner`, `method`.
@@ -25,6 +25,7 @@ cndrc <- function(preference_matrix) {
        has_winner = winner > 0L, method = "condorcet_winner")
 }
 
+#' @keywords internal
 #' @rdname cndrc
 #' @export
 condorcet_winner <- cndrc

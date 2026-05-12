@@ -53,3 +53,8 @@ stacv <- function(x, coords, times,
 }
 
 # CANONICAL TEST  (3x3 spatiotemporal grid of x = i+t)
+
+#' @rdname stacv
+#' @keywords internal
+#' @export
+spatiotemporal_autocovariance <- stacv

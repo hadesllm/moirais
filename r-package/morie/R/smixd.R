@@ -57,3 +57,8 @@ smixd <- function(x, y, coords) {
 
 # CANONICAL TEST
 # smixd(cbind(1, 0:4), 1 + 2*(0:4), matrix(0:4, ncol=1))$estimate # ~ c(1,2)
+
+#' @rdname smixd
+#' @keywords internal
+#' @export
+spatial_mixed_model <- smixd

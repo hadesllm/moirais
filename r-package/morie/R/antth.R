@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #' Antithetic variates (Hammersley & Morton 1956)
 #'
-#' Crude vs antithetic Monte-Carlo estimator of E_U[f(U)]; reports the
+#' Crude vs antithetic Monte-Carlo estimator of E_U of f(U); reports the
 #' variance-reduction ratio var_AV / var_crude.
 #'
 #' @param x optional U(0,1) sample; if NULL, draw N points.
@@ -40,3 +40,8 @@ antth <- function(x = NULL, f = NULL, N = 1000L, seed = 42L) {
 # r <- antth(N = 2000, seed = 0)
 # stopifnot(abs(r$estimate - 0.5) < 0.05)
 # stopifnot(r$se < 1e-9)   # antithetic var for monotone f(u)=u is 0
+
+#' @rdname antth
+#' @keywords internal
+#' @export
+antithetic_variates <- antth

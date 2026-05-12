@@ -539,3 +539,77 @@ formulas is queued for v0.3.0 in batches of 50 callables at a time.
 - `papers/PAPERS_v0.2.0_WORK_SUMMARY.txt` (the v0.1.x → v0.2.0 ledger)
 - Each formula-index JSON under
   `/Volumes/VSR/rootcoderfiles/data/datasets/userguides/other/`
+
+## v0.4.0-alpha deployment plan
+
+These items are queued for the v0.4.0-alpha release pass (after the
+v0.3.0 release lands on CRAN + PyPI + r-universe):
+
+1. **arXiv preprint deposit for all 5 papers** — bundle TeX source +
+   compiled PDF + abstract for each paper; submit to stat.ME (mrm,
+   empirical, hawkes), cs.MS (morie-r-paper, morie-py-paper).
+   First-time submitter endorsement may be needed per category.
+   After acceptance, add `eprint = "26XX.XXXXX",
+   archivePrefix = "arXiv"` fields to each paper's `Ruhela2026*`
+   bib self-cites alongside the existing Zenodo `doi = "..."`
+   entries.  Bump to v0.4.0-alpha after eprints land so the bib
+   entries reflect the new ID.
+
+2. **Per-component licensing audit on every dependency** — the
+   v0.3.0 license split (Python `MIT OR Apache-2.0`; R `GPL-2.0-only`)
+   needs a one-pass verification that no Python dependency is
+   GPL-3-only (which would force Python under GPL).  Update
+   `LICENSING_ANALYSIS.md` (currently historical) into a forward-
+   looking compliance document for the dual-license era.
+
+3. **Linux DEB + RPM packaging pipeline** — beyond the v0.3.0
+   `install.sh`, add a GitHub-Actions workflow that builds and
+   publishes DEB (Debian/Ubuntu) and RPM (Fedora/RHEL) packages on
+   tag.  Sign with a project GPG key; host on Cloudsmith or
+   self-host.
+
+4. **Deterministic-mode SHA-keyed seed stream** — cross-suite fix
+   for the stochastic-callable Py↔R bit-portability gap (Kosorok
+   bootstrap, Deep-learning dropout/LSTM, Armstrong Bayesian IRT,
+   Montesinos Bayesian/DL, Ghosal MCMC).
+
+5. **Locate or write the true missing-data spec** — replaces the
+   v0.2.1 `missing_stats_formula_index.json` (misnamed; actually
+   QMC/copulas/EVT).
+
+## v0.4.0-alpha scope (locked by Vee 2026-05-12)
+
+Five concrete deliverables for the alpha milestone:
+
+1. **arXiv preprints for all 5 papers** (mrm, morie-r, morie-py, hawkes,
+   morie-empirical).  Bundle TeX source + compiled PDF, submit to
+   stat.ME / cs.MS / cs.LG categories.  First-time submitter
+   endorsement may apply.  After acceptance: bump each `Ruhela2026*`
+   bib self-cite to v0.4.0-alpha, add `eprint = "26XX.XXXXX",
+   archivePrefix = "arXiv"` fields alongside Zenodo DOI.
+
+2. **DEB/RPM packaging** hosted via **GitHub Pages** as a static
+   apt/dnf repository.  CI builds .deb + .rpm artifacts on `v0.4.0*`
+   tags, publishes to `hadesllm.github.io/morie-repo/`.  Users add
+   one apt-repository line + trust the project GPG key.
+
+3. **Deterministic-mode SHA-keyed seed stream** for stochastic
+   callables across all 14 textbook suites (Kosorok bootstrap, Deep-
+   learning dropout/LSTM, Armstrong Bayesian IRT, Montesinos
+   Bayesian/DL, Ghosal MCMC, ML-foundations RF/GBM/xgbst/tsnrd/rndsr).
+   Closes the Py↔R bit-portability gap for verification builds.
+
+4. **`morie.entheo` module — Timmermann/HADES DMT-imaging
+   integration**.  Beautiful Loop + Self-Aware Networks consciousness
+   theories (per `reference_entheo_eeg_fmri_repos.md`).  EEG-fMRI
+   preprocessing pipelines for `DMT_Imaging` (Timmermann source, 20
+   subj, 15 motion-survived).  Py module `morie.entheo` +
+   R parity `morie::entheo_*()`.  Data fetchers reference
+   `hadesllm-work/DMT_Imaging/`.
+
+5. **CRAN acceptance** for the morie R package, completing the
+   PyPI/r-universe/CRAN trifecta.
+
+Plus org-level polish:
+- `hadesllm/.github` profile README + SECURITY.md + CONTRIBUTING.md.
+- `hadesllm.r-universe.dev` per-package license + paper DOI display.

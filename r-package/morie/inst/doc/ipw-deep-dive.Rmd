@@ -1,0 +1,104 @@
+---
+title: "IPW deep-dive (Hájek and Horvitz--Thompson)"
+output:
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{IPW deep-dive}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  eval     = requireNamespace("morie", quietly = TRUE)
+)
+```
+
+# Overview
+
+Inverse-probability weighting (IPW) is the simplest of the
+single-robust causal estimators. This vignette shows the building
+blocks that MORIE exposes: the Horvitz--Thompson and the
+Hájek-stabilised IPW estimators, propensity-score modelling,
+and weight-trimming diagnostics.
+
+# Setting up
+
+```{r setup}
+library(morie)
+set.seed(2026)
+n <- 500
+X1 <- rnorm(n)
+X2 <- rnorm(n)
+ps_true <- plogis(0.4 * X1 - 0.3 * X2)
+treat   <- as.integer(ps_true > runif(n))
+y       <- 1.0 * treat + 0.6 * X1 - 0.2 * X2 + rnorm(n, sd = 0.5)
+df <- data.frame(y = y, treat = treat, X1 = X1, X2 = X2)
+```
+
+# Estimating propensities
+
+The `estimate_ate()` machinery fits a logistic propensity model
+internally and returns the IPW estimate by default. To inspect the
+propensities, set `propensity_col` after fitting them:
+
+```{r ps}
+ps_fit <- glm(treat ~ X1 + X2, family = binomial(), data = df)
+df$ps  <- predict(ps_fit, type = "response")
+summary(df$ps)
+```
+
+# Hájek-stabilised IPW
+
+`estimate_ate()` defaults to the Hájek estimator, which divides
+each weighted sum by the corresponding sum of weights. This
+stabilises the estimator under finite samples even when the
+propensity tails are heavy:
+
+```{r hajek}
+ate_hajek <- estimate_ate(df, treatment = "treat", outcome = "y", covariates = c("X1", "X2"),
+                          propensity_col = "ps")
+ate_hajek$estimate
+ate_hajek$se
+```
+
+# Weight diagnostics
+
+In practice, IPW is sensitive to extreme propensities. Two common
+diagnostics:
+
+```{r diag}
+# Effective sample size after weighting
+ess <- effective_sample_size(1 / df$ps)
+ess
+
+# Range of weights (extreme means trimming)
+range(1 / df$ps)
+```
+
+If the effective sample size collapses dramatically, the analysis
+should consider:
+
+- Trimming propensities to a sensible interval (e.g. [0.05, 0.95])
+- Switching to a doubly-robust estimator (`estimate_aipw()`)
+- Adding more covariates to better separate the treatment groups
+
+# AIPW for protection against IPW failure
+
+```{r aipw}
+aipw <- estimate_aipw(df, treatment = "treat", outcome = "y", covariates = c("X1", "X2"))
+aipw$estimate
+```
+
+When propensities are well-behaved, IPW and AIPW should agree to
+within Monte Carlo noise. Disagreement is informative: it suggests
+either model misspecification or a fragile propensity model.
+
+# Where to go next
+
+- The `causal-inference` vignette covers ATT / ATC / CATE / GATE.
+- The `survey-weighted` vignette covers IPW under complex-sample
+  designs (when survey weights and propensities both apply).

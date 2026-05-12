@@ -2,7 +2,8 @@
 #' General two-sample permutation test (Good 2005)
 #'
 #' Tests H0: F_x = F_y by Monte-Carlo permutation of pooled samples.
-#' p-value uses (1 + #{T_b ≥ T_obs})/(B+1) (Phipson & Smyth 2010).
+#' p-value uses (1 + count of permutation statistics at least T_obs)
+#' divided by (B+1), per Phipson and Smyth 2010.
 #'
 #' @param x,y numeric vectors.
 #' @param statistic function(x, y) returning a scalar; default mean diff.
@@ -46,3 +47,8 @@ permt <- function(x, y, statistic = NULL, B = 5000L,
 # set.seed(0); x <- rnorm(30); y <- rnorm(30)
 # r <- permt(x, y, B = 1000, seed = 0)
 # stopifnot(r$p_value > 0, r$p_value < 1)
+
+#' @rdname permt
+#' @keywords internal
+#' @export
+permutation_test_general <- permt

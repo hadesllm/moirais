@@ -52,3 +52,8 @@ rgpsd <- function(x, fs = 1.0, nperseg = NULL, window = "hann") {
   list(freqs = freqs, psd = psd, fs = fs, nperseg = nperseg,
        peak_freq = freqs[peak], total_power = total)
 }
+
+#' @rdname rgpsd
+#' @keywords internal
+#' @export
+rangayyan_psd <- rgpsd

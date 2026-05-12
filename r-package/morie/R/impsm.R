@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #' Importance sampling (Geweke 1989)
 #'
-#' Given samples x ~ q, estimate E_p[h(X)] with weights w = p(x)/q(x).
+#' Given samples x ~ q, estimate E_p of h(X) with weights w = p(x)/q(x).
 #' Returns both unnormalised and self-normalised estimators plus ESS.
 #'
 #' @param x numeric draws from q.
@@ -33,3 +33,8 @@ impsm <- function(x, h = NULL, p = NULL, q = NULL) {
 # r <- impsm(x, h = function(z) z^2)
 # # E[X^2] under N(0,1) = 1
 # stopifnot(abs(r$estimate - 1) < 0.2)
+
+#' @rdname impsm
+#' @keywords internal
+#' @export
+importance_sampling <- impsm

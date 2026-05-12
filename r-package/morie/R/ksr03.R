@@ -24,3 +24,8 @@ ksr03_kosorok_glivenko_cantelli <- function(x, cdf = "pnorm") {
 
 # CANONICAL TEST
 # set.seed(0); ksr03_kosorok_glivenko_cantelli(rnorm(200))
+
+#' @rdname ksr03_kosorok_glivenko_cantelli
+#' @keywords internal
+#' @export
+kosorok_glivenko_cantelli <- ksr03_kosorok_glivenko_cantelli

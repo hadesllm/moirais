@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
-#' BayesCπ spike-and-slab variable selection (short Gibbs)
+#' BayesC-pi spike-and-slab variable selection (short Gibbs)
 #'
-#' @param x (n × p) marker matrix.
+#' @param x (n x p) marker matrix.
 #' @param y Numeric response.
 #' @param n_iter Iterations.
 #' @param burn Burn-in.
@@ -63,7 +63,7 @@ bayes_cpi_genomic <- function(x, y, n_iter = 300, burn = 100,
   list(estimate = mean(abs(beta_hat)), beta = beta_hat, beta_pip = pip,
        pi = mean(piv), sigma_b2 = mean(sbv), sigma2 = mean(sv2),
        intercept = ym, n_iter = length(sv2), n = n, p = p,
-       method = "BayesCπ short Gibbs")
+       method = "BayesC-pi short Gibbs")
 }
 
 # CANONICAL TEST

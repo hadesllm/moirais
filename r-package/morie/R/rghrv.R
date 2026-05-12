@@ -30,3 +30,8 @@ rghrv <- function(rr_ms) {
   list(meanNN = mean_nn, SDNN = sdnn, RMSSD = rmssd, pNN50 = pnn50,
        heart_rate_bpm = hr, n = n)
 }
+
+#' @rdname rghrv
+#' @keywords internal
+#' @export
+rangayyan_hrv <- rghrv

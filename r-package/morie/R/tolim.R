@@ -3,10 +3,10 @@
 #' Distribution-free (Wilks) tolerance limits
 #'
 #' Closed-form Wilks (1941) tolerance-interval probability that the
-#' sample [min(x), max(x)] covers at least `coverage` of the
+#' sample interval from min(x) to max(x) covers at least `coverage` of the
 #' population.  Gibbons & Chakraborti Ch 2.11.
 #'
-#' P(coverage of [X_(1), X_(n)] >= beta) =
+#' P(coverage of (X_(1), X_(n)) >= beta) =
 #'    1 - n * beta^(n-1) + (n - 1) * beta^n
 #'
 #' @param x Numeric vector.

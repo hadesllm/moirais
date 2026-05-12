@@ -2,7 +2,7 @@
 
 #' Efficient score for OLS beta in the linear model
 #'
-#' S_eff(X, Y) = (Y - E[Y|X])(X - E[X]) / sigma^2.
+#' S_eff(X, Y) = (Y - E(Y|X))(X - E(X)) / sigma^2.
 #'
 #' @param x Numeric covariate vector.
 #' @param y Numeric outcome vector.
@@ -29,3 +29,8 @@ ksr11_kosorok_efficient_score <- function(x, y) {
 # CANONICAL TEST
 # set.seed(0); xs <- rnorm(200); ys <- 1.5*xs + rnorm(200)
 # ksr11_kosorok_efficient_score(xs, ys)
+
+#' @rdname ksr11_kosorok_efficient_score
+#' @keywords internal
+#' @export
+kosorok_efficient_score <- ksr11_kosorok_efficient_score

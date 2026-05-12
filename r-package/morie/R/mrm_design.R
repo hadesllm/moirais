@@ -65,6 +65,7 @@ mrm_two_treatment_test <- function(a, b, alpha = 0.05) {
 #' @param alpha CI level (default 0.05).
 #' @return Named list with f_statistic, p_value, df_between,
 #'   df_within, means, n_per_group, tukey_hsd, interpretation.
+#' @importFrom stats as.formula
 #' @export
 mrm_anova_oneway <- function(data, response_col, group_col, alpha = 0.05) {
   d <- data[, c(response_col, group_col)]
@@ -174,6 +175,7 @@ mrm_factorial_2k <- function(data, response_col, factor_cols) {
 #'   propensity), \code{"diff_in_means"} (no adjustment).
 #' @return Named list with estimator, estimate, se, ci_lower,
 #'   ci_upper, p_value, n, n_treated, interpretation.
+#' @importFrom stats as.formula
 #' @export
 mrm_causal_design <- function(
   data, treatment_col, outcome_col,

@@ -30,3 +30,8 @@ fzsrv <- function(x, t = NULL, h = NULL) {
 # CANONICAL TEST
 # set.seed(0); x <- rexp(2000, 1)
 # r <- fzsrv(x, t = 1); stopifnot(abs(r$estimate - exp(-1)) < 0.05)
+
+#' @rdname fzsrv
+#' @keywords internal
+#' @export
+fauzi_survival_kernel <- fzsrv

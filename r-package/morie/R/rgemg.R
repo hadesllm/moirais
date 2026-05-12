@@ -21,3 +21,8 @@ rgemg <- function(x, window = 64L, fs = 1.0) {
   if (N >= W) rms[seq_len(W - 1L)] <- rms[W]
   list(rms = rms, window = W, fs = fs, mean_rms = mean(rms, na.rm = TRUE))
 }
+
+#' @rdname rgemg
+#' @keywords internal
+#' @export
+rangayyan_emg_rms <- rgemg

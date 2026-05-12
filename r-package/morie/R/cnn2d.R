@@ -38,3 +38,8 @@ cnn2d_conv2d_forward <- function(x, w, b = 0, stride = 1L, padding = 0L) {
        output_shape = c(out_h, out_w),
        method = "Conv2D forward (cross-correlation)")
 }
+
+#' @rdname cnn2d_conv2d_forward
+#' @keywords internal
+#' @export
+conv2d_forward <- cnn2d_conv2d_forward

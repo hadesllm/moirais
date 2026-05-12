@@ -2,7 +2,7 @@
 
 #' Maximal inequality bound for empirical processes
 #'
-#' E*[sup |G_n(f)|] <= J_[](theta_n, F, L_2(P)) * sigma_n for the
+#' E* of sup |G_n(f)| <= J_bracket(theta_n, F, L_2(P)) * sigma_n for the
 #' indicator class with theta_n = 0.5.
 #'
 #' @param x Numeric vector.
@@ -26,3 +26,8 @@ ksr06_kosorok_maximal_inequality <- function(x) {
 
 # CANONICAL TEST
 # set.seed(0); ksr06_kosorok_maximal_inequality(rnorm(200))
+
+#' @rdname ksr06_kosorok_maximal_inequality
+#' @keywords internal
+#' @export
+kosorok_maximal_inequality <- ksr06_kosorok_maximal_inequality

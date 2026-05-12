@@ -54,3 +54,8 @@ sglm <- function(x, y, coords, family = "gaussian") {
 
 # CANONICAL TEST
 # sglm(cbind(1, 0:4), 1 + 2*(0:4), matrix(0:4, ncol=1))$estimate # ~ c(1,2)
+
+#' @rdname sglm
+#' @keywords internal
+#' @export
+spatial_glm <- sglm

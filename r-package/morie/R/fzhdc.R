@@ -58,3 +58,8 @@ fzhdc <- function(x, kernel = NULL, max_pairs = 2000L, seed = 0L) {
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(200); r <- fzhdc(x)
 # stopifnot(r$estimate > 0.7 && r$estimate < 1.3)
+
+#' @rdname fzhdc
+#' @keywords internal
+#' @export
+fauzi_h_decomposition <- fzhdc

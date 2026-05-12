@@ -45,3 +45,8 @@ sarre <- function(x, y, w) {
 }
 
 # CANONICAL TEST  (with row-standardised path graph)
+
+#' @rdname sarre
+#' @keywords internal
+#' @export
+spatial_ar_error <- sarre

@@ -27,3 +27,8 @@ rgadp <- function(x, reference, mu = 0.01, order = 16L) {
   list(signal = e, noise_estimate = y, weights = w,
        mu = mu, order = M)
 }
+
+#' @rdname rgadp
+#' @keywords internal
+#' @export
+rangayyan_adaptive_filter <- rgadp

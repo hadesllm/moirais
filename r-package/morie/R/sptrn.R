@@ -4,7 +4,7 @@
 #' mu(s) = sum_k beta_k f_k(s); f_k are monomials up to degree `order`.
 #'
 #' @param x Numeric vector.
-#' @param coords Coord matrix (n by d), d in {1, 2}.
+#' @param coords Coord matrix (n by d), d either 1 or 2.
 #' @param order Polynomial order (0, 1, 2, or 3).
 #' @return Named list: estimate, se, r2, order, n, method.
 #' @references Schabenberger & Gotway (2005), Ch 2.
@@ -41,3 +41,8 @@ sptrn <- function(x, coords, order = 2) {
 
 # CANONICAL TEST
 # sptrn(c(1,2,3,4,5), matrix(0:4, ncol=1), order=1)$estimate  # c(1,1)
+
+#' @rdname sptrn
+#' @keywords internal
+#' @export
+spatial_trend_surface <- sptrn

@@ -30,6 +30,12 @@ idlpt <- function(X_r, X_s = NULL) {
        method = "ideal_point_recovery")
 }
 
+#' @keywords internal
 #' @rdname idlpt
 #' @export
 ideal_point_recovery <- idlpt
+
+#' @rdname idlpt
+#' @keywords internal
+#' @export
+ideal_point_model <- idlpt

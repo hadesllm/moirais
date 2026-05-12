@@ -2,7 +2,7 @@
 
 #' VC dimension for affine half-spaces in R^d
 #'
-#' VC({1{a'x + b >= 0}}) = d + 1.
+#' VC dimension of the linear half-space classifier in R^d equals d+1.
 #'
 #' @param x Numeric matrix or vector; d is its number of columns.
 #' @return Named list with estimate, n, method.
@@ -23,3 +23,8 @@ ksr04_kosorok_vc_dimension <- function(x) {
 
 # CANONICAL TEST
 # ksr04_kosorok_vc_dimension(matrix(0, 100, 3))
+
+#' @rdname ksr04_kosorok_vc_dimension
+#' @keywords internal
+#' @export
+kosorok_vc_dimension <- ksr04_kosorok_vc_dimension

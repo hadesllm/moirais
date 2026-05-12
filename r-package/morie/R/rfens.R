@@ -13,11 +13,14 @@
 #' @param seed RNG seed.
 #' @return Named list: estimate, train_score, oob_score, feature_importances,
 #'   n_estimators, task, n, method.
-#' @importFrom randomForest randomForest importance
+#' @importFrom stats predict
 #' @export
 random_forest_ensemble <- function(x, y, n_estimators = 100L,
                                     max_depth = NULL, task = "auto",
                                     seed = 0L) {
+  if (!requireNamespace("randomForest", quietly = TRUE)) {
+    stop("Function 'random_forest_ensemble' requires package 'randomForest'. Install with install.packages('randomForest').")
+  }
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)
   x <- as.matrix(x)
   if (identical(task, "auto")) {

@@ -32,3 +32,8 @@ rghfd <- function(x, kmax = 10L) {
        intercept = unname(stats::coef(fit)[1]),
        log_L = log_L, log_inv_k = log_inv_k, kmax = kmax)
 }
+
+#' @rdname rghfd
+#' @keywords internal
+#' @export
+rangayyan_higuchi_fd <- rghfd

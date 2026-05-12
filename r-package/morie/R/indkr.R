@@ -44,3 +44,8 @@ indkr <- function(x, coords, threshold, target = NULL,
        threshold = threshold, n = n,
        method = "Indicator kriging (ordinary, exp. cov)")
 }
+
+#' @rdname indkr
+#' @keywords internal
+#' @export
+indicator_kriging <- indkr

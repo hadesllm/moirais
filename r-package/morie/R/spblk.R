@@ -62,3 +62,8 @@ spblk <- function(x, coords, blocks, n_quad = 25,
   list(estimate = ests, se = ses, n = n,
        method = "Ordinary block kriging (exp. cov, MC quadrature)")
 }
+
+#' @rdname spblk
+#' @keywords internal
+#' @export
+spatial_block_kriging <- spblk

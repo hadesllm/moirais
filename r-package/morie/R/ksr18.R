@@ -2,7 +2,7 @@
 
 #' Nelson-Aalen cumulative hazard at the largest event time
 #'
-#' Lambda_hat(t) = sum_{t_i <= t} d_i / Y_i.  Variance: sum d_i/Y_i^2.
+#' Lambda_hat(t) = sum over t_i <= t of d_i / Y_i.  Variance: sum d_i/Y_i^2.
 #'
 #' @param t Numeric vector of observed times.
 #' @param event Integer/logical vector (1 = event, 0 = censored).
@@ -37,3 +37,8 @@ ksr18_kosorok_nelson_aalen <- function(t, event) {
 
 # CANONICAL TEST
 # ksr18_kosorok_nelson_aalen(1:10, c(1,1,0,1,1,0,1,1,1,0))
+
+#' @rdname ksr18_kosorok_nelson_aalen
+#' @keywords internal
+#' @export
+kosorok_nelson_aalen <- ksr18_kosorok_nelson_aalen

@@ -20,3 +20,8 @@ rslnk_residual_connection <- function(x, f = NULL) {
   list(y = y, estimate = y, Fx = Fx,
        method = "Residual identity shortcut")
 }
+
+#' @rdname rslnk_residual_connection
+#' @keywords internal
+#' @export
+residual_connection <- rslnk_residual_connection

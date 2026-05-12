@@ -49,3 +49,8 @@ stvar <- function(x, coords, times,
                        temporal_bins = t_mids, counts = counts),
        n = n, method = "Empirical spatiotemporal variogram")
 }
+
+#' @rdname stvar
+#' @keywords internal
+#' @export
+spatiotemporal_variogram <- stvar

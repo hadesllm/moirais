@@ -58,3 +58,8 @@ rgwav <- function(x, wavelet = "d8", level = NULL, mode = c("soft", "hard")) {
   list(signal = y, threshold = T, sigma = sigma,
        wavelet = wavelet, level = level, mode = mode)
 }
+
+#' @rdname rgwav
+#' @keywords internal
+#' @export
+rangayyan_wavelet_denoise <- rgwav

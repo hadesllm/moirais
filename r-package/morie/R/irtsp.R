@@ -81,6 +81,7 @@ irtsp <- function(x, n_iter = 60L, tol = 1e-6) {
        loglik = ll, n_iter = it, method = "irt_spatial_2pl")
 }
 
+#' @keywords internal
 #' @rdname irtsp
 #' @export
 irt_spatial <- irtsp

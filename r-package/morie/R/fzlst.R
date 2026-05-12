@@ -55,3 +55,8 @@ fzlst <- function(x, score = NULL, n_quad = 200L) {
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(500); r <- fzlst(x)
 # stopifnot(abs(r$estimate - mean(x)) < 1e-6)
+
+#' @rdname fzlst
+#' @keywords internal
+#' @export
+fauzi_l_statistic <- fzlst

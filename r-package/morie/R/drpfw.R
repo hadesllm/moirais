@@ -28,3 +28,8 @@ drpfw_dropout_forward <- function(x, p = 0.5, seed = 0L, training = TRUE) {
        kept_fraction = mean(mask),
        method = "Dropout forward (inverted)")
 }
+
+#' @rdname drpfw_dropout_forward
+#' @keywords internal
+#' @export
+dropout_forward <- drpfw_dropout_forward

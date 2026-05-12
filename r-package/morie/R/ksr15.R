@@ -2,7 +2,7 @@
 
 #' One-step efficient location estimator
 #'
-#' theta_tilde = theta_init + n^{-1} sum IF(X_i; theta_init).
+#' theta_tilde = theta_init + (1/n) * sum IF(X_i; theta_init).
 #'
 #' @param x Numeric vector.
 #' @param y Ignored (API parity).
@@ -24,3 +24,8 @@ ksr15_kosorok_one_step_estimator <- function(x, y = NULL) {
 
 # CANONICAL TEST
 # set.seed(0); ksr15_kosorok_one_step_estimator(rnorm(200))
+
+#' @rdname ksr15_kosorok_one_step_estimator
+#' @keywords internal
+#' @export
+kosorok_one_step_estimator <- ksr15_kosorok_one_step_estimator

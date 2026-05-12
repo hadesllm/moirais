@@ -60,3 +60,8 @@ rgqrs <- function(x, fs = 360.0) {
   list(r_peaks = refined, rr_intervals_ms = rr_ms,
        heart_rate_bpm = hr, integrated = integ, fs = fs)
 }
+
+#' @rdname rgqrs
+#' @keywords internal
+#' @export
+rangayyan_qrs_detect <- rgqrs

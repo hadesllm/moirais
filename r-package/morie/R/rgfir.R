@@ -49,3 +49,8 @@ rgfir <- function(x, cutoff, order = 51L, fs = 1.0, window = "hamming") {
   }
   stop("R package 'signal' is required for rgfir().")
 }
+
+#' @rdname rgfir
+#' @keywords internal
+#' @export
+rangayyan_fir_filter <- rgfir

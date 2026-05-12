@@ -8,9 +8,11 @@
 #' @param y_score Predicted scores for the positive class.
 #' @return Named list: estimate, auc, fpr, tpr, thresholds, n,
 #'   n_positive, n_negative, method.
-#' @importFrom pROC roc auc
 #' @export
 roc_auc_score <- function(y_true, y_score) {
+  if (!requireNamespace("pROC", quietly = TRUE)) {
+    stop("Function 'roc_auc_score' requires package 'pROC'. Install with install.packages('pROC').")
+  }
   yt <- as.numeric(y_true); ys <- as.numeric(y_score)
   classes <- sort(unique(yt))
   if (length(classes) != 2) stop("roc_auc_score requires binary y_true")

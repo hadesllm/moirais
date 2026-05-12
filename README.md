@@ -67,12 +67,12 @@ and, where applicable, the **MRM framework paper** and the **Hawkes methodology 
 ```
 # Software paper — R (also the R package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in R (v0.2.0). Zenodo.
+Estimation in R (v0.3.0). Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Software paper — Python (also the Python package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in Python (v0.2.0). Zenodo.
+Estimation in Python (v0.3.0). Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
 # MRM framework paper (theoretical foundations)
@@ -118,7 +118,7 @@ implementation but does not change the attribution of the work.
   Ontario Government — for his methodological mentorship. He brings
   distribution theory, applied-statistics intuition for administrative
   data, and the judgment that grounds much of this framework. Glenn
-  is the **M** in **MRM (McNamara-Ruhela-Medina)** (catalyst).
+  is the **M** in **MRM (Multilevel Reconciliation Methodology; people-credit reading: McNamara-Ruhela-Medina)** (catalyst).
 
 - The author thanks **Prof. Angela Zorro Medina**, Centre for
   Criminology and Sociolegal Studies, University of Toronto, who is
@@ -156,7 +156,14 @@ under the same standard disclaimer.
 
 ## License
 
-MORIE is released under the GNU General Public License v2 (`GPL-2.0-only`); see [`LICENSE`](https://github.com/hadesllm/morie/blob/main/LICENSE). The licensing matrix for individual components is documented in [`LICENSING.md`](https://github.com/hadesllm/morie/blob/main/LICENSING.md).
+MORIE adopts a **per-component licensing model** (since v0.3.0):
+
+- **Python package** (`src/morie/`, `src/moirais/`) — dual-licensed `MIT OR Apache-2.0` (the Rust-ecosystem convention; recipient picks either).  See [`LICENSE-MIT`](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT) and [`LICENSE-APACHE`](https://github.com/hadesllm/morie/blob/main/LICENSE-APACHE).
+- **R package** (`r-package/morie/`, `r-package/moirais/`) — `GPL-2.0-only` (matches the R-ecosystem / CRAN convention).  See [`LICENSE-GPL2`](https://github.com/hadesllm/morie/blob/main/LICENSE-GPL2).
+- **Linux kernel module** (`kernel-module/morie.c`) — `GPL-2.0-only` (kernel ABI requirement).
+- **Papers, data and documentation** — `CC-BY-4.0` unless explicitly marked otherwise.
+
+The full per-component breakdown is documented in [`LICENSING.md`](https://github.com/hadesllm/morie/blob/main/LICENSING.md).
 
 ## Reporting issues / security
 

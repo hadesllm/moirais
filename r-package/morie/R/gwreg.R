@@ -46,3 +46,8 @@ gwreg <- function(x, y, coords, bandwidth = NULL, kernel = "gaussian") {
 # CANONICAL TEST
 # gwreg(cbind(1, 0:4), 0:4, matrix(0:4, ncol=1))$estimate
 # row-wise -> approx c(0, 1) at every site
+
+#' @rdname gwreg
+#' @keywords internal
+#' @export
+geographically_weighted_regression <- gwreg

@@ -43,3 +43,8 @@ pspln <- function(x, y, n_knots = 20L, degree = 3L, lam = 1) {
 # set.seed(0); x <- seq(0, 1, length.out = 80); y <- sin(3*x) + rnorm(80, sd = 0.05)
 # r <- pspln(x, y, lam = 0.1)
 # stopifnot(r$r2 > 0.9)
+
+#' @rdname pspln
+#' @keywords internal
+#' @export
+penalized_spline <- pspln

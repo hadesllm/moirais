@@ -36,3 +36,8 @@ rgcrl <- function(x, m = 3L, tau = 1L, n_r = 20L) {
   }
   list(D2 = D2, log_r = log_r, log_C = log_C, m = m, tau = tau)
 }
+
+#' @rdname rgcrl
+#' @keywords internal
+#' @export
+rangayyan_correlation_dimension <- rgcrl

@@ -31,3 +31,8 @@ attnq_scaled_dot_product_attention <- function(Q, K = NULL, V = NULL,
        d_k = as.integer(d_k),
        method = "Scaled dot-product attention")
 }
+
+#' @rdname attnq_scaled_dot_product_attention
+#' @keywords internal
+#' @export
+scaled_dot_product_attention <- attnq_scaled_dot_product_attention

@@ -3,7 +3,7 @@
 #' Scalar-covariate Cox proportional-hazards partial-likelihood MLE
 #'
 #' Newton-Raphson on
-#' l(beta) = sum_{event} [X_i beta - log sum_{j in R(t_i)} exp(X_j beta)].
+#' l(beta) = sum over events of (X_i beta - log sum over j in R(t_i) of exp(X_j beta)).
 #' Breslow tie handling.
 #'
 #' @param x Numeric covariate vector.
@@ -50,3 +50,8 @@ ksr19_kosorok_cox_partial_likelihood <- function(x, t, event,
 # CANONICAL TEST
 # set.seed(0); xs <- rnorm(100); ts <- rexp(100, rate=exp(0.5*xs))
 # ksr19_kosorok_cox_partial_likelihood(xs, ts, rep(1, 100))
+
+#' @rdname ksr19_kosorok_cox_partial_likelihood
+#' @keywords internal
+#' @export
+kosorok_cox_partial_likelihood <- ksr19_kosorok_cox_partial_likelihood

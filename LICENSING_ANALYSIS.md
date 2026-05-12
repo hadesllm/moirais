@@ -1,8 +1,16 @@
 # MORIE Licensing Analysis
 
-Status: 2026-05-11
+> **SUPERSEDED as the controlling document for v0.3.0+.**
+> See [`LICENSING.md`](LICENSING.md) for the current per-component
+> licensing model: Python is `MIT OR Apache-2.0`, R + Linux
+> kernel module remain `GPL-2.0-only`, papers + data are
+> `CC-BY-4.0`.  The analysis below is retained as the historical
+> justification for the v0.1.x — v0.2.1 single-license
+> (`GPL-2.0-only`) period.
+
+Status: 2026-05-11 (historical, retained for v0.2.x context)
 Author: Vansh Singh Ruhela
-Scope: justification for keeping `GPL-2.0-only` for the MORIE
+Scope (historical, v0.1.x–v0.2.1): justification for the then-single `GPL-2.0-only` license of the MORIE
 toolkit given its dependency graph (DoubleML BSD-3-Clause, the
 scientific-Python stack BSD-3-Clause, and the broader R ecosystem
 GPL-2 / GPL-3 / MIT mix).

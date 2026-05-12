@@ -28,3 +28,8 @@ ksr12_kosorok_information_bound <- function(x, y) {
 # CANONICAL TEST
 # set.seed(0); xs <- rnorm(200); ys <- 1.5*xs + rnorm(200)
 # ksr12_kosorok_information_bound(xs, ys)
+
+#' @rdname ksr12_kosorok_information_bound
+#' @keywords internal
+#' @export
+kosorok_information_bound <- ksr12_kosorok_information_bound

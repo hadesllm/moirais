@@ -27,6 +27,7 @@ mdvtr <- function(x) {
        n = n, method = "Median voter theorem")
 }
 
+#' @keywords internal
 #' @rdname mdvtr
 #' @export
 median_voter <- mdvtr

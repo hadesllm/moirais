@@ -3,3 +3,7 @@
 ^\.Rproj\.user$
 ^\.github$
 ^cran-comments\.md$
+^vignettes$
+^doc$
+^Meta$
+^LICENSE$

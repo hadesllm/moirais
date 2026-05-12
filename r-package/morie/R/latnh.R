@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #' Latin hypercube sampling (McKay, Beckman & Conover 1979)
 #'
-#' Stratified random sample on [0,1]^d: each dimension is split into N
+#' Stratified random sample on the unit cube of dimension d: each dimension is split into N
 #' equal-probability strata, one sample per stratum, then strata are
 #' permuted independently across dimensions.
 #'
@@ -32,3 +32,8 @@ latnh <- function(N = 100L, d = 1L, f = NULL, seed = 42L) {
 # CANONICAL TEST
 # r <- latnh(N = 500, d = 2, f = function(u) u[1] + u[2], seed = 0)
 # stopifnot(abs(r$estimate - 1) < 0.05)
+
+#' @rdname latnh
+#' @keywords internal
+#' @export
+latin_hypercube <- latnh

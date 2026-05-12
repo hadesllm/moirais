@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #' Sobol quasi-random sequence (Sobol 1967)
 #'
-#' Thin wrapper over \code{randtoolbox::sobol} (low-discrepancy in [0,1]^d).
+#' Thin wrapper over \code{randtoolbox::sobol} (low-discrepancy in the unit cube of dimension d).
 #' Falls back to a pure-R Halton sequence if randtoolbox is unavailable.
 #'
 #' @param N integer; default 128.
@@ -48,3 +48,8 @@ sobls <- function(N = 128L, d = 1L, f = NULL, scramble = TRUE, seed = 42L) {
 # CANONICAL TEST
 # r <- sobls(N = 128, d = 2, f = function(u) u[1] * u[2], seed = 0)
 # stopifnot(abs(r$estimate - 0.25) < 0.05)
+
+#' @rdname sobls
+#' @keywords internal
+#' @export
+sobol_sequence <- sobls

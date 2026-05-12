@@ -28,3 +28,8 @@ ksr07_kosorok_bootstrap_empirical <- function(x, B = 1000, seed = 0) {
 
 # CANONICAL TEST
 # set.seed(0); ksr07_kosorok_bootstrap_empirical(rnorm(200), B=500, seed=42)
+
+#' @rdname ksr07_kosorok_bootstrap_empirical
+#' @keywords internal
+#' @export
+kosorok_bootstrap_empirical <- ksr07_kosorok_bootstrap_empirical

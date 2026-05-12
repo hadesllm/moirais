@@ -29,3 +29,8 @@ ksr01_kosorok_empirical_process <- function(x, f = NULL, mu0 = 0) {
 
 # CANONICAL TEST
 # set.seed(0); xs <- rnorm(200); r <- ksr01_kosorok_empirical_process(xs); r
+
+#' @rdname ksr01_kosorok_empirical_process
+#' @keywords internal
+#' @export
+kosorok_empirical_process <- ksr01_kosorok_empirical_process

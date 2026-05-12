@@ -36,3 +36,8 @@ fzmrl <- function(x, t = NULL, h = NULL) {
 # CANONICAL TEST
 # set.seed(0); x <- rexp(2000, 1)
 # r <- fzmrl(x, t = 0); stopifnot(abs(r$estimate - 1) < 0.15)
+
+#' @rdname fzmrl
+#' @keywords internal
+#' @export
+fauzi_mrl_asymptotic <- fzmrl

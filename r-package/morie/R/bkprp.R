@@ -60,3 +60,8 @@ bkprp_backpropagation <- function(x, y, w = NULL, b = NULL,
     stop(sprintf("Unknown activation: %s", activation))
   )
 }
+
+#' @rdname bkprp_backpropagation
+#' @keywords internal
+#' @export
+backpropagation <- bkprp_backpropagation

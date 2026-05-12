@@ -38,3 +38,8 @@ ksr20_kosorok_censoring_survival <- function(t, event) {
 
 # CANONICAL TEST
 # ksr20_kosorok_censoring_survival(1:10, c(1,1,0,1,1,0,1,1,1,0))
+
+#' @rdname ksr20_kosorok_censoring_survival
+#' @keywords internal
+#' @export
+kosorok_censoring_survival <- ksr20_kosorok_censoring_survival

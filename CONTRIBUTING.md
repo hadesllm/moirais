@@ -13,7 +13,7 @@ sizes are welcome.
   to treat you."
 - **Maintainer.** Vansh Singh Ruhela (`@rootcoder007`,
   <hadesllm@proton.me>).
-- **Licence.** MORIE is GPL-2.0-only. See `LICENSE`,
+- **Licence.** MORIE uses per-component licensing (Python: `MIT OR Apache-2.0`; R + kernel module: `GPL-2.0-only`).  See `LICENSING.md`,
   `LICENSING.md`, and `LICENSING_ANALYSIS.md`.
 
 ## Where to start

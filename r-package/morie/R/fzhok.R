@@ -31,3 +31,8 @@ fzhok <- function(x, t = NULL, h = NULL, order = 4L) {
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(2000); r <- fzhok(x, t = 0)
 # stopifnot(abs(r$estimate - dnorm(0)) < 0.1)
+
+#' @rdname fzhok
+#' @keywords internal
+#' @export
+fauzi_higher_order_kernel <- fzhok

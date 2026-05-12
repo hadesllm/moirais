@@ -44,6 +44,7 @@ dwnmn <- function(x, sigma_w = 0.1) {
        n_periods = T, method = "dynamic_wnominate")
 }
 
+#' @keywords internal
 #' @rdname dwnmn
 #' @export
 dynamic_wnominate <- dwnmn

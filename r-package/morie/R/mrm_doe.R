@@ -173,7 +173,7 @@ mrm_graeco_latin <- function(data, response_col, row_col, col_col,
 #'
 #' @param data data.frame.
 #' @param response_col Response column.
-#' @param factor_cols Character vector of factor columns (each in {-1,+1}).
+#' @param factor_cols Character vector of factor columns (each coded -1 or +1).
 #' @param generator Optional generator string "X=YZ,..." for aliasing.
 #' @return Named list with main_effects, alias_structure, n, k,
 #'   interpretation.

@@ -23,3 +23,8 @@ rgzcr <- function(x, fs = 1.0) {
   list(zcr = zcr, zcr_per_second = zcr * fs,
        crossings = as.integer(crossings), n = n)
 }
+
+#' @rdname rgzcr
+#' @keywords internal
+#' @export
+rangayyan_zero_crossing <- rgzcr

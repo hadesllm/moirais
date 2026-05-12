@@ -44,3 +44,8 @@ fwpas_forward_pass_dense <- function(x, w, b, activation = "sigmoid") {
   list(z = z, a = a, estimate = a, activation = activation,
        method = "Dense layer forward pass")
 }
+
+#' @rdname fwpas_forward_pass_dense
+#' @keywords internal
+#' @export
+forward_pass_dense <- fwpas_forward_pass_dense

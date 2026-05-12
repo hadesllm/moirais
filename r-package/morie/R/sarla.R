@@ -43,3 +43,8 @@ sarla <- function(x, y, w) {
 }
 
 # CANONICAL TEST  (with row-standardised path graph)
+
+#' @rdname sarla
+#' @keywords internal
+#' @export
+spatial_ar_lag <- sarla

@@ -13,10 +13,13 @@
 #' @param seed RNG seed.
 #' @return Named list: estimate, train_accuracy, root_feature, root_threshold,
 #'   root_impurity, n_leaves, feature_importances, criterion, n, method.
-#' @importFrom rpart rpart rpart.control
+#' @importFrom stats predict
 #' @export
 decision_tree_split <- function(x, y, criterion = "gini", max_depth = 30L,
                                  seed = 0L) {
+  if (!requireNamespace("rpart", quietly = TRUE)) {
+    stop("Function 'decision_tree_split' requires package 'rpart'. Install with install.packages('rpart').")
+  }
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)
   x <- as.matrix(x); yf <- as.factor(y)
   colnames(x) <- colnames(x) %||% paste0("x", seq_len(ncol(x)) - 1L)

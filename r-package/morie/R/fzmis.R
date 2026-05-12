@@ -32,3 +32,8 @@ fzmis <- function(x, h = NULL) {
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(500); r <- fzmis(x)
 # stopifnot(r$bias_part > 0 && r$var_part > 0)
+
+#' @rdname fzmis
+#' @keywords internal
+#' @export
+fauzi_mise_computation <- fzmis

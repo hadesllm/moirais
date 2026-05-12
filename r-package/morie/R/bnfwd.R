@@ -28,3 +28,8 @@ bnfwd_batch_norm_forward <- function(x, gamma = NULL, beta = NULL,
   list(y = y, estimate = y, x_hat = x_hat, mu = mu, var = var, eps = eps,
        method = "Batch normalization forward")
 }
+
+#' @rdname bnfwd_batch_norm_forward
+#' @keywords internal
+#' @export
+batch_norm_forward <- bnfwd_batch_norm_forward

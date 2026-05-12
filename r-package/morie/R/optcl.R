@@ -38,6 +38,7 @@ optcl <- function(x, votes = NULL) {
        pre = pre, n = n, method = "optimal_classification")
 }
 
+#' @keywords internal
 #' @rdname optcl
 #' @export
 optimal_classification <- optcl

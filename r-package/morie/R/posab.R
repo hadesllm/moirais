@@ -29,3 +29,8 @@ posab_positional_encoding_abs <- function(seq_len, d_model, base = 10000) {
   list(PE = PE, estimate = PE, seq_len = seq_len, d_model = d_model,
        method = "Sinusoidal positional encoding")
 }
+
+#' @rdname posab_positional_encoding_abs
+#' @keywords internal
+#' @export
+positional_encoding_abs <- posab_positional_encoding_abs

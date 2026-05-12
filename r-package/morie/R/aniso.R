@@ -56,3 +56,8 @@ aniso <- function(x, coords, n_dirs = 4, tol_deg = 22.5) {
        n = n,
        method = sprintf("Anisotropy test (Levene across %d directions)", n_dirs))
 }
+
+#' @rdname aniso
+#' @keywords internal
+#' @export
+anisotropy_test <- aniso

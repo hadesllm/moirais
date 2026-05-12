@@ -60,6 +60,7 @@ unfdl <- function(x, k = 2L, n_iter = 100L, tol = 1e-6) {
        n_resp = n, n_stim = m, method = "unfolding")
 }
 
+#' @keywords internal
 #' @rdname unfdl
 #' @export
 unfolding_analysis <- unfdl

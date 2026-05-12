@@ -12,11 +12,13 @@
 #' @param seed RNG seed.
 #' @return Named list: estimate (shape), embedding, kl_divergence,
 #'   perplexity, n_components, n, method.
-#' @importFrom Rtsne Rtsne
 #' @export
 tsne_reduction <- function(x, n_components = 2L, perplexity = 30,
                             learning_rate = "auto", n_iter = 1000L,
                             seed = 0L) {
+  if (!requireNamespace("Rtsne", quietly = TRUE)) {
+    stop("Function 'tsne_reduction' requires package 'Rtsne'. Install with install.packages('Rtsne').")
+  }
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)
   x <- as.matrix(x)
   n <- nrow(x)

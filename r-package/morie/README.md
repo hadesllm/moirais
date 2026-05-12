@@ -83,7 +83,7 @@ the software and the companion paper.
   title   = {MORIE Toolkit: Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation},
   author  = {Ruhela, Vansh Singh},
   year    = {2026},
-  note    = {R package version 0.1.2},
+  note    = {R package version 0.3.0},
   doi     = {10.5281/zenodo.20111233},
   url     = {https://github.com/hadesllm/morie}
 }

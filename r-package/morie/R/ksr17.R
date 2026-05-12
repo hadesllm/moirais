@@ -2,7 +2,7 @@
 
 #' Counting process for survival data
 #'
-#' N(infty) = sum_i 1{delta_i = 1}.
+#' N(infty) = the count of events (sum of indicator delta_i = 1).
 #'
 #' @param t Numeric vector of observed times.
 #' @param event Integer/logical vector (1 = event, 0 = censored).
@@ -20,3 +20,8 @@ ksr17_kosorok_counting_process <- function(t, event) {
 
 # CANONICAL TEST
 # ksr17_kosorok_counting_process(1:10, c(1,1,0,1,1,0,1,1,1,0))
+
+#' @rdname ksr17_kosorok_counting_process
+#' @keywords internal
+#' @export
+kosorok_counting_process <- ksr17_kosorok_counting_process

@@ -39,6 +39,7 @@ polrz <- function(x, group = NULL) {
        method = "polarization_index")
 }
 
+#' @keywords internal
 #' @rdname polrz
 #' @export
 polarization_index <- polrz

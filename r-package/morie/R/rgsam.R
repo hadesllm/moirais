@@ -36,3 +36,8 @@ rgsam <- function(x, m = 2L, r = NULL) {
   sampen <- if (A == 0 || B == 0) Inf else -log(A / B)
   list(SampEn = sampen, A = A, B = B, m = m, r = r, n = N)
 }
+
+#' @rdname rgsam
+#' @keywords internal
+#' @export
+rangayyan_sample_entropy <- rgsam

@@ -2,8 +2,8 @@
 
 #' Donsker-class verification via bracketing integral
 #'
-#' Computes J_[](1, F, L_2(P)) = int_0^1 sqrt(log N_[](e, F, L_2(P))) de
-#' for the indicator class F = {1{X<=t}}, with N_[](e) <= 2/e^2.
+#' Computes J_[](1, F, L_2(P)) = int_0^1 sqrt(log N_brackets(e, F, L_2(P))) de
+#' for the indicator class F of one-sided thresholds on X (Kosorok Ex 2.5.4), with bracketing number bounded by 2 over epsilon squared.
 #'
 #' @param x Numeric vector (unused, kept for API parity).
 #' @return Named list with estimate, n, method.
@@ -23,3 +23,8 @@ ksr02_kosorok_donsker_class <- function(x) {
 
 # CANONICAL TEST
 # ksr02_kosorok_donsker_class(1:10)
+
+#' @rdname ksr02_kosorok_donsker_class
+#' @keywords internal
+#' @export
+kosorok_donsker_class <- ksr02_kosorok_donsker_class

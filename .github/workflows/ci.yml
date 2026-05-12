@@ -17,12 +17,24 @@ on:
 
 jobs:
   test-python:
-    name: Python ${{ matrix.python-version }} / ubuntu
-    runs-on: ubuntu-latest
+    name: Py ${{ matrix.python-version }} / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10", "3.14"]
+        # Linux runs widest (oldest + latest Py for backward + forward
+        # compat).  macOS + Windows run on latest stable Py only — they
+        # catch platform-specific bugs (path separators, line endings,
+        # BLAS / numpy wheel availability) without exploding compute.
+        include:
+          - os: ubuntu-latest
+            python-version: "3.10"
+          - os: ubuntu-latest
+            python-version: "3.14"
+          - os: macos-latest
+            python-version: "3.14"
+          - os: windows-latest
+            python-version: "3.14"
 
     steps:
       - uses: actions/checkout@v6
@@ -36,7 +48,8 @@ jobs:
           cache: pip
           cache-dependency-path: pyproject.toml
 
-      - name: Install system build deps (cached)
+      - name: Install system build deps (Linux only, cached)
+        if: runner.os == 'Linux'
         uses: awalsh128/cache-apt-pkgs-action@v1
         with:
           packages: gfortran libopenblas-dev pkg-config

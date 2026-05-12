@@ -38,6 +38,7 @@ agset <- function(options, setter_ideal, reversion) {
        method = "agenda_setter_power")
 }
 
+#' @keywords internal
 #' @rdname agset
 #' @export
 agenda_setter_power <- agset

@@ -41,3 +41,8 @@ rgdfa <- function(x, scales = NULL, order = 1L) {
        scales = scales, F = F,
        log_scales = log_n, log_F = log_F)
 }
+
+#' @rdname rgdfa
+#' @keywords internal
+#' @export
+rangayyan_dfa <- rgdfa

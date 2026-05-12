@@ -40,3 +40,8 @@ fzwlc <- function(x, theta0 = 0, h = NULL, alternative = "two-sided") {
 
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(200); r <- fzwlc(x, 0); stopifnot(r$p_value > 0.05)
+
+#' @rdname fzwlc
+#' @keywords internal
+#' @export
+fauzi_smoothed_wilcoxon <- fzwlc

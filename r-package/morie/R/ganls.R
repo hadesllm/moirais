@@ -32,3 +32,8 @@ ganls_gan_loss <- function(D_real, D_fake, kind = "minimax") {
        estimate = d_loss, kind = kind,
        method = sprintf("GAN %s loss", kind))
 }
+
+#' @rdname ganls_gan_loss
+#' @keywords internal
+#' @export
+gan_loss <- ganls_gan_loss

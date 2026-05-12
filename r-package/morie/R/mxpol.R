@@ -36,3 +36,8 @@ mxpol_maxpool_forward <- function(x, kernel_size = 2L, stride = NULL) {
        output_shape = c(out_h, out_w),
        method = "MaxPool2D forward")
 }
+
+#' @rdname mxpol_maxpool_forward
+#' @keywords internal
+#' @export
+maxpool_forward <- mxpol_maxpool_forward

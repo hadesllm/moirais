@@ -46,3 +46,22 @@ R,reticulate,any,suggests,Apache-2.0,Yes*,"Suggests-only, optional/not linked; u
 R,testthat,>= 3.0.0,suggests,MIT,Yes,
 R,knitr,any,suggests,GPL-2.0-or-later,Yes,
 R,rmarkdown,any,suggests,GPL-2.0-or-later,Yes,
+R,caret,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for ml_foundations grid/random search
+R,e1071,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for ml_foundations SVM
+R,glmnet,any,Suggests,GPL-2,Yes,added v0.3.0 for ml_foundations regularization
+R,pROC,any,Suggests,GPL-3,Yes,added v0.3.0 for ml_foundations roc_auc
+R,randomForest,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for ml_foundations RF
+R,rpart,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for ml_foundations decision tree
+R,Rtsne,any,Suggests,BSD-3-Clause,Yes,added v0.3.0 for ml_foundations t-SNE
+R,xgboost,any,Suggests,Apache-2.0,Yes,added v0.3.0 for ml_foundations gradient boosting
+R,gbm,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for ml_foundations GBM fallback
+R,wavelets,any,Suggests,GPL-2,Yes,added v0.3.0 for time_series_advanced + rangayyan wavelets
+R,MSwM,any,Suggests,GPL-2,Yes,added v0.3.0 for time_series_advanced Markov-switching
+R,rugarch,any,Suggests,GPL-3,Yes,added v0.3.0 for time_series_advanced GARCH family
+R,vars,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for time_series_advanced VAR/VECM
+R,urca,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for time_series_advanced cointegration tests
+R,MCMCpack,any,Suggests,GPL-3,Yes,added v0.3.0 for ghosal MCMC Dirichlet
+R,spdep,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for schabenberger spatial autocorrelation
+R,mgcv,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for schabenberger spatial GLM
+R,MASS,any,Suggests,GPL-2|GPL-3,Yes,added v0.3.0 for armstrong ideal-point + kosorok M-estimators
+R,reticulate,any,Suggests,Apache-2.0,Yes,present in DESCRIPTION Suggests (Py-R bridge usage)

@@ -31,3 +31,8 @@ fzsgn <- function(x, theta0 = 0, h = NULL, alternative = "two-sided") {
 
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(500); r <- fzsgn(x, 0); stopifnot(r$p_value > 0.05)
+
+#' @rdname fzsgn
+#' @keywords internal
+#' @export
+fauzi_smoothed_sign <- fzsgn

@@ -3,7 +3,7 @@
 #' Z-estimator asymptotic distribution
 #'
 #' theta_n solves P_n psi(.; theta) = 0 with sandwich variance
-#' V = A^{-1} B A^{-T}.
+#' V = solve(A) %*% B %*% t(solve(A)).
 #'
 #' @param x Numeric vector.
 #' @param y Optional numeric vector; if supplied returns OLS slope.
@@ -36,3 +36,8 @@ ksr09_kosorok_z_estimator <- function(x, y = NULL) {
 # CANONICAL TEST
 # set.seed(0); xs <- rnorm(200); ys <- 1.5*xs + rnorm(200)
 # ksr09_kosorok_z_estimator(xs, ys)
+
+#' @rdname ksr09_kosorok_z_estimator
+#' @keywords internal
+#' @export
+kosorok_z_estimator <- ksr09_kosorok_z_estimator

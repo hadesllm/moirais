@@ -2,7 +2,7 @@
 
 #' Tangent-space dimension via empirical-score rank
 #'
-#' Score basis {x - mean(x), x^2 - mean(x^2)}; returns rank of
+#' Score basis (x - mean(x)) and (x^2 - mean(x^2)); returns rank of
 #' empirical Gram matrix at tolerance 1e-10.
 #'
 #' @param x Numeric vector.
@@ -26,3 +26,8 @@ ksr13_kosorok_tangent_space <- function(x) {
 
 # CANONICAL TEST
 # set.seed(0); ksr13_kosorok_tangent_space(rnorm(200))
+
+#' @rdname ksr13_kosorok_tangent_space
+#' @keywords internal
+#' @export
+kosorok_tangent_space <- ksr13_kosorok_tangent_space

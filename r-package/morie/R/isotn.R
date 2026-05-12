@@ -38,3 +38,8 @@ isotn <- function(x, y, weights = NULL, increasing = TRUE) {
 # x <- 0:9; y <- c(1, 3, 2, 5, 4, 6, 7, 8, 7, 10)
 # r <- isotn(x, y)
 # stopifnot(all(diff(r$fitted) >= -1e-9))
+
+#' @rdname isotn
+#' @keywords internal
+#' @export
+isotonic_regression <- isotn

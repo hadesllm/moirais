@@ -55,3 +55,8 @@ xavir_xavier_init <- function(fan_in, fan_out, seed = 42L, uniform = TRUE) {
     assign(".Random.seed", old, envir = globalenv())
   }
 }
+
+#' @rdname xavir_xavier_init
+#' @keywords internal
+#' @export
+xavier_initialization <- xavir_xavier_init

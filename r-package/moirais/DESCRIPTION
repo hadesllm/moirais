@@ -1,14 +1,14 @@
 Package: moirais
 Type: Package
 Title: Deprecated Alias for the 'morie' Package
-Version: 0.2.1
+Version: 0.3.0
 Authors@R: c(
   person(
     given = "Vansh Singh",
     family = "Ruhela",
     email = "hadesllm@proton.me",
     role = c("aut", "cre"),
-    comment = c(ORCID = "0009-0004-1750-3592")
+    comment = c(ORCID = "0009-0004-1750-3592", "Hindi IPA pronunciation: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/")
   )
  )
 Author: Vansh Singh Ruhela [aut, cre] (<https://orcid.org/0009-0004-1750-3592>)
@@ -23,7 +23,7 @@ Description: Backwards-compatibility shim for the package previously
   even when 'morie' is not yet available in the same build batch
   (relevant for r-universe parallel builds); 'morie' is required
   at attach time and a clear error message is shown if absent.
-License: GPL-2 | file LICENSE
+License: GPL-2
 Encoding: UTF-8
 Depends:
   R (>= 4.3.0)

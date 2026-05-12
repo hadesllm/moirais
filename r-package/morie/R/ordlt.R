@@ -6,8 +6,8 @@
 #' estimator (kept as a separate R callable in a future release).
 #'
 #' Computes the Jonckheere-Terpstra statistic J = sum over (i < j) of
-#' Mann-Whitney U_{ij} for groups with a presumed monotonic ordering,
-#' then standardises to z = (J - E[J]) / sqrt(Var[J]) and reports a
+#' Mann-Whitney U_ij for groups with a presumed monotonic ordering,
+#' then standardises to z = (J - E_J) / sqrt(Var_J) and reports a
 #' two-sided p-value via the normal approximation.
 #'
 #' @param groups A list of numeric vectors, one per ordered group.  The

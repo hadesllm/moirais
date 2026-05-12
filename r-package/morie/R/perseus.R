@@ -57,5 +57,10 @@ ask_percy <- function(question, context = NULL, python_bin = Sys.getenv("MORIE_P
   paste(out, collapse = "\n")
 }
 
+#' @rdname build_prompt
+#' @keywords internal
 build_assistant_prompt <- build_prompt
+
+#' @rdname ask_percy
+#' @keywords internal
 morie_assistant_query <- ask_percy

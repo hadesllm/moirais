@@ -38,6 +38,7 @@ mdspl <- function(x, k = 2L) {
        k = k_eff, n = n, method = "mds_classical")
 }
 
+#' @keywords internal
 #' @rdname mdspl
 #' @export
 mds_spatial_map <- mdspl

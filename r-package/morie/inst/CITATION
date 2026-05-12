@@ -12,7 +12,7 @@ bibentry(
   author  = person("Vansh Singh", "Ruhela",
                    comment = c(ORCID = "0009-0004-1750-3592")),
   year    = "2026",
-  note    = "R package version 0.2.0",
+  note    = "R package version 0.3.0",
   doi     = "10.5281/zenodo.20111233",
   url     = "https://github.com/hadesllm/morie"
 )
@@ -25,7 +25,7 @@ bibentry(
   author  = person("Vansh Singh", "Ruhela",
                    comment = c(ORCID = "0009-0004-1750-3592")),
   year    = "2026",
-  note    = "Python package version 0.2.0",
+  note    = "Python package version 0.3.0",
   doi     = "10.5281/zenodo.20096350",
   url     = "https://pypi.org/project/morie/"
 )
@@ -56,4 +56,18 @@ bibentry(
   note      = "v1",
   doi       = "10.5281/zenodo.20102198",
   url       = "https://doi.org/10.5281/zenodo.20102198"
+)
+
+# (5) CRAN release entry — populated once CRAN accepts the v0.3.0 submission.
+# The CRAN URL replaces the GitHub URL above for users who installed
+# via `install.packages("morie")`.
+bibentry(
+  bibtype = "Manual",
+  key     = "ruhela_morie_cran_2026",
+  title   = "morie: Multi-domain Open Research and Inferential Estimation in R (CRAN release)",
+  author  = person("Vansh Singh", "Ruhela",
+                   comment = c(ORCID = "0009-0004-1750-3592")),
+  year    = "2026",
+  note    = "R package version 0.3.0",
+  url     = "https://CRAN.R-project.org/package=morie"
 )

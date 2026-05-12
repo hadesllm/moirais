@@ -34,14 +34,14 @@ fzkdf <- function(x, t = NULL, h = NULL) {
        method = "Fauzi KDFE bias-variance (Ch 2)")
 }
 
-.morie_silverman_h <- function(x) {
-  n <- length(x); s <- stats::sd(x)
-  iq <- diff(stats::quantile(x, c(.25, .75), names = FALSE)) / 1.34
-  sigma <- if (iq > 0) min(s, iq) else s
-  if (sigma <= 0) sigma <- 1
-  1.06 * sigma * n^(-1/5)
-}
+# `.morie_silverman_h` moved to R/_helpers_fauzi.R so every fz*.R caller can
+# rely on it being defined regardless of source order.
 
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(500)
 # r <- fzkdf(x, t = 0); stopifnot(abs(r$estimate - 0.5) < 0.1)
+
+#' @rdname fzkdf
+#' @keywords internal
+#' @export
+fauzi_kdfe_properties <- fzkdf

@@ -39,3 +39,8 @@ rgenv <- function(x) {
        instantaneous_phase = phase_unwrapped,
        instantaneous_freq = inst_freq)
 }
+
+#' @rdname rgenv
+#' @keywords internal
+#' @export
+rangayyan_envelope <- rgenv

@@ -32,3 +32,8 @@ fzqnt <- function(x, p = 0.5, h = NULL) {
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(1000)
 # r <- fzqnt(x, p = 0.5); stopifnot(abs(r$estimate) < 0.15)
+
+#' @rdname fzqnt
+#' @keywords internal
+#' @export
+fauzi_kernel_quantile_asymptotic <- fzqnt

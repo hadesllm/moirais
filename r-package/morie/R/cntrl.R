@@ -35,3 +35,8 @@ cntrl_estimator <- function(y, c_var, mu_c) {
 # # E[Y] estimated using U as a control variate; mu_c = 0.5
 # r <- cntrl_estimator(y, u, 0.5)
 # stopifnot(abs(r$estimate - 0.5) < 0.01, r$var_ratio_cv_over_crude < 0.01)
+
+#' @rdname cntrl_estimator
+#' @keywords internal
+#' @export
+control_variates <- cntrl_estimator

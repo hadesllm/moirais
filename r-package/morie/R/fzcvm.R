@@ -52,3 +52,8 @@ fzcvm <- function(x, cdf = "norm", args = NULL, h = NULL) {
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(500); r <- fzcvm(x, cdf = "norm", args = list(0,1))
 # stopifnot(r$statistic >= 0)
+
+#' @rdname fzcvm
+#' @keywords internal
+#' @export
+fauzi_cvm_smoothed <- fzcvm

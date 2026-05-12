@@ -48,3 +48,8 @@ rgcoh <- function(x, y, fs = 1.0, nperseg = NULL) {
        peak_freq = freqs[peak],
        peak_coherence = Cxy[peak])
 }
+
+#' @rdname rgcoh
+#' @keywords internal
+#' @export
+rangayyan_coherence <- rgcoh

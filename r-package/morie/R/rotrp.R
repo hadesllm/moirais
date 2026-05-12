@@ -34,3 +34,8 @@ rotrp_rotary_position_embedding <- function(x, base = 10000) {
   list(y = y, estimate = y, angles = angles,
        method = "Rotary position embedding")
 }
+
+#' @rdname rotrp_rotary_position_embedding
+#' @keywords internal
+#' @export
+rotary_position_embedding <- rotrp_rotary_position_embedding

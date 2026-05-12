@@ -52,3 +52,17 @@ Thumbs.db
 
 # Large datasets (downloaded via moirais download-bootstrap)
 src/moirais/data/*.db
+
+# ad-hoc smoke harnesses (use tests/parity/ for the canonical ones)
+_smoke_*
+_smoke_stdout.txt
+scripts/_smoke*
+scripts/_ksr_smoke*
+
+# Vignette build artifacts (LaTeX intermediate files)
+r-package/morie/vignettes/*.log
+r-package/morie/vignettes/*.aux
+r-package/morie/vignettes/*.toc
+r-package/morie/vignettes/*.out
+r-package/morie/vignettes/*.synctex.gz
+r-package/morie/vignettes/*.tex

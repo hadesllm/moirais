@@ -46,3 +46,8 @@ strat <- function(data, y = "y", strata = "stratum", pop_sizes = NULL) {
 # r <- strat(df, "y", "stratum")
 # # equal n per stratum, equal weights -> estimate = (mean_a + mean_b)/2 = (2+11)/2 = 6.5
 # stopifnot(abs(r$estimate - 6.5) < 1e-9)
+
+#' @rdname strat
+#' @keywords internal
+#' @export
+stratified_sampling <- strat

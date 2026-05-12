@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #' Nonparametric quantile function with asymptotic SEs (Parzen 1979)
 #'
-#' Q(tau) = inf{x : F_n(x) >= tau}; asymptotic SE
+#' Q(tau) = inf over x of F_n(x) at least tau; asymptotic SE
 #'   se(Q(tau)) ≈ sqrt(tau(1-tau) / (n f(Q(tau))^2)),
 #' with f estimated by a Gaussian kernel (Silverman's rule bandwidth).
 #'
@@ -34,3 +34,8 @@ quntf <- function(x, taus = NULL) {
 # set.seed(0); x <- rnorm(2000)
 # r <- quntf(x, taus = 0.5)
 # stopifnot(abs(r$quantiles[1]) < 0.1)
+
+#' @rdname quntf
+#' @keywords internal
+#' @export
+quantile_function <- quntf

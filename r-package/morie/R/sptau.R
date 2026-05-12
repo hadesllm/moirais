@@ -63,3 +63,8 @@ sptau <- function(x, w) {
 # x <- c(1,2,3,4,5); n <- 5; W <- matrix(0, n, n)
 # for (i in 1:(n-1)) { W[i,i+1] <- 1; W[i+1,i] <- 1 }
 # sptau(x, W)$statistic   # expect 0.5
+
+#' @rdname sptau
+#' @keywords internal
+#' @export
+spatial_autocorrelation <- sptau

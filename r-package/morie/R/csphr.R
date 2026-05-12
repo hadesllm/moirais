@@ -41,6 +41,7 @@ csphr <- function(x, votes = NULL) {
        n = n, p = p, method = "cutting_plane_sphere")
 }
 
+#' @keywords internal
 #' @rdname csphr
 #' @export
 cutting_plane_sphere <- csphr

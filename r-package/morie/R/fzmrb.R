@@ -38,3 +38,8 @@ fzmrb <- function(x, t = NULL, h = NULL) {
 # CANONICAL TEST
 # set.seed(0); x <- rexp(2000, 1)
 # r <- fzmrb(x, t = 0.5); stopifnot(abs(r$estimate - 1) < 0.2)
+
+#' @rdname fzmrb
+#' @keywords internal
+#' @export
+fauzi_mrl_boundary_free <- fzmrb

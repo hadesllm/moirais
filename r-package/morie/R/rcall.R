@@ -4,8 +4,8 @@
 #'
 #' Summarises an n by m vote matrix into total yea/nay/absent counts,
 #' per-roll-call marginals, and the Poole-Rosenthal "lopsided"
-#' (>=97.5%) share. Accepts Poole-Rosenthal codes ({1,2,3}=yea,
-#' {4,5,6}=nay, {0,7,8,9}=absent) and re-maps automatically.
+#' (>=97.5%) share. Accepts Poole-Rosenthal codes (1, 2, 3 = yea;
+#' 4, 5, 6 = nay; 0, 7, 8, 9 = absent) and re-maps automatically.
 #'
 #' @param x Numeric matrix (n by m).
 #' @return Named list with `n`, `m`, `n_yea`, `n_nay`, `n_abs`,
@@ -37,6 +37,7 @@ rcall <- function(x) {
        method = "roll_call_analysis")
 }
 
+#' @keywords internal
 #' @rdname rcall
 #' @export
 roll_call_analysis <- rcall

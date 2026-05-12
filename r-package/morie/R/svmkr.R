@@ -13,10 +13,13 @@
 #' @param seed RNG seed.
 #' @return Named list: estimate, train_accuracy, n_support, kernel, C,
 #'   gamma, degree, n, method.
-#' @importFrom e1071 svm
+#' @importFrom stats predict
 #' @export
 svm_kernel_trick <- function(x, y, kernel = "rbf", C = 1.0,
                               gamma = "scale", degree = 3L, seed = 0L) {
+  if (!requireNamespace("e1071", quietly = TRUE)) {
+    stop("Function 'svm_kernel_trick' requires package 'e1071'. Install with install.packages('e1071').")
+  }
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)
   x <- as.matrix(x); y <- as.factor(y)
   p <- ncol(x)

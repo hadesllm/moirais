@@ -33,3 +33,8 @@ nstat <- function(x, coords, bandwidth = NULL) {
                        bandwidth = bandwidth),
        n = n, method = "Non-stationary covariance (moving-window kernel)")
 }
+
+#' @rdname nstat
+#' @keywords internal
+#' @export
+nonstationary_covariance <- nstat

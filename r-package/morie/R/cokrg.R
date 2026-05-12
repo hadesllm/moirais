@@ -52,3 +52,8 @@ cokrg <- function(x, y, coords, target,
        se = if (m == 1) ses[1] else ses, n = n,
        method = "Simple cokriging (linear coregionalization, exp. cov)")
 }
+
+#' @rdname cokrg
+#' @keywords internal
+#' @export
+cokriging <- cokrg

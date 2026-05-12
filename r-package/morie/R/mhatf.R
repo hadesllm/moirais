@@ -52,3 +52,8 @@ mhatf_multi_head_attention_full <- function(x, num_heads = 2L,
        d_k = as.integer(d_k), d_model = as.integer(d_model),
        method = "Multi-head attention")
 }
+
+#' @rdname mhatf_multi_head_attention_full
+#' @keywords internal
+#' @export
+multi_head_attention_full <- mhatf_multi_head_attention_full

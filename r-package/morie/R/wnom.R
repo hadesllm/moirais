@@ -48,6 +48,12 @@ wnom <- function(votes, x, z_yea, z_nay, beta = 15, w = NULL) {
        n_total = n_total, method = "wnominate_estimate")
 }
 
+#' @keywords internal
 #' @rdname wnom
 #' @export
 wnominate_estimate <- wnom
+
+#' @rdname wnom
+#' @keywords internal
+#' @export
+wnominate <- wnom

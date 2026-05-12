@@ -10,9 +10,12 @@
 #' @param seed RNG seed.
 #' @return Named list: estimate, intercept, weights, train_accuracy, C,
 #'   classes, n, method.
-#' @importFrom e1071 svm
+#' @importFrom stats predict
 #' @export
 svm_hinge_primal <- function(x, y, C = 1.0, seed = 0L) {
+  if (!requireNamespace("e1071", quietly = TRUE)) {
+    stop("Function 'svm_hinge_primal' requires package 'e1071'. Install with install.packages('e1071').")
+  }
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)
   x <- as.matrix(x); y <- as.factor(y)
   classes <- levels(y)

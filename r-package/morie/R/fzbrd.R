@@ -32,3 +32,8 @@ fzbrd <- function(x, t = NULL, h = NULL, c = 2) {
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(500)
 # r <- fzbrd(x, t = 0); stopifnot(abs(r$estimate - 0.5) < 0.1)
+
+#' @rdname fzbrd
+#' @keywords internal
+#' @export
+fauzi_bias_reduced_kdfe <- fzbrd

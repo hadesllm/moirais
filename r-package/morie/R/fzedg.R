@@ -33,3 +33,8 @@ fzedg <- function(x, z = 1.96, p = 0.5) {
 
 # CANONICAL TEST
 # r <- fzedg(1:10, z = 1.96, p = 0.5); stopifnot(abs(r$skew) < 1e-12)
+
+#' @rdname fzedg
+#' @keywords internal
+#' @export
+fauzi_edgeworth_quantile <- fzedg

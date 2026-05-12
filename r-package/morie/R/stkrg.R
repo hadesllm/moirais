@@ -48,3 +48,8 @@ stkrg <- function(x, coords, times, target,
 }
 
 # CANONICAL TEST -- predict at an observed site, should reproduce z
+
+#' @rdname stkrg
+#' @keywords internal
+#' @export
+spatiotemporal_kriging <- stkrg

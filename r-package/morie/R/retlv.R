@@ -45,3 +45,8 @@ retlv <- function(x, return_period = 100) {
 # r <- retlv(x, return_period = 100)
 # # 100-yr Gumbel level: 10 - 2*log(-log(0.99)) ~= 19.2
 # stopifnot(r$z > 16, r$z < 23)
+
+#' @rdname retlv
+#' @keywords internal
+#' @export
+return_level <- retlv

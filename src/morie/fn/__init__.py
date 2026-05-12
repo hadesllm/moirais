@@ -1,8 +1,8 @@
 """
 morie.fn — Individual function files.
 
-Auto-generated imports from each module's __all__ (validated as identifiers).
-Do not hand-edit; regenerate via the helper script in scripts/.
+Auto-generated imports from each module's validated __all__.
+Do not hand-edit.
 """
 
 from .a2cv import a2c
@@ -10954,7 +10954,7 @@ from .flowmin import min_cut
 from .flowmm import max_flow_min_cut
 from .floyd import floyd_warshall
 from .flsh2 import flash_attention
-from .flshA import flash_attention
+from .flsha import flash_attention
 from .flskpa import fleiss_kappa
 from .fltplt import plot_filter_io_fn
 from .flxipt import flexible_iptw

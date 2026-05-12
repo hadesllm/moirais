@@ -42,3 +42,8 @@ grucl_gru_cell <- function(x, h_prev = NULL, W = NULL, U = NULL, b = NULL,
   list(h = h, estimate = h, z = z, r = r, n = n,
        method = "GRU cell forward")
 }
+
+#' @rdname grucl_gru_cell
+#' @keywords internal
+#' @export
+gru_cell <- grucl_gru_cell

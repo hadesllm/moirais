@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #' Leave-one-out cross-validation for ordinary kriging.
 #'
-#' MSPE = (1/n) sum (Z(s_i) - Z_hat_{-i}(s_i))^2.
+#' MSPE = (1/n) sum (Z(s_i) - Z_hat_minus_i(s_i))^2.
 #'
 #' @param x Numeric vector.
 #' @param coords Coord matrix.
@@ -35,3 +35,8 @@ spcrs <- function(x, coords, nugget = 0, sill = 1, range_ = 1) {
                        MAE = mean(abs(resid)), residuals = resid),
        n = n, method = "LOO cross-validation for ordinary kriging")
 }
+
+#' @rdname spcrs
+#' @keywords internal
+#' @export
+spatial_cross_validation <- spcrs

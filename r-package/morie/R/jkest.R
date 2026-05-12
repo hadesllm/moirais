@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #' Jackknife bias and variance (Quenouille 1956, Tukey 1958)
 #'
-#' Leave-one-out jackknife: bias_jack = (n-1)(mean(T_{-i}) - T_hat),
-#' var_jack = (n-1)/n * sum (T_{-i} - mean(T_{-i}))^2,
-#' T_jack = n T_hat - (n-1) mean(T_{-i}).
+#' Leave-one-out jackknife: bias_jack = (n-1)*(mean(T_minus_i) - T_hat),
+#' var_jack = (n-1)/n * sum((T_minus_i - mean(T_minus_i))^2),
+#' T_jack = n*T_hat - (n-1)*mean(T_minus_i).
 #'
 #' @param x numeric vector.
 #' @param statistic function returning a scalar; default \code{mean}.
@@ -36,3 +36,8 @@ jkest <- function(x, statistic = NULL) {
 # CANONICAL TEST
 # r <- jkest(c(3, 5, 7, 9, 11))
 # stopifnot(abs(r$theta_hat - 7) < 1e-12, abs(r$bias) < 1e-12)
+
+#' @rdname jkest
+#' @keywords internal
+#' @export
+jackknife_estimator <- jkest

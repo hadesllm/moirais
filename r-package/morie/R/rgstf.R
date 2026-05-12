@@ -46,3 +46,8 @@ rgstf <- function(x, fs = 1.0, nperseg = 256L, noverlap = NULL,
   list(freqs = freqs, times = times, Sxx = Sxx,
        nperseg = nperseg, noverlap = as.integer(noverlap), fs = fs)
 }
+
+#' @rdname rgstf
+#' @keywords internal
+#' @export
+rangayyan_stft <- rgstf

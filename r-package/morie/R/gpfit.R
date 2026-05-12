@@ -50,3 +50,8 @@ gpfit <- function(x, threshold = NULL) {
 # set.seed(0); x <- rexp(2000, rate = 1)
 # r <- gpfit(x, threshold = 0.5)
 # stopifnot(abs(r$shape) < 0.2)  # exponential = GP(xi=0)
+
+#' @rdname gpfit
+#' @keywords internal
+#' @export
+generalized_pareto <- gpfit

@@ -28,3 +28,8 @@ cnn1d_conv1d_forward <- function(x, w, b = 0, stride = 1L, padding = 0L) {
   list(y = y, estimate = y, output_length = out_len,
        method = "Conv1D forward (cross-correlation)")
 }
+
+#' @rdname cnn1d_conv1d_forward
+#' @keywords internal
+#' @export
+conv1d_forward <- cnn1d_conv1d_forward

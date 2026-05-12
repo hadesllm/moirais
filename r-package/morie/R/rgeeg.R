@@ -42,3 +42,8 @@ rgeeg <- function(x, fs, bands = NULL, nperseg = NULL) {
   list(absolute = absolute, relative = relative,
        total_power = total, freqs = freqs, psd = psd)
 }
+
+#' @rdname rgeeg
+#' @keywords internal
+#' @export
+rangayyan_eeg_bands <- rgeeg

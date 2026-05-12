@@ -53,3 +53,8 @@ vines <- function(x) {
 # z <- MASS::mvrnorm(500, c(0,0,0), Sigma)
 # r <- vines(z)
 # stopifnot(r$d == 3L, is.finite(r$loglik))
+
+#' @rdname vines
+#' @keywords internal
+#' @export
+vine_copula <- vines

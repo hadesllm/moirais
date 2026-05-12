@@ -47,6 +47,7 @@ algnm <- function(x, party = NULL) {
        method = "rice_cohesion")
 }
 
+#' @keywords internal
 #' @rdname algnm
 #' @export
 party_alignment <- algnm

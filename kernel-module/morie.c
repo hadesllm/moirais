@@ -18,14 +18,19 @@
  *     module/sysfs/proc API needed to publish metadata.
  *
  * The module exists as a visible GPL declaration in ring 0 and as a
- * sysfs touchpoint for downstream tooling (audit scripts, package
- * managers, build pipelines) that wants to confirm the morie userspace
- * stack is paired with a GPL kernel component.
+ * minimal kernel-side correlate of the userspace package.
+ *
+ * License-split note (since v0.3.0):
+ *   - kernel-module/morie.c (this file):     GPL-2.0-only (mandatory)
+ *   - Python package      (src/morie/):     MIT OR Apache-2.0
+ *   - R package           (r-package/):     GPL-2.0-only
+ *   - Papers + data + doc:                  CC-BY-4.0
+ * See LICENSING.md at the repo root for the full breakdown.
  *
  * Build (out-of-tree):
  *     make -C /lib/modules/$(uname -r)/build M=$(pwd) modules
  *     sudo insmod morie.ko
- *     cat /sys/kernel/morie/version    # "0.2.0"
+ *     cat /sys/kernel/morie/version    # "0.3.0"
  *     cat /sys/kernel/morie/license    # "GPL-2.0-only"
  *     sudo rmmod morie
  *
@@ -39,7 +44,7 @@
 #include <linux/kobject.h>
 #include <linux/sysfs.h>
 
-#define MORIE_VERSION    "0.2.0"
+#define MORIE_VERSION    "0.3.0"
 #define MORIE_LICENSE_ID "GPL-2.0-only"
 
 static struct kobject *morie_kobj;

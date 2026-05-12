@@ -12,10 +12,12 @@
 #' @param l1_ratio glmnet alpha; only used when penalty = "elasticnet".
 #' @return Named list: estimate, coef_path, alphas, penalty, l1_ratio,
 #'   n, method.
-#' @importFrom glmnet glmnet
 #' @export
 regularization_path <- function(x, y, penalty = c("ridge", "lasso", "elasticnet"),
                                 alphas = NULL, l1_ratio = 0.5) {
+  if (!requireNamespace("glmnet", quietly = TRUE)) {
+    stop("Function 'regularization_path' requires package 'glmnet'. Install with install.packages('glmnet').")
+  }
   penalty <- match.arg(penalty)
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)
   x <- as.matrix(x); y <- as.numeric(y)

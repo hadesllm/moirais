@@ -36,3 +36,8 @@ copul <- function(x, y, family = c("gaussian", "clayton", "gumbel")) {
 # z <- MASS::mvrnorm(500, c(0,0), Sigma)
 # r <- copul(z[,1], z[,2], family = "gaussian")
 # stopifnot(abs(r$estimate - 0.7) < 0.1)
+
+#' @rdname copul
+#' @keywords internal
+#' @export
+copula_estimation <- copul

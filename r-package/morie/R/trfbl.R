@@ -44,3 +44,8 @@ trfbl_transformer_block <- function(x, num_heads = 2L, d_ff = NULL,
 .trfbl_gelu <- function(z) {
   0.5 * z * (1 + tanh(sqrt(2 / pi) * (z + 0.044715 * z^3)))
 }
+
+#' @rdname trfbl_transformer_block
+#' @keywords internal
+#' @export
+transformer_block <- trfbl_transformer_block

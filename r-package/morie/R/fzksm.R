@@ -44,3 +44,8 @@ fzksm <- function(x, cdf = "norm", args = NULL, h = NULL, n_grid = 512L) {
 # CANONICAL TEST
 # set.seed(0); x <- rnorm(500)
 # r <- fzksm(x, cdf = "norm", args = list(0, 1)); stopifnot(r$p_value > 0.05)
+
+#' @rdname fzksm
+#' @keywords internal
+#' @export
+fauzi_ks_smoothed <- fzksm

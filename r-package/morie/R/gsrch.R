@@ -14,10 +14,12 @@
 #' @param seed RNG seed.
 #' @return Named list: estimate (best CV score), best_params, best_score,
 #'   cv_results_params, cv_results_mean_score, task, n, method.
-#' @importFrom caret train trainControl
 #' @export
 grid_search_cv <- function(x, y, method = NULL, tune_grid = NULL,
                             cv = 5L, task = "auto", seed = 0L) {
+  if (!requireNamespace("caret", quietly = TRUE)) {
+    stop("Function 'grid_search_cv' requires package 'caret'. Install with install.packages('caret').")
+  }
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)
   x <- as.matrix(x); colnames(x) <- colnames(x) %||% paste0("x", seq_len(ncol(x)) - 1L)
   if (identical(task, "auto")) {

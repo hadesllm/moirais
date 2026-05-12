@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
-#' Two-way G×E ANOVA with EMS variance components
+#' Two-way GxE ANOVA with EMS variance components
 #'
 #' @param x Genotype IDs (length n).
 #' @param y Numeric response.
@@ -46,7 +46,7 @@ gxe_interaction_model <- function(x, y, env) {
   list(estimate = mu, g = g_eff, e = e_eff, ge = ge_eff,
        var_g = var_g, var_e = var_e, var_ge = var_ge, var_eps = var_eps,
        se = sqrt(var_eps), n = n,
-       method = "Two-way G×E ANOVA + EMS variance components")
+       method = "Two-way GxE ANOVA + EMS variance components")
 }
 
 # CANONICAL TEST

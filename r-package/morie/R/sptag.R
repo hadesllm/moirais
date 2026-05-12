@@ -30,6 +30,7 @@ sptag <- function(x) {
        n = n, m = m, method = "spatial_agreement")
 }
 
+#' @keywords internal
 #' @rdname sptag
 #' @export
 spatial_agreement <- sptag

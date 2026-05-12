@@ -34,6 +34,7 @@ dimrd <- function(x, threshold = 1) {
        method = "dimensionality_test")
 }
 
+#' @keywords internal
 #' @rdname dimrd
 #' @export
 dimensionality_test <- dimrd

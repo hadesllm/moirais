@@ -2,7 +2,7 @@
 
 #' Gaussian multiplier bootstrap for Z-estimators
 #'
-#' G_n^xi(f) = n^{-1/2} sum_i xi_i (f(X_i) - P_n f), xi ~ N(0,1).
+#' G_n_xi(f) = n raised to the power of -1/2 times sum_i xi_i (f(X_i) - P_n f), xi ~ N(0,1).
 #'
 #' @param x Numeric vector.
 #' @param B Number of multiplier replications.
@@ -28,3 +28,8 @@ ksr08_kosorok_multiplier_bootstrap <- function(x, B = 1000, seed = 0) {
 
 # CANONICAL TEST
 # set.seed(0); ksr08_kosorok_multiplier_bootstrap(rnorm(200), B=500, seed=42)
+
+#' @rdname ksr08_kosorok_multiplier_bootstrap
+#' @keywords internal
+#' @export
+kosorok_multiplier_bootstrap <- ksr08_kosorok_multiplier_bootstrap

@@ -45,3 +45,8 @@ rglyp <- function(x, m = 3L, tau = 1L, max_t = NULL, theiler = 10L) {
   list(lyapunov = unname(lam), divergence_curve = div,
        t = seq_len(max_t))
 }
+
+#' @rdname rglyp
+#' @keywords internal
+#' @export
+rangayyan_lyapunov <- rglyp

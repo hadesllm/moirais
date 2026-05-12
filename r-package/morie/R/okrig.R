@@ -59,3 +59,8 @@ okrig <- function(x, coords, target, model = "exponential",
 # CANONICAL TEST
 # okrig(c(1,2,3,4,5), matrix(0:4, ncol=1), matrix(2.5, 1, 1),
 #       "exponential", 0, 1, 2)$estimate  # ~ 3.5
+
+#' @rdname okrig
+#' @keywords internal
+#' @export
+ordinary_kriging <- okrig

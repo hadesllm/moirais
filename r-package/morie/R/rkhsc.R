@@ -2,7 +2,7 @@
 #' RKHS kernel ridge regression (Wahba 1990)
 #'
 #' Solves min_f  (1/n) ||y - f(x)||^2 + lambda ||f||_H^2 in a Gaussian
-#' RKHS.  Closed form alpha = (K + n lambda I)^{-1} y.
+#' RKHS.  Closed form alpha = solve(K + n*lambda*I) %*% y.
 #'
 #' @param x numeric vector or matrix of predictors.
 #' @param y numeric outcome vector.
@@ -39,3 +39,8 @@ rkhsc <- function(x, y, sigma = NULL, lam = 1e-3) {
 # set.seed(0); x <- seq(0, 1, length.out = 50); y <- sin(2*pi*x) + rnorm(50, sd = 0.05)
 # r <- rkhsc(x, y, lam = 1e-4)
 # stopifnot(r$r2 > 0.9)
+
+#' @rdname rkhsc
+#' @keywords internal
+#' @export
+rkhs_kernel_regression <- rkhsc

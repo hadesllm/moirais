@@ -2,7 +2,7 @@
 
 #' Rank placements of Y among X order statistics (Gibbons Ch 2.11.3)
 #'
-#' For each Y_j: placement P_j = #{X_i < Y_j}.  Their sum is the
+#' For each Y_j: placement P_j = number of X_i less than Y_j.  Their sum is the
 #' Mann-Whitney U statistic for Y vs X.
 #'
 #' @param x,y Numeric vectors.

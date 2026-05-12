@@ -1,8 +1,12 @@
 # Smoke test for ksr01..ksr20: source each R file then call with the
 # same canonical fixtures as the Python smoke test.
+# Skip when the hardcoded sibling-checkout path isn't present (CI runners
+# have no /tmp/morie-feature/). The smoke is a local-only convenience.
+ksr_files <- sprintf("/tmp/morie-feature/r-package/morie/R/ksr%02d.R", 1:20)
+testthat::skip_if_not(all(file.exists(ksr_files)),
+                      "local /tmp/morie-feature mirror not available")
 suppressMessages({
-  for (f in sprintf("/tmp/morie-feature/r-package/morie/R/ksr%02d.R", 1:20))
-    source(f)
+  for (f in ksr_files) source(f)
 })
 
 xs <- c(0.1, 0.4, -0.3, 0.7, 0.05, -0.9, 1.2, -0.4, 0.6, -0.1,

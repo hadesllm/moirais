@@ -1,7 +1,7 @@
 Package: moirais
 Type: Package
 Title: Deprecated Alias for the 'morie' Package
-Version: 0.4.1
+Version: 0.4.2
 Authors@R: c(
   person(
     given = "Vansh Singh",

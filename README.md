@@ -6,8 +6,8 @@
 
 A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the MRM framework as a primary application for Canadian carceral, police, and oversight data analysis.
 
-[![Python: MIT OR Apache-2.0](https://img.shields.io/badge/Python-MIT_OR_Apache--2.0-3776ab.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT)
-[![R: GPL-2.0-only](https://img.shields.io/badge/R-GPL--2.0--only-276DC3.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE-GPL2)
+[![Python: MIT OR Apache-2.0](https://img.shields.io/badge/Python-MIT_OR_Apache--2.0-3776ab.svg)](https://github.com/hadesllm/morie/blob/main/licenses/LICENSE-MIT)
+[![R: GPL-2.0-only](https://img.shields.io/badge/R-GPL--2.0--only-276DC3.svg)](https://github.com/hadesllm/morie/blob/main/licenses/LICENSE-GPL2)
 [![PyPI version](https://img.shields.io/pypi/v/morie.svg)](https://pypi.org/project/morie/)
 [![r-universe](https://img.shields.io/badge/r--universe-hadesllm-276DC3)](https://hadesllm.r-universe.dev/morie)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -159,8 +159,8 @@ under the same standard disclaimer.
 
 MORIE adopts a **per-component licensing model** (since v0.3.0):
 
-- **Python package** (`src/morie/`, `src/moirais/`) — dual-licensed `MIT OR Apache-2.0` (the Rust-ecosystem convention; recipient picks either).  See [`LICENSE-MIT`](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT) and [`LICENSE-APACHE`](https://github.com/hadesllm/morie/blob/main/LICENSE-APACHE).
-- **R package** (`r-package/morie/`, `r-package/moirais/`) — `GPL-2.0-only` (matches the R-ecosystem / CRAN convention).  See [`LICENSE-GPL2`](https://github.com/hadesllm/morie/blob/main/LICENSE-GPL2).
+- **Python package** (`src/morie/`, `src/moirais/`) — dual-licensed `MIT OR Apache-2.0` (the Rust-ecosystem convention; recipient picks either).  See [`LICENSE-MIT`](https://github.com/hadesllm/morie/blob/main/licenses/LICENSE-MIT) and [`LICENSE-APACHE`](https://github.com/hadesllm/morie/blob/main/licenses/LICENSE-APACHE).
+- **R package** (`r-package/morie/`, `r-package/moirais/`) — `GPL-2.0-only` (matches the R-ecosystem / CRAN convention).  See [`LICENSE-GPL2`](https://github.com/hadesllm/morie/blob/main/licenses/LICENSE-GPL2).
 - **Linux kernel module** (`kernel-module/morie.c`) — `GPL-2.0-only` (kernel ABI requirement).
 - **Papers, data and documentation** — `CC-BY-4.0` unless explicitly marked otherwise.
 

@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "morie"
-version = "0.4.1"
+version = "0.4.2"
 description = "Multi-domain Open Research and Inferential Estimation. Multi-domain scientific computing toolkit hosting the MRM framework for Canadian carceral, police, and oversight data, with general-purpose causal inference, signal processing, cryptography, spatial statistics, statistical physics, and psychometrics modules. (Renamed from MOIRAIS in v0.1.3; the moirais module remains as a deprecated alias.)"
 authors = [
   { name="Vansh Singh Ruhela", email="hadesllm@proton.me" }
 ]
 license = "MIT OR Apache-2.0"
-license-files = ["LICENSE-MIT", "LICENSE-APACHE"]
+license-files = ["licenses/LICENSE-MIT", "licenses/LICENSE-APACHE"]
 readme = "README.md"
 requires-python = ">=3.10"
 keywords = [

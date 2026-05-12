@@ -355,10 +355,10 @@ display: none;
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>For aggregate contingency tables — the kind that sit behind the Doob
+<p>For aggregate contingency tables \u2014 the kind that sit behind the Doob
 <span class="math inline">\(\chi^{2}\)</span> family in the MRM
-framework — MORIE exposes <code>chi_square_test()</code> and the
-companion effect-size helpers (Cramer’s V, omega-squared) as first-class
+framework \u2014 MORIE exposes <code>chi_square_test()</code> and the
+companion effect-size helpers (Cramer\u2019s V, omega-squared) as first-class
 functions.</p>
 </div>
 <div id="a-2x3-contingency-table" class="section level1">
@@ -380,11 +380,11 @@ result$df
 degrees of freedom in a tidy list.</p>
 </div>
 <div id="effect-size-cramers-v" class="section level1">
-<h1>Effect size: Cramer’s V</h1>
+<h1>Effect size: Cramer\u2019s V</h1>
 <pre class="r"><code>v &lt;- cramers_v(tab)
 v
 #&gt; [1] 0.209657</code></pre>
-<p>Cramer’s V scales the chi-square statistic to a 0–1 association
+<p>Cramer\u2019s V scales the chi-square statistic to a 0\u20131 association
 measure that is more interpretable than the raw statistic.</p>
 </div>
 <div id="one-way-anova-omega-squared" class="section level1">
@@ -409,7 +409,7 @@ omega_squared(f_stat = fstat, df_between = df_b, df_within = df_w, n = n)
 </div>
 <div id="doob-chi2-family" class="section level1">
 <h1>Doob <span class="math inline">\(\chi^{2}\)</span> family</h1>
-<p>The MRM framework’s “Doob <span class="math inline">\(\chi^{2}\)</span> family” is a coordinated set of
+<p>The MRM framework\u2019s \u201cDoob <span class="math inline">\(\chi^{2}\)</span> family\u201d is a coordinated set of
 chi-square tests on the published Sprott / Doob / Iftene contingency
 tables (federal SIU operation, COVID-period operation,
 torture-classification rates, IEDM analyses). MORIE reproduces all five
@@ -420,7 +420,7 @@ of the printed values; details are in the MRM paper
 <div id="where-to-go-next" class="section level1">
 <h1>Where to go next</h1>
 <ul>
-<li>The <code>effect-sizes</code> vignette covers Cohen’s d, Cramer’s V,
+<li>The <code>effect-sizes</code> vignette covers Cohen\u2019s d, Cramer\u2019s V,
 omega-squared, proportion-CI, and the E-value in one place.</li>
 <li>The <code>mrm-otis-walkthrough</code> vignette shows the chi-square
 family applied to OTIS provincial data.</li>

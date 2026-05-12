@@ -1,14 +1,14 @@
 Package: morie
 Type: Package
 Title: Multi-Domain Open Research and Inferential Estimation
-Version: 0.4.8
+Version: 0.4.11
 Authors@R: c(
   person(
     given = "Vansh Singh",
     family = "Ruhela",
     email = "hadesllm@proton.me",
     role = c("aut", "cre"),
-    comment = c(ORCID = "0009-0004-1750-3592", "IPA pronunciation: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/")
+    comment = c(ORCID = "0009-0004-1750-3592")
   )
  )
 Maintainer: Vansh Singh Ruhela <hadesllm@proton.me>

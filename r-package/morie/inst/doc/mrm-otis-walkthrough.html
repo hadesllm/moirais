@@ -356,7 +356,7 @@ data</h1>
 
 <div id="what-this-vignette-covers" class="section level1">
 <h1>What this vignette covers</h1>
-<p>The <strong>MRM (McNamara–Ruhela–Medina)</strong> framework is a
+<p>The <strong>MRM (McNamara\u2013Ruhela\u2013Medina)</strong> framework is a
 coordinated set of ten causal estimators paired with a multi-source data
 layer for Canadian carceral, police, and oversight data. This vignette
 uses the provincial Ontario Tracking Information System (OTIS)
@@ -391,8 +391,8 @@ result &lt;- estimate_ate(
   covariates = c(&quot;age&quot;, &quot;sex&quot;, &quot;region&quot;, &quot;fiscal_year&quot;)
 )
 print(result)</code></pre>
-<p>The returned object summarises the IPW (Hájek), AIPW
-(Robins–Rotnitzky–Zhao), g-computation, propensity-score-matching (1:1
+<p>The returned object summarises the IPW (Hajek), AIPW
+(Robins\u2013Rotnitzky\u2013Zhao), g-computation, propensity-score-matching (1:1
 NN and five-strata subclass), IRM-DML (Chernozhukov <em>et al.</em>
 2018), PLR-DML, and SuperLearner-stacked AIPW estimates. Multi-SE
 comparison (pooled, cluster on fiscal year, cluster on individual ID,
@@ -422,14 +422,14 @@ formal aggregate-IRR notation.</p>
 applied at both the federal and provincial levels. The provincial
 implementation uses a duration-only proxy that is documented explicitly
 in the framework paper. Federal counterpart analyses (SIU IAP,
-Sprott–Doob–Iftene) live in the companion Python module
+Sprott\u2013Doob\u2013Iftene) live in the companion Python module
 <code>morie.tps_csi</code> and <code>morie.siu_iap</code>.</p>
 </div>
 <div id="where-to-go-next" class="section level1">
 <h1>Where to go next</h1>
 <ul>
 <li>The full MRM framework paper, including all ten estimators, multi-SE
-comparison, propensity calibration, and the Sprott–Doob–Iftene
+comparison, propensity calibration, and the Sprott\u2013Doob\u2013Iftene
 replication tables, is at Zenodo <a href="https://doi.org/10.5281/zenodo.20096075">10.5281/zenodo.20096075</a>.</li>
 <li>The MORIE package paper covers the broader toolkit: <a href="https://doi.org/10.5281/zenodo.20096350">10.5281/zenodo.20096350</a>.</li>
 <li>Citation: see <code>citation(&quot;morie&quot;)</code>.</li>

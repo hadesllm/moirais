@@ -28,10 +28,10 @@ network-free.
 
 For the full datasets:
 
-* OTIS → `morie_load_dataset("otisb01")` (downloads via CKAN on
+* OTIS \u2192 `morie_load_dataset("otisb01")` (downloads via CKAN on
   first call; subsequent calls hit the local SQLite cache)
-* TPS → `morie_fetch_tps("Assault")` (ArcGIS REST)
-* SIU → `morie_fetch_siu()` (on-demand scrape of public reports)
+* TPS \u2192 `morie_fetch_tps("Assault")` (ArcGIS REST)
+* SIU \u2192 `morie_fetch_siu()` (on-demand scrape of public reports)
 
 See `vignette("mrm-dataset-fetchers")` for the dataset side.
 
@@ -46,8 +46,8 @@ tps <- morie_sample("tps_assault")
 
 ## Placement-count concentration on `b09`
 
-The b09 long-format file publishes per (fiscal year × placement-count
-band × gender) counts of individuals in segregation. The callable
+The b09 long-format file publishes per (fiscal year \u00d7 placement-count
+band \u00d7 gender) counts of individuals in segregation. The callable
 expands the banded counts using midpoints and returns Hill-MLE Pareto
 exponent, Gini coefficient, mean placements per individual, and the
 top-k% concentration share.
@@ -64,7 +64,7 @@ design.
 ## Segregation-duration KM on `b01`
 
 `NumberConsecutiveDays_Segregation` is the duration in days of each
-placement (no censoring — all durations are observed). The callable
+placement (no censoring \u2014 all durations are observed). The callable
 reports the per-stratum mean, median, q25, and the fraction
 above the UN Mandela 15-day cutoff.
 
@@ -81,7 +81,7 @@ persistent person identifier, which produces a spurious cross-year
 
 The three b01 alert flags (`MentalHealth_Alert`, `SuicideRisk_Alert`,
 `SuicideWatch_Alert`) co-occur to a degree well above independence.
-The substantive figure is `MentalHealth × SuicideRisk` Cramer's V.
+The substantive figure is `MentalHealth \u00d7 SuicideRisk` Cramer's V.
 
 ```{r mortification}
 mrm_otis_mortification_cooccurrence(b01)
@@ -90,7 +90,7 @@ mrm_otis_mortification_cooccurrence(b01)
 ## Region locality
 
 Ontario provincial seg/RC placement is overwhelmingly
-locality-preserving — over 95% of placements remain within the same
+locality-preserving \u2014 over 95% of placements remain within the same
 region in the full b01.
 
 ```{r region, eval = FALSE}
@@ -115,7 +115,7 @@ mrm_classify_mandela(b01, denominator = "individual_cumulative")
 
 The provincial-canonical 12.5/16.5/20.6 % torture rates from c11
 require the `c11` aggregate (loaded via `morie_sample("otis_c11")`);
-see the MRM empirical paper §6.
+see the MRM empirical paper \u00a76.
 
 # TPS suite
 
@@ -157,7 +157,7 @@ head(mrm_tps_neighbourhood_recurrence_km(tps))
 
 `mrm_tps_load_hawkes_refit(path)` reads
 `paper_hawkes_refit.json` (the per-category Hawkes refit table from
-the MRM empirical paper §7.1-7.2) and returns it as a tidy
+the MRM empirical paper \u00a77.1-7.2) and returns it as a tidy
 data.frame. Skipped here because the JSON is in the MOIRAIS data
 manifest, not bundled with the package.
 
@@ -185,11 +185,11 @@ processing cadence rather than a per-jurisdiction effect.
 
 # References
 
-* MRM theoretical paper — Ruhela (2026), *The McNamara-Ruhela-Medina
+* MRM theoretical paper \u2014 Ruhela (2026), *The McNamara-Ruhela-Medina
   framework*, Zenodo
   [10.5281/zenodo.20096075](https://doi.org/10.5281/zenodo.20096075).
-* MRM empirical paper — Ruhela (2026, in preparation),
+* MRM empirical paper \u2014 Ruhela (2026, in preparation),
   `papers/morie-empirical-paper/`.
-* OTIS data dictionary — `data.ontario.ca/dataset/data-on-inmates-in-ontario`.
-* Toronto Police Open Data — `data.torontopolice.on.ca/`.
-* SIU public Director's Reports — `siu.on.ca/en/case_directors_reports.php`.
+* OTIS data dictionary \u2014 `data.ontario.ca/dataset/data-on-inmates-in-ontario`.
+* Toronto Police Open Data \u2014 `data.torontopolice.on.ca/`.
+* SIU public Director's Reports \u2014 `siu.on.ca/en/case_directors_reports.php`.

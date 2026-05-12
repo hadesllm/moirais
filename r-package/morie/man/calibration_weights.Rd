@@ -14,7 +14,7 @@ known population totals for each auxiliary variable.
 \arguments{
   \item{df}{A data frame.}
   \item{aux_vars}{Character vector of categorical auxiliary variable names.}
-  \item{population_totals}{Named list: '"var_level"' → population count.}
+  \item{population_totals}{Named list: '"var_level"' -> population count.}
   \item{initial_weights}{Optional numeric vector of starting weights.}
   \item{max_iter}{Maximum IPF iterations.}
   \item{tol}{Convergence tolerance.}

@@ -360,7 +360,7 @@ Python and R packages. The R package mirrors a substantial subset of the
 Python package, focused on the surfaces that are most useful from within
 an R workflow: dataset loading, causal estimators, survey sampling and
 weighting, basic spectral analysis, and helpers for the MRM
-(McNamara–Ruhela–Medina) framework that is MORIE’s primary
+(McNamara\u2013Ruhela\u2013Medina) framework that is MORIE\u2019s primary
 sociolegal-data application.</p>
 <p>This vignette walks through a minimal end-to-end session: load the
 package, look at the bundled dataset catalogue, load one dataset, and
@@ -375,8 +375,8 @@ ten-estimator ensemble on OTIS provincial data.</p>
 <div id="the-dataset-catalogue" class="section level1">
 <h1>The dataset catalogue</h1>
 <p><code>morie_dataset_catalog()</code> returns a data frame summarising
-every dataset bundled with the package or accessible via the package’s
-loaders. This is the easiest way to discover what’s available without
+every dataset bundled with the package or accessible via the package\u2019s
+loaders. This is the easiest way to discover what\u2019s available without
 leaving the R session.</p>
 <pre class="r"><code>catalog &lt;- morie_dataset_catalog()
 head(catalog)</code></pre>
@@ -399,7 +399,7 @@ dim(df)</code></pre>
 <h1>A simple ATE estimate</h1>
 <p>For users who already have a treatment / outcome / covariate dataset
 in hand, the estimators are designed to work on any tibble or data frame
-— there is no hard-coded column-name convention. The example below is
+\u2014 there is no hard-coded column-name convention. The example below is
 fully synthetic and runnable without any external data.</p>
 <pre class="r"><code>set.seed(2026)
 n &lt;- 500

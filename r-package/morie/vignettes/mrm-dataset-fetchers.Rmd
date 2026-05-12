@@ -23,12 +23,12 @@ The MRM empirical callables (`mrm_otis_*`, `mrm_tps_*`,
 `mrm_siu_*`) operate on three external data sources. This vignette
 documents how `morie` makes each of them accessible to end users:
 
-* **OTIS** (Ontario Tracking Information System) — public CKAN
+* **OTIS** (Ontario Tracking Information System) \u2014 public CKAN
   release on `data.ontario.ca`, reached via the existing
   `morie_load_dataset()` infrastructure.
-* **TPS** (Toronto Police Service) — public ArcGIS Open Data, reached
+* **TPS** (Toronto Police Service) \u2014 public ArcGIS Open Data, reached
   via `morie_fetch_tps()`.
-* **SIU** (Ontario Special Investigations Unit) — public Director's
+* **SIU** (Ontario Special Investigations Unit) \u2014 public Director's
   Reports, scraped on demand by `morie_fetch_siu()` (the corpus is
   not shipped because redistribution licensing is unsettled).
 
@@ -156,7 +156,7 @@ python3 -c "from morie.siu_fetch import fetch_siu_cases; print(fetch_siu_cases()
 
 # Workflow: from bundled sample to verified result
 
-Putting it together — a complete worked example without any network
+Putting it together \u2014 a complete worked example without any network
 call:
 
 ```{r workflow}
@@ -186,9 +186,9 @@ For a full-data version, swap `morie_sample("otis_b01")` for
 
 # References
 
-* OTIS data dictionary —
+* OTIS data dictionary \u2014
   `data.ontario.ca/dataset/data-on-inmates-in-ontario`
-* Toronto Police Open Data — `data.torontopolice.on.ca/`
-* SIU Director's Reports — `siu.on.ca/en/case_directors_reports.php`
-* MRM theoretical paper — Zenodo DOI
+* Toronto Police Open Data \u2014 `data.torontopolice.on.ca/`
+* SIU Director's Reports \u2014 `siu.on.ca/en/case_directors_reports.php`
+* MRM theoretical paper \u2014 Zenodo DOI
   [10.5281/zenodo.20096075](https://doi.org/10.5281/zenodo.20096075)

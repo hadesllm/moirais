@@ -359,8 +359,8 @@ display: none;
 exposes a small collection of signal-processing primitives. These are
 useful for forensic-audio work, biomedical signals, and any analysis
 that needs spectral or time-frequency methods adjacent to the causal
-pipeline (e.g. inter-incident time series in criminological data).</p>
-<p>The R surface is intentionally thin — the heavy lifting lives in the
+pipeline (e.g.\u00a0inter-incident time series in criminological data).</p>
+<p>The R surface is intentionally thin \u2014 the heavy lifting lives in the
 Python <code>morie.signal_processing</code> and
 <code>morie.homomorphic_deconvolution</code> modules. The R wrappers
 cover the most commonly needed primitives.</p>
@@ -386,15 +386,15 @@ peak_freqs &lt;- freq[order(mag, decreasing = TRUE)[1:5]]
 peak_freqs
 #&gt; [1]  49.95005 119.88012 120.87912  50.94905  48.95105</code></pre>
 <p>The two largest peaks should sit near 50 Hz and 120 Hz, recovering
-the synthetic signal’s components.</p>
+the synthetic signal\u2019s components.</p>
 </div>
 <div id="where-to-go-next" class="section level1">
 <h1>Where to go next</h1>
 <ul>
 <li>Spectral analysis with windowing, multitaper estimation, and
 short-time Fourier transforms is implemented in the Python
-<code>morie.signal_processing</code> module — with the same RichResult
-return convention — and is documented in the package paper.</li>
+<code>morie.signal_processing</code> module \u2014 with the same RichResult
+return convention \u2014 and is documented in the package paper.</li>
 <li>Homomorphic deconvolution and cepstral methods (used in forensic
 audio and biomedical-signal applications) live in
 <code>morie.homomorphic_deconvolution</code>.</li>

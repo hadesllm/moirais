@@ -1,5 +1,5 @@
 ---
-title: "IPW deep-dive (Hájek and Horvitz--Thompson)"
+title: "IPW deep-dive (Hajek and Horvitz--Thompson)"
 output:
   rmarkdown::html_vignette:
     toc: true
@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 Inverse-probability weighting (IPW) is the simplest of the
 single-robust causal estimators. This vignette shows the building
 blocks that MORIE exposes: the Horvitz--Thompson and the
-Hájek-stabilised IPW estimators, propensity-score modelling,
+Hajek-stabilised IPW estimators, propensity-score modelling,
 and weight-trimming diagnostics.
 
 # Setting up
@@ -51,9 +51,9 @@ df$ps  <- predict(ps_fit, type = "response")
 summary(df$ps)
 ```
 
-# Hájek-stabilised IPW
+# Hajek-stabilised IPW
 
-`estimate_ate()` defaults to the Hájek estimator, which divides
+`estimate_ate()` defaults to the Hajek estimator, which divides
 each weighted sum by the corresponding sum of weights. This
 stabilises the estimator under finite samples even when the
 propensity tails are heavy:

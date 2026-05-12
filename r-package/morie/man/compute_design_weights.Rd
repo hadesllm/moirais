@@ -11,7 +11,7 @@
 \arguments{
   \item{df}{A data frame.}
   \item{strata_col}{Name of the stratification column.}
-  \item{population_sizes}{Named integer vector: stratum level → population size.}
+  \item{population_sizes}{Named integer vector: stratum level -> population size.}
 }
 \value{
   Numeric vector of design weights (same length as 'nrow(df)').

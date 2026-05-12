@@ -355,13 +355,13 @@ display: none;
 
 <div id="overview" class="section level1">
 <h1>Overview</h1>
-<p>Effect sizes complement p-values: they answer “how big is the
-effect?” rather than “is there an effect at all?”. MORIE exposes the
+<p>Effect sizes complement p-values: they answer \u201chow big is the
+effect?\u201d rather than \u201cis there an effect at all?\u201d. MORIE exposes the
 standard families used in carceral, public-health, and sociolegal
 research.</p>
 </div>
 <div id="cohens-d-continuous-two-group" class="section level1">
-<h1>Cohen’s d (continuous, two-group)</h1>
+<h1>Cohen\u2019s d (continuous, two-group)</h1>
 <pre class="r"><code>library(morie)
 set.seed(7)
 group_a &lt;- rnorm(60, mean = 0.0)
@@ -370,18 +370,18 @@ group_b &lt;- rnorm(60, mean = 0.6)
 d &lt;- cohens_d(group_a, group_b)
 d
 #&gt; [1] -0.5043227</code></pre>
-<p>Cohen’s d expresses the difference between two means in pooled
+<p>Cohen\u2019s d expresses the difference between two means in pooled
 standard-deviation units. Conventional benchmarks: 0.2 small, 0.5
 medium, 0.8 large.</p>
 </div>
 <div id="cramers-v-categorical-association" class="section level1">
-<h1>Cramer’s V (categorical association)</h1>
+<h1>Cramer\u2019s V (categorical association)</h1>
 <pre class="r"><code>tab &lt;- matrix(c(20, 10, 30,
                 15, 25, 35), nrow = 2, byrow = TRUE)
 v &lt;- cramers_v(tab)
 v
 #&gt; [1] 0.209657</code></pre>
-<p>Cramer’s V scales the chi-square statistic to a 0–1 association
+<p>Cramer\u2019s V scales the chi-square statistic to a 0\u20131 association
 measure for contingency tables. It is particularly useful for the
 provincial-vs-federal Mandela-rate cross-comparisons in MRM.</p>
 </div>
@@ -394,7 +394,7 @@ for a one-way ANOVA design.</p>
 </div>
 <div id="proportion-confidence-intervals" class="section level1">
 <h1>Proportion confidence intervals</h1>
-<p>For a binomial proportion, MORIE exposes Wilson, Clopper–Pearson
+<p>For a binomial proportion, MORIE exposes Wilson, Clopper\u2013Pearson
 exact, and Wald CIs. Wilson is the default and is what we recommend in
 published papers (it has better small-sample coverage than Wald).</p>
 <pre class="r"><code>proportion_ci(35, 100)                       # Wilson, 95% CI

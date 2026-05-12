@@ -358,8 +358,8 @@ display: none;
 <p>This vignette walks through the causal-inference surface of MORIE:
 ATE, ATT, ATC, augmented IPW (doubly robust), per-unit CATE, group GATE,
 and sensitivity analysis (the E-value). Each estimator follows the same
-calling convention — <code>data</code>, <code>treatment</code>,
-<code>outcome</code>, <code>covariates</code> — so swapping among them
+calling convention \u2014 <code>data</code>, <code>treatment</code>,
+<code>outcome</code>, <code>covariates</code> \u2014 so swapping among them
 is a matter of changing one function name.</p>
 </div>
 <div id="a-reproducible-synthetic-example" class="section level1">
@@ -406,7 +406,7 @@ Under heterogeneity, they diverge in informative ways.</p>
 <h1>Doubly robust: augmented IPW</h1>
 <p><code>estimate_aipw()</code> is the augmented
 inverse-probability-weighting estimator. It is consistent if either the
-propensity model or the outcome model is correctly specified — the
+propensity model or the outcome model is correctly specified \u2014 the
 doubly-robust guarantee.</p>
 <pre class="r"><code>aipw &lt;- estimate_aipw(df, treatment = &quot;treat&quot;, outcome = &quot;y&quot;, covariates = c(&quot;X1&quot;, &quot;X2&quot;))
 aipw$estimate

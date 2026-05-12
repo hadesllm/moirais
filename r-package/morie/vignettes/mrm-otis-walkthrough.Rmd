@@ -61,7 +61,7 @@ result <- estimate_ate(
 print(result)
 ```
 
-The returned object summarises the IPW (Hájek), AIPW
+The returned object summarises the IPW (Hajek), AIPW
 (Robins--Rotnitzky--Zhao), g-computation, propensity-score-matching
 (1:1 NN and five-strata subclass), IRM-DML
 (Chernozhukov *et al.* 2018), PLR-DML, and SuperLearner-stacked AIPW

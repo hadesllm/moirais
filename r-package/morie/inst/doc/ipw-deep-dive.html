@@ -11,7 +11,7 @@
 
 
 
-<title>IPW deep-dive (Hájek and Horvitz–Thompson)</title>
+<title>IPW deep-dive (Hajek and Horvitz\u2013Thompson)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,8 +348,8 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">IPW deep-dive (Hájek and
-Horvitz–Thompson)</h1>
+<h1 class="title toc-ignore">IPW deep-dive (Hajek and
+Horvitz\u2013Thompson)</h1>
 
 </div>
 
@@ -358,7 +358,7 @@ Horvitz–Thompson)</h1>
 <h1>Overview</h1>
 <p>Inverse-probability weighting (IPW) is the simplest of the
 single-robust causal estimators. This vignette shows the building blocks
-that MORIE exposes: the Horvitz–Thompson and the Hájek-stabilised IPW
+that MORIE exposes: the Horvitz\u2013Thompson and the Hajek-stabilised IPW
 estimators, propensity-score modelling, and weight-trimming
 diagnostics.</p>
 </div>
@@ -385,9 +385,9 @@ summary(df$ps)
 #&gt;    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 #&gt;  0.1604  0.3727  0.4549  0.4580  0.5374  0.7422</code></pre>
 </div>
-<div id="hájek-stabilised-ipw" class="section level1">
-<h1>Hájek-stabilised IPW</h1>
-<p><code>estimate_ate()</code> defaults to the Hájek estimator, which
+<div id="hajek-stabilised-ipw" class="section level1">
+<h1>Hajek-stabilised IPW</h1>
+<p><code>estimate_ate()</code> defaults to the Hajek estimator, which
 divides each weighted sum by the corresponding sum of weights. This
 stabilises the estimator under finite samples even when the propensity
 tails are heavy:</p>
@@ -413,7 +413,7 @@ range(1 / df$ps)
 <p>If the effective sample size collapses dramatically, the analysis
 should consider:</p>
 <ul>
-<li>Trimming propensities to a sensible interval (e.g. [0.05,
+<li>Trimming propensities to a sensible interval (e.g.\u00a0[0.05,
 0.95])</li>
 <li>Switching to a doubly-robust estimator
 (<code>estimate_aipw()</code>)</li>

@@ -1,0 +1,31 @@
+data_year,state_abbr,offense_code,offense_name,incident_count,victim_age,victim_sex,victim_race,weapon_name,location_name
+2022,TX,719,BATTERY,26,36,F,W,Knife/Cutting Instrument,Residence/Home
+2024,TX,890,ASSAULT,33,69,F,B,Other,School
+2022,IL,253,ASSAULT,34,49,M,W,"Personal Weapons (Hands, Feet, Teeth, etc.)",Commercial/Office Building
+2022,TX,721,BURGLARY,39,38,M,W,Blunt Object,School
+2024,NY,339,NARCOTICS,13,26,M,W,Firearm,Commercial/Office Building
+2024,CA,111,BATTERY,24,58,F,B,Blunt Object,Commercial/Office Building
+2023,FL,301,BATTERY,28,62,M,W,Other,Commercial/Office Building
+2024,CA,280,ASSAULT,42,19,M,U,Other,Parking Lot/Garage
+2024,TX,763,THEFT,19,16,F,W,Blunt Object,Highway/Road/Alley
+2023,TX,223,BATTERY,38,40,F,B,Firearm,Highway/Road/Alley
+2023,NY,113,MOTOR VEHICLE THEFT,44,36,F,B,Blunt Object,Residence/Home
+2024,TX,839,THEFT,3,46,M,B,Blunt Object,Highway/Road/Alley
+2022,FL,110,NARCOTICS,1,23,M,W,Firearm,Residence/Home
+2022,NY,506,BURGLARY,38,67,F,B,Other,Residence/Home
+2022,IL,660,BATTERY,40,46,M,W,Firearm,Commercial/Office Building
+2022,TX,514,THEFT,40,23,M,B,"Personal Weapons (Hands, Feet, Teeth, etc.)",School
+2024,FL,810,THEFT,47,53,M,B,Knife/Cutting Instrument,Parking Lot/Garage
+2022,FL,393,ROBBERY,29,25,F,W,Firearm,Residence/Home
+2022,IL,363,NARCOTICS,19,54,M,W,"Personal Weapons (Hands, Feet, Teeth, etc.)",Highway/Road/Alley
+2024,TX,741,NARCOTICS,42,68,F,W,Firearm,School
+2023,TX,610,MOTOR VEHICLE THEFT,26,48,F,W,Knife/Cutting Instrument,Parking Lot/Garage
+2023,TX,416,BATTERY,29,16,M,A,"Personal Weapons (Hands, Feet, Teeth, etc.)",Residence/Home
+2022,CA,887,THEFT,32,51,M,W,Firearm,Parking Lot/Garage
+2022,FL,373,ASSAULT,19,26,F,W,Knife/Cutting Instrument,Commercial/Office Building
+2024,TX,740,ROBBERY,44,68,M,B,Firearm,Commercial/Office Building
+2022,FL,763,BURGLARY,25,44,M,W,"Personal Weapons (Hands, Feet, Teeth, etc.)",School
+2023,NY,645,BURGLARY,30,17,M,A,Blunt Object,Parking Lot/Garage
+2024,IL,584,MOTOR VEHICLE THEFT,34,25,F,W,"Personal Weapons (Hands, Feet, Teeth, etc.)",Highway/Road/Alley
+2024,FL,556,NARCOTICS,20,59,F,U,Firearm,Highway/Road/Alley
+2024,TX,567,MOTOR VEHICLE THEFT,15,60,F,W,Firearm,Residence/Home

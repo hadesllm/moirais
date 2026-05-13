@@ -1,0 +1,21 @@
+case_number,state,county,dlc_date,sex,race,age_min,age_max,height_cm_min,height_cm_max,weight_kg_min,weight_kg_max,first_name,last_name,city,circumstances
+MP30000,TX,King,2024-09-03,Male,Hispanic,33,33,156,159,73,78,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30001,NY,Los Angeles,2024-01-03,Male,Hispanic,60,60,181,184,91,96,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30002,CA,King,2024-05-15,Female,Hispanic,48,48,184,187,66,71,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30003,TX,Maricopa,2024-10-22,Male,Hispanic,61,61,196,199,56,61,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30004,CA,Cook,2024-03-16,Female,White,64,64,200,203,66,71,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30005,NY,Los Angeles,2024-11-20,Male,Black,67,67,160,163,111,116,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30006,AZ,Maricopa,2024-04-27,Male,White,64,64,177,180,72,77,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30007,FL,Cook,2024-12-27,Male,White,71,71,159,162,57,62,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30008,CA,Los Angeles,2024-09-08,Female,Hispanic,57,57,186,189,75,80,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30009,NY,Maricopa,2024-02-12,Female,White,61,61,162,165,97,102,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30010,TX,Harris,2024-06-18,Male,Hispanic,39,39,199,202,91,96,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30011,NY,Harris,2024-12-26,Female,White,31,31,190,193,52,57,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30012,NY,Harris,2024-08-14,Female,Black,29,29,194,197,108,113,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30013,NY,Maricopa,2024-03-08,Female,Black,54,54,185,188,50,55,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30014,NY,King,2024-02-23,Female,Asian,71,71,193,196,76,81,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30015,CA,King,2024-09-14,Female,Hispanic,40,40,189,192,69,74,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30016,NY,King,2024-07-24,Male,Indigenous,30,30,196,199,105,110,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30017,TX,Harris,2024-12-16,Female,Hispanic,52,52,194,197,59,64,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30018,NY,Los Angeles,2024-02-24,Male,Hispanic,36,36,150,153,105,110,REDACTED,REDACTED,REDACTED,Last seen leaving residence.
+MP30019,TX,Cook,2024-02-17,Female,White,46,46,178,181,111,116,REDACTED,REDACTED,REDACTED,Last seen leaving residence.

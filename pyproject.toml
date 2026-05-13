@@ -137,6 +137,22 @@ shim = [
     # The moirais shim is bundled in the morie distribution; no extra dep.
     # This extras entry exists only so 'pip install morie[shim]' is explicit.
 ]
+forensics = [
+    # US forensic open-data ingestors (FBI NIBRS / Crime Data Explorer,
+    # NamUs missing-persons, NIST Reference Datasets catalog).  The
+    # network calls go through httpx, which is already a morie core
+    # dependency — this extras entry is a placeholder so callers can
+    # `pip install morie[forensics]` to opt into the feature set and so
+    # we have a slot to hang future heavier deps (e.g. an NSRL hash-
+    # database parser) without changing the install surface again.
+]
+bigquery = [
+    # Google BigQuery public-data adapter (morie.ingest.bigquery).
+    # Heavy transitive graph (grpc, protobuf, google-auth, ...), so kept
+    # behind an opt-in extra and lazy-imported at first call.  Pulls
+    # public datasets like `bigquery-public-data.chicago_crime` via ADC.
+    "google-cloud-bigquery>=3.0",
+]
 docs = [
     "sphinx>=7.0",
     "myst-parser",

@@ -1,0 +1,11 @@
+dataset_id,title,subject,publisher,version,release_date,doi,landing_page
+NSRL-2024-09,National Software Reference Library RDS — Modern,Digital Forensics,NIST,2024-09,2024-09-01,10.18434/M3-1234-5678,https://www.nist.gov/itl/ssd/software-quality-group/national-software-reference-library-nsrl
+CSAFE-LAB-2023,CSAFE Toolmark Photographs,Firearm/Toolmark Forensics,NIST/CSAFE,1.0,2023-08-15,10.18434/M3-CSAFE-2023,https://data.nist.gov/od/id/CSAFE
+RBJB-2022,Reference Ballistic Jacket Bullets,Firearm Forensics,NIST,2022,2022-04-12,10.18434/M3-RBJB,https://data.nist.gov/od/id/RBJB
+GSR-XRF-2021,Gunshot Residue X-Ray Fluorescence Spectra,Trace Forensics,NIST,1.0,2021-06-30,10.18434/M3-GSR,https://data.nist.gov/od/id/GSR-XRF
+DRUGS-IR-2023,FTIR Reference Spectra of Seized Drugs,Trace Forensics,NIST,2.1,2023-11-04,10.18434/M3-DRUGS-IR,https://data.nist.gov/od/id/DRUGS-IR
+FINGERPRINT-NIST-SD27,Latent and Matching Tenprint Images (SD27),Pattern Forensics,NIST,2.0,2017-08-23,10.18434/M3-SD27,https://www.nist.gov/itl/iad/image-group/nist-special-database-27
+GLASS-LIBS-2022,Glass LIBS Reference Spectra,Trace Forensics,NIST,1.1,2022-09-19,10.18434/M3-GLASS,https://data.nist.gov/od/id/GLASS-LIBS
+TIRE-IMPRESSION-2024,Tire Impression Reference Set,Pattern Forensics,NIST/CSAFE,2024,2024-03-05,10.18434/M3-TIRE,https://data.nist.gov/od/id/TIRE
+HANDWRITING-CEDAR,CEDAR Handwriting Letters,Pattern Forensics,NIST/SUNY-Buffalo,1.0,2002-01-01,10.18434/M3-CEDAR,https://www.nist.gov/itl/iad/handwriting-cedar
+FACE-NIST-FRVT,Face Recognition Vendor Test Reference Set,Biometric Forensics,NIST,2023,2023-07-10,10.18434/M3-FRVT,https://www.nist.gov/programs-projects/face-recognition-vendor-test-frvt

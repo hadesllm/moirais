@@ -2666,8 +2666,8 @@
       "wired_to_callable": 0
     },
     {
-      "name": "gibbons_remaining",
-      "file": "equation_specs_gibbons_remaining.json",
+      "name": "gibbons_chakraborti",
+      "file": "equation_specs_gibbons_chakraborti.json",
       "reference": "Gibbons Ch 2.11",
       "total": 20,
       "verified": 0,

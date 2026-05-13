@@ -365,3 +365,13 @@ def mrm_causal_design(
         n_treated=int(n_t),
         interpretation=f"{estimator.upper()} ATE = {tau:.4f} (SE {se:.4f}); 95% CI [{ci_lo:.4f}, {ci_hi:.4f}]",
     )
+
+
+# Backwards-compatibility alias.
+#
+# Several papers and external code references the pre-rename name
+# `anova_oneway`; the canonical name is now `mrm_anova_oneway` to
+# match the MRM-prefix convention used across the module group.  We
+# keep the alias indefinitely so v0.x code does not break under
+# fresh-user pip installs.
+anova_oneway = mrm_anova_oneway

@@ -256,7 +256,7 @@
     },
     {
       "book": "chapman_hall_crc_handbooks_of_modern_statistical_methods_jos",
-      "reference": "[Chapman & Hall CRC Handbooks of Modern Statistical Methods] José R. Zubizarreta, Elizabeth A. Stuart, Dylan S. Small, ",
+      "reference": "[Chapman & Hall CRC Handbooks of Modern Statistical Methods] Jose\u0301 R. Zubizarreta, Elizabeth A. Stuart, Dylan S. Small, ",
       "total": 1245,
       "verified": 1245,
       "verified_pct": 100.0,
@@ -582,7 +582,7 @@
     },
     {
       "book": "geron",
-      "reference": "Géron Ch 2, Eq 2-1 (Root Mean Squared Error)",
+      "reference": "G\u00e9ron Ch 2, Eq 2-1 (Root Mean Squared Error)",
       "total": 370,
       "verified": 0,
       "verified_pct": 0.0,
@@ -1636,13 +1636,13 @@
       },
       "by_chapter": {
         "(other)": 51,
-        "§3": 1
+        "\u00a73": 1
       },
       "wired_to_callable": 0
     },
     {
       "book": "msm50",
-      "reference": "Robins (1999); Hernán et al (2000)",
+      "reference": "Robins (1999); Hern\u00e1n et al (2000)",
       "total": 52,
       "verified": 0,
       "verified_pct": 0.0,
@@ -1818,7 +1818,7 @@
     },
     {
       "book": "coda50",
-      "reference": "Aitchison (1986) §4",
+      "reference": "Aitchison (1986) \u00a74",
       "total": 50,
       "verified": 0,
       "verified_pct": 0.0,
@@ -1827,7 +1827,7 @@
       },
       "by_chapter": {
         "(other)": 46,
-        "§4": 4
+        "\u00a74": 4
       },
       "wired_to_callable": 0
     },
@@ -1842,13 +1842,13 @@
       },
       "by_chapter": {
         "(other)": 49,
-        "§3": 1
+        "\u00a73": 1
       },
       "wired_to_callable": 0
     },
     {
       "book": "evt50",
-      "reference": "Coles (2001) §3",
+      "reference": "Coles (2001) \u00a73",
       "total": 50,
       "verified": 0,
       "verified_pct": 0.0,
@@ -1857,8 +1857,8 @@
       },
       "by_chapter": {
         "(other)": 44,
-        "§3": 4,
-        "§4": 2
+        "\u00a73": 4,
+        "\u00a74": 2
       },
       "wired_to_callable": 0
     },
@@ -1888,9 +1888,9 @@
       },
       "by_chapter": {
         "(other)": 44,
-        "§11": 3,
-        "§3": 2,
-        "§9": 1
+        "\u00a711": 3,
+        "\u00a73": 2,
+        "\u00a79": 1
       },
       "wired_to_callable": 0
     },
@@ -1910,7 +1910,7 @@
     },
     {
       "book": "ma50",
-      "reference": "Borenstein et al. (2009) §11",
+      "reference": "Borenstein et al. (2009) \u00a711",
       "total": 50,
       "verified": 0,
       "verified_pct": 0.0,
@@ -1919,7 +1919,7 @@
       },
       "by_chapter": {
         "(other)": 49,
-        "§11": 1
+        "\u00a711": 1
       },
       "wired_to_callable": 0
     },
@@ -1936,7 +1936,7 @@
       "by_chapter": {
         "(other)": 48,
         "ch2": 1,
-        "§6": 1
+        "\u00a76": 1
       },
       "wired_to_callable": 0
     },
@@ -1965,13 +1965,13 @@
       },
       "by_chapter": {
         "(other)": 49,
-        "§4": 1
+        "\u00a74": 1
       },
       "wired_to_callable": 0
     },
     {
       "book": "paper90_sweep",
-      "reference": "Tóth & vdL (2014); Ogburn-Rotnitzky-Robins (2015)",
+      "reference": "T\u00f3th & vdL (2014); Ogburn-Rotnitzky-Robins (2015)",
       "total": 50,
       "verified": 0,
       "verified_pct": 0.0,
@@ -1988,7 +1988,7 @@
       },
       "by_chapter": {
         "(other)": 49,
-        "§1": 1
+        "\u00a71": 1
       },
       "wired_to_callable": 0
     },
@@ -2150,7 +2150,7 @@
     },
     {
       "book": "bayesian_diagnostics",
-      "reference": "Watanabe (2010); Gelman et al. BDA3 §7",
+      "reference": "Watanabe (2010); Gelman et al. BDA3 \u00a77",
       "total": 30,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2159,8 +2159,8 @@
       },
       "by_chapter": {
         "(other)": 26,
-        "§6": 2,
-        "§7": 2
+        "\u00a76": 2,
+        "\u00a77": 2
       },
       "wired_to_callable": 0
     },
@@ -2179,13 +2179,13 @@
       },
       "by_chapter": {
         "(other)": 29,
-        "§4": 1
+        "\u00a74": 1
       },
       "wired_to_callable": 0
     },
     {
       "book": "copulas_networks",
-      "reference": "Sklar (1959); Nelsen (2006) §4",
+      "reference": "Sklar (1959); Nelsen (2006) \u00a74",
       "total": 30,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2196,8 +2196,8 @@
       },
       "by_chapter": {
         "(other)": 26,
-        "§4": 2,
-        "§5": 2
+        "\u00a74": 2,
+        "\u00a75": 2
       },
       "wired_to_callable": 0
     },
@@ -2222,7 +2222,7 @@
     },
     {
       "book": "geron_ch5_8",
-      "reference": "Géron Ch 5, Eq 5-1 (Gini Impurity)",
+      "reference": "G\u00e9ron Ch 5, Eq 5-1 (Gini Impurity)",
       "total": 30,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2254,8 +2254,8 @@
       },
       "by_chapter": {
         "(other)": 27,
-        "§2": 1,
-        "§3": 2
+        "\u00a72": 1,
+        "\u00a73": 2
       },
       "wired_to_callable": 0
     },
@@ -2277,9 +2277,9 @@
       },
       "by_chapter": {
         "(other)": 27,
-        "§14": 1,
-        "§3": 1,
-        "§4": 1
+        "\u00a714": 1,
+        "\u00a73": 1,
+        "\u00a74": 1
       },
       "wired_to_callable": 0
     },
@@ -2296,8 +2296,8 @@
       "by_chapter": {
         "(other)": 27,
         "ch3": 1,
-        "§4": 1,
-        "§5": 1
+        "\u00a74": 1,
+        "\u00a75": 1
       },
       "wired_to_callable": 0
     },
@@ -2317,10 +2317,10 @@
       },
       "by_chapter": {
         "(other)": 25,
-        "§3": 1,
-        "§4": 1,
-        "§5": 1,
-        "§7": 2
+        "\u00a73": 1,
+        "\u00a74": 1,
+        "\u00a75": 1,
+        "\u00a77": 2
       },
       "wired_to_callable": 0
     },
@@ -2356,9 +2356,9 @@
       },
       "by_chapter": {
         "(other)": 21,
-        "§2": 6,
-        "§22": 1,
-        "§3": 2
+        "\u00a72": 6,
+        "\u00a722": 1,
+        "\u00a73": 2
       },
       "wired_to_callable": 0
     },
@@ -2378,16 +2378,16 @@
       },
       "by_chapter": {
         "(other)": 11,
-        "§10": 1,
-        "§15": 2,
-        "§2": 1,
-        "§3": 2,
-        "§4": 1,
-        "§5": 3,
-        "§6": 2,
-        "§7": 2,
-        "§8": 3,
-        "§9": 2
+        "\u00a710": 1,
+        "\u00a715": 2,
+        "\u00a72": 1,
+        "\u00a73": 2,
+        "\u00a74": 1,
+        "\u00a75": 3,
+        "\u00a76": 2,
+        "\u00a77": 2,
+        "\u00a78": 3,
+        "\u00a79": 2
       },
       "wired_to_callable": 0
     },
@@ -2413,9 +2413,9 @@
       "by_chapter": {
         "(other)": 26,
         "ch5": 1,
-        "§2": 1,
-        "§5": 1,
-        "§9": 1
+        "\u00a72": 1,
+        "\u00a75": 1,
+        "\u00a79": 1
       },
       "wired_to_callable": 0
     },
@@ -2436,13 +2436,13 @@
       },
       "by_chapter": {
         "(other)": 29,
-        "§22": 1
+        "\u00a722": 1
       },
       "wired_to_callable": 0
     },
     {
       "book": "geron_ch9_11",
-      "reference": "Géron Ch 9, Threshold Logic Unit section",
+      "reference": "G\u00e9ron Ch 9, Threshold Logic Unit section",
       "total": 28,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2510,7 +2510,7 @@
     },
     {
       "book": "geron_ch12_14",
-      "reference": "Géron Ch 12, Convolutional Layers section",
+      "reference": "G\u00e9ron Ch 12, Convolutional Layers section",
       "total": 24,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2555,7 +2555,7 @@
     },
     {
       "book": "geron_ch19_appendix",
-      "reference": "Géron Ch 19, Discounted Return section",
+      "reference": "G\u00e9ron Ch 19, Discounted Return section",
       "total": 22,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2620,9 +2620,9 @@
         "Stochastic": 1
       },
       "by_chapter": {
-        "§2": 9,
-        "§3": 10,
-        "§6": 2
+        "\u00a72": 9,
+        "\u00a73": 10,
+        "\u00a76": 2
       },
       "wired_to_callable": 0
     },
@@ -2658,7 +2658,7 @@
     },
     {
       "book": "geron_ch4",
-      "reference": "Géron Ch 4, Eq 4-4 (Normal Equation)",
+      "reference": "G\u00e9ron Ch 4, Eq 4-4 (Normal Equation)",
       "total": 20,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2678,8 +2678,8 @@
       "wired_to_callable": 0
     },
     {
-      "book": "gibbons_remaining",
-      "reference": "Gibbons Ch 2.11",
+      "book": "gibbons_chakraborti",
+      "reference": "Gibbons & Chakraborti (2003) Ch 2.11",
       "total": 20,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2864,7 +2864,7 @@
     },
     {
       "book": "geron_ch16_17",
-      "reference": "Géron Ch 16, Vision Transformer (ViT) section",
+      "reference": "G\u00e9ron Ch 16, Vision Transformer (ViT) section",
       "total": 18,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2885,7 +2885,7 @@
     },
     {
       "book": "geron_ch15",
-      "reference": "Géron Ch 15, Positional Encodings section",
+      "reference": "G\u00e9ron Ch 15, Positional Encodings section",
       "total": 17,
       "verified": 0,
       "verified_pct": 0.0,
@@ -2904,7 +2904,7 @@
     },
     {
       "book": "geron_ch18",
-      "reference": "Géron Ch 18, Autoencoders section",
+      "reference": "G\u00e9ron Ch 18, Autoencoders section",
       "total": 17,
       "verified": 0,
       "verified_pct": 0.0,
@@ -3093,7 +3093,7 @@
     },
     {
       "book": "msm_gcomp",
-      "reference": "Robins (2000); Robins-Hernán-Brumback (2000)",
+      "reference": "Robins (2000); Robins-Hern\u00e1n-Brumback (2000)",
       "total": 6,
       "verified": 0,
       "verified_pct": 0.0,

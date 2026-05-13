@@ -18,10 +18,22 @@ the way the paper has it" entry point.
 
 from __future__ import annotations
 
+from .actuarial_risk_disparity import (
+    ActuarialRiskDisparityResult,
+    actuarial_risk_disparity,
+)
 from .gentrification_policing import gentrification_policing
+from .smi_force_disparity import (
+    SMIForceDisparityCoefficient,
+    SMIForceDisparityResult,
+    smi_force_disparity,
+)
 
 __all__ = [
     "gentrification_policing",
-    # smi_force_disparity and actuarial_risk_disparity ship in the
-    # follow-up v0.6.1 patches (tasks #236 and #237).
+    "smi_force_disparity",
+    "SMIForceDisparityResult",
+    "SMIForceDisparityCoefficient",
+    "actuarial_risk_disparity",
+    "ActuarialRiskDisparityResult",
 ]

@@ -16,9 +16,9 @@ This is a new release. No reverse dependencies.
 
 ## Notes for CRAN
 
-* This submission is `morie` version 0.5.0.  Previous CRAN
+* This submission is `morie` version 0.6.1.  Previous CRAN
   submissions (0.3.0) were withdrawn during the dependency-graph
-  hardening pass.  v0.5.0 ships a stable user surface (CLI:
+  hardening pass.  v0.6.1 ships a stable user surface (CLI:
   `morie tutorial`, `morie pull`, `morie explain`, `morie ingest`;
   Python: `morie.datasets`) and a synthetic CPADS/OTIS/TPS/SIU
   bundle so reviewers can exercise every code path offline.

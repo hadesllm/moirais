@@ -43,7 +43,7 @@ Optional, opt-in JIT-compile and C++ paths for the slowest numerical kernels. Wo
 **Planned:**
 - **Rcpp / RcppArmadillo for R hot kernels** — translate the slowest pure-R kernels (rugarch glue, per-row MRM ensemble loop, fuzzy-rule expansions) via the `LinkingTo: Rcpp` pattern. Separate `ci-rcpp-bench.yml` workflow for nightly perf check; main `R CMD check` stays pure-R to keep CI lightweight.
 
-### v0.6.1 — methodological + dataset expansion (scoped, not yet started)
+### v0.6.1 — methodological + dataset expansion (SHIPPED, 2026-05-13)
 
 Three new modules drawn from Laniyonu et al.'s policing-and-corrections methodology, five new MRM primitives, three US/Canadian crime-data integrations, and a forensics-dataset bundle.
 

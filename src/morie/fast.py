@@ -60,6 +60,7 @@ caller branch on this if perf-sensitive reporting matters.
 from __future__ import annotations
 
 from ._jit import (
+    bootstrap_mean_jit,
     cor_pearson_jit,
     euclid_dist_jit,
     is_jit_available,
@@ -67,6 +68,7 @@ from ._jit import (
     normal_logpdf,
     normal_pdf,
     std_jit,
+    trimmed_ipw_weights_jit,
     var_jit,
 )
 
@@ -111,6 +113,8 @@ __all__ = [
     "var_jit",
     "cor_pearson_jit",
     "euclid_dist_jit",
+    "bootstrap_mean_jit",
+    "trimmed_ipw_weights_jit",
     "is_jit_available",
     "jit_if_available",
 ]

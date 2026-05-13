@@ -113,7 +113,7 @@ classDiagram
 
 ## The MRM module group
 
-The MRM (McNamara-Ruhela-Medina) framework is implemented as a
+The MRM (Multilevel Reconciliation Methodology) framework is implemented as a
 coordinated set of modules built on top of `BaseEstimator`. Each MRM
 module composes ten causal estimators on a single (treatment,
 outcome, covariates) design and returns a single aggregate

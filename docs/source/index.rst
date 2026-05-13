@@ -37,7 +37,7 @@ MORIE — Multi-domain Open Research and Inferential Estimation
 A dual-language (Python + R) multi-domain scientific computing toolkit for
 observational inference, with sociolegal, signal-processing, cryptographic,
 spatial-statistics, statistical-physics, and psychometrics modules. Hosts
-the MRM (McNamara-Ruhela-Medina) framework as a primary application
+the MRM (Multilevel Reconciliation Methodology) framework as a primary application
 for Canadian carceral, police, and oversight data analysis.
 
 ----
@@ -121,7 +121,7 @@ for function reference.
   isotonic) on IPW / AIPW / SuperLearner-AIPW with Brier score.
 
 **The MRM framework**
-  McNamara-Ruhela-Medina — a 10-estimator framework applied to OTIS
+  Multilevel Reconciliation Methodology — a 10-estimator framework applied to OTIS
   / SIU / TPS data over a coordinated set of (treatment, outcome,
   covariates) designs. Per-row individual-level + aggregate (Poisson,
   NB GLM) modes. Mandela classifier (UN Mandela Rules 43 + 44) +
@@ -262,7 +262,7 @@ researchers who need:
   Toronto Police Service open-data feeds.
 - Reproducible pipelines that run unattended in CI / CD — outputs
   carry provenance manifests; synthetic data is labelled as such.
-- The MRM (McNamara-Ruhela-Medina) framework as a primary
+- The MRM (Multilevel Reconciliation Methodology) framework as a primary
   application for Canadian carceral, police, and oversight data
   (Ontario OTIS, federal SIU, TPS).
 

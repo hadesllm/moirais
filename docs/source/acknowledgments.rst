@@ -57,9 +57,9 @@ The author thanks **Glenn McNamara** — a 35-year career with the
 Ontario Government — for his methodological mentorship. Glenn
 introduced the author to foundational distribution theory and the
 applied-statistics intuition for administrative data that grounds
-much of this framework. He is the **M** (catalyst) in **MRM
-(McNamara-Ruhela-Medina)** — the framework that powers the OTIS /
-SIU / TPS analyses across this package.
+much of this framework. He is the **M** (catalyst, for McNamara) in
+**MRM (Multilevel Reconciliation Methodology)** — the framework that
+powers the OTIS / SIU / TPS analyses across this package.
 
 The author thanks **Prof. Angela Zorro Medina**, Centre for
 Criminology and Sociolegal Studies, University of Toronto, who is

@@ -4,14 +4,14 @@
 
 An **MRM module** pairs a (treatment, outcome, covariates) design
 choice for a specific OTIS dataset with the full **MRM**
-(McNamara-Ruhela-Medina) ten-estimator framework, applied to that
-design. See the attribution block at the head of
+(Multilevel Reconciliation Methodology) ten-estimator framework,
+applied to that design. See the attribution block at the head of
 `morie.otis_causal` for the framework's lineage.
 
 ## Vocabulary
 
-- **MRM** — McNamara-Ruhela-Medina: the ten-estimator framework
-  applied to any design. The umbrella name for the full
+- **MRM** — Multilevel Reconciliation Methodology: the ten-estimator
+  framework applied to any design. The umbrella name for the full
   causal-estimator ensemble described below.
 - **RF** — *formulation*, one (T, Y, covariates) design choice for a
   dataset. Used as a code-level abbreviation

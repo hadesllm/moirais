@@ -1,0 +1,119 @@
+name: numba bench (opt-in JIT speedup)
+
+# Compare timings of morie.fast kernels with and without the [fast]
+# extra installed.  Runs nightly + on workflow_dispatch.  Does NOT
+# replace the main CI — JIT is opt-in.
+
+on:
+  schedule:
+    - cron: "37 4 * * *"   # nightly at 04:37 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # numba wheels max out at Python 3.14
+        python-version: ["3.12"]
+        extras:
+          - ""        # base install — no numba; tests the fallback path
+          - "fast"    # with numba — tests the JIT path
+    name: bench py${{ matrix.python-version }} (${{ matrix.extras || 'base' }})
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install morie
+        run: |
+          pip install --upgrade pip setuptools wheel
+          if [ -n "${{ matrix.extras }}" ]; then
+            pip install --prefer-binary -e ".[${{ matrix.extras }},test]"
+          else
+            pip install --prefer-binary -e ".[test]"
+          fi
+
+      - name: Sanity — is JIT available?
+        run: |
+          python -c "import morie.fast as mf; print('jit_available:', mf.is_jit_available())"
+
+      - name: Bench — normal_pdf vs scipy.stats.norm.pdf
+        run: |
+          python -c "
+          import time, numpy as np
+          from scipy.stats import norm
+          import morie.fast as mf
+
+          # Warm up the JIT cache (first call compiles)
+          mf.normal_pdf(np.array([0.0]), 0.0, 1.0)
+
+          x = np.random.default_rng(0).normal(size=200_000)
+          # scipy baseline
+          t0 = time.perf_counter()
+          for _ in range(50):
+              norm.pdf(x, 0, 1)
+          t_sp = (time.perf_counter() - t0) / 50
+
+          # morie.fast
+          t0 = time.perf_counter()
+          for _ in range(50):
+              mf.normal_pdf(x, 0.0, 1.0)
+          t_mf = (time.perf_counter() - t0) / 50
+
+          print(f'scipy.stats.norm.pdf : {t_sp*1000:.3f} ms / call')
+          print(f'morie.fast.normal_pdf: {t_mf*1000:.3f} ms / call')
+          print(f'speedup              : {t_sp/t_mf:.2f}x  (>1 = morie.fast is faster)')
+          print(f'jit_available        : {mf.is_jit_available()}')
+          "
+
+      - name: Bench — pearson r
+        run: |
+          python -c "
+          import time, numpy as np
+          from scipy.stats import pearsonr
+          import morie.fast as mf
+
+          mf.cor_pearson_jit(np.array([1.0, 2.0]), np.array([2.0, 4.0]))
+          rng = np.random.default_rng(0)
+          x = rng.normal(size=200_000)
+          y = x * 0.8 + rng.normal(size=200_000) * 0.5
+
+          t0 = time.perf_counter()
+          for _ in range(50):
+              pearsonr(x, y)[0]
+          t_sp = (time.perf_counter() - t0) / 50
+
+          t0 = time.perf_counter()
+          for _ in range(50):
+              mf.cor_pearson_jit(x, y)
+          t_mf = (time.perf_counter() - t0) / 50
+
+          print(f'scipy.stats.pearsonr  : {t_sp*1000:.3f} ms / call')
+          print(f'morie.fast.cor_pearson: {t_mf*1000:.3f} ms / call')
+          print(f'speedup               : {t_sp/t_mf:.2f}x')
+          print(f'jit_available         : {mf.is_jit_available()}')
+          "
+
+      - name: Correctness — both code paths must agree
+        run: |
+          python -c "
+          import numpy as np
+          from scipy.stats import norm, pearsonr
+          import morie.fast as mf
+
+          x = np.random.default_rng(0).normal(size=10_000)
+          assert abs(mf.normal_pdf(x, 0.0, 1.0) - norm.pdf(x, 0, 1)).max() < 1e-10, 'normal_pdf disagreement'
+          y = x * 0.8 + np.random.default_rng(1).normal(size=10_000) * 0.5
+          assert abs(mf.cor_pearson_jit(x, y) - pearsonr(x, y)[0]) < 1e-10, 'pearsonr disagreement'
+          assert abs(mf.mean_jit(x) - x.mean()) < 1e-10, 'mean disagreement'
+          assert abs(mf.std_jit(x, 1) - x.std(ddof=1)) < 1e-10, 'std disagreement'
+          print('all correctness checks passed')
+          "

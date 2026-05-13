@@ -28,13 +28,20 @@ The release that makes the toolkit usable by a non-programmer:
 
 ## Planned
 
-### v0.6.0 — performance experiments (scoped, not yet started)
+### v0.6.0 — performance experiments
 
 Optional, opt-in JIT-compile and C++ paths for the slowest numerical kernels. Won't speed CI; will speed end-user runtime of repeated calls.
 
-- **Numba JIT for Python hot kernels** — `pip install morie[fast]` enables a `@morie.jit_if_available` decorator on Hawkes log-likelihood, bootstrap loops, IPW weight computation, and the MRM 10-estimator ensemble inner loops. Target: 2-5× speedup on Hawkes-paper reproducibility runs.
-- **Rcpp / RcppArmadillo for R hot kernels** — translate the slowest pure-R kernels (rugarch glue, per-row MRM ensemble loop, fuzzy-rule expansions) via the `LinkingTo: Rcpp` pattern.
-- Separate `ci-numba-bench.yml` and `ci-rcpp-bench.yml` workflows for nightly perf tracking; main CI stays pure-Python / pure-R to keep build times short.
+**Shipped:**
+- `morie.fast` public namespace exposing the JIT-decorated kernels (`normal_pdf`, `normal_logpdf`, `mean_jit`, `var_jit`, `std_jit`, `cor_pearson_jit`, `euclid_dist_jit`) + a `jit_if_available` decorator users can apply to their own loops. Numerically identical to scipy/numpy whether or not Numba is installed; verified to ≤ 5.55e-17 max error.
+- `pip install morie[fast]` extra pulls Numba on py ≤ 3.14; on py ≥ 3.15 the install falls back to pure-numpy and `morie.fast.is_jit_available()` returns False.
+- `ci-numba-bench.yml` workflow runs nightly + on-demand, benchmarks the JIT path against scipy / numpy baselines, asserts numerical agreement.
+
+**In-flight:**
+- Sprinkling `@jit_if_available` on the Hawkes log-likelihood inner loop in `tps_hawkes_advanced.py`, the IPW weight loop in `causal.py`, the bootstrap resampler in `btsrp.py`, and the MRM 10-estimator ensemble loop in `mrm_design.py`. Target: 2-5× speedup on Hawkes-paper reproducibility runs.
+
+**Planned:**
+- **Rcpp / RcppArmadillo for R hot kernels** — translate the slowest pure-R kernels (rugarch glue, per-row MRM ensemble loop, fuzzy-rule expansions) via the `LinkingTo: Rcpp` pattern. Separate `ci-rcpp-bench.yml` workflow for nightly perf check; main `R CMD check` stays pure-R to keep CI lightweight.
 
 ### v0.6.1 — methodological + dataset expansion (scoped, not yet started)
 

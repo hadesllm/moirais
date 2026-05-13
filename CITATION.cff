@@ -71,3 +71,40 @@ references:
     doi: "10.5281/zenodo.20102198"
     url: "https://doi.org/10.5281/zenodo.20102198"
     notes: "Hawkes methodology paper."
+  - type: software
+    title: "Claude (Opus, Sonnet, Haiku) — Claude 4.x model family"
+    authors:
+      - name: "Anthropic, P.B.C."
+    year: "2024"
+    url: "https://www.anthropic.com/claude"
+    notes: "Frontier AI assistance used during morie development (Claude Opus 4.6/4.7, Claude Sonnet 4.6, Claude Haiku 4.5). Author retains full responsibility for code and methods."
+  - type: software
+    title: "Claude Code — official command-line interface for Claude"
+    authors:
+      - name: "Anthropic, P.B.C."
+    year: "2024"
+    url: "https://claude.com/claude-code"
+    notes: "Primary development assistant for the morie codebase."
+  - type: article
+    title: "Constitutional AI: Harmlessness from AI Feedback"
+    authors:
+      - family-names: "Bai"
+        given-names: "Yuntao"
+      - name: "et al."
+    year: "2022"
+    url: "https://arxiv.org/abs/2212.08073"
+    notes: "Alignment foundations of Claude."
+  - type: software
+    title: "Gemini 2.5 — Google DeepMind"
+    authors:
+      - name: "Google DeepMind"
+    year: "2025"
+    url: "https://deepmind.google/technologies/gemini/"
+    notes: "Gemini 2.5 Pro and Flash used via Vertex AI for code review and cross-checking."
+  - type: software
+    title: "Vertex AI — managed ML platform"
+    authors:
+      - name: "Google Cloud"
+    year: "2024"
+    url: "https://cloud.google.com/vertex-ai"
+    notes: "Cloud platform hosting Gemini 2.5."

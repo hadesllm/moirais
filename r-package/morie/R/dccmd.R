@@ -21,14 +21,18 @@ dcc_multivariate_garch <- function(x) {
     dccspec <- rmgarch::dccspec(uspec = uspec, dccOrder = c(1, 1),
                                 distribution = "mvnorm")
     fit <- rmgarch::dccfit(dccspec, data = X)
-    p <- rmgarch::coef(fit)
-    sig_mat <- as.matrix(rmgarch::sigma(fit))
+    # `coef`, `sigma`, `likelihood` are S4 generics (stats / rugarch);
+    # rmgarch provides methods but does not export the generics themselves,
+    # so namespace-qualifying them as `rmgarch::*` trips an R CMD check
+    # WARNING.  Use the canonical generic-defining packages directly.
+    p <- stats::coef(fit)
+    sig_mat <- as.matrix(stats::sigma(fit))
     return(list(a = unname(p["[Joint]dcca1"]),
                 b = unname(p["[Joint]dccb1"]),
                 unconditional_correlation = cor(X),
                 conditional_correlation = rmgarch::rcor(fit),
                 conditional_variance = sig_mat^2,
-                loglik = as.numeric(rmgarch::likelihood(fit)),
+                loglik = as.numeric(rugarch::likelihood(fit)),
                 n = n, k = k,
                 method = "DCC(1,1) via rmgarch"))
   }

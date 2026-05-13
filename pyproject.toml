@@ -113,6 +113,19 @@ ml = [
     # SMOTE oversampling for sensitivity analysis.
     "imbalanced-learn>=0.11",
 ]
+fast = [
+    # v0.6.0 opt-in JIT extra.  morie's existing _jit.py kernels
+    # (normal_pdf, mean_jit, cor_pearson_jit, euclid_dist_jit, ...)
+    # are decorated with @njit(cache=True, parallel=True) and no-op
+    # when numba isn't importable.  Installing this extra activates
+    # the JIT path: 5-10x speedup on small-array kernels once
+    # compiled, comparable on large arrays.
+    #
+    # numba wheels max out at Python 3.14 today; on 3.15+ this extra
+    # fails to install and morie falls back to pure-numpy at runtime
+    # (numerically identical, just slower).
+    "numba>=0.59 ; python_version < '3.15'",
+]
 carbon = [
     # CodeCarbon — track CO2 emissions from analysis runs.
     # Requires pydantic (Rust/PyO3) — not installable on Python 3.15+ until

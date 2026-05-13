@@ -141,6 +141,19 @@ html_static_path = ["_static"]
 html_extra_path = ["_extra"]
 html_title = "MORIE"
 
+# "View page source" → resolve to the .rst on GitHub instead of a stub
+# inside the build tree.  Lets readers click the link and land on a
+# `Suggest edit` button without us having to wire up an external theme.
+html_show_sourcelink = True
+html_context = {
+    "display_github": True,
+    "github_user": "hadesllm",
+    "github_repo": "morie",
+    "github_version": "main",
+    "conf_py_path": "/docs/source/",
+    "source_url_prefix": "https://github.com/hadesllm/morie/blob/main/docs/source/",
+}
+
 # Sidebar toggle — alabaster doesn't ship a collapse button; this
 # adds a small fixed-position button at the top-left that hides /
 # shows .sphinxsidebar.  Persists choice in localStorage.

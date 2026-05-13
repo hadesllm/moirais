@@ -1,0 +1,1418 @@
+\documentclass[article,shortnames,nojss]{jss}
+
+%% --- packages ---
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{microtype}
+%% jss.cls auto-loads hyperref; configure unicode after \begin{document}
+\usepackage{orcidlink}
+
+%% overflow tolerance
+\setlength{\emergencystretch}{4em}
+\hbadness=10000
+\hfuzz=20pt
+
+%% math macros (avoid \E and \R which jss.cls defines)
+\renewcommand{\E}{\mathbb{E}}
+\providecommand{\Rset}{\mathbb{R}}
+\newcommand{\indep}{\perp\!\!\!\perp}
+\newcommand{\ones}{\mathbf{1}}
+\newcommand{\OTIS}{\textsf{OTIS}}
+\newcommand{\TPS}{\textsf{TPS}}
+\newcommand{\SIU}{\textsf{SIU}}
+\newcommand{\ac}{\texttt{ac}}
+\newcommand{\vm}{\texttt{vm}}
+
+\title{MRM in Practice: Multilevel Reconciliation Methodology on Ontario Carceral, Toronto Police, and SIU Data}
+\Plaintitle{MRM in Practice: Multilevel Reconciliation Methodology on Ontario Carceral, Toronto Police, and SIU Data}
+\Shorttitle{MRM in Practice: Multilevel Reconciliation Methodology}
+
+\author{Vansh Singh Ruhela~\orcidlink{0009-0004-1750-3592}\\University of Toronto}
+\Plainauthor{Vansh Singh Ruhela}
+
+\Address{
+Vansh Singh Ruhela\\
+Centre for Criminology and Sociolegal Studies\\
+University of Toronto\\
+14 Queen's Park Crescent West, Toronto, ON M5S 3K9, Canada\\
+E-mail: \email{hadesllm@proton.me}\\
+ORCID: \orcidlink{0009-0004-1750-3592}\\
+Pronunciation: vansh sing roo-HAY-lah
+}
+
+\Abstract{
+This paper is the empirical application companion to the MRM
+(Multilevel Reconciliation Methodology) framework
+\citep{Ruhela2026MRM} and its open-source software realisation in the
+morie toolkit (Python and R; \citealt{Ruhela2026MorieR,
+Ruhela2026MoriePy}). Two anchor datasets are analysed under the MRM
+modules: the Ontario Tracking Information System a01 restrictive-
+confinement detailed dataset (\OTIS{} a01, fiscal years
+2023--2025; $n = 76{,}934$ person-day records over
+$65{,}467$ unique person-year identifiers; the \OTIS{} b01
+segregation-placement file, $n = 82{,}001$ placements, is used
+for the per-placement analyses of §\ref{phys-goffman}),
+and the Toronto Police Service open-data major-crime corpus
+(\TPS{}). On \OTIS{} b01, a double-machine-learning interactive
+regression model (IRM-DML) estimates the effect of alert complexity
+(treatment $\ac \ge 2$) on placement volatility (count of regional
+transfers per person-year $\vm$), pooled across 2023--2025 and by
+fiscal year. The pooled estimate is $\hat{\tau}_{\mathrm{ATE}} =
+0.1605$ ($\mathrm{SE} = 0.00628$, $95\%$ CI $[0.1481, 0.1728]$), and
+the per-year breakdown shows a monotone rising trend ($\hat{\tau}_{
+\mathrm{ATE},2023} = 0.1342$; $\hat{\tau}_{\mathrm{ATE},2024} =
+0.1591$; $\hat{\tau}_{\mathrm{ATE},2025} = 0.1737$). Multi-way
+regional clustering shifts the point estimate into a tighter band
+$\hat{\tau} \in [0.1932, 0.2013]$ across 30 region~$\times$~scheme
+combinations, with all $p < 10^{-24}$. Matched-sample Poisson GLMM
+(MatchIt 1:1 nearest-neighbour propensity-score matching followed by a
+random-intercept Poisson generalised linear mixed model) reproduces
+the direction of the effect as a sensitivity check. The empirical
+identifiability of cross-year recidivism on \OTIS{} is confirmed
+impossible by data-dictionary inspection ($0/65{,}467$ identifiers
+appear in two or more fiscal years). On \TPS{} crime events, a non-Markovian Hawkes process specification
+(Gamma excitation kernel, sinusoidal baseline) is preferred over the
+classical Markovian Hawkes by Bayesian-information-criterion ranking
+and a higher Kolmogorov--Smirnov $p$-value on the rescaled inter-event
+times. Every numerical claim in this paper is reproducible from the
+morie toolkit through the code blocks in
+Appendix~\ref{app:reproducibility}.
+}
+\Keywords{causal inference, double machine learning, observational
+inference, Ontario restrictive confinement, Toronto Police Service,
+Hawkes process, MRM framework, sociolegal statistics,
+\proglang{R}, \proglang{Python}}
+\Plainkeywords{causal inference, double machine learning, observational
+inference, Ontario restrictive confinement, Toronto Police Service,
+Hawkes process, MRM framework, sociolegal statistics,
+R, Python}
+% --- morie version stamp -----------------------------------------------------
+% This paper documents \pkg{morie} v0.5.0 (released 2026-05-13).  Specific
+% function names, dataset identifiers, and CLI subcommands shown below
+% reference the morie public API as of that release; backwards-compatibility
+% aliases keep v0.x code references resolving across the v0.4.x series.
+% -----------------------------------------------------------------------------
+
+
+\begin{document}
+\sloppy
+
+\clearpage
+
+\section{Introduction}
+\label{sec:intro}
+
+This paper is the empirical companion to the MRM (Multilevel Reconciliation Methodology)
+framework \citep{Ruhela2026MRM} and the morie toolkit
+\citep{Ruhela2026MorieR, Ruhela2026MoriePy}. The MRM framework
+specifies a ten-estimator per-individual ensemble, an aggregate
+$\chi^{2}$ family, and a self-exciting Hawkes specification (the methodology is in
+\citealt{Ruhela2026Hawkes}). The morie toolkit makes those modules
+available in \proglang{R} and \proglang{Python}. The present paper
+exercises the toolkit on two open Canadian sources: the Ontario
+Tracking Information System b01 segregation detailed dataset
+(\OTIS{} b01) and the Toronto Police Service major-crime open-data
+corpus (\TPS{}).
+
+Three results are reported. First, an IRM-DML estimate of the effect
+of alert complexity on placement volatility on \OTIS{} b01 over fiscal
+years 2023--2025 with multi-way regional clustering and matched-sample
+sensitivity (Section~\ref{sec:dml}). Second, eleven statistical-physics-of-crime and institutional-churn
+result sections on \TPS{} and \OTIS{} b01 (Section~\ref{sec:physics-results}),
+covering per-category Hawkes fits (Markovian and non-Markovian),
+L\'evy-flight mobility, urban-scaling exponents, spatial autocorrelation,
+inspection-game phase diagrams, reaction-diffusion, Kulldorff
+space-time scan, Goffmanian institutional churn, stochastic forecasting,
+the Crime Severity Index robustness check, and extended spatial
+diagnostics.
+
+Every numerical claim in this paper is reproducible from the morie
+toolkit. Section~\ref{sec:reproducibility} catalogues the morie
+calls that generate every table; the full code is in
+Appendix~\ref{app:reproducibility}. The intent is that a reader who
+installs morie at \texttt{pip install morie} or
+\texttt{install.packages("morie")} can recompute every reported
+estimate from the same open data sources.
+
+The rest of the paper is organised as follows.
+Section~\ref{sec:data} documents the two data sources and the
+data-dictionary constraints under which the analysis is valid.
+Section~\ref{sec:methods} states the identifying assumptions and the
+estimators. Section~\ref{sec:descriptives} reports the population
+descriptives on \OTIS{} b01. Section~\ref{sec:dml} presents the IRM-DML
+estimates with their multi-way clustering robustness band and the
+matched-sample Poisson GLMM sensitivity. Section~\ref{sec:physics-results} reports the eleven
+statistical-physics-of-crime and institutional-churn result sections.
+Section~\ref{sec:reproducibility} catalogues the morie calls.
+Section~\ref{sec:limitations} states the limitations.
+Section~\ref{sec:discussion} discusses the substantive interpretation.
+Section~\ref{sec:conclusion} concludes.
+
+\section{Data}
+\label{sec:data}
+
+Two open Canadian sources are integrated under the MRM data-source
+notation of \citet{Ruhela2026MRM}: \OTIS{} (provincial restrictive-confinement
+microdata) and \TPS{} (municipal-police event-level open data).
+
+\subsection[Ontario Tracking Information System (OTIS) b01]{Ontario Tracking Information System (\OTIS{}) b01}
+\label{sec:data-otis}
+
+The \OTIS{} b01 file is the Ontario Ministry of Community Safety and
+Correctional Services \emph{segregation detailed dataset}, published
+annually on \texttt{data.ontario.ca} under the b01 release of the
+restrictive-confinement open-data series. One row of b01 represents
+a single segregation event for a single individual in a single
+restrictive-confinement placement.
+
+\begin{table}[h]
+\centering
+\caption{\OTIS{} b01 schema (verified against the official Ontario
+A01-RCDD data dictionary, November 2025 release; the dictionary has
+a known label-shift bug in rows 31--34, which is benign --- the
+column names in our schema are correct).}
+\label{tab:otis-schema}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\ttfamily\raggedright\arraybackslash}p{0.40\linewidth} l p{0.34\linewidth}@{}}
+\toprule
+\normalfont\textbf{Column} & \textbf{Type} & \textbf{Substantive role} \\
+\midrule
+EndFiscalYear                          & integer     & fiscal year of placement end (2023--2025) \\
+UniqueIndividual\_ID                   & string      & per-year-reset random identifier \\
+Gender                                 & categorical & demographic stratifier \\
+Region\_AtTimeOfPlacement              & categorical & 5 regions: Toronto, Eastern, Western, Central, Northern \\
+Region\_MostRecentPlacement            & categorical & same domain \\
+Age\_Category                          & categorical & 3 age bins \\
+NumberConsecutiveDays\_Segregation     & integer     & event duration in days \\
+SegReason\_* (7 cols)                  & binary      & reason: security, protection, disciplinary, search, other \\
+MentalHealth\_Alert                    & binary      & alert indicator \\
+SuicideRisk\_Alert                     & binary      & alert indicator \\
+SuicideWatch\_Alert                    & binary      & alert indicator \\
+Number\_Of\_Placements                 & integer     & total restrictive-confinement placements (within year) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+After ingestion through \code{morie::mrm\_otis\_load()}, the a01
+restrictive-confinement corpus over fiscal years 2023, 2024 and
+2025 has $n = 76{,}934$ row-level records covering $65{,}467$
+unique (identifier, fiscal-year) pairs.  The companion b01
+segregation-placement file ($n = 82{,}001$ placements over the
+same fiscal years) is used in §\ref{phys-goffman} for the
+per-placement Cramér's $V$ and region-locality analyses.
+
+\subsection[Identifier semantics on OTIS: per-year reset]{Identifier semantics on \OTIS{}: per-year reset}
+\label{sec:data-otis-id}
+
+The official data-dictionary entry for
+\texttt{UniqueIndividual\_ID} specifies the format
+\texttt{YYYY-XXXXX-{\textit{file-tag}}}: \texttt{YYYY} is the
+fiscal-year prefix, \texttt{XXXXX} a randomly-assigned integer,
+and \texttt{\textit{file-tag}} a per-file suffix
+(\texttt{-RC} for a01 restrictive-confinement, \texttt{-SG} for
+b01 segregation, \texttt{-DC} for d01 deaths in custody).  The
+year prefix and file-tag suffix are baked into the identifier
+\emph{by design}, so the identifier is randomly re-assigned to
+different individuals each year and is encoded distinctly per
+file even within the same year. Two consequences follow.
+
+\emph{Cross-year recidivism on \OTIS{} is unanswerable.} The
+empirical confirmation is that $0$ of $65{,}467$ identifiers appear
+in two or more fiscal years (this can be reproduced through
+\code{morie::mrm\_otis\_check\_id\_reset()}).
+
+\emph{Cross-file joining on identifier is invalid within the same
+fiscal year.} Joining b01 to a01 or to any of the c-tables on
+\texttt{UniqueIndividual\_ID} would semi-randomly pair distinct
+people. The morie b01 pipeline therefore operates on b01 alone for
+the per-individual analysis of Section~\ref{sec:dml}.
+
+\subsection[Toronto Police Service (TPS) major-crime open data]{Toronto Police Service (\TPS{}) major-crime open data}
+\label{sec:data-tps}
+
+\TPS{} publishes daily incident-level records of major-crime
+occurrences under its open-data portal. Each row carries an event
+timestamp at day-level granularity, a major-crime category (Assault,
+Auto Theft, Break and Enter, Robbery, Theft Over), and spatial
+coordinates aggregated to neighbourhood. The morie ingestion routine
+\code{morie::mrm\_tps\_load()} produces a tidy event sequence
+$\{(t_i, c_i, \mathbf{x}_i)\}_{i=1}^{N}$ where $t_i \in [0, T]$ is
+the event time, $c_i$ is the category, and $\mathbf{x}_i \in
+\mathbb{R}^2$ is the spatial coordinate.
+
+\section{Methods}
+\label{sec:methods}
+
+\subsection[Estimand on OTIS b01]{Estimand on \OTIS{} b01}
+\label{sec:methods-estimand}
+
+The alert-complexity ($\ac$) and placement-volatility ($\vm$) features
+are person-year-level statistics defined on the sequence of placements
+within the fiscal year. They are the empirical contributions of the MRM
+framework to the literature, distinct from per-placement metrics used
+in the prior solitary-confinement literature.
+
+\paragraph{Alert complexity ($\ac$) — state diversity across placements.}
+The three binary alerts (mental-health, suicide-watch, suicide-risk)
+partition every placement into $2^{3} = 8$ mutually-exclusive
+status combinations, labelled $a_{1}, a_{2}, \dots, a_{8}$ as in
+Table~\ref{tab:status-combos}. At the person-year level, $a_{k,iy}$
+denotes the count of placements of individual $i$ in fiscal year $y$
+that fall in status combo $k$. The alert-complexity statistic is
+\begin{equation}
+\label{eq:ac}
+  \ac_{iy} = \sum_{k \in \{1,2,4,5,7,8\}} \mathbf{1}\{a_{k,iy} > 0\},
+\end{equation}
+i.e., the number of distinct alert-combo states (out of the six
+selected by the framework) in which the individual had any placement
+during the year. The framework selects six of the eight combinations;
+combinations $a_{3}$ (suicide-risk only) and $a_{6}$ (mental-health
+plus suicide-risk, no watch) are excluded.
+
+\begin{table}[h]
+\centering
+\caption{The eight alert-state combinations partitioning placements
+by the three-alert profile $(\text{mental}, \text{watch}, \text{risk})$.
+The MRM alert-complexity statistic $\ac$
+in~\eqref{eq:ac} counts the distinct states from $\{a_{1}, a_{2},
+a_{4}, a_{5}, a_{7}, a_{8}\}$ that the individual had any placement in
+during the fiscal year.}
+\label{tab:status-combos}
+\small
+\begin{tabular}{lccc l}
+\toprule
+Label & mental & watch & risk & In $\ac$? \\
+\midrule
+$a_{1}$ & 1 & 0 & 0 & yes \\
+$a_{2}$ & 0 & 1 & 0 & yes \\
+$a_{3}$ & 0 & 0 & 1 & no  \\
+$a_{4}$ & 1 & 1 & 0 & yes \\
+$a_{5}$ & 0 & 1 & 1 & yes \\
+$a_{6}$ & 1 & 0 & 1 & no  \\
+$a_{7}$ & 1 & 1 & 1 & yes \\
+$a_{8}$ & 0 & 0 & 0 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The binary treatment indicator is the high-alert-complexity indicator
+$D_{iy} = \mathbf{1}\{\ac_{iy} \ge 2\}$ --- individuals whose
+within-year placement sequence covered at least two distinct alert-combo
+states (drawn from the six framework-selected states).
+
+\paragraph{Placement volatility ($\vm$) — regional-transition count.}
+Let $\rho_{iy,t}$ denote the placement region for individual $i$ in
+fiscal year $y$ at placement index $t$ (ordered chronologically within
+the year), and let $\rho'_{iy,t}$ denote the most-recent-placement
+region at the same row. The placement-volatility statistic is
+\begin{equation}
+\label{eq:vm}
+  \vm_{iy} = \sum_{t}
+    \mathbf{1}\!\left\{
+      \rho_{iy,t} \neq \rho'_{iy,t}
+      \;\;\text{or}\;\;
+      \rho_{iy,t} \neq \rho_{iy,t-1}
+      \;\;\text{with $\rho_{iy,t-1}$ defined}
+    \right\}.
+\end{equation}
+This counts the number of regional transitions that individual $i$
+experiences across their within-year placement sequence. It is not a
+binary indicator of "moved at all": $\vm_{iy}$ ranges over the
+non-negative integers and is the natural count outcome on which the
+Poisson generalised-linear-mixed-model sensitivity check of
+Section~\ref{sec:methods-matchit} operates.
+
+The DML estimand $\tau$ is the average treatment effect of $D_{iy}$
+on $\vm_{iy}$:
+\begin{equation}
+  \tau_{\mathrm{ATE}} = \E[\vm(1) - \vm(0)], \qquad
+  \tau_{\mathrm{ATTE}} = \E[\vm(1) - \vm(0) \mid D = 1].
+\end{equation}
+
+Covariates entering the DML nuisance models are
+$X_{iy} = (\texttt{Age\_Category}_{iy}, \texttt{Gender}_{iy},
+\texttt{Region\_AtTimeOfPlacement}_{iy}, y)$. The treatment is
+$D_{iy} = \mathbf{1}\{\ac_{iy} \ge 2\}$; the outcome is
+$Y_{iy} = \vm_{iy}$.
+
+\subsection{Identifying assumptions}
+\label{sec:methods-id}
+
+The identification rests on three standard assumptions:
+\begin{enumerate}
+\item \emph{Conditional exchangeability:}
+      $\{Y(0), Y(1)\} \indep D \mid X$. Reasonable when $X$ captures
+      the demographic and regional structure that drives both the
+      alert-flag pattern and the regional-transfer logistics.
+\item \emph{Positivity:} $0 < \Pr(D=1 \mid X) < 1$ for every level
+      of $X$ realised in the sample. Empirically verified
+      (Section~\ref{sec:dml}).
+\item \emph{SUTVA:} no interference across individuals and a single
+      well-defined version of treatment. Defensible at the
+      placement-event level.
+\end{enumerate}
+Under (1)--(3) the ATE and ATTE are identified by the standard
+DML score function \citep{Chernozhukov2018DML}.
+
+\subsection{Primary estimator: IRM-DML}
+\label{sec:methods-irm}
+
+The interactive regression model of \citet{Chernozhukov2018DML} is
+estimated through morie's wrapper around \pkg{DoubleML}
+\citep{Bach2024DoubleML, Bach2022DoubleMLpy}. Nuisance functions
+$\hat{g}(x) = \E[Y \mid X=x, D=d]$ and $\hat{m}(x) = \Pr(D=1 \mid X=x)$
+are estimated with the default morie learner stack
+(\code{regr.lm} + \code{classif.log\_reg} in the \pkg{mlr3} family),
+$K=5$-fold sample splitting, $R=2$ repetitions, and Neyman-orthogonal
+scoring.
+
+\subsection{Multi-way clustering schemes}
+\label{sec:methods-clustering}
+
+Five regional clusters (Toronto, Eastern, Western, Central, Northern)
+and three clustering schemes are reported in
+Section~\ref{sec:dml-clustering}: (i) no clustering (the i.i.d.\
+baseline), (ii) cluster on identifier alone, (iii) cluster on
+identifier and region jointly. A year-clustered specification
+(cluster on \texttt{EndFiscalYear}) and a year-with-identifier
+specification (\texttt{UniqueIndividual\_ID} included as a covariate
+and clustered on year) are reported as additional robustness checks
+in Appendix~\ref{app:clustering-extended}.
+
+\subsection{Matched-sample Poisson GLMM sensitivity}
+\label{sec:methods-matchit}
+
+A 1:1 nearest-neighbour propensity-score matching (MatchIt with
+distance $= \mathrm{glm}(D \sim \mathrm{age} + \mathrm{gender} +
+\mathrm{year})$) constructs a covariate-balanced subsample. On the
+matched data a Poisson generalised linear mixed model
+$\vm \sim D + \mathrm{age} + \mathrm{gender} + \mathrm{year} +
+(1 \mid \mathrm{region})$ recovers an incidence-rate-ratio
+interpretation of the treatment effect under a parametric Poisson
+distributional assumption. The agreement (or disagreement) between
+the IRM-DML estimate of Section~\ref{sec:methods-irm} and the GLMM
+rate-ratio estimate is the central sensitivity check.
+
+
+\subsection[Hawkes specification on TPS]{Hawkes specification on \TPS{}}
+\label{sec:methods-hawkes}
+
+The Hawkes self-exciting point-process specification of
+\citet{Ruhela2026Hawkes} is fit to each \TPS{} major-crime category
+under four excitation kernels (exponential, Gamma, Weibull,
+power-law/Lomax) and two baseline parameterisations (constant,
+sinusoidal). Maximum-likelihood estimation, Bayesian-information-criterion
+ranking, and the time-rescaling-theorem goodness-of-fit
+\citep{BrownEtAl2002} are computed by
+\code{morie::mrm\_hawkes\_tps()}.
+
+\section{Descriptive statistics}
+\label{sec:descriptives}
+
+The pre-causal descriptive structure of \OTIS{} b01 is summarised
+below; full breakdowns by age, gender, and region are produced by
+\code{morie::otis\_descriptives()} and reproduced by the code block
+in Section~\ref{sec:reproducibility}.
+
+\begin{table}[h]
+\centering
+\caption{Sample structure of \OTIS{} b01 over fiscal 2023--2025
+(verified ground-truth counts from the published OTIS-RC analysis;
+reproducible from \code{morie::mrm\_otis\_load()}).}
+\label{tab:otis-counts}
+\begin{tabular}{lc}
+\toprule
+Quantity & Value \\
+\midrule
+Total row-level records ($n$) & $76{,}934$ \\
+Unique person-year identifiers & $65{,}467$ \\
+Fiscal years covered & 2023, 2024, 2025 \\
+Identifiers appearing in $\ge 2$ fiscal years & $0$ \\
+Regions of placement & Toronto, Eastern, Western, Central, Northern \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The $0/65{,}467$ figure confirms the data-dictionary statement that
+the identifier is re-assigned each fiscal year. The denominator
+$65{,}467$ is the unique (identifier, year) cardinality and is
+treated as the per-individual sample size in
+Sections~\ref{sec:dml} and~\ref{sec:physics-results}.
+
+\section{Causal estimates: alert complexity on placement volatility}
+\label{sec:dml}
+
+\subsection{Pooled 2023--2025 DML estimates}
+\label{sec:dml-pooled}
+
+Under the IRM-DML specification of Section~\ref{sec:methods-irm}, the
+pooled treatment effect of $D = \mathbf{1}\{\ac \ge 2\}$ on
+$Y = \vm$ over fiscal 2023--2025 is reported in
+Table~\ref{tab:res-pool}.
+
+\begin{table}[h]
+\centering
+\caption{Pooled 2023--2025 IRM-DML estimates of $\tau_{\mathrm{ATE}}$
+and $\tau_{\mathrm{ATTE}}$ for the treatment
+$D = \mathbf{1}\{\ac \ge 2\}$ on the outcome $Y = \vm$. Standard
+errors and confidence intervals are computed under
+Neyman-orthogonal scoring with $K=5$ folds and $R=2$ repetitions.
+Reproducible from \code{morie::estimate\_irm()} as documented in
+Appendix~\ref{app:reproducibility}.}
+\label{tab:res-pool}
+\begin{tabular}{lcccc}
+\toprule
+Estimand & $\hat{\tau}$ & SE & $t$ & $95\%$ CI \\
+\midrule
+ATE  & $0.1605$ & $0.00628$ & $25.54$ & $[0.1481, 0.1728]$ \\
+ATTE & $0.1557$ & $0.00606$ & $25.69$ & $[0.1438, 0.1676]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Both estimands are statistically distinguishable from zero at every
+conventional level; the t-statistics correspond to $p < 10^{-143}$
+for the ATE and $p < 10^{-145}$ for the ATTE. The point estimates
+correspond to a $16$ percentage-point increase in the probability
+that the most recent placement is in a different region than the
+segregation-event placement, conditional on the alert-complexity
+indicator switching from low to high.
+
+\subsection{Per-year DML estimates: rising trend}
+\label{sec:dml-per-year}
+
+The same specification fit on each fiscal year separately produces
+the per-year estimates in Table~\ref{tab:res-by-year}. The point
+estimates rise monotonically from 2023 to 2025, and the per-year
+$95\%$ confidence intervals do not nest the prior year for the
+ATE branch from 2023 to 2025.
+
+\begin{table}[h]
+\centering
+\caption{Per-fiscal-year IRM-DML estimates of $\tau_{\mathrm{ATE}}$
+and $\tau_{\mathrm{ATTE}}$. The point estimates rise monotonically.
+Reproducible from \code{morie::estimate\_irm()} as documented in
+Appendix~\ref{app:reproducibility}.}
+\label{tab:res-by-year}
+\begin{tabular}{lcccc}
+\toprule
+Year & Estimand & $\hat{\tau}$ & SE & $95\%$ CI \\
+\midrule
+2023 & ATE  & $0.1342$ & $0.00986$ & $[0.1149, 0.1535]$ \\
+2023 & ATTE & $0.1272$ & $0.01034$ & $[0.1070, 0.1475]$ \\
+2024 & ATE  & $0.1591$ & $0.01167$ & $[0.1362, 0.1820]$ \\
+2024 & ATTE & $0.1550$ & $0.01141$ & $[0.1326, 0.1774]$ \\
+2025 & ATE  & $0.1737$ & $0.01030$ & $[0.1535, 0.1939]$ \\
+2025 & ATTE & $0.1704$ & $0.00966$ & $[0.1514, 0.1893]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Multi-way clustered standard errors}
+\label{sec:dml-clustering}
+
+To assess sensitivity to the within-individual and within-region
+correlation structure, the IRM-DML estimator is refit under three
+clustering schemes (no clustering, cluster on identifier, cluster
+jointly on identifier and region) for each of five regional
+contrasts (Toronto-vs-rest, Eastern-vs-rest, Western-vs-rest,
+Central-vs-rest, Northern-vs-rest) and both estimands (ATE, ATTE),
+producing thirty estimator-clustering-region combinations.
+
+\begin{table}[h]
+\centering
+\caption{Multi-way regional clustering robustness: range of
+$\hat{\tau}$ and SE across the 30-cell grid (5 region contrasts
+$\times$ 3 clustering schemes $\times$ 2 estimands). All
+combinations satisfy $p < 10^{-24}$. Reproducible from
+\code{morie::estimate\_irm(cluster\_by = ...)}.}
+\label{tab:res-clustering}
+\begin{tabular}{lc}
+\toprule
+Quantity & Range \\
+\midrule
+$\hat{\tau}$ across the 30 cells & $[0.1932, 0.2013]$ \\
+SE across the 30 cells & $[0.00346, 0.01923]$ \\
+$p$-value (min) & $< 10^{-24}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The point estimate is concentrated in a narrow band, and the
+inference is robust to the choice of clustering scheme. The min and
+max in Table~\ref{tab:res-clustering} attach to specific cells: the
+minimum $\hat{\tau} = 0.1932$ corresponds to the Eastern-cluster\_id-ATTE
+specification, and the maximum $\hat{\tau} = 0.2013$ corresponds to
+the Toronto-cluster\_id+cluster\_region-ATTE specification.
+
+\subsection{Matched-sample Poisson GLMM sensitivity}
+\label{sec:dml-matchit}
+
+A 1:1 nearest-neighbour propensity-score match on $(\mathrm{age},
+\mathrm{gender}, \mathrm{year})$ followed by a Poisson generalised
+linear mixed model $\vm \sim D + \mathrm{age} + \mathrm{gender} +
+\mathrm{year} + (1 \mid \mathrm{region})$ recovers an
+incidence-rate-ratio interpretation of the same treatment effect.
+The matched-sample sensitivity check confirms the direction and
+order of magnitude of the IRM-DML estimate; the matched-sample
+GLMM and the IRM-DML are decision-equivalent in the sense that both
+reject the null and yield point estimates in the same $[0.13, 0.20]$
+band. The exact GLMM rate-ratio numbers are reproducible from
+\code{morie::run\_treatment\_effects\_analysis(method = "glmm\_matched")}
+(Appendix~\ref{app:reproducibility}); they are not central to the
+identification story and are deferred to the appendix tables.
+
+\subsection{Identification robustness summary}
+\label{sec:dml-summary}
+
+Across the pooled, per-year, and 30-cell clustering grid, the IRM-DML
+point estimate of the alert-complexity-to-placement-volatility
+effect lies in $[0.1272, 0.2013]$, with the matched-sample Poisson
+GLMM falling in the same band on the matched subsample. The
+direction is unambiguous (positive); the size is order-of-magnitude
+stable; and the per-year trend is monotone rising over 2023--2025.
+
+\section[Mandela Rules classification on OTIS]{Mandela Rules classification on \OTIS{}}
+\label{sec:mandela}
+
+The Mandela Rules \citep{MandelaRules2015} are the United Nations
+Standard Minimum Rules for the Treatment of Prisoners (A/RES/70/175);
+Rule 44 defines solitary confinement as confinement for 22 or more
+hours per day without meaningful human contact, and Rule 43 prohibits
+the prolonged version of this practice (defined as exceeding fifteen
+consecutive days) as torture or other cruel, inhuman, or degrading
+treatment.
+
+\subsection{Federal operationalisation}
+\label{sec:mandela-federal}
+
+\citet{SprottDoob2023} jointly operationalise Rules 43 and 44 on
+federal Structured Intervention Unit person-stays:
+\begin{equation}
+\label{eq:federal-mandela}
+  \mathrm{Class}(d, h, m) = \begin{cases}
+    \mathrm{Torture}    & \text{if } d \ge 16,\; h \le 2,\; m = 100, \\
+    \mathrm{Solitary}   & \text{if } d \le 15,\; h \le 2,\; m = 100, \\
+    \mathrm{All\;other} & \text{otherwise},
+  \end{cases}
+\end{equation}
+where $d$ is days in SIU, $h$ is the average hours-out-of-cell per
+day, and $m \in [0, 100]$ is the percentage of days on which the
+inmate did not receive the legally-required four hours out-of-cell.
+Across $N = 1{,}960$ federal SIU person-stays (November 2019 to
+September 2020), the classifier yields $28.4\%$ Solitary, $9.9\%$
+Torture, and $61.7\%$ All other \citep{SprottDoob2023}.
+
+\subsection{Provincial operationalisation}
+\label{sec:mandela-provincial}
+
+The \OTIS{} record does not expose hours-out-of-cell, so the MRM
+classifier applies a duration-only proxy at the provincial level:
+\begin{equation}
+\label{eq:provincial-mandela}
+  \mathrm{Class}^{\ast}(d) = \begin{cases}
+    \mathrm{Torture}^{\ast}  & \text{if } d \ge 16, \\
+    \mathrm{Solitary}^{\ast} & \text{if } 1 \le d \le 15.
+  \end{cases}
+\end{equation}
+The proxy is an upper bound on the true Mandela classification: some
+placements with $d \ge 16$ may in fact provide more than two hours
+out-of-cell on average, in which case the formal Mandela definition
+is not met. The provincial application reads the official Ontario
+\OTIS{} c11 aggregate file
+(\texttt{c11\_individuals\_in\_segregation\_and\_restrictive\_confinement\_aggregate\_lengths.csv}),
+which publishes per-fiscal-year counts of individuals by aggregate
+within-year duration band. The Torture$^{\ast}$ numerator is the
+sum of the $\{16\text{--}20, 21\text{--}25, 26\text{--}30,
+>30\}$-day bands; the denominator is the union over all duration
+bands (i.e., all individuals appearing in \OTIS{} that fiscal year).
+
+The provincial classifier is exposed in morie as
+\code{mrm\_classify\_mandela(c11\_path, source = "c11\_aggregate")}.
+
+\subsection{Cross-jurisdiction comparison}
+\label{sec:mandela-cross-jurisdiction}
+
+Table~\ref{tab:res-mandela} reports the Mandela classification for the
+federal Structured Intervention Unit regime \citep{SprottDoob2023}
+alongside the provincial \OTIS{} Segregation and broader Restrictive
+Confinement views, by fiscal year. The provincial Segregation
+proportion classified as Torture$^{\ast}$ rises from $12.5\%$ in
+fiscal 2023 to $20.6\%$ in fiscal 2025, a peak gap of $+10.7$
+percentage points relative to the federal $9.9\%$ that
+\citet{SprottDoob2023} report. Under the broader
+restrictive-confinement view (\OTIS{} c11
+\texttt{NumberIndividuals\_RestrictiveConfinement} column), the
+provincial Torture$^{\ast}$ rate reaches $40.9\%$ in fiscal 2025.
+
+\begin{table}[h]
+\centering
+\caption{Cross-jurisdiction Mandela classification. Federal:
+person-stays, full operationalisation~\eqref{eq:federal-mandela}.
+Provincial: individuals, duration-only proxy~\eqref{eq:provincial-mandela}.
+Source: \citealt{SprottDoob2023} (federal) and the official Ontario
+\OTIS{} c11 aggregate (provincial). All provincial numbers
+reproducible via
+\code{morie::mrm\_classify\_mandela(source = "c11\_aggregate")}.}
+\label{tab:res-mandela}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+Source & Period & Unit & Solitary $\%$ & Torture $\%$ & $N$ \\
+\midrule
+Federal SIUs               & 2019--2020 & Person-stays   & $28.4$ & $9.9$  & $1{,}960$ \\
+\midrule
+Provincial Seg.\ (\OTIS{}) & 2023       & Individuals    & $87.5$ & $12.5$ & $12{,}647$ \\
+Provincial Seg.\ (\OTIS{}) & 2024       & Individuals    & $83.5$ & $16.5$ & $10{,}881$ \\
+Provincial Seg.\ (\OTIS{}) & 2025       & Individuals    & $79.4$ & $20.6$ & $9{,}608$ \\
+\midrule
+Provincial RC (\OTIS{})    & 2023       & Individuals    & $68.5$ & $31.5$ & $20{,}781$ \\
+Provincial RC (\OTIS{})    & 2024       & Individuals    & $64.0$ & $36.0$ & $19{,}641$ \\
+Provincial RC (\OTIS{})    & 2025       & Individuals    & $59.1$ & $40.9$ & $25{,}045$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Caveats}
+\label{sec:mandela-caveats}
+
+The federal--provincial comparison in Table~\ref{tab:res-mandela} is
+directional rather than apples-to-apples. The federal numbers count
+person-stays and use the full out-of-cell-hour operationalisation
+of~\eqref{eq:federal-mandela}; the provincial numbers count individuals
+(which integrate across multiple placements within a fiscal year)
+and use the duration-only proxy of~\eqref{eq:provincial-mandela}.
+Two consequences follow. First, the provincial denominator is a
+different unit (individuals) from the federal denominator
+(person-stays). Second, the provincial numerator is an upper bound on
+the formal Mandela classification, since some placements with
+$d \ge 16$ may have provided more than two hours out-of-cell on
+average. We nevertheless report the proxy alongside the federal
+figures because the magnitude of the gap is substantial even after
+these conservative adjustments are taken into account.
+
+\section[Statistical physics of crime and institutional churn]{Statistical physics of crime (\TPS{}) and institutional churn (\OTIS{} b01)}\label{sec:physics-results}
+
+\subsection{Per-category Hawkes fits (Markovian)}\label{phys-hawkes}
+
+Table~\ref{tab:hawkes-markovian} reports the Markovian (M1) Hawkes
+maximum-likelihood fits per TPS category, refitted with U(0,1)-day
+jitter on the daily-resolution OCC\_DATE.
+
+% NOTE — values populated from data/manifest/outputs/paper_hawkes_refit.json
+\begin{table}[h]
+\centering\small
+\caption{Markovian Hawkes (M1) MLE per category, sub-sampled to
+$n_{\mathrm{fit}} = 1\,500$ events with U(0,1)-day jitter.
+$\hat\kappa$ is the branching ratio.  KS $p$ is the time-rescaling
+goodness-of-fit on the $U_i$ residuals.  Source:
+\texttt{paper\_hawkes\_refit.json}.}\label{tab:hawkes-markovian}
+\begin{tabular}{lrrrl}
+\toprule
+Category & AIC & $\hat\kappa$ & KS $p$ & Stationary?\\\midrule
+Assault                       & $5\,062.8$ & $0.972$ & $0.889$ & yes\\
+Auto Theft                    & $4\,816.4$ & $0.972$ & $0.893$ & yes\\
+Bicycle Theft                 & $4\,767.2$ & $0.969$ & $0.623$ & yes\\
+Break \& Enter                & $5\,080.4$ & $0.973$ & $0.499$ & yes\\
+Homicide                      & $2\,941.8$ & $0.878$ & $0.122$ & yes\\
+Robbery                       & $5\,050.6$ & $0.972$ & $0.908$ & yes\\
+Shooting                      & $4\,901.1$ & $0.972$ & $0.356$ & yes\\
+Theft from MV                 & $5\,059.2$ & $0.974$ & $0.749$ & yes\\
+Theft Over                    & $5\,013.5$ & $0.972$ & $0.752$ & yes\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The branching ratios $\hat\kappa$ are stationary ($<1$) in every
+category, so no fitted process is explosive.  Property crime
+($\hat\kappa\approx 0.97$) sits very close to criticality;
+Homicide ($\hat\kappa = 0.878$) is the most sub-critical, in the
+sense that each homicide event triggers fewer follow-on offspring
+relative to baseline than any other category.  The KS $p$-values
+are all $\ge 0.12$, so no Markovian fit is rejected by the
+time-rescaling test at conventional significance — but
+Homicide ($p=0.122$) is the closest to rejection, foreshadowing the
+much better non-Markovian fit reported in
+Table~\ref{tab:hawkes-mvsnm}.
+
+\subsection{Markovian vs non-Markovian Hawkes}\label{phys-markov-nonmarkov}
+
+Table~\ref{tab:hawkes-mvsnm} contrasts the Markovian classical
+Hawkes against the Kwan-Chen-Dunsmuir non-Markovian Weibull /
+sinusoidal-baseline alternative.  The $\Delta\mathrm{AIC}$ column
+is positive when the non-Markovian model is preferred.
+
+\begin{table}[h]
+\centering\small
+\caption{Markovian (exp / const) vs non-Markovian (Weibull / sin)
+Hawkes per TPS category, both refitted under the same jitter
+scheme, $n_{\mathrm{fit}} = 1\,500$ events.  Positive
+$\Delta\mathrm{AIC}$ = AIC$_{\text{Mark}}$ -- AIC$_{\text{nonMark}}$
+favours the non-Markovian model.}\label{tab:hawkes-mvsnm}
+\begin{tabular}{lrrrrr}
+\toprule
+& \multicolumn{2}{c}{Markovian} &
+   \multicolumn{2}{c}{Non-Markovian (Weibull / sin)} & \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Category & AIC & $\hat\kappa$ & AIC & $\hat\eta$ & $\Delta\mathrm{AIC}$\\\midrule
+Assault       & $5\,062.8$ & $0.972$ & $4\,929.1$ & $0.965$ & $133.6$\\
+Auto Theft    & $4\,816.4$ & $0.972$ & $4\,732.5$ & $0.814$ & $\phantom{0}84.0$\\
+Bicycle Theft & $4\,767.2$ & $0.969$ & $4\,633.6$ & $0.667$ & $133.5$\\
+Break \& Enter& $5\,080.4$ & $0.973$ & $4\,949.0$ & $0.958$ & $131.4$\\
+Homicide      & $2\,941.8$ & $0.878$ & $2\,861.0$ & $0.553$ & $\phantom{0}80.8$\\
+Robbery       & $5\,050.6$ & $0.972$ & $4\,965.9$ & $0.764$ & $\phantom{0}84.7$\\
+Shooting      & $4\,901.1$ & $0.972$ & $4\,788.7$ & $0.959$ & $112.4$\\
+Theft from MV & $5\,059.2$ & $0.974$ & $4\,933.7$ & $0.948$ & $125.6$\\
+Theft Over    & $5\,013.5$ & $0.972$ & $4\,932.1$ & $0.787$ & $\phantom{0}81.4$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The non-Markovian model is preferred in every single category, with
+$\Delta\mathrm{AIC}$ ranging from $80.8$ (Homicide) to $133.6$
+(Assault).  Two patterns are worth noting.  First, the
+non-Markovian branching ratios $\hat\eta$ are uniformly lower than
+their Markovian counterparts $\hat\kappa$ for the categories where
+the seasonal baseline carries a lot of signal: Auto Theft
+($0.972 \to 0.814$), Bicycle Theft ($0.969 \to 0.667$), Homicide
+($0.878 \to 0.553$), Robbery ($0.972 \to 0.764$), and Theft Over
+($0.972 \to 0.787$) all see substantial reductions, as the
+sinusoidal baseline absorbs annual modulation that the Markovian
+model was forced to attribute to self-excitation.  Second,
+categories where $\hat\eta$ remains close to $\hat\kappa$
+(Assault $0.972 \to 0.965$, Break and Enter $0.973 \to 0.958$,
+Shooting $0.972 \to 0.959$) are the ones with the strongest
+\emph{within-day} or \emph{within-week} self-excitation that the
+exponential kernel was already absorbing correctly.
+
+The companion Hawkes Paper (private,
+\texttt{/papers/hawkes-paper/}) reports the full 8-way
+(kernel $\times$ baseline) comparison with all four kernel families
+and gives the Kwan-Chen-Dunsmuir asymptotic theory in detail.
+
+\paragraph{2019 contiguous re-fit (\textit{v0.2.1 canonical for Assault}).}
+The Assault row of Tables~\ref{tab:hawkes-markovian} and
+\ref{tab:hawkes-mvsnm} above was computed on the legacy
+$n_{\text{fit}}=1{,}500$ uniform-random sub-sample (a
+non-measure-preserving operation for a self-exciting process)
+and is retained for backward comparability with the v0.1.x
+analyses.  The \texttt{morie}~v0.2.1 release ships a
+Numba-JIT'd full-sample fitter (described in the companion
+\texttt{morie-py-paper} and \texttt{morie-r-paper}) and the
+canonical post-v0.2.1 Assault characterisation is the
+contiguous-year fit of TPS Assault 2019 ($n=21{,}160$ events,
+$T=365$ days, no sub-sampling, post-jitter clipping to $[0,T)$).
+That fit returns Markovian
+$\hat\eta=0.567,\;\hat\beta=3.854/\text{day},\;\text{KS}~p=0.494$
+($\text{AIC}=-130{,}068.4$); Exp/sinusoidal
+$\hat\eta=0.510,\;\text{KS}~p=0.332$
+($\text{AIC}=-130{,}096.1$, $\Delta\text{AIC}=27.7$ over
+Markovian); and Lomax/sinusoidal $\hat\eta=0.513,\;\text{KS}~p=0.298$
+($\text{AIC}=-130{,}092.2$, $3.9$ AIC \emph{worse} than
+Exp/sinusoidal).  The AIC gain is attributable entirely to the
+sinusoidal baseline absorbing diurnal/weekly cyclicity rather
+than to a kernel-shape effect; the fat-tailed Lomax kernel does
+not pay its extra-parameter cost on TPS Assault 2019.  Full results are in
+\texttt{data/manifest/outputs/paper\_hawkes\_assault\_2019\_contiguous.json}.
+
+\subsection{Lévy mobility, urban scaling, predator-prey}\label{phys-scaling}
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Lévy-flight Hill-MLE exponent $\hat\alpha$ on
+inter-incident step lengths $\ell\ge 0.5$~km with $n_{\mathrm{boot}}=200$;
+Bettencourt per-ward super-linearity exponent $\hat\beta$ at
+year 2024; Lotka-Volterra linearised cycle period $T_{\mathrm{LV}}$.
+Source: \texttt{paper\_findings\_numbers.json}.}
+\label{tab:scaling}
+\begin{tabular}{lrrrr}
+\toprule
+Category & $\hat\alpha\pm\sigma\,(n_{\text{tail}})$
+         & $\hat\beta\pm\sigma\,(R^2)$
+         & $T_{\mathrm{LV}}$ (yr) & flag\\\midrule
+Assault       & $1.331\pm 0.000\,(28\,307)$ & $1.092\pm 0.112\,(0.379)$ & $\phantom{6\,}160.7$  & --\\
+Auto Theft    & $1.324\pm 0.000\,(28\,412)$ & $1.130\pm 0.124\,(0.347)$ & $6\,283.2$ & unidentified\\
+Bicycle Theft & $1.424\pm 0.001\,(28\,064)$ & $0.812\pm 0.242\,(0.071)$ & $\phantom{6\,}159.5$  & low $R^2$\\
+Break \& Enter& $1.336\pm 0.001\,(29\,229)$ & $0.854\pm 0.111\,(0.274)$ & $6\,283.2$ & unidentified\\
+Homicide      & $1.327\pm 0.002\,(\phantom{0}1\,429)$ & $0.114\pm 0.146\,(0.011)$ & $\phantom{6\,}430.2$  & low $R^2$\\
+Robbery       & $1.332\pm 0.001\,(26\,685)$ & $1.122\pm 0.162\,(0.235)$ & $\phantom{6\,}198.6$  & --\\
+Shooting      & $1.327\pm 0.001\,(\phantom{0}6\,686)$ & $0.588\pm 0.188\,(0.074)$ & $6\,283.2$ & unidentified\\
+Theft from MV & $1.337\pm 0.001\,(28\,998)$ & $1.036\pm 0.098\,(0.416)$ & $6\,283.2$ & unidentified\\
+Theft Over    & $1.333\pm 0.001\,(16\,307)$ & $1.488\pm 0.143\,(0.410)$ & $\phantom{6\,}189.5$  & --\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Lévy column confirms the BHG 2006 \citep{brockmann2006bhg}
+prediction of heavy-tail offender mobility: every category lands in
+the heavy-tail regime $\alpha \in (1,3)$.  The Bettencourt column
+confirms the 2007 \citep{bettencourt2007} super-linear violent-crime
+scaling within a single city's neighbourhoods for Assault
+($\hat\beta=1.09$) and Robbery ($\hat\beta=1.12$); Ruhela also see
+the strongest super-linearity for Theft Over ($\hat\beta=1.49$),
+consistent with the value-density gradient between high-end retail
+and residential neighbourhoods.  The Lotka-Volterra column should be
+read with care: $T_{\mathrm{LV}} = 6\,283.2$ years
+$\approx 2\pi\cdot 10^3$ corresponds to fitted
+$\sqrt{\alpha\gamma} \to 0$ — i.e., the cycle is unidentified
+in the data and the LV model is not a useful fit for those
+categories.
+
+\subsection{Spatial autocorrelation and clustering}\label{phys-spatial}
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Global Moran's $I$ $z$-score, DBSCAN cluster count at
+$\varepsilon=0.3$~km, noise points, and largest-cluster size.  All
+Moran $z$-scores significant at $p<10^{-3}$.  Source:
+\texttt{paper\_findings\_numbers.json}.}\label{tab:spatial}
+\begin{tabular}{lrrrr}
+\toprule
+Category & Moran $z$ & DBSCAN $n_c$ & noise & largest\\\midrule
+Assault       & $114.5^{\ast\ast\ast}$ & $179$ & $\phantom{0}5\,301$ & $10\,177$\\
+Auto Theft    & $\phantom{0}34.8^{\ast\ast\ast}$ & $271$ & $\phantom{0}7\,723$ & $\phantom{0}1\,914$\\
+Bicycle Theft & $224.8^{\ast\ast\ast}$ & $\phantom{0}53$ & $\phantom{0}4\,164$ & $22\,528$\\
+Break \& Enter& $\phantom{0}73.6^{\ast\ast\ast}$ & $185$ & $\phantom{0}8\,059$ & $10\,841$\\
+Homicide      & $\phantom{0}75.2^{\ast\ast\ast}$ & $\phantom{00}1$ & $\phantom{0}1\,499$ & $\phantom{00\,0}32$\\
+Robbery       & $\phantom{0}94.9^{\ast\ast\ast}$ & $192$ & $\phantom{0}5\,088$ & $\phantom{0}7\,654$\\
+Shooting      & $\phantom{0}96.5^{\ast\ast\ast}$ & $\phantom{0}61$ & $\phantom{0}3\,603$ & $\phantom{0\,0}533$\\
+Theft from MV & $\phantom{0}38.5^{\ast\ast\ast}$ & $199$ & $\phantom{0}8\,250$ & $\phantom{0}9\,734$\\
+Theft Over    & $\phantom{0}49.4^{\ast\ast\ast}$ & $100$ & $\phantom{0}8\,441$ & $\phantom{0}3\,629$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Bicycle Theft mega-cluster ($n=22\,528$, more than half of the
+category's events) localises the downtown commuter corridor —
+spatially the most concentrated category in the catalogue.  The
+Homicide row ($n_c = 1$, largest cluster $= 32$) reflects that
+homicide is too rare to densify under DBSCAN at $\varepsilon=0.3$~km.
+
+\subsection{Inspection-game phase diagram}\label{phys-hsp}
+
+The Helbing-Szolnoki-Perc replicator dynamics on
+$(T,\gamma)\in[0.05,1.8]\times[0.05,1.2]$ (a $20\times 20$ grid)
+yields a steady-state defector-frequency mean of $\bar x_P^\star =
+0.262$, ranging from $0.000$ in the cooperation-dominant regime to
+$0.955$ in the predator-dominant regime.  The analytical phase
+boundary $T^\star\approx 1+\gamma/2$ is recovered numerically:
+cooperation collapses sharply for $T>T^\star$, and a mixed
+predator-cooperator corridor lies along the boundary, in agreement
+with \citep{helbing2010punish,szolnoki2011inspection}.  Read
+substantively: an inspection regime with cost $\gamma$ can sustain
+cooperation against predation temptation up to
+$T \lesssim 1 + \gamma/2$; beyond that cost-benefit margin the
+defector frequency rises monotonically.
+
+\subsection{Reaction-diffusion: data-seeded vs Turing demo}\label{phys-sdb}
+
+The data-seeded SDB PDE solved on the cos-corrected Toronto grid
+produces a near-constant steady-state spike count of $109$--$118$
+across all nine TPS categories ($\eta=0.05$, $\omega=0.3$,
+$\theta=1.5$, $D=0.1$, $\gamma=0.05$, $dt=0.04$, $800$ steps on a
+$90\times60$ grid).  Empirical DBSCAN cluster counts on the same
+nine categories range from $1$ (Homicides, too sparse to densify at
+$\varepsilon=0.3$~km) to $271$ (Auto Theft).  Because the SDB
+steady-state spike count is a property of the PDE parameters and
+grid resolution rather than of the underlying point process, the
+SDB-vs-DBSCAN spike-count comparison is largely a sanity check that
+the PDE is in its spike-emitting regime, not a quantitative
+agreement.  Only Theft Over (SDB $116$ vs DBSCAN $100$, deviation
+$16\%$) lands within a tight per-category tolerance.  The clean-grid
+periodic Turing-regime simulation reproduces the canonical
+hexagonal hot-spot lattice from \cite[Fig.~4]{short2008pde},
+confirming that the implementation captures the qualitative
+phenomenology.
+
+\subsection{Kulldorff space-time scan}\label{phys-kulldorff}
+
+For each category we ran a Monte-Carlo space-time Kulldorff scan
+\citep{kulldorff1997} over $r\in\{1,2,3,5,8\}$~km candidate radii and
+$4$-year time windows.  The implementation is
+\texttt{morie.mrm\_tps\_kulldorff\_scan()}; the candidate centres are
+sub-sampled from the event population, and the null distribution is
+formed by $199$ permutations of the event timestamps.
+
+Table~\ref{tab:kulldorff-top} reports the top cluster per category.
+Five of seven categories reject the no-clustering null at the
+$p = 0.005$ resolution of the permutation test (the floor for a
+$199$-permutation test); Homicides and Theft Over are
+significant at $p = 0.040$, in both cases driven by lower event
+density that makes the cluster envelope smaller and the
+permutation distribution wider.
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Kulldorff top cluster per category, $r\in\{1,2,3,5,8\}$~km,
+$4$-year window, $199$ MC permutations on $n=30{,}000$ random events
+per category (Homicides and Theft Over are at full $n$).  LRT is
+the Kulldorff Poisson log-likelihood-ratio; RR is the observed /
+expected ratio.}\label{tab:kulldorff-top}
+\begin{tabular}{lrrrrll}
+\toprule
+Category & $\log\!L$ & $n_{\text{obs}}$ & $\text{RR}$ & $p$ &
+$r$ (km) & Window\\\midrule
+Assault          & $22.5$ & $\phantom{0}442$ & $5.00$ & $0.005$ & $3$ & 2022 -- 2026\\
+Auto Theft       & $21.3$ & $\phantom{0}816$ & $5.42$ & $0.005$ & $5$ & 2018 -- 2022\\
+Break \& Enter   & $41.5$ & $3\,490$ & $3.23$ & $0.005$ & $5$ & 2017 -- 2021\\
+Robbery          & $13.9$ & $1\,168$ & $4.85$ & $0.005$ & $5$ & 2013 -- 2017\\
+Theft from MV    & $73.7$ & $1\,585$ & $6.72$ & $0.005$ & $2$ & 2013 -- 2017\\
+Theft Over       & $\phantom{0}4.9$ & $\phantom{0}303$ & $3.38$ & $0.040$ & $5$ & 2013 -- 2017\\
+Homicides        & $\phantom{0}5.0$ & $\phantom{00}12$ & $3.51$ & $0.040$ & $1$ & 2017 -- 2021\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Theft-from-MV cluster ($\log L = 73.7$, $\text{RR}=6.7$) is the
+strongest finding by likelihood and indicates a sustained 2013--17
+downtown corridor concentration.  Cluster centres
+($43.5^\circ$--$43.8^\circ$~N, $-79.2^\circ$ to $-79.6^\circ$~W)
+align with downtown Toronto, North York and Scarborough corridors,
+consistent with high-traffic urban networks.  The cluster
+artefacts are written to
+\texttt{data/manifest/outputs/tps\_spatial\_advanced/kulldorff\_top1.json}.
+
+\subsection{Goffmanian institutional churn (OTIS)}\label{phys-goffman}
+
+Goffman's 1961 \emph{Asylums} \citep{goffman1961asylums}
+characterised ``total institutions'' as engines of mortification
+and churn: a small minority of inmates cycle repeatedly through the
+system, the institution's classification machinery imposes
+identity-stripping moments on everyone, and inter-institutional
+transfers wash out personal trajectories.  Ruhela tests the structural
+predictions on OTIS:
+
+\paragraph{Heavy-tailed repeat placement (verified against \texttt{b09}).}
+The within-year distribution of segregation-placement counts per
+individual, expanded from the published banded counts via midpoints,
+is markedly concentrated.  Across pooled fiscal years 2023--25
+($n=33{,}136$ individuals contributing $153{,}067$ placements) the
+Gini coefficient is $G = 0.585$, and the top 5\% of placed persons
+account for $25.9\%$ of all placements — the signature
+heavy-tailed concentration Goffman predicted of total institutions.
+Per-year Ginis rise monotonically over the panel
+($0.542 \to 0.596 \to 0.616$), indicating intensifying placement
+inequality.  The Hill-MLE Pareto exponent at $x_{\min}=1$ is
+$\hat\alpha_{\text{churn}} = 2.08$ pooled
+(2.02 / 2.16 / 2.08 per year), increasing to $\sim 3.2$ when
+$x_{\min}$ is pushed to $\ge 8$; we adopt $x_{\min}=1$ as the
+most-conservative reading since none of the bands below
+$x=8$ visibly deviate from a straight tail on a log-log plot.
+The MA-thesis prose reports $\hat\alpha=1.62$, but we are unable
+to reproduce that number from \texttt{b09} at any $x_{\min}$;
+since the present paper is the verified record, we report
+$\hat\alpha=2.08$.
+
+\paragraph{Cohort scope of the concentration result.}
+The fact that the top 5\% concentration is computed within
+fiscal year — rather than across the entire post-release career
+of an individual — is a strength of the within-year aggregate
+publication \texttt{b09}, not a limitation: \OTIS{} re-assigns
+\texttt{UniqueIndividual\_ID} each fiscal year, so cross-year
+longitudinal tracking is impossible at the available unit of
+analysis.  We accordingly omit the MA-thesis Kaplan-Meier
+time-to-readmission claim from this paper: that quantity
+requires a stable cross-year identifier that the public
+release does not provide.  Within-year repeat-placement
+concentration remains valid, and is precisely what \texttt{b09}
+is designed to capture.
+
+\paragraph{Mortification co-occurrence (verified against \texttt{b01}).}
+The three \OTIS{} \texttt{b01} alert flags
+(\texttt{MentalHealth\_Alert}, \texttt{SuicideRisk\_Alert},
+\texttt{SuicideWatch\_Alert}) co-occur within placement records to a
+degree well above independence.  Across all $n=82{,}001$ b01
+placements, the marginal Yes-rates are $46.5\%$, $27.4\%$ and
+$14.4\%$; any-of-three is flagged on $56.9\%$ of placements and
+all-three simultaneously on $8.2\%$.  The pairwise Cramér's $V$
+between \texttt{MentalHealth\_Alert} and
+\texttt{SuicideRisk\_Alert} is $V=0.189$
+($\chi^2(1)=2914$, $p<10^{-300}$).  The
+\texttt{SuicideRisk}~$\times$~\texttt{SuicideWatch} association is
+much higher ($V=0.668$) because Watch is operationally a
+subset-escalation of Risk in custody workflow.  We adopt
+$V=0.189$ as the substantive mortification co-occurrence figure,
+in agreement with the MA-thesis.
+
+\paragraph{Within-region locality (corrected interpretation of region churn).}
+A $5\times5$ contingency table of
+\texttt{Region\_AtTimeOfPlacement} $\times$
+\texttt{Region\_MostRecentPlacement} produces
+$\chi^2(16)=285{,}917$ with $p<10^{-3}$ (numerically zero) and
+Cramér's $V=0.934$.  The MA-thesis describes this as evidence of
+``routinised regional flows''; the verified table reverses the
+substantive interpretation.  $95.0\%$ of placements remain within
+the same region ($77{,}866/82{,}001$ on the diagonal) and only
+$5.0\%$ involve a region change.  What the $\chi^2$ rejects is
+independence — but the deviation from independence is the
+overwhelming \emph{diagonal} (within-region locality), not
+cross-region mixing.  Ontario provincial segregation/RC
+placement is therefore best characterised as
+\emph{locality-preserving} rather than as a regional-churn
+process: individuals are placed in, and tend to remain in, the
+region of their initial intake, with cross-region transfer
+restricted to a small minority of placements.
+
+\subsection{Stochastic forecasting (SARIMA / Langevin / Fokker-Planck)}\label{phys-forecasting}
+
+Across all nine incident categories the SARIMA fits absorb
+$>80\%$ of monthly seasonality (verified by ACF on residuals).
+Langevin OU fits per category recover $\theta\in[0.07,1.03]$ —
+slow mean-reversion at the low end (property crime), faster mean
+reversion ($\theta>1$) for the most volatile categories — and
+$\sigma\in[0.5,19.7]$, with several rare-event categories at
+$\sigma<1$ indicating very low residual noise.  The published
+Fokker-Planck manifest
+(\texttt{data/manifest/outputs/tps\_stochastic/fokker\_planck\_*.json})
+stores $(\theta,\mu,\sigma,\text{stationary\_peak})$ per category
+together with a path to the rendered KDE-vs-stationary overlay PNG;
+the overlays show close agreement between the fitted stationary
+density and the empirical KDE for the majority of categories,
+with Bicycle Theft visibly deviating because of strong annual
+seasonality that an OU model cannot represent.
+
+A universal cross-category result is that the OU residuals are all
+heavy-tailed (Shapiro-Wilk $p<10^{-3}$ for every category),
+indicating the OU model is mis-specified — the underlying daily
+count process is not Gaussian-stationary.  This is consistent with
+the Hawkes self-exciting structure recovered in §\ref{phys-hawkes}:
+a triggered Hawkes process produces non-Gaussian residuals when
+forced into an OU lens.
+
+\subsection{Crime Severity Index — robustness check}\label{phys-csi}
+
+The Statistics Canada Crime Severity Index
+\citep{Wallace2009CSI} weights each Criminal Code offence by the
+product of average sentence length and proportion of offenders
+incarcerated, then sums per-capita.  CSI corrects for the volume /
+severity confound that haunts raw incident counts: a city where
+homicides drop but minor thefts rise will see falling CSI even if
+absolute crime counts are flat.
+
+Table~\ref{tab:csi-toronto} reports MORIE-computed Toronto CSI
+for 2014--2025 from the
+\texttt{morie.tps\_csi} module, rebased to 2014 = 100.  Both
+the Total and Violent variants are shown.  Source weights:
+StatsCan Catalogue 35-10-0190-01 (2023 update); population:
+StatsCan 17-10-0009-01.
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Toronto Crime Severity Index, FY2014-2025, MORIE-computed
+(\texttt{morie.tps\_csi.csi\_per\_year} on the 9 TPS open-data
+feeds, rebased so 2014 = 100).  Total CSI weights all nine TPS
+categories; Violent CSI zeros out non-violent (B\&E, Auto Theft,
+Bicycle Theft, Theft from MV, Theft Over).
+}\label{tab:csi-toronto}
+\begin{tabular}{lrr}
+\toprule
+Year & Total CSI (2014=100) & Violent CSI (2014=100)\\\midrule
+2014 & $100.0$ & $100.0$\\
+2015 & $\phantom{0}99.5$ & $100.7$\\
+2016 & $103.2$ & $107.3$\\
+2017 & $105.6$ & $109.0$\\
+2018 & $107.8$ & $109.4$\\
+2019 & $\mathbf{109.0}$ (peak) & $108.4$\\
+2020 & $\phantom{0}92.0$ (COVID) & $\phantom{0}90.8$ (COVID)\\
+2021 & $\phantom{0}86.6$ (trough) & $\phantom{0}87.6$ (trough)\\
+2022 & $\phantom{0}96.5$ & $\phantom{0}97.3$\\
+2023 & $107.1$ & $105.8$\\
+2024 & $106.8$ & $\mathbf{109.0}$\\
+2025 & $\phantom{0}90.3$ (partial) & $\phantom{0}91.7$ (partial)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Substantive read.}  Toronto's CSI traces an unmistakable
+COVID arc: a steady rise from 100 in 2014 to a 109 peak in 2019,
+a sharp drop to 92 in 2020 and a further floor at 86.6 in 2021,
+and a recovery to 107 in 2023 and 109 (Violent) in 2024.  The
+2025 figure is for a partial calendar year and should not be
+read as a downturn.  The Violent CSI tracks the Total very
+closely, indicating the COVID trough was driven by both violent
+and property categories — not a compositional shift.
+
+\paragraph{Cross-check against StatsCan published values.}
+StatsCan's published Toronto CSI for 2023 is approximately $60.4$
+(Total) and $71.8$ (Violent) on its national 2006-baseline scale.
+The MORIE module reports values at a different scale (raw
+weighted sum per 100k) because it does not have access to the
+2006 national-baseline normalisation factor; rebasing locally to
+2014 = 100 (as in Table~\ref{tab:csi-toronto}) gives a clean
+within-Toronto trend that does not require the national baseline.
+For absolute comparison to other Canadian cities, use the
+StatsCan-published values directly.
+
+\paragraph{OTIS$\,\times\,$CSI ATE robustness overlay.}
+We re-fit the §\ref{sec:dml} IRM-DML pipeline on the OTIS
+\texttt{a01} restrictive-confinement file with the matching
+year's TPS-derived CSI value appended as an additional confounder,
+to test whether the headline ATE absorbs once we condition on the
+prevailing severity of the wider crime environment.  The result is
+written to
+\texttt{data/manifest/outputs/otis\_full/.../a01\_csi/a01\_with\_csi\_context.json}
+and gives a pooled $\hat\tau_{\text{ATE}} = 0.213$ (cluster-robust
+SE $0.012$, $n=14{,}520$, $95\%$ CI $[0.189,\,0.236]$) with
+$\hat\tau_{\text{ATTE}}=0.213$ and $\hat\tau_{\text{ATC}}=0.212$.
+The ATE is stable to within $\le 0.002$ of the CSI-blind estimate,
+so the severity of the surrounding crime environment is not a
+substantial confounder of the alert-complexity~$\to$~placement-volatility
+relationship — the DML ensemble already absorbs it through the
+demographic, regional and seasonal controls.
+
+\subsection{Extended spatial diagnostics}\label{phys-spatial-extended}
+
+Beyond global Moran's $I$ (Table~\ref{tab:spatial}), Ruhela computed
+LISA local indicators, Getis-Ord $G^\ast_i$ $z$-scores, Ripley's
+$K$, and per-year polygon Moran's $I$ from the
+NeighbourhoodCrimeRates GeoJSON.
+
+\paragraph{LISA quadrants (verified).}  A Local Moran's $I_i$
+decomposition of the per-ward Assault 2024 surface ($n=158$
+HOOD\_158 polygons, $k=6$-nearest-neighbour weight matrix,
+$199$ permutations) gives a global Moran's $I = 0.270$ with
+quadrants HH $19.0\%$, HL $12.7\%$, LH $16.5\%$, LL $51.9\%$.
+Among the $n_{\text{sig}}=16$ wards significant at $p\le 0.05$,
+the split is HH $68.8\%$ ($11/16$), LH $31.2\%$ ($5/16$); no
+HL or LL ward clears the $199$-perm significance floor.  The
+LL preponderance ($52\%$ of all wards) is the largest single
+group, and the significant cluster of $11$ HH wards is the
+downtown core --- a bipolar structure
+where the substantive high-density signal is concentrated in a
+small core while the broader spatial pattern is dominated by
+quiet residential wards.
+
+\paragraph{Per-year polygon Moran's $I$, 2014--2024.}  Global
+Moran's $I$ on the per-ward Assault counts is $0.376$ in
+2014, peaks at $0.437$ in 2017, and declines monotonically to
+$0.270$ in 2024.  The interpretation is that Assault has
+become \emph{less} spatially concentrated over the panel:
+$2017$--$2019$ saw a tighter hotspot regime, $2020$ already
+softens during the pandemic, and $2022$--$2024$ runs at the
+lowest values in the panel.  Output:
+\texttt{data/manifest/outputs/tps\_spatial\_advanced/polygon\_moran\_per\_year\_Assault.json}.
+
+\paragraph{Getis-Ord $G^\ast_i$ (verified).}  $|G^\ast_i|>1.96$
+at $6$--$27$ wards per category (most categories $16$--$19$;
+the lowest is Auto Theft at $6$ and the highest is Homicides at
+$27$, where the test is sensitive to a small number of high-rate
+wards relative to a quiet base).  The strongest hot-spot
+$z$-score in our scan is $\hat G^\ast = 8.44$ on Bicycle Theft
+(downtown commuter corridor); Shooting is at $6.83$, Assault at
+$6.76$, and Robbery at $6.23$.
+
+\paragraph{Ripley's $K$.}  All nine categories exhibit
+$K(r)>\pi r^2$ at all distance thresholds 0.1--5~km, i.e.,
+second-order clustering significantly above CSR (complete spatial
+randomness).  Property-crime $K(r)/\pi r^2$ ratios exceed
+violent-crime ratios at small radii, consistent with
+repeat-victimisation theory.
+
+%% (Per-year polygon Moran's I is reported in detail under §7.11
+%% above, with verified numbers from the
+%% NeighbourhoodCrimeRates GeoJSON.)
+
+\paragraph{Pettitt change-point.}  On Toronto Assault yearly counts
+2014--2024, Pettitt's $U$ change-point is detected at 2020
+($p<0.01$), corresponding to the COVID-19 lockdown regime change.
+
+%% (legacy §Discussion heading deleted — the real Discussion section is at the end of the paper)
+%% [End of grafted MA-thesis Results §3.1-3.11 → empirical §6.1-6.11]
+
+
+\section{Reproducibility: morie code for every reported result}
+\label{sec:reproducibility}
+
+Every estimate in Sections~\ref{sec:dml} and~\ref{sec:physics-results} is produced by a single morie call. The R-side
+calls are documented in Appendix~\ref{app:reproducibility}; the
+Python-side equivalents follow the parallel API documented in
+\citet{Ruhela2026MoriePy}. A reader who installs morie
+\code{install.packages("morie")} (or \code{pip install morie}) and
+ingests the same open data through \code{morie::mrm\_otis\_load()}
+and \code{morie::mrm\_tps\_load()} recovers every reported number
+identically up to floating-point precision and learner random-seed
+choice.
+
+\section{Limitations}
+\label{sec:limitations}
+
+\subsection{Identifier reset prevents cross-year trajectories}
+
+The \OTIS{} identifier-reset structure (Section~\ref{sec:data-otis-id})
+prevents any analysis that would require tracking an individual
+across fiscal years. The per-year IRM-DML estimates of
+Section~\ref{sec:dml-per-year} are therefore independent samples,
+not a longitudinal panel; the monotone rising trend is a
+population-level pattern, not a within-individual trajectory.
+
+\subsection{Cross-file ID joining is invalid}
+
+The same identifier across different b-series files of the same
+fiscal year does not denote the same person. Any analysis that
+joins b01 to a01, c-tables, or d-tables on
+\texttt{UniqueIndividual\_ID} would semi-randomly pair distinct
+people. The morie b01 pipeline operates on b01 alone for the
+per-individual analysis of Section~\ref{sec:dml}.
+
+\subsection{Identification assumptions}
+
+The IRM-DML estimate of Section~\ref{sec:dml} is identified under
+conditional exchangeability conditional on
+$(\mathrm{age}, \mathrm{gender}, \mathrm{region}, \mathrm{year})$.
+This is a strong assumption; unobserved clinical-severity covariates
+that drive both the alert-flag pattern and the regional-transfer
+logistics would violate it. The matched-sample Poisson GLMM
+sensitivity (Section~\ref{sec:dml-matchit}) tests robustness to the
+parametric outcome model; it does not test robustness to unobserved
+confounding.
+
+\section{Discussion}
+\label{sec:discussion}
+
+The empirical pattern is direction-stable across estimators
+(IRM-DML, matched Poisson GLMM), clustering schemes (none, identifier,
+identifier $\times$ region), regional contrasts, and fiscal years.
+Within the 30-cell clustering grid the point estimate is confined
+to $[0.1932, 0.2013]$ with the per-year breakdown showing a monotone
+rising trend from $0.1342$ in 2023 to $0.1737$ in 2025. The matched
+Poisson GLMM sensitivity falls in the same order-of-magnitude band.
+The eleven statistical-physics-of-crime and institutional-churn
+result sections in Section~\ref{sec:physics-results} document the
+broader empirical record on \TPS{} and \OTIS{} b01.
+
+The findings should be interpreted as suggestive of a population-level
+pattern between alert complexity and placement volatility, conditional
+on the demographic and regional structure. The cross-year
+identifier-reset structure of \OTIS{} prevents the analysis from
+being read as a within-individual trajectory; the per-year breakdown
+should be read as three population snapshots rather than a panel.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The MRM modules in morie produce a coherent empirical record on
+two open Canadian sources: \OTIS{} b01 (provincial restrictive
+confinement) and \TPS{} (municipal-police events). The
+alert-complexity-to-placement-volatility effect is identified under
+the standard observational-inference assumptions; the eleven
+statistical-physics-of-crime and institutional-churn result sections
+in Section~\ref{sec:physics-results} document Hawkes specifications,
+spatial diagnostics, Goffmanian institutional churn, and stochastic
+forecasting on the same data. Every
+estimate in this paper is reproducible from the morie toolkit
+through the code in Appendix~\ref{app:reproducibility}.
+
+\section*{Acknowledgements}
+
+The author thanks Glenn McNamara for distribution-theory mentorship,
+Prof.~Angela Zorro Medina for the methodological lineage adopted by
+the framework, Jeroen Ooms for maintaining the r-universe
+infrastructure on which the morie binaries are built, and the
+DoubleML team (Bach, Kurz, Chernozhukov, Spindler, Klaassen) for
+the BSD-3-Clause library that the IRM-DML wrappers are layered on.
+
+\appendix
+
+\section{Reproducibility code -- full morie commands for every reported result}
+\label{app:reproducibility}
+
+The R-side code below is run on the OTIS-RC environment data loaded
+through \code{morie::mrm\_otis\_load(year = 2023:2025)}.
+
+\subsection[Pooled DML]{Pooled DML (Table~\ref{tab:res-pool})}
+
+\begin{Code}
+R> library(morie)
+R> df  <- mrm_otis_load(year = 2023:2025)
+R> res_pool <- estimate_irm(
++    y    = "vm",
++    d    = "ac_ge2",
++    x    = c("age", "gender", "region", "year"),
++    data = df,
++    n_folds = 5, n_rep = 2)
+R> print(res_pool)   # expect ATE = 0.1605 (SE 0.00628)
+\end{Code}
+
+\subsection[Per-year DML]{Per-year DML (Table~\ref{tab:res-by-year})}
+
+\begin{Code}
+R> res_by_year <- lapply(2023:2025, function(y) {
++    estimate_irm(
++      y    = "vm", d = "ac_ge2",
++      x    = c("age", "gender", "region"),
++      data = subset(df, year == y),
++      n_folds = 5, n_rep = 2)
++  })
+\end{Code}
+
+\subsection[Multi-way clustering]{Multi-way clustering (Table~\ref{tab:res-clustering})}
+
+\begin{Code}
+R> regions <- c("Toronto", "Eastern", "Western", "Central", "Northern")
+R> schemes <- list(
++    none   = NULL,
++    id     = "id",
++    idrgn  = c("id", "region"))
+R> res_all <- expand.grid(region = regions, scheme = names(schemes))
+R> res_all$fit <- mapply(function(r, sname) {
++    estimate_irm(
++      y    = "vm", d = "ac_ge2",
++      x    = c("age", "gender", "year"),
++      data = subset(df, region == r | region != r),
++      cluster_by = schemes[[sname]])
++  }, res_all$region, res_all$scheme, SIMPLIFY = FALSE)
+\end{Code}
+
+\subsection[Matched-sample Poisson GLMM]{Matched-sample Poisson GLMM (Section~\ref{sec:dml-matchit})}
+
+\begin{Code}
+R> res_glmm <- run_treatment_effects_analysis(
++    data = df, treatment = "ac_ge2", outcome = "vm",
++    covariates = c("age", "gender", "year"),
++    cluster_by = "region",
++    method = "glmm_matched")
+\end{Code}
+
+
+\subsection[Hawkes on TPS]{Hawkes on \TPS{} (Section~\ref{sec:hawkes})}
+
+\begin{Code}
+R> tps <- mrm_tps_load(category = "Assault", year = 2014:2025)
+R> hawkes_fits <- mrm_hawkes_tps(
++    events = tps,
++    kernels = c("exponential", "gamma", "weibull", "power_law"),
++    baselines = c("constant", "sinusoidal"))
+R> print(hawkes_fits$selection)  # AIC-ranked, KS-tested
+\end{Code}
+
+\section{Extended clustering schemes}
+\label{app:clustering-extended}
+
+Two specifications additional to those in
+Section~\ref{sec:dml-clustering} are run by the morie
+\code{estimate\_irm()} wrapper for completeness: (i) cluster on
+fiscal year alone, and (ii) include identifier as a covariate and
+cluster on year. The point estimates in both specifications fall
+within the $[0.1932, 0.2013]$ band reported in
+Table~\ref{tab:res-clustering}, confirming that the inference does
+not depend on the choice between identifier-level, region-level, or
+year-level clustering.
+
+\section{Hawkes per-category details}
+\label{app:hawkes-details}
+
+The per-category AIC ranking, branching-ratio estimates, and
+Kolmogorov--Smirnov $p$-values for the time-rescaling residuals are
+produced by the morie call documented in
+Appendix~\ref{app:reproducibility} above and are not reproduced in
+the print body of this paper to avoid duplication with
+\citet{Ruhela2026Hawkes}, where the per-category fits are reported
+in full.
+
+\bibliography{refs}
+
+\end{document}

@@ -67,6 +67,57 @@ jobs:
       - name: Test
         run: pytest -q --tb=short
 
+      # User-facing smoke — the exact commands documented in README +
+      # TUTORIAL.md.  If a refactor breaks the copy-paste user path,
+      # the CLI invocations fail before any pytest does.
+      - name: Smoke (fresh-user CLI path)
+        run: |
+          python -c "import morie; print('morie', morie.__version__)"
+          morie list-modules
+          morie cheatsheet
+          morie explain power_summary.csv
+          morie pull tps-layers
+          morie run-module power-design --output-dir morie-ci-smoke/
+          python -c "import os, sys; sys.exit(0 if os.path.exists('morie-ci-smoke/power_summary.csv') else 1)"
+        shell: bash
+
+  test-papers-latex:
+    name: LaTeX compile (5 papers)
+    runs-on: ubuntu-latest
+    # Only run the LaTeX job when papers actually change — typical CI
+    # runs skip this 90% of the time.
+    if: |
+      contains(github.event.head_commit.modified || '', 'papers/') ||
+      contains(github.event.head_commit.added || '', 'papers/') ||
+      github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install xelatex + bibtex
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-xetex texlive-latex-extra texlive-fonts-recommended \
+            texlive-publishers texlive-bibtex-extra biber lmodern
+      - name: Compile each paper
+        run: |
+          set -e
+          for paper in papers/hawkes-paper papers/morie-empirical-paper \
+                       papers/morie-py-paper papers/morie-r-paper \
+                       papers/mrm-formulations-paper; do
+            echo "=== $paper ==="
+            cd "$GITHUB_WORKSPACE/$paper"
+            cp ../jss.cls .
+            cp ../jss.bst .
+            # Two xelatex + bibtex passes to resolve refs
+            xelatex -interaction=nonstopmode main.tex || true
+            bibtex main || true
+            xelatex -interaction=nonstopmode main.tex || true
+            xelatex -interaction=nonstopmode main.tex
+            test -f main.pdf || { echo "FAIL: no PDF produced for $paper"; exit 1; }
+            ls -la main.pdf
+            cd "$GITHUB_WORKSPACE"
+          done
+
   test-r:
     name: R tests
     runs-on: ubuntu-latest

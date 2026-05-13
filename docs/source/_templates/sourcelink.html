@@ -1,0 +1,26 @@
+{#
+  Override the default alabaster "page source" sidebar link to point
+  at the .rst on GitHub instead of the local _sources/ stub.  This
+  lets readers click "View page source" and land on the file with a
+  "Suggest changes" button, instead of seeing a raw text dump.
+
+  Variables we use:
+    display_github       : flag from html_context (must be True)
+    github_user, repo    : "hadesllm/morie"
+    github_version       : branch (default: main)
+    conf_py_path         : path inside repo where conf.py lives
+                           (e.g. "/docs/source/")
+    pagename             : Sphinx page identifier (relative path, no ext)
+    suffix               : source file extension (.rst / .md / .ipynb)
+#}
+{%- if display_github and pagename %}
+  <h3>{{ _('Source') }}</h3>
+  <p class="topless"><a href="https://github.com/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix or '.rst' }}"
+        rel="nofollow">{{ _('Edit on GitHub') }}</a>
+     &middot;
+     <a href="https://github.com/{{ github_user }}/{{ github_repo }}/issues/new?labels=docs&title=docs%3A%20{{ pagename | urlencode }}"
+        rel="nofollow">{{ _('Report a docs issue') }}</a>
+  </p>
+{%- else %}
+  {{ super() }}
+{%- endif %}

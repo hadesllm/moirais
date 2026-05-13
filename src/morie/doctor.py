@@ -265,12 +265,25 @@ def run_doctor() -> int:
     -------
     int
         ``0`` if all required checks pass, ``1`` otherwise.
+
+    Accessibility: respects ``NO_COLOR`` (https://no-color.org) and
+    falls back to the plain renderer when stdout isn't a TTY, so
+    screen readers and pipelines get a clean linear stream instead
+    of Rich's box-drawing characters.
     """
+    import os
+    import sys
+
     results = run_checks()
 
-    try:
-        _render_rich(results)
-    except ImportError:
+    no_color = bool(os.environ.get("NO_COLOR"))
+    not_tty = not sys.stdout.isatty()
+    if no_color or not_tty:
         _render_plain(results)
+    else:
+        try:
+            _render_rich(results)
+        except ImportError:
+            _render_plain(results)
 
     return 0 if results["all_required_passed"] else 1

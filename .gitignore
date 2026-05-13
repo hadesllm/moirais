@@ -67,4 +67,44 @@ r-package/morie/vignettes/*.out
 r-package/morie/vignettes/*.synctex.gz
 r-package/morie/vignettes/*.tex
 backups/
-papers/
+
+# papers/ is the authoring tree (emails, drafts, working PDFs, etc.).
+# It must NEVER be tracked wholesale — a previous public publish
+# leaked papers/emails/ and cost ~40,000 deleted changes to recover.
+#
+# We allow ONLY the public JSS .tex sources + their bibs +
+# the JSS class files + an explanatory README.  Any new addition to
+# this allowlist requires a security review of the file.
+papers/*
+!papers/README.md
+!papers/jss.cls
+!papers/jss.bst
+!papers/hawkes-paper/
+!papers/morie-empirical-paper/
+!papers/morie-py-paper/
+!papers/morie-r-paper/
+!papers/mrm-formulations-paper/
+papers/hawkes-paper/*
+papers/morie-empirical-paper/*
+papers/morie-py-paper/*
+papers/morie-r-paper/*
+papers/mrm-formulations-paper/*
+!papers/hawkes-paper/main.tex
+!papers/hawkes-paper/refs.bib
+!papers/morie-empirical-paper/main.tex
+!papers/morie-empirical-paper/refs.bib
+!papers/morie-py-paper/main.tex
+!papers/morie-py-paper/refs.bib
+!papers/morie-r-paper/main.tex
+!papers/morie-r-paper/refs.bib
+!papers/mrm-formulations-paper/main.tex
+!papers/mrm-formulations-paper/refs.bib
+# Explicit deny — never under any circumstances:
+papers/emails/
+papers/azm/
+papers/dirty-frag-research/
+papers/**/*.pdf
+papers/**/arxiv-bundle/
+papers/**/*-pre-jss-*.tex
+papers/**/results/
+papers/PAPERS_*.txt

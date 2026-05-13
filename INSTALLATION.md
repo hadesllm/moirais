@@ -1,0 +1,311 @@
+# Installing morie
+
+> ⚠️ **Pre-alpha (v0.x).** morie is in pre-alpha. The first alpha milestone is **v1.0.0**; everything before that is point-releases of pre-alpha code. APIs may shift, datasets may move, and findings may be refined between minor versions.
+
+morie ships across five install channels. Pick the one that matches your environment.
+
+| | Channel | When to use | Needs |
+|---|---|---|---|
+| 1 | **Curl one-liner** | You have neither Python nor pip; you just want a working `morie` | `curl`, `bash` |
+| 2 | **Homebrew tap** | macOS or Linuxbrew users | Homebrew |
+| 3 | **PyPI (pip)** | You already manage your own venv | Python ≥3.10, pip |
+| 4 | **Docker (GHCR)** | Zero-install or CI/CD | Docker |
+| 5 | **R (CRAN + r-universe)** | You want the R package | R ≥4.3 |
+
+## 1. Curl one-liner (Linux / macOS / WSL)
+
+The simplest path. Bootstraps everything you need — `uv` for managed Python, a venv at `~/.venvs/morie`, the morie wheel.
+
+```bash
+curl -fsSL https://hadesllm.github.io/morie/install.sh | bash
+```
+
+With R alongside Python:
+
+```bash
+curl -fsSL https://hadesllm.github.io/morie/install.sh | bash -s -- --auto
+```
+
+**What you get after install:**
+
+- A shim at `~/.local/bin/morie` that resolves into the managed venv.
+- The venv itself at `~/.venvs/morie` with Python 3.12 + the SciPy stack + morie.
+
+**If `~/.local/bin` isn't on your `PATH`** (the installer warns when this is the case):
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+**Smoke test:**
+
+```bash
+morie --help
+morie list-modules | head -5
+```
+
+## 2. Homebrew (macOS / Linuxbrew)
+
+```bash
+brew tap hadesllm/morie
+brew install morie
+```
+
+The tap source is at [`hadesllm/homebrew-morie`](https://github.com/hadesllm/homebrew-morie). It pulls morie's source distribution from PyPI and bundles a self-contained `python@3.12` venv at `$(brew --prefix)/opt/morie/libexec`. No system Python required.
+
+**Upgrade later:**
+
+```bash
+brew update
+brew upgrade morie
+```
+
+## 3. PyPI (manual `pip`)
+
+This path assumes you already have a working Python ≥3.10 with `pip` and a venv.
+
+```bash
+python3 -m venv ~/.venvs/morie
+source ~/.venvs/morie/bin/activate
+pip install --upgrade pip
+pip install morie
+```
+
+Or with the optional extras:
+
+```bash
+pip install "morie[interactive]"   # Terminal IDE (textual)
+pip install "morie[carbon]"        # CodeCarbon emissions tracking
+pip install "morie[ml]"            # imbalanced-learn for SMOTE
+```
+
+### Known PyPI gotchas
+
+#### Debian / Ubuntu / Raspberry Pi OS — PEP 668
+
+Modern Debian-family systems forbid pip outside of a venv:
+
+```
+error: externally-managed-environment
+× This environment is externally managed
+```
+
+This is **expected behaviour** of the distro, not a morie bug. Always install inside a venv (option 1 or option 2 handle this for you).
+
+#### Raspberry Pi OS 13 — `python3` segfaults on SciPy imports
+
+The Pi's `/usr/bin/python3` is Python 3.13.5, which segfaults on importing the SciPy stack (a Debian-packaging issue). Symptoms:
+
+```
+$ python3 -c "import morie"
+Segmentation fault (core dumped)
+```
+
+**Fix:** use the curl one-liner — it installs `uv` and creates a venv with Python 3.12, which works.
+
+## 4. Docker (GHCR)
+
+```bash
+# Latest stable
+docker run --rm ghcr.io/hadesllm/morie:latest morie --help
+
+# Pin to a version for reproducibility
+docker run --rm ghcr.io/hadesllm/morie:0.5.0 morie --help
+```
+
+The image is published on every release with both `:latest` and `:<version>` tags. Multi-arch (linux/amd64). Includes morie + the full SciPy + R stack + R 4.5.
+
+## 5. R (CRAN + r-universe)
+
+```r
+# Stable from CRAN (when listing is live)
+install.packages("morie")
+
+# Nightly binary builds (recommended while CRAN listing is rolling out)
+install.packages(
+  "morie",
+  repos = c(
+    hadesllm = "https://hadesllm.r-universe.dev",
+    CRAN     = "https://cloud.r-project.org"
+  )
+)
+```
+
+## Verifying the install
+
+Any of these should print `morie 0.5.0`:
+
+```bash
+# Python
+python -c "import morie; print(morie.__version__)"
+
+# CLI
+morie list-modules | head -3
+```
+
+```r
+# R
+library(morie)
+packageVersion("morie")
+```
+
+## First analysis (≤60 seconds, no code to write)
+
+After install, this exact sequence works on a fresh machine. No data download. No coding. Just copy-paste:
+
+```bash
+# 1. Sanity check
+morie list-modules | head -5
+
+# 2. Run a real power-analysis module on the bundled synthetic CPADS frame
+morie run-module power-design --output-dir ~/morie-first-run/
+
+# 3. Inspect the output CSVs
+ls ~/morie-first-run/
+head -3 ~/morie-first-run/power_summary.csv
+```
+
+The synthetic CPADS frame is a 1,200-row toy dataset bundled inside the wheel; module output will emit a `UserWarning` so you know the analysis isn't of real Statistics Canada microdata. When you have the real CPADS PUMF, pass its path: `morie run-module power-design --cpads-csv /path/to/real.csv`.
+
+### In Python — `morie.datasets`
+
+For analyses you want to write yourself, the top-level `morie.datasets` module gives one-call DataFrame loaders for the major Canadian sociolegal feeds:
+
+```python
+import morie.datasets as md
+
+# Toronto Police Service open-data
+mc = md.tps_major_crime(year=2024)       # ArcGIS pulled into a DataFrame
+sh = md.tps_shootings(year=2024)
+ho = md.tps_homicide(year=2024)
+
+# Canadian Postsecondary Alcohol/Drug Use Survey
+cpads = md.cpads()                       # real PUMF if available, else synth
+
+# SIU director's reports (text-mining)
+text   = md.siu_report_text("https://www.siu.on.ca/.../22-OFD-001.pdf")
+fields = md.siu_report_fields(text)
+print(fields["conclusion"])
+
+# Any CKAN portal (Canada, UK, EU, Ontario, ...)
+hits = md.ckan_search("https://open.canada.ca/data", "alcohol", rows=5)
+```
+
+Every helper returns a plain `pandas.DataFrame` — no bespoke result type, no boilerplate.
+
+## Using your own dataset (any column names)
+
+morie modules name canonical concepts ("weight", "alcohol_past12m", "age_group"…) but your dataset probably uses different names. You don't have to rename your columns — morie's schema layer handles it:
+
+```python
+import pandas as pd
+import morie.schema as ms
+from morie.cpads import CPADS_REQUIRED_VARIABLES
+
+your_df = pd.read_csv("your-data.csv")  # has columns like 'wt', 'binge30', 'sex'
+
+# Let morie figure out the mapping
+mapping, scores = ms.infer_mapping(your_df, canonical=CPADS_REQUIRED_VARIABLES)
+print(mapping)        # {'wt': 'weight', 'binge30': 'heavy_drinking_30d', 'sex': 'gender', ...}
+canon_df = ms.apply_mapping(your_df, mapping)
+# now canon_df has the canonical column names morie expects
+```
+
+Or be explicit if you don't trust the fuzzy match:
+
+```python
+canon_df = ms.apply_mapping(your_df, {
+    "wt": "weight",
+    "binge30": "heavy_drinking_30d",
+    "sex": "gender",
+})
+```
+
+The same works for any morie-supported domain: pass the canonical list for your module (`CPADS_REQUIRED_VARIABLES`, OTIS, TPS, etc.). Synonyms are pre-registered for common variants (`wt`/`wgt`/`pweight` → `weight`, `binge_30d`/`hed`/`heavy_binge` → `heavy_drinking_30d`, …).
+
+## Languages
+
+morie's CLI is bilingual (EN/FR) by default and ships translations for **English, French, Spanish, German, Mandarin (Simplified), Portuguese (pt-BR), Japanese, Arabic, Hindi**. Set `MORIE_LOCALE`:
+
+```bash
+MORIE_LOCALE=fr morie cheatsheet
+MORIE_LOCALE=es morie doctor
+MORIE_LOCALE=zh morie tutorial
+```
+
+Methodology documentation (the JSS papers, in-depth method descriptions) is English-only for now — translating dense statistical prose is its own scoped project. Help us add it: every locale is one dict edit at [`src/morie/i18n.py`](src/morie/i18n.py).
+
+## Asking morie for help
+
+Stuck? morie ships an LLM-backed help agent. From anywhere on the CLI:
+
+```bash
+morie ask "I have a treatment-control study with 200 students per arm — which module should I run?"
+
+morie ask "What does the column 'ebac_legal' mean?"
+
+morie ask "I got a FileNotFoundError on cpads-2021-2022. How do I fix it?"
+```
+
+The agent reads morie's own source + documentation and answers in plain English. It also routes to `morie tutorial` / `morie cheatsheet` / `morie explain <file>` when a structured answer fits better. No API key required for the local-model path; cloud routing (Gemini, Anthropic Claude) is opt-in via env vars (see `morie doctor`).
+
+## Pulling open data with `morie ingest`
+
+v0.5.0 ships three open-data adapters:
+
+```bash
+# CKAN portals (open.canada.ca, data.gov.uk, data.europa.eu, ...)
+morie ingest ckan --portal https://open.canada.ca/data \
+                  --search "alcohol"
+
+morie ingest ckan --portal https://open.canada.ca/data \
+                  --package canadian-postsecondary-alcohol-and-drug-use-survey \
+                  --out ./cpads/
+
+# Toronto Police Service ArcGIS open-data layers
+morie ingest tps --list
+morie ingest tps --layer major-crime --year 2024 \
+                 --out tps-major-2024.csv
+
+# Special Investigations Unit director's-report mining
+morie ingest siu --list                                 # index → CSV
+morie ingest siu --report-id 22-OFD-001 --out report/   # text + structured fields
+```
+
+Each adapter is also importable as `morie.ingest.{ckan,tps,siu}` for use inside Python scripts.
+
+## Updating to a newer release
+
+| Channel | Update command |
+|---|---|
+| curl one-liner | Re-run the curl command (installs the latest) |
+| Homebrew | `brew update && brew upgrade morie` |
+| pip | `pip install --upgrade morie` |
+| Docker | `docker pull ghcr.io/hadesllm/morie:latest` |
+| R | Re-run the `install.packages(...)` above |
+
+## Removing morie
+
+```bash
+# curl one-liner
+rm -rf ~/.venvs/morie ~/.local/bin/morie
+
+# Homebrew
+brew uninstall morie
+brew untap hadesllm/morie  # optional — removes the tap repo cache
+
+# pip
+pip uninstall morie
+
+# R
+remove.packages("morie")
+```
+
+## Getting help
+
+- Documentation: <https://hadesllm.github.io/morie/>
+- Source / issues: <https://github.com/hadesllm/morie>
+- PyPI: <https://pypi.org/project/morie/>
+- r-universe: <https://hadesllm.r-universe.dev/morie>
+- Homebrew tap: <https://github.com/hadesllm/homebrew-morie>

@@ -24,17 +24,45 @@ from .investigation import (
 
 
 def _find_cpads_csv() -> str:
-    """Search for the CPADS PUMF microdata CSV relative to project root."""
+    """Locate a CPADS CSV.
+
+    Resolution order:
+      1. Real CPADS PUMF microdata at the documented project-root
+         path (data/datasets/oc/CPADS/2021-2022/cpads-2021-2022-pumf2.csv).
+         This is what users with a Statistics Canada PUMF subscription get.
+      2. A 1,200-row synthetic CPADS-shaped frame shipped inside the
+         wheel at morie/data/cpads_synthetic.csv.  This lets fresh
+         users run `morie run-module power-design` on their first
+         install without a manual download step, with a loud
+         "synthetic data" warning so results aren't mistaken for
+         analyses of the real survey.
+
+    The function always returns a path; existence is verified at
+    load time by load_cpads_analysis_data().
+    """
     from .data import _project_root
 
     root = _project_root()
-    candidate = root / "data" / "datasets" / "oc" / "CPADS" / "2021-2022" / "cpads-2021-2022-pumf2.csv"
-    if candidate.exists():
-        return str(candidate)
-    return str(candidate)  # return path even if missing -- error at load time
+    real = root / "data" / "datasets" / "oc" / "CPADS" / "2021-2022" / "cpads-2021-2022-pumf2.csv"
+    if real.exists():
+        return str(real)
+
+    # Fallback: shipped synthetic CSV (always exists; bundled in package-data)
+    synthetic = Path(__file__).resolve().parent / "data" / "cpads_synthetic.csv"
+    if synthetic.exists():
+        return str(synthetic)
+
+    # Neither found — return the real path so the eventual error
+    # tells the user where the real CSV is expected.
+    return str(real)
 
 
 DEFAULT_CPADS_CSV = _find_cpads_csv()
+
+
+def _is_synthetic_cpads_path(p: str | Path) -> bool:
+    """True if the resolved path points at the shipped synthetic CSV."""
+    return Path(p).name == "cpads_synthetic.csv"
 
 
 @dataclass(frozen=True)
@@ -280,10 +308,72 @@ def list_modules() -> list[dict[str, object]]:
     ]
 
 
-def load_cpads_analysis_data(cpads_csv: str | Path = DEFAULT_CPADS_CSV) -> pd.DataFrame:
-    """Load and canonicalize the real CPADS CSV into MORIE analysis columns."""
+def load_cpads_analysis_data(
+    cpads_csv: str | Path = DEFAULT_CPADS_CSV,
+    *,
+    column_mapping: dict[str, str] | None = None,
+    auto_map: bool = False,
+) -> pd.DataFrame:
+    """Load and canonicalize a CPADS CSV into MORIE analysis columns.
+
+    When the caller does not pass an explicit `cpads_csv` and the real
+    Statistics Canada PUMF file is not on disk, this falls back to the
+    bundled 1,200-row synthetic frame and emits a warning.  Outputs
+    produced from the synthetic frame are useful for testing and demo
+    purposes only; do not interpret them as findings about the real
+    Canadian population.
+
+    Schema-agnostic mode
+    --------------------
+    Pass ``column_mapping={"my_wt": "weight", "drinks_yn":
+    "alcohol_past12m", ...}`` to rename your dataset's columns into
+    morie's canonical names BEFORE the CPADS contract validator runs.
+    Pass ``auto_map=True`` to have morie infer the mapping with a
+    fuzzy match against a synonym table (`morie.schema.infer_mapping`);
+    a warning will surface the inferred mapping so you can review
+    before trusting it.
+    """
+    import warnings
+
+    resolved = Path(cpads_csv).expanduser().resolve()
+    if _is_synthetic_cpads_path(resolved):
+        warnings.warn(
+            "morie: using the SHIPPED SYNTHETIC CPADS frame "
+            f"({resolved}). This is a 1,200-row toy dataset with the "
+            "correct schema but random data, intended for first-run "
+            "demos. Download the real Statistics Canada CPADS PUMF "
+            "from open.canada.ca and pass its path explicitly "
+            "(cpads_csv=...) for production analyses.",
+            UserWarning,
+            stacklevel=2,
+        )
+    # ── Schema-agnostic remap path ────────────────────────────────
+    # When the caller supplies (or asks us to infer) a column mapping,
+    # we bypass DatasetRegistry.load()'s strict-validation gate — it
+    # would reject the user's pre-rename column names before we could
+    # remap them.  We still run `canonicalize_cpads_frame` afterwards,
+    # which re-validates against the canonical contract.
+    if column_mapping or auto_map:
+        raw = pd.read_csv(resolved)
+        if auto_map and column_mapping is None:
+            from .cpads import CPADS_REQUIRED_VARIABLES
+            from .schema import infer_mapping
+            column_mapping, scores = infer_mapping(raw, canonical=CPADS_REQUIRED_VARIABLES)
+            warnings.warn(
+                "morie: auto_map=True inferred column mapping "
+                f"{column_mapping} (scores {scores}). Pass column_mapping=... "
+                "explicitly to override or to silence this warning.",
+                UserWarning,
+                stacklevel=2,
+            )
+        if column_mapping:
+            from .schema import apply_mapping
+            raw = apply_mapping(raw, column_mapping)
+        return canonicalize_cpads_frame(raw)
+
+    # ── Standard path (data already in canonical schema) ──────────
     registry = DatasetRegistry(data_dir=".")
-    registry.register_local_cpads(Path(cpads_csv).expanduser().resolve(), name="cpads_local")
+    registry.register_local_cpads(resolved, name="cpads_local")
     raw = registry.load("cpads_local")
     return canonicalize_cpads_frame(raw)
 

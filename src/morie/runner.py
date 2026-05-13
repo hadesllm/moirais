@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 from .modules import DEFAULT_CPADS_CSV, list_modules, run_module
 from .perseus import ask_percy
@@ -425,6 +426,79 @@ def build_parser() -> argparse.ArgumentParser:
     except ImportError:
         pass
 
+    # ── ingest: pull open-data feeds (CKAN, TPS ArcGIS, SIU PDFs) ──────
+    ingest_cmd = subparsers.add_parser(
+        "ingest",
+        help="Pull open-data feeds (CKAN portals, TPS ArcGIS layers, SIU PDFs)",
+    )
+    ingest_cmd.add_argument(
+        "portal",
+        choices=["ckan", "tps", "siu"],
+        help="Which portal adapter to invoke",
+    )
+    ingest_cmd.add_argument(
+        "portal_args",
+        nargs=argparse.REMAINDER,
+        help="Arguments forwarded to the adapter (use `--help` to see them)",
+    )
+
+    # ── tutorial: interactive walkthrough for fresh users ─────────────
+    subparsers.add_parser(
+        "tutorial",
+        help="Interactive first-time-user walkthrough (no Python knowledge required)",
+    )
+
+    # ── cheatsheet: one-page command reference ────────────────────────
+    subparsers.add_parser(
+        "cheatsheet",
+        help="Print a one-page reference of the most-used morie commands",
+    )
+
+    # ── explain: human-readable description of an output CSV ──────────
+    explain_cmd = subparsers.add_parser(
+        "explain",
+        help="Describe what a module-output CSV contains and how to read it",
+    )
+    explain_cmd.add_argument("filename", help="Output CSV filename (e.g. power_summary.csv)")
+
+    # ── generate-template: first-paper methods scaffold ───────────────
+    template_cmd = subparsers.add_parser(
+        "generate-template",
+        help="Write a methods+results scaffold for your first paper",
+    )
+    template_cmd.add_argument("--module", default="power-design",
+                              help="Module name to scaffold methods for (default: power-design)")
+    template_cmd.add_argument("--out", type=Path, default=Path("first-paper.md"),
+                              help="Output markdown path (default: first-paper.md)")
+
+    # ── pull: one-line CLI shortcuts to named morie.datasets loaders ───
+    # This is the non-coder entry point.  Users never have to write
+    # `python -c "import morie.datasets ..."` — they say
+    #   morie pull tps-major --year 2024 --out file.csv
+    # and a DataFrame lands on disk.
+    pull_cmd = subparsers.add_parser(
+        "pull",
+        help="One-line dataset shortcut (CLI for morie.datasets); writes CSV to disk",
+    )
+    pull_cmd.add_argument(
+        "dataset",
+        choices=[
+            "tps-major", "tps-shootings", "tps-homicide",
+            "tps-layers",
+            "tps-major-toy",     # bundled synthetic 500-row frame
+            "cpads",             # real PUMF if present, else synth
+            "otis-a01-toy",      # bundled synthetic 800-row frame
+            "siu-toy",           # bundled synthetic director's report text
+            "siu-index",
+        ],
+        help="Named dataset to pull",
+    )
+    pull_cmd.add_argument("--year", type=int, help="Filter to a single year (TPS only)")
+    pull_cmd.add_argument("--max", type=int, dest="max_features",
+                          help="Cap rows fetched (TPS only)")
+    pull_cmd.add_argument("--out", type=Path,
+                          help="Output CSV path (stdout if omitted)")
+
     return parser
 
 
@@ -473,10 +547,100 @@ def _load_dotenv_if_present() -> None:
             continue
 
 
+def _friendly_error(exc: BaseException) -> str | None:
+    """Translate the most common cryptic morie errors into actionable hints.
+
+    Returns the user-facing message, or None to let the raw traceback show.
+    Centralised here so fresh users never see a bare Python stack on the
+    most-hit failure modes.
+    """
+    import errno
+    import os
+
+    msg = str(exc)
+    cls = type(exc).__name__
+
+    # PEP 668 — externally-managed-environment
+    if "externally-managed-environment" in msg:
+        return (
+            "Your system Python forbids `pip install` outside a virtualenv "
+            "(this is PEP 668, enforced on modern Debian / Ubuntu / Pi). "
+            "morie isn't broken; your system pip is locked.\n\n"
+            "Fix: install morie into a managed venv using the one-liner:\n"
+            "    curl -fsSL https://hadesllm.github.io/morie/install.sh | bash\n"
+        )
+
+    # Missing CPADS data (pre-v0.5.0 — we ship synthetic now, but a stale
+    # install might still hit this)
+    if isinstance(exc, FileNotFoundError) and "cpads" in msg.lower():
+        return (
+            "Could not find a CPADS CSV at the expected project path.\n\n"
+            "If you have the real Statistics Canada PUMF, pass it:\n"
+            "    morie run-module power-design --cpads-csv /path/to/cpads.csv\n\n"
+            "Otherwise upgrade to morie v0.5.0+, which ships a synthetic\n"
+            "fallback frame so first-run analyses work without a download:\n"
+            "    pip install -U morie\n"
+        )
+
+    # Missing optional dep (xgboost / lxml / textual / openai)
+    if isinstance(exc, ImportError) and "No module named" in msg:
+        missing = msg.split("'")[1] if "'" in msg else "<unknown>"
+        return (
+            f"morie tried to use {missing!r} but it isn't installed.\n\n"
+            f"This is usually an optional dependency.  Try:\n"
+            f"    pip install {missing}\n\n"
+            f"Or reinstall morie with all the extras:\n"
+            f"    pip install 'morie[interactive,ml]'\n"
+        )
+
+    # Module name typo
+    if "MODULE_SPECS" in msg or ("module" in msg.lower() and "unknown" in msg.lower()):
+        return (
+            "That module name didn't match any registered module.\n\n"
+            "List the available ones with:\n"
+            "    morie list-modules\n"
+        )
+
+    # Connection / TLS / network failures
+    if cls in ("ConnectError", "ReadTimeout", "ConnectTimeout") or "Connection reset" in msg:
+        return (
+            f"Network call failed: {msg}\n\n"
+            "Common causes:\n"
+            "  - The portal is rate-limiting or blocking automated clients\n"
+            "    (some Cloudflare-protected sites do this).\n"
+            "  - You're offline or behind a captive Wi-Fi portal.\n"
+            "  - The endpoint URL changed (governments reorganise sites).\n\n"
+            "If you can curl the URL from the same machine, the problem is\n"
+            "in our client; please file an issue at\n"
+            "https://github.com/hadesllm/morie/issues.\n"
+        )
+
+    return None
+
+
 def main() -> int:
     """
     Entry point for the MORIE command line interface.
     """
+    try:
+        return _main_impl()
+    except KeyboardInterrupt:
+        print("\ninterrupted (Ctrl-C)", file=sys.stderr)
+        return 130
+    except SystemExit:
+        raise
+    except BaseException as exc:  # noqa: BLE001
+        hint = _friendly_error(exc)
+        if hint is not None:
+            print(hint, file=sys.stderr)
+            # Show class+message at the bottom for debuggers, but spare the traceback
+            print(f"  ({type(exc).__name__}: {exc})", file=sys.stderr)
+            return 1
+        # Unknown errors — re-raise so the traceback shows.
+        raise
+
+
+def _main_impl() -> int:
     _load_dotenv_if_present()
 
     if len(sys.argv) > 1 and sys.argv[1].startswith("?"):
@@ -694,6 +858,104 @@ def main() -> int:
     if args.command == "verify-earth-engine":
         from .verify_earth_engine import handle_verify_earth_engine
         return handle_verify_earth_engine(args)
+
+    if args.command == "tutorial":
+        from .tutorial import run as _run_tutorial
+        return _run_tutorial()
+
+    if args.command == "cheatsheet":
+        from .explain import print_cheatsheet
+        print_cheatsheet()
+        return 0
+
+    if args.command == "explain":
+        from .explain import describe
+        print(describe(args.filename))
+        return 0
+
+    if args.command == "generate-template":
+        # Copy the bundled first-paper template (shipped alongside the
+        # source repo at templates/first-paper.md, mirrored into the
+        # wheel as morie/data/first-paper.md).
+        from importlib.resources import as_file, files
+        try:
+            with as_file(files("morie").joinpath("data/first-paper.md")) as src:
+                content = src.read_text(encoding="utf-8")
+        except FileNotFoundError:
+            # Fallback: try the project-tree path (dev install)
+            from pathlib import Path as _P
+            src = _P(__file__).resolve().parents[2] / "templates" / "first-paper.md"
+            content = src.read_text(encoding="utf-8")
+        # Light placeholder substitution
+        content = content.replace("[MODULE_NAME]", args.module)
+        args.out = Path(args.out)
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(content)
+        print(f"wrote {args.out}  ({len(content):,} chars)", file=sys.stderr)
+        return 0
+
+    if args.command == "pull":
+        # One-line dataset shortcuts — the non-coder entry point.
+        # Resolves a name like "tps-major" into the matching morie.datasets
+        # function and writes its DataFrame to disk (or stdout).
+        import morie.datasets as md
+        try:
+            if args.dataset == "tps-major":
+                df = md.tps_major_crime(year=args.year, max_features=args.max_features)
+            elif args.dataset == "tps-major-toy":
+                df = md.tps_major_crime(year=args.year, max_features=args.max_features,
+                                        offline=True)
+            elif args.dataset == "tps-shootings":
+                df = md.tps_shootings(year=args.year, max_features=args.max_features)
+            elif args.dataset == "tps-homicide":
+                df = md.tps_homicide(year=args.year, max_features=args.max_features)
+            elif args.dataset == "tps-layers":
+                df = md.tps_layers()
+            elif args.dataset == "cpads":
+                df = md.cpads()
+            elif args.dataset == "otis-a01-toy":
+                df = md.otis_a01()
+            elif args.dataset == "siu-toy":
+                # Single-row "DataFrame" carrying the synthetic report text
+                # for parity with the other pull verbs.
+                import pandas as _pd
+                df = _pd.DataFrame([{"report_id": "24-OFD-001",
+                                     "text": md.siu_report_text(offline=True)}])
+            elif args.dataset == "siu-index":
+                df = md.siu_director_reports()
+            else:
+                print(f"unknown dataset {args.dataset!r}", file=sys.stderr)
+                return 2
+        except Exception as exc:  # noqa: BLE001 — surface origin-API errors plainly
+            print(f"pull failed: {type(exc).__name__}: {exc}", file=sys.stderr)
+            return 1
+        if args.out:
+            args.out = Path(args.out)
+            args.out.parent.mkdir(parents=True, exist_ok=True)
+            df.to_csv(args.out, index=False)
+            print(f"wrote {args.out}  ({len(df):,} rows, {len(df.columns)} cols)", file=sys.stderr)
+        else:
+            sys.stdout.write(df.to_csv(index=False))
+        return 0
+
+    if args.command == "ingest":
+        # Delegate to the chosen portal sub-module's cli() handler.
+        # Each sub-module owns its own argparse for the portal-specific flags.
+        portal = args.portal
+        portal_args = list(args.portal_args or [])
+        # argparse.REMAINDER swallows a leading "--" separator; strip it
+        if portal_args and portal_args[0] == "--":
+            portal_args = portal_args[1:]
+        if portal == "ckan":
+            from .ingest.ckan import cli as _cli
+        elif portal == "tps":
+            from .ingest.tps import cli as _cli
+        elif portal == "siu":
+            from .ingest.siu import cli as _cli
+        else:
+            print(f"unknown portal {portal!r}; valid: ckan, tps, siu")
+            return 2
+        return _cli(portal_args)
 
     if args.command == "download-bootstrap":
         from .data import DATASET_CATALOG, fetch_ckan_to_cache

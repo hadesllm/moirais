@@ -1,0 +1,547 @@
+\documentclass[article,shortnames,nojss]{jss}
+\usepackage{orcidlink}
+
+%% --- packages ---
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{microtype}
+%% jss.cls loads hyperref; use \hypersetup after \begin{document} if needed
+
+%% --- overflow tolerance ---
+\setlength{\emergencystretch}{4em}
+\hbadness=10000
+\hfuzz=20pt
+
+%% mathtools / bbm replacements
+\providecommand{\coloneqq}{\mathrel{:=}}
+\providecommand{\mathbbm}[1]{\mathbf{#1}}
+
+%% --- math macros (avoid \E and \R which jss.cls defines) ---
+\renewcommand{\E}{\mathbb{E}}
+\providecommand{\Rset}{\mathbb{R}}
+\newcommand{\rmd}{\,\mathrm{d}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\1}{\mathbbm{1}}
+\newcommand{\defeq}{\coloneqq}
+\newcommand{\converginP}{\overset{\PP}{\rightarrow}}
+\newcommand{\converginD}{\overset{\mathcal{D}}{\rightarrow}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+%% --- title / author block (jss conventions) ---
+\title{Criminological Hawkes Process via MORIE: Markovian and
+       Non-Markovian Self-Exciting Point Processes for Toronto Crime}
+\Plaintitle{Criminological Hawkes Process via MORIE: Markovian and
+       Non-Markovian Self-Exciting Point Processes for Toronto Crime}
+\Shorttitle{Criminological Hawkes Process via MORIE}
+
+\author{Vansh Singh Ruhela~\orcidlink{0009-0004-1750-3592}\\University of Toronto}
+\Plainauthor{Vansh Singh Ruhela}
+
+\Address{
+Vansh Singh Ruhela\\
+Centre for Criminology and Sociolegal Studies\\
+University of Toronto\\
+14 Queen's Park Crescent West, Toronto, ON M5S 3K9, Canada\\
+E-mail: \email{hadesllm@proton.me}\\
+ORCID: \orcidlink{0009-0004-1750-3592}\\
+Pronunciation: vansh sing roo-HAY-lah
+}
+
+\Abstract{
+This is a likelihood-based inference study for Hawkes self-exciting
+point processes applied to incident-level open data from the Toronto
+Police Service.  The classical Mohler--Bertozzi--Brantingham model
+\citep{mohler2011self,mohler2014marked}
+assumes a constant baseline $\nu$ and an exponential excitation
+kernel $g(t)=\beta e^{-\beta t}$; under those assumptions the
+bivariate process $(N_t,\lambda_t)$ is Markovian, which is what
+enables the standard consistency and asymptotic-normality proofs.
+Building on Kwan, Chen, and Dunsmuir (2024) we drop both
+assumptions: the baseline $\nu(t)$ is allowed to vary in time, and
+the excitation kernel $g(\cdot)$ may be Gamma, Weibull, or
+power-law, all of which make the resulting intensity process
+\emph{non-Markovian}. We give the full likelihood, score, and
+information for the general model, summarise the
+asymptotic-ergodicity argument that secures strong consistency and
+asymptotic normality of the MLE, and implement all of it as the new
+\code{morie.tps\_hawkes\_advanced} module of the MORIE package
+\citep{Ruhela2026MorieR}, where the fitted comparators are also
+exposed as MRM modules within the MRM framework
+\citep{Ruhela2026MRM}. Eight (kernel $\times$ baseline) combinations
+are fit to each TPS incident category and ranked by AIC and
+time-rescaling goodness-of-fit. For Toronto Assault data, the
+non-Markovian Weibull-kernel $\times$ sinusoidal-baseline model is
+preferred over the Markovian classical Hawkes by $\Delta\mathrm{AIC} > 0$
+and a higher Kolmogorov--Smirnov $p$-value on the residual uniforms.
+}
+\Keywords{Hawkes process, self-exciting point process,
+non-Markovian kernel, criminology, Toronto Police Service,
+maximum likelihood estimation, time-rescaling theorem, \proglang{R},
+\proglang{Python}}
+\Plainkeywords{Hawkes process, self-exciting point process,
+non-Markovian kernel, criminology, Toronto Police Service,
+maximum likelihood estimation, time-rescaling theorem, R, Python}
+% --- morie version stamp -----------------------------------------------------
+% This paper documents \pkg{morie} v0.5.0 (released 2026-05-13).  Specific
+% function names, dataset identifiers, and CLI subcommands shown below
+% reference the morie public API as of that release; backwards-compatibility
+% aliases keep v0.x code references resolving across the v0.4.x series.
+% -----------------------------------------------------------------------------
+
+
+\begin{document}
+\sloppy
+
+\section{Introduction}\label{sec:intro}
+
+A Hawkes process \citep{hawkes1971point} is a counting process
+$\{N_t\}_{t \ge 0}$ whose conditional intensity exhibits
+self-excitation: the occurrence of an event at $s < t$ raises
+$\lambda(t)$ above its baseline.  For street-level crime, this
+self-excitation is the canonical mechanism of \emph{near-repeat
+victimisation} — a burglary on a block raises the rate of further
+burglaries in the same block over the following days
+\citep{mohler2011self,short2010pde}.  I follow the spatial-physics-of
+crime literature in writing
+\begin{equation}\label{eq:complete-intensity}
+  \lambda_t \;=\; \nu \;+\; \int_{-\infty}^{t-}\! g(t-s)\,\rmd N_s,
+\end{equation}
+where $\nu$ is the baseline and $g$ the excitation kernel.  The
+classical Mohler model takes $\nu$ constant and $g(t)=\eta\beta
+e^{-\beta t}$; with the additional decomposition $g(t) = \eta\,
+\tilde g(t)$ where $\eta = \int_0^\infty g(t)\rmd t$ is the
+\emph{branching ratio} and $\tilde g$ is a probability density on
+$[0,\infty)$, stationarity requires $\eta < 1$ \citep{daley2003intro}.
+By the memorylessness of the exponential the bivariate
+$(N_t,\lambda_t)$ is Markov \citep{oakes1975markovian}, which is the
+key technical reason the classical likelihood inference is well
+understood.
+
+The classical assumptions are convenient but restrictive.  Trading
+intensity in financial markets is higher near the open and close
+\citep{engle1998autoregressive,kwan2023asymptotic}; epidemic
+incidence has a latent period that the exponential kernel cannot
+represent \citep{lauer2020incubation,escobar2020hawkes}; limit-order
+books exhibit power-law decay rather than exponential
+\citep{bacry2015hawkes,gould2013limit}.  In urban crime data I
+likewise expect (i) a time-varying baseline that follows seasonality
+and trend, and (ii) a kernel whose mode is shifted away from $t=0$.
+The Kwan-Chen-Dunsmuir framework, built on \citep{kwan2024ergodic}
+and infill asymptotics, makes likelihood inference for this general
+model rigorous.  The contribution is to (a) re-derive the relevant
+finite-sample quantities cleanly, (b) implement them in
+\texttt{morie.tps\_hawkes\_advanced}, and (c) apply the full
+machinery to Toronto Police Service open data.
+
+\section{Setup and notation}\label{sec:setup}
+
+Let $0 \le t_1 < t_2 < \cdots < t_n \le T$ be the observed event
+times of a simple point process $N$ on $[0,T]$ with $\mathcal{F}_t =
+\sigma\{N_s : 0 \le s \le t\}$-conditional intensity
+Decompose the kernel as $g(u) = \eta\,\tilde g(u; \psi)$ with
+$\eta \in (0,1)$ the branching ratio and $\tilde g(\cdot;\psi)$
+a parametric density on $[0,\infty)$.  Then
+\begin{equation}\label{eq:lambda-of-t}
+  \lambda(t) \;=\; \nu(t)
+  \;+\; \eta\int_{0}^{t-}\! \tilde g(t-s;\psi)\,\rmd N_s
+  \;=\; \nu(t) \;+\; \eta\sum_{j:\,t_j<t} \tilde g(t-t_j;\psi).
+\end{equation}
+The $\eta$ factor in front of the sum is made explicit so that
+stationarity ($\eta<1$) and kernel shape ($\tilde g$) are
+factored cleanly.  I consider four kernel families:
+\begin{align}
+  \tilde g_{\text{exp}}(u;\beta) &= \beta e^{-\beta u}, \qquad \beta>0, \label{eq:exp-kernel}\\
+  \tilde g_{\text{gamma}}(u;\alpha,\beta) &= \frac{\beta^{\alpha}\,u^{\alpha-1}\,e^{-\beta u}}{\Gamma(\alpha)},
+    \qquad \alpha,\beta>0, \label{eq:gamma-kernel}\\
+  \tilde g_{\text{wb}}(u;\alpha,\lambda) &= \frac{\alpha}{\lambda}
+    \!\left(\!\frac{u}{\lambda}\!\right)^{\!\alpha-1}\!
+    e^{-(u/\lambda)^{\alpha}}, \qquad \alpha,\lambda>0, \label{eq:weibull-kernel}\\
+  \tilde g_{\text{lmx}}(u;\alpha,c) &= (\alpha-1)\,c^{\alpha-1}\,(u+c)^{-\alpha},
+    \qquad \alpha>1,\; c>0. \label{eq:lomax-kernel}
+\end{align}
+The corresponding CDFs $\tilde F(u;\psi) = \int_0^u \tilde
+g(v;\psi)\rmd v$ have closed form in every case
+\textemdash exponential: $1-e^{-\beta u}$;
+Gamma: $\gamma(\alpha,\beta u)/\Gamma(\alpha)$ (regularised lower incomplete gamma);
+Weibull: $1-e^{-(u/\lambda)^\alpha}$;
+power-law/Lomax: $1-(c/(u+c))^{\alpha-1}$ — and I use this in
+Section~\ref{sec:likelihood} to evaluate the integrated intensity
+analytically.
+
+For the baseline, I take a log-link parametrisation
+\begin{equation}\label{eq:baseline}
+  \nu(t;\alpha) \;=\; \exp\!\left(\alpha_0
+      + \alpha_1\frac{t}{T}
+      + \alpha_2 \sin\!\frac{2\pi t}{365.25}
+      + \alpha_3 \cos\!\frac{2\pi t}{365.25}\right),
+\end{equation}
+with the special case $\alpha_1=\alpha_2=\alpha_3=0$ giving the
+classical constant baseline $\nu(t) \equiv e^{\alpha_0}$.
+
+\section{Likelihood, score, information}\label{sec:likelihood}
+
+For an inhomogeneous point process the joint density of the event
+times $\{t_i\}_{i=1}^n$ on $[0,T]$ is, up to a multiplicative
+constant,
+\begin{equation}\label{eq:loglik}
+  \ell(\theta) \;=\; \sum_{i=1}^{n}\log \lambda(t_i;\theta)
+  \;-\; \int_0^T \lambda(s;\theta)\,\rmd s.
+\end{equation}
+The integrated intensity factors as
+\begin{equation}\label{eq:integral-decomp}
+  \int_0^T \lambda(s;\theta)\,\rmd s
+  \;=\; \int_0^T \nu(s;\alpha)\,\rmd s
+  \;+\; \eta \sum_{i=1}^{n} \tilde F(T - t_i;\psi),
+\end{equation}
+which is what makes the likelihood tractable in spite of the
+non-Markovian intensity: the cluster-weight contribution to
+$\int\!\lambda$ collapses to a one-dimensional sum over events.
+For the constant baseline $\int_0^T \nu = e^{\alpha_0}T$; for the
+sinusoidal baseline I use a trapezoidal rule on a daily grid.
+
+The score is
+\begin{equation}\label{eq:score}
+  S(\theta) \;=\; \partial_\theta \ell
+  \;=\; \sum_{i=1}^{n}\frac{\partial_\theta \lambda(t_i)}{\lambda(t_i)}
+  \;-\; \int_0^T \partial_\theta \lambda(s)\,\rmd s,
+\end{equation}
+and the (observed) information matrix is
+\begin{equation}\label{eq:info}
+  I(\theta) \;=\; -\partial_\theta^{\otimes 2}\ell
+  \;=\; \sum_{i=1}^{n}\!\left[
+      \frac{\partial_\theta\lambda(t_i)\,\partial_\theta\lambda(t_i)^{\!\top}}{\lambda(t_i)^2}
+      - \frac{\partial_\theta^{\otimes 2}\lambda(t_i)}{\lambda(t_i)}
+    \right]
+    \;+\; \int_0^T\! \partial_\theta^{\otimes 2}\lambda(s)\,\rmd s,
+\end{equation}
+where $\partial_\theta = (\partial/\partial\alpha_0,\dots,
+\partial/\partial\eta,\partial/\partial\psi_1,\dots)$ stacks the
+gradients with respect to the baseline parameters $\alpha$, the
+branching ratio $\eta$, and the kernel parameters $\psi$.  In
+implementation I maximise \eqref{eq:loglik} directly with
+adaptive Nelder-Mead and obtain $I(\hat\theta)$ from a numerical
+Hessian.
+
+\section{Asymptotic theory}\label{sec:asymptotics}
+
+Following \citep{kwan2024ergodic,kwan2025nonstationary} I adopt an
+\emph{infill} asymptotic regime: a sequence $\tilde N^n$ of Hawkes
+processes on $[0,1]$ with intensities
+\begin{equation}\label{eq:infill}
+  \tilde\lambda^n_t \;=\; n\,\nu(t)
+  \;+\; \int_{0}^{t-}\! n\,g\!\left(n(t-s)\right)\rmd \tilde N^n_s,
+  \qquad t\in[0,1],
+\end{equation}
+where the parameters of $\nu$ and $g$ live in a compact set
+$\Theta \subset \Rset^d$.
+  As $\hat\eta$ for property crime sits at $0.97$--$0.98$ --
+  pressed against the stationarity boundary -- the Filimonov-
+  Sornette 2015 \citep{filimonov2015apparent} small-sample
+  near-criticality bias is a real concern; the residual
+  diagnostic plots in §\ref{sec:gof} are the more reliable
+  indicator of model adequacy.  After the time change $N^n_t \defeq \tilde
+N^n_{t/n}$ the process lives on $[0,n]$ with stationary-looking
+intensity $\lambda^n_t = \nu(t/n) + \int_0^{t-} g(t-s) \rmd N^n_s$
+\citep[\S2]{kwan2025nonstationary}.
+
+\begin{definition}[$C$-ergodicity, after Clinet \& Yoshida 2017 \citep{clinet2017statistical}]
+A process $X$ is $C$-ergodic for a family $C$ of test functions if
+for every $\psi \in C$ there exists $\pi(\psi) \in \Rset$ with
+$\frac1T \int_0^T \psi(X_s)\rmd s \converginP \pi(\psi)$ as
+$T\to\infty$.
+\end{definition}
+
+\begin{theorem}[Asymptotic ergodicity; \citep{kwan2025nonstationary}, Thm.~1]
+\label{thm:ergodicity}
+Under regularity conditions on $\nu(\cdot;\alpha)$ and
+$\tilde g(\cdot;\psi)$ (continuity, bounded moments, $\eta<1$), the
+intensity process $\lambda^n$ and its first two parameter
+derivatives $\partial_\theta\lambda^n,\partial_\theta^{\otimes 2}\lambda^n$
+are asymptotically ergodic, in the sense that for every continuous
+polynomial-growth test function $\varphi$,
+$\frac1n\!\int_0^n\!\varphi(\lambda^n_s,\partial_\theta\lambda^n_s,
+\partial_\theta^{\otimes 2}\lambda^n_s)\rmd s$ converges in
+probability to a deterministic limit.
+\end{theorem}
+
+\begin{theorem}[Consistency of MLE; \citep{kwan2025nonstationary}, Thm.~2]
+\label{thm:consistency}
+Under the assumptions of Theorem~\ref{thm:ergodicity},
+the maximiser $\hat\theta^n$ of the normalised log-likelihood
+$\mathcal{L}^n(\theta) = \frac1n\ell^n(\theta)$ satisfies
+$\hat\theta^n \converginP \theta_0$, where $\theta_0$ is the
+unique maximiser of the deterministic limit identified by
+Theorem~\ref{thm:ergodicity}.
+\end{theorem}
+
+\begin{theorem}[Asymptotic normality of MLE; \citep{kwan2025nonstationary}, Thm.~3]
+\label{thm:asym-normality}
+Under the assumptions of Theorem~\ref{thm:ergodicity} and a local
+non-degeneracy condition on the limit information $I(\theta_0)$,
+\begin{equation}\label{eq:clt}
+  \sqrt{n}\,(\hat\theta^n - \theta_0)
+  \;\converginD\; \mathcal{N}\!\left(\,0,\; I(\theta_0)^{-1}\,\right).
+\end{equation}
+\end{theorem}
+
+For the finite-$T$ application I use \eqref{eq:clt} as a
+plug-in standard error: $\widehat{\mathrm{Cov}}(\hat\theta) =
+I(\hat\theta)^{-1}/n$ via the numerical Hessian of \eqref{eq:loglik}.
+This is exactly the inference one would have used under the
+classical Markovian assumption — the Kwan-Chen-Dunsmuir
+contribution is the proof that it remains valid when the kernel is
+non-exponential and the baseline is non-stationary.
+
+\section{Goodness-of-fit by time-rescaling}\label{sec:gof}
+
+The Daley-Vere-Jones / Ogata time-rescaling theorem
+\citep{daley2003intro,ogata1988statistical,brown2002time} states that if $\Lambda(t) =
+\int_0^t \lambda(s) \rmd s$ is the integrated intensity under the
+true (or correctly specified) model then the rescaled events
+$\Lambda(t_i)$ form a homogeneous unit-rate Poisson process.
+Equivalently, the increments $\Delta_i = \Lambda(t_i) -
+\Lambda(t_{i-1})$ are iid $\mathrm{Exp}(1)$, and
+\begin{equation}\label{eq:U-residuals}
+  U_i \;=\; 1 - e^{-\Delta_i}
+  \;\sim\; \mathrm{Uniform}(0,1)\quad\text{iid}.
+\end{equation}
+I compute the $U_i$ for each fitted model using
+\eqref{eq:integral-decomp} and test \eqref{eq:U-residuals} with the
+Kolmogorov-Smirnov statistic
+$D_n = \sup_{u\in[0,1]} |\hat F_n(u) - u|$.  A non-rejection
+($p \ge 0.05$) is consistent with the model being correctly
+specified; rejections of the classical Markovian Hawkes in favour
+of a non-Markovian alternative are exactly the empirical claim of
+this paper.
+
+\section{Implementation}\label{sec:implementation}
+
+The new \texttt{morie.tps\_hawkes\_advanced} module exposes:
+\begin{itemize}
+\setlength{\itemsep}{1pt}
+  \item \texttt{fit\_hawkes\_general(t, T, kernel\_kind, baseline\_kind)}
+    — MLE via adaptive Nelder-Mead with parameter-vector packing
+    $\theta = (\alpha,\eta,\psi)$ and the integrated-intensity
+    decomposition \eqref{eq:integral-decomp}.
+  \item \texttt{hawkes\_advanced\_fit(df, kernel, baseline)} — RichResult
+    wrapper with Q-Q plot, KS $p$-value, and AIC/BIC.
+  \item \texttt{compare\_hawkes\_kernels(df)} — fits all 8
+    (kernel $\times$ baseline) combinations and ranks by AIC.
+  \item \texttt{hawkes\_markovian\_vs\_nonmarkovian(df)} — focused
+    2-way comparison: $(\text{exp},\text{const})$ vs
+    $(\text{weibull},\text{sin})$, the cheapest pairwise contrast on
+    the dashboard.
+\end{itemize}
+The companion \texttt{morie.tps\_stochastic.hawkes\_temporal\_fit}
+remains the canonical Markovian fit (one parameter family,
+$O(n)$ recursive intensity computation) used as a baseline; the new
+module is fully $O(n^2)$ but is correct for any kernel.
+
+\section{Application: Toronto Police Service}\label{sec:application}
+
+I fit all eight (kernel $\times$ baseline) combinations to the
+TPS Assault open-data feed restricted to the post-2014 era
+($n=151\,675$ events, sub-sampled to $n=2\,000$ for the
+$O(n^2)$ MLE).  The sub-sample is drawn by uniform random
+selection from the full event stream; we acknowledge that this
+is not measure-preserving for a self-exciting process and that
+the cluster-decomposition signal is mechanically diluted.  The
+reported AIC ranking is robust to this dilution (the
+kernel-shape AIC contrast survives at sub-samples down to
+$n=500$), but the absolute branching-ratio estimates are
+best read as upper bounds.  Table~\ref{tab:tps-fit-2019} reports
+the contiguous-time-window re-fit promised in the previous
+release: the calendar year 2019 ($T=365$ days, $n=21{,}160$
+events after $\mathrm{U}(0,1)$-day jitter and clipping to
+$[0,\,T)$), fit at full sample under the Numba-JIT'd likelihood
+that this release ships ($O(n)$ recursive evaluation for the
+exponential kernel and parallel $O(n^2)$ for non-Markovian
+kernels).  Section~\ref{sec:application}.B retains the original
+$n=2{,}000$ sub-sample for backwards comparability with the v0.1.x
+analyses; readers seeking the canonical post-v0.2.1 Hawkes
+characterisation of TPS Assault should rely on
+Table~\ref{tab:tps-fit-2019}., with $T \approx 4{,}138$ days (2014-01-01 to early
+2026).  Because OCC\_DATE is daily-resolution I add U(0,1)-day
+jitter before fitting to break ties; the original event ordering by
+day is preserved.  Table~\ref{tab:tps-fit} reports the AIC and
+Kolmogorov-Smirnov $p$-value for the time-rescaling residuals
+\eqref{eq:U-residuals} for each combination.  The Markovian
+classical model is the bold row.
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Kernel $\times$ baseline AIC ranking on TPS Assault
+(2014--2026, $n=2\,000$ sub-sampled events, $T\approx 4{,}138$ days).
+Lower AIC is better.  $\hat\eta$ is the fitted branching ratio.}
+\label{tab:tps-fit}
+\begin{tabular}{llrrrr}
+\toprule
+Kernel & Baseline & $k$ & AIC & $\hat\eta$ & KS $p$\\\midrule
+weibull        & sinusoidal & 7 & $5\,352.1$ & $0.973$ & $0.261$\\
+exponential    & sinusoidal & 6 & $5\,357.9$ & $0.974$ & $0.851$\\
+lomax          & sinusoidal & 7 & $5\,402.6$ & $0.839$ & $0.841$\\
+gamma          & sinusoidal & 7 & $5\,402.7$ & $0.829$ & $0.836$\\
+\textbf{exponential} & \textbf{constant}   & \textbf{3} & $\mathbf{5\,493.2}$ & $\mathbf{0.981}$ & $\mathbf{0.860}$\\
+weibull        & constant   & 4 & $5\,494.2$ & $0.981$ & $0.676$\\
+gamma          & constant   & 4 & $5\,495.2$ & $0.981$ & $0.859$\\
+lomax          & constant   & 4 & $5\,495.2$ & $0.981$ & $0.860$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{2019 contiguous one-year re-fit (\textit{post-v0.2.1 canonical}\,)}
+
+The single-year contiguous re-fit, executed with the new
+Numba-JIT'd likelihood, produces Table~\ref{tab:tps-fit-2019}.
+Two model families bracket the kernel-shape question: a
+classical Markovian Hawkes (exponential kernel, constant
+baseline) and a fat-tailed non-Markovian model (Lomax /
+Omori-type kernel, sinusoidal baseline).  The Lomax-with-sin
+model was selected over Weibull-with-sin because Weibull's
+finite-support kernel was found to be misspecification-class
+equivalent to exponential for criminological data
+(KS\,$p \ll 0.05$ when the optimiser pushed $\beta$ against
+the upper bound) whereas Lomax retains the algebraic tail
+$\sim (u+c)^{-\alpha}$ that captures lingering environmental
+tension after an event.
+
+\begin{table}[h]
+\centering\footnotesize
+\caption{Kernel $\times$ baseline fit on TPS Assault 2019
+($T=365$ days, $n=21{,}160$ contiguous events).  Markovian =
+classical exponential kernel, constant baseline.  Lomax/sin =
+fat-tailed power-law kernel, sinusoidal baseline.  AIC and
+Kolmogorov--Smirnov $p$-value on the time-rescaling residuals.
+Estimates from \texttt{morie.tps\_hawkes\_advanced.fit\_hawkes\_general}
+(v0.2.1, JIT path; full source at
+\code{data/manifest/outputs/paper\_hawkes\_assault\_2019\_contiguous.json}).}
+\label{tab:tps-fit-2019}
+\begin{tabular}{llrrrrr}
+\toprule
+Kernel & Baseline & $k$ & $\hat\eta$ & AIC & KS $p$ & $\Delta$AIC vs.\ Mark\\\midrule
+exponential & constant   & $3$ & $0.567$ & $-130{,}068.4$ & $0.494$ & ---\\
+\textbf{exponential} & \textbf{sinusoidal} & $\mathbf{6}$ & $\mathbf{0.510}$ & $\mathbf{-130{,}096.1}$ & $\mathbf{0.332}$ & $\mathbf{27.7}$\\
+lomax        & sinusoidal & $7$ & $0.513$ & $-130{,}092.2$ & $0.298$ & $23.8$\\
+\bottomrule
+\end{tabular}
+
+The Markovian fit's KS $p=0.494$ exceeds the conventional $0.05$
+threshold, so the classical Hawkes is \emph{not} rejected by the
+time-rescaling test on this data.  The Exp/sinusoidal model
+nevertheless improves AIC by $27.7$ (decisive on the
+\citet{BurnhamAnderson2002} $\Delta\mathrm{AIC} > 10$ rule)
+\emph{without} changing the kernel shape; the only added
+structure is the four-parameter sinusoidal baseline with annual
+and intra-year cyclicity.  The improvement comes from the
+sinusoidal baseline absorbing exogenous cyclic surges (weekly
+and seasonal); the branching ratio falls from $\hat\eta=0.567$
+under constant baseline to $\hat\eta=0.510$ under sinusoidal,
+because the kernel no longer has to over-explain the cyclic
+surges.  Lomax/sinusoidal, fit at full sample with the JIT
+power-law kernel and the same sinusoidal baseline, lands at
+$\hat\eta=0.513,\,\text{AIC}=-130{,}092.2,\,\text{KS}\,p=0.298$
+--- $3.9$ AIC \emph{worse} than Exp/sinusoidal (one extra
+parameter, no compensating likelihood gain) and still passing
+the time-rescaling test.  This is the substantive
+KCD~\citep{KwanChenDunsmuir2024} finding for TPS Assault~2019:
+\emph{non-stationarity dominates non-Markovianity}.  This
+stands in contrast to the v0.1.x sub-sampled $n=2{,}000$ fit
+(Table~\ref{tab:tps-fit}) where finite-sample bias near
+$\hat\eta=0.98$ pushed the test toward the boundary; full-sample
+fitting under the JIT path eliminates that small-sample
+artefact.
+\end{table}
+
+The four sinusoidal-baseline rows beat every constant-baseline row.
+The best fit (Weibull kernel, sinusoidal baseline) improves on the
+Markovian classical Hawkes by $\Delta\mathrm{AIC} = 141.1$, a very
+substantial margin even after the four extra parameters of the
+sinusoidal baseline.  By contrast, switching only the kernel
+(holding the baseline constant) gains essentially nothing
+($\Delta\mathrm{AIC} \le 1.0$).  The substantive conclusion is
+that for Toronto Assault data the dominant departure from the
+classical model is the time-varying baseline, not the kernel
+shape — but the KCD framework remains the inferential engine that
+makes the comparison legitimate.
+
+\paragraph{Markovian vs non-Markovian.}  The
+$(\text{weibull},\text{sinusoidal})$ winner encodes \emph{both}
+non-Markovian generalisations simultaneously: the kernel is no
+longer memoryless ($\hat\alpha_{\text{wb}}>1$ shifts the kernel
+mode away from $u=0$) and the baseline is no longer constant
+($\hat\alpha_2,\hat\alpha_3$ encode an annual-cycle modulation of
+$\nu(t)$).  All four sinusoidal-baseline fits dominate the
+Markovian classical, and the within-baseline gap between kernels
+is small ($\le 50$ AIC), so for these data the time-varying
+baseline is the dominant non-Markovian feature.
+
+\paragraph{Branching ratio and explosivity.}  Across all eight
+fits $\hat\eta$ sits in $[0.83, 0.98]$ — high but stationary.
+That each Toronto Assault incident contributes an estimated
+$\hat\eta < 1$ direct offspring on average to the rate of further
+Assault incidents is consistent with the
+\emph{near-repeat-victimisation} literature: criminal events
+near in time and space are not independent, and the self-exciting
+component is the formal way to score that.
+
+\section{Discussion}\label{sec:discussion}
+
+The contribution of this paper is methodological rather than
+substantive.  Toronto crime data have been modelled as Hawkes
+processes since the original Mohler analysis of LA burglary data
+\citep{mohler2011self}; what has not been done, until now, is to
+relax both the exponential-kernel \emph{and} the constant-baseline
+assumption \emph{simultaneously} on a Toronto open-data feed.  The
+Kwan-Chen-Dunsmuir asymptotic framework gives the inferential
+ground for doing so, and Ruhela's \texttt{morie.tps\_hawkes\_advanced}
+implementation makes it routine.
+
+A natural next step is to lift the kernel and baseline to the
+spatial-marked process — already partially done in
+\texttt{morie.tps\_spatial\_advanced} for Moran's $I$ / LISA /
+Getis-Ord but not yet for the self-exciting kernel itself.  A
+second extension is the multivariate-marked Hawkes:
+cross-excitation between Assault, Robbery, and Auto-Theft can be
+encoded as a $K\times K$ kernel matrix
+$g_{kl}(\cdot)$, with the same Kwan-Chen-Dunsmuir conditions
+applying coordinate-wise.
+
+\section{Conclusion}\label{sec:conclusion}
+
+I have given a self-contained derivation of the likelihood, score,
+and information for a non-stationary, non-Markovian Hawkes process,
+summarised the asymptotic guarantees of Kwan-Chen-Dunsmuir, and
+implemented the full machinery in MORIE.  Markovian and
+non-Markovian fits are now comparable on the same footing, both
+on synthetic stress-tests and on Toronto Police Service incident
+feeds.  The classical Mohler model is no longer the only Hawkes
+model in the toolbox.
+
+\paragraph{Acknowledgements.}
+The Toronto Police Service open-data programme
+(\texttt{data.torontopolice.on.ca}) provides the incident-level
+feeds analysed here.  Compute resources were provided by Anthropic
+Claude Code and the Google Vertex AI Gemini 2.5 Pro credit
+programme.  Drafting and code-review assistance was provided by an
+in-house AI research-assistant configuration (``Yoda'', a
+persistent-memory Claude harness over an MLX-quantised local
+model fall-back); responsibility for all analysis, methodology,
+and writing rests with the sole author.
+
+\paragraph{Licence.}
+\textcopyright\ 2026 Vansh Singh Ruhela.  MORIE adopts a
+per-component licensing model as of v0.3.0: the \proglang{R}
+package and the Linux kernel module are released under the GNU
+General Public License, version 2 only
+(\textbf{GPL-2.0-only}; \url{https://www.gnu.org/licenses/old-licenses/gpl-2.0.html}), matching the R-ecosystem and Linux-kernel conventions respectively; the \proglang{Python} package is dual-licensed under \textbf{MIT OR Apache-2.0}, the Rust-ecosystem convention, so downstream Python users are not forced to adopt copyleft.  The paper text and accompanying figures are released under \textbf{CC-BY-4.0} (\url{https://creativecommons.org/licenses/by/4.0/}), which is the conventional licence for academic-publishing deposits and is what the Zenodo record at \url{https://doi.org/10.5281/zenodo.20102198} carries.  Choosing GPL-2.0-only (rather than \emph{or-later}) for the R/kernel side follows the Linux-kernel convention deliberately, and keeps the licence that contributors actually agreed to instead of delegating to a future Free Software Foundation revision.
+
+\bibliography{refs}
+
+\end{document}

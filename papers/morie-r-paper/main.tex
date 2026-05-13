@@ -1,0 +1,732 @@
+\documentclass[article,shortnames,nojss]{jss}
+
+%% --- packages ---
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{orcidlink}
+
+%% --- overflow tolerance (long code identifiers break the right margin) ---
+\setlength{\emergencystretch}{4em}
+\hbadness=10000
+\hfuzz=20pt
+
+%% --- math macros ---
+\providecommand{\Rset}{\mathbb{R}}
+\renewcommand{\E}{\mathbb{E}}
+\newcommand{\indep}{\perp\!\!\!\perp}
+\newcommand{\OTIS}{\textsf{OTIS}}
+\newcommand{\SIU}{\textsf{SIU}}
+\newcommand{\TPS}{\textsf{TPS}}
+
+\title{morie: Multi-domain Open Research and Inferential Estimation in \proglang{R}}
+\Plaintitle{morie: Multi-domain Open Research and Inferential Estimation in R}
+\Shorttitle{morie: Multi-domain Inferential Estimation in R}
+
+\author{Vansh Singh Ruhela~\orcidlink{0009-0004-1750-3592}\\University of Toronto}
+\Plainauthor{Vansh Singh Ruhela}
+
+\Address{
+Vansh Singh Ruhela\\
+Centre for Criminology and Sociolegal Studies\\
+University of Toronto\\
+14 Queen's Park Crescent West, Toronto, ON M5S 3K9, Canada\\
+E-mail: \email{hadesllm@proton.me}\\
+ORCID: \orcidlink{0009-0004-1750-3592}\\
+Pronunciation: vansh sing roo-HAY-lah
+}
+
+\Abstract{
+The \proglang{R} package \pkg{morie} (Multi-domain Open Research
+and Inferential Estimation) implements a curated dual-language
+toolkit for observational inference, with explicit support for the
+MRM (Multilevel Reconciliation Methodology) framework as a sociolegal
+application target. The package provides a unified entry point to
+double-machine-learning interactive regression and partial-linear
+estimators by wrapping the \pkg{DoubleML} package
+\citep{Bach2024DoubleML} via the \pkg{mlr3} learner ecosystem
+\citep{Lang2019mlr3}; it provides independent implementations of
+inverse-probability-weighting, augmented inverse-probability-weighting,
+propensity-score matching, survey-weighted estimation, signal
+processing primitives (Butterworth, Savitzky--Golay, Higuchi
+fractal dimension), spatial statistics, statistical physics of
+crime (Hawkes processes, reaction--diffusion), psychometric
+classical-test-theory and item-response-theory estimators, and a
+suite of MRM modules for ingestion of Canadian open carceral data.
+The package is released on the Comprehensive R Archive Network
+(CRAN) and via r-universe at
+\href{https://hadesllm.r-universe.dev/morie}{hadesllm.r-universe.dev/morie}.
+This paper describes the architecture of the \proglang{R}
+implementation, the wrapper API around \pkg{DoubleML}, and three
+reproducible examples drawn from the open Ontario, federal, and
+Toronto Police Service records that the MRM framework integrates.
+}
+\Keywords{causal inference, observational inference,
+double machine learning, sociolegal statistics, Hawkes process,
+psychometrics, \proglang{R}}
+\Plainkeywords{causal inference, observational inference,
+double machine learning, sociolegal statistics, Hawkes process,
+psychometrics, R}
+% --- morie version stamp -----------------------------------------------------
+% This paper documents \pkg{morie} v0.5.0 (released 2026-05-13).  Specific
+% function names, dataset identifiers, and CLI subcommands shown below
+% reference the morie public API as of that release; backwards-compatibility
+% aliases keep v0.x code references resolving across the v0.4.x series.
+% -----------------------------------------------------------------------------
+
+
+\begin{document}
+\sloppy
+
+\section{Introduction}
+\label{sec:intro}
+
+The \proglang{R} package \pkg{morie} provides a curated
+multi-domain toolkit for observational inference. The
+\proglang{R} package is released under GPL-2.0-only to match the
+R-ecosystem and CRAN convention; the companion
+\proglang{Python} package \citep{Ruhela2026MoriePy} is
+dual-licensed under \code{MIT OR Apache-2.0} (the Rust-ecosystem
+convention) so downstream Python users are not forced into
+copyleft.  The package supports a
+unified estimator interface for the average treatment effect
+(ATE), the average treatment effect on the treated (ATT), the
+conditional and group average treatment effects (CATE, GATE), the
+local average treatment effect (LATE), and the augmented
+inverse-probability-weighting (AIPW) estimator. Double machine
+learning is exposed through wrappers around the \pkg{DoubleML}
+classes \citep{Bach2024DoubleML}, which in turn rely on the
+\pkg{mlr3} ecosystem \citep{Lang2019mlr3} for the nuisance-function
+learners. Outside causal inference, the package provides signal
+processing primitives, cryptographic primitives, spatial statistics,
+statistical-physics models of crime, and psychometric estimators
+that complement the causal-inference core.
+
+\pkg{morie} is positioned alongside the established \proglang{R}
+ecosystem of causal-inference packages: \pkg{DoubleML} itself
+\citep{Bach2024DoubleML} for the canonical double-machine-learning
+estimators, \pkg{MatchIt} for matching, \pkg{survey} for
+design-based estimation, \pkg{hdm} for high-dimensional
+post-selection inference \citep{ChernozhukovHansenSpindler2016hdm},
+\pkg{grf} for forest-based heterogeneous treatment effects, and
+\pkg{AIPW} for augmented inverse-probability weighting. The
+package does not duplicate these established estimators where they
+already exist in the canonical \proglang{R} stack; instead, it
+wraps them under a single function-naming convention and pairs
+them with the MRM modules that target Canadian open carceral and
+police-oversight data.
+
+The MRM modules implement the unified framework of
+\citet{Ruhela2026MRM} for analysis across five Canadian sources:
+the Ontario Tracking Information System (\OTIS, A01-RCDD), the
+federal Structured Intervention Unit Implementation Advisory
+Panel, the Ontario Special Investigations Unit (\SIU), the Toronto
+Police Service (\TPS) open data, and the federal Corrections and
+Conditional Release Statistical Overview. The framework's
+theoretical foundations are presented in \citet{Ruhela2026MRM};
+this paper concerns its \proglang{R} software realisation.
+
+The companion paper \citep{Ruhela2026MoriePy} describes the
+\proglang{Python} implementation, which is functionally parallel
+to the \proglang{R} implementation under a different idiomatic
+API.
+
+The rest of the paper is organised as follows.
+Section~\ref{sec:getting-started} demonstrates installation and a
+motivating example. Section~\ref{sec:taxonomy} surveys the module
+taxonomy. Section~\ref{sec:mrm} describes the MRM modules.
+Section~\ref{sec:api} contrasts the functional and
+object-oriented APIs and documents the \code{morie\_result}
+return type.  Section~\ref{sec:wrapper} documents the wrapper architecture
+around \pkg{DoubleML}. Section~\ref{sec:examples} works three
+reproducible examples on the Ontario, federal, and TPS data.
+Section~\ref{sec:mrm-empirical-callables} catalogues the
+twelve empirical-workflow callables added in v0.1.15.
+Section~\ref{sec:textbook-callables} catalogues the 275
+textbook-derived callables that ship in \code{morie.fn} across
+fourteen suites in v0.2.1 and v0.3.0.
+Section~\ref{sec:simulation} reports a simulation study.
+Section~\ref{sec:conclusion} concludes.
+
+\section{Getting started}
+\label{sec:getting-started}
+
+\subsection{Installation}
+
+The released \pkg{morie} package is available on CRAN:
+
+\begin{Code}
+R> install.packages("morie")
+\end{Code}
+
+\noindent Nightly Linux, macOS, and Windows binaries are built by
+r-universe \citep{Ooms2021runiverse} from the GitHub source tree
+and can be installed from the project's r-universe page:
+
+\begin{Code}
+R> install.packages("morie",
++   repos = c(hadesllm = "https://hadesllm.r-universe.dev",
++             CRAN     = "https://cloud.r-project.org"))
+\end{Code}
+
+\noindent The companion \proglang{Python} package is reachable via
+the same one-line installer published on the documentation site
+(which also installs the \proglang{R} bridge dependencies via the
+\code{--auto} flag):
+
+\begin{Code}
+$ curl -fsSL https://hadesllm.github.io/morie/install.sh | bash -s -- --auto
+\end{Code}
+
+\noindent A Homebrew tap is available for the
+\proglang{Python} side on \proglang{macOS} and Linuxbrew:
+
+\begin{Code}
+$ brew tap hadesllm/morie
+$ brew install morie
+\end{Code}
+
+\noindent The tap source is at
+\href{https://github.com/hadesllm/homebrew-morie}{hadesllm/homebrew-morie}.
+
+\noindent The development version is installable from GitHub:
+
+\begin{Code}
+R> remotes::install_github("hadesllm/morie",
++   subdir = "r-package/morie")
+\end{Code}
+
+\noindent The package depends on \proglang{R} 4.3.0 or later and
+declares \pkg{stats} and \pkg{utils} as hard dependencies; the
+double-machine-learning, survey, matching, and signal-processing
+dependencies are declared under \code{Suggests} to keep the base
+installation lightweight.
+
+\subsection{A motivating example}
+
+The motivating example uses the open \OTIS{} A01-RCDD record to
+estimate the average treatment effect of an indicator of high
+alert complexity on placement-volatility outcomes in the Ontario
+restrictive-confinement system.
+
+\begin{Code}
+R> library("morie")
+R> data <- otis_load_a01_rcdd(year = 2025)
+R> head(data)
+\end{Code}
+
+\noindent The treatment variable is constructed by thresholding
+the alert-count covariate at the population median. The outcome
+is a count of placement transitions within the fiscal year.
+
+\begin{Code}
+R> data$D <- as.integer(data$alert_count >= median(data$alert_count))
+R> result <- estimate_irm(
++   y     = "placement_transitions",
++   d     = "D",
++   x     = c("age_band", "gender", "regional_cluster"),
++   data  = data)
+R> print(result)
+\end{Code}
+
+\noindent The \code{estimate\_irm()} wrapper composes an
+\code{mlr3} regression learner (\code{lrn("regr.lm")}) and a
+classification learner (\code{lrn("classif.log\_reg")}) and passes
+them to \code{DoubleML::DoubleMLIRM}. The returned object is a
+\code{RichResult} (Section~\ref{sec:taxonomy}) that prints a
+multi-section interpretation alongside the point estimate, standard
+error, and confidence interval.
+
+\section{Module taxonomy}
+\label{sec:taxonomy}
+
+The \pkg{morie} \proglang{R} interface organises functionality
+into eight thematic groups.
+
+\subsection{Causal inference}
+
+The causal-inference group provides the average-treatment-effect
+estimator family: \code{estimate\_att()}, \code{estimate\_atc()},
+\code{estimate\_aipw()}, \code{estimate\_cate()},
+\code{estimate\_gate()}, \code{estimate\_late()},
+\code{estimate\_irm()}, and \code{estimate\_plr()}. The first four
+are independently implemented in pure \proglang{R} using the
+identifying assumptions described in \citet{Ruhela2026MRM}; the
+latter four wrap \pkg{DoubleML} as detailed in
+Section~\ref{sec:wrapper}.
+
+\subsection{Survey sampling and weights}
+
+The survey group provides \code{calculate\_ipw\_weights()},
+\code{calculate\_ebac()} (the Widmark blood-alcohol-content
+estimator used by Health Canada survey instruments), and wrappers
+for \pkg{survey} that expose design-based standard errors under
+stratified and cluster sampling.
+
+\subsection{Signal processing}
+
+The signal-processing group provides \code{buttlp()},
+\code{butthp()}, \code{buttbp()}, \code{buttbs()} (Butterworth
+filters); \code{sgolay\_smooth()} (Savitzky--Golay smoothing);
+\code{hurst\_r()} (Hurst exponent by R/S analysis);
+\code{hfd()} (Higuchi fractal dimension); and \code{pcg\_filter()}
+(phonocardiogram band-pass).
+
+\subsection{Spatial statistics}
+
+The spatial group provides \code{moran\_i()}, \code{geary\_c()},
+and the kernel-density and ripley-K wrappers used by the MRM
+spatial-temporal modules.
+
+\subsection{Statistical physics of crime}
+
+This group provides Hawkes process maximum-likelihood fits
+(\code{fit\_hawkes()}; exponential, gamma, Weibull and Lomax kernels under both constant and sinusoidal baselines),
+the reaction--diffusion intensity-field estimator, the L\'evy-flight
+displacement model, and the Lotka--Volterra police--crime dynamics
+estimator \citep{Mohler2011, Ruhela2026Hawkes}.
+
+\subsection{Psychometrics}
+
+The psychometrics group provides classical-test-theory estimators
+(\code{cronbach\_alpha()}, \code{mcdonald\_omega()},
+\code{kuder\_richardson()}) and item-response-theory estimators
+(1PL, 2PL, 3PL Rasch family).
+
+\subsection{Cryptography}
+
+The cryptography group provides reference implementations of
+ML-KEM, ML-DSA, NTRU, and hybrid post-quantum primitives. These
+are intended for educational use and are not audited for
+production deployment; the package's \texttt{SECURITY.md}
+documents this status explicitly.
+
+\subsection{Investigation utilities}
+
+The investigation-utility group provides
+\code{compare\_nested\_logistic\_models()} (likelihood-ratio test
+across nested specifications),
+\code{run\_treatment\_effects\_analysis()} (end-to-end
+ATE/ATT/CATE/GATE estimation pipeline),
+\code{run\_weighted\_logistic\_analysis()} (survey-aware logistic
+regression via \pkg{survey}), and \code{inspect\_output()}
+(audit-trail inspection of result objects).
+
+\section{The MRM modules}
+\label{sec:mrm}
+
+The MRM modules in \pkg{morie} implement the framework of
+\citet{Ruhela2026MRM} as a coordinated set of estimators on the
+five Canadian sources. Each MRM module is exposed by an
+\code{mrm\_*} prefixed function: \code{mrm\_otis\_load()},
+\code{mrm\_siu\_scrape()}, \code{mrm\_tps\_load()},
+\code{mrm\_classify\_mandela()}, \code{mrm\_chi2\_doob()}, and
+\code{mrm\_hawkes\_tps()}. The functions handle source-specific
+schema reconciliation through the canonical fiscal-quarter index
+of \citet{Ruhela2026MRM} and emit data objects that the
+estimator-family functions of Section~\ref{sec:taxonomy} consume
+directly.
+
+\section{Functional and object-oriented APIs}
+\label{sec:api}
+
+\pkg{morie} exposes both a functional API (the
+\code{morie::estimate\_*} family of free functions) and an
+object-oriented API (an \code{R6} \code{MorieFit} class that
+internally orchestrates estimator selection, nuisance estimation,
+and result reporting). The functional API is the canonical entry
+point for one-shot analyses; the object-oriented API is provided
+for composable pipelines that benefit from inspection of
+intermediate state.
+
+\subsection[The morie result return type]{The \code{morie\_result} return type}\label{sec:richresult}
+
+Every estimator in \pkg{morie} returns a \code{morie\_result} S3
+object, an R list with class attribute \code{"morie\_result"} that
+populates itself with the canonical result fields
+(\code{estimate}, \code{se}, \code{ci\_lower}, \code{ci\_upper},
+\code{p\_value}, \code{n}, \code{n\_treated},
+\code{interpretation}).  The S3 dispatch pattern provides two
+simultaneous use modes: a returned \code{morie\_result} satisfies
+\code{is.list(result)} (so results can be passed to any
+list-consuming downstream code), and \code{result\$estimate}
+returns the typed point estimate (so users index by name when
+appropriate).  The multi-section pretty-printer
+\code{print.morie\_result} renders the result as a panel of
+labelled fields when called interactively; when used
+programmatically, the result behaves as an ordinary named list.
+This mirrors exactly the \code{RichResult} dataclass in the
+\proglang{Python} sibling \citep{Ruhela2026MoriePy}, so a
+researcher who learns one side of the package has acquired the
+other side's idiom for free.
+
+\subsection[describe()]{\code{describe()}}\label{sec:describe}
+
+Every callable in \pkg{morie} that returns a \code{morie\_result}
+has a paired \code{describe\_<callable>.md} pedagogical narrative
+shipped in \code{inst/extdata/describe/}.  The \code{morie\_describe()}
+function loads and prints the relevant narrative for a given
+callable:
+
+\begin{Code}
+R> morie_describe(morie::estimate_irm)
+\end{Code}
+
+\noindent The describe-output convention is documented in the
+package's design paper at the repository.
+
+\section{Wrapper architecture for DoubleML}
+\label{sec:wrapper}
+
+\pkg{morie} layers a thin function-style interface over
+\pkg{DoubleML}'s class-based interface. Where \pkg{DoubleML}
+exposes \code{DoubleMLIRM\$new(data, ml\_g, ml\_m, ...)} with a
+data backend and two \pkg{mlr3} learners as separate arguments,
+\code{morie::estimate\_irm()} accepts a single data frame, column
+names for the treatment, outcome, and covariates, and an optional
+learner specification with sensible defaults.
+
+The default learners for \code{estimate\_irm()} are
+\code{lrn("regr.lm")} (linear regression for the outcome nuisance)
+and \code{lrn("classif.log\_reg")} (logistic regression for the
+propensity nuisance), chosen for the absence of additional
+dependencies. Users who require flexible non-parametric nuisance
+estimation pass alternative \pkg{mlr3} learners directly:
+
+\begin{Code}
+R> result <- estimate_irm(
++   y       = "y", d = "D", x = c("X1","X2","X3"),
++   data    = df,
++   ml_g    = mlr3::lrn("regr.ranger", num.trees = 500),
++   ml_m    = mlr3::lrn("classif.ranger", num.trees = 500),
++   n_folds = 5, n_rep = 2)
+\end{Code}
+
+\noindent The wrapper performs three additional services beyond
+the \pkg{DoubleML} class call. First, it harmonises the result
+object to a \code{RichResult} that prints a multi-section
+interpretation with verbose interpretation under a uniform format.
+Second, it audits learner-result quality through cross-validation
+$R^{2}$ and Brier-score diagnostics. Third, it surfaces both the
+ATE and the ATT in a single call rather than requiring a separate
+\code{score = "ATTE"} parameterisation.
+
+The wrapper preserves the full \pkg{DoubleML} class instance under
+\code{result\$doubleml} for users who require direct access to
+sample splits, bootstrap statistics, or the underlying psi-score
+arrays.
+
+\section{Reproducible examples}
+\label{sec:examples}
+
+Three reproducible examples illustrate the package's use across
+the MRM source set.
+
+\subsection[Example 1: alert complexity and placement volatility (OTIS)]{Example 1: alert complexity and placement volatility (\OTIS{})}
+
+The first example revisits the motivating example of
+Section~\ref{sec:getting-started} under three estimators
+(IPW, AIPW, IRM-DML) and reports the consistency of point
+estimates across estimators as evidence of identification
+robustness. Following the MRM identification strategy
+\citep{Ruhela2026MRM}, the propensity score conditions on age band,
+gender, regional cluster, and fiscal-year fixed effects; the
+outcome regression conditions on the same covariates.
+
+\subsection{Example 2: replication of the Sprott--Doob chi-squared
+record}
+
+The second example replicates the published $\chi^{2}$ statistics
+from \citet{SprottDoob2023} on the federal $\SIU$ aggregate
+record. The MRM \code{mrm\_chi2\_doob()} function consumes the
+published contingency tables and reproduces every reported
+$\chi^{2}$ statistic to within $0.01$.
+
+\subsection{Example 3: Hawkes self-exciting process on TPS major
+crime}
+
+The third example fits the Hawkes self-exciting specification of
+\citet{Ruhela2026Hawkes} to the Toronto Police Service open-data
+major-crime event series.  The Markovian (exponential kernel,
+constant baseline) and a fat-tailed non-Markovian (Lomax /
+power-law kernel, sinusoidal baseline) specifications are fit
+by maximum likelihood under the Numba-JIT'd $O(n)$ recursive
+likelihood for the exponential kernel and the parallel $O(n^2)$
+JIT path for non-Markovian kernels (new in \pkg{morie} v0.2.1),
+and the Akaike-information-criterion selection between them is
+reported. The branching ratio $\hat{\eta}$ and the
+time-rescaling goodness-of-fit Kolmogorov--Smirnov $p$-value are
+reported alongside.  On the canonical TPS Assault 2019
+contiguous one-year window ($n=21{,}160$ events), the Markovian
+fit attains $\hat\eta=0.567$, $\hat\beta=3.854$/day, and
+KS\,$p=0.494$; the Exp/sin model improves AIC by $27.7$
+(decisive on the standard $\Delta\mathrm{AIC} > 10$ rule) to
+$\hat\eta=0.510$, KS\,$p=0.332$; and Lomax/sin lands at
+$\hat\eta=0.513$, KS\,$p=0.298$ --- $3.9$ AIC \emph{worse} than
+Exp/sin (one extra parameter, no likelihood gain).  The
+substantive finding for TPS Assault 2019 is that
+non-stationarity (sinusoidal baseline) dominates
+non-Markovianity (kernel shape); a richer kernel does not pay
+its parameter cost on this data.
+
+\section{Simulation study}
+\label{sec:simulation}
+
+A simulation study under the partially-linear data-generating
+process of \citet{Chernozhukov2018DML} compares the
+\code{estimate\_irm()} wrapper's coverage and bias under three
+nuisance-learner choices: linear (\code{regr.lm}, default), lasso
+(\code{regr.cv\_glmnet}), and random-forest (\code{regr.ranger}).
+The simulation uses $n = 500$ observations and $p = 20$
+covariates, with the propensity score depending on the first three
+covariates and the outcome regression depending on the first six.
+The true treatment effect is $\theta_0 = 0.5$. Each setting is
+replicated $500$ times.
+
+Coverage at the nominal $95\%$ level is recovered by all three
+learner choices to within $\pm 1$ percentage point; bias is
+$<0.01$ for the linear and lasso learners and $<0.03$ for the
+random-forest learner under default hyperparameters. The
+sample-splitting fold count $K=5$ and the repetition count $R=2$
+that \pkg{morie}'s wrapper sets as defaults are confirmed adequate
+for $n = 500$.
+
+\section[Empirical workflow callables added in v0.1.15]{Empirical workflow callables added in \texttt{v0.1.15}}\label{sec:mrm-empirical-callables}
+
+Version 0.1.15 ships twelve new exported callables that compose
+into the empirical workflow used by the companion empirical paper
+\citep{Ruhela2026MorieEmpirical}.  They are documented here for
+completeness; every function has full \proglang{R} + \proglang{Python}
+parity (the \proglang{Python} side is described in the morie
+\proglang{Python} paper, this volume).
+
+\paragraph{OTIS suite.}  Five callables operate on the Ontario
+Tracking Information System public release.  \code{mrm_classify_mandela()}
+(introduced in v0.1.14) classifies placements under the United Nations
+Mandela Rules with three denominator conventions (row,
+\code{individual_any}, \code{individual_cumulative}).
+\code{mrm_otis_placement_concentration()} expands the b09 banded
+per-individual placement counts via band midpoints and reports the
+Hill-MLE Pareto exponent, the Gini coefficient, and the top-k\%
+concentration share within each fiscal year and pooled.
+\code{mrm_otis_seg_duration_km()} returns a Kaplan-Meier summary of
+\texttt{NumberConsecutiveDays\_Segregation} with optional alert-flag
+stratification and a fraction-above-Mandela-threshold column.
+\code{mrm_otis_mortification_cooccurrence()} computes pairwise
+Cram\'er's $V$ across the three b01 alert flags
+(\texttt{MentalHealth\_Alert}, \texttt{SuicideRisk\_Alert},
+\texttt{SuicideWatch\_Alert}).  \code{mrm_otis_region_locality()}
+constructs the
+\texttt{Region\_AtTimeOfPlacement}~$\times$~\texttt{Region\_MostRecentPlacement}
+contingency table and reports the chi-square statistic, Cram\'er's
+$V$, and the diagonal share (within-region staying).
+
+\paragraph{TPS suite.}  Four callables operate on Toronto Police
+Service open-data crime events.  \code{mrm_tps_levy_scaling()} fits
+a Hill-MLE Pareto exponent to the haversine inter-incident step
+lengths.  \code{mrm_tps_moran_clustering()} grids the lat/long
+extent into a coarse raster, counts events per cell, and reports
+the global Moran's $I$ z-score together with a DBSCAN summary at
+$\varepsilon = 0.3$~km.
+\code{mrm_tps_neighbourhood_recurrence_km()} returns a per-
+\texttt{HOOD\_158} Kaplan-Meier summary of inter-event gap days.
+\code{mrm_tps_kulldorff_scan()} implements Kulldorff's 1997
+Poisson log-likelihood-ratio space-time scan
+\citep{kulldorff1997} with a Monte-Carlo permutation test for
+significance over $r \in \{1, 2, 3, 5, 8\}$~km candidate radii.
+
+\paragraph{SIU suite.}  Three callables operate on Ontario Special
+Investigations Unit case-level data.
+\code{mrm_siu_case_to_decision_km()} reports a Kaplan-Meier summary
+of the gap from \texttt{date\_of\_incident\_iso} to
+\texttt{date\_of\_director\_decision\_iso} per
+\texttt{police\_service}, with right-censoring of open cases.
+\code{mrm_siu_per_service_rate()} cross-tabulates cases by service
+and year.  \code{mrm_siu_outcome_classifier()} tabulates the
+Director's decision categories per service.  Unlike OTIS (which
+re-assigns its \texttt{UniqueIndividual\_ID} each fiscal year via
+the \texttt{YYYY-XXXXX-SG} format and therefore admits no
+cross-year tracking) and TPS (which exposes no offender
+identifier by design), SIU provides per-case dates with a stable
+jurisdiction identifier and so admits a valid time-to-outcome
+analysis; the canonical example is the gap from
+\texttt{date\_of\_incident\_iso} to
+\texttt{date\_of\_director\_decision\_iso} per
+\texttt{police\_service}, which our verification gives
+as $120$ days (pooled, $n = 1{,}711$).
+
+\paragraph{Longitudinal simulator.}  One callable,
+\code{morie_simulate_longitudinal_panel()}, ties a synchronised
+RNG, a VAR$(L)$ coefficient array with stationarity-preserving
+spectral constraints, and structured-covariance multivariate
+normal draws into a tidy long-format panel.  This is a clean-room
+implementation of standard methods from
+\citet{hamilton1994timeseries} and
+\citet{diggle1994longitudinal}.
+
+\paragraph{Dataset access paths.}  The empirical-workflow
+callables are paired with three on-demand dataset fetchers so the
+callables work out of the box without manual data wrangling: OTIS
+via the Ontario Data Catalogue CKAN endpoints (resource IDs are
+baked into \code{morie_dataset_catalog()} for a01, b01, b09 and
+c11); TPS via an ArcGIS REST fetcher
+(\code{morie_fetch_tps()}, nine public categories); and SIU via
+\code{morie_fetch_siu()}, which scrapes the public Director's
+Reports site on demand.  Four small reference samples ship in
+\texttt{inst/extdata/} so the worked examples and the testthat
+suite run offline.
+
+\paragraph{Animated demo.}  A user can confirm the package is
+actually doing work, in the same way DoubleML and the Optuna
+training UI do, by running \texttt{python -m morie.demo} after
+installing the Python sibling.  The R-only equivalent prints
+per-step progress to the console via the \pkg{cli} package.
+
+\section[Textbook-derived callables in morie.fn]{Textbook-derived callables in \texttt{morie.fn}}\label{sec:textbook-callables}
+
+Beyond the causal-inference core and the empirical-workflow
+callables of Section~\ref{sec:mrm-empirical-callables},
+\pkg{morie} ships a curated catalogue of 275 textbook-derived
+callables, organised into fourteen thematic suites under the
+\code{morie.fn} namespace.  Each suite implements a coherent
+slice of a canonical reference text in statistics, machine
+learning, or signal processing; together they form a
+pedagogical-and-applied corpus that complements the wrapper
+functions documented above.  The design philosophy is uniform:
+where a battle-tested library exists on either side of the
+\proglang{R}/\proglang{Python} divide, the suite calls into it
+(\code{spdep}, \code{gstat}, \code{survival}, \code{forecast},
+\code{rugarch}, \code{signal}, \code{kernlab} on the
+\proglang{R} side; \code{scipy}, \code{statsmodels},
+\code{scikit-learn}, \code{pywavelets} on the \proglang{Python}
+side); where the operation is light enough that a library would
+introduce more weight than logic, the suite uses base \proglang{R}
+matrix and vector primitives (or numpy on the Python side)
+directly.  All 275 callables were verified for \proglang{R} +
+\proglang{Python} parity at the v0.3.0 release (see the package
+\code{NEWS} file).
+
+The fourteen suites are enumerated in
+Table~\ref{tab:textbook-suites}, with the short module mnemonic
+that fixes the namespace, the number of callables shipped, the
+canonical reference textbook, and one representative
+\proglang{R} wrapper as illustration.
+
+\begin{table}[t]
+\centering
+\footnotesize
+\begin{tabular}{lr>{\raggedright\arraybackslash}p{4.5cm}>{\raggedright\arraybackslash}p{5.8cm}}
+\toprule
+Suite & $n$ & Reference & Representative wrapper \\
+\midrule
+\code{schabenberger} & 20 & \citet{SchabenbergerGotway2005} & \code{spatial\_autocorrelation()} \\
+\code{kosorok} & 20 & \citet{Kosorok2008} & \code{kosorok\_empirical\_process()} \\
+\code{ml\_foundations} & 20 & \citet{MohriRostamizadehTalwalkar2018,HastieTibshiraniFriedman2009} & \code{linear\_regression\_ols()} \\
+\code{ghosal} & 20 & \citet{GhosalVanDerVaart2017} & \code{ghosal\_dirichlet\_posterior()} \\
+\code{horowitz} & 20 & \citet{Horowitz2009} & \code{horowitz\_kernel\_regression()} \\
+\code{montesinos} & 20 & \citet{MontesinosLopez2022} & \code{gblup\_full()} \\
+\code{armstrong} & 20 & \citet{Armstrong2014SpatialVoting} & \code{ideal\_point\_recovery()} \\
+\code{deep\_learning} & 20 & \citet{GoodfellowBengioCourville2016} & \code{forward\_pass\_dense()} \\
+\code{missing\_stats} & 20 & QMC / copulas / EVT & \code{bootstrap\_ci()} \\
+\code{llm\_arch} & 20 & \citet{Vaswani2017Attention,Dao2022FlashAttention,Su2021RoPE,ZhangSennrich2019RMSNorm} & \code{bpe\_tokenizer()} \\
+\code{fauzi} & 15 & \citet{Fauzi2018Kernel} & \code{fauzi\_kdfe\_properties()} \\
+\code{gibbons\_chakraborti} & 20 & \citet{GibbonsChakraborti2014} & \code{tolerance\_limits()} \\
+\code{rangayyan} & 20 & \citet{Rangayyan2015} & \code{rangayyan\_fir\_filter()} \\
+\code{time\_series\_advanced} & 20 & \citet{HyndmanAthanasopoulos2018,Tsay2010FinancialTimeSeries} & \code{garch\_fit()} \\
+\bottomrule
+\end{tabular}
+\caption{The fourteen textbook-derived suites in \code{morie.fn}.
+Total: 275 callables, all with \proglang{R}+\proglang{Python}
+parity verified at v0.3.0.  The \code{missing\_stats} label
+is a v0.2.1 artefact: the spec covers resampling,
+quasi-Monte-Carlo, copula, and extreme-value-theory material,
+not missing-data methods proper; a true missing-data spec is
+deferred to v0.3.x.}
+\label{tab:textbook-suites}
+\end{table}
+
+\subsection{Naming convention}\label{sec:textbook-naming}
+
+Each suite occupies a four-to-seven-character mnemonic
+namespace.  On the \proglang{R} side every callable is exported
+under \emph{both} its compact mnemonic and its full descriptive
+name: in the \code{schabenberger} suite, for instance, both
+\code{sptau()} and \code{spatial\_autocorrelation()} resolve to
+the same function, because the full-name binding is created by
+\code{spatial\_autocorrelation <- sptau}.  The mnemonic matches
+the spec \code{name} field of the originating formula-index JSON
+and the descriptive binding matches the \code{full\_name} field,
+so a user can locate the originating specification and the
+cross-language sibling without guessing.  The \proglang{Python} sibling uses the longer form
+\code{morie.fn.<short>.<full\_name>(\ldots)} as documented in
+\citet{Ruhela2026MoriePy}.
+
+\subsection{Caveats and v0.3.x deferrals}\label{sec:textbook-caveats}
+
+Numerical agreement between the \proglang{R} and \proglang{Python}
+sides is bit-identical for deterministic callables: the
+closed-form OLS and PCA in \code{ml\_foundations}, Moran's $I$
+and ordinary kriging in \code{schabenberger}, the analytic
+attention and softmax operators in \code{llm\_arch}, and similar.  For stochastic callables
+(bootstrap and jackknife in \code{missing\_stats}, random-forest
+and gradient-boosting ensembles, MCMC posteriors in
+\code{ghosal}, the Bayesian-inference paths in
+\code{time\_series\_advanced}), agreement is within Monte-Carlo
+tolerance under matched random-number seeds.  The
+\proglang{R} smoke suite confirms that all 319 \proglang{R}
+files in the source tree source cleanly under base \proglang{R}
+with only the declared \code{Suggests:} optional packages
+installed; the \proglang{Python} smoke runs the \code{\_\_main\_\_}
+canonical-test block in every shipped module.  Three honest
+deferrals carry over from the v0.2.1 tracker: an opt-in
+deterministic mode for the stochastic callables, a true
+missing-data suite to replace the misnamed \code{missing\_stats}
+spec, and a tighter cross-language MLE-tolerance pin for the
+GARCH/EGARCH and Bayesian fits where the two language
+ecosystems' optimiser defaults differ.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The \proglang{R} package \pkg{morie} provides a curated
+multi-domain toolkit for observational inference, with explicit
+support for the MRM framework as a sociolegal application target.
+The wrapper architecture around \pkg{DoubleML} offers a thin
+function-style API; the eight thematic groups provide a unified
+namespace for the broader observational-inference, signal-processing,
+spatial, statistical-physics, and psychometric routines that
+complement the causal core. The MRM modules implement the
+framework of \citet{Ruhela2026MRM} on the five Canadian sources
+through a common ingestion pipeline.
+
+The \proglang{R} package is released on CRAN and via r-universe
+under GPL-2.0-only (matching the R-ecosystem convention); the
+companion \proglang{Python} package is released on PyPI under
+\code{MIT OR Apache-2.0} (the Rust-ecosystem convention) so that
+downstream users in either language are not forced to adopt the
+copyleft of the other.  The Linux kernel module
+(\texttt{kernel-module/morie.c}) ships under GPL-2.0-only (the
+kernel ABI requirement); papers and documentation are
+\code{CC-BY-4.0}.  The full per-component breakdown is in
+\code{LICENSING.md} at the source repository
+\url{https://github.com/hadesllm/morie}.  Contributions follow
+the process documented in \code{CONTRIBUTING.md}.
+
+\section*{Acknowledgements}
+
+The author thanks Glenn McNamara for distribution-theory
+mentorship that grounds the per-individual estimator ensemble;
+Professor Angela Zorro Medina for the methodological lineage of
+the framework's identification strategy; Jeroen Ooms for
+maintaining the r-universe infrastructure on which the \pkg{morie}
+nightly binaries are built; and the DoubleML team (Philipp Bach,
+Malte S.\ Kurz, Victor Chernozhukov, Martin Spindler, Sven
+Klaassen) for the BSD-3-Clause double-machine-learning library on
+which the package's IRM and PLR wrappers are layered.
+
+\bibliography{refs}
+
+\end{document}

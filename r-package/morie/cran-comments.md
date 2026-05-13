@@ -16,7 +16,12 @@ This is a new release. No reverse dependencies.
 
 ## Notes for CRAN
 
-* This is the first stable CRAN submission of `morie` (version 0.3.0).
+* This submission is `morie` version 0.5.0.  Previous CRAN
+  submissions (0.3.0) were withdrawn during the dependency-graph
+  hardening pass.  v0.5.0 ships a stable user surface (CLI:
+  `morie tutorial`, `morie pull`, `morie explain`, `morie ingest`;
+  Python: `morie.datasets`) and a synthetic CPADS/OTIS/TPS/SIU
+  bundle so reviewers can exercise every code path offline.
 * The R package is licensed GPL-2.0-only to match the R ecosystem
   convention; the sibling Python package on PyPI is dual-licensed
   MIT OR Apache-2.0 (the Rust ecosystem convention).

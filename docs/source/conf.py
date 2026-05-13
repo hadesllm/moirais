@@ -136,6 +136,9 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # ---------------------------------------------------------------------------
 html_theme = "alabaster"
 html_static_path = ["_static"]
+# Files copied verbatim to the site root (clean URLs for curl-able shell
+# installers, e.g. https://hadesllm.github.io/morie/install.sh).
+html_extra_path = ["_extra"]
 html_title = "MORIE"
 
 # Sidebar toggle — alabaster doesn't ship a collapse button; this

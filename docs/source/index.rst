@@ -45,16 +45,42 @@ for Canadian carceral, police, and oversight data analysis.
 Quick start
 -----------
 
-Install via pip, Homebrew (forthcoming), or from source:
+Pick any one channel — all install the **same** ``morie`` v0.4.12:
 
 .. code-block:: bash
 
-   pip install morie # Python package (60+ built-in datasets)
-   pip install "morie[interactive]" # + Terminal IDE (TUI) with textual
-   pip install "morie[carbon]" # + CodeCarbon emissions (Python ≤3.14 only)
+   # 1. One-line installer (Linux / macOS / WSL) — detects pip + R, installs both
+   curl -fsSL https://hadesllm.github.io/morie/install.sh | bash
 
-   # R package (from source)
-   install.packages("r-package/morie", repos = NULL, type = "source")
+   # 2. PyPI (any platform with Python ≥3.10)
+   pip install morie                  # 60+ built-in datasets
+   pip install "morie[interactive]"   # + Terminal IDE (TUI)
+   pip install "morie[carbon]"        # + CodeCarbon emissions (Python ≤3.14 only)
+
+   # 3. Homebrew (macOS / Linuxbrew)
+   brew tap hadesllm/morie
+   brew install morie
+
+   # 4. Docker (zero local dependencies)
+   docker run --rm ghcr.io/hadesllm/morie:0.4.12 morie --help
+
+   # 5. R package (CRAN-compatible, served from r-universe)
+   install.packages("morie", repos = "https://hadesllm.r-universe.dev")
+
+.. note::
+
+   **Heads-up for Raspberry Pi OS / Debian Trixie users:** the system
+   ``/usr/bin/python3`` is python 3.13.5, which segfaults on import for
+   several scientific wheels (a Debian-packaging bug, not a morie bug).
+   Work around it with ``uv``:
+
+   .. code-block:: bash
+
+      curl -LsSf https://astral.sh/uv/install.sh | sh
+      uv python install 3.12
+      uv venv ~/.venvs/morie --python 3.12
+      uv pip install --python ~/.venvs/morie/bin/python morie
+      ~/.venvs/morie/bin/morie --version
 
 Run your first analysis in seconds:
 

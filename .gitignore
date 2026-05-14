@@ -108,3 +108,8 @@ papers/**/arxiv-bundle/
 papers/**/*-pre-jss-*.tex
 papers/**/results/
 papers/PAPERS_*.txt
+
+# Email drafts — NEVER push (contains personal addresses)
+RELEASE-EMAILS-*.md
+*-EMAILS-*.md
+morie-private/

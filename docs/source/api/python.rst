@@ -101,8 +101,8 @@ Datasets
    :undoc-members:
    :show-inheritance:
 
-OTIS — Ontario Tracking and Information System
-----------------------------------------------
+OTIS — Offender Tracking Information System
+-------------------------------------------
 
 .. automodule:: morie.otis
    :members:
@@ -224,6 +224,37 @@ Psychometrics
 -------------
 
 .. automodule:: morie.psymet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Entheogenic neuroimaging — DMT EEG-fMRI
+----------------------------------------
+
+Opt-in module wrapping the Carhart-Harris / Timmermann DMT-imaging
+dataset (20 subjects EEG + parcellated fMRI; the 15 motion-survived
+subjects are 01-03 and 06-17). Exposes two consciousness-theory
+metrics: Beautiful Loop (Bayne, Carter, Laukkonen, Slagter) and
+Self-Aware Networks (Pirez). Data location is honoured via
+``$MORIE_DMT_IMAGING_ROOT``; a deterministic synthetic fixture is
+returned when the local mirror is absent so CI keeps running.
+
+.. automodule:: morie.entheo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: morie.entheo.data
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: morie.entheo.preprocess
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: morie.entheo.analysis
    :members:
    :undoc-members:
    :show-inheritance:

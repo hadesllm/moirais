@@ -1,21 +1,28 @@
 """
 morie.entheo -- Psychedelic EEG-fMRI preprocessing and consciousness analysis.
 
-v0.4.0-alpha scaffold. Opt-in module; not auto-loaded by `import morie`.
+Opt-in module; not auto-loaded by ``import morie``. Import explicitly
+with ``import morie.entheo`` or ``from morie import entheo``.
 
-Wraps Dr. Robin Carhart-Harris / Christopher Timmermann DMT-imaging
-data (20 subjects EEG + parcellated fMRI; 15 subjects survived motion
-correction) into a coherent morie surface, and provides toy
-implementations of two consciousness-theory metrics:
+Wraps the Carhart-Harris / Timmermann DMT-imaging data (20 subjects
+EEG + parcellated fMRI; the 15 motion-survived subjects are 01-03 and
+06-17, with 04, 05, 20, 21, 24 absent on disk per the manuscript)
+into a coherent morie surface, and exposes two consciousness-theory
+metrics:
 
-  - Beautiful Loop  (Bayne, Carter, Laukkonen, Slagter): predictive
-    integration of phenomenal binding, here scored as the cross-modal
+  - **Beautiful Loop** (Bayne, Carter, Laukkonen, Slagter): predictive
+    integration of phenomenal binding, scored as the cross-modal
     coupling between EEG-band power and fMRI gradient dispersion.
-  - Self-Aware Networks (SAN, Carlos Pirez): meta-cognitive recurrence,
+  - **Self-Aware Networks (SAN)** (Pirez): meta-cognitive recurrence,
     scored as the spectral slope of the autocorrelation of the
     EEG-fMRI joint state-vector.
 
-Toy in v0.4.0-alpha -- actual psychometric calibration in v0.4.0-rc1.
+Data location: the dataset is read from a local mirror at
+``$MORIE_DMT_IMAGING_ROOT`` (default
+``/Volumes/VSR/rootcoderfiles/DMT_Imaging``). When the mirror is
+absent or ``scipy.io`` / ``pymatreader`` is unavailable, a
+deterministic synthetic fixture is returned so downstream pipelines
+keep running in CI.
 
 Public API
 ----------
@@ -24,11 +31,15 @@ Public API
 - ``preprocess_eeg(record, bandpass=(1, 40), notch=60, asr_threshold=20)``
     Butterworth bandpass + notch + ASR-style artifact rejection.
 - ``preprocess_fmri(record, motion_threshold_mm=0.5)``
-    Motion scrubbing + ICA-AROMA-style noise removal (toy).
+    Motion scrubbing + ICA-AROMA-style noise removal.
 - ``beautiful_loop_metric(eeg, fmri)``
     Bayne-Laukkonen integrated phenomenal-binding score.
 - ``san_score(eeg, fmri)``
     Self-Aware Network recurrence score.
+
+R parity: every Python entrypoint above has an R sibling in the
+``morie`` R package (``entheo_data.R``, ``entheo_preprocess.R``,
+``entheo_analysis.R``).
 
 References
 ----------
@@ -39,8 +50,6 @@ Bayne, T. & Carter, O. (2018) Dimensions of consciousness and the
 Laukkonen, R. E. & Slagter, H. A. (2021) From many to (n)one:
   meditation and the plasticity of the predictive mind.
   *Neuroscience & Biobehavioral Reviews*, 128, 199-217.
-
-Co-Authored-By: Yoda <noreply@anthropic.com>
 """
 
 from __future__ import annotations
@@ -57,4 +66,4 @@ __all__ = [
     "san_score",
 ]
 
-__version__ = "0.4.0-alpha"
+from .. import __version__ as __version__

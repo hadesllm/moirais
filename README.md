@@ -100,36 +100,36 @@ print(result)
 
 ## What's new in v0.7.0
 
-- 🆕 **Empirical applications paper published** — *Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data* on Zenodo at [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689). Five-paper publication set now complete.
-- 🆕 **`ac` / `vm` terminology locked across all 5 papers** — `ac` (alert complexity) and `vm` (volatility measure of placements, "regional-transition count" alongside) are now the canonical operational terms.
-- 🆕 **DOI + version propagation sweep** — empirical-paper DOI now reaches Sphinx index, `pyproject.toml [project.urls]`, `papers/README.md`, and CITATION.cff. Sphinx install snippets, Docker tag examples, and the in-tree `papers/README.md` were also un-pinned from stale versions.
-- 🆕 **R-package roxygen docs for fast Rcpp kernels** — `morie_mean`, `morie_var`, `morie_cor_pearson`, `morie_normal_pdf`, `morie_fast_available` ship with Rd man pages.
-- 🆕 **R 4.6.0 compatibility** — `DESCRIPTION` carries an explicit `Author:` field alongside `Authors@R:` so `R CMD check` passes on the strict 4.6.0 build.
+- **Empirical applications paper published** — *Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data* on Zenodo at [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689). Five-paper publication set now complete.
+- **`ac` / `vm` terminology locked across all 5 papers** — `ac` (alert complexity) and `vm` (volatility measure of placements, "regional-transition count" alongside) are now the canonical operational terms.
+- **DOI + version propagation sweep** — empirical-paper DOI now reaches Sphinx index, `pyproject.toml [project.urls]`, `papers/README.md`, and CITATION.cff. Sphinx install snippets, Docker tag examples, and the in-tree `papers/README.md` were also un-pinned from stale versions.
+- **R-package roxygen docs for fast Rcpp kernels** — `morie_mean`, `morie_var`, `morie_cor_pearson`, `morie_normal_pdf`, `morie_fast_available` ship with Rd man pages.
+- **R 4.6.0 compatibility** — `DESCRIPTION` carries an explicit `Author:` field alongside `Authors@R:` so `R CMD check` passes on the strict 4.6.0 build.
 
 ## What's new in v0.6.1
 
-- 🆕 **Three replication modules from Laniyonu et al.** — `morie.laniyonu.gentrification_policing()` (Spatial Durbin replication of Laniyonu 2018 *UAR* — gentrification spillover on NYPD SQF), `morie.laniyonu.smi_force_disparity()` (Bayesian-style hierarchical neg-binomial replication of Laniyonu & Goff 2021 *BMC Psych* — police force on persons with serious mental illness), `morie.laniyonu.actuarial_risk_disparity()` (cumulative-logit replication of O'Connell & Laniyonu 2025 *Race & Justice* — Canadian federal-prison risk-assessment bias).
-- 🆕 **Five reusable MRM identification primitives** — `mrm.primitive.gentrification_panel`, `spatial_spillover_decomposition`, `synthetic_area_exposure`, `threshold_specific_ordinal`, `score_net_residual`. The building blocks every future module composes.
-- 🆕 **US + Canadian crime-data adapters** — `morie.datasets.chicago_crime()`, `nyc_stop_and_frisk()`, `bigquery()` (lazy Google-Cloud BigQuery), plus `nibrs()` (FBI Crime Data Explorer), `namus_missing_persons()`, `nist_rds()` (NIST Reference Datasets catalog).
-- 🆕 **Toy bundles for every new dataset** — Chicago crime (50 rows), NYC SQF (40 rows), NIBRS (30 rows), NamUs (20 rows), NIST RDS (10 rows). `offline=True` works on every loader.
-- 🆕 **`morie.fast` opt-in JIT acceleration surface** — drop-in JIT-compiled kernels (`normal_pdf`, `cor_pearson_jit`, `bootstrap_mean_jit`, `trimmed_ipw_weights_jit`, …) + a `jit_if_available` decorator. `pip install morie[fast]` activates Numba; without it, kernels run as pure-numpy. Numerically identical to scipy/numpy (max diff ≤5.55e-17).
-- 🆕 **`ci-numba-bench.yml`** nightly benchmark workflow comparing JIT vs non-JIT paths on every release.
-- 🆕 **Three new BibTeX entries** added to all 4 paper bibliographies: Laniyonu (2018), Laniyonu & Goff (2021), O'Connell & Laniyonu (2025).
-- 🆕 **Lazy-import fix** in `morie.ingest.__init__` — PEP 562 `__getattr__` for BigQuery uses `importlib.import_module` to avoid the infinite-recursion trap that `from . import bigquery` would create.
+- **Three replication modules from Laniyonu et al.** — `morie.laniyonu.gentrification_policing()` (Spatial Durbin replication of Laniyonu 2018 *UAR* — gentrification spillover on NYPD SQF), `morie.laniyonu.smi_force_disparity()` (Bayesian-style hierarchical neg-binomial replication of Laniyonu & Goff 2021 *BMC Psych* — police force on persons with serious mental illness), `morie.laniyonu.actuarial_risk_disparity()` (cumulative-logit replication of O'Connell & Laniyonu 2025 *Race & Justice* — Canadian federal-prison risk-assessment bias).
+- **Five reusable MRM identification primitives** — `mrm.primitive.gentrification_panel`, `spatial_spillover_decomposition`, `synthetic_area_exposure`, `threshold_specific_ordinal`, `score_net_residual`. The building blocks every future module composes.
+- **US + Canadian crime-data adapters** — `morie.datasets.chicago_crime()`, `nyc_stop_and_frisk()`, `bigquery()` (lazy Google-Cloud BigQuery), plus `nibrs()` (FBI Crime Data Explorer), `namus_missing_persons()`, `nist_rds()` (NIST Reference Datasets catalog).
+- **Toy bundles for every new dataset** — Chicago crime (50 rows), NYC SQF (40 rows), NIBRS (30 rows), NamUs (20 rows), NIST RDS (10 rows). `offline=True` works on every loader.
+- **`morie.fast` opt-in JIT acceleration surface** — drop-in JIT-compiled kernels (`normal_pdf`, `cor_pearson_jit`, `bootstrap_mean_jit`, `trimmed_ipw_weights_jit`, …) + a `jit_if_available` decorator. `pip install morie[fast]` activates Numba; without it, kernels run as pure-numpy. Numerically identical to scipy/numpy (max diff ≤5.55e-17).
+- **`ci-numba-bench.yml`** nightly benchmark workflow comparing JIT vs non-JIT paths on every release.
+- **Three new BibTeX entries** added to all 4 paper bibliographies: Laniyonu (2018), Laniyonu & Goff (2021), O'Connell & Laniyonu (2025).
+- **Lazy-import fix** in `morie.ingest.__init__` — PEP 562 `__getattr__` for BigQuery uses `importlib.import_module` to avoid the infinite-recursion trap that `from . import bigquery` would create.
 
 ## What's new in v0.5.0
 
-- 🆕 **Any-dataset support** — bring your own column names. `morie.schema.infer_mapping(your_df, canonical=...)` fuzzy-matches your columns onto morie's canonical schema; pass the dict to `apply_mapping` and your data flows through every module without renaming. CLI users get `morie run-module ... --columns my_wt:weight,drinks_yn:alcohol_past12m`.
-- 🆕 **9-locale CLI** — `MORIE_LOCALE=es|de|zh|pt|ja|ar|hi morie ...` plus the existing EN + FR. Methodology docs stay English; CLI surface is multilingual.
-- 🆕 **No-code dataset shortcuts** — `morie pull tps-major --year 2024 --out file.csv` writes the entire Toronto Police "Major Crime" feed to disk in one line. No Python, no API URLs, no SQL. Also: `morie pull tps-shootings`, `morie pull tps-homicide`, `morie pull cpads`, `morie pull otis-a01-toy`, `morie pull siu-toy`, `morie pull tps-layers`.
-- 🆕 **[`TUTORIAL.md`](https://github.com/hadesllm/morie/blob/main/TUTORIAL.md)** — your first analysis, no Python knowledge required. Copy-paste five commands and you have 13 CSVs explained.
-- 🆕 **Python facade** — `import morie.datasets as md; df = md.tps_major_crime(year=2024)` for users who want to script.
-- 🆕 **Open-data adapters** — `morie ingest ckan/tps/siu` pulls feeds from CKAN portals (open.canada.ca, data.gov.uk, etc.), Toronto Police Service ArcGIS layers, and Special Investigations Unit director's-reports directly into pandas. See `morie.ingest.{ckan,tps,siu}`.
-- 🆕 **Synthetic CPADS bundled** — `morie run-module power-design` works on a fresh install with no manual download; emits a clear "synthetic data" warning so toy outputs aren't mistaken for real findings.
-- 🆕 **[`INSTALLATION.md`](https://github.com/hadesllm/morie/blob/main/INSTALLATION.md)** walkthrough covering all 5 install channels with platform-specific notes (PEP 668 on Debian, python 3.13 segfault on Raspberry Pi OS, Windows).
-- 🆕 **[`papers/`](https://github.com/hadesllm/morie/tree/main/papers)** allowlisted JSS paper sources in-tree (5 papers; no emails or drafts).
-- 🆕 Sphinx **"Edit on GitHub"** link in the sidebar so readers can suggest doc changes in one click.
-- 🆕 `anova_oneway` backwards-compat alias + `gibbons_chakraborti` rename (from v0.4.14, carried forward).
+- **Any-dataset support** — bring your own column names. `morie.schema.infer_mapping(your_df, canonical=...)` fuzzy-matches your columns onto morie's canonical schema; pass the dict to `apply_mapping` and your data flows through every module without renaming. CLI users get `morie run-module ... --columns my_wt:weight,drinks_yn:alcohol_past12m`.
+- **9-locale CLI** — `MORIE_LOCALE=es|de|zh|pt|ja|ar|hi morie ...` plus the existing EN + FR. Methodology docs stay English; CLI surface is multilingual.
+- **No-code dataset shortcuts** — `morie pull tps-major --year 2024 --out file.csv` writes the entire Toronto Police "Major Crime" feed to disk in one line. No Python, no API URLs, no SQL. Also: `morie pull tps-shootings`, `morie pull tps-homicide`, `morie pull cpads`, `morie pull otis-a01-toy`, `morie pull siu-toy`, `morie pull tps-layers`.
+- **[`TUTORIAL.md`](https://github.com/hadesllm/morie/blob/main/TUTORIAL.md)** — your first analysis, no Python knowledge required. Copy-paste five commands and you have 13 CSVs explained.
+- **Python facade** — `import morie.datasets as md; df = md.tps_major_crime(year=2024)` for users who want to script.
+- **Open-data adapters** — `morie ingest ckan/tps/siu` pulls feeds from CKAN portals (open.canada.ca, data.gov.uk, etc.), Toronto Police Service ArcGIS layers, and Special Investigations Unit director's-reports directly into pandas. See `morie.ingest.{ckan,tps,siu}`.
+- **Synthetic CPADS bundled** — `morie run-module power-design` works on a fresh install with no manual download; emits a clear "synthetic data" warning so toy outputs aren't mistaken for real findings.
+- **[`INSTALLATION.md`](https://github.com/hadesllm/morie/blob/main/INSTALLATION.md)** walkthrough covering all 5 install channels with platform-specific notes (PEP 668 on Debian, python 3.13 segfault on Raspberry Pi OS, Windows).
+- **[`papers/`](https://github.com/hadesllm/morie/tree/main/papers)** allowlisted JSS paper sources in-tree (5 papers; no emails or drafts).
+- Sphinx **"Edit on GitHub"** link in the sidebar so readers can suggest doc changes in one click.
+- `anova_oneway` backwards-compat alias + `gibbons_chakraborti` rename (from v0.4.14, carried forward).
 
 ## Documentation
 

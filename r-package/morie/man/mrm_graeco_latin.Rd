@@ -18,15 +18,22 @@ Named list with anova, n, interpretation.
 Graeco-Latin square four-way ANOVA (row, col, Latin, Greek)
 }
 \examples{
-# 4 x 4 Graeco-Latin: two orthogonal Latin squares overlaid.
+# Hardcoded 4 x 4 orthogonal Graeco-Latin square (two random Latin
+# squares are generally NOT orthogonal, so we use a known pair):
+L <- matrix(c("A","B","C","D",
+              "B","A","D","C",
+              "C","D","A","B",
+              "D","C","B","A"), nrow = 4L, byrow = TRUE)
+G <- matrix(c("a","b","c","d",
+              "c","d","a","b",
+              "d","c","b","a",
+              "b","a","d","c"), nrow = 4L, byrow = TRUE)
 set.seed(2026)
-L <- mrm_random_latin(4, seed = 2026)
-G <- mrm_random_latin(4, seed = 2027)
 df <- expand.grid(row = paste0("R", 1:4), col = paste0("C", 1:4))
 df$latin <- as.vector(L)
 df$greek <- as.vector(G)
 df$y <- match(df$latin, LETTERS) * 1.2 +
-  match(df$greek, LETTERS) * 0.5 + rnorm(16, 0, 0.3)
+  match(df$greek, letters) * 0.5 + rnorm(16, 0, 0.3)
 res <- mrm_graeco_latin(df, response_col = "y",
                         row_col = "row", col_col = "col",
                         latin_col = "latin", greek_col = "greek")

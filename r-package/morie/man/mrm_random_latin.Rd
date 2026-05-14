@@ -12,14 +12,16 @@ mrm_random_latin(k, seed = 42L)
 \item{seed}{RNG seed.}
 }
 \value{
-A k x k matrix with row names R1..Rk and column names C1..Ck.
+A k x k integer matrix (codes 0..k-1) with row names
+R1..Rk and column names C1..Ck. Each code appears exactly once
+per row and per column.
 }
 \description{
 Builds the cyclic Latin square then permutes rows, columns,
 and symbols.  Uniform over a subset of Latin squares (not all).
 }
 \examples{
-# 4 x 4 random Latin square: each of {A, B, C, D} appears once
+# 4 x 4 random Latin square: each of {0, 1, 2, 3} appears once
 # per row and per column.
 mrm_random_latin(k = 4, seed = 42L)
 

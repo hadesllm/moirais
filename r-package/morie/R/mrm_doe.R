@@ -135,10 +135,12 @@ mrm_rcbd <- function(data, response_col, treatment_col, block_col) {
 #' @return Named list with anova, n, k, interpretation.
 #' @examples
 #' # 4 x 4 Latin square: each treatment appears once per row and column.
-#' set.seed(2026)
+#' # `mrm_random_latin()` returns integer codes 0..k-1; convert to
+#' # letters for a more readable example.
 #' sq <- mrm_random_latin(k = 4, seed = 2026)
 #' df <- expand.grid(row = paste0("R", 1:4), col = paste0("C", 1:4))
-#' df$treatment <- as.vector(sq)
+#' df$treatment <- LETTERS[as.integer(as.vector(sq)) + 1L]
+#' set.seed(2026)
 #' df$y <- match(df$treatment, LETTERS) * 1.5 + rnorm(16, 0, 0.4)
 #' res <- mrm_latin_square(df, response_col = "y",
 #'                         row_col = "row", col_col = "col",
@@ -174,15 +176,22 @@ mrm_latin_square <- function(data, response_col, row_col, col_col,
 #' @param response_col,row_col,col_col,latin_col,greek_col Column names.
 #' @return Named list with anova, n, interpretation.
 #' @examples
-#' # 4 x 4 Graeco-Latin: two orthogonal Latin squares overlaid.
+#' # Hardcoded 4 x 4 orthogonal Graeco-Latin square (two random Latin
+#' # squares are generally NOT orthogonal, so we use a known pair):
+#' L <- matrix(c("A","B","C","D",
+#'               "B","A","D","C",
+#'               "C","D","A","B",
+#'               "D","C","B","A"), nrow = 4L, byrow = TRUE)
+#' G <- matrix(c("a","b","c","d",
+#'               "c","d","a","b",
+#'               "d","c","b","a",
+#'               "b","a","d","c"), nrow = 4L, byrow = TRUE)
 #' set.seed(2026)
-#' L <- mrm_random_latin(4, seed = 2026)
-#' G <- mrm_random_latin(4, seed = 2027)
 #' df <- expand.grid(row = paste0("R", 1:4), col = paste0("C", 1:4))
 #' df$latin <- as.vector(L)
 #' df$greek <- as.vector(G)
 #' df$y <- match(df$latin, LETTERS) * 1.2 +
-#'   match(df$greek, LETTERS) * 0.5 + rnorm(16, 0, 0.3)
+#'   match(df$greek, letters) * 0.5 + rnorm(16, 0, 0.3)
 #' res <- mrm_graeco_latin(df, response_col = "y",
 #'                         row_col = "row", col_col = "col",
 #'                         latin_col = "latin", greek_col = "greek")
@@ -497,9 +506,11 @@ mrm_perm_block <- function(data, response_col, treatment_col, block_col,
 #'
 #' @param k Side length.
 #' @param seed RNG seed.
-#' @return A k x k matrix with row names R1..Rk and column names C1..Ck.
+#' @return A k x k integer matrix (codes 0..k-1) with row names
+#'   R1..Rk and column names C1..Ck. Each code appears exactly once
+#'   per row and per column.
 #' @examples
-#' # 4 x 4 random Latin square: each of {A, B, C, D} appears once
+#' # 4 x 4 random Latin square: each of {0, 1, 2, 3} appears once
 #' # per row and per column.
 #' mrm_random_latin(k = 4, seed = 42L)
 #'

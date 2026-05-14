@@ -31,9 +31,9 @@ languages:
 - r
 - bash
 - cpp
-- markdown
 - toml
 - yaml
+# markdown removed 2026-05-13: LSP timed out at 235s and killed Serena init
 
 # list of additional paths to ignore in this project.
 # Same syntax as gitignore, so you can use * and **.

@@ -6,6 +6,11 @@
 #' @param period Seasonal period. Default 12.
 #' @return Named list with \code{trend, seasonal, residual, slope,
 #'   intercept, fourier_terms, period, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 prophet_components <- function(x, period = 12) {
   y <- as.numeric(x); n <- length(y)

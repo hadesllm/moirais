@@ -10,6 +10,11 @@
 #' @param y Numeric response.
 #' @param degree Polynomial degree.
 #' @return Named list: estimate, se, feature_names, degree, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 polynomial_regression <- function(x, y, degree = 2L) {
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)

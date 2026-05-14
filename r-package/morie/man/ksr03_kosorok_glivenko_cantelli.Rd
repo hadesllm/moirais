@@ -21,6 +21,12 @@ Named list with statistic, p_value, n, method.
 sup_t |F_n(t) - F(t)| under a hypothesised CDF F.  By
 Glivenko-Cantelli the statistic -> 0 a.s. when F is correct.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 2.
 }

@@ -18,3 +18,9 @@ Replaces pooled ranks with Blom-approximated normal scores
 a_i = qnorm((R_i - 3/8) / (N + 1/4)).  Statistic T = sum of
 scores from the first sample.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

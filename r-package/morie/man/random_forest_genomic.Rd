@@ -39,6 +39,12 @@ list(estimate, y_hat, oob_score, feature_importance, se, n, method).
 Uses randomForest if available; otherwise a base-R bagged-tree
 fallback (regression CART approximation).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Breiman (2001); Montesinos Lopez Ch 8.
 }

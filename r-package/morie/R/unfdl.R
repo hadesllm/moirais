@@ -11,6 +11,11 @@
 #' @param tol Convergence tolerance.
 #' @return Named list with `X`, `Y`, `stress`, `k`, `n_resp`, `n_stim`,
 #'   `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 unfdl <- function(x, k = 2L, n_iter = 100L, tol = 1e-6) {
   P <- if (is.matrix(x)) x else stop("x must be a matrix")

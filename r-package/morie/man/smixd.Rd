@@ -24,6 +24,12 @@ Y = X beta + delta + eps,
 delta ~ N(0, sigma2 R_phi),  R_phi exponential,
 eps ~ N(0, tau2 I).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Patterson & Thompson (1971); Schabenberger & Gotway (2005), Ch 5.
 }

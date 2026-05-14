@@ -23,4 +23,10 @@ Brute-force 1-D cutting-point search that maximises classification
 of a binary vote vector. Reports PRE (proportional reduction in
 error) against the modal-class baseline.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

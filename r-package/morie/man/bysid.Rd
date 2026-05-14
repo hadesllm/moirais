@@ -37,4 +37,10 @@ Named list with \code{x_mean}, \code{x_sd}, \code{x_ci}, \code{alpha}, \code{bet
 Metropolis-within-Gibbs surrogate for Clinton-Jackman-Rivers (2004)
 with N(0,1) prior on x and N(0, 5) priors on (alpha, beta).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

@@ -13,6 +13,11 @@
 #' @return Named list with estimate, normal_approx, edgeworth_correction,
 #'   cornish_fisher_correction, skew, p1z, z, p, n, method.
 #' @importFrom stats dnorm pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzedg <- function(x, z = 1.96, p = 0.5) {
   x <- as.numeric(x); n <- length(x)

@@ -10,6 +10,11 @@
 #' @param coords Coordinate matrix.
 #' @return Named list: estimate, se, sigma2, tau2, phi, n, method.
 #' @references Patterson & Thompson (1971); Schabenberger & Gotway (2005), Ch 5.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 smixd <- function(x, y, coords) {
   X <- as.matrix(x); y <- as.numeric(y); n <- length(y)

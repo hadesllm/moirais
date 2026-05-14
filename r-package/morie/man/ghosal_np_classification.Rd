@@ -32,3 +32,9 @@ Named list with estimate, p_hat, accuracy, length_scale, n, method.
 \description{
 Probit-GP classifier (Laplace approximation).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

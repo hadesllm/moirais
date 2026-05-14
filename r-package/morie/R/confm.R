@@ -11,6 +11,11 @@
 #' @return Named list: estimate (accuracy), accuracy, confusion_matrix,
 #'   labels, precision, recall, f1, macro_precision, macro_recall,
 #'   macro_f1, weighted_f1, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 confusion_matrix_metrics <- function(y_true, y_pred, labels = NULL) {
   yt <- as.character(y_true); yp <- as.character(y_pred)

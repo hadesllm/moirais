@@ -16,3 +16,9 @@
 \value{
   Named list: 't', 'df', 'p_value', 'ci'.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

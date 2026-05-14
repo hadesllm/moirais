@@ -23,4 +23,10 @@ per-roll-call marginals, and the Poole-Rosenthal "lopsided"
 (>=97.5\%) share. Accepts Poole-Rosenthal codes (1, 2, 3 = yea;
 4, 5, 6 = nay; 0, 7, 8, 9 = absent) and re-maps automatically.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

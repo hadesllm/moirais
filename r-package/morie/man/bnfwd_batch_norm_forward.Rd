@@ -27,6 +27,12 @@ R parity for \code{morie.fn.bnfwd.batch_norm_forward}.
 \details{
 \deqn{y_i = \gamma\,\frac{x_i - \mu}{\sqrt{\sigma^2 + \epsilon}} + \beta}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Ioffe & Szegedy (2015), ICML.
 }

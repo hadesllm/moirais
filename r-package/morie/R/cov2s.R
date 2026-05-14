@@ -10,6 +10,11 @@
 #' @param y Numeric vector (second sample).
 #' @return Named list: block_freq, block_prop, expected_prop, m, n,
 #'   cumulative, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 two_sample_coverage <- function(x, y) {
   x <- as.numeric(x); y <- as.numeric(y)

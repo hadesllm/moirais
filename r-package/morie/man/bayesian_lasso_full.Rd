@@ -38,6 +38,12 @@ list(estimate, beta, intercept, se, beta_se, lam, sigma2, n_iter, n, p, method).
 \description{
 Bayesian LASSO (Park & Casella 2008 short Gibbs)
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Park & Casella (2008) JASA 103:681. Montesinos Lopez Ch 4.
 }

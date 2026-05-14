@@ -6,6 +6,11 @@
 #' @param betas Numeric vector of smoothness exponents (default seq(0.5, 3, length.out = 11)).
 #' @param d Integer dimension (default 1).
 #' @return Named list with estimate, betas, rates, best_beta, n, d, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_adaptation <- function(x, betas = NULL, d = 1) {
   n <- length(x)

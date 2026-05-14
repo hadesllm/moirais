@@ -12,6 +12,11 @@
 #' @return Named list: estimate (n by k list), se, bandwidth, kernel,
 #'   n, method.
 #' @references Brunsdon, Fotheringham & Charlton (1996).
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 gwreg <- function(x, y, coords, bandwidth = NULL, kernel = "gaussian") {
   X <- as.matrix(x); y <- as.numeric(y); n <- length(y)

@@ -13,6 +13,11 @@
 #' @param max_iter Newton iterations cap (default 100).
 #' @return Named list with estimate, se, n, method.
 #' @references Kosorok (2008), Ch 8.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr19_kosorok_cox_partial_likelihood <- function(x, t, event,
                                                   tol = 1e-10,

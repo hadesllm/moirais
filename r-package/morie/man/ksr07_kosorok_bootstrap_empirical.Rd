@@ -33,6 +33,12 @@ Named list with estimate, se, n, method.
 G_n^\emph{(f) = sqrt(n)(P_n^} - P_n)(f).  Monte-Carlo bootstrap of the
 sample mean; returns mean/SD of G_n^* across B replications.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 10.
 }

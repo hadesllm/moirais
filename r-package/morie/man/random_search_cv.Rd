@@ -42,3 +42,9 @@ sampled_scores, n_iter, task, n, method.
 \description{
 Uses \code{caret::train} with \code{search = "random"}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

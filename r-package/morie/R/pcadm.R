@@ -10,6 +10,11 @@
 #' @return Named list: estimate, components, explained_variance,
 #'   explained_variance_ratio, singular_values, scores, n_components,
 #'   n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 pca_dimension_reduction <- function(x, n_components = NULL, seed = 0L) {
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)

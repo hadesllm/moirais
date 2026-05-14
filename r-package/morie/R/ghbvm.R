@@ -12,6 +12,11 @@
 #'   (default) behaviour is unchanged.
 #' @return Named list with estimate, se, theta_hat, z_ks_stat, z_ks_pvalue,
 #'   wald, wald_pvalue, n, B, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_bernstein_von_mises <- function(x, theta0 = NULL, B = 500, seed = 0,
                                          deterministic_seed = NULL) {

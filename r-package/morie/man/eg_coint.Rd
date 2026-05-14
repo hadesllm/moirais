@@ -19,3 +19,9 @@ Named list with \code{adf_statistic, p_value, beta, n, method}.
 \description{
 Engle-Granger two-step cointegration test
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

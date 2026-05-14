@@ -18,6 +18,11 @@
 #' @return Named list \code{(elbo, estimate, loss, recon_loss,
 #'   kl_divergence, method)}.
 #' @references Kingma & Welling (2014), ICLR.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 vaenc_vae_elbo <- function(x, x_recon, mu, log_var, reduction = "mean") {
   x <- as.array(x); x_recon <- as.array(x_recon)

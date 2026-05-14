@@ -11,6 +11,11 @@
 #' @return Named list with estimate (sub-list bins, gamma, n_pairs),
 #'   n, method.
 #' @references Matheron (1962); Schabenberger & Gotway (2005), Ch 3.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 vrgm <- function(x, coords, n_bins = 10, max_dist = NULL) {
   x <- as.numeric(x); n <- length(x)

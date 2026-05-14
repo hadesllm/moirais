@@ -26,6 +26,12 @@ n, method.
 \deqn{\hat\gamma(h) = \frac{1}{2|N(h)|}
        \sum_{(i,j) \in N(h)} (Z(s_i) - Z(s_j))^2}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Matheron (1962); Schabenberger & Gotway (2005), Ch 3.
 }

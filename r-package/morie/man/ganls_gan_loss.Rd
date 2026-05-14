@@ -29,6 +29,12 @@ so \code{D_loss = -V(D)}.  Two generator objectives are supported:
 \code{kind="minimax"} (\code{G_loss = E[log(1 - D(G(z)))]}) and
 \code{kind="nonsaturating"} (\code{G_loss = -E[log D(G(z))]}).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Goodfellow et al. (2014), NeurIPS.
 }

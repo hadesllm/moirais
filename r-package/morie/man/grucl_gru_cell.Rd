@@ -54,6 +54,12 @@ R parity for \code{morie.fn.grucl.gru_cell}.  Gates stacked as
 \deqn{z, r = \sigma(\ldots); \quad n = \tanh(W_n x + r \odot U_n h); \quad
       h = (1 - z) \odot n + z \odot h_\text{prev}}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Cho et al. (2014), EMNLP.
 }

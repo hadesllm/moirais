@@ -23,6 +23,12 @@ list(estimate, alpha, beta, K, f_hat, se, h, n, method).
 \description{
 RKHS regression with Gaussian kernel
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Gianola & van Kaam (2008). Montesinos Lopez Ch 5.
 }

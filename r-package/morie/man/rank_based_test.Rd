@@ -16,3 +16,9 @@ Named list: statistic (tau), p_value, n, inversions, z.
 Kendall tau between the observation and its time index t = 1..n.
 Tests H0: no monotone trend.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -5,6 +5,11 @@
 #' @inheritParams garch_fit
 #' @return Named list with \code{omega, alpha, gamma, beta, persistence,
 #'   loglik, conditional_variance, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 tgarch_model <- function(x) {
   r <- as.numeric(x) - mean(as.numeric(x)); n <- length(r)

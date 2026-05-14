@@ -21,3 +21,9 @@ Polynomial feature expansion + OLS via \code{stats::poly} +
 \code{stats::lm}.  Uses raw (not orthogonal) polynomials for parity
 with scikit-learn's PolynomialFeatures.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

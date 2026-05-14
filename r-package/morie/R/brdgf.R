@@ -17,6 +17,11 @@
 #'   (default) behaviour is unchanged.
 #' @return list(estimate, beta, beta_se, sigma_j2, sigma2, n_iter, n, p, method).
 #' @references Meuwissen-Hayes-Goddard (2001) Genetics 157:1819.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 bayes_ridge_gibbs <- function(x, y, n_iter = 200, burn = 50,
                                df0 = 4, S0 = NULL, seed = 0,

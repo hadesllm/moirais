@@ -12,6 +12,11 @@
 #' @return list(estimate, sigma_g2, sigma_e2, h2, sigma_m2_vanraden,
 #'   sigma_m2_naive, sum_2pq, p_freq, n, p, method).
 #' @references VanRaden (2008); Montesinos Lopez Ch 3.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 marker_variance <- function(x, y, markers) {
   y <- as.numeric(y); n <- length(y)

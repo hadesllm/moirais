@@ -9,6 +9,11 @@
 #' @param seed Seed.
 #' @return list(estimate, r_per_fold, y_hat, mse, mspe, slope, n, K, method).
 #' @references Montesinos Lopez Ch 2.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 genomic_cross_validation <- function(x, y, K = 5, lam = 1.0, seed = 0) {
   set.seed(seed)

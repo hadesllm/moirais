@@ -13,6 +13,11 @@
 #' @param P0 Initial state covariance.
 #' @return Named list with \code{state, state_cov, innovations,
 #'   innovation_variance, loglik, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 kalman_filter <- function(x, F = NULL, H = NULL, Q = NULL, R = NULL,
                           x0 = NULL, P0 = NULL) {

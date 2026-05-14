@@ -14,6 +14,11 @@
 #' @return Named list: estimate, train_accuracy, root_feature, root_threshold,
 #'   root_impurity, n_leaves, feature_importances, criterion, n, method.
 #' @importFrom stats predict
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 decision_tree_split <- function(x, y, criterion = "gini", max_depth = 30L,
                                  seed = 0L) {

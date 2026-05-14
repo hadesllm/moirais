@@ -25,3 +25,9 @@ Named list with \code{estimate}, \code{reference_ols},
 theta := theta - lr * (2/n) X' (X theta - y), intercept included.
 Validates against \code{stats::lm} reference.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

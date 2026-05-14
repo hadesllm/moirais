@@ -9,6 +9,11 @@
 #' @param K Integer number of bootstrap draws (default 200).
 #' @param seed Integer RNG seed (default 0).
 #' @return Named list with estimate, ks_mean, ks_se, schwartz_bound, n, eps, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_posterior_consistency <- function(x, ref_loc = NULL, ref_scale = NULL,
                                            eps = 0.1, K = 200, seed = 0) {

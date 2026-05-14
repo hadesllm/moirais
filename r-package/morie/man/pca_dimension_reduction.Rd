@@ -21,3 +21,9 @@ n, method.
 \description{
 Wraps \code{stats::prcomp}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

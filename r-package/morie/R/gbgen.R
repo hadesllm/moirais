@@ -13,6 +13,11 @@
 #' @param seed Seed.
 #' @return list(estimate, y_hat, train_loss, se, n, method).
 #' @references Friedman (2001); Montesinos Lopez Ch 9.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 gradient_boosting_genomic <- function(x, y, markers, n_estimators = 100,
                                        learning_rate = 0.1, max_depth = 3,

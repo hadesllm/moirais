@@ -23,4 +23,10 @@ Named list with estimate, se, S_hat, t, h, n, method.
 Kernel-smoothed MRL \eqn{m(t)=E[X-t|X>t]} with Yang (1978)
 asymptotic SE.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

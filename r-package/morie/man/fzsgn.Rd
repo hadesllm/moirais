@@ -25,4 +25,10 @@ Named list with statistic, z, p_value, theta0, h, n, method.
 \eqn{S_n=\sum_i \Phi((X_i-\theta_0)/h)},
 z = (S_n - n/2)/sqrt(n/4) ~ N(0,1).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

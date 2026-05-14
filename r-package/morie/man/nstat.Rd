@@ -24,6 +24,12 @@ n, method.
 C(s_i, s_j) = sigma(s_i) sigma(s_j) rho(s_i, s_j) with kernel-weighted
 local moments and standardised residual correlations.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Sampson & Guttorp (1992); Schabenberger & Gotway (2005), Ch 8.
 }

@@ -8,6 +8,11 @@
 #' @param event Integer/logical vector (1 = event, 0 = censored).
 #' @return Named list with estimate, se, n, method.
 #' @references Kosorok (2008), Ch 8.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr18_kosorok_nelson_aalen <- function(t, event) {
   t <- as.numeric(t); event <- as.integer(event)

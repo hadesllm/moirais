@@ -12,6 +12,11 @@
 #' @return Named list: estimate (C, spatial_bins, temporal_bins, counts),
 #'   n, method.
 #' @references Cressie & Huang (1999); Schabenberger & Gotway (2005), Ch 8.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 stacv <- function(x, coords, times,
                   n_spatial_bins = 6, n_temporal_bins = 6,

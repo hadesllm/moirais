@@ -8,6 +8,11 @@
 #' @param y Ignored (API parity).
 #' @return Named list with estimate, se, n, method.
 #' @references Kosorok (2008), Ch 7.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr15_kosorok_one_step_estimator <- function(x, y = NULL) {
   x <- as.numeric(x)

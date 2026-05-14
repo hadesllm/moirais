@@ -12,6 +12,11 @@
 #' @param adjust One of `"bonferroni"`, `"none"`.
 #' @return Named list: statistic, p_value, p_adjusted, n, k, control_n.
 #' @importFrom stats wilcox.test p.adjust
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 control_comparison <- function(groups, control_index = 1L,
                                 adjust = c("bonferroni", "none")) {

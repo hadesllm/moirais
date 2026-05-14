@@ -9,6 +9,11 @@
 #' @return Named list with estimate (mean efficient score),
 #'   se (residual sd), n, method.
 #' @references Kosorok (2008), Ch 6.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr11_kosorok_efficient_score <- function(x, y) {
   x <- as.numeric(x); y <- as.numeric(y)

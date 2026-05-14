@@ -302,6 +302,11 @@ estimate_gate <- function(data, treatment, outcome, covariates,
 #' @inheritParams estimate_aipw
 #' @param meta_learner `"t_learner"` (default) or `"s_learner"`.
 #' @return Numeric vector of per-unit CATE estimates.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 estimate_cate <- function(data, treatment, outcome, covariates,
                           propensity_col = NULL,
@@ -465,6 +470,11 @@ e_value <- function(rr, rr_lower = NULL) {
 #'   (may differ in length from `treated` for unmatched designs).
 #' @param gamma_range Numeric vector of \eqn{\Gamma} values to test.
 #' @return Data frame with columns: `gamma`, `p_lower`, `p_upper`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 #' @references
 #'   Rosenbaum PR (2002). *Observational Studies* (2nd ed.). Springer.

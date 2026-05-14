@@ -20,3 +20,9 @@ Number of rows cached (invisible).
 Reads a local file and writes it to the cache so that CI and Docker
 environments (which may lack the original files) can still run tests.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

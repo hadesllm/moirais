@@ -23,4 +23,10 @@ Named list with \code{smoothed}, \code{raw}, \code{sigma_w}, \code{n_periods},
 Kalman + RTS smoother applied to a per-period scalar ideal-point
 series (or a panel of legislators).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

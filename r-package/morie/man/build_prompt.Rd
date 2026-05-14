@@ -16,3 +16,9 @@
   Character string. The composed prompt.
 }
 \keyword{internal}
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

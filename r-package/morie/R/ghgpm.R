@@ -10,6 +10,11 @@
 #' @param noise Optional observation noise sd.
 #' @param x_star Optional matrix of prediction points (defaults to x).
 #' @return Named list with estimate, se, mu, sd, length_scale, nu, noise, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_gp_matern <- function(x, y, nu = 1.5, length_scale = NULL,
                               sigma_f = 1.0, noise = NULL, x_star = NULL) {

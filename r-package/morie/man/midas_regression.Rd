@@ -20,3 +20,9 @@ Named list with \code{beta0, beta1, theta1, theta2, weights,
 \description{
 MIDAS regression with Beta-polynomial weights
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

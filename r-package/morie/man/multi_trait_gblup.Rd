@@ -23,6 +23,12 @@ list(estimate, G_hat, B_hat, Sigma_g, Sigma_e, n, t, method).
 \description{
 Multi-trait GBLUP via vec-stacked mixed-model equations
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Montesinos Lopez Ch 10.
 }

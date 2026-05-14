@@ -9,6 +9,11 @@
 #' @return Named list: statistic (C), cramers_v, chi2, p_value, df,
 #'   max_C, n.
 #' @importFrom stats chisq.test
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 contingency_coefficient <- function(x) {
   X <- as.matrix(x)

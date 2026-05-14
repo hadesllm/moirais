@@ -10,6 +10,11 @@
 #' @return Named list with `estimate`, `se`, `ci_lower`, `ci_upper`,
 #'   `n`, `method`.
 #' @references Armstrong et al. (2014), Ch 2.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 mdvtr <- function(x) {
   x <- as.numeric(x)

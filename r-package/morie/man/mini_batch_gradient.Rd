@@ -33,3 +33,9 @@ loss, n, method.
 \description{
 Mini-batch stochastic gradient descent for OLS (R parity)
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

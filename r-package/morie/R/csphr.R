@@ -10,6 +10,11 @@
 #' @param votes Integer 0/1 vote vector.
 #' @return Named list with `w`, `c`, `midpoint`, `correct_class`, `n`,
 #'   `p`, `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 csphr <- function(x, votes = NULL) {
   X <- if (is.matrix(x)) x else matrix(as.numeric(x), ncol = 1L)

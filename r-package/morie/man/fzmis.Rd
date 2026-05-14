@@ -23,4 +23,10 @@ R_fpp, sigma, n, method.
 With normal-reference plug-in \eqn{R(f'')=3/(8\sqrt\pi \sigma^5)}.
 Returns h_opt minimising MISE.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

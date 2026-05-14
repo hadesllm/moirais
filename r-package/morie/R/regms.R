@@ -9,6 +9,11 @@
 #' @param k_regimes Number of latent regimes. Default 2.
 #' @return Named list with \code{mu, sigma, transition,
 #'   smoothed_probabilities, loglik, n, k_regimes, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 regime_switching <- function(x, k_regimes = 2) {
   y <- as.numeric(x); n <- length(y)

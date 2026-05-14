@@ -11,6 +11,11 @@
 #' @return Named list: estimate, intercept, weights, train_accuracy, C,
 #'   classes, n, method.
 #' @importFrom stats predict
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 svm_hinge_primal <- function(x, y, C = 1.0, seed = 0L) {
   if (!requireNamespace("e1071", quietly = TRUE)) {

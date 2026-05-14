@@ -7,6 +7,11 @@ escape_regex <- function(x) {
 #' @param manifest Data frame to validate.
 #' @param strict If `TRUE`, stop on validation failures.
 #' @return `TRUE` when validation passes.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 validate_outputs_manifest <- function(manifest, strict = TRUE) {
   required <- c("output", "public_path", "size_kb", "modified")
@@ -62,6 +67,11 @@ read_outputs_manifest <- function(project_root = NULL, manifest_path = NULL, val
 #' @param public_prefix Prefix used in `public_path` values.
 #' @param extensions File extensions to include (without dots).
 #' @return Manifest data frame.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 build_outputs_manifest <- function(
   output_dir,
@@ -191,6 +201,11 @@ audit_public_outputs <- function(project_root = NULL, manifest = NULL) {
 #'
 #' @param audit_tbl Result from [audit_public_outputs()].
 #' @return Named list with high-level diagnostics.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 summarize_output_audit <- function(audit_tbl) {
   if (!is.data.frame(audit_tbl)) {

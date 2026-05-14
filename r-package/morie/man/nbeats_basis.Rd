@@ -24,3 +24,9 @@ Named list with \code{forecast, fitted, trend, seasonal,
 \description{
 N-BEATS-style polynomial + Fourier basis-expansion forecasting
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

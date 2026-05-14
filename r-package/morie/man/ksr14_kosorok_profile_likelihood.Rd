@@ -21,6 +21,12 @@ Named list with estimate, se, n, method.
 Y = beta X + eps with eps ~ N(0, sigma^2); profiling sigma^2 gives
 OLS slope with observed-information SE sqrt(sigma2/Sxx).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 7.
 }

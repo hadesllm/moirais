@@ -14,6 +14,11 @@
 #'   (default) behaviour is unchanged.
 #' @return list(estimate, beta, beta_pip, pi, sigma_b2, sigma2, n_iter, n, p, method).
 #' @references Habier-Fernando-Kizilkaya-Garrick (2011); Montesinos Lopez Ch 4.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 bayes_cpi_genomic <- function(x, y, n_iter = 300, burn = 100,
                                pi_init = 0.1, seed = 0,

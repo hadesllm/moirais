@@ -27,4 +27,10 @@ bias and variance:
       \quad \mathrm{Var}=F(t)(1-F(t))/n - 2 h r(K) f(t)/n.}
 For the Gaussian kernel \eqn{\mu_2=1, r(K)=1/(2\sqrt\pi)}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

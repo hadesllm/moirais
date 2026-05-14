@@ -14,6 +14,11 @@
 #' @return Named list: estimate, train_accuracy, n_support, kernel, C,
 #'   gamma, degree, n, method.
 #' @importFrom stats predict
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 svm_kernel_trick <- function(x, y, kernel = "rbf", C = 1.0,
                               gamma = "scale", degree = 3L, seed = 0L) {

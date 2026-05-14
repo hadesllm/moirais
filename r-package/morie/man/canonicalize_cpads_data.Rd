@@ -14,3 +14,9 @@
 \value{
   Data frame with canonical MORIE analysis columns.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -14,6 +14,11 @@
 #'   (default) behaviour is unchanged.
 #' @return Named list with estimate, weights, atoms, effective_K,
 #'   trunc_err_bound, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_stick_breaking_trunc <- function(x, alpha = 1.0, K = 50, seed = 0,
                                           base_mean = NULL, base_sd = NULL,

@@ -8,6 +8,11 @@
 #' @param fs Sampling frequency. Default 1.
 #' @return Named list with \code{frequencies, coherence, n_segments,
 #'   nperseg, fs, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 coherence <- function(x, y, nperseg = NULL, fs = 1) {
   x <- as.numeric(x); y <- as.numeric(y)

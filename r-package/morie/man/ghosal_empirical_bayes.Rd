@@ -17,3 +17,9 @@ Named list with estimate (alpha-hat), K_n, log_lik_at_estimate, n, method.
 \description{
 Empirical-Bayes alpha MLE for a DP, given the observed K_n.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

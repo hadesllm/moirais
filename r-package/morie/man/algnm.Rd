@@ -23,4 +23,10 @@ Named list with \code{estimate}, \code{per_party} (if 2-D), \code{n},
 Rice_p = |\%yea_p - \%nay_p| over a series of roll calls; with a
 \code{party} indicator, averages per-roll-call Rice over each party.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

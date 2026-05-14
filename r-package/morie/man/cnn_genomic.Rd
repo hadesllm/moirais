@@ -38,6 +38,12 @@ list(estimate, y_hat, W_conv, b_conv, W1, b1, w2, b2, se, n, method).
 \description{
 CNN genomic predictor (Conv1D + GAP + dense, base R)
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Montesinos Lopez Ch 13.
 }

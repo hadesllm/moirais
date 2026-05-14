@@ -25,6 +25,12 @@ R parity for \code{morie.fn.mxpol.maxpool_forward}.
 \details{
 \deqn{y[i,j] = \max_{0 \le m,n < k} x[i s + m, j s + n]}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Goodfellow et al. (2016), Deep Learning, Ch 9.3.
 }

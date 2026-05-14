@@ -18,3 +18,9 @@ Named list: statistic, p_value, df, n, grand_median, table.
 Two-sample median test: contingency-table chi-square on the
 counts above/below the pooled-sample median.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

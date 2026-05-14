@@ -21,6 +21,12 @@ Named list with estimate, se, n, method.
 theta_n solves P_n psi(.; theta) = 0 with sandwich variance
 V = solve(A) \%\emph{\% B \%}\% t(solve(A)).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 5.
 }

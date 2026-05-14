@@ -10,6 +10,11 @@
 #' @param x Matrix (n objects rows x k rankers cols); NA = not ranked.
 #' @return Named list: statistic (W), p_value, df, chi2, n, k.
 #' @importFrom stats pchisq
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 concordance_incomplete <- function(x) {
   X <- as.matrix(x)

@@ -35,6 +35,12 @@ list(estimate, y_hat, train_loss, se, n, method).
 \description{
 Uses gbm if available; otherwise base-R boosted stumps.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Friedman (2001); Montesinos Lopez Ch 9.
 }

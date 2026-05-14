@@ -23,4 +23,10 @@ Counts eigenvalues exceeding \code{threshold} on the symmetric matrix
 formed from x (input matrix is used directly if symmetric; else
 uses the column correlation matrix).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

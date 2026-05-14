@@ -9,6 +9,11 @@
 #' @return Named list: statistic (partial tau), p_value, tau_xy,
 #'   tau_xz, tau_yz, z, n.
 #' @importFrom stats cor pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 kendall_tau_partial <- function(x, y, z) {
   x <- as.numeric(x); y <- as.numeric(y); z <- as.numeric(z)

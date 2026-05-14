@@ -10,6 +10,11 @@
 #' @param family Character. Only "gaussian" supported in v0.2.
 #' @return Named list: estimate, se, sigma2, phi, tau2, n, method.
 #' @references Schabenberger & Gotway (2005), Ch 5.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 sglm <- function(x, y, coords, family = "gaussian") {
   if (family != "gaussian")

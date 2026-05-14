@@ -27,4 +27,10 @@ For a symmetric kernel g(x1,x2),
 \eqn{\sigma_1^2 = \mathrm{Var}\, g_1(X)} (Hajek projection),
 \eqn{\mathrm{Var}(U_n) \approx 4\sigma_1^2/n}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

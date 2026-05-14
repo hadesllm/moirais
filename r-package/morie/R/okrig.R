@@ -13,6 +13,11 @@
 #' @param nugget,sill,range_ Variogram parameters.
 #' @return Named list: estimate, se, n, method.
 #' @references Schabenberger & Gotway (2005), Ch 4.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 okrig <- function(x, coords, target, model = "exponential",
                   nugget = 0, sill = 1, range_ = 1) {

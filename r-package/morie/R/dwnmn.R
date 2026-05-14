@@ -10,6 +10,11 @@
 #' @param sigma_w Random-walk innovation SD.
 #' @return Named list with `smoothed`, `raw`, `sigma_w`, `n_periods`,
 #'   `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 dwnmn <- function(x, sigma_w = 0.1) {
   if (is.matrix(x)) {

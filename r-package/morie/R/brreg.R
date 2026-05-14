@@ -9,6 +9,11 @@
 #' @param lam Optional ridge parameter; default Endelman rrBLUP-style.
 #' @return list(estimate, beta, intercept, se, beta_se, lam, n, p, method).
 #' @references Montesinos Lopez Ch 4.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 bayesian_ridge_regression <- function(x, y, lam = NULL) {
   X <- as.matrix(x); y <- as.numeric(y); n <- nrow(X); p <- ncol(X)

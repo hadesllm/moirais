@@ -19,3 +19,9 @@ Helper exposed so testthat can assert the Python and R sides compute
 identical hex digests for the same \verb{(name, seed)} pair before either
 RNG is even consulted.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -8,6 +8,11 @@
 #' @param x Numeric vector.
 #' @return Named list with estimate, n, method.
 #' @references Kosorok (2008), Ch 2.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr06_kosorok_maximal_inequality <- function(x) {
   x <- as.numeric(x)

@@ -28,6 +28,12 @@ Newton-Raphson on
 l(beta) = sum over events of (X_i beta - log sum over j in R(t_i) of exp(X_j beta)).
 Breslow tie handling.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 8.
 }

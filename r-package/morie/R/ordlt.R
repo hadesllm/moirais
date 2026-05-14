@@ -17,6 +17,11 @@
 #'   `E_J`, `Var_J`, `n`, `method`.
 #' @references Gibbons J. D. & Chakraborti S. (2014).  Nonparametric
 #'   Statistical Inference (5th ed.), Ch. 10.6.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ordered_alternatives_test <- function(groups) {
   if (!is.list(groups) || length(groups) < 2L) {

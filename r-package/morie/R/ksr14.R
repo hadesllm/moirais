@@ -9,6 +9,11 @@
 #' @param y Numeric outcome vector.
 #' @return Named list with estimate, se, n, method.
 #' @references Kosorok (2008), Ch 7.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr14_kosorok_profile_likelihood <- function(x, y) {
   x <- as.numeric(x); y <- as.numeric(y)

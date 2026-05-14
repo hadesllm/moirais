@@ -54,6 +54,12 @@ R parity for \code{morie.fn.mhatf.multi_head_attention_full}.
 \deqn{\mathrm{MultiHead}(x) =
       \mathrm{Concat}(\mathrm{head}_1, \ldots, \mathrm{head}_h) W^O}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Vaswani et al. (2017), NeurIPS.
 }

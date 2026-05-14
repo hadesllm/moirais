@@ -10,6 +10,11 @@
 #' @param q Tail fraction in (0, 0.5).  Default 0.25.
 #' @return Named list: statistic, p_value, z, n, m, q.
 #' @importFrom stats pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 percentile_modified_rank <- function(x, y, q = 0.25) {
   x <- as.numeric(x); y <- as.numeric(y)

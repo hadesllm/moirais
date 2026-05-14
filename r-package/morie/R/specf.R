@@ -7,6 +7,11 @@
 #' @param nperseg Segment length. Default max(n/4, 8).
 #' @return Named list with \code{frequencies, psd, n_segments, nperseg,
 #'   fs, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 spectral_density <- function(x, fs = 1, nperseg = NULL) {
   r <- as.numeric(x); n <- length(r)

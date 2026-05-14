@@ -21,6 +21,12 @@ Named list (estimate, g_hat, beta, se, lambda_gblup, n, method).
 \description{
 Solves Henderson's MME with VanRaden G.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Montesinos Lopez Ch 3.
 }

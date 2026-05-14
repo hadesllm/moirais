@@ -28,3 +28,9 @@ Named list with \code{state, state_cov, innovations,
 \description{
 Defaults to a univariate local-level model when matrices are omitted.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -20,3 +20,9 @@ Named list with \code{trend, seasonal, irregular, loglik, n,
 \description{
 Unobserved-components decomposition (trend + seasonal + irregular)
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

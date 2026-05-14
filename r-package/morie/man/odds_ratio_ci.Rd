@@ -15,3 +15,9 @@ Odds ratio and 95\% CI from a 2x2 contingency table.
 \value{
   Named list: 'or', 'ci_lower', 'ci_upper', 'p_value'.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

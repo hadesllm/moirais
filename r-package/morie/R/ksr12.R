@@ -9,6 +9,11 @@
 #' @param y Numeric outcome vector.
 #' @return Named list with estimate, n, method.
 #' @references Kosorok (2008), Ch 6.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr12_kosorok_information_bound <- function(x, y) {
   x <- as.numeric(x); y <- as.numeric(y)

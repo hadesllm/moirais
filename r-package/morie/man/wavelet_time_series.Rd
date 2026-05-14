@@ -20,3 +20,9 @@ Named list with \code{approximation, details, energies, level,
 \description{
 Discrete wavelet decomposition for a time series
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

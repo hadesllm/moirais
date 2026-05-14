@@ -15,3 +15,9 @@
 \value{
   Named list: 'estimate', 'se', 'bias'.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

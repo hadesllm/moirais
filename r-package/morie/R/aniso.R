@@ -13,6 +13,11 @@
 #' @return Named list: statistic, p_value, directional_gamma,
 #'   directions_deg, n, method.
 #' @references Goovaerts (1997); Schabenberger & Gotway (2005), Ch 3.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 aniso <- function(x, coords, n_dirs = 4, tol_deg = 22.5) {
   x <- as.numeric(x); n <- length(x)

@@ -1,6 +1,11 @@
 #' Return the canonical CPADS local-data contract
 #'
 #' @return Named list describing the expected local CPADS contract.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 cpads_contract <- function() {
   list(
@@ -28,6 +33,11 @@ cpads_contract <- function() {
 #' @param data Data frame to validate.
 #' @param strict If `TRUE`, stop when required variables are missing.
 #' @return Character vector of missing variable names.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 validate_cpads_data <- function(data, strict = TRUE) {
   required <- cpads_contract()$required_variables

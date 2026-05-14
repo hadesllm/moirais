@@ -11,6 +11,11 @@
 #'   \code{se}, \code{n}, \code{method}.
 #' @references
 #' Hastie, Tibshirani & Friedman, Elements of Statistical Learning (2009).
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 linear_regression_ols <- function(x, y) {
   if (is.null(dim(x))) x <- matrix(x, ncol = 1)

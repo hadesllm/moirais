@@ -8,6 +8,11 @@
 #' @param x,y Numeric vectors.
 #' @return Named list: statistic (z), p_value, U, n, m.
 #' @importFrom stats wilcox.test median
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 sukhatme_test <- function(x, y) {
   x <- as.numeric(x); y <- as.numeric(y)

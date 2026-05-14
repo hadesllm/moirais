@@ -11,6 +11,11 @@
 #'   (default) behaviour is unchanged.
 #' @return named list with `estimate`, `grid`, `density`, `k_post`, `n`
 #' @importFrom utils head tail
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_dpmixture_density <- function(x, alpha = 1.0, sigma = NULL,
                                        grid = NULL, n_iter = 120, burn = 40,

@@ -32,3 +32,9 @@ Named list with estimate, se, mu, sd, length_scale, noise, n, method.
 \description{
 GP posterior mean with squared-exponential kernel.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

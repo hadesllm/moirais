@@ -26,3 +26,9 @@ root_impurity, n_leaves, feature_importances, criterion, n, method.
 CART tree via \code{rpart::rpart}, returning the root split structure
 and feature importances.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

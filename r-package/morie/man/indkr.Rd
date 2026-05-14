@@ -35,6 +35,12 @@ Named list: estimate, threshold, n, method.
 Encode I_i = 1(x_i <= threshold) and ordinary-krige the indicator
 field at each target s0 to obtain P_hat(Z(s0) <= threshold).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Journel (1983); Schabenberger & Gotway (2005), Ch 4.
 }

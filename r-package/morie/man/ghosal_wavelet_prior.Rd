@@ -21,3 +21,9 @@ Named list with estimate, fitted, noise, sigma, inclusion, n, method.
 \description{
 Haar-wavelet spike-and-slab BayesThresh estimator (Abramovich 1998).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

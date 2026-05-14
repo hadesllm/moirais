@@ -27,6 +27,12 @@ Formula:
 \deqn{I = (n / S_0) \sum_{ij} w_{ij}(x_i - \bar x)(x_j - \bar x)
           / \sum_i (x_i - \bar x)^2}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Cliff & Ord (1981). Schabenberger & Gotway (2005), Ch 1.
 }

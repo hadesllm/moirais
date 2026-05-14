@@ -17,6 +17,11 @@
 #'   \code{"relu"}, \code{"identity"}.
 #' @return Named list \code{(loss, estimate, dW, db, dx, a, z, method)}.
 #' @references Rumelhart, Hinton & Williams (1986); Goodfellow et al. (2016).
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 bkprp_backpropagation <- function(x, y, w = NULL, b = NULL,
                                   activation = "sigmoid") {

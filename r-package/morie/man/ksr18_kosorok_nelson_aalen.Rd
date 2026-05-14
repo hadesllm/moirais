@@ -20,6 +20,12 @@ Named list with estimate, se, n, method.
 \description{
 Lambda_hat(t) = sum over t_i <= t of d_i / Y_i.  Variance: sum d_i/Y_i^2.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 8.
 }

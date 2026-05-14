@@ -8,6 +8,11 @@
 #' @param event Integer/logical (1 = survival event, 0 = censored).
 #' @return Named list with estimate, se, n, method.
 #' @references Kosorok (2008), Ch 8.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr20_kosorok_censoring_survival <- function(t, event) {
   t <- as.numeric(t); event <- as.integer(event)

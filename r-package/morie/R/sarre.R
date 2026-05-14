@@ -10,6 +10,11 @@
 #' @param w Row-standardised n-by-n weights matrix.
 #' @return Named list: estimate, se, lambda, sigma2, n, method.
 #' @references Anselin (1988); Schabenberger & Gotway (2005), Ch 7.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 sarre <- function(x, y, w) {
   X <- as.matrix(x); y <- as.numeric(y); W <- as.matrix(w)

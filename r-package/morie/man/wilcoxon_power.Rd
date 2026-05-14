@@ -26,3 +26,9 @@ Simulates samples of size \code{length(x)} from Normal(effect_size, 1)
 and reports the rejection rate of two-sided wilcox.test at level
 alpha.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

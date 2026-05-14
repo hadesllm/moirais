@@ -37,6 +37,12 @@ Named list: estimate, se, n, method.
 Solve the OK system with point-to-block averaged covariances:
 \deqn{C_{\text{bar}}(s_i, B) = (1/|B|) \int_B C(s_i, u) du.}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Schabenberger & Gotway (2005), Ch 4.
 }

@@ -8,6 +8,11 @@
 #' @param x Numeric vector of sequential observations.
 #' @return Named list: statistic (tau), p_value, n, inversions, z.
 #' @importFrom stats cor.test
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 rank_based_test <- function(x) {
   x <- as.numeric(x)

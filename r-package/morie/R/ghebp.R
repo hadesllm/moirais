@@ -5,6 +5,11 @@
 #' @param x Numeric data vector.
 #' @param alpha_grid Optional numeric grid of alpha values to maximise over.
 #' @return Named list with estimate (alpha-hat), K_n, log_lik_at_estimate, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_empirical_bayes <- function(x, alpha_grid = NULL) {
   x <- as.numeric(x); n <- length(x)

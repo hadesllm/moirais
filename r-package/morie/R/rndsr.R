@@ -17,6 +17,11 @@
 #'   is unchanged: `seed` drives `set.seed()` directly.
 #' @return Named list: estimate, best_params, best_score, sampled_params,
 #'   sampled_scores, n_iter, task, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 random_search_cv <- function(x, y, method = NULL, n_iter = 20L, cv = 5L,
                               task = "auto", seed = 0L,

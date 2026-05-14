@@ -18,3 +18,9 @@ For an ordered sample the coverages U_i = F(X_(i)) - F(X_(i-1))
 are i.i.d. Beta(1, n) under H0.  Returns empirical coverages
 (rank-based) plus the cumulative coverage F(X_(n)) - F(X_(1)).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -28,6 +28,12 @@ For each of \code{n_dirs} directions in [0, pi), select pairs whose connecting
 vector falls within \code{tol_deg} of the direction and apply Levene's test
 across direction groups.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Goovaerts (1997); Schabenberger & Gotway (2005), Ch 3.
 }

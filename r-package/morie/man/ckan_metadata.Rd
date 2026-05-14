@@ -14,3 +14,9 @@
   describing the publishing agency, resource id, and last refresh date.
 }
 \keyword{datasets}
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

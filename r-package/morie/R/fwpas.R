@@ -14,6 +14,11 @@
 #' @return Named list with components \code{z}, \code{a}, \code{estimate}
 #'   (= \code{a}), \code{activation}, \code{method}.
 #' @references Goodfellow, Bengio & Courville (2016), Deep Learning, Ch 6.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fwpas_forward_pass_dense <- function(x, w, b, activation = "sigmoid") {
   x <- as.matrix(x)

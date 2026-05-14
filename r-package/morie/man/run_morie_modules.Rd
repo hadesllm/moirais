@@ -23,3 +23,9 @@ Named list of module outputs.
 \description{
 Run multiple implemented MORIE modules
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -18,6 +18,11 @@
 #' @return Named list: estimate, train_score, oob_score, feature_importances,
 #'   n_estimators, task, n, method.
 #' @importFrom stats predict
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 random_forest_ensemble <- function(x, y, n_estimators = 100L,
                                     max_depth = NULL, task = "auto",

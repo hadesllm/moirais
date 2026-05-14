@@ -21,3 +21,9 @@ Invisibly, the number of CSV files successfully downloaded.
 Downloads large bootstrap weight CSVs that are too big to ship with the
 package. Data is cached in the user cache database for future use.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

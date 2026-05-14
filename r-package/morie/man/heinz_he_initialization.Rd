@@ -45,6 +45,12 @@ R parity for \code{morie.fn.heinz.he_initialization}.
 \details{
 \deqn{W \sim \mathcal{N}\!\left(0, \tfrac{2}{n_{in}}\right)}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 He, Zhang, Ren & Sun (2015), ICCV.
 }

@@ -5,6 +5,11 @@
 #' @param x Numeric univariate series.
 #' @return Named list with \code{filtered_state, filtered_state_variance,
 #'   smoothed_state, loglik, Q, R, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 state_space_model <- function(x) {
   y <- as.numeric(x); n <- length(y)

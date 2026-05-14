@@ -18,3 +18,9 @@ Named list with \code{eigenvalues, trace_stat, crit_values,
 \description{
 Johansen trace test for cointegration
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

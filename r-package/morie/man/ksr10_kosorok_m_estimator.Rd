@@ -26,6 +26,12 @@ Named list with estimate, se, n, method.
 \description{
 theta_n = argmax_theta P_n m(.; theta, eta_n), eta_n = MAD/0.6745.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 5; Huber (1981).
 }

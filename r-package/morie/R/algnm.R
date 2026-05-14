@@ -10,6 +10,11 @@
 #' @param party Optional party label vector (length = n rows of x).
 #' @return Named list with `estimate`, `per_party` (if 2-D), `n`,
 #'   `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 algnm <- function(x, party = NULL) {
   X <- if (is.matrix(x)) x else as.numeric(x)

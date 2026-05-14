@@ -12,6 +12,11 @@
 #' @return Named list with estimate (nugget, sill, range, params,
 #'   converged, model), n, method.
 #' @references Cressie (1985); Schabenberger & Gotway (2005), Ch 3.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 vrgft <- function(x, coords, model = "exponential",
                   n_bins = 10, max_dist = NULL) {

@@ -24,6 +24,12 @@ G_n(f) = sqrt(n) * (P_n - P)(f).  Returns the standardised CLT
 statistic sqrt(n) * (P_n(f) - mu0) plus the empirical L2(P_n)
 standard deviation sigma_n(f).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 2.
 }

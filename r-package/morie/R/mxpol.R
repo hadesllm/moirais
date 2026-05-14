@@ -11,6 +11,11 @@
 #' @param stride Stride (default \code{kernel_size}, non-overlapping).
 #' @return Named list \code{(y, estimate, argmax, output_shape, method)}.
 #' @references Goodfellow et al. (2016), Deep Learning, Ch 9.3.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 mxpol_maxpool_forward <- function(x, kernel_size = 2L, stride = NULL) {
   x <- as.matrix(x)

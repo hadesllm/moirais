@@ -27,4 +27,10 @@ Named list: statistic, p_value, h, n, method.
 \description{
 \eqn{D_n = \sup_t |\hat F_h(t) - F_0(t)|}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

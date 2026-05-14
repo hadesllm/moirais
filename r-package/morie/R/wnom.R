@@ -16,6 +16,11 @@
 #' @param w Optional dimension salience weights (length p; default 1).
 #' @return Named list with `loglik`, `GMP`, `n_correct`, `n_total`,
 #'   `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 wnom <- function(votes, x, z_yea, z_nay, beta = 15, w = NULL) {
   X <- if (is.matrix(x)) x else matrix(as.numeric(x), ncol = 1L)

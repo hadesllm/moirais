@@ -17,3 +17,9 @@ A data.frame, or \code{NULL} if the table does not exist.
 \description{
 Load a table from the MORIE cache
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

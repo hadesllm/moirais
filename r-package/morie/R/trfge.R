@@ -16,6 +16,11 @@
 #'   (default) behaviour is unchanged.
 #' @return list(estimate, y_hat, beta, attention, context, se, n, method).
 #' @references Vaswani et al. (2017). Montesinos Lopez Ch 15.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 transformer_genomic <- function(x, y, markers, d_model = 8, lam = 1, seed = 0,
                                  deterministic_seed = NULL) {

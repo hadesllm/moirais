@@ -14,3 +14,9 @@
 \value{
   Numeric Cramer's V in [0, 1].
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

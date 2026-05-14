@@ -16,3 +16,9 @@ Named list with \code{omega, alpha, gamma, beta, persistence,
 \description{
 GJR-GARCH(1,1) threshold GARCH
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

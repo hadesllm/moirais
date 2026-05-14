@@ -17,3 +17,9 @@ max_C, n.
 C = sqrt(chi^2 / (chi^2 + n)).  Also reports Cramer's V and the
 maximum attainable C = sqrt((min(r,c)-1)/min(r,c)).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

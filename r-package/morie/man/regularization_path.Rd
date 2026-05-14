@@ -31,3 +31,9 @@ n, method.
 Wraps \code{glmnet::glmnet}.  Returns the coefficient path across
 the supplied \code{alphas} (lambda grid in glmnet terminology).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

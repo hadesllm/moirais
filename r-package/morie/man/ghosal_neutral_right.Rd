@@ -21,3 +21,9 @@ Named list with estimate, times, S_post, H_post, c, lam0, n, method.
 \description{
 Neutral-to-the-right posterior survival (Doksum 1974).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

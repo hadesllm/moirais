@@ -25,4 +25,10 @@ Named list with statistic, z, p_value, theta0, h, n, method.
 \eqn{W_n=\sum_i \mathrm{sign}(D_i) R_{\mathrm{smooth}}(|D_i|)},
 z = W_n / sqrt(n(n+1)(2n+1)/6) ~ N(0,1).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

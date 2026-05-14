@@ -10,6 +10,11 @@
 #' @return list(estimate (Pearson r), pearson_r, spearman_rho, mse, mspe,
 #'   rmse, r2, slope, intercept, n, method).
 #' @references Montesinos Lopez Ch 2.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 prediction_accuracy <- function(y_true, y_pred) {
   y_true <- as.numeric(y_true); y_pred <- as.numeric(y_pred)

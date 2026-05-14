@@ -10,6 +10,11 @@
 #'   the sample median.
 #' @return Named list with `estimate`, `mean_R`, `mean_D`, `sd_R`,
 #'   `sd_D`, `pooled_sd`, `n_R`, `n_D`, `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 polrz <- function(x, group = NULL) {
   x <- as.numeric(x); n <- length(x)

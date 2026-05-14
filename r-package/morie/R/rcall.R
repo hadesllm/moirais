@@ -11,6 +11,11 @@
 #' @return Named list with `n`, `m`, `n_yea`, `n_nay`, `n_abs`,
 #'   `marginal_yea`, `marginal_nay`, `pct_yea`, `lopsided_pct`,
 #'   `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 rcall <- function(x) {
   V <- if (is.matrix(x)) x else matrix(as.numeric(x), ncol = 1L)

@@ -19,6 +19,12 @@ Named list with \code{estimate} (intercept + slopes),
 Wraps \code{stats::lm} and returns coefficients plus classical OLS
 standard errors.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Hastie, Tibshirani & Friedman, Elements of Statistical Learning (2009).
 }

@@ -16,3 +16,9 @@ Named list: placements, ranks_y, U_y, E_U, Var_U, m, n.
 For each Y_j: placement P_j = number of X_i less than Y_j.  Their sum is the
 Mann-Whitney U statistic for Y vs X.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

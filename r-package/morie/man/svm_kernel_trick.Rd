@@ -36,3 +36,9 @@ gamma, degree, n, method.
 \description{
 Wraps \code{e1071::svm}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

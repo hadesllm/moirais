@@ -10,6 +10,11 @@
 #' @param tol Convergence tolerance.
 #' @return Named list with `x_hat`, `alpha`, `beta`, `loglik`, `n_iter`,
 #'   `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 irtsp <- function(x, n_iter = 60L, tol = 1e-6) {
   logistic <- function(z) 1 / (1 + exp(-pmin(pmax(z, -30), 30)))

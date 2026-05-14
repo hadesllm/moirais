@@ -31,6 +31,11 @@ NULL
 #' @param seed Non-negative integer seed.
 #' @return An environment with \code{rnorm}, \code{runif}, \code{sample}
 #'   methods that share the same underlying RNG state.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_sync_rng <- function(seed) {
   stopifnot(is.numeric(seed), length(seed) == 1L, seed >= 0,
@@ -52,6 +57,11 @@ morie_sync_rng <- function(seed) {
 #' @param diagonal_bias Mixture weight between diagonal autoregression
 #'   (1) and full off-diagonal coupling (0).
 #' @return A p x p numeric matrix A.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_generate_ar_coefficients <- function(p, rng,
                                             spectral_radius = 0.8,
@@ -75,6 +85,11 @@ morie_generate_ar_coefficients <- function(p, rng,
 #' @param spectral_radius Per-lag target spectral radius.
 #' @param decay Geometric decay rate of spectral radius across lags.
 #' @return A list of length \code{lags}, each a p x p matrix.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_generate_var_coefficients <- function(p, lags, rng,
                                              spectral_radius = 0.8,
@@ -97,6 +112,11 @@ morie_generate_var_coefficients <- function(p, lags, rng,
 #' @param rho Correlation parameter.
 #' @param mean Optional length-p mean vector.
 #' @return An n x p matrix of samples.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_mvn_with_covariance <- function(n, p, rng,
                                        kernel = c("ar1", "independent", "compound", "toeplitz"),

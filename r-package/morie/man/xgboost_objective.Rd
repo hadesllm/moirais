@@ -51,3 +51,9 @@ Wraps the \code{xgboost} package.  If xgboost isn't installed, falls
 back to \code{gbm} (gradient boosting) so users still get a usable
 boosted-trees result; the backend is flagged in the output.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

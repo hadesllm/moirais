@@ -16,3 +16,9 @@ Named list with \code{omega, alpha, beta, persistence, loglik,
 \description{
 \deqn{\sigma_t^2 = \omega + \alpha \epsilon_{t-1}^2 + \beta \sigma_{t-1}^2.}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

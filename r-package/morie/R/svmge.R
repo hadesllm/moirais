@@ -10,6 +10,11 @@
 #' @param gamma RBF kernel scale ("scale" = 1/(m * var(M)) or numeric).
 #' @return list(estimate, y_hat, alpha, support_indices, se, n, method).
 #' @references Vapnik (1995); Montesinos Lopez Ch 7.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 svm_genomic <- function(x, y, markers, C = 1, epsilon = 0.1,
                          gamma = "scale") {

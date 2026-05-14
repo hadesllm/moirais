@@ -32,3 +32,9 @@ Named list with estimate, se, prior_mean, prior_var, n_A, n, alpha, method.
 \description{
 Posterior mean / variance of G(A) for DP(alpha, G0) and A = (A_lower, A_upper].
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -1,6 +1,11 @@
 #' List implemented MORIE CPADS modules
 #'
 #' @return Data frame describing the implemented module surface.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 list_morie_modules <- function() {
   data.frame(
@@ -89,6 +94,11 @@ list_morie_modules <- function() {
 #'
 #' @param data Raw CPADS data frame.
 #' @return Data frame with canonical MORIE analysis columns.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 canonicalize_cpads_data <- function(data) {
   required_raw <- c(
@@ -164,6 +174,11 @@ load_cpads_data <- function(cpads_csv = .cpads_default_csv()) {
 #' @param cpads_csv Path to the CPADS CSV.
 #' @param output_dir Optional directory for CSV outputs.
 #' @return Named list of data-frame outputs.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 run_morie_module <- function(module_name, cpads_csv = .cpads_default_csv(), output_dir = NULL) {
   data <- load_cpads_data(cpads_csv)
@@ -204,6 +219,11 @@ run_morie_module <- function(module_name, cpads_csv = .cpads_default_csv(), outp
 #' @param cpads_csv Path to the CPADS CSV.
 #' @param output_dir Optional directory for CSV outputs.
 #' @return Named list of module outputs.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 run_morie_modules <- function(
   modules = list_morie_modules()$name,

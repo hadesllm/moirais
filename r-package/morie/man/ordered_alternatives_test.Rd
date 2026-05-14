@@ -36,6 +36,16 @@ Normal approximation:
 E_J = (N^2 - sum n_i^2) / 4
 Var_J = (N^2 (2N + 3) - sum n_i^2 (2 n_i + 3)) / 72
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Gibbons J. D. & Chakraborti S. (2014).  Nonparametric
 Statistical Inference (5th ed.), Ch. 10.6.

@@ -19,3 +19,9 @@ Named list with estimate, theta, log_lik, grid, log_density, K, n, method.
 \description{
 Log-spline density estimator (Stone 1990, Ghosal Ch 8).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

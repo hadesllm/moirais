@@ -38,6 +38,12 @@ list(estimate, y_hat, beta, attention, context, se, n, method).
 \description{
 Random fixed projections + ridge head on the mean-pooled context vector.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Vaswani et al. (2017). Montesinos Lopez Ch 15.
 }

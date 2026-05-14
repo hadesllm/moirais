@@ -10,6 +10,11 @@
 #' @param h Bandwidth on log scale; default = Silverman.
 #' @return Named list: estimate, se, S_hat, t, h, n, method.
 #' @importFrom stats median pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzmrb <- function(x, t = NULL, h = NULL) {
   x <- as.numeric(x); n <- length(x)

@@ -15,3 +15,9 @@
 \value{
   Named list: 'W', 'p_value', 'is_normal'.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

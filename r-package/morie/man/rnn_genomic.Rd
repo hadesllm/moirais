@@ -36,6 +36,12 @@ list(estimate, y_hat, W_h, W_x, b_h, w_o, b_o, se, n, method).
 \description{
 Vanilla RNN genomic predictor (BPTT, base R)
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Montesinos Lopez Ch 14.
 }

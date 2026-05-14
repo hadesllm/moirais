@@ -40,3 +40,9 @@ n_estimators, task, n, method.
 Wraps \code{randomForest::randomForest}.  Auto-detects task from y
 (factor / integer-like -> classification, otherwise regression).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -15,6 +15,11 @@
 #' @param kind One of \code{"minimax"} or \code{"nonsaturating"}.
 #' @return Named list \code{(d_loss, g_loss, v, estimate, kind, method)}.
 #' @references Goodfellow et al. (2014), NeurIPS.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ganls_gan_loss <- function(D_real, D_fake, kind = "minimax") {
   D_real <- as.numeric(D_real); D_fake <- as.numeric(D_fake)

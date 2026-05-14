@@ -15,3 +15,9 @@
 \value{
   Named list: 'odds_ratio', 'ci', 'p_value'.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

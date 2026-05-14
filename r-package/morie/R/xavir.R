@@ -16,6 +16,11 @@
 #' @return Named list \code{(weights, value, fan_in, fan_out, mean, std,
 #'   shape, method)}.
 #' @references Glorot & Bengio (2010), AISTATS.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 xavir_xavier_init <- function(fan_in, fan_out, seed = 42L, uniform = TRUE) {
   if (fan_in <= 0 || fan_out <= 0)

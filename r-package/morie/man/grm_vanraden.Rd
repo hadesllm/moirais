@@ -18,6 +18,12 @@ Named list with estimate (G matrix), diag_mean, off_mean, p, n, m, method.
 Computes G = ZZ' / (2 sum p_j(1-p_j)) for method 1 (default), or the
 per-locus-scaled variant for method 2.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 VanRaden (2008) J Dairy Sci 91:4414. Montesinos Lopez Ch 3.
 }

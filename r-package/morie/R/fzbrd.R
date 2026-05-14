@@ -11,6 +11,11 @@
 #' @param c Extrapolation ratio (>1); default 2.
 #' @return Named list with estimate, F_h, F_ch, se, h, c, t, n, method.
 #' @importFrom stats median pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzbrd <- function(x, t = NULL, h = NULL, c = 2) {
   x <- as.numeric(x); n <- length(x)

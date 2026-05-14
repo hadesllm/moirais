@@ -16,6 +16,11 @@
 #'   is unchanged: `seed` drives `set.seed()` directly.
 #' @return Named list: estimate (shape), embedding, kl_divergence,
 #'   perplexity, n_components, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 tsne_reduction <- function(x, n_components = 2L, perplexity = 30,
                             learning_rate = "auto", n_iter = 1000L,

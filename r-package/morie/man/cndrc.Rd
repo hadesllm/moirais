@@ -22,4 +22,10 @@ A Condorcet winner beats every other alternative in pairwise
 majority voting. Returns the index of the Condorcet winner, or -1
 if none exists.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

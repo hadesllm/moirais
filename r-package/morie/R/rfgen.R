@@ -15,6 +15,11 @@
 #' @param seed Seed.
 #' @return list(estimate, y_hat, oob_score, feature_importance, se, n, method).
 #' @references Breiman (2001); Montesinos Lopez Ch 8.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 random_forest_genomic <- function(x, y, markers, n_trees = 100,
                                    max_depth = 10, min_samples = 2,

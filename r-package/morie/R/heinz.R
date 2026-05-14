@@ -17,6 +17,11 @@
 #'   \code{seed} when set.
 #' @return Named list \code{(W, estimate, mean, std, shape, method)}.
 #' @references He, Zhang, Ren & Sun (2015), ICCV.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 heinz_he_initialization <- function(fan_in, fan_out = NULL, seed = 42L,
                                     mode = "normal",

@@ -20,6 +20,12 @@ Named list with estimate, n, method.
 \description{
 "bracketing number for one-sided threshold class"
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 2.
 }

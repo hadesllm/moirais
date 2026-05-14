@@ -19,6 +19,11 @@
 #' @return Named list \code{(output, estimate, heads, num_heads, d_k,
 #'   d_model, method)}.
 #' @references Vaswani et al. (2017), NeurIPS.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 mhatf_multi_head_attention_full <- function(x, num_heads = 2L,
                                             W_q = NULL, W_k = NULL,

@@ -10,6 +10,11 @@
 #'   voters preferring i to j.
 #' @return Named list with `winner` (1-based, or -1), `n_candidates`,
 #'   `has_winner`, `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 cndrc <- function(preference_matrix) {
   M <- as.matrix(preference_matrix)

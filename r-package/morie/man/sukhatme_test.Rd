@@ -16,3 +16,9 @@ Named list: statistic (z), p_value, U, n, m.
 Mann-Whitney U on the absolute deviations from the pooled median.
 Tests equality of scales given (approximately) equal medians.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -13,6 +13,11 @@
 #' @param padding Zero-padding on each side.
 #' @return Named list \code{(y, estimate, output_shape, method)}.
 #' @references Goodfellow et al. (2016), Deep Learning, Ch 9.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 cnn2d_conv2d_forward <- function(x, w, b = 0, stride = 1L, padding = 0L) {
   x <- as.matrix(x); w <- as.matrix(w)

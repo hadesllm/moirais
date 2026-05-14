@@ -16,3 +16,9 @@ Named list with \code{mu, delta, omega, alpha, loglik,
 \description{
 ARCH(1)-in-mean model
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

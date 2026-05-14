@@ -16,3 +16,9 @@ Named list of key paths.
 \description{
 Resolve standard project paths
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -27,4 +27,10 @@ Recovers ideal points from row/respondent coordinates of an
 unfolding solution. By the unfolding definition the respondent
 position is the ideal point (Eq 4.36 in Armstrong et al. 2014).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

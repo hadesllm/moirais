@@ -9,6 +9,11 @@
 #' @param y Optional numeric vector; if supplied returns OLS slope.
 #' @return Named list with estimate, se, n, method.
 #' @references Kosorok (2008), Ch 5.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr09_kosorok_z_estimator <- function(x, y = NULL) {
   x <- as.numeric(x)

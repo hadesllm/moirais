@@ -22,3 +22,9 @@ Named list with \code{frequencies, coherence, n_segments,
 \description{
 Magnitude-squared coherence between two time series
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

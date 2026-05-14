@@ -19,6 +19,12 @@ list(estimate, g, e, ge, var_g, var_e, var_ge, var_eps, se, n, method).
 \description{
 Two-way GxE ANOVA with EMS variance components
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Montesinos Lopez Ch 11.
 }

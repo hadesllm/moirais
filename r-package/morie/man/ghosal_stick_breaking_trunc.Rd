@@ -39,3 +39,9 @@ trunc_err_bound, n, method.
 \description{
 Truncated stick-breaking representation of DP(alpha, G0).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

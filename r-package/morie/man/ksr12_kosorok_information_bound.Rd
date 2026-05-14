@@ -21,6 +21,12 @@ Named list with estimate, n, method.
 For the linear model Y = beta X + eps, this is the Fisher-info
 lower bound on Var(sqrt(n) beta_hat).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 6.
 }

@@ -17,3 +17,9 @@ tau_xz, tau_yz, z, n.
 tau_xy.z = (tau_xy - tau_xz tau_yz) /
 sqrt((1 - tau_xz^2)(1 - tau_yz^2))
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

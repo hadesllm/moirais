@@ -8,6 +8,11 @@
 #' @param x Numeric vector.
 #' @return Named list with estimate (rank), n, method.
 #' @references Kosorok (2008), Ch 6.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr13_kosorok_tangent_space <- function(x) {
   x <- as.numeric(x)

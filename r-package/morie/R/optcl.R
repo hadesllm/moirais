@@ -10,6 +10,11 @@
 #' @param votes Integer 0/1 vector of observed votes (optional).
 #' @return Named list with `cut`, `correct_class`, `polarity`, `pre`,
 #'   `n`, `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 optcl <- function(x, votes = NULL) {
   x <- as.numeric(x); n <- length(x)

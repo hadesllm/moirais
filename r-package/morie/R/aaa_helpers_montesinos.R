@@ -15,6 +15,11 @@
 #' @param method  1 or 2 (VanRaden 2008).
 #' @return Named list with estimate (G matrix), diag_mean, off_mean, p, n, m, method.
 #' @references VanRaden (2008) J Dairy Sci 91:4414. Montesinos Lopez Ch 3.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 grm_vanraden <- function(markers, method = 1) {
   M <- as.matrix(markers); storage.mode(M) <- "double"

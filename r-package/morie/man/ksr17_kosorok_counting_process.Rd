@@ -20,6 +20,12 @@ Named list with estimate (total events), n, method.
 \description{
 N(infty) = the count of events (sum of indicator delta_i = 1).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 8.
 }

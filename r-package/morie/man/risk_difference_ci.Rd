@@ -15,3 +15,9 @@
 \value{
   Named list: 'rd', 'ci_lower', 'ci_upper'.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

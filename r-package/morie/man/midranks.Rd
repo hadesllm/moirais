@@ -16,3 +16,9 @@ Named list: midranks, n, ties, tie_correction.
 Identical to \code{rank(x, ties.method = "average")} plus a tie-
 correction term \verb{sum t_j^3 - t_j} over tied groups.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

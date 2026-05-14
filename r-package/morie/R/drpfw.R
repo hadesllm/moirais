@@ -16,6 +16,11 @@
 #'   \code{seed} when set.
 #' @return Named list \code{(y, estimate, mask, p, kept_fraction, method)}.
 #' @references Srivastava et al. (2014), JMLR 15:1929-1958.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 drpfw_dropout_forward <- function(x, p = 0.5, seed = 0L, training = TRUE,
                                   deterministic_seed = NULL) {

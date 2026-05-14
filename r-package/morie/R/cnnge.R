@@ -12,6 +12,11 @@
 #'   (default) behaviour is unchanged.
 #' @return list(estimate, y_hat, W_conv, b_conv, W1, b1, w2, b2, se, n, method).
 #' @references Montesinos Lopez Ch 13.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 cnn_genomic <- function(x, y, markers, n_filters = 8, kernel = 3,
                          hidden = 8, n_epochs = 150, lr = 1e-2,

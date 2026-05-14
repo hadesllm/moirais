@@ -9,6 +9,11 @@
 #' @param h Bandwidth; default = Silverman's rule.
 #' @return Named list with estimate, se, p, h, density_at_Q, n, method.
 #' @importFrom stats sd quantile dnorm pnorm uniroot
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzqnt <- function(x, p = 0.5, h = NULL) {
   x <- as.numeric(x); n <- length(x)

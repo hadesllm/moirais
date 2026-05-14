@@ -44,6 +44,12 @@ counts), n, method.
 \deqn{\hat\gamma(h, u) = \frac{1}{2|N(h, u)|}
       \sum_{(i,j)\in N(h,u)} (Z(s_i, t_i) - Z(s_j, t_j))^2}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Cressie & Huang (1999); Schabenberger & Gotway (2005), Ch 8.
 }

@@ -20,6 +20,12 @@ Named list with estimate, se, n, method.
 \description{
 theta_tilde = theta_init + (1/n) * sum IF(X_i; theta_init).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 7.
 }

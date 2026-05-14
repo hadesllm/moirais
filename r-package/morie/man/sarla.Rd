@@ -23,6 +23,12 @@ Named list: estimate, se, rho, sigma2, n, method.
 Y = rho W Y + X beta + eps,  eps ~ N(0, sigma2 I).
 Concentrated log-likelihood in rho.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Anselin (1988); Schabenberger & Gotway (2005), Ch 7.
 }

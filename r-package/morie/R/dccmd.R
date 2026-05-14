@@ -7,6 +7,11 @@
 #' @param x Numeric matrix of returns (T x k).
 #' @return Named list with \code{a, b, unconditional_correlation,
 #'   conditional_correlation, conditional_variance, loglik, n, k, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 dcc_multivariate_garch <- function(x) {
   X <- as.matrix(x); if (nrow(X) < ncol(X)) X <- t(X)

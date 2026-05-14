@@ -22,6 +22,12 @@ Reports sigma_m^2 via the VanRaden split sigma_g^2 / (2 sum p_j q_j)
 alongside the naive sigma_g^2 / p form. sigma_g^2 is obtained from a
 quick GBLUP fit.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 VanRaden (2008); Montesinos Lopez Ch 3.
 }

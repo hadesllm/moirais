@@ -23,4 +23,10 @@ Pooled-LDA cutting hyperplane w'x = c for a binary vote vector;
 classifies legislators by Mahalanobis-style projection onto the
 between-class direction.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

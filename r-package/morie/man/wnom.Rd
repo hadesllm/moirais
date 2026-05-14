@@ -36,4 +36,10 @@ yea/nay outcome locations:
 U_ijy = beta * exp(-0.5 sum_k w_k^2 (x_ik - z_yjk)^2) + epsilon
 P(yea) = Phi(U_yea - U_nay).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

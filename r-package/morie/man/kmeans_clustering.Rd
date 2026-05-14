@@ -24,3 +24,9 @@ n_iter, n_clusters, n, method.
 \description{
 Wraps \code{stats::kmeans} with Hartigan-Wong (the default).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

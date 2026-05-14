@@ -45,6 +45,12 @@ Named list: estimate, se, n, method.
   \begin{bmatrix}\lambda \\ \mu\end{bmatrix} =
   \begin{bmatrix}c_0 \\ 1\end{bmatrix}}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Schabenberger & Gotway (2005), Ch 4.
 }

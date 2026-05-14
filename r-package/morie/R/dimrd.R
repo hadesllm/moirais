@@ -10,6 +10,11 @@
 #' @param threshold Eigenvalue cut-off (default 1, Kaiser 1960).
 #' @return Named list with `n_dims`, `eigenvalues`, `threshold`,
 #'   `scree_gap`, `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 dimrd <- function(x, threshold = 1) {
   M <- if (is.matrix(x)) x else matrix(as.numeric(x), ncol = 1L)

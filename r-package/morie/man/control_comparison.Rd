@@ -26,3 +26,9 @@ Named list: statistic, p_value, p_adjusted, n, k, control_n.
 Mann-Whitney vs. control for each treatment group; Bonferroni-
 adjusted p-values by default.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

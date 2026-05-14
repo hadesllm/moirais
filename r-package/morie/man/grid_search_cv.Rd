@@ -37,3 +37,9 @@ cv_results_params, cv_results_mean_score, task, n, method.
 Wraps \code{caret::train} with method = "glm" (classification) or
 "lm" (regression) by default; users can pass any caret \code{method}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

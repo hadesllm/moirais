@@ -19,3 +19,9 @@ Named list with estimate, betas, rates, best_beta, n, d, method.
 \description{
 Adaptive contraction rates over a smoothness grid.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

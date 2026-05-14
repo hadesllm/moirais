@@ -19,3 +19,9 @@ Named list with \code{mu, sigma, transition,
 Fit a constant-mean, switching-variance K-regime Markov-switching
 model by EM (Hamilton filter).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

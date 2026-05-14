@@ -16,3 +16,9 @@ cached (logical), rows (integer or NA).
 \description{
 List all datasets with cache status
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

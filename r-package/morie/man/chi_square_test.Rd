@@ -15,3 +15,9 @@
 \value{
   Named list: 'chi_sq', 'df', 'p_value', 'cramers_v'.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

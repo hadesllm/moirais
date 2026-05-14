@@ -14,6 +14,11 @@
 #'   (default) behaviour is unchanged.
 #' @return list(estimate, beta, intercept, se, beta_se, lam, sigma2, n_iter, n, p, method).
 #' @references Park & Casella (2008) JASA 103:681. Montesinos Lopez Ch 4.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 bayesian_lasso_full <- function(x, y, n_iter = 200, burn = 50,
                                  lam = NULL, seed = 0,

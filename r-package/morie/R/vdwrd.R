@@ -9,6 +9,11 @@
 #' @param x,y Numeric vectors.
 #' @return Named list: statistic, p_value, z, n, m.
 #' @importFrom stats qnorm pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 van_der_waerden_test <- function(x, y) {
   x <- as.numeric(x); y <- as.numeric(y)

@@ -22,4 +22,10 @@ Named list with estimate, se, p, h, density_at_Q, n, method.
 \description{
 \eqn{\sqrt n(\hat Q-Q) \to N(0,p(1-p)/f(Q)^2)}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

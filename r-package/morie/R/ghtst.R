@@ -8,6 +8,11 @@
 #' @param depth Integer Polya-tree depth (default 6).
 #' @param c Numeric Polya-tree concentration (default 1).
 #' @return Named list with statistic (log BF), p_value, BF10, log_BF10, n, depth, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_np_testing <- function(x, ref_loc = 0, ref_scale = 1, depth = 6,
                                 c = 1.0) {

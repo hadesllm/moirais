@@ -10,6 +10,11 @@
 #' @param lambda_gblup Optional ratio sigma_e^2 / sigma_g^2 (default h^2=0.5).
 #' @return Named list (estimate, g_hat, beta, se, lambda_gblup, n, method).
 #' @references Montesinos Lopez Ch 3.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 gblup_full <- function(x, y, markers, lambda_gblup = NULL) {
   y <- as.numeric(y); n <- length(y)

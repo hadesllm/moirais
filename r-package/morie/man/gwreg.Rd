@@ -34,6 +34,12 @@ n, method.
 Local WLS at each site i:
 \deqn{\beta(s_i) = (X^\top W(s_i) X)^{-1} X^\top W(s_i) y}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Brunsdon, Fotheringham & Charlton (1996).
 }

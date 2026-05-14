@@ -27,3 +27,9 @@ A p x p numeric matrix A.
 \description{
 Generate a stationarity-preserving AR coefficient matrix
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

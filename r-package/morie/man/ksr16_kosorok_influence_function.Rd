@@ -20,6 +20,12 @@ Named list with estimate, n, method.
 \description{
 IF(x, y) = (y - ybar - beta_hat (x - xbar))(x - xbar) / Var(X).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 7.
 }

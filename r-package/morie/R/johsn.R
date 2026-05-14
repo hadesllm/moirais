@@ -6,6 +6,11 @@
 #' @param k_ar_diff Number of lagged differences. Default 1.
 #' @return Named list with \code{eigenvalues, trace_stat, crit_values,
 #'   rank, n, k, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 johansen_cointegration <- function(x, k_ar_diff = 1) {
   Y <- as.matrix(x); if (nrow(Y) < ncol(Y)) Y <- t(Y)

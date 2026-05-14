@@ -19,6 +19,11 @@
 #' @return Named list: estimate, train_score, feature_importances,
 #'   n_estimators, learning_rate, max_depth, task, n, method.
 #' @importFrom stats predict
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 gradient_boosting_ensemble <- function(x, y, n_estimators = 100L,
                                         learning_rate = 0.1,

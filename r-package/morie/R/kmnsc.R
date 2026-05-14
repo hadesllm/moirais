@@ -11,6 +11,11 @@
 #' @param seed RNG seed.
 #' @return Named list: estimate (inertia), labels, centers, inertia,
 #'   n_iter, n_clusters, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 kmeans_clustering <- function(x, n_clusters = 3L, n_init = 10L,
                                max_iter = 300L, seed = 0L) {

@@ -22,3 +22,9 @@ core_sample_indices, eps, min_samples, n, method.
 \description{
 Wraps \code{dbscan::dbscan}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

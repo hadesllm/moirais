@@ -8,6 +8,11 @@
 #' @param y_score Predicted scores for the positive class.
 #' @return Named list: estimate, auc, fpr, tpr, thresholds, n,
 #'   n_positive, n_negative, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 roc_auc_score <- function(y_true, y_score) {
   if (!requireNamespace("pROC", quietly = TRUE)) {

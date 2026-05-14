@@ -23,6 +23,11 @@
 #'   n_estimators, learning_rate, max_depth, reg_lambda, reg_alpha, task,
 #'   n, method.
 #' @importFrom stats predict
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 xgboost_objective <- function(x, y, n_estimators = 100L, learning_rate = 0.1,
                                max_depth = 3L, reg_lambda = 1.0,

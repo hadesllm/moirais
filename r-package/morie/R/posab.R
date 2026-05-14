@@ -12,6 +12,11 @@
 #' @param base Frequency base (default 10000).
 #' @return Named list \code{(PE, estimate, seq_len, d_model, method)}.
 #' @references Vaswani et al. (2017), NeurIPS.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 posab_positional_encoding_abs <- function(seq_len, d_model, base = 10000) {
   seq_len <- as.integer(seq_len); d_model <- as.integer(d_model)

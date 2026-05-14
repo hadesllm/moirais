@@ -7,6 +7,11 @@
 #' @param env Environment IDs (length n).
 #' @return list(estimate, g, e, ge, var_g, var_e, var_ge, var_eps, se, n, method).
 #' @references Montesinos Lopez Ch 11.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 gxe_interaction_model <- function(x, y, env) {
   g_id <- x; e_id <- env; yv <- as.numeric(y); n <- length(yv)

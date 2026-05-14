@@ -44,6 +44,12 @@ list(estimate, y_hat, beta, W1, b1, w2, b2, se, n, method).
 \description{
 Single-hidden-layer MLP genomic predictor (base R)
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Montesinos Lopez Ch 12.
 }

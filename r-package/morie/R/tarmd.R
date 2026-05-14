@@ -8,6 +8,11 @@
 #' @param n_grid Grid size for threshold search. Default 50.
 #' @return Named list with \code{threshold, phi_lower, phi_upper, p, d,
 #'   regime_sizes, sse, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 threshold_autoregression <- function(x, p = 1, d = 1, n_grid = 50) {
   y <- as.numeric(x); n <- length(y); start <- max(p, d)

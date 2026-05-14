@@ -23,3 +23,9 @@ k_lower, k_upper.
 Builds the discrete rejection region under H0: p = 0.5 with size
 <= alpha, then evaluates power at the alternative p_alt.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

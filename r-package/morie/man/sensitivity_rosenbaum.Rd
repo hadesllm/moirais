@@ -23,3 +23,9 @@ For unmatched data, computes sign-score bounds.
 \value{
   Data frame with columns: 'gamma', 'p_lower', 'p_upper'.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -17,6 +17,11 @@
 #'   \code{seed} when set.
 #' @return Named list \code{(output, estimate, h1, num_heads, d_ff, method)}.
 #' @references Vaswani et al. (2017), NeurIPS.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 trfbl_transformer_block <- function(x, num_heads = 2L, d_ff = NULL,
                                     seed = 0L,

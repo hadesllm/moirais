@@ -14,3 +14,9 @@ Returns the path to \code{morie.db} that ships with the package.
 This database contains all CPADS, CCS, CSADS, CSUS, HealthInfobase, and
 CIHI datasets pre-loaded as SQLite tables.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

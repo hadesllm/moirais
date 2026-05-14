@@ -23,6 +23,12 @@ list(estimate, r_per_fold, y_hat, mse, mspe, slope, n, K, method).
 \description{
 K-fold cross-validation for genomic-prediction accuracy
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Montesinos Lopez Ch 2.
 }

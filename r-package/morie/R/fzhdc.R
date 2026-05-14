@@ -14,6 +14,11 @@
 #' @return Named list with estimate, sigma1_sq, sigma2_sq, se, n, n_pairs, method.
 #' @importFrom utils combn
 #' @importFrom stats var
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzhdc <- function(x, kernel = NULL, max_pairs = 2000L, seed = 0L) {
   x <- as.numeric(x); n <- length(x)

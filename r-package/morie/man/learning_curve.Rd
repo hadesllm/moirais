@@ -26,3 +26,9 @@ Manual implementation of the sklearn learning_curve flow: shuffle,
 split into k folds, for each train-fraction fit on a prefix of the
 training fold and score on the held-out fold.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

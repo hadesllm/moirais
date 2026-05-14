@@ -14,6 +14,11 @@
 #'   (default) behaviour is unchanged.
 #' @return Named list with estimate, se, n, method.
 #' @references Kosorok (2008), Ch 10.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr07_kosorok_bootstrap_empirical <- function(x, B = 1000, seed = 0,
                                               deterministic_seed = NULL) {

@@ -11,6 +11,11 @@
 #' @param reversion Status-quo / reversion point.
 #' @return Named list with `chosen`, `power`, `setter_ideal`,
 #'   `reversion`, `win_set_size`, `win_set_bounds`, `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 agset <- function(options, setter_ideal, reversion) {
   options <- as.numeric(options)

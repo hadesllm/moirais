@@ -20,3 +20,9 @@ Block frequencies of Y in the m+1 intervals defined by the
 ordered X-sample.  Under H0 the expected block proportion is
 \code{1 / (m + 1)}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

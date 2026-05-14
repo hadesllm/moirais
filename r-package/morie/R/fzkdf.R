@@ -14,6 +14,11 @@
 #' @param h Bandwidth; default = Silverman's rule.
 #' @return Named list: estimate, bias, variance, se, h, t, n, method.
 #' @importFrom stats median sd quantile dnorm pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzkdf <- function(x, t = NULL, h = NULL) {
   x <- as.numeric(x); n <- length(x)

@@ -44,6 +44,12 @@ n, method.
 \deqn{\hat C(h, u) = \frac{1}{|N(h, u)|}
       \sum_{(i,j) \in N(h,u)} (Z_i - \bar Z)(Z_j - \bar Z)}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Cressie & Huang (1999); Schabenberger & Gotway (2005), Ch 8.
 }

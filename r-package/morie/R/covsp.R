@@ -9,6 +9,11 @@
 #' @param x Numeric vector.
 #' @return Named list: coverages, cumulative, expected, n,
 #'   sample_min, sample_max, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 one_sample_coverage <- function(x) {
   x <- as.numeric(x)

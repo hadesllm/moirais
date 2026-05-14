@@ -20,6 +20,12 @@ Named list with estimate, se, n, method.
 \description{
 S_C(t) by KM on (t_i, 1 - delta_i).  Greenwood SE.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 8.
 }

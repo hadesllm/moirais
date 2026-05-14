@@ -6,6 +6,11 @@
 #' @param y2 Numeric, second series.
 #' @param max_lag Max ADF augmentation lags. Default \code{floor(12*(n/100)^0.25)}.
 #' @return Named list with \code{adf_statistic, p_value, beta, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 eg_coint <- function(y1, y2, max_lag = NULL) {
   y1 <- as.numeric(y1); y2 <- as.numeric(y2)

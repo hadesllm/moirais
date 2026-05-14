@@ -11,6 +11,11 @@
 #' @return Named list with estimate (MISE), bias_part, var_part, h, h_opt,
 #'   R_fpp, sigma, n, method.
 #' @importFrom stats sd
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzmis <- function(x, h = NULL) {
   x <- as.numeric(x); n <- length(x)

@@ -16,3 +16,9 @@
 \value{
   Numeric vector of design weights (same length as 'nrow(df)').
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

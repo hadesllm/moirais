@@ -16,6 +16,11 @@
 #'   (default) behaviour is unchanged.
 #' @return list(estimate, y_hat, beta, W1, b1, w2, b2, se, n, method).
 #' @references Montesinos Lopez Ch 12.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 deep_learning_genomic <- function(x, y, markers, hidden = 16,
                                    n_epochs = 200, lr = 1e-2,

@@ -20,6 +20,11 @@
 #'   \code{seed} when set.
 #' @return Named list \code{(h, c, estimate, i, f, g, o, method)}.
 #' @references Hochreiter & Schmidhuber (1997), Neural Computation 9(8).
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 lstmc_lstm_cell <- function(x, h_prev = NULL, c_prev = NULL,
                             W = NULL, U = NULL, b = NULL,

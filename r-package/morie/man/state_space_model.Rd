@@ -16,3 +16,9 @@ Named list with \code{filtered_state, filtered_state_variance,
 \description{
 Local-level state-space model (Kalman filter+smoother)
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

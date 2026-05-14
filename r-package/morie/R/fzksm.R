@@ -12,6 +12,11 @@
 #' @param n_grid Grid resolution.
 #' @return Named list: statistic, p_value, h, n, method.
 #' @importFrom stats sd pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzksm <- function(x, cdf = "norm", args = NULL, h = NULL, n_grid = 512L) {
   x <- as.numeric(x); n <- length(x)

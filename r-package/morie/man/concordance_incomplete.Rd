@@ -18,3 +18,9 @@ rankings, W = 12 S / (k^2 (n^3 - n)) where S is the sum of
 squared deviations of object rank-sums from their mean.
 Significance via chi-square approximation k(n-1) W ~ chi-square with n-1 df.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

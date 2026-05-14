@@ -21,3 +21,9 @@ Named list: statistic (M^2), p_value, df, n, correlation.
 M^2 = (n - 1) * cor(u, v)^2 ~ chi^2_1 under independence,
 where (u, v) are row/column scores weighted by cell counts.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

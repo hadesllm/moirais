@@ -18,3 +18,9 @@ n_positive, n_negative, method.
 \description{
 Wraps \code{pROC::roc}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

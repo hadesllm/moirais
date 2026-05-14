@@ -7,6 +7,11 @@
 #' @param x Numeric return series.
 #' @return Named list with \code{omega, alpha, beta, persistence, loglik,
 #'   conditional_variance, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 garch_fit <- function(x) {
   r <- as.numeric(x) - mean(as.numeric(x))

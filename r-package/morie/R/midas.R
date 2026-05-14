@@ -7,6 +7,11 @@
 #' @param K Number of high-frequency lags (required when x is flat).
 #' @return Named list with \code{beta0, beta1, theta1, theta2, weights,
 #'   r2, n, K, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 midas_regression <- function(x, y, K = NULL) {
   Y <- as.numeric(y); nT <- length(Y)

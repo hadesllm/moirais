@@ -45,6 +45,12 @@ R parity for \code{morie.fn.trfbl.transformer_block}.
 \deqn{h_1 = \mathrm{LN}(x + \mathrm{MHA}(x)), \quad
       h_2 = \mathrm{LN}(h_1 + \mathrm{FFN}(h_1))}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Vaswani et al. (2017), NeurIPS.
 }

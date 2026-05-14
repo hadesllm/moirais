@@ -32,6 +32,12 @@ Named list with estimate, se, n, method.
 \description{
 G_n_xi(f) = n raised to the power of -1/2 times sum_i xi_i (f(X_i) - P_n f), xi ~ N(0,1).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Kosorok (2008), Ch 10.
 }

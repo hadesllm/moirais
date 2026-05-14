@@ -9,6 +9,11 @@
 #' @param Sigma_e Optional t x t residual covariance.
 #' @return list(estimate, G_hat, B_hat, Sigma_g, Sigma_e, n, t, method).
 #' @references Montesinos Lopez Ch 10.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 multi_trait_gblup <- function(x, y, markers, Sigma_g = NULL, Sigma_e = NULL) {
   Y <- as.matrix(y); n <- nrow(Y); t <- ncol(Y)

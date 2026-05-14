@@ -9,6 +9,11 @@
 #' @param h Bandwidth; default = Silverman.
 #' @return Named list with estimate, se, ci_lower, ci_upper, t, h, n, method.
 #' @importFrom stats median pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzsrv <- function(x, t = NULL, h = NULL) {
   x <- as.numeric(x); n <- length(x)

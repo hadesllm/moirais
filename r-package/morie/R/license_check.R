@@ -24,6 +24,11 @@ NULL
 #' GPL-2.0-only so the choice rests with downstream consumers.
 #'
 #' @return Character vector of SPDX identifiers.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_gpl_compatible_licenses <- function() {
   c("GPL-2.0-only", "GPL-2.0-or-later",
@@ -44,6 +49,11 @@ morie_gpl_compatible_licenses <- function() {
 #' @return A named list summarising morie's licence posture, useful for
 #'   pipeline build manifests, auditd logs, and downstream
 #'   compliance pipelines.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_license_metadata <- function() {
   list(

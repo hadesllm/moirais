@@ -11,6 +11,11 @@
 #' @param noise Optional observation noise sd.
 #' @return Named list with estimate, se, mu, sd, ci_lower, ci_upper, r2,
 #'   log_marginal, length_scale, noise, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_np_regression <- function(x, y, length_scale = NULL,
                                    sigma_f = 1.0, noise = NULL) {

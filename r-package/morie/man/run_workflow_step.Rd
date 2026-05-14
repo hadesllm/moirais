@@ -18,3 +18,9 @@
 \value{
   Named list with step metadata and exit status.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

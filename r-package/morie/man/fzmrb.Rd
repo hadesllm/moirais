@@ -23,4 +23,10 @@ Named list: estimate, se, S_hat, t, h, n, method.
 Avoids boundary bias of the kernel MRL near t=0 by smoothing on
 the log-transformed scale.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

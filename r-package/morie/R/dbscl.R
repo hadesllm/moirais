@@ -10,6 +10,11 @@
 #' @param metric Distance metric (passed to dbscan).
 #' @return Named list: estimate, labels, n_clusters, n_noise,
 #'   core_sample_indices, eps, min_samples, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 dbscan_clustering <- function(x, eps = 0.5, min_samples = 5L,
                                metric = "euclidean") {

@@ -15,3 +15,9 @@
   source, survey, year, file path, and CKAN resource identifier.
 }
 \keyword{datasets}
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

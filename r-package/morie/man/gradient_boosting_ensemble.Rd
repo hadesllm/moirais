@@ -43,3 +43,9 @@ n_estimators, learning_rate, max_depth, task, n, method.
 Wraps \code{gbm::gbm} when available, otherwise falls back to
 \code{xgboost} as a portable boosted-trees backend.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

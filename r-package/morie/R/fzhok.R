@@ -12,6 +12,11 @@
 #' @param order Kernel order (only 4 supported).
 #' @return Named list with estimate, h, t, order, mu_r, R_K, n, method.
 #' @importFrom stats median dnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzhok <- function(x, t = NULL, h = NULL, order = 4L) {
   x <- as.numeric(x); n <- length(x)

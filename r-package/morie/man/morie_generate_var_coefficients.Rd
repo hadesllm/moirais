@@ -29,3 +29,9 @@ A list of length \code{lags}, each a p x p matrix.
 \description{
 Generate a VAR(L) coefficient array as a 3-d list
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

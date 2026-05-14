@@ -7,6 +7,11 @@
 #' @param coint_rank Cointegration rank. Default 1.
 #' @return Named list with \code{alpha, beta, Gamma, Sigma, loglik, n, k,
 #'   rank, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 vecm <- function(Y, k_ar = 1, coint_rank = 1) {
   Y <- as.matrix(Y); if (nrow(Y) < ncol(Y)) Y <- t(Y)

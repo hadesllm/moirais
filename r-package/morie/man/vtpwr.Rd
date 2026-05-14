@@ -22,4 +22,10 @@ Named list with \code{banzhaf}, \code{shapley_shubik}, \code{quota},
 Exact enumeration for n <= 10; Monte Carlo for larger games.
 Quota defaults to strict simple majority.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

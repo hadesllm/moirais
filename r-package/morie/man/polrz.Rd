@@ -23,4 +23,10 @@ Named list with \code{estimate}, \code{mean_R}, \code{mean_D}, \code{sd_R},
 Two-group polarization P = |mean_R - mean_D| / pooled_sd. When both
 groups are constant, falls back to overall SD.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

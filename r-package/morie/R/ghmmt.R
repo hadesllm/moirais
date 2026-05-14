@@ -9,6 +9,11 @@
 #' @param base_mean Numeric base-measure mean (default 0).
 #' @param base_sd Numeric base-measure sd (default 1).
 #' @return Named list with estimate, se, prior_mean, prior_var, n_A, n, alpha, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ghosal_moment_matching <- function(x, alpha = 1.0, A_lower = NULL,
                                      A_upper = NULL, base_mean = 0,

@@ -10,6 +10,11 @@
 #' @return Named list: estimate (sigma_local, C_matrix, bandwidth),
 #'   n, method.
 #' @references Sampson & Guttorp (1992); Schabenberger & Gotway (2005), Ch 8.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 nstat <- function(x, coords, bandwidth = NULL) {
   x <- as.numeric(x); n <- length(x)

@@ -19,3 +19,9 @@ markers in older checkouts.
 \value{
   Absolute path to the detected project root.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

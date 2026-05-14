@@ -9,6 +9,11 @@
 #' @param cdf Name of CDF (default \"pnorm\").
 #' @return Named list with statistic, p_value, n, method.
 #' @references Kosorok (2008), Ch 2.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr03_kosorok_glivenko_cantelli <- function(x, cdf = "pnorm") {
   x <- as.numeric(x)

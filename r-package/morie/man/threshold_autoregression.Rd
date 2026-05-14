@@ -22,3 +22,9 @@ Named list with \code{threshold, phi_lower, phi_upper, p, d,
 \description{
 Two-regime self-exciting threshold autoregressive (SETAR) model
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

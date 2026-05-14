@@ -14,6 +14,11 @@
 #' @param max_iter,tol Convergence controls.
 #' @return list(estimate, beta, intercept, se, alpha, lam, n_iter, n, p, method).
 #' @references Friedman, Hastie & Tibshirani (2010); Montesinos Lopez Ch 6.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 penalized_regression <- function(x, y, alpha = 0.5, lam = 1.0,
                                   max_iter = 1000, tol = 1e-6) {

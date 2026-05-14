@@ -5,6 +5,11 @@
 #' @inheritParams garch_fit
 #' @return Named list with \code{mu, delta, omega, alpha, loglik,
 #'   conditional_variance, n, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 arch_in_mean <- function(x) {
   y <- as.numeric(x); n <- length(y)

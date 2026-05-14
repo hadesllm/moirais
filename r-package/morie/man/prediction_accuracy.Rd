@@ -19,6 +19,12 @@ rmse, r2, slope, intercept, n, method).
 Reports Pearson r, Spearman rho, MSE/MSPE, RMSE, R^2, calibration
 slope and intercept.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Montesinos Lopez Ch 2.
 }

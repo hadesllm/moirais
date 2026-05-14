@@ -13,6 +13,11 @@
 #' @param mask Optional additive mask \code{(n_q, n_k)}.
 #' @return Named list \code{(output, estimate, attn, logits, d_k, method)}.
 #' @references Vaswani et al. (2017), NeurIPS.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 attnq_scaled_dot_product_attention <- function(Q, K = NULL, V = NULL,
                                                mask = NULL) {

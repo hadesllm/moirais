@@ -11,6 +11,11 @@
 #' CIHI datasets pre-loaded as SQLite tables.
 #'
 #' @return File path string.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_builtin_db <- function() {
   root <- find_project_root()
@@ -49,6 +54,11 @@ morie_db_connect <- function(db_path = NULL) {
 #' @param table_name Name of the SQLite table.
 #' @param db_path Optional override for the database path.
 #' @return Number of rows written (invisible).
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_cache_store <- function(data, table_name, db_path = NULL) {
   con <- morie_db_connect(db_path)
@@ -62,6 +72,11 @@ morie_cache_store <- function(data, table_name, db_path = NULL) {
 #' @param table_name Name of the SQLite table.
 #' @param db_path Optional override for the database path.
 #' @return A data.frame, or \code{NULL} if the table does not exist.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_cache_load <- function(table_name, db_path = NULL) {
   con <- morie_db_connect(db_path)
@@ -76,6 +91,11 @@ morie_cache_load <- function(table_name, db_path = NULL) {
 #'
 #' @param db_path Optional override for the database path.
 #' @return A data.frame with columns \code{table} and \code{rows}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_cache_list <- function(db_path = NULL) {
   con <- morie_db_connect(db_path)
@@ -99,6 +119,11 @@ morie_cache_list <- function(db_path = NULL) {
 #' @param table_name Name for the cached table.
 #' @param db_path Optional override for the database path.
 #' @return Number of rows cached (invisible).
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_cache_file <- function(path, table_name, db_path = NULL) {
   ext <- tolower(tools::file_ext(path))
@@ -314,6 +339,11 @@ morie_load_dataset <- function(key, db_path = NULL) {
 #' @param db_path Optional override for the database path.
 #' @return A data.frame with columns: key, name, source, survey, year, type,
 #'   cached (logical), rows (integer or NA).
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_list_datasets <- function(db_path = NULL) {
   catalog <- morie_dataset_catalog()
@@ -348,6 +378,11 @@ morie_dataset_info <- function(key) {
 #' @param name Filename (e.g., \code{"20212022-cpads-pumf-user-guide.pdf"}).
 #'   If \code{NULL}, lists all available userguides.
 #' @return File path string, or character vector of filenames.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_userguide <- function(name = NULL) {
   if (is.null(name)) {
@@ -368,6 +403,11 @@ morie_userguide <- function(name = NULL) {
 #' @param limit Max records per CKAN request (default 32000).
 #' @param db_path Optional override for cache database path.
 #' @return Invisibly, the number of CSV files successfully downloaded.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 morie_download_bootstrap <- function(survey = "all", limit = 32000L, db_path = NULL) {
   bootstrap_keys <- list(

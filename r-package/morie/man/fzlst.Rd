@@ -24,4 +24,10 @@ Named list with estimate, se, n, method.
 \eqn{c_{n,i} = \int_{(i-1)/n}^{i/n} J(u) du}.
 Default J(u)=1 gives the sample mean.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

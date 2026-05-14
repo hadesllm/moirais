@@ -6,6 +6,11 @@
 #' @param lambda Decay factor in (0,1). Default 0.94 (daily RiskMetrics).
 #' @return Named list with \code{conditional_variance, conditional_volatility,
 #'   lambda, n, last_variance, last_volatility, method}.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ewma_volatility <- function(x, lambda = 0.94) {
   r <- as.numeric(x); n <- length(r)

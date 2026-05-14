@@ -22,3 +22,9 @@ macro_f1, weighted_f1, n, method.
 Manually constructs the confusion matrix to avoid the caret dependency
 for what is fundamentally a tabulation.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

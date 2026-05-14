@@ -21,3 +21,9 @@ Uses the formula from Hsieh et al. (1998):
 \value{
   Integer sample size.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

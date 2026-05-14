@@ -13,6 +13,11 @@
 #' @return Named list: statistic, p_value, expectation, variance,
 #'   z_score, n, method.
 #' @references Cliff & Ord (1981). Schabenberger & Gotway (2005), Ch 1.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 sptau <- function(x, w) {
   x <- as.numeric(x); n <- length(x)

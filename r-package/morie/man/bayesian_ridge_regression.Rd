@@ -19,6 +19,12 @@ list(estimate, beta, intercept, se, beta_se, lam, n, p, method).
 \description{
 beta_hat = solve(X'X + lambda\emph{I) \%}\% X'y
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Montesinos Lopez Ch 4.
 }

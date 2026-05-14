@@ -33,6 +33,12 @@ For \eqn{L = \tfrac{1}{2n}\sum (a - y)^2} with
 \deqn{\partial L / \partial W = \delta x^\top, \quad
       \delta = (a - y) \odot \sigma'(z)}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Rumelhart, Hinton & Williams (1986); Goodfellow et al. (2016).
 }

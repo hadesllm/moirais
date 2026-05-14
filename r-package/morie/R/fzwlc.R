@@ -11,6 +11,11 @@
 #' @param alternative "two-sided", "greater", "less".
 #' @return Named list with statistic, z, p_value, theta0, h, n, method.
 #' @importFrom stats pnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzwlc <- function(x, theta0 = 0, h = NULL, alternative = "two-sided") {
   x <- as.numeric(x); n <- length(x)

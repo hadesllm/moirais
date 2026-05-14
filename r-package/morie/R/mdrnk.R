@@ -7,6 +7,11 @@
 #'
 #' @param x Numeric vector.
 #' @return Named list: midranks, n, ties, tie_correction.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 midranks <- function(x) {
   x <- as.numeric(x)

@@ -21,6 +21,12 @@ Black (1948) median-voter theorem: with single-peaked preferences in
 1-D, the Condorcet winner equals the median ideal point. Laplace
 asymptotic SE 1.2533 * s/sqrt(n) for normal-like data.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Armstrong et al. (2014), Ch 2.
 }

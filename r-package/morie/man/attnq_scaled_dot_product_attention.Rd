@@ -28,6 +28,12 @@ R parity for \code{morie.fn.attnq.scaled_dot_product_attention}.
 \deqn{\mathrm{Attention}(Q, K, V) =
       \mathrm{softmax}\!\left(\tfrac{Q K^\top}{\sqrt{d_k}}\right) V}
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Vaswani et al. (2017), NeurIPS.
 }

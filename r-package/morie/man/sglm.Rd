@@ -25,6 +25,12 @@ Named list: estimate, se, sigma2, phi, tau2, n, method.
 Y = X beta + delta + eps, delta ~ GP(0, sigma2 R_phi), R_phi exponential.
 Profile-likelihood ML over phi; beta via GLS.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Schabenberger & Gotway (2005), Ch 5.
 }

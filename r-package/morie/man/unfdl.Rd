@@ -26,4 +26,10 @@ Named list with \code{X}, \code{Y}, \code{stress}, \code{k}, \code{n_resp}, \cod
 Closed-form Schoenemann (1970) unfolding via SVD of the doubly
 centred squared-distance matrix, followed by SMACOF-lite refinement.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \keyword{internal}

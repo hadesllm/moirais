@@ -11,6 +11,11 @@
 #' @param n_quad Quadrature grid for variance.
 #' @return Named list with estimate, se, n, method.
 #' @importFrom stats sd quantile dnorm
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 fzlst <- function(x, score = NULL, n_quad = 200L) {
   x <- as.numeric(x); n <- length(x)

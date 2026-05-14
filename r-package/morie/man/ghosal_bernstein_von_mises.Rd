@@ -33,3 +33,9 @@ wald, wald_pvalue, n, B, method.
 \description{
 BvM diagnostic for the mean functional under a DP prior.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -18,3 +18,9 @@ Named list: signed_ranks, abs_ranks, W_plus, W_minus, n_nonzero, n.
 Signed ranks R_i^+ = sign(D_i) * rank(|D_i|) used by Wilcoxon
 signed-rank.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

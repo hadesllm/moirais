@@ -8,6 +8,11 @@
 #' @param order Polynomial order (0, 1, 2, or 3).
 #' @return Named list: estimate, se, r2, order, n, method.
 #' @references Schabenberger & Gotway (2005), Ch 2.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 sptrn <- function(x, coords, order = 2) {
   y <- as.numeric(x); n <- length(y)

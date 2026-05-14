@@ -11,3 +11,9 @@ Mirrors \code{morie.fast.is_jit_available()} on the Python side.
 Returns TRUE when the Rcpp .so was built and loaded; FALSE when
 falling back to base-R implementations.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

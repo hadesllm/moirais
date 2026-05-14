@@ -9,6 +9,11 @@
 #' @param lam Ridge regulariser on alpha (default 1).
 #' @return list(estimate, alpha, beta, K, f_hat, se, h, n, method).
 #' @references Gianola & van Kaam (2008). Montesinos Lopez Ch 5.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 rkhs_full <- function(x, y, markers, h = NULL, lam = 1) {
   y <- as.numeric(y); n <- length(y)

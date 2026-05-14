@@ -15,3 +15,9 @@
 \value{
   Character vector of missing variable names.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

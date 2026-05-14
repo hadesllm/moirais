@@ -34,6 +34,12 @@ converged, model), n, method.
 Models: exponential, gaussian, spherical.
 Exponential form: \deqn{\gamma(h) = c_0 + c_1(1 - e^{-h/a})}.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Cressie (1985); Schabenberger & Gotway (2005), Ch 3.
 }

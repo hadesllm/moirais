@@ -17,3 +17,9 @@ Named list: statistic, p_value, z, n, m.
 Scores a_i = qnorm(R_i / (N + 1)); statistic = sum over the
 first sample.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

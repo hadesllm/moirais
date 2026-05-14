@@ -17,3 +17,9 @@
 \value{
   Data frame of selected units with '.weight' (Hansen-Hurwitz weights).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

@@ -9,6 +9,11 @@
 #' @param quota Winning threshold q (default sum(w)/2).
 #' @return Named list with `banzhaf`, `shapley_shubik`, `quota`,
 #'   `weights`, `method`.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 vtpwr <- function(x, quota = NULL) {
   w <- as.numeric(x); n <- length(w)

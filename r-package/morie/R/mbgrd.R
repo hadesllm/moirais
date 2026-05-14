@@ -10,6 +10,11 @@
 #' @param seed RNG seed for shuffling.
 #' @return Named list: estimate, reference_ols, n_epochs, batch_size,
 #'   loss, n, method.
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 mini_batch_gradient <- function(x, y, lr = 0.01, n_epochs = 200,
                                 batch_size = 32L, seed = 0L) {

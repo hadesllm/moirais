@@ -31,6 +31,12 @@ R parity for \code{morie.fn.xavir.xavier_init}.
 \eqn{W \sim U[-\sqrt{6/(n_{in}+n_{out})}, +\sqrt{6/(n_{in}+n_{out})}]}
 (uniform).
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}
 \references{
 Glorot & Bengio (2010), AISTATS.
 }

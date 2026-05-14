@@ -14,3 +14,9 @@
 \value{
   Named list with high-level diagnostics.
 }
+\examples{
+\dontrun{
+  # See the package vignettes for usage examples:
+  #   vignette(package = "morie")
+}
+}

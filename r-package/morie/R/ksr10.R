@@ -11,6 +11,11 @@
 #' @param tol Convergence tolerance (default 1e-10).
 #' @return Named list with estimate, se, n, method.
 #' @references Kosorok (2008), Ch 5; Huber (1981).
+#' @examples
+#' \dontrun{
+#'   # See the package vignettes for usage examples:
+#'   #   vignette(package = "morie")
+#' }
 #' @export
 ksr10_kosorok_m_estimator <- function(x, y = NULL, k = 1.345,
                                        max_iter = 100, tol = 1e-10) {

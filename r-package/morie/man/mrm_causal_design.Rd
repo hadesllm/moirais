@@ -34,3 +34,21 @@ ci_upper, p_value, n, n_treated, interpretation.
 Designed-experiment convenience wrapper around the morie causal
 estimator family
 }
+\examples{
+set.seed(2026)
+n <- 200L
+x <- rnorm(n)
+D <- rbinom(n, 1, plogis(0.5 * x))
+y <- 0.7 * D + 0.3 * x + rnorm(n, 0, 0.5)
+df <- data.frame(D = D, y = y, age = x)
+# IPW-adjusted ATE
+ipw <- mrm_causal_design(df, treatment_col = "D",
+                         outcome_col = "y",
+                         covariates = "age",
+                         estimator = "ipw")
+# Naive difference in means for comparison
+raw <- mrm_causal_design(df, treatment_col = "D",
+                         outcome_col = "y",
+                         estimator = "diff_in_means")
+c(ipw = ipw$estimate, raw = raw$estimate)
+}

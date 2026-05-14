@@ -93,6 +93,16 @@ mrm_anova_bonferroni <- function(data, response_col, group_col, alpha = 0.05) {
 #' @param response_col,treatment_col,block_col Column names.
 #' @return Named list with anova (data.frame), n, n_treatments,
 #'   n_blocks, interpretation.
+#' @examples
+#' set.seed(2026)
+#' df <- expand.grid(treatment = c("A", "B", "C"),
+#'                   block = c("B1", "B2", "B3", "B4"))
+#' # Treatment effect + block effect + noise
+#' df$y <- as.numeric(df$treatment) * 2 +
+#'   as.numeric(df$block) * 0.5 + rnorm(nrow(df), 0, 0.3)
+#' res <- mrm_rcbd(df, response_col = "y",
+#'                 treatment_col = "treatment", block_col = "block")
+#' res$anova
 #' @export
 mrm_rcbd <- function(data, response_col, treatment_col, block_col) {
   d <- data[, c(response_col, treatment_col, block_col)]
@@ -123,6 +133,17 @@ mrm_rcbd <- function(data, response_col, treatment_col, block_col) {
 #' @param data data.frame.
 #' @param response_col,row_col,col_col,treatment_col Column names.
 #' @return Named list with anova, n, k, interpretation.
+#' @examples
+#' # 4 x 4 Latin square: each treatment appears once per row and column.
+#' set.seed(2026)
+#' sq <- mrm_random_latin(k = 4, seed = 2026)
+#' df <- expand.grid(row = paste0("R", 1:4), col = paste0("C", 1:4))
+#' df$treatment <- as.vector(sq)
+#' df$y <- match(df$treatment, LETTERS) * 1.5 + rnorm(16, 0, 0.4)
+#' res <- mrm_latin_square(df, response_col = "y",
+#'                         row_col = "row", col_col = "col",
+#'                         treatment_col = "treatment")
+#' res$anova
 #' @export
 mrm_latin_square <- function(data, response_col, row_col, col_col,
                               treatment_col) {
@@ -152,6 +173,20 @@ mrm_latin_square <- function(data, response_col, row_col, col_col,
 #' @param data data.frame.
 #' @param response_col,row_col,col_col,latin_col,greek_col Column names.
 #' @return Named list with anova, n, interpretation.
+#' @examples
+#' # 4 x 4 Graeco-Latin: two orthogonal Latin squares overlaid.
+#' set.seed(2026)
+#' L <- mrm_random_latin(4, seed = 2026)
+#' G <- mrm_random_latin(4, seed = 2027)
+#' df <- expand.grid(row = paste0("R", 1:4), col = paste0("C", 1:4))
+#' df$latin <- as.vector(L)
+#' df$greek <- as.vector(G)
+#' df$y <- match(df$latin, LETTERS) * 1.2 +
+#'   match(df$greek, LETTERS) * 0.5 + rnorm(16, 0, 0.3)
+#' res <- mrm_graeco_latin(df, response_col = "y",
+#'                         row_col = "row", col_col = "col",
+#'                         latin_col = "latin", greek_col = "greek")
+#' res$anova
 #' @export
 mrm_graeco_latin <- function(data, response_col, row_col, col_col,
                               latin_col, greek_col) {
@@ -187,6 +222,19 @@ mrm_graeco_latin <- function(data, response_col, row_col, col_col,
 #' @param generator Optional generator string "X=YZ,..." for aliasing.
 #' @return Named list with main_effects, alias_structure, n, k,
 #'   interpretation.
+#' @examples
+#' # 2^(3-1) fractional with D = A*B*C generator: 4 runs instead of 8.
+#' set.seed(2026)
+#' lvl <- c(-1, 1)
+#' df <- data.frame(
+#'   A = c(-1, 1, -1, 1),
+#'   B = c(-1, -1, 1, 1),
+#'   C = c(1, -1, -1, 1)
+#' )
+#' df$y <- 5 + 2 * df$A + 1.5 * df$B + rnorm(4, 0, 0.3)
+#' res <- mrm_fractional_factorial(df, response_col = "y",
+#'                                 factor_cols = c("A", "B", "C"))
+#' res$main_effects
 #' @export
 mrm_fractional_factorial <- function(data, response_col, factor_cols,
                                       generator = NULL) {
@@ -227,6 +275,17 @@ mrm_fractional_factorial <- function(data, response_col, factor_cols,
 #' @param factor_cols Character vector of factor columns.
 #' @return Named list with coefficients, stationary_point,
 #'   stationary_y, stationary_nature, eigenvalues, n, interpretation.
+#' @examples
+#' # Central composite design on (x1, x2) with quadratic response.
+#' set.seed(2026)
+#' df <- expand.grid(x1 = c(-1.4, -1, 0, 1, 1.4),
+#'                   x2 = c(-1.4, -1, 0, 1, 1.4))
+#' df$y <- 10 + 2 * df$x1 + 1.5 * df$x2 -
+#'   df$x1^2 - 1.2 * df$x2^2 + rnorm(nrow(df), 0, 0.2)
+#' res <- mrm_response_surface(df, response_col = "y",
+#'                             factor_cols = c("x1", "x2"))
+#' res$stationary_point
+#' res$stationary_nature
 #' @export
 mrm_response_surface <- function(data, response_col, factor_cols) {
   d <- data[, c(response_col, factor_cols), drop = FALSE]
@@ -337,6 +396,17 @@ mrm_anova_power <- function(k_groups, n_per_group, effect_size_f,
 #' @param alpha Type-I error level.
 #' @param seed Seed for outer RNG.
 #' @return Named list with empirical_power, se, ci95 bounds.
+#' @examples
+#' # Empirical power of a one-sample t-test against H0: mu = 0
+#' # with true mu = 0.4 and n = 30.
+#' my_sim <- function(seed) {
+#'   set.seed(seed)
+#'   x <- rnorm(30, mean = 0.4, sd = 1)
+#'   stats::t.test(x, mu = 0)$p.value
+#' }
+#' res <- mrm_mc_power(my_sim, n_sims = 500L, alpha = 0.05)
+#' res$empirical_power
+#' res$ci95_lower; res$ci95_upper
 #' @export
 mrm_mc_power <- function(simulator, n_sims = 1000L, alpha = 0.05, seed = 42L) {
   set.seed(seed)
@@ -370,6 +440,19 @@ mrm_mc_power <- function(simulator, n_sims = 1000L, alpha = 0.05, seed = 42L) {
 #' @param seed RNG seed.
 #' @return Named list with observed_statistic, n_perm, p_value,
 #'   interpretation.
+#' @examples
+#' set.seed(2026)
+#' df <- expand.grid(block = paste0("B", 1:6),
+#'                   treatment = c("ctrl", "drug"))
+#' # Block-level baseline + treatment effect
+#' df$y <- as.numeric(df$block) * 1.2 +
+#'   ifelse(df$treatment == "drug", 0.7, 0) +
+#'   rnorm(nrow(df), 0, 0.4)
+#' res <- mrm_perm_block(df, response_col = "y",
+#'                       treatment_col = "treatment",
+#'                       block_col = "block",
+#'                       n_perm = 500L)
+#' res$p_value
 #' @export
 mrm_perm_block <- function(data, response_col, treatment_col, block_col,
                             n_perm = 1000L, seed = 42L) {
@@ -415,6 +498,14 @@ mrm_perm_block <- function(data, response_col, treatment_col, block_col,
 #' @param k Side length.
 #' @param seed RNG seed.
 #' @return A k x k matrix with row names R1..Rk and column names C1..Ck.
+#' @examples
+#' # 4 x 4 random Latin square: each of {A, B, C, D} appears once
+#' # per row and per column.
+#' mrm_random_latin(k = 4, seed = 42L)
+#'
+#' # Reproducible across runs with the same seed:
+#' identical(mrm_random_latin(5, seed = 7),
+#'           mrm_random_latin(5, seed = 7))
 #' @export
 mrm_random_latin <- function(k, seed = 42L) {
   set.seed(seed)

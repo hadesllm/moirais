@@ -21,3 +21,15 @@ stationary_y, stationary_nature, eigenvalues, n, interpretation.
 Fits y = b0 + sum b_i x_i + sum b_ii x_i^2 + sum b_ij x_i x_j and
 returns the stationary point if the quadratic matrix B is invertible.
 }
+\examples{
+# Central composite design on (x1, x2) with quadratic response.
+set.seed(2026)
+df <- expand.grid(x1 = c(-1.4, -1, 0, 1, 1.4),
+                  x2 = c(-1.4, -1, 0, 1, 1.4))
+df$y <- 10 + 2 * df$x1 + 1.5 * df$x2 -
+  df$x1^2 - 1.2 * df$x2^2 + rnorm(nrow(df), 0, 0.2)
+res <- mrm_response_surface(df, response_col = "y",
+                            factor_cols = c("x1", "x2"))
+res$stationary_point
+res$stationary_nature
+}

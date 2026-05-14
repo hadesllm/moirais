@@ -19,3 +19,14 @@ n_blocks, interpretation.
 Model: y_ij = mu + tau_i (treatment) + beta_j (block) + eps_ij
 Returns Type-I ANOVA: block enters first, then treatment.
 }
+\examples{
+set.seed(2026)
+df <- expand.grid(treatment = c("A", "B", "C"),
+                  block = c("B1", "B2", "B3", "B4"))
+# Treatment effect + block effect + noise
+df$y <- as.numeric(df$treatment) * 2 +
+  as.numeric(df$block) * 0.5 + rnorm(nrow(df), 0, 0.3)
+res <- mrm_rcbd(df, response_col = "y",
+                treatment_col = "treatment", block_col = "block")
+res$anova
+}

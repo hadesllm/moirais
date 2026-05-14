@@ -29,3 +29,17 @@ interpretation.
 \description{
 Permutes treatment labels within each block.
 }
+\examples{
+set.seed(2026)
+df <- expand.grid(block = paste0("B", 1:6),
+                  treatment = c("ctrl", "drug"))
+# Block-level baseline + treatment effect
+df$y <- as.numeric(df$block) * 1.2 +
+  ifelse(df$treatment == "drug", 0.7, 0) +
+  rnorm(nrow(df), 0, 0.4)
+res <- mrm_perm_block(df, response_col = "y",
+                      treatment_col = "treatment",
+                      block_col = "block",
+                      n_perm = 500L)
+res$p_value
+}

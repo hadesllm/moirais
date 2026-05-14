@@ -17,3 +17,15 @@ Named list with anova, n, k, interpretation.
 \description{
 Latin-square three-way ANOVA (row, col, treatment)
 }
+\examples{
+# 4 x 4 Latin square: each treatment appears once per row and column.
+set.seed(2026)
+sq <- mrm_random_latin(k = 4, seed = 2026)
+df <- expand.grid(row = paste0("R", 1:4), col = paste0("C", 1:4))
+df$treatment <- as.vector(sq)
+df$y <- match(df$treatment, LETTERS) * 1.5 + rnorm(16, 0, 0.4)
+res <- mrm_latin_square(df, response_col = "y",
+                        row_col = "row", col_col = "col",
+                        treatment_col = "treatment")
+res$anova
+}

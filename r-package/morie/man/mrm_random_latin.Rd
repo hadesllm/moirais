@@ -18,3 +18,12 @@ A k x k matrix with row names R1..Rk and column names C1..Ck.
 Builds the cyclic Latin square then permutes rows, columns,
 and symbols.  Uniform over a subset of Latin squares (not all).
 }
+\examples{
+# 4 x 4 random Latin square: each of {A, B, C, D} appears once
+# per row and per column.
+mrm_random_latin(k = 4, seed = 42L)
+
+# Reproducible across runs with the same seed:
+identical(mrm_random_latin(5, seed = 7),
+          mrm_random_latin(5, seed = 7))
+}

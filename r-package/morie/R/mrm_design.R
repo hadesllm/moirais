@@ -29,6 +29,14 @@ NULL
 #' @return Named list with estimate, se, t_statistic, df,
 #'   p_welch, p_student, p_mannwhitney, ci_lower, ci_upper,
 #'   n_a, n_b, interpretation.
+#' @examples
+#' set.seed(2026)
+#' a <- rnorm(40, mean = 5,  sd = 1.2)
+#' b <- rnorm(40, mean = 5.5, sd = 1.5)
+#' res <- mrm_two_treatment_test(a, b)
+#' res$estimate     # mean(a) - mean(b)
+#' res$p_welch      # canonical p-value
+#' res$p_mannwhitney # rank-based sensitivity check
 #' @export
 mrm_two_treatment_test <- function(a, b, alpha = 0.05) {
   a <- as.numeric(a); b <- as.numeric(b)
@@ -119,6 +127,16 @@ mrm_anova_oneway <- function(data, response_col, group_col, alpha = 0.05) {
 #' @param factor_cols Character vector of factor column names.
 #' @return Named list with main_effects, interaction_effects,
 #'   half_normal_coords (data.frame), n, k, interpretation.
+#' @examples
+#' # 2^3 full factorial: 8 runs, factors A, B, C in {-1, +1}.
+#' set.seed(2026)
+#' lvl <- c(-1, 1)
+#' df <- expand.grid(A = lvl, B = lvl, C = lvl)
+#' df$y <- 10 + 2 * df$A + 1.5 * df$B + 0.5 * df$A * df$B + rnorm(8, 0, 0.2)
+#' res <- mrm_factorial_2k(df, response_col = "y",
+#'                         factor_cols = c("A", "B", "C"))
+#' res$main_effects
+#' res$interaction_effects
 #' @export
 mrm_factorial_2k <- function(data, response_col, factor_cols) {
   k <- length(factor_cols)
@@ -186,6 +204,23 @@ mrm_factorial_2k <- function(data, response_col, factor_cols) {
 #'   propensity), \code{"diff_in_means"} (no adjustment).
 #' @return Named list with estimator, estimate, se, ci_lower,
 #'   ci_upper, p_value, n, n_treated, interpretation.
+#' @examples
+#' set.seed(2026)
+#' n <- 200L
+#' x <- rnorm(n)
+#' D <- rbinom(n, 1, plogis(0.5 * x))
+#' y <- 0.7 * D + 0.3 * x + rnorm(n, 0, 0.5)
+#' df <- data.frame(D = D, y = y, age = x)
+#' # IPW-adjusted ATE
+#' ipw <- mrm_causal_design(df, treatment_col = "D",
+#'                          outcome_col = "y",
+#'                          covariates = "age",
+#'                          estimator = "ipw")
+#' # Naive difference in means for comparison
+#' raw <- mrm_causal_design(df, treatment_col = "D",
+#'                          outcome_col = "y",
+#'                          estimator = "diff_in_means")
+#' c(ipw = ipw$estimate, raw = raw$estimate)
 #' @importFrom stats as.formula
 #' @export
 mrm_causal_design <- function(

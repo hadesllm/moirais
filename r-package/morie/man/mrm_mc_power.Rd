@@ -21,3 +21,15 @@ Named list with empirical_power, se, ci95 bounds.
 \description{
 Empirical Monte-Carlo power
 }
+\examples{
+# Empirical power of a one-sample t-test against H0: mu = 0
+# with true mu = 0.4 and n = 30.
+my_sim <- function(seed) {
+  set.seed(seed)
+  x <- rnorm(30, mean = 0.4, sd = 1)
+  stats::t.test(x, mu = 0)$p.value
+}
+res <- mrm_mc_power(my_sim, n_sims = 500L, alpha = 0.05)
+res$empirical_power
+res$ci95_lower; res$ci95_upper
+}

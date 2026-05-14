@@ -22,3 +22,17 @@ interpretation.
 \description{
 Factor columns assumed +/-1.
 }
+\examples{
+# 2^(3-1) fractional with D = A*B*C generator: 4 runs instead of 8.
+set.seed(2026)
+lvl <- c(-1, 1)
+df <- data.frame(
+  A = c(-1, 1, -1, 1),
+  B = c(-1, -1, 1, 1),
+  C = c(1, -1, -1, 1)
+)
+df$y <- 5 + 2 * df$A + 1.5 * df$B + rnorm(4, 0, 0.3)
+res <- mrm_fractional_factorial(df, response_col = "y",
+                                factor_cols = c("A", "B", "C"))
+res$main_effects
+}

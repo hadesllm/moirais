@@ -16,9 +16,9 @@ A named list with dataset metadata.
 Get metadata for a single dataset
 }
 \examples{
-info <- morie_dataset_info("oc_cpads_2021")
+# Use a real catalog key (run `morie_dataset_catalog()$key` to list them):
+info <- morie_dataset_info("ocp21")
 info$source; info$year
-# Fuzzy match works too:
-morie_dataset_info("cpads_2021")$key
-
+# Fuzzy match works for partial / forgiving keys:
+morie_dataset_info("cpads")$key
 }

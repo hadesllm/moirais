@@ -18,3 +18,12 @@
 \value{
   Data frame of step statuses.
 }
+\examples{
+\dontrun{
+  # Runs a sequence of workflow steps from the project root.
+  result <- run_pipeline(steps = c("modules", "publish"),
+                        project_root = ".",
+                        verbose = TRUE)
+  result$step_results
+}
+}

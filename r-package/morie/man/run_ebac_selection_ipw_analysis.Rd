@@ -19,3 +19,19 @@ Mirrors the core outputs of the old '07_ebac_ipw.R' workflow.
 \value{
   Named list of output tables and the observed-domain analysis frame.
 }
+\examples{
+\dontrun{
+  set.seed(2026)
+  n <- 200L
+  x1 <- rnorm(n); x2 <- rnorm(n); x3 <- rnorm(n)
+  D <- rbinom(n, 1, plogis(0.5 * x1))
+  df <- data.frame(D = D, x1 = x1, x2 = x2, x3 = x3)
+  out <- run_ebac_selection_ipw_analysis(
+    data = df,
+    output_dir = tempdir(),
+    treatment = "D",
+    covariates = c("x1", "x2", "x3")
+  )
+  out$selected_covariates
+}
+}

@@ -11,7 +11,7 @@
 
 
 
-<title>MRM walkthrough on OTIS provincial data</title>
+<title>MRM empirical callables (OTIS / TPS / SIU)</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,93 +348,238 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">MRM walkthrough on OTIS provincial
-data</h1>
+<h1 class="title toc-ignore">MRM empirical callables (OTIS / TPS /
+SIU)</h1>
 
 </div>
 
 
-<div id="what-this-vignette-covers" class="section level1">
-<h1>What this vignette covers</h1>
-<p>The <strong>MRM (Multilevel Reconciliation Methodology;</strong>
-people-credit reading: McNamara–Ruhela–Medina<strong>)</strong>
-framework is a coordinated set of ten causal estimators paired with a
-multi-source data layer for Canadian carceral, police, and oversight
-data. This vignette uses the provincial Offender Tracking Information
-System (OTIS; published by the Ontario Ministry of the Solicitor
-General) restrictive-confinement microdata as an example, applies the
-ten-estimator ensemble to a binary-treatment design on dataset
-<code>a01</code>, and shows how to read the resulting summary.</p>
-<p>The mathematical foundations are developed in the companion paper
-(Ruhela 2026, <em>The MRM Framework</em>, Zenodo <a href="https://doi.org/10.5281/zenodo.20096075">10.5281/zenodo.20096075</a>).</p>
-</div>
-<div id="loading-otis" class="section level1">
-<h1>Loading OTIS</h1>
-<p>OTIS is shipped with the package; the
-<code>morie_load_dataset()</code> loader hides the SQLite-backed
-indirection.</p>
-<pre class="r"><code>library(morie)
-otis &lt;- morie_load_dataset(&quot;otis-2025-a01&quot;)
-str(otis)</code></pre>
-</div>
-<div id="the-canonical-a01-design" class="section level1">
-<h1>The canonical a01 design</h1>
-<p>For dataset <code>a01</code> the canonical formulation is
-<code>T_high_ac</code> (a binary treatment derived from
-administrative-classification flags) on <code>Y_vm_count</code> (a count
-of a specific in-confinement observation) with the standard demographic
-covariate set. This is the design choice that the per-row MRM modules
-implement.</p>
-<pre class="r"><code># Full ten-estimator ensemble on the canonical a01 design:
-result &lt;- estimate_ate(
-  data       = otis,
-  outcome    = &quot;Y_vm_count&quot;,
-  treatment  = &quot;T_high_ac&quot;,
-  covariates = c(&quot;age&quot;, &quot;sex&quot;, &quot;region&quot;, &quot;fiscal_year&quot;)
-)
-print(result)</code></pre>
-<p>The returned object summarises the IPW (Hajek), AIPW
-(Robins–Rotnitzky–Zhao), g-computation, propensity-score-matching (1:1
-NN and five-strata subclass), IRM-DML (Chernozhukov <em>et al.</em>
-2018), PLR-DML, and SuperLearner-stacked AIPW estimates. Multi-SE
-comparison (pooled, cluster on fiscal year, cluster on individual ID,
-two-way) is reported alongside the IRM-DML primary.</p>
-</div>
-<div id="augmented-ipw" class="section level1">
-<h1>Augmented IPW</h1>
-<pre class="r"><code>result_aipw &lt;- estimate_aipw(
-  data       = otis,
-  outcome    = &quot;Y_vm_count&quot;,
-  treatment  = &quot;T_high_ac&quot;,
-  covariates = c(&quot;age&quot;, &quot;sex&quot;, &quot;region&quot;, &quot;fiscal_year&quot;)
-)
-print(result_aipw)</code></pre>
-</div>
-<div id="aggregate-companion-incidence-rate-ratios" class="section level1">
-<h1>Aggregate companion: incidence-rate ratios</h1>
-<p>For aggregate (year-level) outcomes the analog is a Poisson or
-negative-binomial GLM with cluster-robust standard errors. The MRM
-framework reports both the per-row individual-level estimate (above) and
-the aggregate IRR family in parallel; see the companion paper for the
-formal aggregate-IRR notation.</p>
-</div>
-<div id="mandela-classification" class="section level1">
-<h1>Mandela classification</h1>
-<p>A separate Mandela-Rules classifier (UN Mandela Rules 43 and 44) is
-applied at both the federal and provincial levels. The provincial
-implementation uses a duration-only proxy that is documented explicitly
-in the framework paper. Federal counterpart analyses (SIU IAP,
-Sprott–Doob–Iftene) live in the companion Python module
-<code>morie.tps_csi</code> and <code>morie.siu_iap</code>.</p>
-</div>
-<div id="where-to-go-next" class="section level1">
-<h1>Where to go next</h1>
+<div id="overview" class="section level1">
+<h1>Overview</h1>
+<p>This vignette documents the <code>mrm_otis_*()</code>,
+<code>mrm_tps_*()</code>, and <code>mrm_siu_*()</code> empirical
+callables. Each function is a one-line entry point to a verified
+analysis used in the <em>MRM empirical paper</em> (Ruhela 2026, in
+preparation). Every example below runs on the small reference samples
+bundled with the package, so the vignette is network-free.</p>
+<p>For the full datasets:</p>
 <ul>
-<li>The full MRM framework paper, including all ten estimators, multi-SE
-comparison, propensity calibration, and the Sprott–Doob–Iftene
-replication tables, is at Zenodo <a href="https://doi.org/10.5281/zenodo.20096075">10.5281/zenodo.20096075</a>.</li>
-<li>The MORIE package paper covers the broader toolkit: <a href="https://doi.org/10.5281/zenodo.20096350">10.5281/zenodo.20096350</a>.</li>
-<li>Citation: see <code>citation(&quot;morie&quot;)</code>.</li>
+<li>OTIS 192 <code>morie_load_dataset(&quot;otisb01&quot;)</code> (downloads via
+CKAN on first call; subsequent calls hit the local SQLite cache)</li>
+<li>TPS 192 <code>morie_fetch_tps(&quot;Assault&quot;)</code> (ArcGIS REST)</li>
+<li>SIU 192 <code>morie_fetch_siu()</code> (on-demand scrape of public
+reports)</li>
+</ul>
+<p>See <code>vignette(&quot;mrm-dataset-fetchers&quot;)</code> for the dataset
+side.</p>
+<pre class="r"><code>library(morie)
+b01 &lt;- morie_sample(&quot;otis_b01&quot;)
+b09 &lt;- morie_sample(&quot;otis_b09&quot;)
+tps &lt;- morie_sample(&quot;tps_assault&quot;)</code></pre>
+</div>
+<div id="otis-suite" class="section level1">
+<h1>OTIS suite</h1>
+<div id="placement-count-concentration-on-b09" class="section level2">
+<h2>Placement-count concentration on <code>b09</code></h2>
+<p>The b09 long-format file publishes per (fiscal year 0d7
+placement-count band 0d7 gender) counts of individuals in segregation.
+The callable expands the banded counts using midpoints and returns
+Hill-MLE Pareto exponent, Gini coefficient, mean placements per
+individual, and the top-k% concentration share.</p>
+<pre class="r"><code>mrm_otis_placement_concentration(b09)
+#&gt;     year n_individuals n_placements mean_per_individual   gini hill_alpha
+#&gt; 1   2023         12647        55421            4.382146 0.5331     2.0174
+#&gt; 2   2024         10881        47123            4.330760 0.5862     2.1599
+#&gt; 3   2025          9608        46893            4.880620 0.6057     2.0880
+#&gt; 4 pooled         33136       149437            4.509808 0.5748     2.0814
+#&gt;   top_pct_share
+#&gt; 1        0.2932
+#&gt; 2        0.3351
+#&gt; 3        0.3215
+#&gt; 4        0.3180</code></pre>
+<p>The values are computed <em>within fiscal year</em>: OTIS
+<code>UniqueIndividual_ID</code> has format <code>YYYY-XXXXX-SG</code>
+and is randomly reassigned every fiscal year, so cross-year tracking is
+invalid by design.</p>
+</div>
+<div id="segregation-duration-km-on-b01" class="section level2">
+<h2>Segregation-duration KM on <code>b01</code></h2>
+<p><code>NumberConsecutiveDays_Segregation</code> is the duration in
+days of each placement (no censoring 014 all durations are observed).
+The callable reports the per-stratum mean, median, q25, and the fraction
+above the UN Mandela 15-day cutoff.</p>
+<pre class="r"><code>mrm_otis_seg_duration_km(b01)
+#&gt;   stratum    n mean_days median_days q25_days pct_above_mandela
+#&gt; 1  pooled 1000      3.03           2        3               0.7
+#&gt;   median_among_above_mandela
+#&gt; 1                         54
+mrm_otis_seg_duration_km(b01, group_cols = &quot;MentalHealth_Alert&quot;)
+#&gt;   stratum   n mean_days median_days q25_days pct_above_mandela
+#&gt; 1      No 499      2.76           2        3               0.6
+#&gt; 2     Yes 501      3.29           2        4               0.8
+#&gt;   median_among_above_mandela
+#&gt; 1                       54.0
+#&gt; 2                       41.5</code></pre>
+<p>This callable replaces the misreading of <code>YYYY-XXXXX-SG</code>
+as a persistent person identifier, which produces a spurious cross-year
+“time-to-readmission” artifact.</p>
+</div>
+<div id="mortification-co-occurrence-alert-columns" class="section level2">
+<h2>Mortification co-occurrence (alert columns)</h2>
+<p>The three b01 alert flags (<code>MentalHealth_Alert</code>,
+<code>SuicideRisk_Alert</code>, <code>SuicideWatch_Alert</code>)
+co-occur to a degree well above independence. The substantive figure is
+<code>MentalHealth \u00d7 SuicideRisk</code> Cramer’s V.</p>
+<pre class="r"><code>mrm_otis_mortification_cooccurrence(b01)
+#&gt;              alert_a            alert_b    n   chi2 df   p_value cramers_v
+#&gt; 1 MentalHealth_Alert  SuicideRisk_Alert 1000  33.25  1  8.12e-09    0.1823
+#&gt; 2 MentalHealth_Alert SuicideWatch_Alert 1000  12.09  1  5.08e-04    0.1099
+#&gt; 3  SuicideRisk_Alert SuicideWatch_Alert 1000 470.37  1 2.66e-104    0.6858</code></pre>
+</div>
+<div id="region-locality" class="section level2">
+<h2>Region locality</h2>
+<p>Ontario provincial seg/RC placement is overwhelmingly
+locality-preserving 014 over 95% of placements remain within the same
+region in the full b01.</p>
+<pre class="r"><code># (Region columns are present only in the full b01, not the bundled
+# sample; uncomment after morie_load_dataset(&quot;otisb01&quot;) or
+# morie_fetch_tps(...) if needed.)
+res &lt;- mrm_otis_region_locality(b01)
+print(res$table)
+cat(&quot;diagonal share:&quot;, res$diagonal_share, &quot;  V:&quot;, res$cramers_v, &quot;\n&quot;)</code></pre>
+</div>
+<div id="mandela-classification" class="section level2">
+<h2>Mandela classification</h2>
+<p><code>mrm_classify_mandela()</code> shipped in v0.1.14 and remains
+the canonical Mandela classifier in v0.2.0. It supports three
+operationalisations:</p>
+<pre class="r"><code>mrm_classify_mandela(b01, denominator = &quot;row&quot;)           # per-placement
+#&gt;     year denominator n_mandela        rate  pct n_broader_rc rate_broader
+#&gt; 1   2023         362         0 0.000000000 0.00            0  0.000000000
+#&gt; 2   2024         337         3 0.008902077 0.89            3  0.008902077
+#&gt; 3   2025         301         4 0.013289037 1.33            4  0.013289037
+#&gt; 4 pooled        1000         7 0.007000000 0.70            7  0.007000000
+mrm_classify_mandela(b01, denominator = &quot;individual_any&quot;) # per-person
+#&gt;     year denominator n_mandela        rate  pct n_broader_rc rate_broader
+#&gt; 1   2023         354         0 0.000000000 0.00            0  0.000000000
+#&gt; 2   2024         329         3 0.009118541 0.91            3  0.009118541
+#&gt; 3   2025         289         4 0.013840830 1.38            4  0.013840830
+#&gt; 4 pooled         972         7 0.007201646 0.72            7  0.007201646
+mrm_classify_mandela(b01, denominator = &quot;individual_cumulative&quot;)
+#&gt;     year denominator n_mandela        rate  pct n_broader_rc rate_broader
+#&gt; 1   2023         354         0 0.000000000 0.00            0  0.000000000
+#&gt; 2   2024         329         3 0.009118541 0.91            3  0.009118541
+#&gt; 3   2025         289         5 0.017301038 1.73            5  0.017301038
+#&gt; 4 pooled         972         8 0.008230453 0.82            8  0.008230453</code></pre>
+<p>The provincial-canonical 12.5/16.5/20.6 % torture rates from c11
+require the <code>c11</code> aggregate (loaded via
+<code>morie_sample(&quot;otis_c11&quot;)</code>); see the MRM empirical paper
+0a76.</p>
+</div>
+</div>
+<div id="tps-suite" class="section level1">
+<h1>TPS suite</h1>
+<div id="levy-flight-hill-exponent-on-inter-event-step-lengths" class="section level2">
+<h2>Levy-flight Hill exponent on inter-event step lengths</h2>
+<p>Treats consecutive events in chronological order as a single stream
+and computes the haversine inter-event step length (km). Returns the
+Hill-MLE exponent restricted to steps above
+<code>min_step_km</code>.</p>
+<pre class="r"><code>mrm_tps_levy_scaling(tps)
+#&gt; $n_events
+#&gt; [1] 1000
+#&gt; 
+#&gt; $n_steps_tail
+#&gt; [1] 995
+#&gt; 
+#&gt; $min_step_km
+#&gt; [1] 0.5
+#&gt; 
+#&gt; $hill_alpha
+#&gt; [1] 1.3043</code></pre>
+</div>
+<div id="morans-i-dbscan-clustering" class="section level2">
+<h2>Moran’s I + DBSCAN clustering</h2>
+<p>Grids the WGS84 extent into a coarse raster, counts events per cell,
+and computes the global Moran’s I via a rook-contiguity matrix. Also
+runs DBSCAN on the raw lat/long points (rescaled to km) for cluster
+counts.</p>
+<pre class="r"><code>mrm_tps_moran_clustering(tps, grid_resolution = 20L)
+#&gt; $morans_I
+#&gt; [1] -0.000138
+#&gt; 
+#&gt; $morans_z
+#&gt; [1] 0.67
+#&gt; 
+#&gt; $dbscan_n_clusters
+#&gt; [1] 21
+#&gt; 
+#&gt; $dbscan_n_noise
+#&gt; [1] 730
+#&gt; 
+#&gt; $dbscan_largest
+#&gt; [1] 82</code></pre>
+<p>For the high-precision computation on the full 254,378-event Assault
+file, use the <code>morie</code> Python
+<code>tps_spatial_advanced</code> pipeline; the R version is for quick
+interactive auditing.</p>
+</div>
+<div id="neighbourhood-inter-event-recurrence" class="section level2">
+<h2>Neighbourhood inter-event recurrence</h2>
+<p>For each <code>HOOD_158</code> neighbourhood, sorts events
+chronologically and computes the gap (in days) between consecutive
+events.</p>
+<pre class="r"><code>head(mrm_tps_neighbourhood_recurrence_km(tps))
+#&gt;   hood n_events n_gaps mean_gap_days median_gap_days p25_gap_days p75_gap_days
+#&gt; 1  001       17     16        267.06           213.5       101.00       356.75
+#&gt; 2  002       12     11        447.91           360.0        74.00       606.00
+#&gt; 3  003        5      4        887.75           869.0       557.75      1199.00
+#&gt; 4  004        3      2       1781.00          1781.0      1065.50      2496.50
+#&gt; 5  005        4      3        776.00           676.0       537.00       965.00
+#&gt; 6  006        5      4        845.00           731.0       289.50      1286.50</code></pre>
+</div>
+<div id="hawkes-manifest-loader" class="section level2">
+<h2>Hawkes manifest loader</h2>
+<p><code>mrm_tps_load_hawkes_refit(path)</code> reads
+<code>paper_hawkes_refit.json</code> (the per-category Hawkes refit
+table from the MRM empirical paper 0a77.1-7.2) and returns it as a tidy
+data.frame. Skipped here because the JSON is in the MOIRAIS data
+manifest, not bundled with the package.</p>
+</div>
+</div>
+<div id="siu-suite" class="section level1">
+<h1>SIU suite</h1>
+<p>The SIU callables operate on the SIU.csv file produced by
+<code>morie_fetch_siu()</code> (an on-demand scraper of the public
+Director’s Reports). The scraped corpus is not shipped, but the
+callables themselves do not depend on shipped data.</p>
+<pre class="r"><code>siu_path &lt;- morie_fetch_siu()
+siu &lt;- read.csv(siu_path)
+res &lt;- mrm_siu_case_to_decision_km(siu)
+print(res$pooled)
+head(res$by_service[order(-res$by_service$n),])
+mrm_siu_per_service_rate(siu)
+mrm_siu_outcome_classifier(siu)</code></pre>
+<p>The verified pooled median in our test snapshot is <strong>120 days
+from incident to Director’s decision</strong> (n = 1,711 cases).
+Per-service medians cluster tightly around 120, indicating a system-wide
+processing cadence rather than a per-jurisdiction effect.</p>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<ul>
+<li>MRM theoretical paper 014 Ruhela (2026), <em>MRM: Multilevel
+Reconciliation Methodology — A Multi-Source Statistical Foundation for
+Canadian Carceral, Police, and Oversight Data</em>, Zenodo <a href="https://doi.org/10.5281/zenodo.20096075">10.5281/zenodo.20096075</a>.</li>
+<li>MRM empirical paper 014 Ruhela (2026), <em>Solitary Confinement,
+Self-Excitation, and Institutional Churn: Empirical Applications of MRM
+to Canadian Carceral and Police Data</em>, Zenodo <a href="https://doi.org/10.5281/zenodo.20175689">10.5281/zenodo.20175689</a>.</li>
+<li>OTIS data dictionary 014
+<code>data.ontario.ca/dataset/data-on-inmates-in-ontario</code>.</li>
+<li>Toronto Police Open Data 014
+<code>data.torontopolice.on.ca/</code>.</li>
+<li>SIU public Director’s Reports 014
+<code>siu.on.ca/en/case_directors_reports.php</code>.</li>
 </ul>
 </div>
 

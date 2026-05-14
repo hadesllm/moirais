@@ -15,3 +15,13 @@
 \value{
   Data frame containing declared and observed output status.
 }
+\examples{
+\dontrun{
+  # Walks the project's outputs_manifest.csv and confirms every
+  # declared public artefact exists on disk.
+  manifest <- read_outputs_manifest(project_root = ".")
+  audit <- audit_public_outputs(project_root = ".",
+                                manifest = manifest)
+  summarize_output_audit(audit)
+}
+}

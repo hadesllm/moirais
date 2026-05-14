@@ -1,0 +1,199 @@
+---
+title: "MRM empirical callables (OTIS / TPS / SIU)"
+output:
+  rmarkdown::html_vignette:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{MRM empirical callables (OTIS / TPS / SIU)}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  eval     = requireNamespace("morie", quietly = TRUE)
+)
+```
+
+# Overview
+
+This vignette documents the `mrm_otis_*()`, `mrm_tps_*()`, and
+`mrm_siu_*()` empirical callables. Each function is a one-line entry
+point to a verified analysis used in the *MRM empirical paper*
+(Ruhela 2026, in preparation). Every example below runs on the small
+reference samples bundled with the package, so the vignette is
+network-free.
+
+For the full datasets:
+
+* OTIS \u2192 `morie_load_dataset("otisb01")` (downloads via CKAN on
+  first call; subsequent calls hit the local SQLite cache)
+* TPS \u2192 `morie_fetch_tps("Assault")` (ArcGIS REST)
+* SIU \u2192 `morie_fetch_siu()` (on-demand scrape of public reports)
+
+See `vignette("mrm-dataset-fetchers")` for the dataset side.
+
+```{r load}
+library(morie)
+b01 <- morie_sample("otis_b01")
+b09 <- morie_sample("otis_b09")
+tps <- morie_sample("tps_assault")
+```
+
+# OTIS suite
+
+## Placement-count concentration on `b09`
+
+The b09 long-format file publishes per (fiscal year \u00d7 placement-count
+band \u00d7 gender) counts of individuals in segregation. The callable
+expands the banded counts using midpoints and returns Hill-MLE Pareto
+exponent, Gini coefficient, mean placements per individual, and the
+top-k% concentration share.
+
+```{r b09}
+mrm_otis_placement_concentration(b09)
+```
+
+The values are computed *within fiscal year*: OTIS
+`UniqueIndividual_ID` has format `YYYY-XXXXX-SG` and is randomly
+reassigned every fiscal year, so cross-year tracking is invalid by
+design.
+
+## Segregation-duration KM on `b01`
+
+`NumberConsecutiveDays_Segregation` is the duration in days of each
+placement (no censoring \u2014 all durations are observed). The callable
+reports the per-stratum mean, median, q25, and the fraction
+above the UN Mandela 15-day cutoff.
+
+```{r b01-duration}
+mrm_otis_seg_duration_km(b01)
+mrm_otis_seg_duration_km(b01, group_cols = "MentalHealth_Alert")
+```
+
+This callable replaces the misreading of `YYYY-XXXXX-SG` as a
+persistent person identifier, which produces a spurious cross-year
+"time-to-readmission" artifact.
+
+## Mortification co-occurrence (alert columns)
+
+The three b01 alert flags (`MentalHealth_Alert`, `SuicideRisk_Alert`,
+`SuicideWatch_Alert`) co-occur to a degree well above independence.
+The substantive figure is `MentalHealth \u00d7 SuicideRisk` Cramer's V.
+
+```{r mortification}
+mrm_otis_mortification_cooccurrence(b01)
+```
+
+## Region locality
+
+Ontario provincial seg/RC placement is overwhelmingly
+locality-preserving \u2014 over 95% of placements remain within the same
+region in the full b01.
+
+```{r region, eval = FALSE}
+# (Region columns are present only in the full b01, not the bundled
+# sample; uncomment after morie_load_dataset("otisb01") or
+# morie_fetch_tps(...) if needed.)
+res <- mrm_otis_region_locality(b01)
+print(res$table)
+cat("diagonal share:", res$diagonal_share, "  V:", res$cramers_v, "\n")
+```
+
+## Mandela classification
+
+`mrm_classify_mandela()` shipped in v0.1.14 and remains the canonical
+Mandela classifier in v0.2.0. It supports three operationalisations:
+
+```{r mandela}
+mrm_classify_mandela(b01, denominator = "row")           # per-placement
+mrm_classify_mandela(b01, denominator = "individual_any") # per-person
+mrm_classify_mandela(b01, denominator = "individual_cumulative")
+```
+
+The provincial-canonical 12.5/16.5/20.6 % torture rates from c11
+require the `c11` aggregate (loaded via `morie_sample("otis_c11")`);
+see the MRM empirical paper \u00a76.
+
+# TPS suite
+
+## Levy-flight Hill exponent on inter-event step lengths
+
+Treats consecutive events in chronological order as a single stream
+and computes the haversine inter-event step length (km). Returns the
+Hill-MLE exponent restricted to steps above `min_step_km`.
+
+```{r tps-levy}
+mrm_tps_levy_scaling(tps)
+```
+
+## Moran's I + DBSCAN clustering
+
+Grids the WGS84 extent into a coarse raster, counts events per cell,
+and computes the global Moran's I via a rook-contiguity matrix. Also
+runs DBSCAN on the raw lat/long points (rescaled to km) for cluster
+counts.
+
+```{r tps-moran}
+mrm_tps_moran_clustering(tps, grid_resolution = 20L)
+```
+
+For the high-precision computation on the full 254,378-event Assault
+file, use the `morie` Python `tps_spatial_advanced` pipeline; the
+R version is for quick interactive auditing.
+
+## Neighbourhood inter-event recurrence
+
+For each `HOOD_158` neighbourhood, sorts events chronologically and
+computes the gap (in days) between consecutive events.
+
+```{r tps-recur}
+head(mrm_tps_neighbourhood_recurrence_km(tps))
+```
+
+## Hawkes manifest loader
+
+`mrm_tps_load_hawkes_refit(path)` reads
+`paper_hawkes_refit.json` (the per-category Hawkes refit table from
+the MRM empirical paper \u00a77.1-7.2) and returns it as a tidy
+data.frame. Skipped here because the JSON is in the MOIRAIS data
+manifest, not bundled with the package.
+
+# SIU suite
+
+The SIU callables operate on the SIU.csv file produced by
+`morie_fetch_siu()` (an on-demand scraper of the public Director's
+Reports). The scraped corpus is not shipped, but the callables
+themselves do not depend on shipped data.
+
+```{r siu, eval = FALSE}
+siu_path <- morie_fetch_siu()
+siu <- read.csv(siu_path)
+res <- mrm_siu_case_to_decision_km(siu)
+print(res$pooled)
+head(res$by_service[order(-res$by_service$n),])
+mrm_siu_per_service_rate(siu)
+mrm_siu_outcome_classifier(siu)
+```
+
+The verified pooled median in our test snapshot is **120 days from
+incident to Director's decision** (n = 1,711 cases). Per-service
+medians cluster tightly around 120, indicating a system-wide
+processing cadence rather than a per-jurisdiction effect.
+
+# References
+
+* MRM theoretical paper \u2014 Ruhela (2026), *MRM: Multilevel
+  Reconciliation Methodology --- A Multi-Source Statistical
+  Foundation for Canadian Carceral, Police, and Oversight Data*,
+  Zenodo
+  [10.5281/zenodo.20096075](https://doi.org/10.5281/zenodo.20096075).
+* MRM empirical paper \u2014 Ruhela (2026), *Solitary Confinement,
+  Self-Excitation, and Institutional Churn: Empirical Applications
+  of MRM to Canadian Carceral and Police Data*, Zenodo
+  [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689).
+* OTIS data dictionary \u2014 `data.ontario.ca/dataset/data-on-inmates-in-ontario`.
+* Toronto Police Open Data \u2014 `data.torontopolice.on.ca/`.
+* SIU public Director's Reports \u2014 `siu.on.ca/en/case_directors_reports.php`.

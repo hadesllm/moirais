@@ -11,3 +11,14 @@ Control units receive weight 1; treated units receive
 \value{
   Named list: 'atc', 'se', 'ci_lower', 'ci_upper', 'n_control'.
 }
+\examples{
+set.seed(2026)
+n <- 200L
+x <- rnorm(n)
+D <- rbinom(n, 1, plogis(0.5 * x))
+y <- 0.7 * D + 0.3 * x + rnorm(n)
+df <- data.frame(D = D, y = y, age = x)
+res <- estimate_atc(df, treatment = "D", outcome = "y",
+                   covariates = "age")
+res$atc
+}

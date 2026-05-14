@@ -25,3 +25,16 @@ closed-form Wald estimator.
 \value{
   Named list: 'late', 'se', 'ci_lower', 'ci_upper',
 }
+\examples{
+set.seed(2026)
+n <- 300L
+z <- rbinom(n, 1, 0.5)
+# Compliance: treatment status depends on instrument z + covariate x
+x <- rnorm(n)
+D <- rbinom(n, 1, plogis(0.5 + z * 1.5 + 0.3 * x))
+y <- 0.7 * D + 0.3 * x + rnorm(n)
+df <- data.frame(D = D, y = y, age = x, z = z)
+res <- estimate_late(df, treatment = "D", outcome = "y",
+                    instrument = "z", covariates = "age")
+res$late
+}

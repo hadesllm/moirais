@@ -27,5 +27,4 @@ Fetch data from the CKAN API and cache it
   cpads <- morie_fetch_ckan(dataset_key = "cpads", limit = 5000L)
   nrow(cpads)
 }
-
 }

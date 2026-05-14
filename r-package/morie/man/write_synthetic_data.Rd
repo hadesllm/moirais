@@ -20,3 +20,11 @@
 \value{
   Normalized output path.
 }
+\examples{
+tmp <- tempfile(fileext = ".csv")
+path <- write_synthetic_data(path = tmp, n = 100, seed = 2026,
+                            overwrite = TRUE)
+df <- read.csv(path)
+nrow(df); names(df)
+file.remove(path)
+}

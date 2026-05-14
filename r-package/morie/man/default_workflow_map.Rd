@@ -10,3 +10,8 @@ Returns the default named map of workflow steps to project script paths.
 \value{
   Named character vector.
 }
+\examples{
+m <- default_workflow_map()
+names(m)        # workflow step names
+m[["modules"]]  # script path for the 'modules' step
+}

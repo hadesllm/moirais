@@ -17,3 +17,12 @@ Returns a named character vector mapping canonical variable keys used by
 \value{
   Named character vector.
 }
+\examples{
+# Default profile
+nm <- default_synthetic_name_map()
+head(nm)
+
+# Generic profile (drops domain-specific names)
+nm_generic <- default_synthetic_name_map("generic")
+head(nm_generic)
+}

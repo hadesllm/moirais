@@ -11,7 +11,7 @@
 
 
 
-<title>MRM walkthrough on OTIS provincial data</title>
+<title>MRM dataset fetchers and bundled samples</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,93 +348,250 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">MRM walkthrough on OTIS provincial
-data</h1>
+<h1 class="title toc-ignore">MRM dataset fetchers and bundled
+samples</h1>
 
 </div>
 
 
-<div id="what-this-vignette-covers" class="section level1">
-<h1>What this vignette covers</h1>
-<p>The <strong>MRM (Multilevel Reconciliation Methodology;</strong>
-people-credit reading: McNamara–Ruhela–Medina<strong>)</strong>
-framework is a coordinated set of ten causal estimators paired with a
-multi-source data layer for Canadian carceral, police, and oversight
-data. This vignette uses the provincial Offender Tracking Information
-System (OTIS; published by the Ontario Ministry of the Solicitor
-General) restrictive-confinement microdata as an example, applies the
-ten-estimator ensemble to a binary-treatment design on dataset
-<code>a01</code>, and shows how to read the resulting summary.</p>
-<p>The mathematical foundations are developed in the companion paper
-(Ruhela 2026, <em>The MRM Framework</em>, Zenodo <a href="https://doi.org/10.5281/zenodo.20096075">10.5281/zenodo.20096075</a>).</p>
-</div>
-<div id="loading-otis" class="section level1">
-<h1>Loading OTIS</h1>
-<p>OTIS is shipped with the package; the
-<code>morie_load_dataset()</code> loader hides the SQLite-backed
-indirection.</p>
-<pre class="r"><code>library(morie)
-otis &lt;- morie_load_dataset(&quot;otis-2025-a01&quot;)
-str(otis)</code></pre>
-</div>
-<div id="the-canonical-a01-design" class="section level1">
-<h1>The canonical a01 design</h1>
-<p>For dataset <code>a01</code> the canonical formulation is
-<code>T_high_ac</code> (a binary treatment derived from
-administrative-classification flags) on <code>Y_vm_count</code> (a count
-of a specific in-confinement observation) with the standard demographic
-covariate set. This is the design choice that the per-row MRM modules
-implement.</p>
-<pre class="r"><code># Full ten-estimator ensemble on the canonical a01 design:
-result &lt;- estimate_ate(
-  data       = otis,
-  outcome    = &quot;Y_vm_count&quot;,
-  treatment  = &quot;T_high_ac&quot;,
-  covariates = c(&quot;age&quot;, &quot;sex&quot;, &quot;region&quot;, &quot;fiscal_year&quot;)
-)
-print(result)</code></pre>
-<p>The returned object summarises the IPW (Hajek), AIPW
-(Robins–Rotnitzky–Zhao), g-computation, propensity-score-matching (1:1
-NN and five-strata subclass), IRM-DML (Chernozhukov <em>et al.</em>
-2018), PLR-DML, and SuperLearner-stacked AIPW estimates. Multi-SE
-comparison (pooled, cluster on fiscal year, cluster on individual ID,
-two-way) is reported alongside the IRM-DML primary.</p>
-</div>
-<div id="augmented-ipw" class="section level1">
-<h1>Augmented IPW</h1>
-<pre class="r"><code>result_aipw &lt;- estimate_aipw(
-  data       = otis,
-  outcome    = &quot;Y_vm_count&quot;,
-  treatment  = &quot;T_high_ac&quot;,
-  covariates = c(&quot;age&quot;, &quot;sex&quot;, &quot;region&quot;, &quot;fiscal_year&quot;)
-)
-print(result_aipw)</code></pre>
-</div>
-<div id="aggregate-companion-incidence-rate-ratios" class="section level1">
-<h1>Aggregate companion: incidence-rate ratios</h1>
-<p>For aggregate (year-level) outcomes the analog is a Poisson or
-negative-binomial GLM with cluster-robust standard errors. The MRM
-framework reports both the per-row individual-level estimate (above) and
-the aggregate IRR family in parallel; see the companion paper for the
-formal aggregate-IRR notation.</p>
-</div>
-<div id="mandela-classification" class="section level1">
-<h1>Mandela classification</h1>
-<p>A separate Mandela-Rules classifier (UN Mandela Rules 43 and 44) is
-applied at both the federal and provincial levels. The provincial
-implementation uses a duration-only proxy that is documented explicitly
-in the framework paper. Federal counterpart analyses (SIU IAP,
-Sprott–Doob–Iftene) live in the companion Python module
-<code>morie.tps_csi</code> and <code>morie.siu_iap</code>.</p>
-</div>
-<div id="where-to-go-next" class="section level1">
-<h1>Where to go next</h1>
+<div id="overview" class="section level1">
+<h1>Overview</h1>
+<p>The MRM empirical callables (<code>mrm_otis_*</code>,
+<code>mrm_tps_*</code>, <code>mrm_siu_*</code>) operate on three
+external data sources. This vignette documents how <code>morie</code>
+makes each of them accessible to end users:</p>
 <ul>
-<li>The full MRM framework paper, including all ten estimators, multi-SE
-comparison, propensity calibration, and the Sprott–Doob–Iftene
-replication tables, is at Zenodo <a href="https://doi.org/10.5281/zenodo.20096075">10.5281/zenodo.20096075</a>.</li>
-<li>The MORIE package paper covers the broader toolkit: <a href="https://doi.org/10.5281/zenodo.20096350">10.5281/zenodo.20096350</a>.</li>
-<li>Citation: see <code>citation(&quot;morie&quot;)</code>.</li>
+<li><strong>OTIS</strong> (Offender Tracking Information System;
+published by the Ontario Ministry of the Solicitor General) 014 public
+CKAN release on <code>data.ontario.ca</code>, reached via the existing
+<code>morie_load_dataset()</code> infrastructure.</li>
+<li><strong>TPS</strong> (Toronto Police Service) 014 public ArcGIS Open
+Data, reached via <code>morie_fetch_tps()</code>.</li>
+<li><strong>SIU</strong> (Ontario Special Investigations Unit) 014
+public Director’s Reports, scraped on demand by
+<code>morie_fetch_siu()</code> (the corpus is not shipped because
+redistribution licensing is unsettled).</li>
+</ul>
+<p>Four small reference samples are bundled with the package
+(<code>inst/extdata/</code>) so every example runs offline.</p>
+<pre class="r"><code>library(morie)</code></pre>
+</div>
+<div id="bundled-reference-samples" class="section level1">
+<h1>Bundled reference samples</h1>
+<p>The samples live in <code>inst/extdata/</code> and total ~420 KB.
+Each is a 1000-row random draw (seed 42) except <code>otis_b09</code>
+and <code>otis_c11</code>, which are shipped whole (already small).</p>
+<pre class="r"><code># Bundled samples
+b01 &lt;- morie_sample(&quot;otis_b01&quot;)
+b09 &lt;- morie_sample(&quot;otis_b09&quot;)
+c11 &lt;- morie_sample(&quot;otis_c11&quot;)
+tps &lt;- morie_sample(&quot;tps_assault&quot;)
+
+# Schema sanity
+str(b01, max.level = 1)
+#&gt; &#39;data.frame&#39;:    1000 obs. of  18 variables:
+#&gt;  $ EndFiscalYear                                         : int  2025 2023 2023 2023 2024 2024 2025 2025 2024 2023 ...
+#&gt;  $ UniqueIndividual_ID                                   : chr  &quot;2025-08960-SG&quot; &quot;2023-11152-SG&quot; &quot;2023-08955-SG&quot; &quot;2023-11360-SG&quot; ...
+#&gt;  $ Gender                                                : chr  &quot;Male&quot; &quot;Male&quot; &quot;Female&quot; &quot;Male&quot; ...
+#&gt;  $ Region_AtTimeOfPlacement                              : chr  &quot;Eastern&quot; &quot;Northern&quot; &quot;Central&quot; &quot;Central&quot; ...
+#&gt;  $ Region_MostRecentPlacement                            : chr  &quot;Eastern&quot; &quot;Northern&quot; &quot;Central&quot; &quot;Central&quot; ...
+#&gt;  $ Age_Category                                          : chr  &quot;25 to 49&quot; &quot;25 to 49&quot; &quot;25 to 49&quot; &quot;25 to 49&quot; ...
+#&gt;  $ NumberConsecutiveDays_Segregation                     : int  4 1 6 1 2 1 1 1 2 3 ...
+#&gt;  $ SegReason_SecurityOfInstitution_SafetyOfOthers        : chr  &quot;No&quot; &quot;No&quot; &quot;No&quot; &quot;No&quot; ...
+#&gt;  $ SegReason_InmateNeedsProtection                       : chr  &quot;No&quot; &quot;Yes&quot; &quot;No&quot; &quot;No&quot; ...
+#&gt;  $ SegReason_InmateNeedsProtection_Medical               : chr  &quot;Yes&quot; &quot;No&quot; &quot;No&quot; &quot;No&quot; ...
+#&gt;  $ SegReason_SecurityOfInstitution_SafetyOfOthers_Medical: chr  &quot;No&quot; &quot;No&quot; &quot;Yes&quot; &quot;Yes&quot; ...
+#&gt;  $ SegReason_Disciplinary_Segregation                    : chr  &quot;No&quot; &quot;No&quot; &quot;No&quot; &quot;No&quot; ...
+#&gt;  $ SegReason_InmateRefuseSearch_Scan                     : chr  &quot;No&quot; &quot;No&quot; &quot;No&quot; &quot;No&quot; ...
+#&gt;  $ MentalHealth_Alert                                    : chr  &quot;Yes&quot; &quot;No&quot; &quot;Yes&quot; &quot;No&quot; ...
+#&gt;  $ SuicideRisk_Alert                                     : chr  &quot;Yes&quot; &quot;No&quot; &quot;Yes&quot; &quot;No&quot; ...
+#&gt;  $ SuicideWatch_Alert                                    : chr  &quot;Yes&quot; &quot;No&quot; &quot;Yes&quot; &quot;No&quot; ...
+#&gt;  $ SegReason_Other                                       : chr  &quot;No&quot; &quot;&quot; &quot;&quot; &quot;&quot; ...
+#&gt;  $ Number_Of_Placements                                  : int  1 8 1 1 1 2 2 1 2 1 ...
+nrow(b09); nrow(c11)
+#&gt; [1] 78
+#&gt; [1] 33
+ncol(tps)
+#&gt; [1] 31</code></pre>
+</div>
+<div id="otis-via-ckan-data.ontario.ca" class="section level1">
+<h1>OTIS via CKAN (<code>data.ontario.ca</code>)</h1>
+<p>The OTIS public release is hosted at
+<code>data.ontario.ca/dataset/data-on-inmates-in-ontario</code> as 28
+CSV resources. The MORIE catalog has four of them registered with their
+canonical CKAN resource IDs:</p>
+<pre class="r"><code>cat &lt;- morie_dataset_catalog()
+cat[cat$source == &quot;otis&quot;, c(&quot;key&quot;, &quot;name&quot;, &quot;table_name&quot;, &quot;ckan_resource_id&quot;)]
+#&gt;        key                                                        name
+#&gt; 37 otisa01        OTIS a01: Restrictive Confinement - Detailed Dataset
+#&gt; 38 otisb01                    OTIS b01: Segregation - Detailed Dataset
+#&gt; 39 otisb09 OTIS b09: Individuals in Segregation - Number of Placements
+#&gt; 40 otisc11 OTIS c11: Individuals in Segregation/RC by Aggregate Length
+#&gt;    table_name                     ckan_resource_id
+#&gt; 37    otisa01 5a0c5804-a055-4031-9743-73f556e43bb4
+#&gt; 38    otisb01 406e6d90-d568-4553-8ca7-bc9f90e133b9
+#&gt; 39    otisb09 df24e943-d52b-43a8-a10e-a3cc906e26bb
+#&gt; 40    otisc11 9c7b74a5-53ad-4ef0-a7a6-97772cd01c55</code></pre>
+<p>To pull the full b01 (82,001 rows) from CKAN:</p>
+<pre class="r"><code>b01_full &lt;- morie_load_dataset(&quot;otisb01&quot;)
+nrow(b01_full)
+# 82001</code></pre>
+<p>The loader downloads the CSV on first call, caches it into the
+package SQLite database, and returns a data.frame on subsequent
+calls.</p>
+</div>
+<div id="tps-via-arcgis-open-data" class="section level1">
+<h1>TPS via ArcGIS Open Data</h1>
+<p>Toronto Police Service publishes per-category crime events through
+ArcGIS Online. MORIE knows the layer URLs for nine categories.</p>
+<pre class="r"><code>morie_tps_layer_urls()
+#&gt;                                                                                                                       Assault 
+#&gt;                         &quot;https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Assault_Open_Data/FeatureServer/0&quot; 
+#&gt;                                                                                                                     AutoTheft 
+#&gt;                      &quot;https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Auto_Theft_Open_Data/FeatureServer/0&quot; 
+#&gt;                                                                                                                  BicycleTheft 
+#&gt;                  &quot;https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Bicycle_Thefts_Open_Data/FeatureServer/0&quot; 
+#&gt;                                                                                                                 BreakAndEnter 
+#&gt;                 &quot;https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Break_and_Enter_Open_Data/FeatureServer/0&quot; 
+#&gt;                                                                                                                     Homicides 
+#&gt;        &quot;https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Homicides_Open_Data_ASR_RC_TBL_002/FeatureServer/0&quot; 
+#&gt;                                                                                                                       Robbery 
+#&gt;                         &quot;https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Robbery_Open_Data/FeatureServer/0&quot; 
+#&gt;                                                                                                   ShootingAndFirearmDiscarges 
+#&gt; &quot;https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Shooting_and_Firearm_Discharges_Open_Data/FeatureServer/0&quot; 
+#&gt;                                                                                                                   TheftFromMV 
+#&gt;        &quot;https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Theft_From_Motor_Vehicle_Open_Data/FeatureServer/0&quot; 
+#&gt;                                                                                                                     TheftOver 
+#&gt;                      &quot;https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Theft_Over_Open_Data/FeatureServer/0&quot;</code></pre>
+<p>To fetch a single category:</p>
+<pre class="r"><code>csv_path &lt;- morie_fetch_tps(&quot;Assault&quot;)
+assault &lt;- utils::read.csv(csv_path)
+nrow(assault)
+# 254378 (as of mid-2026)</code></pre>
+<p>The fetcher pages through <code>/query</code> with a
+2000-record-per-page cap (the ArcGIS-imposed maximum) and writes a tidy
+CSV to <code>~/.cache/morie/tps/tps_Assault.csv</code>. Subsequent calls
+return the cached path unless <code>overwrite = TRUE</code>.</p>
+<p>Filtering at the server side:</p>
+<pre class="r"><code>recent &lt;- morie_fetch_tps(&quot;Homicides&quot;,
+                          where = &quot;OCC_YEAR &gt;= 2024&quot;,
+                          overwrite = TRUE)</code></pre>
+</div>
+<div id="siu-via-on-demand-scraper" class="section level1">
+<h1>SIU via on-demand scraper</h1>
+<p>The Ontario SIU publishes Director’s Reports at
+<code>siu.on.ca/en/case_directors_reports.php</code>. MORIE includes an
+on-demand scraper that:</p>
+<ul>
+<li>Iterates over the index page(s) (optionally filtered by year)</li>
+<li>Extracts case links</li>
+<li>Pulls each case detail page</li>
+<li>Parses incident date, notifying police service, Director’s decision,
+and outcome text into a single CSV</li>
+</ul>
+<pre class="r"><code>csv_path &lt;- morie_fetch_siu()       # full unfiltered index
+siu &lt;- utils::read.csv(csv_path)
+nrow(siu)
+
+# Or restricted to specific years:
+csv_path &lt;- morie_fetch_siu(years = 2020:2025, overwrite = TRUE)</code></pre>
+<div id="why-a-scraper-rather-than-a-shipped-dataset" class="section level2">
+<h2>Why a scraper rather than a shipped dataset?</h2>
+<p>The legal status of redistributing a single tabular copy of public
+oversight reports is not clearly established. Running the scraper
+per-user is unambiguously fair use of public information; bundling the
+scraped corpus might be more questionable. The scraper itself respects a
+2-second rate limit, sets a clear User-Agent, and follows the SIU site’s
+published structure.</p>
+</div>
+<div id="r-side-wrapper-python-side-implementation" class="section level2">
+<h2>R-side wrapper, Python-side implementation</h2>
+<p><code>morie_fetch_siu()</code> in R is a thin <code>reticulate</code>
+wrapper around <code>morie.siu_fetch.fetch_siu_cases()</code> in Python.
+This keeps the regex parsing logic in one canonical place. If
+<code>reticulate</code> isn’t installed, fall back to calling the Python
+directly:</p>
+<pre class="bash"><code>python3 -c &quot;from morie.siu_fetch import fetch_siu_cases; print(fetch_siu_cases())&quot;</code></pre>
+</div>
+</div>
+<div id="workflow-from-bundled-sample-to-verified-result" class="section level1">
+<h1>Workflow: from bundled sample to verified result</h1>
+<p>Putting it together 014 a complete worked example without any network
+call:</p>
+<pre class="r"><code>b01 &lt;- morie_sample(&quot;otis_b01&quot;)
+
+# Mandela classification with default &quot;individual_any&quot; denominator
+mrm_classify_mandela(b01, denominator = &quot;row&quot;)
+#&gt;     year denominator n_mandela        rate  pct n_broader_rc rate_broader
+#&gt; 1   2023         362         0 0.000000000 0.00            0  0.000000000
+#&gt; 2   2024         337         3 0.008902077 0.89            3  0.008902077
+#&gt; 3   2025         301         4 0.013289037 1.33            4  0.013289037
+#&gt; 4 pooled        1000         7 0.007000000 0.70            7  0.007000000
+
+# Segregation duration KM
+mrm_otis_seg_duration_km(b01,
+                         group_cols = &quot;MentalHealth_Alert&quot;)
+#&gt;   stratum   n mean_days median_days q25_days pct_above_mandela
+#&gt; 1      No 499      2.76           2        3               0.6
+#&gt; 2     Yes 501      3.29           2        4               0.8
+#&gt;   median_among_above_mandela
+#&gt; 1                       54.0
+#&gt; 2                       41.5
+
+# Mortification co-occurrence: Cramer&#39;s V across alert pairs
+mrm_otis_mortification_cooccurrence(b01)
+#&gt;              alert_a            alert_b    n   chi2 df   p_value cramers_v
+#&gt; 1 MentalHealth_Alert  SuicideRisk_Alert 1000  33.25  1  8.12e-09    0.1823
+#&gt; 2 MentalHealth_Alert SuicideWatch_Alert 1000  12.09  1  5.08e-04    0.1099
+#&gt; 3  SuicideRisk_Alert SuicideWatch_Alert 1000 470.37  1 2.66e-104    0.6858</code></pre>
+<p>For a full-data version, swap <code>morie_sample(&quot;otis_b01&quot;)</code>
+for <code>morie_load_dataset(&quot;otisb01&quot;)</code> and re-run the same
+callables.</p>
+</div>
+<div id="caching-layout" class="section level1">
+<h1>Caching layout</h1>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cache path</th>
+<th>Populated by</th>
+<th>Size (full)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>~/.cache/morie/morie.db</code> (SQLite)</td>
+<td><code>morie_load_dataset(*)</code></td>
+<td>a few MB to ~1 GB depending on selection</td>
+</tr>
+<tr class="even">
+<td><code>~/.cache/morie/tps/tps_*.csv</code></td>
+<td><code>morie_fetch_tps()</code></td>
+<td>~5–50 MB per category</td>
+</tr>
+<tr class="odd">
+<td><code>~/.cache/morie/siu/SIU.csv</code></td>
+<td><code>morie_fetch_siu()</code></td>
+<td>~5 MB</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<ul>
+<li>OTIS data dictionary 014
+<code>data.ontario.ca/dataset/data-on-inmates-in-ontario</code></li>
+<li>Toronto Police Open Data 014
+<code>data.torontopolice.on.ca/</code></li>
+<li>SIU Director’s Reports 014
+<code>siu.on.ca/en/case_directors_reports.php</code></li>
+<li>MRM theoretical paper 014 Zenodo DOI <a href="https://doi.org/10.5281/zenodo.20096075">10.5281/zenodo.20096075</a></li>
 </ul>
 </div>
 

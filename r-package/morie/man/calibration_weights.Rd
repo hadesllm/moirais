@@ -22,3 +22,18 @@ known population totals for each auxiliary variable.
 \value{
   Numeric vector of calibrated weights.
 }
+\examples{
+set.seed(2026)
+n <- 100L
+df <- data.frame(
+  age_group = sample(c("18-24", "25-34", "35+"), n, replace = TRUE),
+  gender    = sample(c("F", "M"), n, replace = TRUE)
+)
+# Suppose the true population proportions are known:
+totals <- list(age_group = c("18-24" = 1000, "25-34" = 2000, "35+" = 3000),
+               gender    = c("F" = 3000, "M" = 3000))
+w <- calibration_weights(df,
+                        aux_vars = c("age_group", "gender"),
+                        population_totals = totals)
+summary(w)
+}

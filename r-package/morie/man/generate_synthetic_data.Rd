@@ -23,3 +23,8 @@ Synthetic data should not be used for final inferential reporting.
 \value{
   A data.frame with synthetic records.
 }
+\examples{
+df <- generate_synthetic_data(n = 500, seed = 2026)
+nrow(df); dim(df)
+head(df[, 1:5])
+}

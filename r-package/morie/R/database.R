@@ -150,13 +150,6 @@ morie_cache_file <- function(path, table_name, db_path = NULL) {
 
 #' Load CPADS data: local files -> cache -> CKAN API
 #'
-#' @examples
-#' \donttest{
-#'   # Prefers local + cache; falls back to CKAN only when use_ckan = TRUE.
-#'   cpads <- morie_load_cpads(use_ckan = FALSE)
-#'   if (!is.null(cpads)) head(cpads)
-#' }
-#'
 #' Resolution order:
 #' \enumerate{
 #'   \item Local RDS/CSV files in standard project locations
@@ -168,6 +161,12 @@ morie_cache_file <- function(path, table_name, db_path = NULL) {
 #' @param use_ckan Logical; if TRUE and data not found locally or in cache,
 #'   attempt to fetch from the CKAN API.
 #' @return A data.frame with canonical CPADS columns.
+#' @examples
+#' \donttest{
+#'   # Prefers local + cache; falls back to CKAN only when use_ckan = TRUE.
+#'   cpads <- morie_load_cpads(use_ckan = FALSE)
+#'   if (!is.null(cpads)) head(cpads)
+#' }
 #' @export
 morie_load_cpads <- function(db_path = NULL, use_ckan = TRUE) {
   # 1. Local files.
@@ -205,6 +204,10 @@ morie_load_cpads <- function(db_path = NULL, use_ckan = TRUE) {
 
 #' Fetch data from the CKAN API and cache it
 #'
+#' @param dataset_key One of \code{"cpads"}, \code{"csads"}, \code{"csus"}.
+#' @param limit Max records to fetch.
+#' @param db_path Optional override for the database path.
+#' @return A data.frame.
 #' @examples
 #' \dontrun{
 #'   # Requires network access. Fetches the first 5000 rows of the
@@ -213,11 +216,6 @@ morie_load_cpads <- function(db_path = NULL, use_ckan = TRUE) {
 #'   cpads <- morie_fetch_ckan(dataset_key = "cpads", limit = 5000L)
 #'   nrow(cpads)
 #' }
-#'
-#' @param dataset_key One of \code{"cpads"}, \code{"csads"}, \code{"csus"}.
-#' @param limit Max records to fetch.
-#' @param db_path Optional override for the database path.
-#' @return A data.frame.
 #' @export
 morie_fetch_ckan <- function(dataset_key = "cpads", limit = 32000L, db_path = NULL) {
   ckan_base <- "https://open.canada.ca/data/en/api/3/action/datastore_search"
@@ -300,14 +298,14 @@ morie_fetch_ckan <- function(dataset_key = "cpads", limit = 32000L, db_path = NU
 #' Supports fuzzy matching: \code{morie_load_dataset("cpads_2021")} resolves
 #' to \code{oc_cpads_2021}.
 #'
-#' @examples
-#' \dontrun{
-#'   df <- morie_load_dataset("oc_cpads_2021")
-#'   nrow(df)
-#' }
 #' @param key Dataset catalog key (or fuzzy match).
 #' @param db_path Optional override for the database path.
 #' @return A data.frame.
+#' @examples
+#' \dontrun{
+#'   df <- morie_load_dataset("ocp21")  # CPADS 2021-2022
+#'   nrow(df)
+#' }
 #' @export
 morie_load_dataset <- function(key, db_path = NULL) {
   matched <- .fuzzy_match_key(key)
@@ -391,14 +389,14 @@ morie_list_datasets <- function(db_path = NULL) {
 
 #' Get metadata for a single dataset
 #'
-#' @examples
-#' info <- morie_dataset_info("oc_cpads_2021")
-#' info$source; info$year
-#' # Fuzzy match works too:
-#' morie_dataset_info("cpads_2021")$key
-#'
 #' @param key Dataset catalog key (or fuzzy match).
 #' @return A named list with dataset metadata.
+#' @examples
+#' # Use a real catalog key (run `morie_dataset_catalog()$key` to list them):
+#' info <- morie_dataset_info("ocp21")
+#' info$source; info$year
+#' # Fuzzy match works for partial / forgiving keys:
+#' morie_dataset_info("cpads")$key
 #' @export
 morie_dataset_info <- function(key) {
   matched <- .fuzzy_match_key(key)

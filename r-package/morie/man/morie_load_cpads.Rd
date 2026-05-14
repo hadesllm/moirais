@@ -16,7 +16,12 @@ attempt to fetch from the CKAN API.}
 A data.frame with canonical CPADS columns.
 }
 \description{
-Load CPADS data: local files -> cache -> CKAN API
+Resolution order:
+\enumerate{
+\item Local RDS/CSV files in standard project locations
+\item SQLite cache (\code{data/cache/morie.db})
+\item CKAN API fetch (requires internet)
+}
 }
 \examples{
 \donttest{
@@ -24,12 +29,4 @@ Load CPADS data: local files -> cache -> CKAN API
   cpads <- morie_load_cpads(use_ckan = FALSE)
   if (!is.null(cpads)) head(cpads)
 }
-
-Resolution order:
-\enumerate{
-  \item Local RDS/CSV files in standard project locations
-  \item SQLite cache (\code{data/cache/morie.db})
-  \item CKAN API fetch (requires internet)
-}
-
 }

@@ -21,7 +21,7 @@ to \code{oc_cpads_2021}.
 }
 \examples{
 \dontrun{
-  df <- morie_load_dataset("oc_cpads_2021")
+  df <- morie_load_dataset("ocp21")  # CPADS 2021-2022
   nrow(df)
 }
 }

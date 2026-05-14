@@ -21,3 +21,19 @@ Mirrors the core outputs of the old '07_propensity.R' workflow.
 \value{
   Named list of output tables and the analysis data.
 }
+\examples{
+\dontrun{
+  set.seed(2026)
+  n <- 200L
+  x <- rnorm(n)
+  D <- rbinom(n, 1, plogis(0.5 * x))
+  y <- 0.7 * D + 0.3 * x + rnorm(n)
+  df <- data.frame(D = D, y = y, age = x)
+  out <- run_propensity_ipw_analysis(
+    data = df,
+    output_dir = tempdir(),
+    treatment = "D", outcome = "y", covariates = "age"
+  )
+  out$ate
+}
+}

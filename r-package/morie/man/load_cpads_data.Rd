@@ -14,3 +14,10 @@
 \value{
   Canonicalized CPADS data frame.
 }
+\examples{
+\dontrun{
+  # Reads a local CPADS CSV (no network).
+  cpads <- load_cpads_data("/path/to/cpads.csv")
+  nrow(cpads); names(cpads)[1:5]
+}
+}

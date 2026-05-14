@@ -16,3 +16,10 @@
 \value{
   Manifest data frame.
 }
+\examples{
+\dontrun{
+  # Reads outputs_manifest.csv from the project root.
+  manifest <- read_outputs_manifest(project_root = ".")
+  head(manifest)
+}
+}

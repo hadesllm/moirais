@@ -26,3 +26,15 @@
 \value{
   Named list: \code{ate}, \code{se}, \code{ci_lower}, \code{ci_upper}, \code{n}.
 }
+\examples{
+set.seed(2026)
+n <- 200L
+x <- rnorm(n)
+D <- rbinom(n, 1, plogis(0.5 * x))
+y <- 0.7 * D + 0.3 * x + rnorm(n)
+df <- data.frame(D = D, y = y, age = x)
+res <- estimate_aipw(df, treatment = "D", outcome = "y",
+                    covariates = "age")
+res$ate
+res$ci_lower; res$ci_upper
+}

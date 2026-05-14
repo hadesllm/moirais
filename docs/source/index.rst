@@ -34,6 +34,10 @@ MORIE — Multi-domain Open Research and Inferential Estimation
    :target: https://doi.org/10.5281/zenodo.20102198
    :alt: Hawkes paper - 10.5281/zenodo.20102198
 
+.. image:: https://img.shields.io/badge/Empirical_paper-10.5281%2Fzenodo.20175689-1a73e8?logo=zenodo&logoColor=white
+   :target: https://doi.org/10.5281/zenodo.20175689
+   :alt: Empirical applications paper - 10.5281/zenodo.20175689
+
 A dual-language (Python + R) multi-domain scientific computing toolkit for
 observational inference, with sociolegal, signal-processing, cryptographic,
 spatial-statistics, statistical-physics, and psychometrics modules. Hosts
@@ -45,7 +49,7 @@ for Canadian carceral, police, and oversight data analysis.
 Quick start
 -----------
 
-Pick any one channel — all install the **same** ``morie`` v0.4.12:
+Pick any one channel — all install the **same** ``morie`` v0.7.0:
 
 .. code-block:: bash
 
@@ -62,7 +66,7 @@ Pick any one channel — all install the **same** ``morie`` v0.4.12:
    brew install morie
 
    # 4. Docker (zero local dependencies)
-   docker run --rm ghcr.io/hadesllm/morie:0.4.12 morie --help
+   docker run --rm ghcr.io/hadesllm/morie:0.7.0 morie --help
 
    # 5. R package (CRAN-compatible, served from r-universe)
    install.packages("morie", repos = "https://hadesllm.r-universe.dev")

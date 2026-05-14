@@ -8,8 +8,8 @@ authors:
     name-particle: "Singh"
     # morie pronunciation: /ˈmɔɪraɪ/ (like Greek Moirai)
     # IPA: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/
-version: "0.6.1"
-date-released: "2026-05-13"
+version: "0.7.0"
+date-released: "2026-05-14"
 url: "https://github.com/hadesllm/morie"
 repository-code: "https://github.com/hadesllm/morie"
 license: "MIT OR Apache-2.0"
@@ -37,7 +37,7 @@ preferred-citation:
       given-names: "Vansh Singh"
       orcid: "https://orcid.org/0009-0004-1750-3592"
   year: "2026"
-  version: "0.6.1"
+  version: "0.7.0"
   doi: "10.5281/zenodo.20111233"
   url: "https://doi.org/10.5281/zenodo.20111233"
 references:
@@ -48,7 +48,7 @@ references:
         given-names: "Vansh Singh"
         orcid: "https://orcid.org/0009-0004-1750-3592"
     year: "2026"
-    version: "0.6.1"
+    version: "0.7.0"
     doi: "10.5281/zenodo.20096350"
     url: "https://doi.org/10.5281/zenodo.20096350"
     notes: "Python companion software paper (same toolkit, Python implementation)."

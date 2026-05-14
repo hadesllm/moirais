@@ -63,7 +63,7 @@ pip install morie
 docker run --rm ghcr.io/hadesllm/morie:latest morie --help
 
 # Pin to a specific version (recommended for reproducibility)
-docker run --rm ghcr.io/hadesllm/morie:0.6.1 morie --help
+docker run --rm ghcr.io/hadesllm/morie:0.7.0 morie --help
 ```
 
 Multi-arch image published on every release with both versioned and `:latest` tags. Requires only Docker — no Python, no pip.
@@ -98,6 +98,14 @@ result = analyze_a01_mrm(df)
 print(result)
 ```
 
+## What's new in v0.7.0
+
+- 🆕 **Empirical applications paper published** — *Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data* on Zenodo at [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689). Five-paper publication set now complete.
+- 🆕 **`ac` / `vm` terminology locked across all 5 papers** — `ac` (alert complexity) and `vm` (volatility measure of placements, "regional-transition count" alongside) are now the canonical operational terms.
+- 🆕 **DOI + version propagation sweep** — empirical-paper DOI now reaches Sphinx index, `pyproject.toml [project.urls]`, `papers/README.md`, and CITATION.cff. Sphinx install snippets, Docker tag examples, and the in-tree `papers/README.md` were also un-pinned from stale versions.
+- 🆕 **R-package roxygen docs for fast Rcpp kernels** — `morie_mean`, `morie_var`, `morie_cor_pearson`, `morie_normal_pdf`, `morie_fast_available` ship with Rd man pages.
+- 🆕 **R 4.6.0 compatibility** — `DESCRIPTION` carries an explicit `Author:` field alongside `Authors@R:` so `R CMD check` passes on the strict 4.6.0 build.
+
 ## What's new in v0.6.1
 
 - 🆕 **Three replication modules from Laniyonu et al.** — `morie.laniyonu.gentrification_policing()` (Spatial Durbin replication of Laniyonu 2018 *UAR* — gentrification spillover on NYPD SQF), `morie.laniyonu.smi_force_disparity()` (Bayesian-style hierarchical neg-binomial replication of Laniyonu & Goff 2021 *BMC Psych* — police force on persons with serious mental illness), `morie.laniyonu.actuarial_risk_disparity()` (cumulative-logit replication of O'Connell & Laniyonu 2025 *Race & Justice* — Canadian federal-prison risk-assessment bias).
@@ -130,17 +138,18 @@ Full documentation is at [hadesllm.github.io/morie](https://hadesllm.github.io/m
 ## Citation
 
 If you use morie in your research, please cite **both software papers** (R and Python)
-and, where applicable, the **MRM framework paper** and the **Hawkes methodology paper**.
+and, where applicable, the **MRM framework paper**, the **Hawkes methodology paper**,
+and the **empirical applications paper**.
 
 ```
 # Software paper — R (also the R package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in R (v0.6.1). Zenodo.
+Estimation in R (v0.7.0). Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Software paper — Python (also the Python package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in Python (v0.6.1). Zenodo.
+Estimation in Python (v0.7.0). Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
 # MRM framework paper (theoretical foundations)
@@ -152,6 +161,11 @@ https://doi.org/10.5281/zenodo.20096075
 Ruhela, V. S. (2026). Criminological Hawkes Process via MORIE: Markovian
 and Non-Markovian Self-Exciting Point Processes for Toronto Crime (v1).
 Zenodo. https://doi.org/10.5281/zenodo.20102198
+
+# Empirical applications paper
+Ruhela, V. S. (2026). Solitary Confinement, Self-Excitation, and
+Institutional Churn: Empirical Applications of MRM to Canadian Carceral
+and Police Data (v1). Zenodo. https://doi.org/10.5281/zenodo.20175689
 ```
 
 See [`CITATION.cff`](https://github.com/hadesllm/morie/blob/main/CITATION.cff) for machine-readable citation metadata.

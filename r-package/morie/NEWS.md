@@ -1,3 +1,24 @@
+# morie 0.7.0 — 2026-05-14
+
+* Five-paper publication set complete: empirical applications paper
+  (*Solitary Confinement, Self-Excitation, and Institutional Churn:
+  Empirical Applications of MRM to Canadian Carceral and Police Data*)
+  published on Zenodo at
+  [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689).
+* Terminology locked across all 5 papers: `ac` (alert complexity)
+  and `vm` (volatility measure of placements, "regional-transition
+  count" alongside) are now the canonical operational terms.
+* Roxygen man pages for the fast Rcpp kernels: `morie_mean`,
+  `morie_var`, `morie_cor_pearson`, `morie_normal_pdf`,
+  `morie_fast_available`.
+* R 4.6.0 strict-`Author` compatibility: `DESCRIPTION` now carries
+  an explicit `Author:` field alongside the modern `Authors@R:` so
+  `R CMD check` passes on the 4.6.0 series.
+* DOI propagation: empirical-paper Zenodo DOI now reaches Sphinx
+  docs, `pyproject.toml [project.urls]`, `papers/README.md`, and
+  CITATION.cff. Sphinx install snippets + Docker tag examples
+  un-pinned from stale versions.
+
 # morie 0.2.0 — 2026-05-11
 
 * Completes Python <-> R full parity: adds Python

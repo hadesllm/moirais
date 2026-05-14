@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "morie"
-version = "0.6.1"
+version = "0.7.0"
 description = "Multi-domain Open Research and Inferential Estimation. Multi-domain scientific computing toolkit hosting the MRM framework for Canadian carceral, police, and oversight data, with general-purpose causal inference, signal processing, cryptography, spatial statistics, statistical physics, and psychometrics modules. (Renamed from MOIRAIS in v0.1.3; the moirais module remains as a deprecated alias.)"
 authors = [
   { name="Vansh Singh Ruhela", email="hadesllm@proton.me" }
@@ -91,6 +91,7 @@ Changelog     = "https://github.com/hadesllm/morie/releases"
 "MORIE paper"                    = "https://doi.org/10.5281/zenodo.20096350"
 "MRM framework paper"            = "https://doi.org/10.5281/zenodo.20096075"
 "Hawkes process paper"           = "https://doi.org/10.5281/zenodo.20102198"
+"Empirical applications paper"   = "https://doi.org/10.5281/zenodo.20175689"
 
 [project.optional-dependencies]
 test = [

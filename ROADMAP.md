@@ -4,7 +4,17 @@ This document lists what's shipped and what's planned. Items below v1.0.0 are pr
 
 ## Shipped
 
-### v0.5.0 — fresh-user release (current, 2026-05-13)
+### v0.7.0 — five-paper completion + DOI propagation (current, 2026-05-14)
+
+The release that closes the publication set and propagates the new empirical-paper DOI everywhere downstream consumers look:
+
+- **Empirical applications paper now public on Zenodo** — *Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data*, [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689). Five-paper set (MRM framework, Hawkes methodology, morie-R software, morie-Python software, empirical applications) is now complete.
+- **`ac` / `vm` terminology locked across all 5 papers** — `ac` (alert complexity) and `vm` (volatility measure of placements, "regional-transition count" alongside) are now the canonical operational terms.
+- **DOI + version sweep across all surfaces** — empirical-paper DOI now reaches `docs/source/index.rst` Sphinx badges, `pyproject.toml [project.urls]`, `papers/README.md`, and `CITATION.cff`. Also: `Dockerfile` un-pinned from `0.2.0` → `0.7.0`; Sphinx install snippets un-pinned from `0.4.12` → `0.7.0`; `papers/README.md` "in preparation" → published DOI for the empirical paper; v0.5.0 version stamp note → v0.7.0.
+- **R-package roxygen man pages for the fast Rcpp kernels** — `morie_mean`, `morie_var`, `morie_cor_pearson`, `morie_normal_pdf`, `morie_fast_available` now ship with proper Rd documentation alongside the C++ exports.
+- **R 4.6.0 strict-`Author` compatibility** — `DESCRIPTION` carries an explicit `Author:` field alongside the modern `Authors@R:` so `R CMD check` passes on the 4.6.0 series (which no longer auto-derives `Author` from `Authors@R` during source-tree checks).
+
+### v0.5.0 — fresh-user release (2026-05-13)
 
 The release that makes the toolkit usable by a non-programmer:
 

@@ -1,7 +1,7 @@
 Package: morie
 Type: Package
 Title: Multi-Domain Open Research and Inferential Estimation
-Version: 0.6.1
+Version: 0.7.0
 Authors@R: c(
   person(
     given = "Vansh Singh",
@@ -11,6 +11,7 @@ Authors@R: c(
     comment = c(ORCID = "0009-0004-1750-3592")
   )
  )
+Author: Vansh Singh Ruhela [aut, cre] (<https://orcid.org/0009-0004-1750-3592>)
 Maintainer: Vansh Singh Ruhela <hadesllm@proton.me>
 Description: Multi-domain scientific computing toolkit for observational
   inference and intervention analysis across scientific-experimentation

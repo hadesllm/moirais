@@ -1,3 +1,27 @@
+# morie 0.7.1 — 2026-05-14
+
+* Manual / roxygen refresh. The package overview, the
+  `mrm_classify_mandela()` reference, the `mrm_otis_*` reference, and
+  the three OTIS-related vignettes are updated to reflect the current
+  state of the work:
+  - Package title set to "Multi-Domain Open Research and Inferential
+    Estimation" (matches DESCRIPTION; was the pre-rename "Methods for
+    Observational Inference and Robust Analysis").
+  - MRM expanded canonically as "Multilevel Reconciliation
+    Methodology" (the people-credit reading McNamara-Ruhela-Medina
+    is kept as a secondary note).
+  - OTIS expanded as "Offender Tracking Information System" (not
+    "Ontario Tracking …") and tagged as published by the Ontario
+    Ministry of the Solicitor General.
+  - Sprott & Doob (2021) replaces the ghost 2023 CJCCJ citation in
+    the Mandela reference; Iftene & Doob (2024) Dalhousie Schulich
+    Law report 51 added alongside.
+  - Acronyms section added (MRM, OTIS, SIU, TPS, CSI, ac, vm).
+  - Companion-papers section added with the five Zenodo DOIs.
+  - License section added (Apache + MIT, kernel adjuncts GPL-2.0).
+* No code or API changes vs 0.7.0; this is a documentation-only
+  patch release.
+
 # morie 0.7.0 — 2026-05-14
 
 * License migrated from `GPL-2.0-only` to dual-license

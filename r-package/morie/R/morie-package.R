@@ -68,8 +68,8 @@
 #'   \item Iftene, A. and Doob, A. N. (2024).
 #'     \emph{Do Independent External Decision Makers Ensure that
 #'     ``An Inmate's Confinement in a Structured Intervention Unit
-#'     Is to End as Soon as Possible''? [Corrections and Conditional
-#'     Release Act, Section 33].}  Dalhousie Schulich School of Law,
+#'     Is to End as Soon as Possible''? (Corrections and Conditional
+#'     Release Act, Section 33).}  Dalhousie Schulich School of Law,
 #'     report 51.
 #'     \url{https://digitalcommons.schulichlaw.dal.ca/reports/51/}
 #'   \item Structured Intervention Unit Implementation Advisory

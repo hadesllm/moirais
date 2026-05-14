@@ -77,7 +77,7 @@ classification that adds high-alert placements to the numerator.
 \details{
 The provincial classification operates on duration alone (the
 \code{duration_col} column). The federal classification additionally
-requires unmet "meaningful contact" criteria (Sprott-Doob 2023);
+requires unmet "meaningful contact" criteria (Sprott & Doob, 2021);
 if \code{meaningful_contact_col} is supplied, that column is treated as a
 1-if-met indicator and rows with met-contact are excluded from the
 numerator regardless of duration.
@@ -94,7 +94,15 @@ United Nations General Assembly (2015). United Nations Standard
 Minimum Rules for the Treatment of Prisoners (the Nelson Mandela
 Rules). A/RES/70/175.
 
-Sprott, J. B., & Doob, A. N. (2023). The (Non-)Use of Structured
-Intervention Units in Canada. Canadian Journal of Criminology and
-Criminal Justice, 65(1).
+Sprott, J. B., & Doob, A. N. (2021). Solitary Confinement, Torture,
+and Canada's Structured Intervention Units. Centre for Criminology
+and Sociolegal Studies, University of Toronto.
+\url{https://www.crimsl.utoronto.ca/sites/www.crimsl.utoronto.ca/files/TortureSolitarySIUsSprottDoob23Feb2021_0.pdf}
+
+Iftene, A., & Doob, A. N. (2024). Do Independent External Decision
+Makers Ensure that "An Inmate's Confinement in a Structured
+Intervention Unit Is to End as Soon as Possible"? \link[=Corrections and
+Conditional Release Act, Section 33]{Corrections and Conditional Release Act, Section 33}. Dalhousie Schulich School of
+Law, report 51.
+\url{https://digitalcommons.schulichlaw.dal.ca/reports/51/}
 }

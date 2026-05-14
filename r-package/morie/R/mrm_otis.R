@@ -1,10 +1,11 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 #' MRM-framework analyses on Ontario OTIS data
 #'
-#' Five callables for the OTIS public-release datasets, used in the MRM
-#' (McNamara-Ruhela-Medina) empirical companion paper. Every analysis
-#' is computed directly from the OTIS CSV files; no precomputed
-#' artifacts are required.
+#' Five callables for the OTIS (Offender Tracking Information System)
+#' public-release datasets, used in the MRM (Multilevel Reconciliation
+#' Methodology) empirical companion paper. Every analysis is computed
+#' directly from the OTIS CSV files; no precomputed artifacts are
+#' required.
 #'
 #' Functions:
 #' * `mrm_otis_placement_concentration()`: Hill-MLE Pareto exponent +

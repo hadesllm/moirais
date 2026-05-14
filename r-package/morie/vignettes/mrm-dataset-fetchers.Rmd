@@ -23,7 +23,8 @@ The MRM empirical callables (`mrm_otis_*`, `mrm_tps_*`,
 `mrm_siu_*`) operate on three external data sources. This vignette
 documents how `morie` makes each of them accessible to end users:
 
-* **OTIS** (Ontario Tracking Information System) \u2014 public CKAN
+* **OTIS** (Offender Tracking Information System; published by the
+  Ontario Ministry of the Solicitor General) \u2014 public CKAN
   release on `data.ontario.ca`, reached via the existing
   `morie_load_dataset()` infrastructure.
 * **TPS** (Toronto Police Service) \u2014 public ArcGIS Open Data, reached

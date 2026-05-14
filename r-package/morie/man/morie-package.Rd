@@ -4,15 +4,105 @@
 \name{morie-package}
 \alias{morie}
 \alias{morie-package}
-\title{morie: Methods for Observational Inference and Robust Analysis}
+\title{morie: Multi-Domain Open Research and Inferential Estimation}
 \description{
 Multi-domain scientific computing toolkit for observational
-inference. Hosts the MRM (McNamara-Ruhela-Medina) framework as a
-primary application for Canadian carceral, police, and oversight
-data, with general-purpose causal inference, signal-processing,
-cryptographic, spatial-statistics, statistical-physics, and
-psychometrics modules.
+inference and intervention analysis across scientific-experimentation
+contexts. Hosts the MRM (Multilevel Reconciliation Methodology)
+framework as a primary application for Canadian carceral, police,
+and oversight data; the people-credit reading is McNamara-Ruhela-
+Medina.
 }
+\details{
+Provides general-purpose causal estimators (ATE, ATT, ATC, GATE,
+CATE, LATE, AIPW, G-computation), survey sampling methods
+(stratified, cluster, PPS, bootstrap, calibration weights),
+propensity-score and doubly-robust estimators, and sensitivity
+analyses (E-value, Rosenbaum bounds). Companion modules support
+signal processing and spectral analysis, cryptographic primitives,
+spatial statistics, statistical physics of crime (Hawkes self-
+exciting processes, reaction-diffusion, Levy flight, urban
+scaling), and classical-test-theory and item-response-theory
+psychometrics, alongside ingestion utilities for officially
+published Ontario Special Investigations Unit (SIU; police-
+oversight) and federal Structured Intervention Unit reports.
+}
+\section{Acronyms used throughout the package}{
+
+\itemize{
+\item \strong{MRM} -- Multilevel Reconciliation Methodology
+\item \strong{OTIS} -- Offender Tracking Information System
+(published by the Ontario Ministry of the Solicitor General,
+formerly the Ministry of Community Safety and Correctional
+Services until June 2019)
+\item \strong{SIU} -- Special Investigations Unit
+(Ontario police-oversight body)
+\item \strong{TPS} -- Toronto Police Service
+\item \strong{CSI} -- Crime Severity Index (Statistics Canada)
+\item \strong{ac} -- alert complexity (per-person-year count of
+distinct alert-state configurations)
+\item \strong{vm} -- volatility measure of placements (per-
+person-year regional-transition count)
+}
+}
+
+\section{Companion papers (Zenodo DOIs)}{
+
+If you use morie in your work, please cite the relevant companion
+papers (see \code{citation("morie")} or the \file{CITATION.cff}
+file in the source distribution):
+\itemize{
+\item morie (R software paper):
+\doi{10.5281/zenodo.20111233}
+\item morie (Python software paper):
+\doi{10.5281/zenodo.20096350}
+\item MRM framework paper:
+\doi{10.5281/zenodo.20096075}
+\item Hawkes-process methodology paper:
+\doi{10.5281/zenodo.20102198}
+\item Empirical applications paper:
+\doi{10.5281/zenodo.20175689}
+}
+}
+
+\section{Key external citations used by MRM modules}{
+
+\itemize{
+\item Sprott, J. B. and Doob, A. N. (2021).
+\emph{Solitary Confinement, Torture, and Canada's Structured
+Intervention Units.}  Centre for Criminology and Sociolegal
+Studies, University of Toronto.
+\url{https://www.crimsl.utoronto.ca/sites/www.crimsl.utoronto.ca/files/TortureSolitarySIUsSprottDoob23Feb2021_0.pdf}
+\item Doob, A. N. and Sprott, J. B. (2020).
+\emph{Understanding the Operation of Correctional Service
+Canada's Structured Intervention Units: Some Preliminary
+Findings.}  John Howard Society of Canada.
+\item Iftene, A. and Doob, A. N. (2024).
+\emph{Do Independent External Decision Makers Ensure that
+``An Inmate's Confinement in a Structured Intervention Unit
+Is to End as Soon as Possible''? \link[=Corrections and Conditional
+    Release Act, Section 33]{Corrections and Conditional Release Act, Section 33}.}  Dalhousie Schulich School of Law,
+report 51.
+\url{https://digitalcommons.schulichlaw.dal.ca/reports/51/}
+\item Structured Intervention Unit Implementation Advisory
+Panel (2024). \emph{Final Report on Structured Intervention
+Units and Solitary Confinement.}  Public Safety Canada.
+\item United Nations General Assembly (2015). \emph{United
+Nations Standard Minimum Rules for the Treatment of Prisoners
+(the Nelson Mandela Rules).}  Resolution A/RES/70/175.
+}
+}
+
+\section{License}{
+
+morie is dual-licensed under \strong{Apache License (== 2) | MIT +
+file LICENSE}; recipients pick either. The Python sibling on PyPI
+uses the equivalent SPDX expression \code{MIT OR Apache-2.0}. The
+optional Linux-kernel adjuncts under \code{kernel-module/} and
+\code{daemon/} are \code{GPL-2.0-only} (kernel ABI requirement)
+and are not part of the CRAN tarball.
+}
+
 \seealso{
 Useful links:
 \itemize{

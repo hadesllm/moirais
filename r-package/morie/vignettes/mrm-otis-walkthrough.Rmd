@@ -19,10 +19,12 @@ knitr::opts_chunk$set(
 
 # What this vignette covers
 
-The **MRM (McNamara--Ruhela--Medina)** framework is a coordinated set
+The **MRM (Multilevel Reconciliation Methodology;** people-credit
+reading: McNamara--Ruhela--Medina**)** framework is a coordinated set
 of ten causal estimators paired with a multi-source data layer for
 Canadian carceral, police, and oversight data. This vignette uses the
-provincial Ontario Tracking Information System (OTIS)
+provincial Offender Tracking Information System (OTIS; published by
+the Ontario Ministry of the Solicitor General)
 restrictive-confinement microdata as an example, applies the
 ten-estimator ensemble to a binary-treatment design on dataset `a01`,
 and shows how to read the resulting summary.

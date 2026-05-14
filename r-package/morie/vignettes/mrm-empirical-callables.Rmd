@@ -185,11 +185,15 @@ processing cadence rather than a per-jurisdiction effect.
 
 # References
 
-* MRM theoretical paper \u2014 Ruhela (2026), *The McNamara-Ruhela-Medina
-  framework*, Zenodo
+* MRM theoretical paper \u2014 Ruhela (2026), *MRM: Multilevel
+  Reconciliation Methodology --- A Multi-Source Statistical
+  Foundation for Canadian Carceral, Police, and Oversight Data*,
+  Zenodo
   [10.5281/zenodo.20096075](https://doi.org/10.5281/zenodo.20096075).
-* MRM empirical paper \u2014 Ruhela (2026, in preparation),
-  `papers/morie-empirical-paper/`.
+* MRM empirical paper \u2014 Ruhela (2026), *Solitary Confinement,
+  Self-Excitation, and Institutional Churn: Empirical Applications
+  of MRM to Canadian Carceral and Police Data*, Zenodo
+  [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689).
 * OTIS data dictionary \u2014 `data.ontario.ca/dataset/data-on-inmates-in-ontario`.
 * Toronto Police Open Data \u2014 `data.torontopolice.on.ca/`.
 * SIU public Director's Reports \u2014 `siu.on.ca/en/case_directors_reports.php`.

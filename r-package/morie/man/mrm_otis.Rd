@@ -4,10 +4,11 @@
 \alias{mrm_otis}
 \title{MRM-framework analyses on Ontario OTIS data}
 \description{
-Five callables for the OTIS public-release datasets, used in the MRM
-(McNamara-Ruhela-Medina) empirical companion paper. Every analysis
-is computed directly from the OTIS CSV files; no precomputed
-artifacts are required.
+Five callables for the OTIS (Offender Tracking Information System)
+public-release datasets, used in the MRM (Multilevel Reconciliation
+Methodology) empirical companion paper. Every analysis is computed
+directly from the OTIS CSV files; no precomputed artifacts are
+required.
 }
 \details{
 Functions:

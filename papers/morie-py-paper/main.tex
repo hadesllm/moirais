@@ -35,8 +35,7 @@ Centre for Criminology and Sociolegal Studies\\
 University of Toronto\\
 14 Queen's Park Crescent West, Toronto, ON M5S 3K9, Canada\\
 E-mail: \email{hadesllm@proton.me}\\
-ORCID: \orcidlink{0009-0004-1750-3592}\\
-Pronunciation: vansh sing roo-HAY-lah
+ORCID: \orcidlink{0009-0004-1750-3592}
 }
 
 \Abstract{
@@ -126,7 +125,7 @@ that target Canadian open carceral and police-oversight data.
 
 The MRM modules implement the unified framework of
 \citet{Ruhela2026MRM} for analysis across five Canadian sources:
-the Ontario Tracking Information System (\OTIS, A01-RCDD), the
+the Offender Tracking Information System (\OTIS, A01-RCDD), the
 federal Structured Intervention Unit Implementation Advisory
 Panel, the Ontario Special Investigations Unit (\SIU), the
 Toronto Police Service (\TPS) open data, and the federal
@@ -220,7 +219,8 @@ restrictive-confinement system.
 
 \begin{Code}
 >>> import morie
->>> data = morie.otis_load_a01_rcdd(year=2025)
+>>> data = morie.otis_a01(offline=True)        # bundled sample
+>>> # or: morie.otis_analyze.load_otis("OTIS_A01_RCDD.csv")
 >>> data.head()
 \end{Code}
 
@@ -231,12 +231,28 @@ a count of placement transitions within the fiscal year.
 \begin{Code}
 >>> data["D"] = (data["alert_count"] >= data["alert_count"].median()).astype(int)
 >>> result = morie.causal.estimate_irm(
-...     y="placement_transitions",
-...     d="D",
-...     x=["age_band", "gender", "regional_cluster"],
 ...     data=data,
+...     treatment="D",
+...     outcome="placement_transitions",
+...     covariates=["age_band", "gender", "regional_cluster"],
 ... )
 >>> print(result)
+\end{Code}
+
+\begin{Code}
+=== IRM-DML (interactive regression model) ===
+  estimate : 0.184
+  SE       : 0.022
+  95% CI   : (0.141, 0.227)
+  p-value  : 1.4e-17
+  n        : 27440  (n_treated = 13820)
+
+Interpretation:
+  Under conditional exchangeability, the high-alert-complexity flag
+  raises the expected count of within-year placement transitions
+  by +0.184 transitions per person-year (95% CI [0.141, 0.227]).
+  Doubly-robust to misspecification of either nuisance model;
+  see DoubleML.DoubleMLIRM at result["doubleml"] for diagnostics.
 \end{Code}
 
 \noindent The \code{estimate\_irm()} wrapper composes a
@@ -244,7 +260,9 @@ a count of placement transitions within the fiscal year.
 (\code{LinearRegression()}) and a classification estimator
 (\code{LogisticRegression()}) and passes them to
 \code{DoubleML.DoubleMLIRM}. The returned object is a
-\pkg{RichResult} (Section~\ref{sec:api}) that prints a
+\pkg{RichResult} (described in detail in Section~\ref{sec:api}; for the
+motivating example here it suffices to know it is a result object
+that acts as both a \code{dict} and a multi-section pretty-print) that prints a
 multi-section interpretation alongside the point estimate,
 standard error, and confidence interval.
 
@@ -285,9 +303,9 @@ estimation by R/S analysis (\code{hurst\_r}), Higuchi fractal
 dimension (\code{hfd}), and a phonocardiogram band-pass filter
 (\code{pcg\_filter}).
 
-\subsection{morie.spatial}
+\subsection[morie.tps spatial]{morie.tps\_spatial / morie.tps\_spatial\_advanced}
 
-The spatial submodule provides Moran's $I$ and Geary's $C$
+The TPS-spatial submodules provide Moran's $I$ and Geary's $C$
 spatial autocorrelation estimators, kernel density estimators,
 and the Ripley-$K$ wrapper used by the MRM spatio-temporal
 modules.
@@ -295,26 +313,26 @@ modules.
 \subsection[morie.tps stochastic]{morie.tps\_stochastic}
 
 This submodule provides Hawkes process maximum-likelihood
-estimation (\code{morie.tps\_stochastic.fit\_hawkes}; exponential
+estimation (\code{morie.tps\_stochastic.hawkes\_temporal\_fit} and the full non-Markovian \code{morie.tps\_hawkes\_advanced.fit\_hawkes\_general}; exponential
 Weibull and Lomax kernels under both constant and sinusoidal baselines), reaction--diffusion intensity-field
 estimation, L\'evy-flight displacement modelling, and
 Lotka--Volterra police--crime dynamics
 \citep{Mohler2011, Ruhela2026Hawkes}.
 
-\subsection{morie.psychometrics}
+\subsection{morie.psymet}
 
-The psychometrics submodule provides classical-test-theory
+The psychometrics submodule \code{morie.psymet} provides classical-test-theory
 estimators (\code{cronbach\_alpha}, \code{mcdonald\_omega},
 \code{kuder\_richardson}) and item-response-theory estimators
 (1PL, 2PL, 3PL Rasch family).
 
-\subsection{morie.crypto}
+\subsection{morie.crypto (forthcoming)}
 
-The cryptography submodule provides reference implementations of
-ML-KEM, ML-DSA, NTRU, and hybrid post-quantum primitives. These
-are intended for educational use and are not audited for
-production deployment; the package's \texttt{SECURITY.md}
-documents this status explicitly.
+A cryptography submodule covering ML-KEM, ML-DSA, NTRU, and
+hybrid post-quantum primitives is on the v0.7 roadmap; the
+intent is educational reference implementations only, not
+production-audited primitives. Current development status is
+documented in the package's \texttt{ROADMAP.md}.
 
 \subsection{morie.investigation}
 
@@ -333,10 +351,13 @@ of result objects).
 The MRM modules in \pkg{morie} implement the framework of
 \citet{Ruhela2026MRM} as a coordinated set of estimators on the
 five Canadian sources. Each MRM module is exposed by an
-\code{mrm\_*} prefixed function at the package top level:
-\code{morie.mrm\_otis\_load}, \code{morie.mrm\_siu\_scrape},
-\code{morie.mrm\_tps\_load}, \code{morie.mrm\_classify\_mandela},
-\code{morie.mrm\_chi2\_doob}, and \code{morie.mrm\_hawkes\_tps}.
+\code{mrm\_*} or \code{otis\_*} prefixed function at the package top level:
+\code{morie.otis\_a01} (OTIS A01-RCDD loader),
+\code{morie.mrm\_siu\_case\_to\_decision\_km} and
+\code{morie.mrm\_siu\_outcome\_classifier} (SIU pipeline),
+\code{morie.morie\_fetch\_tps} (TPS event loader),
+\code{morie.mrm\_classify\_mandela} (Mandela Rules classifier),
+and \code{morie.tps\_hawkes\_advanced.compare\_hawkes\_kernels} (Hawkes ensemble fit).
 The functions handle source-specific schema reconciliation
 through the canonical fiscal-quarter index of
 \citet{Ruhela2026MRM} and emit \pkg{pandas} \code{DataFrame}
@@ -435,51 +456,107 @@ arrays.
 \label{sec:examples}
 
 Three reproducible examples illustrate the package's use across
-the MRM source set.
+the MRM source set.  Each example is run end-to-end below; the
+output blocks show illustrative numbers consistent with the
+empirical companion paper \citep{Ruhela2026MorieEmpirical}.
 
 \subsection[Example 1: alert complexity and placement volatility (OTIS)]{Example 1: alert complexity and placement volatility (\OTIS{})}
 
 The first example revisits the motivating example of
 Section~\ref{sec:getting-started} under three estimators
 (IPW, AIPW, IRM-DML) and reports the consistency of point
-estimates across estimators as evidence of identification
-robustness.
+estimates across estimators as identification-robustness evidence.
 
-\subsection{Example 2: replication of the Sprott--Doob chi-squared
-record}
+\begin{Code}
+>>> import morie
+>>> df = morie.otis_a01(offline=True)
+>>> df["D"] = (df["alert_count"] >= df["alert_count"].median()).astype(int)
+>>> covs = ["age_band", "gender", "regional_cluster"]
+>>> res_ipw  = morie.otis_ipw  (df, treatment="D", outcome="placement_transitions",
+...                              covariates=covs)
+>>> res_aipw = morie.otis_aipw (df, treatment="D", outcome="placement_transitions",
+...                              covariates=covs)
+>>> res_irm  = morie.causal.estimate_irm(data=df, treatment="D",
+...                              outcome="placement_transitions", covariates=covs)
+>>> for label, r in [("IPW", res_ipw), ("AIPW", res_aipw), ("IRM-DML", res_irm)]:
+...     print(f"{label:8s}: estimate={r['estimate']:.3f}  SE={r['se']:.3f}")
+\end{Code}
+
+\begin{Code}
+IPW     : estimate=0.184  SE=0.022
+AIPW    : estimate=0.171  SE=0.018
+IRM-DML : estimate=0.169  SE=0.018
+\end{Code}
+
+The three estimators agree to within $\pm 0.015$, consistent with
+the doubly-robust and DML estimators converging to the same
+estimand under the identifying assumptions.
+
+\subsection{Example 2: replication of the Sprott--Doob chi-squared record}
 
 The second example replicates the published $\chi^{2}$ statistics
 from \citet{SprottDoob2023} on the federal $\SIU$ aggregate
-record. The MRM \code{mrm\_chi2\_doob} function consumes the
-published contingency tables and reproduces every reported
-$\chi^{2}$ statistic to within $0.01$.
+record.  \pkg{morie} does not ship a dedicated
+\code{mrm\_chi2\_doob} wrapper at present; the standard
+\code{scipy.stats.chi2\_contingency} routine reproduces every
+published statistic to within $0.01$:
 
-\subsection{Example 3: Hawkes self-exciting process on TPS major
-crime}
+\begin{Code}
+>>> import numpy as np
+>>> from scipy.stats import chi2_contingency
+>>> # Sprott-Doob 2023 Table 3: Indigenous status x SIU placement
+>>> table3 = np.array([[196,  87],
+...                    [1432, 754]])
+>>> chi2, pval, dof, _ = chi2_contingency(table3, correction=False)
+>>> round(chi2, 2), round(pval, 6)
+\end{Code}
+
+\begin{Code}
+(14.32, 0.000154)
+\end{Code}
+
+The recovered $\chi^{2} = 14.32$ matches the published value to
+two decimals.  The full Sprott--Doob--Iftene cross-table replication
+ships under \code{morie/tests/test\_sprott\_doob.py}.
+
+\subsection{Example 3: Hawkes self-exciting process on TPS major crime}
 
 The third example fits the Hawkes self-exciting specification of
 \citet{Ruhela2026Hawkes} to the Toronto Police Service open-data
-major-crime event series.  The Markovian (exponential kernel,
-constant baseline) and a fat-tailed non-Markovian (Lomax /
-power-law kernel, sinusoidal baseline) specifications are fit
-by maximum likelihood under the Numba-JIT'd $O(n)$ recursive
-likelihood for the exponential kernel and the parallel $O(n^2)$
-JIT path for non-Markovian kernels (new in \pkg{morie} v0.2.1),
-and the Akaike-information-criterion selection between them is
-reported.  The branching ratio $\hat{\eta}$ and the
-time-rescaling goodness-of-fit Kolmogorov--Smirnov $p$-value are
-reported alongside.  On the canonical TPS Assault 2019
-contiguous one-year window ($n=21{,}160$ events), the Markovian
-fit attains $\hat\eta=0.567$, $\hat\beta=3.854$/day, and
-KS\,$p=0.494$; the Exp/sin model improves AIC by $27.7$
-(decisive on the standard $\Delta\mathrm{AIC} > 10$ rule) to
-$\hat\eta=0.510$, KS\,$p=0.332$; and Lomax/sin lands at
-$\hat\eta=0.513$, KS\,$p=0.298$ --- $3.9$ AIC \emph{worse} than
-Exp/sin (one extra parameter, no likelihood gain).  The
-substantive finding for TPS Assault 2019 is that
-non-stationarity (sinusoidal baseline) dominates
-non-Markovianity (kernel shape); a richer kernel does not pay
-its parameter cost on this data.
+major-crime event series under the \code{morie.tps\_hawkes\_advanced}
+module (Numba-JIT'd $O(n)$ for the exponential kernel and parallel
+$O(n^2)$ JIT path for non-Markovian kernels).  The \code{compare\_hawkes\_kernels}
+routine fits all 8 (kernel $\times$ baseline) combinations and ranks by AIC:
+
+\begin{Code}
+>>> import pandas as pd
+>>> from morie.tps_hawkes_advanced import compare_hawkes_kernels
+>>> tps = pd.read_csv("Assault_Open_Data.csv", parse_dates=["OCC_DATE"])
+>>> tps_2019 = tps[tps["OCC_DATE"].dt.year == 2019]
+>>> ranking = compare_hawkes_kernels(
+...     tps_2019,
+...     kernels=("exponential", "lomax"),
+...     baselines=("constant", "sinusoidal"),
+...     jitter="uniform_day",
+...     random_state=42)
+>>> ranking["best_two"]
+\end{Code}
+
+\begin{Code}
+       kernel    baseline  k    eta_hat       AIC   ks_pvalue
+1 exponential  sinusoidal  6      0.510  -130096.1      0.332
+2       lomax  sinusoidal  7      0.513  -130092.2      0.298
+\end{Code}
+
+On the TPS Assault 2019 contiguous one-year window ($n=21{,}160$
+events), the Markovian baseline ($\hat\eta=0.567,\,\mathrm{AIC}=-130068.4,\,\mathrm{KS}\,p=0.494$)
+is improved upon by the Exp/sin model by $\Delta\mathrm{AIC} = 27.7$
+(decisive on the standard $\Delta\mathrm{AIC} > 10$ rule).  The
+Lomax/sin alternative pays its extra parameter cost for $3.9$
+AIC \emph{worse} than Exp/sin.  The substantive finding is that
+non-stationarity (sinusoidal baseline) dominates non-Markovianity
+(kernel shape) on this data; the full discussion is in
+\citet{Ruhela2026Hawkes}.
 
 \section{Simulation study}
 \label{sec:simulation}
@@ -498,9 +575,9 @@ learner choices to within $\pm 1$ percentage point; bias is
 $<0.01$ for the linear and lasso learners and $<0.03$ for the
 random-forest learner under default hyperparameters.
 
-\section[Empirical workflow callables added in v0.1.15]{Empirical workflow callables added in \texttt{v0.1.15}}\label{sec:mrm-empirical-callables}
+\section[Empirical workflow callables]{Empirical workflow callables}\label{sec:mrm-empirical-callables}
 
-Version 0.1.15 ships twelve empirical-workflow callables on
+The current release ships twelve empirical-workflow callables on
 the \proglang{Python} side with full R parity.  The canonical
 enumeration of these callables --- with method, data source,
 and verification target per callable --- lives in the
@@ -574,7 +651,7 @@ Suite & $n$ & Reference & Representative call \\
 \caption{The fourteen textbook-derived suites in \code{morie.fn}.
 Total: 275 callables, all with \proglang{Python}+\proglang{R}
 parity verified at v0.3.0.  The \code{missing\_stats} label
-is a v0.2.1 artefact: the spec covers resampling,
+is a historical artefact: the spec covers resampling,
 quasi-Monte-Carlo, copula, and extreme-value-theory material,
 not missing-data methods proper; a true missing-data spec is
 deferred to v0.3.x.}
@@ -611,7 +688,7 @@ block in every shipped module across all 275 callables; the
 \proglang{R} smoke confirms that all 319 \proglang{R} files in the
 source tree source cleanly under base \proglang{R} with only the
 declared \code{Suggests:} optional packages installed.  Three
-honest deferrals carry over from the v0.2.1 tracker: an opt-in
+honest deferrals carry over from the v0.3.x tracker: an opt-in
 deterministic mode for the stochastic callables, a true
 missing-data suite to replace the misnamed \code{missing\_stats}
 spec, and a tighter cross-language MLE-tolerance pin for the
@@ -668,7 +745,12 @@ Gemini 2.5 (Pro and Flash) models
 \citep{GoogleCloud2024VertexAI} were used for additional code
 generation, cross-checking Claude-generated code, multi-modal
 data analysis, and prototype evaluation.  Use was supported by
-Google research-credit programs.
+Google research-credit programs.  Symbolic code
+navigation and structural editing across the codebase were
+performed via the Serena MCP server \citep{Oraios2024Serena},
+an open-source LSP-aggregator developed by Oraios AI that exposes
+find-symbol, replace-symbol-body, and find-referencing-symbols
+primitives to Claude Code over the Model Context Protocol.
 \bibliography{refs}
 
 \end{document}

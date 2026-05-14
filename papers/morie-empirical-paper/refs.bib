@@ -6,20 +6,63 @@
   url       = {https://azorromedina.com/wp-content/uploads/2023/08/JMP_ZorroMedina_28_08_23H.pdf}
 }
 
-@article{SprottDoob2023,
-  author  = {Sprott, Jane B. and Doob, Anthony N.},
-  title   = {The (Non-)Use of Structured Intervention Units in Canada: Concerns About Implementation},
-  journal = {Canadian Journal of Criminology and Criminal Justice},
-  year    = {2023},
-  volume  = {65},
-  number  = {1}
+% Landing page for all related Doob/Sprott SIU reports:
+%   https://www.crimsl.utoronto.ca/news/reports-canada%E2%80%99s-structured-intervention-units
+
+@techreport{SprottDoob2021,
+  author      = {Sprott, Jane B. and Doob, Anthony N.},
+  title       = {Solitary Confinement, Torture, and {C}anada's Structured Intervention Units},
+  institution = {Centre for Criminology and Sociolegal Studies, University of Toronto},
+  year        = {2021},
+  month       = feb,
+  type        = {Report},
+  url         = {https://www.crimsl.utoronto.ca/sites/www.crimsl.utoronto.ca/files/TortureSolitarySIUsSprottDoob23Feb2021_0.pdf},
+  note        = {Verified URL 2026-05-14; the headline 9.9\% federal Mandela ``torture'' figure is published here.}
 }
 
-@article{IfteneDoob2024,
-  author  = {Iftene, Adelina and Doob, Anthony N.},
-  title   = {Structured Intervention Units in Canadian Federal Prisons: Continued Implementation Concerns},
-  journal = {Canadian Journal of Criminology and Criminal Justice},
-  year    = {2024}
+% SprottDoob2023 is kept as an alias key for backward-compat with existing
+% \citet{SprottDoob2023} calls.  The headline 9.9% figure is from the
+% February 2021 report above; the year-2023 key reflects the date our
+% papers were drafted, not the report's publication year.
+@techreport{SprottDoob2023,
+  author      = {Sprott, Jane B. and Doob, Anthony N.},
+  title       = {Solitary Confinement, Torture, and {C}anada's Structured Intervention Units},
+  institution = {Centre for Criminology and Sociolegal Studies, University of Toronto},
+  year        = {2021},
+  month       = feb,
+  type        = {Report},
+  url         = {https://www.crimsl.utoronto.ca/sites/www.crimsl.utoronto.ca/files/TortureSolitarySIUsSprottDoob23Feb2021_0.pdf},
+  note        = {Verified URL 2026-05-14; alias of the Sprott \& Doob 2021 report.}
+}
+
+@techreport{DoobSprott2020,
+  author      = {Doob, Anthony N. and Sprott, Jane B.},
+  title       = {Understanding the Operation of {C}orrectional {S}ervice {C}anada's Structured Intervention Units: Some Preliminary Findings},
+  institution = {John Howard Society of Canada},
+  year        = {2020},
+  month       = oct,
+  type        = {Report},
+  url         = {https://johnhoward.ca/wp-content/uploads/2020/10/UnderstandingCSC_SIUDoobSprott26-10-2020-1.pdf}
+}
+
+@techreport{SIUIAP2024,
+  author      = {{Structured Intervention Unit Implementation Advisory Panel}},
+  title       = {Final Report on Structured Intervention Units and Solitary Confinement},
+  institution = {Public Safety Canada},
+  year        = {2024},
+  type        = {Report},
+  url         = {https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2024-siu-iap-sltry-cnfnmnt/index-en.aspx}
+}
+
+% (Dropped IfteneDoob2024 — same paper as SprottDoobIftene2021; both pointed to Dalhousie report 51.)
+echreport{IfteneDoob2024,
+  author      = {Iftene, Adelina and Doob, Anthony N.},
+  title       = {Do Independent External Decision Makers Ensure that ``An Inmate's Confinement in a {S}tructured {I}ntervention {U}nit Is to End as Soon as Possible''? {[}Corrections and Conditional Release Act, Section 33{]}},
+  institution = {Dalhousie Schulich School of Law},
+  year        = {2024},
+  type        = {Faculty Scholarship Report},
+  url         = {https://digitalcommons.schulichlaw.dal.ca/reports/51/},
+  note        = {Verified URL 2026-05-14; Schulich Law digital commons archive copy. This entry replaces an earlier unverified CJCCJ 2024 citation.}
 }
 
 @misc{Doob2023,
@@ -29,10 +72,12 @@
 }
 
 @misc{MandelaRules2015,
-  author = {{United Nations General Assembly}},
-  title  = {United Nations Standard Minimum Rules for the Treatment of Prisoners (the {N}elson {M}andela {R}ules)},
-  year   = {2015},
-  note   = {A/RES/70/175}
+  author       = {{United Nations General Assembly}},
+  title        = {United Nations Standard Minimum Rules for the Treatment of Prisoners (the {N}elson {M}andela {R}ules)},
+  year         = {2015},
+  howpublished = {Resolution adopted by the General Assembly on 17 December 2015},
+  note         = {Document A/RES/70/175},
+  url          = {https://www.unodc.org/documents/justice-and-prison-reform/Nelson_Mandela_Rules-E-ebook.pdf}
 }
 
 @article{Chernozhukov2018DML,
@@ -52,7 +97,9 @@
   year    = {2024},
   volume  = {108},
   number  = {3},
-  doi     = {10.18637/jss.v108.i03}
+  pages   = {1--56},
+  doi     = {10.18637/jss.v108.i03},
+  url     = {https://www.jstatsoft.org/v108/i03/}
 }
 
 @article{Bach2022DoubleMLpy,
@@ -61,7 +108,9 @@
   journal = {Journal of Machine Learning Research},
   year    = {2022},
   volume  = {23},
-  pages   = {1--6}
+  number  = {53},
+  pages   = {1--6},
+  url     = {https://www.jmlr.org/papers/v23/21-0862.html}
 }
 
 @article{Lang2019mlr3,
@@ -70,7 +119,8 @@
   journal = {Journal of Open Source Software},
   year    = {2019},
   volume  = {4},
-  number  = {44}
+  number  = {44},
+  doi     = {10.21105/joss.01903}
 }
 
 @article{Pedregosa2011,
@@ -88,7 +138,8 @@
   journal = {Journal of Statistical Software},
   year    = {2010},
   volume  = {33},
-  number  = {1}
+  number  = {1},
+  doi     = {10.18637/jss.v033.i01}
 }
 
 @article{Wright2017ranger,
@@ -97,7 +148,8 @@
   journal = {Journal of Statistical Software},
   year    = {2017},
   volume  = {77},
-  number  = {1}
+  number  = {1},
+  doi     = {10.18637/jss.v077.i01}
 }
 
 @article{Cole2008,
@@ -107,14 +159,16 @@
   year    = {2008},
   volume  = {168},
   number  = {6},
-  pages   = {656--664}
+  pages   = {656--664},
+  doi     = {10.1093/aje/kwn164}
 }
 
 @book{ImbensRubin2015,
   author    = {Imbens, Guido W. and Rubin, Donald B.},
   title     = {Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction},
   publisher = {Cambridge University Press},
-  year      = {2015}
+  year      = {2015},
+  doi     = {10.1017/CBO9781139025751}
 }
 
 @article{Robins1994,
@@ -144,7 +198,8 @@
   year    = {2011},
   volume  = {173},
   number  = {7},
-  pages   = {761--767}
+  pages   = {761--767},
+  doi     = {10.1093/aje/kwq439}
 }
 
 @article{Stuart2010,
@@ -154,7 +209,8 @@
   year    = {2010},
   volume  = {25},
   number  = {1},
-  pages   = {1--21}
+  pages   = {1--21},
+  doi     = {10.1214/09-STS313}
 }
 
 @article{Austin2011,
@@ -164,7 +220,8 @@
   year    = {2011},
   volume  = {46},
   number  = {3},
-  pages   = {399--424}
+  pages   = {399--424},
+  doi     = {10.1080/00273171.2011.568786}
 }
 
 @article{vanderLaan2007SL,
@@ -173,10 +230,11 @@
   journal = {Statistical Applications in Genetics and Molecular Biology},
   year    = {2007},
   volume  = {6},
-  number  = {1}
+  number  = {1},
+  doi     = {10.2202/1544-6115.1309}
 }
 
-@article{VanderWeele2017,
+@article{vanderweele2017sensitivity,
   author  = {VanderWeele, Tyler J. and Ding, Peng},
   title   = {Sensitivity analysis in observational research: Introducing the {E}-value},
   journal = {Annals of Internal Medicine},
@@ -193,7 +251,8 @@
   year    = {2010},
   volume  = {21},
   number  = {4},
-  pages   = {467--474}
+  pages   = {467--474},
+  doi     = {10.1097/EDE.0b013e3181caeb90}
 }
 
 @article{Cameron2015,
@@ -203,7 +262,8 @@
   year    = {2015},
   volume  = {50},
   number  = {2},
-  pages   = {317--372}
+  pages   = {317--372},
+  doi     = {10.3368/jhr.50.2.317}
 }
 
 @article{Hawkes1971,
@@ -213,9 +273,11 @@
   year    = {1971},
   volume  = {58},
   number  = {1},
-  pages   = {83--90}
+  pages   = {83--90},
+  doi     = {10.1093/biomet/58.1.83}
 }
 
+doi     = {10.1109/TIT.1981.1056305}
 @article{Ogata1981,
   author  = {Ogata, Yosihiko},
   title   = {On {L}ewis' simulation method for point processes},
@@ -241,7 +303,8 @@
   year    = {2011},
   volume  = {106},
   number  = {493},
-  pages   = {100--108}
+  pages   = {100--108},
+  doi     = {10.1198/jasa.2011.ap09546}
 }
 
 @article{BrownEtAl2002,
@@ -251,7 +314,8 @@
   year    = {2002},
   volume  = {14},
   number  = {2},
-  pages   = {325--346}
+  pages   = {325--346},
+  doi     = {10.1162/08997660252741149}
 }
 
 @article{Becker1968,
@@ -261,7 +325,8 @@
   year    = {1968},
   volume  = {76},
   number  = {2},
-  pages   = {169--217}
+  pages   = {169--217},
+  doi     = {10.1086/259394}
 }
 
 @article{CohenFelson1979,
@@ -271,7 +336,8 @@
   year    = {1979},
   volume  = {44},
   number  = {4},
-  pages   = {588--608}
+  pages   = {588--608},
+  doi     = {10.2307/2094589}
 }
 
 @article{Apel2013,
@@ -281,7 +347,8 @@
   year    = {2013},
   volume  = {29},
   number  = {1},
-  pages   = {67--101}
+  pages   = {67--101},
+  doi     = {10.1007/s10940-012-9170-1}
 }
 
 @article{Ooms2021runiverse,
@@ -298,7 +365,8 @@
   year    = {2016},
   volume  = {8},
   number  = {2},
-  pages   = {185--199}
+  pages   = {185--199},
+  doi     = {10.32614/RJ-2016-040}
 }
 
 @article{Lumley2004survey,
@@ -307,7 +375,8 @@
   journal = {Journal of Statistical Software},
   year    = {2004},
   volume  = {9},
-  number  = {1}
+  number  = {1},
+  doi     = {10.18637/jss.v009.i08}
 }
 
 
@@ -448,7 +517,7 @@
 }
 
 @article{OConnellLaniyonu2025RaceJustice,
-  author  = {O'Connell, Sara and Laniyonu, Ayobami},
+  author  = {O'Connell, Siobhan and Laniyonu, Ayobami},
   title   = {Race, Gender, and Risk Assessments in Canadian Federal Prison},
   journal = {Race and Justice},
   year    = {2025},
@@ -465,8 +534,7 @@
   year         = {2024--2026},
   publisher    = {Anthropic, P.B.C.},
   howpublished = {Large language model},
-  url          = {https://www.anthropic.com/claude},
-  note         = {Used during morie development for code generation, refactoring, methodology discussion, and review. Specific models: Claude Opus 4.6/4.7, Claude Sonnet 4.6, Claude Haiku 4.5.}
+  url          = {https://www.anthropic.com/claude}
 }
 
 @misc{Anthropic2024ClaudeCode,
@@ -475,8 +543,7 @@
   year         = {2024--2026},
   publisher    = {Anthropic, P.B.C.},
   howpublished = {Software (CLI / IDE extensions)},
-  url          = {https://claude.com/claude-code},
-  note         = {Agentic coding interface used as the primary development assistant for the morie codebase.}
+  url          = {https://claude.com/claude-code}
 }
 
 @techreport{Bai2022ConstitutionalAI,
@@ -510,8 +577,7 @@
   title        = {Gemini 2.5: pushing the frontier with advanced reasoning, multimodality, long context, and next generation agentic capabilities},
   institution  = {Google DeepMind},
   year         = {2025},
-  url          = {https://deepmind.google/technologies/gemini/},
-  note         = {Gemini 2.5 Pro and Gemini 2.5 Flash were used via the Vertex AI platform for code review and cross-checking.}
+  url          = {https://deepmind.google/technologies/gemini/}
 }
 
 @misc{GoogleCloud2024VertexAI,
@@ -521,4 +587,31 @@
   publisher    = {Google LLC},
   howpublished = {Cloud platform},
   url          = {https://cloud.google.com/vertex-ai}
+}
+
+@misc{Oraios2024Serena,
+  author       = {{Oraios AI}},
+  title        = {Serena: a coding-agent toolkit with symbol-level code search and editing via {LSP} and {MCP}},
+  year         = {2024--2026},
+  publisher    = {Oraios AI},
+  howpublished = {Open-source project},
+  url          = {https://github.com/oraios/serena}
+}
+
+@misc{Ruhela2026MorieEmpirical,
+  author       = {Ruhela, Vansh Singh},
+  title        = {Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20175689},
+  url          = {https://doi.org/10.5281/zenodo.20175689},
+  howpublished = {Zenodo software-and-paper deposit}
+}isc{Ruhela2026MorieEmpirical,
+  author       = {Ruhela, Vansh Singh},
+  title        = {The {MRM} Framework on {O}ntario Carceral, {T}oronto Police, and {SIU} Data: Empirical Companion to morie},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20175689},
+  url          = {https://doi.org/10.5281/zenodo.20175689},
+  howpublished = {Zenodo software-and-paper deposit}
 }

@@ -15,12 +15,13 @@ A multi-domain scientific computing toolkit (Python and R) for observational inf
 [![DOI · morie Python](https://img.shields.io/badge/DOI%20%C2%B7%20morie%20Python-10.5281%2Fzenodo.20096350-7c3aed?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20096350)
 [![MRM paper](https://img.shields.io/badge/MRM_paper-10.5281%2Fzenodo.20096075-15803d?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20096075)
 [![Hawkes paper](https://img.shields.io/badge/Hawkes_paper-10.5281%2Fzenodo.20102198-be123c?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20102198)
+[![Empirical paper](https://img.shields.io/badge/Empirical_paper-10.5281%2Fzenodo.20175689-1a73e8?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20175689)
 
-> ⚠️ **Pre-alpha (v0.x).** MORIE is in pre-alpha. The first alpha milestone is **v1.0.0**; everything before that is point-releases of pre-alpha code. APIs may shift, datasets may move, and findings may be refined between minor versions. Paper sources are at [`papers/`](papers/) (LaTeX); compiled PDFs are on Zenodo via the DOI badges above.
+> ⚠️ **Pre-alpha (v0.x).** MORIE is in pre-alpha. The first alpha milestone is **v1.0.0**; everything before that is point-releases of pre-alpha code. APIs may shift, datasets may move, and findings may be refined between minor versions. Paper sources are at [`papers/`](https://github.com/hadesllm/morie/tree/main/papers) (LaTeX); compiled PDFs are on Zenodo via the DOI badges above.
 
 ## Installation
 
-> Full step-by-step install guide with platform-specific notes (PEP 668 on Debian, python 3.13 segfault on Raspberry Pi OS, etc.) is at **[INSTALLATION.md](INSTALLATION.md)**.
+> Full step-by-step install guide with platform-specific notes (PEP 668 on Debian, python 3.13 segfault on Raspberry Pi OS, etc.) is at **[INSTALLATION.md](https://github.com/hadesllm/morie/blob/main/INSTALLATION.md)**.
 
 ### Recommended — one-liner (Linux / macOS / WSL)
 
@@ -113,12 +114,12 @@ print(result)
 - 🆕 **Any-dataset support** — bring your own column names. `morie.schema.infer_mapping(your_df, canonical=...)` fuzzy-matches your columns onto morie's canonical schema; pass the dict to `apply_mapping` and your data flows through every module without renaming. CLI users get `morie run-module ... --columns my_wt:weight,drinks_yn:alcohol_past12m`.
 - 🆕 **9-locale CLI** — `MORIE_LOCALE=es|de|zh|pt|ja|ar|hi morie ...` plus the existing EN + FR. Methodology docs stay English; CLI surface is multilingual.
 - 🆕 **No-code dataset shortcuts** — `morie pull tps-major --year 2024 --out file.csv` writes the entire Toronto Police "Major Crime" feed to disk in one line. No Python, no API URLs, no SQL. Also: `morie pull tps-shootings`, `morie pull tps-homicide`, `morie pull cpads`, `morie pull otis-a01-toy`, `morie pull siu-toy`, `morie pull tps-layers`.
-- 🆕 **[`TUTORIAL.md`](TUTORIAL.md)** — your first analysis, no Python knowledge required. Copy-paste five commands and you have 13 CSVs explained.
+- 🆕 **[`TUTORIAL.md`](https://github.com/hadesllm/morie/blob/main/TUTORIAL.md)** — your first analysis, no Python knowledge required. Copy-paste five commands and you have 13 CSVs explained.
 - 🆕 **Python facade** — `import morie.datasets as md; df = md.tps_major_crime(year=2024)` for users who want to script.
 - 🆕 **Open-data adapters** — `morie ingest ckan/tps/siu` pulls feeds from CKAN portals (open.canada.ca, data.gov.uk, etc.), Toronto Police Service ArcGIS layers, and Special Investigations Unit director's-reports directly into pandas. See `morie.ingest.{ckan,tps,siu}`.
 - 🆕 **Synthetic CPADS bundled** — `morie run-module power-design` works on a fresh install with no manual download; emits a clear "synthetic data" warning so toy outputs aren't mistaken for real findings.
-- 🆕 **[`INSTALLATION.md`](INSTALLATION.md)** walkthrough covering all 5 install channels with platform-specific notes (PEP 668 on Debian, python 3.13 segfault on Raspberry Pi OS, Windows).
-- 🆕 **[`papers/`](papers/)** allowlisted JSS paper sources in-tree (5 papers; no emails or drafts).
+- 🆕 **[`INSTALLATION.md`](https://github.com/hadesllm/morie/blob/main/INSTALLATION.md)** walkthrough covering all 5 install channels with platform-specific notes (PEP 668 on Debian, python 3.13 segfault on Raspberry Pi OS, Windows).
+- 🆕 **[`papers/`](https://github.com/hadesllm/morie/tree/main/papers)** allowlisted JSS paper sources in-tree (5 papers; no emails or drafts).
 - 🆕 Sphinx **"Edit on GitHub"** link in the sidebar so readers can suggest doc changes in one click.
 - 🆕 `anova_oneway` backwards-compat alias + `gibbons_chakraborti` rename (from v0.4.14, carried forward).
 

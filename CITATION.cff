@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use morie in your research, please cite the language-specific software paper (R: DOI 10.5281/zenodo.20111233; Python: DOI 10.5281/zenodo.20096350). Where applicable to your work, also cite the MRM framework paper (DOI 10.5281/zenodo.20096075) and the Hawkes-process methodology paper (DOI 10.5281/zenodo.20102198)."
+message: "If you use morie in your research, please cite the language-specific software paper (R: DOI 10.5281/zenodo.20111233; Python: DOI 10.5281/zenodo.20096350). Where applicable to your work, also cite the MRM framework paper (DOI 10.5281/zenodo.20096075), the Hawkes-process methodology paper (DOI 10.5281/zenodo.20102198), and the empirical applications paper (DOI 10.5281/zenodo.20175689)."
 title: "morie: Multi-domain Open Research and Inferential Estimation"
 authors:
   - family-names: "Ruhela"
@@ -26,6 +26,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.20102198"
     description: "Hawkes-process methodology paper."
+  - type: doi
+    value: "10.5281/zenodo.20175689"
+    description: "Empirical applications paper (Solitary Confinement, Self-Excitation, and Institutional Churn)."
 preferred-citation:
   type: software
   title: "morie: Multi-domain Open Research and Inferential Estimation"
@@ -71,6 +74,17 @@ references:
     doi: "10.5281/zenodo.20102198"
     url: "https://doi.org/10.5281/zenodo.20102198"
     notes: "Hawkes methodology paper."
+  - type: generic
+    title: "Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data"
+    authors:
+      - family-names: "Ruhela"
+        given-names: "Vansh Singh"
+        orcid: "https://orcid.org/0009-0004-1750-3592"
+    year: "2026"
+    version: "v1"
+    doi: "10.5281/zenodo.20175689"
+    url: "https://doi.org/10.5281/zenodo.20175689"
+    notes: "Empirical applications paper — DML causal estimates, Mandela classification, Goffmanian institutional churn, Hawkes self-excitation on Toronto crime data."
   - type: software
     title: "Claude (Opus, Sonnet, Haiku) — Claude 4.x model family"
     authors:

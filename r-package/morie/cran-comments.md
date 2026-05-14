@@ -1,8 +1,8 @@
 ## Test environments
 
 * local macOS 26 (Darwin 25.4.0), R 4.6.0 -- 0 ERROR, 0 WARNING, 1 NOTE
-* win-builder R-release -- https://win-builder.r-project.org/<FILL-IN-HASH-1>/
-* win-builder R-devel    -- https://win-builder.r-project.org/<FILL-IN-HASH-2>/
+* win-builder R-release (R 4.6.0, Windows Server 2022) -- https://win-builder.r-project.org/7Kx23l3o2SD0/
+* win-builder R-devel    (R 2026-05-12 r90049, Windows Server 2022) -- https://win-builder.r-project.org/Hf58cXZf26RA/
 * GitHub Actions ubuntu-latest (R-release, R-oldrel-1, R-devel)
 * GitHub Actions macos-latest (R-release)
 * GitHub Actions windows-latest (R-release)

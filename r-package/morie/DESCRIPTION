@@ -15,8 +15,9 @@ Author: Vansh Singh Ruhela [aut, cre] (<https://orcid.org/0009-0004-1750-3592>)
 Maintainer: Vansh Singh Ruhela <hadesllm@proton.me>
 Description: Multi-domain scientific computing toolkit for observational
   inference and intervention analysis across scientific-experimentation
-  contexts, hosting the MRM (McNamara-Ruhela-Medina) framework for
-  Canadian carceral, police, and oversight data as its primary application.
+  contexts, hosting the MRM (Multilevel Reconciliation Methodology)
+  framework for Canadian carceral, police, and oversight data as its
+  primary application.
   Provides general-purpose causal estimators (ATE, ATT, ATC, GATE, CATE,
   LATE, AIPW, G-computation), survey sampling methods (stratified, cluster,
   PPS, bootstrap, calibration weights), propensity-score and doubly-robust

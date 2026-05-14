@@ -667,12 +667,11 @@ Reports site on demand.  Four small reference samples ship in
 \texttt{inst/extdata/} so the worked examples and the testthat
 suite run offline.
 
-\paragraph{Animated demo.}  A user can confirm the package is actually doing work, in the same
-way DoubleML's console output does, by running
-\code{morie::run\_treatment\_effects\_analysis(\dots, verbose = TRUE)}
-after installing the R sibling. Per-step progress prints to the
-console via the \pkg{cli} package; the Python sibling provides an
-equivalent animated demo via \texttt{python -m morie.demo}.
+\paragraph{Animated demo.}  A user can confirm the package is actually doing work, in the
+same way DoubleML's console output does, by installing the R sibling and calling
+\code{run\_treatment\_effects\_analysis()} with \code{verbose = TRUE}.
+Per-step progress prints to the console via the \pkg{cli} package; the Python sibling provides an
+equivalent animated demo via \code{python -m morie.demo}.
 
 \section[Textbook-derived callables in morie.fn]{Textbook-derived callables in \texttt{morie.fn}}\label{sec:textbook-callables}
 

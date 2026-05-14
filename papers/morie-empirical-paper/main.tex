@@ -340,10 +340,10 @@ on $\vm_{iy}$:
 \end{equation}
 
 Covariates entering the DML nuisance models are
-$X_{iy} = (\texttt{Age\_Category}_{iy}, \texttt{Gender}_{iy},
-\texttt{Region\_AtTimeOfPlacement}_{iy}, y)$. The treatment is
-$D_{iy} = \mathbf{1}\{\ac_{iy} \ge 2\}$; the outcome is
-$Y_{iy} = \vm_{iy}$.
+\[
+X_{iy} = (\texttt{Age\_Category}_{iy},\ \texttt{Gender}_{iy},\ \texttt{Region\_AtTimeOfPlacement}_{iy},\ y).
+\]
+The treatment is $D_{iy} = \mathbf{1}\{\ac_{iy} \ge 2\}$ and the outcome is $Y_{iy} = \vm_{iy}$.
 
 \subsection{Identifying assumptions}
 \label{sec:methods-id}
@@ -629,14 +629,12 @@ The proxy is an upper bound on the true Mandela classification: some
 placements with $d \ge 16$ may in fact provide more than two hours
 out-of-cell on average, in which case the formal Mandela definition
 is not met. The provincial application reads the official Ontario
-\OTIS{} c11 aggregate file
-(\texttt{c11\_individuals\_in\_segregation\_and\_restrictive\_confinement\_aggregate\_lengths.csv}),
+\OTIS{} c11 aggregate file,\footnote{\texttt{c11\_individuals\_in\_segregation\_and\_restrictive\_confinement\_aggregate\_lengths.csv}}
 which publishes per-fiscal-year counts of individuals by aggregate
 within-year duration band. The Torture$^{\ast}$ numerator is the
 sum of the $\{16\text{--}20, 21\text{--}25, 26\text{--}30,
 >30\}$-day bands; the denominator is the union over all duration
 bands (i.e., all individuals appearing in \OTIS{} that fiscal year).
-
 The provincial classifier is exposed in morie as
 \code{mrm\_classify\_mandela(c11\_path, source = "c11\_aggregate")}.
 
@@ -732,7 +730,7 @@ scope a re-fit would have to cover, not as final claims.
 
 
 \paragraph*{Verification status.}
-carried from prior analyses (MA-thesis values pending re-fit against the maintained TPS Assault CSV at \code{moirais-dev/dev/sphinx/project/data/datasets/TPS/Assault/CSV/Assault_Open_Data_*.csv}).
+carried from prior analyses; MA-thesis values pending re-fit against the maintained TPS Assault CSV.\footnote{\texttt{moirais-dev/dev/sphinx/project/data/datasets/TPS/Assault/CSV/Assault\_Open\_Data\_*.csv}}
 
 Table~\ref{tab:hawkes-markovian} reports the Markovian (M1) Hawkes
 maximum-likelihood fits per TPS category, refitted with U(0,1)-day
@@ -854,8 +852,8 @@ Markovian); and Lomax/sinusoidal $\hat\eta=0.513,\;\text{KS}~p=0.298$
 Exp/sinusoidal).  The AIC gain is attributable entirely to the
 sinusoidal baseline absorbing diurnal/weekly cyclicity rather
 than to a kernel-shape effect; the fat-tailed Lomax kernel does
-not pay its extra-parameter cost on TPS Assault 2019.  Full results are in
-\texttt{data/manifest/outputs/paper\_hawkes\_assault\_2019\_contiguous.json}.
+not pay its extra-parameter cost on TPS Assault 2019.  Full results are
+in the manifest.\footnote{\texttt{data/manifest/outputs/paper\_hawkes\_assault\_2019\_contiguous.json}}
 
 \subsection{Lévy mobility, urban scaling, predator-prey}\label{phys-scaling}
 
@@ -1031,14 +1029,13 @@ downtown corridor concentration.  Cluster centres
 ($43.5^\circ$--$43.8^\circ$~N, $-79.2^\circ$ to $-79.6^\circ$~W)
 align with downtown Toronto, North York and Scarborough corridors,
 consistent with high-traffic urban networks.  The cluster
-artefacts are written to
-\texttt{data/manifest/outputs/tps\_spatial\_advanced/kulldorff\_top1.json}.
+artefacts are written to the manifest.\footnote{\texttt{data/manifest/outputs/tps\_spatial\_advanced/kulldorff\_top1.json}}
 
 \subsection{Goffmanian institutional churn (OTIS)}\label{phys-goffman}
 
 
 \paragraph*{Verification status.}
-verified 2026-05-11 against \texttt{b09\_individuals\_in\_segregation\_number\_of\_times\_in\_segregation.csv} (Hill $\hat\alpha = 2.08$, Gini $= 0.585$, top-5\% concentration $= 25.9\%$) and \texttt{b01\_segregation\_detailed\_dataset.csv} (Cram\'er's $V = 0.189$ for mental-health $\times$ suicide-risk, region $\chi^2 = 285{,}917$). Outputs in \texttt{results/06-goffmanian-churn-b09.txt} and \texttt{results/07-mortification-region-b01.txt}.
+verified 2026-05-11 against the b09\footnote{\texttt{b09\_individuals\_in\_segregation\_number\_of\_times\_in\_segregation.csv}} and b01\footnote{\texttt{b01\_segregation\_detailed\_dataset.csv}} \OTIS{} datasets: Hill $\hat\alpha = 2.08$, Gini $= 0.585$, top-5\% concentration $= 25.9\%$ on b09; Cram\'er's $V = 0.189$ for mental-health $\times$ suicide-risk, region $\chi^2 = 285{,}917$ on b01.\footnote{Outputs: \texttt{results/06-goffmanian-churn-b09.txt} and \texttt{results/07-mortification-region-b01.txt}.}
 
 Goffman's 1961 \emph{Asylums} \citep{goffman1961asylums}
 characterised ``total institutions'' as engines of mortification
@@ -1132,8 +1129,7 @@ slow mean-reversion at the low end (property crime), faster mean
 reversion ($\theta>1$) for the most volatile categories — and
 $\sigma\in[0.5,19.7]$, with several rare-event categories at
 $\sigma<1$ indicating very low residual noise.  The published
-Fokker-Planck manifest
-(\texttt{data/manifest/outputs/tps\_stochastic/fokker\_planck\_*.json})
+Fokker-Planck manifest\footnote{\texttt{data/manifest/outputs/tps\_stochastic/fokker\_planck\_*.json}}
 stores $(\theta,\mu,\sigma,\text{stationary\_peak})$ per category
 together with a path to the rendered KDE-vs-stationary overlay PNG;
 the overlays show close agreement between the fitted stationary
@@ -1223,8 +1219,7 @@ We re-fit the §\ref{sec:dml} IRM-DML pipeline on the OTIS
 year's TPS-derived CSI value appended as an additional confounder,
 to test whether the headline ATE absorbs once we condition on the
 prevailing severity of the wider crime environment.  The result is
-written to
-\texttt{data/manifest/outputs/otis\_full/.../a01\_csi/a01\_with\_csi\_context.json}
+written to the manifest\footnote{\texttt{data/manifest/outputs/otis\_full/.../a01\_csi/a01\_with\_csi\_context.json}}
 and gives a pooled $\hat\tau_{\text{ATE}} = 0.213$ (cluster-robust
 SE $0.012$, $n=14{,}520$, $95\%$ CI $[0.189,\,0.236]$) with
 $\hat\tau_{\text{ATTE}}=0.213$ and $\hat\tau_{\text{ATC}}=0.212$.
@@ -1267,8 +1262,8 @@ $0.270$ in 2024.  The interpretation is that Assault has
 become \emph{less} spatially concentrated over the panel:
 $2017$--$2019$ saw a tighter hotspot regime, $2020$ already
 softens during the pandemic, and $2022$--$2024$ runs at the
-lowest values in the panel.  Output:
-\texttt{data/manifest/outputs/tps\_spatial\_advanced/polygon\_moran\_per\_year\_Assault.json}.
+lowest values in the panel.  Output in the
+manifest.\footnote{\texttt{data/manifest/outputs/tps\_spatial\_advanced/polygon\_moran\_per\_year\_Assault.json}}
 
 \paragraph{Getis-Ord $G^\ast_i$ (verified).}  $|G^\ast_i|>1.96$
 at $6$--$27$ wards per category (most categories $16$--$19$;

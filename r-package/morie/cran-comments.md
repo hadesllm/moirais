@@ -1,11 +1,12 @@
 ## Test environments
 
-* local macOS 26 (Darwin 25.4.0), R 4.6.0
-* GitHub Actions, ubuntu-latest (R release, R oldrel-1, R devel)
-* GitHub Actions, macos-latest (R release)
-* GitHub Actions, windows-latest (R release)
+* local macOS 26 (Darwin 25.4.0), R 4.6.0 -- 0 ERROR, 0 WARNING, 1 NOTE
+* win-builder R-release -- https://win-builder.r-project.org/<FILL-IN-HASH-1>/
+* win-builder R-devel    -- https://win-builder.r-project.org/<FILL-IN-HASH-2>/
+* GitHub Actions ubuntu-latest (R-release, R-oldrel-1, R-devel)
+* GitHub Actions macos-latest (R-release)
+* GitHub Actions windows-latest (R-release)
 * r-universe (Linux + macOS + Windows binaries)
-* win-builder (R-release + R-devel)
 
 ## R CMD check results
 
@@ -13,8 +14,8 @@ Status: 0 ERROR, 0 WARNING, 1 NOTE.
 
 The single NOTE is the standard "New submission" CRAN-incoming
 feasibility check ("Maintainer: 'Vansh Singh Ruhela
-<hadesllm@proton.me>'"), expected for a version-bumped resubmission
-of a package whose last accepted version was 0.1.14.
+<hadesllm@proton.me>'"), expected for the first CRAN submission of
+this version line.
 
 ## Reverse dependencies
 
@@ -22,14 +23,26 @@ No reverse dependencies on CRAN.
 
 ## Notes for CRAN
 
-* This submission is `morie` version 0.7.0. It supersedes morie
-  0.1.14 (the last CRAN-accepted version) and brings the CRAN
-  release in line with the v0.7.0 release on PyPI, r-universe,
-  and GHCR. The intermediate 0.1.15 - 0.6.1 versions did not reach
-  CRAN; the v0.7.0 release closes a five-paper publication set
-  (the empirical applications paper landed on Zenodo at
-  10.5281/zenodo.20175689) and completes a license-unification
-  pass that this resubmission reflects.
+* **Supersedes morie 0.7.0** (submitted earlier today, withdrawal
+  email sent). 0.7.1 is a documentation-only patch fixing three
+  issues that I caught in the manual after submitting 0.7.0:
+  (1) package title now reads "Multi-Domain Open Research and
+  Inferential Estimation" (matches DESCRIPTION; was the pre-rename
+  string); (2) mrm_classify_mandela() reference block now cites
+  the verified Sprott & Doob (2021) CRIMSL working paper instead
+  of a non-existent CJCCJ 2023 entry; (3) MRM expanded canonically
+  as "Multilevel Reconciliation Methodology" (the people-credit
+  reading McNamara-Ruhela-Medina kept as a secondary note). No
+  code or API changes; the Rd files now parse without the
+  "[...]"-as-cross-reference warning that 0.7.0 emitted.
+
+* This submission supersedes morie 0.1.14 (the last CRAN-accepted
+  version) and brings the CRAN release in line with the v0.7.x
+  release on PyPI, r-universe, and GHCR. The intermediate
+  0.1.15 - 0.7.0 versions did not reach CRAN; the v0.7.0 release
+  closed a five-paper publication set (the empirical applications
+  paper landed on Zenodo at 10.5281/zenodo.20175689) and completed
+  a license-unification pass that this submission reflects.
 
 * The package is dual-licensed `Apache License (== 2) | MIT + file
   LICENSE` (CRAN form). Both language sides of the project --

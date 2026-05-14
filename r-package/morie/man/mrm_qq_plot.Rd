@@ -21,3 +21,10 @@ plotting_position columns (Blom 1958 plotting positions).
 \description{
 Q-Q plot coordinates against a reference distribution
 }
+\examples{
+set.seed(2026)
+x <- rnorm(100)
+qq <- mrm_qq_plot(x, dist = "norm")
+head(qq)
+# plot(qq$theoretical, qq$empirical); abline(0, 1)
+}

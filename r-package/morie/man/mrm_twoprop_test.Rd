@@ -21,3 +21,7 @@ interpretation.
 \description{
 Two-proportion test (chi-square + Fisher exact + Wald)
 }
+\examples{
+# Compare 47/100 vs 31/100; two-sided test.
+mrm_twoprop_test(x1 = 47, n1 = 100, x2 = 31, n2 = 100)
+}

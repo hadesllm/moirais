@@ -21,3 +21,9 @@ ci95_lower/upper, interpretation.
 \description{
 Chi-square test for variance (Wilks 1962)
 }
+\examples{
+set.seed(2026)
+x <- rnorm(50, mean = 0, sd = 1.2)
+# H0: variance = 1.
+mrm_var_test(sample = x, sigma0_sq = 1)
+}

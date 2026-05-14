@@ -22,3 +22,16 @@ alpha, df1, df2, noncentrality, F_critical, power, interpretation.
 \description{
 Power of one-way ANOVA given Cohen's f
 }
+\examples{
+# Power to detect a medium effect (Cohen's f = 0.25) with 4 groups
+# of 30 each at alpha = 0.05:
+res <- mrm_anova_power(k_groups = 4, n_per_group = 30,
+                       effect_size_f = 0.25, alpha = 0.05)
+res$power
+res$F_critical
+
+# Sample-size sensitivity: what power do I get with smaller groups?
+sapply(c(10, 20, 30, 50, 100), function(n)
+  mrm_anova_power(k_groups = 3, n_per_group = n,
+                  effect_size_f = 0.25)$power)
+}

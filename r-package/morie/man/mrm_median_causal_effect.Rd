@@ -22,3 +22,16 @@ median_treatment_effect, n_matched, interpretation.
 \description{
 Median causal effect via 1:1 nearest-neighbour PS matching
 }
+\examples{
+set.seed(2026)
+n <- 200L
+x <- rnorm(n)
+D <- rbinom(n, 1, plogis(0.5 * x))
+y <- 0.7 * D + 0.3 * x + rnorm(n, 0, 0.5)
+df <- data.frame(D = D, y = y, age = x)
+res <- mrm_median_causal_effect(df, treatment_col = "D",
+                                outcome_col = "y",
+                                covariates = "age")
+res$median_treatment_effect
+res$n_matched
+}

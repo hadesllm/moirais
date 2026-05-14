@@ -65,6 +65,17 @@ mrm_two_treatment_test <- function(a, b, alpha = 0.05) {
 #' @param alpha CI level (default 0.05).
 #' @return Named list with f_statistic, p_value, df_between,
 #'   df_within, means, n_per_group, tukey_hsd, interpretation.
+#' @examples
+#' set.seed(2026)
+#' n <- 30L
+#' df <- data.frame(
+#'   y = c(rnorm(n, 0), rnorm(n, 0.5), rnorm(n, 1)),
+#'   g = rep(c("A", "B", "C"), each = n)
+#' )
+#' res <- mrm_anova_oneway(df, response_col = "y", group_col = "g")
+#' res$f_statistic
+#' res$p_value
+#' res$tukey_hsd
 #' @importFrom stats as.formula
 #' @export
 mrm_anova_oneway <- function(data, response_col, group_col, alpha = 0.05) {

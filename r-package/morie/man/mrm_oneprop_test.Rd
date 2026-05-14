@@ -23,3 +23,7 @@ interpretation.
 \description{
 One-proportion test (binomial exact + Wald approximation)
 }
+\examples{
+# H0: proportion = 0.5 against the observed 58/100 successes
+mrm_oneprop_test(x = 58, n = 100, p0 = 0.5)
+}

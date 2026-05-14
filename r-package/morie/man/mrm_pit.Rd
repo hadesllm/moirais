@@ -22,3 +22,13 @@ If X ~ F, then F(X) ~ Uniform(0,1).  Returned U should be approx
 uniform if the assumed F is correct.  Attaches a KS p-value of U
 against Uniform(0,1) as the diagnostic for fit quality.
 }
+\examples{
+set.seed(2026)
+x <- rnorm(200)
+# Under correct distributional assumption, U should be ~Uniform(0,1):
+pit <- mrm_pit(x, dist = "norm")
+attr(pit, "ks_pvalue")  # large p-value => no evidence against fit
+# If we deliberately misspecify (claim t_3 fits the normal sample):
+pit_wrong <- mrm_pit(x, dist = "t", df = 3)
+attr(pit_wrong, "ks_pvalue")  # small p-value => misspecification detected
+}

@@ -37,6 +37,17 @@ NULL
 #' @param covariates Character vector of covariate columns.
 #' @return data.frame with covariate, mean_treated, mean_control,
 #'   pooled_sd, smd_pct, imbalanced columns.
+#' @examples
+#' set.seed(2026)
+#' n <- 200L
+#' df <- data.frame(
+#'   D   = rbinom(n, 1, 0.4),
+#'   age = rnorm(n, 50, 10),
+#'   bmi = rnorm(n, 27, 4)
+#' )
+#' df$age[df$D == 1] <- df$age[df$D == 1] + 3   # deliberate imbalance
+#' mrm_standardised_difference(df, treatment_col = "D",
+#'                             covariates = c("age", "bmi"))
 #' @export
 mrm_standardised_difference <- function(data, treatment_col, covariates) {
   D <- as.integer(data[[treatment_col]])
@@ -71,6 +82,19 @@ mrm_standardised_difference <- function(data, treatment_col, covariates) {
 #' @param threshold_pct %SMD imbalance threshold (default 10).
 #' @return Named list with table, threshold_pct, n_imbalanced,
 #'   overall_balanced, interpretation.
+#' @examples
+#' set.seed(2026)
+#' n <- 200L
+#' df <- data.frame(
+#'   D   = rbinom(n, 1, 0.4),
+#'   age = rnorm(n, 50, 10),
+#'   bmi = rnorm(n, 27, 4)
+#' )
+#' df$age[df$D == 1] <- df$age[df$D == 1] + 3   # imbalance on age
+#' bal <- mrm_check_balancing(df, treatment_col = "D",
+#'                            covariates = c("age", "bmi"))
+#' bal$overall_balanced
+#' bal$interpretation
 #' @export
 mrm_check_balancing <- function(data, treatment_col, covariates,
                                  threshold_pct = 10) {
@@ -99,6 +123,16 @@ mrm_check_balancing <- function(data, treatment_col, covariates,
 #' @return Named list with e_treated_quantiles, e_control_quantiles,
 #'   common_support_lower, common_support_upper, n_outside_support,
 #'   positivity_violations, interpretation.
+#' @examples
+#' set.seed(2026)
+#' n <- 300L
+#' x <- rnorm(n)
+#' D <- rbinom(n, 1, plogis(0.5 * x))
+#' df <- data.frame(D = D, age = x)
+#' ovl <- mrm_check_overlap(df, treatment_col = "D",
+#'                          covariates = "age")
+#' ovl$positivity_violations
+#' ovl$interpretation
 #' @export
 mrm_check_overlap <- function(data, treatment_col, covariates) {
   D <- as.integer(data[[treatment_col]])
@@ -136,6 +170,18 @@ mrm_check_overlap <- function(data, treatment_col, covariates) {
 #' @param covariates Character vector of covariate columns.
 #' @return Named list with median_y1, median_y0,
 #'   median_treatment_effect, n_matched, interpretation.
+#' @examples
+#' set.seed(2026)
+#' n <- 200L
+#' x <- rnorm(n)
+#' D <- rbinom(n, 1, plogis(0.5 * x))
+#' y <- 0.7 * D + 0.3 * x + rnorm(n, 0, 0.5)
+#' df <- data.frame(D = D, y = y, age = x)
+#' res <- mrm_median_causal_effect(df, treatment_col = "D",
+#'                                 outcome_col = "y",
+#'                                 covariates = "age")
+#' res$median_treatment_effect
+#' res$n_matched
 #' @export
 mrm_median_causal_effect <- function(data, treatment_col, outcome_col,
                                       covariates) {
@@ -186,6 +232,17 @@ mrm_median_causal_effect <- function(data, treatment_col, outcome_col,
 #' @param covariates Character vector of covariate columns.
 #' @return Named list with sutva, unconfoundedness,
 #'   probabilistic_assignment, overall_verdict sub-lists.
+#' @examples
+#' set.seed(2026)
+#' n <- 300L
+#' x <- rnorm(n)
+#' D <- rbinom(n, 1, plogis(0.5 * x))
+#' y <- 0.7 * D + 0.3 * x + rnorm(n)
+#' df <- data.frame(D = D, y = y, age = x)
+#' chk <- mrm_assumptions_check(df, treatment_col = "D",
+#'                              outcome_col = "y",
+#'                              covariates = "age")
+#' chk$overall_verdict
 #' @export
 mrm_assumptions_check <- function(data, treatment_col, outcome_col,
                                    covariates) {

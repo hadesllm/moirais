@@ -26,6 +26,16 @@ NULL
 #' @param alpha Family-wise error rate (default 0.05).
 #' @return Named list with f_statistic, p_value, n_groups, n_pairs,
 #'   alpha, alpha_per_pair, pairs (data.frame), interpretation.
+#' @examples
+#' set.seed(2026)
+#' n <- 30L
+#' df <- data.frame(
+#'   y = c(rnorm(n, 0), rnorm(n, 0.5), rnorm(n, 1)),
+#'   g = rep(c("A", "B", "C"), each = n)
+#' )
+#' res <- mrm_anova_bonferroni(df, response_col = "y", group_col = "g")
+#' res$alpha_per_pair    # Bonferroni-corrected per-pair alpha
+#' res$pairs             # per-pair t-tests with adjusted significance flags
 #' @export
 mrm_anova_bonferroni <- function(data, response_col, group_col, alpha = 0.05) {
   d <- data[, c(response_col, group_col)]
@@ -281,6 +291,18 @@ mrm_response_surface <- function(data, response_col, factor_cols) {
 #' @param alpha Type-I error (default 0.05).
 #' @return Named list with k_groups, n_per_group, N_total, effect_size_f,
 #'   alpha, df1, df2, noncentrality, F_critical, power, interpretation.
+#' @examples
+#' # Power to detect a medium effect (Cohen's f = 0.25) with 4 groups
+#' # of 30 each at alpha = 0.05:
+#' res <- mrm_anova_power(k_groups = 4, n_per_group = 30,
+#'                        effect_size_f = 0.25, alpha = 0.05)
+#' res$power
+#' res$F_critical
+#'
+#' # Sample-size sensitivity: what power do I get with smaller groups?
+#' sapply(c(10, 20, 30, 50, 100), function(n)
+#'   mrm_anova_power(k_groups = 3, n_per_group = n,
+#'                   effect_size_f = 0.25)$power)
 #' @export
 mrm_anova_power <- function(k_groups, n_per_group, effect_size_f,
                              alpha = 0.05) {

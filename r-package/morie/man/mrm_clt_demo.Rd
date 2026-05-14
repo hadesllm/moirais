@@ -30,3 +30,13 @@ data.frame with sample_index, sample_mean, z_score.
 \description{
 Generate sample means from a base distribution.
 }
+\examples{
+# 1000 sample means of size 30 from an exponential(1) base;
+# standardised z-scores converge to N(0,1):
+res <- mrm_clt_demo(base_distribution = "exp",
+                    n_samples = 1000L,
+                    sample_size = 30L,
+                    seed = 42L, rate = 1)
+summary(res$z_score)
+# mean ~ 0, sd ~ 1
+}

@@ -24,6 +24,9 @@ NULL
 #' @return Named list with p_hat, p0, n, z_wald, p_value_wald,
 #'   p_value_exact, ci95_wald_lower/upper, ci95_exact_lower/upper,
 #'   interpretation.
+#' @examples
+#' # H0: proportion = 0.5 against the observed 58/100 successes
+#' mrm_oneprop_test(x = 58, n = 100, p0 = 0.5)
 #' @export
 mrm_oneprop_test <- function(x, n, p0, alpha = 0.05) {
   if (n <= 0 || x < 0 || x > n) stop("invalid x, n")
@@ -63,6 +66,9 @@ mrm_oneprop_test <- function(x, n, p0, alpha = 0.05) {
 #' @return Named list with p1, p2, diff, chi2, df, p_value_chi2,
 #'   p_value_fisher, z_wald, p_value_wald, ci95_diff_lower/upper,
 #'   interpretation.
+#' @examples
+#' # Compare 47/100 vs 31/100; two-sided test.
+#' mrm_twoprop_test(x1 = 47, n1 = 100, x2 = 31, n2 = 100)
 #' @export
 mrm_twoprop_test <- function(x1, n1, x2, n2, alpha = 0.05) {
   if (n1 <= 0 || n2 <= 0 || x1 < 0 || x2 < 0) {
@@ -105,6 +111,11 @@ mrm_twoprop_test <- function(x1, n1, x2, n2, alpha = 0.05) {
 #' @return Named list with s_sq, sigma0_sq, chi2_stat, df,
 #'   p_value_two_sided, p_value_one_sided_greater/less,
 #'   ci95_lower/upper, interpretation.
+#' @examples
+#' set.seed(2026)
+#' x <- rnorm(50, mean = 0, sd = 1.2)
+#' # H0: variance = 1.
+#' mrm_var_test(sample = x, sigma0_sq = 1)
 #' @export
 mrm_var_test <- function(sample, sigma0_sq, alpha = 0.05) {
   x <- as.numeric(sample); x <- x[is.finite(x)]
@@ -143,6 +154,12 @@ mrm_var_test <- function(sample, sigma0_sq, alpha = 0.05) {
 #' @param ... Additional parameters passed to \code{q<dist>}.
 #' @return data.frame with rank, empirical, theoretical,
 #'   plotting_position columns (Blom 1958 plotting positions).
+#' @examples
+#' set.seed(2026)
+#' x <- rnorm(100)
+#' qq <- mrm_qq_plot(x, dist = "norm")
+#' head(qq)
+#' # plot(qq$theoretical, qq$empirical); abline(0, 1)
 #' @export
 mrm_qq_plot <- function(sample, dist = "norm", ...) {
   x <- sort(as.numeric(sample)); x <- x[is.finite(x)]
@@ -171,6 +188,15 @@ mrm_qq_plot <- function(sample, dist = "norm", ...) {
 #' @param seed RNG seed.
 #' @param ... Additional parameters passed to \code{r<dist>}.
 #' @return data.frame with sample_index, sample_mean, z_score.
+#' @examples
+#' # 1000 sample means of size 30 from an exponential(1) base;
+#' # standardised z-scores converge to N(0,1):
+#' res <- mrm_clt_demo(base_distribution = "exp",
+#'                     n_samples = 1000L,
+#'                     sample_size = 30L,
+#'                     seed = 42L, rate = 1)
+#' summary(res$z_score)
+#' # mean ~ 0, sd ~ 1
 #' @export
 mrm_clt_demo <- function(base_distribution = "unif",
                           n_samples = 1000L,
@@ -200,6 +226,15 @@ mrm_clt_demo <- function(base_distribution = "unif",
 #' @param ... Additional parameters for \code{p<dist>}.
 #' @return data.frame with raw, U columns and attributes ks_stat,
 #'   ks_pvalue.
+#' @examples
+#' set.seed(2026)
+#' x <- rnorm(200)
+#' # Under correct distributional assumption, U should be ~Uniform(0,1):
+#' pit <- mrm_pit(x, dist = "norm")
+#' attr(pit, "ks_pvalue")  # large p-value => no evidence against fit
+#' # If we deliberately misspecify (claim t_3 fits the normal sample):
+#' pit_wrong <- mrm_pit(x, dist = "t", df = 3)
+#' attr(pit_wrong, "ks_pvalue")  # small p-value => misspecification detected
 #' @export
 mrm_pit <- function(sample, dist = "norm", ...) {
   x <- as.numeric(sample); x <- x[is.finite(x)]

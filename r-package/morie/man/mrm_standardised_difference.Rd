@@ -22,3 +22,15 @@ For continuous X:  SMD = (mean_t - mean_c) / sqrt((s2_t + s2_c)/2)
 For binary X:      SMD = (p_t - p_c) / sqrt((p_t(1-p_t) + p_c(1-p_c))/2)
 Returned as percent.  |SMD| > 10 is the Austin (2009) imbalance threshold.
 }
+\examples{
+set.seed(2026)
+n <- 200L
+df <- data.frame(
+  D   = rbinom(n, 1, 0.4),
+  age = rnorm(n, 50, 10),
+  bmi = rnorm(n, 27, 4)
+)
+df$age[df$D == 1] <- df$age[df$D == 1] + 3   # deliberate imbalance
+mrm_standardised_difference(df, treatment_col = "D",
+                            covariates = c("age", "bmi"))
+}

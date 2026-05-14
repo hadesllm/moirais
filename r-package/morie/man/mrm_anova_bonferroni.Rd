@@ -22,3 +22,14 @@ alpha, alpha_per_pair, pairs (data.frame), interpretation.
 \description{
 One-way ANOVA with pairwise Bonferroni-adjusted t-tests
 }
+\examples{
+set.seed(2026)
+n <- 30L
+df <- data.frame(
+  y = c(rnorm(n, 0), rnorm(n, 0.5), rnorm(n, 1)),
+  g = rep(c("A", "B", "C"), each = n)
+)
+res <- mrm_anova_bonferroni(df, response_col = "y", group_col = "g")
+res$alpha_per_pair    # Bonferroni-corrected per-pair alpha
+res$pairs             # per-pair t-tests with adjusted significance flags
+}

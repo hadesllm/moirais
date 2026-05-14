@@ -21,3 +21,14 @@ positivity_violations, interpretation.
 \description{
 Propensity-score support overlap diagnostic (Cole-Hernan 2008)
 }
+\examples{
+set.seed(2026)
+n <- 300L
+x <- rnorm(n)
+D <- rbinom(n, 1, plogis(0.5 * x))
+df <- data.frame(D = D, age = x)
+ovl <- mrm_check_overlap(df, treatment_col = "D",
+                         covariates = "age")
+ovl$positivity_violations
+ovl$interpretation
+}

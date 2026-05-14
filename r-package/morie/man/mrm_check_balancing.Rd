@@ -22,3 +22,17 @@ overall_balanced, interpretation.
 \description{
 A design is "balanced on X" if every |SMD(X_i)| <= threshold.
 }
+\examples{
+set.seed(2026)
+n <- 200L
+df <- data.frame(
+  D   = rbinom(n, 1, 0.4),
+  age = rnorm(n, 50, 10),
+  bmi = rnorm(n, 27, 4)
+)
+df$age[df$D == 1] <- df$age[df$D == 1] + 3   # imbalance on age
+bal <- mrm_check_balancing(df, treatment_col = "D",
+                           covariates = c("age", "bmi"))
+bal$overall_balanced
+bal$interpretation
+}

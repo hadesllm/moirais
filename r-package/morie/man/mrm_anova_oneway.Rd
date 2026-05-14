@@ -20,3 +20,15 @@ df_within, means, n_per_group, tukey_hsd, interpretation.
 \description{
 One-way ANOVA + Tukey HSD post-hoc
 }
+\examples{
+set.seed(2026)
+n <- 30L
+df <- data.frame(
+  y = c(rnorm(n, 0), rnorm(n, 0.5), rnorm(n, 1)),
+  g = rep(c("A", "B", "C"), each = n)
+)
+res <- mrm_anova_oneway(df, response_col = "y", group_col = "g")
+res$f_statistic
+res$p_value
+res$tukey_hsd
+}

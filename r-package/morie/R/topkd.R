@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Top-k filtered softmax (Fan 2018)
 #'

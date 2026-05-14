@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Polya-tree Bayes factor for H0: F = N(loc, scale^2).
 #'

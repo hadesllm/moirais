@@ -4,10 +4,11 @@ This document lists what's shipped and what's planned. Items below v1.0.0 are pr
 
 ## Shipped
 
-### v0.7.0 — five-paper completion + DOI propagation (current, 2026-05-14)
+### v0.7.0 — five-paper completion + license migration + DOI propagation (current, 2026-05-14)
 
-The release that closes the publication set and propagates the new empirical-paper DOI everywhere downstream consumers look:
+The release that closes the publication set, migrates the R package off `GPL-2.0-only`, and propagates the new empirical-paper DOI everywhere downstream consumers look:
 
+- **License migrated to `MIT OR Apache-2.0` (both language sides)** — the R package switches from `GPL-2.0-only` to `Apache License (== 2) | MIT + file LICENSE` (CRAN form). Python is unchanged. The two optional Linux-kernel adjuncts (`kernel-module/morie.c` and `daemon/morie_lsm.py`) stay `GPL-2.0-only` (kernel ABI requirement) and are explicitly NOT part of the wheel or CRAN tarball. 279 R source-file SPDX headers swept.
 - **Empirical applications paper now public on Zenodo** — *Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data*, [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689). Five-paper set (MRM framework, Hawkes methodology, morie-R software, morie-Python software, empirical applications) is now complete.
 - **`ac` / `vm` terminology locked across all 5 papers** — `ac` (alert complexity) and `vm` (volatility measure of placements, "regional-transition count" alongside) are now the canonical operational terms.
 - **DOI + version sweep across all surfaces** — empirical-paper DOI now reaches `docs/source/index.rst` Sphinx badges, `pyproject.toml [project.urls]`, `papers/README.md`, and `CITATION.cff`. Also: `Dockerfile` un-pinned from `0.2.0` → `0.7.0`; Sphinx install snippets un-pinned from `0.4.12` → `0.7.0`; `papers/README.md` "in preparation" → published DOI for the empirical paper; v0.5.0 version stamp note → v0.7.0.
@@ -33,7 +34,7 @@ The release that makes the toolkit usable by a non-programmer:
 |---|---|
 | v0.1.x | First public release; rename from MOIRAIS in v0.1.3; 23 analysis modules; 275 textbook-derived R callables; OTIS / SIU / TPS ingestion; first c11 Mandela classifier. |
 | v0.2.x | `morie.entheo` DMT-imaging opt-in (Timmermann dataset); deterministic-seed plumbing for R/Python bit-for-bit parity; PEP 562 lazy-loading drops cold import from 123 s to 1.7 s. |
-| v0.3.x | Per-component licensing finalised (Python MIT OR Apache-2.0, R GPL-2.0-only); R/Python parity verification; 5 JSS-style companion papers drafted. |
+| v0.3.x | Per-component licensing first finalised (Python MIT OR Apache-2.0, R GPL-2.0-only at the time — later revised to MIT + Apache in v0.7.0); R/Python parity verification; 5 JSS-style companion papers drafted. |
 | v0.4.x | `anova_oneway` backwards-compat alias; `gibbons_chakraborti` canonical naming (Gibbons & Chakraborti, 2003 §2.11); Homebrew tap; GHCR container made public; auto-tag-on-version-bump CI; Windows install in CI matrix; `\cite{}` → `\citep{}` JSS citation cleanup. |
 
 ## Planned

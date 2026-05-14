@@ -23,7 +23,7 @@ Description: Backwards-compatibility shim for the package previously
   even when 'morie' is not yet available in the same build batch
   (relevant for r-universe parallel builds); 'morie' is required
   at attach time and a clear error message is shown if absent.
-License: GPL-2
+License: Apache License (== 2) | MIT + file LICENSE
 Encoding: UTF-8
 Depends:
   R (>= 4.3.0)

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' IRT 2PL spatial ideal-point model (Armstrong Ch 4)
 #'

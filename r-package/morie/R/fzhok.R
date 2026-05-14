@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Fauzi: Higher-order (order-4) Gaussian-based kernel (Ch 1)
 #'

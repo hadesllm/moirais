@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Spatial linear mixed model via REML.
 #'
 #' Y = X beta + delta + eps,

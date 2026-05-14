@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Polynomial trend surface analysis (OLS).
 #'
 #' mu(s) = sum_k beta_k f_k(s); f_k are monomials up to degree `order`.

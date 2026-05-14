@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Power function of the two-sided sign test (Gibbons Ch 5.4.4)
 #'

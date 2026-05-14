@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Importance sampling (Geweke 1989)
 #'
 #' Given samples x ~ q, estimate E_p of h(X) with weights w = p(x)/q(x).

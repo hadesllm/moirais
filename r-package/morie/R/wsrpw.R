@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Monte-Carlo power of the Wilcoxon signed-rank test
 #' (Gibbons Ch 5.7.3)

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Internal helpers shared across the LLM-architecture suite.
 #' Not exported; consumed by llm_arch callables only.

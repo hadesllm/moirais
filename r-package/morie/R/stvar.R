@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Empirical spatiotemporal semivariogram gamma(h, u).
 #'
 #' \deqn{\hat\gamma(h, u) = \frac{1}{2|N(h, u)|}

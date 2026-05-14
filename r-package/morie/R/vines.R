@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Gaussian D-vine pair-copula construction (Aas, Czado, Frigessi & Bakken 2009)
 #'
 #' Computes the partial-correlation matrix of a multivariate sample

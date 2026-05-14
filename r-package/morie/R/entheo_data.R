@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Load DMT-imaging dataset (Timmermann et al. 2023)
 #'
 #' R parity of \code{morie.entheo.data.load_dmt_imaging}.  Reads the

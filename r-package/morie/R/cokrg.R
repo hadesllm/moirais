@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Simple cokriging for co-located bivariate spatial prediction.
 #'
 #' \deqn{\hat Z_1(s_0) = \lambda^\top Z_1 + \mu^\top Z_2}, system

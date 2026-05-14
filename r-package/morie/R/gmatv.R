@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 # `grm_vanraden()` was moved to R/_helpers_montesinos.R so that gblpf.R,
 # mtgbl.R, and mrkvr.R can rely on it being defined regardless of R's

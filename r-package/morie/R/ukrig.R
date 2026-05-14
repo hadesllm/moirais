@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Universal kriging with polynomial trend.
 #'
 #' Z(s) = mu(s) + delta(s), mu(s) = sum_k beta_k f_k(s).

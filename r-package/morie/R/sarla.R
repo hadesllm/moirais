@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Spatial autoregressive lag model (SAR lag, ML).
 #'
 #' Y = rho W Y + X beta + eps,  eps ~ N(0, sigma2 I).

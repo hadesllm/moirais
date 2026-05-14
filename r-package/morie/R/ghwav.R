@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Haar-wavelet spike-and-slab BayesThresh estimator (Abramovich 1998).
 #'

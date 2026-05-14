@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' BayesA via short Gibbs sampler (Meuwissen-Hayes-Goddard 2001)
 #'

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Jonckheere-Terpstra ordered-alternatives test (Gibbons & Chakraborti Ch 10.6)
 #'
 #' R parity for ``morie.fn.ordlt.ordered_alternatives_test``.  The

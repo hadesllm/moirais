@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Preprocess EEG (Butterworth bandpass + notch + ASR-style trimming)
 #'
 #' R parity of \code{morie.entheo.preprocess_eeg}.  Uses

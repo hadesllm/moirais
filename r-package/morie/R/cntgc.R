@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Pearson contingency coefficient C (Gibbons Ch 14.2.1)
 #'

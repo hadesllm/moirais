@@ -28,7 +28,7 @@ Description: Multi-domain scientific computing toolkit for observational
   psychometrics, alongside ingestion utilities for officially published
   Ontario Special Investigations Unit (police-oversight) and federal
   Structured Intervention Unit reports.
-License: GPL-2
+License: Apache License (== 2) | MIT + file LICENSE
 LazyData: true
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

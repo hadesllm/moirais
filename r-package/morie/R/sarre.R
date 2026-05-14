@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Spatial autoregressive error model (SAR error, ML).
 #'
 #' Y = X beta + u,  u = lambda W u + eps,  eps ~ N(0, sigma2 I).

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Empirical (Matheron) variogram estimation.
 #'
 #' \deqn{\hat\gamma(h) = \frac{1}{2|N(h)|}

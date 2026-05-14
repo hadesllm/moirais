@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Escobar-West augmentation for alpha given K_n with a Gamma(a, b) hyperprior.
 #'

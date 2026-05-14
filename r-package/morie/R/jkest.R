@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Jackknife bias and variance (Quenouille 1956, Tukey 1958)
 #'
 #' Leave-one-out jackknife: bias_jack = (n-1)*(mean(T_minus_i) - T_hat),

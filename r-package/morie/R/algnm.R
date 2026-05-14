@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Rice party cohesion index (Rice 1928; Armstrong Ch 8)
 #'

@@ -1,12 +1,23 @@
 # MORIE Licensing Analysis
 
-> **SUPERSEDED as the controlling document for v0.3.0+.**
+> **SUPERSEDED — historical document.**
 > See [`LICENSING.md`](LICENSING.md) for the current per-component
-> licensing model: Python is `MIT OR Apache-2.0`, R + Linux
-> kernel module remain `GPL-2.0-only`, papers + data are
-> `CC-BY-4.0`.  The analysis below is retained as the historical
-> justification for the v0.1.x — v0.2.1 single-license
-> (`GPL-2.0-only`) period.
+> licensing model. As of **v0.7.0 (2026-05-14)**: Python AND R are
+> both `MIT OR Apache-2.0` (CRAN form
+> `Apache License (== 2) | MIT + file LICENSE` on the R side); the
+> optional Linux-kernel adjuncts in `kernel-module/` and `daemon/`
+> remain `GPL-2.0-only` because the kernel ABI requires it; papers
+> + data are `CC-BY-4.0`.
+>
+> Prior models (also superseded by this document):
+> - **v0.3.0 – v0.6.1**: Python `MIT OR Apache-2.0`, R + kernel
+>   module + LSM daemon all `GPL-2.0-only`. Migrated away from
+>   because GPL-2.0 is incompatible with Apache-2.0's patent
+>   clause and several downstream distribution channels work more
+>   cleanly with permissive licensing.
+> - **v0.1.x – v0.2.1**: single-license `GPL-2.0-only` everywhere.
+>   The analysis below is retained as the historical justification
+>   for that period.
 
 Status: 2026-05-11 (historical, retained for v0.2.x context)
 Author: Vansh Singh Ruhela

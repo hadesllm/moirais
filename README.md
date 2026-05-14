@@ -6,8 +6,7 @@
 
 A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the MRM framework as a primary application for Canadian carceral, police, and oversight data analysis.
 
-[![Python: MIT OR Apache-2.0](https://img.shields.io/badge/Python-MIT_OR_Apache--2.0-3776ab.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT)
-[![R: GPL-2.0-only](https://img.shields.io/badge/R-GPL--2.0--only-276DC3.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE-GPL2)
+[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT_OR_Apache--2.0-3776ab.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT)
 [![PyPI version](https://img.shields.io/pypi/v/morie.svg)](https://pypi.org/project/morie/)
 [![r-universe](https://img.shields.io/badge/r--universe-hadesllm-276DC3)](https://hadesllm.r-universe.dev/morie)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -100,6 +99,7 @@ print(result)
 
 ## What's new in v0.7.0
 
+- **License migrated to `MIT OR Apache-2.0` on both language sides** — the R package switches from `GPL-2.0-only` to `Apache License (== 2) | MIT + file LICENSE` (CRAN form). Python is unchanged (already `MIT OR Apache-2.0`). The two optional Linux-kernel adjuncts (`kernel-module/` and `daemon/`) stay `GPL-2.0-only` because the kernel ABI requires it; they are not part of the wheel or CRAN tarball.
 - **Empirical applications paper published** — *Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data* on Zenodo at [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689). Five-paper publication set now complete.
 - **`ac` / `vm` terminology locked across all 5 papers** — `ac` (alert complexity) and `vm` (volatility measure of placements, "regional-transition count" alongside) are now the canonical operational terms.
 - **DOI + version propagation sweep** — empirical-paper DOI now reaches Sphinx index, `pyproject.toml [project.urls]`, `papers/README.md`, and CITATION.cff. Sphinx install snippets, Docker tag examples, and the in-tree `papers/README.md` were also un-pinned from stale versions.
@@ -238,11 +238,11 @@ under the same standard disclaimer.
 
 ## License
 
-MORIE adopts a **per-component licensing model** (since v0.3.0):
+MORIE adopts a **per-component licensing model** (revised in v0.7.0 to drop GPL-2.0 from the main R + Python distribution; only the optional Linux-kernel adjuncts remain GPL-2.0):
 
 - **Python package** (`src/morie/`, `src/moirais/`) — dual-licensed `MIT OR Apache-2.0` (the Rust-ecosystem convention; recipient picks either).  See [`LICENSE-MIT`](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT) and [`LICENSE-APACHE`](https://github.com/hadesllm/morie/blob/main/LICENSE-APACHE).
-- **R package** (`r-package/morie/`, `r-package/moirais/`) — `GPL-2.0-only` (matches the R-ecosystem / CRAN convention).  See [`LICENSE-GPL2`](https://github.com/hadesllm/morie/blob/main/LICENSE-GPL2).
-- **Linux kernel module** (`kernel-module/morie.c`) — `GPL-2.0-only` (kernel ABI requirement).
+- **R package** (`r-package/morie/`, `r-package/moirais/`) — dual-licensed `Apache License (== 2) | MIT + file LICENSE` per CRAN convention; downstream R consumers pick either. See [`LICENSE-MIT`](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT) and [`LICENSE-APACHE`](https://github.com/hadesllm/morie/blob/main/LICENSE-APACHE).
+- **Optional Linux kernel adjuncts** (`kernel-module/morie.c`, `daemon/morie_lsm.py`) — `GPL-2.0-only` (Linux kernel ABI requires GPL for loaded modules; the userspace LSM-style audit daemon stays under the same license for symmetry). These are NOT part of the R / Python distribution; they are separately-licensed adjuncts. See [`LICENSE-GPL2`](https://github.com/hadesllm/morie/blob/main/LICENSE-GPL2).
 - **Papers, data and documentation** — `CC-BY-4.0` unless explicitly marked otherwise.
 
 The full per-component breakdown is documented in [`LICENSING.md`](https://github.com/hadesllm/morie/blob/main/LICENSING.md).

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Bootstrap confidence interval (percentile, BCa, studentized)
 #'
 #' R parity of \code{morie.fn.btsrp.bootstrap_ci}.  Three methods are

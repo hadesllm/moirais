@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Stratified mean estimator (Cochran 1977, Sampling Techniques, Ch. 5)
 #'
 #' Within-stratum means averaged with population (or proportional)

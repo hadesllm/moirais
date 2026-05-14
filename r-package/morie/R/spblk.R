@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Ordinary block kriging.
 #'
 #' Solve the OK system with point-to-block averaged covariances:

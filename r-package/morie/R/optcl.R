@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Optimal Classification cutting point (Poole 2000; Armstrong Ch 3)
 #'

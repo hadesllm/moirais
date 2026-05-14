@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Terry-Hoeffding (Fisher-Yates) two-sample normal-scores test
 #' (Gibbons Ch 8.3.1)

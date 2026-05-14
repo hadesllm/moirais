@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Thin-plate spline regression (Duchon 1977)
 #'
 #' Fits f(x) = sum a_i phi(||x - x_i||) + beta_0 + beta' x with radial

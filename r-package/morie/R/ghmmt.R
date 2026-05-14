@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Posterior mean / variance of G(A) for DP(alpha, G0) and A = (A_lower, A_upper].
 #'

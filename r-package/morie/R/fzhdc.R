@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 
 #' Fauzi: Hoeffding (H-) decomposition of a degree-2 U-statistic (Ch 5)
 #'

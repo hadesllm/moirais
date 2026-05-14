@@ -1,5 +1,11 @@
 # morie 0.7.0 — 2026-05-14
 
+* License migrated from `GPL-2.0-only` to dual-license
+  `Apache License (== 2) | MIT + file LICENSE` (CRAN form). The Python
+  side stays `MIT OR Apache-2.0`; both language sides now follow the
+  same Rust-ecosystem dual-license convention. The Linux-kernel
+  adjuncts in `kernel-module/` and `daemon/` remain `GPL-2.0-only`
+  (kernel ABI requirement) and are not part of the CRAN tarball.
 * Five-paper publication set complete: empirical applications paper
   (*Solitary Confinement, Self-Excitation, and Institutional Churn:
   Empirical Applications of MRM to Canadian Carceral and Police Data*)

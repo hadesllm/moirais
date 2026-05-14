@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-only
 """morie_lsm — Linux-Security-Module-style userspace daemon.
 
 This is a userspace audit daemon (NOT an actual in-kernel LSM hook) that

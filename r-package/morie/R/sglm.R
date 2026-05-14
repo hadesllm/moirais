@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' Spatial GLM (Gaussian-identity case via profile ML).
 #'
 #' Y = X beta + delta + eps, delta ~ GP(0, sigma2 R_phi), R_phi exponential.

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT OR Apache-2.0
 #' General two-sample permutation test (Good 2005)
 #'
 #' Tests H0: F_x = F_y by Monte-Carlo permutation of pooled samples.

@@ -1,0 +1,6 @@
+This subtree (daemon/morie_lsm.py) is licensed under GPL-2.0-only,
+the same as the kernel module it pairs with. See
+../kernel-module/LICENSE-GPL2 for the full text.
+
+The morie Python and R packages are dual-licensed under
+MIT OR Apache-2.0. See ../LICENSE-MIT and ../LICENSE-APACHE.

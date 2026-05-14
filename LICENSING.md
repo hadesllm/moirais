@@ -55,7 +55,7 @@ These two subtrees are **`GPL-2.0-only`** because:
   for symmetry.
 
 License file:
-- `LICENSE-GPL2`
+- `kernel-module/LICENSE-GPL2`
 
 These subtrees are **not** distributed as part of the morie wheel
 or the CRAN tarball. They are separately-licensed adjuncts that

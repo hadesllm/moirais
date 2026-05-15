@@ -1,0 +1,11 @@
+morie — Multi-domain Open Research and Inferential Estimation
+
+This installer places the morie command-line tool on your Mac. No
+Python installation is required; everything morie needs is bundled.
+
+After installation, open the Terminal app — or the "morie Console"
+entry placed in your Applications folder — and type:
+
+    morie --help
+
+to get started.

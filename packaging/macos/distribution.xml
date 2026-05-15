@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="2">
+    <title>morie</title>
+    <welcome file="welcome.txt" mime-type="text/plain"/>
+    <options customize="never" require-scripts="true" rootVolumeOnly="true"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.hadesllm.morie"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.hadesllm.morie" visible="false">
+        <pkg-ref id="com.hadesllm.morie"/>
+    </choice>
+    <pkg-ref id="com.hadesllm.morie" version="0" onConclusion="none">morie-component.pkg</pkg-ref>
+</installer-gui-script>

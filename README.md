@@ -22,6 +22,20 @@ A multi-domain scientific computing toolkit (Python and R) for observational inf
 
 > Full step-by-step install guide with platform-specific notes (PEP 668 on Debian, python 3.13 segfault on Raspberry Pi OS, etc.) is at **[INSTALLATION.md](https://github.com/hadesllm/morie/blob/main/INSTALLATION.md)**.
 
+### Easiest — click-through installer (no Python needed)
+
+If you just want morie working with no setup, download the installer for your system from the **[latest release](https://github.com/hadesllm/morie/releases/latest)** and run it:
+
+| System | File | How |
+|---|---|---|
+| **Windows** | `morie-*-windows-x64-setup.exe` | Double-click, follow the wizard. Unsigned — at the SmartScreen prompt click **More info → Run anyway**. |
+| **macOS** | `morie-*-macos-arm64.pkg` | Double-click, follow the installer (Apple Silicon). |
+| **Linux** | `morie_*_amd64.deb` / `morie-*.x86_64.rpm` | `sudo apt install ./morie_*.deb` or `sudo dnf install ./morie-*.rpm` |
+
+The installer bundles everything — no Python, no pip, no winget. When it finishes, open a terminal (on Windows, the **"morie Console"** Start Menu shortcut) and run `morie --help`.
+
+> This installs the morie **command-line tool**. To use morie as a Python library (`import morie`) in your own scripts, use one of the channels below instead.
+
 ### Recommended — one-liner (Linux / macOS / WSL)
 
 The simplest path. Bootstraps everything you need (Python via `uv`, a managed venv, the morie wheel) — works even if you have **no Python and no `pip` installed**.

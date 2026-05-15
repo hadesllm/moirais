@@ -1,0 +1,19 @@
+#!/bin/bash
+# postinstall for the morie .pkg.
+#
+# The component payload installs the PyInstaller bundle into
+# /usr/local/morie. This script puts `morie` on the default PATH and
+# drops a double-click "morie Console" entry in /Applications.
+set -e
+
+# /usr/local/bin is on the default macOS PATH (see /etc/paths).
+mkdir -p /usr/local/bin
+ln -sf /usr/local/morie/morie /usr/local/bin/morie
+
+# Friendly double-click entry for users who don't use Terminal directly.
+if [ -f /usr/local/morie/morie-console.command ]; then
+  cp /usr/local/morie/morie-console.command "/Applications/morie Console.command"
+  chmod +x "/Applications/morie Console.command"
+fi
+
+exit 0

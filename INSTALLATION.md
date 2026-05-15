@@ -2,7 +2,32 @@
 
 > ⚠️ **Pre-alpha (v0.x).** morie is in pre-alpha. The first alpha milestone is **v1.0.0**; everything before that is point-releases of pre-alpha code. APIs may shift, datasets may move, and findings may be refined between minor versions.
 
-morie ships across six install channels. Pick the one that matches your environment.
+## Easiest: the click-through installer
+
+If you just want morie working with no setup — no Python, no pip, no
+winget — download the installer for your system from the
+**[latest release](https://github.com/hadesllm/morie/releases/latest)**
+and run it:
+
+| System | File | How |
+|---|---|---|
+| **Windows** | `morie-*-windows-x64-setup.exe` | Double-click, follow the wizard. Unsigned — at the SmartScreen prompt click **More info → Run anyway**. |
+| **macOS** | `morie-*-macos-arm64.pkg` | Double-click, follow the installer (Apple Silicon). |
+| **Linux** | `morie_*_amd64.deb` / `morie-*.x86_64.rpm` | `sudo apt install ./morie_*.deb` or `sudo dnf install ./morie-*.rpm` |
+
+The installer wraps a self-contained Python bundle. When it finishes,
+open a terminal — on Windows, the **"morie Console"** Start Menu
+shortcut opens one ready to go — and run `morie --help`.
+
+This installs the morie **command-line tool**. To use morie as a
+Python library (`import morie`) in your own scripts, use one of the
+manual channels below instead.
+
+## Manual install channels
+
+For more control, or to use morie as a Python/R library, morie also
+ships across six manual channels. Pick the one that matches your
+environment.
 
 | | Channel | When to use | Needs |
 |---|---|---|---|

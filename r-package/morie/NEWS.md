@@ -1,3 +1,17 @@
+# morie 0.7.3 — 2026-05-15
+
+License change. morie is relicensed from `MIT OR Apache-2.0` to the
+**GNU Affero General Public License v3 or later (`AGPL-3`)**, on both
+the Python and R sides.
+
+* The AGPL is a strong copyleft license: any modified morie that is
+  distributed, or offered to users over a network, must publish its
+  source. Modifications and improvements cannot be taken closed-source.
+* morie 0.7.2 and earlier remain under `MIT OR Apache-2.0` permanently
+  — the change is not retroactive and applies to 0.7.3 onward.
+* No code or API changes. The optional Linux-kernel adjuncts stay
+  `GPL-2.0-only` as before.
+
 # morie 0.7.2 — 2026-05-14
 
 Documentation-only patch on top of 0.7.1. Supersedes the in-queue

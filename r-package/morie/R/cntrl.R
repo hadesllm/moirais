@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Control variates (Nelson 1990)
 #'
 #' Estimator: theta_cv = mean(Y) - c (mean(C) - mu_c) where c =

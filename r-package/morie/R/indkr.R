@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Indicator kriging for exceedance probability.
 #'
 #' Encode I_i = 1(x_i <= threshold) and ordinary-krige the indicator

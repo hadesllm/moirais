@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Nonparametric quantile function with asymptotic SEs (Parzen 1979)
 #'
 #' Q(tau) = inf over x of F_n(x) at least tau; asymptotic SE

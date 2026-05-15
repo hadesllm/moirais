@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 #' Linear-by-linear association test for ordered categories
 #' (Gibbons Ch 14.6.1)

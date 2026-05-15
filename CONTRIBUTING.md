@@ -9,9 +9,9 @@ permissive, and standard GitHub PR workflow.
 
 ## License of contributions
 
-By submitting a contribution you agree that it is dual-licensed under
-**MIT OR Apache-2.0** at the recipient's option (the same dual-license
-that covers both the Python and R packages).
+By submitting a contribution you agree that it is licensed under
+**AGPL-3.0-or-later** — the same license that covers both the Python
+and R packages.
 
 Contributions to the `kernel-module/` and `daemon/` subtrees are
 licensed under **GPL-2.0-only** (Linux kernel ABI requirement); flag
@@ -54,7 +54,7 @@ commits — each one should compile and pass tests on its own.
   on public-API functions. Numpydoc-style docstrings.
 - **R**: 2-space indentation, snake_case, roxygen2 docstrings on every
   exported function. Every R file under `r-package/morie/R/` carries
-  an SPDX header `# SPDX-License-Identifier: MIT OR Apache-2.0`.
+  an SPDX header `# SPDX-License-Identifier: AGPL-3.0-or-later`.
 - **LaTeX (papers)**: JSS document class; long filenames in
   `\footnote{...}` so the prose can break cleanly.
 
@@ -78,14 +78,12 @@ Vansh Singh Ruhela
 <hadesllm@proton.me>,
 ORCID [0009-0004-1750-3592](https://orcid.org/0009-0004-1750-3592)).
 
-## A note on the dual MIT + Apache-2.0 license
+## A note on the AGPL-3.0 license
 
-The Rust-ecosystem convention is to dual-license under MIT OR
-Apache-2.0 so that:
-
-- **MIT** suits projects that want minimal license obligations;
-- **Apache-2.0** suits projects that need the explicit patent grant.
-
-Either license is sufficient on its own — recipients pick whichever
-suits their downstream needs. See [`LICENSING.md`](LICENSING.md) for
-the per-component breakdown.
+morie is licensed under the GNU Affero General Public License, version
+3.0 or later. It is a strong copyleft license: anyone who distributes
+a modified morie — or offers a modified morie to users over a network
+— must publish their source under the same license. This keeps every
+improvement to morie visible to the public and prevents closed-source
+forks. See [`LICENSING.md`](LICENSING.md) for the per-component
+breakdown, including the optional `GPL-2.0-only` kernel adjuncts.

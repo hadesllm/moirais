@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' MRM-framework analyses on Ontario OTIS data
 #'
 #' Five callables for the OTIS (Offender Tracking Information System)

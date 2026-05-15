@@ -8,11 +8,11 @@ authors:
     name-particle: "Singh"
     # morie pronunciation: /ˈmɔɪraɪ/ (like Greek Moirai)
     # IPA: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/
-version: "0.7.2"
-date-released: "2026-05-14"
+version: "0.7.3"
+date-released: "2026-05-15"
 url: "https://github.com/hadesllm/morie"
 repository-code: "https://github.com/hadesllm/morie"
-license: "MIT OR Apache-2.0"
+license: "AGPL-3.0-or-later"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20111233"

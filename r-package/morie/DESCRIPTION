@@ -1,7 +1,7 @@
 Package: morie
 Type: Package
 Title: Multi-Domain Open Research and Inferential Estimation
-Version: 0.7.2
+Version: 0.7.3
 Authors@R: c(
   person(
     given = "Vansh Singh",
@@ -29,7 +29,7 @@ Description: Multi-domain scientific computing toolkit for observational
   psychometrics, alongside ingestion utilities for officially published
   Ontario Special Investigations Unit (police-oversight) and federal
   Structured Intervention Unit reports.
-License: Apache License (== 2) | MIT + file LICENSE
+License: AGPL-3
 LazyData: true
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

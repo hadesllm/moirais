@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Moran's I spatial autocorrelation (Schabenberger Ch 1).
 #'
 #' Computes the global Moran's I and a two-sided p-value under the

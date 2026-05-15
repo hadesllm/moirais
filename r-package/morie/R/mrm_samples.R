@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Bundled reference data samples and dataset fetchers
 #'
 #' MORIE ships a small set of reference CSVs in `inst/extdata/` so that

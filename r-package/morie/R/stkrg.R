@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Spatiotemporal ordinary kriging with separable exponential covariance.
 #'
 #' C((h, u)) = (sill - nugget) * exp(-h/range_s) * exp(-|u|/range_t)

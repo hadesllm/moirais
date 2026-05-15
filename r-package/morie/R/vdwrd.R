@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 #' Van der Waerden two-sample normal-scores location test
 #' (Gibbons Ch 8.3.2)

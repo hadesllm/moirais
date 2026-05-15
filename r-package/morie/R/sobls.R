@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Sobol quasi-random sequence (Sobol 1967)
 #'
 #' Thin wrapper over \code{randtoolbox::sobol} (low-discrepancy in the unit cube of dimension d).

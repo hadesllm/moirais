@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Leave-one-out cross-validation for ordinary kriging.
 #'
 #' MSPE = (1/n) sum (Z(s_i) - Z_hat_minus_i(s_i))^2.

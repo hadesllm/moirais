@@ -31,7 +31,7 @@ morie remains genuine, OSI-approved open-source software. The AGPL does
 not restrict who may use morie or for what purpose; it ensures that
 modifications and improvements cannot be kept secret.
 
-## Python package (`src/morie/`, `src/moirais/`)
+## Python package (`src/morie/`)
 
 Licensed under **`AGPL-3.0-or-later`**.
 
@@ -39,7 +39,7 @@ SPDX identifier: `AGPL-3.0-or-later`
 
 Licence file: `LICENSE` (the full AGPL-3.0 text).
 
-## R package (`r-package/morie/`, `r-package/moirais/`)
+## R package (`r-package/morie/`)
 
 Licensed under **`AGPL-3`** — the R `DESCRIPTION` form:
 

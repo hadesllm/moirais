@@ -276,7 +276,7 @@ morie is licensed under the **GNU Affero General Public License, version 3.0 or 
 
 - **Python and R packages** (`src/morie/`, `r-package/morie/`) — `AGPL-3.0-or-later`. See [`LICENSE`](https://github.com/hadesllm/morie/blob/main/LICENSE).
 - **Optional Linux kernel adjuncts** (`kernel-module/morie.c`, `daemon/morie_lsm.py`) — `GPL-2.0-only` (the Linux kernel ABI requires GPL for loaded modules). These are NOT part of the R / Python distribution; they are separately-licensed, independently-distributed adjuncts. See [`kernel-module/LICENSE-GPL2`](https://github.com/hadesllm/morie/blob/main/kernel-module/LICENSE-GPL2).
-- **Papers, data and documentation** — `CC-BY-4.0` unless explicitly marked otherwise.
+- **Papers, data and documentation** — `CC BY-NC-SA 4.0` (Creative Commons Attribution-NonCommercial-ShareAlike) unless explicitly marked otherwise.
 
 morie **0.7.2 and earlier** were released under `MIT OR Apache-2.0` and remain so permanently; the AGPL applies to 0.7.3 onward. Full detail in [`LICENSING.md`](https://github.com/hadesllm/morie/blob/main/LICENSING.md).
 

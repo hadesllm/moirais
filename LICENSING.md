@@ -68,8 +68,11 @@ AGPL-licensed package.
 
 The papers under `papers/`, the data references under
 `data/datasets/userguides/`, and project-level documentation
-(`README.md`, `docs/`) are released under **CC-BY-4.0** unless
-explicitly marked otherwise.
+(`README.md`, `docs/`) are released under **CC BY-NC-SA 4.0**
+(Creative Commons Attribution-NonCommercial-ShareAlike 4.0) unless
+explicitly marked otherwise. NonCommercial: these materials may not be
+used for commercial purposes without permission. ShareAlike:
+adaptations must carry the same license.
 
 ## Already-released versions
 

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' GEV return-level estimation (Coles 2001, Ch. 3)
 #'
 #' For block maxima with GEV(mu, sigma, xi), the T-block return level

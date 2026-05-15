@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 #' Rank placements of Y among X order statistics (Gibbons Ch 2.11.3)
 #'

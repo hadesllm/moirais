@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 #' Median voter theorem (Armstrong et al. Ch 2)
 #'

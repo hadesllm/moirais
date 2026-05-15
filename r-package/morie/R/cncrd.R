@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 #' Kendall's coefficient of concordance W (Gibbons Ch 12.5)
 #'

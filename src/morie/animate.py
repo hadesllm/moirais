@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """Rich-based animated UI helpers for long MORIE callables.
 
 Pairs with the DoubleML-style training-output experience: live spinners,

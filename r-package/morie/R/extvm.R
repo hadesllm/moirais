@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Generalised Extreme Value fit by ML (Coles 2001)
 #'
 #' Fits F(x) = exp(-(1 + xi (x - mu)/sigma)^(-1/xi)) by maximum

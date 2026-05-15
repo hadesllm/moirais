@@ -555,12 +555,9 @@ v0.3.0 release lands on CRAN + PyPI + r-universe):
    entries.  Bump to v0.4.0-alpha after eprints land so the bib
    entries reflect the new ID.
 
-2. **Per-component licensing audit on every dependency** — the
-   v0.3.0 license split (Python `MIT OR Apache-2.0`; R `GPL-2.0-only`)
-   needs a one-pass verification that no Python dependency is
-   GPL-3-only (which would force Python under GPL).  Update
-   `LICENSING_ANALYSIS.md` (currently historical) into a forward-
-   looking compliance document for the dual-license era.
+2. **Per-component licensing audit on every dependency** — verify
+   that morie's dependency licences remain compatible with the
+   project licence (`AGPL-3.0-or-later`). See `LICENSING.md`.
 
 3. **Linux DEB + RPM packaging pipeline** — beyond the v0.3.0
    `install.sh`, add a GitHub-Actions workflow that builds and

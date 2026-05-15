@@ -1,8 +1,8 @@
 MORIE — Multi-domain Open Research and Inferential Estimation
 =============================================================
 
-.. image:: https://img.shields.io/badge/license-MIT_OR_Apache--2.0-d97706.svg
-   :alt: License: MIT OR Apache-2.0
+.. image:: https://img.shields.io/badge/license-AGPL--3.0--or--later-a42e2b.svg
+   :alt: License: AGPL-3.0-or-later
 
 .. image:: https://img.shields.io/badge/python-3.10%2B-blue.svg
    :alt: Python 3.10+
@@ -300,13 +300,14 @@ The package ships 60+ built-in datasets (Canadian carceral, police,
 and oversight + epidemiological reference data) in a portable SQLite
 layer.
 
-MORIE is dual-licensed under ``MIT OR Apache-2.0`` (Python and R)
-following the Rust-ecosystem convention. The optional Linux-kernel
-adjuncts (``kernel-module/morie.c`` and ``daemon/morie_lsm.py``)
-remain GPL-2.0-only because the kernel ABI requires it; they are
-NOT part of the R / Python distribution. See ``LICENSE-MIT`` and
-``LICENSE-APACHE`` for the package terms and ``LICENSING.md`` for
-the per-component breakdown.
+MORIE is licensed under ``AGPL-3.0-or-later`` (Python and R). The AGPL
+is a strong copyleft license: a modified MORIE that is distributed, or
+offered to users over a network, must publish its source. The optional
+Linux-kernel adjuncts (``kernel-module/morie.c`` and
+``daemon/morie_lsm.py``) remain GPL-2.0-only because the kernel ABI
+requires it; they are NOT part of the R / Python distribution. See the
+``LICENSE`` file for the full text and ``LICENSING.md`` for the
+per-component breakdown.
 
 ----
 

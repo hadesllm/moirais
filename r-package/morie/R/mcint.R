@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Monte Carlo integration (Rubinstein 1981)
 #'
 #' Estimates I = int_a^b f(u) du as I_hat = (b - a) * mean(f(U_i)) with

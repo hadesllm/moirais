@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Ordinary kriging prediction (exponential / gaussian / spherical).
 #'
 #' \deqn{\hat Z(s_0) = \lambda^\top Z,

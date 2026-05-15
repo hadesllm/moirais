@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """Kulldorff space-time scan statistic on TPS event data.
 
 Implements Kulldorff's 1995 space-time scan statistic with a Monte-Carlo

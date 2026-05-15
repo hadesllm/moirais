@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "morie"
-version = "0.7.2"
-description = "Multi-domain Open Research and Inferential Estimation. Multi-domain scientific computing toolkit hosting the MRM framework for Canadian carceral, police, and oversight data, with general-purpose causal inference, signal processing, cryptography, spatial statistics, statistical physics, and psychometrics modules. (Renamed from MOIRAIS in v0.1.3; the moirais module remains as a deprecated alias.)"
+version = "0.7.3"
+description = "Multi-domain Open Research and Inferential Estimation. Multi-domain scientific computing toolkit hosting the MRM framework for Canadian carceral, police, and oversight data, with general-purpose causal inference, signal processing, cryptography, spatial statistics, statistical physics, and psychometrics modules. (Renamed from MOIRAIS in v0.1.3.)"
 authors = [
   { name="Vansh Singh Ruhela", email="hadesllm@proton.me" }
 ]
-license = "MIT OR Apache-2.0"
-license-files = ["LICENSE-MIT", "LICENSE-APACHE"]
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
 readme = "README.md"
 requires-python = ">=3.10"
 keywords = [
@@ -32,7 +32,6 @@ keywords = [
     "psychometrics",
     "double machine learning",
     "MORIE",
-    "MOIRAIS",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -134,10 +133,6 @@ carbon = [
     # simply disabled when codecarbon is absent (--no-carbon is implicit).
     "codecarbon>=2.3"
 ]
-shim = [
-    # The moirais shim is bundled in the morie distribution; no extra dep.
-    # This extras entry exists only so 'pip install morie[shim]' is explicit.
-]
 forensics = [
     # US forensic open-data ingestors (FBI NIBRS / Crime Data Explorer,
     # NamUs missing-persons, NIST Reference Datasets catalog).  The
@@ -162,11 +157,10 @@ docs = [
 
 [project.scripts]
 morie = "morie.runner:main"
-moirais = "morie.runner:main"  # deprecated alias kept for v0.1.x
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["morie*", "moirais*"]
+include = ["morie*"]
 
 [tool.setuptools.package-data]
 morie = ["data/*.db", "data/*.json", "data/*.csv", "data/*.txt", "data/*.md", "data/2016/*.json", "data/2023/*.json", "ollama_json/*.json", "fn/_lazy_map.json"]
@@ -201,7 +195,7 @@ ignore = [
 "src/morie/fn/**" = ["N"]  # short names are intentional
 
 [tool.ruff.lint.isort]
-known-first-party = ["morie", "moirais"]
+known-first-party = ["morie"]
 
 [tool.pytest.ini_options]
 # tests/fn/ holds 36k+ auto-generated tests that pass random arrays to

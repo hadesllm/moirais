@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Generalised Pareto fit (POT) by ML (Pickands 1975)
 #'
 #' Fits F(x) = 1 - (1 + xi x/sigma)^(-1/xi) to threshold exceedances.

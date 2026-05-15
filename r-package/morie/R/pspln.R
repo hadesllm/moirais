@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Penalised B-spline regression (P-splines; Eilers & Marx 1996)
 #'
 #' min_b ||y - Bb||^2 + lambda b' D' D b, with cubic B-spline basis and

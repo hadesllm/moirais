@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Latin hypercube sampling (McKay, Beckman & Conover 1979)
 #'
 #' Stratified random sample on the unit cube of dimension d: each dimension is split into N

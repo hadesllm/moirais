@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 #' LISA (Local Indicators of Spatial Association) on polygon-level
 #' crime data + per-year polygon Moran's I time series

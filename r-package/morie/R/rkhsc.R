@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' RKHS kernel ridge regression (Wahba 1990)
 #'
 #' Solves min_f  (1/n) ||y - f(x)||^2 + lambda ||f||_H^2 in a Gaussian

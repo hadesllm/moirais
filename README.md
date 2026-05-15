@@ -2,11 +2,9 @@
 
 **Multi-domain Open Research and Inferential Estimation**
 
-> *Renamed from MOIRAIS in v0.1.3. The `moirais` Python module and the `moirais` R package remain available as deprecated aliases — `import morie` / `library(morie)` is the canonical entry point going forward.*
-
 A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the MRM framework as a primary application for Canadian carceral, police, and oversight data analysis.
 
-[![License: MIT OR Apache-2.0](https://img.shields.io/badge/license-MIT_OR_Apache--2.0-3776ab.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT)
+[![License: AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--or--later-a42e2b.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/morie.svg)](https://pypi.org/project/morie/)
 [![r-universe](https://img.shields.io/badge/r--universe-hadesllm-276DC3)](https://hadesllm.r-universe.dev/morie)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -133,7 +131,7 @@ print(result)
 
 ## What's new in v0.7.0
 
-- **License migrated to `MIT OR Apache-2.0` on both language sides** — the R package switches from `GPL-2.0-only` to `Apache License (== 2) | MIT + file LICENSE` (CRAN form). Python is unchanged (already `MIT OR Apache-2.0`). The two optional Linux-kernel adjuncts (`kernel-module/` and `daemon/`) stay `GPL-2.0-only` because the kernel ABI requires it; they are not part of the wheel or CRAN tarball.
+- **Licensing** — morie is licensed `AGPL-3.0-or-later` on both language sides. The two optional Linux-kernel adjuncts (`kernel-module/` and `daemon/`) stay `GPL-2.0-only` because the kernel ABI requires it; they are not part of the wheel or CRAN tarball.
 - **Empirical applications paper published** — *Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data* on Zenodo at [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689). Five-paper publication set now complete.
 - **`ac` / `vm` terminology locked across all 5 papers** — `ac` (alert complexity) and `vm` (volatility measure of placements, "regional-transition count" alongside) are now the canonical operational terms.
 - **DOI + version propagation sweep** — empirical-paper DOI now reaches Sphinx index, `pyproject.toml [project.urls]`, `papers/README.md`, and CITATION.cff. Sphinx install snippets, Docker tag examples, and the in-tree `papers/README.md` were also un-pinned from stale versions.
@@ -272,14 +270,13 @@ under the same standard disclaimer.
 
 ## License
 
-MORIE adopts a **per-component licensing model** (revised in v0.7.0 to drop GPL-2.0 from the main R + Python distribution; only the optional Linux-kernel adjuncts remain GPL-2.0):
+morie is licensed under the **GNU Affero General Public License, version 3.0 or later (`AGPL-3.0-or-later`)**, on both the Python and R sides. The AGPL is a strong copyleft license: anyone who distributes a modified morie — or offers a modified morie to users over a network — must publish their source. Modifications and improvements cannot be kept secret or taken closed-source.
 
-- **Python package** (`src/morie/`, `src/moirais/`) — dual-licensed `MIT OR Apache-2.0` (the Rust-ecosystem convention; recipient picks either).  See [`LICENSE-MIT`](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT) and [`LICENSE-APACHE`](https://github.com/hadesllm/morie/blob/main/LICENSE-APACHE).
-- **R package** (`r-package/morie/`, `r-package/moirais/`) — dual-licensed `Apache License (== 2) | MIT + file LICENSE` per CRAN convention; downstream R consumers pick either. See [`LICENSE-MIT`](https://github.com/hadesllm/morie/blob/main/LICENSE-MIT) and [`LICENSE-APACHE`](https://github.com/hadesllm/morie/blob/main/LICENSE-APACHE).
-- **Optional Linux kernel adjuncts** (`kernel-module/morie.c`, `daemon/morie_lsm.py`) — `GPL-2.0-only` (Linux kernel ABI requires GPL for loaded modules; the userspace LSM-style audit daemon stays under the same license for symmetry). These are NOT part of the R / Python distribution; they are separately-licensed adjuncts. See [`kernel-module/LICENSE-GPL2`](https://github.com/hadesllm/morie/blob/main/kernel-module/LICENSE-GPL2).
-- **Papers, data and documentation** — `CC-BY-4.0` unless explicitly marked otherwise.
+- **Python and R packages** (`src/morie/`, `r-package/morie/`) — `AGPL-3.0-or-later`. See [`LICENSE`](https://github.com/hadesllm/morie/blob/main/LICENSE).
+- **Optional Linux kernel adjuncts** (`kernel-module/morie.c`, `daemon/morie_lsm.py`) — `GPL-2.0-only` (the Linux kernel ABI requires GPL for loaded modules). These are NOT part of the R / Python distribution; they are separately-licensed, independently-distributed adjuncts. See [`kernel-module/LICENSE-GPL2`](https://github.com/hadesllm/morie/blob/main/kernel-module/LICENSE-GPL2).
+- **Papers, data and documentation** — `CC BY-NC-SA 4.0` (Creative Commons Attribution-NonCommercial-ShareAlike) unless explicitly marked otherwise.
 
-The full per-component breakdown is documented in [`LICENSING.md`](https://github.com/hadesllm/morie/blob/main/LICENSING.md).
+Full detail in [`LICENSING.md`](https://github.com/hadesllm/morie/blob/main/LICENSING.md).
 
 ## Reporting issues / security
 

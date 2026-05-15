@@ -53,12 +53,10 @@ No reverse dependencies on CRAN.
   paper landed on Zenodo at 10.5281/zenodo.20175689) and completed
   a license-unification pass that this submission reflects.
 
-* The package is dual-licensed `Apache License (== 2) | MIT + file
-  LICENSE` (CRAN form). Both language sides of the project --
-  Python on PyPI and R on CRAN -- now follow the Rust-ecosystem
-  dual-license convention. The Linux-kernel adjuncts shipped in
-  the GitHub repository's `kernel-module/` and `daemon/`
-  subdirectories remain `GPL-2.0-only` (Linux kernel ABI
+* The package is licensed `AGPL-3` (`AGPL-3.0-or-later`) on both
+  language sides -- Python on PyPI and R on CRAN. The Linux-kernel
+  adjuncts shipped in the GitHub repository's `kernel-module/` and
+  `daemon/` subdirectories remain `GPL-2.0-only` (Linux kernel ABI
   requirement) and are not part of the CRAN source tarball.
 
 * The package's `DESCRIPTION` carries both a modern `Authors@R:`

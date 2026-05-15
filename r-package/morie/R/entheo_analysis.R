@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Beautiful Loop phenomenal-binding metric
 #'
 #' R parity of \code{morie.entheo.beautiful_loop_metric}.  Scores

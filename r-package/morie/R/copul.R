@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Copula parameter estimation (Gaussian/Clayton/Gumbel; Nelsen 2006)
 #'
 #' Kendall's tau inversion:

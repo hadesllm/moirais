@@ -62,7 +62,7 @@ fpm -s dir -t deb \
   --architecture "${ARCH}" \
   --maintainer "Vansh Singh Ruhela <hadesllm@proton.me>" \
   --url "https://github.com/hadesllm/morie" \
-  --license "MIT OR Apache-2.0" \
+  --license "AGPL-3.0-or-later" \
   --description "Multi-domain Open Research and Inferential Estimation (morie)." \
   --depends "python3 (>= 3.10)" \
   --depends "python3-venv" \

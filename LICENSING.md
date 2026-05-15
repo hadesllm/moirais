@@ -1,81 +1,70 @@
 # Licensing
 
-The `morie` project is dual-licensed under **MIT OR Apache-2.0** for
-both language sides (Python and R), following the Rust-ecosystem
-convention. The two optional Linux-kernel adjuncts remain
-`GPL-2.0-only` because the kernel ABI requires it; they are *not*
-part of the R or Python distribution.
+The `morie` project is licensed under the **GNU Affero General Public
+License, version 3.0 or later (`AGPL-3.0-or-later`)** for both language
+sides (Python and R). The move to a strong copyleft licence is
+deliberate: morie supports research into carceral, police, and
+oversight accountability, and the AGPL guarantees that any modified
+version distributed to others — or offered to users over a network —
+must publish its source. Improvements to the work cannot be taken
+private; the work, and any changes to it, stay visible to the public.
 
-> **Migration note (v0.7.0, 2026-05-14).** The R side was previously
-> `GPL-2.0-only`. It is now dual-licensed `Apache License (== 2) | MIT`,
-> matching the Python side. The historical analysis that led to the
-> earlier choice is preserved in `LICENSING_ANALYSIS.md` with a
-> "now-superseded" header. The rationale for the migration:
-> GPL-2.0 is incompatible with Apache-2.0's patent clause, which made
-> a dual-language Rust-style license infeasible; and several downstream
-> distribution channels (Homebrew formulae, `curl ... | sh` installer
-> trees, container layering) work more cleanly with permissive
-> licensing.
+## Why AGPL-3.0
 
-## Python package (`src/morie/`, `src/moirais/`)
+- **No closed forks.** Any conveyed modified version of morie must
+  itself be licensed `AGPL-3.0-or-later`, with complete source
+  (AGPL §5).
+- **No hidden network / SaaS modifications.** A modified morie offered
+  to users over a network must provide those users its Corresponding
+  Source (AGPL §13) — the clause that distinguishes the AGPL from the
+  ordinary GPL.
+- **Attribution is preserved.** Copyright and licence notices must be
+  kept in all copies and modified versions; removing them is a licence
+  violation.
 
-Licensed under **`MIT OR Apache-2.0`** — recipient picks either.
+morie remains genuine, OSI-approved open-source software. The AGPL does
+not restrict who may use morie or for what purpose; it ensures that
+modifications and improvements cannot be kept secret.
 
-SPDX identifier: `MIT OR Apache-2.0`
+## Python package (`src/morie/`)
 
-License files:
-- `LICENSE-MIT`
-- `LICENSE-APACHE`
+Licensed under **`AGPL-3.0-or-later`**.
 
-## R package (`r-package/morie/`, `r-package/moirais/`)
+SPDX identifier: `AGPL-3.0-or-later`
 
-Licensed under **`Apache License (== 2) | MIT + file LICENSE`** —
-the CRAN-form dual-license, recipient picks either.
+Licence file: `LICENSE` (the full AGPL-3.0 text).
 
-CRAN DESCRIPTION field:
+## R package (`r-package/morie/`)
+
+Licensed under **`AGPL-3`** — the R `DESCRIPTION` form:
+
 ```
-License: Apache License (== 2) | MIT + file LICENSE
+License: AGPL-3
 ```
-
-License files:
-- `LICENSE-MIT`
-- `LICENSE-APACHE`
-- `r-package/morie/LICENSE` and `r-package/moirais/LICENSE` (CRAN
-  copyright-holder stubs declaring `YEAR: 2026 / COPYRIGHT HOLDER:
-  Vansh Singh Ruhela`)
 
 ## Optional Linux-kernel adjuncts (`kernel-module/`, `daemon/`)
 
-These two subtrees are **`GPL-2.0-only`** because:
-- `kernel-module/morie.c` is a Linux kernel module. The Linux kernel
-  ABI requires loaded modules to carry a GPL-compatible license, and
-  GPL-2.0-only is the kernel's own license.
+These two subtrees remain **`GPL-2.0-only`** because:
+
+- `kernel-module/morie.c` is a Linux kernel module; the Linux kernel
+  ABI requires loaded modules to carry the kernel's own `GPL-2.0-only`
+  licence.
 - `daemon/morie_lsm.py` is an LSM-style userspace audit daemon; it
-  stays under the same license as the kernel module it pairs with
-  for symmetry.
+  stays under the same licence as the kernel module it pairs with.
 
-License file:
-- `kernel-module/LICENSE-GPL2`
+Licence file: `kernel-module/LICENSE-GPL2`.
 
-These subtrees are **not** distributed as part of the morie wheel
-or the CRAN tarball. They are separately-licensed adjuncts that
-users can opt into.
+These subtrees are **not** distributed as part of the morie wheel or
+the R package. They are separately-licensed, independently-distributed
+adjuncts that users can opt into; they are not combined with the
+AGPL-licensed package.
 
 ## Papers, data, documentation
 
 The papers under `papers/`, the data references under
 `data/datasets/userguides/`, and project-level documentation
-(`README.md`, `docs/`) are released under **CC-BY-4.0** unless
-explicitly marked otherwise.
-
-## Why dual-license MIT + Apache-2.0?
-
-The Rust-ecosystem standard of `MIT OR Apache-2.0` ensures:
-- **MIT** for projects that want minimal license obligations;
-- **Apache-2.0** for projects that need the explicit patent grant.
-
-Either license is sufficient on its own; recipients pick whichever
-suits their downstream needs. Applying this same pattern to the R
-side keeps the two language packages license-compatible and avoids
-the GPL-2.0 / Apache-2.0 patent-clause conflict that the earlier
-mixed-license model produced.
+(`README.md`, `docs/`) are released under **CC BY-NC-SA 4.0**
+(Creative Commons Attribution-NonCommercial-ShareAlike 4.0) unless
+explicitly marked otherwise. NonCommercial: these materials may not be
+used for commercial purposes without permission. ShareAlike:
+adaptations must carry the same license.

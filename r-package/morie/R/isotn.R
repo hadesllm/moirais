@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Isotonic regression via PAVA (Barlow et al. 1972)
 #'
 #' Returns the non-decreasing (or non-increasing) least-squares fit using

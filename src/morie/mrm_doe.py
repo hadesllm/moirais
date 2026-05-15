@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """Design-of-Experiments (DOE) toolkit.
 
 Closes the Chapter-3/4/5 coverage gap from designexptr.org:

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MIT OR Apache-2.0
+# SPDX-License-Identifier: AGPL-3.0-or-later
 #' Antithetic variates (Hammersley & Morton 1956)
 #'
 #' Crude vs antithetic Monte-Carlo estimator of E_U of f(U); reports the

@@ -2,83 +2,121 @@
 
 > ⚠️ **Pre-alpha (v0.x).** morie is in pre-alpha. The first alpha milestone is **v1.0.0**; everything before that is point-releases of pre-alpha code. APIs may shift, datasets may move, and findings may be refined between minor versions.
 
-## Start here: which method should I use?
+## Step 1 — install the prerequisites
 
-morie is a Python (and R) package. Every method below ends with morie
-installed and working — they differ only in what you need to have
-*first*.
+morie itself installs in a single command. What that command needs is
+a *small, fixed set of tools* — and every one is a free, official
+download. You do **not** need all of them: the list in
+[Step 2](#step-2--pick-your-install-method) tells you which apply to
+your chosen method. This section documents **every** prerequisite and
+the proper channel for it, so nothing is left to guess.
 
-- **Windows, nothing installed** — you only need a web browser. Install
-  Python from [python.org](https://www.python.org/downloads/) (one
-  click — walkthrough in [section 2](#2-windows)), then
-  `pip install morie`. Windows has no `curl` or `bash`, so the
-  one-liner does not apply there.
-- **macOS or Linux, comfortable with a terminal** — the
-  [curl one-liner](#1-curl-one-liner-linux--macos--wsl) sets everything
-  up. It needs `curl` and `bash`, which macOS has built in and most
-  Linux ships.
+### Opening a terminal
+
+Several steps run in a terminal. To open one:
+
+- **Windows** — press the `Start` key, type `PowerShell`, press `Enter`.
+- **macOS** — press `Cmd+Space`, type `Terminal`, press `Enter`.
+- **Linux** — press `Ctrl+Alt+T`, or find **Terminal** in your apps.
+
+### Python 3.10+  — *needed for: `pip`, the Windows path*
+
+Runs morie. Official source: **<https://www.python.org/downloads/>**.
+
+- **Windows** — download the installer from that page and run it. **On
+  the very first screen, tick "Add python.exe to PATH"** before
+  clicking *Install Now*. Skipping that tick is the No. 1 cause of
+  `python` being "not recognized" later.
+- **macOS** — download the macOS installer from the same page and run
+  it. (You can skip this if you use the curl one-liner — it brings its
+  own Python.)
+- **Linux** — usually already present. If not:
+  `sudo apt install -y python3 python3-venv python3-pip`
+  (Debian/Ubuntu) or `sudo dnf install -y python3 python3-pip`
+  (Fedora/RHEL).
+
+### curl  — *needed for: the one-liner, installing Homebrew*
+
+Downloads files from the web. Official source: **<https://curl.se/>** —
+but you rarely install it by hand:
+
+- **Windows** — already included in Windows 10 (1803+) and Windows 11
+  as `curl.exe`. Check with `curl --version` in PowerShell.
+- **macOS** — built in. Nothing to do.
+- **Linux** — usually present; if `curl --version` fails:
+  `sudo apt install -y curl` / `sudo dnf install -y curl` /
+  `sudo apk add curl`.
+
+### bash  — *needed for: the one-liner*
+
+The shell the one-liner script runs in.
+
+- **macOS / Linux** — built in. Nothing to do.
+- **Windows** — Windows has no native `bash`. Two official ways to get
+  one:
+  - **WSL (recommended)** — the Windows Subsystem for Linux is a real
+    Linux environment inside Windows. Open **PowerShell as
+    Administrator**, run `wsl --install`, and reboot. In the Ubuntu
+    window that appears, follow morie's **Linux** instructions.
+  - **Git Bash** — part of **Git for Windows**
+    (**<https://git-scm.com/download/win>**); it provides `git` plus a
+    `bash` shell. Fine for general use, but to install morie prefer WSL
+    or the python.org path — the one-liner is tested on real Linux and
+    macOS, not on Git Bash's emulated environment.
+
+### winget  — *optional, Windows convenience only*
+
+Microsoft's package manager; lets you install Python or R with one
+command instead of a download.
+
+- It ships with current **Windows 11**. On Windows 10, LTSC, Server, or
+  freshly-imaged machines it is often missing — check with
+  `winget --version`.
+- If it is missing, install **"App Installer"** from the **Microsoft
+  Store** (search for it, click *Get*). That is the official source of
+  `winget`. Reopen the terminal afterwards.
+- winget is never *required* — the python.org download above does the
+  same job without it.
+
+### Homebrew  — *optional, macOS / Linux package manager*
+
+Used only by morie's Homebrew channel. Official source:
+**<https://brew.sh>**. If you do not already have it, the site's
+one-line command installs it:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### Docker  — *optional, only for the Docker channel*
+
+A container runtime. Official source: **<https://www.docker.com/>** —
+Docker Desktop on Windows/macOS, or `sudo apt install -y docker.io` on
+Debian/Ubuntu.
+
+### R 4.3+  — *optional, only for morie's R package*
+
+Needed solely if you want the R package. Official source:
+**<https://cran.r-project.org/>** — on Windows use the
+[base installer](https://cran.r-project.org/bin/windows/base/); on
+macOS the `.pkg` from the same site; on Linux your distro's `r-base`.
+
+## Step 2 — pick your install method
+
+morie is a Python (and R) package; every method below ends with it
+installed and working. Pick by what you have:
+
+- **Windows, nothing installed** — install **Python** (Step 1), then
+  `pip install morie` — full walkthrough in [section 2](#2-windows).
+  The `curl | bash` one-liner does **not** run on native Windows; use
+  it only inside WSL.
+- **macOS or Linux** — the
+  [curl one-liner](#1-curl-one-liner-linux--macos--wsl) is simplest; it
+  needs only `curl` and `bash` (Step 1).
 - **You already have Python ≥3.10** — `pip install morie`
   ([section 4](#4-pypi-manual-pip)).
-
-If you have *nothing* — no Python, no `pip`, no `curl`, no `bash`, no
-`winget` — read the next section first. It shows, per operating
-system, how to get the one tool each path needs, using only a web
-browser.
-
-## Before you start: getting the basic tools (from scratch)
-
-You do not need to be technical for this. Each install path needs
-**one** thing present beforehand; here is how to get it with nothing
-but a web browser.
-
-### Windows — from scratch
-
-Windows ships without `python`, `pip`, and `bash`, and often without
-`winget`. The one tool you need is **Python**, and a browser is enough
-to get it:
-
-1. Open <https://www.python.org/downloads/> in Edge (or any browser).
-2. Click the big **"Download Python 3.x"** button.
-3. Run the file it downloads. **On the very first screen, tick
-   "Add python.exe to PATH"**, then click **Install Now**.
-4. Done — you now have `python` and `pip`. Continue at
-   [section 2](#2-windows).
-
-`winget` (Microsoft's package manager) is **optional** — you do not
-need it. If you want it anyway: open the **Microsoft Store**, search
-for **"App Installer"**, and install it; that provides `winget`. The
-python.org steps above do not need `winget` at all.
-
-### macOS — from scratch
-
-macOS already includes `curl`, `bash`, and `zsh` — you are not missing
-anything. You only need to open a terminal:
-
-1. Press `Cmd+Space`, type `Terminal`, and press `Enter`.
-2. Continue at [section 1](#1-curl-one-liner-linux--macos--wsl).
-
-(macOS does not ship `python3` by default, but the one-liner installs
-its own managed Python — you do not have to install Python yourself.)
-
-### Linux — from scratch
-
-Every Linux ships `bash`; most ship `curl`. Open a terminal
-(`Ctrl+Alt+T` on most desktops) and check:
-
-```bash
-curl --version
-```
-
-If that prints a version, continue at
-[section 1](#1-curl-one-liner-linux--macos--wsl). If it reports
-"command not found", install `curl` first — your distro's package
-manager already works with no extra setup:
-
-```bash
-sudo apt install -y curl     # Debian / Ubuntu / Raspberry Pi OS
-sudo dnf install -y curl     # Fedora / RHEL
-sudo apk add curl            # Alpine
-```
+- **You want the R package** — install **R** (Step 1), then
+  [section 6](#6-r-cran--r-universe).
 
 ## Install channels
 

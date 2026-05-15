@@ -22,7 +22,7 @@ A multi-domain scientific computing toolkit (Python and R) for observational inf
 
 > Full step-by-step install guide with platform-specific notes (PEP 668 on Debian, python 3.13 segfault on Raspberry Pi OS, etc.) is at **[INSTALLATION.md](https://github.com/hadesllm/morie/blob/main/INSTALLATION.md)**.
 
-morie is a Python (and R) package — once Python is present it is `pip install morie`. If you are starting with **nothing installed**, INSTALLATION.md has a from-scratch, browser-only walkthrough for each OS ([Before you start](https://github.com/hadesllm/morie/blob/main/INSTALLATION.md#before-you-start-getting-the-basic-tools-from-scratch)). The short version:
+morie is a Python (and R) package — once Python is present it is `pip install morie`. If you are starting with **nothing installed**, INSTALLATION.md opens with **[Step 1 — install the prerequisites](https://github.com/hadesllm/morie/blob/main/INSTALLATION.md#step-1--install-the-prerequisites)**: every tool you might need (Python, `curl`, `bash`/WSL, Git Bash, `winget`, Homebrew, Docker, R) with its official download. The short version:
 
 - **Windows** — install Python from [python.org](https://www.python.org/downloads/) (on the first screen tick **Add python.exe to PATH**), then `pip install morie`. Full walkthrough: [Windows](#recommended--windows) below. Windows has no `curl`/`bash`, so the one-liner does not apply there.
 - **macOS / Linux** — the one-liner below sets up everything. It needs `curl` and `bash`, which macOS has built in and most Linux ships.

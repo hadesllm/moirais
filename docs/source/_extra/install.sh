@@ -17,7 +17,7 @@
 #
 # Exit codes: 0 success | 1 install error | 2 bad argument | 3 user-cancel
 #
-# License: this installer script is dual MIT/Apache-2.0 (matches Python side).
+# License: AGPL-3.0-or-later (matches the morie package).
 set -eu
 
 WITH_KERNEL=0; PY=1; R=1; AUTO=0; CHECK_ONLY=0; DRY=0

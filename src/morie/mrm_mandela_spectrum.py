@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """Mandela Rules apples-to-apples spectrum on OTIS b01.
 
 Computes the full grid of provincial Mandela-classified rates across

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """Synchronised longitudinal simulation: SyncRNG + AR / VAR coefficient
 matrices + multivariate normal generation with structured covariance.
 

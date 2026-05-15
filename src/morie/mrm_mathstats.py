@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """Mathematical-statistics / simulation / computation toolkit.
 
 Closes the Chapter-2 coverage gap from designexptr.org/mathematical-

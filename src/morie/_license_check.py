@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """Runtime license-compatibility guard for morie.
 
 morie is GPL-2.0-only. This module exposes a `check_plugin_license()`

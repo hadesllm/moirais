@@ -95,12 +95,11 @@ Nations Standard Minimum Rules for the Treatment of Prisoners
 
 \section{License}{
 
-morie is dual-licensed under \strong{Apache License (== 2) | MIT +
-file LICENSE}; recipients pick either. The Python sibling on PyPI
-uses the equivalent SPDX expression \code{MIT OR Apache-2.0}. The
-optional Linux-kernel adjuncts under \code{kernel-module/} and
-\code{daemon/} are \code{GPL-2.0-only} (kernel ABI requirement)
-and are not part of the CRAN tarball.
+morie is licensed under the \strong{GNU Affero General Public
+License, version 3 or later} (\code{AGPL-3.0-or-later}), on both
+the R and Python sides. The optional Linux-kernel adjuncts under
+\code{kernel-module/} and \code{daemon/} are \code{GPL-2.0-only}
+(kernel ABI requirement) and are not part of the CRAN tarball.
 }
 
 \seealso{

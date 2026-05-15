@@ -2,8 +2,6 @@
 
 **Multi-domain Open Research and Inferential Estimation**
 
-> *Renamed from MOIRAIS in v0.1.3. The `moirais` Python module and the `moirais` R package remain available as deprecated aliases — `import morie` / `library(morie)` is the canonical entry point going forward.*
-
 A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the MRM framework as a primary application for Canadian carceral, police, and oversight data analysis.
 
 [![License: AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--or--later-a42e2b.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE)
@@ -133,7 +131,7 @@ print(result)
 
 ## What's new in v0.7.0
 
-- **License migrated to `MIT OR Apache-2.0` on both language sides** — the R package switches from `GPL-2.0-only` to `Apache License (== 2) | MIT + file LICENSE` (CRAN form). Python is unchanged (already `MIT OR Apache-2.0`). The two optional Linux-kernel adjuncts (`kernel-module/` and `daemon/`) stay `GPL-2.0-only` because the kernel ABI requires it; they are not part of the wheel or CRAN tarball.
+- **Licensing** — morie is licensed `AGPL-3.0-or-later` on both language sides. The two optional Linux-kernel adjuncts (`kernel-module/` and `daemon/`) stay `GPL-2.0-only` because the kernel ABI requires it; they are not part of the wheel or CRAN tarball.
 - **Empirical applications paper published** — *Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data* on Zenodo at [10.5281/zenodo.20175689](https://doi.org/10.5281/zenodo.20175689). Five-paper publication set now complete.
 - **`ac` / `vm` terminology locked across all 5 papers** — `ac` (alert complexity) and `vm` (volatility measure of placements, "regional-transition count" alongside) are now the canonical operational terms.
 - **DOI + version propagation sweep** — empirical-paper DOI now reaches Sphinx index, `pyproject.toml [project.urls]`, `papers/README.md`, and CITATION.cff. Sphinx install snippets, Docker tag examples, and the in-tree `papers/README.md` were also un-pinned from stale versions.

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """MRM-framework analyses on Ontario SIU (Special Investigations Unit) data.
 
 Python parity for `mrm_siu_*` (see `r-package/morie/R/mrm_siu.R`).

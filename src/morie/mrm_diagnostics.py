@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """Causal-inference diagnostics: balance, overlap, SUTVA-style assumption
 checks, and the median causal effect estimator.
 

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """LISA (Local Indicators of Spatial Association) + per-year polygon
 Moran's I on TPS-style geographic crime data.
 

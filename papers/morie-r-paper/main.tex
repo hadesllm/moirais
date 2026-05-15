@@ -85,12 +85,11 @@ psychometrics, R}
 
 The \proglang{R} package \pkg{morie} provides a curated
 multi-domain toolkit for observational inference. The
-\proglang{R} package is released under GPL-2.0-only to match the
-R-ecosystem and CRAN convention; the companion
-\proglang{Python} package \citep{Ruhela2026MoriePy} is
-dual-licensed under \code{MIT OR Apache-2.0} (the Rust-ecosystem
-convention) so downstream Python users are not forced into
-copyleft.  The package supports a
+\proglang{R} package and the companion \proglang{Python} package
+\citep{Ruhela2026MoriePy} are both released under
+\code{AGPL-3.0-or-later}, a strong copyleft licence under which any
+modified version that is distributed, or offered to users over a
+network, must publish its source.  The package supports a
 unified estimator interface for the average treatment effect
 (ATE), the average treatment effect on the treated (ATT), the
 conditional and group average treatment effects (CATE, GATE), the
@@ -790,15 +789,13 @@ complement the causal core. The MRM modules implement the
 framework of \citet{Ruhela2026MRM} on the five Canadian sources
 through a common ingestion pipeline.
 
-The \proglang{R} package is released on CRAN and via r-universe
-under GPL-2.0-only (matching the R-ecosystem convention); the
-companion \proglang{Python} package is released on PyPI under
-\code{MIT OR Apache-2.0} (the Rust-ecosystem convention) so that
-downstream users in either language are not forced to adopt the
-copyleft of the other.  The Linux kernel module
+The \proglang{R} and \proglang{Python} packages are both released
+under \code{AGPL-3.0-or-later}, a strong copyleft licence: any
+modified version that is distributed, or offered to users over a
+network, must publish its source.  The optional Linux kernel module
 (\texttt{kernel-module/morie.c}) ships under GPL-2.0-only (the
-kernel ABI requirement); papers and documentation are
-\code{CC-BY-4.0}.  The full per-component breakdown is in
+kernel ABI requirement) and is not part of the package; papers and
+documentation are \code{CC BY-NC-SA 4.0}.  The full per-component breakdown is in
 \code{LICENSING.md} at the source repository
 \url{https://github.com/hadesllm/morie}.  Contributions follow
 the process documented in \code{CONTRIBUTING.md}.

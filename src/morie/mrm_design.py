@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: AGPL-3.0-or-later
 """Experimental-design callables for morie.
 
 Inspired by the designexptr.org pedagogical sequence:

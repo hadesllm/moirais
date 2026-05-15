@@ -4,14 +4,18 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 # Builds the standalone, no-Python-required installers for morie:
-#   Windows  -> morie-<ver>-windows-x64-setup.exe   (Inno Setup wizard)
-#   macOS    -> morie-<ver>-macos-{arm64,x86_64}.pkg (signed + notarized
-#               if secrets set; Apple Silicon + Intel)
-#   Linux    -> morie .deb + .rpm, amd64 + arm64    (PyInstaller bundle)
+#   Windows  -> morie-<ver>-windows-x64-setup.exe  (Inno Setup wizard)
+#   macOS    -> morie-<ver>-macos-arm64.pkg        (signed + notarized
+#               if secrets set; Apple Silicon)
+#   Linux    -> morie .deb + .rpm, amd64 + arm64   (PyInstaller bundle)
 #
 # Each wraps a PyInstaller bundle (packaging/pyinstaller/morie.spec), so the
 # end user needs no Python, no pip, no winget. A PyInstaller bundle is
 # platform-native, so every architecture is built on its own runner.
+#
+# macOS is Apple Silicon only: GitHub retired its Intel macOS hosted
+# runners with the macOS 13 end-of-life. Intel-Mac users install via
+# `pip install morie` or the curl one-liner instead.
 #
 # macOS signing is OPTIONAL. To sign + notarize, add these repo secrets:
 #   MORIE_CERT_P12_BASE64   base64 of the Developer ID Application .p12
@@ -45,7 +49,6 @@ jobs:
         include:
           - os: windows-latest
           - os: macos-latest      # Apple Silicon (arm64)
-          - os: macos-13          # Intel (x86_64)
           - os: ubuntu-latest
             arch: amd64
           - os: ubuntu-24.04-arm

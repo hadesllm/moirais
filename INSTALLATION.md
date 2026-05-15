@@ -12,11 +12,11 @@ and run it:
 | System | File | How |
 |---|---|---|
 | **Windows** | `morie-*-windows-x64-setup.exe` | Double-click, follow the wizard. Unsigned — at the SmartScreen prompt click **More info → Run anyway**. The x64 build also runs on Windows on ARM via emulation. |
-| **macOS** | `morie-*-macos-arm64.pkg` (Apple Silicon) or `morie-*-macos-x86_64.pkg` (Intel) | Double-click, follow the installer. |
+| **macOS** | `morie-*-macos-arm64.pkg` | Double-click, follow the installer (Apple Silicon). Intel Macs: use `pip install morie` or the one-liner below. |
 | **Linux** | `morie_*_amd64.deb` / `morie_*_arm64.deb`, or `morie-*.x86_64.rpm` / `morie-*.aarch64.rpm` | `sudo apt install ./morie_*.deb` or `sudo dnf install ./morie-*.rpm` |
 
-Pick the file matching your CPU architecture (`arm64`/`aarch64` for
-Apple Silicon and ARM servers, `amd64`/`x86_64` for Intel/AMD).
+On Linux, pick the file matching your CPU architecture
+(`amd64`/`x86_64` for Intel/AMD, `arm64`/`aarch64` for ARM).
 The installer wraps a self-contained Python bundle. When it finishes,
 open a terminal — on Windows, the **"morie Console"** Start Menu
 shortcut opens one ready to go — and run `morie --help`.

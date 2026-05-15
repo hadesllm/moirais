@@ -2,17 +2,12 @@
 
 The `morie` project is licensed under the **GNU Affero General Public
 License, version 3.0 or later (`AGPL-3.0-or-later`)** for both language
-sides (Python and R), from version 0.7.3 onward.
-
-> **Migration note (v0.7.3, 2026-05-15).** morie 0.7.2 and earlier were
-> released under `MIT OR Apache-2.0` and remain so permanently — a
-> licence change cannot be applied retroactively. From v0.7.3 the
-> project is `AGPL-3.0-or-later`. The move to a strong copyleft licence
-> is deliberate: morie supports research into carceral, police, and
-> oversight accountability, and the AGPL guarantees that any modified
-> version distributed to others — or offered to users over a network —
-> must publish its source. Improvements to the work cannot be taken
-> private; the work, and any changes to it, stay visible to the public.
+sides (Python and R). The move to a strong copyleft licence is
+deliberate: morie supports research into carceral, police, and
+oversight accountability, and the AGPL guarantees that any modified
+version distributed to others — or offered to users over a network —
+must publish its source. Improvements to the work cannot be taken
+private; the work, and any changes to it, stay visible to the public.
 
 ## Why AGPL-3.0
 
@@ -73,9 +68,3 @@ The papers under `papers/`, the data references under
 explicitly marked otherwise. NonCommercial: these materials may not be
 used for commercial purposes without permission. ShareAlike:
 adaptations must carry the same license.
-
-## Already-released versions
-
-morie 0.7.2 and earlier were published under `MIT OR Apache-2.0`. Those
-releases remain under that licence permanently; `AGPL-3.0-or-later`
-applies to version 0.7.3 and every later release.

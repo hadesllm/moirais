@@ -2,15 +2,16 @@
 
 > ⚠️ **Pre-alpha (v0.x).** morie is in pre-alpha. The first alpha milestone is **v1.0.0**; everything before that is point-releases of pre-alpha code. APIs may shift, datasets may move, and findings may be refined between minor versions.
 
-morie ships across five install channels. Pick the one that matches your environment.
+morie ships across six install channels. Pick the one that matches your environment.
 
 | | Channel | When to use | Needs |
 |---|---|---|---|
-| 1 | **Curl one-liner** | You have neither Python nor pip; you just want a working `morie` | `curl`, `bash` |
-| 2 | **Homebrew tap** | macOS or Linuxbrew users | Homebrew |
-| 3 | **PyPI (pip)** | You already manage your own venv | Python ≥3.10, pip |
-| 4 | **Docker (GHCR)** | Zero-install or CI/CD | Docker |
-| 5 | **R (CRAN + r-universe)** | You want the R package | R ≥4.3 |
+| 1 | **Curl one-liner** | Linux / macOS / WSL, no Python or pip yet | `curl`, `bash` |
+| 2 | **Windows (winget)** | Native Windows 10 / 11 (PowerShell) | winget (built-in) |
+| 3 | **Homebrew tap** | macOS or Linuxbrew users | Homebrew |
+| 4 | **PyPI (pip)** | You already manage your own venv | Python ≥3.10, pip |
+| 5 | **Docker (GHCR)** | Zero-install or CI/CD | Docker |
+| 6 | **R (CRAN + r-universe)** | You want the R package | R ≥4.3 |
 
 ## 1. Curl one-liner (Linux / macOS / WSL)
 
@@ -45,7 +46,68 @@ morie --help
 morie list-modules | head -5
 ```
 
-## 2. Homebrew (macOS / Linuxbrew)
+## 2. Windows (winget)
+
+Windows ships without `curl`, `bash`, `python`, or `R`, so the Linux/macOS curl one-liner above will not run there. The native-Windows path is **winget** — Microsoft's package manager, built into Windows 10 1809+ and Windows 11. Run all commands in **PowerShell** or **Windows Terminal**; WSL users should follow option 1 instead.
+
+### Python side
+
+```powershell
+winget install -e --id Python.Python.3.12
+# Close and reopen the terminal so PATH picks up python.exe
+python -m pip install --upgrade pip
+python -m pip install morie
+```
+
+**Smoke test:**
+
+```powershell
+python -c "import morie; print(morie.__version__)"
+```
+
+### R side (optional)
+
+```powershell
+winget install -e --id RProject.R
+# Close and reopen the terminal so Rscript.exe is on PATH
+Rscript -e "install.packages('morie', repos=c('https://hadesllm.r-universe.dev', 'https://cloud.r-project.org'))"
+Rscript -e "library(morie); cat(as.character(packageVersion('morie')), '\n')"
+```
+
+The `r-universe` channel ships pre-compiled Windows binaries for morie, so you do **not** need Rtools to install the package itself. Rtools is only needed if you also want to build other CRAN packages from source.
+
+### Known Windows gotchas
+
+#### `winget` not found
+
+Older Windows installs (Windows 10 before build 1809, or fresh installs that haven't synced the Microsoft Store) won't have `winget`. Fix: update **App Installer** via the Microsoft Store, then close and reopen the terminal. Or skip `winget` and grab the official installers from [python.org/downloads](https://www.python.org/downloads/) and [cran.r-project.org/bin/windows](https://cran.r-project.org/bin/windows/). In the Python installer, **tick "Add python.exe to PATH"** on the first screen — otherwise `python` and `pip` won't resolve in any new terminal.
+
+#### Typing `python` opens the Microsoft Store
+
+Windows has app-execution aliases that hijack `python` and `python3` to open the Store. Disable them under **Settings → Apps → Advanced app settings → App execution aliases**, untick **python.exe** and **python3.exe**, then reopen the terminal.
+
+#### "Execution of scripts is disabled on this system"
+
+PowerShell's default execution policy can block pip's shim scripts. As Administrator:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+Answer `Y` at the prompt, then reopen the terminal.
+
+#### Long-path errors during `pip install`
+
+Some morie dependencies hit Windows's default 260-character path limit. Enable long-path support once, as Administrator:
+
+```powershell
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `
+  -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+```
+
+Reboot, then re-run `pip install morie`.
+
+## 3. Homebrew (macOS / Linuxbrew)
 
 ```bash
 brew tap hadesllm/morie
@@ -61,7 +123,7 @@ brew update
 brew upgrade morie
 ```
 
-## 3. PyPI (manual `pip`)
+## 4. PyPI (manual `pip`)
 
 This path assumes you already have a working Python ≥3.10 with `pip` and a venv.
 
@@ -104,19 +166,19 @@ Segmentation fault (core dumped)
 
 **Fix:** use the curl one-liner — it installs `uv` and creates a venv with Python 3.12, which works.
 
-## 4. Docker (GHCR)
+## 5. Docker (GHCR)
 
 ```bash
 # Latest stable
 docker run --rm ghcr.io/hadesllm/morie:latest morie --help
 
 # Pin to a version for reproducibility
-docker run --rm ghcr.io/hadesllm/morie:0.6.1 morie --help
+docker run --rm ghcr.io/hadesllm/morie:0.7.2 morie --help
 ```
 
 The image is published on every release with both `:latest` and `:<version>` tags. Multi-arch (linux/amd64). Includes morie + the full SciPy + R stack + R 4.5.
 
-## 5. R (CRAN + r-universe)
+## 6. R (CRAN + r-universe)
 
 ```r
 # Stable from CRAN (when listing is live)
@@ -134,7 +196,7 @@ install.packages(
 
 ## Verifying the install
 
-Any of these should print `morie 0.6.1`:
+Any of these should print `morie 0.7.2`:
 
 ```bash
 # Python

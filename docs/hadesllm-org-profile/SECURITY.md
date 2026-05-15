@@ -15,7 +15,7 @@ keyserver is public).
 ## Disclosure timeline
 
 - Initial acknowledgement within **48 hours** (best-effort; sole
-  maintainer until v0.4.0-alpha).
+  maintainer).
 - Triage + severity assessment within **7 days**.
 - Public disclosure coordinated with reporter; default **90 days**
   after first acknowledgement.

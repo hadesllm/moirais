@@ -66,11 +66,11 @@ The ASCII-armored public key is published at
 
 ```bash
 # .deb
-dpkg-sig --verify morie_0.4.0a0_amd64.deb
+dpkg-sig --verify morie_0.7.2_amd64.deb
 
 # .rpm
 rpm --import https://hadesllm.github.io/morie-repo/key.gpg
-rpm --checksig morie-0.4.0a0.x86_64.rpm
+rpm --checksig morie-0.7.2.x86_64.rpm
 ```
 
 ## Local dry-run (no signing)
@@ -78,6 +78,6 @@ rpm --checksig morie-0.4.0a0.x86_64.rpm
 ```bash
 gem install --no-document fpm
 python -m build --wheel --outdir dist/
-./packaging/fpm-deb.sh 0.4.0a0 amd64
-./packaging/fpm-rpm.sh 0.4.0a0 x86_64
+./packaging/fpm-deb.sh 0.7.2 amd64
+./packaging/fpm-rpm.sh 0.7.2 x86_64
 ```

@@ -40,32 +40,23 @@ After install, `~/.local/bin/morie` is a thin shim into the managed venv at `~/.
 
 > On minimal Linux containers (Alpine, slim Debian) that ship without `curl`, install it first: `apt-get install -y curl` or `apk add curl`. macOS already has `curl` built in.
 
-### Recommended — Windows (winget)
+### Recommended — Windows
 
-Windows doesn't ship with `curl`, `bash`, `python`, or `R` by default, so the Linux/macOS one-liner above won't run there. Use **winget** (built into Windows 10 1809+ and Windows 11) to install the prerequisites, then install morie with `pip` / `install.packages`. Run these in **PowerShell** or **Windows Terminal** — not WSL (WSL users follow the Linux path above).
+Windows doesn't ship `curl`, `bash`, `python`, or `R`, so the Linux/macOS one-liner above won't run there. The path that works on **any** Windows with no prerequisites:
 
-**Python side:**
+1. Install Python from **[python.org/downloads](https://www.python.org/downloads/)** — on the first installer screen, **tick "Add python.exe to PATH"** (skipping this is the No. 1 cause of `python` being "not recognized" in the terminal).
+2. *(Optional — for the R package)* install R from **[cran.r-project.org/bin/windows/base](https://cran.r-project.org/bin/windows/base/)**.
+3. Open **PowerShell** and install morie:
 
 ```powershell
-winget install -e --id Python.Python.3.12
-# Close and reopen the terminal so PATH picks up python.exe
 python -m pip install --upgrade pip
 python -m pip install morie
 python -c "import morie; print(morie.__version__)"
 ```
 
-**R side** (optional — only if you want the R package too):
+For the R package: `Rscript -e "install.packages('morie', repos=c('https://hadesllm.r-universe.dev','https://cloud.r-project.org'))"`
 
-```powershell
-winget install -e --id RProject.R
-# Close and reopen the terminal so Rscript.exe is on PATH
-Rscript -e "install.packages('morie', repos=c('https://hadesllm.r-universe.dev', 'https://cloud.r-project.org'))"
-Rscript -e "library(morie); cat(as.character(packageVersion('morie')), '\n')"
-```
-
-The r-universe channel ships pre-compiled Windows binaries, so you don't need Rtools for the install itself.
-
-**No winget?** Older Windows installs without winget can grab the official installers from [python.org/downloads](https://www.python.org/downloads/) and [cran.r-project.org/bin/windows](https://cran.r-project.org/bin/windows/). Make sure the Python installer's **"Add python.exe to PATH"** checkbox is ticked, otherwise `python` / `pip` won't resolve in the terminal.
+Prefer a package manager? If `winget --version` works on your machine, `winget install -e --id Python.Python.3.12` (and `RProject.R`) installs the prerequisites in one line each — but `winget` is absent from many Windows installs, so the installer steps above are the reliable default. The full Windows walkthrough, including fixes for common errors (`python` opening the Microsoft Store, PowerShell execution policy, long-path), is in **[INSTALLATION.md](https://github.com/hadesllm/morie/blob/main/INSTALLATION.md)**.
 
 ### Python — Homebrew (macOS / Linuxbrew)
 

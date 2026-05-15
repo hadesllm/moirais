@@ -7,7 +7,7 @@ morie ships across six install channels. Pick the one that matches your environm
 | | Channel | When to use | Needs |
 |---|---|---|---|
 | 1 | **Curl one-liner** | Linux / macOS / WSL, no Python or pip yet | `curl`, `bash` |
-| 2 | **Windows (winget)** | Native Windows 10 / 11 (PowerShell) | winget (built-in) |
+| 2 | **Windows** | Native Windows 10 / 11 | nothing — official `.exe` installers |
 | 3 | **Homebrew tap** | macOS or Linuxbrew users | Homebrew |
 | 4 | **PyPI (pip)** | You already manage your own venv | Python ≥3.10, pip |
 | 5 | **Docker (GHCR)** | Zero-install or CI/CD | Docker |
@@ -46,41 +46,59 @@ morie --help
 morie list-modules | head -5
 ```
 
-## 2. Windows (winget)
+## 2. Windows
 
-Windows ships without `curl`, `bash`, `python`, or `R`, so the Linux/macOS curl one-liner above will not run there. The native-Windows path is **winget** — Microsoft's package manager, built into Windows 10 1809+ and Windows 11. Run all commands in **PowerShell** or **Windows Terminal**; WSL users should follow option 1 instead.
+Windows ships without `curl`, `bash`, `python`, or `R`, so the Linux/macOS curl one-liner above will not run there. There are two ways in. The **official installers** (2A) need no prerequisites and work on every Windows — this is the recommended path. **winget** (2B) is faster but is *not present on every Windows install*, so do not assume it. Run all terminal commands in **PowerShell** or **Windows Terminal**; WSL users should follow option 1 instead.
 
-### Python side
+### 2A. Official installers (recommended — works everywhere)
 
-```powershell
-winget install -e --id Python.Python.3.12
-# Close and reopen the terminal so PATH picks up python.exe
-python -m pip install --upgrade pip
-python -m pip install morie
-```
+**Python:**
+
+1. Go to **[python.org/downloads](https://www.python.org/downloads/)** and download the latest Windows installer (the 64-bit build, or the ARM64 build if you are on an ARM PC).
+2. Run the installer. **On the very first screen, tick "Add python.exe to PATH"** before clicking "Install Now". This is the single most-missed step — without it, `python` and `pip` are not found in any terminal.
+3. Open **PowerShell** and install morie:
+
+   ```powershell
+   python -m pip install --upgrade pip
+   python -m pip install morie
+   ```
+
+**R** (optional — only if you want the R package):
+
+1. Go to **[cran.r-project.org/bin/windows/base](https://cran.r-project.org/bin/windows/base/)**, download the installer, and run it (the defaults are fine).
+2. Open **PowerShell** and install morie from r-universe — it ships pre-compiled Windows binaries, so no Rtools is needed:
+
+   ```powershell
+   Rscript -e "install.packages('morie', repos=c('https://hadesllm.r-universe.dev', 'https://cloud.r-project.org'))"
+   ```
 
 **Smoke test:**
 
 ```powershell
 python -c "import morie; print(morie.__version__)"
-```
-
-### R side (optional)
-
-```powershell
-winget install -e --id RProject.R
-# Close and reopen the terminal so Rscript.exe is on PATH
-Rscript -e "install.packages('morie', repos=c('https://hadesllm.r-universe.dev', 'https://cloud.r-project.org'))"
 Rscript -e "library(morie); cat(as.character(packageVersion('morie')), '\n')"
 ```
 
-The `r-universe` channel ships pre-compiled Windows binaries for morie, so you do **not** need Rtools to install the package itself. Rtools is only needed if you also want to build other CRAN packages from source.
+### 2B. winget (faster — only if your Windows has it)
+
+`winget` is Microsoft's package manager. It is bundled with current Windows 11, **but it is missing from many installs** — older Windows 10 builds, freshly imaged machines that have not run Store updates, Windows LTSC, and Windows Server. **Check first:**
+
+```powershell
+winget --version
+```
+
+- If that prints a version (e.g. `v1.8.x`), you can install the prerequisites with winget:
+
+  ```powershell
+  winget install -e --id Python.Python.3.12
+  winget install -e --id RProject.R
+  ```
+
+  Close and reopen the terminal afterwards so `python.exe` / `Rscript.exe` land on `PATH`, then install morie with the `pip` / `Rscript` commands from 2A.
+
+- If `winget --version` errors ("not recognized") or prints nothing, winget is not installed. Either install **"App Installer"** from the Microsoft Store (that provides `winget`) and reopen the terminal, or just use **option 2A** — it does not need winget at all.
 
 ### Known Windows gotchas
-
-#### `winget` not found
-
-Older Windows installs (Windows 10 before build 1809, or fresh installs that haven't synced the Microsoft Store) won't have `winget`. Fix: update **App Installer** via the Microsoft Store, then close and reopen the terminal. Or skip `winget` and grab the official installers from [python.org/downloads](https://www.python.org/downloads/) and [cran.r-project.org/bin/windows](https://cran.r-project.org/bin/windows/). In the Python installer, **tick "Add python.exe to PATH"** on the first screen — otherwise `python` and `pip` won't resolve in any new terminal.
 
 #### Typing `python` opens the Microsoft Store
 

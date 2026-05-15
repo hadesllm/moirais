@@ -1,8 +1,19 @@
-name: Release .deb / .rpm
+name: Publish apt / dnf repo
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
+# Publishes the apt/dnf repository at hadesllm.github.io/morie-repo.
+#
+# The packages served here are the SAME standalone PyInstaller bundle
+# packages built by installers.yml (via packaging/fpm-bundle.sh): an
+# embedded Python interpreter, no system Python and no network needed at
+# install time. So `apt install morie` / `dnf install morie` are
+# byte-identical to the .deb/.rpm attached to each GitHub Release -- one
+# `morie` package, two delivery channels, no conflict.
+#
+# amd64 only for now: a PyInstaller bundle is platform-native and cannot
+# be cross-built; arm64 would need an arm64 runner (follow-up).
 
 on:
   push:
@@ -20,19 +31,11 @@ permissions:
 
 jobs:
   # ----------------------------------------------------------------------
-  # build-deb: amd64 + arm64 (via QEMU emulation) Debian packages, signed
+  # build: PyInstaller bundle -> signed .deb + .rpm (amd64)
   # ----------------------------------------------------------------------
-  build-deb:
-    name: Build .deb (${{ matrix.arch }})
+  build:
+    name: Build bundle .deb + .rpm (amd64)
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - arch: amd64
-            qemu: false
-          - arch: arm64
-            qemu: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,140 +43,39 @@ jobs:
       - name: Resolve version
         id: ver
         run: |
-          if [ -n "${{ github.event.inputs.version }}" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "VERSION=${{ github.event.inputs.version }}" >> "$GITHUB_OUTPUT"
           else
-            REF="${GITHUB_REF#refs/tags/v}"
-            echo "VERSION=${REF}" >> "$GITHUB_OUTPUT"
+            echo "VERSION=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
           fi
-
-      - name: Set up QEMU (arm64)
-        if: matrix.qemu
-        uses: docker/setup-qemu-action@v3
-        with:
-          platforms: arm64
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Install fpm + dpkg-sig
+      - name: Install morie + PyInstaller
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install .
+          python -m pip install pyinstaller
+
+      - name: Build PyInstaller bundle
+        run: pyinstaller packaging/pyinstaller/morie.spec --noconfirm
+
+      - name: Install fpm + rpm tooling
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
             ruby ruby-dev build-essential rpm dpkg-sig gnupg
           sudo gem install --no-document fpm
 
-      - name: Build wheel
-        run: |
-          python -m pip install --upgrade pip build
-          python -m build --wheel --outdir dist/
-
-      - name: Build .deb via fpm
-        env:
-          VERSION: ${{ steps.ver.outputs.VERSION }}
-          ARCH: ${{ matrix.arch }}
-        run: |
-          chmod +x packaging/fpm-deb.sh
-          ./packaging/fpm-deb.sh "${VERSION}" "${ARCH}"
+      - name: Build bundle .deb + .rpm
+        run: bash packaging/fpm-bundle.sh "${{ steps.ver.outputs.VERSION }}" dist/morie amd64
 
       - name: Import GPG signing key
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-        run: |
-          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
-          # Prime the agent with the passphrase so dpkg-sig is non-interactive.
-          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
-          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-          gpgconf --reload gpg-agent
-          KEYID=$(gpg --list-secret-keys --with-colons | awk -F: '/^sec:/ {print $5; exit}')
-          echo "GPG_KEYID=${KEYID}" >> "$GITHUB_ENV"
-
-      - name: Sign .deb with dpkg-sig
-        env:
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-        run: |
-          for deb in dist/*.deb; do
-            echo "Signing ${deb} with key ${GPG_KEYID}"
-            dpkg-sig -k "${GPG_KEYID}" \
-              -g "--batch --pinentry-mode loopback --passphrase ${GPG_PASSPHRASE}" \
-              --sign builder "${deb}"
-            dpkg-sig --verify "${deb}"
-          done
-
-      - name: Upload .deb artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: morie-deb-${{ matrix.arch }}
-          path: dist/*.deb
-          if-no-files-found: error
-          retention-days: 14
-
-  # ----------------------------------------------------------------------
-  # build-rpm: x86_64 + aarch64 RPM packages, signed
-  # ----------------------------------------------------------------------
-  build-rpm:
-    name: Build .rpm (${{ matrix.arch }})
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - arch: x86_64
-            qemu: false
-          - arch: aarch64
-            qemu: true
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Resolve version
-        id: ver
-        run: |
-          if [ -n "${{ github.event.inputs.version }}" ]; then
-            echo "VERSION=${{ github.event.inputs.version }}" >> "$GITHUB_OUTPUT"
-          else
-            REF="${GITHUB_REF#refs/tags/v}"
-            echo "VERSION=${REF}" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Set up QEMU (aarch64)
-        if: matrix.qemu
-        uses: docker/setup-qemu-action@v3
-        with:
-          platforms: arm64
-
-      - name: Set up Python 3.12
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install fpm + rpm tooling
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends \
-            ruby ruby-dev build-essential rpm gnupg
-          sudo gem install --no-document fpm
-
-      - name: Build wheel
-        run: |
-          python -m pip install --upgrade pip build
-          python -m build --wheel --outdir dist/
-
-      - name: Build .rpm via fpm
-        env:
-          VERSION: ${{ steps.ver.outputs.VERSION }}
-          ARCH: ${{ matrix.arch }}
-        run: |
-          chmod +x packaging/fpm-rpm.sh
-          ./packaging/fpm-rpm.sh "${VERSION}" "${ARCH}"
-
-      - name: Import GPG signing key
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
           echo "$GPG_PRIVATE_KEY" | gpg --batch --import
           echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
@@ -183,8 +85,18 @@ jobs:
           KEYUID=$(gpg --list-secret-keys --with-colons | awk -F: '/^uid:/ {print $10; exit}')
           echo "GPG_KEYID=${KEYID}" >> "$GITHUB_ENV"
           echo "GPG_KEYUID=${KEYUID}" >> "$GITHUB_ENV"
-          # Export ASCII-armored public key so end-users / repo job can fetch it.
-          gpg --armor --export "${KEYID}" > dist/key.gpg
+
+      - name: Sign .deb with dpkg-sig
+        env:
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: |
+          for deb in dist/installer/*.deb; do
+            echo "Signing ${deb} with key ${GPG_KEYID}"
+            dpkg-sig -k "${GPG_KEYID}" \
+              -g "--batch --pinentry-mode loopback --passphrase ${GPG_PASSPHRASE}" \
+              --sign builder "${deb}"
+            dpkg-sig --verify "${deb}"
+          done
 
       - name: Configure ~/.rpmmacros for non-interactive sign
         env:
@@ -200,19 +112,17 @@ jobs:
 
       - name: Sign .rpm with rpmsign
         run: |
-          for rpm in dist/*.rpm; do
+          for rpm in dist/installer/*.rpm; do
             echo "Signing ${rpm}"
             rpmsign --addsign "${rpm}"
             rpm --checksig "${rpm}" || true
           done
 
-      - name: Upload .rpm artifact
+      - name: Upload bundle packages
         uses: actions/upload-artifact@v4
         with:
-          name: morie-rpm-${{ matrix.arch }}
-          path: |
-            dist/*.rpm
-            dist/key.gpg
+          name: morie-bundle-packages
+          path: dist/installer/*
           if-no-files-found: error
           retention-days: 14
 
@@ -221,7 +131,7 @@ jobs:
   # ----------------------------------------------------------------------
   publish-repo:
     name: Publish apt/dnf repo
-    needs: [build-deb, build-rpm]
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -230,11 +140,10 @@ jobs:
       - name: Resolve version
         id: ver
         run: |
-          if [ -n "${{ github.event.inputs.version }}" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "VERSION=${{ github.event.inputs.version }}" >> "$GITHUB_OUTPUT"
           else
-            REF="${GITHUB_REF#refs/tags/v}"
-            echo "VERSION=${REF}" >> "$GITHUB_OUTPUT"
+            echo "VERSION=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Install repo tooling
@@ -243,19 +152,11 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
             dpkg-dev apt-utils createrepo-c gnupg
 
-      - name: Download .deb artifacts
+      - name: Download bundle packages
         uses: actions/download-artifact@v4
         with:
-          pattern: morie-deb-*
-          path: artifacts/deb/
-          merge-multiple: true
-
-      - name: Download .rpm artifacts
-        uses: actions/download-artifact@v4
-        with:
-          pattern: morie-rpm-*
-          path: artifacts/rpm/
-          merge-multiple: true
+          name: morie-bundle-packages
+          path: artifacts/
 
       - name: Import GPG signing key
         env:
@@ -269,19 +170,17 @@ jobs:
           KEYID=$(gpg --list-secret-keys --with-colons | awk -F: '/^sec:/ {print $5; exit}')
           echo "GPG_KEYID=${KEYID}" >> "$GITHUB_ENV"
 
-      - name: Assemble apt repo (dists/stable/main/binary-*)
+      - name: Assemble apt repo (dists/stable/main/binary-amd64)
         run: |
           REPO=public/apt
           mkdir -p "${REPO}/pool/main"
-          cp artifacts/deb/*.deb "${REPO}/pool/main/"
-          for arch in amd64 arm64; do
-            BIN="${REPO}/dists/stable/main/binary-${arch}"
-            mkdir -p "${BIN}"
-            ( cd "${REPO}" && \
-              dpkg-scanpackages --arch "${arch}" pool/main /dev/null \
-                > "dists/stable/main/binary-${arch}/Packages" )
-            gzip -kf "${BIN}/Packages"
-          done
+          cp artifacts/*.deb "${REPO}/pool/main/"
+          BIN="${REPO}/dists/stable/main/binary-amd64"
+          mkdir -p "${BIN}"
+          ( cd "${REPO}" && \
+            dpkg-scanpackages --arch amd64 pool/main /dev/null \
+              > "dists/stable/main/binary-amd64/Packages" )
+          gzip -kf "${BIN}/Packages"
 
       - name: Generate apt Release + sign
         env:
@@ -293,7 +192,7 @@ jobs:
           Label: morie
           Suite: stable
           Codename: stable
-          Architectures: amd64 arm64
+          Architectures: amd64
           Components: main
           Description: morie apt repository
           Date: $(date -Ru)
@@ -314,7 +213,7 @@ jobs:
         run: |
           REPO=public/rpm
           mkdir -p "${REPO}/packages"
-          cp artifacts/rpm/*.rpm "${REPO}/packages/"
+          cp artifacts/*.rpm "${REPO}/packages/"
           createrepo_c "${REPO}"
           cat > "${REPO}/morie.repo" <<'EOF'
           [morie]

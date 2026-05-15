@@ -2,10 +2,10 @@
 # Build standalone Linux packages (.deb + .rpm) for morie from the
 # PyInstaller bundle.
 #
-# Unlike packaging/fpm-deb.sh (which depends on system python3 and
-# pip-installs morie into a venv at postinst), these packages EMBED an
-# isolated Python interpreter. They need no system Python, no pip, and
-# no network access at install time.
+# These packages EMBED an isolated Python interpreter, so they need no
+# system Python, no pip, and no network access at install time. The same
+# packages are served both as GitHub Release assets (installers.yml) and
+# from the apt/dnf repository (release-debrpm.yml).
 #
 # Usage: packaging/fpm-bundle.sh <version> <bundle-dir> [arch]
 #   <bundle-dir>  the dist/morie directory produced by morie.spec

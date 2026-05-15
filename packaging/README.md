@@ -15,7 +15,7 @@ echo "deb [signed-by=/etc/apt/keyrings/hadesllm.gpg] https://hadesllm.github.io/
 sudo apt update && sudo apt install morie
 ```
 
-Supported architectures: `amd64`, `arm64`.
+Supported architectures: `amd64`.
 
 ## Install morie on Fedora/RHEL
 
@@ -31,24 +31,26 @@ sudo yum-config-manager --add-repo https://hadesllm.github.io/morie-repo/rpm/mor
 sudo yum install morie
 ```
 
-Supported architectures: `x86_64`, `aarch64`.
+Supported architectures: `x86_64`.
 
 ## How the packages are built
 
-Both flavours are produced from the morie Python wheel by [fpm](https://github.com/jordansissel/fpm):
+Both packages are the standalone [PyInstaller](https://pyinstaller.org)
+bundle, packaged by [fpm](https://github.com/jordansissel/fpm):
 
-- `packaging/fpm-deb.sh <VERSION> [amd64|arm64]` &rarr; `dist/morie_<VERSION>_<ARCH>.deb`
-- `packaging/fpm-rpm.sh <VERSION> [x86_64|aarch64]` &rarr; `dist/morie-<VERSION>.<ARCH>.rpm`
+- `packaging/fpm-bundle.sh <VERSION> <bundle-dir> [amd64|arm64]`
+  &rarr; `dist/installer/morie_<VERSION>_<ARCH>.deb`
+  + `dist/installer/morie-<VERSION>.<RPMARCH>.rpm`
 
 Each package installs:
 
-- `/usr/local/bin/morie` &mdash; thin bash launcher.
-- `/opt/morie/venv/` &mdash; private virtualenv populated by the post-install
-  scriptlet via `pip install morie==<VERSION>` (depends on system `python3
-  >= 3.10`).
+- `/opt/morie/` &mdash; the PyInstaller bundle, including an embedded,
+  isolated Python interpreter.
+- `/usr/bin/morie` &mdash; symlink into the bundle.
 
-This keeps system Python untouched and lets us ship a single binary-agnostic
-package per architecture.
+No system Python, `pip`, or network access is needed at install time. These
+are byte-identical to the `.deb`/`.rpm` attached to each GitHub Release, so
+`apt install morie` and a direct Release download give the same package.
 
 ## Signing
 
@@ -77,7 +79,7 @@ rpm --checksig morie-0.7.2.x86_64.rpm
 
 ```bash
 gem install --no-document fpm
-python -m build --wheel --outdir dist/
-./packaging/fpm-deb.sh 0.7.2 amd64
-./packaging/fpm-rpm.sh 0.7.2 x86_64
+python -m pip install . pyinstaller
+pyinstaller packaging/pyinstaller/morie.spec --noconfirm
+./packaging/fpm-bundle.sh 0.7.2 dist/morie amd64
 ```

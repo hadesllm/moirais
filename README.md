@@ -28,11 +28,11 @@ If you just want morie working with no setup, download the installer for your sy
 
 | System | File | How |
 |---|---|---|
-| **Windows** | `morie-*-windows-x64-setup.exe` | Double-click, follow the wizard. Unsigned — at the SmartScreen prompt click **More info → Run anyway**. |
-| **macOS** | `morie-*-macos-arm64.pkg` | Double-click, follow the installer (Apple Silicon). |
-| **Linux** | `morie_*_amd64.deb` / `morie-*.x86_64.rpm` | `sudo apt install ./morie_*.deb` or `sudo dnf install ./morie-*.rpm` |
+| **Windows** | `morie-*-windows-x64-setup.exe` | Double-click, follow the wizard. Unsigned — at the SmartScreen prompt click **More info → Run anyway**. The x64 build also runs on Windows on ARM via emulation. |
+| **macOS** | `morie-*-macos-arm64.pkg` (Apple Silicon) or `morie-*-macos-x86_64.pkg` (Intel) | Double-click, follow the installer. |
+| **Linux** | `morie_*_amd64.deb` / `morie_*_arm64.deb`, or `morie-*.x86_64.rpm` / `morie-*.aarch64.rpm` | `sudo apt install ./morie_*.deb` or `sudo dnf install ./morie-*.rpm` |
 
-The installer bundles everything — no Python, no pip, no winget. When it finishes, open a terminal (on Windows, the **"morie Console"** Start Menu shortcut) and run `morie --help`.
+Pick the file matching your CPU architecture (`arm64`/`aarch64` for Apple Silicon and ARM servers, `amd64`/`x86_64` for Intel/AMD). The installer bundles everything — no Python, no pip, no winget. When it finishes, open a terminal (on Windows, the **"morie Console"** Start Menu shortcut) and run `morie --help`.
 
 > This installs the morie **command-line tool**. To use morie as a Python library (`import morie`) in your own scripts, use one of the channels below instead.
 

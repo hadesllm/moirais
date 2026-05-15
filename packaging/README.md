@@ -15,7 +15,7 @@ echo "deb [signed-by=/etc/apt/keyrings/hadesllm.gpg] https://hadesllm.github.io/
 sudo apt update && sudo apt install morie
 ```
 
-Supported architectures: `amd64`.
+Supported architectures: `amd64`, `arm64`.
 
 ## Install morie on Fedora/RHEL
 
@@ -31,7 +31,7 @@ sudo yum-config-manager --add-repo https://hadesllm.github.io/morie-repo/rpm/mor
 sudo yum install morie
 ```
 
-Supported architectures: `x86_64`.
+Supported architectures: `x86_64`, `aarch64`.
 
 ## How the packages are built
 

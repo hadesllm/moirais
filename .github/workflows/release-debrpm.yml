@@ -12,8 +12,8 @@ env:
 # byte-identical to the .deb/.rpm attached to each GitHub Release -- one
 # `morie` package, two delivery channels, no conflict.
 #
-# amd64 only for now: a PyInstaller bundle is platform-native and cannot
-# be cross-built; arm64 would need an arm64 runner (follow-up).
+# A PyInstaller bundle is platform-native and cannot be cross-built, so
+# amd64 and arm64 are each built on their own native runner.
 
 on:
   push:
@@ -31,11 +31,19 @@ permissions:
 
 jobs:
   # ----------------------------------------------------------------------
-  # build: PyInstaller bundle -> signed .deb + .rpm (amd64)
+  # build: PyInstaller bundle -> signed .deb + .rpm (amd64 + arm64)
   # ----------------------------------------------------------------------
   build:
-    name: Build bundle .deb + .rpm (amd64)
-    runs-on: ubuntu-latest
+    name: Build bundle .deb + .rpm (${{ matrix.arch }})
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: amd64
+            runner: ubuntu-latest
+          - arch: arm64
+            runner: ubuntu-24.04-arm
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -71,7 +79,7 @@ jobs:
           sudo gem install --no-document fpm
 
       - name: Build bundle .deb + .rpm
-        run: bash packaging/fpm-bundle.sh "${{ steps.ver.outputs.VERSION }}" dist/morie amd64
+        run: bash packaging/fpm-bundle.sh "${{ steps.ver.outputs.VERSION }}" dist/morie "${{ matrix.arch }}"
 
       - name: Import GPG signing key
         env:
@@ -121,7 +129,7 @@ jobs:
       - name: Upload bundle packages
         uses: actions/upload-artifact@v4
         with:
-          name: morie-bundle-packages
+          name: morie-bundle-packages-${{ matrix.arch }}
           path: dist/installer/*
           if-no-files-found: error
           retention-days: 14
@@ -155,7 +163,8 @@ jobs:
       - name: Download bundle packages
         uses: actions/download-artifact@v4
         with:
-          name: morie-bundle-packages
+          pattern: morie-bundle-packages-*
+          merge-multiple: true
           path: artifacts/
 
       - name: Import GPG signing key
@@ -170,17 +179,19 @@ jobs:
           KEYID=$(gpg --list-secret-keys --with-colons | awk -F: '/^sec:/ {print $5; exit}')
           echo "GPG_KEYID=${KEYID}" >> "$GITHUB_ENV"
 
-      - name: Assemble apt repo (dists/stable/main/binary-amd64)
+      - name: Assemble apt repo (dists/stable/main/binary-*)
         run: |
           REPO=public/apt
           mkdir -p "${REPO}/pool/main"
           cp artifacts/*.deb "${REPO}/pool/main/"
-          BIN="${REPO}/dists/stable/main/binary-amd64"
-          mkdir -p "${BIN}"
-          ( cd "${REPO}" && \
-            dpkg-scanpackages --arch amd64 pool/main /dev/null \
-              > "dists/stable/main/binary-amd64/Packages" )
-          gzip -kf "${BIN}/Packages"
+          for arch in amd64 arm64; do
+            BIN="${REPO}/dists/stable/main/binary-${arch}"
+            mkdir -p "${BIN}"
+            ( cd "${REPO}" && \
+              dpkg-scanpackages --arch "${arch}" pool/main /dev/null \
+                > "dists/stable/main/binary-${arch}/Packages" )
+            gzip -kf "${BIN}/Packages"
+          done
 
       - name: Generate apt Release + sign
         env:
@@ -192,7 +203,7 @@ jobs:
           Label: morie
           Suite: stable
           Codename: stable
-          Architectures: amd64
+          Architectures: amd64 arm64
           Components: main
           Description: morie apt repository
           Date: $(date -Ru)

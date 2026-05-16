@@ -70,6 +70,7 @@ _LAZY_EXPORTS = {
     'estimate_late': 'causal',
     'execute_pipeline as _execute_pipeline': 'runner',
     'fairness_average_odds_difference': 'fairness.metrics',
+    'fairness_bias_amplification': 'fairness.metrics',
     'fairness_demographic_parity': 'fairness.metrics',
     'fairness_disparate_impact': 'fairness.metrics',
     'fairness_equalized_odds': 'fairness.metrics',
@@ -264,6 +265,7 @@ __all__ = [
     "fairness_equalized_odds",
     "fairness_average_odds_difference",
     "fairness_gini",
+    "fairness_bias_amplification",
     # MRM-framework empirical analyses
     "mrm_classify_mandela",
     "mrm_otis_placement_concentration",

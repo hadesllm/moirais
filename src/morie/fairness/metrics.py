@@ -41,6 +41,7 @@ __all__ = [
     "fairness_equalized_odds",
     "fairness_average_odds_difference",
     "fairness_gini",
+    "fairness_bias_amplification",
 ]
 
 _FOUR_FIFTHS = 0.8  # EEOC four-fifths (80%) adverse-impact threshold
@@ -653,6 +654,111 @@ def fairness_gini(values: Any, *, group: Any = None) -> RichResult:
             "value": overall,
             "gini": overall,
             "per_group": per_group,
+        },
+    )
+
+
+def fairness_bias_amplification(
+    y_pred: Any,
+    group: Any,
+    *,
+    privileged: Any = None,
+    favorable: Any = 1,
+) -> RichResult:
+    """Bias Amplification Score — composite of parity gap and inequality.
+
+    ``BAS = Δ_parity × G``, where ``Δ_parity`` is the demographic parity
+    gap of the worst-affected group and ``G`` is the Gini coefficient of
+    the per-group favourable-outcome rates.  The score is large only
+    when a *directional* disparity (one group systematically favoured)
+    coincides with *high overall inequality* across groups — it
+    penalises systems that are both biased and unequal, and stays near
+    zero if either component is absent.
+
+    Reimplemented from the definition in Barman & Barman, "Unmasking
+    Algorithmic Bias in Predictive Policing: A GAN-Based Simulation
+    Framework with Multi-City Temporal Analysis" (arXiv:2603.18987) —
+    the composite Bias Amplification Score, ``BAS = Δ_parity × G``.
+
+    Parameters
+    ----------
+    y_pred, group, privileged, favorable
+        As in :func:`fairness_disparate_impact`.
+
+    Returns
+    -------
+    RichResult
+        Headline value is the Bias Amplification Score.
+
+    Examples
+    --------
+    >>> import morie
+    >>> pred = [1, 1, 1, 1, 0, 0, 0, 0]
+    >>> race = ["A", "A", "A", "A", "B", "B", "B", "B"]
+    >>> res = morie.fairness_bias_amplification(pred, race, privileged="A")
+    >>> round(float(res), 3)  # parity gap -1.0 x Gini 0.5
+    -0.5
+    """
+    yp = _as_1d(y_pred, "y_pred")
+    grp = _as_1d(group, "group")
+    _check_aligned(("y_pred", yp), ("group", grp))
+
+    rates = _favorable_rates(yp, grp, favorable)
+    if len(rates) < 2:
+        raise ValueError("need at least two groups to measure disparity")
+
+    warnings: list[str] = []
+    priv = _resolve_privileged(privileged, rates, warnings)
+    base = rates[priv][1]
+
+    gaps = {g: rate - base for g, (_, rate) in rates.items()}
+    non_ref = {g: v for g, v in gaps.items() if g != priv}
+    delta_parity = max(non_ref.values(), key=abs) if non_ref else 0.0
+
+    rate_vec = np.array([rate for _, (_, rate) in rates.items()], dtype=float)
+    gini = _gini(rate_vec)
+    bas = float(delta_parity * gini)
+
+    table = [
+        [str(g) + (" (ref)" if g == priv else ""), n, round(rate, 4),
+         "—" if g == priv else round(gaps[g], 4)]
+        for g, (n, rate) in rates.items()
+    ]
+
+    interp = (
+        f"Bias Amplification Score = {bas:+.4f} "
+        f"(parity gap {delta_parity:+.3f} × Gini {gini:.3f}). "
+        + (
+            "Both a directional disparity and substantial cross-group "
+            "inequality are present — the system amplifies bias."
+            if abs(bas) >= 0.05 else
+            "At least one component is small, so little amplification "
+            "is indicated."
+        )
+    )
+
+    return RichResult(
+        title="Bias Amplification Score",
+        summary_lines=[
+            ("Bias Amplification Score", bas),
+            ("Demographic parity gap", delta_parity),
+            ("Gini of group rates", gini),
+            ("Reference group", priv),
+        ],
+        tables=[{
+            "title": "Per-group favourable-outcome rates:",
+            "headers": ["group", "n", "fav. rate", "parity gap"],
+            "rows": table,
+        }],
+        warnings=warnings,
+        interpretation=interp,
+        payload={
+            "value": bas,
+            "bias_amplification_score": bas,
+            "demographic_parity_gap": delta_parity,
+            "gini": gini,
+            "rates": {g: r for g, (_, r) in rates.items()},
+            "privileged": priv,
         },
     )
 

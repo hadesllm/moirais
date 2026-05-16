@@ -21,6 +21,7 @@ from __future__ import annotations
 
 from .metrics import (
     fairness_average_odds_difference,
+    fairness_bias_amplification,
     fairness_demographic_parity,
     fairness_disparate_impact,
     fairness_equalized_odds,
@@ -33,4 +34,5 @@ __all__ = [
     "fairness_equalized_odds",
     "fairness_average_odds_difference",
     "fairness_gini",
+    "fairness_bias_amplification",
 ]

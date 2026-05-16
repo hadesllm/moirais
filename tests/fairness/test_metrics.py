@@ -13,6 +13,7 @@ import pytest
 
 from morie.fairness.metrics import (
     fairness_average_odds_difference,
+    fairness_bias_amplification,
     fairness_demographic_parity,
     fairness_disparate_impact,
     fairness_equalized_odds,
@@ -110,6 +111,25 @@ def test_gini_per_group():
     res = fairness_gini([1, 1, 1, 1, 0, 0, 0, 40], group=A4B4)
     assert res.payload["per_group"]["A"] == pytest.approx(0.0)
     assert res.payload["per_group"]["B"] > 0.5
+
+
+# ── bias amplification score (arXiv:2603.18987) ─────────────────────
+
+def test_bias_amplification_known_answer():
+    # A rate 1.0, B rate 0.0 -> Δ_parity = -1.0 ; Gini([1,0]) = 0.5
+    # BAS = -1.0 * 0.5 = -0.5
+    pred = [1, 1, 1, 1, 0, 0, 0, 0]
+    res = fairness_bias_amplification(pred, A4B4, privileged="A")
+    assert res.payload["demographic_parity_gap"] == pytest.approx(-1.0)
+    assert res.payload["gini"] == pytest.approx(0.5)
+    assert float(res) == pytest.approx(-0.5)
+
+
+def test_bias_amplification_null():
+    # both groups at 0.5 -> Δ_parity 0, Gini 0 -> BAS 0
+    pred = [1, 0, 1, 0, 1, 0, 1, 0]
+    res = fairness_bias_amplification(pred, A4B4, privileged="A")
+    assert float(res) == pytest.approx(0.0)
 
 
 # ── error handling ──────────────────────────────────────────────────

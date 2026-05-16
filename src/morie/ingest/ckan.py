@@ -52,7 +52,7 @@ from urllib.parse import urljoin
 import httpx
 import pandas as pd
 
-DEFAULT_USER_AGENT = "morie/0.7.4 (+https://github.com/hadesllm/morie)"
+DEFAULT_USER_AGENT = "morie/0.8.0 (+https://github.com/hadesllm/morie)"
 DEFAULT_TIMEOUT_SECONDS = 30.0
 
 
@@ -73,7 +73,7 @@ class Client:
         ``https://data.ontario.ca``.
     timeout : float, default 30.0
         Per-request timeout in seconds.
-    user_agent : str, default ``"morie/0.7.4"``
+    user_agent : str, default ``"morie/0.8.0"``
         Sent as the ``User-Agent`` header; some portals rate-limit
         anonymous clients.
     api_key : str | None, default None

@@ -23,6 +23,16 @@ No reverse dependencies on CRAN.
 
 ## Notes for CRAN
 
+* **This is morie 0.8.0**, a feature release. It adds the
+  `morie.fairness` subsystem — a group-disparity audit toolkit for
+  risk-assessment and predictive-policing systems: six group-fairness
+  metrics, a predictive-policing calibration audit, a multi-city
+  temporal audit, a simulation framework, and a model-agnostic
+  explainability suite. The R surface adds the `fairness_*` and
+  `predpol_*` callables (files `frns_metrics.R`, `frns_predpol.R`,
+  `frns_temporal.R`); all carry runnable `@examples`. The JAX
+  simulation components are Python-only and not part of the R package.
+  It supersedes the 0.7.4 security patch.
 * **This is morie 0.7.4**, a security patch. It fixes a
   regular-expression denial-of-service (ReDoS) issue in the optional
   Ontario SIU scraper flagged by static analysis (`py/redos`): a

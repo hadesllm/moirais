@@ -430,6 +430,10 @@ DATASET_CATALOG: dict[str, dict] = {
         "local_path": "data/datasets/cihi/820/820-hospital-stays-for-harm-caused-by-substance-use-data-table-en.xlsx",
         "table_name": "cihi820a",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/data-file/820-hospital-stays-for-harm-caused-by-substance-use-data-table-en.xlsx"
+        },
     },
     "cihi820b": {
         "name": "CIHI 820: Substance Use Breakdown 2024-2025",
@@ -445,6 +449,10 @@ DATASET_CATALOG: dict[str, dict] = {
         ),
         "table_name": "cihi820b",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/hospital-stays-harm-due-to-substance-use-breakdown-2024-2025-data-tables-en.xlsx"
+        },
     },
     "cihi849": {
         "name": "CIHI 849: Alcohol Use Harm",
@@ -457,6 +465,10 @@ DATASET_CATALOG: dict[str, dict] = {
         "local_path": "data/datasets/cihi/849/849-hospital-stays-for-harm-caused-by-alcohol-use-data-table-en.xlsx",
         "table_name": "cihi849",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/data-file/849-hospital-stays-for-harm-caused-by-alcohol-use-data-table-en.xlsx"
+        },
     },
     "cihi885a": {
         "name": "CIHI 885: Youth Services",
@@ -473,6 +485,10 @@ DATASET_CATALOG: dict[str, dict] = {
         ),
         "table_name": "cihi885a",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/data-file/885-youth-age-12-to-25-who-accessed-integrated-youth-services-for-mental-health-substance-use-and-well-being-support-data-table-en.xlsx"
+        },
     },
     "cihi885b": {
         "name": "CIHI 885: Youth Sites 2024-2025",
@@ -488,6 +504,10 @@ DATASET_CATALOG: dict[str, dict] = {
         ),
         "table_name": "cihi885b",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/integrated-youth-services-sites-2024-2025-data-tables-en.xlsx"
+        },
     },
     # ── VSR Research Data ─────────────────────────────────────
     "mapq": {
@@ -607,6 +627,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "local_path": "data/datasets/vsr/SIU.csv",
         "table_name": "siu",
         "ckan_resource_id": "",
+        "fetcher": "morie.siu_fetch:fetch_siu_dataframe",
     },
     # ── TPS per-category open-data events (used by morie.mrm_tps_*) ──
     "tpsassault": {

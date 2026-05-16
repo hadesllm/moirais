@@ -25,9 +25,10 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Editor
+# Editor / local tooling
 .idea/
 .vscode/
+.serena/
 *.swp
 
 # Docs build

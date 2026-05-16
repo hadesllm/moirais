@@ -14,6 +14,7 @@ env:
 #       → pypi-publish.yml fires (Trusted Publisher OIDC -> PyPI)
 #       → docker-publish.yml fires (ghcr.io/hadesllm/morie:X.Y.Z + :latest)
 #       → release-debrpm.yml fires (DEB + RPM signed)
+#       → homebrew-bump.yml fires (updates the hadesllm/homebrew-morie tap)
 #       → r-universe polls main + sees new tag (within ~1 hr)
 #
 # Manual override:
@@ -124,4 +125,10 @@ jobs:
             gh workflow run docker-publish.yml --ref "v$v" || \
               echo "::warning::docker-publish could not be dispatched"
           fi
-          echo "::notice title=Publish chain::pypi-publish + release-debrpm + docker-publish dispatched on v$v."
+          # homebrew-bump: update the external Homebrew tap formula.
+          if [ -f ".github/workflows/homebrew-bump.yml" ]; then
+            echo "Triggering homebrew-bump.yml on ref v$v with version=$v..."
+            gh workflow run homebrew-bump.yml --ref "v$v" -f version="$v" || \
+              echo "::warning::homebrew-bump could not be dispatched"
+          fi
+          echo "::notice title=Publish chain::pypi-publish + release-debrpm + docker-publish + homebrew-bump dispatched on v$v."

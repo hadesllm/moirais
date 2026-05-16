@@ -1,0 +1,106 @@
+name: Bump Homebrew tap formula
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+# Updates the formula in the external tap repo (hadesllm/homebrew-morie)
+# to a new morie release: rewrites the sdist `url` + `sha256` in
+# Formula/morie.rb and pushes the bump.
+#
+# Cross-repo write requires a token the default GITHUB_TOKEN cannot
+# provide (it is scoped to this repo only).  Set repo secret
+# HOMEBREW_TAP_TOKEN to a fine-grained PAT (or App token) with
+# `Contents: write` on hadesllm/homebrew-morie.  Without that secret
+# the job logs a warning and exits 0 -- it never fails the release.
+#
+# Tags pushed by GITHUB_TOKEN do not fire `on: push: tags:`, so the
+# auto-tag-on-merge workflow dispatches this explicitly; the `push`
+# trigger covers a manually pushed tag.
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "morie version to bump the tap to (no leading v)"
+        required: false
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve version
+        id: ver
+        run: |
+          if [ -n "${{ github.event.inputs.version }}" ]; then
+            v="${{ github.event.inputs.version }}"
+          else
+            v="${GITHUB_REF_NAME#v}"
+          fi
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          echo "Target: morie $v"
+
+      - name: Fetch sdist url + sha256 from PyPI
+        id: pypi
+        run: |
+          v="${{ steps.ver.outputs.version }}"
+          # PyPI's per-version JSON can lag the publish by a minute or
+          # two when this is chain-fired right after pypi-publish.
+          json=""
+          for i in $(seq 1 12); do
+            json="$(curl -fsS "https://pypi.org/pypi/morie/$v/json" || true)"
+            [ -n "$json" ] && break
+            echo "PyPI not ready for $v (attempt $i/12); sleeping 20s..."
+            sleep 20
+          done
+          if [ -z "$json" ]; then
+            echo "::error::morie $v not found on PyPI after retries."
+            exit 1
+          fi
+          echo "$json" > /tmp/pypi.json
+          url="$(python3 -c "import json; print(next(u['url'] for u in json.load(open('/tmp/pypi.json'))['urls'] if u['packagetype']=='sdist'))")"
+          sha="$(python3 -c "import json; print(next(u['digests']['sha256'] for u in json.load(open('/tmp/pypi.json'))['urls'] if u['packagetype']=='sdist'))")"
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "sdist: $url"
+
+      - name: Bump and push the tap formula
+        env:
+          GH_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::HOMEBREW_TAP_TOKEN is not set; skipping the tap bump."
+            echo "Create a fine-grained PAT with Contents:write on"
+            echo "hadesllm/homebrew-morie and add it as the HOMEBREW_TAP_TOKEN secret."
+            exit 0
+          fi
+          v="${{ steps.ver.outputs.version }}"
+          url="${{ steps.pypi.outputs.url }}"
+          sha="${{ steps.pypi.outputs.sha }}"
+          git clone --depth 1 \
+            "https://x-access-token:${GH_TOKEN}@github.com/hadesllm/homebrew-morie.git" tap
+          cd tap
+          python3 - "$url" "$sha" <<'PY'
+          import re, sys
+          url, sha = sys.argv[1], sys.argv[2]
+          path = "Formula/morie.rb"
+          src = open(path).read()
+          src = re.sub(r'^(\s*url\s+)"[^"]*"', r'\g<1>"%s"' % url, src,
+                       count=1, flags=re.M)
+          src = re.sub(r'^(\s*sha256\s+)"[^"]*"', r'\g<1>"%s"' % sha, src,
+                       count=1, flags=re.M)
+          open(path, "w").write(src)
+          PY
+          if git diff --quiet; then
+            echo "Formula already at morie $v; nothing to do."
+            exit 0
+          fi
+          git config user.name  "morie-release-bot[hadesllm]"
+          git config user.email "278967282+rootcoder007@users.noreply.github.com"
+          git commit -am "formula: bump morie to $v"
+          git push
+          echo "::notice title=Homebrew::Tap formula bumped to morie $v."

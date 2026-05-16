@@ -6,9 +6,9 @@ Installed-Size: 0
 Depends: python3 (>= 3.10), python3-venv, python3-pip
 Filename: pool/main/morie_0.8.0_arm64.deb
 Size: 1498
-MD5sum: 3db1354e4b3f78320512f09d70184ba3
-SHA1: 88f3f9faf6a9dfbb32fcaed8d3173ca9387a8619
-SHA256: e46314a94468eabc4fd2f4b0ec5f8d2b187c37f8d1365ff608adf6b8fdc7dd97
+MD5sum: 93ee32a6c9612b7e783d6cd67ca28169
+SHA1: 667bde4c292cd9ca643afc9597124c01527aab95
+SHA256: 4d49fc9f12aa6fa52c433ab0b98c7ba8b59137d8f67f1dcf900ba91fed1d98c5
 Section: default
 Priority: optional
 Homepage: https://github.com/hadesllm/morie

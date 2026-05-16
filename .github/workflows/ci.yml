@@ -41,11 +41,11 @@ jobs:
             python-version: "3.14"
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
           lfs: false
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
         with:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
@@ -54,7 +54,7 @@ jobs:
 
       - name: Install system build deps (Linux only, cached)
         if: runner.os == 'Linux'
-        uses: awalsh128/cache-apt-pkgs-action@v1
+        uses: awalsh128/cache-apt-pkgs-action@2c09a5e66da6c8016428a2172bd76e5e4f14bb17 # v1
         with:
           packages: gfortran libopenblas-dev pkg-config
           version: 1.0
@@ -91,7 +91,7 @@ jobs:
       contains(github.event.head_commit.added || '', 'papers/') ||
       github.event_name == 'workflow_dispatch'
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - name: Install xelatex + bibtex
         run: |
           sudo apt-get update
@@ -123,11 +123,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
           lfs: false
 
-      - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-r@a51a8012b0aab7c32ef9d19bf54da93f3254335e # v2
         with:
           r-version: "release"
           use-public-rspm: true
@@ -135,7 +135,7 @@ jobs:
       # setup-r-dependencies@v2 installs DESCRIPTION's Imports/Suggests
       # AND any extra-packages list, into the right user library so
       # later library() / Rscript calls find them.
-      - uses: r-lib/actions/setup-r-dependencies@v2
+      - uses: r-lib/actions/setup-r-dependencies@a51a8012b0aab7c32ef9d19bf54da93f3254335e # v2
         with:
           working-directory: r-package/morie
           extra-packages: any::testthat any::survey any::DBI any::RSQLite any::jsonlite

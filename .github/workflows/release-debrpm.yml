@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   # ----------------------------------------------------------------------
-  # build-deb: amd64 + arm64 (via QEMU emulation) Debian packages, signed
+  # build-deb: amd64 + arm64 (via QEMU emulation) Debian packages
   # ----------------------------------------------------------------------
   build-deb:
     name: Build .deb (${{ matrix.arch }})
@@ -35,7 +35,7 @@ jobs:
             qemu: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Resolve version
         id: ver
@@ -49,20 +49,20 @@ jobs:
 
       - name: Set up QEMU (arm64)
         if: matrix.qemu
-        uses: docker/setup-qemu-action@v3
+        uses: docker/setup-qemu-action@c7c53464625b32c7a7e944ae62b3e17d2b600130 # v3
         with:
           platforms: arm64
 
       - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: '3.12'
 
-      - name: Install fpm + dpkg-sig
+      - name: Install fpm
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            ruby ruby-dev build-essential rpm dpkg-sig gnupg
+            ruby ruby-dev build-essential
           sudo gem install --no-document fpm
 
       - name: Build wheel
@@ -78,33 +78,11 @@ jobs:
           chmod +x packaging/fpm-deb.sh
           ./packaging/fpm-deb.sh "${VERSION}" "${ARCH}"
 
-      - name: Import GPG signing key
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-        run: |
-          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
-          # Prime the agent with the passphrase so dpkg-sig is non-interactive.
-          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
-          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-          gpgconf --reload gpg-agent
-          KEYID=$(gpg --list-secret-keys --with-colons | awk -F: '/^sec:/ {print $5; exit}')
-          echo "GPG_KEYID=${KEYID}" >> "$GITHUB_ENV"
-
-      - name: Sign .deb with dpkg-sig
-        env:
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-        run: |
-          for deb in dist/*.deb; do
-            echo "Signing ${deb} with key ${GPG_KEYID}"
-            dpkg-sig -k "${GPG_KEYID}" \
-              -g "--batch --pinentry-mode loopback --passphrase ${GPG_PASSPHRASE}" \
-              --sign builder "${deb}"
-            dpkg-sig --verify "${deb}"
-          done
-
+      # No per-package .deb signing: dpkg-sig was removed from Debian/Ubuntu,
+      # and apt authenticates the repository's signed Release/InRelease (built
+      # in the publish-repo job below), not embedded per-package signatures.
       - name: Upload .deb artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: morie-deb-${{ matrix.arch }}
           path: dist/*.deb
@@ -127,7 +105,7 @@ jobs:
             qemu: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Resolve version
         id: ver
@@ -141,12 +119,12 @@ jobs:
 
       - name: Set up QEMU (aarch64)
         if: matrix.qemu
-        uses: docker/setup-qemu-action@v3
+        uses: docker/setup-qemu-action@c7c53464625b32c7a7e944ae62b3e17d2b600130 # v3
         with:
           platforms: arm64
 
       - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: '3.12'
 
@@ -207,7 +185,7 @@ jobs:
           done
 
       - name: Upload .rpm artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: morie-rpm-${{ matrix.arch }}
           path: |
@@ -225,7 +203,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Resolve version
         id: ver
@@ -244,14 +222,14 @@ jobs:
             dpkg-dev apt-utils createrepo-c gnupg
 
       - name: Download .deb artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
         with:
           pattern: morie-deb-*
           path: artifacts/deb/
           merge-multiple: true
 
       - name: Download .rpm artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
         with:
           pattern: morie-rpm-*
           path: artifacts/rpm/
@@ -351,7 +329,7 @@ jobs:
           EOF
 
       - name: Deploy to morie-repo branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

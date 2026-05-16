@@ -49,7 +49,7 @@ def _http_get(url: str, *, timeout: int = 60) -> str:
 def _extract_case_links(index_html: str) -> list[tuple[str, str]]:
     """Return [(case_number, url)] tuples found in an index HTML page."""
     pat = re.compile(
-        r'href="(case_summary_details\.php\?[^"]+)"[^>]*>(?:\s*<[^>]+>\s*)*'
+        r'href="(case_summary_details\.php\?[^"]+)"[^>]*>(?:\s*<[^>]+>)*\s*'
         r"([A-Za-z\-]+[0-9]+|[0-9]+-[A-Z]+-[0-9]+)",
         re.I,
     )

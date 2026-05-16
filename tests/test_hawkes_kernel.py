@@ -205,3 +205,33 @@ def test_neg_loglik_jit_routes_weibull_sin_through_core():
     ref = float(_ll_weibull_sin(t, T, -1.0, 0.2, 0.3, -0.1, 0.4, 1.5, 2.0,
                                 grid, grid_vals))
     assert np.isclose(got, ref, rtol=1e-9, atol=1e-6)
+
+
+@pytest.mark.parametrize("a0,a1,a2,a3,eta,alpha,c", [
+    (-1.0, 0.2, 0.3, -0.1, 0.30, 2.0, 1.0),
+    (0.0, -0.5, 0.1, 0.4, 0.55, 3.5, 0.5),
+])
+def test_hawkes_ll_lomax_sin_parity(a0, a1, a2, a3, eta, alpha, c):
+    from morie.tps_hawkes_jit import _ll_lomax_sin, _sin_grid
+    t = _event_times(250, rate=2.0, seed=41)
+    T = float(t[-1]) + 1.0
+    grid, grid_vals = _sin_grid(T, a0, a1, a2, a3)
+    got = core.hawkes_ll_lomax_sin(t, T, a0, a1, a2, a3, eta, alpha, c,
+                                   grid, grid_vals)
+    ref = float(_ll_lomax_sin(t, T, a0, a1, a2, a3, eta, alpha, c,
+                              grid, grid_vals))
+    assert np.isclose(got, ref, rtol=1e-9, atol=1e-6)
+
+
+def test_neg_loglik_jit_routes_lomax_sin_through_core():
+    from morie.tps_hawkes_jit import _ll_lomax_sin, _sin_grid
+    from morie.tps_hawkes_jit import has_jit_path, neg_loglik_jit
+    assert has_jit_path("lomax", "sinusoidal") is True
+    t = _event_times(180, rate=1.5, seed=43)
+    T = float(t[-1]) + 1.0
+    theta = np.array([-1.0, 0.2, 0.3, -0.1, 0.4, 2.0, 1.0])
+    got = neg_loglik_jit(theta, t, T, "lomax", "sinusoidal")
+    grid, grid_vals = _sin_grid(T, -1.0, 0.2, 0.3, -0.1)
+    ref = float(_ll_lomax_sin(t, T, -1.0, 0.2, 0.3, -0.1, 0.4, 2.0, 1.0,
+                              grid, grid_vals))
+    assert np.isclose(got, ref, rtol=1e-9, atol=1e-6)

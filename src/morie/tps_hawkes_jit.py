@@ -402,7 +402,7 @@ def has_jit_path(kernel: str, baseline: str) -> bool:
             "exponential", "weibull", "lomax", "gamma"):
         return True
     if HAS_CORE and baseline == "sinusoidal" and kernel in (
-            "exponential", "weibull"):
+            "exponential", "weibull", "lomax"):
         return True
     return HAS_NUMBA and (kernel, baseline) in _SUPPORTED
 
@@ -453,7 +453,7 @@ def neg_loglik_jit(theta: np.ndarray, t: np.ndarray, T: float,
             return _core_ext.hawkes_ll_gamma_const(
                 t_c, float(T), a0, eta, alpha, beta)
     if HAS_CORE and baseline == "sinusoidal" and kernel in (
-            "exponential", "weibull"):
+            "exponential", "weibull", "lomax"):
         a0, a1, a2, a3 = (float(theta[0]), float(theta[1]),
                           float(theta[2]), float(theta[3]))
         eta = float(theta[4])
@@ -473,6 +473,12 @@ def neg_loglik_jit(theta: np.ndarray, t: np.ndarray, T: float,
                 return 1e12
             return _core_ext.hawkes_ll_weibull_sin(
                 t_c, float(T), a0, a1, a2, a3, eta, alpha, lam, g_c, gv_c)
+        if kernel == "lomax":
+            alpha, c = float(theta[5]), float(theta[6])
+            if eta <= 1e-6 or eta >= 0.999 or alpha <= 1.001 or c <= 1e-6:
+                return 1e12
+            return _core_ext.hawkes_ll_lomax_sin(
+                t_c, float(T), a0, a1, a2, a3, eta, alpha, c, g_c, gv_c)
     if not HAS_NUMBA:
         raise RuntimeError("neg_loglik_jit called without Numba available")
 

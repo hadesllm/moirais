@@ -39,6 +39,7 @@ from .predpol import (
     predpol_calibration_audit,
     predpol_score_disparity,
 )
+from .temporal import predpol_temporal_audit
 
 __all__ = [
     # disparity metrics
@@ -52,6 +53,7 @@ __all__ = [
     "predpol_calibration_audit",
     "predpol_aggregate_areas",
     "predpol_score_disparity",
+    "predpol_temporal_audit",
     # city-agnostic data layer
     "CityProfile",
     "register_city",

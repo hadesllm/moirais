@@ -87,6 +87,23 @@ DATASET_CATALOG: dict[str, dict] = {
         "table_name": "ocp21",
         "ckan_resource_id": "d2639429-c304-45a6-90b3-770562f4d46d",
     },
+    # ── Statistics Canada direct-download PUMF ────────────────
+    "cchs22": {
+        "name": "CCHS 2022 PUMF (Canadian Community Health Survey)",
+        "source": "statcan",
+        "survey": "cchs",
+        "year": "2022",
+        "format": "fetcher",
+        "type": "pumf",
+        "large_file": True,
+        "local_path": "data/datasets/statcan/CCHS/2022/cchs-2022-pumf.csv",
+        "table_name": "cchs22",
+        "ckan_resource_id": "",
+        "fetcher": "morie.ingest.statcan:fetch_statcan_csv",
+        "fetcher_args": {
+            "url": "https://www150.statcan.gc.ca/n1/pub/82m0013x/2024001/2022_CSV.zip"
+        },
+    },
     "occ22": {
         "name": "CCS 2018-2022 PUMF",
         "source": "oc",

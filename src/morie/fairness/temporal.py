@@ -25,8 +25,6 @@ from typing import Any
 
 import numpy as np
 
-from morie.fn._richresult import RichResult
-
 from morie.fairness.metrics import (
     _ordered_unique,
     fairness_bias_amplification,
@@ -34,6 +32,7 @@ from morie.fairness.metrics import (
     fairness_disparate_impact,
     fairness_gini,
 )
+from morie.fn._richresult import RichResult
 
 __all__ = ["predpol_temporal_audit"]
 

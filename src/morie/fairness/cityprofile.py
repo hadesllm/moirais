@@ -129,7 +129,7 @@ def list_cities() -> list[str]:
     return sorted(_REGISTRY)
 
 
-def apply_profile(df, profile: "CityProfile | str"):
+def apply_profile(df, profile: CityProfile | str):
     """Rename a city ``DataFrame`` onto the canonical audit schema.
 
     Parameters

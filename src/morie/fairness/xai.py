@@ -20,7 +20,8 @@ sampling); no code copied.
 """
 from __future__ import annotations
 
-from typing import Any, Callable
+from collections.abc import Callable
+from typing import Any
 
 import numpy as np
 
@@ -266,8 +267,10 @@ def xai_ale(
         rows = X[bin_idx == b]
         if rows.shape[0] == 0:
             continue
-        lo_rows = rows.copy(); lo_rows[:, j] = edges[b]
-        hi_rows = rows.copy(); hi_rows[:, j] = edges[b + 1]
+        lo_rows = rows.copy()
+        lo_rows[:, j] = edges[b]
+        hi_rows = rows.copy()
+        hi_rows[:, j] = edges[b + 1]
         diff = _predict(predict_fn, hi_rows) - _predict(predict_fn, lo_rows)
         local[b] = float(np.mean(diff))
         counts[b] = rows.shape[0]

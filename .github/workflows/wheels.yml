@@ -1,0 +1,42 @@
+name: Build wheels
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+# Verifies the compiled morie wheel (the libmorie / morie._core C++
+# core) builds across Linux, macOS, and Windows via cibuildwheel.
+# Path-restricted to the C++ / packaging surface -- pure-Python changes
+# are covered by ci.yml, so they do not trigger a 12-wheel matrix.
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "libmorie/**"
+      - "CMakeLists.txt"
+      - "pyproject.toml"
+      - ".github/workflows/wheels.yml"
+  workflow_dispatch:
+
+jobs:
+  wheels:
+    name: wheels / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        with:
+          lfs: false
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@d16cc544083d96996f923fc4b318fee3cb14b34e # v3.4.1
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: wheels-${{ matrix.os }}
+          path: wheelhouse/*.whl
+          if-no-files-found: error

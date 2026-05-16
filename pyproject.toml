@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["scikit-build-core>=0.10", "nanobind>=2.0"]
+build-backend = "scikit_build_core.build"
 
 [project]
 name = "morie"
@@ -164,12 +164,21 @@ docs = [
 [project.scripts]
 morie = "morie.runner:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["morie*"]
+[tool.scikit-build]
+# scikit-build-core drives the CMake build of libmorie -> morie._core.
+minimum-version = "build-system.requires"
+build-dir = "build/{wheel_tag}"
+# The pure-Python package. scikit-build-core copies the whole tree, so
+# data files inside it (data/*, ollama_json/*, fn/_lazy_map.json, ...)
+# ship in the wheel without a separate package-data declaration.
+wheel.packages = ["src/morie"]
+sdist.include = ["libmorie/", "CMakeLists.txt"]
 
-[tool.setuptools.package-data]
-morie = ["data/*.db", "data/*.json", "data/*.csv", "data/*.txt", "data/*.md", "data/2016/*.json", "data/2023/*.json", "ollama_json/*.json", "fn/_lazy_map.json"]
+[tool.cibuildwheel]
+# Build CPython wheels for the supported range; skip musl, 32-bit, PyPy.
+build = "cp310-* cp311-* cp312-* cp313-* cp314-*"
+skip = "*-musllinux* *_i686 *-win32 pp*"
+build-frontend = "build"
 
 [tool.ruff]
 target-version = "py310"

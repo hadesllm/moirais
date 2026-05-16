@@ -103,6 +103,12 @@ ai = [
     # LLM chat uses the vendored morie.fam module (OllamaFreeAPI client, no Rust deps).
     # No external AI SDK dependencies needed — OllamaFreeAPI is vendored in-tree.
 ]
+sim = [
+    # JAX GAN/CTGAN for the morie.fairness simulation framework.
+    # JAX (Apache-2.0) is CPU-first and ~85 MB — deliberately chosen over
+    # PyTorch, whose default wheels pull multi-gigabyte CUDA runtimes.
+    "jax>=0.4",
+]
 interactive = [
     "textual>=0.85,<1.0",
 

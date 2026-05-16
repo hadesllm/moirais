@@ -58,6 +58,7 @@ __all__ = [
     # simulation primitives
     "noisy_or_detection",
     "simulate_biased_crime_data",
+    "SpatialGAN",
     # city-agnostic data layer
     "CityProfile",
     "register_city",
@@ -65,3 +66,18 @@ __all__ = [
     "list_cities",
     "apply_profile",
 ]
+
+
+def __getattr__(name):
+    """Lazily expose the optional JAX-backed GAN (the ``morie[sim]`` extra).
+
+    ``morie.fairness.gan`` is *not* imported eagerly: JAX is optional, and
+    ``import morie.fairness`` must succeed without it.  Accessing
+    ``morie.fairness.SpatialGAN`` triggers the import on first use; if JAX
+    is absent the underlying ImportError surfaces with install guidance.
+    """
+    if name == "SpatialGAN":
+        from .gan import SpatialGAN
+        return SpatialGAN
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+

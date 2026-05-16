@@ -30,7 +30,7 @@ except ImportError as exc:  # pragma: no cover - only hit without JAX
         "pip install 'morie[sim]'"
     ) from exc
 
-__all__ = ["SpatialGAN"]
+__all__ = ["SpatialGAN", "CTGANDebiaser"]
 
 
 # ── tiny MLP ─────────────────────────────────────────────────────────
@@ -184,3 +184,203 @@ class SpatialGAN:
         z = jax.random.normal(key, (int(n), self.latent_dim))
         out = np.asarray(_mlp(self._gp, z))
         return out * self._std + self._mean
+
+
+# ── conditional GAN losses (for the CTGAN-style debiaser) ────────────
+
+def _cond_disc_loss(dp, gp, real_feat, cond, z):
+    fake = _mlp(gp, jnp.concatenate([z, cond], axis=1))
+    real_logit = _mlp(dp, jnp.concatenate([real_feat, cond], axis=1))[:, 0]
+    fake_logit = _mlp(dp, jnp.concatenate([fake, cond], axis=1))[:, 0]
+    return (-jax.nn.log_sigmoid(real_logit).mean()
+            - jax.nn.log_sigmoid(-fake_logit).mean())
+
+
+def _cond_gen_loss(gp, dp, cond, z):
+    fake = _mlp(gp, jnp.concatenate([z, cond], axis=1))
+    fake_logit = _mlp(dp, jnp.concatenate([fake, cond], axis=1))[:, 0]
+    return -jax.nn.log_sigmoid(fake_logit).mean()
+
+
+class CTGANDebiaser:
+    """A conditional tabular GAN that rebalances a biased dataset.
+
+    A clean-room reimplementation of the *debiasing* idea from CTGAN
+    (Xu et al., 2019) as used in arXiv:2603.18987 — written in JAX, with
+    no dependency on the Business-Source-licensed ``sdv`` / ``ctgan``
+    packages.
+
+    The generator is **conditioned** on two discrete columns — the
+    protected ``group`` and the binary ``outcome`` — and learns to
+    produce realistic continuous feature columns for each
+    ``(group, outcome)`` combination.  Debiasing then works exactly as
+    CTGAN's training-by-sampling prescribes: :meth:`debias` synthesises
+    a new dataset while sampling the *conditional distribution* in a
+    rebalanced way — every group's favourable-outcome rate is set to the
+    privileged group's rate — so the disparate-impact ratio of the
+    debiased data moves toward 1.  The GAN's role is to keep the
+    synthesised features realistic under that rebalanced conditioning.
+
+    This redistributes disparity; as the paper stresses, it does not by
+    itself remove structural bias without accompanying policy change.
+
+    Parameters
+    ----------
+    latent_dim, hidden, seed
+        As for :class:`SpatialGAN`.
+    """
+
+    def __init__(self, latent_dim: int = 16, hidden: int = 64,
+                 seed: int = 0):
+        self.latent_dim = int(latent_dim)
+        self.hidden = int(hidden)
+        self.seed = int(seed)
+        self._gp = None
+        self._groups = None
+        self._feature_cols = None
+        self.history: list[float] = []
+
+    def _cond(self, gi, oi):
+        """One-hot ``(group, outcome)`` condition matrix."""
+        ng = len(self._groups)
+        cond = np.zeros((len(gi), ng + 2), dtype=np.float32)
+        cond[np.arange(len(gi)), gi] = 1.0
+        cond[np.arange(len(gi)), ng + oi] = 1.0
+        return cond
+
+    def fit(self, df, *, outcome_col, feature_cols, group_col="group",
+            favorable=1, steps: int = 1500, batch_size: int = 128,
+            lr: float = 2e-3):
+        """Train the conditional GAN on a biased :class:`~pandas.DataFrame`.
+
+        Parameters
+        ----------
+        df : pandas.DataFrame
+        outcome_col : str
+            Binary outcome column (the value ``favorable`` is the
+            favourable class).
+        feature_cols : sequence of str
+            Continuous feature columns the GAN learns to synthesise.
+        group_col : str
+            Protected-attribute column.
+        favorable : default ``1``
+            The favourable value of ``outcome_col``.
+        """
+        feature_cols = list(feature_cols)
+        if not feature_cols:
+            raise ValueError("need at least one feature column")
+        self._groups = sorted(df[group_col].unique(), key=str)
+        self._feature_cols = feature_cols
+        self._group_col = group_col
+        self._outcome_col = outcome_col
+        self._favorable = favorable
+
+        g_idx = {g: i for i, g in enumerate(self._groups)}
+        gi = df[group_col].map(g_idx).to_numpy()
+        oi = (df[outcome_col].to_numpy() == favorable).astype(int)
+        feats = df[feature_cols].to_numpy(dtype=np.float32)
+        if feats.shape[0] < 2:
+            raise ValueError("need at least two rows to fit")
+
+        self._fmean = feats.mean(axis=0)
+        self._fstd = feats.std(axis=0) + 1e-8
+        std_feats = jnp.asarray((feats - self._fmean) / self._fstd)
+
+        ng = len(self._groups)
+        self._group_props = np.bincount(gi, minlength=ng) / len(gi)
+        self._group_fav_rate = {
+            g: float(oi[gi == i].mean()) if (gi == i).any() else 0.0
+            for i, g in enumerate(self._groups)
+        }
+        cond = jnp.asarray(self._cond(gi, oi))
+        cond_dim = ng + 2
+        n_feat = std_feats.shape[1]
+        n = std_feats.shape[0]
+
+        key = jax.random.PRNGKey(self.seed)
+        key, kg, kd = jax.random.split(key, 3)
+        gp = _init_mlp(kg, [self.latent_dim + cond_dim, self.hidden,
+                            self.hidden, n_feat])
+        dp = _init_mlp(kd, [n_feat + cond_dim, self.hidden,
+                            self.hidden, 1])
+        gs = _adam_init(gp)
+        ds = _adam_init(dp)
+
+        @jax.jit
+        def step(gp, dp, gs, ds, t, real, cnd, zd, zg):
+            dl, dg = jax.value_and_grad(_cond_disc_loss)(
+                dp, gp, real, cnd, zd)
+            dp2, ds2 = _adam_step(dp, dg, ds, t, lr)
+            gl, gg = jax.value_and_grad(_cond_gen_loss)(gp, dp2, cnd, zg)
+            gp2, gs2 = _adam_step(gp, gg, gs, t, lr)
+            return gp2, dp2, gs2, ds2, dl + gl
+
+        bs = min(batch_size, n)
+        self.history = []
+        for t in range(1, int(steps) + 1):
+            key, ks, kzd, kzg = jax.random.split(key, 4)
+            idx = jax.random.randint(ks, (bs,), 0, n)
+            real = std_feats[idx]
+            cnd = cond[idx]
+            zd = jax.random.normal(kzd, (bs, self.latent_dim))
+            zg = jax.random.normal(kzg, (bs, self.latent_dim))
+            gp, dp, gs, ds, loss = step(gp, dp, gs, ds, t, real, cnd, zd, zg)
+            if t % 50 == 0:
+                self.history.append(float(loss))
+        self._gp = gp
+        return self
+
+    def debias(self, n: int, *, privileged, seed: int | None = None):
+        """Synthesise ``n`` rebalanced rows as a :class:`~pandas.DataFrame`.
+
+        Every group's favourable-outcome rate is set to the privileged
+        group's rate, so the debiased dataset's disparate-impact ratio
+        moves toward 1.  Feature columns are generated by the conditional
+        GAN.
+
+        Parameters
+        ----------
+        n : int
+            Number of synthetic rows.
+        privileged
+            The group whose favourable-outcome rate the others are
+            rebalanced to.
+        seed : int, optional
+            Sampling seed.
+
+        Returns
+        -------
+        pandas.DataFrame
+            Columns: the group column, the outcome column, and the
+            feature columns — re-auditable with the morie.fairness
+            metrics.
+        """
+        import pandas as pd
+
+        if self._gp is None:
+            raise RuntimeError("CTGANDebiaser is not fitted; call fit()")
+        if privileged not in self._groups:
+            raise ValueError(
+                f"privileged group {privileged!r} not seen in training; "
+                f"groups: {self._groups}"
+            )
+        target_rate = self._group_fav_rate[privileged]
+        rng = np.random.default_rng(seed)
+        gi = rng.choice(len(self._groups), size=int(n),
+                        p=self._group_props)
+        oi = (rng.random(int(n)) < target_rate).astype(int)
+        cond = jnp.asarray(self._cond(gi, oi))
+
+        key = jax.random.PRNGKey(self.seed if seed is None else int(seed))
+        z = jax.random.normal(key, (int(n), self.latent_dim))
+        std_feat = np.asarray(_mlp(self._gp, jnp.concatenate([z, cond],
+                                                             axis=1)))
+        feats = std_feat * self._fstd + self._fmean
+
+        out = {
+            self._group_col: [self._groups[i] for i in gi],
+            self._outcome_col: np.where(oi == 1, self._favorable, 0),
+        }
+        for j, col in enumerate(self._feature_cols):
+            out[col] = feats[:, j]
+        return pd.DataFrame(out)

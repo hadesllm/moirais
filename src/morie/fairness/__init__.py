@@ -59,6 +59,7 @@ __all__ = [
     "noisy_or_detection",
     "simulate_biased_crime_data",
     "SpatialGAN",
+    "CTGANDebiaser",
     # city-agnostic data layer
     "CityProfile",
     "register_city",
@@ -76,8 +77,8 @@ def __getattr__(name):
     ``morie.fairness.SpatialGAN`` triggers the import on first use; if JAX
     is absent the underlying ImportError surfaces with install guidance.
     """
-    if name == "SpatialGAN":
-        from .gan import SpatialGAN
-        return SpatialGAN
+    if name in ("SpatialGAN", "CTGANDebiaser"):
+        from . import gan
+        return getattr(gan, name)
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 

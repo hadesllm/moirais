@@ -225,9 +225,13 @@ def build_parser() -> argparse.ArgumentParser:
     relay_cmd.add_argument("--token", default=None, help="Require auth token for API access")
     relay_cmd.add_argument("--bind", default="0.0.0.0", help="Bind address (default: 0.0.0.0)")
 
-    subparsers.add_parser(
+    doctor_cmd = subparsers.add_parser(
         "doctor",
         help="Run MORIE environment diagnostics",
+    )
+    doctor_cmd.add_argument(
+        "--fix", action="store_true",
+        help="Attempt to remediate failed checks (install missing deps, etc.)",
     )
 
     # ── update ───────────────────────────────────────────────────────────
@@ -1077,7 +1081,7 @@ def _main_impl() -> int:
     if args.command == "doctor":
         from .doctor import run_doctor
 
-        return run_doctor()
+        return run_doctor(fix=getattr(args, "fix", False))
 
     if args.command == "update":
         from ._update_check import run_update

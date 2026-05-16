@@ -33,14 +33,37 @@ from .cpads import (
 logger = logging.getLogger(__name__)
 
 DEFAULT_CKAN_API_BASE = "https://open.canada.ca/data/en/api/3/action/datastore_search"
-DEFAULT_CACHE_DB = "data/cache/morie.db"
+DEFAULT_CACHE_DB = "morie.db"
+
+
+def _user_cache_dir() -> Path:
+    """Per-user cache directory for morie, portable across machines.
+
+    Honours ``XDG_CACHE_HOME``; otherwise ``~/.cache/morie``. The
+    SQLite cache and on-demand fetched datasets live here -- it is
+    always user-writable and never depends on the install location.
+    """
+    base = os.environ.get("XDG_CACHE_HOME") or (Path.home() / ".cache")
+    return Path(base).expanduser() / "morie"
 
 
 def _project_root() -> Path:
-    """Return the project root (dev/sphinx/project/)."""
-    # __file__ = libexec/config/tools/py-package/morie/data.py
-    # parents: [0]=morie [1]=py-package [2]=tools [3]=config [4]=libexec [5]=project
-    return Path(__file__).resolve().parents[5]
+    """Best-effort repository root for a source checkout.
+
+    Walks up from this file looking for a ``pyproject.toml`` marker.
+    When morie runs from a source checkout this finds the repo root
+    (used only to resolve the relative ``local_path`` of author-local
+    datasets). For an installed package there is no such root, so the
+    current working directory is returned as a neutral base.
+
+    The cache never relies on this -- see :func:`_user_cache_dir` --
+    so a wrong answer here cannot misplace user data.
+    """
+    here = Path(__file__).resolve()
+    for parent in here.parents:
+        if (parent / "pyproject.toml").is_file():
+            return parent
+    return Path.cwd()
 
 
 # ---------------------------------------------------------------------------
@@ -960,8 +983,8 @@ def morie_db() -> Path:
     package_db = Path(__file__).parent / "data" / "morie.db"
     if package_db.exists():
         return package_db
-    # 2. Project cache location (development only, gitignored)
-    return _project_root() / "data" / "cache" / "morie.db"
+    # 2. Per-user cache location (portable; created on first write)
+    return _user_cache_dir() / "morie.db"
 
 
 def _builtin_db_connect() -> sqlite3.Connection | None:
@@ -980,10 +1003,21 @@ def _builtin_db_connect() -> sqlite3.Connection | None:
 
 
 def _resolve_cache_path(db_path: str | Path | None = None) -> Path:
-    """Resolve the cache database path, creating parent dirs as needed."""
-    p = Path(db_path or os.environ.get("MORIE_CACHE_DB", DEFAULT_CACHE_DB))
-    if not p.is_absolute():
-        p = _project_root() / p
+    """Resolve the cache database path, creating parent dirs as needed.
+
+    Resolution order: an explicit ``db_path`` argument, else the
+    ``MORIE_CACHE_DB`` environment variable, else ``morie.db`` in the
+    per-user cache directory. A relative path is taken relative to the
+    per-user cache directory (:func:`_user_cache_dir`) -- never to the
+    install location -- so the cache works on any machine.
+    """
+    explicit = db_path if db_path is not None else os.environ.get("MORIE_CACHE_DB")
+    if explicit:
+        p = Path(explicit).expanduser()
+        if not p.is_absolute():
+            p = _user_cache_dir() / p
+    else:
+        p = _user_cache_dir() / DEFAULT_CACHE_DB
     p.parent.mkdir(parents=True, exist_ok=True)
     return p
 
@@ -1239,8 +1273,13 @@ def load_dataset(
         finally:
             builtin.close()
 
-    # 2. User cache.
-    cached = cache_load(table_name, db_path)
+    # 2. User cache. A misconfigured or unwritable cache path must not
+    #    crash the load -- skip the cache tier and carry on.
+    try:
+        cached = cache_load(table_name, db_path)
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("Cache tier skipped for %s: %s", matched, exc)
+        cached = None
     if cached is not None:
         logger.info("Loaded %s from cache (%d rows)", matched, len(cached))
         return cached
@@ -1265,7 +1304,10 @@ def load_dataset(
         logger.info("Fetching %s via %s(**%s) ...", matched, fetcher_spec, args)
         df = fetcher_fn(**args)
         if df is not None and len(df):
-            cache_store(df, table_name, db_path)
+            try:
+                cache_store(df, table_name, db_path)
+            except Exception as exc:  # noqa: BLE001
+                logger.warning("Could not cache %s: %s", matched, exc)
         return df
 
     # 3. Local file.
@@ -1280,7 +1322,10 @@ def load_dataset(
             df = pd.read_excel(local_path)
         else:
             raise NotImplementedError(f"Format {entry['format']} not supported for on-the-fly ingest")
-        cache_store(df, table_name, db_path)
+        try:
+            cache_store(df, table_name, db_path)
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("Could not cache %s: %s", matched, exc)
         return df
 
     # 4. CKAN API.
@@ -1290,8 +1335,8 @@ def load_dataset(
         return fetch_ckan_to_cache(matched, db_path=db_path, timeout=timeout)
 
     raise FileNotFoundError(
-        f"Dataset {matched!r} not found in cache, at {entry['local_path']}, "
-        f"or via CKAN. Run: python libexec/config/tests/rtests/ingest_datasets.py --only {matched}"
+        f"Dataset {matched!r} could not be loaded.\n"
+        + dataset_recommendation(matched, entry)
     )
 
 
@@ -1530,6 +1575,62 @@ class DatasetRegistry:
         return frame
 
 
+def dataset_recommendation(key: str, entry: "dict | None" = None) -> str:
+    """Human-readable guidance on how to obtain a catalogued dataset.
+
+    Surfaced in :func:`load_dataset` errors and :func:`check_datasets`
+    output, so a user who hits an unavailable dataset is told where it
+    comes from and what to do -- morie ships code, not the data, but it
+    can always point at the source.
+
+    Parameters
+    ----------
+    key : str
+        Catalogue key (e.g. ``"cchs22"``, ``"siu"``).
+    entry : dict, optional
+        The catalogue entry; looked up from :data:`DATASET_CATALOG`
+        when omitted.
+
+    Returns
+    -------
+    str
+        A multi-line recommendation.
+    """
+    entry = entry if entry is not None else DATASET_CATALOG.get(key, {})
+    if not entry:
+        return (f"Dataset {key!r} is not in the morie catalogue. "
+                f"Run morie.check_datasets() to list catalogued datasets.")
+
+    name = entry.get("name", key)
+    src = entry.get("source", "?")
+    local_path = entry.get("local_path", "")
+    rid = entry.get("ckan_resource_id")
+    fetcher = entry.get("fetcher")
+    lines = [f"How to obtain {key!r} -- {name} (source: {src}):"]
+
+    if rid:
+        lines.append(
+            "  Published on the Open Government portal. morie fetches it "
+            "automatically when online; if you are seeing this, the portal "
+            "was unreachable -- retry when connected.")
+        lines.append(
+            "  CKAN datastore API: https://open.canada.ca/data/api/3/"
+            f"action/datastore_search?resource_id={rid}&limit=5")
+    elif fetcher:
+        lines.append(
+            f"  Fetched on demand via {fetcher}. morie downloads it "
+            "automatically when online; if you are seeing this, the remote "
+            "source was unreachable -- retry when connected.")
+    else:
+        lines.append(
+            "  morie has no public remote source for this dataset -- it is "
+            "your own or otherwise restricted data, not redistributed by "
+            "morie.")
+        if local_path:
+            lines.append(f"  Place the data file at: {local_path}")
+    return "\n".join(lines)
+
+
 def check_datasets(
     *,
     probe_remote: bool = False,
@@ -1577,6 +1678,8 @@ def check_datasets(
     rows: list = []
     tiers: dict = {}
     warnings: list = []
+    missing: list = []
+    recommendations: dict = {}
 
     for key, entry in DATASET_CATALOG.items():
         table = entry.get("table_name", key)
@@ -1625,6 +1728,8 @@ def check_datasets(
         tiers[tier] = tiers.get(tier, 0) + 1
         if tier in ("MISSING", "remote-dead"):
             warnings.append(f"{key} ({entry.get('name', key)}): {tier} — {detail}")
+            missing.append(key)
+            recommendations[key] = dataset_recommendation(key, entry)
         link = (entry.get("ckan_resource_id")
                 or ("fetcher:" + entry["fetcher"] if entry.get("fetcher")
                     else entry.get("local_path", "")))
@@ -1657,5 +1762,7 @@ def check_datasets(
         interpretation=interp,
         payload={"value": ok, "tiers": tiers,
                  "n_catalog": len(DATASET_CATALOG),
-                 "needs_attention": needs},
+                 "needs_attention": needs,
+                 "missing": missing,
+                 "recommendations": recommendations},
     )

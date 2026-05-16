@@ -53,6 +53,7 @@ _LAZY_EXPORTS = {
     'calculate_ipw_weights': 'causal',
     'canonicalize_cpads_frame': 'cpads',
     'check_datasets': 'data',
+    'dataset_recommendation': 'data',
     'check_plugin_license': '_license_check',
     'cluster_sample': 'sampling',
     'compare_nested_logistic_models': 'investigation',
@@ -366,6 +367,7 @@ __all__ = [
     "ScanCluster",
     "GPL_COMPATIBLE_LICENSES",
     "check_datasets",
+    "dataset_recommendation",
     "check_plugin_license",
     "morie_license_metadata",
 

@@ -399,7 +399,7 @@ _SUPPORTED = {
 
 def has_jit_path(kernel: str, baseline: str) -> bool:
     if HAS_CORE and baseline == "constant" and kernel in (
-            "exponential", "weibull", "lomax"):
+            "exponential", "weibull", "lomax", "gamma"):
         return True
     return HAS_NUMBA and (kernel, baseline) in _SUPPORTED
 
@@ -442,6 +442,13 @@ def neg_loglik_jit(theta: np.ndarray, t: np.ndarray, T: float,
                 return 1e12
             return _core_ext.hawkes_ll_lomax_const(
                 t_c, float(T), a0, eta, alpha, c)
+        if kernel == "gamma":
+            a0, eta = float(theta[0]), float(theta[1])
+            alpha, beta = float(theta[2]), float(theta[3])
+            if eta <= 1e-6 or eta >= 0.999 or alpha <= 1e-6 or beta <= 1e-6:
+                return 1e12
+            return _core_ext.hawkes_ll_gamma_const(
+                t_c, float(T), a0, eta, alpha, beta)
     if not HAS_NUMBA:
         raise RuntimeError("neg_loglik_jit called without Numba available")
 

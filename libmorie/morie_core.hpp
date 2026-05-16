@@ -232,4 +232,78 @@ inline double hawkes_ll_lomax_const(const double *t, std::size_t n, double T,
     return -(log_sum - integral);
 }
 
+// Regularized lower incomplete gamma P(a, x): series for x < a+1,
+// continued fraction (Lentz) otherwise (Numerical Recipes 6.2). Used
+// by the gamma-kernel Hawkes compensator integral.
+inline double gamma_cdf_regularized(double a, double x) {
+    if (x <= 0.0) return 0.0;
+    const double gln = std::lgamma(a);
+    if (x < a + 1.0) {
+        double ap = a;
+        double sum = 1.0 / a;
+        double delta = sum;
+        for (int i = 0; i < 200; ++i) {
+            ap += 1.0;
+            delta *= x / ap;
+            sum += delta;
+            if (std::fabs(delta) < std::fabs(sum) * 1e-12) break;
+        }
+        return sum * std::exp(-x + a * std::log(x) - gln);
+    }
+    double b = x + 1.0 - a;
+    double c = 1.0 / 1e-30;
+    double d = 1.0 / b;
+    double h = d;
+    for (int i = 1; i <= 200; ++i) {
+        const double an = -static_cast<double>(i) * (static_cast<double>(i) - a);
+        b += 2.0;
+        d = an * d + b;
+        if (std::fabs(d) < 1e-30) d = 1e-30;
+        c = b + an / c;
+        if (std::fabs(c) < 1e-30) c = 1e-30;
+        d = 1.0 / d;
+        const double delta = d * c;
+        h *= delta;
+        if (std::fabs(delta - 1.0) < 1e-12) break;
+    }
+    return 1.0 - std::exp(-x + a * std::log(x) - gln) * h;
+}
+
+// Negative log-likelihood: gamma triggering kernel, constant baseline.
+// Non-Markovian -- exact O(n^2). The compensator integral uses the
+// regularized incomplete gamma above. Returns kBig when infeasible.
+inline double hawkes_ll_gamma_const(const double *t, std::size_t n, double T,
+                                    double a0, double eta, double alpha,
+                                    double beta) {
+    if (!(1e-6 < eta && eta < 0.999)) return kBig;
+    if (!(0.05 < alpha && alpha < 20.0)) return kBig;
+    if (!(0.05 < beta && beta < 30.0)) return kBig;
+    if (!(-20.0 < a0 && a0 < 20.0)) return kBig;
+
+    const double nu = std::exp(a0);
+    const double log_const = alpha * std::log(beta) - std::lgamma(alpha);
+
+    double log_sum = 0.0;
+    for (std::size_t i = 0; i < n; ++i) {
+        double s = 0.0;
+        for (std::size_t j = 0; j < i; ++j) {
+            const double u = t[i] - t[j];
+            if (u > 1e-300) {
+                const double log_d =
+                    log_const + (alpha - 1.0) * std::log(u) - beta * u;
+                s += std::exp(log_d);
+            }
+        }
+        const double lam_i = nu + eta * s;
+        if (lam_i <= 0.0) return kBig;
+        log_sum += std::log(lam_i);
+    }
+
+    double integral = nu * T;
+    for (std::size_t i = 0; i < n; ++i) {
+        integral += eta * gamma_cdf_regularized(alpha, beta * (T - t[i]));
+    }
+    return -(log_sum - integral);
+}
+
 }  // namespace morie::core

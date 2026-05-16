@@ -117,3 +117,31 @@ def test_neg_loglik_jit_routes_lomax_through_core():
     bad = neg_loglik_jit(np.array([0.0, 0.3, 1.0, 1.0]), t, T,
                          "lomax", "constant")
     assert bad == 1e12
+
+
+@pytest.mark.parametrize("a0,eta,alpha,beta", [
+    (-1.0, 0.30, 2.0, 1.5),
+    (0.5, 0.60, 0.8, 3.0),
+    (-2.0, 0.10, 5.0, 0.5),
+])
+def test_hawkes_ll_gamma_const_parity(a0, eta, alpha, beta):
+    from morie.tps_hawkes_jit import _ll_gamma_const
+    t = _event_times(250, rate=2.0, seed=23)
+    T = float(t[-1]) + 1.0
+    got = core.hawkes_ll_gamma_const(t, T, a0, eta, alpha, beta)
+    ref = float(_ll_gamma_const(t, T, a0, eta, alpha, beta))
+    assert np.isclose(got, ref, rtol=1e-9, atol=1e-6)
+
+
+def test_neg_loglik_jit_routes_gamma_through_core():
+    from morie.tps_hawkes_jit import _ll_gamma_const, has_jit_path
+    from morie.tps_hawkes_jit import neg_loglik_jit
+    assert has_jit_path("gamma", "constant") is True
+    t = _event_times(180, rate=1.5, seed=27)
+    T = float(t[-1]) + 1.0
+    theta = np.array([-1.0, 0.4, 2.0, 1.5])
+    got = neg_loglik_jit(theta, t, T, "gamma", "constant")
+    ref = float(_ll_gamma_const(t, T, -1.0, 0.4, 2.0, 1.5))
+    assert np.isclose(got, ref, rtol=1e-9, atol=1e-6)
+    # alpha outside (0.05, 20) -> infeasible sentinel
+    assert core.hawkes_ll_gamma_const(t, T, 0.0, 0.3, 50.0, 1.5) == 1e12

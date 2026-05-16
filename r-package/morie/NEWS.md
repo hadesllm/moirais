@@ -28,6 +28,20 @@ in-place self-update.
 * **CRAN fix** — the `morie_load_cpads` example is now wrapped in
   `\dontrun{}`, so `R CMD check --as-cran` no longer errors on the
   offline check farm.
+* **Portable cache path** — the SQLite cache and on-demand fetched
+  datasets now live in a per-user directory (`~/.cache/morie`, or
+  `$XDG_CACHE_HOME`). A stale path calculation previously placed them
+  outside any writable location; `MORIE_CACHE_DB` still overrides.
+  Fixed identically on the R side, so the shared cache works.
+* **`morie doctor --fix`** — the diagnostics command can now remediate
+  failed checks: install missing Python packages, create the cache
+  directory, and warn when a newer release is available. Plain
+  `morie doctor` stays diagnostic-only. (Python interface.)
+* **Missing-dataset recommendations** — when a dataset cannot be
+  loaded, `load_dataset()` and `check_datasets()` now explain where it
+  comes from — the CKAN portal, an on-demand fetcher, or the local
+  path to place the file — via the new `dataset_recommendation()`
+  helper.
 
 
 # morie 0.8.0 — 2026-05-16

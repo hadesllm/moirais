@@ -6,9 +6,14 @@ so module tests run on CI without private data.
 """
 from __future__ import annotations
 
+import os
 import random
 from pathlib import Path
 import sys
+
+# Keep the suite hermetic: morie's import-time update check must not
+# reach PyPI or print notices during tests.
+os.environ.setdefault("MORIE_NO_UPDATE_CHECK", "1")
 
 import numpy as np
 import pandas as pd

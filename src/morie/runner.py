@@ -230,6 +230,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="Run MORIE environment diagnostics",
     )
 
+    # ── update ───────────────────────────────────────────────────────────
+    update_cmd = subparsers.add_parser(
+        "update",
+        help="Check PyPI for a newer morie release and optionally install it",
+    )
+    update_cmd.add_argument(
+        "-y", "--yes", action="store_true",
+        help="Install the update without prompting",
+    )
+
     # ── profile-dataset ──────────────────────────────────────────────────
     profile_cmd = subparsers.add_parser(
         "profile-dataset",
@@ -1068,6 +1078,11 @@ def _main_impl() -> int:
         from .doctor import run_doctor
 
         return run_doctor()
+
+    if args.command == "update":
+        from ._update_check import run_update
+
+        return run_update(yes=getattr(args, "yes", False))
 
     if args.command == "profile-dataset":
         from .dataset import load_dataset, profile_dataset, suggest_analysis_plan

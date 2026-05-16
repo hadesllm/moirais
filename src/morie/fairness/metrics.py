@@ -773,7 +773,7 @@ def _gini(x: np.ndarray) -> float:
     x = np.sort(np.asarray(x, dtype=float))
     n = x.size
     total = x.sum()
-    if n < 2 or total <= 0:
+    if n < 2 or total <= 0 or not np.isfinite(total):
         return 0.0
     idx = np.arange(1, n + 1)
     return float((2.0 * np.sum(idx * x)) / (n * total) - (n + 1.0) / n)

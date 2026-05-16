@@ -162,9 +162,10 @@ morie_cache_file <- function(path, table_name, db_path = NULL) {
 #'   attempt to fetch from the CKAN API.
 #' @return A data.frame with canonical CPADS columns.
 #' @examples
-#' \donttest{
-#'   # Prefers local + cache; falls back to CKAN only when use_ckan = TRUE.
-#'   cpads <- morie_load_cpads(use_ckan = FALSE)
+#' \dontrun{
+#'   # Needs the CPADS PUMF (local file, cache, or a live CKAN fetch),
+#'   # so it cannot run inside an offline R CMD check.
+#'   cpads <- morie_load_cpads(use_ckan = TRUE)
 #'   if (!is.null(cpads)) head(cpads)
 #' }
 #' @export

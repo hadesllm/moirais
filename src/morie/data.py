@@ -114,7 +114,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CCS/2018-2022/ccs_pumf_2018to2022_final.csv",
         "table_name": "occ22",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "262e6163-ba41-4562-bd2b-8996e738b1d4",
     },
     "occ23": {
         "name": "CCS 2023 PUMF",
@@ -126,7 +126,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CCS/2023/ccs_2023_pumf.csv",
         "table_name": "occ23",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "100c5845-664e-4c66-be15-3625ce236d8b",
     },
     "occ24": {
         "name": "CCS 2024 PUMF",
@@ -138,7 +138,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CCS/2024/ccs_pumf_2024-002.csv",
         "table_name": "occ24",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "420925be-399a-473b-8be3-26875a1c132a",
     },
     "ocs22mf": {
         "name": "CSADS 2021-2022 PUMF",
@@ -186,7 +186,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": True,
         "local_path": "data/datasets/oc/CSADS/2023-2024/csads202324bootstrap.csv",
         "table_name": "ocs24bt",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "58682536-1325-405a-83f0-7b1284b4f717",
     },
     "cu20mf": {
         "name": "CSUS 2019-2020 PUMF",
@@ -198,7 +198,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CSUS/2019-2020/CADS201920pumf.csv",
         "table_name": "cu20mf",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "0f4c0418-b9d1-4f89-a917-a660d20fd6d0",
     },
     "cu20bt": {
         "name": "CSUS 2019-2020 Bootstrap",
@@ -222,7 +222,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CSUS/2023/csus2023_pumf_final.csv",
         "table_name": "cu23mf",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "c2c1795b-4501-49ba-9dd1-5b8360cc3b2e",
     },
     "cu23bt": {
         "name": "CSUS 2023 Bootstrap",
@@ -234,7 +234,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": True,
         "local_path": "data/datasets/oc/CSUS/2023/csus2023_pumf_bwt.csv",
         "table_name": "cu23bt",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "7d19d47a-5f42-4447-b735-aa4d677ad5ed",
     },
     # ── HealthInfobase (hib) aggregate ────────────────────────
     "hibp": {

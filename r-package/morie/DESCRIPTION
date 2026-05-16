@@ -162,6 +162,7 @@ Collate:
   'ewtma.R'
   'extvm.R'
   'flsha.R'
+  'frns_metrics.R'
   'fwpas.R'
   'fzbrd.R'
   'fzcvm.R'

@@ -25,6 +25,12 @@ double hawkes_ll_exp_const(Vec t, double T, double a0, double eta,
                                             eta, beta);
 }
 
+double hawkes_ll_weibull_const(Vec t, double T, double a0, double eta,
+                               double alpha, double lam) {
+    return morie::core::hawkes_ll_weibull_const(t.data(), t.shape(0), T, a0,
+                                                eta, alpha, lam);
+}
+
 }  // namespace
 
 void register_hawkes(nb::module_ &m) {
@@ -33,4 +39,9 @@ void register_hawkes(nb::module_ &m) {
           "Hawkes negative log-likelihood -- exponential triggering "
           "kernel, constant baseline. Returns 1e12 for an infeasible "
           "parameter vector.");
+    m.def("hawkes_ll_weibull_const", &hawkes_ll_weibull_const, "t"_a, "T"_a,
+          "a0"_a, "eta"_a, "alpha"_a, "lam"_a,
+          "Hawkes negative log-likelihood -- Weibull triggering kernel, "
+          "constant baseline. Returns 1e12 for an infeasible parameter "
+          "vector.");
 }

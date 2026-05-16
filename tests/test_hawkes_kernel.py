@@ -54,3 +54,36 @@ def test_neg_loglik_jit_routes_through_core():
     got = neg_loglik_jit(theta, t, T, "exponential", "constant")
     ref = float(_ll_exp_const(t, T, -1.0, 0.4, 1.2))
     assert np.isclose(got, ref, rtol=1e-12, atol=1e-9)
+
+
+@pytest.mark.parametrize("a0,eta,alpha,lam", [
+    (-1.0, 0.30, 1.5, 2.0),
+    (0.5, 0.60, 0.8, 5.0),
+    (-2.0, 0.10, 3.0, 1.0),
+])
+def test_hawkes_ll_weibull_const_parity(a0, eta, alpha, lam):
+    from morie.tps_hawkes_jit import _ll_weibull_const
+    t = _event_times(250, rate=2.0, seed=13)
+    T = float(t[-1]) + 1.0
+    got = core.hawkes_ll_weibull_const(t, T, a0, eta, alpha, lam)
+    ref = float(_ll_weibull_const(t, T, a0, eta, alpha, lam))
+    assert np.isclose(got, ref, rtol=1e-9, atol=1e-6)
+
+
+def test_hawkes_ll_weibull_const_infeasible_returns_sentinel():
+    t = _event_times(40, rate=1.0, seed=5)
+    T = float(t[-1]) + 1.0
+    assert core.hawkes_ll_weibull_const(t, T, 0.0, 1.5, 1.5, 2.0) == 1e12
+    assert core.hawkes_ll_weibull_const(t, T, 0.0, 0.3, 50.0, 2.0) == 1e12
+
+
+def test_neg_loglik_jit_routes_weibull_through_core():
+    from morie.tps_hawkes_jit import _ll_weibull_const, has_jit_path
+    from morie.tps_hawkes_jit import neg_loglik_jit
+    assert has_jit_path("weibull", "constant") is True
+    t = _event_times(180, rate=1.5, seed=9)
+    T = float(t[-1]) + 1.0
+    theta = np.array([-1.0, 0.4, 1.5, 2.0])
+    got = neg_loglik_jit(theta, t, T, "weibull", "constant")
+    ref = float(_ll_weibull_const(t, T, -1.0, 0.4, 1.5, 2.0))
+    assert np.isclose(got, ref, rtol=1e-9, atol=1e-6)

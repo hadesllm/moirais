@@ -398,7 +398,8 @@ _SUPPORTED = {
 
 
 def has_jit_path(kernel: str, baseline: str) -> bool:
-    if HAS_CORE and (kernel, baseline) == ("exponential", "constant"):
+    if HAS_CORE and baseline == "constant" and kernel in (
+            "exponential", "weibull"):
         return True
     return HAS_NUMBA and (kernel, baseline) in _SUPPORTED
 
@@ -418,15 +419,22 @@ def _sin_grid(T: float, a0: float, a1: float, a2: float, a3: float
 def neg_loglik_jit(theta: np.ndarray, t: np.ndarray, T: float,
                     kernel: str, baseline: str) -> float:
     """JIT-routed negative log-likelihood.  Caller must check has_jit_path()."""
-    # Phase 2 (v0.9.1): the exponential-kernel / constant-baseline case
-    # runs on the compiled C++ core when available -- no numba needed.
-    if HAS_CORE and kernel == "exponential" and baseline == "constant":
-        a0, eta, beta = float(theta[0]), float(theta[1]), float(theta[2])
-        if eta <= 1e-6 or eta >= 0.999 or beta <= 1e-6:
-            return 1e12
-        return _core_ext.hawkes_ll_exp_const(
-            np.ascontiguousarray(t, dtype=np.float64), float(T),
-            a0, eta, beta)
+    # v0.9.1: constant-baseline kernels run on the compiled C++ core
+    # when available -- no numba needed for these paths.
+    if HAS_CORE and baseline == "constant":
+        t_c = np.ascontiguousarray(t, dtype=np.float64)
+        if kernel == "exponential":
+            a0, eta, beta = float(theta[0]), float(theta[1]), float(theta[2])
+            if eta <= 1e-6 or eta >= 0.999 or beta <= 1e-6:
+                return 1e12
+            return _core_ext.hawkes_ll_exp_const(t_c, float(T), a0, eta, beta)
+        if kernel == "weibull":
+            a0, eta = float(theta[0]), float(theta[1])
+            alpha, lam = float(theta[2]), float(theta[3])
+            if eta <= 1e-6 or eta >= 0.999 or alpha <= 1e-6 or lam <= 1e-6:
+                return 1e12
+            return _core_ext.hawkes_ll_weibull_const(
+                t_c, float(T), a0, eta, alpha, lam)
     if not HAS_NUMBA:
         raise RuntimeError("neg_loglik_jit called without Numba available")
 

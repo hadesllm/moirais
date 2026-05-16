@@ -1,0 +1,18 @@
+Package: morie
+Version: 0.7.3
+Architecture: amd64
+Maintainer: Vansh Singh Ruhela <hadesllm@proton.me>
+Installed-Size: 0
+Depends: python3 (>= 3.10), python3-venv, python3-pip
+Filename: pool/main/morie_0.7.3_amd64.deb
+Size: 1496
+MD5sum: 15f72bbca80d417afb5d09e127949e93
+SHA1: 8a1093b2e3b85469232a6f857d4aab2413d9a352
+SHA256: 48d46c0730df67dedde8aab7488686274ca71000cbe8d6ee0c6c80283b728073
+Section: default
+Priority: optional
+Homepage: https://github.com/hadesllm/morie
+Description: Multi-domain Open Research and Inferential Estimation (morie).
+License: AGPL-3.0-or-later
+Vendor: none
+

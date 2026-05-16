@@ -1,0 +1,6 @@
+[morie]
+name=morie (hadesllm)
+baseurl=https://hadesllm.github.io/morie-repo/rpm
+enabled=1
+gpgcheck=1
+gpgkey=https://hadesllm.github.io/morie-repo/key.gpg

@@ -1,3 +1,18 @@
+# morie 0.7.4 — 2026-05-16
+
+Security patch.
+
+* Fixed a regular-expression denial-of-service (ReDoS) vulnerability
+  in the Ontario SIU scraper (`siu_fetch`). The index-page link
+  parser used a repeated sub-pattern with `\s*` on both ends, which
+  could cause catastrophic (exponential) backtracking on a maliciously
+  crafted HTML page. The pattern is now linear-time; parsing of valid
+  SIU index pages is unchanged. (CodeQL `py/redos`, high severity.)
+* `User-Agent` strings across the data-ingestion modules were stale
+  (`morie/0.2.0`–`morie/0.6.1`) and are now aligned to the release
+  version.
+* No API changes.
+
 # morie 0.7.3 — 2026-05-15
 
 License change. morie is now licensed under the **GNU Affero General

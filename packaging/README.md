@@ -52,12 +52,14 @@ package per architecture.
 
 ## Signing
 
-Every artifact is signed with the project GPG key:
+Repository artifacts are authenticated with the project GPG key:
 
-- `.deb` &rarr; `dpkg-sig --sign builder`
-- `.rpm` &rarr; `rpmsign --addsign`
+- `.rpm` &rarr; `rpmsign --addsign` (embedded per-package signature)
 - apt `Release` &rarr; detached + clearsigned (`Release.gpg` + `InRelease`)
 - dnf `repomd.xml` &rarr; detached signature at `repomd.xml.asc`
+
+`.deb` packages are authenticated through the signed apt `Release` /
+`InRelease` rather than an embedded per-package signature.
 
 The ASCII-armored public key is published at
 `https://hadesllm.github.io/morie-repo/key.gpg`.
@@ -65,19 +67,20 @@ The ASCII-armored public key is published at
 ## Verifying a downloaded package manually
 
 ```bash
-# .deb
-dpkg-sig --verify morie_0.7.2_amd64.deb
-
 # .rpm
 rpm --import https://hadesllm.github.io/morie-repo/key.gpg
-rpm --checksig morie-0.7.2.x86_64.rpm
+rpm --checksig morie-0.7.4.x86_64.rpm
 ```
+
+`.deb` files are verified by `apt` against the repository's signed
+`Release` / `InRelease` when installed from the apt repo; a standalone
+`.deb` downloaded outside the repo carries no embedded signature.
 
 ## Local dry-run (no signing)
 
 ```bash
 gem install --no-document fpm
 python -m build --wheel --outdir dist/
-./packaging/fpm-deb.sh 0.7.2 amd64
-./packaging/fpm-rpm.sh 0.7.2 x86_64
+./packaging/fpm-deb.sh 0.7.4 amd64
+./packaging/fpm-rpm.sh 0.7.4 x86_64
 ```

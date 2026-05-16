@@ -56,7 +56,7 @@ from urllib.parse import urljoin
 import httpx
 import pandas as pd
 
-DEFAULT_USER_AGENT = "morie/0.5.0 (+https://github.com/hadesllm/morie)"
+DEFAULT_USER_AGENT = "morie/0.7.4 (+https://github.com/hadesllm/morie)"
 DEFAULT_TIMEOUT_SECONDS = 60.0
 
 # SIU site layout (verified 2026-05-13)

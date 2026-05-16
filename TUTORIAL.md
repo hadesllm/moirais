@@ -156,7 +156,7 @@ If `python -c "..."` looks intimidating, the same is doable from a Python REPL (
 | `morie: command not found` | `~/.local/bin` isn't on your `PATH` | `export PATH="$HOME/.local/bin:$PATH"` and add that line to your `~/.bashrc` or `~/.zshrc` |
 | `error: externally-managed-environment` | Newer Debian / Ubuntu / Raspberry Pi systems don't let you install Python packages directly any more — they want each project in its own isolated folder (called a *virtual environment* or *venv*). This is a safety rule the OS added, not a morie bug. | Use the curl one-liner (Step 1); it creates the isolated folder for you. |
 | `Segmentation fault` after `import morie` | The system Python on Raspberry Pi OS 13 has a known bug that crashes when loading scientific libraries. | Same fix: curl one-liner — it installs a working Python 3.12 alongside the broken system one. |
-| `FileNotFoundError ... cpads-2021-2022-pumf2.csv` | (Pre-v0.5.0 only) — should not happen on v0.5.0+ which falls back to synthetic data | `python -c "import morie; print(morie.__version__)"` should show `0.7.2` or later; upgrade via `pip install -U morie` or re-run the curl installer |
+| `FileNotFoundError ... cpads-2021-2022-pumf2.csv` | (Pre-v0.5.0 only) — should not happen on v0.5.0+ which falls back to synthetic data | `python -c "import morie; print(morie.__version__)"` should show `0.7.4` or later; upgrade via `pip install -U morie` or re-run the curl installer |
 | `UserWarning: using the SHIPPED SYNTHETIC CPADS frame` | Expected on first run; outputs are toy | Get real PUMF (Step 5) when ready |
 | Some other error | We want to hear about it | File an issue at <https://github.com/hadesllm/morie/issues> — paste the full error message |
 

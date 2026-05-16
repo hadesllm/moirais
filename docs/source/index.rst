@@ -49,7 +49,7 @@ for Canadian carceral, police, and oversight data analysis.
 Quick start
 -----------
 
-Pick any one channel — all install the **same** ``morie`` v0.7.2:
+Pick any one channel — all install the **same** ``morie`` v0.7.4:
 
 .. code-block:: bash
 
@@ -66,7 +66,7 @@ Pick any one channel — all install the **same** ``morie`` v0.7.2:
    brew install morie
 
    # 4. Docker (zero local dependencies)
-   docker run --rm ghcr.io/hadesllm/morie:0.7.2 morie --help
+   docker run --rm ghcr.io/hadesllm/morie:0.7.4 morie --help
 
    # 5. R package (CRAN-compatible, served from r-universe)
    install.packages("morie", repos = "https://hadesllm.r-universe.dev")

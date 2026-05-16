@@ -94,7 +94,7 @@ pip install morie
 docker run --rm ghcr.io/hadesllm/morie:latest morie --help
 
 # Pin to a specific version (recommended for reproducibility)
-docker run --rm ghcr.io/hadesllm/morie:0.7.2 morie --help
+docker run --rm ghcr.io/hadesllm/morie:0.7.4 morie --help
 ```
 
 Multi-arch image published on every release with both versioned and `:latest` tags. Requires only Docker — no Python, no pip.
@@ -128,6 +128,11 @@ from morie.otis_all_analyze import analyze_a01_mrm
 result = analyze_a01_mrm(df)
 print(result)
 ```
+
+## What's new in v0.7.4
+
+- **Security fix** — resolved a regular-expression denial-of-service (ReDoS) vulnerability in the Ontario SIU scraper (`siu_fetch`), flagged by static analysis (CodeQL `py/redos`, high severity). A repeated sub-pattern could backtrack catastrophically on a maliciously crafted page; it is now linear-time, with no change to parsing of valid SIU index pages.
+- **Stale `User-Agent` strings** across the data-ingestion modules aligned to the release version.
 
 ## What's new in v0.7.0
 
@@ -176,12 +181,12 @@ and the **empirical applications paper**.
 ```
 # Software paper — R (also the R package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in R (v0.7.2). Zenodo.
+Estimation in R (v0.7.4). Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Software paper — Python (also the Python package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in Python (v0.7.2). Zenodo.
+Estimation in Python (v0.7.4). Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
 # MRM framework paper (theoretical foundations)

@@ -36,7 +36,7 @@ __all__ = [
 
 
 SIU_INDEX_URL = "https://www.siu.on.ca/en/directors_reports.php"
-USER_AGENT = "morie/0.2.0 (+https://github.com/hadesllm/morie)"
+USER_AGENT = "morie/0.7.4 (+https://github.com/hadesllm/morie)"
 RATE_LIMIT_SECONDS = 2.0
 
 

@@ -23,6 +23,14 @@ No reverse dependencies on CRAN.
 
 ## Notes for CRAN
 
+* **This is morie 0.7.4**, a security patch. It fixes a
+  regular-expression denial-of-service (ReDoS) issue in the optional
+  Ontario SIU scraper flagged by static analysis (`py/redos`): a
+  repeated sub-pattern carried `\s*` on both ends and could backtrack
+  catastrophically on crafted input. The pattern is now linear-time;
+  parsing of valid pages is unchanged. 0.7.4 also bumps stale
+  `User-Agent` strings to the release version. It supersedes the
+  0.7.3 AGPL-3 relicensing release. No API changes.
 * **Supersedes morie 0.7.1**, which is the most recent submission
   in the queue (a documentation-only patch on top of 0.7.0 fixing
   three manual issues: pre-rename title, ghost CJCCJ 2023 citation,

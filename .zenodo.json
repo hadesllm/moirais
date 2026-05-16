@@ -31,7 +31,7 @@
     "Python",
     "R"
   ],
-  "license": "GPL-2.0-only",
+  "license": "AGPL-3.0-or-later",
   "upload_type": "software",
   "access_right": "open",
   "language": "eng",
@@ -54,6 +54,6 @@
     "VanderWeele, T. J., & Ding, P. (2017). Sensitivity analysis in observational research: Introducing the E-value. Annals of Internal Medicine, 167(4), 268-274.",
     "Goffman, E. (1961). Asylums: Essays on the Social Situation of Mental Patients and Other Inmates. Anchor Books."
   ],
-  "notes": "MORIE is composed of distinct license tiers per memory: analytical modules MIT/Apache (clew MIT/Apache for adoption); MORIE itself follows GPL-2.0-only (Linus copyleft; see LICENSE); the Ontario SIU scraper is additionally subject to the Ontario open-government licence on the source corpus.",
-  "version": "0.2.0"
+  "notes": "MORIE is licensed AGPL-3.0-or-later (strong copyleft; see LICENSE). The optional Linux-kernel adjuncts under kernel-module/ and daemon/ are GPL-2.0-only (kernel ABI requirement). The Ontario SIU scraper is additionally subject to the Ontario open-government licence on the source corpus.",
+  "version": "0.7.4"
 }

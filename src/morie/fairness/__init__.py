@@ -39,6 +39,7 @@ from .predpol import (
     predpol_calibration_audit,
     predpol_score_disparity,
 )
+from .simulation import noisy_or_detection, simulate_biased_crime_data
 from .temporal import predpol_temporal_audit
 
 __all__ = [
@@ -54,6 +55,9 @@ __all__ = [
     "predpol_aggregate_areas",
     "predpol_score_disparity",
     "predpol_temporal_audit",
+    # simulation primitives
+    "noisy_or_detection",
+    "simulate_biased_crime_data",
     # city-agnostic data layer
     "CityProfile",
     "register_city",

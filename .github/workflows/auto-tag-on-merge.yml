@@ -33,6 +33,7 @@ on:
 
 permissions:
   contents: write   # needed to push tags
+  actions: write    # needed to dispatch the publish workflows (chain-fire)
 
 jobs:
   tag:

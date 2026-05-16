@@ -1484,3 +1484,134 @@ class DatasetRegistry:
             else:
                 validate_cpads_frame(frame, strict=True)
         return frame
+
+
+def check_datasets(
+    *,
+    probe_remote: bool = False,
+    db_path: "str | Path | None" = None,
+    timeout: int = 15,
+):
+    """Audit the availability of every catalogued dataset.
+
+    Classifies each entry in :data:`DATASET_CATALOG` by where it loads
+    from:
+
+    * ``bundled`` -- shipped in the built-in morie database.
+    * ``cached``  -- present in the user cache.
+    * ``local``   -- a local file exists at ``local_path``.
+    * ``remote``  -- not available locally, but a CKAN resource id or a
+      fetcher is registered, so it can be fetched on demand.
+    * ``MISSING`` -- no working source; the entry needs attention (a
+      missing file together with an empty ``ckan_resource_id`` and no
+      fetcher).
+
+    With ``probe_remote=True`` every ``remote`` dataset is actually
+    fetched once, to confirm the link is still live (``remote-ok``) or
+    not (``remote-dead``).
+
+    Returns
+    -------
+    RichResult
+        A per-dataset table and per-tier counts; the headline value is
+        the number of datasets that load with no attention needed.
+    """
+    from morie.fn._richresult import RichResult
+
+    builtin = _builtin_db_connect()
+    builtin_tables: set = set()
+    if builtin is not None:
+        try:
+            builtin_tables = {
+                r[0] for r in builtin.execute(
+                    "SELECT name FROM sqlite_master WHERE type='table'"
+                ).fetchall()
+            }
+        finally:
+            builtin.close()
+
+    rows: list = []
+    tiers: dict = {}
+    warnings: list = []
+
+    for key, entry in DATASET_CATALOG.items():
+        table = entry.get("table_name", key)
+        detail = ""
+
+        # Each availability probe is wrapped: a checker must never crash,
+        # even if the cache path or project root is misconfigured.
+        in_builtin = table in builtin_tables
+        in_cache = False
+        if not in_builtin:
+            try:
+                in_cache = cache_load(table, db_path) is not None
+            except Exception:  # noqa: BLE001
+                in_cache = False
+        has_local = False
+        if not in_builtin and not in_cache:
+            try:
+                lp = Path(entry.get("local_path", "") or "")
+                if str(lp) and not lp.is_absolute():
+                    lp = _project_root() / lp
+                has_local = bool(entry.get("local_path")) and lp.exists()
+            except Exception:  # noqa: BLE001
+                has_local = False
+        has_remote = bool(entry.get("fetcher") or entry.get("ckan_resource_id"))
+
+        if in_builtin:
+            tier = "bundled"
+        elif in_cache:
+            tier = "cached"
+        elif has_local:
+            tier = "local"
+        elif has_remote:
+            tier = "remote"
+        else:
+            tier = "MISSING"
+            detail = "no built-in table, no local file, no CKAN id / fetcher"
+
+        if tier == "remote" and probe_remote:
+            try:
+                df = load_dataset(key, db_path=db_path, timeout=timeout)
+                tier, detail = "remote-ok", f"{len(df)} rows fetched"
+            except Exception as exc:  # noqa: BLE001
+                tier = "remote-dead"
+                detail = str(exc).splitlines()[0][:90]
+
+        tiers[tier] = tiers.get(tier, 0) + 1
+        if tier in ("MISSING", "remote-dead"):
+            warnings.append(f"{key} ({entry.get('name', key)}): {tier} — {detail}")
+        link = (entry.get("ckan_resource_id")
+                or ("fetcher:" + entry["fetcher"] if entry.get("fetcher")
+                    else entry.get("local_path", "")))
+        rows.append([key, str(entry.get("name", ""))[:36], tier,
+                     str(link)[:42]])
+
+    ok = sum(tiers.get(t, 0) for t in ("bundled", "cached", "local",
+                                       "remote", "remote-ok"))
+    needs = tiers.get("MISSING", 0) + tiers.get("remote-dead", 0)
+    interp = (
+        f"{ok} of {len(DATASET_CATALOG)} catalogued datasets have a "
+        f"working source"
+        + (f"; {needs} need attention (see warnings)."
+           if needs else " — every catalogued dataset is reachable.")
+    )
+    return RichResult(
+        title="morie Dataset Availability Audit",
+        summary_lines=[
+            ("Catalogued datasets", len(DATASET_CATALOG)),
+            ("Reachable", ok),
+            ("Need attention", needs),
+            ("Remote probed", probe_remote),
+        ],
+        tables=[{
+            "title": "Per-dataset availability:",
+            "headers": ["key", "name", "tier", "link / source"],
+            "rows": rows,
+        }],
+        warnings=warnings,
+        interpretation=interp,
+        payload={"value": ok, "tiers": tiers,
+                 "n_catalog": len(DATASET_CATALOG),
+                 "needs_attention": needs},
+    )

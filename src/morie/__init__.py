@@ -52,6 +52,7 @@ _LAZY_EXPORTS = {
     'calculate_ebac': 'ebac',
     'calculate_ipw_weights': 'causal',
     'canonicalize_cpads_frame': 'cpads',
+    'check_datasets': 'data',
     'check_plugin_license': '_license_check',
     'cluster_sample': 'sampling',
     'compare_nested_logistic_models': 'investigation',
@@ -364,6 +365,7 @@ __all__ = [
     "mrm_tps_kulldorff_scan",
     "ScanCluster",
     "GPL_COMPATIBLE_LICENSES",
+    "check_datasets",
     "check_plugin_license",
     "morie_license_metadata",
 

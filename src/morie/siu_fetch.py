@@ -31,6 +31,7 @@ from typing import Iterable, Optional
 __all__ = [
     "SIU_INDEX_URL",
     "fetch_siu_cases",
+    "fetch_siu_dataframe",
     "siu_cache_path",
 ]
 
@@ -186,3 +187,15 @@ def fetch_siu_cases(
     if progress:
         print(f"[siu] wrote {len(records)} cases to {out_path}")
     return out_path
+
+
+def fetch_siu_dataframe(**kwargs):
+    """Scrape SIU Director's Reports and return them as a DataFrame.
+
+    Thin wrapper over :func:`fetch_siu_cases` (which returns the CSV
+    path); used as a :data:`morie.data.DATASET_CATALOG` ``fetcher``,
+    whose dispatch expects a DataFrame.
+    """
+    import pandas as pd
+
+    return pd.read_csv(fetch_siu_cases(**kwargs), low_memory=False)

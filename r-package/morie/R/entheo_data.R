@@ -11,8 +11,8 @@
 #' @param subject_id integer or character (zero-padded 2-digit).
 #'   \code{NULL} means "all available subjects on disk".
 #' @param root character.  Override path to the DMT_Imaging mirror.
-#'   Defaults to \code{$MORIE_DMT_IMAGING_ROOT} or
-#'   \code{/Volumes/VSR/rootcoderfiles/DMT_Imaging}.
+#'   Defaults to \code{$MORIE_DMT_IMAGING_ROOT}, else a
+#'   \code{DMT_Imaging} folder in the per-user cache directory.
 #' @return Named list with components:
 #' \itemize{
 #'   \item \code{records}   list of subject records (eeg, fmri, behavioural).
@@ -25,8 +25,10 @@
 #'   experience assessed with multivariate EEG. Scientific Reports.
 #' @keywords internal
 load_dmt_imaging <- function(subject_id = NULL, root = NULL) {
-  default_root <- Sys.getenv("MORIE_DMT_IMAGING_ROOT",
-                             "/Volumes/VSR/rootcoderfiles/DMT_Imaging")
+  default_root <- Sys.getenv("MORIE_DMT_IMAGING_ROOT", "")
+  if (!nzchar(default_root)) {
+    default_root <- file.path(morie_cache_dir(), "DMT_Imaging")
+  }
   if (is.null(root)) root <- default_root
   root_exists <- dir.exists(root)
   warnings_vec <- character(0)

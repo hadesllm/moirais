@@ -33,14 +33,37 @@ from .cpads import (
 logger = logging.getLogger(__name__)
 
 DEFAULT_CKAN_API_BASE = "https://open.canada.ca/data/en/api/3/action/datastore_search"
-DEFAULT_CACHE_DB = "data/cache/morie.db"
+DEFAULT_CACHE_DB = "morie.db"
+
+
+def _user_cache_dir() -> Path:
+    """Per-user cache directory for morie, portable across machines.
+
+    Honours ``XDG_CACHE_HOME``; otherwise ``~/.cache/morie``. The
+    SQLite cache and on-demand fetched datasets live here -- it is
+    always user-writable and never depends on the install location.
+    """
+    base = os.environ.get("XDG_CACHE_HOME") or (Path.home() / ".cache")
+    return Path(base).expanduser() / "morie"
 
 
 def _project_root() -> Path:
-    """Return the project root (dev/sphinx/project/)."""
-    # __file__ = libexec/config/tools/py-package/morie/data.py
-    # parents: [0]=morie [1]=py-package [2]=tools [3]=config [4]=libexec [5]=project
-    return Path(__file__).resolve().parents[5]
+    """Best-effort repository root for a source checkout.
+
+    Walks up from this file looking for a ``pyproject.toml`` marker.
+    When morie runs from a source checkout this finds the repo root
+    (used only to resolve the relative ``local_path`` of author-local
+    datasets). For an installed package there is no such root, so the
+    current working directory is returned as a neutral base.
+
+    The cache never relies on this -- see :func:`_user_cache_dir` --
+    so a wrong answer here cannot misplace user data.
+    """
+    here = Path(__file__).resolve()
+    for parent in here.parents:
+        if (parent / "pyproject.toml").is_file():
+            return parent
+    return Path.cwd()
 
 
 # ---------------------------------------------------------------------------
@@ -87,6 +110,23 @@ DATASET_CATALOG: dict[str, dict] = {
         "table_name": "ocp21",
         "ckan_resource_id": "d2639429-c304-45a6-90b3-770562f4d46d",
     },
+    # ── Statistics Canada direct-download PUMF ────────────────
+    "cchs22": {
+        "name": "CCHS 2022 PUMF (Canadian Community Health Survey)",
+        "source": "statcan",
+        "survey": "cchs",
+        "year": "2022",
+        "format": "fetcher",
+        "type": "pumf",
+        "large_file": True,
+        "local_path": "data/datasets/statcan/CCHS/2022/cchs-2022-pumf.csv",
+        "table_name": "cchs22",
+        "ckan_resource_id": "",
+        "fetcher": "morie.ingest.statcan:fetch_statcan_csv",
+        "fetcher_args": {
+            "url": "https://www150.statcan.gc.ca/n1/pub/82m0013x/2024001/2022_CSV.zip"
+        },
+    },
     "occ22": {
         "name": "CCS 2018-2022 PUMF",
         "source": "oc",
@@ -97,7 +137,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CCS/2018-2022/ccs_pumf_2018to2022_final.csv",
         "table_name": "occ22",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "262e6163-ba41-4562-bd2b-8996e738b1d4",
     },
     "occ23": {
         "name": "CCS 2023 PUMF",
@@ -109,7 +149,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CCS/2023/ccs_2023_pumf.csv",
         "table_name": "occ23",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "100c5845-664e-4c66-be15-3625ce236d8b",
     },
     "occ24": {
         "name": "CCS 2024 PUMF",
@@ -121,7 +161,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CCS/2024/ccs_pumf_2024-002.csv",
         "table_name": "occ24",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "420925be-399a-473b-8be3-26875a1c132a",
     },
     "ocs22mf": {
         "name": "CSADS 2021-2022 PUMF",
@@ -169,7 +209,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": True,
         "local_path": "data/datasets/oc/CSADS/2023-2024/csads202324bootstrap.csv",
         "table_name": "ocs24bt",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "58682536-1325-405a-83f0-7b1284b4f717",
     },
     "cu20mf": {
         "name": "CSUS 2019-2020 PUMF",
@@ -181,7 +221,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CSUS/2019-2020/CADS201920pumf.csv",
         "table_name": "cu20mf",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "0f4c0418-b9d1-4f89-a917-a660d20fd6d0",
     },
     "cu20bt": {
         "name": "CSUS 2019-2020 Bootstrap",
@@ -205,7 +245,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": False,
         "local_path": "data/datasets/oc/CSUS/2023/csus2023_pumf_final.csv",
         "table_name": "cu23mf",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "c2c1795b-4501-49ba-9dd1-5b8360cc3b2e",
     },
     "cu23bt": {
         "name": "CSUS 2023 Bootstrap",
@@ -217,7 +257,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "large_file": True,
         "local_path": "data/datasets/oc/CSUS/2023/csus2023_pumf_bwt.csv",
         "table_name": "cu23bt",
-        "ckan_resource_id": "",
+        "ckan_resource_id": "7d19d47a-5f42-4447-b735-aa4d677ad5ed",
     },
     # ── HealthInfobase (hib) aggregate ────────────────────────
     "hibp": {
@@ -413,6 +453,10 @@ DATASET_CATALOG: dict[str, dict] = {
         "local_path": "data/datasets/cihi/820/820-hospital-stays-for-harm-caused-by-substance-use-data-table-en.xlsx",
         "table_name": "cihi820a",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/data-file/820-hospital-stays-for-harm-caused-by-substance-use-data-table-en.xlsx"
+        },
     },
     "cihi820b": {
         "name": "CIHI 820: Substance Use Breakdown 2024-2025",
@@ -428,6 +472,10 @@ DATASET_CATALOG: dict[str, dict] = {
         ),
         "table_name": "cihi820b",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/hospital-stays-harm-due-to-substance-use-breakdown-2024-2025-data-tables-en.xlsx"
+        },
     },
     "cihi849": {
         "name": "CIHI 849: Alcohol Use Harm",
@@ -440,6 +488,10 @@ DATASET_CATALOG: dict[str, dict] = {
         "local_path": "data/datasets/cihi/849/849-hospital-stays-for-harm-caused-by-alcohol-use-data-table-en.xlsx",
         "table_name": "cihi849",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/data-file/849-hospital-stays-for-harm-caused-by-alcohol-use-data-table-en.xlsx"
+        },
     },
     "cihi885a": {
         "name": "CIHI 885: Youth Services",
@@ -456,6 +508,10 @@ DATASET_CATALOG: dict[str, dict] = {
         ),
         "table_name": "cihi885a",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/data-file/885-youth-age-12-to-25-who-accessed-integrated-youth-services-for-mental-health-substance-use-and-well-being-support-data-table-en.xlsx"
+        },
     },
     "cihi885b": {
         "name": "CIHI 885: Youth Sites 2024-2025",
@@ -471,6 +527,10 @@ DATASET_CATALOG: dict[str, dict] = {
         ),
         "table_name": "cihi885b",
         "ckan_resource_id": "",
+        "fetcher": "morie.ingest.cihi:fetch_cihi_xlsx",
+        "fetcher_args": {
+            "url": "https://www.cihi.ca/sites/default/files/document/integrated-youth-services-sites-2024-2025-data-tables-en.xlsx"
+        },
     },
     # ── VSR Research Data ─────────────────────────────────────
     "mapq": {
@@ -590,6 +650,7 @@ DATASET_CATALOG: dict[str, dict] = {
         "local_path": "data/datasets/vsr/SIU.csv",
         "table_name": "siu",
         "ckan_resource_id": "",
+        "fetcher": "morie.siu_fetch:fetch_siu_dataframe",
     },
     # ── TPS per-category open-data events (used by morie.mrm_tps_*) ──
     "tpsassault": {
@@ -603,6 +664,8 @@ DATASET_CATALOG: dict[str, dict] = {
         "local_path": "data/datasets/TPS/Assault/CSV",
         "table_name": "tpsassault",
         "ckan_resource_id": "",
+        "fetcher": "morie.tps_fetch:fetch_tps_dataframe",
+        "fetcher_args": {"category": "Assault"},
     },
     "tpshomicides": {
         "name": "TPS Homicides open-data events 2014-present",
@@ -615,6 +678,8 @@ DATASET_CATALOG: dict[str, dict] = {
         "local_path": "data/datasets/TPS/Homicides/CSV",
         "table_name": "tpshomicides",
         "ckan_resource_id": "",
+        "fetcher": "morie.tps_fetch:fetch_tps_dataframe",
+        "fetcher_args": {"category": "Homicides"},
     },
     "tpsshootings": {
         "name": "TPS Shootings and Firearm Discharges 2014-present",
@@ -627,6 +692,8 @@ DATASET_CATALOG: dict[str, dict] = {
         "local_path": "data/datasets/TPS/ShootingAndFirearmDiscarges/CSV",
         "table_name": "tpsshootings",
         "ckan_resource_id": "",
+        "fetcher": "morie.tps_fetch:fetch_tps_dataframe",
+        "fetcher_args": {"category": "ShootingAndFirearmDiscarges"},
     },
     # ── NAPS (Environment Canada National Air Pollution Surveillance) ─────
     # Fetched on demand via morie.earth.fetch_naps (no auth; Open-Canada CKAN).
@@ -916,8 +983,8 @@ def morie_db() -> Path:
     package_db = Path(__file__).parent / "data" / "morie.db"
     if package_db.exists():
         return package_db
-    # 2. Project cache location (development only, gitignored)
-    return _project_root() / "data" / "cache" / "morie.db"
+    # 2. Per-user cache location (portable; created on first write)
+    return _user_cache_dir() / "morie.db"
 
 
 def _builtin_db_connect() -> sqlite3.Connection | None:
@@ -936,10 +1003,21 @@ def _builtin_db_connect() -> sqlite3.Connection | None:
 
 
 def _resolve_cache_path(db_path: str | Path | None = None) -> Path:
-    """Resolve the cache database path, creating parent dirs as needed."""
-    p = Path(db_path or os.environ.get("MORIE_CACHE_DB", DEFAULT_CACHE_DB))
-    if not p.is_absolute():
-        p = _project_root() / p
+    """Resolve the cache database path, creating parent dirs as needed.
+
+    Resolution order: an explicit ``db_path`` argument, else the
+    ``MORIE_CACHE_DB`` environment variable, else ``morie.db`` in the
+    per-user cache directory. A relative path is taken relative to the
+    per-user cache directory (:func:`_user_cache_dir`) -- never to the
+    install location -- so the cache works on any machine.
+    """
+    explicit = db_path if db_path is not None else os.environ.get("MORIE_CACHE_DB")
+    if explicit:
+        p = Path(explicit).expanduser()
+        if not p.is_absolute():
+            p = _user_cache_dir() / p
+    else:
+        p = _user_cache_dir() / DEFAULT_CACHE_DB
     p.parent.mkdir(parents=True, exist_ok=True)
     return p
 
@@ -1195,8 +1273,13 @@ def load_dataset(
         finally:
             builtin.close()
 
-    # 2. User cache.
-    cached = cache_load(table_name, db_path)
+    # 2. User cache. A misconfigured or unwritable cache path must not
+    #    crash the load -- skip the cache tier and carry on.
+    try:
+        cached = cache_load(table_name, db_path)
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("Cache tier skipped for %s: %s", matched, exc)
+        cached = None
     if cached is not None:
         logger.info("Loaded %s from cache (%d rows)", matched, len(cached))
         return cached
@@ -1221,7 +1304,10 @@ def load_dataset(
         logger.info("Fetching %s via %s(**%s) ...", matched, fetcher_spec, args)
         df = fetcher_fn(**args)
         if df is not None and len(df):
-            cache_store(df, table_name, db_path)
+            try:
+                cache_store(df, table_name, db_path)
+            except Exception as exc:  # noqa: BLE001
+                logger.warning("Could not cache %s: %s", matched, exc)
         return df
 
     # 3. Local file.
@@ -1236,7 +1322,10 @@ def load_dataset(
             df = pd.read_excel(local_path)
         else:
             raise NotImplementedError(f"Format {entry['format']} not supported for on-the-fly ingest")
-        cache_store(df, table_name, db_path)
+        try:
+            cache_store(df, table_name, db_path)
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("Could not cache %s: %s", matched, exc)
         return df
 
     # 4. CKAN API.
@@ -1246,8 +1335,8 @@ def load_dataset(
         return fetch_ckan_to_cache(matched, db_path=db_path, timeout=timeout)
 
     raise FileNotFoundError(
-        f"Dataset {matched!r} not found in cache, at {entry['local_path']}, "
-        f"or via CKAN. Run: python libexec/config/tests/rtests/ingest_datasets.py --only {matched}"
+        f"Dataset {matched!r} could not be loaded.\n"
+        + dataset_recommendation(matched, entry)
     )
 
 
@@ -1484,3 +1573,196 @@ class DatasetRegistry:
             else:
                 validate_cpads_frame(frame, strict=True)
         return frame
+
+
+def dataset_recommendation(key: str, entry: "dict | None" = None) -> str:
+    """Human-readable guidance on how to obtain a catalogued dataset.
+
+    Surfaced in :func:`load_dataset` errors and :func:`check_datasets`
+    output, so a user who hits an unavailable dataset is told where it
+    comes from and what to do -- morie ships code, not the data, but it
+    can always point at the source.
+
+    Parameters
+    ----------
+    key : str
+        Catalogue key (e.g. ``"cchs22"``, ``"siu"``).
+    entry : dict, optional
+        The catalogue entry; looked up from :data:`DATASET_CATALOG`
+        when omitted.
+
+    Returns
+    -------
+    str
+        A multi-line recommendation.
+    """
+    entry = entry if entry is not None else DATASET_CATALOG.get(key, {})
+    if not entry:
+        return (f"Dataset {key!r} is not in the morie catalogue. "
+                f"Run morie.check_datasets() to list catalogued datasets.")
+
+    name = entry.get("name", key)
+    src = entry.get("source", "?")
+    local_path = entry.get("local_path", "")
+    rid = entry.get("ckan_resource_id")
+    fetcher = entry.get("fetcher")
+    lines = [f"How to obtain {key!r} -- {name} (source: {src}):"]
+
+    if rid:
+        lines.append(
+            "  Published on the Open Government portal. morie fetches it "
+            "automatically when online; if you are seeing this, the portal "
+            "was unreachable -- retry when connected.")
+        lines.append(
+            "  CKAN datastore API: https://open.canada.ca/data/api/3/"
+            f"action/datastore_search?resource_id={rid}&limit=5")
+    elif fetcher:
+        lines.append(
+            f"  Fetched on demand via {fetcher}. morie downloads it "
+            "automatically when online; if you are seeing this, the remote "
+            "source was unreachable -- retry when connected.")
+    else:
+        lines.append(
+            "  morie has no public remote source for this dataset -- it is "
+            "your own or otherwise restricted data, not redistributed by "
+            "morie.")
+        if local_path:
+            lines.append(f"  Place the data file at: {local_path}")
+    return "\n".join(lines)
+
+
+def check_datasets(
+    *,
+    probe_remote: bool = False,
+    db_path: "str | Path | None" = None,
+    timeout: int = 15,
+):
+    """Audit the availability of every catalogued dataset.
+
+    Classifies each entry in :data:`DATASET_CATALOG` by where it loads
+    from:
+
+    * ``bundled`` -- shipped in the built-in morie database.
+    * ``cached``  -- present in the user cache.
+    * ``local``   -- a local file exists at ``local_path``.
+    * ``remote``  -- not available locally, but a CKAN resource id or a
+      fetcher is registered, so it can be fetched on demand.
+    * ``MISSING`` -- no working source; the entry needs attention (a
+      missing file together with an empty ``ckan_resource_id`` and no
+      fetcher).
+
+    With ``probe_remote=True`` every ``remote`` dataset is actually
+    fetched once, to confirm the link is still live (``remote-ok``) or
+    not (``remote-dead``).
+
+    Returns
+    -------
+    RichResult
+        A per-dataset table and per-tier counts; the headline value is
+        the number of datasets that load with no attention needed.
+    """
+    from morie.fn._richresult import RichResult
+
+    builtin = _builtin_db_connect()
+    builtin_tables: set = set()
+    if builtin is not None:
+        try:
+            builtin_tables = {
+                r[0] for r in builtin.execute(
+                    "SELECT name FROM sqlite_master WHERE type='table'"
+                ).fetchall()
+            }
+        finally:
+            builtin.close()
+
+    rows: list = []
+    tiers: dict = {}
+    warnings: list = []
+    missing: list = []
+    recommendations: dict = {}
+
+    for key, entry in DATASET_CATALOG.items():
+        table = entry.get("table_name", key)
+        detail = ""
+
+        # Each availability probe is wrapped: a checker must never crash,
+        # even if the cache path or project root is misconfigured.
+        in_builtin = table in builtin_tables
+        in_cache = False
+        if not in_builtin:
+            try:
+                in_cache = cache_load(table, db_path) is not None
+            except Exception:  # noqa: BLE001
+                in_cache = False
+        has_local = False
+        if not in_builtin and not in_cache:
+            try:
+                lp = Path(entry.get("local_path", "") or "")
+                if str(lp) and not lp.is_absolute():
+                    lp = _project_root() / lp
+                has_local = bool(entry.get("local_path")) and lp.exists()
+            except Exception:  # noqa: BLE001
+                has_local = False
+        has_remote = bool(entry.get("fetcher") or entry.get("ckan_resource_id"))
+
+        if in_builtin:
+            tier = "bundled"
+        elif in_cache:
+            tier = "cached"
+        elif has_local:
+            tier = "local"
+        elif has_remote:
+            tier = "remote"
+        else:
+            tier = "MISSING"
+            detail = "no built-in table, no local file, no CKAN id / fetcher"
+
+        if tier == "remote" and probe_remote:
+            try:
+                df = load_dataset(key, db_path=db_path, timeout=timeout)
+                tier, detail = "remote-ok", f"{len(df)} rows fetched"
+            except Exception as exc:  # noqa: BLE001
+                tier = "remote-dead"
+                detail = str(exc).splitlines()[0][:90]
+
+        tiers[tier] = tiers.get(tier, 0) + 1
+        if tier in ("MISSING", "remote-dead"):
+            warnings.append(f"{key} ({entry.get('name', key)}): {tier} — {detail}")
+            missing.append(key)
+            recommendations[key] = dataset_recommendation(key, entry)
+        link = (entry.get("ckan_resource_id")
+                or ("fetcher:" + entry["fetcher"] if entry.get("fetcher")
+                    else entry.get("local_path", "")))
+        rows.append([key, str(entry.get("name", ""))[:36], tier,
+                     str(link)[:42]])
+
+    ok = sum(tiers.get(t, 0) for t in ("bundled", "cached", "local",
+                                       "remote", "remote-ok"))
+    needs = tiers.get("MISSING", 0) + tiers.get("remote-dead", 0)
+    interp = (
+        f"{ok} of {len(DATASET_CATALOG)} catalogued datasets have a "
+        f"working source"
+        + (f"; {needs} need attention (see warnings)."
+           if needs else " — every catalogued dataset is reachable.")
+    )
+    return RichResult(
+        title="morie Dataset Availability Audit",
+        summary_lines=[
+            ("Catalogued datasets", len(DATASET_CATALOG)),
+            ("Reachable", ok),
+            ("Need attention", needs),
+            ("Remote probed", probe_remote),
+        ],
+        tables=[{
+            "title": "Per-dataset availability:",
+            "headers": ["key", "name", "tier", "link / source"],
+            "rows": rows,
+        }],
+        warnings=warnings,
+        interpretation=interp,
+        payload={"value": ok, "tiers": tiers,
+                 "n_catalog": len(DATASET_CATALOG),
+                 "needs_attention": needs,
+                 "missing": missing,
+                 "recommendations": recommendations},
+    )

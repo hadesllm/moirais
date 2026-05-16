@@ -24,9 +24,10 @@ Resolution order:
 }
 }
 \examples{
-\donttest{
-  # Prefers local + cache; falls back to CKAN only when use_ckan = TRUE.
-  cpads <- morie_load_cpads(use_ckan = FALSE)
+\dontrun{
+  # Needs the CPADS PUMF (local file, cache, or a live CKAN fetch),
+  # so it cannot run inside an offline R CMD check.
+  cpads <- morie_load_cpads(use_ckan = TRUE)
   if (!is.null(cpads)) head(cpads)
 }
 }

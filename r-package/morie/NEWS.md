@@ -1,3 +1,49 @@
+# morie 0.9.0 — 2026-05-16
+
+New: dataset availability auditing, more open-data sources, and
+in-place self-update.
+
+* **`check_datasets()` dataset auditor** — probes every entry in the
+  dataset catalogue and reports which datasets are reachable and which
+  need attention, classified by tier.
+* **Statistics Canada ingest** — `morie.ingest.statcan` adds the
+  Canadian Community Health Survey 2022 PUMF (StatCan 82M0013X) as the
+  `cchs22` dataset, fetched on demand from the StatCan product page.
+* **CIHI ingest** — `morie.ingest.cihi` adds five Canadian Institute
+  for Health Information indicator data tables (hospital stays for harm
+  caused by substance and alcohol use; youth integrated-youth-services
+  access), fetched on demand from cihi.ca.
+* **16 datasets wired to verified sources** — the Canadian Cannabis,
+  Substance Use, Alcohol-and-Drugs, and Student survey PUMFs received
+  verified open.canada.ca CKAN resource ids; the Toronto Police
+  assault/homicide/shooting datasets and the Ontario SIU case data are
+  now fetched through their existing scrapers. The catalogue went from
+  33 to 49 reachable datasets.
+* **New-version notification** — `import morie` performs a fail-silent,
+  daily-cached check against PyPI and prints a one-line notice when a
+  newer release exists. Opt out with `MORIE_NO_UPDATE_CHECK`.
+  (Python interface.)
+* **`morie update` command** — checks PyPI and, with confirmation,
+  upgrades morie in place. (Python interface.)
+* **CRAN fix** — the `morie_load_cpads` example is now wrapped in
+  `\dontrun{}`, so `R CMD check --as-cran` no longer errors on the
+  offline check farm.
+* **Portable cache path** — the SQLite cache and on-demand fetched
+  datasets now live in a per-user directory (`~/.cache/morie`, or
+  `$XDG_CACHE_HOME`). A stale path calculation previously placed them
+  outside any writable location; `MORIE_CACHE_DB` still overrides.
+  Fixed identically on the R side, so the shared cache works.
+* **`morie doctor --fix`** — the diagnostics command can now remediate
+  failed checks: install missing Python packages, create the cache
+  directory, and warn when a newer release is available. Plain
+  `morie doctor` stays diagnostic-only. (Python interface.)
+* **Missing-dataset recommendations** — when a dataset cannot be
+  loaded, `load_dataset()` and `check_datasets()` now explain where it
+  comes from — the CKAN portal, an on-demand fetcher, or the local
+  path to place the file — via the new `dataset_recommendation()`
+  helper.
+
+
 # morie 0.8.0 — 2026-05-16
 
 New: the fairness & disparity-audit subsystem (`morie.fairness`).

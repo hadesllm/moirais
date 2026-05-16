@@ -131,6 +131,28 @@ def _check_docker() -> tuple[bool, str]:
         return False, "docker found but not running (optional)"
 
 
+def _check_morie_version() -> tuple[bool, str]:
+    """Check whether a newer morie release is available on PyPI.
+
+    Uses the daily-cached result from the import-time update check, so
+    this never makes a network call itself.
+    """
+    try:
+        import morie
+
+        from ._update_check import _parse_version, _read_cache
+
+        installed = getattr(morie, "__version__", "0.0.0+unknown")
+        latest = _read_cache().get("latest")
+        if not latest:
+            return True, f"{installed} (latest not yet checked)"
+        if _parse_version(latest) > _parse_version(installed):
+            return False, f"{installed} -- {latest} available; run `morie update`"
+        return True, f"{installed} (up to date)"
+    except Exception as exc:  # noqa: BLE001
+        return True, f"version check unavailable ({exc})"
+
+
 # ---------------------------------------------------------------------------
 # Master check list
 # ---------------------------------------------------------------------------
@@ -160,6 +182,10 @@ def run_checks() -> dict[str, Any]:
     # Python
     ok, detail = _check_python_version()
     _add("Python version", ok, detail, required=True)
+
+    # morie itself -- newer release available?
+    ok, detail = _check_morie_version()
+    _add("morie version", ok, detail, required=False)
 
     # Required Python packages
     for pkg in _REQUIRED_IMPORTS:
@@ -258,24 +284,17 @@ def _render_rich(results: dict[str, Any]) -> None:
 # ---------------------------------------------------------------------------
 
 
-def run_doctor() -> int:
-    """Run diagnostics and print a summary table.
+# import-name -> pip-install-name, where the two differ
+_PIP_NAME = {"sklearn": "scikit-learn"}
 
-    Returns
-    -------
-    int
-        ``0`` if all required checks pass, ``1`` otherwise.
 
-    Accessibility: respects ``NO_COLOR`` (https://no-color.org) and
-    falls back to the plain renderer when stdout isn't a TTY, so
-    screen readers and pipelines get a clean linear stream instead
-    of Rich's box-drawing characters.
+def _render(results: dict[str, Any]) -> None:
+    """Render the results table, picking rich or plain output.
+
+    Respects ``NO_COLOR`` (https://no-color.org) and falls back to the
+    plain renderer when stdout isn't a TTY, so screen readers and
+    pipelines get a clean linear stream instead of box-drawing.
     """
-    import os
-    import sys
-
-    results = run_checks()
-
     no_color = bool(os.environ.get("NO_COLOR"))
     not_tty = not sys.stdout.isatty()
     if no_color or not_tty:
@@ -285,5 +304,83 @@ def run_doctor() -> int:
             _render_rich(results)
         except ImportError:
             _render_plain(results)
+
+
+def _heal(results: dict[str, Any]) -> bool:
+    """Attempt to remediate failed checks (``morie doctor --fix``).
+
+    Auto-fixable: missing Python packages (``pip install``) and the
+    morie cache directory.  Everything else gets an actionable hint
+    rather than a silent failure.  Returns True if anything was fixed.
+    """
+    print()
+    print("Healing -- attempting to fix failed checks ...")
+
+    cache_dir = os.path.join(
+        os.environ.get("XDG_CACHE_HOME")
+        or os.path.join(os.path.expanduser("~"), ".cache"),
+        "morie")
+    try:
+        os.makedirs(cache_dir, exist_ok=True)
+        print(f"  [ok]   cache directory ready: {cache_dir}")
+    except OSError as exc:
+        print(f"  [fail] could not create {cache_dir}: {exc}")
+
+    fixed_any = False
+    for check in results["checks"]:
+        if check["passed"]:
+            continue
+        label = check["label"]
+        if label.startswith("import "):
+            pkg = label[len("import "):]
+            pip_name = _PIP_NAME.get(pkg, pkg)
+            print(f"  ...    installing {pip_name} via pip ...")
+            rc = subprocess.run(
+                [sys.executable, "-m", "pip", "install", pip_name]
+            ).returncode
+            print(f"  [{'ok' if rc == 0 else 'fail'}]   pip install {pip_name}")
+            fixed_any = fixed_any or rc == 0
+        elif label == "morie version":
+            print("  [hint] run `morie update` to upgrade morie itself.")
+        elif label == "Built-in datasets":
+            print("  [hint] reinstall to restore the built-in DB: "
+                  "pip install --force-reinstall morie")
+        elif label == "R (Rscript)":
+            print("  [hint] install R from https://www.r-project.org/ "
+                  "(optional -- only the R bridge needs it).")
+        else:
+            print(f"  [hint] {label}: optional component -- configure it "
+                  "only if you need that feature.")
+
+    if fixed_any:
+        importlib.invalidate_caches()
+    return fixed_any
+
+
+def run_doctor(fix: bool = False) -> int:
+    """Run diagnostics and print a summary table.
+
+    Parameters
+    ----------
+    fix : bool
+        When True (``morie doctor --fix``), attempt to remediate failed
+        checks -- install missing Python packages, create the cache
+        directory -- then re-run and re-render the diagnostics.
+
+    Returns
+    -------
+    int
+        ``0`` if all required checks pass, ``1`` otherwise.
+    """
+    results = run_checks()
+    _render(results)
+
+    if fix:
+        healed = _heal(results)
+        if healed:
+            print()
+            print("Re-running diagnostics after fixes ...")
+        results = run_checks()
+        _render(results)
 
     return 0 if results["all_required_passed"] else 1

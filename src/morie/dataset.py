@@ -657,7 +657,22 @@ def load_dataset(
     """
     path = Path(path)
     if not path.exists():
-        raise FileNotFoundError(f"Dataset file not found: {path}")
+        msg = f"Dataset file not found: {path}"
+        # If the argument is actually a morie catalogue key, the user
+        # likely wants the catalogue loader -- point them there and at
+        # the dataset's source rather than failing opaquely.
+        try:
+            from .data import DATASET_CATALOG, dataset_recommendation
+
+            key = str(path)
+            if key in DATASET_CATALOG:
+                msg += (
+                    f"\n\n{key!r} is a morie catalogue dataset, not a file "
+                    f"path. Load it with morie.data.load_dataset({key!r}).\n"
+                    + dataset_recommendation(key))
+        except Exception:  # noqa: BLE001
+            pass
+        raise FileNotFoundError(msg)
 
     suffix = path.suffix.lower()
     logger.info("Loading dataset from %s (format: %s)", path, suffix)

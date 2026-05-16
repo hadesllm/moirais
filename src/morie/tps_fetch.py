@@ -22,7 +22,8 @@ from pathlib import Path
 from typing import Iterable, Optional
 
 
-__all__ = ["TPS_LAYER_URLS", "fetch_tps_category", "list_tps_categories"]
+__all__ = ["TPS_LAYER_URLS", "fetch_tps_category", "fetch_tps_dataframe",
+           "list_tps_categories"]
 
 
 # Per-category ArcGIS REST FeatureServer layer URLs (layer 0 by convention).
@@ -138,3 +139,15 @@ def fetch_tps_category(
         for r in rows:
             w.writerow(r)
     return out_path
+
+
+def fetch_tps_dataframe(category: str, **kwargs):
+    """Fetch a TPS category and return it as a DataFrame.
+
+    Thin wrapper over :func:`fetch_tps_category` (which returns the CSV
+    path); used as a :data:`morie.data.DATASET_CATALOG` ``fetcher``,
+    whose dispatch expects a DataFrame.
+    """
+    import pandas as pd
+
+    return pd.read_csv(fetch_tps_category(category, **kwargs), low_memory=False)

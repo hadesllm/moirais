@@ -52,6 +52,8 @@ _LAZY_EXPORTS = {
     'calculate_ebac': 'ebac',
     'calculate_ipw_weights': 'causal',
     'canonicalize_cpads_frame': 'cpads',
+    'check_datasets': 'data',
+    'dataset_recommendation': 'data',
     'check_plugin_license': '_license_check',
     'cluster_sample': 'sampling',
     'compare_nested_logistic_models': 'investigation',
@@ -364,6 +366,8 @@ __all__ = [
     "mrm_tps_kulldorff_scan",
     "ScanCluster",
     "GPL_COMPATIBLE_LICENSES",
+    "check_datasets",
+    "dataset_recommendation",
     "check_plugin_license",
     "morie_license_metadata",
 
@@ -373,3 +377,16 @@ __all__ = [
     "validation",
     "export",
 ]
+
+
+# Fail-silent, daily-cached check for a newer morie release on PyPI.
+# The import hot path only reads a small cache file; any network
+# request runs in a background daemon thread.  This is how an existing
+# user on an older version is told a new one exists.  Opt out with the
+# MORIE_NO_UPDATE_CHECK environment variable.
+try:
+    from ._update_check import maybe_notify as _maybe_notify
+    _maybe_notify(__version__)
+    del _maybe_notify
+except Exception:
+    pass

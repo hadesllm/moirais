@@ -1,14 +1,24 @@
 # database.R -- DBI/RSQLite data layer for MORIE
 #
 # Built-in database: inst/extdata/morie.db ships with the package.
-# User cache: data/cache/morie.db for additional data or bootstrap weights.
+# User cache: morie.db under the per-user cache directory.
 # Both R (DBI/RSQLite) and Python (sqlite3) share the same SQLite files.
+
+# Per-user cache directory -- portable, always user-writable, and the
+# same location the Python package uses, so the SQLite cache is shared.
+# Honours XDG_CACHE_HOME; otherwise ~/.cache/morie.
+morie_cache_dir <- function() {
+  base <- Sys.getenv("XDG_CACHE_HOME", "")
+  if (!nzchar(base)) base <- file.path(path.expand("~"), ".cache")
+  file.path(base, "morie")
+}
 
 #' Get path to the built-in MORIE datasets database
 #'
-#' Returns the path to \code{morie.db} that ships with the package.
-#' This database contains all CPADS, CCS, CSADS, CSUS, HealthInfobase, and
-#' CIHI datasets pre-loaded as SQLite tables.
+#' Returns the path to \code{morie.db} that ships with the package
+#' (\code{inst/extdata/morie.db}). This database contains all CPADS,
+#' CCS, CSADS, CSUS, HealthInfobase, and CIHI datasets pre-loaded as
+#' SQLite tables.
 #'
 #' @return File path string.
 #' @examples
@@ -18,17 +28,22 @@
 #' }
 #' @export
 morie_builtin_db <- function() {
-  root <- find_project_root()
-  file.path(root, "data", "cache", "morie.db")
+  db <- system.file("extdata", "morie.db", package = "morie")
+  if (nzchar(db)) return(db)
+  # Source-checkout / dev fallback: the per-user cache copy.
+  file.path(morie_cache_dir(), "morie.db")
 }
 
 #' Connect to the MORIE SQLite cache database
 #'
-#' Opens (or creates) the shared cache at \code{data/cache/morie.db}.
-#' Both R (DBI/RSQLite) and Python (sqlite3) read/write this same file.
+#' Opens (or creates) the shared cache at \code{morie.db} in the
+#' per-user cache directory (\code{~/.cache/morie} or
+#' \code{XDG_CACHE_HOME}). Both R (DBI/RSQLite) and Python (sqlite3)
+#' read/write this same file.
 #'
-#' @param db_path Path to the SQLite file. Defaults to
-#'   \code{MORIE_CACHE_DB} env var or \code{data/cache/morie.db}.
+#' @param db_path Path to the SQLite file. Defaults to the
+#'   \code{MORIE_CACHE_DB} env var, else \code{morie.db} in the
+#'   per-user cache directory.
 #' @return A DBI connection object.
 #' @examples
 #' \donttest{
@@ -49,7 +64,10 @@ morie_db_connect <- function(db_path = NULL) {
          "  install.packages(c('DBI', 'RSQLite'))", call. = FALSE)
   }
   if (is.null(db_path)) {
-    db_path <- Sys.getenv("MORIE_CACHE_DB", "data/cache/morie.db")
+    db_path <- Sys.getenv("MORIE_CACHE_DB", "")
+    if (!nzchar(db_path)) {
+      db_path <- file.path(morie_cache_dir(), "morie.db")
+    }
   }
   dir.create(dirname(db_path), recursive = TRUE, showWarnings = FALSE)
   con <- DBI::dbConnect(RSQLite::SQLite(), dbname = db_path)
@@ -162,9 +180,10 @@ morie_cache_file <- function(path, table_name, db_path = NULL) {
 #'   attempt to fetch from the CKAN API.
 #' @return A data.frame with canonical CPADS columns.
 #' @examples
-#' \donttest{
-#'   # Prefers local + cache; falls back to CKAN only when use_ckan = TRUE.
-#'   cpads <- morie_load_cpads(use_ckan = FALSE)
+#' \dontrun{
+#'   # Needs the CPADS PUMF (local file, cache, or a live CKAN fetch),
+#'   # so it cannot run inside an offline R CMD check.
+#'   cpads <- morie_load_cpads(use_ckan = TRUE)
 #'   if (!is.null(cpads)) head(cpads)
 #' }
 #' @export

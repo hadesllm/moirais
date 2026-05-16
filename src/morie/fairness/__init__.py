@@ -41,6 +41,13 @@ from .predpol import (
 )
 from .simulation import noisy_or_detection, simulate_biased_crime_data
 from .temporal import predpol_temporal_audit
+from .xai import (
+    xai_ale,
+    xai_ceteris_paribus,
+    xai_partial_dependence,
+    xai_permutation_importance,
+    xai_shap_values,
+)
 
 __all__ = [
     # disparity metrics
@@ -60,6 +67,12 @@ __all__ = [
     "simulate_biased_crime_data",
     "SpatialGAN",
     "CTGANDebiaser",
+    # explainability (XAI) for bias discovery
+    "xai_permutation_importance",
+    "xai_partial_dependence",
+    "xai_ale",
+    "xai_ceteris_paribus",
+    "xai_shap_values",
     # city-agnostic data layer
     "CityProfile",
     "register_city",

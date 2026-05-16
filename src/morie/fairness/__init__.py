@@ -19,6 +19,13 @@ explainability (XAI) layer.
 """
 from __future__ import annotations
 
+from .cityprofile import (
+    CityProfile,
+    apply_profile,
+    get_city,
+    list_cities,
+    register_city,
+)
 from .metrics import (
     fairness_average_odds_difference,
     fairness_bias_amplification,
@@ -27,12 +34,23 @@ from .metrics import (
     fairness_equalized_odds,
     fairness_gini,
 )
+from .predpol import predpol_aggregate_areas, predpol_calibration_audit
 
 __all__ = [
+    # disparity metrics
     "fairness_disparate_impact",
     "fairness_demographic_parity",
     "fairness_equalized_odds",
     "fairness_average_odds_difference",
     "fairness_gini",
     "fairness_bias_amplification",
+    # predictive-policing calibration audit
+    "predpol_calibration_audit",
+    "predpol_aggregate_areas",
+    # city-agnostic data layer
+    "CityProfile",
+    "register_city",
+    "get_city",
+    "list_cities",
+    "apply_profile",
 ]

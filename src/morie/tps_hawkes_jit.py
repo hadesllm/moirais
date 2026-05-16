@@ -401,7 +401,8 @@ def has_jit_path(kernel: str, baseline: str) -> bool:
     if HAS_CORE and baseline == "constant" and kernel in (
             "exponential", "weibull", "lomax", "gamma"):
         return True
-    if HAS_CORE and baseline == "sinusoidal" and kernel == "exponential":
+    if HAS_CORE and baseline == "sinusoidal" and kernel in (
+            "exponential", "weibull"):
         return True
     return HAS_NUMBA and (kernel, baseline) in _SUPPORTED
 
@@ -451,18 +452,27 @@ def neg_loglik_jit(theta: np.ndarray, t: np.ndarray, T: float,
                 return 1e12
             return _core_ext.hawkes_ll_gamma_const(
                 t_c, float(T), a0, eta, alpha, beta)
-    if HAS_CORE and baseline == "sinusoidal" and kernel == "exponential":
+    if HAS_CORE and baseline == "sinusoidal" and kernel in (
+            "exponential", "weibull"):
         a0, a1, a2, a3 = (float(theta[0]), float(theta[1]),
                           float(theta[2]), float(theta[3]))
-        eta, beta = float(theta[4]), float(theta[5])
-        if eta <= 1e-6 or eta >= 0.999 or beta <= 1e-6:
-            return 1e12
+        eta = float(theta[4])
         grid, grid_vals = _sin_grid(T, a0, a1, a2, a3)
-        return _core_ext.hawkes_ll_exp_sin(
-            np.ascontiguousarray(t, dtype=np.float64), float(T),
-            a0, a1, a2, a3, eta, beta,
-            np.ascontiguousarray(grid, dtype=np.float64),
-            np.ascontiguousarray(grid_vals, dtype=np.float64))
+        t_c = np.ascontiguousarray(t, dtype=np.float64)
+        g_c = np.ascontiguousarray(grid, dtype=np.float64)
+        gv_c = np.ascontiguousarray(grid_vals, dtype=np.float64)
+        if kernel == "exponential":
+            beta = float(theta[5])
+            if eta <= 1e-6 or eta >= 0.999 or beta <= 1e-6:
+                return 1e12
+            return _core_ext.hawkes_ll_exp_sin(
+                t_c, float(T), a0, a1, a2, a3, eta, beta, g_c, gv_c)
+        if kernel == "weibull":
+            alpha, lam = float(theta[5]), float(theta[6])
+            if eta <= 1e-6 or eta >= 0.999 or alpha <= 1e-6 or lam <= 1e-6:
+                return 1e12
+            return _core_ext.hawkes_ll_weibull_sin(
+                t_c, float(T), a0, a1, a2, a3, eta, alpha, lam, g_c, gv_c)
     if not HAS_NUMBA:
         raise RuntimeError("neg_loglik_jit called without Numba available")
 

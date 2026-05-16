@@ -353,4 +353,59 @@ inline double hawkes_ll_exp_sin(const double *t, std::size_t n, double T,
     return -(log_sum - integral);
 }
 
+// Negative log-likelihood: Weibull triggering kernel, sinusoidal
+// baseline. Combines the O(n^2) Weibull inner sum with the trapezoid
+// baseline integral over the caller-supplied grid. Returns kBig when
+// infeasible.
+inline double hawkes_ll_weibull_sin(const double *t, std::size_t n, double T,
+                                    double a0, double a1, double a2, double a3,
+                                    double eta, double alpha, double lam,
+                                    const double *grid,
+                                    const double *grid_vals,
+                                    std::size_t n_grid) {
+    if (!(1e-6 < eta && eta < 0.999)) return kBig;
+    if (!(0.05 < alpha && alpha < 20.0)) return kBig;
+    if (!(1e-3 < lam && lam < 1e3)) return kBig;
+    if (!(-20.0 < a0 && a0 < 20.0)) return kBig;
+
+    const double two_pi_y = 2.0 * kPi / 365.25;
+    const double T_safe = (T > 1.0) ? T : 1.0;
+
+    double log_sum = 0.0;
+    for (std::size_t i = 0; i < n; ++i) {
+        const double nu_i = std::exp(a0 + a1 * (t[i] / T_safe) +
+                                     a2 * std::sin(two_pi_y * t[i]) +
+                                     a3 * std::cos(two_pi_y * t[i]));
+        double s = 0.0;
+        for (std::size_t j = 0; j < i; ++j) {
+            const double x = (t[i] - t[j]) / lam;
+            if (x > 1e-12) {
+                const double z = std::pow(x, alpha);
+                if (z < 700.0) {
+                    s += (alpha / lam) * std::pow(x, alpha - 1.0) *
+                         std::exp(-z);
+                }
+            }
+        }
+        const double lam_i = nu_i + eta * s;
+        if (!std::isfinite(lam_i) || lam_i <= 0.0) return kBig;
+        log_sum += std::log(lam_i);
+    }
+
+    double g_int = 0.0;
+    for (std::size_t k = 0; k + 1 < n_grid; ++k) {
+        g_int += 0.5 * (grid_vals[k] + grid_vals[k + 1]) *
+                 (grid[k + 1] - grid[k]);
+    }
+    double integral = g_int;
+    for (std::size_t i = 0; i < n; ++i) {
+        const double u = T - t[i];
+        if (u > 0.0) {
+            const double x = u / lam;
+            integral += eta * (1.0 - std::exp(-std::pow(x, alpha)));
+        }
+    }
+    return -(log_sum - integral);
+}
+
 }  // namespace morie::core

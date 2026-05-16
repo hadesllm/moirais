@@ -17,7 +17,9 @@ data whose ground-truth bias is known.
 import numpy as np
 import pytest
 
-from morie.fairness.gan import CTGANDebiaser
+# NOTE: morie.fairness.gan is NOT imported here — it needs the optional
+# `morie[sim]` extra (JAX). The one test that uses it imports it locally,
+# after a pytest.importorskip("jax"), so collection succeeds without JAX.
 from morie.fairness.metrics import (
     fairness_average_odds_difference,
     fairness_bias_amplification,
@@ -77,6 +79,7 @@ def test_biased_data_is_caught_by_all_metrics():
 
 def test_pipeline_debias_then_reaudit_improves_dir():
     pytest.importorskip("jax", reason="morie[sim] extra not installed")
+    from morie.fairness.gan import CTGANDebiaser
     df = simulate_biased_crime_data(n=4000, bias=0.6, base_rate=0.4,
                                     seed=12)
     before = float(fairness_disparate_impact(

@@ -219,8 +219,16 @@ def predpol_calibration_audit(
     outcome_rank = rankdata(-outcome_rate, method="average")
     rank_gap = outcome_rank - risk_rank  # >0 over-predicted, <0 under
 
-    rho, pval = spearmanr(mean_risk, outcome_rate)
-    rho = float(rho)
+    if np.ptp(mean_risk) == 0 or np.ptp(outcome_rate) == 0:
+        # spearmanr is undefined for a constant input and warns noisily
+        rho, pval = float("nan"), float("nan")
+        warnings.append(
+            "Spearman calibration correlation is undefined — predicted "
+            "risk or realised outcome is constant across all areas."
+        )
+    else:
+        rho, pval = spearmanr(mean_risk, outcome_rate)
+        rho, pval = float(rho), float(pval)
 
     per_group: dict[Any, float] = {}
     group_n: dict[Any, int] = {}
@@ -247,7 +255,10 @@ def predpol_calibration_audit(
         for gv in per_group
     ]
 
-    if rho >= 0.7:
+    if not np.isfinite(rho):
+        cal = ("Overall calibration could not be assessed — predicted "
+               "risk or realised outcome is constant across all areas.")
+    elif rho >= 0.7:
         cal = (f"Overall the ranking is well calibrated "
                f"(Spearman ρ = {rho:.2f}): predicted risk broadly tracks "
                f"realised outcomes.")

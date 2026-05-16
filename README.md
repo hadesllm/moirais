@@ -94,7 +94,7 @@ pip install morie
 docker run --rm ghcr.io/hadesllm/morie:latest morie --help
 
 # Pin to a specific version (recommended for reproducibility)
-docker run --rm ghcr.io/hadesllm/morie:0.7.4 morie --help
+docker run --rm ghcr.io/hadesllm/morie:0.8.0 morie --help
 ```
 
 Multi-arch image published on every release with both versioned and `:latest` tags. Requires only Docker — no Python, no pip.
@@ -128,6 +128,16 @@ from morie.otis_all_analyze import analyze_a01_mrm
 result = analyze_a01_mrm(df)
 print(result)
 ```
+
+## What's new in v0.8.0
+
+- **New: the fairness & disparity-audit subsystem (`morie.fairness`)** — a subsystem for *auditing* risk-assessment, recidivism, and predictive-policing systems for racial and other group disparities. morie measures whether an existing system encodes disparate treatment; it does not deploy one.
+- **Six group-fairness metrics** — disparate impact (the four-fifths rule), demographic parity gap, equalized odds, average odds difference, Gini, and the composite Bias Amplification Score (Python + R parity).
+- **Predictive-policing calibration audit** — rank areas by predicted risk vs. realised outcomes and test whether the disagreement tracks demographics; a city-agnostic `CityProfile` layer runs the audit for Chicago, New York, Toronto, or any registered city.
+- **Multi-city temporal audit** — the disparity metrics per `(city, period)`, surfacing temporal instability and cross-city divergence.
+- **Simulation framework** — a Noisy-OR detection model, a synthetic biased-data generator, a JAX spatial GAN, and a CTGAN-style debiaser (the optional `morie[sim]` extra — JAX, not PyTorch, to stay lean).
+- **Explainability (XAI) suite** — permutation importance, partial dependence, ALE, ceteris paribus, and SHAP — model-agnostic, and wired to flag when a model leans on a protected attribute.
+- Clean-room reimplementations from published methods (IBM AIF360; the SciencesPo *Predictive-policing-Chicago* project; Barman & Barman, arXiv:2603.18987; the COMPAS *XAI Stories* audit) — no third-party code copied.
 
 ## What's new in v0.7.4
 
@@ -181,12 +191,12 @@ and the **empirical applications paper**.
 ```
 # Software paper — R (also the R package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in R (v0.7.4). Zenodo.
+Estimation in R (v0.8.0). Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Software paper — Python (also the Python package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in Python (v0.7.4). Zenodo.
+Estimation in Python (v0.8.0). Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
 # MRM framework paper (theoretical foundations)

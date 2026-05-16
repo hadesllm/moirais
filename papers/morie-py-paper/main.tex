@@ -695,6 +695,34 @@ spec, and a tighter cross-language MLE-tolerance pin for the
 GARCH/EGARCH and Bayesian fits where the two language
 ecosystems' optimiser defaults differ.
 
+\section{Disparity auditing}
+\label{sec:fairness}
+
+Release~0.8.0 adds the \code{morie.fairness} subsystem: a family of
+callables for \emph{auditing} risk-assessment and predictive-policing
+systems for group disparity --- the package measures whether such a
+system encodes disparate treatment; it does not build one.  Six
+group-fairness metrics are exposed: \code{fairness\_disparate\_impact}
+(the EEOC four-fifths rule), \code{fairness\_demographic\_parity},
+\code{fairness\_equalized\_odds}, \code{fairness\_average\_odds\_difference},
+\code{fairness\_gini}, and the composite
+\code{fairness\_bias\_amplification} after
+\citet{Barman2026PredictivePolicingBias}.  The
+\code{predpol\_calibration\_audit} callable generalises the Strategic
+Subjects List district analysis of \citet{Lacherade2021PredPolChicago}
+--- ranking areas by predicted risk against their realised outcome
+rate and testing whether the rank disagreement tracks demographic
+composition --- and \code{predpol\_temporal\_audit} extends it across
+time and cities.  A model-agnostic explainability layer (permutation
+importance, partial dependence, accumulated local effects, ceteris
+paribus, and Shapley attributions) reimplements the COMPAS audit of
+\citet{Biecek2021XAIStories}.  An optional JAX-based simulation
+framework --- a Noisy-OR detection model, a spatial GAN, and a
+CTGAN-style tabular debiaser --- ships under the \code{morie[sim]}
+extra.  Every method is an independent clean-room reimplementation
+from the cited works' published descriptions; no third-party source
+code is incorporated.
+
 \section{Conclusion}
 \label{sec:conclusion}
 

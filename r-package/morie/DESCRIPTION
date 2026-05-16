@@ -1,7 +1,7 @@
 Package: morie
 Type: Package
 Title: Multi-Domain Open Research and Inferential Estimation
-Version: 0.7.4
+Version: 0.8.0
 Authors@R: c(
   person(
     given = "Vansh Singh",
@@ -162,6 +162,9 @@ Collate:
   'ewtma.R'
   'extvm.R'
   'flsha.R'
+  'frns_metrics.R'
+  'frns_predpol.R'
+  'frns_temporal.R'
   'fwpas.R'
   'fzbrd.R'
   'fzcvm.R'

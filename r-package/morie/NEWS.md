@@ -1,3 +1,39 @@
+# morie 0.8.0 — 2026-05-16
+
+New: the fairness & disparity-audit subsystem (`morie.fairness`).
+
+A subsystem for *auditing* risk-assessment, recidivism, and
+predictive-policing systems for racial and other group disparities.
+morie does not deploy such systems — it measures whether an existing
+one encodes disparate treatment, so researchers and oversight bodies
+can hold those systems accountable.
+
+* **Six group-fairness metrics** — disparate impact ratio (the EEOC
+  four-fifths rule), demographic parity gap, equalized odds, average
+  odds difference, the Gini coefficient, and the composite Bias
+  Amplification Score. Python and R, full parity.
+* **Predictive-policing calibration audit** — `predpol_calibration_audit`
+  ranks areas by predicted risk against realised outcomes and tests
+  whether the disagreement tracks area demographics; paired with
+  `predpol_score_disparity` and a city-agnostic `CityProfile` layer so
+  the audit runs for any city. Python and R.
+* **Multi-city temporal audit** — `predpol_temporal_audit` computes the
+  four disparity metrics per (city, period) cell and surfaces temporal
+  instability and cross-city divergence. Python and R.
+* **Simulation framework** — a Noisy-OR patrol-detection model, a
+  synthetic biased-crime-data generator, a JAX spatial GAN, and a
+  CTGAN-style conditional tabular debiaser (the optional `morie[sim]`
+  extra; JAX, not PyTorch, to stay lean).
+* **Explainability (XAI) suite** — permutation importance (which flags
+  protected features the model leans on), partial dependence,
+  accumulated local effects, ceteris paribus, and sampling-based SHAP
+  values; all model-agnostic.
+
+The methods are clean-room reimplementations written from published
+descriptions — IBM AIF360; the SciencesPo *Predictive-policing-Chicago*
+project; Barman & Barman (arXiv:2603.18987); and the COMPAS audit in
+pbiecek's *XAI Stories*. No third-party code was copied.
+
 # morie 0.7.4 — 2026-05-16
 
 Security patch.

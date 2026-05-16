@@ -44,7 +44,7 @@ from typing import Any
 import httpx
 import pandas as pd
 
-DEFAULT_USER_AGENT = "morie/0.7.4 (+https://github.com/hadesllm/morie)"
+DEFAULT_USER_AGENT = "morie/0.8.0 (+https://github.com/hadesllm/morie)"
 DEFAULT_TIMEOUT_SECONDS = 60.0
 
 # Socrata caps a single SoDA response at 50,000 rows server-side; we use

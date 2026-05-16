@@ -28,6 +28,7 @@ matches the estimator's signature.
    tps
    hawkes
    spatial
+   fairness
    statphysics
    findings
    quantization

@@ -1129,6 +1129,64 @@ package under \code{inst/extdata/} (R) and
 reproducible byte-identically even if the upstream public records
 are revised in future releases.
 
+\section{Group-disparity auditing}
+\label{sec:fairness}
+
+MORIE's accountability mission extends naturally from estimating
+intervention effects to \emph{auditing} the algorithmic systems that
+allocate carceral and police attention.  Version~0.8.0 adds a
+disparity-audit subsystem that measures whether a risk-assessment,
+recidivism, or predictive-policing system encodes group disparity.  It
+does not build or deploy such systems; it quantifies their bias.
+
+\subsection{Disparity metrics}
+
+For a binary system decision $\hat{y}\in\{0,1\}$ and a protected
+attribute $g$, write $r_g = P(\hat{y}=1\mid g)$ for the
+favourable-outcome rate of group $g$ and let $p$ denote the privileged
+reference group.  MORIE computes the Disparate Impact Ratio
+$\text{DIR} = r_g / r_p$ (the EEOC four-fifths rule:\ $\text{DIR}<0.8$
+flags adverse impact) and the Demographic Parity Gap
+$\Delta_{\text{parity}} = r_g - r_p$.  When ground truth is available,
+the equalized-odds gaps compare per-group true- and false-positive
+rates and the Average Odds Difference averages them.  The Gini
+coefficient $G$ of the per-group rate vector measures overall
+inequality, and the composite Bias Amplification Score
+$\text{BAS} = \Delta_{\text{parity}}\times G$
+\citep{Barman2026PredictivePolicingBias} is large only when a
+directional disparity coincides with high inequality.
+
+\subsection{Predictive-policing calibration audit}
+
+Generalising the Strategic Subjects List analysis of
+\citet{Lacherade2021PredPolChicago}, MORIE ranks geographic areas by
+the risk an algorithm \emph{predicts} and by their \emph{realised}
+outcome rate, then tests whether the rank disagreement tracks the
+areas' demographic composition.  An area ranked far more dangerous
+than its realised outcomes warrant is over-predicted; when the
+over-predicted areas are systematically those where one group is the
+majority, the system exhibits disparate over-policing.  A
+city-agnostic schema layer lets the same audit run for Chicago, New
+York, Toronto, or any city.  Following
+\citet{Barman2026PredictivePolicingBias}, the metrics are also
+computed per (city, period) cell, exposing temporal instability ---
+bias metrics are not stable across deployment cycles and must be
+re-audited each period --- and cross-city divergence.
+
+\subsection{Explainability}
+
+For model-level audits, MORIE reimplements the explainer suite of the
+COMPAS case study in \citet{Biecek2021XAIStories}: permutation
+importance, partial dependence, accumulated local effects, ceteris
+paribus, and Shapley attributions.  These surface \emph{which}
+features drive a model's disparate predictions --- the COMPAS audit
+found race and sex ranking high, a direct fingerprint of
+discrimination.
+
+All of these methods are independent clean-room reimplementations,
+written from the cited works' published descriptions; no third-party
+source code is incorporated.
+
 \section{Conclusion}
 \label{sec:conclusion}
 

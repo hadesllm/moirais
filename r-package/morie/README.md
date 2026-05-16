@@ -83,7 +83,7 @@ the software and the companion paper.
   title   = {morie: Multi-domain Open Research and Inferential Estimation in R},
   author  = {Ruhela, Vansh Singh},
   year    = {2026},
-  note    = {R package version 0.7.4},
+  note    = {R package version 0.8.0},
   doi     = {10.5281/zenodo.20111233},
   url     = {https://github.com/hadesllm/morie}
 }

@@ -8,7 +8,7 @@ authors:
     name-particle: "Singh"
     # morie pronunciation: /ˈmɔɪraɪ/ (like Greek Moirai)
     # IPA: /ʋənʃ sɪŋ ɾʊˈɦeːlɑː/
-version: "0.7.4"
+version: "0.8.0"
 date-released: "2026-05-16"
 url: "https://github.com/hadesllm/morie"
 repository-code: "https://github.com/hadesllm/morie"
@@ -37,7 +37,7 @@ preferred-citation:
       given-names: "Vansh Singh"
       orcid: "https://orcid.org/0009-0004-1750-3592"
   year: "2026"
-  version: "0.7.4"
+  version: "0.8.0"
   doi: "10.5281/zenodo.20111233"
   url: "https://doi.org/10.5281/zenodo.20111233"
 references:
@@ -48,7 +48,7 @@ references:
         given-names: "Vansh Singh"
         orcid: "https://orcid.org/0009-0004-1750-3592"
     year: "2026"
-    version: "0.7.4"
+    version: "0.8.0"
     doi: "10.5281/zenodo.20096350"
     url: "https://doi.org/10.5281/zenodo.20096350"
     notes: "Python companion software paper (same toolkit, Python implementation)."
@@ -122,3 +122,36 @@ references:
     year: "2024"
     url: "https://cloud.google.com/vertex-ai"
     notes: "Cloud platform hosting Gemini 2.5."
+  - type: generic
+    title: "Predictive Policing in the City of Chicago"
+    authors:
+      - family-names: "Lachérade"
+        given-names: "P."
+      - family-names: "Szabo"
+        given-names: "B."
+      - family-names: "Krikava"
+        given-names: "J."
+      - family-names: "Aeby"
+        given-names: "M."
+    year: "2021"
+    url: "https://github.com/marquito95/Predictive-policing-Chicago"
+    notes: "SciencesPo 'Decoding Biases in AI' project auditing Chicago's Strategic Subjects List for racial bias. morie's predictive-policing calibration audit (morie.fairness.predpol) is an independent clean-room reimplementation of this project's published methodology -- no code copied."
+  - type: article
+    title: "Unmasking Algorithmic Bias in Predictive Policing: A GAN-Based Simulation Framework with Multi-City Temporal Analysis"
+    authors:
+      - family-names: "Barman"
+        given-names: "Pronob Kumar"
+      - family-names: "Barman"
+        given-names: "Pronoy Kumar"
+    year: "2026"
+    url: "https://arxiv.org/abs/2603.18987"
+    notes: "Source of the four temporal bias metrics and the composite Bias Amplification Score reimplemented in morie.fairness.temporal and morie.fairness.metrics."
+  - type: generic
+    title: "XAI Stories: Case Studies -- COMPAS Recidivism"
+    authors:
+      - family-names: "Biecek"
+        given-names: "Przemysław"
+      - name: "et al."
+    year: "2021"
+    url: "https://pbiecek.github.io/xai_stories/story-compas.html"
+    notes: "The COMPAS explainability audit whose explainer recipe (permutation importance, partial dependence, ALE, ceteris paribus, SHAP) morie.fairness.xai independently reimplements."

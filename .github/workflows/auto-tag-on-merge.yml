@@ -115,6 +115,13 @@ jobs:
             gh workflow run release-debrpm.yml --ref "v$v" -f version="$v" || \
               echo "::warning::release-debrpm could not be dispatched"
           fi
-          # docker-publish.yml already fires on push to main (same commit),
-          # so a separate dispatch on the tag would duplicate the container.
-          echo "::notice title=Publish chain::pypi-publish + release-debrpm dispatched on v$v."
+          # docker-publish: the push-to-main run only tags :latest / :main /
+          # :sha-* -- the {{version}} semver tag (:X.Y.Z) is produced only on
+          # a tag ref, so dispatch it explicitly on v$v. The registry dedupes
+          # layers by digest, so this is not a wasteful rebuild.
+          if [ -f ".github/workflows/docker-publish.yml" ]; then
+            echo "Triggering docker-publish.yml on ref v$v..."
+            gh workflow run docker-publish.yml --ref "v$v" || \
+              echo "::warning::docker-publish could not be dispatched"
+          fi
+          echo "::notice title=Publish chain::pypi-publish + release-debrpm + docker-publish dispatched on v$v."

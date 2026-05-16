@@ -17,6 +17,8 @@
 #include <nanobind/nanobind.h>
 #include <nanobind/ndarray.h>
 
+#include "kernels.h"
+
 namespace nb = nanobind;
 using namespace nb::literals;
 
@@ -43,11 +45,14 @@ const char *core_version() { return "0.9.1-dev"; }
 }  // namespace
 
 NB_MODULE(_core, m) {
-    m.doc() = "morie C++ numeric core (libmorie) -- Phase 0 skeleton.";
+    m.doc() = "morie C++ numeric core (libmorie).";
     m.def("core_version", &core_version,
           "Version string of the compiled morie C++ core.");
     m.def("add", &add, "a"_a, "b"_a,
           "Add two doubles. Toolchain smoke test.");
     m.def("sum1d", &sum1d, "x"_a,
           "Sum a 1-D float64 array. numpy-bridge smoke test.");
+
+    // Numeric kernels (ports of the former morie/_jit.py functions).
+    register_kernels(m);
 }

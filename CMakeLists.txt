@@ -24,7 +24,9 @@ find_package(nanobind CONFIG REQUIRED)
 
 # NB_STATIC links nanobind's runtime statically -- one self-contained
 # extension, no separate shared nanobind dependency in the wheel.
-nanobind_add_module(_core NB_STATIC libmorie/_core.cpp)
+nanobind_add_module(_core NB_STATIC
+  libmorie/_core.cpp
+  libmorie/kernels.cpp)
 
 # Land the compiled module inside the morie package: morie/_core*.so,
 # importable as ``morie._core``.

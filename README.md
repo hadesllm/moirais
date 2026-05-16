@@ -94,7 +94,7 @@ pip install morie
 docker run --rm ghcr.io/hadesllm/morie:latest morie --help
 
 # Pin to a specific version (recommended for reproducibility)
-docker run --rm ghcr.io/hadesllm/morie:0.8.0 morie --help
+docker run --rm ghcr.io/hadesllm/morie:0.9.0 morie --help
 ```
 
 Multi-arch image published on every release with both versioned and `:latest` tags. Requires only Docker — no Python, no pip.
@@ -128,6 +128,14 @@ from morie.otis_all_analyze import analyze_a01_mrm
 result = analyze_a01_mrm(df)
 print(result)
 ```
+
+## What's new in v0.9.0
+
+- **`check_datasets()` dataset auditor** — probes every entry in the dataset catalogue and reports which datasets are reachable and which need attention, classified by tier.
+- **More open-data sources** — new `morie.ingest.statcan` and `morie.ingest.cihi` modules add the StatCan Canadian Community Health Survey 2022 PUMF and five CIHI indicator data tables, fetched on demand.
+- **16 datasets wired to verified sources** — Cannabis / Substance Use / Alcohol-and-Drugs / Student survey PUMFs got verified open.canada.ca CKAN ids; the Toronto Police crime datasets and the Ontario SIU case data now fetch through their scrapers. The catalogue went from 33 to 49 reachable datasets.
+- **New-version notification + `morie update`** — `import morie` does a fail-silent, daily-cached PyPI check and warns when a newer release exists (opt out with `MORIE_NO_UPDATE_CHECK`); `morie update` upgrades in place.
+- **CRAN fix** — the `morie_load_cpads` example is wrapped in `\dontrun{}`, clearing an `R CMD check --as-cran` error.
 
 ## What's new in v0.8.0
 
@@ -191,12 +199,12 @@ and the **empirical applications paper**.
 ```
 # Software paper — R (also the R package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in R (v0.8.0). Zenodo.
+Estimation in R (v0.9.0). Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Software paper — Python (also the Python package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in Python (v0.8.0). Zenodo.
+Estimation in Python (v0.9.0). Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
 # MRM framework paper (theoretical foundations)

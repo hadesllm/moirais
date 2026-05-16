@@ -1,3 +1,35 @@
+# morie 0.9.0 — 2026-05-16
+
+New: dataset availability auditing, more open-data sources, and
+in-place self-update.
+
+* **`check_datasets()` dataset auditor** — probes every entry in the
+  dataset catalogue and reports which datasets are reachable and which
+  need attention, classified by tier.
+* **Statistics Canada ingest** — `morie.ingest.statcan` adds the
+  Canadian Community Health Survey 2022 PUMF (StatCan 82M0013X) as the
+  `cchs22` dataset, fetched on demand from the StatCan product page.
+* **CIHI ingest** — `morie.ingest.cihi` adds five Canadian Institute
+  for Health Information indicator data tables (hospital stays for harm
+  caused by substance and alcohol use; youth integrated-youth-services
+  access), fetched on demand from cihi.ca.
+* **16 datasets wired to verified sources** — the Canadian Cannabis,
+  Substance Use, Alcohol-and-Drugs, and Student survey PUMFs received
+  verified open.canada.ca CKAN resource ids; the Toronto Police
+  assault/homicide/shooting datasets and the Ontario SIU case data are
+  now fetched through their existing scrapers. The catalogue went from
+  33 to 49 reachable datasets.
+* **New-version notification** — `import morie` performs a fail-silent,
+  daily-cached check against PyPI and prints a one-line notice when a
+  newer release exists. Opt out with `MORIE_NO_UPDATE_CHECK`.
+  (Python interface.)
+* **`morie update` command** — checks PyPI and, with confirmation,
+  upgrades morie in place. (Python interface.)
+* **CRAN fix** — the `morie_load_cpads` example is now wrapped in
+  `\dontrun{}`, so `R CMD check --as-cran` no longer errors on the
+  offline check farm.
+
+
 # morie 0.8.0 — 2026-05-16
 
 New: the fairness & disparity-audit subsystem (`morie.fairness`).

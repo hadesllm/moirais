@@ -21,6 +21,11 @@ on:
       - 'paper.bib'
   workflow_dispatch:
 
+# Least-privilege: checkout + build the PDF + upload a run-scoped
+# artifact. Artifact upload does not need write scopes.
+permissions:
+  contents: read
+
 jobs:
   paper:
     runs-on: ubuntu-latest

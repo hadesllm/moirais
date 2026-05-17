@@ -19,6 +19,11 @@ on:
       - ".github/workflows/ci.yml"
   workflow_dispatch:
 
+# Least-privilege: every job here only checks out the repo and runs
+# the test suites -- no artifact publishing, no releases, no comments.
+permissions:
+  contents: read
+
 jobs:
   test-python:
     name: Py ${{ matrix.python-version }} / ${{ matrix.os }}

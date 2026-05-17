@@ -495,11 +495,14 @@ static float box_muller_next(uint32_t *state) {
 void tq_qjl_init(tq_qjl_context *ctx, int dim, uint32_t seed) {
     ctx->dim = dim;
     ctx->seed = seed;
-    ctx->projection = (float *)malloc(dim * dim * sizeof(float));
+    /* Compute the element count in size_t: dim*dim in int would
+       overflow for dim > ~46340 before widening to malloc's size_t. */
+    size_t n_elem = (size_t)dim * (size_t)dim;
+    ctx->projection = (float *)malloc(n_elem * sizeof(float));
 
     /* Generate d×d i.i.d. N(0,1) projection matrix via Box-Muller */
     uint32_t state = seed * 2654435761u + 7;
-    for (int i = 0; i < dim * dim; i++) {
+    for (size_t i = 0; i < n_elem; i++) {
         ctx->projection[i] = box_muller_next(&state);
     }
 }

@@ -35,6 +35,11 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
+# Deny-all default: the single build-and-push job below declares
+# exactly the scopes it needs (packages/id-token/attestations write);
+# any job added later without its own block inherits no privileges.
+permissions: {}
+
 jobs:
   build-and-push:
     name: Build and push image

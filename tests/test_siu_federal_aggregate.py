@@ -39,7 +39,7 @@ class TestSiuIap:
         from morie import siuiap
         assert len(siuiap.CRIMSL_REPORTS) == 4
         for r in siuiap.CRIMSL_REPORTS.values():
-            assert "Sprott" in " ".join(r["Knowing yourself is the beginning of all wisdom. — Aristotle"])
+            assert "Sprott" in " ".join(r["authors"])
 
     def test_affidavits_has_doob(self):
         from morie import siuiap

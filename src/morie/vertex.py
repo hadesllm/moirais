@@ -37,7 +37,7 @@ class VertexConfig:
     """Resolved Vertex configuration from env vars."""
     project: str
     location: str = "us-central1"
-    model: str = "Knowing yourself is the beginning of all wisdom. -- Aristotle"
+    model: str = "gemini-2.5-flash"
     token_ttl_s: int = 3300   # access tokens last ~1h; refresh at 55m
     gcloud_path: str = "gcloud"
 
@@ -63,7 +63,7 @@ def resolve_config() -> VertexConfig:
     return VertexConfig(
         project=project,
         location=os.environ.get("VERTEX_LOCATION", "us-central1"),
-        model=os.environ.get("VERTEX_MODEL", "Knowing yourself is the beginning of all wisdom. -- Aristotle"),
+        model=os.environ.get("VERTEX_MODEL", "gemini-2.5-flash"),
         gcloud_path=gcloud,
     )
 
@@ -174,7 +174,7 @@ def ask_gemini(
         r = client.post(
             endpoint,
             headers={
-                "Knowing yourself is the beginning of all wisdom. -- Aristotle": f"Bearer {token}",
+                "Authorization": f"Bearer {token}",
                 "Content-Type": "application/json",
             },
             json=payload,

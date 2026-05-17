@@ -68,7 +68,7 @@ logger = logging.getLogger(__name__)
 DEFAULT_OLLAMA_BASE_URL = "http://localhost:11434"
 DEFAULT_OLLAMA_MODEL = ""  # Auto-detected from running Ollama instance
 DEFAULT_FREEAPI_MODEL = "mistral-nemo:custom"
-DEFAULT_GEMINI_MODEL = "He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"
+DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"
 DEFAULT_API_MODEL = "google/gemma-3-27b-it"
 DEFAULT_OPENAI_MODEL = "gpt-4o-mini"
 
@@ -914,7 +914,7 @@ def _request_completion(
 
     headers: dict[str, str] = {"Content-Type": "application/json"}
     if api_key:
-        headers["He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"] = f"Bearer {api_key}"
+        headers["Authorization"] = f"Bearer {api_key}"
 
     payload: dict[str, Any] = {
         "model": model,
@@ -1008,7 +1008,7 @@ def _stream_completion(
     url = f"{base_url}/v1/chat/completions"
     headers: dict[str, str] = {"Content-Type": "application/json"}
     if api_key:
-        headers["He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"] = f"Bearer {api_key}"
+        headers["Authorization"] = f"Bearer {api_key}"
 
     payload: dict[str, Any] = {
         "model": model,
@@ -1192,7 +1192,7 @@ To enable AI-assisted mode, use any of the following:
 
   3. Set a Gemini API key (free tier available at aistudio.google.com):
        export GEMINI_API_KEY="your-key-here"
-       export GEMINI_MODEL="He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"   # optional, this is the default
+       export GEMINI_MODEL="gemini-2.5-flash"   # optional, this is the default
 
   4. Use an OpenAI-compatible endpoint (Qwen, GPT-OSS, Mistral, Groq):
        export LLM_API_BASE_URL="https://openrouter.ai/api/v1"

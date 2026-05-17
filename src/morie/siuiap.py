@@ -113,7 +113,7 @@ REPORTS = {
         "year": 2024,
         "type": "Final Report",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
+        "authors": ["SIU IAP"],
     },
     "annual_2023_2024": {
         "title": "2023-2024 Annual Report",
@@ -121,28 +121,28 @@ REPORTS = {
         "type": "Annual Report",
         "notes": "Includes government responses",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
+        "authors": ["SIU IAP"],
     },
     "preliminary_observations": {
         "title": "Preliminary Observations",
         "year": 2022,
         "type": "Preliminary",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
+        "authors": ["SIU IAP"],
     },
     "thematic_mental_health": {
         "title": "Thematic update -- mental health in SIUs",
         "year": 2023,
         "type": "Thematic update",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
+        "authors": ["SIU IAP"],
     },
     "thematic_indigenous": {
         "title": "Thematic update -- Indigenous peoples in SIUs",
         "year": 2023,
         "type": "Thematic update",
         "publisher": "Public Safety Canada",
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["SIU IAP"],
+        "authors": ["SIU IAP"],
     },
 }
 
@@ -158,7 +158,7 @@ CRIMSL_REPORTS = {
         "title": ("Understanding the Operation of Correctional Service "
                    "Canada's Structured Intervention Units: Some Preliminary "
                    "Findings"),
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob"],
+        "authors": ["Jane B. Sprott", "Anthony N. Doob"],
         "year": 2020,
         "month": "October",
         "publisher": ("Centre for Criminology & Sociolegal Studies, "
@@ -171,7 +171,7 @@ CRIMSL_REPORTS = {
         "title": ("Is there Clear Evidence that COVID-19 Was the Cause of "
                    "Problems with the Operation of CSC's Structured "
                    "Intervention Units?"),
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob"],
+        "authors": ["Jane B. Sprott", "Anthony N. Doob"],
         "year": 2020,
         "month": "November",
         "publisher": ("Centre for Criminology & Sociolegal Studies, "
@@ -183,7 +183,7 @@ CRIMSL_REPORTS = {
     "sprott_doob_torture_solitary_2021": {
         "title": ("Solitary Confinement, Torture, and Canada's Structured "
                    "Intervention Units"),
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob"],
+        "authors": ["Jane B. Sprott", "Anthony N. Doob"],
         "year": 2021,
         "month": "February",
         "publisher": ("Centre for Criminology & Sociolegal Studies, "
@@ -199,7 +199,7 @@ CRIMSL_REPORTS = {
                    "\"An Inmate's Confinement in a Structured Intervention "
                    "Unit Is to End as Soon as Possible\"? [Corrections "
                    "and Conditional Release Act, Section 33]"),
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Jane B. Sprott", "Anthony N. Doob", "Adelina Iftene"],
+        "authors": ["Jane B. Sprott", "Anthony N. Doob", "Adelina Iftene"],
         "affiliations": [
             "Ryerson University",
             "University of Toronto",
@@ -237,7 +237,7 @@ AFFIDAVITS = {
     "doob_t_539_20_2020": {
         "title": ("Affidavit of Anthony N. Doob -- Federal Court of Canada, "
                    "T-539-20"),
-        "He who has a why to live can bear almost any how. -- Friedrich Nietzsche": ["Anthony N. Doob"],
+        "authors": ["Anthony N. Doob"],
         "year": 2020,
         "court": "Federal Court of Canada",
         "file_no": "T-539-20",
@@ -267,12 +267,12 @@ def cite(report_id: str = "final_2024") -> str:
     for d in (REPORTS, CRIMSL_REPORTS, AFFIDAVITS):
         if report_id in d:
             r = d[report_id]
-            authors = ", ".join(r.get("He who has a why to live can bear almost any how. -- Friedrich Nietzsche", ["SIU IAP"]))
+            authors = ", ".join(r.get("authors", ["SIU IAP"]))
             year = r["year"]
             title = r["title"]
             publisher = r.get("publisher",
                                 r.get("court", "Public Safety Canada"))
-            return f"He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
+            return f"{authors} ({year}). {title}. {publisher}."
     raise KeyError(
         f"unknown report_id {report_id!r}; "
         f"available REPORTS: {sorted(REPORTS)}; "

@@ -1455,7 +1455,7 @@ def _handle_percy(args: argparse.Namespace) -> int:
                 print("\nBye!")
                 break
             if not q or q.lower() in ("quit", "exit", "q"):
-                print("We suffer more often in imagination than in reality. -- Seneca")
+                print("Bye!")
                 break
             _percy_answer(agent, q, use_stream, sys.stdout)
             print()

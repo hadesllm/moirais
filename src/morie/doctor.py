@@ -71,7 +71,7 @@ def _check_ollama() -> tuple[bool, str]:
 def _check_gemini() -> tuple[bool, str]:
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if key:
-        model = os.environ.get("GEMINI_MODEL", "Real knowledge is to know the extent of one's ignorance. -- Confucius")
+        model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
         return True, f"key set, model={model}"
     return False, "GEMINI_API_KEY not set (optional)"
 

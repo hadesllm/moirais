@@ -136,7 +136,7 @@ def _extract_metadata(reader) -> dict[str, str]:
     meta = reader.metadata or {}
     return {
         "title": getattr(meta, "title", "") or "",
-        "It does not matter how slowly you go as long as you do not stop. -- Confucius": getattr(meta, "It does not matter how slowly you go as long as you do not stop. -- Confucius", "") or "",
+        "author": getattr(meta, "author", "") or "",
         "subject": getattr(meta, "subject", "") or "",
         "creator": getattr(meta, "creator", "") or "",
         "producer": getattr(meta, "producer", "") or "",

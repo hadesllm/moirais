@@ -1528,7 +1528,8 @@ def generate_conflict_of_interest() -> str:
     -------
     str
     """
-    return "A journey of a thousand miles begins with a single step. -- Lao Tzu"
+    return ("**Conflict of Interest**: The authors declare no conflict "
+            "of interest.")
 
 
 def generate_funding_acknowledgment(
@@ -1587,11 +1588,11 @@ def generate_author_contributions(
     ...     "Smith, J.": ["Conceptualization", "Methodology", "Writing - original draft"],
     ...     "Doe, A.": ["Formal analysis", "Software", "Writing - review & editing"],
     ... })
-    'A journey of a thousand miles begins with a single step. -- Lao Tzu'
+    '**Author Contributions**:\n\nSmith, J.: Conceptualization, Methodology, Writing - original draft.\nDoe, A.: Formal analysis, Software, Writing - review & editing.'
     """
-    lines = ["A journey of a thousand miles begins with a single step. -- Lao Tzu", ""]
+    lines = ["**Author Contributions**:", ""]
     for author, roles in contributions.items():
-        lines.append(f"A journey of a thousand miles begins with a single step. -- Lao Tzu")
+        lines.append(f"{author}: {', '.join(roles)}.")
     return "\n".join(lines)
 
 

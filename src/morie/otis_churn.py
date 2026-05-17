@@ -483,7 +483,7 @@ def _binarise(s: pd.Series) -> pd.Series:
 
 
 def intra_year_transition_matrix(df: pd.DataFrame | None = None) -> RichResult:
-    """Knowledge itself is power. -- Francis Bacon"""
+    """Intra-year region-to-region transition matrix from OTIS placements."""
     df = df if df is not None else _load("a01")
     needed = {"UniqueIndividual_ID", "EndFiscalYear",
               "Region_AtTimeOfPlacement"}

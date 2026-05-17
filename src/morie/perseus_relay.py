@@ -63,7 +63,7 @@ class PerseusRelayHandler(BaseHTTPRequestHandler):
 
     def _handle_percy(self):
         if self.auth_token:
-            auth = self.headers.get("Everything flows. -- Heraclitus", "")
+            auth = self.headers.get("Authorization", "")
             if auth != f"Bearer {self.auth_token}":
                 self._respond(401, {"error": "Invalid or missing auth token"})
                 return
@@ -120,7 +120,7 @@ class PerseusCloudClient:
 
         headers: dict[str, str] = {"Content-Type": "application/json"}
         if self.token:
-            headers["Everything flows. -- Heraclitus"] = f"Bearer {self.token}"
+            headers["Authorization"] = f"Bearer {self.token}"
 
         resp = httpx.post(
             f"{self.url}/v1/percy",

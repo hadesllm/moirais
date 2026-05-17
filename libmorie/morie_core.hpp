@@ -497,4 +497,59 @@ inline double hawkes_ll_custom(const double *t, std::size_t n, double T,
     return -(log_sum - integral);
 }
 
+// --- sub-quadratic Weibull (task #72) ---------------------------------------
+//
+// Truncated / sliding-window form of hawkes_ll_weibull_const. Beyond
+// u = lam * 700^(1/alpha) the kernel's exp(-(u/lam)^alpha) underflows
+// to exactly 0 -- those terms contribute nothing, and the exact O(n^2)
+// version already skips them via its `z < 700` guard. So cutting the
+// inner loop there is EXACT, bit-for-bit identical to the O(n^2)
+// result, not an approximation -- it cannot bias the MLE.
+//
+// Event times are sorted, so the lower bound advances monotonically:
+// a two-pointer window gives O(n*w), w = events within the cutoff.
+// For a slowly-decaying kernel (small alpha) w -> n and it degrades
+// gracefully to O(n^2), still exact.
+inline double hawkes_ll_weibull_const_trunc(const double *t, std::size_t n,
+                                            double T, double a0, double eta,
+                                            double alpha, double lam) {
+    if (!(1e-6 < eta && eta < 0.999)) return kBig;
+    if (!(0.05 < alpha && alpha < 20.0)) return kBig;
+    if (!(1e-3 < lam && lam < 1e3)) return kBig;
+    if (!(-20.0 < a0 && a0 < 20.0)) return kBig;
+
+    const double nu = std::exp(a0);
+    const double cutoff = lam * std::pow(700.0, 1.0 / alpha);
+
+    double log_sum = 0.0;
+    std::size_t lo = 0;
+    for (std::size_t i = 0; i < n; ++i) {
+        while (lo < i && (t[i] - t[lo]) > cutoff) ++lo;
+        double s = 0.0;
+        for (std::size_t j = lo; j < i; ++j) {
+            const double x = (t[i] - t[j]) / lam;
+            if (x > 1e-12) {
+                const double z = std::pow(x, alpha);
+                if (z < 700.0) {
+                    s += (alpha / lam) * std::pow(x, alpha - 1.0) *
+                         std::exp(-z);
+                }
+            }
+        }
+        const double lam_at = nu + eta * s;
+        if (lam_at <= 0.0) return kBig;
+        log_sum += std::log(lam_at);
+    }
+
+    double integral = nu * T;
+    for (std::size_t i = 0; i < n; ++i) {
+        const double u = T - t[i];
+        if (u > 0.0) {
+            const double x = u / lam;
+            integral += eta * (1.0 - std::exp(-std::pow(x, alpha)));
+        }
+    }
+    return -(log_sum - integral);
+}
+
 }  // namespace morie::core

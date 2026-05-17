@@ -97,6 +97,7 @@ _LAZY_EXPORTS = {
     'xai_shap_values': 'fairness.xai',
     'fetch_siu_cases': 'siu_fetch',
     'fetch_tps_category': 'tps_fetch',
+    'hawkes_loglik_custom': 'tps_hawkes_jit',
     'generate_ar_coefficients': 'longitudinal_sim',
     'generate_var_coefficients': 'longitudinal_sim',
     'infer_measurement_level': 'dataset',
@@ -320,6 +321,7 @@ __all__ = [
     # Dataset fetchers (on-demand download/scrape)
     "TPS_LAYER_URLS",
     "fetch_tps_category",
+    "hawkes_loglik_custom",
     "list_tps_categories",
     "SIU_INDEX_URL",
     "fetch_siu_cases",

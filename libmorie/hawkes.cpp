@@ -9,6 +9,8 @@
 #include "hawkes.h"
 #include "morie_core.hpp"
 
+#include <cstdint>
+
 #include <nanobind/nanobind.h>
 #include <nanobind/ndarray.h>
 
@@ -67,6 +69,18 @@ double hawkes_ll_lomax_sin(Vec t, double T, double a0, double a1, double a2,
         grid.data(), grid_vals.data(), grid.shape(0));
 }
 
+// User-callback bridge: g_addr / G_addr are native function-pointer
+// addresses (e.g. from numba @cfunc) for the triggering kernel and its
+// integral. They are cast back to plain function pointers and called
+// inside the C++ O(n^2) loop, GIL-free.
+double hawkes_ll_custom(Vec t, double T, double nu, double eta,
+                        std::uintptr_t g_addr, std::uintptr_t G_addr) {
+    auto g = reinterpret_cast<morie::core::HawkesKernelFn>(g_addr);
+    auto G = reinterpret_cast<morie::core::HawkesKernelFn>(G_addr);
+    return morie::core::hawkes_ll_custom(t.data(), t.shape(0), T, nu, eta,
+                                         g, G);
+}
+
 }  // namespace
 
 void register_hawkes(nb::module_ &m) {
@@ -107,4 +121,10 @@ void register_hawkes(nb::module_ &m) {
           "Hawkes negative log-likelihood -- Lomax (power-law) triggering "
           "kernel, sinusoidal baseline (trapezoid grid). Returns 1e12 for "
           "an infeasible parameter vector.");
+    m.def("hawkes_ll_custom", &hawkes_ll_custom, "t"_a, "T"_a, "nu"_a,
+          "eta"_a, "g_addr"_a, "G_addr"_a,
+          "Hawkes negative log-likelihood with a user-supplied triggering "
+          "kernel. g_addr / G_addr are native function-pointer addresses "
+          "(from numba @cfunc) for the kernel g(dt) and its integral "
+          "G(u) = integral_0^u g.");
 }

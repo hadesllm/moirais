@@ -460,4 +460,41 @@ inline double hawkes_ll_lomax_sin(const double *t, std::size_t n, double T,
     return -(log_sum - integral);
 }
 
+// --- user-callback bridge ----------------------------------------------------
+//
+// A C-ABI function pointer double(double). The numba @cfunc bridge JITs
+// a user's Python kernel into exactly this, and the C++ loop below
+// calls it natively -- no Python interpreter, no GIL -- inside the
+// O(n^2) hot loop.
+using HawkesKernelFn = double (*)(double);
+
+// Generic Hawkes negative log-likelihood with a USER-supplied
+// triggering kernel: g(dt) is the kernel and G(u) = integral_0^u g.
+// Both are plain function pointers, so the O(n^2) excitation sum and
+// the compensator call user code at native speed. Returns kBig when
+// infeasible.
+inline double hawkes_ll_custom(const double *t, std::size_t n, double T,
+                               double nu, double eta, HawkesKernelFn g,
+                               HawkesKernelFn G) {
+    if (!(nu > 0.0) || !std::isfinite(nu)) return kBig;
+
+    double log_sum = 0.0;
+    for (std::size_t i = 0; i < n; ++i) {
+        double s = 0.0;
+        for (std::size_t j = 0; j < i; ++j) {
+            s += g(t[i] - t[j]);
+        }
+        const double lam_i = nu + eta * s;
+        if (!std::isfinite(lam_i) || lam_i <= 0.0) return kBig;
+        log_sum += std::log(lam_i);
+    }
+
+    double integral = nu * T;
+    for (std::size_t i = 0; i < n; ++i) {
+        integral += eta * G(T - t[i]);
+    }
+    if (!std::isfinite(log_sum) || !std::isfinite(integral)) return kBig;
+    return -(log_sum - integral);
+}
+
 }  // namespace morie::core

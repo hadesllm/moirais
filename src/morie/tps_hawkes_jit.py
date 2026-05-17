@@ -529,3 +529,90 @@ def neg_loglik_jit(theta: np.ndarray, t: np.ndarray, T: float,
                                   grid, grid_vals)
 
     raise ValueError(f"no JIT path for kernel={kernel}, baseline={baseline}")
+
+
+# ── User-callback bridge ────────────────────────────────────────────
+#
+# "Bring your own kernel": when morie's built-in triggering kernels
+# misspecify a process, a user supplies their own. A numba @cfunc JITs
+# the Python kernel to a native function pointer that morie's C++
+# O(n^2) loop calls directly -- GIL-free, no per-call interpreter
+# overhead. numba is an optional dependency: the morie[callbacks] extra.
+
+
+def _as_cfunc(fn):
+    """Return a numba @cfunc for *fn* (returned unchanged if already one).
+
+    The returned object owns the compiled native code -- the caller
+    must keep a reference to it while the native pointer is in use.
+    Compiling a plain Python callable needs the morie[callbacks] extra.
+    """
+    if hasattr(fn, "address"):  # already a numba CFunc
+        return fn
+    try:
+        from numba import cfunc, types
+    except ImportError as exc:  # pragma: no cover -- callbacks extra absent
+        raise ImportError(
+            "hawkes_loglik_custom needs numba to compile a plain Python "
+            "kernel -- install morie[callbacks], or pass a pre-built "
+            "numba @cfunc.") from exc
+    return cfunc(types.float64(types.float64))(fn)
+
+
+def hawkes_loglik_custom(t, T, nu, eta, kernel, kernel_integral):
+    """Hawkes negative log-likelihood with a user-supplied triggering kernel.
+
+    The "bring your own kernel" path: supply your own triggering kernel
+    when the built-in exponential / Weibull / Lomax / gamma kernels
+    misspecify your process.
+
+    Parameters
+    ----------
+    t : array
+        Sorted event times.
+    T : float
+        Observation horizon.
+    nu : float
+        Constant baseline intensity (must be > 0).
+    eta : float
+        Branching ratio.
+    kernel : callable or numba CFunc
+        The triggering kernel ``g(dt)``. A numba ``@cfunc`` -- decorated
+        ``@cfunc(numba.types.float64(numba.types.float64))`` -- is
+        called natively inside morie's C++ O(n^2) loop, GIL-free. A
+        plain Python callable is compiled to a ``@cfunc`` on the fly
+        (needs the ``morie[callbacks]`` extra).
+    kernel_integral : callable or numba CFunc
+        ``G(u)`` = the integral of ``g`` over ``[0, u]`` -- the
+        compensator term.
+
+    Returns
+    -------
+    float
+        The negative log-likelihood (a large sentinel if infeasible).
+
+    Examples
+    --------
+    >>> import math
+    >>> from numba import cfunc, types
+    >>> @cfunc(types.float64(types.float64))
+    ... def g(u):
+    ...     return 1.5 * math.exp(-1.5 * u)
+    >>> @cfunc(types.float64(types.float64))
+    ... def G(u):
+    ...     return 1.0 - math.exp(-1.5 * u)
+    >>> hawkes_loglik_custom(t, T, nu=0.4, eta=0.3,
+    ...                      kernel=g, kernel_integral=G)  # doctest: +SKIP
+    """
+    if not HAS_CORE:
+        raise RuntimeError(
+            "hawkes_loglik_custom requires the compiled morie C++ core "
+            "(morie._core), which is not available in this install.")
+    # Hold the CFunc objects in locals -- they own the compiled native
+    # code, and the synchronous C++ call below dereferences their
+    # addresses.
+    g_cf = _as_cfunc(kernel)
+    G_cf = _as_cfunc(kernel_integral)
+    return _core_ext.hawkes_ll_custom(
+        np.ascontiguousarray(t, dtype=np.float64), float(T),
+        float(nu), float(eta), int(g_cf.address), int(G_cf.address))

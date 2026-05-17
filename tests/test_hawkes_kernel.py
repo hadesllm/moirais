@@ -470,3 +470,29 @@ def test_hawkes_ll_gamma_hybrid_matches_exact(alpha, beta):
     hybrid = core.hawkes_ll_gamma_hybrid(t, T, a0, eta, alpha, beta,
                                          u_split, w, beta_soe)
     assert np.isclose(hybrid, exact, rtol=1e-4)
+
+
+def test_neg_loglik_jit_gamma_routes_through_hybrid():
+    # large n + slow decay -> the gamma path routes through the hybrid;
+    # the result must still match the exact O(n^2) gamma likelihood
+    from morie.tps_hawkes_jit import neg_loglik_jit, _gamma_trunc_cutoff
+    t = _event_times(1500, rate=2.0, seed=31)
+    T = float(t[-1]) + 1.0
+    a0, eta, alpha, beta = -1.0, 0.4, 2.5, 0.4       # slow decay
+    assert _gamma_trunc_cutoff(alpha, beta) >= t[-1] - t[0]   # hybrid route
+    theta = np.array([a0, eta, alpha, beta])
+    routed = neg_loglik_jit(theta, t, T, "gamma", "constant")
+    exact = core.hawkes_ll_gamma_const(t, T, a0, eta, alpha, beta)
+    assert np.isclose(routed, exact, rtol=1e-4)
+
+
+def test_neg_loglik_jit_gamma_fast_decay_stays_exact():
+    # fast decay -> truncation path, bit-identical to the exact kernel
+    from morie.tps_hawkes_jit import neg_loglik_jit
+    t = _event_times(1500, rate=2.0, seed=31)
+    T = float(t[-1]) + 1.0
+    a0, eta, alpha, beta = -1.0, 0.4, 2.5, 5.0       # fast decay
+    theta = np.array([a0, eta, alpha, beta])
+    routed = neg_loglik_jit(theta, t, T, "gamma", "constant")
+    exact = core.hawkes_ll_gamma_const(t, T, a0, eta, alpha, beta)
+    assert routed == exact

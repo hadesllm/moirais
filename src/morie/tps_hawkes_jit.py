@@ -403,6 +403,20 @@ _SUPPORTED = {
 _SOE_MIN_N = 1000
 
 
+def _gamma_trunc_cutoff(alpha, beta):
+    """Lag past which the gamma kernel underflows to exactly zero --
+    mirrors the C++ hawkes_ll_gamma_const_trunc cutoff. Used to decide
+    whether the bit-exact truncation degrades to O(n^2) (slow decay),
+    in which case the gamma hybrid takes over."""
+    import math
+    log_const = alpha * math.log(beta) - math.lgamma(alpha)
+    if alpha > 1.0 + 1e-12:
+        k = ((alpha - 1.0) * math.log(2.0 * (alpha - 1.0) / beta)
+             - (alpha - 1.0))
+        return 2.0 * (log_const + k + 745.2) / beta
+    return max(1.0, (log_const + 745.2) / beta)
+
+
 def has_jit_path(kernel: str, baseline: str) -> bool:
     if HAS_CORE and baseline == "constant" and kernel in (
             "exponential", "weibull", "lomax", "gamma"):
@@ -466,6 +480,19 @@ def neg_loglik_jit(theta: np.ndarray, t: np.ndarray, T: float,
             alpha, beta = float(theta[2]), float(theta[3])
             if eta <= 1e-6 or eta >= 0.999 or alpha <= 1e-6 or beta <= 1e-6:
                 return 1e12
+            # slow decay + large n: the bit-exact truncation degrades to
+            # O(n^2), so route through the O(n*w + M*n) gamma hybrid
+            # (exact peak window + matrix-pencil SoE tail). The hybrid
+            # perturbs the likelihood by ~1e-6, below the optimizer's
+            # tolerance. Truncation stays the exact path everywhere else.
+            if (alpha > 1.0 and t_c.shape[0] >= _SOE_MIN_N
+                    and _gamma_trunc_cutoff(alpha, beta)
+                        >= t_c[-1] - t_c[0]):
+                u_split = 2.0 * (alpha - 1.0) / beta
+                w, beta_soe, _ = soe_fit_gamma_tail(alpha, beta, u_split)
+                return _core_ext.hawkes_ll_gamma_hybrid(
+                    t_c, float(T), a0, eta, alpha, beta, u_split,
+                    w, beta_soe)
             # the sliding-window form is bit-identical and sub-quadratic
             return _core_ext.hawkes_ll_gamma_const_trunc(
                 t_c, float(T), a0, eta, alpha, beta)

@@ -834,7 +834,7 @@ def _detect_legislation(text: str) -> Optional[str]:
     if not sec:
         return None
     sections = []
-    for m in re.finditer(r"Section\s+\d+(?:\([^)]+\))?,?\s+([A-Z][^\n,--\-–]+?)(?:\s*[–\---]|$)",
+    for m in re.finditer(r"Section\s+\d+(?:\([^)]+\))?,?\s+([A-Z][^\n,–-]+?)(?:\s*[–-]|$)",
                          sec):
         act = m.group(1).strip().rstrip(",")
         if act not in sections:

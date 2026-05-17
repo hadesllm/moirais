@@ -11,6 +11,10 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
   set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type" FORCE)
 endif()
 
+# Emit compile_commands.json so the clangd language server (see the
+# repo-root .clangd) can resolve the nanobind / Python build headers.
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # scikit-build-core points CMake at the correct Python; nanobind is
 # installed into the build-isolation environment via build-system
 # requires, so its CMake package config is discoverable.

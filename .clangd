@@ -1,0 +1,22 @@
+# clangd configuration for the libmorie C++ sources.
+#
+# Why this file exists: nanobind/nanobind.h and the Python C-API
+# headers are build-TIME dependencies -- scikit-build-core installs
+# them into an isolated environment only while the wheel is being
+# built. A standalone editor clang has no path to them, so it reports
+# spurious "nanobind/nanobind.h file not found" and, cascading from
+# that, "undeclared identifier 'nb'" diagnostics on libmorie/*.cpp.
+#
+# Those are NOT build errors -- `pip wheel .` compiles every file
+# cleanly with the include paths CMake supplies.
+#
+# For full IntelliSense (clangd actually resolving nanobind), build
+# the package once: CMakeLists.txt sets CMAKE_EXPORT_COMPILE_COMMANDS,
+# so the build/ tree gains a compile_commands.json carrying the real
+# include paths, which clangd discovers automatically. The flag below
+# fixes the C++ standard so morie_core.hpp's C++17 features (inline
+# variables, nested namespaces) stop warning even before that.
+
+CompileFlags:
+  Add:
+    - -std=c++17

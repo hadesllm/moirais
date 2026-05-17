@@ -21,6 +21,7 @@
 
 #include <cmath>
 #include <cstddef>
+#include <random>
 
 namespace morie::core {
 
@@ -114,6 +115,28 @@ inline void trimmed_ipw_weights(const double *treat, const double *propensity,
             e = trim_hi;
         }
         out[i] = (treat[i] == 1.0) ? (1.0 / e) : (1.0 / (1.0 - e));
+    }
+}
+
+// Bootstrap-replicate means: B resamples of size n drawn with
+// replacement from `a`, each replicate's mean written to out[b].
+// Uses std::mt19937_64 seeded with `seed` -- fully reproducible for a
+// given seed. (There is intentionally no pure-numpy equivalent: a
+// different RNG would silently change the replicates.)
+inline void bootstrap_mean(const double *a, std::size_t n, std::size_t B,
+                           unsigned long long seed, double *out) {
+    if (n == 0) {
+        for (std::size_t b = 0; b < B; ++b) out[b] = std::nan("");
+        return;
+    }
+    std::mt19937_64 rng(seed);
+    std::uniform_int_distribution<std::size_t> idx(0, n - 1);
+    for (std::size_t b = 0; b < B; ++b) {
+        double s = 0.0;
+        for (std::size_t i = 0; i < n; ++i) {
+            s += a[idx(rng)];
+        }
+        out[b] = s / static_cast<double>(n);
     }
 }
 

@@ -83,6 +83,15 @@ OutArray trimmed_ipw_weights_jit(Vec treat, Vec propensity, double trim_lo,
     return arr;
 }
 
+OutArray bootstrap_mean_jit(Vec a, long long B, long long seed) {
+    const std::size_t nB = static_cast<std::size_t>(B);
+    double *out;
+    OutArray arr = make_array(nB, &out);
+    core::bootstrap_mean(a.data(), a.shape(0), nB,
+                         static_cast<unsigned long long>(seed), out);
+    return arr;
+}
+
 }  // namespace
 
 void register_kernels(nb::module_ &m) {
@@ -102,4 +111,7 @@ void register_kernels(nb::module_ &m) {
     m.def("trimmed_ipw_weights_jit", &trimmed_ipw_weights_jit, "treat"_a,
           "propensity"_a, "trim_lo"_a = 0.01, "trim_hi"_a = 0.99,
           "IPW weights with propensity-score clipping.");
+    m.def("bootstrap_mean_jit", &bootstrap_mean_jit, "a"_a, "B"_a, "seed"_a,
+          "B bootstrap-replicate means of `a` (std::mt19937_64, "
+          "reproducible per seed).");
 }

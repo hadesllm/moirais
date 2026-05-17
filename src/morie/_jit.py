@@ -124,19 +124,20 @@ def trimmed_ipw_weights_jit(treat, propensity, trim_lo: float = 0.01,
 
 
 def bootstrap_mean_jit(arr, B: int, seed: int) -> np.ndarray:
-    """Bootstrap-replicate means: ``B`` resamples of ``len(arr)``.
+    """Bootstrap-replicate means: ``B`` resamples of ``len(arr)`` drawn
+    with replacement, returning each replicate's mean.
 
-    Pure-numpy and reproducible via ``np.random.RandomState(seed)``.
-    The C++ port is deferred to a later phase: a C++ RNG would change
-    the per-seed sequence, so the move warrants a deliberate decision.
+    Runs in the compiled C++ core (``std::mt19937_64``); a given seed
+    is fully reproducible. Unlike the other kernels there is no
+    pure-numpy fallback -- a different RNG would silently change the
+    replicate values -- so the compiled core (``morie._core``) is
+    required.
     """
-    arr = _vec(arr)
-    n = arr.size
-    rng = np.random.RandomState(seed)
-    out = np.empty(B, dtype=np.float64)
-    for b in range(B):
-        out[b] = arr[rng.randint(0, n, size=n)].mean()
-    return out
+    if not _CORE_AVAILABLE:
+        raise RuntimeError(
+            "bootstrap_mean_jit requires the compiled morie C++ core "
+            "(morie._core); build the extension or install a wheel.")
+    return _c.bootstrap_mean_jit(_vec(arr), int(B), int(seed))
 
 
 def is_jit_available() -> bool:

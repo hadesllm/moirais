@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Differential privacy (Laplace mechanism). 'Now you see me...' -- Mirage
+Differential privacy (Laplace mechanism).
 
 ## WHEN TO USE
 

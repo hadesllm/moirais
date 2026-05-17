@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Entropy production rate. 'I hunger.' -- Unicron
+Entropy production rate.
 
 ## WHEN TO USE
 

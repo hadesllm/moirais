@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-SMACOF convergence check. 'Serious Series.' -- Saitama, One Punch Man
+SMACOF convergence check.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Heckman two-step selection model. 'This is the way.' -- The Mandalorian
+Heckman two-step selection model.
 
 ## WHEN TO USE
 

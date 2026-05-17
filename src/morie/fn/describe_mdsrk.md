@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Reconstruct distances from MDS coordinates. 'ZA WARUDO!' -- DIO, JoJo's Bizarre Adventure
+Reconstruct distances from MDS coordinates.
 
 ## WHEN TO USE
 

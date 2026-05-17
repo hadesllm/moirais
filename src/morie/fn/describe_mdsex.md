@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Convex hull per group in MDS space. 'Cursed Energy.' -- Gojo, Jujutsu Kaisen
+Convex hull per group in MDS space.
 
 ## WHEN TO USE
 

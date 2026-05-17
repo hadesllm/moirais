@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Disattenuation (correction for attenuation). 'Size matters not.'Real knowledge is to know the extent of one's ignorance. — Confucius's source for the canonical
+Disattenuation (correction for attenuation).
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Isotonic regression. 'One Punch!' -- Saitama, One Punch Man
+Isotonic regression.
 
 ## WHEN TO USE
 

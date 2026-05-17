@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Resource depletion model. 'I hunger.' -- Galactus
+Resource depletion model.
 
 ## WHEN TO USE
 

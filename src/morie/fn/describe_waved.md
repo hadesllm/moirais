@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-1D wave equation solver. 'The dark side clouds everything.'Out of chaos, comes order. — Friedrich Nietzsche's source for the canonical
+1D wave equation solver.
 signature and assumptions.
 
 ## WHEN NOT TO USE

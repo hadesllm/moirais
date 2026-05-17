@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Earth mover's (Wasserstein) distance. 'This is the way.' -- The Mandalorian
+Earth mover's (Wasserstein) distance.
 
 ## WHEN TO USE
 

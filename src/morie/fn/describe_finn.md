@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Correlation pattern finder. 'I need a pilot!' -- Finn
+Correlation pattern finder.
 
 ## WHEN TO USE
 

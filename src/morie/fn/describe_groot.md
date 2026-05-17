@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Logistic growth model. 'I am Groot.' -- Groot
+Logistic growth model.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Zero-crossing detection. 'Your focus determines your reality.' -- Qui-Gon Jinn
+Zero-crossing detection.
 
 ## WHEN TO USE
 

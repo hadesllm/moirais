@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Image histogram computation. 'The greatest teacher, failure is.'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu's source for the canonical
+Image histogram computation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

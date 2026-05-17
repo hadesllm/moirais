@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Diagnostic agreement (Cohen's kappa). 'Judge me by my size, do you?'Knowing yourself is the beginning of all wisdom. — Aristotle's source for the canonical
+Diagnostic agreement (Cohen's kappa).
 signature and assumptions.
 
 ## WHEN NOT TO USE

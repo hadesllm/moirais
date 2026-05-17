@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Ferguson's Bayesian bootstrap. 'The greatest teacher, failure is.'All models are wrong, but some are useful. — George E. P. Box's source for the canonical
+Ferguson's Bayesian bootstrap.
 signature and assumptions.
 
 ## WHEN NOT TO USE

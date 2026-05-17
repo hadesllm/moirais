@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Biomass estimation. 'The Green speaks through me.' -- Swamp Thing
+Biomass estimation.
 
 ## WHEN TO USE
 

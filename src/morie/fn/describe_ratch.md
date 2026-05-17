@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Data cleaning / denoising pipeline. 'I can fix that!' -- Ratchet
+Data cleaning / denoising pipeline.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Fagan nomogram (post-test probability). 'There is always a bigger fish.' -- Qui-Gon Jinn
+Fagan nomogram (post-test probability).
 
 ## WHEN TO USE
 

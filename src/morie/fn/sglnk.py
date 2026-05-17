@@ -44,7 +44,6 @@ def lognormal_kriging(
 
     .. epigraph::
 
-        "Not all those who wander are lost." -- Tolkien, LOTR
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     if np.any(Z <= 0):

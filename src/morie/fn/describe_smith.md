@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bootstrap resampling with replacement. 'Me, me, me.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Bootstrap resampling with replacement.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Star Wars dataset loader. 'Do. Or do not. There is no try.'The whole is greater than the sum of its parts. — Aristotle's source for the canonical
+Star Wars dataset loader.
 signature and assumptions.
 
 ## WHEN NOT TO USE

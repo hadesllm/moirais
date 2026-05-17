@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Hazard function estimation. 'I keep my promises.' -- Deathstroke
+Hazard function estimation.
 
 ## WHEN TO USE
 

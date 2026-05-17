@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Brain connectivity via partial correlation matrix. 'To me, my X-Men.' -- Professor X
+Brain connectivity via partial correlation matrix.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Single-peaked preference check. 'Rose Whip!' -- Kurama, Yu Yu Hakusho
+Single-peaked preference check.
 
 ## WHEN TO USE
 

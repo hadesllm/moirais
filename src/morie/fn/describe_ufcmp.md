@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Compare unfolding methods. 'Kamehameha!' -- Goku, Dragon Ball Z
+Compare unfolding methods.
 
 ## WHEN TO USE
 

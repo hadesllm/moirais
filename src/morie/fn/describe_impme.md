@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Impute missing with mean. 'Full Cowling.' -- Deku, My Hero Academia
+Impute missing with mean.
 
 ## WHEN TO USE
 

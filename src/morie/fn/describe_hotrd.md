@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Newton's method convergence. 'Faster! Faster!' -- Hot Rod
+Newton's method convergence.
 
 ## WHEN TO USE
 

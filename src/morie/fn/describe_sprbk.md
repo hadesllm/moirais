@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Damped spring-mass system. 'Do. Or do not. There is no try.'Difficulties strengthen the mind, as labor does the body. — Seneca's source for the canonical
+Damped spring-mass system.
 signature and assumptions.
 
 ## WHEN NOT TO USE

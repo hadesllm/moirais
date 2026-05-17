@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Schur decomposition. 'You underestimate my power.'Our greatest glory is not in never falling, but in rising every time we fall. — Confucius's source for the canonical
+Schur decomposition.
 signature and assumptions.
 
 ## WHEN NOT TO USE

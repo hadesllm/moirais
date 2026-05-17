@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-SHAZAM simultaneous hypothesis test. 'SHAZAM!' -- Billy Batson
+SHAZAM simultaneous hypothesis test.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Newton divided-difference interpolation. 'The greatest teacher, failure is.'Confine yourself to the present. — Marcus Aurelius's source for the canonical
+Newton divided-difference interpolation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

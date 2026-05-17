@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-ReLU and Leaky ReLU activation. 'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius'Confine yourself to the present. — Marcus Aurelius's source for the canonical
+ReLU and Leaky ReLU activation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

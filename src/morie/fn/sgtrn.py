@@ -45,7 +45,6 @@ def trans_gaussian_kriging(
 
     .. epigraph::
 
-        "There is only one Lord of the Ring." -- Gandalf, LOTR
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

@@ -28,7 +28,6 @@ def qq_plot_kriging(standardized_errors: np.ndarray) -> SpatialResult:
 
     .. epigraph::
 
-        "I need a weapon." -- Master Chief, Halo
     """
     from scipy.stats import norm
 

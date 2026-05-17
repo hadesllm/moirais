@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-DP mixture density estimation: posterior mean. 'Wise, you are becoming.'Knowledge itself is power. — Francis Bacon's source for the canonical
+DP mixture density estimation: posterior mean.
 signature and assumptions.
 
 ## WHEN NOT TO USE

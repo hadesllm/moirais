@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Ensemble stacking. 'Devastator, merge!' -- Scrapper
+Ensemble stacking.
 
 ## WHEN TO USE
 

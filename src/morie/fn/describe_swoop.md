@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Lift-drag polar. 'From above!' -- Swoop
+Lift-drag polar.
 
 ## WHEN TO USE
 

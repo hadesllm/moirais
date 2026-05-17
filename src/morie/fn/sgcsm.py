@@ -51,7 +51,6 @@ def conditional_simulation(
 
     .. epigraph::
 
-        "Listen to my story." -- Tidus, FF10
     """
     rng = np.random.default_rng(seed)
     Z = np.asarray(Z, dtype=np.float64).ravel()

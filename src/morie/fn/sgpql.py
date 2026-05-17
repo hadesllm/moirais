@@ -44,7 +44,6 @@ def pql_spatial_glmm(
 
     .. epigraph::
 
-        "A lesson without pain is meaningless." -- Edward Elric, FMA
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     X = np.asarray(X, dtype=np.float64)

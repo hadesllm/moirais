@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Random permutation test. 'Why so serious?'Everything flows. — Heraclitus's source for the canonical
+Random permutation test.
 signature and assumptions.
 
 ## WHEN NOT TO USE

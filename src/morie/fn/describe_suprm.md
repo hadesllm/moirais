@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Supremum test / KS statistic. 'Up, up, and away!'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Supremum test / KS statistic.
 signature and assumptions.
 
 ## WHEN NOT TO USE

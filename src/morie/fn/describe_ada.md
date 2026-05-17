@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-AdaBoost with decision stumps (pure numpy). 'Power! Unlimited power!'Confine yourself to the present. — Marcus Aurelius's source for the canonical
+AdaBoost with decision stumps (pure numpy).
 signature and assumptions.
 
 ## WHEN NOT TO USE

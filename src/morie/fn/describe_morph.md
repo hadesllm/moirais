@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Dimensionality reduction via Barnes-Hut t-SNE. 'Free your mind.'The whole is greater than the sum of its parts. — Aristotle's source for the canonical
+Dimensionality reduction via Barnes-Hut t-SNE.
 signature and assumptions.
 
 ## WHEN NOT TO USE

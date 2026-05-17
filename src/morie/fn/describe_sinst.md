@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Volatility of volatility (VIX-like). 'In blackest night, you will fear me.' -- Sinestro
+Volatility of volatility (VIX-like).
 
 ## WHEN TO USE
 

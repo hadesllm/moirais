@@ -44,7 +44,6 @@ def cokriging(
 
     .. epigraph::
 
-        "For Frodo." -- Aragorn, LOTR
     """
     Z1 = np.asarray(Z_primary, dtype=np.float64).ravel()
     Z2 = np.asarray(Z_secondary, dtype=np.float64).ravel()

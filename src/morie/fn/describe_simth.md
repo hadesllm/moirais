@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Simulate feeling thermometer data. 'All models are wrong, but some are useful. — George E. P. Box' Dragon Ball Z
+Simulate feeling thermometer data.
 
 ## WHEN TO USE
 

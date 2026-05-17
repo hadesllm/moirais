@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Polya urn scheme simulation. 'Always two there are.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Polya urn scheme simulation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

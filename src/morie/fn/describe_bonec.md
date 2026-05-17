@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Weibull failure analysis. 'I will crush you!' -- Bonecrusher
+Weibull failure analysis.
 
 ## WHEN TO USE
 

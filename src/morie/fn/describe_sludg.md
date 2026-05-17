@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Rheological flow model (Herschel-Bulkley). 'Sludge no hurry.' -- Sludge
+Rheological flow model (Herschel-Bulkley).
 
 ## WHEN TO USE
 

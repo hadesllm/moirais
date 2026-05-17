@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-ARIMA model fitting. 'Nature does not hurry, yet everything is accomplished. — Lao Tzu' -- Maz Kanata
+ARIMA model fitting.
 
 ## WHEN TO USE
 

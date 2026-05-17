@@ -16,7 +16,6 @@ def bayesian_irt_likelihood(votes, x, alpha, beta) -> DescriptiveResult:
     :return: DescriptiveResult with log-likelihood in ``extra``.
 
     .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
-       are worse than scum." -- Kakashi, Naruto
     """
     from morie._spatial_voting import bayesian_irt_likelihood as _fn
 

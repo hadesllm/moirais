@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Multi-objective Pareto optimization. 'Mathematics is the music of reason. — James Joseph Sylvester'
+Multi-objective Pareto optimization.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Needleman-Wunsch global sequence alignment. 'He who has a why to live can bear almost any how. — Friedrich Nietzsche' -- Chirrut Imwe
+Needleman-Wunsch global sequence alignment.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Grouped summary statistics. 'The Child' -- Grogu
+Grouped summary statistics.
 
 ## WHEN TO USE
 

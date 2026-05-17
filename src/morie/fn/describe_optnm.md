@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Nelder-Mead MDS optimisation. 'Yare yare daze.' -- Jotaro, JoJo's Bizarre Adventure
+Nelder-Mead MDS optimisation.
 
 ## WHEN TO USE
 

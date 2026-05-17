@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Formant extraction from speech signal. 'Actions speak louder than words.' -- Jericho
+Formant extraction from speech signal.
 
 ## WHEN TO USE
 

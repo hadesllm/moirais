@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Template matching (NCC). 'All our lives we fought this war.' -- Logos crew
+Template matching (NCC).
 
 ## WHEN TO USE
 

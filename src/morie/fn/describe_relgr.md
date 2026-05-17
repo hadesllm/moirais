@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Reliability growth (Duane/AMSAA model). 'The dark side clouds everything.'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Reliability growth (Duane/AMSAA model).
 signature and assumptions.
 
 ## WHEN NOT TO USE

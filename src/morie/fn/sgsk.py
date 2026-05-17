@@ -49,7 +49,6 @@ def simple_kriging(
 
     .. epigraph::
 
-        "One does not simply walk into Mordor." -- Boromir, LOTR
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

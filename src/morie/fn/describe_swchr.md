@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Star Wars character stats. 'An unexamined life is not worth living. — Socrates'Real knowledge is to know the extent of one's ignorance. — Confucius's source for the canonical
+Star Wars character stats.
 signature and assumptions.
 
 ## WHEN NOT TO USE

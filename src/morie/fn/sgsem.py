@@ -39,7 +39,6 @@ def sem_error_model(
 
     .. epigraph::
 
-        "In the direction of deer." -- Atreus, God of War
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     X = np.asarray(X, dtype=np.float64)

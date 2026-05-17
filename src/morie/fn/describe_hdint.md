@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Highest Density Interval (Bayesian). 'Let go of your hate.'Out of chaos, comes order. — Friedrich Nietzsche's source for the canonical
+Highest Density Interval (Bayesian).
 signature and assumptions.
 
 ## WHEN NOT TO USE

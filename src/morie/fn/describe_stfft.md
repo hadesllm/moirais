@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Short-time Fourier Transform. 'In a dark place we find ourselves.'Character is destiny. — Heraclitus's source for the canonical
+Short-time Fourier Transform.
 signature and assumptions.
 
 ## WHEN NOT TO USE

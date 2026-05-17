@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Naive Bayes text classifier. 'Do. Or do not. There is no try.'Knowing yourself is the beginning of all wisdom. — Aristotle's source for the canonical
+Naive Bayes text classifier.
 signature and assumptions.
 
 ## WHEN NOT TO USE

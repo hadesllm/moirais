@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Enigma cipher / substitution cipher analysis. 'Riddle me this.' -- The Riddler
+Enigma cipher / substitution cipher analysis.
 
 ## WHEN TO USE
 

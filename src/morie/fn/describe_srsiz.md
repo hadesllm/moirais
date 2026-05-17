@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Sample size for a proportion. 'I find your lack of faith disturbing.'A journey of a thousand miles begins with a single step. — Lao Tzu's source for the canonical
+Sample size for a proportion.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Truncated regression. 'All who gain power are afraid to lose it.'Knowledge itself is power. — Francis Bacon's source for the canonical
+Truncated regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

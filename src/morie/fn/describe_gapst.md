@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Gap statistic for optimal k. 'The greatest teacher, failure is.'Difficulties strengthen the mind, as labor does the body. — Seneca's source for the canonical
+Gap statistic for optimal k.
 signature and assumptions.
 
 ## WHEN NOT TO USE

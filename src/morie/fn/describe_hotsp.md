@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Repeat-address / hot-spot analysis. 'It's a trap!' -- Admiral Ackbar
+Repeat-address / hot-spot analysis.
 
 ## WHEN TO USE
 

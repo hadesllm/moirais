@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Delete-1 jackknife variance estimate. 'Difficulties strengthen the mind, as labor does the body. — Seneca'An unexamined life is not worth living. — Socrates's source for the canonical
+Delete-1 jackknife variance estimate.
 signature and assumptions.
 
 ## WHEN NOT TO USE

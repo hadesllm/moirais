@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Missing data weight matrix. '200% Power.' -- Deku, My Hero Academia
+Missing data weight matrix.
 
 ## WHEN TO USE
 

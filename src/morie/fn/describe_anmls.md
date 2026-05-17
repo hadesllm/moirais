@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Multi-view learning (CCA fusion). 'The Final Flight of the Osiris.' -- Animatrix
+Multi-view learning (CCA fusion).
 
 ## WHEN TO USE
 

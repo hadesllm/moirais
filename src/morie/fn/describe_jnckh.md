@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Jonckheere-Terpstra test. 'Rebellions are built on hope. -- Jyn Erso'
+Jonckheere-Terpstra test.
 
 ## WHEN TO USE
 

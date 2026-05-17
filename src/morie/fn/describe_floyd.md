@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Floyd-Warshall all-pairs shortest paths. 'I have spoken.' -- Kuiil
+Floyd-Warshall all-pairs shortest paths.
 
 ## WHEN TO USE
 

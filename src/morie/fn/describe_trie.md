@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Prefix trie operations. 'Hope is like the sun.' -- Poe Dameron
+Prefix trie operations.
 
 ## WHEN TO USE
 

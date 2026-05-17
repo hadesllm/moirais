@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-1-D wave equation solver. 'Shockwave calculates.' -- Shockwave
+1-D wave equation solver.
 
 ## WHEN TO USE
 

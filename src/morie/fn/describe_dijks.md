@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Dijkstra shortest paths. 'We are what we repeatedly do. Excellence is a habit. — Aristotle'We are what we repeatedly do. Excellence is a habit. — Aristotle's source for the canonical
+Dijkstra shortest paths.
 signature and assumptions.
 
 ## WHEN NOT TO USE

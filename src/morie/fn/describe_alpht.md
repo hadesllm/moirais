@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bayesian prior elicitation. 'The wisdom of ages.' -- Alpha Trion
+Bayesian prior elicitation.
 
 ## WHEN TO USE
 

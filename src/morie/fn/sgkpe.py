@@ -31,7 +31,6 @@ def kriging_prediction_error(
 
     .. epigraph::
 
-        "I should go." -- Shepard, Mass Effect
     """
     obs = np.asarray(observed, dtype=np.float64).ravel()
     pred = np.asarray(predicted, dtype=np.float64).ravel()

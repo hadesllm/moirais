@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Monte Carlo simulation engine. 'To deny our own impulses is to deny the very thing that makes us human.' -- Mouse
+Monte Carlo simulation engine.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Dropout regularization. 'The only true wisdom is in knowing you know nothing. — Socrates' -- Ahsoka Tano
+Dropout regularization.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Brownian motion simulation. 'I have survived your predecessors.' -- The Merovingian
+Brownian motion simulation.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Stress-2 measure. 'United States of Smash!' -- All Might, My Hero Academia
+Stress-2 measure.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Per-column summary stats. 'I've got a bad feeling about this.'Everything flows. — Heraclitus's source for the canonical
+Per-column summary stats.
 signature and assumptions.
 
 ## WHEN NOT TO USE

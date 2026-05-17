@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Minkowski distance. 'All models are wrong, but some are useful. — George E. P. Box'
+Minkowski distance.
 
 ## WHEN TO USE
 

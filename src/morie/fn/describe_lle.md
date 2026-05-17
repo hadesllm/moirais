@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Locally Linear Embedding. 'Luminous beings are we, not this crude matter.'Our greatest glory is not in never falling, but in rising every time we fall. — Confucius's source for the canonical
+Locally Linear Embedding.
 signature and assumptions.
 
 ## WHEN NOT TO USE

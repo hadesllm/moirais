@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Shock wave Mach number. 'Feel the thunder!' -- Thundercracker
+Shock wave Mach number.
 
 ## WHEN TO USE
 

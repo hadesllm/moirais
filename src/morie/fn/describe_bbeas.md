@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Shape analysis (morphometrics). 'Dude, I can turn into a T-Rex.' -- Beast Boy
+Shape analysis (morphometrics).
 
 ## WHEN TO USE
 

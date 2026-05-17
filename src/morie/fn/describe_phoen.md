@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Time series structural break detection + recovery. 'I am fire and life incarnate.' -- Phoenix
+Time series structural break detection + recovery.
 
 ## WHEN TO USE
 

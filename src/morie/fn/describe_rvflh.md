@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Causal reversal test. 'It was me, Barry. It was me all along.' -- Reverse Flash
+Causal reversal test.
 
 ## WHEN TO USE
 

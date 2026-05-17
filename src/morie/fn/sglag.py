@@ -39,7 +39,6 @@ def lagrange_kriging_system(
 
     .. epigraph::
 
-        "Keelah se'lai." -- Tali, Mass Effect
     """
     G = np.asarray(gamma_matrix, dtype=np.float64)
     g0 = np.asarray(gamma_0, dtype=np.float64).ravel()

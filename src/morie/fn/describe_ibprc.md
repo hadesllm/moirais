@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Indian buffet process for binary feature allocation. 'There is no try.'Our greatest glory is not in never falling, but in rising every time we fall. — Confucius's source for the canonical
+Indian buffet process for binary feature allocation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

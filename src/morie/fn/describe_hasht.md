@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Hash table with chaining. 'This is the way.' -- Din Djarin
+Hash table with chaining.
 
 ## WHEN TO USE
 

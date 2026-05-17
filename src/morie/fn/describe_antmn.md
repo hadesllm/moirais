@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Allometric scaling regression. 'I know a guy.' -- Ant-Man
+Allometric scaling regression.
 
 ## WHEN TO USE
 

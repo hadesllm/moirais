@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Sum of squared distance errors for MDS. 'Ora ora ora!' -- Jotaro, JoJo's Bizarre Adventure
+Sum of squared distance errors for MDS.
 
 ## WHEN TO USE
 

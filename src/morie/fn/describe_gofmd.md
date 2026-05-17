@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-MDS goodness-of-fit interpretation. 'Infinite Void.' -- Gojo, Jujutsu Kaisen
+MDS goodness-of-fit interpretation.
 
 ## WHEN TO USE
 

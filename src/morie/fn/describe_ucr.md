@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-UCR offense classification. 'I find your lack of faith disturbing.'A journey of a thousand miles begins with a single step. — Lao Tzu's source for the canonical
+UCR offense classification.
 signature and assumptions.
 
 ## WHEN NOT TO USE

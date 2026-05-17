@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Two-way ANOVA. 'Truth comes out of error more readily than out of confusion. — Francis Bacon' -- Ahsoka Tano
+Two-way ANOVA.
 
 ## WHEN TO USE
 

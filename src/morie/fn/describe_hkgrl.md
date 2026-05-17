@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Hawking radiation temperature model. 'History is about to be rewritten.' -- Hawkgirl
+Hawking radiation temperature model.
 
 ## WHEN TO USE
 

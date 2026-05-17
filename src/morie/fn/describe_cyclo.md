@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Gaussian beam optics. 'I could never control it.' -- Cyclops
+Gaussian beam optics.
 
 ## WHEN TO USE
 

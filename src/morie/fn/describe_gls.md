@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Generalized least squares. 'Difficulties strengthen the mind, as labor does the body. — Seneca'An unexamined life is not worth living. — Socrates's source for the canonical
+Generalized least squares.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -47,7 +47,6 @@ def universal_kriging(
 
     .. epigraph::
 
-        "My precious." -- Gollum, LOTR
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

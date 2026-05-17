@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-NASA-TLX cognitive load metric. 'You have the look of a man who accepts what he sees.'Difficulties strengthen the mind, as labor does the body. — Seneca's source for the canonical
+NASA-TLX cognitive load metric.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Anomaly removal via IQR. 'I'm a nasty piece of work.' -- John Constantine
+Anomaly removal via IQR.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Combinatorial probability (card counting). 'The name is Gambit. Remember it.' -- Gambit
+Combinatorial probability (card counting).
 
 ## WHEN TO USE
 

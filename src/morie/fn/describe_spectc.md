@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Spectral clustering. 'Be with me.' -- Rey
+Spectral clustering.
 
 ## WHEN TO USE
 

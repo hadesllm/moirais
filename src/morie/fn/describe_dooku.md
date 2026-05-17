@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Double ML. 'Twice the pride, double the fall.' -- Count Dooku
+Double ML.
 
 ## WHEN TO USE
 

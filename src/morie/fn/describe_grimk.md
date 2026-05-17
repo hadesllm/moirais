@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Power law scaling. 'Me Grimlock strongest!' -- Grimlock
+Power law scaling.
 
 ## WHEN TO USE
 

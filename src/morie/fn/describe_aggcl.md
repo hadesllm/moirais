@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Agglomerative hierarchical clustering. 'Let the past die.' -- Kylo Ren
+Agglomerative hierarchical clustering.
 
 ## WHEN TO USE
 

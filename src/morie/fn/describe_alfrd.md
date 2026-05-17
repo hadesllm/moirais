@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Cook's distance diagnostic. 'I shall endeavour to satisfy, sir.' -- Alfred Pennyworth
+Cook's distance diagnostic.
 
 ## WHEN TO USE
 

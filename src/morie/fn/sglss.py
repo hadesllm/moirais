@@ -36,7 +36,6 @@ def squared_error_loss(
 
     .. epigraph::
 
-        "Remember Reach." -- Noble Six, Halo
     """
     pred = np.asarray(predicted, dtype=np.float64).ravel()
     obs = np.asarray(observed, dtype=np.float64).ravel()

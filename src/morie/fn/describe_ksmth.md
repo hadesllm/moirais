@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Nadaraya-Watson kernel regression. 'The dark side clouds everything.'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu's source for the canonical
+Nadaraya-Watson kernel regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

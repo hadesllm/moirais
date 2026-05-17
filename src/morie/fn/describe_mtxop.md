@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Generalised matrix function f(A). 'All models are wrong, but some are useful. — George E. P. Box' -- Screen message
+Generalised matrix function f(A).
 
 ## WHEN TO USE
 

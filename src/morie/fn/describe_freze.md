@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Freeze-thaw cycle degradation model. 'Tonight, hell freezes over.' -- Mr. Freeze
+Freeze-thaw cycle degradation model.
 
 ## WHEN TO USE
 

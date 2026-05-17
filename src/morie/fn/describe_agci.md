@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Agresti-Coull interval for binomial proportion. 'Rebellions are built on hope.' -- Cassian Andor
+Agresti-Coull interval for binomial proportion.
 
 ## WHEN TO USE
 

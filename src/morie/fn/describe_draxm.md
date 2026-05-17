@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Matrix decomposition (destructive rank reduction). 'Nothing goes over my head.' -- Drax
+Matrix decomposition (destructive rank reduction).
 
 ## WHEN TO USE
 

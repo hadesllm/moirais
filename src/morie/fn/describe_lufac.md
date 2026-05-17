@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-LU factorization with partial pivoting. 'Patience is bitter, but its fruit is sweet. — Aristotle'You have power over your mind — not outside events. — Marcus Aurelius's source for the canonical
+LU factorization with partial pivoting.
 signature and assumptions.
 
 ## WHEN NOT TO USE

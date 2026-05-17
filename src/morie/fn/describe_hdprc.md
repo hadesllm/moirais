@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Hierarchical Dirichlet process for grouped data. 'Groups, understand them you must.'Confine yourself to the present. — Marcus Aurelius's source for the canonical
+Hierarchical Dirichlet process for grouped data.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Arc length computation. 'Speed is my weapon.' -- Arcee
+Arc length computation.
 
 ## WHEN TO USE
 

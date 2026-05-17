@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Trimmed IPW weights. 'Luminous beings are we, not this crude matter.'Our greatest glory is not in never falling, but in rising every time we fall. — Confucius's source for the canonical
+Trimmed IPW weights.
 signature and assumptions.
 
 ## WHEN NOT TO USE

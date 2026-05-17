@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Model stacking / super learner (OLS combiner). 'We are what they grow beyond.'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Model stacking / super learner (OLS combiner).
 signature and assumptions.
 
 ## WHEN NOT TO USE

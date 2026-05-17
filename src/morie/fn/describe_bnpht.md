@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bayesian nonparametric hypothesis test via Polya tree. 'Patience you must have.'You have power over your mind — not outside events. — Marcus Aurelius's source for the canonical
+Bayesian nonparametric hypothesis test via Polya tree.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Newton's law of cooling. 'Hot stuff!' -- Slag
+Newton's law of cooling.
 
 ## WHEN TO USE
 

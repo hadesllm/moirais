@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Distance comparison stats. 'Blackwhip.' -- Deku, My Hero Academia
+Distance comparison stats.
 
 ## WHEN TO USE
 

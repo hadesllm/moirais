@@ -49,7 +49,6 @@ def external_drift_kriging(
 
     .. epigraph::
 
-        "Finish the fight." -- Cortana, Halo
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

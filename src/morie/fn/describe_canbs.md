@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Canberra distance. 'Hope is like the sun.' -- Vice Admiral Holdo
+Canberra distance.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-General recidivism rate. 'There is always a bigger fish.' -- Qui-Gon Jinn
+General recidivism rate.
 
 ## WHEN TO USE
 

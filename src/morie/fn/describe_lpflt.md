@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Butterworth lowpass filter. 'Difficulties strengthen the mind, as labor does the body. — Seneca' -- Chirrut Imwe
+Butterworth lowpass filter.
 
 ## WHEN TO USE
 

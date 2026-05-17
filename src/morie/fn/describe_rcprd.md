@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Predicted choice from ideal points. 'Tri-Beam!' -- Tien, Dragon Ball Z
+Predicted choice from ideal points.
 
 ## WHEN TO USE
 

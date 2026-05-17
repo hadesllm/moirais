@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Concept drift detection (ADWIN). 'Things are changing...' -- Drift
+Concept drift detection (ADWIN).
 
 ## WHEN TO USE
 

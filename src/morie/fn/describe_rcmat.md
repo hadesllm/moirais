@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Rectangular matrix formatter. 'Spirit Gun!' -- Yusuke, Yu Yu Hakusho
+Rectangular matrix formatter.
 
 ## WHEN TO USE
 

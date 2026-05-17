@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Radial basis function interpolation. 'I've got a bad feeling about this.' -- Various
+Radial basis function interpolation.
 
 ## WHEN TO USE
 

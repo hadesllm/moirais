@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Anomaly detection (isolation-forest style). 'Logic is the ultimate weapon.' -- Prowl
+Anomaly detection (isolation-forest style).
 
 ## WHEN TO USE
 

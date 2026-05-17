@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Least median of squares regression. 'Time discovers truth. — Seneca' -- Chirrut Imwe
+Least median of squares regression.
 
 ## WHEN TO USE
 

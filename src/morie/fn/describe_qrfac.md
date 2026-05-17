@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-QR factorization via Householder. 'I am your father.'All models are wrong, but some are useful. — George E. P. Box's source for the canonical
+QR factorization via Householder.
 signature and assumptions.
 
 ## WHEN NOT TO USE

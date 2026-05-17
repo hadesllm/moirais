@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Dark energy equation of state. 'I am the end of all things.' -- Darkseid
+Dark energy equation of state.
 
 ## WHEN TO USE
 

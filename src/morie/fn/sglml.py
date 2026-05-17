@@ -29,7 +29,6 @@ def lm_test_spatial(residuals: np.ndarray, W: np.ndarray, cdf=None) -> SpatialRe
 
     .. epigraph::
 
-        "The cycle ends here." -- Kratos, God of War
     """
     from scipy.stats import chi2
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Quine-McCluskey boolean minimization. 'All models are wrong, but some are useful. — George E. P. Box'
+Quine-McCluskey boolean minimization.
 
 ## WHEN TO USE
 

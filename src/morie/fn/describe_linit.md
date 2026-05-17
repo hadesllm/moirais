@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Line segment intersection. 'This is where the fun begins.'Patience is bitter, but its fruit is sweet. — Aristotle's source for the canonical
+Line segment intersection.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Keplerian orbit generator. 'All models are wrong, but some are useful. — George E. P. Box'
+Keplerian orbit generator.
 
 ## WHEN TO USE
 

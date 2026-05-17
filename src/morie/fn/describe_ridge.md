@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Ridge regression (L2). 'Stay on target.' -- Gold Five
+Ridge regression (L2).
 
 ## WHEN TO USE
 

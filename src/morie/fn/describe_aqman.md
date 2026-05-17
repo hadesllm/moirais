@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Aquifer/water table interpolation. 'The sea does not like to be restrained.' -- Aquaman
+Aquifer/water table interpolation.
 
 ## WHEN TO USE
 

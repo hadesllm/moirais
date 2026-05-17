@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Graph articulation points. 'I am afraid of the truth.' -- Apoc
+Graph articulation points.
 
 ## WHEN TO USE
 

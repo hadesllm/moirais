@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Near-duplicate detection. 'Time discovers truth. — Seneca' -- Trinity
+Near-duplicate detection.
 
 ## WHEN TO USE
 

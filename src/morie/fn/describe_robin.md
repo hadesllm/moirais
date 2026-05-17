@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Winsorized mean. 'Difficulties strengthen the mind, as labor does the body. — Seneca' -- Robin
+Winsorized mean.
 
 ## WHEN TO USE
 

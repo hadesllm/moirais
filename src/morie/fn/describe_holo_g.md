@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Geographic / choropleth summary helper. 'I've been waiting for you,.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Geographic / choropleth summary helper.
 signature and assumptions.
 
 ## WHEN NOT TO USE

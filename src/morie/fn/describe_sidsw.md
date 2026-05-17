@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Impact force modeling. 'Let me at em!' -- Sideswipe
+Impact force modeling.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-K-mer frequency counting. 'There is always a bigger fish.' -- Qui-Gon Jinn
+K-mer frequency counting.
 
 ## WHEN TO USE
 

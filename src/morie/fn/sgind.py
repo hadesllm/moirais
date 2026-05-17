@@ -46,7 +46,6 @@ def indicator_kriging(
 
     .. epigraph::
 
-        "The Ring is mine." -- Frodo, LOTR
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

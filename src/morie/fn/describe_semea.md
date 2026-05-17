@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Standard error of measurement. 'Patience you must have.'An unexamined life is not worth living. — Socrates's source for the canonical
+Standard error of measurement.
 signature and assumptions.
 
 ## WHEN NOT TO USE

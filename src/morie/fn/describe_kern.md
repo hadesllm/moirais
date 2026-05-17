@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Gaussian KDE. 'Knowledge itself is power. — Francis Bacon' -- General
+Gaussian KDE.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Arrow plot / directed graph layout. 'You have failed this city!' -- Green Arrow
+Arrow plot / directed graph layout.
 
 ## WHEN TO USE
 

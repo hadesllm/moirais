@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Mechanical resonance / Q-factor. 'Feel the vibration!' -- Snarl
+Mechanical resonance / Q-factor.
 
 ## WHEN TO USE
 

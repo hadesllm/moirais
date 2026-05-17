@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Byzantine fault detection. 'I am the true leader!' -- Starscream
+Byzantine fault detection.
 
 ## WHEN TO USE
 

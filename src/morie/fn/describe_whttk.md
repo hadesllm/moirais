@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Whittaker smoother. 'That which does not kill us makes us stronger. — Friedrich Nietzsche' -- General usage
+Whittaker smoother.
 
 ## WHEN TO USE
 

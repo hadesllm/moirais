@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Neal Algorithm 8 for DP mixture MCMC sampling. 'Sample, Markov must.'Time discovers truth. — Seneca's source for the canonical
+Neal Algorithm 8 for DP mixture MCMC sampling.
 signature and assumptions.
 
 ## WHEN NOT TO USE

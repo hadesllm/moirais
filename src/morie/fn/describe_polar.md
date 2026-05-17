@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Polar decomposition A = UP. 'There is another.'Patience is bitter, but its fruit is sweet. — Aristotle's source for the canonical
+Polar decomposition A = UP.
 signature and assumptions.
 
 ## WHEN NOT TO USE

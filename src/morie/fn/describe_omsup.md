@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Minimax optimization. 'Omega Supreme: defend.' -- Omega Supreme
+Minimax optimization.
 
 ## WHEN TO USE
 

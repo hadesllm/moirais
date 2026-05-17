@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Slice sampler for DP mixtures. 'Slice the probability, you must.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Slice sampler for DP mixtures.
 signature and assumptions.
 
 ## WHEN NOT TO USE

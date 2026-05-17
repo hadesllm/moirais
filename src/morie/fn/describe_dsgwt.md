@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Inverse-probability design weights for stratified samples. 'I find your lack of faith disturbing.'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Inverse-probability design weights for stratified samples.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Smoothing spline. 'The belonging you seek is ahead of you.' -- Maz Kanata
+Smoothing spline.
 
 ## WHEN TO USE
 

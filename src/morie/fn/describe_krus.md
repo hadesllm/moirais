@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Kruskal minimum spanning tree. 'We are the spark that will light the fire.' -- Poe Dameron
+Kruskal minimum spanning tree.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Natural cubic spline interpolation. 'Stay on target.' -- Gold Five
+Natural cubic spline interpolation.
 
 ## WHEN TO USE
 

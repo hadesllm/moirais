@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-MLSMU6 missing data imputation. 'Toguro Punch.' -- Toguro, Yu Yu Hakusho
+MLSMU6 missing data imputation.
 
 ## WHEN TO USE
 

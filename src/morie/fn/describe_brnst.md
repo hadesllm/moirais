@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bernstein polynomial density estimation. 'Powerful, Bernstein is.'Time discovers truth. — Seneca's source for the canonical
+Bernstein polynomial density estimation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -38,7 +38,6 @@ def ols_spatial_diagnostics(
 
     .. epigraph::
 
-        "Boy." -- Kratos, God of War
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     X = np.asarray(X, dtype=np.float64)

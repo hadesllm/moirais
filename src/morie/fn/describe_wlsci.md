@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Wilson score interval for binomial proportion. 'Knowledge itself is power. — Francis Bacon' -- General usage
+Wilson score interval for binomial proportion.
 
 ## WHEN TO USE
 

@@ -41,7 +41,6 @@ def kriging_cross_validation(
 
     .. epigraph::
 
-        "I am Shepard." -- Shepard, Mass Effect
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-AST depth analysis. 'Everything begins with choice.' -- The Merovingian
+AST depth analysis.
 
 ## WHEN TO USE
 

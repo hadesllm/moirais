@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Disparity index. 'Your focus determines your reality.' -- Qui-Gon Jinn
+Disparity index.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Stochastic sequence generation (Markov chain). 'Do I at least get to pick the song?' -- Jazz
+Stochastic sequence generation (Markov chain).
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Seasonal decomposition. 'The circle is now complete.'Our greatest glory is not in never falling, but in rising every time we fall. — Confucius's source for the canonical
+Seasonal decomposition.
 signature and assumptions.
 
 ## WHEN NOT TO USE

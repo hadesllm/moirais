@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Levy flight random walk. 'Surprise!' -- Skywarp
+Levy flight random walk.
 
 ## WHEN TO USE
 

@@ -40,7 +40,6 @@ def conditional_autoregressive(
 
     .. epigraph::
 
-        "Aloy, despite the odds." -- Sylens, Horizon
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     W = np.asarray(W, dtype=np.float64)

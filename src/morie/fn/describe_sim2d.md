@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Simulate 2D unfolding data. 'Ultra Instinct.' -- Goku, Dragon Ball Z
+Simulate 2D unfolding data.
 
 ## WHEN TO USE
 

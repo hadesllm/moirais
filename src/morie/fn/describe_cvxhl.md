@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-2-D convex hull via gift wrapping. 'Impressive. Most impressive.'Everything flows. — Heraclitus's source for the canonical
+2-D convex hull via gift wrapping.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -41,7 +41,6 @@ def ordinary_kriging_variance(
 
     .. epigraph::
 
-        "I'm going on an adventure!" -- Bilbo, LOTR
     """
     coords = np.asarray(coords, dtype=np.float64)
     target = np.asarray(target, dtype=np.float64).ravel()

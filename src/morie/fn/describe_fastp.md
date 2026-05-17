@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Randomized PCA. 'This is the way.' -- Din Djarin
+Randomized PCA.
 
 ## WHEN TO USE
 

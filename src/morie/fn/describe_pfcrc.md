@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Preference circles for visualization. 'Instant Transmission.' -- Goku, Dragon Ball Z
+Preference circles for visualization.
 
 ## WHEN TO USE
 

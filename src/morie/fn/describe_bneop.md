@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Birth-death process. 'The prophecy was true.' -- Councillor Hamann
+Birth-death process.
 
 ## WHEN TO USE
 

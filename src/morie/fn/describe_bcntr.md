@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bayesian nonparametric contraction rate analysis. 'Contract, beliefs must.'A journey of a thousand miles begins with a single step. — Lao Tzu's source for the canonical
+Bayesian nonparametric contraction rate analysis.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-CPI and inflation rate. 'So this is how liberty dies, with thunderous applause.' -- Padme
+CPI and inflation rate.
 
 ## WHEN TO USE
 

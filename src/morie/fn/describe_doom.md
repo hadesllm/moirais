@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-System failure cascade / reliability. 'We are the Doom Patrol.' -- The Chief
+System failure cascade / reliability.
 
 ## WHEN TO USE
 

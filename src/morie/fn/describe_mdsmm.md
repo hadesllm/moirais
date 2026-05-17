@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-MDS with missing data (weighted stress). 'Shoot Style.' -- Deku, My Hero Academia
+MDS with missing data (weighted stress).
 
 ## WHEN TO USE
 

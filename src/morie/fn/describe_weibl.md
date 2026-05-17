@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Weibull distribution MLE fit. 'Power! Unlimited power!'The whole is greater than the sum of its parts. — Aristotle's source for the canonical
+Weibull distribution MLE fit.
 signature and assumptions.
 
 ## WHEN NOT TO USE

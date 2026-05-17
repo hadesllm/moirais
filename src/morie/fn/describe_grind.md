@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Particle size distribution (Rosin-Rammler). 'Grind them down!' -- Grindor
+Particle size distribution (Rosin-Rammler).
 
 ## WHEN TO USE
 

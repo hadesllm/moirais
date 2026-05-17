@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Propensity score stratification. 'You must unlearn what you have learned.'Knowledge itself is power. — Francis Bacon's source for the canonical
+Propensity score stratification.
 signature and assumptions.
 
 ## WHEN NOT TO USE

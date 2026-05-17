@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Parallel analysis for factor analysis. 'Everything is proceeding as I have foreseen.'Time discovers truth. — Seneca's source for the canonical
+Parallel analysis for factor analysis.
 signature and assumptions.
 
 ## WHEN NOT TO USE

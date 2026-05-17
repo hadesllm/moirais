@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Unfolding residuals. 'Galick Gun!' -- Vegeta, Dragon Ball Z
+Unfolding residuals.
 
 ## WHEN TO USE
 

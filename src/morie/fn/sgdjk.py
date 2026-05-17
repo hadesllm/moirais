@@ -46,7 +46,6 @@ def disjunctive_kriging(
 
     .. epigraph::
 
-        "I will take the Ring to Mordor." -- Frodo, LOTR
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

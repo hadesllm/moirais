@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Word length distribution statistics. 'What is now proved was once only imagined. — William Blake' -- Chirrut Imwe
+Word length distribution statistics.
 
 ## WHEN TO USE
 

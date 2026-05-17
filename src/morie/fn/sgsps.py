@@ -44,7 +44,6 @@ def spectral_grf_sim(
 
     .. epigraph::
 
-        "You don't need a reason to help people." -- Zidane, FF9
     """
     rng = np.random.default_rng(seed)
     coords = np.asarray(coords, dtype=np.float64)

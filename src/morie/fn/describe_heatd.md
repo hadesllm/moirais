@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-2D kernel density for heatmaps. 'The belonging you seek is ahead.' -- Maz Kanata
+2D kernel density for heatmaps.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Data leakage detection. 'All models are wrong, but some are useful. — George E. P. Box'
+Data leakage detection.
 
 ## WHEN TO USE
 

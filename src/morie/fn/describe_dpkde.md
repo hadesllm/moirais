@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Dirichlet process kernel density estimate. 'I am your father.'Character is destiny. — Heraclitus's source for the canonical
+Dirichlet process kernel density estimate.
 signature and assumptions.
 
 ## WHEN NOT TO USE

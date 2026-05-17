@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Likelihood ratios (LR+ / LR-). 'So this is how liberty dies.' -- Padme Amidala
+Likelihood ratios (LR+ / LR-).
 
 ## WHEN TO USE
 

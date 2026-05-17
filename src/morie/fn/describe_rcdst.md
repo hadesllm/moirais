@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Distance from agreement. 'Special Beam Cannon!' -- Piccolo, Dragon Ball Z
+Distance from agreement.
 
 ## WHEN TO USE
 

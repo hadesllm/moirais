@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Parallel universes bootstrap. 'I went forward in time to view alternate futures.' -- Dr. Strange
+Parallel universes bootstrap.
 
 ## WHEN TO USE
 

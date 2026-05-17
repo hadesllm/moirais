@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Simple random sample from a DataFrame. 'Do or do not, there is no try.'Confine yourself to the present. — Marcus Aurelius's source for the canonical
+Simple random sample from a DataFrame.
 signature and assumptions.
 
 ## WHEN NOT TO USE

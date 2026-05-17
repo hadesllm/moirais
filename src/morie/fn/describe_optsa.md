@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Simulated annealing MDS. 'Muda muda muda!' -- DIO, JoJo's Bizarre Adventure
+Simulated annealing MDS.
 
 ## WHEN TO USE
 

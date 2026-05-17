@@ -44,7 +44,6 @@ def ordinary_kriging(
 
     .. epigraph::
 
-        "A wizard is never late." -- Gandalf, LOTR
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Naive time series forecasting. 'I am from the future.' -- Booster Gold
+Naive time series forecasting.
 
 ## WHEN TO USE
 

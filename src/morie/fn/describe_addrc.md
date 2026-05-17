@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Full adder binary circuit. 'I find your lack of faith disturbing.'The only true wisdom is in knowing you know nothing. — Socrates's source for the canonical
+Full adder binary circuit.
 signature and assumptions.
 
 ## WHEN NOT TO USE

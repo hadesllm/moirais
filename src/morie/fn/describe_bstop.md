@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Binary search tree operations. 'The belonging you seek is ahead.' -- Maz Kanata
+Binary search tree operations.
 
 ## WHEN TO USE
 

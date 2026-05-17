@@ -33,7 +33,6 @@ def hermite_polynomial(x: np.ndarray, n: int = 3) -> SpatialResult:
 
     .. epigraph::
 
-        "Wake me when you need me." -- Master Chief, Halo
     """
     x = np.asarray(x, dtype=np.float64).ravel()
     if n < 0:

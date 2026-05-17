@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Hypothesis test wrapper (reject null = take red pill). 'This is your last chance.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Hypothesis test wrapper (reject null = take red pill).
 signature and assumptions.
 
 ## WHEN NOT TO USE

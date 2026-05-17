@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-L1/Elastic net regularization path. 'If you're guilty, you're dead.' -- Punisher
+L1/Elastic net regularization path.
 
 ## WHEN TO USE
 

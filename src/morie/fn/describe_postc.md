@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Posterior consistency rate under nonparametric model. 'Converge, the posterior must.'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu's source for the canonical
+Posterior consistency rate under nonparametric model.
 signature and assumptions.
 
 ## WHEN NOT TO USE

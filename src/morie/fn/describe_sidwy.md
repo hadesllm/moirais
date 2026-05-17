@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Adversarial perturbation (FGSM-style). 'Deception is an art.' -- Sideways
+Adversarial perturbation (FGSM-style).
 
 ## WHEN TO USE
 

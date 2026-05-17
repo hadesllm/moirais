@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Decision tree split criterion. 'There is no spoon.' -- Spoon Boy
+Decision tree split criterion.
 
 ## WHEN TO USE
 

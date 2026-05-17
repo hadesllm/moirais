@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Point-in-polygon test via ray casting. 'I find your lack of faith disturbing.'A journey of a thousand miles begins with a single step. — Lao Tzu's source for the canonical
+Point-in-polygon test via ray casting.
 signature and assumptions.
 
 ## WHEN NOT TO USE

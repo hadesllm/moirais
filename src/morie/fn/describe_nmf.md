@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Non-negative Matrix Factorization. 'Life is really simple, but we insist on making it complicated. — Confucius' -- Ahsoka Tano
+Non-negative Matrix Factorization.
 
 ## WHEN TO USE
 

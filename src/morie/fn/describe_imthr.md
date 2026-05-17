@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Image thresholding (Otsu / fixed). 'Do or do not. There is no try.'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu's source for the canonical
+Image thresholding (Otsu / fixed).
 signature and assumptions.
 
 ## WHEN NOT TO USE

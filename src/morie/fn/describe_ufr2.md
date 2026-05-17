@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Unfolding R-squared. 'Super Saiyan Blue.' -- Goku, Dragon Ball Z
+Unfolding R-squared.
 
 ## WHEN TO USE
 

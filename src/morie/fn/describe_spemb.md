@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Spectral embedding via Laplacian eigenmaps. 'Hope is not lost today.' -- Poe Dameron
+Spectral embedding via Laplacian eigenmaps.
 
 ## WHEN TO USE
 

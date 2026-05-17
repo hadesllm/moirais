@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Voronoi tessellation areas. 'I have spoken.' -- Kuiil
+Voronoi tessellation areas.
 
 ## WHEN TO USE
 

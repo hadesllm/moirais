@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Kruskal stress-1. 'Texas Smash!' -- All Might, My Hero Academia
+Kruskal stress-1.
 
 ## WHEN TO USE
 

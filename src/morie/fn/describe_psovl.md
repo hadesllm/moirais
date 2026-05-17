@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Propensity score overlap check. 'Fear is the path to the dark side.'Out of chaos, comes order. — Friedrich Nietzsche's source for the canonical
+Propensity score overlap check.
 signature and assumptions.
 
 ## WHEN NOT TO USE

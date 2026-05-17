@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Chinese restaurant process and partition probability. 'Understand structure, you must.'Out of chaos, comes order. — Friedrich Nietzsche's source for the canonical
+Chinese restaurant process and partition probability.
 signature and assumptions.
 
 ## WHEN NOT TO USE

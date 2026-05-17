@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Price elasticity of demand. 'The ability to speak does not make you intelligent.' -- Qui-Gon Jinn
+Price elasticity of demand.
 
 ## WHEN TO USE
 

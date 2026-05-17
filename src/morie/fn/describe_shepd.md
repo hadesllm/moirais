@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Shepard diagram data. 'Plus Ultra!' -- All Might, My Hero Academia
+Shepard diagram data.
 
 ## WHEN TO USE
 

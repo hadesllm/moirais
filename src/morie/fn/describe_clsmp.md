@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Cluster sampling: select clusters, take all units within. 'We are what they grow beyond.'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Cluster sampling: select clusters, take all units within.
 signature and assumptions.
 
 ## WHEN NOT TO USE

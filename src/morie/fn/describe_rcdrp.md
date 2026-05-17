@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Drop influential votes. 'Hellzone Grenade!' -- Piccolo, Dragon Ball Z
+Drop influential votes.
 
 ## WHEN TO USE
 

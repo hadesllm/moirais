@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Hohmann transfer orbit computation. 'Ain't no thing like me, except me.' -- Rocket
+Hohmann transfer orbit computation.
 
 ## WHEN TO USE
 

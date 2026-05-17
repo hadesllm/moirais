@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Signal envelope via Hilbert transform. 'We are what they grow beyond.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Signal envelope via Hilbert transform.
 signature and assumptions.
 
 ## WHEN NOT TO USE

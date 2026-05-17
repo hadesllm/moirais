@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bootstrap resampling for any scalar statistic. 'Truly wonderful the mind of a child is.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Bootstrap resampling for any scalar statistic.
 signature and assumptions.
 
 ## WHEN NOT TO USE

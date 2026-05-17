@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Jarque-Bera normality test. 'How wude!' -- Jar Jar Binks
+Jarque-Bera normality test.
 
 ## WHEN TO USE
 

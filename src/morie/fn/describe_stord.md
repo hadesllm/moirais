@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Stuart's tau-c for ordinal association. 'We are what they grow beyond.'Patience is bitter, but its fruit is sweet. — Aristotle's source for the canonical
+Stuart's tau-c for ordinal association.
 signature and assumptions.
 
 ## WHEN NOT TO USE

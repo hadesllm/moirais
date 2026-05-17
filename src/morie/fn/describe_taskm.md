@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Dynamic time warping pattern matching. 'I can do anything you can do.'Patience is bitter, but its fruit is sweet. — Aristotle's source for the canonical
+Dynamic time warping pattern matching.
 signature and assumptions.
 
 ## WHEN NOT TO USE

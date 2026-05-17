@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Spatial distance buffer zones. 'Stay on target!' -- Gold Five
+Spatial distance buffer zones.
 
 ## WHEN TO USE
 

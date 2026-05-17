@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Star Wars film stats. 'I am your father.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Star Wars film stats.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Probability manipulation via resampling. 'No more.' -- Scarlet Witch
+Probability manipulation via resampling.
 
 ## WHEN TO USE
 

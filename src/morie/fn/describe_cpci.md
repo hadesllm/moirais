@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Clopper-Pearson exact binomial CI. 'We have hope. Rebellions are built on hope.' -- Jyn Erso
+Clopper-Pearson exact binomial CI.
 
 ## WHEN TO USE
 

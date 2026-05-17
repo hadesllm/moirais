@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Simple exponential smoothing. 'Much to learn, you still have.'Our greatest glory is not in never falling, but in rising every time we fall. — Confucius's source for the canonical
+Simple exponential smoothing.
 signature and assumptions.
 
 ## WHEN NOT TO USE

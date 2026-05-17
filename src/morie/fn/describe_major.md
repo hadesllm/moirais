@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-SMACOF majorize step (Guttman transform). 'Shine, Kakyoin!' -- DIO, JoJo's Bizarre Adventure
+SMACOF majorize step (Guttman transform).
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Censored (Tobit) regression. 'Much to learn, you still have.'A journey of a thousand miles begins with a single step. — Lao Tzu's source for the canonical
+Censored (Tobit) regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

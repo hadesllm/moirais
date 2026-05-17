@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Cryptographic hash (SHA-256). 'Some doors are meant to stay closed.' -- Lock
+Cryptographic hash (SHA-256).
 
 ## WHEN TO USE
 

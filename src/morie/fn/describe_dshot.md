@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Precision at K metric. 'I never miss.' -- Deadshot
+Precision at K metric.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-K-fold cross-validation. 'Let the past die. Kill it, if you have to.' -- Kylo Ren
+K-fold cross-validation.
 
 ## WHEN TO USE
 

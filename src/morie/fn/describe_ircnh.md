@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Robust covariance (MCD). 'Ironhide reporting.' -- Ironhide
+Robust covariance (MCD).
 
 ## WHEN TO USE
 

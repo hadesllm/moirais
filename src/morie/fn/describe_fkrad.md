@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Flesch-Kincaid readability grade level. 'Your focus determines your reality.' -- Qui-Gon Jinn
+Flesch-Kincaid readability grade level.
 
 ## WHEN TO USE
 

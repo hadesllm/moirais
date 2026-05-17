@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Deming (errors-in-variables) regression. 'The circle is now complete.'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu's source for the canonical
+Deming (errors-in-variables) regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

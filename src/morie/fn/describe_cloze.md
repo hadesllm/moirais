@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Cloze test scoring. 'Truly wonderful the mind of a child is.'An unexamined life is not worth living. — Socrates's source for the canonical
+Cloze test scoring.
 signature and assumptions.
 
 ## WHEN NOT TO USE

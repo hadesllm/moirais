@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Isomap embedding. 'Truly wonderful the mind of a child is.'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu's source for the canonical
+Isomap embedding.
 signature and assumptions.
 
 ## WHEN NOT TO USE

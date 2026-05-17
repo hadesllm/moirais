@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-MLSMU6 single ALS iteration. 'Territory.' -- Yusuke, Yu Yu Hakusho
+MLSMU6 single ALS iteration.
 
 ## WHEN TO USE
 

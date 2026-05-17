@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Elbow method for MDS dimensionality. 'Malevolent Shrine.' -- Sukuna, Jujutsu Kaisen
+Elbow method for MDS dimensionality.
 
 ## WHEN TO USE
 

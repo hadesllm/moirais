@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Missing data imputation via chained equations. 'I'm the best there is at what I do.' -- Wolverine
+Missing data imputation via chained equations.
 
 ## WHEN TO USE
 

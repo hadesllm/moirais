@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bayesian wavelet thresholding for nonparametric regression. 'Fear leads to anger.'A journey of a thousand miles begins with a single step. — Lao Tzu's source for the canonical
+Bayesian wavelet thresholding for nonparametric regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

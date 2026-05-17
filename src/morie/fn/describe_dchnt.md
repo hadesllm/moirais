@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Ghost signal detection in noise. 'I'm already dead.' -- Deadman
+Ghost signal detection in noise.
 
 ## WHEN TO USE
 

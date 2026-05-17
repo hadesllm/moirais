@@ -43,7 +43,6 @@ def block_kriging(
 
     .. epigraph::
 
-        "I am no man." -- Eowyn, LOTR
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

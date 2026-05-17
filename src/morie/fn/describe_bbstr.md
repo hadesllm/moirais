@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bayesian bootstrap (Rubin). 'That is why you fail.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Bayesian bootstrap (Rubin).
 signature and assumptions.
 
 ## WHEN NOT TO USE

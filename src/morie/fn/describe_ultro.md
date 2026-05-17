@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Particle swarm optimization. 'There are no strings on me.' -- Ultron
+Particle swarm optimization.
 
 ## WHEN TO USE
 

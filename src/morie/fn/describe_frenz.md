@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Lyapunov exponent. 'Chaos! More chaos!' -- Frenzy
+Lyapunov exponent.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Domain adaptation via MMD. 'I can take you anywhere, but you gotta want to go.' -- The Trainman
+Domain adaptation via MMD.
 
 ## WHEN TO USE
 

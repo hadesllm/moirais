@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Cellular automata urban growth model. 'Welcome to the real world.'All models are wrong, but some are useful. — George E. P. Box's source for the canonical
+Cellular automata urban growth model.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-System of equations solver (Gauss-Seidel). 'I have been waiting for you.' -- The Architect
+System of equations solver (Gauss-Seidel).
 
 ## WHEN TO USE
 

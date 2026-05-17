@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Feature engineering (polynomial expansion). 'I have an idea!' -- Wheeljack
+Feature engineering (polynomial expansion).
 
 ## WHEN TO USE
 

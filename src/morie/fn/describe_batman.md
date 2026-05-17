@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Robust M-estimator. 'You have power over your mind — not outside events. — Marcus Aurelius'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Robust M-estimator.
 signature and assumptions.
 
 ## WHEN NOT TO USE

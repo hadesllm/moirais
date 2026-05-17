@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Markov chain weather model. 'Do you know what happens to a toad when it is struck by lightning?' -- Storm
+Markov chain weather model.
 
 ## WHEN TO USE
 

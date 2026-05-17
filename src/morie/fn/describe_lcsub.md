@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Longest common subsequence. 'Patience you must have.'Knowledge itself is power. — Francis Bacon's source for the canonical
+Longest common subsequence.
 signature and assumptions.
 
 ## WHEN NOT TO USE

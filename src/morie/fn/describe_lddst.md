@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Local Dirichlet density estimation. 'Size matters not, judge me by size do you?'We are what we repeatedly do. Excellence is a habit. — Aristotle's source for the canonical
+Local Dirichlet density estimation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

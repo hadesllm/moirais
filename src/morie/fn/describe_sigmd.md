@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Sigmoid activation with gradient. 'Luminous beings are we, not this crude matter.'Character is destiny. — Heraclitus's source for the canonical
+Sigmoid activation with gradient.
 signature and assumptions.
 
 ## WHEN NOT TO USE

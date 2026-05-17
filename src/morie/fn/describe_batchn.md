@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Batch normalization. 'Truly wonderful, the mind of a child is.'We are what we repeatedly do. Excellence is a habit. — Aristotle's source for the canonical
+Batch normalization.
 signature and assumptions.
 
 ## WHEN NOT TO USE

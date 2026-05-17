@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-GP kernel functions: SE, Matern, RQ, periodic. 'These are the droids.' -- ObiWan
+GP kernel functions: SE, Matern, RQ, periodic.
 
 ## WHEN TO USE
 

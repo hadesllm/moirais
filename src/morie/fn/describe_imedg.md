@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Edge detection via Sobel or Prewitt operators. 'Your focus determines your reality.' -- Qui-Gon Jinn
+Edge detection via Sobel or Prewitt operators.
 
 ## WHEN TO USE
 

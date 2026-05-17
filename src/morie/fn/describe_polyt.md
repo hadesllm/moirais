@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Polya tree prior construction. 'Tree, I am not.'An unexamined life is not worth living. — Socrates's source for the canonical
+Polya tree prior construction.
 signature and assumptions.
 
 ## WHEN NOT TO USE

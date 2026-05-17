@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Variance change-point detection. 'Be careful not to choke on your aspirations.'Everything flows. — Heraclitus's source for the canonical
+Variance change-point detection.
 signature and assumptions.
 
 ## WHEN NOT TO USE

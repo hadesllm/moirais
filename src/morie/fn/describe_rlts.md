@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Least trimmed squares regression. 'There is always a bigger fish.' -- Qui-Gon Jinn
+Least trimmed squares regression.
 
 ## WHEN TO USE
 

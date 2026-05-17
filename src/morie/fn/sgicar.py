@@ -36,7 +36,6 @@ def intrinsic_car_model(
 
     .. epigraph::
 
-        "Machines aren't the enemy." -- Aloy, Horizon
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     W = np.asarray(W, dtype=np.float64)

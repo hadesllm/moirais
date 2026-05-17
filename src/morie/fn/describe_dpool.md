@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Jackknife delete-d estimator. 'Maximum effort!' -- Deadpool
+Jackknife delete-d estimator.
 
 ## WHEN TO USE
 

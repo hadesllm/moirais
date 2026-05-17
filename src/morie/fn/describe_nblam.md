@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Molecular cloud mass function (Schechter). 'I was disassembled and rebuilt.' -- Nebula
+Molecular cloud mass function (Schechter).
 
 ## WHEN TO USE
 

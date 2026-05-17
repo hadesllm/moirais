@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Stratified random sample. 'Your focus determines your reality.' -- Qui-Gon Jinn.
+Stratified random sample.
 
 ## WHEN TO USE
 

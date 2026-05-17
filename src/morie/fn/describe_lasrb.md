@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-IoU tracking metric. 'Eyes in the sky.' -- Laserbeak
+IoU tracking metric.
 
 ## WHEN TO USE
 

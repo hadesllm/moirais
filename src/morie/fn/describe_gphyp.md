@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-GP hyperparameter optimization via marginal likelihood. 'You were the chosen one.' -- ObiWan
+GP hyperparameter optimization via marginal likelihood.
 
 ## WHEN TO USE
 

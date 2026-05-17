@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Co-occurrence matrix analysis. 'We are Venom.' -- Venom
+Co-occurrence matrix analysis.
 
 ## WHEN TO USE
 

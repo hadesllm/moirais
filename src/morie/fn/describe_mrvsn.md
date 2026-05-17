@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Granger causality test. 'Choice is an illusion.' -- The Merovingian
+Granger causality test.
 
 ## WHEN TO USE
 

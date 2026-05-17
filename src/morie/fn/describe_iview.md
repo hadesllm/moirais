@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Image viewer and info. 'The garbage'll do!' -- Rey
+Image viewer and info.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Random half-sampling estimator. 'Perfectly balanced, as all things should be.' -- Thanos
+Random half-sampling estimator.
 
 ## WHEN TO USE
 

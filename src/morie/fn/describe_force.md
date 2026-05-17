@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-ATE difference-in-means. 'He who is brave is free. — Seneca'The only true wisdom is in knowing you know nothing. — Socrates's source for the canonical
+ATE difference-in-means.
 signature and assumptions.
 
 ## WHEN NOT TO USE

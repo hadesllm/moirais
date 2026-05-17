@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Network centrality measures. 'When I was a boy...' -- Kingpin
+Network centrality measures.
 
 ## WHEN TO USE
 

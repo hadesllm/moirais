@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-LDL^T factorization for symmetric matrices. 'The circle is now complete.'The whole is greater than the sum of its parts. — Aristotle's source for the canonical
+LDL^T factorization for symmetric matrices.
 signature and assumptions.
 
 ## WHEN NOT TO USE

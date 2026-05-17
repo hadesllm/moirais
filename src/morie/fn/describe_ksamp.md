@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-K-sample Anderson-Darling test. 'We are brave. -- Rose Tico'
+K-sample Anderson-Darling test.
 
 ## WHEN TO USE
 

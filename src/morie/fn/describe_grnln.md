@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Green's function convolution. 'In brightest day, in blackest night.' -- Green Lantern
+Green's function convolution.
 
 ## WHEN TO USE
 

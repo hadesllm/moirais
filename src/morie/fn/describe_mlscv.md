@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-MLSMU6 convergence check. 'Jagan Eye.' -- Hiei, Yu Yu Hakusho
+MLSMU6 convergence check.
 
 ## WHEN TO USE
 

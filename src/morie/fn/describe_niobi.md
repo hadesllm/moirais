@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-A* pathfinding algorithm. 'Lock and load.' -- Niobe
+A* pathfinding algorithm.
 
 ## WHEN TO USE
 

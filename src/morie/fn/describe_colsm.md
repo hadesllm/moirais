@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Material stress-strain curve analysis. 'I will break you.' -- Colossus
+Material stress-strain curve analysis.
 
 ## WHEN TO USE
 

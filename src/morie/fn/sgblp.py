@@ -51,7 +51,6 @@ def blup_spatial(
 
     .. epigraph::
 
-        "Does this unit have a soul?" -- Legion, Mass Effect
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     X = np.asarray(X, dtype=np.float64)

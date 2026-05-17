@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Precision-recall at top-k. 'You and I see things differently.' -- Hawkeye
+Precision-recall at top-k.
 
 ## WHEN TO USE
 

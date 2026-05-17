@@ -48,7 +48,6 @@ def bayesian_hierarchical_spatial(
 
     .. epigraph::
 
-        "An eye for an eye makes the whole world blind." -- Edward, FMA
     """
     rng_obj = np.random.default_rng(seed)
     Z = np.asarray(Z, dtype=np.float64).ravel()

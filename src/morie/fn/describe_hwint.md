@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Holt-Winters additive seasonal method. 'The belonging you seek is ahead of you.' -- Maz Kanata
+Holt-Winters additive seasonal method.
 
 ## WHEN TO USE
 

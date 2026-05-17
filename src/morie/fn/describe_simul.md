@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Goodness of fit to simulation. 'What is real? How do you define real?'An unexamined life is not worth living. — Socrates's source for the canonical
+Goodness of fit to simulation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

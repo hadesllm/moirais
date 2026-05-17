@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Hermite interpolation. 'Impressive. Most impressive.'You have power over your mind — not outside events. — Marcus Aurelius's source for the canonical
+Hermite interpolation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

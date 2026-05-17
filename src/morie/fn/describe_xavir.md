@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Xavier/Glorot weight initialization. 'Study the past if you would define the future. — Confucius' -- Various
+Xavier/Glorot weight initialization.
 
 ## WHEN TO USE
 

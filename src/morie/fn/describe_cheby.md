@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Chebyshev (L-infinity) distance. 'Patience is bitter, but its fruit is sweet. — Aristotle' -- Ahsoka Tano
+Chebyshev (L-infinity) distance.
 
 ## WHEN TO USE
 

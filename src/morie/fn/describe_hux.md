@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Huber robust regression. 'Careful not to choke on your aspirations.'We are what we repeatedly do. Excellence is a habit. — Aristotle's source for the canonical
+Huber robust regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

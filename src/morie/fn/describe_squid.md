@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Threat scoring model. 'They are everywhere and they are no one.'Out of chaos, comes order. — Friedrich Nietzsche's source for the canonical
+Threat scoring model.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Object detection precision/recall. 'They are coming.'The only true wisdom is in knowing you know nothing. — Socrates's source for the canonical
+Object detection precision/recall.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bootstrap aggregating (bagging). 'In time, the suffering of your people will persuade you.' -- Nute Gunray
+Bootstrap aggregating (bagging).
 
 ## WHEN TO USE
 

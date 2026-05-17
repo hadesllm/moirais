@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Simple correspondence analysis. 'Luminous beings are we, not this crude matter.'All models are wrong, but some are useful. — George E. P. Box's source for the canonical
+Simple correspondence analysis.
 signature and assumptions.
 
 ## WHEN NOT TO USE

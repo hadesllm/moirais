@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Design effect (DEFF) from survey weights. 'The dark side clouds everything.'Our greatest glory is not in never falling, but in rising every time we fall. — Confucius's source for the canonical
+Design effect (DEFF) from survey weights.
 signature and assumptions.
 
 ## WHEN NOT TO USE

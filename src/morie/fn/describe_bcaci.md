@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-BCa bootstrap confidence interval. 'Do. Or do not. There is no try.'Confine yourself to the present. — Marcus Aurelius's source for the canonical
+BCa bootstrap confidence interval.
 signature and assumptions.
 
 ## WHEN NOT TO USE

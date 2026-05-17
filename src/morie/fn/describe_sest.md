@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-S-estimator for robust regression. 'Real knowledge is to know the extent of one\'s ignorance. — Confucius'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+S-estimator for robust regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

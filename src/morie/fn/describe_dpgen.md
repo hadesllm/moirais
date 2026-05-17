@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Dirichlet process stick-breaking construction. 'It's dangerous to go alone.' -- Old Man
+Dirichlet process stick-breaking construction.
 
 ## WHEN TO USE
 

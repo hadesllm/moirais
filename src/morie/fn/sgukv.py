@@ -40,7 +40,6 @@ def universal_kriging_variance(
 
     .. epigraph::
 
-        "Fly, you fools!" -- Gandalf, LOTR
     """
     coords = np.asarray(coords, dtype=np.float64)
     target = np.asarray(target, dtype=np.float64).ravel()

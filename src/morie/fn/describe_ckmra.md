@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Cochran-Mantel-Haenszel test. 'I am the Senate.'Time discovers truth. — Seneca's source for the canonical
+Cochran-Mantel-Haenszel test.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Regression discontinuity design. 'There has been an awakening.' -- Snoke
+Regression discontinuity design.
 
 ## WHEN TO USE
 

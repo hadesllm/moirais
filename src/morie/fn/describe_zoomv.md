@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Velocity profile estimation. 'You can't lock up the darkness.' -- Zoom
+Velocity profile estimation.
 
 ## WHEN TO USE
 

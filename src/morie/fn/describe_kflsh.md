@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Acceleration profile analysis. 'Fastest kid alive.' -- Kid Flash
+Acceleration profile analysis.
 
 ## WHEN TO USE
 

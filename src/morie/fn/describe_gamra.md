@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Accelerated failure time (AFT) model. 'I have lived most of my life surrounded by enemies.' -- Gamora
+Accelerated failure time (AFT) model.
 
 ## WHEN TO USE
 

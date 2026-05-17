@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-VAE latent sampling. 'Truth comes out of error more readily than out of confusion. — Francis Bacon' -- Primus
+VAE latent sampling.
 
 ## WHEN TO USE
 

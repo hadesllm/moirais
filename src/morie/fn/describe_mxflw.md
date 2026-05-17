@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Ford-Fulkerson max flow. 'Power! Unlimited power!'Confine yourself to the present. — Marcus Aurelius's source for the canonical
+Ford-Fulkerson max flow.
 signature and assumptions.
 
 ## WHEN NOT TO USE

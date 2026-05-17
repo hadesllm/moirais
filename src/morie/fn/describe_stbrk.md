@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Stick-breaking weights (GEM distribution). 'I sense a disturbance.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Stick-breaking weights (GEM distribution).
 signature and assumptions.
 
 ## WHEN NOT TO USE

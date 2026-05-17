@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Outlier detection. 'It's a trap!' -- Admiral Ackbar
+Outlier detection.
 
 ## WHEN TO USE
 

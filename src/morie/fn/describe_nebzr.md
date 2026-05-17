@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-RRT trajectory planning. 'I believe.'Real knowledge is to know the extent of one's ignorance. — Confucius's source for the canonical
+RRT trajectory planning.
 signature and assumptions.
 
 ## WHEN NOT TO USE

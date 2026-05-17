@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Poisson regression. 'Character is destiny. — Heraclitus'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Poisson regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Funnel plot data for publication bias. 'Life is really simple, but we insist on making it complicated. — Confucius' -- Ahsoka Tano
+Funnel plot data for publication bias.
 
 ## WHEN TO USE
 

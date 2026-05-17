@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Label MDS points. 'Black Flash!' -- Various, Jujutsu Kaisen
+Label MDS points.
 
 ## WHEN TO USE
 

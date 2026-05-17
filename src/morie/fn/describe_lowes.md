@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-LOWESS smoother. 'Luminous beings are we, not this crude matter.'Knowledge itself is power. — Francis Bacon's source for the canonical
+LOWESS smoother.
 signature and assumptions.
 
 ## WHEN NOT TO USE

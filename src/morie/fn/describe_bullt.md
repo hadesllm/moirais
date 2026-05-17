@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Time-stretching algorithm. 'Bullet time.'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu's source for the canonical
+Time-stretching algorithm.
 signature and assumptions.
 
 ## WHEN NOT TO USE

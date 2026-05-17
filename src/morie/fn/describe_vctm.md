@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Victimization survey rate. 'Stay on target.' -- Gold Five
+Victimization survey rate.
 
 ## WHEN TO USE
 

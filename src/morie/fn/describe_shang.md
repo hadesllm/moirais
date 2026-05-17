@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Circular harmonic analysis. 'You gave me ten rings. I will use them all.' -- Shang-Chi
+Circular harmonic analysis.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Game-theoretic defense allocation. 'What is now proved was once only imagined. — William Blake'Time discovers truth. — Seneca's source for the canonical
+Game-theoretic defense allocation.
 signature and assumptions.
 
 ## WHEN NOT TO USE

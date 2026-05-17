@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Terrain analysis. 'I was never on your side.' -- Terra
+Terrain analysis.
 
 ## WHEN TO USE
 

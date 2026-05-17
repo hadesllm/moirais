@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Plot ideal points and stimuli. 'Spirit Bomb!' -- Goku, Dragon Ball Z
+Plot ideal points and stimuli.
 
 ## WHEN TO USE
 

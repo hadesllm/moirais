@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Missing data sensitivity analysis. 'Final Flash!' -- Vegeta, Dragon Ball Z
+Missing data sensitivity analysis.
 
 ## WHEN TO USE
 

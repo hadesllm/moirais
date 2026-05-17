@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-2D rotation matrix. 'Dismantle.' -- Sukuna, Jujutsu Kaisen
+2D rotation matrix.
 
 ## WHEN TO USE
 

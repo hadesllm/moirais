@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Mahalanobis distance. 'Judge me by my size, do you?'The whole is greater than the sum of its parts. — Aristotle's source for the canonical
+Mahalanobis distance.
 signature and assumptions.
 
 ## WHEN NOT TO USE

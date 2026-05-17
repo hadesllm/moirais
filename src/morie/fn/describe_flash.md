@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Fast approximate nearest neighbor search. 'My name is Barry Allen, and I am the fastest man alive.' -- The Flash
+Fast approximate nearest neighbor search.
 
 ## WHEN TO USE
 

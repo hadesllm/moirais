@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Gaussian process regression with SE kernel. 'Rebellions are built on hope.' -- Jyn
+Gaussian process regression with SE kernel.
 
 ## WHEN TO USE
 

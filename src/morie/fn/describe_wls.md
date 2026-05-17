@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Weighted least squares. 'Size matters not.'Confine yourself to the present. — Marcus Aurelius's source for the canonical
+Weighted least squares.
 signature and assumptions.
 
 ## WHEN NOT TO USE

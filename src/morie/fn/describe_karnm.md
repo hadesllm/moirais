@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Karnaugh map grouping. 'Knowing yourself is the beginning of all wisdom. — Aristotle' -- Chirrut Imwe
+Karnaugh map grouping.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bayesian FDR. 'All models are wrong, but some are useful. — George E. P. Box'
+Bayesian FDR.
 
 ## WHEN TO USE
 

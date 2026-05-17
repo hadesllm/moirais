@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Scree plot data for MDS dimensionality. 'Hollow Purple.' -- Gojo, Jujutsu Kaisen
+Scree plot data for MDS dimensionality.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-James-Stein shrinkage estimator. 'It's a small world after all.' -- The Atom
+James-Stein shrinkage estimator.
 
 ## WHEN TO USE
 

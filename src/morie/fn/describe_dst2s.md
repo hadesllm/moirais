@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Distance to squared element-wise. 'Believe it!' -- Naruto, Naruto
+Distance to squared element-wise.
 
 ## WHEN TO USE
 

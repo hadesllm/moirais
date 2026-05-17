@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Constraint satisfaction solver. 'No one gets through.' -- Barricade
+Constraint satisfaction solver.
 
 ## WHEN TO USE
 

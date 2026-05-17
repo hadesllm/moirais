@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Jackknife estimator. 'Utini!' -- Jawa
+Jackknife estimator.
 
 ## WHEN TO USE
 

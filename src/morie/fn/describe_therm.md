@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Feeling thermometer standardization. 'Dragon of the Darkness Flame!' -- Hiei, Yu Yu Hakusho
+Feeling thermometer standardization.
 
 ## WHEN TO USE
 

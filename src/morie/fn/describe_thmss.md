@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Entity resolution / record linkage. 'My name is.' -- Thomas Anderson
+Entity resolution / record linkage.
 
 ## WHEN TO USE
 

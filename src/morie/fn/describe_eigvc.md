@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Extract top eigenvectors. 'Gear Fifth!' -- Luffy, One Piece
+Extract top eigenvectors.
 
 ## WHEN TO USE
 

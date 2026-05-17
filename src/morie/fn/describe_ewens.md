@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Ewens sampling formula for random partitions. 'Mutate, alleles do.'Confine yourself to the present. — Marcus Aurelius's source for the canonical
+Ewens sampling formula for random partitions.
 signature and assumptions.
 
 ## WHEN NOT TO USE

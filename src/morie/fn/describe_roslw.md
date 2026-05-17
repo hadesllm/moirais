@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Wind rose / rose plot construction. 'I make my own choices.' -- Rose Wilson
+Wind rose / rose plot construction.
 
 ## WHEN TO USE
 

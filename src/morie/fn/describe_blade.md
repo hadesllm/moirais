@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Edge detection (Canny variant). 'Some motherfuckers are always trying to ice-skate uphill.' -- Blade
+Edge detection (Canny variant).
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Kalman filter tracking. 'I never lose a trail.' -- Hound
+Kalman filter tracking.
 
 ## WHEN TO USE
 

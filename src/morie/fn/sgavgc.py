@@ -38,7 +38,6 @@ def average_covariance_block(
 
     .. epigraph::
 
-        "Sir, permission to leave the station." -- Master Chief, Halo
     """
     bc = np.asarray(coords_block, dtype=np.float64)
     m = len(bc)

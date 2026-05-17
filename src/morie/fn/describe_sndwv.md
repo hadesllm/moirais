@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Cepstral analysis. 'Soundwave superior.' -- Soundwave
+Cepstral analysis.
 
 ## WHEN TO USE
 

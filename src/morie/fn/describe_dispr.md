@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Disparity fit via isotonic regression. 'Detroit Smash!' -- All Might, My Hero Academia
+Disparity fit via isotonic regression.
 
 ## WHEN TO USE
 

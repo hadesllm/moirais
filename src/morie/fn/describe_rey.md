@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-OLS linear regression. 'The belonging you seek is not behind you, it is ahead.' -- Maz Kanata
+OLS linear regression.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Surface roughness metrics. 'Looking good is half the battle.' -- Sunstreaker
+Surface roughness metrics.
 
 ## WHEN TO USE
 

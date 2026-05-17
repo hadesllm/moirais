@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-FMEA Risk Priority Number scoring. 'I have a bad feeling about this.' -- Everyone
+FMEA Risk Priority Number scoring.
 
 ## WHEN TO USE
 

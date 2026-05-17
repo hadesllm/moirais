@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Extract sorted eigenvalues. 'Rasengan!' -- Naruto, Naruto
+Extract sorted eigenvalues.
 
 ## WHEN TO USE
 

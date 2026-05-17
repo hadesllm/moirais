@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Ensemble model aggregation. 'I am Ultra Magnus, and I will lead.' -- Ultra Magnus
+Ensemble model aggregation.
 
 ## WHEN TO USE
 

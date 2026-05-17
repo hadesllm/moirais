@@ -28,7 +28,6 @@ def moran_residual_test(residuals: np.ndarray, W: np.ndarray, cdf=None) -> Spati
 
     .. epigraph::
 
-        "I have nothing more to hide." -- Freya, God of War
     """
     from scipy.stats import norm
 

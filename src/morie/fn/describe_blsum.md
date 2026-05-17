@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Simplified BLOSUM62 alignment score. 'Judge me by my size, do you?'Everything flows. — Heraclitus's source for the canonical
+Simplified BLOSUM62 alignment score.
 signature and assumptions.
 
 ## WHEN NOT TO USE

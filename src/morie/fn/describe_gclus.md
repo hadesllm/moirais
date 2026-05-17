@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Geographic k-means clustering. 'Rebellions are built on hope.' -- Jyn Erso
+Geographic k-means clustering.
 
 ## WHEN TO USE
 

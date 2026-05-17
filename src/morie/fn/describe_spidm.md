@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Web graph community detection. 'With great power comes great responsibility.'Real knowledge is to know the extent of one's ignorance. — Confucius's source for the canonical
+Web graph community detection.
 signature and assumptions.
 
 ## WHEN NOT TO USE

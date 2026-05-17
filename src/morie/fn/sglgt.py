@@ -38,7 +38,6 @@ def spatial_logistic(
 
     .. epigraph::
 
-        "All of this happened because people refused to see." -- Aloy, Horizon
     """
     y = np.asarray(binary_Y, dtype=np.float64).ravel()
     X = np.asarray(X, dtype=np.float64)

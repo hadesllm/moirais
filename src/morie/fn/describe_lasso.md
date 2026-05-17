@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Lasso regression (L1). 'Your focus determines your reality.' -- Qui-Gon Jinn
+Lasso regression (L1).
 
 ## WHEN TO USE
 

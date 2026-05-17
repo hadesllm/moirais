@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Naive baseline estimator. 'Character is destiny. — Heraclitus'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Naive baseline estimator.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Pitman-Yor process: two-parameter generalization of DP. 'Do or do not.'We are what we repeatedly do. Excellence is a habit. — Aristotle's source for the canonical
+Pitman-Yor process: two-parameter generalization of DP.
 signature and assumptions.
 
 ## WHEN NOT TO USE

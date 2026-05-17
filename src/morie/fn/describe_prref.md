@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Procrustes reflection and rotation. 'Cleave.' -- Sukuna, Jujutsu Kaisen
+Procrustes reflection and rotation.
 
 ## WHEN TO USE
 

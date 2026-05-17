@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Optimal transport / Wasserstein distance. 'Freedom is the right of all sentient beings.'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Optimal transport / Wasserstein distance.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Elastic deformation field computation. 'I'm Ms. Marvel!' -- Kamala Khan
+Elastic deformation field computation.
 
 ## WHEN TO USE
 

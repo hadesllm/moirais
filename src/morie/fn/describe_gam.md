@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Generalized additive model (B-spline basis + OLS). 'Size matters not.'We are what we repeatedly do. Excellence is a habit. — Aristotle's source for the canonical
+Generalized additive model (B-spline basis + OLS).
 signature and assumptions.
 
 ## WHEN NOT TO USE

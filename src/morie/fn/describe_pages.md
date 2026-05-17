@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Page's L trend test. 'Hope is not lost today. It is found. -- Poe'
+Page's L trend test.
 
 ## WHEN TO USE
 

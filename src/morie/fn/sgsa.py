@@ -49,7 +49,6 @@ def simulated_annealing_spatial(
 
     .. epigraph::
 
-        "Nothing is written in stone." -- Noctis, FF15
     """
     rng = np.random.default_rng(seed)
     Z = np.asarray(Z, dtype=np.float64).ravel().copy()

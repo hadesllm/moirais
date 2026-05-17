@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-CVSS v3.1 base score calculator. 'Dodge this.' -- Trinity
+CVSS v3.1 base score calculator.
 
 ## WHEN TO USE
 

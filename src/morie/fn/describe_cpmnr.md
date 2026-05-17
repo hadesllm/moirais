@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Mean change-point detection via CUSUM. 'In time, the suffering of your people will persuade you.' -- Count Dooku
+Mean change-point detection via CUSUM.
 
 ## WHEN TO USE
 

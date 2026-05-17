@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Pairwise agreement scores. 'Destructo Disc!' -- Krillin, Dragon Ball Z
+Pairwise agreement scores.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Label / one-hot encoding. 'Not like this. Not like this.' -- Switch
+Label / one-hot encoding.
 
 ## WHEN TO USE
 

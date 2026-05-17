@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Transfer learning feature extraction. 'Don't touch me.' -- Rogue
+Transfer learning feature extraction.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-GDP growth rate and trend. 'Power! Unlimited power!'Time discovers truth. — Seneca's source for the canonical
+GDP growth rate and trend.
 signature and assumptions.
 
 ## WHEN NOT TO USE

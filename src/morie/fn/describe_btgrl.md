@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Bagplot for bivariate outliers. 'The night is darkest before the dawn.' -- Batgirl
+Bagplot for bivariate outliers.
 
 ## WHEN TO USE
 

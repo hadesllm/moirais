@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Log-linear model for multi-way tables. 'Truly wonderful, the mind of a child is.'Difficulties strengthen the mind, as labor does the body. — Seneca's source for the canonical
+Log-linear model for multi-way tables.
 signature and assumptions.
 
 ## WHEN NOT TO USE

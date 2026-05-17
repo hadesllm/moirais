@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Unfolding stress diagnostic. 'Shotgun!' -- Yusuke, Yu Yu Hakusho
+Unfolding stress diagnostic.
 
 ## WHEN TO USE
 

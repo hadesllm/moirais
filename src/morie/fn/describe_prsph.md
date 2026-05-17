@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Fidelity metric (SSIM). 'Tell me, is the woman worth it?' -- Persephone
+Fidelity metric (SSIM).
 
 ## WHEN TO USE
 

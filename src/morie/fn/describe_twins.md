@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Phase locking value (PLV). 'We are not here because we are free.' -- The Twins
+Phase locking value (PLV).
 
 ## WHEN TO USE
 

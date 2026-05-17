@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Poisson change-point model. 'I sense great fear in you.'All models are wrong, but some are useful. — George E. P. Box's source for the canonical
+Poisson change-point model.
 signature and assumptions.
 
 ## WHEN NOT TO USE

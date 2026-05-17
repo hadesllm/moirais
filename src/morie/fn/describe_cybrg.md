@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Cybernetic control system simulation. 'Booyah!' -- Cyborg
+Cybernetic control system simulation.
 
 ## WHEN TO USE
 

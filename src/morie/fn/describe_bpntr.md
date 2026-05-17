@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Signal attenuation / damping model. 'Confine yourself to the present. — Marcus Aurelius' -- T'Challa
+Signal attenuation / damping model.
 
 ## WHEN TO USE
 

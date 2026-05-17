@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Pi 5 system status for Perseus. 'Knowing yourself is the beginning of all wisdom. — Aristotle'Knowing yourself is the beginning of all wisdom. — Aristotle's source for the canonical
+Pi 5 system status for Perseus.
 signature and assumptions.
 
 ## WHEN NOT TO USE

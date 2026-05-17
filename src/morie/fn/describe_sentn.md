@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Lexicon-based sentiment analysis. 'There is always a bigger fish.' -- Qui-Gon Jinn
+Lexicon-based sentiment analysis.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Initial start values for MDS. 'WRYYYYY!' -- DIO, JoJo's Bizarre Adventure
+Initial start values for MDS.
 
 ## WHEN TO USE
 

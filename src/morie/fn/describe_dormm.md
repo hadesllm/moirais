@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Recurrence quantification analysis. 'Dormammu, I have come to bargain.' -- Doctor Strange
+Recurrence quantification analysis.
 
 ## WHEN TO USE
 

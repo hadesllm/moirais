@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Propensity score calibration. 'Out of chaos, comes order. — Friedrich Nietzsche'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Propensity score calibration.
 signature and assumptions.
 
 ## WHEN NOT TO USE

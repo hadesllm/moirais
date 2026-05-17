@@ -27,7 +27,6 @@ def mspe_kriging(krig_var: np.ndarray) -> SpatialResult:
 
     .. epigraph::
 
-        "Cortana, all I need to know is did we lose them." -- Chief, Halo
     """
     kv = np.asarray(krig_var, dtype=np.float64).ravel()
     return SpatialResult(

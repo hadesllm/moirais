@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Structural break test. 'It does not matter how slowly you go as long as you do not stop. — Confucius' -- Bane
+Structural break test.
 
 ## WHEN TO USE
 

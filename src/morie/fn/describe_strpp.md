@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Stress per point. 'Domain Expansion!' -- Gojo, Jujutsu Kaisen
+Stress per point.
 
 ## WHEN TO USE
 

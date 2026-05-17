@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Silhouette score. 'You underestimate my power.'Knowledge itself is power. — Francis Bacon's source for the canonical
+Silhouette score.
 signature and assumptions.
 
 ## WHEN NOT TO USE

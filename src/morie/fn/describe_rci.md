@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Jacobson-Truax Reliable Change Index. 'Hope is like the sun.' -- Poe Dameron
+Jacobson-Truax Reliable Change Index.
 
 ## WHEN TO USE
 

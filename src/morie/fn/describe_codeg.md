@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Random matrix theory (Wigner semicircle). 'It is the question that drives us.' -- Trinity
+Random matrix theory (Wigner semicircle).
 
 ## WHEN TO USE
 

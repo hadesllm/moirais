@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Biot-Savart magnetic field computation. 'You are all beneath me.' -- Magneto
+Biot-Savart magnetic field computation.
 
 ## WHEN TO USE
 

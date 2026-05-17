@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-System availability. 'The garbage will do!' -- Rey
+System availability.
 
 ## WHEN TO USE
 

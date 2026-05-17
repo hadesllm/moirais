@@ -48,7 +48,6 @@ def kriging_conditional_sim(
 
     .. epigraph::
 
-        "I am the shadow, the true self." -- Shadow, Persona 4
     """
     Z = np.asarray(Z, dtype=np.float64).ravel()
     coords = np.asarray(coords, dtype=np.float64)

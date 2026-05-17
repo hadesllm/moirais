@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Spectral clustering variant. 'I was born yesterday.' -- Vision
+Spectral clustering variant.
 
 ## WHEN TO USE
 

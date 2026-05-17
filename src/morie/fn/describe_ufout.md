@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Unfolding outlier detection. 'Big Bang Attack!' -- Vegeta, Dragon Ball Z
+Unfolding outlier detection.
 
 ## WHEN TO USE
 

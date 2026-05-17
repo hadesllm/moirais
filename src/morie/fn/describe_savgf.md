@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Savitzky-Golay filter. 'Do or do not, there is no try.'Statistics is the grammar of science. — Karl Pearson's source for the canonical
+Savitzky-Golay filter.
 signature and assumptions.
 
 ## WHEN NOT TO USE

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Stellar luminosity function. 'I am not from your planet.' -- Starfire
+Stellar luminosity function.
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Information gain / mutual information. 'One door, one key.' -- The Keymaker
+Information gain / mutual information.
 
 ## WHEN TO USE
 

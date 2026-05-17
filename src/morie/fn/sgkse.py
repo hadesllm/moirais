@@ -36,7 +36,6 @@ def standardized_prediction_error(
 
     .. epigraph::
 
-        "We'll bang, ok?" -- Shepard, Mass Effect
     """
     err = np.asarray(errors, dtype=np.float64).ravel()
     kv = np.asarray(krig_var, dtype=np.float64).ravel()

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-LSB steganography. 'Silent but deadly.' -- Ravage
+LSB steganography.
 
 ## WHEN TO USE
 

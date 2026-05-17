@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-LOESS/LOWESS smoother. 'Rebellions are built on hope.' -- Jyn Erso
+LOESS/LOWESS smoother.
 
 ## WHEN TO USE
 

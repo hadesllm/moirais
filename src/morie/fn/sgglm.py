@@ -38,7 +38,6 @@ def spatial_glm_poisson(
 
     .. epigraph::
 
-        "We are not our mistakes." -- Aloy, Horizon
     """
     y = np.asarray(counts, dtype=np.float64).ravel()
     X = np.asarray(X, dtype=np.float64)

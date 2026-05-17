@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Mutation rate estimation (Jukes-Cantor). 'Oh my stars and garters!' -- Beast
+Mutation rate estimation (Jukes-Cantor).
 
 ## WHEN TO USE
 

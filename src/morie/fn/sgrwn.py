@@ -27,7 +27,6 @@ def row_normalize_weights(W: np.ndarray) -> SpatialResult:
 
     .. epigraph::
 
-        "I am a god, boy." -- Baldur, God of War
     """
     W = np.asarray(W, dtype=np.float64).copy()
     rs = W.sum(axis=1, keepdims=True)

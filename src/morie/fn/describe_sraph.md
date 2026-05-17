@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Input validation / sanitization metrics. 'I protect that which matters most.' -- Seraph
+Input validation / sanitization metrics.
 
 ## WHEN TO USE
 

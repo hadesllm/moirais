@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Deviance Information Criterion. 'Powerful you have become. -- Dooku'
+Deviance Information Criterion.
 
 ## WHEN TO USE
 

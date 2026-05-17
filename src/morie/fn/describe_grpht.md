@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Graph from edge list. 'We are what they grow beyond.'A journey of a thousand miles begins with a single step. — Lao Tzu's source for the canonical
+Graph from edge list.
 signature and assumptions.
 
 ## WHEN NOT TO USE

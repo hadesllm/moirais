@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Catenary curve fitting. 'Meow.' -- Catwoman
+Catenary curve fitting.
 
 ## WHEN TO USE
 

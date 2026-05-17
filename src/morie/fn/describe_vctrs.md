@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Weight initialization (Xavier/He). 'Errors using inadequate data are much less than those using no data at all. — Charles Babbage' -- Vector Sigma
+Weight initialization (Xavier/He).
 
 ## WHEN TO USE
 

@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-N-gram frequency analysis. 'I find your lack of faith disturbing.'Difficulties strengthen the mind, as labor does the body. — Seneca's source for the canonical
+N-gram frequency analysis.
 signature and assumptions.
 
 ## WHEN NOT TO USE

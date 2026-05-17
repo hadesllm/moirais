@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Harrell's C concordance statistic. 'Puddin!' -- Harley Quinn
+Harrell's C concordance statistic.
 
 ## WHEN TO USE
 

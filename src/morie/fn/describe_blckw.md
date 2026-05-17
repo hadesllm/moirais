@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-SNR degradation model. 'All communications jammed.' -- Blackout
+SNR degradation model.
 
 ## WHEN TO USE
 

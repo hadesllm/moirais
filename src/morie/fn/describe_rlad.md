@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Least absolute deviations regression. 'The dark side clouds everything.'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Least absolute deviations regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

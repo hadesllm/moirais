@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-PELT change-point detection. 'Power! Unlimited power!'Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu's source for the canonical
+PELT change-point detection.
 signature and assumptions.
 
 ## WHEN NOT TO USE

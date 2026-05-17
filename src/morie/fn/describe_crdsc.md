@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Scale coordinates Z = V * sqrt(Lambda). 'Gomu Gomu no...' -- Luffy, One Piece
+Scale coordinates Z = V * sqrt(Lambda).
 
 ## WHEN TO USE
 

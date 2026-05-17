@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Wald test. 'This party is over.' -- Mace Windu
+Wald test.
 
 ## WHEN TO USE
 

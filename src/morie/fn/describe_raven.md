@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Raven's progressive matrices scoring. 'Azarath Metrion Zinthos!' -- Raven
+Raven's progressive matrices scoring.
 
 ## WHEN TO USE
 

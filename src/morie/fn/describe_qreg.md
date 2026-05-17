@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-Quantile regression. 'The greatest teacher, failure is.'The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius's source for the canonical
+Quantile regression.
 signature and assumptions.
 
 ## WHEN NOT TO USE

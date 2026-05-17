@@ -2,7 +2,7 @@
 
 ## WHAT IT DOES
 
-1D heat diffusion solver. 'Your focus determines your reality.' -- Qui-Gon Jinn
+1D heat diffusion solver.
 
 ## WHEN TO USE
 

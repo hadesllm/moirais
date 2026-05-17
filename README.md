@@ -134,6 +134,7 @@ print(result)
 ## What's new in v0.9.3
 
 - **Docker image build fixed (completely).** v0.9.2's Dockerfile fix was incomplete — the builder stage didn't copy `LICENSE`, and `pyproject.toml`'s `license-files` declaration made scikit-build-core fail metadata generation without it. The builder now copies `LICENSE` too; the image build is verified end-to-end.
+- **Homebrew tap bump fixed.** The tap-bump job raced the PyPI publish — it polled for the sdist for only ~4 minutes, but the sdist uploads *last*, after the full wheel matrix (~20 minutes). It now waits for the sdist itself, up to ~35 minutes.
 - **Atomic releases.** The release pipeline now verifies the full build — the sdist *and* the Docker image — *before* the version tag is created. If any build fails, no tag is created and nothing publishes, so a half-broken release (a working PyPI package but a failed Docker image, as in v0.9.1/v0.9.2) can no longer ship.
 
 ## What's new in v0.9.2

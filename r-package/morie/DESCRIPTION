@@ -216,6 +216,7 @@ Collate:
   'gsrch.R'
   'gwreg.R'
   'gxemd.R'
+  'hawkes_fit.R'
   'heinz.R'
   'hrzb1.R'
   'hrzb2.R'

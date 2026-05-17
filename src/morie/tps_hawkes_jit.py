@@ -396,6 +396,12 @@ _SUPPORTED = {
     ("lomax", "sinusoidal"),
 }
 
+# Event count at/above which the constant-baseline Lomax likelihood is
+# routed through the O(M*n) sum-of-exponentials engine instead of the
+# exact O(n^2) kernel. Below it, O(n^2) is already cheap and is kept as
+# the reference path. See soe_fit_lomax / hawkes_ll_soe.
+_SOE_MIN_N = 1000
+
 
 def has_jit_path(kernel: str, baseline: str) -> bool:
     if HAS_CORE and baseline == "constant" and kernel in (
@@ -444,6 +450,15 @@ def neg_loglik_jit(theta: np.ndarray, t: np.ndarray, T: float,
             alpha, c = float(theta[2]), float(theta[3])
             if eta <= 1e-6 or eta >= 0.999 or alpha <= 1.001 or c <= 1e-6:
                 return 1e12
+            # large n: route through the O(M*n) SoE engine. The SoE
+            # perturbs the likelihood by ~1e-12 (far below the
+            # optimizer's tolerance), so the MLE is unchanged; the
+            # exact O(n^2) kernel stays the reference path below the
+            # crossover, where it is already cheap.
+            if t_c.shape[0] >= _SOE_MIN_N:
+                w, beta_soe, _ = soe_fit_lomax(alpha, c, float(T), tol=1e-8)
+                return _core_ext.hawkes_ll_soe(
+                    t_c, float(T), float(np.exp(a0)), eta, w, beta_soe)
             return _core_ext.hawkes_ll_lomax_const(
                 t_c, float(T), a0, eta, alpha, c)
         if kernel == "gamma":

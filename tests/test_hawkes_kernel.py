@@ -331,3 +331,28 @@ def test_soe_fit_lomax_likelihood_matches_exact(alpha, c):
     w, beta, err = soe_fit_lomax(alpha, c, T, tol=1e-8)
     soe = core.hawkes_ll_soe(t, T, math.exp(a0), eta, w, beta)
     assert np.isclose(soe, exact, rtol=1e-7)
+
+
+def test_neg_loglik_jit_lomax_routes_through_soe():
+    # at large n the lomax constant-baseline path routes through the
+    # O(M*n) SoE engine; the result must still match the exact kernel
+    from morie.tps_hawkes_jit import neg_loglik_jit
+    t = _event_times(1500, rate=2.0, seed=23)   # n >= _SOE_MIN_N
+    T = float(t[-1]) + 1.0
+    a0, eta, alpha, c = -1.0, 0.4, 2.5, 1.0
+    theta = np.array([a0, eta, alpha, c])
+    routed = neg_loglik_jit(theta, t, T, "lomax", "constant")
+    exact = core.hawkes_ll_lomax_const(t, T, a0, eta, alpha, c)
+    assert np.isclose(routed, exact, rtol=1e-6)
+
+
+def test_neg_loglik_jit_lomax_small_n_stays_exact():
+    # below the crossover the exact O(n^2) kernel is used verbatim
+    from morie.tps_hawkes_jit import neg_loglik_jit
+    t = _event_times(200, rate=2.0, seed=23)
+    T = float(t[-1]) + 1.0
+    a0, eta, alpha, c = -1.0, 0.4, 2.5, 1.0
+    theta = np.array([a0, eta, alpha, c])
+    routed = neg_loglik_jit(theta, t, T, "lomax", "constant")
+    exact = core.hawkes_ll_lomax_const(t, T, a0, eta, alpha, c)
+    assert routed == exact   # same code path, bit-identical

@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def oc_normal_vector(X, votes_j) -> DescriptiveResult:
     """Compute normal vector for vote j via mean-difference.
 
-    .. epigraph:: "Run." -- Walter White, Breaking Bad
+    .. epigraph:: Mathematics is the queen of the sciences. -- Carl Friedrich Gauss
     """
     import numpy as np
 

@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def icc_curve_data(alpha, beta, theta_range=(-3, 3)) -> DescriptiveResult:
     """Generate ICC (item characteristic curve) plot data.
 
-    .. epigraph:: "Power is power." -- Cersei, Game of Thrones
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
     """
     import numpy as np
 

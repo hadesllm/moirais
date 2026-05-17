@@ -13,7 +13,7 @@ def bb_r2_per_issue(Z, fitted) -> DescriptiveResult:
     :param fitted: Fitted values from Blackbox reconstruction.
     :return: DescriptiveResult with per-issue R-squared.
 
-    .. epigraph:: "Yare yare daze." -- Jotaro Kujo, JoJo's Bizarre Adventure
+    .. epigraph:: Give me a place to stand and I will move the earth. -- Archimedes
     """
     import numpy as np
 

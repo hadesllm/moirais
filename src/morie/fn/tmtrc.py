@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def trace_over_time(X_sessions, time_labels) -> DescriptiveResult:
     """Track legislator ideal points across sessions.
 
-    .. epigraph:: "Change is good, right?" -- Walter White, Breaking Bad
+    .. epigraph:: A journey of a thousand miles begins with a single step. -- Lao Tzu
     """
     import numpy as np
 

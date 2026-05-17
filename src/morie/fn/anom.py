@@ -22,7 +22,7 @@ def alpha_nominate_estimate(
     :param seed: Random seed.
     :return: DescriptiveResult with alpha and ideal points.
 
-    .. epigraph:: "A man's dream will never die!" -- Blackbeard, One Piece
+    .. epigraph:: The only true wisdom is in knowing you know nothing. -- Socrates
     """
     from morie._spatial_voting import alpha_nominate as _fn
 

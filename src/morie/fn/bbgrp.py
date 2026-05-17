@@ -13,7 +13,7 @@ def bb_group_color(positions, groups) -> DescriptiveResult:
     :param groups: Group label per respondent.
     :return: DescriptiveResult with positions and group data.
 
-    .. epigraph:: "Gomu Gomu no..." -- Monkey D. Luffy, One Piece
+    .. epigraph:: We must know. We will know. -- David Hilbert
     """
     import numpy as np
 

@@ -14,7 +14,7 @@ def density_negative_weights(positions, weights, n_points: int = 100) -> Descrip
     :param n_points: Grid points for density.
     :return: DescriptiveResult with density data.
 
-    .. epigraph:: "United States of Smash!" -- All Might, My Hero Academia
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
     """
     import numpy as np
 

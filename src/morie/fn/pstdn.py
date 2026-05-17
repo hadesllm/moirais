@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def posterior_density_data(chain) -> DescriptiveResult:
     """KDE density estimate of posterior samples.
 
-    .. epigraph:: "A Lannister always pays his debts." -- Tyrion, Game of Thrones
+    .. epigraph:: Knowledge is power. -- Francis Bacon
     """
     import numpy as np
 

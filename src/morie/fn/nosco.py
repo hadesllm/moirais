@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def nominate_score_types(X_w, X_dw) -> DescriptiveResult:
     """Compare W-NOMINATE and DW-NOMINATE ideal point estimates.
 
-    .. epigraph:: "Stay out of my territory." -- Walter White, Breaking Bad
+    .. epigraph:: The measure of a man is what he does with power. -- Plato
     """
     import numpy as np
 

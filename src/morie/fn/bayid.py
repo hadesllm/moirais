@@ -36,7 +36,7 @@ def bayesian_ideal_points(
     ----------
     Armstrong (2014), Ch 9. Clinton, Jackman & Rivers (2004).
 
-    .. epigraph:: "Truly wonderful the mind of a child is.", Star Wars
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     V = np.asarray(vote_matrix, dtype=float)
     if V.ndim != 2:

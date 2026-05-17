@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def simulate_voting_spatial(X, bills, beta=15.0) -> DescriptiveResult:
     """Simulate vote matrix from spatial model with logistic link.
 
-    .. epigraph:: "Apply yourself." -- Walter White, Breaking Bad
+    .. epigraph:: Statistics is the grammar of science. -- Karl Pearson
     """
     import numpy as np
 

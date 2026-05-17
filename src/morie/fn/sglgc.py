@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def lag_class_binning(distances, n_bins=15, max_dist=None):
     """Bin pairwise distances into lag classes for variogram estimation.
 
-    .. epigraph:: "You Died." -- Dark Souls
+    .. epigraph:: Measure what is measurable, and make measurable what is not. -- Galileo Galilei
 
     Parameters
     ----------

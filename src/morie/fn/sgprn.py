@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def practical_range(model, params, threshold=0.95):
     """Compute the practical range where gamma reaches threshold * sill.
 
-    .. epigraph:: "Git Gud." -- Dark Souls community
+    .. epigraph:: The only true wisdom is in knowing you know nothing. -- Socrates
 
     Parameters
     ----------

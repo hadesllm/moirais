@@ -10,7 +10,7 @@ def data_decomposition(Z, coords, trend_order=1):
 
     Fits a polynomial surface of given order and returns trend + residuals.
 
-    .. epigraph:: "No cost too great." -- Pale King, Hollow Knight
+    .. epigraph:: Mathematics is the art of giving the same name to different things. -- Henri Poincare
 
     Parameters
     ----------

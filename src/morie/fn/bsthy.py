@@ -13,7 +13,7 @@ def basic_space_dim_test(data, max_dims: int = 5) -> DescriptiveResult:
     :param max_dims: Maximum dimensions to examine.
     :return: DescriptiveResult with eigenvalue ratios.
 
-    .. epigraph:: "The world shall know pain." -- Nagato, Naruto
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
     """
     import numpy as np
 

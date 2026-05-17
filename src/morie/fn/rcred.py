@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def read_roll_call(votes, yea=1, nay=0) -> DescriptiveResult:
     """Format a raw vote matrix with yea/nay coding and missing handling.
 
-    .. epigraph:: "I am the danger." -- Walter White, Breaking Bad
+    .. epigraph:: It is not the strongest that survives, but the most adaptable. -- Charles Darwin
     """
     import numpy as np
 

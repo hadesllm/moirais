@@ -32,7 +32,7 @@ def classification_rate(
     ----------
     Armstrong (2014), Ch 10.
 
-    .. epigraph:: "Wars not make one great.", Star Wars
+    .. epigraph:: Give me a place to stand and I will move the earth. -- Archimedes
     """
     V = np.asarray(observed_votes, dtype=float)
     X = np.asarray(ideal_points, dtype=float)

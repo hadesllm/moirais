@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def edge_correction(points, window, method="ripley"):
     """Compute edge correction weights for point pattern analysis.
 
-    .. epigraph:: "How do you like that silver?" -- Geralt, The Witcher
+    .. epigraph:: To understand God's thoughts we must study statistics. -- Florence Nightingale
 
     Parameters
     ----------

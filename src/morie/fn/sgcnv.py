@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def convolution_representation(kernel, white_noise, coords):
     """Generate a spatial field via convolution of a kernel with white noise.
 
-    .. epigraph:: "It's dangerous to go alone." -- Old Man, The Legend of Zelda
+    .. epigraph:: In the midst of chaos, there is also opportunity. -- Sun Tzu
 
     Parameters
     ----------

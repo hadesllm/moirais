@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def pre_statistic(predicted, observed) -> DescriptiveResult:
     """PRE: 1 - errors_model / errors_null.
 
-    .. epigraph:: "I am the one who knocks." -- Walter White, Breaking Bad
+    .. epigraph:: What is now proved was once only imagined. -- William Blake
     """
     import numpy as np
 

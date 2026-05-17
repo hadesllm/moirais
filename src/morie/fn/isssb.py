@@ -13,7 +13,7 @@ def issue_subset_extract(data, columns) -> DescriptiveResult:
     :param columns: List of column indices or names.
     :return: DescriptiveResult with extracted subset.
 
-    .. epigraph:: "The Rumbling." -- Eren Yeager, Attack on Titan
+    .. epigraph:: He who has a why to live can bear almost any how. -- Friedrich Nietzsche
     """
     import numpy as np
 

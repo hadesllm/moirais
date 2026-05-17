@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def voronoi_tessellation(points):
     """Compute Voronoi tessellation and cell areas for a point pattern.
 
-    .. epigraph:: "Lelele lelele." -- Witcher OST, The Witcher
+    .. epigraph:: A journey of a thousand miles begins with a single step. -- Lao Tzu
 
     Parameters
     ----------

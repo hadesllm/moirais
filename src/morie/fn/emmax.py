@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def em_maximization_step(Q, theta) -> DescriptiveResult:
     """M-step: update parameters given Q function value.
 
-    .. epigraph:: "Any man who must say I am the King..." -- Tywin, Game of Thrones
+    .. epigraph:: There is no royal road to geometry. -- Euclid
     """
     import numpy as np
 

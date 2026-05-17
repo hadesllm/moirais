@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def dimensionality_test(data, max_dims=5) -> DescriptiveResult:
     """Test dimensionality via eigenvalue decomposition.
 
-    .. epigraph:: "Ours is the fury." -- Baratheon, Game of Thrones
+    .. epigraph:: It is not the strongest that survives, but the most adaptable. -- Charles Darwin
     """
     import numpy as np
 

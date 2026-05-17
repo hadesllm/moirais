@@ -15,7 +15,7 @@ def alienation_index(voter, candidates) -> DescriptiveResult:
     :param candidates: Array of candidate positions.
     :return: DescriptiveResult with alienation scores.
 
-    .. epigraph:: "Tatakae!" -- Eren Yeager, Attack on Titan
+    .. epigraph:: In the midst of chaos, there is also opportunity. -- Sun Tzu
     """
     import numpy as np
 

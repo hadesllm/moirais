@@ -18,7 +18,7 @@ def cutting_line_mesh(
     :param xlim: x-axis limits for line endpoints.
     :return: DescriptiveResult with line endpoints and angles.
 
-    .. epigraph:: "A sword wields no strength unless the hand that holds it has courage." -- Hero of Time, Zelda
+    .. epigraph:: You have power over your mind, not outside events. -- Marcus Aurelius
     """
     from morie._spatial_voting import cutting_lines as _fn
 

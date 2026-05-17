@@ -10,7 +10,7 @@ def monte_carlo_spatial_test(Z, coords, stat_fn=None, n_sim=999):
 
     Generates simulation envelopes under CSR/random relabeling.
 
-    .. epigraph:: "The cake is a lie." -- Portal
+    .. epigraph:: There is no royal road to geometry. -- Euclid
 
     Parameters
     ----------

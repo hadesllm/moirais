@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def inhomogeneous_poisson(intensity_fn, window, max_intensity=None, seed=None):
     """Simulate an inhomogeneous Poisson process via thinning.
 
-    .. epigraph:: "And my bow." -- Legolas, Lord of the Rings
+    .. epigraph:: In the midst of chaos, there is also opportunity. -- Sun Tzu
 
     Parameters
     ----------

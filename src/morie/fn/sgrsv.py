@@ -10,7 +10,7 @@ def relative_structured_variability(nugget, sill):
 
     RSV near 1 = strong spatial structure, near 0 = mostly noise.
 
-    .. epigraph:: "Shaw!" -- The Knight, Hollow Knight
+    .. epigraph:: The measure of a man is what he does with power. -- Plato
 
     Parameters
     ----------

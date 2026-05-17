@@ -14,7 +14,7 @@ def simulate_perceptions(true_positions, n_resp: int = 50, sigma: float = 0.5, s
     :param seed: Random seed.
     :return: DescriptiveResult with respondent x stimulus perception matrix.
 
-    .. epigraph:: "Domain Expansion!" -- Gojo Satoru, Jujutsu Kaisen
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
     """
     import numpy as np
 

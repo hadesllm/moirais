@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def fit_statistic_correct(predicted, observed) -> DescriptiveResult:
     """Proportion of correctly classified votes.
 
-    .. epigraph:: "Respect the chemistry." -- Walter White, Breaking Bad
+    .. epigraph:: The heart has its reasons of which reason knows nothing. -- Blaise Pascal
     """
     import numpy as np
 

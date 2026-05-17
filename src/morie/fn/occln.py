@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def oc_cutting_line(normal, cutpoint) -> DescriptiveResult:
     """Compute the cutting line from normal vector and cutpoint.
 
-    .. epigraph:: "It's all good, man." -- Saul, Better Call Saul
+    .. epigraph:: It does not matter how slowly you go as long as you do not stop. -- Confucius
     """
     import numpy as np
 

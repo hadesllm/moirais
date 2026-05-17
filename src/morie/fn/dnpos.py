@@ -14,7 +14,7 @@ def density_positive_weights(positions, weights, n_points: int = 100) -> Descrip
     :param n_points: Grid points for density.
     :return: DescriptiveResult with density data.
 
-    .. epigraph:: "Detroit Smash!" -- All Might, My Hero Academia
+    .. epigraph:: Measure what is measurable, and make measurable what is not. -- Galileo Galilei
     """
     import numpy as np
 

@@ -12,7 +12,7 @@ def plot_stimuli_positions(stim_pos, labels=None) -> DescriptiveResult:
     :param labels: Optional stimulus labels.
     :return: DescriptiveResult with formatted coordinates.
 
-    .. epigraph:: "One punch is all I need." -- Saitama, One Punch Man
+    .. epigraph:: Logic is the foundation of all certain knowledge. -- Leonhard Euler
     """
     import numpy as np
 

@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def posterior_predictive_check(chain, data) -> DescriptiveResult:
     """Posterior predictive p-values.
 
-    .. epigraph:: "Not today." -- Syrio, Game of Thrones
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     import numpy as np
 

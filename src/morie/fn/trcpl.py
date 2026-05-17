@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def trace_plot_data(chain) -> DescriptiveResult:
     """Extract trace data for MCMC diagnostics.
 
-    .. epigraph:: "Hodor!" -- Hodor, Game of Thrones
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
     """
     import numpy as np
 

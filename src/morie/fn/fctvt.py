@@ -13,7 +13,7 @@ def factor_convert_levels(data, levels=None) -> DescriptiveResult:
     :param levels: Ordered list of valid levels (default: unique sorted values).
     :return: DescriptiveResult with integer-coded data.
 
-    .. epigraph:: "Getsuga Tensho!" -- Ichigo Kurosaki, Bleach
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
     """
     import numpy as np
 

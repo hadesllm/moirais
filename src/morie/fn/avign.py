@@ -18,7 +18,7 @@ def anchoring_vignettes_fn(
     :param n_categories: Number of ordered categories.
     :return: DescriptiveResult with corrected scores.
 
-    .. epigraph:: "I am Groot." -- Groot, Marvel
+    .. epigraph:: You have power over your mind, not outside events. -- Marcus Aurelius
     """
     from morie._spatial_voting import anchoring_vignettes as _fn
 

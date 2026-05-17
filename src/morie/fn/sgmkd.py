@@ -10,7 +10,7 @@ def marked_point_summary(points, marks):
 
     Includes mark correlation and nearest-neighbor mark tests.
 
-    .. epigraph:: "Place of Power. Gotta be." -- Geralt, The Witcher
+    .. epigraph:: Number rules the universe. -- Pythagoras
 
     Parameters
     ----------

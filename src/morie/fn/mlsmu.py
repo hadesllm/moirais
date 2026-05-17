@@ -22,7 +22,7 @@ def mlsmu6_unfolding(
     :param n_restarts: Number of random restarts.
     :return: DescriptiveResult with coordinates and stress in ``extra``.
 
-    .. epigraph:: "People's dreams never end!" -- Blackbeard, One Piece
+    .. epigraph:: Mathematics is the art of giving the same name to different things. -- Henri Poincare
     """
     from morie._spatial_voting import mlsmu6 as _fn
 

@@ -13,7 +13,7 @@ def scatter_ideal_points(X, groups=None) -> DescriptiveResult:
     :param groups: Optional group labels per respondent.
     :return: DescriptiveResult with coordinate arrays.
 
-    .. epigraph:: "Saitama punch!" -- Saitama, One Punch Man
+    .. epigraph:: A journey of a thousand miles begins with a single step. -- Lao Tzu
     """
     import numpy as np
 

@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def irt_heteroskedastic(theta, alpha, beta, sigma_i) -> DescriptiveResult:
     """IRT with person-specific error variance (heteroskedastic).
 
-    .. epigraph:: "A girl has no name." -- Arya, Game of Thrones
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
     """
     import numpy as np
 

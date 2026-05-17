@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def bayesian_am_posterior_summary(chain) -> DescriptiveResult:
     """Compute posterior mean, sd, and credible intervals.
 
-    .. epigraph:: "You know nothing." -- Ygritte, Game of Thrones
+    .. epigraph:: The only true wisdom is in knowing you know nothing. -- Socrates
     """
     import numpy as np
 

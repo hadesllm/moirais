@@ -15,7 +15,7 @@ def am_weight_estimate(Z, zhat) -> DescriptiveResult:
     :param zhat: Estimated stimulus positions (1-D).
     :return: DescriptiveResult with alpha and beta arrays.
 
-    .. epigraph:: "Gear Fifth!" -- Monkey D. Luffy, One Piece
+    .. epigraph:: In the midst of chaos, there is also opportunity. -- Sun Tzu
     """
     import numpy as np
 

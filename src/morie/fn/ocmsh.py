@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def oc_coombs_mesh(normals, cutpoints, grid_size=50) -> DescriptiveResult:
     """Build a 2D grid of predicted choices from cutting lines.
 
-    .. epigraph:: "I won." -- Walter White, Breaking Bad
+    .. epigraph:: Logic is the foundation of all certain knowledge. -- Leonhard Euler
     """
     import numpy as np
 

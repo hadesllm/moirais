@@ -26,7 +26,7 @@ def geometric_mean_probability(
     ----------
     Armstrong (2014), Ch 10. Poole & Rosenthal (1997).
 
-    .. epigraph:: "The greatest teacher, failure is.", Star Wars
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
     """
     V = np.asarray(observed_votes, dtype=float)
     P = np.asarray(predicted_probs, dtype=float)

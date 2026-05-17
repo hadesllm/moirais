@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def irt_discrimination_summary(alpha) -> DescriptiveResult:
     """Summary statistics for discrimination parameters.
 
-    .. epigraph:: "Shame! Shame!" -- Septa, Game of Thrones
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
     """
     import numpy as np
 

@@ -24,7 +24,7 @@ def nominate_loglikelihood(
     :param w: Optional dimension salience weights.
     :return: DescriptiveResult with log-likelihood in ``extra``.
 
-    .. epigraph:: "Yeah, I'm thinking I'm back." -- John Wick
+    .. epigraph:: There is no royal road to geometry. -- Euclid
     """
     from morie._spatial_voting import nominate_loglik as _fn
 

@@ -10,7 +10,7 @@ def g_function_nearest_neighbor(points):
 
     G(r) above CSR envelope indicates clustering.
 
-    .. epigraph:: "Avada Kedavra!" -- Voldemort, Harry Potter
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
 
     Parameters
     ----------

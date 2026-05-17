@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def nearest_neighbor_distances(points):
     """Compute nearest-neighbor distances for each point.
 
-    .. epigraph:: "Bear! Bear! Run you stupid piece of..." -- Geralt, The Witcher
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
 
     Parameters
     ----------

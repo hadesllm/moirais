@@ -20,7 +20,7 @@ def bootstrap_scaling_se(
     :param seed: Random seed.
     :return: DescriptiveResult with standard errors and CIs.
 
-    .. epigraph:: "The will of D. cannot be stopped." -- Dr. Kureha, One Piece
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
     """
     from morie._spatial_voting import nonparametric_bootstrap_scaling as _fn
 

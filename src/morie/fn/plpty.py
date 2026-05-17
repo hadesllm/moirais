@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def plot_by_party(X, party_labels) -> DescriptiveResult:
     """Group ideal point coordinates by party for plotting.
 
-    .. epigraph:: "Heisenberg." -- Walter White, Breaking Bad
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
     """
     import numpy as np
 

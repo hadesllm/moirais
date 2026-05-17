@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def irt_probability(theta, alpha, beta) -> DescriptiveResult:
     """2PL IRT probability: P(Y=1|theta,alpha,beta).
 
-    .. epigraph:: "The night is dark and full of terrors." -- Melisandre, Game of Thrones
+    .. epigraph:: What is now proved was once only imagined. -- William Blake
     """
     import numpy as np
 

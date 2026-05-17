@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def cross_variogram(Z1, Z2, coords, n_lags=15, max_lag=None):
     """Compute the cross-semivariogram gamma_12(h) for two variables.
 
-    .. epigraph:: "I am the storm that is approaching." -- Vergil, Devil May Cry
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
 
     Parameters
     ----------

@@ -13,7 +13,7 @@ def histogram_ideal_points(positions, bins: int = 30) -> DescriptiveResult:
     :param bins: Number of histogram bins.
     :return: DescriptiveResult with bin data.
 
-    .. epigraph:: "I'll take a potato chip... and eat it!" -- Light Yagami, Death Note
+    .. epigraph:: Number rules the universe. -- Pythagoras
     """
     import numpy as np
 

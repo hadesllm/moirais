@@ -11,7 +11,7 @@ def permutation_test_spatial(Z, coords, stat_fn, n_perm=999):
     Randomly reassigns observed values to locations and computes the
     distribution of the test statistic.
 
-    .. epigraph:: "War. War never changes." -- Narrator, Fallout
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
 
     Parameters
     ----------

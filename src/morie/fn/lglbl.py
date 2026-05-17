@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def label_legislators(X, names) -> DescriptiveResult:
     """Pair ideal point coordinates with legislator names.
 
-    .. epigraph:: "You're goddamn right." -- Walter White, Breaking Bad
+    .. epigraph:: It does not matter how slowly you go as long as you do not stop. -- Confucius
     """
     import numpy as np
 

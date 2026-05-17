@@ -14,7 +14,7 @@ def polarity_check(stimulus_positions) -> DescriptiveResult:
     :param stimulus_positions: Estimated stimulus positions.
     :return: DescriptiveResult with polarity-corrected positions.
 
-    .. epigraph:: "WRYYYYY!" -- DIO, JoJo's Bizarre Adventure
+    .. epigraph:: The heart has its reasons of which reason knows nothing. -- Blaise Pascal
     """
     import numpy as np
 

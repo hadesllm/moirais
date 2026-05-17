@@ -13,7 +13,7 @@ def recode_responses(data, missing_codes=None) -> DescriptiveResult:
     :param missing_codes: List of codes to treat as missing (default [77, 88, 99]).
     :return: DescriptiveResult with cleaned data.
 
-    .. epigraph:: "Sasageyo!" -- Survey Corps, Attack on Titan
+    .. epigraph:: Logic is the foundation of all certain knowledge. -- Leonhard Euler
     """
     import numpy as np
 

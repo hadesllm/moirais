@@ -10,7 +10,7 @@ def gaussian_variogram(h, nugget, sill, range_param):
 
     gamma(h) = nugget + (sill - nugget) * (1 - exp(-(h/a)^2)).
 
-    .. epigraph:: "Ashen One." -- Fire Keeper, Dark Souls 3
+    .. epigraph:: The whole is greater than the sum of its parts. -- Aristotle
 
     Parameters
     ----------

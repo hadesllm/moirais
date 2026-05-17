@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def plot_coombs_data(mesh_result) -> DescriptiveResult:
     """Extract grid data from a Coombs mesh result for visualization.
 
-    .. epigraph:: "Ozymandias." -- Breaking Bad
+    .. epigraph:: The whole is greater than the sum of its parts. -- Aristotle
     """
     import numpy as np
 

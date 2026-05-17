@@ -25,7 +25,7 @@ def metric_mds(dissimilarities, n_dims: int = 2, *, max_iter: int = 300, tol: fl
     Armstrong, D. A. (2014). Analyzing Spatial Models of Choice and Judgment.
         CRC Press. Chapter 3.
 
-    .. epigraph:: "The spice must flow." -- Duke Leto, Dune
+    .. epigraph:: Knowledge is power. -- Francis Bacon
     """
     D = np.asarray(dissimilarities, dtype=float)
     n = D.shape[0]

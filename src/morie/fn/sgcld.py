@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def variogram_cloud(Z, coords):
     """Compute the variogram cloud: all pairwise (distance, squared-difference).
 
-    .. epigraph:: "Try finger, but hole." -- Message, Elden Ring
+    .. epigraph:: He who has a why to live can bear almost any how. -- Friedrich Nietzsche
 
     Parameters
     ----------

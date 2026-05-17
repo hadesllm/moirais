@@ -12,7 +12,7 @@ def mds_fit_statistics(eigenvalues) -> DescriptiveResult:
     :param eigenvalues: Array of eigenvalues from MDS decomposition.
     :return: DescriptiveResult with cumulative fit in ``extra``.
 
-    .. epigraph:: "Resistance is futile." -- Borg, Star Trek
+    .. epigraph:: You have power over your mind, not outside events. -- Marcus Aurelius
     """
     from morie._spatial_voting import mds_fit_stats as _fn
 

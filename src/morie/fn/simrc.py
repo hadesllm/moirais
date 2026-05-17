@@ -14,7 +14,7 @@ def simulate_roll_call(n_leg: int = 50, n_votes: int = 100, n_dims: int = 1, see
     :param seed: Random seed.
     :return: DescriptiveResult with vote matrix.
 
-    .. epigraph:: "Bankai!" -- Ichigo Kurosaki, Bleach
+    .. epigraph:: Number rules the universe. -- Pythagoras
     """
     import numpy as np
 

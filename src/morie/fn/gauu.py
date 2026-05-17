@@ -15,7 +15,7 @@ def gaussian_utility(ideal, position, beta: float = 1.0, w: float = 1.0) -> Desc
     :param w: Width parameter.
     :return: DescriptiveResult with utility value.
 
-    .. epigraph:: "It's over 9000!" -- Vegeta, Dragon Ball Z
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
     """
     import numpy as np
 

@@ -25,7 +25,7 @@ def oc_binary_choice(
     :param n_restarts: Number of random restarts.
     :return: DescriptiveResult with PRE and ideal points in ``extra``.
 
-    .. epigraph:: "Si vis pacem, para bellum." -- John Wick
+    .. epigraph:: It does not matter how slowly you go as long as you do not stop. -- Confucius
     """
     from morie._spatial_voting import optimal_classification as _fn
 

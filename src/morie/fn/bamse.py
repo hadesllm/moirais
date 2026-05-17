@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def bayesian_se_from_posterior(chain) -> DescriptiveResult:
     """Standard errors from posterior chain.
 
-    .. epigraph:: "Dracarys!" -- Daenerys, Game of Thrones
+    .. epigraph:: There is no royal road to geometry. -- Euclid
     """
     import numpy as np
 

@@ -22,7 +22,7 @@ def quadratic_voting(intensities, budget: float = 100.0) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 4. Lalley & Weyl (2018).
 
-    .. epigraph:: "Rebellions are built on hope." -- Jyn Erso, Star Wars
+    .. epigraph:: Give me a place to stand and I will move the earth. -- Archimedes
     """
     I = np.asarray(intensities, dtype=float)
     if I.ndim != 2:

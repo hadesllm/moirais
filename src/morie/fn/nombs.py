@@ -24,7 +24,7 @@ def nominate_bootstrap_se(
     :param seed: Random seed.
     :return: DescriptiveResult with bootstrap SEs.
 
-    .. epigraph:: "One Piece does exist!" -- Whitebeard, One Piece
+    .. epigraph:: It is not the strongest that survives, but the most adaptable. -- Charles Darwin
     """
     from morie._spatial_voting import nominate_bootstrap as _fn
 

@@ -11,7 +11,7 @@ def strict_stationarity_test(Z, coords, n_sub=4):
     Divides the study area into *n_sub* x *n_sub* subregions and runs
     Kolmogorov-Smirnov tests between all pairs.
 
-    .. epigraph:: "You shall not pass!" -- Gandalf, Lord of the Rings
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
 
     Parameters
     ----------

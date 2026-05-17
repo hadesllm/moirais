@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def gelman_rubin_rhat(chains) -> DescriptiveResult:
     """Compute R-hat convergence diagnostic from multiple chains.
 
-    .. epigraph:: "Chaos is a ladder." -- Littlefinger, Game of Thrones
+    .. epigraph:: We must know. We will know. -- David Hilbert
     """
     import numpy as np
 

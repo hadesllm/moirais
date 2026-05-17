@@ -13,7 +13,7 @@ def linear_utility(ideal, position) -> DescriptiveResult:
     :param position: Candidate/policy position.
     :return: DescriptiveResult with utility value.
 
-    .. epigraph:: "Believe it!" -- Naruto Uzumaki, Naruto
+    .. epigraph:: Errors using inadequate data are much less than those using none. -- Charles Babbage
     """
     import numpy as np
 

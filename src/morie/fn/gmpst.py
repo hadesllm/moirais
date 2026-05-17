@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def gmp_statistic(predicted_probs, observed) -> DescriptiveResult:
     """Geometric mean probability of correct predictions.
 
-    .. epigraph:: "Tread lightly." -- Walter White, Breaking Bad
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
     """
     import numpy as np
 

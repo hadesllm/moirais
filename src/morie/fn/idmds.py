@@ -20,7 +20,7 @@ def indscal_mds(
     :param tol: Convergence tolerance.
     :return: DescriptiveResult with group config and weights.
 
-    .. epigraph:: "Live long and prosper." -- Spock, Star Trek
+    .. epigraph:: In the midst of chaos, there is also opportunity. -- Sun Tzu
     """
     from morie._spatial_voting import indscal as _fn
 

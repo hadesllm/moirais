@@ -12,7 +12,7 @@ def bb_variance_explained(eigenvalues) -> DescriptiveResult:
     :param eigenvalues: Array of eigenvalues (sorted descending).
     :return: DescriptiveResult with variance proportions.
 
-    .. epigraph:: "Ora ora ora!" -- Jotaro Kujo, JoJo's Bizarre Adventure
+    .. epigraph:: Measure what is measurable, and make measurable what is not. -- Galileo Galilei
     """
     import numpy as np
 

@@ -10,7 +10,7 @@ def csr_test(points, window, n_sim=99):
 
     Compares the observed mean NN distance to simulated HPP envelopes.
 
-    .. epigraph:: "You have my sword." -- Aragorn, Lord of the Rings
+    .. epigraph:: Mathematics is the art of giving the same name to different things. -- Henri Poincare
 
     Parameters
     ----------

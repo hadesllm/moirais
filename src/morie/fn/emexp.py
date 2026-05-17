@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def em_expectation_step(theta, alpha, beta, votes) -> DescriptiveResult:
     """E-step: compute expected log-likelihood contributions.
 
-    .. epigraph:: "I drink and I know things." -- Tyrion, Game of Thrones
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
     """
     import numpy as np
 

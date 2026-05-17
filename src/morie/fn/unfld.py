@@ -30,7 +30,7 @@ def unfolding_model(
     ----------
     Armstrong (2014), Ch 4. Coombs (1964) unfolding theory.
 
-    .. epigraph:: "I am no man." -- Eowyn, Lord of the Rings
+    .. epigraph:: Measure what is measurable, and make measurable what is not. -- Galileo Galilei
     """
     R = np.asarray(preferences, dtype=float)
     n_row, n_col = R.shape

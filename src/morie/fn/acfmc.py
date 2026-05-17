@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def autocorrelation_mcmc(chain, max_lag=50) -> DescriptiveResult:
     """Compute ACF for an MCMC chain up to max_lag.
 
-    .. epigraph:: "Hold the door." -- Hodor, Game of Thrones
+    .. epigraph:: He who has a why to live can bear almost any how. -- Friedrich Nietzsche
     """
     import numpy as np
 

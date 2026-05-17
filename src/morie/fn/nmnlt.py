@@ -35,7 +35,7 @@ def nominate_scaling(
     ----------
     Armstrong (2014), Ch 8. Poole & Rosenthal (1997).
 
-    .. epigraph:: "The ability to speak does not make you intelligent." -- Qui-Gon, Star Wars
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
     """
     V = np.asarray(vote_matrix, dtype=float)
     if V.ndim != 2:

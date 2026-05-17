@@ -14,7 +14,7 @@ def proximity_cost(voter, candidates, metric: str = "euclidean") -> DescriptiveR
     :param metric: 'euclidean' or 'manhattan'.
     :return: DescriptiveResult with distance vector.
 
-    .. epigraph:: "Plus Ultra!" -- All Might, My Hero Academia
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
     """
     import numpy as np
 

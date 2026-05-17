@@ -22,7 +22,7 @@ def dynamic_irt_model(
     :param seed: Random seed.
     :return: DescriptiveResult with ideal trajectories.
 
-    .. epigraph:: "Kamehameha!" -- Goku, Dragon Ball Z
+    .. epigraph:: A journey of a thousand miles begins with a single step. -- Lao Tzu
     """
     from morie._spatial_voting import dynamic_irt as _fn
 

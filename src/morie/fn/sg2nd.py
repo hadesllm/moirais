@@ -10,7 +10,7 @@ def second_order_intensity(points, window, bandwidth=None):
 
     Returns a kernel-smoothed estimate of the product density.
 
-    .. epigraph:: "What now, you piece of filth?" -- Geralt, The Witcher
+    .. epigraph:: You have power over your mind, not outside events. -- Marcus Aurelius
 
     Parameters
     ----------

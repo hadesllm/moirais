@@ -23,7 +23,7 @@ def wnominate_estimate(
     :param w: Optional dimension salience weights.
     :return: DescriptiveResult with GMP and log-likelihood in ``extra``.
 
-    .. epigraph:: "Whoever wins this war becomes justice." -- Donquixote Doflamingo, One Piece
+    .. epigraph:: What is now proved was once only imagined. -- William Blake
     """
     from morie._spatial_voting import nominate_loglik as _fn
 

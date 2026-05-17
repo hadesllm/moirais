@@ -26,7 +26,7 @@ def proportional_reduction_error(
     ----------
     Armstrong (2014), Ch 10.
 
-    .. epigraph:: "Once you start down the dark path, forever will it dominate your destiny."
+    .. epigraph:: What is now proved was once only imagined. -- William Blake
     """
     V = np.asarray(observed_votes, dtype=float)
     P = np.asarray(predicted_votes, dtype=float)

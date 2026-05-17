@@ -15,7 +15,7 @@ def ordinal_probit_coefficients(Y, X, cdf=None) -> DescriptiveResult:
     :param X: Predictor matrix (ideal points).
     :return: DescriptiveResult with coefficient estimates.
 
-    .. epigraph:: "Serious Series: Serious Punch." -- Saitama, One Punch Man
+    .. epigraph:: You have power over your mind, not outside events. -- Marcus Aurelius
     """
     import numpy as np
     from scipy.optimize import minimize

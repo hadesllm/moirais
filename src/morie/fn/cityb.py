@@ -13,7 +13,7 @@ def city_block_distance(x, y) -> DescriptiveResult:
     :param y: Second point.
     :return: DescriptiveResult with distance.
 
-    .. epigraph:: "Omae wa mou shindeiru." -- Kenshiro, Fist of the North Star
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
     """
     import numpy as np
 

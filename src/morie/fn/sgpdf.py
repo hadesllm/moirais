@@ -10,7 +10,7 @@ def positive_definiteness_check(C_matrix):
 
     Computes eigenvalues and reports the minimum.
 
-    .. epigraph:: "I am Malenia, Blade of Miquella." -- Malenia, Elden Ring
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
 
     Parameters
     ----------

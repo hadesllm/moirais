@@ -12,7 +12,7 @@ def ideological_constraint(issue_positions) -> DescriptiveResult:
     :param issue_positions: Respondent x issue matrix.
     :return: DescriptiveResult with constraint index.
 
-    .. epigraph:: "I am the bone of my sword." -- Archer, Fate/stay night
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
     """
     import numpy as np
 

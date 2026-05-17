@@ -23,7 +23,7 @@ def cityblock_model(ideal_points, alternatives, *, beta: float = 1.0) -> Descrip
     ----------
     Armstrong (2014), Ch 4.
 
-    .. epigraph:: "These aren't the droids you'The whole is greater than the sum of its parts. -- Aristotle'
+    .. epigraph:: To understand God's thoughts we must study statistics. -- Florence Nightingale
     """
     X = np.asarray(ideal_points, dtype=float)
     Z = np.asarray(alternatives, dtype=float)

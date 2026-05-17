@@ -16,7 +16,7 @@ def hotelling_model(n_voters: int = 100, n_candidates: int = 2, seed: int = 42) 
     :param seed: Random seed.
     :return: DescriptiveResult with equilibrium positions.
 
-    .. epigraph:: "I'll be back." -- T-800, Terminator
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     import numpy as np
 

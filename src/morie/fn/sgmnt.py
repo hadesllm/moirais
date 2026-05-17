@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def mantel_test(D_spatial, D_attribute, n_perm=999):
     """Mantel test comparing spatial and attribute distance matrices.
 
-    .. epigraph:: "What is better: to be born good, or to overcome evil?" -- Paarthurnax, Skyrim
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
 
     Parameters
     ----------

@@ -12,7 +12,7 @@ def heatmap_issue_weights(weight_matrix) -> DescriptiveResult:
     :param weight_matrix: Issue x dimension weight matrix.
     :return: DescriptiveResult with flattened data.
 
-    .. epigraph:: "Kaizoku ou ni ore wa naru!" -- Monkey D. Luffy, One Piece
+    .. epigraph:: The only true wisdom is in knowing you know nothing. -- Socrates
     """
     import numpy as np
 

@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def cross_validation_variogram(Z, coords, model="spherical", params=None):
     """Leave-one-out cross-validation for a variogram/kriging model.
 
-    .. epigraph:: "Hesitation is defeat." -- Isshin Ashina, Sekiro
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
 
     Parameters
     ----------

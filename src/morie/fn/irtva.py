@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def irt_variance_legislator(chain_theta) -> DescriptiveResult:
     """Posterior variance of theta per legislator.
 
-    .. epigraph:: "Stick them with the pointy end." -- Jon, Game of Thrones
+    .. epigraph:: A journey of a thousand miles begins with a single step. -- Lao Tzu
     """
     import numpy as np
 

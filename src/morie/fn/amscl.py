@@ -20,7 +20,7 @@ def aldrich_mckelvey_scaling(
     :param tol: Convergence tolerance.
     :return: DescriptiveResult with scaled positions in ``extra``.
 
-    .. epigraph:: "Fear is the mind-killer." -- Bene Gesserit, Dune
+    .. epigraph:: Give me a place to stand and I will move the earth. -- Archimedes
     """
     from morie._spatial_voting import aldrich_mckelvey as _fn
 

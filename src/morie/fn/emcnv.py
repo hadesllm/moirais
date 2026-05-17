@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def em_convergence_check(ll_old, ll_new, tol=1e-6) -> DescriptiveResult:
     """Check if EM has converged based on log-likelihood change.
 
-    .. epigraph:: "When you play the game of thrones..." -- Cersei, Game of Thrones
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
     """
     diff = abs(ll_new - ll_old)
     converged = diff < tol

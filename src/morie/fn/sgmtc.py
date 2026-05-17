@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def matern_cluster_process(parent_intensity, n_offspring, radius, window, seed=None):
     """Simulate a Matern cluster point process.
 
-    .. epigraph:: "Damn, you're ugly." -- Geralt, The Witcher
+    .. epigraph:: It does not matter how slowly you go as long as you do not stop. -- Confucius
 
     Parameters
     ----------

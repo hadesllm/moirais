@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def simulation_envelope(points, window, stat_fn, n_sim=99, seed=None):
     """Compute simulation envelopes for a point pattern statistic under CSR.
 
-    .. epigraph:: "Hmm." -- Geralt, The Witcher
+    .. epigraph:: Luck is what happens when preparation meets opportunity. -- Seneca
 
     Parameters
     ----------

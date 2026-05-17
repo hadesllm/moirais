@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def chain_convergence_test(chains, alpha=0.05) -> DescriptiveResult:
     """Test MCMC convergence using R-hat < 1.1 criterion.
 
-    .. epigraph:: "A sword needs a sheath." -- Tywin, Game of Thrones
+    .. epigraph:: In the midst of chaos, there is also opportunity. -- Sun Tzu
     """
     import numpy as np
 

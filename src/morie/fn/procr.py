@@ -13,7 +13,7 @@ def procrustes_rotation(X, X_target) -> DescriptiveResult:
     :param X_target: Target configuration (n x dims).
     :return: DescriptiveResult with rotated matrix and MSE in ``extra``.
 
-    .. epigraph:: "Power comes in response to a need." -- Goku, Dragon Ball Z
+    .. epigraph:: Measure what is measurable, and make measurable what is not. -- Galileo Galilei
     """
     from morie._spatial_voting import procrustes_rotation as _fn
 

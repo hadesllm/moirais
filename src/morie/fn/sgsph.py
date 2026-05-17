@@ -10,7 +10,7 @@ def spherical_variogram(h, nugget, sill, range_param):
 
     gamma(h) = nugget + (sill - nugget) * [1.5*(h/a) - 0.5*(h/a)^3] for h <= a.
 
-    .. epigraph:: "Bearer of the Curse." -- Emerald Herald, Dark Souls 2
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
 
     Parameters
     ----------

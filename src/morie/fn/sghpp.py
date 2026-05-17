@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def homogeneous_poisson(n, window, seed=None):
     """Simulate a homogeneous Poisson point process.
 
-    .. epigraph:: "And my axe!" -- Gimli, Lord of the Rings
+    .. epigraph:: Give me a place to stand and I will move the earth. -- Archimedes
 
     Parameters
     ----------

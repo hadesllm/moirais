@@ -20,7 +20,7 @@ def ordered_oc(
     :param tol: Convergence tolerance.
     :return: DescriptiveResult with ideal points and cutpoints.
 
-    .. epigraph:: "The spice must flow." -- Duke Leto, Dune
+    .. epigraph:: Statistics is the grammar of science. -- Karl Pearson
     """
     from morie._spatial_voting import ordered_optimal_classification as _fn
 

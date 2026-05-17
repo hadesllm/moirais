@@ -10,7 +10,7 @@ def wls_variogram_fit(emp_gamma, lags, model="spherical", counts=None):
 
     Weights are N(h)/gamma(h)^2 (Cressie, 1985).
 
-    .. epigraph:: "The night, and the dream, were long." -- Bloodborne
+    .. epigraph:: You have power over your mind, not outside events. -- Marcus Aurelius
 
     Parameters
     ----------

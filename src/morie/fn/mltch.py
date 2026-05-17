@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def multiple_chains_combine(chains) -> DescriptiveResult:
     """Stack multiple MCMC chains into one combined matrix.
 
-    .. epigraph:: "Gold shall be their crowns." -- Prophecy, Game of Thrones
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     import numpy as np
 

@@ -22,7 +22,7 @@ def bayesian_mds_fn(
     :param sigma_init: Initial noise scale.
     :return: DescriptiveResult with posterior coordinates in ``extra``.
 
-    .. epigraph:: "I have been and always shall be your friend." -- Spock, Star Trek
+    .. epigraph:: An investment in knowledge pays the best interest. -- Benjamin Franklin
     """
     from morie._spatial_voting import bayesian_mds as _fn
 

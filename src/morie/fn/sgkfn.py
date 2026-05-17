@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def ripley_k_function(points, window, r_values=None, correction="ripley"):
     """Estimate Ripley's K function for a point pattern.
 
-    .. epigraph:: "Stupefy!" -- Various, Harry Potter
+    .. epigraph:: In the midst of chaos, there is also opportunity. -- Sun Tzu
 
     Parameters
     ----------

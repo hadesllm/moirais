@@ -21,7 +21,7 @@ def roll_call_analysis(vote_matrix) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 7.
 
-    .. epigraph:: "So this is how liberty dies, with thunderous applause." -- Padme, Star Wars
+    .. epigraph:: Number rules the universe. -- Pythagoras
     """
     V = np.asarray(vote_matrix, dtype=float)
     if V.ndim != 2:

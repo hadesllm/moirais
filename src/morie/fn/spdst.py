@@ -13,7 +13,7 @@ def spatial_distance(x, y, metric: str = "euclidean") -> DescriptiveResult:
     :param metric: 'euclidean' or 'manhattan'.
     :return: DescriptiveResult with distance.
 
-    .. epigraph:: "One Piece does exist!" -- Whitebeard, One Piece
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
     """
     import numpy as np
 

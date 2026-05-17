@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def quadrat_count_test(points, window, nx=5, ny=5, cdf=None):
     """Chi-squared quadrat count test for CSR.
 
-    .. epigraph:: "Lumos!" -- Harry Potter, Harry Potter
+    .. epigraph:: Measure what is measurable, and make measurable what is not. -- Galileo Galilei
 
     Parameters
     ----------

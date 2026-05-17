@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def nominate_ideal_extract(result) -> DescriptiveResult:
     """Clean ideal point array from a result dict or array.
 
-    .. epigraph:: "I chose a half measure." -- Walter White, Breaking Bad
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
     """
     import numpy as np
 

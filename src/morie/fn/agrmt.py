@@ -22,7 +22,7 @@ def agreement_score(vote_matrix) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 7.
 
-    .. epigraph:: "There is always a bigger fish." -- Qui-Gon, Star Wars
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
     """
     V = np.asarray(vote_matrix, dtype=float)
     if V.ndim != 2:

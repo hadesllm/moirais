@@ -22,7 +22,7 @@ def weighted_euclidean_model(ideal_points, alternatives, salience) -> Descriptiv
     ----------
     Armstrong (2014), Ch 5.
 
-    .. epigraph:: "Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius" -- Chirrut, Star Wars
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
     """
     X = np.asarray(ideal_points, dtype=float)
     Z = np.asarray(alternatives, dtype=float)

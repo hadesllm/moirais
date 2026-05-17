@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def simulate_utility_shocks(n=100, sigma=1.0) -> DescriptiveResult:
     """Generate random utility error components.
 
-    .. epigraph:: "Crystal Blue." -- Breaking Bad
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     import numpy as np
 

@@ -12,7 +12,7 @@ def am_negative_weights(beta) -> DescriptiveResult:
     :param beta: Per-respondent weight vector from A-M.
     :return: DescriptiveResult with indices of negative-weight respondents.
 
-    .. epigraph:: "Nani?!" -- Various, Anime
+    .. epigraph:: There is no royal road to geometry. -- Euclid
     """
     import numpy as np
 

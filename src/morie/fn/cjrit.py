@@ -20,7 +20,7 @@ def cjr_irt_model(
     :param burn_in: Burn-in samples to discard.
     :return: DescriptiveResult with ideal point posteriors in ``extra``.
 
-    .. epigraph:: "It's over 9000!" -- Vegeta, Dragon Ball Z
+    .. epigraph:: Mathematics is the art of giving the same name to different things. -- Henri Poincare
     """
     from morie._spatial_voting import cjr_irt as _fn
 

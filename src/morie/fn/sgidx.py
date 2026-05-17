@@ -10,7 +10,7 @@ def index_of_dispersion(counts, cdf=None):
 
     VMR = 1 indicates CSR, > 1 clustering, < 1 regularity.
 
-    .. epigraph:: "Accio!" -- Harry Potter, Harry Potter
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
 
     Parameters
     ----------

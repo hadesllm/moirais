@@ -12,7 +12,7 @@ def normalized_variance(Z, fitted) -> DescriptiveResult:
     :param fitted: Fitted/reconstructed data.
     :return: DescriptiveResult with variance reduction ratio.
 
-    .. epigraph:: "I am atomic." -- Garou, One Punch Man
+    .. epigraph:: It is not the strongest that survives, but the most adaptable. -- Charles Darwin
     """
     import numpy as np
 

@@ -20,7 +20,7 @@ def bayesian_unfolding(
     :param burn_in: Burn-in samples to discard.
     :return: DescriptiveResult with posterior samples in ``extra``.
 
-    .. epigraph:: "A man's dream will never die!" -- Blackbeard, One Piece
+    .. epigraph:: Mathematics is the art of giving the same name to different things. -- Henri Poincare
     """
     from morie._spatial_voting import bayesian_unfolding as _fn
 

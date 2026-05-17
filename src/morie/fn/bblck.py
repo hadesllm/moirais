@@ -16,7 +16,7 @@ def blackbox_scaling(
     :param n_dims: Number of dimensions to recover.
     :return: DescriptiveResult with ideal points in ``extra``.
 
-    .. epigraph:: "He who controls the spice controls the universe." -- Baron Harkonnen, Dune
+    .. epigraph:: Measure what is measurable, and make measurable what is not. -- Galileo Galilei
     """
     from morie._spatial_voting import blackbox_scaling as _fn
 

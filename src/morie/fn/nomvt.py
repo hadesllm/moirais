@@ -22,7 +22,7 @@ def nominate_vote_prob_fn(
     :param w: Optional dimension salience weights.
     :return: DescriptiveResult with vote probability.
 
-    .. epigraph:: "You think darkness is your ally." -- Bane, DC
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     from morie._spatial_voting import nominate_vote_prob as _fn
 

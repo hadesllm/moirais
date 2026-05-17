@@ -12,7 +12,7 @@ def bb_sum_squares(Z) -> DescriptiveResult:
     :param Z: Respondent x issue data matrix.
     :return: DescriptiveResult with total SS.
 
-    .. epigraph:: "ZA WARUDO!" -- DIO, JoJo's Bizarre Adventure
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
     """
     import numpy as np
 

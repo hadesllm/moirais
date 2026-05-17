@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def matern_variogram(h, nugget, sill, range_param, nu=1.5):
     """Evaluate the Matern variogram model.
 
-    .. epigraph:: "Grant us eyes." -- Micolash, Bloodborne
+    .. epigraph:: A journey of a thousand miles begins with a single step. -- Lao Tzu
 
     Parameters
     ----------

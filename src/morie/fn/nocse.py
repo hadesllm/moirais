@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def nominate_confidence_interval(boot_se, alpha=0.05) -> DescriptiveResult:
     """Compute CIs from bootstrap standard errors.
 
-    .. epigraph:: "Better call Saul!" -- Saul, Better Call Saul
+    .. epigraph:: Statistics is the grammar of science. -- Karl Pearson
     """
     import numpy as np
     from scipy.stats import norm

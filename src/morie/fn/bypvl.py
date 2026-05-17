@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def bayesian_p_value(chain, test_stat) -> DescriptiveResult:
     """Bayesian p-value: proportion of posterior exceeding test_stat.
 
-    .. epigraph:: "What is dead may never die." -- Ironborn, Game of Thrones
+    .. epigraph:: We must know. We will know. -- David Hilbert
     """
     import numpy as np
 

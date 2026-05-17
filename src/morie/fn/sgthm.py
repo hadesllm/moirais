@@ -10,7 +10,7 @@ def thomas_process(kappa, mu, sigma, window, seed=None):
 
     Parents are Poisson(kappa), offspring are N(parent, sigma^2) with mean mu.
 
-    .. epigraph:: "Evil is evil." -- Geralt, The Witcher
+    .. epigraph:: Number rules the universe. -- Pythagoras
 
     Parameters
     ----------

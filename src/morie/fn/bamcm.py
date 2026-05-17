@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def bayesian_am_mcmc_sample(Z, n_samples=500) -> DescriptiveResult:
     """Metropolis-Hastings MCMC for augmented model.
 
-    .. epigraph:: "Winter is coming." -- Stark, Game of Thrones
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
     """
     import numpy as np
 

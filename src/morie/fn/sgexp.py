@@ -10,7 +10,7 @@ def exponential_variogram(h, nugget, sill, range_param):
 
     gamma(h) = nugget + (sill - nugget) * (1 - exp(-h/a)).
 
-    .. epigraph:: "Don't give up, skeleton!" -- Message, Dark Souls
+    .. epigraph:: Statistics is the grammar of science. -- Karl Pearson
 
     Parameters
     ----------

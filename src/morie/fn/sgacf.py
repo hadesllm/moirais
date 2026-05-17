@@ -10,7 +10,7 @@ def spatial_acf(Z, coords, lags=None, n_lags=10):
 
     Returns Moran-style autocorrelation per distance band.
 
-    .. epigraph:: "I am thou, thou art I." -- Persona
+    .. epigraph:: The measure of a man is what he does with power. -- Plato
 
     Parameters
     ----------

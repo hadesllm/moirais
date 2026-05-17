@@ -17,7 +17,7 @@ def wordfish_scaling(
     :param tol: Convergence tolerance.
     :return: DescriptiveResult with document positions.
 
-    .. epigraph:: "Plus Ultra!" -- All Might, My Hero Academia
+    .. epigraph:: We must know. We will know. -- David Hilbert
     """
     from morie._spatial_voting import wordfish_irt as _fn
 

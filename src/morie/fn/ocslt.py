@@ -23,7 +23,7 @@ def oc_scaling(vote_matrix, n_dims: int = 1) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 7. Poole (2000).
 
-    .. epigraph:: "Judge me by my size, do you?", Star Wars
+    .. epigraph:: Mathematics is the queen of the sciences. -- Carl Friedrich Gauss
     """
     V = np.asarray(vote_matrix, dtype=float)
     if V.ndim != 2:

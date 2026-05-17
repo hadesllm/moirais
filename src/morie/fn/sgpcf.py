@@ -10,7 +10,7 @@ def pair_correlation_function(points, window, r_values=None, bandwidth=None):
 
     g(r) = 1 under CSR, > 1 clustering, < 1 inhibition at distance r.
 
-    .. epigraph:: "Wingardium Leviosa!" -- Hermione Granger, Harry Potter
+    .. epigraph:: Statistics is the grammar of science. -- Karl Pearson
 
     Parameters
     ----------

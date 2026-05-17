@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def roll_call_errors(predicted, observed) -> DescriptiveResult:
     """Count total, type I, and type II errors.
 
-    .. epigraph:: "Magnets!" -- Jesse, Breaking Bad
+    .. epigraph:: Measure what is measurable, and make measurable what is not. -- Galileo Galilei
     """
     import numpy as np
 

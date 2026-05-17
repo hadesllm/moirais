@@ -12,7 +12,7 @@ def am_eigensolve(M) -> DescriptiveResult:
     :param M: Centered matrix from am_matrix_setup.
     :return: DescriptiveResult with eigenvalues and eigenvectors.
 
-    .. epigraph:: "I shall surpass you." -- Vegeta, Dragon Ball Z
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
     """
     import numpy as np
 

@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def nested_variogram(h, models):
     """Evaluate a nested variogram as a sum of component models.
 
-    .. epigraph:: "Fear the Old Blood." -- Provost Willem, Bloodborne
+    .. epigraph:: Mathematics is the art of giving the same name to different things. -- Henri Poincare
 
     Parameters
     ----------

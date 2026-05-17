@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def quadrat_aggregation(counts_or_points, scales, window=None):
     """Compute dispersion index at multiple spatial scales.
 
-    .. epigraph:: "Hmmm, f***." -- Geralt, The Witcher
+    .. epigraph:: Knowledge is power. -- Francis Bacon
 
     Parameters
     ----------

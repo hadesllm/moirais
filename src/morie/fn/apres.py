@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def apre_statistic(all_pre) -> DescriptiveResult:
     """Aggregate proportional reduction in error across multiple roll calls.
 
-    .. epigraph:: "Yeah science!" -- Jesse, Breaking Bad
+    .. epigraph:: You have power over your mind, not outside events. -- Marcus Aurelius
     """
     import numpy as np
 

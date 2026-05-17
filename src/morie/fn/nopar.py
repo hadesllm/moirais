@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def nominate_parameters(votes, X, nv, mid) -> DescriptiveResult:
     """Summarise NOMINATE bill parameters (normal vectors, midpoints).
 
-    .. epigraph:: "No half measures." -- Mike, Breaking Bad
+    .. epigraph:: A journey of a thousand miles begins with a single step. -- Lao Tzu
     """
     import numpy as np
 

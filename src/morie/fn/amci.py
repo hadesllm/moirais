@@ -13,7 +13,7 @@ def am_confidence_intervals(boot_positions, alpha: float = 0.05) -> DescriptiveR
     :param alpha: Significance level (default 0.05 for 95% CI).
     :return: DescriptiveResult with lower and upper bounds per stimulus.
 
-    .. epigraph:: "This is the way." -- Din Djarin, The Mandalorian
+    .. epigraph:: There is no royal road to geometry. -- Euclid
     """
     import numpy as np
 

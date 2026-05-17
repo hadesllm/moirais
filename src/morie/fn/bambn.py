@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def bayesian_burnin_trim(chain, burnin=100) -> DescriptiveResult:
     """Trim burn-in samples from an MCMC chain.
 
-    .. epigraph:: "Valar Morghulis." -- Various, Game of Thrones
+    .. epigraph:: It does not matter how slowly you go as long as you do not stop. -- Confucius
     """
     import numpy as np
 

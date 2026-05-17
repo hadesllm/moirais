@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def simulate_choice_prob(utility_yea, utility_nay) -> DescriptiveResult:
     """Choice probabilities from yea/nay utilities via logistic.
 
-    .. epigraph:: "Fly." -- Breaking Bad
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     import numpy as np
 

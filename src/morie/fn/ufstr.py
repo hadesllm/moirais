@@ -14,7 +14,7 @@ def unfolding_stress(X_r, X_s, D, weights=None) -> DescriptiveResult:
     :param weights: Optional weight matrix.
     :return: DescriptiveResult with stress value.
 
-    .. epigraph:: "The mystery of life is not a problem to solve." -- Kynes, Dune
+    .. epigraph:: Logic is the foundation of all certain knowledge. -- Leonhard Euler
     """
     from morie._spatial_voting import unfolding_stress as _fn
 

@@ -16,7 +16,7 @@ def normal_vector_projection(
     :param external_measure: (n,) external variable.
     :return: DescriptiveResult with normal vector and angle.
 
-    .. epigraph:: "The truth is rarely pure and never simple." -- Picard, Star Trek
+    .. epigraph:: The heart has its reasons of which reason knows nothing. -- Blaise Pascal
     """
     from morie._spatial_voting import normal_vectors as _fn
 

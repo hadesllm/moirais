@@ -10,7 +10,7 @@ def weak_stationarity_test(Z, coords, n_lags=10):
 
     Computes empirical variograms in spatial quadrants and compares them.
 
-    .. epigraph:: "Always." -- Severus Snape, Harry Potter
+    .. epigraph:: Mathematics is the queen of the sciences. -- Carl Friedrich Gauss
 
     Parameters
     ----------

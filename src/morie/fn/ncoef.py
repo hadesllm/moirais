@@ -12,7 +12,7 @@ def normalize_coefficients(beta) -> DescriptiveResult:
     :param beta: Coefficient vector.
     :return: DescriptiveResult with unit normal vector.
 
-    .. epigraph:: "Texas Smash!" -- All Might, My Hero Academia
+    .. epigraph:: Measure what is measurable, and make measurable what is not. -- Galileo Galilei
     """
     import numpy as np
 

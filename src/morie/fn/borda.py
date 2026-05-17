@@ -21,7 +21,7 @@ def borda_count(rankings) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 1.
 
-    .. epigraph:: 'Knowledge itself is power. -- Francis Bacon'
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
     """
     R = np.asarray(rankings, dtype=float)
     if R.ndim != 2:

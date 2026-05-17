@@ -11,7 +11,7 @@ def isotropy_test(Z, coords, n_dirs=4, n_lags=10, tol_deg=22.5):
     Computes variograms in *n_dirs* angular sectors and tests whether they
     differ significantly.
 
-    .. epigraph:: "Toss a coin to your Witcher." -- Jaskier, The Witcher
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
 
     Parameters
     ----------

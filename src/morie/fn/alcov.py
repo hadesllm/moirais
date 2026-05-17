@@ -36,7 +36,7 @@ def alcove_model(
     ----------
     Armstrong (2014), Ch 9. Kruschke (1992).
 
-    .. epigraph:: "Your focus determines your reality." -- Qui-Gon, Star Wars
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
     """
     X = np.asarray(stimuli, dtype=float)
     y = np.asarray(categories, dtype=int).ravel()

@@ -12,7 +12,7 @@ def spatial_vote(voter_ideal, candidates) -> DescriptiveResult:
     :param candidates: Array of candidate positions (n_candidates x n_dims).
     :return: DescriptiveResult with winning candidate index.
 
-    .. epigraph:: "Make it so." -- Jean-Luc Picard, Star Trek
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
     """
     import numpy as np
 

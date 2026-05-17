@@ -13,7 +13,7 @@ def bb_dimensionality_select(Z, max_dims: int = 5) -> DescriptiveResult:
     :param max_dims: Maximum dimensions to consider.
     :return: DescriptiveResult with suggested dimensionality.
 
-    .. epigraph:: "Muda muda muda!" -- DIO, JoJo's Bizarre Adventure
+    .. epigraph:: We must know. We will know. -- David Hilbert
     """
     import numpy as np
 

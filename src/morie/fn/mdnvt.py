@@ -22,7 +22,7 @@ def median_voter(positions, *, weights=None) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 1. Black (1958).
 
-    .. epigraph:: "All we have to decide is what to do with the time given us." -- Gandalf
+    .. epigraph:: Logic is the foundation of all certain knowledge. -- Leonhard Euler
     """
     x = np.asarray(positions, dtype=float).ravel()
     if len(x) == 0:

@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def covariance_function_estimate(Z, coords, max_lag=None, n_lags=15):
     """Estimate the spatial covariance function C(h).
 
-    .. epigraph:: "Wake the f*** up, Samurai." -- Johnny Silverhand, Cyberpunk 2077
+    .. epigraph:: Number rules the universe. -- Pythagoras
 
     Parameters
     ----------

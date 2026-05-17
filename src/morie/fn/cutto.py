@@ -27,7 +27,7 @@ def cutting_plane(z1, z2, *, ideal_points=None) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 5-6.
 
-    .. epigraph:: "Luminous beings are we, not this crude matter.", Star Wars
+    .. epigraph:: There is no royal road to geometry. -- Euclid
     """
     a = np.asarray(z1, dtype=float).ravel()
     b = np.asarray(z2, dtype=float).ravel()

@@ -13,7 +13,7 @@ def ideal_point_recovery(X_r, X_s) -> DescriptiveResult:
     :param X_s: Column (stimulus) coordinates.
     :return: DescriptiveResult with recovered ideal points in ``extra``.
 
-    .. epigraph:: "I will become the Pirate King!" -- Monkey D. Luffy, One Piece
+    .. epigraph:: The whole is greater than the sum of its parts. -- Aristotle
     """
     from morie._spatial_voting import ideal_point_recovery as _fn
 

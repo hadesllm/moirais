@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def intensity_estimate(points, window, method="kernel", bandwidth=None, grid_n=50):
     """Estimate point pattern intensity lambda(s).
 
-    .. epigraph:: "Expecto Patronum!" -- Harry Potter, Harry Potter
+    .. epigraph:: We must know. We will know. -- David Hilbert
 
     Parameters
     ----------

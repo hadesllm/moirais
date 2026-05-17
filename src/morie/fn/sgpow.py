@@ -10,7 +10,7 @@ def power_variogram(h, c0, c1, alpha=1.5):
 
     gamma(h) = c0 + c1 * h^alpha, 0 < alpha < 2.
 
-    .. epigraph:: "A hunter must hunt." -- Bloodborne
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
 
     Parameters
     ----------

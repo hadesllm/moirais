@@ -29,7 +29,7 @@ def smacof_unfolding_basic(
     ----------
     Armstrong (2014), Ch 4. De Leeuw & Heiser (1977) SMACOF.
 
-    .. epigraph:: "The sleeper must awaken." -- Stilgar, Dune
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     Delta = np.asarray(dissimilarities, dtype=float)
     n_row, n_col = Delta.shape

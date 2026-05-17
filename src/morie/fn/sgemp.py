@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def empirical_semivariogram(Z, coords, n_lags=15, max_lag=None):
     """Compute the empirical semivariogram gamma(h).
 
-    .. epigraph:: "Rise, Tarnished." -- Two Fingers, Elden Ring
+    .. epigraph:: In the midst of chaos, there is also opportunity. -- Sun Tzu
 
     Parameters
     ----------

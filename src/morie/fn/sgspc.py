@@ -10,7 +10,7 @@ def spectral_density(Z, coords, n_freq=50):
 
     Uses 2D FFT on gridded data (nearest-neighbor interpolation if irregular).
 
-    .. epigraph:: "You spoony bard!" -- Tellah, Final Fantasy IV
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
 
     Parameters
     ----------

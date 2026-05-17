@@ -20,7 +20,7 @@ def bayesian_am_scaling(
     :param prior_sd: Prior standard deviation on stimulus positions.
     :return: DescriptiveResult with posterior samples in ``extra``.
 
-    .. epigraph:: "Arrakis teaches the attitude of the knife." -- Stilgar, Dune
+    .. epigraph:: Give me a place to stand and I will move the earth. -- Archimedes
     """
     from morie._spatial_voting import bayesian_am_scaling as _fn
 

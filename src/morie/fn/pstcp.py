@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def posterior_compare_params(chain, param_indices) -> DescriptiveResult:
     """Compare posterior distributions of selected parameters.
 
-    .. epigraph:: "Fire and blood." -- Targaryen, Game of Thrones
+    .. epigraph:: It is not the strongest that survives, but the most adaptable. -- Charles Darwin
     """
     import numpy as np
 

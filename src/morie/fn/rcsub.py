@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def subset_roll_calls(votes, min_margin=0.025) -> DescriptiveResult:
     """Filter out lopsided votes where margin < min_margin.
 
-    .. epigraph:: "Say my name." -- Walter White, Breaking Bad
+    .. epigraph:: We must know. We will know. -- David Hilbert
     """
     import numpy as np
 

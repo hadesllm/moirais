@@ -14,7 +14,7 @@ def quadratic_utility(ideal, position, beta: float = 1.0) -> DescriptiveResult:
     :param beta: Salience weight (default 1.0).
     :return: DescriptiveResult with utility value.
 
-    .. epigraph:: "Fear is the mind-killer." -- Bene Gesserit, Dune
+    .. epigraph:: There is no royal road to geometry. -- Euclid
     """
     import numpy as np
 

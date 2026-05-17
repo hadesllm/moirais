@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def em_log_likelihood(votes, theta, alpha, beta) -> DescriptiveResult:
     """Compute full log-likelihood for IRT model.
 
-    .. epigraph:: "The things I do for love." -- Jaime, Game of Thrones
+    .. epigraph:: The only true wisdom is in knowing you know nothing. -- Socrates
     """
     import numpy as np
 

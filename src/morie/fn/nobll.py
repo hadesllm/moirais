@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def nominate_bill_params(nv, mid) -> DescriptiveResult:
     """Compute yea/nay outcome positions from normal vectors and midpoints.
 
-    .. epigraph:: "We're done when I say we're done." -- Walter White, Breaking Bad
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     import numpy as np
 

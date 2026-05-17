@@ -20,7 +20,7 @@ def optimal_classification(
     :param n_restarts: Number of random restarts.
     :return: DescriptiveResult with PRE and ideal points in ``extra``.
 
-    .. epigraph:: "In the darkest times, hope is something you give yourself." -- Uncle Iroh, ATLA
+    .. epigraph:: You have power over your mind, not outside events. -- Marcus Aurelius
     """
     from morie._spatial_voting import optimal_classification as _fn
 

@@ -12,7 +12,7 @@ def am_matrix_setup(Z) -> DescriptiveResult:
     :param Z: Respondent x stimulus perceptual data.
     :return: DescriptiveResult with centered matrix and means.
 
-    .. epigraph:: "Rasengan!" -- Naruto Uzumaki, Naruto
+    .. epigraph:: A journey of a thousand miles begins with a single step. -- Lao Tzu
     """
     import numpy as np
 

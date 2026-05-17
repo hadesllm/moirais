@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def asymptotic_z_test(observed_stat, expected, se, cdf=None):
     """Asymptotic z-test for a spatial statistic.
 
-    .. epigraph:: "Do a barrel roll!" -- Peppy Hare, Star Fox
+    .. epigraph:: The measure of a man is what he does with power. -- Plato
 
     Parameters
     ----------

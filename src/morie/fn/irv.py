@@ -21,7 +21,7 @@ def instant_runoff(rankings) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 1.
 
-    .. epigraph:: 'Confine yourself to the present. -- Marcus Aurelius'
+    .. epigraph:: If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton
     """
     R = np.asarray(rankings, dtype=float)
     if R.ndim != 2:

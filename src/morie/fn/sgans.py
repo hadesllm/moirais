@@ -10,7 +10,7 @@ def anisotropy_correction(coords, ratio, angle):
 
     Rotates by -angle and scales the minor axis by ratio.
 
-    .. epigraph:: "How my blood boils!" -- Isshin Ashina, Sekiro
+    .. epigraph:: It is not the strongest that survives, but the most adaptable. -- Charles Darwin
 
     Parameters
     ----------

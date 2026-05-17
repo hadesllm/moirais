@@ -13,7 +13,7 @@ def am_r_squared(actual_positions, estimated) -> DescriptiveResult:
     :param estimated: A-M estimated positions.
     :return: DescriptiveResult with R-squared.
 
-    .. epigraph:: "People die when they are killed." -- Shirou Emiya, Fate/stay night
+    .. epigraph:: Mathematics is the queen of the sciences. -- Carl Friedrich Gauss
     """
     import numpy as np
 

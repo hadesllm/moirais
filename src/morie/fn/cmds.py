@@ -15,7 +15,7 @@ def classical_metric_mds(D, n_dims: int = 2) -> MdsRes:
     :param n_dims: Number of dimensions to retain.
     :return: MdsRes with coordinates and eigenvalues.
 
-    .. epigraph:: "A process cannot be understood by stopping it." -- First Law of Mentat, Dune
+    .. epigraph:: The Analytical Engine weaves algebraic patterns. -- Ada Lovelace
     """
     from morie._spatial_voting import classical_mds as _fn
 

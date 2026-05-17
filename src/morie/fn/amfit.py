@@ -15,7 +15,7 @@ def am_fit_statistic(Z, zhat, alpha, beta) -> DescriptiveResult:
     :param beta: Per-respondent weights.
     :return: DescriptiveResult with fit statistic.
 
-    .. epigraph:: "El Psy Kongroo." -- Rintaro Okabe, Steins;Gate
+    .. epigraph:: To understand God's thoughts we must study statistics. -- Florence Nightingale
     """
     import numpy as np
 

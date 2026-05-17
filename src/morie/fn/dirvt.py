@@ -13,7 +13,7 @@ def directional_vote(voter_ideal, candidates) -> DescriptiveResult:
     :param candidates: Array of candidate positions.
     :return: DescriptiveResult with directional utility scores.
 
-    .. epigraph:: "Go beyond!" -- All Might, My Hero Academia
+    .. epigraph:: Number rules the universe. -- Pythagoras
     """
     import numpy as np
 

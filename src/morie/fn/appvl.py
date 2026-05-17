@@ -18,7 +18,7 @@ def approval_vote(approval_matrix) -> DescriptiveResult:
     ----------
     Armstrong (2014), Ch 1. Brams & Fishburn (1978).
 
-    .. epigraph:: "It's a trap!" -- Admiral Ackbar, Star Wars
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
     """
     A = np.asarray(approval_matrix, dtype=int)
     if A.ndim != 2:

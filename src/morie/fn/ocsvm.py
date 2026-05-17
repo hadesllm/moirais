@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def oc_svm_classify(X, labels) -> DescriptiveResult:
     """Find separating hyperplane via simple linear discriminant.
 
-    .. epigraph:: "This is not meth." -- Walter White, Breaking Bad
+    .. epigraph:: Number rules the universe. -- Pythagoras
     """
     import numpy as np
 

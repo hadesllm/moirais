@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def effective_sample_size(chain) -> DescriptiveResult:
     """ESS using initial monotone sequence estimator.
 
-    .. epigraph:: "The North remembers." -- Various, Game of Thrones
+    .. epigraph:: It is not the strongest that survives, but the most adaptable. -- Charles Darwin
     """
     import numpy as np
 

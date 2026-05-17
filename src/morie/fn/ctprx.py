@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def cutting_plane_proximity(X, normal, cutpoint) -> DescriptiveResult:
     """Signed distance from each legislator to a cutting plane.
 
-    .. epigraph:: "Science, bitch!" -- Jesse, Breaking Bad
+    .. epigraph:: Statistics is the grammar of science. -- Karl Pearson
     """
     import numpy as np
 

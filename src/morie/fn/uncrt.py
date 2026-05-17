@@ -15,7 +15,7 @@ def utility_uncertainty(ideal, position, sigma: float = 1.0, n_draws: int = 1000
     :param seed: Random seed.
     :return: DescriptiveResult with expected utility.
 
-    .. epigraph:: "Equivalent Exchange." -- Alphonse Elric, Fullmetal Alchemist
+    .. epigraph:: The whole is greater than the sum of its parts. -- Aristotle
     """
     import numpy as np
 

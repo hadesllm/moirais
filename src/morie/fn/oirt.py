@@ -22,7 +22,7 @@ def ordinal_irt_model(
     :param seed: Random seed.
     :return: DescriptiveResult with ideal points and cutpoints.
 
-    .. epigraph:: "Believe it!" -- Naruto Uzumaki, Naruto
+    .. epigraph:: The only true wisdom is in knowing you know nothing. -- Socrates
     """
     from morie._spatial_voting import ordinal_irt as _fn
 

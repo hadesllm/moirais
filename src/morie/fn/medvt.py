@@ -12,7 +12,7 @@ def median_voter(ideal_points) -> DescriptiveResult:
     :param ideal_points: Array of voter ideal points (1-D).
     :return: DescriptiveResult with median position.
 
-    .. epigraph:: "The spice must flow." -- Stilgar, Dune
+    .. epigraph:: Errors using inadequate data are much less than those using none. -- Charles Babbage
     """
     import numpy as np
 

@@ -13,7 +13,7 @@ def separating_hyperplane(X, labels) -> DescriptiveResult:
     :param labels: Binary labels (0/1).
     :return: DescriptiveResult with normal vector and midpoint.
 
-    .. epigraph:: "I am justice!" -- Light Yagami, Death Note
+    .. epigraph:: You have power over your mind, not outside events. -- Marcus Aurelius
     """
     import numpy as np
 

@@ -15,7 +15,7 @@ def am_residuals(Z, zhat, alpha, beta) -> DescriptiveResult:
     :param beta: Per-respondent weights.
     :return: DescriptiveResult with residual matrix.
 
-    .. epigraph:: "Shine, Kakyoin!" -- DIO, JoJo's Bizarre Adventure
+    .. epigraph:: What is now proved was once only imagined. -- William Blake
     """
     import numpy as np
 

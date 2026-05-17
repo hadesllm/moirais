@@ -14,7 +14,7 @@ def plot_blackbox_result(positions, dim1: int = 0, dim2: int = 1) -> Descriptive
     :param dim2: Second dimension index.
     :return: DescriptiveResult with x, y arrays.
 
-    .. epigraph:: "I reject my humanity, JoJo!" -- DIO, JoJo's Bizarre Adventure
+    .. epigraph:: Luck is what happens when preparation meets opportunity. -- Seneca
     """
     import numpy as np
 

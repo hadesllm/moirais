@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def cox_process(intensity_field, window, seed=None):
     """Simulate a log-Gaussian Cox process.
 
-    .. epigraph:: "Medallion's humming." -- Geralt, The Witcher
+    .. epigraph:: To understand God's thoughts we must study statistics. -- Florence Nightingale
 
     Parameters
     ----------

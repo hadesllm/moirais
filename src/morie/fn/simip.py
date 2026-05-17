@@ -14,7 +14,7 @@ def simulate_ideal_points(n: int = 100, n_dims: int = 2, dist: str = "normal", s
     :param seed: Random seed.
     :return: DescriptiveResult with ideal point matrix.
 
-    .. epigraph:: "Dattebayo!" -- Naruto Uzumaki, Naruto
+    .. epigraph:: The whole is greater than the sum of its parts. -- Aristotle
     """
     import numpy as np
 

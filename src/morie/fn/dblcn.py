@@ -12,7 +12,7 @@ def double_centering(D) -> DescriptiveResult:
     :param D: Square distance matrix.
     :return: DescriptiveResult with centered matrix in ``extra``.
 
-    .. epigraph:: "The needs of the many outweigh the needs of the few." -- Spock, Star Trek
+    .. epigraph:: Errors using inadequate data are much less than those using none. -- Charles Babbage
     """
     from morie._spatial_voting import double_centering as _fn
 

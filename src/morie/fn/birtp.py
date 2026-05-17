@@ -13,7 +13,7 @@ def bayesian_irt_posterior(chain, standardize: bool = True) -> DescriptiveResult
     :param standardize: Whether to standardize ideal points to mean-zero.
     :return: DescriptiveResult with posterior summaries in ``extra``.
 
-    .. epigraph:: "I am the hope of the universe." -- Goku, Dragon Ball Z
+    .. epigraph:: It is not what happens to you, but how you react, that matters. -- Epictetus
     """
     from morie._spatial_voting import bayesian_irt_posterior as _fn
 

@@ -13,7 +13,7 @@ def outlier_detection_am(residuals, threshold: float = 2.0) -> DescriptiveResult
     :param threshold: Z-score threshold for outlier flag.
     :return: DescriptiveResult with outlier indices.
 
-    .. epigraph:: "There are no miracles, only the inevitable." -- Yuuko, xxxHolic
+    .. epigraph:: The measure of a man is what he does with power. -- Plato
     """
     import numpy as np
 

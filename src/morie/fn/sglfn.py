@@ -10,7 +10,7 @@ def l_function(K_values, r_values):
 
     L(r) = 0 under CSR, > 0 clustering, < 0 regularity.
 
-    .. epigraph:: "Expelliarmus!" -- Harry Potter, Harry Potter
+    .. epigraph:: The whole is greater than the sum of its parts. -- Aristotle
 
     Parameters
     ----------

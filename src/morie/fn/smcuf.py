@@ -19,7 +19,7 @@ def smacof_unfolding(
     :param tol: Convergence tolerance.
     :return: DescriptiveResult with row/column coordinates in ``extra``.
 
-    .. epigraph:: "Believe it!" -- Naruto Uzumaki, Naruto
+    .. epigraph:: The heart has its reasons of which reason knows nothing. -- Blaise Pascal
     """
     from morie._spatial_voting import smacof_unfolding as _fn
 

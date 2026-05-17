@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def plot_cutting_lines_data(normals, cutpoints, X) -> DescriptiveResult:
     """Prepare line segments and legislator points for cutting line plots.
 
-    .. epigraph:: "I watched Jane die." -- Walter White, Breaking Bad
+    .. epigraph:: The whole is greater than the sum of its parts. -- Aristotle
     """
     import numpy as np
 

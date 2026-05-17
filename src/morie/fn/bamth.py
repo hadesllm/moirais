@@ -9,7 +9,7 @@ from ._containers import DescriptiveResult
 def bayesian_thinning(chain, thin=5) -> DescriptiveResult:
     """Thin an MCMC chain by keeping every nth sample.
 
-    .. epigraph:: "Valar Dohaeris." -- Various, Game of Thrones
+    .. epigraph:: I think, therefore I am. -- Rene Descartes
     """
     import numpy as np
 

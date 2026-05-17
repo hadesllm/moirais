@@ -14,7 +14,7 @@ def plot_am_summary(positions, weights=None, bins: int = 30) -> DescriptiveResul
     :param bins: Number of histogram bins.
     :return: DescriptiveResult with histogram data.
 
-    .. epigraph:: "Beyond the horizon." -- Gol D. Roger, One Piece
+    .. epigraph:: To understand God's thoughts we must study statistics. -- Florence Nightingale
     """
     import numpy as np
 

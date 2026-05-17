@@ -15,7 +15,7 @@ def bb_weight_matrix(Z, n_dims: int = 2) -> DescriptiveResult:
     :param n_dims: Number of latent dimensions.
     :return: DescriptiveResult with weight matrix.
 
-    .. epigraph:: "Infinite Tsukuyomi!" -- Madara Uchiha, Naruto
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
     """
     import numpy as np
 

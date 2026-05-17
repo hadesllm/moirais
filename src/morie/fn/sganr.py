@@ -11,7 +11,7 @@ def anisotropy_ratio(Z, coords, n_dirs=8, n_lags=10):
     Fits directional variograms and computes the ratio of maximum to minimum
     effective range.
 
-    .. epigraph:: "Wind's howling." -- Geralt, The Witcher
+    .. epigraph:: Give me a place to stand and I will move the earth. -- Archimedes
 
     Parameters
     ----------

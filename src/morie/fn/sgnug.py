@@ -11,7 +11,7 @@ def nugget_effect_estimate(gamma_values, lag_distances):
     Uses linear extrapolation of the first two lag bins to estimate the
     nugget (y-intercept), and finds the sill and effective range.
 
-    .. epigraph:: "Praise the Sun!" -- Solaire, Dark Souls
+    .. epigraph:: No man ever steps in the same river twice. -- Heraclitus
 
     Parameters
     ----------

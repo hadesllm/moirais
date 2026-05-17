@@ -7,15 +7,18 @@
 morie_db_connect(db_path = NULL)
 }
 \arguments{
-\item{db_path}{Path to the SQLite file. Defaults to
-\code{MORIE_CACHE_DB} env var or \code{data/cache/morie.db}.}
+\item{db_path}{Path to the SQLite file. Defaults to the
+\code{MORIE_CACHE_DB} env var, else \code{morie.db} in the
+per-user cache directory.}
 }
 \value{
 A DBI connection object.
 }
 \description{
-Opens (or creates) the shared cache at \code{data/cache/morie.db}.
-Both R (DBI/RSQLite) and Python (sqlite3) read/write this same file.
+Opens (or creates) the shared cache at \code{morie.db} in the
+per-user cache directory (\code{~/.cache/morie} or
+\code{XDG_CACHE_HOME}). Both R (DBI/RSQLite) and Python (sqlite3)
+read/write this same file.
 }
 \examples{
 \donttest{

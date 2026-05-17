@@ -11,8 +11,8 @@ load_dmt_imaging(subject_id = NULL, root = NULL)
 \code{NULL} means "all available subjects on disk".}
 
 \item{root}{character.  Override path to the DMT_Imaging mirror.
-Defaults to \code{$MORIE_DMT_IMAGING_ROOT} or
-\code{/Volumes/VSR/rootcoderfiles/DMT_Imaging}.}
+Defaults to \code{$MORIE_DMT_IMAGING_ROOT}, else a
+\code{DMT_Imaging} folder in the per-user cache directory.}
 }
 \value{
 Named list with components:

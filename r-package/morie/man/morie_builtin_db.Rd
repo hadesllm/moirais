@@ -10,9 +10,10 @@ morie_builtin_db()
 File path string.
 }
 \description{
-Returns the path to \code{morie.db} that ships with the package.
-This database contains all CPADS, CCS, CSADS, CSUS, HealthInfobase, and
-CIHI datasets pre-loaded as SQLite tables.
+Returns the path to \code{morie.db} that ships with the package
+(\code{inst/extdata/morie.db}). This database contains all CPADS,
+CCS, CSADS, CSUS, HealthInfobase, and CIHI datasets pre-loaded as
+SQLite tables.
 }
 \examples{
 \dontrun{

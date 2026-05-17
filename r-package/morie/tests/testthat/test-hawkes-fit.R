@@ -40,6 +40,23 @@ test_that("morie_hawkes_fit validates its inputs", {
   expect_error(morie_hawkes_fit(c(1, 2), end_time = 1.5), "end_time")
 })
 
+test_that("morie_hawkes_fit reports the Poisson baseline and degeneracy", {
+  set.seed(99)
+  ev <- cumsum(rexp(300, rate = 3))
+  fit <- morie_hawkes_fit(ev, kernel = "exponential")
+  # the Poisson baseline is exact
+  expect_equal(fit$loglik_poisson,
+               morie:::.hawkes_loglik_poisson(300, fit$end_time))
+  # the Hawkes family nests Poisson, so it can never do worse
+  expect_gte(fit$loglik_gain, -1e-6)
+  # the self-excitation flag is consistent with the fitted eta
+  expect_identical(fit$self_excitation_detected,
+                   fit$branching_ratio >= 1e-3)
+  if (!fit$self_excitation_detected) {
+    expect_true(nzchar(fit$note))
+  }
+})
+
 test_that("the unconstrained reparameterisation round-trips", {
   for (theta in list(c(-1, 0.4, 1.5), c(0.5, 0.8, 2.0, 1.3))) {
     phi <- morie:::.hawkes_to_phi(theta)

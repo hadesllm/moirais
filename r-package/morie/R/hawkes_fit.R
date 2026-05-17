@@ -111,6 +111,29 @@
     gamma       = c(a0, eta, 1.5, 1 / dt_bar))
 }
 
+# Closed-form log-likelihood of the homogeneous Poisson submodel
+# (eta = 0): its MLE baseline is nu_hat = n / end_time, giving
+# logLik = n*log(n/T) - n. The Hawkes family nests this, so the Hawkes
+# MLE log-likelihood can never fall below it.
+.hawkes_loglik_poisson <- function(n, end_time) {
+  n * log(n / end_time) - n
+}
+
+# Deterministic multi-start set in the unconstrained space. No RNG, so
+# the fit is reproducible regardless of the caller's random seed. The
+# perturbations span lower / higher eta and shifted baseline / shape;
+# the lower-eta start in particular lets the optimiser reach the
+# Poisson submodel when the data carries no self-excitation.
+.hawkes_restarts <- function(phi0) {
+  offsets <- list(
+    c(0, 0, 0, 0),
+    c(0, 2.0, 0, 0),
+    c(0, -2.5, 0, 0),
+    c(0.7, 0, 0.7, 0),
+    c(-0.7, 1.0, -0.7, 0.5))
+  lapply(offsets, function(o) phi0 + o[seq_along(phi0)])
+}
+
 #' Fit a Hawkes (self-exciting point process) model by maximum likelihood
 #'
 #' Fits a one-dimensional Hawkes process with a constant baseline to a
@@ -165,22 +188,51 @@ morie_hawkes_fit <- function(times, end_time = NULL,
     }
   }
 
+  # multi-start: optimise from the canonical start plus deterministic
+  # perturbations and keep the lowest negative log-likelihood. Guards
+  # against Nelder-Mead settling in a local optimum on excited data.
   phi0 <- .hawkes_to_phi(.hawkes_start(kernel, times, end_time))
-  fit <- stats::optim(phi0, obj, method = "Nelder-Mead",
-                      control = list(maxit = 2000, reltol = 1e-10))
+  best <- NULL
+  for (phi_s in .hawkes_restarts(phi0)) {
+    run <- tryCatch(
+      stats::optim(phi_s, obj, method = "Nelder-Mead",
+                   control = list(maxit = 2000, reltol = 1e-10)),
+      error = function(e) NULL)
+    if (is.null(run) || !is.finite(run$value)) next
+    if (is.null(best) || run$value < best$value) best <- run
+  }
+  if (is.null(best)) {
+    stop("Hawkes fit failed: no starting point produced a valid optimum")
+  }
 
-  est <- .hawkes_to_theta(fit$par)
+  est <- .hawkes_to_theta(best$par)
   names(est) <- .hawkes_param_names(kernel)
-  loglik <- -fit$value
+  loglik <- -best$value
   k <- length(est)
+  loglik_pois <- .hawkes_loglik_poisson(n, end_time)
+  eta <- unname(est[["eta"]])
+  # eta ~ 0 -> the triggering term vanishes, so the kernel-shape
+  # parameters are unidentified and the data is consistent with a
+  # homogeneous Poisson process. Report that rather than a spurious
+  # non-convergence: the log-likelihood IS maximised, the MLE is just
+  # a flat ridge in the unidentified directions.
+  degenerate <- eta < 1e-3
   structure(
     list(kernel = kernel, baseline = "constant",
          estimate = est,
-         branching_ratio = unname(est[["eta"]]),
+         branching_ratio = eta,
          baseline_rate = exp(unname(est[["a0"]])),
          loglik = loglik, aic = 2 * k - 2 * loglik,
+         loglik_poisson = loglik_pois,
+         loglik_gain = loglik - loglik_pois,
+         self_excitation_detected = !degenerate,
          n_events = n, end_time = end_time,
-         converged = fit$convergence == 0L,
+         converged = best$convergence == 0L || degenerate,
+         note = if (degenerate)
+           paste("eta collapsed to ~0: data consistent with a",
+                 "homogeneous Poisson process; kernel-shape",
+                 "parameters are NOT identified")
+         else NULL,
          backend = if (use_cpp) "cpp" else "pure-R"),
     class = "morie_hawkes_fit")
 }
@@ -201,5 +253,10 @@ print.morie_hawkes_fit <- function(x, ...) {
               else ""))
   cat(sprintf("  logLik: %.6g   AIC: %.6g   converged: %s\n",
               x$loglik, x$aic, x$converged))
+  cat(sprintf("  vs Poisson: logLik %.6g  (gain %+.4g)\n",
+              x$loglik_poisson, x$loglik_gain))
+  if (!isTRUE(x$self_excitation_detected)) {
+    cat("  NOTE: ", x$note, "\n", sep = "")
+  }
   invisible(x)
 }

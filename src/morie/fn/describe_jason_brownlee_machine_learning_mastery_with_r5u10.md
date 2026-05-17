@@ -1,4 +1,4 @@
-# describe('Time discovers truth. — Seneca') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_10
+# describe('jason_brownlee_machine_learning_mastery_with_r5u10') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_10
 
 ## WHAT IT DOES
 

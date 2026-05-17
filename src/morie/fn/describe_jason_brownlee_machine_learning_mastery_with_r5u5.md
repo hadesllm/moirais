@@ -1,4 +1,4 @@
-# describe('An unexamined life is not worth living. — Socrates') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_5
+# describe('jason_brownlee_machine_learning_mastery_with_r5u5') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_5
 
 ## WHAT IT DOES
 

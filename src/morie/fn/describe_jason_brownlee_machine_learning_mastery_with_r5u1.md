@@ -1,4 +1,4 @@
-# describe('Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_1
+# describe('jason_brownlee_machine_learning_mastery_with_r5u1') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_1
 
 ## WHAT IT DOES
 

@@ -1,4 +1,4 @@
-# describe('Knowledge itself is power. — Francis Bacon') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_11
+# describe('jason_brownlee_machine_learning_mastery_with_r5u11') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_11
 
 ## WHAT IT DOES
 

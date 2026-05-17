@@ -1,4 +1,4 @@
-# describe('Character is destiny. — Heraclitus') — jason_brownlee_machine_learning_mastery_with_r_chapter_1_equation_15
+# describe('jason_brownlee_machine_learning_mastery_with_r1e15') — jason_brownlee_machine_learning_mastery_with_r_chapter_1_equation_15
 
 ## WHAT IT DOES
 

@@ -1,4 +1,4 @@
-# describe('A journey of a thousand miles begins with a single step. — Lao Tzu') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_7
+# describe('jason_brownlee_machine_learning_mastery_with_r5u7') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_7
 
 ## WHAT IT DOES
 

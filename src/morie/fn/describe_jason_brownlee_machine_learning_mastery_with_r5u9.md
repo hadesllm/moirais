@@ -1,4 +1,4 @@
-# describe('You have power over your mind — not outside events. — Marcus Aurelius') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_9
+# describe('jason_brownlee_machine_learning_mastery_with_r5u9') — jason_brownlee_machine_learning_mastery_with_r_chapter_5_unnumbered_9
 
 ## WHAT IT DOES
 

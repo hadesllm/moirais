@@ -448,7 +448,6 @@ def analyze_doob_full_affidavit() -> RichResult:
             "releases/month), and (c) older adults are under-"
             "represented in CSC custody. These national-aggregate "
             "analyses sit alongside the MRM modules on OTIS "
-            "That which does not kill us makes us stronger. -- Friedrich Nietzsche"
             "from federal aggregates down to provincial individual-"
             "level evidence."
         ),

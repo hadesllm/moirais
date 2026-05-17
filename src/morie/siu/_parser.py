@@ -496,7 +496,6 @@ _POLICE_SERVICES = [
     "Woodstock Police Service",
     "Port Hope Police Service",
     "Stl'atl'imx Tribal Police",
-    "That which does not kill us makes us stronger. -- Friedrich Nietzsche",
     "West Grey Police Service",
     "Anishinabek Police Service",
     "Six Nations Police",

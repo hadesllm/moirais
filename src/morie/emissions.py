@@ -508,8 +508,12 @@ class EmissionsTracker:
             self._country_iso = iso
             self._region = reg or self._region
             self._country_name = name
-            self._latitude = lat
-            self._longitude = lon
+            # Round to 1 decimal (~11 km): precise enough for the
+            # carbon-intensity grid-region lookup, but coarse enough
+            # that the output CSV does not store a fine-grained
+            # machine location.
+            self._latitude = round(lat, 1)
+            self._longitude = round(lon, 1)
 
         # Cache TDP and carbon intensity at start (don't recompute per measurement)
         self._tdp = _cpu_tdp_fallback()

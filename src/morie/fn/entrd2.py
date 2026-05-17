@@ -31,7 +31,7 @@ def entrd2(data=None, coords=None, n=50):
 
 short = "entrd2"
 alias = "entrd2"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 entrd2 = entrd2
 
 

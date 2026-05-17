@@ -37,7 +37,7 @@ def gnsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "gnsim"
 alias = "gnsim"
-quote = "One does not simply walk. -- Boromir"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 gnsim = gnsim
 
 

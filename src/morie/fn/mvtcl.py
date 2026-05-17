@@ -28,7 +28,7 @@ def mvtcl(data=None, n=50):
 
 short = "mvtcl"
 alias = "mvtcl"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The measure of a man is what he does with power. -- Plato"
 mvtcl = mvtcl
 
 

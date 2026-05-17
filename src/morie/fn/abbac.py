@@ -31,7 +31,7 @@ def abbac(data=None, coords=None, n=50):
 
 short = "abbac"
 alias = "abbac"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 abbac = abbac
 
 

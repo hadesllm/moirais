@@ -31,7 +31,7 @@ def gcaer(data=None, coords=None, n=50):
 
 short = "gcaer"
 alias = "gcaer"
-quote = "Winter is coming. -- Stark motto"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 gcaer = gcaer
 
 

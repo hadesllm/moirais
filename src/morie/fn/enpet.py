@@ -31,7 +31,7 @@ def enpet(data=None, coords=None, n=50):
 
 short = "enpet"
 alias = "enpet"
-quote = "There is always hope. -- Aragorn"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 enpet = enpet
 
 

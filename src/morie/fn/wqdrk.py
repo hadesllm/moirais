@@ -30,7 +30,7 @@ def wqdrk(data=None, coords=None, n=50):
 
 short = "wqdrk"
 alias = "wqdrk"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 wqdrk = wqdrk
 
 

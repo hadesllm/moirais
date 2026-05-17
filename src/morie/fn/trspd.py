@@ -36,7 +36,7 @@ def trspd(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trspd"
 alias = "trspd"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 trspd = trspd
 
 

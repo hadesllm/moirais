@@ -37,7 +37,7 @@ def rwsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "rwsim"
 alias = "rwsim"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 rwsim = rwsim
 
 

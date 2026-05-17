@@ -28,7 +28,7 @@ def vincnt(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "vincnt"
 alias = "vincnt"
-quote = "Make it so. -- Picard"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 vincnt = vincnt
 
 

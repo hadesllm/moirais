@@ -32,7 +32,7 @@ def rsseg(pixels=None, bands=None, n=100):
 
 short = "rsseg"
 alias = "rsseg"
-quote = "You should enjoy the detours. -- Ging"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 rsseg = rsseg
 
 

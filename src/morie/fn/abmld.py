@@ -31,7 +31,7 @@ def abmld(data=None, coords=None, n=50):
 
 short = "abmld"
 alias = "abmld"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 abmld = abmld
 
 

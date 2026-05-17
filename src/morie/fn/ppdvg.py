@@ -28,7 +28,7 @@ def ppdvg(data=None, n=50):
 
 short = "ppdvg"
 alias = "ppdvg"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ppdvg = ppdvg
 
 

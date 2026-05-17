@@ -32,7 +32,7 @@ def rsfpr(pixels=None, bands=None, n=100):
 
 short = "rsfpr"
 alias = "rsfpr"
-quote = "Science! -- Jesse Pinkman"
+quote = "Knowledge is power. -- Francis Bacon"
 rsfpr = rsfpr
 
 

@@ -33,7 +33,7 @@ def afchl(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afchl"
 alias = "afchl"
-quote = "Breathe. -- Tanjiro"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 afchl = afchl
 
 

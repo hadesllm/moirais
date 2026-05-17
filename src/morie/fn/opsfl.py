@@ -46,7 +46,7 @@ def opsfl(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opsfl"
 alias = "opsfl"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 opsfl = opsfl
 
 

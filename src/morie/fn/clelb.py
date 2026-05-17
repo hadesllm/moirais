@@ -40,7 +40,7 @@ def clelb(data=None, n=50, k=3, coords=None):
 
 short = "clelb"
 alias = "clelb"
-quote = "Science! -- Jesse Pinkman"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 clelb = clelb
 
 

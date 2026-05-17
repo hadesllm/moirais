@@ -38,7 +38,7 @@ def srmgb(X=None, y=None, w=None, n=50, k=3):
 
 short = "srmgb"
 alias = "srmgb"
-quote = "Live long and prosper. -- Spock"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 srmgb = srmgb
 
 

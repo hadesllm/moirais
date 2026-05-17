@@ -37,7 +37,7 @@ def mdcwd(data=None, query=None, origin=None, *, n=50):
 
 short = "mdcwd"
 alias = "mdcwd"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 mdcwd = mdcwd
 
 

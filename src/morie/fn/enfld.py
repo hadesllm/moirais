@@ -31,7 +31,7 @@ def enfld(data=None, coords=None, n=50):
 
 short = "enfld"
 alias = "enfld"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "Knowledge is power. -- Francis Bacon"
 enfld = enfld
 
 

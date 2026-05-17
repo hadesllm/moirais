@@ -34,7 +34,7 @@ def csfrg(incidents=None, population=None, coords=None, n=50):
 
 short = "csfrg"
 alias = "csfrg"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 csfrg = csfrg
 
 

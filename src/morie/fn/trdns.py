@@ -36,7 +36,7 @@ def trdns(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trdns"
 alias = "trdns"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 trdns = trdns
 
 

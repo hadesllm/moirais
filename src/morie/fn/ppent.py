@@ -28,7 +28,7 @@ def ppent(data=None, n=50):
 
 short = "ppent"
 alias = "ppent"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 ppent = ppent
 
 

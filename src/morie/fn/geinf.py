@@ -33,7 +33,7 @@ def geinf(gdp=None, trade=None, coords=None, n=50):
 
 short = "geinf"
 alias = "geinf"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Knowledge is power. -- Francis Bacon"
 geinf = geinf
 
 

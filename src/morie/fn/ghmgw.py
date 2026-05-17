@@ -41,7 +41,7 @@ def ghmgw(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghmgw"
 alias = "ghmgw"
-quote = "Tatakae! -- Eren"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 ghmgw = ghmgw
 
 

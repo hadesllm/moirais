@@ -37,7 +37,7 @@ def tssfe(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssfe"
 alias = "tssfe"
-quote = "See you space cowboy. -- Spike"
+quote = "We must know. We will know. -- David Hilbert"
 tssfe = tssfe
 
 

@@ -40,7 +40,7 @@ def maplm(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maplm"
 alias = "maplm"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 maplm = maplm
 
 

@@ -31,7 +31,7 @@ def gcprc(data=None, coords=None, n=50):
 
 short = "gcprc"
 alias = "gcprc"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 gcprc = gcprc
 
 

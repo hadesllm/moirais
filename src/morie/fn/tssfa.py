@@ -37,7 +37,7 @@ def tssfa(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssfa"
 alias = "tssfa"
-quote = "Live long and prosper. -- Spock"
+quote = "What is now proved was once only imagined. -- William Blake"
 tssfa = tssfa
 
 

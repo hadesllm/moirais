@@ -30,7 +30,7 @@ def wlhme(abundance=None, coords=None, n=50):
 
 short = "wlhme"
 alias = "wlhme"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Knowledge is power. -- Francis Bacon"
 wlhme = wlhme
 
 

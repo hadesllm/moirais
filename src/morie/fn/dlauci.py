@@ -37,7 +37,7 @@ def dlauci(x=None, y=None, values=None, resolution=50):
 
 short = "dlauci"
 alias = "dlauci"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 dlauci = dlauci
 
 

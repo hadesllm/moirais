@@ -34,7 +34,7 @@ def cscpt2(incidents=None, population=None, coords=None, n=50):
 
 short = "cscpt2"
 alias = "cscpt2"
-quote = "Live long and prosper. -- Spock"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 cscpt2 = cscpt2
 
 

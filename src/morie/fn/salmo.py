@@ -43,7 +43,7 @@ def salmo(values=None, w=None, n=50):
 
 short = "salmo"
 alias = "salmo"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 salmo = salmo
 
 

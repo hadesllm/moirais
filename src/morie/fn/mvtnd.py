@@ -28,7 +28,7 @@ def mvtnd(data=None, n=50):
 
 short = "mvtnd"
 alias = "mvtnd"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "We must know. We will know. -- David Hilbert"
 mvtnd = mvtnd
 
 

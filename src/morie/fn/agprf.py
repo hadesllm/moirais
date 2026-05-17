@@ -38,7 +38,7 @@ def agprf(areas=None, perimeters=None, values=None, n=30):
 
 short = "agprf"
 alias = "agprf"
-quote = "Resistance is futile. -- Borg"
+quote = "I think, therefore I am. -- Rene Descartes"
 agprf = agprf
 
 

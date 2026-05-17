@@ -33,7 +33,7 @@ def ubsch(population=None, area=None, coords=None, n=50):
 
 short = "ubsch"
 alias = "ubsch"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ubsch = ubsch
 
 

@@ -33,7 +33,7 @@ def afsln(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afsln"
 alias = "afsln"
-quote = "Bankai! -- Ichigo"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 afsln = afsln
 
 

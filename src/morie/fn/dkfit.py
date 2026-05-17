@@ -40,7 +40,7 @@ def dkfit(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkfit"
 alias = "dkfit"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 dkfit = dkfit
 
 

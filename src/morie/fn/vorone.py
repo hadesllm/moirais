@@ -36,7 +36,7 @@ def vorone(x=None, y=None, values=None, resolution=50):
 
 short = "vorone"
 alias = "vorone"
-quote = "I am the one who knocks. -- Walter White"
+quote = "We must know. We will know. -- David Hilbert"
 vorone = vorone
 
 

@@ -36,7 +36,7 @@ def gdlit(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdlit"
 alias = "gdlit"
-quote = "Science! -- Jesse Pinkman"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 gdlit = gdlit
 
 

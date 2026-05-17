@@ -38,7 +38,7 @@ def srbpn(X=None, y=None, w=None, n=50, k=3):
 
 short = "srbpn"
 alias = "srbpn"
-quote = "I am justice! -- Light"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 srbpn = srbpn
 
 

@@ -30,7 +30,7 @@ def wqalg(data=None, coords=None, n=50):
 
 short = "wqalg"
 alias = "wqalg"
-quote = "Bankai! -- Ichigo"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 wqalg = wqalg
 
 

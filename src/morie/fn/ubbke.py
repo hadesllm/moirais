@@ -33,7 +33,7 @@ def ubbke(population=None, area=None, coords=None, n=50):
 
 short = "ubbke"
 alias = "ubbke"
-quote = "Bankai! -- Ichigo"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 ubbke = ubbke
 
 

@@ -40,7 +40,7 @@ def dkgak(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkgak"
 alias = "dkgak"
-quote = "Live long and prosper. -- Spock"
+quote = "We must know. We will know. -- David Hilbert"
 dkgak = dkgak
 
 

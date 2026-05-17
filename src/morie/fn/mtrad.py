@@ -37,7 +37,7 @@ def mtrad(trajectory=None, n=50, dt=1.0):
 
 short = "mtrad"
 alias = "mtrad"
-quote = "One does not simply walk. -- Boromir"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 mtrad = mtrad
 
 

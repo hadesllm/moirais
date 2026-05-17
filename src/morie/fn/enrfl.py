@@ -31,7 +31,7 @@ def enrfl(data=None, coords=None, n=50):
 
 short = "enrfl"
 alias = "enrfl"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "What is now proved was once only imagined. -- William Blake"
 enrfl = enrfl
 
 

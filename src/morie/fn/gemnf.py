@@ -33,7 +33,7 @@ def gemnf(gdp=None, trade=None, coords=None, n=50):
 
 short = "gemnf"
 alias = "gemnf"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 gemnf = gemnf
 
 

@@ -36,7 +36,7 @@ def pppnl(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "pppnl"
 alias = "pppnl"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 pppnl = pppnl
 
 

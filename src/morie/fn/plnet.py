@@ -28,7 +28,7 @@ def plnet(data=None, n=50):
 
 short = "plnet"
 alias = "plnet"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The measure of a man is what he does with power. -- Plato"
 plnet = plnet
 
 

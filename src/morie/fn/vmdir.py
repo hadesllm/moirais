@@ -36,7 +36,7 @@ def vmdir(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmdir"
 alias = "vmdir"
-quote = "See you space cowboy. -- Spike"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 vmdir = vmdir
 
 

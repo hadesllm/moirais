@@ -41,7 +41,7 @@ def ghscn(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghscn"
 alias = "ghscn"
-quote = "See you space cowboy. -- Spike"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 ghscn = ghscn
 
 

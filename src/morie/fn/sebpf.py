@@ -39,7 +39,7 @@ def sebpf(cases=None, population=None, coords=None, n=50):
 
 short = "sebpf"
 alias = "sebpf"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Knowledge is power. -- Francis Bacon"
 sebpf = sebpf
 
 

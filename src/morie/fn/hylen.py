@@ -33,7 +33,7 @@ def hylen(flow=None, precip=None, coords=None, n=50):
 
 short = "hylen"
 alias = "hylen"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "The measure of a man is what he does with power. -- Plato"
 hylen = hylen
 
 

@@ -31,7 +31,7 @@ def abpln(data=None, coords=None, n=50):
 
 short = "abpln"
 alias = "abpln"
-quote = "Bankai! -- Ichigo"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 abpln = abpln
 
 

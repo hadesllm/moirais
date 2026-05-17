@@ -32,7 +32,7 @@ def rsmxl(pixels=None, bands=None, n=100):
 
 short = "rsmxl"
 alias = "rsmxl"
-quote = "Keep moving forward. -- Eren"
+quote = "The measure of a man is what he does with power. -- Plato"
 rsmxl = rsmxl
 
 

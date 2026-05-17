@@ -31,7 +31,7 @@ def nbveg(data=None, coords=None, n=50):
 
 short = "nbveg"
 alias = "nbveg"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 nbveg = nbveg
 
 

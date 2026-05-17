@@ -33,7 +33,7 @@ def idwfl(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "idwfl"
 alias = "idwfl"
-quote = "Arise. -- Shadow Monarch"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 idwfl = idwfl
 
 

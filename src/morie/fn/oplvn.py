@@ -46,7 +46,7 @@ def oplvn(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "oplvn"
 alias = "oplvn"
-quote = "I mustn't run away. -- Shinji"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 oplvn = oplvn
 
 

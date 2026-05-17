@@ -40,7 +40,7 @@ def masat(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "masat"
 alias = "masat"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 masat = masat
 
 

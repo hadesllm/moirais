@@ -37,7 +37,7 @@ def tsstk(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsstk"
 alias = "tsstk"
-quote = "I am the hope of the universe. -- Goku"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 tsstk = tsstk
 
 

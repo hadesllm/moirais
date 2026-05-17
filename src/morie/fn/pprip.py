@@ -36,7 +36,7 @@ def pprip(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "pprip"
 alias = "pprip"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "Knowledge is power. -- Francis Bacon"
 pprip = pprip
 
 

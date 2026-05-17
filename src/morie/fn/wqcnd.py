@@ -30,7 +30,7 @@ def wqcnd(data=None, coords=None, n=50):
 
 short = "wqcnd"
 alias = "wqcnd"
-quote = "Yare yare daze. -- Jotaro"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 wqcnd = wqcnd
 
 

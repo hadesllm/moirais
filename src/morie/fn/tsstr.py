@@ -37,7 +37,7 @@ def tsstr(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsstr"
 alias = "tsstr"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 tsstr = tsstr
 
 

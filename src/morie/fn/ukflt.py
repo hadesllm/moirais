@@ -32,7 +32,7 @@ def ukflt(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "ukflt"
 alias = "ukflt"
-quote = "I am the hope of the universe. -- Goku"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 ukflt = ukflt
 
 

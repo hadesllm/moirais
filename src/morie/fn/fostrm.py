@@ -39,7 +39,7 @@ def fostrm(dbh=None, height=None, coords=None, n=50):
 
 short = "fostrm"
 alias = "fostrm"
-quote = "See you space cowboy. -- Spike"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 fostrm = fostrm
 
 

@@ -39,7 +39,7 @@ def focrb(dbh=None, height=None, coords=None, n=50):
 
 short = "focrb"
 alias = "focrb"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "The measure of a man is what he does with power. -- Plato"
 focrb = focrb
 
 

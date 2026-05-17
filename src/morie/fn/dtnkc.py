@@ -31,7 +31,7 @@ def dtnkc(x=None, n=100, params=None):
 
 short = "dtnkc"
 alias = "dtnkc"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 dtnkc = dtnkc
 
 

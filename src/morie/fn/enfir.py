@@ -31,7 +31,7 @@ def enfir(data=None, coords=None, n=50):
 
 short = "enfir"
 alias = "enfir"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "What is now proved was once only imagined. -- William Blake"
 enfir = enfir
 
 

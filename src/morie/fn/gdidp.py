@@ -36,7 +36,7 @@ def gdidp(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdidp"
 alias = "gdidp"
-quote = "You should enjoy the detours. -- Ging"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 gdidp = gdidp
 
 

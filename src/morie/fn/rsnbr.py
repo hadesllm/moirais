@@ -32,7 +32,7 @@ def rsnbr(pixels=None, bands=None, n=100):
 
 short = "rsnbr"
 alias = "rsnbr"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 rsnbr = rsnbr
 
 

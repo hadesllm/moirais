@@ -34,7 +34,7 @@ def csprs(incidents=None, population=None, coords=None, n=50):
 
 short = "csprs"
 alias = "csprs"
-quote = "Resistance is futile. -- Borg"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 csprs = csprs
 
 

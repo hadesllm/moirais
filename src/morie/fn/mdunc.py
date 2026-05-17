@@ -37,7 +37,7 @@ def mdunc(data=None, query=None, origin=None, *, n=50):
 
 short = "mdunc"
 alias = "mdunc"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 mdunc = mdunc
 
 

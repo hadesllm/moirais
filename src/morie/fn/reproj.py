@@ -29,7 +29,7 @@ def reproj(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "reproj"
 alias = "reproj"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 reproj = reproj
 
 

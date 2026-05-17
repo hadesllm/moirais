@@ -38,7 +38,7 @@ def srlgr(X=None, y=None, w=None, n=50, k=3):
 
 short = "srlgr"
 alias = "srlgr"
-quote = "There is always hope. -- Aragorn"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 srlgr = srlgr
 
 

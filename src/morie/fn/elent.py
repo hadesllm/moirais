@@ -28,7 +28,7 @@ def elent(data=None, n=50):
 
 short = "elent"
 alias = "elent"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 elent = elent
 
 

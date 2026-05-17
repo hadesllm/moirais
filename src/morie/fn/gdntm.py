@@ -36,7 +36,7 @@ def gdntm(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdntm"
 alias = "gdntm"
-quote = "Bankai! -- Ichigo"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 gdntm = gdntm
 
 

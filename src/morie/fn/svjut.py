@@ -27,7 +27,7 @@ def svjut(data=None, n=50):
 
 short = "svjut"
 alias = "svjut"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 svjut = svjut
 
 

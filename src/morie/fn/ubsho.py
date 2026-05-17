@@ -33,7 +33,7 @@ def ubsho(population=None, area=None, coords=None, n=50):
 
 short = "ubsho"
 alias = "ubsho"
-quote = "Winter is coming. -- Stark motto"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ubsho = ubsho
 
 

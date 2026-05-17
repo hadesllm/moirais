@@ -40,7 +40,7 @@ def clsil(data=None, n=50, k=3, coords=None):
 
 short = "clsil"
 alias = "clsil"
-quote = "Resistance is futile. -- Borg"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 clsil = clsil
 
 

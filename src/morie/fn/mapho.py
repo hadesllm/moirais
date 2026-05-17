@@ -40,7 +40,7 @@ def mapho(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mapho"
 alias = "mapho"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 mapho = mapho
 
 

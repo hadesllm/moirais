@@ -36,7 +36,7 @@ def uniona(x=None, y=None, values=None, resolution=50):
 
 short = "uniona"
 alias = "uniona"
-quote = "I am justice! -- Light"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 uniona = uniona
 
 

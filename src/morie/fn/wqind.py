@@ -30,7 +30,7 @@ def wqind(data=None, coords=None, n=50):
 
 short = "wqind"
 alias = "wqind"
-quote = "Make it so. -- Picard"
+quote = "What is now proved was once only imagined. -- William Blake"
 wqind = wqind
 
 

@@ -43,7 +43,7 @@ def svhut(positions, weights=None, issue_weights=None):
 
 short = "svhut"
 alias = "svhut"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 svhut = svhut
 
 

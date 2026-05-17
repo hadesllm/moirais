@@ -38,7 +38,7 @@ def srlmt(X=None, y=None, w=None, n=50, k=3):
 
 short = "srlmt"
 alias = "srlmt"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 srlmt = srlmt
 
 

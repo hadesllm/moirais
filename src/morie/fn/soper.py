@@ -32,7 +32,7 @@ def soper(data=None, depth=None, coords=None, n=50):
 
 short = "soper"
 alias = "soper"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "We must know. We will know. -- David Hilbert"
 soper = soper
 
 

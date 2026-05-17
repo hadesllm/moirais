@@ -36,7 +36,7 @@ def gdtnd(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdtnd"
 alias = "gdtnd"
-quote = "Make it so. -- Picard"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 gdtnd = gdtnd
 
 

@@ -28,7 +28,7 @@ def pleri(data=None, n=50):
 
 short = "pleri"
 alias = "pleri"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 pleri = pleri
 
 

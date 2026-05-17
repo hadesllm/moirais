@@ -31,7 +31,7 @@ def dtknt(x=None, n=100, params=None):
 
 short = "dtknt"
 alias = "dtknt"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 dtknt = dtknt
 
 

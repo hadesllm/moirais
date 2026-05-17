@@ -36,7 +36,7 @@ def ppmh2(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppmh2"
 alias = "ppmh2"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The measure of a man is what he does with power. -- Plato"
 ppmh2 = ppmh2
 
 

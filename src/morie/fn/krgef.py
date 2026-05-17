@@ -33,7 +33,7 @@ def krgef(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "krgef"
 alias = "krgef"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 krgef = krgef
 
 

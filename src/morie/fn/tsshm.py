@@ -37,7 +37,7 @@ def tsshm(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsshm"
 alias = "tsshm"
-quote = "Science! -- Jesse Pinkman"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 tsshm = tsshm
 
 

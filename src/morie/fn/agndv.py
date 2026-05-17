@@ -38,7 +38,7 @@ def agndv(areas=None, perimeters=None, values=None, n=30):
 
 short = "agndv"
 alias = "agndv"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 agndv = agndv
 
 

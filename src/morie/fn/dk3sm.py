@@ -40,7 +40,7 @@ def dk3sm(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3sm"
 alias = "dk3sm"
-quote = "Keep moving forward. -- Eren"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 dk3sm = dk3sm
 
 

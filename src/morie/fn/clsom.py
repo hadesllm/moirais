@@ -40,7 +40,7 @@ def clsom(data=None, n=50, k=3, coords=None):
 
 short = "clsom"
 alias = "clsom"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 clsom = clsom
 
 

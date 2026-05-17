@@ -36,7 +36,7 @@ def vmfit(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmfit"
 alias = "vmfit"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 vmfit = vmfit
 
 

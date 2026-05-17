@@ -40,7 +40,7 @@ def dksmt(x=None, y=None, z=None, values=None, n=30):
 
 short = "dksmt"
 alias = "dksmt"
-quote = "I am here! -- All Might"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 dksmt = dksmt
 
 

@@ -36,7 +36,7 @@ def gdlng(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdlng"
 alias = "gdlng"
-quote = "Keep moving forward. -- Eren"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 gdlng = gdlng
 
 

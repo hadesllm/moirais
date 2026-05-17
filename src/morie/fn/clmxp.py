@@ -40,7 +40,7 @@ def clmxp(data=None, n=50, k=3, coords=None):
 
 short = "clmxp"
 alias = "clmxp"
-quote = "You should enjoy the detours. -- Ging"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 clmxp = clmxp
 
 

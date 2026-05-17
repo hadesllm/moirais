@@ -36,7 +36,7 @@ def vmswt(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmswt"
 alias = "vmswt"
-quote = "Resistance is futile. -- Borg"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 vmswt = vmswt
 
 

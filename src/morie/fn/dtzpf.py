@@ -31,7 +31,7 @@ def dtzpf(x=None, n=100, params=None):
 
 short = "dtzpf"
 alias = "dtzpf"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 dtzpf = dtzpf
 
 

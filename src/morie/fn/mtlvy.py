@@ -37,7 +37,7 @@ def mtlvy(trajectory=None, n=50, dt=1.0):
 
 short = "mtlvy"
 alias = "mtlvy"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "Number rules the universe. -- Pythagoras"
 mtlvy = mtlvy
 
 

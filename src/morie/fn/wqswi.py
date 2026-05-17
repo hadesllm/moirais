@@ -30,7 +30,7 @@ def wqswi(data=None, coords=None, n=50):
 
 short = "wqswi"
 alias = "wqswi"
-quote = "Winter is coming. -- Stark motto"
+quote = "I think, therefore I am. -- Rene Descartes"
 wqswi = wqswi
 
 

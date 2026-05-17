@@ -31,7 +31,7 @@ def nbind(data=None, coords=None, n=50):
 
 short = "nbind"
 alias = "nbind"
-quote = "See you space cowboy. -- Spike"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 nbind = nbind
 
 

@@ -43,7 +43,7 @@ def sawcm(values=None, w=None, n=50):
 
 short = "sawcm"
 alias = "sawcm"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 sawcm = sawcm
 
 

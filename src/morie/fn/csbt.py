@@ -34,7 +34,7 @@ def csbt(incidents=None, population=None, coords=None, n=50):
 
 short = "csbt"
 alias = "csbt"
-quote = "Make it so. -- Picard"
+quote = "Number rules the universe. -- Pythagoras"
 csbt = csbt
 
 

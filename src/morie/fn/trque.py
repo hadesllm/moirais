@@ -36,7 +36,7 @@ def trque(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trque"
 alias = "trque"
-quote = "See you space cowboy. -- Spike"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 trque = trque
 
 

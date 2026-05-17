@@ -28,7 +28,7 @@ def pldyn(data=None, n=50):
 
 short = "pldyn"
 alias = "pldyn"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 pldyn = pldyn
 
 

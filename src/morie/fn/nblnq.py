@@ -31,7 +31,7 @@ def nblnq(data=None, coords=None, n=50):
 
 short = "nblnq"
 alias = "nblnq"
-quote = "I am the one who knocks. -- Walter White"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 nblnq = nblnq
 
 

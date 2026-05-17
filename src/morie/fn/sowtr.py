@@ -32,7 +32,7 @@ def sowtr(data=None, depth=None, coords=None, n=50):
 
 short = "sowtr"
 alias = "sowtr"
-quote = "I am justice! -- Light"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 sowtr = sowtr
 
 

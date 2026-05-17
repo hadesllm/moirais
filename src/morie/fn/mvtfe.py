@@ -28,7 +28,7 @@ def mvtfe(data=None, n=50):
 
 short = "mvtfe"
 alias = "mvtfe"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 mvtfe = mvtfe
 
 

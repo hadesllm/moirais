@@ -37,7 +37,7 @@ def filsm(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "filsm"
 alias = "filsm"
-quote = "Arise. -- Shadow Monarch"
+quote = "We must know. We will know. -- David Hilbert"
 filsm = filsm
 
 

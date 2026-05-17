@@ -37,7 +37,7 @@ def gaazbr(x=None, y=None, values=None, resolution=50):
 
 short = "gaazbr"
 alias = "gaazbr"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 gaazbr = gaazbr
 
 

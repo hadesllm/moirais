@@ -33,7 +33,7 @@ def affrt(yield_data=None, soil=None, coords=None, n=50):
 
 short = "affrt"
 alias = "affrt"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 affrt = affrt
 
 

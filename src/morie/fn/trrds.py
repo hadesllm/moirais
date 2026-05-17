@@ -36,7 +36,7 @@ def trrds(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trrds"
 alias = "trrds"
-quote = "I am here! -- All Might"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 trrds = trrds
 
 

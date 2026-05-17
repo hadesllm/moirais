@@ -43,7 +43,7 @@ def sawhi(values=None, w=None, n=50):
 
 short = "sawhi"
 alias = "sawhi"
-quote = "Whatever happens, happens. -- Spike"
+quote = "Knowledge is power. -- Francis Bacon"
 sawhi = sawhi
 
 

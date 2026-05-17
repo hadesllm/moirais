@@ -37,7 +37,7 @@ def tssgm(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssgm"
 alias = "tssgm"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 tssgm = tssgm
 
 

@@ -30,7 +30,7 @@ def dynamic_irt_estimate(votes=None, *, time_periods=None, dims=1, n=10, m=5):
 
 short = "dyirt"
 alias = "dynamic_irt_estimate"
-quote = "We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 dynamic_irt_estimate = dynamic_irt_estimate
 
 

@@ -28,7 +28,7 @@ def cmamn(data=None, n=50):
 
 short = "cmamn"
 alias = "cmamn"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 cmamn = cmamn
 
 

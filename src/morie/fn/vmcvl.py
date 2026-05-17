@@ -36,7 +36,7 @@ def vmcvl(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmcvl"
 alias = "vmcvl"
-quote = "Science! -- Jesse Pinkman"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 vmcvl = vmcvl
 
 

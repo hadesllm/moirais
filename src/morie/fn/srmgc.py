@@ -38,7 +38,7 @@ def srmgc(X=None, y=None, w=None, n=50, k=3):
 
 short = "srmgc"
 alias = "srmgc"
-quote = "One does not simply walk. -- Boromir"
+quote = "Number rules the universe. -- Pythagoras"
 srmgc = srmgc
 
 

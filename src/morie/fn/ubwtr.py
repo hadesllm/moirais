@@ -33,7 +33,7 @@ def ubwtr(population=None, area=None, coords=None, n=50):
 
 short = "ubwtr"
 alias = "ubwtr"
-quote = "Kamehameha! -- Goku"
+quote = "I think, therefore I am. -- Rene Descartes"
 ubwtr = ubwtr
 
 

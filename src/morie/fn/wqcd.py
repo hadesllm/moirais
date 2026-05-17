@@ -30,7 +30,7 @@ def wqcd(data=None, coords=None, n=50):
 
 short = "wqcd"
 alias = "wqcd"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "I think, therefore I am. -- Rene Descartes"
 wqcd = wqcd
 
 

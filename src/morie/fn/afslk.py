@@ -33,7 +33,7 @@ def afslk(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afslk"
 alias = "afslk"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 afslk = afslk
 
 

@@ -28,7 +28,7 @@ def elcmp(data=None, n=50):
 
 short = "elcmp"
 alias = "elcmp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 elcmp = elcmp
 
 

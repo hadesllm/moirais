@@ -36,7 +36,7 @@ def gdpvt(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdpvt"
 alias = "gdpvt"
-quote = "Breathe. -- Tanjiro"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 gdpvt = gdpvt
 
 

@@ -40,7 +40,7 @@ def clpfc(data=None, n=50, k=3, coords=None):
 
 short = "clpfc"
 alias = "clpfc"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 clpfc = clpfc
 
 

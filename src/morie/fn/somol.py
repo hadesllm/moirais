@@ -32,7 +32,7 @@ def somol(data=None, depth=None, coords=None, n=50):
 
 short = "somol"
 alias = "somol"
-quote = "Arise. -- Shadow Monarch"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 somol = somol
 
 

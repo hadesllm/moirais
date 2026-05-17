@@ -33,7 +33,7 @@ def afwtld(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afwtld"
 alias = "afwtld"
-quote = "Valar Morghulis. -- Braavos"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 afwtld = afwtld
 
 

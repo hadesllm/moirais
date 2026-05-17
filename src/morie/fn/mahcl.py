@@ -40,7 +40,7 @@ def mahcl(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mahcl"
 alias = "mahcl"
-quote = "See you space cowboy. -- Spike"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 mahcl = mahcl
 
 

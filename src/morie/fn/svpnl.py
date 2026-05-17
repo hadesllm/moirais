@@ -27,7 +27,7 @@ def svpnl(data=None, n=50):
 
 short = "svpnl"
 alias = "svpnl"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 svpnl = svpnl
 
 

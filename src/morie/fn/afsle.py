@@ -33,7 +33,7 @@ def afsle(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afsle"
 alias = "afsle"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 afsle = afsle
 
 

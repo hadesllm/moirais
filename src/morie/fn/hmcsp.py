@@ -37,7 +37,7 @@ def hmcsp(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "hmcsp"
 alias = "hmcsp"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 hmcsp = hmcsp
 
 

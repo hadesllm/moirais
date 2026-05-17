@@ -37,7 +37,7 @@ def gastrl(x=None, y=None, values=None, resolution=50):
 
 short = "gastrl"
 alias = "gastrl"
-quote = "Keep moving forward. -- Eren"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 gastrl = gastrl
 
 

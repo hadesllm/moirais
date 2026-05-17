@@ -31,7 +31,7 @@ def abvir(data=None, coords=None, n=50):
 
 short = "abvir"
 alias = "abvir"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 abvir = abvir
 
 

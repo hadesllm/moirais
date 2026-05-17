@@ -33,7 +33,7 @@ def geeduc(gdp=None, trade=None, coords=None, n=50):
 
 short = "geeduc"
 alias = "geeduc"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "What is now proved was once only imagined. -- William Blake"
 geeduc = geeduc
 
 

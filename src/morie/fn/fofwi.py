@@ -39,7 +39,7 @@ def fofwi(dbh=None, height=None, coords=None, n=50):
 
 short = "fofwi"
 alias = "fofwi"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 fofwi = fofwi
 
 

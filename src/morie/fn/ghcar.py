@@ -41,7 +41,7 @@ def ghcar(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghcar"
 alias = "ghcar"
-quote = "Bankai! -- Ichigo"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ghcar = ghcar
 
 

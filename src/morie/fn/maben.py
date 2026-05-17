@@ -40,7 +40,7 @@ def maben(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maben"
 alias = "maben"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "The measure of a man is what he does with power. -- Plato"
 maben = maben
 
 

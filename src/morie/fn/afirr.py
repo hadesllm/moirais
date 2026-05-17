@@ -33,7 +33,7 @@ def afirr(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afirr"
 alias = "afirr"
-quote = "Arise. -- Shadow Monarch"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 afirr = afirr
 
 

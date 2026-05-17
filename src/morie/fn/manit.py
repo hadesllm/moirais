@@ -40,7 +40,7 @@ def manit(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "manit"
 alias = "manit"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 manit = manit
 
 

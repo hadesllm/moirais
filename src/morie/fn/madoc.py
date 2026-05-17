@@ -40,7 +40,7 @@ def madoc(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "madoc"
 alias = "madoc"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 madoc = madoc
 
 

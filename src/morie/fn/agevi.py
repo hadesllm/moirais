@@ -38,7 +38,7 @@ def agevi(areas=None, perimeters=None, values=None, n=30):
 
 short = "agevi"
 alias = "agevi"
-quote = "Science! -- Jesse Pinkman"
+quote = "I think, therefore I am. -- Rene Descartes"
 agevi = agevi
 
 

@@ -31,7 +31,7 @@ def gcslr(data=None, coords=None, n=50):
 
 short = "gcslr"
 alias = "gcslr"
-quote = "Believe it! -- Naruto"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 gcslr = gcslr
 
 

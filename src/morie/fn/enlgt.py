@@ -31,7 +31,7 @@ def enlgt(data=None, coords=None, n=50):
 
 short = "enlgt"
 alias = "enlgt"
-quote = "I mustn't run away. -- Shinji"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 enlgt = enlgt
 
 

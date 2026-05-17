@@ -40,7 +40,7 @@ def dkpsm(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkpsm"
 alias = "dkpsm"
-quote = "Whatever happens, happens. -- Spike"
+quote = "Knowledge is power. -- Francis Bacon"
 dkpsm = dkpsm
 
 

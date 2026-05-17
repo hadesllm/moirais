@@ -40,7 +40,7 @@ def clkmn(data=None, n=50, k=3, coords=None):
 
 short = "clkmn"
 alias = "clkmn"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 clkmn = clkmn
 
 

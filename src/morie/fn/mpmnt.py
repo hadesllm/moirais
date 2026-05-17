@@ -28,7 +28,7 @@ def mpmnt(data=None, n=50):
 
 short = "mpmnt"
 alias = "mpmnt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 mpmnt = mpmnt
 
 

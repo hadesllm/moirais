@@ -37,7 +37,7 @@ def gahill(x=None, y=None, values=None, resolution=50):
 
 short = "gahill"
 alias = "gahill"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 gahill = gahill
 
 

@@ -37,7 +37,7 @@ def tsmgw(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsmgw"
 alias = "tsmgw"
-quote = "Arise. -- Shadow Monarch"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 tsmgw = tsmgw
 
 

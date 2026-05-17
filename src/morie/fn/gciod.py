@@ -31,7 +31,7 @@ def gciod(data=None, coords=None, n=50):
 
 short = "gciod"
 alias = "gciod"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 gciod = gciod
 
 

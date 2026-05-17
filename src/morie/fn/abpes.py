@@ -31,7 +31,7 @@ def abpes(data=None, coords=None, n=50):
 
 short = "abpes"
 alias = "abpes"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 abpes = abpes
 
 

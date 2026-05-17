@@ -38,7 +38,7 @@ def agnp(areas=None, perimeters=None, values=None, n=30):
 
 short = "agnp"
 alias = "agnp"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "Knowledge is power. -- Francis Bacon"
 agnp = agnp
 
 

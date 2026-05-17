@@ -39,7 +39,7 @@ def fodiv(dbh=None, height=None, coords=None, n=50):
 
 short = "fodiv"
 alias = "fodiv"
-quote = "Science! -- Jesse Pinkman"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 fodiv = fodiv
 
 

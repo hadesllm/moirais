@@ -36,7 +36,7 @@ def trgra(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trgra"
 alias = "trgra"
-quote = "Arise. -- Shadow Monarch"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 trgra = trgra
 
 

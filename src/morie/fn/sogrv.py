@@ -32,7 +32,7 @@ def sogrv(data=None, depth=None, coords=None, n=50):
 
 short = "sogrv"
 alias = "sogrv"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "We must know. We will know. -- David Hilbert"
 sogrv = sogrv
 
 

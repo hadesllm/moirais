@@ -33,7 +33,7 @@ def gevcf(gdp=None, trade=None, coords=None, n=50):
 
 short = "gevcf"
 alias = "gevcf"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "What is now proved was once only imagined. -- William Blake"
 gevcf = gevcf
 
 

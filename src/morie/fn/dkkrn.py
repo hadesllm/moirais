@@ -40,7 +40,7 @@ def dkkrn(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkkrn"
 alias = "dkkrn"
-quote = "One does not simply walk. -- Boromir"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 dkkrn = dkkrn
 
 

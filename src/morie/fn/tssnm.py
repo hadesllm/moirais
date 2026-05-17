@@ -37,7 +37,7 @@ def tssnm(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssnm"
 alias = "tssnm"
-quote = "I mustn't run away. -- Shinji"
+quote = "There is no royal road to geometry. -- Euclid"
 tssnm = tssnm
 
 

@@ -31,7 +31,7 @@ def enaqi(data=None, coords=None, n=50):
 
 short = "enaqi"
 alias = "enaqi"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 enaqi = enaqi
 
 

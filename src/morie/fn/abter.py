@@ -31,7 +31,7 @@ def abter(data=None, coords=None, n=50):
 
 short = "abter"
 alias = "abter"
-quote = "Winter is coming. -- Stark motto"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 abter = abter
 
 

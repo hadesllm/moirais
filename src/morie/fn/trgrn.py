@@ -36,7 +36,7 @@ def trgrn(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trgrn"
 alias = "trgrn"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "There is no royal road to geometry. -- Euclid"
 trgrn = trgrn
 
 

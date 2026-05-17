@@ -38,7 +38,7 @@ def agiso(areas=None, perimeters=None, values=None, n=30):
 
 short = "agiso"
 alias = "agiso"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 agiso = agiso
 
 

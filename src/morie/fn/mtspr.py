@@ -37,7 +37,7 @@ def mtspr(trajectory=None, n=50, dt=1.0):
 
 short = "mtspr"
 alias = "mtspr"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 mtspr = mtspr
 
 

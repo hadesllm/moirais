@@ -32,7 +32,7 @@ def rspan(pixels=None, bands=None, n=100):
 
 short = "rspan"
 alias = "rspan"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 rspan = rspan
 
 

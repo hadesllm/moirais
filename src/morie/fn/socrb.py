@@ -32,7 +32,7 @@ def socrb(data=None, depth=None, coords=None, n=50):
 
 short = "socrb"
 alias = "socrb"
-quote = "Winter is coming. -- Stark motto"
+quote = "The measure of a man is what he does with power. -- Plato"
 socrb = socrb
 
 

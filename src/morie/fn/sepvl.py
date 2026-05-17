@@ -39,7 +39,7 @@ def sepvl(cases=None, population=None, coords=None, n=50):
 
 short = "sepvl"
 alias = "sepvl"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 sepvl = sepvl
 
 

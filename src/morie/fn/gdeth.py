@@ -36,7 +36,7 @@ def gdeth(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdeth"
 alias = "gdeth"
-quote = "Whatever happens, happens. -- Spike"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 gdeth = gdeth
 
 

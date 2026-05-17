@@ -28,7 +28,7 @@ def alpha_nominate_score(votes=None, *, dims=1, n=10, m=5, n_iter=20):
 
 short = "alnmt"
 alias = "alpha_nominate_score"
-quote = "When I let go of what I am, I become what I might be. -- Lao Tzu"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 alpha_nominate_score = alpha_nominate_score
 
 

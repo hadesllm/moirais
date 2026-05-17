@@ -36,7 +36,7 @@ def vmcrr(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmcrr"
 alias = "vmcrr"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 vmcrr = vmcrr
 
 

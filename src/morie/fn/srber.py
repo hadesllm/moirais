@@ -38,7 +38,7 @@ def srber(X=None, y=None, w=None, n=50, k=3):
 
 short = "srber"
 alias = "srber"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 srber = srber
 
 

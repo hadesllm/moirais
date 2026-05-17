@@ -31,7 +31,7 @@ def gcjet(data=None, coords=None, n=50):
 
 short = "gcjet"
 alias = "gcjet"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Number rules the universe. -- Pythagoras"
 gcjet = gcjet
 
 

@@ -39,7 +39,7 @@ def secop(cases=None, population=None, coords=None, n=50):
 
 short = "secop"
 alias = "secop"
-quote = "See you space cowboy. -- Spike"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 secop = secop
 
 

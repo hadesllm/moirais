@@ -31,7 +31,7 @@ def nbmrn(data=None, coords=None, n=50):
 
 short = "nbmrn"
 alias = "nbmrn"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 nbmrn = nbmrn
 
 

@@ -32,7 +32,7 @@ def rsnbr2(pixels=None, bands=None, n=100):
 
 short = "rsnbr2"
 alias = "rsnbr2"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Knowledge is power. -- Francis Bacon"
 rsnbr2 = rsnbr2
 
 

@@ -38,7 +38,7 @@ def aglai(areas=None, perimeters=None, values=None, n=30):
 
 short = "aglai"
 alias = "aglai"
-quote = "You should enjoy the detours. -- Ging"
+quote = "What is now proved was once only imagined. -- William Blake"
 aglai = aglai
 
 

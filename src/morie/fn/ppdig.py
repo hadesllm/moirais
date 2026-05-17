@@ -36,7 +36,7 @@ def ppdig(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppdig"
 alias = "ppdig"
-quote = "It's over 9000! -- Vegeta"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 ppdig = ppdig
 
 

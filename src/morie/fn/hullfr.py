@@ -37,7 +37,7 @@ def hullfr(x=None, y=None, values=None, resolution=50):
 
 short = "hullfr"
 alias = "hullfr"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 hullfr = hullfr
 
 

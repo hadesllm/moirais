@@ -28,7 +28,7 @@ def mpcmp(data=None, n=50):
 
 short = "mpcmp"
 alias = "mpcmp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 mpcmp = mpcmp
 
 

@@ -30,7 +30,7 @@ def wlcrr(abundance=None, coords=None, n=50):
 
 short = "wlcrr"
 alias = "wlcrr"
-quote = "Believe it! -- Naruto"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 wlcrr = wlcrr
 
 

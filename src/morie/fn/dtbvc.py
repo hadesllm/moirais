@@ -31,7 +31,7 @@ def dtbvc(x=None, n=100, params=None):
 
 short = "dtbvc"
 alias = "dtbvc"
-quote = "One is all, all is one. -- Izumi"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 dtbvc = dtbvc
 
 

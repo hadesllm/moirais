@@ -46,7 +46,7 @@ def opzon(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opzon"
 alias = "opzon"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 opzon = opzon
 
 

@@ -30,7 +30,7 @@ def wqbod(data=None, coords=None, n=50):
 
 short = "wqbod"
 alias = "wqbod"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 wqbod = wqbod
 
 

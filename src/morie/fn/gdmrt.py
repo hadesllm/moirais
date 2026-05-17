@@ -36,7 +36,7 @@ def gdmrt(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdmrt"
 alias = "gdmrt"
-quote = "It's over 9000! -- Vegeta"
+quote = "What is now proved was once only imagined. -- William Blake"
 gdmrt = gdmrt
 
 

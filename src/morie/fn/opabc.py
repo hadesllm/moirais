@@ -46,7 +46,7 @@ def opabc(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opabc"
 alias = "opabc"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 opabc = opabc
 
 

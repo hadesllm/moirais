@@ -40,7 +40,7 @@ def matrwl(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "matrwl"
 alias = "matrwl"
-quote = "Kamehameha! -- Goku"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 matrwl = matrwl
 
 

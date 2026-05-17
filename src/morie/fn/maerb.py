@@ -40,7 +40,7 @@ def maerb(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maerb"
 alias = "maerb"
-quote = "I mustn't run away. -- Shinji"
+quote = "What is now proved was once only imagined. -- William Blake"
 maerb = maerb
 
 

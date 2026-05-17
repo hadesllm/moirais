@@ -37,7 +37,7 @@ def mtflw(trajectory=None, n=50, dt=1.0):
 
 short = "mtflw"
 alias = "mtflw"
-quote = "Believe it! -- Naruto"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 mtflw = mtflw
 
 

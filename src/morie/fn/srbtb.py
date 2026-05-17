@@ -38,7 +38,7 @@ def srbtb(X=None, y=None, w=None, n=50, k=3):
 
 short = "srbtb"
 alias = "srbtb"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 srbtb = srbtb
 
 

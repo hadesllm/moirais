@@ -33,7 +33,7 @@ def gesvc(gdp=None, trade=None, coords=None, n=50):
 
 short = "gesvc"
 alias = "gesvc"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 gesvc = gesvc
 
 

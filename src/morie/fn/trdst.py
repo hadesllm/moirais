@@ -36,7 +36,7 @@ def trdst(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trdst"
 alias = "trdst"
-quote = "Winter is coming. -- Stark motto"
+quote = "There is no royal road to geometry. -- Euclid"
 trdst = trdst
 
 

@@ -38,7 +38,7 @@ def agfrc(areas=None, perimeters=None, values=None, n=30):
 
 short = "agfrc"
 alias = "agfrc"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 agfrc = agfrc
 
 

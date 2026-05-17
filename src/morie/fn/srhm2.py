@@ -38,7 +38,7 @@ def srhm2(X=None, y=None, w=None, n=50, k=3):
 
 short = "srhm2"
 alias = "srhm2"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 srhm2 = srhm2
 
 

@@ -33,7 +33,7 @@ def ubfbr(population=None, area=None, coords=None, n=50):
 
 short = "ubfbr"
 alias = "ubfbr"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ubfbr = ubfbr
 
 

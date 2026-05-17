@@ -38,7 +38,7 @@ def agpd(areas=None, perimeters=None, values=None, n=30):
 
 short = "agpd"
 alias = "agpd"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 agpd = agpd
 
 

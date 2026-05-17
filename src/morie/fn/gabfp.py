@@ -33,7 +33,7 @@ def gabfp(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "gabfp"
 alias = "gabfp"
-quote = "Whatever happens, happens. -- Spike"
+quote = "We must know. We will know. -- David Hilbert"
 gabfp = gabfp
 
 

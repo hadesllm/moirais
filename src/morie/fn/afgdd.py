@@ -33,7 +33,7 @@ def afgdd(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afgdd"
 alias = "afgdd"
-quote = "Science! -- Jesse Pinkman"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 afgdd = afgdd
 
 

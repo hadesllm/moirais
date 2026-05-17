@@ -28,7 +28,7 @@ def cmqrm(data=None, n=50):
 
 short = "cmqrm"
 alias = "cmqrm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 cmqrm = cmqrm
 
 

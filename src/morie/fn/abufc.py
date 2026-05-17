@@ -31,7 +31,7 @@ def abufc(data=None, coords=None, n=50):
 
 short = "abufc"
 alias = "abufc"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Number rules the universe. -- Pythagoras"
 abufc = abufc
 
 

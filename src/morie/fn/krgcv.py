@@ -33,7 +33,7 @@ def krgcv(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "krgcv"
 alias = "krgcv"
-quote = "It's over 9000! -- Vegeta"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 krgcv = krgcv
 
 

@@ -34,7 +34,7 @@ def csopt(incidents=None, population=None, coords=None, n=50):
 
 short = "csopt"
 alias = "csopt"
-quote = "There is always hope. -- Aragorn"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 csopt = csopt
 
 

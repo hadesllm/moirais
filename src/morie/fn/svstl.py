@@ -27,7 +27,7 @@ def svstl(data=None, n=50):
 
 short = "svstl"
 alias = "svstl"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 svstl = svstl
 
 

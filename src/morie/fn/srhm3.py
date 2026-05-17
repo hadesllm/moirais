@@ -38,7 +38,7 @@ def srhm3(X=None, y=None, w=None, n=50, k=3):
 
 short = "srhm3"
 alias = "srhm3"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 srhm3 = srhm3
 
 

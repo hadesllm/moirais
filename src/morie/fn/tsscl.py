@@ -37,7 +37,7 @@ def tsscl(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsscl"
 alias = "tsscl"
-quote = "One does not simply walk. -- Boromir"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 tsscl = tsscl
 
 

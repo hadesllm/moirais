@@ -40,7 +40,7 @@ def madox(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "madox"
 alias = "madox"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 madox = madox
 
 

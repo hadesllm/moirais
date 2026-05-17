@@ -34,7 +34,7 @@ def csgpr(incidents=None, population=None, coords=None, n=50):
 
 short = "csgpr"
 alias = "csgpr"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 csgpr = csgpr
 
 

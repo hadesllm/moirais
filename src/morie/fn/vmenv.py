@@ -36,7 +36,7 @@ def vmenv(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmenv"
 alias = "vmenv"
-quote = "Breathe. -- Tanjiro"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 vmenv = vmenv
 
 

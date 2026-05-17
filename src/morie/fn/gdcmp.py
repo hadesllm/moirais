@@ -36,7 +36,7 @@ def gdcmp(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdcmp"
 alias = "gdcmp"
-quote = "Believe it! -- Naruto"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 gdcmp = gdcmp
 
 

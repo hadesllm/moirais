@@ -36,7 +36,7 @@ def trflw(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trflw"
 alias = "trflw"
-quote = "It's over 9000! -- Vegeta"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 trflw = trflw
 
 

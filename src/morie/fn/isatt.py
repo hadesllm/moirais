@@ -28,7 +28,7 @@ def isatt(data=None, n=50):
 
 short = "isatt"
 alias = "isatt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 isatt = isatt
 
 

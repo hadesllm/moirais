@@ -38,7 +38,7 @@ def agfgm(areas=None, perimeters=None, values=None, n=30):
 
 short = "agfgm"
 alias = "agfgm"
-quote = "One does not simply walk. -- Boromir"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 agfgm = agfgm
 
 

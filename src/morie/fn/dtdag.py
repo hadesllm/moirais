@@ -31,7 +31,7 @@ def dtdag(x=None, n=100, params=None):
 
 short = "dtdag"
 alias = "dtdag"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 dtdag = dtdag
 
 

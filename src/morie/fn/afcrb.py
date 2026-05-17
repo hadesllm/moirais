@@ -33,7 +33,7 @@ def afcrb(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afcrb"
 alias = "afcrb"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 afcrb = afcrb
 
 

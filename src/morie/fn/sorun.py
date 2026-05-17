@@ -32,7 +32,7 @@ def sorun(data=None, depth=None, coords=None, n=50):
 
 short = "sorun"
 alias = "sorun"
-quote = "It's over 9000! -- Vegeta"
+quote = "There is no royal road to geometry. -- Euclid"
 sorun = sorun
 
 

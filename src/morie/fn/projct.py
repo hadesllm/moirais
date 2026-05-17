@@ -29,7 +29,7 @@ def projct(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "projct"
 alias = "projct"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 projct = projct
 
 

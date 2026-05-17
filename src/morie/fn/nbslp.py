@@ -31,7 +31,7 @@ def nbslp(data=None, coords=None, n=50):
 
 short = "nbslp"
 alias = "nbslp"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 nbslp = nbslp
 
 

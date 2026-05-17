@@ -33,7 +33,7 @@ def ubwst(population=None, area=None, coords=None, n=50):
 
 short = "ubwst"
 alias = "ubwst"
-quote = "No half measures. -- Mike"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ubwst = ubwst
 
 

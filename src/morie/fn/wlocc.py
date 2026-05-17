@@ -30,7 +30,7 @@ def wlocc(abundance=None, coords=None, n=50):
 
 short = "wlocc"
 alias = "wlocc"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 wlocc = wlocc
 
 

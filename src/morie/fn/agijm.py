@@ -38,7 +38,7 @@ def agijm(areas=None, perimeters=None, values=None, n=30):
 
 short = "agijm"
 alias = "agijm"
-quote = "Bankai! -- Ichigo"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 agijm = agijm
 
 

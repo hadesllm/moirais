@@ -27,7 +27,7 @@ def svang(data=None, n=50):
 
 short = "svang"
 alias = "svang"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 svang = svang
 
 

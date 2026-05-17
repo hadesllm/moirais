@@ -31,7 +31,7 @@ def enso2(data=None, coords=None, n=50):
 
 short = "enso2"
 alias = "enso2"
-quote = "Believe it! -- Naruto"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 enso2 = enso2
 
 

@@ -30,7 +30,7 @@ def wqpb(data=None, coords=None, n=50):
 
 short = "wqpb"
 alias = "wqpb"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The measure of a man is what he does with power. -- Plato"
 wqpb = wqpb
 
 

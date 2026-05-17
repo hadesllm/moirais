@@ -32,7 +32,7 @@ def rsmsv(pixels=None, bands=None, n=100):
 
 short = "rsmsv"
 alias = "rsmsv"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 rsmsv = rsmsv
 
 

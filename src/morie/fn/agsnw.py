@@ -38,7 +38,7 @@ def agsnw(areas=None, perimeters=None, values=None, n=30):
 
 short = "agsnw"
 alias = "agsnw"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 agsnw = agsnw
 
 

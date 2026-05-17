@@ -39,7 +39,7 @@ def fofire(dbh=None, height=None, coords=None, n=50):
 
 short = "fofire"
 alias = "fofire"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 fofire = fofire
 
 

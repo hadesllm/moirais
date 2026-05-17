@@ -31,7 +31,7 @@ def entsn(data=None, coords=None, n=50):
 
 short = "entsn"
 alias = "entsn"
-quote = "Resistance is futile. -- Borg"
+quote = "The measure of a man is what he does with power. -- Plato"
 entsn = entsn
 
 

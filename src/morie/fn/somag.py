@@ -32,7 +32,7 @@ def somag(data=None, depth=None, coords=None, n=50):
 
 short = "somag"
 alias = "somag"
-quote = "I am justice! -- Light"
+quote = "I think, therefore I am. -- Rene Descartes"
 somag = somag
 
 

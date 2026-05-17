@@ -30,7 +30,7 @@ def wlgnf(abundance=None, coords=None, n=50):
 
 short = "wlgnf"
 alias = "wlgnf"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 wlgnf = wlgnf
 
 

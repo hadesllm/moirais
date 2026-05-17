@@ -36,7 +36,7 @@ def trcrp(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trcrp"
 alias = "trcrp"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Knowledge is power. -- Francis Bacon"
 trcrp = trcrp
 
 

@@ -30,7 +30,7 @@ def wqchl(data=None, coords=None, n=50):
 
 short = "wqchl"
 alias = "wqchl"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 wqchl = wqchl
 
 

@@ -29,7 +29,7 @@ def hsmpt(data=None, n=50):
 
 short = "hsmpt"
 alias = "hsmpt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 hsmpt = hsmpt
 
 

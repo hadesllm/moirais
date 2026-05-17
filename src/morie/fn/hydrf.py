@@ -33,7 +33,7 @@ def hydrf(flow=None, precip=None, coords=None, n=50):
 
 short = "hydrf"
 alias = "hydrf"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 hydrf = hydrf
 
 

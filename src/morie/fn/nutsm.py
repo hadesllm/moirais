@@ -37,7 +37,7 @@ def nutsm(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "nutsm"
 alias = "nutsm"
-quote = "Science! -- Jesse Pinkman"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 nutsm = nutsm
 
 

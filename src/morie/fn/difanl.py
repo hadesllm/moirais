@@ -37,7 +37,7 @@ def difanl(x=None, y=None, values=None, resolution=50):
 
 short = "difanl"
 alias = "difanl"
-quote = "Bankai! -- Ichigo"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 difanl = difanl
 
 

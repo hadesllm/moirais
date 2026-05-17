@@ -31,7 +31,7 @@ def enwsp(data=None, coords=None, n=50):
 
 short = "enwsp"
 alias = "enwsp"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "The measure of a man is what he does with power. -- Plato"
 enwsp = enwsp
 
 

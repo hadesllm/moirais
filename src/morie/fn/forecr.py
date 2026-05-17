@@ -39,7 +39,7 @@ def forecr(dbh=None, height=None, coords=None, n=50):
 
 short = "forecr"
 alias = "forecr"
-quote = "Live long and prosper. -- Spock"
+quote = "Number rules the universe. -- Pythagoras"
 forecr = forecr
 
 

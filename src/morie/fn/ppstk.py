@@ -36,7 +36,7 @@ def ppstk(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppstk"
 alias = "ppstk"
-quote = "Resistance is futile. -- Borg"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 ppstk = ppstk
 
 

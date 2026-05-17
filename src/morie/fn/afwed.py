@@ -33,7 +33,7 @@ def afwed(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afwed"
 alias = "afwed"
-quote = "Live long and prosper. -- Spock"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 afwed = afwed
 
 

@@ -28,7 +28,7 @@ def mvtsu(data=None, n=50):
 
 short = "mvtsu"
 alias = "mvtsu"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 mvtsu = mvtsu
 
 

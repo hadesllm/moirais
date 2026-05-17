@@ -43,7 +43,7 @@ def sagjk(values=None, w=None, n=50):
 
 short = "sagjk"
 alias = "sagjk"
-quote = "I am the hope of the universe. -- Goku"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 sagjk = sagjk
 
 

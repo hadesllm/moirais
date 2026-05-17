@@ -37,7 +37,7 @@ def mteig(trajectory=None, n=50, dt=1.0):
 
 short = "mteig"
 alias = "mteig"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 mteig = mteig
 
 

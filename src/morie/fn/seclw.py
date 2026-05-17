@@ -39,7 +39,7 @@ def seclw(cases=None, population=None, coords=None, n=50):
 
 short = "seclw"
 alias = "seclw"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 seclw = seclw
 
 

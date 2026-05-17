@@ -36,7 +36,7 @@ def ppssp(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppssp"
 alias = "ppssp"
-quote = "One is all, all is one. -- Izumi"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 ppssp = ppssp
 
 

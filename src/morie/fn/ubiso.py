@@ -33,7 +33,7 @@ def ubiso(population=None, area=None, coords=None, n=50):
 
 short = "ubiso"
 alias = "ubiso"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 ubiso = ubiso
 
 

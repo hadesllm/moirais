@@ -31,7 +31,7 @@ def encfd(data=None, coords=None, n=50):
 
 short = "encfd"
 alias = "encfd"
-quote = "Winter is coming. -- Stark motto"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 encfd = encfd
 
 

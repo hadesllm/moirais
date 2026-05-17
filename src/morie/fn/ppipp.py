@@ -36,7 +36,7 @@ def ppipp(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppipp"
 alias = "ppipp"
-quote = "Engage. -- Picard"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 ppipp = ppipp
 
 

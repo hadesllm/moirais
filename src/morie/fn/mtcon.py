@@ -37,7 +37,7 @@ def mtcon(trajectory=None, n=50, dt=1.0):
 
 short = "mtcon"
 alias = "mtcon"
-quote = "It's over 9000! -- Vegeta"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 mtcon = mtcon
 
 

@@ -38,7 +38,7 @@ def srmgw(X=None, y=None, w=None, n=50, k=3):
 
 short = "srmgw"
 alias = "srmgw"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 srmgw = srmgw
 
 

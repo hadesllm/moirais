@@ -32,7 +32,7 @@ def rstoa(pixels=None, bands=None, n=100):
 
 short = "rstoa"
 alias = "rstoa"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "Knowledge is power. -- Francis Bacon"
 rstoa = rstoa
 
 

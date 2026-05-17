@@ -36,7 +36,7 @@ def ppkno(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppkno"
 alias = "ppkno"
-quote = "Science! -- Jesse Pinkman"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 ppkno = ppkno
 
 

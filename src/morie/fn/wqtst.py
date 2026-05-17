@@ -30,7 +30,7 @@ def wqtst(data=None, coords=None, n=50):
 
 short = "wqtst"
 alias = "wqtst"
-quote = "Bankai! -- Ichigo"
+quote = "We must know. We will know. -- David Hilbert"
 wqtst = wqtst
 
 

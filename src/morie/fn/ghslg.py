@@ -41,7 +41,7 @@ def ghslg(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghslg"
 alias = "ghslg"
-quote = "Valar Morghulis. -- Braavos"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 ghslg = ghslg
 
 

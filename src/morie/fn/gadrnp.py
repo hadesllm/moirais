@@ -37,7 +37,7 @@ def gadrnp(x=None, y=None, values=None, resolution=50):
 
 short = "gadrnp"
 alias = "gadrnp"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 gadrnp = gadrnp
 
 

@@ -31,7 +31,7 @@ def dtcpj(x=None, n=100, params=None):
 
 short = "dtcpj"
 alias = "dtcpj"
-quote = "Believe it! -- Naruto"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 dtcpj = dtcpj
 
 

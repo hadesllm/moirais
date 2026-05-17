@@ -43,7 +43,7 @@ def sagjb(values=None, w=None, n=50):
 
 short = "sagjb"
 alias = "sagjb"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 sagjb = sagjb
 
 

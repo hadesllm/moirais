@@ -33,7 +33,7 @@ def hypor(flow=None, precip=None, coords=None, n=50):
 
 short = "hypor"
 alias = "hypor"
-quote = "I am here! -- All Might"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 hypor = hypor
 
 

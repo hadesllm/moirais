@@ -40,7 +40,7 @@ def clmnb(data=None, n=50, k=3, coords=None):
 
 short = "clmnb"
 alias = "clmnb"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 clmnb = clmnb
 
 

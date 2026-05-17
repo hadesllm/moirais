@@ -31,7 +31,7 @@ def dtwbl2(x=None, n=100, params=None):
 
 short = "dtwbl2"
 alias = "dtwbl2"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 dtwbl2 = dtwbl2
 
 

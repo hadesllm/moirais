@@ -40,7 +40,7 @@ def dknst(x=None, y=None, z=None, values=None, n=30):
 
 short = "dknst"
 alias = "dknst"
-quote = "I mustn't run away. -- Shinji"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 dknst = dknst
 
 

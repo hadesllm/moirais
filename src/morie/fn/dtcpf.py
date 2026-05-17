@@ -31,7 +31,7 @@ def dtcpf(x=None, n=100, params=None):
 
 short = "dtcpf"
 alias = "dtcpf"
-quote = "Make it so. -- Picard"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 dtcpf = dtcpf
 
 

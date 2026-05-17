@@ -40,7 +40,7 @@ def dkmvv(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkmvv"
 alias = "dkmvv"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Knowledge is power. -- Francis Bacon"
 dkmvv = dkmvv
 
 

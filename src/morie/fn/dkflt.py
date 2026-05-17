@@ -33,7 +33,7 @@ def dkflt(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "dkflt"
 alias = "dkflt"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "The measure of a man is what he does with power. -- Plato"
 dkflt = dkflt
 
 

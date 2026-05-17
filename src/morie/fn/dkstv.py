@@ -40,7 +40,7 @@ def dkstv(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkstv"
 alias = "dkstv"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "The measure of a man is what he does with power. -- Plato"
 dkstv = dkstv
 
 

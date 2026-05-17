@@ -27,7 +27,7 @@ def umnsh(data=None, n=50):
 
 short = "umnsh"
 alias = "umnsh"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "There is no royal road to geometry. -- Euclid"
 umnsh = umnsh
 
 

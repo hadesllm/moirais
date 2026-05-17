@@ -34,7 +34,7 @@ def cstrr(incidents=None, population=None, coords=None, n=50):
 
 short = "cstrr"
 alias = "cstrr"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "What is now proved was once only imagined. -- William Blake"
 cstrr = cstrr
 
 

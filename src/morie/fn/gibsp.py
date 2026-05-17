@@ -37,7 +37,7 @@ def gibsp(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "gibsp"
 alias = "gibsp"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 gibsp = gibsp
 
 

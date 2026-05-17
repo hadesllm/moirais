@@ -36,7 +36,7 @@ def vmpnt(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmpnt"
 alias = "vmpnt"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 vmpnt = vmpnt
 
 

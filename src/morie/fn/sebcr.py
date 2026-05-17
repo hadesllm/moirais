@@ -39,7 +39,7 @@ def sebcr(cases=None, population=None, coords=None, n=50):
 
 short = "sebcr"
 alias = "sebcr"
-quote = "Believe it! -- Naruto"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 sebcr = sebcr
 
 

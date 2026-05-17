@@ -37,7 +37,7 @@ def clipan(x=None, y=None, values=None, resolution=50):
 
 short = "clipan"
 alias = "clipan"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 clipan = clipan
 
 

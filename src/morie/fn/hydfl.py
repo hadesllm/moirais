@@ -33,7 +33,7 @@ def hydfl(flow=None, precip=None, coords=None, n=50):
 
 short = "hydfl"
 alias = "hydfl"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 hydfl = hydfl
 
 

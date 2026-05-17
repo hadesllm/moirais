@@ -46,7 +46,7 @@ def opde(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opde"
 alias = "opde"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 opde = opde
 
 

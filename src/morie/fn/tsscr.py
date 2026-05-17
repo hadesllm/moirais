@@ -37,7 +37,7 @@ def tsscr(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsscr"
 alias = "tsscr"
-quote = "Engage. -- Picard"
+quote = "There is no royal road to geometry. -- Euclid"
 tsscr = tsscr
 
 

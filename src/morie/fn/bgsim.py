@@ -37,7 +37,7 @@ def bgsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "bgsim"
 alias = "bgsim"
-quote = "See you space cowboy. -- Spike"
+quote = "What is now proved was once only imagined. -- William Blake"
 bgsim = bgsim
 
 

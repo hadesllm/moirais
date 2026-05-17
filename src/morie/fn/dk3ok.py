@@ -40,7 +40,7 @@ def dk3ok(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3ok"
 alias = "dk3ok"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 dk3ok = dk3ok
 
 

@@ -34,7 +34,7 @@ def csnwk(incidents=None, population=None, coords=None, n=50):
 
 short = "csnwk"
 alias = "csnwk"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 csnwk = csnwk
 
 

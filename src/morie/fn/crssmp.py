@@ -29,7 +29,7 @@ def crssmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "crssmp"
 alias = "crssmp"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 crssmp = crssmp
 
 

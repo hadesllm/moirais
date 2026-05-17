@@ -46,7 +46,7 @@ def opwoa(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opwoa"
 alias = "opwoa"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Number rules the universe. -- Pythagoras"
 opwoa = opwoa
 
 

@@ -40,7 +40,7 @@ def dkrgr(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkrgr"
 alias = "dkrgr"
-quote = "Arise. -- Shadow Monarch"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 dkrgr = dkrgr
 
 

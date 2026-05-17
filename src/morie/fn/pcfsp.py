@@ -37,7 +37,7 @@ def pcfsp(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "pcfsp"
 alias = "pcfsp"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 pcfsp = pcfsp
 
 

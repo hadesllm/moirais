@@ -29,7 +29,7 @@ def robnsn(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "robnsn"
 alias = "robnsn"
-quote = "Winter is coming. -- Stark motto"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 robnsn = robnsn
 
 

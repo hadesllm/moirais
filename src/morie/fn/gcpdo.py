@@ -31,7 +31,7 @@ def gcpdo(data=None, coords=None, n=50):
 
 short = "gcpdo"
 alias = "gcpdo"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 gcpdo = gcpdo
 
 

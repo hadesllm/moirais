@@ -39,7 +39,7 @@ def fobio(dbh=None, height=None, coords=None, n=50):
 
 short = "fobio"
 alias = "fobio"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 fobio = fobio
 
 

@@ -37,7 +37,7 @@ def nrst2(x=None, y=None, values=None, resolution=50):
 
 short = "nrst2"
 alias = "nrst2"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 nrst2 = nrst2
 
 

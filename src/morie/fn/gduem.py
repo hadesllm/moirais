@@ -36,7 +36,7 @@ def gduem(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gduem"
 alias = "gduem"
-quote = "Engage. -- Picard"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 gduem = gduem
 
 

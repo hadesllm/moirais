@@ -37,7 +37,7 @@ def gacurv(x=None, y=None, values=None, resolution=50):
 
 short = "gacurv"
 alias = "gacurv"
-quote = "I mustn't run away. -- Shinji"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 gacurv = gacurv
 
 

@@ -33,7 +33,7 @@ def ubimv(population=None, area=None, coords=None, n=50):
 
 short = "ubimv"
 alias = "ubimv"
-quote = "Resistance is futile. -- Borg"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 ubimv = ubimv
 
 

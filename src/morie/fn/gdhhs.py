@@ -36,7 +36,7 @@ def gdhhs(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdhhs"
 alias = "gdhhs"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 gdhhs = gdhhs
 
 

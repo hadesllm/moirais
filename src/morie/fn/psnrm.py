@@ -28,7 +28,7 @@ def psnrm(data=None, n=50):
 
 short = "psnrm"
 alias = "psnrm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 psnrm = psnrm
 
 

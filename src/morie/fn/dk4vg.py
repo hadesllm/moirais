@@ -40,7 +40,7 @@ def dk4vg(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk4vg"
 alias = "dk4vg"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 dk4vg = dk4vg
 
 

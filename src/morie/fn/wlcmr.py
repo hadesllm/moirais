@@ -30,7 +30,7 @@ def wlcmr(abundance=None, coords=None, n=50):
 
 short = "wlcmr"
 alias = "wlcmr"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 wlcmr = wlcmr
 
 

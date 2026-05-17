@@ -36,7 +36,7 @@ def vmhrs(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmhrs"
 alias = "vmhrs"
-quote = "Whatever happens, happens. -- Spike"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 vmhrs = vmhrs
 
 

@@ -28,7 +28,7 @@ def sbalt(data=None, n=50):
 
 short = "sbalt"
 alias = "sbalt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "We must know. We will know. -- David Hilbert"
 sbalt = sbalt
 
 

@@ -33,7 +33,7 @@ def hydsl(flow=None, precip=None, coords=None, n=50):
 
 short = "hydsl"
 alias = "hydsl"
-quote = "Breathe. -- Tanjiro"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 hydsl = hydsl
 
 

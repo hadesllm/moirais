@@ -31,7 +31,7 @@ def dtcpt(x=None, n=100, params=None):
 
 short = "dtcpt"
 alias = "dtcpt"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 dtcpt = dtcpt
 
 

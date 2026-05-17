@@ -43,7 +43,7 @@ def sawlg(values=None, w=None, n=50):
 
 short = "sawlg"
 alias = "sawlg"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "We must know. We will know. -- David Hilbert"
 sawlg = sawlg
 
 

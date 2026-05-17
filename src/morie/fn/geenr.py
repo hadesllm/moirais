@@ -33,7 +33,7 @@ def geenr(gdp=None, trade=None, coords=None, n=50):
 
 short = "geenr"
 alias = "geenr"
-quote = "I mustn't run away. -- Shinji"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 geenr = geenr
 
 

@@ -36,7 +36,7 @@ def trlvl(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trlvl"
 alias = "trlvl"
-quote = "I am justice! -- Light"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 trlvl = trlvl
 
 

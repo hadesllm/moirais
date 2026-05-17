@@ -33,7 +33,7 @@ def gelnd(gdp=None, trade=None, coords=None, n=50):
 
 short = "gelnd"
 alias = "gelnd"
-quote = "Science! -- Jesse Pinkman"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 gelnd = gelnd
 
 

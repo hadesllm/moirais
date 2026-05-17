@@ -27,7 +27,7 @@ def svdrc(data=None, n=50):
 
 short = "svdrc"
 alias = "svdrc"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 svdrc = svdrc
 
 

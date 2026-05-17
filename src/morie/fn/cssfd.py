@@ -34,7 +34,7 @@ def cssfd(incidents=None, population=None, coords=None, n=50):
 
 short = "cssfd"
 alias = "cssfd"
-quote = "Winter is coming. -- Stark motto"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 cssfd = cssfd
 
 

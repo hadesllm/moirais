@@ -39,7 +39,7 @@ def seclk(cases=None, population=None, coords=None, n=50):
 
 short = "seclk"
 alias = "seclk"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "I think, therefore I am. -- Rene Descartes"
 seclk = seclk
 
 

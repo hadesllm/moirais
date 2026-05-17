@@ -32,7 +32,7 @@ def soesp(data=None, depth=None, coords=None, n=50):
 
 short = "soesp"
 alias = "soesp"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 soesp = soesp
 
 

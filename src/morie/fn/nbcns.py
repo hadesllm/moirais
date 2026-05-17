@@ -31,7 +31,7 @@ def nbcns(data=None, coords=None, n=50):
 
 short = "nbcns"
 alias = "nbcns"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 nbcns = nbcns
 
 

@@ -36,7 +36,7 @@ def vmsel(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmsel"
 alias = "vmsel"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 vmsel = vmsel
 
 

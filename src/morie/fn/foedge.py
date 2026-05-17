@@ -39,7 +39,7 @@ def foedge(dbh=None, height=None, coords=None, n=50):
 
 short = "foedge"
 alias = "foedge"
-quote = "You should enjoy the detours. -- Ging"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 foedge = foedge
 
 

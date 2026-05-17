@@ -36,7 +36,7 @@ def ppstr(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppstr"
 alias = "ppstr"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 ppstr = ppstr
 
 

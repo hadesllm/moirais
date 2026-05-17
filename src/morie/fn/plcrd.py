@@ -28,7 +28,7 @@ def plcrd(data=None, n=50):
 
 short = "plcrd"
 alias = "plcrd"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "There is no royal road to geometry. -- Euclid"
 plcrd = plcrd
 
 

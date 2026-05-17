@@ -31,7 +31,7 @@ def enlgr(data=None, coords=None, n=50):
 
 short = "enlgr"
 alias = "enlgr"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Number rules the universe. -- Pythagoras"
 enlgr = enlgr
 
 

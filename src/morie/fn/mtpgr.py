@@ -37,7 +37,7 @@ def mtpgr(trajectory=None, n=50, dt=1.0):
 
 short = "mtpgr"
 alias = "mtpgr"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 mtpgr = mtpgr
 
 

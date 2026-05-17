@@ -33,7 +33,7 @@ def afhrv(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afhrv"
 alias = "afhrv"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 afhrv = afhrv
 
 

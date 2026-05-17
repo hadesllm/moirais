@@ -41,7 +41,7 @@ def ghinl(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghinl"
 alias = "ghinl"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ghinl = ghinl
 
 

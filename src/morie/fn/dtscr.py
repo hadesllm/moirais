@@ -28,7 +28,7 @@ def dtscr(data=None, n=50):
 
 short = "dtscr"
 alias = "dtscr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 dtscr = dtscr
 
 

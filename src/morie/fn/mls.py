@@ -33,7 +33,7 @@ def mls(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0, n
 
 short = "mls"
 alias = "mls"
-quote = "I am the one who knocks. -- Walter White"
+quote = "What is now proved was once only imagined. -- William Blake"
 mls = mls
 
 

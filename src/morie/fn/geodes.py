@@ -29,7 +29,7 @@ def geodes(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "geodes"
 alias = "geodes"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 geodes = geodes
 
 

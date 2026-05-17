@@ -32,7 +32,7 @@ def rsemi(pixels=None, bands=None, n=100):
 
 short = "rsemi"
 alias = "rsemi"
-quote = "There is always hope. -- Aragorn"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 rsemi = rsemi
 
 

@@ -40,7 +40,7 @@ def clxbr(data=None, n=50, k=3, coords=None):
 
 short = "clxbr"
 alias = "clxbr"
-quote = "Breathe. -- Tanjiro"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 clxbr = clxbr
 
 

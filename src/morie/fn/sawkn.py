@@ -43,7 +43,7 @@ def sawkn(values=None, w=None, n=50):
 
 short = "sawkn"
 alias = "sawkn"
-quote = "Arise. -- Shadow Monarch"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 sawkn = sawkn
 
 

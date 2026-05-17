@@ -29,7 +29,7 @@ def irrgen(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "irrgen"
 alias = "irrgen"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "I think, therefore I am. -- Rene Descartes"
 irrgen = irrgen
 
 

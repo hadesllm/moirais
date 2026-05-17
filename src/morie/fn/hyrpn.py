@@ -33,7 +33,7 @@ def hyrpn(flow=None, precip=None, coords=None, n=50):
 
 short = "hyrpn"
 alias = "hyrpn"
-quote = "Live long and prosper. -- Spock"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 hyrpn = hyrpn
 
 

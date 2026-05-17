@@ -39,7 +39,7 @@ def segrf(cases=None, population=None, coords=None, n=50):
 
 short = "segrf"
 alias = "segrf"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 segrf = segrf
 
 

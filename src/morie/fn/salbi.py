@@ -43,7 +43,7 @@ def salbi(values=None, w=None, n=50):
 
 short = "salbi"
 alias = "salbi"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 salbi = salbi
 
 

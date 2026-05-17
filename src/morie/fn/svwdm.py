@@ -46,7 +46,7 @@ def svwdm(voter, candidates=None, weights=None):
 
 short = "svwdm"
 alias = "svwdm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "There is no royal road to geometry. -- Euclid"
 svwdm = svwdm
 
 

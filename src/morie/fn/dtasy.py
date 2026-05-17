@@ -31,7 +31,7 @@ def dtasy(x=None, n=100, params=None):
 
 short = "dtasy"
 alias = "dtasy"
-quote = "I mustn't run away. -- Shinji"
+quote = "There is no royal road to geometry. -- Euclid"
 dtasy = dtasy
 
 

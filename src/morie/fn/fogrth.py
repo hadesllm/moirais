@@ -39,7 +39,7 @@ def fogrth(dbh=None, height=None, coords=None, n=50):
 
 short = "fogrth"
 alias = "fogrth"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 fogrth = fogrth
 
 

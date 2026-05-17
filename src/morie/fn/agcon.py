@@ -38,7 +38,7 @@ def agcon(areas=None, perimeters=None, values=None, n=30):
 
 short = "agcon"
 alias = "agcon"
-quote = "I am justice! -- Light"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 agcon = agcon
 
 

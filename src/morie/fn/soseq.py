@@ -32,7 +32,7 @@ def soseq(data=None, depth=None, coords=None, n=50):
 
 short = "soseq"
 alias = "soseq"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 soseq = soseq
 
 

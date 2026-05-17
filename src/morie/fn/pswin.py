@@ -28,7 +28,7 @@ def pswin(data=None, n=50):
 
 short = "pswin"
 alias = "pswin"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 pswin = pswin
 
 

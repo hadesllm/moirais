@@ -36,7 +36,7 @@ def vmsrf(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmsrf"
 alias = "vmsrf"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 vmsrf = vmsrf
 
 

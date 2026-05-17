@@ -28,7 +28,7 @@ def cmdec(data=None, n=50):
 
 short = "cmdec"
 alias = "cmdec"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 cmdec = cmdec
 
 

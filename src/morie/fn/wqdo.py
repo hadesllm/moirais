@@ -30,7 +30,7 @@ def wqdo(data=None, coords=None, n=50):
 
 short = "wqdo"
 alias = "wqdo"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 wqdo = wqdo
 
 

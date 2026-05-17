@@ -40,7 +40,7 @@ def dkglb(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkglb"
 alias = "dkglb"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 dkglb = dkglb
 
 

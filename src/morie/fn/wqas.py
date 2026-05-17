@@ -30,7 +30,7 @@ def wqas(data=None, coords=None, n=50):
 
 short = "wqas"
 alias = "wqas"
-quote = "Believe it! -- Naruto"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 wqas = wqas
 
 

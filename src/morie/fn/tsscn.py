@@ -37,7 +37,7 @@ def tsscn(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsscn"
 alias = "tsscn"
-quote = "One is all, all is one. -- Izumi"
+quote = "The measure of a man is what he does with power. -- Plato"
 tsscn = tsscn
 
 

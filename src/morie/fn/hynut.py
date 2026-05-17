@@ -33,7 +33,7 @@ def hynut(flow=None, precip=None, coords=None, n=50):
 
 short = "hynut"
 alias = "hynut"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "We must know. We will know. -- David Hilbert"
 hynut = hynut
 
 

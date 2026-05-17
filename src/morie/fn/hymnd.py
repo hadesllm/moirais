@@ -33,7 +33,7 @@ def hymnd(flow=None, precip=None, coords=None, n=50):
 
 short = "hymnd"
 alias = "hymnd"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 hymnd = hymnd
 
 

@@ -36,7 +36,7 @@ def vmcrs(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmcrs"
 alias = "vmcrs"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 vmcrs = vmcrs
 
 

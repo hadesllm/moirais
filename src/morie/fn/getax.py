@@ -33,7 +33,7 @@ def getax(gdp=None, trade=None, coords=None, n=50):
 
 short = "getax"
 alias = "getax"
-quote = "My precious. -- Gollum"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 getax = getax
 
 

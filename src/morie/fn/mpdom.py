@@ -28,7 +28,7 @@ def mpdom(data=None, n=50):
 
 short = "mpdom"
 alias = "mpdom"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 mpdom = mpdom
 
 

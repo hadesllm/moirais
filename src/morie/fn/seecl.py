@@ -39,7 +39,7 @@ def seecl(cases=None, population=None, coords=None, n=50):
 
 short = "seecl"
 alias = "seecl"
-quote = "Engage. -- Picard"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 seecl = seecl
 
 

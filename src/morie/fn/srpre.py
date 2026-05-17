@@ -38,7 +38,7 @@ def srpre(X=None, y=None, w=None, n=50, k=3):
 
 short = "srpre"
 alias = "srpre"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 srpre = srpre
 
 

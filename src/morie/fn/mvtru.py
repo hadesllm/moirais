@@ -28,7 +28,7 @@ def mvtru(data=None, n=50):
 
 short = "mvtru"
 alias = "mvtru"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 mvtru = mvtru
 
 

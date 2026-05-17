@@ -37,7 +37,7 @@ def mtcnt(trajectory=None, n=50, dt=1.0):
 
 short = "mtcnt"
 alias = "mtcnt"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 mtcnt = mtcnt
 
 

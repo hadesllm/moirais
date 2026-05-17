@@ -30,7 +30,7 @@ def wqhg(data=None, coords=None, n=50):
 
 short = "wqhg"
 alias = "wqhg"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Knowledge is power. -- Francis Bacon"
 wqhg = wqhg
 
 

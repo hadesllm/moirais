@@ -28,7 +28,7 @@ def plafp(data=None, n=50):
 
 short = "plafp"
 alias = "plafp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 plafp = plafp
 
 

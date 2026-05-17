@@ -31,7 +31,7 @@ def ensea(data=None, coords=None, n=50):
 
 short = "ensea"
 alias = "ensea"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 ensea = ensea
 
 

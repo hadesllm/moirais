@@ -37,7 +37,7 @@ def tsskm(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsskm"
 alias = "tsskm"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 tsskm = tsskm
 
 

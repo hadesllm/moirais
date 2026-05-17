@@ -36,7 +36,7 @@ def vmwav(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmwav"
 alias = "vmwav"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 vmwav = vmwav
 
 

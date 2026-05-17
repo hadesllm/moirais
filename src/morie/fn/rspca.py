@@ -32,7 +32,7 @@ def rspca(pixels=None, bands=None, n=100):
 
 short = "rspca"
 alias = "rspca"
-quote = "Hold the door. -- Hodor"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 rspca = rspca
 
 

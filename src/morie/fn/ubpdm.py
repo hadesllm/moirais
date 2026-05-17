@@ -33,7 +33,7 @@ def ubpdm(population=None, area=None, coords=None, n=50):
 
 short = "ubpdm"
 alias = "ubpdm"
-quote = "Whatever happens, happens. -- Spike"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 ubpdm = ubpdm
 
 

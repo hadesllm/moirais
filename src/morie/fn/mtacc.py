@@ -37,7 +37,7 @@ def mtacc(trajectory=None, n=50, dt=1.0):
 
 short = "mtacc"
 alias = "mtacc"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 mtacc = mtacc
 
 

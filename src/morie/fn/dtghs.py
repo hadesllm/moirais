@@ -31,7 +31,7 @@ def dtghs(x=None, n=100, params=None):
 
 short = "dtghs"
 alias = "dtghs"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 dtghs = dtghs
 
 

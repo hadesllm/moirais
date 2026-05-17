@@ -33,7 +33,7 @@ def ubemg(population=None, area=None, coords=None, n=50):
 
 short = "ubemg"
 alias = "ubemg"
-quote = "Keep moving forward. -- Eren"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 ubemg = ubemg
 
 

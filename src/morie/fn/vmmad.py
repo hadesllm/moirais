@@ -36,7 +36,7 @@ def vmmad(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmmad"
 alias = "vmmad"
-quote = "Winter is coming. -- Stark motto"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 vmmad = vmmad
 
 

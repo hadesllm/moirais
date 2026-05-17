@@ -32,7 +32,7 @@ def soalk(data=None, depth=None, coords=None, n=50):
 
 short = "soalk"
 alias = "soalk"
-quote = "Believe it! -- Naruto"
+quote = "I think, therefore I am. -- Rene Descartes"
 soalk = soalk
 
 

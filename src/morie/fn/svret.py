@@ -48,7 +48,7 @@ def svret(voter, incumbent=None, candidates=None):
 
 short = "svret"
 alias = "svret"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "There is no royal road to geometry. -- Euclid"
 svret = svret
 
 

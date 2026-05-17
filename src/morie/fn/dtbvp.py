@@ -31,7 +31,7 @@ def dtbvp(x=None, n=100, params=None):
 
 short = "dtbvp"
 alias = "dtbvp"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 dtbvp = dtbvp
 
 

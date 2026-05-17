@@ -39,7 +39,7 @@ def sespc(cases=None, population=None, coords=None, n=50):
 
 short = "sespc"
 alias = "sespc"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 sespc = sespc
 
 

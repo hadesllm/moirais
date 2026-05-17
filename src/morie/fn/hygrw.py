@@ -33,7 +33,7 @@ def hygrw(flow=None, precip=None, coords=None, n=50):
 
 short = "hygrw"
 alias = "hygrw"
-quote = "Resistance is futile. -- Borg"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 hygrw = hygrw
 
 

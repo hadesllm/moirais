@@ -28,7 +28,7 @@ def dtcmp(data=None, n=50):
 
 short = "dtcmp"
 alias = "dtcmp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 dtcmp = dtcmp
 
 

@@ -36,7 +36,7 @@ def ppann(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppann"
 alias = "ppann"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 ppann = ppann
 
 

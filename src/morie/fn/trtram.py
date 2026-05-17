@@ -36,7 +36,7 @@ def trtram(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trtram"
 alias = "trtram"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 trtram = trtram
 
 

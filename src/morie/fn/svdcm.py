@@ -27,7 +27,7 @@ def svdcm(data=None, n=50):
 
 short = "svdcm"
 alias = "svdcm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 svdcm = svdcm
 
 

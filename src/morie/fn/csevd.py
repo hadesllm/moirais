@@ -34,7 +34,7 @@ def csevd(incidents=None, population=None, coords=None, n=50):
 
 short = "csevd"
 alias = "csevd"
-quote = "Valar Morghulis. -- Braavos"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 csevd = csevd
 
 

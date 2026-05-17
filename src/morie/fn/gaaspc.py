@@ -37,7 +37,7 @@ def gaaspc(x=None, y=None, values=None, resolution=50):
 
 short = "gaaspc"
 alias = "gaaspc"
-quote = "Whatever happens, happens. -- Spike"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 gaaspc = gaaspc
 
 

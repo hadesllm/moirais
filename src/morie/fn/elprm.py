@@ -28,7 +28,7 @@ def elprm(data=None, n=50):
 
 short = "elprm"
 alias = "elprm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 elprm = elprm
 
 

@@ -41,7 +41,7 @@ def ghgap(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghgap"
 alias = "ghgap"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 ghgap = ghgap
 
 

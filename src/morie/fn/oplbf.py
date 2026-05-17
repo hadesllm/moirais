@@ -46,7 +46,7 @@ def oplbf(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "oplbf"
 alias = "oplbf"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 oplbf = oplbf
 
 

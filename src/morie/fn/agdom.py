@@ -38,7 +38,7 @@ def agdom(areas=None, perimeters=None, values=None, n=30):
 
 short = "agdom"
 alias = "agdom"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 agdom = agdom
 
 

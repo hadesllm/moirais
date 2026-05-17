@@ -36,7 +36,7 @@ def ppstj(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppstj"
 alias = "ppstj"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "I think, therefore I am. -- Rene Descartes"
 ppstj = ppstj
 
 

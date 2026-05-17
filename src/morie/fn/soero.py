@@ -32,7 +32,7 @@ def soero(data=None, depth=None, coords=None, n=50):
 
 short = "soero"
 alias = "soero"
-quote = "Yare yare daze. -- Jotaro"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 soero = soero
 
 

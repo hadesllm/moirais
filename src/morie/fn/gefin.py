@@ -33,7 +33,7 @@ def gefin(gdp=None, trade=None, coords=None, n=50):
 
 short = "gefin"
 alias = "gefin"
-quote = "One does not simply walk. -- Boromir"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 gefin = gefin
 
 

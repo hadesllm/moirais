@@ -37,7 +37,7 @@ def mtdns(trajectory=None, n=50, dt=1.0):
 
 short = "mtdns"
 alias = "mtdns"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "There is no royal road to geometry. -- Euclid"
 mtdns = mtdns
 
 

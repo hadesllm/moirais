@@ -36,7 +36,7 @@ def trbks(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trbks"
 alias = "trbks"
-quote = "Whatever happens, happens. -- Spike"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 trbks = trbks
 
 

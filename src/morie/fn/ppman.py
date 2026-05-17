@@ -28,7 +28,7 @@ def ppman(data=None, n=50):
 
 short = "ppman"
 alias = "ppman"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 ppman = ppman
 
 

@@ -29,7 +29,7 @@ def balsmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "balsmp"
 alias = "balsmp"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "There is no royal road to geometry. -- Euclid"
 balsmp = balsmp
 
 

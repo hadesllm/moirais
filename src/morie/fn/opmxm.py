@@ -46,7 +46,7 @@ def opmxm(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opmxm"
 alias = "opmxm"
-quote = "You should enjoy the detours. -- Ging"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 opmxm = opmxm
 
 

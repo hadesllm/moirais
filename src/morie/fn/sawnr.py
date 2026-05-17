@@ -43,7 +43,7 @@ def sawnr(values=None, w=None, n=50):
 
 short = "sawnr"
 alias = "sawnr"
-quote = "Science! -- Jesse Pinkman"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 sawnr = sawnr
 
 

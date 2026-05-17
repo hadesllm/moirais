@@ -40,7 +40,7 @@ def clreg(data=None, n=50, k=3, coords=None):
 
 short = "clreg"
 alias = "clreg"
-quote = "I mustn't run away. -- Shinji"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 clreg = clreg
 
 

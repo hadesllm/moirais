@@ -33,7 +33,7 @@ def geloc(gdp=None, trade=None, coords=None, n=50):
 
 short = "geloc"
 alias = "geloc"
-quote = "Bankai! -- Ichigo"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 geloc = geloc
 
 

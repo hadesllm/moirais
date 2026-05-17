@@ -36,7 +36,7 @@ def trbus(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trbus"
 alias = "trbus"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 trbus = trbus
 
 

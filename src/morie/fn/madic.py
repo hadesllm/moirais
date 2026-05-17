@@ -40,7 +40,7 @@ def madic(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "madic"
 alias = "madic"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 madic = madic
 
 

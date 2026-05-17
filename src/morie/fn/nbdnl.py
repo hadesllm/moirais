@@ -31,7 +31,7 @@ def nbdnl(data=None, coords=None, n=50):
 
 short = "nbdnl"
 alias = "nbdnl"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 nbdnl = nbdnl
 
 

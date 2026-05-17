@@ -34,7 +34,7 @@ def csker(incidents=None, population=None, coords=None, n=50):
 
 short = "csker"
 alias = "csker"
-quote = "It's over 9000! -- Vegeta"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 csker = csker
 
 

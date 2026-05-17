@@ -37,7 +37,7 @@ def mtpkp(trajectory=None, n=50, dt=1.0):
 
 short = "mtpkp"
 alias = "mtpkp"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 mtpkp = mtpkp
 
 

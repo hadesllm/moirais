@@ -37,7 +37,7 @@ def mtdeg(trajectory=None, n=50, dt=1.0):
 
 short = "mtdeg"
 alias = "mtdeg"
-quote = "Bankai! -- Ichigo"
+quote = "There is no royal road to geometry. -- Euclid"
 mtdeg = mtdeg
 
 

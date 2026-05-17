@@ -37,7 +37,7 @@ def concav(x=None, y=None, values=None, resolution=50):
 
 short = "concav"
 alias = "concav"
-quote = "It's over 9000! -- Vegeta"
+quote = "I think, therefore I am. -- Rene Descartes"
 concav = concav
 
 

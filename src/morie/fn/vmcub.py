@@ -36,7 +36,7 @@ def vmcub(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmcub"
 alias = "vmcub"
-quote = "Keep moving forward. -- Eren"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 vmcub = vmcub
 
 

@@ -39,7 +39,7 @@ def forich(dbh=None, height=None, coords=None, n=50):
 
 short = "forich"
 alias = "forich"
-quote = "Breathe. -- Tanjiro"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 forich = forich
 
 

@@ -41,7 +41,7 @@ def ghfca(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghfca"
 alias = "ghfca"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 ghfca = ghfca
 
 

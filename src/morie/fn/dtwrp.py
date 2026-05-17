@@ -31,7 +31,7 @@ def dtwrp(x=None, n=100, params=None):
 
 short = "dtwrp"
 alias = "dtwrp"
-quote = "Winter is coming. -- Stark motto"
+quote = "The measure of a man is what he does with power. -- Plato"
 dtwrp = dtwrp
 
 

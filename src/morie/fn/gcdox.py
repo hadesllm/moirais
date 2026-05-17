@@ -31,7 +31,7 @@ def gcdox(data=None, coords=None, n=50):
 
 short = "gcdox"
 alias = "gcdox"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 gcdox = gcdox
 
 

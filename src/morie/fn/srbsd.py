@@ -38,7 +38,7 @@ def srbsd(X=None, y=None, w=None, n=50, k=3):
 
 short = "srbsd"
 alias = "srbsd"
-quote = "It's over 9000! -- Vegeta"
+quote = "I think, therefore I am. -- Rene Descartes"
 srbsd = srbsd
 
 

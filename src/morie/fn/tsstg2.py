@@ -37,7 +37,7 @@ def tsstg2(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsstg2"
 alias = "tsstg2"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "We must know. We will know. -- David Hilbert"
 tsstg2 = tsstg2
 
 

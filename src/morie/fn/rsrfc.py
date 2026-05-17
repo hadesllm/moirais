@@ -32,7 +32,7 @@ def rsrfc(pixels=None, bands=None, n=100):
 
 short = "rsrfc"
 alias = "rsrfc"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 rsrfc = rsrfc
 
 

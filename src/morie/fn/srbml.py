@@ -38,7 +38,7 @@ def srbml(X=None, y=None, w=None, n=50, k=3):
 
 short = "srbml"
 alias = "srbml"
-quote = "Make it so. -- Picard"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 srbml = srbml
 
 

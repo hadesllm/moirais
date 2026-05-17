@@ -36,7 +36,7 @@ def trttm(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trttm"
 alias = "trttm"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 trttm = trttm
 
 

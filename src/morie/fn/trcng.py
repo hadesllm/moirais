@@ -36,7 +36,7 @@ def trcng(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trcng"
 alias = "trcng"
-quote = "Bankai! -- Ichigo"
+quote = "Knowledge is power. -- Francis Bacon"
 trcng = trcng
 
 

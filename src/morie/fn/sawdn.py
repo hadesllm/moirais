@@ -43,7 +43,7 @@ def sawdn(values=None, w=None, n=50):
 
 short = "sawdn"
 alias = "sawdn"
-quote = "Winter is coming. -- Stark motto"
+quote = "There is no royal road to geometry. -- Euclid"
 sawdn = sawdn
 
 

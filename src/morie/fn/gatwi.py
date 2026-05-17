@@ -37,7 +37,7 @@ def gatwi(x=None, y=None, values=None, resolution=50):
 
 short = "gatwi"
 alias = "gatwi"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "I think, therefore I am. -- Rene Descartes"
 gatwi = gatwi
 
 

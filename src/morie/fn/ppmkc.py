@@ -36,7 +36,7 @@ def ppmkc(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppmkc"
 alias = "ppmkc"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 ppmkc = ppmkc
 
 

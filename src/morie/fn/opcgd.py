@@ -46,7 +46,7 @@ def opcgd(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opcgd"
 alias = "opcgd"
-quote = "There is always hope. -- Aragorn"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 opcgd = opcgd
 
 

@@ -29,7 +29,7 @@ def grdgen(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "grdgen"
 alias = "grdgen"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 grdgen = grdgen
 
 

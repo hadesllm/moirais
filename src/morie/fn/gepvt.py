@@ -33,7 +33,7 @@ def gepvt(gdp=None, trade=None, coords=None, n=50):
 
 short = "gepvt"
 alias = "gepvt"
-quote = "Live long and prosper. -- Spock"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 gepvt = gepvt
 
 

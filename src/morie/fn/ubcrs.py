@@ -33,7 +33,7 @@ def ubcrs(population=None, area=None, coords=None, n=50):
 
 short = "ubcrs"
 alias = "ubcrs"
-quote = "You should enjoy the detours. -- Ging"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 ubcrs = ubcrs
 
 

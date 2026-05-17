@@ -27,7 +27,7 @@ def svlap(data=None, n=50):
 
 short = "svlap"
 alias = "svlap"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 svlap = svlap
 
 

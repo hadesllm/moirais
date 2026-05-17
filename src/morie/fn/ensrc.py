@@ -31,7 +31,7 @@ def ensrc(data=None, coords=None, n=50):
 
 short = "ensrc"
 alias = "ensrc"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ensrc = ensrc
 
 

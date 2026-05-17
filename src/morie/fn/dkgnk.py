@@ -40,7 +40,7 @@ def dkgnk(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkgnk"
 alias = "dkgnk"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Number rules the universe. -- Pythagoras"
 dkgnk = dkgnk
 
 

@@ -34,7 +34,7 @@ def csmrk(incidents=None, population=None, coords=None, n=50):
 
 short = "csmrk"
 alias = "csmrk"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "We must know. We will know. -- David Hilbert"
 csmrk = csmrk
 
 

@@ -36,7 +36,7 @@ def slcsp(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "slcsp"
 alias = "slcsp"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 slcsp = slcsp
 
 

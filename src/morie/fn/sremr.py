@@ -38,7 +38,7 @@ def sremr(X=None, y=None, w=None, n=50, k=3):
 
 short = "sremr"
 alias = "sremr"
-quote = "Engage. -- Picard"
+quote = "The measure of a man is what he does with power. -- Plato"
 sremr = sremr
 
 

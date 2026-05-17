@@ -34,7 +34,7 @@ def cszon(incidents=None, population=None, coords=None, n=50):
 
 short = "cszon"
 alias = "cszon"
-quote = "Believe it! -- Naruto"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 cszon = cszon
 
 

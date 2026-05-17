@@ -33,7 +33,7 @@ def ublib(population=None, area=None, coords=None, n=50):
 
 short = "ublib"
 alias = "ublib"
-quote = "Valar Morghulis. -- Braavos"
+quote = "Number rules the universe. -- Pythagoras"
 ublib = ublib
 
 

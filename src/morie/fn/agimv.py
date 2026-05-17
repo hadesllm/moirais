@@ -38,7 +38,7 @@ def agimv(areas=None, perimeters=None, values=None, n=30):
 
 short = "agimv"
 alias = "agimv"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 agimv = agimv
 
 

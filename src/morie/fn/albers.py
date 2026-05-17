@@ -29,7 +29,7 @@ def albers(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "albers"
 alias = "albers"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 albers = albers
 
 

@@ -34,7 +34,7 @@ def cshts(incidents=None, population=None, coords=None, n=50):
 
 short = "cshts"
 alias = "cshts"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 cshts = cshts
 
 

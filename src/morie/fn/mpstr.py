@@ -28,7 +28,7 @@ def mpstr(data=None, n=50):
 
 short = "mpstr"
 alias = "mpstr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 mpstr = mpstr
 
 

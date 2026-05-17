@@ -33,7 +33,7 @@ def gemin(gdp=None, trade=None, coords=None, n=50):
 
 short = "gemin"
 alias = "gemin"
-quote = "Whatever happens, happens. -- Spike"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 gemin = gemin
 
 

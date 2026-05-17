@@ -36,7 +36,7 @@ def vmhgm(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmhgm"
 alias = "vmhgm"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 vmhgm = vmhgm
 
 

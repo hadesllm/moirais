@@ -32,7 +32,7 @@ def sopot(data=None, depth=None, coords=None, n=50):
 
 short = "sopot"
 alias = "sopot"
-quote = "Yare yare daze. -- Jotaro"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 sopot = sopot
 
 

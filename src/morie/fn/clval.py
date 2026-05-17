@@ -40,7 +40,7 @@ def clval(data=None, n=50, k=3, coords=None):
 
 short = "clval"
 alias = "clval"
-quote = "One does not simply walk. -- Boromir"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 clval = clval
 
 

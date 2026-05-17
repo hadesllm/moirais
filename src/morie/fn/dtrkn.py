@@ -28,7 +28,7 @@ def dtrkn(data=None, n=50):
 
 short = "dtrkn"
 alias = "dtrkn"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 dtrkn = dtrkn
 
 

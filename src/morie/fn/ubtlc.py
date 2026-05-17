@@ -33,7 +33,7 @@ def ubtlc(population=None, area=None, coords=None, n=50):
 
 short = "ubtlc"
 alias = "ubtlc"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 ubtlc = ubtlc
 
 

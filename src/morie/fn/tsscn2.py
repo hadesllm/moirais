@@ -37,7 +37,7 @@ def tsscn2(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsscn2"
 alias = "tsscn2"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 tsscn2 = tsscn2
 
 

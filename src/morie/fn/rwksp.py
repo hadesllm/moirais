@@ -37,7 +37,7 @@ def rwksp(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "rwksp"
 alias = "rwksp"
-quote = "I am here! -- All Might"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 rwksp = rwksp
 
 

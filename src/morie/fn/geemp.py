@@ -33,7 +33,7 @@ def geemp(gdp=None, trade=None, coords=None, n=50):
 
 short = "geemp"
 alias = "geemp"
-quote = "Engage. -- Picard"
+quote = "Number rules the universe. -- Pythagoras"
 geemp = geemp
 
 

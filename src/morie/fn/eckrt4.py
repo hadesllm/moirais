@@ -29,7 +29,7 @@ def eckrt4(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "eckrt4"
 alias = "eckrt4"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Number rules the universe. -- Pythagoras"
 eckrt4 = eckrt4
 
 

@@ -38,7 +38,7 @@ def srblg(X=None, y=None, w=None, n=50, k=3):
 
 short = "srblg"
 alias = "srblg"
-quote = "Believe it! -- Naruto"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 srblg = srblg
 
 

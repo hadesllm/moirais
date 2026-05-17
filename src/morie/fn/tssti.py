@@ -37,7 +37,7 @@ def tssti(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssti"
 alias = "tssti"
-quote = "Keep moving forward. -- Eren"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 tssti = tssti
 
 

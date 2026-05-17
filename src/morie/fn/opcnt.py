@@ -46,7 +46,7 @@ def opcnt(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opcnt"
 alias = "opcnt"
-quote = "Arise. -- Shadow Monarch"
+quote = "Knowledge is power. -- Francis Bacon"
 opcnt = opcnt
 
 

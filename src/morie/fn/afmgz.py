@@ -33,7 +33,7 @@ def afmgz(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afmgz"
 alias = "afmgz"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 afmgz = afmgz
 
 

@@ -36,7 +36,7 @@ def ppjcq(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppjcq"
 alias = "ppjcq"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "Number rules the universe. -- Pythagoras"
 ppjcq = ppjcq
 
 

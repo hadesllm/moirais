@@ -40,7 +40,7 @@ def dk4co(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk4co"
 alias = "dk4co"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 dk4co = dk4co
 
 

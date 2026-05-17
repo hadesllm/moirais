@@ -28,7 +28,7 @@ def mpnch(data=None, n=50):
 
 short = "mpnch"
 alias = "mpnch"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 mpnch = mpnch
 
 

@@ -36,7 +36,7 @@ def ppmkd(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppmkd"
 alias = "ppmkd"
-quote = "I am the one who knocks. -- Walter White"
+quote = "The measure of a man is what he does with power. -- Plato"
 ppmkd = ppmkd
 
 

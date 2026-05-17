@@ -30,7 +30,7 @@ def wqtds(data=None, coords=None, n=50):
 
 short = "wqtds"
 alias = "wqtds"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 wqtds = wqtds
 
 

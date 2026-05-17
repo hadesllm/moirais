@@ -33,7 +33,7 @@ def gebnk(gdp=None, trade=None, coords=None, n=50):
 
 short = "gebnk"
 alias = "gebnk"
-quote = "It's over 9000! -- Vegeta"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 gebnk = gebnk
 
 

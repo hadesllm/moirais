@@ -31,7 +31,7 @@ def abhch(data=None, coords=None, n=50):
 
 short = "abhch"
 alias = "abhch"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 abhch = abhch
 
 

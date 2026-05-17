@@ -31,7 +31,7 @@ def gchwv(data=None, coords=None, n=50):
 
 short = "gchwv"
 alias = "gchwv"
-quote = "See you space cowboy. -- Spike"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 gchwv = gchwv
 
 

@@ -33,7 +33,7 @@ def geind(gdp=None, trade=None, coords=None, n=50):
 
 short = "geind"
 alias = "geind"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 geind = geind
 
 

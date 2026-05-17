@@ -38,7 +38,7 @@ def agcoh(areas=None, perimeters=None, values=None, n=30):
 
 short = "agcoh"
 alias = "agcoh"
-quote = "Make it so. -- Picard"
+quote = "There is no royal road to geometry. -- Euclid"
 agcoh = agcoh
 
 

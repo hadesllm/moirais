@@ -43,7 +43,7 @@ def sawvr(values=None, w=None, n=50):
 
 short = "sawvr"
 alias = "sawvr"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 sawvr = sawvr
 
 

@@ -40,7 +40,7 @@ def maoys(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maoys"
 alias = "maoys"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 maoys = maoys
 
 

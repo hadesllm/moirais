@@ -31,7 +31,7 @@ def endrt(data=None, coords=None, n=50):
 
 short = "endrt"
 alias = "endrt"
-quote = "Engage. -- Picard"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 endrt = endrt
 
 

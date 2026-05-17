@@ -36,7 +36,7 @@ def gdvtr(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdvtr"
 alias = "gdvtr"
-quote = "Valar Morghulis. -- Braavos"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 gdvtr = gdvtr
 
 

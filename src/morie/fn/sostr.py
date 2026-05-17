@@ -32,7 +32,7 @@ def sostr(data=None, depth=None, coords=None, n=50):
 
 short = "sostr"
 alias = "sostr"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "The measure of a man is what he does with power. -- Plato"
 sostr = sostr
 
 

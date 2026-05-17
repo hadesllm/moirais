@@ -36,7 +36,7 @@ def gdmrg(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdmrg"
 alias = "gdmrg"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 gdmrg = gdmrg
 
 

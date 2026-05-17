@@ -34,7 +34,7 @@ def csdrg(incidents=None, population=None, coords=None, n=50):
 
 short = "csdrg"
 alias = "csdrg"
-quote = "One does not simply walk. -- Boromir"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 csdrg = csdrg
 
 

@@ -33,7 +33,7 @@ def afslp2(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afslp2"
 alias = "afslp2"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 afslp2 = afslp2
 
 

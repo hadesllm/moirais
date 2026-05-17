@@ -34,7 +34,7 @@ def csprd(incidents=None, population=None, coords=None, n=50):
 
 short = "csprd"
 alias = "csprd"
-quote = "Kamehameha! -- Goku"
+quote = "We must know. We will know. -- David Hilbert"
 csprd = csprd
 
 

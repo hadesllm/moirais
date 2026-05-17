@@ -34,7 +34,7 @@ def csdmv(incidents=None, population=None, coords=None, n=50):
 
 short = "csdmv"
 alias = "csdmv"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 csdmv = csdmv
 
 

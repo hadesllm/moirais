@@ -37,7 +37,7 @@ def mtbtw(trajectory=None, n=50, dt=1.0):
 
 short = "mtbtw"
 alias = "mtbtw"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 mtbtw = mtbtw
 
 

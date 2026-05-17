@@ -46,7 +46,7 @@ def opbfg(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opbfg"
 alias = "opbfg"
-quote = "Engage. -- Picard"
+quote = "We must know. We will know. -- David Hilbert"
 opbfg = opbfg
 
 

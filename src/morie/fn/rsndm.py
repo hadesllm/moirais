@@ -32,7 +32,7 @@ def rsndm(pixels=None, bands=None, n=100):
 
 short = "rsndm"
 alias = "rsndm"
-quote = "Arise. -- Shadow Monarch"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 rsndm = rsndm
 
 

@@ -36,7 +36,7 @@ def ppiso(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppiso"
 alias = "ppiso"
-quote = "I mustn't run away. -- Shinji"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 ppiso = ppiso
 
 

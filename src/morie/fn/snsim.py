@@ -36,7 +36,7 @@ def snsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "snsim"
 alias = "snsim"
-quote = "Winter is coming. -- Stark motto"
+quote = "The measure of a man is what he does with power. -- Plato"
 snsim = snsim
 
 

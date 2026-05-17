@@ -31,7 +31,7 @@ def nbbar(data=None, coords=None, n=50):
 
 short = "nbbar"
 alias = "nbbar"
-quote = "I am justice! -- Light"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 nbbar = nbbar
 
 

@@ -40,7 +40,7 @@ def matid(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "matid"
 alias = "matid"
-quote = "Bankai! -- Ichigo"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 matid = matid
 
 

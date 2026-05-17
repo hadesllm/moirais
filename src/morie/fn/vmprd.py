@@ -36,7 +36,7 @@ def vmprd(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmprd"
 alias = "vmprd"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 vmprd = vmprd
 
 

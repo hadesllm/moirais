@@ -43,7 +43,7 @@ def sawrl(values=None, w=None, n=50):
 
 short = "sawrl"
 alias = "sawrl"
-quote = "Resistance is futile. -- Borg"
+quote = "The measure of a man is what he does with power. -- Plato"
 sawrl = sawrl
 
 

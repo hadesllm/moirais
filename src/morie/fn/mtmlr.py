@@ -37,7 +37,7 @@ def mtmlr(trajectory=None, n=50, dt=1.0):
 
 short = "mtmlr"
 alias = "mtmlr"
-quote = "I mustn't run away. -- Shinji"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 mtmlr = mtmlr
 
 

@@ -41,7 +41,7 @@ def ghqly(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghqly"
 alias = "ghqly"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 ghqly = ghqly
 
 

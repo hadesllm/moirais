@@ -40,7 +40,7 @@ def clgng(data=None, n=50, k=3, coords=None):
 
 short = "clgng"
 alias = "clgng"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Knowledge is power. -- Francis Bacon"
 clgng = clgng
 
 

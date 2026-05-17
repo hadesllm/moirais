@@ -36,7 +36,7 @@ def gdswg(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdswg"
 alias = "gdswg"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 gdswg = gdswg
 
 

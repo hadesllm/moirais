@@ -28,7 +28,7 @@ def tmpsmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "tmpsmp"
 alias = "tmpsmp"
-quote = "You should enjoy the detours. -- Ging"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 tmpsmp = tmpsmp
 
 

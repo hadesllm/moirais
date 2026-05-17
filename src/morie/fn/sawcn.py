@@ -43,7 +43,7 @@ def sawcn(values=None, w=None, n=50):
 
 short = "sawcn"
 alias = "sawcn"
-quote = "I am here! -- All Might"
+quote = "The measure of a man is what he does with power. -- Plato"
 sawcn = sawcn
 
 

@@ -29,7 +29,7 @@ def rcabs(data=None, n=50):
 
 short = "rcabs"
 alias = "rcabs"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 rcabs = rcabs
 
 

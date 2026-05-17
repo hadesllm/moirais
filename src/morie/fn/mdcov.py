@@ -37,7 +37,7 @@ def mdcov(data=None, query=None, origin=None, *, n=50):
 
 short = "mdcov"
 alias = "mdcov"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 mdcov = mdcov
 
 

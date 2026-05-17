@@ -38,7 +38,7 @@ def agpat(areas=None, perimeters=None, values=None, n=30):
 
 short = "agpat"
 alias = "agpat"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 agpat = agpat
 
 

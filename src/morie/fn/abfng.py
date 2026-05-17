@@ -31,7 +31,7 @@ def abfng(data=None, coords=None, n=50):
 
 short = "abfng"
 alias = "abfng"
-quote = "See you space cowboy. -- Spike"
+quote = "Knowledge is power. -- Francis Bacon"
 abfng = abfng
 
 

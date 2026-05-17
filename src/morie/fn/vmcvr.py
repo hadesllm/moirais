@@ -36,7 +36,7 @@ def vmcvr(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmcvr"
 alias = "vmcvr"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 vmcvr = vmcvr
 
 

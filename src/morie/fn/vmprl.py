@@ -36,7 +36,7 @@ def vmprl(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmprl"
 alias = "vmprl"
-quote = "I am here! -- All Might"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 vmprl = vmprl
 
 

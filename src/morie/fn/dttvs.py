@@ -31,7 +31,7 @@ def dttvs(x=None, n=100, params=None):
 
 short = "dttvs"
 alias = "dttvs"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 dttvs = dttvs
 
 

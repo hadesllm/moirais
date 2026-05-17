@@ -28,7 +28,7 @@ def cmopn(data=None, n=50):
 
 short = "cmopn"
 alias = "cmopn"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 cmopn = cmopn
 
 

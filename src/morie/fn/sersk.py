@@ -39,7 +39,7 @@ def sersk(cases=None, population=None, coords=None, n=50):
 
 short = "sersk"
 alias = "sersk"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 sersk = sersk
 
 

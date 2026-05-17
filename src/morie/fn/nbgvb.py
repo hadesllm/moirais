@@ -31,7 +31,7 @@ def nbgvb(data=None, coords=None, n=50):
 
 short = "nbgvb"
 alias = "nbgvb"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 nbgvb = nbgvb
 
 

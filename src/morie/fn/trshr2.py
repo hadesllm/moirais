@@ -36,7 +36,7 @@ def trshr2(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trshr2"
 alias = "trshr2"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 trshr2 = trshr2
 
 

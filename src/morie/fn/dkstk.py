@@ -40,7 +40,7 @@ def dkstk(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkstk"
 alias = "dkstk"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "I think, therefore I am. -- Rene Descartes"
 dkstk = dkstk
 
 

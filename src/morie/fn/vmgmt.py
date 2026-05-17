@@ -36,7 +36,7 @@ def vmgmt(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmgmt"
 alias = "vmgmt"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 vmgmt = vmgmt
 
 

@@ -36,7 +36,7 @@ def ppbor(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppbor"
 alias = "ppbor"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 ppbor = ppbor
 
 

@@ -37,7 +37,7 @@ def tssrn(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssrn"
 alias = "tssrn"
-quote = "Breathe. -- Tanjiro"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 tssrn = tssrn
 
 

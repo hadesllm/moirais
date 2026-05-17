@@ -31,7 +31,7 @@ def dtric(x=None, n=100, params=None):
 
 short = "dtric"
 alias = "dtric"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 dtric = dtric
 
 

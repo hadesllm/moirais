@@ -40,7 +40,7 @@ def dk3vg(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3vg"
 alias = "dk3vg"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 dk3vg = dk3vg
 
 

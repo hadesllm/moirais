@@ -40,7 +40,7 @@ def dkicm(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkicm"
 alias = "dkicm"
-quote = "Bankai! -- Ichigo"
+quote = "Knowledge is power. -- Francis Bacon"
 dkicm = dkicm
 
 

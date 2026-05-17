@@ -32,7 +32,7 @@ def rsgnd(pixels=None, bands=None, n=100):
 
 short = "rsgnd"
 alias = "rsgnd"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 rsgnd = rsgnd
 
 

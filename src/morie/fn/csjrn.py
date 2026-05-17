@@ -34,7 +34,7 @@ def csjrn(incidents=None, population=None, coords=None, n=50):
 
 short = "csjrn"
 alias = "csjrn"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 csjrn = csjrn
 
 

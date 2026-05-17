@@ -31,7 +31,7 @@ def nbppr(data=None, coords=None, n=50):
 
 short = "nbppr"
 alias = "nbppr"
-quote = "See you space cowboy. -- Spike"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 nbppr = nbppr
 
 

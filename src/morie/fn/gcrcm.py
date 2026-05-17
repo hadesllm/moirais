@@ -31,7 +31,7 @@ def gcrcm(data=None, coords=None, n=50):
 
 short = "gcrcm"
 alias = "gcrcm"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 gcrcm = gcrcm
 
 

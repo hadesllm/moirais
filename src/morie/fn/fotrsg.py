@@ -39,7 +39,7 @@ def fotrsg(dbh=None, height=None, coords=None, n=50):
 
 short = "fotrsg"
 alias = "fotrsg"
-quote = "My precious. -- Gollum"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 fotrsg = fotrsg
 
 

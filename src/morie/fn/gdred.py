@@ -36,7 +36,7 @@ def gdred(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdred"
 alias = "gdred"
-quote = "My precious. -- Gollum"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 gdred = gdred
 
 

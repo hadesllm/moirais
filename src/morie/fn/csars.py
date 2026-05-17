@@ -34,7 +34,7 @@ def csars(incidents=None, population=None, coords=None, n=50):
 
 short = "csars"
 alias = "csars"
-quote = "Keep moving forward. -- Eren"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 csars = csars
 
 

@@ -33,7 +33,7 @@ def geinc(gdp=None, trade=None, coords=None, n=50):
 
 short = "geinc"
 alias = "geinc"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 geinc = geinc
 
 

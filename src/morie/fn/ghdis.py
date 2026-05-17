@@ -41,7 +41,7 @@ def ghdis(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghdis"
 alias = "ghdis"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 ghdis = ghdis
 
 

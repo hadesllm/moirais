@@ -30,7 +30,7 @@ def wlest(abundance=None, coords=None, n=50):
 
 short = "wlest"
 alias = "wlest"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 wlest = wlest
 
 

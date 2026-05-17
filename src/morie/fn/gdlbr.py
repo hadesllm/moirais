@@ -27,7 +27,7 @@ def gdlbr(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdlbr"
 alias = "gdlbr"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 gdlbr = gdlbr
 
 

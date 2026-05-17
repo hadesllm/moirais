@@ -36,7 +36,7 @@ def vmhol(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmhol"
 alias = "vmhol"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "I think, therefore I am. -- Rene Descartes"
 vmhol = vmhol
 
 

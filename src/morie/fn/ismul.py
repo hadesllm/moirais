@@ -28,7 +28,7 @@ def ismul(data=None, n=50):
 
 short = "ismul"
 alias = "ismul"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Knowledge is power. -- Francis Bacon"
 ismul = ismul
 
 

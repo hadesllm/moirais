@@ -40,7 +40,7 @@ def dkrk(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkrk"
 alias = "dkrk"
-quote = "I am the one who knocks. -- Walter White"
+quote = "We must know. We will know. -- David Hilbert"
 dkrk = dkrk
 
 

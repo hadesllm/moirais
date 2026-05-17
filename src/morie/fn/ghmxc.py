@@ -41,7 +41,7 @@ def ghmxc(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghmxc"
 alias = "ghmxc"
-quote = "Keep moving forward. -- Eren"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ghmxc = ghmxc
 
 

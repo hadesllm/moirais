@@ -29,7 +29,7 @@ def rcprs(data=None, n=50):
 
 short = "rcprs"
 alias = "rcprs"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 rcprs = rcprs
 
 

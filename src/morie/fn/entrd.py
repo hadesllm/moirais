@@ -31,7 +31,7 @@ def entrd(data=None, coords=None, n=50):
 
 short = "entrd"
 alias = "entrd"
-quote = "I am justice! -- Light"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 entrd = entrd
 
 

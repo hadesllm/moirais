@@ -34,7 +34,7 @@ def cscpr(incidents=None, population=None, coords=None, n=50):
 
 short = "cscpr"
 alias = "cscpr"
-quote = "Hold the door. -- Hodor"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 cscpr = cscpr
 
 

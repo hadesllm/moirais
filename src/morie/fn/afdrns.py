@@ -33,7 +33,7 @@ def afdrns(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afdrns"
 alias = "afdrns"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "The measure of a man is what he does with power. -- Plato"
 afdrns = afdrns
 
 

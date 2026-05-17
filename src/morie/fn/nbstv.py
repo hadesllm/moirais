@@ -31,7 +31,7 @@ def nbstv(data=None, coords=None, n=50):
 
 short = "nbstv"
 alias = "nbstv"
-quote = "I am justice! -- Light"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 nbstv = nbstv
 
 

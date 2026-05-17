@@ -29,7 +29,7 @@ def hsprc(data=None, n=50):
 
 short = "hsprc"
 alias = "hsprc"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 hsprc = hsprc
 
 

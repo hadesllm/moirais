@@ -28,7 +28,7 @@ def mvtpr(data=None, n=50):
 
 short = "mvtpr"
 alias = "mvtpr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 mvtpr = mvtpr
 
 

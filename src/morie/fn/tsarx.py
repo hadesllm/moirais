@@ -37,7 +37,7 @@ def tsarx(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsarx"
 alias = "tsarx"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 tsarx = tsarx
 
 

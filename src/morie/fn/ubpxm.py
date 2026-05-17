@@ -33,7 +33,7 @@ def ubpxm(population=None, area=None, coords=None, n=50):
 
 short = "ubpxm"
 alias = "ubpxm"
-quote = "Yare yare daze. -- Jotaro"
+quote = "We must know. We will know. -- David Hilbert"
 ubpxm = ubpxm
 
 

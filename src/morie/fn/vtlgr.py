@@ -27,7 +27,7 @@ def vtlgr(data=None, n=50):
 
 short = "vtlgr"
 alias = "vtlgr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 vtlgr = vtlgr
 
 

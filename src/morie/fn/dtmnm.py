@@ -31,7 +31,7 @@ def dtmnm(x=None, n=100, params=None):
 
 short = "dtmnm"
 alias = "dtmnm"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "What is now proved was once only imagined. -- William Blake"
 dtmnm = dtmnm
 
 

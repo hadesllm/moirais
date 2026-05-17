@@ -37,7 +37,7 @@ def tstrd(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tstrd"
 alias = "tstrd"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "There is no royal road to geometry. -- Euclid"
 tstrd = tstrd
 
 

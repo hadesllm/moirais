@@ -30,7 +30,7 @@ def wqtrp(data=None, coords=None, n=50):
 
 short = "wqtrp"
 alias = "wqtrp"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 wqtrp = wqtrp
 
 

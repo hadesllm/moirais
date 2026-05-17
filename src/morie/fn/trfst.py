@@ -36,7 +36,7 @@ def trfst(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trfst"
 alias = "trfst"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 trfst = trfst
 
 

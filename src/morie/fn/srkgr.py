@@ -38,7 +38,7 @@ def srkgr(X=None, y=None, w=None, n=50, k=3):
 
 short = "srkgr"
 alias = "srkgr"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "Knowledge is power. -- Francis Bacon"
 srkgr = srkgr
 
 

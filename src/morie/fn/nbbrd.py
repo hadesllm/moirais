@@ -31,7 +31,7 @@ def nbbrd(data=None, coords=None, n=50):
 
 short = "nbbrd"
 alias = "nbbrd"
-quote = "Believe it! -- Naruto"
+quote = "Knowledge is power. -- Francis Bacon"
 nbbrd = nbbrd
 
 

@@ -38,7 +38,7 @@ def srmns(X=None, y=None, w=None, n=50, k=3):
 
 short = "srmns"
 alias = "srmns"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 srmns = srmns
 
 

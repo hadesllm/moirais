@@ -38,7 +38,7 @@ def srgam(X=None, y=None, w=None, n=50, k=3):
 
 short = "srgam"
 alias = "srgam"
-quote = "Whatever happens, happens. -- Spike"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 srgam = srgam
 
 

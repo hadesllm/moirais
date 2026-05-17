@@ -39,7 +39,7 @@ def focorr(dbh=None, height=None, coords=None, n=50):
 
 short = "focorr"
 alias = "focorr"
-quote = "Whatever happens, happens. -- Spike"
+quote = "The measure of a man is what he does with power. -- Plato"
 focorr = focorr
 
 

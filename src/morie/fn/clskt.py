@@ -40,7 +40,7 @@ def clskt(data=None, n=50, k=3, coords=None):
 
 short = "clskt"
 alias = "clskt"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 clskt = clskt
 
 

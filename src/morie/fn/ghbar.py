@@ -41,7 +41,7 @@ def ghbar(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghbar"
 alias = "ghbar"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 ghbar = ghbar
 
 

@@ -37,7 +37,7 @@ def percs(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "percs"
 alias = "percs"
-quote = "Engage. -- Picard"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 percs = percs
 
 

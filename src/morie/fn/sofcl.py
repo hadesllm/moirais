@@ -32,7 +32,7 @@ def sofcl(data=None, depth=None, coords=None, n=50):
 
 short = "sofcl"
 alias = "sofcl"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 sofcl = sofcl
 
 

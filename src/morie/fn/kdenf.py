@@ -37,7 +37,7 @@ def kdenf(x=None, y=None, values=None, resolution=50):
 
 short = "kdenf"
 alias = "kdenf"
-quote = "Winter is coming. -- Stark motto"
+quote = "What is now proved was once only imagined. -- William Blake"
 kdenf = kdenf
 
 

@@ -32,7 +32,7 @@ def socec(data=None, depth=None, coords=None, n=50):
 
 short = "socec"
 alias = "socec"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 socec = socec
 
 

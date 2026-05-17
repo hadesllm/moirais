@@ -31,7 +31,7 @@ def gcplr(data=None, coords=None, n=50):
 
 short = "gcplr"
 alias = "gcplr"
-quote = "See you space cowboy. -- Spike"
+quote = "Knowledge is power. -- Francis Bacon"
 gcplr = gcplr
 
 

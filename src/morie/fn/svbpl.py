@@ -27,7 +27,7 @@ def svbpl(data=None, n=50):
 
 short = "svbpl"
 alias = "svbpl"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 svbpl = svbpl
 
 

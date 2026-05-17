@@ -32,7 +32,7 @@ def sowrc(data=None, depth=None, coords=None, n=50):
 
 short = "sowrc"
 alias = "sowrc"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 sowrc = sowrc
 
 

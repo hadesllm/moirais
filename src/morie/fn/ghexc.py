@@ -41,7 +41,7 @@ def ghexc(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghexc"
 alias = "ghexc"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 ghexc = ghexc
 
 

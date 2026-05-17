@@ -46,7 +46,7 @@ def opaco(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opaco"
 alias = "opaco"
-quote = "Make it so. -- Picard"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 opaco = opaco
 
 

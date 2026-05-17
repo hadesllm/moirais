@@ -46,7 +46,7 @@ def opvhc(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opvhc"
 alias = "opvhc"
-quote = "Live long and prosper. -- Spock"
+quote = "The measure of a man is what he does with power. -- Plato"
 opvhc = opvhc
 
 

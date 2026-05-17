@@ -29,7 +29,7 @@ def lvsmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "lvsmp"
 alias = "lvsmp"
-quote = "I am here! -- All Might"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 lvsmp = lvsmp
 
 

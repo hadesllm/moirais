@@ -33,7 +33,7 @@ def afyld(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afyld"
 alias = "afyld"
-quote = "Make it so. -- Picard"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 afyld = afyld
 
 

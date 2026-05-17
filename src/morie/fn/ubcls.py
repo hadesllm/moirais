@@ -33,7 +33,7 @@ def ubcls(population=None, area=None, coords=None, n=50):
 
 short = "ubcls"
 alias = "ubcls"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 ubcls = ubcls
 
 

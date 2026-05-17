@@ -36,7 +36,7 @@ def ppint2(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppint2"
 alias = "ppint2"
-quote = "I am justice! -- Light"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 ppint2 = ppint2
 
 

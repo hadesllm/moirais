@@ -38,7 +38,7 @@ def srolm(X=None, y=None, w=None, n=50, k=3):
 
 short = "srolm"
 alias = "srolm"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "The measure of a man is what he does with power. -- Plato"
 srolm = srolm
 
 

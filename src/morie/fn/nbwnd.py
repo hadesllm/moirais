@@ -31,7 +31,7 @@ def nbwnd(data=None, coords=None, n=50):
 
 short = "nbwnd"
 alias = "nbwnd"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 nbwnd = nbwnd
 
 

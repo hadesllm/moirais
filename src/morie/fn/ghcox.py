@@ -41,7 +41,7 @@ def ghcox(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghcox"
 alias = "ghcox"
-quote = "Hold the door. -- Hodor"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 ghcox = ghcox
 
 

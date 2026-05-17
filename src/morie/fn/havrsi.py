@@ -29,7 +29,7 @@ def havrsi(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "havrsi"
 alias = "havrsi"
-quote = "Believe it! -- Naruto"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 havrsi = havrsi
 
 

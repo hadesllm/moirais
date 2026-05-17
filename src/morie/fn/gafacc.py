@@ -37,7 +37,7 @@ def gafacc(x=None, y=None, values=None, resolution=50):
 
 short = "gafacc"
 alias = "gafacc"
-quote = "Engage. -- Picard"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 gafacc = gafacc
 
 

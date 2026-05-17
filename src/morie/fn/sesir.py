@@ -39,7 +39,7 @@ def sesir(cases=None, population=None, coords=None, n=50):
 
 short = "sesir"
 alias = "sesir"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 sesir = sesir
 
 

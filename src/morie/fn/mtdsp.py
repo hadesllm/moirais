@@ -37,7 +37,7 @@ def mtdsp(trajectory=None, n=50, dt=1.0):
 
 short = "mtdsp"
 alias = "mtdsp"
-quote = "I am here! -- All Might"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 mtdsp = mtdsp
 
 

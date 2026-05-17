@@ -38,7 +38,7 @@ def agsav(areas=None, perimeters=None, values=None, n=30):
 
 short = "agsav"
 alias = "agsav"
-quote = "Breathe. -- Tanjiro"
+quote = "Number rules the universe. -- Pythagoras"
 agsav = agsav
 
 

@@ -37,7 +37,7 @@ def tssgn(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssgn"
 alias = "tssgn"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 tssgn = tssgn
 
 

@@ -37,7 +37,7 @@ def garng(x=None, y=None, values=None, resolution=50):
 
 short = "garng"
 alias = "garng"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "The measure of a man is what he does with power. -- Plato"
 garng = garng
 
 

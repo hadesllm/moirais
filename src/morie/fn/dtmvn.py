@@ -31,7 +31,7 @@ def dtmvn(x=None, n=100, params=None):
 
 short = "dtmvn"
 alias = "dtmvn"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 dtmvn = dtmvn
 
 

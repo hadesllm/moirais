@@ -33,7 +33,7 @@ def ubtrn(population=None, area=None, coords=None, n=50):
 
 short = "ubtrn"
 alias = "ubtrn"
-quote = "I am justice! -- Light"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ubtrn = ubtrn
 
 

@@ -37,7 +37,7 @@ def delaun(x=None, y=None, values=None, resolution=50):
 
 short = "delaun"
 alias = "delaun"
-quote = "Make it so. -- Picard"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 delaun = delaun
 
 

@@ -36,7 +36,7 @@ def ppstg(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppstg"
 alias = "ppstg"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "Knowledge is power. -- Francis Bacon"
 ppstg = ppstg
 
 

@@ -46,7 +46,7 @@ def opsca(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opsca"
 alias = "opsca"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Number rules the universe. -- Pythagoras"
 opsca = opsca
 
 

@@ -27,7 +27,7 @@ def vtblk(data=None, n=50):
 
 short = "vtblk"
 alias = "vtblk"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 vtblk = vtblk
 
 

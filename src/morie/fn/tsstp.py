@@ -37,7 +37,7 @@ def tsstp(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsstp"
 alias = "tsstp"
-quote = "Yare yare daze. -- Jotaro"
+quote = "We must know. We will know. -- David Hilbert"
 tsstp = tsstp
 
 

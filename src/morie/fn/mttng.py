@@ -37,7 +37,7 @@ def mttng(trajectory=None, n=50, dt=1.0):
 
 short = "mttng"
 alias = "mttng"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 mttng = mttng
 
 

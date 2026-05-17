@@ -31,7 +31,7 @@ def nbatm(data=None, coords=None, n=50):
 
 short = "nbatm"
 alias = "nbatm"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "There is no royal road to geometry. -- Euclid"
 nbatm = nbatm
 
 

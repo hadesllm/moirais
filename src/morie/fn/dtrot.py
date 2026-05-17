@@ -28,7 +28,7 @@ def dtrot(data=None, n=50):
 
 short = "dtrot"
 alias = "dtrot"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 dtrot = dtrot
 
 

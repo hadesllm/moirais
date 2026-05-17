@@ -38,7 +38,7 @@ def srgmm(X=None, y=None, w=None, n=50, k=3):
 
 short = "srgmm"
 alias = "srgmm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 srgmm = srgmm
 
 

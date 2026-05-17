@@ -33,7 +33,7 @@ def lowsp(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "lowsp"
 alias = "lowsp"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 lowsp = lowsp
 
 

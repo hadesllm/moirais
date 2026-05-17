@@ -31,7 +31,7 @@ def ablad(data=None, coords=None, n=50):
 
 short = "ablad"
 alias = "ablad"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 ablad = ablad
 
 

@@ -36,7 +36,7 @@ def trcpv(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trcpv"
 alias = "trcpv"
-quote = "Engage. -- Picard"
+quote = "There is no royal road to geometry. -- Euclid"
 trcpv = trcpv
 
 

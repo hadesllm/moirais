@@ -38,7 +38,7 @@ def agdis(areas=None, perimeters=None, values=None, n=30):
 
 short = "agdis"
 alias = "agdis"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 agdis = agdis
 
 

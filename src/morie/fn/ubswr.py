@@ -33,7 +33,7 @@ def ubswr(population=None, area=None, coords=None, n=50):
 
 short = "ubswr"
 alias = "ubswr"
-quote = "My precious. -- Gollum"
+quote = "What is now proved was once only imagined. -- William Blake"
 ubswr = ubswr
 
 

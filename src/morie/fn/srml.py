@@ -38,7 +38,7 @@ def srml(X=None, y=None, w=None, n=50, k=3):
 
 short = "srml"
 alias = "srml"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 srml = srml
 
 

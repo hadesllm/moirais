@@ -28,7 +28,7 @@ def plidp(data=None, n=50):
 
 short = "plidp"
 alias = "plidp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 plidp = plidp
 
 

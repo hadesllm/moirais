@@ -45,7 +45,7 @@ def svout(position, ideal=None, thresholds=None):
 
 short = "svout"
 alias = "svout"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 svout = svout
 
 

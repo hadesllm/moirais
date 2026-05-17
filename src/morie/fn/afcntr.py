@@ -33,7 +33,7 @@ def afcntr(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afcntr"
 alias = "afcntr"
-quote = "Keep moving forward. -- Eren"
+quote = "Number rules the universe. -- Pythagoras"
 afcntr = afcntr
 
 

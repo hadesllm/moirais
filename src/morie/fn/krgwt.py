@@ -33,7 +33,7 @@ def krgwt(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "krgwt"
 alias = "krgwt"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 krgwt = krgwt
 
 

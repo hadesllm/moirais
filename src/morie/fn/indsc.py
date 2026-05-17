@@ -31,7 +31,7 @@ def indscal_mds(dissimilarities_list=None, *, dims=2, n=10):
 
 short = "indsc"
 alias = "indscal_mds"
-quote = "The more you know, the more you realize you don't know. -- Aristotle"
+quote = "Number rules the universe. -- Pythagoras"
 indscal_mds = indscal_mds
 
 

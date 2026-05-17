@@ -33,7 +33,7 @@ def ubcon(population=None, area=None, coords=None, n=50):
 
 short = "ubcon"
 alias = "ubcon"
-quote = "Engage. -- Picard"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 ubcon = ubcon
 
 

@@ -39,7 +39,7 @@ def forsdi(dbh=None, height=None, coords=None, n=50):
 
 short = "forsdi"
 alias = "forsdi"
-quote = "Arise. -- Shadow Monarch"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 forsdi = forsdi
 
 

@@ -43,7 +43,7 @@ def samoe(values=None, w=None, n=50):
 
 short = "samoe"
 alias = "samoe"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Number rules the universe. -- Pythagoras"
 samoe = samoe
 
 

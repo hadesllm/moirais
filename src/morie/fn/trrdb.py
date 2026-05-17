@@ -36,7 +36,7 @@ def trrdb(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trrdb"
 alias = "trrdb"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 trrdb = trrdb
 
 

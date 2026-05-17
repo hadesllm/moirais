@@ -28,7 +28,7 @@ def isvlt(data=None, n=50):
 
 short = "isvlt"
 alias = "isvlt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 isvlt = isvlt
 
 

@@ -41,7 +41,7 @@ def ghsem(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghsem"
 alias = "ghsem"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 ghsem = ghsem
 
 

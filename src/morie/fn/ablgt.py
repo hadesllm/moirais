@@ -31,7 +31,7 @@ def ablgt(data=None, coords=None, n=50):
 
 short = "ablgt"
 alias = "ablgt"
-quote = "Arise. -- Shadow Monarch"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 ablgt = ablgt
 
 

@@ -40,7 +40,7 @@ def clred(data=None, n=50, k=3, coords=None):
 
 short = "clred"
 alias = "clred"
-quote = "I am here! -- All Might"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 clred = clred
 
 

@@ -28,7 +28,7 @@ def plvar(data=None, n=50):
 
 short = "plvar"
 alias = "plvar"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 plvar = plvar
 
 

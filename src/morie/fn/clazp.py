@@ -40,7 +40,7 @@ def clazp(data=None, n=50, k=3, coords=None):
 
 short = "clazp"
 alias = "clazp"
-quote = "Whatever happens, happens. -- Spike"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 clazp = clazp
 
 

@@ -37,7 +37,7 @@ def ltest(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "ltest"
 alias = "ltest"
-quote = "Believe it! -- Naruto"
+quote = "I think, therefore I am. -- Rene Descartes"
 ltest = ltest
 
 

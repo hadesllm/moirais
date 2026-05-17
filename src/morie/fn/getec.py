@@ -33,7 +33,7 @@ def getec(gdp=None, trade=None, coords=None, n=50):
 
 short = "getec"
 alias = "getec"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 getec = getec
 
 

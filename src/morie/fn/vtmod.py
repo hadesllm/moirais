@@ -27,7 +27,7 @@ def vtmod(data=None, n=50):
 
 short = "vtmod"
 alias = "vtmod"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "We must know. We will know. -- David Hilbert"
 vtmod = vtmod
 
 

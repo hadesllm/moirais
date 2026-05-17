@@ -30,7 +30,7 @@ def wqfe(data=None, coords=None, n=50):
 
 short = "wqfe"
 alias = "wqfe"
-quote = "I am the one who knocks. -- Walter White"
+quote = "What is now proved was once only imagined. -- William Blake"
 wqfe = wqfe
 
 

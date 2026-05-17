@@ -28,7 +28,7 @@ def isidx(data=None, n=50):
 
 short = "isidx"
 alias = "isidx"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 isidx = isidx
 
 

@@ -31,7 +31,7 @@ def abemf(data=None, coords=None, n=50):
 
 short = "abemf"
 alias = "abemf"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 abemf = abemf
 
 

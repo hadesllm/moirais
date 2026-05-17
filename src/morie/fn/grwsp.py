@@ -37,7 +37,7 @@ def grwsp(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "grwsp"
 alias = "grwsp"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 grwsp = grwsp
 
 

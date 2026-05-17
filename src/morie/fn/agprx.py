@@ -38,7 +38,7 @@ def agprx(areas=None, perimeters=None, values=None, n=30):
 
 short = "agprx"
 alias = "agprx"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 agprx = agprx
 
 

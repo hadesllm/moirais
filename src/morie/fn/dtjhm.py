@@ -31,7 +31,7 @@ def dtjhm(x=None, n=100, params=None):
 
 short = "dtjhm"
 alias = "dtjhm"
-quote = "One does not simply walk. -- Boromir"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 dtjhm = dtjhm
 
 

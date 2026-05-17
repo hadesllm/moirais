@@ -33,7 +33,7 @@ def afprsc(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afprsc"
 alias = "afprsc"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "The measure of a man is what he does with power. -- Plato"
 afprsc = afprsc
 
 

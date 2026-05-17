@@ -38,7 +38,7 @@ def srgwd(X=None, y=None, w=None, n=50, k=3):
 
 short = "srgwd"
 alias = "srgwd"
-quote = "Winter is coming. -- Stark motto"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 srgwd = srgwd
 
 

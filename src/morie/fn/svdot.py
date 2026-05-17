@@ -27,7 +27,7 @@ def svdot(data=None, n=50):
 
 short = "svdot"
 alias = "svdot"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 svdot = svdot
 
 

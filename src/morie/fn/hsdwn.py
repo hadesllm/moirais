@@ -29,7 +29,7 @@ def hsdwn(data=None, n=50):
 
 short = "hsdwn"
 alias = "hsdwn"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "We must know. We will know. -- David Hilbert"
 hsdwn = hsdwn
 
 

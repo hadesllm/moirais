@@ -28,7 +28,7 @@ def idppt(data=None, n=50):
 
 short = "idppt"
 alias = "idppt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The measure of a man is what he does with power. -- Plato"
 idppt = idppt
 
 

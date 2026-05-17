@@ -29,7 +29,7 @@ def goodel(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "goodel"
 alias = "goodel"
-quote = "One does not simply walk. -- Boromir"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 goodel = goodel
 
 

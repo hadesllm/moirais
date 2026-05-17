@@ -37,7 +37,7 @@ def mtsin(trajectory=None, n=50, dt=1.0):
 
 short = "mtsin"
 alias = "mtsin"
-quote = "There is always hope. -- Aragorn"
+quote = "Number rules the universe. -- Pythagoras"
 mtsin = mtsin
 
 

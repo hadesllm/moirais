@@ -40,7 +40,7 @@ def dkek(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkek"
 alias = "dkek"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 dkek = dkek
 
 

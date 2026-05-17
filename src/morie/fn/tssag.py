@@ -37,7 +37,7 @@ def tssag(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssag"
 alias = "tssag"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 tssag = tssag
 
 

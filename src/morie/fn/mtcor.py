@@ -37,7 +37,7 @@ def mtcor(trajectory=None, n=50, dt=1.0):
 
 short = "mtcor"
 alias = "mtcor"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 mtcor = mtcor
 
 

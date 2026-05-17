@@ -33,7 +33,7 @@ def hyhyd(flow=None, precip=None, coords=None, n=50):
 
 short = "hyhyd"
 alias = "hyhyd"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 hyhyd = hyhyd
 
 

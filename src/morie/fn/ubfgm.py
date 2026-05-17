@@ -33,7 +33,7 @@ def ubfgm(population=None, area=None, coords=None, n=50):
 
 short = "ubfgm"
 alias = "ubfgm"
-quote = "Believe it! -- Naruto"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ubfgm = ubfgm
 
 

@@ -31,7 +31,7 @@ def abblc(data=None, coords=None, n=50):
 
 short = "abblc"
 alias = "abblc"
-quote = "It's over 9000! -- Vegeta"
+quote = "We must know. We will know. -- David Hilbert"
 abblc = abblc
 
 

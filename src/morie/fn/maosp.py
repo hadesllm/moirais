@@ -40,7 +40,7 @@ def maosp(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maosp"
 alias = "maosp"
-quote = "This is Requiem. -- Giorno"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 maosp = maosp
 
 

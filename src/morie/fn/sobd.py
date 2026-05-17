@@ -32,7 +32,7 @@ def sobd(data=None, depth=None, coords=None, n=50):
 
 short = "sobd"
 alias = "sobd"
-quote = "Winter is coming. -- Stark motto"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 sobd = sobd
 
 

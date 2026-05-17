@@ -46,7 +46,7 @@ def opmfo(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opmfo"
 alias = "opmfo"
-quote = "Bankai! -- Ichigo"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 opmfo = opmfo
 
 

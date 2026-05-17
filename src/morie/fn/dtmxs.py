@@ -31,7 +31,7 @@ def dtmxs(x=None, n=100, params=None):
 
 short = "dtmxs"
 alias = "dtmxs"
-quote = "Keep moving forward. -- Eren"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 dtmxs = dtmxs
 
 

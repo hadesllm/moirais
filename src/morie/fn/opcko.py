@@ -46,7 +46,7 @@ def opcko(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opcko"
 alias = "opcko"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 opcko = opcko
 
 

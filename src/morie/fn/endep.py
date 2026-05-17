@@ -31,7 +31,7 @@ def endep(data=None, coords=None, n=50):
 
 short = "endep"
 alias = "endep"
-quote = "Bankai! -- Ichigo"
+quote = "What is now proved was once only imagined. -- William Blake"
 endep = endep
 
 

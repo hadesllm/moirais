@@ -38,7 +38,7 @@ def aguhi(areas=None, perimeters=None, values=None, n=30):
 
 short = "aguhi"
 alias = "aguhi"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 aguhi = aguhi
 
 

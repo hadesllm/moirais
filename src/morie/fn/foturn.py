@@ -39,7 +39,7 @@ def foturn(dbh=None, height=None, coords=None, n=50):
 
 short = "foturn"
 alias = "foturn"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 foturn = foturn
 
 

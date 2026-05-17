@@ -40,7 +40,7 @@ def clspc(data=None, n=50, k=3, coords=None):
 
 short = "clspc"
 alias = "clspc"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 clspc = clspc
 
 

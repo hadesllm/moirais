@@ -38,7 +38,7 @@ def srpdm(X=None, y=None, w=None, n=50, k=3):
 
 short = "srpdm"
 alias = "srpdm"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 srpdm = srpdm
 
 

@@ -39,7 +39,7 @@ def serhr(cases=None, population=None, coords=None, n=50):
 
 short = "serhr"
 alias = "serhr"
-quote = "I mustn't run away. -- Shinji"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 serhr = serhr
 
 

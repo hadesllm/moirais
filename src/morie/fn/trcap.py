@@ -36,7 +36,7 @@ def trcap(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trcap"
 alias = "trcap"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 trcap = trcap
 
 

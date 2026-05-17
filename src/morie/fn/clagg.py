@@ -40,7 +40,7 @@ def clagg(data=None, n=50, k=3, coords=None):
 
 short = "clagg"
 alias = "clagg"
-quote = "Arise. -- Shadow Monarch"
+quote = "There is no royal road to geometry. -- Euclid"
 clagg = clagg
 
 

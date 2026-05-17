@@ -36,7 +36,7 @@ def trksp(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trksp"
 alias = "trksp"
-quote = "Science! -- Jesse Pinkman"
+quote = "There is no royal road to geometry. -- Euclid"
 trksp = trksp
 
 

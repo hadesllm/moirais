@@ -33,7 +33,7 @@ def gsmsp(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "gsmsp"
 alias = "gsmsp"
-quote = "One does not simply walk. -- Boromir"
+quote = "The measure of a man is what he does with power. -- Plato"
 gsmsp = gsmsp
 
 

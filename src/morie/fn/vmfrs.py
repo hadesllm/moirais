@@ -36,7 +36,7 @@ def vmfrs(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmfrs"
 alias = "vmfrs"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 vmfrs = vmfrs
 
 

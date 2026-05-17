@@ -31,7 +31,7 @@ def dtcpg2(x=None, n=100, params=None):
 
 short = "dtcpg2"
 alias = "dtcpg2"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 dtcpg2 = dtcpg2
 
 

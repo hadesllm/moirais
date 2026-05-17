@@ -33,7 +33,7 @@ def hyslo(flow=None, precip=None, coords=None, n=50):
 
 short = "hyslo"
 alias = "hyslo"
-quote = "I am justice! -- Light"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 hyslo = hyslo
 
 

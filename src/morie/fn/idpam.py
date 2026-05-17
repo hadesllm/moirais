@@ -28,7 +28,7 @@ def idpam(data=None, n=50):
 
 short = "idpam"
 alias = "idpam"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 idpam = idpam
 
 

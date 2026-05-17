@@ -31,7 +31,7 @@ def gctrd(data=None, coords=None, n=50):
 
 short = "gctrd"
 alias = "gctrd"
-quote = "Winter is coming. -- Stark motto"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 gctrd = gctrd
 
 

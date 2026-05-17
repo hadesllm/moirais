@@ -41,7 +41,7 @@ def ghtim(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghtim"
 alias = "ghtim"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 ghtim = ghtim
 
 

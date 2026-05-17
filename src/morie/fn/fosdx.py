@@ -39,7 +39,7 @@ def fosdx(dbh=None, height=None, coords=None, n=50):
 
 short = "fosdx"
 alias = "fosdx"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 fosdx = fosdx
 
 

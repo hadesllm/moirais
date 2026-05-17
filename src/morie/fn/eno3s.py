@@ -31,7 +31,7 @@ def eno3s(data=None, coords=None, n=50):
 
 short = "eno3s"
 alias = "eno3s"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 eno3s = eno3s
 
 

@@ -28,7 +28,7 @@ def ispas(data=None, n=50):
 
 short = "ispas"
 alias = "ispas"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 ispas = ispas
 
 

@@ -34,7 +34,7 @@ def cscrw(incidents=None, population=None, coords=None, n=50):
 
 short = "cscrw"
 alias = "cscrw"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 cscrw = cscrw
 
 

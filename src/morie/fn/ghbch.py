@@ -41,7 +41,7 @@ def ghbch(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghbch"
 alias = "ghbch"
-quote = "Believe it! -- Naruto"
+quote = "What is now proved was once only imagined. -- William Blake"
 ghbch = ghbch
 
 

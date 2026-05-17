@@ -40,7 +40,7 @@ def dkcrs(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkcrs"
 alias = "dkcrs"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 dkcrs = dkcrs
 
 

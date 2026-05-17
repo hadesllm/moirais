@@ -33,7 +33,7 @@ def ubwlk(population=None, area=None, coords=None, n=50):
 
 short = "ubwlk"
 alias = "ubwlk"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Knowledge is power. -- Francis Bacon"
 ubwlk = ubwlk
 
 

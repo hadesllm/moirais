@@ -37,7 +37,7 @@ def mtrob(trajectory=None, n=50, dt=1.0):
 
 short = "mtrob"
 alias = "mtrob"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 mtrob = mtrob
 
 

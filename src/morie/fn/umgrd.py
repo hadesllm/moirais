@@ -27,7 +27,7 @@ def umgrd(data=None, n=50):
 
 short = "umgrd"
 alias = "umgrd"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The measure of a man is what he does with power. -- Plato"
 umgrd = umgrd
 
 

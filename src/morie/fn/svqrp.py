@@ -27,7 +27,7 @@ def svqrp(data=None, n=50):
 
 short = "svqrp"
 alias = "svqrp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 svqrp = svqrp
 
 

@@ -31,7 +31,7 @@ def abirr(data=None, coords=None, n=50):
 
 short = "abirr"
 alias = "abirr"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 abirr = abirr
 
 

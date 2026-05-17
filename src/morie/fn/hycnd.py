@@ -33,7 +33,7 @@ def hycnd(flow=None, precip=None, coords=None, n=50):
 
 short = "hycnd"
 alias = "hycnd"
-quote = "There is always hope. -- Aragorn"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 hycnd = hycnd
 
 

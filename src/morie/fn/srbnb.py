@@ -38,7 +38,7 @@ def srbnb(X=None, y=None, w=None, n=50, k=3):
 
 short = "srbnb"
 alias = "srbnb"
-quote = "Bankai! -- Ichigo"
+quote = "What is now proved was once only imagined. -- William Blake"
 srbnb = srbnb
 
 

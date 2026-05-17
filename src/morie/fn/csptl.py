@@ -34,7 +34,7 @@ def csptl(incidents=None, population=None, coords=None, n=50):
 
 short = "csptl"
 alias = "csptl"
-quote = "My precious. -- Gollum"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 csptl = csptl
 
 

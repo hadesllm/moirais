@@ -33,7 +33,7 @@ def hytrb(flow=None, precip=None, coords=None, n=50):
 
 short = "hytrb"
 alias = "hytrb"
-quote = "Science! -- Jesse Pinkman"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 hytrb = hytrb
 
 

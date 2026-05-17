@@ -38,7 +38,7 @@ def ageve(areas=None, perimeters=None, values=None, n=30):
 
 short = "ageve"
 alias = "ageve"
-quote = "It's over 9000! -- Vegeta"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 ageve = ageve
 
 

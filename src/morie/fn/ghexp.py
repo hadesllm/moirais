@@ -41,7 +41,7 @@ def ghexp(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghexp"
 alias = "ghexp"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ghexp = ghexp
 
 

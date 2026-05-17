@@ -33,7 +33,7 @@ def entfp(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "entfp"
 alias = "entfp"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 entfp = entfp
 
 

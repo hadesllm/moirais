@@ -36,7 +36,7 @@ def trair(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trair"
 alias = "trair"
-quote = "No half measures. -- Mike"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 trair = trair
 
 

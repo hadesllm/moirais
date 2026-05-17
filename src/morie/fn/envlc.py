@@ -31,7 +31,7 @@ def envlc(data=None, coords=None, n=50):
 
 short = "envlc"
 alias = "envlc"
-quote = "One does not simply walk. -- Boromir"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 envlc = envlc
 
 

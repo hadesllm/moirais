@@ -33,7 +33,7 @@ def gehlc(gdp=None, trade=None, coords=None, n=50):
 
 short = "gehlc"
 alias = "gehlc"
-quote = "Resistance is futile. -- Borg"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 gehlc = gehlc
 
 

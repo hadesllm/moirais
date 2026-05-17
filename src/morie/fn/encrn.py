@@ -31,7 +31,7 @@ def encrn(data=None, coords=None, n=50):
 
 short = "encrn"
 alias = "encrn"
-quote = "This is Requiem. -- Giorno"
+quote = "Knowledge is power. -- Francis Bacon"
 encrn = encrn
 
 

@@ -38,7 +38,7 @@ def srglm(X=None, y=None, w=None, n=50, k=3):
 
 short = "srglm"
 alias = "srglm"
-quote = "You should enjoy the detours. -- Ging"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 srglm = srglm
 
 

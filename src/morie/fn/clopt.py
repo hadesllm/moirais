@@ -40,7 +40,7 @@ def clopt(data=None, n=50, k=3, coords=None):
 
 short = "clopt"
 alias = "clopt"
-quote = "Keep moving forward. -- Eren"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 clopt = clopt
 
 

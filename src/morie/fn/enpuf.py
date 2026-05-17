@@ -31,7 +31,7 @@ def enpuf(data=None, coords=None, n=50):
 
 short = "enpuf"
 alias = "enpuf"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "The measure of a man is what he does with power. -- Plato"
 enpuf = enpuf
 
 

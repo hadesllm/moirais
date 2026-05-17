@@ -41,7 +41,7 @@ def ghmlv(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghmlv"
 alias = "ghmlv"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 ghmlv = ghmlv
 
 

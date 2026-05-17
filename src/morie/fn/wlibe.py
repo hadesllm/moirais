@@ -30,7 +30,7 @@ def wlibe(abundance=None, coords=None, n=50):
 
 short = "wlibe"
 alias = "wlibe"
-quote = "I am justice! -- Light"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 wlibe = wlibe
 
 

@@ -36,7 +36,7 @@ def ppedg(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppedg"
 alias = "ppedg"
-quote = "Whatever happens, happens. -- Spike"
+quote = "I think, therefore I am. -- Rene Descartes"
 ppedg = ppedg
 
 

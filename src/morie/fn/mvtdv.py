@@ -28,7 +28,7 @@ def mvtdv(data=None, n=50):
 
 short = "mvtdv"
 alias = "mvtdv"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 mvtdv = mvtdv
 
 

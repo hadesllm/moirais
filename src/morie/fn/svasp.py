@@ -44,7 +44,7 @@ def svasp(position, ideal=None, saliences=None):
 
 short = "svasp"
 alias = "svasp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "What is now proved was once only imagined. -- William Blake"
 svasp = svasp
 
 

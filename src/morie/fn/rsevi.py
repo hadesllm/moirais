@@ -32,7 +32,7 @@ def rsevi(pixels=None, bands=None, n=100):
 
 short = "rsevi"
 alias = "rsevi"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 rsevi = rsevi
 
 

@@ -28,7 +28,7 @@ def psmix(data=None, n=50):
 
 short = "psmix"
 alias = "psmix"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 psmix = psmix
 
 

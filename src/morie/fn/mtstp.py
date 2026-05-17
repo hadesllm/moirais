@@ -37,7 +37,7 @@ def mtstp(trajectory=None, n=50, dt=1.0):
 
 short = "mtstp"
 alias = "mtstp"
-quote = "Engage. -- Picard"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 mtstp = mtstp
 
 

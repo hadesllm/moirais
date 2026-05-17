@@ -38,7 +38,7 @@ def aglsi(areas=None, perimeters=None, values=None, n=30):
 
 short = "aglsi"
 alias = "aglsi"
-quote = "I am the hope of the universe. -- Goku"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 aglsi = aglsi
 
 

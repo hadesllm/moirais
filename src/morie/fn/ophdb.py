@@ -46,7 +46,7 @@ def ophdb(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "ophdb"
 alias = "ophdb"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 ophdb = ophdb
 
 

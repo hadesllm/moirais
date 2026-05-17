@@ -36,7 +36,7 @@ def gdotm(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdotm"
 alias = "gdotm"
-quote = "I am justice! -- Light"
+quote = "What is now proved was once only imagined. -- William Blake"
 gdotm = gdotm
 
 

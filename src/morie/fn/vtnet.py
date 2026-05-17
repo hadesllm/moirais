@@ -27,7 +27,7 @@ def vtnet(data=None, n=50):
 
 short = "vtnet"
 alias = "vtnet"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 vtnet = vtnet
 
 

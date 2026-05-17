@@ -36,7 +36,7 @@ def trsfw(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trsfw"
 alias = "trsfw"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 trsfw = trsfw
 
 

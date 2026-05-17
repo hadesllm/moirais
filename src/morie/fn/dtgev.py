@@ -31,7 +31,7 @@ def dtgev(x=None, n=100, params=None):
 
 short = "dtgev"
 alias = "dtgev"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 dtgev = dtgev
 
 

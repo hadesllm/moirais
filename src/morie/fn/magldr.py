@@ -40,7 +40,7 @@ def magldr(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "magldr"
 alias = "magldr"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 magldr = magldr
 
 

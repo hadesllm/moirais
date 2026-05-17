@@ -36,7 +36,7 @@ def ppmc(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppmc"
 alias = "ppmc"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 ppmc = ppmc
 
 

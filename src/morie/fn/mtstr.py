@@ -37,7 +37,7 @@ def mtstr(trajectory=None, n=50, dt=1.0):
 
 short = "mtstr"
 alias = "mtstr"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 mtstr = mtstr
 
 

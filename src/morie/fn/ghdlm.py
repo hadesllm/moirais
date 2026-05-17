@@ -41,7 +41,7 @@ def ghdlm(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghdlm"
 alias = "ghdlm"
-quote = "Make it so. -- Picard"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 ghdlm = ghdlm
 
 

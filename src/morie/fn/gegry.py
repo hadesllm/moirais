@@ -33,7 +33,7 @@ def gegry(gdp=None, trade=None, coords=None, n=50):
 
 short = "gegry"
 alias = "gegry"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 gegry = gegry
 
 

@@ -38,7 +38,7 @@ def agalb(areas=None, perimeters=None, values=None, n=30):
 
 short = "agalb"
 alias = "agalb"
-quote = "I am here! -- All Might"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 agalb = agalb
 
 

@@ -29,7 +29,7 @@ def rcbnf(data=None, n=50):
 
 short = "rcbnf"
 alias = "rcbnf"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "There is no royal road to geometry. -- Euclid"
 rcbnf = rcbnf
 
 

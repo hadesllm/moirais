@@ -34,7 +34,7 @@ def cscir(incidents=None, population=None, coords=None, n=50):
 
 short = "cscir"
 alias = "cscir"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "We must know. We will know. -- David Hilbert"
 cscir = cscir
 
 

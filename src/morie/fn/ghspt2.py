@@ -41,7 +41,7 @@ def ghspt2(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghspt2"
 alias = "ghspt2"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 ghspt2 = ghspt2
 
 

@@ -37,7 +37,7 @@ def mtres(trajectory=None, n=50, dt=1.0):
 
 short = "mtres"
 alias = "mtres"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 mtres = mtres
 
 

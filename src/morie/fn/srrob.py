@@ -38,7 +38,7 @@ def srrob(X=None, y=None, w=None, n=50, k=3):
 
 short = "srrob"
 alias = "srrob"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 srrob = srrob
 
 

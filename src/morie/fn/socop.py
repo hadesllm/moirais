@@ -32,7 +32,7 @@ def socop(data=None, depth=None, coords=None, n=50):
 
 short = "socop"
 alias = "socop"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Knowledge is power. -- Francis Bacon"
 socop = socop
 
 

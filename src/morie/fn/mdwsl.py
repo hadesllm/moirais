@@ -37,7 +37,7 @@ def mdwsl(data=None, query=None, origin=None, *, n=50):
 
 short = "mdwsl"
 alias = "mdwsl"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Knowledge is power. -- Francis Bacon"
 mdwsl = mdwsl
 
 

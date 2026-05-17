@@ -41,7 +41,7 @@ def ghcov(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghcov"
 alias = "ghcov"
-quote = "Resistance is futile. -- Borg"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 ghcov = ghcov
 
 

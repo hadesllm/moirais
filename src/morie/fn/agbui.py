@@ -38,7 +38,7 @@ def agbui(areas=None, perimeters=None, values=None, n=30):
 
 short = "agbui"
 alias = "agbui"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "We must know. We will know. -- David Hilbert"
 agbui = agbui
 
 

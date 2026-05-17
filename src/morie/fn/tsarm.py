@@ -37,7 +37,7 @@ def tsarm(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsarm"
 alias = "tsarm"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 tsarm = tsarm
 
 

@@ -41,7 +41,7 @@ def ghchg(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghchg"
 alias = "ghchg"
-quote = "I am the one who knocks. -- Walter White"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 ghchg = ghchg
 
 

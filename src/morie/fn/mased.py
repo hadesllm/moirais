@@ -40,7 +40,7 @@ def mased(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mased"
 alias = "mased"
-quote = "Keep moving forward. -- Eren"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 mased = mased
 
 

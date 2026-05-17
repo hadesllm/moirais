@@ -41,7 +41,7 @@ def ghgwr(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghgwr"
 alias = "ghgwr"
-quote = "This is Requiem. -- Giorno"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 ghgwr = ghgwr
 
 

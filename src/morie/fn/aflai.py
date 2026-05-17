@@ -33,7 +33,7 @@ def aflai(yield_data=None, soil=None, coords=None, n=50):
 
 short = "aflai"
 alias = "aflai"
-quote = "It's over 9000! -- Vegeta"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 aflai = aflai
 
 

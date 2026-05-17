@@ -40,7 +40,7 @@ def massc(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "massc"
 alias = "massc"
-quote = "Yare yare daze. -- Jotaro"
+quote = "There is no royal road to geometry. -- Euclid"
 massc = massc
 
 

@@ -39,7 +39,7 @@ def foshan(dbh=None, height=None, coords=None, n=50):
 
 short = "foshan"
 alias = "foshan"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 foshan = foshan
 
 

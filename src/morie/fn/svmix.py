@@ -27,7 +27,7 @@ def svmix(data=None, n=50):
 
 short = "svmix"
 alias = "svmix"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 svmix = svmix
 
 

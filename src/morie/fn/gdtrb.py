@@ -36,7 +36,7 @@ def gdtrb(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdtrb"
 alias = "gdtrb"
-quote = "This is Requiem. -- Giorno"
+quote = "What is now proved was once only imagined. -- William Blake"
 gdtrb = gdtrb
 
 

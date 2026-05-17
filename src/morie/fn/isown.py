@@ -28,7 +28,7 @@ def isown(data=None, n=50):
 
 short = "isown"
 alias = "isown"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 isown = isown
 
 

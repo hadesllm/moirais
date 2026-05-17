@@ -40,7 +40,7 @@ def clgmx(data=None, n=50, k=3, coords=None):
 
 short = "clgmx"
 alias = "clgmx"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 clgmx = clgmx
 
 

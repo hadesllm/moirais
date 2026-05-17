@@ -33,7 +33,7 @@ def ubcnt(population=None, area=None, coords=None, n=50):
 
 short = "ubcnt"
 alias = "ubcnt"
-quote = "It's over 9000! -- Vegeta"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ubcnt = ubcnt
 
 

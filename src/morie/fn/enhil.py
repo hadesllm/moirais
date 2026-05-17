@@ -31,7 +31,7 @@ def enhil(data=None, coords=None, n=50):
 
 short = "enhil"
 alias = "enhil"
-quote = "Whatever happens, happens. -- Spike"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 enhil = enhil
 
 

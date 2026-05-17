@@ -31,7 +31,7 @@ def enhum(data=None, coords=None, n=50):
 
 short = "enhum"
 alias = "enhum"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 enhum = enhum
 
 

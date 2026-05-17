@@ -31,7 +31,7 @@ def enno2(data=None, coords=None, n=50):
 
 short = "enno2"
 alias = "enno2"
-quote = "Make it so. -- Picard"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 enno2 = enno2
 
 

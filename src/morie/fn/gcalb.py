@@ -31,7 +31,7 @@ def gcalb(data=None, coords=None, n=50):
 
 short = "gcalb"
 alias = "gcalb"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "I think, therefore I am. -- Rene Descartes"
 gcalb = gcalb
 
 

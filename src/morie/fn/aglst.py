@@ -38,7 +38,7 @@ def aglst(areas=None, perimeters=None, values=None, n=30):
 
 short = "aglst"
 alias = "aglst"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "What is now proved was once only imagined. -- William Blake"
 aglst = aglst
 
 

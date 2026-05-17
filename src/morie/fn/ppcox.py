@@ -36,7 +36,7 @@ def ppcox(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppcox"
 alias = "ppcox"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 ppcox = ppcox
 
 

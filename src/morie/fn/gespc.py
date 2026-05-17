@@ -33,7 +33,7 @@ def gespc(gdp=None, trade=None, coords=None, n=50):
 
 short = "gespc"
 alias = "gespc"
-quote = "I am justice! -- Light"
+quote = "Knowledge is power. -- Francis Bacon"
 gespc = gespc
 
 

@@ -40,7 +40,7 @@ def manut(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "manut"
 alias = "manut"
-quote = "Live long and prosper. -- Spock"
+quote = "We must know. We will know. -- David Hilbert"
 manut = manut
 
 

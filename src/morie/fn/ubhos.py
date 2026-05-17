@@ -33,7 +33,7 @@ def ubhos(population=None, area=None, coords=None, n=50):
 
 short = "ubhos"
 alias = "ubhos"
-quote = "Tatakae! -- Eren"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 ubhos = ubhos
 
 

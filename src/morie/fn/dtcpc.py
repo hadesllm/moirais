@@ -31,7 +31,7 @@ def dtcpc(x=None, n=100, params=None):
 
 short = "dtcpc"
 alias = "dtcpc"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 dtcpc = dtcpc
 
 

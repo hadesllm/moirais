@@ -33,7 +33,7 @@ def ubuhi(population=None, area=None, coords=None, n=50):
 
 short = "ubuhi"
 alias = "ubuhi"
-quote = "One does not simply walk. -- Boromir"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 ubuhi = ubuhi
 
 

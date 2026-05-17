@@ -40,7 +40,7 @@ def maco2(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maco2"
 alias = "maco2"
-quote = "Winter is coming. -- Stark motto"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 maco2 = maco2
 
 

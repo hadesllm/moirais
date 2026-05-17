@@ -33,7 +33,7 @@ def nnint(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "nnint"
 alias = "nnint"
-quote = "Winter is coming. -- Stark motto"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 nnint = nnint
 
 

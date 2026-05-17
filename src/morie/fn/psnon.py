@@ -28,7 +28,7 @@ def psnon(data=None, n=50):
 
 short = "psnon"
 alias = "psnon"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 psnon = psnon
 
 

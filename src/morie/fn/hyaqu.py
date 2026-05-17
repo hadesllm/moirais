@@ -33,7 +33,7 @@ def hyaqu(flow=None, precip=None, coords=None, n=50):
 
 short = "hyaqu"
 alias = "hyaqu"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 hyaqu = hyaqu
 
 

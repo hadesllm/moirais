@@ -33,7 +33,7 @@ def geatk(gdp=None, trade=None, coords=None, n=50):
 
 short = "geatk"
 alias = "geatk"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 geatk = geatk
 
 

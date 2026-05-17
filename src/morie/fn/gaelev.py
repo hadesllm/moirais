@@ -37,7 +37,7 @@ def gaelev(x=None, y=None, values=None, resolution=50):
 
 short = "gaelev"
 alias = "gaelev"
-quote = "I am here! -- All Might"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 gaelev = gaelev
 
 

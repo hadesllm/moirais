@@ -33,7 +33,7 @@ def afrotf(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afrotf"
 alias = "afrotf"
-quote = "One does not simply walk. -- Boromir"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 afrotf = afrotf
 
 

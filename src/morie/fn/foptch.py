@@ -39,7 +39,7 @@ def foptch(dbh=None, height=None, coords=None, n=50):
 
 short = "foptch"
 alias = "foptch"
-quote = "I mustn't run away. -- Shinji"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 foptch = foptch
 
 

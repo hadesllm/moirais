@@ -36,7 +36,7 @@ def vmind(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmind"
 alias = "vmind"
-quote = "Arise. -- Shadow Monarch"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 vmind = vmind
 
 

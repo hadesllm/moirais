@@ -30,7 +30,7 @@ def wqcol(data=None, coords=None, n=50):
 
 short = "wqcol"
 alias = "wqcol"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 wqcol = wqcol
 
 

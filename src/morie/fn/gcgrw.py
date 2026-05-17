@@ -31,7 +31,7 @@ def gcgrw(data=None, coords=None, n=50):
 
 short = "gcgrw"
 alias = "gcgrw"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 gcgrw = gcgrw
 
 

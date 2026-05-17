@@ -40,7 +40,7 @@ def dkupd(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkupd"
 alias = "dkupd"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "The measure of a man is what he does with power. -- Plato"
 dkupd = dkupd
 
 

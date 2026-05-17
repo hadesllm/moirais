@@ -37,7 +37,7 @@ def mtvrp(trajectory=None, n=50, dt=1.0):
 
 short = "mtvrp"
 alias = "mtvrp"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 mtvrp = mtvrp
 
 

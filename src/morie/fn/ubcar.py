@@ -33,7 +33,7 @@ def ubcar(population=None, area=None, coords=None, n=50):
 
 short = "ubcar"
 alias = "ubcar"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 ubcar = ubcar
 
 

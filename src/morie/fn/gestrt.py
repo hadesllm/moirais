@@ -33,7 +33,7 @@ def gestrt(gdp=None, trade=None, coords=None, n=50):
 
 short = "gestrt"
 alias = "gestrt"
-quote = "Believe it! -- Naruto"
+quote = "There is no royal road to geometry. -- Euclid"
 gestrt = gestrt
 
 

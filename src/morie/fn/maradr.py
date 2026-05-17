@@ -40,7 +40,7 @@ def maradr(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maradr"
 alias = "maradr"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 maradr = maradr
 
 

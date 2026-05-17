@@ -37,7 +37,7 @@ def md3dp(data=None, query=None, origin=None, *, n=50):
 
 short = "md3dp"
 alias = "md3dp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 md3dp = md3dp
 
 

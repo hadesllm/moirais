@@ -36,7 +36,7 @@ def ppnyn(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppnyn"
 alias = "ppnyn"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "Number rules the universe. -- Pythagoras"
 ppnyn = ppnyn
 
 

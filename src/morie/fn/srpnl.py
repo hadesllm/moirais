@@ -38,7 +38,7 @@ def srpnl(X=None, y=None, w=None, n=50, k=3):
 
 short = "srpnl"
 alias = "srpnl"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 srpnl = srpnl
 
 

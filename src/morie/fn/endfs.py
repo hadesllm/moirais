@@ -31,7 +31,7 @@ def endfs(data=None, coords=None, n=50):
 
 short = "endfs"
 alias = "endfs"
-quote = "Kamehameha! -- Goku"
+quote = "We must know. We will know. -- David Hilbert"
 endfs = endfs
 
 

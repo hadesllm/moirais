@@ -29,7 +29,7 @@ def rndsmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "rndsmp"
 alias = "rndsmp"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 rndsmp = rndsmp
 
 

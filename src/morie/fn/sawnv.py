@@ -43,7 +43,7 @@ def sawnv(values=None, w=None, n=50):
 
 short = "sawnv"
 alias = "sawnv"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 sawnv = sawnv
 
 

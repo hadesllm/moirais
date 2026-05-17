@@ -36,7 +36,7 @@ def gdsex(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdsex"
 alias = "gdsex"
-quote = "Live long and prosper. -- Spock"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 gdsex = gdsex
 
 

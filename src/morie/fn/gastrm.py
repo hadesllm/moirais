@@ -37,7 +37,7 @@ def gastrm(x=None, y=None, values=None, resolution=50):
 
 short = "gastrm"
 alias = "gastrm"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "There is no royal road to geometry. -- Euclid"
 gastrm = gastrm
 
 

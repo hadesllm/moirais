@@ -103,7 +103,7 @@ def mafit(y, q=1, method="cml"):
 
 short = "mafit"
 alias = "ma_fitting"
-quote = "Life moves pretty fast. -- Ferris Bueller"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 __all__ = ["mafit"]
 
 

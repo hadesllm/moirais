@@ -34,7 +34,7 @@ def csaor(incidents=None, population=None, coords=None, n=50):
 
 short = "csaor"
 alias = "csaor"
-quote = "I am justice! -- Light"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 csaor = csaor
 
 

@@ -27,7 +27,7 @@ def svcut(data=None, n=50):
 
 short = "svcut"
 alias = "svcut"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 svcut = svcut
 
 

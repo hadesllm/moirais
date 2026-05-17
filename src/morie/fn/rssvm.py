@@ -32,7 +32,7 @@ def rssvm(pixels=None, bands=None, n=100):
 
 short = "rssvm"
 alias = "rssvm"
-quote = "This is Requiem. -- Giorno"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 rssvm = rssvm
 
 

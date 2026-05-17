@@ -36,7 +36,7 @@ def ppbay(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppbay"
 alias = "ppbay"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 ppbay = ppbay
 
 

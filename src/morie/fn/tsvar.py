@@ -37,7 +37,7 @@ def tsvar(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsvar"
 alias = "tsvar"
-quote = "There is always hope. -- Aragorn"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 tsvar = tsvar
 
 

@@ -41,7 +41,7 @@ def ghsir(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghsir"
 alias = "ghsir"
-quote = "Yare yare daze. -- Jotaro"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 ghsir = ghsir
 
 

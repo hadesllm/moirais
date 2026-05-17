@@ -38,7 +38,7 @@ def srsxe(X=None, y=None, w=None, n=50, k=3):
 
 short = "srsxe"
 alias = "srsxe"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 srsxe = srsxe
 
 

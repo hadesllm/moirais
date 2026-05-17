@@ -40,7 +40,7 @@ def dk3uk(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3uk"
 alias = "dk3uk"
-quote = "Engage. -- Picard"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 dk3uk = dk3uk
 
 

@@ -31,7 +31,7 @@ def abrf(data=None, coords=None, n=50):
 
 short = "abrf"
 alias = "abrf"
-quote = "See you space cowboy. -- Spike"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 abrf = abrf
 
 

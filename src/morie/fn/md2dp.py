@@ -46,7 +46,7 @@ def md2dp(data=None, query=None, origin=None, *, n=50):
 
 short = "md2dp"
 alias = "md2dp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Knowledge is power. -- Francis Bacon"
 md2dp = md2dp
 
 

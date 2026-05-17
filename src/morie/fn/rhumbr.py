@@ -29,7 +29,7 @@ def rhumbr(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "rhumbr"
 alias = "rhumbr"
-quote = "It's over 9000! -- Vegeta"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 rhumbr = rhumbr
 
 

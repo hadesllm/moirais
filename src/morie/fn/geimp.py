@@ -33,7 +33,7 @@ def geimp(gdp=None, trade=None, coords=None, n=50):
 
 short = "geimp"
 alias = "geimp"
-quote = "Tatakae! -- Eren"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 geimp = geimp
 
 

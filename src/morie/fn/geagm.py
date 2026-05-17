@@ -33,7 +33,7 @@ def geagm(gdp=None, trade=None, coords=None, n=50):
 
 short = "geagm"
 alias = "geagm"
-quote = "Yare yare daze. -- Jotaro"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 geagm = geagm
 
 

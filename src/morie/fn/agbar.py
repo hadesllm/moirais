@@ -38,7 +38,7 @@ def agbar(areas=None, perimeters=None, values=None, n=30):
 
 short = "agbar"
 alias = "agbar"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 agbar = agbar
 
 

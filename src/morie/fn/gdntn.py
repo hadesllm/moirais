@@ -36,7 +36,7 @@ def gdntn(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdntn"
 alias = "gdntn"
-quote = "Tatakae! -- Eren"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 gdntn = gdntn
 
 

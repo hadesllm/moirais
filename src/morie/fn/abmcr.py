@@ -31,7 +31,7 @@ def abmcr(data=None, coords=None, n=50):
 
 short = "abmcr"
 alias = "abmcr"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 abmcr = abmcr
 
 

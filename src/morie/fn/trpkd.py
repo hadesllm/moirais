@@ -36,7 +36,7 @@ def trpkd(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trpkd"
 alias = "trpkd"
-quote = "There is always hope. -- Aragorn"
+quote = "What is now proved was once only imagined. -- William Blake"
 trpkd = trpkd
 
 

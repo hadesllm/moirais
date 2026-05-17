@@ -39,7 +39,7 @@ def sebpm(cases=None, population=None, coords=None, n=50):
 
 short = "sebpm"
 alias = "sebpm"
-quote = "It's over 9000! -- Vegeta"
+quote = "Knowledge is power. -- Francis Bacon"
 sebpm = sebpm
 
 

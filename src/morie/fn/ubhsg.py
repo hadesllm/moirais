@@ -33,7 +33,7 @@ def ubhsg(population=None, area=None, coords=None, n=50):
 
 short = "ubhsg"
 alias = "ubhsg"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Knowledge is power. -- Francis Bacon"
 ubhsg = ubhsg
 
 

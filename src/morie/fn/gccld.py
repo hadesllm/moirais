@@ -31,7 +31,7 @@ def gccld(data=None, coords=None, n=50):
 
 short = "gccld"
 alias = "gccld"
-quote = "Arise. -- Shadow Monarch"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 gccld = gccld
 
 

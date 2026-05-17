@@ -37,7 +37,7 @@ def tsfor(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsfor"
 alias = "tsfor"
-quote = "Make it so. -- Picard"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 tsfor = tsfor
 
 

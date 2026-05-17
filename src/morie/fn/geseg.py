@@ -33,7 +33,7 @@ def geseg(gdp=None, trade=None, coords=None, n=50):
 
 short = "geseg"
 alias = "geseg"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 geseg = geseg
 
 

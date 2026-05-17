@@ -31,7 +31,7 @@ def gcstr(data=None, coords=None, n=50):
 
 short = "gcstr"
 alias = "gcstr"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 gcstr = gcstr
 
 

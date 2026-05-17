@@ -37,7 +37,7 @@ def mtssm(trajectory=None, n=50, dt=1.0):
 
 short = "mtssm"
 alias = "mtssm"
-quote = "One is all, all is one. -- Izumi"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 mtssm = mtssm
 
 

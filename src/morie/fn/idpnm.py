@@ -28,7 +28,7 @@ def idpnm(data=None, n=50):
 
 short = "idpnm"
 alias = "idpnm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 idpnm = idpnm
 
 

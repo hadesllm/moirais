@@ -46,7 +46,7 @@ def optsp(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "optsp"
 alias = "optsp"
-quote = "One does not simply walk. -- Boromir"
+quote = "The measure of a man is what he does with power. -- Plato"
 optsp = optsp
 
 

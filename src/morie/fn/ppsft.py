@@ -36,7 +36,7 @@ def ppsft(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppsft"
 alias = "ppsft"
-quote = "Make it so. -- Picard"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 ppsft = ppsft
 
 

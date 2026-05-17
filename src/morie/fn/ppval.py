@@ -28,7 +28,7 @@ def ppval(data=None, n=50):
 
 short = "ppval"
 alias = "ppval"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ppval = ppval
 
 

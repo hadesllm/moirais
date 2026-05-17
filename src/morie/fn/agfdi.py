@@ -38,7 +38,7 @@ def agfdi(areas=None, perimeters=None, values=None, n=30):
 
 short = "agfdi"
 alias = "agfdi"
-quote = "Engage. -- Picard"
+quote = "I think, therefore I am. -- Rene Descartes"
 agfdi = agfdi
 
 

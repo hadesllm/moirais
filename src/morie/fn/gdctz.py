@@ -36,7 +36,7 @@ def gdctz(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdctz"
 alias = "gdctz"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "I think, therefore I am. -- Rene Descartes"
 gdctz = gdctz
 
 

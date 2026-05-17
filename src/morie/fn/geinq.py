@@ -33,7 +33,7 @@ def geinq(gdp=None, trade=None, coords=None, n=50):
 
 short = "geinq"
 alias = "geinq"
-quote = "Arise. -- Shadow Monarch"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 geinq = geinq
 
 

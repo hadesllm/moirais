@@ -39,7 +39,7 @@ def secas(cases=None, population=None, coords=None, n=50):
 
 short = "secas"
 alias = "secas"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 secas = secas
 
 

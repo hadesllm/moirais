@@ -38,7 +38,7 @@ def agshp(areas=None, perimeters=None, values=None, n=30):
 
 short = "agshp"
 alias = "agshp"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 agshp = agshp
 
 

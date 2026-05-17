@@ -33,7 +33,7 @@ def krgre(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "krgre"
 alias = "krgre"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Knowledge is power. -- Francis Bacon"
 krgre = krgre
 
 

@@ -33,7 +33,7 @@ def geinv(gdp=None, trade=None, coords=None, n=50):
 
 short = "geinv"
 alias = "geinv"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 geinv = geinv
 
 

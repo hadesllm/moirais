@@ -33,7 +33,7 @@ def afgrhs(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afgrhs"
 alias = "afgrhs"
-quote = "No half measures. -- Mike"
+quote = "Knowledge is power. -- Francis Bacon"
 afgrhs = afgrhs
 
 

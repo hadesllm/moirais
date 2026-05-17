@@ -28,7 +28,7 @@ def dtmap(data=None, n=50):
 
 short = "dtmap"
 alias = "dtmap"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 dtmap = dtmap
 
 

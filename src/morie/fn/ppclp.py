@@ -36,7 +36,7 @@ def ppclp(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppclp"
 alias = "ppclp"
-quote = "I am the hope of the universe. -- Goku"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 ppclp = ppclp
 
 

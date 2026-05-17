@@ -33,7 +33,7 @@ def gedur(gdp=None, trade=None, coords=None, n=50):
 
 short = "gedur"
 alias = "gedur"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 gedur = gedur
 
 

@@ -33,7 +33,7 @@ def ubtrf(population=None, area=None, coords=None, n=50):
 
 short = "ubtrf"
 alias = "ubtrf"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 ubtrf = ubtrf
 
 

@@ -43,7 +43,7 @@ def sawiv(values=None, w=None, n=50):
 
 short = "sawiv"
 alias = "sawiv"
-quote = "Live long and prosper. -- Spock"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 sawiv = sawiv
 
 

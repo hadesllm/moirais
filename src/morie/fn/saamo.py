@@ -43,7 +43,7 @@ def saamo(values=None, w=None, n=50):
 
 short = "saamo"
 alias = "saamo"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 saamo = saamo
 
 

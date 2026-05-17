@@ -36,7 +36,7 @@ def gddvr(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gddvr"
 alias = "gddvr"
-quote = "One does not simply walk. -- Boromir"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 gddvr = gddvr
 
 

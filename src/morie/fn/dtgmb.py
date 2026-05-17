@@ -31,7 +31,7 @@ def dtgmb(x=None, n=100, params=None):
 
 short = "dtgmb"
 alias = "dtgmb"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 dtgmb = dtgmb
 
 

@@ -37,7 +37,7 @@ def csr(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "csr"
 alias = "csr"
-quote = "One is all, all is one. -- Izumi"
+quote = "Number rules the universe. -- Pythagoras"
 csr = csr
 
 

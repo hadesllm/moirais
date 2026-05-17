@@ -33,7 +33,7 @@ def dilat(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "dilat"
 alias = "dilat"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 dilat = dilat
 
 

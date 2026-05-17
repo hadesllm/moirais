@@ -33,7 +33,7 @@ def afgraz(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afgraz"
 alias = "afgraz"
-quote = "Hold the door. -- Hodor"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 afgraz = afgraz
 
 

@@ -36,7 +36,7 @@ def trprd(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trprd"
 alias = "trprd"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 trprd = trprd
 
 

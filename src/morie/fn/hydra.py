@@ -33,7 +33,7 @@ def hydra(flow=None, precip=None, coords=None, n=50):
 
 short = "hydra"
 alias = "hydra"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 hydra = hydra
 
 

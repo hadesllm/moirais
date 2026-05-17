@@ -27,7 +27,7 @@ def umpar(data=None, n=50):
 
 short = "umpar"
 alias = "umpar"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 umpar = umpar
 
 

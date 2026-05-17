@@ -39,7 +39,7 @@ def seebt(cases=None, population=None, coords=None, n=50):
 
 short = "seebt"
 alias = "seebt"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 seebt = seebt
 
 

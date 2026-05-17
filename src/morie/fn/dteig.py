@@ -28,7 +28,7 @@ def dteig(data=None, n=50):
 
 short = "dteig"
 alias = "dteig"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 dteig = dteig
 
 

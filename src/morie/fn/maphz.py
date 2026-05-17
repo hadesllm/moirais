@@ -40,7 +40,7 @@ def maphz(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maphz"
 alias = "maphz"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "The measure of a man is what he does with power. -- Plato"
 maphz = maphz
 
 

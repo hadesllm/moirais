@@ -37,7 +37,7 @@ def mttwr(trajectory=None, n=50, dt=1.0):
 
 short = "mttwr"
 alias = "mttwr"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "I think, therefore I am. -- Rene Descartes"
 mttwr = mttwr
 
 

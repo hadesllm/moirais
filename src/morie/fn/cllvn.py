@@ -40,7 +40,7 @@ def cllvn(data=None, n=50, k=3, coords=None):
 
 short = "cllvn"
 alias = "cllvn"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "What is now proved was once only imagined. -- William Blake"
 cllvn = cllvn
 
 

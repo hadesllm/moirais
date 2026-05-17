@@ -43,7 +43,7 @@ def saldi(values=None, w=None, n=50):
 
 short = "saldi"
 alias = "saldi"
-quote = "Make it so. -- Picard"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 saldi = saldi
 
 

@@ -37,7 +37,7 @@ def markv(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "markv"
 alias = "markv"
-quote = "Yare yare daze. -- Jotaro"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 markv = markv
 
 

@@ -38,7 +38,7 @@ def agspr(areas=None, perimeters=None, values=None, n=30):
 
 short = "agspr"
 alias = "agspr"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "We must know. We will know. -- David Hilbert"
 agspr = agspr
 
 

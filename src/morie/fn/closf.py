@@ -33,7 +33,7 @@ def closf(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "closf"
 alias = "closf"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 closf = closf
 
 

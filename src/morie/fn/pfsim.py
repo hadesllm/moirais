@@ -37,7 +37,7 @@ def pfsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "pfsim"
 alias = "pfsim"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 pfsim = pfsim
 
 

@@ -37,7 +37,7 @@ def tsstd(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsstd"
 alias = "tsstd"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 tsstd = tsstd
 
 

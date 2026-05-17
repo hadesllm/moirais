@@ -40,7 +40,7 @@ def dkspr(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkspr"
 alias = "dkspr"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 dkspr = dkspr
 
 

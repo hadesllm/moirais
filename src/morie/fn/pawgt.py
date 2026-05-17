@@ -44,7 +44,7 @@ def pawgt(data=None, positions=None, weights=None, n=50):
 
 short = "pawgt"
 alias = "pawgt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 pawgt = pawgt
 
 

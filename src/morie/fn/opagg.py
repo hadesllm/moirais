@@ -46,7 +46,7 @@ def opagg(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opagg"
 alias = "opagg"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "I think, therefore I am. -- Rene Descartes"
 opagg = opagg
 
 

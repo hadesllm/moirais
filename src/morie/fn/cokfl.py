@@ -33,7 +33,7 @@ def cokfl(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "cokfl"
 alias = "cokfl"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 cokfl = cokfl
 
 

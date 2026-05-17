@@ -28,7 +28,7 @@ def pppos(data=None, n=50):
 
 short = "pppos"
 alias = "pppos"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 pppos = pppos
 
 

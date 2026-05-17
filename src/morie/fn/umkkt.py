@@ -27,7 +27,7 @@ def umkkt(data=None, n=50):
 
 short = "umkkt"
 alias = "umkkt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 umkkt = umkkt
 
 

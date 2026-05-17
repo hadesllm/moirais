@@ -32,7 +32,7 @@ def splfn(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "splfn"
 alias = "splfn"
-quote = "See you space cowboy. -- Spike"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 splfn = splfn
 
 

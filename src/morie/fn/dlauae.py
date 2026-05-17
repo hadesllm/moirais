@@ -37,7 +37,7 @@ def dlauae(x=None, y=None, values=None, resolution=50):
 
 short = "dlauae"
 alias = "dlauae"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "There is no royal road to geometry. -- Euclid"
 dlauae = dlauae
 
 

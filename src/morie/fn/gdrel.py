@@ -36,7 +36,7 @@ def gdrel(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdrel"
 alias = "gdrel"
-quote = "I mustn't run away. -- Shinji"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 gdrel = gdrel
 
 

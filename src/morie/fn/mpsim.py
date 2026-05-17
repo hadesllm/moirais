@@ -37,7 +37,7 @@ def mpsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "mpsim"
 alias = "mpsim"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "We must know. We will know. -- David Hilbert"
 mpsim = mpsim
 
 

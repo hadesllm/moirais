@@ -33,7 +33,7 @@ def gewlt(gdp=None, trade=None, coords=None, n=50):
 
 short = "gewlt"
 alias = "gewlt"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Number rules the universe. -- Pythagoras"
 gewlt = gewlt
 
 

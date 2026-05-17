@@ -31,7 +31,7 @@ def nbl50(data=None, coords=None, n=50):
 
 short = "nbl50"
 alias = "nbl50"
-quote = "Make it so. -- Picard"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 nbl50 = nbl50
 
 

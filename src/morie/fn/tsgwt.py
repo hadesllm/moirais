@@ -37,7 +37,7 @@ def tsgwt(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsgwt"
 alias = "tsgwt"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "We must know. We will know. -- David Hilbert"
 tsgwt = tsgwt
 
 

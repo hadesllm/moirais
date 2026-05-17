@@ -33,7 +33,7 @@ def ubseg(population=None, area=None, coords=None, n=50):
 
 short = "ubseg"
 alias = "ubseg"
-quote = "Science! -- Jesse Pinkman"
+quote = "The measure of a man is what he does with power. -- Plato"
 ubseg = ubseg
 
 

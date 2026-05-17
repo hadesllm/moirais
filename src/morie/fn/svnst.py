@@ -44,7 +44,7 @@ def svnst(voter, candidates=None):
 
 short = "svnst"
 alias = "svnst"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 svnst = svnst
 
 

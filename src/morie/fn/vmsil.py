@@ -36,7 +36,7 @@ def vmsil(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmsil"
 alias = "vmsil"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 vmsil = vmsil
 
 

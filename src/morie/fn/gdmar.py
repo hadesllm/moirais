@@ -36,7 +36,7 @@ def gdmar(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdmar"
 alias = "gdmar"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 gdmar = gdmar
 
 

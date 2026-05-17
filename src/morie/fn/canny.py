@@ -33,7 +33,7 @@ def canny(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "canny"
 alias = "canny"
-quote = "I mustn't run away. -- Shinji"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 canny = canny
 
 

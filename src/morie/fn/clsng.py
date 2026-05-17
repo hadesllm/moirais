@@ -40,7 +40,7 @@ def clsng(data=None, n=50, k=3, coords=None):
 
 short = "clsng"
 alias = "clsng"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "Knowledge is power. -- Francis Bacon"
 clsng = clsng
 
 

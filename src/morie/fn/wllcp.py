@@ -30,7 +30,7 @@ def wllcp(abundance=None, coords=None, n=50):
 
 short = "wllcp"
 alias = "wllcp"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "We must know. We will know. -- David Hilbert"
 wllcp = wllcp
 
 

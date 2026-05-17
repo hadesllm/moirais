@@ -31,7 +31,7 @@ def encos(data=None, coords=None, n=50):
 
 short = "encos"
 alias = "encos"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "There is no royal road to geometry. -- Euclid"
 encos = encos
 
 

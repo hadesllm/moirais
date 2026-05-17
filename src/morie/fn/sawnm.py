@@ -43,7 +43,7 @@ def sawnm(values=None, w=None, n=50):
 
 short = "sawnm"
 alias = "sawnm"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "We must know. We will know. -- David Hilbert"
 sawnm = sawnm
 
 

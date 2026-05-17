@@ -36,7 +36,7 @@ def vmcsn(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmcsn"
 alias = "vmcsn"
-quote = "It's over 9000! -- Vegeta"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 vmcsn = vmcsn
 
 

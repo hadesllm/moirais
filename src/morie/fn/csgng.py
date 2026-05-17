@@ -34,7 +34,7 @@ def csgng(incidents=None, population=None, coords=None, n=50):
 
 short = "csgng"
 alias = "csgng"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 csgng = csgng
 
 

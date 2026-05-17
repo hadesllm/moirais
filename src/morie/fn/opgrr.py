@@ -46,7 +46,7 @@ def opgrr(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opgrr"
 alias = "opgrr"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 opgrr = opgrr
 
 

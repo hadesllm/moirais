@@ -31,7 +31,7 @@ def gcssp(data=None, coords=None, n=50):
 
 short = "gcssp"
 alias = "gcssp"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 gcssp = gcssp
 
 

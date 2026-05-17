@@ -40,7 +40,7 @@ def dk3co(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3co"
 alias = "dk3co"
-quote = "One is all, all is one. -- Izumi"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 dk3co = dk3co
 
 

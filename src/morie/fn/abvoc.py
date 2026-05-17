@@ -31,7 +31,7 @@ def abvoc(data=None, coords=None, n=50):
 
 short = "abvoc"
 alias = "abvoc"
-quote = "Winter is coming. -- Stark motto"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 abvoc = abvoc
 
 

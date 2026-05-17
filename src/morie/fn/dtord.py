@@ -31,7 +31,7 @@ def dtord(x=None, n=100, params=None):
 
 short = "dtord"
 alias = "dtord"
-quote = "See you space cowboy. -- Spike"
+quote = "There is no royal road to geometry. -- Euclid"
 dtord = dtord
 
 

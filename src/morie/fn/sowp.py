@@ -32,7 +32,7 @@ def sowp(data=None, depth=None, coords=None, n=50):
 
 short = "sowp"
 alias = "sowp"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "What is now proved was once only imagined. -- William Blake"
 sowp = sowp
 
 

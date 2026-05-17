@@ -37,7 +37,7 @@ def mtbrw(trajectory=None, n=50, dt=1.0):
 
 short = "mtbrw"
 alias = "mtbrw"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 mtbrw = mtbrw
 
 

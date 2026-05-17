@@ -33,7 +33,7 @@ def gegni(gdp=None, trade=None, coords=None, n=50):
 
 short = "gegni"
 alias = "gegni"
-quote = "Winter is coming. -- Stark motto"
+quote = "There is no royal road to geometry. -- Euclid"
 gegni = gegni
 
 

@@ -33,7 +33,7 @@ def ubprk(population=None, area=None, coords=None, n=50):
 
 short = "ubprk"
 alias = "ubprk"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "The measure of a man is what he does with power. -- Plato"
 ubprk = ubprk
 
 

@@ -40,7 +40,7 @@ def clemb(data=None, n=50, k=3, coords=None):
 
 short = "clemb"
 alias = "clemb"
-quote = "See you space cowboy. -- Spike"
+quote = "The measure of a man is what he does with power. -- Plato"
 clemb = clemb
 
 

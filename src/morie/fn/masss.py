@@ -40,7 +40,7 @@ def masss(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "masss"
 alias = "masss"
-quote = "It's over 9000! -- Vegeta"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 masss = masss
 
 

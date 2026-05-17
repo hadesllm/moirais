@@ -29,7 +29,7 @@ def rcpnl(data=None, n=50):
 
 short = "rcpnl"
 alias = "rcpnl"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 rcpnl = rcpnl
 
 

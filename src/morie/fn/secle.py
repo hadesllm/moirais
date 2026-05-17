@@ -39,7 +39,7 @@ def secle(cases=None, population=None, coords=None, n=50):
 
 short = "secle"
 alias = "secle"
-quote = "I am the one who knocks. -- Walter White"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 secle = secle
 
 

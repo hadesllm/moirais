@@ -36,7 +36,7 @@ def vmani(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmani"
 alias = "vmani"
-quote = "Bankai! -- Ichigo"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 vmani = vmani
 
 

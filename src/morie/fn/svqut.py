@@ -27,7 +27,7 @@ def svqut(data=None, n=50):
 
 short = "svqut"
 alias = "svqut"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 svqut = svqut
 
 

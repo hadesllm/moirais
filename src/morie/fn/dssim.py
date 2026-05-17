@@ -37,7 +37,7 @@ def dssim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "dssim"
 alias = "dssim"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Knowledge is power. -- Francis Bacon"
 dssim = dssim
 
 

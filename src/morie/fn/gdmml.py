@@ -36,7 +36,7 @@ def gdmml(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdmml"
 alias = "gdmml"
-quote = "See you space cowboy. -- Spike"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 gdmml = gdmml
 
 

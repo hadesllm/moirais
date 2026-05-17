@@ -36,7 +36,7 @@ def gdelf(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdelf"
 alias = "gdelf"
-quote = "Kamehameha! -- Goku"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 gdelf = gdelf
 
 

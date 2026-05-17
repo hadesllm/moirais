@@ -28,7 +28,7 @@ def ppnch(data=None, n=50):
 
 short = "ppnch"
 alias = "ppnch"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 ppnch = ppnch
 
 

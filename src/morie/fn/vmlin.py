@@ -36,7 +36,7 @@ def vmlin(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmlin"
 alias = "vmlin"
-quote = "One is all, all is one. -- Izumi"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 vmlin = vmlin
 
 

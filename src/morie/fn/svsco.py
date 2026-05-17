@@ -27,7 +27,7 @@ def svsco(data=None, n=50):
 
 short = "svsco"
 alias = "svsco"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 svsco = svsco
 
 

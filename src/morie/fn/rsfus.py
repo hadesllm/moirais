@@ -32,7 +32,7 @@ def rsfus(pixels=None, bands=None, n=100):
 
 short = "rsfus"
 alias = "rsfus"
-quote = "I am here! -- All Might"
+quote = "We must know. We will know. -- David Hilbert"
 rsfus = rsfus
 
 

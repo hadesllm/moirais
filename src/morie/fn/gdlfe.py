@@ -36,7 +36,7 @@ def gdlfe(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdlfe"
 alias = "gdlfe"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 gdlfe = gdlfe
 
 

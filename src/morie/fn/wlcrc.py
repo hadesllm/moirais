@@ -30,7 +30,7 @@ def wlcrc(abundance=None, coords=None, n=50):
 
 short = "wlcrc"
 alias = "wlcrc"
-quote = "Make it so. -- Picard"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 wlcrc = wlcrc
 
 

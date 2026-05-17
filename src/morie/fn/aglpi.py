@@ -38,7 +38,7 @@ def aglpi(areas=None, perimeters=None, values=None, n=30):
 
 short = "aglpi"
 alias = "aglpi"
-quote = "Keep moving forward. -- Eren"
+quote = "Knowledge is power. -- Francis Bacon"
 aglpi = aglpi
 
 

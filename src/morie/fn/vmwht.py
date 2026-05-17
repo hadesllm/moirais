@@ -36,7 +36,7 @@ def vmwht(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmwht"
 alias = "vmwht"
-quote = "I am the hope of the universe. -- Goku"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 vmwht = vmwht
 
 

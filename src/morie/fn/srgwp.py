@@ -38,7 +38,7 @@ def srgwp(X=None, y=None, w=None, n=50, k=3):
 
 short = "srgwp"
 alias = "srgwp"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 srgwp = srgwp
 
 

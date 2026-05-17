@@ -31,7 +31,7 @@ def gcrcf(data=None, coords=None, n=50):
 
 short = "gcrcf"
 alias = "gcrcf"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 gcrcf = gcrcf
 
 

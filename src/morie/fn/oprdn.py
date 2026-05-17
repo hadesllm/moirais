@@ -46,7 +46,7 @@ def oprdn(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "oprdn"
 alias = "oprdn"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 oprdn = oprdn
 
 

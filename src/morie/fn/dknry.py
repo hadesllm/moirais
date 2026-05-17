@@ -40,7 +40,7 @@ def dknry(x=None, y=None, z=None, values=None, n=30):
 
 short = "dknry"
 alias = "dknry"
-quote = "Breathe. -- Tanjiro"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 dknry = dknry
 
 

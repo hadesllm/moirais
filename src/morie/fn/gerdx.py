@@ -33,7 +33,7 @@ def gerdx(gdp=None, trade=None, coords=None, n=50):
 
 short = "gerdx"
 alias = "gerdx"
-quote = "Make it so. -- Picard"
+quote = "The measure of a man is what he does with power. -- Plato"
 gerdx = gerdx
 
 

@@ -43,7 +43,7 @@ def saldf(values=None, w=None, n=50):
 
 short = "saldf"
 alias = "saldf"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 saldf = saldf
 
 

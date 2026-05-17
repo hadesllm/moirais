@@ -37,7 +37,7 @@ def mttsp2(trajectory=None, n=50, dt=1.0):
 
 short = "mttsp2"
 alias = "mttsp2"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 mttsp2 = mttsp2
 
 

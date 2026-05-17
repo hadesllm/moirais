@@ -36,7 +36,7 @@ def pprth(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "pprth"
 alias = "pprth"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 pprth = pprth
 
 

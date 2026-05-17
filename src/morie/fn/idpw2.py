@@ -28,7 +28,7 @@ def idpw2(data=None, n=50):
 
 short = "idpw2"
 alias = "idpw2"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Knowledge is power. -- Francis Bacon"
 idpw2 = idpw2
 
 

@@ -29,7 +29,7 @@ def lonlat(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "lonlat"
 alias = "lonlat"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 lonlat = lonlat
 
 

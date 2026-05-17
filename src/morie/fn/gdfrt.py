@@ -36,7 +36,7 @@ def gdfrt(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdfrt"
 alias = "gdfrt"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 gdfrt = gdfrt
 
 

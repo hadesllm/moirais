@@ -37,7 +37,7 @@ def gawshd(x=None, y=None, values=None, resolution=50):
 
 short = "gawshd"
 alias = "gawshd"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 gawshd = gawshd
 
 

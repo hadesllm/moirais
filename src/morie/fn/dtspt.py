@@ -31,7 +31,7 @@ def dtspt(x=None, n=100, params=None):
 
 short = "dtspt"
 alias = "dtspt"
-quote = "I am the hope of the universe. -- Goku"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 dtspt = dtspt
 
 

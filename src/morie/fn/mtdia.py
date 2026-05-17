@@ -37,7 +37,7 @@ def mtdia(trajectory=None, n=50, dt=1.0):
 
 short = "mtdia"
 alias = "mtdia"
-quote = "Live long and prosper. -- Spock"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 mtdia = mtdia
 
 

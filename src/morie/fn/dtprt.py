@@ -31,7 +31,7 @@ def dtprt(x=None, n=100, params=None):
 
 short = "dtprt"
 alias = "dtprt"
-quote = "Breathe. -- Tanjiro"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 dtprt = dtprt
 
 

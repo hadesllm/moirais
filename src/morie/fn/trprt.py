@@ -36,7 +36,7 @@ def trprt(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trprt"
 alias = "trprt"
-quote = "Kamehameha! -- Goku"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 trprt = trprt
 
 

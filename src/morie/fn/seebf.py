@@ -39,7 +39,7 @@ def seebf(cases=None, population=None, coords=None, n=50):
 
 short = "seebf"
 alias = "seebf"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "What is now proved was once only imagined. -- William Blake"
 seebf = seebf
 
 

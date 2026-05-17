@@ -29,7 +29,7 @@ def rcpar(data=None, n=50):
 
 short = "rcpar"
 alias = "rcpar"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "I think, therefore I am. -- Rene Descartes"
 rcpar = rcpar
 
 

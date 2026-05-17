@@ -31,7 +31,7 @@ def nbcog(data=None, coords=None, n=50):
 
 short = "nbcog"
 alias = "nbcog"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 nbcog = nbcog
 
 

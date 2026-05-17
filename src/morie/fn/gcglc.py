@@ -31,7 +31,7 @@ def gcglc(data=None, coords=None, n=50):
 
 short = "gcglc"
 alias = "gcglc"
-quote = "It's over 9000! -- Vegeta"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 gcglc = gcglc
 
 

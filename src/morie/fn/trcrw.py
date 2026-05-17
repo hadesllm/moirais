@@ -36,7 +36,7 @@ def trcrw(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trcrw"
 alias = "trcrw"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 trcrw = trcrw
 
 

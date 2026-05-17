@@ -37,7 +37,7 @@ def tssdb(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssdb"
 alias = "tssdb"
-quote = "Resistance is futile. -- Borg"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 tssdb = tssdb
 
 

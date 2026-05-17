@@ -36,7 +36,7 @@ def gdmed(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdmed"
 alias = "gdmed"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 gdmed = gdmed
 
 

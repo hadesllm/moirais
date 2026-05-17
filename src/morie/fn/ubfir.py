@@ -33,7 +33,7 @@ def ubfir(population=None, area=None, coords=None, n=50):
 
 short = "ubfir"
 alias = "ubfir"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "Knowledge is power. -- Francis Bacon"
 ubfir = ubfir
 
 

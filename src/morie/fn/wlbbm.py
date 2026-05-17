@@ -30,7 +30,7 @@ def wlbbm(abundance=None, coords=None, n=50):
 
 short = "wlbbm"
 alias = "wlbbm"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 wlbbm = wlbbm
 
 

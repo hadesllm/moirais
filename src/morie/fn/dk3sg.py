@@ -40,7 +40,7 @@ def dk3sg(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3sg"
 alias = "dk3sg"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 dk3sg = dk3sg
 
 

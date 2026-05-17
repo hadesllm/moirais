@@ -40,7 +40,7 @@ def clafp(data=None, n=50, k=3, coords=None):
 
 short = "clafp"
 alias = "clafp"
-quote = "One is all, all is one. -- Izumi"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 clafp = clafp
 
 

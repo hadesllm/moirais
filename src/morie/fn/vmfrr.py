@@ -36,7 +36,7 @@ def vmfrr(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmfrr"
 alias = "vmfrr"
-quote = "You should enjoy the detours. -- Ging"
+quote = "The measure of a man is what he does with power. -- Plato"
 vmfrr = vmfrr
 
 

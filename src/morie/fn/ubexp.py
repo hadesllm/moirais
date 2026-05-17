@@ -33,7 +33,7 @@ def ubexp(population=None, area=None, coords=None, n=50):
 
 short = "ubexp"
 alias = "ubexp"
-quote = "There is always hope. -- Aragorn"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 ubexp = ubexp
 
 

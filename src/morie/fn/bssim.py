@@ -37,7 +37,7 @@ def bssim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "bssim"
 alias = "bssim"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 bssim = bssim
 
 

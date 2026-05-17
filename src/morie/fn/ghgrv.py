@@ -41,7 +41,7 @@ def ghgrv(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghgrv"
 alias = "ghgrv"
-quote = "Breathe. -- Tanjiro"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 ghgrv = ghgrv
 
 

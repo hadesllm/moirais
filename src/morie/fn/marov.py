@@ -40,7 +40,7 @@ def marov(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "marov"
 alias = "marov"
-quote = "Hold the door. -- Hodor"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 marov = marov
 
 

@@ -36,7 +36,7 @@ def ppitb(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppitb"
 alias = "ppitb"
-quote = "Bankai! -- Ichigo"
+quote = "We must know. We will know. -- David Hilbert"
 ppitb = ppitb
 
 

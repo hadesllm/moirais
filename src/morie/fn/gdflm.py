@@ -36,7 +36,7 @@ def gdflm(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdflm"
 alias = "gdflm"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 gdflm = gdflm
 
 

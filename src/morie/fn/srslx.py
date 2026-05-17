@@ -38,7 +38,7 @@ def srslx(X=None, y=None, w=None, n=50, k=3):
 
 short = "srslx"
 alias = "srslx"
-quote = "Resistance is futile. -- Borg"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 srslx = srslx
 
 

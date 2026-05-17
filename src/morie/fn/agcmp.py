@@ -38,7 +38,7 @@ def agcmp(areas=None, perimeters=None, values=None, n=30):
 
 short = "agcmp"
 alias = "agcmp"
-quote = "There is always hope. -- Aragorn"
+quote = "We must know. We will know. -- David Hilbert"
 agcmp = agcmp
 
 

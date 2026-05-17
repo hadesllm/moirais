@@ -27,7 +27,7 @@ def umdyn(data=None, n=50):
 
 short = "umdyn"
 alias = "umdyn"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 umdyn = umdyn
 
 

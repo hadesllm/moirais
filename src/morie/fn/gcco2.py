@@ -31,7 +31,7 @@ def gcco2(data=None, coords=None, n=50):
 
 short = "gcco2"
 alias = "gcco2"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 gcco2 = gcco2
 
 

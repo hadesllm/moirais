@@ -37,7 +37,7 @@ def nrstk(x=None, y=None, values=None, resolution=50):
 
 short = "nrstk"
 alias = "nrstk"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 nrstk = nrstk
 
 

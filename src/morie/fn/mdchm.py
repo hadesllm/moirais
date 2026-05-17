@@ -37,7 +37,7 @@ def mdchm(data=None, query=None, origin=None, *, n=50):
 
 short = "mdchm"
 alias = "mdchm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "What is now proved was once only imagined. -- William Blake"
 mdchm = mdchm
 
 

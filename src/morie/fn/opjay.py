@@ -46,7 +46,7 @@ def opjay(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opjay"
 alias = "opjay"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 opjay = opjay
 
 

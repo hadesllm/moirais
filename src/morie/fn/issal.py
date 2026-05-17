@@ -28,7 +28,7 @@ def issal(data=None, n=50):
 
 short = "issal"
 alias = "issal"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 issal = issal
 
 

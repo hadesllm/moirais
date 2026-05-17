@@ -40,7 +40,7 @@ def cllbl(data=None, n=50, k=3, coords=None):
 
 short = "cllbl"
 alias = "cllbl"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 cllbl = cllbl
 
 

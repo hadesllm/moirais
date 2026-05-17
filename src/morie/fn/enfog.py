@@ -31,7 +31,7 @@ def enfog(data=None, coords=None, n=50):
 
 short = "enfog"
 alias = "enfog"
-quote = "Keep moving forward. -- Eren"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 enfog = enfog
 
 

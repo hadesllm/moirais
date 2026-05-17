@@ -40,7 +40,7 @@ def cldun(data=None, n=50, k=3, coords=None):
 
 short = "cldun"
 alias = "cldun"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 cldun = cldun
 
 

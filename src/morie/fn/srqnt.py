@@ -38,7 +38,7 @@ def srqnt(X=None, y=None, w=None, n=50, k=3):
 
 short = "srqnt"
 alias = "srqnt"
-quote = "I mustn't run away. -- Shinji"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 srqnt = srqnt
 
 

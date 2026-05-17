@@ -47,7 +47,7 @@ def svpro(voter, candidates=None, uncertainty=None):
 
 short = "svpro"
 alias = "svpro"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 svpro = svpro
 
 

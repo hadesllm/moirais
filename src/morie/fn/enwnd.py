@@ -31,7 +31,7 @@ def enwnd(data=None, coords=None, n=50):
 
 short = "enwnd"
 alias = "enwnd"
-quote = "I am the one who knocks. -- Walter White"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 enwnd = enwnd
 
 

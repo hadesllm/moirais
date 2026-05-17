@@ -30,7 +30,7 @@ def wlgam(abundance=None, coords=None, n=50):
 
 short = "wlgam"
 alias = "wlgam"
-quote = "Believe it! -- Naruto"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 wlgam = wlgam
 
 

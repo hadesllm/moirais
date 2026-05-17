@@ -32,7 +32,7 @@ def rscls(pixels=None, bands=None, n=100):
 
 short = "rscls"
 alias = "rscls"
-quote = "Whatever happens, happens. -- Spike"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 rscls = rscls
 
 

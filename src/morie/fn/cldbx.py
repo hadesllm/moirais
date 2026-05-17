@@ -40,7 +40,7 @@ def cldbx(data=None, n=50, k=3, coords=None):
 
 short = "cldbx"
 alias = "cldbx"
-quote = "I am the hope of the universe. -- Goku"
+quote = "What is now proved was once only imagined. -- William Blake"
 cldbx = cldbx
 
 

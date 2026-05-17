@@ -40,7 +40,7 @@ def maacf(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maacf"
 alias = "maacf"
-quote = "Whatever happens, happens. -- Spike"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 maacf = maacf
 
 

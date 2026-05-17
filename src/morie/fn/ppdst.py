@@ -28,7 +28,7 @@ def ppdst(data=None, n=50):
 
 short = "ppdst"
 alias = "ppdst"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 ppdst = ppdst
 
 

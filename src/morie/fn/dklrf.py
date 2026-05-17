@@ -40,7 +40,7 @@ def dklrf(x=None, y=None, z=None, values=None, n=30):
 
 short = "dklrf"
 alias = "dklrf"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 dklrf = dklrf
 
 

@@ -37,7 +37,7 @@ def tssre(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssre"
 alias = "tssre"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "What is now proved was once only imagined. -- William Blake"
 tssre = tssre
 
 

@@ -31,7 +31,7 @@ def gcupw(data=None, coords=None, n=50):
 
 short = "gcupw"
 alias = "gcupw"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 gcupw = gcupw
 
 

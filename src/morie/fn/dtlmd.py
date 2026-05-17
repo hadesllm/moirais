@@ -31,7 +31,7 @@ def dtlmd(x=None, n=100, params=None):
 
 short = "dtlmd"
 alias = "dtlmd"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "Knowledge is power. -- Francis Bacon"
 dtlmd = dtlmd
 
 

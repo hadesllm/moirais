@@ -46,7 +46,7 @@ def opga(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opga"
 alias = "opga"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 opga = opga
 
 

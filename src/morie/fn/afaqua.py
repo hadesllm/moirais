@@ -33,7 +33,7 @@ def afaqua(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afaqua"
 alias = "afaqua"
-quote = "Kamehameha! -- Goku"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 afaqua = afaqua
 
 

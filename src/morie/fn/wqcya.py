@@ -30,7 +30,7 @@ def wqcya(data=None, coords=None, n=50):
 
 short = "wqcya"
 alias = "wqcya"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 wqcya = wqcya
 
 

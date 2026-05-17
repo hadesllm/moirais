@@ -33,7 +33,7 @@ def afevi(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afevi"
 alias = "afevi"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 afevi = afevi
 
 

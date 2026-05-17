@@ -40,7 +40,7 @@ def mamng(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mamng"
 alias = "mamng"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "What is now proved was once only imagined. -- William Blake"
 mamng = mamng
 
 

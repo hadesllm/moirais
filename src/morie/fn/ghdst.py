@@ -41,7 +41,7 @@ def ghdst(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghdst"
 alias = "ghdst"
-quote = "One does not simply walk. -- Boromir"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 ghdst = ghdst
 
 

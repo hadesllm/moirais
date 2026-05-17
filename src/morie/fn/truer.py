@@ -36,7 +36,7 @@ def truer(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "truer"
 alias = "truer"
-quote = "Live long and prosper. -- Spock"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 truer = truer
 
 

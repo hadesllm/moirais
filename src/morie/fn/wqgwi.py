@@ -30,7 +30,7 @@ def wqgwi(data=None, coords=None, n=50):
 
 short = "wqgwi"
 alias = "wqgwi"
-quote = "I am the one who knocks. -- Walter White"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 wqgwi = wqgwi
 
 

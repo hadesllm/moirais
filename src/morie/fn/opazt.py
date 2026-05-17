@@ -46,7 +46,7 @@ def opazt(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opazt"
 alias = "opazt"
-quote = "I am here! -- All Might"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 opazt = opazt
 
 

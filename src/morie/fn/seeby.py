@@ -39,7 +39,7 @@ def seeby(cases=None, population=None, coords=None, n=50):
 
 short = "seeby"
 alias = "seeby"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 seeby = seeby
 
 

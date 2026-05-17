@@ -39,7 +39,7 @@ def fofuel(dbh=None, height=None, coords=None, n=50):
 
 short = "fofuel"
 alias = "fofuel"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 fofuel = fofuel
 
 

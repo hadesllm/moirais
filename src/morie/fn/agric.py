@@ -38,7 +38,7 @@ def agric(areas=None, perimeters=None, values=None, n=30):
 
 short = "agric"
 alias = "agric"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "The measure of a man is what he does with power. -- Plato"
 agric = agric
 
 

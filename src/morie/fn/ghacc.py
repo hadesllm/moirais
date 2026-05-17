@@ -41,7 +41,7 @@ def ghacc(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghacc"
 alias = "ghacc"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ghacc = ghacc
 
 

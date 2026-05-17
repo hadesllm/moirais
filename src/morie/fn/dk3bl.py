@@ -40,7 +40,7 @@ def dk3bl(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3bl"
 alias = "dk3bl"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 dk3bl = dk3bl
 
 

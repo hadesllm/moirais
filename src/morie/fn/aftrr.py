@@ -33,7 +33,7 @@ def aftrr(yield_data=None, soil=None, coords=None, n=50):
 
 short = "aftrr"
 alias = "aftrr"
-quote = "I mustn't run away. -- Shinji"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 aftrr = aftrr
 
 

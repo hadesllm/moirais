@@ -36,7 +36,7 @@ def vmeff(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmeff"
 alias = "vmeff"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "I think, therefore I am. -- Rene Descartes"
 vmeff = vmeff
 
 

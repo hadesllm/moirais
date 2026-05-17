@@ -33,7 +33,7 @@ def ubvac(population=None, area=None, coords=None, n=50):
 
 short = "ubvac"
 alias = "ubvac"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Number rules the universe. -- Pythagoras"
 ubvac = ubvac
 
 

@@ -27,7 +27,7 @@ def vtseq(data=None, n=50):
 
 short = "vtseq"
 alias = "vtseq"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "What is now proved was once only imagined. -- William Blake"
 vtseq = vtseq
 
 

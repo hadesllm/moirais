@@ -39,7 +39,7 @@ def foeqt(dbh=None, height=None, coords=None, n=50):
 
 short = "foeqt"
 alias = "foeqt"
-quote = "Engage. -- Picard"
+quote = "Number rules the universe. -- Pythagoras"
 foeqt = foeqt
 
 

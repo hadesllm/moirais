@@ -38,7 +38,7 @@ def srgns(X=None, y=None, w=None, n=50, k=3):
 
 short = "srgns"
 alias = "srgns"
-quote = "Keep moving forward. -- Eren"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 srgns = srgns
 
 

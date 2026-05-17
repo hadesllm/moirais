@@ -28,7 +28,7 @@ def ispri(data=None, n=50):
 
 short = "ispri"
 alias = "ispri"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "There is no royal road to geometry. -- Euclid"
 ispri = ispri
 
 

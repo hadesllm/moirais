@@ -36,7 +36,7 @@ def pplgc(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "pplgc"
 alias = "pplgc"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 pplgc = pplgc
 
 

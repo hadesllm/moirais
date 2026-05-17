@@ -31,7 +31,7 @@ def gcsnw(data=None, coords=None, n=50):
 
 short = "gcsnw"
 alias = "gcsnw"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 gcsnw = gcsnw
 
 

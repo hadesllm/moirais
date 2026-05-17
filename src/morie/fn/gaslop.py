@@ -37,7 +37,7 @@ def gaslop(x=None, y=None, values=None, resolution=50):
 
 short = "gaslop"
 alias = "gaslop"
-quote = "You should enjoy the detours. -- Ging"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 gaslop = gaslop
 
 

@@ -43,7 +43,7 @@ def salge(values=None, w=None, n=50):
 
 short = "salge"
 alias = "salge"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 salge = salge
 
 

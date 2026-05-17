@@ -37,7 +37,7 @@ def markg(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "markg"
 alias = "markg"
-quote = "It's over 9000! -- Vegeta"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 markg = markg
 
 

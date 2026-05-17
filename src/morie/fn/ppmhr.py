@@ -36,7 +36,7 @@ def ppmhr(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppmhr"
 alias = "ppmhr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Knowledge is power. -- Francis Bacon"
 ppmhr = ppmhr
 
 

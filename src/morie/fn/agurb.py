@@ -38,7 +38,7 @@ def agurb(areas=None, perimeters=None, values=None, n=30):
 
 short = "agurb"
 alias = "agurb"
-quote = "Live long and prosper. -- Spock"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 agurb = agurb
 
 

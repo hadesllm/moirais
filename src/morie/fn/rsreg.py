@@ -32,7 +32,7 @@ def rsreg(pixels=None, bands=None, n=100):
 
 short = "rsreg"
 alias = "rsreg"
-quote = "I am the one who knocks. -- Walter White"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 rsreg = rsreg
 
 

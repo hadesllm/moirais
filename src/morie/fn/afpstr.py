@@ -33,7 +33,7 @@ def afpstr(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afpstr"
 alias = "afpstr"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "The measure of a man is what he does with power. -- Plato"
 afpstr = afpstr
 
 

@@ -29,7 +29,7 @@ def grtcrc(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "grtcrc"
 alias = "grtcrc"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Number rules the universe. -- Pythagoras"
 grtcrc = grtcrc
 
 

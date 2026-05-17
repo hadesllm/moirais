@@ -41,7 +41,7 @@ def ghpnl(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghpnl"
 alias = "ghpnl"
-quote = "Kamehameha! -- Goku"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 ghpnl = ghpnl
 
 

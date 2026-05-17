@@ -36,7 +36,7 @@ def vmmap(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmmap"
 alias = "vmmap"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 vmmap = vmmap
 
 

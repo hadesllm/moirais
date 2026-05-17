@@ -39,7 +39,7 @@ def seclm(cases=None, population=None, coords=None, n=50):
 
 short = "seclm"
 alias = "seclm"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "The measure of a man is what he does with power. -- Plato"
 seclm = seclm
 
 

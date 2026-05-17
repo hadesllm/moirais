@@ -30,7 +30,7 @@ def wqse(data=None, coords=None, n=50):
 
 short = "wqse"
 alias = "wqse"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "What is now proved was once only imagined. -- William Blake"
 wqse = wqse
 
 

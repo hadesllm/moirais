@@ -37,7 +37,7 @@ def pttsp(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "pttsp"
 alias = "pttsp"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 pttsp = pttsp
 
 

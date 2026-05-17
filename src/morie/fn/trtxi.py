@@ -36,7 +36,7 @@ def trtxi(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trtxi"
 alias = "trtxi"
-quote = "Keep moving forward. -- Eren"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 trtxi = trtxi
 
 

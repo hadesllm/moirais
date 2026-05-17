@@ -27,7 +27,7 @@ def uminc(data=None, n=50):
 
 short = "uminc"
 alias = "uminc"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 uminc = uminc
 
 

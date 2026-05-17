@@ -32,7 +32,7 @@ def rsmnf(pixels=None, bands=None, n=100):
 
 short = "rsmnf"
 alias = "rsmnf"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 rsmnf = rsmnf
 
 

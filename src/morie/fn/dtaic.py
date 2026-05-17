@@ -28,7 +28,7 @@ def dtaic(data=None, n=50):
 
 short = "dtaic"
 alias = "dtaic"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 dtaic = dtaic
 
 

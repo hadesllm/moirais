@@ -36,7 +36,7 @@ def trasg(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trasg"
 alias = "trasg"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 trasg = trasg
 
 

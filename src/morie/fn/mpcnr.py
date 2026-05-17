@@ -28,7 +28,7 @@ def mpcnr(data=None, n=50):
 
 short = "mpcnr"
 alias = "mpcnr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 mpcnr = mpcnr
 
 

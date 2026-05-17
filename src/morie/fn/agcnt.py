@@ -38,7 +38,7 @@ def agcnt(areas=None, perimeters=None, values=None, n=30):
 
 short = "agcnt"
 alias = "agcnt"
-quote = "Winter is coming. -- Stark motto"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 agcnt = agcnt
 
 

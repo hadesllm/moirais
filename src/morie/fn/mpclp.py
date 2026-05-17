@@ -28,7 +28,7 @@ def mpclp(data=None, n=50):
 
 short = "mpclp"
 alias = "mpclp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 mpclp = mpclp
 
 

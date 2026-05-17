@@ -36,7 +36,7 @@ def trvrp(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trvrp"
 alias = "trvrp"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "We must know. We will know. -- David Hilbert"
 trvrp = trvrp
 
 

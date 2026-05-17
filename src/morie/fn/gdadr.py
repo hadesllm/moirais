@@ -36,7 +36,7 @@ def gdadr(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdadr"
 alias = "gdadr"
-quote = "Winter is coming. -- Stark motto"
+quote = "The measure of a man is what he does with power. -- Plato"
 gdadr = gdadr
 
 

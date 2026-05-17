@@ -27,7 +27,7 @@ def svcos(data=None, n=50):
 
 short = "svcos"
 alias = "svcos"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 svcos = svcos
 
 

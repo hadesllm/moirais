@@ -33,7 +33,7 @@ def gebal(gdp=None, trade=None, coords=None, n=50):
 
 short = "gebal"
 alias = "gebal"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 gebal = gebal
 
 

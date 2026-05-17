@@ -36,7 +36,7 @@ def trsoe(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trsoe"
 alias = "trsoe"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 trsoe = trsoe
 
 

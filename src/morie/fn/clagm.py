@@ -40,7 +40,7 @@ def clagm(data=None, n=50, k=3, coords=None):
 
 short = "clagm"
 alias = "clagm"
-quote = "Engage. -- Picard"
+quote = "We must know. We will know. -- David Hilbert"
 clagm = clagm
 
 

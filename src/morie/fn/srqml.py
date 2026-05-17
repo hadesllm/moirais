@@ -38,7 +38,7 @@ def srqml(X=None, y=None, w=None, n=50, k=3):
 
 short = "srqml"
 alias = "srqml"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 srqml = srqml
 
 

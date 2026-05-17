@@ -31,7 +31,7 @@ def enplm(data=None, coords=None, n=50):
 
 short = "enplm"
 alias = "enplm"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 enplm = enplm
 
 

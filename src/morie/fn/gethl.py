@@ -33,7 +33,7 @@ def gethl(gdp=None, trade=None, coords=None, n=50):
 
 short = "gethl"
 alias = "gethl"
-quote = "I am the one who knocks. -- Walter White"
+quote = "I think, therefore I am. -- Rene Descartes"
 gethl = gethl
 
 

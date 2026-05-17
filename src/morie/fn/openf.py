@@ -33,7 +33,7 @@ def openf(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "openf"
 alias = "openf"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "The measure of a man is what he does with power. -- Plato"
 openf = openf
 
 

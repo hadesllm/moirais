@@ -30,7 +30,7 @@ def wqtss(data=None, coords=None, n=50):
 
 short = "wqtss"
 alias = "wqtss"
-quote = "Believe it! -- Naruto"
+quote = "What is now proved was once only imagined. -- William Blake"
 wqtss = wqtss
 
 

@@ -46,7 +46,7 @@ def opbat(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opbat"
 alias = "opbat"
-quote = "It's over 9000! -- Vegeta"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 opbat = opbat
 
 

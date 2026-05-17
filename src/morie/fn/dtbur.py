@@ -31,7 +31,7 @@ def dtbur(x=None, n=100, params=None):
 
 short = "dtbur"
 alias = "dtbur"
-quote = "Science! -- Jesse Pinkman"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 dtbur = dtbur
 
 

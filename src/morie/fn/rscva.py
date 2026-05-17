@@ -32,7 +32,7 @@ def rscva(pixels=None, bands=None, n=100):
 
 short = "rscva"
 alias = "rscva"
-quote = "My precious. -- Gollum"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 rscva = rscva
 
 

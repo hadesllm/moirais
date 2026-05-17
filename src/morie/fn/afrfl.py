@@ -33,7 +33,7 @@ def afrfl(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afrfl"
 alias = "afrfl"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 afrfl = afrfl
 
 

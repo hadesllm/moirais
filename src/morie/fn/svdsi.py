@@ -36,7 +36,7 @@ def svdsi(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "svdsi"
 alias = "svdsi"
-quote = "Bankai! -- Ichigo"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 svdsi = svdsi
 
 

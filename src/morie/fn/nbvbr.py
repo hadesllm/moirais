@@ -31,7 +31,7 @@ def nbvbr(data=None, coords=None, n=50):
 
 short = "nbvbr"
 alias = "nbvbr"
-quote = "Yare yare daze. -- Jotaro"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 nbvbr = nbvbr
 
 

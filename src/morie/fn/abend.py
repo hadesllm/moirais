@@ -31,7 +31,7 @@ def abend(data=None, coords=None, n=50):
 
 short = "abend"
 alias = "abend"
-quote = "Arise. -- Shadow Monarch"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 abend = abend
 
 

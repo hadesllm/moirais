@@ -40,7 +40,7 @@ def clshr(data=None, n=50, k=3, coords=None):
 
 short = "clshr"
 alias = "clshr"
-quote = "It's over 9000! -- Vegeta"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 clshr = clshr
 
 

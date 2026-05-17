@@ -40,7 +40,7 @@ def clwrd(data=None, n=50, k=3, coords=None):
 
 short = "clwrd"
 alias = "clwrd"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 clwrd = clwrd
 
 

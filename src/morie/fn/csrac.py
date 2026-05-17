@@ -34,7 +34,7 @@ def csrac(incidents=None, population=None, coords=None, n=50):
 
 short = "csrac"
 alias = "csrac"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 csrac = csrac
 
 

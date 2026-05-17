@@ -28,7 +28,7 @@ def psunf(data=None, n=50):
 
 short = "psunf"
 alias = "psunf"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 psunf = psunf
 
 

@@ -40,7 +40,7 @@ def clcph(data=None, n=50, k=3, coords=None):
 
 short = "clcph"
 alias = "clcph"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 clcph = clcph
 
 

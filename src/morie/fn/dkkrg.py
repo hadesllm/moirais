@@ -40,7 +40,7 @@ def dkkrg(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkkrg"
 alias = "dkkrg"
-quote = "Winter is coming. -- Stark motto"
+quote = "What is now proved was once only imagined. -- William Blake"
 dkkrg = dkkrg
 
 

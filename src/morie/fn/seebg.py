@@ -39,7 +39,7 @@ def seebg(cases=None, population=None, coords=None, n=50):
 
 short = "seebg"
 alias = "seebg"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 seebg = seebg
 
 

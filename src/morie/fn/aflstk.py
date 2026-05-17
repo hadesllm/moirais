@@ -33,7 +33,7 @@ def aflstk(yield_data=None, soil=None, coords=None, n=50):
 
 short = "aflstk"
 alias = "aflstk"
-quote = "My precious. -- Gollum"
+quote = "I think, therefore I am. -- Rene Descartes"
 aflstk = aflstk
 
 

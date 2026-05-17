@@ -38,7 +38,7 @@ def srsac(X=None, y=None, w=None, n=50, k=3):
 
 short = "srsac"
 alias = "srsac"
-quote = "I am the hope of the universe. -- Goku"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 srsac = srsac
 
 

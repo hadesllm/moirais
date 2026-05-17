@@ -33,7 +33,7 @@ def erosn(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "erosn"
 alias = "erosn"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 erosn = erosn
 
 

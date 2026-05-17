@@ -32,7 +32,7 @@ def varfp(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "varfp"
 alias = "varfp"
-quote = "Breathe. -- Tanjiro"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 varfp = varfp
 
 

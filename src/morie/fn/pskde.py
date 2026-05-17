@@ -28,7 +28,7 @@ def pskde(data=None, n=50):
 
 short = "pskde"
 alias = "pskde"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 pskde = pskde
 
 

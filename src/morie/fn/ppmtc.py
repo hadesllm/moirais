@@ -36,7 +36,7 @@ def ppmtc(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppmtc"
 alias = "ppmtc"
-quote = "Keep moving forward. -- Eren"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 ppmtc = ppmtc
 
 

@@ -37,7 +37,7 @@ def mdrcd(data=None, query=None, origin=None, *, n=50):
 
 short = "mdrcd"
 alias = "mdrcd"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 mdrcd = mdrcd
 
 

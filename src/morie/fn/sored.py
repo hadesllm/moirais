@@ -32,7 +32,7 @@ def sored(data=None, depth=None, coords=None, n=50):
 
 short = "sored"
 alias = "sored"
-quote = "See you space cowboy. -- Spike"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 sored = sored
 
 

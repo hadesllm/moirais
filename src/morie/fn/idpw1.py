@@ -28,7 +28,7 @@ def idpw1(data=None, n=50):
 
 short = "idpw1"
 alias = "idpw1"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 idpw1 = idpw1
 
 

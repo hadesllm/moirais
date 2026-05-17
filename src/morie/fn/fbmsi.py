@@ -37,7 +37,7 @@ def fbmsi(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "fbmsi"
 alias = "fbmsi"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 fbmsi = fbmsi
 
 

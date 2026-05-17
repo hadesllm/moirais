@@ -33,7 +33,7 @@ def lkflt(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "lkflt"
 alias = "lkflt"
-quote = "One is all, all is one. -- Izumi"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 lkflt = lkflt
 
 

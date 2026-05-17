@@ -33,7 +33,7 @@ def geagr(gdp=None, trade=None, coords=None, n=50):
 
 short = "geagr"
 alias = "geagr"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Knowledge is power. -- Francis Bacon"
 geagr = geagr
 
 

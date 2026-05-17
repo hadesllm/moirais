@@ -31,7 +31,7 @@ def dtmvs(x=None, n=100, params=None):
 
 short = "dtmvs"
 alias = "dtmvs"
-quote = "Engage. -- Picard"
+quote = "Knowledge is power. -- Francis Bacon"
 dtmvs = dtmvs
 
 

@@ -37,7 +37,7 @@ def mtcrw(trajectory=None, n=50, dt=1.0):
 
 short = "mtcrw"
 alias = "mtcrw"
-quote = "Keep moving forward. -- Eren"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 mtcrw = mtcrw
 
 

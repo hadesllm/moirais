@@ -33,7 +33,7 @@ def hyevp(flow=None, precip=None, coords=None, n=50):
 
 short = "hyevp"
 alias = "hyevp"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 hyevp = hyevp
 
 

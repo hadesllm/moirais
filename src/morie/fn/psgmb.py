@@ -28,7 +28,7 @@ def psgmb(data=None, n=50):
 
 short = "psgmb"
 alias = "psgmb"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 psgmb = psgmb
 
 

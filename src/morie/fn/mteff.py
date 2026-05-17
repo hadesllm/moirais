@@ -37,7 +37,7 @@ def mteff(trajectory=None, n=50, dt=1.0):
 
 short = "mteff"
 alias = "mteff"
-quote = "Resistance is futile. -- Borg"
+quote = "There is no royal road to geometry. -- Euclid"
 mteff = mteff
 
 

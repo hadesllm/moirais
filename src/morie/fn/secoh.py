@@ -39,7 +39,7 @@ def secoh(cases=None, population=None, coords=None, n=50):
 
 short = "secoh"
 alias = "secoh"
-quote = "There is always hope. -- Aragorn"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 secoh = secoh
 
 

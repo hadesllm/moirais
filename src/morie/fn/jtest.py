@@ -37,7 +37,7 @@ def jtest(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "jtest"
 alias = "jtest"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "We must know. We will know. -- David Hilbert"
 jtest = jtest
 
 

@@ -37,7 +37,7 @@ def mtred(trajectory=None, n=50, dt=1.0):
 
 short = "mtred"
 alias = "mtred"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 mtred = mtred
 
 

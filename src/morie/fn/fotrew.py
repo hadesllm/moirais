@@ -39,7 +39,7 @@ def fotrew(dbh=None, height=None, coords=None, n=50):
 
 short = "fotrew"
 alias = "fotrew"
-quote = "Kamehameha! -- Goku"
+quote = "Knowledge is power. -- Francis Bacon"
 fotrew = fotrew
 
 

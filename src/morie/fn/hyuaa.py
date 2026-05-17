@@ -33,7 +33,7 @@ def hyuaa(flow=None, precip=None, coords=None, n=50):
 
 short = "hyuaa"
 alias = "hyuaa"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Number rules the universe. -- Pythagoras"
 hyuaa = hyuaa
 
 

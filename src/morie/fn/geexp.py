@@ -33,7 +33,7 @@ def geexp(gdp=None, trade=None, coords=None, n=50):
 
 short = "geexp"
 alias = "geexp"
-quote = "This is Requiem. -- Giorno"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 geexp = geexp
 
 

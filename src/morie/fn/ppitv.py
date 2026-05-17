@@ -36,7 +36,7 @@ def ppitv(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppitv"
 alias = "ppitv"
-quote = "See you space cowboy. -- Spike"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 ppitv = ppitv
 
 

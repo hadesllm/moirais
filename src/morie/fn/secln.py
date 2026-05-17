@@ -39,7 +39,7 @@ def secln(cases=None, population=None, coords=None, n=50):
 
 short = "secln"
 alias = "secln"
-quote = "Live long and prosper. -- Spock"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 secln = secln
 
 

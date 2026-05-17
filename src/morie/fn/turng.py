@@ -36,7 +36,7 @@ def turng(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "turng"
 alias = "turng"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 turng = turng
 
 

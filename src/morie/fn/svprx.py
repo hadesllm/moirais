@@ -27,7 +27,7 @@ def svprx(data=None, n=50):
 
 short = "svprx"
 alias = "svprx"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 svprx = svprx
 
 

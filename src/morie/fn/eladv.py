@@ -28,7 +28,7 @@ def eladv(data=None, n=50):
 
 short = "eladv"
 alias = "eladv"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 eladv = eladv
 
 

@@ -32,7 +32,7 @@ def rscir(pixels=None, bands=None, n=100):
 
 short = "rscir"
 alias = "rscir"
-quote = "Winter is coming. -- Stark motto"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 rscir = rscir
 
 

@@ -40,7 +40,7 @@ def clsta(data=None, n=50, k=3, coords=None):
 
 short = "clsta"
 alias = "clsta"
-quote = "Live long and prosper. -- Spock"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 clsta = clsta
 
 

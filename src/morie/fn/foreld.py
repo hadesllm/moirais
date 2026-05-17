@@ -39,7 +39,7 @@ def foreld(dbh=None, height=None, coords=None, n=50):
 
 short = "foreld"
 alias = "foreld"
-quote = "Winter is coming. -- Stark motto"
+quote = "Knowledge is power. -- Francis Bacon"
 foreld = foreld
 
 

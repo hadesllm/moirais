@@ -36,7 +36,7 @@ def trpkn(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trpkn"
 alias = "trpkn"
-quote = "My precious. -- Gollum"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 trpkn = trpkn
 
 

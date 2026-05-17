@@ -29,7 +29,7 @@ def curvgr(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "curvgr"
 alias = "curvgr"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 curvgr = curvgr
 
 

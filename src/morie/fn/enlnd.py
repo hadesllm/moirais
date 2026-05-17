@@ -31,7 +31,7 @@ def enlnd(data=None, coords=None, n=50):
 
 short = "enlnd"
 alias = "enlnd"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 enlnd = enlnd
 
 

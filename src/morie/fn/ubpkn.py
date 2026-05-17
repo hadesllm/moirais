@@ -33,7 +33,7 @@ def ubpkn(population=None, area=None, coords=None, n=50):
 
 short = "ubpkn"
 alias = "ubpkn"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 ubpkn = ubpkn
 
 

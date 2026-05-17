@@ -33,7 +33,7 @@ def gehpr(gdp=None, trade=None, coords=None, n=50):
 
 short = "gehpr"
 alias = "gehpr"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 gehpr = gehpr
 
 

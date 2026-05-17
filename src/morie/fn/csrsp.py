@@ -34,7 +34,7 @@ def csrsp(incidents=None, population=None, coords=None, n=50):
 
 short = "csrsp"
 alias = "csrsp"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 csrsp = csrsp
 
 

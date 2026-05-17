@@ -28,7 +28,7 @@ def ppchg(data=None, n=50):
 
 short = "ppchg"
 alias = "ppchg"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 ppchg = ppchg
 
 

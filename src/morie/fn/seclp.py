@@ -39,7 +39,7 @@ def seclp(cases=None, population=None, coords=None, n=50):
 
 short = "seclp"
 alias = "seclp"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 seclp = seclp
 
 

@@ -31,7 +31,7 @@ def nbl10(data=None, coords=None, n=50):
 
 short = "nbl10"
 alias = "nbl10"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 nbl10 = nbl10
 
 

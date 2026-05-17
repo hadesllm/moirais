@@ -37,7 +37,7 @@ def difsp(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "difsp"
 alias = "difsp"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 difsp = difsp
 
 

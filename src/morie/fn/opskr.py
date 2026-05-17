@@ -46,7 +46,7 @@ def opskr(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opskr"
 alias = "opskr"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 opskr = opskr
 
 

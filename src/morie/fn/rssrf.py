@@ -32,7 +32,7 @@ def rssrf(pixels=None, bands=None, n=100):
 
 short = "rssrf"
 alias = "rssrf"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 rssrf = rssrf
 
 

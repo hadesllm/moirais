@@ -31,7 +31,7 @@ def nbair(data=None, coords=None, n=50):
 
 short = "nbair"
 alias = "nbair"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 nbair = nbair
 
 

@@ -40,7 +40,7 @@ def machla(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "machla"
 alias = "machla"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "The measure of a man is what he does with power. -- Plato"
 machla = machla
 
 

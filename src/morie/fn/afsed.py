@@ -33,7 +33,7 @@ def afsed(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afsed"
 alias = "afsed"
-quote = "Whatever happens, happens. -- Spike"
+quote = "There is no royal road to geometry. -- Euclid"
 afsed = afsed
 
 

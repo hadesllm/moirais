@@ -36,7 +36,7 @@ def gdgin(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdgin"
 alias = "gdgin"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "The measure of a man is what he does with power. -- Plato"
 gdgin = gdgin
 
 

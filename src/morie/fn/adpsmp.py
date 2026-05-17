@@ -29,7 +29,7 @@ def adpsmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "adpsmp"
 alias = "adpsmp"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 adpsmp = adpsmp
 
 

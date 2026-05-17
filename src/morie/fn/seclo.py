@@ -39,7 +39,7 @@ def seclo(cases=None, population=None, coords=None, n=50):
 
 short = "seclo"
 alias = "seclo"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "The measure of a man is what he does with power. -- Plato"
 seclo = seclo
 
 

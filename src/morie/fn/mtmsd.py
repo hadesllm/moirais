@@ -37,7 +37,7 @@ def mtmsd(trajectory=None, n=50, dt=1.0):
 
 short = "mtmsd"
 alias = "mtmsd"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "I think, therefore I am. -- Rene Descartes"
 mtmsd = mtmsd
 
 

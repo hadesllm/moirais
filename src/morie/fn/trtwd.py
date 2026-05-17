@@ -36,7 +36,7 @@ def trtwd(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trtwd"
 alias = "trtwd"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 trtwd = trtwd
 
 

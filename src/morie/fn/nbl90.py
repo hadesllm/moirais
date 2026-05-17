@@ -31,7 +31,7 @@ def nbl90(data=None, coords=None, n=50):
 
 short = "nbl90"
 alias = "nbl90"
-quote = "Believe it! -- Naruto"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 nbl90 = nbl90
 
 

@@ -29,7 +29,7 @@ def clssmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "clssmp"
 alias = "clssmp"
-quote = "Science! -- Jesse Pinkman"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 clssmp = clssmp
 
 

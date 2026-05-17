@@ -32,7 +32,7 @@ def rsnds(pixels=None, bands=None, n=100):
 
 short = "rsnds"
 alias = "rsnds"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "There is no royal road to geometry. -- Euclid"
 rsnds = rsnds
 
 

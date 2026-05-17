@@ -36,7 +36,7 @@ def ppenv(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppenv"
 alias = "ppenv"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ppenv = ppenv
 
 

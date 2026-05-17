@@ -32,7 +32,7 @@ def soril(data=None, depth=None, coords=None, n=50):
 
 short = "soril"
 alias = "soril"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 soril = soril
 
 

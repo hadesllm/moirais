@@ -28,7 +28,7 @@ def ppcnv(data=None, n=50):
 
 short = "ppcnv"
 alias = "ppcnv"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 ppcnv = ppcnv
 
 

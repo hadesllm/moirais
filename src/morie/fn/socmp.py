@@ -32,7 +32,7 @@ def socmp(data=None, depth=None, coords=None, n=50):
 
 short = "socmp"
 alias = "socmp"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 socmp = socmp
 
 

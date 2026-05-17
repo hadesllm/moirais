@@ -40,7 +40,7 @@ def maalk(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maalk"
 alias = "maalk"
-quote = "Arise. -- Shadow Monarch"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 maalk = maalk
 
 

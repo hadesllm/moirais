@@ -48,7 +48,7 @@ def wvasym(weights_a, weights_b=None, quotas=None):
 
 short = "wvasym"
 alias = "wvasym"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 wvasym = wvasym
 
 

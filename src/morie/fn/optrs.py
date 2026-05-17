@@ -46,7 +46,7 @@ def optrs(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "optrs"
 alias = "optrs"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "There is no royal road to geometry. -- Euclid"
 optrs = optrs
 
 

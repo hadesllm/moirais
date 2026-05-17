@@ -31,7 +31,7 @@ def enuvb(data=None, coords=None, n=50):
 
 short = "enuvb"
 alias = "enuvb"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 enuvb = enuvb
 
 

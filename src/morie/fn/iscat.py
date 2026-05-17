@@ -28,7 +28,7 @@ def iscat(data=None, n=50):
 
 short = "iscat"
 alias = "iscat"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 iscat = iscat
 
 

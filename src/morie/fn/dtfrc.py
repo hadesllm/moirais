@@ -31,7 +31,7 @@ def dtfrc(x=None, n=100, params=None):
 
 short = "dtfrc"
 alias = "dtfrc"
-quote = "I am here! -- All Might"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 dtfrc = dtfrc
 
 

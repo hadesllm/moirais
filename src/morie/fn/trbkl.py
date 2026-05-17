@@ -36,7 +36,7 @@ def trbkl(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trbkl"
 alias = "trbkl"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 trbkl = trbkl
 
 

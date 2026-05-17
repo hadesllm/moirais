@@ -33,7 +33,7 @@ def germt(gdp=None, trade=None, coords=None, n=50):
 
 short = "germt"
 alias = "germt"
-quote = "Kamehameha! -- Goku"
+quote = "The measure of a man is what he does with power. -- Plato"
 germt = germt
 
 

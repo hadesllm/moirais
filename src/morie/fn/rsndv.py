@@ -32,7 +32,7 @@ def rsndv(pixels=None, bands=None, n=100):
 
 short = "rsndv"
 alias = "rsndv"
-quote = "Believe it! -- Naruto"
+quote = "Knowledge is power. -- Francis Bacon"
 rsndv = rsndv
 
 

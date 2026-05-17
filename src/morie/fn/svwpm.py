@@ -47,7 +47,7 @@ def svwpm(voter, candidates=None, weights=None):
 
 short = "svwpm"
 alias = "svwpm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 svwpm = svwpm
 
 

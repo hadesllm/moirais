@@ -36,7 +36,7 @@ def trtsp(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trtsp"
 alias = "trtsp"
-quote = "Breathe. -- Tanjiro"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 trtsp = trtsp
 
 

@@ -37,7 +37,7 @@ def mdrad(data=None, query=None, origin=None, *, n=50):
 
 short = "mdrad"
 alias = "mdrad"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The measure of a man is what he does with power. -- Plato"
 mdrad = mdrad
 
 

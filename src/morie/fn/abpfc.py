@@ -31,7 +31,7 @@ def abpfc(data=None, coords=None, n=50):
 
 short = "abpfc"
 alias = "abpfc"
-quote = "Bankai! -- Ichigo"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 abpfc = abpfc
 
 

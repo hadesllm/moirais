@@ -36,7 +36,7 @@ def ppgey(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppgey"
 alias = "ppgey"
-quote = "Believe it! -- Naruto"
+quote = "There is no royal road to geometry. -- Euclid"
 ppgey = ppgey
 
 

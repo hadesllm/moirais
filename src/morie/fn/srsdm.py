@@ -38,7 +38,7 @@ def srsdm(X=None, y=None, w=None, n=50, k=3):
 
 short = "srsdm"
 alias = "srsdm"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "Number rules the universe. -- Pythagoras"
 srsdm = srsdm
 
 

@@ -37,7 +37,7 @@ def gatri(x=None, y=None, values=None, resolution=50):
 
 short = "gatri"
 alias = "gatri"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 gatri = gatri
 
 

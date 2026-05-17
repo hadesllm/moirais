@@ -34,7 +34,7 @@ def csast(incidents=None, population=None, coords=None, n=50):
 
 short = "csast"
 alias = "csast"
-quote = "Whatever happens, happens. -- Spike"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 csast = csast
 
 

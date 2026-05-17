@@ -31,7 +31,7 @@ def gcstd(data=None, coords=None, n=50):
 
 short = "gcstd"
 alias = "gcstd"
-quote = "It's over 9000! -- Vegeta"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 gcstd = gcstd
 
 

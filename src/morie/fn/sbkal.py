@@ -28,7 +28,7 @@ def sbkal(data=None, n=50):
 
 short = "sbkal"
 alias = "sbkal"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 sbkal = sbkal
 
 

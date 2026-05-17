@@ -37,7 +37,7 @@ def tssvd(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssvd"
 alias = "tssvd"
-quote = "Whatever happens, happens. -- Spike"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 tssvd = tssvd
 
 

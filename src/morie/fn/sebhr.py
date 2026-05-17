@@ -39,7 +39,7 @@ def sebhr(cases=None, population=None, coords=None, n=50):
 
 short = "sebhr"
 alias = "sebhr"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 sebhr = sebhr
 
 

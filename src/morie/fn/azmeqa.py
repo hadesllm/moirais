@@ -29,7 +29,7 @@ def azmeqa(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "azmeqa"
 alias = "azmeqa"
-quote = "Arise. -- Shadow Monarch"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 azmeqa = azmeqa
 
 

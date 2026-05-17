@@ -31,7 +31,7 @@ def gccor(data=None, coords=None, n=50):
 
 short = "gccor"
 alias = "gccor"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Knowledge is power. -- Francis Bacon"
 gccor = gccor
 
 

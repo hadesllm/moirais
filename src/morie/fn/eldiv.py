@@ -28,7 +28,7 @@ def eldiv(data=None, n=50):
 
 short = "eldiv"
 alias = "eldiv"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 eldiv = eldiv
 
 

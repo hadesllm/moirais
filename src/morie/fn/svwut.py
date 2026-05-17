@@ -44,7 +44,7 @@ def svwut(position, ideal=None, weights=None):
 
 short = "svwut"
 alias = "svwut"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 svwut = svwut
 
 

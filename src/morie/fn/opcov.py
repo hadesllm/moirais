@@ -46,7 +46,7 @@ def opcov(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opcov"
 alias = "opcov"
-quote = "Winter is coming. -- Stark motto"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 opcov = opcov
 
 

@@ -39,7 +39,7 @@ def seclf(cases=None, population=None, coords=None, n=50):
 
 short = "seclf"
 alias = "seclf"
-quote = "Winter is coming. -- Stark motto"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 seclf = seclf
 
 

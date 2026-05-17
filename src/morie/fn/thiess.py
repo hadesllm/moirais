@@ -36,7 +36,7 @@ def thiess(x=None, y=None, values=None, resolution=50):
 
 short = "thiess"
 alias = "thiess"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 thiess = thiess
 
 

@@ -32,7 +32,7 @@ def rsclm(pixels=None, bands=None, n=100):
 
 short = "rsclm"
 alias = "rsclm"
-quote = "One does not simply walk. -- Boromir"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 rsclm = rsclm
 
 

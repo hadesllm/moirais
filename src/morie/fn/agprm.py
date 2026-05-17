@@ -38,7 +38,7 @@ def agprm(areas=None, perimeters=None, values=None, n=30):
 
 short = "agprm"
 alias = "agprm"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 agprm = agprm
 
 

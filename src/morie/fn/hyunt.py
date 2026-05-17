@@ -33,7 +33,7 @@ def hyunt(flow=None, precip=None, coords=None, n=50):
 
 short = "hyunt"
 alias = "hyunt"
-quote = "Valar Morghulis. -- Braavos"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 hyunt = hyunt
 
 

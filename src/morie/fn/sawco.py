@@ -43,7 +43,7 @@ def sawco(values=None, w=None, n=50):
 
 short = "sawco"
 alias = "sawco"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 sawco = sawco
 
 

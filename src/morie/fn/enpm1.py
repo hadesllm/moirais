@@ -31,7 +31,7 @@ def enpm1(data=None, coords=None, n=50):
 
 short = "enpm1"
 alias = "enpm1"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 enpm1 = enpm1
 
 

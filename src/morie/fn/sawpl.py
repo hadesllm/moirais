@@ -43,7 +43,7 @@ def sawpl(values=None, w=None, n=50):
 
 short = "sawpl"
 alias = "sawpl"
-quote = "You should enjoy the detours. -- Ging"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 sawpl = sawpl
 
 

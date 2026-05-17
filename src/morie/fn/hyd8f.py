@@ -33,7 +33,7 @@ def hyd8f(flow=None, precip=None, coords=None, n=50):
 
 short = "hyd8f"
 alias = "hyd8f"
-quote = "See you space cowboy. -- Spike"
+quote = "I think, therefore I am. -- Rene Descartes"
 hyd8f = hyd8f
 
 

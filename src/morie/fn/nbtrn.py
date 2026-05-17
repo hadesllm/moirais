@@ -31,7 +31,7 @@ def nbtrn(data=None, coords=None, n=50):
 
 short = "nbtrn"
 alias = "nbtrn"
-quote = "Arise. -- Shadow Monarch"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 nbtrn = nbtrn
 
 

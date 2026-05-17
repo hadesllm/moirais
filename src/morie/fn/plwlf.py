@@ -28,7 +28,7 @@ def plwlf(data=None, n=50):
 
 short = "plwlf"
 alias = "plwlf"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 plwlf = plwlf
 
 

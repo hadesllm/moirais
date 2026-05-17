@@ -40,7 +40,7 @@ def clbrc(data=None, n=50, k=3, coords=None):
 
 short = "clbrc"
 alias = "clbrc"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 clbrc = clbrc
 
 

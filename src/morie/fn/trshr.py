@@ -36,7 +36,7 @@ def trshr(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trshr"
 alias = "trshr"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "We must know. We will know. -- David Hilbert"
 trshr = trshr
 
 

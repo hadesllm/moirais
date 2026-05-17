@@ -32,7 +32,7 @@ def rsatm(pixels=None, bands=None, n=100):
 
 short = "rsatm"
 alias = "rsatm"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 rsatm = rsatm
 
 

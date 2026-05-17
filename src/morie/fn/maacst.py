@@ -40,7 +40,7 @@ def maacst(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maacst"
 alias = "maacst"
-quote = "No half measures. -- Mike"
+quote = "There is no royal road to geometry. -- Euclid"
 maacst = maacst
 
 

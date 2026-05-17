@@ -32,7 +32,7 @@ def rsmsr(pixels=None, bands=None, n=100):
 
 short = "rsmsr"
 alias = "rsmsr"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 rsmsr = rsmsr
 
 

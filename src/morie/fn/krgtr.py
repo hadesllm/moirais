@@ -33,7 +33,7 @@ def krgtr(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "krgtr"
 alias = "krgtr"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 krgtr = krgtr
 
 

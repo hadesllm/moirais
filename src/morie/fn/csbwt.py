@@ -34,7 +34,7 @@ def csbwt(incidents=None, population=None, coords=None, n=50):
 
 short = "csbwt"
 alias = "csbwt"
-quote = "I am the one who knocks. -- Walter White"
+quote = "What is now proved was once only imagined. -- William Blake"
 csbwt = csbwt
 
 

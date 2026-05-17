@@ -31,7 +31,7 @@ def gccnv(data=None, coords=None, n=50):
 
 short = "gccnv"
 alias = "gccnv"
-quote = "Bankai! -- Ichigo"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 gccnv = gccnv
 
 

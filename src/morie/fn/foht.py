@@ -39,7 +39,7 @@ def foht(dbh=None, height=None, coords=None, n=50):
 
 short = "foht"
 alias = "foht"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 foht = foht
 
 

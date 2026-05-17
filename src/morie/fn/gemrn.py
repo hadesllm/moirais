@@ -33,7 +33,7 @@ def gemrn(gdp=None, trade=None, coords=None, n=50):
 
 short = "gemrn"
 alias = "gemrn"
-quote = "See you space cowboy. -- Spike"
+quote = "We must know. We will know. -- David Hilbert"
 gemrn = gemrn
 
 

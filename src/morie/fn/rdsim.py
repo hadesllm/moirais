@@ -37,7 +37,7 @@ def rdsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "rdsim"
 alias = "rdsim"
-quote = "Whatever happens, happens. -- Spike"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 rdsim = rdsim
 
 

@@ -34,7 +34,7 @@ def csseq(incidents=None, population=None, coords=None, n=50):
 
 short = "csseq"
 alias = "csseq"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 csseq = csseq
 
 

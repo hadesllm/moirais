@@ -36,7 +36,7 @@ def vmrob(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmrob"
 alias = "vmrob"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Number rules the universe. -- Pythagoras"
 vmrob = vmrob
 
 

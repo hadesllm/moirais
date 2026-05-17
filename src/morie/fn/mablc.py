@@ -40,7 +40,7 @@ def mablc(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mablc"
 alias = "mablc"
-quote = "You should enjoy the detours. -- Ging"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 mablc = mablc
 
 

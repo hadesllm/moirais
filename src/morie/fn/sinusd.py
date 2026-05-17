@@ -28,7 +28,7 @@ def sinusd(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "sinusd"
 alias = "sinusd"
-quote = "Live long and prosper. -- Spock"
+quote = "There is no royal road to geometry. -- Euclid"
 sinusd = sinusd
 
 

@@ -28,7 +28,7 @@ def dw_nominate_score(votes=None, *, dims=2, n=10, m=5):
 
 short = "dwnmt"
 alias = "dw_nominate_score"
-quote = "Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 dw_nominate_score = dw_nominate_score
 
 

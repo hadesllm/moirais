@@ -33,7 +33,7 @@ def bnsmn(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "bnsmn"
 alias = "bnsmn"
-quote = "Resistance is futile. -- Borg"
+quote = "The measure of a man is what he does with power. -- Plato"
 bnsmn = bnsmn
 
 

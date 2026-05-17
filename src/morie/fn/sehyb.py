@@ -39,7 +39,7 @@ def sehyb(cases=None, population=None, coords=None, n=50):
 
 short = "sehyb"
 alias = "sehyb"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 sehyb = sehyb
 
 

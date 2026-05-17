@@ -31,7 +31,7 @@ def dtiws(x=None, n=100, params=None):
 
 short = "dtiws"
 alias = "dtiws"
-quote = "I am justice! -- Light"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 dtiws = dtiws
 
 

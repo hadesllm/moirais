@@ -30,7 +30,7 @@ def wqirg(data=None, coords=None, n=50):
 
 short = "wqirg"
 alias = "wqirg"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "There is no royal road to geometry. -- Euclid"
 wqirg = wqirg
 
 

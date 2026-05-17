@@ -28,7 +28,7 @@ def ppfam(data=None, n=50):
 
 short = "ppfam"
 alias = "ppfam"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "We must know. We will know. -- David Hilbert"
 ppfam = ppfam
 
 

@@ -28,7 +28,7 @@ def weighs(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "weighs"
 alias = "weighs"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "What is now proved was once only imagined. -- William Blake"
 weighs = weighs
 
 

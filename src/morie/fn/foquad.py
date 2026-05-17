@@ -39,7 +39,7 @@ def foquad(dbh=None, height=None, coords=None, n=50):
 
 short = "foquad"
 alias = "foquad"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 foquad = foquad
 
 

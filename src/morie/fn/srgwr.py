@@ -38,7 +38,7 @@ def srgwr(X=None, y=None, w=None, n=50, k=3):
 
 short = "srgwr"
 alias = "srgwr"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 srgwr = srgwr
 
 

@@ -33,7 +33,7 @@ def ubgnf(population=None, area=None, coords=None, n=50):
 
 short = "ubgnf"
 alias = "ubgnf"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ubgnf = ubgnf
 
 

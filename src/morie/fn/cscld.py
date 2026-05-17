@@ -34,7 +34,7 @@ def cscld(incidents=None, population=None, coords=None, n=50):
 
 short = "cscld"
 alias = "cscld"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 cscld = cscld
 
 

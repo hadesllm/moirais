@@ -31,7 +31,7 @@ def ensno(data=None, coords=None, n=50):
 
 short = "ensno"
 alias = "ensno"
-quote = "Science! -- Jesse Pinkman"
+quote = "We must know. We will know. -- David Hilbert"
 ensno = ensno
 
 

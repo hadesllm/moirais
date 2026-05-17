@@ -36,7 +36,7 @@ def ppthm(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppthm"
 alias = "ppthm"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "Number rules the universe. -- Pythagoras"
 ppthm = ppthm
 
 

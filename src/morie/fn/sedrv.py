@@ -39,7 +39,7 @@ def sedrv(cases=None, population=None, coords=None, n=50):
 
 short = "sedrv"
 alias = "sedrv"
-quote = "Breathe. -- Tanjiro"
+quote = "What is now proved was once only imagined. -- William Blake"
 sedrv = sedrv
 
 

@@ -27,7 +27,7 @@ def svgmp(data=None, n=50):
 
 short = "svgmp"
 alias = "svgmp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 svgmp = svgmp
 
 

@@ -33,7 +33,7 @@ def hybod(flow=None, precip=None, coords=None, n=50):
 
 short = "hybod"
 alias = "hybod"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 hybod = hybod
 
 

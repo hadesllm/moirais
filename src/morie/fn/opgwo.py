@@ -46,7 +46,7 @@ def opgwo(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opgwo"
 alias = "opgwo"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 opgwo = opgwo
 
 

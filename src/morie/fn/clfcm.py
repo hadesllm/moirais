@@ -40,7 +40,7 @@ def clfcm(data=None, n=50, k=3, coords=None):
 
 short = "clfcm"
 alias = "clfcm"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "Knowledge is power. -- Francis Bacon"
 clfcm = clfcm
 
 

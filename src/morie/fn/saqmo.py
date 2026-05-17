@@ -43,7 +43,7 @@ def saqmo(values=None, w=None, n=50):
 
 short = "saqmo"
 alias = "saqmo"
-quote = "Believe it! -- Naruto"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 saqmo = saqmo
 
 

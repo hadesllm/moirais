@@ -31,7 +31,7 @@ def dtbvn(x=None, n=100, params=None):
 
 short = "dtbvn"
 alias = "dtbvn"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "Number rules the universe. -- Pythagoras"
 dtbvn = dtbvn
 
 

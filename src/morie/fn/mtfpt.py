@@ -37,7 +37,7 @@ def mtfpt(trajectory=None, n=50, dt=1.0):
 
 short = "mtfpt"
 alias = "mtfpt"
-quote = "I am the hope of the universe. -- Goku"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 mtfpt = mtfpt
 
 

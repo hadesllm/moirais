@@ -39,7 +39,7 @@ def fobark(dbh=None, height=None, coords=None, n=50):
 
 short = "fobark"
 alias = "fobark"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 fobark = fobark
 
 

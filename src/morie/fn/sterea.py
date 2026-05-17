@@ -28,7 +28,7 @@ def sterea(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "sterea"
 alias = "sterea"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "The measure of a man is what he does with power. -- Plato"
 sterea = sterea
 
 

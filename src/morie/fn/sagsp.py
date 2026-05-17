@@ -43,7 +43,7 @@ def sagsp(values=None, w=None, n=50):
 
 short = "sagsp"
 alias = "sagsp"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 sagsp = sagsp
 
 

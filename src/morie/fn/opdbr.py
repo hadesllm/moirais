@@ -46,7 +46,7 @@ def opdbr(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opdbr"
 alias = "opdbr"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "What is now proved was once only imagined. -- William Blake"
 opdbr = opdbr
 
 

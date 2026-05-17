@@ -32,7 +32,7 @@ def soaws(data=None, depth=None, coords=None, n=50):
 
 short = "soaws"
 alias = "soaws"
-quote = "Make it so. -- Picard"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 soaws = soaws
 
 

@@ -37,7 +37,7 @@ def convhl(x=None, y=None, values=None, resolution=50):
 
 short = "convhl"
 alias = "convhl"
-quote = "Believe it! -- Naruto"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 convhl = convhl
 
 

@@ -41,7 +41,7 @@ def ghbuf(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghbuf"
 alias = "ghbuf"
-quote = "Science! -- Jesse Pinkman"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 ghbuf = ghbuf
 
 

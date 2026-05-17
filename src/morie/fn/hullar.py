@@ -37,7 +37,7 @@ def hullar(x=None, y=None, values=None, resolution=50):
 
 short = "hullar"
 alias = "hullar"
-quote = "Science! -- Jesse Pinkman"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 hullar = hullar
 
 

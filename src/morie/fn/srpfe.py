@@ -38,7 +38,7 @@ def srpfe(X=None, y=None, w=None, n=50, k=3):
 
 short = "srpfe"
 alias = "srpfe"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 srpfe = srpfe
 
 

@@ -32,7 +32,7 @@ def socla(data=None, depth=None, coords=None, n=50):
 
 short = "socla"
 alias = "socla"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 socla = socla
 
 

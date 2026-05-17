@@ -32,7 +32,7 @@ def skflt(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "skflt"
 alias = "skflt"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "What is now proved was once only imagined. -- William Blake"
 skflt = skflt
 
 

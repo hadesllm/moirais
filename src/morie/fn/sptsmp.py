@@ -28,7 +28,7 @@ def sptsmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "sptsmp"
 alias = "sptsmp"
-quote = "Whatever happens, happens. -- Spike"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 sptsmp = sptsmp
 
 

@@ -34,7 +34,7 @@ def cshmn(incidents=None, population=None, coords=None, n=50):
 
 short = "cshmn"
 alias = "cshmn"
-quote = "I mustn't run away. -- Shinji"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 cshmn = cshmn
 
 

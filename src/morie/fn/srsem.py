@@ -38,7 +38,7 @@ def srsem(X=None, y=None, w=None, n=50, k=3):
 
 short = "srsem"
 alias = "srsem"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "I think, therefore I am. -- Rene Descartes"
 srsem = srsem
 
 

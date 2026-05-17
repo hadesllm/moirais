@@ -40,7 +40,7 @@ def clflm(data=None, n=50, k=3, coords=None):
 
 short = "clflm"
 alias = "clflm"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 clflm = clflm
 
 

@@ -46,7 +46,7 @@ def opall(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opall"
 alias = "opall"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 opall = opall
 
 

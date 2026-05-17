@@ -36,7 +36,7 @@ def vmzrn(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmzrn"
 alias = "vmzrn"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 vmzrn = vmzrn
 
 

@@ -33,7 +33,7 @@ def bkflt(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "bkflt"
 alias = "bkflt"
-quote = "Make it so. -- Picard"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 bkflt = bkflt
 
 

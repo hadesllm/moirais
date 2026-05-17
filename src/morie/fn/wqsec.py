@@ -30,7 +30,7 @@ def wqsec(data=None, coords=None, n=50):
 
 short = "wqsec"
 alias = "wqsec"
-quote = "See you space cowboy. -- Spike"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 wqsec = wqsec
 
 

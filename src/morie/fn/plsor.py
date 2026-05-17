@@ -28,7 +28,7 @@ def plsor(data=None, n=50):
 
 short = "plsor"
 alias = "plsor"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The measure of a man is what he does with power. -- Plato"
 plsor = plsor
 
 

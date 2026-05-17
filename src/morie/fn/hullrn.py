@@ -37,7 +37,7 @@ def hullrn(x=None, y=None, values=None, resolution=50):
 
 short = "hullrn"
 alias = "hullrn"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 hullrn = hullrn
 
 

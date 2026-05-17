@@ -32,7 +32,7 @@ def rskap(pixels=None, bands=None, n=100):
 
 short = "rskap"
 alias = "rskap"
-quote = "No half measures. -- Mike"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 rskap = rskap
 
 

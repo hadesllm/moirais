@@ -37,7 +37,7 @@ def mtktz(trajectory=None, n=50, dt=1.0):
 
 short = "mtktz"
 alias = "mtktz"
-quote = "See you space cowboy. -- Spike"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 mtktz = mtktz
 
 

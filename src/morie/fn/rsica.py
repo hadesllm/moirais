@@ -32,7 +32,7 @@ def rsica(pixels=None, bands=None, n=100):
 
 short = "rsica"
 alias = "rsica"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "There is no royal road to geometry. -- Euclid"
 rsica = rsica
 
 

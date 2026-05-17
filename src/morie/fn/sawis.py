@@ -43,7 +43,7 @@ def sawis(values=None, w=None, n=50):
 
 short = "sawis"
 alias = "sawis"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 sawis = sawis
 
 

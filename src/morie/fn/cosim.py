@@ -37,7 +37,7 @@ def cosim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "cosim"
 alias = "cosim"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 cosim = cosim
 
 

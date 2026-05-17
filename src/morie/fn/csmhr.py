@@ -34,7 +34,7 @@ def csmhr(incidents=None, population=None, coords=None, n=50):
 
 short = "csmhr"
 alias = "csmhr"
-quote = "Breathe. -- Tanjiro"
+quote = "What is now proved was once only imagined. -- William Blake"
 csmhr = csmhr
 
 

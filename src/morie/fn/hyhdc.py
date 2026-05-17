@@ -33,7 +33,7 @@ def hyhdc(flow=None, precip=None, coords=None, n=50):
 
 short = "hyhdc"
 alias = "hyhdc"
-quote = "Whatever happens, happens. -- Spike"
+quote = "What is now proved was once only imagined. -- William Blake"
 hyhdc = hyhdc
 
 

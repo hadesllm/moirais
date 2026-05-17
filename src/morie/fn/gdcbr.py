@@ -36,7 +36,7 @@ def gdcbr(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdcbr"
 alias = "gdcbr"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "What is now proved was once only imagined. -- William Blake"
 gdcbr = gdcbr
 
 

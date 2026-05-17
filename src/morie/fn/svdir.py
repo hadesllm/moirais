@@ -27,7 +27,7 @@ def svdir(data=None, n=50):
 
 short = "svdir"
 alias = "svdir"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Knowledge is power. -- Francis Bacon"
 svdir = svdir
 
 

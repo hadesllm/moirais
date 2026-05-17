@@ -37,7 +37,7 @@ def bmsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "bmsim"
 alias = "bmsim"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 bmsim = bmsim
 
 

@@ -33,7 +33,7 @@ def hysnk(flow=None, precip=None, coords=None, n=50):
 
 short = "hysnk"
 alias = "hysnk"
-quote = "Bankai! -- Ichigo"
+quote = "There is no royal road to geometry. -- Euclid"
 hysnk = hysnk
 
 

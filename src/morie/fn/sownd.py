@@ -32,7 +32,7 @@ def sownd(data=None, depth=None, coords=None, n=50):
 
 short = "sownd"
 alias = "sownd"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 sownd = sownd
 
 

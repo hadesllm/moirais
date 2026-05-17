@@ -36,7 +36,7 @@ def vmbox(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmbox"
 alias = "vmbox"
-quote = "One does not simply walk. -- Boromir"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 vmbox = vmbox
 
 

@@ -33,7 +33,7 @@ def ikflt(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "ikflt"
 alias = "ikflt"
-quote = "Keep moving forward. -- Eren"
+quote = "There is no royal road to geometry. -- Euclid"
 ikflt = ikflt
 
 

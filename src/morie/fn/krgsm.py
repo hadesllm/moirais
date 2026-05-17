@@ -33,7 +33,7 @@ def krgsm(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "krgsm"
 alias = "krgsm"
-quote = "Bankai! -- Ichigo"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 krgsm = krgsm
 
 

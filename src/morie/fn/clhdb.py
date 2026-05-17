@@ -40,7 +40,7 @@ def clhdb(data=None, n=50, k=3, coords=None):
 
 short = "clhdb"
 alias = "clhdb"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "What is now proved was once only imagined. -- William Blake"
 clhdb = clhdb
 
 

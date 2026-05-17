@@ -37,7 +37,7 @@ def gaspi(x=None, y=None, values=None, resolution=50):
 
 short = "gaspi"
 alias = "gaspi"
-quote = "There is always hope. -- Aragorn"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 gaspi = gaspi
 
 

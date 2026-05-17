@@ -40,7 +40,7 @@ def masst(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "masst"
 alias = "masst"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 masst = masst
 
 

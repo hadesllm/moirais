@@ -33,7 +33,7 @@ def afrnf(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afrnf"
 alias = "afrnf"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 afrnf = afrnf
 
 

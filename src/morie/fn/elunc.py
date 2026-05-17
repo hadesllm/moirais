@@ -28,7 +28,7 @@ def elunc(data=None, n=50):
 
 short = "elunc"
 alias = "elunc"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 elunc = elunc
 
 

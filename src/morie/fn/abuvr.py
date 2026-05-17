@@ -31,7 +31,7 @@ def abuvr(data=None, coords=None, n=50):
 
 short = "abuvr"
 alias = "abuvr"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "There is no royal road to geometry. -- Euclid"
 abuvr = abuvr
 
 

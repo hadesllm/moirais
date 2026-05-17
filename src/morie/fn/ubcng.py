@@ -33,7 +33,7 @@ def ubcng(population=None, area=None, coords=None, n=50):
 
 short = "ubcng"
 alias = "ubcng"
-quote = "I am here! -- All Might"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 ubcng = ubcng
 
 

@@ -36,7 +36,7 @@ def trsgn(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trsgn"
 alias = "trsgn"
-quote = "Make it so. -- Picard"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 trsgn = trsgn
 
 

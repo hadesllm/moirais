@@ -40,7 +40,7 @@ def dk4dr(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk4dr"
 alias = "dk4dr"
-quote = "Make it so. -- Picard"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 dk4dr = dk4dr
 
 

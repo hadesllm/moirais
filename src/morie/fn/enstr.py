@@ -31,7 +31,7 @@ def enstr(data=None, coords=None, n=50):
 
 short = "enstr"
 alias = "enstr"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 enstr = enstr
 
 

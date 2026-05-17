@@ -32,7 +32,7 @@ def rsndb(pixels=None, bands=None, n=100):
 
 short = "rsndb"
 alias = "rsndb"
-quote = "I am justice! -- Light"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 rsndb = rsndb
 
 

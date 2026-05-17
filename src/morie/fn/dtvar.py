@@ -28,7 +28,7 @@ def dtvar(data=None, n=50):
 
 short = "dtvar"
 alias = "dtvar"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 dtvar = dtvar
 
 

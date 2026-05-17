@@ -36,7 +36,7 @@ def ppmkv(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppmkv"
 alias = "ppmkv"
-quote = "Live long and prosper. -- Spock"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 ppmkv = ppmkv
 
 

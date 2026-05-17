@@ -37,7 +37,7 @@ def nrstd(x=None, y=None, values=None, resolution=50):
 
 short = "nrstd"
 alias = "nrstd"
-quote = "See you space cowboy. -- Spike"
+quote = "The measure of a man is what he does with power. -- Plato"
 nrstd = nrstd
 
 

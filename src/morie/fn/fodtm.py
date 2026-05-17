@@ -39,7 +39,7 @@ def fodtm(dbh=None, height=None, coords=None, n=50):
 
 short = "fodtm"
 alias = "fodtm"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 fodtm = fodtm
 
 

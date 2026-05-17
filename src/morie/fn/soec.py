@@ -32,7 +32,7 @@ def soec(data=None, depth=None, coords=None, n=50):
 
 short = "soec"
 alias = "soec"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 soec = soec
 
 

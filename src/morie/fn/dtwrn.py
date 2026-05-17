@@ -31,7 +31,7 @@ def dtwrn(x=None, n=100, params=None):
 
 short = "dtwrn"
 alias = "dtwrn"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 dtwrn = dtwrn
 
 

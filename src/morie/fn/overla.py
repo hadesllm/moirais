@@ -37,7 +37,7 @@ def overla(x=None, y=None, values=None, resolution=50):
 
 short = "overla"
 alias = "overla"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 overla = overla
 
 

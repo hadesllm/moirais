@@ -32,7 +32,7 @@ def rstcw(pixels=None, bands=None, n=100):
 
 short = "rstcw"
 alias = "rstcw"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "I think, therefore I am. -- Rene Descartes"
 rstcw = rstcw
 
 

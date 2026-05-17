@@ -38,7 +38,7 @@ def srgwb(X=None, y=None, w=None, n=50, k=3):
 
 short = "srgwb"
 alias = "srgwb"
-quote = "See you space cowboy. -- Spike"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 srgwb = srgwb
 
 

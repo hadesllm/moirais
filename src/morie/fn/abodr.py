@@ -31,7 +31,7 @@ def abodr(data=None, coords=None, n=50):
 
 short = "abodr"
 alias = "abodr"
-quote = "I am the one who knocks. -- Walter White"
+quote = "What is now proved was once only imagined. -- William Blake"
 abodr = abodr
 
 

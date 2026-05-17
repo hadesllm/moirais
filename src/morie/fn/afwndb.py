@@ -33,7 +33,7 @@ def afwndb(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afwndb"
 alias = "afwndb"
-quote = "This is Requiem. -- Giorno"
+quote = "There is no royal road to geometry. -- Euclid"
 afwndb = afwndb
 
 

@@ -33,7 +33,7 @@ def ubdis(population=None, area=None, coords=None, n=50):
 
 short = "ubdis"
 alias = "ubdis"
-quote = "Breathe. -- Tanjiro"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 ubdis = ubdis
 
 

@@ -37,7 +37,7 @@ def nrstm(x=None, y=None, values=None, resolution=50):
 
 short = "nrstm"
 alias = "nrstm"
-quote = "Arise. -- Shadow Monarch"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 nrstm = nrstm
 
 

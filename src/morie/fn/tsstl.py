@@ -37,7 +37,7 @@ def tsstl(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsstl"
 alias = "tsstl"
-quote = "It's over 9000! -- Vegeta"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 tsstl = tsstl
 
 

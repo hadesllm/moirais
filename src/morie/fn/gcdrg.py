@@ -31,7 +31,7 @@ def gcdrg(data=None, coords=None, n=50):
 
 short = "gcdrg"
 alias = "gcdrg"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 gcdrg = gcdrg
 
 

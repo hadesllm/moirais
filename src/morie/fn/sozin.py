@@ -32,7 +32,7 @@ def sozin(data=None, depth=None, coords=None, n=50):
 
 short = "sozin"
 alias = "sozin"
-quote = "See you space cowboy. -- Spike"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 sozin = sozin
 
 

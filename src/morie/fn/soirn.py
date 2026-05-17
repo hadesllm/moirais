@@ -32,7 +32,7 @@ def soirn(data=None, depth=None, coords=None, n=50):
 
 short = "soirn"
 alias = "soirn"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 soirn = soirn
 
 

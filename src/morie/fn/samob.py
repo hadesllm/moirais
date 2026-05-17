@@ -43,7 +43,7 @@ def samob(values=None, w=None, n=50):
 
 short = "samob"
 alias = "samob"
-quote = "Bankai! -- Ichigo"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 samob = samob
 
 

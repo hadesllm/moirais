@@ -31,7 +31,7 @@ def gcrcp(data=None, coords=None, n=50):
 
 short = "gcrcp"
 alias = "gcrcp"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 gcrcp = gcrcp
 
 

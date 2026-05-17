@@ -36,7 +36,7 @@ def gdcdr(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdcdr"
 alias = "gdcdr"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 gdcdr = gdcdr
 
 

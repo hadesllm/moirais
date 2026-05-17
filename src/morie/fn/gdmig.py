@@ -36,7 +36,7 @@ def gdmig(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdmig"
 alias = "gdmig"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 gdmig = gdmig
 
 

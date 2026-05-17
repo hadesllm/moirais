@@ -37,7 +37,7 @@ def dlaumn(x=None, y=None, values=None, resolution=50):
 
 short = "dlaumn"
 alias = "dlaumn"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 dlaumn = dlaumn
 
 

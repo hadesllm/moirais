@@ -34,7 +34,7 @@ def csenv(incidents=None, population=None, coords=None, n=50):
 
 short = "csenv"
 alias = "csenv"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 csenv = csenv
 
 

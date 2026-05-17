@@ -36,7 +36,7 @@ def gdemg(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdemg"
 alias = "gdemg"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 gdemg = gdemg
 
 

@@ -33,7 +33,7 @@ def ubfod(population=None, area=None, coords=None, n=50):
 
 short = "ubfod"
 alias = "ubfod"
-quote = "I am the one who knocks. -- Walter White"
+quote = "I think, therefore I am. -- Rene Descartes"
 ubfod = ubfod
 
 

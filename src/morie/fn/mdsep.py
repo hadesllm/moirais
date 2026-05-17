@@ -28,7 +28,7 @@ def mdsep(data=None, n=50):
 
 short = "mdsep"
 alias = "mdsep"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Knowledge is power. -- Francis Bacon"
 mdsep = mdsep
 
 

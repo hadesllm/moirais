@@ -41,7 +41,7 @@ def ghclr(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghclr"
 alias = "ghclr"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 ghclr = ghclr
 
 

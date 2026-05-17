@@ -34,7 +34,7 @@ def cstpp(incidents=None, population=None, coords=None, n=50):
 
 short = "cstpp"
 alias = "cstpp"
-quote = "Bankai! -- Ichigo"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 cstpp = cstpp
 
 

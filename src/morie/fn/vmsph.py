@@ -36,7 +36,7 @@ def vmsph(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmsph"
 alias = "vmsph"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 vmsph = vmsph
 
 

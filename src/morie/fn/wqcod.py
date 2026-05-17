@@ -30,7 +30,7 @@ def wqcod(data=None, coords=None, n=50):
 
 short = "wqcod"
 alias = "wqcod"
-quote = "Make it so. -- Picard"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 wqcod = wqcod
 
 

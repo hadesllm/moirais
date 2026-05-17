@@ -28,7 +28,7 @@ def idpmc(data=None, n=50):
 
 short = "idpmc"
 alias = "idpmc"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "I think, therefore I am. -- Rene Descartes"
 idpmc = idpmc
 
 

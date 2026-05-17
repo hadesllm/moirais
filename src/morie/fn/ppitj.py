@@ -36,7 +36,7 @@ def ppitj(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppitj"
 alias = "ppitj"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 ppitj = ppitj
 
 

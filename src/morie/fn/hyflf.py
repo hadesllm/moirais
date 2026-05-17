@@ -33,7 +33,7 @@ def hyflf(flow=None, precip=None, coords=None, n=50):
 
 short = "hyflf"
 alias = "hyflf"
-quote = "Hold the door. -- Hodor"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 hyflf = hyflf
 
 

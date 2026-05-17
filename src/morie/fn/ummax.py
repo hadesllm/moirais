@@ -27,7 +27,7 @@ def ummax(data=None, n=50):
 
 short = "ummax"
 alias = "ummax"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 ummax = ummax
 
 

@@ -33,7 +33,7 @@ def hycti(flow=None, precip=None, coords=None, n=50):
 
 short = "hycti"
 alias = "hycti"
-quote = "Winter is coming. -- Stark motto"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 hycti = hycti
 
 

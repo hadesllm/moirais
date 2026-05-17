@@ -31,7 +31,7 @@ def dtsas(x=None, n=100, params=None):
 
 short = "dtsas"
 alias = "dtsas"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "Knowledge is power. -- Francis Bacon"
 dtsas = dtsas
 
 

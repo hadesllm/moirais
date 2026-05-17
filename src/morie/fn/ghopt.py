@@ -41,7 +41,7 @@ def ghopt(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghopt"
 alias = "ghopt"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Number rules the universe. -- Pythagoras"
 ghopt = ghopt
 
 

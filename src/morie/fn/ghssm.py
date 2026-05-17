@@ -41,7 +41,7 @@ def ghssm(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghssm"
 alias = "ghssm"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 ghssm = ghssm
 
 

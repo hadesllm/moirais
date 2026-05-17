@@ -33,7 +33,7 @@ def hyret(flow=None, precip=None, coords=None, n=50):
 
 short = "hyret"
 alias = "hyret"
-quote = "My precious. -- Gollum"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 hyret = hyret
 
 

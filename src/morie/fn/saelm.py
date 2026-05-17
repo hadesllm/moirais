@@ -43,7 +43,7 @@ def saelm(values=None, w=None, n=50):
 
 short = "saelm"
 alias = "saelm"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 saelm = saelm
 
 

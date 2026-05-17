@@ -39,7 +39,7 @@ def secli(cases=None, population=None, coords=None, n=50):
 
 short = "secli"
 alias = "secli"
-quote = "Resistance is futile. -- Borg"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 secli = secli
 
 

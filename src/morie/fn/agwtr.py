@@ -38,7 +38,7 @@ def agwtr(areas=None, perimeters=None, values=None, n=30):
 
 short = "agwtr"
 alias = "agwtr"
-quote = "I mustn't run away. -- Shinji"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 agwtr = agwtr
 
 

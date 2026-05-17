@@ -36,7 +36,7 @@ def trelc(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trelc"
 alias = "trelc"
-quote = "One does not simply walk. -- Boromir"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 trelc = trelc
 
 

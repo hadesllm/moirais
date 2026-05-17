@@ -32,7 +32,7 @@ def soagg(data=None, depth=None, coords=None, n=50):
 
 short = "soagg"
 alias = "soagg"
-quote = "Arise. -- Shadow Monarch"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 soagg = soagg
 
 

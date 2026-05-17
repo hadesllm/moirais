@@ -31,7 +31,7 @@ def gcfld(data=None, coords=None, n=50):
 
 short = "gcfld"
 alias = "gcfld"
-quote = "Make it so. -- Picard"
+quote = "There is no royal road to geometry. -- Euclid"
 gcfld = gcfld
 
 

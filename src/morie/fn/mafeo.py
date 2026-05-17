@@ -40,7 +40,7 @@ def mafeo(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mafeo"
 alias = "mafeo"
-quote = "Breathe. -- Tanjiro"
+quote = "The measure of a man is what he does with power. -- Plato"
 mafeo = mafeo
 
 

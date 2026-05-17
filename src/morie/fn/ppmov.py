@@ -28,7 +28,7 @@ def ppmov(data=None, n=50):
 
 short = "ppmov"
 alias = "ppmov"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The measure of a man is what he does with power. -- Plato"
 ppmov = ppmov
 
 

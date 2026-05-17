@@ -29,7 +29,7 @@ def prjinv(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "prjinv"
 alias = "prjinv"
-quote = "I am justice! -- Light"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 prjinv = prjinv
 
 

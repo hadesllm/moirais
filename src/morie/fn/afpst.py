@@ -33,7 +33,7 @@ def afpst(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afpst"
 alias = "afpst"
-quote = "I am the one who knocks. -- Walter White"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 afpst = afpst
 
 

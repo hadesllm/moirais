@@ -32,7 +32,7 @@ def rsfcv(pixels=None, bands=None, n=100):
 
 short = "rsfcv"
 alias = "rsfcv"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 rsfcv = rsfcv
 
 

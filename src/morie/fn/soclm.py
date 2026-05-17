@@ -32,7 +32,7 @@ def soclm(data=None, depth=None, coords=None, n=50):
 
 short = "soclm"
 alias = "soclm"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 soclm = soclm
 
 

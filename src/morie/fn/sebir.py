@@ -39,7 +39,7 @@ def sebir(cases=None, population=None, coords=None, n=50):
 
 short = "sebir"
 alias = "sebir"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "I think, therefore I am. -- Rene Descartes"
 sebir = sebir
 
 

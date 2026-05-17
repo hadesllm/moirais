@@ -33,7 +33,7 @@ def afbio(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afbio"
 alias = "afbio"
-quote = "Resistance is futile. -- Borg"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 afbio = afbio
 
 

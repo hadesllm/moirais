@@ -31,7 +31,7 @@ def abdxn(data=None, coords=None, n=50):
 
 short = "abdxn"
 alias = "abdxn"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 abdxn = abdxn
 
 

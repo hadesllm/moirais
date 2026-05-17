@@ -46,7 +46,7 @@ def oppso(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "oppso"
 alias = "oppso"
-quote = "One is all, all is one. -- Izumi"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 oppso = oppso
 
 

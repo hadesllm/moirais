@@ -37,7 +37,7 @@ def mtash(trajectory=None, n=50, dt=1.0):
 
 short = "mtash"
 alias = "mtash"
-quote = "Arise. -- Shadow Monarch"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 mtash = mtash
 
 

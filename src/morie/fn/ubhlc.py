@@ -33,7 +33,7 @@ def ubhlc(population=None, area=None, coords=None, n=50):
 
 short = "ubhlc"
 alias = "ubhlc"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 ubhlc = ubhlc
 
 

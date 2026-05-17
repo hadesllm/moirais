@@ -28,7 +28,7 @@ def cmmed(data=None, n=50):
 
 short = "cmmed"
 alias = "cmmed"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 cmmed = cmmed
 
 

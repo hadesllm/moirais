@@ -32,7 +32,7 @@ def soorg(data=None, depth=None, coords=None, n=50):
 
 short = "soorg"
 alias = "soorg"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 soorg = soorg
 
 

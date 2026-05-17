@@ -28,7 +28,7 @@ def plbim(data=None, n=50):
 
 short = "plbim"
 alias = "plbim"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 plbim = plbim
 
 

@@ -37,7 +37,7 @@ def tsste(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsste"
 alias = "tsste"
-quote = "I am the one who knocks. -- Walter White"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 tsste = tsste
 
 

@@ -36,7 +36,7 @@ def trsig(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trsig"
 alias = "trsig"
-quote = "Believe it! -- Naruto"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 trsig = trsig
 
 

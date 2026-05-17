@@ -43,7 +43,7 @@ def saggt(values=None, w=None, n=50):
 
 short = "saggt"
 alias = "saggt"
-quote = "Engage. -- Picard"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 saggt = saggt
 
 

@@ -36,7 +36,7 @@ def pprfd(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "pprfd"
 alias = "pprfd"
-quote = "You should enjoy the detours. -- Ging"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 pprfd = pprfd
 
 

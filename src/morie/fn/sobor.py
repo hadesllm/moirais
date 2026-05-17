@@ -32,7 +32,7 @@ def sobor(data=None, depth=None, coords=None, n=50):
 
 short = "sobor"
 alias = "sobor"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 sobor = sobor
 
 

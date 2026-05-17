@@ -43,7 +43,7 @@ def sagjw(values=None, w=None, n=50):
 
 short = "sagjw"
 alias = "sagjw"
-quote = "Keep moving forward. -- Eren"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 sagjw = sagjw
 
 

@@ -28,7 +28,7 @@ def pssim(data=None, n=50):
 
 short = "pssim"
 alias = "pssim"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 pssim = pssim
 
 

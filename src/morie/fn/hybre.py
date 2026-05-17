@@ -33,7 +33,7 @@ def hybre(flow=None, precip=None, coords=None, n=50):
 
 short = "hybre"
 alias = "hybre"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 hybre = hybre
 
 

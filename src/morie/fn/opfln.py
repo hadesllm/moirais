@@ -46,7 +46,7 @@ def opfln(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opfln"
 alias = "opfln"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 opfln = opfln
 
 

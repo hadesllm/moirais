@@ -31,7 +31,7 @@ def enbdv(data=None, coords=None, n=50):
 
 short = "enbdv"
 alias = "enbdv"
-quote = "My precious. -- Gollum"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 enbdv = enbdv
 
 

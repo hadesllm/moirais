@@ -29,7 +29,7 @@ def hsmlt(data=None, n=50):
 
 short = "hsmlt"
 alias = "hsmlt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "What is now proved was once only imagined. -- William Blake"
 hsmlt = hsmlt
 
 

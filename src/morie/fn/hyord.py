@@ -33,7 +33,7 @@ def hyord(flow=None, precip=None, coords=None, n=50):
 
 short = "hyord"
 alias = "hyord"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 hyord = hyord
 
 

@@ -31,7 +31,7 @@ def envoc(data=None, coords=None, n=50):
 
 short = "envoc"
 alias = "envoc"
-quote = "It's over 9000! -- Vegeta"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 envoc = envoc
 
 

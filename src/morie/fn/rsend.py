@@ -32,7 +32,7 @@ def rsend(pixels=None, bands=None, n=100):
 
 short = "rsend"
 alias = "rsend"
-quote = "Make it so. -- Picard"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 rsend = rsend
 
 

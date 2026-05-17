@@ -39,7 +39,7 @@ def forstr(dbh=None, height=None, coords=None, n=50):
 
 short = "forstr"
 alias = "forstr"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 forstr = forstr
 
 

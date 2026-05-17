@@ -33,7 +33,7 @@ def hyphy(flow=None, precip=None, coords=None, n=50):
 
 short = "hyphy"
 alias = "hyphy"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 hyphy = hyphy
 
 

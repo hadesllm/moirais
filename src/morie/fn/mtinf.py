@@ -37,7 +37,7 @@ def mtinf(trajectory=None, n=50, dt=1.0):
 
 short = "mtinf"
 alias = "mtinf"
-quote = "Breathe. -- Tanjiro"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 mtinf = mtinf
 
 

@@ -31,7 +31,7 @@ def dtgpd(x=None, n=100, params=None):
 
 short = "dtgpd"
 alias = "dtgpd"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 dtgpd = dtgpd
 
 

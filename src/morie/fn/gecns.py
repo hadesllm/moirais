@@ -33,7 +33,7 @@ def gecns(gdp=None, trade=None, coords=None, n=50):
 
 short = "gecns"
 alias = "gecns"
-quote = "Keep moving forward. -- Eren"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 gecns = gecns
 
 

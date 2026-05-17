@@ -46,7 +46,7 @@ def opsqp(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opsqp"
 alias = "opsqp"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 opsqp = opsqp
 
 

@@ -33,7 +33,7 @@ def ubcmp(population=None, area=None, coords=None, n=50):
 
 short = "ubcmp"
 alias = "ubcmp"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ubcmp = ubcmp
 
 

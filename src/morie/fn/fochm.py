@@ -39,7 +39,7 @@ def fochm(dbh=None, height=None, coords=None, n=50):
 
 short = "fochm"
 alias = "fochm"
-quote = "Tatakae! -- Eren"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 fochm = fochm
 
 

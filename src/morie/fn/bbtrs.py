@@ -30,7 +30,7 @@ def blackbox_transpose(data=None, *, dims=2, n=50):
 
 short = "bbtrs"
 alias = "blackbox_transpose"
-quote = "The road up and the road down are the same thing. -- Heraclitus"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 blackbox_transpose = blackbox_transpose
 
 

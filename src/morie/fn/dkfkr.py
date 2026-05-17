@@ -40,7 +40,7 @@ def dkfkr(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkfkr"
 alias = "dkfkr"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 dkfkr = dkfkr
 
 

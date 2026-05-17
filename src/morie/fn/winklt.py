@@ -28,7 +28,7 @@ def winklt(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "winklt"
 alias = "winklt"
-quote = "Resistance is futile. -- Borg"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 winklt = winklt
 
 

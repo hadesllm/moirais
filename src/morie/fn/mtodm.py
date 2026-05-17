@@ -37,7 +37,7 @@ def mtodm(trajectory=None, n=50, dt=1.0):
 
 short = "mtodm"
 alias = "mtodm"
-quote = "Make it so. -- Picard"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 mtodm = mtodm
 
 

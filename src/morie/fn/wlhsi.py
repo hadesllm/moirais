@@ -30,7 +30,7 @@ def wlhsi(abundance=None, coords=None, n=50):
 
 short = "wlhsi"
 alias = "wlhsi"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "Number rules the universe. -- Pythagoras"
 wlhsi = wlhsi
 
 

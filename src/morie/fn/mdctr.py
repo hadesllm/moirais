@@ -37,7 +37,7 @@ def mdctr(data=None, query=None, origin=None, *, n=50):
 
 short = "mdctr"
 alias = "mdctr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 mdctr = mdctr
 
 

@@ -38,7 +38,7 @@ def aglsm(areas=None, perimeters=None, values=None, n=30):
 
 short = "aglsm"
 alias = "aglsm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 aglsm = aglsm
 
 

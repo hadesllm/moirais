@@ -36,7 +36,7 @@ def vmfml(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmfml"
 alias = "vmfml"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 vmfml = vmfml
 
 

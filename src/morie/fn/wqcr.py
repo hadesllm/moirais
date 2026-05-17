@@ -30,7 +30,7 @@ def wqcr(data=None, coords=None, n=50):
 
 short = "wqcr"
 alias = "wqcr"
-quote = "Make it so. -- Picard"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 wqcr = wqcr
 
 

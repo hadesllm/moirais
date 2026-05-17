@@ -36,7 +36,7 @@ def ppstl(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppstl"
 alias = "ppstl"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 ppstl = ppstl
 
 

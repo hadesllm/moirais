@@ -30,7 +30,7 @@ def wlibr(abundance=None, coords=None, n=50):
 
 short = "wlibr"
 alias = "wlibr"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 wlibr = wlibr
 
 

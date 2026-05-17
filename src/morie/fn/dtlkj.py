@@ -31,7 +31,7 @@ def dtlkj(x=None, n=100, params=None):
 
 short = "dtlkj"
 alias = "dtlkj"
-quote = "Bankai! -- Ichigo"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 dtlkj = dtlkj
 
 

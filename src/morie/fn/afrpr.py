@@ -33,7 +33,7 @@ def afrpr(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afrpr"
 alias = "afrpr"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 afrpr = afrpr
 
 

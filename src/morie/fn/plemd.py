@@ -28,7 +28,7 @@ def plemd(data=None, n=50):
 
 short = "plemd"
 alias = "plemd"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 plemd = plemd
 
 

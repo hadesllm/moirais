@@ -40,7 +40,7 @@ def macur(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "macur"
 alias = "macur"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 macur = macur
 
 

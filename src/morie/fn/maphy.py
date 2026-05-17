@@ -40,7 +40,7 @@ def maphy(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maphy"
 alias = "maphy"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 maphy = maphy
 
 

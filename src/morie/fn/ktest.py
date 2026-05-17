@@ -37,7 +37,7 @@ def ktest(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "ktest"
 alias = "ktest"
-quote = "Make it so. -- Picard"
+quote = "I think, therefore I am. -- Rene Descartes"
 ktest = ktest
 
 

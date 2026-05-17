@@ -38,7 +38,7 @@ def agsim(areas=None, perimeters=None, values=None, n=30):
 
 short = "agsim"
 alias = "agsim"
-quote = "Arise. -- Shadow Monarch"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 agsim = agsim
 
 

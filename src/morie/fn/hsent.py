@@ -29,7 +29,7 @@ def hsent(data=None, n=50):
 
 short = "hsent"
 alias = "hsent"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 hsent = hsent
 
 

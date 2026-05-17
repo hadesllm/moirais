@@ -33,7 +33,7 @@ def affrst(yield_data=None, soil=None, coords=None, n=50):
 
 short = "affrst"
 alias = "affrst"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 affrst = affrst
 
 

@@ -41,7 +41,7 @@ def ghfrg(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghfrg"
 alias = "ghfrg"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 ghfrg = ghfrg
 
 

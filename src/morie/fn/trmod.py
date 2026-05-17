@@ -36,7 +36,7 @@ def trmod(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trmod"
 alias = "trmod"
-quote = "I am the one who knocks. -- Walter White"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 trmod = trmod
 
 

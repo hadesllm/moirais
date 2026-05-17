@@ -39,7 +39,7 @@ def sespd(cases=None, population=None, coords=None, n=50):
 
 short = "sespd"
 alias = "sespd"
-quote = "I am here! -- All Might"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 sespd = sespd
 
 

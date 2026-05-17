@@ -39,7 +39,7 @@ def sesmr(cases=None, population=None, coords=None, n=50):
 
 short = "sesmr"
 alias = "sesmr"
-quote = "I am the hope of the universe. -- Goku"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 sesmr = sesmr
 
 

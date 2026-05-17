@@ -43,7 +43,7 @@ def sagcr(values=None, w=None, n=50):
 
 short = "sagcr"
 alias = "sagcr"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 sagcr = sagcr
 
 

@@ -41,7 +41,7 @@ def ghe2s(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghe2s"
 alias = "ghe2s"
-quote = "Engage. -- Picard"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 ghe2s = ghe2s
 
 

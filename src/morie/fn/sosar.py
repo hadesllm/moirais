@@ -32,7 +32,7 @@ def sosar(data=None, depth=None, coords=None, n=50):
 
 short = "sosar"
 alias = "sosar"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The measure of a man is what he does with power. -- Plato"
 sosar = sosar
 
 

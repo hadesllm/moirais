@@ -41,7 +41,7 @@ def gh2sf(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "gh2sf"
 alias = "gh2sf"
-quote = "There is always hope. -- Aragorn"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 gh2sf = gh2sf
 
 

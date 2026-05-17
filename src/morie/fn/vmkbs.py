@@ -36,7 +36,7 @@ def vmkbs(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmkbs"
 alias = "vmkbs"
-quote = "Make it so. -- Picard"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 vmkbs = vmkbs
 
 

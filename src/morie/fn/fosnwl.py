@@ -39,7 +39,7 @@ def fosnwl(dbh=None, height=None, coords=None, n=50):
 
 short = "fosnwl"
 alias = "fosnwl"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Number rules the universe. -- Pythagoras"
 fosnwl = fosnwl
 
 

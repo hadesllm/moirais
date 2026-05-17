@@ -29,7 +29,7 @@ def cassni(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "cassni"
 alias = "cassni"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 cassni = cassni
 
 

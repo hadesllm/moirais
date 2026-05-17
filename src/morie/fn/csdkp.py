@@ -34,7 +34,7 @@ def csdkp(incidents=None, population=None, coords=None, n=50):
 
 short = "csdkp"
 alias = "csdkp"
-quote = "Science! -- Jesse Pinkman"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 csdkp = csdkp
 
 

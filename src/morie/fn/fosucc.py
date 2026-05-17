@@ -39,7 +39,7 @@ def fosucc(dbh=None, height=None, coords=None, n=50):
 
 short = "fosucc"
 alias = "fosucc"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 fosucc = fosucc
 
 

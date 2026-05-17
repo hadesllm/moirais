@@ -38,7 +38,7 @@ def aggrn(areas=None, perimeters=None, values=None, n=30):
 
 short = "aggrn"
 alias = "aggrn"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 aggrn = aggrn
 
 

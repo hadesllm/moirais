@@ -33,7 +33,7 @@ def getrs(gdp=None, trade=None, coords=None, n=50):
 
 short = "getrs"
 alias = "getrs"
-quote = "I am here! -- All Might"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 getrs = getrs
 
 

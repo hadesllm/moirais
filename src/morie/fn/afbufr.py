@@ -33,7 +33,7 @@ def afbufr(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afbufr"
 alias = "afbufr"
-quote = "Tatakae! -- Eren"
+quote = "There is no royal road to geometry. -- Euclid"
 afbufr = afbufr
 
 

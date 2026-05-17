@@ -29,7 +29,7 @@ def hexsmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "hexsmp"
 alias = "hexsmp"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 hexsmp = hexsmp
 
 

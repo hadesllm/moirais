@@ -32,7 +32,7 @@ def sosom(data=None, depth=None, coords=None, n=50):
 
 short = "sosom"
 alias = "sosom"
-quote = "Arise. -- Shadow Monarch"
+quote = "I think, therefore I am. -- Rene Descartes"
 sosom = sosom
 
 

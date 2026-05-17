@@ -40,7 +40,7 @@ def mamar(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mamar"
 alias = "mamar"
-quote = "Tatakae! -- Eren"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 mamar = mamar
 
 

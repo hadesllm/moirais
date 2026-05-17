@@ -40,7 +40,7 @@ def dk3an(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3an"
 alias = "dk3an"
-quote = "I am the hope of the universe. -- Goku"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 dk3an = dk3an
 
 

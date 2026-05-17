@@ -28,7 +28,7 @@ def psvot(data=None, n=50):
 
 short = "psvot"
 alias = "psvot"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 psvot = psvot
 
 

@@ -31,7 +31,7 @@ def dtfsk(x=None, n=100, params=None):
 
 short = "dtfsk"
 alias = "dtfsk"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "What is now proved was once only imagined. -- William Blake"
 dtfsk = dtfsk
 
 

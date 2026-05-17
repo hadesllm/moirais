@@ -33,7 +33,7 @@ def hydis(flow=None, precip=None, coords=None, n=50):
 
 short = "hydis"
 alias = "hydis"
-quote = "Tatakae! -- Eren"
+quote = "We must know. We will know. -- David Hilbert"
 hydis = hydis
 
 

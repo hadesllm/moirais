@@ -43,7 +43,7 @@ def sagjo(values=None, w=None, n=50):
 
 short = "sagjo"
 alias = "sagjo"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 sagjo = sagjo
 
 

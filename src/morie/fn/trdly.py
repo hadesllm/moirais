@@ -36,7 +36,7 @@ def trdly(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trdly"
 alias = "trdly"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 trdly = trdly
 
 

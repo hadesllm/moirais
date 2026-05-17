@@ -37,7 +37,7 @@ def tsspc(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsspc"
 alias = "tsspc"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 tsspc = tsspc
 
 

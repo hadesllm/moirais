@@ -36,7 +36,7 @@ def trspb(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trspb"
 alias = "trspb"
-quote = "It's over 9000! -- Vegeta"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 trspb = trspb
 
 

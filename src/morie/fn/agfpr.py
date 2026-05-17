@@ -38,7 +38,7 @@ def agfpr(areas=None, perimeters=None, values=None, n=30):
 
 short = "agfpr"
 alias = "agfpr"
-quote = "Whatever happens, happens. -- Spike"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 agfpr = agfpr
 
 

@@ -43,7 +43,7 @@ def samsp(values=None, w=None, n=50):
 
 short = "samsp"
 alias = "samsp"
-quote = "See you space cowboy. -- Spike"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 samsp = samsp
 
 

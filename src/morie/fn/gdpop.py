@@ -36,7 +36,7 @@ def gdpop(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdpop"
 alias = "gdpop"
-quote = "Believe it! -- Naruto"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 gdpop = gdpop
 
 

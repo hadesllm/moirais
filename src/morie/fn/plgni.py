@@ -28,7 +28,7 @@ def plgni(data=None, n=50):
 
 short = "plgni"
 alias = "plgni"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 plgni = plgni
 
 

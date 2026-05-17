@@ -37,7 +37,7 @@ def annsi(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "annsi"
 alias = "annsi"
-quote = "Live long and prosper. -- Spock"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 annsi = annsi
 
 

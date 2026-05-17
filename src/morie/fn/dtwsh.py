@@ -31,7 +31,7 @@ def dtwsh(x=None, n=100, params=None):
 
 short = "dtwsh"
 alias = "dtwsh"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 dtwsh = dtwsh
 
 

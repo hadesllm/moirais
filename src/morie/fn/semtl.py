@@ -39,7 +39,7 @@ def semtl(cases=None, population=None, coords=None, n=50):
 
 short = "semtl"
 alias = "semtl"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 semtl = semtl
 
 

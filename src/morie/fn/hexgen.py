@@ -29,7 +29,7 @@ def hexgen(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "hexgen"
 alias = "hexgen"
-quote = "There is always hope. -- Aragorn"
+quote = "The measure of a man is what he does with power. -- Plato"
 hexgen = hexgen
 
 

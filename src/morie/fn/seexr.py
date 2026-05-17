@@ -39,7 +39,7 @@ def seexr(cases=None, population=None, coords=None, n=50):
 
 short = "seexr"
 alias = "seexr"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 seexr = seexr
 
 

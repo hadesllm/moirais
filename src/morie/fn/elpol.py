@@ -28,7 +28,7 @@ def elpol(data=None, n=50):
 
 short = "elpol"
 alias = "elpol"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 elpol = elpol
 
 

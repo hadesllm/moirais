@@ -40,7 +40,7 @@ def dk4ok(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk4ok"
 alias = "dk4ok"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 dk4ok = dk4ok
 
 

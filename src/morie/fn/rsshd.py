@@ -32,7 +32,7 @@ def rsshd(pixels=None, bands=None, n=100):
 
 short = "rsshd"
 alias = "rsshd"
-quote = "Resistance is futile. -- Borg"
+quote = "We must know. We will know. -- David Hilbert"
 rsshd = rsshd
 
 

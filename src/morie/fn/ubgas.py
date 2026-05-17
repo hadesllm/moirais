@@ -33,7 +33,7 @@ def ubgas(population=None, area=None, coords=None, n=50):
 
 short = "ubgas"
 alias = "ubgas"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "There is no royal road to geometry. -- Euclid"
 ubgas = ubgas
 
 

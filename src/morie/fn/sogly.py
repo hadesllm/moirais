@@ -32,7 +32,7 @@ def sogly(data=None, depth=None, coords=None, n=50):
 
 short = "sogly"
 alias = "sogly"
-quote = "Bankai! -- Ichigo"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 sogly = sogly
 
 

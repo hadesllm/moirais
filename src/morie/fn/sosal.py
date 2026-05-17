@@ -32,7 +32,7 @@ def sosal(data=None, depth=None, coords=None, n=50):
 
 short = "sosal"
 alias = "sosal"
-quote = "Make it so. -- Picard"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 sosal = sosal
 
 

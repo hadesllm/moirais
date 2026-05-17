@@ -32,7 +32,7 @@ def sopor(data=None, depth=None, coords=None, n=50):
 
 short = "sopor"
 alias = "sopor"
-quote = "I am the one who knocks. -- Walter White"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 sopor = sopor
 
 

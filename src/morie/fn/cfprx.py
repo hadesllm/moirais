@@ -28,7 +28,7 @@ def cfprx(data=None, n=50):
 
 short = "cfprx"
 alias = "cfprx"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 cfprx = cfprx
 
 

@@ -40,7 +40,7 @@ def masctc(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "masctc"
 alias = "masctc"
-quote = "My precious. -- Gollum"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 masctc = masctc
 
 

@@ -36,7 +36,7 @@ def trscr(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trscr"
 alias = "trscr"
-quote = "I mustn't run away. -- Shinji"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 trscr = trscr
 
 

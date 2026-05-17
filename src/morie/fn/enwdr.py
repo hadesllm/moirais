@@ -31,7 +31,7 @@ def enwdr(data=None, coords=None, n=50):
 
 short = "enwdr"
 alias = "enwdr"
-quote = "Live long and prosper. -- Spock"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 enwdr = enwdr
 
 

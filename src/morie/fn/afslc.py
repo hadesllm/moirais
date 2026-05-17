@@ -33,7 +33,7 @@ def afslc(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afslc"
 alias = "afslc"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 afslc = afslc
 
 

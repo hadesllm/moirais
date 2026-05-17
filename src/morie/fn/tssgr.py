@@ -37,7 +37,7 @@ def tssgr(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssgr"
 alias = "tssgr"
-quote = "I am here! -- All Might"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 tssgr = tssgr
 
 

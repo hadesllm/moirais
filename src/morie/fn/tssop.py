@@ -37,7 +37,7 @@ def tssop(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssop"
 alias = "tssop"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 tssop = tssop
 
 

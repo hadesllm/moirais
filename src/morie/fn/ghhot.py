@@ -41,7 +41,7 @@ def ghhot(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghhot"
 alias = "ghhot"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 ghhot = ghhot
 
 

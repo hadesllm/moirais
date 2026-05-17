@@ -40,7 +40,7 @@ def clcmp(data=None, n=50, k=3, coords=None):
 
 short = "clcmp"
 alias = "clcmp"
-quote = "Winter is coming. -- Stark motto"
+quote = "Number rules the universe. -- Pythagoras"
 clcmp = clcmp
 
 

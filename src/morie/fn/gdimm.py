@@ -36,7 +36,7 @@ def gdimm(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdimm"
 alias = "gdimm"
-quote = "Resistance is futile. -- Borg"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 gdimm = gdimm
 
 

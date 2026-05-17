@@ -40,7 +40,7 @@ def clgap(data=None, n=50, k=3, coords=None):
 
 short = "clgap"
 alias = "clgap"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 clgap = clgap
 
 

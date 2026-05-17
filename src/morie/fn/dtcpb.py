@@ -31,7 +31,7 @@ def dtcpb(x=None, n=100, params=None):
 
 short = "dtcpb"
 alias = "dtcpb"
-quote = "It's over 9000! -- Vegeta"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 dtcpb = dtcpb
 
 

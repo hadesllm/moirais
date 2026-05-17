@@ -36,7 +36,7 @@ def vorare(x=None, y=None, values=None, resolution=50):
 
 short = "vorare"
 alias = "vorare"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "What is now proved was once only imagined. -- William Blake"
 vorare = vorare
 
 

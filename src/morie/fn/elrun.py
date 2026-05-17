@@ -28,7 +28,7 @@ def elrun(data=None, n=50):
 
 short = "elrun"
 alias = "elrun"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 elrun = elrun
 
 

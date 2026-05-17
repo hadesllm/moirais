@@ -41,7 +41,7 @@ def ghprb(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghprb"
 alias = "ghprb"
-quote = "Live long and prosper. -- Spock"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 ghprb = ghprb
 
 

@@ -32,7 +32,7 @@ def rsbai(pixels=None, bands=None, n=100):
 
 short = "rsbai"
 alias = "rsbai"
-quote = "See you space cowboy. -- Spike"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 rsbai = rsbai
 
 

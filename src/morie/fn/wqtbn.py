@@ -30,7 +30,7 @@ def wqtbn(data=None, coords=None, n=50):
 
 short = "wqtbn"
 alias = "wqtbn"
-quote = "It's over 9000! -- Vegeta"
+quote = "We must know. We will know. -- David Hilbert"
 wqtbn = wqtbn
 
 

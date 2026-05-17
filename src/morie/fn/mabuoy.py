@@ -40,7 +40,7 @@ def mabuoy(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mabuoy"
 alias = "mabuoy"
-quote = "Make it so. -- Picard"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 mabuoy = mabuoy
 
 

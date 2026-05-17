@@ -33,7 +33,7 @@ def afsom(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afsom"
 alias = "afsom"
-quote = "I am justice! -- Light"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 afsom = afsom
 
 

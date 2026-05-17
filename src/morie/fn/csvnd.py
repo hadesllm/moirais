@@ -34,7 +34,7 @@ def csvnd(incidents=None, population=None, coords=None, n=50):
 
 short = "csvnd"
 alias = "csvnd"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "Knowledge is power. -- Francis Bacon"
 csvnd = csvnd
 
 

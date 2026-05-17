@@ -46,7 +46,7 @@ def opmax(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opmax"
 alias = "opmax"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 opmax = opmax
 
 

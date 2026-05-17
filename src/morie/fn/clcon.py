@@ -40,7 +40,7 @@ def clcon(data=None, n=50, k=3, coords=None):
 
 short = "clcon"
 alias = "clcon"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 clcon = clcon
 
 

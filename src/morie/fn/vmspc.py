@@ -36,7 +36,7 @@ def vmspc(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmspc"
 alias = "vmspc"
-quote = "I mustn't run away. -- Shinji"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 vmspc = vmspc
 
 

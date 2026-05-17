@@ -117,7 +117,7 @@ def arfit(y, p=1, demean=True):
 
 short = "arfit"
 alias = "ar_yulewalker"
-quote = "Knowing yourself is the beginning of all wisdom. -- Aristotle"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 __all__ = ["arfit"]
 
 

@@ -29,7 +29,7 @@ def rotgrd(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "rotgrd"
 alias = "rotgrd"
-quote = "Keep moving forward. -- Eren"
+quote = "Knowledge is power. -- Francis Bacon"
 rotgrd = rotgrd
 
 

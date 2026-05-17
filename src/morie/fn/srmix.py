@@ -38,7 +38,7 @@ def srmix(X=None, y=None, w=None, n=50, k=3):
 
 short = "srmix"
 alias = "srmix"
-quote = "I am here! -- All Might"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 srmix = srmix
 
 

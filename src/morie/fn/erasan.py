@@ -37,7 +37,7 @@ def erasan(x=None, y=None, values=None, resolution=50):
 
 short = "erasan"
 alias = "erasan"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 erasan = erasan
 
 

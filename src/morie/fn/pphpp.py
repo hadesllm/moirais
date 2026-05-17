@@ -36,7 +36,7 @@ def pphpp(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "pphpp"
 alias = "pphpp"
-quote = "There is always hope. -- Aragorn"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 pphpp = pphpp
 
 

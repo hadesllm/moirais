@@ -30,7 +30,7 @@ def wqrec(data=None, coords=None, n=50):
 
 short = "wqrec"
 alias = "wqrec"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 wqrec = wqrec
 
 

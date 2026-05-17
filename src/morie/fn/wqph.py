@@ -30,7 +30,7 @@ def wqph(data=None, coords=None, n=50):
 
 short = "wqph"
 alias = "wqph"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 wqph = wqph
 
 

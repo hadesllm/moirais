@@ -43,7 +43,7 @@ def sawer(values=None, w=None, n=50):
 
 short = "sawer"
 alias = "sawer"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 sawer = sawer
 
 

@@ -30,7 +30,7 @@ def wqno2(data=None, coords=None, n=50):
 
 short = "wqno2"
 alias = "wqno2"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 wqno2 = wqno2
 
 

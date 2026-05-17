@@ -33,7 +33,7 @@ def afrng(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afrng"
 alias = "afrng"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 afrng = afrng
 
 

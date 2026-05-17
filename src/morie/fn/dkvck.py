@@ -40,7 +40,7 @@ def dkvck(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkvck"
 alias = "dkvck"
-quote = "Science! -- Jesse Pinkman"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 dkvck = dkvck
 
 

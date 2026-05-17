@@ -32,7 +32,7 @@ def socal(data=None, depth=None, coords=None, n=50):
 
 short = "socal"
 alias = "socal"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 socal = socal
 
 

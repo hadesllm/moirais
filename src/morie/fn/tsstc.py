@@ -37,7 +37,7 @@ def tsstc(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsstc"
 alias = "tsstc"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 tsstc = tsstc
 
 

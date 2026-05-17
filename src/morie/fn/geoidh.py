@@ -29,7 +29,7 @@ def geoidh(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "geoidh"
 alias = "geoidh"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 geoidh = geoidh
 
 

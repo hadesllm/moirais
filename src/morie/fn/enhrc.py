@@ -31,7 +31,7 @@ def enhrc(data=None, coords=None, n=50):
 
 short = "enhrc"
 alias = "enhrc"
-quote = "I am here! -- All Might"
+quote = "Number rules the universe. -- Pythagoras"
 enhrc = enhrc
 
 

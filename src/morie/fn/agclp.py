@@ -38,7 +38,7 @@ def agclp(areas=None, perimeters=None, values=None, n=30):
 
 short = "agclp"
 alias = "agclp"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 agclp = agclp
 
 

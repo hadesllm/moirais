@@ -36,7 +36,7 @@ def trped(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trped"
 alias = "trped"
-quote = "Hold the door. -- Hodor"
+quote = "Number rules the universe. -- Pythagoras"
 trped = trped
 
 

@@ -43,7 +43,7 @@ def sawnb(values=None, w=None, n=50):
 
 short = "sawnb"
 alias = "sawnb"
-quote = "Breathe. -- Tanjiro"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 sawnb = sawnb
 
 

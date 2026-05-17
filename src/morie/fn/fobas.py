@@ -39,7 +39,7 @@ def fobas(dbh=None, height=None, coords=None, n=50):
 
 short = "fobas"
 alias = "fobas"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 fobas = fobas
 
 

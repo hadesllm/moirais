@@ -37,7 +37,7 @@ def mdsta(data=None, query=None, origin=None, *, n=50):
 
 short = "mdsta"
 alias = "mdsta"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 mdsta = mdsta
 
 

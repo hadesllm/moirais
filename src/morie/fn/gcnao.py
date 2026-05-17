@@ -31,7 +31,7 @@ def gcnao(data=None, coords=None, n=50):
 
 short = "gcnao"
 alias = "gcnao"
-quote = "It's over 9000! -- Vegeta"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 gcnao = gcnao
 
 

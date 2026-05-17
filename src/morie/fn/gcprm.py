@@ -31,7 +31,7 @@ def gcprm(data=None, coords=None, n=50):
 
 short = "gcprm"
 alias = "gcprm"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 gcprm = gcprm
 
 

@@ -31,7 +31,7 @@ def dtjhs(x=None, n=100, params=None):
 
 short = "dtjhs"
 alias = "dtjhs"
-quote = "Resistance is futile. -- Borg"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 dtjhs = dtjhs
 
 

@@ -39,7 +39,7 @@ def seclr(cases=None, population=None, coords=None, n=50):
 
 short = "seclr"
 alias = "seclr"
-quote = "Arise. -- Shadow Monarch"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 seclr = seclr
 
 

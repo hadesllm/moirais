@@ -37,7 +37,7 @@ def isngm(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "isngm"
 alias = "isngm"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 isngm = isngm
 
 

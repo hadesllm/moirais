@@ -34,7 +34,7 @@ def csbrg(incidents=None, population=None, coords=None, n=50):
 
 short = "csbrg"
 alias = "csbrg"
-quote = "I am here! -- All Might"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 csbrg = csbrg
 
 

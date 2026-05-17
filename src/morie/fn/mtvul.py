@@ -37,7 +37,7 @@ def mtvul(trajectory=None, n=50, dt=1.0):
 
 short = "mtvul"
 alias = "mtvul"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 mtvul = mtvul
 
 

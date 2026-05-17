@@ -33,7 +33,7 @@ def afdis(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afdis"
 alias = "afdis"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 afdis = afdis
 
 

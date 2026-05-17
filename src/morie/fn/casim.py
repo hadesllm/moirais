@@ -37,7 +37,7 @@ def casim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "casim"
 alias = "casim"
-quote = "I mustn't run away. -- Shinji"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 casim = casim
 
 

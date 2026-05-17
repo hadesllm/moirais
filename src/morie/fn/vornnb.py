@@ -36,7 +36,7 @@ def vornnb(x=None, y=None, values=None, resolution=50):
 
 short = "vornnb"
 alias = "vornnb"
-quote = "One does not simply walk. -- Boromir"
+quote = "We must know. We will know. -- David Hilbert"
 vornnb = vornnb
 
 

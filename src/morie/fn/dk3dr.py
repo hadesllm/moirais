@@ -40,7 +40,7 @@ def dk3dr(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3dr"
 alias = "dk3dr"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 dk3dr = dk3dr
 
 

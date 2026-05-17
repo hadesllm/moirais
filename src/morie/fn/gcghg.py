@@ -31,7 +31,7 @@ def gcghg(data=None, coords=None, n=50):
 
 short = "gcghg"
 alias = "gcghg"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Number rules the universe. -- Pythagoras"
 gcghg = gcghg
 
 

@@ -31,7 +31,7 @@ def engau(data=None, coords=None, n=50):
 
 short = "engau"
 alias = "engau"
-quote = "See you space cowboy. -- Spike"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 engau = engau
 
 

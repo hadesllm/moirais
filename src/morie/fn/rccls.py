@@ -29,7 +29,7 @@ def rccls(data=None, n=50):
 
 short = "rccls"
 alias = "rccls"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 rccls = rccls
 
 

@@ -36,7 +36,7 @@ def gdref(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdref"
 alias = "gdref"
-quote = "I am here! -- All Might"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 gdref = gdref
 
 

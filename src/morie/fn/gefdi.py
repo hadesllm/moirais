@@ -33,7 +33,7 @@ def gefdi(gdp=None, trade=None, coords=None, n=50):
 
 short = "gefdi"
 alias = "gefdi"
-quote = "Valar Morghulis. -- Braavos"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 gefdi = gefdi
 
 

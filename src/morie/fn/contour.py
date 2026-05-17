@@ -37,7 +37,7 @@ def contour(x=None, y=None, values=None, resolution=50):
 
 short = "contour"
 alias = "contour"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 contour = contour
 
 

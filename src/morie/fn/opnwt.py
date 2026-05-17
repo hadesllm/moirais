@@ -46,7 +46,7 @@ def opnwt(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opnwt"
 alias = "opnwt"
-quote = "I am the hope of the universe. -- Goku"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 opnwt = opnwt
 
 

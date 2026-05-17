@@ -40,7 +40,7 @@ def dkssm(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkssm"
 alias = "dkssm"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 dkssm = dkssm
 
 

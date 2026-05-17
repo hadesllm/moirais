@@ -36,7 +36,7 @@ def vmnug(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmnug"
 alias = "vmnug"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The measure of a man is what he does with power. -- Plato"
 vmnug = vmnug
 
 

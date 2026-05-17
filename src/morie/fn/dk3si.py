@@ -40,7 +40,7 @@ def dk3si(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3si"
 alias = "dk3si"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "What is now proved was once only imagined. -- William Blake"
 dk3si = dk3si
 
 

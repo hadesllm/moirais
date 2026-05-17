@@ -36,7 +36,7 @@ def gdurb(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdurb"
 alias = "gdurb"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "We must know. We will know. -- David Hilbert"
 gdurb = gdurb
 
 

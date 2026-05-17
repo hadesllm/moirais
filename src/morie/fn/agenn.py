@@ -38,7 +38,7 @@ def agenn(areas=None, perimeters=None, values=None, n=30):
 
 short = "agenn"
 alias = "agenn"
-quote = "See you space cowboy. -- Spike"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 agenn = agenn
 
 

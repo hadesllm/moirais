@@ -33,7 +33,7 @@ def hyfdr(flow=None, precip=None, coords=None, n=50):
 
 short = "hyfdr"
 alias = "hyfdr"
-quote = "Believe it! -- Naruto"
+quote = "What is now proved was once only imagined. -- William Blake"
 hyfdr = hyfdr
 
 

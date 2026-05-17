@@ -28,7 +28,7 @@ def iscrs(data=None, n=50):
 
 short = "iscrs"
 alias = "iscrs"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "What is now proved was once only imagined. -- William Blake"
 iscrs = iscrs
 
 

@@ -33,7 +33,7 @@ def hyidf(flow=None, precip=None, coords=None, n=50):
 
 short = "hyidf"
 alias = "hyidf"
-quote = "Kamehameha! -- Goku"
+quote = "The measure of a man is what he does with power. -- Plato"
 hyidf = hyidf
 
 

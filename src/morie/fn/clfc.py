@@ -40,7 +40,7 @@ def clfc(data=None, n=50, k=3, coords=None):
 
 short = "clfc"
 alias = "clfc"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 clfc = clfc
 
 

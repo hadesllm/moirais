@@ -36,7 +36,7 @@ def ppmrk(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppmrk"
 alias = "ppmrk"
-quote = "Arise. -- Shadow Monarch"
+quote = "There is no royal road to geometry. -- Euclid"
 ppmrk = ppmrk
 
 

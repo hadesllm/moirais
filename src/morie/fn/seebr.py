@@ -39,7 +39,7 @@ def seebr(cases=None, population=None, coords=None, n=50):
 
 short = "seebr"
 alias = "seebr"
-quote = "Keep moving forward. -- Eren"
+quote = "There is no royal road to geometry. -- Euclid"
 seebr = seebr
 
 

@@ -31,7 +31,7 @@ def enexc(data=None, coords=None, n=50):
 
 short = "enexc"
 alias = "enexc"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 enexc = enexc
 
 

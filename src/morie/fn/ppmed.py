@@ -28,7 +28,7 @@ def ppmed(data=None, n=50):
 
 short = "ppmed"
 alias = "ppmed"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "What is now proved was once only imagined. -- William Blake"
 ppmed = ppmed
 
 

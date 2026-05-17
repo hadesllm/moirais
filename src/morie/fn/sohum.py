@@ -32,7 +32,7 @@ def sohum(data=None, depth=None, coords=None, n=50):
 
 short = "sohum"
 alias = "sohum"
-quote = "Winter is coming. -- Stark motto"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 sohum = sohum
 
 

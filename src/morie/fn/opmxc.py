@@ -46,7 +46,7 @@ def opmxc(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opmxc"
 alias = "opmxc"
-quote = "I am the one who knocks. -- Walter White"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 opmxc = opmxc
 
 

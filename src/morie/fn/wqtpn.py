@@ -30,7 +30,7 @@ def wqtpn(data=None, coords=None, n=50):
 
 short = "wqtpn"
 alias = "wqtpn"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 wqtpn = wqtpn
 
 

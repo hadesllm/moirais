@@ -46,7 +46,7 @@ def opldn(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opldn"
 alias = "opldn"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 opldn = opldn
 
 

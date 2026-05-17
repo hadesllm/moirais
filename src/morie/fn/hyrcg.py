@@ -33,7 +33,7 @@ def hyrcg(flow=None, precip=None, coords=None, n=50):
 
 short = "hyrcg"
 alias = "hyrcg"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "The measure of a man is what he does with power. -- Plato"
 hyrcg = hyrcg
 
 

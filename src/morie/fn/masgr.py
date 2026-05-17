@@ -40,7 +40,7 @@ def masgr(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "masgr"
 alias = "masgr"
-quote = "One does not simply walk. -- Boromir"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 masgr = masgr
 
 

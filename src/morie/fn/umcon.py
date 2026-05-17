@@ -27,7 +27,7 @@ def umcon(data=None, n=50):
 
 short = "umcon"
 alias = "umcon"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 umcon = umcon
 
 

@@ -41,7 +41,7 @@ def ghsdm(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghsdm"
 alias = "ghsdm"
-quote = "No half measures. -- Mike"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 ghsdm = ghsdm
 
 

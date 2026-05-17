@@ -37,7 +37,7 @@ def gaprox(x=None, y=None, values=None, resolution=50):
 
 short = "gaprox"
 alias = "gaprox"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "Number rules the universe. -- Pythagoras"
 gaprox = gaprox
 
 

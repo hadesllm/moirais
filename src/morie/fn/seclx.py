@@ -39,7 +39,7 @@ def seclx(cases=None, population=None, coords=None, n=50):
 
 short = "seclx"
 alias = "seclx"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 seclx = seclx
 
 

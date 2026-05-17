@@ -31,7 +31,7 @@ def dtcir(x=None, n=100, params=None):
 
 short = "dtcir"
 alias = "dtcir"
-quote = "Live long and prosper. -- Spock"
+quote = "The measure of a man is what he does with power. -- Plato"
 dtcir = dtcir
 
 

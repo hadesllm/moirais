@@ -37,7 +37,7 @@ def tsspn(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsspn"
 alias = "tsspn"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 tsspn = tsspn
 
 

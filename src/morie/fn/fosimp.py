@@ -39,7 +39,7 @@ def fosimp(dbh=None, height=None, coords=None, n=50):
 
 short = "fosimp"
 alias = "fosimp"
-quote = "There is always hope. -- Aragorn"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 fosimp = fosimp
 
 

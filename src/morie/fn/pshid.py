@@ -28,7 +28,7 @@ def pshid(data=None, n=50):
 
 short = "pshid"
 alias = "pshid"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 pshid = pshid
 
 

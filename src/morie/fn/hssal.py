@@ -29,7 +29,7 @@ def hssal(data=None, n=50):
 
 short = "hssal"
 alias = "hssal"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 hssal = hssal
 
 

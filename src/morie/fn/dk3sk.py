@@ -40,7 +40,7 @@ def dk3sk(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk3sk"
 alias = "dk3sk"
-quote = "There is always hope. -- Aragorn"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 dk3sk = dk3sk
 
 

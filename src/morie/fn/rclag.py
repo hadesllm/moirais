@@ -29,7 +29,7 @@ def rclag(data=None, n=50):
 
 short = "rclag"
 alias = "rclag"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 rclag = rclag
 
 

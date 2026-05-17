@@ -40,7 +40,7 @@ def maph(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maph"
 alias = "maph"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 maph = maph
 
 

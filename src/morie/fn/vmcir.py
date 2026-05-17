@@ -36,7 +36,7 @@ def vmcir(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmcir"
 alias = "vmcir"
-quote = "Yare yare daze. -- Jotaro"
+quote = "There is no royal road to geometry. -- Euclid"
 vmcir = vmcir
 
 

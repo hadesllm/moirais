@@ -39,7 +39,7 @@ def secla(cases=None, population=None, coords=None, n=50):
 
 short = "secla"
 alias = "secla"
-quote = "One does not simply walk. -- Boromir"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 secla = secla
 
 

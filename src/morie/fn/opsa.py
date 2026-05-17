@@ -46,7 +46,7 @@ def opsa(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opsa"
 alias = "opsa"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 opsa = opsa
 
 

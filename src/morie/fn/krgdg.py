@@ -33,7 +33,7 @@ def krgdg(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "krgdg"
 alias = "krgdg"
-quote = "Yare yare daze. -- Jotaro"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 krgdg = krgdg
 
 

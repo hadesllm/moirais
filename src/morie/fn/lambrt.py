@@ -29,7 +29,7 @@ def lambrt(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "lambrt"
 alias = "lambrt"
-quote = "See you space cowboy. -- Spike"
+quote = "The measure of a man is what he does with power. -- Plato"
 lambrt = lambrt
 
 

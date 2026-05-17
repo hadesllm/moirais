@@ -33,7 +33,7 @@ def ubpol(population=None, area=None, coords=None, n=50):
 
 short = "ubpol"
 alias = "ubpol"
-quote = "This is Requiem. -- Giorno"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 ubpol = ubpol
 
 

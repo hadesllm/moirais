@@ -40,7 +40,7 @@ def maref(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maref"
 alias = "maref"
-quote = "I am here! -- All Might"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 maref = maref
 
 

@@ -31,7 +31,7 @@ def nblmx(data=None, coords=None, n=50):
 
 short = "nblmx"
 alias = "nblmx"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 nblmx = nblmx
 
 

@@ -31,7 +31,7 @@ def enpm2(data=None, coords=None, n=50):
 
 short = "enpm2"
 alias = "enpm2"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 enpm2 = enpm2
 
 

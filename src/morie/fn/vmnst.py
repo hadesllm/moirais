@@ -36,7 +36,7 @@ def vmnst(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmnst"
 alias = "vmnst"
-quote = "I am justice! -- Light"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 vmnst = vmnst
 
 

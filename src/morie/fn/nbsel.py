@@ -31,7 +31,7 @@ def nbsel(data=None, coords=None, n=50):
 
 short = "nbsel"
 alias = "nbsel"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 nbsel = nbsel
 
 

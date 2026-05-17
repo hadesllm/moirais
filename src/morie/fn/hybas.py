@@ -33,7 +33,7 @@ def hybas(flow=None, precip=None, coords=None, n=50):
 
 short = "hybas"
 alias = "hybas"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 hybas = hybas
 
 

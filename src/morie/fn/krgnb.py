@@ -33,7 +33,7 @@ def krgnb(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "krgnb"
 alias = "krgnb"
-quote = "I am justice! -- Light"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 krgnb = krgnb
 
 

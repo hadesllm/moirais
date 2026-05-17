@@ -40,7 +40,7 @@ def clfst(data=None, n=50, k=3, coords=None):
 
 short = "clfst"
 alias = "clfst"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "We must know. We will know. -- David Hilbert"
 clfst = clfst
 
 

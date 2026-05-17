@@ -37,7 +37,7 @@ def tskrf(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tskrf"
 alias = "tskrf"
-quote = "Believe it! -- Naruto"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 tskrf = tskrf
 
 

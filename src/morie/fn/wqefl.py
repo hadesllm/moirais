@@ -30,7 +30,7 @@ def wqefl(data=None, coords=None, n=50):
 
 short = "wqefl"
 alias = "wqefl"
-quote = "It's over 9000! -- Vegeta"
+quote = "Number rules the universe. -- Pythagoras"
 wqefl = wqefl
 
 

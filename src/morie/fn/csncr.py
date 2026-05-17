@@ -34,7 +34,7 @@ def csncr(incidents=None, population=None, coords=None, n=50):
 
 short = "csncr"
 alias = "csncr"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 csncr = csncr
 
 

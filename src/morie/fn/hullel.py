@@ -37,7 +37,7 @@ def hullel(x=None, y=None, values=None, resolution=50):
 
 short = "hullel"
 alias = "hullel"
-quote = "Breathe. -- Tanjiro"
+quote = "There is no royal road to geometry. -- Euclid"
 hullel = hullel
 
 

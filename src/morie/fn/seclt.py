@@ -39,7 +39,7 @@ def seclt(cases=None, population=None, coords=None, n=50):
 
 short = "seclt"
 alias = "seclt"
-quote = "I am justice! -- Light"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 seclt = seclt
 
 

@@ -34,7 +34,7 @@ def csrob(incidents=None, population=None, coords=None, n=50):
 
 short = "csrob"
 alias = "csrob"
-quote = "You should enjoy the detours. -- Ging"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 csrob = csrob
 
 

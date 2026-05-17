@@ -33,7 +33,7 @@ def ublit(population=None, area=None, coords=None, n=50):
 
 short = "ublit"
 alias = "ublit"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 ublit = ublit
 
 

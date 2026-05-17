@@ -31,7 +31,7 @@ def nbzne(data=None, coords=None, n=50):
 
 short = "nbzne"
 alias = "nbzne"
-quote = "Arise. -- Shadow Monarch"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 nbzne = nbzne
 
 

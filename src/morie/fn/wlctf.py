@@ -30,7 +30,7 @@ def wlctf(abundance=None, coords=None, n=50):
 
 short = "wlctf"
 alias = "wlctf"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 wlctf = wlctf
 
 

@@ -28,7 +28,7 @@ def idpvt(data=None, n=50):
 
 short = "idpvt"
 alias = "idpvt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 idpvt = idpvt
 
 

@@ -39,7 +39,7 @@ def fowndf(dbh=None, height=None, coords=None, n=50):
 
 short = "fowndf"
 alias = "fowndf"
-quote = "Resistance is futile. -- Borg"
+quote = "I think, therefore I am. -- Rene Descartes"
 fowndf = fowndf
 
 

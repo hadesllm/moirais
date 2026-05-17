@@ -31,7 +31,7 @@ def nbcnl(data=None, coords=None, n=50):
 
 short = "nbcnl"
 alias = "nbcnl"
-quote = "It's over 9000! -- Vegeta"
+quote = "What is now proved was once only imagined. -- William Blake"
 nbcnl = nbcnl
 
 

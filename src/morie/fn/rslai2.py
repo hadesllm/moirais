@@ -32,7 +32,7 @@ def rslai2(pixels=None, bands=None, n=100):
 
 short = "rslai2"
 alias = "rslai2"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 rslai2 = rslai2
 
 

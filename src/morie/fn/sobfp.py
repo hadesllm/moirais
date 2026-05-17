@@ -32,7 +32,7 @@ def sobfp(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "sobfp"
 alias = "sobfp"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 sobfp = sobfp
 
 

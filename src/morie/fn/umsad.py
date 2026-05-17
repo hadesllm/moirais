@@ -27,7 +27,7 @@ def umsad(data=None, n=50):
 
 short = "umsad"
 alias = "umsad"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 umsad = umsad
 
 

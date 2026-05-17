@@ -39,7 +39,7 @@ def focnp(dbh=None, height=None, coords=None, n=50):
 
 short = "focnp"
 alias = "focnp"
-quote = "I am justice! -- Light"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 focnp = focnp
 
 

@@ -30,7 +30,7 @@ def wqso4(data=None, coords=None, n=50):
 
 short = "wqso4"
 alias = "wqso4"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 wqso4 = wqso4
 
 

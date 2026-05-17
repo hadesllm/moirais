@@ -33,7 +33,7 @@ def hyfpl(flow=None, precip=None, coords=None, n=50):
 
 short = "hyfpl"
 alias = "hyfpl"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 hyfpl = hyfpl
 
 

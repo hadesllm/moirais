@@ -37,7 +37,7 @@ def fftsi(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "fftsi"
 alias = "fftsi"
-quote = "I am justice! -- Light"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 fftsi = fftsi
 
 

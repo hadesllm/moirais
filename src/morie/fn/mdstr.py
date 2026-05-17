@@ -37,7 +37,7 @@ def mdstr(data=None, query=None, origin=None, *, n=50):
 
 short = "mdstr"
 alias = "mdstr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 mdstr = mdstr
 
 

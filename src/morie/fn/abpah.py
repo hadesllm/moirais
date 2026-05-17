@@ -31,7 +31,7 @@ def abpah(data=None, coords=None, n=50):
 
 short = "abpah"
 alias = "abpah"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The measure of a man is what he does with power. -- Plato"
 abpah = abpah
 
 

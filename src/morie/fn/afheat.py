@@ -33,7 +33,7 @@ def afheat(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afheat"
 alias = "afheat"
-quote = "There is always hope. -- Aragorn"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 afheat = afheat
 
 

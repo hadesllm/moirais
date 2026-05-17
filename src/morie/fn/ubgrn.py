@@ -33,7 +33,7 @@ def ubgrn(population=None, area=None, coords=None, n=50):
 
 short = "ubgrn"
 alias = "ubgrn"
-quote = "See you space cowboy. -- Spike"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 ubgrn = ubgrn
 
 

@@ -39,7 +39,7 @@ def seclc(cases=None, population=None, coords=None, n=50):
 
 short = "seclc"
 alias = "seclc"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 seclc = seclc
 
 

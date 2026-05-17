@@ -40,7 +40,7 @@ def clwlk(data=None, n=50, k=3, coords=None):
 
 short = "clwlk"
 alias = "clwlk"
-quote = "Bankai! -- Ichigo"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 clwlk = clwlk
 
 

@@ -30,7 +30,7 @@ def wlsvm(abundance=None, coords=None, n=50):
 
 short = "wlsvm"
 alias = "wlsvm"
-quote = "Yare yare daze. -- Jotaro"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 wlsvm = wlsvm
 
 

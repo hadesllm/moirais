@@ -33,7 +33,7 @@ def ckflm(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "ckflm"
 alias = "ckflm"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 ckflm = ckflm
 
 

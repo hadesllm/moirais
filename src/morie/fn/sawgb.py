@@ -43,7 +43,7 @@ def sawgb(values=None, w=None, n=50):
 
 short = "sawgb"
 alias = "sawgb"
-quote = "One does not simply walk. -- Boromir"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 sawgb = sawgb
 
 

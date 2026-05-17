@@ -31,7 +31,7 @@ def gcgcm(data=None, coords=None, n=50):
 
 short = "gcgcm"
 alias = "gcgcm"
-quote = "Believe it! -- Naruto"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 gcgcm = gcgcm
 
 

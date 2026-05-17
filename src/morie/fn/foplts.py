@@ -39,7 +39,7 @@ def foplts(dbh=None, height=None, coords=None, n=50):
 
 short = "foplts"
 alias = "foplts"
-quote = "Hold the door. -- Hodor"
+quote = "What is now proved was once only imagined. -- William Blake"
 foplts = foplts
 
 

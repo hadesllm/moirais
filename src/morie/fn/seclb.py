@@ -39,7 +39,7 @@ def seclb(cases=None, population=None, coords=None, n=50):
 
 short = "seclb"
 alias = "seclb"
-quote = "Bankai! -- Ichigo"
+quote = "I think, therefore I am. -- Rene Descartes"
 seclb = seclb
 
 

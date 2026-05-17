@@ -33,7 +33,7 @@ def hyspi(flow=None, precip=None, coords=None, n=50):
 
 short = "hyspi"
 alias = "hyspi"
-quote = "Arise. -- Shadow Monarch"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 hyspi = hyspi
 
 

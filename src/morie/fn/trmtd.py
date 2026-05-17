@@ -36,7 +36,7 @@ def trmtd(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trmtd"
 alias = "trmtd"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 trmtd = trmtd
 
 

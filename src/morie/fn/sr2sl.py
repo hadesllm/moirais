@@ -38,7 +38,7 @@ def sr2sl(X=None, y=None, w=None, n=50, k=3):
 
 short = "sr2sl"
 alias = "sr2sl"
-quote = "One is all, all is one. -- Izumi"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 sr2sl = sr2sl
 
 

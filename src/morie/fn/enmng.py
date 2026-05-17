@@ -31,7 +31,7 @@ def enmng(data=None, coords=None, n=50):
 
 short = "enmng"
 alias = "enmng"
-quote = "Tatakae! -- Eren"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 enmng = enmng
 
 

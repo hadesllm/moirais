@@ -33,7 +33,7 @@ def gemfi(gdp=None, trade=None, coords=None, n=50):
 
 short = "gemfi"
 alias = "gemfi"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 gemfi = gemfi
 
 

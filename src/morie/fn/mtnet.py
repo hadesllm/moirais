@@ -37,7 +37,7 @@ def mtnet(trajectory=None, n=50, dt=1.0):
 
 short = "mtnet"
 alias = "mtnet"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 mtnet = mtnet
 
 

@@ -40,7 +40,7 @@ def dkstf(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkstf"
 alias = "dkstf"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "The measure of a man is what he does with power. -- Plato"
 dkstf = dkstf
 
 

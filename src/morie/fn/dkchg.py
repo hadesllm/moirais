@@ -40,7 +40,7 @@ def dkchg(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkchg"
 alias = "dkchg"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 dkchg = dkchg
 
 

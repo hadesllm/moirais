@@ -31,7 +31,7 @@ def gcice(data=None, coords=None, n=50):
 
 short = "gcice"
 alias = "gcice"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 gcice = gcice
 
 

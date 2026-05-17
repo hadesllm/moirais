@@ -32,7 +32,7 @@ def rschg(pixels=None, bands=None, n=100):
 
 short = "rschg"
 alias = "rschg"
-quote = "Kamehameha! -- Goku"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 rschg = rschg
 
 

@@ -39,7 +39,7 @@ def foage(dbh=None, height=None, coords=None, n=50):
 
 short = "foage"
 alias = "foage"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "We must know. We will know. -- David Hilbert"
 foage = foage
 
 

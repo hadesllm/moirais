@@ -33,7 +33,7 @@ def ubcmm(population=None, area=None, coords=None, n=50):
 
 short = "ubcmm"
 alias = "ubcmm"
-quote = "I mustn't run away. -- Shinji"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 ubcmm = ubcmm
 
 

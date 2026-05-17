@@ -28,7 +28,7 @@ def mpflk(data=None, n=50):
 
 short = "mpflk"
 alias = "mpflk"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 mpflk = mpflk
 
 

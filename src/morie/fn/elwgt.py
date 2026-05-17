@@ -28,7 +28,7 @@ def elwgt(data=None, n=50):
 
 short = "elwgt"
 alias = "elwgt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 elwgt = elwgt
 
 

@@ -31,7 +31,7 @@ def gcqbo(data=None, coords=None, n=50):
 
 short = "gcqbo"
 alias = "gcqbo"
-quote = "I am justice! -- Light"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 gcqbo = gcqbo
 
 

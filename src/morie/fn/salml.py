@@ -43,7 +43,7 @@ def salml(values=None, w=None, n=50):
 
 short = "salml"
 alias = "salml"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 salml = salml
 
 

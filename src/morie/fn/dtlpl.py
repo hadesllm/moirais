@@ -31,7 +31,7 @@ def dtlpl(x=None, n=100, params=None):
 
 short = "dtlpl"
 alias = "dtlpl"
-quote = "Whatever happens, happens. -- Spike"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 dtlpl = dtlpl
 
 

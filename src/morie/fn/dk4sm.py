@@ -40,7 +40,7 @@ def dk4sm(x=None, y=None, z=None, values=None, n=30):
 
 short = "dk4sm"
 alias = "dk4sm"
-quote = "Believe it! -- Naruto"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 dk4sm = dk4sm
 
 

@@ -43,7 +43,7 @@ def sawtf(values=None, w=None, n=50):
 
 short = "sawtf"
 alias = "sawtf"
-quote = "I mustn't run away. -- Shinji"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 sawtf = sawtf
 
 

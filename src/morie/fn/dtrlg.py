@@ -31,7 +31,7 @@ def dtrlg(x=None, n=100, params=None):
 
 short = "dtrlg"
 alias = "dtrlg"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "There is no royal road to geometry. -- Euclid"
 dtrlg = dtrlg
 
 

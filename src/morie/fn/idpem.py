@@ -28,7 +28,7 @@ def idpem(data=None, n=50):
 
 short = "idpem"
 alias = "idpem"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 idpem = idpem
 
 

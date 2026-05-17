@@ -40,7 +40,7 @@ def clden(data=None, n=50, k=3, coords=None):
 
 short = "clden"
 alias = "clden"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 clden = clden
 
 

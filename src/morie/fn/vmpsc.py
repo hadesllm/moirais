@@ -36,7 +36,7 @@ def vmpsc(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmpsc"
 alias = "vmpsc"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 vmpsc = vmpsc
 
 

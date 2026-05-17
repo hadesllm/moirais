@@ -36,7 +36,7 @@ def ppspx(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppspx"
 alias = "ppspx"
-quote = "One does not simply walk. -- Boromir"
+quote = "There is no royal road to geometry. -- Euclid"
 ppspx = ppspx
 
 

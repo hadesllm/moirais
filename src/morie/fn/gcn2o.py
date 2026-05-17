@@ -31,7 +31,7 @@ def gcn2o(data=None, coords=None, n=50):
 
 short = "gcn2o"
 alias = "gcn2o"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "We must know. We will know. -- David Hilbert"
 gcn2o = gcn2o
 
 

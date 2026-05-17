@@ -39,7 +39,7 @@ def fonchm(dbh=None, height=None, coords=None, n=50):
 
 short = "fonchm"
 alias = "fonchm"
-quote = "No half measures. -- Mike"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 fonchm = fonchm
 
 

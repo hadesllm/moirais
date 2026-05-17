@@ -41,7 +41,7 @@ def ghnod(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghnod"
 alias = "ghnod"
-quote = "I am here! -- All Might"
+quote = "We must know. We will know. -- David Hilbert"
 ghnod = ghnod
 
 

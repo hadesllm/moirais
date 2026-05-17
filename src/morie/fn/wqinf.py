@@ -30,7 +30,7 @@ def wqinf(data=None, coords=None, n=50):
 
 short = "wqinf"
 alias = "wqinf"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Number rules the universe. -- Pythagoras"
 wqinf = wqinf
 
 

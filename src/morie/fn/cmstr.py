@@ -28,7 +28,7 @@ def cmstr(data=None, n=50):
 
 short = "cmstr"
 alias = "cmstr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "There is no royal road to geometry. -- Euclid"
 cmstr = cmstr
 
 

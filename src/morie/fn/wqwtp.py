@@ -30,7 +30,7 @@ def wqwtp(data=None, coords=None, n=50):
 
 short = "wqwtp"
 alias = "wqwtp"
-quote = "I am justice! -- Light"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 wqwtp = wqwtp
 
 

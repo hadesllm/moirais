@@ -39,7 +39,7 @@ def fotrnk(dbh=None, height=None, coords=None, n=50):
 
 short = "fotrnk"
 alias = "fotrnk"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 fotrnk = fotrnk
 
 

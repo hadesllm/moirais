@@ -34,7 +34,7 @@ def csres(incidents=None, population=None, coords=None, n=50):
 
 short = "csres"
 alias = "csres"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 csres = csres
 
 

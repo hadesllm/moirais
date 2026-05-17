@@ -27,7 +27,7 @@ def umsto(data=None, n=50):
 
 short = "umsto"
 alias = "umsto"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 umsto = umsto
 
 

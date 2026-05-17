@@ -31,7 +31,7 @@ def enfrg(data=None, coords=None, n=50):
 
 short = "enfrg"
 alias = "enfrg"
-quote = "No half measures. -- Mike"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 enfrg = enfrg
 
 

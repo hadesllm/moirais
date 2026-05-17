@@ -33,7 +33,7 @@ def gernt(gdp=None, trade=None, coords=None, n=50):
 
 short = "gernt"
 alias = "gernt"
-quote = "Breathe. -- Tanjiro"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 gernt = gernt
 
 

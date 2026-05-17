@@ -46,7 +46,7 @@ def oppar(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "oppar"
 alias = "oppar"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "I think, therefore I am. -- Rene Descartes"
 oppar = oppar
 
 

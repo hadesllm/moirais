@@ -33,7 +33,7 @@ def geapt(gdp=None, trade=None, coords=None, n=50):
 
 short = "geapt"
 alias = "geapt"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 geapt = geapt
 
 

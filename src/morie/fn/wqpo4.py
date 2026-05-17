@@ -30,7 +30,7 @@ def wqpo4(data=None, coords=None, n=50):
 
 short = "wqpo4"
 alias = "wqpo4"
-quote = "Winter is coming. -- Stark motto"
+quote = "Number rules the universe. -- Pythagoras"
 wqpo4 = wqpo4
 
 

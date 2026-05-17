@@ -28,7 +28,7 @@ def cmchr(data=None, n=50):
 
 short = "cmchr"
 alias = "cmchr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 cmchr = cmchr
 
 

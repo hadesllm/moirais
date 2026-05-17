@@ -37,7 +37,7 @@ def tsmnl(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsmnl"
 alias = "tsmnl"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "We must know. We will know. -- David Hilbert"
 tsmnl = tsmnl
 
 

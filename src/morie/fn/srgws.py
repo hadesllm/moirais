@@ -38,7 +38,7 @@ def srgws(X=None, y=None, w=None, n=50, k=3):
 
 short = "srgws"
 alias = "srgws"
-quote = "Arise. -- Shadow Monarch"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 srgws = srgws
 
 

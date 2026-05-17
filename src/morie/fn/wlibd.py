@@ -30,7 +30,7 @@ def wlibd(abundance=None, coords=None, n=50):
 
 short = "wlibd"
 alias = "wlibd"
-quote = "Yare yare daze. -- Jotaro"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 wlibd = wlibd
 
 

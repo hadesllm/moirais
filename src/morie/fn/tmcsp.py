@@ -36,7 +36,7 @@ def tmcsp(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "tmcsp"
 alias = "tmcsp"
-quote = "Breathe. -- Tanjiro"
+quote = "Number rules the universe. -- Pythagoras"
 tmcsp = tmcsp
 
 

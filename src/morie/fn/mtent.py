@@ -37,7 +37,7 @@ def mtent(trajectory=None, n=50, dt=1.0):
 
 short = "mtent"
 alias = "mtent"
-quote = "Science! -- Jesse Pinkman"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 mtent = mtent
 
 

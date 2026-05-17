@@ -30,7 +30,7 @@ def wlsdm(abundance=None, coords=None, n=50):
 
 short = "wlsdm"
 alias = "wlsdm"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 wlsdm = wlsdm
 
 

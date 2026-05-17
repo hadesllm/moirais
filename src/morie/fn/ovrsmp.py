@@ -29,7 +29,7 @@ def ovrsmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "ovrsmp"
 alias = "ovrsmp"
-quote = "I mustn't run away. -- Shinji"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 ovrsmp = ovrsmp
 
 

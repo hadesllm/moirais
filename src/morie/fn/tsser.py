@@ -37,7 +37,7 @@ def tsser(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsser"
 alias = "tsser"
-quote = "Bankai! -- Ichigo"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 tsser = tsser
 
 

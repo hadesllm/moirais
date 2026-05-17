@@ -36,7 +36,7 @@ def gdrur(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdrur"
 alias = "gdrur"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 gdrur = gdrur
 
 

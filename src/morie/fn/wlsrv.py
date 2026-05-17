@@ -30,7 +30,7 @@ def wlsrv(abundance=None, coords=None, n=50):
 
 short = "wlsrv"
 alias = "wlsrv"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "There is no royal road to geometry. -- Euclid"
 wlsrv = wlsrv
 
 

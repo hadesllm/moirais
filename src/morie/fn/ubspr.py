@@ -33,7 +33,7 @@ def ubspr(population=None, area=None, coords=None, n=50):
 
 short = "ubspr"
 alias = "ubspr"
-quote = "Make it so. -- Picard"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 ubspr = ubspr
 
 

@@ -30,7 +30,7 @@ def wlkde(abundance=None, coords=None, n=50):
 
 short = "wlkde"
 alias = "wlkde"
-quote = "Arise. -- Shadow Monarch"
+quote = "The measure of a man is what he does with power. -- Plato"
 wlkde = wlkde
 
 

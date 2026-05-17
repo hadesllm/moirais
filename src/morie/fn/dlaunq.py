@@ -37,7 +37,7 @@ def dlaunq(x=None, y=None, values=None, resolution=50):
 
 short = "dlaunq"
 alias = "dlaunq"
-quote = "Resistance is futile. -- Borg"
+quote = "We must know. We will know. -- David Hilbert"
 dlaunq = dlaunq
 
 

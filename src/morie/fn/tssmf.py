@@ -37,7 +37,7 @@ def tssmf(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssmf"
 alias = "tssmf"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 tssmf = tssmf
 
 

@@ -40,7 +40,7 @@ def clclr(data=None, n=50, k=3, coords=None):
 
 short = "clclr"
 alias = "clclr"
-quote = "Make it so. -- Picard"
+quote = "I think, therefore I am. -- Rene Descartes"
 clclr = clclr
 
 

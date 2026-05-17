@@ -33,7 +33,7 @@ def aflch(yield_data=None, soil=None, coords=None, n=50):
 
 short = "aflch"
 alias = "aflch"
-quote = "I am here! -- All Might"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 aflch = aflch
 
 

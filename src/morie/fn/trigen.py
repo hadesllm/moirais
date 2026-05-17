@@ -28,7 +28,7 @@ def trigen(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "trigen"
 alias = "trigen"
-quote = "Engage. -- Picard"
+quote = "Knowledge is power. -- Francis Bacon"
 trigen = trigen
 
 

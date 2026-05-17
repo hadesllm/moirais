@@ -34,7 +34,7 @@ def csrgr(incidents=None, population=None, coords=None, n=50):
 
 short = "csrgr"
 alias = "csrgr"
-quote = "See you space cowboy. -- Spike"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 csrgr = csrgr
 
 

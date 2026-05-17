@@ -30,7 +30,7 @@ def wlglm(abundance=None, coords=None, n=50):
 
 short = "wlglm"
 alias = "wlglm"
-quote = "Make it so. -- Picard"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 wlglm = wlglm
 
 

@@ -32,7 +32,7 @@ def rscnf(pixels=None, bands=None, n=100):
 
 short = "rscnf"
 alias = "rscnf"
-quote = "Valar Morghulis. -- Braavos"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 rscnf = rscnf
 
 

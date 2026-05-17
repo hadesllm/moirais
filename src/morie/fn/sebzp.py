@@ -39,7 +39,7 @@ def sebzp(cases=None, population=None, coords=None, n=50):
 
 short = "sebzp"
 alias = "sebzp"
-quote = "Yare yare daze. -- Jotaro"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 sebzp = sebzp
 
 

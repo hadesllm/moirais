@@ -32,7 +32,7 @@ def rsmnd(pixels=None, bands=None, n=100):
 
 short = "rsmnd"
 alias = "rsmnd"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "There is no royal road to geometry. -- Euclid"
 rsmnd = rsmnd
 
 

@@ -39,7 +39,7 @@ def fosamp(dbh=None, height=None, coords=None, n=50):
 
 short = "fosamp"
 alias = "fosamp"
-quote = "Make it so. -- Picard"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 fosamp = fosamp
 
 

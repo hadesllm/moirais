@@ -28,7 +28,7 @@ def idpas(data=None, n=50):
 
 short = "idpas"
 alias = "idpas"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 idpas = idpas
 
 

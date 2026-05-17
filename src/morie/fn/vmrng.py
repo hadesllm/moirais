@@ -36,7 +36,7 @@ def vmrng(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmrng"
 alias = "vmrng"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 vmrng = vmrng
 
 

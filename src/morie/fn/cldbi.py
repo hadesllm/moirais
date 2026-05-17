@@ -40,7 +40,7 @@ def cldbi(data=None, n=50, k=3, coords=None):
 
 short = "cldbi"
 alias = "cldbi"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "Number rules the universe. -- Pythagoras"
 cldbi = cldbi
 
 

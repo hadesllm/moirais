@@ -28,7 +28,7 @@ def mpspl(data=None, n=50):
 
 short = "mpspl"
 alias = "mpspl"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 mpspl = mpspl
 
 

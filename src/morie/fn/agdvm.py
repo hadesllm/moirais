@@ -38,7 +38,7 @@ def agdvm(areas=None, perimeters=None, values=None, n=30):
 
 short = "agdvm"
 alias = "agdvm"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 agdvm = agdvm
 
 

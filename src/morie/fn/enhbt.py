@@ -31,7 +31,7 @@ def enhbt(data=None, coords=None, n=50):
 
 short = "enhbt"
 alias = "enhbt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "What is now proved was once only imagined. -- William Blake"
 enhbt = enhbt
 
 

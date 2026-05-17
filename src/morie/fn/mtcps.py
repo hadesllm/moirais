@@ -37,7 +37,7 @@ def mtcps(trajectory=None, n=50, dt=1.0):
 
 short = "mtcps"
 alias = "mtcps"
-quote = "Whatever happens, happens. -- Spike"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 mtcps = mtcps
 
 

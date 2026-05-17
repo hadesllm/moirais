@@ -31,7 +31,7 @@ def nbann(data=None, coords=None, n=50):
 
 short = "nbann"
 alias = "nbann"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Knowledge is power. -- Francis Bacon"
 nbann = nbann
 
 

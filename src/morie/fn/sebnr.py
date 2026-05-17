@@ -39,7 +39,7 @@ def sebnr(cases=None, population=None, coords=None, n=50):
 
 short = "sebnr"
 alias = "sebnr"
-quote = "Make it so. -- Picard"
+quote = "The measure of a man is what he does with power. -- Plato"
 sebnr = sebnr
 
 

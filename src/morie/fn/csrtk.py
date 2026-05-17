@@ -34,7 +34,7 @@ def csrtk(incidents=None, population=None, coords=None, n=50):
 
 short = "csrtk"
 alias = "csrtk"
-quote = "Yare yare daze. -- Jotaro"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 csrtk = csrtk
 
 

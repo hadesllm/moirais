@@ -34,7 +34,7 @@ def csfrn(incidents=None, population=None, coords=None, n=50):
 
 short = "csfrn"
 alias = "csfrn"
-quote = "No half measures. -- Mike"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 csfrn = csfrn
 
 

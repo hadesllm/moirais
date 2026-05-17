@@ -39,7 +39,7 @@ def serhm(cases=None, population=None, coords=None, n=50):
 
 short = "serhm"
 alias = "serhm"
-quote = "Whatever happens, happens. -- Spike"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 serhm = serhm
 
 

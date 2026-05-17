@@ -31,7 +31,7 @@ def dtbng(x=None, n=100, params=None):
 
 short = "dtbng"
 alias = "dtbng"
-quote = "Arise. -- Shadow Monarch"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 dtbng = dtbng
 
 

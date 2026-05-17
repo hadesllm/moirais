@@ -32,7 +32,7 @@ def sohc(data=None, depth=None, coords=None, n=50):
 
 short = "sohc"
 alias = "sohc"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Number rules the universe. -- Pythagoras"
 sohc = sohc
 
 

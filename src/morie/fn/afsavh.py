@@ -33,7 +33,7 @@ def afsavh(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afsavh"
 alias = "afsavh"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 afsavh = afsavh
 
 

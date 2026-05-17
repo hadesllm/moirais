@@ -31,7 +31,7 @@ def abspor(data=None, coords=None, n=50):
 
 short = "abspor"
 alias = "abspor"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "I think, therefore I am. -- Rene Descartes"
 abspor = abspor
 
 

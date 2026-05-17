@@ -30,7 +30,7 @@ def wllcv(abundance=None, coords=None, n=50):
 
 short = "wllcv"
 alias = "wllcv"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 wllcv = wllcv
 
 

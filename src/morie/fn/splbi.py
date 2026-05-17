@@ -32,7 +32,7 @@ def splbi(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "splbi"
 alias = "splbi"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 splbi = splbi
 
 

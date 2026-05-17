@@ -28,7 +28,7 @@ def undsmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "undsmp"
 alias = "undsmp"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 undsmp = undsmp
 
 

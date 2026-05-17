@@ -37,7 +37,7 @@ def mttrs(trajectory=None, n=50, dt=1.0):
 
 short = "mttrs"
 alias = "mttrs"
-quote = "Winter is coming. -- Stark motto"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 mttrs = mttrs
 
 

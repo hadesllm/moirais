@@ -31,7 +31,7 @@ def nbhrs(data=None, coords=None, n=50):
 
 short = "nbhrs"
 alias = "nbhrs"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "There is no royal road to geometry. -- Euclid"
 nbhrs = nbhrs
 
 

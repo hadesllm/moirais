@@ -33,7 +33,7 @@ def mkflt(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "mkflt"
 alias = "mkflt"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "I think, therefore I am. -- Rene Descartes"
 mkflt = mkflt
 
 

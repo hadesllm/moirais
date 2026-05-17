@@ -39,7 +39,7 @@ def folidr(dbh=None, height=None, coords=None, n=50):
 
 short = "folidr"
 alias = "folidr"
-quote = "This is Requiem. -- Giorno"
+quote = "There is no royal road to geometry. -- Euclid"
 folidr = folidr
 
 

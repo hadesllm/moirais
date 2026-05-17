@@ -33,7 +33,7 @@ def hynit(flow=None, precip=None, coords=None, n=50):
 
 short = "hynit"
 alias = "hynit"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 hynit = hynit
 
 

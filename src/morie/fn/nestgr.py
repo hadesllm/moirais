@@ -29,7 +29,7 @@ def nestgr(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "nestgr"
 alias = "nestgr"
-quote = "I am the hope of the universe. -- Goku"
+quote = "What is now proved was once only imagined. -- William Blake"
 nestgr = nestgr
 
 

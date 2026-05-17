@@ -33,7 +33,7 @@ def afslt(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afslt"
 alias = "afslt"
-quote = "See you space cowboy. -- Spike"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 afslt = afslt
 
 

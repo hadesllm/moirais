@@ -32,7 +32,7 @@ def rsusc(pixels=None, bands=None, n=100):
 
 short = "rsusc"
 alias = "rsusc"
-quote = "I mustn't run away. -- Shinji"
+quote = "Number rules the universe. -- Pythagoras"
 rsusc = rsusc
 
 

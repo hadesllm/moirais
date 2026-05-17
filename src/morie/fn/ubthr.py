@@ -33,7 +33,7 @@ def ubthr(population=None, area=None, coords=None, n=50):
 
 short = "ubthr"
 alias = "ubthr"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 ubthr = ubthr
 
 

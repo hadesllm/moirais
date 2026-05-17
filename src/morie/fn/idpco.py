@@ -28,7 +28,7 @@ def idpco(data=None, n=50):
 
 short = "idpco"
 alias = "idpco"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 idpco = idpco
 
 

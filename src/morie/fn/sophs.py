@@ -32,7 +32,7 @@ def sophs(data=None, depth=None, coords=None, n=50):
 
 short = "sophs"
 alias = "sophs"
-quote = "It's over 9000! -- Vegeta"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 sophs = sophs
 
 

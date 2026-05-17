@@ -34,7 +34,7 @@ def csdef(incidents=None, population=None, coords=None, n=50):
 
 short = "csdef"
 alias = "csdef"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 csdef = csdef
 
 

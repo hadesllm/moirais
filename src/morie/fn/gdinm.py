@@ -36,7 +36,7 @@ def gdinm(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdinm"
 alias = "gdinm"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 gdinm = gdinm
 
 

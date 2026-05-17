@@ -37,7 +37,7 @@ def tsslr(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsslr"
 alias = "tsslr"
-quote = "I am justice! -- Light"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 tsslr = tsslr
 
 

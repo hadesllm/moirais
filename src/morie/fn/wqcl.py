@@ -30,7 +30,7 @@ def wqcl(data=None, coords=None, n=50):
 
 short = "wqcl"
 alias = "wqcl"
-quote = "Yare yare daze. -- Jotaro"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 wqcl = wqcl
 
 

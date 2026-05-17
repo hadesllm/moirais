@@ -36,7 +36,7 @@ def vmgau(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmgau"
 alias = "vmgau"
-quote = "Engage. -- Picard"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 vmgau = vmgau
 
 

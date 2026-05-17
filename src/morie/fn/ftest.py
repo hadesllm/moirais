@@ -37,7 +37,7 @@ def ftest(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "ftest"
 alias = "ftest"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 ftest = ftest
 
 

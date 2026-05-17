@@ -36,7 +36,7 @@ def trrail(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trrail"
 alias = "trrail"
-quote = "This is Requiem. -- Giorno"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 trrail = trrail
 
 

@@ -40,7 +40,7 @@ def clldn(data=None, n=50, k=3, coords=None):
 
 short = "clldn"
 alias = "clldn"
-quote = "I am justice! -- Light"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 clldn = clldn
 
 

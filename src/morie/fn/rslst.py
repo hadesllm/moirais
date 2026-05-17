@@ -32,7 +32,7 @@ def rslst(pixels=None, bands=None, n=100):
 
 short = "rslst"
 alias = "rslst"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 rslst = rslst
 
 

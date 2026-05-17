@@ -46,7 +46,7 @@ def opass(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opass"
 alias = "opass"
-quote = "Resistance is futile. -- Borg"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 opass = opass
 
 

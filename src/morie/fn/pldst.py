@@ -28,7 +28,7 @@ def pldst(data=None, n=50):
 
 short = "pldst"
 alias = "pldst"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "I think, therefore I am. -- Rene Descartes"
 pldst = pldst
 
 

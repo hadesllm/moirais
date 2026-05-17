@@ -38,7 +38,7 @@ def agdvs(areas=None, perimeters=None, values=None, n=30):
 
 short = "agdvs"
 alias = "agdvs"
-quote = "Believe it! -- Naruto"
+quote = "Number rules the universe. -- Pythagoras"
 agdvs = agdvs
 
 

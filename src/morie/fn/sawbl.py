@@ -43,7 +43,7 @@ def sawbl(values=None, w=None, n=50):
 
 short = "sawbl"
 alias = "sawbl"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 sawbl = sawbl
 
 

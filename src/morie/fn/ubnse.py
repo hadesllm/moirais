@@ -33,7 +33,7 @@ def ubnse(population=None, area=None, coords=None, n=50):
 
 short = "ubnse"
 alias = "ubnse"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "The measure of a man is what he does with power. -- Plato"
 ubnse = ubnse
 
 

@@ -37,7 +37,7 @@ def abmsm(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "abmsm"
 alias = "abmsm"
-quote = "Growing old is a blessing. -- Rengoku"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 abmsm = abmsm
 
 

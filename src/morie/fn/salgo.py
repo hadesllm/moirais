@@ -43,7 +43,7 @@ def salgo(values=None, w=None, n=50):
 
 short = "salgo"
 alias = "salgo"
-quote = "One is all, all is one. -- Izumi"
+quote = "There is no royal road to geometry. -- Euclid"
 salgo = salgo
 
 

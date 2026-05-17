@@ -40,7 +40,7 @@ def clcur(data=None, n=50, k=3, coords=None):
 
 short = "clcur"
 alias = "clcur"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 clcur = clcur
 
 

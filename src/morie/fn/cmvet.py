@@ -28,7 +28,7 @@ def cmvet(data=None, n=50):
 
 short = "cmvet"
 alias = "cmvet"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "I think, therefore I am. -- Rene Descartes"
 cmvet = cmvet
 
 

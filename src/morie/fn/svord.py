@@ -27,7 +27,7 @@ def svord(data=None, n=50):
 
 short = "svord"
 alias = "svord"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 svord = svord
 
 

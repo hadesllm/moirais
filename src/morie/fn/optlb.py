@@ -46,7 +46,7 @@ def optlb(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "optlb"
 alias = "optlb"
-quote = "See you space cowboy. -- Spike"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 optlb = optlb
 
 

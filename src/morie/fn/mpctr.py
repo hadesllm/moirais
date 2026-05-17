@@ -28,7 +28,7 @@ def mpctr(data=None, n=50):
 
 short = "mpctr"
 alias = "mpctr"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 mpctr = mpctr
 
 

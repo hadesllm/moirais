@@ -41,7 +41,7 @@ def ghold(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghold"
 alias = "ghold"
-quote = "Arise. -- Shadow Monarch"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 ghold = ghold
 
 

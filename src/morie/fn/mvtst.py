@@ -28,7 +28,7 @@ def mvtst(data=None, n=50):
 
 short = "mvtst"
 alias = "mvtst"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 mvtst = mvtst
 
 

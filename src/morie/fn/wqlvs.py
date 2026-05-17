@@ -30,7 +30,7 @@ def wqlvs(data=None, coords=None, n=50):
 
 short = "wqlvs"
 alias = "wqlvs"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 wqlvs = wqlvs
 
 

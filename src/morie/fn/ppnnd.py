@@ -36,7 +36,7 @@ def ppnnd(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppnnd"
 alias = "ppnnd"
-quote = "I am here! -- All Might"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 ppnnd = ppnnd
 
 

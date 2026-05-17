@@ -36,7 +36,7 @@ def vmpow(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmpow"
 alias = "vmpow"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 vmpow = vmpow
 
 

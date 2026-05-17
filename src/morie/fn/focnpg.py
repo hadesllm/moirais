@@ -39,7 +39,7 @@ def focnpg(dbh=None, height=None, coords=None, n=50):
 
 short = "focnpg"
 alias = "focnpg"
-quote = "Bankai! -- Ichigo"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 focnpg = focnpg
 
 

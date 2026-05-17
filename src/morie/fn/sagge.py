@@ -43,7 +43,7 @@ def sagge(values=None, w=None, n=50):
 
 short = "sagge"
 alias = "sagge"
-quote = "There is always hope. -- Aragorn"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 sagge = sagge
 
 

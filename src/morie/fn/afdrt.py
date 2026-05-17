@@ -33,7 +33,7 @@ def afdrt(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afdrt"
 alias = "afdrt"
-quote = "Winter is coming. -- Stark motto"
+quote = "Knowledge is power. -- Francis Bacon"
 afdrt = afdrt
 
 

@@ -33,7 +33,7 @@ def gevac(gdp=None, trade=None, coords=None, n=50):
 
 short = "gevac"
 alias = "gevac"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 gevac = gevac
 
 

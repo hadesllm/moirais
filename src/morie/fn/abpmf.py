@@ -31,7 +31,7 @@ def abpmf(data=None, coords=None, n=50):
 
 short = "abpmf"
 alias = "abpmf"
-quote = "Make it so. -- Picard"
+quote = "We must know. We will know. -- David Hilbert"
 abpmf = abpmf
 
 

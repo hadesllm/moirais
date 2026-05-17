@@ -31,7 +31,7 @@ def nbldn(data=None, coords=None, n=50):
 
 short = "nbldn"
 alias = "nbldn"
-quote = "Winter is coming. -- Stark motto"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 nbldn = nbldn
 
 

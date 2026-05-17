@@ -37,7 +37,7 @@ def mddim(data=None, query=None, origin=None, *, n=50):
 
 short = "mddim"
 alias = "mddim"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 mddim = mddim
 
 

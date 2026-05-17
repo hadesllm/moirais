@@ -33,7 +33,7 @@ def hytss(flow=None, precip=None, coords=None, n=50):
 
 short = "hytss"
 alias = "hytss"
-quote = "Engage. -- Picard"
+quote = "What is now proved was once only imagined. -- William Blake"
 hytss = hytss
 
 

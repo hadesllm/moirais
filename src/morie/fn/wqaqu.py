@@ -30,7 +30,7 @@ def wqaqu(data=None, coords=None, n=50):
 
 short = "wqaqu"
 alias = "wqaqu"
-quote = "Believe it! -- Naruto"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 wqaqu = wqaqu
 
 

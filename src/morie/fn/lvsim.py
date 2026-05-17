@@ -37,7 +37,7 @@ def lvsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "lvsim"
 alias = "lvsim"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 lvsim = lvsim
 
 

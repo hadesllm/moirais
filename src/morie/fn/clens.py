@@ -40,7 +40,7 @@ def clens(data=None, n=50, k=3, coords=None):
 
 short = "clens"
 alias = "clens"
-quote = "I am the one who knocks. -- Walter White"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 clens = clens
 
 

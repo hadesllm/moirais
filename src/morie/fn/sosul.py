@@ -32,7 +32,7 @@ def sosul(data=None, depth=None, coords=None, n=50):
 
 short = "sosul"
 alias = "sosul"
-quote = "Bankai! -- Ichigo"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 sosul = sosul
 
 

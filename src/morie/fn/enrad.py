@@ -31,7 +31,7 @@ def enrad(data=None, coords=None, n=50):
 
 short = "enrad"
 alias = "enrad"
-quote = "Breathe. -- Tanjiro"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 enrad = enrad
 
 

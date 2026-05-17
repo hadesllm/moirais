@@ -37,7 +37,7 @@ def mttrc(trajectory=None, n=50, dt=1.0):
 
 short = "mttrc"
 alias = "mttrc"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 mttrc = mttrc
 
 

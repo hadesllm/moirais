@@ -37,7 +37,7 @@ def gatpi(x=None, y=None, values=None, resolution=50):
 
 short = "gatpi"
 alias = "gatpi"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 gatpi = gatpi
 
 

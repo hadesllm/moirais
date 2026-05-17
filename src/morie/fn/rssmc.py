@@ -32,7 +32,7 @@ def rssmc(pixels=None, bands=None, n=100):
 
 short = "rssmc"
 alias = "rssmc"
-quote = "Engage. -- Picard"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 rssmc = rssmc
 
 

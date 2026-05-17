@@ -39,7 +39,7 @@ def fodsm(dbh=None, height=None, coords=None, n=50):
 
 short = "fodsm"
 alias = "fodsm"
-quote = "Valar Morghulis. -- Braavos"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 fodsm = fodsm
 
 

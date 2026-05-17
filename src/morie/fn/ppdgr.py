@@ -36,7 +36,7 @@ def ppdgr(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppdgr"
 alias = "ppdgr"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "What is now proved was once only imagined. -- William Blake"
 ppdgr = ppdgr
 
 

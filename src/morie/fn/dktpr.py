@@ -40,7 +40,7 @@ def dktpr(x=None, y=None, z=None, values=None, n=30):
 
 short = "dktpr"
 alias = "dktpr"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 dktpr = dktpr
 
 

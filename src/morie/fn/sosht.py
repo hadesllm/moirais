@@ -32,7 +32,7 @@ def sosht(data=None, depth=None, coords=None, n=50):
 
 short = "sosht"
 alias = "sosht"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 sosht = sosht
 
 

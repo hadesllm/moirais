@@ -30,7 +30,7 @@ def wqnh3(data=None, coords=None, n=50):
 
 short = "wqnh3"
 alias = "wqnh3"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Knowledge is power. -- Francis Bacon"
 wqnh3 = wqnh3
 
 

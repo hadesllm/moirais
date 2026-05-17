@@ -29,7 +29,7 @@ def blksmp(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "blksmp"
 alias = "blksmp"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 blksmp = blksmp
 
 

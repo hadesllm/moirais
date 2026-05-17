@@ -28,7 +28,7 @@ def sbdel(data=None, n=50):
 
 short = "sbdel"
 alias = "sbdel"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 sbdel = sbdel
 
 

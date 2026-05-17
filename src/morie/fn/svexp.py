@@ -27,7 +27,7 @@ def svexp(data=None, n=50):
 
 short = "svexp"
 alias = "svexp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 svexp = svexp
 
 

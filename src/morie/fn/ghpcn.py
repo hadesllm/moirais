@@ -41,7 +41,7 @@ def ghpcn(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghpcn"
 alias = "ghpcn"
-quote = "I mustn't run away. -- Shinji"
+quote = "We must know. We will know. -- David Hilbert"
 ghpcn = ghpcn
 
 

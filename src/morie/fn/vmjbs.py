@@ -36,7 +36,7 @@ def vmjbs(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmjbs"
 alias = "vmjbs"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 vmjbs = vmjbs
 
 

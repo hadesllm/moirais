@@ -32,7 +32,7 @@ def rsrei(pixels=None, bands=None, n=100):
 
 short = "rsrei"
 alias = "rsrei"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "What is now proved was once only imagined. -- William Blake"
 rsrei = rsrei
 
 

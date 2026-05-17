@@ -28,7 +28,7 @@ def elcnv(data=None, n=50):
 
 short = "elcnv"
 alias = "elcnv"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 elcnv = elcnv
 
 

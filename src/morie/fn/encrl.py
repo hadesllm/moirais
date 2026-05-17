@@ -31,7 +31,7 @@ def encrl(data=None, coords=None, n=50):
 
 short = "encrl"
 alias = "encrl"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 encrl = encrl
 
 

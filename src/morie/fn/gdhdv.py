@@ -36,7 +36,7 @@ def gdhdv(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdhdv"
 alias = "gdhdv"
-quote = "There is always hope. -- Aragorn"
+quote = "Knowledge is power. -- Francis Bacon"
 gdhdv = gdhdv
 
 

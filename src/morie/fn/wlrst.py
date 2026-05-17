@@ -30,7 +30,7 @@ def wlrst(abundance=None, coords=None, n=50):
 
 short = "wlrst"
 alias = "wlrst"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "I think, therefore I am. -- Rene Descartes"
 wlrst = wlrst
 
 

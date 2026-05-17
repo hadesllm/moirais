@@ -31,7 +31,7 @@ def gcwvp(data=None, coords=None, n=50):
 
 short = "gcwvp"
 alias = "gcwvp"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 gcwvp = gcwvp
 
 

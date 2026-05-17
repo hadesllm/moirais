@@ -33,7 +33,7 @@ def ubelc(population=None, area=None, coords=None, n=50):
 
 short = "ubelc"
 alias = "ubelc"
-quote = "Hold the door. -- Hodor"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 ubelc = ubelc
 
 

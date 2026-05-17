@@ -31,7 +31,7 @@ def abradn(data=None, coords=None, n=50):
 
 short = "abradn"
 alias = "abradn"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 abradn = abradn
 
 

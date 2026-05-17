@@ -31,7 +31,7 @@ def nbrdm(data=None, coords=None, n=50):
 
 short = "nbrdm"
 alias = "nbrdm"
-quote = "Bankai! -- Ichigo"
+quote = "There is no royal road to geometry. -- Euclid"
 nbrdm = nbrdm
 
 

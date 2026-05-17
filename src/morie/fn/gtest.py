@@ -37,7 +37,7 @@ def gtest(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "gtest"
 alias = "gtest"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 gtest = gtest
 
 

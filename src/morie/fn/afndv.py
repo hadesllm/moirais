@@ -33,7 +33,7 @@ def afndv(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afndv"
 alias = "afndv"
-quote = "Believe it! -- Naruto"
+quote = "We must know. We will know. -- David Hilbert"
 afndv = afndv
 
 

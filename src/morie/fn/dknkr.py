@@ -40,7 +40,7 @@ def dknkr(x=None, y=None, z=None, values=None, n=30):
 
 short = "dknkr"
 alias = "dknkr"
-quote = "Resistance is futile. -- Borg"
+quote = "Knowledge is power. -- Francis Bacon"
 dknkr = dknkr
 
 

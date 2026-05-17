@@ -32,7 +32,7 @@ def rssav(pixels=None, bands=None, n=100):
 
 short = "rssav"
 alias = "rssav"
-quote = "It's over 9000! -- Vegeta"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 rssav = rssav
 
 

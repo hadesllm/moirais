@@ -34,7 +34,7 @@ def cslvy(incidents=None, population=None, coords=None, n=50):
 
 short = "cslvy"
 alias = "cslvy"
-quote = "Engage. -- Picard"
+quote = "Number rules the universe. -- Pythagoras"
 cslvy = cslvy
 
 

@@ -33,7 +33,7 @@ def edgfp(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "edgfp"
 alias = "edgfp"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 edgfp = edgfp
 
 

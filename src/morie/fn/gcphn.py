@@ -31,7 +31,7 @@ def gcphn(data=None, coords=None, n=50):
 
 short = "gcphn"
 alias = "gcphn"
-quote = "Bankai! -- Ichigo"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 gcphn = gcphn
 
 

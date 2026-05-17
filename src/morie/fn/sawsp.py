@@ -43,7 +43,7 @@ def sawsp(values=None, w=None, n=50):
 
 short = "sawsp"
 alias = "sawsp"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 sawsp = sawsp
 
 

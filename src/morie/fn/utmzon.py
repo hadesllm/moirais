@@ -28,7 +28,7 @@ def utmzon(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "utmzon"
 alias = "utmzon"
-quote = "Yare yare daze. -- Jotaro"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 utmzon = utmzon
 
 

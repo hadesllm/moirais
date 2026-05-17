@@ -30,7 +30,7 @@ def wqtpp(data=None, coords=None, n=50):
 
 short = "wqtpp"
 alias = "wqtpp"
-quote = "Arise. -- Shadow Monarch"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 wqtpp = wqtpp
 
 

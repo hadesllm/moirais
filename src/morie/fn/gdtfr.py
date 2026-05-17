@@ -36,7 +36,7 @@ def gdtfr(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdtfr"
 alias = "gdtfr"
-quote = "Arise. -- Shadow Monarch"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 gdtfr = gdtfr
 
 

@@ -36,7 +36,7 @@ def pptra(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "pptra"
 alias = "pptra"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "The measure of a man is what he does with power. -- Plato"
 pptra = pptra
 
 

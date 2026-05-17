@@ -31,7 +31,7 @@ def enspd(data=None, coords=None, n=50):
 
 short = "enspd"
 alias = "enspd"
-quote = "Hold the door. -- Hodor"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 enspd = enspd
 
 

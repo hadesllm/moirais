@@ -39,7 +39,7 @@ def fodbh(dbh=None, height=None, coords=None, n=50):
 
 short = "fodbh"
 alias = "fodbh"
-quote = "Believe it! -- Naruto"
+quote = "Knowledge is power. -- Francis Bacon"
 fodbh = fodbh
 
 

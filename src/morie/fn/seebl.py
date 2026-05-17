@@ -39,7 +39,7 @@ def seebl(cases=None, population=None, coords=None, n=50):
 
 short = "seebl"
 alias = "seebl"
-quote = "One is all, all is one. -- Izumi"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 seebl = seebl
 
 

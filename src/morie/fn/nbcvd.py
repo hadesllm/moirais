@@ -31,7 +31,7 @@ def nbcvd(data=None, coords=None, n=50):
 
 short = "nbcvd"
 alias = "nbcvd"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 nbcvd = nbcvd
 
 

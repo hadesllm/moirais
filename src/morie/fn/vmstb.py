@@ -36,7 +36,7 @@ def vmstb(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmstb"
 alias = "vmstb"
-quote = "Believe it! -- Naruto"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 vmstb = vmstb
 
 

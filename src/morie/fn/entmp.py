@@ -31,7 +31,7 @@ def entmp(data=None, coords=None, n=50):
 
 short = "entmp"
 alias = "entmp"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 entmp = entmp
 
 

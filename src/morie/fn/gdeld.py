@@ -36,7 +36,7 @@ def gdeld(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdeld"
 alias = "gdeld"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 gdeld = gdeld
 
 

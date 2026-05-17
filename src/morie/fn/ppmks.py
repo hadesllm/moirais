@@ -36,7 +36,7 @@ def ppmks(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppmks"
 alias = "ppmks"
-quote = "Winter is coming. -- Stark motto"
+quote = "We must know. We will know. -- David Hilbert"
 ppmks = ppmks
 
 

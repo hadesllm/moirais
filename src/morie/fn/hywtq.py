@@ -33,7 +33,7 @@ def hywtq(flow=None, precip=None, coords=None, n=50):
 
 short = "hywtq"
 alias = "hywtq"
-quote = "This is Requiem. -- Giorno"
+quote = "Number rules the universe. -- Pythagoras"
 hywtq = hywtq
 
 

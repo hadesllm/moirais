@@ -28,7 +28,7 @@ def sbnsh(data=None, n=50):
 
 short = "sbnsh"
 alias = "sbnsh"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 sbnsh = sbnsh
 
 

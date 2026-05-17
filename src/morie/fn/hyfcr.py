@@ -33,7 +33,7 @@ def hyfcr(flow=None, precip=None, coords=None, n=50):
 
 short = "hyfcr"
 alias = "hyfcr"
-quote = "No half measures. -- Mike"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 hyfcr = hyfcr
 
 

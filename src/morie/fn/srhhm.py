@@ -38,7 +38,7 @@ def srhhm(X=None, y=None, w=None, n=50, k=3):
 
 short = "srhhm"
 alias = "srhhm"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 srhhm = srhhm
 
 

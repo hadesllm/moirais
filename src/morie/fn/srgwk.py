@@ -38,7 +38,7 @@ def srgwk(X=None, y=None, w=None, n=50, k=3):
 
 short = "srgwk"
 alias = "srgwk"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 srgwk = srgwk
 
 

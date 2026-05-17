@@ -33,7 +33,7 @@ def ubprv(population=None, area=None, coords=None, n=50):
 
 short = "ubprv"
 alias = "ubprv"
-quote = "Live long and prosper. -- Spock"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 ubprv = ubprv
 
 

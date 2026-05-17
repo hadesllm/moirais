@@ -33,7 +33,7 @@ def hycur(flow=None, precip=None, coords=None, n=50):
 
 short = "hycur"
 alias = "hycur"
-quote = "I am the one who knocks. -- Walter White"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 hycur = hycur
 
 

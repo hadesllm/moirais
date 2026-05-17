@@ -36,7 +36,7 @@ def trdrn(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trdrn"
 alias = "trdrn"
-quote = "Resistance is futile. -- Borg"
+quote = "What is now proved was once only imagined. -- William Blake"
 trdrn = trdrn
 
 

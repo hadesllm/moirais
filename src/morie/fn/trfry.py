@@ -36,7 +36,7 @@ def trfry(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trfry"
 alias = "trfry"
-quote = "Valar Morghulis. -- Braavos"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 trfry = trfry
 
 

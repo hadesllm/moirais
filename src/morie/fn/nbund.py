@@ -31,7 +31,7 @@ def nbund(data=None, coords=None, n=50):
 
 short = "nbund"
 alias = "nbund"
-quote = "It's over 9000! -- Vegeta"
+quote = "The measure of a man is what he does with power. -- Plato"
 nbund = nbund
 
 

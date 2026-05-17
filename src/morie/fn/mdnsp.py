@@ -37,7 +37,7 @@ def mdnsp(data=None, query=None, origin=None, *, n=50):
 
 short = "mdnsp"
 alias = "mdnsp"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 mdnsp = mdnsp
 
 

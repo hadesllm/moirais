@@ -33,7 +33,7 @@ def pkflt(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "pkflt"
 alias = "pkflt"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 pkflt = pkflt
 
 

@@ -37,7 +37,7 @@ def buffr(x=None, y=None, values=None, resolution=50):
 
 short = "buffr"
 alias = "buffr"
-quote = "Yare yare daze. -- Jotaro"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 buffr = buffr
 
 

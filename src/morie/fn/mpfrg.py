@@ -28,7 +28,7 @@ def mpfrg(data=None, n=50):
 
 short = "mpfrg"
 alias = "mpfrg"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 mpfrg = mpfrg
 
 

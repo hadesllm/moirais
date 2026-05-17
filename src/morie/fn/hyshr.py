@@ -33,7 +33,7 @@ def hyshr(flow=None, precip=None, coords=None, n=50):
 
 short = "hyshr"
 alias = "hyshr"
-quote = "It's over 9000! -- Vegeta"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 hyshr = hyshr
 
 

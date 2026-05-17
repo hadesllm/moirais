@@ -39,7 +39,7 @@ def fofrag(dbh=None, height=None, coords=None, n=50):
 
 short = "fofrag"
 alias = "fofrag"
-quote = "I am here! -- All Might"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 fofrag = fofrag
 
 

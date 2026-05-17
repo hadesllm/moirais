@@ -31,7 +31,7 @@ def gcacd(data=None, coords=None, n=50):
 
 short = "gcacd"
 alias = "gcacd"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 gcacd = gcacd
 
 

@@ -31,7 +31,7 @@ def dtmvt(x=None, n=100, params=None):
 
 short = "dtmvt"
 alias = "dtmvt"
-quote = "There is always hope. -- Aragorn"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 dtmvt = dtmvt
 
 

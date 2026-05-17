@@ -31,7 +31,7 @@ def gcedn(data=None, coords=None, n=50):
 
 short = "gcedn"
 alias = "gcedn"
-quote = "Believe it! -- Naruto"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 gcedn = gcedn
 
 

@@ -37,7 +37,7 @@ def mhsim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "mhsim"
 alias = "mhsim"
-quote = "Resistance is futile. -- Borg"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 mhsim = mhsim
 
 

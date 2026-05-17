@@ -36,7 +36,7 @@ def gdger(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdger"
 alias = "gdger"
-quote = "Hold the door. -- Hodor"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 gdger = gdger
 
 

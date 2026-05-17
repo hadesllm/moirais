@@ -40,7 +40,7 @@ def clcal(data=None, n=50, k=3, coords=None):
 
 short = "clcal"
 alias = "clcal"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 clcal = clcal
 
 

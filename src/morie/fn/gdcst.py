@@ -36,7 +36,7 @@ def gdcst(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdcst"
 alias = "gdcst"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 gdcst = gdcst
 
 

@@ -33,7 +33,7 @@ def geell(gdp=None, trade=None, coords=None, n=50):
 
 short = "geell"
 alias = "geell"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 geell = geell
 
 

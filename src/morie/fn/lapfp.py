@@ -33,7 +33,7 @@ def lapfp(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "lapfp"
 alias = "lapfp"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "Number rules the universe. -- Pythagoras"
 lapfp = lapfp
 
 

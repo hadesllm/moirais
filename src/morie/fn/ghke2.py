@@ -41,7 +41,7 @@ def ghke2(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghke2"
 alias = "ghke2"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 ghke2 = ghke2
 
 

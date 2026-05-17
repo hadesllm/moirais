@@ -37,7 +37,7 @@ def gafdir(x=None, y=None, values=None, resolution=50):
 
 short = "gafdir"
 alias = "gafdir"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 gafdir = gafdir
 
 

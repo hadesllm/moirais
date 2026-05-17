@@ -31,7 +31,7 @@ def dtvmf(x=None, n=100, params=None):
 
 short = "dtvmf"
 alias = "dtvmf"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 dtvmf = dtvmf
 
 

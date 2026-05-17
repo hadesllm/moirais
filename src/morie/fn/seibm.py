@@ -39,7 +39,7 @@ def seibm(cases=None, population=None, coords=None, n=50):
 
 short = "seibm"
 alias = "seibm"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 seibm = seibm
 
 

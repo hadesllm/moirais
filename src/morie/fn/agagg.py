@@ -38,7 +38,7 @@ def agagg(areas=None, perimeters=None, values=None, n=30):
 
 short = "agagg"
 alias = "agagg"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 agagg = agagg
 
 

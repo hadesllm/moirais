@@ -29,7 +29,7 @@ def mollwd(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "mollwd"
 alias = "mollwd"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 mollwd = mollwd
 
 

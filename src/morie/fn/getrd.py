@@ -33,7 +33,7 @@ def getrd(gdp=None, trade=None, coords=None, n=50):
 
 short = "getrd"
 alias = "getrd"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 getrd = getrd
 
 

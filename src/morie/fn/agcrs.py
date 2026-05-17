@@ -38,7 +38,7 @@ def agcrs(areas=None, perimeters=None, values=None, n=30):
 
 short = "agcrs"
 alias = "agcrs"
-quote = "I am the one who knocks. -- Walter White"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 agcrs = agcrs
 
 

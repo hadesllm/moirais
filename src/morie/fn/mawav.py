@@ -40,7 +40,7 @@ def mawav(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mawav"
 alias = "mawav"
-quote = "I am justice! -- Light"
+quote = "I think, therefore I am. -- Rene Descartes"
 mawav = mawav
 
 

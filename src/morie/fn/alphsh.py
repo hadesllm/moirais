@@ -37,7 +37,7 @@ def alphsh(x=None, y=None, values=None, resolution=50):
 
 short = "alphsh"
 alias = "alphsh"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 alphsh = alphsh
 
 

@@ -37,7 +37,7 @@ def mtpdr(trajectory=None, n=50, dt=1.0):
 
 short = "mtpdr"
 alias = "mtpdr"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 mtpdr = mtpdr
 
 

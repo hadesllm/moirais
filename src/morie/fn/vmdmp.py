@@ -36,7 +36,7 @@ def vmdmp(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmdmp"
 alias = "vmdmp"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 vmdmp = vmdmp
 
 

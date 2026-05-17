@@ -33,7 +33,7 @@ def hyrch(flow=None, precip=None, coords=None, n=50):
 
 short = "hyrch"
 alias = "hyrch"
-quote = "The world is cruel but beautiful. -- Mikasa"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 hyrch = hyrch
 
 

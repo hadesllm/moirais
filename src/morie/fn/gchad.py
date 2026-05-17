@@ -31,7 +31,7 @@ def gchad(data=None, coords=None, n=50):
 
 short = "gchad"
 alias = "gchad"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "The measure of a man is what he does with power. -- Plato"
 gchad = gchad
 
 

@@ -29,7 +29,7 @@ def hswas(data=None, n=50):
 
 short = "hswas"
 alias = "hswas"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "What is now proved was once only imagined. -- William Blake"
 hswas = hswas
 
 

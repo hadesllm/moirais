@@ -32,7 +32,7 @@ def rsacc(pixels=None, bands=None, n=100):
 
 short = "rsacc"
 alias = "rsacc"
-quote = "The sleeper must awaken. -- Leto Atreides"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 rsacc = rsacc
 
 

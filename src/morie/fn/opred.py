@@ -46,7 +46,7 @@ def opred(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opred"
 alias = "opred"
-quote = "Science! -- Jesse Pinkman"
+quote = "Knowledge is power. -- Francis Bacon"
 opred = opred
 
 

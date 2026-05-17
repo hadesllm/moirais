@@ -41,7 +41,7 @@ def ghlam(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghlam"
 alias = "ghlam"
-quote = "Total Concentration Breathing. -- Tanjiro"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 ghlam = ghlam
 
 

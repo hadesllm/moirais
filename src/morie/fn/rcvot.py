@@ -29,7 +29,7 @@ def rcvot(data=None, n=50):
 
 short = "rcvot"
 alias = "rcvot"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Number rules the universe. -- Pythagoras"
 rcvot = rcvot
 
 

@@ -39,7 +39,7 @@ def segrw(cases=None, population=None, coords=None, n=50):
 
 short = "segrw"
 alias = "segrw"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "There is no royal road to geometry. -- Euclid"
 segrw = segrw
 
 

@@ -41,7 +41,7 @@ def ghtrd(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghtrd"
 alias = "ghtrd"
-quote = "Winter is coming. -- Stark motto"
+quote = "I think, therefore I am. -- Rene Descartes"
 ghtrd = ghtrd
 
 

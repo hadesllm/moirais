@@ -38,7 +38,7 @@ def aged(areas=None, perimeters=None, values=None, n=30):
 
 short = "aged"
 alias = "aged"
-quote = "One is all, all is one. -- Izumi"
+quote = "What is now proved was once only imagined. -- William Blake"
 aged = aged
 
 

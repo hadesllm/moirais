@@ -31,7 +31,7 @@ def gcveg(data=None, coords=None, n=50):
 
 short = "gcveg"
 alias = "gcveg"
-quote = "I am justice! -- Light"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 gcveg = gcveg
 
 

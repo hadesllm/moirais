@@ -37,7 +37,7 @@ def mtcls(trajectory=None, n=50, dt=1.0):
 
 short = "mtcls"
 alias = "mtcls"
-quote = "I am justice! -- Light"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 mtcls = mtcls
 
 

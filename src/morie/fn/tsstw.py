@@ -37,7 +37,7 @@ def tsstw(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsstw"
 alias = "tsstw"
-quote = "Winter is coming. -- Stark motto"
+quote = "What is now proved was once only imagined. -- William Blake"
 tsstw = tsstw
 
 

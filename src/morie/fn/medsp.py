@@ -33,7 +33,7 @@ def medsp(x=None, y=None, values=None, grid_size=20, range_param=30.0, sill=1.0,
 
 short = "medsp"
 alias = "medsp"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 medsp = medsp
 
 

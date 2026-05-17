@@ -31,7 +31,7 @@ def gcadp(data=None, coords=None, n=50):
 
 short = "gcadp"
 alias = "gcadp"
-quote = "I am justice! -- Light"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 gcadp = gcadp
 
 

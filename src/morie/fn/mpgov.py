@@ -28,7 +28,7 @@ def mpgov(data=None, n=50):
 
 short = "mpgov"
 alias = "mpgov"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 mpgov = mpgov
 
 

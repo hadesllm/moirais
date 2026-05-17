@@ -41,7 +41,7 @@ def ghebr(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghebr"
 alias = "ghebr"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 ghebr = ghebr
 
 

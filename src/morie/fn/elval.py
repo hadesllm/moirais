@@ -28,7 +28,7 @@ def elval(data=None, n=50):
 
 short = "elval"
 alias = "elval"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 elval = elval
 
 

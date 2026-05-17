@@ -38,7 +38,7 @@ def agmsv(areas=None, perimeters=None, values=None, n=30):
 
 short = "agmsv"
 alias = "agmsv"
-quote = "I alone level up. -- Sung Jin-Woo"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 agmsv = agmsv
 
 

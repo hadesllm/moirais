@@ -40,7 +40,7 @@ def dkinl(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkinl"
 alias = "dkinl"
-quote = "Even the smallest person can change the future. -- Galadriel"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 dkinl = dkinl
 
 

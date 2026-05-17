@@ -43,7 +43,7 @@ def samov(values=None, w=None, n=50):
 
 short = "samov"
 alias = "samov"
-quote = "I am justice! -- Light"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 samov = samov
 
 

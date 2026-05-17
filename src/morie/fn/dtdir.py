@@ -31,7 +31,7 @@ def dtdir(x=None, n=100, params=None):
 
 short = "dtdir"
 alias = "dtdir"
-quote = "Yare yare daze. -- Jotaro"
+quote = "I think, therefore I am. -- Rene Descartes"
 dtdir = dtdir
 
 

@@ -36,7 +36,7 @@ def gdyrm(population=None, births=None, deaths=None, coords=None, n=50):
 
 short = "gdyrm"
 alias = "gdyrm"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 gdyrm = gdyrm
 
 

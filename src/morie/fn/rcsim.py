@@ -29,7 +29,7 @@ def rcsim(data=None, n=50):
 
 short = "rcsim"
 alias = "rcsim"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 rcsim = rcsim
 
 

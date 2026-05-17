@@ -40,7 +40,7 @@ def maprd(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maprd"
 alias = "maprd"
-quote = "There is always hope. -- Aragorn"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 maprd = maprd
 
 

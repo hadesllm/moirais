@@ -29,7 +29,7 @@ def merctr(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "merctr"
 alias = "merctr"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 merctr = merctr
 
 

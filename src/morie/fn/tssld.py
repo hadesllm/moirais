@@ -37,7 +37,7 @@ def tssld(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssld"
 alias = "tssld"
-quote = "A lesson without pain is meaningless. -- Edward"
+quote = "There is no royal road to geometry. -- Euclid"
 tssld = tssld
 
 

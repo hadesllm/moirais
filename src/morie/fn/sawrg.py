@@ -43,7 +43,7 @@ def sawrg(values=None, w=None, n=50):
 
 short = "sawrg"
 alias = "sawrg"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 sawrg = sawrg
 
 

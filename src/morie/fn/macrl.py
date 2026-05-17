@@ -40,7 +40,7 @@ def macrl(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "macrl"
 alias = "macrl"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 macrl = macrl
 
 

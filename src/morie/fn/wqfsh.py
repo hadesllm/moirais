@@ -30,7 +30,7 @@ def wqfsh(data=None, coords=None, n=50):
 
 short = "wqfsh"
 alias = "wqfsh"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 wqfsh = wqfsh
 
 

@@ -27,7 +27,7 @@ def umrev(data=None, n=50):
 
 short = "umrev"
 alias = "umrev"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 umrev = umrev
 
 

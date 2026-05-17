@@ -46,7 +46,7 @@ def opmed(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opmed"
 alias = "opmed"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 opmed = opmed
 
 

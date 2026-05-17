@@ -37,7 +37,7 @@ def tssdm(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssdm"
 alias = "tssdm"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 tssdm = tssdm
 
 

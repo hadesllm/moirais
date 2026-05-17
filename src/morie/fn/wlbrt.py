@@ -30,7 +30,7 @@ def wlbrt(abundance=None, coords=None, n=50):
 
 short = "wlbrt"
 alias = "wlbrt"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 wlbrt = wlbrt
 
 

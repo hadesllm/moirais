@@ -43,7 +43,7 @@ def samcr(values=None, w=None, n=50):
 
 short = "samcr"
 alias = "samcr"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 samcr = samcr
 
 

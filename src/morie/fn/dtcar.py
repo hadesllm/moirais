@@ -31,7 +31,7 @@ def dtcar(x=None, n=100, params=None):
 
 short = "dtcar"
 alias = "dtcar"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 dtcar = dtcar
 
 

@@ -37,7 +37,7 @@ def gabsn(x=None, y=None, values=None, resolution=50):
 
 short = "gabsn"
 alias = "gabsn"
-quote = "I am the hope of the universe. -- Goku"
+quote = "The measure of a man is what he does with power. -- Plato"
 gabsn = gabsn
 
 

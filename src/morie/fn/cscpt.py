@@ -34,7 +34,7 @@ def cscpt(incidents=None, population=None, coords=None, n=50):
 
 short = "cscpt"
 alias = "cscpt"
-quote = "Arise. -- Shadow Monarch"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 cscpt = cscpt
 
 

@@ -37,7 +37,7 @@ def tstcr(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tstcr"
 alias = "tstcr"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 tstcr = tstcr
 
 

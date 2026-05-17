@@ -36,7 +36,7 @@ def trdem(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trdem"
 alias = "trdem"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 trdem = trdem
 
 

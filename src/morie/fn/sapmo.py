@@ -43,7 +43,7 @@ def sapmo(values=None, w=None, n=50):
 
 short = "sapmo"
 alias = "sapmo"
-quote = "It's over 9000! -- Vegeta"
+quote = "We must know. We will know. -- David Hilbert"
 sapmo = sapmo
 
 

@@ -40,7 +40,7 @@ def maklp(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maklp"
 alias = "maklp"
-quote = "Resistance is futile. -- Borg"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 maklp = maklp
 
 

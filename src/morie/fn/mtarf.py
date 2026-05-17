@@ -37,7 +37,7 @@ def mtarf(trajectory=None, n=50, dt=1.0):
 
 short = "mtarf"
 alias = "mtarf"
-quote = "You should enjoy the detours. -- Ging"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 mtarf = mtarf
 
 

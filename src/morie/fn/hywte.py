@@ -33,7 +33,7 @@ def hywte(flow=None, precip=None, coords=None, n=50):
 
 short = "hywte"
 alias = "hywte"
-quote = "Keep moving forward. -- Eren"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 hywte = hywte
 
 

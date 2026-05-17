@@ -38,7 +38,7 @@ def agawd(areas=None, perimeters=None, values=None, n=30):
 
 short = "agawd"
 alias = "agawd"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "I think, therefore I am. -- Rene Descartes"
 agawd = agawd
 
 

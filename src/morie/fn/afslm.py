@@ -33,7 +33,7 @@ def afslm(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afslm"
 alias = "afslm"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Number rules the universe. -- Pythagoras"
 afslm = afslm
 
 

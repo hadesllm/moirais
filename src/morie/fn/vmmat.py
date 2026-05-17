@@ -36,7 +36,7 @@ def vmmat(x=None, y=None, values=None, n_lags=15, max_lag=None):
 
 short = "vmmat"
 alias = "vmmat"
-quote = "People's dreams never end! -- Blackbeard"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 vmmat = vmmat
 
 

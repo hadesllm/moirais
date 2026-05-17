@@ -33,7 +33,7 @@ def gefrm(gdp=None, trade=None, coords=None, n=50):
 
 short = "gefrm"
 alias = "gefrm"
-quote = "There is always hope. -- Aragorn"
+quote = "Knowledge is power. -- Francis Bacon"
 gefrm = gefrm
 
 

@@ -33,7 +33,7 @@ def hyefl(flow=None, precip=None, coords=None, n=50):
 
 short = "hyefl"
 alias = "hyefl"
-quote = "One does not simply walk. -- Boromir"
+quote = "What is now proved was once only imagined. -- William Blake"
 hyefl = hyefl
 
 

@@ -43,7 +43,7 @@ def sagmo(values=None, w=None, n=50):
 
 short = "sagmo"
 alias = "sagmo"
-quote = "Walk without rhythm. -- Fremen proverb"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 sagmo = sagmo
 
 

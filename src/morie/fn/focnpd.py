@@ -39,7 +39,7 @@ def focnpd(dbh=None, height=None, coords=None, n=50):
 
 short = "focnpd"
 alias = "focnpd"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 focnpd = focnpd
 
 

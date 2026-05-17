@@ -33,7 +33,7 @@ def geoda(gdp=None, trade=None, coords=None, n=50):
 
 short = "geoda"
 alias = "geoda"
-quote = "No half measures. -- Mike"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 geoda = geoda
 
 

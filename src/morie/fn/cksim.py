@@ -37,7 +37,7 @@ def cksim(points=None, n=100, window=(0, 100, 0, 100)):
 
 short = "cksim"
 alias = "cksim"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 cksim = cksim
 
 

@@ -36,7 +36,7 @@ def voroni(x=None, y=None, values=None, resolution=50):
 
 short = "voroni"
 alias = "voroni"
-quote = "Not all those who wander are lost. -- Gandalf"
+quote = "An investment in knowledge pays the best interest. -- Benjamin Franklin"
 voroni = voroni
 
 

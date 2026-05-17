@@ -46,7 +46,7 @@ def opgir(func=None, x0=None, bounds=None, n_dims=2, max_iter=100):
 
 short = "opgir"
 alias = "opgir"
-quote = "Whatever happens, happens. -- Spike"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 opgir = opgir
 
 

@@ -28,7 +28,7 @@ def mvtbi(data=None, n=50):
 
 short = "mvtbi"
 alias = "mvtbi"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "You have power over your mind, not outside events. -- Marcus Aurelius"
 mvtbi = mvtbi
 
 

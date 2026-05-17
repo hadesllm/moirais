@@ -28,7 +28,7 @@ def mvtms(data=None, n=50):
 
 short = "mvtms"
 alias = "mvtms"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "The only true wisdom is in knowing you know nothing. -- Socrates"
 mvtms = mvtms
 
 

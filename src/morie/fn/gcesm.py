@@ -31,7 +31,7 @@ def gcesm(data=None, coords=None, n=50):
 
 short = "gcesm"
 alias = "gcesm"
-quote = "Make it so. -- Picard"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 gcesm = gcesm
 
 

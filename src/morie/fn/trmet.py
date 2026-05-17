@@ -36,7 +36,7 @@ def trmet(flow_volume=None, travel_time=None, coords=None, n=50):
 
 short = "trmet"
 alias = "trmet"
-quote = "Tatakae! -- Eren"
+quote = "We must know. We will know. -- David Hilbert"
 trmet = trmet
 
 

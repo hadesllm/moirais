@@ -30,7 +30,7 @@ def wltrn(abundance=None, coords=None, n=50):
 
 short = "wltrn"
 alias = "wltrn"
-quote = "See you space cowboy. -- Spike"
+quote = "What is now proved was once only imagined. -- William Blake"
 wltrn = wltrn
 
 

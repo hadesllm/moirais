@@ -40,7 +40,7 @@ def dkmvk(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkmvk"
 alias = "dkmvk"
-quote = "It's over 9000! -- Vegeta"
+quote = "We must know. We will know. -- David Hilbert"
 dkmvk = dkmvk
 
 

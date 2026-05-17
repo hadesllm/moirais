@@ -40,7 +40,7 @@ def dklmc(x=None, y=None, z=None, values=None, n=30):
 
 short = "dklmc"
 alias = "dklmc"
-quote = "I am justice! -- Light"
+quote = "Knowledge is power. -- Francis Bacon"
 dklmc = dklmc
 
 

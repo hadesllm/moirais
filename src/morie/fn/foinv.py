@@ -39,7 +39,7 @@ def foinv(dbh=None, height=None, coords=None, n=50):
 
 short = "foinv"
 alias = "foinv"
-quote = "Make it so. -- Picard"
+quote = "If I have seen further it is by standing on the shoulders of giants. -- Isaac Newton"
 foinv = foinv
 
 

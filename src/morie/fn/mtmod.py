@@ -37,7 +37,7 @@ def mtmod(trajectory=None, n=50, dt=1.0):
 
 short = "mtmod"
 alias = "mtmod"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 mtmod = mtmod
 
 

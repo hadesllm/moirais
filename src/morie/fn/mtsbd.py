@@ -37,7 +37,7 @@ def mtsbd(trajectory=None, n=50, dt=1.0):
 
 short = "mtsbd"
 alias = "mtsbd"
-quote = "Fear is the mind-killer. -- Bene Gesserit"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 mtsbd = mtsbd
 
 

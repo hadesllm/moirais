@@ -31,7 +31,7 @@ def nblde(data=None, coords=None, n=50):
 
 short = "nblde"
 alias = "nblde"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 nblde = nblde
 
 

@@ -40,7 +40,7 @@ def cldiv(data=None, n=50, k=3, coords=None):
 
 short = "cldiv"
 alias = "cldiv"
-quote = "Those who break the rules are scum. -- Kakashi"
+quote = "The measure of a man is what he does with power. -- Plato"
 cldiv = cldiv
 
 

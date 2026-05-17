@@ -40,7 +40,7 @@ def dkmvc(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkmvc"
 alias = "dkmvc"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 dkmvc = dkmvc
 
 

@@ -30,7 +30,7 @@ def wqfl(data=None, coords=None, n=50):
 
 short = "wqfl"
 alias = "wqfl"
-quote = "It's over 9000! -- Vegeta"
+quote = "Knowledge is power. -- Francis Bacon"
 wqfl = wqfl
 
 

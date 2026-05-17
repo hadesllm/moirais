@@ -28,7 +28,7 @@ def dtbic(data=None, n=50):
 
 short = "dtbic"
 alias = "dtbic"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 dtbic = dtbic
 
 

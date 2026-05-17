@@ -32,7 +32,7 @@ def soman(data=None, depth=None, coords=None, n=50):
 
 short = "soman"
 alias = "soman"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 soman = soman
 
 

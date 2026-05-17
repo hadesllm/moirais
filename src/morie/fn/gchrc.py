@@ -31,7 +31,7 @@ def gchrc(data=None, coords=None, n=50):
 
 short = "gchrc"
 alias = "gchrc"
-quote = "Arise. -- Shadow Monarch"
+quote = "I think, therefore I am. -- Rene Descartes"
 gchrc = gchrc
 
 

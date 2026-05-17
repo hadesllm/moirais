@@ -33,7 +33,7 @@ def gebgt(gdp=None, trade=None, coords=None, n=50):
 
 short = "gebgt"
 alias = "gebgt"
-quote = "Hold the door. -- Hodor"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 gebgt = gebgt
 
 

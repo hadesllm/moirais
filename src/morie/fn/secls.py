@@ -39,7 +39,7 @@ def secls(cases=None, population=None, coords=None, n=50):
 
 short = "secls"
 alias = "secls"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "I think, therefore I am. -- Rene Descartes"
 secls = secls
 
 

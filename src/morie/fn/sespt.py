@@ -39,7 +39,7 @@ def sespt(cases=None, population=None, coords=None, n=50):
 
 short = "sespt"
 alias = "sespt"
-quote = "The needs of the many outweigh the few. -- Spock"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 sespt = sespt
 
 

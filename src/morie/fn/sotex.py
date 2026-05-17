@@ -32,7 +32,7 @@ def sotex(data=None, depth=None, coords=None, n=50):
 
 short = "sotex"
 alias = "sotex"
-quote = "Bankai! -- Ichigo"
+quote = "We must know. We will know. -- David Hilbert"
 sotex = sotex
 
 

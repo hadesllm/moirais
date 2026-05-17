@@ -27,7 +27,7 @@ def vtgai(data=None, n=50):
 
 short = "vtgai"
 alias = "vtgai"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 vtgai = vtgai
 
 

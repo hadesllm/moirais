@@ -36,7 +36,7 @@ def ppitd(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppitd"
 alias = "ppitd"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 ppitd = ppitd
 
 

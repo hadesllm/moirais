@@ -29,7 +29,7 @@ def bonne(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "bonne"
 alias = "bonne"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 bonne = bonne
 
 

@@ -33,7 +33,7 @@ def ubedu(population=None, area=None, coords=None, n=50):
 
 short = "ubedu"
 alias = "ubedu"
-quote = "Arise. -- Shadow Monarch"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 ubedu = ubedu
 
 

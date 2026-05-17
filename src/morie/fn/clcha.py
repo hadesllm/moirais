@@ -40,7 +40,7 @@ def clcha(data=None, n=50, k=3, coords=None):
 
 short = "clcha"
 alias = "clcha"
-quote = "Believe it! -- Naruto"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 clcha = clcha
 
 

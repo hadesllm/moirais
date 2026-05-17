@@ -40,7 +40,7 @@ def maspc(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "maspc"
 alias = "maspc"
-quote = "Valar Morghulis. -- Braavos"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 maspc = maspc
 
 

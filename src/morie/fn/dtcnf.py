@@ -28,7 +28,7 @@ def dtcnf(data=None, n=50):
 
 short = "dtcnf"
 alias = "dtcnf"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 dtcnf = dtcnf
 
 

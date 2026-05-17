@@ -28,7 +28,7 @@ def unstgr(coords=None, n=50, source_crs="EPSG:4326", target_crs="EPSG:3857"):
 
 short = "unstgr"
 alias = "unstgr"
-quote = "Scatter, Senbonzakura. -- Byakuya"
+quote = "I think, therefore I am. -- Rene Descartes"
 unstgr = unstgr
 
 

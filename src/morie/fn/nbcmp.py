@@ -31,7 +31,7 @@ def nbcmp(data=None, coords=None, n=50):
 
 short = "nbcmp"
 alias = "nbcmp"
-quote = "Winter is coming. -- Stark motto"
+quote = "What is now proved was once only imagined. -- William Blake"
 nbcmp = nbcmp
 
 

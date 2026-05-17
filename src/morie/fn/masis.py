@@ -40,7 +40,7 @@ def masis(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "masis"
 alias = "masis"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "The whole is greater than the sum of its parts. -- Aristotle"
 masis = masis
 
 

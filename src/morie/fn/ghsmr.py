@@ -41,7 +41,7 @@ def ghsmr(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghsmr"
 alias = "ghsmr"
-quote = "It's over 9000! -- Vegeta"
+quote = "The Analytical Engine weaves algebraic patterns. -- Ada Lovelace"
 ghsmr = ghsmr
 
 

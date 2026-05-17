@@ -32,7 +32,7 @@ def soph(data=None, depth=None, coords=None, n=50):
 
 short = "soph"
 alias = "soph"
-quote = "I am the one who knocks. -- Walter White"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 soph = soph
 
 

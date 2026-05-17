@@ -36,7 +36,7 @@ def ppare(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppare"
 alias = "ppare"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "Number rules the universe. -- Pythagoras"
 ppare = ppare
 
 

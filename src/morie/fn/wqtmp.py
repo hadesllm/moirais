@@ -30,7 +30,7 @@ def wqtmp(data=None, coords=None, n=50):
 
 short = "wqtmp"
 alias = "wqtmp"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 wqtmp = wqtmp
 
 

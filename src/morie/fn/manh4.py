@@ -40,7 +40,7 @@ def manh4(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "manh4"
 alias = "manh4"
-quote = "Science! -- Jesse Pinkman"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 manh4 = manh4
 
 

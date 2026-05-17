@@ -40,7 +40,7 @@ def dkdwn(x=None, y=None, z=None, values=None, n=30):
 
 short = "dkdwn"
 alias = "dkdwn"
-quote = "See you space cowboy. -- Spike"
+quote = "It is not the strongest that survives, but the most adaptable. -- Charles Darwin"
 dkdwn = dkdwn
 
 

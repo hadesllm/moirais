@@ -41,7 +41,7 @@ def ghpme(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghpme"
 alias = "ghpme"
-quote = "Whatever happens, happens. -- Spike"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 ghpme = ghpme
 
 

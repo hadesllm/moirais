@@ -41,7 +41,7 @@ def ghspt(cases=None, controls=None, exposure=None, coords=None, n=50):
 
 short = "ghspt"
 alias = "ghspt"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 ghspt = ghspt
 
 

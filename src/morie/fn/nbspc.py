@@ -31,7 +31,7 @@ def nbspc(data=None, coords=None, n=50):
 
 short = "nbspc"
 alias = "nbspc"
-quote = "Make it so. -- Picard"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 nbspc = nbspc
 
 

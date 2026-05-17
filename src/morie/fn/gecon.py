@@ -33,7 +33,7 @@ def gecon(gdp=None, trade=None, coords=None, n=50):
 
 short = "gecon"
 alias = "gecon"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 gecon = gecon
 
 

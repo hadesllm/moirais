@@ -27,7 +27,7 @@ def umcex(data=None, n=50):
 
 short = "umcex"
 alias = "umcex"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 umcex = umcex
 
 

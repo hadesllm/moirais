@@ -37,7 +37,7 @@ def tsstm(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tsstm"
 alias = "tsstm"
-quote = "I will take a potato chip and eat it! -- Light"
+quote = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 tsstm = tsstm
 
 

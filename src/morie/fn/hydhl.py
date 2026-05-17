@@ -33,7 +33,7 @@ def hydhl(flow=None, precip=None, coords=None, n=50):
 
 short = "hydhl"
 alias = "hydhl"
-quote = "I mustn't run away. -- Shinji"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 hydhl = hydhl
 
 

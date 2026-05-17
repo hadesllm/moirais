@@ -39,7 +39,7 @@ def fodrt(dbh=None, height=None, coords=None, n=50):
 
 short = "fodrt"
 alias = "fodrt"
-quote = "One does not simply walk. -- Boromir"
+quote = "What is now proved was once only imagined. -- William Blake"
 fodrt = fodrt
 
 

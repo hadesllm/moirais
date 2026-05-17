@@ -28,7 +28,7 @@ def em_irt_estimate(votes=None, *, dims=1, n=10, m=5, max_iter=20):
 
 short = "emirt"
 alias = "em_irt_estimate"
-quote = "Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"
+quote = "Give me a place to stand and I will move the earth. -- Archimedes"
 em_irt_estimate = em_irt_estimate
 
 

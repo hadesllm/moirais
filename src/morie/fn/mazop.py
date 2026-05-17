@@ -40,7 +40,7 @@ def mazop(depth=None, temp=None, salinity=None, coords=None, n=50):
 
 short = "mazop"
 alias = "mazop"
-quote = "Engage. -- Picard"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 mazop = mazop
 
 

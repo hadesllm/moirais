@@ -33,7 +33,7 @@ def afwdsp(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afwdsp"
 alias = "afwdsp"
-quote = "Engage. -- Picard"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 afwdsp = afwdsp
 
 

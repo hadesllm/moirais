@@ -43,7 +43,7 @@ def sawdl(values=None, w=None, n=50):
 
 short = "sawdl"
 alias = "sawdl"
-quote = "I must not fear. -- Litany Against Fear"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 sawdl = sawdl
 
 

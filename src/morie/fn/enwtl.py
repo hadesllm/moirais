@@ -31,7 +31,7 @@ def enwtl(data=None, coords=None, n=50):
 
 short = "enwtl"
 alias = "enwtl"
-quote = "Valar Morghulis. -- Braavos"
+quote = "Knowledge is power. -- Francis Bacon"
 enwtl = enwtl
 
 

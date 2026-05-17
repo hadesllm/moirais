@@ -30,7 +30,7 @@ def wqodr(data=None, coords=None, n=50):
 
 short = "wqodr"
 alias = "wqodr"
-quote = "I am justice! -- Light"
+quote = "He who has a why to live can bear almost any how. -- Friedrich Nietzsche"
 wqodr = wqodr
 
 

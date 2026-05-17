@@ -31,7 +31,7 @@ def nbiso(data=None, coords=None, n=50):
 
 short = "nbiso"
 alias = "nbiso"
-quote = "El Psy Kongroo. -- Okabe"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 nbiso = nbiso
 
 

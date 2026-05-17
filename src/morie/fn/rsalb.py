@@ -32,7 +32,7 @@ def rsalb(pixels=None, bands=None, n=100):
 
 short = "rsalb"
 alias = "rsalb"
-quote = "Breathe. -- Tanjiro"
+quote = "No man ever steps in the same river twice. -- Heraclitus"
 rsalb = rsalb
 
 

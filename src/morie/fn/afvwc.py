@@ -33,7 +33,7 @@ def afvwc(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afvwc"
 alias = "afvwc"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "What is now proved was once only imagined. -- William Blake"
 afvwc = afvwc
 
 

@@ -37,7 +37,7 @@ def tssdm2(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssdm2"
 alias = "tssdm2"
-quote = "A Lannister always pays his debts. -- Tyrion"
+quote = "In the midst of chaos, there is also opportunity. -- Sun Tzu"
 tssdm2 = tssdm2
 
 

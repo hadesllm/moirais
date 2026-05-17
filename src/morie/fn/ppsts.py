@@ -36,7 +36,7 @@ def ppsts(points=None, n=80, window=(0, 1, 0, 1), intensity=None):
 
 short = "ppsts"
 alias = "ppsts"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "Statistics is the grammar of science. -- Karl Pearson"
 ppsts = ppsts
 
 

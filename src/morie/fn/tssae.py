@@ -37,7 +37,7 @@ def tssae(data=None, coords=None, times=None, n=50, t=10):
 
 short = "tssae"
 alias = "tssae"
-quote = "You should enjoy the detours. -- Ging"
+quote = "Number rules the universe. -- Pythagoras"
 tssae = tssae
 
 

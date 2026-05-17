@@ -43,7 +43,7 @@ def sawkr(values=None, w=None, n=50):
 
 short = "sawkr"
 alias = "sawkr"
-quote = "I am the one who knocks. -- Walter White"
+quote = "It is not what happens to you, but how you react, that matters. -- Epictetus"
 sawkr = sawkr
 
 

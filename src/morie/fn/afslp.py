@@ -33,7 +33,7 @@ def afslp(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afslp"
 alias = "afslp"
-quote = "Dedicate your hearts! -- Erwin"
+quote = "There is no royal road to geometry. -- Euclid"
 afslp = afslp
 
 

@@ -38,7 +38,7 @@ def srper(X=None, y=None, w=None, n=50, k=3):
 
 short = "srper"
 alias = "srper"
-quote = "Breathe. -- Tanjiro"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 srper = srper
 
 

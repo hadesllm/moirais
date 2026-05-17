@@ -32,7 +32,7 @@ def sontg(data=None, depth=None, coords=None, n=50):
 
 short = "sontg"
 alias = "sontg"
-quote = "I'm gonna be King of the Pirates! -- Luffy"
+quote = "The measure of a man is what he does with power. -- Plato"
 sontg = sontg
 
 

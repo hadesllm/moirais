@@ -31,7 +31,7 @@ def abpcb(data=None, coords=None, n=50):
 
 short = "abpcb"
 alias = "abpcb"
-quote = "I am justice! -- Light"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 abpcb = abpcb
 
 

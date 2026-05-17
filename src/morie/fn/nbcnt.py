@@ -31,7 +31,7 @@ def nbcnt(data=None, coords=None, n=50):
 
 short = "nbcnt"
 alias = "nbcnt"
-quote = "Set your heart ablaze! -- Rengoku"
+quote = "Logic is the foundation of all certain knowledge. -- Leonhard Euler"
 nbcnt = nbcnt
 
 

@@ -39,7 +39,7 @@ def focnph(dbh=None, height=None, coords=None, n=50):
 
 short = "focnph"
 alias = "focnph"
-quote = "Equivalent exchange. -- Elric brothers"
+quote = "Luck is what happens when preparation meets opportunity. -- Seneca"
 focnph = focnph
 
 

@@ -34,7 +34,7 @@ def cscyb(incidents=None, population=None, coords=None, n=50):
 
 short = "cscyb"
 alias = "cscyb"
-quote = "Tatakae! -- Eren"
+quote = "A journey of a thousand miles begins with a single step. -- Lao Tzu"
 cscyb = cscyb
 
 

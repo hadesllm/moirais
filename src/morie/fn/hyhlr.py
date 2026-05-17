@@ -33,7 +33,7 @@ def hyhlr(flow=None, precip=None, coords=None, n=50):
 
 short = "hyhlr"
 alias = "hyhlr"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 hyhlr = hyhlr
 
 

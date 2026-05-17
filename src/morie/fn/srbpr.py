@@ -38,7 +38,7 @@ def srbpr(X=None, y=None, w=None, n=50, k=3):
 
 short = "srbpr"
 alias = "srbpr"
-quote = "Yare yare daze. -- Jotaro"
+quote = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 srbpr = srbpr
 
 

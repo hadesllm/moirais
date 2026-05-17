@@ -38,7 +38,7 @@ def agslv(areas=None, perimeters=None, values=None, n=30):
 
 short = "agslv"
 alias = "agslv"
-quote = "Get in the robot, Shinji! -- Misato"
+quote = "To understand God's thoughts we must study statistics. -- Florence Nightingale"
 agslv = agslv
 
 

@@ -31,7 +31,7 @@ def gcext(data=None, coords=None, n=50):
 
 short = "gcext"
 alias = "gcext"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 gcext = gcext
 
 

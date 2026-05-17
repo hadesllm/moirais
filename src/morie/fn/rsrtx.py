@@ -32,7 +32,7 @@ def rsrtx(pixels=None, bands=None, n=100):
 
 short = "rsrtx"
 alias = "rsrtx"
-quote = "Power is everything. -- Sung Jin-Woo"
+quote = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 rsrtx = rsrtx
 
 

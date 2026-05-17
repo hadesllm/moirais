@@ -29,7 +29,7 @@ def rcrnd(data=None, n=50):
 
 short = "rcrnd"
 alias = "rcrnd"
-quote = "The spice must flow. -- Paul Atreides"
+quote = "It does not matter how slowly you go as long as you do not stop. -- Confucius"
 rcrnd = rcrnd
 
 

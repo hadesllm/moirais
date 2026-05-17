@@ -31,7 +31,7 @@ def nbgrd(data=None, coords=None, n=50):
 
 short = "nbgrd"
 alias = "nbgrd"
-quote = "Bankai! -- Ichigo"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 nbgrd = nbgrd
 
 

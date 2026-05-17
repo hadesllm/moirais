@@ -31,7 +31,7 @@ def dtctm(x=None, n=100, params=None):
 
 short = "dtctm"
 alias = "dtctm"
-quote = "Go beyond! Plus Ultra! -- All Might"
+quote = "Mathematics is the queen of the sciences. -- Carl Friedrich Gauss"
 dtctm = dtctm
 
 

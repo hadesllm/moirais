@@ -33,7 +33,7 @@ def ubren(population=None, area=None, coords=None, n=50):
 
 short = "ubren"
 alias = "ubren"
-quote = "Desert power. -- Paul Muad'Dib"
+quote = "The heart has its reasons of which reason knows nothing. -- Blaise Pascal"
 ubren = ubren
 
 

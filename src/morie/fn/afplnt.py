@@ -33,7 +33,7 @@ def afplnt(yield_data=None, soil=None, coords=None, n=50):
 
 short = "afplnt"
 alias = "afplnt"
-quote = "Chaos is a ladder. -- Littlefinger"
+quote = "I think, therefore I am. -- Rene Descartes"
 afplnt = afplnt
 
 

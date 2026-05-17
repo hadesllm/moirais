@@ -1,3 +1,20 @@
+# morie 0.9.1 — 2026-05-17
+
+New: a shared C/C++ computational backend and a Hawkes-process engine.
+
+* **Shared C++ core** — the numerical kernels are now a compiled C++
+  core (`libmorie`), bound into the R package via Rcpp. The same core
+  serves the Python and R sides.
+* **Hawkes-process engine** — self-exciting point-process likelihoods
+  in the C++ core (sum-of-exponentials, complex-pole, matrix-pencil,
+  sub-quadratic truncated Weibull / Lomax / gamma, sinusoidal-baseline,
+  hybrid gamma-tail) with an R-side fitter that detects Poisson
+  degeneracy and uses multi-start restarts.
+* **IP / licensing cleanup** — copyrighted pop-culture quotes and a
+  bundled copyrighted demo dataset were replaced with public-domain
+  content; franchise-derived function codes were renamed to neutral
+  names.
+
 # morie 0.9.0 — 2026-05-16
 
 New: dataset availability auditing, more open-data sources, and

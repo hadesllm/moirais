@@ -55,5 +55,5 @@
     "Goffman, E. (1961). Asylums: Essays on the Social Situation of Mental Patients and Other Inmates. Anchor Books."
   ],
   "notes": "MORIE is licensed AGPL-3.0-or-later (strong copyleft; see LICENSE). The optional Linux-kernel adjuncts under kernel-module/ and daemon/ are GPL-2.0-only (kernel ABI requirement). The Ontario SIU scraper is additionally subject to the Ontario open-government licence on the source corpus.",
-  "version": "0.8.0"
+  "version": "0.9.1"
 }

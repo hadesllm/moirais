@@ -104,7 +104,7 @@ $\{N_t\}_{t \ge 0}$ whose conditional intensity exhibits
 self-excitation: the occurrence of an event at $s < t$ raises
 $\lambda(t)$ above its baseline.  For street-level crime, this
 self-excitation is the canonical mechanism of \emph{near-repeat
-victimisation} — a burglary on a block raises the rate of further
+victimisation} --- a burglary on a block raises the rate of further
 burglaries in the same block over the following days
 \citep{Mohler2011,short2010pde}.  We follow the spatial-physics-of
 crime literature in writing
@@ -136,7 +136,7 @@ and infill asymptotics, makes likelihood inference for this general
 model rigorous.  The contribution is to (a) re-derive the relevant
 finite-sample quantities cleanly, (b) implement them in
 \texttt{morie.tps\_hawkes\_advanced}\footnote{\textit{morie} is
-pronounced /ˈmɔɪraɪ/ (``MOY-rye''), like the Greek \textit{Moirai},
+pronounced ``MOY-rye'', like the Greek \textit{Moirai},
 the Fates.}, and (c) apply the full
 machinery to Toronto Police Service open data.
 
@@ -171,7 +171,7 @@ g(v;\psi)\rmd v$ have closed form in every case
 \textemdash exponential: $1-e^{-\beta u}$;
 Gamma: $\gamma(\alpha,\beta u)/\Gamma(\alpha)$ (regularised lower incomplete gamma);
 Weibull: $1-e^{-(u/\lambda)^\alpha}$;
-power-law/Lomax: $1-(c/(u+c))^{\alpha-1}$ — and we use this in
+power-law/Lomax: $1-(c/(u+c))^{\alpha-1}$ --- and we use this in
 Section~\ref{sec:likelihood} to evaluate the integrated intensity
 analytically.
 
@@ -289,7 +289,7 @@ For the finite-$T$ application we use \eqref{eq:clt} as a
 plug-in standard error: $\widehat{\mathrm{Cov}}(\hat\theta) =
 I(\hat\theta)^{-1}/n$ via the numerical Hessian of \eqref{eq:loglik}.
 This is exactly the inference one would have used under the
-classical Markovian assumption — the Kwan-Chen-Dunsmuir
+classical Markovian assumption --- the Kwan-Chen-Dunsmuir
 contribution is the proof that it remains valid when the kernel is
 non-exponential and the baseline is non-stationary.
 
@@ -321,14 +321,14 @@ The new \texttt{morie.tps\_hawkes\_advanced} module exposes:
 \begin{itemize}
 \setlength{\itemsep}{1pt}
   \item \texttt{fit\_hawkes\_general(t, T, kernel\_kind, baseline\_kind)}
-    — MLE via adaptive Nelder-Mead with parameter-vector packing
+    --- MLE via adaptive Nelder-Mead with parameter-vector packing
     $\theta = (\alpha,\eta,\psi)$ and the integrated-intensity
     decomposition \eqref{eq:integral-decomp}.
-  \item \texttt{hawkes\_advanced\_fit(df, kernel, baseline)} — RichResult
+  \item \texttt{hawkes\_advanced\_fit(df, kernel, baseline)} --- RichResult
     wrapper with Q-Q plot, KS $p$-value, and AIC/BIC.
-  \item \texttt{compare\_hawkes\_kernels(df)} — fits all 8
+  \item \texttt{compare\_hawkes\_kernels(df)} --- fits all 8
     (kernel $\times$ baseline) combinations and ranks by AIC.
-  \item \texttt{hawkes\_markovian\_vs\_nonmarkovian(df)} — focused
+  \item \texttt{hawkes\_markovian\_vs\_nonmarkovian(df)} --- focused
     2-way comparison: $(\text{exp},\text{const})$ vs
     $(\text{weibull},\text{sin})$, the cheapest pairwise contrast on
     the dashboard.
@@ -494,7 +494,7 @@ sinusoidal baseline.  By contrast, switching only the kernel
 ($\Delta\mathrm{AIC} \le 1.0$).  The substantive conclusion is
 that for Toronto Assault data the dominant departure from the
 classical model is the time-varying baseline, not the kernel
-shape — but the KCD framework remains the inferential engine that
+shape --- but the KCD framework remains the inferential engine that
 makes the comparison legitimate.
 
 \paragraph{Markovian vs non-Markovian.}  The
@@ -509,7 +509,7 @@ is small ($\le 50$ AIC), so for these data the time-varying
 baseline is the dominant non-Markovian feature.
 
 \paragraph{Branching ratio and explosivity.}  Across all eight
-fits $\hat\eta$ sits in $[0.83, 0.98]$ — high but stationary.
+fits $\hat\eta$ sits in $[0.83, 0.98]$ --- high but stationary.
 That each Toronto Assault incident contributes an estimated
 $\hat\eta < 1$ direct offspring on average to the rate of further
 Assault incidents is consistent with the
@@ -620,7 +620,7 @@ ground for doing so, and the \texttt{morie.tps\_hawkes\_advanced}
 implementation makes it routine.
 
 A natural next step is to lift the kernel and baseline to the
-spatial-marked process — already partially done in
+spatial-marked process --- already partially done in
 \texttt{morie.tps\_spatial\_advanced} for Moran's $I$ / LISA /
 Getis-Ord but not yet for the self-exciting kernel itself.  A
 second extension is the multivariate-marked Hawkes:

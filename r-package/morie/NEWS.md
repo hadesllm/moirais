@@ -1,3 +1,12 @@
+# morie 0.9.2 — 2026-05-17
+
+Fix: the Docker container build for the v0.9.1 C/C++ core.
+
+* **Container build** — the image builder staged the Python install
+  from a stub package, which a compiled scikit-build-core build
+  cannot do. The builder stage now installs CMake/Ninja and builds
+  from the real `CMakeLists.txt` and `libmorie/` sources.
+
 # morie 0.9.1 — 2026-05-17
 
 New: a shared C/C++ computational backend and a Hawkes-process engine.

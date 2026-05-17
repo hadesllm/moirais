@@ -27,32 +27,33 @@ ENV PIP_DISABLE_PIP_VERSION_CHECK=1 \
     PIP_NO_WARN_SCRIPT_LOCATION=0 \
     PYTHONDONTWRITEBYTECODE=1
 
+# Since v0.9.1 morie ships a compiled C++ core (libmorie) built with
+# scikit-build-core + CMake + nanobind, so the builder needs a C/C++
+# toolchain plus CMake and Ninja.
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     rm -f /etc/apt/apt.conf.d/docker-clean \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
         build-essential \
-        gcc
+        gcc \
+        g++ \
+        cmake \
+        ninja-build
 
 WORKDIR /build
 
-# Deps layer: pyproject.toml + minimal package shim — cached while
-# pyproject is unchanged. The shim is overwritten by the source-layer
-# pip install below; its .pyc cache is cleaned up.
-COPY pyproject.toml README.md ./
-
-RUN --mount=type=cache,target=/root/.cache/pip,sharing=locked \
-    mkdir -p src/morie \
-    && echo '__version__ = "0.8.0"' > src/morie/__init__.py \
-    && pip install --root-user-action=ignore setuptools wheel \
-    && pip install --root-user-action=ignore --prefix=/install .
-
-# Source layer: only this layer invalidates when *.py changes.
+# A compiled (scikit-build-core) build cannot be staged from a stub
+# package the way a pure-Python build could: CMake needs the real
+# CMakeLists.txt and the libmorie/ C++ sources present. Copy the full
+# build input and install once. The pip layer is still cache-mounted,
+# so unchanged dependencies are reused across builds.
+COPY pyproject.toml README.md CMakeLists.txt ./
+COPY libmorie/ ./libmorie/
 COPY src/ ./src/
 
 RUN --mount=type=cache,target=/root/.cache/pip,sharing=locked \
-    pip install --root-user-action=ignore --prefix=/install --no-deps . \
+    pip install --root-user-action=ignore --prefix=/install . \
     && find /install -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true \
     && find /install -type f -name "*.pyc" -delete 2>/dev/null || true
 
@@ -74,7 +75,7 @@ RUN R CMD INSTALL --library=/usr/local/lib/R/site-library /build/r-package/morie
 # ─── Stage 3: Runtime ────────────────────────────────────────────────────────
 FROM python:${PYTHON_VERSION}-slim AS runtime
 
-ARG VERSION=0.8.0
+ARG VERSION=0.9.2
 ARG VCS_REF=unknown
 ARG BUILD_DATE=unknown
 

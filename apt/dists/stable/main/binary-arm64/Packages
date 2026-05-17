@@ -1,14 +1,14 @@
 Package: morie
-Version: 0.9.1
+Version: 0.9.2
 Architecture: arm64
 Maintainer: Vansh Singh Ruhela <hadesllm@proton.me>
 Installed-Size: 0
 Depends: python3 (>= 3.10), python3-venv, python3-pip
-Filename: pool/main/morie_0.9.1_arm64.deb
-Size: 1492
-MD5sum: 1bcb0afdd5c19da5d690eb26b414a3c3
-SHA1: 3f237c1899314dfe1eec3b8ae35d5933f406b92c
-SHA256: 9c42983f5e3f202f9fda3157d6fb0b55f158a5bd8062acd162d62234ab73b917
+Filename: pool/main/morie_0.9.2_arm64.deb
+Size: 1500
+MD5sum: d607d79bd46ac11da72551dc8ff207c3
+SHA1: 364cbe73309bfe6d029aa0d043bb46cdb52177c8
+SHA256: ff559d865c34e64a45154d76d2d84992143ee7ff814c18f3681dcdd38610501d
 Section: default
 Priority: optional
 Homepage: https://github.com/hadesllm/morie

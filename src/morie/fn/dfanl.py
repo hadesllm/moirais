@@ -13,7 +13,7 @@ from ._containers import DescriptiveResult
 
 __all__ = ['dfanl']
 
-_QUOTE = "Fluctuations reveal the hidden. -- Qui-Gon"
+_QUOTE = "Knowledge is power. -- Francis Bacon"
 
 
 def dfanl(

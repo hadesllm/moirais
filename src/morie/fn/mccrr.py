@@ -5,7 +5,7 @@ import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "The ability to speak does not make you intelligent. -- Qui-Gon"
+_QUOTE = "There is no royal road to geometry. -- Euclid"
 
 
 def mcc_score(y_true, y_pred, **kwargs) -> ESRes:

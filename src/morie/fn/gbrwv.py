@@ -13,7 +13,7 @@ from ._containers import DescriptiveResult
 
 __all__ = ['gbrwv']
 
-_QUOTE = "Between two worlds, the truth lies. -- Qui-Gon"
+_QUOTE = "What is now proved was once only imagined. -- William Blake"
 
 
 def gbrwv(

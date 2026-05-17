@@ -4,7 +4,7 @@
 
 from ._containers import ESRes
 
-_QUOTE = "Your focus determines your reality. -- Qui-Gon Jinn"
+_QUOTE = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 
 
 def conditional_prob(

@@ -5,7 +5,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "Your focus determines your reality. -- Qui-Gon Jinn"
+_QUOTE = "No man ever steps in the same river twice. -- Heraclitus"
 
 
 def pid_controller(

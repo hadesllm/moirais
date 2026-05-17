@@ -11,7 +11,7 @@ from ._containers import DescriptiveResult
 def centroidal_time(x: np.ndarray, fs: float = 1.0) -> DescriptiveResult:
     """Compute the energy-weighted centroidal time.
 
-    'Your focus determines your reality.' -- Qui-Gon Jinn
+    The only true wisdom is in knowing you know nothing. -- Socrates
     """
     from morie._waveform import centroidal_time as _backend
 

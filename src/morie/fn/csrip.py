@@ -5,7 +5,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "This is the way. -- Din Djarin"
+_QUOTE = "Knowledge is power. -- Francis Bacon"
 
 
 def rip_check(

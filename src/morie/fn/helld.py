@@ -5,7 +5,7 @@ import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "There is always a bigger fish. -- Qui-Gon Jinn"
+_QUOTE = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 
 
 def hellinger_dist(p, q, **kwargs) -> ESRes:

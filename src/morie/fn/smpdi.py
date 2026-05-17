@@ -4,7 +4,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "There is always a bigger fish. -- Qui-Gon Jinn"
+_QUOTE = "The only true wisdom is in knowing you know nothing. -- Socrates"
 
 
 def simpson_diversity(abundances, **kwargs) -> DescriptiveResult:

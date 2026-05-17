@@ -6,7 +6,7 @@ import numpy as np
 
 from ._containers import ESRes
 
-_QUOTE = "Find the balance point. -- Qui-Gon Jinn"
+_QUOTE = "The whole is greater than the sum of its parts. -- Aristotle"
 
 
 def youdens_j(y_true, y_pred, *, pos_label=1, **kwargs) -> ESRes:

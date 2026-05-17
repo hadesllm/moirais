@@ -138,6 +138,29 @@ jobs:
           git push origin "v$v"
           echo "::notice title=Auto-tagged::v$v pushed after a clean verify build."
 
+      # Create the GitHub Release object so the Releases page and the
+      # "Latest release" badge stay current. Notes are this version's
+      # section of the R package NEWS.md; if that section is missing,
+      # fall back to GitHub's auto-generated PR notes.
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          v="${{ needs.check.outputs.version }}"
+          notes="$(awk -v ver="$v" '
+            index($0, "# morie " ver " ") == 1 { p = 1; next }
+            p && index($0, "# morie ") == 1   { p = 0 }
+            p { print }
+          ' r-package/morie/NEWS.md)"
+          if [ -n "$(printf "%s" "$notes" | tr -d "[:space:]")" ]; then
+            gh release create "v$v" --verify-tag --latest \
+              --title "morie v$v" --notes "$notes"
+          else
+            gh release create "v$v" --verify-tag --latest \
+              --title "morie v$v" --generate-notes
+          fi
+          echo "::notice title=GitHub Release::v$v release object created."
+
       # Tags pushed by GITHUB_TOKEN do not trigger `on: push: tags:`,
       # so the publish workflows are dispatched explicitly. They run
       # only because `verify` already proved the build is sound.

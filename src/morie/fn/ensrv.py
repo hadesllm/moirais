@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "You were my brother, Anakin."
+_QUOTE = "Statistics is the grammar of science. -- Karl Pearson"
 
 
 def ensemble_variance(segments, **kwargs) -> DescriptiveResult:

@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import SignalResult
 
-_QUOTE = "You were my brother, Anakin. I loved you."
+_QUOTE = "Mathematics is the art of giving the same name to different things. -- Henri Poincare"
 
 
 def nlms_filter(x, d, mu: float = 0.5, order: int = 16) -> SignalResult:

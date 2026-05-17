@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "You were my brother, Anakin. I loved you."
+_QUOTE = "Measure what is measurable, and make measurable what is not. -- Galileo Galilei"
 
 
 def bic_score_fn(x: np.ndarray, max_order: int = 20) -> DescriptiveResult:

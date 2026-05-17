@@ -7,7 +7,7 @@ import numpy as np
 
 from ._containers import DescriptiveResult
 
-_QUOTE = "You were my brother, Anakin! I loved you."
+_QUOTE = "Errors using inadequate data are much less than those using none. -- Charles Babbage"
 
 
 def fundamental_freq(x, fs: float = 1.0, **kwargs) -> DescriptiveResult:

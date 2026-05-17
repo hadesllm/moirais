@@ -333,8 +333,34 @@ The new \texttt{morie.tps\_hawkes\_advanced} module exposes:
 \end{itemize}
 The companion \texttt{morie.tps\_stochastic.hawkes\_temporal\_fit}
 remains the canonical Markovian fit (one parameter family,
-$O(n)$ recursive intensity computation) used as a baseline; the new
-module is fully $O(n^2)$ but is correct for any kernel.
+$O(n)$ recursive intensity computation) used as a baseline.
+
+\paragraph{The compiled core.}
+Since v0.9.1 the likelihood evaluations route through a shared C++
+numeric core (\texttt{libmorie}; the header-only
+\texttt{morie\_core.hpp}), bound into Python with nanobind and into
+the R package with Rcpp. Because both language sides call the
+\emph{same} compiled arithmetic, a Python/R divergence in the
+likelihood is eliminated by construction. The exponential/constant
+path keeps the $O(n)$ recursion of \S\ref{sec:setup}. For the Weibull
+and gamma kernels the core adds a \emph{truncated} variant that cuts
+the inner excitation sum at the lag where the kernel underflows to
+zero: because the exact $O(n^2)$ loop already adds those vanishing
+terms, the truncation is bit-for-bit identical to the exact result
+--- not an approximation --- and a two-pointer sliding window over the
+sorted event times evaluates it in $O(nw)$, with $w$ the number of
+events inside the cutoff. A sum-of-exponentials (SoE) engine evaluates
+\emph{any} kernel that has been fitted to an SoE form
+$g(u)=\sum_{m=1}^M w_m e^{-\beta_m u}$ in $O(Mn)$, by running $M$
+memoryless $O(n)$ recursions in parallel; permitting complex-conjugate
+$(w_m,\beta_m)$ pairs --- recovered by a matrix-pencil fit of a
+slowly-decaying tail --- lets the SoE form carry damped oscillatory
+components, and a hybrid gamma engine combines an exact sliding window
+over the rising region of the kernel with an SoE tail beyond a split
+lag $u_{\mathrm{split}}$. The non-Markovian fits are therefore
+sub-quadratic in practice rather than the fixed $O(n^2)$ of earlier
+releases. A Numba-JIT path is retained as a fallback for kernel /
+baseline combinations not yet present in the C++ core.
 
 \section{Application: Toronto Police Service}\label{sec:application}
 
@@ -354,10 +380,10 @@ best read as upper bounds.  Table~\ref{tab:tps-fit-2019} reports
 the contiguous-time-window re-fit promised in the previous
 release: the calendar year 2019 ($T=365$ days, $n=21{,}160$
 events after $\mathrm{U}(0,1)$-day jitter and clipping to
-$[0,\,T)$), fit at full sample under the Numba-JIT'd likelihood
-that this release ships ($O(n)$ recursive evaluation for the
-exponential kernel and parallel $O(n^2)$ for non-Markovian
-kernels).  Section~\ref{sec:application}.B retains the original
+$[0,\,T)$), fit at full sample under the compiled C++ likelihood
+core that this release ships ($O(n)$ recursive evaluation for the
+exponential kernel; sub-quadratic truncated and sum-of-exponentials
+paths for the non-Markovian kernels).  Section~\ref{sec:application}.B retains the original
 $n=2{,}000$ sub-sample for backwards comparability with the prior sub-sampled analyses; readers seeking the canonical post-v0.2.1 Hawkes
 characterisation of TPS Assault should rely on
 Table~\ref{tab:tps-fit-2019}.
@@ -393,10 +419,10 @@ lomax          & constant   & 4 & $5\,495.2$ & $0.981$ & $0.860$\\
 \paragraph{Near-criticality bias.}
 The fitted $\hat\eta$ for property crime sits at $0.97$--$0.98$, pressed against the stationarity boundary.  The Filimonov--Sornette 2015 \citep{filimonov2015apparent} small-sample near-criticality bias is a real concern at these values; the time-rescaling residual diagnostics of §\ref{sec:gof} are the more reliable indicator of model adequacy than the point estimate of $\hat\eta$ alone.
 
-\subsection{2019 contiguous-year re-fit (full-sample, JIT-accelerated)}\label{sec:application-2019}
+\subsection{2019 contiguous-year re-fit (full-sample, compiled core)}\label{sec:application-2019}
 
-The single-year contiguous re-fit, executed with the new
-Numba-JIT'd likelihood, produces Table~\ref{tab:tps-fit-2019}.
+The single-year contiguous re-fit, executed with the compiled C++
+likelihood core, produces Table~\ref{tab:tps-fit-2019}.
 Two model families bracket the kernel-shape question: a
 classical Markovian Hawkes (exponential kernel, constant
 baseline) and a fat-tailed non-Markovian model (Lomax /
@@ -417,7 +443,7 @@ classical exponential kernel, constant baseline.  Lomax/sin =
 fat-tailed power-law kernel, sinusoidal baseline.  AIC and
 Kolmogorov--Smirnov $p$-value on the time-rescaling residuals.
 Estimates from \texttt{morie.tps\_hawkes\_advanced.fit\_hawkes\_general}
-(JIT-accelerated likelihood path; full source at
+(compiled-core likelihood path; full source at
 \code{data/manifest/outputs/paper\_hawkes\_assault\_2019\_contiguous.json}).}
 \label{tab:tps-fit-2019}
 \begin{tabular}{llrrrrr}
@@ -442,7 +468,7 @@ sinusoidal baseline absorbing exogenous cyclic surges (weekly
 and seasonal); the branching ratio falls from $\hat\eta=0.567$
 under constant baseline to $\hat\eta=0.510$ under sinusoidal,
 because the kernel no longer has to over-explain the cyclic
-surges.  Lomax/sinusoidal, fit at full sample with the JIT
+surges.  Lomax/sinusoidal, fit at full sample with the compiled
 power-law kernel and the same sinusoidal baseline, lands at
 $\hat\eta=0.513,\,\text{AIC}=-130{,}092.2,\,\text{KS}\,p=0.298$
 --- $3.9$ AIC \emph{worse} than Exp/sinusoidal (one extra
@@ -453,7 +479,7 @@ KCD~\citep{kwan2025nonstationary} finding for TPS Assault~2019:
 stands in contrast to the prior sub-sampled $n=2{,}000$ fit
 (Table~\ref{tab:tps-fit}) where finite-sample bias near
 $\hat\eta=0.98$ pushed the test toward the boundary; full-sample
-fitting under the JIT path eliminates that small-sample
+fitting under the compiled-core path eliminates that small-sample
 artefact.
 
 
@@ -538,7 +564,7 @@ cyclicity the kernel was previously absorbing under constant baseline.
 
 \paragraph{Table~\ref{tab:tps-fit-2019}: full-sample 2019 contiguous re-fit.}
 The contiguous one-year fit uses \code{fit\_hawkes\_general()}
-directly on the JIT-accelerated likelihood path, with no
+directly on the compiled-core likelihood path, with no
 sub-sampling.  The 2019 event sequence is extracted, jittered, and
 clipped to $[0, T)$:
 

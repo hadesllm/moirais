@@ -836,12 +836,11 @@ The Assault row of Tables~\ref{tab:hawkes-markovian} and
 $n_{\text{fit}}=1{,}500$ uniform-random sub-sample (a
 non-measure-preserving operation for a self-exciting process)
 and is retained for backward comparability with prior
-analyses.  The full-sample fitter described in the companion software papers (a
-Numba-JIT'd full-sample fitter (described in the companion
-\texttt{morie-py-paper} and \texttt{morie-r-paper}) and the
-canonical Assault characterisation is the
+analyses.  The canonical Assault characterisation is instead the
 contiguous-year fit of 2019 ($n=21{,}160$ events,
-$T=365$ days, no sub-sampling, post-jitter clipping to $[0,T)$).
+$T=365$ days, no sub-sampling, post-jitter clipping to $[0,T)$),
+produced by the full-sample compiled-core fitter described in the
+companion \texttt{morie-py-paper} and \texttt{morie-r-paper}.
 That fit returns Markovian
 $\hat\eta=0.567,\;\hat\beta=3.854/\text{day},\;\text{KS}~p=0.494$
 ($\text{AIC}=-130{,}068.4$); Exp/sinusoidal

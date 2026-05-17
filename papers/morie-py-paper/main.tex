@@ -524,9 +524,13 @@ ships under \code{morie/tests/test\_sprott\_doob.py}.
 The third example fits the Hawkes self-exciting specification of
 \citet{Ruhela2026Hawkes} to the Toronto Police Service open-data
 major-crime event series under the \code{morie.tps\_hawkes\_advanced}
-module (Numba-JIT'd $O(n)$ for the exponential kernel and parallel
-$O(n^2)$ JIT path for non-Markovian kernels).  The \code{compare\_hawkes\_kernels}
-routine fits all 8 (kernel $\times$ baseline) combinations and ranks by AIC:
+module. Since v0.9.1 the likelihood evaluations route through the
+shared C++ numeric core (\code{libmorie}, bound with nanobind):
+$O(n)$ recursion for the exponential kernel, and sub-quadratic
+truncated and sum-of-exponentials paths for the non-Markovian
+kernels, with a Numba-JIT path retained as a fallback. The
+\code{compare\_hawkes\_kernels} routine fits all 8 (kernel $\times$
+baseline) combinations and ranks by AIC:
 
 \begin{Code}
 >>> import pandas as pd

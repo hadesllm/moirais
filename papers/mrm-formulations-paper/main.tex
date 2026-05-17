@@ -752,10 +752,16 @@ that descriptive analyses do not.
 
 \subsection{Implementation}
 
-The MRM-Hawkes implementation provides both Markovian and
-power-law fits via maximum likelihood, the Ogata thinning
-algorithm for simulation, and a branching-ratio diagnostic for
-stationarity \citep{Ruhela2026Hawkes}.
+The MRM-Hawkes implementation provides Markovian (exponential) and
+non-Markovian (power-law, Weibull, gamma) kernel fits via maximum
+likelihood, the Ogata thinning algorithm for simulation, and a
+branching-ratio diagnostic for stationarity \citep{Ruhela2026Hawkes}.
+Since \pkg{morie}~v0.9.1 the likelihood evaluations run on a shared
+compiled C++ core used identically by the \proglang{Python} and
+\proglang{R} sides, so the two language implementations cannot
+diverge; the non-Markovian kernels are evaluated either by exact
+sub-quadratic truncation of the excitation sum or by a
+sum-of-exponentials engine, rather than the dense $O(n^2)$ sum.
 Goodness-of-fit is assessed through the time-rescaling theorem of
 \citet{BrownEtAl2002}: under the fitted model the rescaled
 inter-event times should be exponentially distributed; a

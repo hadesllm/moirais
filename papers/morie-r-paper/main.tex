@@ -527,12 +527,16 @@ ships under \code{tests/testthat/test-sprott-doob.R}.
 
 The third example fits the Hawkes self-exciting specification of
 \citet{Ruhela2026Hawkes} to the Toronto Police Service open-data
-major-crime event series. Fitting itself is offline (handled by
-the Python sibling's \code{morie.tps\_hawkes\_advanced} module
-under a Numba-JIT'd $O(n)$ recursive likelihood for the exponential
-kernel and a parallel $O(n^2)$ JIT path for non-Markovian
-kernels); the \proglang{R} side consumes the resulting fitted-parameter
-manifest via \code{mrm\_tps\_load\_hawkes\_refit()}:
+major-crime event series. Since v0.9.1 the \proglang{R} package fits
+Hawkes models natively: \code{morie\_hawkes\_fit()} maximises the
+negative log-likelihood through the shared C++ numeric core
+(\code{libmorie} --- the same compiled core the Python side uses,
+bound here with Rcpp), with Poisson-degeneracy detection and
+multi-start restarts, and a pure-\proglang{R} likelihood as a
+fallback. The example below instead consumes a fitted-parameter
+manifest exported by the Python sibling via
+\code{mrm\_tps\_load\_hawkes\_refit()}, illustrating cross-language
+reuse of a single fit:
 
 \begin{Code}
 R> refit <- mrm_tps_load_hawkes_refit(

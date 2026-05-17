@@ -1,8 +1,8 @@
-# describe('sndwv') — cepstral_analysis
+# describe('impfor') — impact_force
 
 ## WHAT IT DOES
 
-Cepstral analysis.
+Impact force modeling.
 
 ## WHEN TO USE
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/sndwv.py`.
+`fn/impfor.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('sndwv')` for guidance.
+`print(result)` render. See `morie.fn.describe('impfor')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.sndwv import *
+from morie.fn.impfor import *
 import numpy as np
-# See the function signature in fn/sndwv.py for argument names.
+# See the function signature in fn/impfor.py for argument names.
 ```
 
 ## COMMON MISTAKES

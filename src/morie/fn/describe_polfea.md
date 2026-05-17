@@ -1,8 +1,8 @@
-# describe('sunst') — surface_roughness
+# describe('polfea') — polynomial_features
 
 ## WHAT IT DOES
 
-Surface roughness metrics.
+Feature engineering (polynomial expansion).
 
 ## WHEN TO USE
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/sunst.py`.
+`fn/polfea.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('sunst')` for guidance.
+`print(result)` render. See `morie.fn.describe('polfea')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.sunst import *
+from morie.fn.polfea import *
 import numpy as np
-# See the function signature in fn/sunst.py for argument names.
+# See the function signature in fn/polfea.py for argument names.
 ```
 
 ## COMMON MISTAKES

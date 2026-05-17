@@ -1,13 +1,13 @@
-"""Tests for morie.fn.jazz -- Markov chain generation."""
+"""Tests for morie.fn.markge -- Markov chain generation."""
 
 import numpy as np
-from morie.fn.jazz import markov_generate, jazz
+from morie.fn.markge import markov_generate, markge
 from morie.fn._containers import DescriptiveResult
 
 
-class TestJazz:
+class TestMarkge:
     def test_alias(self):
-        assert jazz is markov_generate
+        assert markge is markov_generate
 
     def test_deterministic(self):
         P = np.array([[0, 1], [1, 0]], dtype=float)

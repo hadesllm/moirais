@@ -58,7 +58,7 @@ def impact_force(
     )
 
 
-sidsw = impact_force
+impfor = impact_force
 
 
 def cheatsheet() -> str:

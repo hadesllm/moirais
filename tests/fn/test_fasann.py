@@ -1,13 +1,13 @@
 """We suffer more often in imagination than in reality. — Seneca"""
 
 import numpy as np
-from morie.fn.flash import fast_ann, flash
+from morie.fn.fasann import fast_ann, fasann
 from morie.fn._containers import DescriptiveResult
 
 
-class TestFlash:
+class TestFasann:
     def test_alias(self):
-        assert flash is fast_ann
+        assert fasann is fast_ann
 
     def test_basic(self):
         rng = np.random.default_rng(42)

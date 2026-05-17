@@ -1,13 +1,13 @@
-"""Tests for morie.fn.wheej -- polynomial feature expansion."""
+"""Tests for morie.fn.polfea -- polynomial feature expansion."""
 
 import numpy as np
-from morie.fn.wheej import polynomial_features, wheej
+from morie.fn.polfea import polynomial_features, polfea
 from morie.fn._containers import DescriptiveResult
 
 
-class TestWheej:
+class TestPolfea:
     def test_alias(self):
-        assert wheej is polynomial_features
+        assert polfea is polynomial_features
 
     def test_degree2(self):
         X = np.array([[1, 2], [3, 4]], dtype=float)

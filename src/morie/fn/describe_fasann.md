@@ -1,8 +1,8 @@
-# describe('jazz') — markov_generate
+# describe('fasann') — fast_ann
 
 ## WHAT IT DOES
 
-Stochastic sequence generation (Markov chain).
+Fast approximate nearest neighbor search.
 
 ## WHEN TO USE
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/jazz.py`.
+`fn/fasann.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('jazz')` for guidance.
+`print(result)` render. See `morie.fn.describe('fasann')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.jazz import *
+from morie.fn.fasann import *
 import numpy as np
-# See the function signature in fn/jazz.py for argument names.
+# See the function signature in fn/fasann.py for argument names.
 ```
 
 ## COMMON MISTAKES

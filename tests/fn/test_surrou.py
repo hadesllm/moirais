@@ -1,13 +1,13 @@
-"""Tests for morie.fn.sunst -- surface roughness."""
+"""Tests for morie.fn.surrou -- surface roughness."""
 
 import numpy as np
-from morie.fn.sunst import surface_roughness, sunst
+from morie.fn.surrou import surface_roughness, surrou
 from morie.fn._containers import DescriptiveResult
 
 
-class TestSunst:
+class TestSurrou:
     def test_alias(self):
-        assert sunst is surface_roughness
+        assert surrou is surface_roughness
 
     def test_flat_surface(self):
         profile = np.zeros(100)

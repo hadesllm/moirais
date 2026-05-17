@@ -1,4 +1,4 @@
-# describe('ratch') — repair_pipeline
+# describe('reppip') — repair_pipeline
 
 ## WHAT IT DOES
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/ratch.py`.
+`fn/reppip.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('ratch')` for guidance.
+`print(result)` render. See `morie.fn.describe('reppip')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.ratch import *
+from morie.fn.reppip import *
 import numpy as np
-# See the function signature in fn/ratch.py for argument names.
+# See the function signature in fn/reppip.py for argument names.
 ```
 
 ## COMMON MISTAKES

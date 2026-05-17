@@ -1,13 +1,13 @@
-"""Tests for morie.fn.sidsw -- impact force modeling."""
+"""Tests for morie.fn.impfor -- impact force modeling."""
 
-from morie.fn.sidsw import impact_force, sidsw
+from morie.fn.impfor import impact_force, impfor
 from morie.fn._containers import DescriptiveResult
 import pytest
 
 
-class TestSidsw:
+class TestImpfor:
     def test_alias(self):
-        assert sidsw is impact_force
+        assert impfor is impact_force
 
     def test_impulse_method(self):
         r = impact_force(10.0, 5.0, duration=0.01)

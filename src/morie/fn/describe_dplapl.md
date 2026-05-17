@@ -1,8 +1,8 @@
-# describe('sidsw') — impact_force
+# describe('dplapl') — dp_laplace
 
 ## WHAT IT DOES
 
-Impact force modeling.
+Differential privacy (Laplace mechanism).
 
 ## WHEN TO USE
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/sidsw.py`.
+`fn/dplapl.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('sidsw')` for guidance.
+`print(result)` render. See `morie.fn.describe('dplapl')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.sidsw import *
+from morie.fn.dplapl import *
 import numpy as np
-# See the function signature in fn/sidsw.py for argument names.
+# See the function signature in fn/dplapl.py for argument names.
 ```
 
 ## COMMON MISTAKES

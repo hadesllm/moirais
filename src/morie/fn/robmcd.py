@@ -85,7 +85,7 @@ def robust_covariance_mcd(
     )
 
 
-ircnh = robust_covariance_mcd
+robmcd = robust_covariance_mcd
 
 
 def cheatsheet() -> str:

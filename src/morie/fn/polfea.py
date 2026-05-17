@@ -68,7 +68,7 @@ def polynomial_features(
     )
 
 
-wheej = polynomial_features
+polfea = polynomial_features
 
 
 def cheatsheet() -> str:

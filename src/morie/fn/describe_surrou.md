@@ -1,8 +1,8 @@
-# describe('mirag') — dp_laplace
+# describe('surrou') — surface_roughness
 
 ## WHAT IT DOES
 
-Differential privacy (Laplace mechanism).
+Surface roughness metrics.
 
 ## WHEN TO USE
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/mirag.py`.
+`fn/surrou.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('mirag')` for guidance.
+`print(result)` render. See `morie.fn.describe('surrou')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.mirag import *
+from morie.fn.surrou import *
 import numpy as np
-# See the function signature in fn/mirag.py for argument names.
+# See the function signature in fn/surrou.py for argument names.
 ```
 
 ## COMMON MISTAKES

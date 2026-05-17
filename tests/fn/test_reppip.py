@@ -1,14 +1,14 @@
-"""Tests for morie.fn.ratch -- data repair pipeline."""
+"""Tests for morie.fn.reppip -- data repair pipeline."""
 
 import numpy as np
 import pandas as pd
-from morie.fn.ratch import repair_pipeline, ratch
+from morie.fn.reppip import repair_pipeline, reppip
 from morie.fn._containers import DescriptiveResult
 
 
-class TestRatch:
+class TestReppip:
     def test_alias(self):
-        assert ratch is repair_pipeline
+        assert reppip is repair_pipeline
 
     def test_fills_nan(self):
         arr = np.array([1.0, 2.0, np.nan, 4.0, 5.0])

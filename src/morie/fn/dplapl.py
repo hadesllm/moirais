@@ -84,7 +84,7 @@ def dp_laplace(
     )
 
 
-mirag = dp_laplace
+dplapl = dp_laplace
 
 
 def cheatsheet() -> str:

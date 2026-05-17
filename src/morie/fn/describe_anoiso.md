@@ -1,8 +1,8 @@
-# describe('flash') — fast_ann
+# describe('anoiso') — anomaly_isolation
 
 ## WHAT IT DOES
 
-Fast approximate nearest neighbor search.
+Anomaly detection (isolation-forest style).
 
 ## WHEN TO USE
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/flash.py`.
+`fn/anoiso.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('flash')` for guidance.
+`print(result)` render. See `morie.fn.describe('anoiso')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.flash import *
+from morie.fn.anoiso import *
 import numpy as np
-# See the function signature in fn/flash.py for argument names.
+# See the function signature in fn/anoiso.py for argument names.
 ```
 
 ## COMMON MISTAKES

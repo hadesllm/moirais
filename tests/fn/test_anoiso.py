@@ -1,13 +1,13 @@
-"""Tests for morie.fn.prowl -- isolation forest anomaly detection."""
+"""Tests for morie.fn.anoiso -- isolation forest anomaly detection."""
 
 import numpy as np
-from morie.fn.prowl import anomaly_isolation, prowl
+from morie.fn.anoiso import anomaly_isolation, anoiso
 from morie.fn._containers import DescriptiveResult
 
 
-class TestProwl:
+class TestAnoiso:
     def test_alias(self):
-        assert prowl is anomaly_isolation
+        assert anoiso is anomaly_isolation
 
     def test_detects_outliers(self):
         rng = np.random.default_rng(42)

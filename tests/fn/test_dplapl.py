@@ -1,13 +1,13 @@
-"""Tests for morie.fn.mirag -- differential privacy Laplace mechanism."""
+"""Tests for morie.fn.dplapl -- differential privacy Laplace mechanism."""
 
 import numpy as np
-from morie.fn.mirag import dp_laplace, mirag
+from morie.fn.dplapl import dp_laplace, dplapl
 from morie.fn._containers import DescriptiveResult
 
 
-class TestMirag:
+class TestDplapl:
     def test_alias(self):
-        assert mirag is dp_laplace
+        assert dplapl is dp_laplace
 
     def test_mean_query(self):
         x = np.arange(100, dtype=float)

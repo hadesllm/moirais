@@ -91,7 +91,7 @@ def repair_pipeline(
     )
 
 
-ratch = repair_pipeline
+reppip = repair_pipeline
 
 
 def cheatsheet() -> str:

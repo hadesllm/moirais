@@ -1,8 +1,8 @@
-# describe('wheej') — polynomial_features
+# describe('cepana') — cepstral_analysis
 
 ## WHAT IT DOES
 
-Feature engineering (polynomial expansion).
+Cepstral analysis.
 
 ## WHEN TO USE
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/wheej.py`.
+`fn/cepana.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('wheej')` for guidance.
+`print(result)` render. See `morie.fn.describe('cepana')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.wheej import *
+from morie.fn.cepana import *
 import numpy as np
-# See the function signature in fn/wheej.py for argument names.
+# See the function signature in fn/cepana.py for argument names.
 ```
 
 ## COMMON MISTAKES

@@ -95,7 +95,7 @@ def anomaly_isolation(
     )
 
 
-prowl = anomaly_isolation
+anoiso = anomaly_isolation
 
 
 def cheatsheet() -> str:

@@ -76,7 +76,7 @@ def fast_ann(
     )
 
 
-flash = fast_ann
+fasann = fast_ann
 
 
 def cheatsheet() -> str:

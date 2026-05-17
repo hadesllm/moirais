@@ -59,7 +59,7 @@ def markov_generate(
     )
 
 
-jazz = markov_generate
+markge = markov_generate
 
 
 def cheatsheet() -> str:

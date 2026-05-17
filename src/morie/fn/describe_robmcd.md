@@ -1,8 +1,8 @@
-# describe('prowl') — anomaly_isolation
+# describe('robmcd') — robust_covariance_mcd
 
 ## WHAT IT DOES
 
-Anomaly detection (isolation-forest style).
+Robust covariance (MCD).
 
 ## WHEN TO USE
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/prowl.py`.
+`fn/robmcd.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('prowl')` for guidance.
+`print(result)` render. See `morie.fn.describe('robmcd')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.prowl import *
+from morie.fn.robmcd import *
 import numpy as np
-# See the function signature in fn/prowl.py for argument names.
+# See the function signature in fn/robmcd.py for argument names.
 ```
 
 ## COMMON MISTAKES

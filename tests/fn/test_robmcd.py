@@ -1,13 +1,13 @@
-"""Tests for morie.fn.ircnh -- MCD robust covariance."""
+"""Tests for morie.fn.robmcd -- MCD robust covariance."""
 
 import numpy as np
-from morie.fn.ircnh import robust_covariance_mcd, ircnh
+from morie.fn.robmcd import robust_covariance_mcd, robmcd
 from morie.fn._containers import DescriptiveResult
 
 
-class TestIrcnh:
+class TestRobmcd:
     def test_alias(self):
-        assert ircnh is robust_covariance_mcd
+        assert robmcd is robust_covariance_mcd
 
     def test_basic_2d(self):
         rng = np.random.default_rng(42)

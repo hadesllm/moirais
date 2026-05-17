@@ -1,13 +1,13 @@
-"""Tests for morie.fn.sndwv -- cepstral analysis."""
+"""Tests for morie.fn.cepana -- cepstral analysis."""
 
 import numpy as np
-from morie.fn.sndwv import cepstral_analysis, sndwv
+from morie.fn.cepana import cepstral_analysis, cepana
 from morie.fn._containers import DescriptiveResult
 
 
-class TestSndwv:
+class TestCepana:
     def test_alias(self):
-        assert sndwv is cepstral_analysis
+        assert cepana is cepstral_analysis
 
     def test_basic(self):
         rng = np.random.default_rng(42)

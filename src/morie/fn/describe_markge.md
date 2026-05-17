@@ -1,8 +1,8 @@
-# describe('ircnh') — robust_covariance_mcd
+# describe('markge') — markov_generate
 
 ## WHAT IT DOES
 
-Robust covariance (MCD).
+Stochastic sequence generation (Markov chain).
 
 ## WHEN TO USE
 
@@ -27,21 +27,21 @@ signature and assumptions.
 ## FORMULA
 
 See the function's docstring `Formula:` line in
-`fn/ircnh.py`.
+`fn/markge.py`.
 
 ## INPUTS / OUTPUTS
 
 Inputs: documented in the function's `Parameters` block.
 Outputs: a RichResult (dict-subclass) — `result["statistic"]`,
 `.get(...)`, `for k in result` all work alongside the multi-section
-`print(result)` render. See `morie.fn.describe('ircnh')` for guidance.
+`print(result)` render. See `morie.fn.describe('markge')` for guidance.
 
 ## WORKED EXAMPLE
 
 ```python
-from morie.fn.ircnh import *
+from morie.fn.markge import *
 import numpy as np
-# See the function signature in fn/ircnh.py for argument names.
+# See the function signature in fn/markge.py for argument names.
 ```
 
 ## COMMON MISTAKES

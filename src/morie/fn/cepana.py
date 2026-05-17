@@ -66,7 +66,7 @@ def cepstral_analysis(
     )
 
 
-sndwv = cepstral_analysis
+cepana = cepstral_analysis
 
 
 def cheatsheet() -> str:

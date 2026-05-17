@@ -8,7 +8,7 @@ from ._containers import DescriptiveResult
 def window_functions(N: int, wtype: str = "hamming") -> DescriptiveResult:
     """Generate a spectral window of specified type.
 
-    'This is the way.' -- The Mandalorian
+    'Measure what is measurable, and make measurable what is not.' -- Galileo Galilei
     """
     from morie._spectral import window_functions as _backend
 

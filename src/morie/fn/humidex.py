@@ -61,7 +61,7 @@ def humidex(
 
     Notes
     -----
-    Quote: "The days are getting shorter." -- Grogu
+    Quote: "Nature is pleased with simplicity." -- Isaac Newton
     """
     T = np.atleast_1d(np.asarray(T_air_C, dtype=float))
     Td = np.atleast_1d(np.asarray(T_dew_C, dtype=float))

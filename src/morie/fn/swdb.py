@@ -1,4 +1,4 @@
-"""Load a bundled Star Wars demo dataset."""
+"""Bundled Solar System demo dataset (public-domain astronomical facts)."""
 
 from __future__ import annotations
 
@@ -6,94 +6,55 @@ import pandas as pd
 
 from ._containers import DescriptiveResult
 
-_SW_PEOPLE = pd.DataFrame(
+_PLANETS = pd.DataFrame(
     {
-        "name": [
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-            " Organa",
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-            "R2-D2",
-            "C-3PO",
-            "",
-            "Padme Amidala",
-        ],
-        "height": [172, 202, 150, 180, 182, 66, 96, 167, 228, 165],
-        "mass": [77.0, 136.0, 49.0, 80.0, 77.0, 17.0, 32.0, 75.0, 112.0, 45.0],
-        "homeworld": [
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-            "Alderaan",
-            "Corellia",
-            "Stewjon",
-            "Dagobah",
-            "Naboo",
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-            "Kashyyyk",
-            "Naboo",
-        ],
+        "name": ["Mercury", "Venus", "Earth", "Mars", "Jupiter",
+                 "Saturn", "Uranus", "Neptune"],
+        "mass_earths": [0.055, 0.815, 1.0, 0.107, 317.8,
+                        95.2, 14.5, 17.1],
+        "radius_km": [2440, 6052, 6371, 3390, 69911,
+                      58232, 25362, 24622],
+        "moons": [0, 0, 1, 2, 95, 146, 28, 16],
+        "orbital_period_days": [88.0, 224.7, 365.25, 687.0, 4332.6,
+                                10759.2, 30688.5, 60182.0],
     }
 )
 
-_SW_PLANETS = pd.DataFrame(
+_MOONS = pd.DataFrame(
     {
-        "name": ["A journey of a thousand miles begins with a single step. -- Lao Tzu", "Alderaan", "Dagobah", "Naboo", "A journey of a thousand miles begins with a single step. -- Lao Tzu"],
-        "population": [200000, 2000000000, 0, 4500000000, 1000000000000],
-        "climate": ["arid", "temperate", "murky", "temperate", "temperate"],
-        "terrain": ["desert", "grasslands", "swamp", "grassy hills", "cityscape"],
+        "name": ["Moon", "Phobos", "Deimos", "Io", "Europa",
+                 "Ganymede", "Callisto", "Titan", "Enceladus"],
+        "planet": ["Earth", "Mars", "Mars", "Jupiter", "Jupiter",
+                   "Jupiter", "Jupiter", "Saturn", "Saturn"],
+        "radius_km": [1737, 11, 6, 1822, 1561,
+                      2634, 2410, 2575, 252],
     }
 )
 
-_SW_FILMS = pd.DataFrame(
+_MISSIONS = pd.DataFrame(
     {
-        "title": [
-            "A New Hope",
-            "The Empire Strikes Back",
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-            "The Phantom Menace",
-            "Attack of the Clones",
-            "A journey of a thousand miles begins with a single step. -- Lao Tzu",
-        ],
-        "release_year": [1977, 1980, 1983, 1999, 2002, 2005],
-        "episode": [4, 5, 6, 1, 2, 3],
-    }
-)
-
-_SW_SPECIES = pd.DataFrame(
-    {
-        "name": ["Human", "Wookiee", "Droid", "A journey of a thousand miles begins with a single step. -- Lao Tzu", "Gungan"],
-        "classification": ["mammal", "mammal", "artificial", "unknown", "amphibian"],
-        "average_height": [180, 210, 0, 66, 190],
-    }
-)
-
-_SW_STARSHIPS = pd.DataFrame(
-    {
-        "name": ["X-wing", "TIE Fighter", "Millennium Falcon", "Star Destroyer", "A journey of a thousand miles begins with a single step. -- Lao Tzu"],
-        "model": ["T-65", "TIE/LN", "YT-1300", "ISD-I", "DS-1"],
-        "crew": [1, 1, 4, 47060, 342953],
-        "hyperdrive": [1.0, 0.0, 0.5, 2.0, 4.0],
+        "name": ["Sputnik 1", "Apollo 11", "Voyager 1", "Voyager 2",
+                 "Cassini", "Curiosity", "New Horizons"],
+        "launch_year": [1957, 1969, 1977, 1977, 1997, 2011, 2006],
+        "target": ["Earth orbit", "Moon", "outer planets",
+                   "outer planets", "Saturn", "Mars", "Pluto"],
     }
 )
 
 _TABLES = {
-    "people": _SW_PEOPLE,
-    "planets": _SW_PLANETS,
-    "films": _SW_FILMS,
-    "species": _SW_SPECIES,
-    "starships": _SW_STARSHIPS,
+    "planets": _PLANETS,
+    "moons": _MOONS,
+    "missions": _MISSIONS,
 }
 
 
-def load_sw_dataset(table: str = "people") -> pd.DataFrame:
-    """Load a bundled Star Wars demo dataset.
+def load_solar_system(table: str = "planets") -> pd.DataFrame:
+    """Load a table from the bundled Solar System demo dataset.
 
     Parameters
     ----------
-    table : str, default "people"
-        One of: people, planets, films, species, starships.
+    table : str, default "planets"
+        One of: planets, moons, missions.
 
     Returns
     -------
@@ -101,18 +62,19 @@ def load_sw_dataset(table: str = "people") -> pd.DataFrame:
     """
     key = table.lower().strip()
     if key not in _TABLES:
-        raise ValueError(f"Unknown table '{table}'. Choose from: {sorted(_TABLES)}")
+        raise ValueError(
+            f"Unknown table '{table}'. Choose from: {sorted(_TABLES)}")
     return _TABLES[key].copy()
 
 
-def load_sw_result(table: str = "people") -> DescriptiveResult:
-    """Load Star Wars dataset and wrap in DescriptiveResult."""
-    df = load_sw_dataset(table)
-    return DescriptiveResult(name=f"SW {table}", value=df)
+def load_solar_system_result(table: str = "planets") -> DescriptiveResult:
+    """Load a Solar System table and wrap it in a DescriptiveResult."""
+    df = load_solar_system(table)
+    return DescriptiveResult(name=f"Solar System: {table}", value=df)
 
 
-swdb = load_sw_result
+swdb = load_solar_system_result
 
 
 def cheatsheet() -> str:
-    return 'load_sw_dataset({}) -> Star Wars dataset loader.'
+    return "load_solar_system({}) -> Solar System demo dataset loader."

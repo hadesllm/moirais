@@ -48,7 +48,7 @@ def cholesky_grf_sim(
 
     .. epigraph::
 
-        "To see a World in a Grain of Sand." -- Blake / Final Fantasy
+        To see a World in a Grain of Sand. -- William Blake
     """
     rng = np.random.default_rng(seed)
     coords = np.asarray(coords, dtype=np.float64)

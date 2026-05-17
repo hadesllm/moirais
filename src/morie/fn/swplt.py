@@ -1,4 +1,4 @@
-"""Summary statistics for Star Wars planet data."""
+"""Summary statistics for Solar System orbital data."""
 
 from __future__ import annotations
 
@@ -7,37 +7,39 @@ import pandas as pd
 from ._containers import DescriptiveResult
 
 
-def sw_planet_summary(
+def solar_orbit_summary(
     df: pd.DataFrame,
     name_col: str = "name",
-    population_col: str = "population",
-    climate_col: str = "climate",
+    period_col: str = "orbital_period_days",
+    moons_col: str = "moons",
 ) -> DescriptiveResult:
-    """Summary statistics for Star Wars planet data.
+    """Summary statistics for Solar System orbital data.
 
     Parameters
     ----------
     df : pd.DataFrame
-    name_col, population_col, climate_col : str
+    name_col, period_col, moons_col : str
 
     Returns
     -------
     DescriptiveResult
     """
     result: dict = {"count": len(df)}
-    if population_col in df.columns:
-        pops = pd.to_numeric(df[population_col], errors="coerce").dropna()
-        result["mean_population"] = float(pops.mean()) if len(pops) > 0 else float("nan")
-        result["total_population"] = float(pops.sum())
-    if climate_col in df.columns:
-        result["climate_counts"] = df[climate_col].value_counts().to_dict()
+    if period_col in df.columns:
+        periods = pd.to_numeric(df[period_col], errors="coerce").dropna()
+        result["mean_period_days"] = float(periods.mean()) if len(periods) > 0 else float("nan")
+        result["min_period_days"] = float(periods.min()) if len(periods) > 0 else float("nan")
+        result["max_period_days"] = float(periods.max()) if len(periods) > 0 else float("nan")
+    if moons_col in df.columns:
+        moons = pd.to_numeric(df[moons_col], errors="coerce").dropna()
+        result["total_moons"] = int(moons.sum())
     if name_col in df.columns:
-        result["planets"] = df[name_col].tolist()
-    return DescriptiveResult(name="SW planet summary", value=result)
+        result["bodies"] = df[name_col].tolist()
+    return DescriptiveResult(name="Solar System orbit summary", value=result)
 
 
-swplt = sw_planet_summary
+swplt = solar_orbit_summary
 
 
 def cheatsheet() -> str:
-    return 'swplt() -> Summary statistics for Star Wars planet data'
+    return 'swplt() -> Summary statistics for Solar System orbital data'

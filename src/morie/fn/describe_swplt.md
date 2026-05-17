@@ -1,8 +1,8 @@
-# describe('swplt') — sw_planet_summary
+# describe('swplt') — solar_orbit_summary
 
 ## WHAT IT DOES
 
-Star Wars planet stats. 'That'You have power over your mind. — Marcus Aurelius'
+Solar System orbit stats.
 
 ## WHEN TO USE
 

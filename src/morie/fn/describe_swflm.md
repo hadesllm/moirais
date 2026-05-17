@@ -1,8 +1,13 @@
-# describe('swflm') — sw_film_summary
+# describe('swflm') — solar_mission_summary
 
 ## WHAT IT DOES
 
-Star Wars film stats.
+Solar System mission stats.
+
+## WHEN TO USE
+
+This callable applies when you have inputs of the appropriate shape and
+want the documented output. Read the function's source for the canonical
 signature and assumptions.
 
 ## WHEN NOT TO USE

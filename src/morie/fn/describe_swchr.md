@@ -1,8 +1,13 @@
-# describe('swchr') — sw_character_summary
+# describe('swchr') — solar_body_summary
 
 ## WHAT IT DOES
 
-Star Wars character stats.
+Solar System body stats.
+
+## WHEN TO USE
+
+This callable applies when you have inputs of the appropriate shape and
+want the documented output. Read the function's source for the canonical
 signature and assumptions.
 
 ## WHEN NOT TO USE

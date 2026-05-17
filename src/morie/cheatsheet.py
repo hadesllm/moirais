@@ -35,10 +35,9 @@ from typing import Iterable
 # "MultilevelICC" / "MultilevelR2" / "MultilevelRandom" all share one quote
 # pool. New batch categories pick up matching prefixes for free.
 #
-# Quotes are deliberately drawn from the same fictional universes the fn/
-# tree's own short names already gravitate to: Star Wars, Marvel, DC,
-# Matrix, Lord of the Rings, plus the occasional non-genre line that
-# fits the math.
+# Quotes are drawn from public-domain writings of philosophers,
+# mathematicians, and scientists whose work has long entered the
+# public domain.
 
 CATEGORY_QUOTES: dict[str, list[str]] = {
     "Multilevel": [

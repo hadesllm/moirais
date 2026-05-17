@@ -1,4 +1,4 @@
-# describe('You have power over your mind — not outside events. — Marcus Aurelius') — robust_m_estimator
+# describe('robest') — robust_m_estimator
 
 ## WHAT IT DOES
 

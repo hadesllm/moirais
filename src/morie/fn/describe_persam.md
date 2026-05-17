@@ -1,4 +1,4 @@
-# describe('Statistics is the grammar of science. — Karl Pearson') — permutation_two_sample
+# describe('persam') — permutation_two_sample
 
 ## WHAT IT DOES
 

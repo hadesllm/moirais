@@ -43,6 +43,7 @@ Ministry of the Solicitor General. Restrictive Confinement,
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
@@ -50,8 +51,39 @@ from typing import Optional
 import pandas as pd
 
 
-PROJECT = Path(__file__).resolve().parents[5]
-OTIS_DATA_DIR = PROJECT / "data/datasets/OTIS"
+def _otis_cache_dir() -> Path:
+    """Per-user cache directory for downloaded OTIS CSVs."""
+    root = os.environ.get("XDG_CACHE_HOME")
+    base = Path(root) if root else Path.home() / ".cache"
+    return base / "morie" / "otis"
+
+
+def _resolve_otis_data_dir() -> Path:
+    """Locate the directory holding the OTIS CSVs.
+
+    Order: ``$MORIE_OTIS_DIR`` (explicit override); then an ancestor
+    ``data/datasets/OTIS`` of this file (the source-tree checkout);
+    then ``./data/datasets/OTIS``; then the per-user cache dir -- which
+    is also where the CKAN downloader writes, so a fresh install
+    resolves there and load_otis_dataset's auto-download populates it.
+
+    The old ``parents[5]`` hard-coded depth was wrong from both an
+    installed wheel and the source tree.
+    """
+    env = os.environ.get("MORIE_OTIS_DIR")
+    if env:
+        return Path(env).expanduser()
+    for parent in Path(__file__).resolve().parents:
+        cand = parent / "data" / "datasets" / "OTIS"
+        if cand.is_dir():
+            return cand
+    cwd = Path.cwd() / "data" / "datasets" / "OTIS"
+    if cwd.is_dir():
+        return cwd
+    return _otis_cache_dir()
+
+
+OTIS_DATA_DIR = _resolve_otis_data_dir()
 
 
 @dataclass(frozen=True, slots=True)
@@ -362,11 +394,18 @@ _r(OtisDataset(
 
 
 def load_otis_dataset(dataset_id: str,
-                      data_dir: Path | str | None = None) -> pd.DataFrame:
+                      data_dir: Path | str | None = None,
+                      *, download: bool = True) -> pd.DataFrame:
     """Load one OTIS dataset by id (b01, c03, d05, …).
 
     Returns a pandas DataFrame with the columns documented in
     `DATASET_REGISTRY[dataset_id].columns`.
+
+    The OTIS CSVs are Ontario open data. If the file is not present
+    locally and ``download`` is true (default), it is fetched once from
+    the Ontario CKAN portal into the per-user cache and reused
+    thereafter. Set ``download=False`` or ``$MORIE_OTIS_NO_DOWNLOAD`` to
+    require a local copy instead.
     """
     dataset_id = dataset_id.lower()
     if dataset_id not in DATASET_REGISTRY:
@@ -378,10 +417,16 @@ def load_otis_dataset(dataset_id: str,
     base = Path(data_dir) if data_dir else OTIS_DATA_DIR
     p = base / meta.csv_filename
     if not p.exists():
-        raise FileNotFoundError(
-            f"OTIS dataset {dataset_id} not found at {p}. "
-            "Verify data/datasets/OTIS/ contains the 28 CSVs."
-        )
+        if download and not os.environ.get("MORIE_OTIS_NO_DOWNLOAD"):
+            # Ontario open data -- fetch once into the per-user cache.
+            p = download_otis_dataset(dataset_id, _otis_cache_dir())
+        else:
+            raise FileNotFoundError(
+                f"OTIS dataset {dataset_id} not found at {p}. The OTIS "
+                f"CSVs are Ontario open data: call "
+                f"morie.otis_datasets.download_all_otis(), or set "
+                f"$MORIE_OTIS_DIR to a directory holding the 29 CSVs."
+            )
     return pd.read_csv(p)
 
 

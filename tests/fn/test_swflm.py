@@ -1,26 +1,26 @@
-"""Tests for morie.fn.swflm -- Star Wars film summary."""
+"""Tests for morie.fn.swflm -- Solar System mission summary."""
 
 import pandas as pd
-from morie.fn.swflm import sw_film_summary, swflm
+from morie.fn.swflm import solar_mission_summary, swflm
 from morie.fn._containers import DescriptiveResult
 
 
 class TestSwflm:
     def test_alias(self):
-        assert swflm is sw_film_summary
+        assert swflm is solar_mission_summary
 
     def test_basic(self):
         df = pd.DataFrame({
-            "title": ["A New Hope", "Empire Strikes Back", "Knowing others is intelligence; knowing yourself is true wisdom. — Lao Tzu"],
-            "release_year": [1977, 1980, 1983],
+            "name": ["Sputnik 1", "Apollo 11", "Voyager 1"],
+            "launch_year": [1957, 1969, 1977],
         })
-        result = sw_film_summary(df)
+        result = solar_mission_summary(df)
         assert isinstance(result, DescriptiveResult)
         assert result.value["count"] == 3
-        assert result.value["earliest"] == 1977
-        assert result.value["latest"] == 1983
+        assert result.value["earliest"] == 1957
+        assert result.value["latest"] == 1977
 
     def test_span(self):
-        df = pd.DataFrame({"title": ["A", "B"], "release_year": [2000, 2010]})
-        result = sw_film_summary(df)
+        df = pd.DataFrame({"name": ["A", "B"], "launch_year": [2000, 2010]})
+        result = solar_mission_summary(df)
         assert result.value["span_years"] == 10

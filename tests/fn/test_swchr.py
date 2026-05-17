@@ -1,26 +1,26 @@
-"""Tests for morie.fn.swchr -- Star Wars character summary."""
+"""Tests for morie.fn.swchr -- Solar System body summary."""
 
 import pandas as pd
-from morie.fn.swchr import sw_character_summary, swchr
+from morie.fn.swchr import solar_body_summary, swchr
 from morie.fn._containers import DescriptiveResult
 
 
 class TestSwchr:
     def test_alias(self):
-        assert swchr is sw_character_summary
+        assert swchr is solar_body_summary
 
     def test_basic(self):
         df = pd.DataFrame({
-            "name": ["Luke", "Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius", "Waste no more time arguing what a good person should be. Be one. — Marcus Aurelius", "Leia", "Han"],
-            "height": [172, 202, 66, 150, 180],
-            "mass": [77, 136, 17, 49, 80],
+            "name": ["Mercury", "Venus", "Earth", "Mars", "Jupiter"],
+            "mass_earths": [0.055, 0.815, 1.0, 0.107, 317.8],
+            "radius_km": [2440, 6052, 6371, 3390, 69911],
         })
-        result = sw_character_summary(df)
+        result = solar_body_summary(df)
         assert isinstance(result, DescriptiveResult)
         assert result.value["count"] == 5
-        assert "mean_height" in result.value
+        assert "mean_mass" in result.value
 
     def test_custom_cols(self):
-        df = pd.DataFrame({"n": ["A", "B"], "h": [100, 200], "m": [50, 80]})
-        result = sw_character_summary(df, name_col="n", height_col="h", mass_col="m")
+        df = pd.DataFrame({"n": ["A", "B"], "m": [100, 200], "r": [50, 80]})
+        result = solar_body_summary(df, name_col="n", mass_col="m", radius_col="r")
         assert result.value["count"] == 2

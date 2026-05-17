@@ -96,7 +96,7 @@ pip install morie
 docker run --rm ghcr.io/hadesllm/morie:latest morie --help
 
 # Pin to a specific version (recommended for reproducibility)
-docker run --rm ghcr.io/hadesllm/morie:0.9.2 morie --help
+docker run --rm ghcr.io/hadesllm/morie:0.9.3 morie --help
 ```
 
 Multi-arch image published on every release with both versioned and `:latest` tags. Requires only Docker — no Python, no pip.
@@ -130,6 +130,12 @@ from morie.otis_all_analyze import analyze_a01_mrm
 result = analyze_a01_mrm(df)
 print(result)
 ```
+
+## What's new in v0.9.3
+
+- **Docker image build fixed (completely).** v0.9.2's Dockerfile fix was incomplete — the builder stage didn't copy `LICENSE`, and `pyproject.toml`'s `license-files` declaration made scikit-build-core fail metadata generation without it. The builder now copies `LICENSE` too; the image build is verified end-to-end.
+- **Homebrew tap bump fixed.** The tap-bump job raced the PyPI publish — it polled for the sdist for only ~4 minutes, but the sdist uploads *last*, after the full wheel matrix (~20 minutes). It now waits for the sdist itself, up to ~35 minutes.
+- **Atomic releases.** The release pipeline now verifies the full build — the sdist *and* the Docker image — *before* the version tag is created. If any build fails, no tag is created and nothing publishes, so a half-broken release (a working PyPI package but a failed Docker image, as in v0.9.1/v0.9.2) can no longer ship.
 
 ## What's new in v0.9.2
 
@@ -213,12 +219,12 @@ and the **empirical applications paper**.
 ```
 # Software paper — R (also the R package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in R (v0.9.2). Zenodo.
+Estimation in R (v0.9.3). Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Software paper — Python (also the Python package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in Python (v0.9.2). Zenodo.
+Estimation in Python (v0.9.3). Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
 # MRM framework paper (theoretical foundations)

@@ -48,7 +48,11 @@ WORKDIR /build
 # CMakeLists.txt and the libmorie/ C++ sources present. Copy the full
 # build input and install once. The pip layer is still cache-mounted,
 # so unchanged dependencies are reused across builds.
-COPY pyproject.toml README.md CMakeLists.txt ./
+#
+# LICENSE is required: pyproject.toml declares license-files =
+# ["LICENSE"], and scikit-build-core fails metadata generation if the
+# pattern matches nothing.
+COPY pyproject.toml README.md CMakeLists.txt LICENSE ./
 COPY libmorie/ ./libmorie/
 COPY src/ ./src/
 

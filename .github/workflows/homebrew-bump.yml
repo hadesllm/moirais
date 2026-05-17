@@ -48,22 +48,27 @@ jobs:
         id: pypi
         run: |
           v="${{ steps.ver.outputs.version }}"
-          # PyPI's per-version JSON can lag the publish by a minute or
-          # two when this is chain-fired right after pypi-publish.
-          json=""
-          for i in $(seq 1 12); do
+          # This job is chain-fired in parallel with pypi-publish, which
+          # builds the full cibuildwheel matrix and uploads the sdist
+          # LAST -- after every wheel. So polling must (a) wait for the
+          # sdist itself, not merely for the version JSON to appear, and
+          # (b) cover the whole publish (~20 min). Window: 70 x 30s.
+          url=""; sha=""
+          for i in $(seq 1 70); do
             json="$(curl -fsS "https://pypi.org/pypi/morie/$v/json" || true)"
-            [ -n "$json" ] && break
-            echo "PyPI not ready for $v (attempt $i/12); sleeping 20s..."
-            sleep 20
+            if [ -n "$json" ]; then
+              echo "$json" > /tmp/pypi.json
+              url="$(python3 -c "import json; print(next((u['url'] for u in json.load(open('/tmp/pypi.json'))['urls'] if u['packagetype']=='sdist'), ''))")"
+              sha="$(python3 -c "import json; print(next((u['digests']['sha256'] for u in json.load(open('/tmp/pypi.json'))['urls'] if u['packagetype']=='sdist'), ''))")"
+              [ -n "$url" ] && break
+            fi
+            echo "morie $v sdist not on PyPI yet (attempt $i/70); sleeping 30s..."
+            sleep 30
           done
-          if [ -z "$json" ]; then
-            echo "::error::morie $v not found on PyPI after retries."
+          if [ -z "$url" ]; then
+            echo "::error::morie $v sdist not found on PyPI after ~35 min."
             exit 1
           fi
-          echo "$json" > /tmp/pypi.json
-          url="$(python3 -c "import json; print(next(u['url'] for u in json.load(open('/tmp/pypi.json'))['urls'] if u['packagetype']=='sdist'))")"
-          sha="$(python3 -c "import json; print(next(u['digests']['sha256'] for u in json.load(open('/tmp/pypi.json'))['urls'] if u['packagetype']=='sdist'))")"
           echo "url=$url" >> "$GITHUB_OUTPUT"
           echo "sha=$sha" >> "$GITHUB_OUTPUT"
           echo "sdist: $url"

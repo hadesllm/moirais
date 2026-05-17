@@ -1,25 +1,24 @@
-name: Auto-tag on version bump merge
+name: Verify and auto-tag release
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
-# When a PR merges into main with a NEW `version =` value in
-# pyproject.toml that doesn't already exist as a tag, automatically
-# create + push `v<new-version>` so that the existing tag-triggered
-# publish workflows fire WITHOUT requiring a manual `git tag` step.
+# When a PR merges into main with a NEW `version =` in pyproject.toml,
+# this workflow first VERIFIES that the full release builds -- the
+# sdist and the Docker image -- and only then creates the `v<version>`
+# tag that fires the publish workflows.
 #
-# The publish chain this enables:
-#   PR merged → pyproject.toml version bumped → THIS workflow
-#     → git tag vX.Y.Z + push
-#       → pypi-publish.yml fires (Trusted Publisher OIDC -> PyPI)
-#       → docker-publish.yml fires (ghcr.io/hadesllm/morie:X.Y.Z + :latest)
-#       → release-debrpm.yml fires (DEB + RPM signed)
-#       → homebrew-bump.yml fires (updates the hadesllm/homebrew-morie tap)
-#       → r-universe polls main + sees new tag (within ~1 hr)
+# Atomic guarantee: the `tag` job needs the `verify` job, so if any
+# build fails, no tag is created and nothing is published. A
+# half-broken release (e.g. a Docker image that fails to build, as in
+# v0.9.1 / v0.9.2) can no longer ship.
 #
-# Manual override:
-#   - Skip via `[skip auto-tag]` in the merge commit message
-#   - Force re-tag via workflow_dispatch with the desired version
+#   PR merged -> version bumped -> check -> verify (sdist + Docker
+#   image build, no publish) -> tag -> publish chain (pypi / docker /
+#   debrpm / homebrew).
+#
+# Manual override: put [skip auto-tag] in the merge commit, or use
+# workflow_dispatch with an explicit version.
 
 on:
   push:
@@ -29,32 +28,26 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Version to tag (e.g. 0.4.0) — leave blank to read from pyproject.toml"
+        description: "Version to tag (leave blank to read pyproject.toml)"
         required: false
 
 permissions:
-  contents: write   # needed to push tags
-  actions: write    # needed to dispatch the publish workflows (chain-fire)
+  contents: read
 
 jobs:
-  tag:
+  check:
+    name: Check version
     runs-on: ubuntu-latest
+    outputs:
+      should-release: ${{ steps.gate.outputs.should_release }}
+      version: ${{ steps.ver.outputs.version }}
     steps:
       - name: Checkout (full history for tag list)
         uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Skip if "[skip auto-tag]" in commit
-        run: |
-          msg="$(git log -1 --pretty=%B)"
-          if echo "$msg" | grep -qF "[skip auto-tag]"; then
-            echo "Skip marker found; bailing."
-            exit 0
-          fi
-
-      - name: Read version from pyproject.toml
+      - name: Read version + decide whether to release
         id: ver
         run: |
           if [ -n "${{ github.event.inputs.version }}" ]; then
@@ -65,70 +58,96 @@ jobs:
           echo "version=$v" >> "$GITHUB_OUTPUT"
           echo "Detected version: $v"
 
-      - name: Bail if tag exists
+      - name: Gate (skip marker / existing tag)
         id: gate
         run: |
           v="${{ steps.ver.outputs.version }}"
-          if git rev-parse "v$v" >/dev/null 2>&1; then
-            echo "Tag v$v already exists; nothing to do."
-            echo "tag_exists=true" >> "$GITHUB_OUTPUT"
+          if git log -1 --pretty=%B | grep -qF "[skip auto-tag]"; then
+            echo "Skip marker found."
+            echo "should_release=false" >> "$GITHUB_OUTPUT"
+          elif git rev-parse "v$v" >/dev/null 2>&1; then
+            echo "Tag v$v already exists."
+            echo "should_release=false" >> "$GITHUB_OUTPUT"
           else
-            echo "tag_exists=false" >> "$GITHUB_OUTPUT"
+            echo "v$v is new -- will verify then release."
+            echo "should_release=true" >> "$GITHUB_OUTPUT"
           fi
 
+  verify:
+    name: Verify release build
+    needs: check
+    if: needs.check.outputs.should-release == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+        with:
+          python-version: '3.12'
+
+      - name: Verify sdist builds
+        run: |
+          python -m pip install --upgrade pip build twine
+          python -m build --sdist --outdir dist/
+          python -m twine check dist/*
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd # v4
+
+      # Builds every Dockerfile stage (py-builder, r-builder, runtime)
+      # without pushing. This is the gate that v0.9.1 / v0.9.2 lacked:
+      # a broken Dockerfile fails HERE, before any tag is created.
+      # cache-to populates the gha cache so docker-publish's later
+      # push-build reuses the layers.
+      - name: Verify Docker image builds (no push)
+        uses: docker/build-push-action@bcafcacb16a39f128d818304e6c9c0c18556b85f # v7
+        with:
+          context: .
+          file: Dockerfile
+          platforms: linux/amd64
+          push: false
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  tag:
+    name: Tag + fire publish chain
+    needs: [check, verify]
+    if: needs.check.outputs.should-release == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # push the tag
+      actions: write    # dispatch the publish workflows
+    steps:
+      - name: Checkout (full history)
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Configure git identity
-        if: steps.gate.outputs.tag_exists == 'false'
         run: |
           git config user.name  "morie-release-bot[hadesllm]"
           git config user.email "278967282+rootcoder007@users.noreply.github.com"
 
       - name: Create + push tag
-        if: steps.gate.outputs.tag_exists == 'false'
         run: |
-          v="${{ steps.ver.outputs.version }}"
-          git tag -a "v$v" -m "morie v$v (auto-tagged on pyproject.toml bump)"
+          v="${{ needs.check.outputs.version }}"
+          git tag -a "v$v" -m "morie v$v (auto-tagged after release verification)"
           git push origin "v$v"
-          echo "::notice title=Auto-tagged::v$v pushed to origin."
+          echo "::notice title=Auto-tagged::v$v pushed after a clean verify build."
 
-      # GitHub's documented limitation: tags pushed by GITHUB_TOKEN do
-      # NOT trigger downstream `on: push: tags:` workflows.  Without
-      # this chain-fire step, every auto-tagged release would require
-      # a manual `gh workflow run pypi-publish.yml --ref vX.Y.Z` to
-      # actually ship to PyPI.  Solution: explicitly invoke the tag-
-      # triggered workflows via workflow_dispatch using the same
-      # GITHUB_TOKEN — workflow_dispatch IS allowed to be fired by
-      # the default token, only push events are filtered.
+      # Tags pushed by GITHUB_TOKEN do not trigger `on: push: tags:`,
+      # so the publish workflows are dispatched explicitly. They run
+      # only because `verify` already proved the build is sound.
       - name: Chain-fire publish workflows on the new tag
-        if: steps.gate.outputs.tag_exists == 'false'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          v="${{ steps.ver.outputs.version }}"
-          # pypi-publish: no inputs
-          if [ -f ".github/workflows/pypi-publish.yml" ]; then
-            echo "Triggering pypi-publish.yml on ref v$v..."
-            gh workflow run pypi-publish.yml --ref "v$v" || \
-              echo "::warning::pypi-publish could not be dispatched"
-          fi
-          # release-debrpm: takes a `version` input (without leading v)
-          if [ -f ".github/workflows/release-debrpm.yml" ]; then
-            echo "Triggering release-debrpm.yml on ref v$v with version=$v..."
-            gh workflow run release-debrpm.yml --ref "v$v" -f version="$v" || \
-              echo "::warning::release-debrpm could not be dispatched"
-          fi
-          # docker-publish: the push-to-main run only tags :latest / :main /
-          # :sha-* -- the {{version}} semver tag (:X.Y.Z) is produced only on
-          # a tag ref, so dispatch it explicitly on v$v. The registry dedupes
-          # layers by digest, so this is not a wasteful rebuild.
-          if [ -f ".github/workflows/docker-publish.yml" ]; then
-            echo "Triggering docker-publish.yml on ref v$v..."
-            gh workflow run docker-publish.yml --ref "v$v" || \
-              echo "::warning::docker-publish could not be dispatched"
-          fi
-          # homebrew-bump: update the external Homebrew tap formula.
-          if [ -f ".github/workflows/homebrew-bump.yml" ]; then
-            echo "Triggering homebrew-bump.yml on ref v$v with version=$v..."
-            gh workflow run homebrew-bump.yml --ref "v$v" -f version="$v" || \
-              echo "::warning::homebrew-bump could not be dispatched"
-          fi
-          echo "::notice title=Publish chain::pypi-publish + release-debrpm + docker-publish + homebrew-bump dispatched on v$v."
+          v="${{ needs.check.outputs.version }}"
+          gh workflow run pypi-publish.yml   --ref "v$v"                || echo "::warning::pypi-publish dispatch failed"
+          gh workflow run release-debrpm.yml --ref "v$v" -f version="$v" || echo "::warning::release-debrpm dispatch failed"
+          gh workflow run docker-publish.yml --ref "v$v"                || echo "::warning::docker-publish dispatch failed"
+          gh workflow run homebrew-bump.yml  --ref "v$v" -f version="$v" || echo "::warning::homebrew-bump dispatch failed"
+          echo "::notice title=Publish chain::dispatched on v$v after verification."

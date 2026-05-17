@@ -46,6 +46,9 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           build-mode: none
+          # Excludes the ~36k generated src/morie/fn/ primitives from
+          # extraction -- the dominant cost of the Python analysis.
+          config-file: ./.github/codeql/codeql-config.yml
 
       - name: Perform CodeQL analysis
         uses: github/codeql-action/analyze@9e0d7b8d25671d64c341c19c0152d693099fb5ba # v4

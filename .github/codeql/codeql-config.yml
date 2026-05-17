@@ -1,0 +1,14 @@
+name: "morie CodeQL config"
+
+# src/morie/fn/ holds ~36k auto-generated atomic numeric primitives
+# (the book-equation translation pipeline output). Extracting every one
+# of them dominates the CodeQL Python analysis runtime.
+#
+# These files have a minimal security surface -- pure numeric kernels
+# with no I/O, no network, no eval/exec, no deserialization -- so
+# excluding them from scanning keeps the analysis fast without losing
+# meaningful coverage. For interpreted languages (Python) CodeQL path
+# filters apply at extraction time, so this cuts the bulk of the
+# Python analysis runtime.
+paths-ignore:
+  - "src/morie/fn/**"

@@ -617,3 +617,99 @@ def hawkes_loglik_custom(t, T, nu, eta, kernel, kernel_integral):
     return _core_ext.hawkes_ll_custom(
         np.ascontiguousarray(t, dtype=np.float64), float(T),
         float(nu), float(eta), int(g_cf.address), int(G_cf.address))
+
+
+# --- sum-of-exponentials (SoE) fit, task #73 -------------------------------
+#
+# A non-exponential triggering kernel makes the Hawkes likelihood O(n^2).
+# If the kernel is written as a sum of M exponentials, each component
+# regains the O(n) Markovian recursion, so the likelihood is O(M*n) via
+# the C++ engine ``_core.hawkes_ll_soe``.
+#
+# For the Lomax (power-law) kernel the SoE is not a fitted approximation
+# at all: the Lomax density is completely monotone, so by Bernstein's
+# theorem it is *exactly* a continuous mixture of exponentials, and the
+# SoE is just a quadrature of that integral (see soe_fit_lomax).
+#
+# The gamma kernel with shape alpha > 1 rises to a peak at
+# (alpha-1)/beta, so it is NOT completely monotone and cannot be written
+# as a non-negative mixture of exponentials at all. That case needs a
+# hybrid (exact peak window + SoE tail) and is tracked separately.
+
+
+def soe_fit_lomax(alpha, c, horizon, *, tol=1.0e-7, m_max=256):
+    """Sum-of-exponentials representation of the Lomax triggering kernel,
+    accurate over the lag range ``u`` in ``[0, horizon]``.
+
+    The Lomax density ``g(u) = (alpha-1)/c * (1 + u/c)**(-alpha)`` is
+    completely monotone, so by Bernstein's theorem it is *exactly* the
+    Laplace transform of a non-negative mixing measure:
+
+        g(u) = integral_0^inf  rho(s) e**(-s u) ds,
+        rho(s) = (alpha-1) c**(alpha-1) / Gamma(alpha)
+                 * s**(alpha-1) e**(-s c).
+
+    A finite SoE has an exponential tail and so can never match the
+    power-law tail as ``u -> inf``; but the Hawkes log-likelihood only
+    evaluates inter-event lags up to the observation horizon, so the
+    quadrature is targeted at ``[0, horizon]`` alone. Substituting
+    ``s = exp(v)`` makes the integrand analytic and doubly-decaying in
+    ``v``, for which the trapezoidal rule converges *geometrically*
+    (Trefethen & Weideman, SIAM Review 2014): the node count grows only
+    logarithmically in both the timescale range and the inverse
+    tolerance.
+
+    The decay-rate grid spans ``s_min ~ 1/horizon`` (the slowest mode
+    resolvable over the data window) up to ``s_max ~ 40/c`` (past which
+    ``rho`` is negligible -- ``e**(-s c)`` has decayed). ``M`` is not
+    hand-tuned: it is doubled until the *measured* maximum relative
+    error of the SoE against the exact kernel on ``[0, horizon]`` falls
+    to ``tol`` (or ``m_max`` is hit).
+
+    Returns ``(w, beta, max_rel_err)`` -- the float64 arrays for
+    ``_core.hawkes_ll_soe`` plus the achieved, verified error bound.
+    """
+    import math
+
+    if alpha <= 1.0:
+        raise ValueError("Lomax triggering kernel requires alpha > 1")
+    if c <= 0.0:
+        raise ValueError("Lomax scale c must be positive")
+    if horizon <= 0.0:
+        raise ValueError("horizon must be positive")
+
+    s_min = 1.0e-7 / horizon
+    s_max = max(40.0 / c, 1.0e3 * s_min)
+    log_smin, log_smax = math.log(s_min), math.log(s_max)
+    log_const = (math.log(alpha - 1.0) + (alpha - 1.0) * math.log(c)
+                 - math.lgamma(alpha))
+
+    # exact kernel on a check grid over [0, horizon] -- the SoE error is
+    # measured directly against it, so M is data-driven, not guessed.
+    u_chk = np.concatenate(([0.0],
+                            np.geomspace(horizon * 1e-5, horizon, 400)))
+    g_chk = np.exp(math.log(alpha - 1.0) - math.log(c)
+                   - alpha * np.log1p(u_chk / c))
+
+    w = beta = None
+    err = float("inf")
+    M = 32
+    while True:
+        v = np.linspace(log_smin, log_smax, M)
+        s = np.exp(v)
+        dv = v[1] - v[0]
+        trap = np.full(M, dv)
+        trap[0] *= 0.5
+        trap[-1] *= 0.5
+        rho = np.exp(log_const + (alpha - 1.0) * v - s * c)
+        w = rho * s * trap                   # ds = s dv on the log grid
+        beta = s
+        g_soe = (w[None, :] * np.exp(-np.outer(u_chk, s))).sum(axis=1)
+        err = float(np.max(np.abs(g_soe - g_chk) / g_chk))
+        if err <= tol or M >= m_max:
+            break
+        M *= 2
+
+    return (np.ascontiguousarray(w, dtype=np.float64),
+            np.ascontiguousarray(beta, dtype=np.float64),
+            err)

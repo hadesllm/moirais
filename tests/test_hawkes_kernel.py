@@ -299,3 +299,35 @@ def test_hawkes_ll_soe_matches_bruteforce(seed):
     got = core.hawkes_ll_soe(t, T, nu, eta, w, beta)
     ref = _soe_ll_reference(t, T, nu, eta, w, beta)
     assert np.isclose(got, ref, rtol=1e-8, atol=1e-6)
+
+
+# --- SoE fit of the Lomax kernel, task #73 ----------------------------
+
+@pytest.mark.parametrize("alpha,c", [(1.5, 1.0), (2.5, 1.0), (4.0, 2.0)])
+def test_soe_fit_lomax_kernel_accuracy(alpha, c):
+    # the SoE must approximate the (completely monotone) Lomax kernel
+    # over [0, horizon]; the fit reports its own verified error bound,
+    # which an independent re-check on a fresh grid must confirm
+    from morie.tps_hawkes_jit import soe_fit_lomax
+    horizon = 200.0
+    w, beta, err = soe_fit_lomax(alpha, c, horizon, tol=1e-8)
+    assert err <= 1e-8
+    u = np.geomspace(horizon * 1e-3, horizon, 500)
+    g_true = (alpha - 1.0) / c * (1.0 + u / c) ** (-alpha)
+    g_soe = (w[None, :] * np.exp(-np.outer(u, beta))).sum(axis=1)
+    assert np.max(np.abs(g_soe - g_true) / g_true) < 1e-6
+
+
+@pytest.mark.parametrize("alpha,c", [(1.5, 1.0), (2.5, 1.0), (4.0, 2.0)])
+def test_soe_fit_lomax_likelihood_matches_exact(alpha, c):
+    # hawkes_ll_soe with the fitted Lomax SoE must reproduce the exact
+    # O(n^2) Lomax likelihood -- SoE perturbs the LL only at fit error
+    import math
+    from morie.tps_hawkes_jit import soe_fit_lomax
+    t = _event_times(400, rate=2.0, seed=17)
+    T = float(t[-1]) + 1.0
+    a0, eta = -1.0, 0.4
+    exact = core.hawkes_ll_lomax_const(t, T, a0, eta, alpha, c)
+    w, beta, err = soe_fit_lomax(alpha, c, T, tol=1e-8)
+    soe = core.hawkes_ll_soe(t, T, math.exp(a0), eta, w, beta)
+    assert np.isclose(soe, exact, rtol=1e-7)

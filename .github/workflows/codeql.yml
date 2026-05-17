@@ -1,0 +1,53 @@
+name: CodeQL
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+# Advanced CodeQL setup. This replaces GitHub's managed "Default
+# setup": Default setup ran each language as a separate analysis and
+# its PR-summary check raced the (slower) Python analysis, producing
+# the recurring, non-blocking "1 configuration not found" warning.
+# An advanced workflow runs all three languages as one matrix in a
+# single run, so the summary check waits for every language and the
+# race -- and the warning -- cannot occur.
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  schedule:
+    - cron: "27 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write   # upload analysis results
+      contents: read           # checkout
+      actions: read            # required for the 'actions' language
+      packages: read           # fetch CodeQL query packs
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ["actions", "c-cpp", "python"]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@78ed0c7291d93e40c51b085850dc669a4c3ab73b # v3
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: none
+
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@78ed0c7291d93e40c51b085850dc669a4c3ab73b # v3
+        with:
+          category: "/language:${{ matrix.language }}"

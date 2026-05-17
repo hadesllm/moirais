@@ -1,3 +1,14 @@
+# morie 0.9.3 — 2026-05-17
+
+Fix: complete the Docker image build fix; atomic release pipeline.
+
+* **Container build** — v0.9.2 missed copying `LICENSE` into the
+  build stage, which scikit-build-core requires (`license-files`).
+  The builder now copies it; the image build is verified.
+* **Atomic releases** — the release tag is now created only after the
+  sdist and Docker image both build successfully, so a partly-broken
+  release can no longer publish.
+
 # morie 0.9.2 — 2026-05-17
 
 Fix: the Docker container build for the v0.9.1 C/C++ core.

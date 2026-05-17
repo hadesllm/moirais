@@ -2,6 +2,8 @@
 
 **Multi-domain Open Research and Inferential Estimation**
 
+<sub>*Pronounced /ˈmɔɪraɪ/ — "MOY-rye", like the Greek Moirai (the Fates).*</sub>
+
 A multi-domain scientific computing toolkit (Python and R) for observational inference, with sociolegal, signal-processing, cryptographic, spatial-statistics, statistical-physics, and psychometrics modules. Hosts the MRM framework as a primary application for Canadian carceral, police, and oversight data analysis.
 
 [![License: AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--or--later-a42e2b.svg)](https://github.com/hadesllm/morie/blob/main/LICENSE)

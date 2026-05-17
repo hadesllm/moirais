@@ -1,6 +1,8 @@
 MORIE — Multi-domain Open Research and Inferential Estimation
 =============================================================
 
+*Pronounced* /ˈmɔɪraɪ/ — *"MOY-rye", like the Greek Moirai (the Fates).*
+
 .. image:: https://img.shields.io/badge/license-AGPL--3.0--or--later-a42e2b.svg
    :alt: License: AGPL-3.0-or-later
 

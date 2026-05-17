@@ -20,6 +20,13 @@ on:
     - cron: "27 3 * * 1"
   workflow_dispatch:
 
+# A new push to the same ref cancels an in-progress run for the
+# superseded commit, so successive pushes don't pile up parallel
+# CodeQL runs analysing stale commits.
+concurrency:
+  group: codeql-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 

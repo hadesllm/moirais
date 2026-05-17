@@ -20,6 +20,7 @@
 #pragma once
 
 #include <cmath>
+#include <complex>
 #include <cstddef>
 #include <random>
 #include <vector>
@@ -680,6 +681,59 @@ inline double hawkes_ll_soe(const double *t, std::size_t n, double T,
             integral += eta * (w[m] / beta[m]) *
                         (1.0 - std::exp(-beta[m] * u));
         }
+    }
+    if (!std::isfinite(log_sum) || !std::isfinite(integral)) return kBig;
+    return -(log_sum - integral);
+}
+
+// Complex-pole SoE Hawkes likelihood (task #73, gamma hybrid).
+//
+// Same O(M*n) recursion as hawkes_ll_soe, but the decay rates beta and
+// weights w are complex. The matrix-pencil fit of a gamma tail returns
+// real poles plus complex-conjugate pairs; a conjugate pair is the
+// real damped oscillation  2*Re(w*exp(-beta*u)), so the excitation and
+// the compensator are accumulated in complex arithmetic and the real
+// part is taken. With purely real (w, beta) this is identical to
+// hawkes_ll_soe.
+//
+// The caller must pass conjugate poles in matching pairs, so the
+// imaginary parts cancel and lambda is real; Re() then only discards
+// rounding noise. Re(beta) > 0 keeps |exp(-beta*dt)| < 1, so the
+// recursion is stable -- the fitter guarantees this.
+inline double hawkes_ll_soe_cplx(const double *t, std::size_t n, double T,
+                                 double nu, double eta,
+                                 const std::complex<double> *w,
+                                 const std::complex<double> *beta,
+                                 std::size_t M) {
+    if (!(nu > 0.0) || !std::isfinite(nu)) return kBig;
+
+    std::vector<std::complex<double>> A(M, std::complex<double>(0.0, 0.0));
+    double log_sum = 0.0;
+    for (std::size_t i = 0; i < n; ++i) {
+        double excite = 0.0;
+        if (i > 0) {
+            const double dt = t[i] - t[i - 1];
+            std::complex<double> acc(0.0, 0.0);
+            for (std::size_t m = 0; m < M; ++m) {
+                A[m] = std::exp(-beta[m] * dt) * (1.0 + A[m]);
+                acc += w[m] * A[m];
+            }
+            excite = acc.real();
+        }
+        const double lam_i = nu + eta * excite;
+        if (!std::isfinite(lam_i) || lam_i <= 0.0) return kBig;
+        log_sum += std::log(lam_i);
+    }
+
+    double integral = nu * T;
+    for (std::size_t i = 0; i < n; ++i) {
+        const double u = T - t[i];
+        std::complex<double> acc(0.0, 0.0);
+        for (std::size_t m = 0; m < M; ++m) {
+            acc += (w[m] / beta[m]) *
+                   (1.0 - std::exp(-beta[m] * u));
+        }
+        integral += eta * acc.real();
     }
     if (!std::isfinite(log_sum) || !std::isfinite(integral)) return kBig;
     return -(log_sum - integral);

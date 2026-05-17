@@ -391,3 +391,51 @@ def test_soe_fit_matrix_pencil_recovers_known_soe():
     order = np.argsort(beta.real)
     assert np.allclose(beta.real[order], beta_true, atol=1e-6)
     assert np.allclose(res.real[order], r_true, atol=1e-6)
+
+
+# --- complex-pole SoE engine, task #73 (gamma hybrid) -----------------
+
+def _soe_ll_reference_cplx(t, T, nu, eta, w, beta):
+    """Brute-force O(n^2) reference for the complex-pole SoE Hawkes
+    likelihood: g(u) = Re(sum_m w[m]*exp(-beta[m]*u))."""
+    import math
+    w = np.asarray(w, dtype=complex)
+    beta = np.asarray(beta, dtype=complex)
+    n = len(t)
+    log_sum = 0.0
+    for i in range(n):
+        s = 0.0
+        for j in range(i):
+            s += float(np.sum(w * np.exp(-beta * (t[i] - t[j]))).real)
+        log_sum += math.log(nu + eta * s)
+    integral = nu * T
+    for i in range(n):
+        u = T - t[i]
+        integral += eta * float(
+            np.sum((w / beta) * (1.0 - np.exp(-beta * u))).real)
+    return -(log_sum - integral)
+
+
+def test_hawkes_ll_soe_cplx_reduces_to_real():
+    # with purely real poles the complex engine equals the real one
+    t = _event_times(300, rate=2.0, seed=61)
+    T = float(t[-1]) + 1.0
+    w = np.array([0.5, 0.3, 0.15])
+    beta = np.array([0.4, 1.5, 4.0])
+    real = core.hawkes_ll_soe(t, T, 0.4, 0.3, w, beta)
+    cplx = core.hawkes_ll_soe_cplx(t, T, 0.4, 0.3,
+                                   w.astype(np.complex128),
+                                   beta.astype(np.complex128))
+    assert np.isclose(cplx, real, rtol=1e-12, atol=1e-9)
+
+
+def test_hawkes_ll_soe_cplx_conjugate_pair_matches_bruteforce():
+    # a real pole plus one conjugate pair, engine vs O(n^2) definition
+    t = _event_times(150, rate=2.0, seed=63)
+    T = float(t[-1]) + 1.0
+    nu, eta = 0.4, 0.3
+    w = np.array([0.40 + 0j, 0.10 + 0.05j, 0.10 - 0.05j])
+    beta = np.array([0.70 + 0j, 1.20 + 0.80j, 1.20 - 0.80j])
+    got = core.hawkes_ll_soe_cplx(t, T, nu, eta, w, beta)
+    ref = _soe_ll_reference_cplx(t, T, nu, eta, w, beta)
+    assert np.isclose(got, ref, rtol=1e-8, atol=1e-6)

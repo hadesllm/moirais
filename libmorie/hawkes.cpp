@@ -20,6 +20,8 @@ using namespace nb::literals;
 namespace {
 
 using Vec = nb::ndarray<const double, nb::ndim<1>, nb::c_contig>;
+using CVec =
+    nb::ndarray<const std::complex<double>, nb::ndim<1>, nb::c_contig>;
 
 double hawkes_ll_exp_const(Vec t, double T, double a0, double eta,
                            double beta) {
@@ -99,6 +101,13 @@ double hawkes_ll_soe(Vec t, double T, double nu, double eta, Vec w,
                                       w.data(), beta.data(), w.shape(0));
 }
 
+double hawkes_ll_soe_cplx(Vec t, double T, double nu, double eta, CVec w,
+                          CVec beta) {
+    return morie::core::hawkes_ll_soe_cplx(t.data(), t.shape(0), T, nu, eta,
+                                           w.data(), beta.data(),
+                                           w.shape(0));
+}
+
 }  // namespace
 
 void register_hawkes(nb::module_ &m) {
@@ -160,4 +169,11 @@ void register_hawkes(nb::module_ &m) {
           "Hawkes negative log-likelihood with a sum-of-exponentials "
           "triggering kernel g(u) = sum_m w[m]*exp(-beta[m]*u). O(M*n) "
           "via M parallel exponential recursions.");
+    m.def("hawkes_ll_soe_cplx", &hawkes_ll_soe_cplx, "t"_a, "T"_a, "nu"_a,
+          "eta"_a, "w"_a, "beta"_a,
+          "Complex-pole form of hawkes_ll_soe: w and beta are complex "
+          "(complex128). Carries the conjugate-pole pairs from a "
+          "matrix-pencil fit; conjugate poles must be passed in pairs "
+          "so the likelihood is real. Identical to hawkes_ll_soe for "
+          "purely real poles.");
 }

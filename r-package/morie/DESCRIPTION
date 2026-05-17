@@ -1,7 +1,7 @@
 Package: morie
 Type: Package
 Title: Multi-Domain Open Research and Inferential Estimation
-Version: 0.9.1
+Version: 0.9.2
 Authors@R: c(
   person(
     given = "Vansh Singh",

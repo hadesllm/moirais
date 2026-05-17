@@ -323,7 +323,7 @@ _TEMPLATES: dict[str, str] = {}
 _TEMPLATES["analysis"] = textwrap.dedent("""\
     ---
     title: "{title}"
-    author: "The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"
+    author: "{author}"
     date: "{date}"
     format:
       html:
@@ -379,7 +379,7 @@ _TEMPLATES["analysis"] = textwrap.dedent("""\
 _TEMPLATES["report"] = textwrap.dedent("""\
     ---
     title: "{title}"
-    author: "The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"
+    author: "{author}"
     date: "{date}"
     format:
       html:
@@ -442,7 +442,7 @@ _TEMPLATES["report"] = textwrap.dedent("""\
 _TEMPLATES["causal"] = textwrap.dedent("""\
     ---
     title: "{title}"
-    author: "The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"
+    author: "{author}"
     date: "{date}"
     format:
       html:
@@ -505,7 +505,7 @@ _TEMPLATES["causal"] = textwrap.dedent("""\
 _TEMPLATES["table1"] = textwrap.dedent("""\
     ---
     title: "Table 1: Baseline Characteristics -- {title}"
-    author: "The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"
+    author: "{author}"
     date: "{date}"
     format:
       html:
@@ -535,7 +535,7 @@ _TEMPLATES["table1"] = textwrap.dedent("""\
 _TEMPLATES["survival"] = textwrap.dedent("""\
     ---
     title: "{title}"
-    author: "The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"
+    author: "{author}"
     date: "{date}"
     format:
       html:
@@ -575,7 +575,7 @@ _TEMPLATES["survival"] = textwrap.dedent("""\
 _TEMPLATES["presentation"] = textwrap.dedent("""\
     ---
     title: "{title}"
-    author: "The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"
+    author: "{author}"
     date: "{date}"
     format:
       revealjs:

@@ -28,9 +28,28 @@ References
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
+
+
+def project_root() -> Path:
+    """Resolve the repo root for OTIS data/output paths.
+
+    Walks ancestors of this file for a ``pyproject.toml`` marker so the
+    same code works from a source checkout, a git worktree, or an
+    installed wheel. Falls back to the current working directory.
+
+    Replaces the old ``parents[5]`` hard-coded depth, which resolved to
+    ``/Volumes`` from this worktree layout.
+    """
+    here = Path(__file__).resolve()
+    for parent in here.parents:
+        if (parent / "pyproject.toml").is_file():
+            return parent
+    return Path.cwd()
+
 
 # ---------------------------------------------------------------------------
 # Result containers

@@ -25,8 +25,9 @@ import pandas as pd
 
 from .fn._richresult import RichResult
 
+from .otis import project_root
 
-PROJECT = Path(__file__).resolve().parents[5]
+PROJECT = project_root()
 DEFAULT_OUT = PROJECT / "data/manifest/outputs/overlay"
 
 

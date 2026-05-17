@@ -33,7 +33,7 @@ from . import otis as _o
 from .fn._richresult import RichResult
 
 
-PROJECT = Path(__file__).resolve().parents[5]
+PROJECT = _o.project_root()
 DEFAULT_OUT = PROJECT / "data/manifest/outputs/otis"
 
 # OTIS is open, anonymized Ontario MCSCS correctional-placement data.

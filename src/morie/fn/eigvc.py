@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Extract top eigenvectors. 'Gear Fifth!' -- Luffy, One Piece"""
+"""Return top *n_dims* eigenvectors of symmetric matrix B."""
 
 from __future__ import annotations
 

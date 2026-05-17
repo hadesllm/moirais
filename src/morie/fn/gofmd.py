@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""MDS goodness-of-fit interpretation. 'Infinite Void.' -- Gojo, Jujutsu Kaisen"""
+"""Interpret Kruskal stress value as quality label."""
 
 from __future__ import annotations
 

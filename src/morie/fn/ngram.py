@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Without music, life would be a mistake. -- Friedrich Nietzsche"""
+"""Compute n-gram frequencies from text."""
 
 from __future__ import annotations
 

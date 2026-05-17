@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Jackknife estimator. 'Utini!' -- Jawa"""
+"""Delete-1 jackknife: bias and SE estimation."""
 
 from __future__ import annotations
 

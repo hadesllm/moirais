@@ -1,4 +1,4 @@
-"""Unfolding residuals. 'Galick Gun!' -- Vegeta, Dragon Ball Z"""
+"""Compute residual matrix for unfolding model."""
 
 from __future__ import annotations
 

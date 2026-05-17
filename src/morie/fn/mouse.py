@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Monte Carlo simulation engine. 'To deny our own impulses is to deny the very thing that makes us human.' -- Mouse"""
+"""Monte Carlo integration of f(x) over [lo, hi]."""
 
 from __future__ import annotations
 

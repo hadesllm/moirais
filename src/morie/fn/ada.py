@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""An unexamined life is not worth living. -- Socrates"""
+"""Find best decision stump (feature, threshold, polarity)."""
 
 from __future__ import annotations
 

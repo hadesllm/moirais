@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Scale coordinates Z = V * sqrt(Lambda). 'Gomu Gomu no...' -- Luffy, One Piece"""
+"""Compute MDS coordinates: Z = V * sqrt(Lambda)."""
 
 from __future__ import annotations
 

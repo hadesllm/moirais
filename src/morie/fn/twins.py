@@ -1,4 +1,4 @@
-"""Phase locking value (PLV). 'We are not here because we are free.' -- The Twins"""
+"""Phase Locking Value between two real-valued signals."""
 
 from __future__ import annotations
 

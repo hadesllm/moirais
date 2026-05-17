@@ -1,4 +1,4 @@
-"""No man ever steps in the same river twice. -- Heraclitus"""
+"""Classify offense descriptions into UCR Part I / Part II categories."""
 
 from __future__ import annotations
 

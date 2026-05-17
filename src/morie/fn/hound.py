@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Kalman filter tracking. 'I never lose a trail.' -- Hound"""
+"""1-D or multi-dimensional Kalman filter."""
 
 from __future__ import annotations
 

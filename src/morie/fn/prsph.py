@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Fidelity metric (SSIM). 'Tell me, is the woman worth it?' -- Persephone"""
+"""Structural Similarity Index (SSIM) between two signals or images."""
 
 from __future__ import annotations
 

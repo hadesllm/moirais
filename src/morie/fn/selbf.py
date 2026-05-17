@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Everything flows. -- Heraclitus"""
+"""Quantify selection bias as a multiplicative factor."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Knowing yourself is the beginning of all wisdom. -- Aristotle"""
+"""QR decomposition via Householder reflections."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius"""
+"""FlashAttention: IO-aware exact attention with tiling and recomputation."""
 import numpy as np
 from ._richresult import RichResult
 

@@ -1,4 +1,4 @@
-"""Prefix trie operations. 'Hope is like the sun.' -- Poe Dameron"""
+"""Build a prefix trie and optionally search by prefix."""
 
 from __future__ import annotations
 

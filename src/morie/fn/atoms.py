@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""James-Stein shrinkage estimator. 'It's a small world after all.' -- The Atom"""
+"""James-Stein shrinkage estimator for a multivariate normal mean."""
 
 from __future__ import annotations
 

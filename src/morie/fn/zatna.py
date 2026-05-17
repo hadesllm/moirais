@@ -1,4 +1,4 @@
-"""Palindrome detection in sequences. 'Erif!' -- Zatanna (speaks backwards)"""
+"""Detect palindromic subsequences in a numeric or string sequence."""
 
 from __future__ import annotations
 

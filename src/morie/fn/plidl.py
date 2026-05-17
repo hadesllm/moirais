@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Plot ideal points and stimuli. 'Spirit Bomb!' -- Goku, Dragon Ball Z"""
+"""Combine respondent ideal points and stimulus coords for plotting."""
 
 from __future__ import annotations
 

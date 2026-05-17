@@ -1,4 +1,4 @@
-"""When I let go of what I am, I become what I might be. -- Lao Tzu"""
+"""FlashAttention IO-aware block-tiled attention."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult

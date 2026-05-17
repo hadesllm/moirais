@@ -1,4 +1,4 @@
-"""Simulate 2D unfolding data. 'Ultra Instinct.' -- Goku, Dragon Ball Z"""
+"""Generate synthetic 2D unfolding data (ideal points + stimuli + preferences)."""
 
 from __future__ import annotations
 

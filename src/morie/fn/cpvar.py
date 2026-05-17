@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Confine yourself to the present. -- Marcus Aurelius"""
+"""Detect a single variance change point in a time series."""
 
 from __future__ import annotations
 

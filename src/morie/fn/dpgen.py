@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Dirichlet process stick-breaking construction. 'It's dangerous to go alone.' -- Old Man"""
+"""Generate a Dirichlet process via stick-breaking (GEM distribution)."""
 
 from __future__ import annotations
 

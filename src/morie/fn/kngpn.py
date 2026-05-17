@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Network centrality measures. 'When I was a boy...' -- Kingpin"""
+"""Compute multiple centrality measures for a crime/social network."""
 
 from __future__ import annotations
 

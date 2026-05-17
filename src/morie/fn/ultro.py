@@ -1,4 +1,4 @@
-"""Particle swarm optimization. 'There are no strings on me.' -- Ultron"""
+"""Minimise a function via particle swarm optimisation (PSO)."""
 
 from __future__ import annotations
 

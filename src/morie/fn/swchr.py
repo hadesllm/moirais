@@ -1,4 +1,4 @@
-"""The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"""
+"""Summary statistics for Star Wars character data."""
 
 from __future__ import annotations
 

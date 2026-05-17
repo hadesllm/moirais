@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Graph articulation points. 'I am afraid of the truth.' -- Apoc"""
+"""Find articulation points (cut vertices) in an undirected graph."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Cybernetic control system simulation. 'Booyah!' -- Cyborg"""
+"""Simulate a PID controller on a first-order plant."""
 
 from __future__ import annotations
 

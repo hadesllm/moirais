@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Indian buffet process for binary feature allocation. 'The man who moves a mountain begins by carrying away small stones. -- Confucius'"""
+"""Simulate the Indian Buffet Process (IBP) for feature allocation."""
 
 from __future__ import annotations
 

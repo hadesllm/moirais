@@ -1,4 +1,4 @@
-"""Damped spring-mass system. 'Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu'"""
+"""Simulate a damped spring-mass system."""
 
 from __future__ import annotations
 

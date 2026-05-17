@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Funnel plot data for publication bias. 'Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius' -- Ahsoka Tano"""
+"""Compute funnel plot data and Egger's test for publication bias."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu"""
+"""Compute the p-Wasserstein distance between two 1-D empirical distributions."""
 
 from __future__ import annotations
 

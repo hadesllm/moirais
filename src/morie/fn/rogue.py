@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Transfer learning feature extraction. 'Don't touch me.' -- Rogue"""
+"""Transfer features from a source domain to a target domain via."""
 
 from __future__ import annotations
 

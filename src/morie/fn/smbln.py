@@ -1,4 +1,4 @@
-"""The man who moves a mountain begins by carrying away small stones. -- Confucius"""
+"""Compute standardized mean differences (SMD) for covariate balance."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Image thresholding (Otsu / fixed). 'Time discovers truth. -- Seneca'"""
+"""Binarise a grayscale image using Otsu's method or a fixed threshold."""
 
 from __future__ import annotations
 

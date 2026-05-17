@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Jarque-Bera normality test. 'How wude!' -- Jar Jar Binks"""
+"""Jarque-Bera test for normality. Tests if skewness=0 and kurtosis=3."""
 
 from __future__ import annotations
 

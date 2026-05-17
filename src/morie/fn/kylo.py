@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""K-fold cross-validation. 'Let the past die. Kill it, if you have to.' -- Kylo Ren"""
+"""K-fold cross-validation for OLS. Returns mean MSE across folds."""
 
 from __future__ import annotations
 

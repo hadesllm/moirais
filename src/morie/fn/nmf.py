@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Non-negative Matrix Factorization. 'You have power over your mind -- not outside events. Realize this, and you will find strength. -- Marcus Aurelius' -- Ahsoka Tano"""
+"""Non-negative Matrix Factorization using multiplicative updates."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
+"""GeneralStatistics equation extracted from Christopher Gandrud (Author) - Reproducible Research with R and RStudio."""
 import numpy as np
 from scipy import stats
 

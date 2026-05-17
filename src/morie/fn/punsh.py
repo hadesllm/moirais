@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""L1/Elastic net regularization path. 'If you're guilty, you're dead.' -- Punisher"""
+"""Fit elastic net regression via coordinate descent."""
 
 from __future__ import annotations
 

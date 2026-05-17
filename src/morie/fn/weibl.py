@@ -1,4 +1,4 @@
-"""Mastering others is strength; mastering yourself is true power. -- Lao Tzu"""
+"""Maximum likelihood estimation of Weibull distribution parameters."""
 
 from __future__ import annotations
 

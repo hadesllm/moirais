@@ -1,4 +1,4 @@
-"""Volatility of volatility (VIX-like). 'In blackest night, you will fear me.' -- Sinestro"""
+"""Volatility of volatility: rolling standard deviation of rolling volatility."""
 
 from __future__ import annotations
 

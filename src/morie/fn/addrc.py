@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Mathematics is the music of reason. -- James Joseph Sylvester"""
+"""Simulate a full adder (or ripple-carry adder for bit arrays)."""
 
 from __future__ import annotations
 

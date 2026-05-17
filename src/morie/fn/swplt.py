@@ -1,4 +1,4 @@
-"""We suffer more often in imagination than in reality. -- Seneca"""
+"""Summary statistics for Star Wars planet data."""
 
 from __future__ import annotations
 

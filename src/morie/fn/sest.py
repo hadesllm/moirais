@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Truth comes out of error more readily than out of confusion. -- Francis Bacon"""
+"""S-estimator for robust regression."""
 
 from __future__ import annotations
 

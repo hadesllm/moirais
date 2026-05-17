@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""I cannot teach anybody anything. I can only make them think. -- Socrates"""
+"""Detect near-duplicate rows using pairwise similarity."""
 
 from __future__ import annotations
 

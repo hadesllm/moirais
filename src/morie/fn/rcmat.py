@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Rectangular matrix formatter. 'Spirit Gun!' -- Yusuke, Yu Yu Hakusho"""
+"""Format a rectangular preference matrix (respondents x stimuli)."""
 
 from __future__ import annotations
 

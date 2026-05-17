@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""The happiness of your life depends upon the quality of your thoughts. -- Marcus Aurelius"""
+"""Compute a Delaunay triangulation of 2-D points."""
 
 from __future__ import annotations
 

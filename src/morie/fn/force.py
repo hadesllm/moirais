@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""ATE difference-in-means. 'We suffer more often in imagination than in reality. -- Seneca'"""
+"""Average treatment effect via simple difference-in-means with Welch CI."""
 from __future__ import annotations
 
 import numpy as np

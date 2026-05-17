@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Out of chaos, comes order. -- Friedrich Nietzsche"""
+"""LU decomposition with partial pivoting: PA = LU."""
 
 from __future__ import annotations
 

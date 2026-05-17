@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Ghost signal detection in noise. 'I'm already dead.' -- Deadman"""
+"""Detect hidden (ghost) periodic signals buried in noise via surrogate testing."""
 
 from __future__ import annotations
 

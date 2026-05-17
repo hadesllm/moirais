@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Knowing yourself is the beginning of all wisdom. -- Aristotle"""
+"""Approximate nearest Kronecker product decomposition."""
 
 from __future__ import annotations
 

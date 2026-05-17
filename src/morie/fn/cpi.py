@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""CPI and inflation rate. 'So this is how liberty dies, with thunderous applause.' -- Padme"""
+"""Compute Consumer Price Index and inflation rate."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Out of chaos, comes order. -- Friedrich Nietzsche"""
+"""Simulate a PID controller on a discrete process signal."""
 
 from __future__ import annotations
 

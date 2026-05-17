@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""We are what we repeatedly do. Excellence is a habit. -- Aristotle"""
+"""Compute the Highest Density Interval (HDI) from posterior samples."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Bayesian FDR. 'Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius'"""
+"""Bayesian False Discovery Rate (Newton et al., 2004)."""
 
 from __future__ import annotations
 

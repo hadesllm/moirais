@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""We suffer more often in imagination than in reality. -- Seneca"""
+"""Classical seasonal decomposition (moving average)."""
 
 from __future__ import annotations
 

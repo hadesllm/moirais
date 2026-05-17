@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""The only true wisdom is in knowing you know nothing. -- Socrates"""
+"""Cox PH model via partial likelihood maximization."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Time discovers truth. -- Seneca"""
+"""Goodness-of-fit test comparing observed data to simulated output."""
 
 from __future__ import annotations
 

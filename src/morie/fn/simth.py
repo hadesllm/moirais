@@ -1,4 +1,4 @@
-"""Simulate feeling thermometer data. 'Mastered Ultra Instinct.' -- Goku, Dragon Ball Z"""
+"""Generate synthetic feeling thermometer data."""
 
 from __future__ import annotations
 

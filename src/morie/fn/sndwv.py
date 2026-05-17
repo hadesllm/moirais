@@ -1,4 +1,4 @@
-"""Cepstral analysis. 'Soundwave superior.' -- Soundwave"""
+"""Compute real cepstrum and cepstral coefficients."""
 
 from __future__ import annotations
 

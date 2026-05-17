@@ -1,4 +1,4 @@
-"""Velocity profile estimation. 'You can't lock up the darkness.' -- Zoom"""
+"""Estimate velocity, acceleration, and jerk from a position time series."""
 
 from __future__ import annotations
 

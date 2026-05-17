@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Anomaly removal via IQR. 'I'm a nasty piece of work.' -- John Constantine"""
+"""Remove anomalies (exorcise outliers) using the IQR fence method."""
 
 from __future__ import annotations
 

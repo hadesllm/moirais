@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle"""
+"""Save a matplotlib figure to disk."""
 
 from __future__ import annotations
 

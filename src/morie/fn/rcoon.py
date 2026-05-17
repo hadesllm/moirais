@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Hohmann transfer orbit computation. 'Ain't no thing like me, except me.' -- Rocket"""
+"""Compute a Hohmann transfer orbit between two circular orbits."""
 
 from __future__ import annotations
 

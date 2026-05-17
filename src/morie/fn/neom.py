@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Decision tree split criterion. 'There is no spoon.' -- Spoon Boy"""
+"""Find the optimal binary split for *feature* predicting *target*."""
 
 from __future__ import annotations
 

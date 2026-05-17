@@ -1,4 +1,4 @@
-"""Feeling thermometer standardization. 'Dragon of the Darkness Flame!' -- Hiei, Yu Yu Hakusho"""
+"""Standardize feeling thermometer ratings to [0, 1] range."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""No man ever steps in the same river twice. -- Heraclitus"""
+"""DBSCAN clustering returning DescriptiveResult with diagnostics."""
 
 from __future__ import annotations
 

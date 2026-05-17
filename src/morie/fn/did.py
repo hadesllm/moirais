@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""An unexamined life is not worth living. -- Socrates"""
+"""Difference-in-differences estimator (2x2 design)."""
 
 from __future__ import annotations
 

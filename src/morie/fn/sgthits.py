@@ -1,4 +1,4 @@
-"""Truth comes out of error more readily than out of confusion. -- Francis Bacon"""
+"""HITS algorithm hubs + authorities."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult

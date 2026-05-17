@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""The man who moves a mountain begins by carrying away small stones. -- Confucius"""
+"""Compute the Minkowski distance (Lp norm) between two vectors."""
 
 from __future__ import annotations
 

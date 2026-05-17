@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""MDS with missing data (weighted stress). 'Shoot Style.' -- Deku, My Hero Academia"""
+"""Classical MDS with weighted stress for missing data."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""SMACOF convergence check. 'Serious Series.' -- Saitama, One Punch Man"""
+"""Check if SMACOF has converged."""
 
 from __future__ import annotations
 

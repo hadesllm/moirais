@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""No man ever steps in the same river twice. -- Heraclitus"""
+"""Compute the Schur decomposition A = Q T Q^H."""
 
 from __future__ import annotations
 

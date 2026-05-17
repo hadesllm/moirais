@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Particle size distribution (Rosin-Rammler). 'Grind them down!' -- Grindor"""
+"""Fit a Rosin-Rammler (Weibull) distribution to particle size data."""
 
 from __future__ import annotations
 

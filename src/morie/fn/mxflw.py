@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""He who has a why to live can bear almost any how. -- Friedrich Nietzsche"""
+"""Compute maximum flow using Edmonds-Karp (BFS-based Ford-Fulkerson)."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Mastering others is strength; mastering yourself is true power. -- Lao Tzu"""
+"""Convolve a 1-D signal with a Green's function kernel."""
 
 from __future__ import annotations
 

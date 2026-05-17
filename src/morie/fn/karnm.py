@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Karnaugh map grouping. 'No man ever steps in the same river twice. -- Heraclitus' -- Chirrut Imwe"""
+"""Generate Karnaugh map layout and identify minterms."""
 
 from __future__ import annotations
 

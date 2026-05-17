@@ -1,4 +1,4 @@
-"""Terrain analysis. 'I was never on your side.' -- Terra"""
+"""Compute slope, aspect, and curvature from a digital elevation model."""
 
 from __future__ import annotations
 

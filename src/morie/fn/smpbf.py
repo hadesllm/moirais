@@ -1,4 +1,4 @@
-"""Spatial distance buffer zones. 'Stay on target!' -- Gold Five"""
+"""Identify points within a distance buffer zone."""
 
 from __future__ import annotations
 

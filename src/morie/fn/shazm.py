@@ -1,4 +1,4 @@
-"""SHAZAM simultaneous hypothesis test. 'SHAZAM!' -- Billy Batson"""
+"""Multiple hypothesis testing with family-wise error rate control."""
 
 from __future__ import annotations
 

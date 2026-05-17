@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Lorenz curve coordinates. 'Knowledge itself is power. -- Bacon'"""
+"""Compute Lorenz curve coordinates for income distribution."""
 from __future__ import annotations
 
 import numpy as np

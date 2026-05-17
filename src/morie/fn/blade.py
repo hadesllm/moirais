@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Edge detection (Canny variant). 'Some motherfuckers are always trying to ice-skate uphill.' -- Blade"""
+"""Detect edges in a 2D image using a simplified Canny algorithm."""
 
 from __future__ import annotations
 

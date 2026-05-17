@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Jackknife delete-d estimator. 'Maximum effort!' -- Deadpool"""
+"""Compute the delete-d jackknife estimate of bias and variance."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Geographic k-means clustering. 'Rebellions are built on hope.' -- Jyn Erso"""
+"""K-means clustering on geographic coordinates."""
 
 from __future__ import annotations
 

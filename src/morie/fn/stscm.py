@@ -1,4 +1,4 @@
-"""Patience is bitter, but its fruit is sweet. -- Aristotle"""
+"""Detect Byzantine (faulty/adversarial) reporters in distributed systems."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Birth-death process. 'The prophecy was true.' -- Councillor Hamann"""
+"""Simulate a continuous-time birth-death (Markov) process."""
 
 from __future__ import annotations
 

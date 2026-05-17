@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Bootstrap aggregating (bagging). 'In time, the suffering of your people will persuade you.' -- Nute Gunray"""
+"""Simple OLS predict."""
 
 from __future__ import annotations
 

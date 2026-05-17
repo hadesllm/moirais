@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Least median of squares regression. 'The road up and the road down are the same thing. -- Heraclitus' -- Chirrut Imwe"""
+"""Least Median of Squares (LMS) regression."""
 
 from __future__ import annotations
 

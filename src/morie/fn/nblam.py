@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Molecular cloud mass function (Schechter). 'I was disassembled and rebuilt.' -- Nebula"""
+"""Fit a Schechter-like mass function to cloud mass observations."""
 
 from __future__ import annotations
 

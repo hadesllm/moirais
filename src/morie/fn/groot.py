@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Logistic growth model. 'I am Groot.' -- Groot"""
+"""Parameters."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Gaussian beam optics. 'I could never control it.' -- Cyclops"""
+"""Compute Gaussian beam parameters along the propagation axis."""
 
 from __future__ import annotations
 

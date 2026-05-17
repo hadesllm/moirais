@@ -1,4 +1,4 @@
-"""Errors using inadequate data are much less than those using no data at all. -- Charles Babbage"""
+"""HITS (hubs & authorities)."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult

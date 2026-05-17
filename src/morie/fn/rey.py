@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""OLS linear regression. 'The belonging you seek is not behind you, it is ahead.' -- Maz Kanata"""
+"""Ordinary least squares linear regression. Dataset-agnostic."""
 
 from __future__ import annotations
 

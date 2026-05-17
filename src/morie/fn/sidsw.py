@@ -1,4 +1,4 @@
-"""Impact force modeling. 'What is now proved was once only imagined. -- Blake'"""
+"""Model collision impact force using impulse-momentum theorem."""
 from __future__ import annotations
 
 from ._containers import DescriptiveResult

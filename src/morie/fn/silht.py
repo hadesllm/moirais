@@ -1,4 +1,4 @@
-"""Confine yourself to the present. -- Marcus Aurelius"""
+"""Compute silhouette coefficients for each sample and the mean score."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Granger causality test. 'Choice is an illusion.' -- The Merovingian"""
+"""Bivariate Granger causality test: does *x* Granger-cause *y*?."""
 
 from __future__ import annotations
 

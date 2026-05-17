@@ -1,4 +1,4 @@
-"""Surface roughness metrics. 'Looking good is half the battle.' -- Sunstreaker"""
+"""Compute surface roughness parameters from a 1-D profile."""
 
 from __future__ import annotations
 

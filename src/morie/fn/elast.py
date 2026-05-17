@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Price elasticity of demand. 'The ability to speak does not make you intelligent.' -- Qui-Gon Jinn"""
+"""Compute arc price elasticity of demand."""
 
 from __future__ import annotations
 

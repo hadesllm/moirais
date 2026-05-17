@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""FMEA Risk Priority Number scoring. 'I have a bad feeling about this.' -- Everyone"""
+"""Compute Failure Mode and Effects Analysis Risk Priority Numbers."""
 
 from __future__ import annotations
 

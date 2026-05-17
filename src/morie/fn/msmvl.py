@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Elastic deformation field computation. 'I'm Ms. Marvel!' -- Kamala Khan"""
+"""Generate a random elastic deformation field (Simard et al., 2003)."""
 
 from __future__ import annotations
 

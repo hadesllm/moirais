@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Sentence length distribution stats. 'What is now proved was once only imagined. -- Blake'"""
+"""Descriptive statistics for sentence lengths (months)."""
 from __future__ import annotations
 
 import numpy as np

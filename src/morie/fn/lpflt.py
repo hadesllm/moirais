@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Butterworth lowpass filter. 'When I let go of what I am, I become what I might be. -- Lao Tzu' -- Chirrut Imwe"""
+"""Apply a Butterworth lowpass filter to a signal."""
 
 from __future__ import annotations
 

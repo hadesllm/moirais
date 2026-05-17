@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Weibull failure analysis. 'I will crush you!' -- Bonecrusher"""
+"""Weibull failure/reliability analysis via MLE."""
 
 from __future__ import annotations
 

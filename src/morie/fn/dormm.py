@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Recurrence quantification analysis. 'Dormammu, I have come to bargain.' -- Doctor Strange"""
+"""Perform recurrence quantification analysis (RQA) on a time series."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Allometric scaling regression. 'I know a guy.' -- Ant-Man"""
+"""Fit an allometric (power-law) scaling model :math:`y = a x^b`."""
 
 from __future__ import annotations
 

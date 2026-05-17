@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""IoU tracking metric. 'Eyes in the sky.' -- Laserbeak"""
+"""Compute Intersection over Union (IoU) between predicted and true boxes."""
 
 from __future__ import annotations
 

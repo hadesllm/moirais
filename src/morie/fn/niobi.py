@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""A* pathfinding algorithm. 'Lock and load.' -- Niobe"""
+"""A* shortest path on a 2-D grid."""
 
 from __future__ import annotations
 

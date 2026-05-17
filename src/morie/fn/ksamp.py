@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""K-sample Anderson-Darling test. 'We are brave. -- Rose Tico'"""
+"""K-sample Anderson-Darling test."""
 
 from __future__ import annotations
 

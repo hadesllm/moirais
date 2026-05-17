@@ -1,4 +1,4 @@
-"""Levy flight random walk. 'Surprise!' -- Skywarp"""
+"""Simulate a Levy flight random walk."""
 
 from __future__ import annotations
 

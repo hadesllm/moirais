@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""LSB steganography. 'Silent but deadly.' -- Ravage"""
+"""Embed a binary message into integer data using LSB steganography."""
 
 from __future__ import annotations
 

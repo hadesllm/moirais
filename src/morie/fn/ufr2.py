@@ -1,4 +1,4 @@
-"""Unfolding R-squared. 'Super Saiyan Blue.' -- Goku, Dragon Ball Z"""
+"""Compute R-squared for an unfolding model."""
 
 from __future__ import annotations
 

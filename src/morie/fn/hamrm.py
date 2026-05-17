@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Impact testing energy (Charpy/Izod). 'I want everything.' -- Bane (Smith)"""
+"""Compute absorbed energy from a Charpy or Izod impact test."""
 
 from __future__ import annotations
 

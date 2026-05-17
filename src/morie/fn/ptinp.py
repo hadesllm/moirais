@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Statistics is the grammar of science. -- Karl Pearson"""
+"""Determine whether a point lies inside a polygon using the ray-casting."""
 
 from __future__ import annotations
 

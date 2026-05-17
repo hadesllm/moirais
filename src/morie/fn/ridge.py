@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Ridge regression (L2). 'Stay on target.' -- Gold Five"""
+"""Ridge regression with L2 penalty. Dataset-agnostic."""
 
 from __future__ import annotations
 

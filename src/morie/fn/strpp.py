@@ -1,4 +1,4 @@
-"""Stress per point. 'Domain Expansion!' -- Gojo, Jujutsu Kaisen"""
+"""Compute stress contribution per object."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Domain adaptation via MMD. 'I can take you anywhere, but you gotta want to go.' -- The Trainman"""
+"""Maximum Mean Discrepancy between two samples."""
 
 from __future__ import annotations
 

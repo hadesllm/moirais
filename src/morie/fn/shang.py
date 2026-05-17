@@ -1,4 +1,4 @@
-"""Circular harmonic analysis. 'You gave me ten rings. I will use them all.' -- Shang-Chi"""
+"""Decompose a periodic signal into circular harmonics (Fourier on a ring)."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Accelerated failure time (AFT) model. 'I have lived most of my life surrounded by enemies.' -- Gamora"""
+"""Fit an accelerated failure time (AFT) survival model."""
 
 from __future__ import annotations
 

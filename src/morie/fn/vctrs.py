@@ -1,4 +1,4 @@
-"""Knowledge itself is power. -- Francis Bacon"""
+"""Generate neural network weight initialization matrices."""
 
 from __future__ import annotations
 

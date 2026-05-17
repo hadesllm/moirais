@@ -1,4 +1,4 @@
-"""Rheological flow model (Herschel-Bulkley). 'Sludge no hurry.' -- Sludge"""
+"""Fit the Herschel-Bulkley rheological model."""
 
 from __future__ import annotations
 

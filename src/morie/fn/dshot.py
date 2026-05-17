@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Precision at K metric. 'I never miss.' -- Deadshot"""
+"""Precision at K: proportion of true positives in the top K predictions."""
 
 from __future__ import annotations
 

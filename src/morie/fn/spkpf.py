@@ -1,4 +1,4 @@
-"""Single-peaked preference check. 'Rose Whip!' -- Kurama, Yu Yu Hakusho"""
+"""Check if preference orderings are single-peaked."""
 
 from __future__ import annotations
 

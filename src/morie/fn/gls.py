@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
+"""GLS via Cochrane-Orcutt for AR(1) errors. Dataset-agnostic."""
 
 from __future__ import annotations
 

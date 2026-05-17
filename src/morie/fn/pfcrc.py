@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Preference circles for visualization. 'Instant Transmission.' -- Goku, Dragon Ball Z"""
+"""Generate circle points centered on an ideal point."""
 
 from __future__ import annotations
 

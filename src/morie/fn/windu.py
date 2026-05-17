@@ -1,4 +1,4 @@
-"""Wald test. 'This party is over.' -- Mace Windu"""
+"""Wald test: (estimate - null) / se ~ N(0,1)."""
 
 from __future__ import annotations
 

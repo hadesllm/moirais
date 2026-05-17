@@ -1,4 +1,4 @@
-"""Spectral embedding via Laplacian eigenmaps. 'Hope is not lost today.' -- Poe Dameron"""
+"""Spectral embedding via the normalized graph Laplacian."""
 
 from __future__ import annotations
 

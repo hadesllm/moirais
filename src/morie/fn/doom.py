@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""System failure cascade / reliability. 'We are the Doom Patrol.' -- The Chief"""
+"""System reliability via Monte Carlo failure cascade simulation."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""That which does not kill us makes us stronger. -- Friedrich Nietzsche"""
+"""Compute the 2-D convex hull of a point set using the gift-wrapping."""
 
 from __future__ import annotations
 

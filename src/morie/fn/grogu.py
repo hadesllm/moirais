@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Grouped summary statistics. 'The Child' -- Grogu"""
+"""Compute mean, std, n for numeric columns by group."""
 
 from __future__ import annotations
 

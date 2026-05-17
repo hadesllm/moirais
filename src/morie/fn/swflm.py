@@ -1,4 +1,4 @@
-"""Confine yourself to the present. -- Marcus Aurelius"""
+"""Summary statistics for Star Wars film data."""
 
 from __future__ import annotations
 

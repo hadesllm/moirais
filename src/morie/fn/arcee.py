@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Arc length computation. 'Speed is my weapon.' -- Arcee"""
+"""Compute the arc length of a parametric curve via trapezoidal integration."""
 
 from __future__ import annotations
 

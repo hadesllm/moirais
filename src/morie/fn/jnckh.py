@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Jonckheere-Terpstra test. 'Rebellions are built on hope. -- Jyn Erso'"""
+"""Jonckheere-Terpstra test for ordered alternatives."""
 
 from __future__ import annotations
 

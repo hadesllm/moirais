@@ -1,4 +1,4 @@
-"""Shepard diagram data. 'Plus Ultra!' -- All Might, My Hero Academia"""
+"""Generate data for a Shepard diagram (observed vs fitted distances)."""
 
 from __future__ import annotations
 

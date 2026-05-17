@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Simulated annealing MDS. 'Muda muda muda!' -- DIO, JoJo's Bizarre Adventure"""
+"""Optimize MDS coordinates via simulated annealing."""
 
 from __future__ import annotations
 

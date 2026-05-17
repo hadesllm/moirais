@@ -1,4 +1,4 @@
-"""Xavier/Glorot weight initialization. 'By all means, marry. If you get a good wife, you'll become happy; if you get a bad one, you'll become a philosopher. -- Socrates' -- Various"""
+"""Generate Xavier/Glorot weight initialization matrix."""
 
 from __future__ import annotations
 

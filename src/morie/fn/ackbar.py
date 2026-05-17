@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Outlier detection. 'It's a trap!' -- Admiral Ackbar"""
+"""Detect outliers using IQR (default) or Z-score method."""
 
 from __future__ import annotations
 

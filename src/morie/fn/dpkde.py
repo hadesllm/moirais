@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""An unexamined life is not worth living. -- Socrates"""
+"""Dirichlet process mixture of Gaussians for kernel density estimation."""
 
 from __future__ import annotations
 

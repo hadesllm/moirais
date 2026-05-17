@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""That which does not kill us makes us stronger. -- Friedrich Nietzsche"""
+"""Solve a linear program via the revised simplex (Phase I / Phase II)."""
 
 from __future__ import annotations
 

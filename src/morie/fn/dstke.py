@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Hazard function estimation. 'I keep my promises.' -- Deathstroke"""
+"""Kernel-smoothed hazard rate estimation (Epanechnikov kernel)."""
 
 from __future__ import annotations
 

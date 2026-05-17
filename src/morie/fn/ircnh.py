@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Robust covariance (MCD). 'Ironhide reporting.' -- Ironhide"""
+"""Minimum Covariance Determinant (MCD) robust covariance estimator."""
 
 from __future__ import annotations
 

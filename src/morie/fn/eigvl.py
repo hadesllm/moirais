@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Extract sorted eigenvalues. 'Rasengan!' -- Naruto, Naruto"""
+"""Return eigenvalues of symmetric matrix B sorted descending."""
 
 from __future__ import annotations
 

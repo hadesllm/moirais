@@ -1,4 +1,4 @@
-"""Zero-crossing detection. 'Your focus determines your reality.' -- Qui-Gon Jinn"""
+"""Count and locate zero crossings in a signal."""
 
 from __future__ import annotations
 

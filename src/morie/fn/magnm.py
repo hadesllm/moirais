@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Biot-Savart magnetic field computation. 'You are all beneath me.' -- Magneto"""
+"""Compute the magnetic field at a point due to a current-carrying wire."""
 
 from __future__ import annotations
 

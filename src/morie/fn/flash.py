@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""A journey of a thousand miles begins with a single step. -- Lao Tzu"""
+"""Approximate nearest neighbor search via random projection trees."""
 
 from __future__ import annotations
 

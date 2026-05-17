@@ -1,4 +1,4 @@
-"""Star Wars dataset loader. 'It does not matter how slowly you go as long as you do not stop. -- Confucius'"""
+"""Load a bundled Star Wars demo dataset."""
 
 from __future__ import annotations
 

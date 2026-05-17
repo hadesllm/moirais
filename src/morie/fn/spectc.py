@@ -1,4 +1,4 @@
-"""Spectral clustering. 'Be with me.' -- Rey"""
+"""Spectral clustering via the normalised graph Laplacian."""
 
 from __future__ import annotations
 

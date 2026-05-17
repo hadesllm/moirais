@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Mutation rate estimation (Jukes-Cantor). 'Oh my stars and garters!' -- Beast"""
+"""Estimate pairwise evolutionary distances using the Jukes-Cantor model."""
 
 from __future__ import annotations
 

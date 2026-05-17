@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Isotonic regression. 'One Punch!' -- Saitama, One Punch Man"""
+"""Pool-adjacent-violators (PAV) isotonic regression."""
 
 from __future__ import annotations
 

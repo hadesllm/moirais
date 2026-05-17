@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Flesch-Kincaid readability grade level. 'Your focus determines your reality.' -- Qui-Gon Jinn"""
+"""Compute the Flesch-Kincaid Grade Level readability score."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Missing data imputation via chained equations. 'I'm the best there is at what I do.' -- Wolverine"""
+"""Impute missing data using Multiple Imputation by Chained Equations (MICE)."""
 
 from __future__ import annotations
 

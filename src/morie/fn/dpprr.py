@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Dirichlet process prior predictive distribution. 'Knowledge itself is power. -- Bacon'"""
+"""Sample from the Dirichlet process prior predictive distribution."""
 from __future__ import annotations
 
 import numpy as np

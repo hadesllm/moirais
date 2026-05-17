@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""MLSMU6 single ALS iteration. 'Territory.' -- Yusuke, Yu Yu Hakusho"""
+"""One alternating least-squares step for unfolding."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Statistics is the grammar of science. -- Karl Pearson"""
+"""Attach labels to MDS coordinate matrix."""
 
 from __future__ import annotations
 

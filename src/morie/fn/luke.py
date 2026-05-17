@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""What is now proved was once only imagined. -- William Blake"""
+"""Per-column summary: n, mean, std, min, q25, median, q75, max, missing, skew."""
 
 from __future__ import annotations
 

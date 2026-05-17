@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""General recidivism rate. 'There is always a bigger fish.' -- Qui-Gon Jinn"""
+"""Recidivism rate as a proportion with Wilson CI."""
 
 from __future__ import annotations
 

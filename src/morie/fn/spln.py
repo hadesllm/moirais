@@ -1,4 +1,4 @@
-"""Cubic spline regression. 'Knowledge itself is power. -- Bacon'"""
+"""Cubic spline interpolation/regression."""
 from __future__ import annotations
 
 import numpy as np

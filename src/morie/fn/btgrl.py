@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Bagplot for bivariate outliers. 'The night is darkest before the dawn.' -- Batgirl"""
+"""Bivariate outlier detection via half-space depth bagplot approximation."""
 
 from __future__ import annotations
 

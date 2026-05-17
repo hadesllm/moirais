@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""MLSMU6 convergence check. 'Jagan Eye.' -- Hiei, Yu Yu Hakusho"""
+"""Check convergence of MLSMU6 unfolding."""
 
 from __future__ import annotations
 

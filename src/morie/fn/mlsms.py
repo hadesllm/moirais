@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""MLSMU6 missing data imputation. 'Toguro Punch.' -- Toguro, Yu Yu Hakusho"""
+"""Impute missing values in unfolding distance matrix."""
 
 from __future__ import annotations
 

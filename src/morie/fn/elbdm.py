@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Elbow method for MDS dimensionality. 'Malevolent Shrine.' -- Sukuna, Jujutsu Kaisen"""
+"""Find optimal MDS dimensionality via elbow/knee detection."""
 
 from __future__ import annotations
 

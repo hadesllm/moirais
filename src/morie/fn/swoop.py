@@ -1,4 +1,4 @@
-"""Lift-drag polar. 'From above!' -- Swoop"""
+"""Compute aerodynamic lift-drag polar and performance metrics."""
 
 from __future__ import annotations
 

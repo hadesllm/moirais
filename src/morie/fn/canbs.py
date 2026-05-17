@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Canberra distance. 'Hope is like the sun.' -- Vice Admiral Holdo"""
+"""Compute the Canberra distance between two vectors."""
 
 from __future__ import annotations
 

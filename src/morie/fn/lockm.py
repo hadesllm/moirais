@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Cryptographic hash (SHA-256). 'Some doors are meant to stay closed.' -- Lock"""
+"""Compute SHA-256 hash of a message with optional iterated hashing."""
 
 from __future__ import annotations
 

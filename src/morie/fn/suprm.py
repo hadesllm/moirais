@@ -1,4 +1,4 @@
-"""That which does not kill us makes us stronger. -- Friedrich Nietzsche"""
+"""Kolmogorov-Smirnov one-sample supremum test."""
 
 from __future__ import annotations
 

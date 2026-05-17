@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Elastic net regression. 'Everything flows. -- Heraclitus'"""
+"""Soft-thresholding operator."""
 from __future__ import annotations
 
 import numpy as np

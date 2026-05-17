@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Shape analysis (morphometrics). 'Dude, I can turn into a T-Rex.' -- Beast Boy"""
+"""Ordinary Procrustes analysis: align shape Y to reference shape X."""
 
 from __future__ import annotations
 

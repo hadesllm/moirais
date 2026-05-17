@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Scree plot data for MDS dimensionality. 'Hollow Purple.' -- Gojo, Jujutsu Kaisen"""
+"""Compute stress values across dimensionalities for a scree plot."""
 
 from __future__ import annotations
 

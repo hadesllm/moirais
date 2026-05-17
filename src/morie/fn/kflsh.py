@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""It does not matter how slowly you go as long as you do not stop. -- Confucius"""
+"""Characterise the acceleration profile of a velocity time series."""
 
 from __future__ import annotations
 

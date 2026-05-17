@@ -1,4 +1,4 @@
-"""It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle"""
+"""Generate stick-breaking weights (Griffiths-Engen-McCloskey distribution)."""
 
 from __future__ import annotations
 

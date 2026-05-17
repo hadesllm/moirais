@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Gaussian KDE. 'Patience is bitter, but its fruit is sweet. -- Aristotle' -- General"""
+"""Gaussian kernel density estimation."""
 
 from __future__ import annotations
 

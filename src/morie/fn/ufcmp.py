@@ -1,4 +1,4 @@
-"""Compare unfolding methods. 'Kamehameha!' -- Goku, Dragon Ball Z"""
+"""Compare two unfolding results by stress and correlation."""
 
 from __future__ import annotations
 

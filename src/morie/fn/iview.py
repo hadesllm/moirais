@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Image viewer and info. 'The garbage'll do!' -- Rey"""
+"""Open an image in the system viewer."""
 
 from __future__ import annotations
 

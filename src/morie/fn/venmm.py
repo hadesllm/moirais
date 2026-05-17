@@ -1,4 +1,4 @@
-"""Co-occurrence matrix analysis. 'We are Venom.' -- Venom"""
+"""Compute a co-occurrence (symbiosis) matrix from binary or count data."""
 
 from __future__ import annotations
 

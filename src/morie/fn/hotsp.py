@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Repeat-address / hot-spot analysis. 'It's a trap!' -- Admiral Ackbar"""
+"""Identify hot-spot locations that meet a repeat-event threshold."""
 
 from __future__ import annotations
 

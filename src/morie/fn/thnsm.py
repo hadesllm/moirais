@@ -1,4 +1,4 @@
-"""Knowledge itself is power. -- Francis Bacon"""
+"""Estimate a statistic and its variance via repeated random half-sampling."""
 
 from __future__ import annotations
 

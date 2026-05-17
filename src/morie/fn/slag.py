@@ -1,4 +1,4 @@
-"""Newton's law of cooling. 'Hot stuff!' -- Slag"""
+"""Solve Newton's law of cooling: dT/dt = -k(T - T_ambient)."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Needleman-Wunsch global sequence alignment. 'He who fights with monsters should be careful lest he thereby become a monster. -- Friedrich Nietzsche' -- Chirrut Imwe"""
+"""Perform global pairwise alignment via Needleman-Wunsch."""
 
 from __future__ import annotations
 

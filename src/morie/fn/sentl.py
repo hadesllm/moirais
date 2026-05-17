@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""He who is brave is free. -- Seneca"""
+"""Compute precision, recall, F1, and average precision for detection."""
 
 from __future__ import annotations
 

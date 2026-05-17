@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Matrix decomposition (destructive rank reduction). 'Nothing goes over my head.' -- Drax"""
+"""Truncated SVD with rank estimation and reconstruction error."""
 
 from __future__ import annotations
 

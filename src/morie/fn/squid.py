@@ -1,4 +1,4 @@
-"""That which does not kill us makes us stronger. -- Friedrich Nietzsche"""
+"""Compute composite threat scores from multiple risk indicators."""
 
 from __future__ import annotations
 

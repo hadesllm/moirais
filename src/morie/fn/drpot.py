@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Dropout regularization. 'Big results require big ambitions. -- Heraclitus' -- Ahsoka Tano"""
+"""Apply inverted dropout regularization."""
 
 from __future__ import annotations
 

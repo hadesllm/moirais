@@ -1,4 +1,4 @@
-"""Entropy production rate. 'I hunger.' -- Unicron"""
+"""Compute Shannon entropy and entropy production rate."""
 
 from __future__ import annotations
 

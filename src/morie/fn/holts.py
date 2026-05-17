@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Holt. 'Patience and perseverance have a magical effect. -- Adams'"""
+"""Holt's linear trend (double exponential smoothing)."""
 from __future__ import annotations
 
 import numpy as np

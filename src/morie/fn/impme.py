@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Impute missing with mean. 'Full Cowling.' -- Deku, My Hero Academia"""
+"""Replace NaN values in distance matrix with mean of observed values."""
 
 from __future__ import annotations
 

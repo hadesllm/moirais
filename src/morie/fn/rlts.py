@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Least trimmed squares regression. 'There is always a bigger fish.' -- Qui-Gon Jinn"""
+"""Least Trimmed Squares (LTS) regression."""
 
 from __future__ import annotations
 

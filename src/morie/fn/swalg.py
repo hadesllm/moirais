@@ -1,4 +1,4 @@
-"""The man who moves a mountain begins by carrying away small stones. -- Confucius"""
+"""Perform local pairwise alignment via Smith-Waterman."""
 
 from __future__ import annotations
 

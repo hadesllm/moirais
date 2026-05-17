@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Enigma cipher / substitution cipher analysis. 'Riddle me this.' -- The Riddler"""
+"""Letter frequency analysis for substitution cipher detection."""
 
 from __future__ import annotations
 

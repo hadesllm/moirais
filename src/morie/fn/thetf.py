@@ -1,4 +1,4 @@
-"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
+"""Theta forecasting method (Assimakopoulos and Nikolopoulos, 2000)."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Out of chaos, comes order. -- Friedrich Nietzsche"""
+"""Inverse distance weighted (IDW) interpolation on a regular grid."""
 
 from __future__ import annotations
 

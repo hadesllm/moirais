@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""All models are wrong, but some are useful. -- George E. P. Box"""
+"""Hermite interpolation using both function values and derivatives."""
 
 from __future__ import annotations
 

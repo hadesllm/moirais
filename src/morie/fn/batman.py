@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"""
+"""Huber M-estimator of location via iteratively reweighted least squares."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""He who is brave is free. -- Seneca"""
+"""Analyse use of force types in SIU-investigated incidents."""
 
 from __future__ import annotations
 

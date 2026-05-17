@@ -1,4 +1,4 @@
-"""A journey of a thousand miles begins with a single step. -- Lao Tzu"""
+"""Truncated regression via maximum likelihood."""
 
 from __future__ import annotations
 

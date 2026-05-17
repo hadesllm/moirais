@@ -1,4 +1,4 @@
-"""Hope in reality is the worst of all evils because it prolongs the torments of man. -- Friedrich Nietzsche"""
+"""Compute required sample size for estimating a proportion."""
 
 from __future__ import annotations
 

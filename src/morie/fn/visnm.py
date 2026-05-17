@@ -1,4 +1,4 @@
-"""Spectral clustering variant. 'I was born yesterday.' -- Vision"""
+"""Spectral clustering using an RBF affinity kernel."""
 
 from __future__ import annotations
 

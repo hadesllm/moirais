@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Radial basis function interpolation. 'I've got a bad feeling about this.' -- Various"""
+"""Radial basis function interpolation."""
 
 from __future__ import annotations
 

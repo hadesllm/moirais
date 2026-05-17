@@ -1,4 +1,4 @@
-"""Mechanical resonance / Q-factor. 'Feel the vibration!' -- Snarl"""
+"""Compute resonance frequency and quality factor (Q-factor)."""
 
 from __future__ import annotations
 

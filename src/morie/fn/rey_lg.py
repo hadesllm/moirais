@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert"""
+"""Logistic regression via Iteratively Reweighted Least Squares (IRLS)."""
 
 from __future__ import annotations
 

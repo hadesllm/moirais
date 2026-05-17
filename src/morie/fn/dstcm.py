@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Distance comparison stats. 'Blackwhip.' -- Deku, My Hero Academia"""
+"""Compare observed and model distances: correlation and RMSE."""
 
 from __future__ import annotations
 

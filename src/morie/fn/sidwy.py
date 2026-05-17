@@ -1,4 +1,4 @@
-"""Adversarial perturbation (FGSM-style). 'Deception is an art.' -- Sideways"""
+"""Generate adversarial perturbation for a data point."""
 
 from __future__ import annotations
 

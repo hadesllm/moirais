@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Predicted choice from ideal points. 'Tri-Beam!' -- Tien, Dragon Ball Z"""
+"""Predict binary choice based on proximity of ideal point to yea/nay positions."""
 
 from __future__ import annotations
 

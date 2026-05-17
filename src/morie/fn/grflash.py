@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
+"""FlashAttention tiled softmax(QK^T)V via online normalization."""
 import numpy as np
 from ._richresult import RichResult
 

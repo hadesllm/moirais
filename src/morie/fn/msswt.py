@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Missing data weight matrix. '200% Power.' -- Deku, My Hero Academia"""
+"""Create weight matrix: 0 for NaN, 1 for observed."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Power law scaling. 'Me Grimlock strongest!' -- Grimlock"""
+"""Fit a power law y = a * x^b via log-linear regression."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Patience is bitter, but its fruit is sweet. -- Aristotle"""
+"""Fit a Dirichlet process mixture model using Gibbs sampling."""
 
 from __future__ import annotations
 

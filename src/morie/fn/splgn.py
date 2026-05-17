@@ -1,4 +1,4 @@
-"""We suffer more often in imagination than in reality. -- Seneca"""
+"""Compute NASA Task Load Index (NASA-TLX) score."""
 
 from __future__ import annotations
 

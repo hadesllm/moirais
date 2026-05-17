@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Patience is bitter, but its fruit is sweet. -- Aristotle"""
+"""Assess MDS stress across different missing data percentages."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Naive Bayes text classifier. 'We are what we repeatedly do. Excellence is not an act, but a habit. -- Aristotle'"""
+"""Classify documents using Multinomial Naive Bayes on TF-IDF features."""
 
 from __future__ import annotations
 

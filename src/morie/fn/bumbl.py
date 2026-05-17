@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Without music, life would be a mistake. -- Friedrich Nietzsche"""
+"""Compute the spectral centroid of a signal."""
 
 from __future__ import annotations
 

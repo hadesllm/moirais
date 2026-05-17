@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Deviance Information Criterion. 'Powerful you have become. -- Dooku'"""
+"""Deviance Information Criterion (Spiegelhalter et al., 2002)."""
 
 from __future__ import annotations
 

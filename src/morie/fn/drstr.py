@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Parallel universes bootstrap. 'I went forward in time to view alternate futures.' -- Dr. Strange"""
+"""Run parallel-universes bootstrap: generate many independent bootstrap."""
 
 from __future__ import annotations
 

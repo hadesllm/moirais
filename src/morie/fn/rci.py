@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Jacobson-Truax Reliable Change Index. 'Hope is like the sun.' -- Poe Dameron"""
+"""Jacobson-Truax Reliable Change Index (RCI)."""
 
 from __future__ import annotations
 

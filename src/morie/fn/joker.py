@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""You have power over your mind -- not outside events. -- Marcus Aurelius"""
+"""Two-sample permutation test for equality of distributions."""
 
 from __future__ import annotations
 

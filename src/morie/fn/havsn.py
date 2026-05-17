@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Haversine great-circle distance. 'Knowing yourself is true wisdom. -- Lao Tzu'"""
+"""Compute great-circle distance using the Haversine formula."""
 from __future__ import annotations
 
 import numpy as np

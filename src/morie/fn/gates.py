@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""The man who moves a mountain begins by carrying away small stones. -- Confucius"""
+"""Simulate a logic gate over an array of binary inputs."""
 
 from __future__ import annotations
 

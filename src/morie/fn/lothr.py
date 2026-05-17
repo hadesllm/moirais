@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Template matching (NCC). 'All our lives we fought this war.' -- Logos crew"""
+"""Find a template pattern within a signal via cross-correlation."""
 
 from __future__ import annotations
 

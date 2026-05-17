@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""CJS flow / attrition calculation. 'Real knowledge is to know the extent of one's ignorance. -- Confucius'"""
+"""Criminal justice system flow and attrition rates."""
 from __future__ import annotations
 
 from ._containers import DescriptiveResult

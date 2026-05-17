@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Chebyshev (L-infinity) distance. 'Luck is what happens when preparation meets opportunity. -- Seneca' -- Ahsoka Tano"""
+"""Compute the Chebyshev distance (L-infinity norm) between two vectors."""
 
 from __future__ import annotations
 

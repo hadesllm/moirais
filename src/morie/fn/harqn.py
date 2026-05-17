@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Out of chaos, comes order. -- Friedrich Nietzsche"""
+"""Harrell's C concordance index for survival predictions."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""A journey of a thousand miles begins with a single step. -- Lao Tzu"""
+"""Compute ReLU or Leaky ReLU activation function."""
 
 from __future__ import annotations
 

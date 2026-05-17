@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""MM-estimator for robust regression. 'So this is how liberty dies.' -- Padme Amidala"""
+"""MM-estimator for robust regression."""
 
 from __future__ import annotations
 

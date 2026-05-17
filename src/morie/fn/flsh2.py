@@ -1,4 +1,4 @@
-"""Real knowledge is to know the extent of one's ignorance. -- Confucius"""
+"""FlashAttention IO-aware exact attention."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult

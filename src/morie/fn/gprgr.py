@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Gaussian process regression with SE kernel. 'Rebellions are built on hope.' -- Jyn"""
+"""Gaussian process regression with squared-exponential (RBF) kernel."""
 
 from __future__ import annotations
 

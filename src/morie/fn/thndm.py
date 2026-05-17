@@ -1,4 +1,4 @@
-"""Shock wave Mach number. 'Feel the thunder!' -- Thundercracker"""
+"""Compute shock wave properties from Mach number."""
 
 from __future__ import annotations
 

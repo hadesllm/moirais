@@ -1,4 +1,4 @@
-"""Patience is bitter, but its fruit is sweet. -- Aristotle"""
+"""Compute word frequencies suitable for word cloud visualization."""
 
 from __future__ import annotations
 

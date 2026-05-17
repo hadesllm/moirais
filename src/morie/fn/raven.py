@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Raven's progressive matrices scoring. 'Azarath Metrion Zinthos!' -- Raven"""
+"""Score a Raven's Progressive Matrices-style test."""
 
 from __future__ import annotations
 

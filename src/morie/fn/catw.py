@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Catenary curve fitting. 'Meow.' -- Catwoman"""
+"""Fit a catenary curve y = a*cosh((x - x0)/a) + y0 - a to bivariate data."""
 
 from __future__ import annotations
 

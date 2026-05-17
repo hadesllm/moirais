@@ -1,4 +1,4 @@
-"""Stellar luminosity function. 'I am not from your planet.' -- Starfire"""
+"""Compute the luminosity function (number density per magnitude bin)."""
 
 from __future__ import annotations
 

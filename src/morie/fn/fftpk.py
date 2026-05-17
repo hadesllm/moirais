@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""It does not matter how slowly you go as long as you do not stop. -- Confucius"""
+"""Identify dominant frequency peaks in a signal using the FFT."""
 
 from __future__ import annotations
 

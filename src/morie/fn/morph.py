@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""The whole is greater than the sum of its parts. -- Aristotle"""
+"""t-SNE dimensionality reduction using gradient descent."""
 
 from __future__ import annotations
 

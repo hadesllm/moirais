@@ -1,4 +1,4 @@
-"""Mastering others is strength; mastering yourself is true power. -- Lao Tzu"""
+"""Parse all ``<table>`` elements from HTML into DataFrames."""
 
 from __future__ import annotations
 

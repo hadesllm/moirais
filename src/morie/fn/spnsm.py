@@ -1,4 +1,4 @@
-"""Smoothing spline. 'The belonging you seek is ahead of you.' -- Maz Kanata"""
+"""Fit a smoothing spline to *(x, y)* data."""
 
 from __future__ import annotations
 

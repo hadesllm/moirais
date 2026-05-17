@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Data cleaning / denoising pipeline. 'I can fix that!' -- Ratchet"""
+"""Apply a repair pipeline: outlier clipping, missing fill, optional smoothing."""
 
 from __future__ import annotations
 

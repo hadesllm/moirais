@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Disparity index. 'Your focus determines your reality.' -- Qui-Gon Jinn"""
+"""Disparity index: ratio of two group rates."""
 
 from __future__ import annotations
 

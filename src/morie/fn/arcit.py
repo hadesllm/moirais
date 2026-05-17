@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""System of equations solver (Gauss-Seidel). 'I have been waiting for you.' -- The Architect"""
+"""Solve Ax = b via Gauss-Seidel iterative method."""
 
 from __future__ import annotations
 

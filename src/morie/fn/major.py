@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""SMACOF majorize step (Guttman transform). 'Shine, Kakyoin!' -- DIO, JoJo's Bizarre Adventure"""
+"""Single SMACOF iteration (Guttman transform)."""
 
 from __future__ import annotations
 

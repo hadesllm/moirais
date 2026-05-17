@@ -1,4 +1,4 @@
-"""A journey of a thousand miles begins with a single step. -- Lao Tzu"""
+"""Non-parametric bootstrap resampling with percentile CI."""
 
 from __future__ import annotations
 

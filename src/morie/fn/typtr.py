@@ -1,4 +1,4 @@
-"""You have power over your mind -- not outside events. -- Marcus Aurelius"""
+"""Compute the Type-Token Ratio (TTR) as a measure of lexical diversity."""
 
 from __future__ import annotations
 

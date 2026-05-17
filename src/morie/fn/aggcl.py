@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Agglomerative hierarchical clustering. 'Let the past die.' -- Kylo Ren"""
+"""Agglomerative (bottom-up) hierarchical clustering."""
 
 from __future__ import annotations
 

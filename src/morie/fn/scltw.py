@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Probability manipulation via resampling. 'No more.' -- Scarlet Witch"""
+"""Estimate a target quantile via bootstrap resampling with BCa correction."""
 
 from __future__ import annotations
 

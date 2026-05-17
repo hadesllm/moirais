@@ -1,4 +1,4 @@
-"""Unfolding stress diagnostic. 'Shotgun!' -- Yusuke, Yu Yu Hakusho"""
+"""Compute unfolding stress between ideal points and stimuli."""
 
 from __future__ import annotations
 

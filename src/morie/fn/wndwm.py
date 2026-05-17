@@ -1,4 +1,4 @@
-"""The happiness of your life depends upon the quality of your thoughts. -- Marcus Aurelius"""
+"""Generate a spectral window function of length *n*."""
 
 from __future__ import annotations
 

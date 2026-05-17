@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""He who would learn to fly one day must first learn to stand and walk. -- Friedrich Nietzsche"""
+"""LDL^T decomposition for symmetric matrices."""
 
 from __future__ import annotations
 

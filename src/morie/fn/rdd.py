@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Regression discontinuity design. 'There has been an awakening.' -- Snoke"""
+"""Sharp RDD: local linear regression around the cutoff."""
 
 from __future__ import annotations
 

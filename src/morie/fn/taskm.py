@@ -1,4 +1,4 @@
-"""Dynamic time warping pattern matching. 'I can do anything you can do.' -- Taskmaster"""
+"""Compute the dynamic time warping (DTW) distance and alignment path."""
 
 from __future__ import annotations
 

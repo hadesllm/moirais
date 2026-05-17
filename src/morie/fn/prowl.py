@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Anomaly detection (isolation-forest style). 'Logic is the ultimate weapon.' -- Prowl"""
+"""Isolation-forest-style anomaly scoring."""
 
 from __future__ import annotations
 

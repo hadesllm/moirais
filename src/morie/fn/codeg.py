@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""An unexamined life is not worth living. -- Socrates"""
+"""Generate a Wigner random matrix and verify the semicircle law."""
 
 from __future__ import annotations
 

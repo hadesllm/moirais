@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Floyd-Warshall all-pairs shortest paths. 'I have spoken.' -- Kuiil"""
+"""Floyd-Warshall algorithm for all-pairs shortest paths."""
 
 from __future__ import annotations
 

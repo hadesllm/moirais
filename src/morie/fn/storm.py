@@ -1,4 +1,4 @@
-"""Markov chain weather model. 'Do you know what happens to a toad when it is struck by lightning?' -- Storm"""
+"""Fit a first-order Markov chain and forecast future states."""
 
 from __future__ import annotations
 

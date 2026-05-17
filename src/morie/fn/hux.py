@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""The only true wisdom is in knowing you know nothing. -- Socrates"""
+"""Huber M-estimator: robust to outliers via Huber loss."""
 
 from __future__ import annotations
 

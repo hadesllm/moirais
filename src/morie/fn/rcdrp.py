@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Drop influential votes. 'Hellzone Grenade!' -- Piccolo, Dragon Ball Z"""
+"""Filter out votes where a single option exceeds threshold agreement."""
 
 from __future__ import annotations
 

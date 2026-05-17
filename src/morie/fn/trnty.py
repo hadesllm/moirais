@@ -1,4 +1,4 @@
-"""The whole is greater than the sum of its parts. -- Aristotle"""
+"""Compute CVSS v3.1 base score from metric values."""
 
 from __future__ import annotations
 

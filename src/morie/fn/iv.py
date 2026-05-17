@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Instrumental variables (2SLS). 'Real knowledge is to know the extent of one's ignorance. -- Confucius'"""
+"""Two-stage least squares (2SLS) IV estimation."""
 from __future__ import annotations
 
 import numpy as np

@@ -1,4 +1,4 @@
-"""Ensemble model aggregation. 'I am Ultra Magnus, and I will lead.' -- Ultra Magnus"""
+"""Aggregate predictions from multiple models."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""The man who moves a mountain begins by carrying away small stones. -- Confucius"""
+"""Compute Term Frequency-Inverse Document Frequency matrix."""
 
 from __future__ import annotations
 

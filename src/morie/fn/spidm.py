@@ -1,4 +1,4 @@
-"""He who is brave is free. -- Seneca"""
+"""Detect communities in a graph using spectral partitioning on the."""
 
 from __future__ import annotations
 

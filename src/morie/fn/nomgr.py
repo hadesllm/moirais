@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Fagan nomogram (post-test probability). 'There is always a bigger fish.' -- Qui-Gon Jinn"""
+"""Compute post-test probability using Fagan's nomogram (Bayes' theorem)."""
 
 from __future__ import annotations
 

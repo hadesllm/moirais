@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Ensemble stacking. 'Devastator, merge!' -- Scrapper"""
+"""Stacked generalization (Wolpert, 1992) ensemble."""
 
 from __future__ import annotations
 

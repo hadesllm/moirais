@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Mastering others is strength; mastering yourself is true power. -- Lao Tzu"""
+"""Compute a Keplerian orbit in 2D Cartesian coordinates."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Whittaker smoother. 'Character is destiny. -- Heraclitus' -- General usage"""
+"""Whittaker smoother (penalised least squares)."""
 
 from __future__ import annotations
 

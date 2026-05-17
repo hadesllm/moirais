@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Mardia multivariate normality test. 'All models are wrong, but some are useful. -- George E. P. Box'"""
+"""Mardia's test for multivariate normality."""
 
 from __future__ import annotations
 

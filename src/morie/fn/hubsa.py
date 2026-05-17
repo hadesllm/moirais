@@ -1,4 +1,4 @@
-"""Confine yourself to the present. -- Marcus Aurelius"""
+"""HITS hubs + authorities scores."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult

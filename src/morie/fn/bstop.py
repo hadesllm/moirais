@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Binary search tree operations. 'The belonging you seek is ahead.' -- Maz Kanata"""
+"""Build a BST from values and perform in-order traversal and search."""
 
 from __future__ import annotations
 

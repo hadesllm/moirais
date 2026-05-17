@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""It is the mark of an educated mind to entertain a thought without accepting it. -- Aristotle"""
+"""Naive baseline predictor for benchmarking ML models."""
 
 from __future__ import annotations
 

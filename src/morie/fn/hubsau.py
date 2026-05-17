@@ -1,4 +1,4 @@
-"""The only true wisdom is in knowing you know nothing. -- Socrates"""
+"""HITS hub + authority scores."""
 import numpy as np
 from scipy import stats
 from ._richresult import RichResult

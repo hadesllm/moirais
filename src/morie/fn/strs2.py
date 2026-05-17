@@ -1,4 +1,4 @@
-"""Stress-2 measure. 'United States of Smash!' -- All Might, My Hero Academia"""
+"""Stress-2: sqrt(sum((d_obs - d_model)^2) / sum((d_obs - d_obs_mean)^2))."""
 
 from __future__ import annotations
 

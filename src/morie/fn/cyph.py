@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Difficulties strengthen the mind, as labor does the body. -- Seneca"""
+"""Detect potential data leakage by identifying features with."""
 
 from __future__ import annotations
 

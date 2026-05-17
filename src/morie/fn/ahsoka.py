@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Two-way ANOVA. 'Knowing others is intelligence; knowing yourself is true wisdom. -- Lao Tzu' -- Ahsoka Tano"""
+"""Two-way ANOVA using sum-of-squares decomposition (Type I)."""
 
 from __future__ import annotations
 

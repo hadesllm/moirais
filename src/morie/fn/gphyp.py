@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""GP hyperparameter optimization via marginal likelihood. 'You were the chosen one.' -- ObiWan"""
+"""Compute negative marginal likelihood for GP hyperparameter optimization."""
 
 from __future__ import annotations
 

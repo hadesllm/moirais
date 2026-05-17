@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""GP kernel functions: SE, Matern, RQ, periodic. 'These are the droids.' -- ObiWan"""
+"""Squared-exponential (RBF) kernel."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Voronoi tessellation areas. 'I have spoken.' -- Kuiil"""
+"""Compute Voronoi tessellation and region areas."""
 
 from __future__ import annotations
 

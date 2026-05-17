@@ -1,7 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Lexicographic rank aggregation.
-
-'Some people can read War and Peace and come away thinking it is a simple adventure story.' -- Lex Luthor"""
+"""Lexicographic rank aggregation from multiple ranked lists."""
 
 from __future__ import annotations
 

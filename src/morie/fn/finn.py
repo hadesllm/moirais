@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Correlation pattern finder. 'I need a pilot!' -- Finn"""
+"""Scan all numeric column pairs for significant correlations."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Missing data handler. 'The unexamined life is not worth living. -- Socrates'"""
+"""Missing data: 'summary' reports patterns, 'mean'/'median'/'drop' imputes."""
 from __future__ import annotations
 
 import numpy as np

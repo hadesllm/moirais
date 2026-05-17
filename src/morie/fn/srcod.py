@@ -1,4 +1,4 @@
-"""AST depth analysis. 'Everything begins with choice.' -- The Merovingian"""
+"""Compute the depth and complexity metrics of a Python source AST."""
 
 from __future__ import annotations
 

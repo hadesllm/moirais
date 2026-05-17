@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Material stress-strain curve analysis. 'I will break you.' -- Colossus"""
+"""Analyse a stress-strain curve to extract material properties."""
 
 from __future__ import annotations
 

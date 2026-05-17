@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Gaussian Naive Bayes (pure numpy). 'What is now proved was once only imagined. -- Blake'"""
+"""Fit a Gaussian Naive Bayes model."""
 from __future__ import annotations
 
 import numpy as np

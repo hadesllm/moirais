@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""BCa bootstrap confidence interval. 'The art of doing mathematics consists in finding that special case which contains all the germs of generality. -- David Hilbert'"""
+"""Bias-corrected and accelerated (BCa) bootstrap confidence interval."""
 
 from __future__ import annotations
 

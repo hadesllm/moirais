@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Look well into thyself; there is a source which will always spring up. -- Marcus Aurelius"""
+"""Compute GDP growth rates and trend statistics."""
 
 from __future__ import annotations
 

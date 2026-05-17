@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Lasso regression (L1). 'Your focus determines your reality.' -- Qui-Gon Jinn"""
+"""Soft-thresholding operator for L1 penalty."""
 
 from __future__ import annotations
 

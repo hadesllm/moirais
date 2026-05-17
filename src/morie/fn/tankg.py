@@ -1,4 +1,4 @@
-"""He who has a why to live can bear almost any how. -- Friedrich Nietzsche"""
+"""Train a single-hidden-layer neural network (binary classification)."""
 
 from __future__ import annotations
 

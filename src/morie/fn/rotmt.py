@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""2D rotation matrix. 'Dismantle.' -- Sukuna, Jujutsu Kaisen"""
+"""Construct a 2x2 rotation matrix for angle theta (radians)."""
 
 from __future__ import annotations
 

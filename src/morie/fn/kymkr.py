@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Information gain / mutual information. 'One door, one key.' -- The Keymaker"""
+"""Compute mutual information / information gain between a feature and target."""
 
 from __future__ import annotations
 

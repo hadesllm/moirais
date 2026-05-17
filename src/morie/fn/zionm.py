@@ -1,4 +1,4 @@
-"""Real knowledge is to know the extent of one's ignorance. -- Confucius"""
+"""Allocate defense resources across threats proportional to risk."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Canonical correlation analysis. 'No man ever steps in the same river twice. -- Heraclitus'"""
+"""Canonical Correlation Analysis (CCA)."""
 
 from __future__ import annotations
 

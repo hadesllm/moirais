@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Propensity score overlap check. 'Knowing yourself is the beginning of all wisdom. -- Aristotle'"""
+"""Check overlap (positivity) of propensity score distributions."""
 
 from __future__ import annotations
 

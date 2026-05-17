@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Distance from agreement. 'Special Beam Cannon!' -- Piccolo, Dragon Ball Z"""
+"""Convert agreement matrix to distance matrix: D = 1 - agreement."""
 
 from __future__ import annotations
 

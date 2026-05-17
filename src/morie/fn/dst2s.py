@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Distance to squared element-wise. 'Believe it!' -- Naruto, Naruto"""
+"""Square each element of distance matrix D."""
 
 from __future__ import annotations
 

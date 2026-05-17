@@ -1,4 +1,4 @@
-"""Brain connectivity via partial correlation matrix. 'To me, my X-Men.' -- Professor X"""
+"""Compute the partial correlation matrix (brain connectivity proxy)."""
 
 from __future__ import annotations
 

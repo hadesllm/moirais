@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""When I let go of what I am, I become what I might be. -- Lao Tzu"""
+"""Dijkstra's algorithm for single-source shortest paths."""
 
 from __future__ import annotations
 

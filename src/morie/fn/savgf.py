@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Savitzky-Golay filter. 'He who fights with monsters should be careful lest he thereby become a monster. -- Friedrich Nietzsche'"""
+"""Apply a Savitzky-Golay smoothing filter."""
 
 from __future__ import annotations
 

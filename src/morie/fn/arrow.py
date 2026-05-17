@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Arrow plot / directed graph layout. 'You have failed this city!' -- Green Arrow"""
+"""Compute 2-D layout positions for a directed graph via force-directed placement."""
 
 from __future__ import annotations
 

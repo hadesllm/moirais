@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Truth comes out of error more readily than out of confusion. -- Francis Bacon"""
+"""Compute circular (directional) mean and concentration parameter."""
 
 from __future__ import annotations
 

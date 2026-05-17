@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Brownian motion simulation. 'I have survived your predecessors.' -- The Merovingian"""
+"""Simulate geometric or arithmetic Brownian motion paths."""
 
 from __future__ import annotations
 

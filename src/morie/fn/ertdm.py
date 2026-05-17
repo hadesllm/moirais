@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Earth mover's (Wasserstein) distance. 'This is the way.' -- The Mandalorian"""
+"""Compute the Earth Mover's Distance (1-Wasserstein) between two."""
 
 from __future__ import annotations
 

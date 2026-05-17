@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""You have power over your mind -- not outside events. -- Marcus Aurelius"""
+"""Compute a matrix function f(A) via eigendecomposition."""
 
 from __future__ import annotations
 

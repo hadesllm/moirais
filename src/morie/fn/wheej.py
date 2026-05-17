@@ -1,4 +1,4 @@
-"""Feature engineering (polynomial expansion). 'I have an idea!' -- Wheeljack"""
+"""Generate polynomial and interaction features."""
 
 from __future__ import annotations
 

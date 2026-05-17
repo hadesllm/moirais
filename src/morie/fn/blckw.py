@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""SNR degradation model. 'All communications jammed.' -- Blackout"""
+"""Model signal-to-noise ratio degradation by adding calibrated noise."""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Web page fetch + text extraction. 'Patience is bitter, but its fruit is sweet. -- Aristotle'"""
+"""Fetch a web page and return raw HTML."""
 from __future__ import annotations
 
 import urllib.request

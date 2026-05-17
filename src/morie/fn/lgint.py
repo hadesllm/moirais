@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
+"""Lagrange polynomial interpolation."""
 
 from __future__ import annotations
 

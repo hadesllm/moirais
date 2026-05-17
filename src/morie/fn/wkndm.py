@@ -1,4 +1,4 @@
-"""Waste no more time arguing what a good person should be. Be one. -- Marcus Aurelius"""
+"""Identify the Pareto-optimal front from a set of multi-objective."""
 
 from __future__ import annotations
 

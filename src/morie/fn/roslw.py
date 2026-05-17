@@ -1,5 +1,5 @@
 # morie.fn -- function file (hadesllm/morie)
-"""Wind rose / rose plot construction. 'I make my own choices.' -- Rose Wilson"""
+"""Construct wind rose data (frequency by direction and speed class)."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""When I let go of what I am, I become what I might be. -- Lao Tzu"""
+"""Model signal attenuation through a second-order damped system."""
 
 from __future__ import annotations
 

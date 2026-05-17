@@ -1,5 +1,5 @@
 # morie.fn -- function file from book-equation translation pipeline (hadesllm/morie)
-"""Boolean expression evaluator. 'Knowledge itself is power. -- Bacon'"""
+"""Evaluate a boolean expression given variable assignments."""
 from __future__ import annotations
 
 from ._containers import DescriptiveResult

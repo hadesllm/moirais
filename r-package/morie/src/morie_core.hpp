@@ -22,6 +22,7 @@
 #include <cmath>
 #include <cstddef>
 #include <random>
+#include <vector>
 
 namespace morie::core {
 
@@ -572,6 +573,54 @@ inline double hawkes_ll_weibull_const_trunc(const double *t, std::size_t n,
             integral += eta * (1.0 - std::exp(-std::pow(x, alpha)));
         }
     }
+    return -(log_sum - integral);
+}
+
+// --- sum-of-exponentials (SoE) Hawkes likelihood (task #73) ------------------
+//
+// Hawkes negative log-likelihood with a sum-of-exponentials triggering
+// kernel:  g(u) = sum_m  w[m] * exp(-beta[m] * u).
+//
+// Each exponential component is memoryless, so it carries its own O(n)
+// recursion  A_m,i = exp(-beta_m * dt) * (1 + A_m,{i-1}).  Running M
+// such recursions in parallel evaluates the likelihood in O(M*n) --
+// the sub-quadratic engine for any kernel (Weibull / gamma / Lomax)
+// once it has been fitted to an SoE form.
+//
+// With M = 1 and w = beta = {b} this reduces exactly (to rounding) to
+// the exponential-kernel likelihood hawkes_ll_exp_const.
+inline double hawkes_ll_soe(const double *t, std::size_t n, double T,
+                            double nu, double eta, const double *w,
+                            const double *beta, std::size_t M) {
+    if (!(nu > 0.0) || !std::isfinite(nu)) return kBig;
+
+    std::vector<double> A(M, 0.0);  // one recursion state per component
+    double log_sum = 0.0;
+    for (std::size_t i = 0; i < n; ++i) {
+        double excite = 0.0;
+        if (i > 0) {
+            const double dt = t[i] - t[i - 1];
+            for (std::size_t m = 0; m < M; ++m) {
+                A[m] = std::exp(-beta[m] * dt) * (1.0 + A[m]);
+                excite += w[m] * A[m];
+            }
+        }
+        const double lam_i = nu + eta * excite;
+        if (!std::isfinite(lam_i) || lam_i <= 0.0) return kBig;
+        log_sum += std::log(lam_i);
+    }
+
+    // compensator: integral of g over [0, T-t_i] is, per component,
+    // (w_m / beta_m) * (1 - exp(-beta_m * (T - t_i))).
+    double integral = nu * T;
+    for (std::size_t i = 0; i < n; ++i) {
+        const double u = T - t[i];
+        for (std::size_t m = 0; m < M; ++m) {
+            integral += eta * (w[m] / beta[m]) *
+                        (1.0 - std::exp(-beta[m] * u));
+        }
+    }
+    if (!std::isfinite(log_sum) || !std::isfinite(integral)) return kBig;
     return -(log_sum - integral);
 }
 

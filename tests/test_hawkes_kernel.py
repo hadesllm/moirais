@@ -251,3 +251,51 @@ def test_neg_loglik_jit_routes_lomax_sin_through_core():
     ref = float(_ll_lomax_sin(t, T, -1.0, 0.2, 0.3, -0.1, 0.4, 2.0, 1.0,
                               grid, grid_vals))
     assert np.isclose(got, ref, rtol=1e-9, atol=1e-6)
+
+
+# --- sum-of-exponentials (SoE) engine, task #73 -----------------------
+
+def _soe_ll_reference(t, T, nu, eta, w, beta):
+    """Brute-force O(n^2) reference for the SoE Hawkes likelihood:
+    g(u) = sum_m w[m]*exp(-beta[m]*u)."""
+    import math
+    w = np.asarray(w, dtype=float)
+    beta = np.asarray(beta, dtype=float)
+    n = len(t)
+    log_sum = 0.0
+    for i in range(n):
+        s = 0.0
+        for j in range(i):
+            s += float(np.sum(w * np.exp(-beta * (t[i] - t[j]))))
+        log_sum += math.log(nu + eta * s)
+    integral = nu * T
+    for i in range(n):
+        u = T - t[i]
+        integral += eta * float(np.sum((w / beta) * (1.0 - np.exp(-beta * u))))
+    return -(log_sum - integral)
+
+
+def test_hawkes_ll_soe_reduces_to_exponential():
+    # SoE with M=1, w=[beta], beta=[beta] is exactly the exp kernel
+    import math
+    t = _event_times(300, rate=2.0, seed=51)
+    T = float(t[-1]) + 1.0
+    a0, eta, beta = -1.0, 0.4, 1.5
+    soe = core.hawkes_ll_soe(t, T, math.exp(a0), eta,
+                             np.array([beta]), np.array([beta]))
+    ref = float(_ll_exp_const(t, T, a0, eta, beta))
+    assert np.isclose(soe, ref, rtol=1e-9, atol=1e-6)
+
+
+@pytest.mark.parametrize("seed", [3, 9])
+def test_hawkes_ll_soe_matches_bruteforce(seed):
+    # the O(M*n) recursion must match the O(n^2) definition
+    rng = np.random.RandomState(seed)
+    t = _event_times(150, rate=2.0, seed=seed)
+    T = float(t[-1]) + 1.0
+    w = rng.uniform(0.05, 0.5, size=3)
+    beta = rng.uniform(0.5, 5.0, size=3)
+    nu, eta = 0.4, 0.3
+    got = core.hawkes_ll_soe(t, T, nu, eta, w, beta)
+    ref = _soe_ll_reference(t, T, nu, eta, w, beta)
+    assert np.isclose(got, ref, rtol=1e-8, atol=1e-6)

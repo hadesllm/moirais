@@ -87,6 +87,12 @@ double hawkes_ll_custom(Vec t, double T, double nu, double eta,
                                          g, G);
 }
 
+double hawkes_ll_soe(Vec t, double T, double nu, double eta, Vec w,
+                     Vec beta) {
+    return morie::core::hawkes_ll_soe(t.data(), t.shape(0), T, nu, eta,
+                                      w.data(), beta.data(), w.shape(0));
+}
+
 }  // namespace
 
 void register_hawkes(nb::module_ &m) {
@@ -138,4 +144,9 @@ void register_hawkes(nb::module_ &m) {
           "kernel. g_addr / G_addr are native function-pointer addresses "
           "(from numba @cfunc) for the kernel g(dt) and its integral "
           "G(u) = integral_0^u g.");
+    m.def("hawkes_ll_soe", &hawkes_ll_soe, "t"_a, "T"_a, "nu"_a, "eta"_a,
+          "w"_a, "beta"_a,
+          "Hawkes negative log-likelihood with a sum-of-exponentials "
+          "triggering kernel g(u) = sum_m w[m]*exp(-beta[m]*u). O(M*n) "
+          "via M parallel exponential recursions.");
 }

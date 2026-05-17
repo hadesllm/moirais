@@ -788,3 +788,60 @@ def _soe_fit_matrix_pencil(y, dt, *, order=None, rank_tol=1.0e-9):
     with np.errstate(divide="ignore", invalid="ignore"):
         beta = -np.log(z) / dt
     return beta, residue
+
+
+def soe_fit_gamma_tail(alpha, beta, u_split, *, span=20.0, n_samples=240):
+    """Matrix-pencil SoE fit of the gamma kernel's tail, for u >= u_split.
+
+    The gamma triggering kernel
+    ``g(u) = (beta**alpha / Gamma(alpha)) * u**(alpha-1) * exp(-beta*u)``
+    is not completely monotone for shape ``alpha > 1``, so it has no
+    Bernstein quadrature; the tail is fitted empirically instead. The
+    kernel is sampled uniformly on ``[u_split, u_split + span/beta]``
+    and the matrix pencil (``_soe_fit_matrix_pencil``) recovers the
+    exponential modes.
+
+    The fit is returned in the SHIFTED convention -- the modes describe
+    ``g(u_split + s) = sum_m w[m] * exp(-beta_soe[m] * s)`` for ``s >=
+    0`` -- which the hybrid engine's graduation recursion consumes
+    directly, with no ``exp(beta*u_split)`` rescaling, so the weights
+    stay well scaled.
+
+    Modes are complex: real poles plus, for ``alpha`` above ~2.5,
+    complex-conjugate pairs (an accurate damped-oscillatory mode, not
+    an artefact -- see hawkes_ll_soe_cplx). Every ``Re(beta_soe)`` must
+    be > 0 (decaying); a non-decaying mode raises ValueError.
+
+    Returns ``(w, beta_soe, max_rel_err)`` -- complex128 arrays plus the
+    measured relative error of the SoE against the exact tail.
+    """
+    import math
+
+    if alpha <= 0.0 or beta <= 0.0:
+        raise ValueError("gamma kernel requires alpha > 0 and beta > 0")
+    if u_split <= 0.0:
+        raise ValueError("u_split must be positive")
+
+    u = np.linspace(u_split, u_split + span / beta, n_samples)
+    dt = u[1] - u[0]
+    log_const = alpha * math.log(beta) - math.lgamma(alpha)
+    g = np.exp(log_const + (alpha - 1.0) * np.log(u) - beta * u)
+
+    # rank_tol 1e-13 (vs the fitter's conservative 1e-9 default) keeps
+    # more singular values -> ~12 modes -> tail relative error ~1e-6;
+    # the gamma tail's slowly-varying u**(alpha-1) factor needs them.
+    scale = g[0]
+    pole_beta, pole_res = _soe_fit_matrix_pencil(
+        g / scale, dt, rank_tol=1.0e-13)
+    w = pole_res * scale
+
+    if np.any(pole_beta.real <= 0.0):
+        raise ValueError("matrix-pencil fit produced a non-decaying mode")
+
+    s = u - u_split
+    g_soe = (w[None, :] * np.exp(-pole_beta[None, :] * s[:, None])
+             ).sum(axis=1).real
+    err = float(np.max(np.abs(g_soe - g) / g))
+    return (np.ascontiguousarray(w, dtype=np.complex128),
+            np.ascontiguousarray(pole_beta, dtype=np.complex128),
+            err)

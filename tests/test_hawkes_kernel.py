@@ -439,3 +439,18 @@ def test_hawkes_ll_soe_cplx_conjugate_pair_matches_bruteforce():
     got = core.hawkes_ll_soe_cplx(t, T, nu, eta, w, beta)
     ref = _soe_ll_reference_cplx(t, T, nu, eta, w, beta)
     assert np.isclose(got, ref, rtol=1e-8, atol=1e-6)
+
+
+@pytest.mark.parametrize("alpha,beta", [
+    (1.5, 1.0), (2.5, 1.0), (4.0, 2.0), (1.2, 0.5)])
+def test_soe_fit_gamma_tail_accuracy(alpha, beta):
+    # the matrix-pencil SoE must reproduce the gamma tail past u_split,
+    # with every mode decaying and the conjugate-paired sum real
+    from morie.tps_hawkes_jit import soe_fit_gamma_tail
+    u_split = 2.0 * (alpha - 1.0) / beta            # 2 x the peak
+    w, beta_soe, err = soe_fit_gamma_tail(alpha, beta, u_split)
+    assert err < 1e-5
+    assert np.all(beta_soe.real > 0.0)              # all modes decay
+    s = np.array([0.0, 1.0 / beta, 5.0 / beta])
+    val = (w[None, :] * np.exp(-beta_soe[None, :] * s[:, None])).sum(axis=1)
+    assert np.max(np.abs(val.imag)) < 1e-8 * np.max(np.abs(val.real)) + 1e-12

@@ -1,10 +1,10 @@
 citHeader(
-  "To cite morie in publications, please cite both the language-specific ",
-  "software paper and any relevant methodology paper. There are four ",
+  "To cite morie in publications, please cite the language-specific ",
+  "software paper and any relevant methodology paper. There are five ",
   "deposits on Zenodo:"
 )
 
-# (1) morie R software paper (this package) — also the R package source on Zenodo.
+# (1) morie R software paper (this package) -- also the R package source on Zenodo.
 bibentry(
   bibtype = "Manual",
   key     = "ruhela_morie_r_2026",
@@ -12,25 +12,25 @@ bibentry(
   author  = person("Vansh Singh", "Ruhela",
                    comment = c(ORCID = "0009-0004-1750-3592")),
   year    = "2026",
-  note    = "R package version 0.4.0",
+  note    = paste("R package version", meta$Version),
   doi     = "10.5281/zenodo.20111233",
   url     = "https://github.com/hadesllm/morie"
 )
 
-# (2) morie Python software paper — Python implementation, same toolkit.
+# (2) morie Python software paper -- Python implementation, same toolkit.
 bibentry(
-  bibtype = "Manual",
-  key     = "ruhela_morie_py_2026",
-  title   = "morie: Multi-domain Open Research and Inferential Estimation in Python",
-  author  = person("Vansh Singh", "Ruhela",
-                   comment = c(ORCID = "0009-0004-1750-3592")),
-  year    = "2026",
-  note    = "Python package version 0.4.0",
-  doi     = "10.5281/zenodo.20096350",
-  url     = "https://pypi.org/project/morie/"
+  bibtype   = "Misc",
+  key       = "ruhela_morie_py_2026",
+  title     = "morie: Multi-domain Open Research and Inferential Estimation in Python",
+  author    = person("Vansh Singh", "Ruhela",
+                     comment = c(ORCID = "0009-0004-1750-3592")),
+  year      = "2026",
+  publisher = "Zenodo",
+  doi       = "10.5281/zenodo.20096350",
+  url       = "https://doi.org/10.5281/zenodo.20096350"
 )
 
-# (3) MRM framework paper — theoretical foundations.
+# (3) MRM framework paper -- theoretical foundations.
 bibentry(
   bibtype   = "Misc",
   key       = "ruhela_mrm_2026",
@@ -39,7 +39,6 @@ bibentry(
                      comment = c(ORCID = "0009-0004-1750-3592")),
   year      = "2026",
   publisher = "Zenodo",
-  note      = "v2",
   doi       = "10.5281/zenodo.20096075",
   url       = "https://doi.org/10.5281/zenodo.20096075"
 )
@@ -53,21 +52,19 @@ bibentry(
                      comment = c(ORCID = "0009-0004-1750-3592")),
   year      = "2026",
   publisher = "Zenodo",
-  note      = "v2",
   doi       = "10.5281/zenodo.20102198",
   url       = "https://doi.org/10.5281/zenodo.20102198"
 )
 
-# (5) CRAN release entry — populated once CRAN accepts the v0.3.0 submission.
-# The CRAN URL replaces the GitHub URL above for users who installed
-# via `install.packages("morie")`.
+# (5) Empirical applications paper.
 bibentry(
-  bibtype = "Manual",
-  key     = "ruhela_morie_cran_2026",
-  title   = "morie: Multi-domain Open Research and Inferential Estimation in R (CRAN release)",
-  author  = person("Vansh Singh", "Ruhela",
-                   comment = c(ORCID = "0009-0004-1750-3592")),
-  year    = "2026",
-  note    = "R package version 0.4.0",
-  url     = "https://CRAN.R-project.org/package=morie"
+  bibtype   = "Misc",
+  key       = "ruhela_empirical_2026",
+  title     = "Solitary Confinement, Self-Excitation, and Institutional Churn: Empirical Applications of MRM to Canadian Carceral and Police Data",
+  author    = person("Vansh Singh", "Ruhela",
+                     comment = c(ORCID = "0009-0004-1750-3592")),
+  year      = "2026",
+  publisher = "Zenodo",
+  doi       = "10.5281/zenodo.20175689",
+  url       = "https://doi.org/10.5281/zenodo.20175689"
 )

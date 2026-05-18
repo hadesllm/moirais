@@ -247,7 +247,7 @@ summarised in Table~\ref{tab:sources}.
 \begin{table}[h]
 \centering
 \caption{The five Canadian carceral, police, and oversight data
-sources integrated by the MRM framework.}
+sources integrated by MRM.}
 \label{tab:sources}
 \begin{tabular}{lllll}
 \toprule
@@ -255,7 +255,7 @@ Source & Producer & Unit & Period & Access \\
 \midrule
 $\OTIS$ A01-RCDD & Sol Gen (Ontario) & individual--placement & 2014--present & open \\
 $\SIU$~$\IAP$    & Federal IAP     & quarterly aggregate   & 2019--2024     & open \\
-Ontario $\SIU$   & Ontario SIU     & investigation report   & 2009--present & open (scrape) \\
+Ontario $\SIU$   & Ontario SIU     & investigation report   & 2009--present & open (mined) \\
 $\TPS$           & Toronto Police   & event--day            & 2014--present & open \\
 $\CCRSO$         & Public Safety CA & annual aggregate      & 2007--present & open \\
 \bottomrule
@@ -633,17 +633,19 @@ $10\%$ torture rate (Rule 43 $\cap$ Rule 44) and report the
 $28\%$ contact-only rate (Rule 44 alone) as the analogue of our
 broader-RC column.}
 \label{tab:mandela}
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{lccccl}
 \toprule
  & Rule 43 only & Rule 43 $\cap$ & Rule 43 $\cap$ & RC & \\
 Jurisdiction (period) & ($A$) & alerted ($B$) & no-alert ($C$) & broader & Source \\
 \midrule
-Federal $\SIU$ 2019--2020 & $\geq 10\%$ & --- & --- & $\approx 28\%$ & $9.9\%$ \citealt{SprottDoob2023} \\
+Federal $\SIU$ 2019--2020 & $\geq 10\%$ & --- & --- & $\approx 28\%$ & $9.9\%$ \citep{SprottDoob2023} \\
 Provincial Ontario 2023 & $12.5\%$ & $0.072\%$ & $0.003\%$ & $31.5\%$ & MRM \\
 Provincial Ontario 2024 & $16.5\%$ & $0.463\%$ & $0.194\%$ & $36.0\%$ & MRM \\
 Provincial Ontario 2025 & $20.6\%$ & $0.905\%$ & $0.387\%$ & $40.9\%$ & MRM \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 The substantive direction is robust: the provincial duration-only

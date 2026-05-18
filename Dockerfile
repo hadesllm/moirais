@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 #
-# MORIE container — 3-stage Python + R build, single-arch (linux/amd64).
+# morie container — 3-stage Python + R build, single-arch (linux/amd64).
 #
 # Optimisations:
 #   1. Dummy package shim before deps install — heavy pip layer is
@@ -79,12 +79,12 @@ RUN R CMD INSTALL --library=/usr/local/lib/R/site-library /build/r-package/morie
 # ─── Stage 3: Runtime ────────────────────────────────────────────────────────
 FROM python:${PYTHON_VERSION}-slim AS runtime
 
-ARG VERSION=0.9.2
+ARG VERSION=0.9.4
 ARG VCS_REF=unknown
 ARG BUILD_DATE=unknown
 
-LABEL org.opencontainers.image.title="MORIE" \
-      org.opencontainers.image.description="Methods for Observational Inference and Robust Analysis of Interventions in Scientific Experimentation (Python + R)" \
+LABEL org.opencontainers.image.title="morie" \
+      org.opencontainers.image.description="Multi-domain Open Research and Inferential Estimation -- a multi-domain scientific computing toolkit for observational inference and intervention analysis (Python + R)" \
       org.opencontainers.image.url="https://github.com/hadesllm/morie" \
       org.opencontainers.image.source="https://github.com/hadesllm/morie" \
       org.opencontainers.image.documentation="https://hadesllm.github.io/morie/" \

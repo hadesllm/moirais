@@ -15,7 +15,7 @@
 // divergent reimplementations) is eliminated by construction.
 //
 // CANONICAL COPY: libmorie/morie_core.hpp. The R package vendors a
-// copy at r-package/morie/src/morie_core.hpp -- keep the two in sync.
+// copy at r-package/morie/src/morie_core.h -- keep the two in sync.
 
 #pragma once
 

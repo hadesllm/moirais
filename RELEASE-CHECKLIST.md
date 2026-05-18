@@ -44,21 +44,44 @@ pip install morie
 
 ## CRAN release
 
-- Workflow: `.github/workflows/r-cmd-check.yml` (multi-OS check).
-- The workflow must pass cleanly on all 5 matrix cells before
-  submitting.
-- Submission is **manual** (CRAN policy):
-  1. From the R package directory, run
-     `R CMD build .` to produce `morie_<version>.tar.gz`.
-  2. Upload the tarball at https://cran.r-project.org/submit.html.
-  3. Respond to the maintainer-confirmation email within 24 h.
-- Common CRAN gotchas:
-  - DESCRIPTION Title ≤ 65 chars, in title case, no period.
-  - DESCRIPTION Description must end in a period; 4-8 sentences;
-    no leading "MORIE provides..." (start with content).
-  - All URLs in DESCRIPTION must resolve (200 OK).
-  - No `library()` calls in package code; use `requireNamespace()`.
-  - All `tests/` must complete in < 10 min on CRAN servers.
+morie is **not currently on CRAN**. Submitting it is a manual,
+one-time action (CRAN policy — there is no automated CRAN publish;
+the auto-tag pipeline covers PyPI / Docker / deb-rpm / Homebrew only).
+
+**Pre-flight:**
+
+1. Confirm `.github/workflows/r-cmd-check.yml` (multi-OS matrix) is
+   green on `main`.
+2. Build and check the source tarball locally, the way CRAN does:
+   ```bash
+   R CMD build r-package/morie
+   R CMD check --as-cran morie_<version>.tar.gz
+   ```
+   The result must be **0 ERROR, 0 WARNING**. A single "New
+   submission" NOTE is expected and acceptable.
+3. Refresh `r-package/morie/cran-comments.md` for the new version
+   (test environments, the `R CMD check` result, reverse-dependency
+   status). CRAN reads this file at submission.
+
+**Submit:**
+
+4. Upload `morie_<version>.tar.gz` at
+   https://cran.r-project.org/submit.html.
+5. Respond to the maintainer-confirmation email within 24 h.
+
+**CRAN gotchas (learned the hard way):**
+
+- DESCRIPTION Title ≤ 65 chars, in title case, no period.
+- DESCRIPTION Description must end in a period; 4-8 sentences;
+  no leading "MORIE provides..." (start with content).
+- All URLs in DESCRIPTION must resolve (200 OK).
+- No `library()` calls in package code; gate optional packages
+  with `requireNamespace(..., quietly = TRUE)`.
+- All `tests/` must complete in < 10 min on CRAN servers.
+- Files in `src/` must use standard extensions — `.c` / `.cc` /
+  `.cpp` for sources, `.h` for headers. A `.hpp` header trips a
+  "this is a source package" WARNING. Fixed in 0.9.4 by renaming
+  the vendored core header `morie_core.hpp` → `morie_core.h`.
 
 End users install with:
 

@@ -96,7 +96,7 @@ pip install morie
 docker run --rm ghcr.io/hadesllm/morie:latest morie --help
 
 # Pin to a specific version (recommended for reproducibility)
-docker run --rm ghcr.io/hadesllm/morie:0.9.3 morie --help
+docker run --rm ghcr.io/hadesllm/morie:0.9.4 morie --help
 ```
 
 Multi-arch image published on every release with both versioned and `:latest` tags. Requires only Docker — no Python, no pip.
@@ -130,6 +130,10 @@ from morie.otis_all_analyze import analyze_a01_mrm
 result = analyze_a01_mrm(df)
 print(result)
 ```
+
+## What's new in v0.9.4
+
+- **CRAN source-package compliance.** The R package's vendored copy of the shared C++ core header was renamed `morie_core.hpp` → `morie_core.h`. `R CMD check --as-cran` does not recognize `.hpp` as a `src/` file extension and warned about it; the rename clears the WARNING. No behaviour change — the canonical `libmorie/morie_core.hpp` (Python/CMake side) is unchanged.
 
 ## What's new in v0.9.3
 
@@ -219,12 +223,12 @@ and the **empirical applications paper**.
 ```
 # Software paper — R (also the R package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in R (v0.9.3). Zenodo.
+Estimation in R (v0.9.4). Zenodo.
 https://doi.org/10.5281/zenodo.20111233
 
 # Software paper — Python (also the Python package source on Zenodo)
 Ruhela, V. S. (2026). morie: Multi-domain Open Research and Inferential
-Estimation in Python (v0.9.3). Zenodo.
+Estimation in Python (v0.9.4). Zenodo.
 https://doi.org/10.5281/zenodo.20096350
 
 # MRM framework paper (theoretical foundations)

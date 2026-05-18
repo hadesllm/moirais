@@ -1,3 +1,15 @@
+# morie 0.9.4 — 2026-05-18
+
+Fix: CRAN source-package compliance for the vendored C++ core header.
+
+* **`src/` header extension** — the R package vendors a copy of the
+  shared C++ numeric core. `R CMD check --as-cran` does not recognise
+  `.hpp` as a `src/` file extension and emitted a WARNING, which
+  blocks CRAN submission. The vendored copy was renamed
+  `morie_core.hpp` to `morie_core.h` and the `#include` in
+  `morie_fast.cpp` updated to match. No behaviour change; the
+  canonical `libmorie/morie_core.hpp` is unchanged.
+
 # morie 0.9.3 — 2026-05-17
 
 Fix: complete the Docker image build fix; atomic release pipeline.

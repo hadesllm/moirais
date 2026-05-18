@@ -79,7 +79,7 @@ RUN R CMD INSTALL --library=/usr/local/lib/R/site-library /build/r-package/morie
 # ─── Stage 3: Runtime ────────────────────────────────────────────────────────
 FROM python:${PYTHON_VERSION}-slim AS runtime
 
-ARG VERSION=0.9.2
+ARG VERSION=0.9.4
 ARG VCS_REF=unknown
 ARG BUILD_DATE=unknown
 

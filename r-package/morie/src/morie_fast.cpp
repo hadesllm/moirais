@@ -1,7 +1,7 @@
 // morie_fast.cpp -- Rcpp bindings for the R side of morie.
 //
 // Since v0.9.1 these functions are thin Rcpp adapters over the shared
-// C++ numeric core in morie_core.hpp -- the SAME header the Python
+// C++ numeric core in morie_core.h -- the SAME header the Python
 // package binds via nanobind. The arithmetic is no longer duplicated
 // per language: R and Python now call into one source of truth, which
 // eliminates the Python<->R parity bug class by construction.
@@ -10,14 +10,15 @@
 // toolchain at install time, R falls back to the pure-R kernels in
 // R/_fast.R.
 //
-// morie_core.hpp is a vendored copy; the canonical file is
-// libmorie/morie_core.hpp in the morie repository root.
+// morie_core.h is a vendored copy; the canonical file is
+// libmorie/morie_core.hpp in the morie repository root. The R copy
+// uses the .h extension so R CMD check accepts it as a src/ header.
 
 #include <Rcpp.h>
 
 #include <cstddef>
 
-#include "morie_core.hpp"
+#include "morie_core.h"
 
 using namespace Rcpp;
 
